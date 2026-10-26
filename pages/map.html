@@ -9,6 +9,7 @@
 <script src="theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,15 +17,26 @@
     <a href="chemical-map.html">Structure map</a>
     <a href="map.html">Corpus map</a>
     <a href="sequence-map.html">Sequence map</a>
-    <a href="index.html#downloads">Downloads &amp; Schema</a>
+    <a href="index.html#downloads">Downloads</a>
+    <a href="schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap wide">
+<main class="wrap wide" id="main-content" tabindex="-1">
 <h1>Corpus map</h1>
 <p class="lede">3114 compounds projected from their record text into two dimensions
 (PACMAP over BAAI/bge-large-en-v1.5).</p>
+
+<p class="meta" id="map-coverage">3114 of the 3116 published records are plotted.
+The coordinates come from <span class="mono">data/embeddings/corpus_map.json</span>,
+which is computed separately from these pages (<span class="mono">just embed</span>, then
+<span class="mono">just embed-map</span>) and has no point for
+<a href="carbohydrates/desosamine-2.html">desosamine</a> (<span class="mono">CHEBI:32540</span>), <a href="polyketides/aureothin.html">aureothin</a> (<span class="mono">CHEBI:80024</span>).
+1 point in that file
+names an identifier no published record carries and
+is not drawn: an embedding of what a record said under an
+identifier it no longer has would place the wrong record.</p>
 
 <p class="meta">Proximity means described similarly: same pathway,
 family, activity, producing organism, where it was found. Not structurally
@@ -82,12 +94,24 @@ sentence model reads them as noise. A chemical-similarity map is a different art
               aria-label="Scatter plot of 3114 compounds, coloured by filing pathway."></canvas>
       <figcaption class="meta" id="map-hover">Hover a point for its name; click to open the record.</figcaption>
     </figure>
+    <details class="map-table" id="corpus-map-table">
+      <summary>View data as table</summary>
+      <p class="meta" id="corpus-map-table-count"></p>
+      <div class="scroll" role="region" tabindex="0" aria-label="Compounds on the corpus map">
+        <table>
+          <caption class="sub">Compounds on the corpus map</caption>
+          <thead><tr><th scope="col">Compound</th><th scope="col">Identifier</th><th scope="col">Filing pathway</th></tr></thead>
+          <tbody id="corpus-map-table-body"></tbody>
+        </table>
+      </div>
+    </details>
     <p class="meta">The scatter is a <strong>visual aid, and mouse-driven</strong>: its points are
     canvas pixels, not focusable links, so it is not navigable by keyboard or screen reader.
-    Nothing is only available here — every compound has a record page reachable from
-    <a href="browse.html">Browse</a>, and the per-pathway pages list the same records
-    in text. Said plainly rather than implied, because a scatter that is the sole route to
-    some records would be an accessibility failure rather than a limitation.</p>
+    <em>View data as table</em> lists every compound it plots, as searched and filtered above,
+    each linking its record. Nothing is only available here — every compound has a record page
+    reachable from <a href="browse.html">Browse</a>, and the per-pathway pages list the
+    same records in text. Said plainly rather than implied, because a scatter that is the sole
+    route to some records would be an accessibility failure rather than a limitation.</p>
   </div>
 </div>
 
@@ -151,7 +175,36 @@ sentence model reads them as noise. A chemical-similarity map is a different art
       cx.beginPath(); cx.arc(q[0], q[1], 2.6, 0, 6.2832); cx.fill();
     });
     cx.globalAlpha = 1;
+    renderTable();
   }
+  // The table alternative: what the map plots, as filtered, each row linking
+  // its record. Built from the same embedded JSON, and only while it is open.
+  var table = document.getElementById("corpus-map-table");
+  function renderTable() {
+    if (!table || !table.open) return;
+    var shown = data.points.filter(matches);
+    var rows = document.createDocumentFragment();
+    shown.forEach(function (p) {
+      var tr = document.createElement("tr");
+      var name = document.createElement("th");
+      name.scope = "row";
+      var link = document.createElement("a");
+      link.href = data.hrefs[p[3]];
+      link.textContent = p[4];
+      name.appendChild(link);
+      var id = document.createElement("td");
+      id.className = "mono";
+      id.textContent = p[3];
+      var cls = document.createElement("td");
+      cls.textContent = data.classes[p[2]].replace(/_/g, " ").toLowerCase();
+      tr.append(name, id, cls);
+      rows.appendChild(tr);
+    });
+    document.getElementById("corpus-map-table-body").replaceChildren(rows);
+    document.getElementById("corpus-map-table-count").textContent =
+      shown.length + " of " + data.points.length + " plotted compounds, as searched and filtered above.";
+  }
+  if (table) table.addEventListener("toggle", renderTable);
   function nearest(mx, my) {
     var best = null, bd = 144;
     data.points.forEach(function (p) {
@@ -189,7 +242,7 @@ sentence model reads them as noise. A chemical-similarity map is a different art
 </script>
 </main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Corpus as of 2026-10-23 22:53 UTC. Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 8e5d64d98cfd). Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

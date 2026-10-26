@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Polyketides</a> &middot; nystatin A1</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>nystatin A1</h1>
-<p class="sub"><span class="mono">CHEBI:473992</span>
+<p class="sub"><span class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_473992">CHEBI:473992</a></span>
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 <span class="tag">antifungal</span></p>
 <details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/nystatin-a1.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/nystatin-a1.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 <p>A polyene macrolide antibiotic; part of the nystatin complex produced by several Streptomyces species. It is an antifungal antibiotic used for the treatment of topical fungal infections caused by a broad spectrum of fungal pathogens comprising yeast-like and filamentous species.</p>
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">VQOXZBDYSJBXMA-NQTDYLQESA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">C[C@H]1/C=C/C=C/CC/C=C/C=C/C=C/C=C/[C@@H](C[C@H]2[C@@H]([C@H](C[C@](O2)(C[C@H]([C@@H](CC[C@H](C[C@H](C[C@H](CC(=O)O[C@H]([C@@H]([C@@H]1O)C)C)O)O)O)O)O)O)O)C(=O)O)O[C@H]3[C@H]([C@H]([C@@H]([C@H](O3)C)O)N)O</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">pubchem:11286230</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/compound/11286230">pubchem:11286230</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Polyketides</a> —
@@ -57,157 +59,157 @@ pks, saccharide, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Streptomyces noursei ATCC 11455<br><span class="mono">NCBITaxon:316284</span></td>
+  <td>Streptomyces noursei ATCC 11455<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=316284">NCBITaxon:316284</a></span></td>
   <td><span class="tag causal">BGC_CHARACTERIZED</span></td>
-  <td class="mono">mibig:BGC0000115</td>
-  <td><span class="mono">PMID:10873841</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000115">mibig:BGC0000115</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/10873841/">PMID:10873841</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">25</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Hohenbuehelia grisea<br><span class="mono">NCBITaxon:104357</span></td>
+  <td>Hohenbuehelia grisea<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=104357">NCBITaxon:104357</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/ACS.JNATPROD.7B00713</td>
+  <td class="mono"><a href="https://doi.org/10.1021/ACS.JNATPROD.7B00713">DOI:10.1021/ACS.JNATPROD.7B00713</a></td>
 </tr>
 <tr>
-  <td>Oscillatoria<br><span class="mono">NCBITaxon:1158</span></td>
+  <td>Oscillatoria<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1158">NCBITaxon:1158</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/ACS.JNATPROD.8B00650</td>
+  <td class="mono"><a href="https://doi.org/10.1021/ACS.JNATPROD.8B00650">DOI:10.1021/ACS.JNATPROD.8B00650</a></td>
 </tr>
 <tr>
-  <td>Microporus<br><span class="mono">NCBITaxon:1191098</span></td>
+  <td>Microporus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1191098">NCBITaxon:1191098</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/ACS.JNATPROD.7B00764</td>
+  <td class="mono"><a href="https://doi.org/10.1021/ACS.JNATPROD.7B00764">DOI:10.1021/ACS.JNATPROD.7B00764</a></td>
 </tr>
 <tr>
-  <td>Lonchocarpus chiricanus<br><span class="mono">NCBITaxon:1582177</span></td>
+  <td>Lonchocarpus chiricanus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1582177">NCBITaxon:1582177</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/NP000597W</td>
+  <td class="mono"><a href="https://doi.org/10.1021/NP000597W">DOI:10.1021/NP000597W</a></td>
 </tr>
 <tr>
-  <td>Sparticola junci<br><span class="mono">NCBITaxon:1803578</span></td>
+  <td>Sparticola junci<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1803578">NCBITaxon:1803578</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/ACS.JNATPROD.9B00604</td>
+  <td class="mono"><a href="https://doi.org/10.1021/ACS.JNATPROD.9B00604">DOI:10.1021/ACS.JNATPROD.9B00604</a></td>
 </tr>
 <tr>
-  <td>Streptomyces noursei<br><span class="mono">NCBITaxon:1971</span></td>
+  <td>Streptomyces noursei<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1971">NCBITaxon:1971</a></span></td>
   <td>CHEBI</td>
-  <td class="mono">10.1016/S0040-4039(01)96531-1</td>
+  <td class="mono"><a href="https://doi.org/10.1016/S0040-4039%2801%2996531-1">10.1016/S0040-4039(01)96531-1</a></td>
 </tr>
 <tr>
-  <td>Streptomyces noursei<br><span class="mono">NCBITaxon:1971</span></td>
+  <td>Streptomyces noursei<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1971">NCBITaxon:1971</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/S002530100613</td>
+  <td class="mono"><a href="https://doi.org/10.1007/S002530100613">DOI:10.1007/S002530100613</a></td>
 </tr>
 <tr>
-  <td>Streptomyces noursei<br><span class="mono">NCBITaxon:1971</span></td>
+  <td>Streptomyces noursei<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1971">NCBITaxon:1971</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/J.CHEMBIOL.2008.08.009</td>
+  <td class="mono"><a href="https://doi.org/10.1016/J.CHEMBIOL.2008.08.009">DOI:10.1016/J.CHEMBIOL.2008.08.009</a></td>
 </tr>
 <tr>
-  <td>Streptomyces noursei<br><span class="mono">NCBITaxon:1971</span></td>
+  <td>Streptomyces noursei<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1971">NCBITaxon:1971</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/J.FEMSLE.2005.05.052</td>
+  <td class="mono"><a href="https://doi.org/10.1016/J.FEMSLE.2005.05.052">DOI:10.1016/J.FEMSLE.2005.05.052</a></td>
 </tr>
 <tr>
-  <td>Streptomyces noursei<br><span class="mono">NCBITaxon:1971</span></td>
+  <td>Streptomyces noursei<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1971">NCBITaxon:1971</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/S0040-4039(01)96531-1</td>
+  <td class="mono"><a href="https://doi.org/10.1016/S0040-4039%2801%2996531-1">DOI:10.1016/S0040-4039(01)96531-1</a></td>
 </tr>
 <tr>
-  <td>Streptomyces noursei<br><span class="mono">NCBITaxon:1971</span></td>
+  <td>Streptomyces noursei<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1971">NCBITaxon:1971</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/S1074-5521(00)00120-4</td>
+  <td class="mono"><a href="https://doi.org/10.1016/S1074-5521%2800%2900120-4">DOI:10.1016/S1074-5521(00)00120-4</a></td>
 </tr>
 <tr>
-  <td>Streptomyces noursei<br><span class="mono">NCBITaxon:1971</span></td>
+  <td>Streptomyces noursei<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1971">NCBITaxon:1971</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1074/JBC.M212611200</td>
+  <td class="mono"><a href="https://doi.org/10.1074/JBC.M212611200">DOI:10.1074/JBC.M212611200</a></td>
 </tr>
 <tr>
-  <td>Streptomyces noursei<br><span class="mono">NCBITaxon:1971</span></td>
+  <td>Streptomyces noursei<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1971">NCBITaxon:1971</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1099/00221287-146-3-611</td>
+  <td class="mono"><a href="https://doi.org/10.1099/00221287-146-3-611">DOI:10.1099/00221287-146-3-611</a></td>
 </tr>
 <tr>
-  <td>Streptomyces noursei<br><span class="mono">NCBITaxon:1971</span></td>
+  <td>Streptomyces noursei<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1971">NCBITaxon:1971</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1111/J.1574-6968.1999.TB13746.X</td>
+  <td class="mono"><a href="https://doi.org/10.1111/J.1574-6968.1999.TB13746.X">DOI:10.1111/J.1574-6968.1999.TB13746.X</a></td>
 </tr>
 <tr>
-  <td>Streptomyces noursei<br><span class="mono">NCBITaxon:1971</span></td>
+  <td>Streptomyces noursei<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1971">NCBITaxon:1971</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1128/JB.186.5.1345-1354.2004</td>
+  <td class="mono"><a href="https://doi.org/10.1128/JB.186.5.1345-1354.2004">DOI:10.1128/JB.186.5.1345-1354.2004</a></td>
 </tr>
 <tr>
-  <td>Nocardiopsis<br><span class="mono">NCBITaxon:2013</span></td>
+  <td>Nocardiopsis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2013">NCBITaxon:2013</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/ACS.JNATPROD.8B00708</td>
+  <td class="mono"><a href="https://doi.org/10.1021/ACS.JNATPROD.8B00708">DOI:10.1021/ACS.JNATPROD.8B00708</a></td>
 </tr>
 <tr>
-  <td>Sporormiella similis<br><span class="mono">NCBITaxon:269685</span></td>
+  <td>Sporormiella similis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=269685">NCBITaxon:269685</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/ACS.JNATPROD.7B00064</td>
+  <td class="mono"><a href="https://doi.org/10.1021/ACS.JNATPROD.7B00064">DOI:10.1021/ACS.JNATPROD.7B00064</a></td>
 </tr>
 <tr>
-  <td>Streptomyces sp. HSG2<br><span class="mono">NCBITaxon:2797167</span></td>
+  <td>Streptomyces sp. HSG2<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2797167">NCBITaxon:2797167</a></span></td>
   <td>CHEBI</td>
-  <td class="mono">PMID:33932153</td>
+  <td class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/33932153/">PMID:33932153</a></td>
 </tr>
 <tr>
-  <td>Amycolatopsis aidingensis<br><span class="mono">NCBITaxon:2842453</span></td>
+  <td>Amycolatopsis aidingensis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2842453">NCBITaxon:2842453</a></span></td>
   <td>CHEBI</td>
-  <td class="mono">PMID:34938275</td>
+  <td class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/34938275/">PMID:34938275</a></td>
 </tr>
 <tr>
-  <td>Phoma<br><span class="mono">NCBITaxon:37463</span></td>
+  <td>Phoma<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=37463">NCBITaxon:37463</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/ACS.JNATPROD.8B00685</td>
+  <td class="mono"><a href="https://doi.org/10.1021/ACS.JNATPROD.8B00685">DOI:10.1021/ACS.JNATPROD.8B00685</a></td>
 </tr>
 <tr>
-  <td>Streptomyces ahygroscopicus<br><span class="mono">NCBITaxon:387846</span></td>
+  <td>Streptomyces ahygroscopicus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=387846">NCBITaxon:387846</a></span></td>
   <td>CHEBI</td>
-  <td class="mono">PMID:24231162</td>
+  <td class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/24231162/">PMID:24231162</a></td>
 </tr>
 <tr>
-  <td>Streptomyces ahygroscopicus<br><span class="mono">NCBITaxon:387850</span></td>
+  <td>Streptomyces ahygroscopicus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=387850">NCBITaxon:387850</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/S10295-015-1660-3</td>
+  <td class="mono"><a href="https://doi.org/10.1007/S10295-015-1660-3">DOI:10.1007/S10295-015-1660-3</a></td>
 </tr>
 <tr>
-  <td>Streptomyces ahygroscopicus<br><span class="mono">NCBITaxon:387850</span></td>
+  <td>Streptomyces ahygroscopicus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=387850">NCBITaxon:387850</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/J.MICRES.2013.09.017</td>
+  <td class="mono"><a href="https://doi.org/10.1016/J.MICRES.2013.09.017">DOI:10.1016/J.MICRES.2013.09.017</a></td>
 </tr>
 <tr>
-  <td>Hyalangium minutum<br><span class="mono">NCBITaxon:394096</span></td>
+  <td>Hyalangium minutum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=394096">NCBITaxon:394096</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/NP200776V</td>
+  <td class="mono"><a href="https://doi.org/10.1021/NP200776V">DOI:10.1021/NP200776V</a></td>
 </tr>
 <tr>
-  <td>Armillaria<br><span class="mono">NCBITaxon:47424</span></td>
+  <td>Armillaria<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=47424">NCBITaxon:47424</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/ACS.JNATPROD.8B00685</td>
+  <td class="mono"><a href="https://doi.org/10.1021/ACS.JNATPROD.8B00685">DOI:10.1021/ACS.JNATPROD.8B00685</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0000115</td>
-  <td>Streptomyces noursei ATCC 11455<br><span class="mono">NCBITaxon:316284</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000115">mibig:BGC0000115</a></td>
+  <td>Streptomyces noursei ATCC 11455<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=316284">NCBITaxon:316284</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:AF263912.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF263912.1">genbank:AF263912.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -217,7 +219,7 @@ isolation report left it.</p>
 
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for nystatin A1">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for nystatin A1">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -250,18 +252,18 @@ isolation report left it.</p>
 </div>
 
 <h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
-<p class="sub">Streptomyces noursei NysL-catalyzed C-10 hydroxylation in the last step of nystatin A1 biosynthesis.</p><div class="scroll"><table>
+<p class="sub">Streptomyces noursei NysL-catalyzed C-10 hydroxylation in the last step of nystatin A1 biosynthesis.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>10-deoxynystatin</td>
   <td>is C-10 hydroxylated by</td>
   <td>NysL cytochrome P450 monooxygenase</td>
   <td>Genetic replacement of nysL caused Streptomyces noursei to accumulate 10-deoxynystatin, and purified recombinant NysL used 10-deoxynystatin as an in vitro substrate.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AEM.72.4.2514-2519.2006<br>https://mite.lisc.univie.ac.at/repository/MITE0000322<br>https://mibig.secondarymetabolites.org/repository/BGC0000115.5/BGC0000115.gbk<br>https://www.uniprot.org/uniprotkb/Q9L4X0<br>https://www.ncbi.nlm.nih.gov/nuccore/AF263912.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AEM.72.4.2514-2519.2006</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>NysL is a hydroxylase responsible for the post-polyketide synthase modification of 10-deoxynystatin at position C-10.</dd><dt>notes</dt><dd>Volokhan et al. replaced nysL in Streptomyces noursei, observed 10-deoxynystatin accumulation, heterologously expressed His-tagged NysL in Escherichia coli and assayed the purified enzyme with 10-deoxynystatin as substrate.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mite.lisc.univie.ac.at/repository/MITE0000322</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MITE0000322 is active and links NysL to UniProtKB:Q9L4X0, GenPept AAF71769.1, MIBiG BGC0000115 and an in vitro C10-hydroxylation reaction in nystatin A1 biosynthesis.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0000115.5/BGC0000115.gbk</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MIBiG BGC0000115.5 places AAF71769.1 in the active Streptomyces noursei ATCC 11455 nystatin biosynthetic gene cluster as nysL/NysL.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q9L4X0</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>UniProtKB:Q9L4X0 is the unreviewed 394 aa Streptomyces noursei NysL entry and cross-references GenBank AF263912 protein AAF71769.1.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/AF263912.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>GenBank AF263912.1 is the Streptomyces noursei ATCC 11455 nystatin biosynthetic gene cluster sequence and maps nysL to the NysL protein accession AAF71769.1.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/AEM.72.4.2514-2519.2006">DOI:10.1128/AEM.72.4.2514-2519.2006</a><br><a href="https://mite.lisc.univie.ac.at/repository/MITE0000322">https://mite.lisc.univie.ac.at/repository/MITE0000322</a><br><a href="https://mibig.secondarymetabolites.org/repository/BGC0000115.5/BGC0000115.gbk">https://mibig.secondarymetabolites.org/repository/BGC0000115.5/BGC0000115.gbk</a><br><a href="https://www.uniprot.org/uniprotkb/Q9L4X0">https://www.uniprot.org/uniprotkb/Q9L4X0</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF263912.1">https://www.ncbi.nlm.nih.gov/nuccore/AF263912.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AEM.72.4.2514-2519.2006">DOI:10.1128/AEM.72.4.2514-2519.2006</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>NysL is a hydroxylase responsible for the post-polyketide synthase modification of 10-deoxynystatin at position C-10.</dd><dt>notes</dt><dd>Volokhan et al. replaced nysL in Streptomyces noursei, observed 10-deoxynystatin accumulation, heterologously expressed His-tagged NysL in Escherichia coli and assayed the purified enzyme with 10-deoxynystatin as substrate.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mite.lisc.univie.ac.at/repository/MITE0000322">https://mite.lisc.univie.ac.at/repository/MITE0000322</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MITE0000322 is active and links NysL to UniProtKB:Q9L4X0, GenPept AAF71769.1, MIBiG BGC0000115 and an in vitro C10-hydroxylation reaction in nystatin A1 biosynthesis.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/repository/BGC0000115.5/BGC0000115.gbk">https://mibig.secondarymetabolites.org/repository/BGC0000115.5/BGC0000115.gbk</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MIBiG BGC0000115.5 places AAF71769.1 in the active Streptomyces noursei ATCC 11455 nystatin biosynthetic gene cluster as nysL/NysL.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q9L4X0">https://www.uniprot.org/uniprotkb/Q9L4X0</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>UniProtKB:Q9L4X0 is the unreviewed 394 aa Streptomyces noursei NysL entry and cross-references GenBank AF263912 protein AAF71769.1.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF263912.1">https://www.ncbi.nlm.nih.gov/nuccore/AF263912.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>GenBank AF263912.1 is the Streptomyces noursei ATCC 11455 nystatin biosynthetic gene cluster sequence and maps nysL to the NysL protein accession AAF71769.1.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -270,11 +272,11 @@ isolation report left it.</p>
   <td>forms</td>
   <td>nystatin A1</td>
   <td>NysL installs the C-10 hydroxyl group during the last tailoring step from 10-deoxynystatin toward the final BGC0000115 nystatin A1 product.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AEM.72.4.2514-2519.2006<br>https://mite.lisc.univie.ac.at/repository/MITE0000322<br>https://mibig.secondarymetabolites.org/repository/BGC0000115.5/BGC0000115.gbk<br>https://www.uniprot.org/uniprotkb/Q9L4X0<br>https://www.ncbi.nlm.nih.gov/nuccore/AF263912.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AEM.72.4.2514-2519.2006</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>NysL is a hydroxylase responsible for the post-polyketide synthase modification of 10-deoxynystatin at position C-10.</dd><dt>notes</dt><dd>Volokhan et al. replaced nysL in Streptomyces noursei, observed 10-deoxynystatin accumulation, heterologously expressed His-tagged NysL in Escherichia coli and assayed the purified enzyme with 10-deoxynystatin as substrate.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mite.lisc.univie.ac.at/repository/MITE0000322</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MITE0000322 is active and links NysL to UniProtKB:Q9L4X0, GenPept AAF71769.1, MIBiG BGC0000115 and an in vitro C10-hydroxylation reaction in nystatin A1 biosynthesis.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0000115.5/BGC0000115.gbk</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MIBiG BGC0000115.5 places AAF71769.1 in the active Streptomyces noursei ATCC 11455 nystatin biosynthetic gene cluster as nysL/NysL.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q9L4X0</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>UniProtKB:Q9L4X0 is the unreviewed 394 aa Streptomyces noursei NysL entry and cross-references GenBank AF263912 protein AAF71769.1.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/AF263912.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>GenBank AF263912.1 is the Streptomyces noursei ATCC 11455 nystatin biosynthetic gene cluster sequence and maps nysL to the NysL protein accession AAF71769.1.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/AEM.72.4.2514-2519.2006">DOI:10.1128/AEM.72.4.2514-2519.2006</a><br><a href="https://mite.lisc.univie.ac.at/repository/MITE0000322">https://mite.lisc.univie.ac.at/repository/MITE0000322</a><br><a href="https://mibig.secondarymetabolites.org/repository/BGC0000115.5/BGC0000115.gbk">https://mibig.secondarymetabolites.org/repository/BGC0000115.5/BGC0000115.gbk</a><br><a href="https://www.uniprot.org/uniprotkb/Q9L4X0">https://www.uniprot.org/uniprotkb/Q9L4X0</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF263912.1">https://www.ncbi.nlm.nih.gov/nuccore/AF263912.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AEM.72.4.2514-2519.2006">DOI:10.1128/AEM.72.4.2514-2519.2006</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>NysL is a hydroxylase responsible for the post-polyketide synthase modification of 10-deoxynystatin at position C-10.</dd><dt>notes</dt><dd>Volokhan et al. replaced nysL in Streptomyces noursei, observed 10-deoxynystatin accumulation, heterologously expressed His-tagged NysL in Escherichia coli and assayed the purified enzyme with 10-deoxynystatin as substrate.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mite.lisc.univie.ac.at/repository/MITE0000322">https://mite.lisc.univie.ac.at/repository/MITE0000322</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MITE0000322 is active and links NysL to UniProtKB:Q9L4X0, GenPept AAF71769.1, MIBiG BGC0000115 and an in vitro C10-hydroxylation reaction in nystatin A1 biosynthesis.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/repository/BGC0000115.5/BGC0000115.gbk">https://mibig.secondarymetabolites.org/repository/BGC0000115.5/BGC0000115.gbk</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MIBiG BGC0000115.5 places AAF71769.1 in the active Streptomyces noursei ATCC 11455 nystatin biosynthetic gene cluster as nysL/NysL.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q9L4X0">https://www.uniprot.org/uniprotkb/Q9L4X0</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>UniProtKB:Q9L4X0 is the unreviewed 394 aa Streptomyces noursei NysL entry and cross-references GenBank AF263912 protein AAF71769.1.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF263912.1">https://www.ncbi.nlm.nih.gov/nuccore/AF263912.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>GenBank AF263912.1 is the Streptomyces noursei ATCC 11455 nystatin biosynthetic gene cluster sequence and maps nysL to the NysL protein accession AAF71769.1.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -282,17 +284,17 @@ isolation report left it.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
-<p class="sub">Gene-level MIBiG database assignments of NysDI and NysN as tailoring participants in nystatin A1 biosynthesis, with independently verified native ATCC11455 protein references. This graph does not specify an exact chemical reaction or a sequence of steps. MITE&#39;s incompatible product stereochemistry is not transferred to the fully stereospecified owner. The existing NysL mechanism remains unchanged; no new primary assay or full-record sign-off is claimed.</p><div class="scroll"><table>
+<p class="sub">Gene-level MIBiG database assignments of NysDI and NysN as tailoring participants in nystatin A1 biosynthesis, with independently verified native ATCC11455 protein references. This graph does not specify an exact chemical reaction or a sequence of steps. MITE&#39;s incompatible product stereochemistry is not transferred to the fully stereospecified owner. The existing NysL mechanism remains unchanged; no new primary assay or full-record sign-off is claimed.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 2 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>NysDI, native ATCC 11455 reference</td>
   <td>is_database_reported_tailoring_participant_in_biosynthesis_of</td>
   <td>nystatin A1</td>
   <td>MIBiG assigns this specific gene a tailoring role in the exact nystatin A1 cluster; the database knock-out code is not an independently inspected mutant experiment. This is pathway participation, not a claim that the protein alone directly forms the mature compound. No substrate, donor, site-specific reaction, kinetic result, cofactor occupancy, physical complex or order relative to NysL or the other enzyme is asserted. The conflicting MITE reaction models are not adopted; issue658 remains open.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://dl.secondarymetabolites.org/mibig/mibig_json_4.0.tar.gz<br>https://www.ncbi.nlm.nih.gov/protein/AAF71773.1<br>https://www.uniprot.org/uniprotkb/Q9L4W6<br>https://www.ncbi.nlm.nih.gov/nuccore/AF263912.1</summary><ul><li><dl><dt>reference</dt><dd>https://dl.secondarymetabolites.org/mibig/mibig_json_4.0.tar.gz</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-06</dd><dt>notes</dt><dd>Adopted MIBiG4.0 archive SHA256 986f1a69fb5eeb84fd7c0175ae921304c22fd5f8ed04c96d8c1c0c95a145837b, member mibig_json_4.0/BGC0000115.json inspected2026-10-07. Active entry version5 has one exact owner-matching nystatin A1 SMILES, native locus AF263912.1 and taxon316284. Gene AAF71773.1/nysDI has function Tailoring with database evidence method Knock-out. This does not convert its cited PMID10873841 into an inspected primary assay or assign a precise reaction.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AAF71773.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>snippet</dt><dd>presumably responsible for attachment</dd><dt>notes</dt><dd>Independent complete 506-aa NysDI conceptual translation from Streptomyces noursei ATCC11455/taxon316284. Original function qualifier is explicitly tentative. CDD domain and binding-site annotations are predictions, not measurements. No exact historical assay stock or construct is established.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q9L4W6</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Current unreviewed 506-aa NysDI reference matches native CDS and GenPeptAAF71773.1 exactly. UniProt species tax1971 and reference strain ATCC11455 are consistent with the strain-level native record. This entry has no FUNCTION annotation; predicted or homology-level protein existence is not an independently measured assay.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/AF263912.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Complete native CDS translation, annotation, independent GenPept and UniProt agree; coded_by strand/coordinates/DNA and ATCC11455 qualifiers verified. NysDI uses reverse60909..62429,1521nt,table11/codon1,506aa. AF263912.1 is the complete123580bp cluster, not a complete genome. No claim about every unrelated feature, experimental folding or expression is made.</dd></dl>
+  <td><span class="mono"><a href="https://dl.secondarymetabolites.org/mibig/mibig_json_4.0.tar.gz">https://dl.secondarymetabolites.org/mibig/mibig_json_4.0.tar.gz</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AAF71773.1">https://www.ncbi.nlm.nih.gov/protein/AAF71773.1</a><br><a href="https://www.uniprot.org/uniprotkb/Q9L4W6">https://www.uniprot.org/uniprotkb/Q9L4W6</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF263912.1">https://www.ncbi.nlm.nih.gov/nuccore/AF263912.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://dl.secondarymetabolites.org/mibig/mibig_json_4.0.tar.gz">https://dl.secondarymetabolites.org/mibig/mibig_json_4.0.tar.gz</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-06</dd><dt>notes</dt><dd>Adopted MIBiG4.0 archive SHA256 986f1a69fb5eeb84fd7c0175ae921304c22fd5f8ed04c96d8c1c0c95a145837b, member mibig_json_4.0/BGC0000115.json inspected2026-10-07. Active entry version5 has one exact owner-matching nystatin A1 SMILES, native locus AF263912.1 and taxon316284. Gene AAF71773.1/nysDI has function Tailoring with database evidence method Knock-out. This does not convert its cited PMID10873841 into an inspected primary assay or assign a precise reaction.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AAF71773.1">https://www.ncbi.nlm.nih.gov/protein/AAF71773.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>snippet</dt><dd>presumably responsible for attachment</dd><dt>notes</dt><dd>Independent complete 506-aa NysDI conceptual translation from Streptomyces noursei ATCC11455/taxon316284. Original function qualifier is explicitly tentative. CDD domain and binding-site annotations are predictions, not measurements. No exact historical assay stock or construct is established.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q9L4W6">https://www.uniprot.org/uniprotkb/Q9L4W6</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Current unreviewed 506-aa NysDI reference matches native CDS and GenPeptAAF71773.1 exactly. UniProt species tax1971 and reference strain ATCC11455 are consistent with the strain-level native record. This entry has no FUNCTION annotation; predicted or homology-level protein existence is not an independently measured assay.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF263912.1">https://www.ncbi.nlm.nih.gov/nuccore/AF263912.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Complete native CDS translation, annotation, independent GenPept and UniProt agree; coded_by strand/coordinates/DNA and ATCC11455 qualifiers verified. NysDI uses reverse60909..62429,1521nt,table11/codon1,506aa. AF263912.1 is the complete123580bp cluster, not a complete genome. No claim about every unrelated feature, experimental folding or expression is made.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -301,10 +303,10 @@ by the corpus tests.</p>
   <td>is_database_reported_tailoring_participant_in_biosynthesis_of</td>
   <td>nystatin A1</td>
   <td>MIBiG assigns this specific gene a tailoring role in the exact nystatin A1 cluster; the database knock-out code is not an independently inspected mutant experiment. This is pathway participation, not a claim that the protein alone directly forms the mature compound. No substrate, donor, site-specific reaction, kinetic result, cofactor occupancy, physical complex or order relative to NysL or the other enzyme is asserted. The conflicting MITE reaction models are not adopted; issue658 remains open.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://dl.secondarymetabolites.org/mibig/mibig_json_4.0.tar.gz<br>https://www.ncbi.nlm.nih.gov/protein/AAF71771.1<br>https://www.uniprot.org/uniprotkb/Q9L4W8<br>https://www.ncbi.nlm.nih.gov/nuccore/AF263912.1</summary><ul><li><dl><dt>reference</dt><dd>https://dl.secondarymetabolites.org/mibig/mibig_json_4.0.tar.gz</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-06</dd><dt>notes</dt><dd>Adopted MIBiG4.0 archive SHA256 986f1a69fb5eeb84fd7c0175ae921304c22fd5f8ed04c96d8c1c0c95a145837b, member mibig_json_4.0/BGC0000115.json inspected2026-10-07. Active entry version5 has one exact owner-matching nystatin A1 SMILES, native locus AF263912.1 and taxon316284. Gene AAF71771.1/nysN has function Tailoring with database evidence method Knock-out. This does not convert its cited PMID10873841 into an inspected primary assay or assign a precise reaction.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AAF71771.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>snippet</dt><dd>presumably involved in modification of the nystatin macrolactone ring</dd><dt>notes</dt><dd>Independent complete 398-aa NysN conceptual translation from Streptomyces noursei ATCC11455/taxon316284. Original function qualifier is explicitly tentative. CDD domain and binding-site annotations are predictions, not measurements. No exact historical assay stock or construct is established.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q9L4W8</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Current unreviewed 398-aa NysN reference matches native CDS and GenPeptAAF71771.1 exactly. UniProt species tax1971 and reference strain ATCC11455 are consistent with the strain-level native record. This entry has no FUNCTION annotation; predicted or homology-level protein existence is not an independently measured assay.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/AF263912.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Complete native CDS translation, annotation, independent GenPept and UniProt agree; coded_by strand/coordinates/DNA and ATCC11455 qualifiers verified. NysN uses reverse58637..59833,1197nt,table11/codon1,398aa. AF263912.1 is the complete123580bp cluster, not a complete genome. No claim about every unrelated feature, experimental folding or expression is made.</dd></dl>
+  <td><span class="mono"><a href="https://dl.secondarymetabolites.org/mibig/mibig_json_4.0.tar.gz">https://dl.secondarymetabolites.org/mibig/mibig_json_4.0.tar.gz</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AAF71771.1">https://www.ncbi.nlm.nih.gov/protein/AAF71771.1</a><br><a href="https://www.uniprot.org/uniprotkb/Q9L4W8">https://www.uniprot.org/uniprotkb/Q9L4W8</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF263912.1">https://www.ncbi.nlm.nih.gov/nuccore/AF263912.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://dl.secondarymetabolites.org/mibig/mibig_json_4.0.tar.gz">https://dl.secondarymetabolites.org/mibig/mibig_json_4.0.tar.gz</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-06</dd><dt>notes</dt><dd>Adopted MIBiG4.0 archive SHA256 986f1a69fb5eeb84fd7c0175ae921304c22fd5f8ed04c96d8c1c0c95a145837b, member mibig_json_4.0/BGC0000115.json inspected2026-10-07. Active entry version5 has one exact owner-matching nystatin A1 SMILES, native locus AF263912.1 and taxon316284. Gene AAF71771.1/nysN has function Tailoring with database evidence method Knock-out. This does not convert its cited PMID10873841 into an inspected primary assay or assign a precise reaction.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AAF71771.1">https://www.ncbi.nlm.nih.gov/protein/AAF71771.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>snippet</dt><dd>presumably involved in modification of the nystatin macrolactone ring</dd><dt>notes</dt><dd>Independent complete 398-aa NysN conceptual translation from Streptomyces noursei ATCC11455/taxon316284. Original function qualifier is explicitly tentative. CDD domain and binding-site annotations are predictions, not measurements. No exact historical assay stock or construct is established.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q9L4W8">https://www.uniprot.org/uniprotkb/Q9L4W8</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Current unreviewed 398-aa NysN reference matches native CDS and GenPeptAAF71771.1 exactly. UniProt species tax1971 and reference strain ATCC11455 are consistent with the strain-level native record. This entry has no FUNCTION annotation; predicted or homology-level protein existence is not an independently measured assay.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF263912.1">https://www.ncbi.nlm.nih.gov/nuccore/AF263912.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Complete native CDS translation, annotation, independent GenPept and UniProt agree; coded_by strand/coordinates/DNA and ATCC11455 qualifiers verified. NysN uses reverse58637..59833,1197nt,table11/codon1,398aa. AF263912.1 is the complete123580bp cluster, not a complete genome. No claim about every unrelated feature, experimental folding or expression is made.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -321,24 +323,34 @@ by the corpus tests.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=VQOXZBDYSJBXMA-NQTDYLQESA-N">AntibioticMech (nystatin A1) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=CHEBI%3A473992">MediaIngredientMech (CHEBI:473992) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A316284">TaxonMech: Streptomyces noursei ATCC 11455 (NCBITaxon:316284) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000115">PathwayMech (mibig:BGC0000115) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q=CHEBI%3A473992">MediaIngredientMech (CHEBI:473992) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A316284">TaxonMech: Streptomyces noursei ATCC 11455 (NCBITaxon:316284) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000115">PathwayMech (mibig:BGC0000115) &nearr;</a>
 </div>
 
 
+<h2 id="curation-history">Curation history <span class="tag">4</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-07T18:00:07Z">2026-10-07T18:00:07Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added a separate three-node/two-edge BIOSYNTHESIS graph for the MIBiG gene-level NysDI and NysN tailoring assignments in the exact nystatin A1 cluster. Grounded ATCC11455 native references to UniProtKB:Q9L4W6 and UniProtKB:Q9L4W8 after complete native CDS/GenPept/UniProt comparison. Both edges have stable source URLs and tentative GenPept annotation snippets. Database knock-out codes are not independently inspected primary assays. No exact chemical reaction, donor, regiochemistry, reaction order, physical assembly or historical construct inferred. Conflicting MITE0000410 product stereo and MITE0000411/410 reaction continuity remain unresolved in issue658; neither chemical model is adopted. Preserved the full NysL graph, complete owner stereochemistry, source grades, occurrences, AntibioticMech link, SEEDED status and all prior history.</p></li>
+<li><time datetime="2026-10-02T01:31:09Z">2026-10-02T01:31:09Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added a BIOSYNTHESIS causal graph for Streptomyces noursei NysL C-10 hydroxylation in the final nystatin A1 tailoring step; grounded NysL to UniProtKB:Q9L4X0 and left 10-deoxynystatin ungrounded because it is absent from the local corpus.</p></li>
+<li><time datetime="2026-09-25T03:03:35Z">2026-09-25T03:03:35Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:15Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
+
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0000115</td><td>MIBIG</td><td>5</td></tr>
-<tr><td class="mono">CHEBI:473992</td><td>CHEBI</td><td>3-star</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000115">BGC0000115</a></td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_473992">CHEBI:473992</a></td><td>CHEBI</td><td>3-star</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/polyketides/nystatin-a1.yaml">data/natural_products/polyketides/nystatin-a1.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20CHEBI%3A473992&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Fpolyketides%2Fnystatin-a1.html">Report a problem with this record</a>: opens a GitHub issue that names CHEBI:473992 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Corpus as of 2026-10-23 22:53 UTC. Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 8e5d64d98cfd). Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

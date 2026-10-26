@@ -57,6 +57,11 @@
     </aside>
 
     <div class="results-main">
+      <noscript>
+        <p class="meta"><strong>The structure map and its data table need JavaScript.</strong>
+        Every compound it shows is also reachable without it, from
+        <a href="{{ root }}browse.html">Browse</a> and the per-pathway pages.</p>
+      </noscript>
       <div id="map-status" class="map-status" role="status" aria-live="polite">
         Loading chemical map…
       </div>
@@ -86,6 +91,17 @@
           </div>
         </aside>
       </div>
+      <details class="map-table" id="map-table">
+        <summary>View data as table</summary>
+        <p class="meta" id="map-table-count"></p>
+        <div class="scroll" role="region" tabindex="0" aria-label="Compounds on the structure map">
+          <table>
+            <caption class="sub">Compounds on the structure map, as filtered by pathway</caption>
+            <thead><tr><th scope="col">Compound</th><th scope="col">Identifier</th><th scope="col">Filing pathway</th><th scope="col">Structure input</th><th scope="col">Fragments</th></tr></thead>
+            <tbody id="map-table-body"></tbody>
+          </table>
+        </div>
+      </details>
     </div>
   </div>
 

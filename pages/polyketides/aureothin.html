@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Polyketides</a> &middot; aureothin</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,17 +32,17 @@
   </form>
 </div>
 <h1>aureothin</h1>
-<p class="sub"><span class="mono">CHEBI:80024</span>
+<p class="sub"><span class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_80024">CHEBI:80024</a></span>
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 <span class="tag">antibacterial</span></p>
 <details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/aureothin.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/aureothin.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 <p>A C-nitro compound that is (3Z)-3-[(2E)-2-methyl-3-(4-nitrophenyl)prop-2-en-1-ylidene]tetrahydrofuran which is substituted by a 6-methoxy-3,5-dimethyl-4-oxo-4H-pyran-2-yl group at position 5. It is isolated from the soil bacterium, Streptomyces thioluteus and exhibits antitumor, antifungal, and insecticidal activities.</p>
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">GQKXCBCSVYJUMI-WACKOAQBSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">[H][C@]1(c2oc(OC)c(C)c(=O)c2C)C/C(=C/C(C)=C/c2ccc([N+](=O)[O-])cc2)CO1</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
@@ -57,37 +59,37 @@ pks, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Streptomyces thioluteus<br><span class="mono">NCBITaxon:66431</span></td>
+  <td>Streptomyces thioluteus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=66431">NCBITaxon:66431</a></span></td>
   <td><span class="tag causal">BGC_CHARACTERIZED</span></td>
-  <td class="mono">mibig:BGC0000024</td>
-  <td><span class="mono">PMID:13174453</span>, <span class="mono">DOI:10.1021/ja102751h</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000024">mibig:BGC0000024</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/13174453/">PMID:13174453</a></span>, <span class="mono"><a href="https://doi.org/10.1021/ja102751h">DOI:10.1021/ja102751h</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">1</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Streptomyces thioluteus<br><span class="mono">NCBITaxon:66431</span></td>
+  <td>Streptomyces thioluteus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=66431">NCBITaxon:66431</a></span></td>
   <td>CHEBI</td>
-  <td class="mono">https://www.ebi.ac.uk/chebi/CHEBI:80024</td>
+  <td class="mono"><a href="https://www.ebi.ac.uk/chebi/CHEBI:80024">https://www.ebi.ac.uk/chebi/CHEBI:80024</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0000024</td>
-  <td>Streptomyces thioluteus<br><span class="mono">NCBITaxon:66431</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000024">mibig:BGC0000024</a></td>
+  <td>Streptomyces thioluteus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=66431">NCBITaxon:66431</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:AJ575648.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AJ575648.1">genbank:AJ575648.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -97,20 +99,20 @@ isolation report left it.</p>
 <h2>Biosynthesis <span class="tag causal">curated</span></h2>
 <p class="sub">Written by a curator with claim-level evidence on each step; not
 derived from a source. This is what the rest of the record exists to support.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthesis steps"><table>
 <tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
 <tr>
   <td>1</td>
-  <td>AurF 4-aminobenzoate N-oxygenase<br><span class="mono">UniProtKB:Q70KH9</span></td>
-  <td class="mono">RHEA:58889</td>
-  <td class="mono">CHEBI:17836 &rarr; CHEBI:142863</td>
-  <td class="mono">DOI:10.1021/ja039328t</td>
+  <td>AurF 4-aminobenzoate N-oxygenase<br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q70KH9/entry">UniProtKB:Q70KH9</a></span></td>
+  <td class="mono"><a href="https://www.rhea-db.org/rhea/58889">RHEA:58889</a></td>
+  <td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_17836">CHEBI:17836</a> &rarr; <a href="http://purl.obolibrary.org/obo/CHEBI_142863">CHEBI:142863</a></td>
+  <td class="mono"><a href="https://doi.org/10.1021/ja039328t">DOI:10.1021/ja039328t</a></td>
 </tr>
 </table></div>
 <p class="sub">Step 1: AurF oxidizes 4-aminobenzoate to 4-nitrobenzoate, the nitroaryl starter unit used by the aureothin polyketide synthase.</p>
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for aureothin">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for aureothin">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -143,14 +145,14 @@ derived from a source. This is what the rest of the record exists to support.</p
 </div>
 
 <h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
-<p class="sub">Partial Streptomyces thioluteus aureothin biosynthesis graph for AurF-catalyzed N-oxygenation of the nitroaryl starter unit.</p><div class="scroll"><table>
+<p class="sub">Partial Streptomyces thioluteus aureothin biosynthesis graph for AurF-catalyzed N-oxygenation of the nitroaryl starter unit.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>4-aminobenzoate</td>
   <td>is N-oxygenated by</td>
   <td>AurF</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja039328t</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja039328t</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>AurF catalyzes RHEA:58889 in aureothin biosynthesis.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja039328t">DOI:10.1021/ja039328t</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja039328t">DOI:10.1021/ja039328t</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>AurF catalyzes RHEA:58889 in aureothin biosynthesis.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -159,7 +161,7 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>forms</td>
   <td>4-nitrobenzoate</td>
   <td>This graph covers the starter-unit N-oxygenation step; downstream tailoring is represented separately where curated.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja039328t</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja039328t</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>AurF catalyzes RHEA:58889 in aureothin biosynthesis.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja039328t">DOI:10.1021/ja039328t</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja039328t">DOI:10.1021/ja039328t</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>AurF catalyzes RHEA:58889 in aureothin biosynthesis.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -167,15 +169,15 @@ derived from a source. This is what the rest of the record exists to support.</p
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
-<p class="sub">Native AurI reference and upstream pyrone methylation model. Q70KH3 is not an experimentally verified plasmid sequence. Paper-relative intermediates remain ungrounded; deoxyaureothin is not mature aureothin.</p><div class="scroll"><table>
+<p class="sub">Native AurI reference and upstream pyrone methylation model. Q70KH3 is not an experimentally verified plasmid sequence. Paper-relative intermediates remain ungrounded; deoxyaureothin is not mature aureothin.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 2 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>aurI (AJ575648.1:28440-29132)</td>
   <td>encodes the native reference protein</td>
   <td>AurI</td>
   <td>Native Streptomyces thioluteus reference; not a host or construct accession.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AJ575648.1<br>https://www.uniprot.org/uniprotkb/Q70KH3/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/AJ575648.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>AJ575648.1 CDS 28440..29132, forward strand, ATG start; GenPept CAE02607.1, 230 amino acids.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q70KH3/entry</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Full CDS translation equals the deposited translation, independent CAE02607.1 protein and reviewed Q70KH3 sequence. UniProt entry version 59, sequence version 1, retrieved 2026-10-07.</dd></dl>
+  <td><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AJ575648.1">https://www.ncbi.nlm.nih.gov/nuccore/AJ575648.1</a><br><a href="https://www.uniprot.org/uniprotkb/Q70KH3/entry">https://www.uniprot.org/uniprotkb/Q70KH3/entry</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/AJ575648.1">https://www.ncbi.nlm.nih.gov/nuccore/AJ575648.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>AJ575648.1 CDS 28440..29132, forward strand, ATG start; GenPept CAE02607.1, 230 amino acids.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q70KH3/entry">https://www.uniprot.org/uniprotkb/Q70KH3/entry</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Full CDS translation equals the deposited translation, independent CAE02607.1 protein and reviewed Q70KH3 sequence. UniProt entry version 59, sequence version 1, retrieved 2026-10-07.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -184,8 +186,8 @@ by the corpus tests.</p>
   <td>is the gamma-pyrone substrate assigned to</td>
   <td>AurI</td>
   <td>Do not substitute the alpha-pyrone tautomer 5 for the depicted substrate iso-5.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q70KH3/entry<br>DOI:10.1021/ja102751h</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q70KH3/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>The reviewed entry assigns demethylluteothin methylation to AurI; its cited older biochemical paper was not newly read.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1021/ja102751h</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Figure 6 interpretation; not a purified-enzyme kinetic assay.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q70KH3/entry">https://www.uniprot.org/uniprotkb/Q70KH3/entry</a><br><a href="https://doi.org/10.1021/ja102751h">DOI:10.1021/ja102751h</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q70KH3/entry">https://www.uniprot.org/uniprotkb/Q70KH3/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>The reviewed entry assigns demethylluteothin methylation to AurI; its cited older biochemical paper was not newly read.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja102751h">DOI:10.1021/ja102751h</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Figure 6 interpretation; not a purified-enzyme kinetic assay.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -194,8 +196,8 @@ by the corpus tests.</p>
   <td>is assigned the O-methylation forming</td>
   <td>Deoxyaureothin (6)</td>
   <td>Figure 6 model uses SAM and yields compound 6, before AurH-dependent maturation.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q70KH3/entry<br>DOI:10.1021/ja102751h</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q70KH3/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>The reviewed entry names luteothin/deoxyaureothin as the product.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1021/ja102751h</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Figure 6, p-nitrophenyl series. No mature-product formation is inferred here.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q70KH3/entry">https://www.uniprot.org/uniprotkb/Q70KH3/entry</a><br><a href="https://doi.org/10.1021/ja102751h">DOI:10.1021/ja102751h</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q70KH3/entry">https://www.uniprot.org/uniprotkb/Q70KH3/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>The reviewed entry names luteothin/deoxyaureothin as the product.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja102751h">DOI:10.1021/ja102751h</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Figure 6, p-nitrophenyl series. No mature-product formation is inferred here.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -203,14 +205,14 @@ by the corpus tests.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 4 edges</span></h2>
-<p class="sub">Partial view of separate culture and complementation observations; connecting mechanistic edges are intentionally omitted because these experiments do not establish one continuous causal chain. Reported S. albus/pMZ02 triple-deficient background, not a native single-gene knockout. Complementation is retained at the reported pyrone class: no exact rescue-product assignment, verified complementation construct, mature-aureothin rescue or exclusion of polar effects. Supplementary material was not read.</p><div class="scroll"><table>
+<p class="sub">Partial view of separate culture and complementation observations; connecting mechanistic edges are intentionally omitted because these experiments do not establish one continuous causal chain. Reported S. albus/pMZ02 triple-deficient background, not a native single-gene knockout. Complementation is retained at the reported pyrone class: no exact rescue-product assignment, verified complementation construct, mature-aureothin rescue or exclusion of polar effects. Supplementary material was not read.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 3 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>S. albus/pMZ02 without PNBA</td>
   <td>shows under the reported R2YE conditions</td>
   <td>No observed polyketide production</td>
   <td>Context-specific negative observation, not proof of inability in every condition.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja102751h</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja102751h</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Main-text pyrone-mutant experiments, BioC passage 13.</dd><dt>snippet</dt><dd>no polyketide production was observed</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja102751h">DOI:10.1021/ja102751h</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja102751h">DOI:10.1021/ja102751h</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Main-text pyrone-mutant experiments, BioC passage 13.</dd><dt>snippet</dt><dd>no polyketide production was observed</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -219,7 +221,7 @@ by the corpus tests.</p>
   <td>yields in the reported culture</td>
   <td>Nordeoxyaureothin (5, alpha-pyrone)</td>
   <td>Precursor-feeding result; not evidence that AurI methylates the alpha tautomer.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja102751h</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja102751h</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Main-text pyrone-mutant experiments, BioC passage 13.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja102751h">DOI:10.1021/ja102751h</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja102751h">DOI:10.1021/ja102751h</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Main-text pyrone-mutant experiments, BioC passage 13.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -228,8 +230,8 @@ by the corpus tests.</p>
   <td>is the native gene-product reference associated with</td>
   <td>aurI complementation of the triple mutant</td>
   <td>Gene-label mapping only; no experimental plasmid sequence, tag or vector inferred.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q70KH3/entry<br>DOI:10.1021/ja102751h</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q70KH3/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Native aurI gene name and AJ575648/CAE02607.1 cross-reference.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1021/ja102751h</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Main text names aurI complementation, BioC passage 14.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q70KH3/entry">https://www.uniprot.org/uniprotkb/Q70KH3/entry</a><br><a href="https://doi.org/10.1021/ja102751h">DOI:10.1021/ja102751h</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q70KH3/entry">https://www.uniprot.org/uniprotkb/Q70KH3/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Native aurI gene name and AJ575648/CAE02607.1 cross-reference.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja102751h">DOI:10.1021/ja102751h</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Main text names aurI complementation, BioC passage 14.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -238,7 +240,7 @@ by the corpus tests.</p>
   <td>restores the reported</td>
   <td>Methylated gamma-pyrone formation</td>
   <td>Rescue sentence does not identify a unique complemented analogue.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja102751h</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja102751h</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Main-text pyrone-mutant experiments, BioC passage 14.</dd><dt>snippet</dt><dd>restored the formation</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja102751h">DOI:10.1021/ja102751h</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja102751h">DOI:10.1021/ja102751h</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Main-text pyrone-mutant experiments, BioC passage 14.</dd><dt>snippet</dt><dd>restored the formation</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -246,15 +248,15 @@ by the corpus tests.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
-<p class="sub">Native AurH reference and database-assigned aureothin maturation. Q70KH6 is not an experimentally verified plasmid sequence. The reviewed database assigns sequential hydroxylation and ring closure; this graph is not a newly inspected purified-enzyme assay. The precursor remains chemically ungrounded. No pMZ04 rescue claim is used.</p><div class="scroll"><table>
+<p class="sub">Native AurH reference and database-assigned aureothin maturation. Q70KH6 is not an experimentally verified plasmid sequence. The reviewed database assigns sequential hydroxylation and ring closure; this graph is not a newly inspected purified-enzyme assay. The precursor remains chemically ungrounded. No pMZ04 rescue claim is used.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 4 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>aurH (AJ575648.1:13938-15158)</td>
   <td>encodes the native reference protein</td>
   <td>AurH</td>
   <td>Native Streptomyces thioluteus reference; not a host or construct accession.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AJ575648.1<br>https://www.uniprot.org/uniprotkb/Q70KH6/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/AJ575648.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>AJ575648.1 CDS 13938..15158, forward strand, ATG start; GenPept CAE02604.1, 406 amino acids.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q70KH6/entry</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Full CDS translation equals the deposited translation, independent CAE02604.1 protein and reviewed Q70KH6 sequence. UniProt entry version 98, sequence version 1, retrieved 2026-10-07.</dd></dl>
+  <td><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AJ575648.1">https://www.ncbi.nlm.nih.gov/nuccore/AJ575648.1</a><br><a href="https://www.uniprot.org/uniprotkb/Q70KH6/entry">https://www.uniprot.org/uniprotkb/Q70KH6/entry</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/AJ575648.1">https://www.ncbi.nlm.nih.gov/nuccore/AJ575648.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>AJ575648.1 CDS 13938..15158, forward strand, ATG start; GenPept CAE02604.1, 406 amino acids.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q70KH6/entry">https://www.uniprot.org/uniprotkb/Q70KH6/entry</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Full CDS translation equals the deposited translation, independent CAE02604.1 protein and reviewed Q70KH6 sequence. UniProt entry version 98, sequence version 1, retrieved 2026-10-07.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -263,7 +265,7 @@ by the corpus tests.</p>
   <td>is the maturation substrate assigned to</td>
   <td>AurH</td>
   <td>Overall substrate assignment; not an experimental substrate-affinity measurement.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q70KH6/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q70KH6/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Reviewed function and RHEA:58824 assign luteothin/deoxyaureothin as substrate. Older full primary papers were not newly read.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q70KH6/entry">https://www.uniprot.org/uniprotkb/Q70KH6/entry</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q70KH6/entry">https://www.uniprot.org/uniprotkb/Q70KH6/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Reviewed function and RHEA:58824 assign luteothin/deoxyaureothin as substrate. Older full primary papers were not newly read.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -272,7 +274,7 @@ by the corpus tests.</p>
   <td>is assigned the oxidative ring formation yielding</td>
   <td>aureothin</td>
   <td>Database annotation describes a (7R)-7-hydroxydeoxyaureothin intermediate followed by tetrahydrofuran formation. No exact intermediate structure or purified catalytic sufficiency is independently established here.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q70KH6/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q70KH6/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Reviewed function and physiological RHEA:58825 name mature aureothin and explicitly cross-reference CHEBI:80024. This is not the unmethylated C21 reaction model in MITE0000190.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q70KH6/entry">https://www.uniprot.org/uniprotkb/Q70KH6/entry</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q70KH6/entry">https://www.uniprot.org/uniprotkb/Q70KH6/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Reviewed function and physiological RHEA:58825 name mature aureothin and explicitly cross-reference CHEBI:80024. This is not the unmethylated C21 reaction model in MITE0000190.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -280,15 +282,15 @@ by the corpus tests.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">6 nodes, 5 edges</span></h2>
-<p class="sub">Partial, derivative-specific whole-cell observations, not measurements on the mature aureothin owner or purified AurH kinetics. The native protein reference is associated by gene name, not by a verified construct sequence. Reported outcomes apply to the tested panel, not every alpha- or gamma-pyrone. Supplementary material was not read; no pMZ04 rescue or NorH grounding is used.</p><div class="scroll"><table>
+<p class="sub">Partial, derivative-specific whole-cell observations, not measurements on the mature aureothin owner or purified AurH kinetics. The native protein reference is associated by gene name, not by a verified construct sequence. Reported outcomes apply to the tested panel, not every alpha- or gamma-pyrone. Supplementary material was not read; no pMZ04 rescue or NorH grounding is used.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 5 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>AurH</td>
   <td>is the native gene-product reference associated with</td>
   <td>Reported S. lividans/pHJ110 analogue panel</td>
   <td>Protein-reference mapping only; no experimental plasmid sequence or tag inferred.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q70KH6/entry<br>DOI:10.1021/ja102751h</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q70KH6/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Native aurH gene name and AJ575648/CAE02604.1 cross-reference.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1021/ja102751h</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Main-text AurH biotransformation experiments, BioC passage 17; gene-label mapping, not experimental construct sequence verification.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q70KH6/entry">https://www.uniprot.org/uniprotkb/Q70KH6/entry</a><br><a href="https://doi.org/10.1021/ja102751h">DOI:10.1021/ja102751h</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q70KH6/entry">https://www.uniprot.org/uniprotkb/Q70KH6/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Native aurH gene name and AJ575648/CAE02604.1 cross-reference.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja102751h">DOI:10.1021/ja102751h</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Main-text AurH biotransformation experiments, BioC passage 17; gene-label mapping, not experimental construct sequence verification.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -297,7 +299,7 @@ by the corpus tests.</p>
   <td>shows the reported</td>
   <td>Formation of THF analogues 21-26</td>
   <td>Passage 17 assigns deoxyaureonitrile 7, halogenated derivatives 8-11 and naphthoate 15 to corresponding products 21-26. HPLC-MS monitoring reported substrate disappearance; no rates, yields or universal specificity are inferred. Passage 22 characterizes new compounds, not every product anew.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja102751h</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja102751h</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Main-text biotransformations, BioC passage 17; Figure 7 context.</dd><dt>snippet</dt><dd>complete disappearance of the starting material</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja102751h">DOI:10.1021/ja102751h</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja102751h">DOI:10.1021/ja102751h</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Main-text biotransformations, BioC passage 17; Figure 7 context.</dd><dt>snippet</dt><dd>complete disappearance of the starting material</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -306,8 +308,8 @@ by the corpus tests.</p>
   <td>is the native gene-product reference associated with</td>
   <td>Reported alpha-pyrone 17 biotransformation</td>
   <td>Passage 17 names AurH; the exact host of this individual alpha-pyrone assay is not separately assigned beyond the reported whole-cell context.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q70KH6/entry<br>DOI:10.1021/ja102751h</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q70KH6/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Native aurH gene name and AJ575648/CAE02604.1 cross-reference.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1021/ja102751h</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Main-text AurH biotransformation experiments, BioC passage 17; gene-label mapping, not experimental construct sequence verification.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q70KH6/entry">https://www.uniprot.org/uniprotkb/Q70KH6/entry</a><br><a href="https://doi.org/10.1021/ja102751h">DOI:10.1021/ja102751h</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q70KH6/entry">https://www.uniprot.org/uniprotkb/Q70KH6/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Native aurH gene name and AJ575648/CAE02604.1 cross-reference.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja102751h">DOI:10.1021/ja102751h</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Main-text AurH biotransformation experiments, BioC passage 17; gene-label mapping, not experimental construct sequence verification.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -316,7 +318,7 @@ by the corpus tests.</p>
   <td>produces the reported</td>
   <td>7-Hydroxylated alpha-pyrone 20</td>
   <td>Paper-relative compound identity remains ungrounded; not mature aureothin.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja102751h</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja102751h</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>BioC passage 17 reports alpha-pyrone 17 to 7-hydroxy derivative 20; Figure 7 depicts the retained alpha-pyrone.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja102751h">DOI:10.1021/ja102751h</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja102751h">DOI:10.1021/ja102751h</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>BioC passage 17 reports alpha-pyrone 17 to 7-hydroxy derivative 20; Figure 7 depicts the retained alpha-pyrone.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -325,7 +327,7 @@ by the corpus tests.</p>
   <td>shows the reported</td>
   <td>No observed alpha-pyrone heterocyclization</td>
   <td>Context-specific negative outcome for the tested substrate, not a universal proof of inactivity for all alpha-pyrones.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja102751h</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja102751h</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Main-text biotransformations, BioC passage 17.</dd><dt>snippet</dt><dd>no heterocycle formation was observed</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja102751h">DOI:10.1021/ja102751h</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja102751h">DOI:10.1021/ja102751h</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Main-text biotransformations, BioC passage 17.</dd><dt>snippet</dt><dd>no heterocycle formation was observed</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -342,24 +344,38 @@ by the corpus tests.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=GQKXCBCSVYJUMI-WACKOAQBSA-N">AntibioticMech (aureothin) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=CHEBI%3A80024">MediaIngredientMech (CHEBI:80024) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A66431">TaxonMech: Streptomyces thioluteus (NCBITaxon:66431) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000024">PathwayMech (mibig:BGC0000024) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q=CHEBI%3A80024">MediaIngredientMech (CHEBI:80024) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A66431">TaxonMech: Streptomyces thioluteus (NCBITaxon:66431) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000024">PathwayMech (mibig:BGC0000024) &nearr;</a>
 </div>
 
 
+<h2 id="curation-history">Curation history <span class="tag">8</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-13T10:43:17Z">2026-10-13T10:43:17Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources<p>Seeded from the committed inventories and curation tables.</p></li>
+<li><time datetime="2026-10-08T03:05:52Z">2026-10-08T03:05:52Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added native AurH UniProtKB:Q70KH6/CAE02604.1 in two BIOSYNTHESIS graphs: database-assigned aureothin maturation and separate derivative-specific whole-cell observations from <a href="https://doi.org/10.1021/ja102751h">DOI:10.1021/ja102751h</a>. Complete native AJ575648.1 CDS, deposited translation, independent GenPept and reviewed UniProt sequences agree; native reference is not a verified experimental construct. Kept database claims separate from inspected 2010 observations, and analogue outcomes separate from the mature owner. Added stable evidence on all eight edges and two short source-exact snippets. Preserved every existing AurF/AurI graph, pathway step, source-owned field and history entry. No pMZ04 rescue assertion, NorH grounding, MITE C21 mature-product import, purified kinetics, universal substrate-specificity or REVIEWED-status promotion.</p></li>
+<li><time datetime="2026-10-08T00:48:56Z">2026-10-08T00:48:56Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Issue #680: explicitly marked the AurI heterologous-pyrone phenotype graph as a partial view of separate experimental observations. Explained why connecting mechanistic edges are intentionally omitted. Preserved every node, edge, evidence item, snippet, prior curation event and source-owned field; no new scientific claim or status promotion.</p></li>
+<li><time datetime="2026-10-08T00:30:38Z">2026-10-08T00:30:38Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added two AurI BIOSYNTHESIS graphs: the native Q70KH3/CAE02607.1 reference and gamma-pyrone methylation model, and separately the 2010 S. albus/pMZ02 precursor-feeding and aurI-complementation observations. Verified the complete native AJ575648.1 CDS against independent GenPept and UniProt sequences; did not equate that reference with an unread experimental construct. Kept the rescue outcome at the reported methylated gamma-pyrone class, separate from diagram product deoxyaureothin and from mature aureothin. Added DOI/URL evidence on all seven edges and two short source-exact snippets. Preserved prior AurF biology/evidence, pathway step, source-owned fields and history; clarified only the old AurF coverage note. No AurH complementation, purified kinetics, antimicrobial targets or REVIEWED-status promotion.</p></li>
+<li><time datetime="2026-10-07T23:15:47Z">2026-10-07T23:15:47Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Issue #676: explicitly migrated aureothin from minted owner naturalproductmech:mibig-a7a97dab7f / OGUMLESFFBGVOO-VJDLAWOBSA-N to CHEBI:80024 / GQKXCBCSVYJUMI-WACKOAQBSA-N using the pinned MIBiG structure correction and primary <a href="https://doi.org/10.1021/ja102751h">DOI:10.1021/ja102751h</a> Figure 1. Preserved the complete prior AurF precursor graph, pathway step and history without altering their claims. Withheld old-key LOTUS occurrences and original xrefs; recomputed classification, ChEBI grounding and sibling joins from the corrected structure. No AurH/AurI graph added; full-record status remains SEEDED.</p></li>
+<li><time datetime="2026-09-26T22:14:54Z">2026-09-26T22:14:54Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added a partial BIOSYNTHESIS causal graph and pathway step for AurF-catalyzed 4-aminobenzoate N-oxygenation in aureothin biosynthesis; grounded AurF to UniProtKB:Q70KH9 via EMBL AJ575648 protein CAE02601.1; and cited the experimentally characterized RHEA:58889 reaction through <a href="https://doi.org/10.1021/ja039328t">DOI:10.1021/ja039328t</a>.</p></li>
+<li><time datetime="2026-09-25T03:02:58Z">2026-09-25T03:02:58Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:10Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
+
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0000024</td><td>MIBIG</td><td>5</td></tr>
-<tr><td class="mono">CHEBI:80024</td><td>CHEBI</td><td>3-star</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000024">BGC0000024</a></td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_80024">CHEBI:80024</a></td><td>CHEBI</td><td>3-star</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/polyketides/aureothin.yaml">data/natural_products/polyketides/aureothin.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20CHEBI%3A80024&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Fpolyketides%2Faureothin.html">Report a problem with this record</a>: opens a GitHub issue that names CHEBI:80024 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Corpus as of 2026-10-23 22:53 UTC. Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 8e5d64d98cfd). Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

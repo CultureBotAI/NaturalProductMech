@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Unclassified</a> &middot; notoamide A</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>notoamide A</h1>
-<p class="sub"><span class="mono">naturalproductmech:mibig-edbab72597</span>
+<p class="sub"><span class="mono"><a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/unclassified/notoamide-a.yaml">naturalproductmech:mibig-edbab72597</a></span>
   <span class="tag">MINTED</span>
   <span class="tag">SEEDED</span>
 </p>
 <div class="note"><strong>Grounding review:</strong> No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.</div><details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/unclassified/notoamide-a.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/unclassified/notoamide-a.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">KGCIBVDLLPYXFL-OFVWMMNVSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">CC1(C)[C@@H]2C[C@]34CCCN3C(=O)[C@@]2(C[C@@]11C(=O)N(O)C2=C1C=CC1=C2C=CC(C)(C)O1)NC4=O</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">npatlas:NPA04681, npatlas:NPA004681</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://www.npatlas.org/explore/compounds/NPA04681">npatlas:NPA04681</a>, <a href="https://www.npatlas.org/explore/compounds/NPA004681">npatlas:NPA004681</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Unclassified</a> —
@@ -57,78 +59,78 @@ nrps, terpene, other, pks, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Aspergillus sp. MF297-2<br><span class="mono">NCBITaxon:877550</span></td>
+  <td>Aspergillus sp. MF297-2<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=877550">NCBITaxon:877550</a></span></td>
   <td><span class="tag weak">BGC_CORRELATED</span></td>
-  <td class="mono">mibig:BGC0001084</td>
-  <td><span class="mono">PMID:20722388</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001084">mibig:BGC0001084</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/20722388/">PMID:20722388</a></span></td>
 </tr>
 <tr>
-  <td>Aspergillus versicolor<br><span class="mono">NCBITaxon:46472</span></td>
+  <td>Aspergillus versicolor<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=46472">NCBITaxon:46472</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0000818</td>
-  <td><span class="mono">PMID:23213353</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000818">mibig:BGC0000818</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/23213353/">PMID:23213353</a></span></td>
 </tr>
 <tr>
-  <td>Aspergillus sp. FM242<br><span class="mono">NCBITaxon:2741095</span></td>
+  <td>Aspergillus sp. FM242<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2741095">NCBITaxon:2741095</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0002254</td>
-  <td><span class="mono">PMID:32433885</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002254">mibig:BGC0002254</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/32433885/">PMID:32433885</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">4</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Aspergillus<br><span class="mono">NCBITaxon:5052</span></td>
+  <td>Aspergillus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5052">NCBITaxon:5052</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1002/ANIE.200604381</td>
+  <td class="mono"><a href="https://doi.org/10.1002/ANIE.200604381">DOI:10.1002/ANIE.200604381</a></td>
 </tr>
 <tr>
-  <td>Aspergillus<br><span class="mono">NCBITaxon:5052</span></td>
+  <td>Aspergillus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5052">NCBITaxon:5052</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/JA1049302</td>
+  <td class="mono"><a href="https://doi.org/10.1021/JA1049302">DOI:10.1021/JA1049302</a></td>
 </tr>
 <tr>
-  <td>Aspergillus<br><span class="mono">NCBITaxon:5052</span></td>
+  <td>Aspergillus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5052">NCBITaxon:5052</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/NP0102758</td>
+  <td class="mono"><a href="https://doi.org/10.1021/NP0102758">DOI:10.1021/NP0102758</a></td>
 </tr>
 <tr>
-  <td>Aspergillus<br><span class="mono">NCBITaxon:5052</span></td>
+  <td>Aspergillus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5052">NCBITaxon:5052</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/NP800471Y</td>
+  <td class="mono"><a href="https://doi.org/10.1021/NP800471Y">DOI:10.1021/NP800471Y</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">3</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0001084</td>
-  <td>Aspergillus sp. MF297-2<br><span class="mono">NCBITaxon:877550</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001084">mibig:BGC0001084</a></td>
+  <td>Aspergillus sp. MF297-2<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=877550">NCBITaxon:877550</a></span>
 </td>
   <td><span class="tag ">CLUSTER_CORRELATED</span></td>
-  <td class="mono">genbank:HM622670.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/HM622670.1">genbank:HM622670.1</a></td>
 </tr>
 <tr>
-  <td class="mono">mibig:BGC0000818</td>
-  <td>Aspergillus versicolor<br><span class="mono">NCBITaxon:46472</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000818">mibig:BGC0000818</a></td>
+  <td>Aspergillus versicolor<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=46472">NCBITaxon:46472</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:JQ708194.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/JQ708194.1">genbank:JQ708194.1</a></td>
 </tr>
 <tr>
-  <td class="mono">mibig:BGC0002254</td>
-  <td>Aspergillus sp. FM242<br><span class="mono">NCBITaxon:2741095</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002254">mibig:BGC0002254</a></td>
+  <td>Aspergillus sp. FM242<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2741095">NCBITaxon:2741095</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:MT457561.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/MT457561.1">genbank:MT457561.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -138,7 +140,7 @@ isolation report left it.</p>
 
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for notoamide A">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for notoamide A">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -171,16 +173,16 @@ isolation report left it.</p>
 </div>
 
 <h2>Causal graph &mdash; biosynthesis <span class="tag">2 nodes, 1 edge</span></h2>
-<p class="sub">Native identity in the MF297-2/BGC0001084 context only. The spliced genomic reference is not a verified experimental transcript or tagged construct, and is not transferred to the distinct BGC0000818 or BGC0002254 source clusters.</p><div class="scroll"><table>
+<p class="sub">Native identity in the MF297-2/BGC0001084 context only. The spliced genomic reference is not a verified experimental transcript or tagged construct, and is not transferred to the distinct BGC0000818 or BGC0002254 source clusters.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>notF CDS (HM622670.1, two reverse-strand exons)</td>
   <td>encodes the native protein reference</td>
   <td>NotF (MF297-2 native reference)</td>
   <td>Aspergillus sp. MF297-2, taxon 877550; complement(join(17924..18053,18126..19354)); 452 amino acids.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.ncbi.nlm.nih.gov/nuccore/HM622670.1<br>https://www.ncbi.nlm.nih.gov/nuccore/GU564535.1<br>https://www.uniprot.org/uniprotkb/E0Y3X1/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/HM622670.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>GenBank links this two-exon CDS to ADM34139.1 and names NotF; the CDS lacks a gene-name qualifier.</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>/note=&#34;NotF&#34;</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/GU564535.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>The separate notF gene deposit has CDS join(1..1229,1302..1431) and protein ADM34132.1 in the same strain.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/E0Y3X1/entry</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Reviewed entry version 40, sequence version 1. CDS-aware translations of both deposits, both deposited translations, both independent GenPept proteins and E0Y3X1 match over all 452 residues. This establishes native reference identity, not the sequence of an experimental construct.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+  <td><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/HM622670.1">https://www.ncbi.nlm.nih.gov/nuccore/HM622670.1</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/GU564535.1">https://www.ncbi.nlm.nih.gov/nuccore/GU564535.1</a><br><a href="https://www.uniprot.org/uniprotkb/E0Y3X1/entry">https://www.uniprot.org/uniprotkb/E0Y3X1/entry</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/HM622670.1">https://www.ncbi.nlm.nih.gov/nuccore/HM622670.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>GenBank links this two-exon CDS to ADM34139.1 and names NotF; the CDS lacks a gene-name qualifier.</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>/note=&#34;NotF&#34;</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/GU564535.1">https://www.ncbi.nlm.nih.gov/nuccore/GU564535.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>The separate notF gene deposit has CDS join(1..1229,1302..1431) and protein ADM34132.1 in the same strain.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/E0Y3X1/entry">https://www.uniprot.org/uniprotkb/E0Y3X1/entry</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Reviewed entry version 40, sequence version 1. CDS-aware translations of both deposits, both deposited translations, both independent GenPept proteins and E0Y3X1 match over all 452 residues. This establishes native reference identity, not the sequence of an experimental construct.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -188,15 +190,15 @@ isolation report left it.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
-<p class="sub">Partial early-intermediate graph in the MF297-2 notoamide pathway context annotated by UniProt. NotF does not directly make notoamide A. No downstream reactions or final hydroxylase are asserted. The original paper DOI:10.1021/ja1049302 is cited by the database but its full text was not inspected; the 2020 specificity study was read at abstract level only. Assembly, kinetics and strict substrate exclusivity are not asserted.</p><div class="scroll"><table>
+<p class="sub">Partial early-intermediate graph in the MF297-2 notoamide pathway context annotated by UniProt. NotF does not directly make notoamide A. No downstream reactions or final hydroxylase are asserted. The original paper <a href="https://doi.org/10.1021/ja1049302">DOI:10.1021/ja1049302</a> is cited by the database but its full text was not inspected; the 2020 specificity study was read at abstract level only. Assembly, kinetics and strict substrate exclusivity are not asserted.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 2 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>NotF (MF297-2 native reference)</td>
   <td>is annotated to catalyze</td>
   <td>NotF early reverse C2-prenylation</td>
   <td>Native reference, not a sequence-verified assay construct. The reaction uses dimethylallyl diphosphate as prenyl donor and releases diphosphate. Formation of the later bicyclic core is not asserted.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/E0Y3X1/entry<br>DOI:10.1007/s00203-020-01854-7</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/E0Y3X1/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Entry version 40 annotates EC:2.5.1.109 and RHEA:35943, with physiological left-to-right RHEA:35944, citing PMID:20722388.</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>brevianamide F + dimethylallyl diphosphate = deoxybrevianamide E + diphosphate</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1007/s00203-020-01854-7</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Abstract only: NotF from MF297-2 catalyzes reverse C2-prenylation of brevianamide F; comparison of 14 cyclodipeptides by MS qualifies the earlier exclusive-substrate claim. No individual analogue product structures or kinetic values are imported.</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>NotF and BrePT share similar catalytic ability and substrate promiscuity.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/E0Y3X1/entry">https://www.uniprot.org/uniprotkb/E0Y3X1/entry</a><br><a href="https://doi.org/10.1007/s00203-020-01854-7">DOI:10.1007/s00203-020-01854-7</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/E0Y3X1/entry">https://www.uniprot.org/uniprotkb/E0Y3X1/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Entry version 40 annotates EC:2.5.1.109 and RHEA:35943, with physiological left-to-right RHEA:35944, citing <a href="https://pubmed.ncbi.nlm.nih.gov/20722388/">PMID:20722388</a>.</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>brevianamide F + dimethylallyl diphosphate = deoxybrevianamide E + diphosphate</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1007/s00203-020-01854-7">DOI:10.1007/s00203-020-01854-7</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Abstract only: NotF from MF297-2 catalyzes reverse C2-prenylation of brevianamide F; comparison of 14 cyclodipeptides by MS qualifies the earlier exclusive-substrate claim. No individual analogue product structures or kinetic values are imported.</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>NotF and BrePT share similar catalytic ability and substrate promiscuity.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -205,8 +207,8 @@ by the corpus tests.</p>
   <td>is the annotated substrate of</td>
   <td>NotF early reverse C2-prenylation</td>
   <td>The cyclic L-Trp/L-Pro substrate, not an unspecified stereoisomer.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/E0Y3X1/entry<br>https://www.ebi.ac.uk/chebi/CHEBI:64530</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/E0Y3X1/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Catalytic activity assigns brevianamide F as the prenyl acceptor.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ebi.ac.uk/chebi/CHEBI:64530</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>ChEBI identifies brevianamide F with full InChIKey RYFZBPVMVYTEKZ-KBPBESRZSA-N and the 3S,8aS stereochemistry.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/E0Y3X1/entry">https://www.uniprot.org/uniprotkb/E0Y3X1/entry</a><br><a href="https://www.ebi.ac.uk/chebi/CHEBI:64530">https://www.ebi.ac.uk/chebi/CHEBI:64530</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/E0Y3X1/entry">https://www.uniprot.org/uniprotkb/E0Y3X1/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Catalytic activity assigns brevianamide F as the prenyl acceptor.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ebi.ac.uk/chebi/CHEBI:64530">https://www.ebi.ac.uk/chebi/CHEBI:64530</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>ChEBI identifies brevianamide F with full InChIKey RYFZBPVMVYTEKZ-KBPBESRZSA-N and the 3S,8aS stereochemistry.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -215,8 +217,8 @@ by the corpus tests.</p>
   <td>has the annotated product</td>
   <td>deoxybrevianamide E</td>
   <td>An early intermediate, not notoamide A. This edge does not prove an experimentally complete route from the intermediate to this owner.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/E0Y3X1/entry<br>https://www.ebi.ac.uk/chebi/CHEBI:72948</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/E0Y3X1/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Catalytic activity identifies deoxybrevianamide E; the broad pathway annotation leaves the final hydroxylation enzyme leading to notoamide A unidentified.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ebi.ac.uk/chebi/CHEBI:72948</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>ChEBI identifies the reverse C2-prenylated product with full InChIKey KUGNSEAHJVSMAJ-IRXDYDNUSA-N.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/E0Y3X1/entry">https://www.uniprot.org/uniprotkb/E0Y3X1/entry</a><br><a href="https://www.ebi.ac.uk/chebi/CHEBI:72948">https://www.ebi.ac.uk/chebi/CHEBI:72948</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/E0Y3X1/entry">https://www.uniprot.org/uniprotkb/E0Y3X1/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Catalytic activity identifies deoxybrevianamide E; the broad pathway annotation leaves the final hydroxylation enzyme leading to notoamide A unidentified.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ebi.ac.uk/chebi/CHEBI:72948">https://www.ebi.ac.uk/chebi/CHEBI:72948</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>ChEBI identifies the reverse C2-prenylated product with full InChIKey KUGNSEAHJVSMAJ-IRXDYDNUSA-N.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -224,16 +226,16 @@ by the corpus tests.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">2 nodes, 1 edge</span></h2>
-<p class="sub">Native identity in the MF297-2/BGC0001084 context only. The spliced genomic reference is not a verified experimental transcript or assay construct, and is not transferred to the distinct BGC0000818 or BGC0002254 source clusters.</p><div class="scroll"><table>
+<p class="sub">Native identity in the MF297-2/BGC0001084 context only. The spliced genomic reference is not a verified experimental transcript or assay construct, and is not transferred to the distinct BGC0000818 or BGC0002254 source clusters.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 3 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>notC CDS (HM622670.1, two forward-strand exons)</td>
   <td>encodes the native protein reference</td>
   <td>NotC (MF297-2 native reference)</td>
   <td>Aspergillus sp. MF297-2, taxon 877550; join(5819..6996,7066..7168); 426 amino acids.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.ncbi.nlm.nih.gov/nuccore/HM622670.1<br>https://www.ncbi.nlm.nih.gov/nuccore/GU564534.1<br>https://www.uniprot.org/uniprotkb/E0Y3X0/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/HM622670.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>GenBank links this two-exon CDS to ADM34136.1 and names NotC; the CDS lacks a gene-name qualifier.</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>/note=&#34;NotC&#34;</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/GU564534.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>The separate notC gene deposit has CDS join(1..1178,1248..1350) and protein ADM34131.1 in the same strain.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/E0Y3X0/entry</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Reviewed entry version 39, sequence version 1. CDS-aware translations of both deposits, both deposited translations, both independent GenPept proteins and E0Y3X0 match over all 426 residues. This establishes native reference identity, not the sequence of an experimental construct.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+  <td><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/HM622670.1">https://www.ncbi.nlm.nih.gov/nuccore/HM622670.1</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/GU564534.1">https://www.ncbi.nlm.nih.gov/nuccore/GU564534.1</a><br><a href="https://www.uniprot.org/uniprotkb/E0Y3X0/entry">https://www.uniprot.org/uniprotkb/E0Y3X0/entry</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/HM622670.1">https://www.ncbi.nlm.nih.gov/nuccore/HM622670.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>GenBank links this two-exon CDS to ADM34136.1 and names NotC; the CDS lacks a gene-name qualifier.</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>/note=&#34;NotC&#34;</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/GU564534.1">https://www.ncbi.nlm.nih.gov/nuccore/GU564534.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>The separate notC gene deposit has CDS join(1..1178,1248..1350) and protein ADM34131.1 in the same strain.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/E0Y3X0/entry">https://www.uniprot.org/uniprotkb/E0Y3X0/entry</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Reviewed entry version 39, sequence version 1. CDS-aware translations of both deposits, both deposited translations, both independent GenPept proteins and E0Y3X0 match over all 426 residues. This establishes native reference identity, not the sequence of an experimental construct.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -241,14 +243,14 @@ by the corpus tests.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
-<p class="sub">Partial intermediate graph in the MF297-2 notoamide pathway context annotated by UniProt. NotC does not directly make notoamide A. No verified hydroxylation bridge from the existing NotF product to the NotC substrate, downstream route or final hydroxylase is asserted. DOI:10.1021/ja1049302 is cited by the database; its primary contents were not inspected. Assembly, kinetics and strict substrate exclusivity are not asserted.</p><div class="scroll"><table>
+<p class="sub">Partial intermediate graph in the MF297-2 notoamide pathway context annotated by UniProt. NotC does not directly make notoamide A. No verified hydroxylation bridge from the existing NotF product to the NotC substrate, downstream route or final hydroxylase is asserted. <a href="https://doi.org/10.1021/ja1049302">DOI:10.1021/ja1049302</a> is cited by the database; its primary contents were not inspected. Assembly, kinetics and strict substrate exclusivity are not asserted.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 4 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>NotC (MF297-2 native reference)</td>
   <td>is annotated to catalyze</td>
   <td>NotC normal C7-prenylation</td>
   <td>Native reference, not a sequence-verified assay construct. Normal prenylation at C7, distinct from NotF reverse C2-prenylation; dimethylallyl diphosphate is the donor and diphosphate is released.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/E0Y3X0/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/E0Y3X0/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Entry version 39 annotates RHEA:62344 and physiological left-to-right RHEA:62345, citing PMID:20722388. This is database evidence, not an independently inspected experiment.</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>6-hydroxydeoxybrevianamide E + dimethylallyl diphosphate = notoamide S + diphosphate</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/E0Y3X0/entry">https://www.uniprot.org/uniprotkb/E0Y3X0/entry</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/E0Y3X0/entry">https://www.uniprot.org/uniprotkb/E0Y3X0/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Entry version 39 annotates RHEA:62344 and physiological left-to-right RHEA:62345, citing <a href="https://pubmed.ncbi.nlm.nih.gov/20722388/">PMID:20722388</a>. This is database evidence, not an independently inspected experiment.</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>6-hydroxydeoxybrevianamide E + dimethylallyl diphosphate = notoamide S + diphosphate</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -257,8 +259,8 @@ by the corpus tests.</p>
   <td>is the annotated substrate of</td>
   <td>NotC normal C7-prenylation</td>
   <td>The hydroxylated intermediate, not the unhydroxylated NotF product.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/E0Y3X0/entry<br>https://www.ebi.ac.uk/chebi/CHEBI:145682</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/E0Y3X0/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Catalytic activity assigns 6-hydroxydeoxybrevianamide E as the prenyl acceptor; no strict substrate-exclusivity claim is adopted.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ebi.ac.uk/chebi/CHEBI:145682</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>ChEBI identifies this stereochemically specified intermediate with full InChIKey DHOZDQLRUFUUQZ-IRXDYDNUSA-N.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/E0Y3X0/entry">https://www.uniprot.org/uniprotkb/E0Y3X0/entry</a><br><a href="https://www.ebi.ac.uk/chebi/CHEBI:145682">https://www.ebi.ac.uk/chebi/CHEBI:145682</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/E0Y3X0/entry">https://www.uniprot.org/uniprotkb/E0Y3X0/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Catalytic activity assigns 6-hydroxydeoxybrevianamide E as the prenyl acceptor; no strict substrate-exclusivity claim is adopted.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ebi.ac.uk/chebi/CHEBI:145682">https://www.ebi.ac.uk/chebi/CHEBI:145682</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>ChEBI identifies this stereochemically specified intermediate with full InChIKey DHOZDQLRUFUUQZ-IRXDYDNUSA-N.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -267,8 +269,8 @@ by the corpus tests.</p>
   <td>has the annotated product</td>
   <td>notoamide S</td>
   <td>Notoamide S is an intermediate, not notoamide A. This edge does not prove an experimentally complete route to the owner structure.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/E0Y3X0/entry<br>https://www.ebi.ac.uk/chebi/CHEBI:145683</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/E0Y3X0/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Catalytic activity identifies notoamide S. The broader pathway annotation contains proposed downstream assignments and leaves the final hydroxylation enzyme leading to notoamide A unidentified.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ebi.ac.uk/chebi/CHEBI:145683</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>ChEBI identifies notoamide S with full InChIKey ZGWIWQJHQKPWGB-PMACEKPBSA-N.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/E0Y3X0/entry">https://www.uniprot.org/uniprotkb/E0Y3X0/entry</a><br><a href="https://www.ebi.ac.uk/chebi/CHEBI:145683">https://www.ebi.ac.uk/chebi/CHEBI:145683</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/E0Y3X0/entry">https://www.uniprot.org/uniprotkb/E0Y3X0/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Catalytic activity identifies notoamide S. The broader pathway annotation contains proposed downstream assignments and leaves the final hydroxylation enzyme leading to notoamide A unidentified.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ebi.ac.uk/chebi/CHEBI:145683">https://www.ebi.ac.uk/chebi/CHEBI:145683</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>ChEBI identifies notoamide S with full InChIKey ZGWIWQJHQKPWGB-PMACEKPBSA-N.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -276,16 +278,16 @@ by the corpus tests.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">2 nodes, 1 edge</span></h2>
-<p class="sub">Native full-length reference identity in MF297-2/BGC0001084 only. The spliced genomic reference is not a verified experimental transcript or assay construct. Predicted signal cleavage, membrane topology and glycosylation are not experimentally verified here. No transfer to BGC0000818 or BGC0002254.</p><div class="scroll"><table>
+<p class="sub">Native full-length reference identity in MF297-2/BGC0001084 only. The spliced genomic reference is not a verified experimental transcript or assay construct. Predicted signal cleavage, membrane topology and glycosylation are not experimentally verified here. No transfer to BGC0000818 or BGC0002254.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 5 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>notG CDS (HM622670.1, five reverse-strand exons)</td>
   <td>encodes the full-length native protein reference</td>
   <td>NotG (MF297-2 full-length native reference)</td>
   <td>Aspergillus sp. MF297-2, taxon 877550; complement(join(19899..20086,20171..20272,20337..20635,20689..20810,20879..21799)); 543 amino acids.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.ncbi.nlm.nih.gov/nuccore/HM622670.1<br>https://www.ncbi.nlm.nih.gov/protein/ADM34140.1<br>https://www.uniprot.org/uniprotkb/E1ACQ2/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/HM622670.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>GenBank links the five-exon CDS to ADM34140.1 and names NotG; the CDS lacks a gene-name qualifier.</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>/note=&#34;NotG&#34;</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/ADM34140.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>The separate GenPept record names NotG and maps its 543-residue reference to the same reverse-strand spliced CDS.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/E1ACQ2/entry</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Reviewed entry version 39, sequence version 1. CDS-aware translation of HM622670.1, its deposited translation, GenPept ADM34140.1 and E1ACQ2 match over all 543 residues. This establishes full-length reference identity, not experimental mature processing or reaction verification.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+  <td><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/HM622670.1">https://www.ncbi.nlm.nih.gov/nuccore/HM622670.1</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/ADM34140.1">https://www.ncbi.nlm.nih.gov/protein/ADM34140.1</a><br><a href="https://www.uniprot.org/uniprotkb/E1ACQ2/entry">https://www.uniprot.org/uniprotkb/E1ACQ2/entry</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/HM622670.1">https://www.ncbi.nlm.nih.gov/nuccore/HM622670.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>GenBank links the five-exon CDS to ADM34140.1 and names NotG; the CDS lacks a gene-name qualifier.</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>/note=&#34;NotG&#34;</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/ADM34140.1">https://www.ncbi.nlm.nih.gov/protein/ADM34140.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>The separate GenPept record names NotG and maps its 543-residue reference to the same reverse-strand spliced CDS.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/E1ACQ2/entry">https://www.uniprot.org/uniprotkb/E1ACQ2/entry</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Reviewed entry version 39, sequence version 1. CDS-aware translation of HM622670.1, its deposited translation, GenPept ADM34140.1 and E1ACQ2 match over all 543 residues. This establishes full-length reference identity, not experimental mature processing or reaction verification.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -293,14 +295,14 @@ by the corpus tests.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
-<p class="sub">Partial, explicitly inferred intermediate graph: UniProt proposes NotG for C6-hydroxylation between the annotated NotF product and NotC substrate. This is a hypothesis, not a demonstrated bridge between those graphs or a complete route to notoamide A. The database-cited DOI:10.1021/ja1049302 and DOI:10.1039/C2MD20029E primary contents were not inspected. No final hydroxylase, assembly, native heme occupancy or kinetic claim is asserted.</p><div class="scroll"><table>
+<p class="sub">Partial, explicitly inferred intermediate graph: UniProt proposes NotG for C6-hydroxylation between the annotated NotF product and NotC substrate. This is a hypothesis, not a demonstrated bridge between those graphs or a complete route to notoamide A. The database-cited <a href="https://doi.org/10.1021/ja1049302">DOI:10.1021/ja1049302</a> and <a href="https://doi.org/10.1039/C2MD20029E">DOI:10.1039/C2MD20029E</a> primary contents were not inspected. No final hydroxylase, assembly, native heme occupancy or kinetic claim is asserted.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 6 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>NotG (MF297-2 full-length native reference)</td>
   <td>is proposed to catalyze</td>
   <td>Proposed NotG C6-hydroxylation</td>
   <td>Database-inferred assignment, not a directly demonstrated NotG reaction. The reaction node is ungrounded: no Rhea or complete EC identifier was verified for this proposed transformation.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/E1ACQ2/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/E1ACQ2/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Entry version 39 marks this NotG-specific function Probable. The experimental citations attached to its broader pathway paragraph are not evidence that this individual step was demonstrated. No CATALYTIC ACTIVITY comment is present.</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>likely catalyzed by the cytochrome P450 monooxygenase notG, to yield 6-hydroxy-deoxybrevianamide E (Probable)</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/E1ACQ2/entry">https://www.uniprot.org/uniprotkb/E1ACQ2/entry</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/E1ACQ2/entry">https://www.uniprot.org/uniprotkb/E1ACQ2/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Entry version 39 marks this NotG-specific function Probable. The experimental citations attached to its broader pathway paragraph are not evidence that this individual step was demonstrated. No CATALYTIC ACTIVITY comment is present.</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>likely catalyzed by the cytochrome P450 monooxygenase notG, to yield 6-hydroxy-deoxybrevianamide E (Probable)</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -309,8 +311,8 @@ by the corpus tests.</p>
   <td>is the proposed substrate of</td>
   <td>Proposed NotG C6-hydroxylation</td>
   <td>Proposed substrate identity, not an assayed NotG substrate-specificity result.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/E1ACQ2/entry<br>https://www.ebi.ac.uk/chebi/CHEBI:72948</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/E1ACQ2/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>The Probable function clause proposes C6 hydroxylation of deoxybrevianamide E; it does not establish a verified NotG assay.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ebi.ac.uk/chebi/CHEBI:72948</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>ChEBI identifies deoxybrevianamide E with full InChIKey KUGNSEAHJVSMAJ-IRXDYDNUSA-N. Molecular identity does not prove participation in the proposed reaction.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/E1ACQ2/entry">https://www.uniprot.org/uniprotkb/E1ACQ2/entry</a><br><a href="https://www.ebi.ac.uk/chebi/CHEBI:72948">https://www.ebi.ac.uk/chebi/CHEBI:72948</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/E1ACQ2/entry">https://www.uniprot.org/uniprotkb/E1ACQ2/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>The Probable function clause proposes C6 hydroxylation of deoxybrevianamide E; it does not establish a verified NotG assay.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ebi.ac.uk/chebi/CHEBI:72948">https://www.ebi.ac.uk/chebi/CHEBI:72948</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>ChEBI identifies deoxybrevianamide E with full InChIKey KUGNSEAHJVSMAJ-IRXDYDNUSA-N. Molecular identity does not prove participation in the proposed reaction.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -319,8 +321,8 @@ by the corpus tests.</p>
   <td>has the proposed product</td>
   <td>6-hydroxydeoxybrevianamide E</td>
   <td>Proposed hydroxylated intermediate, not notoamide A. No complete downstream route or experimentally verified NotF-to-NotC bridge.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/E1ACQ2/entry<br>https://www.ebi.ac.uk/chebi/CHEBI:145682</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/E1ACQ2/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>The Probable function clause names 6-hydroxy-deoxybrevianamide E as the proposed product; the final hydroxylation leading to notoamide A remains unidentified in the broader annotation.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ebi.ac.uk/chebi/CHEBI:145682</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>ChEBI identifies 6-hydroxydeoxybrevianamide E with full InChIKey DHOZDQLRUFUUQZ-IRXDYDNUSA-N. This is chemical-identity evidence only, not proof of the NotG assignment.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/E1ACQ2/entry">https://www.uniprot.org/uniprotkb/E1ACQ2/entry</a><br><a href="https://www.ebi.ac.uk/chebi/CHEBI:145682">https://www.ebi.ac.uk/chebi/CHEBI:145682</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/E1ACQ2/entry">https://www.uniprot.org/uniprotkb/E1ACQ2/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>The Probable function clause names 6-hydroxy-deoxybrevianamide E as the proposed product; the final hydroxylation leading to notoamide A remains unidentified in the broader annotation.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ebi.ac.uk/chebi/CHEBI:145682">https://www.ebi.ac.uk/chebi/CHEBI:145682</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>ChEBI identifies 6-hydroxydeoxybrevianamide E with full InChIKey DHOZDQLRUFUUQZ-IRXDYDNUSA-N. This is chemical-identity evidence only, not proof of the NotG assignment.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -334,31 +336,42 @@ by the corpus tests.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=KGCIBVDLLPYXFL-OFVWMMNVSA-N">AntibioticMech (notoamide A) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=naturalproductmech%3Amibig-edbab72597">MediaIngredientMech (naturalproductmech:mibig-edbab72597) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A877550">TaxonMech: Aspergillus sp. MF297-2 (NCBITaxon:877550) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A46472">TaxonMech: Aspergillus versicolor (NCBITaxon:46472) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A2741095">TaxonMech: Aspergillus sp. FM242 (NCBITaxon:2741095) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0001084">PathwayMech (mibig:BGC0001084) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000818">PathwayMech (mibig:BGC0000818) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0002254">PathwayMech (mibig:BGC0002254) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A877550">TaxonMech: Aspergillus sp. MF297-2 (NCBITaxon:877550) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A46472">TaxonMech: Aspergillus versicolor (NCBITaxon:46472) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A2741095">TaxonMech: Aspergillus sp. FM242 (NCBITaxon:2741095) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0001084">PathwayMech (mibig:BGC0001084) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000818">PathwayMech (mibig:BGC0000818) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0002254">PathwayMech (mibig:BGC0002254) &nearr;</a>
 </div>
 
 <h2>Open questions <span class="tag">1</span></h2>
-<div class="note"><p><strong>shared-structure</strong> — This structure is reported by more than one MIBiG entry: BGC0000818, BGC0001084, BGC0002254. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
+<div class="note"><p><strong>shared-structure</strong> <span class="tag">OPEN</span> <span class="tag">curation todo</span> — This structure is reported by more than one MIBiG entry: BGC0000818, BGC0001084, BGC0002254. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
+
+<h2 id="curation-history">Curation history <span class="tag">6</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-13T23:57:36Z">2026-10-13T23:57:36Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources<p>Seeded from the committed inventories and curation tables.</p></li>
+<li><time datetime="2026-10-08T06:28:18Z">2026-10-08T06:28:18Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added NotG native-reference and explicitly proposed C6-hydroxylation graphs, grounded to UniProtKB:E1ACQ2 from Aspergillus sp. MF297-2. The database-inferred reaction is not experimental proof of the NotF-to-NotC link or a complete route to notoamide A. Preserved all four NotF/NotC graphs, source-owned fields and earlier history; no assay construct, mature processing, assembly, kinetics or producer upgrade asserted.</p></li>
+<li><time datetime="2026-10-08T05:48:41Z">2026-10-08T05:48:41Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added NotC native-reference and annotated C7-prenylation graphs, grounded to UniProtKB:E0Y3X0 from Aspergillus sp. MF297-2. Preserved both NotF graphs and all source-owned fields. No verified bridge from NotF to NotC or onward to notoamide A, experimental construct, strict substrate specificity, assembly, kinetics or producer-grade upgrade asserted.</p></li>
+<li><time datetime="2026-10-08T04:56:59Z">2026-10-08T04:56:59Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added NotF native-reference and early-prenylation graphs, grounded to UniProtKB:E0Y3X1 from Aspergillus sp. MF297-2. Kept database reaction annotation distinct from the inspected 2020 abstract and qualified substrate specificity. No downstream route to notoamide A, experimental construct, assembly or producer-grade upgrade asserted; source-owned fields unchanged.</p></li>
+<li><time datetime="2026-09-25T03:02:32Z">2026-09-25T03:02:32Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:08Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
 
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0001084</td><td>MIBIG</td><td>5</td></tr>
-<tr><td class="mono">BGC0000818</td><td>MIBIG</td><td>5</td></tr>
-<tr><td class="mono">BGC0002254</td><td>MIBIG</td><td>3</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001084">BGC0001084</a></td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000818">BGC0000818</a></td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002254">BGC0002254</a></td><td>MIBIG</td><td>3</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/unclassified/notoamide-a.yaml">data/natural_products/unclassified/notoamide-a.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20naturalproductmech%3Amibig-edbab72597&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Funclassified%2Fnotoamide-a.html">Report a problem with this record</a>: opens a GitHub issue that names naturalproductmech:mibig-edbab72597 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Corpus as of 2026-10-23 22:53 UTC. Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 8e5d64d98cfd). Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

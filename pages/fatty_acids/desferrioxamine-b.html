@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Fatty acids</a> &middot; desferrioxamine B</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>desferrioxamine B</h1>
-<p class="sub"><span class="mono">CHEBI:4356</span>
+<p class="sub"><span class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_4356">CHEBI:4356</a></span>
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 <span class="tag">cytotoxic</span><span class="tag">enzyme inhibitor</span></p>
 <details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/fatty_acids/desferrioxamine-b.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/fatty_acids/desferrioxamine-b.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 <p>An acyclic desferrioxamine that is butanedioic acid in which one of the carboxy groups undergoes formal condensation with the primary amino group of N-(5-aminopentyl)-N-hydroxyacetamide and the second carboxy group undergoes formal condensation with the hydroxyamino group of N1-(5-aminopentyl)-N1-hydroxy-N4-[5-(hydroxyamino)pentyl]butanediamide. It is a siderophore native to Streptomyces pilosus biosynthesised by the DesABCD enzyme cluster as a high affinity Fe(III) chelator.</p>
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">UBQYURCVBFRUQT-UHFFFAOYSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">CC(=O)N(O)CCCCCNC(=O)CCC(=O)N(O)CCCCCNC(=O)CCC(=O)N(O)CCCCCN</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">npatlas:NPA09012, pubchem:2973, npatlas:NPA009012</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://www.npatlas.org/explore/compounds/NPA09012">npatlas:NPA09012</a>, <a href="https://pubchem.ncbi.nlm.nih.gov/compound/2973">pubchem:2973</a>, <a href="https://www.npatlas.org/explore/compounds/NPA009012">npatlas:NPA009012</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Fatty acids</a> —
@@ -57,196 +59,196 @@ other, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Streptomyces coelicolor A3(2)<br><span class="mono">NCBITaxon:100226</span></td>
+  <td>Streptomyces coelicolor A3(2)<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=100226">NCBITaxon:100226</a></span></td>
   <td><span class="tag causal">BGC_CHARACTERIZED</span></td>
-  <td class="mono">mibig:BGC0000940</td>
-  <td><span class="mono">PMID:15600304</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000940">mibig:BGC0000940</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/15600304/">PMID:15600304</a></span></td>
 </tr>
 <tr>
-  <td>Streptomyces griseus subsp. griseus NBRC 13350<br><span class="mono">NCBITaxon:455632</span></td>
+  <td>Streptomyces griseus subsp. griseus NBRC 13350<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=455632">NCBITaxon:455632</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0000941</td>
-  <td><span class="mono">PMID:18375553</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000941">mibig:BGC0000941</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/18375553/">PMID:18375553</a></span></td>
 </tr>
 <tr>
-  <td>Streptomyces argillaceus<br><span class="mono">NCBITaxon:41951</span></td>
+  <td>Streptomyces argillaceus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=41951">NCBITaxon:41951</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0001453</td>
-  <td><span class="mono">PMID:29795673</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001453">mibig:BGC0001453</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/29795673/">PMID:29795673</a></span></td>
 </tr>
 <tr>
-  <td>Streptomyces sp.<br><span class="mono">NCBITaxon:1931</span></td>
+  <td>Streptomyces sp.<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1931">NCBITaxon:1931</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0002305</td>
-  <td><span class="mono">DOI:10.1016/j.tetlet.2018.11.063</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002305">mibig:BGC0002305</a></td>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.tetlet.2018.11.063">DOI:10.1016/j.tetlet.2018.11.063</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">25</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Streptomyces xinghaiensis<br><span class="mono">NCBITaxon:1038928</span></td>
+  <td>Streptomyces xinghaiensis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1038928">NCBITaxon:1038928</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/S00253-018-9337-2</td>
+  <td class="mono"><a href="https://doi.org/10.1007/S00253-018-9337-2">DOI:10.1007/S00253-018-9337-2</a></td>
 </tr>
 <tr>
-  <td>Moorea producens<br><span class="mono">NCBITaxon:1155739</span></td>
+  <td>Moorea producens<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1155739">NCBITaxon:1155739</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/ACS.JNATPROD.6B00051</td>
+  <td class="mono"><a href="https://doi.org/10.1021/ACS.JNATPROD.6B00051">DOI:10.1021/ACS.JNATPROD.6B00051</a></td>
 </tr>
 <tr>
-  <td>Streptomyces wadayamensis<br><span class="mono">NCBITaxon:141454</span></td>
+  <td>Streptomyces wadayamensis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=141454">NCBITaxon:141454</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1128/GENOMEA.00625-14</td>
+  <td class="mono"><a href="https://doi.org/10.1128/GENOMEA.00625-14">DOI:10.1128/GENOMEA.00625-14</a></td>
 </tr>
 <tr>
-  <td>Streptomyces malaysiense<br><span class="mono">NCBITaxon:1428626</span></td>
+  <td>Streptomyces malaysiense<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1428626">NCBITaxon:1428626</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1038/SREP24247</td>
+  <td class="mono"><a href="https://doi.org/10.1038/SREP24247">DOI:10.1038/SREP24247</a></td>
 </tr>
 <tr>
-  <td>Streptomyces albidoflavus<br><span class="mono">NCBITaxon:1886</span></td>
+  <td>Streptomyces albidoflavus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1886">NCBITaxon:1886</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/JA045774K</td>
+  <td class="mono"><a href="https://doi.org/10.1021/JA045774K">DOI:10.1021/JA045774K</a></td>
 </tr>
 <tr>
-  <td>Streptomyces albidoflavus<br><span class="mono">NCBITaxon:1886</span></td>
+  <td>Streptomyces albidoflavus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1886">NCBITaxon:1886</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1099/MIC.0.000524</td>
+  <td class="mono"><a href="https://doi.org/10.1099/MIC.0.000524">DOI:10.1099/MIC.0.000524</a></td>
 </tr>
 <tr>
-  <td>Streptomyces albidoflavus<br><span class="mono">NCBITaxon:1886</span></td>
+  <td>Streptomyces albidoflavus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1886">NCBITaxon:1886</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1111/J.1742-4658.2007.05662.X</td>
+  <td class="mono"><a href="https://doi.org/10.1111/J.1742-4658.2007.05662.X">DOI:10.1111/J.1742-4658.2007.05662.X</a></td>
 </tr>
 <tr>
-  <td>Streptomyces albidoflavus<br><span class="mono">NCBITaxon:1886</span></td>
+  <td>Streptomyces albidoflavus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1886">NCBITaxon:1886</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1111/J.1742-4658.2009.07182.X</td>
+  <td class="mono"><a href="https://doi.org/10.1111/J.1742-4658.2009.07182.X">DOI:10.1111/J.1742-4658.2009.07182.X</a></td>
 </tr>
 <tr>
-  <td>Streptomyces albidoflavus<br><span class="mono">NCBITaxon:1886</span></td>
+  <td>Streptomyces albidoflavus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1886">NCBITaxon:1886</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1111/J.1751-7915.2010.00232.X</td>
+  <td class="mono"><a href="https://doi.org/10.1111/J.1751-7915.2010.00232.X">DOI:10.1111/J.1751-7915.2010.00232.X</a></td>
 </tr>
 <tr>
-  <td>Streptomyces albidoflavus<br><span class="mono">NCBITaxon:1886</span></td>
+  <td>Streptomyces albidoflavus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1886">NCBITaxon:1886</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1128/MBIO.00459-13</td>
+  <td class="mono"><a href="https://doi.org/10.1128/MBIO.00459-13">DOI:10.1128/MBIO.00459-13</a></td>
 </tr>
 <tr>
-  <td>Streptomyces coelicolor<br><span class="mono">NCBITaxon:1902</span></td>
+  <td>Streptomyces coelicolor<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1902">NCBITaxon:1902</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/JA045774K</td>
+  <td class="mono"><a href="https://doi.org/10.1021/JA045774K">DOI:10.1021/JA045774K</a></td>
 </tr>
 <tr>
-  <td>Streptomyces coelicolor<br><span class="mono">NCBITaxon:1902</span></td>
+  <td>Streptomyces coelicolor<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1902">NCBITaxon:1902</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1099/MIC.0.000524</td>
+  <td class="mono"><a href="https://doi.org/10.1099/MIC.0.000524">DOI:10.1099/MIC.0.000524</a></td>
 </tr>
 <tr>
-  <td>Streptomyces coelicolor<br><span class="mono">NCBITaxon:1902</span></td>
+  <td>Streptomyces coelicolor<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1902">NCBITaxon:1902</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1111/J.1742-4658.2007.05662.X</td>
+  <td class="mono"><a href="https://doi.org/10.1111/J.1742-4658.2007.05662.X">DOI:10.1111/J.1742-4658.2007.05662.X</a></td>
 </tr>
 <tr>
-  <td>Streptomyces coelicolor<br><span class="mono">NCBITaxon:1902</span></td>
+  <td>Streptomyces coelicolor<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1902">NCBITaxon:1902</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1111/J.1742-4658.2009.07182.X</td>
+  <td class="mono"><a href="https://doi.org/10.1111/J.1742-4658.2009.07182.X">DOI:10.1111/J.1742-4658.2009.07182.X</a></td>
 </tr>
 <tr>
-  <td>Streptomyces coelicolor<br><span class="mono">NCBITaxon:1902</span></td>
+  <td>Streptomyces coelicolor<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1902">NCBITaxon:1902</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1111/J.1751-7915.2010.00232.X</td>
+  <td class="mono"><a href="https://doi.org/10.1111/J.1751-7915.2010.00232.X">DOI:10.1111/J.1751-7915.2010.00232.X</a></td>
 </tr>
 <tr>
-  <td>Streptomyces coelicolor<br><span class="mono">NCBITaxon:1902</span></td>
+  <td>Streptomyces coelicolor<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1902">NCBITaxon:1902</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1128/MBIO.00459-13</td>
+  <td class="mono"><a href="https://doi.org/10.1128/MBIO.00459-13">DOI:10.1128/MBIO.00459-13</a></td>
 </tr>
 <tr>
-  <td>Streptomyces griseus<br><span class="mono">NCBITaxon:1911</span></td>
+  <td>Streptomyces griseus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1911">NCBITaxon:1911</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1128/JB.00204-08</td>
+  <td class="mono"><a href="https://doi.org/10.1128/JB.00204-08">DOI:10.1128/JB.00204-08</a></td>
 </tr>
 <tr>
-  <td>Streptomyces chartreusis<br><span class="mono">NCBITaxon:1969</span></td>
+  <td>Streptomyces chartreusis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1969">NCBITaxon:1969</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1073/PNAS.1715713115</td>
+  <td class="mono"><a href="https://doi.org/10.1073/PNAS.1715713115">DOI:10.1073/PNAS.1715713115</a></td>
 </tr>
 <tr>
-  <td>Streptomyces sviceus<br><span class="mono">NCBITaxon:285530</span></td>
+  <td>Streptomyces sviceus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=285530">NCBITaxon:285530</a></span></td>
   <td>CHEBI</td>
-  <td class="mono">PMID:33784308</td>
+  <td class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/33784308/">PMID:33784308</a></td>
 </tr>
 <tr>
-  <td>Streptomyces pilosus<br><span class="mono">NCBITaxon:28893</span></td>
+  <td>Streptomyces pilosus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=28893">NCBITaxon:28893</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1128/JB.175.11.3295-3302.1993</td>
+  <td class="mono"><a href="https://doi.org/10.1128/JB.175.11.3295-3302.1993">DOI:10.1128/JB.175.11.3295-3302.1993</a></td>
 </tr>
 <tr>
-  <td>Streptomyces pilosus<br><span class="mono">NCBITaxon:28893</span></td>
+  <td>Streptomyces pilosus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=28893">NCBITaxon:28893</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1186/1475-2859-2-5</td>
+  <td class="mono"><a href="https://doi.org/10.1186/1475-2859-2-5">DOI:10.1186/1475-2859-2-5</a></td>
 </tr>
 <tr>
-  <td>Streptomyces pilosus<br><span class="mono">NCBITaxon:28893</span></td>
+  <td>Streptomyces pilosus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=28893">NCBITaxon:28893</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.3923/PJBS.2010.1151.1155</td>
+  <td class="mono"><a href="https://doi.org/10.3923/PJBS.2010.1151.1155">DOI:10.3923/PJBS.2010.1151.1155</a></td>
 </tr>
 <tr>
-  <td>Streptomyces pilosus<br><span class="mono">NCBITaxon:28893</span></td>
+  <td>Streptomyces pilosus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=28893">NCBITaxon:28893</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.3923/PJBS.2010.546.550</td>
+  <td class="mono"><a href="https://doi.org/10.3923/PJBS.2010.546.550">DOI:10.3923/PJBS.2010.546.550</a></td>
 </tr>
 <tr>
-  <td>Streptomyces pilosus<br><span class="mono">NCBITaxon:28893</span></td>
+  <td>Streptomyces pilosus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=28893">NCBITaxon:28893</a></span></td>
   <td>CHEBI</td>
-  <td class="mono">PMID:30701380</td>
+  <td class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/30701380/">PMID:30701380</a></td>
 </tr>
 <tr>
-  <td>Streptomyces lydicus<br><span class="mono">NCBITaxon:47763</span></td>
+  <td>Streptomyces lydicus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=47763">NCBITaxon:47763</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1038/SREP44786</td>
+  <td class="mono"><a href="https://doi.org/10.1038/SREP44786">DOI:10.1038/SREP44786</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">4</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0000940</td>
-  <td>Streptomyces coelicolor A3(2)<br><span class="mono">NCBITaxon:100226</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000940">mibig:BGC0000940</a></td>
+  <td>Streptomyces coelicolor A3(2)<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=100226">NCBITaxon:100226</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:AL645882.2</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AL645882.2">genbank:AL645882.2</a></td>
 </tr>
 <tr>
-  <td class="mono">mibig:BGC0000941</td>
-  <td>Streptomyces griseus subsp. griseus NBRC 13350<br><span class="mono">NCBITaxon:455632</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000941">mibig:BGC0000941</a></td>
+  <td>Streptomyces griseus subsp. griseus NBRC 13350<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=455632">NCBITaxon:455632</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:AP009493.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AP009493.1">genbank:AP009493.1</a></td>
 </tr>
 <tr>
-  <td class="mono">mibig:BGC0001453</td>
-  <td>Streptomyces argillaceus<br><span class="mono">NCBITaxon:41951</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001453">mibig:BGC0001453</a></td>
+  <td>Streptomyces argillaceus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=41951">NCBITaxon:41951</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:LT989883.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/LT989883.1">genbank:LT989883.1</a></td>
 </tr>
 <tr>
-  <td class="mono">mibig:BGC0002305</td>
-  <td>Streptomyces sp.<br><span class="mono">NCBITaxon:1931</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002305">mibig:BGC0002305</a></td>
+  <td>Streptomyces sp.<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1931">NCBITaxon:1931</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:MN509302.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/MN509302.1">genbank:MN509302.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -256,7 +258,7 @@ isolation report left it.</p>
 
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for desferrioxamine B">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for desferrioxamine B">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -289,18 +291,18 @@ isolation report left it.</p>
 </div>
 
 <h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 6 edges</span></h2>
-<p class="sub">Streptomyces coelicolor M145 premature-stop genetics. Five-day ISP-2 extract LC-HRMS/MS signals are assigned to free desferrioxamine B, not metal complexes or absolute concentrations. Canonical proteins denote targeted loci, not mutant sequences. No direct catalysis, complete activity loss, protein-specific independence, or quantitative complementation rescue is asserted. Gene-only traces do not distinguish alternative stop alleles.</p><div class="scroll"><table>
+<p class="sub">Streptomyces coelicolor M145 premature-stop genetics. Five-day ISP-2 extract LC-HRMS/MS signals are assigned to free desferrioxamine B, not metal complexes or absolute concentrations. Canonical proteins denote targeted loci, not mutant sequences. No direct catalysis, complete activity loss, protein-specific independence, or quantitative complementation rescue is asserted. Gene-only traces do not distinguish alternative stop alleles.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>desJ premature-stop mutant</td>
   <td>disrupts_encoding_gene_of</td>
   <td>DesJ (SCO4048) native reference</td>
   <td>SCO4048: designed W55* or Q68*; no mutant protein accession assigned. DesJ complement is pGWS1596 in methods but pGWS1586 in S5 Table.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pbio.3003183<br>DOI:10.1371/journal.pbio.3003183.s013<br>DOI:10.1371/journal.pbio.3003183.s014<br>https://www.uniprot.org/uniprotkb/Q9AK69<br>https://www.ebi.ac.uk/ena/browser/view/AL939118.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pbio.3003183</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Results 4; mutant construction methods.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pbio.3003183.s013</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>S5 Table: constructs; plasmid-name disagreements retained above.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pbio.3003183.s014</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>S6 Table guide and check-primer sequences map uniquely in AL939118.1; target codons permit stop-generating base edits. Complement primers replace the native stop with TAA without changing translated residues.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q9AK69</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Unreviewed SCO4048, taxon 100226 (A3(2)/M145), 241 aa, sequence version 1; EMBL protein CAC32319.1. Automated functional annotations are not adopted.</dd><dt>retrieved on</dt><dd>2026-10-10</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ebi.ac.uk/ena/browser/view/AL939118.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>CAC32319.1: full native CDS translation under table 11 equals Q9AK69. Reference matching does not sequence the experimental stock.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1371/journal.pbio.3003183">DOI:10.1371/journal.pbio.3003183</a><br><a href="https://doi.org/10.1371/journal.pbio.3003183.s013">DOI:10.1371/journal.pbio.3003183.s013</a><br><a href="https://doi.org/10.1371/journal.pbio.3003183.s014">DOI:10.1371/journal.pbio.3003183.s014</a><br><a href="https://www.uniprot.org/uniprotkb/Q9AK69">https://www.uniprot.org/uniprotkb/Q9AK69</a><br><a href="https://www.ebi.ac.uk/ena/browser/view/AL939118.1">https://www.ebi.ac.uk/ena/browser/view/AL939118.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pbio.3003183">DOI:10.1371/journal.pbio.3003183</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Results 4; mutant construction methods.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pbio.3003183.s013">DOI:10.1371/journal.pbio.3003183.s013</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>S5 Table: constructs; plasmid-name disagreements retained above.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pbio.3003183.s014">DOI:10.1371/journal.pbio.3003183.s014</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>S6 Table guide and check-primer sequences map uniquely in AL939118.1; target codons permit stop-generating base edits. Complement primers replace the native stop with TAA without changing translated residues.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q9AK69">https://www.uniprot.org/uniprotkb/Q9AK69</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Unreviewed SCO4048, taxon 100226 (A3(2)/M145), 241 aa, sequence version 1; EMBL protein CAC32319.1. Automated functional annotations are not adopted.</dd><dt>retrieved on</dt><dd>2026-10-10</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ebi.ac.uk/ena/browser/view/AL939118.1">https://www.ebi.ac.uk/ena/browser/view/AL939118.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>CAC32319.1: full native CDS translation under table 11 equals Q9AK69. Reference matching does not sequence the experimental stock.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -309,11 +311,11 @@ isolation report left it.</p>
   <td>increases_assigned_LC_MS_signal_of</td>
   <td>desferrioxamine B</td>
   <td>Genetic metabolite-profile comparison, not purified enzyme activity. Native desG/desH coding intervals overlap by eight bases; polar effects, bystander edits and pathway compensation are not excluded.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pbio.3003183<br>DOI:10.1371/journal.pbio.3003183.s004<br>DOI:10.1371/journal.pbio.3003183.s012<br>DOI:10.1371/journal.pbio.3003183.s002<br>https://www.ebi.ac.uk/ena/browser/view/AL939118.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pbio.3003183</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Results 4, Fig 3a; extraction and LC-MS methods.</dd><dt>snippet</dt><dd>only the levels of DFO B</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pbio.3003183.s004</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>S4 Fig: genotype-labelled extracted-ion chromatograms.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pbio.3003183.s012</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>S4 Table: free B [M+H]+, predicted 561.3606 m/z. Metal-bound/adduct channels are not this compound node.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pbio.3003183.s002</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>S2 Fig B spectrum: cosine 0.7741; figure library CCMSLIB00003135712 differs from caption CCMSLIB00001059066. The author-assigned DFO B signal is retained with this discrepancy, not independently reidentified.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ebi.ac.uk/ena/browser/view/AL939118.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Coordinate comparison: SCO4049 213677..216025(+); SCO4050 216018..216638(+); eight shared bases. Reference geometry does not demonstrate polar effects.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1371/journal.pbio.3003183">DOI:10.1371/journal.pbio.3003183</a><br><a href="https://doi.org/10.1371/journal.pbio.3003183.s004">DOI:10.1371/journal.pbio.3003183.s004</a><br><a href="https://doi.org/10.1371/journal.pbio.3003183.s012">DOI:10.1371/journal.pbio.3003183.s012</a><br><a href="https://doi.org/10.1371/journal.pbio.3003183.s002">DOI:10.1371/journal.pbio.3003183.s002</a><br><a href="https://www.ebi.ac.uk/ena/browser/view/AL939118.1">https://www.ebi.ac.uk/ena/browser/view/AL939118.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pbio.3003183">DOI:10.1371/journal.pbio.3003183</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Results 4, Fig 3a; extraction and LC-MS methods.</dd><dt>snippet</dt><dd>only the levels of DFO B</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pbio.3003183.s004">DOI:10.1371/journal.pbio.3003183.s004</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>S4 Fig: genotype-labelled extracted-ion chromatograms.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pbio.3003183.s012">DOI:10.1371/journal.pbio.3003183.s012</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>S4 Table: free B [M+H]+, predicted 561.3606 m/z. Metal-bound/adduct channels are not this compound node.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pbio.3003183.s002">DOI:10.1371/journal.pbio.3003183.s002</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>S2 Fig B spectrum: cosine 0.7741; figure library CCMSLIB00003135712 differs from caption CCMSLIB00001059066. The author-assigned DFO B signal is retained with this discrepancy, not independently reidentified.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ebi.ac.uk/ena/browser/view/AL939118.1">https://www.ebi.ac.uk/ena/browser/view/AL939118.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Coordinate comparison: SCO4049 213677..216025(+); SCO4050 216018..216638(+); eight shared bases. Reference geometry does not demonstrate polar effects.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -322,11 +324,11 @@ isolation report left it.</p>
   <td>disrupts_encoding_gene_of</td>
   <td>DesG (SCO4049) native reference</td>
   <td>SCO4049: designed W61*; no mutant protein accession assigned.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pbio.3003183<br>DOI:10.1371/journal.pbio.3003183.s013<br>DOI:10.1371/journal.pbio.3003183.s014<br>https://www.uniprot.org/uniprotkb/Q9AK68<br>https://www.ebi.ac.uk/ena/browser/view/AL939118.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pbio.3003183</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Results 4; mutant construction methods.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pbio.3003183.s013</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>S5 Table: constructs; plasmid-name disagreements retained above.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pbio.3003183.s014</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>S6 Table guide and check-primer sequences map uniquely in AL939118.1; target codons permit stop-generating base edits. Complement primers replace the native stop with TAA without changing translated residues.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q9AK68</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Unreviewed SCO4049, taxon 100226 (A3(2)/M145), 782 aa, sequence version 1; EMBL protein CAC32320.1. Automated functional annotations are not adopted.</dd><dt>retrieved on</dt><dd>2026-10-10</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ebi.ac.uk/ena/browser/view/AL939118.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>CAC32320.1: full native CDS translation under table 11 equals Q9AK68. Reference matching does not sequence the experimental stock.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1371/journal.pbio.3003183">DOI:10.1371/journal.pbio.3003183</a><br><a href="https://doi.org/10.1371/journal.pbio.3003183.s013">DOI:10.1371/journal.pbio.3003183.s013</a><br><a href="https://doi.org/10.1371/journal.pbio.3003183.s014">DOI:10.1371/journal.pbio.3003183.s014</a><br><a href="https://www.uniprot.org/uniprotkb/Q9AK68">https://www.uniprot.org/uniprotkb/Q9AK68</a><br><a href="https://www.ebi.ac.uk/ena/browser/view/AL939118.1">https://www.ebi.ac.uk/ena/browser/view/AL939118.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pbio.3003183">DOI:10.1371/journal.pbio.3003183</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Results 4; mutant construction methods.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pbio.3003183.s013">DOI:10.1371/journal.pbio.3003183.s013</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>S5 Table: constructs; plasmid-name disagreements retained above.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pbio.3003183.s014">DOI:10.1371/journal.pbio.3003183.s014</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>S6 Table guide and check-primer sequences map uniquely in AL939118.1; target codons permit stop-generating base edits. Complement primers replace the native stop with TAA without changing translated residues.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q9AK68">https://www.uniprot.org/uniprotkb/Q9AK68</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Unreviewed SCO4049, taxon 100226 (A3(2)/M145), 782 aa, sequence version 1; EMBL protein CAC32320.1. Automated functional annotations are not adopted.</dd><dt>retrieved on</dt><dd>2026-10-10</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ebi.ac.uk/ena/browser/view/AL939118.1">https://www.ebi.ac.uk/ena/browser/view/AL939118.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>CAC32320.1: full native CDS translation under table 11 equals Q9AK68. Reference matching does not sequence the experimental stock.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -335,11 +337,11 @@ isolation report left it.</p>
   <td>decreases_assigned_LC_MS_signal_of</td>
   <td>desferrioxamine B</td>
   <td>Genetic metabolite-profile comparison, not purified enzyme activity. Native desG/desH coding intervals overlap by eight bases; polar effects, bystander edits and pathway compensation are not excluded.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pbio.3003183<br>DOI:10.1371/journal.pbio.3003183.s004<br>DOI:10.1371/journal.pbio.3003183.s012<br>DOI:10.1371/journal.pbio.3003183.s002<br>https://www.ebi.ac.uk/ena/browser/view/AL939118.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pbio.3003183</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Results 4, Fig 3a; extraction and LC-MS methods.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pbio.3003183.s004</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>S4 Fig: genotype-labelled extracted-ion chromatograms.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pbio.3003183.s012</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>S4 Table: free B [M+H]+, predicted 561.3606 m/z. Metal-bound/adduct channels are not this compound node.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pbio.3003183.s002</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>S2 Fig B spectrum: cosine 0.7741; figure library CCMSLIB00003135712 differs from caption CCMSLIB00001059066. The author-assigned DFO B signal is retained with this discrepancy, not independently reidentified.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ebi.ac.uk/ena/browser/view/AL939118.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Coordinate comparison: SCO4049 213677..216025(+); SCO4050 216018..216638(+); eight shared bases. Reference geometry does not demonstrate polar effects.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1371/journal.pbio.3003183">DOI:10.1371/journal.pbio.3003183</a><br><a href="https://doi.org/10.1371/journal.pbio.3003183.s004">DOI:10.1371/journal.pbio.3003183.s004</a><br><a href="https://doi.org/10.1371/journal.pbio.3003183.s012">DOI:10.1371/journal.pbio.3003183.s012</a><br><a href="https://doi.org/10.1371/journal.pbio.3003183.s002">DOI:10.1371/journal.pbio.3003183.s002</a><br><a href="https://www.ebi.ac.uk/ena/browser/view/AL939118.1">https://www.ebi.ac.uk/ena/browser/view/AL939118.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pbio.3003183">DOI:10.1371/journal.pbio.3003183</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Results 4, Fig 3a; extraction and LC-MS methods.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pbio.3003183.s004">DOI:10.1371/journal.pbio.3003183.s004</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>S4 Fig: genotype-labelled extracted-ion chromatograms.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pbio.3003183.s012">DOI:10.1371/journal.pbio.3003183.s012</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>S4 Table: free B [M+H]+, predicted 561.3606 m/z. Metal-bound/adduct channels are not this compound node.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pbio.3003183.s002">DOI:10.1371/journal.pbio.3003183.s002</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>S2 Fig B spectrum: cosine 0.7741; figure library CCMSLIB00003135712 differs from caption CCMSLIB00001059066. The author-assigned DFO B signal is retained with this discrepancy, not independently reidentified.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ebi.ac.uk/ena/browser/view/AL939118.1">https://www.ebi.ac.uk/ena/browser/view/AL939118.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Coordinate comparison: SCO4049 213677..216025(+); SCO4050 216018..216638(+); eight shared bases. Reference geometry does not demonstrate polar effects.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -348,11 +350,11 @@ isolation report left it.</p>
   <td>disrupts_encoding_gene_of</td>
   <td>DesH (SCO4050) native reference</td>
   <td>SCO4050: designed W43* or Q91*; no mutant protein accession assigned. W43* vector is pGWS1598 in methods but pGWS1589 in S5 Table; pGWS1598 also names the complement.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pbio.3003183<br>DOI:10.1371/journal.pbio.3003183.s013<br>DOI:10.1371/journal.pbio.3003183.s014<br>https://www.uniprot.org/uniprotkb/Q9AK67<br>https://www.ebi.ac.uk/ena/browser/view/AL939118.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pbio.3003183</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Results 4; mutant construction methods.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pbio.3003183.s013</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>S5 Table: constructs; plasmid-name disagreements retained above.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pbio.3003183.s014</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>S6 Table guide and check-primer sequences map uniquely in AL939118.1; target codons permit stop-generating base edits. Complement primers replace the native stop with TAA without changing translated residues.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q9AK67</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Unreviewed SCO4050, taxon 100226 (A3(2)/M145), 206 aa, sequence version 1; EMBL protein CAC32321.1. Automated functional annotations are not adopted.</dd><dt>retrieved on</dt><dd>2026-10-10</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ebi.ac.uk/ena/browser/view/AL939118.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>CAC32321.1: full native CDS translation under table 11 equals Q9AK67. Reference matching does not sequence the experimental stock.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1371/journal.pbio.3003183">DOI:10.1371/journal.pbio.3003183</a><br><a href="https://doi.org/10.1371/journal.pbio.3003183.s013">DOI:10.1371/journal.pbio.3003183.s013</a><br><a href="https://doi.org/10.1371/journal.pbio.3003183.s014">DOI:10.1371/journal.pbio.3003183.s014</a><br><a href="https://www.uniprot.org/uniprotkb/Q9AK67">https://www.uniprot.org/uniprotkb/Q9AK67</a><br><a href="https://www.ebi.ac.uk/ena/browser/view/AL939118.1">https://www.ebi.ac.uk/ena/browser/view/AL939118.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pbio.3003183">DOI:10.1371/journal.pbio.3003183</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Results 4; mutant construction methods.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pbio.3003183.s013">DOI:10.1371/journal.pbio.3003183.s013</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>S5 Table: constructs; plasmid-name disagreements retained above.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pbio.3003183.s014">DOI:10.1371/journal.pbio.3003183.s014</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>S6 Table guide and check-primer sequences map uniquely in AL939118.1; target codons permit stop-generating base edits. Complement primers replace the native stop with TAA without changing translated residues.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q9AK67">https://www.uniprot.org/uniprotkb/Q9AK67</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Unreviewed SCO4050, taxon 100226 (A3(2)/M145), 206 aa, sequence version 1; EMBL protein CAC32321.1. Automated functional annotations are not adopted.</dd><dt>retrieved on</dt><dd>2026-10-10</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ebi.ac.uk/ena/browser/view/AL939118.1">https://www.ebi.ac.uk/ena/browser/view/AL939118.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>CAC32321.1: full native CDS translation under table 11 equals Q9AK67. Reference matching does not sequence the experimental stock.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -361,11 +363,11 @@ isolation report left it.</p>
   <td>decreases_assigned_LC_MS_signal_of</td>
   <td>desferrioxamine B</td>
   <td>Genetic metabolite-profile comparison, not purified enzyme activity. Native desG/desH coding intervals overlap by eight bases; polar effects, bystander edits and pathway compensation are not excluded.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pbio.3003183<br>DOI:10.1371/journal.pbio.3003183.s004<br>DOI:10.1371/journal.pbio.3003183.s012<br>DOI:10.1371/journal.pbio.3003183.s002<br>https://www.ebi.ac.uk/ena/browser/view/AL939118.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pbio.3003183</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Results 4, Fig 3a; extraction and LC-MS methods.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pbio.3003183.s004</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>S4 Fig: genotype-labelled extracted-ion chromatograms.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pbio.3003183.s012</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>S4 Table: free B [M+H]+, predicted 561.3606 m/z. Metal-bound/adduct channels are not this compound node.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pbio.3003183.s002</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>S2 Fig B spectrum: cosine 0.7741; figure library CCMSLIB00003135712 differs from caption CCMSLIB00001059066. The author-assigned DFO B signal is retained with this discrepancy, not independently reidentified.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ebi.ac.uk/ena/browser/view/AL939118.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Coordinate comparison: SCO4049 213677..216025(+); SCO4050 216018..216638(+); eight shared bases. Reference geometry does not demonstrate polar effects.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1371/journal.pbio.3003183">DOI:10.1371/journal.pbio.3003183</a><br><a href="https://doi.org/10.1371/journal.pbio.3003183.s004">DOI:10.1371/journal.pbio.3003183.s004</a><br><a href="https://doi.org/10.1371/journal.pbio.3003183.s012">DOI:10.1371/journal.pbio.3003183.s012</a><br><a href="https://doi.org/10.1371/journal.pbio.3003183.s002">DOI:10.1371/journal.pbio.3003183.s002</a><br><a href="https://www.ebi.ac.uk/ena/browser/view/AL939118.1">https://www.ebi.ac.uk/ena/browser/view/AL939118.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pbio.3003183">DOI:10.1371/journal.pbio.3003183</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Results 4, Fig 3a; extraction and LC-MS methods.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pbio.3003183.s004">DOI:10.1371/journal.pbio.3003183.s004</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>S4 Fig: genotype-labelled extracted-ion chromatograms.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pbio.3003183.s012">DOI:10.1371/journal.pbio.3003183.s012</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>S4 Table: free B [M+H]+, predicted 561.3606 m/z. Metal-bound/adduct channels are not this compound node.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pbio.3003183.s002">DOI:10.1371/journal.pbio.3003183.s002</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>S2 Fig B spectrum: cosine 0.7741; figure library CCMSLIB00003135712 differs from caption CCMSLIB00001059066. The author-assigned DFO B signal is retained with this discrepancy, not independently reidentified.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ebi.ac.uk/ena/browser/view/AL939118.1">https://www.ebi.ac.uk/ena/browser/view/AL939118.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Coordinate comparison: SCO4049 213677..216025(+); SCO4050 216018..216638(+); eight shared bases. Reference geometry does not demonstrate polar effects.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -376,105 +378,105 @@ by the corpus tests.</p>
 
 <h2>Bioactivities <span class="tag">25</span></h2>
 <p class="sub">Entries preserve source qualifiers, targets and evidence. Repeated assay names or values are not independent replications; inspect source detail for differences.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Bioactivities"><table>
 <tr><th>Assay</th><th>Result</th><th>Target enzyme</th><th>Source detail</th></tr>
-<tr><td>A quantitative high throughput screen for small molecules that induce DNA re-replication in MCF 10a normal breast cells.</td><td>OTHER 0.1458 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:624296</summary><dl><dt>assay</dt><dd>A quantitative high throughput screen for small molecules that induce DNA re-replication in MCF 10a normal breast cells.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:624296</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624296, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_056979 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>A quantitative high throughput screen for small molecules that induce DNA re-replication in MCF 10a normal breast cells.</td><td>OTHER 0.1458 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/624296">pubchem.aid:624296</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>A quantitative high throughput screen for small molecules that induce DNA re-replication in MCF 10a normal breast cells.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/624296">pubchem.aid:624296</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624296, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_056979 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.1458</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: AML-191 cell line</td><td>OTHER 8.3275 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202236</summary><dl><dt>assay</dt><dd>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: AML-191 cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202236</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202236, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: AML-191 cell line</td><td>OTHER 8.3275 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202236">pubchem.aid:2202236</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: AML-191 cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202236">pubchem.aid:2202236</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202236, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>8.3275</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: AML-194 cell line</td><td>OTHER 9.3436 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202237</summary><dl><dt>assay</dt><dd>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: AML-194 cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202237</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202237, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: AML-194 cell line</td><td>OTHER 9.3436 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202237">pubchem.aid:2202237</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: AML-194 cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202237">pubchem.aid:2202237</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202237, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>9.3436</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: HNT-34 cell line</td><td>OTHER 9.3436 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202234</summary><dl><dt>assay</dt><dd>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: HNT-34 cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202234</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202234, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: HNT-34 cell line</td><td>OTHER 9.3436 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202234">pubchem.aid:2202234</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: HNT-34 cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202234">pubchem.aid:2202234</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202234, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>9.3436</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: MV-4-11 cell line</td><td>OTHER 11.7629 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202233</summary><dl><dt>assay</dt><dd>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: MV-4-11 cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202233</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202233, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: MV-4-11 cell line</td><td>OTHER 11.7629 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202233">pubchem.aid:2202233</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: MV-4-11 cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202233">pubchem.aid:2202233</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202233, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>11.7629</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: OCI-AML3 cell line</td><td>OTHER 11.7629 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202232</summary><dl><dt>assay</dt><dd>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: OCI-AML3 cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202232</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202232, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: OCI-AML3 cell line</td><td>OTHER 11.7629 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202232">pubchem.aid:2202232</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: OCI-AML3 cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202232">pubchem.aid:2202232</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202232, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>11.7629</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: SET-2 cell line</td><td>OTHER 20.9177 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202231</summary><dl><dt>assay</dt><dd>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: SET-2 cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202231</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202231, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: SET-2 cell line</td><td>OTHER 20.9177 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202231">pubchem.aid:2202231</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: SET-2 cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202231">pubchem.aid:2202231</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202231, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>20.9177</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: UCSD-AML1 cell line</td><td>OTHER 0.8327 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202235</summary><dl><dt>assay</dt><dd>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: UCSD-AML1 cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202235</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202235, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
+<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: UCSD-AML1 cell line</td><td>OTHER 0.8327 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202235">pubchem.aid:2202235</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: UCSD-AML1 cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202235">pubchem.aid:2202235</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202235, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.8327</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Cellular viability qHTS for adrenocortical cancer (ACC) cell line SW-13</td><td>OTHER 28.1838 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1963989</summary><dl><dt>assay</dt><dd>Cellular viability qHTS for adrenocortical cancer (ACC) cell line SW-13</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1963989</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963989, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Cellular viability qHTS for adrenocortical cancer (ACC) cell line SW-13</td><td>OTHER 28.1838 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963989">pubchem.aid:1963989</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Cellular viability qHTS for adrenocortical cancer (ACC) cell line SW-13</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963989">pubchem.aid:1963989</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963989, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>28.1838</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line 8505C</td><td>OTHER 17.4111 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202553</summary><dl><dt>assay</dt><dd>Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line 8505C</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202553</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202553, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line 8505C</td><td>OTHER 17.4111 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202553">pubchem.aid:2202553</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line 8505C</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202553">pubchem.aid:2202553</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202553, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>17.4111</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line THJ-11T</td><td>OTHER 12.3261 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202552</summary><dl><dt>assay</dt><dd>Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line THJ-11T</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202552</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202552, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line THJ-11T</td><td>OTHER 12.3261 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202552">pubchem.aid:2202552</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line THJ-11T</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202552">pubchem.aid:2202552</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202552, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>12.3261</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line THJ-16T</td><td>OTHER 13.8302 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202551</summary><dl><dt>assay</dt><dd>Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line THJ-16T</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202551</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202551, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line THJ-16T</td><td>OTHER 13.8302 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202551">pubchem.aid:2202551</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line THJ-16T</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202551">pubchem.aid:2202551</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202551, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>13.8302</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>Cytotoxicity counterscreen for inhibitors of SARS-CoV-2 cell entry</td><td>OTHER 25.1189 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1645845</summary><dl><dt>assay</dt><dd>Cytotoxicity counterscreen for inhibitors of SARS-CoV-2 cell entry</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645845</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645845, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Cytotoxicity counterscreen for inhibitors of SARS-CoV-2 cell entry</td><td>OTHER 25.1189 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645845">pubchem.aid:1645845</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Cytotoxicity counterscreen for inhibitors of SARS-CoV-2 cell entry</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645845">pubchem.aid:1645845</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645845, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>25.1189</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>Nrf2 qHTS screen for inhibitors</td><td>OTHER 14.581 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:504444</summary><dl><dt>assay</dt><dd>Nrf2 qHTS screen for inhibitors</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:504444</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 504444, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_001138884 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Nrf2 qHTS screen for inhibitors</td><td>OTHER 14.581 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/504444">pubchem.aid:504444</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Nrf2 qHTS screen for inhibitors</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/504444">pubchem.aid:504444</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 504444, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_001138884 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>14.581</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Primary qHTS assay for inhibitors of human arachidonate 12S-lipoxygenase (ALOX12): Round 2</td><td>OTHER 50.1187 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1671190</summary><dl><dt>assay</dt><dd>Primary qHTS assay for inhibitors of human arachidonate 12S-lipoxygenase (ALOX12): Round 2</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1671190</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671190, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
+<tr><td>Primary qHTS assay for inhibitors of human arachidonate 12S-lipoxygenase (ALOX12): Round 2</td><td>OTHER 50.1187 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671190">pubchem.aid:1671190</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Primary qHTS assay for inhibitors of human arachidonate 12S-lipoxygenase (ALOX12): Round 2</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671190">pubchem.aid:1671190</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671190, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>50.1187</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Primary qHTS assay for inhibitors of human arachidonate 12S-lipoxygenase (ALOX12): Round 2</td><td>OTHER 50.1187 uM; NOT_DETERMINED</td><td class="mono">UniProtKB:P18054</td><td><details><summary>pubchem.aid:1671190</summary><dl><dt>assay</dt><dd>Primary qHTS assay for inhibitors of human arachidonate 12S-lipoxygenase (ALOX12): Round 2</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1671190</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671190, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
+<tr><td>Primary qHTS assay for inhibitors of human arachidonate 12S-lipoxygenase (ALOX12): Round 2</td><td>OTHER 50.1187 uM; NOT_DETERMINED</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/P18054/entry">UniProtKB:P18054</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671190">pubchem.aid:1671190</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Primary qHTS assay for inhibitors of human arachidonate 12S-lipoxygenase (ALOX12): Round 2</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671190">pubchem.aid:1671190</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671190, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>50.1187</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:P18054</dd></dl>
+</dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>50.1187</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/P18054/entry">UniProtKB:P18054</a></dd></dl>
 </details></td></tr>
-<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an RCH-ACV wild type WT cells (2C)</td><td>OTHER 4.6829 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1645877</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an RCH-ACV wild type WT cells (2C)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645877</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645877, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an RCH-ACV wild type WT cells (2C)</td><td>OTHER 4.6829 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645877">pubchem.aid:1645877</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an RCH-ACV wild type WT cells (2C)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645877">pubchem.aid:1645877</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645877, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>4.6829</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an RCH-ACV wild type WT cells (2C)</td><td>OTHER 4.6829 uM; ACTIVE</td><td class="mono">UniProtKB:O96028</td><td><details><summary>pubchem.aid:1645877</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an RCH-ACV wild type WT cells (2C)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645877</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645877, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an RCH-ACV wild type WT cells (2C)</td><td>OTHER 4.6829 uM; ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/O96028/entry">UniProtKB:O96028</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645877">pubchem.aid:1645877</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an RCH-ACV wild type WT cells (2C)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645877">pubchem.aid:1645877</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645877, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>4.6829</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:O96028</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>4.6829</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/O96028/entry">UniProtKB:O96028</a></dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)</td><td>OTHER 5.2543 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1645876</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645876</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645876, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)</td><td>OTHER 5.2543 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645876">pubchem.aid:1645876</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645876">pubchem.aid:1645876</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645876, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>5.2543</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)</td><td>OTHER 5.2543 uM; ACTIVE</td><td class="mono">UniProtKB:O96028</td><td><details><summary>pubchem.aid:1645876</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645876</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645876, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)</td><td>OTHER 5.2543 uM; ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/O96028/entry">UniProtKB:O96028</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645876">pubchem.aid:1645876</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645876">pubchem.aid:1645876</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645876, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>5.2543</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:O96028</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>5.2543</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/O96028/entry">UniProtKB:O96028</a></dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>Primary qHTS to identify anti-liver cancer compounds using libraries of approved drugs and bioactive compounds</td><td>OTHER 11.2202 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202548</summary><dl><dt>assay</dt><dd>Primary qHTS to identify anti-liver cancer compounds using libraries of approved drugs and bioactive compounds</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202548</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202548, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Primary qHTS to identify anti-liver cancer compounds using libraries of approved drugs and bioactive compounds</td><td>OTHER 11.2202 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202548">pubchem.aid:2202548</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Primary qHTS to identify anti-liver cancer compounds using libraries of approved drugs and bioactive compounds</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202548">pubchem.aid:2202548</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202548, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>11.2202</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>Primary qHTS to identify inhibitors of SARS-CoV-2 cell entry</td><td>OTHER 17.7828 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1645846</summary><dl><dt>assay</dt><dd>Primary qHTS to identify inhibitors of SARS-CoV-2 cell entry</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645846</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645846, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
+<tr><td>Primary qHTS to identify inhibitors of SARS-CoV-2 cell entry</td><td>OTHER 17.7828 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645846">pubchem.aid:1645846</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Primary qHTS to identify inhibitors of SARS-CoV-2 cell entry</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645846">pubchem.aid:1645846</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645846, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>17.7828</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug resistant MV4-11 cells</td><td>OTHER 5.8954 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1963824</summary><dl><dt>assay</dt><dd>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug resistant MV4-11 cells</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1963824</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963824, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug resistant MV4-11 cells</td><td>OTHER 5.8954 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963824">pubchem.aid:1963824</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug resistant MV4-11 cells</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963824">pubchem.aid:1963824</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963824, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>5.8954</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug resistant MV4-11 cells</td><td>OTHER 5.8954 uM; ACTIVE</td><td class="mono">UniProtKB:P43405</td><td><details><summary>pubchem.aid:1963824</summary><dl><dt>assay</dt><dd>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug resistant MV4-11 cells</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1963824</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963824, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug resistant MV4-11 cells</td><td>OTHER 5.8954 uM; ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/P43405/entry">UniProtKB:P43405</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963824">pubchem.aid:1963824</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug resistant MV4-11 cells</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963824">pubchem.aid:1963824</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963824, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>5.8954</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:P43405</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>5.8954</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/P43405/entry">UniProtKB:P43405</a></dd></dl>
 </details></td></tr>
-<tr><td>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) naive MV4-11 cells</td><td>OTHER 6.6148 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1963823</summary><dl><dt>assay</dt><dd>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) naive MV4-11 cells</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1963823</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963823, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) naive MV4-11 cells</td><td>OTHER 6.6148 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963823">pubchem.aid:1963823</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) naive MV4-11 cells</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963823">pubchem.aid:1963823</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963823, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>6.6148</dd><dt>units</dt><dd>uM</dd><dt>notes</dt><dd>23 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but not written here.</dd></dl>
 </details></td></tr>
@@ -484,35 +486,46 @@ by the corpus tests.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=UBQYURCVBFRUQT-UHFFFAOYSA-N">AntibioticMech (desferrioxamine B) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=CHEBI%3A4356">MediaIngredientMech (CHEBI:4356) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A100226">TaxonMech: Streptomyces coelicolor A3(2) (NCBITaxon:100226) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A455632">TaxonMech: Streptomyces griseus subsp. griseus NBRC 13350 (NCBITaxon:455632) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A41951">TaxonMech: Streptomyces argillaceus (NCBITaxon:41951) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A1931">TaxonMech: Streptomyces sp. (NCBITaxon:1931) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000940">PathwayMech (mibig:BGC0000940) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000941">PathwayMech (mibig:BGC0000941) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0001453">PathwayMech (mibig:BGC0001453) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q=CHEBI%3A4356">MediaIngredientMech (CHEBI:4356) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A100226">TaxonMech: Streptomyces coelicolor A3(2) (NCBITaxon:100226) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A455632">TaxonMech: Streptomyces griseus subsp. griseus NBRC 13350 (NCBITaxon:455632) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A41951">TaxonMech: Streptomyces argillaceus (NCBITaxon:41951) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A1931">TaxonMech: Streptomyces sp. (NCBITaxon:1931) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000940">PathwayMech (mibig:BGC0000940) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000941">PathwayMech (mibig:BGC0000941) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0001453">PathwayMech (mibig:BGC0001453) &nearr;</a>
 </div>
 
 <h2>Open questions <span class="tag">2</span></h2>
-<div class="note"><p><strong>name-disagreement</strong> — ChEBI calls this structure &#39;desferrioxamine B&#39; and MIBiG calls it &#39;desferrioxamin B&#39;. They share a Standard InChIKey, so if the names denote different compounds then one upstream record has the wrong structure. Check which.</p></div>
-<div class="note"><p><strong>shared-structure</strong> — This structure is reported by more than one MIBiG entry: BGC0000940, BGC0000941, BGC0001453, BGC0002305. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
+<div class="note"><p><strong>name-disagreement</strong> <span class="tag">OPEN</span> <span class="tag">controversy</span> — ChEBI calls this structure &#39;desferrioxamine B&#39; and MIBiG calls it &#39;desferrioxamin B&#39;. They share a Standard InChIKey, so if the names denote different compounds then one upstream record has the wrong structure. Check which.</p></div>
+<div class="note"><p><strong>shared-structure</strong> <span class="tag">OPEN</span> <span class="tag">curation todo</span> — This structure is reported by more than one MIBiG entry: BGC0000940, BGC0000941, BGC0001453, BGC0002305. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
+
+<h2 id="curation-history">Curation history <span class="tag">6</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-13T07:43:03Z">2026-10-13T07:43:03Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources<p>Seeded from the committed inventories and curation tables.</p></li>
+<li><time datetime="2026-10-10T20:11:42Z">2026-10-10T20:11:42Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Addressed adversarial review #785: each DesJGH phenotype edge now carries its own spectral-identification caveats and native-overlap inference citation. No effect directions, protein identities or prior mechanisms changed.</p></li>
+<li><time datetime="2026-10-10T20:03:19Z">2026-10-10T20:03:19Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added bounded DesJGH genetics for desferrioxamine B from <a href="https://doi.org/10.1371/journal.pbio.3003183">DOI:10.1371/journal.pbio.3003183</a> and supplements. Verified native UniProt sequences and published primers. Preserved existing mechanisms, source assertions and SEEDED status; no direct catalytic reactions, metal-complex equivalence or exact mutant sequences added.</p></li>
+<li><time datetime="2026-09-25T03:03:27Z">2026-09-25T03:03:27Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(3 identical runs since 2026-09-10T05:54:13Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
 
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0000940</td><td>MIBIG</td><td>5</td></tr>
-<tr><td class="mono">BGC0000941</td><td>MIBIG</td><td>3</td></tr>
-<tr><td class="mono">BGC0001453</td><td>MIBIG</td><td>5</td></tr>
-<tr><td class="mono">BGC0002305</td><td>MIBIG</td><td>2</td></tr>
-<tr><td class="mono">CHEBI:4356</td><td>CHEBI</td><td>3-star</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000940">BGC0000940</a></td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000941">BGC0000941</a></td><td>MIBIG</td><td>3</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001453">BGC0001453</a></td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002305">BGC0002305</a></td><td>MIBIG</td><td>2</td></tr>
+<tr><td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_4356">CHEBI:4356</a></td><td>CHEBI</td><td>3-star</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/fatty_acids/desferrioxamine-b.yaml">data/natural_products/fatty_acids/desferrioxamine-b.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20CHEBI%3A4356&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Ffatty_acids%2Fdesferrioxamine-b.html">Report a problem with this record</a>: opens a GitHub issue that names CHEBI:4356 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Corpus as of 2026-10-23 22:53 UTC. Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 8e5d64d98cfd). Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Polyketides</a> &middot; naphthomycin A</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>naphthomycin A</h1>
-<p class="sub"><span class="mono">naturalproductmech:mibig-efdb010171</span>
+<p class="sub"><span class="mono"><a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/polyketides/naphthomycin-a.yaml">naturalproductmech:mibig-efdb010171</a></span>
   <span class="tag">MINTED</span>
   <span class="tag">SEEDED</span>
 </p>
 <div class="note"><strong>Grounding review:</strong> No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.</div><details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/naphthomycin-a.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/naphthomycin-a.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">AXEGRHYJHHPVDH-UMKVKWLOSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">C[C@H]1\C=C\C=C/C=C(C)\C(=O)NC2=C(Cl)C(=O)C3=C(C=C(C)C(O)=C3C(=O)\C(C)=C\[C@H](C)[C@@H](O)[C@@H](C)\C=C\[C@@H](O)C\C=C(C)\C(=O)C[C@@H]1O)C2=O</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">npatlas:NPA0326</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://www.npatlas.org/explore/compounds/NPA0326">npatlas:NPA0326</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Polyketides</a> —
@@ -57,67 +59,67 @@ pks, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Streptomyces sp. CS<br><span class="mono">NCBITaxon:876169</span></td>
+  <td>Streptomyces sp. CS<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=876169">NCBITaxon:876169</a></span></td>
   <td><span class="tag causal">BGC_CHARACTERIZED</span></td>
-  <td class="mono">mibig:BGC0000106</td>
-  <td><span class="mono">PMID:21614382</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000106">mibig:BGC0000106</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/21614382/">PMID:21614382</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">7</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Streptomyces<br><span class="mono">NCBITaxon:1883</span></td>
+  <td>Streptomyces<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1883">NCBITaxon:1883</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/ACS.JNATPROD.6B01059</td>
+  <td class="mono"><a href="https://doi.org/10.1021/ACS.JNATPROD.6B01059">DOI:10.1021/ACS.JNATPROD.6B01059</a></td>
 </tr>
 <tr>
-  <td>Streptomyces<br><span class="mono">NCBITaxon:1883</span></td>
+  <td>Streptomyces<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1883">NCBITaxon:1883</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/NP300109S</td>
+  <td class="mono"><a href="https://doi.org/10.1021/NP300109S">DOI:10.1021/NP300109S</a></td>
 </tr>
 <tr>
-  <td>Streptomyces<br><span class="mono">NCBITaxon:1883</span></td>
+  <td>Streptomyces<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1883">NCBITaxon:1883</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1039/C1MB05036B</td>
+  <td class="mono"><a href="https://doi.org/10.1039/C1MB05036B">DOI:10.1039/C1MB05036B</a></td>
 </tr>
 <tr>
-  <td>Streptomyces<br><span class="mono">NCBITaxon:1883</span></td>
+  <td>Streptomyces<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1883">NCBITaxon:1883</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.7164/ANTIBIOTICS.28.85</td>
+  <td class="mono"><a href="https://doi.org/10.7164/ANTIBIOTICS.28.85">DOI:10.7164/ANTIBIOTICS.28.85</a></td>
 </tr>
 <tr>
-  <td>Streptomyces<br><span class="mono">NCBITaxon:1883</span></td>
+  <td>Streptomyces<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1883">NCBITaxon:1883</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.7164/ANTIBIOTICS.38.948</td>
+  <td class="mono"><a href="https://doi.org/10.7164/ANTIBIOTICS.38.948">DOI:10.7164/ANTIBIOTICS.38.948</a></td>
 </tr>
 <tr>
-  <td>Streptomyces<br><span class="mono">NCBITaxon:1883</span></td>
+  <td>Streptomyces<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1883">NCBITaxon:1883</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.7164/ANTIBIOTICS.51.845</td>
+  <td class="mono"><a href="https://doi.org/10.7164/ANTIBIOTICS.51.845">DOI:10.7164/ANTIBIOTICS.51.845</a></td>
 </tr>
 <tr>
-  <td>Streptomyces collinus<br><span class="mono">NCBITaxon:42684</span></td>
+  <td>Streptomyces collinus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=42684">NCBITaxon:42684</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1139/V94-028</td>
+  <td class="mono"><a href="https://doi.org/10.1139/V94-028">DOI:10.1139/V94-028</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0000106</td>
-  <td>Streptomyces sp. CS<br><span class="mono">NCBITaxon:876169</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000106">mibig:BGC0000106</a></td>
+  <td>Streptomyces sp. CS<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=876169">NCBITaxon:876169</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:GQ452266.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/GQ452266.1">genbank:GQ452266.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -127,7 +129,7 @@ isolation report left it.</p>
 
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for naphthomycin A">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for naphthomycin A">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -160,19 +162,19 @@ isolation report left it.</p>
 </div>
 
 <h2>Causal graph &mdash; biosynthesis <span class="tag">2 nodes, 1 edge</span></h2>
-<p class="sub">Native-reference identity only for Nat1 in Streptomyces sp. CS/taxon 876169/GQ452266.1. Placement in this owner is curator-inferred from the shared BGC0000106 context, not proof of a purified reaction, historical assay construct or exact mature-product formation. The MITE listed product and literal SMARTS output agree but leave six alkene configurations unspecified, unlike this exact owner. No source model is repaired or reaction adopted. MITE also describes a separate putative proansamitocin context; no such claim is transferred here. DOI:10.1039/C1MB05036B was inspected only at the publisher abstract level on 2026-10-08; the full-text loader failed and retrieval stopped. No primary experiment is independently adopted.</p><div class="scroll"><table>
+<p class="sub">Native-reference identity only for Nat1 in Streptomyces sp. CS/taxon 876169/GQ452266.1. Placement in this owner is curator-inferred from the shared BGC0000106 context, not proof of a purified reaction, historical assay construct or exact mature-product formation. The MITE listed product and literal SMARTS output agree but leave six alkene configurations unspecified, unlike this exact owner. No source model is repaired or reaction adopted. MITE also describes a separate putative proansamitocin context; no such claim is transferred here. <a href="https://doi.org/10.1039/C1MB05036B">DOI:10.1039/C1MB05036B</a> was inspected only at the publisher abstract level on 2026-10-08; the full-text loader failed and retrieval stopped. No primary experiment is independently adopted.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>nat1 CDS (GQ452266.1)</td>
   <td>encodes the native protein reference</td>
   <td>Nat1 (Streptomyces sp. CS native-reference example)</td>
   <td>82335..83678 positive strand; 1344-nt complete CDS including stop, 447 residues. The accession denotes the native reference, not an affinity-tagged or mutated construct. An annotated halogenase name does not establish a reaction.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.ncbi.nlm.nih.gov/nuccore/GQ452266.1<br>https://www.ncbi.nlm.nih.gov/protein/ADM46362.1<br>https://rest.uniprot.org/uniprotkb/F8QPG4.json<br>https://rest.uniprot.org/uniprotkb/F8QPG4.json<br>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000477.json<br>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000477.json</summary><ul><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/GQ452266.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>/gene=&#34;nat1&#34;</dd><dt>notes</dt><dd>The 106,181-bp partial cluster deposition names nat1/ADM46362.1 at 82335..83678, codon_start 1 and translation table 11. Source names strain CS/taxon 876169. It is not the whole genome or an independent activity experiment.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/ADM46362.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Versioned GenPept ADM46362.1 names nat1 and codes from GQ452266.1:82335..83678, strain CS. It is a 447-residue author-supplied conceptual translation annotated halogenase.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://rest.uniprot.org/uniprotkb/F8QPG4.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Current unreviewed primary F8QPG4, entry version 33/sequence version 1, names nat1/strain CS/taxon 876169 and directly cross-references GQ452266 with protein ADM46362.1. Homology-based protein existence and automated family annotation are not experimental validation of activity.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://rest.uniprot.org/uniprotkb/F8QPG4.json</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Complete-CDS-aware translation, deposited translation, independent GenPept and UniProt sequences agree over all 447 residues. Exact gene, accession, strain and taxon agreement supports selecting this native-reference example rather than an arbitrary homolog. This does not identify a historical assay construct.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000477.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Active MITE0000477 version 1 maps Nat1 to F8QPG4/ADM46362.1/BGC0000106. This supports source mapping only. Source knock-out codes are not independently inspected primary experiments.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000477.json</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Under RDKit 2026.03.5 the literal naphthomycin model product and SMARTS output share AXEGRHYJHHPVDH-RRJKCPLYSA-N, not owner AXEGRHYJHHPVDH-UMKVKWLOSA-N. Both leave six alkene configurations unspecified; this is not evidence of isomerization. The source is not silently repaired, and exact-owner reaction adoption is withheld.</dd></dl>
+  <td><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/GQ452266.1">https://www.ncbi.nlm.nih.gov/nuccore/GQ452266.1</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/ADM46362.1">https://www.ncbi.nlm.nih.gov/protein/ADM46362.1</a><br><a href="https://rest.uniprot.org/uniprotkb/F8QPG4.json">https://rest.uniprot.org/uniprotkb/F8QPG4.json</a><br><a href="https://rest.uniprot.org/uniprotkb/F8QPG4.json">https://rest.uniprot.org/uniprotkb/F8QPG4.json</a><br><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000477.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000477.json</a><br><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000477.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000477.json</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/GQ452266.1">https://www.ncbi.nlm.nih.gov/nuccore/GQ452266.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>/gene=&#34;nat1&#34;</dd><dt>notes</dt><dd>The 106,181-bp partial cluster deposition names nat1/ADM46362.1 at 82335..83678, codon_start 1 and translation table 11. Source names strain CS/taxon 876169. It is not the whole genome or an independent activity experiment.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/ADM46362.1">https://www.ncbi.nlm.nih.gov/protein/ADM46362.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Versioned GenPept ADM46362.1 names nat1 and codes from GQ452266.1:82335..83678, strain CS. It is a 447-residue author-supplied conceptual translation annotated halogenase.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://rest.uniprot.org/uniprotkb/F8QPG4.json">https://rest.uniprot.org/uniprotkb/F8QPG4.json</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Current unreviewed primary F8QPG4, entry version 33/sequence version 1, names nat1/strain CS/taxon 876169 and directly cross-references GQ452266 with protein ADM46362.1. Homology-based protein existence and automated family annotation are not experimental validation of activity.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://rest.uniprot.org/uniprotkb/F8QPG4.json">https://rest.uniprot.org/uniprotkb/F8QPG4.json</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Complete-CDS-aware translation, deposited translation, independent GenPept and UniProt sequences agree over all 447 residues. Exact gene, accession, strain and taxon agreement supports selecting this native-reference example rather than an arbitrary homolog. This does not identify a historical assay construct.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000477.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000477.json</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Active MITE0000477 version 1 maps Nat1 to F8QPG4/ADM46362.1/BGC0000106. This supports source mapping only. Source knock-out codes are not independently inspected primary experiments.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000477.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000477.json</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Under RDKit 2026.03.5 the literal naphthomycin model product and SMARTS output share AXEGRHYJHHPVDH-RRJKCPLYSA-N, not owner AXEGRHYJHHPVDH-UMKVKWLOSA-N. Both leave six alkene configurations unspecified; this is not evidence of isomerization. The source is not silently repaired, and exact-owner reaction adoption is withheld.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -180,17 +182,17 @@ isolation report left it.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">2 nodes, 1 edge</span></h2>
-<p class="sub">Native-reference identity only for Nat2 in Streptomyces sp. CS/taxon 876169/GQ452266.1. Placement in this owner is curator-inferred from the shared deposited cluster and BGC0000106 context; it is not proof of an exact-product reaction. Predicted oxidoreductase and automated MhpA-related annotations are not demonstrated hydroxylation or ring formation. No deletion phenotype, historical assay construct, pathway order or physical complex is asserted. DOI:10.1039/C1MB05036B was inspected only at the publisher abstract level on 2026-10-08; the full-text loader failed and retrieval stopped. No primary experiment is independently adopted.</p><div class="scroll"><table>
+<p class="sub">Native-reference identity only for Nat2 in Streptomyces sp. CS/taxon 876169/GQ452266.1. Placement in this owner is curator-inferred from the shared deposited cluster and BGC0000106 context; it is not proof of an exact-product reaction. Predicted oxidoreductase and automated MhpA-related annotations are not demonstrated hydroxylation or ring formation. No deletion phenotype, historical assay construct, pathway order or physical complex is asserted. <a href="https://doi.org/10.1039/C1MB05036B">DOI:10.1039/C1MB05036B</a> was inspected only at the publisher abstract level on 2026-10-08; the full-text loader failed and retrieval stopped. No primary experiment is independently adopted.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 2 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>nat2 CDS (GQ452266.1)</td>
   <td>encodes the native protein reference</td>
   <td>Nat2 (Streptomyces sp. CS native-reference example)</td>
   <td>91304..93061 reverse strand; 1758-nt complete CDS including stop, 585 residues. The accession denotes the native reference, not a tagged or mutated construct. Sequence identity does not experimentally validate activity.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.ncbi.nlm.nih.gov/nuccore/GQ452266.1<br>https://www.ncbi.nlm.nih.gov/protein/ADM46370.1<br>https://rest.uniprot.org/uniprotkb/F8QPH2.json<br>https://www.ncbi.nlm.nih.gov/nuccore/GQ452266.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/GQ452266.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>/gene=&#34;nat2&#34;</dd><dt>notes</dt><dd>The 106,181-bp partial cluster deposition names nat2/ADM46370.1 at complement(91304..93061), codon_start 1 and translation table 11. Source names strain CS/taxon 876169. It is not the whole genome or an independent activity experiment.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/ADM46370.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Versioned GenPept ADM46370.1 names nat2 and codes from complement(GQ452266.1:91304..93061), strain CS. It is a 585-residue author-supplied conceptual translation annotated FAD-dependent oxidoreductase. Its computational MhpA region annotation is not a native-substrate experiment.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://rest.uniprot.org/uniprotkb/F8QPH2.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Current unreviewed primary F8QPH2, entry version 34/sequence version 1, names nat2/strain CS/taxon 876169 and directly cross-references GQ452266 with protein ADM46370.1. Protein existence is Predicted. Automated MhpA-related domain and GO annotations do not demonstrate a reaction on naphthomycin.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/GQ452266.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Complete-CDS-aware reverse-strand translation, deposited translation, independent GenPept and UniProt sequences agree over all 585 residues. The exact-gene/taxon UniProt search returned one entry, F8QPH2. Gene, accession, strain and taxon agreement supports this native-reference example, not an arbitrary homolog. Placement in this owner is inferred from its existing GQ452266.1/BGC0000106 cluster context; this does not establish activity or a historical assay construct.</dd></dl>
+  <td><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/GQ452266.1">https://www.ncbi.nlm.nih.gov/nuccore/GQ452266.1</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/ADM46370.1">https://www.ncbi.nlm.nih.gov/protein/ADM46370.1</a><br><a href="https://rest.uniprot.org/uniprotkb/F8QPH2.json">https://rest.uniprot.org/uniprotkb/F8QPH2.json</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/GQ452266.1">https://www.ncbi.nlm.nih.gov/nuccore/GQ452266.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/GQ452266.1">https://www.ncbi.nlm.nih.gov/nuccore/GQ452266.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>/gene=&#34;nat2&#34;</dd><dt>notes</dt><dd>The 106,181-bp partial cluster deposition names nat2/ADM46370.1 at complement(91304..93061), codon_start 1 and translation table 11. Source names strain CS/taxon 876169. It is not the whole genome or an independent activity experiment.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/ADM46370.1">https://www.ncbi.nlm.nih.gov/protein/ADM46370.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Versioned GenPept ADM46370.1 names nat2 and codes from complement(GQ452266.1:91304..93061), strain CS. It is a 585-residue author-supplied conceptual translation annotated FAD-dependent oxidoreductase. Its computational MhpA region annotation is not a native-substrate experiment.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://rest.uniprot.org/uniprotkb/F8QPH2.json">https://rest.uniprot.org/uniprotkb/F8QPH2.json</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Current unreviewed primary F8QPH2, entry version 34/sequence version 1, names nat2/strain CS/taxon 876169 and directly cross-references GQ452266 with protein ADM46370.1. Protein existence is Predicted. Automated MhpA-related domain and GO annotations do not demonstrate a reaction on naphthomycin.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/GQ452266.1">https://www.ncbi.nlm.nih.gov/nuccore/GQ452266.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Complete-CDS-aware reverse-strand translation, deposited translation, independent GenPept and UniProt sequences agree over all 585 residues. The exact-gene/taxon UniProt search returned one entry, F8QPH2. Gene, accession, strain and taxon agreement supports this native-reference example, not an arbitrary homolog. Placement in this owner is inferred from its existing GQ452266.1/BGC0000106 cluster context; this does not establish activity or a historical assay construct.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -204,23 +206,31 @@ by the corpus tests.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=AXEGRHYJHHPVDH-UMKVKWLOSA-N">AntibioticMech (naphthomycin A) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=naturalproductmech%3Amibig-efdb010171">MediaIngredientMech (naturalproductmech:mibig-efdb010171) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A876169">TaxonMech: Streptomyces sp. CS (NCBITaxon:876169) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000106">PathwayMech (mibig:BGC0000106) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A876169">TaxonMech: Streptomyces sp. CS (NCBITaxon:876169) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000106">PathwayMech (mibig:BGC0000106) &nearr;</a>
 </div>
 
 
+<h2 id="curation-history">Curation history <span class="tag">3</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-08T13:51:20Z">2026-10-08T13:51:20Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added a native-reference-only Nat1/UniProtKB:F8QPG4 identity graph for Streptomyces sp. CS/GQ452266.1/BGC0000106. Complete CDS translation, deposited translation, GenPept ADM46362.1 and current UniProt sequence agree over 447 residues. Placement is inferred from shared source BGC context. The MITE model product lacks all six specified alkene configurations of the exact owner; literal model and SMARTS agree only at that less specified level. No reaction, assay construct, cross-complementation or proansamitocin claim is adopted. Seeded fields, grades, SEEDED status and prior history are preserved. Added the native-reference-only Nat2/UniProtKB:F8QPH2 encoding graph from the same CS/GQ452266.1 cluster. All four sequence representations agree over 585 residues from the reverse-strand complete CDS. Predicted oxidoreductase and automated MhpA-related annotations are not adopted as experimentally demonstrated hydroxylation or ring formation. No reaction, deletion phenotype, assay construct, pathway order or complex is asserted.</p></li>
+<li><time datetime="2026-09-25T03:01:31Z">2026-09-25T03:01:31Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:03Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
+
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0000106</td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000106">BGC0000106</a></td><td>MIBIG</td><td>5</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/polyketides/naphthomycin-a.yaml">data/natural_products/polyketides/naphthomycin-a.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20naturalproductmech%3Amibig-efdb010171&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Fpolyketides%2Fnaphthomycin-a.html">Report a problem with this record</a>: opens a GitHub issue that names naturalproductmech:mibig-efdb010171 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Corpus as of 2026-10-23 22:53 UTC. Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 8e5d64d98cfd). Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

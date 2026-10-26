@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Carbohydrates</a> &middot; tubercidin</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>tubercidin</h1>
-<p class="sub"><span class="mono">CHEBI:48267</span>
+<p class="sub"><span class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_48267">CHEBI:48267</a></span>
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 <span class="tag">antifungal</span><span class="tag">cytotoxic</span><span class="tag">enzyme inhibitor</span></p>
 <details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/carbohydrates/tubercidin.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/carbohydrates/tubercidin.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 <p>An N-glycosylpyrrolopyrimidine that is adenosine in which the in the 5-membered ring that is not attached to the ribose moiety is replaced by a carbon. Tubercidin is produced in the culture broth of Streptomyces tubericidus.</p>
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">HDZZVAMISRMYHH-KCGFPETGSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">C1=CN(C2=NC=NC(=C21)N)[C@H]3[C@@H]([C@@H]([C@H](O3)CO)O)O</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">pubchem:6245</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/compound/6245">pubchem:6245</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Carbohydrates</a> —
@@ -57,107 +59,107 @@ other, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Streptomyces tubercidicus<br><span class="mono">NCBITaxon:47759</span></td>
+  <td>Streptomyces tubercidicus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=47759">NCBITaxon:47759</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0001937</td>
-  <td><span class="mono">PMID:30153835</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001937">mibig:BGC0001937</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/30153835/">PMID:30153835</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">15</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Tolypothrix distorta<br><span class="mono">NCBITaxon:119534</span></td>
+  <td>Tolypothrix distorta<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=119534">NCBITaxon:119534</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.7164/ANTIBIOTICS.41.1048</td>
+  <td class="mono"><a href="https://doi.org/10.7164/ANTIBIOTICS.41.1048">DOI:10.7164/ANTIBIOTICS.41.1048</a></td>
 </tr>
 <tr>
-  <td>Tolypothrix byssoidea<br><span class="mono">NCBITaxon:213754</span></td>
+  <td>Tolypothrix byssoidea<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=213754">NCBITaxon:213754</a></span></td>
   <td>CHEBI</td>
-  <td class="mono">PMID:21870828</td>
+  <td class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/21870828/">PMID:21870828</a></td>
 </tr>
 <tr>
-  <td>Caulospongia biflabellata<br><span class="mono">NCBITaxon:297728</span></td>
+  <td>Caulospongia biflabellata<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=297728">NCBITaxon:297728</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1076/PHBI.40.4.302.8469</td>
+  <td class="mono"><a href="https://doi.org/10.1076/PHBI.40.4.302.8469">DOI:10.1076/PHBI.40.4.302.8469</a></td>
 </tr>
 <tr>
-  <td>Caulospongia biflabellata<br><span class="mono">NCBITaxon:297728</span></td>
+  <td>Caulospongia biflabellata<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=297728">NCBITaxon:297728</a></span></td>
   <td>CHEBI</td>
-  <td class="mono">PMID:21870828</td>
+  <td class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/21870828/">PMID:21870828</a></td>
 </tr>
 <tr>
-  <td>Lissoclinum timorense<br><span class="mono">NCBITaxon:322851</span></td>
+  <td>Lissoclinum timorense<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=322851">NCBITaxon:322851</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/NP960457F</td>
+  <td class="mono"><a href="https://doi.org/10.1021/NP960457F">DOI:10.1021/NP960457F</a></td>
 </tr>
 <tr>
-  <td>Actinopolyspora erythraea<br><span class="mono">NCBITaxon:414996</span></td>
+  <td>Actinopolyspora erythraea<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=414996">NCBITaxon:414996</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/NP200603G</td>
+  <td class="mono"><a href="https://doi.org/10.1021/NP200603G">DOI:10.1021/NP200603G</a></td>
 </tr>
 <tr>
-  <td>Actinopolyspora erythraea YIM 90600<br><span class="mono">NCBITaxon:414996</span></td>
+  <td>Actinopolyspora erythraea YIM 90600<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=414996">NCBITaxon:414996</a></span></td>
   <td>CHEBI</td>
-  <td class="mono">PMID:21870828</td>
+  <td class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/21870828/">PMID:21870828</a></td>
 </tr>
 <tr>
-  <td>Hassallia byssoidea<br><span class="mono">NCBITaxon:482630</span></td>
+  <td>Hassallia byssoidea<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=482630">NCBITaxon:482630</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/S0031-9422(00)97712-4</td>
+  <td class="mono"><a href="https://doi.org/10.1016/S0031-9422%2800%2997712-4">DOI:10.1016/S0031-9422(00)97712-4</a></td>
 </tr>
 <tr>
-  <td>Hassallia byssoidea<br><span class="mono">NCBITaxon:482630</span></td>
+  <td>Hassallia byssoidea<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=482630">NCBITaxon:482630</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.7164/ANTIBIOTICS.41.1048</td>
+  <td class="mono"><a href="https://doi.org/10.7164/ANTIBIOTICS.41.1048">DOI:10.7164/ANTIBIOTICS.41.1048</a></td>
 </tr>
 <tr>
-  <td>Streptomyces sparsogenes<br><span class="mono">NCBITaxon:67365</span></td>
+  <td>Streptomyces sparsogenes<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=67365">NCBITaxon:67365</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/S0021-9673(01)83861-9</td>
+  <td class="mono"><a href="https://doi.org/10.1016/S0021-9673%2801%2983861-9">DOI:10.1016/S0021-9673(01)83861-9</a></td>
 </tr>
 <tr>
-  <td>Plectonema radiosum<br><span class="mono">NCBITaxon:945768</span></td>
+  <td>Plectonema radiosum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=945768">NCBITaxon:945768</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/0304-3835(95)03940-X</td>
+  <td class="mono"><a href="https://doi.org/10.1016/0304-3835%2895%2903940-X">DOI:10.1016/0304-3835(95)03940-X</a></td>
 </tr>
 <tr>
-  <td>Plectonema radiosum<br><span class="mono">NCBITaxon:945768</span></td>
+  <td>Plectonema radiosum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=945768">NCBITaxon:945768</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.7164/ANTIBIOTICS.41.1048</td>
+  <td class="mono"><a href="https://doi.org/10.7164/ANTIBIOTICS.41.1048">DOI:10.7164/ANTIBIOTICS.41.1048</a></td>
 </tr>
 <tr>
-  <td>Streptomyces tubercidicus<br><span class="mono">NCBITaxon:47759</span></td>
+  <td>Streptomyces tubercidicus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=47759">NCBITaxon:47759</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/BF02976759</td>
+  <td class="mono"><a href="https://doi.org/10.1007/BF02976759">DOI:10.1007/BF02976759</a></td>
 </tr>
 <tr>
-  <td>Streptomyces tubercidicus<br><span class="mono">NCBITaxon:47759</span></td>
+  <td>Streptomyces tubercidicus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=47759">NCBITaxon:47759</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1186/S12934-018-0978-8</td>
+  <td class="mono"><a href="https://doi.org/10.1186/S12934-018-0978-8">DOI:10.1186/S12934-018-0978-8</a></td>
 </tr>
 <tr>
-  <td>Streptomyces tubercidicus<br><span class="mono">NCBITaxon:47759</span></td>
+  <td>Streptomyces tubercidicus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=47759">NCBITaxon:47759</a></span></td>
   <td>CHEBI</td>
-  <td class="mono">PMID:21870828</td>
+  <td class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/21870828/">PMID:21870828</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0001937</td>
-  <td>Streptomyces tubercidicus<br><span class="mono">NCBITaxon:47759</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001937">mibig:BGC0001937</a></td>
+  <td>Streptomyces tubercidicus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=47759">NCBITaxon:47759</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:MG706975.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/MG706975.1">genbank:MG706975.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -167,7 +169,7 @@ isolation report left it.</p>
 
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for tubercidin">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for tubercidin">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -200,15 +202,15 @@ isolation report left it.</p>
 </div>
 
 <h2>Causal graph &mdash; bioactivity <span class="tag">2 nodes, 1 edge</span></h2>
-<p class="sub">Tubercidin binds Escherichia coli purine nucleoside phosphorylase in the PDB 1PR5 co-crystal structure.</p><div class="scroll"><table>
+<p class="sub">Tubercidin binds Escherichia coli purine nucleoside phosphorylase in the PDB 1PR5 co-crystal structure.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>tubercidin</td>
   <td>binds</td>
   <td>Escherichia coli O157:H7 purine nucleoside phosphorylase DeoD</td>
   <td>PubChem AID 977610 maps this exact InChIKey to an active 120 uM Ki row for PDB 1PR5 chain A; RCSB identifies TBN in 1PR5 as tubercidin with matching InChIKey HDZZVAMISRMYHH-KCGFPETGSA-N; and PDBe maps chains A, B and C to UniProtKB:P0ABP9.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1074/jbc.M304622200<br>DOI:10.2210/pdb1pr5/pdb</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1074/jbc.M304622200</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Structural basis for substrate specificity of Escherichia coli purine nucleoside phosphorylase.</dd><dt>notes</dt><dd>Bennett, Li, Allan, Parker and Ealick solved PDB 1PR5 as Escherichia coli purine nucleoside phosphorylase bound to 7-deazaadenosine.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.2210/pdb1pr5/pdb</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>Escherichia coli Purine Nucleoside Phosphorylase Complexed with 7-deazaadenosine and Phosphate/Sulfate</dd><dt>notes</dt><dd>RCSB PDB identifies 1PR5 as purine nucleoside phosphorylase entity 1 bound to TBN 7-deazaadenosine entity 3, and PDBe maps entity 1 chains A, B and C to UniProtKB:P0ABP9.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1074/jbc.M304622200">DOI:10.1074/jbc.M304622200</a><br><a href="https://doi.org/10.2210/pdb1pr5/pdb">DOI:10.2210/pdb1pr5/pdb</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1074/jbc.M304622200">DOI:10.1074/jbc.M304622200</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Structural basis for substrate specificity of Escherichia coli purine nucleoside phosphorylase.</dd><dt>notes</dt><dd>Bennett, Li, Allan, Parker and Ealick solved PDB 1PR5 as Escherichia coli purine nucleoside phosphorylase bound to 7-deazaadenosine.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.2210/pdb1pr5/pdb">DOI:10.2210/pdb1pr5/pdb</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>Escherichia coli Purine Nucleoside Phosphorylase Complexed with 7-deazaadenosine and Phosphate/Sulfate</dd><dt>notes</dt><dd>RCSB PDB identifies 1PR5 as purine nucleoside phosphorylase entity 1 bound to TBN 7-deazaadenosine entity 3, and PDBe maps entity 1 chains A, B and C to UniProtKB:P0ABP9.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -219,105 +221,105 @@ by the corpus tests.</p>
 
 <h2>Bioactivities <span class="tag">25</span></h2>
 <p class="sub">Entries preserve source qualifiers, targets and evidence. Repeated assay names or values are not independent replications; inspect source detail for differences.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Bioactivities"><table>
 <tr><th>Assay</th><th>Result</th><th>Target enzyme</th><th>Source detail</th></tr>
-<tr><td>A quantitative high throughput screen for small molecules that induce DNA re-replication in MCF 10a normal breast cells.</td><td>OTHER 0.5174 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:624296</summary><dl><dt>assay</dt><dd>A quantitative high throughput screen for small molecules that induce DNA re-replication in MCF 10a normal breast cells.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:624296</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624296, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_056979 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>A quantitative high throughput screen for small molecules that induce DNA re-replication in MCF 10a normal breast cells.</td><td>OTHER 0.5174 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/624296">pubchem.aid:624296</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>A quantitative high throughput screen for small molecules that induce DNA re-replication in MCF 10a normal breast cells.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/624296">pubchem.aid:624296</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624296, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_056979 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.5174</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>A quantitative high throughput screen for small molecules that induce DNA re-replication in SW480 colon adenocarcinoma cells.</td><td>OTHER 0.6513 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:624297</summary><dl><dt>assay</dt><dd>A quantitative high throughput screen for small molecules that induce DNA re-replication in SW480 colon adenocarcinoma cells.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:624297</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_056979 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>A quantitative high throughput screen for small molecules that induce DNA re-replication in SW480 colon adenocarcinoma cells.</td><td>OTHER 0.6513 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/624297">pubchem.aid:624297</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>A quantitative high throughput screen for small molecules that induce DNA re-replication in SW480 colon adenocarcinoma cells.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/624297">pubchem.aid:624297</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_056979 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.6513</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>A549 Cytotoxicity Assay Measured in Cell-Based System Using Plate Reader - 7071-06_Antagonist_Dose_CherryPick_Activity</td><td>OTHER 0.0912 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:743412</summary><dl><dt>assay</dt><dd>A549 Cytotoxicity Assay Measured in Cell-Based System Using Plate Reader - 7071-06_Antagonist_Dose_CherryPick_Activity</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:743412</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 743412, deposited by Broad Institute; assay type Confirmatory. Source endpoint: AC50.</dd></dl>
+<tr><td>A549 Cytotoxicity Assay Measured in Cell-Based System Using Plate Reader - 7071-06_Antagonist_Dose_CherryPick_Activity</td><td>OTHER 0.0912 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/743412">pubchem.aid:743412</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>A549 Cytotoxicity Assay Measured in Cell-Based System Using Plate Reader - 7071-06_Antagonist_Dose_CherryPick_Activity</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/743412">pubchem.aid:743412</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 743412, deposited by Broad Institute; assay type Confirmatory. Source endpoint: AC50.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.0912</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>Bursicon-induced LGR2 mediated cAMP production in LGR-2/CRE6x-Luciferase co-transfected HEK293 cells Inhibition Measured in Cell-Based System Using Plate Reader - 7011-01_Antagonist_Dose_CherryPick_Activity_Set2</td><td>OTHER 2.77 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:743343</summary><dl><dt>assay</dt><dd>Bursicon-induced LGR2 mediated cAMP production in LGR-2/CRE6x-Luciferase co-transfected HEK293 cells Inhibition Measured in Cell-Based System Using Plate Reader - 7011-01_Antagonist_Dose_CherryPick_Activity_Set2</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:743343</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 743343, deposited by Broad Institute; assay type Confirmatory. Source endpoint: AC50.</dd></dl>
+<tr><td>Bursicon-induced LGR2 mediated cAMP production in LGR-2/CRE6x-Luciferase co-transfected HEK293 cells Inhibition Measured in Cell-Based System Using Plate Reader - 7011-01_Antagonist_Dose_CherryPick_Activity_Set2</td><td>OTHER 2.77 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/743343">pubchem.aid:743343</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Bursicon-induced LGR2 mediated cAMP production in LGR-2/CRE6x-Luciferase co-transfected HEK293 cells Inhibition Measured in Cell-Based System Using Plate Reader - 7011-01_Antagonist_Dose_CherryPick_Activity_Set2</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/743343">pubchem.aid:743343</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 743343, deposited by Broad Institute; assay type Confirmatory. Source endpoint: AC50.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>2.77</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Dose response confirmation of uHTS chemical inhibitors of both B-cell and T-cell specific antigen receptor-induced NF-kB activation in a 697B cell line using a luminescence assay</td><td>IC50 1.01 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:489034</summary><dl><dt>assay</dt><dd>Dose response confirmation of uHTS chemical inhibitors of both B-cell and T-cell specific antigen receptor-induced NF-kB activation in a 697B cell line using a luminescence assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:489034</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 489034, deposited by Burnham Center for Chemical Genomics; assay type Confirmatory.</dd></dl>
+<tr><td>Dose response confirmation of uHTS chemical inhibitors of both B-cell and T-cell specific antigen receptor-induced NF-kB activation in a 697B cell line using a luminescence assay</td><td>IC50 1.01 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/489034">pubchem.aid:489034</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Dose response confirmation of uHTS chemical inhibitors of both B-cell and T-cell specific antigen receptor-induced NF-kB activation in a 697B cell line using a luminescence assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/489034">pubchem.aid:489034</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 489034, deposited by Burnham Center for Chemical Genomics; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>1.01</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>Dose response confirmation of uHTS of chemical inhibitors of both B-cell and T-cell specific antigen receptor-induced NF-kB activation in a Jurkat cell line using a luminescence assay</td><td>IC50 7.83 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:489004</summary><dl><dt>assay</dt><dd>Dose response confirmation of uHTS of chemical inhibitors of both B-cell and T-cell specific antigen receptor-induced NF-kB activation in a Jurkat cell line using a luminescence assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:489004</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 489004, deposited by Burnham Center for Chemical Genomics; assay type Confirmatory.</dd></dl>
+<tr><td>Dose response confirmation of uHTS of chemical inhibitors of both B-cell and T-cell specific antigen receptor-induced NF-kB activation in a Jurkat cell line using a luminescence assay</td><td>IC50 7.83 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/489004">pubchem.aid:489004</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Dose response confirmation of uHTS of chemical inhibitors of both B-cell and T-cell specific antigen receptor-induced NF-kB activation in a Jurkat cell line using a luminescence assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/489004">pubchem.aid:489004</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 489004, deposited by Burnham Center for Chemical Genomics; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>7.83</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>Dose response counterscreen of uHTS chemical inhibitors of both B-cell and T-cell specific antigen receptor-induced NF-kB activation in a HEK-293T cell line using a luminescence assay</td><td>IC50 7.42 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:489020</summary><dl><dt>assay</dt><dd>Dose response counterscreen of uHTS chemical inhibitors of both B-cell and T-cell specific antigen receptor-induced NF-kB activation in a HEK-293T cell line using a luminescence assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:489020</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 489020, deposited by Burnham Center for Chemical Genomics; assay type Confirmatory.</dd></dl>
+<tr><td>Dose response counterscreen of uHTS chemical inhibitors of both B-cell and T-cell specific antigen receptor-induced NF-kB activation in a HEK-293T cell line using a luminescence assay</td><td>IC50 7.42 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/489020">pubchem.aid:489020</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Dose response counterscreen of uHTS chemical inhibitors of both B-cell and T-cell specific antigen receptor-induced NF-kB activation in a HEK-293T cell line using a luminescence assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/489020">pubchem.aid:489020</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 489020, deposited by Burnham Center for Chemical Genomics; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>7.42</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>Dose response cytoxicity of uHTS chemical inhibitors of both B-cell and T-cell specific antigen receptor-induced NF-kB activation in a HEK-293T cell line using a luminescence assay</td><td>IC50 80 uM; INACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:489019</summary><dl><dt>assay</dt><dd>Dose response cytoxicity of uHTS chemical inhibitors of both B-cell and T-cell specific antigen receptor-induced NF-kB activation in a HEK-293T cell line using a luminescence assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:489019</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 489019, deposited by Burnham Center for Chemical Genomics; assay type Confirmatory.</dd></dl>
+<tr><td>Dose response cytoxicity of uHTS chemical inhibitors of both B-cell and T-cell specific antigen receptor-induced NF-kB activation in a HEK-293T cell line using a luminescence assay</td><td>IC50 80 uM; INACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/489019">pubchem.aid:489019</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Dose response cytoxicity of uHTS chemical inhibitors of both B-cell and T-cell specific antigen receptor-induced NF-kB activation in a HEK-293T cell line using a luminescence assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/489019">pubchem.aid:489019</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 489019, deposited by Burnham Center for Chemical Genomics; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>INACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>80.0</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Experimentally measured binding affinity data (Ki) for protein-ligand complexes derived from PDB</td><td>KI 120 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>PMID:12937174</summary><dl><dt>assay</dt><dd>Experimentally measured binding affinity data (Ki) for protein-ligand complexes derived from PDB</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:12937174</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 977610, deposited by Shanghai Institute of Organic Chemistry; assay type Other. Target accession 1PR5_A was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Experimentally measured binding affinity data (Ki) for protein-ligand complexes derived from PDB</td><td>KI 120 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/12937174/">PMID:12937174</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Experimentally measured binding affinity data (Ki) for protein-ligand complexes derived from PDB</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/12937174/">PMID:12937174</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 977610, deposited by Shanghai Institute of Organic Chemistry; assay type Other. Target accession 1PR5_A was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>KI</dd><dt>value</dt><dd>120.0</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>Fluorescence Cell-Based Dose Response to Characterize Compounds Cytotoxic to RAS-Dependent BJ-TERT-LT-ST Fibroblast</td><td>EC50 0.104 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2631</summary><dl><dt>assay</dt><dd>Fluorescence Cell-Based Dose Response to Characterize Compounds Cytotoxic to RAS-Dependent BJ-TERT-LT-ST Fibroblast</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2631</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2631, deposited by Broad Institute; assay type Confirmatory.</dd></dl>
+<tr><td>Fluorescence Cell-Based Dose Response to Characterize Compounds Cytotoxic to RAS-Dependent BJ-TERT-LT-ST Fibroblast</td><td>EC50 0.104 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2631">pubchem.aid:2631</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Fluorescence Cell-Based Dose Response to Characterize Compounds Cytotoxic to RAS-Dependent BJ-TERT-LT-ST Fibroblast</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2631">pubchem.aid:2631</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2631, deposited by Broad Institute; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>EC50</dd><dt>value</dt><dd>0.104</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>HEK293 Cytotoxicity Assay Measured in Cell-Based System Using Plate Reader - 7071-01_Antagonist_Dose_CherryPick_Activity</td><td>OTHER 1.6 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:743446</summary><dl><dt>assay</dt><dd>HEK293 Cytotoxicity Assay Measured in Cell-Based System Using Plate Reader - 7071-01_Antagonist_Dose_CherryPick_Activity</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:743446</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 743446, deposited by Broad Institute; assay type Confirmatory. Source endpoint: AC50.</dd></dl>
+<tr><td>HEK293 Cytotoxicity Assay Measured in Cell-Based System Using Plate Reader - 7071-01_Antagonist_Dose_CherryPick_Activity</td><td>OTHER 1.6 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/743446">pubchem.aid:743446</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>HEK293 Cytotoxicity Assay Measured in Cell-Based System Using Plate Reader - 7071-01_Antagonist_Dose_CherryPick_Activity</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/743446">pubchem.aid:743446</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 743446, deposited by Broad Institute; assay type Confirmatory. Source endpoint: AC50.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>1.6</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>HSF-1 induced GFP reporter and Doxycycline induced RFP reporter Measured in Cell-Based System Using Plate Reader - 2038-03_Inhibitor_DoseNoFile_CherryPick_Activity_Set3</td><td>OTHER 10.488 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:493083</summary><dl><dt>assay</dt><dd>HSF-1 induced GFP reporter and Doxycycline induced RFP reporter Measured in Cell-Based System Using Plate Reader - 2038-03_Inhibitor_DoseNoFile_CherryPick_Activity_Set3</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:493083</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 493083, deposited by Broad Institute; assay type Confirmatory. Source endpoint: AC50. Target accession AAH94064 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>HSF-1 induced GFP reporter and Doxycycline induced RFP reporter Measured in Cell-Based System Using Plate Reader - 2038-03_Inhibitor_DoseNoFile_CherryPick_Activity_Set3</td><td>OTHER 10.488 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/493083">pubchem.aid:493083</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>HSF-1 induced GFP reporter and Doxycycline induced RFP reporter Measured in Cell-Based System Using Plate Reader - 2038-03_Inhibitor_DoseNoFile_CherryPick_Activity_Set3</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/493083">pubchem.aid:493083</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 493083, deposited by Broad Institute; assay type Confirmatory. Source endpoint: AC50. Target accession AAH94064 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>10.488</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>HSF-1 induced GFP reporter and Doxycycline induced RFP reporter Measured in Cell-Based System Using Plate Reader - 2038-03_Inhibitor_DoseNoFile_CherryPick_Internal-Standard_Set3</td><td>OTHER 3.174 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:493085</summary><dl><dt>assay</dt><dd>HSF-1 induced GFP reporter and Doxycycline induced RFP reporter Measured in Cell-Based System Using Plate Reader - 2038-03_Inhibitor_DoseNoFile_CherryPick_Internal-Standard_Set3</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:493085</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 493085, deposited by Broad Institute; assay type Confirmatory. Source endpoint: AC50. Target accession AAH94064 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>HSF-1 induced GFP reporter and Doxycycline induced RFP reporter Measured in Cell-Based System Using Plate Reader - 2038-03_Inhibitor_DoseNoFile_CherryPick_Internal-Standard_Set3</td><td>OTHER 3.174 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/493085">pubchem.aid:493085</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>HSF-1 induced GFP reporter and Doxycycline induced RFP reporter Measured in Cell-Based System Using Plate Reader - 2038-03_Inhibitor_DoseNoFile_CherryPick_Internal-Standard_Set3</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/493085">pubchem.aid:493085</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 493085, deposited by Broad Institute; assay type Confirmatory. Source endpoint: AC50. Target accession AAH94064 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>3.174</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>HTS for Inhibitors of HP1-beta Chromodomain Interactions with Methylated Histone Tails</td><td>OTHER 11.2202 uM; INACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:540317</summary><dl><dt>assay</dt><dd>HTS for Inhibitors of HP1-beta Chromodomain Interactions with Methylated Histone Tails</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:540317</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 540317, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession NP_001120700 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>HTS for Inhibitors of HP1-beta Chromodomain Interactions with Methylated Histone Tails</td><td>OTHER 11.2202 uM; INACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/540317">pubchem.aid:540317</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>HTS for Inhibitors of HP1-beta Chromodomain Interactions with Methylated Histone Tails</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/540317">pubchem.aid:540317</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 540317, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession NP_001120700 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>INACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>11.2202</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>HepG2 Cytotoxicity Assay Measured in Cell-Based System Using Plate Reader - 7071-02_Antagonist_Dose_CherryPick_Activity</td><td>OTHER 0.25 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:743416</summary><dl><dt>assay</dt><dd>HepG2 Cytotoxicity Assay Measured in Cell-Based System Using Plate Reader - 7071-02_Antagonist_Dose_CherryPick_Activity</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:743416</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 743416, deposited by Broad Institute; assay type Confirmatory. Source endpoint: AC50.</dd></dl>
+<tr><td>HepG2 Cytotoxicity Assay Measured in Cell-Based System Using Plate Reader - 7071-02_Antagonist_Dose_CherryPick_Activity</td><td>OTHER 0.25 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/743416">pubchem.aid:743416</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>HepG2 Cytotoxicity Assay Measured in Cell-Based System Using Plate Reader - 7071-02_Antagonist_Dose_CherryPick_Activity</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/743416">pubchem.aid:743416</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 743416, deposited by Broad Institute; assay type Confirmatory. Source endpoint: AC50.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.25</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>High Throughput Screen to Identify Inhibitors of Mycobacterium tuberculosis H37Rv</td><td>IC50 2.438 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1626</summary><dl><dt>assay</dt><dd>High Throughput Screen to Identify Inhibitors of Mycobacterium tuberculosis H37Rv</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1626</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1626, deposited by SRMLSC; assay type Confirmatory.</dd></dl>
+<tr><td>High Throughput Screen to Identify Inhibitors of Mycobacterium tuberculosis H37Rv</td><td>IC50 2.438 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1626">pubchem.aid:1626</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>High Throughput Screen to Identify Inhibitors of Mycobacterium tuberculosis H37Rv</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1626">pubchem.aid:1626</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1626, deposited by SRMLSC; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>2.438</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>High Throughput Screening for Foot and Mouth Disease Virus Antivirals</td><td>OTHER 28.1838 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1159524</summary><dl><dt>assay</dt><dd>High Throughput Screening for Foot and Mouth Disease Virus Antivirals</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1159524</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1159524, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
+<tr><td>High Throughput Screening for Foot and Mouth Disease Virus Antivirals</td><td>OTHER 28.1838 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1159524">pubchem.aid:1159524</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>High Throughput Screening for Foot and Mouth Disease Virus Antivirals</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1159524">pubchem.aid:1159524</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1159524, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>28.1838</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>LGR2:Counterscreen with MC4R Measured in Cell-Based System Using Plate Reader - 7011-02_Antagonist_Dose_CherryPick_Activity</td><td>OTHER 3.98 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:743444</summary><dl><dt>assay</dt><dd>LGR2:Counterscreen with MC4R Measured in Cell-Based System Using Plate Reader - 7011-02_Antagonist_Dose_CherryPick_Activity</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:743444</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 743444, deposited by Broad Institute; assay type Confirmatory. Source endpoint: AC50. Target accession AAC47329 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>LGR2:Counterscreen with MC4R Measured in Cell-Based System Using Plate Reader - 7011-02_Antagonist_Dose_CherryPick_Activity</td><td>OTHER 3.98 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/743444">pubchem.aid:743444</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>LGR2:Counterscreen with MC4R Measured in Cell-Based System Using Plate Reader - 7011-02_Antagonist_Dose_CherryPick_Activity</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/743444">pubchem.aid:743444</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 743444, deposited by Broad Institute; assay type Confirmatory. Source endpoint: AC50. Target accession AAC47329 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>3.98</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Luminescence Cell-Based Dose Confimation HTS to Identify Inhibitors of Heat Shock Factor 1 (HSF1)</td><td>EC50 3.057 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2382</summary><dl><dt>assay</dt><dd>Luminescence Cell-Based Dose Confimation HTS to Identify Inhibitors of Heat Shock Factor 1 (HSF1)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2382</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2382, deposited by Broad Institute; assay type Confirmatory. Target accession AAH94064 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Luminescence Cell-Based Dose Confimation HTS to Identify Inhibitors of Heat Shock Factor 1 (HSF1)</td><td>EC50 3.057 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2382">pubchem.aid:2382</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Luminescence Cell-Based Dose Confimation HTS to Identify Inhibitors of Heat Shock Factor 1 (HSF1)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2382">pubchem.aid:2382</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2382, deposited by Broad Institute; assay type Confirmatory. Target accession AAH94064 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>EC50</dd><dt>value</dt><dd>3.057</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>Luminescence Cell-Based Dose Confimation HTS to Identify Inhibitors of of 5&#39;UTR Stem-Loop Driven Alpha-Synuclein mRNA Translation in H4 Neuroglioblastoma Cells</td><td>EC50 0.1 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1988</summary><dl><dt>assay</dt><dd>Luminescence Cell-Based Dose Confimation HTS to Identify Inhibitors of of 5&#39;UTR Stem-Loop Driven Alpha-Synuclein mRNA Translation in H4 Neuroglioblastoma Cells</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1988</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1988, deposited by Broad Institute; assay type Confirmatory.</dd></dl>
+<tr><td>Luminescence Cell-Based Dose Confimation HTS to Identify Inhibitors of of 5&#39;UTR Stem-Loop Driven Alpha-Synuclein mRNA Translation in H4 Neuroglioblastoma Cells</td><td>EC50 0.1 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1988">pubchem.aid:1988</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Luminescence Cell-Based Dose Confimation HTS to Identify Inhibitors of of 5&#39;UTR Stem-Loop Driven Alpha-Synuclein mRNA Translation in H4 Neuroglioblastoma Cells</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1988">pubchem.aid:1988</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1988, deposited by Broad Institute; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>EC50</dd><dt>value</dt><dd>0.1</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>Luminescence Cell-Based Dose Confirmation HTS to Identify Compounds Cytotoxic to BJeLR RAS-Dependent Fibroblast</td><td>EC50 5.45 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1936</summary><dl><dt>assay</dt><dd>Luminescence Cell-Based Dose Confirmation HTS to Identify Compounds Cytotoxic to BJeLR RAS-Dependent Fibroblast</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1936</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1936, deposited by Broad Institute; assay type Confirmatory. Source outcome: Inconclusive.</dd></dl>
+<tr><td>Luminescence Cell-Based Dose Confirmation HTS to Identify Compounds Cytotoxic to BJeLR RAS-Dependent Fibroblast</td><td>EC50 5.45 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1936">pubchem.aid:1936</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Luminescence Cell-Based Dose Confirmation HTS to Identify Compounds Cytotoxic to BJeLR RAS-Dependent Fibroblast</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1936">pubchem.aid:1936</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1936, deposited by Broad Institute; assay type Confirmatory. Source outcome: Inconclusive.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>EC50</dd><dt>value</dt><dd>5.45</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Luminescence Cell-Based Dose Response HTS to Identify Compounds Cytotoxic to BJ-TERT RAS-Independent Fibroblast</td><td>EC50 2.082 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1933</summary><dl><dt>assay</dt><dd>Luminescence Cell-Based Dose Response HTS to Identify Compounds Cytotoxic to BJ-TERT RAS-Independent Fibroblast</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1933</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1933, deposited by Broad Institute; assay type Confirmatory. Source outcome: Inconclusive.</dd></dl>
+<tr><td>Luminescence Cell-Based Dose Response HTS to Identify Compounds Cytotoxic to BJ-TERT RAS-Independent Fibroblast</td><td>EC50 2.082 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1933">pubchem.aid:1933</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Luminescence Cell-Based Dose Response HTS to Identify Compounds Cytotoxic to BJ-TERT RAS-Independent Fibroblast</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1933">pubchem.aid:1933</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1933, deposited by Broad Institute; assay type Confirmatory. Source outcome: Inconclusive.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>EC50</dd><dt>value</dt><dd>2.082</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Luminescence Cell-Based Dose Response HTS to Identify Compounds Cytotoxic to BJ-TERT-LT-ST RAS-Independent Fibroblast</td><td>EC50 5.044 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1935</summary><dl><dt>assay</dt><dd>Luminescence Cell-Based Dose Response HTS to Identify Compounds Cytotoxic to BJ-TERT-LT-ST RAS-Independent Fibroblast</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1935</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1935, deposited by Broad Institute; assay type Confirmatory.</dd></dl>
+<tr><td>Luminescence Cell-Based Dose Response HTS to Identify Compounds Cytotoxic to BJ-TERT-LT-ST RAS-Independent Fibroblast</td><td>EC50 5.044 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1935">pubchem.aid:1935</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Luminescence Cell-Based Dose Response HTS to Identify Compounds Cytotoxic to BJ-TERT-LT-ST RAS-Independent Fibroblast</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1935">pubchem.aid:1935</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1935, deposited by Broad Institute; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>EC50</dd><dt>value</dt><dd>5.044</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>Luminescence Cell-Based Dose Response HTS to Identify Compounds Cytotoxic to DRD Non-Viral Oncogenic Fibroblast</td><td>EC50 4.118 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1934</summary><dl><dt>assay</dt><dd>Luminescence Cell-Based Dose Response HTS to Identify Compounds Cytotoxic to DRD Non-Viral Oncogenic Fibroblast</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1934</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1934, deposited by Broad Institute; assay type Confirmatory.</dd></dl>
+<tr><td>Luminescence Cell-Based Dose Response HTS to Identify Compounds Cytotoxic to DRD Non-Viral Oncogenic Fibroblast</td><td>EC50 4.118 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1934">pubchem.aid:1934</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Luminescence Cell-Based Dose Response HTS to Identify Compounds Cytotoxic to DRD Non-Viral Oncogenic Fibroblast</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1934">pubchem.aid:1934</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1934, deposited by Broad Institute; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>EC50</dd><dt>value</dt><dd>4.118</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>Luminescence Cell-Based Dose Response HTS to Identify Inhibitors of Luciferase Translation or Activity in H4 Neuroglioblastoma Cells</td><td>EC50 0.1 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1990</summary><dl><dt>assay</dt><dd>Luminescence Cell-Based Dose Response HTS to Identify Inhibitors of Luciferase Translation or Activity in H4 Neuroglioblastoma Cells</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1990</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1990, deposited by Broad Institute; assay type Confirmatory.</dd></dl>
+<tr><td>Luminescence Cell-Based Dose Response HTS to Identify Inhibitors of Luciferase Translation or Activity in H4 Neuroglioblastoma Cells</td><td>EC50 0.1 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1990">pubchem.aid:1990</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Luminescence Cell-Based Dose Response HTS to Identify Inhibitors of Luciferase Translation or Activity in H4 Neuroglioblastoma Cells</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1990">pubchem.aid:1990</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1990, deposited by Broad Institute; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>EC50</dd><dt>value</dt><dd>0.1</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd><dt>notes</dt><dd>109 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but not written here.</dd></dl>
 </details></td></tr>
@@ -330,24 +332,34 @@ by the corpus tests.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=HDZZVAMISRMYHH-KCGFPETGSA-N">AntibioticMech (tubercidin) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=CHEBI%3A48267">MediaIngredientMech (CHEBI:48267) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A47759">TaxonMech: Streptomyces tubercidicus (NCBITaxon:47759) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0001937">PathwayMech (mibig:BGC0001937) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q=CHEBI%3A48267">MediaIngredientMech (CHEBI:48267) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A47759">TaxonMech: Streptomyces tubercidicus (NCBITaxon:47759) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0001937">PathwayMech (mibig:BGC0001937) &nearr;</a>
 </div>
 
 
+<h2 id="curation-history">Curation history <span class="tag">6</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-13T10:43:21Z">2026-10-13T10:43:21Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-10-13T07:37:11Z)</span><p>Seeded from the committed inventories and curation tables.</p></li>
+<li><time datetime="2026-09-26T20:31:52Z">2026-09-26T20:31:52Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added a BIOACTIVITY causal graph for tubercidin binding Escherichia coli purine nucleoside phosphorylase, grounded PubChem target 1PR5_A to UniProtKB:P0ABP9 via PDBe and SIFTS, confirmed PDB TBN matches tubercidin, and cited <a href="https://doi.org/10.1074/jbc.M304622200">DOI:10.1074/jbc.M304622200</a> and <a href="https://doi.org/10.2210/pdb1pr5/pdb">DOI:10.2210/pdb1pr5/pdb</a>.</p></li>
+<li><time datetime="2026-09-25T03:02:06Z">2026-09-25T03:02:06Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(3 identical runs since 2026-09-10T05:54:06Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
+
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0001937</td><td>MIBIG</td><td>4</td></tr>
-<tr><td class="mono">CHEBI:48267</td><td>CHEBI</td><td>3-star</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001937">BGC0001937</a></td><td>MIBIG</td><td>4</td></tr>
+<tr><td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_48267">CHEBI:48267</a></td><td>CHEBI</td><td>3-star</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/carbohydrates/tubercidin.yaml">data/natural_products/carbohydrates/tubercidin.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20CHEBI%3A48267&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Fcarbohydrates%2Ftubercidin.html">Report a problem with this record</a>: opens a GitHub issue that names CHEBI:48267 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Corpus as of 2026-10-23 22:53 UTC. Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 8e5d64d98cfd). Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

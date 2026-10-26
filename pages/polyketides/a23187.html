@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Polyketides</a> &middot; A23187</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>A23187</h1>
-<p class="sub"><span class="mono">naturalproductmech:mibig-18de581c96</span>
+<p class="sub"><span class="mono"><a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/polyketides/a23187.yaml">naturalproductmech:mibig-18de581c96</a></span>
   <span class="tag">MINTED</span>
   <span class="tag">SEEDED</span>
 </p>
 <div class="note"><strong>Grounding review:</strong> No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.</div><details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/a23187.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/a23187.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">HIYAVKIYRIFSCZ-CYEMHPAKSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">C[C@@H]1CC[C@]2([C@@H](C[C@H]([C@H](O2)[C@H](C)C(=O)C3=CC=CN3)C)C)O[C@@H]1CC4=NC5=C(O4)C=CC(=C5C(=O)O)NC</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">npatlas:NPA03386, npatlas:NPA003386</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://www.npatlas.org/explore/compounds/NPA03386">npatlas:NPA03386</a>, <a href="https://www.npatlas.org/explore/compounds/NPA003386">npatlas:NPA003386</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Polyketides</a> —
@@ -57,47 +59,47 @@ pks, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Streptomyces chartreusis NRRL 3882<br><span class="mono">NCBITaxon:1079985</span></td>
+  <td>Streptomyces chartreusis NRRL 3882<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1079985">NCBITaxon:1079985</a></span></td>
   <td><span class="tag causal">BGC_CHARACTERIZED</span></td>
-  <td class="mono">mibig:BGC0000032</td>
-  <td><span class="mono">DOI:10.1021/ja00813a047</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000032">mibig:BGC0000032</a></td>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja00813a047">DOI:10.1021/ja00813a047</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">3</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Streptomyces<br><span class="mono">NCBITaxon:1883</span></td>
+  <td>Streptomyces<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1883">NCBITaxon:1883</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/ACS.JNATPROD.6B00996</td>
+  <td class="mono"><a href="https://doi.org/10.1021/ACS.JNATPROD.6B00996">DOI:10.1021/ACS.JNATPROD.6B00996</a></td>
 </tr>
 <tr>
-  <td>Streptomyces<br><span class="mono">NCBITaxon:1883</span></td>
+  <td>Streptomyces<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1883">NCBITaxon:1883</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/JA00813A047</td>
+  <td class="mono"><a href="https://doi.org/10.1021/JA00813A047">DOI:10.1021/JA00813A047</a></td>
 </tr>
 <tr>
-  <td>Streptomyces chartreusis<br><span class="mono">NCBITaxon:1969</span></td>
+  <td>Streptomyces chartreusis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1969">NCBITaxon:1969</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1128/AAC.01130-10</td>
+  <td class="mono"><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0000032</td>
-  <td>Streptomyces chartreusis NRRL 3882<br><span class="mono">NCBITaxon:1079985</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000032">mibig:BGC0000032</a></td>
+  <td>Streptomyces chartreusis NRRL 3882<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1079985">NCBITaxon:1079985</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:HM452329.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/HM452329.1">genbank:HM452329.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -107,7 +109,7 @@ isolation report left it.</p>
 
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for A23187">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for A23187">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -140,17 +142,17 @@ isolation report left it.</p>
 </div>
 
 <h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 6 edges</span></h2>
-<p class="sub">Two sequence-verified native protein references, SchN1 and SchB2, are linked by explicit alias inferences to the 2011 calN1 and calB2 loci. Separate experimental edges describe internal neo-cassette replacement and loss of detectable calcimycin production in WQL2 and WQL4. These are whole-strain genetic effects, not direct enzyme reactions or proof against polar effects. No physical complex, CalN2 rescue transfer, CalA3 function or CalR3/CalT regulatory mechanism is asserted.</p><div class="scroll"><table>
+<p class="sub">Two sequence-verified native protein references, SchN1 and SchB2, are linked by explicit alias inferences to the 2011 calN1 and calB2 loci. Separate experimental edges describe internal neo-cassette replacement and loss of detectable calcimycin production in WQL2 and WQL4. These are whole-strain genetic effects, not direct enzyme reactions or proof against polar effects. No physical complex, CalN2 rescue transfer, CalA3 function or CalR3/CalT regulatory mechanism is asserted.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>SchN1 native reference</td>
   <td>is the native reference inferred for the product of</td>
   <td>calN1 (paper locus)</td>
   <td>The grounded node denotes the native reference protein. The paper locus remains separate; inferred alias correspondence is not an exact assayed-protein sequence claim.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AAC.01130-10<br>UniProtKB:F8QZR3<br>https://www.ncbi.nlm.nih.gov/protein/AEH42483.1<br>https://www.ncbi.nlm.nih.gov/nuccore/HM452329.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AAC.01130-10</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table 3 assigns calN1 a 379-aa product. The study deposits HM452329; its ordered gene position, compatible name, length and putative function map to SchN1. This alias mapping does not independently sequence the experimentally disrupted strain.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>UniProtKB:F8QZR3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Directly resolved unreviewed entry version 36, sequence version 1; SchN1, 379 aa. The HM452329 cross-reference names AEH42483.1. UniProt uses species taxon 1969; its nucleotide-sequence citation identifies strain NRRL 3882. No ortholog substituted.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AEH42483.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>snippet</dt><dd>acyl-CoA dehydrogenase</dd><dt>notes</dt><dd>AEH42483.1 is encoded by HM452329.1:32036..33175; native Streptomyces chartreusis NRRL 3882, taxon 1079985. Native DNA/code-11 translation, deposited CDS, separately retrieved GenPept and UniProt sequences agree exactly. Deposited product text is an annotation, not a direct substrate-specific catalytic experiment.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/HM452329.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Versioned native cluster sequence supporting the reference identity and gene order.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a><br><a href="https://www.uniprot.org/uniprotkb/F8QZR3/entry">UniProtKB:F8QZR3</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AEH42483.1">https://www.ncbi.nlm.nih.gov/protein/AEH42483.1</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/HM452329.1">https://www.ncbi.nlm.nih.gov/nuccore/HM452329.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table 3 assigns calN1 a 379-aa product. The study deposits HM452329; its ordered gene position, compatible name, length and putative function map to SchN1. This alias mapping does not independently sequence the experimentally disrupted strain.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/F8QZR3/entry">UniProtKB:F8QZR3</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Directly resolved unreviewed entry version 36, sequence version 1; SchN1, 379 aa. The HM452329 cross-reference names AEH42483.1. UniProt uses species taxon 1969; its nucleotide-sequence citation identifies strain NRRL 3882. No ortholog substituted.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AEH42483.1">https://www.ncbi.nlm.nih.gov/protein/AEH42483.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>snippet</dt><dd>acyl-CoA dehydrogenase</dd><dt>notes</dt><dd>AEH42483.1 is encoded by HM452329.1:32036..33175; native Streptomyces chartreusis NRRL 3882, taxon 1079985. Native DNA/code-11 translation, deposited CDS, separately retrieved GenPept and UniProt sequences agree exactly. Deposited product text is an annotation, not a direct substrate-specific catalytic experiment.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/HM452329.1">https://www.ncbi.nlm.nih.gov/nuccore/HM452329.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Versioned native cluster sequence supporting the reference identity and gene order.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -159,7 +161,7 @@ isolation report left it.</p>
   <td>was internally replaced with neo in</td>
   <td>WQL2 calN1::neo disruption</td>
   <td>The mutation concerns the encoding locus and could affect neighboring expression; it is not a selective perturbation of purified protein activity.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AAC.01130-10</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AAC.01130-10</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Methods and Figure 5 describe WQL2 from native NRRL 3882 using pJTU3175, double-crossover internal replacement and flanking-PCR confirmation. This was a resistance-cassette insertion, not a scarless deletion.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Methods and Figure 5 describe WQL2 from native NRRL 3882 using pJTU3175, double-crossover internal replacement and flanking-PCR confirmation. This was a resistance-cassette insertion, not a scarless deletion.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -168,7 +170,7 @@ isolation report left it.</p>
   <td>abolished detectable production of</td>
   <td>calcimycin (A23187)</td>
   <td>This is a whole-strain production phenotype, not purified-enzyme catalysis, sufficiency or proof that polar effects are excluded. The inspected study complements calN2 in WQL5, not this locus. Figure 1 identifies calcimycin as compound 1 (R1=NHCH3), distinct from cezomycin (R1=H). No cezomycin phenotype is adopted here.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AAC.01130-10</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AAC.01130-10</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Figure 6 compares WQL2 with native NRRL 3882 and a calcimycin standard. Methods describe SFM cultivation at 30 C for 6-10 days, methanol extraction and HPLC/MS; the displayed chromatograms use UV detection at 280 nm. The calcimycin peak is absent in the mutant under these conditions; no detection limit is supplied.</dd><dt>snippet</dt><dd>deletion of each of these three genes abolished the production of calcimycin</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Figure 6 compares WQL2 with native NRRL 3882 and a calcimycin standard. Methods describe SFM cultivation at 30 C for 6-10 days, methanol extraction and HPLC/MS; the displayed chromatograms use UV detection at 280 nm. The calcimycin peak is absent in the mutant under these conditions; no detection limit is supplied.</dd><dt>snippet</dt><dd>deletion of each of these three genes abolished the production of calcimycin</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -177,10 +179,10 @@ isolation report left it.</p>
   <td>is the native reference inferred for the product of</td>
   <td>calB2 (paper locus)</td>
   <td>The grounded node denotes the native reference protein. The paper locus remains separate; inferred alias correspondence is not an exact assayed-protein sequence claim.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AAC.01130-10<br>UniProtKB:F8QZR0<br>https://www.ncbi.nlm.nih.gov/protein/AEH42480.1<br>https://www.ncbi.nlm.nih.gov/nuccore/HM452329.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AAC.01130-10</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table 3 assigns calB2 a 226-aa product. The study deposits HM452329; its ordered gene position, compatible name, length and putative function map to SchB2. This alias mapping does not independently sequence the experimentally disrupted strain.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>UniProtKB:F8QZR0</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Directly resolved unreviewed entry version 29, sequence version 1; SchB2, 226 aa. The HM452329 cross-reference names AEH42480.1. UniProt uses species taxon 1969; its nucleotide-sequence citation identifies strain NRRL 3882. No ortholog substituted.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AEH42480.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>snippet</dt><dd>isochorismatase</dd><dt>notes</dt><dd>AEH42480.1 is encoded by complement(HM452329.1:28948..29628); native Streptomyces chartreusis NRRL 3882, taxon 1079985. Native DNA/code-11 translation, deposited CDS, separately retrieved GenPept and UniProt sequences agree exactly. Deposited product text is an annotation, not a direct substrate-specific catalytic experiment.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/HM452329.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Versioned native cluster sequence supporting the reference identity and gene order.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a><br><a href="https://www.uniprot.org/uniprotkb/F8QZR0/entry">UniProtKB:F8QZR0</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AEH42480.1">https://www.ncbi.nlm.nih.gov/protein/AEH42480.1</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/HM452329.1">https://www.ncbi.nlm.nih.gov/nuccore/HM452329.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table 3 assigns calB2 a 226-aa product. The study deposits HM452329; its ordered gene position, compatible name, length and putative function map to SchB2. This alias mapping does not independently sequence the experimentally disrupted strain.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/F8QZR0/entry">UniProtKB:F8QZR0</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Directly resolved unreviewed entry version 29, sequence version 1; SchB2, 226 aa. The HM452329 cross-reference names AEH42480.1. UniProt uses species taxon 1969; its nucleotide-sequence citation identifies strain NRRL 3882. No ortholog substituted.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AEH42480.1">https://www.ncbi.nlm.nih.gov/protein/AEH42480.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>snippet</dt><dd>isochorismatase</dd><dt>notes</dt><dd>AEH42480.1 is encoded by complement(HM452329.1:28948..29628); native Streptomyces chartreusis NRRL 3882, taxon 1079985. Native DNA/code-11 translation, deposited CDS, separately retrieved GenPept and UniProt sequences agree exactly. Deposited product text is an annotation, not a direct substrate-specific catalytic experiment.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/HM452329.1">https://www.ncbi.nlm.nih.gov/nuccore/HM452329.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Versioned native cluster sequence supporting the reference identity and gene order.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -189,7 +191,7 @@ isolation report left it.</p>
   <td>was internally replaced with neo in</td>
   <td>WQL4 calB2::neo disruption</td>
   <td>The mutation concerns the encoding locus and could affect neighboring expression; it is not a selective perturbation of purified protein activity.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AAC.01130-10</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AAC.01130-10</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Methods and Figure 5 describe WQL4 from native NRRL 3882 using pJTU3178, double-crossover internal replacement and flanking-PCR confirmation. This was a resistance-cassette insertion, not a scarless deletion.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Methods and Figure 5 describe WQL4 from native NRRL 3882 using pJTU3178, double-crossover internal replacement and flanking-PCR confirmation. This was a resistance-cassette insertion, not a scarless deletion.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -198,7 +200,7 @@ isolation report left it.</p>
   <td>abolished detectable production of</td>
   <td>calcimycin (A23187)</td>
   <td>This is a whole-strain production phenotype, not purified-enzyme catalysis, sufficiency or proof that polar effects are excluded. The inspected study complements calN2 in WQL5, not this locus. Figure 1 identifies calcimycin as compound 1 (R1=NHCH3), distinct from cezomycin (R1=H). No cezomycin phenotype is adopted here.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AAC.01130-10</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AAC.01130-10</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Figure 6 compares WQL4 with native NRRL 3882 and a calcimycin standard. Methods describe SFM cultivation at 30 C for 6-10 days, methanol extraction and HPLC/MS; the displayed chromatograms use UV detection at 280 nm. The calcimycin peak is absent in the mutant under these conditions; no detection limit is supplied.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Figure 6 compares WQL4 with native NRRL 3882 and a calcimycin standard. Methods describe SFM cultivation at 30 C for 6-10 days, methanol extraction and HPLC/MS; the displayed chromatograms use UV detection at 280 nm. The calcimycin peak is absent in the mutant under these conditions; no detection limit is supplied.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -206,17 +208,17 @@ isolation report left it.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 6 edges</span></h2>
-<p class="sub">Five sequence-verified native references map by explicit inference to the starter carrier and four PKSs in the 2011 proposed calcimycin assembly model. Module assignments and order are computational predictions, not individual catalytic experiments. Genomic order is not assembly order. This graph neither makes a physical-complex claim nor transfers the separate calN1/calB2 whole-strain phenotypes to these proteins.</p><div class="scroll"><table>
+<p class="sub">Five sequence-verified native references map by explicit inference to the starter carrier and four PKSs in the 2011 proposed calcimycin assembly model. Module assignments and order are computational predictions, not individual catalytic experiments. Genomic order is not assembly order. This graph neither makes a physical-complex claim nor transfers the separate calN1/calB2 whole-strain phenotypes to these proteins.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 2 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>SchN3 native reference</td>
   <td>is the native reference inferred for a proposed participant in</td>
   <td>2011 proposed carrier-PKS assembly</td>
   <td>The native protein node is not a purified, modified or engineered assay construct. This edge records a predicted contribution, not demonstrated catalysis, direct binding, a physical complex or an individual knockout phenotype.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AAC.01130-10<br>DOI:10.1128/AAC.01130-10<br>https://www.uniprot.org/uniprotkb/F8QZR5/entry<br>https://www.ncbi.nlm.nih.gov/protein/AEH42485.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AAC.01130-10</dd><dt>evidence type</dt><dd>COMPUTATIONAL_PREDICTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Figure7A-B proposes a carrier-bound pyrrole starter supplied to the first PKS module. Neither holo/loading state nor starter transfer is individually demonstrated here.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1128/AAC.01130-10</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table3 assigns CalN3 a 87-aa product. Its deposited HM452329 sequence position, name and annotation support mapping to SchN3. The cal/Sch alias and predicted role are not an assayed-protein identity claim.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/F8QZR5/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Unreviewed entry version28, sequence version1: SchN3, 87aa; explicit HM452329/AEH42485.1 cross-reference. UniProt species taxon1969 retains the NRRL3882 nucleotide-reference strain attribution.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AEH42485.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>snippet</dt><dd>proline carrier protein</dd><dt>notes</dt><dd>AEH42485.1, HM452329.1:34679..34942; NRRL3882, taxon1079985. Native DNA/code11/CDS, independently retrieved GenPept and direct UniProt sequences agree exactly. Deposited product text is an annotation, not a catalytic measurement.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a><br><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a><br><a href="https://www.uniprot.org/uniprotkb/F8QZR5/entry">https://www.uniprot.org/uniprotkb/F8QZR5/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AEH42485.1">https://www.ncbi.nlm.nih.gov/protein/AEH42485.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a></dd><dt>evidence type</dt><dd>COMPUTATIONAL_PREDICTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Figure7A-B proposes a carrier-bound pyrrole starter supplied to the first PKS module. Neither holo/loading state nor starter transfer is individually demonstrated here.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table3 assigns CalN3 a 87-aa product. Its deposited HM452329 sequence position, name and annotation support mapping to SchN3. The cal/Sch alias and predicted role are not an assayed-protein identity claim.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/F8QZR5/entry">https://www.uniprot.org/uniprotkb/F8QZR5/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Unreviewed entry version28, sequence version1: SchN3, 87aa; explicit HM452329/AEH42485.1 cross-reference. UniProt species taxon1969 retains the NRRL3882 nucleotide-reference strain attribution.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AEH42485.1">https://www.ncbi.nlm.nih.gov/protein/AEH42485.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>snippet</dt><dd>proline carrier protein</dd><dt>notes</dt><dd>AEH42485.1, HM452329.1:34679..34942; NRRL3882, taxon1079985. Native DNA/code11/CDS, independently retrieved GenPept and direct UniProt sequences agree exactly. Deposited product text is an annotation, not a catalytic measurement.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -225,10 +227,10 @@ by the corpus tests.</p>
   <td>is the native reference inferred for a proposed participant in</td>
   <td>2011 proposed carrier-PKS assembly</td>
   <td>The native protein node is not a purified, modified or engineered assay construct. This edge records a predicted contribution, not demonstrated catalysis, direct binding, a physical complex or an individual knockout phenotype.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AAC.01130-10<br>DOI:10.1128/AAC.01130-10<br>https://www.uniprot.org/uniprotkb/F8QZQ3/entry<br>https://www.ncbi.nlm.nih.gov/protein/AEH42473.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AAC.01130-10</dd><dt>evidence type</dt><dd>COMPUTATIONAL_PREDICTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table4 and Figure7B assign modules1a/1b to the first two elongations, both using methylmalonyl units, with ketoreduction in the second module. These are domain-based predictions.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1128/AAC.01130-10</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table3 assigns CalA1 a 2942-aa product. Its deposited HM452329 sequence position, name and annotation support mapping to SchA1. The cal/Sch alias and predicted role are not an assayed-protein identity claim.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/F8QZQ3/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Unreviewed entry version60, sequence version1: SchA1, 2942aa; explicit HM452329/AEH42473.1 cross-reference. UniProt species taxon1969 retains the NRRL3882 nucleotide-reference strain attribution.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AEH42473.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>snippet</dt><dd>polyketide synthase</dd><dt>notes</dt><dd>AEH42473.1, HM452329.1:5100..13928; NRRL3882, taxon1079985. Native DNA/code11/CDS, independently retrieved GenPept and direct UniProt sequences agree exactly. Deposited product text is an annotation, not a catalytic measurement.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a><br><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a><br><a href="https://www.uniprot.org/uniprotkb/F8QZQ3/entry">https://www.uniprot.org/uniprotkb/F8QZQ3/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AEH42473.1">https://www.ncbi.nlm.nih.gov/protein/AEH42473.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a></dd><dt>evidence type</dt><dd>COMPUTATIONAL_PREDICTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table4 and Figure7B assign modules1a/1b to the first two elongations, both using methylmalonyl units, with ketoreduction in the second module. These are domain-based predictions.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table3 assigns CalA1 a 2942-aa product. Its deposited HM452329 sequence position, name and annotation support mapping to SchA1. The cal/Sch alias and predicted role are not an assayed-protein identity claim.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/F8QZQ3/entry">https://www.uniprot.org/uniprotkb/F8QZQ3/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Unreviewed entry version60, sequence version1: SchA1, 2942aa; explicit HM452329/AEH42473.1 cross-reference. UniProt species taxon1969 retains the NRRL3882 nucleotide-reference strain attribution.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AEH42473.1">https://www.ncbi.nlm.nih.gov/protein/AEH42473.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>snippet</dt><dd>polyketide synthase</dd><dt>notes</dt><dd>AEH42473.1, HM452329.1:5100..13928; NRRL3882, taxon1079985. Native DNA/code11/CDS, independently retrieved GenPept and direct UniProt sequences agree exactly. Deposited product text is an annotation, not a catalytic measurement.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -237,10 +239,10 @@ by the corpus tests.</p>
   <td>is the native reference inferred for a proposed participant in</td>
   <td>2011 proposed carrier-PKS assembly</td>
   <td>The native protein node is not a purified, modified or engineered assay construct. This edge records a predicted contribution, not demonstrated catalysis, direct binding, a physical complex or an individual knockout phenotype.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AAC.01130-10<br>DOI:10.1128/AAC.01130-10<br>https://www.uniprot.org/uniprotkb/F8QZQ4/entry<br>https://www.ncbi.nlm.nih.gov/protein/AEH42474.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AAC.01130-10</dd><dt>evidence type</dt><dd>COMPUTATIONAL_PREDICTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table4 proposes module3 with a methylmalonyl extender and full beta-carbon reduction. Its placement relative to CalA5b follows the authors&#39; tentative assembly model, not genomic order.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1128/AAC.01130-10</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table3 assigns CalA2 a 2063-aa product. Its deposited HM452329 sequence position, name and annotation support mapping to SchA2. The cal/Sch alias and predicted role are not an assayed-protein identity claim.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/F8QZQ4/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Unreviewed entry version66, sequence version1: SchA2, 2063aa; explicit HM452329/AEH42474.1 cross-reference. UniProt species taxon1969 retains the NRRL3882 nucleotide-reference strain attribution.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AEH42474.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>snippet</dt><dd>polyketide synthase</dd><dt>notes</dt><dd>AEH42474.1, HM452329.1:14292..20483; NRRL3882, taxon1079985. Native DNA/code11/CDS, independently retrieved GenPept and direct UniProt sequences agree exactly. Deposited product text is an annotation, not a catalytic measurement.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a><br><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a><br><a href="https://www.uniprot.org/uniprotkb/F8QZQ4/entry">https://www.uniprot.org/uniprotkb/F8QZQ4/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AEH42474.1">https://www.ncbi.nlm.nih.gov/protein/AEH42474.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a></dd><dt>evidence type</dt><dd>COMPUTATIONAL_PREDICTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table4 proposes module3 with a methylmalonyl extender and full beta-carbon reduction. Its placement relative to CalA5b follows the authors&#39; tentative assembly model, not genomic order.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table3 assigns CalA2 a 2063-aa product. Its deposited HM452329 sequence position, name and annotation support mapping to SchA2. The cal/Sch alias and predicted role are not an assayed-protein identity claim.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/F8QZQ4/entry">https://www.uniprot.org/uniprotkb/F8QZQ4/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Unreviewed entry version66, sequence version1: SchA2, 2063aa; explicit HM452329/AEH42474.1 cross-reference. UniProt species taxon1969 retains the NRRL3882 nucleotide-reference strain attribution.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AEH42474.1">https://www.ncbi.nlm.nih.gov/protein/AEH42474.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>snippet</dt><dd>polyketide synthase</dd><dt>notes</dt><dd>AEH42474.1, HM452329.1:14292..20483; NRRL3882, taxon1079985. Native DNA/code11/CDS, independently retrieved GenPept and direct UniProt sequences agree exactly. Deposited product text is an annotation, not a catalytic measurement.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -249,10 +251,10 @@ by the corpus tests.</p>
   <td>is the native reference inferred for a proposed participant in</td>
   <td>2011 proposed carrier-PKS assembly</td>
   <td>The native protein node is not a purified, modified or engineered assay construct. This edge records a predicted contribution, not demonstrated catalysis, direct binding, a physical complex or an individual knockout phenotype.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AAC.01130-10<br>DOI:10.1128/AAC.01130-10<br>https://www.uniprot.org/uniprotkb/F8QZS1/entry<br>https://www.ncbi.nlm.nih.gov/protein/AEH42491.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AAC.01130-10</dd><dt>evidence type</dt><dd>COMPUTATIONAL_PREDICTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table4 proposes modules4/5: a malonyl extension with inactive DH/KR, then a methylmalonyl extension with full reduction. Assignment assumes CalA5b follows CalA5a; individual activities and handoffs are not demonstrated.</dd><dt>snippet</dt><dd>we tentatively named Cal5a PKS module 4</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1128/AAC.01130-10</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table3 assigns CalA5 a 3956-aa product. Its deposited HM452329 sequence position, name and annotation support mapping to SchA5. The cal/Sch alias and predicted role are not an assayed-protein identity claim.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/F8QZS1/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Unreviewed entry version66, sequence version1: SchA5, 3956aa; explicit HM452329/AEH42491.1 cross-reference. UniProt species taxon1969 retains the NRRL3882 nucleotide-reference strain attribution.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AEH42491.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>snippet</dt><dd>polyketide synthase</dd><dt>notes</dt><dd>AEH42491.1, complement(HM452329.1:48948..60818); NRRL3882, taxon1079985. Native DNA/code11/CDS, independently retrieved GenPept and direct UniProt sequences agree exactly. Deposited product text is an annotation, not a catalytic measurement.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a><br><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a><br><a href="https://www.uniprot.org/uniprotkb/F8QZS1/entry">https://www.uniprot.org/uniprotkb/F8QZS1/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AEH42491.1">https://www.ncbi.nlm.nih.gov/protein/AEH42491.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a></dd><dt>evidence type</dt><dd>COMPUTATIONAL_PREDICTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table4 proposes modules4/5: a malonyl extension with inactive DH/KR, then a methylmalonyl extension with full reduction. Assignment assumes CalA5b follows CalA5a; individual activities and handoffs are not demonstrated.</dd><dt>snippet</dt><dd>we tentatively named Cal5a PKS module 4</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table3 assigns CalA5 a 3956-aa product. Its deposited HM452329 sequence position, name and annotation support mapping to SchA5. The cal/Sch alias and predicted role are not an assayed-protein identity claim.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/F8QZS1/entry">https://www.uniprot.org/uniprotkb/F8QZS1/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Unreviewed entry version66, sequence version1: SchA5, 3956aa; explicit HM452329/AEH42491.1 cross-reference. UniProt species taxon1969 retains the NRRL3882 nucleotide-reference strain attribution.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AEH42491.1">https://www.ncbi.nlm.nih.gov/protein/AEH42491.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>snippet</dt><dd>polyketide synthase</dd><dt>notes</dt><dd>AEH42491.1, complement(HM452329.1:48948..60818); NRRL3882, taxon1079985. Native DNA/code11/CDS, independently retrieved GenPept and direct UniProt sequences agree exactly. Deposited product text is an annotation, not a catalytic measurement.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -261,10 +263,10 @@ by the corpus tests.</p>
   <td>is the native reference inferred for a proposed participant in</td>
   <td>2011 proposed carrier-PKS assembly</td>
   <td>The native protein node is not a purified, modified or engineered assay construct. This edge records a predicted contribution, not demonstrated catalysis, direct binding, a physical complex or an individual knockout phenotype.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AAC.01130-10<br>DOI:10.1128/AAC.01130-10<br>https://www.uniprot.org/uniprotkb/F8QZS0/entry<br>https://www.ncbi.nlm.nih.gov/protein/AEH42490.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AAC.01130-10</dd><dt>evidence type</dt><dd>COMPUTATIONAL_PREDICTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table4 proposes terminal module6, a malonyl extension with ketoreduction. Absence of a terminal TE domain does not identify the chain-release catalyst; no CalG release or amide-forming role is adopted.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1128/AAC.01130-10</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table3 assigns CalA4 a 1638-aa product. Its deposited HM452329 sequence position, name and annotation support mapping to SchA4. The cal/Sch alias and predicted role are not an assayed-protein identity claim.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/F8QZS0/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Unreviewed entry version60, sequence version1: SchA4, 1638aa; explicit HM452329/AEH42490.1 cross-reference. UniProt species taxon1969 retains the NRRL3882 nucleotide-reference strain attribution.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AEH42490.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>snippet</dt><dd>polyketide synthase</dd><dt>notes</dt><dd>AEH42490.1, complement(HM452329.1:44006..48922); NRRL3882, taxon1079985. Native DNA/code11/CDS, independently retrieved GenPept and direct UniProt sequences agree exactly. Deposited product text is an annotation, not a catalytic measurement.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a><br><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a><br><a href="https://www.uniprot.org/uniprotkb/F8QZS0/entry">https://www.uniprot.org/uniprotkb/F8QZS0/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AEH42490.1">https://www.ncbi.nlm.nih.gov/protein/AEH42490.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a></dd><dt>evidence type</dt><dd>COMPUTATIONAL_PREDICTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table4 proposes terminal module6, a malonyl extension with ketoreduction. Absence of a terminal TE domain does not identify the chain-release catalyst; no CalG release or amide-forming role is adopted.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table3 assigns CalA4 a 1638-aa product. Its deposited HM452329 sequence position, name and annotation support mapping to SchA4. The cal/Sch alias and predicted role are not an assayed-protein identity claim.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/F8QZS0/entry">https://www.uniprot.org/uniprotkb/F8QZS0/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Unreviewed entry version60, sequence version1: SchA4, 1638aa; explicit HM452329/AEH42490.1 cross-reference. UniProt species taxon1969 retains the NRRL3882 nucleotide-reference strain attribution.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AEH42490.1">https://www.ncbi.nlm.nih.gov/protein/AEH42490.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>snippet</dt><dd>polyketide synthase</dd><dt>notes</dt><dd>AEH42490.1, complement(HM452329.1:44006..48922); NRRL3882, taxon1079985. Native DNA/code11/CDS, independently retrieved GenPept and direct UniProt sequences agree exactly. Deposited product text is an annotation, not a catalytic measurement.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -273,7 +275,7 @@ by the corpus tests.</p>
   <td>is proposed to contribute the polyketide backbone of</td>
   <td>calcimycin (A23187)</td>
   <td>Backbone contribution is not complete calcimycin production or catalytic sufficiency. No intermediate chemical identifier, cezomycin equivalence, CalA3 inactivity/activity, chain-release, benzoxazole formation, spirocyclization or tailoring mechanism is asserted.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AAC.01130-10</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AAC.01130-10</dd><dt>evidence type</dt><dd>COMPUTATIONAL_PREDICTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table4 and Figure7B propose six elongations using four methylmalonyl and two malonyl units, in CalA1-CalA2-CalA5-CalA4 order after carrier-delivered starter loading. The order is a model, not a reconstituted assembly-line experiment.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a></dd><dt>evidence type</dt><dd>COMPUTATIONAL_PREDICTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table4 and Figure7B propose six elongations using four methylmalonyl and two malonyl units, in CalA1-CalA2-CalA5-CalA4 order after carrier-delivered starter loading. The order is a model, not a reconstituted assembly-line experiment.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -281,17 +283,17 @@ by the corpus tests.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">6 nodes, 5 edges</span></h2>
-<p class="sub">Two sequence-verified native references map by explicit inference to CalB3 and CalB4 in the 2011 proposed precursor pathway. The graph separates terminal DHHA aromatization from DAHP entry into a multistep pathway. All functional edges are predictions; no individual activity assay, physical complex or transfer of the separate calB2 knockout phenotype is asserted.</p><div class="scroll"><table>
+<p class="sub">Two sequence-verified native references map by explicit inference to CalB3 and CalB4 in the 2011 proposed precursor pathway. The graph separates terminal DHHA aromatization from DAHP entry into a multistep pathway. All functional edges are predictions; no individual activity assay, physical complex or transfer of the separate calB2 knockout phenotype is asserted.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 3 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>SchB3 native reference</td>
   <td>is the native reference inferred for the proposed catalyst of</td>
   <td>Proposed DHHA aromatization</td>
   <td>The grounded node denotes the native reference, not a purified or engineered construct. The proposed role is not measured catalysis, a physical complex or an individual knockout phenotype. The separate calB2 disruption result is not transferred to this protein.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AAC.01130-10<br>DOI:10.1128/AAC.01130-10<br>https://www.uniprot.org/uniprotkb/F8QZR1/entry<br>https://www.ncbi.nlm.nih.gov/protein/AEH42481.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AAC.01130-10</dd><dt>evidence type</dt><dd>COMPUTATIONAL_PREDICTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Figure 7C assigns CalB3 to aromatization of trans-2,3-dihydro-3-hydroxyanthranilic acid (DHHA) to 3-hydroxyanthranilic acid (HA). Table 3 gives a DhbA-like dehydrogenase annotation. This is a homology-based substrate assignment, not a direct substrate-specific assay.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1128/AAC.01130-10</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table 3 assigns calB3 a 270-aa product. The cited HM452329 deposit&#39;s ordered locus, compatible name, length and annotation support mapping to SchB3. The cal/Sch correspondence is an inferred alias, not independently sequenced assay-protein identity.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/F8QZR1/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Unreviewed entry version 39, sequence version 1; SchB3, 270 aa; HM452329 cross-reference explicitly names AEH42481.1. Species taxon 1969 is accompanied by the NRRL 3882 nucleotide-reference strain attribution.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AEH42481.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>snippet</dt><dd>2,3-dihydroxybenzoate-2,3-dehydrogenase</dd><dt>notes</dt><dd>AEH42481.1, complement(HM452329.1:29661..30473); native NRRL 3882, taxon 1079985. Native DNA/code-11/CDS, independently retrieved GenPept and direct UniProt sequences agree. Deposited product text is an annotation, not an experimentally established reaction.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a><br><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a><br><a href="https://www.uniprot.org/uniprotkb/F8QZR1/entry">https://www.uniprot.org/uniprotkb/F8QZR1/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AEH42481.1">https://www.ncbi.nlm.nih.gov/protein/AEH42481.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a></dd><dt>evidence type</dt><dd>COMPUTATIONAL_PREDICTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Figure 7C assigns CalB3 to aromatization of trans-2,3-dihydro-3-hydroxyanthranilic acid (DHHA) to 3-hydroxyanthranilic acid (HA). Table 3 gives a DhbA-like dehydrogenase annotation. This is a homology-based substrate assignment, not a direct substrate-specific assay.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table 3 assigns calB3 a 270-aa product. The cited HM452329 deposit&#39;s ordered locus, compatible name, length and annotation support mapping to SchB3. The cal/Sch correspondence is an inferred alias, not independently sequenced assay-protein identity.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/F8QZR1/entry">https://www.uniprot.org/uniprotkb/F8QZR1/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Unreviewed entry version 39, sequence version 1; SchB3, 270 aa; HM452329 cross-reference explicitly names AEH42481.1. Species taxon 1969 is accompanied by the NRRL 3882 nucleotide-reference strain attribution.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AEH42481.1">https://www.ncbi.nlm.nih.gov/protein/AEH42481.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>snippet</dt><dd>2,3-dihydroxybenzoate-2,3-dehydrogenase</dd><dt>notes</dt><dd>AEH42481.1, complement(HM452329.1:29661..30473); native NRRL 3882, taxon 1079985. Native DNA/code-11/CDS, independently retrieved GenPept and direct UniProt sequences agree. Deposited product text is an annotation, not an experimentally established reaction.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -300,10 +302,10 @@ by the corpus tests.</p>
   <td>is the native reference inferred for the proposed catalyst of</td>
   <td>Proposed DAHP entry reaction</td>
   <td>The grounded node denotes the native reference, not a purified or engineered construct. The proposed role is not measured catalysis, a physical complex or an individual knockout phenotype. The separate calB2 disruption result is not transferred to this protein.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AAC.01130-10<br>DOI:10.1128/AAC.01130-10<br>https://www.uniprot.org/uniprotkb/F8QZR2/entry<br>https://www.ncbi.nlm.nih.gov/protein/AEH42482.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AAC.01130-10</dd><dt>evidence type</dt><dd>COMPUTATIONAL_PREDICTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Figure 7C assigns CalB4 to conversion of phosphoenolpyruvate (PEP) and erythrose-4-phosphate (E4P) to DAHP. Table 3 gives a PhzC-like DAHP-synthase annotation. CalB4 is not assigned all intervening reactions to chorismate or HA.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1128/AAC.01130-10</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table 3 assigns calB4 a 404-aa product. The cited HM452329 deposit&#39;s ordered locus, compatible name, length and annotation support mapping to SchB4. The cal/Sch correspondence is an inferred alias, not independently sequenced assay-protein identity.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/F8QZR2/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Unreviewed entry version 29, sequence version 1; SchB4, 404 aa; HM452329 cross-reference explicitly names AEH42482.1. Species taxon 1969 is accompanied by the NRRL 3882 nucleotide-reference strain attribution.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AEH42482.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>snippet</dt><dd>3-deoxy-D-arabino-heptulosonate 7-phosphate</dd><dt>notes</dt><dd>AEH42482.1, complement(HM452329.1:30511..31725); native NRRL 3882, taxon 1079985. Native DNA/code-11/CDS, independently retrieved GenPept and direct UniProt sequences agree. Deposited product text is an annotation, not an experimentally established reaction.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a><br><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a><br><a href="https://www.uniprot.org/uniprotkb/F8QZR2/entry">https://www.uniprot.org/uniprotkb/F8QZR2/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AEH42482.1">https://www.ncbi.nlm.nih.gov/protein/AEH42482.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a></dd><dt>evidence type</dt><dd>COMPUTATIONAL_PREDICTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Figure 7C assigns CalB4 to conversion of phosphoenolpyruvate (PEP) and erythrose-4-phosphate (E4P) to DAHP. Table 3 gives a PhzC-like DAHP-synthase annotation. CalB4 is not assigned all intervening reactions to chorismate or HA.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table 3 assigns calB4 a 404-aa product. The cited HM452329 deposit&#39;s ordered locus, compatible name, length and annotation support mapping to SchB4. The cal/Sch correspondence is an inferred alias, not independently sequenced assay-protein identity.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/F8QZR2/entry">https://www.uniprot.org/uniprotkb/F8QZR2/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Unreviewed entry version 29, sequence version 1; SchB4, 404 aa; HM452329 cross-reference explicitly names AEH42482.1. Species taxon 1969 is accompanied by the NRRL 3882 nucleotide-reference strain attribution.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AEH42482.1">https://www.ncbi.nlm.nih.gov/protein/AEH42482.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>snippet</dt><dd>3-deoxy-D-arabino-heptulosonate 7-phosphate</dd><dt>notes</dt><dd>AEH42482.1, complement(HM452329.1:30511..31725); native NRRL 3882, taxon 1079985. Native DNA/code-11/CDS, independently retrieved GenPept and direct UniProt sequences agree. Deposited product text is an annotation, not an experimentally established reaction.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -312,7 +314,7 @@ by the corpus tests.</p>
   <td>is proposed as the terminal reaction in</td>
   <td>Proposed 3-hydroxyanthranilate supply</td>
   <td>No cofactor specificity, kinetic value, physiological flux or direct enzyme assay is asserted.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AAC.01130-10</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AAC.01130-10</dd><dt>evidence type</dt><dd>COMPUTATIONAL_PREDICTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Figure 7C places CalB3 on the DHHA-to-HA arrow. This is the terminal reaction of the drawn precursor-supply model, not the terminal reaction of calcimycin biosynthesis.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a></dd><dt>evidence type</dt><dd>COMPUTATIONAL_PREDICTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Figure 7C places CalB3 on the DHHA-to-HA arrow. This is the terminal reaction of the drawn precursor-supply model, not the terminal reaction of calcimycin biosynthesis.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -321,7 +323,7 @@ by the corpus tests.</p>
   <td>is proposed to feed the multistep pathway for</td>
   <td>Proposed 3-hydroxyanthranilate supply</td>
   <td>This is an indirect multistep contribution, not direct CalB4 production of chorismate or HA. No additional enzymes are invented for unlabeled steps; the CalB1 reference-length discrepancy remains unresolved.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AAC.01130-10</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AAC.01130-10</dd><dt>evidence type</dt><dd>COMPUTATIONAL_PREDICTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Figure 7C places DAHP upstream of chorismate, followed by the proposed CalB1/CalB2/CalB3 route to HA. Its intervening unlabeled arrows are not assigned to genes in the depicted cluster.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a></dd><dt>evidence type</dt><dd>COMPUTATIONAL_PREDICTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Figure 7C places DAHP upstream of chorismate, followed by the proposed CalB1/CalB2/CalB3 route to HA. Its intervening unlabeled arrows are not assigned to genes in the depicted cluster.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -330,7 +332,7 @@ by the corpus tests.</p>
   <td>is proposed to provide the benzoxazole building block for</td>
   <td>calcimycin (A23187)</td>
   <td>Precursor supply is not benzoxazole ring closure, attachment to the PKS chain or sufficiency for final-product formation. No exact intermediate chemical identifier, cezomycin equivalence, CalG termination or downstream tailoring step is adopted.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AAC.01130-10</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AAC.01130-10</dd><dt>evidence type</dt><dd>COMPUTATIONAL_PREDICTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The 2011 prediction section and Figure 7C place the CalB route upstream of the benzoxazole portion of calcimycin. The older feeding experiments cited in its Discussion are not recast as directly inspected experiments on these two proteins.</dd><dt>snippet</dt><dd>The proposed gene assignment for the pathway</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a></dd><dt>evidence type</dt><dd>COMPUTATIONAL_PREDICTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The 2011 prediction section and Figure 7C place the CalB route upstream of the benzoxazole portion of calcimycin. The older feeding experiments cited in its Discussion are not recast as directly inspected experiments on these two proteins.</dd><dt>snippet</dt><dd>The proposed gene assignment for the pathway</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -338,17 +340,17 @@ by the corpus tests.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">8 nodes, 10 edges</span></h2>
-<p class="sub">Native SchM grounding, cassette genetics/complementation and recombinant His6-CalM methylation are separate claims. Main-text experimental results are adopted with explicit construct and figure/SI limits; the N-demethyl substrate remains chemically ungrounded.</p><div class="scroll"><table>
+<p class="sub">Native SchM grounding, cassette genetics/complementation and recombinant His6-CalM methylation are separate claims. Main-text experimental results are adopted with explicit construct and figure/SI limits; the N-demethyl substrate remains chemically ungrounded.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 4 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>SchM native reference</td>
   <td>is the native reference inferred for the product of</td>
   <td>calM (paper locus)</td>
   <td>Native reference identity is separate from the tagged assay protein. No exact full fusion sequence, physiological complex or untagged-native activity measurement is asserted.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AAC.01130-10<br>DOI:10.1016/j.biochi.2013.03.014<br>https://www.uniprot.org/uniprotkb/F8QZQ7/entry<br>https://www.ncbi.nlm.nih.gov/protein/AEH42477.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AAC.01130-10</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table3 assigns calM a 229-aa product. Its ordered HM452329 locus, length and compatible annotation support the inferred alias SchM.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1016/j.biochi.2013.03.014</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The 2013 study cites HM452329 and a229-aa CalM. Both printed pJTU3182 cloning primers uniquely match native SchM CDS ends. This supports the alias and template, not an independently sequenced complete plasmid or vector-derived fusion.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/F8QZQ7/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Directly resolved unreviewed entry version33, sequence version1; SchM,229aa. Species taxon1969 retains the NRRL3882 nucleotide-reference strain attribution and HM452329/AEH42477.1 cross-reference.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AEH42477.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>AEH42477.1,complement(HM452329.1:22502..23191); native NRRL3882,taxon1079985. Native DNA/code11/CDS, independent GenPept and current direct UniProt sequences agree. Product text is a deposited annotation.</dd><dt>snippet</dt><dd>N-methyl-transferase</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a><br><a href="https://doi.org/10.1016/j.biochi.2013.03.014">DOI:10.1016/j.biochi.2013.03.014</a><br><a href="https://www.uniprot.org/uniprotkb/F8QZQ7/entry">https://www.uniprot.org/uniprotkb/F8QZQ7/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AEH42477.1">https://www.ncbi.nlm.nih.gov/protein/AEH42477.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table3 assigns calM a 229-aa product. Its ordered HM452329 locus, length and compatible annotation support the inferred alias SchM.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.biochi.2013.03.014">DOI:10.1016/j.biochi.2013.03.014</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The 2013 study cites HM452329 and a229-aa CalM. Both printed pJTU3182 cloning primers uniquely match native SchM CDS ends. This supports the alias and template, not an independently sequenced complete plasmid or vector-derived fusion.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/F8QZQ7/entry">https://www.uniprot.org/uniprotkb/F8QZQ7/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Directly resolved unreviewed entry version33, sequence version1; SchM,229aa. Species taxon1969 retains the NRRL3882 nucleotide-reference strain attribution and HM452329/AEH42477.1 cross-reference.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AEH42477.1">https://www.ncbi.nlm.nih.gov/protein/AEH42477.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>AEH42477.1,complement(HM452329.1:22502..23191); native NRRL3882,taxon1079985. Native DNA/code11/CDS, independent GenPept and current direct UniProt sequences agree. Product text is a deposited annotation.</dd><dt>snippet</dt><dd>N-methyl-transferase</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -357,7 +359,7 @@ by the corpus tests.</p>
   <td>was replaced with neo in</td>
   <td>WQL3 calM::neo disruption</td>
   <td>A whole-locus perturbation is not a selective inhibition of purified CalM and does not by itself exclude polar effects.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.biochi.2013.03.014</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.biochi.2013.03.014</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Methods2.2 describes pJTU3179, double-crossover selection and PCR confirmation of WQL3. This was resistance-cassette replacement, not scarless deletion.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.biochi.2013.03.014">DOI:10.1016/j.biochi.2013.03.014</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.biochi.2013.03.014">DOI:10.1016/j.biochi.2013.03.014</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Methods2.2 describes pJTU3179, double-crossover selection and PCR confirmation of WQL3. This was resistance-cassette replacement, not scarless deletion.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -366,7 +368,7 @@ by the corpus tests.</p>
   <td>lost detectable production of</td>
   <td>calcimycin (A23187)</td>
   <td>Reported main-text phenotype; figure pixels and detection limits were not independently inspected. No numerical zero yield asserted.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.biochi.2013.03.014</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.biochi.2013.03.014</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Methods2.3/Results3.3 report HPLC/MS after solid SFM cultivation at30C for6-10days, with a Sigma calcimycin standard. WQL3 accumulated the N-demethyl product instead of calcimycin.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.biochi.2013.03.014">DOI:10.1016/j.biochi.2013.03.014</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.biochi.2013.03.014">DOI:10.1016/j.biochi.2013.03.014</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Methods2.3/Results3.3 report HPLC/MS after solid SFM cultivation at30C for6-10days, with a Sigma calcimycin standard. WQL3 accumulated the N-demethyl product instead of calcimycin.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -375,7 +377,7 @@ by the corpus tests.</p>
   <td>accumulated the product assigned as</td>
   <td>N-demethylcalcimycin (paper substrate)</td>
   <td>Paper-assigned chemical identity only. Supplementary spectra are uninspected; no exact chemical identifier, atom map or equivalence to cezomycin is adopted.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.biochi.2013.03.014</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.biochi.2013.03.014</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Results3.2-3.3 assign the accumulated compound by LC/MS and report supporting NMR in the supplement.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.biochi.2013.03.014">DOI:10.1016/j.biochi.2013.03.014</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.biochi.2013.03.014">DOI:10.1016/j.biochi.2013.03.014</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Results3.2-3.3 assign the accumulated compound by LC/MS and report supporting NMR in the supplement.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -384,7 +386,7 @@ by the corpus tests.</p>
   <td>was carried on the complementation fragment supplied in</td>
   <td>WQL6 calM-fragment complementation</td>
   <td>Fragment boundaries and complete construct sequence were not independently checked. This is complementation, not scarless repair or proof that no adjacent sequence contributed.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.biochi.2013.03.014</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.biochi.2013.03.014</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Methods2.2 describes a BamHI fragment from pJTU3166 carrying calM in pSET152-derived pJTU3187, introduced into WQL3. Results3.3 describes its natural promoter.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.biochi.2013.03.014">DOI:10.1016/j.biochi.2013.03.014</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.biochi.2013.03.014">DOI:10.1016/j.biochi.2013.03.014</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Methods2.2 describes a BamHI fragment from pJTU3166 carrying calM in pSET152-derived pJTU3187, introduced into WQL3. Results3.3 describes its natural promoter.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -393,7 +395,7 @@ by the corpus tests.</p>
   <td>restored reported production of</td>
   <td>calcimycin (A23187)</td>
   <td>Restored detection is not a measured equality of yield, expression level or pathway flux.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.biochi.2013.03.014</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.biochi.2013.03.014</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Results3.3 reports calcimycin production in WQL6 and LC/MS confirmation of the HPLC peak.</dd><dt>snippet</dt><dd>The resulting strain, WQL6, produced calcimycin.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.biochi.2013.03.014">DOI:10.1016/j.biochi.2013.03.014</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.biochi.2013.03.014">DOI:10.1016/j.biochi.2013.03.014</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Results3.3 reports calcimycin production in WQL6 and LC/MS confirmation of the HPLC peak.</dd><dt>snippet</dt><dd>The resulting strain, WQL6, produced calcimycin.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -402,7 +404,7 @@ by the corpus tests.</p>
   <td>provides the native sequence reference inferred for</td>
   <td>His6-CalM (paper construct)</td>
   <td>Native reference identity is separate from the tagged assay protein. No exact full fusion sequence, physiological complex or untagged-native activity measurement is asserted.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.biochi.2013.03.014</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.biochi.2013.03.014</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Methods2.4 clones the genomic calM insert into pET28a at BamHI/HindIII as pJTU3182, expressed in E.coli BL21(DE3)/pLysE and purified by nickel affinity. Printed primer ends match SchM; vector-derived residues remain unverified.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.biochi.2013.03.014">DOI:10.1016/j.biochi.2013.03.014</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.biochi.2013.03.014">DOI:10.1016/j.biochi.2013.03.014</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Methods2.4 clones the genomic calM insert into pET28a at BamHI/HindIII as pJTU3182, expressed in E.coli BL21(DE3)/pLysE and purified by nickel affinity. Printed primer ends match SchM; vector-derived residues remain unverified.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -411,7 +413,7 @@ by the corpus tests.</p>
   <td>catalyzed N-methylation in</td>
   <td>SAM-dependent CalM assay</td>
   <td>This edge concerns the reported purified tagged construct and assay, not an independently sequenced native enzyme. No kinetics, substrate breadth or physiological sufficiency claimed.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.biochi.2013.03.014</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.biochi.2013.03.014</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Methods2.6/Results3.4:50uL,75mM Tris-HCl pH8.0,1mM SAM,2%DMSO,0.5mM substrate and1.6uM CalM;37C,15min, methanol quench and HPLC/MS. The reported negative control omitted SAM.</dd><dt>snippet</dt><dd>CalM is indeed an N-methyltransferase</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.biochi.2013.03.014">DOI:10.1016/j.biochi.2013.03.014</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.biochi.2013.03.014">DOI:10.1016/j.biochi.2013.03.014</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Methods2.6/Results3.4:50uL,75mM Tris-HCl pH8.0,1mM SAM,2%DMSO,0.5mM substrate and1.6uM CalM;37C,15min, methanol quench and HPLC/MS. The reported negative control omitted SAM.</dd><dt>snippet</dt><dd>CalM is indeed an N-methyltransferase</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -420,7 +422,7 @@ by the corpus tests.</p>
   <td>was the reported substrate in</td>
   <td>SAM-dependent CalM assay</td>
   <td>Retain the ungrounded paper substrate; do not substitute cezomycin or silently resolve its distinct stereochemical questions.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.biochi.2013.03.014</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.biochi.2013.03.014</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Methods2.5-2.6 uses the isolated WQL3-derived N-demethyl compound in the recombinant enzyme assay.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.biochi.2013.03.014">DOI:10.1016/j.biochi.2013.03.014</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.biochi.2013.03.014">DOI:10.1016/j.biochi.2013.03.014</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Methods2.5-2.6 uses the isolated WQL3-derived N-demethyl compound in the recombinant enzyme assay.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -429,7 +431,7 @@ by the corpus tests.</p>
   <td>formed a product assigned as</td>
   <td>calcimycin (A23187)</td>
   <td>Reported main-text assay outcome, not a new inspection of Figure5 or supplementary spectra. No upstream ring-closure, activation or amination step is inferred.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.biochi.2013.03.014</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.biochi.2013.03.014</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Results3.4 reports calcimycin formation confirmed by mass spectrometry, contrasting with the no-SAM control.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.biochi.2013.03.014">DOI:10.1016/j.biochi.2013.03.014</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.biochi.2013.03.014">DOI:10.1016/j.biochi.2013.03.014</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Results3.4 reports calcimycin formation confirmed by mass spectrometry, contrasting with the no-SAM control.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -437,17 +439,17 @@ by the corpus tests.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 5 edges</span></h2>
-<p class="sub">Sequence-verified native SchR3 is mapped by inference to the paper locus. Separate experimental edges describe cassette disruption, increased calcimycin production and complementation. No assay construct, export activity or small-molecule mechanism is inferred from this phenotype alone.</p><div class="scroll"><table>
+<p class="sub">Sequence-verified native SchR3 is mapped by inference to the paper locus. Separate experimental edges describe cassette disruption, increased calcimycin production and complementation. No assay construct, export activity or small-molecule mechanism is inferred from this phenotype alone.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 5 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>SchR3 native reference</td>
   <td>is the native reference inferred for the product of</td>
   <td>calR3 (paper locus)</td>
   <td>Native reference identity is separate from the tagged assay protein. No exact full fusion sequence, physiological complex or untagged-native activity measurement is asserted.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AAC.01130-10<br>DOI:10.3389/fmicb.2017.02371<br>https://www.uniprot.org/uniprotkb/F8QZR9/entry<br>https://www.ncbi.nlm.nih.gov/protein/AEH42489.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AAC.01130-10</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table3 assigns calR3 a 211-aa product. Its ordered HM452329 locus, length and compatible annotation support the inferred alias SchR3.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.3389/fmicb.2017.02371</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The 2017 study cites HM452329 and NRRL3882, targeting the calR3/calT neighborhood. Ordered loci and the 2011 length assignments support cal/Sch aliases. Held primer/figure details do not establish complete mutant, probe or recombinant construct sequences.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/F8QZR9/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Directly resolved unreviewed entry version51, sequence version1; SchR3,211aa. Species taxon1969 retains the NRRL3882 nucleotide-reference strain attribution and HM452329/AEH42489.1 cross-reference.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AEH42489.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>AEH42489.1,HM452329.1:43244..43879; native NRRL3882,taxon1079985. Native DNA/code11/CDS, independent GenPept and current direct UniProt sequences agree. Product text is a deposited annotation.</dd><dt>snippet</dt><dd>TetR family regulator</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a><br><a href="https://doi.org/10.3389/fmicb.2017.02371">DOI:10.3389/fmicb.2017.02371</a><br><a href="https://www.uniprot.org/uniprotkb/F8QZR9/entry">https://www.uniprot.org/uniprotkb/F8QZR9/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AEH42489.1">https://www.ncbi.nlm.nih.gov/protein/AEH42489.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table3 assigns calR3 a 211-aa product. Its ordered HM452329 locus, length and compatible annotation support the inferred alias SchR3.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.3389/fmicb.2017.02371">DOI:10.3389/fmicb.2017.02371</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The 2017 study cites HM452329 and NRRL3882, targeting the calR3/calT neighborhood. Ordered loci and the 2011 length assignments support cal/Sch aliases. Held primer/figure details do not establish complete mutant, probe or recombinant construct sequences.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/F8QZR9/entry">https://www.uniprot.org/uniprotkb/F8QZR9/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Directly resolved unreviewed entry version51, sequence version1; SchR3,211aa. Species taxon1969 retains the NRRL3882 nucleotide-reference strain attribution and HM452329/AEH42489.1 cross-reference.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AEH42489.1">https://www.ncbi.nlm.nih.gov/protein/AEH42489.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>AEH42489.1,HM452329.1:43244..43879; native NRRL3882,taxon1079985. Native DNA/code11/CDS, independent GenPept and current direct UniProt sequences agree. Product text is a deposited annotation.</dd><dt>snippet</dt><dd>TetR family regulator</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -456,7 +458,7 @@ by the corpus tests.</p>
   <td>was internally replaced by aac(3)IV-oriT in</td>
   <td>GLX26 calR3 cassette disruption</td>
   <td>Cassette disruption, not scarless deletion. Exact endpoints remain ungrounded because primer sequences and figure pixels were not inspected.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.3389/fmicb.2017.02371</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.3389/fmicb.2017.02371</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Methods/Results describe pJTU3791 and a455bp internal replacement, double-crossover selection and PCR confirmation. The reported PCR products are714bp for WT and1643bp for GLX26.</dd><dt>snippet</dt><dd>an internal 455-bp DNA sequence in calR3 was replaced</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.3389/fmicb.2017.02371">DOI:10.3389/fmicb.2017.02371</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.3389/fmicb.2017.02371">DOI:10.3389/fmicb.2017.02371</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Methods/Results describe pJTU3791 and a455bp internal replacement, double-crossover selection and PCR confirmation. The reported PCR products are714bp for WT and1643bp for GLX26.</dd><dt>snippet</dt><dd>an internal 455-bp DNA sequence in calR3 was replaced</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -465,7 +467,7 @@ by the corpus tests.</p>
   <td>increased reported production of</td>
   <td>calcimycin (A23187)</td>
   <td>Whole-strain production phenotype, not direct CalT transport or a catalytic measurement. Figure2 pixels, error estimates and quantitative normalization are uninspected. Growth measurements in TSBY are not treated as exclusion of every growth confound in solid SFM.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.3389/fmicb.2017.02371</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.3389/fmicb.2017.02371</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Main Results report approximately8-fold higher calcimycin yield by HPLC than WT. Methods specify solid SFM,30C,7days.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.3389/fmicb.2017.02371">DOI:10.3389/fmicb.2017.02371</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.3389/fmicb.2017.02371">DOI:10.3389/fmicb.2017.02371</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Main Results report approximately8-fold higher calcimycin yield by HPLC than WT. Methods specify solid SFM,30C,7days.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -474,7 +476,7 @@ by the corpus tests.</p>
   <td>was supplied on pJTU3795 in</td>
   <td>GLX29 calR3 complementation</td>
   <td>Complementation rather than scarless repair. Primer sequences and the complete insert remain uninspected; native promoter identity, dosage and neighboring effects are not assumed.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.3389/fmicb.2017.02371</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.3389/fmicb.2017.02371</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Methods describe an intact genomic calR3 PCR fragment in integrating pJTU2170-derived pJTU3795, introduced into GLX26.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.3389/fmicb.2017.02371">DOI:10.3389/fmicb.2017.02371</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.3389/fmicb.2017.02371">DOI:10.3389/fmicb.2017.02371</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Methods describe an intact genomic calR3 PCR fragment in integrating pJTU2170-derived pJTU3795, introduced into GLX26.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -483,7 +485,7 @@ by the corpus tests.</p>
   <td>was reported to restore the wild-type production pattern of</td>
   <td>calcimycin (A23187)</td>
   <td>Qualitative main-text rescue claim only; no exact equality of yield or independently inspected chromatogram. Cezomycin outcomes are not imported.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.3389/fmicb.2017.02371</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.3389/fmicb.2017.02371</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Results and Figure2 caption report restoration of production after calR3 complementation.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.3389/fmicb.2017.02371">DOI:10.3389/fmicb.2017.02371</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.3389/fmicb.2017.02371">DOI:10.3389/fmicb.2017.02371</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Results and Figure2 caption report restoration of production after calR3 complementation.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -491,18 +493,18 @@ by the corpus tests.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 6 edges</span></h2>
-<p class="sub">Native references and a tagged DNA-binding assay support an explicitly inferred transcriptional model. CalT export remains the authors&#39; unproven hypothesis, separate from CalR3 perturbation phenotypes. RNA signal, protein abundance, DNA binding and small-molecule transport are not interchangeable readouts.</p><div class="scroll"><table>
+<p class="sub">Native references and a tagged DNA-binding assay support an explicitly inferred transcriptional model. CalT export remains the authors&#39; unproven hypothesis, separate from CalR3 perturbation phenotypes. RNA signal, protein abundance, DNA binding and small-molecule transport are not interchangeable readouts.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 6 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>SchR3 native reference</td>
   <td>provides the native sequence reference inferred for</td>
   <td>His6-CalR3 (paper construct)</td>
   <td>Native reference identity is separate from the tagged assay protein. No exact full fusion sequence, physiological complex or untagged-native activity measurement is asserted.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AAC.01130-10<br>DOI:10.3389/fmicb.2017.02371<br>https://www.uniprot.org/uniprotkb/F8QZR9/entry<br>https://www.ncbi.nlm.nih.gov/protein/AEH42489.1<br>DOI:10.3389/fmicb.2017.02371</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AAC.01130-10</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table3 assigns calR3 a 211-aa product. Its ordered HM452329 locus, length and compatible annotation support the inferred alias SchR3.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.3389/fmicb.2017.02371</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The 2017 study cites HM452329 and NRRL3882, targeting the calR3/calT neighborhood. Ordered loci and the 2011 length assignments support cal/Sch aliases. Held primer/figure details do not establish complete mutant, probe or recombinant construct sequences.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/F8QZR9/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Directly resolved unreviewed entry version51, sequence version1; SchR3,211aa. Species taxon1969 retains the NRRL3882 nucleotide-reference strain attribution and HM452329/AEH42489.1 cross-reference.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AEH42489.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>AEH42489.1,HM452329.1:43244..43879; native NRRL3882,taxon1079985. Native DNA/code11/CDS, independent GenPept and current direct UniProt sequences agree. Product text is a deposited annotation.</dd><dt>snippet</dt><dd>TetR family regulator</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.3389/fmicb.2017.02371</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Methods reports the intact genomic gene cloned at NdeI/EcoRI in pET28a-calR3, sequence-validated by the authors, expressed in BL21(DE3)/pLysE and purified as N-terminal His6-CalR3. The actual insert/tag sequence was not independently inspected.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a><br><a href="https://doi.org/10.3389/fmicb.2017.02371">DOI:10.3389/fmicb.2017.02371</a><br><a href="https://www.uniprot.org/uniprotkb/F8QZR9/entry">https://www.uniprot.org/uniprotkb/F8QZR9/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AEH42489.1">https://www.ncbi.nlm.nih.gov/protein/AEH42489.1</a><br><a href="https://doi.org/10.3389/fmicb.2017.02371">DOI:10.3389/fmicb.2017.02371</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table3 assigns calR3 a 211-aa product. Its ordered HM452329 locus, length and compatible annotation support the inferred alias SchR3.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.3389/fmicb.2017.02371">DOI:10.3389/fmicb.2017.02371</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The 2017 study cites HM452329 and NRRL3882, targeting the calR3/calT neighborhood. Ordered loci and the 2011 length assignments support cal/Sch aliases. Held primer/figure details do not establish complete mutant, probe or recombinant construct sequences.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/F8QZR9/entry">https://www.uniprot.org/uniprotkb/F8QZR9/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Directly resolved unreviewed entry version51, sequence version1; SchR3,211aa. Species taxon1969 retains the NRRL3882 nucleotide-reference strain attribution and HM452329/AEH42489.1 cross-reference.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AEH42489.1">https://www.ncbi.nlm.nih.gov/protein/AEH42489.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>AEH42489.1,HM452329.1:43244..43879; native NRRL3882,taxon1079985. Native DNA/code11/CDS, independent GenPept and current direct UniProt sequences agree. Product text is a deposited annotation.</dd><dt>snippet</dt><dd>TetR family regulator</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.3389/fmicb.2017.02371">DOI:10.3389/fmicb.2017.02371</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Methods reports the intact genomic gene cloned at NdeI/EcoRI in pET28a-calR3, sequence-validated by the authors, expressed in BL21(DE3)/pLysE and purified as N-terminal His6-CalR3. The actual insert/tag sequence was not independently inspected.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -511,7 +513,7 @@ by the corpus tests.</p>
   <td>bound in the reported in-vitro assay to</td>
   <td>T-R3L promoter probe (paper)</td>
   <td>No exact probe sequence/coordinates, binding-site bases, stoichiometry, dimer or affinity value is adopted. Figure pixels and primer supplement remain uninspected.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.3389/fmicb.2017.02371</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.3389/fmicb.2017.02371</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Main Methods/Results describe EMSA on the calT-calR3 intergenic probes, binding to T-R3L, and DNaseI protection. EMSA:37C,30min,20uL,20mM Tris-Cl,100mM KCl,10mM DTT,pH8.0.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.3389/fmicb.2017.02371">DOI:10.3389/fmicb.2017.02371</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.3389/fmicb.2017.02371">DOI:10.3389/fmicb.2017.02371</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Main Methods/Results describe EMSA on the calT-calR3 intergenic probes, binding to T-R3L, and DNaseI protection. EMSA:37C,30min,20uL,20mM Tris-Cl,100mM KCl,10mM DTT,pH8.0.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -520,7 +522,7 @@ by the corpus tests.</p>
   <td>is inferred to repress</td>
   <td>calR3 transcription (regulatory model)</td>
   <td>Regulatory interpretation, not reconstituted transcription. Primer/amplicon boundaries in the455bp cassette mutant are uninspected; the signal is not proof of intact wild-type calR3 mRNA or increased CalR3 protein in GLX26.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.3389/fmicb.2017.02371</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.3389/fmicb.2017.02371</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Authors combine genomic-locus perturbation,96h TSBY RT-qPCR normalized to16S rDNA, recombinant DNA binding and reported TSP positions to interpret autorepression. The reported calR3 RT-qPCR signal rises about30-fold in GLX26.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.3389/fmicb.2017.02371">DOI:10.3389/fmicb.2017.02371</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.3389/fmicb.2017.02371">DOI:10.3389/fmicb.2017.02371</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Authors combine genomic-locus perturbation,96h TSBY RT-qPCR normalized to16S rDNA, recombinant DNA binding and reported TSP positions to interpret autorepression. The reported calR3 RT-qPCR signal rises about30-fold in GLX26.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -529,7 +531,7 @@ by the corpus tests.</p>
   <td>is inferred to repress</td>
   <td>calT transcription (regulatory model)</td>
   <td>Transcript signal is not CalT protein abundance or a transport measurement. No exact promoter boundaries or reconstructed transcription assay is asserted.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.3389/fmicb.2017.02371</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.3389/fmicb.2017.02371</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The same combined evidence supports the authors&#39; calT repression model. Main Results report about171-fold higher calT RT-qPCR signal in GLX26 at96h; the study uses16S rDNA normalization.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.3389/fmicb.2017.02371">DOI:10.3389/fmicb.2017.02371</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.3389/fmicb.2017.02371">DOI:10.3389/fmicb.2017.02371</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The same combined evidence supports the authors&#39; calT repression model. Main Results report about171-fold higher calT RT-qPCR signal in GLX26 at96h; the study uses16S rDNA normalization.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -538,10 +540,10 @@ by the corpus tests.</p>
   <td>is the native reference inferred for the product encoded at the locus measured by</td>
   <td>calT transcription (regulatory model)</td>
   <td>Grounding the gene product does not turn the RNA readout into protein abundance or prove the annotated transporter substrate.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AAC.01130-10<br>DOI:10.3389/fmicb.2017.02371<br>https://www.uniprot.org/uniprotkb/F8QZR8/entry<br>https://www.ncbi.nlm.nih.gov/protein/AEH42488.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AAC.01130-10</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table3 assigns calT a 749-aa product. Its ordered HM452329 locus, length and compatible annotation support the inferred alias SchT.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.3389/fmicb.2017.02371</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The 2017 study cites HM452329 and NRRL3882, targeting the calR3/calT neighborhood. Ordered loci and the 2011 length assignments support cal/Sch aliases. Held primer/figure details do not establish complete mutant, probe or recombinant construct sequences.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/F8QZR8/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Directly resolved unreviewed entry version25, sequence version1; SchT,749aa. Species taxon1969 retains the NRRL3882 nucleotide-reference strain attribution and HM452329/AEH42488.1 cross-reference.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AEH42488.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>AEH42488.1,complement(HM452329.1:40840..43089); native NRRL3882,taxon1079985. Native DNA/code11/CDS, independent GenPept and current direct UniProt sequences agree. Product text is a deposited annotation.</dd><dt>snippet</dt><dd>transmembrane transport protein</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a><br><a href="https://doi.org/10.3389/fmicb.2017.02371">DOI:10.3389/fmicb.2017.02371</a><br><a href="https://www.uniprot.org/uniprotkb/F8QZR8/entry">https://www.uniprot.org/uniprotkb/F8QZR8/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AEH42488.1">https://www.ncbi.nlm.nih.gov/protein/AEH42488.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AAC.01130-10">DOI:10.1128/AAC.01130-10</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table3 assigns calT a 749-aa product. Its ordered HM452329 locus, length and compatible annotation support the inferred alias SchT.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.3389/fmicb.2017.02371">DOI:10.3389/fmicb.2017.02371</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The 2017 study cites HM452329 and NRRL3882, targeting the calR3/calT neighborhood. Ordered loci and the 2011 length assignments support cal/Sch aliases. Held primer/figure details do not establish complete mutant, probe or recombinant construct sequences.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/F8QZR8/entry">https://www.uniprot.org/uniprotkb/F8QZR8/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Directly resolved unreviewed entry version25, sequence version1; SchT,749aa. Species taxon1969 retains the NRRL3882 nucleotide-reference strain attribution and HM452329/AEH42488.1 cross-reference.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AEH42488.1">https://www.ncbi.nlm.nih.gov/protein/AEH42488.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>AEH42488.1,complement(HM452329.1:40840..43089); native NRRL3882,taxon1079985. Native DNA/code11/CDS, independent GenPept and current direct UniProt sequences agree. Product text is a deposited annotation.</dd><dt>snippet</dt><dd>transmembrane transport protein</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -550,7 +552,7 @@ by the corpus tests.</p>
   <td>was proposed to export</td>
   <td>calcimycin (A23187)</td>
   <td>Explicit hypothesis, not measured flux, directionality, substrate specificity, energetic coupling or self-resistance. Whole-strain extracellular/intracellular yields do not isolate CalT activity; the Methods/Results medium descriptions differ, so no quantitative partition ratio is imported. No ligand-affinity, allostery or cezomycin chemistry claim is adopted.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.3389/fmicb.2017.02371</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.3389/fmicb.2017.02371</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Discussion proposes CalT-mediated export from transporter-family similarity and indirect calR3-disruption/transcript/partitioning observations. No direct CalT transport experiment is described.</dd><dt>snippet</dt><dd>CalT may be involved in expulsion of calcimycin</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.3389/fmicb.2017.02371">DOI:10.3389/fmicb.2017.02371</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.3389/fmicb.2017.02371">DOI:10.3389/fmicb.2017.02371</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Discussion proposes CalT-mediated export from transporter-family similarity and indirect calR3-disruption/transcript/partitioning observations. No direct CalT transport experiment is described.</dd><dt>snippet</dt><dd>CalT may be involved in expulsion of calcimycin</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -564,29 +566,40 @@ by the corpus tests.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=HIYAVKIYRIFSCZ-CYEMHPAKSA-N">AntibioticMech (A23187) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=naturalproductmech%3Amibig-18de581c96">MediaIngredientMech (naturalproductmech:mibig-18de581c96) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A1079985">TaxonMech: Streptomyces chartreusis NRRL 3882 (NCBITaxon:1079985) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000032">PathwayMech (mibig:BGC0000032) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A1079985">TaxonMech: Streptomyces chartreusis NRRL 3882 (NCBITaxon:1079985) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000032">PathwayMech (mibig:BGC0000032) &nearr;</a>
 </div>
 
 <h2>Open questions <span class="tag">5</span></h2>
-<div class="note"><p><strong>curator-calcimycin-reference-and-experiment-boundaries</strong> — Can exact experimental sequences and individual protein functions resolve the remaining calcimycin reference, locus and construct boundaries?</p></div>
-<div class="note"><p><strong>curator-calcimycin-pks-prediction-boundaries</strong> — Which direct experiments establish starter transfer, module specificity and ordered handoffs for the proposed calcimycin carrier-PKS assembly?</p></div>
-<div class="note"><p><strong>curator-calcimycin-precursor-prediction-boundaries</strong> — Do sequence-verified CalB3 and CalB4 catalyze the proposed precursor reactions in vivo and in vitro?</p></div>
-<div class="note"><p><strong>curator-calcimycin-calm-construct-and-chemical-scope</strong> — Can the complete CalM construct and substrate/product spectra independently resolve the remaining assay boundaries?</p></div>
-<div class="note"><p><strong>curator-calcimycin-regulatory-assay-and-export-boundaries</strong> — Which construct, probe, RT-qPCR amplicon and direct transport data test the CalR3/CalT regulatory model?</p></div>
+<div class="note"><p><strong>curator-calcimycin-reference-and-experiment-boundaries</strong> <span class="tag">OPEN</span> <span class="tag">curation todo</span> — Can exact experimental sequences and individual protein functions resolve the remaining calcimycin reference, locus and construct boundaries?</p></div>
+<div class="note"><p><strong>curator-calcimycin-pks-prediction-boundaries</strong> <span class="tag">OPEN</span> <span class="tag">curation todo</span> — Which direct experiments establish starter transfer, module specificity and ordered handoffs for the proposed calcimycin carrier-PKS assembly?</p></div>
+<div class="note"><p><strong>curator-calcimycin-precursor-prediction-boundaries</strong> <span class="tag">OPEN</span> <span class="tag">curation todo</span> — Do sequence-verified CalB3 and CalB4 catalyze the proposed precursor reactions in vivo and in vitro?</p></div>
+<div class="note"><p><strong>curator-calcimycin-calm-construct-and-chemical-scope</strong> <span class="tag">OPEN</span> <span class="tag">curation todo</span> — Can the complete CalM construct and substrate/product spectra independently resolve the remaining assay boundaries?</p></div>
+<div class="note"><p><strong>curator-calcimycin-regulatory-assay-and-export-boundaries</strong> <span class="tag">OPEN</span> <span class="tag">curation todo</span> — Which construct, probe, RT-qPCR amplicon and direct transport data test the CalR3/CalT regulatory model?</p></div>
+
+<h2 id="curation-history">Curation history <span class="tag">6</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-11T12:31:42Z">2026-10-11T12:31:42Z</time> &middot; <strong>ADDED_CALCIMYCIN_TAILORING_AND_REGULATORY_PROTEINS</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added native SchM, SchR3 and SchT references with DOI/stable-URL evidence and snippets. Separate graphs distinguish CalM genetics and tagged methylation assay, CalR3 perturbation/rescue, and inferred regulation with explicitly proposed CalT export. Preserved all prior graphs, source-owned fields and SEEDED status; updated the regulatory discussion without asserting exact tagged constructs, intermediate identifiers, transport activity or allostery.</p></li>
+<li><time datetime="2026-10-11T11:40:52Z">2026-10-11T11:40:52Z</time> &middot; <strong>ADDED_CALCIMYCIN_PROPOSED_PRECURSOR_PROTEINS</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added SchB3 and SchB4 native references with explicit inferred CalB aliases, DOI/stable-URL evidence and short snippets. A separate proposed precursor-supply graph distinguishes DHHA aromatization from indirect DAHP entry. Preserved both existing graphs, discussions, history, source-owned fields and SEEDED status; no experimental activity or exact intermediate identity adopted.</p></li>
+<li><time datetime="2026-10-11T11:02:43Z">2026-10-11T11:02:43Z</time> &middot; <strong>ADDED_CALCIMYCIN_PROPOSED_ASSEMBLY_PROTEINS</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added five native UniProt references to a separate proposed carrier-PKS assembly graph with DOI/stable-URL evidence and snippets. Kept predicted roles, aliases and tentative module order distinct from demonstrated catalysis. Preserved the prior knockout graph, source-owned fields, history and SEEDED status; updated the CalA3 identity discussion without adding a functional claim.</p></li>
+<li><time datetime="2026-10-11T10:15:29Z">2026-10-11T10:15:29Z</time> &middot; <strong>ADDED_CALCIMYCIN_NATIVE_PROTEIN_KNOCKOUT_CONTEXTS</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added two sequence-verified native UniProt references with explicit inferred paper-locus aliases and separate cassette-disruption production phenotypes, DOI/stable-URL evidence and short snippets. Preserved source-owned fields and SEEDED status; recorded length discrepancies, construct gaps and polar-effect limitations. No direct enzyme reaction or regulatory mechanism asserted.</p></li>
+<li><time datetime="2026-09-25T03:02:07Z">2026-09-25T03:02:07Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:06Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
 
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0000032</td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000032">BGC0000032</a></td><td>MIBIG</td><td>5</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/polyketides/a23187.yaml">data/natural_products/polyketides/a23187.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20naturalproductmech%3Amibig-18de581c96&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Fpolyketides%2Fa23187.html">Report a problem with this record</a>: opens a GitHub issue that names naturalproductmech:mibig-18de581c96 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Corpus as of 2026-10-23 22:53 UTC. Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 8e5d64d98cfd). Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

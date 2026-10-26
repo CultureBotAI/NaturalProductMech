@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Alkaloids</a> &middot; α-ergocryptine</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>α-ergocryptine</h1>
-<p class="sub"><span class="mono">CHEBI:10276</span>
+<p class="sub"><span class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_10276">CHEBI:10276</a></span>
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 <span class="tag">enzyme inhibitor</span></p>
 <details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/alkaloids/ergocryptine.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/alkaloids/ergocryptine.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 <p>Ergotaman bearing hydroxy, isopropyl, and 2-methylpropyl groups at the 12&#39;, 2&#39; and 5&#39; positions, respectively, and oxo groups at positions 3&#39;, 6&#39;, and 18. It is a natural ergot alkaloid. Ergocryptine discussed in the literature prior to 1967, when β-ergocryptine was separated from α-ergocryptine, is now referred to as α-ergocryptine.</p>
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">YDOTUXAWKBPQJW-NSLWYYNWSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">CC(C)C[C@H]1C(=O)N2CCC[C@H]2[C@]3(N1C(=O)[C@](O3)(C(C)C)NC(=O)[C@H]4CN([C@@H]5CC6=CNC7=CC=CC(=C67)C5=C4)C)O</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">chembl:CHEMBL1403281, pubchem:134551</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1403281">chembl:CHEMBL1403281</a>, <a href="https://pubchem.ncbi.nlm.nih.gov/compound/134551">pubchem:134551</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Alkaloids</a> —
@@ -57,82 +59,82 @@ terpene, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Claviceps fusiformis<br><span class="mono">NCBITaxon:40602</span></td>
+  <td>Claviceps fusiformis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=40602">NCBITaxon:40602</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0001241</td>
-  <td><span class="mono">DOI:10.1371/journal.pgen.1003323</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001241">mibig:BGC0001241</a></td>
+  <td><span class="mono"><a href="https://doi.org/10.1371/journal.pgen.1003323">DOI:10.1371/journal.pgen.1003323</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">10</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Festuca arundinacea<br><span class="mono">NCBITaxon:4606</span></td>
+  <td>Festuca arundinacea<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=4606">NCBITaxon:4606</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/JF00064A038</td>
+  <td class="mono"><a href="https://doi.org/10.1021/JF00064A038">DOI:10.1021/JF00064A038</a></td>
 </tr>
 <tr>
-  <td>Claviceps purpurea<br><span class="mono">NCBITaxon:5111</span></td>
+  <td>Claviceps purpurea<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5111">NCBITaxon:5111</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/BF01937731</td>
+  <td class="mono"><a href="https://doi.org/10.1007/BF01937731">DOI:10.1007/BF01937731</a></td>
 </tr>
 <tr>
-  <td>Claviceps purpurea<br><span class="mono">NCBITaxon:5111</span></td>
+  <td>Claviceps purpurea<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5111">NCBITaxon:5111</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/S0021-9673(98)00099-5</td>
+  <td class="mono"><a href="https://doi.org/10.1016/S0021-9673%2898%2900099-5">DOI:10.1016/S0021-9673(98)00099-5</a></td>
 </tr>
 <tr>
-  <td>Claviceps purpurea<br><span class="mono">NCBITaxon:5111</span></td>
+  <td>Claviceps purpurea<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5111">NCBITaxon:5111</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/NP50036A010</td>
+  <td class="mono"><a href="https://doi.org/10.1021/NP50036A010">DOI:10.1021/NP50036A010</a></td>
 </tr>
 <tr>
-  <td>Claviceps purpurea<br><span class="mono">NCBITaxon:5111</span></td>
+  <td>Claviceps purpurea<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5111">NCBITaxon:5111</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/NP50054A009</td>
+  <td class="mono"><a href="https://doi.org/10.1021/NP50054A009">DOI:10.1021/NP50054A009</a></td>
 </tr>
 <tr>
-  <td>Claviceps purpurea<br><span class="mono">NCBITaxon:5111</span></td>
+  <td>Claviceps purpurea<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5111">NCBITaxon:5111</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1128/AEM.59.7.2029-2033.1993</td>
+  <td class="mono"><a href="https://doi.org/10.1128/AEM.59.7.2029-2033.1993">DOI:10.1128/AEM.59.7.2029-2033.1993</a></td>
 </tr>
 <tr>
-  <td>Claviceps purpurea<br><span class="mono">NCBITaxon:5111</span></td>
+  <td>Claviceps purpurea<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5111">NCBITaxon:5111</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1139/V79-263</td>
+  <td class="mono"><a href="https://doi.org/10.1139/V79-263">DOI:10.1139/V79-263</a></td>
 </tr>
 <tr>
-  <td>Festuca rubra<br><span class="mono">NCBITaxon:52153</span></td>
+  <td>Festuca rubra<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=52153">NCBITaxon:52153</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/JF00064A038</td>
+  <td class="mono"><a href="https://doi.org/10.1021/JF00064A038">DOI:10.1021/JF00064A038</a></td>
 </tr>
 <tr>
-  <td>Claviceps grohii<br><span class="mono">NCBITaxon:89176</span></td>
+  <td>Claviceps grohii<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=89176">NCBITaxon:89176</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/NP8001173</td>
+  <td class="mono"><a href="https://doi.org/10.1021/NP8001173">DOI:10.1021/NP8001173</a></td>
 </tr>
 <tr>
-  <td>Claviceps zizaniae<br><span class="mono">NCBITaxon:89180</span></td>
+  <td>Claviceps zizaniae<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=89180">NCBITaxon:89180</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/NP010639W</td>
+  <td class="mono"><a href="https://doi.org/10.1021/NP010639W">DOI:10.1021/NP010639W</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0001241</td>
-  <td>Claviceps fusiformis<br><span class="mono">NCBITaxon:40602</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001241">mibig:BGC0001241</a></td>
+  <td>Claviceps fusiformis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=40602">NCBITaxon:40602</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:JN186799.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/JN186799.1">genbank:JN186799.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -142,7 +144,7 @@ isolation report left it.</p>
 
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for α-ergocryptine">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for α-ergocryptine">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -178,105 +180,105 @@ isolation report left it.</p>
 
 <h2>Bioactivities <span class="tag">25</span></h2>
 <p class="sub">Entries preserve source qualifiers, targets and evidence. Repeated assay names or values are not independent replications; inspect source detail for differences.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Bioactivities"><table>
 <tr><th>Assay</th><th>Result</th><th>Target enzyme</th><th>Source detail</th></tr>
-<tr><td>A quantitative high throughput screen for small molecules that induce DNA re-replication in SW480 colon adenocarcinoma cells.</td><td>OTHER 0.0651 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:624297</summary><dl><dt>assay</dt><dd>A quantitative high throughput screen for small molecules that induce DNA re-replication in SW480 colon adenocarcinoma cells.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:624297</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_056979 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>A quantitative high throughput screen for small molecules that induce DNA re-replication in SW480 colon adenocarcinoma cells.</td><td>OTHER 0.0651 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/624297">pubchem.aid:624297</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>A quantitative high throughput screen for small molecules that induce DNA re-replication in SW480 colon adenocarcinoma cells.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/624297">pubchem.aid:624297</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_056979 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.0651</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Inhibitors of Regulator of G Protein Signaling (RGS) 4: qHTS</td><td>OTHER 56.2341 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:504845</summary><dl><dt>assay</dt><dd>Inhibitors of Regulator of G Protein Signaling (RGS) 4: qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:504845</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 504845, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession ABC94591 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Inhibitors of Regulator of G Protein Signaling (RGS) 4: qHTS</td><td>OTHER 56.2341 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/504845">pubchem.aid:504845</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Inhibitors of Regulator of G Protein Signaling (RGS) 4: qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/504845">pubchem.aid:504845</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 504845, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession ABC94591 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>56.2341</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Inhibitors of Secretory Acid Sphingomyelinase (S-ASM): qHTS</td><td>OTHER 31.6228 uM; INACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:504937</summary><dl><dt>assay</dt><dd>Inhibitors of Secretory Acid Sphingomyelinase (S-ASM): qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:504937</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 504937, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession AAA58377 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Inhibitors of Secretory Acid Sphingomyelinase (S-ASM): qHTS</td><td>OTHER 31.6228 uM; INACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/504937">pubchem.aid:504937</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Inhibitors of Secretory Acid Sphingomyelinase (S-ASM): qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/504937">pubchem.aid:504937</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 504937, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession AAA58377 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>INACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>31.6228</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Inhibitors of USP1/UAF1: Primary Screen</td><td>OTHER 17.7828 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:743255</summary><dl><dt>assay</dt><dd>Inhibitors of USP1/UAF1: Primary Screen</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:743255</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 743255, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession AAH18745 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Inhibitors of USP1/UAF1: Primary Screen</td><td>OTHER 17.7828 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/743255">pubchem.aid:743255</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Inhibitors of USP1/UAF1: Primary Screen</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/743255">pubchem.aid:743255</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 743255, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession AAH18745 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>17.7828</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>Inhibitors of the vitamin D receptor (VDR): qHTS</td><td>OTHER 79.4328 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:504847</summary><dl><dt>assay</dt><dd>Inhibitors of the vitamin D receptor (VDR): qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:504847</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 504847, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession NP_001017535 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Inhibitors of the vitamin D receptor (VDR): qHTS</td><td>OTHER 79.4328 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/504847">pubchem.aid:504847</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Inhibitors of the vitamin D receptor (VDR): qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/504847">pubchem.aid:504847</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 504847, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession NP_001017535 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>79.4328</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>Nrf2 qHTS screen for inhibitors</td><td>OTHER 12.9953 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:504444</summary><dl><dt>assay</dt><dd>Nrf2 qHTS screen for inhibitors</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:504444</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 504444, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_001138884 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Nrf2 qHTS screen for inhibitors</td><td>OTHER 12.9953 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/504444">pubchem.aid:504444</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Nrf2 qHTS screen for inhibitors</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/504444">pubchem.aid:504444</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 504444, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_001138884 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>12.9953</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Primary qHTS for delayed death inhibitors of the malarial parasite plastid, 48 hour incubation</td><td>OTHER 2.9362 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:504832</summary><dl><dt>assay</dt><dd>Primary qHTS for delayed death inhibitors of the malarial parasite plastid, 48 hour incubation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:504832</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 504832, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Primary qHTS for delayed death inhibitors of the malarial parasite plastid, 48 hour incubation</td><td>OTHER 2.9362 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/504832">pubchem.aid:504832</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Primary qHTS for delayed death inhibitors of the malarial parasite plastid, 48 hour incubation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/504832">pubchem.aid:504832</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 504832, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>2.9362</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>Primary qHTS for delayed death inhibitors of the malarial parasite plastid, 96 hour incubation</td><td>OTHER 3.6964 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:504834</summary><dl><dt>assay</dt><dd>Primary qHTS for delayed death inhibitors of the malarial parasite plastid, 96 hour incubation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:504834</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 504834, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Primary qHTS for delayed death inhibitors of the malarial parasite plastid, 96 hour incubation</td><td>OTHER 3.6964 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/504834">pubchem.aid:504834</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Primary qHTS for delayed death inhibitors of the malarial parasite plastid, 96 hour incubation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/504834">pubchem.aid:504834</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 504834, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>3.6964</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>qHTS Assay for Iinhibitors of HIV-1 Budding by Blocking the Interaction of PTAP/TSG101</td><td>OTHER 50.1187 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:493005</summary><dl><dt>assay</dt><dd>qHTS Assay for Iinhibitors of HIV-1 Budding by Blocking the Interaction of PTAP/TSG101</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:493005</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 493005, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_006283 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>qHTS Assay for Iinhibitors of HIV-1 Budding by Blocking the Interaction of PTAP/TSG101</td><td>OTHER 50.1187 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/493005">pubchem.aid:493005</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>qHTS Assay for Iinhibitors of HIV-1 Budding by Blocking the Interaction of PTAP/TSG101</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/493005">pubchem.aid:493005</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 493005, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_006283 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>50.1187</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>qHTS Assay for Iinhibitors of HIV-1 Budding by Blocking the Interaction of PTAP/TSG101: Hit Validation in TR assay</td><td>OTHER 0.3659 uM; INACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:651599</summary><dl><dt>assay</dt><dd>qHTS Assay for Iinhibitors of HIV-1 Budding by Blocking the Interaction of PTAP/TSG101: Hit Validation in TR assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:651599</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 651599, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession NP_006283 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>qHTS Assay for Iinhibitors of HIV-1 Budding by Blocking the Interaction of PTAP/TSG101: Hit Validation in TR assay</td><td>OTHER 0.3659 uM; INACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/651599">pubchem.aid:651599</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>qHTS Assay for Iinhibitors of HIV-1 Budding by Blocking the Interaction of PTAP/TSG101: Hit Validation in TR assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/651599">pubchem.aid:651599</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 651599, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession NP_006283 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>INACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.3659</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>qHTS Assay for Inhibitors of Hepatitis C Virus (HCV)</td><td>OTHER 11.2202 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:651820</summary><dl><dt>assay</dt><dd>qHTS Assay for Inhibitors of Hepatitis C Virus (HCV)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:651820</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 651820, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
+<tr><td>qHTS Assay for Inhibitors of Hepatitis C Virus (HCV)</td><td>OTHER 11.2202 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/651820">pubchem.aid:651820</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>qHTS Assay for Inhibitors of Hepatitis C Virus (HCV)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/651820">pubchem.aid:651820</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 651820, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>11.2202</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>qHTS Assay for Inhibitors of Histone Lysine Methyltransferase G9a</td><td>OTHER 6.3096 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:504332</summary><dl><dt>assay</dt><dd>qHTS Assay for Inhibitors of Histone Lysine Methyltransferase G9a</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:504332</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 504332, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession CAQ07474 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>qHTS Assay for Inhibitors of Histone Lysine Methyltransferase G9a</td><td>OTHER 6.3096 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/504332">pubchem.aid:504332</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>qHTS Assay for Inhibitors of Histone Lysine Methyltransferase G9a</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/504332">pubchem.aid:504332</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 504332, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession CAQ07474 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>6.3096</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>qHTS Assay for Inhibitors of JMJD2A-Tudor Domain</td><td>OTHER 50.1187 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:504339</summary><dl><dt>assay</dt><dd>qHTS Assay for Inhibitors of JMJD2A-Tudor Domain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:504339</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 504339, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession 2QQS_A was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>qHTS Assay for Inhibitors of JMJD2A-Tudor Domain</td><td>OTHER 50.1187 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/504339">pubchem.aid:504339</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>qHTS Assay for Inhibitors of JMJD2A-Tudor Domain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/504339">pubchem.aid:504339</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 504339, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession 2QQS_A was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>50.1187</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>qHTS Assay for Inhibitors of Mammalian Selenoprotein Thioredoxin Reductase 1 (TrxR1): qHTS</td><td>OTHER 15.8489 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:588453</summary><dl><dt>assay</dt><dd>qHTS Assay for Inhibitors of Mammalian Selenoprotein Thioredoxin Reductase 1 (TrxR1): qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:588453</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 588453, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession AAC35244 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>qHTS Assay for Inhibitors of Mammalian Selenoprotein Thioredoxin Reductase 1 (TrxR1): qHTS</td><td>OTHER 15.8489 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/588453">pubchem.aid:588453</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>qHTS Assay for Inhibitors of Mammalian Selenoprotein Thioredoxin Reductase 1 (TrxR1): qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/588453">pubchem.aid:588453</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 588453, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession AAC35244 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>15.8489</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>qHTS Assay for Inhibitors of RanGTP induced Rango (Ran-regulated importin-beta cargo) - Importin beta complex dissociation</td><td>OTHER 31.6228 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:540253</summary><dl><dt>assay</dt><dd>qHTS Assay for Inhibitors of RanGTP induced Rango (Ran-regulated importin-beta cargo) - Importin beta complex dissociation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:540253</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 540253, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_002256 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>qHTS Assay for Inhibitors of RanGTP induced Rango (Ran-regulated importin-beta cargo) - Importin beta complex dissociation</td><td>OTHER 31.6228 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/540253">pubchem.aid:540253</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>qHTS Assay for Inhibitors of RanGTP induced Rango (Ran-regulated importin-beta cargo) - Importin beta complex dissociation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/540253">pubchem.aid:540253</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 540253, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_002256 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>31.6228</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>qHTS Assay for Inhibitors of RanGTP induced Rango (Ran-regulated importin-beta cargo) - Importin beta complex dissociation</td><td>OTHER 31.6228 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:540253</summary><dl><dt>assay</dt><dd>qHTS Assay for Inhibitors of RanGTP induced Rango (Ran-regulated importin-beta cargo) - Importin beta complex dissociation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:540253</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 540253, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_005692 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>qHTS Assay for Inhibitors of RanGTP induced Rango (Ran-regulated importin-beta cargo) - Importin beta complex dissociation</td><td>OTHER 31.6228 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/540253">pubchem.aid:540253</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>qHTS Assay for Inhibitors of RanGTP induced Rango (Ran-regulated importin-beta cargo) - Importin beta complex dissociation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/540253">pubchem.aid:540253</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 540253, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_005692 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>31.6228</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>qHTS Assay for Inhibitors of RanGTP induced Rango (Ran-regulated importin-beta cargo) - Importin beta complex dissociation</td><td>OTHER 31.6228 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:540253</summary><dl><dt>assay</dt><dd>qHTS Assay for Inhibitors of RanGTP induced Rango (Ran-regulated importin-beta cargo) - Importin beta complex dissociation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:540253</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 540253, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_006316 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>qHTS Assay for Inhibitors of RanGTP induced Rango (Ran-regulated importin-beta cargo) - Importin beta complex dissociation</td><td>OTHER 31.6228 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/540253">pubchem.aid:540253</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>qHTS Assay for Inhibitors of RanGTP induced Rango (Ran-regulated importin-beta cargo) - Importin beta complex dissociation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/540253">pubchem.aid:540253</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 540253, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_006316 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>31.6228</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>qHTS Assay for Inhibitors of Rango (Ran-regulated importin-beta cargo) - Importin beta complex formation</td><td>OTHER 100 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:540263</summary><dl><dt>assay</dt><dd>qHTS Assay for Inhibitors of Rango (Ran-regulated importin-beta cargo) - Importin beta complex formation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:540263</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 540263, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_002256 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>qHTS Assay for Inhibitors of Rango (Ran-regulated importin-beta cargo) - Importin beta complex formation</td><td>OTHER 100 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/540263">pubchem.aid:540263</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>qHTS Assay for Inhibitors of Rango (Ran-regulated importin-beta cargo) - Importin beta complex formation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/540263">pubchem.aid:540263</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 540263, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_002256 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>100.0</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>qHTS Assay for Inhibitors of Rango (Ran-regulated importin-beta cargo) - Importin beta complex formation</td><td>OTHER 100 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:540263</summary><dl><dt>assay</dt><dd>qHTS Assay for Inhibitors of Rango (Ran-regulated importin-beta cargo) - Importin beta complex formation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:540263</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 540263, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_005692 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>qHTS Assay for Inhibitors of Rango (Ran-regulated importin-beta cargo) - Importin beta complex formation</td><td>OTHER 100 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/540263">pubchem.aid:540263</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>qHTS Assay for Inhibitors of Rango (Ran-regulated importin-beta cargo) - Importin beta complex formation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/540263">pubchem.aid:540263</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 540263, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_005692 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>100.0</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>qHTS Assay for Inhibitors of Ubiquitin-specific Protease USP2a Using CHOP2 as the Reporter</td><td>OTHER 11.2202 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:463254</summary><dl><dt>assay</dt><dd>qHTS Assay for Inhibitors of Ubiquitin-specific Protease USP2a Using CHOP2 as the Reporter</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:463254</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 463254, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_004196 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>qHTS Assay for Inhibitors of Ubiquitin-specific Protease USP2a Using CHOP2 as the Reporter</td><td>OTHER 11.2202 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/463254">pubchem.aid:463254</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>qHTS Assay for Inhibitors of Ubiquitin-specific Protease USP2a Using CHOP2 as the Reporter</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/463254">pubchem.aid:463254</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 463254, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_004196 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>11.2202</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>qHTS Assay for Substrates of Mammalian Selenoprotein Thioredoxin Reductase 1 (TrxR1): qHTS</td><td>OTHER 44.6684 uM; INACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:588456</summary><dl><dt>assay</dt><dd>qHTS Assay for Substrates of Mammalian Selenoprotein Thioredoxin Reductase 1 (TrxR1): qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:588456</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 588456, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession AAC35244 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>qHTS Assay for Substrates of Mammalian Selenoprotein Thioredoxin Reductase 1 (TrxR1): qHTS</td><td>OTHER 44.6684 uM; INACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/588456">pubchem.aid:588456</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>qHTS Assay for Substrates of Mammalian Selenoprotein Thioredoxin Reductase 1 (TrxR1): qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/588456">pubchem.aid:588456</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 588456, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession AAC35244 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>INACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>44.6684</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>qHTS Assay for the Inhibitors of Human Flap endonuclease 1 (FEN1).</td><td>OTHER 12.5893 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:588795</summary><dl><dt>assay</dt><dd>qHTS Assay for the Inhibitors of Human Flap endonuclease 1 (FEN1).</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:588795</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 588795, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_004102 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>qHTS Assay for the Inhibitors of Human Flap endonuclease 1 (FEN1).</td><td>OTHER 12.5893 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/588795">pubchem.aid:588795</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>qHTS Assay for the Inhibitors of Human Flap endonuclease 1 (FEN1).</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/588795">pubchem.aid:588795</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 588795, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_004102 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>12.5893</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>qHTS Assay for the Inhibitors of Schistosoma Mansoni Peroxiredoxins</td><td>OTHER 5.6234 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:485364</summary><dl><dt>assay</dt><dd>qHTS Assay for the Inhibitors of Schistosoma Mansoni Peroxiredoxins</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:485364</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 485364, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession AAK85233 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>qHTS Assay for the Inhibitors of Schistosoma Mansoni Peroxiredoxins</td><td>OTHER 5.6234 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/485364">pubchem.aid:485364</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>qHTS Assay for the Inhibitors of Schistosoma Mansoni Peroxiredoxins</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/485364">pubchem.aid:485364</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 485364, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession AAK85233 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>5.6234</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>qHTS Assay to Find Inhibitors of Pin1</td><td>OTHER 44.6684 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:504891</summary><dl><dt>assay</dt><dd>qHTS Assay to Find Inhibitors of Pin1</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:504891</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 504891, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_006212 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>qHTS Assay to Find Inhibitors of Pin1</td><td>OTHER 44.6684 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/504891">pubchem.aid:504891</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>qHTS Assay to Find Inhibitors of Pin1</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/504891">pubchem.aid:504891</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 504891, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_006212 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>44.6684</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>qHTS Inhibitors of AmpC Beta-Lactamase (assay without detergent)</td><td>OTHER 39.8107 uM; INACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:485341</summary><dl><dt>assay</dt><dd>qHTS Inhibitors of AmpC Beta-Lactamase (assay without detergent)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:485341</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 485341, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession 2HDS_A was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>qHTS Inhibitors of AmpC Beta-Lactamase (assay without detergent)</td><td>OTHER 39.8107 uM; INACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/485341">pubchem.aid:485341</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>qHTS Inhibitors of AmpC Beta-Lactamase (assay without detergent)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/485341">pubchem.aid:485341</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 485341, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession 2HDS_A was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>INACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>39.8107</dd><dt>units</dt><dd>uM</dd><dt>notes</dt><dd>32 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but not written here.</dd></dl>
 </details></td></tr>
@@ -286,26 +288,35 @@ isolation report left it.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=YDOTUXAWKBPQJW-NSLWYYNWSA-N">AntibioticMech (α-ergocryptine) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=CHEBI%3A10276">MediaIngredientMech (CHEBI:10276) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A40602">TaxonMech: Claviceps fusiformis (NCBITaxon:40602) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0001241">PathwayMech (mibig:BGC0001241) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q=CHEBI%3A10276">MediaIngredientMech (CHEBI:10276) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A40602">TaxonMech: Claviceps fusiformis (NCBITaxon:40602) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0001241">PathwayMech (mibig:BGC0001241) &nearr;</a>
 </div>
 
 <h2>Open questions <span class="tag">1</span></h2>
-<div class="note"><p><strong>name-disagreement</strong> — ChEBI calls this structure &#39;α-ergocryptine&#39; and MIBiG calls it &#39;ergocryptine&#39;. They share a Standard InChIKey, so if the names denote different compounds then one upstream record has the wrong structure. Check which.</p></div>
+<div class="note"><p><strong>name-disagreement</strong> <span class="tag">OPEN</span> <span class="tag">controversy</span> — ChEBI calls this structure &#39;α-ergocryptine&#39; and MIBiG calls it &#39;ergocryptine&#39;. They share a Standard InChIKey, so if the names denote different compounds then one upstream record has the wrong structure. Check which.</p></div>
+
+<h2 id="curation-history">Curation history <span class="tag">4</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-13T07:43:30Z">2026-10-13T07:43:30Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources<p>Seeded from the committed inventories and curation tables.</p></li>
+<li><time datetime="2026-09-25T03:03:51Z">2026-09-25T03:03:51Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(3 identical runs since 2026-09-10T05:54:16Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
 
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0001241</td><td>MIBIG</td><td>4</td></tr>
-<tr><td class="mono">CHEBI:10276</td><td>CHEBI</td><td>3-star</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001241">BGC0001241</a></td><td>MIBIG</td><td>4</td></tr>
+<tr><td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_10276">CHEBI:10276</a></td><td>CHEBI</td><td>3-star</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/alkaloids/ergocryptine.yaml">data/natural_products/alkaloids/ergocryptine.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20CHEBI%3A10276&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Falkaloids%2Fergocryptine.html">Report a problem with this record</a>: opens a GitHub issue that names CHEBI:10276 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Corpus as of 2026-10-23 22:53 UTC. Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 8e5d64d98cfd). Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Alkaloids</a> &middot; myxochelin B</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>myxochelin B</h1>
-<p class="sub"><span class="mono">CHEBI:7061</span>
+<p class="sub"><span class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_7061">CHEBI:7061</a></span>
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 </p>
 <details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/alkaloids/myxochelin-b.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/alkaloids/myxochelin-b.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 <p>A member of the class of benzamides obtained by formal condensation of the 1- and 6-amino groups of hexane-1,2,6-triamine with the carboxy groups from two molecules of 2,3-dihydroxybenzoic acid followed by reduction of the amide carbonyl at position 5 to a hydroxy group.</p>
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">QTARRKFUMCSVOF-LBPRGKRZSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">C1=CC(=C(C(=C1)O)O)C(=O)NCCCC[C@@H](CN)NC(=O)C2=C(C(=CC=C2)O)O</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">pubchem:10873133</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/compound/10873133">pubchem:10873133</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Alkaloids</a> —
@@ -57,27 +59,27 @@ nrps, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Stigmatella aurantiaca Sg a15<br><span class="mono">NCBITaxon:675526</span></td>
+  <td>Stigmatella aurantiaca Sg a15<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=675526">NCBITaxon:675526</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0001345</td>
-  <td><span class="mono">PMID:11562468</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001345">mibig:BGC0001345</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/11562468/">PMID:11562468</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">0</span></h2>
 <p class="sub">None cited.</p>
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0001345</td>
-  <td>Stigmatella aurantiaca Sg a15<br><span class="mono">NCBITaxon:675526</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001345">mibig:BGC0001345</a></td>
+  <td>Stigmatella aurantiaca Sg a15<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=675526">NCBITaxon:675526</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:AF299336.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF299336.1">genbank:AF299336.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -87,41 +89,41 @@ isolation report left it.</p>
 <h2>Biosynthesis <span class="tag causal">curated</span></h2>
 <p class="sub">Written by a curator with claim-level evidence on each step; not
 derived from a source. This is what the rest of the record exists to support.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthesis steps"><table>
 <tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
 <tr>
   <td>1</td>
-  <td>MxcE 2,3-DHBA-AMP ligase<br><span class="mono">UniProtKB:Q9F638</span></td>
+  <td>MxcE 2,3-DHBA-AMP ligase<br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q9F638/entry">UniProtKB:Q9F638</a></span></td>
   <td class="mono"></td>
   <td class="mono">ungrounded &rarr; ungrounded</td>
-  <td class="mono">DOI:10.1073/pnas.201167098</td>
+  <td class="mono"><a href="https://doi.org/10.1073/pnas.201167098">DOI:10.1073/pnas.201167098</a></td>
 </tr>
 <tr>
   <td>2</td>
-  <td>MxcF isochorismatase and aryl carrier protein<br><span class="mono">UniProtKB:Q9F637</span></td>
+  <td>MxcF isochorismatase and aryl carrier protein<br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q9F637/entry">UniProtKB:Q9F637</a></span></td>
   <td class="mono"></td>
   <td class="mono">ungrounded &rarr; ungrounded</td>
-  <td class="mono">DOI:10.1073/pnas.201167098</td>
+  <td class="mono"><a href="https://doi.org/10.1073/pnas.201167098">DOI:10.1073/pnas.201167098</a></td>
 </tr>
 <tr>
   <td>3</td>
-  <td>MxcG peptide synthetase with reductase domain<br><span class="mono">UniProtKB:Q9F636</span></td>
+  <td>MxcG peptide synthetase with reductase domain<br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q9F636/entry">UniProtKB:Q9F636</a></span></td>
   <td class="mono"></td>
   <td class="mono">ungrounded &rarr; ungrounded</td>
-  <td class="mono">DOI:10.1073/pnas.201167098</td>
+  <td class="mono"><a href="https://doi.org/10.1073/pnas.201167098">DOI:10.1073/pnas.201167098</a></td>
 </tr>
 <tr>
   <td>4</td>
-  <td>MxcL aldehyde aminotransferase<br><span class="mono">UniProtKB:Q9F631</span></td>
+  <td>MxcL aldehyde aminotransferase<br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q9F631/entry">UniProtKB:Q9F631</a></span></td>
   <td class="mono"></td>
   <td class="mono">ungrounded &rarr; ungrounded</td>
-  <td class="mono">DOI:10.1021/ja8025278</td>
+  <td class="mono"><a href="https://doi.org/10.1021/ja8025278">DOI:10.1021/ja8025278</a></td>
 </tr>
 </table></div>
 <p class="sub">Step 1: MxcE adenylates 2,3-dihydroxybenzoic acid for transfer to the MxcF aryl carrier protein; the carrier-protein thioester is left ungrounded as a pathway intermediate.</p><p class="sub">Step 2: MxcF supplies the aryl carrier protein that receives activated 2,3-DHBA from MxcE and presents it to MxcG; its isochorismatase module contributes to DHBA formation from chorismate.</p><p class="sub">Step 3: MxcG adenylates lysine, condenses two MxcF-delivered DHBA groups with lysine, and uses its reductase domain for two-electron release of the carrier-protein-bound thioester to a myxochelin aldehyde branch-point intermediate.</p><p class="sub">Step 4: MxcL transaminates the free myxochelin aldehyde intermediate to the primary amine branch product myxochelin B.</p>
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for myxochelin B">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for myxochelin B">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -154,15 +156,15 @@ derived from a source. This is what the rest of the record exists to support.</p
 </div>
 
 <h2>Causal graph &mdash; biosynthesis <span class="tag">8 nodes, 7 edges</span></h2>
-<p class="sub">Partial Stigmatella aurantiaca myxochelin B assembly graph for the MxcE/MxcF/MxcG nonribosomal peptide synthetase machinery and the MxcL aminotransferase branch.</p><div class="scroll"><table>
+<p class="sub">Partial Stigmatella aurantiaca myxochelin B assembly graph for the MxcE/MxcF/MxcG nonribosomal peptide synthetase machinery and the MxcL aminotransferase branch.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>2,3-dihydroxybenzoic acid</td>
   <td>is adenylated by</td>
   <td>MxcE</td>
   <td>MxcE adenylates DHBA before MxcF carrier-protein loading.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1073/pnas.201167098<br>https://www.uniprot.org/uniprotkb/Q9F638</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1073/pnas.201167098</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Gaitatzis et al. expressed active MxcE, MxcF, and MxcG and reconstituted ATP-, lysine-, DHBA-, and NAD(P)H-dependent myxochelin assembly in vitro.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q9F638</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>UniProtKB:Q9F638 resolves to the AF299336.1 mxcE gene product used for the Stigmatella myxochelin pathway.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1073/pnas.201167098">DOI:10.1073/pnas.201167098</a><br><a href="https://www.uniprot.org/uniprotkb/Q9F638">https://www.uniprot.org/uniprotkb/Q9F638</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1073/pnas.201167098">DOI:10.1073/pnas.201167098</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Gaitatzis et al. expressed active MxcE, MxcF, and MxcG and reconstituted ATP-, lysine-, DHBA-, and NAD(P)H-dependent myxochelin assembly in vitro.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q9F638">https://www.uniprot.org/uniprotkb/Q9F638</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>UniProtKB:Q9F638 resolves to the AF299336.1 mxcE gene product used for the Stigmatella myxochelin pathway.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -171,8 +173,8 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>loads activated 2,3-DHBA onto</td>
   <td>MxcF</td>
   <td>The MxcF aryl carrier protein receives activated DHBA for delivery to MxcG.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1073/pnas.201167098<br>https://www.uniprot.org/uniprotkb/Q9F637</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1073/pnas.201167098</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Gaitatzis et al. expressed active MxcE, MxcF, and MxcG and reconstituted ATP-, lysine-, DHBA-, and NAD(P)H-dependent myxochelin assembly in vitro.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q9F637</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>UniProtKB:Q9F637 resolves to the AF299336.1 mxcF gene product used for the Stigmatella myxochelin pathway.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1073/pnas.201167098">DOI:10.1073/pnas.201167098</a><br><a href="https://www.uniprot.org/uniprotkb/Q9F637">https://www.uniprot.org/uniprotkb/Q9F637</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1073/pnas.201167098">DOI:10.1073/pnas.201167098</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Gaitatzis et al. expressed active MxcE, MxcF, and MxcG and reconstituted ATP-, lysine-, DHBA-, and NAD(P)H-dependent myxochelin assembly in vitro.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q9F637">https://www.uniprot.org/uniprotkb/Q9F637</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>UniProtKB:Q9F637 resolves to the AF299336.1 mxcF gene product used for the Stigmatella myxochelin pathway.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -181,8 +183,8 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>is adenylated by</td>
   <td>MxcG</td>
   <td>The adenylation domain of MxcG activates lysine.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1073/pnas.201167098<br>https://www.uniprot.org/uniprotkb/Q9F636</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1073/pnas.201167098</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Gaitatzis et al. expressed active MxcE, MxcF, and MxcG and reconstituted ATP-, lysine-, DHBA-, and NAD(P)H-dependent myxochelin assembly in vitro.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q9F636</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>UniProtKB:Q9F636 resolves to the AF299336.1 mxcG gene product used for the Stigmatella myxochelin pathway.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1073/pnas.201167098">DOI:10.1073/pnas.201167098</a><br><a href="https://www.uniprot.org/uniprotkb/Q9F636">https://www.uniprot.org/uniprotkb/Q9F636</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1073/pnas.201167098">DOI:10.1073/pnas.201167098</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Gaitatzis et al. expressed active MxcE, MxcF, and MxcG and reconstituted ATP-, lysine-, DHBA-, and NAD(P)H-dependent myxochelin assembly in vitro.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q9F636">https://www.uniprot.org/uniprotkb/Q9F636</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>UniProtKB:Q9F636 resolves to the AF299336.1 mxcG gene product used for the Stigmatella myxochelin pathway.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -191,8 +193,8 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>delivers activated 2,3-DHBA to</td>
   <td>MxcG</td>
   <td>MxcG condenses two MxcF-delivered DHBA units with the two amino groups of lysine.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1073/pnas.201167098<br>https://www.uniprot.org/uniprotkb/Q9F636</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1073/pnas.201167098</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Gaitatzis et al. expressed active MxcE, MxcF, and MxcG and reconstituted ATP-, lysine-, DHBA-, and NAD(P)H-dependent myxochelin assembly in vitro.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q9F636</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>UniProtKB:Q9F636 resolves to the AF299336.1 mxcG gene product used for the Stigmatella myxochelin pathway.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1073/pnas.201167098">DOI:10.1073/pnas.201167098</a><br><a href="https://www.uniprot.org/uniprotkb/Q9F636">https://www.uniprot.org/uniprotkb/Q9F636</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1073/pnas.201167098">DOI:10.1073/pnas.201167098</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Gaitatzis et al. expressed active MxcE, MxcF, and MxcG and reconstituted ATP-, lysine-, DHBA-, and NAD(P)H-dependent myxochelin assembly in vitro.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q9F636">https://www.uniprot.org/uniprotkb/Q9F636</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>UniProtKB:Q9F636 resolves to the AF299336.1 mxcG gene product used for the Stigmatella myxochelin pathway.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -201,8 +203,8 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>reductively releases</td>
   <td>myxochelin aldehyde</td>
   <td>The C-terminal reductase domain of MxcG releases a free aldehyde that can be reduced to myxochelin A or transaminated toward myxochelin B.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja8025278<br>https://www.uniprot.org/uniprotkb/Q9F636</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja8025278</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Li et al. combined MxcG reductase-domain formation of the free aldehyde intermediate with MxcL transamination to reconstitute myxochelin B biosynthesis in vitro.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q9F636</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>UniProtKB:Q9F636 resolves to the AF299336.1 mxcG gene product used for the Stigmatella myxochelin pathway.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja8025278">DOI:10.1021/ja8025278</a><br><a href="https://www.uniprot.org/uniprotkb/Q9F636">https://www.uniprot.org/uniprotkb/Q9F636</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja8025278">DOI:10.1021/ja8025278</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Li et al. combined MxcG reductase-domain formation of the free aldehyde intermediate with MxcL transamination to reconstitute myxochelin B biosynthesis in vitro.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q9F636">https://www.uniprot.org/uniprotkb/Q9F636</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>UniProtKB:Q9F636 resolves to the AF299336.1 mxcG gene product used for the Stigmatella myxochelin pathway.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -211,8 +213,8 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>is transaminated by</td>
   <td>MxcL</td>
   <td>MxcL competes for the free aldehyde intermediate produced by two-electron MxcG reductase-domain release.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja8025278<br>https://www.uniprot.org/uniprotkb/Q9F631</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja8025278</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Li et al. combined MxcG reductase-domain formation of the free aldehyde intermediate with MxcL transamination to reconstitute myxochelin B biosynthesis in vitro.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q9F631</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>UniProtKB:Q9F631 resolves to the AF299336.1 mxcL gene product in the Stigmatella myxochelin gene cluster.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja8025278">DOI:10.1021/ja8025278</a><br><a href="https://www.uniprot.org/uniprotkb/Q9F631">https://www.uniprot.org/uniprotkb/Q9F631</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja8025278">DOI:10.1021/ja8025278</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Li et al. combined MxcG reductase-domain formation of the free aldehyde intermediate with MxcL transamination to reconstitute myxochelin B biosynthesis in vitro.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q9F631">https://www.uniprot.org/uniprotkb/Q9F631</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>UniProtKB:Q9F631 resolves to the AF299336.1 mxcL gene product in the Stigmatella myxochelin gene cluster.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -221,8 +223,8 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>forms</td>
   <td>myxochelin B</td>
   <td>MxcL transamination yields the myxochelin B primary amine.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja8025278<br>https://www.uniprot.org/uniprotkb/Q9F631</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja8025278</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Li et al. combined MxcG reductase-domain formation of the free aldehyde intermediate with MxcL transamination to reconstitute myxochelin B biosynthesis in vitro.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q9F631</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>UniProtKB:Q9F631 resolves to the AF299336.1 mxcL gene product in the Stigmatella myxochelin gene cluster.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja8025278">DOI:10.1021/ja8025278</a><br><a href="https://www.uniprot.org/uniprotkb/Q9F631">https://www.uniprot.org/uniprotkb/Q9F631</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja8025278">DOI:10.1021/ja8025278</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Li et al. combined MxcG reductase-domain formation of the free aldehyde intermediate with MxcL transamination to reconstitute myxochelin B biosynthesis in vitro.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q9F631">https://www.uniprot.org/uniprotkb/Q9F631</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>UniProtKB:Q9F631 resolves to the AF299336.1 mxcL gene product in the Stigmatella myxochelin gene cluster.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -236,24 +238,33 @@ by the corpus tests.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=QTARRKFUMCSVOF-LBPRGKRZSA-N">AntibioticMech (myxochelin B) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=CHEBI%3A7061">MediaIngredientMech (CHEBI:7061) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A675526">TaxonMech: Stigmatella aurantiaca Sg a15 (NCBITaxon:675526) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0001345">PathwayMech (mibig:BGC0001345) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q=CHEBI%3A7061">MediaIngredientMech (CHEBI:7061) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A675526">TaxonMech: Stigmatella aurantiaca Sg a15 (NCBITaxon:675526) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0001345">PathwayMech (mibig:BGC0001345) &nearr;</a>
 </div>
 
 
+<h2 id="curation-history">Curation history <span class="tag">3</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-09-28T07:03:04Z">2026-09-28T07:03:04Z</time> &middot; <strong>ADDED_MYXOCHELIN_B_MXC_BIOSYNTHESIS_GRAPH</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added a Stigmatella aurantiaca Sg a15 MxcE, MxcF, MxcG, and MxcL biosynthetic pathway and BIOSYNTHESIS causal graph for myxochelin B; grounded AF299336.1 proteins AAG31128.1, AAG31129.1, AAG31130.1, and AAG31135.1 to UniProtKB:Q9F638, UniProtKB:Q9F637, UniProtKB:Q9F636, and UniProtKB:Q9F631.</p></li>
+<li><time datetime="2026-09-25T03:03:13Z">2026-09-25T03:03:13Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:12Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
+
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0001345</td><td>MIBIG</td><td>5</td></tr>
-<tr><td class="mono">CHEBI:7061</td><td>CHEBI</td><td>3-star</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001345">BGC0001345</a></td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_7061">CHEBI:7061</a></td><td>CHEBI</td><td>3-star</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/alkaloids/myxochelin-b.yaml">data/natural_products/alkaloids/myxochelin-b.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20CHEBI%3A7061&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Falkaloids%2Fmyxochelin-b.html">Report a problem with this record</a>: opens a GitHub issue that names CHEBI:7061 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Corpus as of 2026-10-23 22:53 UTC. Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 8e5d64d98cfd). Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Terpenoids</a> &middot; conidiogenone</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>conidiogenone</h1>
-<p class="sub"><span class="mono">CHEBI:189095</span>
+<p class="sub"><span class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_189095">CHEBI:189095</a></span>
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 </p>
 <details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/terpenoids/conidiogenone.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/terpenoids/conidiogenone.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 <p>A diterpenoid with formula C20H32O2. It is isolated from Penicillium cyclopium and exhibits potent conidiation inducing activity.</p>
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">VXPSMCORCRBNAO-TYVLEIALSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">C[C@H]1[C@@H](CC(=O)[C@]2([C@@]13C[C@]4(CCC([C@H]4[C@@H]3CC2)(C)C)C)C)O</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">npatlas:NPA017609</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://www.npatlas.org/explore/compounds/NPA017609">npatlas:NPA017609</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Terpenoids</a> —
@@ -57,57 +59,57 @@ terpene, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Penicillium rubens Wisconsin 54-1255<br><span class="mono">NCBITaxon:500485</span></td>
+  <td>Penicillium rubens Wisconsin 54-1255<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=500485">NCBITaxon:500485</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0002320</td>
-  <td><span class="mono">PMID:30343633</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002320">mibig:BGC0002320</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/30343633/">PMID:30343633</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">5</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Penicillium aurantiogriseum<br><span class="mono">NCBITaxon:36655</span></td>
+  <td>Penicillium aurantiogriseum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=36655">NCBITaxon:36655</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/S0040-4039(02)01493-4</td>
+  <td class="mono"><a href="https://doi.org/10.1016/S0040-4039%2802%2901493-4">DOI:10.1016/S0040-4039(02)01493-4</a></td>
 </tr>
 <tr>
-  <td>Penicillium aurantiogriseum<br><span class="mono">NCBITaxon:36655</span></td>
+  <td>Penicillium aurantiogriseum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=36655">NCBITaxon:36655</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1128/EC.1.5.823-829.2002</td>
+  <td class="mono"><a href="https://doi.org/10.1128/EC.1.5.823-829.2002">DOI:10.1128/EC.1.5.823-829.2002</a></td>
 </tr>
 <tr>
-  <td>Penicillium cyclopium<br><span class="mono">NCBITaxon:60167</span></td>
+  <td>Penicillium cyclopium<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=60167">NCBITaxon:60167</a></span></td>
   <td>CHEBI</td>
-  <td class="mono">10.1016/S0040-4039(02)01493-4</td>
+  <td class="mono"><a href="https://doi.org/10.1016/S0040-4039%2802%2901493-4">10.1016/S0040-4039(02)01493-4</a></td>
 </tr>
 <tr>
-  <td>Penicillium cyclopium<br><span class="mono">NCBITaxon:60167</span></td>
+  <td>Penicillium cyclopium<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=60167">NCBITaxon:60167</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/S0040-4039(02)01493-4</td>
+  <td class="mono"><a href="https://doi.org/10.1016/S0040-4039%2802%2901493-4">DOI:10.1016/S0040-4039(02)01493-4</a></td>
 </tr>
 <tr>
-  <td>Penicillium cyclopium<br><span class="mono">NCBITaxon:60167</span></td>
+  <td>Penicillium cyclopium<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=60167">NCBITaxon:60167</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1128/EC.1.5.823-829.2002</td>
+  <td class="mono"><a href="https://doi.org/10.1128/EC.1.5.823-829.2002">DOI:10.1128/EC.1.5.823-829.2002</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0002320</td>
-  <td>Penicillium rubens Wisconsin 54-1255<br><span class="mono">NCBITaxon:500485</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002320">mibig:BGC0002320</a></td>
+  <td>Penicillium rubens Wisconsin 54-1255<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=500485">NCBITaxon:500485</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:AM920435.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AM920435.1">genbank:AM920435.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -117,34 +119,34 @@ isolation report left it.</p>
 <h2>Biosynthesis <span class="tag causal">curated</span></h2>
 <p class="sub">Written by a curator with claim-level evidence on each step; not
 derived from a source. This is what the rest of the record exists to support.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthesis steps"><table>
 <tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
 <tr>
   <td>1</td>
-  <td>PchDS<br><span class="mono">UniProtKB:B6HFX8</span></td>
-  <td class="mono">RHEA:17653</td>
-  <td class="mono">CHEBI:175763 &rarr; CHEBI:58756</td>
-  <td class="mono">DOI:10.1080/09168451.2018.1536518</td>
+  <td>PchDS<br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/B6HFX8/entry">UniProtKB:B6HFX8</a></span></td>
+  <td class="mono"><a href="https://www.rhea-db.org/rhea/17653">RHEA:17653</a></td>
+  <td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_175763">CHEBI:175763</a> &rarr; <a href="http://purl.obolibrary.org/obo/CHEBI_58756">CHEBI:58756</a></td>
+  <td class="mono"><a href="https://doi.org/10.1080/09168451.2018.1536518">DOI:10.1080/09168451.2018.1536518</a></td>
 </tr>
 <tr>
   <td>2</td>
-  <td>PchDS<br><span class="mono">UniProtKB:B6HFX8</span></td>
+  <td>PchDS<br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/B6HFX8/entry">UniProtKB:B6HFX8</a></span></td>
   <td class="mono"></td>
-  <td class="mono">CHEBI:58756 &rarr; CHEBI:177897</td>
-  <td class="mono">DOI:10.1080/09168451.2018.1536518</td>
+  <td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_58756">CHEBI:58756</a> &rarr; <a href="http://purl.obolibrary.org/obo/CHEBI_177897">CHEBI:177897</a></td>
+  <td class="mono"><a href="https://doi.org/10.1080/09168451.2018.1536518">DOI:10.1080/09168451.2018.1536518</a></td>
 </tr>
 <tr>
   <td>3</td>
-  <td>PchP450<br><span class="mono">UniProtKB:B6HFX9</span></td>
+  <td>PchP450<br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/B6HFX9/entry">UniProtKB:B6HFX9</a></span></td>
   <td class="mono"></td>
-  <td class="mono">CHEBI:177897 &rarr; CHEBI:189095</td>
-  <td class="mono">DOI:10.1080/09168451.2018.1536518</td>
+  <td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_177897">CHEBI:177897</a> &rarr; <a href="http://purl.obolibrary.org/obo/CHEBI_189095">CHEBI:189095</a></td>
+  <td class="mono"><a href="https://doi.org/10.1080/09168451.2018.1536518">DOI:10.1080/09168451.2018.1536518</a></td>
 </tr>
 </table></div>
 <p class="sub">Step 1: The C-terminal prenyltransferase domain of PchDS condenses isopentenyl diphosphate with (2E,6E)-farnesyl diphosphate to form (2E,6E,10E)-geranylgeranyl diphosphate in the conidiogenone pathway.</p><p class="sub">Step 2: The N-terminal terpene cyclase domain of PchDS cyclizes (2E,6E,10E)-geranylgeranyl diphosphate to deoxyconidiogenol.</p><p class="sub">Step 3: PchP450 is the Pc20g10870 P450 homolog proposed to catalyze the deoxyconidiogenol-to-conidiogenone oxidation in the Penicillium rubens AM920435.1 locus; the exact two-round oxidation was assayed with the Penicillium roqueforti PrP450 homolog, not directly with PchP450.</p>
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for conidiogenone">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for conidiogenone">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -177,16 +179,16 @@ derived from a source. This is what the rest of the record exists to support.</p
 </div>
 
 <h2>Causal graph &mdash; biosynthesis <span class="tag">6 nodes, 6 edges</span></h2>
-<p class="sub">Penicillium rubens conidiogenone biosynthesis graph for PchDS formation and cyclization of GGPP, followed by the inferred PchP450 oxidation of deoxyconidiogenol to conidiogenone.</p><div class="scroll"><table>
+<p class="sub">Penicillium rubens conidiogenone biosynthesis graph for PchDS formation and cyclization of GGPP, followed by the inferred PchP450 oxidation of deoxyconidiogenol to conidiogenone.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>(2E,6E)-farnesyl diphosphate</td>
   <td>is prenylated by</td>
   <td>PchDS</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1080/09168451.2018.1536518<br>https://www.uniprot.org/uniprotkb/B6HFX8<br>https://www.ncbi.nlm.nih.gov/protein/CAP86415.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1080/09168451.2018.1536518</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Shiina et al. experimentally characterized the Penicillium rubens Wisconsin 54-1255 bifunctional diterpene synthase PchDS/Pc20g10860 that produces the conidiogenone precursor deoxyconidiogenol.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/B6HFX8</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>UniProtKB:B6HFX8 resolves PchDS to the reviewed Penicillium rubens Pc20g10860 protein and maps it to EMBL AM920435 protein CAP86415.1.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/CAP86415.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>NCBI GenPept CAP86415.1 is the AM920435.1 Pc20g10860 coding sequence cross-referenced from UniProtKB:B6HFX8.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1080/09168451.2018.1536518">DOI:10.1080/09168451.2018.1536518</a><br><a href="https://www.uniprot.org/uniprotkb/B6HFX8">https://www.uniprot.org/uniprotkb/B6HFX8</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/CAP86415.1">https://www.ncbi.nlm.nih.gov/protein/CAP86415.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1080/09168451.2018.1536518">DOI:10.1080/09168451.2018.1536518</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Shiina et al. experimentally characterized the Penicillium rubens Wisconsin 54-1255 bifunctional diterpene synthase PchDS/Pc20g10860 that produces the conidiogenone precursor deoxyconidiogenol.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/B6HFX8">https://www.uniprot.org/uniprotkb/B6HFX8</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>UniProtKB:B6HFX8 resolves PchDS to the reviewed Penicillium rubens Pc20g10860 protein and maps it to EMBL AM920435 protein CAP86415.1.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/CAP86415.1">https://www.ncbi.nlm.nih.gov/protein/CAP86415.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>NCBI GenPept CAP86415.1 is the AM920435.1 Pc20g10860 coding sequence cross-referenced from UniProtKB:B6HFX8.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -195,9 +197,9 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>forms</td>
   <td>(2E,6E,10E)-geranylgeranyl diphosphate</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1080/09168451.2018.1536518<br>https://www.uniprot.org/uniprotkb/B6HFX8<br>https://www.ncbi.nlm.nih.gov/protein/CAP86415.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1080/09168451.2018.1536518</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Shiina et al. experimentally characterized the Penicillium rubens Wisconsin 54-1255 bifunctional diterpene synthase PchDS/Pc20g10860 that produces the conidiogenone precursor deoxyconidiogenol.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/B6HFX8</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>UniProtKB:B6HFX8 resolves PchDS to the reviewed Penicillium rubens Pc20g10860 protein and maps it to EMBL AM920435 protein CAP86415.1.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/CAP86415.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>NCBI GenPept CAP86415.1 is the AM920435.1 Pc20g10860 coding sequence cross-referenced from UniProtKB:B6HFX8.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1080/09168451.2018.1536518">DOI:10.1080/09168451.2018.1536518</a><br><a href="https://www.uniprot.org/uniprotkb/B6HFX8">https://www.uniprot.org/uniprotkb/B6HFX8</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/CAP86415.1">https://www.ncbi.nlm.nih.gov/protein/CAP86415.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1080/09168451.2018.1536518">DOI:10.1080/09168451.2018.1536518</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Shiina et al. experimentally characterized the Penicillium rubens Wisconsin 54-1255 bifunctional diterpene synthase PchDS/Pc20g10860 that produces the conidiogenone precursor deoxyconidiogenol.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/B6HFX8">https://www.uniprot.org/uniprotkb/B6HFX8</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>UniProtKB:B6HFX8 resolves PchDS to the reviewed Penicillium rubens Pc20g10860 protein and maps it to EMBL AM920435 protein CAP86415.1.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/CAP86415.1">https://www.ncbi.nlm.nih.gov/protein/CAP86415.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>NCBI GenPept CAP86415.1 is the AM920435.1 Pc20g10860 coding sequence cross-referenced from UniProtKB:B6HFX8.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -206,9 +208,9 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>is cyclized by</td>
   <td>PchDS</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1080/09168451.2018.1536518<br>https://www.uniprot.org/uniprotkb/B6HFX8<br>https://www.ncbi.nlm.nih.gov/protein/CAP86415.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1080/09168451.2018.1536518</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Shiina et al. experimentally characterized the Penicillium rubens Wisconsin 54-1255 bifunctional diterpene synthase PchDS/Pc20g10860 that produces the conidiogenone precursor deoxyconidiogenol.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/B6HFX8</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>UniProtKB:B6HFX8 resolves PchDS to the reviewed Penicillium rubens Pc20g10860 protein and maps it to EMBL AM920435 protein CAP86415.1.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/CAP86415.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>NCBI GenPept CAP86415.1 is the AM920435.1 Pc20g10860 coding sequence cross-referenced from UniProtKB:B6HFX8.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1080/09168451.2018.1536518">DOI:10.1080/09168451.2018.1536518</a><br><a href="https://www.uniprot.org/uniprotkb/B6HFX8">https://www.uniprot.org/uniprotkb/B6HFX8</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/CAP86415.1">https://www.ncbi.nlm.nih.gov/protein/CAP86415.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1080/09168451.2018.1536518">DOI:10.1080/09168451.2018.1536518</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Shiina et al. experimentally characterized the Penicillium rubens Wisconsin 54-1255 bifunctional diterpene synthase PchDS/Pc20g10860 that produces the conidiogenone precursor deoxyconidiogenol.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/B6HFX8">https://www.uniprot.org/uniprotkb/B6HFX8</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>UniProtKB:B6HFX8 resolves PchDS to the reviewed Penicillium rubens Pc20g10860 protein and maps it to EMBL AM920435 protein CAP86415.1.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/CAP86415.1">https://www.ncbi.nlm.nih.gov/protein/CAP86415.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>NCBI GenPept CAP86415.1 is the AM920435.1 Pc20g10860 coding sequence cross-referenced from UniProtKB:B6HFX8.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -217,9 +219,9 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>forms</td>
   <td>deoxyconidiogenol</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1080/09168451.2018.1536518<br>https://www.uniprot.org/uniprotkb/B6HFX8<br>https://www.ncbi.nlm.nih.gov/protein/CAP86415.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1080/09168451.2018.1536518</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Shiina et al. experimentally characterized the Penicillium rubens Wisconsin 54-1255 bifunctional diterpene synthase PchDS/Pc20g10860 that produces the conidiogenone precursor deoxyconidiogenol.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/B6HFX8</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>UniProtKB:B6HFX8 resolves PchDS to the reviewed Penicillium rubens Pc20g10860 protein and maps it to EMBL AM920435 protein CAP86415.1.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/CAP86415.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>NCBI GenPept CAP86415.1 is the AM920435.1 Pc20g10860 coding sequence cross-referenced from UniProtKB:B6HFX8.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1080/09168451.2018.1536518">DOI:10.1080/09168451.2018.1536518</a><br><a href="https://www.uniprot.org/uniprotkb/B6HFX8">https://www.uniprot.org/uniprotkb/B6HFX8</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/CAP86415.1">https://www.ncbi.nlm.nih.gov/protein/CAP86415.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1080/09168451.2018.1536518">DOI:10.1080/09168451.2018.1536518</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Shiina et al. experimentally characterized the Penicillium rubens Wisconsin 54-1255 bifunctional diterpene synthase PchDS/Pc20g10860 that produces the conidiogenone precursor deoxyconidiogenol.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/B6HFX8">https://www.uniprot.org/uniprotkb/B6HFX8</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>UniProtKB:B6HFX8 resolves PchDS to the reviewed Penicillium rubens Pc20g10860 protein and maps it to EMBL AM920435 protein CAP86415.1.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/CAP86415.1">https://www.ncbi.nlm.nih.gov/protein/CAP86415.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>NCBI GenPept CAP86415.1 is the AM920435.1 Pc20g10860 coding sequence cross-referenced from UniProtKB:B6HFX8.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -228,9 +230,9 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>is putatively oxidized by</td>
   <td>PchP450</td>
   <td>The P. rubens PchP450 function is inferred from the assayed P. roqueforti PrP450 homolog.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1080/09168451.2018.1536518<br>https://www.uniprot.org/uniprotkb/B6HFX9<br>https://www.ncbi.nlm.nih.gov/protein/CAP86416.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1080/09168451.2018.1536518</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Shiina et al. identified PchP450/Pc20g10870 in the Penicillium rubens Wisconsin 54-1255 locus as the P450 homolog corresponding to the experimentally assayed PrP450 conidiogenone synthase.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/B6HFX9</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>UniProtKB:B6HFX9 resolves PchP450 to the reviewed Penicillium rubens Pc20g10870 protein, maps it to EMBL AM920435 protein CAP86416.1, and infers the conidiogenone oxidation function from the assayed Penicillium roqueforti PrP450 homolog.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/CAP86416.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>NCBI GenPept CAP86416.1 is the AM920435.1 Pc20g10870 coding sequence cross-referenced from UniProtKB:B6HFX9.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1080/09168451.2018.1536518">DOI:10.1080/09168451.2018.1536518</a><br><a href="https://www.uniprot.org/uniprotkb/B6HFX9">https://www.uniprot.org/uniprotkb/B6HFX9</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/CAP86416.1">https://www.ncbi.nlm.nih.gov/protein/CAP86416.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1080/09168451.2018.1536518">DOI:10.1080/09168451.2018.1536518</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Shiina et al. identified PchP450/Pc20g10870 in the Penicillium rubens Wisconsin 54-1255 locus as the P450 homolog corresponding to the experimentally assayed PrP450 conidiogenone synthase.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/B6HFX9">https://www.uniprot.org/uniprotkb/B6HFX9</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>UniProtKB:B6HFX9 resolves PchP450 to the reviewed Penicillium rubens Pc20g10870 protein, maps it to EMBL AM920435 protein CAP86416.1, and infers the conidiogenone oxidation function from the assayed Penicillium roqueforti PrP450 homolog.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/CAP86416.1">https://www.ncbi.nlm.nih.gov/protein/CAP86416.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>NCBI GenPept CAP86416.1 is the AM920435.1 Pc20g10870 coding sequence cross-referenced from UniProtKB:B6HFX9.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -239,9 +241,9 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>putatively forms</td>
   <td>conidiogenone</td>
   <td>The P. rubens PchP450 function is inferred from the assayed P. roqueforti PrP450 homolog.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1080/09168451.2018.1536518<br>https://www.uniprot.org/uniprotkb/B6HFX9<br>https://www.ncbi.nlm.nih.gov/protein/CAP86416.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1080/09168451.2018.1536518</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Shiina et al. identified PchP450/Pc20g10870 in the Penicillium rubens Wisconsin 54-1255 locus as the P450 homolog corresponding to the experimentally assayed PrP450 conidiogenone synthase.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/B6HFX9</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>UniProtKB:B6HFX9 resolves PchP450 to the reviewed Penicillium rubens Pc20g10870 protein, maps it to EMBL AM920435 protein CAP86416.1, and infers the conidiogenone oxidation function from the assayed Penicillium roqueforti PrP450 homolog.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/CAP86416.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>NCBI GenPept CAP86416.1 is the AM920435.1 Pc20g10870 coding sequence cross-referenced from UniProtKB:B6HFX9.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1080/09168451.2018.1536518">DOI:10.1080/09168451.2018.1536518</a><br><a href="https://www.uniprot.org/uniprotkb/B6HFX9">https://www.uniprot.org/uniprotkb/B6HFX9</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/CAP86416.1">https://www.ncbi.nlm.nih.gov/protein/CAP86416.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1080/09168451.2018.1536518">DOI:10.1080/09168451.2018.1536518</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Shiina et al. identified PchP450/Pc20g10870 in the Penicillium rubens Wisconsin 54-1255 locus as the P450 homolog corresponding to the experimentally assayed PrP450 conidiogenone synthase.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/B6HFX9">https://www.uniprot.org/uniprotkb/B6HFX9</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>UniProtKB:B6HFX9 resolves PchP450 to the reviewed Penicillium rubens Pc20g10870 protein, maps it to EMBL AM920435 protein CAP86416.1, and infers the conidiogenone oxidation function from the assayed Penicillium roqueforti PrP450 homolog.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/CAP86416.1">https://www.ncbi.nlm.nih.gov/protein/CAP86416.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>NCBI GenPept CAP86416.1 is the AM920435.1 Pc20g10870 coding sequence cross-referenced from UniProtKB:B6HFX9.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -255,24 +257,33 @@ by the corpus tests.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=VXPSMCORCRBNAO-TYVLEIALSA-N">AntibioticMech (conidiogenone) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=CHEBI%3A189095">MediaIngredientMech (CHEBI:189095) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A500485">TaxonMech: Penicillium rubens Wisconsin 54-1255 (NCBITaxon:500485) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0002320">PathwayMech (mibig:BGC0002320) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q=CHEBI%3A189095">MediaIngredientMech (CHEBI:189095) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A500485">TaxonMech: Penicillium rubens Wisconsin 54-1255 (NCBITaxon:500485) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0002320">PathwayMech (mibig:BGC0002320) &nearr;</a>
 </div>
 
 
+<h2 id="curation-history">Curation history <span class="tag">3</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-09-27T03:02:37Z">2026-09-27T03:02:37Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added the PchDS/PchP450 conidiogenone biosynthetic pathway and a BIOSYNTHESIS causal graph grounded to UniProtKB accessions B6HFX8 and B6HFX9, with the PchP450 oxidation marked as proposed from the experimentally assayed PrP450 homolog.</p></li>
+<li><time datetime="2026-09-25T03:03:36Z">2026-09-25T03:03:36Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:15Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
+
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0002320</td><td>MIBIG</td><td>3</td></tr>
-<tr><td class="mono">CHEBI:189095</td><td>CHEBI</td><td>3-star</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002320">BGC0002320</a></td><td>MIBIG</td><td>3</td></tr>
+<tr><td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_189095">CHEBI:189095</a></td><td>CHEBI</td><td>3-star</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/terpenoids/conidiogenone.yaml">data/natural_products/terpenoids/conidiogenone.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20CHEBI%3A189095&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Fterpenoids%2Fconidiogenone.html">Report a problem with this record</a>: opens a GitHub issue that names CHEBI:189095 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Corpus as of 2026-10-23 22:53 UTC. Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 8e5d64d98cfd). Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

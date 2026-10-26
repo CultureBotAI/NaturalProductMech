@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Amino acids and peptides</a> &middot; vancomycin</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>vancomycin</h1>
-<p class="sub"><span class="mono">CHEBI:28001</span>
+<p class="sub"><span class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_28001">CHEBI:28001</a></span>
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 <span class="tag">antibacterial</span></p>
 <details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/amino_acids_and_peptides/vancomycin.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/amino_acids_and_peptides/vancomycin.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 <p>A complex glycopeptide from Streptomyces orientalis. It inhibits a specific step in the synthesis of the peptidoglycan layer in the Gram-positive bacteria Staphylococcus aureus and Clostridium difficile.</p>
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">MYPYJXKWCTUITO-LYRMYLQWSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">C[C@H]1[C@H]([C@@](C[C@@H](O1)O[C@@H]2[C@H]([C@@H]([C@H](O[C@H]2OC3=C4C=C5C=C3OC6=C(C=C(C=C6)[C@H]([C@H](C(=O)N[C@H](C(=O)N[C@H]5C(=O)N[C@@H]7C8=CC(=C(C=C8)O)C9=C(C=C(C=C9[C@H](NC(=O)[C@H]([C@@H](C1=CC(=C(O4)C=C1)Cl)O)NC7=O)C(=O)O)O)O)CC(=O)N)NC(=O)[C@@H](CC(C)C)NC)O)Cl)CO)O)O)(C)N)O</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">pubchem:14969</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/compound/14969">pubchem:14969</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Amino acids and peptides</a> —
@@ -57,157 +59,157 @@ saccharide, nrps, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Amycolatopsis orientalis HCCB10007 (ATCC43491)<br><span class="mono">NCBITaxon:1156913</span></td>
+  <td>Amycolatopsis orientalis HCCB10007 (ATCC43491)<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1156913">NCBITaxon:1156913</a></span></td>
   <td><span class="tag causal">BGC_CHARACTERIZED</span></td>
-  <td class="mono">mibig:BGC0000455</td>
-  <td><span class="mono">DOI:10.1021/ja00361a029</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000455">mibig:BGC0000455</a></td>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja00361a029">DOI:10.1021/ja00361a029</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">25</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Ascochyta medicaginicola<br><span class="mono">NCBITaxon:107450</span></td>
+  <td>Ascochyta medicaginicola<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=107450">NCBITaxon:107450</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/NP9005234</td>
+  <td class="mono"><a href="https://doi.org/10.1021/NP9005234">DOI:10.1021/NP9005234</a></td>
 </tr>
 <tr>
-  <td>Nostoc<br><span class="mono">NCBITaxon:1177</span></td>
+  <td>Nostoc<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1177">NCBITaxon:1177</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/ACS.JNATPROD.7B00638</td>
+  <td class="mono"><a href="https://doi.org/10.1021/ACS.JNATPROD.7B00638">DOI:10.1021/ACS.JNATPROD.7B00638</a></td>
 </tr>
 <tr>
-  <td>Trichoderma virens<br><span class="mono">NCBITaxon:1331945</span></td>
+  <td>Trichoderma virens<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1331945">NCBITaxon:1331945</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/ACS.JNATPROD.9B00760</td>
+  <td class="mono"><a href="https://doi.org/10.1021/ACS.JNATPROD.9B00760">DOI:10.1021/ACS.JNATPROD.9B00760</a></td>
 </tr>
 <tr>
-  <td>Laxitextum incrustatum<br><span class="mono">NCBITaxon:1812024</span></td>
+  <td>Laxitextum incrustatum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1812024">NCBITaxon:1812024</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/ACS.JNATPROD.5B00950</td>
+  <td class="mono"><a href="https://doi.org/10.1021/ACS.JNATPROD.5B00950">DOI:10.1021/ACS.JNATPROD.5B00950</a></td>
 </tr>
 <tr>
-  <td>Nocardia<br><span class="mono">NCBITaxon:1817</span></td>
+  <td>Nocardia<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1817">NCBITaxon:1817</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/NP300016R</td>
+  <td class="mono"><a href="https://doi.org/10.1021/NP300016R">DOI:10.1021/NP300016R</a></td>
 </tr>
 <tr>
-  <td>Micromonospora<br><span class="mono">NCBITaxon:1873</span></td>
+  <td>Micromonospora<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1873">NCBITaxon:1873</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/ACS.JNATPROD.6B00555</td>
+  <td class="mono"><a href="https://doi.org/10.1021/ACS.JNATPROD.6B00555">DOI:10.1021/ACS.JNATPROD.6B00555</a></td>
 </tr>
 <tr>
-  <td>Verrucosispora<br><span class="mono">NCBITaxon:1873</span></td>
+  <td>Verrucosispora<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1873">NCBITaxon:1873</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/ACS.JNATPROD.9B00654</td>
+  <td class="mono"><a href="https://doi.org/10.1021/ACS.JNATPROD.9B00654">DOI:10.1021/ACS.JNATPROD.9B00654</a></td>
 </tr>
 <tr>
-  <td>Micromonospora<br><span class="mono">NCBITaxon:1873</span></td>
+  <td>Micromonospora<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1873">NCBITaxon:1873</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/ACS.JNATPROD.9B00808</td>
+  <td class="mono"><a href="https://doi.org/10.1021/ACS.JNATPROD.9B00808">DOI:10.1021/ACS.JNATPROD.9B00808</a></td>
 </tr>
 <tr>
-  <td>Verrucosispora<br><span class="mono">NCBITaxon:1873</span></td>
+  <td>Verrucosispora<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1873">NCBITaxon:1873</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/ACS.JNATPROD.9B01185</td>
+  <td class="mono"><a href="https://doi.org/10.1021/ACS.JNATPROD.9B01185">DOI:10.1021/ACS.JNATPROD.9B01185</a></td>
 </tr>
 <tr>
-  <td>Streptomyces<br><span class="mono">NCBITaxon:1883</span></td>
+  <td>Streptomyces<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1883">NCBITaxon:1883</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/J.BMC.2018.05.017</td>
+  <td class="mono"><a href="https://doi.org/10.1016/J.BMC.2018.05.017">DOI:10.1016/J.BMC.2018.05.017</a></td>
 </tr>
 <tr>
-  <td>Streptomyces<br><span class="mono">NCBITaxon:1883</span></td>
+  <td>Streptomyces<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1883">NCBITaxon:1883</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/ACS.JNATPROD.0C00161</td>
+  <td class="mono"><a href="https://doi.org/10.1021/ACS.JNATPROD.0C00161">DOI:10.1021/ACS.JNATPROD.0C00161</a></td>
 </tr>
 <tr>
-  <td>Streptomyces<br><span class="mono">NCBITaxon:1883</span></td>
+  <td>Streptomyces<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1883">NCBITaxon:1883</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/ACS.JNATPROD.8B00544</td>
+  <td class="mono"><a href="https://doi.org/10.1021/ACS.JNATPROD.8B00544">DOI:10.1021/ACS.JNATPROD.8B00544</a></td>
 </tr>
 <tr>
-  <td>Streptomyces<br><span class="mono">NCBITaxon:1883</span></td>
+  <td>Streptomyces<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1883">NCBITaxon:1883</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/ACS.JNATPROD.9B00481</td>
+  <td class="mono"><a href="https://doi.org/10.1021/ACS.JNATPROD.9B00481">DOI:10.1021/ACS.JNATPROD.9B00481</a></td>
 </tr>
 <tr>
-  <td>Streptomyces<br><span class="mono">NCBITaxon:1883</span></td>
+  <td>Streptomyces<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1883">NCBITaxon:1883</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/NP990088Y</td>
+  <td class="mono"><a href="https://doi.org/10.1021/NP990088Y">DOI:10.1021/NP990088Y</a></td>
 </tr>
 <tr>
-  <td>Streptomyces albidoflavus<br><span class="mono">NCBITaxon:1886</span></td>
+  <td>Streptomyces albidoflavus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1886">NCBITaxon:1886</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/ACS.JNATPROD.8B00448</td>
+  <td class="mono"><a href="https://doi.org/10.1021/ACS.JNATPROD.8B00448">DOI:10.1021/ACS.JNATPROD.8B00448</a></td>
 </tr>
 <tr>
-  <td>Streptomyces albidoflavus<br><span class="mono">NCBITaxon:1886</span></td>
+  <td>Streptomyces albidoflavus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1886">NCBITaxon:1886</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1099/MIC.0.000763</td>
+  <td class="mono"><a href="https://doi.org/10.1099/MIC.0.000763">DOI:10.1099/MIC.0.000763</a></td>
 </tr>
 <tr>
-  <td>Streptomyces koyangensis<br><span class="mono">NCBITaxon:188770</span></td>
+  <td>Streptomyces koyangensis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=188770">NCBITaxon:188770</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/ACS.JNATPROD.8B00448</td>
+  <td class="mono"><a href="https://doi.org/10.1021/ACS.JNATPROD.8B00448">DOI:10.1021/ACS.JNATPROD.8B00448</a></td>
 </tr>
 <tr>
-  <td>Streptomyces coelicolor<br><span class="mono">NCBITaxon:1902</span></td>
+  <td>Streptomyces coelicolor<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1902">NCBITaxon:1902</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1099/MIC.0.000763</td>
+  <td class="mono"><a href="https://doi.org/10.1099/MIC.0.000763">DOI:10.1099/MIC.0.000763</a></td>
 </tr>
 <tr>
-  <td>Streptomyces hygroscopicus<br><span class="mono">NCBITaxon:1912</span></td>
+  <td>Streptomyces hygroscopicus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1912">NCBITaxon:1912</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/NP400145U</td>
+  <td class="mono"><a href="https://doi.org/10.1021/NP400145U">DOI:10.1021/NP400145U</a></td>
 </tr>
 <tr>
-  <td>Vibrio spartinae<br><span class="mono">NCBITaxon:1918945</span></td>
+  <td>Vibrio spartinae<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1918945">NCBITaxon:1918945</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/ACS.JNATPROD.9B01159</td>
+  <td class="mono"><a href="https://doi.org/10.1021/ACS.JNATPROD.9B01159">DOI:10.1021/ACS.JNATPROD.9B01159</a></td>
 </tr>
 <tr>
-  <td>Aspergillus porosus<br><span class="mono">NCBITaxon:1924929</span></td>
+  <td>Aspergillus porosus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1924929">NCBITaxon:1924929</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/ACS.JNATPROD.9B00416</td>
+  <td class="mono"><a href="https://doi.org/10.1021/ACS.JNATPROD.9B00416">DOI:10.1021/ACS.JNATPROD.9B00416</a></td>
 </tr>
 <tr>
-  <td>Amycolatopsis orientalis<br><span class="mono">NCBITaxon:31958</span></td>
+  <td>Amycolatopsis orientalis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=31958">NCBITaxon:31958</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1186/1471-2164-15-363</td>
+  <td class="mono"><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></td>
 </tr>
 <tr>
-  <td>Dolomiaea costus<br><span class="mono">NCBITaxon:324593</span></td>
+  <td>Dolomiaea costus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=324593">NCBITaxon:324593</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/NP030147E</td>
+  <td class="mono"><a href="https://doi.org/10.1021/NP030147E">DOI:10.1021/NP030147E</a></td>
 </tr>
 <tr>
-  <td>Actinospica<br><span class="mono">NCBITaxon:414715</span></td>
+  <td>Actinospica<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=414715">NCBITaxon:414715</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/NP300470F</td>
+  <td class="mono"><a href="https://doi.org/10.1021/NP300470F">DOI:10.1021/NP300470F</a></td>
 </tr>
 <tr>
-  <td>Streptomyces scopuliridis<br><span class="mono">NCBITaxon:452529</span></td>
+  <td>Streptomyces scopuliridis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=452529">NCBITaxon:452529</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/NP500399V</td>
+  <td class="mono"><a href="https://doi.org/10.1021/NP500399V">DOI:10.1021/NP500399V</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0000455</td>
-  <td>Amycolatopsis orientalis HCCB10007 (ATCC43491)<br><span class="mono">NCBITaxon:1156913</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000455">mibig:BGC0000455</a></td>
+  <td>Amycolatopsis orientalis HCCB10007 (ATCC43491)<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1156913">NCBITaxon:1156913</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:HQ679900.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1">genbank:HQ679900.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -217,7 +219,7 @@ isolation report left it.</p>
 
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for vancomycin">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for vancomycin">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -250,19 +252,19 @@ isolation report left it.</p>
 </div>
 
 <h2>Causal graph &mdash; biosynthesis <span class="tag">23 nodes, 28 edges</span></h2>
-<p class="sub">Reported native-background gene-replacement comparisons for GtfD, GtfE, Vmt and Vhal, distinct from purified-enzyme chemistry. Four current sequence references are verified; the Vhal reference identifies the source-named locus, not the historical mutant target. Published Vhal homology arms instead match hydrolase boundaries. GtfE reference start boundaries and historical/current taxonomy are explicit. Each culture has its own analytical branch and source-assigned derivative. No tagged-Vmt in-vitro assay, antimicrobial mechanism, producer upgrade, origin change or full-record sign-off is asserted.</p><div class="scroll"><table>
+<p class="sub">Reported native-background gene-replacement comparisons for GtfD, GtfE, Vmt and Vhal, distinct from purified-enzyme chemistry. Four current sequence references are verified; the Vhal reference identifies the source-named locus, not the historical mutant target. Published Vhal homology arms instead match hydrolase boundaries. GtfE reference start boundaries and historical/current taxonomy are explicit. Each culture has its own analytical branch and source-assigned derivative. No tagged-Vmt in-vitro assay, antimicrobial mechanism, producer upgrade, origin change or full-record sign-off is asserted.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>Current HCCB10007 GtfD native reference example</td>
   <td>is_native_gene_product_example_for</td>
   <td>Study source-named GtfD/AORI_1486 gene target</td>
   <td>Current AORI_1486 reference: complete CP003410.1 CDS translation equals AGM04074.1 and the 408-residue UniProt sequence. The genome and UniProt retain strain HCCB10007 but name Amycolatopsis keratiniphila, taxon129921; GenPept documents an October2018 taxonomic update from the historical A. orientalis name. This does not silently change source-owned producer fields or prove the sequence of the experimental stock or marker construct. The native CDS translation also equals AEI58872.1; both published39nt homology arms match its start/stop boundaries uniquely in the retained genome. This is an exact sequence-match check, not experimental primer specificity or clone resequencing. Reviewed Q9AFC7 has a different source strain and sequence and is not selected.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/R4SKH3<br>https://www.ncbi.nlm.nih.gov/protein/AGM04074.1<br>https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1<br>https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1<br>https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf<br>DOI:10.1186/1471-2164-15-363</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/R4SKH3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Unreviewed entry53/sequence1, 408 residues; source strain HCCB10007, taxon129921. Annotation alone is not experimental catalysis.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGM04074.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Versioned native protein and AORI_1486 coded_by coordinates; source strain and taxonomic-update comment inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Complete-CDS/table11 translation, independent GenPept coded_by extraction and current UniProt correspondence verified. Whole-genome exact primer matches audited.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Older cluster CDS compared separately; GtfE start boundary differs. The two complete genomic deposits are not asserted identical.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Page5 primer rows and underlined marker tails visually inspected. Native targeting-arm correspondence is qualified separately from the historical construct.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1186/1471-2164-15-363</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Table2 names the locus; Figure6 and mutant-construction methods describe the source-named intervention. Reference selection is a curator inference.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/R4SKH3">https://www.uniprot.org/uniprotkb/R4SKH3</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AGM04074.1">https://www.ncbi.nlm.nih.gov/protein/AGM04074.1</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1">https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1">https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1</a><br><a href="https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf">https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</a><br><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/R4SKH3">https://www.uniprot.org/uniprotkb/R4SKH3</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Unreviewed entry53/sequence1, 408 residues; source strain HCCB10007, taxon129921. Annotation alone is not experimental catalysis.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AGM04074.1">https://www.ncbi.nlm.nih.gov/protein/AGM04074.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Versioned native protein and AORI_1486 coded_by coordinates; source strain and taxonomic-update comment inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1">https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Complete-CDS/table11 translation, independent GenPept coded_by extraction and current UniProt correspondence verified. Whole-genome exact primer matches audited.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1">https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Older cluster CDS compared separately; GtfE start boundary differs. The two complete genomic deposits are not asserted identical.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf">https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Page5 primer rows and underlined marker tails visually inspected. Native targeting-arm correspondence is qualified separately from the historical construct.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Table2 names the locus; Figure6 and mutant-construction methods describe the source-named intervention. Reference selection is a curator inference.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -271,8 +273,8 @@ isolation report left it.</p>
   <td>was_reported_target_of_gene_replacement_in</td>
   <td>Study culture reported as the GtfD gene-replacement mutant</td>
   <td>The authors report individual replacement with an apramycin-resistance marker by homologous recombination and PCR confirmation. This is not a scarless deletion, purified-protein assay or demonstrated absence of polar effects; no complementation rescue is asserted.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1186/1471-2164-15-363<br>https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1186/1471-2164-15-363</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure6 caption and construction methods page15.</dd><dt>retrieved on</dt><dd>2026-10-06</dd><dt>snippet</dt><dd>replaced in-frame by selection markers</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Page5 targeting primers support the named reference locus, not an independently sequenced historical clone.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a><br><a href="https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf">https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure6 caption and construction methods page15.</dd><dt>retrieved on</dt><dd>2026-10-06</dd><dt>snippet</dt><dd>replaced in-frame by selection markers</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf">https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Page5 targeting primers support the named reference locus, not an independently sequenced historical clone.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -281,7 +283,7 @@ isolation report left it.</p>
   <td>was_reported_parent_background_for</td>
   <td>Study culture reported as the GtfD gene-replacement mutant</td>
   <td>The paper describes HCCB10007 as an industrial ATCC43491-derived strain produced by physical and chemical mutagenesis, not an unmodified type-strain stock. Its named descendants were genetically manipulated in this study. No source-owned origin category or producer grade is changed.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1186/1471-2164-15-363</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1186/1471-2164-15-363</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Background page3 and construction methods page15.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Background page3 and construction methods page15.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -290,8 +292,8 @@ isolation report left it.</p>
   <td>provided_reported_culture_extract_for</td>
   <td>HPLC-MS profile reported for the GtfD mutant</td>
   <td>The study profiles derivatives from disrupted culture pellets by HPLC-Q-TOF-MS. The supplement describes shared cultivation conditions for parent and mutants. No quantitative yield, assay-stock sequence or absolute absence of residual vancomycin is inferred. This is a culture-level genetic phenotype, not an isolated enzyme reaction.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1186/1471-2164-15-363<br>https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1186/1471-2164-15-363</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure6C; HPLC-MS methods page16.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Culture methods page3; parent and mutant cultivation context, not proof that the reference genome is the exact culture aliquot.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a><br><a href="https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf">https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure6C; HPLC-MS methods page16.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf">https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Culture methods page3; parent and mutant cultivation context, not proof that the reference genome is the exact culture aliquot.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -300,7 +302,7 @@ isolation report left it.</p>
   <td>provided_reported_comparator_for</td>
   <td>HPLC-MS profile reported for the GtfD mutant</td>
   <td>Figure6A is a vancomycin standard, not a parental-culture trace or an internal quantitative standard. The figure supports the reported comparison without independently establishing the owner&#39;s exact stereochemistry, protonation state or salt form in each sample.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1186/1471-2164-15-363</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1186/1471-2164-15-363</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure6A and C; Figure1 structural assignments.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure6A and C; Figure1 structural assignments.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -309,7 +311,7 @@ isolation report left it.</p>
   <td>yielded_source_assigned_detection_of</td>
   <td>Source-assigned desvancosamine vancomycin</td>
   <td>The authors assign desvancosamine vancomycin to the profile in Figure6C. Retained main Figure1 and Figure6 were visually inspected; this preserves the source assignment, not independent structure elucidation, a molar yield, or proof that only one metabolite was present.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1186/1471-2164-15-363</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1186/1471-2164-15-363</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Results pages12-14; Figures1 and6C.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Results pages12-14; Figures1 and6C.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -318,7 +320,7 @@ isolation report left it.</p>
   <td>provides_bounded_genetic_context_for</td>
   <td>Bounded vancomycin tailoring-gene evidence</td>
   <td>The genetic comparison provides bounded context for vancomycin tailoring. No direct substrate-to-product catalytic edge, physical complex, universal reaction order, pure-enzyme specificity or new natural-occurrence claim is inferred. Antimicrobial comparisons remain outside this biosynthesis graph and the existing AntibioticMech link is preserved.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1186/1471-2164-15-363</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1186/1471-2164-15-363</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Results and discussion pages12-14; source-assigned derivatives interpreted at culture level, with construct and analytical limitations retained.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Results and discussion pages12-14; source-assigned derivatives interpreted at culture level, with construct and analytical limitations retained.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -327,12 +329,12 @@ isolation report left it.</p>
   <td>is_native_gene_product_example_for</td>
   <td>Study source-named GtfE/AORI_1487 gene target</td>
   <td>Current AORI_1487 reference: complete CP003410.1 CDS translation equals AGM04075.1 and the 409-residue UniProt sequence. The genome and UniProt retain strain HCCB10007 but name Amycolatopsis keratiniphila, taxon129921; GenPept documents an October2018 taxonomic update from the historical A. orientalis name. This does not silently change source-owned producer fields or prove the sequence of the experimental stock or marker construct. The older AEI58873.1 protein has408 residues. The current CDS begins one GTG codon earlier, adding one initiator methionine; the remaining CDS and protein sequence are identical. The published targeting arms correspond to the older start boundary, not a measured native N-terminus. Retired P96565 and different-strain Q9AFC6 are not substituted.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/R4SMY8<br>https://www.ncbi.nlm.nih.gov/protein/AGM04075.1<br>https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1<br>https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1<br>https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf<br>DOI:10.1186/1471-2164-15-363</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/R4SMY8</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Unreviewed entry43/sequence1, 409 residues; source strain HCCB10007, taxon129921. Annotation alone is not experimental catalysis.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGM04075.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Versioned native protein and AORI_1487 coded_by coordinates; source strain and taxonomic-update comment inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Complete-CDS/table11 translation, independent GenPept coded_by extraction and current UniProt correspondence verified. Whole-genome exact primer matches audited.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Older cluster CDS compared separately; GtfE start boundary differs. The two complete genomic deposits are not asserted identical.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Page5 primer rows and underlined marker tails visually inspected. Native targeting-arm correspondence is qualified separately from the historical construct.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1186/1471-2164-15-363</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Table2 names the locus; Figure6 and mutant-construction methods describe the source-named intervention. Reference selection is a curator inference.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/R4SMY8">https://www.uniprot.org/uniprotkb/R4SMY8</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AGM04075.1">https://www.ncbi.nlm.nih.gov/protein/AGM04075.1</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1">https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1">https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1</a><br><a href="https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf">https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</a><br><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/R4SMY8">https://www.uniprot.org/uniprotkb/R4SMY8</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Unreviewed entry43/sequence1, 409 residues; source strain HCCB10007, taxon129921. Annotation alone is not experimental catalysis.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AGM04075.1">https://www.ncbi.nlm.nih.gov/protein/AGM04075.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Versioned native protein and AORI_1487 coded_by coordinates; source strain and taxonomic-update comment inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1">https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Complete-CDS/table11 translation, independent GenPept coded_by extraction and current UniProt correspondence verified. Whole-genome exact primer matches audited.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1">https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Older cluster CDS compared separately; GtfE start boundary differs. The two complete genomic deposits are not asserted identical.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf">https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Page5 primer rows and underlined marker tails visually inspected. Native targeting-arm correspondence is qualified separately from the historical construct.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Table2 names the locus; Figure6 and mutant-construction methods describe the source-named intervention. Reference selection is a curator inference.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -341,8 +343,8 @@ isolation report left it.</p>
   <td>was_reported_target_of_gene_replacement_in</td>
   <td>Study culture reported as the GtfE gene-replacement mutant</td>
   <td>The authors report individual replacement with an apramycin-resistance marker by homologous recombination and PCR confirmation. This is not a scarless deletion, purified-protein assay or demonstrated absence of polar effects; no complementation rescue is asserted.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1186/1471-2164-15-363<br>https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1186/1471-2164-15-363</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure6 caption and construction methods page15.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Page5 targeting primers support the named reference locus, not an independently sequenced historical clone.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a><br><a href="https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf">https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure6 caption and construction methods page15.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf">https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Page5 targeting primers support the named reference locus, not an independently sequenced historical clone.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -351,7 +353,7 @@ isolation report left it.</p>
   <td>was_reported_parent_background_for</td>
   <td>Study culture reported as the GtfE gene-replacement mutant</td>
   <td>The paper describes HCCB10007 as an industrial ATCC43491-derived strain produced by physical and chemical mutagenesis, not an unmodified type-strain stock. Its named descendants were genetically manipulated in this study. No source-owned origin category or producer grade is changed.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1186/1471-2164-15-363</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1186/1471-2164-15-363</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Background page3 and construction methods page15.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Background page3 and construction methods page15.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -360,8 +362,8 @@ isolation report left it.</p>
   <td>provided_reported_culture_extract_for</td>
   <td>HPLC-MS profile reported for the GtfE mutant</td>
   <td>The study profiles derivatives from disrupted culture pellets by HPLC-Q-TOF-MS. The supplement describes shared cultivation conditions for parent and mutants. No quantitative yield, assay-stock sequence or absolute absence of residual vancomycin is inferred. This is a culture-level genetic phenotype, not an isolated enzyme reaction.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1186/1471-2164-15-363<br>https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1186/1471-2164-15-363</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure6D; HPLC-MS methods page16.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Culture methods page3; parent and mutant cultivation context, not proof that the reference genome is the exact culture aliquot.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a><br><a href="https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf">https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure6D; HPLC-MS methods page16.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf">https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Culture methods page3; parent and mutant cultivation context, not proof that the reference genome is the exact culture aliquot.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -370,7 +372,7 @@ isolation report left it.</p>
   <td>provided_reported_comparator_for</td>
   <td>HPLC-MS profile reported for the GtfE mutant</td>
   <td>Figure6A is a vancomycin standard, not a parental-culture trace or an internal quantitative standard. The figure supports the reported comparison without independently establishing the owner&#39;s exact stereochemistry, protonation state or salt form in each sample.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1186/1471-2164-15-363</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1186/1471-2164-15-363</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure6A and D; Figure1 structural assignments.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure6A and D; Figure1 structural assignments.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -379,7 +381,7 @@ isolation report left it.</p>
   <td>yielded_source_assigned_detection_of</td>
   <td>Source-assigned aglucovancomycin</td>
   <td>The authors assign aglucovancomycin to the profile in Figure6D. Retained main Figure1 and Figure6 were visually inspected; this preserves the source assignment, not independent structure elucidation, a molar yield, or proof that only one metabolite was present. Both sugar residues are absent in the source-assigned product; this does not mean that GtfE directly transfers the second sugar.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1186/1471-2164-15-363</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1186/1471-2164-15-363</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Results pages12-14; Figures1 and6D.</dd><dt>retrieved on</dt><dd>2026-10-06</dd><dt>snippet</dt><dd>both the glycosyl residues were absent</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Results pages12-14; Figures1 and6D.</dd><dt>retrieved on</dt><dd>2026-10-06</dd><dt>snippet</dt><dd>both the glycosyl residues were absent</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -388,7 +390,7 @@ isolation report left it.</p>
   <td>provides_bounded_genetic_context_for</td>
   <td>Bounded vancomycin tailoring-gene evidence</td>
   <td>The genetic comparison provides bounded context for vancomycin tailoring. No direct substrate-to-product catalytic edge, physical complex, universal reaction order, pure-enzyme specificity or new natural-occurrence claim is inferred. Antimicrobial comparisons remain outside this biosynthesis graph and the existing AntibioticMech link is preserved.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1186/1471-2164-15-363</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1186/1471-2164-15-363</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Results and discussion pages12-14; source-assigned derivatives interpreted at culture level, with construct and analytical limitations retained.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Results and discussion pages12-14; source-assigned derivatives interpreted at culture level, with construct and analytical limitations retained.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -397,12 +399,12 @@ isolation report left it.</p>
   <td>is_native_gene_product_example_for</td>
   <td>Study source-named Vmt/AORI_1490 gene target</td>
   <td>Current AORI_1490 reference: complete CP003410.1 CDS translation equals AGM04078.1 and the 280-residue UniProt sequence. The genome and UniProt retain strain HCCB10007 but name Amycolatopsis keratiniphila, taxon129921; GenPept documents an October2018 taxonomic update from the historical A. orientalis name. This does not silently change source-owned producer fields or prove the sequence of the experimental stock or marker construct. The native CDS translation also equals AEI58876.1; both published39nt homology arms match its start/stop boundaries uniquely in the retained genome. This is an exact sequence-match check, not experimental primer specificity or clone resequencing. This native protein is not the tagged in-vitro preparation; that separate assay is not added here.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/R4T056<br>https://www.ncbi.nlm.nih.gov/protein/AGM04078.1<br>https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1<br>https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1<br>https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf<br>DOI:10.1186/1471-2164-15-363</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/R4T056</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Unreviewed entry39/sequence1, 280 residues; source strain HCCB10007, taxon129921. Annotation alone is not experimental catalysis.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGM04078.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Versioned native protein and AORI_1490 coded_by coordinates; source strain and taxonomic-update comment inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Complete-CDS/table11 translation, independent GenPept coded_by extraction and current UniProt correspondence verified. Whole-genome exact primer matches audited.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Older cluster CDS compared separately; GtfE start boundary differs. The two complete genomic deposits are not asserted identical.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Page5 primer rows and underlined marker tails visually inspected. Native targeting-arm correspondence is qualified separately from the historical construct.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1186/1471-2164-15-363</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Table2 names the locus; Figure6 and mutant-construction methods describe the source-named intervention. Reference selection is a curator inference.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/R4T056">https://www.uniprot.org/uniprotkb/R4T056</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AGM04078.1">https://www.ncbi.nlm.nih.gov/protein/AGM04078.1</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1">https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1">https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1</a><br><a href="https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf">https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</a><br><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/R4T056">https://www.uniprot.org/uniprotkb/R4T056</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Unreviewed entry39/sequence1, 280 residues; source strain HCCB10007, taxon129921. Annotation alone is not experimental catalysis.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AGM04078.1">https://www.ncbi.nlm.nih.gov/protein/AGM04078.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Versioned native protein and AORI_1490 coded_by coordinates; source strain and taxonomic-update comment inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1">https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Complete-CDS/table11 translation, independent GenPept coded_by extraction and current UniProt correspondence verified. Whole-genome exact primer matches audited.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1">https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Older cluster CDS compared separately; GtfE start boundary differs. The two complete genomic deposits are not asserted identical.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf">https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Page5 primer rows and underlined marker tails visually inspected. Native targeting-arm correspondence is qualified separately from the historical construct.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Table2 names the locus; Figure6 and mutant-construction methods describe the source-named intervention. Reference selection is a curator inference.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -411,8 +413,8 @@ isolation report left it.</p>
   <td>was_reported_target_of_gene_replacement_in</td>
   <td>Study culture reported as the Vmt gene-replacement mutant</td>
   <td>The authors report individual replacement with an apramycin-resistance marker by homologous recombination and PCR confirmation. This is not a scarless deletion, purified-protein assay or demonstrated absence of polar effects; no complementation rescue is asserted.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1186/1471-2164-15-363<br>https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1186/1471-2164-15-363</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure6 caption and construction methods page15.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Page5 targeting primers support the named reference locus, not an independently sequenced historical clone.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a><br><a href="https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf">https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure6 caption and construction methods page15.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf">https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Page5 targeting primers support the named reference locus, not an independently sequenced historical clone.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -421,7 +423,7 @@ isolation report left it.</p>
   <td>was_reported_parent_background_for</td>
   <td>Study culture reported as the Vmt gene-replacement mutant</td>
   <td>The paper describes HCCB10007 as an industrial ATCC43491-derived strain produced by physical and chemical mutagenesis, not an unmodified type-strain stock. Its named descendants were genetically manipulated in this study. No source-owned origin category or producer grade is changed.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1186/1471-2164-15-363</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1186/1471-2164-15-363</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Background page3 and construction methods page15.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Background page3 and construction methods page15.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -430,8 +432,8 @@ isolation report left it.</p>
   <td>provided_reported_culture_extract_for</td>
   <td>HPLC-MS profile reported for the Vmt mutant</td>
   <td>The study profiles derivatives from disrupted culture pellets by HPLC-Q-TOF-MS. The supplement describes shared cultivation conditions for parent and mutants. No quantitative yield, assay-stock sequence or absolute absence of residual vancomycin is inferred. This is a culture-level genetic phenotype, not an isolated enzyme reaction.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1186/1471-2164-15-363<br>https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1186/1471-2164-15-363</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure6F; HPLC-MS methods page16.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Culture methods page3; parent and mutant cultivation context, not proof that the reference genome is the exact culture aliquot.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a><br><a href="https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf">https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure6F; HPLC-MS methods page16.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf">https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Culture methods page3; parent and mutant cultivation context, not proof that the reference genome is the exact culture aliquot.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -440,7 +442,7 @@ isolation report left it.</p>
   <td>provided_reported_comparator_for</td>
   <td>HPLC-MS profile reported for the Vmt mutant</td>
   <td>Figure6A is a vancomycin standard, not a parental-culture trace or an internal quantitative standard. The figure supports the reported comparison without independently establishing the owner&#39;s exact stereochemistry, protonation state or salt form in each sample.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1186/1471-2164-15-363</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1186/1471-2164-15-363</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure6A and F; Figure1 structural assignments.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure6A and F; Figure1 structural assignments.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -449,7 +451,7 @@ isolation report left it.</p>
   <td>yielded_source_assigned_detection_of</td>
   <td>Source-assigned demethylvancomycin</td>
   <td>The authors assign demethylvancomycin to the profile in Figure6F. Retained main Figure1 and Figure6 were visually inspected; this preserves the source assignment, not independent structure elucidation, a molar yield, or proof that only one metabolite was present.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1186/1471-2164-15-363</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1186/1471-2164-15-363</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Results pages12-14; Figures1 and6F.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Results pages12-14; Figures1 and6F.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -458,7 +460,7 @@ isolation report left it.</p>
   <td>provides_bounded_genetic_context_for</td>
   <td>Bounded vancomycin tailoring-gene evidence</td>
   <td>The genetic comparison provides bounded context for vancomycin tailoring. No direct substrate-to-product catalytic edge, physical complex, universal reaction order, pure-enzyme specificity or new natural-occurrence claim is inferred. Antimicrobial comparisons remain outside this biosynthesis graph and the existing AntibioticMech link is preserved.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1186/1471-2164-15-363</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1186/1471-2164-15-363</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Results and discussion pages12-14; source-assigned derivatives interpreted at culture level, with construct and analytical limitations retained.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Results and discussion pages12-14; source-assigned derivatives interpreted at culture level, with construct and analytical limitations retained.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -467,12 +469,12 @@ isolation report left it.</p>
   <td>is_reference_for_named_locus_not_verified_mutant_target</td>
   <td>Source-named Vhal target with unresolved construct identity</td>
   <td>Current AORI_1485 reference: complete CP003410.1 CDS translation equals AGM04073.1 and the 491-residue UniProt sequence. The genome and UniProt retain strain HCCB10007 but name Amycolatopsis keratiniphila, taxon129921; GenPept documents an October2018 taxonomic update from the historical A. orientalis name. This does not silently change source-owned producer fields or prove the sequence of the experimental stock or marker construct. The native CDS translation also equals AEI58871.1. The source names Vhal/AORI_1485, but the published VhalF/vhalR 39-base homology arms match AORI_1492/AGM04080.1 hydrolase boundaries instead, also matching vcm14/AEI58878.1 in HQ679900.1. The cause is unresolved. Do not assign the historical mutant to the native halogenase sequence, rename it as a hydrolase mutant, or diagnose a source error.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/R4T052<br>https://www.ncbi.nlm.nih.gov/protein/AGM04073.1<br>https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1<br>https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1<br>https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf<br>DOI:10.1186/1471-2164-15-363</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/R4T052</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Unreviewed entry46/sequence1, 491 residues; source strain HCCB10007, taxon129921. Annotation alone is not experimental catalysis.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGM04073.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Versioned native protein and AORI_1485 coded_by coordinates; source strain and taxonomic-update comment inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Complete-CDS/table11 translation, independent GenPept coded_by extraction and current UniProt correspondence verified. Whole-genome exact primer matches audited.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Older cluster CDS compared separately; GtfE start boundary differs. The two complete genomic deposits are not asserted identical.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Page5 primer rows and underlined marker tails visually inspected. The source names Vhal/AORI_1485, but the published VhalF/vhalR 39-base homology arms match AORI_1492/AGM04080.1 hydrolase boundaries instead, also matching vcm14/AEI58878.1 in HQ679900.1. The cause is unresolved. Do not assign the historical mutant to the native halogenase sequence, rename it as a hydrolase mutant, or diagnose a source error.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1186/1471-2164-15-363</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Table2 names the locus; Figure6 and mutant-construction methods describe the source-named intervention. Reference selection is a curator inference.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/R4T052">https://www.uniprot.org/uniprotkb/R4T052</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AGM04073.1">https://www.ncbi.nlm.nih.gov/protein/AGM04073.1</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1">https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1">https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1</a><br><a href="https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf">https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</a><br><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/R4T052">https://www.uniprot.org/uniprotkb/R4T052</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Unreviewed entry46/sequence1, 491 residues; source strain HCCB10007, taxon129921. Annotation alone is not experimental catalysis.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AGM04073.1">https://www.ncbi.nlm.nih.gov/protein/AGM04073.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Versioned native protein and AORI_1485 coded_by coordinates; source strain and taxonomic-update comment inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1">https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Complete-CDS/table11 translation, independent GenPept coded_by extraction and current UniProt correspondence verified. Whole-genome exact primer matches audited.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1">https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Older cluster CDS compared separately; GtfE start boundary differs. The two complete genomic deposits are not asserted identical.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf">https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Page5 primer rows and underlined marker tails visually inspected. The source names Vhal/AORI_1485, but the published VhalF/vhalR 39-base homology arms match AORI_1492/AGM04080.1 hydrolase boundaries instead, also matching vcm14/AEI58878.1 in HQ679900.1. The cause is unresolved. Do not assign the historical mutant to the native halogenase sequence, rename it as a hydrolase mutant, or diagnose a source error.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Table2 names the locus; Figure6 and mutant-construction methods describe the source-named intervention. Reference selection is a curator inference.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -481,8 +483,8 @@ isolation report left it.</p>
   <td>was_reported_target_of_gene_replacement_in</td>
   <td>Study culture reported as the Vhal gene-replacement mutant</td>
   <td>The authors report individual replacement with an apramycin-resistance marker by homologous recombination and PCR confirmation. This is not a scarless deletion, purified-protein assay or demonstrated absence of polar effects; no complementation rescue is asserted. The source names Vhal/AORI_1485, but the published VhalF/vhalR 39-base homology arms match AORI_1492/AGM04080.1 hydrolase boundaries instead, also matching vcm14/AEI58878.1 in HQ679900.1. The cause is unresolved. Do not assign the historical mutant to the native halogenase sequence, rename it as a hydrolase mutant, or diagnose a source error.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1186/1471-2164-15-363<br>https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1186/1471-2164-15-363</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure6 caption and construction methods page15.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Page5 targeting primers; the Vhal-labeled pair conflicts with the named locus.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a><br><a href="https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf">https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure6 caption and construction methods page15.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf">https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Page5 targeting primers; the Vhal-labeled pair conflicts with the named locus.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -491,7 +493,7 @@ isolation report left it.</p>
   <td>was_reported_parent_background_for</td>
   <td>Study culture reported as the Vhal gene-replacement mutant</td>
   <td>The paper describes HCCB10007 as an industrial ATCC43491-derived strain produced by physical and chemical mutagenesis, not an unmodified type-strain stock. Its named descendants were genetically manipulated in this study. Vhal construct identity remains unresolved.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1186/1471-2164-15-363</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1186/1471-2164-15-363</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Background page3 and construction methods page15.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Background page3 and construction methods page15.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -500,8 +502,8 @@ isolation report left it.</p>
   <td>provided_reported_culture_extract_for</td>
   <td>HPLC-MS profile reported for the Vhal mutant</td>
   <td>The study profiles derivatives from disrupted culture pellets by HPLC-Q-TOF-MS. The supplement describes shared cultivation conditions for parent and mutants. No quantitative yield, assay-stock sequence or absolute absence of residual vancomycin is inferred. This remains the source-named Vhal culture despite the unresolved primer conflict.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1186/1471-2164-15-363<br>https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1186/1471-2164-15-363</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure6B; HPLC-MS methods page16.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Culture methods page3; parent and mutant cultivation context, not proof that the reference genome is the exact culture aliquot.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a><br><a href="https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf">https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure6B; HPLC-MS methods page16.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf">https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Culture methods page3; parent and mutant cultivation context, not proof that the reference genome is the exact culture aliquot.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -510,7 +512,7 @@ isolation report left it.</p>
   <td>provided_reported_comparator_for</td>
   <td>HPLC-MS profile reported for the Vhal mutant</td>
   <td>Figure6A is a vancomycin standard, not a parental-culture trace or an internal quantitative standard. The figure supports the reported comparison without independently establishing the owner&#39;s exact stereochemistry, protonation state or salt form in each sample.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1186/1471-2164-15-363</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1186/1471-2164-15-363</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure6A and B; Figure1 structural assignments.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure6A and B; Figure1 structural assignments.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -519,7 +521,7 @@ isolation report left it.</p>
   <td>yielded_source_assigned_detection_of</td>
   <td>Source-assigned dechlorovancomycin</td>
   <td>The authors assign dechlorovancomycin to the profile in Figure6B. Retained main Figure1 and Figure6 were visually inspected; this preserves the source assignment, not independent structure elucidation, a molar yield, or proof that only one metabolite was present. Reported loss of chlorination does not resolve which locus was actually disrupted.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1186/1471-2164-15-363</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1186/1471-2164-15-363</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Results pages12-14; Figures1 and6B.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Results pages12-14; Figures1 and6B.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -528,7 +530,7 @@ isolation report left it.</p>
   <td>provides_bounded_genetic_context_for</td>
   <td>Bounded vancomycin tailoring-gene evidence</td>
   <td>The genetic comparison provides bounded context for vancomycin tailoring. No direct substrate-to-product catalytic edge, physical complex, universal reaction order, pure-enzyme specificity or new natural-occurrence claim is inferred. Antimicrobial comparisons remain outside this biosynthesis graph and the existing AntibioticMech link is preserved. Halogenase-specific causality is unresolved because the published targeting arms conflict with the source-named gene.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1186/1471-2164-15-363</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1186/1471-2164-15-363</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Results and discussion pages12-14; source-assigned derivatives interpreted at culture level, with construct and analytical limitations retained.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Results and discussion pages12-14; source-assigned derivatives interpreted at culture level, with construct and analytical limitations retained.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -536,17 +538,17 @@ isolation report left it.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">6 nodes, 5 edges</span></h2>
-<p class="sub">Deposition-only GtfD structural context from1RRV, with Q9AFC7 kept distinct from a construct bearing three internal cloning artifacts and an eight-residue C-terminal extension. Glycopeptide acceptor and TDP are not final vancomycin and TDP-vancosamine. Missing residues, uneven ligand-model quality and software-defined assemblies remain explicit. No blocked-paper catalytic claim, reaction kinetics, native strain assignment, antimicrobial mechanism or full-record sign-off is asserted.</p><div class="scroll"><table>
+<p class="sub">Deposition-only GtfD structural context from1RRV, with Q9AFC7 kept distinct from a construct bearing three internal cloning artifacts and an eight-residue C-terminal extension. Glycopeptide acceptor and TDP are not final vancomycin and TDP-vancosamine. Missing residues, uneven ligand-model quality and software-defined assemblies remain explicit. No blocked-paper catalytic claim, reaction kinetics, native strain assignment, antimicrobial mechanism or full-record sign-off is asserted.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 2 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>Current Q9AFC7 native GtfD reference example</td>
   <td>is_native_sequence_reference_for</td>
   <td>Deposited GtfD construct with internal cloning artifacts and C-terminal tag</td>
   <td>Q9AFC7 is a deliberately selected 408-residue reference linked by the deposition, not the complete 416-residue construct. Deposited positions195/196/197 are L/L/A rather than reference C/W/P; the deposit labels these cloning artifacts. The additional LEHHHHHH tail contains linker residues and an expression tag. Both protein chains carry these differences. Source species is A. orientalis taxon31958, but the deposited source strain/ATCC is unspecified. UniProt strain metadata is not historical stock proof. HCCB10007 R4SKH3 differs at45 positions within the deposited1..408 region and is not substituted. No reaction is inferred from sequence correspondence.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q9AFC7<br>DOI:10.2210/pdb1RRV/pdb<br>https://files.rcsb.org/download/1RRV.cif<br>https://files.rcsb.org/validation/view/1rrv_full_validation.pdf</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q9AFC7</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Reviewed entry82/sequence1,408 residues, taxon31958; retained current reference, not exact construct identity.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.2210/pdb1RRV/pdb</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Public 1RRV deposition version2.2, revised2023-11-15; coordinate file and selected metadata inspected. Entity1 chainsA/B map reference positions1..408 to Q9AFC7 with explicit differences.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://files.rcsb.org/download/1RRV.cif</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Complete deposited sequence independently compared with both retained UniProt references; internal differences and terminal extension agree with struct_ref_seq_dif.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://files.rcsb.org/validation/view/1rrv_full_validation.pdf</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>wwPDB report dated2026-03-20; identity and selected quality sections read, pages20/24/25/26 visually inspected. Not every statistical/outlier section was read. Sequence-discrepancy table distinguishes cloning artifacts from expression-tag residues.</dd><dt>retrieved on</dt><dd>2026-10-07</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q9AFC7">https://www.uniprot.org/uniprotkb/Q9AFC7</a><br><a href="https://doi.org/10.2210/pdb1RRV/pdb">DOI:10.2210/pdb1RRV/pdb</a><br><a href="https://files.rcsb.org/download/1RRV.cif">https://files.rcsb.org/download/1RRV.cif</a><br><a href="https://files.rcsb.org/validation/view/1rrv_full_validation.pdf">https://files.rcsb.org/validation/view/1rrv_full_validation.pdf</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q9AFC7">https://www.uniprot.org/uniprotkb/Q9AFC7</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Reviewed entry82/sequence1,408 residues, taxon31958; retained current reference, not exact construct identity.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.2210/pdb1RRV/pdb">DOI:10.2210/pdb1RRV/pdb</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Public 1RRV deposition version2.2, revised2023-11-15; coordinate file and selected metadata inspected. Entity1 chainsA/B map reference positions1..408 to Q9AFC7 with explicit differences.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://files.rcsb.org/download/1RRV.cif">https://files.rcsb.org/download/1RRV.cif</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Complete deposited sequence independently compared with both retained UniProt references; internal differences and terminal extension agree with struct_ref_seq_dif.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://files.rcsb.org/validation/view/1rrv_full_validation.pdf">https://files.rcsb.org/validation/view/1rrv_full_validation.pdf</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>wwPDB report dated2026-03-20; identity and selected quality sections read, pages20/24/25/26 visually inspected. Not every statistical/outlier section was read. Sequence-discrepancy table distinguishes cloning artifacts from expression-tag residues.</dd><dt>retrieved on</dt><dd>2026-10-07</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -555,8 +557,8 @@ by the corpus tests.</p>
   <td>is_deposited_protein_for</td>
   <td>GtfD protein-ligand X-ray structure experiment represented by 1RRV</td>
   <td>The deposit describes recombinant GtfD from an E. coli BL21(DE3)/PET22B expression system and X-ray diffraction at2.00A resolution. A and B are separate copies in the asymmetric unit, not proof of a functional GtfD homodimer. The two PISA assemblies each contain one GtfD chain plus a glycopeptide ligand; their polymer count must not be interpreted as two enzyme subunits. Modeled residues are A1..401 and B1..400; remaining C-terminal residues are unobserved. No complete historical construct-stock verification or physiological enzyme assembly is claimed.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.2210/pdb1RRV/pdb<br>https://files.rcsb.org/validation/view/1rrv_full_validation.pdf</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.2210/pdb1RRV/pdb</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Public 1RRV deposition version2.2, revised2023-11-15; coordinate file and selected metadata inspected. Entity/source categories, atom-site residue coverage, explicit missing residues and PISA assembly lists inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://files.rcsb.org/validation/view/1rrv_full_validation.pdf</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>wwPDB report dated2026-03-20; identity and selected quality sections read, pages20/24/25/26 visually inspected. Not every statistical/outlier section was read. The report independently lists401/400 modeled protein residues. A model is not native-stock or solution-oligomerization evidence.</dd><dt>retrieved on</dt><dd>2026-10-07</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.2210/pdb1RRV/pdb">DOI:10.2210/pdb1RRV/pdb</a><br><a href="https://files.rcsb.org/validation/view/1rrv_full_validation.pdf">https://files.rcsb.org/validation/view/1rrv_full_validation.pdf</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.2210/pdb1RRV/pdb">DOI:10.2210/pdb1RRV/pdb</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Public 1RRV deposition version2.2, revised2023-11-15; coordinate file and selected metadata inspected. Entity/source categories, atom-site residue coverage, explicit missing residues and PISA assembly lists inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://files.rcsb.org/validation/view/1rrv_full_validation.pdf">https://files.rcsb.org/validation/view/1rrv_full_validation.pdf</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>wwPDB report dated2026-03-20; identity and selected quality sections read, pages20/24/25/26 visually inspected. Not every statistical/outlier section was read. The report independently lists401/400 modeled protein residues. A model is not native-stock or solution-oligomerization evidence.</dd><dt>retrieved on</dt><dd>2026-10-07</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -565,8 +567,8 @@ by the corpus tests.</p>
   <td>is_deposited_ligand_in</td>
   <td>GtfD protein-ligand X-ray structure experiment represented by 1RRV</td>
   <td>Peptide chains C/D (entity 2) contain the source-assigned seven-residue glycopeptide core. Separate BGC glucose instances L/M (entity 6) are covalently linked from core GHP4/O4 to glucoseC1. This is the monoglucosylated acceptor represented by the deposit, not final vancomycin, an aglycone lacking glucose, or a measured binding affinity. Model quality is uneven: reported RSCC includes0.58 for OMZ-D2 and0.60 for OMY-D6; glucose RSCC is0.87/0.88 and bond-angle outliers are present. Retain source assignment without claiming independent exact stereochemistry or uniformly precise ligand contacts.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.2210/pdb1RRV/pdb<br>https://files.rcsb.org/validation/view/1rrv_full_validation.pdf</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.2210/pdb1RRV/pdb</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Public 1RRV deposition version2.2, revised2023-11-15; coordinate file and selected metadata inspected. Entity2 and struct_conn distinguish the modified peptide, covalently attached glucose and final-product identity.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://files.rcsb.org/validation/view/1rrv_full_validation.pdf</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>wwPDB report dated2026-03-20; identity and selected quality sections read, pages20/24/25/26 visually inspected. Not every statistical/outlier section was read. Modified-residue fit table page24, glucose fit page25 and ligand geometry page20 inspected.</dd><dt>retrieved on</dt><dd>2026-10-07</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.2210/pdb1RRV/pdb">DOI:10.2210/pdb1RRV/pdb</a><br><a href="https://files.rcsb.org/validation/view/1rrv_full_validation.pdf">https://files.rcsb.org/validation/view/1rrv_full_validation.pdf</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.2210/pdb1RRV/pdb">DOI:10.2210/pdb1RRV/pdb</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Public 1RRV deposition version2.2, revised2023-11-15; coordinate file and selected metadata inspected. Entity2 and struct_conn distinguish the modified peptide, covalently attached glucose and final-product identity.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://files.rcsb.org/validation/view/1rrv_full_validation.pdf">https://files.rcsb.org/validation/view/1rrv_full_validation.pdf</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>wwPDB report dated2026-03-20; identity and selected quality sections read, pages20/24/25/26 visually inspected. Not every statistical/outlier section was read. Modified-residue fit table page24, glucose fit page25 and ligand geometry page20 inspected.</dd><dt>retrieved on</dt><dd>2026-10-07</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -575,8 +577,8 @@ by the corpus tests.</p>
   <td>is_deposited_ligand_in</td>
   <td>GtfD protein-ligand X-ray structure experiment represented by 1RRV</td>
   <td>TYD is thymidine diphosphate, not TDP-vancosamine or an observed sugar-transfer reaction. Two modeled nucleotide instances have reported RSCC0.95/0.96, with phosphate bond-length outliers. The report&#39;s displayed density panels were inspected without independent re-refinement. Co-modeling does not establish kinetics, donor-sugar specificity or a catalytic residue mechanism.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.2210/pdb1RRV/pdb<br>https://files.rcsb.org/validation/view/1rrv_full_validation.pdf</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.2210/pdb1RRV/pdb</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Public 1RRV deposition version2.2, revised2023-11-15; coordinate file and selected metadata inspected. Nonpolymer identity TYD and the two protein-associated instances are explicitly recorded.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://files.rcsb.org/validation/view/1rrv_full_validation.pdf</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>wwPDB report dated2026-03-20; identity and selected quality sections read, pages20/24/25/26 visually inspected. Not every statistical/outlier section was read. TYD geometry page20, fit values page25 and displayed density panels pages25-26 inspected.</dd><dt>retrieved on</dt><dd>2026-10-07</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.2210/pdb1RRV/pdb">DOI:10.2210/pdb1RRV/pdb</a><br><a href="https://files.rcsb.org/validation/view/1rrv_full_validation.pdf">https://files.rcsb.org/validation/view/1rrv_full_validation.pdf</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.2210/pdb1RRV/pdb">DOI:10.2210/pdb1RRV/pdb</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Public 1RRV deposition version2.2, revised2023-11-15; coordinate file and selected metadata inspected. Nonpolymer identity TYD and the two protein-associated instances are explicitly recorded.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://files.rcsb.org/validation/view/1rrv_full_validation.pdf">https://files.rcsb.org/validation/view/1rrv_full_validation.pdf</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>wwPDB report dated2026-03-20; identity and selected quality sections read, pages20/24/25/26 visually inspected. Not every statistical/outlier section was read. TYD geometry page20, fit values page25 and displayed density panels pages25-26 inspected.</dd><dt>retrieved on</dt><dd>2026-10-07</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -585,7 +587,7 @@ by the corpus tests.</p>
   <td>provides_deposition_based_structural_context_for</td>
   <td>Deposition-associated vancomycin biosynthesis context</td>
   <td>The public GtfD/acceptor/nucleotide deposition provides structural context for the vancomycin pathway. The associated2004 paper was not fully inspected after an access challenge; its abstract is not adopted as primary assay evidence. No Asp13/Thr10 catalytic assignment, reaction order, kinetic value, physical multi-enzyme complex, final-product binding or antimicrobial target claim is added. This graph does not assign the structure to HCCB10007 or connect local nodes across graphs. The owner&#39;s source fields, origin, producer grades, exact structure, SEEDED status and AntibioticMech link require separate preservation and review.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.2210/pdb1RRV/pdb</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.2210/pdb1RRV/pdb</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Inference is limited to structural context from the independent public deposition; it does not borrow the associated paper&#39;s uninspected functional experiments.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.2210/pdb1RRV/pdb">DOI:10.2210/pdb1RRV/pdb</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.2210/pdb1RRV/pdb">DOI:10.2210/pdb1RRV/pdb</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Inference is limited to structural context from the independent public deposition; it does not borrow the associated paper&#39;s uninspected functional experiments.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -593,18 +595,18 @@ by the corpus tests.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 4 edges</span></h2>
-<p class="sub">Source-proposed cyclization context for three current HCCB10007 OxyA/B/C protein references. Native sequence identities are grounded, but the2014 paper&#39;s functional assignments are homology-based predictions, not HCCB10007 assays. OxyB&#39;s different start boundary and historical/current taxonomy remain explicit. No reaction order, exact oxidative bond, carrier state, enzyme assembly, borrowed related-cluster experiment or full-record sign-off is asserted.</p><div class="scroll"><table>
+<p class="sub">Source-proposed cyclization context for three current HCCB10007 OxyA/B/C protein references. Native sequence identities are grounded, but the2014 paper&#39;s functional assignments are homology-based predictions, not HCCB10007 assays. OxyB&#39;s different start boundary and historical/current taxonomy remain explicit. No reaction order, exact oxidative bond, carrier state, enzyme assembly, borrowed related-cluster experiment or full-record sign-off is asserted.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 3 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>Current HCCB10007 OxyA native reference; cyclization role predicted</td>
   <td>is_source_predicted_participant_in</td>
   <td>Source-predicted heptapeptide cyclization stage</td>
   <td>The2014 source annotates AORI_1482/OxyA as a P450 candidate for peptide cyclization by comparison with related clusters. The identifier grounds a current native sequence, not experimentally established cyclization activity in this strain. Complete CP003410.1 CDS 1568701..1569876(+) translates to AGM04070.1 and the 391-residue UniProt reference. Current source strain is HCCB10007, A. keratiniphila taxon129921; the versioned protein record documents the2018 taxonomy change from historical A. orientalis. Source-owned producer fields are not relabeled. The complete current CDS is identical to the older HQ679900.1 CDS encoding AEI58868.1. Current UniProt FUNCTION/PATHWAY comments are automated ECO:0000256 annotations, not independent experimental support. No purified-enzyme assay, exact crosslink position, reaction order, carrier state, reductase partner, physical enzyme complex or historical stock sequence is asserted.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1186/1471-2164-15-363<br>https://www.uniprot.org/uniprotkb/R4SMY3<br>https://www.ncbi.nlm.nih.gov/protein/AGM04070.1<br>https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1<br>https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1186/1471-2164-15-363</dd><dt>evidence type</dt><dd>COMPUTATIONAL_PREDICTION</dd><dt>notes</dt><dd>Page11 explicitly infers the roles from corresponding cep/bal cluster genes. Table2 on page12 and Figure5 on page13 were visually inspected. The paper&#39;s four gene-replacement experiments concern other tailoring genes; they do not experimentally validate OxyA/B/C.</dd><dt>retrieved on</dt><dd>2026-10-06</dd><dt>snippet</dt><dd>likely encode three P450 monooxygenases</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/R4SMY3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Unreviewed entry48/sequence1; 391 residues, locusAORI_1482, strainHCCB10007. Automated function annotations remain separate from identity.</dd><dt>retrieved on</dt><dd>2026-10-07</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGM04070.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Versioned native reference, source strain, taxonomy-update comment and coded_by inspected.</dd><dt>retrieved on</dt><dd>2026-10-07</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Complete-CDS/table11 translation matches the independent GenPept and current UniProt sequences. Native reference selection is not an assay-stock identity claim.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Older/current full CDS comparison checked; OxyB has a different start boundary. The complete genomic deposits are not asserted identical.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a><br><a href="https://www.uniprot.org/uniprotkb/R4SMY3">https://www.uniprot.org/uniprotkb/R4SMY3</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AGM04070.1">https://www.ncbi.nlm.nih.gov/protein/AGM04070.1</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1">https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1">https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></dd><dt>evidence type</dt><dd>COMPUTATIONAL_PREDICTION</dd><dt>notes</dt><dd>Page11 explicitly infers the roles from corresponding cep/bal cluster genes. Table2 on page12 and Figure5 on page13 were visually inspected. The paper&#39;s four gene-replacement experiments concern other tailoring genes; they do not experimentally validate OxyA/B/C.</dd><dt>retrieved on</dt><dd>2026-10-06</dd><dt>snippet</dt><dd>likely encode three P450 monooxygenases</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/R4SMY3">https://www.uniprot.org/uniprotkb/R4SMY3</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Unreviewed entry48/sequence1; 391 residues, locusAORI_1482, strainHCCB10007. Automated function annotations remain separate from identity.</dd><dt>retrieved on</dt><dd>2026-10-07</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AGM04070.1">https://www.ncbi.nlm.nih.gov/protein/AGM04070.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Versioned native reference, source strain, taxonomy-update comment and coded_by inspected.</dd><dt>retrieved on</dt><dd>2026-10-07</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1">https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Complete-CDS/table11 translation matches the independent GenPept and current UniProt sequences. Native reference selection is not an assay-stock identity claim.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1">https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Older/current full CDS comparison checked; OxyB has a different start boundary. The complete genomic deposits are not asserted identical.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -613,11 +615,11 @@ by the corpus tests.</p>
   <td>is_source_predicted_participant_in</td>
   <td>Source-predicted heptapeptide cyclization stage</td>
   <td>The2014 source annotates AORI_1483/OxyB as a P450 candidate for peptide cyclization by comparison with related clusters. The identifier grounds a current native sequence, not experimentally established cyclization activity in this strain. Complete CP003410.1 CDS 1570234..1571430(+) translates to AGM04071.1 and the 398-residue UniProt reference. Current source strain is HCCB10007, A. keratiniphila taxon129921; the versioned protein record documents the2018 taxonomy change from historical A. orientalis. Source-owned producer fields are not relabeled. The older AEI58869.1 is407 residues versus398 in the current reference. The current1197nt CDS is exactly the older1224nt CDS without its first27nt; the downstream TTG becomes initiator methionine. This annotation-boundary difference is not a measured native N-terminus or experimental construct mapping. Current UniProt FUNCTION/PATHWAY comments are automated ECO:0000256 annotations, not independent experimental support. No purified-enzyme assay, exact crosslink position, reaction order, carrier state, reductase partner, physical enzyme complex or historical stock sequence is asserted.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1186/1471-2164-15-363<br>https://www.uniprot.org/uniprotkb/R4SV88<br>https://www.ncbi.nlm.nih.gov/protein/AGM04071.1<br>https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1<br>https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1186/1471-2164-15-363</dd><dt>evidence type</dt><dd>COMPUTATIONAL_PREDICTION</dd><dt>notes</dt><dd>Page11 explicitly infers the roles from corresponding cep/bal cluster genes. Table2 on page12 and Figure5 on page13 were visually inspected. The paper&#39;s four gene-replacement experiments concern other tailoring genes; they do not experimentally validate OxyA/B/C.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/R4SV88</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Unreviewed entry47/sequence1; 398 residues, locusAORI_1483, strainHCCB10007. Automated function annotations remain separate from identity.</dd><dt>retrieved on</dt><dd>2026-10-07</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGM04071.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Versioned native reference, source strain, taxonomy-update comment and coded_by inspected.</dd><dt>retrieved on</dt><dd>2026-10-07</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Complete-CDS/table11 translation matches the independent GenPept and current UniProt sequences. Native reference selection is not an assay-stock identity claim.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Older/current full CDS comparison checked; OxyB has a different start boundary. The complete genomic deposits are not asserted identical.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a><br><a href="https://www.uniprot.org/uniprotkb/R4SV88">https://www.uniprot.org/uniprotkb/R4SV88</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AGM04071.1">https://www.ncbi.nlm.nih.gov/protein/AGM04071.1</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1">https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1">https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></dd><dt>evidence type</dt><dd>COMPUTATIONAL_PREDICTION</dd><dt>notes</dt><dd>Page11 explicitly infers the roles from corresponding cep/bal cluster genes. Table2 on page12 and Figure5 on page13 were visually inspected. The paper&#39;s four gene-replacement experiments concern other tailoring genes; they do not experimentally validate OxyA/B/C.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/R4SV88">https://www.uniprot.org/uniprotkb/R4SV88</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Unreviewed entry47/sequence1; 398 residues, locusAORI_1483, strainHCCB10007. Automated function annotations remain separate from identity.</dd><dt>retrieved on</dt><dd>2026-10-07</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AGM04071.1">https://www.ncbi.nlm.nih.gov/protein/AGM04071.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Versioned native reference, source strain, taxonomy-update comment and coded_by inspected.</dd><dt>retrieved on</dt><dd>2026-10-07</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1">https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Complete-CDS/table11 translation matches the independent GenPept and current UniProt sequences. Native reference selection is not an assay-stock identity claim.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1">https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Older/current full CDS comparison checked; OxyB has a different start boundary. The complete genomic deposits are not asserted identical.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -626,11 +628,11 @@ by the corpus tests.</p>
   <td>is_source_predicted_participant_in</td>
   <td>Source-predicted heptapeptide cyclization stage</td>
   <td>The2014 source annotates AORI_1484/OxyC as a P450 candidate for peptide cyclization by comparison with related clusters. The identifier grounds a current native sequence, not experimentally established cyclization activity in this strain. Complete CP003410.1 CDS 1571557..1572777(+) translates to AGM04072.1 and the 406-residue UniProt reference. Current source strain is HCCB10007, A. keratiniphila taxon129921; the versioned protein record documents the2018 taxonomy change from historical A. orientalis. Source-owned producer fields are not relabeled. The complete current CDS is identical to the older HQ679900.1 CDS encoding AEI58870.1. Current UniProt FUNCTION/PATHWAY comments are automated ECO:0000256 annotations, not independent experimental support. No purified-enzyme assay, exact crosslink position, reaction order, carrier state, reductase partner, physical enzyme complex or historical stock sequence is asserted.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1186/1471-2164-15-363<br>https://www.uniprot.org/uniprotkb/R4SZ79<br>https://www.ncbi.nlm.nih.gov/protein/AGM04072.1<br>https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1<br>https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1186/1471-2164-15-363</dd><dt>evidence type</dt><dd>COMPUTATIONAL_PREDICTION</dd><dt>notes</dt><dd>Page11 explicitly infers the roles from corresponding cep/bal cluster genes. Table2 on page12 and Figure5 on page13 were visually inspected. The paper&#39;s four gene-replacement experiments concern other tailoring genes; they do not experimentally validate OxyA/B/C.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/R4SZ79</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Unreviewed entry45/sequence1; 406 residues, locusAORI_1484, strainHCCB10007. Automated function annotations remain separate from identity.</dd><dt>retrieved on</dt><dd>2026-10-07</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGM04072.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Versioned native reference, source strain, taxonomy-update comment and coded_by inspected.</dd><dt>retrieved on</dt><dd>2026-10-07</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Complete-CDS/table11 translation matches the independent GenPept and current UniProt sequences. Native reference selection is not an assay-stock identity claim.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Older/current full CDS comparison checked; OxyB has a different start boundary. The complete genomic deposits are not asserted identical.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a><br><a href="https://www.uniprot.org/uniprotkb/R4SZ79">https://www.uniprot.org/uniprotkb/R4SZ79</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AGM04072.1">https://www.ncbi.nlm.nih.gov/protein/AGM04072.1</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1">https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1">https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></dd><dt>evidence type</dt><dd>COMPUTATIONAL_PREDICTION</dd><dt>notes</dt><dd>Page11 explicitly infers the roles from corresponding cep/bal cluster genes. Table2 on page12 and Figure5 on page13 were visually inspected. The paper&#39;s four gene-replacement experiments concern other tailoring genes; they do not experimentally validate OxyA/B/C.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/R4SZ79">https://www.uniprot.org/uniprotkb/R4SZ79</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Unreviewed entry45/sequence1; 406 residues, locusAORI_1484, strainHCCB10007. Automated function annotations remain separate from identity.</dd><dt>retrieved on</dt><dd>2026-10-07</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AGM04072.1">https://www.ncbi.nlm.nih.gov/protein/AGM04072.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Versioned native reference, source strain, taxonomy-update comment and coded_by inspected.</dd><dt>retrieved on</dt><dd>2026-10-07</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1">https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Complete-CDS/table11 translation matches the independent GenPept and current UniProt sequences. Native reference selection is not an assay-stock identity claim.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1">https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Older/current full CDS comparison checked; OxyB has a different start boundary. The complete genomic deposits are not asserted identical.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -639,7 +641,7 @@ by the corpus tests.</p>
   <td>is_predicted_stage_in</td>
   <td>Source-proposed vancomycin biosynthesis model</td>
   <td>The source&#39;s pathway model places oxidative cyclization in vancomycin biosynthesis. The graph preserves that explicitly inferred annotation, not conversion by three tested HCCB10007 enzymes. No specific bond assignment or ordering relative to halogenation, methylation or glycosylation is adopted. Evidence from other strains, related glycopeptides or inaccessible Oxy papers is not transferred. No owner origin/producer grade or antimicrobial mechanism is changed, and no full-record sign-off is asserted.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1186/1471-2164-15-363</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1186/1471-2164-15-363</dd><dt>evidence type</dt><dd>COMPUTATIONAL_PREDICTION</dd><dt>notes</dt><dd>Page11 annotation discussion and Figure5 pathway model, not an Oxy-specific intervention or reconstituted-enzyme experiment.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/1471-2164-15-363">DOI:10.1186/1471-2164-15-363</a></dd><dt>evidence type</dt><dd>COMPUTATIONAL_PREDICTION</dd><dt>notes</dt><dd>Page11 annotation discussion and Figure5 pathway model, not an Oxy-specific intervention or reconstituted-enzyme experiment.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -650,13 +652,13 @@ by the corpus tests.</p>
 
 <h2>Bioactivities <span class="tag">2</span></h2>
 <p class="sub">Entries preserve source qualifiers, targets and evidence. Repeated assay names or values are not independent replications; inspect source detail for differences.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Bioactivities"><table>
 <tr><th>Assay</th><th>Result</th><th>Target enzyme</th><th>Source detail</th></tr>
-<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: OCI-AML3 cell line</td><td>OTHER 0.0014 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202232</summary><dl><dt>assay</dt><dd>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: OCI-AML3 cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202232</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202232, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
+<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: OCI-AML3 cell line</td><td>OTHER 0.0014 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202232">pubchem.aid:2202232</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: OCI-AML3 cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202232">pubchem.aid:2202232</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202232, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.0014</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Inhibitor identification of human QSOX1 enzyme: high-throughput screening using ROS-Glo(TM) assay</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1347418</summary><dl><dt>assay</dt><dd>Inhibitor identification of human QSOX1 enzyme: high-throughput screening using ROS-Glo(TM) assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1347418</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347418, deposited by Burnham Center for Chemical Genomics; assay type Other.</dd></dl>
+<tr><td>Inhibitor identification of human QSOX1 enzyme: high-throughput screening using ROS-Glo(TM) assay</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1347418">pubchem.aid:1347418</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Inhibitor identification of human QSOX1 enzyme: high-throughput screening using ROS-Glo(TM) assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1347418">pubchem.aid:1347418</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347418, deposited by Burnham Center for Chemical Genomics; assay type Other.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd></dl>
 </details></td></tr>
@@ -669,24 +671,37 @@ by the corpus tests.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=MYPYJXKWCTUITO-LYRMYLQWSA-N">AntibioticMech (vancomycin) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=CHEBI%3A28001">MediaIngredientMech (CHEBI:28001) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A1156913">TaxonMech: Amycolatopsis orientalis HCCB10007 (ATCC43491) (NCBITaxon:1156913) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000455">PathwayMech (mibig:BGC0000455) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q=CHEBI%3A28001">MediaIngredientMech (CHEBI:28001) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A1156913">TaxonMech: Amycolatopsis orientalis HCCB10007 (ATCC43491) (NCBITaxon:1156913) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000455">PathwayMech (mibig:BGC0000455) &nearr;</a>
 </div>
 
 
+<h2 id="curation-history">Curation history <span class="tag">7</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-13T07:42:25Z">2026-10-13T07:42:25Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources<p>Seeded from the committed inventories and curation tables.</p></li>
+<li><time datetime="2026-10-07T01:42:38Z">2026-10-07T01:42:38Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added a new exact-owner OxyA/B/C prediction-only graph component, 5 nodes and 4 individually DOI-cited edges, without migrating either prior inline graph. Current HCCB10007 references R4SMY3/R4SV88/R4SZ79 match complete native CDS and independent GenPept sequences. Functional assignments in the2014 paper are explicitly homology-based predictions, not Oxy assays; automatic UniProt annotations are not promoted to experimental support. OxyB&#39;s downstream TTG/start-boundary difference and historical/current taxonomy remain explicit. One PDF-verified snippet is five words. No exact bond, reaction order, carrier state, enzyme assembly or blocked-paper experiment is added. Preserved all source-owned fields, structure, grades, SEEDED status, sibling link, both previous graphs and history. Not full-record sign-off.</p></li>
+<li><time datetime="2026-10-07T01:00:42Z">2026-10-07T01:00:42Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Addressed author-agent review issue #634: distinguished peptide chains C/D (entity 2) from glucose instances L/M (entity 6) in the 1RRV ligand edge. Checked the exact struct_asym mapping in the retained coordinate deposition. Only identifier terminology changed; all nodes, edges, evidence, native sequence grounding, ligand assignments, source fields, prior graph and history are preserved. Not independent review or full-record sign-off.</p></li>
+<li><time datetime="2026-10-07T00:56:36Z">2026-10-07T00:56:36Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added a deposition-only GtfD structural-context graph with 6 nodes and 5 individually cited edges, using PDB 1RRV and its public validation report. The native Q9AFC7 example is separate from the deposited 416-residue construct with three internal cloning artifacts and LEHHHHHH tail. Deposited source strain is unspecified; HCCB10007 is not substituted. The covalently glucosylated peptide acceptor and TDP are not final vancomycin and TDP-vancosamine. Missing residues, uneven ligand fits and geometry outliers remain explicit. PISA assemblies are not proof of a functional enzyme homodimer. No blocked-paper catalytic-residue claim, kinetics, exact ligand stereochemistry or antimicrobial mechanism is added. Preserved the prior genetics graph, all source-owned fields and grades, exact owner structure, SEEDED status, sibling link and history. Not full-record sign-off.</p></li>
+<li><time datetime="2026-10-07T00:15:55Z">2026-10-07T00:15:55Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added a source-qualified 2014 vancomycin tailoring-gene replacement graph, 23 nodes and 28 individually DOI-cited edges. Current native HCCB10007 references GtfD R4SKH3, GtfE R4SMY8 and Vmt R4T056 are distinct from historical experimental targets and cultures. R4T052 identifies the named AORI_1485 locus, not a verified Vhal mutant target: published Vhal-labeled homology arms match AORI_1492 hydrolase boundaries; the cause remains unresolved without relabeling the mutant or diagnosing a source error. Complete CDS/GenPept/UniProt correspondence and whole-genome exact arm matches were checked. GtfE&#39;s extra upstream GTG/initiator methionine is an annotation-boundary difference, not a measured native N-terminus. Current A. keratiniphila taxonomy and the documented 2018 name update remain separate from historical A. orientalis source fields. Each mutant has its own HPLC-MS comparison and source-assigned derivative. Two PDF-verified snippets total 11 words. No purified-enzyme catalysis, kinetics, yield, exact derivative stereochemistry or antimicrobial mechanism is added. All source fields, grades, classification, origin, SEEDED status, exact owner structure, sibling link and prior history are preserved. Not full-record sign-off.</p></li>
+<li><time datetime="2026-09-25T03:02:50Z">2026-09-25T03:02:50Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:10Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
+
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0000455</td><td>MIBIG</td><td>6</td></tr>
-<tr><td class="mono">CHEBI:28001</td><td>CHEBI</td><td>3-star</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000455">BGC0000455</a></td><td>MIBIG</td><td>6</td></tr>
+<tr><td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_28001">CHEBI:28001</a></td><td>CHEBI</td><td>3-star</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/amino_acids_and_peptides/vancomycin.yaml">data/natural_products/amino_acids_and_peptides/vancomycin.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20CHEBI%3A28001&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Famino_acids_and_peptides%2Fvancomycin.html">Report a problem with this record</a>: opens a GitHub issue that names CHEBI:28001 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Corpus as of 2026-10-23 22:53 UTC. Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 8e5d64d98cfd). Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

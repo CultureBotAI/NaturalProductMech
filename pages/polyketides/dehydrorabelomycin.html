@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Polyketides</a> &middot; dehydrorabelomycin</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>dehydrorabelomycin</h1>
-<p class="sub"><span class="mono">CHEBI:31461</span>
+<p class="sub"><span class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_31461">CHEBI:31461</a></span>
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 </p>
 <details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/dehydrorabelomycin.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/dehydrorabelomycin.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">PQVIKROZFPIERS-UHFFFAOYSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">CC1=CC(=C2C(=C1)C=C(C3=C2C(=O)C4=C(C3=O)C(=CC=C4)O)O)O</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">pubchem:443801</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/compound/443801">pubchem:443801</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Polyketides</a> —
@@ -57,67 +59,67 @@ pks, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>uncultured bacterium BAC AB649/1850<br><span class="mono">NCBITaxon:1037453</span></td>
+  <td>uncultured bacterium BAC AB649/1850<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1037453">NCBITaxon:1037453</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0000223</td>
-  <td><span class="mono">PMID:20690632</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000223">mibig:BGC0000223</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/20690632/">PMID:20690632</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">7</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Streptomyces<br><span class="mono">NCBITaxon:1883</span></td>
+  <td>Streptomyces<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1883">NCBITaxon:1883</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.7164/ANTIBIOTICS.51.1105</td>
+  <td class="mono"><a href="https://doi.org/10.7164/ANTIBIOTICS.51.1105">DOI:10.7164/ANTIBIOTICS.51.1105</a></td>
 </tr>
 <tr>
-  <td>Streptomyces griseus<br><span class="mono">NCBITaxon:1911</span></td>
+  <td>Streptomyces griseus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1911">NCBITaxon:1911</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/J.PHYTOCHEM.2005.04.010</td>
+  <td class="mono"><a href="https://doi.org/10.1016/J.PHYTOCHEM.2005.04.010">DOI:10.1016/J.PHYTOCHEM.2005.04.010</a></td>
 </tr>
 <tr>
-  <td>Streptomyces lividans<br><span class="mono">NCBITaxon:1916</span></td>
+  <td>Streptomyces lividans<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1916">NCBITaxon:1916</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.3389/FMICB.2018.03042</td>
+  <td class="mono"><a href="https://doi.org/10.3389/FMICB.2018.03042">DOI:10.3389/FMICB.2018.03042</a></td>
 </tr>
 <tr>
-  <td>Streptomyces murayamaensis<br><span class="mono">NCBITaxon:224537</span></td>
+  <td>Streptomyces murayamaensis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=224537">NCBITaxon:224537</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/JA00051A052</td>
+  <td class="mono"><a href="https://doi.org/10.1021/JA00051A052">DOI:10.1021/JA00051A052</a></td>
 </tr>
 <tr>
-  <td>Streptomyces murayamaensis<br><span class="mono">NCBITaxon:224537</span></td>
+  <td>Streptomyces murayamaensis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=224537">NCBITaxon:224537</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/JA00251A045</td>
+  <td class="mono"><a href="https://doi.org/10.1021/JA00251A045">DOI:10.1021/JA00251A045</a></td>
 </tr>
 <tr>
-  <td>Streptomyces murayamaensis<br><span class="mono">NCBITaxon:224537</span></td>
+  <td>Streptomyces murayamaensis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=224537">NCBITaxon:224537</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.7164/ANTIBIOTICS.42.179</td>
+  <td class="mono"><a href="https://doi.org/10.7164/ANTIBIOTICS.42.179">DOI:10.7164/ANTIBIOTICS.42.179</a></td>
 </tr>
 <tr>
-  <td>Streptomyces murayamaensis<br><span class="mono">NCBITaxon:224537</span></td>
+  <td>Streptomyces murayamaensis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=224537">NCBITaxon:224537</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.7164/ANTIBIOTICS.42.189</td>
+  <td class="mono"><a href="https://doi.org/10.7164/ANTIBIOTICS.42.189">DOI:10.7164/ANTIBIOTICS.42.189</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0000223</td>
-  <td>uncultured bacterium BAC AB649/1850<br><span class="mono">NCBITaxon:1037453</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000223">mibig:BGC0000223</a></td>
+  <td>uncultured bacterium BAC AB649/1850<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1037453">NCBITaxon:1037453</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:HM193369.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/HM193369.1">genbank:HM193369.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -127,7 +129,7 @@ isolation report left it.</p>
 
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for dehydrorabelomycin">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for dehydrorabelomycin">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -163,51 +165,51 @@ isolation report left it.</p>
 
 <h2>Bioactivities <span class="tag">11</span></h2>
 <p class="sub">Entries preserve source qualifiers, targets and evidence. Repeated assay names or values are not independent replications; inspect source detail for differences.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Bioactivities"><table>
 <tr><th>Assay</th><th>Result</th><th>Target enzyme</th><th>Source detail</th></tr>
-<tr><td>OTUD3 deubiquitinase inhibition: Dose-response Confirmation</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1645868</summary><dl><dt>assay</dt><dd>OTUD3 deubiquitinase inhibition: Dose-response Confirmation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645868</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645868, deposited by 24642; assay type Confirmatory. Target accession NP_056022 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>OTUD3 deubiquitinase inhibition: Dose-response Confirmation</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645868">pubchem.aid:1645868</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>OTUD3 deubiquitinase inhibition: Dose-response Confirmation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645868">pubchem.aid:1645868</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645868, deposited by 24642; assay type Confirmatory. Target accession NP_056022 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd></dl>
 </details></td></tr>
-<tr><td>OTUD3 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1645858</summary><dl><dt>assay</dt><dd>OTUD3 deubiquitinase inhibition: Primary qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645858</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645858, deposited by 24642; assay type Other. Target accession NP_056022 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>OTUD3 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645858">pubchem.aid:1645858</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>OTUD3 deubiquitinase inhibition: Primary qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645858">pubchem.aid:1645858</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645858, deposited by 24642; assay type Other. Target accession NP_056022 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd></dl>
 </details></td></tr>
-<tr><td>UCHL1 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono">UniProtKB:P09936</td><td><details><summary>pubchem.aid:1645859</summary><dl><dt>assay</dt><dd>UCHL1 deubiquitinase inhibition: Primary qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645859</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645859, deposited by 24642; assay type Other.</dd></dl>
+<tr><td>UCHL1 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/P09936/entry">UniProtKB:P09936</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645859">pubchem.aid:1645859</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>UCHL1 deubiquitinase inhibition: Primary qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645859">pubchem.aid:1645859</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645859, deposited by 24642; assay type Other.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>target enzyme</dt><dd>UniProtKB:P09936</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/P09936/entry">UniProtKB:P09936</a></dd></dl>
 </details></td></tr>
-<tr><td>USP10 deubiquitinase inhibition: Dose-response Confirmation</td><td>ACTIVE</td><td class="mono">UniProtKB:Q14694</td><td><details><summary>pubchem.aid:1645863</summary><dl><dt>assay</dt><dd>USP10 deubiquitinase inhibition: Dose-response Confirmation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645863</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645863, deposited by 24642; assay type Confirmatory.</dd></dl>
+<tr><td>USP10 deubiquitinase inhibition: Dose-response Confirmation</td><td>ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/Q14694/entry">UniProtKB:Q14694</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645863">pubchem.aid:1645863</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>USP10 deubiquitinase inhibition: Dose-response Confirmation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645863">pubchem.aid:1645863</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645863, deposited by 24642; assay type Confirmatory.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>target enzyme</dt><dd>UniProtKB:Q14694</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q14694/entry">UniProtKB:Q14694</a></dd></dl>
 </details></td></tr>
-<tr><td>USP17 deubiquitinase inhibition: Dose-response Confirmation</td><td>ACTIVE</td><td class="mono">UniProtKB:A8MUK1</td><td><details><summary>pubchem.aid:1645864</summary><dl><dt>assay</dt><dd>USP17 deubiquitinase inhibition: Dose-response Confirmation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645864</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645864, deposited by 24642; assay type Confirmatory.</dd></dl>
+<tr><td>USP17 deubiquitinase inhibition: Dose-response Confirmation</td><td>ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/A8MUK1/entry">UniProtKB:A8MUK1</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645864">pubchem.aid:1645864</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>USP17 deubiquitinase inhibition: Dose-response Confirmation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645864">pubchem.aid:1645864</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645864, deposited by 24642; assay type Confirmatory.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>target enzyme</dt><dd>UniProtKB:A8MUK1</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/A8MUK1/entry">UniProtKB:A8MUK1</a></dd></dl>
 </details></td></tr>
-<tr><td>USP17 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono">UniProtKB:A8MUK1</td><td><details><summary>pubchem.aid:1645855</summary><dl><dt>assay</dt><dd>USP17 deubiquitinase inhibition: Primary qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645855</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645855, deposited by 24642; assay type Other.</dd></dl>
+<tr><td>USP17 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/A8MUK1/entry">UniProtKB:A8MUK1</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645855">pubchem.aid:1645855</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>USP17 deubiquitinase inhibition: Primary qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645855">pubchem.aid:1645855</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645855, deposited by 24642; assay type Other.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>target enzyme</dt><dd>UniProtKB:A8MUK1</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/A8MUK1/entry">UniProtKB:A8MUK1</a></dd></dl>
 </details></td></tr>
-<tr><td>USP28 deubiquitinase inhibition: Dose-response Confirmation</td><td>ACTIVE</td><td class="mono">UniProtKB:Q96RU2</td><td><details><summary>pubchem.aid:1645866</summary><dl><dt>assay</dt><dd>USP28 deubiquitinase inhibition: Dose-response Confirmation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645866</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645866, deposited by 24642; assay type Confirmatory.</dd></dl>
+<tr><td>USP28 deubiquitinase inhibition: Dose-response Confirmation</td><td>ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/Q96RU2/entry">UniProtKB:Q96RU2</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645866">pubchem.aid:1645866</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>USP28 deubiquitinase inhibition: Dose-response Confirmation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645866">pubchem.aid:1645866</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645866, deposited by 24642; assay type Confirmatory.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>target enzyme</dt><dd>UniProtKB:Q96RU2</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q96RU2/entry">UniProtKB:Q96RU2</a></dd></dl>
 </details></td></tr>
-<tr><td>USP28 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono">UniProtKB:Q96RU2</td><td><details><summary>pubchem.aid:1645857</summary><dl><dt>assay</dt><dd>USP28 deubiquitinase inhibition: Primary qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645857</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645857, deposited by 24642; assay type Other.</dd></dl>
+<tr><td>USP28 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/Q96RU2/entry">UniProtKB:Q96RU2</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645857">pubchem.aid:1645857</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>USP28 deubiquitinase inhibition: Primary qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645857">pubchem.aid:1645857</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645857, deposited by 24642; assay type Other.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>target enzyme</dt><dd>UniProtKB:Q96RU2</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q96RU2/entry">UniProtKB:Q96RU2</a></dd></dl>
 </details></td></tr>
-<tr><td>USP7 deubiquitinase inhibition: Dose-response Confirmation</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1645861</summary><dl><dt>assay</dt><dd>USP7 deubiquitinase inhibition: Dose-response Confirmation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645861</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645861, deposited by 24642; assay type Confirmatory. Target accession NP_003461 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>USP7 deubiquitinase inhibition: Dose-response Confirmation</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645861">pubchem.aid:1645861</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>USP7 deubiquitinase inhibition: Dose-response Confirmation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645861">pubchem.aid:1645861</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645861, deposited by 24642; assay type Confirmatory. Target accession NP_003461 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd></dl>
 </details></td></tr>
-<tr><td>USP7 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1645854</summary><dl><dt>assay</dt><dd>USP7 deubiquitinase inhibition: Primary qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645854</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645854, deposited by 24642; assay type Other. Target accession NP_003461 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>USP7 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645854">pubchem.aid:1645854</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>USP7 deubiquitinase inhibition: Primary qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645854">pubchem.aid:1645854</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645854, deposited by 24642; assay type Other. Target accession NP_003461 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd></dl>
 </details></td></tr>
-<tr><td>USP8 deubiquitinase inhibition: Dose-response Confirmation</td><td>ACTIVE</td><td class="mono">UniProtKB:P40818</td><td><details><summary>pubchem.aid:1645862</summary><dl><dt>assay</dt><dd>USP8 deubiquitinase inhibition: Dose-response Confirmation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645862</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645862, deposited by 24642; assay type Confirmatory.</dd></dl>
+<tr><td>USP8 deubiquitinase inhibition: Dose-response Confirmation</td><td>ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/P40818/entry">UniProtKB:P40818</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645862">pubchem.aid:1645862</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>USP8 deubiquitinase inhibition: Dose-response Confirmation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645862">pubchem.aid:1645862</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645862, deposited by 24642; assay type Confirmatory.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>target enzyme</dt><dd>UniProtKB:P40818</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/P40818/entry">UniProtKB:P40818</a></dd></dl>
 </details></td></tr>
 </table></div>
 
@@ -215,24 +217,32 @@ isolation report left it.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=PQVIKROZFPIERS-UHFFFAOYSA-N">AntibioticMech (dehydrorabelomycin) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=CHEBI%3A31461">MediaIngredientMech (CHEBI:31461) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A1037453">TaxonMech: uncultured bacterium BAC AB649/1850 (NCBITaxon:1037453) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000223">PathwayMech (mibig:BGC0000223) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q=CHEBI%3A31461">MediaIngredientMech (CHEBI:31461) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A1037453">TaxonMech: uncultured bacterium BAC AB649/1850 (NCBITaxon:1037453) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000223">PathwayMech (mibig:BGC0000223) &nearr;</a>
 </div>
 
 
+<h2 id="curation-history">Curation history <span class="tag">3</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-09-25T03:03:07Z">2026-09-25T03:03:07Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(3 identical runs since 2026-09-10T05:54:11Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
+
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0000223</td><td>MIBIG</td><td>5</td></tr>
-<tr><td class="mono">CHEBI:31461</td><td>CHEBI</td><td>3-star</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000223">BGC0000223</a></td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_31461">CHEBI:31461</a></td><td>CHEBI</td><td>3-star</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/polyketides/dehydrorabelomycin.yaml">data/natural_products/polyketides/dehydrorabelomycin.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20CHEBI%3A31461&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Fpolyketides%2Fdehydrorabelomycin.html">Report a problem with this record</a>: opens a GitHub issue that names CHEBI:31461 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Corpus as of 2026-10-23 22:53 UTC. Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 8e5d64d98cfd). Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

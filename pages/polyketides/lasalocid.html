@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Polyketides</a> &middot; lasalocid</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,17 +32,17 @@
   </form>
 </div>
 <h1>lasalocid</h1>
-<p class="sub"><span class="mono">CHEBI:92181</span>
+<p class="sub"><span class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_92181">CHEBI:92181</a></span>
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 <span class="tag">antiparasitic</span></p>
 <details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/lasalocid.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/lasalocid.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 <p>A polyether antibiotic used for prevention and treatment of coccidiosis in poultry.</p>
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">BBMULGJBVDDDNI-OWKLGTHSSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">[H][C@@](C)(CCC1=C(C(O)=O)C(O)=C(C)C=C1)[C@]([H])(O)[C@]([H])(C)C(=O)[C@]([H])(CC)[C@@]1([H])O[C@@](CC)(C[C@@H]1C)[C@@]1([H])CC[C@](O)(CC)[C@H](C)O1</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
@@ -57,15 +59,15 @@ pks, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Streptomyces sp.<br>Strain: FXJ1.172<br><span class="mono">NCBITaxon:1931</span></td>
+  <td>Streptomyces sp.<br>Strain: FXJ1.172<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1931">NCBITaxon:1931</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0001648</td>
-  <td><details class="graph-evidence"><summary><span class="mono">DOI:10.1128/AEM.02915-10</span>, <span class="mono">DOI:10.1271/bbb.80631</span>, <span class="mono">https://www.ncbi.nlm.nih.gov/nuccore/KT591188.1</span></summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AEM.02915-10</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>MIBiG BGC0001648 entry version 5; claim-specific citation selected through a reviewed producer_reference correction. This remains a database assertion, not independently graded experimental evidence.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1271/bbb.80631</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Citation routing only. The imported PMID:19129623 studies ATCC35851/pKSL/AB449340, not FXJ1.172/KT591188.1. The inspected 2011 producer study identifies FXJ1.172 product as lasalocid A by mass, UV and MS2 comparison to JCM3373; it does not independently determine absolute stereochemistry or characterize the entire deposited cluster. Route the locus claim to KT591188.1, a putative partial BGC submission, not to the AB449340 experiment. Preserve source-tier grades and original raw references; no taxon, chemistry or locus-coordinate change. See issue #972. Original imported citation PMID:19129623 (ENTRY) remains in the raw inventory, not as support for this claim. MIBiG source row BGC0001648:1; SHA256 fbb9c924907a87713a15ff6323080124a5dea60a58dead6a941dcf34b7c83b58. Curator: codex; date: 2026-10-14. Taxon, locus, chemistry and evidence grades are unchanged.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/KT591188.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Strain context: FXJ1.172. KT591188.1 names strain FXJ1.172, also identified as a lasalocid A producer in DOI:10.1128/AEM.02915-10. Preserve deposited NCBITaxon:1931; adding this qualifier does not remap to NCBITaxon:710705, certify absolute stereochemistry or upgrade producer/locus evidence grades. See issue #973. Taxon identity and evidence grade are unchanged; this is not a species-wide experiment. MIBiG source row BGC0001648:1; SHA256 fbb9c924907a87713a15ff6323080124a5dea60a58dead6a941dcf34b7c83b58. Curator: codex; date: 2026-10-14.</dd></dl>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001648">mibig:BGC0001648</a></td>
+  <td><span class="mono"><a href="https://doi.org/10.1128/AEM.02915-10">DOI:10.1128/AEM.02915-10</a></span>, <span class="mono"><a href="https://doi.org/10.1271/bbb.80631">DOI:10.1271/bbb.80631</a></span>, <span class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/KT591188.1">https://www.ncbi.nlm.nih.gov/nuccore/KT591188.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AEM.02915-10">DOI:10.1128/AEM.02915-10</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>MIBiG BGC0001648 entry version 5; claim-specific citation selected through a reviewed producer_reference correction. This remains a database assertion, not independently graded experimental evidence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1271/bbb.80631">DOI:10.1271/bbb.80631</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Citation routing only. The imported <a href="https://pubmed.ncbi.nlm.nih.gov/19129623/">PMID:19129623</a> studies ATCC35851/pKSL/AB449340, not FXJ1.172/KT591188.1. The inspected 2011 producer study identifies FXJ1.172 product as lasalocid A by mass, UV and MS2 comparison to JCM3373; it does not independently determine absolute stereochemistry or characterize the entire deposited cluster. Route the locus claim to KT591188.1, a putative partial BGC submission, not to the AB449340 experiment. Preserve source-tier grades and original raw references; no taxon, chemistry or locus-coordinate change. See issue #972. Original imported citation <a href="https://pubmed.ncbi.nlm.nih.gov/19129623/">PMID:19129623</a> (ENTRY) remains in the raw inventory, not as support for this claim. MIBiG source row BGC0001648:1; SHA256 fbb9c924907a87713a15ff6323080124a5dea60a58dead6a941dcf34b7c83b58. Curator: codex; date: 2026-10-14. Taxon, locus, chemistry and evidence grades are unchanged.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/KT591188.1">https://www.ncbi.nlm.nih.gov/nuccore/KT591188.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Strain context: FXJ1.172. KT591188.1 names strain FXJ1.172, also identified as a lasalocid A producer in <a href="https://doi.org/10.1128/AEM.02915-10">DOI:10.1128/AEM.02915-10</a>. Preserve deposited NCBITaxon:1931; adding this qualifier does not remap to NCBITaxon:710705, certify absolute stereochemistry or upgrade producer/locus evidence grades. See issue #973. Taxon identity and evidence grade are unchanged; this is not a species-wide experiment. MIBiG source row BGC0001648:1; SHA256 fbb9c924907a87713a15ff6323080124a5dea60a58dead6a941dcf34b7c83b58. Curator: codex; date: 2026-10-14.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -74,34 +76,34 @@ same claim.</p>
 <h2 id="occurrences">Occurrences <span class="tag">3</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Streptomyces<br><span class="mono">NCBITaxon:1883</span></td>
+  <td>Streptomyces<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1883">NCBITaxon:1883</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1039/C29700000071</td>
+  <td class="mono"><a href="https://doi.org/10.1039/C29700000071">DOI:10.1039/C29700000071</a></td>
 </tr>
 <tr>
-  <td>Streptomyces<br><span class="mono">NCBITaxon:1883</span></td>
+  <td>Streptomyces<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1883">NCBITaxon:1883</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1271/BBB.80631</td>
+  <td class="mono"><a href="https://doi.org/10.1271/BBB.80631">DOI:10.1271/BBB.80631</a></td>
 </tr>
 <tr>
-  <td>Streptomyces lasalocidi<br><span class="mono">NCBITaxon:324833</span></td>
+  <td>Streptomyces lasalocidi<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=324833">NCBITaxon:324833</a></span></td>
   <td>CHEBI</td>
-  <td class="mono">PMID:32228806</td>
+  <td class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/32228806/">PMID:32228806</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0001648</td>
-  <td>Streptomyces sp.<br><span class="mono">NCBITaxon:1931</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001648">mibig:BGC0001648</a></td>
+  <td>Streptomyces sp.<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1931">NCBITaxon:1931</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:KT591188.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/KT591188.1">genbank:KT591188.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -111,7 +113,7 @@ isolation report left it.</p>
 
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for lasalocid">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for lasalocid">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -153,24 +155,33 @@ isolation report left it.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=BBMULGJBVDDDNI-OWKLGTHSSA-N">AntibioticMech (lasalocid) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=CHEBI%3A92181">MediaIngredientMech (CHEBI:92181) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A1931">TaxonMech: Streptomyces sp. (NCBITaxon:1931) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0001648">PathwayMech (mibig:BGC0001648) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q=CHEBI%3A92181">MediaIngredientMech (CHEBI:92181) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A1931">TaxonMech: Streptomyces sp. (NCBITaxon:1931) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0001648">PathwayMech (mibig:BGC0001648) &nearr;</a>
 </div>
 
 
+<h2 id="curation-history">Curation history <span class="tag">3</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-14T04:18:43Z">2026-10-14T04:18:43Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources<p>Seeded from the committed inventories and curation tables.</p></li>
+<li><time datetime="2026-09-25T03:01:32Z">2026-09-25T03:01:32Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:04Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
+
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0001648</td><td>MIBIG</td><td>5</td></tr>
-<tr><td class="mono">CHEBI:92181</td><td>CHEBI</td><td>3-star</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001648">BGC0001648</a></td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_92181">CHEBI:92181</a></td><td>CHEBI</td><td>3-star</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/polyketides/lasalocid.yaml">data/natural_products/polyketides/lasalocid.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20CHEBI%3A92181&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Fpolyketides%2Flasalocid.html">Report a problem with this record</a>: opens a GitHub issue that names CHEBI:92181 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Corpus as of 2026-10-23 22:53 UTC. Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 8e5d64d98cfd). Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

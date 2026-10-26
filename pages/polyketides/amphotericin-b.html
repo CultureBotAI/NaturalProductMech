@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Polyketides</a> &middot; amphotericin B</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,22 +32,22 @@
   </form>
 </div>
 <h1>amphotericin B</h1>
-<p class="sub"><span class="mono">naturalproductmech:mibig-b80aecf6de</span>
+<p class="sub"><span class="mono"><a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/polyketides/amphotericin-b.yaml">naturalproductmech:mibig-b80aecf6de</a></span>
   <span class="tag">MINTED</span>
   <span class="tag">SEEDED</span>
 <span class="tag">antiviral</span><span class="tag">cytotoxic</span></p>
 <div class="note"><strong>Grounding review:</strong> No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.</div><details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/amphotericin-b.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/amphotericin-b.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">APKFDSVGJQXUKY-UPWJBAEMSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">C[C@H]1/C=C/C=C/C=C/C=C/C=C/C=C/C=C/[C@@H](C[C@H]2[C@@H]([C@H](C[C@](O2)(C[C@H](C[C@H]([C@@H](CC[C@H](C[C@H](CC(=O)O[C@H]([C@@H]([C@@H]1O)C)C)O)O)O)O)O)O)O)C(=O)O)OC3C(C(C(C(O3)C)O)N)O</td></tr>
 <tr><th>Stereochemistry</th><td>  <span class="tag weak">undefined stereocentres</span> — the InChIKey does not
   distinguish this compound from its stereoisomers</td></tr>
-<tr><th>Cross-references</th><td class="mono">pubchem:5386092</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/compound/5386092">pubchem:5386092</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Polyketides</a> —
@@ -58,27 +60,27 @@ other, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Streptomyces nodosus<br><span class="mono">NCBITaxon:40318</span></td>
+  <td>Streptomyces nodosus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=40318">NCBITaxon:40318</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0000016</td>
-  <td><span class="mono">PMID:15563836</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000016">mibig:BGC0000016</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/15563836/">PMID:15563836</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">0</span></h2>
 <p class="sub">None cited.</p>
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0000016</td>
-  <td>Streptomyces nodosus<br><span class="mono">NCBITaxon:40318</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000016">mibig:BGC0000016</a></td>
+  <td>Streptomyces nodosus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=40318">NCBITaxon:40318</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:AY636001.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AY636001.1">genbank:AY636001.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -88,7 +90,7 @@ isolation report left it.</p>
 
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for amphotericin B">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for amphotericin B">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -124,77 +126,77 @@ isolation report left it.</p>
 
 <h2>Bioactivities <span class="tag">18</span></h2>
 <p class="sub">Entries preserve source qualifiers, targets and evidence. Repeated assay names or values are not independent replications; inspect source detail for differences.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Bioactivities"><table>
 <tr><th>Assay</th><th>Result</th><th>Target enzyme</th><th>Source detail</th></tr>
-<tr><td>MDR-1</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:377</summary><dl><dt>assay</dt><dd>MDR-1</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:377</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 377, deposited by PDSP; assay type Other. Target accession NP_000918 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>MDR-1</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/377">pubchem.aid:377</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>MDR-1</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/377">pubchem.aid:377</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 377, deposited by PDSP; assay type Other. Target accession NP_000918 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd></dl>
 </details></td></tr>
-<tr><td>NCI AIDS Antiviral Assay</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:179</summary><dl><dt>assay</dt><dd>NCI AIDS Antiviral Assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:179</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 179, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI AIDS Antiviral Assay</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/179">pubchem.aid:179</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI AIDS Antiviral Assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/179">pubchem.aid:179</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 179, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>ANTIVIRAL</dd></dl>
 </details></td></tr>
-<tr><td>NCI Yeast Anticancer Drug Screen. Data for the CLN2oe strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:163</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the CLN2oe strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:163</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 163, deposited by DTP/NCI; assay type Other.</dd></dl>
+<tr><td>NCI Yeast Anticancer Drug Screen. Data for the CLN2oe strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/163">pubchem.aid:163</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the CLN2oe strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/163">pubchem.aid:163</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 163, deposited by DTP/NCI; assay type Other.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI Yeast Anticancer Drug Screen. Data for the bub3 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:167</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the bub3 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:167</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 167, deposited by DTP/NCI; assay type Other.</dd></dl>
+<tr><td>NCI Yeast Anticancer Drug Screen. Data for the bub3 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/167">pubchem.aid:167</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the bub3 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/167">pubchem.aid:167</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 167, deposited by DTP/NCI; assay type Other.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI Yeast Anticancer Drug Screen. Data for the cln2 rad14 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:165</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the cln2 rad14 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:165</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 165, deposited by DTP/NCI; assay type Other.</dd></dl>
+<tr><td>NCI Yeast Anticancer Drug Screen. Data for the cln2 rad14 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/165">pubchem.aid:165</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the cln2 rad14 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/165">pubchem.aid:165</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 165, deposited by DTP/NCI; assay type Other.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI Yeast Anticancer Drug Screen. Data for the mec2-1 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:157</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the mec2-1 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:157</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 157, deposited by DTP/NCI; assay type Other.</dd></dl>
+<tr><td>NCI Yeast Anticancer Drug Screen. Data for the mec2-1 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/157">pubchem.aid:157</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the mec2-1 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/157">pubchem.aid:157</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 157, deposited by DTP/NCI; assay type Other.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI Yeast Anticancer Drug Screen. Data for the mgt1 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:153</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the mgt1 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:153</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 153, deposited by DTP/NCI; assay type Other.</dd></dl>
+<tr><td>NCI Yeast Anticancer Drug Screen. Data for the mgt1 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/153">pubchem.aid:153</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the mgt1 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/153">pubchem.aid:153</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 153, deposited by DTP/NCI; assay type Other.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI Yeast Anticancer Drug Screen. Data for the mlh1 rad18 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:175</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the mlh1 rad18 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:175</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 175, deposited by DTP/NCI; assay type Other.</dd></dl>
+<tr><td>NCI Yeast Anticancer Drug Screen. Data for the mlh1 rad18 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/175">pubchem.aid:175</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the mlh1 rad18 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/175">pubchem.aid:175</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 175, deposited by DTP/NCI; assay type Other.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI Yeast Anticancer Drug Screen. Data for the mlh1 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:171</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the mlh1 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:171</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 171, deposited by DTP/NCI; assay type Other.</dd></dl>
+<tr><td>NCI Yeast Anticancer Drug Screen. Data for the mlh1 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/171">pubchem.aid:171</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the mlh1 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/171">pubchem.aid:171</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 171, deposited by DTP/NCI; assay type Other.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI Yeast Anticancer Drug Screen. Data for the rad14 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:159</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the rad14 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:159</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 159, deposited by DTP/NCI; assay type Other.</dd></dl>
+<tr><td>NCI Yeast Anticancer Drug Screen. Data for the rad14 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/159">pubchem.aid:159</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the rad14 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/159">pubchem.aid:159</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 159, deposited by DTP/NCI; assay type Other.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI Yeast Anticancer Drug Screen. Data for the rad18 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:177</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the rad18 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:177</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 177, deposited by DTP/NCI; assay type Other.</dd></dl>
+<tr><td>NCI Yeast Anticancer Drug Screen. Data for the rad18 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/177">pubchem.aid:177</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the rad18 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/177">pubchem.aid:177</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 177, deposited by DTP/NCI; assay type Other.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI Yeast Anticancer Drug Screen. Data for the rad50 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:155</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the rad50 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:155</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 155, deposited by DTP/NCI; assay type Other.</dd></dl>
+<tr><td>NCI Yeast Anticancer Drug Screen. Data for the rad50 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/155">pubchem.aid:155</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the rad50 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/155">pubchem.aid:155</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 155, deposited by DTP/NCI; assay type Other.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI Yeast Anticancer Drug Screen. Data for the rad50EPP+ strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:151</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the rad50EPP+ strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:151</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 151, deposited by DTP/NCI; assay type Other.</dd></dl>
+<tr><td>NCI Yeast Anticancer Drug Screen. Data for the rad50EPP+ strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/151">pubchem.aid:151</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the rad50EPP+ strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/151">pubchem.aid:151</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 151, deposited by DTP/NCI; assay type Other.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI Yeast Anticancer Drug Screen. Data for the rad52 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:147</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the rad52 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:147</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 147, deposited by DTP/NCI; assay type Other.</dd></dl>
+<tr><td>NCI Yeast Anticancer Drug Screen. Data for the rad52 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/147">pubchem.aid:147</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the rad52 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/147">pubchem.aid:147</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 147, deposited by DTP/NCI; assay type Other.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI Yeast Anticancer Drug Screen. Data for the sgs1 mgt1 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:161</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the sgs1 mgt1 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:161</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 161, deposited by DTP/NCI; assay type Other.</dd></dl>
+<tr><td>NCI Yeast Anticancer Drug Screen. Data for the sgs1 mgt1 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/161">pubchem.aid:161</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the sgs1 mgt1 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/161">pubchem.aid:161</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 161, deposited by DTP/NCI; assay type Other.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI Yeast Anticancer Drug Screen. Data for the sgs1 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:173</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the sgs1 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:173</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 173, deposited by DTP/NCI; assay type Other.</dd></dl>
+<tr><td>NCI Yeast Anticancer Drug Screen. Data for the sgs1 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/173">pubchem.aid:173</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the sgs1 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/173">pubchem.aid:173</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 173, deposited by DTP/NCI; assay type Other.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI Yeast Anticancer Drug Screen. Data for the wt1 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:149</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the wt1 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:149</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 149, deposited by DTP/NCI; assay type Other.</dd></dl>
+<tr><td>NCI Yeast Anticancer Drug Screen. Data for the wt1 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/149">pubchem.aid:149</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the wt1 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/149">pubchem.aid:149</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 149, deposited by DTP/NCI; assay type Other.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI Yeast Anticancer Drug Screen. Data for the wt2 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:169</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the wt2 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:169</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 169, deposited by DTP/NCI; assay type Other.</dd></dl>
+<tr><td>NCI Yeast Anticancer Drug Screen. Data for the wt2 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/169">pubchem.aid:169</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the wt2 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/169">pubchem.aid:169</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 169, deposited by DTP/NCI; assay type Other.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
@@ -204,23 +206,30 @@ isolation report left it.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=APKFDSVGJQXUKY-UPWJBAEMSA-N">AntibioticMech (amphotericin B) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=naturalproductmech%3Amibig-b80aecf6de">MediaIngredientMech (naturalproductmech:mibig-b80aecf6de) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A40318">TaxonMech: Streptomyces nodosus (NCBITaxon:40318) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000016">PathwayMech (mibig:BGC0000016) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A40318">TaxonMech: Streptomyces nodosus (NCBITaxon:40318) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000016">PathwayMech (mibig:BGC0000016) &nearr;</a>
 </div>
 
 
+<h2 id="curation-history">Curation history <span class="tag">3</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-09-25T03:01:27Z">2026-09-25T03:01:27Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(3 identical runs since 2026-09-10T05:54:03Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
+
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0000016</td><td>MIBIG</td><td>4</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000016">BGC0000016</a></td><td>MIBIG</td><td>4</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/polyketides/amphotericin-b.yaml">data/natural_products/polyketides/amphotericin-b.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20naturalproductmech%3Amibig-b80aecf6de&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Fpolyketides%2Famphotericin-b.html">Report a problem with this record</a>: opens a GitHub issue that names naturalproductmech:mibig-b80aecf6de and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Corpus as of 2026-10-23 22:53 UTC. Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 8e5d64d98cfd). Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

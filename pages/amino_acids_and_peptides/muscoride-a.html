@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Amino acids and peptides</a> &middot; muscoride A</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,22 +32,22 @@
   </form>
 </div>
 <h1>muscoride A</h1>
-<p class="sub"><span class="mono">naturalproductmech:mibig-3dbef7a0f0</span>
+<p class="sub"><span class="mono"><a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/amino_acids_and_peptides/muscoride-a.yaml">naturalproductmech:mibig-3dbef7a0f0</a></span>
   <span class="tag">MINTED</span>
   <span class="tag">SEEDED</span>
 </p>
 <div class="note"><strong>Grounding review:</strong> No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.</div><details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/amino_acids_and_peptides/muscoride-a.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/amino_acids_and_peptides/muscoride-a.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">PFXJYHPNSWNJBP-UHFFFAOYSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">CC1=C(N=C(O1)C2CCCN2C(=O)C(C(C)C)NC(C)(C)C=C)C3=NC(=C(O3)C)C(=O)OCC=C(C)C</td></tr>
 <tr><th>Stereochemistry</th><td>  <span class="tag weak">undefined stereocentres</span> — the InChIKey does not
   distinguish this compound from its stereoisomers</td></tr>
-<tr><th>Cross-references</th><td class="mono">npatlas:NPA012082</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://www.npatlas.org/explore/compounds/NPA012082">npatlas:NPA012082</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Amino acids and peptides</a> —
@@ -58,50 +60,50 @@ ribosomal, other, terpene, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Desmonostoc sp. PCC 7906<br><span class="mono">NCBITaxon:1181</span></td>
+  <td>Desmonostoc sp. PCC 7906<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1181">NCBITaxon:1181</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0002485</td>
-  <td><span class="mono">PMID:31674754</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002485">mibig:BGC0002485</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/31674754/">PMID:31674754</a></span></td>
 </tr>
 <tr>
-  <td>Nostoc sp. UHCC-0398<br><span class="mono">NCBITaxon:2665154</span></td>
+  <td>Nostoc sp. UHCC-0398<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2665154">NCBITaxon:2665154</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0002551</td>
-  <td><span class="mono">PMID:31674754</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002551">mibig:BGC0002551</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/31674754/">PMID:31674754</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">1</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Nostoc muscorum<br><span class="mono">NCBITaxon:1179</span></td>
+  <td>Nostoc muscorum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1179">NCBITaxon:1179</a></span></td>
   <td>CYANOMETDB</td>
-  <td class="mono">DOI:10.1016/0040-4039(95)00724-Q</td>
+  <td class="mono"><a href="https://doi.org/10.1016/0040-4039%2895%2900724-Q">DOI:10.1016/0040-4039(95)00724-Q</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">2</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0002485</td>
-  <td>Desmonostoc sp. PCC 7906<br><span class="mono">NCBITaxon:1181</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002485">mibig:BGC0002485</a></td>
+  <td>Desmonostoc sp. PCC 7906<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1181">NCBITaxon:1181</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:MK806443.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/MK806443.1">genbank:MK806443.1</a></td>
 </tr>
 <tr>
-  <td class="mono">mibig:BGC0002551</td>
-  <td>Nostoc sp. UHCC-0398<br><span class="mono">NCBITaxon:2665154</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002551">mibig:BGC0002551</a></td>
+  <td>Nostoc sp. UHCC-0398<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2665154">NCBITaxon:2665154</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:MK806444.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1">genbank:MK806444.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -111,27 +113,27 @@ isolation report left it.</p>
 <h2>Biosynthesis <span class="tag causal">curated</span></h2>
 <p class="sub">Written by a curator with claim-level evidence on each step; not
 derived from a source. This is what the rest of the record exists to support.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthesis steps"><table>
 <tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
 <tr>
   <td>1</td>
-  <td>MusF1<br><span class="mono">UniProtKB:A0A5Q0TWZ6</span></td>
+  <td>MusF1<br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/A0A5Q0TWZ6/entry">UniProtKB:A0A5Q0TWZ6</a></span></td>
   <td class="mono"></td>
   <td class="mono">ungrounded &rarr; ungrounded</td>
-  <td class="mono">DOI:10.1021/acschembio.9b00620</td>
+  <td class="mono"><a href="https://doi.org/10.1021/acschembio.9b00620">DOI:10.1021/acschembio.9b00620</a></td>
 </tr>
 <tr>
   <td>2</td>
-  <td>MusF2<br><span class="mono">UniProtKB:A0A5Q0TX00</span></td>
+  <td>MusF2<br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/A0A5Q0TX00/entry">UniProtKB:A0A5Q0TX00</a></span></td>
   <td class="mono"></td>
   <td class="mono">ungrounded &rarr; ungrounded</td>
-  <td class="mono">DOI:10.1021/acschembio.9b00620</td>
+  <td class="mono"><a href="https://doi.org/10.1021/acschembio.9b00620">DOI:10.1021/acschembio.9b00620</a></td>
 </tr>
 </table></div>
 <p class="sub">Step 1: The Nostoc sp. UHCC-0398 MusF1 cyanobactin prenyltransferase is curated as the C-terminal prenyltransferase for a muscoride A precursor. The exact carboxy-prenylated intermediate is left ungrounded.</p><p class="sub">Step 2: The Nostoc sp. UHCC-0398 MusF2 cyanobactin prenyltransferase is curated as the N-terminal prenyltransferase for a muscoride A precursor. The exact amine-prenylated intermediate is left ungrounded.</p>
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for muscoride A">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for muscoride A">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -164,20 +166,20 @@ derived from a source. This is what the rest of the record exists to support.</p
 </div>
 
 <h2>Causal graph &mdash; biosynthesis <span class="tag">6 nodes, 6 edges</span></h2>
-<p class="sub">Partial Nostoc sp. UHCC-0398 mus-cluster graph for the MusE precursor and the MusF1/MusF2 terminal prenylation steps in muscoride A biosynthesis.</p><div class="scroll"><table>
+<p class="sub">Partial Nostoc sp. UHCC-0398 mus-cluster graph for the MusE precursor and the MusF1/MusF2 terminal prenylation steps in muscoride A biosynthesis.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>MusE precursor peptide</td>
   <td>supplies precursor peptide for</td>
   <td>C-terminal prenylation of the muscoride precursor</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/acschembio.9b00620<br>MIBIG:BGC0002551<br>https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1<br>https://www.uniprot.org/uniprotkb/A0A5Q0TX65/entry<br>https://www.ncbi.nlm.nih.gov/protein/QGA72599.1<br>https://www.uniprot.org/uniprotkb/A0A5Q0TWZ6/entry<br>https://www.ncbi.nlm.nih.gov/protein/QGA72595.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/acschembio.9b00620</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>MusF1 acts on the carboxy-terminus while MusF2 acts on the amino-terminus</dd><dt>notes</dt><dd>Mattila et al. identified the muscoride biosynthetic gene cluster from Nostoc sp. UHCC-0398, described MusE precursor processing, and used biochemical assays to assign MusF1 to C-terminal prenylation and MusF2 to N-terminal prenylation during muscoride A/B biosynthesis.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>MIBIG:BGC0002551</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>MIBiG BGC0002551.2 records muscoride A in the Nostoc sp. UHCC-0398 MK806444.1 locus with enzymatic-assay evidence.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>muscoride biosynthetic gene cluster</dd><dt>notes</dt><dd>GenBank MK806444.1 is the Nostoc sp. UHCC-0398 muscoride biosynthetic gene cluster and carries the musE, musF1, and musF2 coding sequences inside the 1..13360 BGC0002551 locus interval.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A5Q0TX65/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>UniProtKB:A0A5Q0TX65 is the Nostoc sp. UHCC-0398 musE entry cross-referenced to EMBL MK806444.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/QGA72599.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>muscoride precursor peptide</dd><dt>notes</dt><dd>NCBI GenPept QGA72599.1 is the MK806444.1 musE coding sequence and matches UniProtKB:A0A5Q0TX65 at 67 amino acids.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A5Q0TWZ6/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>UniProtKB:A0A5Q0TWZ6 is the Nostoc sp. UHCC-0398 musF1 entry cross-referenced to EMBL MK806444.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/QGA72595.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>muscoride prenyltransferase</dd><dt>notes</dt><dd>NCBI GenPept QGA72595.1 is the 300 aa MK806444.1 musF1 coding sequence and matches UniProtKB:A0A5Q0TWZ6.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/acschembio.9b00620">DOI:10.1021/acschembio.9b00620</a><br><a href="https://mibig.secondarymetabolites.org/go/BGC0002551">MIBIG:BGC0002551</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1">https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1</a><br><a href="https://www.uniprot.org/uniprotkb/A0A5Q0TX65/entry">https://www.uniprot.org/uniprotkb/A0A5Q0TX65/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/QGA72599.1">https://www.ncbi.nlm.nih.gov/protein/QGA72599.1</a><br><a href="https://www.uniprot.org/uniprotkb/A0A5Q0TWZ6/entry">https://www.uniprot.org/uniprotkb/A0A5Q0TWZ6/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/QGA72595.1">https://www.ncbi.nlm.nih.gov/protein/QGA72595.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/acschembio.9b00620">DOI:10.1021/acschembio.9b00620</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>MusF1 acts on the carboxy-terminus while MusF2 acts on the amino-terminus</dd><dt>notes</dt><dd>Mattila et al. identified the muscoride biosynthetic gene cluster from Nostoc sp. UHCC-0398, described MusE precursor processing, and used biochemical assays to assign MusF1 to C-terminal prenylation and MusF2 to N-terminal prenylation during muscoride A/B biosynthesis.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/go/BGC0002551">MIBIG:BGC0002551</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>MIBiG BGC0002551.2 records muscoride A in the Nostoc sp. UHCC-0398 MK806444.1 locus with enzymatic-assay evidence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1">https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>muscoride biosynthetic gene cluster</dd><dt>notes</dt><dd>GenBank MK806444.1 is the Nostoc sp. UHCC-0398 muscoride biosynthetic gene cluster and carries the musE, musF1, and musF2 coding sequences inside the 1..13360 BGC0002551 locus interval.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0A5Q0TX65/entry">https://www.uniprot.org/uniprotkb/A0A5Q0TX65/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>UniProtKB:A0A5Q0TX65 is the Nostoc sp. UHCC-0398 musE entry cross-referenced to EMBL MK806444.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/QGA72599.1">https://www.ncbi.nlm.nih.gov/protein/QGA72599.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>muscoride precursor peptide</dd><dt>notes</dt><dd>NCBI GenPept QGA72599.1 is the MK806444.1 musE coding sequence and matches UniProtKB:A0A5Q0TX65 at 67 amino acids.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0A5Q0TWZ6/entry">https://www.uniprot.org/uniprotkb/A0A5Q0TWZ6/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>UniProtKB:A0A5Q0TWZ6 is the Nostoc sp. UHCC-0398 musF1 entry cross-referenced to EMBL MK806444.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/QGA72595.1">https://www.ncbi.nlm.nih.gov/protein/QGA72595.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>muscoride prenyltransferase</dd><dt>notes</dt><dd>NCBI GenPept QGA72595.1 is the 300 aa MK806444.1 musF1 coding sequence and matches UniProtKB:A0A5Q0TWZ6.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -186,13 +188,13 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>supplies precursor peptide for</td>
   <td>N-terminal prenylation of the muscoride precursor</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/acschembio.9b00620<br>MIBIG:BGC0002551<br>https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1<br>https://www.uniprot.org/uniprotkb/A0A5Q0TX65/entry<br>https://www.ncbi.nlm.nih.gov/protein/QGA72599.1<br>https://www.uniprot.org/uniprotkb/A0A5Q0TX00/entry<br>https://www.ncbi.nlm.nih.gov/protein/QGA72594.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/acschembio.9b00620</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>MusF1 acts on the carboxy-terminus while MusF2 acts on the amino-terminus</dd><dt>notes</dt><dd>Mattila et al. identified the muscoride biosynthetic gene cluster from Nostoc sp. UHCC-0398, described MusE precursor processing, and used biochemical assays to assign MusF1 to C-terminal prenylation and MusF2 to N-terminal prenylation during muscoride A/B biosynthesis.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>MIBIG:BGC0002551</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>MIBiG BGC0002551.2 records muscoride A in the Nostoc sp. UHCC-0398 MK806444.1 locus with enzymatic-assay evidence.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>muscoride biosynthetic gene cluster</dd><dt>notes</dt><dd>GenBank MK806444.1 is the Nostoc sp. UHCC-0398 muscoride biosynthetic gene cluster and carries the musE, musF1, and musF2 coding sequences inside the 1..13360 BGC0002551 locus interval.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A5Q0TX65/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>UniProtKB:A0A5Q0TX65 is the Nostoc sp. UHCC-0398 musE entry cross-referenced to EMBL MK806444.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/QGA72599.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>muscoride precursor peptide</dd><dt>notes</dt><dd>NCBI GenPept QGA72599.1 is the MK806444.1 musE coding sequence and matches UniProtKB:A0A5Q0TX65 at 67 amino acids.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A5Q0TX00/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>UniProtKB:A0A5Q0TX00 is the Nostoc sp. UHCC-0398 musF2 entry cross-referenced to EMBL MK806444.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/QGA72594.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>muscoride prenyltransferase</dd><dt>notes</dt><dd>NCBI GenPept QGA72594.1 is the 300 aa MK806444.1 musF2 coding sequence and matches UniProtKB:A0A5Q0TX00.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/acschembio.9b00620">DOI:10.1021/acschembio.9b00620</a><br><a href="https://mibig.secondarymetabolites.org/go/BGC0002551">MIBIG:BGC0002551</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1">https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1</a><br><a href="https://www.uniprot.org/uniprotkb/A0A5Q0TX65/entry">https://www.uniprot.org/uniprotkb/A0A5Q0TX65/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/QGA72599.1">https://www.ncbi.nlm.nih.gov/protein/QGA72599.1</a><br><a href="https://www.uniprot.org/uniprotkb/A0A5Q0TX00/entry">https://www.uniprot.org/uniprotkb/A0A5Q0TX00/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/QGA72594.1">https://www.ncbi.nlm.nih.gov/protein/QGA72594.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/acschembio.9b00620">DOI:10.1021/acschembio.9b00620</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>MusF1 acts on the carboxy-terminus while MusF2 acts on the amino-terminus</dd><dt>notes</dt><dd>Mattila et al. identified the muscoride biosynthetic gene cluster from Nostoc sp. UHCC-0398, described MusE precursor processing, and used biochemical assays to assign MusF1 to C-terminal prenylation and MusF2 to N-terminal prenylation during muscoride A/B biosynthesis.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/go/BGC0002551">MIBIG:BGC0002551</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>MIBiG BGC0002551.2 records muscoride A in the Nostoc sp. UHCC-0398 MK806444.1 locus with enzymatic-assay evidence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1">https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>muscoride biosynthetic gene cluster</dd><dt>notes</dt><dd>GenBank MK806444.1 is the Nostoc sp. UHCC-0398 muscoride biosynthetic gene cluster and carries the musE, musF1, and musF2 coding sequences inside the 1..13360 BGC0002551 locus interval.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0A5Q0TX65/entry">https://www.uniprot.org/uniprotkb/A0A5Q0TX65/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>UniProtKB:A0A5Q0TX65 is the Nostoc sp. UHCC-0398 musE entry cross-referenced to EMBL MK806444.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/QGA72599.1">https://www.ncbi.nlm.nih.gov/protein/QGA72599.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>muscoride precursor peptide</dd><dt>notes</dt><dd>NCBI GenPept QGA72599.1 is the MK806444.1 musE coding sequence and matches UniProtKB:A0A5Q0TX65 at 67 amino acids.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0A5Q0TX00/entry">https://www.uniprot.org/uniprotkb/A0A5Q0TX00/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>UniProtKB:A0A5Q0TX00 is the Nostoc sp. UHCC-0398 musF2 entry cross-referenced to EMBL MK806444.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/QGA72594.1">https://www.ncbi.nlm.nih.gov/protein/QGA72594.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>muscoride prenyltransferase</dd><dt>notes</dt><dd>NCBI GenPept QGA72594.1 is the 300 aa MK806444.1 musF2 coding sequence and matches UniProtKB:A0A5Q0TX00.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -201,11 +203,11 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>catalyzes</td>
   <td>C-terminal prenylation of the muscoride precursor</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/acschembio.9b00620<br>MIBIG:BGC0002551<br>https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1<br>https://www.uniprot.org/uniprotkb/A0A5Q0TWZ6/entry<br>https://www.ncbi.nlm.nih.gov/protein/QGA72595.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/acschembio.9b00620</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>MusF1 acts on the carboxy-terminus while MusF2 acts on the amino-terminus</dd><dt>notes</dt><dd>Mattila et al. identified the muscoride biosynthetic gene cluster from Nostoc sp. UHCC-0398, described MusE precursor processing, and used biochemical assays to assign MusF1 to C-terminal prenylation and MusF2 to N-terminal prenylation during muscoride A/B biosynthesis.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>MIBIG:BGC0002551</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>MIBiG BGC0002551.2 records muscoride A in the Nostoc sp. UHCC-0398 MK806444.1 locus with enzymatic-assay evidence.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>muscoride biosynthetic gene cluster</dd><dt>notes</dt><dd>GenBank MK806444.1 is the Nostoc sp. UHCC-0398 muscoride biosynthetic gene cluster and carries the musE, musF1, and musF2 coding sequences inside the 1..13360 BGC0002551 locus interval.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A5Q0TWZ6/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>UniProtKB:A0A5Q0TWZ6 is the Nostoc sp. UHCC-0398 musF1 entry cross-referenced to EMBL MK806444.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/QGA72595.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>muscoride prenyltransferase</dd><dt>notes</dt><dd>NCBI GenPept QGA72595.1 is the 300 aa MK806444.1 musF1 coding sequence and matches UniProtKB:A0A5Q0TWZ6.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/acschembio.9b00620">DOI:10.1021/acschembio.9b00620</a><br><a href="https://mibig.secondarymetabolites.org/go/BGC0002551">MIBIG:BGC0002551</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1">https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1</a><br><a href="https://www.uniprot.org/uniprotkb/A0A5Q0TWZ6/entry">https://www.uniprot.org/uniprotkb/A0A5Q0TWZ6/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/QGA72595.1">https://www.ncbi.nlm.nih.gov/protein/QGA72595.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/acschembio.9b00620">DOI:10.1021/acschembio.9b00620</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>MusF1 acts on the carboxy-terminus while MusF2 acts on the amino-terminus</dd><dt>notes</dt><dd>Mattila et al. identified the muscoride biosynthetic gene cluster from Nostoc sp. UHCC-0398, described MusE precursor processing, and used biochemical assays to assign MusF1 to C-terminal prenylation and MusF2 to N-terminal prenylation during muscoride A/B biosynthesis.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/go/BGC0002551">MIBIG:BGC0002551</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>MIBiG BGC0002551.2 records muscoride A in the Nostoc sp. UHCC-0398 MK806444.1 locus with enzymatic-assay evidence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1">https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>muscoride biosynthetic gene cluster</dd><dt>notes</dt><dd>GenBank MK806444.1 is the Nostoc sp. UHCC-0398 muscoride biosynthetic gene cluster and carries the musE, musF1, and musF2 coding sequences inside the 1..13360 BGC0002551 locus interval.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0A5Q0TWZ6/entry">https://www.uniprot.org/uniprotkb/A0A5Q0TWZ6/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>UniProtKB:A0A5Q0TWZ6 is the Nostoc sp. UHCC-0398 musF1 entry cross-referenced to EMBL MK806444.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/QGA72595.1">https://www.ncbi.nlm.nih.gov/protein/QGA72595.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>muscoride prenyltransferase</dd><dt>notes</dt><dd>NCBI GenPept QGA72595.1 is the 300 aa MK806444.1 musF1 coding sequence and matches UniProtKB:A0A5Q0TWZ6.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -214,11 +216,11 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>catalyzes</td>
   <td>N-terminal prenylation of the muscoride precursor</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/acschembio.9b00620<br>MIBIG:BGC0002551<br>https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1<br>https://www.uniprot.org/uniprotkb/A0A5Q0TX00/entry<br>https://www.ncbi.nlm.nih.gov/protein/QGA72594.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/acschembio.9b00620</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>MusF1 acts on the carboxy-terminus while MusF2 acts on the amino-terminus</dd><dt>notes</dt><dd>Mattila et al. identified the muscoride biosynthetic gene cluster from Nostoc sp. UHCC-0398, described MusE precursor processing, and used biochemical assays to assign MusF1 to C-terminal prenylation and MusF2 to N-terminal prenylation during muscoride A/B biosynthesis.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>MIBIG:BGC0002551</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>MIBiG BGC0002551.2 records muscoride A in the Nostoc sp. UHCC-0398 MK806444.1 locus with enzymatic-assay evidence.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>muscoride biosynthetic gene cluster</dd><dt>notes</dt><dd>GenBank MK806444.1 is the Nostoc sp. UHCC-0398 muscoride biosynthetic gene cluster and carries the musE, musF1, and musF2 coding sequences inside the 1..13360 BGC0002551 locus interval.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A5Q0TX00/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>UniProtKB:A0A5Q0TX00 is the Nostoc sp. UHCC-0398 musF2 entry cross-referenced to EMBL MK806444.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/QGA72594.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>muscoride prenyltransferase</dd><dt>notes</dt><dd>NCBI GenPept QGA72594.1 is the 300 aa MK806444.1 musF2 coding sequence and matches UniProtKB:A0A5Q0TX00.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/acschembio.9b00620">DOI:10.1021/acschembio.9b00620</a><br><a href="https://mibig.secondarymetabolites.org/go/BGC0002551">MIBIG:BGC0002551</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1">https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1</a><br><a href="https://www.uniprot.org/uniprotkb/A0A5Q0TX00/entry">https://www.uniprot.org/uniprotkb/A0A5Q0TX00/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/QGA72594.1">https://www.ncbi.nlm.nih.gov/protein/QGA72594.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/acschembio.9b00620">DOI:10.1021/acschembio.9b00620</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>MusF1 acts on the carboxy-terminus while MusF2 acts on the amino-terminus</dd><dt>notes</dt><dd>Mattila et al. identified the muscoride biosynthetic gene cluster from Nostoc sp. UHCC-0398, described MusE precursor processing, and used biochemical assays to assign MusF1 to C-terminal prenylation and MusF2 to N-terminal prenylation during muscoride A/B biosynthesis.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/go/BGC0002551">MIBIG:BGC0002551</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>MIBiG BGC0002551.2 records muscoride A in the Nostoc sp. UHCC-0398 MK806444.1 locus with enzymatic-assay evidence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1">https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>muscoride biosynthetic gene cluster</dd><dt>notes</dt><dd>GenBank MK806444.1 is the Nostoc sp. UHCC-0398 muscoride biosynthetic gene cluster and carries the musE, musF1, and musF2 coding sequences inside the 1..13360 BGC0002551 locus interval.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0A5Q0TX00/entry">https://www.uniprot.org/uniprotkb/A0A5Q0TX00/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>UniProtKB:A0A5Q0TX00 is the Nostoc sp. UHCC-0398 musF2 entry cross-referenced to EMBL MK806444.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/QGA72594.1">https://www.ncbi.nlm.nih.gov/protein/QGA72594.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>muscoride prenyltransferase</dd><dt>notes</dt><dd>NCBI GenPept QGA72594.1 is the 300 aa MK806444.1 musF2 coding sequence and matches UniProtKB:A0A5Q0TX00.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -227,11 +229,11 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>contributes to</td>
   <td>muscoride A</td>
   <td>Muscoride A is represented only as the downstream bis-prenylated product because the exact C-prenylated intermediate is not grounded.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/acschembio.9b00620<br>MIBIG:BGC0002551<br>https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1<br>https://www.uniprot.org/uniprotkb/A0A5Q0TWZ6/entry<br>https://www.ncbi.nlm.nih.gov/protein/QGA72595.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/acschembio.9b00620</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>MusF1 acts on the carboxy-terminus while MusF2 acts on the amino-terminus</dd><dt>notes</dt><dd>Mattila et al. identified the muscoride biosynthetic gene cluster from Nostoc sp. UHCC-0398, described MusE precursor processing, and used biochemical assays to assign MusF1 to C-terminal prenylation and MusF2 to N-terminal prenylation during muscoride A/B biosynthesis.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>MIBIG:BGC0002551</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>MIBiG BGC0002551.2 records muscoride A in the Nostoc sp. UHCC-0398 MK806444.1 locus with enzymatic-assay evidence.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>muscoride biosynthetic gene cluster</dd><dt>notes</dt><dd>GenBank MK806444.1 is the Nostoc sp. UHCC-0398 muscoride biosynthetic gene cluster and carries the musE, musF1, and musF2 coding sequences inside the 1..13360 BGC0002551 locus interval.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A5Q0TWZ6/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>UniProtKB:A0A5Q0TWZ6 is the Nostoc sp. UHCC-0398 musF1 entry cross-referenced to EMBL MK806444.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/QGA72595.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>muscoride prenyltransferase</dd><dt>notes</dt><dd>NCBI GenPept QGA72595.1 is the 300 aa MK806444.1 musF1 coding sequence and matches UniProtKB:A0A5Q0TWZ6.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/acschembio.9b00620">DOI:10.1021/acschembio.9b00620</a><br><a href="https://mibig.secondarymetabolites.org/go/BGC0002551">MIBIG:BGC0002551</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1">https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1</a><br><a href="https://www.uniprot.org/uniprotkb/A0A5Q0TWZ6/entry">https://www.uniprot.org/uniprotkb/A0A5Q0TWZ6/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/QGA72595.1">https://www.ncbi.nlm.nih.gov/protein/QGA72595.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/acschembio.9b00620">DOI:10.1021/acschembio.9b00620</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>MusF1 acts on the carboxy-terminus while MusF2 acts on the amino-terminus</dd><dt>notes</dt><dd>Mattila et al. identified the muscoride biosynthetic gene cluster from Nostoc sp. UHCC-0398, described MusE precursor processing, and used biochemical assays to assign MusF1 to C-terminal prenylation and MusF2 to N-terminal prenylation during muscoride A/B biosynthesis.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/go/BGC0002551">MIBIG:BGC0002551</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>MIBiG BGC0002551.2 records muscoride A in the Nostoc sp. UHCC-0398 MK806444.1 locus with enzymatic-assay evidence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1">https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>muscoride biosynthetic gene cluster</dd><dt>notes</dt><dd>GenBank MK806444.1 is the Nostoc sp. UHCC-0398 muscoride biosynthetic gene cluster and carries the musE, musF1, and musF2 coding sequences inside the 1..13360 BGC0002551 locus interval.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0A5Q0TWZ6/entry">https://www.uniprot.org/uniprotkb/A0A5Q0TWZ6/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>UniProtKB:A0A5Q0TWZ6 is the Nostoc sp. UHCC-0398 musF1 entry cross-referenced to EMBL MK806444.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/QGA72595.1">https://www.ncbi.nlm.nih.gov/protein/QGA72595.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>muscoride prenyltransferase</dd><dt>notes</dt><dd>NCBI GenPept QGA72595.1 is the 300 aa MK806444.1 musF1 coding sequence and matches UniProtKB:A0A5Q0TWZ6.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -240,11 +242,11 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>contributes to</td>
   <td>muscoride A</td>
   <td>Muscoride A is represented only as the downstream bis-prenylated product because the exact N-prenylated intermediate is not grounded.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/acschembio.9b00620<br>MIBIG:BGC0002551<br>https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1<br>https://www.uniprot.org/uniprotkb/A0A5Q0TX00/entry<br>https://www.ncbi.nlm.nih.gov/protein/QGA72594.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/acschembio.9b00620</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>MusF1 acts on the carboxy-terminus while MusF2 acts on the amino-terminus</dd><dt>notes</dt><dd>Mattila et al. identified the muscoride biosynthetic gene cluster from Nostoc sp. UHCC-0398, described MusE precursor processing, and used biochemical assays to assign MusF1 to C-terminal prenylation and MusF2 to N-terminal prenylation during muscoride A/B biosynthesis.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>MIBIG:BGC0002551</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>MIBiG BGC0002551.2 records muscoride A in the Nostoc sp. UHCC-0398 MK806444.1 locus with enzymatic-assay evidence.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>muscoride biosynthetic gene cluster</dd><dt>notes</dt><dd>GenBank MK806444.1 is the Nostoc sp. UHCC-0398 muscoride biosynthetic gene cluster and carries the musE, musF1, and musF2 coding sequences inside the 1..13360 BGC0002551 locus interval.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A5Q0TX00/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>UniProtKB:A0A5Q0TX00 is the Nostoc sp. UHCC-0398 musF2 entry cross-referenced to EMBL MK806444.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/QGA72594.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>muscoride prenyltransferase</dd><dt>notes</dt><dd>NCBI GenPept QGA72594.1 is the 300 aa MK806444.1 musF2 coding sequence and matches UniProtKB:A0A5Q0TX00.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/acschembio.9b00620">DOI:10.1021/acschembio.9b00620</a><br><a href="https://mibig.secondarymetabolites.org/go/BGC0002551">MIBIG:BGC0002551</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1">https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1</a><br><a href="https://www.uniprot.org/uniprotkb/A0A5Q0TX00/entry">https://www.uniprot.org/uniprotkb/A0A5Q0TX00/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/QGA72594.1">https://www.ncbi.nlm.nih.gov/protein/QGA72594.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/acschembio.9b00620">DOI:10.1021/acschembio.9b00620</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>MusF1 acts on the carboxy-terminus while MusF2 acts on the amino-terminus</dd><dt>notes</dt><dd>Mattila et al. identified the muscoride biosynthetic gene cluster from Nostoc sp. UHCC-0398, described MusE precursor processing, and used biochemical assays to assign MusF1 to C-terminal prenylation and MusF2 to N-terminal prenylation during muscoride A/B biosynthesis.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/go/BGC0002551">MIBIG:BGC0002551</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>MIBiG BGC0002551.2 records muscoride A in the Nostoc sp. UHCC-0398 MK806444.1 locus with enzymatic-assay evidence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1">https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>muscoride biosynthetic gene cluster</dd><dt>notes</dt><dd>GenBank MK806444.1 is the Nostoc sp. UHCC-0398 muscoride biosynthetic gene cluster and carries the musE, musF1, and musF2 coding sequences inside the 1..13360 BGC0002551 locus interval.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0A5Q0TX00/entry">https://www.uniprot.org/uniprotkb/A0A5Q0TX00/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>UniProtKB:A0A5Q0TX00 is the Nostoc sp. UHCC-0398 musF2 entry cross-referenced to EMBL MK806444.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/QGA72594.1">https://www.ncbi.nlm.nih.gov/protein/QGA72594.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>muscoride prenyltransferase</dd><dt>notes</dt><dd>NCBI GenPept QGA72594.1 is the 300 aa MK806444.1 musF2 coding sequence and matches UniProtKB:A0A5Q0TX00.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -258,28 +260,38 @@ by the corpus tests.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=PFXJYHPNSWNJBP-UHFFFAOYSA-N">AntibioticMech (muscoride A) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=naturalproductmech%3Amibig-3dbef7a0f0">MediaIngredientMech (naturalproductmech:mibig-3dbef7a0f0) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A1181">TaxonMech: Desmonostoc sp. PCC 7906 (NCBITaxon:1181) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A2665154">TaxonMech: Nostoc sp. UHCC-0398 (NCBITaxon:2665154) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0002485">PathwayMech (mibig:BGC0002485) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0002551">PathwayMech (mibig:BGC0002551) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A1181">TaxonMech: Desmonostoc sp. PCC 7906 (NCBITaxon:1181) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A2665154">TaxonMech: Nostoc sp. UHCC-0398 (NCBITaxon:2665154) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0002485">PathwayMech (mibig:BGC0002485) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0002551">PathwayMech (mibig:BGC0002551) &nearr;</a>
 </div>
 
 <h2>Open questions <span class="tag">1</span></h2>
-<div class="note"><p><strong>shared-structure</strong> — This structure is reported by more than one MIBiG entry: BGC0002485, BGC0002551. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
+<div class="note"><p><strong>shared-structure</strong> <span class="tag">OPEN</span> <span class="tag">curation todo</span> — This structure is reported by more than one MIBiG entry: BGC0002485, BGC0002551. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
+
+<h2 id="curation-history">Curation history <span class="tag">5</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-13T23:58:06Z">2026-10-13T23:58:06Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources<p>Seeded from the committed inventories and curation tables.</p></li>
+<li><time datetime="2026-10-01T10:52:45Z">2026-10-01T10:52:45Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added proposed Nostoc sp. UHCC-0398 MusF1 and MusF2 biosynthetic_pathway steps for muscoride A terminal prenylation, grounded to exact UniProtKB entries cross-referenced to the MK806444.1 muscoride cluster.</p></li>
+<li><time datetime="2026-09-28T11:03:09Z">2026-09-28T11:03:09Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added a partial Nostoc sp. UHCC-0398 MusE/MusF1/MusF2 BIOSYNTHESIS causal graph for muscoride A terminal prenylation, grounded to exact UniProtKB entries cross-referenced to the MK806444.1 muscoride cluster.</p></li>
+<li><time datetime="2026-09-25T03:03:04Z">2026-09-25T03:03:04Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:11Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
 
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0002485</td><td>MIBIG</td><td>2</td></tr>
-<tr><td class="mono">BGC0002551</td><td>MIBIG</td><td>2</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002485">BGC0002485</a></td><td>MIBIG</td><td>2</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002551">BGC0002551</a></td><td>MIBIG</td><td>2</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/amino_acids_and_peptides/muscoride-a.yaml">data/natural_products/amino_acids_and_peptides/muscoride-a.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20naturalproductmech%3Amibig-3dbef7a0f0&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Famino_acids_and_peptides%2Fmuscoride-a.html">Report a problem with this record</a>: opens a GitHub issue that names naturalproductmech:mibig-3dbef7a0f0 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Corpus as of 2026-10-23 22:53 UTC. Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 8e5d64d98cfd). Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

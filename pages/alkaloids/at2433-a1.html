@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Alkaloids</a> &middot; AT2433-A1</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>AT2433-A1</h1>
-<p class="sub"><span class="mono">naturalproductmech:mibig-6c1bd93a9d</span>
+<p class="sub"><span class="mono"><a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/alkaloids/at2433-a1.yaml">naturalproductmech:mibig-6c1bd93a9d</a></span>
   <span class="tag">MINTED</span>
   <span class="tag">SEEDED</span>
 </p>
 <div class="note"><strong>Grounding review:</strong> No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.</div><details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/alkaloids/at2433-a1.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/alkaloids/at2433-a1.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">CGQSZYLXZOKJEJ-VYCQBBBDSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">CN[C@H]1CO[C@H](C[C@@H]1O)OC[C@H]1O[C@H]([C@H](O)[C@@H](O)[C@@H]1OC)N1C2=C3NC4=C(C=CC=C4)C3=C3C(=O)N(C)C(=O)C3=C2C2=C1C(Cl)=CC=C2</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">npatlas:NPA011993</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://www.npatlas.org/explore/compounds/NPA011993">npatlas:NPA011993</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Alkaloids</a> —
@@ -57,42 +59,42 @@ other, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Actinomadura melliaura<br><span class="mono">NCBITaxon:360723</span></td>
+  <td>Actinomadura melliaura<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=360723">NCBITaxon:360723</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0000809</td>
-  <td><span class="mono">PMID:16873021</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000809">mibig:BGC0000809</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/16873021/">PMID:16873021</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">2</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Actinomadura melliaura<br><span class="mono">NCBITaxon:360723</span></td>
+  <td>Actinomadura melliaura<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=360723">NCBITaxon:360723</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/ACS.JNATPROD.5B00429</td>
+  <td class="mono"><a href="https://doi.org/10.1021/ACS.JNATPROD.5B00429">DOI:10.1021/ACS.JNATPROD.5B00429</a></td>
 </tr>
 <tr>
-  <td>Actinomadura melliaura<br><span class="mono">NCBITaxon:360723</span></td>
+  <td>Actinomadura melliaura<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=360723">NCBITaxon:360723</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.7164/ANTIBIOTICS.42.1547</td>
+  <td class="mono"><a href="https://doi.org/10.7164/ANTIBIOTICS.42.1547">DOI:10.7164/ANTIBIOTICS.42.1547</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0000809</td>
-  <td>Actinomadura melliaura<br><span class="mono">NCBITaxon:360723</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000809">mibig:BGC0000809</a></td>
+  <td>Actinomadura melliaura<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=360723">NCBITaxon:360723</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:DQ297453.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/DQ297453.1">genbank:DQ297453.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -102,7 +104,7 @@ isolation report left it.</p>
 
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for AT2433-A1">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for AT2433-A1">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -135,16 +137,16 @@ isolation report left it.</p>
 </div>
 
 <h2>Causal graph &mdash; biosynthesis <span class="tag">2 nodes, 1 edge</span></h2>
-<p class="sub">Cofactor binding by the AT2433-cluster protein AtmC; partial biochemical evidence, not a demonstrated complete AT2433-A1 pathway or an assay of the finished compound&#39;s bioactivity.</p><div class="scroll"><table>
+<p class="sub">Cofactor binding by the AT2433-cluster protein AtmC; partial biochemical evidence, not a demonstrated complete AT2433-A1 pathway or an assay of the finished compound&#39;s bioactivity.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>AtmC recombinant assay construct</td>
   <td>binds</td>
   <td>FAD</td>
   <td>Table 2: AtmC ITC Kd = 73 +/- 28 nM, five experiments. Rosetta 2(DE3) pLysS expression, Ni-affinity purification and deflavination with 2 M KBr/2 M urea preceded ITC in 150 mM NaCl, 25 mM HEPES pH 7.5, 10% glycerol. Cofactor binding does not establish the substrate, elementary chemistry, or AT2433-A1 formation.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.chembiol.2012.05.016<br>https://ars.els-cdn.com/content/image/1-s2.0-S1074552112001809-mmc1.pdf<br>https://www.uniprot.org/uniprotkb/Q0H2X3</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.chembiol.2012.05.016</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>purifies with bound FAD</dd><dt>notes</dt><dd>Table 2: reported uncertainty retained without assigning an unstated SD/SEM statistic.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://ars.els-cdn.com/content/image/1-s2.0-S1074552112001809-mmc1.pdf</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Fig. S2D and caption: ITC at 25 C. SI p. 19: Actinomadura melliaura atmC cloned into pET28a; canonical identifier excludes its affinity tag.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q0H2X3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>The 534-aa canonical atC sequence, taxon 360723, exactly matches DQ297453.1 CDS ABC02791.1 from A. melliaura SCC 1655 and SI Fig. S1 AtmC. The forward primer targets the CDS start; the reverse primer targets downstream genomic sequence, retaining the native stop. This is the record&#39;s BGC0000809 locus, not an unrelated fungal atmC homolog.</dd><dt>retrieved on</dt><dd>2026-10-03</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.chembiol.2012.05.016">DOI:10.1016/j.chembiol.2012.05.016</a><br><a href="https://ars.els-cdn.com/content/image/1-s2.0-S1074552112001809-mmc1.pdf">https://ars.els-cdn.com/content/image/1-s2.0-S1074552112001809-mmc1.pdf</a><br><a href="https://www.uniprot.org/uniprotkb/Q0H2X3">https://www.uniprot.org/uniprotkb/Q0H2X3</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.chembiol.2012.05.016">DOI:10.1016/j.chembiol.2012.05.016</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>purifies with bound FAD</dd><dt>notes</dt><dd>Table 2: reported uncertainty retained without assigning an unstated SD/SEM statistic.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://ars.els-cdn.com/content/image/1-s2.0-S1074552112001809-mmc1.pdf">https://ars.els-cdn.com/content/image/1-s2.0-S1074552112001809-mmc1.pdf</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Fig. S2D and caption: ITC at 25 C. SI p. 19: Actinomadura melliaura atmC cloned into pET28a; canonical identifier excludes its affinity tag.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q0H2X3">https://www.uniprot.org/uniprotkb/Q0H2X3</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>The 534-aa canonical atC sequence, taxon 360723, exactly matches DQ297453.1 CDS ABC02791.1 from A. melliaura SCC 1655 and SI Fig. S1 AtmC. The forward primer targets the CDS start; the reverse primer targets downstream genomic sequence, retaining the native stop. This is the record&#39;s BGC0000809 locus, not an unrelated fungal atmC homolog.</dd><dt>retrieved on</dt><dd>2026-10-03</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -152,14 +154,14 @@ isolation report left it.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">11 nodes, 10 edges</span></h2>
-<p class="sub">Sequential in-vitro assays of three AT2433-cluster sugar enzymes; partial aminopentose-precursor evidence shared by AT2433 congeners, including AT2433-A1. Neither a finished aminopentose donor nor AT2433-A1 was made in these assays.</p><div class="scroll"><table>
+<p class="sub">Sequential in-vitro assays of three AT2433-cluster sugar enzymes; partial aminopentose-precursor evidence shared by AT2433 congeners, including AT2433-A1. Neither a finished aminopentose donor nor AT2433-A1 was made in these assays.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 2 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>TDP-alpha-D-glucose (2-T)</td>
   <td>is_substrate_for</td>
   <td>AtmS8 glucose oxidation assay</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1002/cbic.201500365</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1002/cbic.201500365</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 1A/B and AtmS8 experimental section.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1002/cbic.201500365">DOI:10.1002/cbic.201500365</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1002/cbic.201500365">DOI:10.1002/cbic.201500365</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 1A/B and AtmS8 experimental section.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -168,8 +170,8 @@ by the corpus tests.</p>
   <td>catalyzes</td>
   <td>AtmS8 glucose oxidation assay</td>
   <td>Genomic PCR; pET28a, E. coli BL21(DE3), N-terminal His6. 10 uM AtmS8, 2 mM TDP-glucose and 6 mM NAD+ at 30 C; pyruvate/LDH NAD+ regeneration. NMR/HPLC reported about 97% conversion after 16 h; enzyme-omission controls showed no reaction.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1002/cbic.201500365<br>https://www.uniprot.org/uniprotkb/Q0H2W3</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1002/cbic.201500365</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 1A/B and AtmS8 experimental section.</dd><dt>snippet</dt><dd>No reaction was observed via NMR or HPLC in controls lacking AtmS8.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q0H2W3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Canonical atS8, 450 aa, NCBITaxon:360723, exactly matches GenBank DQ297453.1 CDS ABC02801.1 from Actinomadura melliaura SCC 1655, the BGC0000809 locus in this record. Translation was checked with the CDS genetic code and initiator convention. The identifier denotes the native parent, not its affinity tag.</dd><dt>retrieved on</dt><dd>2026-10-03</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1002/cbic.201500365">DOI:10.1002/cbic.201500365</a><br><a href="https://www.uniprot.org/uniprotkb/Q0H2W3">https://www.uniprot.org/uniprotkb/Q0H2W3</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1002/cbic.201500365">DOI:10.1002/cbic.201500365</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 1A/B and AtmS8 experimental section.</dd><dt>snippet</dt><dd>No reaction was observed via NMR or HPLC in controls lacking AtmS8.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q0H2W3">https://www.uniprot.org/uniprotkb/Q0H2W3</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Canonical atS8, 450 aa, NCBITaxon:360723, exactly matches GenBank DQ297453.1 CDS ABC02801.1 from Actinomadura melliaura SCC 1655, the BGC0000809 locus in this record. Translation was checked with the CDS genetic code and initiator convention. The identifier denotes the native parent, not its affinity tag.</dd><dt>retrieved on</dt><dd>2026-10-03</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -178,7 +180,7 @@ by the corpus tests.</p>
   <td>produces</td>
   <td>TDP-alpha-D-glucuronic acid (3-T)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1002/cbic.201500365</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1002/cbic.201500365</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 1A/B and AtmS8 experimental section.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1002/cbic.201500365">DOI:10.1002/cbic.201500365</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1002/cbic.201500365">DOI:10.1002/cbic.201500365</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 1A/B and AtmS8 experimental section.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -187,7 +189,7 @@ by the corpus tests.</p>
   <td>is_substrate_for</td>
   <td>AtmS9 glucuronate decarboxylation assay</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1002/cbic.201500365</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1002/cbic.201500365</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 2A and AtmS9 experimental section.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1002/cbic.201500365">DOI:10.1002/cbic.201500365</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1002/cbic.201500365">DOI:10.1002/cbic.201500365</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 2A and AtmS9 experimental section.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -196,8 +198,8 @@ by the corpus tests.</p>
   <td>catalyzes</td>
   <td>AtmS9 glucuronate decarboxylation assay</td>
   <td>Same genomic-PCR expression strategy as AtmS8. Adding 15 uM AtmS9 after AtmS8 completion gave quantitative 4-T formation in 15 h at 30 C (NMR/HPLC); enzyme-omission controls showed no reaction. The paper also reports reduced xylose nucleotide after longer incubations (&gt;24 h, 37 C), so 4-T is not an exclusive product under all conditions.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1002/cbic.201500365<br>https://www.uniprot.org/uniprotkb/Q0H2W2</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1002/cbic.201500365</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 2A and AtmS9 experimental section.</dd><dt>snippet</dt><dd>quantitative conversion</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q0H2W2</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Canonical atS9, 329 aa, NCBITaxon:360723, exactly matches GenBank DQ297453.1 CDS ABC02802.1 from Actinomadura melliaura SCC 1655, the BGC0000809 locus in this record. Translation was checked with the CDS genetic code and initiator convention. The identifier denotes the native parent, not its affinity tag.</dd><dt>retrieved on</dt><dd>2026-10-03</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1002/cbic.201500365">DOI:10.1002/cbic.201500365</a><br><a href="https://www.uniprot.org/uniprotkb/Q0H2W2">https://www.uniprot.org/uniprotkb/Q0H2W2</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1002/cbic.201500365">DOI:10.1002/cbic.201500365</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 2A and AtmS9 experimental section.</dd><dt>snippet</dt><dd>quantitative conversion</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q0H2W2">https://www.uniprot.org/uniprotkb/Q0H2W2</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Canonical atS9, 329 aa, NCBITaxon:360723, exactly matches GenBank DQ297453.1 CDS ABC02802.1 from Actinomadura melliaura SCC 1655, the BGC0000809 locus in this record. Translation was checked with the CDS genetic code and initiator convention. The identifier denotes the native parent, not its affinity tag.</dd><dt>retrieved on</dt><dd>2026-10-03</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -206,7 +208,7 @@ by the corpus tests.</p>
   <td>produces</td>
   <td>TDP-4-keto-alpha-D-xylose (4-T)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1002/cbic.201500365</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1002/cbic.201500365</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 2A and AtmS9 experimental section.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1002/cbic.201500365">DOI:10.1002/cbic.201500365</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1002/cbic.201500365">DOI:10.1002/cbic.201500365</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 2A and AtmS9 experimental section.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -215,7 +217,7 @@ by the corpus tests.</p>
   <td>is_substrate_for</td>
   <td>AtmS14 addition to 4-T: degradation readout</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1002/cbic.201500365</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1002/cbic.201500365</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 3 and AtmS14 experimental section.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1002/cbic.201500365">DOI:10.1002/cbic.201500365</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1002/cbic.201500365">DOI:10.1002/cbic.201500365</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 3 and AtmS14 experimental section.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -224,8 +226,8 @@ by the corpus tests.</p>
   <td>enables_observed_degradation_in</td>
   <td>AtmS14 addition to 4-T: degradation readout</td>
   <td>pUC57 codon-optimized synthetic gene subcloned into pET28a; N-terminal His6, E. coli BL21(DE3). The main paper identifies the parent; the supplemental synthetic sequence was not retrievable and was not independently verified. Adding 14 uM AtmS14 after AtmS9 completion yielded 6 and TDP within 6 h at 30 C (NMR/HPLC). Proposed 2,3-dehydration intermediate TDP-2-deoxy-4-keto-alpha-D-pentos-2-ene (5-T) was not isolated; these are degradation products, not a demonstrated finished sugar donor or direct two-product enzymatic reaction.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1002/cbic.201500365<br>https://www.uniprot.org/uniprotkb/Q0H2W5</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1002/cbic.201500365</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 3 and AtmS14 experimental section.</dd><dt>snippet</dt><dd>two new products</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q0H2W5</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Canonical atS14, 483 aa, NCBITaxon:360723, exactly matches GenBank DQ297453.1 CDS ABC02799.1 from Actinomadura melliaura SCC 1655, the BGC0000809 locus in this record. Translation was checked with the CDS genetic code and initiator convention. The identifier denotes the native parent, not its affinity tag.</dd><dt>retrieved on</dt><dd>2026-10-03</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1002/cbic.201500365">DOI:10.1002/cbic.201500365</a><br><a href="https://www.uniprot.org/uniprotkb/Q0H2W5">https://www.uniprot.org/uniprotkb/Q0H2W5</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1002/cbic.201500365">DOI:10.1002/cbic.201500365</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 3 and AtmS14 experimental section.</dd><dt>snippet</dt><dd>two new products</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q0H2W5">https://www.uniprot.org/uniprotkb/Q0H2W5</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Canonical atS14, 483 aa, NCBITaxon:360723, exactly matches GenBank DQ297453.1 CDS ABC02799.1 from Actinomadura melliaura SCC 1655, the BGC0000809 locus in this record. Translation was checked with the CDS genetic code and initiator convention. The identifier denotes the native parent, not its affinity tag.</dd><dt>retrieved on</dt><dd>2026-10-03</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -234,7 +236,7 @@ by the corpus tests.</p>
   <td>yields_observed_product</td>
   <td>3-hydroxy-4H-pyran-4-one (6; pyromicomic acid)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1002/cbic.201500365</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1002/cbic.201500365</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 3 and AtmS14 experimental section.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1002/cbic.201500365">DOI:10.1002/cbic.201500365</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1002/cbic.201500365">DOI:10.1002/cbic.201500365</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 3 and AtmS14 experimental section.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -243,7 +245,7 @@ by the corpus tests.</p>
   <td>yields_observed_product</td>
   <td>TDP</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1002/cbic.201500365</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1002/cbic.201500365</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 3 and AtmS14 experimental section.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1002/cbic.201500365">DOI:10.1002/cbic.201500365</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1002/cbic.201500365">DOI:10.1002/cbic.201500365</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 3 and AtmS14 experimental section.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -251,16 +253,16 @@ by the corpus tests.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
-<p class="sub">Structural evidence for the AT2433-cluster putative sugar aminotransferase AtmS13. Dimer and PLP-adduct observations do not establish native-substrate turnover, substrate stereochemistry, or completed AT2433-A1 biosynthesis.</p><div class="scroll"><table>
+<p class="sub">Structural evidence for the AT2433-cluster putative sugar aminotransferase AtmS13. Dimer and PLP-adduct observations do not establish native-substrate turnover, substrate stereochemistry, or completed AT2433-A1 biosynthesis.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 3 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>AtmS13 SeMet construct (4ZWV; cleaved tag)</td>
   <td>is_subunit_of</td>
   <td>AtmS13 homodimer in 4ZWV</td>
   <td>1.50-A X-ray structure of SeMet protein expressed from pMCSG68 in E. coli BL21(DE3)-Gold. TEV removal of the StrepII/His6 tag leaves SNA before the native parent. The two-subunit crystal assembly is structural evidence, not an in-vivo assembly assay. The separate 3.00-A structure 4XAU used non-SeMet, pET28a N-His6 protein with a different 20-residue N-terminal extension.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1002/prot.24844<br>https://www.uniprot.org/uniprotkb/Q0H2X1<br>https://www.rcsb.org/structure/4ZWV</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1002/prot.24844</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 2A and Overall Structure section.</dd><dt>snippet</dt><dd>representing the formation of a dimer</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q0H2X1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Canonical atS13, 369 aa, NCBITaxon:360723, exactly matches GenBank DQ297453.1 CDS ABC02793.1 from Actinomadura melliaura SCC 1655, the BGC0000809 locus in this record. Translation was checked with the CDS genetic code and initiator convention. The identifier denotes the native parent, not its affinity tag.</dd><dt>retrieved on</dt><dd>2026-10-03</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.rcsb.org/structure/4ZWV</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Deposited canonical entity sequence is SNA plus all 369 residues of Q0H2X1. SIFTS maps the complete native parent; assembly 1 is author/PISA-assigned dimeric.</dd><dt>retrieved on</dt><dd>2026-10-03</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1002/prot.24844">DOI:10.1002/prot.24844</a><br><a href="https://www.uniprot.org/uniprotkb/Q0H2X1">https://www.uniprot.org/uniprotkb/Q0H2X1</a><br><a href="https://www.rcsb.org/structure/4ZWV">https://www.rcsb.org/structure/4ZWV</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1002/prot.24844">DOI:10.1002/prot.24844</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 2A and Overall Structure section.</dd><dt>snippet</dt><dd>representing the formation of a dimer</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q0H2X1">https://www.uniprot.org/uniprotkb/Q0H2X1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Canonical atS13, 369 aa, NCBITaxon:360723, exactly matches GenBank DQ297453.1 CDS ABC02793.1 from Actinomadura melliaura SCC 1655, the BGC0000809 locus in this record. Translation was checked with the CDS genetic code and initiator convention. The identifier denotes the native parent, not its affinity tag.</dd><dt>retrieved on</dt><dd>2026-10-03</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.rcsb.org/structure/4ZWV">https://www.rcsb.org/structure/4ZWV</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Deposited canonical entity sequence is SNA plus all 369 residues of Q0H2X1. SIFTS maps the complete native parent; assembly 1 is author/PISA-assigned dimeric.</dd><dt>retrieved on</dt><dd>2026-10-03</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -269,8 +271,8 @@ by the corpus tests.</p>
   <td>forms_covalent_internal_aldimine_with</td>
   <td>Pyridoxal 5-phosphate (PLP)</td>
   <td>Crystallized with 1 mM PLP. The 4ZWV Lys187-PLP adduct occurs in both subunits, with two alternate PLP orientations refined at 0.50 occupancy each. This is cofactor-adduct evidence, not an aminopentose transamination assay.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1002/prot.24844<br>https://files.rcsb.org/download/4ZWV.cif</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1002/prot.24844</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Table 1, Figure 2B and Cofactor Binding Site section.</dd><dt>snippet</dt><dd>Both subunits contain a covalent PLP internal aldimine</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://files.rcsb.org/download/4ZWV.cif</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Chains A and B: modified residue LLP has label_seq_id 190 and auth_seq_id 187, matching native Q0H2X1 Lys187. The three-residue prefix is not part of native numbering.</dd><dt>retrieved on</dt><dd>2026-10-03</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1002/prot.24844">DOI:10.1002/prot.24844</a><br><a href="https://files.rcsb.org/download/4ZWV.cif">https://files.rcsb.org/download/4ZWV.cif</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1002/prot.24844">DOI:10.1002/prot.24844</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Table 1, Figure 2B and Cofactor Binding Site section.</dd><dt>snippet</dt><dd>Both subunits contain a covalent PLP internal aldimine</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://files.rcsb.org/download/4ZWV.cif">https://files.rcsb.org/download/4ZWV.cif</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Chains A and B: modified residue LLP has label_seq_id 190 and auth_seq_id 187, matching native Q0H2X1 Lys187. The three-residue prefix is not part of native numbering.</dd><dt>retrieved on</dt><dd>2026-10-03</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -284,23 +286,34 @@ by the corpus tests.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=CGQSZYLXZOKJEJ-VYCQBBBDSA-N">AntibioticMech (AT2433-A1) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=naturalproductmech%3Amibig-6c1bd93a9d">MediaIngredientMech (naturalproductmech:mibig-6c1bd93a9d) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A360723">TaxonMech: Actinomadura melliaura (NCBITaxon:360723) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000809">PathwayMech (mibig:BGC0000809) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A360723">TaxonMech: Actinomadura melliaura (NCBITaxon:360723) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000809">PathwayMech (mibig:BGC0000809) &nearr;</a>
 </div>
 
 
+<h2 id="curation-history">Curation history <span class="tag">6</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-13T10:42:48Z">2026-10-13T10:42:48Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources<p>Seeded from the committed inventories and curation tables.</p></li>
+<li><time datetime="2026-10-03T18:42:54Z">2026-10-03T18:42:54Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added two partial BIOSYNTHESIS graphs for AtmS8/AtmS9/AtmS14 sequential sugar assays (<a href="https://doi.org/10.1002/cbic.201500365">DOI:10.1002/cbic.201500365</a>) and AtmS13 dimer/PLP-adduct structures (<a href="https://doi.org/10.1002/prot.24844">DOI:10.1002/prot.24844</a>). Grounded four native UniProt parents to exact DQ297453.1 CDS translations; checked both AtmS13 PDB construct sequences and 4ZWV residue numbering. Kept AtmS14 degradation products distinct from the unisolated proposed intermediate and disclosed unavailable supplemental construct-sequence verification. Preserved prior AtmC graph and source-owned fields; retained SEEDED.</p></li>
+<li><time datetime="2026-10-03T18:06:27Z">2026-10-03T18:06:27Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Addressed adversarial review issue #502: moved the ITC Kd and experiment count into visible edge notes so the generated page exposes the measurement. Preserved DOI evidence, uncertainty, assay context and all other graph content.</p></li>
+<li><time datetime="2026-10-03T17:57:35Z">2026-10-03T17:57:35Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added a partial BIOSYNTHESIS graph for AtmC FAD binding by ITC, citing <a href="https://doi.org/10.1016/j.chembiol.2012.05.016">DOI:10.1016/j.chembiol.2012.05.016</a> and its supporting information. Grounded Q0H2X3 to the exact DQ297453.1 ABC02791.1 sequence and published alignment; documented recombinant construct, deflavination, assay conditions and limitations. Retained SEEDED; no product-turnover claim.</p></li>
+<li><time datetime="2026-09-25T03:01:41Z">2026-09-25T03:01:41Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:04Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
+
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0000809</td><td>MIBIG</td><td>3</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000809">BGC0000809</a></td><td>MIBIG</td><td>3</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/alkaloids/at2433-a1.yaml">data/natural_products/alkaloids/at2433-a1.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20naturalproductmech%3Amibig-6c1bd93a9d&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Falkaloids%2Fat2433-a1.html">Report a problem with this record</a>: opens a GitHub issue that names naturalproductmech:mibig-6c1bd93a9d and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Corpus as of 2026-10-23 22:53 UTC. Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 8e5d64d98cfd). Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

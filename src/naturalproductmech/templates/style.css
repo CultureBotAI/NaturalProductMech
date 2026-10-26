@@ -172,8 +172,11 @@ footer.site { border-top: 1px solid var(--rule); color: var(--muted); font-size:
   cursor: pointer;
 }
 .results-main { min-width: 0; }
+/* minmax(0, 1fr), not 1fr: a bare 1fr column grows to its widest content, so
+   an opened data table would widen the page at 390 px instead of scrolling
+   inside its own region. */
 @media (max-width: 850px) {
-  .page-with-sidebar { grid-template-columns: 1fr; }
+  .page-with-sidebar { grid-template-columns: minmax(0, 1fr); }
   .facet-sidebar { position: static; max-height: none; }
 }
 
@@ -301,7 +304,7 @@ footer.site { border-top: 1px solid var(--rule); color: var(--muted); font-size:
 .map-method { margin-top: 1.2rem; }
 .map-method summary { cursor: pointer; font-weight: 700; }
 @media (max-width: 850px) {
-  .chemical-map-layout { grid-template-columns: 1fr; }
+  .chemical-map-layout { grid-template-columns: minmax(0, 1fr); }
   .map-details { max-height: none; }
   #map-canvas, #seq-canvas { height: 520px; }
 }
@@ -337,7 +340,7 @@ figure { margin: 0; }
 .browse-controls button { cursor: pointer; width: 100%; }
 .chemical-map-layout { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 1rem; }
 .map-controls > *, .map-controls input, .map-controls select { min-width: 0; max-width: 100%; }
-@media (max-width: 850px) { .chemical-map-layout { grid-template-columns: 1fr; } }
+@media (max-width: 850px) { .chemical-map-layout { grid-template-columns: minmax(0, 1fr); } }
 
 a.mono { overflow-wrap: anywhere; }
 
@@ -360,7 +363,51 @@ main h1, main p, main li, main dd { overflow-wrap: anywhere; }
 .cross-mech-links a.tag {
   text-decoration: none;
   color: var(--link);
+  /* A tag carries a compound or taxon name, which can be longer than a
+     phone screen; .tag's nowrap made 2,950 record pages scroll sideways. */
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 .cross-mech-links a.tag:hover {
   border-color: var(--link);
 }
+.mechanism-graph-wrap svg { display: block; height: auto; }
+
+/* Skip link: the first tab stop on every page, shown only while focused. */
+.skip-link { position: absolute; left: 1rem; top: -4rem; z-index: 10; padding: .5rem .75rem;
+             background: var(--bg); color: var(--link); border: 2px solid var(--link);
+             border-radius: .35rem; }
+.skip-link:focus { top: .5rem; }
+main:focus { outline: none; }
+
+/* A wide table scrolls inside its own named region, reachable by keyboard.
+   Cells keep their words whole: overflow-wrap: anywhere in a cell shrinks its
+   column to a single character and splits short identifiers. */
+.scroll:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+
+/* Curation history and the report route on record pages. */
+ol.history { padding-left: 1.4rem; }
+ol.history li { margin: .45rem 0; }
+ol.history p { margin: .15rem 0 0; color: var(--muted); }
+.record-actions { margin-top: .4rem; }
+
+/* How records are produced (landing). */
+blockquote.quote { margin: .6rem 0 1rem; padding: .2rem 0 .2rem 1rem;
+                   border-left: 3px solid var(--rule); }
+blockquote.quote p { margin: .3rem 0; }
+
+/* Map data tables: the keyboard and screen-reader alternative to a canvas. */
+.map-table { margin: .9rem 0; }
+.map-table summary { cursor: pointer; font-weight: 700; }
+.map-table .scroll { max-height: 32rem; overflow: auto; }
+.map-table caption { text-align: left; padding: .2rem 0 .4rem; }
+
+/* Generated schema reference (schema.html). */
+.schema-contents p, .schema-class, .schema-enum { overflow-wrap: anywhere; }
+.schema-class, .schema-enum { margin: 1.2rem 0; }
+.schema-class h3, .schema-enum h3 { margin: 0 0 .35rem; }
+.schema-table { min-width: 44rem; }
+.schema-table caption { text-align: left; padding: 0 0 .4rem; }
+.schema-table th[scope="row"] { color: var(--ink); font-weight: 400; font-size: .86em; }
+.schema-values dt { margin-top: .5rem; }
+.schema-values dd { margin-left: 1rem; color: var(--muted); }

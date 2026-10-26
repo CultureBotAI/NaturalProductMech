@@ -9,6 +9,7 @@
 <script src="theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="chemical-map.html">Structure map</a>
     <a href="map.html">Corpus map</a>
     <a href="sequence-map.html">Sequence map</a>
-    <a href="index.html#downloads">Downloads &amp; Schema</a>
+    <a href="index.html#downloads">Downloads</a>
+    <a href="schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap map-page-wrap">
+<main class="wrap map-page-wrap" id="main-content" tabindex="-1">
 <section id="sequence-map" data-source="data/sequence_map.json" aria-label="Protein sequence map">
   <h1>Protein sequence map (pLM)</h1>
   <p class="lede">
@@ -91,6 +93,11 @@
     </aside>
 
     <div class="results-main">
+      <noscript>
+        <p class="meta"><strong>The sequence map and its data table need JavaScript.</strong>
+        Every natural product it links is also reachable without it, from
+        <a href="browse.html">Browse</a>, and each record page lists its proteins.</p>
+      </noscript>
       <div id="seq-status" class="map-status" role="status" aria-live="polite">
         Loading protein sequence map…
       </div>
@@ -118,6 +125,17 @@
           </div>
         </aside>
       </div>
+      <details class="map-table" id="seq-table">
+        <summary>View data as table</summary>
+        <p class="meta" id="seq-table-count"></p>
+        <div class="scroll" role="region" tabindex="0" aria-label="Proteins on the sequence map">
+          <table>
+            <caption class="sub">Proteins on the sequence map, as searched and filtered</caption>
+            <thead><tr><th scope="col">Protein</th><th scope="col">Identifier</th><th scope="col">Organism</th><th scope="col">Role</th><th scope="col">Natural product records</th></tr></thead>
+            <tbody id="seq-table-body"></tbody>
+          </table>
+        </div>
+      </details>
     </div>
   </div>
 </section>
@@ -369,8 +387,53 @@
       li.append(btn, span);
       resultsEl.append(li);
     });
+    renderTable();
     draw();
   }
+
+  // The table alternative: every protein the map plots under the current
+  // search and filters, with links to its natural product records. Built
+  // from the same JSON, and only while it is open.
+  const tableEl = document.getElementById("seq-table");
+  function renderTable() {
+    if (!tableEl || !tableEl.open) return;
+    const rows = document.createDocumentFragment();
+    state.visible.forEach((p) => {
+      const tr = document.createElement("tr");
+      const name = document.createElement("th");
+      name.scope = "row";
+      name.textContent = p.label || p.id;
+      const id = document.createElement("td");
+      id.className = "mono";
+      const ext = externalUrl(p.id);
+      if (ext) {
+        const a = document.createElement("a");
+        a.href = ext;
+        a.textContent = p.id;
+        id.append(a);
+      } else {
+        id.textContent = p.id;
+      }
+      const organism = document.createElement("td");
+      organism.textContent = p.organism || "";
+      const role = document.createElement("td");
+      role.textContent = p.primary_role_label || p.primary_role || "";
+      const records = document.createElement("td");
+      (p.records || []).forEach((r, index) => {
+        if (index) records.append(document.createTextNode(", "));
+        const a = document.createElement("a");
+        a.href = r.page;
+        a.textContent = r.label;
+        records.append(a);
+      });
+      tr.append(name, id, organism, role, records);
+      rows.append(tr);
+    });
+    document.getElementById("seq-table-body").replaceChildren(rows);
+    document.getElementById("seq-table-count").textContent =
+      `${state.visible.length} of ${state.proteins.length} proteins, as searched and filtered above.`;
+  }
+  if (tableEl) tableEl.addEventListener("toggle", renderTable);
 
   async function init() {
     try {
@@ -484,7 +547,7 @@
 </script>
 </main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Corpus as of 2026-10-23 22:53 UTC. Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 8e5d64d98cfd). Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

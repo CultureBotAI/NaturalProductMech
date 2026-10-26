@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Amino acids and peptides</a> &middot; benzylpenicillin sodium</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>benzylpenicillin sodium</h1>
-<p class="sub"><span class="mono">CHEBI:51765</span>
+<p class="sub"><span class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_51765">CHEBI:51765</a></span>
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 </p>
 <details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/amino_acids_and_peptides/benzylpenicillin-sodium.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/amino_acids_and_peptides/benzylpenicillin-sodium.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">FCPVYOBCFFNJFS-LQDWTQKMSA-M</td></tr>
 <tr><th>SMILES</th><td class="mono">CC1([C@@H](N2[C@H](S1)[C@@H](C2=O)NC(=O)CC3=CC=CC=C3)C(=O)[O-])C.[Na+]</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">pubchem:23668834</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/compound/23668834">pubchem:23668834</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Amino acids and peptides</a> —
@@ -57,25 +59,25 @@ nrps, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Penicillium chrysogenum<br>Strain: AS-P-78<br><span class="mono">NCBITaxon:5076</span></td>
+  <td>Penicillium chrysogenum<br>Strain: AS-P-78<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5076">NCBITaxon:5076</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0000404</td>
-  <td><details class="graph-evidence"><summary><span class="mono">DOI:10.1016/j.fgb.2006.03.001</span>, <span class="mono">DOI:10.1016/s0140-6736(00)87452-8</span></summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.fgb.2006.03.001</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>MIBiG BGC0000404 entry version 4; claim-specific citation selected through a reviewed producer_reference correction. This remains a database assertion, not independently graded experimental evidence.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1016/s0140-6736(00)87452-8</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Citation routing only. The imported compound-bioactivity reference DOI:10.1016/s0140-6736(00)87452-8 (Chain et al., Lancet 1940;236(6104):226-228) is a 1940 clinical mouse-protection study that predates DNA sequencing and does not characterize Penicillium chrysogenum AS-P-78 or GenBank DQ192518.1 (coordinates 17440..28759). Route the BGC0000404:1 producer and locus claims to Fierro et al. 2006 (PMID:16713314, DOI:10.1016/j.fgb.2006.03.001), which sequenced and characterized the DQ192518.1 penicillin region in P. chrysogenum AS-P-78, without upgrading SOURCE_ASSERTION or CLUSTER_UNSTATED grades or altering taxon or structure identity. See issue #1023. Original imported citation DOI:10.1016/s0140-6736(00)87452-8 (COMPOUND_BIOACTIVITY) remains in the raw inventory, not as support for this claim. MIBiG source row BGC0000404:1; SHA256 9460d29fcad2b7ecb913298bc80838656966e219ec0654094d28b71942eaeb19. Curator: antigravity; date: 2026-10-23. Taxon, locus, chemistry and evidence grades are unchanged.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1016/j.fgb.2006.03.001</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Strain context: AS-P-78. Fierro et al. 2006 (PMID:16713314, DOI:10.1016/j.fgb.2006.03.001) and GenBank DQ192518.1 explicitly identify Penicillium chrysogenum strain AS-P-78 as the sequenced and amplified 106.5 kb penicillin region host for BGC0000404:1. Preserve NCBITaxon:5076 and existing SOURCE_ASSERTION/CLUSTER_UNSTATED grades; sodium-salt structure representation remains tracked in #1015. See issue #1022. Taxon identity and evidence grade are unchanged; this is not a species-wide experiment. MIBiG source row BGC0000404:1; SHA256 9460d29fcad2b7ecb913298bc80838656966e219ec0654094d28b71942eaeb19. Curator: antigravity; date: 2026-10-23.</dd></dl>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000404">mibig:BGC0000404</a></td>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.fgb.2006.03.001">DOI:10.1016/j.fgb.2006.03.001</a></span>, <span class="mono"><a href="https://doi.org/10.1016/s0140-6736%2800%2987452-8">DOI:10.1016/s0140-6736(00)87452-8</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.fgb.2006.03.001">DOI:10.1016/j.fgb.2006.03.001</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>MIBiG BGC0000404 entry version 4; claim-specific citation selected through a reviewed producer_reference correction. This remains a database assertion, not independently graded experimental evidence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/s0140-6736%2800%2987452-8">DOI:10.1016/s0140-6736(00)87452-8</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Citation routing only. The imported compound-bioactivity reference <a href="https://doi.org/10.1016/s0140-6736%2800%2987452-8">DOI:10.1016/s0140-6736(00)87452-8</a> (Chain et al., Lancet 1940;236(6104):226-228) is a 1940 clinical mouse-protection study that predates DNA sequencing and does not characterize Penicillium chrysogenum AS-P-78 or GenBank DQ192518.1 (coordinates 17440..28759). Route the BGC0000404:1 producer and locus claims to Fierro et al. 2006 (<a href="https://pubmed.ncbi.nlm.nih.gov/16713314/">PMID:16713314</a>, <a href="https://doi.org/10.1016/j.fgb.2006.03.001">DOI:10.1016/j.fgb.2006.03.001</a>), which sequenced and characterized the DQ192518.1 penicillin region in P. chrysogenum AS-P-78, without upgrading SOURCE_ASSERTION or CLUSTER_UNSTATED grades or altering taxon or structure identity. See issue #1023. Original imported citation <a href="https://doi.org/10.1016/s0140-6736%2800%2987452-8">DOI:10.1016/s0140-6736(00)87452-8</a> (COMPOUND_BIOACTIVITY) remains in the raw inventory, not as support for this claim. MIBiG source row BGC0000404:1; SHA256 9460d29fcad2b7ecb913298bc80838656966e219ec0654094d28b71942eaeb19. Curator: antigravity; date: 2026-10-23. Taxon, locus, chemistry and evidence grades are unchanged.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.fgb.2006.03.001">DOI:10.1016/j.fgb.2006.03.001</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Strain context: AS-P-78. Fierro et al. 2006 (<a href="https://pubmed.ncbi.nlm.nih.gov/16713314/">PMID:16713314</a>, <a href="https://doi.org/10.1016/j.fgb.2006.03.001">DOI:10.1016/j.fgb.2006.03.001</a>) and GenBank DQ192518.1 explicitly identify Penicillium chrysogenum strain AS-P-78 as the sequenced and amplified 106.5 kb penicillin region host for BGC0000404:1. Preserve NCBITaxon:5076 and existing SOURCE_ASSERTION/CLUSTER_UNSTATED grades; sodium-salt structure representation remains tracked in #1015. See issue #1022. Taxon identity and evidence grade are unchanged; this is not a species-wide experiment. MIBiG source row BGC0000404:1; SHA256 9460d29fcad2b7ecb913298bc80838656966e219ec0654094d28b71942eaeb19. Curator: antigravity; date: 2026-10-23.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
 <tr>
-  <td>Penicillium chrysogenum<br>Strain: Wisconsin 54-1255<br><span class="mono">NCBITaxon:5076</span></td>
+  <td>Penicillium chrysogenum<br>Strain: Wisconsin 54-1255<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5076">NCBITaxon:5076</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0000405</td>
-  <td><details class="graph-evidence"><summary><span class="mono">DOI:10.1016/j.fgb.2007.03.008</span>, <span class="mono">PMID:1368505</span></summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.fgb.2007.03.008</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>MIBiG BGC0000405 entry version 5; claim-specific citation selected through a reviewed producer_reference correction. This remains a database assertion, not independently graded experimental evidence.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>PMID:1368505</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Citation routing only. The imported entry-level reference PMID:1368505 (Smith et al., Bio/Technology 1990;8(1):39-41, DOI:10.1038/nbt0190-39) reports 1990 heterologous cosmid pDJB3-G1 expression in Neurospora crassa and Aspergillus niger and predates GenBank EF601124.1 (coordinates 22186..33473) by 17 years. Route the BGC0000405:3 (benzylpenicillin) producer and locus claims to van den Berg et al. 2007 (PMID:17548217, DOI:10.1016/j.fgb.2007.03.008), which sequenced and functionally characterized the 56.8 kb EF601124.1 penicillin cluster in P. chrysogenum Wisconsin 54-1255, without altering taxon, structure identity, or evidence grades. See issue #1023. Original imported citation PMID:1368505 (ENTRY) remains in the raw inventory, not as support for this claim. MIBiG source row BGC0000405:3; SHA256 847cf368dc26e162604ac12681781efc5814bcc31c4e19e94b09578562a1dd42. Curator: antigravity; date: 2026-10-23. Taxon, locus, chemistry and evidence grades are unchanged.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1016/j.fgb.2007.03.008</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Strain context: Wisconsin 54-1255. Van den Berg et al. 2007 (PMID:17548217, DOI:10.1016/j.fgb.2007.03.008) and GenBank EF601124.1 explicitly identify Penicillium chrysogenum strain Wisconsin 54-1255 as the sequenced and functionally characterized 56.8 kb penicillin cluster host for BGC0000405:3 (benzylpenicillin). Preserve NCBITaxon:5076 and existing SOURCE_ASSERTION/CLUSTER_DEMONSTRATED grades; sodium-salt structure representation remains tracked in #1015. See issue #1022. Taxon identity and evidence grade are unchanged; this is not a species-wide experiment. MIBiG source row BGC0000405:3; SHA256 847cf368dc26e162604ac12681781efc5814bcc31c4e19e94b09578562a1dd42. Curator: antigravity; date: 2026-10-23.</dd></dl>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000405">mibig:BGC0000405</a></td>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.fgb.2007.03.008">DOI:10.1016/j.fgb.2007.03.008</a></span>, <span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/1368505/">PMID:1368505</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.fgb.2007.03.008">DOI:10.1016/j.fgb.2007.03.008</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>MIBiG BGC0000405 entry version 5; claim-specific citation selected through a reviewed producer_reference correction. This remains a database assertion, not independently graded experimental evidence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/1368505/">PMID:1368505</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Citation routing only. The imported entry-level reference <a href="https://pubmed.ncbi.nlm.nih.gov/1368505/">PMID:1368505</a> (Smith et al., Bio/Technology 1990;8(1):39-41, <a href="https://doi.org/10.1038/nbt0190-39">DOI:10.1038/nbt0190-39</a>) reports 1990 heterologous cosmid pDJB3-G1 expression in Neurospora crassa and Aspergillus niger and predates GenBank EF601124.1 (coordinates 22186..33473) by 17 years. Route the BGC0000405:3 (benzylpenicillin) producer and locus claims to van den Berg et al. 2007 (<a href="https://pubmed.ncbi.nlm.nih.gov/17548217/">PMID:17548217</a>, <a href="https://doi.org/10.1016/j.fgb.2007.03.008">DOI:10.1016/j.fgb.2007.03.008</a>), which sequenced and functionally characterized the 56.8 kb EF601124.1 penicillin cluster in P. chrysogenum Wisconsin 54-1255, without altering taxon, structure identity, or evidence grades. See issue #1023. Original imported citation <a href="https://pubmed.ncbi.nlm.nih.gov/1368505/">PMID:1368505</a> (ENTRY) remains in the raw inventory, not as support for this claim. MIBiG source row BGC0000405:3; SHA256 847cf368dc26e162604ac12681781efc5814bcc31c4e19e94b09578562a1dd42. Curator: antigravity; date: 2026-10-23. Taxon, locus, chemistry and evidence grades are unchanged.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.fgb.2007.03.008">DOI:10.1016/j.fgb.2007.03.008</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Strain context: Wisconsin 54-1255. Van den Berg et al. 2007 (<a href="https://pubmed.ncbi.nlm.nih.gov/17548217/">PMID:17548217</a>, <a href="https://doi.org/10.1016/j.fgb.2007.03.008">DOI:10.1016/j.fgb.2007.03.008</a>) and GenBank EF601124.1 explicitly identify Penicillium chrysogenum strain Wisconsin 54-1255 as the sequenced and functionally characterized 56.8 kb penicillin cluster host for BGC0000405:3 (benzylpenicillin). Preserve NCBITaxon:5076 and existing SOURCE_ASSERTION/CLUSTER_DEMONSTRATED grades; sodium-salt structure representation remains tracked in #1015. See issue #1022. Taxon identity and evidence grade are unchanged; this is not a species-wide experiment. MIBiG source row BGC0000405:3; SHA256 847cf368dc26e162604ac12681781efc5814bcc31c4e19e94b09578562a1dd42. Curator: antigravity; date: 2026-10-23.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -84,21 +86,21 @@ same claim.</p>
 <h2 id="occurrences">Occurrences <span class="tag">0</span></h2>
 <p class="sub">None cited.</p>
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">2</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0000404</td>
-  <td>Penicillium chrysogenum<br><span class="mono">NCBITaxon:5076</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000404">mibig:BGC0000404</a></td>
+  <td>Penicillium chrysogenum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5076">NCBITaxon:5076</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:DQ192518.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/DQ192518.1">genbank:DQ192518.1</a></td>
 </tr>
 <tr>
-  <td class="mono">mibig:BGC0000405</td>
-  <td>Penicillium chrysogenum<br><span class="mono">NCBITaxon:5076</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000405">mibig:BGC0000405</a></td>
+  <td>Penicillium chrysogenum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5076">NCBITaxon:5076</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:EF601124.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/EF601124.1">genbank:EF601124.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -108,7 +110,7 @@ isolation report left it.</p>
 
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for benzylpenicillin sodium">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for benzylpenicillin sodium">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -147,30 +149,38 @@ isolation report left it.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=FCPVYOBCFFNJFS-LQDWTQKMSA-M">AntibioticMech (benzylpenicillin sodium) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=CHEBI%3A51765">MediaIngredientMech (CHEBI:51765) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A5076">TaxonMech: Penicillium chrysogenum (NCBITaxon:5076) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A5076">TaxonMech: Penicillium chrysogenum (NCBITaxon:5076) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000404">PathwayMech (mibig:BGC0000404) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000405">PathwayMech (mibig:BGC0000405) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q=CHEBI%3A51765">MediaIngredientMech (CHEBI:51765) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A5076">TaxonMech: Penicillium chrysogenum (NCBITaxon:5076) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000404">PathwayMech (mibig:BGC0000404) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000405">PathwayMech (mibig:BGC0000405) &nearr;</a>
 </div>
 
 <h2>Open questions <span class="tag">2</span></h2>
-<div class="note"><p><strong>name-disagreement</strong> — ChEBI calls this structure &#39;benzylpenicillin sodium&#39; and MIBiG calls it &#39;penicillin&#39;. They share a Standard InChIKey, so if the names denote different compounds then one upstream record has the wrong structure. Check which.</p></div>
-<div class="note"><p><strong>shared-structure</strong> — This structure is reported by more than one MIBiG entry: BGC0000404, BGC0000405. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
+<div class="note"><p><strong>name-disagreement</strong> <span class="tag">OPEN</span> <span class="tag">controversy</span> — ChEBI calls this structure &#39;benzylpenicillin sodium&#39; and MIBiG calls it &#39;penicillin&#39;. They share a Standard InChIKey, so if the names denote different compounds then one upstream record has the wrong structure. Check which.</p></div>
+<div class="note"><p><strong>shared-structure</strong> <span class="tag">OPEN</span> <span class="tag">curation todo</span> — This structure is reported by more than one MIBiG entry: BGC0000404, BGC0000405. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
+
+<h2 id="curation-history">Curation history <span class="tag">3</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-23T14:35:37Z">2026-10-23T14:35:37Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources<p>Seeded from the committed inventories and curation tables.</p></li>
+<li><time datetime="2026-09-25T03:01:53Z">2026-09-25T03:01:53Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:05Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
 
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0000404</td><td>MIBIG</td><td>4</td></tr>
-<tr><td class="mono">BGC0000405</td><td>MIBIG</td><td>5</td></tr>
-<tr><td class="mono">CHEBI:51765</td><td>CHEBI</td><td>3-star</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000404">BGC0000404</a></td><td>MIBIG</td><td>4</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000405">BGC0000405</a></td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_51765">CHEBI:51765</a></td><td>CHEBI</td><td>3-star</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/amino_acids_and_peptides/benzylpenicillin-sodium.yaml">data/natural_products/amino_acids_and_peptides/benzylpenicillin-sodium.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20CHEBI%3A51765&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Famino_acids_and_peptides%2Fbenzylpenicillin-sodium.html">Report a problem with this record</a>: opens a GitHub issue that names CHEBI:51765 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Corpus as of 2026-10-23 22:53 UTC. Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 8e5d64d98cfd). Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

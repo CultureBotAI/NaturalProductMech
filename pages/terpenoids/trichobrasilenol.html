@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Terpenoids</a> &middot; trichobrasilenol</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>trichobrasilenol</h1>
-<p class="sub"><span class="mono">CHEBI:167379</span>
+<p class="sub"><span class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_167379">CHEBI:167379</a></span>
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 </p>
 <details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/terpenoids/trichobrasilenol.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/terpenoids/trichobrasilenol.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 <p>A carbobicyclic compound that is (3aS,7aS)-octahydro-1H-indene substituted by a methyl group at positions 1S, 6 and 6, and by a 1-hydroxypropan-2-ylidene group at position 4. It is a sesquiterpenoid produced by a Trichoderma terpene cyclase.</p>
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">DJBXKQSFHIRXRM-JRYBIPSHSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">C/C(CO)=C1/CC(C)(C)C[C@H]2[C@@H](C)CC[C@H]12</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">npatlas:NPA025694, pubchem:146682173</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://www.npatlas.org/explore/compounds/NPA025694">npatlas:NPA025694</a>, <a href="https://pubchem.ncbi.nlm.nih.gov/compound/146682173">pubchem:146682173</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Terpenoids</a> —
@@ -57,37 +59,37 @@ terpene, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Annulohypoxylon truncatum<br><span class="mono">NCBITaxon:327061</span></td>
+  <td>Annulohypoxylon truncatum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=327061">NCBITaxon:327061</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0002260</td>
-  <td><span class="mono">PMID:32936132</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002260">mibig:BGC0002260</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/32936132/">PMID:32936132</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">1</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Trichoderma atroviride<br><span class="mono">NCBITaxon:63577</span></td>
+  <td>Trichoderma atroviride<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=63577">NCBITaxon:63577</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1002/ANIE.201907964</td>
+  <td class="mono"><a href="https://doi.org/10.1002/ANIE.201907964">DOI:10.1002/ANIE.201907964</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0002260</td>
-  <td>Annulohypoxylon truncatum<br><span class="mono">NCBITaxon:327061</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002260">mibig:BGC0002260</a></td>
+  <td>Annulohypoxylon truncatum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=327061">NCBITaxon:327061</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:MT383109.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/MT383109.1">genbank:MT383109.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -97,7 +99,7 @@ isolation report left it.</p>
 
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for trichobrasilenol">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for trichobrasilenol">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -130,17 +132,17 @@ isolation report left it.</p>
 </div>
 
 <h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
-<p class="sub">Database-reported BraB glycosylation consumes exact trichobrasilenol. BraB is the sequence-verified native Annulohypoxylon truncatum CBS140778 reference, not a Trichoderma terpene cyclase or an identified historical assay construct. The primary paper was inaccessible, so functional evidence remains database-level. Product stereochemistry is incomplete; donor and pathway-finality limits remain explicit. No native producer-grade upgrade or change to SEEDED status.</p><div class="scroll"><table>
+<p class="sub">Database-reported BraB glycosylation consumes exact trichobrasilenol. BraB is the sequence-verified native Annulohypoxylon truncatum CBS140778 reference, not a Trichoderma terpene cyclase or an identified historical assay construct. The primary paper was inaccessible, so functional evidence remains database-level. Product stereochemistry is incomplete; donor and pathway-finality limits remain explicit. No native producer-grade upgrade or change to SEEDED status.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>BraB native CBS140778 reference</td>
   <td>is_database_reported_catalyst_of</td>
   <td>MITE-reported BraB glycosylation</td>
   <td>MITE and reviewed UniProt supply functional attribution at database level. Native sequence equality proves reference correspondence, not historical assay-stock or construct identity. UniProt qualifies UDP-GlcNAc as a putative sugar donor; this graph does not assert a measured donor preference, kinetics, protein-alone assay or physical complex. No native producer upgrade follows from heterologous-expression database codes.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000202.json<br>https://www.uniprot.org/uniprotkb/P9WER1<br>https://www.ncbi.nlm.nih.gov/protein/QOE88884.1<br>https://www.ncbi.nlm.nih.gov/nuccore/MT383109.1</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000202.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Active MITE0000202 version2 names BraB/P9WER1/QOE88884.1/BGC0002260. Its single example consumes trichobrasilenol and labels the product brasilane A. Heterologous expression and in vitro assay are source evidence codes, not independently inspected primary experiments. The cited DOI10.1039/D0CC03950K/PMID32936132 returned403 at the first publisher full-text attempt. No alternate paper or SI was inspected.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P9WER1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Reviewed entry7/sequence1,421aa, braB, A.truncatum/tax327061; genomic-reference strain provenance DSM103480/CBS140778 and EMBL MT383109/QOE88884.1 agree. Its function narrative attributes trichobrasilenol glycosylation to BraB, with UDP-GlcNAc a putative donor and later BraC transformations of brasilane A. Broad promiscuity and downstream claims are not adopted as independently inspected experiments.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/QOE88884.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Independent complete421-aa N-acetylglucosamine transferase, gene braB, A.truncatum/tax327061, culture_collectionCBS:140778. coded_by is complement(MT383109.1:2625..3890). Native reference identity, not a measured assay construct; PMID32936132 is bibliographic linkage, not direct paper inspection.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/MT383109.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Complete1266-nt reverse CDS2625..3890, codon1/defaulttable1, translates to native annotation, independent GenPept and current UniProt, all421aa. Independent coded_by DNA/coordinates and CBS140778/taxon327061 agree. Complete17473-bp cluster retained; source metadata and target CDS inspected, not a whole-cluster functional audit. No historical assay-stock or heterologous construct sequence inferred.</dd></dl>
+  <td><span class="mono"><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000202.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000202.json</a><br><a href="https://www.uniprot.org/uniprotkb/P9WER1">https://www.uniprot.org/uniprotkb/P9WER1</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/QOE88884.1">https://www.ncbi.nlm.nih.gov/protein/QOE88884.1</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/MT383109.1">https://www.ncbi.nlm.nih.gov/nuccore/MT383109.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000202.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000202.json</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Active MITE0000202 version2 names BraB/P9WER1/QOE88884.1/BGC0002260. Its single example consumes trichobrasilenol and labels the product brasilane A. Heterologous expression and in vitro assay are source evidence codes, not independently inspected primary experiments. The cited DOI10.1039/D0CC03950K/PMID32936132 returned403 at the first publisher full-text attempt. No alternate paper or SI was inspected.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/P9WER1">https://www.uniprot.org/uniprotkb/P9WER1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Reviewed entry7/sequence1,421aa, braB, A.truncatum/tax327061; genomic-reference strain provenance DSM103480/CBS140778 and EMBL MT383109/QOE88884.1 agree. Its function narrative attributes trichobrasilenol glycosylation to BraB, with UDP-GlcNAc a putative donor and later BraC transformations of brasilane A. Broad promiscuity and downstream claims are not adopted as independently inspected experiments.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/QOE88884.1">https://www.ncbi.nlm.nih.gov/protein/QOE88884.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Independent complete421-aa N-acetylglucosamine transferase, gene braB, A.truncatum/tax327061, culture_collectionCBS:140778. coded_by is complement(MT383109.1:2625..3890). Native reference identity, not a measured assay construct; PMID32936132 is bibliographic linkage, not direct paper inspection.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/MT383109.1">https://www.ncbi.nlm.nih.gov/nuccore/MT383109.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Complete1266-nt reverse CDS2625..3890, codon1/defaulttable1, translates to native annotation, independent GenPept and current UniProt, all421aa. Independent coded_by DNA/coordinates and CBS140778/taxon327061 agree. Complete17473-bp cluster retained; source metadata and target CDS inspected, not a whole-cluster functional audit. No historical assay-stock or heterologous construct sequence inferred.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -149,7 +151,7 @@ isolation report left it.</p>
   <td>is_database_example_substrate_of</td>
   <td>MITE-reported BraB glycosylation</td>
   <td>Pinned RDKit2026.03.5 and the repository identity helper match the MITE substrate to full owner key DJBXKQSFHIRXRM-JRYBIPSHSA-N with complete stereochemistry. BraB consumes the owner compound; it is not its terpene synthase. This does not equate the owner&#39;s Trichoderma occurrence/ChEBI definition context with the native A.truncatum reference or upgrade the imported SOURCE_ASSERTION producer claim. All source-owned contexts remain unchanged.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000202.json</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000202.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Active MITE0000202 version2 names BraB/P9WER1/QOE88884.1/BGC0002260. Its single example consumes trichobrasilenol and labels the product brasilane A. Heterologous expression and in vitro assay are source evidence codes, not independently inspected primary experiments. The cited DOI10.1039/D0CC03950K/PMID32936132 returned403 at the first publisher full-text attempt. No alternate paper or SI was inspected.</dd></dl>
+  <td><span class="mono"><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000202.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000202.json</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000202.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000202.json</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Active MITE0000202 version2 names BraB/P9WER1/QOE88884.1/BGC0002260. Its single example consumes trichobrasilenol and labels the product brasilane A. Heterologous expression and in vitro assay are source evidence codes, not independently inspected primary experiments. The cited DOI10.1039/D0CC03950K/PMID32936132 returned403 at the first publisher full-text attempt. No alternate paper or SI was inspected.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -158,7 +160,7 @@ isolation report left it.</p>
   <td>has_database_example_product</td>
   <td>Brasilane A, stereo-incomplete database model</td>
   <td>MITE&#39;s brasilane A model leaves anomeric and alkene stereochemistry unspecified; repository chemistry checks mark it stereo-incomplete. It remains externally ungrounded, with no exact stereoisomer or historical structure assignment substituted. MITE marks isIntermediate false, but UniProt describes later BraC transformations. That source flag does not prove pathway finality; no downstream graph or final-product claim is adopted.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000202.json</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000202.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Active MITE0000202 version2 names BraB/P9WER1/QOE88884.1/BGC0002260. Its single example consumes trichobrasilenol and labels the product brasilane A. Heterologous expression and in vitro assay are source evidence codes, not independently inspected primary experiments. The cited DOI10.1039/D0CC03950K/PMID32936132 returned403 at the first publisher full-text attempt. No alternate paper or SI was inspected.</dd><dt>snippet</dt><dd>Brasilane A formation</dd></dl>
+  <td><span class="mono"><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000202.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000202.json</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000202.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000202.json</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Active MITE0000202 version2 names BraB/P9WER1/QOE88884.1/BGC0002260. Its single example consumes trichobrasilenol and labels the product brasilane A. Heterologous expression and in vitro assay are source evidence codes, not independently inspected primary experiments. The cited DOI10.1039/D0CC03950K/PMID32936132 returned403 at the first publisher full-text attempt. No alternate paper or SI was inspected.</dd><dt>snippet</dt><dd>Brasilane A formation</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -166,16 +168,16 @@ isolation report left it.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
-<p class="sub">Database-reported TaTC6 formation of trichobrasilenol as the main product. A0A5S9I252 denotes the sequence-verified native Trichoderma atroviride FKI-3849 reference, not a verified full assayed construct. Functional and stereochemical product attribution remain database-level. No native producer, BGC membership, physical complex or measured Mg-binding claim is added.</p><div class="scroll"><table>
+<p class="sub">Database-reported TaTC6 formation of trichobrasilenol as the main product. A0A5S9I252 denotes the sequence-verified native Trichoderma atroviride FKI-3849 reference, not a verified full assayed construct. Functional and stereochemical product attribution remain database-level. No native producer, BGC membership, physical complex or measured Mg-binding claim is added.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 2 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>TaTC6 native FKI-3849 reference</td>
   <td>is_database_reported_catalyst_of</td>
   <td>Database-reported TaTC6 FPP conversion</td>
   <td>The native reference mapping does not establish historical assay-stock or full construct/tag identity. UniProt separately reports a koraiol disruption phenotype; its applicability is unresolved and no phenotype edge is adopted. Its homodimer and Mg-binding assertions are homology-based and are not adopted here.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0A5S9I252<br>https://www.ncbi.nlm.nih.gov/protein/BBK61014.1<br>https://www.ncbi.nlm.nih.gov/nuccore/LC484924.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A5S9I252</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>notes</dt><dd>Reviewed entry 21/sequence 1 assigns RHEA:66644 to tatc6 and explicitly names CHEBI:167379 as product of FPP plus water; RHEA:66645 is annotated left-to-right. The function narrative calls trichobrasilenol the main product and pristinol a side product. These are adopted UniProt assertions, not independently inspected experiments. PMID31418991 / DOI10.1002/anie.201907964 is the database-cited bibliography; the primary paper and supplementary information were inaccessible and were not inspected.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/BBK61014.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>notes</dt><dd>Complete 386-aa native Trichoderma atroviride FKI-3849 reference, taxon63577, gene tatc6. GenPept annotates trichobrasilenol synthesis from FPP; it does not independently establish pristinol formation. Its in-vitro-assay code is a deposit annotation, not a newly inspected assay.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/LC484924.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>notes</dt><dd>Independent translation of the complete six-exon CDS join(1..242,308..434,497..515,569..1035,1100..1326,1385..1463), codon_start1/default table1: 1161 nt including stop equals 386-aa annotated translation, GenPept BBK61014.1 and UniProt A0A5S9I252. Independent GenPept coded_by accession, coordinates and orientation agree; both deposits name FKI-3849/taxon63577. This is native reference correspondence, not experimental construct equivalence.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/A0A5S9I252">https://www.uniprot.org/uniprotkb/A0A5S9I252</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/BBK61014.1">https://www.ncbi.nlm.nih.gov/protein/BBK61014.1</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/LC484924.1">https://www.ncbi.nlm.nih.gov/nuccore/LC484924.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0A5S9I252">https://www.uniprot.org/uniprotkb/A0A5S9I252</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>notes</dt><dd>Reviewed entry 21/sequence 1 assigns RHEA:66644 to tatc6 and explicitly names CHEBI:167379 as product of FPP plus water; RHEA:66645 is annotated left-to-right. The function narrative calls trichobrasilenol the main product and pristinol a side product. These are adopted UniProt assertions, not independently inspected experiments. PMID31418991 / DOI10.1002/anie.201907964 is the database-cited bibliography; the primary paper and supplementary information were inaccessible and were not inspected.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/BBK61014.1">https://www.ncbi.nlm.nih.gov/protein/BBK61014.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>notes</dt><dd>Complete 386-aa native Trichoderma atroviride FKI-3849 reference, taxon63577, gene tatc6. GenPept annotates trichobrasilenol synthesis from FPP; it does not independently establish pristinol formation. Its in-vitro-assay code is a deposit annotation, not a newly inspected assay.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/LC484924.1">https://www.ncbi.nlm.nih.gov/nuccore/LC484924.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>notes</dt><dd>Independent translation of the complete six-exon CDS join(1..242,308..434,497..515,569..1035,1100..1326,1385..1463), codon_start1/default table1: 1161 nt including stop equals 386-aa annotated translation, GenPept BBK61014.1 and UniProt A0A5S9I252. Independent GenPept coded_by accession, coordinates and orientation agree; both deposits name FKI-3849/taxon63577. This is native reference correspondence, not experimental construct equivalence.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -184,7 +186,7 @@ by the corpus tests.</p>
   <td>has_database_reported_product</td>
   <td>trichobrasilenol</td>
   <td>The explicit UniProt reaction product CURIE CHEBI:167379 matches this owner, whose unchanged full InChIKey is DJBXKQSFHIRXRM-JRYBIPSHSA-N. This is database product mapping, not an independent spectrum or primary-paper stereochemical analysis. No exclusive specificity, product percentage or native production is asserted. This synthase graph is separate from Annulohypoxylon BraB glycosylation and does not place TaTC6 in BGC0002260 or upgrade the existing Trichoderma occurrence to production.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0A5S9I252</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A5S9I252</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>notes</dt><dd>Reviewed entry 21/sequence 1 assigns RHEA:66644 to tatc6 and explicitly names CHEBI:167379 as product of FPP plus water; RHEA:66645 is annotated left-to-right. The function narrative calls trichobrasilenol the main product and pristinol a side product. These are adopted UniProt assertions, not independently inspected experiments. PMID31418991 / DOI10.1002/anie.201907964 is the database-cited bibliography; the primary paper and supplementary information were inaccessible and were not inspected.</dd><dt>snippet</dt><dd>The main product is trichobrasilenol</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/A0A5S9I252">https://www.uniprot.org/uniprotkb/A0A5S9I252</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0A5S9I252">https://www.uniprot.org/uniprotkb/A0A5S9I252</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>notes</dt><dd>Reviewed entry 21/sequence 1 assigns RHEA:66644 to tatc6 and explicitly names CHEBI:167379 as product of FPP plus water; RHEA:66645 is annotated left-to-right. The function narrative calls trichobrasilenol the main product and pristinol a side product. These are adopted UniProt assertions, not independently inspected experiments. PMID31418991 / DOI10.1002/anie.201907964 is the database-cited bibliography; the primary paper and supplementary information were inaccessible and were not inspected.</dd><dt>snippet</dt><dd>The main product is trichobrasilenol</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -198,24 +200,34 @@ by the corpus tests.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=DJBXKQSFHIRXRM-JRYBIPSHSA-N">AntibioticMech (trichobrasilenol) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=CHEBI%3A167379">MediaIngredientMech (CHEBI:167379) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A327061">TaxonMech: Annulohypoxylon truncatum (NCBITaxon:327061) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0002260">PathwayMech (mibig:BGC0002260) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q=CHEBI%3A167379">MediaIngredientMech (CHEBI:167379) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A327061">TaxonMech: Annulohypoxylon truncatum (NCBITaxon:327061) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0002260">PathwayMech (mibig:BGC0002260) &nearr;</a>
 </div>
 
 
+<h2 id="curation-history">Curation history <span class="tag">4</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-09T08:29:00Z">2026-10-09T08:29:00Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added a separate three-node/two-edge BIOSYNTHESIS graph for database-reported TaTC6 formation of trichobrasilenol, grounded to UniProtKB:A0A5S9I252 by exact 386-aa native reference and six-exon CDS equality. Each edge has a stable source URL; product evidence includes an exact snippet. Primary paper/SI inaccessible: no primary-experiment claim, construct equivalence, native producer upgrade, BGC assignment, physical complex or Mg-binding claim. Koraiol disruption applicability unresolved and unadopted. Preserved every old graph/pathway, source field, structure, grade, history and SEEDED status; not a full-record sign-off.</p></li>
+<li><time datetime="2026-10-07T13:37:43Z">2026-10-07T13:37:43Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added a four-node/three-edge BraB database substrate-glycosylation graph. Pinned MITE0000202v2 consumes this exact trichobrasilenol structure; every functional edge has its stable source URL and one exact three-word snippet labels the product example. Grounded BraB to UniProtKB:P9WER1, reviewed entry7/sequence1, native Annulohypoxylon truncatum CBS140778 reference. Full1266-nt reverse CDS2625..3890 on MT383109.1, codon1/defaulttable1, equals annotation, independent GenPept QOE88884.1 and current UniProt, all421aa; coded_by DNA/coordinates and culture/taxon327061 provenance agree. Functional evidence remains database-level: the primary paper returned403. MITE heterologous-expression/in-vitro codes are not newly inspected assays; UniProt&#39;s putative UDP-GlcNAc donor is not promoted to measured specificity. The database product model is stereo-incomplete and remains ungrounded; isIntermediate false is not adopted as pathway finality. No historical assay-stock, construct, kinetics, physical complex or downstream pathway inferred. Preserved all source fields, SOURCE_ASSERTION producer grade, CLUSTER_DEMONSTRATED BGC grade, Trichoderma occurrence/definition context, stereochemistry, classifications, SEEDED status and old history; no full-record sign-off.</p></li>
+<li><time datetime="2026-09-25T03:01:47Z">2026-09-25T03:01:47Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:05Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
+
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0002260</td><td>MIBIG</td><td>3</td></tr>
-<tr><td class="mono">CHEBI:167379</td><td>CHEBI</td><td>3-star</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002260">BGC0002260</a></td><td>MIBIG</td><td>3</td></tr>
+<tr><td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_167379">CHEBI:167379</a></td><td>CHEBI</td><td>3-star</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/terpenoids/trichobrasilenol.yaml">data/natural_products/terpenoids/trichobrasilenol.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20CHEBI%3A167379&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Fterpenoids%2Ftrichobrasilenol.html">Report a problem with this record</a>: opens a GitHub issue that names CHEBI:167379 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Corpus as of 2026-10-23 22:53 UTC. Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 8e5d64d98cfd). Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

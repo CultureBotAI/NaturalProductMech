@@ -4,16 +4,13 @@ from __future__ import annotations
 from copy import deepcopy
 
 import yaml
-from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 from tests.test_render_pages import REPO_ROOT
 from tests.test_render_pages import render_pages as site
 
 
 def render(name, **context):
-    env = Environment(loader=FileSystemLoader(site.TEMPLATES_DIR),
-                      autoescape=select_autoescape(["html"]))
-    return env.get_template(name).render(**context)
+    return site.template_environment().get_template(name).render(**context)
 
 
 def record(doc):

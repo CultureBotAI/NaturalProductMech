@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Polyketides</a> &middot; emodin</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>emodin</h1>
-<p class="sub"><span class="mono">CHEBI:42223</span>
+<p class="sub"><span class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_42223">CHEBI:42223</a></span>
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 <span class="tag">cytotoxic</span></p>
 <details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/emodin.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/emodin.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 <p>A trihydroxyanthraquinone that is 9,10-anthraquinone which is substituted by hydroxy groups at positions 1, 3, and 8 and by a methyl group at position 6. It is present in the roots and barks of numerous plants (particularly rhubarb and buckthorn), moulds, and lichens. It is an active ingredient of various Chinese herbs.</p>
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">RHMXXJGYXNZAPX-UHFFFAOYSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">CC1=CC(=C2C(=C1)C(=O)C3=CC(=CC(=C3C2=O)O)O)O</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">pubchem:3220</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/compound/3220">pubchem:3220</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Polyketides</a> —
@@ -57,157 +59,157 @@ pks, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Aspergillus nidulans FGSC A4<br><span class="mono">NCBITaxon:227321</span></td>
+  <td>Aspergillus nidulans FGSC A4<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=227321">NCBITaxon:227321</a></span></td>
   <td><span class="tag causal">BGC_CHARACTERIZED</span></td>
-  <td class="mono">mibig:BGC0000101</td>
-  <td><span class="mono">PMID:19448638</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000101">mibig:BGC0000101</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/19448638/">PMID:19448638</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">25</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Rumex dentatus<br><span class="mono">NCBITaxon:1006352</span></td>
+  <td>Rumex dentatus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1006352">NCBITaxon:1006352</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/0305-1978(93)90049-W</td>
+  <td class="mono"><a href="https://doi.org/10.1016/0305-1978%2893%2990049-W">DOI:10.1016/0305-1978(93)90049-W</a></td>
 </tr>
 <tr>
-  <td>Rhamnus davurica<br><span class="mono">NCBITaxon:105902</span></td>
+  <td>Rhamnus davurica<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=105902">NCBITaxon:105902</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/NP010030V</td>
+  <td class="mono"><a href="https://doi.org/10.1021/NP010030V">DOI:10.1021/NP010030V</a></td>
 </tr>
 <tr>
-  <td>Ventilago leiocarpa<br><span class="mono">NCBITaxon:108868</span></td>
+  <td>Ventilago leiocarpa<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=108868">NCBITaxon:108868</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/0378-8741(96)01397-9</td>
+  <td class="mono"><a href="https://doi.org/10.1016/0378-8741%2896%2901397-9">DOI:10.1016/0378-8741(96)01397-9</a></td>
 </tr>
 <tr>
-  <td>Ventilago leiocarpa<br><span class="mono">NCBITaxon:108868</span></td>
+  <td>Ventilago leiocarpa<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=108868">NCBITaxon:108868</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/S0031-9422(00)84996-1</td>
+  <td class="mono"><a href="https://doi.org/10.1016/S0031-9422%2800%2984996-1">DOI:10.1016/S0031-9422(00)84996-1</a></td>
 </tr>
 <tr>
-  <td>Ventilago leiocarpa<br><span class="mono">NCBITaxon:108868</span></td>
+  <td>Ventilago leiocarpa<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=108868">NCBITaxon:108868</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/NP000569D</td>
+  <td class="mono"><a href="https://doi.org/10.1021/NP000569D">DOI:10.1021/NP000569D</a></td>
 </tr>
 <tr>
-  <td>Ventilago leiocarpa<br><span class="mono">NCBITaxon:108868</span></td>
+  <td>Ventilago leiocarpa<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=108868">NCBITaxon:108868</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1142/S0192415X96000189</td>
+  <td class="mono"><a href="https://doi.org/10.1142/S0192415X96000189">DOI:10.1142/S0192415X96000189</a></td>
 </tr>
 <tr>
-  <td>Guanomyces polythrix<br><span class="mono">NCBITaxon:110160</span></td>
+  <td>Guanomyces polythrix<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=110160">NCBITaxon:110160</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/S0031-9422(01)00278-3</td>
+  <td class="mono"><a href="https://doi.org/10.1016/S0031-9422%2801%2900278-3">DOI:10.1016/S0031-9422(01)00278-3</a></td>
 </tr>
 <tr>
-  <td>Guanomyces polythrix<br><span class="mono">NCBITaxon:110160</span></td>
+  <td>Guanomyces polythrix<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=110160">NCBITaxon:110160</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/NP990534H</td>
+  <td class="mono"><a href="https://doi.org/10.1021/NP990534H">DOI:10.1021/NP990534H</a></td>
 </tr>
 <tr>
-  <td>Picramnia antidesma<br><span class="mono">NCBITaxon:1129486</span></td>
+  <td>Picramnia antidesma<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1129486">NCBITaxon:1129486</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/S0031-9422(98)00354-9</td>
+  <td class="mono"><a href="https://doi.org/10.1016/S0031-9422%2898%2900354-9">DOI:10.1016/S0031-9422(98)00354-9</a></td>
 </tr>
 <tr>
-  <td>Picramnia antidesma<br><span class="mono">NCBITaxon:1129486</span></td>
+  <td>Picramnia antidesma<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1129486">NCBITaxon:1129486</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/S0031-9422(98)00383-5</td>
+  <td class="mono"><a href="https://doi.org/10.1016/S0031-9422%2898%2900383-5">DOI:10.1016/S0031-9422(98)00383-5</a></td>
 </tr>
 <tr>
-  <td>Talaromyces brunneus<br><span class="mono">NCBITaxon:1131644</span></td>
+  <td>Talaromyces brunneus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1131644">NCBITaxon:1131644</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1248/CPB.11.402</td>
+  <td class="mono"><a href="https://doi.org/10.1248/CPB.11.402">DOI:10.1248/CPB.11.402</a></td>
 </tr>
 <tr>
-  <td>Dendrobium thyrsiflorum<br><span class="mono">NCBITaxon:117978</span></td>
+  <td>Dendrobium thyrsiflorum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=117978">NCBITaxon:117978</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/J.PHYTOCHEM.2005.04.001</td>
+  <td class="mono"><a href="https://doi.org/10.1016/J.PHYTOCHEM.2005.04.001">DOI:10.1016/J.PHYTOCHEM.2005.04.001</a></td>
 </tr>
 <tr>
-  <td>Rheum ribes<br><span class="mono">NCBITaxon:1207382</span></td>
+  <td>Rheum ribes<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1207382">NCBITaxon:1207382</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1080/13880200701575049</td>
+  <td class="mono"><a href="https://doi.org/10.1080/13880200701575049">DOI:10.1080/13880200701575049</a></td>
 </tr>
 <tr>
-  <td>Derris cuneifolia<br><span class="mono">NCBITaxon:1225674</span></td>
+  <td>Derris cuneifolia<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1225674">NCBITaxon:1225674</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.3987/COM-92-6288</td>
+  <td class="mono"><a href="https://doi.org/10.3987/COM-92-6288">DOI:10.3987/COM-92-6288</a></td>
 </tr>
 <tr>
-  <td>Derris cuneifolia<br><span class="mono">NCBITaxon:1225674</span></td>
+  <td>Derris cuneifolia<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1225674">NCBITaxon:1225674</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.3987/COM-95-7069</td>
+  <td class="mono"><a href="https://doi.org/10.3987/COM-95-7069">DOI:10.3987/COM-95-7069</a></td>
 </tr>
 <tr>
-  <td>Senna occidentalis<br><span class="mono">NCBITaxon:126820</span></td>
+  <td>Senna occidentalis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=126820">NCBITaxon:126820</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1002/HLCA.200900460</td>
+  <td class="mono"><a href="https://doi.org/10.1002/HLCA.200900460">DOI:10.1002/HLCA.200900460</a></td>
 </tr>
 <tr>
-  <td>Senna occidentalis<br><span class="mono">NCBITaxon:126820</span></td>
+  <td>Senna occidentalis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=126820">NCBITaxon:126820</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/JF970690Z</td>
+  <td class="mono"><a href="https://doi.org/10.1021/JF970690Z">DOI:10.1021/JF970690Z</a></td>
 </tr>
 <tr>
-  <td>Senna occidentalis<br><span class="mono">NCBITaxon:126820</span></td>
+  <td>Senna occidentalis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=126820">NCBITaxon:126820</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1039/J39700001285</td>
+  <td class="mono"><a href="https://doi.org/10.1039/J39700001285">DOI:10.1039/J39700001285</a></td>
 </tr>
 <tr>
-  <td>Senna occidentalis<br><span class="mono">NCBITaxon:126820</span></td>
+  <td>Senna occidentalis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=126820">NCBITaxon:126820</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1248/CPB.33.971</td>
+  <td class="mono"><a href="https://doi.org/10.1248/CPB.33.971">DOI:10.1248/CPB.33.971</a></td>
 </tr>
 <tr>
-  <td>Senna occidentalis<br><span class="mono">NCBITaxon:126820</span></td>
+  <td>Senna occidentalis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=126820">NCBITaxon:126820</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1248/CPB.37.511</td>
+  <td class="mono"><a href="https://doi.org/10.1248/CPB.37.511">DOI:10.1248/CPB.37.511</a></td>
 </tr>
 <tr>
-  <td>Annona muricata<br><span class="mono">NCBITaxon:13337</span></td>
+  <td>Annona muricata<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=13337">NCBITaxon:13337</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/S13197-014-1289-7</td>
+  <td class="mono"><a href="https://doi.org/10.1007/S13197-014-1289-7">DOI:10.1007/S13197-014-1289-7</a></td>
 </tr>
 <tr>
-  <td>Cichorium intybus<br><span class="mono">NCBITaxon:13427</span></td>
+  <td>Cichorium intybus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=13427">NCBITaxon:13427</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/S0278-6915(99)00027-7</td>
+  <td class="mono"><a href="https://doi.org/10.1016/S0278-6915%2899%2900027-7">DOI:10.1016/S0278-6915(99)00027-7</a></td>
 </tr>
 <tr>
-  <td>Rumex alpinus<br><span class="mono">NCBITaxon:1351827</span></td>
+  <td>Rumex alpinus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1351827">NCBITaxon:1351827</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/BF00596663</td>
+  <td class="mono"><a href="https://doi.org/10.1007/BF00596663">DOI:10.1007/BF00596663</a></td>
 </tr>
 <tr>
-  <td>Rheum compactum<br><span class="mono">NCBITaxon:137216</span></td>
+  <td>Rheum compactum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=137216">NCBITaxon:137216</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/0378-8741(84)90016-3</td>
+  <td class="mono"><a href="https://doi.org/10.1016/0378-8741%2884%2990016-3">DOI:10.1016/0378-8741(84)90016-3</a></td>
 </tr>
 <tr>
-  <td>Rheum hotaoense<br><span class="mono">NCBITaxon:137217</span></td>
+  <td>Rheum hotaoense<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=137217">NCBITaxon:137217</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/0378-8741(84)90016-3</td>
+  <td class="mono"><a href="https://doi.org/10.1016/0378-8741%2884%2990016-3">DOI:10.1016/0378-8741(84)90016-3</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0000101</td>
-  <td>Aspergillus nidulans FGSC A4<br><span class="mono">NCBITaxon:227321</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000101">mibig:BGC0000101</a></td>
+  <td>Aspergillus nidulans FGSC A4<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=227321">NCBITaxon:227321</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:BN001308.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/BN001308.1">genbank:BN001308.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -217,7 +219,7 @@ isolation report left it.</p>
 
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for emodin">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for emodin">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -250,14 +252,14 @@ isolation report left it.</p>
 </div>
 
 <h2>Causal graph &mdash; bioactivity <span class="tag">3 nodes, 2 edges</span></h2>
-<p class="sub">Emodin inhibits maize and human casein kinase II alpha subunits.</p><div class="scroll"><table>
+<p class="sub">Emodin inhibits maize and human casein kinase II alpha subunits.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>emodin</td>
   <td>inhibits</td>
   <td>maize casein kinase II subunit alpha</td>
   <td>PubChem BioAssay AID 1796663 maps this exact Standard InChIKey to a 1.85 uM Ki measurement against maize casein kinase II subunit alpha, and P28523 resolves in UniProtKB to the maize CK2 alpha gene product.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1074/jbc.m209367200</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1074/jbc.m209367200</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>The source article structurally characterized anthraquinone-related CK2 inhibitors; the BindingDB-deposited PubChem assay reports active emodin inhibition of maize CK2 alpha.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1074/jbc.m209367200">DOI:10.1074/jbc.m209367200</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1074/jbc.m209367200">DOI:10.1074/jbc.m209367200</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>The source article structurally characterized anthraquinone-related CK2 inhibitors; the BindingDB-deposited PubChem assay reports active emodin inhibition of maize CK2 alpha.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -266,7 +268,7 @@ isolation report left it.</p>
   <td>inhibits</td>
   <td>human casein kinase II subunit alpha</td>
   <td>PubChem BioAssay AID 1796664 maps this exact Standard InChIKey to a 1.85 uM Ki measurement against human casein kinase II subunit alpha, and P68400 resolves in UniProtKB to the human CSNK2A1 gene product.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1042/bj20030674</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1042/bj20030674</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>The source article biochemically and structurally characterized CK2 inhibitor binding; the BindingDB-deposited PubChem assay reports active emodin inhibition of human CK2 alpha.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1042/bj20030674">DOI:10.1042/bj20030674</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1042/bj20030674">DOI:10.1042/bj20030674</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>The source article biochemically and structurally characterized CK2 inhibitor binding; the BindingDB-deposited PubChem assay reports active emodin inhibition of human CK2 alpha.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -274,15 +276,15 @@ isolation report left it.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; bioactivity <span class="tag">2 nodes, 1 edge</span></h2>
-<p class="sub">Emodin binds and inhibits Helicobacter pylori FabZ, beta-hydroxyacyl-ACP dehydratase.</p><div class="scroll"><table>
+<p class="sub">Emodin binds and inhibits Helicobacter pylori FabZ, beta-hydroxyacyl-ACP dehydratase.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 2 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>emodin</td>
   <td>inhibits</td>
   <td>Helicobacter pylori FabZ</td>
   <td>PubChem BioAssay AID 977611 maps this exact Standard InChIKey to 0.45 uM Kd rows for PDB 3ED0 chains A and B; RCSB maps PDB 3ED0 to the Helicobacter pylori fabZ gene product UniProtKB:Q5G940 and reports bound EMO emodin with the same Standard InChIKey.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1186/1471-2180-9-91<br>DOI:10.2210/pdb3ED0/pdb</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1186/1471-2180-9-91</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>competitive inhibitor against the recombinant beta-hydroxyacyl-ACP dehydratase from Helicobacter pylori</dd><dt>notes</dt><dd>Chen et al. combined enzymatic inhibition, SPR/ITC binding, and the 3ED0 crystal structure to characterize emodin engagement of H. pylori FabZ.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.2210/pdb3ED0/pdb</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>RCSB PDB identifies 3ED0 as emodin-bound H. pylori FabZ with EMO ligands and maps entity 1 to UniProtKB:Q5G940.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1186/1471-2180-9-91">DOI:10.1186/1471-2180-9-91</a><br><a href="https://doi.org/10.2210/pdb3ED0/pdb">DOI:10.2210/pdb3ED0/pdb</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/1471-2180-9-91">DOI:10.1186/1471-2180-9-91</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>competitive inhibitor against the recombinant beta-hydroxyacyl-ACP dehydratase from Helicobacter pylori</dd><dt>notes</dt><dd>Chen et al. combined enzymatic inhibition, SPR/ITC binding, and the 3ED0 crystal structure to characterize emodin engagement of H. pylori FabZ.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.2210/pdb3ED0/pdb">DOI:10.2210/pdb3ED0/pdb</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>RCSB PDB identifies 3ED0 as emodin-bound H. pylori FabZ with EMO ligands and maps entity 1 to UniProtKB:Q5G940.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -290,17 +292,17 @@ by the corpus tests.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
-<p class="sub">MITE-asserted PhoG oxidation of emodin anthrone yielding the exact emodin structure as an intermediate in the reported phomoxanthone A pathway. The native Diaporthe SYSU-MS4722 reference is grounded in NCBIProtein, not a UniParc ID relabeled as UniProtKB. It is not assigned to the owner&#39;s distinct Aspergillus/BGC0000101 source. Existing CK2/FabZ bioactivity graphs and all source fields and grades are preserved; not full-record sign-off.</p><div class="scroll"><table>
+<p class="sub">MITE-asserted PhoG oxidation of emodin anthrone yielding the exact emodin structure as an intermediate in the reported phomoxanthone A pathway. The native Diaporthe SYSU-MS4722 reference is grounded in NCBIProtein, not a UniParc ID relabeled as UniProtKB. It is not assigned to the owner&#39;s distinct Aspergillus/BGC0000101 source. Existing CK2/FabZ bioactivity graphs and all source fields and grades are preserved; not full-record sign-off.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 3 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>PhoG native reference from Diaporthe SYSU-MS4722</td>
   <td>is_database_reported_catalyst_of</td>
   <td>MITE-reported emodin anthrone oxidation</td>
   <td>MITE supplies functional attribution; sequence deposits establish identity only. The Diaporthe reference is not inferred to be an Aspergillus nidulans FGSC A4 protein. No physiological membrane topology, complex, active-site residue, rate, assay condition, oxygen-donor identity or inspected primary experiment is claimed.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000162.json<br>https://www.ncbi.nlm.nih.gov/protein/UPG58736.1<br>https://www.ncbi.nlm.nih.gov/nuccore/OL450412.1<br>https://www.uniprot.org/uniparc/UPI00206D4B6A</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000162.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000162 version 2, active, at the pinned commit. It assigns emodin anthrone oxidation to PhoG, yielding emodin during phomoxanthone A biosynthesis. Its heterologous-expression code is not personally inspected experimental data; the cited primary paper was inaccessible. MITE removed a retired BGC0003093 link; it is not restored or treated as active here.</dd><dt>snippet</dt><dd>conversion of emodin anthrone to emodin</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/UPG58736.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Complete GenPept and independent coded_by inspected: phoG, Diaporthe sp. strain SYSU-MS4722, taxon 1756133, 174 residues. Its phomoxanthone G product label denotes this gene product, not a chemical identifier. The anthrone-oxygenase family annotation is not an independently inspected compound-specific assay.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/OL450412.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Genomic DNA deposit with complete exact CDS complement(join(1..434,513..603)), 525nt, codon_start1, default translation table1. Biological exon order is 513..603 then 1..434, both negative-strand. Full translation equals the annotation, independent UPG58736.1 and UniParc174aa; coded_by DNA/coordinates match. Fuzzy gene/mRNA boundaries do not establish a complete transcript/promoter or historical construct/stock.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniparc/UPI00206D4B6A</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Sequence archive matches all 174 residues and links active EMBL UPG58736 version1. The inspected record has no UniProtKB cross-reference, and the exact taxon/gene query returned no current entry. No UniProtKB example was selected; this bounded check is not proof of global or all-alias absence.</dd></dl>
+  <td><span class="mono"><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000162.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000162.json</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/UPG58736.1">https://www.ncbi.nlm.nih.gov/protein/UPG58736.1</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/OL450412.1">https://www.ncbi.nlm.nih.gov/nuccore/OL450412.1</a><br><a href="https://www.uniprot.org/uniparc/UPI00206D4B6A">https://www.uniprot.org/uniparc/UPI00206D4B6A</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000162.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000162.json</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000162 version 2, active, at the pinned commit. It assigns emodin anthrone oxidation to PhoG, yielding emodin during phomoxanthone A biosynthesis. Its heterologous-expression code is not personally inspected experimental data; the cited primary paper was inaccessible. MITE removed a retired BGC0003093 link; it is not restored or treated as active here.</dd><dt>snippet</dt><dd>conversion of emodin anthrone to emodin</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/UPG58736.1">https://www.ncbi.nlm.nih.gov/protein/UPG58736.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Complete GenPept and independent coded_by inspected: phoG, Diaporthe sp. strain SYSU-MS4722, taxon 1756133, 174 residues. Its phomoxanthone G product label denotes this gene product, not a chemical identifier. The anthrone-oxygenase family annotation is not an independently inspected compound-specific assay.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/OL450412.1">https://www.ncbi.nlm.nih.gov/nuccore/OL450412.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Genomic DNA deposit with complete exact CDS complement(join(1..434,513..603)), 525nt, codon_start1, default translation table1. Biological exon order is 513..603 then 1..434, both negative-strand. Full translation equals the annotation, independent UPG58736.1 and UniParc174aa; coded_by DNA/coordinates match. Fuzzy gene/mRNA boundaries do not establish a complete transcript/promoter or historical construct/stock.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniparc/UPI00206D4B6A">https://www.uniprot.org/uniparc/UPI00206D4B6A</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Sequence archive matches all 174 residues and links active EMBL UPG58736 version1. The inspected record has no UniProtKB cross-reference, and the exact taxon/gene query returned no current entry. No UniProtKB example was selected; this bounded check is not proof of global or all-alias absence.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -309,7 +311,7 @@ by the corpus tests.</p>
   <td>is_database_reported_substrate_of</td>
   <td>MITE-reported emodin anthrone oxidation</td>
   <td>MITE names emodin anthrone and supplies the corresponding example substrate. No external substrate identifier, additional precursor-generation step or independently inspected assay is adopted.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000162.json</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000162.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000162 version 2, active, at the pinned commit. It assigns emodin anthrone oxidation to PhoG, yielding emodin during phomoxanthone A biosynthesis. Its heterologous-expression code is not personally inspected experimental data; the cited primary paper was inaccessible. MITE removed a retired BGC0003093 link; it is not restored or treated as active here.</dd></dl>
+  <td><span class="mono"><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000162.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000162.json</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000162.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000162.json</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000162 version 2, active, at the pinned commit. It assigns emodin anthrone oxidation to PhoG, yielding emodin during phomoxanthone A biosynthesis. Its heterologous-expression code is not personally inspected experimental data; the cited primary paper was inaccessible. MITE removed a retired BGC0003093 link; it is not restored or treated as active here.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -318,7 +320,7 @@ by the corpus tests.</p>
   <td>has_database_reported_product</td>
   <td>emodin</td>
   <td>Pinned MITE product matches full owner InChIKey RHMXXJGYXNZAPX-UHFFFAOYSA-N and complete stereochemical status using the repository helper and RDKit2026.03.5. MITE explicitly places emodin in the phomoxanthone A pathway; no downstream step or final-product claim is invented. The owner&#39;s BGC_CHARACTERIZED Aspergillus producer, CLUSTER_DEMONSTRATED BGC0000101/BN001308.1, occurrences, targets and prior bioactivity graphs stay unchanged.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000162.json</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000162.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000162 version 2, active, at the pinned commit. It assigns emodin anthrone oxidation to PhoG, yielding emodin during phomoxanthone A biosynthesis. Its heterologous-expression code is not personally inspected experimental data; the cited primary paper was inaccessible. MITE removed a retired BGC0003093 link; it is not restored or treated as active here.</dd></dl>
+  <td><span class="mono"><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000162.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000162.json</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000162.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000162.json</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000162 version 2, active, at the pinned commit. It assigns emodin anthrone oxidation to PhoG, yielding emodin during phomoxanthone A biosynthesis. Its heterologous-expression code is not personally inspected experimental data; the cited primary paper was inaccessible. MITE removed a retired BGC0003093 link; it is not restored or treated as active here.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -326,16 +328,16 @@ by the corpus tests.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
-<p class="sub">Separate MITE-reported PhoK reduction consuming exact emodin. The sequence-verified native Diaporthe SYSU-MS4722 reference is grounded in NCBIProtein; no current UniProtKB example was selected. Its encoded product is not the anthrone substrate of the preserved PhoG graph, so this does not form a reverse reaction or closed cycle. Functional evidence remains database-level. Existing CK2/FabZ bioactivity graphs, PhoG synthesis, source claims and SEEDED status remain unchanged.</p><div class="scroll"><table>
+<p class="sub">Separate MITE-reported PhoK reduction consuming exact emodin. The sequence-verified native Diaporthe SYSU-MS4722 reference is grounded in NCBIProtein; no current UniProtKB example was selected. Its encoded product is not the anthrone substrate of the preserved PhoG graph, so this does not form a reverse reaction or closed cycle. Functional evidence remains database-level. Existing CK2/FabZ bioactivity graphs, PhoG synthesis, source claims and SEEDED status remain unchanged.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 4 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>PhoK native Diaporthe SYSU-MS4722 reference</td>
   <td>is_database_reported_catalyst_of</td>
   <td>MITE-reported PhoK emodin reduction</td>
   <td>MITE supplies the exact-compound functional assertion, while sequence deposits establish native reference identity. GenPept&#39;s YwnB/NADH-flavin reductase region is explicitly a general function prediction, not a cofactor measurement or compound-specific assay. No purified-enzyme sufficiency, rates, binding sites, cofactor occupancy or physical complex is claimed. Native reference equality is not historical assay-stock or construct identity.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000161.json<br>https://www.ncbi.nlm.nih.gov/protein/UPG58740.1<br>https://www.ncbi.nlm.nih.gov/nuccore/OL450416.1</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000161.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Active MITE0000161 version 2 names reductase PhoK and GenPept UPG58740.1. Only its third reaction object (zero-based index 2), example 0, is used: exact emodin is the substrate and the encoded reduced product is marked intermediate. Heterologous expression is a database evidence code, not an independently inspected primary assay. DOI10.1021/acs.orglett.2c01050 was inaccessible. Its other acetylation/reduction examples concern different substrates and are not transferred. Retired BGC0003093 was removed by MITE and is not restored here.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/UPG58740.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>snippet</dt><dd>General function prediction only</dd><dt>notes</dt><dd>Complete 265-residue PhoK reference, gene phoK, Diaporthe sp. SYSU-MS4722/taxon 1756133. The deposited phomoxanthone K label denotes this gene product, not a chemical identity. Its coded_by is complement(OL450416.1:141..938). The snippet is from the CDD YwnB region&#39;s prediction disclaimer, not primary functional evidence. Current exact taxon/gene and EMBL protein queries returned no UniProt entries on 2026-10-07; no UniProtKB or UniParc example selected, not a global absence claim.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/OL450416.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Complete 798-nt reverse CDS 141..938, codon 1/default table 1, translates to the native annotation and independent GenPept, all 265 residues. Independent coded_by DNA/coordinates and SYSU-MS4722/taxon 1756133 agree. The complete 938-bp genomic deposit was read. CDS boundaries are exact but gene/mRNA boundaries are fuzzy; no full transcript/promoter or historical construct/stock proof.</dd></dl>
+  <td><span class="mono"><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000161.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000161.json</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/UPG58740.1">https://www.ncbi.nlm.nih.gov/protein/UPG58740.1</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/OL450416.1">https://www.ncbi.nlm.nih.gov/nuccore/OL450416.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000161.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000161.json</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Active MITE0000161 version 2 names reductase PhoK and GenPept UPG58740.1. Only its third reaction object (zero-based index 2), example 0, is used: exact emodin is the substrate and the encoded reduced product is marked intermediate. Heterologous expression is a database evidence code, not an independently inspected primary assay. DOI10.1021/acs.orglett.2c01050 was inaccessible. Its other acetylation/reduction examples concern different substrates and are not transferred. Retired BGC0003093 was removed by MITE and is not restored here.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/UPG58740.1">https://www.ncbi.nlm.nih.gov/protein/UPG58740.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>snippet</dt><dd>General function prediction only</dd><dt>notes</dt><dd>Complete 265-residue PhoK reference, gene phoK, Diaporthe sp. SYSU-MS4722/taxon 1756133. The deposited phomoxanthone K label denotes this gene product, not a chemical identity. Its coded_by is complement(OL450416.1:141..938). The snippet is from the CDD YwnB region&#39;s prediction disclaimer, not primary functional evidence. Current exact taxon/gene and EMBL protein queries returned no UniProt entries on 2026-10-07; no UniProtKB or UniParc example selected, not a global absence claim.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/OL450416.1">https://www.ncbi.nlm.nih.gov/nuccore/OL450416.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Complete 798-nt reverse CDS 141..938, codon 1/default table 1, translates to the native annotation and independent GenPept, all 265 residues. Independent coded_by DNA/coordinates and SYSU-MS4722/taxon 1756133 agree. The complete 938-bp genomic deposit was read. CDS boundaries are exact but gene/mRNA boundaries are fuzzy; no full transcript/promoter or historical construct/stock proof.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -344,7 +346,7 @@ by the corpus tests.</p>
   <td>is_database_example_substrate_of</td>
   <td>MITE-reported PhoK emodin reduction</td>
   <td>Pinned repository chemistry checks match reaction index 2&#39;s substrate to full owner key RHMXXJGYXNZAPX-UHFFFAOYSA-N with complete stereochemistry. PhoK consumes the owner compound, rather than producing it as in the separate PhoG context. No other MITE substrate, native producer-grade upgrade or transfer of this Diaporthe reference to Aspergillus nidulans FGSC A4 is inferred.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000161.json</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000161.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Active MITE0000161 version 2 names reductase PhoK and GenPept UPG58740.1. Only its third reaction object (zero-based index 2), example 0, is used: exact emodin is the substrate and the encoded reduced product is marked intermediate. Heterologous expression is a database evidence code, not an independently inspected primary assay. DOI10.1021/acs.orglett.2c01050 was inaccessible. Its other acetylation/reduction examples concern different substrates and are not transferred. Retired BGC0003093 was removed by MITE and is not restored here.</dd></dl>
+  <td><span class="mono"><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000161.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000161.json</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000161.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000161.json</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Active MITE0000161 version 2 names reductase PhoK and GenPept UPG58740.1. Only its third reaction object (zero-based index 2), example 0, is used: exact emodin is the substrate and the encoded reduced product is marked intermediate. Heterologous expression is a database evidence code, not an independently inspected primary assay. DOI10.1021/acs.orglett.2c01050 was inaccessible. Its other acetylation/reduction examples concern different substrates and are not transferred. Retired BGC0003093 was removed by MITE and is not restored here.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -353,7 +355,7 @@ by the corpus tests.</p>
   <td>has_database_example_product</td>
   <td>MITE-encoded reduced emodin intermediate</td>
   <td>The source-marked intermediate remains externally ungrounded. Pinned RDKit 2026.03.5 gives C15H12O5 and key LJRSVKUSUARDIJ-UHFFFAOYSA-N for the encoded product; the PhoG anthrone substrate instead has C15H12O4 and key LAJSXCAVRQXZIO-UHFFFAOYSA-N. Those distinct models must not be equated or joined as a reverse reaction. No final product, downstream step, cofactor stoichiometry or exact named external product identifier is asserted.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000161.json</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000161.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Active MITE0000161 version 2 names reductase PhoK and GenPept UPG58740.1. Only its third reaction object (zero-based index 2), example 0, is used: exact emodin is the substrate and the encoded reduced product is marked intermediate. Heterologous expression is a database evidence code, not an independently inspected primary assay. DOI10.1021/acs.orglett.2c01050 was inaccessible. Its other acetylation/reduction examples concern different substrates and are not transferred. Retired BGC0003093 was removed by MITE and is not restored here.</dd></dl>
+  <td><span class="mono"><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000161.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000161.json</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000161.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000161.json</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Active MITE0000161 version 2 names reductase PhoK and GenPept UPG58740.1. Only its third reaction object (zero-based index 2), example 0, is used: exact emodin is the substrate and the encoded reduced product is marked intermediate. Heterologous expression is a database evidence code, not an independently inspected primary assay. DOI10.1021/acs.orglett.2c01050 was inaccessible. Its other acetylation/reduction examples concern different substrates and are not transferred. Retired BGC0003093 was removed by MITE and is not restored here.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -362,53 +364,53 @@ by the corpus tests.</p>
 by the corpus tests.</p>
 
 <h2>Molecular targets <span class="tag">6</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Molecular targets"><table>
 <tr><th>Target</th><th>Target organism</th><th>Measurement</th><th>Evidence</th></tr>
 <tr>
   <td>3-hydroxyacyl-[acyl-carrier-protein] dehydratase FabZ<br><span class="mono">PROTEIN BINDS</span></td>
-  <td>Francisella tularensis<br><span class="mono">NCBITaxon:263</span></td>
+  <td>Francisella tularensis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=263">NCBITaxon:263</a></span></td>
   <td>IC50 43100 nM</td>
-  <td><details class="graph-evidence target-evidence"><summary class="mono">PMID:26818694</summary><ul><li><dl><dt>reference</dt><dd>PMID:26818694</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>BindingDB own-curated affinity; measured at pH 7.0000, 25.00 C C; qualifier EQUAL.</dd></dl>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/26818694/">PMID:26818694</a></span><details class="graph-evidence target-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/26818694/">PMID:26818694</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>BindingDB own-curated affinity; measured at pH 7.0000, 25.00 C C; qualifier EQUAL.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
 <tr>
-  <td>3-hydroxyacyl-[acyl-carrier-protein] dehydratase FabZ [1-175]<br><span class="mono">PROTEIN BINDS</span><br><span class="mono">UniProtKB:B1JQH1</span></td>
-  <td>Yersinia pestis<br><span class="mono">NCBITaxon:632</span></td>
+  <td>3-hydroxyacyl-[acyl-carrier-protein] dehydratase FabZ [1-175]<br><span class="mono">PROTEIN BINDS</span><br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/B1JQH1/entry">UniProtKB:B1JQH1</a></span></td>
+  <td>Yersinia pestis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=632">NCBITaxon:632</a></span></td>
   <td>IC50 29700 nM</td>
-  <td><details class="graph-evidence target-evidence"><summary class="mono">PMID:26818694</summary><ul><li><dl><dt>reference</dt><dd>PMID:26818694</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>BindingDB own-curated affinity; measured at pH 7.0000, 25.00 C C; qualifier EQUAL.</dd></dl>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/26818694/">PMID:26818694</a></span><details class="graph-evidence target-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/26818694/">PMID:26818694</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>BindingDB own-curated affinity; measured at pH 7.0000, 25.00 C C; qualifier EQUAL.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
 <tr>
-  <td>Casein kinase II subunit alpha<br><span class="mono">PROTEIN BINDS</span><br><span class="mono">UniProtKB:P28523</span></td>
-  <td>Zea mays<br><span class="mono">NCBITaxon:4577</span></td>
+  <td>Casein kinase II subunit alpha<br><span class="mono">PROTEIN BINDS</span><br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/P28523/entry">UniProtKB:P28523</a></span></td>
+  <td>Zea mays<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=4577">NCBITaxon:4577</a></span></td>
   <td>KI 1850 nM</td>
-  <td><details class="graph-evidence target-evidence"><summary class="mono">PMID:12419810</summary><ul><li><dl><dt>reference</dt><dd>PMID:12419810</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>BindingDB own-curated affinity; measured at pH 7.5000, 22.00 C C; qualifier EQUAL.</dd></dl>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/12419810/">PMID:12419810</a></span><details class="graph-evidence target-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/12419810/">PMID:12419810</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>BindingDB own-curated affinity; measured at pH 7.5000, 22.00 C C; qualifier EQUAL.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
 <tr>
-  <td>Casein kinase II subunit alpha<br><span class="mono">PROTEIN BINDS</span><br><span class="mono">UniProtKB:P68400</span></td>
-  <td>Homo sapiens<br><span class="mono">NCBITaxon:9606</span></td>
+  <td>Casein kinase II subunit alpha<br><span class="mono">PROTEIN BINDS</span><br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/P68400/entry">UniProtKB:P68400</a></span></td>
+  <td>Homo sapiens<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=9606">NCBITaxon:9606</a></span></td>
   <td>KI 1850 nM</td>
-  <td><details class="graph-evidence target-evidence"><summary class="mono">PMID:12816539</summary><ul><li><dl><dt>reference</dt><dd>PMID:12816539</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>BindingDB own-curated affinity; measured at pH 7.5000, 22.00 C C; qualifier EQUAL.</dd></dl>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/12816539/">PMID:12816539</a></span><details class="graph-evidence target-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/12816539/">PMID:12816539</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>BindingDB own-curated affinity; measured at pH 7.5000, 22.00 C C; qualifier EQUAL.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
 <tr>
-  <td>Procathepsin L<br><span class="mono">PROTEIN BINDS</span><br><span class="mono">UniProtKB:P07711</span></td>
-  <td>Homo sapiens<br><span class="mono">NCBITaxon:9606</span></td>
+  <td>Procathepsin L<br><span class="mono">PROTEIN BINDS</span><br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/P07711/entry">UniProtKB:P07711</a></span></td>
+  <td>Homo sapiens<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=9606">NCBITaxon:9606</a></span></td>
   <td>IC50 10000 nM</td>
-  <td><details class="graph-evidence target-evidence"><summary class="mono">PMID:32852058</summary><ul><li><dl><dt>reference</dt><dd>PMID:32852058</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>BindingDB own-curated affinity; qualifier EQUAL.</dd></dl>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/32852058/">PMID:32852058</a></span><details class="graph-evidence target-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/32852058/">PMID:32852058</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>BindingDB own-curated affinity; qualifier EQUAL.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
 <tr>
-  <td>Procathepsin L<br><span class="mono">PROTEIN BINDS</span><br><span class="mono">UniProtKB:P07711</span></td>
-  <td>Homo sapiens<br><span class="mono">NCBITaxon:9606</span></td>
+  <td>Procathepsin L<br><span class="mono">PROTEIN BINDS</span><br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/P07711/entry">UniProtKB:P07711</a></span></td>
+  <td>Homo sapiens<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=9606">NCBITaxon:9606</a></span></td>
   <td>EC50 200000 nM</td>
-  <td><details class="graph-evidence target-evidence"><summary class="mono">PMID:32852058</summary><ul><li><dl><dt>reference</dt><dd>PMID:32852058</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>BindingDB own-curated affinity; qualifier EQUAL.</dd></dl>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/32852058/">PMID:32852058</a></span><details class="graph-evidence target-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/32852058/">PMID:32852058</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>BindingDB own-curated affinity; qualifier EQUAL.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -416,105 +418,105 @@ by the corpus tests.</p>
 
 <h2>Bioactivities <span class="tag">25</span></h2>
 <p class="sub">Entries preserve source qualifiers, targets and evidence. Repeated assay names or values are not independent replications; inspect source detail for differences.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Bioactivities"><table>
 <tr><th>Assay</th><th>Result</th><th>Target enzyme</th><th>Source detail</th></tr>
-<tr><td>5-hydroxytryptamine receptor 2A (HTR2A) small molecule antagonists, cell-based qHTS assay</td><td>OTHER 0.0033 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1963586</summary><dl><dt>assay</dt><dd>5-hydroxytryptamine receptor 2A (HTR2A) small molecule antagonists, cell-based qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1963586</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963586, deposited by 824; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
+<tr><td>5-hydroxytryptamine receptor 2A (HTR2A) small molecule antagonists, cell-based qHTS assay</td><td>OTHER 0.0033 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963586">pubchem.aid:1963586</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>5-hydroxytryptamine receptor 2A (HTR2A) small molecule antagonists, cell-based qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963586">pubchem.aid:1963586</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963586, deposited by 824; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.0033</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>5-hydroxytryptamine receptor 2A (HTR2A) small molecule antagonists, cell-based qHTS assay</td><td>OTHER 0.0033 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1963586</summary><dl><dt>assay</dt><dd>5-hydroxytryptamine receptor 2A (HTR2A) small molecule antagonists, cell-based qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1963586</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963586, deposited by 824; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession AAH96839 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>5-hydroxytryptamine receptor 2A (HTR2A) small molecule antagonists, cell-based qHTS assay</td><td>OTHER 0.0033 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963586">pubchem.aid:1963586</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>5-hydroxytryptamine receptor 2A (HTR2A) small molecule antagonists, cell-based qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963586">pubchem.aid:1963586</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963586, deposited by 824; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession AAH96839 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.0033</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>A Cell Based Secondary Assay To Explore Cytotoxicity of Compounds that Inhibit Mycobacterium Tuberculosis</td><td>OTHER 20.079 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:435019</summary><dl><dt>assay</dt><dd>A Cell Based Secondary Assay To Explore Cytotoxicity of Compounds that Inhibit Mycobacterium Tuberculosis</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:435019</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 435019, deposited by Southern Research Specialized Biocontainment Screening Center; assay type Confirmatory. Source endpoint: CC50.</dd></dl>
+<tr><td>A Cell Based Secondary Assay To Explore Cytotoxicity of Compounds that Inhibit Mycobacterium Tuberculosis</td><td>OTHER 20.079 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/435019">pubchem.aid:435019</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>A Cell Based Secondary Assay To Explore Cytotoxicity of Compounds that Inhibit Mycobacterium Tuberculosis</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/435019">pubchem.aid:435019</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 435019, deposited by Southern Research Specialized Biocontainment Screening Center; assay type Confirmatory. Source endpoint: CC50.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>20.079</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>A High Throughput Confirmatory Assay used to Identify Novel Compounds that Inhibit Mycobacterium Tuberculosis in the absence of Glycerol</td><td>IC50 88.95 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:449764</summary><dl><dt>assay</dt><dd>A High Throughput Confirmatory Assay used to Identify Novel Compounds that Inhibit Mycobacterium Tuberculosis in the absence of Glycerol</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:449764</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 449764, deposited by Southern Research Specialized Biocontainment Screening Center; assay type Confirmatory.</dd></dl>
+<tr><td>A High Throughput Confirmatory Assay used to Identify Novel Compounds that Inhibit Mycobacterium Tuberculosis in the absence of Glycerol</td><td>IC50 88.95 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/449764">pubchem.aid:449764</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>A High Throughput Confirmatory Assay used to Identify Novel Compounds that Inhibit Mycobacterium Tuberculosis in the absence of Glycerol</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/449764">pubchem.aid:449764</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 449764, deposited by Southern Research Specialized Biocontainment Screening Center; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>88.95</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>A quantitative high throughput screen for small molecules that induce DNA re-replication in MCF 10a normal breast cells.</td><td>OTHER 1.8356 uM; INACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:624296</summary><dl><dt>assay</dt><dd>A quantitative high throughput screen for small molecules that induce DNA re-replication in MCF 10a normal breast cells.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:624296</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624296, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession NP_056979 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>A quantitative high throughput screen for small molecules that induce DNA re-replication in MCF 10a normal breast cells.</td><td>OTHER 1.8356 uM; INACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/624296">pubchem.aid:624296</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>A quantitative high throughput screen for small molecules that induce DNA re-replication in MCF 10a normal breast cells.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/624296">pubchem.aid:624296</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624296, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession NP_056979 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>INACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>1.8356</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>A quantitative high throughput screen for small molecules that induce DNA re-replication in SW480 colon adenocarcinoma cells.</td><td>OTHER 25.929 uM; INACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:624297</summary><dl><dt>assay</dt><dd>A quantitative high throughput screen for small molecules that induce DNA re-replication in SW480 colon adenocarcinoma cells.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:624297</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession NP_056979 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>A quantitative high throughput screen for small molecules that induce DNA re-replication in SW480 colon adenocarcinoma cells.</td><td>OTHER 25.929 uM; INACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/624297">pubchem.aid:624297</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>A quantitative high throughput screen for small molecules that induce DNA re-replication in SW480 colon adenocarcinoma cells.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/624297">pubchem.aid:624297</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession NP_056979 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>INACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>25.929</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>ABL1 kinase (ABL1-N-HiBiT) SDR gain of signal screen</td><td>OTHER 3.9317 uM; INACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1963315</summary><dl><dt>assay</dt><dd>ABL1 kinase (ABL1-N-HiBiT) SDR gain of signal screen</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1963315</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963315, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>ABL1 kinase (ABL1-N-HiBiT) SDR gain of signal screen</td><td>OTHER 3.9317 uM; INACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963315">pubchem.aid:1963315</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>ABL1 kinase (ABL1-N-HiBiT) SDR gain of signal screen</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963315">pubchem.aid:1963315</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963315, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>INACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>3.9317</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>ABL1 kinase (ABL1-N-HiBiT) SDR gain of signal screen</td><td>OTHER 3.9317 uM; INACTIVE</td><td class="mono">UniProtKB:P00519</td><td><details><summary>pubchem.aid:1963315</summary><dl><dt>assay</dt><dd>ABL1 kinase (ABL1-N-HiBiT) SDR gain of signal screen</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1963315</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963315, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>ABL1 kinase (ABL1-N-HiBiT) SDR gain of signal screen</td><td>OTHER 3.9317 uM; INACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/P00519/entry">UniProtKB:P00519</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963315">pubchem.aid:1963315</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>ABL1 kinase (ABL1-N-HiBiT) SDR gain of signal screen</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963315">pubchem.aid:1963315</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963315, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>INACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>3.9317</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:P00519</dd></dl>
+</dd><dt>call</dt><dd>INACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>3.9317</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/P00519/entry">UniProtKB:P00519</a></dd></dl>
 </details></td></tr>
-<tr><td>ABL1 kinase (ABL1-N-HiBiT) SDR gain of signal screen - plus ATP</td><td>OTHER 27.3014 uM; INACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1963316</summary><dl><dt>assay</dt><dd>ABL1 kinase (ABL1-N-HiBiT) SDR gain of signal screen - plus ATP</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1963316</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963316, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>ABL1 kinase (ABL1-N-HiBiT) SDR gain of signal screen - plus ATP</td><td>OTHER 27.3014 uM; INACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963316">pubchem.aid:1963316</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>ABL1 kinase (ABL1-N-HiBiT) SDR gain of signal screen - plus ATP</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963316">pubchem.aid:1963316</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963316, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>INACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>27.3014</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>ABL1 kinase (ABL1-N-HiBiT) SDR gain of signal screen - plus ATP</td><td>OTHER 27.3014 uM; INACTIVE</td><td class="mono">UniProtKB:P00519</td><td><details><summary>pubchem.aid:1963316</summary><dl><dt>assay</dt><dd>ABL1 kinase (ABL1-N-HiBiT) SDR gain of signal screen - plus ATP</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1963316</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963316, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>ABL1 kinase (ABL1-N-HiBiT) SDR gain of signal screen - plus ATP</td><td>OTHER 27.3014 uM; INACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/P00519/entry">UniProtKB:P00519</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963316">pubchem.aid:1963316</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>ABL1 kinase (ABL1-N-HiBiT) SDR gain of signal screen - plus ATP</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963316">pubchem.aid:1963316</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963316, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>INACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>27.3014</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:P00519</dd></dl>
+</dd><dt>call</dt><dd>INACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>27.3014</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/P00519/entry">UniProtKB:P00519</a></dd></dl>
 </details></td></tr>
-<tr><td>ABL1 kinase (ABL1-N-HiBiT) enzymatic inhibition screen - Functional assay</td><td>OTHER 34.3705 uM; INACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1963317</summary><dl><dt>assay</dt><dd>ABL1 kinase (ABL1-N-HiBiT) enzymatic inhibition screen - Functional assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1963317</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963317, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>ABL1 kinase (ABL1-N-HiBiT) enzymatic inhibition screen - Functional assay</td><td>OTHER 34.3705 uM; INACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963317">pubchem.aid:1963317</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>ABL1 kinase (ABL1-N-HiBiT) enzymatic inhibition screen - Functional assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963317">pubchem.aid:1963317</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963317, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>INACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>34.3705</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>ABL1 kinase (ABL1-N-HiBiT) enzymatic inhibition screen - Functional assay</td><td>OTHER 34.3705 uM; INACTIVE</td><td class="mono">UniProtKB:P00519</td><td><details><summary>pubchem.aid:1963317</summary><dl><dt>assay</dt><dd>ABL1 kinase (ABL1-N-HiBiT) enzymatic inhibition screen - Functional assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1963317</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963317, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>ABL1 kinase (ABL1-N-HiBiT) enzymatic inhibition screen - Functional assay</td><td>OTHER 34.3705 uM; INACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/P00519/entry">UniProtKB:P00519</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963317">pubchem.aid:1963317</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>ABL1 kinase (ABL1-N-HiBiT) enzymatic inhibition screen - Functional assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963317">pubchem.aid:1963317</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963317, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>INACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>34.3705</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:P00519</dd></dl>
+</dd><dt>call</dt><dd>INACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>34.3705</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/P00519/entry">UniProtKB:P00519</a></dd></dl>
 </details></td></tr>
-<tr><td>Acetylcholinesterase (AChE) small molecule antagonists: fluorescence cell-based qHTS assay</td><td>OTHER 15.5351 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1347398</summary><dl><dt>assay</dt><dd>Acetylcholinesterase (AChE) small molecule antagonists: fluorescence cell-based qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1347398</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347398, deposited by 824; assay type Confirmatory. Source endpoint: Potency. Target accession AAA68151 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Acetylcholinesterase (AChE) small molecule antagonists: fluorescence cell-based qHTS assay</td><td>OTHER 15.5351 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1347398">pubchem.aid:1347398</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Acetylcholinesterase (AChE) small molecule antagonists: fluorescence cell-based qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1347398">pubchem.aid:1347398</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347398, deposited by 824; assay type Confirmatory. Source endpoint: Potency. Target accession AAA68151 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>15.5351</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Adrenergic beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay: Summary</td><td>OTHER 30.6379 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2061107</summary><dl><dt>assay</dt><dd>Adrenergic beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay: Summary</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2061107</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2061107, deposited by 824; assay type Summary. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
+<tr><td>Adrenergic beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay: Summary</td><td>OTHER 30.6379 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2061107">pubchem.aid:2061107</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Adrenergic beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay: Summary</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2061107">pubchem.aid:2061107</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2061107, deposited by 824; assay type Summary. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>30.6379</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Adrenergic beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay: Summary</td><td>OTHER 30.6379 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2061107</summary><dl><dt>assay</dt><dd>Adrenergic beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay: Summary</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2061107</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2061107, deposited by 824; assay type Summary. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_000015 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Adrenergic beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay: Summary</td><td>OTHER 30.6379 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2061107">pubchem.aid:2061107</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Adrenergic beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay: Summary</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2061107">pubchem.aid:2061107</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2061107, deposited by 824; assay type Summary. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_000015 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>30.6379</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: AML-191 cell line</td><td>OTHER 16.6155 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202236</summary><dl><dt>assay</dt><dd>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: AML-191 cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202236</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202236, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: AML-191 cell line</td><td>OTHER 16.6155 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202236">pubchem.aid:2202236</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: AML-191 cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202236">pubchem.aid:2202236</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202236, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>16.6155</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: AML-194 cell line</td><td>OTHER 37.1975 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202237</summary><dl><dt>assay</dt><dd>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: AML-194 cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202237</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202237, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
+<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: AML-194 cell line</td><td>OTHER 37.1975 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202237">pubchem.aid:2202237</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: AML-194 cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202237">pubchem.aid:2202237</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202237, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>37.1975</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: HNT-34 cell line</td><td>OTHER 37.1975 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202234</summary><dl><dt>assay</dt><dd>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: HNT-34 cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202234</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202234, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
+<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: HNT-34 cell line</td><td>OTHER 37.1975 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202234">pubchem.aid:2202234</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: HNT-34 cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202234">pubchem.aid:2202234</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202234, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>37.1975</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: OCI-AML3 cell line</td><td>OTHER 9.3436 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202232</summary><dl><dt>assay</dt><dd>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: OCI-AML3 cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202232</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202232, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: OCI-AML3 cell line</td><td>OTHER 9.3436 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202232">pubchem.aid:2202232</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: OCI-AML3 cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202232">pubchem.aid:2202232</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202232, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>9.3436</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: SET-2 cell line</td><td>OTHER 20.9177 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202231</summary><dl><dt>assay</dt><dd>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: SET-2 cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202231</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202231, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
+<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: SET-2 cell line</td><td>OTHER 20.9177 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202231">pubchem.aid:2202231</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: SET-2 cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202231">pubchem.aid:2202231</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202231, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>20.9177</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Caspase-3/7 induction in CHO-K1 cells by small molecules, qHTS cell viability counter screen</td><td>OTHER 33.5937 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1346979</summary><dl><dt>assay</dt><dd>Caspase-3/7 induction in CHO-K1 cells by small molecules, qHTS cell viability counter screen</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1346979</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1346979, deposited by 824; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
+<tr><td>Caspase-3/7 induction in CHO-K1 cells by small molecules, qHTS cell viability counter screen</td><td>OTHER 33.5937 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1346979">pubchem.aid:1346979</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Caspase-3/7 induction in CHO-K1 cells by small molecules, qHTS cell viability counter screen</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1346979">pubchem.aid:1346979</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1346979, deposited by 824; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>33.5937</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Caspase-3/7 induction in CHO-K1 cells by small molecules, qHTS cell viability counter screen</td><td>OTHER 48.5577 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1346979</summary><dl><dt>assay</dt><dd>Caspase-3/7 induction in CHO-K1 cells by small molecules, qHTS cell viability counter screen</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1346979</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1346979, deposited by 824; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Caspase-3/7 induction in CHO-K1 cells by small molecules, qHTS cell viability counter screen</td><td>OTHER 48.5577 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1346979">pubchem.aid:1346979</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Caspase-3/7 induction in CHO-K1 cells by small molecules, qHTS cell viability counter screen</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1346979">pubchem.aid:1346979</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1346979, deposited by 824; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>48.5577</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Caspase-3/7 induction in HepG2 cells by small molecules, qHTS assay</td><td>OTHER 15.0057 uM; INACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1346978</summary><dl><dt>assay</dt><dd>Caspase-3/7 induction in HepG2 cells by small molecules, qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1346978</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1346978, deposited by 824; assay type Confirmatory. Source endpoint: Potency. Target accession AAP35329 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Caspase-3/7 induction in HepG2 cells by small molecules, qHTS assay</td><td>OTHER 15.0057 uM; INACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1346978">pubchem.aid:1346978</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Caspase-3/7 induction in HepG2 cells by small molecules, qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1346978">pubchem.aid:1346978</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1346978, deposited by 824; assay type Confirmatory. Source endpoint: Potency. Target accession AAP35329 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>INACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>15.0057</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Caspase-3/7 induction in HepG2 cells by small molecules, qHTS assay</td><td>OTHER 15.0057 uM; INACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1346978</summary><dl><dt>assay</dt><dd>Caspase-3/7 induction in HepG2 cells by small molecules, qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1346978</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1346978, deposited by 824; assay type Confirmatory. Source endpoint: Potency. Target accession CAC88866 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Caspase-3/7 induction in HepG2 cells by small molecules, qHTS assay</td><td>OTHER 15.0057 uM; INACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1346978">pubchem.aid:1346978</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Caspase-3/7 induction in HepG2 cells by small molecules, qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1346978">pubchem.aid:1346978</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1346978, deposited by 824; assay type Confirmatory. Source endpoint: Potency. Target accession CAC88866 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>INACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>15.0057</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Caspase-3/7 induction in HepG2 cells by small molecules, qHTS cell viability counter screen</td><td>OTHER 26.6844 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1346981</summary><dl><dt>assay</dt><dd>Caspase-3/7 induction in HepG2 cells by small molecules, qHTS cell viability counter screen</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1346981</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1346981, deposited by 824; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Caspase-3/7 induction in HepG2 cells by small molecules, qHTS cell viability counter screen</td><td>OTHER 26.6844 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1346981">pubchem.aid:1346981</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Caspase-3/7 induction in HepG2 cells by small molecules, qHTS cell viability counter screen</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1346981">pubchem.aid:1346981</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1346981, deposited by 824; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>26.6844</dd><dt>units</dt><dd>uM</dd><dt>notes</dt><dd>554 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but not written here.</dd></dl>
 </details></td></tr>
@@ -524,24 +526,39 @@ by the corpus tests.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=RHMXXJGYXNZAPX-UHFFFAOYSA-N">AntibioticMech (emodin) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=CHEBI%3A42223">MediaIngredientMech (CHEBI:42223) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A227321">TaxonMech: Aspergillus nidulans FGSC A4 (NCBITaxon:227321) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000101">PathwayMech (mibig:BGC0000101) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q=CHEBI%3A42223">MediaIngredientMech (CHEBI:42223) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A227321">TaxonMech: Aspergillus nidulans FGSC A4 (NCBITaxon:227321) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000101">PathwayMech (mibig:BGC0000101) &nearr;</a>
 </div>
 
 
+<h2 id="curation-history">Curation history <span class="tag">9</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-13T07:42:52Z">2026-10-13T07:42:52Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources<p>Seeded from the committed inventories and curation tables.</p></li>
+<li><time datetime="2026-10-07T14:29:16Z">2026-10-07T14:29:16Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added a separate four-node/three-edge PhoK database substrate-reduction graph, preserving the complete CK2, HpFabZ and PhoG graphs and all prior fields/history. Only reaction index 2/example 0 in pinned MITE0000161 version 2 consumes this exact emodin structure; every functional edge has its stable source URL. Grounded native Diaporthe SYSU-MS4722 PhoK to NCBIProtein:UPG58740.1: complete 798-nt reverse CDS 141..938 on OL450416.1, codon 1/default table 1, equals native annotation and independent GenPept, all 265 residues. Independent coded_by DNA/coordinates and strain/taxon 1756133 agree. Two bounded current UniProt searches returned no entries; no UniProtKB or UniParc example selected. Functional evidence remains database-level because the cited primary paper was inaccessible. One exact four-word GenPept snippet preserves the predicted status of its general domain annotation, not an inspected primary assay. The encoded C15H12O5 product is distinct from PhoG&#39;s C15H12O4 anthrone substrate; no reverse reaction, closed cycle or product equivalence is inferred. Product remains externally ungrounded. No other MITE reaction, cofactor binding, single-enzyme sufficiency, kinetics, physiological complex or historical stock/construct identity adopted. No retired BGC0003093 restoration or transfer to the distinct Aspergillus/BGC0000101 source. Preserved source grades, targets, activities, plant/fungal occurrences, stereochemistry, classifications, SEEDED status and all old history; not full-record sign-off.</p></li>
+<li><time datetime="2026-10-07T04:29:19Z">2026-10-07T04:29:19Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Corrected the newly added biosynthesis product node label to the canonical ChEBI label after local identifier-label validation. Exact structure, identifier, graph semantics, evidence, source fields, grades, status, earlier graphs and all prior curation events are unchanged.</p></li>
+<li><time datetime="2026-10-07T04:23:33Z">2026-10-07T04:23:33Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added PhoG biosynthesis context alongside preserved CK2/FabZ bioactivity graphs: four nodes and three MITE-database-asserted functional edges with stable URLs. Native Diaporthe SYSU-MS4722 reference NCBIProtein:UPG58736.1 is verified against the complete 525-nt/two-exon negative-strand CDS on OL450412.1, table1, independent GenPept and UniParc174aa. No current UniProtKB example selected. Pinned MITE product matches the complete owner structure; named emodin anthrone remains ungrounded. One exact six-word snippet retained. Primary experiments were inaccessible; no full transcript, historical construct/stock, membrane topology, complex, site, rate, assay condition, oxygen-donor or downstream-step claim adopted. No transfer to the owner&#39;s Aspergillus/BGC0000101 source or restoration of retired BGC0003093. Preserved old graphs/evidence, fields, grades, structure, occurrences, targets, SEEDED status and history. Not full-record sign-off.</p></li>
+<li><time datetime="2026-09-25T03:03:17Z">2026-09-25T03:03:17Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources<p>Seeded from the committed inventories in data/raw/.</p></li>
+<li><time datetime="2026-09-12T02:58:22Z">2026-09-12T02:58:22Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added a BIOACTIVITY causal graph for emodin inhibition of Helicobacter pylori FabZ, grounded the enzyme node to UniProtKB:Q5G940, and cited <a href="https://doi.org/10.1186/1471-2180-9-91">DOI:10.1186/1471-2180-9-91</a> plus <a href="https://doi.org/10.2210/pdb3ED0/pdb">DOI:10.2210/pdb3ED0/pdb</a> via the PubChem/RCSB PDB 3ED0 rows for <a href="https://pubmed.ncbi.nlm.nih.gov/19433000/">PMID 19433000</a>.</p></li>
+<li><time datetime="2026-09-11T08:05:51Z">2026-09-11T08:05:51Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added a BIOACTIVITY causal graph for emodin inhibition of maize and human casein kinase II alpha, grounded the enzyme nodes to UniProtKB:P28523 and UniProtKB:P68400, and cited <a href="https://doi.org/10.1074/jbc.m209367200">DOI:10.1074/jbc.m209367200</a> and <a href="https://doi.org/10.1042/bj20030674">DOI:10.1042/bj20030674</a> via exact BindingDB-deposited PubChem BioAssay rows for PMIDs 12419810 and 12816539.</p></li>
+<li><time datetime="2026-09-10T06:50:09Z">2026-09-10T06:50:09Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:12Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
+
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0000101</td><td>MIBIG</td><td>5</td></tr>
-<tr><td class="mono">CHEBI:42223</td><td>CHEBI</td><td>3-star</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000101">BGC0000101</a></td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_42223">CHEBI:42223</a></td><td>CHEBI</td><td>3-star</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/polyketides/emodin.yaml">data/natural_products/polyketides/emodin.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20CHEBI%3A42223&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Fpolyketides%2Femodin.html">Report a problem with this record</a>: opens a GitHub issue that names CHEBI:42223 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Corpus as of 2026-10-23 22:53 UTC. Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 8e5d64d98cfd). Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Alkaloids</a> &middot; swainsonine</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>swainsonine</h1>
-<p class="sub"><span class="mono">CHEBI:9367</span>
+<p class="sub"><span class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_9367">CHEBI:9367</a></span>
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 <span class="tag">enzyme inhibitor</span></p>
 <details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/alkaloids/swainsonine.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/alkaloids/swainsonine.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 <p>An indolizidine alkaloid isolated from the plant Swainsona canescens with three hydroxy substituents at positions 1, 2 and 8.</p>
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">FXUAIOOAOAVCGD-WCTZXXKLSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">C1C[C@H]([C@@H]2[C@@H]([C@@H](CN2C1)O)O)O</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">pubchem:51683</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/compound/51683">pubchem:51683</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Alkaloids</a> —
@@ -57,183 +59,183 @@ nrps, pks, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Metarhizium robertsii ARSEF 23<br><span class="mono">NCBITaxon:655844</span></td>
+  <td>Metarhizium robertsii ARSEF 23<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=655844">NCBITaxon:655844</a></span></td>
   <td><span class="tag causal">BGC_CHARACTERIZED</span></td>
-  <td class="mono">mibig:BGC0002270</td>
-  <td><span class="mono">PMID:32786262</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002270">mibig:BGC0002270</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/32786262/">PMID:32786262</a></span></td>
 </tr>
 <tr>
-  <td>Chaetothyriaceae sp.<br><span class="mono">NCBITaxon:1963369</span></td>
+  <td>Chaetothyriaceae sp.<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1963369">NCBITaxon:1963369</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0001793</td>
-  <td><span class="mono">DOI:10.7150/ijbs.3882</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001793">mibig:BGC0001793</a></td>
+  <td><span class="mono"><a href="https://doi.org/10.7150/ijbs.3882">DOI:10.7150/ijbs.3882</a></span></td>
 </tr>
 <tr>
-  <td>Alternaria oxytropis<br><span class="mono">NCBITaxon:570715</span></td>
+  <td>Alternaria oxytropis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=570715">NCBITaxon:570715</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0001794</td>
-  <td><span class="mono">PMID:28381497</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001794">mibig:BGC0001794</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/28381497/">PMID:28381497</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">25</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Slafractonia leguminicola<br><span class="mono">NCBITaxon:1541393</span></td>
+  <td>Slafractonia leguminicola<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1541393">NCBITaxon:1541393</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/S0040-4020(01)97625-2</td>
+  <td class="mono"><a href="https://doi.org/10.1016/S0040-4020%2801%2997625-2">DOI:10.1016/S0040-4020(01)97625-2</a></td>
 </tr>
 <tr>
-  <td>Slafractonia leguminicola<br><span class="mono">NCBITaxon:1541393</span></td>
+  <td>Slafractonia leguminicola<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1541393">NCBITaxon:1541393</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/JA00211A039</td>
+  <td class="mono"><a href="https://doi.org/10.1021/JA00211A039">DOI:10.1021/JA00211A039</a></td>
 </tr>
 <tr>
-  <td>Slafractonia leguminicola<br><span class="mono">NCBITaxon:1541393</span></td>
+  <td>Slafractonia leguminicola<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1541393">NCBITaxon:1541393</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/JO00390A024</td>
+  <td class="mono"><a href="https://doi.org/10.1021/JO00390A024">DOI:10.1021/JO00390A024</a></td>
 </tr>
 <tr>
-  <td>Slafractonia leguminicola<br><span class="mono">NCBITaxon:1541393</span></td>
+  <td>Slafractonia leguminicola<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1541393">NCBITaxon:1541393</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1128/AEM.48.2.386-388.1984</td>
+  <td class="mono"><a href="https://doi.org/10.1128/AEM.48.2.386-388.1984">DOI:10.1128/AEM.48.2.386-388.1984</a></td>
 </tr>
 <tr>
-  <td>Astragalus whitneyi<br><span class="mono">NCBITaxon:1769941</span></td>
+  <td>Astragalus whitneyi<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1769941">NCBITaxon:1769941</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1002/PCA.2800020307</td>
+  <td class="mono"><a href="https://doi.org/10.1002/PCA.2800020307">DOI:10.1002/PCA.2800020307</a></td>
 </tr>
 <tr>
-  <td>Oxytropis riparia<br><span class="mono">NCBITaxon:1938221</span></td>
+  <td>Oxytropis riparia<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1938221">NCBITaxon:1938221</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1002/PCA.2800020307</td>
+  <td class="mono"><a href="https://doi.org/10.1002/PCA.2800020307">DOI:10.1002/PCA.2800020307</a></td>
 </tr>
 <tr>
-  <td>Astragalus flavus<br><span class="mono">NCBITaxon:2014685</span></td>
+  <td>Astragalus flavus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2014685">NCBITaxon:2014685</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1002/PCA.2800020307</td>
+  <td class="mono"><a href="https://doi.org/10.1002/PCA.2800020307">DOI:10.1002/PCA.2800020307</a></td>
 </tr>
 <tr>
-  <td>Astragalus bisulcatus<br><span class="mono">NCBITaxon:20406</span></td>
+  <td>Astragalus bisulcatus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=20406">NCBITaxon:20406</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1002/PCA.2800020307</td>
+  <td class="mono"><a href="https://doi.org/10.1002/PCA.2800020307">DOI:10.1002/PCA.2800020307</a></td>
 </tr>
 <tr>
-  <td>Astragalus hallii<br><span class="mono">NCBITaxon:20413</span></td>
+  <td>Astragalus hallii<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=20413">NCBITaxon:20413</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1002/PCA.2800020307</td>
+  <td class="mono"><a href="https://doi.org/10.1002/PCA.2800020307">DOI:10.1002/PCA.2800020307</a></td>
 </tr>
 <tr>
-  <td>Astragalus lentiginosus<br><span class="mono">NCBITaxon:20416</span></td>
+  <td>Astragalus lentiginosus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=20416">NCBITaxon:20416</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1002/PCA.2800020307</td>
+  <td class="mono"><a href="https://doi.org/10.1002/PCA.2800020307">DOI:10.1002/PCA.2800020307</a></td>
 </tr>
 <tr>
-  <td>Astragalus lentiginosus<br><span class="mono">NCBITaxon:20416</span></td>
+  <td>Astragalus lentiginosus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=20416">NCBITaxon:20416</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1002/PCA.713</td>
+  <td class="mono"><a href="https://doi.org/10.1002/PCA.713">DOI:10.1002/PCA.713</a></td>
 </tr>
 <tr>
-  <td>Astragalus lentiginosus<br><span class="mono">NCBITaxon:20416</span></td>
+  <td>Astragalus lentiginosus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=20416">NCBITaxon:20416</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/BI00459A032</td>
+  <td class="mono"><a href="https://doi.org/10.1021/BI00459A032">DOI:10.1021/BI00459A032</a></td>
 </tr>
 <tr>
-  <td>Astragalus purshii<br><span class="mono">NCBITaxon:20422</span></td>
+  <td>Astragalus purshii<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=20422">NCBITaxon:20422</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1002/PCA.2800020307</td>
+  <td class="mono"><a href="https://doi.org/10.1002/PCA.2800020307">DOI:10.1002/PCA.2800020307</a></td>
 </tr>
 <tr>
-  <td>Oxytropis lambertii<br><span class="mono">NCBITaxon:20805</span></td>
+  <td>Oxytropis lambertii<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=20805">NCBITaxon:20805</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1002/PCA.2800020307</td>
+  <td class="mono"><a href="https://doi.org/10.1002/PCA.2800020307">DOI:10.1002/PCA.2800020307</a></td>
 </tr>
 <tr>
-  <td>Oxytropis lambertii<br><span class="mono">NCBITaxon:20805</span></td>
+  <td>Oxytropis lambertii<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=20805">NCBITaxon:20805</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/JF010596P</td>
+  <td class="mono"><a href="https://doi.org/10.1021/JF010596P">DOI:10.1021/JF010596P</a></td>
 </tr>
 <tr>
-  <td>Castanospermum australe<br><span class="mono">NCBITaxon:24962</span></td>
+  <td>Castanospermum australe<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=24962">NCBITaxon:24962</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/NP50069A011</td>
+  <td class="mono"><a href="https://doi.org/10.1021/NP50069A011">DOI:10.1021/NP50069A011</a></td>
 </tr>
 <tr>
-  <td>Ipomoea calobra<br><span class="mono">NCBITaxon:2607090</span></td>
+  <td>Ipomoea calobra<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2607090">NCBITaxon:2607090</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/NP50120A009</td>
+  <td class="mono"><a href="https://doi.org/10.1021/NP50120A009">DOI:10.1021/NP50120A009</a></td>
 </tr>
 <tr>
-  <td>Astragalus pycnostachyus<br><span class="mono">NCBITaxon:2897604</span></td>
+  <td>Astragalus pycnostachyus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2897604">NCBITaxon:2897604</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1002/PCA.2800020307</td>
+  <td class="mono"><a href="https://doi.org/10.1002/PCA.2800020307">DOI:10.1002/PCA.2800020307</a></td>
 </tr>
 <tr>
-  <td>Astragalus emoryanus<br><span class="mono">NCBITaxon:3084112</span></td>
+  <td>Astragalus emoryanus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3084112">NCBITaxon:3084112</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1002/PCA.2800020307</td>
+  <td class="mono"><a href="https://doi.org/10.1002/PCA.2800020307">DOI:10.1002/PCA.2800020307</a></td>
 </tr>
 <tr>
-  <td>Astragalus emoryanus<br><span class="mono">NCBITaxon:3084112</span></td>
+  <td>Astragalus emoryanus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3084112">NCBITaxon:3084112</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1104/PP.76.4.972</td>
+  <td class="mono"><a href="https://doi.org/10.1104/PP.76.4.972">DOI:10.1104/PP.76.4.972</a></td>
 </tr>
 <tr>
-  <td>Fabaceae<br><span class="mono">NCBITaxon:3803</span></td>
+  <td>Fabaceae<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3803">NCBITaxon:3803</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1002/PCA.2800020307</td>
+  <td class="mono"><a href="https://doi.org/10.1002/PCA.2800020307">DOI:10.1002/PCA.2800020307</a></td>
 </tr>
 <tr>
-  <td>Astragalus wootonii<br><span class="mono">NCBITaxon:457888</span></td>
+  <td>Astragalus wootonii<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=457888">NCBITaxon:457888</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1002/PCA.2800020307</td>
+  <td class="mono"><a href="https://doi.org/10.1002/PCA.2800020307">DOI:10.1002/PCA.2800020307</a></td>
 </tr>
 <tr>
-  <td>Astragalus falcatus<br><span class="mono">NCBITaxon:47038</span></td>
+  <td>Astragalus falcatus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=47038">NCBITaxon:47038</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1002/PCA.2800020307</td>
+  <td class="mono"><a href="https://doi.org/10.1002/PCA.2800020307">DOI:10.1002/PCA.2800020307</a></td>
 </tr>
 <tr>
-  <td>Oxytropis glabra<br><span class="mono">NCBITaxon:483874</span></td>
+  <td>Oxytropis glabra<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=483874">NCBITaxon:483874</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1002/PCA.2800020307</td>
+  <td class="mono"><a href="https://doi.org/10.1002/PCA.2800020307">DOI:10.1002/PCA.2800020307</a></td>
 </tr>
 <tr>
-  <td>Swainsona canescens<br><span class="mono">NCBITaxon:491199</span></td>
+  <td>Swainsona canescens<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=491199">NCBITaxon:491199</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/S0021-9258(18)32772-8</td>
+  <td class="mono"><a href="https://doi.org/10.1016/S0021-9258%2818%2932772-8">DOI:10.1016/S0021-9258(18)32772-8</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">3</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0002270</td>
-  <td>Metarhizium robertsii ARSEF 23<br><span class="mono">NCBITaxon:655844</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002270">mibig:BGC0002270</a></td>
+  <td>Metarhizium robertsii ARSEF 23<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=655844">NCBITaxon:655844</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:ADNJ02000001.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/ADNJ02000001.1">genbank:ADNJ02000001.1</a></td>
 </tr>
 <tr>
-  <td class="mono">mibig:BGC0001793</td>
-  <td>Chaetothyriaceae sp.<br><span class="mono">NCBITaxon:1963369</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001793">mibig:BGC0001793</a></td>
+  <td>Chaetothyriaceae sp.<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1963369">NCBITaxon:1963369</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:KY365740.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/KY365740.1">genbank:KY365740.1</a></td>
 </tr>
 <tr>
-  <td class="mono">mibig:BGC0001794</td>
-  <td>Alternaria oxytropis<br><span class="mono">NCBITaxon:570715</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001794">mibig:BGC0001794</a></td>
+  <td>Alternaria oxytropis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=570715">NCBITaxon:570715</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:KY365741.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/KY365741.1">genbank:KY365741.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -243,7 +245,7 @@ isolation report left it.</p>
 
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for swainsonine">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for swainsonine">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -276,14 +278,14 @@ isolation report left it.</p>
 </div>
 
 <h2>Causal graph &mdash; bioactivity <span class="tag">2 nodes, 1 edge</span></h2>
-<p class="sub">Swainsonine inhibits Drosophila Golgi alpha-mannosidase II.</p><div class="scroll"><table>
+<p class="sub">Swainsonine inhibits Drosophila Golgi alpha-mannosidase II.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>swainsonine</td>
   <td>inhibits</td>
   <td>Drosophila Golgi alpha-mannosidase II</td>
   <td>PubChem BioAssay AID 1799635 maps this exact Standard InChIKey to a 3 nM Ki measurement against Drosophila Golgi alpha-mannosidase II, and Q24451 resolves in UniProtKB to the D. melanogaster alpha-Man-IIa gene product.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1002/cbic.200900750</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1002/cbic.200900750</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Kuntz et al. characterized 5-substituted swainsonine analogue binding to the soluble catalytic domain of Drosophila GMII; the BindingDB-deposited PubChem assay reports swainsonine with Ki 0.003 uM.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1002/cbic.200900750">DOI:10.1002/cbic.200900750</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1002/cbic.200900750">DOI:10.1002/cbic.200900750</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Kuntz et al. characterized 5-substituted swainsonine analogue binding to the soluble catalytic domain of Drosophila GMII; the BindingDB-deposited PubChem assay reports swainsonine with Ki 0.003 uM.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -294,41 +296,41 @@ by the corpus tests.</p>
 
 <h2>Bioactivities <span class="tag">9</span></h2>
 <p class="sub">Entries preserve source qualifiers, targets and evidence. Repeated assay names or values are not independent replications; inspect source detail for differences.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Bioactivities"><table>
 <tr><th>Assay</th><th>Result</th><th>Target enzyme</th><th>Source detail</th></tr>
-<tr><td>Confirmatory qHTS for small molecule stabilizers of the endoplasmic reticulum resident proteome: Secreted ER Calcium Modulated Protein (SERCaMP) assay</td><td>OTHER 0.1 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>PMID:33910017</summary><dl><dt>assay</dt><dd>Confirmatory qHTS for small molecule stabilizers of the endoplasmic reticulum resident proteome: Secreted ER Calcium Modulated Protein (SERCaMP) assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:33910017</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1508628, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
+<tr><td>Confirmatory qHTS for small molecule stabilizers of the endoplasmic reticulum resident proteome: Secreted ER Calcium Modulated Protein (SERCaMP) assay</td><td>OTHER 0.1 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/33910017/">PMID:33910017</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Confirmatory qHTS for small molecule stabilizers of the endoplasmic reticulum resident proteome: Secreted ER Calcium Modulated Protein (SERCaMP) assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/33910017/">PMID:33910017</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1508628, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.1</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Confirmatory qHTS for small molecule stabilizers of the endoplasmic reticulum resident proteome: Secreted ER Calcium Modulated Protein (SERCaMP) assay</td><td>OTHER 31.6228 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>PMID:33910017</summary><dl><dt>assay</dt><dd>Confirmatory qHTS for small molecule stabilizers of the endoplasmic reticulum resident proteome: Secreted ER Calcium Modulated Protein (SERCaMP) assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:33910017</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1508628, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
+<tr><td>Confirmatory qHTS for small molecule stabilizers of the endoplasmic reticulum resident proteome: Secreted ER Calcium Modulated Protein (SERCaMP) assay</td><td>OTHER 31.6228 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/33910017/">PMID:33910017</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Confirmatory qHTS for small molecule stabilizers of the endoplasmic reticulum resident proteome: Secreted ER Calcium Modulated Protein (SERCaMP) assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/33910017/">PMID:33910017</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1508628, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>31.6228</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Experimentally measured binding affinity data (IC50) for protein-ligand complexes derived from PDB</td><td>IC50 0.02 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>PMID:11406577</summary><dl><dt>assay</dt><dd>Experimentally measured binding affinity data (IC50) for protein-ligand complexes derived from PDB</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:11406577</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 977608, deposited by Shanghai Institute of Organic Chemistry; assay type Other. Target accession 1HWW_A was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Experimentally measured binding affinity data (IC50) for protein-ligand complexes derived from PDB</td><td>IC50 0.02 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/11406577/">PMID:11406577</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Experimentally measured binding affinity data (IC50) for protein-ligand complexes derived from PDB</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/11406577/">PMID:11406577</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 977608, deposited by Shanghai Institute of Organic Chemistry; assay type Other. Target accession 1HWW_A was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>0.02</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>Golgi &amp;#945;-Mannosidase II (alpha-hGMII) and &amp;#945;-Mannosidase (alpha-hLM) Activity Assay from US Patent US20240190866: &#34;POLYHYDROXYLATED INDOLIZIDINE AND PYRROLIZIDINE DERIVATIVES AND USES THEREOF&#34;</td><td>IC50 0.08 uM; ACTIVE</td><td class="mono">UniProtKB:O00754</td><td><details><summary>pubchem.aid:1964041</summary><dl><dt>assay</dt><dd>Golgi &amp;#945;-Mannosidase II (alpha-hGMII) and &amp;#945;-Mannosidase (alpha-hLM) Activity Assay from US Patent US20240190866: &#34;POLYHYDROXYLATED INDOLIZIDINE AND PYRROLIZIDINE DERIVATIVES AND USES THEREOF&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1964041</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1964041, deposited by BindingDB; assay type Confirmatory.</dd></dl>
+<tr><td>Golgi &amp;#945;-Mannosidase II (alpha-hGMII) and &amp;#945;-Mannosidase (alpha-hLM) Activity Assay from US Patent US20240190866: &#34;POLYHYDROXYLATED INDOLIZIDINE AND PYRROLIZIDINE DERIVATIVES AND USES THEREOF&#34;</td><td>IC50 0.08 uM; ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/O00754/entry">UniProtKB:O00754</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1964041">pubchem.aid:1964041</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Golgi &amp;#945;-Mannosidase II (alpha-hGMII) and &amp;#945;-Mannosidase (alpha-hLM) Activity Assay from US Patent US20240190866: &#34;POLYHYDROXYLATED INDOLIZIDINE AND PYRROLIZIDINE DERIVATIVES AND USES THEREOF&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1964041">pubchem.aid:1964041</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1964041, deposited by BindingDB; assay type Confirmatory.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>0.08</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:O00754</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>0.08</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/O00754/entry">UniProtKB:O00754</a></dd></dl>
 </details></td></tr>
-<tr><td>Golgi &amp;#945;-Mannosidase II (alpha-hGMII) and &amp;#945;-Mannosidase (alpha-hLM) Activity Assay from US Patent US20240190866: &#34;POLYHYDROXYLATED INDOLIZIDINE AND PYRROLIZIDINE DERIVATIVES AND USES THEREOF&#34;</td><td>IC50 0.04 uM; ACTIVE</td><td class="mono">UniProtKB:Q16706</td><td><details><summary>pubchem.aid:1964041</summary><dl><dt>assay</dt><dd>Golgi &amp;#945;-Mannosidase II (alpha-hGMII) and &amp;#945;-Mannosidase (alpha-hLM) Activity Assay from US Patent US20240190866: &#34;POLYHYDROXYLATED INDOLIZIDINE AND PYRROLIZIDINE DERIVATIVES AND USES THEREOF&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1964041</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1964041, deposited by BindingDB; assay type Confirmatory.</dd></dl>
+<tr><td>Golgi &amp;#945;-Mannosidase II (alpha-hGMII) and &amp;#945;-Mannosidase (alpha-hLM) Activity Assay from US Patent US20240190866: &#34;POLYHYDROXYLATED INDOLIZIDINE AND PYRROLIZIDINE DERIVATIVES AND USES THEREOF&#34;</td><td>IC50 0.04 uM; ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/Q16706/entry">UniProtKB:Q16706</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1964041">pubchem.aid:1964041</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Golgi &amp;#945;-Mannosidase II (alpha-hGMII) and &amp;#945;-Mannosidase (alpha-hLM) Activity Assay from US Patent US20240190866: &#34;POLYHYDROXYLATED INDOLIZIDINE AND PYRROLIZIDINE DERIVATIVES AND USES THEREOF&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1964041">pubchem.aid:1964041</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1964041, deposited by BindingDB; assay type Confirmatory.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>0.04</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:Q16706</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>0.04</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q16706/entry">UniProtKB:Q16706</a></dd></dl>
 </details></td></tr>
-<tr><td>Inhibition Assay from Article 10.1002/cbic.200900750: &#34;Structural investigation of the binding of 5-substituted swainsonine analogues to Golgi alpha-mannosidase II.&#34;</td><td>KI 0.003 uM; ACTIVE</td><td class="mono">UniProtKB:Q24451</td><td><details><summary>PMID:20209559</summary><dl><dt>assay</dt><dd>Inhibition Assay from Article 10.1002/cbic.200900750: &#34;Structural investigation of the binding of 5-substituted swainsonine analogues to Golgi alpha-mannosidase II.&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:20209559</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1799635, deposited by BindingDB; assay type Confirmatory.</dd></dl>
+<tr><td>Inhibition Assay from Article <a href="https://doi.org/10.1002/cbic.200900750">10.1002/cbic.200900750</a>: &#34;Structural investigation of the binding of 5-substituted swainsonine analogues to Golgi alpha-mannosidase II.&#34;</td><td>KI 0.003 uM; ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/Q24451/entry">UniProtKB:Q24451</a></td><td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/20209559/">PMID:20209559</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Inhibition Assay from Article <a href="https://doi.org/10.1002/cbic.200900750">10.1002/cbic.200900750</a>: &#34;Structural investigation of the binding of 5-substituted swainsonine analogues to Golgi alpha-mannosidase II.&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/20209559/">PMID:20209559</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1799635, deposited by BindingDB; assay type Confirmatory.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>KI</dd><dt>value</dt><dd>0.003</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:Q24451</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>KI</dd><dt>value</dt><dd>0.003</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q24451/entry">UniProtKB:Q24451</a></dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>Primary qHTS for delayed death inhibitors of the malarial parasite plastid, 96 hour incubation</td><td>OTHER 9.5283 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:504834</summary><dl><dt>assay</dt><dd>Primary qHTS for delayed death inhibitors of the malarial parasite plastid, 96 hour incubation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:504834</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 504834, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Primary qHTS for delayed death inhibitors of the malarial parasite plastid, 96 hour incubation</td><td>OTHER 9.5283 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/504834">pubchem.aid:504834</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Primary qHTS for delayed death inhibitors of the malarial parasite plastid, 96 hour incubation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/504834">pubchem.aid:504834</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 504834, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>9.5283</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>qHTS assay for identifying genotoxic compounds that show differential cytotoxicity against isogenic chicken DT40 cell lines with known DNA damage response pathways - Rev3 mutant cell line</td><td>OTHER 26.6032 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:743014</summary><dl><dt>assay</dt><dd>qHTS assay for identifying genotoxic compounds that show differential cytotoxicity against isogenic chicken DT40 cell lines with known DNA damage response pathways - Rev3 mutant cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:743014</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 743014, deposited by 824; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
+<tr><td>qHTS assay for identifying genotoxic compounds that show differential cytotoxicity against isogenic chicken DT40 cell lines with known DNA damage response pathways - Rev3 mutant cell line</td><td>OTHER 26.6032 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/743014">pubchem.aid:743014</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>qHTS assay for identifying genotoxic compounds that show differential cytotoxicity against isogenic chicken DT40 cell lines with known DNA damage response pathways - Rev3 mutant cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/743014">pubchem.aid:743014</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 743014, deposited by 824; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>26.6032</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Experimentally measured binding affinity data derived from PDB</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>PMID:11406577</summary><dl><dt>assay</dt><dd>Experimentally measured binding affinity data derived from PDB</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:11406577</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1811, deposited by Shanghai Institute of Organic Chemistry; assay type Other. Target accession 1HWW_A was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Experimentally measured binding affinity data derived from PDB</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/11406577/">PMID:11406577</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Experimentally measured binding affinity data derived from PDB</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/11406577/">PMID:11406577</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1811, deposited by Shanghai Institute of Organic Chemistry; assay type Other. Target accession 1HWW_A was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
@@ -338,32 +340,43 @@ by the corpus tests.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=FXUAIOOAOAVCGD-WCTZXXKLSA-N">AntibioticMech (swainsonine) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=CHEBI%3A9367">MediaIngredientMech (CHEBI:9367) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A655844">TaxonMech: Metarhizium robertsii ARSEF 23 (NCBITaxon:655844) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A1963369">TaxonMech: Chaetothyriaceae sp. (NCBITaxon:1963369) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A570715">TaxonMech: Alternaria oxytropis (NCBITaxon:570715) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0002270">PathwayMech (mibig:BGC0002270) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0001793">PathwayMech (mibig:BGC0001793) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0001794">PathwayMech (mibig:BGC0001794) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q=CHEBI%3A9367">MediaIngredientMech (CHEBI:9367) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A655844">TaxonMech: Metarhizium robertsii ARSEF 23 (NCBITaxon:655844) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A1963369">TaxonMech: Chaetothyriaceae sp. (NCBITaxon:1963369) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A570715">TaxonMech: Alternaria oxytropis (NCBITaxon:570715) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0002270">PathwayMech (mibig:BGC0002270) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0001793">PathwayMech (mibig:BGC0001793) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0001794">PathwayMech (mibig:BGC0001794) &nearr;</a>
 </div>
 
 <h2>Open questions <span class="tag">1</span></h2>
-<div class="note"><p><strong>shared-structure</strong> — This structure is reported by more than one MIBiG entry: BGC0001793, BGC0001794, BGC0002270. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
+<div class="note"><p><strong>shared-structure</strong> <span class="tag">OPEN</span> <span class="tag">curation todo</span> — This structure is reported by more than one MIBiG entry: BGC0001793, BGC0001794, BGC0002270. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
+
+<h2 id="curation-history">Curation history <span class="tag">5</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-13T07:37:04Z">2026-10-13T07:37:04Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources<p>Seeded from the committed inventories and curation tables.</p></li>
+<li><time datetime="2026-09-25T03:01:58Z">2026-09-25T03:01:58Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources<p>Seeded from the committed inventories in data/raw/.</p></li>
+<li><time datetime="2026-09-11T06:29:16Z">2026-09-11T06:29:16Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added a BIOACTIVITY causal graph for swainsonine inhibition of Drosophila Golgi alpha-mannosidase II, grounded the enzyme node to UniProtKB:Q24451, and cited <a href="https://doi.org/10.1002/cbic.200900750">DOI:10.1002/cbic.200900750</a> via the BindingDB-deposited <a href="https://pubmed.ncbi.nlm.nih.gov/20209559/">PMID 20209559</a> measurement in PubChem BioAssay AID 1799635.</p></li>
+<li><time datetime="2026-09-10T06:49:42Z">2026-09-10T06:49:42Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:06Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
 
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0002270</td><td>MIBIG</td><td>2</td></tr>
-<tr><td class="mono">BGC0001793</td><td>MIBIG</td><td>4</td></tr>
-<tr><td class="mono">BGC0001794</td><td>MIBIG</td><td>4</td></tr>
-<tr><td class="mono">CHEBI:9367</td><td>CHEBI</td><td>3-star</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002270">BGC0002270</a></td><td>MIBIG</td><td>2</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001793">BGC0001793</a></td><td>MIBIG</td><td>4</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001794">BGC0001794</a></td><td>MIBIG</td><td>4</td></tr>
+<tr><td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_9367">CHEBI:9367</a></td><td>CHEBI</td><td>3-star</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/alkaloids/swainsonine.yaml">data/natural_products/alkaloids/swainsonine.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20CHEBI%3A9367&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Falkaloids%2Fswainsonine.html">Report a problem with this record</a>: opens a GitHub issue that names CHEBI:9367 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Corpus as of 2026-10-23 22:53 UTC. Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 8e5d64d98cfd). Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

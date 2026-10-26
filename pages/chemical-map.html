@@ -9,6 +9,7 @@
 <script src="theme-toggle.js"></script>
 <script defer src="chemical-map.js"></script></head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="chemical-map.html">Structure map</a>
     <a href="map.html">Corpus map</a>
     <a href="sequence-map.html">Sequence map</a>
-    <a href="index.html#downloads">Downloads &amp; Schema</a>
+    <a href="index.html#downloads">Downloads</a>
+    <a href="schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap map-page-wrap">
+<main class="wrap map-page-wrap" id="main-content" tabindex="-1">
 <section id="chemical-map" data-source="data/chemical-structure-map.json" data-identifiers="data/chemical-search.json">
   <h1>Chemical structure map</h1>
   <p class="lede">
@@ -75,6 +77,11 @@
     </aside>
 
     <div class="results-main">
+      <noscript>
+        <p class="meta"><strong>The structure map and its data table need JavaScript.</strong>
+        Every compound it shows is also reachable without it, from
+        <a href="browse.html">Browse</a> and the per-pathway pages.</p>
+      </noscript>
       <div id="map-status" class="map-status" role="status" aria-live="polite">
         Loading chemical map…
       </div>
@@ -104,6 +111,17 @@
           </div>
         </aside>
       </div>
+      <details class="map-table" id="map-table">
+        <summary>View data as table</summary>
+        <p class="meta" id="map-table-count"></p>
+        <div class="scroll" role="region" tabindex="0" aria-label="Compounds on the structure map">
+          <table>
+            <caption class="sub">Compounds on the structure map, as filtered by pathway</caption>
+            <thead><tr><th scope="col">Compound</th><th scope="col">Identifier</th><th scope="col">Filing pathway</th><th scope="col">Structure input</th><th scope="col">Fragments</th></tr></thead>
+            <tbody id="map-table-body"></tbody>
+          </table>
+        </div>
+      </details>
     </div>
   </div>
 
@@ -137,7 +155,7 @@
 </section>
 </main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Corpus as of 2026-10-23 22:53 UTC. Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 8e5d64d98cfd). Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Polyketides</a> &middot; erythromycin D</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>erythromycin D</h1>
-<p class="sub"><span class="mono">CHEBI:28331</span>
+<p class="sub"><span class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_28331">CHEBI:28331</a></span>
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 <span class="tag">antimicrobial unspecified</span></p>
 <details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/erythromycin-d.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/erythromycin-d.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">CLQUUOKNEOQBSW-KEGKUKQHSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">CC[C@@H]1[C@@H]([C@@H]([C@H](C(=O)[C@@H](C[C@@]([C@@H]([C@H]([C@@H]([C@H](C(=O)O1)C)O[C@H]2C[C@@]([C@H]([C@@H](O2)C)O)(C)O)C)O[C@H]3[C@@H]([C@H](C[C@H](O3)C)N(C)C)O)(C)O)C)C)O)C</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">pubchem:24755489</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/compound/24755489">pubchem:24755489</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Polyketides</a> —
@@ -57,27 +59,27 @@ pks, saccharide, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Saccharopolyspora erythraea NRRL 2338<br><span class="mono">NCBITaxon:405948</span></td>
+  <td>Saccharopolyspora erythraea NRRL 2338<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=405948">NCBITaxon:405948</a></span></td>
   <td><span class="tag causal">BGC_CHARACTERIZED</span></td>
-  <td class="mono">mibig:BGC0000055</td>
-  <td><span class="mono">PMID:11336289</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000055">mibig:BGC0000055</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/11336289/">PMID:11336289</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">0</span></h2>
 <p class="sub">None cited.</p>
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0000055</td>
-  <td>Saccharopolyspora erythraea NRRL 2338<br><span class="mono">NCBITaxon:405948</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000055">mibig:BGC0000055</a></td>
+  <td>Saccharopolyspora erythraea NRRL 2338<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=405948">NCBITaxon:405948</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:AM420293.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AM420293.1">genbank:AM420293.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -87,34 +89,34 @@ isolation report left it.</p>
 <h2>Biosynthesis <span class="tag causal">curated</span></h2>
 <p class="sub">Written by a curator with claim-level evidence on each step; not
 derived from a source. This is what the rest of the record exists to support.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthesis steps"><table>
 <tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
 <tr>
   <td>10</td>
-  <td>EryF 6-deoxyerythronolide B hydroxylase<br><span class="mono">UniProtKB:Q00441</span></td>
-  <td class="mono">RHEA:40299</td>
-  <td class="mono">CHEBI:16089 &rarr; CHEBI:27977</td>
-  <td class="mono">DOI:10.1128/jb.174.3.725-735.1992</td>
+  <td>EryF 6-deoxyerythronolide B hydroxylase<br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q00441/entry">UniProtKB:Q00441</a></span></td>
+  <td class="mono"><a href="https://www.rhea-db.org/rhea/40299">RHEA:40299</a></td>
+  <td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_16089">CHEBI:16089</a> &rarr; <a href="http://purl.obolibrary.org/obo/CHEBI_27977">CHEBI:27977</a></td>
+  <td class="mono"><a href="https://doi.org/10.1128/jb.174.3.725-735.1992">DOI:10.1128/jb.174.3.725-735.1992</a></td>
 </tr>
 <tr>
   <td>20</td>
-  <td>EryK erythromycin C-12 hydroxylase<br><span class="mono">UniProtKB:P48635</span></td>
-  <td class="mono">RHEA:32631</td>
-  <td class="mono">CHEBI:63677 &rarr; CHEBI:64258</td>
-  <td class="mono">DOI:10.1021/bi00006a006</td>
+  <td>EryK erythromycin C-12 hydroxylase<br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/P48635/entry">UniProtKB:P48635</a></span></td>
+  <td class="mono"><a href="https://www.rhea-db.org/rhea/32631">RHEA:32631</a></td>
+  <td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_63677">CHEBI:63677</a> &rarr; <a href="http://purl.obolibrary.org/obo/CHEBI_64258">CHEBI:64258</a></td>
+  <td class="mono"><a href="https://doi.org/10.1021/bi00006a006">DOI:10.1021/bi00006a006</a></td>
 </tr>
 <tr>
   <td>30</td>
-  <td>EryG erythromycin 3&#39;&#39;-O-methyltransferase<br><span class="mono">UniProtKB:A4F7P5</span></td>
-  <td class="mono">RHEA:32651</td>
-  <td class="mono">CHEBI:63677 &rarr; CHEBI:64279</td>
-  <td class="mono">DOI:10.1128/jb.172.5.2541-2546.1990</td>
+  <td>EryG erythromycin 3&#39;&#39;-O-methyltransferase<br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/A4F7P5/entry">UniProtKB:A4F7P5</a></span></td>
+  <td class="mono"><a href="https://www.rhea-db.org/rhea/32651">RHEA:32651</a></td>
+  <td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_63677">CHEBI:63677</a> &rarr; <a href="http://purl.obolibrary.org/obo/CHEBI_64279">CHEBI:64279</a></td>
+  <td class="mono"><a href="https://doi.org/10.1128/jb.172.5.2541-2546.1990">DOI:10.1128/jb.172.5.2541-2546.1990</a></td>
 </tr>
 </table></div>
 <p class="sub">Step 10: Partial tailoring view: EryF hydroxylates 6-deoxyerythronolide B to erythronolide B; uncurated glycosylation and deoxysugar steps between erythronolide B and erythromycin D are intentionally omitted.</p><p class="sub">Step 20: EryK hydroxylates erythromycin D to erythromycin C. The erythromycin B branch is excluded here because EryK does not accept erythromycin B efficiently.</p><p class="sub">Step 30: Saccharopolyspora erythraea NRRL 2338 SACE_0728 EryG O-methylates the 3&#39;&#39;-hydroxyl of the mycarose moiety of erythromycin D to form erythromycin B. RHEA:32651 uses protonated CHEBI:63677 erythromycin D(1+) and CHEBI:64279 erythromycin B(1+) as reaction participants corresponding to neutral records CHEBI:28331 and CHEBI:28196.</p>
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for erythromycin D">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for erythromycin D">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -147,14 +149,14 @@ derived from a source. This is what the rest of the record exists to support.</p
 </div>
 
 <h2>Causal graph &mdash; biosynthesis <span class="tag">8 nodes, 6 edges</span></h2>
-<p class="sub">Partial Saccharopolyspora erythraea NRRL 2338 BGC0000055 macrolide tailoring graph around erythromycin D (intermediate glycosylation steps between erythronolide B and erythromycin D intentionally omitted): upstream EryF 6-deoxyerythronolide B C-6 hydroxylation and branching downstream conversion of erythromycin D by EryK (to erythromycin C) and EryG (to erythromycin B).</p><div class="scroll"><table>
+<p class="sub">Partial Saccharopolyspora erythraea NRRL 2338 BGC0000055 macrolide tailoring graph around erythromycin D (intermediate glycosylation steps between erythronolide B and erythromycin D intentionally omitted): upstream EryF 6-deoxyerythronolide B C-6 hydroxylation and branching downstream conversion of erythromycin D by EryK (to erythromycin C) and EryG (to erythromycin B).</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>6-deoxyerythronolide B</td>
   <td>is hydroxylated by</td>
   <td>EryF 6-deoxyerythronolide B hydroxylase</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/jb.174.3.725-735.1992</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/jb.174.3.725-735.1992</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>EryF catalyzes RHEA:40299.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/jb.174.3.725-735.1992">DOI:10.1128/jb.174.3.725-735.1992</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/jb.174.3.725-735.1992">DOI:10.1128/jb.174.3.725-735.1992</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>EryF catalyzes RHEA:40299.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -163,7 +165,7 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>forms</td>
   <td>erythronolide B</td>
   <td>The full DEBS-to-glycosylated-macrolide route between erythronolide B and erythromycin D remains uncurated in this partial graph.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/jb.174.3.725-735.1992</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/jb.174.3.725-735.1992</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>EryF catalyzes RHEA:40299.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/jb.174.3.725-735.1992">DOI:10.1128/jb.174.3.725-735.1992</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/jb.174.3.725-735.1992">DOI:10.1128/jb.174.3.725-735.1992</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>EryF catalyzes RHEA:40299.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -172,7 +174,7 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>is hydroxylated by</td>
   <td>EryK erythromycin C-12 hydroxylase</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/bi00006a006</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/bi00006a006</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>EryK catalyzes RHEA:32631.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/bi00006a006">DOI:10.1021/bi00006a006</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/bi00006a006">DOI:10.1021/bi00006a006</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>EryK catalyzes RHEA:32631.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -181,7 +183,7 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>forms</td>
   <td>erythromycin C</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/bi00006a006</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/bi00006a006</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>EryK catalyzes RHEA:32631.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/bi00006a006">DOI:10.1021/bi00006a006</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/bi00006a006">DOI:10.1021/bi00006a006</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>EryK catalyzes RHEA:32631.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -190,11 +192,11 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>is O-methylated by</td>
   <td>EryG erythromycin 3&#39;&#39;-O-methyltransferase</td>
   <td>RHEA:32651 consumes S-adenosyl-L-methionine and erythromycin D(1+) along the EryG branch to erythromycin B.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/jb.172.5.2541-2546.1990<br>DOI:10.1021/bi00006a006<br>https://mibig.secondarymetabolites.org/repository/BGC0000055.5/BGC0000055.gbk<br>https://www.uniprot.org/uniprotkb/A4F7P5<br>https://www.rhea-db.org/rhea/32651</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/jb.172.5.2541-2546.1990</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>eryG codes for the structural gene of this enzyme</dd><dt>notes</dt><dd>Paulus et al. sequenced the Saccharopolyspora erythraea eryG region and showed in Escherichia coli that eryG encodes S-adenosylmethionine:erythromycin C/D O-methyltransferase converting erythromycin D to erythromycin B and erythromycin C to erythromycin A.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1021/bi00006a006</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>preference of the enzyme for ErD over the alternative C-12 hydroxylase substrate ErB</dd><dt>notes</dt><dd>Lambalot et al. characterized the branched late erythromycin pathway in Saccharopolyspora erythraea where erythromycin D is either C-12 hydroxylated by EryK to erythromycin C or 3&#39;&#39;-O-methylated by EryG to erythromycin B.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0000055.5/BGC0000055.gbk</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MIBiG BGC0000055.5 lists the Saccharopolyspora erythraea NRRL 2338 SACE_0730 eryF, SACE_0728 eryG, and SACE_0713 eryK tailoring genes for erythromycins A, B, C, and D.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A4F7P5</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>Reviewed UniProtKB:A4F7P5 is the Saccharopolyspora erythraea NRRL 2338 SACE_0728 eryG O-methyltransferase and annotates EC:2.1.1.254 with RHEA:32647 (erythromycin C to A) and RHEA:32651 (erythromycin D to B).</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.rhea-db.org/rhea/32651</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>RHEA:32651 is the EC:2.1.1.254 reaction S-adenosyl-L-methionine + erythromycin D(1+) = S-adenosyl-L-homocysteine + erythromycin B(1+) + H+.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/jb.172.5.2541-2546.1990">DOI:10.1128/jb.172.5.2541-2546.1990</a><br><a href="https://doi.org/10.1021/bi00006a006">DOI:10.1021/bi00006a006</a><br><a href="https://mibig.secondarymetabolites.org/repository/BGC0000055.5/BGC0000055.gbk">https://mibig.secondarymetabolites.org/repository/BGC0000055.5/BGC0000055.gbk</a><br><a href="https://www.uniprot.org/uniprotkb/A4F7P5">https://www.uniprot.org/uniprotkb/A4F7P5</a><br><a href="https://www.rhea-db.org/rhea/32651">https://www.rhea-db.org/rhea/32651</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/jb.172.5.2541-2546.1990">DOI:10.1128/jb.172.5.2541-2546.1990</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>eryG codes for the structural gene of this enzyme</dd><dt>notes</dt><dd>Paulus et al. sequenced the Saccharopolyspora erythraea eryG region and showed in Escherichia coli that eryG encodes S-adenosylmethionine:erythromycin C/D O-methyltransferase converting erythromycin D to erythromycin B and erythromycin C to erythromycin A.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/bi00006a006">DOI:10.1021/bi00006a006</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>preference of the enzyme for ErD over the alternative C-12 hydroxylase substrate ErB</dd><dt>notes</dt><dd>Lambalot et al. characterized the branched late erythromycin pathway in Saccharopolyspora erythraea where erythromycin D is either C-12 hydroxylated by EryK to erythromycin C or 3&#39;&#39;-O-methylated by EryG to erythromycin B.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/repository/BGC0000055.5/BGC0000055.gbk">https://mibig.secondarymetabolites.org/repository/BGC0000055.5/BGC0000055.gbk</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MIBiG BGC0000055.5 lists the Saccharopolyspora erythraea NRRL 2338 SACE_0730 eryF, SACE_0728 eryG, and SACE_0713 eryK tailoring genes for erythromycins A, B, C, and D.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A4F7P5">https://www.uniprot.org/uniprotkb/A4F7P5</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>Reviewed UniProtKB:A4F7P5 is the Saccharopolyspora erythraea NRRL 2338 SACE_0728 eryG O-methyltransferase and annotates EC:2.1.1.254 with RHEA:32647 (erythromycin C to A) and RHEA:32651 (erythromycin D to B).</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.rhea-db.org/rhea/32651">https://www.rhea-db.org/rhea/32651</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>RHEA:32651 is the EC:2.1.1.254 reaction S-adenosyl-L-methionine + erythromycin D(1+) = S-adenosyl-L-homocysteine + erythromycin B(1+) + H+.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -203,11 +205,11 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>forms</td>
   <td>erythromycin B(1+)</td>
   <td>RHEA:32651 produces CHEBI:64279 erythromycin B(1+), the protonated conjugate acid of sibling record CHEBI:28196 erythromycin B.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/jb.172.5.2541-2546.1990<br>DOI:10.1021/bi00006a006<br>https://mibig.secondarymetabolites.org/repository/BGC0000055.5/BGC0000055.gbk<br>https://www.uniprot.org/uniprotkb/A4F7P5<br>https://www.rhea-db.org/rhea/32651</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/jb.172.5.2541-2546.1990</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>eryG codes for the structural gene of this enzyme</dd><dt>notes</dt><dd>Paulus et al. sequenced the Saccharopolyspora erythraea eryG region and showed in Escherichia coli that eryG encodes S-adenosylmethionine:erythromycin C/D O-methyltransferase converting erythromycin D to erythromycin B and erythromycin C to erythromycin A.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1021/bi00006a006</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>preference of the enzyme for ErD over the alternative C-12 hydroxylase substrate ErB</dd><dt>notes</dt><dd>Lambalot et al. characterized the branched late erythromycin pathway in Saccharopolyspora erythraea where erythromycin D is either C-12 hydroxylated by EryK to erythromycin C or 3&#39;&#39;-O-methylated by EryG to erythromycin B.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0000055.5/BGC0000055.gbk</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MIBiG BGC0000055.5 lists the Saccharopolyspora erythraea NRRL 2338 SACE_0730 eryF, SACE_0728 eryG, and SACE_0713 eryK tailoring genes for erythromycins A, B, C, and D.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A4F7P5</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>Reviewed UniProtKB:A4F7P5 is the Saccharopolyspora erythraea NRRL 2338 SACE_0728 eryG O-methyltransferase and annotates EC:2.1.1.254 with RHEA:32647 (erythromycin C to A) and RHEA:32651 (erythromycin D to B).</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.rhea-db.org/rhea/32651</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>RHEA:32651 is the EC:2.1.1.254 reaction S-adenosyl-L-methionine + erythromycin D(1+) = S-adenosyl-L-homocysteine + erythromycin B(1+) + H+.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/jb.172.5.2541-2546.1990">DOI:10.1128/jb.172.5.2541-2546.1990</a><br><a href="https://doi.org/10.1021/bi00006a006">DOI:10.1021/bi00006a006</a><br><a href="https://mibig.secondarymetabolites.org/repository/BGC0000055.5/BGC0000055.gbk">https://mibig.secondarymetabolites.org/repository/BGC0000055.5/BGC0000055.gbk</a><br><a href="https://www.uniprot.org/uniprotkb/A4F7P5">https://www.uniprot.org/uniprotkb/A4F7P5</a><br><a href="https://www.rhea-db.org/rhea/32651">https://www.rhea-db.org/rhea/32651</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/jb.172.5.2541-2546.1990">DOI:10.1128/jb.172.5.2541-2546.1990</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>eryG codes for the structural gene of this enzyme</dd><dt>notes</dt><dd>Paulus et al. sequenced the Saccharopolyspora erythraea eryG region and showed in Escherichia coli that eryG encodes S-adenosylmethionine:erythromycin C/D O-methyltransferase converting erythromycin D to erythromycin B and erythromycin C to erythromycin A.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/bi00006a006">DOI:10.1021/bi00006a006</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>preference of the enzyme for ErD over the alternative C-12 hydroxylase substrate ErB</dd><dt>notes</dt><dd>Lambalot et al. characterized the branched late erythromycin pathway in Saccharopolyspora erythraea where erythromycin D is either C-12 hydroxylated by EryK to erythromycin C or 3&#39;&#39;-O-methylated by EryG to erythromycin B.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/repository/BGC0000055.5/BGC0000055.gbk">https://mibig.secondarymetabolites.org/repository/BGC0000055.5/BGC0000055.gbk</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MIBiG BGC0000055.5 lists the Saccharopolyspora erythraea NRRL 2338 SACE_0730 eryF, SACE_0728 eryG, and SACE_0713 eryK tailoring genes for erythromycins A, B, C, and D.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A4F7P5">https://www.uniprot.org/uniprotkb/A4F7P5</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>Reviewed UniProtKB:A4F7P5 is the Saccharopolyspora erythraea NRRL 2338 SACE_0728 eryG O-methyltransferase and annotates EC:2.1.1.254 with RHEA:32647 (erythromycin C to A) and RHEA:32651 (erythromycin D to B).</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.rhea-db.org/rhea/32651">https://www.rhea-db.org/rhea/32651</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>RHEA:32651 is the EC:2.1.1.254 reaction S-adenosyl-L-methionine + erythromycin D(1+) = S-adenosyl-L-homocysteine + erythromycin B(1+) + H+.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -218,30 +220,39 @@ by the corpus tests.</p>
 
 
 <h2>Elsewhere in the fleet</h2>
-<ul><li>AntibioticMech — <a class="mono" href="https://culturebotai.github.io/AntibioticMech/pages/antimicrobial_unspecified/erythromycin-d.html">CHEBI:28331</a>    (same structure, same inchikey)</li>
+<ul><li>AntibioticMech — <a class="mono" href="https://culturebotai.github.io/AntibioticMech/pages/unspecified/erythromycin-d.html">CHEBI:28331</a>    (same structure, same inchikey)</li>
 </ul>
 
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=CLQUUOKNEOQBSW-KEGKUKQHSA-N">AntibioticMech (erythromycin D) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=CHEBI%3A28331">MediaIngredientMech (CHEBI:28331) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A405948">TaxonMech: Saccharopolyspora erythraea NRRL 2338 (NCBITaxon:405948) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000055">PathwayMech (mibig:BGC0000055) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q=CHEBI%3A28331">MediaIngredientMech (CHEBI:28331) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A405948">TaxonMech: Saccharopolyspora erythraea NRRL 2338 (NCBITaxon:405948) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000055">PathwayMech (mibig:BGC0000055) &nearr;</a>
 </div>
 
 
+<h2 id="curation-history">Curation history <span class="tag">3</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-23T08:00:00Z">2026-10-23T08:00:00Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; antigravity <span class="tag">LLM-assisted</span><p>Added Saccharopolyspora erythraea NRRL 2338 BGC0000055 BIOSYNTHESIS pathway and causal graph to erythromycin D (CHEBI:28331) covering upstream EryF 6-deoxyerythronolide B hydroxylase (UniProtKB:Q00441, RHEA:40299) and downstream branching consumption of erythromycin D by EryK C-12 hydroxylase (UniProtKB:P48635, RHEA:32631) and EryG 3&#39;&#39;-O-methyltransferase (UniProtKB:A4F7P5, RHEA:32651).</p></li>
+<li><time datetime="2026-09-25T03:01:42Z">2026-09-25T03:01:42Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:04Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
+
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0000055</td><td>MIBIG</td><td>5</td></tr>
-<tr><td class="mono">CHEBI:28331</td><td>CHEBI</td><td>3-star</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000055">BGC0000055</a></td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_28331">CHEBI:28331</a></td><td>CHEBI</td><td>3-star</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/polyketides/erythromycin-d.yaml">data/natural_products/polyketides/erythromycin-d.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20CHEBI%3A28331&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Fpolyketides%2Ferythromycin-d.html">Report a problem with this record</a>: opens a GitHub issue that names CHEBI:28331 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Corpus as of 2026-10-23 22:53 UTC. Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 8e5d64d98cfd). Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

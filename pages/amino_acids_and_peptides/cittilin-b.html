@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Amino acids and peptides</a> &middot; cittilin B</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>cittilin B</h1>
-<p class="sub"><span class="mono">naturalproductmech:mibig-5cf4c39e1c</span>
+<p class="sub"><span class="mono"><a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/amino_acids_and_peptides/cittilin-b.yaml">naturalproductmech:mibig-5cf4c39e1c</a></span>
   <span class="tag">MINTED</span>
   <span class="tag">SEEDED</span>
 </p>
 <div class="note"><strong>Grounding review:</strong> No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.</div><details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/amino_acids_and_peptides/cittilin-b.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/amino_acids_and_peptides/cittilin-b.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">LRYMXYNLAMRRTH-CIWZQKDMSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">CC[C@H](C)[C@@H]1NC(=O)[C@@H](N)CC2=CC(=C(O)C=C2)C2=C(O)C3=CC(=C2)C[C@H](NC1=O)C(=O)N[C@H](C(=O)O)CC1=CC=C(C=C1)O3</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">npatlas:NPA032063</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://www.npatlas.org/explore/compounds/NPA032063">npatlas:NPA032063</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Amino acids and peptides</a> —
@@ -57,42 +59,42 @@ ribosomal, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Myxococcus xanthus DK 1622<br><span class="mono">NCBITaxon:246197</span></td>
+  <td>Myxococcus xanthus DK 1622<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=246197">NCBITaxon:246197</a></span></td>
   <td><span class="tag causal">BGC_CHARACTERIZED</span></td>
-  <td class="mono">mibig:BGC0002043</td>
-  <td><span class="mono">PMID:32639716</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002043">mibig:BGC0002043</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/32639716/">PMID:32639716</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">2</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Streptomyces<br><span class="mono">NCBITaxon:1883</span></td>
+  <td>Streptomyces<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1883">NCBITaxon:1883</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.7164/ANTIBIOTICS.51.512</td>
+  <td class="mono"><a href="https://doi.org/10.7164/ANTIBIOTICS.51.512">DOI:10.7164/ANTIBIOTICS.51.512</a></td>
 </tr>
 <tr>
-  <td>Myxococcus xanthus<br><span class="mono">NCBITaxon:34</span></td>
+  <td>Myxococcus xanthus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=34">NCBITaxon:34</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/ACSCHEMBIO.0C00430</td>
+  <td class="mono"><a href="https://doi.org/10.1021/ACSCHEMBIO.0C00430">DOI:10.1021/ACSCHEMBIO.0C00430</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0002043</td>
-  <td>Myxococcus xanthus DK 1622<br><span class="mono">NCBITaxon:246197</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002043">mibig:BGC0002043</a></td>
+  <td>Myxococcus xanthus DK 1622<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=246197">NCBITaxon:246197</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:MN731368.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/MN731368.1">genbank:MN731368.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -102,7 +104,7 @@ isolation report left it.</p>
 
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for cittilin B">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for cittilin B">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -135,17 +137,17 @@ isolation report left it.</p>
 </div>
 
 <h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 6 edges</span></h2>
-<p class="sub">MITE-narrated CitB precursor crosslinking followed by MxPep-mediated leader removal to yield the intermediate cittilin B. Separate database assertions, not a CitB-alone free-product assay. CitB and the unmodified precursor have sequence-verified native DK1622 references; the CitA alias is a curator mapping, not an assay-stock claim. MxPep and the modified precursor remain ungrounded. No primary assay, physical complex or pathway finality is inferred; not full-record sign-off.</p><div class="scroll"><table>
+<p class="sub">MITE-narrated CitB precursor crosslinking followed by MxPep-mediated leader removal to yield the intermediate cittilin B. Separate database assertions, not a CitB-alone free-product assay. CitB and the unmodified precursor have sequence-verified native DK1622 references; the CitA alias is a curator mapping, not an assay-stock claim. MxPep and the modified precursor remain ungrounded. No primary assay, physical complex or pathway finality is inferred; not full-record sign-off.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>CitB native DK1622 reference</td>
   <td>is_database_reported_catalyst_of</td>
   <td>MITE-reported CitB precursor crosslinking</td>
   <td>The assigned reaction is oxidative C-C and C-O crosslink formation in the precursor core. No native heme/iron occupancy, electron donor, binding site, kinetics, knockout phenotype or physical complex is inferred.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json<br>https://www.ncbi.nlm.nih.gov/protein/QLH55579.1<br>https://www.ncbi.nlm.nih.gov/nuccore/MN731368.1<br>https://www.uniprot.org/uniparc/UPI0002F6195D</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000426 version 1, active, names CitB/QLH55579.1, UniParc UPI0002F6195D and BGC0002043. Its narrative assigns precursor crosslinking to CitB and leader removal to MxPep. Assay and knockout codes remain database assertions; the cited primary paper was inaccessible. No independently inspected primary assay.</dd><dt>snippet</dt><dd>within the CitA precursor peptide</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/QLH55579.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Complete independent GenPept cytochrome P450 reference, 450 residues, Myxococcus xanthus DK1622/taxon246197; full coded_by inspected. Reference identity does not identify a historical assay stock or construct.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/MN731368.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Full1353-nt plus-strand CDS11483..12835, codon1/table11, translates exactly to annotation, independent QLH55579.1 and UniParc, all450aa. Independent coded_by DNA/coordinates and DK1622/taxon246197 source match. This verifies reference sequence identity, not catalytic activity.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniparc/UPI0002F6195D</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Retained450-residue archive has no active UniProtKB cross-reference. A0A7D5SGQ7 and A0AA46PCU6 are inactive, not selected as current UniProt examples. UniParc is not UniProtKB; this bounded archive result does not establish universal UniProt absence.</dd></dl>
+  <td><span class="mono"><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/QLH55579.1">https://www.ncbi.nlm.nih.gov/protein/QLH55579.1</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/MN731368.1">https://www.ncbi.nlm.nih.gov/nuccore/MN731368.1</a><br><a href="https://www.uniprot.org/uniparc/UPI0002F6195D">https://www.uniprot.org/uniparc/UPI0002F6195D</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000426 version 1, active, names CitB/QLH55579.1, UniParc UPI0002F6195D and BGC0002043. Its narrative assigns precursor crosslinking to CitB and leader removal to MxPep. Assay and knockout codes remain database assertions; the cited primary paper was inaccessible. No independently inspected primary assay.</dd><dt>snippet</dt><dd>within the CitA precursor peptide</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/QLH55579.1">https://www.ncbi.nlm.nih.gov/protein/QLH55579.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Complete independent GenPept cytochrome P450 reference, 450 residues, Myxococcus xanthus DK1622/taxon246197; full coded_by inspected. Reference identity does not identify a historical assay stock or construct.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/MN731368.1">https://www.ncbi.nlm.nih.gov/nuccore/MN731368.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Full1353-nt plus-strand CDS11483..12835, codon1/table11, translates exactly to annotation, independent QLH55579.1 and UniParc, all450aa. Independent coded_by DNA/coordinates and DK1622/taxon246197 source match. This verifies reference sequence identity, not catalytic activity.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniparc/UPI0002F6195D">https://www.uniprot.org/uniparc/UPI0002F6195D</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Retained450-residue archive has no active UniProtKB cross-reference. A0A7D5SGQ7 and A0AA46PCU6 are inactive, not selected as current UniProt examples. UniParc is not UniProtKB; this bounded archive result does not establish universal UniProt absence.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -154,10 +156,10 @@ isolation report left it.</p>
   <td>is_database_reported_substrate_of</td>
   <td>MITE-reported CitB precursor crosslinking</td>
   <td>The native unmodified27-aa reference MKKALYSLAVLMRFARADKLSAPYIYY contains the database-narrated YIYY core; it is not the free tetrapeptide or the modified precursor state. CitA alias assignment is curator-inferred, while function remains MITE&#39;s database assertion. No historical assay stock, construct or exact leader-cleavage site is established. The encoded free tetrapeptide example does not prove that leader-free substrate was assayed with CitB alone.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json<br>https://www.ncbi.nlm.nih.gov/protein/QLH55578.1<br>https://www.ncbi.nlm.nih.gov/nuccore/MN731368.1<br>https://www.uniprot.org/uniparc/UPI001751B65D</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000426 version 1, active, names CitB/QLH55579.1, UniParc UPI0002F6195D and BGC0002043. Its narrative assigns precursor crosslinking to CitB and leader removal to MxPep. Assay and knockout codes remain database assertions; the cited primary paper was inaccessible. No independently inspected primary assay.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/QLH55578.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>snippet</dt><dd>cittilin precursor peptide</dd><dt>notes</dt><dd>Complete27-aa native DK1622/taxon246197 reference. No native gene qualifier. Full coded_by inspected; sequence reference only, not an assay-stock or construct identity.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/MN731368.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Full84-nt plus-CDS11281..11364, codon1/table11, matches annotation, independent QLH55578.1 and UniParc, all27aa. Exact coded_by DNA/coordinates and DK1622/taxon246197 agree. CitA alias mapping uses the native cittilin-precursor annotation, same BGC0002043 and terminal YIYY core with MITE&#39;s narrative; not a native gene-name assertion or historical assay proof. MN731368.1 is a21261-bp BGC sequence, not a full genome.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniparc/UPI001751B65D</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Exact27-aa archive with active EMBL QLH55578 version1/taxon246197. All three listed UniProtKB references are inactive: A0A7D5NMR6, A0A7D5NMW3 and native-strain A0A7D5SLS4. None selected as current UniProt. Official accession QLH55578 and gene_exact:citA/organism_id:246197 searches returned zero results; bounded queries/archive only, not universal absence. UniParc is not UniProtKB.</dd></dl>
+  <td><span class="mono"><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/QLH55578.1">https://www.ncbi.nlm.nih.gov/protein/QLH55578.1</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/MN731368.1">https://www.ncbi.nlm.nih.gov/nuccore/MN731368.1</a><br><a href="https://www.uniprot.org/uniparc/UPI001751B65D">https://www.uniprot.org/uniparc/UPI001751B65D</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000426 version 1, active, names CitB/QLH55579.1, UniParc UPI0002F6195D and BGC0002043. Its narrative assigns precursor crosslinking to CitB and leader removal to MxPep. Assay and knockout codes remain database assertions; the cited primary paper was inaccessible. No independently inspected primary assay.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/QLH55578.1">https://www.ncbi.nlm.nih.gov/protein/QLH55578.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>snippet</dt><dd>cittilin precursor peptide</dd><dt>notes</dt><dd>Complete27-aa native DK1622/taxon246197 reference. No native gene qualifier. Full coded_by inspected; sequence reference only, not an assay-stock or construct identity.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/MN731368.1">https://www.ncbi.nlm.nih.gov/nuccore/MN731368.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Full84-nt plus-CDS11281..11364, codon1/table11, matches annotation, independent QLH55578.1 and UniParc, all27aa. Exact coded_by DNA/coordinates and DK1622/taxon246197 agree. CitA alias mapping uses the native cittilin-precursor annotation, same BGC0002043 and terminal YIYY core with MITE&#39;s narrative; not a native gene-name assertion or historical assay proof. MN731368.1 is a21261-bp BGC sequence, not a full genome.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniparc/UPI001751B65D">https://www.uniprot.org/uniparc/UPI001751B65D</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Exact27-aa archive with active EMBL QLH55578 version1/taxon246197. All three listed UniProtKB references are inactive: A0A7D5NMR6, A0A7D5NMW3 and native-strain A0A7D5SLS4. None selected as current UniProt. Official accession QLH55578 and gene_exact:citA/organism_id:246197 searches returned zero results; bounded queries/archive only, not universal absence. UniParc is not UniProtKB.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -166,7 +168,7 @@ isolation report left it.</p>
   <td>has_database_narrated_precursor_product</td>
   <td>Crosslinked CitA precursor, database narrative</td>
   <td>An ungrounded precursor state represents the database narrative before leader removal, not an independently isolated or chemically resolved intermediate. It is not identified with free cittilin B.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000426 version 1, active, names CitB/QLH55579.1, UniParc UPI0002F6195D and BGC0002043. Its narrative assigns precursor crosslinking to CitB and leader removal to MxPep. Assay and knockout codes remain database assertions; the cited primary paper was inaccessible. No independently inspected primary assay.</dd></dl>
+  <td><span class="mono"><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000426 version 1, active, names CitB/QLH55579.1, UniParc UPI0002F6195D and BGC0002043. Its narrative assigns precursor crosslinking to CitB and leader removal to MxPep. Assay and knockout codes remain database assertions; the cited primary paper was inaccessible. No independently inspected primary assay.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -175,7 +177,7 @@ isolation report left it.</p>
   <td>is_database_reported_catalyst_of</td>
   <td>MITE-reported MxPep leader removal</td>
   <td>MITE names MxPep for maturation but provides no MxPep accession in this entry. No arbitrary protease homolog, native strain mapping, exact cleavage site, construct, assay or physical association with CitB is adopted.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000426 version 1, active, names CitB/QLH55579.1, UniParc UPI0002F6195D and BGC0002043. Its narrative assigns precursor crosslinking to CitB and leader removal to MxPep. Assay and knockout codes remain database assertions; the cited primary paper was inaccessible. No independently inspected primary assay.</dd><dt>snippet</dt><dd>by removing the leader sequence</dd></dl>
+  <td><span class="mono"><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000426 version 1, active, names CitB/QLH55579.1, UniParc UPI0002F6195D and BGC0002043. Its narrative assigns precursor crosslinking to CitB and leader removal to MxPep. Assay and knockout codes remain database assertions; the cited primary paper was inaccessible. No independently inspected primary assay.</dd><dt>snippet</dt><dd>by removing the leader sequence</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -184,7 +186,7 @@ isolation report left it.</p>
   <td>is_database_narrated_substrate_of</td>
   <td>MITE-reported MxPep leader removal</td>
   <td>This order follows the source narrative, not genomic gene order or an independently inspected time-course. No additional processing step is inferred.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000426 version 1, active, names CitB/QLH55579.1, UniParc UPI0002F6195D and BGC0002043. Its narrative assigns precursor crosslinking to CitB and leader removal to MxPep. Assay and knockout codes remain database assertions; the cited primary paper was inaccessible. No independently inspected primary assay.</dd></dl>
+  <td><span class="mono"><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000426 version 1, active, names CitB/QLH55579.1, UniParc UPI0002F6195D and BGC0002043. Its narrative assigns precursor crosslinking to CitB and leader removal to MxPep. Assay and knockout codes remain database assertions; the cited primary paper was inaccessible. No independently inspected primary assay.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -193,7 +195,7 @@ isolation report left it.</p>
   <td>has_database_reported_product</td>
   <td>cittilin B</td>
   <td>MITE names cittilin B as an intermediate and encodes a product matching owner full key LRYMXYNLAMRRTH-CIWZQKDMSA-N and complete stereo in the pinned repository-helper/RDKit2026.03.5 screen. This supports product correspondence, not a CitB-only assay. Cittilin A, its separate CitC graph, all source fields, BGC_CHARACTERIZED/CLUSTER_DEMONSTRATED grades and occurrences are unchanged. No pathway finality or producer upgrade is inferred.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000426 version 1, active, names CitB/QLH55579.1, UniParc UPI0002F6195D and BGC0002043. Its narrative assigns precursor crosslinking to CitB and leader removal to MxPep. Assay and knockout codes remain database assertions; the cited primary paper was inaccessible. No independently inspected primary assay.</dd></dl>
+  <td><span class="mono"><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000426 version 1, active, names CitB/QLH55579.1, UniParc UPI0002F6195D and BGC0002043. Its narrative assigns precursor crosslinking to CitB and leader removal to MxPep. Assay and knockout codes remain database assertions; the cited primary paper was inaccessible. No independently inspected primary assay.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -201,18 +203,18 @@ isolation report left it.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
-<p class="sub">Substrate-owner context for MITE-reported CitC O-methylation of cittilin B to cittilin A. CitC is already represented on the product owner; this is not a new global protein or assay. Exact neutral compound forms match the database example. Native-reference identity does not establish experimental function. Existing CitB/MxPep maturation and CitA grounding are preserved separately; no physical assembly or cross-graph edge is inferred.</p><div class="scroll"><table>
+<p class="sub">Substrate-owner context for MITE-reported CitC O-methylation of cittilin B to cittilin A. CitC is already represented on the product owner; this is not a new global protein or assay. Exact neutral compound forms match the database example. Native-reference identity does not establish experimental function. Existing CitB/MxPep maturation and CitA grounding are preserved separately; no physical assembly or cross-graph edge is inferred.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 2 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>CitC native DK1622 reference</td>
   <td>is_database_reported_catalyst_of</td>
   <td>MITE-reported CitC O-methylation</td>
   <td>MITE supplies the functional attribution; reference translation establishes identity only. No primary assay, rate, knockout phenotype, native cofactor state, site or physical complex is adopted. Automated ubiquinone/mitochondrial family labels are not cittilin chemistry.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000425.json<br>https://www.uniprot.org/uniprotkb/Q1DEH3<br>https://www.uniprot.org/uniparc/UPI00004FDDBF<br>https://www.ncbi.nlm.nih.gov/protein/QLH55580.1<br>https://www.ncbi.nlm.nih.gov/nuccore/MN731368.1</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000425.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000425 version 1, active, identifies CitC, QLH55580.1/UniParc UPI00004FDDBF and BGC0002043, and assigns O-methylation of cittilin B to yield cittilin A. Its heterologous-expression and in-vitro codes are database assertions: the cited primary paper was inaccessible. No specific assay, kinetic or native cofactor claim is adopted.</dd><dt>snippet</dt><dd>CitC specifically methylates cittilin B</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q1DEH3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Current TrEMBL entry103, sequence1,204aa, MXAN_0682/taxon246197, predicted protein existence, no FUNCTION or catalytic-activity comment. The generic methyltransferase-domain name and automated keywords are not independent cittilin evidence. Entry cross-links CP000113/ABF85961.1, not directly MN731368/QLH55580.1; exact full sequence, strain and UniParc provide the mapping.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniparc/UPI00004FDDBF</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Retained full sequence archive links active Q1DEH3 and QLH55580 to the same204-residue DK1622 reference. Inactive UniProt entries and other-strain identical sequences are not selected as tested examples. UniParc is not a UniProtKB accession.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/QLH55580.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Complete independent GenPept methyltransferase record and coded_by inspected:204aa, M.xanthus DK1622/taxon246197; no named CitC gene qualifier is required to replace the exact protein mapping.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/MN731368.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Complete615-nt plus-strand CDS12819..13433, codon1/table11, translates exactly to annotation, independent QLH55580.1, UniParc and current Q1DEH3, all204aa. Independent coded_by DNA/coordinates and genomic/source strain DK1622/taxon246197 match. No separate ABF85961.1/CP000113 native-CDS check or historical assay-stock/construct identity is claimed.</dd></dl>
+  <td><span class="mono"><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000425.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000425.json</a><br><a href="https://www.uniprot.org/uniprotkb/Q1DEH3">https://www.uniprot.org/uniprotkb/Q1DEH3</a><br><a href="https://www.uniprot.org/uniparc/UPI00004FDDBF">https://www.uniprot.org/uniparc/UPI00004FDDBF</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/QLH55580.1">https://www.ncbi.nlm.nih.gov/protein/QLH55580.1</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/MN731368.1">https://www.ncbi.nlm.nih.gov/nuccore/MN731368.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000425.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000425.json</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000425 version 1, active, identifies CitC, QLH55580.1/UniParc UPI00004FDDBF and BGC0002043, and assigns O-methylation of cittilin B to yield cittilin A. Its heterologous-expression and in-vitro codes are database assertions: the cited primary paper was inaccessible. No specific assay, kinetic or native cofactor claim is adopted.</dd><dt>snippet</dt><dd>CitC specifically methylates cittilin B</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q1DEH3">https://www.uniprot.org/uniprotkb/Q1DEH3</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Current TrEMBL entry103, sequence1,204aa, MXAN_0682/taxon246197, predicted protein existence, no FUNCTION or catalytic-activity comment. The generic methyltransferase-domain name and automated keywords are not independent cittilin evidence. Entry cross-links CP000113/ABF85961.1, not directly MN731368/QLH55580.1; exact full sequence, strain and UniParc provide the mapping.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniparc/UPI00004FDDBF">https://www.uniprot.org/uniparc/UPI00004FDDBF</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Retained full sequence archive links active Q1DEH3 and QLH55580 to the same204-residue DK1622 reference. Inactive UniProt entries and other-strain identical sequences are not selected as tested examples. UniParc is not a UniProtKB accession.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/QLH55580.1">https://www.ncbi.nlm.nih.gov/protein/QLH55580.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Complete independent GenPept methyltransferase record and coded_by inspected:204aa, M.xanthus DK1622/taxon246197; no named CitC gene qualifier is required to replace the exact protein mapping.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/MN731368.1">https://www.ncbi.nlm.nih.gov/nuccore/MN731368.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Complete615-nt plus-strand CDS12819..13433, codon1/table11, translates exactly to annotation, independent QLH55580.1, UniParc and current Q1DEH3, all204aa. Independent coded_by DNA/coordinates and genomic/source strain DK1622/taxon246197 match. No separate ABF85961.1/CP000113 native-CDS check or historical assay-stock/construct identity is claimed.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -221,7 +223,7 @@ by the corpus tests.</p>
   <td>is_database_reported_substrate_of</td>
   <td>MITE-reported CitC O-methylation</td>
   <td>Pinned MITE substrate matches this cittilin B owner&#39;s full InChIKey LRYMXYNLAMRRTH-CIWZQKDMSA-N and complete stereo in the verified repository-helper/RDKit2026.03.5 calculation. This is the exact neutral substrate, not the CitA precursor or a different congener. The existing CitB/MxPep maturation graph and its CitA grounding are unchanged.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000425.json</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000425.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000425 version 1, active, identifies CitC, QLH55580.1/UniParc UPI00004FDDBF and BGC0002043, and assigns O-methylation of cittilin B to yield cittilin A. Its heterologous-expression and in-vitro codes are database assertions: the cited primary paper was inaccessible. No specific assay, kinetic or native cofactor claim is adopted.</dd></dl>
+  <td><span class="mono"><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000425.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000425.json</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000425.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000425.json</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000425 version 1, active, identifies CitC, QLH55580.1/UniParc UPI00004FDDBF and BGC0002043, and assigns O-methylation of cittilin B to yield cittilin A. Its heterologous-expression and in-vitro codes are database assertions: the cited primary paper was inaccessible. No specific assay, kinetic or native cofactor claim is adopted.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -230,7 +232,7 @@ by the corpus tests.</p>
   <td>has_database_reported_product</td>
   <td>cittilin A</td>
   <td>Pinned MITE product matches the separate cittilin A owner&#39;s full InChIKey WKYLONYSKYXJSJ-UJGPGMDKSA-N and complete stereo in the verified repository-helper/RDKit2026.03.5 calculation. That owner and its CitC graph remain unchanged. No pathway finality, primary assay or producer upgrade; existing source grades are preserved.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000425.json</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000425.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000425 version 1, active, identifies CitC, QLH55580.1/UniParc UPI00004FDDBF and BGC0002043, and assigns O-methylation of cittilin B to yield cittilin A. Its heterologous-expression and in-vitro codes are database assertions: the cited primary paper was inaccessible. No specific assay, kinetic or native cofactor claim is adopted.</dd></dl>
+  <td><span class="mono"><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000425.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000425.json</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000425.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000425.json</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000425 version 1, active, identifies CitC, QLH55580.1/UniParc UPI00004FDDBF and BGC0002043, and assigns O-methylation of cittilin B to yield cittilin A. Its heterologous-expression and in-vitro codes are database assertions: the cited primary paper was inaccessible. No specific assay, kinetic or native cofactor claim is adopted.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -244,23 +246,33 @@ by the corpus tests.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=LRYMXYNLAMRRTH-CIWZQKDMSA-N">AntibioticMech (cittilin B) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=naturalproductmech%3Amibig-5cf4c39e1c">MediaIngredientMech (naturalproductmech:mibig-5cf4c39e1c) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A246197">TaxonMech: Myxococcus xanthus DK 1622 (NCBITaxon:246197) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0002043">PathwayMech (mibig:BGC0002043) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A246197">TaxonMech: Myxococcus xanthus DK 1622 (NCBITaxon:246197) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0002043">PathwayMech (mibig:BGC0002043) &nearr;</a>
 </div>
 
 
+<h2 id="curation-history">Curation history <span class="tag">5</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-07T13:37:43Z">2026-10-07T13:37:43Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added a separate four-node/three-edge BIOSYNTHESIS substrate context for MITE-reported CitC O-methylation of exact neutral cittilin B to cittilin A. CitC UniProtKB:Q1DEH3 is already represented on the product owner; this adds an owner context, not a globally new protein or assay. Complete native615-nt table11 CDS, independent QLH55580.1, UniParcUPI00004FDDBF and current TrEMBL agree at all204aa, coded_by and DK1622/taxon246197. Current UniProt has predicted existence/no FUNCTION and an alternate genome crosslink; sequence/strain/UniParc ground identity, not compound-specific function. Both substrate/product full InChI, keys and complete stereo match the pinned MITE0000425v1 example through repository helper/RDKit2026.03.5. Every edge has a stable MITE URL, with one exact five-word snippet and independent identity URLs on the protein edge. Primary paper remains inaccessible; no new paper access, primary assay, native cofactor, rate, site, physical complex, historical construct or pathway-finality claim. Preserved the complete existing CitB/MxPep graph including the newly merged CitA reference/qualifications, all prior history, source fields/grades, occurrences, structure, classification and SEEDED status. The separate cittilin A owner and its CitC graph remain unchanged. No full-record sign-off.</p></li>
+<li><time datetime="2026-10-07T11:32:11Z">2026-10-07T11:32:11Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Grounded the existing unmodified CitA precursor node to the native DK1622 reference NCBIProtein:QLH55578.1 without adding nodes or edges. Complete84-nt plus-CDS11281..11364 on MN731368.1, codon1/table11, equals annotation, independent GenPept and UniParc UPI001751B65D, all27aa; coded_by DNA/coordinates and strain/taxon246197 agree. The CitA alias is a curator mapping from the native cittilin-precursor annotation, same named BGC and terminal YIYY core to MITE0000426&#39;s narrative, not a native gene qualifier or historical assay-stock proof. All three archive UniProt references are inactive; no current UniProt example selected. Added stable sequence URLs and one exact three-word annotation snippet on the existing substrate edge. Updated only the graph description, precursor node and its edge evidence/limitations. MxPep and the modified precursor remain ungrounded; no cleavage-site, free-core assay, construct, primary assay or physical complex adopted. Primary paper inaccessible. Preserved other nodes, edge predicates/direction/evidence, source fields/grades, occurrences, SEEDED status and append-only history; no product/finality upgrade or full-record sign-off.</p></li>
+<li><time datetime="2026-10-07T08:24:11Z">2026-10-07T08:24:11Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added a MITE-database-asserted CitB/MxPep maturation context: seven nodes, six qualified edges with stable URLs and two exact snippets totaling ten words. CitB NCBIProtein:QLH55579.1 is the native DK1622/taxon246197 reference, verified by full1353-nt/table11 CDS11483..12835 on MN731368.1, independent GenPept and UniParc UPI0002F6195D, all450aa; coded_by DNA and coordinates match. Retained UniParc has no active UniProtKB candidate; inactive entries are not selected. Separate database-narrated precursor crosslinking and MxPep leader removal; MxPep and precursor states remain ungrounded. No CitB-only free-product assay or leader-free substrate assay inferred from the encoded core example. Exact product full key and complete stereo match cittilin B, explicitly an intermediate. The primary paper was inaccessible. No historical assay stock, construct, native cofactor state, electron donor, cleavage site, kinetics, knockout phenotype, physical complex, extra processing step or pathway finality is adopted. Preserved all source fields, BGC_CHARACTERIZED/CLUSTER_DEMONSTRATED grades, both occurrences, SEEDED status and append-only history. The separate cittilin A owner and CitC graph are unchanged. Not full-record sign-off.</p></li>
+<li><time datetime="2026-09-25T03:02:41Z">2026-09-25T03:02:41Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:09Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
+
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0002043</td><td>MIBIG</td><td>3</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002043">BGC0002043</a></td><td>MIBIG</td><td>3</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/amino_acids_and_peptides/cittilin-b.yaml">data/natural_products/amino_acids_and_peptides/cittilin-b.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20naturalproductmech%3Amibig-5cf4c39e1c&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Famino_acids_and_peptides%2Fcittilin-b.html">Report a problem with this record</a>: opens a GitHub issue that names naturalproductmech:mibig-5cf4c39e1c and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Corpus as of 2026-10-23 22:53 UTC. Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 8e5d64d98cfd). Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

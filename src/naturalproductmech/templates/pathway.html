@@ -43,7 +43,7 @@ filed under this pathway. {{ pathway.blurb }}</p>
   </aside>
   <div class="results-main">
     <p id="pathway-status" class="sub" role="status" aria-live="polite"></p>
-    <div class="scroll"><table>
+    <div class="scroll" role="region" tabindex="0" aria-label="{{ pathway.title }} compounds"><table>
     <tr><th>Compound</th><th>Identity</th><th>Producers</th><th>Occurrences</th><th>Gene clusters</th></tr>
     {% for record in pathway.records %}
     <tr class="pathway-row"

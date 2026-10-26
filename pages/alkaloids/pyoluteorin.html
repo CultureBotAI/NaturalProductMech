@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Alkaloids</a> &middot; pyoluteorin</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>pyoluteorin</h1>
-<p class="sub"><span class="mono">CHEBI:156453</span>
+<p class="sub"><span class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_156453">CHEBI:156453</a></span>
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 <span class="tag">antibacterial</span></p>
 <details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/alkaloids/pyoluteorin.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/alkaloids/pyoluteorin.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 <p>A member of the class of resorcinols that is resorcinol in which the hydrogen at position 2 is replaced by a 4,5-dichloro-1H-pyrrole-2-carbonyl group. It is a natural product found in Pseudomonas fluorescens which exhibits antibacterial properties and is a strong inducer of caspase-3-dependent apoptosis.</p>
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">JPGWTZORMBTNMF-UHFFFAOYSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">OC1=CC=CC(O)=C1C(=O)C1=CC(Cl)=C(Cl)N1</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">npatlas:NPA02175, pubchem:33137</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://www.npatlas.org/explore/compounds/NPA02175">npatlas:NPA02175</a>, <a href="https://pubchem.ncbi.nlm.nih.gov/compound/33137">pubchem:33137</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Alkaloids</a> —
@@ -57,90 +59,90 @@ pks, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Pseudomonas protegens Pf-5<br><span class="mono">NCBITaxon:220664</span></td>
+  <td>Pseudomonas protegens Pf-5<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=220664">NCBITaxon:220664</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0000127</td>
-  <td><span class="mono">PMID:9434161</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000127">mibig:BGC0000127</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/9434161/">PMID:9434161</a></span></td>
 </tr>
 <tr>
-  <td>Pseudomonas sp. M18<br><span class="mono">NCBITaxon:228095</span></td>
+  <td>Pseudomonas sp. M18<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=228095">NCBITaxon:228095</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0000128</td>
-  <td><span class="mono">PMID:15033239</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000128">mibig:BGC0000128</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/15033239/">PMID:15033239</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">9</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Pseudomonas fluorescens PF5<br><span class="mono">NCBITaxon:1218948</span></td>
+  <td>Pseudomonas fluorescens PF5<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1218948">NCBITaxon:1218948</a></span></td>
   <td>CHEBI</td>
-  <td class="mono">PMID:16269724</td>
+  <td class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/16269724/">PMID:16269724</a></td>
 </tr>
 <tr>
-  <td>Pseudomonas<br><span class="mono">NCBITaxon:286</span></td>
+  <td>Pseudomonas<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=286">NCBITaxon:286</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/S0378-1097(04)00074-6</td>
+  <td class="mono"><a href="https://doi.org/10.1016/S0378-1097%2804%2900074-6">DOI:10.1016/S0378-1097(04)00074-6</a></td>
 </tr>
 <tr>
-  <td>Pseudomonas aeruginosa<br><span class="mono">NCBITaxon:287</span></td>
+  <td>Pseudomonas aeruginosa<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=287">NCBITaxon:287</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/JA01550A093</td>
+  <td class="mono"><a href="https://doi.org/10.1021/JA01550A093">DOI:10.1021/JA01550A093</a></td>
 </tr>
 <tr>
-  <td>Pseudomonas aeruginosa<br><span class="mono">NCBITaxon:287</span></td>
+  <td>Pseudomonas aeruginosa<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=287">NCBITaxon:287</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1080/00021369.1978.10863304</td>
+  <td class="mono"><a href="https://doi.org/10.1080/00021369.1978.10863304">DOI:10.1080/00021369.1978.10863304</a></td>
 </tr>
 <tr>
-  <td>Pseudomonas aeruginosa<br><span class="mono">NCBITaxon:287</span></td>
+  <td>Pseudomonas aeruginosa<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=287">NCBITaxon:287</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1271/BBB1961.42.2031</td>
+  <td class="mono"><a href="https://doi.org/10.1271/BBB1961.42.2031">DOI:10.1271/BBB1961.42.2031</a></td>
 </tr>
 <tr>
-  <td>Pseudomonas fluorescens<br><span class="mono">NCBITaxon:294</span></td>
+  <td>Pseudomonas fluorescens<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=294">NCBITaxon:294</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/S0031-9422(01)00344-2</td>
+  <td class="mono"><a href="https://doi.org/10.1016/S0031-9422%2801%2900344-2">DOI:10.1016/S0031-9422(01)00344-2</a></td>
 </tr>
 <tr>
-  <td>Pseudomonas fluorescens<br><span class="mono">NCBITaxon:294</span></td>
+  <td>Pseudomonas fluorescens<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=294">NCBITaxon:294</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/NP50111A002</td>
+  <td class="mono"><a href="https://doi.org/10.1021/NP50111A002">DOI:10.1021/NP50111A002</a></td>
 </tr>
 <tr>
-  <td>Pseudomonas fluorescens<br><span class="mono">NCBITaxon:294</span></td>
+  <td>Pseudomonas fluorescens<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=294">NCBITaxon:294</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1515/ZNC-1986-5-607</td>
+  <td class="mono"><a href="https://doi.org/10.1515/ZNC-1986-5-607">DOI:10.1515/ZNC-1986-5-607</a></td>
 </tr>
 <tr>
-  <td>Pseudomonas sp. M18<br><span class="mono">NCBITaxon:228095</span></td>
+  <td>Pseudomonas sp. M18<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=228095">NCBITaxon:228095</a></span></td>
   <td>CHEBI</td>
-  <td class="mono">PMID:15033239</td>
+  <td class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/15033239/">PMID:15033239</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">2</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0000127</td>
-  <td>Pseudomonas protegens Pf-5<br><span class="mono">NCBITaxon:220664</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000127">mibig:BGC0000127</a></td>
+  <td>Pseudomonas protegens Pf-5<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=220664">NCBITaxon:220664</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:AF081920.3</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3">genbank:AF081920.3</a></td>
 </tr>
 <tr>
-  <td class="mono">mibig:BGC0000128</td>
-  <td>Pseudomonas sp. M18<br><span class="mono">NCBITaxon:228095</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000128">mibig:BGC0000128</a></td>
+  <td>Pseudomonas sp. M18<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=228095">NCBITaxon:228095</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:AY394844.4</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AY394844.4">genbank:AY394844.4</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -150,7 +152,7 @@ isolation report left it.</p>
 
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for pyoluteorin">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for pyoluteorin">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -183,16 +185,16 @@ isolation report left it.</p>
 </div>
 
 <h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 7 edges</span></h2>
-<p class="sub">Native pyoluteorin-pathway protein references and engineered participants in the deposited 6O6E inhibitor-trapped assembly. Current model3.2, not an unmodified native complex, full assay stock, physiological stoichiometry, kinetic measurement or complete pyoluteorin synthesis. No antimicrobial-target assertion or source-producer upgrade. Associated paper/SI unread; evidence here is the independently inspected structural dataset and native sequence records. Not full-record sign-off.</p><div class="scroll"><table>
+<p class="sub">Native pyoluteorin-pathway protein references and engineered participants in the deposited 6O6E inhibitor-trapped assembly. Current model3.2, not an unmodified native complex, full assay stock, physiological stoichiometry, kinetic measurement or complete pyoluteorin synthesis. No antimicrobial-target assertion or source-producer upgrade. Associated paper/SI unread; evidence here is the independently inspected structural dataset and native sequence records. Not full-record sign-off.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>Pf-5 reference pyoluteorin locus</td>
   <td>encodes_native_reference</td>
   <td>PltF native sequence reference (Pf-5)</td>
   <td>AF081920.3 CDS 20417..21913(+), 1-based inclusive; AAD24881.1, 498 aa. CDS-aware table-11 translation exactly matches independently retrieved GenPept and current UniProt sequence version 1. Native source Pf-5/taxon220664, not the distinct M18 BGC0000128 source. These are native references, not the full engineered chains or complete assay stocks.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3<br>https://www.ncbi.nlm.nih.gov/protein/AAD24881.1<br>https://www.uniprot.org/uniprotkb/Q4KCY5</summary><ul><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Native source and CDS features inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AAD24881.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Independent versioned native translation inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4KCY5</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Exact native CDS/GenPept/current UniProt comparison; gene, taxon and strain matched.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AAD24881.1">https://www.ncbi.nlm.nih.gov/protein/AAD24881.1</a><br><a href="https://www.uniprot.org/uniprotkb/Q4KCY5">https://www.uniprot.org/uniprotkb/Q4KCY5</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Native source and CDS features inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AAD24881.1">https://www.ncbi.nlm.nih.gov/protein/AAD24881.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Independent versioned native translation inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q4KCY5">https://www.uniprot.org/uniprotkb/Q4KCY5</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Exact native CDS/GenPept/current UniProt comparison; gene, taxon and strain matched.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -201,7 +203,7 @@ isolation report left it.</p>
   <td>has_native_sequence_reference</td>
   <td>PltF native sequence reference (Pf-5)</td>
   <td>Author chain B / label chain A contains all 498 native PltF residues followed by KLAAALEHHHHHHHH, giving a 513-residue deposited sequence. The 15-residue extension is C-terminal, not N-terminal.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://data.rcsb.org/rest/v1/core/polymer_entity/6O6E/1</summary><ul><li><dl><dt>reference</dt><dd>https://data.rcsb.org/rest/v1/core/polymer_entity/6O6E/1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Explicit deposited-sequence comparison, not equality with the unmodified native protein. Current deposited model 3.2, revision 2024-10-23, inspected through pinned RCSB records and mmCIF. The 2020 paper DOI10.1039/C9CB00015A and SI were not read. Tag-residue identities were corrected in 2020; ligand stereochemistry was corrected in 2022. This is not an assertion about the uncorrected original model.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://data.rcsb.org/rest/v1/core/polymer_entity/6O6E/1">https://data.rcsb.org/rest/v1/core/polymer_entity/6O6E/1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://data.rcsb.org/rest/v1/core/polymer_entity/6O6E/1">https://data.rcsb.org/rest/v1/core/polymer_entity/6O6E/1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Explicit deposited-sequence comparison, not equality with the unmodified native protein. Current deposited model 3.2, revision 2024-10-23, inspected through pinned RCSB records and mmCIF. The 2020 paper DOI10.1039/C9CB00015A and SI were not read. Tag-residue identities were corrected in 2020; ligand stereochemistry was corrected in 2022. This is not an assertion about the uncorrected original model.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -210,8 +212,8 @@ isolation report left it.</p>
   <td>is_member_of_deposited_trapped_assembly</td>
   <td>6O6E engineered inhibitor-trapped PltF/PltL assembly</td>
   <td>Assembly1 is author/PISA-defined and contains one PltF and one PltL polymer instance. Source Pf-5/taxon220664; expression host E. coli BL21/taxon511693. Expression is not evidence that BL21 produces pyoluteorin. Deposited engineered 1:1 assembly is not a physiological stoichiometry or native stable-complex claim.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://data.rcsb.org/rest/v1/core/assembly/6O6E/1<br>https://data.rcsb.org/rest/v1/core/entry/6O6E</summary><ul><li><dl><dt>reference</dt><dd>https://data.rcsb.org/rest/v1/core/assembly/6O6E/1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Current deposited model 3.2, revision 2024-10-23, inspected through pinned RCSB records and mmCIF. The 2020 paper DOI10.1039/C9CB00015A and SI were not read. Tag-residue identities were corrected in 2020; ligand stereochemistry was corrected in 2022. This is not an assertion about the uncorrected original model.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://data.rcsb.org/rest/v1/core/entry/6O6E</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>2.14-A X-ray deposition with an inhibitor-trapped pair. Current deposited model 3.2, revision 2024-10-23, inspected through pinned RCSB records and mmCIF. The 2020 paper DOI10.1039/C9CB00015A and SI were not read. Tag-residue identities were corrected in 2020; ligand stereochemistry was corrected in 2022. This is not an assertion about the uncorrected original model.</dd><dt>retrieved on</dt><dd>2026-10-06</dd><dt>snippet</dt><dd>trapped with PltL</dd></dl>
+  <td><span class="mono"><a href="https://data.rcsb.org/rest/v1/core/assembly/6O6E/1">https://data.rcsb.org/rest/v1/core/assembly/6O6E/1</a><br><a href="https://data.rcsb.org/rest/v1/core/entry/6O6E">https://data.rcsb.org/rest/v1/core/entry/6O6E</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://data.rcsb.org/rest/v1/core/assembly/6O6E/1">https://data.rcsb.org/rest/v1/core/assembly/6O6E/1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Current deposited model 3.2, revision 2024-10-23, inspected through pinned RCSB records and mmCIF. The 2020 paper DOI10.1039/C9CB00015A and SI were not read. Tag-residue identities were corrected in 2020; ligand stereochemistry was corrected in 2022. This is not an assertion about the uncorrected original model.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://data.rcsb.org/rest/v1/core/entry/6O6E">https://data.rcsb.org/rest/v1/core/entry/6O6E</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>2.14-A X-ray deposition with an inhibitor-trapped pair. Current deposited model 3.2, revision 2024-10-23, inspected through pinned RCSB records and mmCIF. The 2020 paper DOI10.1039/C9CB00015A and SI were not read. Tag-residue identities were corrected in 2020; ligand stereochemistry was corrected in 2022. This is not an assertion about the uncorrected original model.</dd><dt>retrieved on</dt><dd>2026-10-06</dd><dt>snippet</dt><dd>trapped with PltL</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -220,9 +222,9 @@ isolation report left it.</p>
   <td>encodes_native_reference</td>
   <td>PltL native sequence reference (Pf-5)</td>
   <td>AF081920.3 CDS 3180..3446(+), 1-based inclusive; AAD24885.1, 88 aa. CDS-aware table-11 translation exactly matches independently retrieved GenPept and current UniProt sequence version 2. Native source Pf-5/taxon220664, not the distinct M18 BGC0000128 source. These are native references, not the full engineered chains or complete assay stocks.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3<br>https://www.ncbi.nlm.nih.gov/protein/AAD24885.1<br>https://www.uniprot.org/uniprotkb/Q4KCZ1</summary><ul><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Native source and CDS features inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AAD24885.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Independent versioned native translation inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4KCZ1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Exact native CDS/GenPept/current UniProt comparison; gene, taxon and strain matched.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AAD24885.1">https://www.ncbi.nlm.nih.gov/protein/AAD24885.1</a><br><a href="https://www.uniprot.org/uniprotkb/Q4KCZ1">https://www.uniprot.org/uniprotkb/Q4KCZ1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Native source and CDS features inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AAD24885.1">https://www.ncbi.nlm.nih.gov/protein/AAD24885.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Independent versioned native translation inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q4KCZ1">https://www.uniprot.org/uniprotkb/Q4KCZ1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Exact native CDS/GenPept/current UniProt comparison; gene, taxon and strain matched.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -231,7 +233,7 @@ isolation report left it.</p>
   <td>has_native_sequence_reference</td>
   <td>PltL native sequence reference (Pf-5)</td>
   <td>Author chain E / label chain B contains native PltL residues 1-86 followed by SALEHHHHHH, giving a 96-residue deposited sequence. Native residues 87-88 (CA) are not retained. Do not infer an intentional C87S mutation or a complete native 88-residue protein from the database mutation-count field. Native sequence version2 was updated in 2011; historical 2002/2005 assay stocks were not identified.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://data.rcsb.org/rest/v1/core/polymer_entity/6O6E/2</summary><ul><li><dl><dt>reference</dt><dd>https://data.rcsb.org/rest/v1/core/polymer_entity/6O6E/2</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Explicit deposited-sequence comparison, not equality with the unmodified native protein. Current deposited model 3.2, revision 2024-10-23, inspected through pinned RCSB records and mmCIF. The 2020 paper DOI10.1039/C9CB00015A and SI were not read. Tag-residue identities were corrected in 2020; ligand stereochemistry was corrected in 2022. This is not an assertion about the uncorrected original model.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://data.rcsb.org/rest/v1/core/polymer_entity/6O6E/2">https://data.rcsb.org/rest/v1/core/polymer_entity/6O6E/2</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://data.rcsb.org/rest/v1/core/polymer_entity/6O6E/2">https://data.rcsb.org/rest/v1/core/polymer_entity/6O6E/2</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Explicit deposited-sequence comparison, not equality with the unmodified native protein. Current deposited model 3.2, revision 2024-10-23, inspected through pinned RCSB records and mmCIF. The 2020 paper DOI10.1039/C9CB00015A and SI were not read. Tag-residue identities were corrected in 2020; ligand stereochemistry was corrected in 2022. This is not an assertion about the uncorrected original model.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -240,8 +242,8 @@ isolation report left it.</p>
   <td>is_member_of_deposited_trapped_assembly</td>
   <td>6O6E engineered inhibitor-trapped PltF/PltL assembly</td>
   <td>Assembly1 is author/PISA-defined and contains one PltF and one PltL polymer instance. Source Pf-5/taxon220664; expression host E. coli BL21/taxon511693. Expression is not evidence that BL21 produces pyoluteorin. Deposited engineered 1:1 assembly is not a physiological stoichiometry or native stable-complex claim.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://data.rcsb.org/rest/v1/core/assembly/6O6E/1<br>https://data.rcsb.org/rest/v1/core/entry/6O6E</summary><ul><li><dl><dt>reference</dt><dd>https://data.rcsb.org/rest/v1/core/assembly/6O6E/1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Current deposited model 3.2, revision 2024-10-23, inspected through pinned RCSB records and mmCIF. The 2020 paper DOI10.1039/C9CB00015A and SI were not read. Tag-residue identities were corrected in 2020; ligand stereochemistry was corrected in 2022. This is not an assertion about the uncorrected original model.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://data.rcsb.org/rest/v1/core/entry/6O6E</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>2.14-A X-ray deposition with an inhibitor-trapped pair. Current deposited model 3.2, revision 2024-10-23, inspected through pinned RCSB records and mmCIF. The 2020 paper DOI10.1039/C9CB00015A and SI were not read. Tag-residue identities were corrected in 2020; ligand stereochemistry was corrected in 2022. This is not an assertion about the uncorrected original model.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://data.rcsb.org/rest/v1/core/assembly/6O6E/1">https://data.rcsb.org/rest/v1/core/assembly/6O6E/1</a><br><a href="https://data.rcsb.org/rest/v1/core/entry/6O6E">https://data.rcsb.org/rest/v1/core/entry/6O6E</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://data.rcsb.org/rest/v1/core/assembly/6O6E/1">https://data.rcsb.org/rest/v1/core/assembly/6O6E/1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Current deposited model 3.2, revision 2024-10-23, inspected through pinned RCSB records and mmCIF. The 2020 paper DOI10.1039/C9CB00015A and SI were not read. Tag-residue identities were corrected in 2020; ligand stereochemistry was corrected in 2022. This is not an assertion about the uncorrected original model.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://data.rcsb.org/rest/v1/core/entry/6O6E">https://data.rcsb.org/rest/v1/core/entry/6O6E</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>2.14-A X-ray deposition with an inhibitor-trapped pair. Current deposited model 3.2, revision 2024-10-23, inspected through pinned RCSB records and mmCIF. The 2020 paper DOI10.1039/C9CB00015A and SI were not read. Tag-residue identities were corrected in 2020; ligand stereochemistry was corrected in 2022. This is not an assertion about the uncorrected original model.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -250,8 +252,8 @@ isolation report left it.</p>
   <td>is_deposited_covalently_attached_to</td>
   <td>Engineered PltL construct in 6O6E author chain E</td>
   <td>The sole mmCIF struct_conn covalent row joins PltL Ser42 OG (label chain B, author chain E) to I5M phosphorus P (label chain S, author chain E residue801). The reported 1.533-A model distance agrees with coordinates. It is not a direct PltF-PltL covalent bond. I5M is an experimental probe component, not pyoluteorin or a native intermediate.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://files.rcsb.org/download/6O6E.cif<br>https://data.rcsb.org/rest/v1/core/chemcomp/I5M</summary><ul><li><dl><dt>reference</dt><dd>https://files.rcsb.org/download/6O6E.cif</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Complete struct_conn table and linked atom coordinates inspected. Current deposited model 3.2, revision 2024-10-23, inspected through pinned RCSB records and mmCIF. The 2020 paper DOI10.1039/C9CB00015A and SI were not read. Tag-residue identities were corrected in 2020; ligand stereochemistry was corrected in 2022. This is not an assertion about the uncorrected original model.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://data.rcsb.org/rest/v1/core/chemcomp/I5M</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Current chemical-component definition inspected; I5M first released2022-07-20, after the associated2020paper.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://files.rcsb.org/download/6O6E.cif">https://files.rcsb.org/download/6O6E.cif</a><br><a href="https://data.rcsb.org/rest/v1/core/chemcomp/I5M">https://data.rcsb.org/rest/v1/core/chemcomp/I5M</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://files.rcsb.org/download/6O6E.cif">https://files.rcsb.org/download/6O6E.cif</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Complete struct_conn table and linked atom coordinates inspected. Current deposited model 3.2, revision 2024-10-23, inspected through pinned RCSB records and mmCIF. The 2020 paper DOI10.1039/C9CB00015A and SI were not read. Tag-residue identities were corrected in 2020; ligand stereochemistry was corrected in 2022. This is not an assertion about the uncorrected original model.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://data.rcsb.org/rest/v1/core/chemcomp/I5M">https://data.rcsb.org/rest/v1/core/chemcomp/I5M</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Current chemical-component definition inspected; I5M first released2022-07-20, after the associated2020paper.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -259,16 +261,16 @@ isolation report left it.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">26 nodes, 32 edges</span></h2>
-<p class="sub">Eight named locus-disruption contexts from the inspected 1999 primary abstract, not eight purified enzyme assignments. Current native proteins and historical insertion backgrounds remain separate. Insertion type and complete stocks unresolved; polar effects not excluded. PltD is retained as a protein reference, not assigned demonstrated halogenation. No inferred pathway order, complete synthesis or source-producer grade upgrade. Full main text, figure images, tables and SI unread; no full-record sign-off.</p><div class="scroll"><table>
+<p class="sub">Eight named locus-disruption contexts from the inspected 1999 primary abstract, not eight purified enzyme assignments. Current native proteins and historical insertion backgrounds remain separate. Insertion type and complete stocks unresolved; polar effects not excluded. PltD is retained as a protein reference, not assigned demonstrated halogenation. No inferred pathway order, complete synthesis or source-producer grade upgrade. Full main text, figure images, tables and SI unread; no full-record sign-off.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 2 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>Pf-5 reference pyoluteorin locus</td>
   <td>encodes_native_reference_example</td>
   <td>PltA native sequence example (Pf-5)</td>
   <td>AF081920.3 CDS 3460..4809(+), 1-based inclusive; AAD24884.1, 449 aa. CDS-aware table-11 translation matches independently retrieved GenPept and current UniProt. Native Pf-5/taxon220664 reference, not a verified historical experimental stock or an intact protein asserted present in a study mutant. M18 BGC0000128 is distinct.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3<br>https://www.ncbi.nlm.nih.gov/protein/AAD24884.1<br>https://www.uniprot.org/uniprotkb/Q4KCZ0</summary><ul><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Native source and CDS inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AAD24884.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Independent versioned native translation inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4KCZ0</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Exact native sequence and strain correspondence; not historical assay-stock identity.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AAD24884.1">https://www.ncbi.nlm.nih.gov/protein/AAD24884.1</a><br><a href="https://www.uniprot.org/uniprotkb/Q4KCZ0">https://www.uniprot.org/uniprotkb/Q4KCZ0</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Native source and CDS inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AAD24884.1">https://www.ncbi.nlm.nih.gov/protein/AAD24884.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Independent versioned native translation inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q4KCZ0">https://www.uniprot.org/uniprotkb/Q4KCZ0</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Exact native sequence and strain correspondence; not historical assay-stock identity.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -277,7 +279,7 @@ by the corpus tests.</p>
   <td>affects_coding_locus_of</td>
   <td>PltA native sequence example (Pf-5)</td>
   <td>Gene-name correspondence only; native reference sequence is not the mutant genotype. An insertion phenotype does not establish isolated protein catalysis or exclude downstream polar effects.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/JB.181.7.2166-2174.1999</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -286,7 +288,7 @@ by the corpus tests.</p>
   <td>was_present_in</td>
   <td>Study Pf-5 pltA insertion-mutant context</td>
   <td>The abstract groups Tn5, Tn3-nice and kanamycin-resistance insertions; no element, insertion position, orientation, strain number or number of alleles is assigned to this locus here.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/JB.181.7.2166-2174.1999</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -295,7 +297,7 @@ by the corpus tests.</p>
   <td>was_reported_to_lose</td>
   <td>Study pyoluteorin production readout</td>
   <td>Bounded reported production loss, not a measured zero or a universal gene requirement. No direct substrate-to-product step, rescue, stoichiometry or functional PltD halogenase inferred.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/JB.181.7.2166-2174.1999</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd><dt>snippet</dt><dd>abolished pyoluteorin production</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd><dt>snippet</dt><dd>abolished pyoluteorin production</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -304,9 +306,9 @@ by the corpus tests.</p>
   <td>encodes_native_reference_example</td>
   <td>PltB native sequence example (Pf-5)</td>
   <td>AF081920.3 CDS 4842..12218(+), 1-based inclusive; AAC38075.1, 2458 aa. CDS-aware table-11 translation matches independently retrieved GenPept and current UniProt. Native Pf-5/taxon220664 reference, not a verified historical experimental stock or an intact protein asserted present in a study mutant. M18 BGC0000128 is distinct.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3<br>https://www.ncbi.nlm.nih.gov/protein/AAC38075.1<br>https://www.uniprot.org/uniprotkb/Q4KCY9</summary><ul><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Native source and CDS inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AAC38075.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Independent versioned native translation inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4KCY9</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Exact native sequence and strain correspondence; not historical assay-stock identity.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AAC38075.1">https://www.ncbi.nlm.nih.gov/protein/AAC38075.1</a><br><a href="https://www.uniprot.org/uniprotkb/Q4KCY9">https://www.uniprot.org/uniprotkb/Q4KCY9</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Native source and CDS inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AAC38075.1">https://www.ncbi.nlm.nih.gov/protein/AAC38075.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Independent versioned native translation inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q4KCY9">https://www.uniprot.org/uniprotkb/Q4KCY9</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Exact native sequence and strain correspondence; not historical assay-stock identity.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -315,7 +317,7 @@ by the corpus tests.</p>
   <td>affects_coding_locus_of</td>
   <td>PltB native sequence example (Pf-5)</td>
   <td>Gene-name correspondence only; native reference sequence is not the mutant genotype. An insertion phenotype does not establish isolated protein catalysis or exclude downstream polar effects.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/JB.181.7.2166-2174.1999</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -324,7 +326,7 @@ by the corpus tests.</p>
   <td>was_present_in</td>
   <td>Study Pf-5 pltB insertion-mutant context</td>
   <td>The abstract groups Tn5, Tn3-nice and kanamycin-resistance insertions; no element, insertion position, orientation, strain number or number of alleles is assigned to this locus here.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/JB.181.7.2166-2174.1999</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -333,7 +335,7 @@ by the corpus tests.</p>
   <td>was_reported_to_lose</td>
   <td>Study pyoluteorin production readout</td>
   <td>Bounded reported production loss, not a measured zero or a universal gene requirement. No direct substrate-to-product step, rescue, stoichiometry or functional PltD halogenase inferred.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/JB.181.7.2166-2174.1999</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -342,9 +344,9 @@ by the corpus tests.</p>
   <td>encodes_native_reference_example</td>
   <td>PltC native sequence example (Pf-5)</td>
   <td>AF081920.3 CDS 12267..17591(+), 1-based inclusive; AAC38076.1, 1774 aa. CDS-aware table-11 translation matches independently retrieved GenPept and current UniProt. Native Pf-5/taxon220664 reference, not a verified historical experimental stock or an intact protein asserted present in a study mutant. M18 BGC0000128 is distinct.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3<br>https://www.ncbi.nlm.nih.gov/protein/AAC38076.1<br>https://www.uniprot.org/uniprotkb/Q4KCY8</summary><ul><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Native source and CDS inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AAC38076.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Independent versioned native translation inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4KCY8</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Exact native sequence and strain correspondence; not historical assay-stock identity.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AAC38076.1">https://www.ncbi.nlm.nih.gov/protein/AAC38076.1</a><br><a href="https://www.uniprot.org/uniprotkb/Q4KCY8">https://www.uniprot.org/uniprotkb/Q4KCY8</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Native source and CDS inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AAC38076.1">https://www.ncbi.nlm.nih.gov/protein/AAC38076.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Independent versioned native translation inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q4KCY8">https://www.uniprot.org/uniprotkb/Q4KCY8</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Exact native sequence and strain correspondence; not historical assay-stock identity.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -353,7 +355,7 @@ by the corpus tests.</p>
   <td>affects_coding_locus_of</td>
   <td>PltC native sequence example (Pf-5)</td>
   <td>Gene-name correspondence only; native reference sequence is not the mutant genotype. An insertion phenotype does not establish isolated protein catalysis or exclude downstream polar effects.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/JB.181.7.2166-2174.1999</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -362,7 +364,7 @@ by the corpus tests.</p>
   <td>was_present_in</td>
   <td>Study Pf-5 pltC insertion-mutant context</td>
   <td>The abstract groups Tn5, Tn3-nice and kanamycin-resistance insertions; no element, insertion position, orientation, strain number or number of alleles is assigned to this locus here.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/JB.181.7.2166-2174.1999</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -371,7 +373,7 @@ by the corpus tests.</p>
   <td>was_reported_to_lose</td>
   <td>Study pyoluteorin production readout</td>
   <td>Bounded reported production loss, not a measured zero or a universal gene requirement. No direct substrate-to-product step, rescue, stoichiometry or functional PltD halogenase inferred.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/JB.181.7.2166-2174.1999</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -380,9 +382,9 @@ by the corpus tests.</p>
   <td>encodes_native_reference_example</td>
   <td>PltD native sequence example (Pf-5)</td>
   <td>AF081920.3 CDS 17642..19276(+), 1-based inclusive; AAD24878.1, 544 aa. CDS-aware table-11 translation matches independently retrieved GenPept and current UniProt. Native Pf-5/taxon220664 reference, not a verified historical experimental stock or an intact protein asserted present in a study mutant. M18 BGC0000128 is distinct.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3<br>https://www.ncbi.nlm.nih.gov/protein/AAD24878.1<br>https://www.uniprot.org/uniprotkb/Q4KCY7</summary><ul><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Native source and CDS inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AAD24878.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Independent versioned native translation inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4KCY7</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Exact native sequence and strain correspondence; not historical assay-stock identity.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AAD24878.1">https://www.ncbi.nlm.nih.gov/protein/AAD24878.1</a><br><a href="https://www.uniprot.org/uniprotkb/Q4KCY7">https://www.uniprot.org/uniprotkb/Q4KCY7</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Native source and CDS inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AAD24878.1">https://www.ncbi.nlm.nih.gov/protein/AAD24878.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Independent versioned native translation inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q4KCY7">https://www.uniprot.org/uniprotkb/Q4KCY7</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Exact native sequence and strain correspondence; not historical assay-stock identity.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -391,7 +393,7 @@ by the corpus tests.</p>
   <td>affects_coding_locus_of</td>
   <td>PltD native sequence example (Pf-5)</td>
   <td>Gene-name correspondence only; native reference sequence is not the mutant genotype. An insertion phenotype does not establish isolated protein catalysis or exclude downstream polar effects.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/JB.181.7.2166-2174.1999</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -400,7 +402,7 @@ by the corpus tests.</p>
   <td>was_present_in</td>
   <td>Study Pf-5 pltD insertion-mutant context</td>
   <td>The abstract groups Tn5, Tn3-nice and kanamycin-resistance insertions; no element, insertion position, orientation, strain number or number of alleles is assigned to this locus here.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/JB.181.7.2166-2174.1999</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -409,7 +411,7 @@ by the corpus tests.</p>
   <td>was_reported_to_lose</td>
   <td>Study pyoluteorin production readout</td>
   <td>Bounded reported production loss, not a measured zero or a universal gene requirement. No direct substrate-to-product step, rescue, stoichiometry or functional PltD halogenase inferred.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/JB.181.7.2166-2174.1999</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -418,9 +420,9 @@ by the corpus tests.</p>
   <td>encodes_native_reference_example</td>
   <td>PltE native sequence example (Pf-5)</td>
   <td>AF081920.3 CDS 19278..20420(+), 1-based inclusive; AAD24879.1, 380 aa. CDS-aware table-11 translation matches independently retrieved GenPept and current UniProt. Native Pf-5/taxon220664 reference, not a verified historical experimental stock or an intact protein asserted present in a study mutant. M18 BGC0000128 is distinct.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3<br>https://www.ncbi.nlm.nih.gov/protein/AAD24879.1<br>https://www.uniprot.org/uniprotkb/Q4KCY6</summary><ul><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Native source and CDS inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AAD24879.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Independent versioned native translation inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4KCY6</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Exact native sequence and strain correspondence; not historical assay-stock identity.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AAD24879.1">https://www.ncbi.nlm.nih.gov/protein/AAD24879.1</a><br><a href="https://www.uniprot.org/uniprotkb/Q4KCY6">https://www.uniprot.org/uniprotkb/Q4KCY6</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Native source and CDS inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AAD24879.1">https://www.ncbi.nlm.nih.gov/protein/AAD24879.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Independent versioned native translation inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q4KCY6">https://www.uniprot.org/uniprotkb/Q4KCY6</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Exact native sequence and strain correspondence; not historical assay-stock identity.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -429,7 +431,7 @@ by the corpus tests.</p>
   <td>affects_coding_locus_of</td>
   <td>PltE native sequence example (Pf-5)</td>
   <td>Gene-name correspondence only; native reference sequence is not the mutant genotype. An insertion phenotype does not establish isolated protein catalysis or exclude downstream polar effects.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/JB.181.7.2166-2174.1999</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -438,7 +440,7 @@ by the corpus tests.</p>
   <td>was_present_in</td>
   <td>Study Pf-5 pltE insertion-mutant context</td>
   <td>The abstract groups Tn5, Tn3-nice and kanamycin-resistance insertions; no element, insertion position, orientation, strain number or number of alleles is assigned to this locus here.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/JB.181.7.2166-2174.1999</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -447,7 +449,7 @@ by the corpus tests.</p>
   <td>was_reported_to_lose</td>
   <td>Study pyoluteorin production readout</td>
   <td>Bounded reported production loss, not a measured zero or a universal gene requirement. No direct substrate-to-product step, rescue, stoichiometry or functional PltD halogenase inferred.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/JB.181.7.2166-2174.1999</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -456,9 +458,9 @@ by the corpus tests.</p>
   <td>encodes_native_reference_example</td>
   <td>PltF native sequence example (Pf-5)</td>
   <td>AF081920.3 CDS 20417..21913(+), 1-based inclusive; AAD24881.1, 498 aa. CDS-aware table-11 translation matches independently retrieved GenPept and current UniProt. Native Pf-5/taxon220664 reference, not a verified historical experimental stock or an intact protein asserted present in a study mutant. M18 BGC0000128 is distinct.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3<br>https://www.ncbi.nlm.nih.gov/protein/AAD24881.1<br>https://www.uniprot.org/uniprotkb/Q4KCY5</summary><ul><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Native source and CDS inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AAD24881.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Independent versioned native translation inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4KCY5</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Exact native sequence and strain correspondence; not historical assay-stock identity.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AAD24881.1">https://www.ncbi.nlm.nih.gov/protein/AAD24881.1</a><br><a href="https://www.uniprot.org/uniprotkb/Q4KCY5">https://www.uniprot.org/uniprotkb/Q4KCY5</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Native source and CDS inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AAD24881.1">https://www.ncbi.nlm.nih.gov/protein/AAD24881.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Independent versioned native translation inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q4KCY5">https://www.uniprot.org/uniprotkb/Q4KCY5</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Exact native sequence and strain correspondence; not historical assay-stock identity.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -467,7 +469,7 @@ by the corpus tests.</p>
   <td>affects_coding_locus_of</td>
   <td>PltF native sequence example (Pf-5)</td>
   <td>Gene-name correspondence only; native reference sequence is not the mutant genotype. An insertion phenotype does not establish isolated protein catalysis or exclude downstream polar effects.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/JB.181.7.2166-2174.1999</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -476,7 +478,7 @@ by the corpus tests.</p>
   <td>was_present_in</td>
   <td>Study Pf-5 pltF insertion-mutant context</td>
   <td>The abstract groups Tn5, Tn3-nice and kanamycin-resistance insertions; no element, insertion position, orientation, strain number or number of alleles is assigned to this locus here.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/JB.181.7.2166-2174.1999</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -485,7 +487,7 @@ by the corpus tests.</p>
   <td>was_reported_to_lose</td>
   <td>Study pyoluteorin production readout</td>
   <td>Bounded reported production loss, not a measured zero or a universal gene requirement. No direct substrate-to-product step, rescue, stoichiometry or functional PltD halogenase inferred.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/JB.181.7.2166-2174.1999</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -494,9 +496,9 @@ by the corpus tests.</p>
   <td>encodes_native_reference_example</td>
   <td>PltG native sequence example (Pf-5)</td>
   <td>AF081920.3 CDS 21917..22699(+), 1-based inclusive; AAD24880.1, 260 aa. CDS-aware table-11 translation matches independently retrieved GenPept and current UniProt. Native Pf-5/taxon220664 reference, not a verified historical experimental stock or an intact protein asserted present in a study mutant. M18 BGC0000128 is distinct.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3<br>https://www.ncbi.nlm.nih.gov/protein/AAD24880.1<br>https://www.uniprot.org/uniprotkb/Q4KCY4</summary><ul><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Native source and CDS inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AAD24880.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Independent versioned native translation inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4KCY4</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Exact native sequence and strain correspondence; not historical assay-stock identity.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AAD24880.1">https://www.ncbi.nlm.nih.gov/protein/AAD24880.1</a><br><a href="https://www.uniprot.org/uniprotkb/Q4KCY4">https://www.uniprot.org/uniprotkb/Q4KCY4</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Native source and CDS inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AAD24880.1">https://www.ncbi.nlm.nih.gov/protein/AAD24880.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Independent versioned native translation inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q4KCY4">https://www.uniprot.org/uniprotkb/Q4KCY4</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Exact native sequence and strain correspondence; not historical assay-stock identity.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -505,7 +507,7 @@ by the corpus tests.</p>
   <td>affects_coding_locus_of</td>
   <td>PltG native sequence example (Pf-5)</td>
   <td>Gene-name correspondence only; native reference sequence is not the mutant genotype. An insertion phenotype does not establish isolated protein catalysis or exclude downstream polar effects.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/JB.181.7.2166-2174.1999</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -514,7 +516,7 @@ by the corpus tests.</p>
   <td>was_present_in</td>
   <td>Study Pf-5 pltG insertion-mutant context</td>
   <td>The abstract groups Tn5, Tn3-nice and kanamycin-resistance insertions; no element, insertion position, orientation, strain number or number of alleles is assigned to this locus here.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/JB.181.7.2166-2174.1999</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -523,7 +525,7 @@ by the corpus tests.</p>
   <td>was_reported_to_lose</td>
   <td>Study pyoluteorin production readout</td>
   <td>Bounded reported production loss, not a measured zero or a universal gene requirement. No direct substrate-to-product step, rescue, stoichiometry or functional PltD halogenase inferred.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/JB.181.7.2166-2174.1999</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -532,9 +534,9 @@ by the corpus tests.</p>
   <td>encodes_native_reference_example</td>
   <td>PltM native sequence example (Pf-5)</td>
   <td>AF081920.3 CDS 158..1666(-), 1-based inclusive; AAD24882.1, 502 aa. CDS-aware table-11 translation matches independently retrieved GenPept and current UniProt. Native Pf-5/taxon220664 reference, not a verified historical experimental stock or an intact protein asserted present in a study mutant. M18 BGC0000128 is distinct.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3<br>https://www.ncbi.nlm.nih.gov/protein/AAD24882.1<br>https://www.uniprot.org/uniprotkb/Q4KCZ3</summary><ul><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Native source and CDS inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AAD24882.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Independent versioned native translation inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4KCZ3</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Exact native sequence and strain correspondence; not historical assay-stock identity.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AAD24882.1">https://www.ncbi.nlm.nih.gov/protein/AAD24882.1</a><br><a href="https://www.uniprot.org/uniprotkb/Q4KCZ3">https://www.uniprot.org/uniprotkb/Q4KCZ3</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Native source and CDS inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AAD24882.1">https://www.ncbi.nlm.nih.gov/protein/AAD24882.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Independent versioned native translation inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q4KCZ3">https://www.uniprot.org/uniprotkb/Q4KCZ3</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Exact native sequence and strain correspondence; not historical assay-stock identity.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -543,7 +545,7 @@ by the corpus tests.</p>
   <td>affects_coding_locus_of</td>
   <td>PltM native sequence example (Pf-5)</td>
   <td>Gene-name correspondence only; native reference sequence is not the mutant genotype. An insertion phenotype does not establish isolated protein catalysis or exclude downstream polar effects.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/JB.181.7.2166-2174.1999</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -552,7 +554,7 @@ by the corpus tests.</p>
   <td>was_present_in</td>
   <td>Study Pf-5 pltM insertion-mutant context</td>
   <td>The abstract groups Tn5, Tn3-nice and kanamycin-resistance insertions; no element, insertion position, orientation, strain number or number of alleles is assigned to this locus here.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/JB.181.7.2166-2174.1999</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -561,7 +563,7 @@ by the corpus tests.</p>
   <td>was_reported_to_lose</td>
   <td>Study pyoluteorin production readout</td>
   <td>Bounded reported production loss, not a measured zero or a universal gene requirement. No direct substrate-to-product step, rescue, stoichiometry or functional PltD halogenase inferred.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/JB.181.7.2166-2174.1999</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -569,16 +571,16 @@ by the corpus tests.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">10 nodes, 9 edges</span></h2>
-<p class="sub">Three reporter-fusion comparisons and the authors&#39; proposed regulatory interpretation from the inspected 1999 abstract. Native PltR, unresolved mutant allele and study backgrounds are distinct. Reporter readouts are not activities of the encoded biosynthetic enzymes. No direct DNA binding, signal identity, exact reporter stocks or quantitative fold change. Source-owned producer claims unchanged. Full main text, figure images, tables and SI unread; no full-record sign-off.</p><div class="scroll"><table>
+<p class="sub">Three reporter-fusion comparisons and the authors&#39; proposed regulatory interpretation from the inspected 1999 abstract. Native PltR, unresolved mutant allele and study backgrounds are distinct. Reporter readouts are not activities of the encoded biosynthetic enzymes. No direct DNA binding, signal identity, exact reporter stocks or quantitative fold change. Source-owned producer claims unchanged. Full main text, figure images, tables and SI unread; no full-record sign-off.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 3 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>Pf-5 reference pyoluteorin locus</td>
   <td>encodes_native_reference_example</td>
   <td>PltR native sequence example (Pf-5)</td>
   <td>AF081920.3 CDS 1663..2694(-), 1-based inclusive; AAD24883.1, 343 aa. CDS-aware table-11 translation matches independently retrieved GenPept and current UniProt. Native Pf-5/taxon220664 reference, not a verified historical experimental stock or an intact protein asserted present in a study mutant. M18 BGC0000128 is distinct.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3<br>https://www.ncbi.nlm.nih.gov/protein/AAD24883.1<br>https://www.uniprot.org/uniprotkb/Q4KCZ2</summary><ul><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Native source and CDS inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AAD24883.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Independent versioned native translation inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4KCZ2</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Exact native sequence and strain correspondence; not historical assay-stock identity.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AAD24883.1">https://www.ncbi.nlm.nih.gov/protein/AAD24883.1</a><br><a href="https://www.uniprot.org/uniprotkb/Q4KCZ2">https://www.uniprot.org/uniprotkb/Q4KCZ2</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Native source and CDS inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AAD24883.1">https://www.ncbi.nlm.nih.gov/protein/AAD24883.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Independent versioned native translation inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q4KCZ2">https://www.uniprot.org/uniprotkb/Q4KCZ2</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Exact native sequence and strain correspondence; not historical assay-stock identity.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -587,7 +589,7 @@ by the corpus tests.</p>
   <td>affects_coding_locus_of</td>
   <td>PltR native sequence example (Pf-5)</td>
   <td>Gene-name correspondence, not a sequence-resolved lesion, intact mutant protein or isolated-protein assay.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/JB.181.7.2166-2174.1999</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -596,7 +598,7 @@ by the corpus tests.</p>
   <td>was_present_in</td>
   <td>Study Pf-5 pltR-mutant reporter background</td>
   <td>A pltR-mutant Pf-5 background is reported; exact stock and lesion unresolved.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/JB.181.7.2166-2174.1999</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -605,7 +607,7 @@ by the corpus tests.</p>
   <td>is_reference_background_for</td>
   <td>Reported ice-nucleation reporter comparisons</td>
   <td>Reference background for separate reporter-fusion comparisons, not a claim that one stock carries all three reporters.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/JB.181.7.2166-2174.1999</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -614,7 +616,7 @@ by the corpus tests.</p>
   <td>is_perturbed_background_for</td>
   <td>Reported ice-nucleation reporter comparisons</td>
   <td>Perturbed background for the reported comparisons; no lesion-specific complementation or growth correction imported.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/JB.181.7.2166-2174.1999</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -623,7 +625,7 @@ by the corpus tests.</p>
   <td>reported_lower_activity_in_pltR_mutant_for</td>
   <td>pltB transcriptional-fusion ice-nucleation readout</td>
   <td>Reporter-assessed transcriptional contrast relative to the Pf-5 reference background. No fold change, direct mRNA measurement, purified enzyme activity or direct PltR-DNA binding asserted.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/JB.181.7.2166-2174.1999</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd><dt>snippet</dt><dd>significantly greater in Pf-5</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd><dt>snippet</dt><dd>significantly greater in Pf-5</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -632,7 +634,7 @@ by the corpus tests.</p>
   <td>reported_lower_activity_in_pltR_mutant_for</td>
   <td>pltE transcriptional-fusion ice-nucleation readout</td>
   <td>Reporter-assessed transcriptional contrast relative to the Pf-5 reference background. No fold change, direct mRNA measurement, purified enzyme activity or direct PltR-DNA binding asserted.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/JB.181.7.2166-2174.1999</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -641,7 +643,7 @@ by the corpus tests.</p>
   <td>reported_lower_activity_in_pltR_mutant_for</td>
   <td>pltF transcriptional-fusion ice-nucleation readout</td>
   <td>Reporter-assessed transcriptional contrast relative to the Pf-5 reference background. No fold change, direct mRNA measurement, purified enzyme activity or direct PltR-DNA binding asserted.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/JB.181.7.2166-2174.1999</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -650,7 +652,7 @@ by the corpus tests.</p>
   <td>supports_proposed</td>
   <td>Authors&#39; proposed PltR transcriptional activation</td>
   <td>Author interpretation from genetics/reporters, not direct promoter occupancy, effector binding or a defined regulatory complex.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/JB.181.7.2166-2174.1999</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/JB.181.7.2166-2174.1999">DOI:10.1128/JB.181.7.2166-2174.1999</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Primary abstract PMID10094695 inspected and retained as NCBI XML. Full main text, figure images, tables and SI not inspected. Historical assay stocks, exact lesions, culture endpoints, detection thresholds and isolated activities not established here.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -658,16 +660,16 @@ by the corpus tests.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">8 nodes, 8 edges</span></h2>
-<p class="sub">Two transport-associated reporter-insertion production phenotypes, bounded to the inspected 2005 abstract and named insertion contexts in PubMed figure captions. Native references and engineered alleles are distinct. No unique exporter, direct transport, defined transporter assembly, pathway order or antimicrobial resistance mechanism asserted. Source-owned producer/cluster grades unchanged. Main text, figure images, tables and SI unread; no full-record sign-off.</p><div class="scroll"><table>
+<p class="sub">Two transport-associated reporter-insertion production phenotypes, bounded to the inspected 2005 abstract and named insertion contexts in PubMed figure captions. Native references and engineered alleles are distinct. No unique exporter, direct transport, defined transporter assembly, pathway order or antimicrobial resistance mechanism asserted. Source-owned producer/cluster grades unchanged. Main text, figure images, tables and SI unread; no full-record sign-off.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 4 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>Pf-5 reference pyoluteorin locus</td>
   <td>encodes_native_reference_example</td>
   <td>PltI native sequence example (Pf-5)</td>
   <td>AF081920.3 CDS 23452..24465(+), 1-based inclusive; AAV66098.1, 337 aa. CDS-aware table-11 translation matches independent GenPept and current UniProt, unreviewed sequence version1, Pf-5/taxon220664. Native reference is not an intact protein asserted present in the reporter-insertion mutant.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3<br>https://www.ncbi.nlm.nih.gov/protein/AAV66098.1<br>https://www.uniprot.org/uniprotkb/Q4KCY2</summary><ul><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Native source and CDS inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AAV66098.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Versioned native translation inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4KCY2</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Exact native sequence/strain correspondence; not complete historical assay-stock identity.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AAV66098.1">https://www.ncbi.nlm.nih.gov/protein/AAV66098.1</a><br><a href="https://www.uniprot.org/uniprotkb/Q4KCY2">https://www.uniprot.org/uniprotkb/Q4KCY2</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Native source and CDS inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AAV66098.1">https://www.ncbi.nlm.nih.gov/protein/AAV66098.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Versioned native translation inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q4KCY2">https://www.uniprot.org/uniprotkb/Q4KCY2</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Exact native sequence/strain correspondence; not complete historical assay-stock identity.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -676,7 +678,7 @@ by the corpus tests.</p>
   <td>affects_coding_locus_of</td>
   <td>PltI native sequence example (Pf-5)</td>
   <td>Gene-name correspondence only, not a sequence-resolved mutant protein or a direct transport assay. No isolated protein function inferred.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AEM.71.11.6900-6909.2005</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AEM.71.11.6900-6909.2005</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Primary abstract PMID16269724 read and retained as NCBI XML; PubMed figure captions also inspected. Full main text, figure images, tables and SI unread. No exact reporter junctions, polar-effect exclusion, quantitative yield or isolated transport assay adopted.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/AEM.71.11.6900-6909.2005">DOI:10.1128/AEM.71.11.6900-6909.2005</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AEM.71.11.6900-6909.2005">DOI:10.1128/AEM.71.11.6900-6909.2005</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Primary abstract PMID16269724 read and retained as NCBI XML; PubMed figure captions also inspected. Full main text, figure images, tables and SI unread. No exact reporter junctions, polar-effect exclusion, quantitative yield or isolated transport assay adopted.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -685,7 +687,7 @@ by the corpus tests.</p>
   <td>was_present_in</td>
   <td>Study Pf-5 pltI::inaZ production-assay culture</td>
   <td>Reporter insertion rather than a clean deletion. Exact junctions and any downstream polar effects remain unresolved here.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AEM.71.11.6900-6909.2005</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AEM.71.11.6900-6909.2005</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID16269724 read and retained as NCBI XML; PubMed figure captions also inspected. Full main text, figure images, tables and SI unread. No exact reporter junctions, polar-effect exclusion, quantitative yield or isolated transport assay adopted.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/AEM.71.11.6900-6909.2005">DOI:10.1128/AEM.71.11.6900-6909.2005</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AEM.71.11.6900-6909.2005">DOI:10.1128/AEM.71.11.6900-6909.2005</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID16269724 read and retained as NCBI XML; PubMed figure captions also inspected. Full main text, figure images, tables and SI unread. No exact reporter junctions, polar-effect exclusion, quantitative yield or isolated transport assay adopted.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -694,7 +696,7 @@ by the corpus tests.</p>
   <td>was_reported_to_reduce</td>
   <td>Study pyoluteorin production readout</td>
   <td>Reduced production in the study, not abolished production or a measured zero. The abstract does not establish an exclusive pyoluteorin exporter. This edge does not assign direct efflux, physical complex assembly, antimicrobial resistance or a biosynthetic substrate-to-product reaction.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AEM.71.11.6900-6909.2005</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AEM.71.11.6900-6909.2005</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID16269724 read and retained as NCBI XML; PubMed figure captions also inspected. Full main text, figure images, tables and SI unread. No exact reporter junctions, polar-effect exclusion, quantitative yield or isolated transport assay adopted.</dd><dt>retrieved on</dt><dd>2026-10-06</dd><dt>snippet</dt><dd>greatly reduced pyoluteorin production</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/AEM.71.11.6900-6909.2005">DOI:10.1128/AEM.71.11.6900-6909.2005</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AEM.71.11.6900-6909.2005">DOI:10.1128/AEM.71.11.6900-6909.2005</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID16269724 read and retained as NCBI XML; PubMed figure captions also inspected. Full main text, figure images, tables and SI unread. No exact reporter junctions, polar-effect exclusion, quantitative yield or isolated transport assay adopted.</dd><dt>retrieved on</dt><dd>2026-10-06</dd><dt>snippet</dt><dd>greatly reduced pyoluteorin production</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -703,9 +705,9 @@ by the corpus tests.</p>
   <td>encodes_native_reference_example</td>
   <td>PltJ native sequence example (Pf-5)</td>
   <td>AF081920.3 CDS 24462..26231(+), 1-based inclusive; AAV66099.1, 589 aa. CDS-aware table-11 translation matches independent GenPept and current UniProt, unreviewed sequence version1, Pf-5/taxon220664. Native reference is not an intact protein asserted present in the reporter-insertion mutant.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3<br>https://www.ncbi.nlm.nih.gov/protein/AAV66099.1<br>https://www.uniprot.org/uniprotkb/Q4KCY1</summary><ul><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Native source and CDS inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AAV66099.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Versioned native translation inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4KCY1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Exact native sequence/strain correspondence; not complete historical assay-stock identity.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AAV66099.1">https://www.ncbi.nlm.nih.gov/protein/AAV66099.1</a><br><a href="https://www.uniprot.org/uniprotkb/Q4KCY1">https://www.uniprot.org/uniprotkb/Q4KCY1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Native source and CDS inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AAV66099.1">https://www.ncbi.nlm.nih.gov/protein/AAV66099.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Versioned native translation inspected.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q4KCY1">https://www.uniprot.org/uniprotkb/Q4KCY1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Exact native sequence/strain correspondence; not complete historical assay-stock identity.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -714,7 +716,7 @@ by the corpus tests.</p>
   <td>affects_coding_locus_of</td>
   <td>PltJ native sequence example (Pf-5)</td>
   <td>Gene-name correspondence only, not a sequence-resolved mutant protein or a direct transport assay. No isolated protein function inferred.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AEM.71.11.6900-6909.2005</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AEM.71.11.6900-6909.2005</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Primary abstract PMID16269724 read and retained as NCBI XML; PubMed figure captions also inspected. Full main text, figure images, tables and SI unread. No exact reporter junctions, polar-effect exclusion, quantitative yield or isolated transport assay adopted.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/AEM.71.11.6900-6909.2005">DOI:10.1128/AEM.71.11.6900-6909.2005</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AEM.71.11.6900-6909.2005">DOI:10.1128/AEM.71.11.6900-6909.2005</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Primary abstract PMID16269724 read and retained as NCBI XML; PubMed figure captions also inspected. Full main text, figure images, tables and SI unread. No exact reporter junctions, polar-effect exclusion, quantitative yield or isolated transport assay adopted.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -723,7 +725,7 @@ by the corpus tests.</p>
   <td>was_present_in</td>
   <td>Study Pf-5 pltJ::inaZ production-assay culture</td>
   <td>Reporter insertion rather than a clean deletion. Exact junctions and any downstream polar effects remain unresolved here.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AEM.71.11.6900-6909.2005</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AEM.71.11.6900-6909.2005</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID16269724 read and retained as NCBI XML; PubMed figure captions also inspected. Full main text, figure images, tables and SI unread. No exact reporter junctions, polar-effect exclusion, quantitative yield or isolated transport assay adopted.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/AEM.71.11.6900-6909.2005">DOI:10.1128/AEM.71.11.6900-6909.2005</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AEM.71.11.6900-6909.2005">DOI:10.1128/AEM.71.11.6900-6909.2005</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID16269724 read and retained as NCBI XML; PubMed figure captions also inspected. Full main text, figure images, tables and SI unread. No exact reporter junctions, polar-effect exclusion, quantitative yield or isolated transport assay adopted.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -732,7 +734,7 @@ by the corpus tests.</p>
   <td>was_reported_to_reduce</td>
   <td>Study pyoluteorin production readout</td>
   <td>Reduced production in the study, not abolished production or a measured zero. The abstract does not establish an exclusive pyoluteorin exporter. This edge does not assign direct efflux, physical complex assembly, antimicrobial resistance or a biosynthetic substrate-to-product reaction.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AEM.71.11.6900-6909.2005</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AEM.71.11.6900-6909.2005</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID16269724 read and retained as NCBI XML; PubMed figure captions also inspected. Full main text, figure images, tables and SI unread. No exact reporter junctions, polar-effect exclusion, quantitative yield or isolated transport assay adopted.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/AEM.71.11.6900-6909.2005">DOI:10.1128/AEM.71.11.6900-6909.2005</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AEM.71.11.6900-6909.2005">DOI:10.1128/AEM.71.11.6900-6909.2005</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary abstract PMID16269724 read and retained as NCBI XML; PubMed figure captions also inspected. Full main text, figure images, tables and SI unread. No exact reporter junctions, polar-effect exclusion, quantitative yield or isolated transport assay adopted.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -749,29 +751,41 @@ by the corpus tests.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=JPGWTZORMBTNMF-UHFFFAOYSA-N">AntibioticMech (pyoluteorin) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=CHEBI%3A156453">MediaIngredientMech (CHEBI:156453) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A220664">TaxonMech: Pseudomonas protegens Pf-5 (NCBITaxon:220664) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A228095">TaxonMech: Pseudomonas sp. M18 (NCBITaxon:228095) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000127">PathwayMech (mibig:BGC0000127) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000128">PathwayMech (mibig:BGC0000128) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q=CHEBI%3A156453">MediaIngredientMech (CHEBI:156453) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A220664">TaxonMech: Pseudomonas protegens Pf-5 (NCBITaxon:220664) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A228095">TaxonMech: Pseudomonas sp. M18 (NCBITaxon:228095) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000127">PathwayMech (mibig:BGC0000127) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000128">PathwayMech (mibig:BGC0000128) &nearr;</a>
 </div>
 
 <h2>Open questions <span class="tag">1</span></h2>
-<div class="note"><p><strong>shared-structure</strong> — This structure is reported by more than one MIBiG entry: BGC0000127, BGC0000128. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
+<div class="note"><p><strong>shared-structure</strong> <span class="tag">OPEN</span> <span class="tag">curation todo</span> — This structure is reported by more than one MIBiG entry: BGC0000127, BGC0000128. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
+
+<h2 id="curation-history">Curation history <span class="tag">6</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-13T10:43:44Z">2026-10-13T10:43:44Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources<p>Seeded from the committed inventories and curation tables.</p></li>
+<li><time datetime="2026-10-06T12:07:58Z">2026-10-06T12:07:58Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added one exact-owner BIOSYNTHESIS component with 8 nodes and 8 DOI-or-stable-URL-cited edges. Native Pf-5 PltI/Q4KCY2 and PltJ/Q4KCY1 references exactly match AF081920.3 CDS-aware table-11 translations, independently retrieved GenPept and current UniProt. Native references are distinct from unresolved inaZ insertion alleles and historical study cultures. The inspected primary abstract <a href="https://doi.org/10.1128/AEM.71.11.6900-6909.2005">DOI:10.1128/AEM.71.11.6900-6909.2005</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/16269724/">PMID:16269724</a> supports reduced production, not complete loss, exclusive export, direct transport or isolated catalysis. Exact insertion junctions and polar effects remain unresolved. Four quoted words checked in retained PubMed XML. Main text, figure images and SI unread. Preserved all three prior inline graphs, source fields, stereochemistry, SEEDED status, discussion, AntibioticMech link and history. Component layout avoids the 64-KiB owner limit without removing evidence. No antimicrobial-resistance claim or full-record sign-off.</p></li>
+<li><time datetime="2026-10-06T11:31:08Z">2026-10-06T11:31:08Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added two BIOSYNTHESIS graphs, 36 nodes and 41 DOI-or-URL-cited edges, bounded to the inspected primary abstract DOI10.1128/JB.181.7.2166-2174.1999/PMID10094695. Nine native Pf-5 references PltA/B/C/D/E/F/G/M/R match CDS-aware table-11 AF081920.3 translations, independently retrieved GenPept and current UniProt. Eight new native references beyond previously retained PltF/PltL structural graph. Native proteins, unresolved insertion alleles and historical study backgrounds remain distinct. Production-loss observations do not establish measured zeros, isolated catalysis, exclusion of polar effects or pathway order. PltD is a protein reference, not assigned demonstrated halogenation. PltR reporter comparisons remain distinct from the authors&#39; inferred transcriptional activation, direct DNA binding and enzyme activity. Exact PltR lesion type unresolved. Seven total quoted words checked against retained PubMed XML. Main text, figure images, tables and SI unread. Preserved the complete prior 6O6E graph, source fields, stereochemistry, SEEDED status, shared-structure discussion, AntibioticMech link and prior history. No producer-grade upgrade or full-record sign-off.</p></li>
+<li><time datetime="2026-10-06T10:54:02Z">2026-10-06T10:54:02Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added one inline BIOSYNTHESIS graph, 7 nodes and 7 stable-URL-cited edges, for native PltF/Q4KCY5 and PltL/Q4KCZ1 references and the distinct engineered PDB6O6E inhibitor-trapped assembly. Native AF081920.3 CDS-aware table-11 translations exactly match independent GenPept and current UniProt; source Pf-5/taxon220664, not M18. Current deposited model3.2 and corrected construct/ligand metadata audited independently of the unread associated paper/SI. PltF contains native498aa plus15 C-terminal residues; PltL contains native1-86 plus10 residues, not complete native88aa. Assembly1 contains one of each engineered chain, not proof of native stable complex or physiological stoichiometry. Sole deposited covalent linkage is PltLSer42OG to I5M phosphorusP, coordinate distance1.533A, not a direct PltF-PltL bond. Three-word exact deposition-title snippet verified. No complete biosynthesis, kinetics, BL21 production, antimicrobial target or source-producer upgrade asserted. Preserved source fields, stereochemistry, SEEDED status, shared-structure discussion, AntibioticMech link and previous history. No full-record sign-off.</p></li>
+<li><time datetime="2026-09-25T03:02:27Z">2026-09-25T03:02:27Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:08Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
 
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0000127</td><td>MIBIG</td><td>5</td></tr>
-<tr><td class="mono">BGC0000128</td><td>MIBIG</td><td>3</td></tr>
-<tr><td class="mono">CHEBI:156453</td><td>CHEBI</td><td>3-star</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000127">BGC0000127</a></td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000128">BGC0000128</a></td><td>MIBIG</td><td>3</td></tr>
+<tr><td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_156453">CHEBI:156453</a></td><td>CHEBI</td><td>3-star</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/alkaloids/pyoluteorin.yaml">data/natural_products/alkaloids/pyoluteorin.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20CHEBI%3A156453&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Falkaloids%2Fpyoluteorin.html">Report a problem with this record</a>: opens a GitHub issue that names CHEBI:156453 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Corpus as of 2026-10-23 22:53 UTC. Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 8e5d64d98cfd). Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

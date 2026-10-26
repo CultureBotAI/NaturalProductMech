@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Amino acids and peptides</a> &middot; N-acetyltryptophan</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,22 +32,22 @@
   </form>
 </div>
 <h1>N-acetyltryptophan</h1>
-<p class="sub"><span class="mono">CHEBI:70976</span>
+<p class="sub"><span class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_70976">CHEBI:70976</a></span>
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 </p>
 <details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/amino_acids_and_peptides/n-acetyltryptophan.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/amino_acids_and_peptides/n-acetyltryptophan.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 <p>An N-acetylamino acid that is the N-acetyl derivative of tryptophan.</p>
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">DZTHIGRZJZPRDV-UHFFFAOYSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">CC(=O)NC(CC1=CNC2=C1C=CC=C2)C(O)=O</td></tr>
 <tr><th>Stereochemistry</th><td>  <span class="tag weak">undefined stereocentres</span> — the InChIKey does not
   distinguish this compound from its stereoisomers</td></tr>
-<tr><th>Cross-references</th><td class="mono">npatlas:NPA015473</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://www.npatlas.org/explore/compounds/NPA015473">npatlas:NPA015473</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Amino acids and peptides</a> —
@@ -58,52 +60,52 @@ nrps, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Aspergillus nidulans FGSC A4<br><span class="mono">NCBITaxon:227321</span></td>
+  <td>Aspergillus nidulans FGSC A4<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=227321">NCBITaxon:227321</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0001679</td>
-  <td><span class="mono">DOI:10.1038/s41598-021-88693-8</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001679">mibig:BGC0001679</a></td>
+  <td><span class="mono"><a href="https://doi.org/10.1038/s41598-021-88693-8">DOI:10.1038/s41598-021-88693-8</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">4</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Bacillus pumilus<br><span class="mono">NCBITaxon:1408</span></td>
+  <td>Bacillus pumilus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1408">NCBITaxon:1408</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/S0378-1097(02)01065-0</td>
+  <td class="mono"><a href="https://doi.org/10.1016/S0378-1097%2802%2901065-0">DOI:10.1016/S0378-1097(02)01065-0</a></td>
 </tr>
 <tr>
-  <td>Aspergillus nidulans<br><span class="mono">NCBITaxon:162425</span></td>
+  <td>Aspergillus nidulans<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=162425">NCBITaxon:162425</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/J.FGB.2017.01.006</td>
+  <td class="mono"><a href="https://doi.org/10.1016/J.FGB.2017.01.006">DOI:10.1016/J.FGB.2017.01.006</a></td>
 </tr>
 <tr>
-  <td>Penicillium commune<br><span class="mono">NCBITaxon:36653</span></td>
+  <td>Penicillium commune<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=36653">NCBITaxon:36653</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.3390/MOLECULES15053270</td>
+  <td class="mono"><a href="https://doi.org/10.3390/MOLECULES15053270">DOI:10.3390/MOLECULES15053270</a></td>
 </tr>
 <tr>
-  <td>Glycine max<br><span class="mono">NCBITaxon:3847</span></td>
+  <td>Glycine max<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3847">NCBITaxon:3847</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1111/TPJ.12607</td>
+  <td class="mono"><a href="https://doi.org/10.1111/TPJ.12607">DOI:10.1111/TPJ.12607</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0001679</td>
-  <td>Aspergillus nidulans FGSC A4<br><span class="mono">NCBITaxon:227321</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001679">mibig:BGC0001679</a></td>
+  <td>Aspergillus nidulans FGSC A4<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=227321">NCBITaxon:227321</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:BN001303.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/BN001303.1">genbank:BN001303.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -113,7 +115,7 @@ isolation report left it.</p>
 
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for N-acetyltryptophan">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for N-acetyltryptophan">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -147,13 +149,13 @@ isolation report left it.</p>
 
 
 <h2>Molecular targets <span class="tag">1</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Molecular targets"><table>
 <tr><th>Target</th><th>Target organism</th><th>Measurement</th><th>Evidence</th></tr>
 <tr>
-  <td>Tryptophanase<br><span class="mono">PROTEIN BINDS</span><br><span class="mono">UniProtKB:P0A853</span></td>
-  <td>Escherichia coli (strain K12)<br><span class="mono">NCBITaxon:83333</span></td>
+  <td>Tryptophanase<br><span class="mono">PROTEIN BINDS</span><br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/P0A853/entry">UniProtKB:P0A853</a></span></td>
+  <td>Escherichia coli (strain K12)<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=83333">NCBITaxon:83333</a></span></td>
   <td>KI 4.8e+07 nM</td>
-  <td><details class="graph-evidence target-evidence"><summary class="mono">PMID:18608755</summary><ul><li><dl><dt>reference</dt><dd>PMID:18608755</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>BindingDB own-curated affinity; measured at pH 7.8000, 25.00 C C; qualifier EQUAL.</dd></dl>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/18608755/">PMID:18608755</a></span><details class="graph-evidence target-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/18608755/">PMID:18608755</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>BindingDB own-curated affinity; measured at pH 7.8000, 25.00 C C; qualifier EQUAL.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -164,24 +166,32 @@ isolation report left it.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=DZTHIGRZJZPRDV-UHFFFAOYSA-N">AntibioticMech (N-acetyltryptophan) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=CHEBI%3A70976">MediaIngredientMech (CHEBI:70976) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A227321">TaxonMech: Aspergillus nidulans FGSC A4 (NCBITaxon:227321) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0001679">PathwayMech (mibig:BGC0001679) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q=CHEBI%3A70976">MediaIngredientMech (CHEBI:70976) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A227321">TaxonMech: Aspergillus nidulans FGSC A4 (NCBITaxon:227321) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0001679">PathwayMech (mibig:BGC0001679) &nearr;</a>
 </div>
 
 
+<h2 id="curation-history">Curation history <span class="tag">3</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-09-25T03:01:52Z">2026-09-25T03:01:52Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(3 identical runs since 2026-09-10T05:54:05Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
+
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0001679</td><td>MIBIG</td><td>3</td></tr>
-<tr><td class="mono">CHEBI:70976</td><td>CHEBI</td><td>3-star</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001679">BGC0001679</a></td><td>MIBIG</td><td>3</td></tr>
+<tr><td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_70976">CHEBI:70976</a></td><td>CHEBI</td><td>3-star</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/amino_acids_and_peptides/n-acetyltryptophan.yaml">data/natural_products/amino_acids_and_peptides/n-acetyltryptophan.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20CHEBI%3A70976&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Famino_acids_and_peptides%2Fn-acetyltryptophan.html">Report a problem with this record</a>: opens a GitHub issue that names CHEBI:70976 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Corpus as of 2026-10-23 22:53 UTC. Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 8e5d64d98cfd). Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

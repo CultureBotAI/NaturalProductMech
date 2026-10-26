@@ -1,9 +1,11 @@
 {% extends "base.html" %}
 {% block title %}{{ r.label }} — NaturalProductMech{% endblock %}
+{#- Source detail is shown as recorded. A string leaf that is an identifier or a
+    URL opens its source, and prose keeps its PMIDs, DOIs and URLs followable. -#}
 {% macro source_fields(value) -%}
 {% if value is mapping %}<dl>{% for key, item in value.items() %}<dt>{{ key|replace('_', ' ') }}</dt><dd>{{ source_fields(item) }}</dd>{% endfor %}</dl>
 {% elif value is sequence and value is not string %}<ul>{% for item in value %}<li>{{ source_fields(item) }}</li>{% endfor %}</ul>
-{% else %}{{ value }}{% endif %}
+{% elif value is string %}{{ value|reference_link }}{% else %}{{ value }}{% endif %}
 {%- endmacro %}
 {% block content %}
 <div class="record-topbar">
@@ -14,26 +16,28 @@
   </form>
 </div>
 <h1>{{ r.label }}</h1>
-<p class="sub"><span class="mono">{{ r.identifier }}</span>
+<p class="sub"><span class="mono">{{ r.identifier|term_link }}</span>
   <span class="tag">{{ r.grounding_status }}</span>
   <span class="tag">{{ r.curation_status }}</span>
   {% for value in r.bioactivity_summary %}<span class="tag">{{ value|lower|replace('_',' ') }}</span>{% endfor %}
 </p>
-{% if r.grounding_note %}<div class="note"><strong>Grounding review:</strong> {{ r.grounding_note }}</div>{% endif %}
+{% if r.grounding_note %}<div class="note"><strong>Grounding review:</strong> {{ r.grounding_note|autolink }}</div>{% endif %}
 <details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/{{ r.record_path }}">record history</a>.</p>
+{% set status_meaning = (status_meanings or {}).get(r.curation_status) %}
+{% if status_meaning %}<p>This record is <strong>{{ r.curation_status }}</strong>: “{{ status_meaning }}” (the schema's <a href="{{ root }}schema.html#enum-CurationStatusEnum">definition</a>).</p>{% endif %}
+<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/{{ r.record_path }}">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
-{% if r.definition %}<p>{{ r.definition }}</p>{% endif %}
+{% if r.definition %}<p>{{ r.definition|autolink }}</p>{% endif %}
 
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">{{ r.structure.standard_inchi_key }}</td></tr>
 <tr><th>SMILES</th><td class="mono">{{ r.structure.smiles }}</td></tr>
 <tr><th>Stereochemistry</th><td>{% if r.structure.stereo_complete %}fully defined{% else %}
   <span class="tag weak">undefined stereocentres</span> — the InChIKey does not
   distinguish this compound from its stereoisomers{% endif %}</td></tr>
-{% if r.xrefs %}<tr><th>Cross-references</th><td class="mono">{{ r.xrefs|join(', ') }}</td></tr>{% endif %}
+{% if r.xrefs %}<tr><th>Cross-references</th><td class="mono">{% for x in r.xrefs %}{{ x|term_link }}{% if not loop.last %}, {% endif %}{% endfor %}</td></tr>{% endif %}
 </table></div>
 
 <h2>Filing pathway</h2>
@@ -48,14 +52,14 @@ which is why it is pinned rather than recomputed{% endif %}.
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 {% for p in r.producers %}
 <tr>
-  <td>{{ p.taxon_label }}{% if p.strain %}<br>Strain: {{ p.strain }}{% endif %}<br><span class="mono">{{ p.taxon_id }}</span></td>
+  <td>{{ p.taxon_label }}{% if p.strain %}<br>Strain: {{ p.strain }}{% endif %}<br><span class="mono">{{ p.taxon_id|term_link }}</span></td>
   <td><span class="tag {{ 'causal' if p.causal else 'weak' }}">{{ p.evidence_basis }}</span></td>
-  <td class="mono">{{ p.biosynthetic_gene_cluster or '' }}</td>
-  <td>{% if p.strain %}<details class="graph-evidence"><summary>{% endif %}{% for reference in p.references %}<span class="mono">{{ reference }}</span>{% if not loop.last %}, {% endif %}{% endfor %}{% if p.strain %}</summary>{{ source_fields(p.evidence) }}</details>{% endif %}</td>
+  <td class="mono">{{ p.biosynthetic_gene_cluster|term_link }}</td>
+  <td>{% for reference in p.references %}<span class="mono">{{ reference|reference_link }}</span>{% if not loop.last %}, {% endif %}{% endfor %}{% if p.strain %}<details class="graph-evidence"><summary>Evidence detail</summary>{{ source_fields(p.evidence) }}</details>{% endif %}</td>
 </tr>
 {% endfor %}
 </table></div>
@@ -70,13 +74,13 @@ organism makes this compound.{% endif %}</p>
 {% if r.occurrences %}
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 {% for o in r.occurrences %}
 <tr>
-  <td>{{ o.taxon_label }}<br><span class="mono">{{ o.taxon_id or '' }}</span></td>
+  <td>{{ o.taxon_label }}<br><span class="mono">{{ o.taxon_id|term_link }}</span></td>
   <td>{{ o.source }}</td>
-  <td class="mono">{{ o.reference }}</td>
+  <td class="mono">{{ o.reference|reference_link }}</td>
 </tr>
 {% endfor %}
 </table></div>
@@ -89,15 +93,15 @@ The record caps what it carries so a curator can read it; the inventories in
 
 {% if r.clusters %}
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">{{ r.clusters|length }}</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 {% for c in r.clusters %}
 <tr>
-  <td class="mono">{{ c.accession }}</td>
-  <td>{% if c.organism_label %}{{ c.organism_label }}<br><span class="mono">{{ c.organism_taxon_id }}</span>
+  <td class="mono">{{ c.accession|term_link }}</td>
+  <td>{% if c.organism_label %}{{ c.organism_label }}<br><span class="mono">{{ c.organism_taxon_id|term_link }}</span>
       {% else %}<span class="tag weak">not named</span>{% endif %}</td>
   <td><span class="tag {{ 'causal' if c.demonstrated else '' }}">{{ c.link_evidence_basis or 'CLUSTER_UNSTATED' }}</span></td>
-  <td class="mono">{{ c.genome_accession or '' }}</td>
+  <td class="mono">{{ c.genome_accession|term_link }}</td>
 </tr>
 {% endfor %}
 </table></div>
@@ -112,24 +116,24 @@ isolation report left it.</p>
 <h2>Biosynthesis <span class="tag causal">curated</span></h2>
 <p class="sub">Written by a curator with claim-level evidence on each step; not
 derived from a source. This is what the rest of the record exists to support.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthesis steps"><table>
 <tr><th>{{ 'Step' if has_step_numbers else '#' }}</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
 {% for s in r.pathway_steps %}
 <tr>
   <td>{{ s.step_number if has_step_numbers else loop.index }}</td>
-  <td>{{ s.enzyme_label }}{% if s.enzyme_id %}<br><span class="mono">{{ s.enzyme_id }}</span>{% endif %}</td>
-  <td class="mono">{{ s.reaction_id or '' }}</td>
-  <td class="mono">{{ s.substrate_display }} &rarr; {{ s.product_display }}</td>
-  <td class="mono">{{ s.reference }}</td>
+  <td>{{ s.enzyme_label }}{% if s.enzyme_id %}<br><span class="mono">{{ s.enzyme_id|term_link }}</span>{% endif %}</td>
+  <td class="mono">{{ s.reaction_id|term_link }}</td>
+  <td class="mono">{% for x in s.substrate_ids %}{{ x|term_link }}{% if not loop.last %} + {% endif %}{% else %}ungrounded{% endfor %} &rarr; {% for x in s.product_ids %}{{ x|term_link }}{% if not loop.last %} + {% endif %}{% else %}ungrounded{% endfor %}</td>
+  <td class="mono">{{ s.reference|reference_link }}</td>
 </tr>
 {% endfor %}
 </table></div>
-{% for s in r.pathway_steps %}{% if s.notes %}<p class="sub">{{ 'Step ' ~ s.step_number if has_step_numbers else 'Entry ' ~ loop.index }}: {{ s.notes }}</p>{% endif %}{% endfor %}
+{% for s in r.pathway_steps %}{% if s.notes %}<p class="sub">{{ 'Step ' ~ s.step_number if has_step_numbers else 'Entry ' ~ loop.index }}: {{ s.notes|autolink }}</p>{% endif %}{% endfor %}
 {% endif %}
 
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for {{ r.label }}">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for {{ r.label }}">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -165,16 +169,16 @@ derived from a source. This is what the rest of the record exists to support.</p
 {% set node_count = g.nodes|length %}
 {% set edge_count = g.edges|length %}
 <h2>Causal graph &mdash; {{ g.scope|lower }} <span class="tag">{{ node_count }} node{{ '' if node_count == 1 else 's' }}, {{ edge_count }} edge{{ '' if edge_count == 1 else 's' }}</span></h2>
-{% if g.description %}<p class="sub">{{ g.description }}</p>{% endif %}
-<div class="scroll"><table>
+{% if g.description %}<p class="sub">{{ g.description|autolink }}</p>{% endif %}
+<div class="scroll" role="region" tabindex="0" aria-label="Causal graph {{ loop.index }} edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 {% for e in g.edges %}
 <tr>
   <td>{{ e.subject_label }}</td>
   <td>{{ e.predicate }}</td>
   <td>{{ e.object_label }}</td>
-  <td>{{ e.notes or '' }}</td>
-  <td><details class="graph-evidence"><summary class="mono">{% for reference in e.references %}{{ reference }}{% if not loop.last %}<br>{% endif %}{% endfor %}</summary>{{ source_fields(e.evidence) }}</details></td>
+  <td>{{ e.notes|autolink }}</td>
+  <td><span class="mono">{% for reference in e.references %}{{ reference|reference_link }}{% if not loop.last %}<br>{% endif %}{% endfor %}</span><details class="graph-evidence"><summary>Evidence detail</summary>{{ source_fields(e.evidence) }}</details></td>
 </tr>
 {% endfor %}
 </table></div>
@@ -184,14 +188,14 @@ by the corpus tests.</p>
 
 {% if r.targets %}
 <h2>Molecular targets <span class="tag">{{ r.targets|length }}</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Molecular targets"><table>
 <tr><th>Target</th><th>Target organism</th><th>Measurement</th><th>Evidence</th></tr>
 {% for t in r.targets %}
 <tr>
-  <td>{{ t.target_label }}{% if t.target_type or t.relation %}<br><span class="mono">{{ t.target_type or '' }}{% if t.relation %} {{ t.relation }}{% endif %}</span>{% endif %}{% if t.protein_examples %}<br><span class="mono">{{ t.protein_examples|join(', ') }}</span>{% endif %}{% if t.notes %}<p class="graph-evidence sub">{{ t.notes }}</p>{% endif %}</td>
-  <td>{{ t.taxon_label or '' }}{% if t.taxon_id %}<br><span class="mono">{{ t.taxon_id }}</span>{% endif %}</td>
+  <td>{{ t.target_label }}{% if t.target_type or t.relation %}<br><span class="mono">{{ t.target_type or '' }}{% if t.relation %} {{ t.relation }}{% endif %}</span>{% endif %}{% if t.protein_examples %}<br><span class="mono">{% for x in t.protein_examples %}{{ x|term_link }}{% if not loop.last %}, {% endif %}{% endfor %}</span>{% endif %}{% if t.notes %}<p class="graph-evidence sub">{{ t.notes|autolink }}</p>{% endif %}</td>
+  <td>{{ t.taxon_label or '' }}{% if t.taxon_id %}<br><span class="mono">{{ t.taxon_id|term_link }}</span>{% endif %}</td>
   <td>{{ t.measurement }}</td>
-  <td><details class="graph-evidence target-evidence"><summary class="mono">{% for item in t.evidence %}{{ item.reference }}{% if not loop.last %}<br>{% endif %}{% endfor %}</summary>{{ source_fields(t.evidence) }}</details></td>
+  <td><span class="mono">{% for item in t.evidence %}{{ item.reference|reference_link }}{% if not loop.last %}<br>{% endif %}{% endfor %}</span><details class="graph-evidence target-evidence"><summary>Evidence detail</summary>{{ source_fields(t.evidence) }}</details></td>
 </tr>
 {% endfor %}
 </table></div>
@@ -200,10 +204,10 @@ by the corpus tests.</p>
 {% if r.bioactivities %}
 <h2>Bioactivities <span class="tag">{{ r.bioactivity_total }}</span></h2>
 <p class="sub">Entries preserve source qualifiers, targets and evidence. Repeated assay names or values are not independent replications; inspect source detail for differences.{% if r.bioactivity_duplicates %} {{ r.bioactivity_duplicates }} identical imported entr{{ 'y was' if r.bioactivity_duplicates == 1 else 'ies were' }} collapsed for display only.{% endif %}</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Bioactivities"><table>
 <tr><th>Assay</th><th>Result</th><th>Target enzyme</th><th>Source detail</th></tr>
 {% for b in r.bioactivities %}
-<tr><td>{{ b.assay }}</td><td>{{ b.result }}</td><td class="mono">{{ b.target }}</td><td><details><summary>{{ b.reference or 'Source fields' }}</summary>{{ source_fields(b.source) }}</details></td></tr>
+<tr><td>{{ b.assay|autolink }}</td><td>{{ b.result }}</td><td class="mono">{{ b.target|term_link }}</td><td>{% if b.reference %}<span class="mono">{{ b.reference|reference_link }}</span>{% endif %}<details><summary>Source fields</summary>{{ source_fields(b.source) }}</details></td></tr>
 {% endfor %}
 </table></div>
 {% endif %}
@@ -216,33 +220,44 @@ by the corpus tests.</p>
 {% endfor %}</ul>
 {% endif %}
 
+{% if r.sibling_links %}
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
-  <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q={{ (r.structure.standard_inchi_key or r.label) | urlencode }}">AntibioticMech ({{ r.label }}) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search={{ r.identifier | urlencode }}">MediaIngredientMech ({{ r.identifier }}) &nearr;</a>
-  {% for p in r.producers[:4] %}
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q={{ (p.taxon_id or p.taxon_label) | urlencode }}">TaxonMech: {{ p.taxon_label }} ({{ p.taxon_id }}) &nearr;</a>
-  {% endfor %}
-  {% for c in r.clusters[:3] %}
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q={{ c.accession | urlencode }}">PathwayMech ({{ c.accession }}) &nearr;</a>
+  {% for link in r.sibling_links %}
+  <a class="tag" href="{{ link.url }}">{{ link.text }} &nearr;</a>
   {% endfor %}
 </div>
+{% endif %}
 
 {% if r.discussions %}
 <h2>Open questions <span class="tag">{{ r.discussions|length }}</span></h2>
 {% for d in r.discussions %}
-<div class="note"><p><strong>{{ d.discussion_id }}</strong> — {{ d.prompt }}</p></div>
+<div class="note"><p><strong>{{ d.discussion_id }}</strong> <span class="tag">{{ d.status }}</span>{% if d.kind %} <span class="tag">{{ d.kind|lower|replace('_', ' ') }}</span>{% endif %} — {{ d.prompt|autolink }}</p></div>
 {% endfor %}
 {% endif %}
 
+<h2 id="curation-history">Curation history <span class="tag">{{ r.history|sum(attribute='count') }}</span></h2>
+{% if r.history %}
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+{% for h in r.history %}
+<li><time datetime="{{ h.timestamp }}">{{ h.timestamp }}</time> &middot; <strong>{{ h.action }}</strong> &middot; {{ h.curator }}{% if h.llm_assisted %} <span class="tag">LLM-assisted</span>{% endif %}{% if h.count > 1 %} <span class="sub">({{ h.count }} identical runs since {{ h.first }})</span>{% endif %}
+{% if h.changes %}<p>{{ h.changes|autolink }}</p>{% endif %}</li>
+{% endfor %}
+</ol>
+{% else %}<p class="sub">No curation event is recorded.</p>{% endif %}
+
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
 {% for s in r.source_concepts %}
-<tr><td class="mono">{{ s.source_id }}</td><td>{{ s.source }}</td><td>{{ s.source_version }}</td></tr>
+<tr><td class="mono">{% if s.url %}<a href="{{ s.url }}">{{ s.source_id }}</a>{% else %}{{ s.source_id }}{% endif %}</td><td>{{ s.source }}</td><td>{{ s.source_version }}</td></tr>
 {% endfor %}
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/{{ r.record_path }}">{{ r.record_path }}</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
+{% if r.issue_url %}<p class="record-actions"><a href="{{ r.issue_url }}">Report a problem with this record</a>: opens a GitHub issue that names {{ r.identifier }} and links this page.</p>{% endif %}
 {% endblock %}

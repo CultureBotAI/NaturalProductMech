@@ -6,6 +6,17 @@
 <p class="lede">{{ map.n }} compounds projected from their record text into two dimensions
 ({{ map.method|upper }} over {{ map.model }}).</p>
 
+<p class="meta" id="map-coverage">{{ map.n }} of the {{ total }} published records are plotted.
+{% if unplotted %}The coordinates come from <span class="mono">data/embeddings/corpus_map.json</span>,
+which is computed separately from these pages (<span class="mono">just embed</span>, then
+<span class="mono">just embed-map</span>) and has no point for
+{% for item in unplotted %}<a href="{{ item.href }}">{{ item.label }}</a> (<span class="mono">{{ item.identifier }}</span>){% if not loop.last %}, {% endif %}{% endfor %}.
+{% endif %}
+{% if dropped %}{{ dropped }} point{{ '' if dropped == 1 else 's' }} in that file
+name{{ 's' if dropped == 1 else '' }} an identifier no published record carries and
+{{ 'is' if dropped == 1 else 'are' }} not drawn: an embedding of what a record said under an
+identifier it no longer has would place the wrong record.{% endif %}</p>
+
 <p class="meta">Proximity means described similarly: same pathway,
 family, activity, producing organism, where it was found. Not structurally
 similar.</p>
@@ -50,12 +61,24 @@ sentence model reads them as noise. A chemical-similarity map is a different art
               aria-label="Scatter plot of {{ map.n }} compounds, coloured by filing pathway."></canvas>
       <figcaption class="meta" id="map-hover">Hover a point for its name; click to open the record.</figcaption>
     </figure>
+    <details class="map-table" id="corpus-map-table">
+      <summary>View data as table</summary>
+      <p class="meta" id="corpus-map-table-count"></p>
+      <div class="scroll" role="region" tabindex="0" aria-label="Compounds on the corpus map">
+        <table>
+          <caption class="sub">Compounds on the corpus map</caption>
+          <thead><tr><th scope="col">Compound</th><th scope="col">Identifier</th><th scope="col">Filing pathway</th></tr></thead>
+          <tbody id="corpus-map-table-body"></tbody>
+        </table>
+      </div>
+    </details>
     <p class="meta">The scatter is a <strong>visual aid, and mouse-driven</strong>: its points are
     canvas pixels, not focusable links, so it is not navigable by keyboard or screen reader.
-    Nothing is only available here — every compound has a record page reachable from
-    <a href="{{ root }}browse.html">Browse</a>, and the per-pathway pages list the same records
-    in text. Said plainly rather than implied, because a scatter that is the sole route to
-    some records would be an accessibility failure rather than a limitation.</p>
+    <em>View data as table</em> lists every compound it plots, as searched and filtered above,
+    each linking its record. Nothing is only available here — every compound has a record page
+    reachable from <a href="{{ root }}browse.html">Browse</a>, and the per-pathway pages list the
+    same records in text. Said plainly rather than implied, because a scatter that is the sole
+    route to some records would be an accessibility failure rather than a limitation.</p>
   </div>
 </div>
 
@@ -119,7 +142,36 @@ sentence model reads them as noise. A chemical-similarity map is a different art
       cx.beginPath(); cx.arc(q[0], q[1], 2.6, 0, 6.2832); cx.fill();
     });
     cx.globalAlpha = 1;
+    renderTable();
   }
+  // The table alternative: what the map plots, as filtered, each row linking
+  // its record. Built from the same embedded JSON, and only while it is open.
+  var table = document.getElementById("corpus-map-table");
+  function renderTable() {
+    if (!table || !table.open) return;
+    var shown = data.points.filter(matches);
+    var rows = document.createDocumentFragment();
+    shown.forEach(function (p) {
+      var tr = document.createElement("tr");
+      var name = document.createElement("th");
+      name.scope = "row";
+      var link = document.createElement("a");
+      link.href = data.hrefs[p[3]];
+      link.textContent = p[4];
+      name.appendChild(link);
+      var id = document.createElement("td");
+      id.className = "mono";
+      id.textContent = p[3];
+      var cls = document.createElement("td");
+      cls.textContent = data.classes[p[2]].replace(/_/g, " ").toLowerCase();
+      tr.append(name, id, cls);
+      rows.appendChild(tr);
+    });
+    document.getElementById("corpus-map-table-body").replaceChildren(rows);
+    document.getElementById("corpus-map-table-count").textContent =
+      shown.length + " of " + data.points.length + " plotted compounds, as searched and filtered above.";
+  }
+  if (table) table.addEventListener("toggle", renderTable);
   function nearest(mx, my) {
     var best = null, bd = 144;
     data.points.forEach(function (p) {

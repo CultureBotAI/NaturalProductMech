@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Polyketides</a> &middot; soraphen A</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>soraphen A</h1>
-<p class="sub"><span class="mono">CHEBI:9200</span>
+<p class="sub"><span class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_9200">CHEBI:9200</a></span>
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 <span class="tag">enzyme inhibitor</span></p>
 <details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/soraphen-a.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/soraphen-a.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 <p>A macrolide and an agent highly effective against plant-pathogenic fungi. It was extensively researched for agricultural use until it was discovered to be a teratogen.</p>
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">WPMGNXPRKGXGBO-OFQQMTDKSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">C[C@H]1/C=C/[C@H]([C@H](CCCC[C@H](OC(=O)[C@H]([C@@]2([C@@H]([C@H]([C@@H]([C@H]1O2)C)O)OC)O)C)C3=CC=CC=C3)OC)OC</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">pubchem:5281897</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/compound/5281897">pubchem:5281897</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Polyketides</a> —
@@ -57,62 +59,62 @@ pks, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Sorangium cellulosum<br><span class="mono">NCBITaxon:56</span></td>
+  <td>Sorangium cellulosum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=56">NCBITaxon:56</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0000147</td>
-  <td><span class="mono">PMID:12039053</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000147">mibig:BGC0000147</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/12039053/">PMID:12039053</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">6</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Sorangium cellulosum So ce56<br><span class="mono">NCBITaxon:448385</span></td>
+  <td>Sorangium cellulosum So ce56<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=448385">NCBITaxon:448385</a></span></td>
   <td>CHEBI</td>
-  <td class="mono">PMID:7916271</td>
+  <td class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/7916271/">PMID:7916271</a></td>
 </tr>
 <tr>
-  <td>Sorangium cellulosum<br><span class="mono">NCBITaxon:56</span></td>
+  <td>Sorangium cellulosum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=56">NCBITaxon:56</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1002/JLAC.1993199301161</td>
+  <td class="mono"><a href="https://doi.org/10.1002/JLAC.1993199301161">DOI:10.1002/JLAC.1993199301161</a></td>
 </tr>
 <tr>
-  <td>Sorangium cellulosum<br><span class="mono">NCBITaxon:56</span></td>
+  <td>Sorangium cellulosum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=56">NCBITaxon:56</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/S0378-1119(02)00396-7</td>
+  <td class="mono"><a href="https://doi.org/10.1016/S0378-1119%2802%2900396-7">DOI:10.1016/S0378-1119(02)00396-7</a></td>
 </tr>
 <tr>
-  <td>Sorangium cellulosum<br><span class="mono">NCBITaxon:56</span></td>
+  <td>Sorangium cellulosum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=56">NCBITaxon:56</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/S1389-1723(04)70202-9</td>
+  <td class="mono"><a href="https://doi.org/10.1016/S1389-1723%2804%2970202-9">DOI:10.1016/S1389-1723(04)70202-9</a></td>
 </tr>
 <tr>
-  <td>Sorangium cellulosum<br><span class="mono">NCBITaxon:56</span></td>
+  <td>Sorangium cellulosum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=56">NCBITaxon:56</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1039/A806112B</td>
+  <td class="mono"><a href="https://doi.org/10.1039/A806112B">DOI:10.1039/A806112B</a></td>
 </tr>
 <tr>
-  <td>Sorangium cellulosum<br><span class="mono">NCBITaxon:56</span></td>
+  <td>Sorangium cellulosum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=56">NCBITaxon:56</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.7164/ANTIBIOTICS.47.23</td>
+  <td class="mono"><a href="https://doi.org/10.7164/ANTIBIOTICS.47.23">DOI:10.7164/ANTIBIOTICS.47.23</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0000147</td>
-  <td>Sorangium cellulosum<br><span class="mono">NCBITaxon:56</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000147">mibig:BGC0000147</a></td>
+  <td>Sorangium cellulosum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=56">NCBITaxon:56</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:U24241.2</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/U24241.2">genbank:U24241.2</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -122,7 +124,7 @@ isolation report left it.</p>
 
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for soraphen A">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for soraphen A">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -155,15 +157,15 @@ isolation report left it.</p>
 </div>
 
 <h2>Causal graph &mdash; bioactivity <span class="tag">2 nodes, 1 edge</span></h2>
-<p class="sub">Soraphen A binds the human acetyl-CoA carboxylase 2 biotin carboxylase domain captured in PDB 3JRX.</p><div class="scroll"><table>
+<p class="sub">Soraphen A binds the human acetyl-CoA carboxylase 2 biotin carboxylase domain captured in PDB 3JRX.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>soraphen A</td>
   <td>binds</td>
   <td>human acetyl-CoA carboxylase 2</td>
   <td>PubChem BioAssay AID 977611 maps this exact Standard InChIKey to an active 0.001 uM Kd row for PDB 3JRX chain A; PDBe maps 3JRX_A to the Homo sapiens UniProtKB:O00763 ACC2 sequence, and RCSB reports S1A soraphen A with the record&#39;s Standard InChIKey as a 3JRX non-polymer ligand. Chain A is a biotin carboxylase domain construct spanning ACC2 residues 217-775 with affinity tags.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.bbrc.2009.11.029<br>DOI:10.2210/pdb3jrx/pdb</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.bbrc.2009.11.029</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>We also determined the structure of the human BC domain in complex with soraphen A</dd><dt>notes</dt><dd>Cho et al. solved PDB 3JRX as a human ACC2 biotin carboxylase domain structure with bound soraphen A.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.2210/pdb3jrx/pdb</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>RCSB PDB identifies 3JRX as a human ACC2 biotin carboxylase domain crystal structure containing S1A soraphen A, and PDBe maps chain A to Homo sapiens UniProtKB:O00763.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.bbrc.2009.11.029">DOI:10.1016/j.bbrc.2009.11.029</a><br><a href="https://doi.org/10.2210/pdb3jrx/pdb">DOI:10.2210/pdb3jrx/pdb</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.bbrc.2009.11.029">DOI:10.1016/j.bbrc.2009.11.029</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>We also determined the structure of the human BC domain in complex with soraphen A</dd><dt>notes</dt><dd>Cho et al. solved PDB 3JRX as a human ACC2 biotin carboxylase domain structure with bound soraphen A.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.2210/pdb3jrx/pdb">DOI:10.2210/pdb3jrx/pdb</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>RCSB PDB identifies 3JRX as a human ACC2 biotin carboxylase domain crystal structure containing S1A soraphen A, and PDBe maps chain A to Homo sapiens UniProtKB:O00763.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -171,15 +173,15 @@ isolation report left it.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; bioactivity <span class="tag">2 nodes, 1 edge</span></h2>
-<p class="sub">Soraphen A binds the Saccharomyces cerevisiae acetyl-CoA carboxylase biotin carboxylase domain captured in PDB 1W96.</p><div class="scroll"><table>
+<p class="sub">Soraphen A binds the Saccharomyces cerevisiae acetyl-CoA carboxylase biotin carboxylase domain captured in PDB 1W96.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 2 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>soraphen A</td>
   <td>binds</td>
   <td>Saccharomyces cerevisiae acetyl-CoA carboxylase Acc1</td>
   <td>PubChem BioAssay AID 977611 maps this exact Standard InChIKey to an active 0.0039 uM Kd row for PDB 1W96 chain A; PDBe maps 1W96 chains A, B, and C to Saccharomyces cerevisiae UniProtKB:Q00955 residues 13-566, and RCSB reports S1A soraphen A with the record&#39;s Standard InChIKey as a 1W96 non-polymer ligand.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/J.MOLCEL.2004.11.034<br>DOI:10.2210/pdb1w96/pdb</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/J.MOLCEL.2004.11.034</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>A Mechanism for the Potent Inhibition of Eukaryotic Acetyl-Coenzyme a Carboxylase by Soraphen A, a Macrocyclic Polyketide Natural Product</dd><dt>notes</dt><dd>Shen et al. solved the S. cerevisiae ACC1 biotin carboxylase domain structure with bound soraphen A, deposited as PDB 1W96.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.2210/pdb1w96/pdb</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>Crystal Structure of Biotin Carboxylase Domain of Acetyl-coenzyme A Carboxylase from Saccharomyces cerevisiae in Complex with Soraphen A</dd><dt>notes</dt><dd>RCSB PDB identifies 1W96 as a Saccharomyces cerevisiae acetyl-CoA carboxylase biotin carboxylase domain crystal structure containing S1A soraphen A, and PDBe maps its protein chains to UniProtKB:Q00955.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/J.MOLCEL.2004.11.034">DOI:10.1016/J.MOLCEL.2004.11.034</a><br><a href="https://doi.org/10.2210/pdb1w96/pdb">DOI:10.2210/pdb1w96/pdb</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/J.MOLCEL.2004.11.034">DOI:10.1016/J.MOLCEL.2004.11.034</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>A Mechanism for the Potent Inhibition of Eukaryotic Acetyl-Coenzyme a Carboxylase by Soraphen A, a Macrocyclic Polyketide Natural Product</dd><dt>notes</dt><dd>Shen et al. solved the S. cerevisiae ACC1 biotin carboxylase domain structure with bound soraphen A, deposited as PDB 1W96.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.2210/pdb1w96/pdb">DOI:10.2210/pdb1w96/pdb</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>Crystal Structure of Biotin Carboxylase Domain of Acetyl-coenzyme A Carboxylase from Saccharomyces cerevisiae in Complex with Soraphen A</dd><dt>notes</dt><dd>RCSB PDB identifies 1W96 as a Saccharomyces cerevisiae acetyl-CoA carboxylase biotin carboxylase domain crystal structure containing S1A soraphen A, and PDBe maps its protein chains to UniProtKB:Q00955.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -187,17 +189,17 @@ by the corpus tests.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">2 nodes, 1 edge</span></h2>
-<p class="sub">Native-reference identity for Sorangium cellulosum So ce26, taxon 56/U24241.2/BGC0000147. So ce26 is not equated with the record&#39;s separate So ce56 occurrence. Matching references do not establish measured expression, a verified assay construct, enzyme activity, native assembly, modification or cofactor occupancy.</p><div class="scroll"><table>
+<p class="sub">Native-reference identity for Sorangium cellulosum So ce26, taxon 56/U24241.2/BGC0000147. So ce26 is not equated with the record&#39;s separate So ce56 occurrence. Matching references do not establish measured expression, a verified assay construct, enzyme activity, native assembly, modification or cofactor occupancy.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 3 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>sorM CDS (U24241.2)</td>
   <td>encodes the native protein reference</td>
   <td>SorM (So ce26 native-reference example)</td>
   <td>Forward-strand 60255..61295; 1041-nt complete CDS including stop, 346 residues.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.ncbi.nlm.nih.gov/nuccore/U24241.2<br>https://www.ncbi.nlm.nih.gov/protein/AAK19894.1<br>https://www.uniprot.org/uniprotkb/Q9ADL4/entry<br>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000318.json</summary><ul><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/U24241.2</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>GenBank names sorM and assigns AAK19894.1, codon_start 1, translation table 11. The complete 67,523-bp U24241.2 reference identifies So ce26/taxon 56; this is a deposited sequence annotation, not an enzyme assay.</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>/gene=&#34;sorM&#34;</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AAK19894.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>GenPept identifies So ce26/taxon 56 and conceptual translation. Its coded_by points to the same U24241.2 CDS coordinates.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q9ADL4/entry</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Unreviewed entry version 52, sequence version 1, with So ce26 strain references. CDS-aware translation, deposited translation, GenPept and UniProt agree over all 346 residues. No specific FUNCTION or CATALYTIC ACTIVITY comment. Computational family, function, PTM and cofactor annotations are not direct enzyme evidence. Predicted sterol C-methyltransferase GO annotations do not establish native substrate specificity.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000318.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Active MITE0000318 version 1 maps SorM to Q9ADL4/AAK19894.1/BGC0000147. Native sequence identity does not independently validate the reaction annotation.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+  <td><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/U24241.2">https://www.ncbi.nlm.nih.gov/nuccore/U24241.2</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AAK19894.1">https://www.ncbi.nlm.nih.gov/protein/AAK19894.1</a><br><a href="https://www.uniprot.org/uniprotkb/Q9ADL4/entry">https://www.uniprot.org/uniprotkb/Q9ADL4/entry</a><br><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000318.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000318.json</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/U24241.2">https://www.ncbi.nlm.nih.gov/nuccore/U24241.2</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>GenBank names sorM and assigns AAK19894.1, codon_start 1, translation table 11. The complete 67,523-bp U24241.2 reference identifies So ce26/taxon 56; this is a deposited sequence annotation, not an enzyme assay.</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>/gene=&#34;sorM&#34;</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AAK19894.1">https://www.ncbi.nlm.nih.gov/protein/AAK19894.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>GenPept identifies So ce26/taxon 56 and conceptual translation. Its coded_by points to the same U24241.2 CDS coordinates.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q9ADL4/entry">https://www.uniprot.org/uniprotkb/Q9ADL4/entry</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Unreviewed entry version 52, sequence version 1, with So ce26 strain references. CDS-aware translation, deposited translation, GenPept and UniProt agree over all 346 residues. No specific FUNCTION or CATALYTIC ACTIVITY comment. Computational family, function, PTM and cofactor annotations are not direct enzyme evidence. Predicted sterol C-methyltransferase GO annotations do not establish native substrate specificity.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000318.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000318.json</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Active MITE0000318 version 1 maps SorM to Q9ADL4/AAK19894.1/BGC0000147. Native sequence identity does not independently validate the reaction annotation.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -205,17 +207,17 @@ by the corpus tests.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">2 nodes, 1 edge</span></h2>
-<p class="sub">Native-reference identity for Sorangium cellulosum So ce26, taxon 56/U24241.2/BGC0000147. So ce26 is not equated with the record&#39;s separate So ce56 occurrence. Matching references do not establish measured expression, a verified assay construct, enzyme activity, native assembly, modification or cofactor occupancy.</p><div class="scroll"><table>
+<p class="sub">Native-reference identity for Sorangium cellulosum So ce26, taxon 56/U24241.2/BGC0000147. So ce26 is not equated with the record&#39;s separate So ce56 occurrence. Matching references do not establish measured expression, a verified assay construct, enzyme activity, native assembly, modification or cofactor occupancy.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 4 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>sorR CDS (U24241.2)</td>
   <td>encodes the native protein reference</td>
   <td>SorR (So ce26 native-reference example)</td>
   <td>Forward-strand 13697..14158; 462-nt complete CDS including stop, 153 residues.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.ncbi.nlm.nih.gov/nuccore/U24241.2<br>https://www.ncbi.nlm.nih.gov/protein/AAK19893.1<br>https://www.uniprot.org/uniprotkb/Q9ADL7/entry<br>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000468.json</summary><ul><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/U24241.2</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>GenBank names sorR and assigns AAK19893.1, codon_start 1, translation table 11. The complete 67,523-bp U24241.2 reference identifies So ce26/taxon 56; this is a deposited sequence annotation, not an enzyme assay.</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>/gene=&#34;sorR&#34;</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AAK19893.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>GenPept identifies So ce26/taxon 56 and conceptual translation. Its coded_by points to the same U24241.2 CDS coordinates.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q9ADL7/entry</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Unreviewed entry version 64, sequence version 1, with So ce26 strain references. CDS-aware translation, deposited translation, GenPept and UniProt agree over all 153 residues. No specific FUNCTION or CATALYTIC ACTIVITY comment. Computational family, function, PTM and cofactor annotations are not direct enzyme evidence. Predicted fatty-acid synthase GO and phosphopantetheine/phosphoprotein keywords are not verified activities or modifications. The MITE0000468 reaction is withheld under https://github.com/CultureBotAI/NaturalProductMech/issues/697: its Reduction tag, possible oxidation/hemiacetalization description and modeled C28H46O9 to C28H44O8 need reconciliation. No catalytic reaction edge or measured NADP specificity is added.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000468.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Active MITE0000468 version 1 maps SorR to Q9ADL7/AAK19893.1/BGC0000147. Native sequence identity does not independently validate the reaction annotation.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+  <td><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/U24241.2">https://www.ncbi.nlm.nih.gov/nuccore/U24241.2</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AAK19893.1">https://www.ncbi.nlm.nih.gov/protein/AAK19893.1</a><br><a href="https://www.uniprot.org/uniprotkb/Q9ADL7/entry">https://www.uniprot.org/uniprotkb/Q9ADL7/entry</a><br><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000468.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000468.json</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/U24241.2">https://www.ncbi.nlm.nih.gov/nuccore/U24241.2</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>GenBank names sorR and assigns AAK19893.1, codon_start 1, translation table 11. The complete 67,523-bp U24241.2 reference identifies So ce26/taxon 56; this is a deposited sequence annotation, not an enzyme assay.</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>/gene=&#34;sorR&#34;</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AAK19893.1">https://www.ncbi.nlm.nih.gov/protein/AAK19893.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>GenPept identifies So ce26/taxon 56 and conceptual translation. Its coded_by points to the same U24241.2 CDS coordinates.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q9ADL7/entry">https://www.uniprot.org/uniprotkb/Q9ADL7/entry</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Unreviewed entry version 64, sequence version 1, with So ce26 strain references. CDS-aware translation, deposited translation, GenPept and UniProt agree over all 153 residues. No specific FUNCTION or CATALYTIC ACTIVITY comment. Computational family, function, PTM and cofactor annotations are not direct enzyme evidence. Predicted fatty-acid synthase GO and phosphopantetheine/phosphoprotein keywords are not verified activities or modifications. The MITE0000468 reaction is withheld under <a href="https://github.com/CultureBotAI/NaturalProductMech/issues/697">https://github.com/CultureBotAI/NaturalProductMech/issues/697</a>: its Reduction tag, possible oxidation/hemiacetalization description and modeled C28H46O9 to C28H44O8 need reconciliation. No catalytic reaction edge or measured NADP specificity is added.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000468.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000468.json</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Active MITE0000468 version 1 maps SorR to Q9ADL7/AAK19893.1/BGC0000147. Native sequence identity does not independently validate the reaction annotation.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -223,14 +225,14 @@ by the corpus tests.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
-<p class="sub">Partial inferred O-methylation model from MITE0000318 version 1. MITE labels its evidence Inference from genomic data and chemical structure and cites DOI:10.1016/S0378-1119(02)00396-7. Only the search-returned paper abstract was inspected; a subsequent official PubMed open returned 429 and retrieval stopped. No primary full-text enzyme assay is adopted. The database names soraphen C to soraphen A, but its product omits alkene geometry, so no exact owner-product identity is asserted. This is not an ordered or complete pathway; chemical/process nodes remain ungrounded.</p><div class="scroll"><table>
+<p class="sub">Partial inferred O-methylation model from MITE0000318 version 1. MITE labels its evidence Inference from genomic data and chemical structure and cites <a href="https://doi.org/10.1016/S0378-1119%2802%2900396-7">DOI:10.1016/S0378-1119(02)00396-7</a>. Only the search-returned paper abstract was inspected; a subsequent official PubMed open returned 429 and retrieval stopped. No primary full-text enzyme assay is adopted. The database names soraphen C to soraphen A, but its product omits alkene geometry, so no exact owner-product identity is asserted. This is not an ordered or complete pathway; chemical/process nodes remain ungrounded.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 5 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>SorM (So ce26 native-reference example)</td>
   <td>is inferred by the database to catalyze</td>
   <td>proposed O-methylation (inferred model)</td>
   <td>Genomic/chemical inference, not a directly inspected enzyme experiment.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000318.json</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000318.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Active MITE0000318 version 1 proposes post-PKS C11 O-methylation. No rates, measured cofactor specificity, assembly or verified native-substrate assay are adopted.</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>Responsible for the post-PKS O-methylation of the hydroxyl at C11</dd></dl>
+  <td><span class="mono"><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000318.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000318.json</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000318.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000318.json</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Active MITE0000318 version 1 proposes post-PKS C11 O-methylation. No rates, measured cofactor specificity, assembly or verified native-substrate assay are adopted.</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>Responsible for the post-PKS O-methylation of the hydroxyl at C11</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -239,7 +241,7 @@ by the corpus tests.</p>
   <td>is the modeled substrate of</td>
   <td>proposed O-methylation (inferred model)</td>
   <td>Source model only; no independently verified assay substrate or reaction order.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000318.json</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000318.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>RDKit 2026.03.5 substrate key USIRVOOCIGRCRU-CXBYLNABSA-N, C28H42O8. Different connectivity from the owner; no ChEBI/Rhea identifier chosen.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+  <td><span class="mono"><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000318.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000318.json</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000318.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000318.json</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>RDKit 2026.03.5 substrate key USIRVOOCIGRCRU-CXBYLNABSA-N, C28H42O8. Different connectivity from the owner; no ChEBI/Rhea identifier chosen.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -248,7 +250,7 @@ by the corpus tests.</p>
   <td>is modeled to yield</td>
   <td>SorM product (MITE model)</td>
   <td>Inferred model, not exact stereochemically specified soraphen A.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000318.json</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000318.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>RDKit 2026.03.5 product key WPMGNXPRKGXGBO-JXOLNOSBSA-N, C29H44O8. It shares owner connectivity but not the exact key; ten tetrahedral centers are specified and one double bond is unspecified. Missing geometry is not filled from substrate or owner. MITE marks this example as an intermediate; no automatic inter-graph bridge is made.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+  <td><span class="mono"><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000318.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000318.json</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000318.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000318.json</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>RDKit 2026.03.5 product key WPMGNXPRKGXGBO-JXOLNOSBSA-N, C29H44O8. It shares owner connectivity but not the exact key; ten tetrahedral centers are specified and one double bond is unspecified. Missing geometry is not filled from substrate or owner. MITE marks this example as an intermediate; no automatic inter-graph bridge is made.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -259,21 +261,21 @@ by the corpus tests.</p>
 
 <h2>Bioactivities <span class="tag">4</span></h2>
 <p class="sub">Entries preserve source qualifiers, targets and evidence. Repeated assay names or values are not independent replications; inspect source detail for differences.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Bioactivities"><table>
 <tr><th>Assay</th><th>Result</th><th>Target enzyme</th><th>Source detail</th></tr>
-<tr><td>ACCase Enzymatic Assay from US Patent US11375716: &#34;Acetyl-CoA carboxylase modulators&#34;</td><td>IC50 0.0458 uM; ACTIVE</td><td class="mono">UniProtKB:A0A0D1DYD5</td><td><details><summary>pubchem.aid:1806637</summary><dl><dt>assay</dt><dd>ACCase Enzymatic Assay from US Patent US11375716: &#34;Acetyl-CoA carboxylase modulators&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1806637</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1806637, deposited by BindingDB; assay type Confirmatory.</dd></dl>
+<tr><td>ACCase Enzymatic Assay from US Patent US11375716: &#34;Acetyl-CoA carboxylase modulators&#34;</td><td>IC50 0.0458 uM; ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/A0A0D1DYD5/entry">UniProtKB:A0A0D1DYD5</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1806637">pubchem.aid:1806637</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>ACCase Enzymatic Assay from US Patent US11375716: &#34;Acetyl-CoA carboxylase modulators&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1806637">pubchem.aid:1806637</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1806637, deposited by BindingDB; assay type Confirmatory.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>0.0458</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:A0A0D1DYD5</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>0.0458</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0A0D1DYD5/entry">UniProtKB:A0A0D1DYD5</a></dd></dl>
 </details></td></tr>
-<tr><td>Experimentally measured binding affinity data (Kd) for protein-ligand complexes derived from PDB</td><td>KD 0.0039 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:977611</summary><dl><dt>assay</dt><dd>Experimentally measured binding affinity data (Kd) for protein-ligand complexes derived from PDB</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:977611</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic Chemistry; assay type Other. Target accession 1W96_A was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Experimentally measured binding affinity data (Kd) for protein-ligand complexes derived from PDB</td><td>KD 0.0039 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/977611">pubchem.aid:977611</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Experimentally measured binding affinity data (Kd) for protein-ligand complexes derived from PDB</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/977611">pubchem.aid:977611</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic Chemistry; assay type Other. Target accession 1W96_A was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>KD</dd><dt>value</dt><dd>0.0039</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>Experimentally measured binding affinity data (Kd) for protein-ligand complexes derived from PDB</td><td>KD 0.001 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>PMID:19900410</summary><dl><dt>assay</dt><dd>Experimentally measured binding affinity data (Kd) for protein-ligand complexes derived from PDB</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:19900410</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic Chemistry; assay type Other. Target accession 3JRX_A was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Experimentally measured binding affinity data (Kd) for protein-ligand complexes derived from PDB</td><td>KD 0.001 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/19900410/">PMID:19900410</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Experimentally measured binding affinity data (Kd) for protein-ligand complexes derived from PDB</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/19900410/">PMID:19900410</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic Chemistry; assay type Other. Target accession 3JRX_A was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>KD</dd><dt>value</dt><dd>0.001</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>Experimentally measured binding affinity data derived from PDB</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1811</summary><dl><dt>assay</dt><dd>Experimentally measured binding affinity data derived from PDB</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1811</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1811, deposited by Shanghai Institute of Organic Chemistry; assay type Other. Target accession 1W96_A was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Experimentally measured binding affinity data derived from PDB</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1811">pubchem.aid:1811</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Experimentally measured binding affinity data derived from PDB</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1811">pubchem.aid:1811</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1811, deposited by Shanghai Institute of Organic Chemistry; assay type Other. Target accession 1W96_A was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
@@ -283,24 +285,37 @@ by the corpus tests.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=WPMGNXPRKGXGBO-OFQQMTDKSA-N">AntibioticMech (soraphen A) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=CHEBI%3A9200">MediaIngredientMech (CHEBI:9200) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A56">TaxonMech: Sorangium cellulosum (NCBITaxon:56) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000147">PathwayMech (mibig:BGC0000147) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q=CHEBI%3A9200">MediaIngredientMech (CHEBI:9200) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A56">TaxonMech: Sorangium cellulosum (NCBITaxon:56) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000147">PathwayMech (mibig:BGC0000147) &nearr;</a>
 </div>
 
 
+<h2 id="curation-history">Curation history <span class="tag">8</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-13T10:45:34Z">2026-10-13T10:45:34Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-10-13T07:43:18Z)</span><p>Seeded from the committed inventories and curation tables.</p></li>
+<li><time datetime="2026-10-08T10:41:38Z">2026-10-08T10:41:38Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added native-reference SorM/Q9ADL4 and SorR/Q9ADL7 graphs from Sorangium cellulosum So ce26/U24241.2/BGC0000147. Added one explicitly inferred MITE SorM O-methylation model with unspecified product alkene geometry; no exact owner-product identity asserted. Withheld SorR reaction under issue697. No inspected primary full-text enzyme experiment, verified assay construct, measured cofactor specificity, assembly, ordered pathway or grade upgrade. Kept So ce26 distinct from So ce56 and preserved existing bioactivity graphs, source fields, SEEDED status and prior history.</p></li>
+<li><time datetime="2026-09-26T19:01:38Z">2026-09-26T19:01:38Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added a Soraphen A bioactivity graph for binding of the Saccharomyces cerevisiae ACC1 biotin carboxylase domain, grounded PubChem target 1W96_A to UniProtKB:Q00955 via PDBe and SIFTS, confirmed the PDB S1A ligand matches the record Standard InChIKey, and cited <a href="https://doi.org/10.1016/J.MOLCEL.2004.11.034">DOI:10.1016/J.MOLCEL.2004.11.034</a> and <a href="https://doi.org/10.2210/pdb1w96/pdb">DOI:10.2210/pdb1w96/pdb</a>.</p></li>
+<li><time datetime="2026-09-25T03:03:40Z">2026-09-25T03:03:40Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources<p>Seeded from the committed inventories in data/raw/.</p></li>
+<li><time datetime="2026-09-11T20:07:12Z">2026-09-11T20:07:12Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added a Soraphen A bioactivity graph for binding of the human ACC2 biotin carboxylase domain, grounded PubChem target 3JRX_A to UniProtKB:O00763 via PDBe, and cited the exact S1A-bound PDB 3JRX structure.</p></li>
+<li><time datetime="2026-09-10T06:50:19Z">2026-09-10T06:50:19Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:15Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
+
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0000147</td><td>MIBIG</td><td>5</td></tr>
-<tr><td class="mono">CHEBI:9200</td><td>CHEBI</td><td>3-star</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000147">BGC0000147</a></td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_9200">CHEBI:9200</a></td><td>CHEBI</td><td>3-star</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/polyketides/soraphen-a.yaml">data/natural_products/polyketides/soraphen-a.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20CHEBI%3A9200&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Fpolyketides%2Fsoraphen-a.html">Report a problem with this record</a>: opens a GitHub issue that names CHEBI:9200 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Corpus as of 2026-10-23 22:53 UTC. Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 8e5d64d98cfd). Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

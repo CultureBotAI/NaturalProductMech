@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Carbohydrates</a> &middot; adenine arabinoside</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,17 +32,17 @@
   </form>
 </div>
 <h1>adenine arabinoside</h1>
-<p class="sub"><span class="mono">CHEBI:45327</span>
+<p class="sub"><span class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_45327">CHEBI:45327</a></span>
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 <span class="tag">antimicrobial unspecified</span></p>
 <details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/carbohydrates/adenine-arabinoside.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/carbohydrates/adenine-arabinoside.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 <p>A purine nucleoside in which adenine is attached to arabinofuranose via a β-N9-glycosidic bond.</p>
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">OIRDTQYFTABQOQ-UHTZMRCNSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">C1=NC2=C(C(=N1)N)N=CN2[C@H]3[C@H]([C@@H]([C@H](O3)CO)O)O</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
@@ -57,62 +59,62 @@ other, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Streptomyces antibioticus<br><span class="mono">NCBITaxon:1890</span></td>
+  <td>Streptomyces antibioticus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1890">NCBITaxon:1890</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0001735</td>
-  <td><span class="mono">PMID:28111097</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001735">mibig:BGC0001735</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/28111097/">PMID:28111097</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">6</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Eunicella cavolini<br><span class="mono">NCBITaxon:317547</span></td>
+  <td>Eunicella cavolini<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=317547">NCBITaxon:317547</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/BF01952539</td>
+  <td class="mono"><a href="https://doi.org/10.1007/BF01952539">DOI:10.1007/BF01952539</a></td>
 </tr>
 <tr>
-  <td>Daucus carota<br><span class="mono">NCBITaxon:4039</span></td>
+  <td>Daucus carota<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=4039">NCBITaxon:4039</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/0008-6215(84)85339-2</td>
+  <td class="mono"><a href="https://doi.org/10.1016/0008-6215%2884%2985339-2">DOI:10.1016/0008-6215(84)85339-2</a></td>
 </tr>
 <tr>
-  <td>Tillandsia usneoides<br><span class="mono">NCBITaxon:49541</span></td>
+  <td>Tillandsia usneoides<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=49541">NCBITaxon:49541</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/NP50122A023</td>
+  <td class="mono"><a href="https://doi.org/10.1021/NP50122A023">DOI:10.1021/NP50122A023</a></td>
 </tr>
 <tr>
-  <td>Streptomyces herbaceus<br><span class="mono">NCBITaxon:887449</span></td>
+  <td>Streptomyces herbaceus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=887449">NCBITaxon:887449</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.7164/ANTIBIOTICS.32.1050</td>
+  <td class="mono"><a href="https://doi.org/10.7164/ANTIBIOTICS.32.1050">DOI:10.7164/ANTIBIOTICS.32.1050</a></td>
 </tr>
 <tr>
-  <td>Streptomyces antibioticus<br><span class="mono">NCBITaxon:1890</span></td>
+  <td>Streptomyces antibioticus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1890">NCBITaxon:1890</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.7164/ANTIBIOTICS.32.1050</td>
+  <td class="mono"><a href="https://doi.org/10.7164/ANTIBIOTICS.32.1050">DOI:10.7164/ANTIBIOTICS.32.1050</a></td>
 </tr>
 <tr>
-  <td>Streptomyces antibioticus<br><span class="mono">NCBITaxon:1890</span></td>
+  <td>Streptomyces antibioticus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1890">NCBITaxon:1890</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.7164/ANTIBIOTICS.45.1914</td>
+  <td class="mono"><a href="https://doi.org/10.7164/ANTIBIOTICS.45.1914">DOI:10.7164/ANTIBIOTICS.45.1914</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0001735</td>
-  <td>Streptomyces antibioticus<br><span class="mono">NCBITaxon:1890</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001735">mibig:BGC0001735</a></td>
+  <td>Streptomyces antibioticus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1890">NCBITaxon:1890</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:KJ856912.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/KJ856912.1">genbank:KJ856912.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -122,20 +124,20 @@ isolation report left it.</p>
 <h2>Biosynthesis <span class="tag causal">curated</span></h2>
 <p class="sub">Written by a curator with claim-level evidence on each step; not
 derived from a source. This is what the rest of the record exists to support.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthesis steps"><table>
 <tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
 <tr>
   <td>1</td>
-  <td>PenF arabinoside monophosphate 5&#39;-nucleotidase<br><span class="mono">UniProtKB:A0A1S5NPU2</span></td>
+  <td>PenF arabinoside monophosphate 5&#39;-nucleotidase<br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/A0A1S5NPU2/entry">UniProtKB:A0A1S5NPU2</a></span></td>
   <td class="mono"></td>
-  <td class="mono">pubchem.compound:34768 &rarr; CHEBI:45327</td>
-  <td class="mono">DOI:10.3390/biom14111368</td>
+  <td class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/compound/34768">pubchem.compound:34768</a> &rarr; <a href="http://purl.obolibrary.org/obo/CHEBI_45327">CHEBI:45327</a></td>
+  <td class="mono"><a href="https://doi.org/10.3390/biom14111368">DOI:10.3390/biom14111368</a></td>
 </tr>
 </table></div>
 <p class="sub">Step 1: PenF hydrolyzes vidarabine phosphate, also called vidarabine 5&#39;-monophosphate or Ara-AMP, to adenine arabinoside (Ara-A, vidarabine) in vitro. This partial Streptomyces antibioticus NRRL 3238 pathway records the biochemically supported conversion as a proposed vidarabine biosynthetic step and leaves the upstream formation of Ara-AMP unresolved.</p>
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for adenine arabinoside">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for adenine arabinoside">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -168,18 +170,18 @@ derived from a source. This is what the rest of the record exists to support.</p
 </div>
 
 <h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
-<p class="sub">Proposed Streptomyces antibioticus NRRL 3238 PenF dephosphorylation of vidarabine phosphate during adenine arabinoside biosynthesis.</p><div class="scroll"><table>
+<p class="sub">Proposed Streptomyces antibioticus NRRL 3238 PenF dephosphorylation of vidarabine phosphate during adenine arabinoside biosynthesis.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>vidarabine phosphate</td>
   <td>is dephosphorylated by</td>
   <td>PenF</td>
   <td>Recombinant PenF catalyzes hydrolytic dephosphorylation of Ara-AMP to Ara-A; the in-cluster step is proposed because the source did not identify the upstream enzyme that forms the Ara-AMP substrate.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.3390/biom14111368<br>https://www.ncbi.nlm.nih.gov/nuccore/KJ856912.1<br>https://www.ncbi.nlm.nih.gov/protein/AKA87335.1<br>https://mibig.secondarymetabolites.org/repository/BGC0001735.5/BGC0001735.gbk<br>https://www.uniprot.org/uniprotkb/A0A1S5NPU2</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.3390/biom14111368</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>PenF catalyzed the hydrolysis of Ara-AMP into Ara-A</dd><dt>notes</dt><dd>Li et al. recombinantly expressed S. antibioticus NRRL 3238 PenF, identified its source sequence as NCBI Protein AKA87335.1, and biochemically characterized vidarabine 5&#39;-monophosphate hydrolysis to Ara-A by HPLC and LC-MS.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/KJ856912.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>gene=&#34;penF&#34;</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>GenBank KJ856912.1 maps Streptomyces antibioticus NRRL 3238 penF to the 18484..19560 CDS and assigns protein_id AKA87335.1.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AKA87335.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>metal dependent phosphohydrolase</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>NCBI GenPept AKA87335.1 is the 358 aa Streptomyces antibioticus PenF coding sequence used by Li et al.; its sequence is identical to the current UniProtKB:A0A1S5NPU2 FASTA.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0001735.5/BGC0001735.gbk</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>protein_id=&#34;AKA87335.1&#34;</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MIBiG BGC0001735.5 places penF at 18484..19560 in the Streptomyces antibioticus pentostatin and vidarabine gene cluster and annotates the CDS as AKA87335.1 metal dependent phosphohydrolase.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A1S5NPU2</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>GN=penF</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>Current UniProtKB:A0A1S5NPU2 resolves as the unreviewed 358 aa Streptomyces antibioticus metal dependent phosphohydrolase PenF; the retrieved UniProt JSON had no EMBL KJ856912.1 xref, so this grounding was accepted from the resolved accession, organism, gene, product, length and exact sequence identity to GenPept AKA87335.1.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.3390/biom14111368">DOI:10.3390/biom14111368</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/KJ856912.1">https://www.ncbi.nlm.nih.gov/nuccore/KJ856912.1</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AKA87335.1">https://www.ncbi.nlm.nih.gov/protein/AKA87335.1</a><br><a href="https://mibig.secondarymetabolites.org/repository/BGC0001735.5/BGC0001735.gbk">https://mibig.secondarymetabolites.org/repository/BGC0001735.5/BGC0001735.gbk</a><br><a href="https://www.uniprot.org/uniprotkb/A0A1S5NPU2">https://www.uniprot.org/uniprotkb/A0A1S5NPU2</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.3390/biom14111368">DOI:10.3390/biom14111368</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>PenF catalyzed the hydrolysis of Ara-AMP into Ara-A</dd><dt>notes</dt><dd>Li et al. recombinantly expressed S. antibioticus NRRL 3238 PenF, identified its source sequence as NCBI Protein AKA87335.1, and biochemically characterized vidarabine 5&#39;-monophosphate hydrolysis to Ara-A by HPLC and LC-MS.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/KJ856912.1">https://www.ncbi.nlm.nih.gov/nuccore/KJ856912.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>gene=&#34;penF&#34;</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>GenBank KJ856912.1 maps Streptomyces antibioticus NRRL 3238 penF to the 18484..19560 CDS and assigns protein_id AKA87335.1.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AKA87335.1">https://www.ncbi.nlm.nih.gov/protein/AKA87335.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>metal dependent phosphohydrolase</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>NCBI GenPept AKA87335.1 is the 358 aa Streptomyces antibioticus PenF coding sequence used by Li et al.; its sequence is identical to the current UniProtKB:A0A1S5NPU2 FASTA.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/repository/BGC0001735.5/BGC0001735.gbk">https://mibig.secondarymetabolites.org/repository/BGC0001735.5/BGC0001735.gbk</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>protein_id=&#34;AKA87335.1&#34;</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MIBiG BGC0001735.5 places penF at 18484..19560 in the Streptomyces antibioticus pentostatin and vidarabine gene cluster and annotates the CDS as AKA87335.1 metal dependent phosphohydrolase.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0A1S5NPU2">https://www.uniprot.org/uniprotkb/A0A1S5NPU2</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>GN=penF</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>Current UniProtKB:A0A1S5NPU2 resolves as the unreviewed 358 aa Streptomyces antibioticus metal dependent phosphohydrolase PenF; the retrieved UniProt JSON had no EMBL KJ856912.1 xref, so this grounding was accepted from the resolved accession, organism, gene, product, length and exact sequence identity to GenPept AKA87335.1.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -188,11 +190,11 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>forms</td>
   <td>adenine arabinoside</td>
   <td>PenF forms adenine arabinoside from the phosphorylated precursor in vitro and is proposed to act as a 5&#39;-nucleotidase in vidarabine biosynthesis.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.3390/biom14111368<br>https://www.ncbi.nlm.nih.gov/nuccore/KJ856912.1<br>https://www.ncbi.nlm.nih.gov/protein/AKA87335.1<br>https://mibig.secondarymetabolites.org/repository/BGC0001735.5/BGC0001735.gbk<br>https://www.uniprot.org/uniprotkb/A0A1S5NPU2</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.3390/biom14111368</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>PenF catalyzed the hydrolysis of Ara-AMP into Ara-A</dd><dt>notes</dt><dd>Li et al. recombinantly expressed S. antibioticus NRRL 3238 PenF, identified its source sequence as NCBI Protein AKA87335.1, and biochemically characterized vidarabine 5&#39;-monophosphate hydrolysis to Ara-A by HPLC and LC-MS.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/KJ856912.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>gene=&#34;penF&#34;</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>GenBank KJ856912.1 maps Streptomyces antibioticus NRRL 3238 penF to the 18484..19560 CDS and assigns protein_id AKA87335.1.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AKA87335.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>metal dependent phosphohydrolase</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>NCBI GenPept AKA87335.1 is the 358 aa Streptomyces antibioticus PenF coding sequence used by Li et al.; its sequence is identical to the current UniProtKB:A0A1S5NPU2 FASTA.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0001735.5/BGC0001735.gbk</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>protein_id=&#34;AKA87335.1&#34;</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MIBiG BGC0001735.5 places penF at 18484..19560 in the Streptomyces antibioticus pentostatin and vidarabine gene cluster and annotates the CDS as AKA87335.1 metal dependent phosphohydrolase.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A1S5NPU2</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>GN=penF</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>Current UniProtKB:A0A1S5NPU2 resolves as the unreviewed 358 aa Streptomyces antibioticus metal dependent phosphohydrolase PenF; the retrieved UniProt JSON had no EMBL KJ856912.1 xref, so this grounding was accepted from the resolved accession, organism, gene, product, length and exact sequence identity to GenPept AKA87335.1.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.3390/biom14111368">DOI:10.3390/biom14111368</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/KJ856912.1">https://www.ncbi.nlm.nih.gov/nuccore/KJ856912.1</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AKA87335.1">https://www.ncbi.nlm.nih.gov/protein/AKA87335.1</a><br><a href="https://mibig.secondarymetabolites.org/repository/BGC0001735.5/BGC0001735.gbk">https://mibig.secondarymetabolites.org/repository/BGC0001735.5/BGC0001735.gbk</a><br><a href="https://www.uniprot.org/uniprotkb/A0A1S5NPU2">https://www.uniprot.org/uniprotkb/A0A1S5NPU2</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.3390/biom14111368">DOI:10.3390/biom14111368</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>PenF catalyzed the hydrolysis of Ara-AMP into Ara-A</dd><dt>notes</dt><dd>Li et al. recombinantly expressed S. antibioticus NRRL 3238 PenF, identified its source sequence as NCBI Protein AKA87335.1, and biochemically characterized vidarabine 5&#39;-monophosphate hydrolysis to Ara-A by HPLC and LC-MS.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/KJ856912.1">https://www.ncbi.nlm.nih.gov/nuccore/KJ856912.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>gene=&#34;penF&#34;</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>GenBank KJ856912.1 maps Streptomyces antibioticus NRRL 3238 penF to the 18484..19560 CDS and assigns protein_id AKA87335.1.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AKA87335.1">https://www.ncbi.nlm.nih.gov/protein/AKA87335.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>metal dependent phosphohydrolase</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>NCBI GenPept AKA87335.1 is the 358 aa Streptomyces antibioticus PenF coding sequence used by Li et al.; its sequence is identical to the current UniProtKB:A0A1S5NPU2 FASTA.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/repository/BGC0001735.5/BGC0001735.gbk">https://mibig.secondarymetabolites.org/repository/BGC0001735.5/BGC0001735.gbk</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>protein_id=&#34;AKA87335.1&#34;</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MIBiG BGC0001735.5 places penF at 18484..19560 in the Streptomyces antibioticus pentostatin and vidarabine gene cluster and annotates the CDS as AKA87335.1 metal dependent phosphohydrolase.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0A1S5NPU2">https://www.uniprot.org/uniprotkb/A0A1S5NPU2</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>GN=penF</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>Current UniProtKB:A0A1S5NPU2 resolves as the unreviewed 358 aa Streptomyces antibioticus metal dependent phosphohydrolase PenF; the retrieved UniProt JSON had no EMBL KJ856912.1 xref, so this grounding was accepted from the resolved accession, organism, gene, product, length and exact sequence identity to GenPept AKA87335.1.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -203,32 +205,43 @@ by the corpus tests.</p>
 
 
 <h2>Elsewhere in the fleet</h2>
-<ul><li>AntibioticMech — <a class="mono" href="https://culturebotai.github.io/AntibioticMech/pages/antimicrobial_unspecified/adenine-arabinoside.html">CHEBI:45327</a>    (same structure, same inchikey)</li>
+<ul><li>AntibioticMech — <a class="mono" href="https://culturebotai.github.io/AntibioticMech/pages/unspecified/adenine-arabinoside.html">CHEBI:45327</a>    (same structure, same inchikey)</li>
 </ul>
 
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=OIRDTQYFTABQOQ-UHTZMRCNSA-N">AntibioticMech (adenine arabinoside) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=CHEBI%3A45327">MediaIngredientMech (CHEBI:45327) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A1890">TaxonMech: Streptomyces antibioticus (NCBITaxon:1890) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0001735">PathwayMech (mibig:BGC0001735) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q=CHEBI%3A45327">MediaIngredientMech (CHEBI:45327) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A1890">TaxonMech: Streptomyces antibioticus (NCBITaxon:1890) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0001735">PathwayMech (mibig:BGC0001735) &nearr;</a>
 </div>
 
 <h2>Open questions <span class="tag">1</span></h2>
-<div class="note"><p><strong>name-disagreement</strong> — ChEBI calls this structure &#39;adenine arabinoside&#39; and MIBiG calls it &#39;vidarabine&#39;. They share a Standard InChIKey, so if the names denote different compounds then one upstream record has the wrong structure. Check which.</p></div>
+<div class="note"><p><strong>name-disagreement</strong> <span class="tag">OPEN</span> <span class="tag">controversy</span> — ChEBI calls this structure &#39;adenine arabinoside&#39; and MIBiG calls it &#39;vidarabine&#39;. They share a Standard InChIKey, so if the names denote different compounds then one upstream record has the wrong structure. Check which.</p></div>
+
+<h2 id="curation-history">Curation history <span class="tag">5</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-13T10:44:30Z">2026-10-13T10:44:30Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources<p>Seeded from the committed inventories and curation tables.</p></li>
+<li><time datetime="2026-10-01T16:15:45Z">2026-10-01T16:15:45Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Regrounded the vidarabine phosphate/Ara-AMP precursor to pubchem.compound:34768, retaining the proposed PenF reaction and UniProtKB:A0A1S5NPU2 enzyme grounding.</p></li>
+<li><time datetime="2026-10-01T16:00:09Z">2026-10-01T16:00:09Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added a proposed BIOSYNTHESIS graph and pathway step for PenF dephosphorylation of vidarabine phosphate to adenine arabinoside, grounding the Streptomyces antibioticus PenF enzyme to UniProtKB:A0A1S5NPU2 by exact sequence identity to GenPept AKA87335.1 and leaving the step without a Rhea reaction because no exact Rhea entry was found.</p></li>
+<li><time datetime="2026-09-25T03:02:59Z">2026-09-25T03:02:59Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:10Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
 
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0001735</td><td>MIBIG</td><td>5</td></tr>
-<tr><td class="mono">CHEBI:45327</td><td>CHEBI</td><td>3-star</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001735">BGC0001735</a></td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_45327">CHEBI:45327</a></td><td>CHEBI</td><td>3-star</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/carbohydrates/adenine-arabinoside.yaml">data/natural_products/carbohydrates/adenine-arabinoside.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20CHEBI%3A45327&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Fcarbohydrates%2Fadenine-arabinoside.html">Report a problem with this record</a>: opens a GitHub issue that names CHEBI:45327 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Corpus as of 2026-10-23 22:53 UTC. Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 8e5d64d98cfd). Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Shikimates and phenylpropanoids</a> &middot; tropodithietic acid</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>tropodithietic acid</h1>
-<p class="sub"><span class="mono">CHEBI:156455</span>
+<p class="sub"><span class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_156455">CHEBI:156455</a></span>
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 <span class="tag">antibacterial</span><span class="tag">cytotoxic</span></p>
 <details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/shikimates_and_phenylpropanoids/tropodithietic-acid.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/shikimates_and_phenylpropanoids/tropodithietic-acid.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 <p>A monocarboxylic acid that is 8,9-dithiabicyclo[5.2.0]nona-1,3,6-triene substituted by a carboxy group at position 2 and an oxo group at position 3. It is a broad spectrum antibiotic produced by the marine bacterium Phaeobacter inhibens that also acts as a signalling molecule at lower concentrations.</p>
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">BLFCMITWMARUSM-UHFFFAOYSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">C1=CC(=O)C(=C2C(=C1)SS2)C(=O)O</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">pubchem:44632924</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/compound/44632924">pubchem:44632924</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Shikimates and phenylpropanoids</a> —
@@ -57,62 +59,62 @@ other, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Phaeobacter inhibens DSM 17395<br><span class="mono">NCBITaxon:391619</span></td>
+  <td>Phaeobacter inhibens DSM 17395<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=391619">NCBITaxon:391619</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0000932</td>
-  <td><span class="mono">PMID:24723119</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000932">mibig:BGC0000932</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/24723119/">PMID:24723119</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">6</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Phaeobacter inhibens<br><span class="mono">NCBITaxon:221822</span></td>
+  <td>Phaeobacter inhibens<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=221822">NCBITaxon:221822</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1039/C4CC01924E</td>
+  <td class="mono"><a href="https://doi.org/10.1039/C4CC01924E">DOI:10.1039/C4CC01924E</a></td>
 </tr>
 <tr>
-  <td>Phaeobacter inhibens<br><span class="mono">NCBITaxon:221822</span></td>
+  <td>Phaeobacter inhibens<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=221822">NCBITaxon:221822</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1128/MBIO.02118-15</td>
+  <td class="mono"><a href="https://doi.org/10.1128/MBIO.02118-15">DOI:10.1128/MBIO.02118-15</a></td>
 </tr>
 <tr>
-  <td>Phaeobacter inhibens<br><span class="mono">NCBITaxon:221822</span></td>
+  <td>Phaeobacter inhibens<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=221822">NCBITaxon:221822</a></span></td>
   <td>CHEBI</td>
-  <td class="mono">PMID:28389641</td>
+  <td class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/28389641/">PMID:28389641</a></td>
 </tr>
 <tr>
-  <td>Roseobacter<br><span class="mono">NCBITaxon:2433</span></td>
+  <td>Roseobacter<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2433">NCBITaxon:2433</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1128/AEM.70.4.2560-2565.2003</td>
+  <td class="mono"><a href="https://doi.org/10.1128/AEM.70.4.2560-2565.2003">DOI:10.1128/AEM.70.4.2560-2565.2003</a></td>
 </tr>
 <tr>
-  <td>Phaeobacter gallaeciensis<br><span class="mono">NCBITaxon:60890</span></td>
+  <td>Phaeobacter gallaeciensis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=60890">NCBITaxon:60890</a></span></td>
   <td>CHEBI</td>
-  <td class="mono">PMID:21430694</td>
+  <td class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/21430694/">PMID:21430694</a></td>
 </tr>
 <tr>
-  <td>Phaeobacter inhibens DSM 17395<br><span class="mono">NCBITaxon:391619</span></td>
+  <td>Phaeobacter inhibens DSM 17395<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=391619">NCBITaxon:391619</a></span></td>
   <td>CHEBI</td>
-  <td class="mono">PMID:25161739</td>
+  <td class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/25161739/">PMID:25161739</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0000932</td>
-  <td>Phaeobacter inhibens DSM 17395<br><span class="mono">NCBITaxon:391619</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000932">mibig:BGC0000932</a></td>
+  <td>Phaeobacter inhibens DSM 17395<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=391619">NCBITaxon:391619</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:CP002977.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/CP002977.1">genbank:CP002977.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -122,7 +124,7 @@ isolation report left it.</p>
 
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for tropodithietic acid">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for tropodithietic acid">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -158,105 +160,105 @@ isolation report left it.</p>
 
 <h2>Bioactivities <span class="tag">25</span></h2>
 <p class="sub">Entries preserve source qualifiers, targets and evidence. Repeated assay names or values are not independent replications; inspect source detail for differences.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Bioactivities"><table>
 <tr><th>Assay</th><th>Result</th><th>Target enzyme</th><th>Source detail</th></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the 786-0 Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1794775</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the 786-0 Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1794775</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794775, deposited by DTP/NCI; assay type Screening.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the 786-0 Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794775">pubchem.aid:1794775</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the 786-0 Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794775">pubchem.aid:1794775</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794775, deposited by DTP/NCI; assay type Screening.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the A498 Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1794774</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the A498 Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1794774</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794774, deposited by DTP/NCI; assay type Screening.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the A498 Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794774">pubchem.aid:1794774</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the A498 Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794774">pubchem.aid:1794774</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794774, deposited by DTP/NCI; assay type Screening.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the A549/ATCC Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1794740</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the A549/ATCC Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1794740</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794740, deposited by DTP/NCI; assay type Screening.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the A549/ATCC Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794740">pubchem.aid:1794740</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the A549/ATCC Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794740">pubchem.aid:1794740</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794740, deposited by DTP/NCI; assay type Screening.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the ACHN Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1794771</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the ACHN Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1794771</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794771, deposited by DTP/NCI; assay type Screening.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the ACHN Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794771">pubchem.aid:1794771</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the ACHN Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794771">pubchem.aid:1794771</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794771, deposited by DTP/NCI; assay type Screening.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the CCRF-CEM Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1794778</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the CCRF-CEM Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1794778</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794778, deposited by DTP/NCI; assay type Screening.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the CCRF-CEM Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794778">pubchem.aid:1794778</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the CCRF-CEM Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794778">pubchem.aid:1794778</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794778, deposited by DTP/NCI; assay type Screening.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the COLO 205 Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1794742</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the COLO 205 Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1794742</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794742, deposited by DTP/NCI; assay type Screening.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the COLO 205 Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794742">pubchem.aid:1794742</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the COLO 205 Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794742">pubchem.aid:1794742</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794742, deposited by DTP/NCI; assay type Screening.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the DU-145 Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1794760</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the DU-145 Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1794760</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794760, deposited by DTP/NCI; assay type Screening.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the DU-145 Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794760">pubchem.aid:1794760</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the DU-145 Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794760">pubchem.aid:1794760</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794760, deposited by DTP/NCI; assay type Screening.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the HCT-116 Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1794798</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the HCT-116 Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1794798</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794798, deposited by DTP/NCI; assay type Screening.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the HCT-116 Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794798">pubchem.aid:1794798</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the HCT-116 Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794798">pubchem.aid:1794798</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794798, deposited by DTP/NCI; assay type Screening.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the HCT-15 Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1794746</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the HCT-15 Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1794746</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794746, deposited by DTP/NCI; assay type Screening.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the HCT-15 Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794746">pubchem.aid:1794746</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the HCT-15 Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794746">pubchem.aid:1794746</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794746, deposited by DTP/NCI; assay type Screening.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the HL-60(TB) Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1794776</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the HL-60(TB) Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1794776</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794776, deposited by DTP/NCI; assay type Screening.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the HL-60(TB) Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794776">pubchem.aid:1794776</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the HL-60(TB) Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794776">pubchem.aid:1794776</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794776, deposited by DTP/NCI; assay type Screening.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the HOP-62 Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1794735</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the HOP-62 Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1794735</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794735, deposited by DTP/NCI; assay type Screening.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the HOP-62 Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794735">pubchem.aid:1794735</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the HOP-62 Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794735">pubchem.aid:1794735</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794735, deposited by DTP/NCI; assay type Screening.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the HOP-92 Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1794738</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the HOP-92 Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1794738</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794738, deposited by DTP/NCI; assay type Screening.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the HOP-92 Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794738">pubchem.aid:1794738</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the HOP-92 Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794738">pubchem.aid:1794738</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794738, deposited by DTP/NCI; assay type Screening.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the HT29 Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1794748</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the HT29 Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1794748</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794748, deposited by DTP/NCI; assay type Screening.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the HT29 Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794748">pubchem.aid:1794748</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the HT29 Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794748">pubchem.aid:1794748</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794748, deposited by DTP/NCI; assay type Screening.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the K-562 Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1794777</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the K-562 Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1794777</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794777, deposited by DTP/NCI; assay type Screening.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the K-562 Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794777">pubchem.aid:1794777</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the K-562 Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794777">pubchem.aid:1794777</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794777, deposited by DTP/NCI; assay type Screening.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the KM12 Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1794800</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the KM12 Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1794800</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794800, deposited by DTP/NCI; assay type Screening.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the KM12 Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794800">pubchem.aid:1794800</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the KM12 Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794800">pubchem.aid:1794800</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794800, deposited by DTP/NCI; assay type Screening.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the LOX IMVI Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1794757</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the LOX IMVI Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1794757</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794757, deposited by DTP/NCI; assay type Screening.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the LOX IMVI Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794757">pubchem.aid:1794757</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the LOX IMVI Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794757">pubchem.aid:1794757</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794757, deposited by DTP/NCI; assay type Screening.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the M14 Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1794745</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the M14 Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1794745</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794745, deposited by DTP/NCI; assay type Screening.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the M14 Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794745">pubchem.aid:1794745</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the M14 Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794745">pubchem.aid:1794745</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794745, deposited by DTP/NCI; assay type Screening.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the MALME-3M Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1794766</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the MALME-3M Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1794766</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794766, deposited by DTP/NCI; assay type Screening.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the MALME-3M Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794766">pubchem.aid:1794766</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the MALME-3M Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794766">pubchem.aid:1794766</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794766, deposited by DTP/NCI; assay type Screening.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the MCF7 Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1794796</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the MCF7 Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1794796</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794796, deposited by DTP/NCI; assay type Screening.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the MCF7 Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794796">pubchem.aid:1794796</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the MCF7 Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794796">pubchem.aid:1794796</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794796, deposited by DTP/NCI; assay type Screening.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the MDA-MB-231/ATCC Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1794789</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the MDA-MB-231/ATCC Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1794789</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794789, deposited by DTP/NCI; assay type Screening.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the MDA-MB-231/ATCC Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794789">pubchem.aid:1794789</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the MDA-MB-231/ATCC Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794789">pubchem.aid:1794789</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794789, deposited by DTP/NCI; assay type Screening.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the MDA-MB-468 Breast cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202374</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the MDA-MB-468 Breast cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202374</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202374, deposited by DTP/NCI; assay type Screening.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the MDA-MB-468 Breast cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202374">pubchem.aid:2202374</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the MDA-MB-468 Breast cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202374">pubchem.aid:2202374</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202374, deposited by DTP/NCI; assay type Screening.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the MOLT-4 Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1794779</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the MOLT-4 Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1794779</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794779, deposited by DTP/NCI; assay type Screening.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the MOLT-4 Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794779">pubchem.aid:1794779</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the MOLT-4 Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794779">pubchem.aid:1794779</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794779, deposited by DTP/NCI; assay type Screening.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the NCI-H226 Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1794732</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the NCI-H226 Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1794732</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794732, deposited by DTP/NCI; assay type Screening.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the NCI-H226 Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794732">pubchem.aid:1794732</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the NCI-H226 Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794732">pubchem.aid:1794732</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794732, deposited by DTP/NCI; assay type Screening.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the NCI-H23 Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1794731</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the NCI-H23 Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1794731</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794731, deposited by DTP/NCI; assay type Screening.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the NCI-H23 Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794731">pubchem.aid:1794731</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the NCI-H23 Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794731">pubchem.aid:1794731</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794731, deposited by DTP/NCI; assay type Screening.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the NCI-H460 Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1794736</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the NCI-H460 Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1794736</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794736, deposited by DTP/NCI; assay type Screening.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the NCI-H460 Non-Small Cell Lung cell line, single concentration</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794736">pubchem.aid:1794736</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the NCI-H460 Non-Small Cell Lung cell line, single concentration</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1794736">pubchem.aid:1794736</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794736, deposited by DTP/NCI; assay type Screening.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd><dt>notes</dt><dd>16 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but not written here.</dd></dl>
 </details></td></tr>
@@ -269,24 +271,33 @@ isolation report left it.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=BLFCMITWMARUSM-UHFFFAOYSA-N">AntibioticMech (tropodithietic acid) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=CHEBI%3A156455">MediaIngredientMech (CHEBI:156455) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A391619">TaxonMech: Phaeobacter inhibens DSM 17395 (NCBITaxon:391619) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000932">PathwayMech (mibig:BGC0000932) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q=CHEBI%3A156455">MediaIngredientMech (CHEBI:156455) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A391619">TaxonMech: Phaeobacter inhibens DSM 17395 (NCBITaxon:391619) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000932">PathwayMech (mibig:BGC0000932) &nearr;</a>
 </div>
 
 
+<h2 id="curation-history">Curation history <span class="tag">3</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-13T10:42:43Z">2026-10-13T10:42:43Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources<p>Seeded from the committed inventories and curation tables.</p></li>
+<li><time datetime="2026-09-25T03:01:37Z">2026-09-25T03:01:37Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:04Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
+
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0000932</td><td>MIBIG</td><td>5</td></tr>
-<tr><td class="mono">CHEBI:156455</td><td>CHEBI</td><td>3-star</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000932">BGC0000932</a></td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_156455">CHEBI:156455</a></td><td>CHEBI</td><td>3-star</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/shikimates_and_phenylpropanoids/tropodithietic-acid.yaml">data/natural_products/shikimates_and_phenylpropanoids/tropodithietic-acid.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20CHEBI%3A156455&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Fshikimates_and_phenylpropanoids%2Ftropodithietic-acid.html">Report a problem with this record</a>: opens a GitHub issue that names CHEBI:156455 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Corpus as of 2026-10-23 22:53 UTC. Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 8e5d64d98cfd). Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

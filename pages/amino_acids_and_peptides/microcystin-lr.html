@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Amino acids and peptides</a> &middot; microcystin-LR</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>microcystin-LR</h1>
-<p class="sub"><span class="mono">CHEBI:6925</span>
+<p class="sub"><span class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_6925">CHEBI:6925</a></span>
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 <span class="tag">cytotoxic</span></p>
 <details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/amino_acids_and_peptides/microcystin-lr.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/amino_acids_and_peptides/microcystin-lr.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 <p>A microcystin consisting of D-alanyl, L-leucyl, (3S)-3-methyl-D-β-aspartyl,L-arginyl, 2S,3S,4E,6E,8S,9S)-3-amino-4,5,6,7-tetradehydro-9-methoxy-2,6,8-trimethyl-10-phenyldecanoyl, D-γ-glutamyl, and 2,3-didehydro-N-methylalanyl residues joined into a 25-membered macrocycle. Produced by the cyanobacterium Microcystis aeruginosa, it is the most studied of the microcystins.</p>
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">ZYZCGGRZINLQBL-GWRQVWKTSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">C[C@H]1[C@@H](NC(=O)[C@@H](NC(=O)[C@H]([C@@H](NC(=O)[C@@H](NC(=O)[C@H](NC(=O)C(=C)N(C(=O)CC[C@@H](NC1=O)C(=O)O)C)C)CC(C)C)C(=O)O)C)CCCN=C(N)N)/C=C/C(=C/[C@H](C)[C@H](CC2=CC=CC=C2)OC)/C</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">pubchem:445434, chembl:CHEMBL444092, npatlas:NPA0593</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/compound/445434">pubchem:445434</a>, <a href="https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL444092">chembl:CHEMBL444092</a>, <a href="https://www.npatlas.org/explore/compounds/NPA0593">npatlas:NPA0593</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Amino acids and peptides</a> —
@@ -57,178 +59,178 @@ nrps, pks, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Microcystis aeruginosa PCC 7806<br><span class="mono">NCBITaxon:267872</span></td>
+  <td>Microcystis aeruginosa PCC 7806<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=267872">NCBITaxon:267872</a></span></td>
   <td><span class="tag causal">BGC_CHARACTERIZED</span></td>
-  <td class="mono">mibig:BGC0001017</td>
-  <td><span class="mono">PMID:11033079</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001017">mibig:BGC0001017</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/11033079/">PMID:11033079</a></span></td>
 </tr>
 <tr>
-  <td>Anabaena sp. 90<br><span class="mono">NCBITaxon:46234</span></td>
+  <td>Anabaena sp. 90<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=46234">NCBITaxon:46234</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0001016</td>
-  <td><span class="mono">PMID:14766543</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001016">mibig:BGC0001016</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/14766543/">PMID:14766543</a></span></td>
 </tr>
 <tr>
-  <td>Fischerella sp. CENA161<br><span class="mono">NCBITaxon:548826</span></td>
+  <td>Fischerella sp. CENA161<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=548826">NCBITaxon:548826</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0001667</td>
-  <td><span class="mono">PMID:29154789</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001667">mibig:BGC0001667</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/29154789/">PMID:29154789</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">24</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Microcystis<br><span class="mono">NCBITaxon:1125</span></td>
+  <td>Microcystis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1125">NCBITaxon:1125</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/0041-0101(94)90030-2</td>
+  <td class="mono"><a href="https://doi.org/10.1016/0041-0101%2894%2990030-2">DOI:10.1016/0041-0101(94)90030-2</a></td>
 </tr>
 <tr>
-  <td>Microcystis<br><span class="mono">NCBITaxon:1125</span></td>
+  <td>Microcystis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1125">NCBITaxon:1125</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/ES00050A024</td>
+  <td class="mono"><a href="https://doi.org/10.1021/ES00050A024">DOI:10.1021/ES00050A024</a></td>
 </tr>
 <tr>
-  <td>Microcystis aeruginosa<br><span class="mono">NCBITaxon:1126</span></td>
+  <td>Microcystis aeruginosa<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1126">NCBITaxon:1126</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/0040-4020(96)00452-8</td>
+  <td class="mono"><a href="https://doi.org/10.1016/0040-4020%2896%2900452-8">DOI:10.1016/0040-4020(96)00452-8</a></td>
 </tr>
 <tr>
-  <td>Microcystis aeruginosa<br><span class="mono">NCBITaxon:1126</span></td>
+  <td>Microcystis aeruginosa<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1126">NCBITaxon:1126</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/0041-0101(88)90200-0</td>
+  <td class="mono"><a href="https://doi.org/10.1016/0041-0101%2888%2990200-0">DOI:10.1016/0041-0101(88)90200-0</a></td>
 </tr>
 <tr>
-  <td>Microcystis aeruginosa<br><span class="mono">NCBITaxon:1126</span></td>
+  <td>Microcystis aeruginosa<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1126">NCBITaxon:1126</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/0041-0101(95)00145-X</td>
+  <td class="mono"><a href="https://doi.org/10.1016/0041-0101%2895%2900145-X">DOI:10.1016/0041-0101(95)00145-X</a></td>
 </tr>
 <tr>
-  <td>Microcystis aeruginosa<br><span class="mono">NCBITaxon:1126</span></td>
+  <td>Microcystis aeruginosa<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1126">NCBITaxon:1126</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/S0021-9673(01)84589-1</td>
+  <td class="mono"><a href="https://doi.org/10.1016/S0021-9673%2801%2984589-1">DOI:10.1016/S0021-9673(01)84589-1</a></td>
 </tr>
 <tr>
-  <td>Microcystis aeruginosa<br><span class="mono">NCBITaxon:1126</span></td>
+  <td>Microcystis aeruginosa<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1126">NCBITaxon:1126</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/S1074-5521(00)00021-1</td>
+  <td class="mono"><a href="https://doi.org/10.1016/S1074-5521%2800%2900021-1">DOI:10.1016/S1074-5521(00)00021-1</a></td>
 </tr>
 <tr>
-  <td>Microcystis aeruginosa<br><span class="mono">NCBITaxon:1126</span></td>
+  <td>Microcystis aeruginosa<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1126">NCBITaxon:1126</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/ACS.JNATPROD.7B00986</td>
+  <td class="mono"><a href="https://doi.org/10.1021/ACS.JNATPROD.7B00986">DOI:10.1021/ACS.JNATPROD.7B00986</a></td>
 </tr>
 <tr>
-  <td>Microcystis aeruginosa<br><span class="mono">NCBITaxon:1126</span></td>
+  <td>Microcystis aeruginosa<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1126">NCBITaxon:1126</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/JA00013A066</td>
+  <td class="mono"><a href="https://doi.org/10.1021/JA00013A066">DOI:10.1021/JA00013A066</a></td>
 </tr>
 <tr>
-  <td>Microcystis aeruginosa<br><span class="mono">NCBITaxon:1126</span></td>
+  <td>Microcystis aeruginosa<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1126">NCBITaxon:1126</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/JO00029A016</td>
+  <td class="mono"><a href="https://doi.org/10.1021/JO00029A016">DOI:10.1021/JO00029A016</a></td>
 </tr>
 <tr>
-  <td>Microcystis aeruginosa<br><span class="mono">NCBITaxon:1126</span></td>
+  <td>Microcystis aeruginosa<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1126">NCBITaxon:1126</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1039/P19850002747</td>
+  <td class="mono"><a href="https://doi.org/10.1039/P19850002747">DOI:10.1039/P19850002747</a></td>
 </tr>
 <tr>
-  <td>Microcystis aeruginosa<br><span class="mono">NCBITaxon:1126</span></td>
+  <td>Microcystis aeruginosa<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1126">NCBITaxon:1126</a></span></td>
   <td>CYANOMETDB</td>
-  <td class="mono">DOI:10.1039/p19850002747</td>
+  <td class="mono"><a href="https://doi.org/10.1039/p19850002747">DOI:10.1039/p19850002747</a></td>
 </tr>
 <tr>
-  <td>Microcystis aeruginosa<br><span class="mono">NCBITaxon:1126</span></td>
+  <td>Microcystis aeruginosa<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1126">NCBITaxon:1126</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1073/PNAS.86.3.770</td>
+  <td class="mono"><a href="https://doi.org/10.1073/PNAS.86.3.770">DOI:10.1073/PNAS.86.3.770</a></td>
 </tr>
 <tr>
-  <td>Microcystis aeruginosa<br><span class="mono">NCBITaxon:1126</span></td>
+  <td>Microcystis aeruginosa<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1126">NCBITaxon:1126</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1081/JLC-120003265</td>
+  <td class="mono"><a href="https://doi.org/10.1081/JLC-120003265">DOI:10.1081/JLC-120003265</a></td>
 </tr>
 <tr>
-  <td>Microcystis aeruginosa<br><span class="mono">NCBITaxon:1126</span></td>
+  <td>Microcystis aeruginosa<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1126">NCBITaxon:1126</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1515/BCHM3.1993.374.7-12.635</td>
+  <td class="mono"><a href="https://doi.org/10.1515/BCHM3.1993.374.7-12.635">DOI:10.1515/BCHM3.1993.374.7-12.635</a></td>
 </tr>
 <tr>
-  <td>Microcystis aeruginosa<br><span class="mono">NCBITaxon:1126</span></td>
+  <td>Microcystis aeruginosa<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1126">NCBITaxon:1126</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.5694/J.1326-5377.1983.TB136192.X</td>
+  <td class="mono"><a href="https://doi.org/10.5694/J.1326-5377.1983.TB136192.X">DOI:10.5694/J.1326-5377.1983.TB136192.X</a></td>
 </tr>
 <tr>
-  <td>Anabaena<br><span class="mono">NCBITaxon:1163</span></td>
+  <td>Anabaena<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1163">NCBITaxon:1163</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1128/AEM.70.2.686-692.2004</td>
+  <td class="mono"><a href="https://doi.org/10.1128/AEM.70.2.686-692.2004">DOI:10.1128/AEM.70.2.686-692.2004</a></td>
 </tr>
 <tr>
-  <td>Aphanizomenon flos-aquae<br><span class="mono">NCBITaxon:1176</span></td>
+  <td>Aphanizomenon flos-aquae<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1176">NCBITaxon:1176</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/0041-0101(92)90522-7</td>
+  <td class="mono"><a href="https://doi.org/10.1016/0041-0101%2892%2990522-7">DOI:10.1016/0041-0101(92)90522-7</a></td>
 </tr>
 <tr>
-  <td>Fischerella<br><span class="mono">NCBITaxon:1190</span></td>
+  <td>Fischerella<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1190">NCBITaxon:1190</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/J.TOXICON.2017.10.021</td>
+  <td class="mono"><a href="https://doi.org/10.1016/J.TOXICON.2017.10.021">DOI:10.1016/J.TOXICON.2017.10.021</a></td>
 </tr>
 <tr>
-  <td>Romanoa<br><span class="mono">NCBITaxon:316894</span></td>
+  <td>Romanoa<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=316894">NCBITaxon:316894</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1128/AEM.70.2.686-692.2004</td>
+  <td class="mono"><a href="https://doi.org/10.1128/AEM.70.2.686-692.2004">DOI:10.1128/AEM.70.2.686-692.2004</a></td>
 </tr>
 <tr>
-  <td>Microcystis viridis<br><span class="mono">NCBITaxon:44822</span></td>
+  <td>Microcystis viridis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=44822">NCBITaxon:44822</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/0041-0101(88)90200-0</td>
+  <td class="mono"><a href="https://doi.org/10.1016/0041-0101%2888%2990200-0">DOI:10.1016/0041-0101(88)90200-0</a></td>
 </tr>
 <tr>
-  <td>Microcystis viridis<br><span class="mono">NCBITaxon:44822</span></td>
+  <td>Microcystis viridis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=44822">NCBITaxon:44822</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/0041-0101(90)90006-S</td>
+  <td class="mono"><a href="https://doi.org/10.1016/0041-0101%2890%2990006-S">DOI:10.1016/0041-0101(90)90006-S</a></td>
 </tr>
 <tr>
-  <td>Microcystis viridis<br><span class="mono">NCBITaxon:44822</span></td>
+  <td>Microcystis viridis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=44822">NCBITaxon:44822</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/S0021-9673(01)84589-1</td>
+  <td class="mono"><a href="https://doi.org/10.1016/S0021-9673%2801%2984589-1">DOI:10.1016/S0021-9673(01)84589-1</a></td>
 </tr>
 <tr>
-  <td>Nodularia spumigena<br><span class="mono">NCBITaxon:70799</span></td>
+  <td>Nodularia spumigena<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=70799">NCBITaxon:70799</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/S0040-4039(00)61500-9</td>
+  <td class="mono"><a href="https://doi.org/10.1016/S0040-4039%2800%2961500-9">DOI:10.1016/S0040-4039(00)61500-9</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">3</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0001017</td>
-  <td>Microcystis aeruginosa PCC 7806<br><span class="mono">NCBITaxon:267872</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001017">mibig:BGC0001017</a></td>
+  <td>Microcystis aeruginosa PCC 7806<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=267872">NCBITaxon:267872</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:AF183408.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF183408.1">genbank:AF183408.1</a></td>
 </tr>
 <tr>
-  <td class="mono">mibig:BGC0001016</td>
-  <td>Anabaena sp. 90<br><span class="mono">NCBITaxon:46234</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001016">mibig:BGC0001016</a></td>
+  <td>Anabaena sp. 90<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=46234">NCBITaxon:46234</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:AY212249.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AY212249.1">genbank:AY212249.1</a></td>
 </tr>
 <tr>
-  <td class="mono">mibig:BGC0001667</td>
-  <td>Fischerella sp. CENA161<br><span class="mono">NCBITaxon:548826</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001667">mibig:BGC0001667</a></td>
+  <td>Fischerella sp. CENA161<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=548826">NCBITaxon:548826</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:KX891213.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/KX891213.1">genbank:KX891213.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -238,7 +240,7 @@ isolation report left it.</p>
 
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for microcystin-LR">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for microcystin-LR">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -274,9 +276,9 @@ isolation report left it.</p>
 
 <h2>Bioactivities <span class="tag">1</span></h2>
 <p class="sub">Entries preserve source qualifiers, targets and evidence. Repeated assay names or values are not independent replications; inspect source detail for differences.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Bioactivities"><table>
 <tr><th>Assay</th><th>Result</th><th>Target enzyme</th><th>Source detail</th></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the IGROV1 Ovarian cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:101</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the IGROV1 Ovarian cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:101</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 101, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the IGROV1 Ovarian cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/101">pubchem.aid:101</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the IGROV1 Ovarian cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/101">pubchem.aid:101</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 101, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
@@ -286,33 +288,41 @@ isolation report left it.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=ZYZCGGRZINLQBL-GWRQVWKTSA-N">AntibioticMech (microcystin-LR) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=CHEBI%3A6925">MediaIngredientMech (CHEBI:6925) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A267872">TaxonMech: Microcystis aeruginosa PCC 7806 (NCBITaxon:267872) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A46234">TaxonMech: Anabaena sp. 90 (NCBITaxon:46234) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A548826">TaxonMech: Fischerella sp. CENA161 (NCBITaxon:548826) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0001017">PathwayMech (mibig:BGC0001017) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0001016">PathwayMech (mibig:BGC0001016) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0001667">PathwayMech (mibig:BGC0001667) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q=CHEBI%3A6925">MediaIngredientMech (CHEBI:6925) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A267872">TaxonMech: Microcystis aeruginosa PCC 7806 (NCBITaxon:267872) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A46234">TaxonMech: Anabaena sp. 90 (NCBITaxon:46234) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A548826">TaxonMech: Fischerella sp. CENA161 (NCBITaxon:548826) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0001017">PathwayMech (mibig:BGC0001017) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0001016">PathwayMech (mibig:BGC0001016) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0001667">PathwayMech (mibig:BGC0001667) &nearr;</a>
 </div>
 
 <h2>Open questions <span class="tag">2</span></h2>
-<div class="note"><p><strong>name-disagreement</strong> — ChEBI calls this structure &#39;microcystin-LR&#39; and MIBiG calls it &#39;microcystin LR&#39;. They share a Standard InChIKey, so if the names denote different compounds then one upstream record has the wrong structure. Check which.</p></div>
-<div class="note"><p><strong>shared-structure</strong> — This structure is reported by more than one MIBiG entry: BGC0001016, BGC0001017, BGC0001667. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
+<div class="note"><p><strong>name-disagreement</strong> <span class="tag">OPEN</span> <span class="tag">controversy</span> — ChEBI calls this structure &#39;microcystin-LR&#39; and MIBiG calls it &#39;microcystin LR&#39;. They share a Standard InChIKey, so if the names denote different compounds then one upstream record has the wrong structure. Check which.</p></div>
+<div class="note"><p><strong>shared-structure</strong> <span class="tag">OPEN</span> <span class="tag">curation todo</span> — This structure is reported by more than one MIBiG entry: BGC0001016, BGC0001017, BGC0001667. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
+
+<h2 id="curation-history">Curation history <span class="tag">2</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-09-25T03:04:01Z">2026-09-25T03:04:01Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:17Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
 
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0001017</td><td>MIBIG</td><td>5</td></tr>
-<tr><td class="mono">BGC0001016</td><td>MIBIG</td><td>5</td></tr>
-<tr><td class="mono">BGC0001667</td><td>MIBIG</td><td>4</td></tr>
-<tr><td class="mono">CHEBI:6925</td><td>CHEBI</td><td>3-star</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001017">BGC0001017</a></td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001016">BGC0001016</a></td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001667">BGC0001667</a></td><td>MIBIG</td><td>4</td></tr>
+<tr><td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_6925">CHEBI:6925</a></td><td>CHEBI</td><td>3-star</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/amino_acids_and_peptides/microcystin-lr.yaml">data/natural_products/amino_acids_and_peptides/microcystin-lr.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20CHEBI%3A6925&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Famino_acids_and_peptides%2Fmicrocystin-lr.html">Report a problem with this record</a>: opens a GitHub issue that names CHEBI:6925 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Corpus as of 2026-10-23 22:53 UTC. Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 8e5d64d98cfd). Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>
