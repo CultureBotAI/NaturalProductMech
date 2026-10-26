@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Polyketides</a> &middot; aclacinomycin</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,22 +32,22 @@
   </form>
 </div>
 <h1>aclacinomycin</h1>
-<p class="sub"><span class="mono">naturalproductmech:mibig-c3a853f63e</span>
+<p class="sub"><span class="mono"><a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/polyketides/aclacinomycin.yaml">naturalproductmech:mibig-c3a853f63e</a></span>
   <span class="tag">MINTED</span>
   <span class="tag">SEEDED</span>
 <span class="tag">cytotoxic</span></p>
 <div class="note"><strong>Grounding review:</strong> No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.</div><details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/aclacinomycin.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/aclacinomycin.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">USZYSDMBJDPRIF-XCKHQVGJSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">CC[C@]1(C[C@@H](C2=C([C@H]1C(=O)OC)C=C3C(=C2O)C(=O)C4=C(C3=O)C=CC=C4O)OC5CC(C(C(O5)C)OC6CC(C(C(O6)C)OC7CCC(=O)C(O7)C)O)N(C)C)O</td></tr>
 <tr><th>Stereochemistry</th><td>  <span class="tag weak">undefined stereocentres</span> — the InChIKey does not
   distinguish this compound from its stereoisomers</td></tr>
-<tr><th>Cross-references</th><td class="mono">pubchem:308141</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/compound/308141">pubchem:308141</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Polyketides</a> —
@@ -58,53 +60,53 @@ pks, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Streptomyces galilaeus<br><span class="mono">NCBITaxon:33899</span></td>
+  <td>Streptomyces galilaeus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=33899">NCBITaxon:33899</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0000191</td>
-  <td><span class="mono">PMID:12399480</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000191">mibig:BGC0000191</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/12399480/">PMID:12399480</a></span></td>
 </tr>
 <tr>
-  <td>Streptomyces galilaeus<br><span class="mono">NCBITaxon:33899</span></td>
+  <td>Streptomyces galilaeus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=33899">NCBITaxon:33899</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0000192</td>
-  <td><span class="mono">PMID:12137949</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000192">mibig:BGC0000192</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/12137949/">PMID:12137949</a></span></td>
 </tr>
 <tr>
-  <td>Streptomyces galilaeus<br><span class="mono">NCBITaxon:33899</span></td>
+  <td>Streptomyces galilaeus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=33899">NCBITaxon:33899</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0000193</td>
-  <td><span class="mono">PMID:11016846</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000193">mibig:BGC0000193</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/11016846/">PMID:11016846</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">0</span></h2>
 <p class="sub">None cited.</p>
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">3</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0000191</td>
-  <td>Streptomyces galilaeus<br><span class="mono">NCBITaxon:33899</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000191">mibig:BGC0000191</a></td>
+  <td>Streptomyces galilaeus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=33899">NCBITaxon:33899</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:AB008466.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AB008466.1">genbank:AB008466.1</a></td>
 </tr>
 <tr>
-  <td class="mono">mibig:BGC0000192</td>
-  <td>Streptomyces galilaeus<br><span class="mono">NCBITaxon:33899</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000192">mibig:BGC0000192</a></td>
+  <td>Streptomyces galilaeus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=33899">NCBITaxon:33899</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:AF257324.2</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF257324.2">genbank:AF257324.2</a></td>
 </tr>
 <tr>
-  <td class="mono">mibig:BGC0000193</td>
-  <td>Streptomyces galilaeus<br><span class="mono">NCBITaxon:33899</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000193">mibig:BGC0000193</a></td>
+  <td>Streptomyces galilaeus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=33899">NCBITaxon:33899</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:AF264025.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF264025.1">genbank:AF264025.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -114,7 +116,7 @@ isolation report left it.</p>
 
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for aclacinomycin">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for aclacinomycin">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -150,105 +152,105 @@ isolation report left it.</p>
 
 <h2>Bioactivities <span class="tag">25</span></h2>
 <p class="sub">Entries preserve source qualifiers, targets and evidence. Repeated assay names or values are not independent replications; inspect source detail for differences.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Bioactivities"><table>
 <tr><th>Assay</th><th>Result</th><th>Target enzyme</th><th>Source detail</th></tr>
-<tr><td>A screen for compounds that inhibit processive DNA synthesis of vaccinia virus</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:493162</summary><dl><dt>assay</dt><dd>A screen for compounds that inhibit processive DNA synthesis of vaccinia virus</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:493162</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 493162, deposited by ICCB-Longwood/NSRB Screening Facility, Harvard Medical School; assay type Other. Target accession AAB59829 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>A screen for compounds that inhibit processive DNA synthesis of vaccinia virus</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/493162">pubchem.aid:493162</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>A screen for compounds that inhibit processive DNA synthesis of vaccinia virus</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/493162">pubchem.aid:493162</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 493162, deposited by ICCB-Longwood/NSRB Screening Facility, Harvard Medical School; assay type Other. Target accession AAB59829 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd></dl>
 </details></td></tr>
-<tr><td>NCI In Vivo Anticancer Drug Screen. Data for tumor model B16 Melanoma (intraperitoneal) in B6C3F1 mice</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:200</summary><dl><dt>assay</dt><dd>NCI In Vivo Anticancer Drug Screen. Data for tumor model B16 Melanoma (intraperitoneal) in B6C3F1 mice</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:200</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 200, deposited by DTP/NCI; assay type Other.</dd></dl>
+<tr><td>NCI In Vivo Anticancer Drug Screen. Data for tumor model B16 Melanoma (intraperitoneal) in B6C3F1 mice</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/200">pubchem.aid:200</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI In Vivo Anticancer Drug Screen. Data for tumor model B16 Melanoma (intraperitoneal) in B6C3F1 mice</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/200">pubchem.aid:200</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 200, deposited by DTP/NCI; assay type Other.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI In Vivo Anticancer Drug Screen. Data for tumor model B16 Melanoma (intraperitoneal) in B6D2F1 (BDF1) mice</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:192</summary><dl><dt>assay</dt><dd>NCI In Vivo Anticancer Drug Screen. Data for tumor model B16 Melanoma (intraperitoneal) in B6D2F1 (BDF1) mice</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:192</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 192, deposited by DTP/NCI; assay type Other.</dd></dl>
+<tr><td>NCI In Vivo Anticancer Drug Screen. Data for tumor model B16 Melanoma (intraperitoneal) in B6D2F1 (BDF1) mice</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/192">pubchem.aid:192</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI In Vivo Anticancer Drug Screen. Data for tumor model B16 Melanoma (intraperitoneal) in B6D2F1 (BDF1) mice</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/192">pubchem.aid:192</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 192, deposited by DTP/NCI; assay type Other.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI In Vivo Anticancer Drug Screen. Data for tumor model P388 Leukemia (intraperitoneal) in B6D2F1 (BDF1) mice</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:328</summary><dl><dt>assay</dt><dd>NCI In Vivo Anticancer Drug Screen. Data for tumor model P388 Leukemia (intraperitoneal) in B6D2F1 (BDF1) mice</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:328</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 328, deposited by DTP/NCI; assay type Other.</dd></dl>
+<tr><td>NCI In Vivo Anticancer Drug Screen. Data for tumor model P388 Leukemia (intraperitoneal) in B6D2F1 (BDF1) mice</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/328">pubchem.aid:328</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI In Vivo Anticancer Drug Screen. Data for tumor model P388 Leukemia (intraperitoneal) in B6D2F1 (BDF1) mice</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/328">pubchem.aid:328</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 328, deposited by DTP/NCI; assay type Other.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI In Vivo Anticancer Drug Screen. Data for tumor model P388 Leukemia (intraperitoneal) in CD2F1 (CDF1) mice</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:330</summary><dl><dt>assay</dt><dd>NCI In Vivo Anticancer Drug Screen. Data for tumor model P388 Leukemia (intraperitoneal) in CD2F1 (CDF1) mice</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:330</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 330, deposited by DTP/NCI; assay type Other.</dd></dl>
+<tr><td>NCI In Vivo Anticancer Drug Screen. Data for tumor model P388 Leukemia (intraperitoneal) in CD2F1 (CDF1) mice</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/330">pubchem.aid:330</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI In Vivo Anticancer Drug Screen. Data for tumor model P388 Leukemia (intraperitoneal) in CD2F1 (CDF1) mice</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/330">pubchem.aid:330</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 330, deposited by DTP/NCI; assay type Other.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI In Vivo Anticancer Drug Screen. Data for tumor model P388 Leukemia resistant to AMSA; NSC 249992 (intraperitoneal) in CD2F1 (CDF1) mice</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:324</summary><dl><dt>assay</dt><dd>NCI In Vivo Anticancer Drug Screen. Data for tumor model P388 Leukemia resistant to AMSA; NSC 249992 (intraperitoneal) in CD2F1 (CDF1) mice</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:324</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 324, deposited by DTP/NCI; assay type Other.</dd></dl>
+<tr><td>NCI In Vivo Anticancer Drug Screen. Data for tumor model P388 Leukemia resistant to AMSA; NSC 249992 (intraperitoneal) in CD2F1 (CDF1) mice</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/324">pubchem.aid:324</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI In Vivo Anticancer Drug Screen. Data for tumor model P388 Leukemia resistant to AMSA; NSC 249992 (intraperitoneal) in CD2F1 (CDF1) mice</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/324">pubchem.aid:324</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 324, deposited by DTP/NCI; assay type Other.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI In Vivo Anticancer Drug Screen. Data for tumor model P388 Leukemia resistant to Dihydroxy Anthracenedione; NSC 299195 (intraperitoneal) in CD2F1 (CDF1) mice</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:326</summary><dl><dt>assay</dt><dd>NCI In Vivo Anticancer Drug Screen. Data for tumor model P388 Leukemia resistant to Dihydroxy Anthracenedione; NSC 299195 (intraperitoneal) in CD2F1 (CDF1) mice</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:326</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 326, deposited by DTP/NCI; assay type Other.</dd></dl>
+<tr><td>NCI In Vivo Anticancer Drug Screen. Data for tumor model P388 Leukemia resistant to Dihydroxy Anthracenedione; NSC 299195 (intraperitoneal) in CD2F1 (CDF1) mice</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/326">pubchem.aid:326</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI In Vivo Anticancer Drug Screen. Data for tumor model P388 Leukemia resistant to Dihydroxy Anthracenedione; NSC 299195 (intraperitoneal) in CD2F1 (CDF1) mice</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/326">pubchem.aid:326</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 326, deposited by DTP/NCI; assay type Other.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI Yeast Anticancer Drug Screen. Data for the bub3 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:167</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the bub3 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:167</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 167, deposited by DTP/NCI; assay type Other.</dd></dl>
+<tr><td>NCI Yeast Anticancer Drug Screen. Data for the bub3 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/167">pubchem.aid:167</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the bub3 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/167">pubchem.aid:167</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 167, deposited by DTP/NCI; assay type Other.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI Yeast Anticancer Drug Screen. Data for the cln2 rad14 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:165</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the cln2 rad14 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:165</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 165, deposited by DTP/NCI; assay type Other.</dd></dl>
+<tr><td>NCI Yeast Anticancer Drug Screen. Data for the cln2 rad14 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/165">pubchem.aid:165</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the cln2 rad14 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/165">pubchem.aid:165</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 165, deposited by DTP/NCI; assay type Other.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI Yeast Anticancer Drug Screen. Data for the mec2-1 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:157</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the mec2-1 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:157</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 157, deposited by DTP/NCI; assay type Other.</dd></dl>
+<tr><td>NCI Yeast Anticancer Drug Screen. Data for the mec2-1 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/157">pubchem.aid:157</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the mec2-1 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/157">pubchem.aid:157</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 157, deposited by DTP/NCI; assay type Other.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI Yeast Anticancer Drug Screen. Data for the mlh1 rad18 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:175</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the mlh1 rad18 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:175</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 175, deposited by DTP/NCI; assay type Other.</dd></dl>
+<tr><td>NCI Yeast Anticancer Drug Screen. Data for the mlh1 rad18 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/175">pubchem.aid:175</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the mlh1 rad18 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/175">pubchem.aid:175</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 175, deposited by DTP/NCI; assay type Other.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI Yeast Anticancer Drug Screen. Data for the rad50 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:155</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the rad50 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:155</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 155, deposited by DTP/NCI; assay type Other.</dd></dl>
+<tr><td>NCI Yeast Anticancer Drug Screen. Data for the rad50 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/155">pubchem.aid:155</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the rad50 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/155">pubchem.aid:155</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 155, deposited by DTP/NCI; assay type Other.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI Yeast Anticancer Drug Screen. Data for the sgs1 mgt1 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:161</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the sgs1 mgt1 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:161</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 161, deposited by DTP/NCI; assay type Other.</dd></dl>
+<tr><td>NCI Yeast Anticancer Drug Screen. Data for the sgs1 mgt1 strain</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/161">pubchem.aid:161</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI Yeast Anticancer Drug Screen. Data for the sgs1 mgt1 strain</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/161">pubchem.aid:161</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 161, deposited by DTP/NCI; assay type Other.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the 786-0 Renal cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:137</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the 786-0 Renal cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:137</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 137, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the 786-0 Renal cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/137">pubchem.aid:137</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the 786-0 Renal cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/137">pubchem.aid:137</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 137, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the A498 Renal cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:129</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the A498 Renal cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:129</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 129, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the A498 Renal cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/129">pubchem.aid:129</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the A498 Renal cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/129">pubchem.aid:129</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 129, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the A549/ATCC Non-Small Cell Lung cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:19</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the A549/ATCC Non-Small Cell Lung cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:19</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 19, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the A549/ATCC Non-Small Cell Lung cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/19">pubchem.aid:19</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the A549/ATCC Non-Small Cell Lung cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/19">pubchem.aid:19</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 19, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the ACHN Renal cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:139</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the ACHN Renal cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:139</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 139, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the ACHN Renal cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/139">pubchem.aid:139</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the ACHN Renal cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/139">pubchem.aid:139</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 139, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the BT-549 Breast cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:89</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the BT-549 Breast cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:89</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 89, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the BT-549 Breast cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/89">pubchem.aid:89</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the BT-549 Breast cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/89">pubchem.aid:89</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 89, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the CAKI-1 Renal cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:131</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the CAKI-1 Renal cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:131</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 131, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the CAKI-1 Renal cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/131">pubchem.aid:131</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the CAKI-1 Renal cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/131">pubchem.aid:131</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 131, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the CCRF-CEM Leukemia cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:119</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the CCRF-CEM Leukemia cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:119</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 119, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the CCRF-CEM Leukemia cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/119">pubchem.aid:119</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the CCRF-CEM Leukemia cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/119">pubchem.aid:119</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 119, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the COLO 205 Colon cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:67</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the COLO 205 Colon cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:67</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 67, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the COLO 205 Colon cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/67">pubchem.aid:67</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the COLO 205 Colon cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/67">pubchem.aid:67</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 67, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the DLD-1 Colon cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:69</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the DLD-1 Colon cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:69</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 69, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the DLD-1 Colon cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/69">pubchem.aid:69</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the DLD-1 Colon cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/69">pubchem.aid:69</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 69, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the DMS 114 Small Cell Lung cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:63</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the DMS 114 Small Cell Lung cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:63</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 63, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the DMS 114 Small Cell Lung cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/63">pubchem.aid:63</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the DMS 114 Small Cell Lung cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/63">pubchem.aid:63</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 63, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the DMS 273 Small Cell Lung cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:61</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the DMS 273 Small Cell Lung cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:61</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 61, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the DMS 273 Small Cell Lung cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/61">pubchem.aid:61</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the DMS 273 Small Cell Lung cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/61">pubchem.aid:61</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 61, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the DU-145 Prostate cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:43</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the DU-145 Prostate cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:43</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 43, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the DU-145 Prostate cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/43">pubchem.aid:43</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the DU-145 Prostate cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/43">pubchem.aid:43</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 43, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd><dt>notes</dt><dd>68 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but not written here.</dd></dl>
 </details></td></tr>
@@ -258,31 +260,36 @@ isolation report left it.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=USZYSDMBJDPRIF-XCKHQVGJSA-N">AntibioticMech (aclacinomycin) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=naturalproductmech%3Amibig-c3a853f63e">MediaIngredientMech (naturalproductmech:mibig-c3a853f63e) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A33899">TaxonMech: Streptomyces galilaeus (NCBITaxon:33899) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A33899">TaxonMech: Streptomyces galilaeus (NCBITaxon:33899) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A33899">TaxonMech: Streptomyces galilaeus (NCBITaxon:33899) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000191">PathwayMech (mibig:BGC0000191) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000192">PathwayMech (mibig:BGC0000192) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000193">PathwayMech (mibig:BGC0000193) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A33899">TaxonMech: Streptomyces galilaeus (NCBITaxon:33899) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000191">PathwayMech (mibig:BGC0000191) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000192">PathwayMech (mibig:BGC0000192) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000193">PathwayMech (mibig:BGC0000193) &nearr;</a>
 </div>
 
 <h2>Open questions <span class="tag">1</span></h2>
-<div class="note"><p><strong>shared-structure</strong> — This structure is reported by more than one MIBiG entry: BGC0000191, BGC0000192, BGC0000193. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
+<div class="note"><p><strong>shared-structure</strong> <span class="tag">OPEN</span> <span class="tag">curation todo</span> — This structure is reported by more than one MIBiG entry: BGC0000191, BGC0000192, BGC0000193. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
+
+<h2 id="curation-history">Curation history <span class="tag">3</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-09-25T03:03:31Z">2026-09-25T03:03:31Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(3 identical runs since 2026-09-10T05:54:14Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
 
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0000191</td><td>MIBIG</td><td>5</td></tr>
-<tr><td class="mono">BGC0000192</td><td>MIBIG</td><td>3</td></tr>
-<tr><td class="mono">BGC0000193</td><td>MIBIG</td><td>3</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000191">BGC0000191</a></td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000192">BGC0000192</a></td><td>MIBIG</td><td>3</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000193">BGC0000193</a></td><td>MIBIG</td><td>3</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/polyketides/aclacinomycin.yaml">data/natural_products/polyketides/aclacinomycin.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20naturalproductmech%3Amibig-c3a853f63e&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Fpolyketides%2Faclacinomycin.html">Report a problem with this record</a>: opens a GitHub issue that names naturalproductmech:mibig-c3a853f63e and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Record last updated 2026-09-25 03:03 UTC, its latest curation event. Generated from the committed corpus. Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Unclassified</a> &middot; beauvericin</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,22 +32,22 @@
   </form>
 </div>
 <h1>beauvericin</h1>
-<p class="sub"><span class="mono">naturalproductmech:mibig-4c106eac10</span>
+<p class="sub"><span class="mono"><a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/unclassified/beauvericin.yaml">naturalproductmech:mibig-4c106eac10</a></span>
   <span class="tag">MINTED</span>
   <span class="tag">SEEDED</span>
 <span class="tag">cytotoxic</span><span class="tag">enzyme inhibitor</span></p>
 <div class="note"><strong>Grounding review:</strong> No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.</div><details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/unclassified/beauvericin.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/unclassified/beauvericin.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">GYSCAQFHASJXRS-UHFFFAOYSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">CC(C)C1OC(=O)C(CC2=CC=CC=C2)N(C)C(=O)C(OC(=O)C(CC2=CC=CC=C2)N(C)C(=O)C(OC(=O)C(CC2=CC=CC=C2)N(C)C1=O)C(C)C)C(C)C</td></tr>
 <tr><th>Stereochemistry</th><td>  <span class="tag weak">undefined stereocentres</span> — the InChIKey does not
   distinguish this compound from its stereoisomers</td></tr>
-<tr><th>Cross-references</th><td class="mono">pubchem:3007984, npatlas:NPA01888</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/compound/3007984">pubchem:3007984</a>, <a href="https://www.npatlas.org/explore/compounds/NPA01888">npatlas:NPA01888</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Unclassified</a> —
@@ -58,112 +60,112 @@ nrps, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Beauveria bassiana<br><span class="mono">NCBITaxon:176275</span></td>
+  <td>Beauveria bassiana<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=176275">NCBITaxon:176275</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0000313</td>
-  <td><span class="mono">DOI:10.1016/s0040-4039(01)88668-8</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000313">mibig:BGC0000313</a></td>
+  <td><span class="mono"><a href="https://doi.org/10.1016/s0040-4039%2801%2988668-8">DOI:10.1016/s0040-4039(01)88668-8</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">16</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Fusarium avenaceum<br><span class="mono">NCBITaxon:40199</span></td>
+  <td>Fusarium avenaceum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=40199">NCBITaxon:40199</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/BF03192255</td>
+  <td class="mono"><a href="https://doi.org/10.1007/BF03192255">DOI:10.1007/BF03192255</a></td>
 </tr>
 <tr>
-  <td>Fusarium avenaceum<br><span class="mono">NCBITaxon:40199</span></td>
+  <td>Fusarium avenaceum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=40199">NCBITaxon:40199</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/S11427-013-4505-1</td>
+  <td class="mono"><a href="https://doi.org/10.1007/S11427-013-4505-1">DOI:10.1007/S11427-013-4505-1</a></td>
 </tr>
 <tr>
-  <td>Fusarium avenaceum<br><span class="mono">NCBITaxon:40199</span></td>
+  <td>Fusarium avenaceum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=40199">NCBITaxon:40199</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/NP060394T</td>
+  <td class="mono"><a href="https://doi.org/10.1021/NP060394T">DOI:10.1021/NP060394T</a></td>
 </tr>
 <tr>
-  <td>Fusarium avenaceum<br><span class="mono">NCBITaxon:40199</span></td>
+  <td>Fusarium avenaceum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=40199">NCBITaxon:40199</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1590/S0102-695X2012005000106</td>
+  <td class="mono"><a href="https://doi.org/10.1590/S0102-695X2012005000106">DOI:10.1590/S0102-695X2012005000106</a></td>
 </tr>
 <tr>
-  <td>Paecilomyces tenuipes<br><span class="mono">NCBITaxon:45847</span></td>
+  <td>Paecilomyces tenuipes<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=45847">NCBITaxon:45847</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/S0040-4020(02)00294-6</td>
+  <td class="mono"><a href="https://doi.org/10.1016/S0040-4020%2802%2900294-6">DOI:10.1016/S0040-4020(02)00294-6</a></td>
 </tr>
 <tr>
-  <td>Fusarium oxysporum<br><span class="mono">NCBITaxon:5507</span></td>
+  <td>Fusarium oxysporum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5507">NCBITaxon:5507</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/BF03192255</td>
+  <td class="mono"><a href="https://doi.org/10.1007/BF03192255">DOI:10.1007/BF03192255</a></td>
 </tr>
 <tr>
-  <td>Fusarium oxysporum<br><span class="mono">NCBITaxon:5507</span></td>
+  <td>Fusarium oxysporum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5507">NCBITaxon:5507</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/S11427-013-4505-1</td>
+  <td class="mono"><a href="https://doi.org/10.1007/S11427-013-4505-1">DOI:10.1007/S11427-013-4505-1</a></td>
 </tr>
 <tr>
-  <td>Fusarium oxysporum<br><span class="mono">NCBITaxon:5507</span></td>
+  <td>Fusarium oxysporum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5507">NCBITaxon:5507</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/J.FM.2014.09.009</td>
+  <td class="mono"><a href="https://doi.org/10.1016/J.FM.2014.09.009">DOI:10.1016/J.FM.2014.09.009</a></td>
 </tr>
 <tr>
-  <td>Fusarium sporotrichioides<br><span class="mono">NCBITaxon:5514</span></td>
+  <td>Fusarium sporotrichioides<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5514">NCBITaxon:5514</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/BF03192255</td>
+  <td class="mono"><a href="https://doi.org/10.1007/BF03192255">DOI:10.1007/BF03192255</a></td>
 </tr>
 <tr>
-  <td>Fusarium sporotrichioides<br><span class="mono">NCBITaxon:5514</span></td>
+  <td>Fusarium sporotrichioides<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5514">NCBITaxon:5514</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/S11427-013-4505-1</td>
+  <td class="mono"><a href="https://doi.org/10.1007/S11427-013-4505-1">DOI:10.1007/S11427-013-4505-1</a></td>
 </tr>
 <tr>
-  <td>Fusarium sporotrichioides<br><span class="mono">NCBITaxon:5514</span></td>
+  <td>Fusarium sporotrichioides<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5514">NCBITaxon:5514</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/NP060394T</td>
+  <td class="mono"><a href="https://doi.org/10.1021/NP060394T">DOI:10.1021/NP060394T</a></td>
 </tr>
 <tr>
-  <td>Fusarium sporotrichioides<br><span class="mono">NCBITaxon:5514</span></td>
+  <td>Fusarium sporotrichioides<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5514">NCBITaxon:5514</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1590/S0102-695X2012005000106</td>
+  <td class="mono"><a href="https://doi.org/10.1590/S0102-695X2012005000106">DOI:10.1590/S0102-695X2012005000106</a></td>
 </tr>
 <tr>
-  <td>Fusarium equiseti<br><span class="mono">NCBITaxon:61235</span></td>
+  <td>Fusarium equiseti<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=61235">NCBITaxon:61235</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/BF03192255</td>
+  <td class="mono"><a href="https://doi.org/10.1007/BF03192255">DOI:10.1007/BF03192255</a></td>
 </tr>
 <tr>
-  <td>Fusarium equiseti<br><span class="mono">NCBITaxon:61235</span></td>
+  <td>Fusarium equiseti<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=61235">NCBITaxon:61235</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/S11427-013-4505-1</td>
+  <td class="mono"><a href="https://doi.org/10.1007/S11427-013-4505-1">DOI:10.1007/S11427-013-4505-1</a></td>
 </tr>
 <tr>
-  <td>Fusarium equiseti<br><span class="mono">NCBITaxon:61235</span></td>
+  <td>Fusarium equiseti<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=61235">NCBITaxon:61235</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/NP060394T</td>
+  <td class="mono"><a href="https://doi.org/10.1021/NP060394T">DOI:10.1021/NP060394T</a></td>
 </tr>
 <tr>
-  <td>Fusarium equiseti<br><span class="mono">NCBITaxon:61235</span></td>
+  <td>Fusarium equiseti<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=61235">NCBITaxon:61235</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1590/S0102-695X2012005000106</td>
+  <td class="mono"><a href="https://doi.org/10.1590/S0102-695X2012005000106">DOI:10.1590/S0102-695X2012005000106</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0000313</td>
-  <td>Beauveria bassiana<br><span class="mono">NCBITaxon:176275</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000313">mibig:BGC0000313</a></td>
+  <td>Beauveria bassiana<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=176275">NCBITaxon:176275</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:EU886196.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/EU886196.1">genbank:EU886196.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -173,7 +175,7 @@ isolation report left it.</p>
 
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for beauvericin">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for beauvericin">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -209,93 +211,93 @@ isolation report left it.</p>
 
 <h2>Bioactivities <span class="tag">22</span></h2>
 <p class="sub">Entries preserve source qualifiers, targets and evidence. Repeated assay names or values are not independent replications; inspect source detail for differences.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Bioactivities"><table>
 <tr><th>Assay</th><th>Result</th><th>Target enzyme</th><th>Source detail</th></tr>
-<tr><td>Constitutive androstane receptor (CAR) small molecule agonists, cell-based qHTS assay in HepG2 cells</td><td>OTHER 6.108 uM; INACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202728</summary><dl><dt>assay</dt><dd>Constitutive androstane receptor (CAR) small molecule agonists, cell-based qHTS assay in HepG2 cells</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202728</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202728, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Constitutive androstane receptor (CAR) small molecule agonists, cell-based qHTS assay in HepG2 cells</td><td>OTHER 6.108 uM; INACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202728">pubchem.aid:2202728</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Constitutive androstane receptor (CAR) small molecule agonists, cell-based qHTS assay in HepG2 cells</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202728">pubchem.aid:2202728</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202728, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>INACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>6.108</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Constitutive androstane receptor (CAR) small molecule agonists, cell-based qHTS assay in HepG2 cells</td><td>OTHER 6.108 uM; INACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202728</summary><dl><dt>assay</dt><dd>Constitutive androstane receptor (CAR) small molecule agonists, cell-based qHTS assay in HepG2 cells</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202728</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202728, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession ADZ17385 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Constitutive androstane receptor (CAR) small molecule agonists, cell-based qHTS assay in HepG2 cells</td><td>OTHER 6.108 uM; INACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202728">pubchem.aid:2202728</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Constitutive androstane receptor (CAR) small molecule agonists, cell-based qHTS assay in HepG2 cells</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202728">pubchem.aid:2202728</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202728, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession ADZ17385 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>INACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>6.108</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>GF-AFC viability counterscreen for inhibitors of alpha-synuclein gene (SNCA) expression</td><td>OTHER 0.63 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1671193</summary><dl><dt>assay</dt><dd>GF-AFC viability counterscreen for inhibitors of alpha-synuclein gene (SNCA) expression</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1671193</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671193, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
+<tr><td>GF-AFC viability counterscreen for inhibitors of alpha-synuclein gene (SNCA) expression</td><td>OTHER 0.63 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671193">pubchem.aid:1671193</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>GF-AFC viability counterscreen for inhibitors of alpha-synuclein gene (SNCA) expression</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671193">pubchem.aid:1671193</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671193, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.63</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>P-glycoprotein substrates identified in KB-8-5-11 adenocarcinoma cell line, qHTS therapeutic library screen</td><td>OTHER 4.8499 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>PMID:31515284</summary><dl><dt>assay</dt><dd>P-glycoprotein substrates identified in KB-8-5-11 adenocarcinoma cell line, qHTS therapeutic library screen</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:31515284</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1346987, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>P-glycoprotein substrates identified in KB-8-5-11 adenocarcinoma cell line, qHTS therapeutic library screen</td><td>OTHER 4.8499 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/31515284/">PMID:31515284</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>P-glycoprotein substrates identified in KB-8-5-11 adenocarcinoma cell line, qHTS therapeutic library screen</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/31515284/">PMID:31515284</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1346987, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>4.8499</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Primary fluorescence-based thiol-reactive (MSTI) qHTS assay for identification of artifact compounds.</td><td>OTHER 1.7756 uM; INACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1845221</summary><dl><dt>assay</dt><dd>Primary fluorescence-based thiol-reactive (MSTI) qHTS assay for identification of artifact compounds.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1845221</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1845221, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Primary fluorescence-based thiol-reactive (MSTI) qHTS assay for identification of artifact compounds.</td><td>OTHER 1.7756 uM; INACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1845221">pubchem.aid:1845221</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Primary fluorescence-based thiol-reactive (MSTI) qHTS assay for identification of artifact compounds.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1845221">pubchem.aid:1845221</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1845221, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>INACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>1.7756</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Primary qHTS Assay for Inhibitors of Recombinant Selenoprotein Glutathione Peroxidase 1 (GPX1)</td><td>OTHER 0.7592 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1845191</summary><dl><dt>assay</dt><dd>Primary qHTS Assay for Inhibitors of Recombinant Selenoprotein Glutathione Peroxidase 1 (GPX1)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1845191</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1845191, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
+<tr><td>Primary qHTS Assay for Inhibitors of Recombinant Selenoprotein Glutathione Peroxidase 1 (GPX1)</td><td>OTHER 0.7592 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1845191">pubchem.aid:1845191</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Primary qHTS Assay for Inhibitors of Recombinant Selenoprotein Glutathione Peroxidase 1 (GPX1)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1845191">pubchem.aid:1845191</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1845191, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.7592</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Primary qHTS Assay for Inhibitors of Recombinant Selenoprotein Glutathione Peroxidase 1 (GPX1)</td><td>OTHER 0.7592 uM; NOT_DETERMINED</td><td class="mono">UniProtKB:P07203</td><td><details><summary>pubchem.aid:1845191</summary><dl><dt>assay</dt><dd>Primary qHTS Assay for Inhibitors of Recombinant Selenoprotein Glutathione Peroxidase 1 (GPX1)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1845191</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1845191, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
+<tr><td>Primary qHTS Assay for Inhibitors of Recombinant Selenoprotein Glutathione Peroxidase 1 (GPX1)</td><td>OTHER 0.7592 uM; NOT_DETERMINED</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/P07203/entry">UniProtKB:P07203</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1845191">pubchem.aid:1845191</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Primary qHTS Assay for Inhibitors of Recombinant Selenoprotein Glutathione Peroxidase 1 (GPX1)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1845191">pubchem.aid:1845191</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1845191, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.7592</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:P07203</dd></dl>
+</dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.7592</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/P07203/entry">UniProtKB:P07203</a></dd></dl>
 </details></td></tr>
-<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an RCH-ACV wild type WT cells (2C)</td><td>OTHER 4.826 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1645877</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an RCH-ACV wild type WT cells (2C)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645877</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645877, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an RCH-ACV wild type WT cells (2C)</td><td>OTHER 4.826 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645877">pubchem.aid:1645877</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an RCH-ACV wild type WT cells (2C)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645877">pubchem.aid:1645877</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645877, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>4.826</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an RCH-ACV wild type WT cells (2C)</td><td>OTHER 4.826 uM; ACTIVE</td><td class="mono">UniProtKB:O96028</td><td><details><summary>pubchem.aid:1645877</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an RCH-ACV wild type WT cells (2C)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645877</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645877, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an RCH-ACV wild type WT cells (2C)</td><td>OTHER 4.826 uM; ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/O96028/entry">UniProtKB:O96028</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645877">pubchem.aid:1645877</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an RCH-ACV wild type WT cells (2C)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645877">pubchem.aid:1645877</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645877, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>4.826</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:O96028</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>4.826</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/O96028/entry">UniProtKB:O96028</a></dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)</td><td>OTHER 6.8169 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1645876</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645876</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645876, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)</td><td>OTHER 6.8169 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645876">pubchem.aid:1645876</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645876">pubchem.aid:1645876</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645876, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>6.8169</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)</td><td>OTHER 6.8169 uM; ACTIVE</td><td class="mono">UniProtKB:O96028</td><td><details><summary>pubchem.aid:1645876</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645876</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645876, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)</td><td>OTHER 6.8169 uM; ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/O96028/entry">UniProtKB:O96028</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645876">pubchem.aid:1645876</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645876">pubchem.aid:1645876</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645876, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>6.8169</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:O96028</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>6.8169</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/O96028/entry">UniProtKB:O96028</a></dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>Primary qHTS for small molecule compounds that upregulate eGFP-tagged delta133p53alpha (in N-terminal) cells.</td><td>OTHER 3.1575 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2060322</summary><dl><dt>assay</dt><dd>Primary qHTS for small molecule compounds that upregulate eGFP-tagged delta133p53alpha (in N-terminal) cells.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2060322</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2060322, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
-</li></ul>
-</dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>3.1575</dd><dt>units</dt><dd>uM</dd></dl>
-</details></td></tr>
-<tr><td>Primary qHTS for small molecule compounds that upregulate eGFP-tagged delta133p53alpha (in N-terminal) cells.</td><td>OTHER 3.1575 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2060322</summary><dl><dt>assay</dt><dd>Primary qHTS for small molecule compounds that upregulate eGFP-tagged delta133p53alpha (in N-terminal) cells.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2060322</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2060322, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_001119587 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Primary qHTS for small molecule compounds that upregulate eGFP-tagged delta133p53alpha (in N-terminal) cells.</td><td>OTHER 3.1575 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2060322">pubchem.aid:2060322</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Primary qHTS for small molecule compounds that upregulate eGFP-tagged delta133p53alpha (in N-terminal) cells.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2060322">pubchem.aid:2060322</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2060322, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>3.1575</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Primary qHTS to identify anti-liver cancer compounds using libraries of approved drugs and bioactive compounds</td><td>OTHER 1.9953 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202548</summary><dl><dt>assay</dt><dd>Primary qHTS to identify anti-liver cancer compounds using libraries of approved drugs and bioactive compounds</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202548</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202548, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Primary qHTS for small molecule compounds that upregulate eGFP-tagged delta133p53alpha (in N-terminal) cells.</td><td>OTHER 3.1575 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2060322">pubchem.aid:2060322</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Primary qHTS for small molecule compounds that upregulate eGFP-tagged delta133p53alpha (in N-terminal) cells.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2060322">pubchem.aid:2060322</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2060322, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_001119587 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>3.1575</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>Primary qHTS to identify anti-liver cancer compounds using libraries of approved drugs and bioactive compounds</td><td>OTHER 1.9953 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202548">pubchem.aid:2202548</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Primary qHTS to identify anti-liver cancer compounds using libraries of approved drugs and bioactive compounds</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202548">pubchem.aid:2202548</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202548, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>1.9953</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>Primary redox qHTS assay for identification of artifact compounds.</td><td>OTHER 6.3 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1845223</summary><dl><dt>assay</dt><dd>Primary redox qHTS assay for identification of artifact compounds.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1845223</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1845223, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
+<tr><td>Primary redox qHTS assay for identification of artifact compounds.</td><td>OTHER 6.3 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1845223">pubchem.aid:1845223</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Primary redox qHTS assay for identification of artifact compounds.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1845223">pubchem.aid:1845223</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1845223, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>6.3</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug resistant MV4-11 cells</td><td>OTHER 5.4417 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1963824</summary><dl><dt>assay</dt><dd>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug resistant MV4-11 cells</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1963824</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963824, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug resistant MV4-11 cells</td><td>OTHER 5.4417 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963824">pubchem.aid:1963824</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug resistant MV4-11 cells</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963824">pubchem.aid:1963824</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963824, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>5.4417</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug resistant MV4-11 cells</td><td>OTHER 5.4417 uM; ACTIVE</td><td class="mono">UniProtKB:P43405</td><td><details><summary>pubchem.aid:1963824</summary><dl><dt>assay</dt><dd>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug resistant MV4-11 cells</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1963824</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963824, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug resistant MV4-11 cells</td><td>OTHER 5.4417 uM; ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/P43405/entry">UniProtKB:P43405</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963824">pubchem.aid:1963824</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug resistant MV4-11 cells</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963824">pubchem.aid:1963824</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963824, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>5.4417</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:P43405</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>5.4417</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/P43405/entry">UniProtKB:P43405</a></dd></dl>
 </details></td></tr>
-<tr><td>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) naive MV4-11 cells</td><td>OTHER 3.8524 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1963823</summary><dl><dt>assay</dt><dd>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) naive MV4-11 cells</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1963823</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963823, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) naive MV4-11 cells</td><td>OTHER 3.8524 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963823">pubchem.aid:1963823</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) naive MV4-11 cells</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963823">pubchem.aid:1963823</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963823, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>3.8524</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) naive MV4-11 cells</td><td>OTHER 3.8524 uM; ACTIVE</td><td class="mono">UniProtKB:P43405</td><td><details><summary>pubchem.aid:1963823</summary><dl><dt>assay</dt><dd>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) naive MV4-11 cells</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1963823</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963823, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) naive MV4-11 cells</td><td>OTHER 3.8524 uM; ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/P43405/entry">UniProtKB:P43405</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963823">pubchem.aid:1963823</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) naive MV4-11 cells</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963823">pubchem.aid:1963823</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963823, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>3.8524</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:P43405</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>3.8524</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/P43405/entry">UniProtKB:P43405</a></dd></dl>
 </details></td></tr>
-<tr><td>Cytotoxic Profiling of Annotated Libraries Using Quantitative High-Throughput Screening</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>PMID:31498718</summary><dl><dt>assay</dt><dd>Cytotoxic Profiling of Annotated Libraries Using Quantitative High-Throughput Screening</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:31498718</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1296008, deposited by NCGC; assay type Confirmatory.</dd></dl>
-</li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
-</details></td></tr>
-<tr><td>Primary qHTS to identify gynecologic anti-cancer compounds using libraries of approved drugs and bioactive compounds</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1345084</summary><dl><dt>assay</dt><dd>Primary qHTS to identify gynecologic anti-cancer compounds using libraries of approved drugs and bioactive compounds</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1345084</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1345084, deposited by NCGC; assay type Confirmatory.</dd></dl>
+<tr><td>Cytotoxic Profiling of Annotated Libraries Using Quantitative High-Throughput Screening</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/31498718/">PMID:31498718</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Cytotoxic Profiling of Annotated Libraries Using Quantitative High-Throughput Screening</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/31498718/">PMID:31498718</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1296008, deposited by NCGC; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>qHTS assay to identify novel small-molecules to repurpose for Merkel cell carcinoma treatment</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1296009</summary><dl><dt>assay</dt><dd>qHTS assay to identify novel small-molecules to repurpose for Merkel cell carcinoma treatment</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1296009</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1296009, deposited by NCGC; assay type Confirmatory.</dd></dl>
+<tr><td>Primary qHTS to identify gynecologic anti-cancer compounds using libraries of approved drugs and bioactive compounds</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1345084">pubchem.aid:1345084</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Primary qHTS to identify gynecologic anti-cancer compounds using libraries of approved drugs and bioactive compounds</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1345084">pubchem.aid:1345084</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1345084, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
+</details></td></tr>
+<tr><td>qHTS assay to identify novel small-molecules to repurpose for Merkel cell carcinoma treatment</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1296009">pubchem.aid:1296009</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>qHTS assay to identify novel small-molecules to repurpose for Merkel cell carcinoma treatment</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1296009">pubchem.aid:1296009</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1296009, deposited by NCGC; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd></dl>
 </details></td></tr>
@@ -305,23 +307,31 @@ isolation report left it.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=GYSCAQFHASJXRS-UHFFFAOYSA-N">AntibioticMech (beauvericin) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=naturalproductmech%3Amibig-4c106eac10">MediaIngredientMech (naturalproductmech:mibig-4c106eac10) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A176275">TaxonMech: Beauveria bassiana (NCBITaxon:176275) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000313">PathwayMech (mibig:BGC0000313) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A176275">TaxonMech: Beauveria bassiana (NCBITaxon:176275) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000313">PathwayMech (mibig:BGC0000313) &nearr;</a>
 </div>
 
 
+<h2 id="curation-history">Curation history <span class="tag">4</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-13T07:37:09Z">2026-10-13T07:37:09Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources<p>Seeded from the committed inventories and curation tables.</p></li>
+<li><time datetime="2026-09-25T03:02:04Z">2026-09-25T03:02:04Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(3 identical runs since 2026-09-10T05:54:06Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
+
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0000313</td><td>MIBIG</td><td>4</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000313">BGC0000313</a></td><td>MIBIG</td><td>4</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/unclassified/beauvericin.yaml">data/natural_products/unclassified/beauvericin.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20naturalproductmech%3Amibig-4c106eac10&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Funclassified%2Fbeauvericin.html">Report a problem with this record</a>: opens a GitHub issue that names naturalproductmech:mibig-4c106eac10 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Record last updated 2026-10-13 07:37 UTC, its latest curation event. Generated from the committed corpus. Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

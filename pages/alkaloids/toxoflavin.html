@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Alkaloids</a> &middot; toxoflavin</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>toxoflavin</h1>
-<p class="sub"><span class="mono">CHEBI:80729</span>
+<p class="sub"><span class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_80729">CHEBI:80729</a></span>
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 <span class="tag">antibacterial</span><span class="tag">cytotoxic</span><span class="tag">enzyme inhibitor</span></p>
 <details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/alkaloids/toxoflavin.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/alkaloids/toxoflavin.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 <p>A pyrimidotriazine that is 1,6-dimethyl-1,5,6,7-tetrahydropyrimido[5,4-e][1,2,4]triazine with oxo groups at positions 5 and 7.</p>
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">SLGRAIAQIAUZAQ-UHFFFAOYSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">CN1N=CN=C2C(=O)N(C)C(=O)N=C12</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">npatlas:NPA04485, pubchem:66541</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://www.npatlas.org/explore/compounds/NPA04485">npatlas:NPA04485</a>, <a href="https://pubchem.ncbi.nlm.nih.gov/compound/66541">pubchem:66541</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Alkaloids</a> —
@@ -57,65 +59,65 @@ other, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Burkholderia glumae<br><span class="mono">NCBITaxon:337</span></td>
+  <td>Burkholderia glumae<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=337">NCBITaxon:337</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0000929</td>
-  <td><span class="mono">DOI:10.1007/s10327-003-0096-1</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000929">mibig:BGC0000929</a></td>
+  <td><span class="mono"><a href="https://doi.org/10.1007/s10327-003-0096-1">DOI:10.1007/s10327-003-0096-1</a></span></td>
 </tr>
 <tr>
-  <td>Streptomyces hiroshimensis<br><span class="mono">NCBITaxon:66424</span></td>
+  <td>Streptomyces hiroshimensis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=66424">NCBITaxon:66424</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0001972</td>
-  <td><span class="mono">PMID:30565634</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001972">mibig:BGC0001972</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/30565634/">PMID:30565634</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">4</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Burkholderia gladioli<br><span class="mono">NCBITaxon:28095</span></td>
+  <td>Burkholderia gladioli<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=28095">NCBITaxon:28095</a></span></td>
   <td>CHEBI</td>
-  <td class="mono">PMID:5905124</td>
+  <td class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/5905124/">PMID:5905124</a></td>
 </tr>
 <tr>
-  <td>Burkholderia glumae<br><span class="mono">NCBITaxon:337</span></td>
+  <td>Burkholderia glumae<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=337">NCBITaxon:337</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/S10327-003-0096-1</td>
+  <td class="mono"><a href="https://doi.org/10.1007/S10327-003-0096-1">DOI:10.1007/S10327-003-0096-1</a></td>
 </tr>
 <tr>
-  <td>Burkholderia glumae<br><span class="mono">NCBITaxon:337</span></td>
+  <td>Burkholderia glumae<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=337">NCBITaxon:337</a></span></td>
   <td>CHEBI</td>
   <td class="mono">Jeong, Y., Kim, J., Kim, S., and  Kang, Y (2003). Toxoflavin Produced by Burkholderia glumae Causing Rice Grain Rot Is Responsible for Inducing Bacterial Wilt in Many Field Crops. Plant Disease,  Vol. 87 (8). p 890-895.</td>
 </tr>
 <tr>
-  <td>Streptomyces hiroshimensis<br><span class="mono">NCBITaxon:66424</span></td>
+  <td>Streptomyces hiroshimensis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=66424">NCBITaxon:66424</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1039/C8OB02847H</td>
+  <td class="mono"><a href="https://doi.org/10.1039/C8OB02847H">DOI:10.1039/C8OB02847H</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">2</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0000929</td>
-  <td>Burkholderia glumae<br><span class="mono">NCBITaxon:337</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000929">mibig:BGC0000929</a></td>
+  <td>Burkholderia glumae<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=337">NCBITaxon:337</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:EF587764.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/EF587764.1">genbank:EF587764.1</a></td>
 </tr>
 <tr>
-  <td class="mono">mibig:BGC0001972</td>
-  <td>Streptomyces hiroshimensis<br><span class="mono">NCBITaxon:66424</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001972">mibig:BGC0001972</a></td>
+  <td>Streptomyces hiroshimensis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=66424">NCBITaxon:66424</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:MK256951.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/MK256951.1">genbank:MK256951.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -125,7 +127,7 @@ isolation report left it.</p>
 
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for toxoflavin">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for toxoflavin">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -161,107 +163,107 @@ isolation report left it.</p>
 
 <h2>Bioactivities <span class="tag">25</span></h2>
 <p class="sub">Entries preserve source qualifiers, targets and evidence. Repeated assay names or values are not independent replications; inspect source detail for differences.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Bioactivities"><table>
 <tr><th>Assay</th><th>Result</th><th>Target enzyme</th><th>Source detail</th></tr>
-<tr><td>A Cell Based Secondary Assay To Explore Cytotoxicity of Compounds that Inhibit Mycobacterium Tuberculosis</td><td>OTHER 7.979 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:435019</summary><dl><dt>assay</dt><dd>A Cell Based Secondary Assay To Explore Cytotoxicity of Compounds that Inhibit Mycobacterium Tuberculosis</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:435019</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 435019, deposited by Southern Research Specialized Biocontainment Screening Center; assay type Confirmatory. Source endpoint: CC50.</dd></dl>
+<tr><td>A Cell Based Secondary Assay To Explore Cytotoxicity of Compounds that Inhibit Mycobacterium Tuberculosis</td><td>OTHER 7.979 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/435019">pubchem.aid:435019</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>A Cell Based Secondary Assay To Explore Cytotoxicity of Compounds that Inhibit Mycobacterium Tuberculosis</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/435019">pubchem.aid:435019</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 435019, deposited by Southern Research Specialized Biocontainment Screening Center; assay type Confirmatory. Source endpoint: CC50.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>7.979</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>A High Throughput Confirmatory Assay used to Identify Novel Compounds that Inhibit Mycobacterium Tuberculosis in the absence of Glycerol</td><td>IC50 2.84 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:449764</summary><dl><dt>assay</dt><dd>A High Throughput Confirmatory Assay used to Identify Novel Compounds that Inhibit Mycobacterium Tuberculosis in the absence of Glycerol</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:449764</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 449764, deposited by Southern Research Specialized Biocontainment Screening Center; assay type Confirmatory.</dd></dl>
+<tr><td>A High Throughput Confirmatory Assay used to Identify Novel Compounds that Inhibit Mycobacterium Tuberculosis in the absence of Glycerol</td><td>IC50 2.84 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/449764">pubchem.aid:449764</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>A High Throughput Confirmatory Assay used to Identify Novel Compounds that Inhibit Mycobacterium Tuberculosis in the absence of Glycerol</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/449764">pubchem.aid:449764</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 449764, deposited by Southern Research Specialized Biocontainment Screening Center; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>2.84</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>A counter screen for small molecule screen for inhibitors of the PhoP regulon in Salmonella typhi</td><td>IC50 2.53 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2384</summary><dl><dt>assay</dt><dd>A counter screen for small molecule screen for inhibitors of the PhoP regulon in Salmonella typhi</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2384</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2384, deposited by Southern Research Specialized Biocontainment Screening Center; assay type Confirmatory.</dd></dl>
+<tr><td>A counter screen for small molecule screen for inhibitors of the PhoP regulon in Salmonella typhi</td><td>IC50 2.53 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2384">pubchem.aid:2384</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>A counter screen for small molecule screen for inhibitors of the PhoP regulon in Salmonella typhi</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2384">pubchem.aid:2384</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2384, deposited by Southern Research Specialized Biocontainment Screening Center; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>2.53</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>A cytotoxicity screen of small molecule inhibitors of the PhoP regulon in Salmonella typhi identified in the primary screen</td><td>EC50 1.38 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2252</summary><dl><dt>assay</dt><dd>A cytotoxicity screen of small molecule inhibitors of the PhoP regulon in Salmonella typhi identified in the primary screen</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2252</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2252, deposited by Southern Research Specialized Biocontainment Screening Center; assay type Confirmatory.</dd></dl>
+<tr><td>A cytotoxicity screen of small molecule inhibitors of the PhoP regulon in Salmonella typhi identified in the primary screen</td><td>EC50 1.38 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2252">pubchem.aid:2252</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>A cytotoxicity screen of small molecule inhibitors of the PhoP regulon in Salmonella typhi identified in the primary screen</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2252">pubchem.aid:2252</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2252, deposited by Southern Research Specialized Biocontainment Screening Center; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>EC50</dd><dt>value</dt><dd>1.38</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>A quantitative high throughput screen for small molecules that induce DNA re-replication in MCF 10a normal breast cells.</td><td>OTHER 18.3564 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:624296</summary><dl><dt>assay</dt><dd>A quantitative high throughput screen for small molecules that induce DNA re-replication in MCF 10a normal breast cells.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:624296</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624296, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession NP_056979 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>A quantitative high throughput screen for small molecules that induce DNA re-replication in MCF 10a normal breast cells.</td><td>OTHER 18.3564 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/624296">pubchem.aid:624296</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>A quantitative high throughput screen for small molecules that induce DNA re-replication in MCF 10a normal breast cells.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/624296">pubchem.aid:624296</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624296, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession NP_056979 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>18.3564</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>A screen for inhibitors of the PhoP regulon in Salmonella Typhi using a modified counterscreen</td><td>IC50 0.741 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1985</summary><dl><dt>assay</dt><dd>A screen for inhibitors of the PhoP regulon in Salmonella Typhi using a modified counterscreen</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1985</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1985, deposited by Southern Research Specialized Biocontainment Screening Center; assay type Confirmatory.</dd></dl>
+<tr><td>A screen for inhibitors of the PhoP regulon in Salmonella Typhi using a modified counterscreen</td><td>IC50 0.741 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1985">pubchem.aid:1985</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>A screen for inhibitors of the PhoP regulon in Salmonella Typhi using a modified counterscreen</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1985">pubchem.aid:1985</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1985, deposited by Southern Research Specialized Biocontainment Screening Center; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>0.741</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>A small molecule screen for inhibitors of the PhoP regulon in Salmonella typhi</td><td>IC50 1.29 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1850</summary><dl><dt>assay</dt><dd>A small molecule screen for inhibitors of the PhoP regulon in Salmonella typhi</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1850</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1850, deposited by Southern Research Specialized Biocontainment Screening Center; assay type Confirmatory.</dd></dl>
+<tr><td>A small molecule screen for inhibitors of the PhoP regulon in Salmonella typhi</td><td>IC50 1.29 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1850">pubchem.aid:1850</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>A small molecule screen for inhibitors of the PhoP regulon in Salmonella typhi</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1850">pubchem.aid:1850</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1850, deposited by Southern Research Specialized Biocontainment Screening Center; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>1.29</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>ATP-based Luminescence in the Absence of Cytokines Measured in Cell-Based System Using Plate Reader - 2061-06_Inhibitor_Dose_CherryPick</td><td>OTHER 1.484 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:463229</summary><dl><dt>assay</dt><dd>ATP-based Luminescence in the Absence of Cytokines Measured in Cell-Based System Using Plate Reader - 2061-06_Inhibitor_Dose_CherryPick</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:463229</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 463229, deposited by Broad Institute; assay type Confirmatory. Source endpoint: AC50.</dd></dl>
+<tr><td>ATP-based Luminescence in the Absence of Cytokines Measured in Cell-Based System Using Plate Reader - 2061-06_Inhibitor_Dose_CherryPick</td><td>OTHER 1.484 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/463229">pubchem.aid:463229</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>ATP-based Luminescence in the Absence of Cytokines Measured in Cell-Based System Using Plate Reader - 2061-06_Inhibitor_Dose_CherryPick</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/463229">pubchem.aid:463229</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 463229, deposited by Broad Institute; assay type Confirmatory. Source endpoint: AC50.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>1.484</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>AlphaScreen Assay from US Patent US9284299: &#34;Substituted 1H-indazol-1-ol analogs as inhibitors of beta catenin/Tcf protein-protein interactions&#34;</td><td>KI 3.65 uM; ACTIVE</td><td class="mono">UniProtKB:P15884</td><td><details><summary>pubchem.aid:1802420</summary><dl><dt>assay</dt><dd>AlphaScreen Assay from US Patent US9284299: &#34;Substituted 1H-indazol-1-ol analogs as inhibitors of beta catenin/Tcf protein-protein interactions&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1802420</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1802420, deposited by BindingDB; assay type Confirmatory.</dd></dl>
+<tr><td>AlphaScreen Assay from US Patent US9284299: &#34;Substituted 1H-indazol-1-ol analogs as inhibitors of beta catenin/Tcf protein-protein interactions&#34;</td><td>KI 3.65 uM; ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/P15884/entry">UniProtKB:P15884</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1802420">pubchem.aid:1802420</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>AlphaScreen Assay from US Patent US9284299: &#34;Substituted 1H-indazol-1-ol analogs as inhibitors of beta catenin/Tcf protein-protein interactions&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1802420">pubchem.aid:1802420</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1802420, deposited by BindingDB; assay type Confirmatory.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>KI</dd><dt>value</dt><dd>3.65</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:P15884</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>KI</dd><dt>value</dt><dd>3.65</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/P15884/entry">UniProtKB:P15884</a></dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>AlphaScreen Assay from US Patent US9284299: &#34;Substituted 1H-indazol-1-ol analogs as inhibitors of beta catenin/Tcf protein-protein interactions&#34;</td><td>KI 3.65 uM; ACTIVE</td><td class="mono">UniProtKB:P35222</td><td><details><summary>pubchem.aid:1802420</summary><dl><dt>assay</dt><dd>AlphaScreen Assay from US Patent US9284299: &#34;Substituted 1H-indazol-1-ol analogs as inhibitors of beta catenin/Tcf protein-protein interactions&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1802420</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1802420, deposited by BindingDB; assay type Confirmatory.</dd></dl>
+<tr><td>AlphaScreen Assay from US Patent US9284299: &#34;Substituted 1H-indazol-1-ol analogs as inhibitors of beta catenin/Tcf protein-protein interactions&#34;</td><td>KI 3.65 uM; ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/P35222/entry">UniProtKB:P35222</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1802420">pubchem.aid:1802420</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>AlphaScreen Assay from US Patent US9284299: &#34;Substituted 1H-indazol-1-ol analogs as inhibitors of beta catenin/Tcf protein-protein interactions&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1802420">pubchem.aid:1802420</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1802420, deposited by BindingDB; assay type Confirmatory.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>KI</dd><dt>value</dt><dd>3.65</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:P35222</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>KI</dd><dt>value</dt><dd>3.65</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/P35222/entry">UniProtKB:P35222</a></dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>AlphaScreen Assay from US Patent US9284299: &#34;Substituted 1H-indazol-1-ol analogs as inhibitors of beta catenin/Tcf protein-protein interactions&#34;</td><td>KI 19.94 uM; INACTIVE</td><td class="mono">UniProtKB:P12830</td><td><details><summary>pubchem.aid:1802420</summary><dl><dt>assay</dt><dd>AlphaScreen Assay from US Patent US9284299: &#34;Substituted 1H-indazol-1-ol analogs as inhibitors of beta catenin/Tcf protein-protein interactions&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1802420</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1802420, deposited by BindingDB; assay type Confirmatory.</dd></dl>
+<tr><td>AlphaScreen Assay from US Patent US9284299: &#34;Substituted 1H-indazol-1-ol analogs as inhibitors of beta catenin/Tcf protein-protein interactions&#34;</td><td>KI 19.94 uM; INACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/P12830/entry">UniProtKB:P12830</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1802420">pubchem.aid:1802420</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>AlphaScreen Assay from US Patent US9284299: &#34;Substituted 1H-indazol-1-ol analogs as inhibitors of beta catenin/Tcf protein-protein interactions&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1802420">pubchem.aid:1802420</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1802420, deposited by BindingDB; assay type Confirmatory.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>INACTIVE</dd><dt>measurement type</dt><dd>KI</dd><dt>value</dt><dd>19.94</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:P12830</dd></dl>
+</dd><dt>call</dt><dd>INACTIVE</dd><dt>measurement type</dt><dd>KI</dd><dt>value</dt><dd>19.94</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/P12830/entry">UniProtKB:P12830</a></dd></dl>
 </details></td></tr>
-<tr><td>AlphaScreen Assay from US Patent US9284299: &#34;Substituted 1H-indazol-1-ol analogs as inhibitors of beta catenin/Tcf protein-protein interactions&#34;</td><td>KI 66.23 uM; INACTIVE</td><td class="mono">UniProtKB:P25054</td><td><details><summary>pubchem.aid:1802420</summary><dl><dt>assay</dt><dd>AlphaScreen Assay from US Patent US9284299: &#34;Substituted 1H-indazol-1-ol analogs as inhibitors of beta catenin/Tcf protein-protein interactions&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1802420</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1802420, deposited by BindingDB; assay type Confirmatory.</dd></dl>
+<tr><td>AlphaScreen Assay from US Patent US9284299: &#34;Substituted 1H-indazol-1-ol analogs as inhibitors of beta catenin/Tcf protein-protein interactions&#34;</td><td>KI 66.23 uM; INACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/P25054/entry">UniProtKB:P25054</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1802420">pubchem.aid:1802420</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>AlphaScreen Assay from US Patent US9284299: &#34;Substituted 1H-indazol-1-ol analogs as inhibitors of beta catenin/Tcf protein-protein interactions&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1802420">pubchem.aid:1802420</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1802420, deposited by BindingDB; assay type Confirmatory.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>INACTIVE</dd><dt>measurement type</dt><dd>KI</dd><dt>value</dt><dd>66.23</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:P25054</dd></dl>
+</dd><dt>call</dt><dd>INACTIVE</dd><dt>measurement type</dt><dd>KI</dd><dt>value</dt><dd>66.23</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/P25054/entry">UniProtKB:P25054</a></dd></dl>
 </details></td></tr>
-<tr><td>AlphaScreen Assay from US Patent US9284299: &#34;Substituted 1H-indazol-1-ol analogs as inhibitors of beta catenin/Tcf protein-protein interactions&#34;</td><td>KI 19.94 uM; INACTIVE</td><td class="mono">UniProtKB:P35222</td><td><details><summary>pubchem.aid:1802420</summary><dl><dt>assay</dt><dd>AlphaScreen Assay from US Patent US9284299: &#34;Substituted 1H-indazol-1-ol analogs as inhibitors of beta catenin/Tcf protein-protein interactions&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1802420</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1802420, deposited by BindingDB; assay type Confirmatory.</dd></dl>
+<tr><td>AlphaScreen Assay from US Patent US9284299: &#34;Substituted 1H-indazol-1-ol analogs as inhibitors of beta catenin/Tcf protein-protein interactions&#34;</td><td>KI 19.94 uM; INACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/P35222/entry">UniProtKB:P35222</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1802420">pubchem.aid:1802420</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>AlphaScreen Assay from US Patent US9284299: &#34;Substituted 1H-indazol-1-ol analogs as inhibitors of beta catenin/Tcf protein-protein interactions&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1802420">pubchem.aid:1802420</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1802420, deposited by BindingDB; assay type Confirmatory.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>INACTIVE</dd><dt>measurement type</dt><dd>KI</dd><dt>value</dt><dd>19.94</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:P35222</dd></dl>
+</dd><dt>call</dt><dd>INACTIVE</dd><dt>measurement type</dt><dd>KI</dd><dt>value</dt><dd>19.94</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/P35222/entry">UniProtKB:P35222</a></dd></dl>
 </details></td></tr>
-<tr><td>AlphaScreen Assay from US Patent US9284299: &#34;Substituted 1H-indazol-1-ol analogs as inhibitors of beta catenin/Tcf protein-protein interactions&#34;</td><td>KI 66.23 uM; INACTIVE</td><td class="mono">UniProtKB:P35222</td><td><details><summary>pubchem.aid:1802420</summary><dl><dt>assay</dt><dd>AlphaScreen Assay from US Patent US9284299: &#34;Substituted 1H-indazol-1-ol analogs as inhibitors of beta catenin/Tcf protein-protein interactions&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1802420</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1802420, deposited by BindingDB; assay type Confirmatory.</dd></dl>
+<tr><td>AlphaScreen Assay from US Patent US9284299: &#34;Substituted 1H-indazol-1-ol analogs as inhibitors of beta catenin/Tcf protein-protein interactions&#34;</td><td>KI 66.23 uM; INACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/P35222/entry">UniProtKB:P35222</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1802420">pubchem.aid:1802420</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>AlphaScreen Assay from US Patent US9284299: &#34;Substituted 1H-indazol-1-ol analogs as inhibitors of beta catenin/Tcf protein-protein interactions&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1802420">pubchem.aid:1802420</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1802420, deposited by BindingDB; assay type Confirmatory.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>INACTIVE</dd><dt>measurement type</dt><dd>KI</dd><dt>value</dt><dd>66.23</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:P35222</dd></dl>
+</dd><dt>call</dt><dd>INACTIVE</dd><dt>measurement type</dt><dd>KI</dd><dt>value</dt><dd>66.23</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/P35222/entry">UniProtKB:P35222</a></dd></dl>
 </details></td></tr>
-<tr><td>AlphaScreen Assay from US Patent US9738628: &#34;Substituted 1H-indazol-1-OL analogs as inhibitors of beta catenin/Tcf protein-protein interactions&#34;</td><td>KI 5.82 uM; ACTIVE</td><td class="mono">UniProtKB:P35222</td><td><details><summary>pubchem.aid:1797021</summary><dl><dt>assay</dt><dd>AlphaScreen Assay from US Patent US9738628: &#34;Substituted 1H-indazol-1-OL analogs as inhibitors of beta catenin/Tcf protein-protein interactions&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1797021</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1797021, deposited by BindingDB; assay type Confirmatory.</dd></dl>
+<tr><td>AlphaScreen Assay from US Patent US9738628: &#34;Substituted 1H-indazol-1-OL analogs as inhibitors of beta catenin/Tcf protein-protein interactions&#34;</td><td>KI 5.82 uM; ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/P35222/entry">UniProtKB:P35222</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1797021">pubchem.aid:1797021</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>AlphaScreen Assay from US Patent US9738628: &#34;Substituted 1H-indazol-1-OL analogs as inhibitors of beta catenin/Tcf protein-protein interactions&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1797021">pubchem.aid:1797021</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1797021, deposited by BindingDB; assay type Confirmatory.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>KI</dd><dt>value</dt><dd>5.82</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:P35222</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>KI</dd><dt>value</dt><dd>5.82</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/P35222/entry">UniProtKB:P35222</a></dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>Cathepsin B dose-response confirmation</td><td>IC50 0.0461 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:820</summary><dl><dt>assay</dt><dd>Cathepsin B dose-response confirmation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:820</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 820, deposited by PCMD; assay type Confirmatory. Target accession AAH95408 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Cathepsin B dose-response confirmation</td><td>IC50 0.0461 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/820">pubchem.aid:820</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Cathepsin B dose-response confirmation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/820">pubchem.aid:820</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 820, deposited by PCMD; assay type Confirmatory. Target accession AAH95408 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>0.0461</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Cathepsin B mixture HTS dose-response confirmation</td><td>IC50 0.04729 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:830</summary><dl><dt>assay</dt><dd>Cathepsin B mixture HTS dose-response confirmation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:830</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 830, deposited by PCMD; assay type Confirmatory. Source outcome: Inconclusive. Target accession AAH95408 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Cathepsin B mixture HTS dose-response confirmation</td><td>IC50 0.04729 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/830">pubchem.aid:830</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Cathepsin B mixture HTS dose-response confirmation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/830">pubchem.aid:830</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 830, deposited by PCMD; assay type Confirmatory. Source outcome: Inconclusive. Target accession AAH95408 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>0.04729</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Cathepsin L dose-response confirmation</td><td>IC50 0.22581 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:825</summary><dl><dt>assay</dt><dd>Cathepsin L dose-response confirmation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:825</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 825, deposited by PCMD; assay type Confirmatory. Target accession NP_001903 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Cathepsin L dose-response confirmation</td><td>IC50 0.22581 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/825">pubchem.aid:825</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Cathepsin L dose-response confirmation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/825">pubchem.aid:825</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 825, deposited by PCMD; assay type Confirmatory. Target accession NP_001903 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>0.22581</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Cathepsin L dose-response testing in the presence of cysteine</td><td>IC50 50 uM; INACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1627</summary><dl><dt>assay</dt><dd>Cathepsin L dose-response testing in the presence of cysteine</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1627</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1627, deposited by PCMD; assay type Confirmatory. Target accession NP_001903 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Cathepsin L dose-response testing in the presence of cysteine</td><td>IC50 50 uM; INACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1627">pubchem.aid:1627</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Cathepsin L dose-response testing in the presence of cysteine</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1627">pubchem.aid:1627</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1627, deposited by PCMD; assay type Confirmatory. Target accession NP_001903 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>INACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>50.0</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Cathepsin S dose-response confirmation</td><td>IC50 0.176463 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:831</summary><dl><dt>assay</dt><dd>Cathepsin S dose-response confirmation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:831</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 831, deposited by PCMD; assay type Confirmatory. Target accession NP_004070 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Cathepsin S dose-response confirmation</td><td>IC50 0.176463 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/831">pubchem.aid:831</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Cathepsin S dose-response confirmation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/831">pubchem.aid:831</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 831, deposited by PCMD; assay type Confirmatory. Target accession NP_004070 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>0.176463</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Cell-based secondary assay for identifying Hsp90 inhibitors that degrade Hsp90 client protein Her2</td><td>IC50 1.875 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:754</summary><dl><dt>assay</dt><dd>Cell-based secondary assay for identifying Hsp90 inhibitors that degrade Hsp90 client protein Her2</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:754</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 754, deposited by Emory University Molecular Libraries Screening Center; assay type Confirmatory. Target accession AAD14062 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Cell-based secondary assay for identifying Hsp90 inhibitors that degrade Hsp90 client protein Her2</td><td>IC50 1.875 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/754">pubchem.aid:754</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Cell-based secondary assay for identifying Hsp90 inhibitors that degrade Hsp90 client protein Her2</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/754">pubchem.aid:754</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 754, deposited by Emory University Molecular Libraries Screening Center; assay type Confirmatory. Target accession AAD14062 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>1.875</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Cell-based secondary assay for identifying Hsp90 inhibitors that degrade Hsp90 client protein Her2</td><td>IC50 1.875 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:754</summary><dl><dt>assay</dt><dd>Cell-based secondary assay for identifying Hsp90 inhibitors that degrade Hsp90 client protein Her2</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:754</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 754, deposited by Emory University Molecular Libraries Screening Center; assay type Confirmatory. Target accession NP_005339 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Cell-based secondary assay for identifying Hsp90 inhibitors that degrade Hsp90 client protein Her2</td><td>IC50 1.875 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/754">pubchem.aid:754</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Cell-based secondary assay for identifying Hsp90 inhibitors that degrade Hsp90 client protein Her2</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/754">pubchem.aid:754</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 754, deposited by Emory University Molecular Libraries Screening Center; assay type Confirmatory. Target accession NP_005339 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>1.875</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Concentration response confirmation VP16 counterscreen for inhibitors of ROR gamma transcriptional activity</td><td>OTHER 0.4449 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2763</summary><dl><dt>assay</dt><dd>Concentration response confirmation VP16 counterscreen for inhibitors of ROR gamma transcriptional activity</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2763</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2763, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession NP_035411 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Concentration response confirmation VP16 counterscreen for inhibitors of ROR gamma transcriptional activity</td><td>OTHER 0.4449 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2763">pubchem.aid:2763</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Concentration response confirmation VP16 counterscreen for inhibitors of ROR gamma transcriptional activity</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2763">pubchem.aid:2763</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2763, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession NP_035411 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.4449</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>Concentration response confirmation assay for inhibitors of ROR gamma transcriptional activity</td><td>OTHER 0.996 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2762</summary><dl><dt>assay</dt><dd>Concentration response confirmation assay for inhibitors of ROR gamma transcriptional activity</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2762</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2762, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession NP_035411 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Concentration response confirmation assay for inhibitors of ROR gamma transcriptional activity</td><td>OTHER 0.996 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2762">pubchem.aid:2762</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Concentration response confirmation assay for inhibitors of ROR gamma transcriptional activity</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2762">pubchem.aid:2762</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2762, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession NP_035411 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.996</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>Concentration-Response Counterscreen for Redox Active Inhibitors of Caspase-1: Catalase</td><td>OTHER 1.122 uM; ACTIVE</td><td class="mono">UniProtKB:P29466</td><td><details><summary>pubchem.aid:888</summary><dl><dt>assay</dt><dd>Concentration-Response Counterscreen for Redox Active Inhibitors of Caspase-1: Catalase</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:888</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 888, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Concentration-Response Counterscreen for Redox Active Inhibitors of Caspase-1: Catalase</td><td>OTHER 1.122 uM; ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/P29466/entry">UniProtKB:P29466</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/888">pubchem.aid:888</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Concentration-Response Counterscreen for Redox Active Inhibitors of Caspase-1: Catalase</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/888">pubchem.aid:888</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 888, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>1.122</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:P29466</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd><dt>notes</dt><dd>336 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but not written here.</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>1.122</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/P29466/entry">UniProtKB:P29466</a></dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd><dt>notes</dt><dd>336 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but not written here.</dd></dl>
 </details></td></tr>
 </table></div>
 
@@ -272,30 +274,39 @@ isolation report left it.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=SLGRAIAQIAUZAQ-UHFFFAOYSA-N">AntibioticMech (toxoflavin) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=CHEBI%3A80729">MediaIngredientMech (CHEBI:80729) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A337">TaxonMech: Burkholderia glumae (NCBITaxon:337) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A66424">TaxonMech: Streptomyces hiroshimensis (NCBITaxon:66424) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000929">PathwayMech (mibig:BGC0000929) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0001972">PathwayMech (mibig:BGC0001972) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q=CHEBI%3A80729">MediaIngredientMech (CHEBI:80729) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A337">TaxonMech: Burkholderia glumae (NCBITaxon:337) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A66424">TaxonMech: Streptomyces hiroshimensis (NCBITaxon:66424) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000929">PathwayMech (mibig:BGC0000929) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0001972">PathwayMech (mibig:BGC0001972) &nearr;</a>
 </div>
 
 <h2>Open questions <span class="tag">2</span></h2>
-<div class="note"><p><strong>name-disagreement</strong> — ChEBI calls this structure &#39;toxoflavin&#39; and MIBiG calls it &#39;xanthothricin&#39;. They share a Standard InChIKey, so if the names denote different compounds then one upstream record has the wrong structure. Check which.</p></div>
-<div class="note"><p><strong>shared-structure</strong> — This structure is reported by more than one MIBiG entry: BGC0000929, BGC0001972. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
+<div class="note"><p><strong>name-disagreement</strong> <span class="tag">OPEN</span> <span class="tag">controversy</span> — ChEBI calls this structure &#39;toxoflavin&#39; and MIBiG calls it &#39;xanthothricin&#39;. They share a Standard InChIKey, so if the names denote different compounds then one upstream record has the wrong structure. Check which.</p></div>
+<div class="note"><p><strong>shared-structure</strong> <span class="tag">OPEN</span> <span class="tag">curation todo</span> — This structure is reported by more than one MIBiG entry: BGC0000929, BGC0001972. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
+
+<h2 id="curation-history">Curation history <span class="tag">5</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-13T10:45:08Z">2026-10-13T10:45:08Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-10-13T07:42:59Z)</span><p>Seeded from the committed inventories and curation tables.</p></li>
+<li><time datetime="2026-09-25T03:03:23Z">2026-09-25T03:03:23Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(3 identical runs since 2026-09-10T05:54:13Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
 
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0000929</td><td>MIBIG</td><td>3</td></tr>
-<tr><td class="mono">BGC0001972</td><td>MIBIG</td><td>4</td></tr>
-<tr><td class="mono">CHEBI:80729</td><td>CHEBI</td><td>3-star</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000929">BGC0000929</a></td><td>MIBIG</td><td>3</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001972">BGC0001972</a></td><td>MIBIG</td><td>4</td></tr>
+<tr><td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_80729">CHEBI:80729</a></td><td>CHEBI</td><td>3-star</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/alkaloids/toxoflavin.yaml">data/natural_products/alkaloids/toxoflavin.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20CHEBI%3A80729&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Falkaloids%2Ftoxoflavin.html">Report a problem with this record</a>: opens a GitHub issue that names CHEBI:80729 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Record last updated 2026-10-13 10:45 UTC, its latest curation event. Generated from the committed corpus. Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

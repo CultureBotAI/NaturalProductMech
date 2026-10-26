@@ -18,6 +18,8 @@
   const selection = document.getElementById("map-selection");
   const results = document.getElementById("map-results");
   const tooltip = document.getElementById("map-tooltip");
+  const table = document.getElementById("map-table");
+  const emptySelection = selection.innerHTML;
 
   // NPClassifier's seven pathways plus UNCLASSIFIED. The pathway is the
   // corpus's filing decision and it is COMPUTED, so this colours by what the
@@ -244,7 +246,33 @@
     status.textContent = `Showing ${state.visible.length} of ${state.records.length} compounds.`;
     rebuildLegend();
     updateResults();
+    renderTable();
     draw();
+  }
+
+  // The table alternative: the compounds the map plots under the pathway
+  // filter, each row linking its record. Built only while it is open.
+  function renderTable() {
+    if (!table || !table.open) return;
+    const rows = document.createDocumentFragment();
+    state.visible.forEach((record) => {
+      const row = document.createElement("tr");
+      const name = document.createElement("th");
+      name.scope = "row";
+      name.append(link(record.path, record.label));
+      const cells = [record.identifier, record.np_pathway.replaceAll("_", " ").toLowerCase(),
+        record.structure_input, String(record.fragment_count)].map((text, index) => {
+        const cell = document.createElement("td");
+        if (index === 0) cell.className = "mono";
+        cell.textContent = text;
+        return cell;
+      });
+      row.append(name, ...cells);
+      rows.append(row);
+    });
+    document.getElementById("map-table-body").replaceChildren(rows);
+    document.getElementById("map-table-count").textContent =
+      `${state.visible.length} of ${state.records.length} compounds, as filtered by pathway above.`;
   }
 
   function showTooltip(event, record) {
@@ -334,10 +362,15 @@
     rebuildLegend();
     draw();
   });
+  if (table) table.addEventListener("toggle", renderTable);
   reset.addEventListener("click", () => {
     search.value = "";
     classFilter.value = "";
     colorMode.value = "class";
+    // Reset clears the selection with the filter, rather than leaving the
+    // panel saying a filter that no longer applies hid it.
+    state.selected = null;
+    selection.innerHTML = emptySelection;
     const url = new URL(window.location.href);
     url.searchParams.delete("id");
     url.searchParams.delete("q");

@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Polyketides</a> &middot; salinomycin</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,22 +32,22 @@
   </form>
 </div>
 <h1>salinomycin</h1>
-<p class="sub"><span class="mono">naturalproductmech:mibig-90cc844890</span>
+<p class="sub"><span class="mono"><a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/polyketides/salinomycin.yaml">naturalproductmech:mibig-90cc844890</a></span>
   <span class="tag">MINTED</span>
   <span class="tag">SEEDED</span>
 </p>
 <div class="note"><strong>Grounding review:</strong> No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.</div><details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/salinomycin.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/salinomycin.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">KQXDHUJYNAXLNZ-SDCJTGBBSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">CC[C@H]([C@@H]1[C@H](C[C@H]([C@@]2(O1)C=C[C@H]([C@]3(O2)CC[C@@](O3)(C)[C@H]4CC[C@@]([C@@H](O4)C)(CC)O)O)C)C)C(=O)[C@@H](C)[C@H]([C@H](C)[C@H]5[C@H](CCC(O5)[C@@H](CC)C(=O)O)C)O</td></tr>
 <tr><th>Stereochemistry</th><td>  <span class="tag weak">undefined stereocentres</span> — the InChIKey does not
   distinguish this compound from its stereoisomers</td></tr>
-<tr><th>Cross-references</th><td class="mono">pubchem:72370</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/compound/72370">pubchem:72370</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Polyketides</a> —
@@ -58,92 +60,92 @@ pks, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Streptomyces albus<br><span class="mono">NCBITaxon:1888</span></td>
+  <td>Streptomyces albus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1888">NCBITaxon:1888</a></span></td>
   <td><span class="tag causal">BGC_CHARACTERIZED</span></td>
-  <td class="mono">mibig:BGC0000144</td>
-  <td><span class="mono">PMID:22156425</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000144">mibig:BGC0000144</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/22156425/">PMID:22156425</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">12</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Streptomyces albus<br><span class="mono">NCBITaxon:1888</span></td>
+  <td>Streptomyces albus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1888">NCBITaxon:1888</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/BF02879490</td>
+  <td class="mono"><a href="https://doi.org/10.1007/BF02879490">DOI:10.1007/BF02879490</a></td>
 </tr>
 <tr>
-  <td>Streptomyces albus<br><span class="mono">NCBITaxon:1888</span></td>
+  <td>Streptomyces albus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1888">NCBITaxon:1888</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/S00253-008-1591-2</td>
+  <td class="mono"><a href="https://doi.org/10.1007/S00253-008-1591-2">DOI:10.1007/S00253-008-1591-2</a></td>
 </tr>
 <tr>
-  <td>Streptomyces albus<br><span class="mono">NCBITaxon:1888</span></td>
+  <td>Streptomyces albus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1888">NCBITaxon:1888</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/S11427-017-9122-8</td>
+  <td class="mono"><a href="https://doi.org/10.1007/S11427-017-9122-8">DOI:10.1007/S11427-017-9122-8</a></td>
 </tr>
 <tr>
-  <td>Streptomyces albus<br><span class="mono">NCBITaxon:1888</span></td>
+  <td>Streptomyces albus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1888">NCBITaxon:1888</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/S11427-018-9474-7</td>
+  <td class="mono"><a href="https://doi.org/10.1007/S11427-018-9474-7">DOI:10.1007/S11427-018-9474-7</a></td>
 </tr>
 <tr>
-  <td>Streptomyces albus<br><span class="mono">NCBITaxon:1888</span></td>
+  <td>Streptomyces albus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1888">NCBITaxon:1888</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/J.JPBA.2005.05.006</td>
+  <td class="mono"><a href="https://doi.org/10.1016/J.JPBA.2005.05.006">DOI:10.1016/J.JPBA.2005.05.006</a></td>
 </tr>
 <tr>
-  <td>Streptomyces albus<br><span class="mono">NCBITaxon:1888</span></td>
+  <td>Streptomyces albus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1888">NCBITaxon:1888</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/J.YMBEN.2016.02.012</td>
+  <td class="mono"><a href="https://doi.org/10.1016/J.YMBEN.2016.02.012">DOI:10.1016/J.YMBEN.2016.02.012</a></td>
 </tr>
 <tr>
-  <td>Streptomyces albus<br><span class="mono">NCBITaxon:1888</span></td>
+  <td>Streptomyces albus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1888">NCBITaxon:1888</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1017/S0031182018001919</td>
+  <td class="mono"><a href="https://doi.org/10.1017/S0031182018001919">DOI:10.1017/S0031182018001919</a></td>
 </tr>
 <tr>
-  <td>Streptomyces albus<br><span class="mono">NCBITaxon:1888</span></td>
+  <td>Streptomyces albus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1888">NCBITaxon:1888</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1038/SREP15081</td>
+  <td class="mono"><a href="https://doi.org/10.1038/SREP15081">DOI:10.1038/SREP15081</a></td>
 </tr>
 <tr>
-  <td>Streptomyces albus<br><span class="mono">NCBITaxon:1888</span></td>
+  <td>Streptomyces albus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1888">NCBITaxon:1888</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1111/J.1574-6968.2000.TB08868.X</td>
+  <td class="mono"><a href="https://doi.org/10.1111/J.1574-6968.2000.TB08868.X">DOI:10.1111/J.1574-6968.2000.TB08868.X</a></td>
 </tr>
 <tr>
-  <td>Streptomyces albus<br><span class="mono">NCBITaxon:1888</span></td>
+  <td>Streptomyces albus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1888">NCBITaxon:1888</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1128/AEM.06701-11</td>
+  <td class="mono"><a href="https://doi.org/10.1128/AEM.06701-11">DOI:10.1128/AEM.06701-11</a></td>
 </tr>
 <tr>
-  <td>Streptomyces albus<br><span class="mono">NCBITaxon:1888</span></td>
+  <td>Streptomyces albus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1888">NCBITaxon:1888</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.3389/FBIOE.2019.00212</td>
+  <td class="mono"><a href="https://doi.org/10.3389/FBIOE.2019.00212">DOI:10.3389/FBIOE.2019.00212</a></td>
 </tr>
 <tr>
-  <td>Streptomyces albus<br><span class="mono">NCBITaxon:1888</span></td>
+  <td>Streptomyces albus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1888">NCBITaxon:1888</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.3390/MD17060347</td>
+  <td class="mono"><a href="https://doi.org/10.3390/MD17060347">DOI:10.3390/MD17060347</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0000144</td>
-  <td>Streptomyces albus<br><span class="mono">NCBITaxon:1888</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000144">mibig:BGC0000144</a></td>
+  <td>Streptomyces albus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1888">NCBITaxon:1888</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:JN033543.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/JN033543.1">genbank:JN033543.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -153,7 +155,7 @@ isolation report left it.</p>
 
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for salinomycin">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for salinomycin">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -186,17 +188,17 @@ isolation report left it.</p>
 </div>
 
 <h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
-<p class="sub">MITE-reported SlnM double-bond and bis(spiroacetal) formation in a salinomycin biosynthesis context. Native Streptomyces albus XM211 reference identity is independently sequence-verified, not its catalytic activity. The database example matches this owner&#39;s incomplete stereochemical resolution, not a fully resolved stereoisomer. No methylation, native cofactor state, primary assay or pathway finality is inferred; not full-record sign-off.</p><div class="scroll"><table>
+<p class="sub">MITE-reported SlnM double-bond and bis(spiroacetal) formation in a salinomycin biosynthesis context. Native Streptomyces albus XM211 reference identity is independently sequence-verified, not its catalytic activity. The database example matches this owner&#39;s incomplete stereochemical resolution, not a fully resolved stereoisomer. No methylation, native cofactor state, primary assay or pathway finality is inferred; not full-record sign-off.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>SlnM native XM211 reference</td>
   <td>is_database_reported_catalyst_of</td>
   <td>MITE-reported double-bond and bis(spiroacetal) formation</td>
   <td>MITE supplies the functional assignment; sequence evidence establishes identity only. Exact NCBIProtein grounding is used without substituting an arbitrary current UniProt homolog. No assay, activity magnitude, knockout phenotype, methylation, site, SAM state or physical complex is inferred.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000441.json<br>https://www.ncbi.nlm.nih.gov/protein/AEZ53956.1<br>https://www.ncbi.nlm.nih.gov/nuccore/JN033543.1<br>https://www.uniprot.org/uniparc/UPI000247F579</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000441.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000441 version 1, active, identifies SlnM/AEZ53956.1 and BGC0000144. The reaction description assigns 18,19-double-bond and bis(spiroacetal) formation, not ordinary O-methylation despite the enzyme family label. Heterologous, in-vitro, knockout and mutagenesis codes remain database assertions; both cited primary papers were inaccessible. No primary assay or native cofactor state is adopted.</dd><dt>snippet</dt><dd>double bond and bis(spiroacetal)</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AEZ53956.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Complete independent GenPept reference and coded_by inspected: slnM, 271 residues, S.albus XM211/taxon1888. Its O-methyltransferase label does not independently establish the compound-specific reaction.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/JN033543.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Complete 816-nt plus-strand CDS93645..94460, codon1/table11, translates exactly to the CDS annotation, independent AEZ53956.1 and UniParc, all271aa. Independent coded_by DNA/coordinates and genomic source XM211/taxon1888 match. This verifies native reference identity, not historical assay stocks, transcripts or constructs.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniparc/UPI000247F579</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Retained exact271-residue archive has no active UniProtKB cross-reference. H6D580 is inactive and names ATCC21838/taxon1081613, not native XM211. Other inactive entries or different-taxon sequence matches do not override the native deposit. UniParc is not UniProtKB; this bounded archive result does not prove universal UniProt absence.</dd></dl>
+  <td><span class="mono"><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000441.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000441.json</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AEZ53956.1">https://www.ncbi.nlm.nih.gov/protein/AEZ53956.1</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/JN033543.1">https://www.ncbi.nlm.nih.gov/nuccore/JN033543.1</a><br><a href="https://www.uniprot.org/uniparc/UPI000247F579">https://www.uniprot.org/uniparc/UPI000247F579</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000441.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000441.json</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000441 version 1, active, identifies SlnM/AEZ53956.1 and BGC0000144. The reaction description assigns 18,19-double-bond and bis(spiroacetal) formation, not ordinary O-methylation despite the enzyme family label. Heterologous, in-vitro, knockout and mutagenesis codes remain database assertions; both cited primary papers were inaccessible. No primary assay or native cofactor state is adopted.</dd><dt>snippet</dt><dd>double bond and bis(spiroacetal)</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AEZ53956.1">https://www.ncbi.nlm.nih.gov/protein/AEZ53956.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Complete independent GenPept reference and coded_by inspected: slnM, 271 residues, S.albus XM211/taxon1888. Its O-methyltransferase label does not independently establish the compound-specific reaction.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/JN033543.1">https://www.ncbi.nlm.nih.gov/nuccore/JN033543.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Complete 816-nt plus-strand CDS93645..94460, codon1/table11, translates exactly to the CDS annotation, independent AEZ53956.1 and UniParc, all271aa. Independent coded_by DNA/coordinates and genomic source XM211/taxon1888 match. This verifies native reference identity, not historical assay stocks, transcripts or constructs.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniparc/UPI000247F579">https://www.uniprot.org/uniparc/UPI000247F579</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Retained exact271-residue archive has no active UniProtKB cross-reference. H6D580 is inactive and names ATCC21838/taxon1081613, not native XM211. Other inactive entries or different-taxon sequence matches do not override the native deposit. UniParc is not UniProtKB; this bounded archive result does not prove universal UniProt absence.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -205,7 +207,7 @@ isolation report left it.</p>
   <td>is_database_example_substrate_of</td>
   <td>MITE-reported double-bond and bis(spiroacetal) formation</td>
   <td>MITE encodes a substrate example; its external identity remains ungrounded. No upstream reaction order, kinetic substrate preference or executable transformation rule is inferred from the example or SMARTS.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000441.json</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000441.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000441 version 1, active, identifies SlnM/AEZ53956.1 and BGC0000144. The reaction description assigns 18,19-double-bond and bis(spiroacetal) formation, not ordinary O-methylation despite the enzyme family label. Heterologous, in-vitro, knockout and mutagenesis codes remain database assertions; both cited primary papers were inaccessible. No primary assay or native cofactor state is adopted.</dd></dl>
+  <td><span class="mono"><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000441.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000441.json</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000441.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000441.json</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000441 version 1, active, identifies SlnM/AEZ53956.1 and BGC0000144. The reaction description assigns 18,19-double-bond and bis(spiroacetal) formation, not ordinary O-methylation despite the enzyme family label. Heterologous, in-vitro, knockout and mutagenesis codes remain database assertions; both cited primary papers were inaccessible. No primary assay or native cofactor state is adopted.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -214,7 +216,7 @@ isolation report left it.</p>
   <td>has_database_example_product</td>
   <td>salinomycin</td>
   <td>Pinned MITE product matches full key KQXDHUJYNAXLNZ-SDCJTGBBSA-N in the retained repository-helper/RDKit2026.03.5 screen, with stereo_complete:false in source and owner. This is correspondence at incomplete stereo resolution, not fully resolved stereoisomer identity. The different full-key salinomycin-2 record is not merged or changed. No pathway finality or producer-grade upgrade; existing BGC_CHARACTERIZED/CLUSTER_DEMONSTRATED grades and all occurrences are preserved.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000441.json</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000441.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000441 version 1, active, identifies SlnM/AEZ53956.1 and BGC0000144. The reaction description assigns 18,19-double-bond and bis(spiroacetal) formation, not ordinary O-methylation despite the enzyme family label. Heterologous, in-vitro, knockout and mutagenesis codes remain database assertions; both cited primary papers were inaccessible. No primary assay or native cofactor state is adopted.</dd></dl>
+  <td><span class="mono"><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000441.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000441.json</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000441.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000441.json</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000441 version 1, active, identifies SlnM/AEZ53956.1 and BGC0000144. The reaction description assigns 18,19-double-bond and bis(spiroacetal) formation, not ordinary O-methylation despite the enzyme family label. Heterologous, in-vitro, knockout and mutagenesis codes remain database assertions; both cited primary papers were inaccessible. No primary assay or native cofactor state is adopted.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -228,23 +230,32 @@ by the corpus tests.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=KQXDHUJYNAXLNZ-SDCJTGBBSA-N">AntibioticMech (salinomycin) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=naturalproductmech%3Amibig-90cc844890">MediaIngredientMech (naturalproductmech:mibig-90cc844890) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A1888">TaxonMech: Streptomyces albus (NCBITaxon:1888) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000144">PathwayMech (mibig:BGC0000144) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A1888">TaxonMech: Streptomyces albus (NCBITaxon:1888) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000144">PathwayMech (mibig:BGC0000144) &nearr;</a>
 </div>
 
 
+<h2 id="curation-history">Curation history <span class="tag">4</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-13T10:43:52Z">2026-10-13T10:43:52Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources<p>Seeded from the committed inventories and curation tables.</p></li>
+<li><time datetime="2026-10-07T07:18:07Z">2026-10-07T07:18:07Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added a database-asserted SlnM double-bond/bis(spiroacetal) biosynthesis context: four nodes, three qualified edges with stable MITE/NCBI/UniParc URLs and one exact four-word snippet. Native NCBIProtein:AEZ53956.1 is verified by full816-nt/table11 CDS93645..94460 on JN033543.1, independent GenPept and UniParc, all271residues; coded_by DNA/coordinates and XM211/taxon1888 match. Retained UniParc has no active UniProtKB entry; inactive H6D580 names another strain and is not selected. No arbitrary homolog, native assay or historical stock/construct identity is claimed. MITE example and owner share the full key at INCOMPLETE stereochemical resolution, not fully resolved stereoisomer identity. Both primary papers were inaccessible. No ordinary methylation, SAM state, kinetics, knockout phenotype, site, complex, upstream order or pathway finality is adopted. Preserved stereo_complete:false, all source fields and twelve occurrences, BGC_CHARACTERIZED/CLUSTER_DEMONSTRATED source grades, SEEDED status and append-only history. Different-key salinomycin-2 is unchanged. Not full-record sign-off.</p></li>
+<li><time datetime="2026-09-25T03:02:34Z">2026-09-25T03:02:34Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:08Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
+
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0000144</td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000144">BGC0000144</a></td><td>MIBIG</td><td>5</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/polyketides/salinomycin.yaml">data/natural_products/polyketides/salinomycin.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20naturalproductmech%3Amibig-90cc844890&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Fpolyketides%2Fsalinomycin.html">Report a problem with this record</a>: opens a GitHub issue that names naturalproductmech:mibig-90cc844890 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Record last updated 2026-10-13 10:43 UTC, its latest curation event. Generated from the committed corpus. Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

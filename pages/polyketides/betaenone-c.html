@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Polyketides</a> &middot; betaenone C</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>betaenone C</h1>
-<p class="sub"><span class="mono">naturalproductmech:mibig-6a66cb2f42</span>
+<p class="sub"><span class="mono"><a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/polyketides/betaenone-c.yaml">naturalproductmech:mibig-6a66cb2f42</a></span>
   <span class="tag">MINTED</span>
   <span class="tag">SEEDED</span>
 </p>
 <div class="note"><strong>Grounding review:</strong> No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.</div><details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/betaenone-c.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/betaenone-c.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">YRYPVWAJOMXOHH-ITBWMFDCSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">[H][C@@](C)(CC)[C@@]1([H])[C@](C)(O)C(=O)[C@@]2([H])C[C@](C)(O)C[C@@H](C)[C@]2([H])[C@@]1(C)C(=O)\C=C/O</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">npatlas:NPA02632, pubchem:71308160, npatlas:NPA002632, pubchem:23244602</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://www.npatlas.org/explore/compounds/NPA02632">npatlas:NPA02632</a>, <a href="https://pubchem.ncbi.nlm.nih.gov/compound/71308160">pubchem:71308160</a>, <a href="https://www.npatlas.org/explore/compounds/NPA002632">npatlas:NPA002632</a>, <a href="https://pubchem.ncbi.nlm.nih.gov/compound/23244602">pubchem:23244602</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Polyketides</a> —
@@ -57,78 +59,78 @@ pks, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Phoma betae<br><span class="mono">NCBITaxon:1979465</span></td>
+  <td>Phoma betae<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1979465">NCBITaxon:1979465</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0001264</td>
-  <td><span class="mono">PMID:25530455</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001264">mibig:BGC0001264</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/25530455/">PMID:25530455</a></span></td>
 </tr>
 <tr>
-  <td>Parastagonospora nodorum SN15<br><span class="mono">NCBITaxon:321614</span></td>
+  <td>Parastagonospora nodorum SN15<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=321614">NCBITaxon:321614</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0002165</td>
-  <td><span class="mono">PMID:31553484</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002165">mibig:BGC0002165</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/31553484/">PMID:31553484</a></span></td>
 </tr>
 <tr>
-  <td>Parastagonospora nodorum SN15<br><span class="mono">NCBITaxon:321614</span></td>
+  <td>Parastagonospora nodorum SN15<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=321614">NCBITaxon:321614</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0002165</td>
-  <td><span class="mono">PMID:31553484</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002165">mibig:BGC0002165</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/31553484/">PMID:31553484</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">4</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Pleospora bjoerlingii<br><span class="mono">NCBITaxon:318712</span></td>
+  <td>Pleospora bjoerlingii<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=318712">NCBITaxon:318712</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1080/00021369.1983.10866069</td>
+  <td class="mono"><a href="https://doi.org/10.1080/00021369.1983.10866069">DOI:10.1080/00021369.1983.10866069</a></td>
 </tr>
 <tr>
-  <td>Pleospora bjoerlingii<br><span class="mono">NCBITaxon:318712</span></td>
+  <td>Pleospora bjoerlingii<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=318712">NCBITaxon:318712</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1271/BBB1961.47.2965</td>
+  <td class="mono"><a href="https://doi.org/10.1271/BBB1961.47.2965">DOI:10.1271/BBB1961.47.2965</a></td>
 </tr>
 <tr>
-  <td>Pleospora bjoerlingii<br><span class="mono">NCBITaxon:318712</span></td>
+  <td>Pleospora bjoerlingii<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=318712">NCBITaxon:318712</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.3186/JJPHYTOPATH.51.219</td>
+  <td class="mono"><a href="https://doi.org/10.3186/JJPHYTOPATH.51.219">DOI:10.3186/JJPHYTOPATH.51.219</a></td>
 </tr>
 <tr>
-  <td>Theissenia cinerea<br><span class="mono">NCBITaxon:419774</span></td>
+  <td>Theissenia cinerea<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=419774">NCBITaxon:419774</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1271/BBB1961.47.2965</td>
+  <td class="mono"><a href="https://doi.org/10.1271/BBB1961.47.2965">DOI:10.1271/BBB1961.47.2965</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">3</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0001264</td>
-  <td>Phoma betae<br><span class="mono">NCBITaxon:1979465</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001264">mibig:BGC0001264</a></td>
+  <td>Phoma betae<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1979465">NCBITaxon:1979465</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:LC011911.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/LC011911.1">genbank:LC011911.1</a></td>
 </tr>
 <tr>
-  <td class="mono">mibig:BGC0002165</td>
-  <td>Parastagonospora nodorum SN15<br><span class="mono">NCBITaxon:321614</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002165">mibig:BGC0002165</a></td>
+  <td>Parastagonospora nodorum SN15<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=321614">NCBITaxon:321614</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:CH445335.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/CH445335.1">genbank:CH445335.1</a></td>
 </tr>
 <tr>
-  <td class="mono">mibig:BGC0002165</td>
-  <td>Parastagonospora nodorum SN15<br><span class="mono">NCBITaxon:321614</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002165">mibig:BGC0002165</a></td>
+  <td>Parastagonospora nodorum SN15<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=321614">NCBITaxon:321614</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:CH445335.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/CH445335.1">genbank:CH445335.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -138,20 +140,20 @@ isolation report left it.</p>
 <h2>Biosynthesis <span class="tag causal">curated</span></h2>
 <p class="sub">Written by a curator with claim-level evidence on each step; not
 derived from a source. This is what the rest of the record exists to support.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthesis steps"><table>
 <tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
 <tr>
   <td>1</td>
-  <td>SthD cytochrome P450 monooxygenase<br><span class="mono">UniProtKB:Q0UK51</span></td>
-  <td class="mono">RHEA:62712</td>
-  <td class="mono">CHEBI:145053 &rarr; CHEBI:145070</td>
-  <td class="mono">DOI:10.1002/chem.201904360</td>
+  <td>SthD cytochrome P450 monooxygenase<br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q0UK51/entry">UniProtKB:Q0UK51</a></span></td>
+  <td class="mono"><a href="https://www.rhea-db.org/rhea/62712">RHEA:62712</a></td>
+  <td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_145053">CHEBI:145053</a> &rarr; <a href="../polyketides/stemphyloxin-i.html">CHEBI:145070</a></td>
+  <td class="mono"><a href="https://doi.org/10.1002/chem.201904360">DOI:10.1002/chem.201904360</a></td>
 </tr>
 </table></div>
 <p class="sub">Step 1: SthD hydroxylates betaenone C at C-15 to afford compound 7 / stemphyloxin I; this single curated tailoring step leaves upstream assembly from dehydroprobetaenone I to betaenone C unexpanded. RHEA:62712 uses the stereodefined participants CHEBI:145053 (betaenone C) and CHEBI:145070 (stemphyloxin I), whereas this NaturalProductRecord keeps naturalproductmech:mibig-6a66cb2f42 because the MIBiG BGC0002165 betaenone C structure has incomplete stereochemistry.</p>
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for betaenone C">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for betaenone C">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -184,17 +186,17 @@ derived from a source. This is what the rest of the record exists to support.</p
 </div>
 
 <h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
-<p class="sub">Parastagonospora nodorum SN15 BGC0002165 cytochrome P450 monooxygenase SthD (SNOG_07863) catalyzes C-15 hydroxylation of betaenone C to form stemphyloxin I.</p><div class="scroll"><table>
+<p class="sub">Parastagonospora nodorum SN15 BGC0002165 cytochrome P450 monooxygenase SthD (SNOG_07863) catalyzes C-15 hydroxylation of betaenone C to form stemphyloxin I.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>betaenone C</td>
   <td>is hydroxylated by</td>
   <td>SthD</td>
   <td>SthD uses NADPH and O2 in the RHEA:62712 C-15 hydroxylation of betaenone C.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1002/chem.201904360<br>https://mibig.secondarymetabolites.org/repository/BGC0002165.3/BGC0002165.gbk<br>https://www.uniprot.org/uniprotkb/Q0UK51<br>https://www.rhea-db.org/rhea/62712</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1002/chem.201904360</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Li et al. activated the Parastagonospora nodorum SN15 stemphyloxin II cluster and used heterologous reconstruction to assign SthD C-15 hydroxylation of betaenone C to compound 7 / stemphyloxin I.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0002165.3/BGC0002165.gbk</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>MIBiG BGC0002165.3 places SNOG_07863 on GenBank CH445335.1 with protein_id EAT85329.1 in the Parastagonospora nodorum SN15 stemphyloxin II BGC.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q0UK51</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q0UK51 is the 475 aa Phaeosphaeria nodorum SN15, synonymous with Parastagonospora nodorum SN15, cytochrome P450 monooxygenase SthD / SNOG_07863 gene product; it cross-references EMBL CH445335 protein EAT85329.1 and annotates catalytic activity RHEA:62712 / RHEA:62713.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.rhea-db.org/rhea/62712</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>RHEA:62712 is the betaenone C plus NADPH plus O2 plus H(+) to stemphyloxin I plus NADP(+) plus H2O reaction; Rhea maps the master reaction to UniProtKB:Q0UK51 in Swiss-Prot.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1002/chem.201904360">DOI:10.1002/chem.201904360</a><br><a href="https://mibig.secondarymetabolites.org/repository/BGC0002165.3/BGC0002165.gbk">https://mibig.secondarymetabolites.org/repository/BGC0002165.3/BGC0002165.gbk</a><br><a href="https://www.uniprot.org/uniprotkb/Q0UK51">https://www.uniprot.org/uniprotkb/Q0UK51</a><br><a href="https://www.rhea-db.org/rhea/62712">https://www.rhea-db.org/rhea/62712</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1002/chem.201904360">DOI:10.1002/chem.201904360</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Li et al. activated the Parastagonospora nodorum SN15 stemphyloxin II cluster and used heterologous reconstruction to assign SthD C-15 hydroxylation of betaenone C to compound 7 / stemphyloxin I.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/repository/BGC0002165.3/BGC0002165.gbk">https://mibig.secondarymetabolites.org/repository/BGC0002165.3/BGC0002165.gbk</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>MIBiG BGC0002165.3 places SNOG_07863 on GenBank CH445335.1 with protein_id EAT85329.1 in the Parastagonospora nodorum SN15 stemphyloxin II BGC.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q0UK51">https://www.uniprot.org/uniprotkb/Q0UK51</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q0UK51 is the 475 aa Phaeosphaeria nodorum SN15, synonymous with Parastagonospora nodorum SN15, cytochrome P450 monooxygenase SthD / SNOG_07863 gene product; it cross-references EMBL CH445335 protein EAT85329.1 and annotates catalytic activity RHEA:62712 / RHEA:62713.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.rhea-db.org/rhea/62712">https://www.rhea-db.org/rhea/62712</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>RHEA:62712 is the betaenone C plus NADPH plus O2 plus H(+) to stemphyloxin I plus NADP(+) plus H2O reaction; Rhea maps the master reaction to UniProtKB:Q0UK51 in Swiss-Prot.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -203,10 +205,10 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>forms</td>
   <td>stemphyloxin I</td>
   <td>SthD is the SNOG_07863 cytochrome P450 monooxygenase in the BGC0002165 Parastagonospora nodorum SN15 cluster.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1002/chem.201904360<br>https://mibig.secondarymetabolites.org/repository/BGC0002165.3/BGC0002165.gbk<br>https://www.uniprot.org/uniprotkb/Q0UK51<br>https://www.rhea-db.org/rhea/62712</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1002/chem.201904360</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Li et al. activated the Parastagonospora nodorum SN15 stemphyloxin II cluster and used heterologous reconstruction to assign SthD C-15 hydroxylation of betaenone C to compound 7 / stemphyloxin I.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0002165.3/BGC0002165.gbk</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>MIBiG BGC0002165.3 places SNOG_07863 on GenBank CH445335.1 with protein_id EAT85329.1 in the Parastagonospora nodorum SN15 stemphyloxin II BGC.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q0UK51</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q0UK51 is the 475 aa Phaeosphaeria nodorum SN15, synonymous with Parastagonospora nodorum SN15, cytochrome P450 monooxygenase SthD / SNOG_07863 gene product; it cross-references EMBL CH445335 protein EAT85329.1 and annotates catalytic activity RHEA:62712 / RHEA:62713.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.rhea-db.org/rhea/62712</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>RHEA:62712 is the betaenone C plus NADPH plus O2 plus H(+) to stemphyloxin I plus NADP(+) plus H2O reaction; Rhea maps the master reaction to UniProtKB:Q0UK51 in Swiss-Prot.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1002/chem.201904360">DOI:10.1002/chem.201904360</a><br><a href="https://mibig.secondarymetabolites.org/repository/BGC0002165.3/BGC0002165.gbk">https://mibig.secondarymetabolites.org/repository/BGC0002165.3/BGC0002165.gbk</a><br><a href="https://www.uniprot.org/uniprotkb/Q0UK51">https://www.uniprot.org/uniprotkb/Q0UK51</a><br><a href="https://www.rhea-db.org/rhea/62712">https://www.rhea-db.org/rhea/62712</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1002/chem.201904360">DOI:10.1002/chem.201904360</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Li et al. activated the Parastagonospora nodorum SN15 stemphyloxin II cluster and used heterologous reconstruction to assign SthD C-15 hydroxylation of betaenone C to compound 7 / stemphyloxin I.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/repository/BGC0002165.3/BGC0002165.gbk">https://mibig.secondarymetabolites.org/repository/BGC0002165.3/BGC0002165.gbk</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>MIBiG BGC0002165.3 places SNOG_07863 on GenBank CH445335.1 with protein_id EAT85329.1 in the Parastagonospora nodorum SN15 stemphyloxin II BGC.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q0UK51">https://www.uniprot.org/uniprotkb/Q0UK51</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q0UK51 is the 475 aa Phaeosphaeria nodorum SN15, synonymous with Parastagonospora nodorum SN15, cytochrome P450 monooxygenase SthD / SNOG_07863 gene product; it cross-references EMBL CH445335 protein EAT85329.1 and annotates catalytic activity RHEA:62712 / RHEA:62713.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.rhea-db.org/rhea/62712">https://www.rhea-db.org/rhea/62712</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>RHEA:62712 is the betaenone C plus NADPH plus O2 plus H(+) to stemphyloxin I plus NADP(+) plus H2O reaction; Rhea maps the master reaction to UniProtKB:Q0UK51 in Swiss-Prot.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -220,31 +222,37 @@ by the corpus tests.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=YRYPVWAJOMXOHH-ITBWMFDCSA-N">AntibioticMech (betaenone C) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=naturalproductmech%3Amibig-6a66cb2f42">MediaIngredientMech (naturalproductmech:mibig-6a66cb2f42) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A1979465">TaxonMech: Phoma betae (NCBITaxon:1979465) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A321614">TaxonMech: Parastagonospora nodorum SN15 (NCBITaxon:321614) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A321614">TaxonMech: Parastagonospora nodorum SN15 (NCBITaxon:321614) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0001264">PathwayMech (mibig:BGC0001264) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0002165">PathwayMech (mibig:BGC0002165) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0002165">PathwayMech (mibig:BGC0002165) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A1979465">TaxonMech: Phoma betae (NCBITaxon:1979465) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A321614">TaxonMech: Parastagonospora nodorum SN15 (NCBITaxon:321614) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0001264">PathwayMech (mibig:BGC0001264) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0002165">PathwayMech (mibig:BGC0002165) &nearr;</a>
 </div>
 
 <h2>Open questions <span class="tag">1</span></h2>
-<div class="note"><p><strong>shared-structure</strong> — This structure is reported by more than one MIBiG entry: BGC0001264, BGC0002165. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
+<div class="note"><p><strong>shared-structure</strong> <span class="tag">OPEN</span> <span class="tag">curation todo</span> — This structure is reported by more than one MIBiG entry: BGC0001264, BGC0002165. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
+
+<h2 id="curation-history">Curation history <span class="tag">3</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-23T08:00:00Z">2026-10-23T08:00:00Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; antigravity <span class="tag">LLM-assisted</span><p>Added Parastagonospora nodorum SN15 BGC0002165 BIOSYNTHESIS pathway and causal graph to betaenone C (naturalproductmech:mibig-6a66cb2f42) recording its downstream C-15 hydroxylation by SthD cytochrome P450 monooxygenase (UniProtKB:Q0UK51, SNOG_07863, RHEA:62712) from CHEBI:145053 betaenone C to CHEBI:145070 stemphyloxin I.</p></li>
+<li><time datetime="2026-09-25T03:03:55Z">2026-09-25T03:03:55Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:16Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
 
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0001264</td><td>MIBIG</td><td>3</td></tr>
-<tr><td class="mono">BGC0002165</td><td>MIBIG</td><td>3</td></tr>
-<tr><td class="mono">BGC0002165</td><td>MIBIG</td><td>3</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001264">BGC0001264</a></td><td>MIBIG</td><td>3</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002165">BGC0002165</a></td><td>MIBIG</td><td>3</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002165">BGC0002165</a></td><td>MIBIG</td><td>3</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/polyketides/betaenone-c.yaml">data/natural_products/polyketides/betaenone-c.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20naturalproductmech%3Amibig-6a66cb2f42&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Fpolyketides%2Fbetaenone-c.html">Report a problem with this record</a>: opens a GitHub issue that names naturalproductmech:mibig-6a66cb2f42 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Record last updated 2026-10-23 08:00 UTC, its latest curation event. Generated from the committed corpus. Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

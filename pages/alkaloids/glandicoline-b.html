@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Alkaloids</a> &middot; glandicoline B</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,22 +32,22 @@
   </form>
 </div>
 <h1>glandicoline B</h1>
-<p class="sub"><span class="mono">naturalproductmech:mibig-7a476dbad3</span>
+<p class="sub"><span class="mono"><a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/alkaloids/glandicoline-b.yaml">naturalproductmech:mibig-7a476dbad3</a></span>
   <span class="tag">MINTED</span>
   <span class="tag">SEEDED</span>
 </p>
 <div class="note"><strong>Grounding review:</strong> No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.</div><details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/alkaloids/glandicoline-b.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/alkaloids/glandicoline-b.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">YEVSOYBNHBOQJZ-CXUHLZMHSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">CC(C)(C=C)C12C=C(C(=O)N\3C1(NC(=O)/C3=C\C4=CN=CN4)N(C5=CC=CC=C25)O)O</td></tr>
 <tr><th>Stereochemistry</th><td>  <span class="tag weak">undefined stereocentres</span> — the InChIKey does not
   distinguish this compound from its stereoisomers</td></tr>
-<tr><th>Cross-references</th><td class="mono">pubchem:91820473</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/compound/91820473">pubchem:91820473</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Alkaloids</a> —
@@ -58,27 +60,27 @@ nrps, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Penicillium rubens Wisconsin 54-1255<br><span class="mono">NCBITaxon:500485</span></td>
+  <td>Penicillium rubens Wisconsin 54-1255<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=500485">NCBITaxon:500485</a></span></td>
   <td><span class="tag causal">BGC_CHARACTERIZED</span></td>
-  <td class="mono">mibig:BGC0000420</td>
-  <td><span class="mono">DOI:10.1371/journal.pone.0065328</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000420">mibig:BGC0000420</a></td>
+  <td><span class="mono"><a href="https://doi.org/10.1371/journal.pone.0065328">DOI:10.1371/journal.pone.0065328</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">0</span></h2>
 <p class="sub">None cited.</p>
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0000420</td>
-  <td>Penicillium rubens Wisconsin 54-1255<br><span class="mono">NCBITaxon:500485</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000420">mibig:BGC0000420</a></td>
+  <td>Penicillium rubens Wisconsin 54-1255<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=500485">NCBITaxon:500485</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:AM920436.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AM920436.1">genbank:AM920436.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -88,20 +90,20 @@ isolation report left it.</p>
 <h2>Biosynthesis <span class="tag causal">curated</span></h2>
 <p class="sub">Written by a curator with claim-level evidence on each step; not
 derived from a source. This is what the rest of the record exists to support.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthesis steps"><table>
 <tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
 <tr>
   <td>7</td>
-  <td>RoqN glandicoline B O-methyltransferase<br><span class="mono">UniProtKB:B6HJU2</span></td>
-  <td class="mono">RHEA:51732</td>
-  <td class="mono">naturalproductmech:mibig-7a476dbad3 &rarr; CHEBI:70399</td>
-  <td class="mono">DOI:10.1039/c8ob01565a</td>
+  <td>RoqN glandicoline B O-methyltransferase<br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/B6HJU2/entry">UniProtKB:B6HJU2</a></span></td>
+  <td class="mono"><a href="https://www.rhea-db.org/rhea/51732">RHEA:51732</a></td>
+  <td class="mono"><a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/alkaloids/glandicoline-b.yaml">naturalproductmech:mibig-7a476dbad3</a> &rarr; <a href="../alkaloids/meleagrine.html">CHEBI:70399</a></td>
+  <td class="mono"><a href="https://doi.org/10.1039/c8ob01565a">DOI:10.1039/c8ob01565a</a></td>
 </tr>
 </table></div>
 <p class="sub">Step 7: This curates the Penicillium rubens Wisconsin 54-1255 BGC0000420 terminal O-methylation of glandicoline B to meleagrin. RHEA:51732 uses CHEBI:134347 for glandicoline B; this corpus keeps the exact BGC0000420 glandicoline B structure as naturalproductmech:mibig-7a476dbad3 because its stereochemical representation is not an exact ChEBI match.</p>
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for glandicoline B">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for glandicoline B">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -134,17 +136,17 @@ derived from a source. This is what the rest of the record exists to support.</p
 </div>
 
 <h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
-<p class="sub">Penicillium rubens Wisconsin 54-1255 BGC0000420 O-methyltransferase RoqN (Pc21g15440) methylates glandicoline B into meleagrin in the terminal step of the roquefortine/meleagrin pathway.</p><div class="scroll"><table>
+<p class="sub">Penicillium rubens Wisconsin 54-1255 BGC0000420 O-methyltransferase RoqN (Pc21g15440) methylates glandicoline B into meleagrin in the terminal step of the roquefortine/meleagrin pathway.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>glandicoline B</td>
   <td>is O-methylated by</td>
   <td>RoqN</td>
   <td>RoqN uses SAM to methylate the hydroxylamine oxygen of glandicoline B in the roquefortine/meleagrin branch.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1039/c8ob01565a<br>DOI:10.1371/journal.pone.0065328<br>https://www.uniprot.org/uniprotkb/B6HJU2<br>https://www.rhea-db.org/rhea/51732</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1039/c8ob01565a</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>The homologous enzymes OxaG and RoqN were shown to catalyze penultimate hydroxylamine O-methylation to generate meleagrin in vitro.</dd><dt>notes</dt><dd>Murray et al. directly assayed RoqN-catalyzed O-methylation of glandicoline B to meleagrin and OxaG, its Penicillium oxalicum homolog, with SAM as methyl donor.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0065328</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Eventually, meleagrin is produced from glandicoline B involving a methyltransferase (RoqN).</dd><dt>notes</dt><dd>Ali et al. assigned roqN in Penicillium rubens / P. chrysogenum by profiling BGC0000420 deletion strains in the branched roquefortine/meleagrin pathway.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/B6HJU2</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>Reviewed UniProtKB:B6HJU2 is the 288 aa Penicillium rubens Wisconsin 54-1255 RoqN/gmt/Pc21g15440 glandicoline B O-methyltransferase and cross-references EMBL AM920436 protein CAP96441.1.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.rhea-db.org/rhea/51732</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>RHEA:51732 is the glandicoline B plus S-adenosyl-L-methionine to meleagrin plus S-adenosyl-L-homocysteine plus proton reaction; Rhea maps the master reaction to UniProtKB:B6HJU2 in Swiss-Prot.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1039/c8ob01565a">DOI:10.1039/c8ob01565a</a><br><a href="https://doi.org/10.1371/journal.pone.0065328">DOI:10.1371/journal.pone.0065328</a><br><a href="https://www.uniprot.org/uniprotkb/B6HJU2">https://www.uniprot.org/uniprotkb/B6HJU2</a><br><a href="https://www.rhea-db.org/rhea/51732">https://www.rhea-db.org/rhea/51732</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1039/c8ob01565a">DOI:10.1039/c8ob01565a</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>The homologous enzymes OxaG and RoqN were shown to catalyze penultimate hydroxylamine O-methylation to generate meleagrin in vitro.</dd><dt>notes</dt><dd>Murray et al. directly assayed RoqN-catalyzed O-methylation of glandicoline B to meleagrin and OxaG, its Penicillium oxalicum homolog, with SAM as methyl donor.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pone.0065328">DOI:10.1371/journal.pone.0065328</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Eventually, meleagrin is produced from glandicoline B involving a methyltransferase (RoqN).</dd><dt>notes</dt><dd>Ali et al. assigned roqN in Penicillium rubens / P. chrysogenum by profiling BGC0000420 deletion strains in the branched roquefortine/meleagrin pathway.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/B6HJU2">https://www.uniprot.org/uniprotkb/B6HJU2</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>Reviewed UniProtKB:B6HJU2 is the 288 aa Penicillium rubens Wisconsin 54-1255 RoqN/gmt/Pc21g15440 glandicoline B O-methyltransferase and cross-references EMBL AM920436 protein CAP96441.1.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.rhea-db.org/rhea/51732">https://www.rhea-db.org/rhea/51732</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>RHEA:51732 is the glandicoline B plus S-adenosyl-L-methionine to meleagrin plus S-adenosyl-L-homocysteine plus proton reaction; Rhea maps the master reaction to UniProtKB:B6HJU2 in Swiss-Prot.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -153,10 +155,10 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>forms</td>
   <td>meleagrin</td>
   <td>RoqN is the Pc21g15440/gmt methyltransferase that forms meleagrin from glandicoline B as the terminal BGC0000420 tailoring reaction.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1039/c8ob01565a<br>DOI:10.1371/journal.pone.0065328<br>https://www.uniprot.org/uniprotkb/B6HJU2<br>https://www.rhea-db.org/rhea/51732</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1039/c8ob01565a</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>The homologous enzymes OxaG and RoqN were shown to catalyze penultimate hydroxylamine O-methylation to generate meleagrin in vitro.</dd><dt>notes</dt><dd>Murray et al. directly assayed RoqN-catalyzed O-methylation of glandicoline B to meleagrin and OxaG, its Penicillium oxalicum homolog, with SAM as methyl donor.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0065328</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Eventually, meleagrin is produced from glandicoline B involving a methyltransferase (RoqN).</dd><dt>notes</dt><dd>Ali et al. assigned roqN in Penicillium rubens / P. chrysogenum by profiling BGC0000420 deletion strains in the branched roquefortine/meleagrin pathway.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/B6HJU2</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>Reviewed UniProtKB:B6HJU2 is the 288 aa Penicillium rubens Wisconsin 54-1255 RoqN/gmt/Pc21g15440 glandicoline B O-methyltransferase and cross-references EMBL AM920436 protein CAP96441.1.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.rhea-db.org/rhea/51732</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>RHEA:51732 is the glandicoline B plus S-adenosyl-L-methionine to meleagrin plus S-adenosyl-L-homocysteine plus proton reaction; Rhea maps the master reaction to UniProtKB:B6HJU2 in Swiss-Prot.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1039/c8ob01565a">DOI:10.1039/c8ob01565a</a><br><a href="https://doi.org/10.1371/journal.pone.0065328">DOI:10.1371/journal.pone.0065328</a><br><a href="https://www.uniprot.org/uniprotkb/B6HJU2">https://www.uniprot.org/uniprotkb/B6HJU2</a><br><a href="https://www.rhea-db.org/rhea/51732">https://www.rhea-db.org/rhea/51732</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1039/c8ob01565a">DOI:10.1039/c8ob01565a</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>The homologous enzymes OxaG and RoqN were shown to catalyze penultimate hydroxylamine O-methylation to generate meleagrin in vitro.</dd><dt>notes</dt><dd>Murray et al. directly assayed RoqN-catalyzed O-methylation of glandicoline B to meleagrin and OxaG, its Penicillium oxalicum homolog, with SAM as methyl donor.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pone.0065328">DOI:10.1371/journal.pone.0065328</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Eventually, meleagrin is produced from glandicoline B involving a methyltransferase (RoqN).</dd><dt>notes</dt><dd>Ali et al. assigned roqN in Penicillium rubens / P. chrysogenum by profiling BGC0000420 deletion strains in the branched roquefortine/meleagrin pathway.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/B6HJU2">https://www.uniprot.org/uniprotkb/B6HJU2</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>Reviewed UniProtKB:B6HJU2 is the 288 aa Penicillium rubens Wisconsin 54-1255 RoqN/gmt/Pc21g15440 glandicoline B O-methyltransferase and cross-references EMBL AM920436 protein CAP96441.1.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.rhea-db.org/rhea/51732">https://www.rhea-db.org/rhea/51732</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>RHEA:51732 is the glandicoline B plus S-adenosyl-L-methionine to meleagrin plus S-adenosyl-L-homocysteine plus proton reaction; Rhea maps the master reaction to UniProtKB:B6HJU2 in Swiss-Prot.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -170,23 +172,31 @@ by the corpus tests.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=YEVSOYBNHBOQJZ-CXUHLZMHSA-N">AntibioticMech (glandicoline B) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=naturalproductmech%3Amibig-7a476dbad3">MediaIngredientMech (naturalproductmech:mibig-7a476dbad3) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A500485">TaxonMech: Penicillium rubens Wisconsin 54-1255 (NCBITaxon:500485) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000420">PathwayMech (mibig:BGC0000420) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A500485">TaxonMech: Penicillium rubens Wisconsin 54-1255 (NCBITaxon:500485) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000420">PathwayMech (mibig:BGC0000420) &nearr;</a>
 </div>
 
 
+<h2 id="curation-history">Curation history <span class="tag">3</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-23T08:00:00Z">2026-10-23T08:00:00Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; antigravity <span class="tag">LLM-assisted</span><p>Added Penicillium rubens Wisconsin 54-1255 BGC0000420 BIOSYNTHESIS pathway and causal graph to glandicoline B (naturalproductmech:mibig-7a476dbad3) recording its downstream O-methylation by RoqN glandicoline B O-methyltransferase (UniProtKB:B6HJU2, RHEA:51732) to meleagrin (CHEBI:70399).</p></li>
+<li><time datetime="2026-09-25T03:03:51Z">2026-09-25T03:03:51Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:16Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
+
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0000420</td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000420">BGC0000420</a></td><td>MIBIG</td><td>5</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/alkaloids/glandicoline-b.yaml">data/natural_products/alkaloids/glandicoline-b.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20naturalproductmech%3Amibig-7a476dbad3&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Falkaloids%2Fglandicoline-b.html">Report a problem with this record</a>: opens a GitHub issue that names naturalproductmech:mibig-7a476dbad3 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Record last updated 2026-10-23 08:00 UTC, its latest curation event. Generated from the committed corpus. Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

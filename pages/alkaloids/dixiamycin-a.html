@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Alkaloids</a> &middot; dixiamycin A</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,17 +32,17 @@
   </form>
 </div>
 <h1>dixiamycin A</h1>
-<p class="sub"><span class="mono">naturalproductmech:mibig-abcb3d7c73</span>
+<p class="sub"><span class="mono"><a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/alkaloids/dixiamycin-a.yaml">naturalproductmech:mibig-abcb3d7c73</a></span>
   <span class="tag">MINTED</span>
   <span class="tag">SEEDED</span>
 </p>
 <div class="note"><strong>Grounding review:</strong> No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.</div><details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/alkaloids/dixiamycin-a.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/alkaloids/dixiamycin-a.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">CPQSJHUUXUXWOT-IPPPMHIGSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">C[C@]12CC[C@@H]([C@@]([C@@H]1CCC3=CC4=C(C=C23)C5=CC=CC=C5N4N6C7=CC=CC=C7C8=C6C=C9CC[C@@H]1[C@@](C9=C8)(CC[C@@H]([C@@]1(C)C(=O)O)O)C)(C)C(=O)O)O</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
@@ -57,60 +59,60 @@ terpene, other, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Streptomyces sp. HKI0576<br><span class="mono">NCBITaxon:995841</span></td>
+  <td>Streptomyces sp. HKI0576<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=995841">NCBITaxon:995841</a></span></td>
   <td><span class="tag causal">BGC_CHARACTERIZED</span></td>
-  <td class="mono">mibig:BGC0000665</td>
-  <td><span class="mono">DOI:10.1002/anie.201204087</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000665">mibig:BGC0000665</a></td>
+  <td><span class="mono"><a href="https://doi.org/10.1002/anie.201204087">DOI:10.1002/anie.201204087</a></span></td>
 </tr>
 <tr>
-  <td>Streptomyces sp. HKI0576<br><span class="mono">NCBITaxon:995841</span></td>
+  <td>Streptomyces sp. HKI0576<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=995841">NCBITaxon:995841</a></span></td>
   <td><span class="tag causal">BGC_CHARACTERIZED</span></td>
-  <td class="mono">mibig:BGC0000665</td>
-  <td><span class="mono">DOI:10.1002/anie.201204087</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000665">mibig:BGC0000665</a></td>
+  <td><span class="mono"><a href="https://doi.org/10.1002/anie.201204087">DOI:10.1002/anie.201204087</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">3</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Streptomyces xinghaiensis<br><span class="mono">NCBITaxon:1038928</span></td>
+  <td>Streptomyces xinghaiensis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1038928">NCBITaxon:1038928</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/S00253-018-9337-2</td>
+  <td class="mono"><a href="https://doi.org/10.1007/S00253-018-9337-2">DOI:10.1007/S00253-018-9337-2</a></td>
 </tr>
 <tr>
-  <td>Streptomyces<br><span class="mono">NCBITaxon:1883</span></td>
+  <td>Streptomyces<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1883">NCBITaxon:1883</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1002/ANIE.201204087</td>
+  <td class="mono"><a href="https://doi.org/10.1002/ANIE.201204087">DOI:10.1002/ANIE.201204087</a></td>
 </tr>
 <tr>
-  <td>Streptomyces<br><span class="mono">NCBITaxon:1883</span></td>
+  <td>Streptomyces<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1883">NCBITaxon:1883</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1002/EJOC.201200599</td>
+  <td class="mono"><a href="https://doi.org/10.1002/EJOC.201200599">DOI:10.1002/EJOC.201200599</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">2</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0000665</td>
-  <td>Streptomyces sp. HKI0576<br><span class="mono">NCBITaxon:995841</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000665">mibig:BGC0000665</a></td>
+  <td>Streptomyces sp. HKI0576<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=995841">NCBITaxon:995841</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:HE815466.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/HE815466.1">genbank:HE815466.1</a></td>
 </tr>
 <tr>
-  <td class="mono">mibig:BGC0000665</td>
-  <td>Streptomyces sp. HKI0576<br><span class="mono">NCBITaxon:995841</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000665">mibig:BGC0000665</a></td>
+  <td>Streptomyces sp. HKI0576<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=995841">NCBITaxon:995841</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:HE815466.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/HE815466.1">genbank:HE815466.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -120,20 +122,20 @@ isolation report left it.</p>
 <h2>Biosynthesis <span class="tag causal">curated</span></h2>
 <p class="sub">Written by a curator with claim-level evidence on each step; not
 derived from a source. This is what the rest of the record exists to support.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthesis steps"><table>
 <tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
 <tr>
   <td>1</td>
-  <td>XiaH aryl-coupling flavoprotein<br><span class="mono">NCBIProtein:CCH63734.1</span></td>
+  <td>XiaH aryl-coupling flavoprotein<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/protein/CCH63734.1">NCBIProtein:CCH63734.1</a></span></td>
   <td class="mono"></td>
   <td class="mono">ungrounded &rarr; ungrounded</td>
-  <td class="mono">DOI:10.1002/anie.201303733</td>
+  <td class="mono"><a href="https://doi.org/10.1002/anie.201303733">DOI:10.1002/anie.201303733</a></td>
 </tr>
 </table></div>
 <p class="sub">Step 1: This proposed pathway entry captures Streptomyces sp. HKI0576 xiaH/CCH63734.1 as the BGC0000665 aryl-coupling flavoprotein that forms the N-N-linked dixiamycin scaffold. The immediate xiamycin monomer and the atropodiastereomer branch between dixiamycin A and B are left unexpanded. XiaH is grounded on enzyme_id and in the causal graph to the native GenPept accession NCBIProtein:CCH63734.1 because UniParc UPI0002777695 maps only to retired/obsolete UniProtKB/TrEMBL entries I7JVY9.1 and A0A0P0HXR3.1 with no active UniProtKB accession.</p>
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for dixiamycin A">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for dixiamycin A">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -166,18 +168,18 @@ derived from a source. This is what the rest of the record exists to support.</p
 </div>
 
 <h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
-<p class="sub">Partial Streptomyces sp. HKI0576 dixiamycin A biosynthesis graph for XiaH-mediated aryl coupling of xiamycin-type indoloterpenes.</p><div class="scroll"><table>
+<p class="sub">Partial Streptomyces sp. HKI0576 dixiamycin A biosynthesis graph for XiaH-mediated aryl coupling of xiamycin-type indoloterpenes.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>xiamycin-type indoloterpene monomers</td>
   <td>are aryl-coupled by</td>
   <td>XiaH</td>
   <td>This edge captures only the XiaH aryl-coupling branch toward dixiamycins; upstream xiamycin biosynthesis by the same cluster is left unexpanded.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1002/anie.201303733<br>https://mibig.secondarymetabolites.org/repository/BGC0000665.5/index.html<br>https://mibig.secondarymetabolites.org/repository/BGC0000665.5/BGC0000665.gbk<br>https://www.ncbi.nlm.nih.gov/protein/CCH63734.1<br>https://www.uniprot.org/uniparc/UPI0002777695</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1002/anie.201303733</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Regiodivergent N-C and N-N Aryl Coupling Reactions of Indoloterpenes</dd><dt>notes</dt><dd>Baunach et al. assigned the HKI0576 xiamycin flavoenzyme XiaH as an aryl-coupling enzyme for N-N-linked dixiamycin formation.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0000665.5/index.html</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>MIBiG BGC0000665.5 lists dixiamycin A and dixiamycin B as products of the HE815466.1 Streptomyces sp. HKI0576 xiamycin cluster.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0000665.5/BGC0000665.gbk</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>The official MIBiG BGC0000665.5 GenBank summary annotates xiaH as HE815466.1:7534..9327 on the reverse strand with GenPept product CCH63734.1.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/CCH63734.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>XiaH protein</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>NCBI GenPept CCH63734.1 is the 597 aa xiaH coding sequence from the Streptomyces sp. HKI0576 HE815466.1 indolosesquiterpenoid cluster. UniProtKB currently has no exact entry for this GenPept or EMBL accession.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniparc/UPI0002777695</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-23</dd><dt>snippet</dt><dd>CCH63734.1</dd><dt>notes</dt><dd>UniParc UPI0002777695 archives the exact 597 aa Streptomyces sp. HKI0576 xiaH sequence (EMBL HE815466.1:7534..9327 reverse strand, protein CCH63734.1) and records that UniProtKB/TrEMBL entries I7JVY9.1 and A0A0P0HXR3.1 are inactive/obsolete, confirming no active UniProtKB accession resolves for CCH63734.1.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1002/anie.201303733">DOI:10.1002/anie.201303733</a><br><a href="https://mibig.secondarymetabolites.org/repository/BGC0000665.5/index.html">https://mibig.secondarymetabolites.org/repository/BGC0000665.5/index.html</a><br><a href="https://mibig.secondarymetabolites.org/repository/BGC0000665.5/BGC0000665.gbk">https://mibig.secondarymetabolites.org/repository/BGC0000665.5/BGC0000665.gbk</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/CCH63734.1">https://www.ncbi.nlm.nih.gov/protein/CCH63734.1</a><br><a href="https://www.uniprot.org/uniparc/UPI0002777695">https://www.uniprot.org/uniparc/UPI0002777695</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1002/anie.201303733">DOI:10.1002/anie.201303733</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Regiodivergent N-C and N-N Aryl Coupling Reactions of Indoloterpenes</dd><dt>notes</dt><dd>Baunach et al. assigned the HKI0576 xiamycin flavoenzyme XiaH as an aryl-coupling enzyme for N-N-linked dixiamycin formation.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/repository/BGC0000665.5/index.html">https://mibig.secondarymetabolites.org/repository/BGC0000665.5/index.html</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>MIBiG BGC0000665.5 lists dixiamycin A and dixiamycin B as products of the HE815466.1 Streptomyces sp. HKI0576 xiamycin cluster.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/repository/BGC0000665.5/BGC0000665.gbk">https://mibig.secondarymetabolites.org/repository/BGC0000665.5/BGC0000665.gbk</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>The official MIBiG BGC0000665.5 GenBank summary annotates xiaH as HE815466.1:7534..9327 on the reverse strand with GenPept product CCH63734.1.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/CCH63734.1">https://www.ncbi.nlm.nih.gov/protein/CCH63734.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>XiaH protein</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>NCBI GenPept CCH63734.1 is the 597 aa xiaH coding sequence from the Streptomyces sp. HKI0576 HE815466.1 indolosesquiterpenoid cluster. UniProtKB currently has no exact entry for this GenPept or EMBL accession.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniparc/UPI0002777695">https://www.uniprot.org/uniparc/UPI0002777695</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-23</dd><dt>snippet</dt><dd>CCH63734.1</dd><dt>notes</dt><dd>UniParc UPI0002777695 archives the exact 597 aa Streptomyces sp. HKI0576 xiaH sequence (EMBL HE815466.1:7534..9327 reverse strand, protein CCH63734.1) and records that UniProtKB/TrEMBL entries I7JVY9.1 and A0A0P0HXR3.1 are inactive/obsolete, confirming no active UniProtKB accession resolves for CCH63734.1.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -186,11 +188,11 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>forms N-N-linked</td>
   <td>dixiamycin A</td>
   <td>The record represents the Standard InChIKey shared by the MIBiG dixiamycin A and dixiamycin B rows from BGC0000665.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1002/anie.201303733<br>https://mibig.secondarymetabolites.org/repository/BGC0000665.5/index.html<br>https://mibig.secondarymetabolites.org/repository/BGC0000665.5/BGC0000665.gbk<br>https://www.ncbi.nlm.nih.gov/protein/CCH63734.1<br>https://www.uniprot.org/uniparc/UPI0002777695</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1002/anie.201303733</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Regiodivergent N-C and N-N Aryl Coupling Reactions of Indoloterpenes</dd><dt>notes</dt><dd>Baunach et al. assigned the HKI0576 xiamycin flavoenzyme XiaH as an aryl-coupling enzyme for N-N-linked dixiamycin formation.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0000665.5/index.html</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>MIBiG BGC0000665.5 lists dixiamycin A and dixiamycin B as products of the HE815466.1 Streptomyces sp. HKI0576 xiamycin cluster.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0000665.5/BGC0000665.gbk</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>The official MIBiG BGC0000665.5 GenBank summary annotates xiaH as HE815466.1:7534..9327 on the reverse strand with GenPept product CCH63734.1.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/CCH63734.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>XiaH protein</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>NCBI GenPept CCH63734.1 is the 597 aa xiaH coding sequence from the Streptomyces sp. HKI0576 HE815466.1 indolosesquiterpenoid cluster. UniProtKB currently has no exact entry for this GenPept or EMBL accession.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniparc/UPI0002777695</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-23</dd><dt>snippet</dt><dd>CCH63734.1</dd><dt>notes</dt><dd>UniParc UPI0002777695 archives the exact 597 aa Streptomyces sp. HKI0576 xiaH sequence (EMBL HE815466.1:7534..9327 reverse strand, protein CCH63734.1) and records that UniProtKB/TrEMBL entries I7JVY9.1 and A0A0P0HXR3.1 are inactive/obsolete, confirming no active UniProtKB accession resolves for CCH63734.1.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1002/anie.201303733">DOI:10.1002/anie.201303733</a><br><a href="https://mibig.secondarymetabolites.org/repository/BGC0000665.5/index.html">https://mibig.secondarymetabolites.org/repository/BGC0000665.5/index.html</a><br><a href="https://mibig.secondarymetabolites.org/repository/BGC0000665.5/BGC0000665.gbk">https://mibig.secondarymetabolites.org/repository/BGC0000665.5/BGC0000665.gbk</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/CCH63734.1">https://www.ncbi.nlm.nih.gov/protein/CCH63734.1</a><br><a href="https://www.uniprot.org/uniparc/UPI0002777695">https://www.uniprot.org/uniparc/UPI0002777695</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1002/anie.201303733">DOI:10.1002/anie.201303733</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Regiodivergent N-C and N-N Aryl Coupling Reactions of Indoloterpenes</dd><dt>notes</dt><dd>Baunach et al. assigned the HKI0576 xiamycin flavoenzyme XiaH as an aryl-coupling enzyme for N-N-linked dixiamycin formation.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/repository/BGC0000665.5/index.html">https://mibig.secondarymetabolites.org/repository/BGC0000665.5/index.html</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>MIBiG BGC0000665.5 lists dixiamycin A and dixiamycin B as products of the HE815466.1 Streptomyces sp. HKI0576 xiamycin cluster.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/repository/BGC0000665.5/BGC0000665.gbk">https://mibig.secondarymetabolites.org/repository/BGC0000665.5/BGC0000665.gbk</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>The official MIBiG BGC0000665.5 GenBank summary annotates xiaH as HE815466.1:7534..9327 on the reverse strand with GenPept product CCH63734.1.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/CCH63734.1">https://www.ncbi.nlm.nih.gov/protein/CCH63734.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>XiaH protein</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>NCBI GenPept CCH63734.1 is the 597 aa xiaH coding sequence from the Streptomyces sp. HKI0576 HE815466.1 indolosesquiterpenoid cluster. UniProtKB currently has no exact entry for this GenPept or EMBL accession.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniparc/UPI0002777695">https://www.uniprot.org/uniparc/UPI0002777695</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-23</dd><dt>snippet</dt><dd>CCH63734.1</dd><dt>notes</dt><dd>UniParc UPI0002777695 archives the exact 597 aa Streptomyces sp. HKI0576 xiaH sequence (EMBL HE815466.1:7534..9327 reverse strand, protein CCH63734.1) and records that UniProtKB/TrEMBL entries I7JVY9.1 and A0A0P0HXR3.1 are inactive/obsolete, confirming no active UniProtKB accession resolves for CCH63734.1.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -204,26 +206,33 @@ by the corpus tests.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=CPQSJHUUXUXWOT-IPPPMHIGSA-N">AntibioticMech (dixiamycin A) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=naturalproductmech%3Amibig-abcb3d7c73">MediaIngredientMech (naturalproductmech:mibig-abcb3d7c73) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A995841">TaxonMech: Streptomyces sp. HKI0576 (NCBITaxon:995841) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A995841">TaxonMech: Streptomyces sp. HKI0576 (NCBITaxon:995841) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000665">PathwayMech (mibig:BGC0000665) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000665">PathwayMech (mibig:BGC0000665) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A995841">TaxonMech: Streptomyces sp. HKI0576 (NCBITaxon:995841) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000665">PathwayMech (mibig:BGC0000665) &nearr;</a>
 </div>
 
 
+<h2 id="curation-history">Curation history <span class="tag">4</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-23T22:53:33Z">2026-10-23T22:53:33Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; antigravity <span class="tag">LLM-assisted</span><p>Grounded the Streptomyces sp. HKI0576 XiaH (BGC0000665) biosynthetic pathway step and BIOSYNTHESIS causal graph ENZYME node (xiah) to the native GenPept accession NCBIProtein:CCH63734.1, and added UniParc UPI0002777695 evidence documenting that the corresponding UniProtKB/TrEMBL entries I7JVY9.1 and A0A0P0HXR3.1 are retired/obsolete.</p></li>
+<li><time datetime="2026-09-27T22:27:43Z">2026-09-27T22:27:43Z</time> &middot; <strong>ADDED_DIXIAMYCIN_A_XIAH_BIOSYNTHESIS_GRAPH</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added a Streptomyces sp. HKI0576 XiaH proposed biosynthetic pathway step and BIOSYNTHESIS causal graph for dixiamycin A; retained XiaH as UNGROUNDED because no exact UniProtKB entry resolves for HE815466.1 GenPept CCH63734.1.</p></li>
+<li><time datetime="2026-09-25T03:01:42Z">2026-09-25T03:01:42Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:04Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
+
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0000665</td><td>MIBIG</td><td>5</td></tr>
-<tr><td class="mono">BGC0000665</td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000665">BGC0000665</a></td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000665">BGC0000665</a></td><td>MIBIG</td><td>5</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/alkaloids/dixiamycin-a.yaml">data/natural_products/alkaloids/dixiamycin-a.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20naturalproductmech%3Amibig-abcb3d7c73&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Falkaloids%2Fdixiamycin-a.html">Report a problem with this record</a>: opens a GitHub issue that names naturalproductmech:mibig-abcb3d7c73 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Record last updated 2026-10-23 22:53 UTC, its latest curation event. Generated from the committed corpus. Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

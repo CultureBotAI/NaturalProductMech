@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Terpenoids</a> &middot; thalianol</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>thalianol</h1>
-<p class="sub"><span class="mono">CHEBI:52317</span>
+<p class="sub"><span class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_52317">CHEBI:52317</a></span>
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 </p>
 <details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/terpenoids/thalianol.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/terpenoids/thalianol.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">DGAGPZOBTQYNRE-VMSIWEJCSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">C[C@H](CC/C=C(\C)/CCC=C(C)C)[C@]1(CCC2=C1CC[C@@H]3[C@@]2(CC[C@@H](C3(C)C)O)C)C</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">pubchem:25229600</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/compound/25229600">pubchem:25229600</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Terpenoids</a> —
@@ -57,27 +59,27 @@ terpene, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Arabidopsis thaliana<br><span class="mono">NCBITaxon:3702</span></td>
+  <td>Arabidopsis thaliana<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3702">NCBITaxon:3702</a></span></td>
   <td><span class="tag causal">BGC_CHARACTERIZED</span></td>
-  <td class="mono">mibig:BGC0000670</td>
-  <td><span class="mono">DOI:10.1126/science.1154990</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000670">mibig:BGC0000670</a></td>
+  <td><span class="mono"><a href="https://doi.org/10.1126/science.1154990">DOI:10.1126/science.1154990</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">0</span></h2>
 <p class="sub">None cited.</p>
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0000670</td>
-  <td>Arabidopsis thaliana<br><span class="mono">NCBITaxon:3702</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000670">mibig:BGC0000670</a></td>
+  <td>Arabidopsis thaliana<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3702">NCBITaxon:3702</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:NC_003076.8</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/NC_003076.8">genbank:NC_003076.8</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -87,20 +89,20 @@ isolation report left it.</p>
 <h2>Biosynthesis <span class="tag causal">curated</span></h2>
 <p class="sub">Written by a curator with claim-level evidence on each step; not
 derived from a source. This is what the rest of the record exists to support.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthesis steps"><table>
 <tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
 <tr>
   <td>1</td>
-  <td>Thalianol synthase 1<br><span class="mono">UniProtKB:Q9FI37</span></td>
-  <td class="mono">RHEA:26160</td>
-  <td class="mono">CHEBI:15441 &rarr; CHEBI:52317</td>
-  <td class="mono">DOI:10.1021/ja0318784</td>
+  <td>Thalianol synthase 1<br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q9FI37/entry">UniProtKB:Q9FI37</a></span></td>
+  <td class="mono"><a href="https://www.rhea-db.org/rhea/26160">RHEA:26160</a></td>
+  <td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_15441">CHEBI:15441</a> &rarr; <a href="http://purl.obolibrary.org/obo/CHEBI_52317">CHEBI:52317</a></td>
+  <td class="mono"><a href="https://doi.org/10.1021/ja0318784">DOI:10.1021/ja0318784</a></td>
 </tr>
 </table></div>
 <p class="sub">Step 1: Arabidopsis thaliana THAS1/At5g48010 cyclizes (S)-2,3-epoxysqualene to thalianol, the first committed cyclization step in the thalianol triterpene gene cluster.</p>
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for thalianol">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for thalianol">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -133,14 +135,14 @@ derived from a source. This is what the rest of the record exists to support.</p
 </div>
 
 <h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
-<p class="sub">Partial Arabidopsis thaliana thalianol biosynthesis graph for THAS1-catalyzed cyclization of (S)-2,3-epoxysqualene to thalianol.</p><div class="scroll"><table>
+<p class="sub">Partial Arabidopsis thaliana thalianol biosynthesis graph for THAS1-catalyzed cyclization of (S)-2,3-epoxysqualene to thalianol.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>(S)-2,3-epoxysqualene</td>
   <td>is cyclized by</td>
   <td>THAS1</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja0318784</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja0318784</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>was shown to convert 3(S)-oxidosqualene to the previously unknown triterpene alcohol (3S,13S,14R)-malabarica-8,17,21-trien-3-ol, which we named thalianol</dd><dt>notes</dt><dd>UniProtKB:Q9FI37 resolves to the Arabidopsis thaliana THAS1/At5g48010 gene product, maps to EMBL AY327541 protein AAP92117.1, and annotates RHEA:26160 for the cyclization of (S)-2,3-epoxysqualene to thalianol.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja0318784">DOI:10.1021/ja0318784</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja0318784">DOI:10.1021/ja0318784</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>was shown to convert 3(S)-oxidosqualene to the previously unknown triterpene alcohol (3S,13S,14R)-malabarica-8,17,21-trien-3-ol, which we named thalianol</dd><dt>notes</dt><dd>UniProtKB:Q9FI37 resolves to the Arabidopsis thaliana THAS1/At5g48010 gene product, maps to EMBL AY327541 protein AAP92117.1, and annotates RHEA:26160 for the cyclization of (S)-2,3-epoxysqualene to thalianol.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -149,7 +151,7 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>forms</td>
   <td>thalianol</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja0318784</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja0318784</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>was shown to convert 3(S)-oxidosqualene to the previously unknown triterpene alcohol (3S,13S,14R)-malabarica-8,17,21-trien-3-ol, which we named thalianol</dd><dt>notes</dt><dd>UniProtKB:Q9FI37 resolves to the Arabidopsis thaliana THAS1/At5g48010 gene product, maps to EMBL AY327541 protein AAP92117.1, and annotates RHEA:26160 for the cyclization of (S)-2,3-epoxysqualene to thalianol.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja0318784">DOI:10.1021/ja0318784</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja0318784">DOI:10.1021/ja0318784</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>was shown to convert 3(S)-oxidosqualene to the previously unknown triterpene alcohol (3S,13S,14R)-malabarica-8,17,21-trien-3-ol, which we named thalianol</dd><dt>notes</dt><dd>UniProtKB:Q9FI37 resolves to the Arabidopsis thaliana THAS1/At5g48010 gene product, maps to EMBL AY327541 protein AAP92117.1, and annotates RHEA:26160 for the cyclization of (S)-2,3-epoxysqualene to thalianol.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -157,17 +159,17 @@ derived from a source. This is what the rest of the record exists to support.</p
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
-<p class="sub">MITE-reported THAH hydroxylation consuming exact thalianol, represented separately from the existing A.thaliana THAS1 synthesis pathway. The sequence-verified D7MKC1 reference is A.lyrata subsp. lyrata donor MN47, not A.thaliana as implied by the MITE prose. Database function is not an independently inspected primary assay. Product identity/stereo remains unresolved; no producer upgrade or full-record sign-off.</p><div class="scroll"><table>
+<p class="sub">MITE-reported THAH hydroxylation consuming exact thalianol, represented separately from the existing A.thaliana THAS1 synthesis pathway. The sequence-verified D7MKC1 reference is A.lyrata subsp. lyrata donor MN47, not A.thaliana as implied by the MITE prose. Database function is not an independently inspected primary assay. Product identity/stereo remains unresolved; no producer upgrade or full-record sign-off.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 2 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>Database-named THAH A.lyrata MN47 reference</td>
   <td>is_database_reported_catalyst_of</td>
   <td>MITE-reported THAH substrate hydroxylation</td>
   <td>Functional attribution is MITE&#39;s, while independent sequences establish the explicitly named A.lyrata reference despite the inconsistent source prose. No native heme/iron occupancy, electron donor, assay, knockout phenotype, binding site, kinetics or complex is adopted.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000133.json<br>https://www.uniprot.org/uniprotkb/D7MKC1<br>https://www.ncbi.nlm.nih.gov/protein/EFH41844.1<br>https://www.ncbi.nlm.nih.gov/nuccore/GL348720.1?from=10405500&amp;to=10409700</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000133.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000133 version3, active, names THAH/D7MKC1/EFH41844.1. Its heterologous-expression evidence code remains a database assertion; the primary paper was inaccessible. The prose organism name is inconsistent with both independent sequence records, which identify Arabidopsis lyrata subsp. lyrata, not A.thaliana. Retired BGC0002857 was removed from this version.</dd><dt>snippet</dt><dd>Hydroxylates Thalianol</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/D7MKC1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Current TrEMBL75/sequence1,477aa, ARALYDRAFT_684148/taxon81972; direct EMBL GL348720/EFH41844.1 cross-reference, cv.MN47. No FUNCTION or CATALYTIC ACTIVITY comment. Automated P450, GO, cofactor, membrane and binding annotations are not thalianol assay evidence.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/EFH41844.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Complete477-residue predicted reference, Arabidopsis lyrata subsp. lyrata/taxon81972, NASC&lt;UK&gt; donor MN47, locusARALYDRAFT_684148. Full coded_by inspected; no historical assay-stock or construct mapping.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/GL348720.1?from=10405500&amp;to=10409700</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Complete1434-nt eight-exon minus-strand CDS spans10405619..10409607 in forward4201-bp window10405500..10409700. Codon1/default table1 translation equals native annotation, independent EFH41844.1 and current D7MKC1, all477aa. All exact absolute coded_by exon coordinates map to native window features and identical DNA; donor/taxon agree. Full-CDS window, not full genome; sequence identity only.</dd></dl>
+  <td><span class="mono"><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000133.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000133.json</a><br><a href="https://www.uniprot.org/uniprotkb/D7MKC1">https://www.uniprot.org/uniprotkb/D7MKC1</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/EFH41844.1">https://www.ncbi.nlm.nih.gov/protein/EFH41844.1</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/GL348720.1?from=10405500&amp;to=10409700">https://www.ncbi.nlm.nih.gov/nuccore/GL348720.1?from=10405500&amp;to=10409700</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000133.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000133.json</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000133 version3, active, names THAH/D7MKC1/EFH41844.1. Its heterologous-expression evidence code remains a database assertion; the primary paper was inaccessible. The prose organism name is inconsistent with both independent sequence records, which identify Arabidopsis lyrata subsp. lyrata, not A.thaliana. Retired BGC0002857 was removed from this version.</dd><dt>snippet</dt><dd>Hydroxylates Thalianol</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/D7MKC1">https://www.uniprot.org/uniprotkb/D7MKC1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Current TrEMBL75/sequence1,477aa, ARALYDRAFT_684148/taxon81972; direct EMBL GL348720/EFH41844.1 cross-reference, cv.MN47. No FUNCTION or CATALYTIC ACTIVITY comment. Automated P450, GO, cofactor, membrane and binding annotations are not thalianol assay evidence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/EFH41844.1">https://www.ncbi.nlm.nih.gov/protein/EFH41844.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Complete477-residue predicted reference, Arabidopsis lyrata subsp. lyrata/taxon81972, NASC&lt;UK&gt; donor MN47, locusARALYDRAFT_684148. Full coded_by inspected; no historical assay-stock or construct mapping.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/GL348720.1?from=10405500&amp;to=10409700">https://www.ncbi.nlm.nih.gov/nuccore/GL348720.1?from=10405500&amp;to=10409700</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Complete1434-nt eight-exon minus-strand CDS spans10405619..10409607 in forward4201-bp window10405500..10409700. Codon1/default table1 translation equals native annotation, independent EFH41844.1 and current D7MKC1, all477aa. All exact absolute coded_by exon coordinates map to native window features and identical DNA; donor/taxon agree. Full-CDS window, not full genome; sequence identity only.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -176,7 +178,7 @@ by the corpus tests.</p>
   <td>is_database_example_substrate_of</td>
   <td>MITE-reported THAH substrate hydroxylation</td>
   <td>Pinned example substrate matches full key DGAGPZOBTQYNRE-VMSIWEJCSA-N and complete stereo in the repository-helper/RDKit2026.03.5 screen. This is a substrate-consumption context, not a new thalianol production claim, and not an independently mapped native assay substrate.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000133.json</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000133.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000133 version3, active, names THAH/D7MKC1/EFH41844.1. Its heterologous-expression evidence code remains a database assertion; the primary paper was inaccessible. The prose organism name is inconsistent with both independent sequence records, which identify Arabidopsis lyrata subsp. lyrata, not A.thaliana. Retired BGC0002857 was removed from this version.</dd></dl>
+  <td><span class="mono"><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000133.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000133.json</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000133.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000133.json</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000133 version3, active, names THAH/D7MKC1/EFH41844.1. Its heterologous-expression evidence code remains a database assertion; the primary paper was inaccessible. The prose organism name is inconsistent with both independent sequence records, which identify Arabidopsis lyrata subsp. lyrata, not A.thaliana. Retired BGC0002857 was removed from this version.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -185,7 +187,7 @@ by the corpus tests.</p>
   <td>has_database_example_product</td>
   <td>Database-encoded hydroxylated thalianol intermediate</td>
   <td>The hydroxylated example is marked intermediate. Its encoded product omits side-chain double-bond stereo present in the substrate, so no exact external product identity or complete product stereo is asserted. No downstream order or pathway finality. Preserve the separate A.thaliana THAS1/Q9FI37 pathway/graph and BGC0000670, existing BGC_CHARACTERIZED/CLUSTER_DEMONSTRATED grades and SEEDED status; no retired BGC transfer.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000133.json</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000133.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000133 version3, active, names THAH/D7MKC1/EFH41844.1. Its heterologous-expression evidence code remains a database assertion; the primary paper was inaccessible. The prose organism name is inconsistent with both independent sequence records, which identify Arabidopsis lyrata subsp. lyrata, not A.thaliana. Retired BGC0002857 was removed from this version.</dd></dl>
+  <td><span class="mono"><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000133.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000133.json</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000133.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000133.json</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000133 version3, active, names THAH/D7MKC1/EFH41844.1. Its heterologous-expression evidence code remains a database assertion; the primary paper was inaccessible. The prose organism name is inconsistent with both independent sequence records, which identify Arabidopsis lyrata subsp. lyrata, not A.thaliana. Retired BGC0002857 was removed from this version.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -199,24 +201,35 @@ by the corpus tests.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=DGAGPZOBTQYNRE-VMSIWEJCSA-N">AntibioticMech (thalianol) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=CHEBI%3A52317">MediaIngredientMech (CHEBI:52317) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A3702">TaxonMech: Arabidopsis thaliana (NCBITaxon:3702) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000670">PathwayMech (mibig:BGC0000670) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q=CHEBI%3A52317">MediaIngredientMech (CHEBI:52317) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A3702">TaxonMech: Arabidopsis thaliana (NCBITaxon:3702) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000670">PathwayMech (mibig:BGC0000670) &nearr;</a>
 </div>
 
 
+<h2 id="curation-history">Curation history <span class="tag">5</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-07T09:18:12Z">2026-10-07T09:18:12Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added a separate MITE-database-asserted THAH thalianol-consumption context: four nodes/three edges with stable URLs and one exact two-word snippet. UniProtKB:D7MKC1 is A.lyrata subsp.lyrata/taxon81972 donor MN47, not A.thaliana as implied by MITE prose. Full1434-nt eight-exon/default-table1 minus-CDS spanning 10405619..10409607 in GL348720.1 forward4201-bp window translates exactly to native annotation, independent EFH41844.1 and TrEMBL75/seq1, all477aa; all exon coordinates/DNA and donor/taxon agree. Native reference identity only, not a full-genome or historical assay-stock/construct proof. Automated UniProt annotations are not functional evidence; primary paper inaccessible. No primary assay, native cofactor, electron donor, site, kinetics, phenotype or complex. Exact substrate key/stereo matches; hydroxylated product remains ungrounded/intermediate and its encoded side-chain stereo is incomplete. No thalianol production claim, downstream order, finality or retired BGC0002857 transfer. Preserved all prior fields, existing A.thaliana THAS1/Q9FI37 pathway/graph/evidence and BGC0000670 grades, SEEDED status and append-only history. Not full-record sign-off.</p></li>
+<li><time datetime="2026-09-26T23:49:33Z">2026-09-26T23:49:33Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Replaced title-only thalianol THAS1 pathway and causal-edge evidence snippets with a narrow verbatim passage from <a href="https://doi.org/10.1021/ja0318784">DOI:10.1021/ja0318784</a>.</p></li>
+<li><time datetime="2026-09-26T23:30:22Z">2026-09-26T23:30:22Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added a one-step BIOSYNTHESIS pathway and causal graph for thalianol biosynthesis; grounded Arabidopsis thaliana THAS1 to UniProtKB:Q9FI37 via At5g48010; and cited the experimentally characterized RHEA:26160 reaction.</p></li>
+<li><time datetime="2026-09-25T03:01:46Z">2026-09-25T03:01:46Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:05Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
+
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0000670</td><td>MIBIG</td><td>4</td></tr>
-<tr><td class="mono">CHEBI:52317</td><td>CHEBI</td><td>3-star</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000670">BGC0000670</a></td><td>MIBIG</td><td>4</td></tr>
+<tr><td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_52317">CHEBI:52317</a></td><td>CHEBI</td><td>3-star</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/terpenoids/thalianol.yaml">data/natural_products/terpenoids/thalianol.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20CHEBI%3A52317&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Fterpenoids%2Fthalianol.html">Report a problem with this record</a>: opens a GitHub issue that names CHEBI:52317 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Record last updated 2026-10-07 09:18 UTC, its latest curation event. Generated from the committed corpus. Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

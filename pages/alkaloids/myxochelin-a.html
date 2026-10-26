@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Alkaloids</a> &middot; myxochelin A</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>myxochelin A</h1>
-<p class="sub"><span class="mono">naturalproductmech:mibig-b9324089ad</span>
+<p class="sub"><span class="mono"><a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/alkaloids/myxochelin-a.yaml">naturalproductmech:mibig-b9324089ad</a></span>
   <span class="tag">MINTED</span>
   <span class="tag">SEEDED</span>
 </p>
 <div class="note"><strong>Grounding review:</strong> No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.</div><details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/alkaloids/myxochelin-a.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/alkaloids/myxochelin-a.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">WNBVGSNESTZACV-LBPRGKRZSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">OC[C@H](CCCCNC(=O)C1=CC=CC(O)=C1O)NC(=O)C1=CC=CC(O)=C1O</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">npatlas:NPA02219, pubchem:16093504, npatlas:NPA002219</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://www.npatlas.org/explore/compounds/NPA02219">npatlas:NPA02219</a>, <a href="https://pubchem.ncbi.nlm.nih.gov/compound/16093504">pubchem:16093504</a>, <a href="https://www.npatlas.org/explore/compounds/NPA002219">npatlas:NPA002219</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Alkaloids</a> —
@@ -57,86 +59,86 @@ nrps, pks, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Stigmatella aurantiaca Sg a15<br><span class="mono">NCBITaxon:675526</span></td>
+  <td>Stigmatella aurantiaca Sg a15<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=675526">NCBITaxon:675526</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0001345</td>
-  <td><span class="mono">PMID:11562468</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001345">mibig:BGC0001345</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/11562468/">PMID:11562468</a></span></td>
 </tr>
 <tr>
-  <td>Archangium violaceum<br><span class="mono">NCBITaxon:83451</span></td>
+  <td>Archangium violaceum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=83451">NCBITaxon:83451</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0002324</td>
-  <td><span class="mono">PMID:34623817</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002324">mibig:BGC0002324</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/34623817/">PMID:34623817</a></span></td>
 </tr>
 <tr>
-  <td>Pseudoalteromonas piscicida<br><span class="mono">NCBITaxon:43662</span></td>
+  <td>Pseudoalteromonas piscicida<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=43662">NCBITaxon:43662</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0002491</td>
-  <td><span class="mono">PMID:30217842</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002491">mibig:BGC0002491</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/30217842/">PMID:30217842</a></span></td>
 </tr>
 <tr>
-  <td>Myxococcus xanthus DK 1622<br><span class="mono">NCBITaxon:246197</span></td>
+  <td>Myxococcus xanthus DK 1622<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=246197">NCBITaxon:246197</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0002492</td>
-  <td><span class="mono">PMID:30217842</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002492">mibig:BGC0002492</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/30217842/">PMID:30217842</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">3</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Streptomyces albus<br><span class="mono">NCBITaxon:1888</span></td>
+  <td>Streptomyces albus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1888">NCBITaxon:1888</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1093/FEMSLE/FNX155</td>
+  <td class="mono"><a href="https://doi.org/10.1093/FEMSLE/FNX155">DOI:10.1093/FEMSLE/FNX155</a></td>
 </tr>
 <tr>
-  <td>Angiococcus disciformis<br><span class="mono">NCBITaxon:38</span></td>
+  <td>Angiococcus disciformis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=38">NCBITaxon:38</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.7164/ANTIBIOTICS.42.14</td>
+  <td class="mono"><a href="https://doi.org/10.7164/ANTIBIOTICS.42.14">DOI:10.7164/ANTIBIOTICS.42.14</a></td>
 </tr>
 <tr>
-  <td>Stigmatella aurantiaca<br><span class="mono">NCBITaxon:41</span></td>
+  <td>Stigmatella aurantiaca<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=41">NCBITaxon:41</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1073/PNAS.201167098</td>
+  <td class="mono"><a href="https://doi.org/10.1073/PNAS.201167098">DOI:10.1073/PNAS.201167098</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">4</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0001345</td>
-  <td>Stigmatella aurantiaca Sg a15<br><span class="mono">NCBITaxon:675526</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001345">mibig:BGC0001345</a></td>
+  <td>Stigmatella aurantiaca Sg a15<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=675526">NCBITaxon:675526</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:AF299336.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF299336.1">genbank:AF299336.1</a></td>
 </tr>
 <tr>
-  <td class="mono">mibig:BGC0002324</td>
-  <td>Archangium violaceum<br><span class="mono">NCBITaxon:83451</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002324">mibig:BGC0002324</a></td>
+  <td>Archangium violaceum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=83451">NCBITaxon:83451</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:CP069338.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/CP069338.1">genbank:CP069338.1</a></td>
 </tr>
 <tr>
-  <td class="mono">mibig:BGC0002491</td>
-  <td>Pseudoalteromonas piscicida<br><span class="mono">NCBITaxon:43662</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002491">mibig:BGC0002491</a></td>
+  <td>Pseudoalteromonas piscicida<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=43662">NCBITaxon:43662</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:JXXW01000072.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/JXXW01000072.1">genbank:JXXW01000072.1</a></td>
 </tr>
 <tr>
-  <td class="mono">mibig:BGC0002492</td>
-  <td>Myxococcus xanthus DK 1622<br><span class="mono">NCBITaxon:246197</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002492">mibig:BGC0002492</a></td>
+  <td>Myxococcus xanthus DK 1622<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=246197">NCBITaxon:246197</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:CP000113.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/CP000113.1">genbank:CP000113.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -146,34 +148,34 @@ isolation report left it.</p>
 <h2>Biosynthesis <span class="tag causal">curated</span></h2>
 <p class="sub">Written by a curator with claim-level evidence on each step; not
 derived from a source. This is what the rest of the record exists to support.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthesis steps"><table>
 <tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
 <tr>
   <td>1</td>
-  <td>MxcE 2,3-DHBA-AMP ligase<br><span class="mono">UniProtKB:Q9F638</span></td>
+  <td>MxcE 2,3-DHBA-AMP ligase<br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q9F638/entry">UniProtKB:Q9F638</a></span></td>
   <td class="mono"></td>
   <td class="mono">ungrounded &rarr; ungrounded</td>
-  <td class="mono">DOI:10.1073/pnas.201167098</td>
+  <td class="mono"><a href="https://doi.org/10.1073/pnas.201167098">DOI:10.1073/pnas.201167098</a></td>
 </tr>
 <tr>
   <td>2</td>
-  <td>MxcF isochorismatase and aryl carrier protein<br><span class="mono">UniProtKB:Q9F637</span></td>
+  <td>MxcF isochorismatase and aryl carrier protein<br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q9F637/entry">UniProtKB:Q9F637</a></span></td>
   <td class="mono"></td>
   <td class="mono">ungrounded &rarr; ungrounded</td>
-  <td class="mono">DOI:10.1073/pnas.201167098</td>
+  <td class="mono"><a href="https://doi.org/10.1073/pnas.201167098">DOI:10.1073/pnas.201167098</a></td>
 </tr>
 <tr>
   <td>3</td>
-  <td>MxcG peptide synthetase with reductase domain<br><span class="mono">UniProtKB:Q9F636</span></td>
+  <td>MxcG peptide synthetase with reductase domain<br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q9F636/entry">UniProtKB:Q9F636</a></span></td>
   <td class="mono"></td>
   <td class="mono">ungrounded &rarr; ungrounded</td>
-  <td class="mono">DOI:10.1073/pnas.201167098</td>
+  <td class="mono"><a href="https://doi.org/10.1073/pnas.201167098">DOI:10.1073/pnas.201167098</a></td>
 </tr>
 </table></div>
 <p class="sub">Step 1: MxcE adenylates 2,3-dihydroxybenzoic acid for transfer to the MxcF aryl carrier protein; the carrier-protein thioester is left ungrounded as a pathway intermediate.</p><p class="sub">Step 2: MxcF supplies the aryl carrier protein that receives activated 2,3-DHBA from MxcE and presents it to MxcG; its isochorismatase module contributes to DHBA formation from chorismate.</p><p class="sub">Step 3: MxcG adenylates lysine, condenses two MxcF-delivered DHBA groups with lysine, and uses its reductase domain to release the myxochelin A alcohol.</p>
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for myxochelin A">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for myxochelin A">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -206,14 +208,14 @@ derived from a source. This is what the rest of the record exists to support.</p
 </div>
 
 <h2>Causal graph &mdash; bioactivity <span class="tag">2 nodes, 1 edge</span></h2>
-<p class="sub">Myxochelin A inhibits human 5-lipoxygenase in a 5-LO activity assay.</p><div class="scroll"><table>
+<p class="sub">Myxochelin A inhibits human 5-lipoxygenase in a 5-LO activity assay.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>myxochelin A</td>
   <td>inhibits</td>
   <td>human 5-lipoxygenase</td>
   <td>PubChem BioAssay AID 1801607 maps the 1.715 uM IC50 myxochelin A 5-LO activity assay to UniProtKB:P09917, the human ALOX5 protein.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1002/cbic.201500446</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1002/cbic.201500446</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Schieferdecker et al. tested the myxochelin family against human 5-lipoxygenase; the BindingDB-deposited PubChem assay reports myxochelin A with IC50 1.715 uM.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1002/cbic.201500446">DOI:10.1002/cbic.201500446</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1002/cbic.201500446">DOI:10.1002/cbic.201500446</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Schieferdecker et al. tested the myxochelin family against human 5-lipoxygenase; the BindingDB-deposited PubChem assay reports myxochelin A with IC50 1.715 uM.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -221,15 +223,15 @@ derived from a source. This is what the rest of the record exists to support.</p
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">6 nodes, 5 edges</span></h2>
-<p class="sub">Partial Stigmatella aurantiaca myxochelin A assembly graph for the MxcE/MxcF/MxcG nonribosomal peptide synthetase machinery.</p><div class="scroll"><table>
+<p class="sub">Partial Stigmatella aurantiaca myxochelin A assembly graph for the MxcE/MxcF/MxcG nonribosomal peptide synthetase machinery.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 2 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>2,3-dihydroxybenzoic acid</td>
   <td>is adenylated by</td>
   <td>MxcE</td>
   <td>MxcE adenylates DHBA before MxcF carrier-protein loading.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1073/pnas.201167098<br>https://www.uniprot.org/uniprotkb/Q9F638</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1073/pnas.201167098</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Gaitatzis et al. expressed active MxcE, MxcF, and MxcG and reconstituted ATP-, lysine-, DHBA-, and NAD(P)H-dependent myxochelin A formation in vitro.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q9F638</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>UniProtKB:Q9F638 resolves to the AF299336.1 mxcE gene product used for the Stigmatella myxochelin pathway.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1073/pnas.201167098">DOI:10.1073/pnas.201167098</a><br><a href="https://www.uniprot.org/uniprotkb/Q9F638">https://www.uniprot.org/uniprotkb/Q9F638</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1073/pnas.201167098">DOI:10.1073/pnas.201167098</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Gaitatzis et al. expressed active MxcE, MxcF, and MxcG and reconstituted ATP-, lysine-, DHBA-, and NAD(P)H-dependent myxochelin A formation in vitro.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q9F638">https://www.uniprot.org/uniprotkb/Q9F638</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>UniProtKB:Q9F638 resolves to the AF299336.1 mxcE gene product used for the Stigmatella myxochelin pathway.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -238,8 +240,8 @@ by the corpus tests.</p>
   <td>loads activated 2,3-DHBA onto</td>
   <td>MxcF</td>
   <td>The MxcF aryl carrier protein receives activated DHBA for delivery to MxcG.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1073/pnas.201167098<br>https://www.uniprot.org/uniprotkb/Q9F637</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1073/pnas.201167098</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Gaitatzis et al. expressed active MxcE, MxcF, and MxcG and reconstituted ATP-, lysine-, DHBA-, and NAD(P)H-dependent myxochelin A formation in vitro.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q9F637</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>UniProtKB:Q9F637 resolves to the AF299336.1 mxcF gene product used for the Stigmatella myxochelin pathway.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1073/pnas.201167098">DOI:10.1073/pnas.201167098</a><br><a href="https://www.uniprot.org/uniprotkb/Q9F637">https://www.uniprot.org/uniprotkb/Q9F637</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1073/pnas.201167098">DOI:10.1073/pnas.201167098</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Gaitatzis et al. expressed active MxcE, MxcF, and MxcG and reconstituted ATP-, lysine-, DHBA-, and NAD(P)H-dependent myxochelin A formation in vitro.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q9F637">https://www.uniprot.org/uniprotkb/Q9F637</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>UniProtKB:Q9F637 resolves to the AF299336.1 mxcF gene product used for the Stigmatella myxochelin pathway.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -248,8 +250,8 @@ by the corpus tests.</p>
   <td>is adenylated by</td>
   <td>MxcG</td>
   <td>The adenylation domain of MxcG activates lysine.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1073/pnas.201167098<br>https://www.uniprot.org/uniprotkb/Q9F636</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1073/pnas.201167098</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Gaitatzis et al. expressed active MxcE, MxcF, and MxcG and reconstituted ATP-, lysine-, DHBA-, and NAD(P)H-dependent myxochelin A formation in vitro.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q9F636</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>UniProtKB:Q9F636 resolves to the AF299336.1 mxcG gene product used for the Stigmatella myxochelin pathway.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1073/pnas.201167098">DOI:10.1073/pnas.201167098</a><br><a href="https://www.uniprot.org/uniprotkb/Q9F636">https://www.uniprot.org/uniprotkb/Q9F636</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1073/pnas.201167098">DOI:10.1073/pnas.201167098</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Gaitatzis et al. expressed active MxcE, MxcF, and MxcG and reconstituted ATP-, lysine-, DHBA-, and NAD(P)H-dependent myxochelin A formation in vitro.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q9F636">https://www.uniprot.org/uniprotkb/Q9F636</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>UniProtKB:Q9F636 resolves to the AF299336.1 mxcG gene product used for the Stigmatella myxochelin pathway.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -258,8 +260,8 @@ by the corpus tests.</p>
   <td>delivers activated 2,3-DHBA to</td>
   <td>MxcG</td>
   <td>MxcG condenses two MxcF-delivered DHBA units with the two amino groups of lysine.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1073/pnas.201167098<br>https://www.uniprot.org/uniprotkb/Q9F636</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1073/pnas.201167098</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Gaitatzis et al. expressed active MxcE, MxcF, and MxcG and reconstituted ATP-, lysine-, DHBA-, and NAD(P)H-dependent myxochelin A formation in vitro.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q9F636</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>UniProtKB:Q9F636 resolves to the AF299336.1 mxcG gene product used for the Stigmatella myxochelin pathway.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1073/pnas.201167098">DOI:10.1073/pnas.201167098</a><br><a href="https://www.uniprot.org/uniprotkb/Q9F636">https://www.uniprot.org/uniprotkb/Q9F636</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1073/pnas.201167098">DOI:10.1073/pnas.201167098</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Gaitatzis et al. expressed active MxcE, MxcF, and MxcG and reconstituted ATP-, lysine-, DHBA-, and NAD(P)H-dependent myxochelin A formation in vitro.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q9F636">https://www.uniprot.org/uniprotkb/Q9F636</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>UniProtKB:Q9F636 resolves to the AF299336.1 mxcG gene product used for the Stigmatella myxochelin pathway.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -268,8 +270,8 @@ by the corpus tests.</p>
   <td>reductively releases</td>
   <td>myxochelin A</td>
   <td>The C-terminal reductase domain of MxcG releases the PCP-bound thioester through aldehyde reduction to the myxochelin A alcohol.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1073/pnas.201167098<br>https://www.uniprot.org/uniprotkb/Q9F636</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1073/pnas.201167098</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Gaitatzis et al. expressed active MxcE, MxcF, and MxcG and reconstituted ATP-, lysine-, DHBA-, and NAD(P)H-dependent myxochelin A formation in vitro.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q9F636</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>UniProtKB:Q9F636 resolves to the AF299336.1 mxcG gene product used for the Stigmatella myxochelin pathway.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1073/pnas.201167098">DOI:10.1073/pnas.201167098</a><br><a href="https://www.uniprot.org/uniprotkb/Q9F636">https://www.uniprot.org/uniprotkb/Q9F636</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1073/pnas.201167098">DOI:10.1073/pnas.201167098</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Gaitatzis et al. expressed active MxcE, MxcF, and MxcG and reconstituted ATP-, lysine-, DHBA-, and NAD(P)H-dependent myxochelin A formation in vitro.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q9F636">https://www.uniprot.org/uniprotkb/Q9F636</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>UniProtKB:Q9F636 resolves to the AF299336.1 mxcG gene product used for the Stigmatella myxochelin pathway.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -277,15 +279,15 @@ by the corpus tests.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 6 edges</span></h2>
-<p class="sub">Partial, explicitly proposed protein assignments for environmental clone m9-20, experimentally associated with a reported myxochelin A readout in an engineered S. albus J1074 reporter. Four exact deposited protein references are grounded; their individual catalytic functions are inferred, not assayed. The product readout is deliberately not grounded to this stereospecific owner. ASV47082.1/ASV47083.1 (MxcF-related), ASV47086.1 (PPTase), and proposed host PhzD compensation are not assigned myxochelin-specific functions here. Keep separate from the existing Stigmatella MxcE/F/G pathway.</p><div class="scroll"><table>
+<p class="sub">Partial, explicitly proposed protein assignments for environmental clone m9-20, experimentally associated with a reported myxochelin A readout in an engineered S. albus J1074 reporter. Four exact deposited protein references are grounded; their individual catalytic functions are inferred, not assayed. The product readout is deliberately not grounded to this stereospecific owner. ASV47082.1/ASV47083.1 (MxcF-related), ASV47086.1 (PPTase), and proposed host PhzD compensation are not assigned myxochelin-specific functions here. Keep separate from the existing Stigmatella MxcE/F/G pathway.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 3 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>m9-20 MxcC-like reference protein</td>
   <td>is proposed to supply DHBA for</td>
   <td>m9-20-dependent biosynthesis in engineered S. albus J1074</td>
   <td>Inferred role of the deposited MxcC-like homolog, not an individual enzyme assay, deletion, essentiality result or demonstrated physical interaction. Figure 4C homology and gene order, checked against reference-locus AF299336.1 protein alignments, support this assignment. The experiment introduced the complete cosmid into the engineered S. albus J1074 reporter, not this protein alone. These are environmental-clone reference sequences, not the existing Stigmatella UniProt proteins or verified expressed constructs. Exact product stereochemistry remains unassigned; see curator-m920-protein-and-product-scope.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1093/femsle/fnx155<br>https://www.ncbi.nlm.nih.gov/protein/ASV47079.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1093/femsle/fnx155</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Figures 4C-E compare the m9-20 cluster with the Stigmatella mxc cluster and propose myxochelin biosynthesis. Individual m9-20 catalytic activities were not tested in the inspected main text. The supplement was not inspected and is not used as evidence.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/ASV47079.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>snippet</dt><dd>2,3-dihydro-2,3-dihydroxybenzoate dehydrogenase</dd><dt>notes</dt><dd>GenPept ASV47079.1: 263 aa, coded by KY560365.1:8829..9620; annotated 2,3-dihydro-2,3-dihydroxybenzoate dehydrogenase. The sequence exactly matches both the deposited CDS translation and its independent genetic-code-11 translation. Source: uncultured bacterium, taxon 77133, clone m9-20, Texas desert soil. This validates the reference identity, not the catalytic assignment.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1093/femsle/fnx155">DOI:10.1093/femsle/fnx155</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/ASV47079.1">https://www.ncbi.nlm.nih.gov/protein/ASV47079.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1093/femsle/fnx155">DOI:10.1093/femsle/fnx155</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Figures 4C-E compare the m9-20 cluster with the Stigmatella mxc cluster and propose myxochelin biosynthesis. Individual m9-20 catalytic activities were not tested in the inspected main text. The supplement was not inspected and is not used as evidence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/ASV47079.1">https://www.ncbi.nlm.nih.gov/protein/ASV47079.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>snippet</dt><dd>2,3-dihydro-2,3-dihydroxybenzoate dehydrogenase</dd><dt>notes</dt><dd>GenPept ASV47079.1: 263 aa, coded by KY560365.1:8829..9620; annotated 2,3-dihydro-2,3-dihydroxybenzoate dehydrogenase. The sequence exactly matches both the deposited CDS translation and its independent genetic-code-11 translation. Source: uncultured bacterium, taxon 77133, clone m9-20, Texas desert soil. This validates the reference identity, not the catalytic assignment.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -294,8 +296,8 @@ by the corpus tests.</p>
   <td>is proposed to supply DHBA for</td>
   <td>m9-20-dependent biosynthesis in engineered S. albus J1074</td>
   <td>Inferred role of the deposited MxcD-like homolog, not an individual enzyme assay, deletion, essentiality result or demonstrated physical interaction. Figure 4C homology and gene order, checked against reference-locus AF299336.1 protein alignments, support this assignment. The experiment introduced the complete cosmid into the engineered S. albus J1074 reporter, not this protein alone. These are environmental-clone reference sequences, not the existing Stigmatella UniProt proteins or verified expressed constructs. Exact product stereochemistry remains unassigned; see curator-m920-protein-and-product-scope.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1093/femsle/fnx155<br>https://www.ncbi.nlm.nih.gov/protein/ASV47080.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1093/femsle/fnx155</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Figures 4C-E compare the m9-20 cluster with the Stigmatella mxc cluster and propose myxochelin biosynthesis. Individual m9-20 catalytic activities were not tested in the inspected main text. The supplement was not inspected and is not used as evidence.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/ASV47080.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>snippet</dt><dd>isochorismate synthase</dd><dt>notes</dt><dd>GenPept ASV47080.1: 388 aa, coded by KY560365.1:9667..10833; annotated isochorismate synthase. The sequence exactly matches both the deposited CDS translation and its independent genetic-code-11 translation. Source: uncultured bacterium, taxon 77133, clone m9-20, Texas desert soil. This validates the reference identity, not the catalytic assignment.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1093/femsle/fnx155">DOI:10.1093/femsle/fnx155</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/ASV47080.1">https://www.ncbi.nlm.nih.gov/protein/ASV47080.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1093/femsle/fnx155">DOI:10.1093/femsle/fnx155</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Figures 4C-E compare the m9-20 cluster with the Stigmatella mxc cluster and propose myxochelin biosynthesis. Individual m9-20 catalytic activities were not tested in the inspected main text. The supplement was not inspected and is not used as evidence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/ASV47080.1">https://www.ncbi.nlm.nih.gov/protein/ASV47080.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>snippet</dt><dd>isochorismate synthase</dd><dt>notes</dt><dd>GenPept ASV47080.1: 388 aa, coded by KY560365.1:9667..10833; annotated isochorismate synthase. The sequence exactly matches both the deposited CDS translation and its independent genetic-code-11 translation. Source: uncultured bacterium, taxon 77133, clone m9-20, Texas desert soil. This validates the reference identity, not the catalytic assignment.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -304,8 +306,8 @@ by the corpus tests.</p>
   <td>is proposed to activate DHBA for</td>
   <td>m9-20-dependent biosynthesis in engineered S. albus J1074</td>
   <td>Inferred role of the deposited MxcE-like homolog, not an individual enzyme assay, deletion, essentiality result or demonstrated physical interaction. Figure 4C homology and gene order, checked against reference-locus AF299336.1 protein alignments, support this assignment. The experiment introduced the complete cosmid into the engineered S. albus J1074 reporter, not this protein alone. These are environmental-clone reference sequences, not the existing Stigmatella UniProt proteins or verified expressed constructs. Exact product stereochemistry remains unassigned; see curator-m920-protein-and-product-scope.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1093/femsle/fnx155<br>https://www.ncbi.nlm.nih.gov/protein/ASV47081.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1093/femsle/fnx155</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Figures 4C-E compare the m9-20 cluster with the Stigmatella mxc cluster and propose myxochelin biosynthesis. Individual m9-20 catalytic activities were not tested in the inspected main text. The supplement was not inspected and is not used as evidence.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/ASV47081.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>snippet</dt><dd>enterobactin synthase subunit E</dd><dt>notes</dt><dd>GenPept ASV47081.1: 540 aa, coded by KY560365.1:10830..12452; annotated enterobactin synthase subunit E. The sequence exactly matches both the deposited CDS translation and its independent genetic-code-11 translation. Source: uncultured bacterium, taxon 77133, clone m9-20, Texas desert soil. This validates the reference identity, not the catalytic assignment.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1093/femsle/fnx155">DOI:10.1093/femsle/fnx155</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/ASV47081.1">https://www.ncbi.nlm.nih.gov/protein/ASV47081.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1093/femsle/fnx155">DOI:10.1093/femsle/fnx155</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Figures 4C-E compare the m9-20 cluster with the Stigmatella mxc cluster and propose myxochelin biosynthesis. Individual m9-20 catalytic activities were not tested in the inspected main text. The supplement was not inspected and is not used as evidence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/ASV47081.1">https://www.ncbi.nlm.nih.gov/protein/ASV47081.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>snippet</dt><dd>enterobactin synthase subunit E</dd><dt>notes</dt><dd>GenPept ASV47081.1: 540 aa, coded by KY560365.1:10830..12452; annotated enterobactin synthase subunit E. The sequence exactly matches both the deposited CDS translation and its independent genetic-code-11 translation. Source: uncultured bacterium, taxon 77133, clone m9-20, Texas desert soil. This validates the reference identity, not the catalytic assignment.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -314,8 +316,8 @@ by the corpus tests.</p>
   <td>is proposed to assemble lysine and DHBA during</td>
   <td>m9-20-dependent biosynthesis in engineered S. albus J1074</td>
   <td>Inferred role of the deposited MxcG-like homolog, not an individual enzyme assay, deletion, essentiality result or demonstrated physical interaction. Figure 4C homology and gene order, checked against reference-locus AF299336.1 protein alignments, support this assignment. The experiment introduced the complete cosmid into the engineered S. albus J1074 reporter, not this protein alone. These are environmental-clone reference sequences, not the existing Stigmatella UniProt proteins or verified expressed constructs. Exact product stereochemistry remains unassigned; see curator-m920-protein-and-product-scope.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1093/femsle/fnx155<br>https://www.ncbi.nlm.nih.gov/protein/ASV47084.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1093/femsle/fnx155</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Figures 4C-E compare the m9-20 cluster with the Stigmatella mxc cluster and propose myxochelin biosynthesis. Individual m9-20 catalytic activities were not tested in the inspected main text. The supplement was not inspected and is not used as evidence.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/ASV47084.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>snippet</dt><dd>non-ribosomal peptide synthetase</dd><dt>notes</dt><dd>GenPept ASV47084.1: 1387 aa, coded by KY560365.1:13299..17462; annotated non-ribosomal peptide synthetase. The sequence exactly matches both the deposited CDS translation and its independent genetic-code-11 translation. Source: uncultured bacterium, taxon 77133, clone m9-20, Texas desert soil. This validates the reference identity, not the catalytic assignment.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1093/femsle/fnx155">DOI:10.1093/femsle/fnx155</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/ASV47084.1">https://www.ncbi.nlm.nih.gov/protein/ASV47084.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1093/femsle/fnx155">DOI:10.1093/femsle/fnx155</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Figures 4C-E compare the m9-20 cluster with the Stigmatella mxc cluster and propose myxochelin biosynthesis. Individual m9-20 catalytic activities were not tested in the inspected main text. The supplement was not inspected and is not used as evidence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/ASV47084.1">https://www.ncbi.nlm.nih.gov/protein/ASV47084.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>snippet</dt><dd>non-ribosomal peptide synthetase</dd><dt>notes</dt><dd>GenPept ASV47084.1: 1387 aa, coded by KY560365.1:13299..17462; annotated non-ribosomal peptide synthetase. The sequence exactly matches both the deposited CDS translation and its independent genetic-code-11 translation. Source: uncultured bacterium, taxon 77133, clone m9-20, Texas desert soil. This validates the reference identity, not the catalytic assignment.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -324,8 +326,8 @@ by the corpus tests.</p>
   <td>supports biosynthesis in the engineered reporter host</td>
   <td>m9-20-dependent biosynthesis in engineered S. albus J1074</td>
   <td>Whole-clone heterologous-expression result in S. albus J1074::bpsA with the Sfp-type PPTase deleted. The clone-specific metabolite was absent from the empty-vector control. This does not assign a native donor species, make the host a native producer, or establish that each listed protein is necessary or sufficient. No physical complex is inferred.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1093/femsle/fnx155<br>https://www.ncbi.nlm.nih.gov/nuccore/KY560365.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1093/femsle/fnx155</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>a single, clone-specific peak</dd><dt>notes</dt><dd>Main-text results and Figure 4A report a clone-specific peak from m9-20 culture extracts. The tested unit was the complete cosmid.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/KY560365.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>KY560365.1 is the 27,396-nt m9-20 environmental insert; its reference cites PMID:28817927. The deposited source is an uncultured bacterium, not Streptomyces sp. FxanaC1 or the expression host.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1093/femsle/fnx155">DOI:10.1093/femsle/fnx155</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/KY560365.1">https://www.ncbi.nlm.nih.gov/nuccore/KY560365.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1093/femsle/fnx155">DOI:10.1093/femsle/fnx155</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>a single, clone-specific peak</dd><dt>notes</dt><dd>Main-text results and Figure 4A report a clone-specific peak from m9-20 culture extracts. The tested unit was the complete cosmid.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/KY560365.1">https://www.ncbi.nlm.nih.gov/nuccore/KY560365.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>KY560365.1 is the 27,396-nt m9-20 environmental insert; its reference cites <a href="https://pubmed.ncbi.nlm.nih.gov/28817927/">PMID:28817927</a>. The deposited source is an uncultured bacterium, not Streptomyces sp. FxanaC1 or the expression host.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -334,7 +336,7 @@ by the corpus tests.</p>
   <td>produces a metabolite reported as</td>
   <td>reported myxochelin A (absolute configuration unverified)</td>
   <td>Reported identification by HRMS and co-elution with a purified myxochelin A standard: measured [M+H]+ 405.1657 versus calculated 405.1656 for C20H24N2O7. The inspected methods describe C18 co-injection, not a chiral separation; Figure 4B does not specify stereochemistry. Standard provenance and the supporting Figure S4 were not independently inspected. The readout therefore has no exact-structure identifier: this edge does not prove the S-configured owner or its opposite enantiomer, and reports no stereochemical contradiction.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1093/femsle/fnx155</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1093/femsle/fnx155</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>HRMS analysis of the clone-specific peak</dd><dt>notes</dt><dd>Main-text results, analytical methods and Figure 4 identify the clone-dependent peak as myxochelin A. The supplementary co-elution figure is cited by the authors but was not inspected.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1093/femsle/fnx155">DOI:10.1093/femsle/fnx155</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1093/femsle/fnx155">DOI:10.1093/femsle/fnx155</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>HRMS analysis of the clone-specific peak</dd><dt>notes</dt><dd>Main-text results, analytical methods and Figure 4 identify the clone-dependent peak as myxochelin A. The supplementary co-elution figure is cited by the authors but was not inspected.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -345,11 +347,11 @@ by the corpus tests.</p>
 
 <h2>Bioactivities <span class="tag">1</span></h2>
 <p class="sub">Entries preserve source qualifiers, targets and evidence. Repeated assay names or values are not independent replications; inspect source detail for differences.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Bioactivities"><table>
 <tr><th>Assay</th><th>Result</th><th>Target enzyme</th><th>Source detail</th></tr>
-<tr><td>5-LO Activity Assay from Article 10.1002/cbic.201500446: &#34;Harnessing Enzymatic Promiscuity in Myxochelin Biosynthesis for the Production of 5-Lipoxygenase Inhibitors.&#34;</td><td>IC50 1.715 uM; ACTIVE</td><td class="mono">UniProtKB:P09917</td><td><details><summary>PMID:26416255</summary><dl><dt>assay</dt><dd>5-LO Activity Assay from Article 10.1002/cbic.201500446: &#34;Harnessing Enzymatic Promiscuity in Myxochelin Biosynthesis for the Production of 5-Lipoxygenase Inhibitors.&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:26416255</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1801607, deposited by BindingDB; assay type Confirmatory.</dd></dl>
+<tr><td>5-LO Activity Assay from Article <a href="https://doi.org/10.1002/cbic.201500446">10.1002/cbic.201500446</a>: &#34;Harnessing Enzymatic Promiscuity in Myxochelin Biosynthesis for the Production of 5-Lipoxygenase Inhibitors.&#34;</td><td>IC50 1.715 uM; ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/P09917/entry">UniProtKB:P09917</a></td><td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/26416255/">PMID:26416255</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>5-LO Activity Assay from Article <a href="https://doi.org/10.1002/cbic.201500446">10.1002/cbic.201500446</a>: &#34;Harnessing Enzymatic Promiscuity in Myxochelin Biosynthesis for the Production of 5-Lipoxygenase Inhibitors.&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/26416255/">PMID:26416255</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1801607, deposited by BindingDB; assay type Confirmatory.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>1.715</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:P09917</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>1.715</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/P09917/entry">UniProtKB:P09917</a></dd></dl>
 </details></td></tr>
 </table></div>
 
@@ -357,33 +359,47 @@ by the corpus tests.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=WNBVGSNESTZACV-LBPRGKRZSA-N">AntibioticMech (myxochelin A) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=naturalproductmech%3Amibig-b9324089ad">MediaIngredientMech (naturalproductmech:mibig-b9324089ad) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A675526">TaxonMech: Stigmatella aurantiaca Sg a15 (NCBITaxon:675526) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A83451">TaxonMech: Archangium violaceum (NCBITaxon:83451) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A43662">TaxonMech: Pseudoalteromonas piscicida (NCBITaxon:43662) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A246197">TaxonMech: Myxococcus xanthus DK 1622 (NCBITaxon:246197) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0001345">PathwayMech (mibig:BGC0001345) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0002324">PathwayMech (mibig:BGC0002324) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0002491">PathwayMech (mibig:BGC0002491) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A675526">TaxonMech: Stigmatella aurantiaca Sg a15 (NCBITaxon:675526) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A83451">TaxonMech: Archangium violaceum (NCBITaxon:83451) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A43662">TaxonMech: Pseudoalteromonas piscicida (NCBITaxon:43662) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A246197">TaxonMech: Myxococcus xanthus DK 1622 (NCBITaxon:246197) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0001345">PathwayMech (mibig:BGC0001345) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0002324">PathwayMech (mibig:BGC0002324) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0002491">PathwayMech (mibig:BGC0002491) &nearr;</a>
 </div>
 
 <h2>Open questions <span class="tag">1</span></h2>
-<div class="note"><p><strong>curator-m920-protein-and-product-scope</strong> — Can the m9-20 readout be assigned to this exact stereoisomer, and which clone proteins have experimentally demonstrated myxochelin functions?</p></div>
+<div class="note"><p><strong>curator-m920-protein-and-product-scope</strong> <span class="tag">OPEN</span> <span class="tag">curation todo</span> — Can the m9-20 readout be assigned to this exact stereoisomer, and which clone proteins have experimentally demonstrated myxochelin functions?</p></div>
+
+<h2 id="curation-history">Curation history <span class="tag">9</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-13T23:58:37Z">2026-10-13T23:58:37Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-10-13T07:43:18Z)</span><p>Seeded from the committed inventories and curation tables.</p></li>
+<li><time datetime="2026-10-11T07:33:50Z">2026-10-11T07:33:50Z</time> &middot; <strong>CORRECTED_M920_NODE_IDENTIFIER</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Addressed issue 807: removed the unsupported genbank graph-node CURIE and left the clone node formally ungrounded. Retained KY560365.1 in its label and stable sequence evidence URL. No global identifier skip-list change, protein identity change or scientific claim upgrade; issue 805 remains open.</p></li>
+<li><time datetime="2026-10-11T07:17:02Z">2026-10-11T07:17:02Z</time> &middot; <strong>ADDED_M920_PROPOSED_PROTEIN_GRAPH</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added four GenPept-grounded m9-20 reference proteins (ASV47079.1, ASV47080.1, ASV47081.1, ASV47084.1) as explicitly inferred biosynthetic participants, separately from whole-clone expression evidence. Kept the reported product endpoint ungrounded pending stereochemical review and opened a cited scope discussion. Withheld MxcF-related proteins, PPTase myxochelin activation and host compensation claims. Preserved all prior graphs, pathway steps, source-owned fields, status and history.</p></li>
+<li><time datetime="2026-09-27T21:51:30Z">2026-09-27T21:51:30Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources<p>Seeded from the committed inventories and curation tables.</p></li>
+<li><time datetime="2026-09-27T21:33:09Z">2026-09-27T21:33:09Z</time> &middot; <strong>ADDED_MYXOCHELIN_A_MXC_BIOSYNTHESIS_GRAPH</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added a Stigmatella aurantiaca Sg a15 MxcE, MxcF, and MxcG biosynthetic pathway and BIOSYNTHESIS causal graph for myxochelin A; grounded AF299336.1 proteins AAG31128.1, AAG31129.1, and AAG31130.1 to UniProtKB:Q9F638, UniProtKB:Q9F637, and UniProtKB:Q9F636; resolved the BGC0001345/BGC0002324/BGC0002491/BGC0002492 shared-structure discussion.</p></li>
+<li><time datetime="2026-09-25T03:03:39Z">2026-09-25T03:03:39Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources<p>Seeded from the committed inventories in data/raw/.</p></li>
+<li><time datetime="2026-09-11T04:44:09Z">2026-09-11T04:44:09Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added a myxochelin A bioactivity causal graph linking 5-LO activity inhibition to human UniProtKB:P09917.</p></li>
+<li><time datetime="2026-09-10T05:54:15Z">2026-09-10T05:54:15Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources<p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
 
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0001345</td><td>MIBIG</td><td>5</td></tr>
-<tr><td class="mono">BGC0002324</td><td>MIBIG</td><td>3</td></tr>
-<tr><td class="mono">BGC0002491</td><td>MIBIG</td><td>3</td></tr>
-<tr><td class="mono">BGC0002492</td><td>MIBIG</td><td>3</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001345">BGC0001345</a></td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002324">BGC0002324</a></td><td>MIBIG</td><td>3</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002491">BGC0002491</a></td><td>MIBIG</td><td>3</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002492">BGC0002492</a></td><td>MIBIG</td><td>3</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/alkaloids/myxochelin-a.yaml">data/natural_products/alkaloids/myxochelin-a.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20naturalproductmech%3Amibig-b9324089ad&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Falkaloids%2Fmyxochelin-a.html">Report a problem with this record</a>: opens a GitHub issue that names naturalproductmech:mibig-b9324089ad and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Record last updated 2026-10-13 23:58 UTC, its latest curation event. Generated from the committed corpus. Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

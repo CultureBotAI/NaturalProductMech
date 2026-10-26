@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Polyketides</a> &middot; monactin</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>monactin</h1>
-<p class="sub"><span class="mono">naturalproductmech:mibig-02e3a91d63</span>
+<p class="sub"><span class="mono"><a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/polyketides/monactin.yaml">naturalproductmech:mibig-02e3a91d63</a></span>
   <span class="tag">MINTED</span>
   <span class="tag">SEEDED</span>
 <span class="tag">cytotoxic</span><span class="tag">enzyme inhibitor</span></p>
 <div class="note"><strong>Grounding review:</strong> No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.</div><details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/monactin.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/monactin.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">YPUPRVWRYDPGCW-IDBRQATOSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">CC[C@@H]1C[C@H]2CC[C@H](O2)[C@@H](C(=O)O[C@H](C[C@@H]3CC[C@@H](O3)[C@H](C(=O)O[C@@H](C[C@H]4CC[C@H](O4)[C@@H](C(=O)O[C@H](C[C@@H]5CC[C@@H](O5)[C@H](C(=O)O1)C)C)C)C)C)C)C</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">pubchem:15560592</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/compound/15560592">pubchem:15560592</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Polyketides</a> —
@@ -57,40 +59,40 @@ pks, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Streptomyces griseus subsp. griseus<br><span class="mono">NCBITaxon:67263</span></td>
+  <td>Streptomyces griseus subsp. griseus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=67263">NCBITaxon:67263</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0000243</td>
-  <td><span class="mono">PMID:10858335</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000243">mibig:BGC0000243</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/10858335/">PMID:10858335</a></span></td>
 </tr>
 <tr>
-  <td>Streptomyces griseus subsp. griseus<br><span class="mono">NCBITaxon:67263</span></td>
+  <td>Streptomyces griseus subsp. griseus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=67263">NCBITaxon:67263</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0000244</td>
-  <td><span class="mono">PMID:10858335</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000244">mibig:BGC0000244</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/10858335/">PMID:10858335</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">0</span></h2>
 <p class="sub">None cited.</p>
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">2</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0000243</td>
-  <td>Streptomyces griseus subsp. griseus<br><span class="mono">NCBITaxon:67263</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000243">mibig:BGC0000243</a></td>
+  <td>Streptomyces griseus subsp. griseus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=67263">NCBITaxon:67263</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:AF263011.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF263011.1">genbank:AF263011.1</a></td>
 </tr>
 <tr>
-  <td class="mono">mibig:BGC0000244</td>
-  <td>Streptomyces griseus subsp. griseus<br><span class="mono">NCBITaxon:67263</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000244">mibig:BGC0000244</a></td>
+  <td>Streptomyces griseus subsp. griseus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=67263">NCBITaxon:67263</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:AF263012.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF263012.1">genbank:AF263012.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -100,7 +102,7 @@ isolation report left it.</p>
 
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for monactin">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for monactin">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -136,105 +138,105 @@ isolation report left it.</p>
 
 <h2>Bioactivities <span class="tag">25</span></h2>
 <p class="sub">Entries preserve source qualifiers, targets and evidence. Repeated assay names or values are not independent replications; inspect source detail for differences.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Bioactivities"><table>
 <tr><th>Assay</th><th>Result</th><th>Target enzyme</th><th>Source detail</th></tr>
-<tr><td>GF-AFC viability counterscreen for inhibitors of alpha-synuclein gene (SNCA) expression</td><td>OTHER 0.0998 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1671193</summary><dl><dt>assay</dt><dd>GF-AFC viability counterscreen for inhibitors of alpha-synuclein gene (SNCA) expression</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1671193</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671193, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
+<tr><td>GF-AFC viability counterscreen for inhibitors of alpha-synuclein gene (SNCA) expression</td><td>OTHER 0.0998 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671193">pubchem.aid:1671193</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>GF-AFC viability counterscreen for inhibitors of alpha-synuclein gene (SNCA) expression</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671193">pubchem.aid:1671193</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671193, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.0998</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>HepG2 Cytotoxicity Assay Measured in Cell-Based System Using Plate Reader - 7071-02_Inhibitor_Dose_CherryPick_Activity_Set3</td><td>OTHER 0.506 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:720589</summary><dl><dt>assay</dt><dd>HepG2 Cytotoxicity Assay Measured in Cell-Based System Using Plate Reader - 7071-02_Inhibitor_Dose_CherryPick_Activity_Set3</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:720589</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 720589, deposited by Broad Institute; assay type Confirmatory. Source endpoint: AbsAC35_uM.</dd></dl>
+<tr><td>HepG2 Cytotoxicity Assay Measured in Cell-Based System Using Plate Reader - 7071-02_Inhibitor_Dose_CherryPick_Activity_Set3</td><td>OTHER 0.506 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/720589">pubchem.aid:720589</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>HepG2 Cytotoxicity Assay Measured in Cell-Based System Using Plate Reader - 7071-02_Inhibitor_Dose_CherryPick_Activity_Set3</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/720589">pubchem.aid:720589</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 720589, deposited by Broad Institute; assay type Confirmatory. Source endpoint: AbsAC35_uM.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.506</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>Luminescence Cell-Based Primary HTS to identify inhibitors of the oncoprotein EWS/Fli transcriptional activity Measured in Cell-Based System Using Plate Reader - 7014-01_Inhibitor_Dose_CherryPick_Activity</td><td>OTHER 0.0992 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:686920</summary><dl><dt>assay</dt><dd>Luminescence Cell-Based Primary HTS to identify inhibitors of the oncoprotein EWS/Fli transcriptional activity Measured in Cell-Based System Using Plate Reader - 7014-01_Inhibitor_Dose_CherryPick_Activity</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:686920</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 686920, deposited by Broad Institute; assay type Confirmatory. Source endpoint: AbsAC35_uM.</dd></dl>
+<tr><td>Luminescence Cell-Based Primary HTS to identify inhibitors of the oncoprotein EWS/Fli transcriptional activity Measured in Cell-Based System Using Plate Reader - 7014-01_Inhibitor_Dose_CherryPick_Activity</td><td>OTHER 0.0992 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/686920">pubchem.aid:686920</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Luminescence Cell-Based Primary HTS to identify inhibitors of the oncoprotein EWS/Fli transcriptional activity Measured in Cell-Based System Using Plate Reader - 7014-01_Inhibitor_Dose_CherryPick_Activity</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/686920">pubchem.aid:686920</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 686920, deposited by Broad Institute; assay type Confirmatory. Source endpoint: AbsAC35_uM.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.0992</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>Luminescence cell-based Retest at Dose assay to determine EWS/Fli1 dependent A673 mammalian cell cytotoxity Measured in Cell-Based System Using Plate Reader - 7014-03_Inhibitor_Dose_CherryPick_Activity</td><td>OTHER 0.243 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:720587</summary><dl><dt>assay</dt><dd>Luminescence cell-based Retest at Dose assay to determine EWS/Fli1 dependent A673 mammalian cell cytotoxity Measured in Cell-Based System Using Plate Reader - 7014-03_Inhibitor_Dose_CherryPick_Activity</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:720587</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 720587, deposited by Broad Institute; assay type Confirmatory. Source endpoint: AbsAC35_uM.</dd></dl>
+<tr><td>Luminescence cell-based Retest at Dose assay to determine EWS/Fli1 dependent A673 mammalian cell cytotoxity Measured in Cell-Based System Using Plate Reader - 7014-03_Inhibitor_Dose_CherryPick_Activity</td><td>OTHER 0.243 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/720587">pubchem.aid:720587</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Luminescence cell-based Retest at Dose assay to determine EWS/Fli1 dependent A673 mammalian cell cytotoxity Measured in Cell-Based System Using Plate Reader - 7014-03_Inhibitor_Dose_CherryPick_Activity</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/720587">pubchem.aid:720587</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 720587, deposited by Broad Institute; assay type Confirmatory. Source endpoint: AbsAC35_uM.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.243</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>Luminescence cell-based Retest at Dose assay to determine EWS/Fli1 dependent TC71 mammalian cell cytotoxity Measured in Cell-Based System Using Plate Reader - 7014-04_Inhibitor_Dose_CherryPick_Activity</td><td>OTHER 26 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:720570</summary><dl><dt>assay</dt><dd>Luminescence cell-based Retest at Dose assay to determine EWS/Fli1 dependent TC71 mammalian cell cytotoxity Measured in Cell-Based System Using Plate Reader - 7014-04_Inhibitor_Dose_CherryPick_Activity</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:720570</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 720570, deposited by Broad Institute; assay type Confirmatory. Source endpoint: Max_Activity_Conc_uM.</dd></dl>
+<tr><td>Luminescence cell-based Retest at Dose assay to determine EWS/Fli1 dependent TC71 mammalian cell cytotoxity Measured in Cell-Based System Using Plate Reader - 7014-04_Inhibitor_Dose_CherryPick_Activity</td><td>OTHER 26 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/720570">pubchem.aid:720570</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Luminescence cell-based Retest at Dose assay to determine EWS/Fli1 dependent TC71 mammalian cell cytotoxity Measured in Cell-Based System Using Plate Reader - 7014-04_Inhibitor_Dose_CherryPick_Activity</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/720570">pubchem.aid:720570</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 720570, deposited by Broad Institute; assay type Confirmatory. Source endpoint: Max_Activity_Conc_uM.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>26.0</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>P-glycoprotein substrates identified in KB-8-5-11 adenocarcinoma cell line, qHTS therapeutic library screen</td><td>OTHER 1.2182 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>PMID:31515284</summary><dl><dt>assay</dt><dd>P-glycoprotein substrates identified in KB-8-5-11 adenocarcinoma cell line, qHTS therapeutic library screen</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:31515284</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1346987, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>P-glycoprotein substrates identified in KB-8-5-11 adenocarcinoma cell line, qHTS therapeutic library screen</td><td>OTHER 1.2182 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/31515284/">PMID:31515284</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>P-glycoprotein substrates identified in KB-8-5-11 adenocarcinoma cell line, qHTS therapeutic library screen</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/31515284/">PMID:31515284</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1346987, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>1.2182</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Primary fluorescence-based thiol-reactive (MSTI) qHTS assay for identification of artifact compounds.</td><td>OTHER 5.0043 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1845221</summary><dl><dt>assay</dt><dd>Primary fluorescence-based thiol-reactive (MSTI) qHTS assay for identification of artifact compounds.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1845221</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1845221, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
+<tr><td>Primary fluorescence-based thiol-reactive (MSTI) qHTS assay for identification of artifact compounds.</td><td>OTHER 5.0043 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1845221">pubchem.aid:1845221</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Primary fluorescence-based thiol-reactive (MSTI) qHTS assay for identification of artifact compounds.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1845221">pubchem.aid:1845221</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1845221, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>5.0043</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Primary qHTS assay for inhibitors of Glutamate pyruvate transaminase 2 (GPT2)</td><td>OTHER 2.8184 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1671188</summary><dl><dt>assay</dt><dd>Primary qHTS assay for inhibitors of Glutamate pyruvate transaminase 2 (GPT2)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1671188</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671188, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
+<tr><td>Primary qHTS assay for inhibitors of Glutamate pyruvate transaminase 2 (GPT2)</td><td>OTHER 2.8184 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671188">pubchem.aid:1671188</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Primary qHTS assay for inhibitors of Glutamate pyruvate transaminase 2 (GPT2)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671188">pubchem.aid:1671188</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671188, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>2.8184</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Primary qHTS assay for inhibitors of Glutamate pyruvate transaminase 2 (GPT2)</td><td>OTHER 2.8184 uM; NOT_DETERMINED</td><td class="mono">UniProtKB:Q8TD30</td><td><details><summary>pubchem.aid:1671188</summary><dl><dt>assay</dt><dd>Primary qHTS assay for inhibitors of Glutamate pyruvate transaminase 2 (GPT2)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1671188</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671188, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
+<tr><td>Primary qHTS assay for inhibitors of Glutamate pyruvate transaminase 2 (GPT2)</td><td>OTHER 2.8184 uM; NOT_DETERMINED</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/Q8TD30/entry">UniProtKB:Q8TD30</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671188">pubchem.aid:1671188</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Primary qHTS assay for inhibitors of Glutamate pyruvate transaminase 2 (GPT2)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671188">pubchem.aid:1671188</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671188, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>2.8184</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:Q8TD30</dd></dl>
+</dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>2.8184</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q8TD30/entry">UniProtKB:Q8TD30</a></dd></dl>
 </details></td></tr>
-<tr><td>Primary qHTS for inhibitors of NSP2Pro chikungunya virus (CHIKV)</td><td>OTHER 0.2329 uM; NOT_DETERMINED</td><td class="mono">UniProtKB:Q8JUX6</td><td><details><summary>pubchem.aid:1964107</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of NSP2Pro chikungunya virus (CHIKV)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1964107</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1964107, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
+<tr><td>Primary qHTS for inhibitors of NSP2Pro chikungunya virus (CHIKV)</td><td>OTHER 0.2329 uM; NOT_DETERMINED</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/Q8JUX6/entry">UniProtKB:Q8JUX6</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1964107">pubchem.aid:1964107</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of NSP2Pro chikungunya virus (CHIKV)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1964107">pubchem.aid:1964107</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1964107, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.2329</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:Q8JUX6</dd></dl>
+</dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.2329</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q8JUX6/entry">UniProtKB:Q8JUX6</a></dd></dl>
 </details></td></tr>
-<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an RCH-ACV wild type WT cells (2C)</td><td>OTHER 0.0242 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1645877</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an RCH-ACV wild type WT cells (2C)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645877</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645877, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an RCH-ACV wild type WT cells (2C)</td><td>OTHER 0.0242 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645877">pubchem.aid:1645877</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an RCH-ACV wild type WT cells (2C)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645877">pubchem.aid:1645877</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645877, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.0242</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an RCH-ACV wild type WT cells (2C)</td><td>OTHER 0.0242 uM; ACTIVE</td><td class="mono">UniProtKB:O96028</td><td><details><summary>pubchem.aid:1645877</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an RCH-ACV wild type WT cells (2C)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645877</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645877, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an RCH-ACV wild type WT cells (2C)</td><td>OTHER 0.0242 uM; ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/O96028/entry">UniProtKB:O96028</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645877">pubchem.aid:1645877</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an RCH-ACV wild type WT cells (2C)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645877">pubchem.aid:1645877</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645877, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.0242</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:O96028</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.0242</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/O96028/entry">UniProtKB:O96028</a></dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)</td><td>OTHER 0.0216 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1645876</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645876</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645876, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)</td><td>OTHER 0.0216 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645876">pubchem.aid:1645876</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645876">pubchem.aid:1645876</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645876, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.0216</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)</td><td>OTHER 0.0216 uM; ACTIVE</td><td class="mono">UniProtKB:O96028</td><td><details><summary>pubchem.aid:1645876</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645876</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645876, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)</td><td>OTHER 0.0216 uM; ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/O96028/entry">UniProtKB:O96028</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645876">pubchem.aid:1645876</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645876">pubchem.aid:1645876</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645876, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.0216</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:O96028</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.0216</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/O96028/entry">UniProtKB:O96028</a></dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>Primary qHTS to identify anti-liver cancer compounds using libraries of approved drugs and bioactive compounds</td><td>OTHER 0.2818 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202548</summary><dl><dt>assay</dt><dd>Primary qHTS to identify anti-liver cancer compounds using libraries of approved drugs and bioactive compounds</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202548</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202548, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
+<tr><td>Primary qHTS to identify anti-liver cancer compounds using libraries of approved drugs and bioactive compounds</td><td>OTHER 0.2818 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202548">pubchem.aid:2202548</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Primary qHTS to identify anti-liver cancer compounds using libraries of approved drugs and bioactive compounds</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202548">pubchem.aid:2202548</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202548, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.2818</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug resistant MV4-11 cells</td><td>OTHER 0.0385 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1963824</summary><dl><dt>assay</dt><dd>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug resistant MV4-11 cells</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1963824</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963824, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug resistant MV4-11 cells</td><td>OTHER 0.0385 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963824">pubchem.aid:1963824</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug resistant MV4-11 cells</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963824">pubchem.aid:1963824</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963824, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.0385</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug resistant MV4-11 cells</td><td>OTHER 0.0385 uM; ACTIVE</td><td class="mono">UniProtKB:P43405</td><td><details><summary>pubchem.aid:1963824</summary><dl><dt>assay</dt><dd>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug resistant MV4-11 cells</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1963824</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963824, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug resistant MV4-11 cells</td><td>OTHER 0.0385 uM; ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/P43405/entry">UniProtKB:P43405</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963824">pubchem.aid:1963824</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug resistant MV4-11 cells</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963824">pubchem.aid:1963824</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963824, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.0385</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:P43405</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.0385</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/P43405/entry">UniProtKB:P43405</a></dd></dl>
 </details></td></tr>
-<tr><td>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) naive MV4-11 cells</td><td>OTHER 0.0343 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1963823</summary><dl><dt>assay</dt><dd>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) naive MV4-11 cells</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1963823</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963823, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) naive MV4-11 cells</td><td>OTHER 0.0343 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963823">pubchem.aid:1963823</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) naive MV4-11 cells</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963823">pubchem.aid:1963823</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963823, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.0343</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) naive MV4-11 cells</td><td>OTHER 0.0343 uM; ACTIVE</td><td class="mono">UniProtKB:P43405</td><td><details><summary>pubchem.aid:1963823</summary><dl><dt>assay</dt><dd>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) naive MV4-11 cells</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1963823</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963823, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) naive MV4-11 cells</td><td>OTHER 0.0343 uM; ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/P43405/entry">UniProtKB:P43405</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963823">pubchem.aid:1963823</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) naive MV4-11 cells</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963823">pubchem.aid:1963823</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963823, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.0343</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:P43405</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.0343</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/P43405/entry">UniProtKB:P43405</a></dd></dl>
 </details></td></tr>
-<tr><td>Counterscreen for antagonists of COUP-TFII (NR2F2): Luminescence-based cell-based high throughput assay to identify inhibitors of the Herpes Virus Virion Protein 16 (VP16)</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:687007</summary><dl><dt>assay</dt><dd>Counterscreen for antagonists of COUP-TFII (NR2F2): Luminescence-based cell-based high throughput assay to identify inhibitors of the Herpes Virus Virion Protein 16 (VP16)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:687007</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 687007, deposited by The Scripps Research Institute Molecular Screening Center; assay type Screening. Target accession NP_044650 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Counterscreen for antagonists of COUP-TFII (NR2F2): Luminescence-based cell-based high throughput assay to identify inhibitors of the Herpes Virus Virion Protein 16 (VP16)</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/687007">pubchem.aid:687007</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Counterscreen for antagonists of COUP-TFII (NR2F2): Luminescence-based cell-based high throughput assay to identify inhibitors of the Herpes Virus Virion Protein 16 (VP16)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/687007">pubchem.aid:687007</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 687007, deposited by The Scripps Research Institute Molecular Screening Center; assay type Screening. Target accession NP_044650 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>Counterscreen for inhibitors of cell surface Prion Protein (PrPc): Luminescence-based cell-based high throughput assay to identify compounds that are cytotoxic to LD9 cells</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:743201</summary><dl><dt>assay</dt><dd>Counterscreen for inhibitors of cell surface Prion Protein (PrPc): Luminescence-based cell-based high throughput assay to identify compounds that are cytotoxic to LD9 cells</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:743201</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 743201, deposited by The Scripps Research Institute Molecular Screening Center; assay type Screening. Target accession NP_000302 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Counterscreen for inhibitors of cell surface Prion Protein (PrPc): Luminescence-based cell-based high throughput assay to identify compounds that are cytotoxic to LD9 cells</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/743201">pubchem.aid:743201</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Counterscreen for inhibitors of cell surface Prion Protein (PrPc): Luminescence-based cell-based high throughput assay to identify compounds that are cytotoxic to LD9 cells</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/743201">pubchem.aid:743201</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 743201, deposited by The Scripps Research Institute Molecular Screening Center; assay type Screening. Target accession NP_000302 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>Cytotoxic Profiling of Annotated Libraries Using Quantitative High-Throughput Screening</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>PMID:31498718</summary><dl><dt>assay</dt><dd>Cytotoxic Profiling of Annotated Libraries Using Quantitative High-Throughput Screening</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:31498718</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1296008, deposited by NCGC; assay type Confirmatory.</dd></dl>
+<tr><td>Cytotoxic Profiling of Annotated Libraries Using Quantitative High-Throughput Screening</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/31498718/">PMID:31498718</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Cytotoxic Profiling of Annotated Libraries Using Quantitative High-Throughput Screening</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/31498718/">PMID:31498718</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1296008, deposited by NCGC; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>Luminescence Cell-Based Primary HTS to identify inhibitors of the oncoprotein EWS/Fli transcriptional activity Measured in Cell-Based System Using Plate Reader - 7014-01_Inhibitor_SinglePoint_HTS_Activity</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:651661</summary><dl><dt>assay</dt><dd>Luminescence Cell-Based Primary HTS to identify inhibitors of the oncoprotein EWS/Fli transcriptional activity Measured in Cell-Based System Using Plate Reader - 7014-01_Inhibitor_SinglePoint_HTS_Activity</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:651661</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 651661, deposited by Broad Institute; assay type Screening.</dd></dl>
+<tr><td>Luminescence Cell-Based Primary HTS to identify inhibitors of the oncoprotein EWS/Fli transcriptional activity Measured in Cell-Based System Using Plate Reader - 7014-01_Inhibitor_SinglePoint_HTS_Activity</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/651661">pubchem.aid:651661</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Luminescence Cell-Based Primary HTS to identify inhibitors of the oncoprotein EWS/Fli transcriptional activity Measured in Cell-Based System Using Plate Reader - 7014-01_Inhibitor_SinglePoint_HTS_Activity</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/651661">pubchem.aid:651661</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 651661, deposited by Broad Institute; assay type Screening.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>Luminescence-based cell-based high throughput confirmation assay to identify inhibitors of COUP-TFII (NR2F2)</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:687008</summary><dl><dt>assay</dt><dd>Luminescence-based cell-based high throughput confirmation assay to identify inhibitors of COUP-TFII (NR2F2)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:687008</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 687008, deposited by The Scripps Research Institute Molecular Screening Center; assay type Screening. Target accession NP_066285 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Luminescence-based cell-based high throughput confirmation assay to identify inhibitors of COUP-TFII (NR2F2)</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/687008">pubchem.aid:687008</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Luminescence-based cell-based high throughput confirmation assay to identify inhibitors of COUP-TFII (NR2F2)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/687008">pubchem.aid:687008</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 687008, deposited by The Scripps Research Institute Molecular Screening Center; assay type Screening. Target accession NP_066285 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
-<tr><td>Luminescence-based cell-based primary high throughput screening assay to identify inhibitors of COUP-TFII (NR2F2)</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:686940</summary><dl><dt>assay</dt><dd>Luminescence-based cell-based primary high throughput screening assay to identify inhibitors of COUP-TFII (NR2F2)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:686940</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 686940, deposited by The Scripps Research Institute Molecular Screening Center; assay type Screening. Target accession NP_066285 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Luminescence-based cell-based primary high throughput screening assay to identify inhibitors of COUP-TFII (NR2F2)</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/686940">pubchem.aid:686940</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Luminescence-based cell-based primary high throughput screening assay to identify inhibitors of COUP-TFII (NR2F2)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/686940">pubchem.aid:686940</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 686940, deposited by The Scripps Research Institute Molecular Screening Center; assay type Screening. Target accession NP_066285 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd><dt>notes</dt><dd>10 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but not written here.</dd></dl>
 </details></td></tr>
@@ -244,28 +246,35 @@ isolation report left it.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=YPUPRVWRYDPGCW-IDBRQATOSA-N">AntibioticMech (monactin) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=naturalproductmech%3Amibig-02e3a91d63">MediaIngredientMech (naturalproductmech:mibig-02e3a91d63) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A67263">TaxonMech: Streptomyces griseus subsp. griseus (NCBITaxon:67263) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A67263">TaxonMech: Streptomyces griseus subsp. griseus (NCBITaxon:67263) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000243">PathwayMech (mibig:BGC0000243) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000244">PathwayMech (mibig:BGC0000244) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A67263">TaxonMech: Streptomyces griseus subsp. griseus (NCBITaxon:67263) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000243">PathwayMech (mibig:BGC0000243) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000244">PathwayMech (mibig:BGC0000244) &nearr;</a>
 </div>
 
 <h2>Open questions <span class="tag">1</span></h2>
-<div class="note"><p><strong>shared-structure</strong> — This structure is reported by more than one MIBiG entry: BGC0000243, BGC0000244. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
+<div class="note"><p><strong>shared-structure</strong> <span class="tag">OPEN</span> <span class="tag">curation todo</span> — This structure is reported by more than one MIBiG entry: BGC0000243, BGC0000244. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
+
+<h2 id="curation-history">Curation history <span class="tag">4</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-13T07:43:35Z">2026-10-13T07:43:35Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources<p>Seeded from the committed inventories and curation tables.</p></li>
+<li><time datetime="2026-09-25T03:03:54Z">2026-09-25T03:03:54Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(3 identical runs since 2026-09-10T05:54:16Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
 
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0000243</td><td>MIBIG</td><td>4</td></tr>
-<tr><td class="mono">BGC0000244</td><td>MIBIG</td><td>4</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000243">BGC0000243</a></td><td>MIBIG</td><td>4</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000244">BGC0000244</a></td><td>MIBIG</td><td>4</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/polyketides/monactin.yaml">data/natural_products/polyketides/monactin.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20naturalproductmech%3Amibig-02e3a91d63&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Fpolyketides%2Fmonactin.html">Report a problem with this record</a>: opens a GitHub issue that names naturalproductmech:mibig-02e3a91d63 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Record last updated 2026-10-13 07:43 UTC, its latest curation event. Generated from the committed corpus. Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

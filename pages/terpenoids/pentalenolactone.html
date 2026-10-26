@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Terpenoids</a> &middot; pentalenolactone</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>pentalenolactone</h1>
-<p class="sub"><span class="mono">CHEBI:70816</span>
+<p class="sub"><span class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_70816">CHEBI:70816</a></span>
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 <span class="tag">antimicrobial unspecified</span></p>
 <details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/terpenoids/pentalenolactone.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/terpenoids/pentalenolactone.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 <p>A sesquiterpene lactone that is isolated from several Streptomyces species and exhibits antibiotic activity.</p>
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">NUPNVWUYFVEAIT-UJJBCWTCSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">[H][C@@]12COC(=O)[C@]3(CO3)[C@@]11C=C(C)[C@@H](C)[C@@]1([H])C=C2C(O)=O</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">pubchem:24199350, npatlas:NPA014531</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/compound/24199350">pubchem:24199350</a>, <a href="https://www.npatlas.org/explore/compounds/NPA014531">npatlas:NPA014531</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Terpenoids</a> —
@@ -57,100 +59,100 @@ terpene, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Streptomyces arenae<br><span class="mono">NCBITaxon:29301</span></td>
+  <td>Streptomyces arenae<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=29301">NCBITaxon:29301</a></span></td>
   <td><span class="tag causal">BGC_CHARACTERIZED</span></td>
-  <td class="mono">mibig:BGC0000653</td>
-  <td><span class="mono">DOI:10.1016/s0040-4039(01)88256-3</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000653">mibig:BGC0000653</a></td>
+  <td><span class="mono"><a href="https://doi.org/10.1016/s0040-4039%2801%2988256-3">DOI:10.1016/s0040-4039(01)88256-3</a></span></td>
 </tr>
 <tr>
-  <td>Streptomyces avermitilis MA-4680 = NBRC 14893<br><span class="mono">NCBITaxon:227882</span></td>
+  <td>Streptomyces avermitilis MA-4680 = NBRC 14893<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=227882">NCBITaxon:227882</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0000678</td>
-  <td><span class="mono">DOI:10.1016/s0040-4039(01)88256-3</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000678">mibig:BGC0000678</a></td>
+  <td><span class="mono"><a href="https://doi.org/10.1016/s0040-4039%2801%2988256-3">DOI:10.1016/s0040-4039(01)88256-3</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">11</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Streptomyces<br><span class="mono">NCBITaxon:1883</span></td>
+  <td>Streptomyces<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1883">NCBITaxon:1883</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/S0040-4039(01)95484-X</td>
+  <td class="mono"><a href="https://doi.org/10.1016/S0040-4039%2801%2995484-X">DOI:10.1016/S0040-4039(01)95484-X</a></td>
 </tr>
 <tr>
-  <td>Streptomyces<br><span class="mono">NCBITaxon:1883</span></td>
+  <td>Streptomyces<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1883">NCBITaxon:1883</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/JA00167A059</td>
+  <td class="mono"><a href="https://doi.org/10.1021/JA00167A059">DOI:10.1021/JA00167A059</a></td>
 </tr>
 <tr>
-  <td>Streptomyces<br><span class="mono">NCBITaxon:1883</span></td>
+  <td>Streptomyces<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1883">NCBITaxon:1883</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.7164/ANTIBIOTICS.38.1114</td>
+  <td class="mono"><a href="https://doi.org/10.7164/ANTIBIOTICS.38.1114">DOI:10.7164/ANTIBIOTICS.38.1114</a></td>
 </tr>
 <tr>
-  <td>Streptomyces avermitilis<br><span class="mono">NCBITaxon:33903</span></td>
+  <td>Streptomyces avermitilis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=33903">NCBITaxon:33903</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/BI060419N</td>
+  <td class="mono"><a href="https://doi.org/10.1021/BI060419N">DOI:10.1021/BI060419N</a></td>
 </tr>
 <tr>
-  <td>Streptomyces avermitilis<br><span class="mono">NCBITaxon:33903</span></td>
+  <td>Streptomyces avermitilis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=33903">NCBITaxon:33903</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/BI900766W</td>
+  <td class="mono"><a href="https://doi.org/10.1021/BI900766W">DOI:10.1021/BI900766W</a></td>
 </tr>
 <tr>
-  <td>Streptomyces avermitilis<br><span class="mono">NCBITaxon:33903</span></td>
+  <td>Streptomyces avermitilis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=33903">NCBITaxon:33903</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1038/JA.2010.135</td>
+  <td class="mono"><a href="https://doi.org/10.1038/JA.2010.135">DOI:10.1038/JA.2010.135</a></td>
 </tr>
 <tr>
-  <td>Streptomyces collinus<br><span class="mono">NCBITaxon:42684</span></td>
+  <td>Streptomyces collinus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=42684">NCBITaxon:42684</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/S10295-015-1685-7</td>
+  <td class="mono"><a href="https://doi.org/10.1007/S10295-015-1685-7">DOI:10.1007/S10295-015-1685-7</a></td>
 </tr>
 <tr>
-  <td>Streptomyces arenae<br><span class="mono">NCBITaxon:29301</span></td>
+  <td>Streptomyces arenae<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=29301">NCBITaxon:29301</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/BF01692859</td>
+  <td class="mono"><a href="https://doi.org/10.1007/BF01692859">DOI:10.1007/BF01692859</a></td>
 </tr>
 <tr>
-  <td>Streptomyces arenae<br><span class="mono">NCBITaxon:29301</span></td>
+  <td>Streptomyces arenae<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=29301">NCBITaxon:29301</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/0378-1097(91)90494-U</td>
+  <td class="mono"><a href="https://doi.org/10.1016/0378-1097%2891%2990494-U">DOI:10.1016/0378-1097(91)90494-U</a></td>
 </tr>
 <tr>
-  <td>Streptomyces arenae<br><span class="mono">NCBITaxon:29301</span></td>
+  <td>Streptomyces arenae<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=29301">NCBITaxon:29301</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1128/JB.171.12.6696-6702.1989</td>
+  <td class="mono"><a href="https://doi.org/10.1128/JB.171.12.6696-6702.1989">DOI:10.1128/JB.171.12.6696-6702.1989</a></td>
 </tr>
 <tr>
-  <td>Streptomyces arenae<br><span class="mono">NCBITaxon:29301</span></td>
+  <td>Streptomyces arenae<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=29301">NCBITaxon:29301</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.7164/ANTIBIOTICS.39.266</td>
+  <td class="mono"><a href="https://doi.org/10.7164/ANTIBIOTICS.39.266">DOI:10.7164/ANTIBIOTICS.39.266</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">2</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0000653</td>
-  <td>Streptomyces arenae<br><span class="mono">NCBITaxon:29301</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000653">mibig:BGC0000653</a></td>
+  <td>Streptomyces arenae<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=29301">NCBITaxon:29301</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:HQ292065.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/HQ292065.1">genbank:HQ292065.1</a></td>
 </tr>
 <tr>
-  <td class="mono">mibig:BGC0000678</td>
-  <td>Streptomyces avermitilis MA-4680 = NBRC 14893<br><span class="mono">NCBITaxon:227882</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000678">mibig:BGC0000678</a></td>
+  <td>Streptomyces avermitilis MA-4680 = NBRC 14893<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=227882">NCBITaxon:227882</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:BA000030.3</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/BA000030.3">genbank:BA000030.3</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -160,48 +162,48 @@ isolation report left it.</p>
 <h2>Biosynthesis <span class="tag causal">curated</span></h2>
 <p class="sub">Written by a curator with claim-level evidence on each step; not
 derived from a source. This is what the rest of the record exists to support.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthesis steps"><table>
 <tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
 <tr>
   <td>1</td>
-  <td>PntA<br><span class="mono">UniProtKB:E3VWJ0</span></td>
-  <td class="mono">RHEA:18081</td>
-  <td class="mono">CHEBI:175763 &rarr; CHEBI:17251 + CHEBI:33019</td>
-  <td class="mono">DOI:10.1016/j.engmic.2025.100206</td>
+  <td>PntA<br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/E3VWJ0/entry">UniProtKB:E3VWJ0</a></span></td>
+  <td class="mono"><a href="https://www.rhea-db.org/rhea/18081">RHEA:18081</a></td>
+  <td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_175763">CHEBI:175763</a> &rarr; <a href="http://purl.obolibrary.org/obo/CHEBI_17251">CHEBI:17251</a> + <a href="http://purl.obolibrary.org/obo/CHEBI_33019">CHEBI:33019</a></td>
+  <td class="mono"><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></td>
 </tr>
 <tr>
   <td>2</td>
-  <td>PntI<br><span class="mono">UniProtKB:E3VWJ1</span></td>
+  <td>PntI<br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/E3VWJ1/entry">UniProtKB:E3VWJ1</a></span></td>
   <td class="mono"></td>
-  <td class="mono">CHEBI:17251 &rarr; CHEBI:68832</td>
-  <td class="mono">DOI:10.1016/j.engmic.2025.100206</td>
+  <td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_17251">CHEBI:17251</a> &rarr; <a href="http://purl.obolibrary.org/obo/CHEBI_68832">CHEBI:68832</a></td>
+  <td class="mono"><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></td>
 </tr>
 <tr>
   <td>10</td>
-  <td>Pentalenolactone D synthase<br><span class="mono">UniProtKB:E3VWI7</span></td>
-  <td class="mono">RHEA:34635</td>
-  <td class="mono">CHEBI:70780 + CHEBI:57783 + CHEBI:15379 + CHEBI:15378 &rarr; CHEBI:70787 + CHEBI:58349 + CHEBI:15377</td>
-  <td class="mono">DOI:10.1021/bi1019786</td>
+  <td>Pentalenolactone D synthase<br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/E3VWI7/entry">UniProtKB:E3VWI7</a></span></td>
+  <td class="mono"><a href="https://www.rhea-db.org/rhea/34635">RHEA:34635</a></td>
+  <td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_70780">CHEBI:70780</a> + <a href="http://purl.obolibrary.org/obo/CHEBI_57783">CHEBI:57783</a> + <a href="http://purl.obolibrary.org/obo/CHEBI_15379">CHEBI:15379</a> + <a href="http://purl.obolibrary.org/obo/CHEBI_15378">CHEBI:15378</a> &rarr; <a href="http://purl.obolibrary.org/obo/CHEBI_70787">CHEBI:70787</a> + <a href="http://purl.obolibrary.org/obo/CHEBI_58349">CHEBI:58349</a> + <a href="http://purl.obolibrary.org/obo/CHEBI_15377">CHEBI:15377</a></td>
+  <td class="mono"><a href="https://doi.org/10.1021/bi1019786">DOI:10.1021/bi1019786</a></td>
 </tr>
 <tr>
   <td>20</td>
-  <td>Pentalenolactone F synthase<br><span class="mono">UniProtKB:E3VWI8</span></td>
-  <td class="mono">RHEA:34579</td>
-  <td class="mono">CHEBI:70787 + CHEBI:16810 + CHEBI:15379 &rarr; CHEBI:70789 + CHEBI:30031 + CHEBI:16526 + CHEBI:15377</td>
-  <td class="mono">DOI:10.1021/bi1019786</td>
+  <td>Pentalenolactone F synthase<br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/E3VWI8/entry">UniProtKB:E3VWI8</a></span></td>
+  <td class="mono"><a href="https://www.rhea-db.org/rhea/34579">RHEA:34579</a></td>
+  <td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_70787">CHEBI:70787</a> + <a href="http://purl.obolibrary.org/obo/CHEBI_16810">CHEBI:16810</a> + <a href="http://purl.obolibrary.org/obo/CHEBI_15379">CHEBI:15379</a> &rarr; <a href="http://purl.obolibrary.org/obo/CHEBI_70789">CHEBI:70789</a> + <a href="http://purl.obolibrary.org/obo/CHEBI_30031">CHEBI:30031</a> + <a href="http://purl.obolibrary.org/obo/CHEBI_16526">CHEBI:16526</a> + <a href="http://purl.obolibrary.org/obo/CHEBI_15377">CHEBI:15377</a></td>
+  <td class="mono"><a href="https://doi.org/10.1021/bi1019786">DOI:10.1021/bi1019786</a></td>
 </tr>
 <tr>
   <td>30</td>
-  <td>Pentalenolactone synthase<br><span class="mono">UniProtKB:E3VWI3</span></td>
-  <td class="mono">RHEA:34575</td>
-  <td class="mono">CHEBI:70809 &rarr; CHEBI:70816</td>
-  <td class="mono">DOI:10.1021/ja111279h</td>
+  <td>Pentalenolactone synthase<br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/E3VWI3/entry">UniProtKB:E3VWI3</a></span></td>
+  <td class="mono"><a href="https://www.rhea-db.org/rhea/34575">RHEA:34575</a></td>
+  <td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_70809">CHEBI:70809</a> &rarr; <a href="http://purl.obolibrary.org/obo/CHEBI_70816">CHEBI:70816</a></td>
+  <td class="mono"><a href="https://doi.org/10.1021/ja111279h">DOI:10.1021/ja111279h</a></td>
 </tr>
 </table></div>
 <p class="sub">Step 1: Early cyclization step; the reaction identifier grounds chemistry, not protein identity.</p><p class="sub">Step 2: Net oxidation, not carbon-addition chemistry. The intervening hydroxylation and dehydrogenation before the existing PntE step remain unrepresented.</p><p class="sub">Step 10: Streptomyces arenae PntE catalyzes the flavin-dependent Baeyer-Villiger oxidation of 1-deoxy-11-oxopentalenate to pentalenolactone D; PntD-catalyzed formation of pentalenolactone F is represented separately.</p><p class="sub">Step 20: Streptomyces arenae PntD catalyzes 2-oxoglutarate- and Fe(2+)-dependent oxidation of pentalenolactone D to pentalenolactone F; RHEA:34579 grounds the full net reaction to the pH 7.3 pentalenolactone F conjugate base with two 2-oxoglutarate/O2 equivalents per pentalenolactone F.</p><p class="sub">Step 30: Streptomyces arenae PntM/CYP161C2 catalyzes the terminal oxidative rearrangement of pentalenolactone F to pentalenolactone; upstream PntE and PntD steps are represented separately.</p>
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for pentalenolactone">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for pentalenolactone">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -234,16 +236,16 @@ derived from a source. This is what the rest of the record exists to support.</p
 </div>
 
 <h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
-<p class="sub">Streptomyces arenae PntM-catalyzed terminal oxidative rearrangement of pentalenolactone F to pentalenolactone.</p><div class="scroll"><table>
+<p class="sub">Streptomyces arenae PntM-catalyzed terminal oxidative rearrangement of pentalenolactone F to pentalenolactone.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>pentalenolactone F</td>
   <td>is oxidatively rearranged by</td>
   <td>PntM</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja111279h<br>https://mibig.secondarymetabolites.org/repository/BGC0000653.5/<br>https://www.uniprot.org/uniprotkb/E3VWI3</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja111279h</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>PenM and PntM both catalyzed the oxidative rearrangement of 4 to 1</dd><dt>notes</dt><dd>The source identifies compound 4 as pentalenolactone F and compound 1 as pentalenolactone; recombinant Streptomyces arenae PntM/CYP161C2 converted pentalenolactone F to pentalenolactone in vitro.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0000653.5/</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>MIBiG entry version 5 links BGC0000653 to pentalenolactone biosynthesis in Streptomyces arenae.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/E3VWI3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>UniProtKB:E3VWI3 is the reviewed Streptomyces arenae PntM/CYP161C2 gene product from HQ292065 and annotates EC:1.14.19.8/RHEA:34575 for the pentalenolactone F to pentalenolactone oxidative rearrangement.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja111279h">DOI:10.1021/ja111279h</a><br><a href="https://mibig.secondarymetabolites.org/repository/BGC0000653.5/">https://mibig.secondarymetabolites.org/repository/BGC0000653.5/</a><br><a href="https://www.uniprot.org/uniprotkb/E3VWI3">https://www.uniprot.org/uniprotkb/E3VWI3</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja111279h">DOI:10.1021/ja111279h</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>PenM and PntM both catalyzed the oxidative rearrangement of 4 to 1</dd><dt>notes</dt><dd>The source identifies compound 4 as pentalenolactone F and compound 1 as pentalenolactone; recombinant Streptomyces arenae PntM/CYP161C2 converted pentalenolactone F to pentalenolactone in vitro.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/repository/BGC0000653.5/">https://mibig.secondarymetabolites.org/repository/BGC0000653.5/</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>MIBiG entry version 5 links BGC0000653 to pentalenolactone biosynthesis in Streptomyces arenae.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/E3VWI3">https://www.uniprot.org/uniprotkb/E3VWI3</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>UniProtKB:E3VWI3 is the reviewed Streptomyces arenae PntM/CYP161C2 gene product from HQ292065 and annotates EC:1.14.19.8/RHEA:34575 for the pentalenolactone F to pentalenolactone oxidative rearrangement.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -252,9 +254,9 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>forms</td>
   <td>pentalenolactone</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja111279h<br>https://mibig.secondarymetabolites.org/repository/BGC0000653.5/<br>https://www.uniprot.org/uniprotkb/E3VWI3</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja111279h</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>PenM and PntM both catalyzed the oxidative rearrangement of 4 to 1</dd><dt>notes</dt><dd>The source identifies compound 4 as pentalenolactone F and compound 1 as pentalenolactone; recombinant Streptomyces arenae PntM/CYP161C2 converted pentalenolactone F to pentalenolactone in vitro.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0000653.5/</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>MIBiG entry version 5 links BGC0000653 to pentalenolactone biosynthesis in Streptomyces arenae.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/E3VWI3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>UniProtKB:E3VWI3 is the reviewed Streptomyces arenae PntM/CYP161C2 gene product from HQ292065 and annotates EC:1.14.19.8/RHEA:34575 for the pentalenolactone F to pentalenolactone oxidative rearrangement.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja111279h">DOI:10.1021/ja111279h</a><br><a href="https://mibig.secondarymetabolites.org/repository/BGC0000653.5/">https://mibig.secondarymetabolites.org/repository/BGC0000653.5/</a><br><a href="https://www.uniprot.org/uniprotkb/E3VWI3">https://www.uniprot.org/uniprotkb/E3VWI3</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja111279h">DOI:10.1021/ja111279h</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>PenM and PntM both catalyzed the oxidative rearrangement of 4 to 1</dd><dt>notes</dt><dd>The source identifies compound 4 as pentalenolactone F and compound 1 as pentalenolactone; recombinant Streptomyces arenae PntM/CYP161C2 converted pentalenolactone F to pentalenolactone in vitro.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/repository/BGC0000653.5/">https://mibig.secondarymetabolites.org/repository/BGC0000653.5/</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>MIBiG entry version 5 links BGC0000653 to pentalenolactone biosynthesis in Streptomyces arenae.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/E3VWI3">https://www.uniprot.org/uniprotkb/E3VWI3</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>UniProtKB:E3VWI3 is the reviewed Streptomyces arenae PntM/CYP161C2 gene product from HQ292065 and annotates EC:1.14.19.8/RHEA:34575 for the pentalenolactone F to pentalenolactone oxidative rearrangement.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -262,19 +264,19 @@ derived from a source. This is what the rest of the record exists to support.</p
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
-<p class="sub">Streptomyces arenae PntE-catalyzed Baeyer-Villiger oxidation of 1-deoxy-11-oxopentalenate to pentalenolactone D.</p><div class="scroll"><table>
+<p class="sub">Streptomyces arenae PntE-catalyzed Baeyer-Villiger oxidation of 1-deoxy-11-oxopentalenate to pentalenolactone D.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 2 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>1-deoxy-11-oxopentalenate</td>
   <td>is oxidized by</td>
   <td>PntE</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/bi1019786<br>https://mite.lisc.univie.ac.at/repository/MITE0000057<br>https://mibig.secondarymetabolites.org/repository/BGC0000653.5/BGC0000653.gbk<br>https://www.uniprot.org/uniprotkb/E3VWI7<br>https://www.ncbi.nlm.nih.gov/protein/ADO85575.1<br>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/bi1019786</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Recombinant enzymes PenE and PntE, from S. exfoliatus and S. arenae, respectively, catalyze the flavin-dependent Baeyer-Villiger oxidation of 1-deoxy-11-oxopentalenic acid (7) to pentalenolactone D (8)</dd><dt>notes</dt><dd>Seo et al. biochemically tested the Streptomyces arenae Tu469 PntE enzyme and placed the Baeyer-Villiger oxidation upstream of the PntD and PntM steps toward pentalenolactone.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mite.lisc.univie.ac.at/repository/MITE0000057</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MITE0000057 is active and links PntE to UniProtKB:E3VWI7, GenPept ADO85575.1, MIBiG BGC0000653, RHEA:34635 and the Seo et al. DOI.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0000653.5/BGC0000653.gbk</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MIBiG BGC0000653.5 places ADO85575.1 in the active Streptomyces arenae pentalenolactone biosynthetic gene cluster as pntE/PntE with a MITE0000057 100% identity gene-function annotation.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/E3VWI7</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>UniProtKB:E3VWI7 is reviewed Streptomyces arenae PntE and annotates RHEA:34635 for 1-deoxy-11-oxopentalenate conversion to pentalenolactone D.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/ADO85575.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>NCBI Protein ADO85575.1 is a 589 aa Streptomyces arenae PntE Baeyer-Villiger monooxygenase.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>The Rhea-to-UniProtKB Swiss-Prot mapping links RHEA:34635 to UniProtKB:E3VWI7.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/bi1019786">DOI:10.1021/bi1019786</a><br><a href="https://mite.lisc.univie.ac.at/repository/MITE0000057">https://mite.lisc.univie.ac.at/repository/MITE0000057</a><br><a href="https://mibig.secondarymetabolites.org/repository/BGC0000653.5/BGC0000653.gbk">https://mibig.secondarymetabolites.org/repository/BGC0000653.5/BGC0000653.gbk</a><br><a href="https://www.uniprot.org/uniprotkb/E3VWI7">https://www.uniprot.org/uniprotkb/E3VWI7</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/ADO85575.1">https://www.ncbi.nlm.nih.gov/protein/ADO85575.1</a><br><a href="https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv">https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/bi1019786">DOI:10.1021/bi1019786</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Recombinant enzymes PenE and PntE, from S. exfoliatus and S. arenae, respectively, catalyze the flavin-dependent Baeyer-Villiger oxidation of 1-deoxy-11-oxopentalenic acid (7) to pentalenolactone D (8)</dd><dt>notes</dt><dd>Seo et al. biochemically tested the Streptomyces arenae Tu469 PntE enzyme and placed the Baeyer-Villiger oxidation upstream of the PntD and PntM steps toward pentalenolactone.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mite.lisc.univie.ac.at/repository/MITE0000057">https://mite.lisc.univie.ac.at/repository/MITE0000057</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MITE0000057 is active and links PntE to UniProtKB:E3VWI7, GenPept ADO85575.1, MIBiG BGC0000653, RHEA:34635 and the Seo et al. DOI.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/repository/BGC0000653.5/BGC0000653.gbk">https://mibig.secondarymetabolites.org/repository/BGC0000653.5/BGC0000653.gbk</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MIBiG BGC0000653.5 places ADO85575.1 in the active Streptomyces arenae pentalenolactone biosynthetic gene cluster as pntE/PntE with a MITE0000057 100% identity gene-function annotation.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/E3VWI7">https://www.uniprot.org/uniprotkb/E3VWI7</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>UniProtKB:E3VWI7 is reviewed Streptomyces arenae PntE and annotates RHEA:34635 for 1-deoxy-11-oxopentalenate conversion to pentalenolactone D.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/ADO85575.1">https://www.ncbi.nlm.nih.gov/protein/ADO85575.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>NCBI Protein ADO85575.1 is a 589 aa Streptomyces arenae PntE Baeyer-Villiger monooxygenase.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv">https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>The Rhea-to-UniProtKB Swiss-Prot mapping links RHEA:34635 to UniProtKB:E3VWI7.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -283,12 +285,12 @@ by the corpus tests.</p>
   <td>forms</td>
   <td>pentalenolactone D</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/bi1019786<br>https://mite.lisc.univie.ac.at/repository/MITE0000057<br>https://mibig.secondarymetabolites.org/repository/BGC0000653.5/BGC0000653.gbk<br>https://www.uniprot.org/uniprotkb/E3VWI7<br>https://www.ncbi.nlm.nih.gov/protein/ADO85575.1<br>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/bi1019786</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Recombinant enzymes PenE and PntE, from S. exfoliatus and S. arenae, respectively, catalyze the flavin-dependent Baeyer-Villiger oxidation of 1-deoxy-11-oxopentalenic acid (7) to pentalenolactone D (8)</dd><dt>notes</dt><dd>Seo et al. biochemically tested the Streptomyces arenae Tu469 PntE enzyme and placed the Baeyer-Villiger oxidation upstream of the PntD and PntM steps toward pentalenolactone.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mite.lisc.univie.ac.at/repository/MITE0000057</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MITE0000057 is active and links PntE to UniProtKB:E3VWI7, GenPept ADO85575.1, MIBiG BGC0000653, RHEA:34635 and the Seo et al. DOI.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0000653.5/BGC0000653.gbk</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MIBiG BGC0000653.5 places ADO85575.1 in the active Streptomyces arenae pentalenolactone biosynthetic gene cluster as pntE/PntE with a MITE0000057 100% identity gene-function annotation.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/E3VWI7</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>UniProtKB:E3VWI7 is reviewed Streptomyces arenae PntE and annotates RHEA:34635 for 1-deoxy-11-oxopentalenate conversion to pentalenolactone D.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/ADO85575.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>NCBI Protein ADO85575.1 is a 589 aa Streptomyces arenae PntE Baeyer-Villiger monooxygenase.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>The Rhea-to-UniProtKB Swiss-Prot mapping links RHEA:34635 to UniProtKB:E3VWI7.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/bi1019786">DOI:10.1021/bi1019786</a><br><a href="https://mite.lisc.univie.ac.at/repository/MITE0000057">https://mite.lisc.univie.ac.at/repository/MITE0000057</a><br><a href="https://mibig.secondarymetabolites.org/repository/BGC0000653.5/BGC0000653.gbk">https://mibig.secondarymetabolites.org/repository/BGC0000653.5/BGC0000653.gbk</a><br><a href="https://www.uniprot.org/uniprotkb/E3VWI7">https://www.uniprot.org/uniprotkb/E3VWI7</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/ADO85575.1">https://www.ncbi.nlm.nih.gov/protein/ADO85575.1</a><br><a href="https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv">https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/bi1019786">DOI:10.1021/bi1019786</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Recombinant enzymes PenE and PntE, from S. exfoliatus and S. arenae, respectively, catalyze the flavin-dependent Baeyer-Villiger oxidation of 1-deoxy-11-oxopentalenic acid (7) to pentalenolactone D (8)</dd><dt>notes</dt><dd>Seo et al. biochemically tested the Streptomyces arenae Tu469 PntE enzyme and placed the Baeyer-Villiger oxidation upstream of the PntD and PntM steps toward pentalenolactone.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mite.lisc.univie.ac.at/repository/MITE0000057">https://mite.lisc.univie.ac.at/repository/MITE0000057</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MITE0000057 is active and links PntE to UniProtKB:E3VWI7, GenPept ADO85575.1, MIBiG BGC0000653, RHEA:34635 and the Seo et al. DOI.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/repository/BGC0000653.5/BGC0000653.gbk">https://mibig.secondarymetabolites.org/repository/BGC0000653.5/BGC0000653.gbk</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MIBiG BGC0000653.5 places ADO85575.1 in the active Streptomyces arenae pentalenolactone biosynthetic gene cluster as pntE/PntE with a MITE0000057 100% identity gene-function annotation.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/E3VWI7">https://www.uniprot.org/uniprotkb/E3VWI7</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>UniProtKB:E3VWI7 is reviewed Streptomyces arenae PntE and annotates RHEA:34635 for 1-deoxy-11-oxopentalenate conversion to pentalenolactone D.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/ADO85575.1">https://www.ncbi.nlm.nih.gov/protein/ADO85575.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>NCBI Protein ADO85575.1 is a 589 aa Streptomyces arenae PntE Baeyer-Villiger monooxygenase.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv">https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>The Rhea-to-UniProtKB Swiss-Prot mapping links RHEA:34635 to UniProtKB:E3VWI7.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -296,19 +298,19 @@ by the corpus tests.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
-<p class="sub">Streptomyces arenae PntD-catalyzed oxidation of pentalenolactone D to pentalenolactone F.</p><div class="scroll"><table>
+<p class="sub">Streptomyces arenae PntD-catalyzed oxidation of pentalenolactone D to pentalenolactone F.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 3 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>pentalenolactone D</td>
   <td>is oxidized by</td>
   <td>PntD</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/bi1019786<br>https://mite.lisc.univie.ac.at/repository/MITE0000058<br>https://mibig.secondarymetabolites.org/repository/BGC0000653.5/BGC0000653.gbk<br>https://www.uniprot.org/uniprotkb/E3VWI8<br>https://www.ncbi.nlm.nih.gov/protein/ADO85576.1<br>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/bi1019786</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>pentalenolactone D (8) to pentalenolactone E (15) and pentalenolactone F (16)</dd><dt>notes</dt><dd>Seo et al. biochemically tested recombinant Streptomyces arenae Tu469 PntD and reported 2-oxoglutarate- and Fe(2+)-dependent oxidation of pentalenolactone D to pentalenolactones E and F; native pntD mutants accumulated pentalenolactone D and lost pentalenolactone, pentalenolactone E and pentalenolactone F.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mite.lisc.univie.ac.at/repository/MITE0000058</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MITE0000058 is active and links PntD to UniProtKB:E3VWI8, GenPept ADO85576.1, MIBiG BGC0000653, RHEA:34579, EC:1.14.11.36 and the Seo et al. DOI.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0000653.5/BGC0000653.gbk</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MIBiG BGC0000653.5 places ADO85576.1 in the active Streptomyces arenae pentalenolactone biosynthetic gene cluster as pntD/PntD with a MITE0000058 100% identity gene-function annotation.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/E3VWI8</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>UniProtKB:E3VWI8 is reviewed Streptomyces arenae PntD, cross-links GenPept ADO85576.1, and annotates RHEA:34579 for the net 2-oxoglutarate- and O2-dependent conversion of pentalenolactone D to pentalenolactone F.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/ADO85576.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>NCBI Protein ADO85576.1 is a 299 aa Streptomyces arenae PntD.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>The Rhea-to-UniProtKB Swiss-Prot mapping links RHEA:34579 to UniProtKB:E3VWI8.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/bi1019786">DOI:10.1021/bi1019786</a><br><a href="https://mite.lisc.univie.ac.at/repository/MITE0000058">https://mite.lisc.univie.ac.at/repository/MITE0000058</a><br><a href="https://mibig.secondarymetabolites.org/repository/BGC0000653.5/BGC0000653.gbk">https://mibig.secondarymetabolites.org/repository/BGC0000653.5/BGC0000653.gbk</a><br><a href="https://www.uniprot.org/uniprotkb/E3VWI8">https://www.uniprot.org/uniprotkb/E3VWI8</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/ADO85576.1">https://www.ncbi.nlm.nih.gov/protein/ADO85576.1</a><br><a href="https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv">https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/bi1019786">DOI:10.1021/bi1019786</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>pentalenolactone D (8) to pentalenolactone E (15) and pentalenolactone F (16)</dd><dt>notes</dt><dd>Seo et al. biochemically tested recombinant Streptomyces arenae Tu469 PntD and reported 2-oxoglutarate- and Fe(2+)-dependent oxidation of pentalenolactone D to pentalenolactones E and F; native pntD mutants accumulated pentalenolactone D and lost pentalenolactone, pentalenolactone E and pentalenolactone F.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mite.lisc.univie.ac.at/repository/MITE0000058">https://mite.lisc.univie.ac.at/repository/MITE0000058</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MITE0000058 is active and links PntD to UniProtKB:E3VWI8, GenPept ADO85576.1, MIBiG BGC0000653, RHEA:34579, EC:1.14.11.36 and the Seo et al. DOI.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/repository/BGC0000653.5/BGC0000653.gbk">https://mibig.secondarymetabolites.org/repository/BGC0000653.5/BGC0000653.gbk</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MIBiG BGC0000653.5 places ADO85576.1 in the active Streptomyces arenae pentalenolactone biosynthetic gene cluster as pntD/PntD with a MITE0000058 100% identity gene-function annotation.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/E3VWI8">https://www.uniprot.org/uniprotkb/E3VWI8</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>UniProtKB:E3VWI8 is reviewed Streptomyces arenae PntD, cross-links GenPept ADO85576.1, and annotates RHEA:34579 for the net 2-oxoglutarate- and O2-dependent conversion of pentalenolactone D to pentalenolactone F.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/ADO85576.1">https://www.ncbi.nlm.nih.gov/protein/ADO85576.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>NCBI Protein ADO85576.1 is a 299 aa Streptomyces arenae PntD.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv">https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>The Rhea-to-UniProtKB Swiss-Prot mapping links RHEA:34579 to UniProtKB:E3VWI8.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -317,12 +319,12 @@ by the corpus tests.</p>
   <td>forms</td>
   <td>pentalenolactone F(1-)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/bi1019786<br>https://mite.lisc.univie.ac.at/repository/MITE0000058<br>https://mibig.secondarymetabolites.org/repository/BGC0000653.5/BGC0000653.gbk<br>https://www.uniprot.org/uniprotkb/E3VWI8<br>https://www.ncbi.nlm.nih.gov/protein/ADO85576.1<br>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/bi1019786</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>pentalenolactone D (8) to pentalenolactone E (15) and pentalenolactone F (16)</dd><dt>notes</dt><dd>Seo et al. biochemically tested recombinant Streptomyces arenae Tu469 PntD and reported 2-oxoglutarate- and Fe(2+)-dependent oxidation of pentalenolactone D to pentalenolactones E and F; native pntD mutants accumulated pentalenolactone D and lost pentalenolactone, pentalenolactone E and pentalenolactone F.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mite.lisc.univie.ac.at/repository/MITE0000058</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MITE0000058 is active and links PntD to UniProtKB:E3VWI8, GenPept ADO85576.1, MIBiG BGC0000653, RHEA:34579, EC:1.14.11.36 and the Seo et al. DOI.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0000653.5/BGC0000653.gbk</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MIBiG BGC0000653.5 places ADO85576.1 in the active Streptomyces arenae pentalenolactone biosynthetic gene cluster as pntD/PntD with a MITE0000058 100% identity gene-function annotation.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/E3VWI8</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>UniProtKB:E3VWI8 is reviewed Streptomyces arenae PntD, cross-links GenPept ADO85576.1, and annotates RHEA:34579 for the net 2-oxoglutarate- and O2-dependent conversion of pentalenolactone D to pentalenolactone F.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/ADO85576.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>NCBI Protein ADO85576.1 is a 299 aa Streptomyces arenae PntD.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>The Rhea-to-UniProtKB Swiss-Prot mapping links RHEA:34579 to UniProtKB:E3VWI8.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/bi1019786">DOI:10.1021/bi1019786</a><br><a href="https://mite.lisc.univie.ac.at/repository/MITE0000058">https://mite.lisc.univie.ac.at/repository/MITE0000058</a><br><a href="https://mibig.secondarymetabolites.org/repository/BGC0000653.5/BGC0000653.gbk">https://mibig.secondarymetabolites.org/repository/BGC0000653.5/BGC0000653.gbk</a><br><a href="https://www.uniprot.org/uniprotkb/E3VWI8">https://www.uniprot.org/uniprotkb/E3VWI8</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/ADO85576.1">https://www.ncbi.nlm.nih.gov/protein/ADO85576.1</a><br><a href="https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv">https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/bi1019786">DOI:10.1021/bi1019786</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>pentalenolactone D (8) to pentalenolactone E (15) and pentalenolactone F (16)</dd><dt>notes</dt><dd>Seo et al. biochemically tested recombinant Streptomyces arenae Tu469 PntD and reported 2-oxoglutarate- and Fe(2+)-dependent oxidation of pentalenolactone D to pentalenolactones E and F; native pntD mutants accumulated pentalenolactone D and lost pentalenolactone, pentalenolactone E and pentalenolactone F.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mite.lisc.univie.ac.at/repository/MITE0000058">https://mite.lisc.univie.ac.at/repository/MITE0000058</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MITE0000058 is active and links PntD to UniProtKB:E3VWI8, GenPept ADO85576.1, MIBiG BGC0000653, RHEA:34579, EC:1.14.11.36 and the Seo et al. DOI.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/repository/BGC0000653.5/BGC0000653.gbk">https://mibig.secondarymetabolites.org/repository/BGC0000653.5/BGC0000653.gbk</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MIBiG BGC0000653.5 places ADO85576.1 in the active Streptomyces arenae pentalenolactone biosynthetic gene cluster as pntD/PntD with a MITE0000058 100% identity gene-function annotation.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/E3VWI8">https://www.uniprot.org/uniprotkb/E3VWI8</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>UniProtKB:E3VWI8 is reviewed Streptomyces arenae PntD, cross-links GenPept ADO85576.1, and annotates RHEA:34579 for the net 2-oxoglutarate- and O2-dependent conversion of pentalenolactone D to pentalenolactone F.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/ADO85576.1">https://www.ncbi.nlm.nih.gov/protein/ADO85576.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>NCBI Protein ADO85576.1 is a 299 aa Streptomyces arenae PntD.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv">https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>The Rhea-to-UniProtKB Swiss-Prot mapping links RHEA:34579 to UniProtKB:E3VWI8.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -330,15 +332,15 @@ by the corpus tests.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 4 edges</span></h2>
-<p class="sub">S. arenae TU469 early biosynthesis, supported by heterologous expression. The acid endpoint is upstream of the separately curated late reactions, not pentalenolactone itself.</p><div class="scroll"><table>
+<p class="sub">S. arenae TU469 early biosynthesis, supported by heterologous expression. The acid endpoint is upstream of the separately curated late reactions, not pentalenolactone itself.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 4 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>2-trans,6-trans-farnesyl diphosphate(3-)</td>
   <td>is cyclized by</td>
   <td>PntA</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206<br>https://www.uniprot.org/uniprotkb/E3VWJ0</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 3, pntA-only control.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/E3VWJ0</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>S. arenae Tu469 PntA, 337 aa; exact sequence match to ADO85578.1 from HQ292065.1:13164..14177. UniProt assigns RHEA:18081; protein grounding denotes the native gene product, not an affinity-tagged construct.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a><br><a href="https://www.uniprot.org/uniprotkb/E3VWJ0">https://www.uniprot.org/uniprotkb/E3VWJ0</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 3, pntA-only control.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/E3VWJ0">https://www.uniprot.org/uniprotkb/E3VWJ0</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>S. arenae Tu469 PntA, 337 aa; exact sequence match to ADO85578.1 from HQ292065.1:13164..14177. UniProt assigns RHEA:18081; protein grounding denotes the native gene product, not an affinity-tagged construct.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -347,7 +349,7 @@ by the corpus tests.</p>
   <td>forms</td>
   <td>pentalenene</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>GC-MS identification in the pntA-only expression strain.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>GC-MS identification in the pntA-only expression strain.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -356,8 +358,8 @@ by the corpus tests.</p>
   <td>is oxidized by</td>
   <td>PntI</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206<br>https://www.uniprot.org/uniprotkb/E3VWJ1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Net allylic oxidation in heterologous hosts.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/E3VWJ1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>S. arenae TU469 PntI, 457 aa; exact sequence match to ADO85579.1 from HQ292065.1:14292..15665. This unreviewed entry supplies sequence identity, not the experimental activity assignment from the newer paper.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a><br><a href="https://www.uniprot.org/uniprotkb/E3VWJ1">https://www.uniprot.org/uniprotkb/E3VWJ1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Net allylic oxidation in heterologous hosts.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/E3VWJ1">https://www.uniprot.org/uniprotkb/E3VWJ1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>S. arenae TU469 PntI, 457 aa; exact sequence match to ADO85579.1 from HQ292065.1:14292..15665. This unreviewed entry supplies sequence identity, not the experimental activity assignment from the newer paper.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -366,7 +368,7 @@ by the corpus tests.</p>
   <td>forms</td>
   <td>1-deoxypentalenic acid</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Product 6; methylation is analytical derivatization.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Product 6; methylation is analytical derivatization.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -374,15 +376,15 @@ by the corpus tests.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">6 nodes, 5 edges</span></h2>
-<p class="sub">UC5319 PenA cyclization and the native penI deletion phenotype. Purified PenA evidence and genetic PenI evidence are distinct; the deletion does not establish an isolated PenI reaction or exclude indirect effects.</p><div class="scroll"><table>
+<p class="sub">UC5319 PenA cyclization and the native penI deletion phenotype. Purified PenA evidence and genetic PenI evidence are distinct; the deletion does not establish an isolated PenI reaction or exclude indirect effects.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 5 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>2-trans,6-trans-farnesyl diphosphate(3-)</td>
   <td>is cyclized by</td>
   <td>PenA</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/bi00185a024<br>https://www.uniprot.org/uniprotkb/Q55012</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/bi00185a024</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Abstract: purified native and recombinant UC5319 synthase; both require Mg2+.</dd><dt>snippet</dt><dd>catalyzes the cyclization of farnesyl diphosphate</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q55012</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>UC5319 PenA, 337 aa; exact sequence match to both original clone AAA19131.1/U05213.1 and ADO85594.1/HQ292066.1. The 1994 source names Streptomyces UC5319; the cluster and 2025 paper name S. exfoliatus.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/bi00185a024">DOI:10.1021/bi00185a024</a><br><a href="https://www.uniprot.org/uniprotkb/Q55012">https://www.uniprot.org/uniprotkb/Q55012</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/bi00185a024">DOI:10.1021/bi00185a024</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Abstract: purified native and recombinant UC5319 synthase; both require Mg2+.</dd><dt>snippet</dt><dd>catalyzes the cyclization of farnesyl diphosphate</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q55012">https://www.uniprot.org/uniprotkb/Q55012</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>UC5319 PenA, 337 aa; exact sequence match to both original clone AAA19131.1/U05213.1 and ADO85594.1/HQ292066.1. The 1994 source names Streptomyces UC5319; the cluster and 2025 paper name S. exfoliatus.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -391,7 +393,7 @@ by the corpus tests.</p>
   <td>forms</td>
   <td>pentalenene</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/bi00185a024</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/bi00185a024</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Purified UC5319 pentalenene synthase converts FPP to pentalenene.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/bi00185a024">DOI:10.1021/bi00185a024</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/bi00185a024">DOI:10.1021/bi00185a024</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Purified UC5319 pentalenene synthase converts FPP to pentalenene.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -400,8 +402,8 @@ by the corpus tests.</p>
   <td>encoding gene is disrupted in</td>
   <td>In-frame penI deletion in S. exfoliatus UC5319</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206<br>https://www.uniprot.org/uniprotkb/E3VWK7</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Main-text deletion paragraph and Figure S1: CD2 replaces an internal 1194-bp penI fragment with an NdeI site. Table S1&#39;s pntI label for CD2 conflicts with the main text and pWHU1708 construct in Table S2; the latter identify penI.</dd><dt>snippet</dt><dd>an internal 1194-bp fragment</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/E3VWK7</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>UC5319 PenI, 463 aa; exact match to ADO85595.1 at HQ292066.1:11705..13096. Identifier denotes the native protein, not the in-frame deletion construct. Sequence grounding alone does not establish a specific oxidation reaction.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a><br><a href="https://www.uniprot.org/uniprotkb/E3VWK7">https://www.uniprot.org/uniprotkb/E3VWK7</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Main-text deletion paragraph and Figure S1: CD2 replaces an internal 1194-bp penI fragment with an NdeI site. Table S1&#39;s pntI label for CD2 conflicts with the main text and pWHU1708 construct in Table S2; the latter identify penI.</dd><dt>snippet</dt><dd>an internal 1194-bp fragment</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/E3VWK7">https://www.uniprot.org/uniprotkb/E3VWK7</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>UC5319 PenI, 463 aa; exact match to ADO85595.1 at HQ292066.1:11705..13096. Identifier denotes the native protein, not the in-frame deletion construct. Sequence grounding alone does not establish a specific oxidation reaction.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -410,7 +412,7 @@ by the corpus tests.</p>
   <td>abolishes detectable production of</td>
   <td>pentalenolactone</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 2A-C: wild-type UC5319 produces 1, but CD2 lacks detectable 1. Acidified extracts were methylated before GC-MS; 1-Me is the analytical derivative, not the biosynthetic product.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 2A-C: wild-type UC5319 produces 1, but CD2 lacks detectable 1. Acidified extracts were methylated before GC-MS; 1-Me is the analytical derivative, not the biosynthetic product.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -419,7 +421,7 @@ by the corpus tests.</p>
   <td>causes accumulation of</td>
   <td>pentalenene</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 2C-D identifies accumulated compound 3 in CD2. This genetic observation does not by itself prove PenI catalyzes all three oxidation steps to the acid.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 2C-D identifies accumulated compound 3 in CD2. This genetic observation does not by itself prove PenI catalyzes all three oxidation steps to the acid.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -427,15 +429,15 @@ by the corpus tests.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">14 nodes, 14 edges</span></h2>
-<p class="sub">PtlI from the S. avermitilis neopentalenolactone pathway acts on shared early precursors. The 2006 purified assay and 2025 engineered PenA/PtlI E. coli experiment are separate contexts. Neither establishes native S. avermitilis production of pentalenolactone. E. coli FldA/Fdr reconstitution is distinct from the FdxD/FprD test that reported no detectable acid; the latter is not a native-partner assignment.</p><div class="scroll"><table>
+<p class="sub">PtlI from the S. avermitilis neopentalenolactone pathway acts on shared early precursors. The 2006 purified assay and 2025 engineered PenA/PtlI E. coli experiment are separate contexts. Neither establishes native S. avermitilis production of pentalenolactone. E. coli FldA/Fdr reconstitution is distinct from the FdxD/FprD test that reported no detectable acid; the latter is not a native-partner assignment.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 6 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>PtlI</td>
   <td>catalyzes</td>
   <td>Purified PtlI oxidation with E. coli Fld/Fdr</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja0639214<br>https://www.uniprot.org/uniprotkb/Q82IY3</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja0639214</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Recombinant His6-tagged PtlI was assayed with E. coli flavodoxin/flavodoxin reductase and NADPH, not native redox partners.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q82IY3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>PtlI/SAV_2999, 449 aa, exact match to BAC70710.1. NRRL 8165 and MA-4680 are aliases of the same S. avermitilis strain. Canonical accession excludes the 2006 C-terminal His6 tag. UniProt annotates the native pathway as neopentalenolactone, not pentalenolactone production in vivo.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja0639214">DOI:10.1021/ja0639214</a><br><a href="https://www.uniprot.org/uniprotkb/Q82IY3">https://www.uniprot.org/uniprotkb/Q82IY3</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja0639214">DOI:10.1021/ja0639214</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Recombinant His6-tagged PtlI was assayed with E. coli flavodoxin/flavodoxin reductase and NADPH, not native redox partners.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q82IY3">https://www.uniprot.org/uniprotkb/Q82IY3</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>PtlI/SAV_2999, 449 aa, exact match to BAC70710.1. NRRL 8165 and MA-4680 are aliases of the same S. avermitilis strain. Canonical accession excludes the 2006 C-terminal His6 tag. UniProt annotates the native pathway as neopentalenolactone, not pentalenolactone production in vivo.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -444,7 +446,7 @@ by the corpus tests.</p>
   <td>is substrate for</td>
   <td>Purified PtlI oxidation with E. coli Fld/Fdr</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja0639214</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja0639214</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>The 2006 substrate was synthetic racemic pentalenene; the mixture is not assigned the enantiopure CHEBI:17251 identifier.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja0639214">DOI:10.1021/ja0639214</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja0639214">DOI:10.1021/ja0639214</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>The 2006 substrate was synthetic racemic pentalenene; the mixture is not assigned the enantiopure CHEBI:17251 identifier.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -453,8 +455,8 @@ by the corpus tests.</p>
   <td>forms</td>
   <td>pentalen-13-ol</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja0639214<br>https://pubchem.ncbi.nlm.nih.gov/compound/56927746</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja0639214</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Chiral GC-MS identified a single alcohol enantiomer from racemic pentalenene; the separate alcohol-feeding assay also had background oxidation.</dd><dt>snippet</dt><dd>by stepwise allylic oxidation via pentalen-13-ol</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://pubchem.ncbi.nlm.nih.gov/compound/56927746</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>ChEBI-sourced structure cross-reference CHEBI:63243; natural pentalen-13-ol, UUWZJPBRBCIXLA-IKVITTDRSA-N.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja0639214">DOI:10.1021/ja0639214</a><br><a href="https://pubchem.ncbi.nlm.nih.gov/compound/56927746">https://pubchem.ncbi.nlm.nih.gov/compound/56927746</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja0639214">DOI:10.1021/ja0639214</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Chiral GC-MS identified a single alcohol enantiomer from racemic pentalenene; the separate alcohol-feeding assay also had background oxidation.</dd><dt>snippet</dt><dd>by stepwise allylic oxidation via pentalen-13-ol</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/compound/56927746">https://pubchem.ncbi.nlm.nih.gov/compound/56927746</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>ChEBI-sourced structure cross-reference CHEBI:63243; natural pentalen-13-ol, UUWZJPBRBCIXLA-IKVITTDRSA-N.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -463,8 +465,8 @@ by the corpus tests.</p>
   <td>forms</td>
   <td>pentalen-13-al</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja0639214<br>https://www.rhea-db.org/rhea/31699</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja0639214</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Chiral GC-MS identified a single aldehyde enantiomer. The original report detected only trace acid under varied conditions and left efficient aldehyde-to-acid conversion unresolved.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.rhea-db.org/rhea/31699</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>Rhea grounds the natural pentalen-13-al product to CHEBI:63244, JWMGZDVPJPOYGL-IKVITTDRSA-N; the reaction ID is not a protein ID.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja0639214">DOI:10.1021/ja0639214</a><br><a href="https://www.rhea-db.org/rhea/31699">https://www.rhea-db.org/rhea/31699</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja0639214">DOI:10.1021/ja0639214</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Chiral GC-MS identified a single aldehyde enantiomer. The original report detected only trace acid under varied conditions and left efficient aldehyde-to-acid conversion unresolved.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.rhea-db.org/rhea/31699">https://www.rhea-db.org/rhea/31699</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>Rhea grounds the natural pentalen-13-al product to CHEBI:63244, JWMGZDVPJPOYGL-IKVITTDRSA-N; the reaction ID is not a protein ID.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -473,8 +475,8 @@ by the corpus tests.</p>
   <td>forms</td>
   <td>pentalenene</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206<br>https://www.uniprot.org/uniprotkb/Q55012</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 4A penA-only control produces pentalenene; Table S2 traces pLJ5 to UC5319 penA in pLJ1.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q55012</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>UC5319 PenA, 337 aa; exact sequence match to both original clone AAA19131.1/U05213.1 and ADO85594.1/HQ292066.1. The 1994 source names Streptomyces UC5319; the cluster and 2025 paper name S. exfoliatus.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a><br><a href="https://www.uniprot.org/uniprotkb/Q55012">https://www.uniprot.org/uniprotkb/Q55012</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 4A penA-only control produces pentalenene; Table S2 traces pLJ5 to UC5319 penA in pLJ1.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q55012">https://www.uniprot.org/uniprotkb/Q55012</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>UC5319 PenA, 337 aa; exact sequence match to both original clone AAA19131.1/U05213.1 and ADO85594.1/HQ292066.1. The 1994 source names Streptomyces UC5319; the cluster and 2025 paper name S. exfoliatus.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -483,7 +485,7 @@ by the corpus tests.</p>
   <td>is substrate for</td>
   <td>PenA/PtlI oxidation in engineered E. coli</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 4B and Table S2: pLJ80 adds NRRL 8165 ptlI from pWHU1607 to the PenA host BL21(DE3) carrying pMH1/pFZ81.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 4B and Table S2: pLJ80 adds NRRL 8165 ptlI from pWHU1607 to the PenA host BL21(DE3) carrying pMH1/pFZ81.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -492,8 +494,8 @@ by the corpus tests.</p>
   <td>supports</td>
   <td>PenA/PtlI oxidation in engineered E. coli</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206<br>https://www.uniprot.org/uniprotkb/Q82IY3</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 4B is a whole-cell experiment, not a purified three-step reconstitution. Host redox metabolism may contribute.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q82IY3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>PtlI/SAV_2999, 449 aa, exact match to BAC70710.1. NRRL 8165 and MA-4680 are aliases of the same S. avermitilis strain. Canonical accession excludes the 2006 C-terminal His6 tag. UniProt annotates the native pathway as neopentalenolactone, not pentalenolactone production in vivo.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a><br><a href="https://www.uniprot.org/uniprotkb/Q82IY3">https://www.uniprot.org/uniprotkb/Q82IY3</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 4B is a whole-cell experiment, not a purified three-step reconstitution. Host redox metabolism may contribute.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q82IY3">https://www.uniprot.org/uniprotkb/Q82IY3</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>PtlI/SAV_2999, 449 aa, exact match to BAC70710.1. NRRL 8165 and MA-4680 are aliases of the same S. avermitilis strain. Canonical accession excludes the 2006 C-terminal His6 tag. UniProt annotates the native pathway as neopentalenolactone, not pentalenolactone production in vivo.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -502,7 +504,7 @@ by the corpus tests.</p>
   <td>forms</td>
   <td>1-deoxypentalenic acid</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Compound 6 was detected as 6-Me after acidification and methylation. This is an intermediate endpoint, not production of final pentalenolactone.</dd><dt>snippet</dt><dd>6 was detected (Fig. 4B and C)</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Compound 6 was detected as 6-Me after acidification and methylation. This is an intermediate endpoint, not production of final pentalenolactone.</dd><dt>snippet</dt><dd>6 was detected (Fig. 4B and C)</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -511,8 +513,8 @@ by the corpus tests.</p>
   <td>is supplied in</td>
   <td>Purified PtlI oxidation with E. coli Fld/Fdr</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja0639214<br>https://www.uniprot.org/uniprotkb/P61949</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja0639214</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Reference 15a identifies the assay flavodoxin by accession; this supplied redox protein is not a native S. avermitilis partner.</dd><dt>snippet</dt><dd>FldA, Swissprot P61949</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P61949</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>E. coli K12 fldA, 176 aa; exact match to NP_415210.1/b0684. The accession is explicitly named in the PtlI paper, not inferred from the BL21(DE3) expression host.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja0639214">DOI:10.1021/ja0639214</a><br><a href="https://www.uniprot.org/uniprotkb/P61949">https://www.uniprot.org/uniprotkb/P61949</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja0639214">DOI:10.1021/ja0639214</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Reference 15a identifies the assay flavodoxin by accession; this supplied redox protein is not a native S. avermitilis partner.</dd><dt>snippet</dt><dd>FldA, Swissprot P61949</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/P61949">https://www.uniprot.org/uniprotkb/P61949</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>E. coli K12 fldA, 176 aa; exact match to NP_415210.1/b0684. The accession is explicitly named in the PtlI paper, not inferred from the BL21(DE3) expression host.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -521,8 +523,8 @@ by the corpus tests.</p>
   <td>is supplied in</td>
   <td>Purified PtlI oxidation with E. coli Fld/Fdr</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja0639214<br>https://www.uniprot.org/uniprotkb/P28861</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja0639214</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Reference 15b identifies Fdr. Supplied with FldA and NADPH in the purified PtlI assay, not a demonstrated physical complex.</dd><dt>snippet</dt><dd>Fdr, Swissprot P28861</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P28861</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>E. coli K12 fpr, 248 aa; exact match to NP_418359.1/b3924. Fdr is the paper&#39;s label for NADPH-flavodoxin reductase; it is distinct from S. avermitilis FprD.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja0639214">DOI:10.1021/ja0639214</a><br><a href="https://www.uniprot.org/uniprotkb/P28861">https://www.uniprot.org/uniprotkb/P28861</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja0639214">DOI:10.1021/ja0639214</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Reference 15b identifies Fdr. Supplied with FldA and NADPH in the purified PtlI assay, not a demonstrated physical complex.</dd><dt>snippet</dt><dd>Fdr, Swissprot P28861</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/P28861">https://www.uniprot.org/uniprotkb/P28861</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>E. coli K12 fpr, 248 aa; exact match to NP_418359.1/b3924. Fdr is the paper&#39;s label for NADPH-flavodoxin reductase; it is distinct from S. avermitilis FprD.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -531,8 +533,8 @@ by the corpus tests.</p>
   <td>is supplied in</td>
   <td>In-vitro PtlI test with FdxD/FprD</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja0639214<br>https://www.uniprot.org/uniprotkb/Q82IK4</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja0639214</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Note 17 names SAV3129 in this separate redox-pair test.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q82IK4</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>MA-4680 FdxD, 106 aa; exact match to BAC70840.1, SAVERM_3129 (old SAV_3129), complement(BA000030.4:3901642..3901962). Identity grounding is not a productive-partner assignment.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja0639214">DOI:10.1021/ja0639214</a><br><a href="https://www.uniprot.org/uniprotkb/Q82IK4">https://www.uniprot.org/uniprotkb/Q82IK4</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja0639214">DOI:10.1021/ja0639214</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Note 17 names SAV3129 in this separate redox-pair test.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q82IK4">https://www.uniprot.org/uniprotkb/Q82IK4</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>MA-4680 FdxD, 106 aa; exact match to BAC70840.1, SAVERM_3129 (old SAV_3129), complement(BA000030.4:3901642..3901962). Identity grounding is not a productive-partner assignment.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -541,8 +543,8 @@ by the corpus tests.</p>
   <td>is supplied in</td>
   <td>In-vitro PtlI test with FdxD/FprD</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja0639214<br>https://www.uniprot.org/uniprotkb/Q82BM9</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja0639214</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Note 17 names SAV5675 with FdxD, not the E. coli Fdr protein.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q82BM9</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>MA-4680 FprD, 421 aa; exact match to BAC73387.1, SAVERM_5675 (old SAV_5675), BA000030.4:6862850..6864115. The unreviewed annotation supplies sequence identity.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja0639214">DOI:10.1021/ja0639214</a><br><a href="https://www.uniprot.org/uniprotkb/Q82BM9">https://www.uniprot.org/uniprotkb/Q82BM9</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja0639214">DOI:10.1021/ja0639214</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Note 17 names SAV5675 with FdxD, not the E. coli Fdr protein.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q82BM9">https://www.uniprot.org/uniprotkb/Q82BM9</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>MA-4680 FprD, 421 aa; exact match to BAC73387.1, SAVERM_5675 (old SAV_5675), BA000030.4:6862850..6864115. The unreviewed annotation supplies sequence identity.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -551,7 +553,7 @@ by the corpus tests.</p>
   <td>is assayed in</td>
   <td>In-vitro PtlI test with FdxD/FprD</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja0639214</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja0639214</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Note 17 reports no enhancement of pentalenene oxidation; the comparison and quantitative detection limit are not specified.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja0639214">DOI:10.1021/ja0639214</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja0639214">DOI:10.1021/ja0639214</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Note 17 reports no enhancement of pentalenene oxidation; the comparison and quantitative detection limit are not specified.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -560,7 +562,7 @@ by the corpus tests.</p>
   <td>has no reported detectable formation of</td>
   <td>1-deoxypentalenic acid</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja0639214</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja0639214</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Note 17&#39;s condition-specific result does not erase trace acid reported elsewhere or prove incapacity under other conditions.</dd><dt>snippet</dt><dd>no detectable formation</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja0639214">DOI:10.1021/ja0639214</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja0639214">DOI:10.1021/ja0639214</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Note 17&#39;s condition-specific result does not erase trace acid reported elsewhere or prove incapacity under other conditions.</dd><dt>snippet</dt><dd>no detectable formation</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -568,15 +570,15 @@ by the corpus tests.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">15 nodes, 19 edges</span></h2>
-<p class="sub">Engineered E. coli BL21(DE3) with PenA/PntI and alternative J1074 redox-gene expression conditions. XNR_5179-containing pairs increased intermediate production; XNR_1673 conditions are represented only as tested conditions. Neither native partnership, physical complex, nor increased final pentalenolactone yield is asserted.</p><div class="scroll"><table>
+<p class="sub">Engineered E. coli BL21(DE3) with PenA/PntI and alternative J1074 redox-gene expression conditions. XNR_5179-containing pairs increased intermediate production; XNR_1673 conditions are represented only as tested conditions. Neither native partnership, physical complex, nor increased final pentalenolactone yield is asserted.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 7 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>PntI</td>
   <td>supports</td>
   <td>1-deoxypentalenic acid production in engineered E. coli</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206<br>https://www.uniprot.org/uniprotkb/E3VWJ1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 4C, PenA/PntI host.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/E3VWJ1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>S. arenae TU469 PntI, 457 aa; exact sequence match to ADO85579.1 from HQ292065.1:14292..15665. This unreviewed entry supplies sequence identity, not the experimental activity assignment from the newer paper.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a><br><a href="https://www.uniprot.org/uniprotkb/E3VWJ1">https://www.uniprot.org/uniprotkb/E3VWJ1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 4C, PenA/PntI host.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/E3VWJ1">https://www.uniprot.org/uniprotkb/E3VWJ1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>S. arenae TU469 PntI, 457 aa; exact sequence match to ADO85579.1 from HQ292065.1:14292..15665. This unreviewed entry supplies sequence identity, not the experimental activity assignment from the newer paper.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -585,8 +587,8 @@ by the corpus tests.</p>
   <td>is coexpressed in</td>
   <td>Joint expression of XNR_5179 and XNR_4478</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206<br>https://www.ncbi.nlm.nih.gov/protein/AGI91495.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Table S2: J1074 gene in pLJ62.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGI91495.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>XNR_5179 encodes a 100-aa ferredoxin at complement(CP004370.1:5881185..5881487), strain J1074. NCBI names this strain S. albidoflavus (taxon 1886); the paper uses S. albus. Exact-locus and GenPept-cross-reference UniProt queries did not resolve an accession; no homolog was substituted.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AGI91495.1">https://www.ncbi.nlm.nih.gov/protein/AGI91495.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Table S2: J1074 gene in pLJ62.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AGI91495.1">https://www.ncbi.nlm.nih.gov/protein/AGI91495.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>XNR_5179 encodes a 100-aa ferredoxin at complement(CP004370.1:5881185..5881487), strain J1074. NCBI names this strain S. albidoflavus (taxon 1886); the paper uses S. albus. Exact-locus and GenPept-cross-reference UniProt queries did not resolve an accession; no homolog was substituted.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -595,8 +597,8 @@ by the corpus tests.</p>
   <td>is coexpressed in</td>
   <td>Joint expression of XNR_5179 and XNR_4478</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206<br>https://www.ncbi.nlm.nih.gov/protein/AGI90801.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Table S2: J1074 gene in pLJ62.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGI90801.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>XNR_4478 encodes a 420-aa ferredoxin reductase at complement(CP004370.1:5093104..5094366), strain J1074, currently S. albidoflavus in NCBI and S. albus in the paper. Retained the versioned NCBI Protein accession after exact-locus and GenPept-cross-reference UniProt queries returned no match.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AGI90801.1">https://www.ncbi.nlm.nih.gov/protein/AGI90801.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Table S2: J1074 gene in pLJ62.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AGI90801.1">https://www.ncbi.nlm.nih.gov/protein/AGI90801.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>XNR_4478 encodes a 420-aa ferredoxin reductase at complement(CP004370.1:5093104..5094366), strain J1074, currently S. albidoflavus in NCBI and S. albus in the paper. Retained the versioned NCBI Protein accession after exact-locus and GenPept-cross-reference UniProt queries returned no match.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -605,7 +607,7 @@ by the corpus tests.</p>
   <td>increases</td>
   <td>1-deoxypentalenic acid production in engineered E. coli</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 5: the pair improved yield relative to PenA/PntI alone; the authors reported no significant change for individual additions.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 5: the pair improved yield relative to PenA/PntI alone; the authors reported no significant change for individual additions.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -614,8 +616,8 @@ by the corpus tests.</p>
   <td>supplies pentalenene for</td>
   <td>1-deoxypentalenic acid production in engineered E. coli</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206<br>https://www.uniprot.org/uniprotkb/Q55012</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figures 4A and 5: the E. coli strains carry UC5319 penA; PenA is not the TU469 PntA used in the Streptomyces experiment.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q55012</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>UC5319 PenA, 337 aa; exact sequence match to both original clone AAA19131.1/U05213.1 and ADO85594.1/HQ292066.1. The 1994 source names Streptomyces UC5319; the cluster and 2025 paper name S. exfoliatus.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a><br><a href="https://www.uniprot.org/uniprotkb/Q55012">https://www.uniprot.org/uniprotkb/Q55012</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figures 4A and 5: the E. coli strains carry UC5319 penA; PenA is not the TU469 PntA used in the Streptomyces experiment.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q55012">https://www.uniprot.org/uniprotkb/Q55012</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>UC5319 PenA, 337 aa; exact sequence match to both original clone AAA19131.1/U05213.1 and ADO85594.1/HQ292066.1. The 1994 source names Streptomyces UC5319; the cluster and 2025 paper name S. exfoliatus.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -624,8 +626,8 @@ by the corpus tests.</p>
   <td>is coexpressed in</td>
   <td>Joint expression of XNR_5179 and XNR_4772</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206<br>https://www.ncbi.nlm.nih.gov/protein/AGI91094.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Table S2: pLJ52 carries J1074 XNR_4772, transferred via pLJ55 to pLJ64. Figure 5 and Tables S2-S4 use XNR_4772; an earlier main-text occurrence of XNR_4722 is inconsistent.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGI91094.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>395-aa XNR_4772 at CP004370.1:5424795..5425982, strain J1074. NCBI calls this S. albidoflavus; the paper calls it S. albus. Exact-locus and GenPept-cross-reference UniProt searches did not resolve an accession; no homolog was substituted. NCBI labels it oxidoreductase; the paper selects it as a predicted FDR.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AGI91094.1">https://www.ncbi.nlm.nih.gov/protein/AGI91094.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Table S2: pLJ52 carries J1074 XNR_4772, transferred via pLJ55 to pLJ64. Figure 5 and Tables S2-S4 use XNR_4772; an earlier main-text occurrence of XNR_4722 is inconsistent.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AGI91094.1">https://www.ncbi.nlm.nih.gov/protein/AGI91094.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>395-aa XNR_4772 at CP004370.1:5424795..5425982, strain J1074. NCBI calls this S. albidoflavus; the paper calls it S. albus. Exact-locus and GenPept-cross-reference UniProt searches did not resolve an accession; no homolog was substituted. NCBI labels it oxidoreductase; the paper selects it as a predicted FDR.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -634,8 +636,8 @@ by the corpus tests.</p>
   <td>is coexpressed in</td>
   <td>Joint expression of XNR_5179 and XNR_4772</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206<br>https://www.ncbi.nlm.nih.gov/protein/AGI91495.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Table S2: XNR_5179 from pLJ54 is added to pLJ55 to make pLJ64, jointly expressing the two J1074 redox proteins.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGI91495.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>XNR_5179 encodes a 100-aa ferredoxin at complement(CP004370.1:5881185..5881487), strain J1074. NCBI names this strain S. albidoflavus (taxon 1886); the paper uses S. albus. Exact-locus and GenPept-cross-reference UniProt queries did not resolve an accession; no homolog was substituted.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AGI91495.1">https://www.ncbi.nlm.nih.gov/protein/AGI91495.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Table S2: XNR_5179 from pLJ54 is added to pLJ55 to make pLJ64, jointly expressing the two J1074 redox proteins.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AGI91495.1">https://www.ncbi.nlm.nih.gov/protein/AGI91495.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>XNR_5179 encodes a 100-aa ferredoxin at complement(CP004370.1:5881185..5881487), strain J1074. NCBI names this strain S. albidoflavus (taxon 1886); the paper uses S. albus. Exact-locus and GenPept-cross-reference UniProt queries did not resolve an accession; no homolog was substituted.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -644,7 +646,7 @@ by the corpus tests.</p>
   <td>increases</td>
   <td>1-deoxypentalenic acid production in engineered E. coli</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 5 compares pLJ64 with PenA/PntI-only pLJ9. The paired condition increased acid production; the authors reported no significant change for individual additions. No physical complex or native partnership is demonstrated.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 5 compares pLJ64 with PenA/PntI-only pLJ9. The paired condition increased acid production; the authors reported no significant change for individual additions. No physical complex or native partnership is demonstrated.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -653,8 +655,8 @@ by the corpus tests.</p>
   <td>is expressed in</td>
   <td>XNR_1673 addition to PenA/PntI</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206<br>https://www.ncbi.nlm.nih.gov/protein/AGI88059.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Table S2 traces J1074 XNR_1673 from pLJ53 to pLJ56; the host contains pMH1, pFZ81 and PenA/PntI.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGI88059.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>J1074 XNR_1673, 106 aa, complement(CP004370.1:1979389..1979709). NCBI uses S. albidoflavus; the paper uses S. albus. UniProt query (AGI88059 OR gene:XNR_1673) returned no results; the versioned NCBI accession avoids substituting a homolog.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AGI88059.1">https://www.ncbi.nlm.nih.gov/protein/AGI88059.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Table S2 traces J1074 XNR_1673 from pLJ53 to pLJ56; the host contains pMH1, pFZ81 and PenA/PntI.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AGI88059.1">https://www.ncbi.nlm.nih.gov/protein/AGI88059.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>J1074 XNR_1673, 106 aa, complement(CP004370.1:1979389..1979709). NCBI uses S. albidoflavus; the paper uses S. albus. UniProt query (AGI88059 OR gene:XNR_1673) returned no results; the versioned NCBI accession avoids substituting a homolog.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -663,7 +665,7 @@ by the corpus tests.</p>
   <td>was tested for effects on</td>
   <td>1-deoxypentalenic acid production in engineered E. coli</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 5, pLJ56 versus pLJ9: the authors reported no significant change for individual additions. This is not evidence of zero effect or intrinsic inactivity.</dd><dt>snippet</dt><dd>no significant change in the yield of 6</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 5, pLJ56 versus pLJ9: the authors reported no significant change for individual additions. This is not evidence of zero effect or intrinsic inactivity.</dd><dt>snippet</dt><dd>no significant change in the yield of 6</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -672,7 +674,7 @@ by the corpus tests.</p>
   <td>is coexpressed in</td>
   <td>Joint expression of XNR_1673 and XNR_4478</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Table S2: pLJ61 adds XNR_1673 from pLJ53 to pLJ10.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Table S2: pLJ61 adds XNR_1673 from pLJ53 to pLJ10.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -681,7 +683,7 @@ by the corpus tests.</p>
   <td>is coexpressed in</td>
   <td>Joint expression of XNR_1673 and XNR_4478</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>pLJ10 supplies XNR_4478 to the pLJ61 paired condition.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>pLJ10 supplies XNR_4478 to the pLJ61 paired condition.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -690,7 +692,7 @@ by the corpus tests.</p>
   <td>is coexpressed in</td>
   <td>Joint expression of XNR_1673 and XNR_4772</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Table S2: pLJ63 adds XNR_1673 from pLJ53 to pLJ55.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Table S2: pLJ63 adds XNR_1673 from pLJ53 to pLJ55.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -699,7 +701,7 @@ by the corpus tests.</p>
   <td>is coexpressed in</td>
   <td>Joint expression of XNR_1673 and XNR_4772</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>pLJ55 supplies XNR_4772 to the pLJ63 paired condition.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>pLJ55 supplies XNR_4772 to the pLJ63 paired condition.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -708,7 +710,7 @@ by the corpus tests.</p>
   <td>was tested for effects on</td>
   <td>1-deoxypentalenic acid production in engineered E. coli</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>pLJ61 versus pLJ9: main text reports unchanged yield, but Figure 5 plots a higher mean. No causal null or statistical significance is inferred from this discrepancy.</dd><dt>snippet</dt><dd>the yield of 6 did not change</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>pLJ61 versus pLJ9: main text reports unchanged yield, but Figure 5 plots a higher mean. No causal null or statistical significance is inferred from this discrepancy.</dd><dt>snippet</dt><dd>the yield of 6 did not change</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -717,7 +719,7 @@ by the corpus tests.</p>
   <td>was tested for effects on</td>
   <td>1-deoxypentalenic acid production in engineered E. coli</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>pLJ63 versus pLJ9: main text reports unchanged yield, but Figure 5 plots a higher mean. This edge records testing, not a demonstrated absence of an effect.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.engmic.2025.100206">DOI:10.1016/j.engmic.2025.100206</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>pLJ63 versus pLJ9: main text reports unchanged yield, but Figure 5 plots a higher mean. This edge records testing, not a demonstrated absence of an effect.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -726,9 +728,9 @@ by the corpus tests.</p>
   <td>has a sequence-identical UniProtKB example</td>
   <td>XNR_4478 ferredoxin reductase (S. albidoflavus FRZ02_28405 UniProtKB example)</td>
   <td>UniProtKB:D6AZ77 (Streptomyces albidoflavus FRZ02_28405) shares 100% amino-acid sequence identity (UPI0001AEE243) with Streptomyces albus J1074 XNR_4478 (AGI90801.1).</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/D6AZ77<br>https://www.uniprot.org/uniparc/UPI0001AEE243<br>https://www.ncbi.nlm.nih.gov/protein/AGI90801.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/D6AZ77</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>Active Streptomyces albidoflavus UniProtKB entry (D6AZ77, FRZ02_28405) for the UPI0001AEE243 ferredoxin-NADP reductase sequence.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniparc/UPI0001AEE243</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>UniParc UPI0001AEE243 links CP004370.1 AGI90801.1 (XNR_4478) and active Streptomyces albidoflavus UniProtKB:D6AZ77 under a single 100%-identical sequence.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGI90801.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>CP004370.1 GenPept AGI90801.1 is the Streptomyces albus J1074 XNR_4478 ferredoxin reductase translation.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/D6AZ77">https://www.uniprot.org/uniprotkb/D6AZ77</a><br><a href="https://www.uniprot.org/uniparc/UPI0001AEE243">https://www.uniprot.org/uniparc/UPI0001AEE243</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AGI90801.1">https://www.ncbi.nlm.nih.gov/protein/AGI90801.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/D6AZ77">https://www.uniprot.org/uniprotkb/D6AZ77</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>Active Streptomyces albidoflavus UniProtKB entry (D6AZ77, FRZ02_28405) for the UPI0001AEE243 ferredoxin-NADP reductase sequence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniparc/UPI0001AEE243">https://www.uniprot.org/uniparc/UPI0001AEE243</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>UniParc UPI0001AEE243 links CP004370.1 AGI90801.1 (XNR_4478) and active Streptomyces albidoflavus UniProtKB:D6AZ77 under a single 100%-identical sequence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AGI90801.1">https://www.ncbi.nlm.nih.gov/protein/AGI90801.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>CP004370.1 GenPept AGI90801.1 is the Streptomyces albus J1074 XNR_4478 ferredoxin reductase translation.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -737,9 +739,9 @@ by the corpus tests.</p>
   <td>has a sequence-identical UniProtKB example</td>
   <td>XNR_1673 ferredoxin (S. albidoflavus FRZ02_12020 UniProtKB example)</td>
   <td>UniProtKB:D6B5H4 (Streptomyces albidoflavus FRZ02_12020) shares 100% amino-acid sequence identity (UPI0001AEEB06) with Streptomyces albus J1074 XNR_1673 (AGI88059.1).</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/D6B5H4<br>https://www.uniprot.org/uniparc/UPI0001AEEB06<br>https://www.ncbi.nlm.nih.gov/protein/AGI88059.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/D6B5H4</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>Active Streptomyces albidoflavus UniProtKB entry (D6B5H4, FRZ02_12020) for the UPI0001AEEB06 ferredoxin sequence.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniparc/UPI0001AEEB06</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>UniParc UPI0001AEEB06 links CP004370.1 AGI88059.1 (XNR_1673) and active Streptomyces albidoflavus UniProtKB:D6B5H4 under a single 100%-identical sequence.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGI88059.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>CP004370.1 GenPept AGI88059.1 is the Streptomyces albus J1074 XNR_1673 ferredoxin translation.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/D6B5H4">https://www.uniprot.org/uniprotkb/D6B5H4</a><br><a href="https://www.uniprot.org/uniparc/UPI0001AEEB06">https://www.uniprot.org/uniparc/UPI0001AEEB06</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AGI88059.1">https://www.ncbi.nlm.nih.gov/protein/AGI88059.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/D6B5H4">https://www.uniprot.org/uniprotkb/D6B5H4</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>Active Streptomyces albidoflavus UniProtKB entry (D6B5H4, FRZ02_12020) for the UPI0001AEEB06 ferredoxin sequence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniparc/UPI0001AEEB06">https://www.uniprot.org/uniparc/UPI0001AEEB06</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>UniParc UPI0001AEEB06 links CP004370.1 AGI88059.1 (XNR_1673) and active Streptomyces albidoflavus UniProtKB:D6B5H4 under a single 100%-identical sequence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AGI88059.1">https://www.ncbi.nlm.nih.gov/protein/AGI88059.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>CP004370.1 GenPept AGI88059.1 is the Streptomyces albus J1074 XNR_1673 ferredoxin translation.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -748,9 +750,9 @@ by the corpus tests.</p>
   <td>has a sequence-identical UniProtKB example</td>
   <td>XNR_4772 predicted ferredoxin reductase (S. wadayamensis DC60_00205 UniProtKB example)</td>
   <td>UniProtKB:A0ABR4S4L1 (Streptomyces wadayamensis DC60_00205, S. albidoflavus clade) shares 100% amino-acid sequence identity (UPI0001AECE6D) with Streptomyces albus J1074 XNR_4772 (AGI91094.1).</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0ABR4S4L1<br>https://www.uniprot.org/uniparc/UPI0001AECE6D<br>https://www.ncbi.nlm.nih.gov/protein/AGI91094.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0ABR4S4L1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>Active Streptomyces wadayamensis UniProtKB entry (A0ABR4S4L1, DC60_00205) for the UPI0001AECE6D pyridine nucleotide-disulfide oxidoreductase sequence.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniparc/UPI0001AECE6D</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>UniParc UPI0001AECE6D links CP004370.1 AGI91094.1 (XNR_4772) and active UniProtKB:A0ABR4S4L1 under a single 100%-identical sequence.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGI91094.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>CP004370.1 GenPept AGI91094.1 is the Streptomyces albus J1074 XNR_4772 translation.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/A0ABR4S4L1">https://www.uniprot.org/uniprotkb/A0ABR4S4L1</a><br><a href="https://www.uniprot.org/uniparc/UPI0001AECE6D">https://www.uniprot.org/uniparc/UPI0001AECE6D</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AGI91094.1">https://www.ncbi.nlm.nih.gov/protein/AGI91094.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0ABR4S4L1">https://www.uniprot.org/uniprotkb/A0ABR4S4L1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>Active Streptomyces wadayamensis UniProtKB entry (A0ABR4S4L1, DC60_00205) for the UPI0001AECE6D pyridine nucleotide-disulfide oxidoreductase sequence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniparc/UPI0001AECE6D">https://www.uniprot.org/uniparc/UPI0001AECE6D</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>UniParc UPI0001AECE6D links CP004370.1 AGI91094.1 (XNR_4772) and active UniProtKB:A0ABR4S4L1 under a single 100%-identical sequence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AGI91094.1">https://www.ncbi.nlm.nih.gov/protein/AGI91094.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>CP004370.1 GenPept AGI91094.1 is the Streptomyces albus J1074 XNR_4772 translation.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -761,35 +763,55 @@ by the corpus tests.</p>
 
 
 <h2>Elsewhere in the fleet</h2>
-<ul><li>AntibioticMech — <a class="mono" href="https://culturebotai.github.io/AntibioticMech/pages/antimicrobial_unspecified/pentalenolactone.html">CHEBI:70816</a>    (same structure, same inchikey)</li>
+<ul><li>AntibioticMech — <a class="mono" href="https://culturebotai.github.io/AntibioticMech/pages/unspecified/pentalenolactone.html">CHEBI:70816</a>    (same structure, same inchikey)</li>
 </ul>
 
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=NUPNVWUYFVEAIT-UJJBCWTCSA-N">AntibioticMech (pentalenolactone) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=CHEBI%3A70816">MediaIngredientMech (CHEBI:70816) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A29301">TaxonMech: Streptomyces arenae (NCBITaxon:29301) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A227882">TaxonMech: Streptomyces avermitilis MA-4680 = NBRC 14893 (NCBITaxon:227882) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000653">PathwayMech (mibig:BGC0000653) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000678">PathwayMech (mibig:BGC0000678) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q=CHEBI%3A70816">MediaIngredientMech (CHEBI:70816) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A29301">TaxonMech: Streptomyces arenae (NCBITaxon:29301) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A227882">TaxonMech: Streptomyces avermitilis MA-4680 = NBRC 14893 (NCBITaxon:227882) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000653">PathwayMech (mibig:BGC0000653) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000678">PathwayMech (mibig:BGC0000678) &nearr;</a>
 </div>
 
 <h2>Open questions <span class="tag">1</span></h2>
-<div class="note"><p><strong>shared-structure</strong> — This structure is reported by more than one MIBiG entry: BGC0000653, BGC0000678. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
+<div class="note"><p><strong>shared-structure</strong> <span class="tag">OPEN</span> <span class="tag">curation todo</span> — This structure is reported by more than one MIBiG entry: BGC0000653, BGC0000678. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
+
+<h2 id="curation-history">Curation history <span class="tag">14</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-18T03:34:14Z">2026-10-18T03:34:14Z</time> &middot; <strong>ADDED_UNIPROT_PROTEIN_EXAMPLES</strong> &middot; antigravity <span class="tag">LLM-assisted</span><p>Added sequence-identical UniProtKB protein example nodes D6AZ77 (UPI0001AEE243), D6B5H4 (UPI0001AEEB06), and A0ABR4S4L1 (UPI0001AECE6D) for J1074 redox partners XNR_4478, XNR_1673, and XNR_4772, and extracted pentalenolactone-pnti-engineered-redox-support to an exact-owner causal graph component.</p></li>
+<li><time datetime="2026-10-13T10:44:24Z">2026-10-13T10:44:24Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources<p>Seeded from the committed inventories and curation tables.</p></li>
+<li><time datetime="2026-10-03T13:25:35Z">2026-10-03T13:25:35Z</time> &middot; <strong>ADDED_REDOX_ASSAY_PARTICIPANTS</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added five exact redox-protein identities and 14 DOI-cited edges: E. coli FldA/P61949 and Fdr/P28861 supplied to PtlI reconstitution; S. avermitilis FdxD/Q82IK4 and FprD/Q82BM9 in a separate negative acid detection test; and J1074 XNR_1673/AGI88059.1 in single and paired whole-cell tests. Kept uncertainty in the XNR_1673 yield comparison explicit; no native-partner assignment or record-status promotion.</p></li>
+<li><time datetime="2026-10-03T13:00:16Z">2026-10-03T13:00:16Z</time> &middot; <strong>CORRECTED_PENI_EVIDENCE_LOCATOR</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Addressed review issue #491: replaced the unsupported Section 2.1 locator with the unnumbered main-text deletion paragraph and Figure S1. Protein identities, biological claims and the Table S1 discrepancy are unchanged.</p></li>
+<li><time datetime="2026-10-03T12:47:34Z">2026-10-03T12:47:34Z</time> &middot; <strong>ADDED_PENA_PENI_PTLI_AND_ALTERNATIVE_REDOX_GRAPHS</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added UC5319 PenA/Q55012 and PenI/E3VWK7, S. avermitilis PtlI/Q82IY3 and J1074 XNR_4772/AGI91094.1 across two new BIOSYNTHESIS graphs and the existing PntI redox graph (17 new cited edges). Separated native deletion, purified racemate oxidation, and engineered whole-cell evidence, preserved the trace-acid observation, and retained SEEDED with imported claims unchanged.</p></li>
+<li><time datetime="2026-10-03T12:20:17Z">2026-10-03T12:20:17Z</time> &middot; <strong>CLARIFIED_REDOX_SINGLE_GENE_EVIDENCE</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Addressed review issue #489: preserved the author-reported lack of a significant yield change for individual redox-gene additions, rather than implying identical measured yields or proven absence of an effect. The paired-expression increase is unchanged.</p></li>
+<li><time datetime="2026-10-03T12:02:50Z">2026-10-03T12:02:50Z</time> &middot; <strong>ADDED_PNTA_PNTI_AND_ENGINEERED_REDOX_GRAPHS</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added TU469 PntA/E3VWJ0 and PntI/E3VWJ1 early pathway steps and a BIOSYNTHESIS graph, plus a separate engineered-redox graph for J1074 XNR_5179/AGI91495.1 and XNR_4478/AGI90801.1. Grounded whole-cell evidence to Li et al. 2025 and preserved the distinction between paired coexpression, native partners and purified-enzyme assays.</p></li>
+<li><time datetime="2026-10-02T00:43:28Z">2026-10-02T00:43:28Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Corrected the PntD pathway product and BIOSYNTHESIS graph product node from neutral pentalenolactone F to the pH 7.3 pentalenolactone F conjugate base used by RHEA:34579.</p></li>
+<li><time datetime="2026-10-02T00:34:31Z">2026-10-02T00:34:31Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added the intervening PntD BIOSYNTHESIS pathway step and causal graph for pentalenolactone; grounded Streptomyces arenae PntD to UniProtKB:E3VWI8; cited MITE0000058, MIBiG BGC0000653, GenPept ADO85576.1, and the RHEA:34579 2-oxoglutarate-dependent oxidation from pentalenolactone D to pentalenolactone F; and linked the curated PntE, PntD and PntM steps.</p></li>
+<li><time datetime="2026-10-02T00:08:14Z">2026-10-02T00:08:14Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added an upstream PntE BIOSYNTHESIS pathway step and causal graph for pentalenolactone; grounded Streptomyces arenae PntE to UniProtKB:E3VWI7; cited MITE0000057, MIBiG BGC0000653, GenPept ADO85575.1, and the RHEA:34635 Baeyer-Villiger oxidation from 1-deoxy-11-oxopentalenate to pentalenolactone D; and renumbered the terminal PntM step.</p></li>
+<li><time datetime="2026-09-30T04:28:43Z">2026-09-30T04:28:43Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources<p>Seeded from the committed inventories and curation tables.</p></li>
+<li><time datetime="2026-09-30T03:56:59Z">2026-09-30T03:56:59Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added a terminal-step BIOSYNTHESIS pathway and causal graph for pentalenolactone biosynthesis; grounded Streptomyces arenae PntM/CYP161C2 to UniProtKB:E3VWI3; and cited the experimentally characterized RHEA:34575 oxidative rearrangement of pentalenolactone F to pentalenolactone.</p></li>
+<li><time datetime="2026-09-25T03:02:55Z">2026-09-25T03:02:55Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:10Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
 
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0000653</td><td>MIBIG</td><td>5</td></tr>
-<tr><td class="mono">BGC0000678</td><td>MIBIG</td><td>5</td></tr>
-<tr><td class="mono">CHEBI:70816</td><td>CHEBI</td><td>3-star</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000653">BGC0000653</a></td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000678">BGC0000678</a></td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_70816">CHEBI:70816</a></td><td>CHEBI</td><td>3-star</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/terpenoids/pentalenolactone.yaml">data/natural_products/terpenoids/pentalenolactone.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20CHEBI%3A70816&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Fterpenoids%2Fpentalenolactone.html">Report a problem with this record</a>: opens a GitHub issue that names CHEBI:70816 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Record last updated 2026-10-18 03:34 UTC, its latest curation event. Generated from the committed corpus. Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

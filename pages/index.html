@@ -9,6 +9,7 @@
 <script src="theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,18 +17,19 @@
     <a href="chemical-map.html">Structure map</a>
     <a href="map.html">Corpus map</a>
     <a href="sequence-map.html">Sequence map</a>
-    <a href="index.html#downloads">Downloads &amp; Schema</a>
+    <a href="index.html#downloads">Downloads</a>
+    <a href="schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <h1>NaturalProductMech</h1>
 <p class="sub">3116 natural product structures, one record per Standard
 InChIKey, harmonized from 10 adopted sources.</p>
 
 <form class="hero-search" action="browse.html" method="get" role="search" aria-label="Search NaturalProductMech">
-  <input type="search" name="q" placeholder="Search 3116 natural products by name, ChEBI/InChIKey, synonym, producer, or pathway…" autocomplete="off">
+  <input type="search" name="q" placeholder="Search 3116 natural products by name, identifier, InChIKey, synonym or filing pathway…" autocomplete="off">
   <button type="submit">Search</button>
 </form>
 
@@ -100,8 +102,28 @@ record.</p>
   </div>
 </div>
 
+<h2 id="curation">How records are produced</h2>
+<blockquote class="quote">
+<p>The corpus reproduces offline from committed inventories: MIBiG (structures, producers, gene clusters), ChEBI (grounding, origins), LOTUS and CyanoMetDB (cited occurrences), NCBI Taxonomy (name resolution), NPClassifier (the filing pathway), PubChem BioAssay and BindingDB (measured activities and targets), and AntibioticMech (antimicrobial classification and cross-corpus links). Every record remains <code>SEEDED</code> until a curator signs off identity, structure, filing class, and producer claims; partial <code>biosynthetic_pathway</code> and <code>causal_graphs</code> curation is now underway.</p>
+<p class="sub">— the repository's <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/README.md">README</a></p>
+</blockquote>
+<p>Each record states its curation status, and the schema defines what each one means.
+These are workflow decisions, not independently verified human review.</p>
+<div class="scroll" role="region" tabindex="0" aria-label="Curation statuses"><table>
+<tr><th>Status</th><th>Records</th><th>What it means (quoted from the <a href="schema.html#enum-CurationStatusEnum">schema</a>)</th></tr>
+<tr><td class="mono">SEEDED</td><td>3116</td><td>Written from the committed inventories; no curator sign-off yet.</td></tr>
+<tr><td class="mono">PROPOSED</td><td>0</td><td>Curator or literature addition, not yet reviewed.</td></tr>
+<tr><td class="mono">REVIEWED</td><td>0</td><td>A curator has signed off on identity, structure, filing class, and every producer claim. See docs/CURATION.md.</td></tr>
+<tr><td class="mono">DEPRECATED</td><td>0</td><td>Superseded or found out of scope; retained for traceability.</td></tr>
+</table></div>
+<p class="sub">Every change to a record appends a curation event that names its curator; a
+record page lists its own under <em>Curation history</em>. Across the corpus,
+8022 events name these curators:
+<span class="mono">seed_from_sources</span> (7284), <span class="mono">codex</span> (611), <span class="mono">antigravity</span> (67), <span class="mono">Codex</span> (39), <span class="mono">OpenAI Codex</span> (14), <span class="mono">claude</span> (5), <span class="mono">codex/add-proteins-to-graphs</span> (1), <span class="mono">codex:add-proteins-to-graphs</span> (1).
+736 of the events are flagged <span class="mono">llm_assisted</span>.</p>
+
 <h2>What the corpus holds</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Field coverage"><table>
 <tr><th>Field</th><th>Records carrying at least one</th></tr>
 <tr><td class="mono">biosynthesis_origin</td><td>3116</td></tr>
 <tr><td class="mono">producer_taxon_groups</td><td>3077</td></tr>
@@ -122,8 +144,8 @@ record.</p>
 <p class="sub">Machine-readable data exports, LinkML schema definitions, and embedding coordinate tables.</p>
 <div class="grid">
   <div class="card">
-    <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/src/naturalproductmech/schema/naturalproductmech.yaml">LinkML Schema (YAML)</a>
-    <div class="count">Formal schema for natural product structures, producer claims, occurrences, BGCs, and causal graphs (<a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/src/naturalproductmech/schema/mech_shared.yaml">mech_shared.yaml</a>, <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/src/naturalproductmech/schema/history.yaml">history.yaml</a>)</div>
+    <a href="schema.html">LinkML schema reference</a>
+    <div class="count">Every class, slot and enumeration, generated from the schema for natural product structures, producer claims, occurrences, BGCs, and causal graphs (YAML: <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/src/naturalproductmech/schema/naturalproductmech.yaml">naturalproductmech.yaml</a>, <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/src/naturalproductmech/schema/mech_shared.yaml">mech_shared.yaml</a>, <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/src/naturalproductmech/schema/history.yaml">history.yaml</a>)</div>
   </div>
   <div class="card">
     <a href="https://github.com/CultureBotAI/NaturalProductMech/tree/main/data/natural_products">Curated YAML Corpus (3116 records)</a>
@@ -143,10 +165,10 @@ record.</p>
   </div>
 </div>
 
-<p class="sub">Generated from sources retrieved 2026-10-18 (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281).</p>
+<p class="sub">Generated from sources retrieved 2026-10-18 (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 8e5d64d98cfd).</p>
 </main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Corpus as of 2026-10-23 22:53 UTC. Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 8e5d64d98cfd). Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Amino acids and peptides</a> &middot; GE2270</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,22 +32,22 @@
   </form>
 </div>
 <h1>GE2270</h1>
-<p class="sub"><span class="mono">naturalproductmech:mibig-47e25f64fe</span>
+<p class="sub"><span class="mono"><a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/amino_acids_and_peptides/ge2270.yaml">naturalproductmech:mibig-47e25f64fe</a></span>
   <span class="tag">MINTED</span>
   <span class="tag">SEEDED</span>
 </p>
 <div class="note"><strong>Grounding review:</strong> No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.</div><details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/amino_acids_and_peptides/ge2270.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/amino_acids_and_peptides/ge2270.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">YMUAOVHRCGSGJV-UHFFFAOYSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">CC1=C2C(=O)NCC(=O)NC(C3=NC(=CS3)C4=NC(=CS4)C5=C(C=CC(=N5)C6=NC(=CS6)C7=NC(CO7)C(=O)N8CCCC8C(=O)N)C9=NC(=CS9)C(=O)NC(C3=NC(=C(S3)COC)C(=O)NC(C(=N2)S1)CC(=O)NC)C(C)C)C(C1=CC=CC=C1)O</td></tr>
 <tr><th>Stereochemistry</th><td>  <span class="tag weak">undefined stereocentres</span> — the InChIKey does not
   distinguish this compound from its stereoisomers</td></tr>
-<tr><th>Cross-references</th><td class="mono">pubchem:16130335</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/compound/16130335">pubchem:16130335</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Amino acids and peptides</a> —
@@ -58,50 +60,50 @@ ribosomal, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Nonomuraea sp. WU8817<br><span class="mono">NCBITaxon:653884</span></td>
+  <td>Nonomuraea sp. WU8817<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=653884">NCBITaxon:653884</a></span></td>
   <td><span class="tag causal">BGC_CHARACTERIZED</span></td>
-  <td class="mono">mibig:BGC0000604</td>
-  <td><span class="mono">PMID:19338336</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000604">mibig:BGC0000604</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/19338336/">PMID:19338336</a></span></td>
 </tr>
 <tr>
-  <td>Planobispora rosea<br><span class="mono">NCBITaxon:35762</span></td>
+  <td>Planobispora rosea<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=35762">NCBITaxon:35762</a></span></td>
   <td><span class="tag causal">BGC_CHARACTERIZED</span></td>
-  <td class="mono">mibig:BGC0001155</td>
-  <td><span class="mono">DOI:10.7164/antibiotics.44.693</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001155">mibig:BGC0001155</a></td>
+  <td><span class="mono"><a href="https://doi.org/10.7164/antibiotics.44.693">DOI:10.7164/antibiotics.44.693</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">1</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Planobispora rosea<br><span class="mono">NCBITaxon:35762</span></td>
+  <td>Planobispora rosea<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=35762">NCBITaxon:35762</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.7164/ANTIBIOTICS.44.693</td>
+  <td class="mono"><a href="https://doi.org/10.7164/ANTIBIOTICS.44.693">DOI:10.7164/ANTIBIOTICS.44.693</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">2</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0000604</td>
-  <td>Nonomuraea sp. WU8817<br><span class="mono">NCBITaxon:653884</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000604">mibig:BGC0000604</a></td>
+  <td>Nonomuraea sp. WU8817<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=653884">NCBITaxon:653884</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:FJ461359.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/FJ461359.1">genbank:FJ461359.1</a></td>
 </tr>
 <tr>
-  <td class="mono">mibig:BGC0001155</td>
-  <td>Planobispora rosea<br><span class="mono">NCBITaxon:35762</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001155">mibig:BGC0001155</a></td>
+  <td>Planobispora rosea<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=35762">NCBITaxon:35762</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:KF366381.2</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/KF366381.2">genbank:KF366381.2</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -111,27 +113,27 @@ isolation report left it.</p>
 <h2>Biosynthesis <span class="tag causal">curated</span></h2>
 <p class="sub">Written by a curator with claim-level evidence on each step; not
 derived from a source. This is what the rest of the record exists to support.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthesis steps"><table>
 <tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
 <tr>
   <td>1</td>
   <td>PbtH</td>
   <td class="mono"></td>
   <td class="mono">ungrounded &rarr; ungrounded</td>
-  <td class="mono">DOI:10.1016/j.chembiol.2013.07.005</td>
+  <td class="mono"><a href="https://doi.org/10.1016/j.chembiol.2013.07.005">DOI:10.1016/j.chembiol.2013.07.005</a></td>
 </tr>
 <tr>
   <td>2</td>
   <td>PbtG1</td>
   <td class="mono"></td>
   <td class="mono">ungrounded &rarr; ungrounded</td>
-  <td class="mono">DOI:10.1016/j.chembiol.2013.07.005</td>
+  <td class="mono"><a href="https://doi.org/10.1016/j.chembiol.2013.07.005">DOI:10.1016/j.chembiol.2013.07.005</a></td>
 </tr>
 </table></div>
 <p class="sub">Step 1: PbtH is recorded as the GE2270 maturation protein required for C-terminal amide formation. The exact substrate and product of the PbtH-associated step remain ungrounded, and no UniProtKB accession tied directly to the KF366381.2 AGY49594.1 Planobispora rosea pbtH coding sequence resolved; active Planobispora rosea WGS UniProtKB:U5Q3R1 (BOOI01000040 locus Pro02_44310) shares 100% amino-acid sequence identity (122 aa, UPI0003BC0C0E) and is recorded as a companion UniProtKB example.</p><p class="sub">Step 2: PbtG1 is recorded as the GE2270 maturation cyclodehydratase required for C-terminal oxazoline formation. The exact substrate and product of the PbtG1-associated step remain ungrounded, and no UniProtKB accession tied directly to the KF366381.2 AGY49581.1 Planobispora rosea pbtG1 coding sequence resolved; active Planobispora rosea WGS UniProtKB:U5Q0H1 (BOOI01000040 locus Pro02_44440) shares 100% amino-acid sequence identity (607 aa, UPI0003BC18A5) and is recorded as a companion UniProtKB example.</p>
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for GE2270">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for GE2270">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -164,17 +166,17 @@ derived from a source. This is what the rest of the record exists to support.</p
 </div>
 
 <h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 6 edges</span></h2>
-<p class="sub">Partial Planobispora rosea pbt-cluster graph for the PbtH- and PbtG1-associated C-terminal maturation steps required before macrocyclic GE2270 production.</p><div class="scroll"><table>
+<p class="sub">Partial Planobispora rosea pbt-cluster graph for the PbtH- and PbtG1-associated C-terminal maturation steps required before macrocyclic GE2270 production.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>PbtH</td>
   <td>participates in</td>
   <td>GE2270 C-terminal amide formation</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.chembiol.2013.07.005<br>https://www.ncbi.nlm.nih.gov/nuccore/KF366381.2<br>https://www.ncbi.nlm.nih.gov/protein/AGY49594.1<br>https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.chembiol.2013.07.005</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Tocchetti et al. expressed the Planobispora rosea pbt cluster in Nonomuraea ATCC39727 and used targeted deletions to place PbtH in C-terminal amide formation and PbtG1 in C-terminal oxazoline formation during GE2270 maturation.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/KF366381.2</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>GenBank KF366381.2 is the Planobispora rosea ATCC 53733 GE2270 biosynthesis cluster and places pbtH and pbtG1 inside the 4201..25722 MIBiG BGC0001155 locus interval.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGY49594.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>NCBI GenPept AGY49594.1 is the KF366381.2 pbtH coding sequence. UniProtKB:U5Q3R1 has the same 122 aa sequence (UPI0003BC0C0E) under EMBL BOOI01000040 and locus Pro02_44310, but is not used as direct GE2270 PbtH grounding because it does not cross-reference KF366381.2 or pbtH.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>MIBiG BGC0001155.5 assigns KF366381.2 to Planobispora rosea GE2270 biosynthesis and records knockout, enzymatic assay, and heterologous expression support for the locus.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.chembiol.2013.07.005">DOI:10.1016/j.chembiol.2013.07.005</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/KF366381.2">https://www.ncbi.nlm.nih.gov/nuccore/KF366381.2</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AGY49594.1">https://www.ncbi.nlm.nih.gov/protein/AGY49594.1</a><br><a href="https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html">https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.chembiol.2013.07.005">DOI:10.1016/j.chembiol.2013.07.005</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Tocchetti et al. expressed the Planobispora rosea pbt cluster in Nonomuraea ATCC39727 and used targeted deletions to place PbtH in C-terminal amide formation and PbtG1 in C-terminal oxazoline formation during GE2270 maturation.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/KF366381.2">https://www.ncbi.nlm.nih.gov/nuccore/KF366381.2</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>GenBank KF366381.2 is the Planobispora rosea ATCC 53733 GE2270 biosynthesis cluster and places pbtH and pbtG1 inside the 4201..25722 MIBiG BGC0001155 locus interval.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AGY49594.1">https://www.ncbi.nlm.nih.gov/protein/AGY49594.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>NCBI GenPept AGY49594.1 is the KF366381.2 pbtH coding sequence. UniProtKB:U5Q3R1 has the same 122 aa sequence (UPI0003BC0C0E) under EMBL BOOI01000040 and locus Pro02_44310, but is not used as direct GE2270 PbtH grounding because it does not cross-reference KF366381.2 or pbtH.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html">https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>MIBiG BGC0001155.5 assigns KF366381.2 to Planobispora rosea GE2270 biosynthesis and records knockout, enzymatic assay, and heterologous expression support for the locus.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -183,10 +185,10 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>participates in</td>
   <td>GE2270 C-terminal oxazoline formation</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.chembiol.2013.07.005<br>https://www.ncbi.nlm.nih.gov/nuccore/KF366381.2<br>https://www.ncbi.nlm.nih.gov/protein/AGY49581.1<br>https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.chembiol.2013.07.005</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Tocchetti et al. expressed the Planobispora rosea pbt cluster in Nonomuraea ATCC39727 and used targeted deletions to place PbtH in C-terminal amide formation and PbtG1 in C-terminal oxazoline formation during GE2270 maturation.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/KF366381.2</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>GenBank KF366381.2 is the Planobispora rosea ATCC 53733 GE2270 biosynthesis cluster and places pbtH and pbtG1 inside the 4201..25722 MIBiG BGC0001155 locus interval.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGY49581.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>NCBI GenPept AGY49581.1 is the KF366381.2 pbtG1 cyclodehydratase coding sequence. UniProtKB:U5Q0H1 has the same 607 aa sequence under EMBL BOOI01000040 and locus Pro02_44440, but is not used as exact GE2270 PbtG1 grounding because it does not cross-reference KF366381.2 or pbtG1.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>MIBiG BGC0001155.5 assigns KF366381.2 to Planobispora rosea GE2270 biosynthesis and records knockout, enzymatic assay, and heterologous expression support for the locus.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.chembiol.2013.07.005">DOI:10.1016/j.chembiol.2013.07.005</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/KF366381.2">https://www.ncbi.nlm.nih.gov/nuccore/KF366381.2</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AGY49581.1">https://www.ncbi.nlm.nih.gov/protein/AGY49581.1</a><br><a href="https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html">https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.chembiol.2013.07.005">DOI:10.1016/j.chembiol.2013.07.005</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Tocchetti et al. expressed the Planobispora rosea pbt cluster in Nonomuraea ATCC39727 and used targeted deletions to place PbtH in C-terminal amide formation and PbtG1 in C-terminal oxazoline formation during GE2270 maturation.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/KF366381.2">https://www.ncbi.nlm.nih.gov/nuccore/KF366381.2</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>GenBank KF366381.2 is the Planobispora rosea ATCC 53733 GE2270 biosynthesis cluster and places pbtH and pbtG1 inside the 4201..25722 MIBiG BGC0001155 locus interval.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AGY49581.1">https://www.ncbi.nlm.nih.gov/protein/AGY49581.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>NCBI GenPept AGY49581.1 is the KF366381.2 pbtG1 cyclodehydratase coding sequence. UniProtKB:U5Q0H1 has the same 607 aa sequence under EMBL BOOI01000040 and locus Pro02_44440, but is not used as exact GE2270 PbtG1 grounding because it does not cross-reference KF366381.2 or pbtG1.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html">https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>MIBiG BGC0001155.5 assigns KF366381.2 to Planobispora rosea GE2270 biosynthesis and records knockout, enzymatic assay, and heterologous expression support for the locus.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -195,10 +197,10 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>enables maturation of</td>
   <td>GE2270</td>
   <td>pbtH deletion accumulated linear precursors in which the pyridine-generated macrocycle failed to form.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.chembiol.2013.07.005<br>https://www.ncbi.nlm.nih.gov/nuccore/KF366381.2<br>https://www.ncbi.nlm.nih.gov/protein/AGY49594.1<br>https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.chembiol.2013.07.005</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Tocchetti et al. expressed the Planobispora rosea pbt cluster in Nonomuraea ATCC39727 and used targeted deletions to place PbtH in C-terminal amide formation and PbtG1 in C-terminal oxazoline formation during GE2270 maturation.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/KF366381.2</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>GenBank KF366381.2 is the Planobispora rosea ATCC 53733 GE2270 biosynthesis cluster and places pbtH and pbtG1 inside the 4201..25722 MIBiG BGC0001155 locus interval.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGY49594.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>NCBI GenPept AGY49594.1 is the KF366381.2 pbtH coding sequence. UniProtKB:U5Q3R1 has the same 122 aa sequence (UPI0003BC0C0E) under EMBL BOOI01000040 and locus Pro02_44310, but is not used as direct GE2270 PbtH grounding because it does not cross-reference KF366381.2 or pbtH.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>MIBiG BGC0001155.5 assigns KF366381.2 to Planobispora rosea GE2270 biosynthesis and records knockout, enzymatic assay, and heterologous expression support for the locus.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.chembiol.2013.07.005">DOI:10.1016/j.chembiol.2013.07.005</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/KF366381.2">https://www.ncbi.nlm.nih.gov/nuccore/KF366381.2</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AGY49594.1">https://www.ncbi.nlm.nih.gov/protein/AGY49594.1</a><br><a href="https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html">https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.chembiol.2013.07.005">DOI:10.1016/j.chembiol.2013.07.005</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Tocchetti et al. expressed the Planobispora rosea pbt cluster in Nonomuraea ATCC39727 and used targeted deletions to place PbtH in C-terminal amide formation and PbtG1 in C-terminal oxazoline formation during GE2270 maturation.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/KF366381.2">https://www.ncbi.nlm.nih.gov/nuccore/KF366381.2</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>GenBank KF366381.2 is the Planobispora rosea ATCC 53733 GE2270 biosynthesis cluster and places pbtH and pbtG1 inside the 4201..25722 MIBiG BGC0001155 locus interval.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AGY49594.1">https://www.ncbi.nlm.nih.gov/protein/AGY49594.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>NCBI GenPept AGY49594.1 is the KF366381.2 pbtH coding sequence. UniProtKB:U5Q3R1 has the same 122 aa sequence (UPI0003BC0C0E) under EMBL BOOI01000040 and locus Pro02_44310, but is not used as direct GE2270 PbtH grounding because it does not cross-reference KF366381.2 or pbtH.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html">https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>MIBiG BGC0001155.5 assigns KF366381.2 to Planobispora rosea GE2270 biosynthesis and records knockout, enzymatic assay, and heterologous expression support for the locus.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -207,10 +209,10 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>enables maturation of</td>
   <td>GE2270</td>
   <td>pbtG1 deletion accumulated linear precursors in which the pyridine-generated macrocycle failed to form.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.chembiol.2013.07.005<br>https://www.ncbi.nlm.nih.gov/nuccore/KF366381.2<br>https://www.ncbi.nlm.nih.gov/protein/AGY49581.1<br>https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.chembiol.2013.07.005</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Tocchetti et al. expressed the Planobispora rosea pbt cluster in Nonomuraea ATCC39727 and used targeted deletions to place PbtH in C-terminal amide formation and PbtG1 in C-terminal oxazoline formation during GE2270 maturation.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/KF366381.2</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>GenBank KF366381.2 is the Planobispora rosea ATCC 53733 GE2270 biosynthesis cluster and places pbtH and pbtG1 inside the 4201..25722 MIBiG BGC0001155 locus interval.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGY49581.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>NCBI GenPept AGY49581.1 is the KF366381.2 pbtG1 cyclodehydratase coding sequence. UniProtKB:U5Q0H1 has the same 607 aa sequence under EMBL BOOI01000040 and locus Pro02_44440, but is not used as exact GE2270 PbtG1 grounding because it does not cross-reference KF366381.2 or pbtG1.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>MIBiG BGC0001155.5 assigns KF366381.2 to Planobispora rosea GE2270 biosynthesis and records knockout, enzymatic assay, and heterologous expression support for the locus.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.chembiol.2013.07.005">DOI:10.1016/j.chembiol.2013.07.005</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/KF366381.2">https://www.ncbi.nlm.nih.gov/nuccore/KF366381.2</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AGY49581.1">https://www.ncbi.nlm.nih.gov/protein/AGY49581.1</a><br><a href="https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html">https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.chembiol.2013.07.005">DOI:10.1016/j.chembiol.2013.07.005</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Tocchetti et al. expressed the Planobispora rosea pbt cluster in Nonomuraea ATCC39727 and used targeted deletions to place PbtH in C-terminal amide formation and PbtG1 in C-terminal oxazoline formation during GE2270 maturation.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/KF366381.2">https://www.ncbi.nlm.nih.gov/nuccore/KF366381.2</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>GenBank KF366381.2 is the Planobispora rosea ATCC 53733 GE2270 biosynthesis cluster and places pbtH and pbtG1 inside the 4201..25722 MIBiG BGC0001155 locus interval.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AGY49581.1">https://www.ncbi.nlm.nih.gov/protein/AGY49581.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>NCBI GenPept AGY49581.1 is the KF366381.2 pbtG1 cyclodehydratase coding sequence. UniProtKB:U5Q0H1 has the same 607 aa sequence under EMBL BOOI01000040 and locus Pro02_44440, but is not used as exact GE2270 PbtG1 grounding because it does not cross-reference KF366381.2 or pbtG1.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html">https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>MIBiG BGC0001155.5 assigns KF366381.2 to Planobispora rosea GE2270 biosynthesis and records knockout, enzymatic assay, and heterologous expression support for the locus.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -219,9 +221,9 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>has a sequence-identical UniProtKB example</td>
   <td>PbtH (Planobispora rosea Pro02_44310 WGS UniProtKB example)</td>
   <td>UniProtKB:U5Q3R1 (Planobispora rosea WGS BOOI01000040 locus Pro02_44310) shares 100% amino-acid sequence identity (122 aa, UPI0003BC0C0E) with KF366381.2 PbtH (AGY49594.1); modeled as a separate companion example node rather than direct PbtH grounding because U5Q3R1 does not cross-reference KF366381.2.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/U5Q3R1<br>https://www.uniprot.org/uniparc/UPI0003BC0C0E<br>https://www.ncbi.nlm.nih.gov/protein/AGY49594.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/U5Q3R1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>Active Planobispora rosea UniProtKB entry (U5Q3R1, Pro02_44310) for the 122-aa UPI0003BC0C0E sequence.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniparc/UPI0003BC0C0E</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>UniParc UPI0003BC0C0E links KF366381.2 AGY49594.1 (pbtH) and active Planobispora rosea UniProtKB:U5Q3R1 under a single 100%-identical 122-aa sequence.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGY49594.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>KF366381.2 GenPept AGY49594.1 is the 122-aa Planobispora rosea PbtH coding sequence.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/U5Q3R1">https://www.uniprot.org/uniprotkb/U5Q3R1</a><br><a href="https://www.uniprot.org/uniparc/UPI0003BC0C0E">https://www.uniprot.org/uniparc/UPI0003BC0C0E</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AGY49594.1">https://www.ncbi.nlm.nih.gov/protein/AGY49594.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/U5Q3R1">https://www.uniprot.org/uniprotkb/U5Q3R1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>Active Planobispora rosea UniProtKB entry (U5Q3R1, Pro02_44310) for the 122-aa UPI0003BC0C0E sequence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniparc/UPI0003BC0C0E">https://www.uniprot.org/uniparc/UPI0003BC0C0E</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>UniParc UPI0003BC0C0E links KF366381.2 AGY49594.1 (pbtH) and active Planobispora rosea UniProtKB:U5Q3R1 under a single 100%-identical 122-aa sequence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AGY49594.1">https://www.ncbi.nlm.nih.gov/protein/AGY49594.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>KF366381.2 GenPept AGY49594.1 is the 122-aa Planobispora rosea PbtH coding sequence.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -230,9 +232,9 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>has a sequence-identical UniProtKB example</td>
   <td>PbtG1 (Planobispora rosea Pro02_44440 WGS UniProtKB example)</td>
   <td>UniProtKB:U5Q0H1 (Planobispora rosea WGS BOOI01000040 locus Pro02_44440) shares 100% amino-acid sequence identity (607 aa, UPI0003BC18A5) with KF366381.2 PbtG1 (AGY49581.1); modeled as a separate companion example node rather than direct PbtG1 grounding because U5Q0H1 does not cross-reference KF366381.2 (issue #273).</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/U5Q0H1<br>https://www.uniprot.org/uniparc/UPI0003BC18A5<br>https://www.ncbi.nlm.nih.gov/protein/AGY49581.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/U5Q0H1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>Active Planobispora rosea UniProtKB entry (U5Q0H1, Pro02_44440) for the 607-aa UPI0003BC18A5 sequence.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniparc/UPI0003BC18A5</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>UniParc UPI0003BC18A5 links KF366381.2 AGY49581.1 (pbtG1) and active Planobispora rosea UniProtKB:U5Q0H1 under a single 100%-identical 607-aa sequence.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGY49581.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>KF366381.2 GenPept AGY49581.1 is the 607-aa Planobispora rosea PbtG1 cyclodehydratase coding sequence.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/U5Q0H1">https://www.uniprot.org/uniprotkb/U5Q0H1</a><br><a href="https://www.uniprot.org/uniparc/UPI0003BC18A5">https://www.uniprot.org/uniparc/UPI0003BC18A5</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AGY49581.1">https://www.ncbi.nlm.nih.gov/protein/AGY49581.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/U5Q0H1">https://www.uniprot.org/uniprotkb/U5Q0H1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>Active Planobispora rosea UniProtKB entry (U5Q0H1, Pro02_44440) for the 607-aa UPI0003BC18A5 sequence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniparc/UPI0003BC18A5">https://www.uniprot.org/uniparc/UPI0003BC18A5</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>UniParc UPI0003BC18A5 links KF366381.2 AGY49581.1 (pbtG1) and active Planobispora rosea UniProtKB:U5Q0H1 under a single 100%-identical 607-aa sequence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AGY49581.1">https://www.ncbi.nlm.nih.gov/protein/AGY49581.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>KF366381.2 GenPept AGY49581.1 is the 607-aa Planobispora rosea PbtG1 cyclodehydratase coding sequence.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -246,28 +248,40 @@ by the corpus tests.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=YMUAOVHRCGSGJV-UHFFFAOYSA-N">AntibioticMech (GE2270) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=naturalproductmech%3Amibig-47e25f64fe">MediaIngredientMech (naturalproductmech:mibig-47e25f64fe) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A653884">TaxonMech: Nonomuraea sp. WU8817 (NCBITaxon:653884) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A35762">TaxonMech: Planobispora rosea (NCBITaxon:35762) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000604">PathwayMech (mibig:BGC0000604) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0001155">PathwayMech (mibig:BGC0001155) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A653884">TaxonMech: Nonomuraea sp. WU8817 (NCBITaxon:653884) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A35762">TaxonMech: Planobispora rosea (NCBITaxon:35762) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000604">PathwayMech (mibig:BGC0000604) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0001155">PathwayMech (mibig:BGC0001155) &nearr;</a>
 </div>
 
 <h2>Open questions <span class="tag">1</span></h2>
-<div class="note"><p><strong>shared-structure</strong> — This structure is reported by more than one MIBiG entry: BGC0000604, BGC0001155. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
+<div class="note"><p><strong>shared-structure</strong> <span class="tag">OPEN</span> <span class="tag">curation todo</span> — This structure is reported by more than one MIBiG entry: BGC0000604, BGC0001155. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
+
+<h2 id="curation-history">Curation history <span class="tag">7</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-23T10:49:07Z">2026-10-23T10:49:07Z</time> &middot; <strong>ADDED_UNIPROT_PROTEIN_EXAMPLES</strong> &middot; antigravity <span class="tag">LLM-assisted</span><p>Aligned PbtH (AGY49594.1) and PbtG1 (AGY49581.1) biosynthetic_pathway steps and causal_graphs edge notes with companion 100% sequence-identical Planobispora rosea WGS UniProtKB examples U5Q3R1 (UPI0003BC0C0E) and U5Q0H1 (UPI0003BC18A5) while preserving ungrounded KF366381.2 locus boundary per issue #273.</p></li>
+<li><time datetime="2026-10-18T03:34:14Z">2026-10-18T03:34:14Z</time> &middot; <strong>ADDED_UNIPROT_PROTEIN_EXAMPLES</strong> &middot; antigravity <span class="tag">LLM-assisted</span><p>Added companion Planobispora rosea WGS UniProtKB example nodes (U5Q3R1 via UPI0003BC0C0E for PbtH/AGY49594.1 and U5Q0H1 via UPI0003BC18A5 for PbtG1/AGY49581.1) while keeping pbth and pbtg1 ungrounded per issue #273.</p></li>
+<li><time datetime="2026-10-13T10:45:58Z">2026-10-13T10:45:58Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources<p>Seeded from the committed inventories and curation tables.</p></li>
+<li><time datetime="2026-09-28T02:49:04Z">2026-09-28T02:49:04Z</time> &middot; <strong>REVIEW_FIX</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Addressed issue #273 by documenting that UniProtKB:U5Q0H1 has the same protein sequence as AGY49581.1 but was rejected as exact GE2270 PbtG1 grounding because it is attached to BOOI01000040 and Pro02_44440 rather than KF366381.2 and pbtG1.</p></li>
+<li><time datetime="2026-09-28T02:36:05Z">2026-09-28T02:36:05Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added a Planobispora rosea GE2270 biosynthesis pathway and causal graph for PbtH-associated C-terminal amide formation and PbtG1-associated C-terminal oxazoline formation. Left both proteins without UniProtKB identifiers after exact UniProtKB searches for AGY49594, pbtH, AGY49581, and pbtG1 returned no organism-specific Planobispora entries.</p></li>
+<li><time datetime="2026-09-25T03:03:53Z">2026-09-25T03:03:53Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:16Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
 
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0000604</td><td>MIBIG</td><td>4</td></tr>
-<tr><td class="mono">BGC0001155</td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000604">BGC0000604</a></td><td>MIBIG</td><td>4</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001155">BGC0001155</a></td><td>MIBIG</td><td>5</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/amino_acids_and_peptides/ge2270.yaml">data/natural_products/amino_acids_and_peptides/ge2270.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20naturalproductmech%3Amibig-47e25f64fe&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Famino_acids_and_peptides%2Fge2270.html">Report a problem with this record</a>: opens a GitHub issue that names naturalproductmech:mibig-47e25f64fe and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Record last updated 2026-10-23 10:49 UTC, its latest curation event. Generated from the committed corpus. Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

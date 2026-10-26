@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Alkaloids</a> &middot; indolmycin</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>indolmycin</h1>
-<p class="sub"><span class="mono">naturalproductmech:mibig-3f4d7c9236</span>
+<p class="sub"><span class="mono"><a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/alkaloids/indolmycin.yaml">naturalproductmech:mibig-3f4d7c9236</a></span>
   <span class="tag">MINTED</span>
   <span class="tag">SEEDED</span>
 </p>
 <div class="note"><strong>Grounding review:</strong> No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.</div><details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/alkaloids/indolmycin.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/alkaloids/indolmycin.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">GNTVWGDQPXCYBV-QPUJVOFHSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">[H][C@](C)(C1=CNC2=CC=CC=C12)[C@@]1([H])OC(NC)=NC1=O</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">npatlas:NPA015391, pubchem:3082186</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://www.npatlas.org/explore/compounds/NPA015391">npatlas:NPA015391</a>, <a href="https://pubchem.ncbi.nlm.nih.gov/compound/3082186">pubchem:3082186</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Alkaloids</a> —
@@ -57,42 +59,42 @@ other, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Streptomyces griseus subsp. griseus<br><span class="mono">NCBITaxon:67263</span></td>
+  <td>Streptomyces griseus subsp. griseus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=67263">NCBITaxon:67263</a></span></td>
   <td><span class="tag causal">BGC_CHARACTERIZED</span></td>
-  <td class="mono">mibig:BGC0001206</td>
-  <td><span class="mono">PMID:25730866</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001206">mibig:BGC0001206</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/25730866/">PMID:25730866</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">2</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Streptomyces albus<br><span class="mono">NCBITaxon:1888</span></td>
+  <td>Streptomyces albus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1888">NCBITaxon:1888</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/JA01483A056</td>
+  <td class="mono"><a href="https://doi.org/10.1021/JA01483A056">DOI:10.1021/JA01483A056</a></td>
 </tr>
 <tr>
-  <td>Streptomyces griseus<br><span class="mono">NCBITaxon:1911</span></td>
+  <td>Streptomyces griseus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1911">NCBITaxon:1911</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1080/00021369.1978.10863158</td>
+  <td class="mono"><a href="https://doi.org/10.1080/00021369.1978.10863158">DOI:10.1080/00021369.1978.10863158</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0001206</td>
-  <td>Streptomyces griseus subsp. griseus<br><span class="mono">NCBITaxon:67263</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001206">mibig:BGC0001206</a></td>
+  <td>Streptomyces griseus subsp. griseus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=67263">NCBITaxon:67263</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:KM596502.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/KM596502.1">genbank:KM596502.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -102,20 +104,20 @@ isolation report left it.</p>
 <h2>Biosynthesis <span class="tag causal">curated</span></h2>
 <p class="sub">Written by a curator with claim-level evidence on each step; not
 derived from a source. This is what the rest of the record exists to support.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthesis steps"><table>
 <tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
 <tr>
   <td>1</td>
-  <td>Ind7 N-demethylindolmycin N-methyltransferase<br><span class="mono">UniProtKB:A0A0D4BSP3</span></td>
-  <td class="mono">RHEA:24726</td>
-  <td class="mono">ungrounded &rarr; naturalproductmech:mibig-3f4d7c9236</td>
-  <td class="mono">DOI:10.1073/pnas.1419964112</td>
+  <td>Ind7 N-demethylindolmycin N-methyltransferase<br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/A0A0D4BSP3/entry">UniProtKB:A0A0D4BSP3</a></span></td>
+  <td class="mono"><a href="https://www.rhea-db.org/rhea/24726">RHEA:24726</a></td>
+  <td class="mono">ungrounded &rarr; <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/alkaloids/indolmycin.yaml">naturalproductmech:mibig-3f4d7c9236</a></td>
+  <td class="mono"><a href="https://doi.org/10.1073/pnas.1419964112">DOI:10.1073/pnas.1419964112</a></td>
 </tr>
 </table></div>
 <p class="sub">Step 1: Ind7 catalyzes the terminal SAM-dependent N-methylation of N-demethylindolmycin to indolmycin. The immediate precursor is named in the evidence-backed notes and graph because the neutral N-demethylindolmycin structure is not grounded in the local corpus.</p>
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for indolmycin">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for indolmycin">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -148,18 +150,18 @@ derived from a source. This is what the rest of the record exists to support.</p
 </div>
 
 <h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
-<p class="sub">Partial Streptomyces griseus subsp. griseus ATCC 12648 indolmycin biosynthesis graph for the Ind7-catalyzed terminal N-methylation.</p><div class="scroll"><table>
+<p class="sub">Partial Streptomyces griseus subsp. griseus ATCC 12648 indolmycin biosynthesis graph for the Ind7-catalyzed terminal N-methylation.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>N-demethylindolmycin</td>
   <td>is N-methylated by</td>
   <td>Ind7 N-demethylindolmycin N-methyltransferase</td>
   <td>Purified Ind7 transfers a SAM methyl group onto N-demethylindolmycin in the terminal indolmycin biosynthetic step.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1073/pnas.1419964112<br>https://mite.lisc.univie.ac.at/repository/MITE0000384<br>https://www.ncbi.nlm.nih.gov/nuccore/KM596502.1<br>https://mibig.secondarymetabolites.org/repository/BGC0001206.5/BGC0001206.gbk<br>https://www.uniprot.org/uniprotkb/A0A0D4BSP3</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1073/pnas.1419964112</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>responsible for the last N-methyltransfer reaction</dd><dt>notes</dt><dd>Du et al. deleted ind7 in Streptomyces griseus subsp. griseus ATCC 12648 and observed N-demethylindolmycin accumulation, then verified in vitro that Ind7 converts N-demethylindolmycin to indolmycin.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mite.lisc.univie.ac.at/repository/MITE0000384</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>producing mature indolmycin</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MITE0000384 annotates Streptomyces griseus Ind7/A0A0D4BSP3 as a SAM-dependent N-methyltransferase, links GenPept AJT38688.1 and MIBiG BGC0001206, and records N-methylation of N-demethylindolmycin to indolmycin as its example reaction.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/KM596502.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>protein_id=&#34;AJT38688.1&#34;</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>GenBank KM596502.1 is the Streptomyces griseus subsp. griseus ATCC 12648 indolmycin cluster sequence and maps ind7 to AJT38688.1.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0001206.5/BGC0001206.gbk</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>protein_id=&#34;AJT38688.1&#34;</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MIBiG BGC0001206.5 maps the ind7 CDS to GenPept AJT38688.1 in the indolmycin cluster.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A0D4BSP3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>GN=ind7</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>Current reviewed UniProtKB:A0A0D4BSP3 resolves as the 237 aa Streptomyces griseus Ind7 N-demethylindolmycin N-methyltransferase and cross-references EMBL KM596502 protein AJT38688.1.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1073/pnas.1419964112">DOI:10.1073/pnas.1419964112</a><br><a href="https://mite.lisc.univie.ac.at/repository/MITE0000384">https://mite.lisc.univie.ac.at/repository/MITE0000384</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/KM596502.1">https://www.ncbi.nlm.nih.gov/nuccore/KM596502.1</a><br><a href="https://mibig.secondarymetabolites.org/repository/BGC0001206.5/BGC0001206.gbk">https://mibig.secondarymetabolites.org/repository/BGC0001206.5/BGC0001206.gbk</a><br><a href="https://www.uniprot.org/uniprotkb/A0A0D4BSP3">https://www.uniprot.org/uniprotkb/A0A0D4BSP3</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1073/pnas.1419964112">DOI:10.1073/pnas.1419964112</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>responsible for the last N-methyltransfer reaction</dd><dt>notes</dt><dd>Du et al. deleted ind7 in Streptomyces griseus subsp. griseus ATCC 12648 and observed N-demethylindolmycin accumulation, then verified in vitro that Ind7 converts N-demethylindolmycin to indolmycin.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mite.lisc.univie.ac.at/repository/MITE0000384">https://mite.lisc.univie.ac.at/repository/MITE0000384</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>producing mature indolmycin</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MITE0000384 annotates Streptomyces griseus Ind7/A0A0D4BSP3 as a SAM-dependent N-methyltransferase, links GenPept AJT38688.1 and MIBiG BGC0001206, and records N-methylation of N-demethylindolmycin to indolmycin as its example reaction.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/KM596502.1">https://www.ncbi.nlm.nih.gov/nuccore/KM596502.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>protein_id=&#34;AJT38688.1&#34;</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>GenBank KM596502.1 is the Streptomyces griseus subsp. griseus ATCC 12648 indolmycin cluster sequence and maps ind7 to AJT38688.1.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/repository/BGC0001206.5/BGC0001206.gbk">https://mibig.secondarymetabolites.org/repository/BGC0001206.5/BGC0001206.gbk</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>protein_id=&#34;AJT38688.1&#34;</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MIBiG BGC0001206.5 maps the ind7 CDS to GenPept AJT38688.1 in the indolmycin cluster.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0A0D4BSP3">https://www.uniprot.org/uniprotkb/A0A0D4BSP3</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>GN=ind7</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>Current reviewed UniProtKB:A0A0D4BSP3 resolves as the 237 aa Streptomyces griseus Ind7 N-demethylindolmycin N-methyltransferase and cross-references EMBL KM596502 protein AJT38688.1.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -168,11 +170,11 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>forms</td>
   <td>indolmycin</td>
   <td>The native ind7 knockout accumulates N-demethylindolmycin and cannot produce mature indolmycin.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1073/pnas.1419964112<br>https://mite.lisc.univie.ac.at/repository/MITE0000384<br>https://www.ncbi.nlm.nih.gov/nuccore/KM596502.1<br>https://mibig.secondarymetabolites.org/repository/BGC0001206.5/BGC0001206.gbk<br>https://www.uniprot.org/uniprotkb/A0A0D4BSP3</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1073/pnas.1419964112</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>responsible for the last N-methyltransfer reaction</dd><dt>notes</dt><dd>Du et al. deleted ind7 in Streptomyces griseus subsp. griseus ATCC 12648 and observed N-demethylindolmycin accumulation, then verified in vitro that Ind7 converts N-demethylindolmycin to indolmycin.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mite.lisc.univie.ac.at/repository/MITE0000384</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>producing mature indolmycin</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MITE0000384 annotates Streptomyces griseus Ind7/A0A0D4BSP3 as a SAM-dependent N-methyltransferase, links GenPept AJT38688.1 and MIBiG BGC0001206, and records N-methylation of N-demethylindolmycin to indolmycin as its example reaction.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/KM596502.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>protein_id=&#34;AJT38688.1&#34;</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>GenBank KM596502.1 is the Streptomyces griseus subsp. griseus ATCC 12648 indolmycin cluster sequence and maps ind7 to AJT38688.1.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0001206.5/BGC0001206.gbk</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>protein_id=&#34;AJT38688.1&#34;</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MIBiG BGC0001206.5 maps the ind7 CDS to GenPept AJT38688.1 in the indolmycin cluster.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A0D4BSP3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>GN=ind7</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>Current reviewed UniProtKB:A0A0D4BSP3 resolves as the 237 aa Streptomyces griseus Ind7 N-demethylindolmycin N-methyltransferase and cross-references EMBL KM596502 protein AJT38688.1.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1073/pnas.1419964112">DOI:10.1073/pnas.1419964112</a><br><a href="https://mite.lisc.univie.ac.at/repository/MITE0000384">https://mite.lisc.univie.ac.at/repository/MITE0000384</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/KM596502.1">https://www.ncbi.nlm.nih.gov/nuccore/KM596502.1</a><br><a href="https://mibig.secondarymetabolites.org/repository/BGC0001206.5/BGC0001206.gbk">https://mibig.secondarymetabolites.org/repository/BGC0001206.5/BGC0001206.gbk</a><br><a href="https://www.uniprot.org/uniprotkb/A0A0D4BSP3">https://www.uniprot.org/uniprotkb/A0A0D4BSP3</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1073/pnas.1419964112">DOI:10.1073/pnas.1419964112</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>responsible for the last N-methyltransfer reaction</dd><dt>notes</dt><dd>Du et al. deleted ind7 in Streptomyces griseus subsp. griseus ATCC 12648 and observed N-demethylindolmycin accumulation, then verified in vitro that Ind7 converts N-demethylindolmycin to indolmycin.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mite.lisc.univie.ac.at/repository/MITE0000384">https://mite.lisc.univie.ac.at/repository/MITE0000384</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>producing mature indolmycin</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MITE0000384 annotates Streptomyces griseus Ind7/A0A0D4BSP3 as a SAM-dependent N-methyltransferase, links GenPept AJT38688.1 and MIBiG BGC0001206, and records N-methylation of N-demethylindolmycin to indolmycin as its example reaction.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/KM596502.1">https://www.ncbi.nlm.nih.gov/nuccore/KM596502.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>protein_id=&#34;AJT38688.1&#34;</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>GenBank KM596502.1 is the Streptomyces griseus subsp. griseus ATCC 12648 indolmycin cluster sequence and maps ind7 to AJT38688.1.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/repository/BGC0001206.5/BGC0001206.gbk">https://mibig.secondarymetabolites.org/repository/BGC0001206.5/BGC0001206.gbk</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>protein_id=&#34;AJT38688.1&#34;</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MIBiG BGC0001206.5 maps the ind7 CDS to GenPept AJT38688.1 in the indolmycin cluster.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0A0D4BSP3">https://www.uniprot.org/uniprotkb/A0A0D4BSP3</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>GN=ind7</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>Current reviewed UniProtKB:A0A0D4BSP3 resolves as the 237 aa Streptomyces griseus Ind7 N-demethylindolmycin N-methyltransferase and cross-references EMBL KM596502 protein AJT38688.1.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -180,16 +182,16 @@ derived from a source. This is what the rest of the record exists to support.</p
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">8 nodes, 7 edges</span></h2>
-<p class="sub">Native ATCC 12648 Ind1 and Ind2 references support a database-annotated precursor branch. C-methylation and NADH-dependent reduction are separate processes; the downstream connection to indolmycin is multistep and inferred. The primary study was not newly inspected in full, and ring assembly is not represented by these edges.</p><div class="scroll"><table>
+<p class="sub">Native ATCC 12648 Ind1 and Ind2 references support a database-annotated precursor branch. C-methylation and NADH-dependent reduction are separate processes; the downstream connection to indolmycin is multistep and inferred. The primary study was not newly inspected in full, and ring assembly is not represented by these edges.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 2 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>Ind1 native C-methyltransferase</td>
   <td>is annotated to catalyze</td>
   <td>Annotated indolepyruvate C-methylation</td>
   <td>Database-supported biosynthetic role, not a newly inspected primary experiment. No exact recombinant construct, kinetics, knockout phenotype or physiological sufficiency is asserted.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0A0D4BS77/entry<br>https://www.ncbi.nlm.nih.gov/nuccore/KM596502.1<br>https://www.ncbi.nlm.nih.gov/protein/AJT38682.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A0D4BS77/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Reviewed entry version 27, sequence version 1. FUNCTION assigns SAM-dependent side-chain C-methylation of indolepyruvate in indolmycin biosynthesis.</dd><dt>snippet</dt><dd>to yield 3-methylindolepyruvate</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/KM596502.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native indolmycin cluster maps ind1 to AJT38682.1, KM596502.1:2494..3483, 329 aa. CDS-aware genetic-code-11 translation agrees with the deposited CDS, independently fetched GenPept and direct UniProt sequences. The native source is Streptomyces griseus subsp. griseus ATCC 12648, taxon 67263.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AJT38682.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Versioned native ind1 protein. UniProt uses species taxon 1911, retains the ATCC 12648 nucleotide-reference attribution, and cross-references KM596502/AJT38682.1. This is native sequence identity, not independent verification of a recombinant assay construct.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/A0A0D4BS77/entry">https://www.uniprot.org/uniprotkb/A0A0D4BS77/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/KM596502.1">https://www.ncbi.nlm.nih.gov/nuccore/KM596502.1</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AJT38682.1">https://www.ncbi.nlm.nih.gov/protein/AJT38682.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0A0D4BS77/entry">https://www.uniprot.org/uniprotkb/A0A0D4BS77/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Reviewed entry version 27, sequence version 1. FUNCTION assigns SAM-dependent side-chain C-methylation of indolepyruvate in indolmycin biosynthesis.</dd><dt>snippet</dt><dd>to yield 3-methylindolepyruvate</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/KM596502.1">https://www.ncbi.nlm.nih.gov/nuccore/KM596502.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native indolmycin cluster maps ind1 to AJT38682.1, KM596502.1:2494..3483, 329 aa. CDS-aware genetic-code-11 translation agrees with the deposited CDS, independently fetched GenPept and direct UniProt sequences. The native source is Streptomyces griseus subsp. griseus ATCC 12648, taxon 67263.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AJT38682.1">https://www.ncbi.nlm.nih.gov/protein/AJT38682.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Versioned native ind1 protein. UniProt uses species taxon 1911, retains the ATCC 12648 nucleotide-reference attribution, and cross-references KM596502/AJT38682.1. This is native sequence identity, not independent verification of a recombinant assay construct.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -198,7 +200,7 @@ by the corpus tests.</p>
   <td>is the annotated substrate of</td>
   <td>Annotated indolepyruvate C-methylation</td>
   <td>The database-named intermediate remains ungrounded: no exact chemical identifier, protonation, tautomer or stereochemical mapping is adopted.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0A0D4BS77/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A0D4BS77/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Reviewed entry version 27, sequence version 1. FUNCTION names (indol-3-yl)pyruvate as the methyl acceptor; S-adenosyl-L-methionine supplies the methyl group.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/A0A0D4BS77/entry">https://www.uniprot.org/uniprotkb/A0A0D4BS77/entry</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0A0D4BS77/entry">https://www.uniprot.org/uniprotkb/A0A0D4BS77/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Reviewed entry version 27, sequence version 1. FUNCTION names (indol-3-yl)pyruvate as the methyl acceptor; S-adenosyl-L-methionine supplies the methyl group.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -207,7 +209,7 @@ by the corpus tests.</p>
   <td>yields the annotated product</td>
   <td>Methylindolepyruvate (database intermediate)</td>
   <td>The database-named intermediate remains ungrounded: no exact chemical identifier, protonation, tautomer or stereochemical mapping is adopted.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0A0D4BS77/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A0D4BS77/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Reviewed entry version 27, sequence version 1. FUNCTION names 3-methylindolepyruvate as the product. The Ind1 and Ind2 catalytic annotations reference the same methylated substrate/product entity; the graph uses a shared ungrounded name, not an independently audited exact chemical CURIE.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/A0A0D4BS77/entry">https://www.uniprot.org/uniprotkb/A0A0D4BS77/entry</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0A0D4BS77/entry">https://www.uniprot.org/uniprotkb/A0A0D4BS77/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Reviewed entry version 27, sequence version 1. FUNCTION names 3-methylindolepyruvate as the product. The Ind1 and Ind2 catalytic annotations reference the same methylated substrate/product entity; the graph uses a shared ungrounded name, not an independently audited exact chemical CURIE.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -216,9 +218,9 @@ by the corpus tests.</p>
   <td>is annotated to catalyze</td>
   <td>Annotated NADH-dependent reduction</td>
   <td>Database-supported biosynthetic role, not a newly inspected primary experiment. No exact recombinant construct, kinetics, knockout phenotype or physiological sufficiency is asserted. The by-similarity active-site annotation is not experimental mutagenesis evidence.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry<br>https://www.ncbi.nlm.nih.gov/nuccore/KM596502.1<br>https://www.ncbi.nlm.nih.gov/protein/AJT38683.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Reviewed entry version 25, sequence version 1. FUNCTION assigns NADH-dependent reduction of beta-methylindolepyruvate in indolmycin biosynthesis.</dd><dt>snippet</dt><dd>Catalyzes the NADH-dependent reduction of beta-methylindolepyruvate to yield indolmycenate</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/KM596502.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native indolmycin cluster maps ind2 to AJT38683.1, KM596502.1:3480..5192, 570 aa. CDS-aware genetic-code-11 translation agrees with the deposited CDS, independently fetched GenPept and direct UniProt sequences. The native source is Streptomyces griseus subsp. griseus ATCC 12648, taxon 67263.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AJT38683.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Versioned native ind2 protein. UniProt uses species taxon 1911, retains the ATCC 12648 nucleotide-reference attribution, and cross-references KM596502/AJT38683.1. This is native sequence identity, not independent verification of a recombinant assay construct.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry">https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/KM596502.1">https://www.ncbi.nlm.nih.gov/nuccore/KM596502.1</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AJT38683.1">https://www.ncbi.nlm.nih.gov/protein/AJT38683.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry">https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Reviewed entry version 25, sequence version 1. FUNCTION assigns NADH-dependent reduction of beta-methylindolepyruvate in indolmycin biosynthesis.</dd><dt>snippet</dt><dd>Catalyzes the NADH-dependent reduction of beta-methylindolepyruvate to yield indolmycenate</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/KM596502.1">https://www.ncbi.nlm.nih.gov/nuccore/KM596502.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native indolmycin cluster maps ind2 to AJT38683.1, KM596502.1:3480..5192, 570 aa. CDS-aware genetic-code-11 translation agrees with the deposited CDS, independently fetched GenPept and direct UniProt sequences. The native source is Streptomyces griseus subsp. griseus ATCC 12648, taxon 67263.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AJT38683.1">https://www.ncbi.nlm.nih.gov/protein/AJT38683.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Versioned native ind2 protein. UniProt uses species taxon 1911, retains the ATCC 12648 nucleotide-reference attribution, and cross-references KM596502/AJT38683.1. This is native sequence identity, not independent verification of a recombinant assay construct.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -227,7 +229,7 @@ by the corpus tests.</p>
   <td>is the annotated substrate of</td>
   <td>Annotated NADH-dependent reduction</td>
   <td>The database-named intermediate remains ungrounded: no exact chemical identifier, protonation, tautomer or stereochemical mapping is adopted.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Reviewed entry version 25, sequence version 1. FUNCTION names beta-methylindolepyruvate as the substrate. The reduction direction follows FUNCTION; the displayed Rhea equation is written in the opposite oxidation direction and is not copied as a biosynthetic direction.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry">https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry">https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Reviewed entry version 25, sequence version 1. FUNCTION names beta-methylindolepyruvate as the substrate. The reduction direction follows FUNCTION; the displayed Rhea equation is written in the opposite oxidation direction and is not copied as a biosynthetic direction.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -236,7 +238,7 @@ by the corpus tests.</p>
   <td>yields the annotated product</td>
   <td>Indolmycenate (database product)</td>
   <td>The database-named intermediate remains ungrounded: no exact chemical identifier, protonation, tautomer or stereochemical mapping is adopted.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Reviewed entry version 25, sequence version 1. FUNCTION names indolmycenate as the reduction product. No exact Rhea reaction or intermediate chemical identifier is adopted.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry">https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry">https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Reviewed entry version 25, sequence version 1. FUNCTION names indolmycenate as the reduction product. No exact Rhea reaction or intermediate chemical identifier is adopted.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -245,7 +247,7 @@ by the corpus tests.</p>
   <td>is inferred to feed downstream biosynthesis of</td>
   <td>indolmycin</td>
   <td>Indolmycenate is not indolmycin. This edge does not assert ring closure, final methylation, sufficiency of Ind1/Ind2 or a fully reconstructed pathway.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Reviewed entry version 25, sequence version 1. FUNCTION places the indolmycenate-forming reaction in indolmycin biosynthesis. The curator represents a multistep downstream relationship, not a direct Ind2-to-final-product reaction.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry">https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry">https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Reviewed entry version 25, sequence version 1. FUNCTION places the indolmycenate-forming reaction in indolmycin biosynthesis. The curator represents a multistep downstream relationship, not a direct Ind2-to-final-product reaction.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -253,16 +255,16 @@ by the corpus tests.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">13 nodes, 13 edges</span></h2>
-<p class="sub">Native sequence references are mapped by inference into the reported engineered expression context. Whole-cell production and subsequent non-enzymatic completion remain separate from individual enzyme activity. This graph does not change the structure&#39;s natural-product origin or add a natural E. coli producer claim.</p><div class="scroll"><table>
+<p class="sub">Native sequence references are mapped by inference into the reported engineered expression context. Whole-cell production and subsequent non-enzymatic completion remain separate from individual enzyme activity. This graph does not change the structure&#39;s natural-product origin or add a natural E. coli producer claim.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 3 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>Ind0 native reference</td>
   <td>is the native reference inferred for a product encoded in</td>
   <td>E. coli I1234670P5 expression platform</td>
   <td>This links a sequence reference to a named expression-platform gene. It does not establish the complete plasmid/fusion sequence, protein abundance, individual necessity, purified activity or substrate specificity. Methods, constructs and figure pixels remain uninspected; the native accession is not presented as the experimentally sequenced recombinant protein.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1039/d0sc05843b<br>https://www.uniprot.org/uniprotkb/A0A0D4BSA1/entry<br>https://www.ncbi.nlm.nih.gov/protein/AJT38681.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1039/d0sc05843b</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The reported platform includes ind0. Correspondence to this native sequence is a curator inference.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A0D4BSA1/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Unreviewed entry version 33, sequence version 1; 321 aa, ind0, KM596502/AJT38681.1. The nucleotide reference names ATCC 12648. Species taxon 1911 on reviewed entries and native subspecies taxon 67263 are retained without conflation.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AJT38681.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native complement(KM596502.1:862..1827), ATCC 12648, taxon 67263. CDS-aware code-11 translation, deposited CDS, GenPept and UniProt sequences agree. The snippet is the deposited product label, not an experimental functional assignment.</dd><dt>snippet</dt><dd>Ind0</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1039/d0sc05843b">DOI:10.1039/d0sc05843b</a><br><a href="https://www.uniprot.org/uniprotkb/A0A0D4BSA1/entry">https://www.uniprot.org/uniprotkb/A0A0D4BSA1/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AJT38681.1">https://www.ncbi.nlm.nih.gov/protein/AJT38681.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1039/d0sc05843b">DOI:10.1039/d0sc05843b</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The reported platform includes ind0. Correspondence to this native sequence is a curator inference.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0A0D4BSA1/entry">https://www.uniprot.org/uniprotkb/A0A0D4BSA1/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Unreviewed entry version 33, sequence version 1; 321 aa, ind0, KM596502/AJT38681.1. The nucleotide reference names ATCC 12648. Species taxon 1911 on reviewed entries and native subspecies taxon 67263 are retained without conflation.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AJT38681.1">https://www.ncbi.nlm.nih.gov/protein/AJT38681.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native complement(KM596502.1:862..1827), ATCC 12648, taxon 67263. CDS-aware code-11 translation, deposited CDS, GenPept and UniProt sequences agree. The snippet is the deposited product label, not an experimental functional assignment.</dd><dt>snippet</dt><dd>Ind0</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -271,9 +273,9 @@ by the corpus tests.</p>
   <td>is the native reference inferred for a product encoded in</td>
   <td>E. coli I1234670P5 expression platform</td>
   <td>This links a sequence reference to a named expression-platform gene. It does not establish the complete plasmid/fusion sequence, protein abundance, individual necessity, purified activity or substrate specificity. Methods, constructs and figure pixels remain uninspected; the native accession is not presented as the experimentally sequenced recombinant protein.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1039/d0sc05843b<br>https://www.uniprot.org/uniprotkb/A0A0D4BS77/entry<br>https://www.ncbi.nlm.nih.gov/protein/AJT38682.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1039/d0sc05843b</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The reported platform includes ind1. Correspondence to this native sequence is a curator inference.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A0D4BS77/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Reviewed entry version 27, sequence version 1; 329 aa, ind1, KM596502/AJT38682.1. The nucleotide reference names ATCC 12648. Species taxon 1911 on reviewed entries and native subspecies taxon 67263 are retained without conflation.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AJT38682.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native KM596502.1:2494..3483, ATCC 12648, taxon 67263. CDS-aware code-11 translation, deposited CDS, GenPept and UniProt sequences agree. The snippet is the deposited product label, not an experimental functional assignment.</dd><dt>snippet</dt><dd>Ind1</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1039/d0sc05843b">DOI:10.1039/d0sc05843b</a><br><a href="https://www.uniprot.org/uniprotkb/A0A0D4BS77/entry">https://www.uniprot.org/uniprotkb/A0A0D4BS77/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AJT38682.1">https://www.ncbi.nlm.nih.gov/protein/AJT38682.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1039/d0sc05843b">DOI:10.1039/d0sc05843b</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The reported platform includes ind1. Correspondence to this native sequence is a curator inference.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0A0D4BS77/entry">https://www.uniprot.org/uniprotkb/A0A0D4BS77/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Reviewed entry version 27, sequence version 1; 329 aa, ind1, KM596502/AJT38682.1. The nucleotide reference names ATCC 12648. Species taxon 1911 on reviewed entries and native subspecies taxon 67263 are retained without conflation.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AJT38682.1">https://www.ncbi.nlm.nih.gov/protein/AJT38682.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native KM596502.1:2494..3483, ATCC 12648, taxon 67263. CDS-aware code-11 translation, deposited CDS, GenPept and UniProt sequences agree. The snippet is the deposited product label, not an experimental functional assignment.</dd><dt>snippet</dt><dd>Ind1</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -282,9 +284,9 @@ by the corpus tests.</p>
   <td>is the native reference inferred for a product encoded in</td>
   <td>E. coli I1234670P5 expression platform</td>
   <td>This links a sequence reference to a named expression-platform gene. It does not establish the complete plasmid/fusion sequence, protein abundance, individual necessity, purified activity or substrate specificity. Methods, constructs and figure pixels remain uninspected; the native accession is not presented as the experimentally sequenced recombinant protein.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1039/d0sc05843b<br>https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry<br>https://www.ncbi.nlm.nih.gov/protein/AJT38683.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1039/d0sc05843b</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The reported platform includes ind2. Correspondence to this native sequence is a curator inference.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Reviewed entry version 25, sequence version 1; 570 aa, ind2, KM596502/AJT38683.1. The nucleotide reference names ATCC 12648. Species taxon 1911 on reviewed entries and native subspecies taxon 67263 are retained without conflation.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AJT38683.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native KM596502.1:3480..5192, ATCC 12648, taxon 67263. CDS-aware code-11 translation, deposited CDS, GenPept and UniProt sequences agree. The snippet is the deposited product label, not an experimental functional assignment.</dd><dt>snippet</dt><dd>Ind2</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1039/d0sc05843b">DOI:10.1039/d0sc05843b</a><br><a href="https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry">https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AJT38683.1">https://www.ncbi.nlm.nih.gov/protein/AJT38683.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1039/d0sc05843b">DOI:10.1039/d0sc05843b</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The reported platform includes ind2. Correspondence to this native sequence is a curator inference.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry">https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Reviewed entry version 25, sequence version 1; 570 aa, ind2, KM596502/AJT38683.1. The nucleotide reference names ATCC 12648. Species taxon 1911 on reviewed entries and native subspecies taxon 67263 are retained without conflation.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AJT38683.1">https://www.ncbi.nlm.nih.gov/protein/AJT38683.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native KM596502.1:3480..5192, ATCC 12648, taxon 67263. CDS-aware code-11 translation, deposited CDS, GenPept and UniProt sequences agree. The snippet is the deposited product label, not an experimental functional assignment.</dd><dt>snippet</dt><dd>Ind2</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -293,9 +295,9 @@ by the corpus tests.</p>
   <td>is the native reference inferred for a product encoded in</td>
   <td>E. coli I1234670P5 expression platform</td>
   <td>This links a sequence reference to a named expression-platform gene. It does not establish the complete plasmid/fusion sequence, protein abundance, individual necessity, purified activity or substrate specificity. Methods, constructs and figure pixels remain uninspected; the native accession is not presented as the experimentally sequenced recombinant protein.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1039/d0sc05843b<br>https://www.uniprot.org/uniprotkb/A0A0D4BST1/entry<br>https://www.ncbi.nlm.nih.gov/protein/AJT38684.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1039/d0sc05843b</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The reported platform includes ind3. Correspondence to this native sequence is a curator inference.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A0D4BST1/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Unreviewed entry version 25, sequence version 1; 452 aa, ind3, KM596502/AJT38684.1. The nucleotide reference names ATCC 12648. Species taxon 1911 on reviewed entries and native subspecies taxon 67263 are retained without conflation.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AJT38684.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native KM596502.1:5189..6547, ATCC 12648, taxon 67263. CDS-aware code-11 translation, deposited CDS, GenPept and UniProt sequences agree. The snippet is the deposited product label, not an experimental functional assignment.</dd><dt>snippet</dt><dd>Ind3</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1039/d0sc05843b">DOI:10.1039/d0sc05843b</a><br><a href="https://www.uniprot.org/uniprotkb/A0A0D4BST1/entry">https://www.uniprot.org/uniprotkb/A0A0D4BST1/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AJT38684.1">https://www.ncbi.nlm.nih.gov/protein/AJT38684.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1039/d0sc05843b">DOI:10.1039/d0sc05843b</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The reported platform includes ind3. Correspondence to this native sequence is a curator inference.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0A0D4BST1/entry">https://www.uniprot.org/uniprotkb/A0A0D4BST1/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Unreviewed entry version 25, sequence version 1; 452 aa, ind3, KM596502/AJT38684.1. The nucleotide reference names ATCC 12648. Species taxon 1911 on reviewed entries and native subspecies taxon 67263 are retained without conflation.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AJT38684.1">https://www.ncbi.nlm.nih.gov/protein/AJT38684.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native KM596502.1:5189..6547, ATCC 12648, taxon 67263. CDS-aware code-11 translation, deposited CDS, GenPept and UniProt sequences agree. The snippet is the deposited product label, not an experimental functional assignment.</dd><dt>snippet</dt><dd>Ind3</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -304,9 +306,9 @@ by the corpus tests.</p>
   <td>is the native reference inferred for a product encoded in</td>
   <td>E. coli I1234670P5 expression platform</td>
   <td>This links a sequence reference to a named expression-platform gene. It does not establish the complete plasmid/fusion sequence, protein abundance, individual necessity, purified activity or substrate specificity. Methods, constructs and figure pixels remain uninspected; the native accession is not presented as the experimentally sequenced recombinant protein.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1039/d0sc05843b<br>https://www.uniprot.org/uniprotkb/A0A0D4BS17/entry<br>https://www.ncbi.nlm.nih.gov/protein/AJT38685.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1039/d0sc05843b</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The reported platform includes ind4. Correspondence to this native sequence is a curator inference.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A0D4BS17/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Unreviewed entry version 32, sequence version 1; 383 aa, ind4, KM596502/AJT38685.1. The nucleotide reference names ATCC 12648. Species taxon 1911 on reviewed entries and native subspecies taxon 67263 are retained without conflation.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AJT38685.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native KM596502.1:6604..7755, ATCC 12648, taxon 67263. CDS-aware code-11 translation, deposited CDS, GenPept and UniProt sequences agree. The snippet is the deposited product label, not an experimental functional assignment.</dd><dt>snippet</dt><dd>Ind4</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1039/d0sc05843b">DOI:10.1039/d0sc05843b</a><br><a href="https://www.uniprot.org/uniprotkb/A0A0D4BS17/entry">https://www.uniprot.org/uniprotkb/A0A0D4BS17/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AJT38685.1">https://www.ncbi.nlm.nih.gov/protein/AJT38685.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1039/d0sc05843b">DOI:10.1039/d0sc05843b</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The reported platform includes ind4. Correspondence to this native sequence is a curator inference.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0A0D4BS17/entry">https://www.uniprot.org/uniprotkb/A0A0D4BS17/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Unreviewed entry version 32, sequence version 1; 383 aa, ind4, KM596502/AJT38685.1. The nucleotide reference names ATCC 12648. Species taxon 1911 on reviewed entries and native subspecies taxon 67263 are retained without conflation.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AJT38685.1">https://www.ncbi.nlm.nih.gov/protein/AJT38685.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native KM596502.1:6604..7755, ATCC 12648, taxon 67263. CDS-aware code-11 translation, deposited CDS, GenPept and UniProt sequences agree. The snippet is the deposited product label, not an experimental functional assignment.</dd><dt>snippet</dt><dd>Ind4</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -315,9 +317,9 @@ by the corpus tests.</p>
   <td>is the native reference inferred for a product encoded in</td>
   <td>E. coli I1234670P5 expression platform</td>
   <td>This links a sequence reference to a named expression-platform gene. It does not establish the complete plasmid/fusion sequence, protein abundance, individual necessity, purified activity or substrate specificity. Methods, constructs and figure pixels remain uninspected; the native accession is not presented as the experimentally sequenced recombinant protein.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1039/d0sc05843b<br>https://www.uniprot.org/uniprotkb/A0A0D4BS80/entry<br>https://www.ncbi.nlm.nih.gov/protein/AJT38687.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1039/d0sc05843b</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The reported platform includes ind6. Correspondence to this native sequence is a curator inference.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A0D4BS80/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Unreviewed entry version 14, sequence version 1; 229 aa, ind6, KM596502/AJT38687.1. The nucleotide reference names ATCC 12648. Species taxon 1911 on reviewed entries and native subspecies taxon 67263 are retained without conflation.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AJT38687.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native KM596502.1:8698..9387, ATCC 12648, taxon 67263. CDS-aware code-11 translation, deposited CDS, GenPept and UniProt sequences agree. The snippet is the deposited product label, not an experimental functional assignment.</dd><dt>snippet</dt><dd>Ind6</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1039/d0sc05843b">DOI:10.1039/d0sc05843b</a><br><a href="https://www.uniprot.org/uniprotkb/A0A0D4BS80/entry">https://www.uniprot.org/uniprotkb/A0A0D4BS80/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AJT38687.1">https://www.ncbi.nlm.nih.gov/protein/AJT38687.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1039/d0sc05843b">DOI:10.1039/d0sc05843b</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The reported platform includes ind6. Correspondence to this native sequence is a curator inference.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0A0D4BS80/entry">https://www.uniprot.org/uniprotkb/A0A0D4BS80/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Unreviewed entry version 14, sequence version 1; 229 aa, ind6, KM596502/AJT38687.1. The nucleotide reference names ATCC 12648. Species taxon 1911 on reviewed entries and native subspecies taxon 67263 are retained without conflation.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AJT38687.1">https://www.ncbi.nlm.nih.gov/protein/AJT38687.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native KM596502.1:8698..9387, ATCC 12648, taxon 67263. CDS-aware code-11 translation, deposited CDS, GenPept and UniProt sequences agree. The snippet is the deposited product label, not an experimental functional assignment.</dd><dt>snippet</dt><dd>Ind6</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -326,9 +328,9 @@ by the corpus tests.</p>
   <td>is the native reference inferred for a product encoded in</td>
   <td>E. coli I1234670P5 expression platform</td>
   <td>This links a sequence reference to a named expression-platform gene. It does not establish the complete plasmid/fusion sequence, protein abundance, individual necessity, purified activity or substrate specificity. Methods, constructs and figure pixels remain uninspected; the native accession is not presented as the experimentally sequenced recombinant protein.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1039/d0sc05843b<br>https://www.uniprot.org/uniprotkb/A0A0D4BSP3/entry<br>https://www.ncbi.nlm.nih.gov/protein/AJT38688.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1039/d0sc05843b</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The reported platform includes ind7. Correspondence to this native sequence is a curator inference.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A0D4BSP3/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Reviewed entry version 28, sequence version 1; 237 aa, ind7, KM596502/AJT38688.1. The nucleotide reference names ATCC 12648. Species taxon 1911 on reviewed entries and native subspecies taxon 67263 are retained without conflation.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AJT38688.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native KM596502.1:9353..10066, ATCC 12648, taxon 67263. CDS-aware code-11 translation, deposited CDS, GenPept and UniProt sequences agree. The snippet is the deposited product label, not an experimental functional assignment.</dd><dt>snippet</dt><dd>Ind7</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1039/d0sc05843b">DOI:10.1039/d0sc05843b</a><br><a href="https://www.uniprot.org/uniprotkb/A0A0D4BSP3/entry">https://www.uniprot.org/uniprotkb/A0A0D4BSP3/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AJT38688.1">https://www.ncbi.nlm.nih.gov/protein/AJT38688.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1039/d0sc05843b">DOI:10.1039/d0sc05843b</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The reported platform includes ind7. Correspondence to this native sequence is a curator inference.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0A0D4BSP3/entry">https://www.uniprot.org/uniprotkb/A0A0D4BSP3/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Reviewed entry version 28, sequence version 1; 237 aa, ind7, KM596502/AJT38688.1. The nucleotide reference names ATCC 12648. Species taxon 1911 on reviewed entries and native subspecies taxon 67263 are retained without conflation.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AJT38688.1">https://www.ncbi.nlm.nih.gov/protein/AJT38688.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native KM596502.1:9353..10066, ATCC 12648, taxon 67263. CDS-aware code-11 translation, deposited CDS, GenPept and UniProt sequences agree. The snippet is the deposited product label, not an experimental functional assignment.</dd><dt>snippet</dt><dd>Ind7</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -337,7 +339,7 @@ by the corpus tests.</p>
   <td>was represented by its gene in</td>
   <td>E. coli I1234670P5 expression platform</td>
   <td>Paper-named protein only; exact accession and construct are unresolved. Do not substitute Streptomyces Ind5, Bsp5, or the unrelated pectate lyases returned by the bounded UniProt gene-name query. Gene inclusion is not a protein-abundance measurement.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1039/d0sc05843b</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1039/d0sc05843b</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The platform uses P. elgii B69 pel5 in place of native ind5.</dd><dt>snippet</dt><dd>from Paenibacillus elgii B69</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1039/d0sc05843b">DOI:10.1039/d0sc05843b</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1039/d0sc05843b">DOI:10.1039/d0sc05843b</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The platform uses P. elgii B69 pel5 in place of native ind5.</dd><dt>snippet</dt><dd>from Paenibacillus elgii B69</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -346,7 +348,7 @@ by the corpus tests.</p>
   <td>was reported to produce a small amount of</td>
   <td>indolmycin</td>
   <td>Whole-cell result, not individual enzyme activity or sufficiency of the cloned genes alone. Endogenous host functions remain present. No precise yield, detection limit, E. coli substrain, culture protocol or independent spectrum/standard/stereochemical verification is imported.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1039/d0sc05843b</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1039/d0sc05843b</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Main Results report indolmycin assigned by LC-MS in the co-expression culture.</dd><dt>snippet</dt><dd>cloned all necessary genes into four plasmids</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1039/d0sc05843b">DOI:10.1039/d0sc05843b</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1039/d0sc05843b">DOI:10.1039/d0sc05843b</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Main Results report indolmycin assigned by LC-MS in the co-expression culture.</dd><dt>snippet</dt><dd>cloned all necessary genes into four plasmids</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -355,7 +357,7 @@ by the corpus tests.</p>
   <td>was reported to accumulate</td>
   <td>Indolmycenic acid (paper compound 5)</td>
   <td>Keep the paper intermediate ungrounded; no exact protonation, stereochemical CURIE or equivalence to a particular database indolmycenate form is asserted. This outcome does not assign the contribution of each expressed protein or identify the endogenous E. coli aminotransferase.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1039/d0sc05843b</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1039/d0sc05843b</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Main Results report accumulation of compound 5, named indolmycenic acid.</dd><dt>snippet</dt><dd>employed the full eight-gene construct</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1039/d0sc05843b">DOI:10.1039/d0sc05843b</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1039/d0sc05843b">DOI:10.1039/d0sc05843b</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Main Results report accumulation of compound 5, named indolmycenic acid.</dd><dt>snippet</dt><dd>employed the full eight-gene construct</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -364,7 +366,7 @@ by the corpus tests.</p>
   <td>was the reported purified input to</td>
   <td>Three-step chemical completion (non-enzymatic)</td>
   <td>The synthetic follow-up is distinct from the small amount of indolmycin already detected in the engineered culture. No exact intermediate structure identifier or uninspected preparative details are adopted.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1039/d0sc05843b</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1039/d0sc05843b</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Purified compound 5 was used in subsequent chemical conversion.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1039/d0sc05843b">DOI:10.1039/d0sc05843b</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1039/d0sc05843b">DOI:10.1039/d0sc05843b</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Purified compound 5 was used in subsequent chemical conversion.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -373,7 +375,7 @@ by the corpus tests.</p>
   <td>was reported to furnish</td>
   <td>indolmycin</td>
   <td>Chemical completion, not a newly demonstrated Ind3/Ind6/Ind7 enzymatic sequence. Product naming follows the paper; supplementary spectra and stereochemical assignments were not independently inspected. Halogenated congeners and their bioactivities are not transferred.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1039/d0sc05843b</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1039/d0sc05843b</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The three-step conversion esterifies compound 5, closes the oxazolinone ring, then methylates to indolmycin.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1039/d0sc05843b">DOI:10.1039/d0sc05843b</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1039/d0sc05843b">DOI:10.1039/d0sc05843b</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The three-step conversion esterifies compound 5, closes the oxazolinone ring, then methylates to indolmycin.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -382,7 +384,7 @@ by the corpus tests.</p>
   <td>was reported to yield less</td>
   <td>Indolmycenic acid (paper compound 5)</td>
   <td>Comparison is with I1234670P5, not a single-gene knockout. No numerical ratio, expression-matched control, specific causal assignment to a removed protein or claim that all eight genes are individually necessary is made.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1039/d0sc05843b</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1039/d0sc05843b</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The ind0/ind1/ind2-only system yielded less compound 5 than the full platform; contributions from the removed genes were unresolved.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1039/d0sc05843b">DOI:10.1039/d0sc05843b</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1039/d0sc05843b">DOI:10.1039/d0sc05843b</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The ind0/ind1/ind2-only system yielded less compound 5 than the full platform; contributions from the removed genes were unresolved.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -396,26 +398,37 @@ by the corpus tests.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=GNTVWGDQPXCYBV-QPUJVOFHSA-N">AntibioticMech (indolmycin) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=naturalproductmech%3Amibig-3f4d7c9236">MediaIngredientMech (naturalproductmech:mibig-3f4d7c9236) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A67263">TaxonMech: Streptomyces griseus subsp. griseus (NCBITaxon:67263) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0001206">PathwayMech (mibig:BGC0001206) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A67263">TaxonMech: Streptomyces griseus subsp. griseus (NCBITaxon:67263) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0001206">PathwayMech (mibig:BGC0001206) &nearr;</a>
 </div>
 
 <h2>Open questions <span class="tag">2</span></h2>
-<div class="note"><p><strong>curator-indolmycin-precursor-primary-and-chemical-scope</strong> — Which primary construct and chemical data resolve the Ind1/Ind2 assays, exact intermediates and downstream oxazolinone assembly?</p></div>
-<div class="note"><p><strong>curator-indolmycin-expression-constructs-and-homologs</strong> — Can full plasmid sequences, Pel5 identity and matched expression controls resolve the platform protein assignments?</p></div>
+<div class="note"><p><strong>curator-indolmycin-precursor-primary-and-chemical-scope</strong> <span class="tag">OPEN</span> <span class="tag">curation todo</span> — Which primary construct and chemical data resolve the Ind1/Ind2 assays, exact intermediates and downstream oxazolinone assembly?</p></div>
+<div class="note"><p><strong>curator-indolmycin-expression-constructs-and-homologs</strong> <span class="tag">OPEN</span> <span class="tag">curation todo</span> — Can full plasmid sequences, Pel5 identity and matched expression controls resolve the platform protein assignments?</p></div>
+
+<h2 id="curation-history">Curation history <span class="tag">6</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-11T13:57:17Z">2026-10-11T13:57:17Z</time> &middot; <strong>ADDED_INDOLMYCIN_EXPRESSION_PLATFORM_PROTEINS</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added native Ind0, Ind3, Ind4 and Ind6 references, reused Ind1/Ind2/Ind7, and retained paper Pel5 ungrounded in an engineered expression-platform graph. Separated inferred native-to-platform mappings, reported whole-cell outcomes and non-enzymatic completion, with DOI/stable URLs and short snippets. Preserved prior graphs/pathway, source fields, natural-product origin and SEEDED status. Documented construct, homolog, individual-contribution and chemical-form limits.</p></li>
+<li><time datetime="2026-10-11T13:12:45Z">2026-10-11T13:12:45Z</time> &middot; <strong>ADDED_INDOLMYCIN_PRECURSOR_REFERENCES</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added sequence-verified native Ind1 and Ind2 references in a database-supported precursor graph, with stable URLs and short snippets. Separated annotated C-methylation and reduction from the inferred multistep downstream relationship to indolmycin. Preserved the prior Ind7 pathway/graph, source-owned fields and SEEDED status; recorded primary-access, construct and chemical-form limitations.</p></li>
+<li><time datetime="2026-10-01T17:21:13Z">2026-10-01T17:21:13Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added the evidence-backed Ind7 N-demethylindolmycin N-methyltransferase biosynthetic pathway step and BIOSYNTHESIS causal graph grounded to UniProtKB:A0A0D4BSP3.</p></li>
+<li><time datetime="2026-10-01T17:19:20Z">2026-10-01T17:19:20Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources<p>Seeded from the committed inventories and curation tables.</p></li>
+<li><time datetime="2026-09-25T03:02:02Z">2026-09-25T03:02:02Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:06Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
 
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0001206</td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001206">BGC0001206</a></td><td>MIBIG</td><td>5</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/alkaloids/indolmycin.yaml">data/natural_products/alkaloids/indolmycin.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20naturalproductmech%3Amibig-3f4d7c9236&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Falkaloids%2Findolmycin.html">Report a problem with this record</a>: opens a GitHub issue that names naturalproductmech:mibig-3f4d7c9236 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Record last updated 2026-10-11 13:57 UTC, its latest curation event. Generated from the committed corpus. Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

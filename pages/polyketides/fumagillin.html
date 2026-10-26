@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Polyketides</a> &middot; fumagillin</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>fumagillin</h1>
-<p class="sub"><span class="mono">CHEBI:48635</span>
+<p class="sub"><span class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_48635">CHEBI:48635</a></span>
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 <span class="tag">antibacterial</span></p>
 <details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/fumagillin.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/fumagillin.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 <p>A meroterpenoid resulting from the formal condensation of the hydroxy group of fumagillol with the carboxylic acid group of (all-E)-deca-2,4,6,8-tetraenedioic acid. Originally isolated from the fungus Aspergillus fumigatus, it is used for the control of Nosema infection in honey bees.</p>
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">NGGMYCMLYOUNGM-CSDLUJIJSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">CC(=CC[C@@H]1[C@@](O1)(C)[C@H]2[C@@H]([C@@H](CC[C@]23CO3)OC(=O)/C=C/C=C/C=C/C=C/C(=O)O)OC)C</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">npatlas:NPA010119</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://www.npatlas.org/explore/compounds/NPA010119">npatlas:NPA010119</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Polyketides</a> —
@@ -57,52 +59,52 @@ pks, terpene, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Aspergillus fumigatus Af293<br><span class="mono">NCBITaxon:330879</span></td>
+  <td>Aspergillus fumigatus Af293<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=330879">NCBITaxon:330879</a></span></td>
   <td><span class="tag causal">BGC_CHARACTERIZED</span></td>
-  <td class="mono">mibig:BGC0001067</td>
-  <td><span class="mono">DOI:10.1021/ja312503y</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001067">mibig:BGC0001067</a></td>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja312503y">DOI:10.1021/ja312503y</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">4</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Aspergillus terreus<br><span class="mono">NCBITaxon:33178</span></td>
+  <td>Aspergillus terreus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=33178">NCBITaxon:33178</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/ACS.JNATPROD.9B01190</td>
+  <td class="mono"><a href="https://doi.org/10.1021/ACS.JNATPROD.9B01190">DOI:10.1021/ACS.JNATPROD.9B01190</a></td>
 </tr>
 <tr>
-  <td>Aspergillus fumigatus<br><span class="mono">NCBITaxon:746128</span></td>
+  <td>Aspergillus fumigatus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=746128">NCBITaxon:746128</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/JA01475A029</td>
+  <td class="mono"><a href="https://doi.org/10.1021/JA01475A029">DOI:10.1021/JA01475A029</a></td>
 </tr>
 <tr>
-  <td>Aspergillus fumigatus<br><span class="mono">NCBITaxon:746128</span></td>
+  <td>Aspergillus fumigatus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=746128">NCBITaxon:746128</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/JA312503Y</td>
+  <td class="mono"><a href="https://doi.org/10.1021/JA312503Y">DOI:10.1021/JA312503Y</a></td>
 </tr>
 <tr>
-  <td>Aspergillus fumigatus<br><span class="mono">NCBITaxon:746128</span></td>
+  <td>Aspergillus fumigatus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=746128">NCBITaxon:746128</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/NP049893P</td>
+  <td class="mono"><a href="https://doi.org/10.1021/NP049893P">DOI:10.1021/NP049893P</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0001067</td>
-  <td>Aspergillus fumigatus Af293<br><span class="mono">NCBITaxon:330879</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001067">mibig:BGC0001067</a></td>
+  <td>Aspergillus fumigatus Af293<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=330879">NCBITaxon:330879</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:CM000176.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/CM000176.1">genbank:CM000176.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -112,7 +114,7 @@ isolation report left it.</p>
 
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for fumagillin">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for fumagillin">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -145,15 +147,15 @@ isolation report left it.</p>
 </div>
 
 <h2>Causal graph &mdash; bioactivity <span class="tag">2 nodes, 1 edge</span></h2>
-<p class="sub">Fumagillin covalently binds human methionine aminopeptidase 2.</p><div class="scroll"><table>
+<p class="sub">Fumagillin covalently binds human methionine aminopeptidase 2.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>fumagillin</td>
   <td>binds</td>
   <td>human methionine aminopeptidase 2</td>
   <td>PDB 1BOA maps chain A to UniProtKB:P50579 residues 1-478 with a single I347/V347 sequence conflict and records FUG fumagillin covalently linked to His231 NE2 of chain A.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1126/science.282.5392.1324<br>DOI:10.2210/pdb1boa/pdb</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1126/science.282.5392.1324</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Structure of human methionine aminopeptidase-2 complexed with fumagillin.</dd><dt>notes</dt><dd>Sin et al. solved PDB 1BOA, a structure of human MetAP2 in complex with FUG fumagillin and cobalt.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.2210/pdb1boa/pdb</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>RCSB PDB identifies PDB 1BOA entity 1 as a methionine aminopeptidase mapped to UniProtKB:P50579, entity 3 as FUG fumagillin, and reports a 1.484 Angstrom covalent bond between His231 NE2 and FUG C11.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1126/science.282.5392.1324">DOI:10.1126/science.282.5392.1324</a><br><a href="https://doi.org/10.2210/pdb1boa/pdb">DOI:10.2210/pdb1boa/pdb</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1126/science.282.5392.1324">DOI:10.1126/science.282.5392.1324</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Structure of human methionine aminopeptidase-2 complexed with fumagillin.</dd><dt>notes</dt><dd>Sin et al. solved PDB 1BOA, a structure of human MetAP2 in complex with FUG fumagillin and cobalt.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.2210/pdb1boa/pdb">DOI:10.2210/pdb1boa/pdb</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>RCSB PDB identifies PDB 1BOA entity 1 as a methionine aminopeptidase mapped to UniProtKB:P50579, entity 3 as FUG fumagillin, and reports a 1.484 Angstrom covalent bond between His231 NE2 and FUG C11.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -161,15 +163,15 @@ isolation report left it.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 4 edges</span></h2>
-<p class="sub">Terminal conversion assay, not a complete pathway. The A1159-derived experimental enzyme remains accession-unresolved; Af293 is a separate reference example, not an asserted identical allele. Main Figure4 names BJ5464-NpgA; supplement S6-S8 specifies BY4705. The host discrepancy is retained. No producer, essentiality, cofactor-independence or purified-enzyme sufficiency claim is added.</p><div class="scroll"><table>
+<p class="sub">Terminal conversion assay, not a complete pathway. The A1159-derived experimental enzyme remains accession-unresolved; Af293 is a separate reference example, not an asserted identical allele. Main Figure4 names BJ5464-NpgA; supplement S6-S8 specifies BY4705. The host discrepancy is retained. No producer, essentiality, cofactor-independence or purified-enzyme sufficiency claim is added.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 2 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>Fma-ABM (Af293 reference)</td>
   <td>is_reference_example_for</td>
   <td>Fma-ABM (A1159-derived construct)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q4WAZ2/entry<br>https://www.ncbi.nlm.nih.gov/protein/EAL85120.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4WAZ2/entry</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Selected same-named AFUA_8G00470 reference, not sequence identity of the assayed insert. Release2026_03 Q4WAZ2 matches the275-aa EAL85120.1 and translated spliced AAHF01000014.1 CDS exactly; coded_by coordinates, strand, complete start/stop, Af293 and taxon330879 agree. No experimental allele or A1159-to-Af293 equivalence was established.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/EAL85120.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Versioned native Af293 protein reference. The linked genomic CDS is join(690371..690445,690513..691265) on AAHF01000014.1; no custom splice repair.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q4WAZ2/entry">https://www.uniprot.org/uniprotkb/Q4WAZ2/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/EAL85120.1">https://www.ncbi.nlm.nih.gov/protein/EAL85120.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q4WAZ2/entry">https://www.uniprot.org/uniprotkb/Q4WAZ2/entry</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Selected same-named AFUA_8G00470 reference, not sequence identity of the assayed insert. Release2026_03 Q4WAZ2 matches the275-aa EAL85120.1 and translated spliced AAHF01000014.1 CDS exactly; coded_by coordinates, strand, complete start/stop, Af293 and taxon330879 agree. No experimental allele or A1159-to-Af293 equivalence was established.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/EAL85120.1">https://www.ncbi.nlm.nih.gov/protein/EAL85120.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Versioned native Af293 protein reference. The linked genomic CDS is join(690371..690445,690513..691265) on AAHF01000014.1; no custom splice repair.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -178,7 +180,7 @@ by the corpus tests.</p>
   <td>catalyzes_in_microsomal_fraction</td>
   <td>Fma-ABM-containing yeast microsomal conversion</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja500881e</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja500881e</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure4B and supplement S6-S8: A1159 cDNA in pKW20202; microsomal preparation, not homogeneous protein.</dd><dt>snippet</dt><dd>Heat-inactivated Af470 was used in reaction as a negative control.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure4B and supplement S6-S8: A1159 cDNA in pKW20202; microsomal preparation, not homogeneous protein.</dd><dt>snippet</dt><dd>Heat-inactivated Af470 was used in reaction as a negative control.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -187,7 +189,7 @@ by the corpus tests.</p>
   <td>is_substrate_in</td>
   <td>Fma-ABM-containing yeast microsomal conversion</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja500881e</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja500881e</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Supplement S7-S8: 100 uM compound4, 30 C, 14 h; no kinetic constant inferred.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Supplement S7-S8: 100 uM compound4, 30 C, 14 h; no kinetic constant inferred.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -196,7 +198,7 @@ by the corpus tests.</p>
   <td>produces_detected_product</td>
   <td>fumagillin</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja500881e</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja500881e</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure4B: LC-MS-supported compound4-to-compound1 conversion. Individual oxidative intermediates were not directly resolved by this assay.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure4B: LC-MS-supported compound4-to-compound1 conversion. Individual oxidative intermediates were not directly resolved by this assay.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -204,15 +206,15 @@ by the corpus tests.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">17 nodes, 17 edges</span></h2>
-<p class="sub">Precursor assays in fumagillin biosynthesis, not a complete or obligatorily ordered native pathway. Three Af293 references are separate from accession-unresolved experimental constructs. BJ5464-NpgA is the expression host; complete inserts and exact fungal source strains remain unverified. The combined microsomal assay is distinct from the existing Fma-ABM terminal conversion. Purified KR pairs follow Figure 8 and Results; the methods paragraph swaps the first two product numbers. No producer upgrade, native essentiality, isolated CPR sufficiency or kinetic constants are asserted.</p><div class="scroll"><table>
+<p class="sub">Precursor assays in fumagillin biosynthesis, not a complete or obligatorily ordered native pathway. Three Af293 references are separate from accession-unresolved experimental constructs. BJ5464-NpgA is the expression host; complete inserts and exact fungal source strains remain unverified. The combined microsomal assay is distinct from the existing Fma-ABM terminal conversion. Purified KR pairs follow Figure 8 and Results; the methods paragraph swaps the first two product numbers. No producer upgrade, native essentiality, isolated CPR sufficiency or kinetic constants are asserted.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 3 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>Fma-P450 (Af293 reference)</td>
   <td>is_reference_example_for</td>
   <td>Fma-P450 (experimental construct)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q4WAZ6/entry<br>https://www.ncbi.nlm.nih.gov/protein/EAL85116.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4WAZ6/entry</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Selected AFUA_8G00510 native Af293 reference, not sequence identity of the experimental insert. UniProt release 2026_03, complete spliced genomic CDS and EAL85116.1 agree exactly (536 aa; taxon 330879). Full experimental allele and source-strain equivalence remain unverified.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/EAL85116.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Versioned Af293 sequence; coded_by join(AAHF01000014.1:681143..681672, AAHF01000014.1:681727..682807). Coordinates, strand and complete CDS translation verified without splice repair.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q4WAZ6/entry">https://www.uniprot.org/uniprotkb/Q4WAZ6/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/EAL85116.1">https://www.ncbi.nlm.nih.gov/protein/EAL85116.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q4WAZ6/entry">https://www.uniprot.org/uniprotkb/Q4WAZ6/entry</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Selected AFUA_8G00510 native Af293 reference, not sequence identity of the experimental insert. UniProt release 2026_03, complete spliced genomic CDS and EAL85116.1 agree exactly (536 aa; taxon 330879). Full experimental allele and source-strain equivalence remain unverified.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/EAL85116.1">https://www.ncbi.nlm.nih.gov/protein/EAL85116.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Versioned Af293 sequence; coded_by join(AAHF01000014.1:681143..681672, AAHF01000014.1:681727..682807). Coordinates, strand and complete CDS translation verified without splice repair.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -221,8 +223,8 @@ by the corpus tests.</p>
   <td>is_reference_example_for</td>
   <td>Fma-KR (experimental construct)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q4WAZ4/entry<br>https://www.ncbi.nlm.nih.gov/protein/EAL85118.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4WAZ4/entry</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Selected AFUA_8G00490 native Af293 reference, not sequence identity of the experimental insert. UniProt release 2026_03, complete spliced genomic CDS and EAL85118.1 agree exactly (1017 aa; taxon 330879). Full experimental allele and source-strain equivalence remain unverified.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/EAL85118.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Versioned Af293 sequence; coded_by complement(join(AAHF01000014.1:685490..685801, AAHF01000014.1:685856..686210, AAHF01000014.1:686258..688644)). Coordinates, strand and complete CDS translation verified without splice repair.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q4WAZ4/entry">https://www.uniprot.org/uniprotkb/Q4WAZ4/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/EAL85118.1">https://www.ncbi.nlm.nih.gov/protein/EAL85118.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q4WAZ4/entry">https://www.uniprot.org/uniprotkb/Q4WAZ4/entry</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Selected AFUA_8G00490 native Af293 reference, not sequence identity of the experimental insert. UniProt release 2026_03, complete spliced genomic CDS and EAL85118.1 agree exactly (1017 aa; taxon 330879). Full experimental allele and source-strain equivalence remain unverified.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/EAL85118.1">https://www.ncbi.nlm.nih.gov/protein/EAL85118.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Versioned Af293 sequence; coded_by complement(join(AAHF01000014.1:685490..685801, AAHF01000014.1:685856..686210, AAHF01000014.1:686258..688644)). Coordinates, strand and complete CDS translation verified without splice repair.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -231,8 +233,8 @@ by the corpus tests.</p>
   <td>is_reference_example_for</td>
   <td>AfCPR (experimental construct)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q4WM67/entry<br>https://www.ncbi.nlm.nih.gov/protein/EAL88947.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4WM67/entry</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Selected AFUA_6G10990 native Af293 reference, not sequence identity of the experimental insert. UniProt release 2026_03, complete spliced genomic CDS and EAL88947.1 agree exactly (695 aa; taxon 330879). Full experimental allele and source-strain equivalence remain unverified.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/EAL88947.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Versioned Af293 sequence; coded_by complement(join(AAHF01000006.1:1387496..1387792 ,AAHF01000006.1:1387850..1389640)). Coordinates, strand and complete CDS translation verified without splice repair.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q4WM67/entry">https://www.uniprot.org/uniprotkb/Q4WM67/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/EAL88947.1">https://www.ncbi.nlm.nih.gov/protein/EAL88947.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q4WM67/entry">https://www.uniprot.org/uniprotkb/Q4WM67/entry</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Selected AFUA_6G10990 native Af293 reference, not sequence identity of the experimental insert. UniProt release 2026_03, complete spliced genomic CDS and EAL88947.1 agree exactly (695 aa; taxon 330879). Full experimental allele and source-strain equivalence remain unverified.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/EAL88947.1">https://www.ncbi.nlm.nih.gov/protein/EAL88947.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Versioned Af293 sequence; coded_by complement(join(AAHF01000006.1:1387496..1387792 ,AAHF01000006.1:1387850..1389640)). Coordinates, strand and complete CDS translation verified without splice repair.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -241,7 +243,7 @@ by the corpus tests.</p>
   <td>catalyzes_in_microsomal_fraction</td>
   <td>P450/CPR microsomes plus purified KR assay</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja500881e</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja500881e</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 8E and supplement S9-S10: pHCfmaP450 and pHCfmaCPR coexpression in yeast; P450 remains in microsomes. S9 describes an N-terminal His6 tag. Not purified-P450 sufficiency.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 8E and supplement S9-S10: pHCfmaP450 and pHCfmaCPR coexpression in yeast; P450 remains in microsomes. S9 describes an N-terminal His6 tag. Not purified-P450 sufficiency.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -250,7 +252,7 @@ by the corpus tests.</p>
   <td>is_coexpressed_redox_partner_in</td>
   <td>P450/CPR microsomes plus purified KR assay</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja500881e</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja500881e</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 8E; supplement S5/S9-S10 identifies AFUA_6G10990 and pHCfmaCPR. AfCPR is present in the microsomal preparation; no isolated CPR omission/rescue experiment or necessity/sufficiency claim.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 8E; supplement S5/S9-S10 identifies AFUA_6G10990 and pHCfmaCPR. AfCPR is present in the microsomal preparation; no isolated CPR omission/rescue experiment or necessity/sufficiency claim.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -259,7 +261,7 @@ by the corpus tests.</p>
   <td>is_added_purified_enzyme_in</td>
   <td>P450/CPR microsomes plus purified KR assay</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja500881e</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja500881e</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 8E and supplement S8-S10: pHCfmaKR expression in BJ5464-NpgA, His6-tagged soluble protein purified by Ni-NTA. Assay contains 10 uM Fma-KR, 10 mg/mL wet microsomes and NADPH regeneration.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 8E and supplement S8-S10: pHCfmaKR expression in BJ5464-NpgA, His6-tagged soluble protein purified by Ni-NTA. Assay contains 10 uM Fma-KR, 10 mg/mL wet microsomes and NADPH regeneration.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -268,7 +270,7 @@ by the corpus tests.</p>
   <td>is_substrate_in</td>
   <td>P450/CPR microsomes plus purified KR assay</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja500881e</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja500881e</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 8E and supplement S10: 1 mM compound 8, 2 mM NADPH, 100 mM PBS pH 7.4, 100 uL total. The overnight endpoint is not a kinetic constant.</dd><dt>snippet</dt><dd>The reaction was incubated at room temperature overnight</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 8E and supplement S10: 1 mM compound 8, 2 mM NADPH, 100 mM PBS pH 7.4, 100 uL total. The overnight endpoint is not a kinetic constant.</dd><dt>snippet</dt><dd>The reaction was incubated at room temperature overnight</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -277,7 +279,7 @@ by the corpus tests.</p>
   <td>produces_detected_product</td>
   <td>6-demethoxyfumagillol (paper compound 6)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja500881e</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja500881e</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 8E and Results: LC-MS detects 6 among the products; not an exclusive-product or quantitative-yield claim. Fma-KR shifts the profile toward the natural 5R-hydroxy isomer. Microscopic step order is not established by this combined assay.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 8E and Results: LC-MS detects 6 among the products; not an exclusive-product or quantitative-yield claim. Fma-KR shifts the profile toward the natural 5R-hydroxy isomer. Microscopic step order is not established by this combined assay.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -286,7 +288,7 @@ by the corpus tests.</p>
   <td>catalyzes</td>
   <td>Fma-KR reduction of compound 21</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja500881e</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja500881e</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 8A and Results: purified recombinant Fma-KR gives the 5R-hydroxy product. A control with NADPH and substrate but without Fma-KR is shown. No native essentiality or obligatory pathway order inferred.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 8A and Results: purified recombinant Fma-KR gives the 5R-hydroxy product. A control with NADPH and substrate but without Fma-KR is shown. No native essentiality or obligatory pathway order inferred.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -295,7 +297,7 @@ by the corpus tests.</p>
   <td>is_substrate_in</td>
   <td>Fma-KR reduction of compound 21</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja500881e</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja500881e</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Experimental Section, Fma-KR assays: 10 uM enzyme, 1 mM substrate, 2 mM NADPH, 100 mM PBS pH 7.4, room temperature overnight. These ketone substrates were prepared by PCC oxidation; do not assert their isolation as native intermediates.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Experimental Section, Fma-KR assays: 10 uM enzyme, 1 mM substrate, 2 mM NADPH, 100 mM PBS pH 7.4, room temperature overnight. These ketone substrates were prepared by PCC oxidation; do not assert their isolation as native intermediates.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -304,7 +306,7 @@ by the corpus tests.</p>
   <td>produces_detected_product</td>
   <td>cordycol (paper compound 9)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja500881e</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja500881e</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 8A and Results explicitly support 21 to 9. The Fma-KR methods paragraph transposes product numbers 6 and 9 for substrates 21 and 22; the plotted assays and Results agree on 21 to 9 and 22 to 6. This graph retains that source discrepancy.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 8A and Results explicitly support 21 to 9. The Fma-KR methods paragraph transposes product numbers 6 and 9 for substrates 21 and 22; the plotted assays and Results agree on 21 to 9 and 22 to 6. This graph retains that source discrepancy.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -313,7 +315,7 @@ by the corpus tests.</p>
   <td>catalyzes</td>
   <td>Fma-KR reduction of compound 22</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja500881e</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja500881e</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 8B and Results: purified recombinant Fma-KR gives the 5R-hydroxy product. A control with NADPH and substrate but without Fma-KR is shown. No native essentiality or obligatory pathway order inferred.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 8B and Results: purified recombinant Fma-KR gives the 5R-hydroxy product. A control with NADPH and substrate but without Fma-KR is shown. No native essentiality or obligatory pathway order inferred.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -322,7 +324,7 @@ by the corpus tests.</p>
   <td>is_substrate_in</td>
   <td>Fma-KR reduction of compound 22</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja500881e</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja500881e</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Experimental Section, Fma-KR assays: 10 uM enzyme, 1 mM substrate, 2 mM NADPH, 100 mM PBS pH 7.4, room temperature overnight. These ketone substrates were prepared by PCC oxidation; do not assert their isolation as native intermediates.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Experimental Section, Fma-KR assays: 10 uM enzyme, 1 mM substrate, 2 mM NADPH, 100 mM PBS pH 7.4, room temperature overnight. These ketone substrates were prepared by PCC oxidation; do not assert their isolation as native intermediates.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -331,7 +333,7 @@ by the corpus tests.</p>
   <td>produces_detected_product</td>
   <td>6-demethoxyfumagillol (paper compound 6)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja500881e</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja500881e</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 8B and Results explicitly support 22 to 6. The Fma-KR methods paragraph transposes product numbers 6 and 9 for substrates 21 and 22; the plotted assays and Results agree on 21 to 9 and 22 to 6. This graph retains that source discrepancy.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 8B and Results explicitly support 22 to 6. The Fma-KR methods paragraph transposes product numbers 6 and 9 for substrates 21 and 22; the plotted assays and Results agree on 21 to 9 and 22 to 6. This graph retains that source discrepancy.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -340,7 +342,7 @@ by the corpus tests.</p>
   <td>catalyzes</td>
   <td>Fma-KR reduction of compound 23</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja500881e</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja500881e</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 8C and Results: purified recombinant Fma-KR gives the 5R-hydroxy product. A control with NADPH and substrate but without Fma-KR is shown. No native essentiality or obligatory pathway order inferred.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 8C and Results: purified recombinant Fma-KR gives the 5R-hydroxy product. A control with NADPH and substrate but without Fma-KR is shown. No native essentiality or obligatory pathway order inferred.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -349,7 +351,7 @@ by the corpus tests.</p>
   <td>is_substrate_in</td>
   <td>Fma-KR reduction of compound 23</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja500881e</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja500881e</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Experimental Section, Fma-KR assays: 10 uM enzyme, 1 mM substrate, 2 mM NADPH, 100 mM PBS pH 7.4, room temperature overnight. These ketone substrates were prepared by PCC oxidation; do not assert their isolation as native intermediates.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Experimental Section, Fma-KR assays: 10 uM enzyme, 1 mM substrate, 2 mM NADPH, 100 mM PBS pH 7.4, room temperature overnight. These ketone substrates were prepared by PCC oxidation; do not assert their isolation as native intermediates.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -358,7 +360,7 @@ by the corpus tests.</p>
   <td>produces_detected_product</td>
   <td>fumagillol (paper compound 2)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja500881e</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja500881e</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 8C and Results explicitly support 23 to 2. The Fma-KR methods paragraph transposes product numbers 6 and 9 for substrates 21 and 22; the plotted assays and Results agree on 21 to 9 and 22 to 6. This graph retains that source discrepancy.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 8C and Results explicitly support 23 to 2. The Fma-KR methods paragraph transposes product numbers 6 and 9 for substrates 21 and 22; the plotted assays and Results agree on 21 to 9 and 22 to 6. This graph retains that source discrepancy.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -366,16 +368,16 @@ by the corpus tests.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">9 nodes, 9 edges</span></h2>
-<p class="sub">C6H-only 6-to-7 and paired C6H/MT 6-to-2 assays. Two reference sequences are separate from accession-unresolved experimental constructs. C6H primers match reference aa39-309; MT has an explicitly partial 5-prime transcript boundary. Full inserts and fungal source strains remain unverified. Figure 4C/Results/assay recipe take precedence over conflicting Chemical Analysis numbering. No isolated MT sufficiency, sole-product yield, essentiality or complete native pathway is asserted.</p><div class="scroll"><table>
+<p class="sub">C6H-only 6-to-7 and paired C6H/MT 6-to-2 assays. Two reference sequences are separate from accession-unresolved experimental constructs. C6H primers match reference aa39-309; MT has an explicitly partial 5-prime transcript boundary. Full inserts and fungal source strains remain unverified. Figure 4C/Results/assay recipe take precedence over conflicting Chemical Analysis numbering. No isolated MT sufficiency, sole-product yield, essentiality or complete native pathway is asserted.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 4 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>Fma-C6H (Af293 reference, 309 aa)</td>
   <td>is_reference_example_for</td>
   <td>Fma-C6H (pKW20172 experimental construct)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q4WAZ3/entry<br>https://www.ncbi.nlm.nih.gov/protein/EAL85119.2<br>DOI:10.1021/ja500881e</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4WAZ3/entry</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Selected reference, not an identical experimental allele. AFUA_8G00480 native Af293 CDS, GenPept and UniProt agree exactly at 309 aa. Supplement Table S2 primer-compatible reference interval is aa39-309 (271 aa; coding nt115-927), not the entire native protein. This boundary match is not proof of the full insert, intervening sequence, source strain or tag residues.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/EAL85119.2</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Versioned reference sequence independently compared with nucleotide CDS translation and UniProt2026_03. Complete reverse-strand native CDS on AAHF01000014.1:689045..689974.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1021/ja500881e</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Supplement Table S2 primer alignment only; full insert equivalence remains unresolved. AFUA_8G00480 native Af293 CDS, GenPept and UniProt agree exactly at 309 aa. Supplement Table S2 primer-compatible reference interval is aa39-309 (271 aa; coding nt115-927), not the entire native protein. This boundary match is not proof of the full insert, intervening sequence, source strain or tag residues.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q4WAZ3/entry">https://www.uniprot.org/uniprotkb/Q4WAZ3/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/EAL85119.2">https://www.ncbi.nlm.nih.gov/protein/EAL85119.2</a><br><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q4WAZ3/entry">https://www.uniprot.org/uniprotkb/Q4WAZ3/entry</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Selected reference, not an identical experimental allele. AFUA_8G00480 native Af293 CDS, GenPept and UniProt agree exactly at 309 aa. Supplement Table S2 primer-compatible reference interval is aa39-309 (271 aa; coding nt115-927), not the entire native protein. This boundary match is not proof of the full insert, intervening sequence, source strain or tag residues.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/EAL85119.2">https://www.ncbi.nlm.nih.gov/protein/EAL85119.2</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Versioned reference sequence independently compared with nucleotide CDS translation and UniProt2026_03. Complete reverse-strand native CDS on AAHF01000014.1:689045..689974.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Supplement Table S2 primer alignment only; full insert equivalence remains unresolved. AFUA_8G00480 native Af293 CDS, GenPept and UniProt agree exactly at 309 aa. Supplement Table S2 primer-compatible reference interval is aa39-309 (271 aa; coding nt115-927), not the entire native protein. This boundary match is not proof of the full insert, intervening sequence, source strain or tag residues.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -384,9 +386,9 @@ by the corpus tests.</p>
   <td>is_reference_example_for</td>
   <td>Fma-MT (pKW20174 experimental construct)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0A067Z9B6/entry<br>https://www.ncbi.nlm.nih.gov/protein/AHL19974.1<br>DOI:10.1021/ja500881e</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A067Z9B6/entry</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Selected reference, not an identical experimental allele. The 400-aa submitted reference matches KJ187001.1 and GenPept exactly. Both source records name Af293 at species taxon746128, while UniProt uses strain taxon330879. KJ187001.1:&lt;1..1203 is explicitly partial at the 5-prime boundary. Table S2 primers bracket the 400-aa submitted segment but do not establish the complete native N terminus, full experimental insert or fungal source strain.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AHL19974.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Versioned reference sequence independently compared with nucleotide CDS translation and UniProt2026_03. Partial KJ187001.1:&lt;1..1203 boundary is retained, not repaired.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1021/ja500881e</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Supplement Table S2 primer alignment only; full insert equivalence remains unresolved. The 400-aa submitted reference matches KJ187001.1 and GenPept exactly. Both source records name Af293 at species taxon746128, while UniProt uses strain taxon330879. KJ187001.1:&lt;1..1203 is explicitly partial at the 5-prime boundary. Table S2 primers bracket the 400-aa submitted segment but do not establish the complete native N terminus, full experimental insert or fungal source strain.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/A0A067Z9B6/entry">https://www.uniprot.org/uniprotkb/A0A067Z9B6/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AHL19974.1">https://www.ncbi.nlm.nih.gov/protein/AHL19974.1</a><br><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0A067Z9B6/entry">https://www.uniprot.org/uniprotkb/A0A067Z9B6/entry</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Selected reference, not an identical experimental allele. The 400-aa submitted reference matches KJ187001.1 and GenPept exactly. Both source records name Af293 at species taxon746128, while UniProt uses strain taxon330879. KJ187001.1:&lt;1..1203 is explicitly partial at the 5-prime boundary. Table S2 primers bracket the 400-aa submitted segment but do not establish the complete native N terminus, full experimental insert or fungal source strain.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AHL19974.1">https://www.ncbi.nlm.nih.gov/protein/AHL19974.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Versioned reference sequence independently compared with nucleotide CDS translation and UniProt2026_03. Partial KJ187001.1:&lt;1..1203 boundary is retained, not repaired.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Supplement Table S2 primer alignment only; full insert equivalence remains unresolved. The 400-aa submitted reference matches KJ187001.1 and GenPept exactly. Both source records name Af293 at species taxon746128, while UniProt uses strain taxon330879. KJ187001.1:&lt;1..1203 is explicitly partial at the 5-prime boundary. Table S2 primers bracket the 400-aa submitted segment but do not establish the complete native N terminus, full experimental insert or fungal source strain.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -395,7 +397,7 @@ by the corpus tests.</p>
   <td>catalyzes</td>
   <td>Purified C6H assay with compound 6</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja500881e</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja500881e</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 4C and Results: pKW20172 C-terminal His6 enzyme expressed in E. coli BL21(DE3) and purified by nickel affinity. Boiled-enzyme control retains substrate 6.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 4C and Results: pKW20172 C-terminal His6 enzyme expressed in E. coli BL21(DE3) and purified by nickel affinity. Boiled-enzyme control retains substrate 6.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -404,7 +406,7 @@ by the corpus tests.</p>
   <td>is_substrate_in</td>
   <td>Purified C6H assay with compound 6</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja500881e</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja500881e</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Dedicated C6H/MT assay methods: 10 uM C6H, 20 uM compound 6, 1 mM sodium ascorbate, 1 mM alpha-ketoglutarate, 100 mM NaCl, 100 mM Tris-HCl pH7.4, 1 h. Temperature and an iron-addition dose are not specified here; no cofactor independence inferred.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Dedicated C6H/MT assay methods: 10 uM C6H, 20 uM compound 6, 1 mM sodium ascorbate, 1 mM alpha-ketoglutarate, 100 mM NaCl, 100 mM Tris-HCl pH7.4, 1 h. Temperature and an iron-addition dose are not specified here; no cofactor independence inferred.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -413,7 +415,7 @@ by the corpus tests.</p>
   <td>produces_detected_product</td>
   <td>6-hydroxylfumagillol (paper compound 7)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja500881e</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja500881e</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 4C and Results agree on this pair. Chemical Analysis instead labels C6H conversion 7 to 8 and paired conversion 7 to 2; these inconsistent numbers are not adopted. No sole-product yield, kinetic constant or obligatory native order is asserted.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 4C and Results agree on this pair. Chemical Analysis instead labels C6H conversion 7 to 8 and paired conversion 7 to 2; these inconsistent numbers are not adopted. No sole-product yield, kinetic constant or obligatory native order is asserted.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -422,7 +424,7 @@ by the corpus tests.</p>
   <td>is_added_purified_enzyme_in</td>
   <td>Purified C6H plus MT co-incubation with compound 6</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja500881e</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja500881e</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 4C: co-incubation includes the same recombinant C6H plus MT; this is distinct from the C6H-only assay.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 4C: co-incubation includes the same recombinant C6H plus MT; this is distinct from the C6H-only assay.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -431,7 +433,7 @@ by the corpus tests.</p>
   <td>is_added_purified_enzyme_in</td>
   <td>Purified C6H plus MT co-incubation with compound 6</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja500881e</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja500881e</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 4C and methods: 10 uM pKW20174 C-terminal His6 MT from E. coli BL21(DE3), nickel-affinity purified, added with 1 mM SAM. A combined assay, not an independently demonstrated isolated MT conversion of 7 to 2.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 4C and methods: 10 uM pKW20174 C-terminal His6 MT from E. coli BL21(DE3), nickel-affinity purified, added with 1 mM SAM. A combined assay, not an independently demonstrated isolated MT conversion of 7 to 2.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -440,7 +442,7 @@ by the corpus tests.</p>
   <td>is_substrate_in</td>
   <td>Purified C6H plus MT co-incubation with compound 6</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja500881e</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja500881e</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Dedicated C6H/MT assay methods: 10 uM C6H, 20 uM compound 6, 1 mM sodium ascorbate, 1 mM alpha-ketoglutarate, 100 mM NaCl, 100 mM Tris-HCl pH7.4, 1 h. Temperature and an iron-addition dose are not specified here; no cofactor independence inferred. The paired assay additionally contains 10 uM MT and 1 mM SAM.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Dedicated C6H/MT assay methods: 10 uM C6H, 20 uM compound 6, 1 mM sodium ascorbate, 1 mM alpha-ketoglutarate, 100 mM NaCl, 100 mM Tris-HCl pH7.4, 1 h. Temperature and an iron-addition dose are not specified here; no cofactor independence inferred. The paired assay additionally contains 10 uM MT and 1 mM SAM.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -449,7 +451,7 @@ by the corpus tests.</p>
   <td>produces_detected_product</td>
   <td>fumagillol (paper compound 2)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja500881e</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja500881e</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 4C and Results agree on this pair. Chemical Analysis instead labels C6H conversion 7 to 8 and paired conversion 7 to 2; these inconsistent numbers are not adopted. No sole-product yield, kinetic constant or obligatory native order is asserted. Residual compound 7 is visible in the paired-assay trace.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/ja500881e">DOI:10.1021/ja500881e</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 4C and Results agree on this pair. Chemical Analysis instead labels C6H conversion 7 to 8 and paired conversion 7 to 2; these inconsistent numbers are not adopted. No sole-product yield, kinetic constant or obligatory native order is asserted. Residual compound 7 is visible in the paired-assay trace.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -457,15 +459,15 @@ by the corpus tests.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">13 nodes, 11 edges</span></h2>
-<p class="sub">Database-annotated precursor assembly by Fma-PKS, Fma-TC and Fma-AT. All catalytic edges cite inspected UniProt annotations, not newly inspected experiments from the inaccessible 2013 discovery article. Corrected PKS/TC mRNA references replace erroneous genomic models. PKS-bound donor labels follow FUNCTION dodecapentaenoyl wording while retaining the CATALYTIC ACTIVITY dodecapentaneoyl spelling discrepancy. Chemical and reaction IDs are not assigned. This partial graph does not connect uninspected intermediate steps or establish a complete native pathway.</p><div class="scroll"><table>
+<p class="sub">Database-annotated precursor assembly by Fma-PKS, Fma-TC and Fma-AT. All catalytic edges cite inspected UniProt annotations, not newly inspected experiments from the inaccessible 2013 discovery article. Corrected PKS/TC mRNA references replace erroneous genomic models. PKS-bound donor labels follow FUNCTION dodecapentaenoyl wording while retaining the CATALYTIC ACTIVITY dodecapentaneoyl spelling discrepancy. Chemical and reaction IDs are not assigned. This partial graph does not connect uninspected intermediate steps or establish a complete native pathway.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 5 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>Fma-PKS (Af293 reference)</td>
   <td>is_annotated_to_catalyze</td>
   <td>Annotated PKS chain assembly</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q4WAY3/entry<br>https://www.ncbi.nlm.nih.gov/protein/AGI05041.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4WAY3/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>UniProt release 2026_03. Sequence identity: AGI05041.1, KC407775.1 CDS and UniProt agree exactly (2435 aa). Reference identity, not an assayed construct. Corrected mRNA KC407775.1 is used; old genomic EAL85129.1 (2462 aa) is an erroneous model, not the 2435-aa reference.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGI05041.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Versioned reference identity; coded_by KC407775.1:1..7308. No experimental insert identity claim.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q4WAY3/entry">https://www.uniprot.org/uniprotkb/Q4WAY3/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AGI05041.1">https://www.ncbi.nlm.nih.gov/protein/AGI05041.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q4WAY3/entry">https://www.uniprot.org/uniprotkb/Q4WAY3/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>UniProt release 2026_03. Sequence identity: AGI05041.1, KC407775.1 CDS and UniProt agree exactly (2435 aa). Reference identity, not an assayed construct. Corrected mRNA KC407775.1 is used; old genomic EAL85129.1 (2462 aa) is an erroneous model, not the 2435-aa reference.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AGI05041.1">https://www.ncbi.nlm.nih.gov/protein/AGI05041.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Versioned reference identity; coded_by KC407775.1:1..7308. No experimental insert identity claim.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -474,8 +476,8 @@ by the corpus tests.</p>
   <td>is_annotated_to_catalyze</td>
   <td>Annotated terpene cyclization</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/M4VQY9/entry<br>https://www.ncbi.nlm.nih.gov/protein/AGI05042.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/M4VQY9/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>UniProt release 2026_03. Sequence identity: AGI05042.1, KC407776.1 CDS and UniProt agree exactly (289 aa). Reference identity, not an assayed construct. Corrected mRNA KC407776.1 is used; old genomic EAL85115.1 (173 aa) is an erroneous model, not the 289-aa reference.</dd><dt>snippet</dt><dd>converts farnesyl pyrophosphate (FPP) to beta-trans-bergamotene</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGI05042.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Versioned reference identity; coded_by KC407776.1:1..870. No experimental insert identity claim.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/M4VQY9/entry">https://www.uniprot.org/uniprotkb/M4VQY9/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AGI05042.1">https://www.ncbi.nlm.nih.gov/protein/AGI05042.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/M4VQY9/entry">https://www.uniprot.org/uniprotkb/M4VQY9/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>UniProt release 2026_03. Sequence identity: AGI05042.1, KC407776.1 CDS and UniProt agree exactly (289 aa). Reference identity, not an assayed construct. Corrected mRNA KC407776.1 is used; old genomic EAL85115.1 (173 aa) is an erroneous model, not the 289-aa reference.</dd><dt>snippet</dt><dd>converts farnesyl pyrophosphate (FPP) to beta-trans-bergamotene</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AGI05042.1">https://www.ncbi.nlm.nih.gov/protein/AGI05042.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Versioned reference identity; coded_by KC407776.1:1..870. No experimental insert identity claim.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -484,8 +486,8 @@ by the corpus tests.</p>
   <td>is_annotated_to_catalyze</td>
   <td>Annotated polyketide transfer</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q4WAY4/entry<br>https://www.ncbi.nlm.nih.gov/protein/EAL85128.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4WAY4/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>UniProt release 2026_03. Sequence identity: EAL85128.1, AAHF01000014.1 CDS and UniProt agree exactly (292 aa). Reference identity, not an assayed construct. Native AFUA_8G00380 CDS and EAL85128.1 are 292 aa; genomic strand, coordinates and translation agree.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/EAL85128.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Versioned reference identity; coded_by complement(join(AAHF01000014.1:705444..706217, AAHF01000014.1:706265..706369)). No experimental insert identity claim.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q4WAY4/entry">https://www.uniprot.org/uniprotkb/Q4WAY4/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/EAL85128.1">https://www.ncbi.nlm.nih.gov/protein/EAL85128.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q4WAY4/entry">https://www.uniprot.org/uniprotkb/Q4WAY4/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>UniProt release 2026_03. Sequence identity: EAL85128.1, AAHF01000014.1 CDS and UniProt agree exactly (292 aa). Reference identity, not an assayed construct. Native AFUA_8G00380 CDS and EAL85128.1 are 292 aa; genomic strand, coordinates and translation agree.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/EAL85128.1">https://www.ncbi.nlm.nih.gov/protein/EAL85128.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Versioned reference identity; coded_by complement(join(AAHF01000014.1:705444..706217, AAHF01000014.1:706265..706369)). No experimental insert identity claim.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -494,7 +496,7 @@ by the corpus tests.</p>
   <td>is_annotated_starter_in</td>
   <td>Annotated PKS chain assembly</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q4WAY3/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4WAY3/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>UniProt release 2026_03. FUNCTION assigns one acetyl-CoA starter and five malonyl-CoA extender units; no balanced reaction or coproduct accounting is added.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q4WAY3/entry">https://www.uniprot.org/uniprotkb/Q4WAY3/entry</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q4WAY3/entry">https://www.uniprot.org/uniprotkb/Q4WAY3/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>UniProt release 2026_03. FUNCTION assigns one acetyl-CoA starter and five malonyl-CoA extender units; no balanced reaction or coproduct accounting is added.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -503,7 +505,7 @@ by the corpus tests.</p>
   <td>is_annotated_extender_in</td>
   <td>Annotated PKS chain assembly</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q4WAY3/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4WAY3/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>UniProt release 2026_03. FUNCTION assigns five malonyl-CoA extender units per chain.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q4WAY3/entry">https://www.uniprot.org/uniprotkb/Q4WAY3/entry</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q4WAY3/entry">https://www.uniprot.org/uniprotkb/Q4WAY3/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>UniProt release 2026_03. FUNCTION assigns five malonyl-CoA extender units per chain.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -512,7 +514,7 @@ by the corpus tests.</p>
   <td>is_annotated_to_form</td>
   <td>PKS-bound dodecapentaenoyl moiety</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q4WAY3/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4WAY3/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>UniProt release 2026_03. FUNCTION names the dodecapentaenoyl moiety; CATALYTIC ACTIVITY represents a PKS-bound donor but spells it dodecapentaneoyl. The discrepancy is retained; no free-acid product, chemical CURIE or reaction identifier is inferred.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q4WAY3/entry">https://www.uniprot.org/uniprotkb/Q4WAY3/entry</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q4WAY3/entry">https://www.uniprot.org/uniprotkb/Q4WAY3/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>UniProt release 2026_03. FUNCTION names the dodecapentaenoyl moiety; CATALYTIC ACTIVITY represents a PKS-bound donor but spells it dodecapentaneoyl. The discrepancy is retained; no free-acid product, chemical CURIE or reaction identifier is inferred.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -521,7 +523,7 @@ by the corpus tests.</p>
   <td>is_annotated_substrate_in</td>
   <td>Annotated terpene cyclization</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/M4VQY9/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/M4VQY9/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>UniProt release 2026_03. FUNCTION assigns FPP cyclization by af520; this is a database-backed precursor transformation, not a newly inspected primary assay.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/M4VQY9/entry">https://www.uniprot.org/uniprotkb/M4VQY9/entry</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/M4VQY9/entry">https://www.uniprot.org/uniprotkb/M4VQY9/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>UniProt release 2026_03. FUNCTION assigns FPP cyclization by af520; this is a database-backed precursor transformation, not a newly inspected primary assay.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -530,7 +532,7 @@ by the corpus tests.</p>
   <td>is_annotated_to_form</td>
   <td>beta-trans-bergamotene</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/M4VQY9/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/M4VQY9/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>UniProt release 2026_03. FUNCTION names beta-trans-bergamotene. Chemical stereochemical identifiers are not independently grounded here.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/M4VQY9/entry">https://www.uniprot.org/uniprotkb/M4VQY9/entry</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/M4VQY9/entry">https://www.uniprot.org/uniprotkb/M4VQY9/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>UniProt release 2026_03. FUNCTION names beta-trans-bergamotene. Chemical stereochemical identifiers are not independently grounded here.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -539,7 +541,7 @@ by the corpus tests.</p>
   <td>is_annotated_acyl_donor_in</td>
   <td>Annotated polyketide transfer</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q4WAY4/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4WAY4/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>UniProt release 2026_03. FUNCTION assigns transfer of the af370-derived dodecapentaenoyl group. CATALYTIC ACTIVITY identifies a PKS-bound donor but spells it dodecapentaneoyl; spelling conflict retained without chemical/Rhea grounding.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q4WAY4/entry">https://www.uniprot.org/uniprotkb/Q4WAY4/entry</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q4WAY4/entry">https://www.uniprot.org/uniprotkb/Q4WAY4/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>UniProt release 2026_03. FUNCTION assigns transfer of the af370-derived dodecapentaenoyl group. CATALYTIC ACTIVITY identifies a PKS-bound donor but spells it dodecapentaneoyl; spelling conflict retained without chemical/Rhea grounding.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -548,7 +550,7 @@ by the corpus tests.</p>
   <td>is_annotated_acceptor_in</td>
   <td>Annotated polyketide transfer</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q4WAY4/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4WAY4/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>UniProt release 2026_03. CATALYTIC ACTIVITY names fumagillol as acceptor; FUNCTION describes a 5R-hydroxy-seco-sesquiterpene. No complete pathway order is inferred.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q4WAY4/entry">https://www.uniprot.org/uniprotkb/Q4WAY4/entry</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q4WAY4/entry">https://www.uniprot.org/uniprotkb/Q4WAY4/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>UniProt release 2026_03. CATALYTIC ACTIVITY names fumagillol as acceptor; FUNCTION describes a 5R-hydroxy-seco-sesquiterpene. No complete pathway order is inferred.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -557,7 +559,7 @@ by the corpus tests.</p>
   <td>is_annotated_to_form</td>
   <td>Prefumagillin</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q4WAY4/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4WAY4/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>UniProt release 2026_03. FUNCTION and CATALYTIC ACTIVITY assign prefumagillin formation. No transfer yield, native essentiality, domain-level PKS mechanism or reconstituted pathway claim.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q4WAY4/entry">https://www.uniprot.org/uniprotkb/Q4WAY4/entry</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q4WAY4/entry">https://www.uniprot.org/uniprotkb/Q4WAY4/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>UniProt release 2026_03. FUNCTION and CATALYTIC ACTIVITY assign prefumagillin formation. No transfer yield, native essentiality, domain-level PKS mechanism or reconstituted pathway claim.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -565,16 +567,16 @@ by the corpus tests.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">18 nodes, 20 edges</span></h2>
-<p class="sub">Partial fumagillin genetic-regulation graph from DOI10.1371/journal.pone.0077147. Separate perturbation components retain the measured outcomes; unproven mediation links between them are intentionally omitted. Separate Af293 protein references, accession-unresolved experimental proteins, genes, perturbations and measured outcomes. CEA10 controls the VeA series; TSD51.1 controls CEA17ku80-derived fumR/laeA deletions. Both veA deletion and overexpression decrease expression and product signal. FumR deletion lowers the nine assayed cluster transcripts and makes fumagillin undetectable at the tested times. LaeA edges concern transcripts only. No direct promoter binding, protein-abundance measurement, velvet-complex assembly, universal essentiality, complete pathway or exact experimental-allele mapping is asserted.</p><div class="scroll"><table>
+<p class="sub">Partial fumagillin genetic-regulation graph from DOI10.1371/journal.pone.0077147. Separate perturbation components retain the measured outcomes; unproven mediation links between them are intentionally omitted. Separate Af293 protein references, accession-unresolved experimental proteins, genes, perturbations and measured outcomes. CEA10 controls the VeA series; TSD51.1 controls CEA17ku80-derived fumR/laeA deletions. Both veA deletion and overexpression decrease expression and product signal. FumR deletion lowers the nine assayed cluster transcripts and makes fumagillin undetectable at the tested times. LaeA edges concern transcripts only. No direct promoter binding, protein-abundance measurement, velvet-complex assembly, universal essentiality, complete pathway or exact experimental-allele mapping is asserted.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 6 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>FumR (Af293 reference, 622 aa)</td>
   <td>is_reference_example_for</td>
   <td>FumR (experimental strain series; allele unresolved)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q4WAY8/entry<br>https://www.ncbi.nlm.nih.gov/protein/EAL85124.1<br>DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4WAY8/entry</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Selected reference, not an identical experimental allele. AFUA_8G00420: native Af293 CDS, EAL85124.1 and UniProt2026_03 agree exactly at 622 aa; taxon330879. </dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/EAL85124.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Versioned reference identity. Complete spliced CDS, strand and coordinates independently verified: complement(join(AAHF01000014.1:698638..700031, AAHF01000014.1:700097..700364, AAHF01000014.1:700420..700626)).</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Table S1 names CEA10 as control for the VeA series and CEA17ku80-derived TSD51.1 control, TSD53.1 deltafumR and TSD62.1 deltalaeA. Af293 is the transcriptome reference, not proof of assay-strain allele identity. No full experimental allele sequence was established.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q4WAY8/entry">https://www.uniprot.org/uniprotkb/Q4WAY8/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/EAL85124.1">https://www.ncbi.nlm.nih.gov/protein/EAL85124.1</a><br><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q4WAY8/entry">https://www.uniprot.org/uniprotkb/Q4WAY8/entry</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Selected reference, not an identical experimental allele. AFUA_8G00420: native Af293 CDS, EAL85124.1 and UniProt2026_03 agree exactly at 622 aa; taxon330879. </dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/EAL85124.1">https://www.ncbi.nlm.nih.gov/protein/EAL85124.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Versioned reference identity. Complete spliced CDS, strand and coordinates independently verified: complement(join(AAHF01000014.1:698638..700031, AAHF01000014.1:700097..700364, AAHF01000014.1:700420..700626)).</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Table S1 names CEA10 as control for the VeA series and CEA17ku80-derived TSD51.1 control, TSD53.1 deltafumR and TSD62.1 deltalaeA. Af293 is the transcriptome reference, not proof of assay-strain allele identity. No full experimental allele sequence was established.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -583,7 +585,7 @@ by the corpus tests.</p>
   <td>encodes</td>
   <td>FumR (experimental strain series; allele unresolved)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Introduction/Results identify FumR as the product of the manipulated gene. This entity relationship is not a protein-abundance measurement or an exact-accession assignment. FumR is described as a putative C6 transcription factor; its DNA-binding motif is not direct evidence of promoter occupancy.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Introduction/Results identify FumR as the product of the manipulated gene. This entity relationship is not a protein-abundance measurement or an exact-accession assignment. FumR is described as a putative C6 transcription factor; its DNA-binding motif is not direct evidence of promoter occupancy.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -592,9 +594,9 @@ by the corpus tests.</p>
   <td>is_reference_example_for</td>
   <td>VeA (experimental strain series; allele unresolved)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/E9RCK4/entry<br>https://www.ncbi.nlm.nih.gov/protein/EAL90581.1<br>DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/E9RCK4/entry</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Selected reference, not an identical experimental allele. AFUA_1G12490: native Af293 CDS, EAL90581.1 and UniProt2026_03 agree exactly at 570 aa; taxon330879. </dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/EAL90581.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Versioned reference identity. Complete spliced CDS, strand and coordinates independently verified: complement(join(AAHF01000004.1:1042372..1043936 ,AAHF01000004.1:1044007..1044154)).</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Table S1 names CEA10 as control for the VeA series and CEA17ku80-derived TSD51.1 control, TSD53.1 deltafumR and TSD62.1 deltalaeA. Af293 is the transcriptome reference, not proof of assay-strain allele identity. No full experimental allele sequence was established.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/E9RCK4/entry">https://www.uniprot.org/uniprotkb/E9RCK4/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/EAL90581.1">https://www.ncbi.nlm.nih.gov/protein/EAL90581.1</a><br><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/E9RCK4/entry">https://www.uniprot.org/uniprotkb/E9RCK4/entry</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Selected reference, not an identical experimental allele. AFUA_1G12490: native Af293 CDS, EAL90581.1 and UniProt2026_03 agree exactly at 570 aa; taxon330879. </dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/EAL90581.1">https://www.ncbi.nlm.nih.gov/protein/EAL90581.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Versioned reference identity. Complete spliced CDS, strand and coordinates independently verified: complement(join(AAHF01000004.1:1042372..1043936 ,AAHF01000004.1:1044007..1044154)).</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Table S1 names CEA10 as control for the VeA series and CEA17ku80-derived TSD51.1 control, TSD53.1 deltafumR and TSD62.1 deltalaeA. Af293 is the transcriptome reference, not proof of assay-strain allele identity. No full experimental allele sequence was established.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -603,7 +605,7 @@ by the corpus tests.</p>
   <td>encodes</td>
   <td>VeA (experimental strain series; allele unresolved)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Introduction/Results identify VeA as the product of the manipulated gene. This entity relationship is not a protein-abundance measurement or an exact-accession assignment. No purified protein assay or directly demonstrated A. fumigatus VeA-LaeA interaction is asserted here.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Introduction/Results identify VeA as the product of the manipulated gene. This entity relationship is not a protein-abundance measurement or an exact-accession assignment. No purified protein assay or directly demonstrated A. fumigatus VeA-LaeA interaction is asserted here.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -612,9 +614,9 @@ by the corpus tests.</p>
   <td>is_reference_example_for</td>
   <td>LaeA (experimental strain series; allele unresolved)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q4WRY5/entry<br>https://www.ncbi.nlm.nih.gov/protein/EAL90797.1<br>DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4WRY5/entry</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Selected reference, not an identical experimental allele. AFUA_1G14660: native Af293 CDS, EAL90797.1 and UniProt2026_03 agree exactly at 373 aa; taxon330879. Alternative AAR01218.1 is flagged as an erroneous gene model in UniProt; it was not independently sequence-compared here. </dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/EAL90797.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Versioned reference identity. Complete spliced CDS, strand and coordinates independently verified: join(AAHF01000004.1:1670850..1671079, AAHF01000004.1:1671225..1672116).</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Table S1 names CEA10 as control for the VeA series and CEA17ku80-derived TSD51.1 control, TSD53.1 deltafumR and TSD62.1 deltalaeA. Af293 is the transcriptome reference, not proof of assay-strain allele identity. No full experimental allele sequence was established.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q4WRY5/entry">https://www.uniprot.org/uniprotkb/Q4WRY5/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/EAL90797.1">https://www.ncbi.nlm.nih.gov/protein/EAL90797.1</a><br><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q4WRY5/entry">https://www.uniprot.org/uniprotkb/Q4WRY5/entry</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Selected reference, not an identical experimental allele. AFUA_1G14660: native Af293 CDS, EAL90797.1 and UniProt2026_03 agree exactly at 373 aa; taxon330879. Alternative AAR01218.1 is flagged as an erroneous gene model in UniProt; it was not independently sequence-compared here. </dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/EAL90797.1">https://www.ncbi.nlm.nih.gov/protein/EAL90797.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Versioned reference identity. Complete spliced CDS, strand and coordinates independently verified: join(AAHF01000004.1:1670850..1671079, AAHF01000004.1:1671225..1672116).</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Table S1 names CEA10 as control for the VeA series and CEA17ku80-derived TSD51.1 control, TSD53.1 deltafumR and TSD62.1 deltalaeA. Af293 is the transcriptome reference, not proof of assay-strain allele identity. No full experimental allele sequence was established.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -623,7 +625,7 @@ by the corpus tests.</p>
   <td>encodes</td>
   <td>LaeA (experimental strain series; allele unresolved)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Introduction/Results identify LaeA as the product of the manipulated gene. This entity relationship is not a protein-abundance measurement or an exact-accession assignment. No purified protein assay or directly demonstrated A. fumigatus VeA-LaeA interaction is asserted here.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Introduction/Results identify LaeA as the product of the manipulated gene. This entity relationship is not a protein-abundance measurement or an exact-accession assignment. No purified protein assay or directly demonstrated A. fumigatus VeA-LaeA interaction is asserted here.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -632,7 +634,7 @@ by the corpus tests.</p>
   <td>replaces</td>
   <td>fumR gene (experimental strain series)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Methods, Figure S2, Table S1: fumR replaced by A. parasiticus pyrG in CEA17ku80; TSD53.1. PCR screening and Southern-blot validation reported. The marker is not a fumagillin biosynthetic enzyme.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Methods, Figure S2, Table S1: fumR replaced by A. parasiticus pyrG in CEA17ku80; TSD53.1. PCR screening and Southern-blot validation reported. The marker is not a fumagillin biosynthetic enzyme.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -641,7 +643,7 @@ by the corpus tests.</p>
   <td>replaces</td>
   <td>laeA gene (experimental strain series)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Methods, Figure S3, Table S1: laeA replaced by A. parasiticus pyrG in CEA17ku80; TSD62.1. Southern-blot validation reported.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Methods, Figure S3, Table S1: laeA replaced by A. parasiticus pyrG in CEA17ku80; TSD62.1. Southern-blot validation reported.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -650,7 +652,7 @@ by the corpus tests.</p>
   <td>deletes</td>
   <td>veA gene (experimental strain series)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Table S1: TSD1.15, pyrG1; delta-veA::pyrG A. fumigatus; CEA10 control. Genotype statement, not a direct protein-depletion measurement.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Table S1: TSD1.15, pyrG1; delta-veA::pyrG A. fumigatus; CEA10 control. Genotype statement, not a direct protein-depletion measurement.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -659,7 +661,7 @@ by the corpus tests.</p>
   <td>overexpresses</td>
   <td>veA gene (experimental strain series)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Table S1: TSD2.8, pyrG1; gpdA(p)::veA::trpC(t)::pyrG A. fumigatus. No quantitative VeA protein dosage measured in the represented assays.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Table S1: TSD2.8, pyrG1; gpdA(p)::veA::trpC(t)::pyrG A. fumigatus. No quantitative VeA protein dosage measured in the represented assays.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -668,7 +670,7 @@ by the corpus tests.</p>
   <td>results_in</td>
   <td>Lower assayed fumagillin-cluster transcript levels</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 5/Results: TSD53.1 versus TSD51.1 at 48 h and 72 h. Czapek-Dox stationary liquid cultures. qRT-PCR, 18S reference, three replicates with standard-error bars; transcript readout, not protein abundance or direct promoter binding. Nine assayed loci: Afu8g00370, Afu8g00520, Afu8g00380, Afu8g00510, Afu8g00500, Afu8g00480, Afu8g00470, Afu8g00440 and Afu8g00430. Afu8g00470 retains appreciable residual expression; not complete silencing of every cluster gene. Figure 5 labels, Results and Table S2 support Afu8g00380 where the caption mistakenly repeats Afu8g00370.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 5/Results: TSD53.1 versus TSD51.1 at 48 h and 72 h. Czapek-Dox stationary liquid cultures. qRT-PCR, 18S reference, three replicates with standard-error bars; transcript readout, not protein abundance or direct promoter binding. Nine assayed loci: Afu8g00370, Afu8g00520, Afu8g00380, Afu8g00510, Afu8g00500, Afu8g00480, Afu8g00470, Afu8g00440 and Afu8g00430. Afu8g00470 retains appreciable residual expression; not complete silencing of every cluster gene. Figure 5 labels, Results and Table S2 support Afu8g00380 where the caption mistakenly repeats Afu8g00370.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -677,7 +679,7 @@ by the corpus tests.</p>
   <td>results_in</td>
   <td>Fumagillin not detected in culture extract</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 6: TSD53.1 versus TSD51.1 at 72 h and 120 h. Czapek-Dox stationary liquid cultures. Chloroform-extracted supernatants analyzed by LC-MS; commercial fumagillin standard and three replicates. No detected fumagillin in the deletion strain under these conditions, not absolute zero or universal essentiality. No numerical detection limit or fumR complementation rescue is established by this experiment.</dd><dt>snippet</dt><dd>No fumagillin was detected</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 6: TSD53.1 versus TSD51.1 at 72 h and 120 h. Czapek-Dox stationary liquid cultures. Chloroform-extracted supernatants analyzed by LC-MS; commercial fumagillin standard and three replicates. No detected fumagillin in the deletion strain under these conditions, not absolute zero or universal essentiality. No numerical detection limit or fumR complementation rescue is established by this experiment.</dd><dt>snippet</dt><dd>No fumagillin was detected</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -686,7 +688,7 @@ by the corpus tests.</p>
   <td>results_in</td>
   <td>Lower fumR transcript level</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure S1A/Results: 72 h, CEA10 control, TSD1.15 deletion or TSD2.8 overexpression. Czapek-Dox stationary liquid cultures. qRT-PCR, 18S reference, three replicates with standard-error bars; transcript readout, not protein abundance or direct promoter binding. Authors report 12% of wild-type fumR expression. Both deletion and overexpression decrease this readout; no monotonic dosage rule is inferred.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure S1A/Results: 72 h, CEA10 control, TSD1.15 deletion or TSD2.8 overexpression. Czapek-Dox stationary liquid cultures. qRT-PCR, 18S reference, three replicates with standard-error bars; transcript readout, not protein abundance or direct promoter binding. Authors report 12% of wild-type fumR expression. Both deletion and overexpression decrease this readout; no monotonic dosage rule is inferred.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -695,7 +697,7 @@ by the corpus tests.</p>
   <td>results_in</td>
   <td>Lower Afu8g00370 PKS transcript level</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure S1B/Results: 72 h, CEA10 control, TSD1.15 deletion or TSD2.8 overexpression. Czapek-Dox stationary liquid cultures. qRT-PCR, 18S reference, three replicates with standard-error bars; transcript readout, not protein abundance or direct promoter binding. Authors report 3% of wild-type Afu8g00370 expression. This is a PKS-gene transcript measurement, not a PKS catalytic assay.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure S1B/Results: 72 h, CEA10 control, TSD1.15 deletion or TSD2.8 overexpression. Czapek-Dox stationary liquid cultures. qRT-PCR, 18S reference, three replicates with standard-error bars; transcript readout, not protein abundance or direct promoter binding. Authors report 3% of wild-type Afu8g00370 expression. This is a PKS-gene transcript measurement, not a PKS catalytic assay.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -704,7 +706,7 @@ by the corpus tests.</p>
   <td>results_in</td>
   <td>Lower relative fumagillin LC-MS signal</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 4A: 120 h, CEA10 control, TSD1.15 deletion or TSD2.8 overexpression; TSD3.5 complementation also shown. Czapek-Dox stationary liquid cultures. Extracted-ion LC-MS signal for fumagillin, m/z459 [M+H]+, normalized to wild type; three samples and standard-error bars. Both perturbations reduce the signal. This qualitative direction does not imply complete loss, absolute yield or a quantitative protein-dosage response.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 4A: 120 h, CEA10 control, TSD1.15 deletion or TSD2.8 overexpression; TSD3.5 complementation also shown. Czapek-Dox stationary liquid cultures. Extracted-ion LC-MS signal for fumagillin, m/z459 [M+H]+, normalized to wild type; three samples and standard-error bars. Both perturbations reduce the signal. This qualitative direction does not imply complete loss, absolute yield or a quantitative protein-dosage response.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -713,7 +715,7 @@ by the corpus tests.</p>
   <td>results_in</td>
   <td>Lower fumR transcript level</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure S1A/Results: 72 h, CEA10 control, TSD1.15 deletion or TSD2.8 overexpression. Czapek-Dox stationary liquid cultures. qRT-PCR, 18S reference, three replicates with standard-error bars; transcript readout, not protein abundance or direct promoter binding. Authors report 5% of wild-type fumR expression. Both deletion and overexpression decrease this readout; no monotonic dosage rule is inferred.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure S1A/Results: 72 h, CEA10 control, TSD1.15 deletion or TSD2.8 overexpression. Czapek-Dox stationary liquid cultures. qRT-PCR, 18S reference, three replicates with standard-error bars; transcript readout, not protein abundance or direct promoter binding. Authors report 5% of wild-type fumR expression. Both deletion and overexpression decrease this readout; no monotonic dosage rule is inferred.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -722,7 +724,7 @@ by the corpus tests.</p>
   <td>results_in</td>
   <td>Lower Afu8g00370 PKS transcript level</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure S1B/Results: 72 h, CEA10 control, TSD1.15 deletion or TSD2.8 overexpression. Czapek-Dox stationary liquid cultures. qRT-PCR, 18S reference, three replicates with standard-error bars; transcript readout, not protein abundance or direct promoter binding. Authors report 0.1% of wild-type Afu8g00370 expression. This is a PKS-gene transcript measurement, not a PKS catalytic assay.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure S1B/Results: 72 h, CEA10 control, TSD1.15 deletion or TSD2.8 overexpression. Czapek-Dox stationary liquid cultures. qRT-PCR, 18S reference, three replicates with standard-error bars; transcript readout, not protein abundance or direct promoter binding. Authors report 0.1% of wild-type Afu8g00370 expression. This is a PKS-gene transcript measurement, not a PKS catalytic assay.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -731,7 +733,7 @@ by the corpus tests.</p>
   <td>results_in</td>
   <td>Lower relative fumagillin LC-MS signal</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 4A: 120 h, CEA10 control, TSD1.15 deletion or TSD2.8 overexpression; TSD3.5 complementation also shown. Czapek-Dox stationary liquid cultures. Extracted-ion LC-MS signal for fumagillin, m/z459 [M+H]+, normalized to wild type; three samples and standard-error bars. Both perturbations reduce the signal. This qualitative direction does not imply complete loss, absolute yield or a quantitative protein-dosage response.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 4A: 120 h, CEA10 control, TSD1.15 deletion or TSD2.8 overexpression; TSD3.5 complementation also shown. Czapek-Dox stationary liquid cultures. Extracted-ion LC-MS signal for fumagillin, m/z459 [M+H]+, normalized to wild type; three samples and standard-error bars. Both perturbations reduce the signal. This qualitative direction does not imply complete loss, absolute yield or a quantitative protein-dosage response.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -740,7 +742,7 @@ by the corpus tests.</p>
   <td>results_in</td>
   <td>Lower fumR transcript level</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 7 upper panel/Results: TSD62.1 versus corresponding control TSD51.1, 48 h and 72 h respectively. Czapek-Dox stationary liquid cultures. qRT-PCR, 18S reference, three replicates with standard-error bars; transcript readout, not protein abundance or direct promoter binding. Authors report 3% and 8% of wild-type transcript levels. No LaeA-specific fumagillin production assay or mediation through FumR is asserted from these expression data alone.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 7 upper panel/Results: TSD62.1 versus corresponding control TSD51.1, 48 h and 72 h respectively. Czapek-Dox stationary liquid cultures. qRT-PCR, 18S reference, three replicates with standard-error bars; transcript readout, not protein abundance or direct promoter binding. Authors report 3% and 8% of wild-type transcript levels. No LaeA-specific fumagillin production assay or mediation through FumR is asserted from these expression data alone.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -749,7 +751,7 @@ by the corpus tests.</p>
   <td>results_in</td>
   <td>Lower Afu8g00370 PKS transcript level</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 7 lower panel/Results: TSD62.1 versus corresponding control TSD51.1, 48 h and 72 h respectively. Czapek-Dox stationary liquid cultures. qRT-PCR, 18S reference, three replicates with standard-error bars; transcript readout, not protein abundance or direct promoter binding. Authors report 9% and 7% of wild-type transcript levels. No LaeA-specific fumagillin production assay or mediation through FumR is asserted from these expression data alone.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1371/journal.pone.0077147">DOI:10.1371/journal.pone.0077147</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 7 lower panel/Results: TSD62.1 versus corresponding control TSD51.1, 48 h and 72 h respectively. Czapek-Dox stationary liquid cultures. qRT-PCR, 18S reference, three replicates with standard-error bars; transcript readout, not protein abundance or direct promoter binding. Authors report 9% and 7% of wild-type transcript levels. No LaeA-specific fumagillin production assay or mediation through FumR is asserted from these expression data alone.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -757,16 +759,16 @@ by the corpus tests.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 4 edges</span></h2>
-<p class="sub">Partial fumagillin regulation view: AceA deletion and the reported Afu8g00430 transcript difference under copper stress. The independently verified Af293 protein is a separate reference, not the experimental allele. This paper measures RNA, not enzyme catalysis. Only the shared Figure2/Table S11 locus claim is added; broader cluster labels and other loci are not generalized. No direct promoter binding, protein-abundance measurement, product yield, universal essentiality or complete pathway is asserted. Strain and growth-time wording differences remain explicit in evidence.</p><div class="scroll"><table>
+<p class="sub">Partial fumagillin regulation view: AceA deletion and the reported Afu8g00430 transcript difference under copper stress. The independently verified Af293 protein is a separate reference, not the experimental allele. This paper measures RNA, not enzyme catalysis. Only the shared Figure2/Table S11 locus claim is added; broader cluster labels and other loci are not generalized. No direct promoter binding, protein-abundance measurement, product yield, universal essentiality or complete pathway is asserted. Strain and growth-time wording differences remain explicit in evidence.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 7 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>AceA (Af293 reference, 667 aa)</td>
   <td>is_reference_example_for</td>
   <td>AceA (experimental strain; allele unresolved)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q4WN33/entry<br>https://www.ncbi.nlm.nih.gov/protein/EAL88631.1<br>DOI:10.1080/21505594.2021.1958057</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4WN33/entry</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Selected reference, not an identical experimental allele. UniProt2026_03 Q4WN33, native AFUA_6G07780 spliced CDS and GenPept EAL88631.1 agree exactly at 667 aa; Af293 taxon330879. The paper uses a different strain background and does not establish its complete AceA allele sequence.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/EAL88631.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Complete versioned native reference; coded_by complement(join(AAHF01000006.1:457442..457708,457749..457877,458448..459805,459861..460034,460105..460180)). Genomic strand, exact coordinates, start/stop and translation independently checked.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1080/21505594.2021.1958057</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Table S1 identifies the experimental deletion as delta-akuB::PyrG1, delta-AFUB_073740::PyrG in akuBKU80, CEA17 background. Methods and this table take precedence for strain description; Results also calls WT A1163. No Af293-to-experimental sequence identity is asserted.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q4WN33/entry">https://www.uniprot.org/uniprotkb/Q4WN33/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/EAL88631.1">https://www.ncbi.nlm.nih.gov/protein/EAL88631.1</a><br><a href="https://doi.org/10.1080/21505594.2021.1958057">DOI:10.1080/21505594.2021.1958057</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q4WN33/entry">https://www.uniprot.org/uniprotkb/Q4WN33/entry</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Selected reference, not an identical experimental allele. UniProt2026_03 Q4WN33, native AFUA_6G07780 spliced CDS and GenPept EAL88631.1 agree exactly at 667 aa; Af293 taxon330879. The paper uses a different strain background and does not establish its complete AceA allele sequence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/EAL88631.1">https://www.ncbi.nlm.nih.gov/protein/EAL88631.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Complete versioned native reference; coded_by complement(join(AAHF01000006.1:457442..457708,457749..457877,458448..459805,459861..460034,460105..460180)). Genomic strand, exact coordinates, start/stop and translation independently checked.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1080/21505594.2021.1958057">DOI:10.1080/21505594.2021.1958057</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Table S1 identifies the experimental deletion as delta-akuB::PyrG1, delta-AFUB_073740::PyrG in akuBKU80, CEA17 background. Methods and this table take precedence for strain description; Results also calls WT A1163. No Af293-to-experimental sequence identity is asserted.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -775,7 +777,7 @@ by the corpus tests.</p>
   <td>encodes</td>
   <td>AceA (experimental strain; allele unresolved)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1080/21505594.2021.1958057</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1080/21505594.2021.1958057</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Introduction and Results identify AceA as the transcription factor encoded by aceA. This is an entity relationship, not a measurement of protein abundance, purified-protein activity or direct binding to this promoter.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1080/21505594.2021.1958057">DOI:10.1080/21505594.2021.1958057</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1080/21505594.2021.1958057">DOI:10.1080/21505594.2021.1958057</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Introduction and Results identify AceA as the transcription factor encoded by aceA. This is an entity relationship, not a measurement of protein abundance, purified-protein activity or direct binding to this promoter.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -784,7 +786,7 @@ by the corpus tests.</p>
   <td>replaces</td>
   <td>aceA gene (experimental AFUB_073740 locus)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1080/21505594.2021.1958057</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1080/21505594.2021.1958057</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Table S1, PDF page3: delta-AFUB_073740::PyrG in the akuBKU80 CEA17 background; corresponding akuBKU80 WT control. The deletion strain is attributed to Weimann2017 by the table. No newly performed complementation or full-allele sequencing is inferred.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1080/21505594.2021.1958057">DOI:10.1080/21505594.2021.1958057</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1080/21505594.2021.1958057">DOI:10.1080/21505594.2021.1958057</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Table S1, PDF page3: delta-AFUB_073740::PyrG in the akuBKU80 CEA17 background; corresponding akuBKU80 WT control. The deletion strain is attributed to Weimann2017 by the table. No newly performed complementation or full-allele sequencing is inferred.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -793,7 +795,7 @@ by the corpus tests.</p>
   <td>results_in</td>
   <td>Lower Afu8g00430 transcript under copper stress</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1080/21505594.2021.1958057</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1080/21505594.2021.1958057</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure2a/c explicitly compares WT(+Cu)/deltaaceA(+Cu); Afu8g00430 is higher in WT, also listed in the upregulated group in Table S11A. Thus the deletion strain has lower transcript abundance under this comparison. RNAseq, three samples per group, MM liquid, 37 C, 200 uM Cu for1 h. Methods specifies24 h growth plus1 h exposure; Results says25 h before exposure, a retained discrepancy. Reads mapped to A1163; the Afu locus label is retained as printed, not assigned an exact experimental protein accession. The reported2.42 ratio and category enrichment P-value are not turned into a new per-gene statistical or protein measurement. This is not whole-cluster silencing, direct AceA-promoter occupancy, FumR mediation or a fumagillin product-yield assay.</dd><dt>snippet</dt><dd>AceA directly or indirectly activates these genes</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1080/21505594.2021.1958057">DOI:10.1080/21505594.2021.1958057</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1080/21505594.2021.1958057">DOI:10.1080/21505594.2021.1958057</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure2a/c explicitly compares WT(+Cu)/deltaaceA(+Cu); Afu8g00430 is higher in WT, also listed in the upregulated group in Table S11A. Thus the deletion strain has lower transcript abundance under this comparison. RNAseq, three samples per group, MM liquid, 37 C, 200 uM Cu for1 h. Methods specifies24 h growth plus1 h exposure; Results says25 h before exposure, a retained discrepancy. Reads mapped to A1163; the Afu locus label is retained as printed, not assigned an exact experimental protein accession. The reported2.42 ratio and category enrichment P-value are not turned into a new per-gene statistical or protein measurement. This is not whole-cluster silencing, direct AceA-promoter occupancy, FumR mediation or a fumagillin product-yield assay.</dd><dt>snippet</dt><dd>AceA directly or indirectly activates these genes</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -801,16 +803,16 @@ by the corpus tests.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 6 edges</span></h2>
-<p class="sub">Partial fumagillin biosynthesis view: pptA genetic deletion and native-locus rescue in CEA10-derived A1160p+, with the bounded LC-MS detection phenotype. A separately sequence-verified CEA10/A1163 reference is not equated to the experimental allele. No direct PptA-to-FmaPKS priming, catalytic substrate/product step, protein-abundance measurement, universal essentiality or fumagillin-mediated virulence mechanism is asserted; the paper&#39;s recombinant activity assay uses AarA.</p><div class="scroll"><table>
+<p class="sub">Partial fumagillin biosynthesis view: pptA genetic deletion and native-locus rescue in CEA10-derived A1160p+, with the bounded LC-MS detection phenotype. A separately sequence-verified CEA10/A1163 reference is not equated to the experimental allele. No direct PptA-to-FmaPKS priming, catalytic substrate/product step, protein-abundance measurement, universal essentiality or fumagillin-mediated virulence mechanism is asserted; the paper&#39;s recombinant activity assay uses AarA.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 8 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>PptA (CEA10/A1163 reference, 357 aa)</td>
   <td>is_reference_example_for</td>
   <td>PptA (A1160p+ experimental allele unresolved)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/B0XWE4/entry<br>https://www.ncbi.nlm.nih.gov/protein/EDP54396.1<br>DOI:10.1128/mbio.01504-16</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/B0XWE4/entry</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Selected genomic reference, not a proven identical experimental allele. Unreviewed UniProt B0XWE4, AFUB_024520, taxon451804 CEA10/A1163, 357 aa. Complete native CDS translation, GenPept and UniProt sequence agree exactly. Prefer the matching AFUB locus/background over reviewed but different Af293 Q4X1W0.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/EDP54396.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Versioned A1163 native reference EDP54396.1, coded_by DS499595.1:2189402..2190475. Exact start/stop, coordinates, strand and complete translation independently checked. This is not full experimental-allele or recombinant-construct sequencing.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1128/mbio.01504-16</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Methods uses CADRE pptA AFUB_024520A. Table1 and Strains identify the parent as A1160p+, derived from CEA10 with Ku80 deletion and pyrG+. Shared locus/background supports a reference example, not full allele identity.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/B0XWE4/entry">https://www.uniprot.org/uniprotkb/B0XWE4/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/EDP54396.1">https://www.ncbi.nlm.nih.gov/protein/EDP54396.1</a><br><a href="https://doi.org/10.1128/mbio.01504-16">DOI:10.1128/mbio.01504-16</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/B0XWE4/entry">https://www.uniprot.org/uniprotkb/B0XWE4/entry</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Selected genomic reference, not a proven identical experimental allele. Unreviewed UniProt B0XWE4, AFUB_024520, taxon451804 CEA10/A1163, 357 aa. Complete native CDS translation, GenPept and UniProt sequence agree exactly. Prefer the matching AFUB locus/background over reviewed but different Af293 Q4X1W0.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/EDP54396.1">https://www.ncbi.nlm.nih.gov/protein/EDP54396.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Versioned A1163 native reference EDP54396.1, coded_by DS499595.1:2189402..2190475. Exact start/stop, coordinates, strand and complete translation independently checked. This is not full experimental-allele or recombinant-construct sequencing.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/mbio.01504-16">DOI:10.1128/mbio.01504-16</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Methods uses CADRE pptA AFUB_024520A. Table1 and Strains identify the parent as A1160p+, derived from CEA10 with Ku80 deletion and pyrG+. Shared locus/background supports a reference example, not full allele identity.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -819,7 +821,7 @@ by the corpus tests.</p>
   <td>encodes</td>
   <td>PptA (A1160p+ experimental allele unresolved)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/mbio.01504-16</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/mbio.01504-16</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Results and Methods identify pptA as the gene encoding phosphopantetheinyl transferase PptA. This entity relationship is not a protein-abundance measurement or a purified FmaPKS activation assay.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/mbio.01504-16">DOI:10.1128/mbio.01504-16</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/mbio.01504-16">DOI:10.1128/mbio.01504-16</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Results and Methods identify pptA as the gene encoding phosphopantetheinyl transferase PptA. This entity relationship is not a protein-abundance measurement or a purified FmaPKS activation assay.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -828,7 +830,7 @@ by the corpus tests.</p>
   <td>replaces</td>
   <td>pptA gene (experimental AFUB_024520 locus)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/mbio.01504-16</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/mbio.01504-16</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Table1, mutant-generation Methods and Figure S4A: delta-pptA is derived from A1160p+, carries the hph replacement cassette and lacks pptA. PCR and Southern blotting verify locus recombination; Table S4 lists the genetic primers.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/mbio.01504-16">DOI:10.1128/mbio.01504-16</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/mbio.01504-16">DOI:10.1128/mbio.01504-16</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Table1, mutant-generation Methods and Figure S4A: delta-pptA is derived from A1160p+, carries the hph replacement cassette and lacks pptA. PCR and Southern blotting verify locus recombination; Table S4 lists the genetic primers.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -837,7 +839,7 @@ by the corpus tests.</p>
   <td>restores</td>
   <td>pptA gene (experimental AFUB_024520 locus)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/mbio.01504-16</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/mbio.01504-16</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Methods restores pptA at its original locus using a fragment amplified with P1/P4; Table1 describes pptA rec derived from delta-pptA, hph negative. PCR and Southern blotting (Figure S4A) confirm recombination. Selection was on VMM lacking supplemental lysine and iron; that selection medium is not substituted for the metabolite-assay medium.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/mbio.01504-16">DOI:10.1128/mbio.01504-16</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/mbio.01504-16">DOI:10.1128/mbio.01504-16</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Methods restores pptA at its original locus using a fragment amplified with P1/P4; Table1 describes pptA rec derived from delta-pptA, hph negative. PCR and Southern blotting (Figure S4A) confirm recombination. Selection was on VMM lacking supplemental lysine and iron; that selection medium is not substituted for the metabolite-assay medium.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -846,7 +848,7 @@ by the corpus tests.</p>
   <td>results_in</td>
   <td>Fumagillin peak not detected in 7-day SAB extract</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/mbio.01504-16</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/mbio.01504-16</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure2B and Secondary metabolite assay Methods: A1160p+ parent, delta-pptA and pptA rec; 1e7 spores in 100 mL SAB for 7 days at 30 C; equal-volume ethyl-acetate extraction of supernatants, dried and redissolved in 1 mL methanol. Fumagillin is assigned at retention time 13.50 min; identification uses retention time and exact mass against isolated standards. The displayed trace is absorbance in mAU. No numerical detection limit, biomass-normalized yield, replicate count or metabolite-specific supplementation regimen is supplied for this comparison. Results reports absence of the named peaks, including fumagillin, in delta-pptA; parent provides the positive comparison and medium-only extract the background control. This means not detected under these conditions, not absolute zero biosynthesis, all-metabolite absence or universal essentiality.</dd><dt>snippet</dt><dd>None of these peaks was identified</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/mbio.01504-16">DOI:10.1128/mbio.01504-16</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/mbio.01504-16">DOI:10.1128/mbio.01504-16</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure2B and Secondary metabolite assay Methods: A1160p+ parent, delta-pptA and pptA rec; 1e7 spores in 100 mL SAB for 7 days at 30 C; equal-volume ethyl-acetate extraction of supernatants, dried and redissolved in 1 mL methanol. Fumagillin is assigned at retention time 13.50 min; identification uses retention time and exact mass against isolated standards. The displayed trace is absorbance in mAU. No numerical detection limit, biomass-normalized yield, replicate count or metabolite-specific supplementation regimen is supplied for this comparison. Results reports absence of the named peaks, including fumagillin, in delta-pptA; parent provides the positive comparison and medium-only extract the background control. This means not detected under these conditions, not absolute zero biosynthesis, all-metabolite absence or universal essentiality.</dd><dt>snippet</dt><dd>None of these peaks was identified</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -855,7 +857,7 @@ by the corpus tests.</p>
   <td>results_in</td>
   <td>Fumagillin peak restored in 7-day SAB extract</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/mbio.01504-16</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/mbio.01504-16</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure2B and Secondary metabolite assay Methods: A1160p+ parent, delta-pptA and pptA rec; 1e7 spores in 100 mL SAB for 7 days at 30 C; equal-volume ethyl-acetate extraction of supernatants, dried and redissolved in 1 mL methanol. Fumagillin is assigned at retention time 13.50 min; identification uses retention time and exact mass against isolated standards. The displayed trace is absorbance in mAU. No numerical detection limit, biomass-normalized yield, replicate count or metabolite-specific supplementation regimen is supplied for this comparison. The reconstituted isolate restores the fumagillin-associated peak and a parental-like profile. This is qualitative genetic rescue, not a quantified fold change or equal normalized production rate.</dd><dt>snippet</dt><dd>consistent with that of the parental isolate</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/mbio.01504-16">DOI:10.1128/mbio.01504-16</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/mbio.01504-16">DOI:10.1128/mbio.01504-16</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure2B and Secondary metabolite assay Methods: A1160p+ parent, delta-pptA and pptA rec; 1e7 spores in 100 mL SAB for 7 days at 30 C; equal-volume ethyl-acetate extraction of supernatants, dried and redissolved in 1 mL methanol. Fumagillin is assigned at retention time 13.50 min; identification uses retention time and exact mass against isolated standards. The displayed trace is absorbance in mAU. No numerical detection limit, biomass-normalized yield, replicate count or metabolite-specific supplementation regimen is supplied for this comparison. The reconstituted isolate restores the fumagillin-associated peak and a parental-like profile. This is qualitative genetic rescue, not a quantified fold change or equal normalized production rate.</dd><dt>snippet</dt><dd>consistent with that of the parental isolate</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -863,15 +865,15 @@ by the corpus tests.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 6 edges</span></h2>
-<p class="sub">Partial fumagillin genetic-regulation view: ppzA deletion and complementation under iron depletion. The independently sequence-verified CEA10/A1163 reference is not equated to the experimental CEA17 allele. Preserve the unspecified Figure4 timepoint, non-specific metal chelation and qualitative LC-MS scope. No direct phosphatase substrate, complete pathway, iron-repletion reduction, universal essentiality or fumagillin-mediated virulence is asserted.</p><div class="scroll"><table>
+<p class="sub">Partial fumagillin genetic-regulation view: ppzA deletion and complementation under iron depletion. The independently sequence-verified CEA10/A1163 reference is not equated to the experimental CEA17 allele. Preserve the unspecified Figure4 timepoint, non-specific metal chelation and qualitative LC-MS scope. No direct phosphatase substrate, complete pathway, iron-repletion reduction, universal essentiality or fumagillin-mediated virulence is asserted.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 9 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>PpzA (CEA10/A1163 reference, 540 aa)</td>
   <td>is_reference_example_for</td>
   <td>PpzA (CEA17 experimental allele unresolved)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/B0XUR7/entry<br>https://www.ncbi.nlm.nih.gov/protein/EDP54052.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/B0XUR7/entry</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Selected reference, not a proven identical experimental allele. Reviewed UniProt2026_03 B0XUR7 names ppzA/AFUB_021020, CEA10/A1163 taxon451804,540 aa and cites both primary papers for function/disruption. Complete native CDS, GenPept and UniProt sequence agree exactly.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/EDP54052.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Versioned A1163 EDP54052.1, coded_by complement(join(DS499595.1:1057660..1057944,DS499595.1:1058020..1059357)). Exact strand, splicing, start/stop and translation checked. Native reference identity does not establish the complete CEA17 experimental allele.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/B0XUR7/entry">https://www.uniprot.org/uniprotkb/B0XUR7/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/EDP54052.1">https://www.ncbi.nlm.nih.gov/protein/EDP54052.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/B0XUR7/entry">https://www.uniprot.org/uniprotkb/B0XUR7/entry</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Selected reference, not a proven identical experimental allele. Reviewed UniProt2026_03 B0XUR7 names ppzA/AFUB_021020, CEA10/A1163 taxon451804,540 aa and cites both primary papers for function/disruption. Complete native CDS, GenPept and UniProt sequence agree exactly.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/EDP54052.1">https://www.ncbi.nlm.nih.gov/protein/EDP54052.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Versioned A1163 EDP54052.1, coded_by complement(join(DS499595.1:1057660..1057944,DS499595.1:1058020..1059357)). Exact strand, splicing, start/stop and translation checked. Native reference identity does not establish the complete CEA17 experimental allele.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -880,7 +882,7 @@ by the corpus tests.</p>
   <td>encodes</td>
   <td>PpzA (CEA17 experimental allele unresolved)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1111/cmi.12770</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1111/cmi.12770</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>The paper identifies ppzA as encoding protein phosphatase Z PpzA; Methods4.2 names CEA17 pyrG+/pyrG- akuBKU80 parental backgrounds. Gene identity is not a direct measurement of protein abundance or a specific fumagillin-enzyme substrate assignment.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1111/cmi.12770">DOI:10.1111/cmi.12770</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1111/cmi.12770">DOI:10.1111/cmi.12770</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>The paper identifies ppzA as encoding protein phosphatase Z PpzA; Methods4.2 names CEA17 pyrG+/pyrG- akuBKU80 parental backgrounds. Gene identity is not a direct measurement of protein abundance or a specific fumagillin-enzyme substrate assignment.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -889,7 +891,7 @@ by the corpus tests.</p>
   <td>deletes</td>
   <td>ppzA gene (CEA17 experimental background)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1534/g3.115.016766</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1534/g3.115.016766</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>The2015 Materials and Methods, Strains and DNA manipulations sections, specify CEA17-80 ku80-/pyrG- as deletion recipient and pyrG replacement strategy. Table1 labels PpzA with reference locus Afu2g03950; this does not make the mutant an Af293 strain.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1534/g3.115.016766">DOI:10.1534/g3.115.016766</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1534/g3.115.016766">DOI:10.1534/g3.115.016766</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>The2015 Materials and Methods, Strains and DNA manipulations sections, specify CEA17-80 ku80-/pyrG- as deletion recipient and pyrG replacement strategy. Table1 labels PpzA with reference locus Afu2g03950; this does not make the mutant an Af293 strain.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -898,7 +900,7 @@ by the corpus tests.</p>
   <td>reintroduces</td>
   <td>ppzA gene (CEA17 experimental background)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1111/cmi.12770</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1111/cmi.12770</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Methods4.3 reports co-transformation of the ppzA ORF with about1 kb each flanking region plus pHATalpha, hygromycin selection and PCR confirmation. The integration site and copy number are not established here; do not call this proven native-locus restoration.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1111/cmi.12770">DOI:10.1111/cmi.12770</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1111/cmi.12770">DOI:10.1111/cmi.12770</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Methods4.3 reports co-transformation of the ppzA ORF with about1 kb each flanking region plus pHATalpha, hygromycin selection and PCR confirmation. The integration site and copy number are not established here; do not call this proven native-locus restoration.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -907,7 +909,7 @@ by the corpus tests.</p>
   <td>results_in</td>
   <td>Lower fumagillin LC-MS signal under iron depletion</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1111/cmi.12770</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1111/cmi.12770</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure4a and Methods4.6: CEA17 wild type, delta-ppzA and complemented strain; 5e7 spores, MM for24 h at37 C and200 rpm, then iron-free MM with200 uM BPS and300 uM ferrozine; triplicate conditions. Methods lists2 and4 h transfers, but Figure4 does not assign a particular timepoint. Fumagillin EIC m/z459.23 [M+H]+ is a qualitative readout, not a biomass-normalized production rate or absolute yield. Results2.3 and Discussion specifically support reduced fumagillin under iron depletion. No all-condition absence, quantitative fold change or iron-repletion reduction is inferred. Growth effects and chelation of other metals are not excluded.</dd><dt>snippet</dt><dd>reduction in the production of fumagillin during iron starvation</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1111/cmi.12770">DOI:10.1111/cmi.12770</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1111/cmi.12770">DOI:10.1111/cmi.12770</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure4a and Methods4.6: CEA17 wild type, delta-ppzA and complemented strain; 5e7 spores, MM for24 h at37 C and200 rpm, then iron-free MM with200 uM BPS and300 uM ferrozine; triplicate conditions. Methods lists2 and4 h transfers, but Figure4 does not assign a particular timepoint. Fumagillin EIC m/z459.23 [M+H]+ is a qualitative readout, not a biomass-normalized production rate or absolute yield. Results2.3 and Discussion specifically support reduced fumagillin under iron depletion. No all-condition absence, quantitative fold change or iron-repletion reduction is inferred. Growth effects and chelation of other metals are not excluded.</dd><dt>snippet</dt><dd>reduction in the production of fumagillin during iron starvation</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -916,7 +918,7 @@ by the corpus tests.</p>
   <td>results_in</td>
   <td>Higher fumagillin LC-MS signal after complementation</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1111/cmi.12770</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1111/cmi.12770</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure4a and Methods4.6: CEA17 wild type, delta-ppzA and complemented strain; 5e7 spores, MM for24 h at37 C and200 rpm, then iron-free MM with200 uM BPS and300 uM ferrozine; triplicate conditions. Methods lists2 and4 h transfers, but Figure4 does not assign a particular timepoint. Fumagillin EIC m/z459.23 [M+H]+ is a qualitative readout, not a biomass-normalized production rate or absolute yield. Figure4a shows a higher complemented-strain fumagillin peak than deletion; Results describes increased or comparable secondary-metabolite production versus wild type. Qualitative genetic rescue is not proof of equal wild-type yield, insertion-site identity or a direct phosphatase reaction.</dd><dt>snippet</dt><dd>complementing strain has increased or comparable SM production</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1111/cmi.12770">DOI:10.1111/cmi.12770</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1111/cmi.12770">DOI:10.1111/cmi.12770</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure4a and Methods4.6: CEA17 wild type, delta-ppzA and complemented strain; 5e7 spores, MM for24 h at37 C and200 rpm, then iron-free MM with200 uM BPS and300 uM ferrozine; triplicate conditions. Methods lists2 and4 h transfers, but Figure4 does not assign a particular timepoint. Fumagillin EIC m/z459.23 [M+H]+ is a qualitative readout, not a biomass-normalized production rate or absolute yield. Figure4a shows a higher complemented-strain fumagillin peak than deletion; Results describes increased or comparable secondary-metabolite production versus wild type. Qualitative genetic rescue is not proof of equal wild-type yield, insertion-site identity or a direct phosphatase reaction.</dd><dt>snippet</dt><dd>complementing strain has increased or comparable SM production</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -924,16 +926,16 @@ by the corpus tests.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">11 nodes, 9 edges</span></h2>
-<p class="sub">Partial fumagillin genetic-regulation view: SreA and HapX deletion outcomes at specified iron concentrations. Separate perturbation components intentionally omit unproven mediation links. Af293 protein references are not equated to experimental ATCC46645 alleles. HPLC-PDA peak areas are dry-weight normalized and compared with WT at each iron condition. No direct promoter binding, protein-abundance measurement, universal essentiality, complete pathway or rescue claim is asserted.</p><div class="scroll"><table>
+<p class="sub">Partial fumagillin genetic-regulation view: SreA and HapX deletion outcomes at specified iron concentrations. Separate perturbation components intentionally omit unproven mediation links. Af293 protein references are not equated to experimental ATCC46645 alleles. HPLC-PDA peak areas are dry-weight normalized and compared with WT at each iron condition. No direct promoter binding, protein-abundance measurement, universal essentiality, complete pathway or rescue claim is asserted.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 10 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>SreA (Af293 reference, 546 aa)</td>
   <td>is_reference_example_for</td>
   <td>SreA (ATCC46645 experimental allele unresolved)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q4WV91/entry<br>https://www.ncbi.nlm.nih.gov/protein/EAL91485.1<br>DOI:10.3389/fmicb.2014.00530</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4WV91/entry</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Selected Af293 reference, not an identical ATCC46645 allele. Reviewed UniProt Q4WV91, AFUA_5G11260, taxon330879, 546 aa agrees exactly with versioned GenPept and the complete native genomic CDS translation.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/EAL91485.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Native Af293 EAL91485.1: exact locus, strand, complete start/stop and translation checked against UniProt. The versioned protein and its linked nucleotide sequence do not establish the complete experimental allele.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.3389/fmicb.2014.00530</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Methods, Strains and culture conditions, identifies ATCC46645 as the wild type for these metabolite experiments; Af293 is used in a separate RNA-seq series. This supports selecting a separate named reference example, not assigning the Af293 accession to the experimental allele. No strain equivalence is asserted.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q4WV91/entry">https://www.uniprot.org/uniprotkb/Q4WV91/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/EAL91485.1">https://www.ncbi.nlm.nih.gov/protein/EAL91485.1</a><br><a href="https://doi.org/10.3389/fmicb.2014.00530">DOI:10.3389/fmicb.2014.00530</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q4WV91/entry">https://www.uniprot.org/uniprotkb/Q4WV91/entry</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Selected Af293 reference, not an identical ATCC46645 allele. Reviewed UniProt Q4WV91, AFUA_5G11260, taxon330879, 546 aa agrees exactly with versioned GenPept and the complete native genomic CDS translation.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/EAL91485.1">https://www.ncbi.nlm.nih.gov/protein/EAL91485.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Native Af293 EAL91485.1: exact locus, strand, complete start/stop and translation checked against UniProt. The versioned protein and its linked nucleotide sequence do not establish the complete experimental allele.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.3389/fmicb.2014.00530">DOI:10.3389/fmicb.2014.00530</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Methods, Strains and culture conditions, identifies ATCC46645 as the wild type for these metabolite experiments; Af293 is used in a separate RNA-seq series. This supports selecting a separate named reference example, not assigning the Af293 accession to the experimental allele. No strain equivalence is asserted.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -942,7 +944,7 @@ by the corpus tests.</p>
   <td>encodes</td>
   <td>SreA (ATCC46645 experimental allele unresolved)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.3389/fmicb.2014.00530</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.3389/fmicb.2014.00530</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Introduction and Results identify SreA as the transcription factor encoded by the named gene. This entity relationship does not measure protein abundance or direct contact with a fumagillin-cluster promoter.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.3389/fmicb.2014.00530">DOI:10.3389/fmicb.2014.00530</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.3389/fmicb.2014.00530">DOI:10.3389/fmicb.2014.00530</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Introduction and Results identify SreA as the transcription factor encoded by the named gene. This entity relationship does not measure protein abundance or direct contact with a fumagillin-cluster promoter.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -951,7 +953,7 @@ by the corpus tests.</p>
   <td>deletes</td>
   <td>SreA gene (ATCC46645 background)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.3389/fmicb.2014.00530</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.3389/fmicb.2014.00530</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Methods, Strains and culture conditions, and Results name the delta-srea strain alongside ATCC46645 for secondary-metabolite analysis. No new construct sequence, insertion-site claim or fumagillin complementation experiment is inferred.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.3389/fmicb.2014.00530">DOI:10.3389/fmicb.2014.00530</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.3389/fmicb.2014.00530">DOI:10.3389/fmicb.2014.00530</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Methods, Strains and culture conditions, and Results name the delta-srea strain alongside ATCC46645 for secondary-metabolite analysis. No new construct sequence, insertion-site claim or fumagillin complementation experiment is inferred.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -960,9 +962,9 @@ by the corpus tests.</p>
   <td>is_reference_example_for</td>
   <td>HapX (ATCC46645 experimental allele unresolved)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q4WER3/entry<br>https://www.ncbi.nlm.nih.gov/protein/EAL85914.1<br>DOI:10.3389/fmicb.2014.00530</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4WER3/entry</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Selected Af293 reference, not an identical ATCC46645 allele. Reviewed UniProt Q4WER3, AFUA_5G03920, taxon330879, 491 aa agrees exactly with versioned GenPept and the complete native genomic CDS translation.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/EAL85914.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Native Af293 EAL85914.1: exact locus, strand, complete start/stop and translation checked against UniProt. The versioned protein and its linked nucleotide sequence do not establish the complete experimental allele.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.3389/fmicb.2014.00530</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Methods, Strains and culture conditions, identifies ATCC46645 as the wild type for these metabolite experiments; Af293 is used in a separate RNA-seq series. This supports selecting a separate named reference example, not assigning the Af293 accession to the experimental allele. No strain equivalence is asserted.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q4WER3/entry">https://www.uniprot.org/uniprotkb/Q4WER3/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/EAL85914.1">https://www.ncbi.nlm.nih.gov/protein/EAL85914.1</a><br><a href="https://doi.org/10.3389/fmicb.2014.00530">DOI:10.3389/fmicb.2014.00530</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q4WER3/entry">https://www.uniprot.org/uniprotkb/Q4WER3/entry</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Selected Af293 reference, not an identical ATCC46645 allele. Reviewed UniProt Q4WER3, AFUA_5G03920, taxon330879, 491 aa agrees exactly with versioned GenPept and the complete native genomic CDS translation.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/EAL85914.1">https://www.ncbi.nlm.nih.gov/protein/EAL85914.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Native Af293 EAL85914.1: exact locus, strand, complete start/stop and translation checked against UniProt. The versioned protein and its linked nucleotide sequence do not establish the complete experimental allele.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.3389/fmicb.2014.00530">DOI:10.3389/fmicb.2014.00530</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Methods, Strains and culture conditions, identifies ATCC46645 as the wild type for these metabolite experiments; Af293 is used in a separate RNA-seq series. This supports selecting a separate named reference example, not assigning the Af293 accession to the experimental allele. No strain equivalence is asserted.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -971,7 +973,7 @@ by the corpus tests.</p>
   <td>encodes</td>
   <td>HapX (ATCC46645 experimental allele unresolved)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.3389/fmicb.2014.00530</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.3389/fmicb.2014.00530</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Introduction and Results identify HapX as the transcription factor encoded by the named gene. This entity relationship does not measure protein abundance or direct contact with a fumagillin-cluster promoter.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.3389/fmicb.2014.00530">DOI:10.3389/fmicb.2014.00530</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.3389/fmicb.2014.00530">DOI:10.3389/fmicb.2014.00530</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Introduction and Results identify HapX as the transcription factor encoded by the named gene. This entity relationship does not measure protein abundance or direct contact with a fumagillin-cluster promoter.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -980,7 +982,7 @@ by the corpus tests.</p>
   <td>deletes</td>
   <td>HapX gene (ATCC46645 background)</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.3389/fmicb.2014.00530</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.3389/fmicb.2014.00530</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Methods, Strains and culture conditions, and Results name the delta-hapx strain alongside ATCC46645 for secondary-metabolite analysis. No new construct sequence, insertion-site claim or fumagillin complementation experiment is inferred.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.3389/fmicb.2014.00530">DOI:10.3389/fmicb.2014.00530</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.3389/fmicb.2014.00530">DOI:10.3389/fmicb.2014.00530</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Methods, Strains and culture conditions, and Results name the delta-hapx strain alongside ATCC46645 for secondary-metabolite analysis. No new construct sequence, insertion-site claim or fumagillin complementation experiment is inferred.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -989,7 +991,7 @@ by the corpus tests.</p>
   <td>results_in</td>
   <td>Lower relative fumagillin at 1 mM iron</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.3389/fmicb.2014.00530</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.3389/fmicb.2014.00530</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Methods and Results/Figure9 caption: ATCC46645 wild type and deletion strains; triplicate 50 mL GMM cultures, 5e6 conidia/mL, 5 days at25 C,250 rpm,ambient light. Supernatant extracts analyzed by HPLC-PDA against commercial fumagillin standard; peak areas normalized to sample dry weight, then mutant relative to WT at the same iron concentration. This differs from Figure8 normalization to30 uM within each strain. No absolute yield or fold change is assigned. Results reports reduced fumagillin in delta-sreA at high iron (1 mM). Do not generalize to all iron conditions or infer direct promoter binding.</dd><dt>snippet</dt><dd>was greatly reduced in</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.3389/fmicb.2014.00530">DOI:10.3389/fmicb.2014.00530</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.3389/fmicb.2014.00530">DOI:10.3389/fmicb.2014.00530</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Methods and Results/Figure9 caption: ATCC46645 wild type and deletion strains; triplicate 50 mL GMM cultures, 5e6 conidia/mL, 5 days at25 C,250 rpm,ambient light. Supernatant extracts analyzed by HPLC-PDA against commercial fumagillin standard; peak areas normalized to sample dry weight, then mutant relative to WT at the same iron concentration. This differs from Figure8 normalization to30 uM within each strain. No absolute yield or fold change is assigned. Results reports reduced fumagillin in delta-sreA at high iron (1 mM). Do not generalize to all iron conditions or infer direct promoter binding.</dd><dt>snippet</dt><dd>was greatly reduced in</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -998,7 +1000,7 @@ by the corpus tests.</p>
   <td>results_in</td>
   <td>Higher relative fumagillin with no added iron</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.3389/fmicb.2014.00530</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.3389/fmicb.2014.00530</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Methods and Results/Figure9 caption: ATCC46645 wild type and deletion strains; triplicate 50 mL GMM cultures, 5e6 conidia/mL, 5 days at25 C,250 rpm,ambient light. Supernatant extracts analyzed by HPLC-PDA against commercial fumagillin standard; peak areas normalized to sample dry weight, then mutant relative to WT at the same iron concentration. This differs from Figure8 normalization to30 uM within each strain. No absolute yield or fold change is assigned. Results reports significantly increased fumagillin in delta-hapX versus WT under no-iron conditions (0 added iron). No-added-iron medium is not a claim of chemically zero iron.</dd><dt>snippet</dt><dd>significantly increased in</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.3389/fmicb.2014.00530">DOI:10.3389/fmicb.2014.00530</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.3389/fmicb.2014.00530">DOI:10.3389/fmicb.2014.00530</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Methods and Results/Figure9 caption: ATCC46645 wild type and deletion strains; triplicate 50 mL GMM cultures, 5e6 conidia/mL, 5 days at25 C,250 rpm,ambient light. Supernatant extracts analyzed by HPLC-PDA against commercial fumagillin standard; peak areas normalized to sample dry weight, then mutant relative to WT at the same iron concentration. This differs from Figure8 normalization to30 uM within each strain. No absolute yield or fold change is assigned. Results reports significantly increased fumagillin in delta-hapX versus WT under no-iron conditions (0 added iron). No-added-iron medium is not a claim of chemically zero iron.</dd><dt>snippet</dt><dd>significantly increased in</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -1007,7 +1009,7 @@ by the corpus tests.</p>
   <td>results_in</td>
   <td>Higher relative fumagillin at 30 uM iron</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.3389/fmicb.2014.00530</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.3389/fmicb.2014.00530</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Methods and Results/Figure9 caption: ATCC46645 wild type and deletion strains; triplicate 50 mL GMM cultures, 5e6 conidia/mL, 5 days at25 C,250 rpm,ambient light. Supernatant extracts analyzed by HPLC-PDA against commercial fumagillin standard; peak areas normalized to sample dry weight, then mutant relative to WT at the same iron concentration. This differs from Figure8 normalization to30 uM within each strain. No absolute yield or fold change is assigned. Results reports significantly increased fumagillin in delta-hapX versus WT under iron-replete conditions (30 uM). Do not extrapolate this direction to1 mM iron.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.3389/fmicb.2014.00530">DOI:10.3389/fmicb.2014.00530</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.3389/fmicb.2014.00530">DOI:10.3389/fmicb.2014.00530</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Methods and Results/Figure9 caption: ATCC46645 wild type and deletion strains; triplicate 50 mL GMM cultures, 5e6 conidia/mL, 5 days at25 C,250 rpm,ambient light. Supernatant extracts analyzed by HPLC-PDA against commercial fumagillin standard; peak areas normalized to sample dry weight, then mutant relative to WT at the same iron concentration. This differs from Figure8 normalization to30 uM within each strain. No absolute yield or fold change is assigned. Results reports significantly increased fumagillin in delta-hapX versus WT under iron-replete conditions (30 uM). Do not extrapolate this direction to1 mM iron.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -1024,33 +1026,54 @@ by the corpus tests.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=NGGMYCMLYOUNGM-CSDLUJIJSA-N">AntibioticMech (fumagillin) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=CHEBI%3A48635">MediaIngredientMech (CHEBI:48635) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A330879">TaxonMech: Aspergillus fumigatus Af293 (NCBITaxon:330879) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0001067">PathwayMech (mibig:BGC0001067) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q=CHEBI%3A48635">MediaIngredientMech (CHEBI:48635) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A330879">TaxonMech: Aspergillus fumigatus Af293 (NCBITaxon:330879) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0001067">PathwayMech (mibig:BGC0001067) &nearr;</a>
 </div>
 
 <h2>Open questions <span class="tag">8</span></h2>
-<div class="note"><p><strong>curator-fumagillin-abm-assay-identity</strong> — Which deposited insert sequence and yeast-host assignment resolve the Fma-ABM microsomal assay?</p></div>
-<div class="note"><p><strong>curator-fumagillin-p450-kr-assay-scope</strong> — Which deposited construct sequences resolve these reference mappings, and should the transposed Fma-KR methods product numbers be corrected?</p></div>
-<div class="note"><p><strong>curator-fumagillin-c6h-mt-reference-scope</strong> — Which deposited inserts and fungal strains resolve C6H/MT assay identity, and can the source numbering and donor-name discrepancies be reconciled?</p></div>
-<div class="note"><p><strong>curator-fumagillin-regulator-alleles</strong> — Which experimental-strain allele sequences ground FumR, VeA and LaeA, and which direct regulatory contacts mediate the fumagillin phenotype?</p></div>
-<div class="note"><p><strong>curator-fumagillin-acea-scope</strong> — Which experimental AceA allele and full RNAseq comparison resolve the strain, timing and broader cluster-label ambiguities?</p></div>
-<div class="note"><p><strong>curator-fumagillin-ppta-scope</strong> — What complete A1160p+ PptA allele and direct FmaPKS activation evidence would extend the genetic loss/rescue claim?</p></div>
-<div class="note"><p><strong>curator-fumagillin-ppza-scope</strong> — Which complete CEA17 PpzA allele, sampling time and direct mechanism resolve the iron-depletion fumagillin phenotype?</p></div>
-<div class="note"><p><strong>curator-fumagillin-iron-regulator-alleles</strong> — Which ATCC46645 allele sequences and direct regulatory mechanisms explain the SreA/HapX fumagillin phenotypes?</p></div>
+<div class="note"><p><strong>curator-fumagillin-abm-assay-identity</strong> <span class="tag">OPEN</span> <span class="tag">curation todo</span> — Which deposited insert sequence and yeast-host assignment resolve the Fma-ABM microsomal assay?</p></div>
+<div class="note"><p><strong>curator-fumagillin-p450-kr-assay-scope</strong> <span class="tag">OPEN</span> <span class="tag">curation todo</span> — Which deposited construct sequences resolve these reference mappings, and should the transposed Fma-KR methods product numbers be corrected?</p></div>
+<div class="note"><p><strong>curator-fumagillin-c6h-mt-reference-scope</strong> <span class="tag">OPEN</span> <span class="tag">curation todo</span> — Which deposited inserts and fungal strains resolve C6H/MT assay identity, and can the source numbering and donor-name discrepancies be reconciled?</p></div>
+<div class="note"><p><strong>curator-fumagillin-regulator-alleles</strong> <span class="tag">OPEN</span> <span class="tag">curation todo</span> — Which experimental-strain allele sequences ground FumR, VeA and LaeA, and which direct regulatory contacts mediate the fumagillin phenotype?</p></div>
+<div class="note"><p><strong>curator-fumagillin-acea-scope</strong> <span class="tag">OPEN</span> <span class="tag">curation todo</span> — Which experimental AceA allele and full RNAseq comparison resolve the strain, timing and broader cluster-label ambiguities?</p></div>
+<div class="note"><p><strong>curator-fumagillin-ppta-scope</strong> <span class="tag">OPEN</span> <span class="tag">curation todo</span> — What complete A1160p+ PptA allele and direct FmaPKS activation evidence would extend the genetic loss/rescue claim?</p></div>
+<div class="note"><p><strong>curator-fumagillin-ppza-scope</strong> <span class="tag">OPEN</span> <span class="tag">curation todo</span> — Which complete CEA17 PpzA allele, sampling time and direct mechanism resolve the iron-depletion fumagillin phenotype?</p></div>
+<div class="note"><p><strong>curator-fumagillin-iron-regulator-alleles</strong> <span class="tag">OPEN</span> <span class="tag">curation todo</span> — Which ATCC46645 allele sequences and direct regulatory mechanisms explain the SreA/HapX fumagillin phenotypes?</p></div>
+
+<h2 id="curation-history">Curation history <span class="tag">15</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-12T07:32:58Z">2026-10-12T07:32:58Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; Codex <span class="tag">LLM-assisted</span><p>Add SreA/HapX iron-conditioned fumagillin deletion graph with two sequence-verified Af293 reference examples separate from ATCC46645 experimental alleles. Preserve all nine prior graphs, source-owned fields, SEEDED status and history.</p></li>
+<li><time datetime="2026-10-12T06:44:43Z">2026-10-12T06:44:43Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; Codex <span class="tag">LLM-assisted</span><p>Add PpzA iron-depletion deletion/complementation graph and scope discussion. Preserve all eight prior graphs, source-owned fields, SEEDED status and history; distinguish sequence-verified B0XUR7 reference from unresolved CEA17 experimental allele.</p></li>
+<li><time datetime="2026-10-12T05:55:06Z">2026-10-12T05:55:06Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; Codex <span class="tag">LLM-assisted</span><p>Add exact-owner PptA loss/rescue graph and scope discussion. Preserve source-owned fields, SEEDED status, prior graphs and history; separate verified native B0XWE4 reference from unresolved A1160p+ experimental allele.</p></li>
+<li><time datetime="2026-10-12T05:55:06Z">2026-10-12T05:55:06Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; Codex <span class="tag">LLM-assisted</span><p>Migrate the final inline FumR/VeA/LaeA graph unchanged into an exact-owner component to retain the 64-KiB review limit. Preserve all seven resolved graphs, their order, all evidence and existing history; storage-only migration.</p></li>
+<li><time datetime="2026-10-12T05:05:33Z">2026-10-12T05:05:33Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; Codex <span class="tag">LLM-assisted</span><p>Address review issue #847: order causal_graph_refs before curator discussions, matching the seeder carry-forward helper and restoring byte-identical reproduction. Preserve every graph, component byte, source-owned field and prior event; no biological change.</p></li>
+<li><time datetime="2026-10-12T04:57:20Z">2026-10-12T04:57:20Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; Codex <span class="tag">LLM-assisted</span><p>Add one exact-owner AceA copper-stress transcript graph component and scope discussion. Preserve all six inline graphs, source-owned fields, SEEDED status and history. Separate sequence-verified Af293 Q4WN33 reference from experimental allele; no product-yield or direct-binding claim.</p></li>
+<li><time datetime="2026-10-12T04:03:26Z">2026-10-12T04:03:26Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; Codex <span class="tag">LLM-assisted</span><p>Address QC/review issue #845: explicitly label the genetic-regulation graph as a partial view with separate perturbation components and unproven mediation links intentionally omitted. Preserve every node, edge, evidence item and experimental qualifier; do not invent a causal connection to satisfy topology checks.</p></li>
+<li><time datetime="2026-10-12T03:54:09Z">2026-10-12T03:54:09Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; Codex <span class="tag">LLM-assisted</span><p>Address adversarial review issue #844: change nine decreases predicates to results_in because their target PHENOTYPE nodes already denote lowered transcript levels or product signal. Eliminate double-negative graph polarity without changing measured directions, evidence, nodes or strain/time qualifiers.</p></li>
+<li><time datetime="2026-10-12T03:45:32Z">2026-10-12T03:45:32Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; Codex <span class="tag">LLM-assisted</span><p>Add FumR/VeA/LaeA genetic-regulation graph with three sequence-verified Af293 references separate from experimental alleles, gene perturbations and measured outcomes. Two globally new proteins and LaeA coverage for this owner. Preserve non-monotonic VeA perturbations, residual cluster transcription, condition-limited fumagillin non-detection and expression-only LaeA evidence. Cite all edges; preserve prior graphs, source-owned fields, SEEDED status and history.</p></li>
+<li><time datetime="2026-10-12T03:00:53Z">2026-10-12T03:00:53Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; Codex <span class="tag">LLM-assisted</span><p>Add C6H-only and paired C6H/MT assay graph plus explicitly database-backed PKS/TC/AT precursor assembly. Five sequence-checked references, with two experimental constructs separate and ungrounded. Preserve C6H interval, MT partial boundary, corrected PKS/TC models, source numbering and donor-name discrepancies. Cite every edge; preserve prior graphs, discussions, history, SEEDED status and source-owned fields.</p></li>
+<li><time datetime="2026-10-12T02:21:34Z">2026-10-12T02:21:34Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; Codex <span class="tag">LLM-assisted</span><p>Add Fma-P450/AfCPR/Fma-KR combined microsomal assay and three purified Fma-KR reductions, with three independently sequence-verified Af293 references separate from ungrounded experimental constructs. Cite all 17 edges; preserve the source product-numbering discrepancy, prior graphs/discussion/history, SEEDED status and source-owned fields. No complete native pathway or essentiality claim.</p></li>
+<li><time datetime="2026-10-12T01:44:11Z">2026-10-12T01:44:11Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; Codex <span class="tag">LLM-assisted</span><p>Add a four-edge BIOSYNTHESIS graph for the primary Fma-ABM microsomal prefumagillin-to-fumagillin assay, with accession-unresolved A1159-derived participant and separately sequence-verified Af293 Q4WAZ2 reference. Preserve host discrepancy, source-owned fields, SEEDED status, prior history and human MetAP2 graph.</p></li>
+<li><time datetime="2026-09-26T08:44:50Z">2026-09-26T08:44:50Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added a BIOACTIVITY causal graph for fumagillin covalent binding to human METAP2, grounded the enzyme node to UniProtKB:P50579 via PDB 1BOA chain A, and cited <a href="https://doi.org/10.1126/science.282.5392.1324">DOI:10.1126/science.282.5392.1324</a> and <a href="https://doi.org/10.2210/pdb1boa/pdb">DOI:10.2210/pdb1boa/pdb</a>.</p></li>
+<li><time datetime="2026-09-25T03:02:51Z">2026-09-25T03:02:51Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:10Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
 
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0001067</td><td>MIBIG</td><td>5</td></tr>
-<tr><td class="mono">CHEBI:48635</td><td>CHEBI</td><td>3-star</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001067">BGC0001067</a></td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_48635">CHEBI:48635</a></td><td>CHEBI</td><td>3-star</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/polyketides/fumagillin.yaml">data/natural_products/polyketides/fumagillin.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20CHEBI%3A48635&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Fpolyketides%2Ffumagillin.html">Report a problem with this record</a>: opens a GitHub issue that names CHEBI:48635 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Record last updated 2026-10-12 07:32 UTC, its latest curation event. Generated from the committed corpus. Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

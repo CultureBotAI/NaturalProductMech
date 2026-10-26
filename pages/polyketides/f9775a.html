@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Polyketides</a> &middot; F9775A</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,22 +32,22 @@
   </form>
 </div>
 <h1>F9775A</h1>
-<p class="sub"><span class="mono">naturalproductmech:mibig-1a2493f8d7</span>
+<p class="sub"><span class="mono"><a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/polyketides/f9775a.yaml">naturalproductmech:mibig-1a2493f8d7</a></span>
   <span class="tag">MINTED</span>
   <span class="tag">SEEDED</span>
 </p>
 <div class="note"><strong>Grounding review:</strong> No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.</div><details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/f9775a.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/f9775a.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">KEHZWGZVOZXIKE-UHFFFAOYSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">CC1=CC2=C(C(=C1)O)OC3=C(O2)C4(C5C(=CC(=O)C5(C(=O)C4=C(C3=O)O)O)C)C</td></tr>
 <tr><th>Stereochemistry</th><td>  <span class="tag weak">undefined stereocentres</span> — the InChIKey does not
   distinguish this compound from its stereoisomers</td></tr>
-<tr><th>Cross-references</th><td class="mono">pubchem:9843671</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/compound/9843671">pubchem:9843671</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Polyketides</a> —
@@ -58,47 +60,47 @@ pks, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Aspergillus nidulans FGSC A4<br><span class="mono">NCBITaxon:227321</span></td>
+  <td>Aspergillus nidulans FGSC A4<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=227321">NCBITaxon:227321</a></span></td>
   <td><span class="tag causal">BGC_CHARACTERIZED</span></td>
-  <td class="mono">mibig:BGC0000057</td>
-  <td><span class="mono">PMID:20174687</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000057">mibig:BGC0000057</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/20174687/">PMID:20174687</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">3</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Aspergillus nidulans<br><span class="mono">NCBITaxon:162425</span></td>
+  <td>Aspergillus nidulans<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=162425">NCBITaxon:162425</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1039/B904541D</td>
+  <td class="mono"><a href="https://doi.org/10.1039/B904541D">DOI:10.1039/B904541D</a></td>
 </tr>
 <tr>
-  <td>Aspergillus nidulans<br><span class="mono">NCBITaxon:162425</span></td>
+  <td>Aspergillus nidulans<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=162425">NCBITaxon:162425</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1073/PNAS.0901870106</td>
+  <td class="mono"><a href="https://doi.org/10.1073/PNAS.0901870106">DOI:10.1073/PNAS.0901870106</a></td>
 </tr>
 <tr>
-  <td>Escherichia coli<br><span class="mono">NCBITaxon:562</span></td>
+  <td>Escherichia coli<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=562">NCBITaxon:562</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1073/PNAS.0901870106</td>
+  <td class="mono"><a href="https://doi.org/10.1073/PNAS.0901870106">DOI:10.1073/PNAS.0901870106</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0000057</td>
-  <td>Aspergillus nidulans FGSC A4<br><span class="mono">NCBITaxon:227321</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000057">mibig:BGC0000057</a></td>
+  <td>Aspergillus nidulans FGSC A4<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=227321">NCBITaxon:227321</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:AACD01000135.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AACD01000135.1">genbank:AACD01000135.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -108,27 +110,27 @@ isolation report left it.</p>
 <h2>Biosynthesis <span class="tag causal">curated</span></h2>
 <p class="sub">Written by a curator with claim-level evidence on each step; not
 derived from a source. This is what the rest of the record exists to support.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthesis steps"><table>
 <tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
 <tr>
   <td>1</td>
-  <td>OrsA<br><span class="mono">UniProtKB:Q5AUX1</span></td>
-  <td class="mono">RHEA:62973</td>
-  <td class="mono">ungrounded &rarr; CHEBI:16162</td>
-  <td class="mono">DOI:10.1039/b904541d</td>
+  <td>OrsA<br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q5AUX1/entry">UniProtKB:Q5AUX1</a></span></td>
+  <td class="mono"><a href="https://www.rhea-db.org/rhea/62973">RHEA:62973</a></td>
+  <td class="mono">ungrounded &rarr; <a href="http://purl.obolibrary.org/obo/CHEBI_16162">CHEBI:16162</a></td>
+  <td class="mono"><a href="https://doi.org/10.1039/b904541d">DOI:10.1039/b904541d</a></td>
 </tr>
 <tr>
   <td>2</td>
   <td>OrsB/OrsC F-9775 tailoring module</td>
   <td class="mono"></td>
-  <td class="mono">ungrounded &rarr; naturalproductmech:mibig-1a2493f8d7</td>
-  <td class="mono">DOI:10.1039/b904541d</td>
+  <td class="mono">ungrounded &rarr; <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/polyketides/f9775a.yaml">naturalproductmech:mibig-1a2493f8d7</a></td>
+  <td class="mono"><a href="https://doi.org/10.1039/b904541d">DOI:10.1039/b904541d</a></td>
 </tr>
 </table></div>
 <p class="sub">Step 1: This curates the Aspergillus nidulans FGSC A4 non-reducing polyketide synthase OrsA from the BGC0000057/AACD01000135.1 route; OrsA condenses acetyl-CoA with three malonyl-CoA units to form o-orsellinate, the branch precursor for F-9775 A biosynthesis.</p><p class="sub">Step 2: This curates the genetically supported OrsB/OrsC branch that diverts the OrsA orsellinic acid product toward F-9775 A and B. The exact isolated substrate, intermediates and individual OrsB and OrsC reactions remain unresolved, so this two-protein step is marked proposed and leaves enzyme_id empty.</p>
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for F9775A">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for F9775A">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -161,16 +163,16 @@ derived from a source. This is what the rest of the record exists to support.</p
 </div>
 
 <h2>Causal graph &mdash; biosynthesis <span class="tag">8 nodes, 7 edges</span></h2>
-<p class="sub">Partial Aspergillus nidulans F-9775 A biosynthesis graph for OrsA orsellinate formation and the OrsB/OrsC-dependent F-9775 branch.</p><div class="scroll"><table>
+<p class="sub">Partial Aspergillus nidulans F-9775 A biosynthesis graph for OrsA orsellinate formation and the OrsB/OrsC-dependent F-9775 branch.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>acetyl-CoA(4-)</td>
   <td>is condensed by</td>
   <td>OrsA</td>
   <td>RHEA:62973 selects acetyl-CoA as the starter unit in the OrsA o-orsellinate synthase reaction.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1039/b904541d<br>https://www.uniprot.org/uniprotkb/Q5AUX1<br>https://www.ncbi.nlm.nih.gov/protein/EAA59563.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1039/b904541d</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>only two additional genes</dd><dt>notes</dt><dd>Sanchez et al. used targeted deletions in Aspergillus nidulans and found that OrsA is sufficient for orsellinic acid biosynthesis, while the adjacent AN7911.4/orsB and AN7912.4/orsC genes are additionally required for F-9775 A and B synthesis.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q5AUX1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q5AUX1 is the Aspergillus nidulans FGSC A4 OrsA orsellinic acid synthase, length 2103 aa, annotates the left-to-right physiological RHEA:62973 reaction, and cross-references EMBL AACD01000135 protein EAA59563.1.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/EAA59563.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>NCBI GenPept EAA59563.1 is locus_tag AN7909.2 from the BGC0000057 AACD01000135.1 Aspergillus nidulans FGSC A4 locus and maps to reviewed UniProtKB:Q5AUX1.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1039/b904541d">DOI:10.1039/b904541d</a><br><a href="https://www.uniprot.org/uniprotkb/Q5AUX1">https://www.uniprot.org/uniprotkb/Q5AUX1</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/EAA59563.1">https://www.ncbi.nlm.nih.gov/protein/EAA59563.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1039/b904541d">DOI:10.1039/b904541d</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>only two additional genes</dd><dt>notes</dt><dd>Sanchez et al. used targeted deletions in Aspergillus nidulans and found that OrsA is sufficient for orsellinic acid biosynthesis, while the adjacent AN7911.4/orsB and AN7912.4/orsC genes are additionally required for F-9775 A and B synthesis.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q5AUX1">https://www.uniprot.org/uniprotkb/Q5AUX1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q5AUX1 is the Aspergillus nidulans FGSC A4 OrsA orsellinic acid synthase, length 2103 aa, annotates the left-to-right physiological RHEA:62973 reaction, and cross-references EMBL AACD01000135 protein EAA59563.1.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/EAA59563.1">https://www.ncbi.nlm.nih.gov/protein/EAA59563.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>NCBI GenPept EAA59563.1 is locus_tag AN7909.2 from the BGC0000057 AACD01000135.1 Aspergillus nidulans FGSC A4 locus and maps to reviewed UniProtKB:Q5AUX1.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -179,9 +181,9 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>is condensed by</td>
   <td>OrsA</td>
   <td>RHEA:62973 consumes three malonyl-CoA units per o-orsellinate formed by OrsA.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1039/b904541d<br>https://www.uniprot.org/uniprotkb/Q5AUX1<br>https://www.ncbi.nlm.nih.gov/protein/EAA59563.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1039/b904541d</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>only two additional genes</dd><dt>notes</dt><dd>Sanchez et al. used targeted deletions in Aspergillus nidulans and found that OrsA is sufficient for orsellinic acid biosynthesis, while the adjacent AN7911.4/orsB and AN7912.4/orsC genes are additionally required for F-9775 A and B synthesis.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q5AUX1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q5AUX1 is the Aspergillus nidulans FGSC A4 OrsA orsellinic acid synthase, length 2103 aa, annotates the left-to-right physiological RHEA:62973 reaction, and cross-references EMBL AACD01000135 protein EAA59563.1.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/EAA59563.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>NCBI GenPept EAA59563.1 is locus_tag AN7909.2 from the BGC0000057 AACD01000135.1 Aspergillus nidulans FGSC A4 locus and maps to reviewed UniProtKB:Q5AUX1.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1039/b904541d">DOI:10.1039/b904541d</a><br><a href="https://www.uniprot.org/uniprotkb/Q5AUX1">https://www.uniprot.org/uniprotkb/Q5AUX1</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/EAA59563.1">https://www.ncbi.nlm.nih.gov/protein/EAA59563.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1039/b904541d">DOI:10.1039/b904541d</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>only two additional genes</dd><dt>notes</dt><dd>Sanchez et al. used targeted deletions in Aspergillus nidulans and found that OrsA is sufficient for orsellinic acid biosynthesis, while the adjacent AN7911.4/orsB and AN7912.4/orsC genes are additionally required for F-9775 A and B synthesis.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q5AUX1">https://www.uniprot.org/uniprotkb/Q5AUX1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q5AUX1 is the Aspergillus nidulans FGSC A4 OrsA orsellinic acid synthase, length 2103 aa, annotates the left-to-right physiological RHEA:62973 reaction, and cross-references EMBL AACD01000135 protein EAA59563.1.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/EAA59563.1">https://www.ncbi.nlm.nih.gov/protein/EAA59563.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>NCBI GenPept EAA59563.1 is locus_tag AN7909.2 from the BGC0000057 AACD01000135.1 Aspergillus nidulans FGSC A4 locus and maps to reviewed UniProtKB:Q5AUX1.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -190,9 +192,9 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>forms</td>
   <td>o-orsellinate</td>
   <td>The curated Rhea reaction forms o-orsellinate, which enters the OrsB/OrsC-dependent F-9775 branch.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1039/b904541d<br>https://www.uniprot.org/uniprotkb/Q5AUX1<br>https://www.ncbi.nlm.nih.gov/protein/EAA59563.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1039/b904541d</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>only two additional genes</dd><dt>notes</dt><dd>Sanchez et al. used targeted deletions in Aspergillus nidulans and found that OrsA is sufficient for orsellinic acid biosynthesis, while the adjacent AN7911.4/orsB and AN7912.4/orsC genes are additionally required for F-9775 A and B synthesis.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q5AUX1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q5AUX1 is the Aspergillus nidulans FGSC A4 OrsA orsellinic acid synthase, length 2103 aa, annotates the left-to-right physiological RHEA:62973 reaction, and cross-references EMBL AACD01000135 protein EAA59563.1.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/EAA59563.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>NCBI GenPept EAA59563.1 is locus_tag AN7909.2 from the BGC0000057 AACD01000135.1 Aspergillus nidulans FGSC A4 locus and maps to reviewed UniProtKB:Q5AUX1.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1039/b904541d">DOI:10.1039/b904541d</a><br><a href="https://www.uniprot.org/uniprotkb/Q5AUX1">https://www.uniprot.org/uniprotkb/Q5AUX1</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/EAA59563.1">https://www.ncbi.nlm.nih.gov/protein/EAA59563.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1039/b904541d">DOI:10.1039/b904541d</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>only two additional genes</dd><dt>notes</dt><dd>Sanchez et al. used targeted deletions in Aspergillus nidulans and found that OrsA is sufficient for orsellinic acid biosynthesis, while the adjacent AN7911.4/orsB and AN7912.4/orsC genes are additionally required for F-9775 A and B synthesis.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q5AUX1">https://www.uniprot.org/uniprotkb/Q5AUX1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q5AUX1 is the Aspergillus nidulans FGSC A4 OrsA orsellinic acid synthase, length 2103 aa, annotates the left-to-right physiological RHEA:62973 reaction, and cross-references EMBL AACD01000135 protein EAA59563.1.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/EAA59563.1">https://www.ncbi.nlm.nih.gov/protein/EAA59563.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>NCBI GenPept EAA59563.1 is locus_tag AN7909.2 from the BGC0000057 AACD01000135.1 Aspergillus nidulans FGSC A4 locus and maps to reviewed UniProtKB:Q5AUX1.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -201,11 +203,11 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>feeds</td>
   <td>OrsB/OrsC F-9775 tailoring</td>
   <td>AN7911.4 and AN7912.4 deletions still produced orsellinic acid but failed to produce F-9775 A and B, placing the genetically supported OrsB/OrsC branch downstream of the OrsA product.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1039/b904541d<br>https://www.uniprot.org/uniprotkb/Q5AUW9<br>https://www.ncbi.nlm.nih.gov/protein/EAA59565.1<br>https://www.uniprot.org/uniprotkb/Q5AUW8<br>https://www.ncbi.nlm.nih.gov/protein/EAA59566.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1039/b904541d</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>only two additional genes</dd><dt>notes</dt><dd>Sanchez et al. used targeted deletions in Aspergillus nidulans and found that OrsA is sufficient for orsellinic acid biosynthesis, while the adjacent AN7911.4/orsB and AN7912.4/orsC genes are additionally required for F-9775 A and B synthesis.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q5AUW9</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q5AUW9 is the Aspergillus nidulans FGSC A4 decarboxylase OrsB/F9775 biosynthesis cluster protein B, length 331 aa, gene orsB, and cross-references EMBL AACD01000135.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/EAA59565.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>/protein_id=&#34;EAA59565.1&#34;</dd><dt>notes</dt><dd>NCBI GenPept EAA59565.1 is the AACD01000135.1 locus_tag AN7911.2 coding sequence that maps to Aspergillus nidulans FGSC A4 OrsB.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q5AUW8</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q5AUW8 is the Aspergillus nidulans FGSC A4 tyrosinase-like protein OrsC/F9775 biosynthesis cluster protein C, length 369 aa, gene orsC, and cross-references EMBL AACD01000135.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/EAA59566.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>/protein_id=&#34;EAA59566.1&#34;</dd><dt>notes</dt><dd>NCBI GenPept EAA59566.1 is the AACD01000135.1 locus_tag AN7912.2 coding sequence that maps to Aspergillus nidulans FGSC A4 OrsC.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1039/b904541d">DOI:10.1039/b904541d</a><br><a href="https://www.uniprot.org/uniprotkb/Q5AUW9">https://www.uniprot.org/uniprotkb/Q5AUW9</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/EAA59565.1">https://www.ncbi.nlm.nih.gov/protein/EAA59565.1</a><br><a href="https://www.uniprot.org/uniprotkb/Q5AUW8">https://www.uniprot.org/uniprotkb/Q5AUW8</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/EAA59566.1">https://www.ncbi.nlm.nih.gov/protein/EAA59566.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1039/b904541d">DOI:10.1039/b904541d</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>only two additional genes</dd><dt>notes</dt><dd>Sanchez et al. used targeted deletions in Aspergillus nidulans and found that OrsA is sufficient for orsellinic acid biosynthesis, while the adjacent AN7911.4/orsB and AN7912.4/orsC genes are additionally required for F-9775 A and B synthesis.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q5AUW9">https://www.uniprot.org/uniprotkb/Q5AUW9</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q5AUW9 is the Aspergillus nidulans FGSC A4 decarboxylase OrsB/F9775 biosynthesis cluster protein B, length 331 aa, gene orsB, and cross-references EMBL AACD01000135.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/EAA59565.1">https://www.ncbi.nlm.nih.gov/protein/EAA59565.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>/protein_id=&#34;EAA59565.1&#34;</dd><dt>notes</dt><dd>NCBI GenPept EAA59565.1 is the AACD01000135.1 locus_tag AN7911.2 coding sequence that maps to Aspergillus nidulans FGSC A4 OrsB.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q5AUW8">https://www.uniprot.org/uniprotkb/Q5AUW8</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q5AUW8 is the Aspergillus nidulans FGSC A4 tyrosinase-like protein OrsC/F9775 biosynthesis cluster protein C, length 369 aa, gene orsC, and cross-references EMBL AACD01000135.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/EAA59566.1">https://www.ncbi.nlm.nih.gov/protein/EAA59566.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>/protein_id=&#34;EAA59566.1&#34;</dd><dt>notes</dt><dd>NCBI GenPept EAA59566.1 is the AACD01000135.1 locus_tag AN7912.2 coding sequence that maps to Aspergillus nidulans FGSC A4 OrsC.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -214,11 +216,11 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>is required for</td>
   <td>OrsB/OrsC F-9775 tailoring</td>
   <td>Deleting AN7911.4/orsB abolished F-9775 A and B production while leaving orsellinic acid production intact.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1039/b904541d<br>https://www.uniprot.org/uniprotkb/Q5AUW9<br>https://www.ncbi.nlm.nih.gov/protein/EAA59565.1<br>https://www.uniprot.org/uniprotkb/Q5AUW8<br>https://www.ncbi.nlm.nih.gov/protein/EAA59566.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1039/b904541d</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>only two additional genes</dd><dt>notes</dt><dd>Sanchez et al. used targeted deletions in Aspergillus nidulans and found that OrsA is sufficient for orsellinic acid biosynthesis, while the adjacent AN7911.4/orsB and AN7912.4/orsC genes are additionally required for F-9775 A and B synthesis.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q5AUW9</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q5AUW9 is the Aspergillus nidulans FGSC A4 decarboxylase OrsB/F9775 biosynthesis cluster protein B, length 331 aa, gene orsB, and cross-references EMBL AACD01000135.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/EAA59565.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>/protein_id=&#34;EAA59565.1&#34;</dd><dt>notes</dt><dd>NCBI GenPept EAA59565.1 is the AACD01000135.1 locus_tag AN7911.2 coding sequence that maps to Aspergillus nidulans FGSC A4 OrsB.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q5AUW8</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q5AUW8 is the Aspergillus nidulans FGSC A4 tyrosinase-like protein OrsC/F9775 biosynthesis cluster protein C, length 369 aa, gene orsC, and cross-references EMBL AACD01000135.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/EAA59566.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>/protein_id=&#34;EAA59566.1&#34;</dd><dt>notes</dt><dd>NCBI GenPept EAA59566.1 is the AACD01000135.1 locus_tag AN7912.2 coding sequence that maps to Aspergillus nidulans FGSC A4 OrsC.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1039/b904541d">DOI:10.1039/b904541d</a><br><a href="https://www.uniprot.org/uniprotkb/Q5AUW9">https://www.uniprot.org/uniprotkb/Q5AUW9</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/EAA59565.1">https://www.ncbi.nlm.nih.gov/protein/EAA59565.1</a><br><a href="https://www.uniprot.org/uniprotkb/Q5AUW8">https://www.uniprot.org/uniprotkb/Q5AUW8</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/EAA59566.1">https://www.ncbi.nlm.nih.gov/protein/EAA59566.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1039/b904541d">DOI:10.1039/b904541d</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>only two additional genes</dd><dt>notes</dt><dd>Sanchez et al. used targeted deletions in Aspergillus nidulans and found that OrsA is sufficient for orsellinic acid biosynthesis, while the adjacent AN7911.4/orsB and AN7912.4/orsC genes are additionally required for F-9775 A and B synthesis.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q5AUW9">https://www.uniprot.org/uniprotkb/Q5AUW9</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q5AUW9 is the Aspergillus nidulans FGSC A4 decarboxylase OrsB/F9775 biosynthesis cluster protein B, length 331 aa, gene orsB, and cross-references EMBL AACD01000135.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/EAA59565.1">https://www.ncbi.nlm.nih.gov/protein/EAA59565.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>/protein_id=&#34;EAA59565.1&#34;</dd><dt>notes</dt><dd>NCBI GenPept EAA59565.1 is the AACD01000135.1 locus_tag AN7911.2 coding sequence that maps to Aspergillus nidulans FGSC A4 OrsB.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q5AUW8">https://www.uniprot.org/uniprotkb/Q5AUW8</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q5AUW8 is the Aspergillus nidulans FGSC A4 tyrosinase-like protein OrsC/F9775 biosynthesis cluster protein C, length 369 aa, gene orsC, and cross-references EMBL AACD01000135.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/EAA59566.1">https://www.ncbi.nlm.nih.gov/protein/EAA59566.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>/protein_id=&#34;EAA59566.1&#34;</dd><dt>notes</dt><dd>NCBI GenPept EAA59566.1 is the AACD01000135.1 locus_tag AN7912.2 coding sequence that maps to Aspergillus nidulans FGSC A4 OrsC.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -227,11 +229,11 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>is required for</td>
   <td>OrsB/OrsC F-9775 tailoring</td>
   <td>Deleting AN7912.4/orsC abolished F-9775 A and B production while leaving orsellinic acid production intact.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1039/b904541d<br>https://www.uniprot.org/uniprotkb/Q5AUW9<br>https://www.ncbi.nlm.nih.gov/protein/EAA59565.1<br>https://www.uniprot.org/uniprotkb/Q5AUW8<br>https://www.ncbi.nlm.nih.gov/protein/EAA59566.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1039/b904541d</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>only two additional genes</dd><dt>notes</dt><dd>Sanchez et al. used targeted deletions in Aspergillus nidulans and found that OrsA is sufficient for orsellinic acid biosynthesis, while the adjacent AN7911.4/orsB and AN7912.4/orsC genes are additionally required for F-9775 A and B synthesis.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q5AUW9</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q5AUW9 is the Aspergillus nidulans FGSC A4 decarboxylase OrsB/F9775 biosynthesis cluster protein B, length 331 aa, gene orsB, and cross-references EMBL AACD01000135.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/EAA59565.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>/protein_id=&#34;EAA59565.1&#34;</dd><dt>notes</dt><dd>NCBI GenPept EAA59565.1 is the AACD01000135.1 locus_tag AN7911.2 coding sequence that maps to Aspergillus nidulans FGSC A4 OrsB.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q5AUW8</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q5AUW8 is the Aspergillus nidulans FGSC A4 tyrosinase-like protein OrsC/F9775 biosynthesis cluster protein C, length 369 aa, gene orsC, and cross-references EMBL AACD01000135.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/EAA59566.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>/protein_id=&#34;EAA59566.1&#34;</dd><dt>notes</dt><dd>NCBI GenPept EAA59566.1 is the AACD01000135.1 locus_tag AN7912.2 coding sequence that maps to Aspergillus nidulans FGSC A4 OrsC.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1039/b904541d">DOI:10.1039/b904541d</a><br><a href="https://www.uniprot.org/uniprotkb/Q5AUW9">https://www.uniprot.org/uniprotkb/Q5AUW9</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/EAA59565.1">https://www.ncbi.nlm.nih.gov/protein/EAA59565.1</a><br><a href="https://www.uniprot.org/uniprotkb/Q5AUW8">https://www.uniprot.org/uniprotkb/Q5AUW8</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/EAA59566.1">https://www.ncbi.nlm.nih.gov/protein/EAA59566.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1039/b904541d">DOI:10.1039/b904541d</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>only two additional genes</dd><dt>notes</dt><dd>Sanchez et al. used targeted deletions in Aspergillus nidulans and found that OrsA is sufficient for orsellinic acid biosynthesis, while the adjacent AN7911.4/orsB and AN7912.4/orsC genes are additionally required for F-9775 A and B synthesis.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q5AUW9">https://www.uniprot.org/uniprotkb/Q5AUW9</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q5AUW9 is the Aspergillus nidulans FGSC A4 decarboxylase OrsB/F9775 biosynthesis cluster protein B, length 331 aa, gene orsB, and cross-references EMBL AACD01000135.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/EAA59565.1">https://www.ncbi.nlm.nih.gov/protein/EAA59565.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>/protein_id=&#34;EAA59565.1&#34;</dd><dt>notes</dt><dd>NCBI GenPept EAA59565.1 is the AACD01000135.1 locus_tag AN7911.2 coding sequence that maps to Aspergillus nidulans FGSC A4 OrsB.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q5AUW8">https://www.uniprot.org/uniprotkb/Q5AUW8</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q5AUW8 is the Aspergillus nidulans FGSC A4 tyrosinase-like protein OrsC/F9775 biosynthesis cluster protein C, length 369 aa, gene orsC, and cross-references EMBL AACD01000135.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/EAA59566.1">https://www.ncbi.nlm.nih.gov/protein/EAA59566.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>/protein_id=&#34;EAA59566.1&#34;</dd><dt>notes</dt><dd>NCBI GenPept EAA59566.1 is the AACD01000135.1 locus_tag AN7912.2 coding sequence that maps to Aspergillus nidulans FGSC A4 OrsC.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -240,11 +242,11 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>forms</td>
   <td>F9775A</td>
   <td>Sanchez et al. genetically delimited the F-9775 A/B branch to OrsA plus OrsB and OrsC, but the exact F-9775 A-specific sequence of tailoring reactions remains unresolved.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1039/b904541d<br>https://www.uniprot.org/uniprotkb/Q5AUW9<br>https://www.ncbi.nlm.nih.gov/protein/EAA59565.1<br>https://www.uniprot.org/uniprotkb/Q5AUW8<br>https://www.ncbi.nlm.nih.gov/protein/EAA59566.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1039/b904541d</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>only two additional genes</dd><dt>notes</dt><dd>Sanchez et al. used targeted deletions in Aspergillus nidulans and found that OrsA is sufficient for orsellinic acid biosynthesis, while the adjacent AN7911.4/orsB and AN7912.4/orsC genes are additionally required for F-9775 A and B synthesis.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q5AUW9</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q5AUW9 is the Aspergillus nidulans FGSC A4 decarboxylase OrsB/F9775 biosynthesis cluster protein B, length 331 aa, gene orsB, and cross-references EMBL AACD01000135.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/EAA59565.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>/protein_id=&#34;EAA59565.1&#34;</dd><dt>notes</dt><dd>NCBI GenPept EAA59565.1 is the AACD01000135.1 locus_tag AN7911.2 coding sequence that maps to Aspergillus nidulans FGSC A4 OrsB.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q5AUW8</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q5AUW8 is the Aspergillus nidulans FGSC A4 tyrosinase-like protein OrsC/F9775 biosynthesis cluster protein C, length 369 aa, gene orsC, and cross-references EMBL AACD01000135.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/EAA59566.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>/protein_id=&#34;EAA59566.1&#34;</dd><dt>notes</dt><dd>NCBI GenPept EAA59566.1 is the AACD01000135.1 locus_tag AN7912.2 coding sequence that maps to Aspergillus nidulans FGSC A4 OrsC.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1039/b904541d">DOI:10.1039/b904541d</a><br><a href="https://www.uniprot.org/uniprotkb/Q5AUW9">https://www.uniprot.org/uniprotkb/Q5AUW9</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/EAA59565.1">https://www.ncbi.nlm.nih.gov/protein/EAA59565.1</a><br><a href="https://www.uniprot.org/uniprotkb/Q5AUW8">https://www.uniprot.org/uniprotkb/Q5AUW8</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/EAA59566.1">https://www.ncbi.nlm.nih.gov/protein/EAA59566.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1039/b904541d">DOI:10.1039/b904541d</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>only two additional genes</dd><dt>notes</dt><dd>Sanchez et al. used targeted deletions in Aspergillus nidulans and found that OrsA is sufficient for orsellinic acid biosynthesis, while the adjacent AN7911.4/orsB and AN7912.4/orsC genes are additionally required for F-9775 A and B synthesis.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q5AUW9">https://www.uniprot.org/uniprotkb/Q5AUW9</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q5AUW9 is the Aspergillus nidulans FGSC A4 decarboxylase OrsB/F9775 biosynthesis cluster protein B, length 331 aa, gene orsB, and cross-references EMBL AACD01000135.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/EAA59565.1">https://www.ncbi.nlm.nih.gov/protein/EAA59565.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>/protein_id=&#34;EAA59565.1&#34;</dd><dt>notes</dt><dd>NCBI GenPept EAA59565.1 is the AACD01000135.1 locus_tag AN7911.2 coding sequence that maps to Aspergillus nidulans FGSC A4 OrsB.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q5AUW8">https://www.uniprot.org/uniprotkb/Q5AUW8</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q5AUW8 is the Aspergillus nidulans FGSC A4 tyrosinase-like protein OrsC/F9775 biosynthesis cluster protein C, length 369 aa, gene orsC, and cross-references EMBL AACD01000135.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/EAA59566.1">https://www.ncbi.nlm.nih.gov/protein/EAA59566.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>snippet</dt><dd>/protein_id=&#34;EAA59566.1&#34;</dd><dt>notes</dt><dd>NCBI GenPept EAA59566.1 is the AACD01000135.1 locus_tag AN7912.2 coding sequence that maps to Aspergillus nidulans FGSC A4 OrsC.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -258,23 +260,31 @@ by the corpus tests.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=KEHZWGZVOZXIKE-UHFFFAOYSA-N">AntibioticMech (F9775A) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=naturalproductmech%3Amibig-1a2493f8d7">MediaIngredientMech (naturalproductmech:mibig-1a2493f8d7) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A227321">TaxonMech: Aspergillus nidulans FGSC A4 (NCBITaxon:227321) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000057">PathwayMech (mibig:BGC0000057) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A227321">TaxonMech: Aspergillus nidulans FGSC A4 (NCBITaxon:227321) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000057">PathwayMech (mibig:BGC0000057) &nearr;</a>
 </div>
 
 
+<h2 id="curation-history">Curation history <span class="tag">3</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-09-28T16:22:19Z">2026-09-28T16:22:19Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added a partial BIOSYNTHESIS pathway and causal graph for the Aspergillus nidulans BGC0000057 route to F-9775 A; grounded OrsA, OrsB and OrsC to UniProtKB:Q5AUX1, UniProtKB:Q5AUW9 and UniProtKB:Q5AUW8 via GenBank AACD01000135.1; and left OrsB/OrsC tailoring as a proposed two-protein step because <a href="https://doi.org/10.1039/b904541d">DOI:10.1039/b904541d</a> does not resolve their individual reactions.</p></li>
+<li><time datetime="2026-09-25T03:02:31Z">2026-09-25T03:02:31Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:08Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
+
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0000057</td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000057">BGC0000057</a></td><td>MIBIG</td><td>5</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/polyketides/f9775a.yaml">data/natural_products/polyketides/f9775a.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20naturalproductmech%3Amibig-1a2493f8d7&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Fpolyketides%2Ff9775a.html">Report a problem with this record</a>: opens a GitHub issue that names naturalproductmech:mibig-1a2493f8d7 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Record last updated 2026-09-28 16:22 UTC, its latest curation event. Generated from the committed corpus. Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

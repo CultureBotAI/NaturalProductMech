@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Amino acids and peptides</a> &middot; leucinostatin A</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,22 +32,22 @@
   </form>
 </div>
 <h1>leucinostatin A</h1>
-<p class="sub"><span class="mono">naturalproductmech:mibig-5ff806da31</span>
+<p class="sub"><span class="mono"><a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/amino_acids_and_peptides/leucinostatin-a.yaml">naturalproductmech:mibig-5ff806da31</a></span>
   <span class="tag">MINTED</span>
   <span class="tag">SEEDED</span>
 <span class="tag">cytotoxic</span></p>
 <div class="note"><strong>Grounding review:</strong> No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.</div><details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/amino_acids_and_peptides/leucinostatin-a.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/amino_acids_and_peptides/leucinostatin-a.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">FOAIGCPESMNWQP-WCWDXBQESA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">CCC(C)/C=C/C(=O)N1CC(CC1C(=O)NC(CC(C)CC(CC(=O)CC)O)C(=O)NC(C(C(C)C)O)C(=O)NC(C)(C)C(=O)NC(CC(C)C)C(=O)NC(CC(C)C)C(=O)NC(C)(C)C(=O)NC(C)(C)C(=O)NCCC(=O)NC(C)CN(C)C)C</td></tr>
 <tr><th>Stereochemistry</th><td>  <span class="tag weak">undefined stereocentres</span> — the InChIKey does not
   distinguish this compound from its stereoisomers</td></tr>
-<tr><th>Cross-references</th><td class="mono">pubchem:5477807</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/compound/5477807">pubchem:5477807</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Amino acids and peptides</a> —
@@ -58,42 +60,42 @@ nrps, pks, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Purpureocillium lilacinum<br><span class="mono">NCBITaxon:33203</span></td>
+  <td>Purpureocillium lilacinum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=33203">NCBITaxon:33203</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0001358</td>
-  <td><span class="mono">DOI:10.3390/molecules25215077</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001358">mibig:BGC0001358</a></td>
+  <td><span class="mono"><a href="https://doi.org/10.3390/molecules25215077">DOI:10.3390/molecules25215077</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">2</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Paecilomyces<br><span class="mono">NCBITaxon:33202</span></td>
+  <td>Paecilomyces<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=33202">NCBITaxon:33202</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.7164/ANTIBIOTICS.35.1231</td>
+  <td class="mono"><a href="https://doi.org/10.7164/ANTIBIOTICS.35.1231">DOI:10.7164/ANTIBIOTICS.35.1231</a></td>
 </tr>
 <tr>
-  <td>Purpureocillium lilacinum<br><span class="mono">NCBITaxon:33203</span></td>
+  <td>Purpureocillium lilacinum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=33203">NCBITaxon:33203</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1371/JOURNAL.PPAT.1005685</td>
+  <td class="mono"><a href="https://doi.org/10.1371/JOURNAL.PPAT.1005685">DOI:10.1371/JOURNAL.PPAT.1005685</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0001358</td>
-  <td>Purpureocillium lilacinum<br><span class="mono">NCBITaxon:33203</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001358">mibig:BGC0001358</a></td>
+  <td>Purpureocillium lilacinum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=33203">NCBITaxon:33203</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:LSBH01000002.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/LSBH01000002.1">genbank:LSBH01000002.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -103,7 +105,7 @@ isolation report left it.</p>
 
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for leucinostatin A">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for leucinostatin A">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -139,105 +141,105 @@ isolation report left it.</p>
 
 <h2>Bioactivities <span class="tag">25</span></h2>
 <p class="sub">Entries preserve source qualifiers, targets and evidence. Repeated assay names or values are not independent replications; inspect source detail for differences.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Bioactivities"><table>
 <tr><th>Assay</th><th>Result</th><th>Target enzyme</th><th>Source detail</th></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the A549/ATCC Non-Small Cell Lung cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:19</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the A549/ATCC Non-Small Cell Lung cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:19</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 19, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the A549/ATCC Non-Small Cell Lung cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/19">pubchem.aid:19</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the A549/ATCC Non-Small Cell Lung cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/19">pubchem.aid:19</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 19, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the BT-549 Breast cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:89</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the BT-549 Breast cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:89</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 89, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the BT-549 Breast cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/89">pubchem.aid:89</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the BT-549 Breast cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/89">pubchem.aid:89</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 89, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the CCRF-CEM Leukemia cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:119</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the CCRF-CEM Leukemia cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:119</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 119, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the CCRF-CEM Leukemia cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/119">pubchem.aid:119</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the CCRF-CEM Leukemia cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/119">pubchem.aid:119</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 119, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the COLO 205 Colon cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:67</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the COLO 205 Colon cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:67</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 67, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the COLO 205 Colon cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/67">pubchem.aid:67</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the COLO 205 Colon cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/67">pubchem.aid:67</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 67, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the DU-145 Prostate cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:43</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the DU-145 Prostate cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:43</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 43, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the DU-145 Prostate cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/43">pubchem.aid:43</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the DU-145 Prostate cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/43">pubchem.aid:43</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 43, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the EKVX Non-Small Cell Lung cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:21</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the EKVX Non-Small Cell Lung cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:21</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 21, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the EKVX Non-Small Cell Lung cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/21">pubchem.aid:21</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the EKVX Non-Small Cell Lung cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/21">pubchem.aid:21</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 21, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the HCC-2998 Colon cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:77</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the HCC-2998 Colon cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:77</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 77, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the HCC-2998 Colon cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/77">pubchem.aid:77</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the HCC-2998 Colon cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/77">pubchem.aid:77</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 77, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the HCT-116 Colon cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:79</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the HCT-116 Colon cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:79</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 79, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the HCT-116 Colon cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/79">pubchem.aid:79</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the HCT-116 Colon cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/79">pubchem.aid:79</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 79, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the HL-60(TB) Leukemia cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:125</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the HL-60(TB) Leukemia cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:125</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 125, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the HL-60(TB) Leukemia cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/125">pubchem.aid:125</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the HL-60(TB) Leukemia cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/125">pubchem.aid:125</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 125, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the HOP-62 Non-Small Cell Lung cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:9</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the HOP-62 Non-Small Cell Lung cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:9</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 9, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the HOP-62 Non-Small Cell Lung cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/9">pubchem.aid:9</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the HOP-62 Non-Small Cell Lung cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/9">pubchem.aid:9</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 9, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the HOP-92 Non-Small Cell Lung cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:13</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the HOP-92 Non-Small Cell Lung cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:13</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 13, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the HOP-92 Non-Small Cell Lung cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/13">pubchem.aid:13</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the HOP-92 Non-Small Cell Lung cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/13">pubchem.aid:13</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 13, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the HS 578T Breast cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:97</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the HS 578T Breast cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:97</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 97, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the HS 578T Breast cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/97">pubchem.aid:97</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the HS 578T Breast cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/97">pubchem.aid:97</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 97, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the HT29 Colon cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:65</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the HT29 Colon cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:65</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 65, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the HT29 Colon cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/65">pubchem.aid:65</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the HT29 Colon cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/65">pubchem.aid:65</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 65, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the IGROV1 Ovarian cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:101</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the IGROV1 Ovarian cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:101</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 101, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the IGROV1 Ovarian cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/101">pubchem.aid:101</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the IGROV1 Ovarian cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/101">pubchem.aid:101</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 101, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the K-562 Leukemia cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:121</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the K-562 Leukemia cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:121</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 121, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the K-562 Leukemia cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/121">pubchem.aid:121</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the K-562 Leukemia cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/121">pubchem.aid:121</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 121, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the KM12 Colon cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:73</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the KM12 Colon cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:73</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 73, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the KM12 Colon cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/73">pubchem.aid:73</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the KM12 Colon cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/73">pubchem.aid:73</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 73, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the LOX IMVI Melanoma cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:23</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the LOX IMVI Melanoma cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:23</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 23, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the LOX IMVI Melanoma cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/23">pubchem.aid:23</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the LOX IMVI Melanoma cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/23">pubchem.aid:23</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 23, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the MALME-3M Melanoma cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:29</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the MALME-3M Melanoma cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:29</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 29, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the MALME-3M Melanoma cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/29">pubchem.aid:29</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the MALME-3M Melanoma cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/29">pubchem.aid:29</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 29, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the MCF7 Breast cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:83</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the MCF7 Breast cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:83</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 83, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the MCF7 Breast cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/83">pubchem.aid:83</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the MCF7 Breast cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/83">pubchem.aid:83</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 83, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the MDA-MB-231/ATCC Breast cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:95</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the MDA-MB-231/ATCC Breast cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:95</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 95, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the MDA-MB-231/ATCC Breast cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/95">pubchem.aid:95</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the MDA-MB-231/ATCC Breast cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/95">pubchem.aid:95</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 95, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the MDA-MB-435 Melanoma cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:85</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the MDA-MB-435 Melanoma cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:85</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 85, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the MDA-MB-435 Melanoma cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/85">pubchem.aid:85</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the MDA-MB-435 Melanoma cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/85">pubchem.aid:85</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 85, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the MDA-N Breast cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:87</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the MDA-N Breast cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:87</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 87, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the MDA-N Breast cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/87">pubchem.aid:87</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the MDA-N Breast cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/87">pubchem.aid:87</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 87, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the MOLT-4 Leukemia cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:123</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the MOLT-4 Leukemia cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:123</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 123, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the MOLT-4 Leukemia cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/123">pubchem.aid:123</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the MOLT-4 Leukemia cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/123">pubchem.aid:123</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 123, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the NCI-H226 Non-Small Cell Lung cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:3</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the NCI-H226 Non-Small Cell Lung cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 3, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the NCI-H226 Non-Small Cell Lung cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/3">pubchem.aid:3</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the NCI-H226 Non-Small Cell Lung cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/3">pubchem.aid:3</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 3, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>NCI human tumor cell line growth inhibition assay. Data for the NCI-H23 Non-Small Cell Lung cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the NCI-H23 Non-Small Cell Lung cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
+<tr><td>NCI human tumor cell line growth inhibition assay. Data for the NCI-H23 Non-Small Cell Lung cell line</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1">pubchem.aid:1</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>NCI human tumor cell line growth inhibition assay. Data for the NCI-H23 Non-Small Cell Lung cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1">pubchem.aid:1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1, deposited by DTP/NCI; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd><dt>notes</dt><dd>26 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but not written here.</dd></dl>
 </details></td></tr>
@@ -247,23 +249,31 @@ isolation report left it.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=FOAIGCPESMNWQP-WCWDXBQESA-N">AntibioticMech (leucinostatin A) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=naturalproductmech%3Amibig-5ff806da31">MediaIngredientMech (naturalproductmech:mibig-5ff806da31) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A33203">TaxonMech: Purpureocillium lilacinum (NCBITaxon:33203) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0001358">PathwayMech (mibig:BGC0001358) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A33203">TaxonMech: Purpureocillium lilacinum (NCBITaxon:33203) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0001358">PathwayMech (mibig:BGC0001358) &nearr;</a>
 </div>
 
 
+<h2 id="curation-history">Curation history <span class="tag">3</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-13T10:43:08Z">2026-10-13T10:43:08Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources<p>Seeded from the committed inventories and curation tables.</p></li>
+<li><time datetime="2026-09-25T03:01:56Z">2026-09-25T03:01:56Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:05Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
+
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0001358</td><td>MIBIG</td><td>4</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001358">BGC0001358</a></td><td>MIBIG</td><td>4</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/amino_acids_and_peptides/leucinostatin-a.yaml">data/natural_products/amino_acids_and_peptides/leucinostatin-a.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20naturalproductmech%3Amibig-5ff806da31&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Famino_acids_and_peptides%2Fleucinostatin-a.html">Report a problem with this record</a>: opens a GitHub issue that names naturalproductmech:mibig-5ff806da31 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Record last updated 2026-10-13 10:43 UTC, its latest curation event. Generated from the committed corpus. Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

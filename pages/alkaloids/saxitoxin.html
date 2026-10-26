@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Alkaloids</a> &middot; saxitoxin</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>saxitoxin</h1>
-<p class="sub"><span class="mono">CHEBI:34970</span>
+<p class="sub"><span class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_34970">CHEBI:34970</a></span>
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 </p>
 <details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/alkaloids/saxitoxin.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/alkaloids/saxitoxin.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 <p>An alkaloid isolated from the marine dinoflagellates and cyanobacteria that causes paralytic shellfish poisoning.</p>
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">RPQXVSUAYFXFJA-HGRQIUPRSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">C1CN2C(=N[C@H]([C@H]3[C@]2(C1(O)O)N=C(N3)N)COC(=O)N)N</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">pubchem:37165, chembl:CHEMBL501134</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/compound/37165">pubchem:37165</a>, <a href="https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL501134">chembl:CHEMBL501134</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Alkaloids</a> —
@@ -57,157 +59,157 @@ other, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Cylindrospermopsis raciborskii T3<br><span class="mono">NCBITaxon:398006</span></td>
+  <td>Cylindrospermopsis raciborskii T3<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=398006">NCBITaxon:398006</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0000188</td>
-  <td><span class="mono">PMID:18487408</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000188">mibig:BGC0000188</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/18487408/">PMID:18487408</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">25</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Saxidomus nuttalli<br><span class="mono">NCBITaxon:1129274</span></td>
+  <td>Saxidomus nuttalli<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1129274">NCBITaxon:1129274</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/0041-0101(85)90159-X</td>
+  <td class="mono"><a href="https://doi.org/10.1016/0041-0101%2885%2990159-X">DOI:10.1016/0041-0101(85)90159-X</a></td>
 </tr>
 <tr>
-  <td>Saxidomus nuttalli<br><span class="mono">NCBITaxon:1129274</span></td>
+  <td>Saxidomus nuttalli<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1129274">NCBITaxon:1129274</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/0198-0254(85)94069-5</td>
+  <td class="mono"><a href="https://doi.org/10.1016/0198-0254%2885%2994069-5">DOI:10.1016/0198-0254(85)94069-5</a></td>
 </tr>
 <tr>
-  <td>Anabaena<br><span class="mono">NCBITaxon:1163</span></td>
+  <td>Anabaena<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1163">NCBITaxon:1163</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/0041-0101(86)90120-0</td>
+  <td class="mono"><a href="https://doi.org/10.1016/0041-0101%2886%2990120-0">DOI:10.1016/0041-0101(86)90120-0</a></td>
 </tr>
 <tr>
-  <td>Anabaena<br><span class="mono">NCBITaxon:1163</span></td>
+  <td>Anabaena<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1163">NCBITaxon:1163</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/JA00838A045</td>
+  <td class="mono"><a href="https://doi.org/10.1021/JA00838A045">DOI:10.1021/JA00838A045</a></td>
 </tr>
 <tr>
-  <td>Aphanizomenon<br><span class="mono">NCBITaxon:1175</span></td>
+  <td>Aphanizomenon<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1175">NCBITaxon:1175</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/JA00838A045</td>
+  <td class="mono"><a href="https://doi.org/10.1021/JA00838A045">DOI:10.1021/JA00838A045</a></td>
 </tr>
 <tr>
-  <td>Aphanizomenon flos-aquae<br><span class="mono">NCBITaxon:1176</span></td>
+  <td>Aphanizomenon flos-aquae<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1176">NCBITaxon:1176</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/0041-0101(86)90120-0</td>
+  <td class="mono"><a href="https://doi.org/10.1016/0041-0101%2886%2990120-0">DOI:10.1016/0041-0101(86)90120-0</a></td>
 </tr>
 <tr>
-  <td>Aphanizomenon flos-aquae<br><span class="mono">NCBITaxon:1176</span></td>
+  <td>Aphanizomenon flos-aquae<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1176">NCBITaxon:1176</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/S0040-4039(00)80500-6</td>
+  <td class="mono"><a href="https://doi.org/10.1016/S0040-4039%2800%2980500-6">DOI:10.1016/S0040-4039(00)80500-6</a></td>
 </tr>
 <tr>
-  <td>Lingulodinium polyedra<br><span class="mono">NCBITaxon:160621</span></td>
+  <td>Lingulodinium polyedra<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=160621">NCBITaxon:160621</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/0041-0101(90)90150-6</td>
+  <td class="mono"><a href="https://doi.org/10.1016/0041-0101%2890%2990150-6">DOI:10.1016/0041-0101(90)90150-6</a></td>
 </tr>
 <tr>
-  <td>Takifugu radiatus<br><span class="mono">NCBITaxon:176186</span></td>
+  <td>Takifugu radiatus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=176186">NCBITaxon:176186</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/0041-0101(84)90082-5</td>
+  <td class="mono"><a href="https://doi.org/10.1016/0041-0101%2884%2990082-5">DOI:10.1016/0041-0101(84)90082-5</a></td>
 </tr>
 <tr>
-  <td>Takifugu poecilonotus<br><span class="mono">NCBITaxon:176188</span></td>
+  <td>Takifugu poecilonotus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=176188">NCBITaxon:176188</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/0041-0101(84)90082-5</td>
+  <td class="mono"><a href="https://doi.org/10.1016/0041-0101%2884%2990082-5">DOI:10.1016/0041-0101(84)90082-5</a></td>
 </tr>
 <tr>
-  <td>Takifugu vermicularis<br><span class="mono">NCBITaxon:177060</span></td>
+  <td>Takifugu vermicularis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=177060">NCBITaxon:177060</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/0041-0101(84)90082-5</td>
+  <td class="mono"><a href="https://doi.org/10.1016/0041-0101%2884%2990082-5">DOI:10.1016/0041-0101(84)90082-5</a></td>
 </tr>
 <tr>
-  <td>Gonyaulax<br><span class="mono">NCBITaxon:2912</span></td>
+  <td>Gonyaulax<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2912">NCBITaxon:2912</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1351/PAC198254101973</td>
+  <td class="mono"><a href="https://doi.org/10.1351/PAC198254101973">DOI:10.1351/PAC198254101973</a></td>
 </tr>
 <tr>
-  <td>Gonyaulax catenella<br><span class="mono">NCBITaxon:2925</span></td>
+  <td>Gonyaulax catenella<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2925">NCBITaxon:2925</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/0041-0101(85)90031-5</td>
+  <td class="mono"><a href="https://doi.org/10.1016/0041-0101%2885%2990031-5">DOI:10.1016/0041-0101(85)90031-5</a></td>
 </tr>
 <tr>
-  <td>Gonyaulax catenella<br><span class="mono">NCBITaxon:2925</span></td>
+  <td>Gonyaulax catenella<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2925">NCBITaxon:2925</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/0041-0101(90)90132-Q</td>
+  <td class="mono"><a href="https://doi.org/10.1016/0041-0101%2890%2990132-Q">DOI:10.1016/0041-0101(90)90132-Q</a></td>
 </tr>
 <tr>
-  <td>Gonyaulax catenella<br><span class="mono">NCBITaxon:2925</span></td>
+  <td>Gonyaulax catenella<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2925">NCBITaxon:2925</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/BI00868A011</td>
+  <td class="mono"><a href="https://doi.org/10.1021/BI00868A011">DOI:10.1021/BI00868A011</a></td>
 </tr>
 <tr>
-  <td>Gonyaulax tamarensis<br><span class="mono">NCBITaxon:2926</span></td>
+  <td>Gonyaulax tamarensis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2926">NCBITaxon:2926</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/0041-0101(90)90132-Q</td>
+  <td class="mono"><a href="https://doi.org/10.1016/0041-0101%2890%2990132-Q">DOI:10.1016/0041-0101(90)90132-Q</a></td>
 </tr>
 <tr>
-  <td>Gonyaulax tamarensis<br><span class="mono">NCBITaxon:2926</span></td>
+  <td>Gonyaulax tamarensis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2926">NCBITaxon:2926</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1248/JHS1956.30.5_328</td>
+  <td class="mono"><a href="https://doi.org/10.1248/JHS1956.30.5_328">DOI:10.1248/JHS1956.30.5_328</a></td>
 </tr>
 <tr>
-  <td>Saxidomus gigantea<br><span class="mono">NCBITaxon:410349</span></td>
+  <td>Saxidomus gigantea<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=410349">NCBITaxon:410349</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/JF60198A016</td>
+  <td class="mono"><a href="https://doi.org/10.1021/JF60198A016">DOI:10.1021/JF60198A016</a></td>
 </tr>
 <tr>
-  <td>Planktothrix<br><span class="mono">NCBITaxon:54304</span></td>
+  <td>Planktothrix<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=54304">NCBITaxon:54304</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/0041-0101(86)90120-0</td>
+  <td class="mono"><a href="https://doi.org/10.1016/0041-0101%2886%2990120-0">DOI:10.1016/0041-0101(86)90120-0</a></td>
 </tr>
 <tr>
-  <td>Planktothrix<br><span class="mono">NCBITaxon:54304</span></td>
+  <td>Planktothrix<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=54304">NCBITaxon:54304</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/JA00838A045</td>
+  <td class="mono"><a href="https://doi.org/10.1021/JA00838A045">DOI:10.1021/JA00838A045</a></td>
 </tr>
 <tr>
-  <td>Carcinoscorpius rotundicauda<br><span class="mono">NCBITaxon:6848</span></td>
+  <td>Carcinoscorpius rotundicauda<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=6848">NCBITaxon:6848</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/0041-0101(88)90064-5</td>
+  <td class="mono"><a href="https://doi.org/10.1016/0041-0101%2888%2990064-5">DOI:10.1016/0041-0101(88)90064-5</a></td>
 </tr>
 <tr>
-  <td>Carcinoscorpius rotundicauda<br><span class="mono">NCBITaxon:6848</span></td>
+  <td>Carcinoscorpius rotundicauda<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=6848">NCBITaxon:6848</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.2331/SUISAN.53.261</td>
+  <td class="mono"><a href="https://doi.org/10.2331/SUISAN.53.261">DOI:10.2331/SUISAN.53.261</a></td>
 </tr>
 <tr>
-  <td>Pyrodinium bahamense<br><span class="mono">NCBITaxon:73915</span></td>
+  <td>Pyrodinium bahamense<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=73915">NCBITaxon:73915</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/0041-0101(84)90082-5</td>
+  <td class="mono"><a href="https://doi.org/10.1016/0041-0101%2884%2990082-5">DOI:10.1016/0041-0101(84)90082-5</a></td>
 </tr>
 <tr>
-  <td>Cylindrospermopsis<br><span class="mono">NCBITaxon:77021</span></td>
+  <td>Cylindrospermopsis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=77021">NCBITaxon:77021</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/0041-0101(86)90120-0</td>
+  <td class="mono"><a href="https://doi.org/10.1016/0041-0101%2886%2990120-0">DOI:10.1016/0041-0101(86)90120-0</a></td>
 </tr>
 <tr>
-  <td>Cylindrospermopsis<br><span class="mono">NCBITaxon:77021</span></td>
+  <td>Cylindrospermopsis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=77021">NCBITaxon:77021</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/JA00838A045</td>
+  <td class="mono"><a href="https://doi.org/10.1021/JA00838A045">DOI:10.1021/JA00838A045</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0000188</td>
-  <td>Cylindrospermopsis raciborskii T3<br><span class="mono">NCBITaxon:398006</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000188">mibig:BGC0000188</a></td>
+  <td>Cylindrospermopsis raciborskii T3<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=398006">NCBITaxon:398006</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:DQ787200.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/DQ787200.1">genbank:DQ787200.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -217,7 +219,7 @@ isolation report left it.</p>
 
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for saxitoxin">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for saxitoxin">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -256,24 +258,32 @@ isolation report left it.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=RPQXVSUAYFXFJA-HGRQIUPRSA-N">AntibioticMech (saxitoxin) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=CHEBI%3A34970">MediaIngredientMech (CHEBI:34970) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A398006">TaxonMech: Cylindrospermopsis raciborskii T3 (NCBITaxon:398006) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000188">PathwayMech (mibig:BGC0000188) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q=CHEBI%3A34970">MediaIngredientMech (CHEBI:34970) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A398006">TaxonMech: Cylindrospermopsis raciborskii T3 (NCBITaxon:398006) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000188">PathwayMech (mibig:BGC0000188) &nearr;</a>
 </div>
 
 
+<h2 id="curation-history">Curation history <span class="tag">2</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-09-25T03:03:19Z">2026-09-25T03:03:19Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:13Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
+
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0000188</td><td>MIBIG</td><td>5</td></tr>
-<tr><td class="mono">CHEBI:34970</td><td>CHEBI</td><td>3-star</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000188">BGC0000188</a></td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_34970">CHEBI:34970</a></td><td>CHEBI</td><td>3-star</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/alkaloids/saxitoxin.yaml">data/natural_products/alkaloids/saxitoxin.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20CHEBI%3A34970&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Falkaloids%2Fsaxitoxin.html">Report a problem with this record</a>: opens a GitHub issue that names CHEBI:34970 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Record last updated 2026-09-25 03:03 UTC, its latest curation event. Generated from the committed corpus. Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

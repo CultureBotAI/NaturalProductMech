@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Alkaloids</a> &middot; physostigmine</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>physostigmine</h1>
-<p class="sub"><span class="mono">CHEBI:27953</span>
+<p class="sub"><span class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_27953">CHEBI:27953</a></span>
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 </p>
 <details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/alkaloids/physostigmine.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/alkaloids/physostigmine.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">PIJVFDBKTWXHHD-HIFRSBDPSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">[H][C@]12N(C)CC[C@@]1(C)C1=C(C=CC(OC(=O)NC)=C1)N2C</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">npatlas:NPA06965, pubchem:5983</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://www.npatlas.org/explore/compounds/NPA06965">npatlas:NPA06965</a>, <a href="https://pubchem.ncbi.nlm.nih.gov/compound/5983">pubchem:5983</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Alkaloids</a> —
@@ -57,62 +59,62 @@ other, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Streptomyces griseofuscus<br><span class="mono">NCBITaxon:146922</span></td>
+  <td>Streptomyces griseofuscus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=146922">NCBITaxon:146922</a></span></td>
   <td><span class="tag causal">BGC_CHARACTERIZED</span></td>
-  <td class="mono">mibig:BGC0000820</td>
-  <td><span class="mono">PMID:24227628</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000820">mibig:BGC0000820</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/24227628/">PMID:24227628</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">6</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Streptomyces<br><span class="mono">NCBITaxon:1883</span></td>
+  <td>Streptomyces<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1883">NCBITaxon:1883</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1271/BBB1961.50.523</td>
+  <td class="mono"><a href="https://doi.org/10.1271/BBB1961.50.523">DOI:10.1271/BBB1961.50.523</a></td>
 </tr>
 <tr>
-  <td>Physostigma venenosum<br><span class="mono">NCBITaxon:271807</span></td>
+  <td>Physostigma venenosum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=271807">NCBITaxon:271807</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1039/JR9640001503</td>
+  <td class="mono"><a href="https://doi.org/10.1039/JR9640001503">DOI:10.1039/JR9640001503</a></td>
 </tr>
 <tr>
-  <td>Physostigma venenosum<br><span class="mono">NCBITaxon:271807</span></td>
+  <td>Physostigma venenosum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=271807">NCBITaxon:271807</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.2307/4117899</td>
+  <td class="mono"><a href="https://doi.org/10.2307/4117899">DOI:10.2307/4117899</a></td>
 </tr>
 <tr>
-  <td>Streptomyces albospinus<br><span class="mono">NCBITaxon:285515</span></td>
+  <td>Streptomyces albospinus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=285515">NCBITaxon:285515</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/ACS.JNATPROD.6B00870</td>
+  <td class="mono"><a href="https://doi.org/10.1021/ACS.JNATPROD.6B00870">DOI:10.1021/ACS.JNATPROD.6B00870</a></td>
 </tr>
 <tr>
-  <td>Penicillium<br><span class="mono">NCBITaxon:5073</span></td>
+  <td>Penicillium<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5073">NCBITaxon:5073</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/ACS.JNATPROD.9B00563</td>
+  <td class="mono"><a href="https://doi.org/10.1021/ACS.JNATPROD.9B00563">DOI:10.1021/ACS.JNATPROD.9B00563</a></td>
 </tr>
 <tr>
-  <td>Streptomyces griseofuscus<br><span class="mono">NCBITaxon:146922</span></td>
+  <td>Streptomyces griseofuscus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=146922">NCBITaxon:146922</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/BF00172487</td>
+  <td class="mono"><a href="https://doi.org/10.1007/BF00172487">DOI:10.1007/BF00172487</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0000820</td>
-  <td>Streptomyces griseofuscus<br><span class="mono">NCBITaxon:146922</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000820">mibig:BGC0000820</a></td>
+  <td>Streptomyces griseofuscus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=146922">NCBITaxon:146922</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:KF201694.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/KF201694.1">genbank:KF201694.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -122,7 +124,7 @@ isolation report left it.</p>
 
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for physostigmine">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for physostigmine">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -155,14 +157,14 @@ isolation report left it.</p>
 </div>
 
 <h2>Causal graph &mdash; bioactivity <span class="tag">5 nodes, 4 edges</span></h2>
-<p class="sub">Physostigmine inhibits human butyrylcholinesterase and human, electric-eel and Pacific-electric-ray acetylcholinesterases.</p><div class="scroll"><table>
+<p class="sub">Physostigmine inhibits human butyrylcholinesterase and human, electric-eel and Pacific-electric-ray acetylcholinesterases.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>physostigmine</td>
   <td>inhibits</td>
   <td>human acetylcholinesterase</td>
   <td>BindingDB maps this exact Standard InChIKey to a 28 nM IC50 measurement against human acetylcholinesterase, and P22303 resolves in UniProtKB to the human ACHE gene product.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/jm010491d</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/jm010491d</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>PubChem BioAssay AID 1796572 was deposited by BindingDB for PMID 12166941 and reports active physostigmine inhibition of human acetylcholinesterase.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/jm010491d">DOI:10.1021/jm010491d</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/jm010491d">DOI:10.1021/jm010491d</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>PubChem BioAssay AID 1796572 was deposited by BindingDB for <a href="https://pubmed.ncbi.nlm.nih.gov/12166941/">PMID 12166941</a> and reports active physostigmine inhibition of human acetylcholinesterase.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -171,7 +173,7 @@ isolation report left it.</p>
   <td>inhibits</td>
   <td>human butyrylcholinesterase</td>
   <td>BindingDB maps this exact Standard InChIKey to a 16 nM IC50 measurement against human butyrylcholinesterase, and P06276 resolves in UniProtKB to the human BCHE gene product.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/jm010491d</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/jm010491d</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>PubChem BioAssay AID 1796572 was deposited by BindingDB for PMID 12166941 and reports active physostigmine inhibition of human butyrylcholinesterase.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/jm010491d">DOI:10.1021/jm010491d</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/jm010491d">DOI:10.1021/jm010491d</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>PubChem BioAssay AID 1796572 was deposited by BindingDB for <a href="https://pubmed.ncbi.nlm.nih.gov/12166941/">PMID 12166941</a> and reports active physostigmine inhibition of human butyrylcholinesterase.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -180,7 +182,7 @@ isolation report left it.</p>
   <td>inhibits</td>
   <td>Electrophorus electricus acetylcholinesterase</td>
   <td>BindingDB-deposited PubChem BioAssay AID 1801485 maps this exact Standard InChIKey to an active 0.04 uM IC50 measurement against UniProtKB:O42275; O42275 resolves in UniProtKB to the Electrophorus electricus ache gene product.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.bioorg.2015.09.008</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.bioorg.2015.09.008</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>acetylcholinesterase and butyrylcholinesterase</dd><dt>notes</dt><dd>PubChem BioAssay AID 1801485 was deposited by BindingDB for PMID 26451651 and reports physostigmine inhibition of UniProtKB:O42275.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.bioorg.2015.09.008">DOI:10.1016/j.bioorg.2015.09.008</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.bioorg.2015.09.008">DOI:10.1016/j.bioorg.2015.09.008</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>acetylcholinesterase and butyrylcholinesterase</dd><dt>notes</dt><dd>PubChem BioAssay AID 1801485 was deposited by BindingDB for <a href="https://pubmed.ncbi.nlm.nih.gov/26451651/">PMID 26451651</a> and reports physostigmine inhibition of UniProtKB:O42275.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -189,7 +191,7 @@ isolation report left it.</p>
   <td>inhibits</td>
   <td>Tetronarce californica acetylcholinesterase</td>
   <td>BindingDB-deposited PubChem BioAssay AID 1801938 maps this exact Standard InChIKey to an active 0.85 uM IC50 measurement against UniProtKB:P04058; P04058 resolves in UniProtKB to the Tetronarce californica ache gene product.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.bioorg.2016.07.005</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.bioorg.2016.07.005</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Synthesis and in vitro acetylcholinesterase and butyrylcholinesterase inhibitory potential</dd><dt>notes</dt><dd>PubChem BioAssay AID 1801938 was deposited by BindingDB for PMID 27441832 and reports physostigmine inhibition of UniProtKB:P04058.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1016/j.bioorg.2016.07.005">DOI:10.1016/j.bioorg.2016.07.005</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.bioorg.2016.07.005">DOI:10.1016/j.bioorg.2016.07.005</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Synthesis and in vitro acetylcholinesterase and butyrylcholinesterase inhibitory potential</dd><dt>notes</dt><dd>PubChem BioAssay AID 1801938 was deposited by BindingDB for <a href="https://pubmed.ncbi.nlm.nih.gov/27441832/">PMID 27441832</a> and reports physostigmine inhibition of UniProtKB:P04058.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -200,105 +202,105 @@ by the corpus tests.</p>
 
 <h2>Bioactivities <span class="tag">25</span></h2>
 <p class="sub">Entries preserve source qualifiers, targets and evidence. Repeated assay names or values are not independent replications; inspect source detail for differences.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Bioactivities"><table>
 <tr><th>Assay</th><th>Result</th><th>Target enzyme</th><th>Source detail</th></tr>
-<tr><td>A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HEK293 cells - 24 hour</td><td>OTHER 26.8325 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1224875</summary><dl><dt>assay</dt><dd>A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HEK293 cells - 24 hour</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1224875</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1224875, deposited by 824; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
+<tr><td>A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HEK293 cells - 24 hour</td><td>OTHER 26.8325 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1224875">pubchem.aid:1224875</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HEK293 cells - 24 hour</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1224875">pubchem.aid:1224875</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1224875, deposited by 824; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>26.8325</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HEK293 cells - 32 hour</td><td>OTHER 23.9145 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1224881</summary><dl><dt>assay</dt><dd>A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HEK293 cells - 32 hour</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1224881</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1224881, deposited by 824; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
+<tr><td>A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HEK293 cells - 32 hour</td><td>OTHER 23.9145 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1224881">pubchem.aid:1224881</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HEK293 cells - 32 hour</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1224881">pubchem.aid:1224881</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1224881, deposited by 824; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>23.9145</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>A quantitative high throughput screen for small molecules that induce DNA re-replication in SW480 colon adenocarcinoma cells.</td><td>OTHER 1.4581 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:624297</summary><dl><dt>assay</dt><dd>A quantitative high throughput screen for small molecules that induce DNA re-replication in SW480 colon adenocarcinoma cells.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:624297</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_056979 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>A quantitative high throughput screen for small molecules that induce DNA re-replication in SW480 colon adenocarcinoma cells.</td><td>OTHER 1.4581 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/624297">pubchem.aid:624297</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>A quantitative high throughput screen for small molecules that induce DNA re-replication in SW480 colon adenocarcinoma cells.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/624297">pubchem.aid:624297</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_056979 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>1.4581</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>AChE and BChE Assay from Article 10.1016/j.bioorg.2015.09.008: &#34;Pyridine sulfonamide as a small key organic molecule for the potential treatment of type-II diabetes mellitus and Alzheimer&amp;#39;s disease: In vitro studies against yeast a-glucosidase, acetylcholinesterase and butyrylcholinesterase.&#34;</td><td>IC50 0.04 uM; ACTIVE</td><td class="mono">UniProtKB:O42275</td><td><details><summary>PMID:26451651</summary><dl><dt>assay</dt><dd>AChE and BChE Assay from Article 10.1016/j.bioorg.2015.09.008: &#34;Pyridine sulfonamide as a small key organic molecule for the potential treatment of type-II diabetes mellitus and Alzheimer&amp;#39;s disease: In vitro studies against yeast a-glucosidase, acetylcholinesterase and butyrylcholinesterase.&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:26451651</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1801485, deposited by BindingDB; assay type Confirmatory.</dd></dl>
+<tr><td>AChE and BChE Assay from Article <a href="https://doi.org/10.1016/j.bioorg.2015.09.008">10.1016/j.bioorg.2015.09.008</a>: &#34;Pyridine sulfonamide as a small key organic molecule for the potential treatment of type-II diabetes mellitus and Alzheimer&amp;#39;s disease: In vitro studies against yeast a-glucosidase, acetylcholinesterase and butyrylcholinesterase.&#34;</td><td>IC50 0.04 uM; ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/O42275/entry">UniProtKB:O42275</a></td><td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/26451651/">PMID:26451651</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>AChE and BChE Assay from Article <a href="https://doi.org/10.1016/j.bioorg.2015.09.008">10.1016/j.bioorg.2015.09.008</a>: &#34;Pyridine sulfonamide as a small key organic molecule for the potential treatment of type-II diabetes mellitus and Alzheimer&amp;#39;s disease: In vitro studies against yeast a-glucosidase, acetylcholinesterase and butyrylcholinesterase.&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/26451651/">PMID:26451651</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1801485, deposited by BindingDB; assay type Confirmatory.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>0.04</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:O42275</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>0.04</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/O42275/entry">UniProtKB:O42275</a></dd></dl>
 </details></td></tr>
-<tr><td>AChE and BChE Assay from Article 10.1016/j.bioorg.2015.09.008: &#34;Pyridine sulfonamide as a small key organic molecule for the potential treatment of type-II diabetes mellitus and Alzheimer&amp;#39;s disease: In vitro studies against yeast a-glucosidase, acetylcholinesterase and butyrylcholinesterase.&#34;</td><td>IC50 0.85 uM; ACTIVE</td><td class="mono">UniProtKB:P06276</td><td><details><summary>PMID:26451651</summary><dl><dt>assay</dt><dd>AChE and BChE Assay from Article 10.1016/j.bioorg.2015.09.008: &#34;Pyridine sulfonamide as a small key organic molecule for the potential treatment of type-II diabetes mellitus and Alzheimer&amp;#39;s disease: In vitro studies against yeast a-glucosidase, acetylcholinesterase and butyrylcholinesterase.&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:26451651</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1801485, deposited by BindingDB; assay type Confirmatory.</dd></dl>
+<tr><td>AChE and BChE Assay from Article <a href="https://doi.org/10.1016/j.bioorg.2015.09.008">10.1016/j.bioorg.2015.09.008</a>: &#34;Pyridine sulfonamide as a small key organic molecule for the potential treatment of type-II diabetes mellitus and Alzheimer&amp;#39;s disease: In vitro studies against yeast a-glucosidase, acetylcholinesterase and butyrylcholinesterase.&#34;</td><td>IC50 0.85 uM; ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/P06276/entry">UniProtKB:P06276</a></td><td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/26451651/">PMID:26451651</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>AChE and BChE Assay from Article <a href="https://doi.org/10.1016/j.bioorg.2015.09.008">10.1016/j.bioorg.2015.09.008</a>: &#34;Pyridine sulfonamide as a small key organic molecule for the potential treatment of type-II diabetes mellitus and Alzheimer&amp;#39;s disease: In vitro studies against yeast a-glucosidase, acetylcholinesterase and butyrylcholinesterase.&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/26451651/">PMID:26451651</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1801485, deposited by BindingDB; assay type Confirmatory.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>0.85</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:P06276</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>0.85</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/P06276/entry">UniProtKB:P06276</a></dd></dl>
 </details></td></tr>
-<tr><td>Acetylcholinesterase (AChE) small molecule antagonists: colormetric cell-based qHTS assay</td><td>OTHER 0.1589 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1347395</summary><dl><dt>assay</dt><dd>Acetylcholinesterase (AChE) small molecule antagonists: colormetric cell-based qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1347395</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347395, deposited by 824; assay type Confirmatory. Source endpoint: Potency. Target accession AAA68151 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Acetylcholinesterase (AChE) small molecule antagonists: colormetric cell-based qHTS assay</td><td>OTHER 0.1589 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1347395">pubchem.aid:1347395</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Acetylcholinesterase (AChE) small molecule antagonists: colormetric cell-based qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1347395">pubchem.aid:1347395</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347395, deposited by 824; assay type Confirmatory. Source endpoint: Potency. Target accession AAA68151 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.1589</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Acetylcholinesterase (AChE) small molecule antagonists: colormetric cell-based qHTS assay</td><td>OTHER 0.389 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1347395</summary><dl><dt>assay</dt><dd>Acetylcholinesterase (AChE) small molecule antagonists: colormetric cell-based qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1347395</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347395, deposited by 824; assay type Confirmatory. Source endpoint: Potency. Target accession AAA68151 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Acetylcholinesterase (AChE) small molecule antagonists: colormetric cell-based qHTS assay</td><td>OTHER 0.389 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1347395">pubchem.aid:1347395</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Acetylcholinesterase (AChE) small molecule antagonists: colormetric cell-based qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1347395">pubchem.aid:1347395</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347395, deposited by 824; assay type Confirmatory. Source endpoint: Potency. Target accession AAA68151 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.389</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Acetylcholinesterase (AChE) small molecule antagonists: enzyme-based qHTS assay</td><td>OTHER 0.1125 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1347397</summary><dl><dt>assay</dt><dd>Acetylcholinesterase (AChE) small molecule antagonists: enzyme-based qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1347397</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347397, deposited by 824; assay type Confirmatory. Source endpoint: Potency. Target accession AAA68151 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Acetylcholinesterase (AChE) small molecule antagonists: enzyme-based qHTS assay</td><td>OTHER 0.1125 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1347397">pubchem.aid:1347397</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Acetylcholinesterase (AChE) small molecule antagonists: enzyme-based qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1347397">pubchem.aid:1347397</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347397, deposited by 824; assay type Confirmatory. Source endpoint: Potency. Target accession AAA68151 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.1125</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Acetylcholinesterase (AChE) small molecule antagonists: enzyme-based qHTS assay</td><td>OTHER 0.0871 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1347397</summary><dl><dt>assay</dt><dd>Acetylcholinesterase (AChE) small molecule antagonists: enzyme-based qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1347397</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347397, deposited by 824; assay type Confirmatory. Source endpoint: Potency. Target accession AAA68151 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Acetylcholinesterase (AChE) small molecule antagonists: enzyme-based qHTS assay</td><td>OTHER 0.0871 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1347397">pubchem.aid:1347397</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Acetylcholinesterase (AChE) small molecule antagonists: enzyme-based qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1347397">pubchem.aid:1347397</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347397, deposited by 824; assay type Confirmatory. Source endpoint: Potency. Target accession AAA68151 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.0871</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Acetylcholinesterase (AChE) small molecule antagonists: enzyme-based qHTS assay with human liver microsomes</td><td>OTHER 1.0026 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1347399</summary><dl><dt>assay</dt><dd>Acetylcholinesterase (AChE) small molecule antagonists: enzyme-based qHTS assay with human liver microsomes</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1347399</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347399, deposited by 824; assay type Confirmatory. Source endpoint: Potency. Target accession AAA68151 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Acetylcholinesterase (AChE) small molecule antagonists: enzyme-based qHTS assay with human liver microsomes</td><td>OTHER 1.0026 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1347399">pubchem.aid:1347399</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Acetylcholinesterase (AChE) small molecule antagonists: enzyme-based qHTS assay with human liver microsomes</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1347399">pubchem.aid:1347399</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347399, deposited by 824; assay type Confirmatory. Source endpoint: Potency. Target accession AAA68151 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>1.0026</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Acetylcholinesterase (AChE) small molecule antagonists: enzyme-based qHTS assay with human liver microsomes</td><td>OTHER 2.4545 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1347399</summary><dl><dt>assay</dt><dd>Acetylcholinesterase (AChE) small molecule antagonists: enzyme-based qHTS assay with human liver microsomes</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1347399</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347399, deposited by 824; assay type Confirmatory. Source endpoint: Potency. Target accession AAA68151 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Acetylcholinesterase (AChE) small molecule antagonists: enzyme-based qHTS assay with human liver microsomes</td><td>OTHER 2.4545 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1347399">pubchem.aid:1347399</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Acetylcholinesterase (AChE) small molecule antagonists: enzyme-based qHTS assay with human liver microsomes</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1347399">pubchem.aid:1347399</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347399, deposited by 824; assay type Confirmatory. Source endpoint: Potency. Target accession AAA68151 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>2.4545</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Acetylcholinesterase (AChE) small molecule antagonists: fluorescence cell-based qHTS assay</td><td>OTHER 0.0564 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1347398</summary><dl><dt>assay</dt><dd>Acetylcholinesterase (AChE) small molecule antagonists: fluorescence cell-based qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1347398</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347398, deposited by 824; assay type Confirmatory. Source endpoint: Potency. Target accession AAA68151 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Acetylcholinesterase (AChE) small molecule antagonists: fluorescence cell-based qHTS assay</td><td>OTHER 0.0564 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1347398">pubchem.aid:1347398</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Acetylcholinesterase (AChE) small molecule antagonists: fluorescence cell-based qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1347398">pubchem.aid:1347398</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347398, deposited by 824; assay type Confirmatory. Source endpoint: Potency. Target accession AAA68151 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.0564</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Acetylcholinesterase (AChE) small molecule antagonists: fluorescence cell-based qHTS assay</td><td>OTHER 0.0436 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1347398</summary><dl><dt>assay</dt><dd>Acetylcholinesterase (AChE) small molecule antagonists: fluorescence cell-based qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1347398</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347398, deposited by 824; assay type Confirmatory. Source endpoint: Potency. Target accession AAA68151 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Acetylcholinesterase (AChE) small molecule antagonists: fluorescence cell-based qHTS assay</td><td>OTHER 0.0436 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1347398">pubchem.aid:1347398</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Acetylcholinesterase (AChE) small molecule antagonists: fluorescence cell-based qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1347398">pubchem.aid:1347398</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347398, deposited by 824; assay type Confirmatory. Source endpoint: Potency. Target accession AAA68151 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.0436</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Acetylcholinesterase Assay from Article 10.1016/j.bioorg.2015.11.002: &#34;Novel biphenyl bis-sulfonamides as acetyl and butyrylcholinesterase inhibitors: Synthesis, biological evaluation and molecular modeling studies.&#34;</td><td>IC50 0.04 uM; ACTIVE</td><td class="mono">UniProtKB:P22303</td><td><details><summary>PMID:26595185</summary><dl><dt>assay</dt><dd>Acetylcholinesterase Assay from Article 10.1016/j.bioorg.2015.11.002: &#34;Novel biphenyl bis-sulfonamides as acetyl and butyrylcholinesterase inhibitors: Synthesis, biological evaluation and molecular modeling studies.&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:26595185</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1801527, deposited by BindingDB; assay type Confirmatory.</dd></dl>
+<tr><td>Acetylcholinesterase Assay from Article <a href="https://doi.org/10.1016/j.bioorg.2015.11.002">10.1016/j.bioorg.2015.11.002</a>: &#34;Novel biphenyl bis-sulfonamides as acetyl and butyrylcholinesterase inhibitors: Synthesis, biological evaluation and molecular modeling studies.&#34;</td><td>IC50 0.04 uM; ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/P22303/entry">UniProtKB:P22303</a></td><td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/26595185/">PMID:26595185</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Acetylcholinesterase Assay from Article <a href="https://doi.org/10.1016/j.bioorg.2015.11.002">10.1016/j.bioorg.2015.11.002</a>: &#34;Novel biphenyl bis-sulfonamides as acetyl and butyrylcholinesterase inhibitors: Synthesis, biological evaluation and molecular modeling studies.&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/26595185/">PMID:26595185</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1801527, deposited by BindingDB; assay type Confirmatory.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>0.04</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:P22303</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>0.04</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/P22303/entry">UniProtKB:P22303</a></dd></dl>
 </details></td></tr>
-<tr><td>Acetylcholinesterase Assay from Article 10.1016/j.bioorg.2016.07.005: &#34;Synthesis and in vitro acetylcholinesterase and butyrylcholinesterase inhibitory potential of hydrazide based Schiff bases.&#34;</td><td>IC50 0.85 uM; ACTIVE</td><td class="mono">UniProtKB:P04058</td><td><details><summary>PMID:27441832</summary><dl><dt>assay</dt><dd>Acetylcholinesterase Assay from Article 10.1016/j.bioorg.2016.07.005: &#34;Synthesis and in vitro acetylcholinesterase and butyrylcholinesterase inhibitory potential of hydrazide based Schiff bases.&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:27441832</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1801938, deposited by BindingDB; assay type Confirmatory.</dd></dl>
+<tr><td>Acetylcholinesterase Assay from Article <a href="https://doi.org/10.1016/j.bioorg.2016.07.005">10.1016/j.bioorg.2016.07.005</a>: &#34;Synthesis and in vitro acetylcholinesterase and butyrylcholinesterase inhibitory potential of hydrazide based Schiff bases.&#34;</td><td>IC50 0.85 uM; ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/P04058/entry">UniProtKB:P04058</a></td><td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/27441832/">PMID:27441832</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Acetylcholinesterase Assay from Article <a href="https://doi.org/10.1016/j.bioorg.2016.07.005">10.1016/j.bioorg.2016.07.005</a>: &#34;Synthesis and in vitro acetylcholinesterase and butyrylcholinesterase inhibitory potential of hydrazide based Schiff bases.&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/27441832/">PMID:27441832</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1801938, deposited by BindingDB; assay type Confirmatory.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>0.85</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:P04058</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>0.85</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/P04058/entry">UniProtKB:P04058</a></dd></dl>
 </details></td></tr>
-<tr><td>Butyrylcholinesterase Assay from Article 10.1016/j.bioorg.2015.11.002: &#34;Novel biphenyl bis-sulfonamides as acetyl and butyrylcholinesterase inhibitors: Synthesis, biological evaluation and molecular modeling studies.&#34;</td><td>IC50 0.85 uM; ACTIVE</td><td class="mono">UniProtKB:P06276</td><td><details><summary>PMID:26595185</summary><dl><dt>assay</dt><dd>Butyrylcholinesterase Assay from Article 10.1016/j.bioorg.2015.11.002: &#34;Novel biphenyl bis-sulfonamides as acetyl and butyrylcholinesterase inhibitors: Synthesis, biological evaluation and molecular modeling studies.&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:26595185</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1801528, deposited by BindingDB; assay type Confirmatory.</dd></dl>
+<tr><td>Butyrylcholinesterase Assay from Article <a href="https://doi.org/10.1016/j.bioorg.2015.11.002">10.1016/j.bioorg.2015.11.002</a>: &#34;Novel biphenyl bis-sulfonamides as acetyl and butyrylcholinesterase inhibitors: Synthesis, biological evaluation and molecular modeling studies.&#34;</td><td>IC50 0.85 uM; ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/P06276/entry">UniProtKB:P06276</a></td><td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/26595185/">PMID:26595185</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Butyrylcholinesterase Assay from Article <a href="https://doi.org/10.1016/j.bioorg.2015.11.002">10.1016/j.bioorg.2015.11.002</a>: &#34;Novel biphenyl bis-sulfonamides as acetyl and butyrylcholinesterase inhibitors: Synthesis, biological evaluation and molecular modeling studies.&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/26595185/">PMID:26595185</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1801528, deposited by BindingDB; assay type Confirmatory.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>0.85</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:P06276</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>0.85</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/P06276/entry">UniProtKB:P06276</a></dd></dl>
 </details></td></tr>
-<tr><td>Butyrylcholinesterase Assay from Article 10.1016/j.bioorg.2016.07.005: &#34;Synthesis and in vitro acetylcholinesterase and butyrylcholinesterase inhibitory potential of hydrazide based Schiff bases.&#34;</td><td>IC50 0.04 uM; ACTIVE</td><td class="mono">UniProtKB:P06276</td><td><details><summary>PMID:27441832</summary><dl><dt>assay</dt><dd>Butyrylcholinesterase Assay from Article 10.1016/j.bioorg.2016.07.005: &#34;Synthesis and in vitro acetylcholinesterase and butyrylcholinesterase inhibitory potential of hydrazide based Schiff bases.&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:27441832</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1801939, deposited by BindingDB; assay type Confirmatory.</dd></dl>
+<tr><td>Butyrylcholinesterase Assay from Article <a href="https://doi.org/10.1016/j.bioorg.2016.07.005">10.1016/j.bioorg.2016.07.005</a>: &#34;Synthesis and in vitro acetylcholinesterase and butyrylcholinesterase inhibitory potential of hydrazide based Schiff bases.&#34;</td><td>IC50 0.04 uM; ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/P06276/entry">UniProtKB:P06276</a></td><td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/27441832/">PMID:27441832</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Butyrylcholinesterase Assay from Article <a href="https://doi.org/10.1016/j.bioorg.2016.07.005">10.1016/j.bioorg.2016.07.005</a>: &#34;Synthesis and in vitro acetylcholinesterase and butyrylcholinesterase inhibitory potential of hydrazide based Schiff bases.&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/27441832/">PMID:27441832</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1801939, deposited by BindingDB; assay type Confirmatory.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>0.04</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:P06276</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>0.04</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/P06276/entry">UniProtKB:P06276</a></dd></dl>
 </details></td></tr>
-<tr><td>Cholinesterase Inhibition Assay from Article 10.1021/jm010491d: &#34;Anticholinesterase activity of compounds related to geneserine tautomers. N-Oxides and 1,2-oxazines.&#34;</td><td>IC50 0.016 uM; ACTIVE</td><td class="mono">UniProtKB:P06276</td><td><details><summary>PMID:12166941</summary><dl><dt>assay</dt><dd>Cholinesterase Inhibition Assay from Article 10.1021/jm010491d: &#34;Anticholinesterase activity of compounds related to geneserine tautomers. N-Oxides and 1,2-oxazines.&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:12166941</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1796572, deposited by BindingDB; assay type Confirmatory.</dd></dl>
+<tr><td>Cholinesterase Inhibition Assay from Article <a href="https://doi.org/10.1021/jm010491d">10.1021/jm010491d</a>: &#34;Anticholinesterase activity of compounds related to geneserine tautomers. N-Oxides and 1,2-oxazines.&#34;</td><td>IC50 0.016 uM; ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/P06276/entry">UniProtKB:P06276</a></td><td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/12166941/">PMID:12166941</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Cholinesterase Inhibition Assay from Article <a href="https://doi.org/10.1021/jm010491d">10.1021/jm010491d</a>: &#34;Anticholinesterase activity of compounds related to geneserine tautomers. N-Oxides and 1,2-oxazines.&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/12166941/">PMID:12166941</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1796572, deposited by BindingDB; assay type Confirmatory.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>0.016</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:P06276</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>0.016</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/P06276/entry">UniProtKB:P06276</a></dd></dl>
 </details></td></tr>
-<tr><td>Cholinesterase Inhibition Assay from Article 10.1021/jm010491d: &#34;Anticholinesterase activity of compounds related to geneserine tautomers. N-Oxides and 1,2-oxazines.&#34;</td><td>IC50 0.028 uM; ACTIVE</td><td class="mono">UniProtKB:P22303</td><td><details><summary>PMID:12166941</summary><dl><dt>assay</dt><dd>Cholinesterase Inhibition Assay from Article 10.1021/jm010491d: &#34;Anticholinesterase activity of compounds related to geneserine tautomers. N-Oxides and 1,2-oxazines.&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:12166941</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1796572, deposited by BindingDB; assay type Confirmatory.</dd></dl>
+<tr><td>Cholinesterase Inhibition Assay from Article <a href="https://doi.org/10.1021/jm010491d">10.1021/jm010491d</a>: &#34;Anticholinesterase activity of compounds related to geneserine tautomers. N-Oxides and 1,2-oxazines.&#34;</td><td>IC50 0.028 uM; ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/P22303/entry">UniProtKB:P22303</a></td><td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/12166941/">PMID:12166941</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Cholinesterase Inhibition Assay from Article <a href="https://doi.org/10.1021/jm010491d">10.1021/jm010491d</a>: &#34;Anticholinesterase activity of compounds related to geneserine tautomers. N-Oxides and 1,2-oxazines.&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/12166941/">PMID:12166941</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1796572, deposited by BindingDB; assay type Confirmatory.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>0.028</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:P22303</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>0.028</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/P22303/entry">UniProtKB:P22303</a></dd></dl>
 </details></td></tr>
-<tr><td>Confirmatory qHTS for inhibitors of NSP2Pro chikungunya virus (CHIKV)</td><td>OTHER 14.193 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1964105</summary><dl><dt>assay</dt><dd>Confirmatory qHTS for inhibitors of NSP2Pro chikungunya virus (CHIKV)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1964105</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1964105, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
+<tr><td>Confirmatory qHTS for inhibitors of NSP2Pro chikungunya virus (CHIKV)</td><td>OTHER 14.193 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1964105">pubchem.aid:1964105</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Confirmatory qHTS for inhibitors of NSP2Pro chikungunya virus (CHIKV)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1964105">pubchem.aid:1964105</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1964105, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>14.193</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Cytochrome P450 Family 1 Subfamily A Member 2 (CYP1A2) small molecule antagonists: luciferase reporter qHTS assay</td><td>OTHER 39.9149 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1671199</summary><dl><dt>assay</dt><dd>Cytochrome P450 Family 1 Subfamily A Member 2 (CYP1A2) small molecule antagonists: luciferase reporter qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1671199</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671199, deposited by 824; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
+<tr><td>Cytochrome P450 Family 1 Subfamily A Member 2 (CYP1A2) small molecule antagonists: luciferase reporter qHTS assay</td><td>OTHER 39.9149 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671199">pubchem.aid:1671199</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Cytochrome P450 Family 1 Subfamily A Member 2 (CYP1A2) small molecule antagonists: luciferase reporter qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671199">pubchem.aid:1671199</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671199, deposited by 824; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>39.9149</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Cytochrome P450 Family 1 Subfamily A Member 2 (CYP1A2) small molecule antagonists: luciferase reporter qHTS assay</td><td>OTHER 39.9149 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1671199</summary><dl><dt>assay</dt><dd>Cytochrome P450 Family 1 Subfamily A Member 2 (CYP1A2) small molecule antagonists: luciferase reporter qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1671199</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671199, deposited by 824; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession EAW99313 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Cytochrome P450 Family 1 Subfamily A Member 2 (CYP1A2) small molecule antagonists: luciferase reporter qHTS assay</td><td>OTHER 39.9149 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671199">pubchem.aid:1671199</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Cytochrome P450 Family 1 Subfamily A Member 2 (CYP1A2) small molecule antagonists: luciferase reporter qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671199">pubchem.aid:1671199</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671199, deposited by 824; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession EAW99313 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>39.9149</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Cytochrome P450 Family 2 Subfamily C Member 19 (CYP2C19) small molecule antagonists: luciferase reporter qHTS assay</td><td>OTHER 25.1846 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1671197</summary><dl><dt>assay</dt><dd>Cytochrome P450 Family 2 Subfamily C Member 19 (CYP2C19) small molecule antagonists: luciferase reporter qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1671197</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671197, deposited by 824; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Cytochrome P450 Family 2 Subfamily C Member 19 (CYP2C19) small molecule antagonists: luciferase reporter qHTS assay</td><td>OTHER 25.1846 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671197">pubchem.aid:1671197</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Cytochrome P450 Family 2 Subfamily C Member 19 (CYP2C19) small molecule antagonists: luciferase reporter qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671197">pubchem.aid:1671197</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671197, deposited by 824; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>25.1846</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Cytochrome P450 Family 2 Subfamily C Member 19 (CYP2C19) small molecule antagonists: luciferase reporter qHTS assay</td><td>OTHER 25.1846 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1671197</summary><dl><dt>assay</dt><dd>Cytochrome P450 Family 2 Subfamily C Member 19 (CYP2C19) small molecule antagonists: luciferase reporter qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1671197</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671197, deposited by 824; assay type Confirmatory. Source endpoint: Potency. Target accession AAV41877 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Cytochrome P450 Family 2 Subfamily C Member 19 (CYP2C19) small molecule antagonists: luciferase reporter qHTS assay</td><td>OTHER 25.1846 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671197">pubchem.aid:1671197</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Cytochrome P450 Family 2 Subfamily C Member 19 (CYP2C19) small molecule antagonists: luciferase reporter qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671197">pubchem.aid:1671197</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671197, deposited by 824; assay type Confirmatory. Source endpoint: Potency. Target accession AAV41877 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>25.1846</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Cytochrome P450 Family 2 Subfamily C Member 9 (CYP2C9) small molecule antagonists: luciferase reporter qHTS assay</td><td>OTHER 70.9799 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1671198</summary><dl><dt>assay</dt><dd>Cytochrome P450 Family 2 Subfamily C Member 9 (CYP2C9) small molecule antagonists: luciferase reporter qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1671198</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671198, deposited by 824; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Cytochrome P450 Family 2 Subfamily C Member 9 (CYP2C9) small molecule antagonists: luciferase reporter qHTS assay</td><td>OTHER 70.9799 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671198">pubchem.aid:1671198</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Cytochrome P450 Family 2 Subfamily C Member 9 (CYP2C9) small molecule antagonists: luciferase reporter qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671198">pubchem.aid:1671198</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671198, deposited by 824; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>70.9799</dd><dt>units</dt><dd>uM</dd><dt>notes</dt><dd>109 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but not written here.</dd></dl>
 </details></td></tr>
@@ -308,24 +310,36 @@ by the corpus tests.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=PIJVFDBKTWXHHD-HIFRSBDPSA-N">AntibioticMech (physostigmine) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=CHEBI%3A27953">MediaIngredientMech (CHEBI:27953) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A146922">TaxonMech: Streptomyces griseofuscus (NCBITaxon:146922) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000820">PathwayMech (mibig:BGC0000820) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q=CHEBI%3A27953">MediaIngredientMech (CHEBI:27953) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A146922">TaxonMech: Streptomyces griseofuscus (NCBITaxon:146922) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000820">PathwayMech (mibig:BGC0000820) &nearr;</a>
 </div>
 
 
+<h2 id="curation-history">Curation history <span class="tag">7</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-13T10:44:40Z">2026-10-13T10:44:40Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-10-13T07:42:40Z)</span><p>Seeded from the committed inventories and curation tables.</p></li>
+<li><time datetime="2026-09-25T03:03:05Z">2026-09-25T03:03:05Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources<p>Seeded from the committed inventories in data/raw/.</p></li>
+<li><time datetime="2026-09-12T01:09:25Z">2026-09-12T01:09:25Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Extended the BIOACTIVITY physostigmine cholinesterase graph with inhibition edges for electric-eel and Pacific-electric-ray acetylcholinesterases, grounded the new graph nodes to UniProtKB:O42275 and UniProtKB:P04058, and cited <a href="https://doi.org/10.1016/j.bioorg.2015.09.008">DOI:10.1016/j.bioorg.2015.09.008</a> and <a href="https://doi.org/10.1016/j.bioorg.2016.07.005">DOI:10.1016/j.bioorg.2016.07.005</a> via exact BindingDB-deposited PubChem BioAssay rows for <a href="https://pubmed.ncbi.nlm.nih.gov/26451651/">PMID 26451651</a> and <a href="https://pubmed.ncbi.nlm.nih.gov/27441832/">PMID 27441832</a>.</p></li>
+<li><time datetime="2026-09-11T06:07:14Z">2026-09-11T06:07:14Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added a BIOACTIVITY causal graph for physostigmine inhibition of human acetylcholinesterase and human butyrylcholinesterase, grounded the enzyme nodes to UniProtKB:P22303 and UniProtKB:P06276, and cited <a href="https://doi.org/10.1021/jm010491d">DOI:10.1021/jm010491d</a> via the BindingDB-deposited <a href="https://pubmed.ncbi.nlm.nih.gov/12166941/">PMID 12166941</a> measurements in PubChem BioAssay AID 1796572.</p></li>
+<li><time datetime="2026-09-10T06:50:05Z">2026-09-10T06:50:05Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:11Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
+
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0000820</td><td>MIBIG</td><td>5</td></tr>
-<tr><td class="mono">CHEBI:27953</td><td>CHEBI</td><td>3-star</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000820">BGC0000820</a></td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_27953">CHEBI:27953</a></td><td>CHEBI</td><td>3-star</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/alkaloids/physostigmine.yaml">data/natural_products/alkaloids/physostigmine.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20CHEBI%3A27953&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Falkaloids%2Fphysostigmine.html">Report a problem with this record</a>: opens a GitHub issue that names CHEBI:27953 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Record last updated 2026-10-13 10:44 UTC, its latest curation event. Generated from the committed corpus. Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

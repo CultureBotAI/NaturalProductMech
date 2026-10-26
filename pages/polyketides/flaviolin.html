@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Polyketides</a> &middot; flaviolin</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>flaviolin</h1>
-<p class="sub"><span class="mono">naturalproductmech:mibig-cfe2b5c0a9</span>
+<p class="sub"><span class="mono"><a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/polyketides/flaviolin.yaml">naturalproductmech:mibig-cfe2b5c0a9</a></span>
   <span class="tag">MINTED</span>
   <span class="tag">SEEDED</span>
 </p>
 <div class="note"><strong>Grounding review:</strong> No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.</div><details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/flaviolin.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/flaviolin.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">XNPCAGMCQDGQKK-UHFFFAOYSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">C1=C(C=C2C(=C1O)C(=CC(=O)C2=O)O)O</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">pubchem:160478, npatlas:NPA032742</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/compound/160478">pubchem:160478</a>, <a href="https://www.npatlas.org/explore/compounds/NPA032742">npatlas:NPA032742</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Polyketides</a> —
@@ -57,118 +59,118 @@ pks, saccharide, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Saccharopolyspora erythraea<br><span class="mono">NCBITaxon:1836</span></td>
+  <td>Saccharopolyspora erythraea<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1836">NCBITaxon:1836</a></span></td>
   <td><span class="tag causal">BGC_CHARACTERIZED</span></td>
-  <td class="mono">mibig:BGC0000285</td>
-  <td><span class="mono">PMID:12028378</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000285">mibig:BGC0000285</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/12028378/">PMID:12028378</a></span></td>
 </tr>
 <tr>
-  <td>Saccharopolyspora erythraea NRRL 2338<br><span class="mono">NCBITaxon:405948</span></td>
+  <td>Saccharopolyspora erythraea NRRL 2338<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=405948">NCBITaxon:405948</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0000902</td>
-  <td><span class="mono">PMID:22187221</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000902">mibig:BGC0000902</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/22187221/">PMID:22187221</a></span></td>
 </tr>
 <tr>
-  <td>Streptomyces coelicolor A3(2)<br><span class="mono">NCBITaxon:100226</span></td>
+  <td>Streptomyces coelicolor A3(2)<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=100226">NCBITaxon:100226</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0002127</td>
-  <td><span class="mono">PMID:12905073</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002127">mibig:BGC0002127</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/12905073/">PMID:12905073</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">12</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Streptomyces albidoflavus<br><span class="mono">NCBITaxon:1886</span></td>
+  <td>Streptomyces albidoflavus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1886">NCBITaxon:1886</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/S10295-003-0075-8</td>
+  <td class="mono"><a href="https://doi.org/10.1007/S10295-003-0075-8">DOI:10.1007/S10295-003-0075-8</a></td>
 </tr>
 <tr>
-  <td>Streptomyces albidoflavus<br><span class="mono">NCBITaxon:1886</span></td>
+  <td>Streptomyces albidoflavus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1886">NCBITaxon:1886</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/S10295-013-1383-2</td>
+  <td class="mono"><a href="https://doi.org/10.1007/S10295-013-1383-2">DOI:10.1007/S10295-013-1383-2</a></td>
 </tr>
 <tr>
-  <td>Streptomyces albidoflavus<br><span class="mono">NCBITaxon:1886</span></td>
+  <td>Streptomyces albidoflavus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1886">NCBITaxon:1886</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1186/S12934-015-0335-0</td>
+  <td class="mono"><a href="https://doi.org/10.1186/S12934-015-0335-0">DOI:10.1186/S12934-015-0335-0</a></td>
 </tr>
 <tr>
-  <td>Streptomyces coelicolor<br><span class="mono">NCBITaxon:1902</span></td>
+  <td>Streptomyces coelicolor<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1902">NCBITaxon:1902</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/S10295-003-0075-8</td>
+  <td class="mono"><a href="https://doi.org/10.1007/S10295-003-0075-8">DOI:10.1007/S10295-003-0075-8</a></td>
 </tr>
 <tr>
-  <td>Streptomyces coelicolor<br><span class="mono">NCBITaxon:1902</span></td>
+  <td>Streptomyces coelicolor<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1902">NCBITaxon:1902</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/S10295-013-1383-2</td>
+  <td class="mono"><a href="https://doi.org/10.1007/S10295-013-1383-2">DOI:10.1007/S10295-013-1383-2</a></td>
 </tr>
 <tr>
-  <td>Streptomyces coelicolor<br><span class="mono">NCBITaxon:1902</span></td>
+  <td>Streptomyces coelicolor<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1902">NCBITaxon:1902</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1186/S12934-015-0335-0</td>
+  <td class="mono"><a href="https://doi.org/10.1186/S12934-015-0335-0">DOI:10.1186/S12934-015-0335-0</a></td>
 </tr>
 <tr>
-  <td>Verticillium dahliae<br><span class="mono">NCBITaxon:27337</span></td>
+  <td>Verticillium dahliae<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=27337">NCBITaxon:27337</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/BF00567298</td>
+  <td class="mono"><a href="https://doi.org/10.1007/BF00567298">DOI:10.1007/BF00567298</a></td>
 </tr>
 <tr>
-  <td>Verticillium dahliae<br><span class="mono">NCBITaxon:27337</span></td>
+  <td>Verticillium dahliae<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=27337">NCBITaxon:27337</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/BF00567299</td>
+  <td class="mono"><a href="https://doi.org/10.1007/BF00567299">DOI:10.1007/BF00567299</a></td>
 </tr>
 <tr>
-  <td>Leptosphaeria maculans<br><span class="mono">NCBITaxon:5022</span></td>
+  <td>Leptosphaeria maculans<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5022">NCBITaxon:5022</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/0031-9422(88)80752-0</td>
+  <td class="mono"><a href="https://doi.org/10.1016/0031-9422%2888%2980752-0">DOI:10.1016/0031-9422(88)80752-0</a></td>
 </tr>
 <tr>
-  <td>Streptomyces venezuelae<br><span class="mono">NCBITaxon:54571</span></td>
+  <td>Streptomyces venezuelae<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=54571">NCBITaxon:54571</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/S10529-009-0152-9</td>
+  <td class="mono"><a href="https://doi.org/10.1007/S10529-009-0152-9">DOI:10.1007/S10529-009-0152-9</a></td>
 </tr>
 <tr>
-  <td>Aspergillus fumigatus<br><span class="mono">NCBITaxon:746128</span></td>
+  <td>Aspergillus fumigatus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=746128">NCBITaxon:746128</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1080/13693780802307720</td>
+  <td class="mono"><a href="https://doi.org/10.1080/13693780802307720">DOI:10.1080/13693780802307720</a></td>
 </tr>
 <tr>
-  <td>Saccharopolyspora erythraea<br><span class="mono">NCBITaxon:1836</span></td>
+  <td>Saccharopolyspora erythraea<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1836">NCBITaxon:1836</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1046/J.1365-2958.2002.02975.X</td>
+  <td class="mono"><a href="https://doi.org/10.1046/J.1365-2958.2002.02975.X">DOI:10.1046/J.1365-2958.2002.02975.X</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">3</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0000285</td>
-  <td>Saccharopolyspora erythraea<br><span class="mono">NCBITaxon:1836</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000285">mibig:BGC0000285</a></td>
+  <td>Saccharopolyspora erythraea<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1836">NCBITaxon:1836</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:AY078067.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AY078067.1">genbank:AY078067.1</a></td>
 </tr>
 <tr>
-  <td class="mono">mibig:BGC0000902</td>
-  <td>Saccharopolyspora erythraea NRRL 2338<br><span class="mono">NCBITaxon:405948</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000902">mibig:BGC0000902</a></td>
+  <td>Saccharopolyspora erythraea NRRL 2338<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=405948">NCBITaxon:405948</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:AM420293.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AM420293.1">genbank:AM420293.1</a></td>
 </tr>
 <tr>
-  <td class="mono">mibig:BGC0002127</td>
-  <td>Streptomyces coelicolor A3(2)<br><span class="mono">NCBITaxon:100226</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002127">mibig:BGC0002127</a></td>
+  <td>Streptomyces coelicolor A3(2)<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=100226">NCBITaxon:100226</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:AL645882.2</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AL645882.2">genbank:AL645882.2</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -178,27 +180,27 @@ isolation report left it.</p>
 <h2>Biosynthesis <span class="tag causal">curated</span></h2>
 <p class="sub">Written by a curator with claim-level evidence on each step; not
 derived from a source. This is what the rest of the record exists to support.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthesis steps"><table>
 <tr><th>#</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
 <tr>
   <td>1</td>
-  <td>RppA<br><span class="mono">UniProtKB:Q8KQM3</span></td>
+  <td>RppA<br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q8KQM3/entry">UniProtKB:Q8KQM3</a></span></td>
   <td class="mono"></td>
-  <td class="mono">ungrounded &rarr; CHEBI:18365</td>
-  <td class="mono">DOI:10.1046/j.1365-2958.2002.02975.x</td>
+  <td class="mono">ungrounded &rarr; <a href="../polyketides/naphthalene-1-3-6-8-tetrol.html">CHEBI:18365</a></td>
+  <td class="mono"><a href="https://doi.org/10.1046/j.1365-2958.2002.02975.x">DOI:10.1046/j.1365-2958.2002.02975.x</a></td>
 </tr>
 <tr>
   <td>2</td>
-  <td>SCO1206<br><span class="mono">UniProtKB:Q9FCA7</span></td>
-  <td class="mono">RHEA:41524</td>
-  <td class="mono">CHEBI:57384 &rarr; CHEBI:18365</td>
-  <td class="mono">DOI:10.1007/s10295-003-0075-8</td>
+  <td>SCO1206<br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q9FCA7/entry">UniProtKB:Q9FCA7</a></span></td>
+  <td class="mono"><a href="https://www.rhea-db.org/rhea/41524">RHEA:41524</a></td>
+  <td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_57384">CHEBI:57384</a> &rarr; <a href="../polyketides/naphthalene-1-3-6-8-tetrol.html">CHEBI:18365</a></td>
+  <td class="mono"><a href="https://doi.org/10.1007/s10295-003-0075-8">DOI:10.1007/s10295-003-0075-8</a></td>
 </tr>
 </table></div>
 <p class="sub">Entry 1: This curates the Saccharopolyspora erythraea BGC0000285/AY078067.1 RppA type III PKS as the knockout-supported scaffold enzyme in the red-brown pigment locus. The record does not assert direct biochemical characterization of purified S. erythraea RppA or a single-enzyme reaction from RppA to exact flaviolin.</p><p class="sub">Entry 2: This curates Streptomyces coelicolor A3(2) SCO1206 as the biochemically characterized type III PKS that condenses malonyl-CoA to 1,3,6,8-tetrahydroxynaphthalene upstream of spontaneous oxidation to flaviolin.</p>
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for flaviolin">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for flaviolin">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -231,17 +233,17 @@ derived from a source. This is what the rest of the record exists to support.</p
 </div>
 
 <h2>Causal graph &mdash; biosynthesis <span class="tag">6 nodes, 6 edges</span></h2>
-<p class="sub">Partial Saccharopolyspora erythraea RppA and Streptomyces coelicolor SCO1206 type III PKS graph for formation of 1,3,6,8-tetrahydroxynaphthalene upstream of flaviolin.</p><div class="scroll"><table>
+<p class="sub">Partial Saccharopolyspora erythraea RppA and Streptomyces coelicolor SCO1206 type III PKS graph for formation of 1,3,6,8-tetrahydroxynaphthalene upstream of flaviolin.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>malonyl-CoA(5-)</td>
   <td>is condensed by</td>
   <td>RppA</td>
   <td>The S. erythraea RppA edge is proposed from the cloned rppA sequence, knockout of the pigment locus, and homology to biochemically characterized bacterial THN synthases.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1046/j.1365-2958.2002.02975.x<br>https://mibig.secondarymetabolites.org/repository/BGC0000285.5/index.html<br>https://www.uniprot.org/uniprotkb/Q8KQM3<br>https://www.ncbi.nlm.nih.gov/protein/AAL78053.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1046/j.1365-2958.2002.02975.x</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>disrupt the red-brown pigment-producing (rpp) locus in S. erythraea, generating a mutant that displayed an albino phenotype</dd><dt>notes</dt><dd>Cortes et al. used rpp-locus disruption and vector recapture in Saccharopolyspora erythraea to connect the cloned chalcone-synthase-like rppA locus to diffusible red-brown flaviolin-derived pigment biosynthesis; the RppA-to-THN product assignment is proposed from type III PKS homology rather than an assay of purified S. erythraea RppA.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0000285.5/index.html</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>MIBiG BGC0000285.5 names flaviolin among products of the Saccharopolyspora erythraea AY078067.1 red-brown-pigment locus and annotates AAL78053.1/rppA as a knockout-supported Type III PKS scaffold-biosynthesis gene.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q8KQM3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>Unreviewed UniProtKB:Q8KQM3 is the 367 aa Saccharopolyspora erythraea RppA/rppA protein and cross-references EMBL AY078067 protein AAL78053.1.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AAL78053.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>NCBI GenPept AAL78053.1 is the AY078067.1 rppA CDS from the Saccharopolyspora erythraea red-brown-pigment locus and is sequence-identical to UniProtKB:Q8KQM3.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1046/j.1365-2958.2002.02975.x">DOI:10.1046/j.1365-2958.2002.02975.x</a><br><a href="https://mibig.secondarymetabolites.org/repository/BGC0000285.5/index.html">https://mibig.secondarymetabolites.org/repository/BGC0000285.5/index.html</a><br><a href="https://www.uniprot.org/uniprotkb/Q8KQM3">https://www.uniprot.org/uniprotkb/Q8KQM3</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AAL78053.1">https://www.ncbi.nlm.nih.gov/protein/AAL78053.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1046/j.1365-2958.2002.02975.x">DOI:10.1046/j.1365-2958.2002.02975.x</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>disrupt the red-brown pigment-producing (rpp) locus in S. erythraea, generating a mutant that displayed an albino phenotype</dd><dt>notes</dt><dd>Cortes et al. used rpp-locus disruption and vector recapture in Saccharopolyspora erythraea to connect the cloned chalcone-synthase-like rppA locus to diffusible red-brown flaviolin-derived pigment biosynthesis; the RppA-to-THN product assignment is proposed from type III PKS homology rather than an assay of purified S. erythraea RppA.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/repository/BGC0000285.5/index.html">https://mibig.secondarymetabolites.org/repository/BGC0000285.5/index.html</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>MIBiG BGC0000285.5 names flaviolin among products of the Saccharopolyspora erythraea AY078067.1 red-brown-pigment locus and annotates AAL78053.1/rppA as a knockout-supported Type III PKS scaffold-biosynthesis gene.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q8KQM3">https://www.uniprot.org/uniprotkb/Q8KQM3</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>Unreviewed UniProtKB:Q8KQM3 is the 367 aa Saccharopolyspora erythraea RppA/rppA protein and cross-references EMBL AY078067 protein AAL78053.1.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AAL78053.1">https://www.ncbi.nlm.nih.gov/protein/AAL78053.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>NCBI GenPept AAL78053.1 is the AY078067.1 rppA CDS from the Saccharopolyspora erythraea red-brown-pigment locus and is sequence-identical to UniProtKB:Q8KQM3.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -250,10 +252,10 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>catalyzes proposed formation of</td>
   <td>1,3,6,8-tetrahydroxynaphthalene</td>
   <td>The edge stops at the proposed THN synthase product rather than assigning RppA to exact flaviolin, flaviolin rhamnoside, or 3,3&#39;-diflaviolin formation.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1046/j.1365-2958.2002.02975.x<br>https://mibig.secondarymetabolites.org/repository/BGC0000285.5/index.html<br>https://www.uniprot.org/uniprotkb/Q8KQM3<br>https://www.ncbi.nlm.nih.gov/protein/AAL78053.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1046/j.1365-2958.2002.02975.x</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>disrupt the red-brown pigment-producing (rpp) locus in S. erythraea, generating a mutant that displayed an albino phenotype</dd><dt>notes</dt><dd>Cortes et al. used rpp-locus disruption and vector recapture in Saccharopolyspora erythraea to connect the cloned chalcone-synthase-like rppA locus to diffusible red-brown flaviolin-derived pigment biosynthesis; the RppA-to-THN product assignment is proposed from type III PKS homology rather than an assay of purified S. erythraea RppA.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0000285.5/index.html</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>MIBiG BGC0000285.5 names flaviolin among products of the Saccharopolyspora erythraea AY078067.1 red-brown-pigment locus and annotates AAL78053.1/rppA as a knockout-supported Type III PKS scaffold-biosynthesis gene.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q8KQM3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>Unreviewed UniProtKB:Q8KQM3 is the 367 aa Saccharopolyspora erythraea RppA/rppA protein and cross-references EMBL AY078067 protein AAL78053.1.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AAL78053.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>NCBI GenPept AAL78053.1 is the AY078067.1 rppA CDS from the Saccharopolyspora erythraea red-brown-pigment locus and is sequence-identical to UniProtKB:Q8KQM3.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1046/j.1365-2958.2002.02975.x">DOI:10.1046/j.1365-2958.2002.02975.x</a><br><a href="https://mibig.secondarymetabolites.org/repository/BGC0000285.5/index.html">https://mibig.secondarymetabolites.org/repository/BGC0000285.5/index.html</a><br><a href="https://www.uniprot.org/uniprotkb/Q8KQM3">https://www.uniprot.org/uniprotkb/Q8KQM3</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AAL78053.1">https://www.ncbi.nlm.nih.gov/protein/AAL78053.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1046/j.1365-2958.2002.02975.x">DOI:10.1046/j.1365-2958.2002.02975.x</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>disrupt the red-brown pigment-producing (rpp) locus in S. erythraea, generating a mutant that displayed an albino phenotype</dd><dt>notes</dt><dd>Cortes et al. used rpp-locus disruption and vector recapture in Saccharopolyspora erythraea to connect the cloned chalcone-synthase-like rppA locus to diffusible red-brown flaviolin-derived pigment biosynthesis; the RppA-to-THN product assignment is proposed from type III PKS homology rather than an assay of purified S. erythraea RppA.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/repository/BGC0000285.5/index.html">https://mibig.secondarymetabolites.org/repository/BGC0000285.5/index.html</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>MIBiG BGC0000285.5 names flaviolin among products of the Saccharopolyspora erythraea AY078067.1 red-brown-pigment locus and annotates AAL78053.1/rppA as a knockout-supported Type III PKS scaffold-biosynthesis gene.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q8KQM3">https://www.uniprot.org/uniprotkb/Q8KQM3</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>Unreviewed UniProtKB:Q8KQM3 is the 367 aa Saccharopolyspora erythraea RppA/rppA protein and cross-references EMBL AY078067 protein AAL78053.1.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AAL78053.1">https://www.ncbi.nlm.nih.gov/protein/AAL78053.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>NCBI GenPept AAL78053.1 is the AY078067.1 rppA CDS from the Saccharopolyspora erythraea red-brown-pigment locus and is sequence-identical to UniProtKB:Q8KQM3.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -262,9 +264,9 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>is condensed by</td>
   <td>SCO1206 THNS</td>
   <td>RHEA:41524 selects malonyl-CoA as the sole CoA-linked substrate for the SCO1206 THN synthase reaction.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1007/s10295-003-0075-8<br>https://www.uniprot.org/uniprotkb/Q9FCA7<br>https://www.ncbi.nlm.nih.gov/protein/CAC01488.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1007/s10295-003-0075-8</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Expression and characterization of the type III polyketide synthase 1,3,6,8-tetrahydroxynaphthalene synthase from Streptomyces coelicolor A3(2)</dd><dt>notes</dt><dd>Izumikawa et al. expressed and characterized Streptomyces coelicolor A3(2) SCO1206 as the type III PKS that catalyzes malonyl-CoA condensation to 1,3,6,8-tetrahydroxynaphthalene.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q9FCA7</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q9FCA7 is the 374 aa Streptomyces coelicolor A3(2) SCO1206 1,3,6,8-tetrahydroxynaphthalene synthase and annotates EC:2.3.1.233/RHEA:41524 with PMID:12905073.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/CAC01488.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>NCBI GenPept CAC01488.1 is the Streptomyces coelicolor A3(2) SCO1206/2SCG58.06 putative polyketide synthase CDS and cross-references GOA:Q9FCA7.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1007/s10295-003-0075-8">DOI:10.1007/s10295-003-0075-8</a><br><a href="https://www.uniprot.org/uniprotkb/Q9FCA7">https://www.uniprot.org/uniprotkb/Q9FCA7</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/CAC01488.1">https://www.ncbi.nlm.nih.gov/protein/CAC01488.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1007/s10295-003-0075-8">DOI:10.1007/s10295-003-0075-8</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Expression and characterization of the type III polyketide synthase 1,3,6,8-tetrahydroxynaphthalene synthase from Streptomyces coelicolor A3(2)</dd><dt>notes</dt><dd>Izumikawa et al. expressed and characterized Streptomyces coelicolor A3(2) SCO1206 as the type III PKS that catalyzes malonyl-CoA condensation to 1,3,6,8-tetrahydroxynaphthalene.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q9FCA7">https://www.uniprot.org/uniprotkb/Q9FCA7</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q9FCA7 is the 374 aa Streptomyces coelicolor A3(2) SCO1206 1,3,6,8-tetrahydroxynaphthalene synthase and annotates EC:2.3.1.233/RHEA:41524 with <a href="https://pubmed.ncbi.nlm.nih.gov/12905073/">PMID:12905073</a>.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/CAC01488.1">https://www.ncbi.nlm.nih.gov/protein/CAC01488.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>NCBI GenPept CAC01488.1 is the Streptomyces coelicolor A3(2) SCO1206/2SCG58.06 putative polyketide synthase CDS and cross-references GOA:Q9FCA7.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -273,9 +275,9 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>catalyzes formation of</td>
   <td>1,3,6,8-tetrahydroxynaphthalene</td>
   <td>SCO1206 is curated at the exact reaction characterized in the Streptomyces coelicolor type III PKS study and annotated in UniProt with RHEA:41524.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1007/s10295-003-0075-8<br>https://www.uniprot.org/uniprotkb/Q9FCA7<br>https://www.ncbi.nlm.nih.gov/protein/CAC01488.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1007/s10295-003-0075-8</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Expression and characterization of the type III polyketide synthase 1,3,6,8-tetrahydroxynaphthalene synthase from Streptomyces coelicolor A3(2)</dd><dt>notes</dt><dd>Izumikawa et al. expressed and characterized Streptomyces coelicolor A3(2) SCO1206 as the type III PKS that catalyzes malonyl-CoA condensation to 1,3,6,8-tetrahydroxynaphthalene.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q9FCA7</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q9FCA7 is the 374 aa Streptomyces coelicolor A3(2) SCO1206 1,3,6,8-tetrahydroxynaphthalene synthase and annotates EC:2.3.1.233/RHEA:41524 with PMID:12905073.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/CAC01488.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>NCBI GenPept CAC01488.1 is the Streptomyces coelicolor A3(2) SCO1206/2SCG58.06 putative polyketide synthase CDS and cross-references GOA:Q9FCA7.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1007/s10295-003-0075-8">DOI:10.1007/s10295-003-0075-8</a><br><a href="https://www.uniprot.org/uniprotkb/Q9FCA7">https://www.uniprot.org/uniprotkb/Q9FCA7</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/CAC01488.1">https://www.ncbi.nlm.nih.gov/protein/CAC01488.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1007/s10295-003-0075-8">DOI:10.1007/s10295-003-0075-8</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Expression and characterization of the type III polyketide synthase 1,3,6,8-tetrahydroxynaphthalene synthase from Streptomyces coelicolor A3(2)</dd><dt>notes</dt><dd>Izumikawa et al. expressed and characterized Streptomyces coelicolor A3(2) SCO1206 as the type III PKS that catalyzes malonyl-CoA condensation to 1,3,6,8-tetrahydroxynaphthalene.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q9FCA7">https://www.uniprot.org/uniprotkb/Q9FCA7</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q9FCA7 is the 374 aa Streptomyces coelicolor A3(2) SCO1206 1,3,6,8-tetrahydroxynaphthalene synthase and annotates EC:2.3.1.233/RHEA:41524 with <a href="https://pubmed.ncbi.nlm.nih.gov/12905073/">PMID:12905073</a>.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/CAC01488.1">https://www.ncbi.nlm.nih.gov/protein/CAC01488.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>NCBI GenPept CAC01488.1 is the Streptomyces coelicolor A3(2) SCO1206/2SCG58.06 putative polyketide synthase CDS and cross-references GOA:Q9FCA7.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -284,7 +286,7 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>spontaneously oxidizes through</td>
   <td>THN oxidation</td>
   <td>The non-enzymatic process captures THN oxidation without assigning an exact downstream tailoring enzyme in either cluster.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1046/j.1365-2958.2002.02975.x</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1046/j.1365-2958.2002.02975.x</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Flaviolin is a spontaneous oxidation product of 1,3,6,8-tetrahydroxynaphthalene</dd><dt>notes</dt><dd>Cortes et al. place flaviolin downstream of the THN synthase product; the BGC0000285 cluster also encodes RppB and ORF3 oxidases, but those tailoring enzymes are not assigned here to the exact flaviolin branch.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1046/j.1365-2958.2002.02975.x">DOI:10.1046/j.1365-2958.2002.02975.x</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1046/j.1365-2958.2002.02975.x">DOI:10.1046/j.1365-2958.2002.02975.x</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Flaviolin is a spontaneous oxidation product of 1,3,6,8-tetrahydroxynaphthalene</dd><dt>notes</dt><dd>Cortes et al. place flaviolin downstream of the THN synthase product; the BGC0000285 cluster also encodes RppB and ORF3 oxidases, but those tailoring enzymes are not assigned here to the exact flaviolin branch.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -293,9 +295,9 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>forms</td>
   <td>flaviolin</td>
   <td>The exact flaviolin product is supported by the spontaneous-oxidation statement and by the BGC0000285 and BGC0002127 MIBiG product assertions.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1046/j.1365-2958.2002.02975.x<br>https://mibig.secondarymetabolites.org/repository/BGC0000285.5/index.html<br>https://mibig.secondarymetabolites.org/repository/BGC0002127.3/index.html</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1046/j.1365-2958.2002.02975.x</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Flaviolin is a spontaneous oxidation product of 1,3,6,8-tetrahydroxynaphthalene</dd><dt>notes</dt><dd>Cortes et al. place flaviolin downstream of the THN synthase product; the BGC0000285 cluster also encodes RppB and ORF3 oxidases, but those tailoring enzymes are not assigned here to the exact flaviolin branch.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0000285.5/index.html</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>MIBiG BGC0000285.5 names flaviolin among products of the Saccharopolyspora erythraea AY078067.1 red-brown-pigment locus and annotates AAL78053.1/rppA as a knockout-supported Type III PKS scaffold-biosynthesis gene.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0002127.3/index.html</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>MIBiG BGC0002127.3 names flaviolin and 1,3,6,8-tetrahydroxynaphthalene as products of the Streptomyces coelicolor A3(2) AL645882.2 flaviolin locus.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1046/j.1365-2958.2002.02975.x">DOI:10.1046/j.1365-2958.2002.02975.x</a><br><a href="https://mibig.secondarymetabolites.org/repository/BGC0000285.5/index.html">https://mibig.secondarymetabolites.org/repository/BGC0000285.5/index.html</a><br><a href="https://mibig.secondarymetabolites.org/repository/BGC0002127.3/index.html">https://mibig.secondarymetabolites.org/repository/BGC0002127.3/index.html</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1046/j.1365-2958.2002.02975.x">DOI:10.1046/j.1365-2958.2002.02975.x</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Flaviolin is a spontaneous oxidation product of 1,3,6,8-tetrahydroxynaphthalene</dd><dt>notes</dt><dd>Cortes et al. place flaviolin downstream of the THN synthase product; the BGC0000285 cluster also encodes RppB and ORF3 oxidases, but those tailoring enzymes are not assigned here to the exact flaviolin branch.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/repository/BGC0000285.5/index.html">https://mibig.secondarymetabolites.org/repository/BGC0000285.5/index.html</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>MIBiG BGC0000285.5 names flaviolin among products of the Saccharopolyspora erythraea AY078067.1 red-brown-pigment locus and annotates AAL78053.1/rppA as a knockout-supported Type III PKS scaffold-biosynthesis gene.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/repository/BGC0002127.3/index.html">https://mibig.secondarymetabolites.org/repository/BGC0002127.3/index.html</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>MIBiG BGC0002127.3 names flaviolin and 1,3,6,8-tetrahydroxynaphthalene as products of the Streptomyces coelicolor A3(2) AL645882.2 flaviolin locus.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -306,39 +308,39 @@ by the corpus tests.</p>
 
 <h2>Bioactivities <span class="tag">8</span></h2>
 <p class="sub">Entries preserve source qualifiers, targets and evidence. Repeated assay names or values are not independent replications; inspect source detail for differences.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Bioactivities"><table>
 <tr><th>Assay</th><th>Result</th><th>Target enzyme</th><th>Source detail</th></tr>
-<tr><td>OTUD3 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1645858</summary><dl><dt>assay</dt><dd>OTUD3 deubiquitinase inhibition: Primary qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645858</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645858, deposited by 24642; assay type Other. Target accession NP_056022 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>OTUD3 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645858">pubchem.aid:1645858</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>OTUD3 deubiquitinase inhibition: Primary qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645858">pubchem.aid:1645858</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645858, deposited by 24642; assay type Other. Target accession NP_056022 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd></dl>
 </details></td></tr>
-<tr><td>UCHL1 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono">UniProtKB:P09936</td><td><details><summary>pubchem.aid:1645859</summary><dl><dt>assay</dt><dd>UCHL1 deubiquitinase inhibition: Primary qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645859</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645859, deposited by 24642; assay type Other.</dd></dl>
+<tr><td>UCHL1 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/P09936/entry">UniProtKB:P09936</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645859">pubchem.aid:1645859</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>UCHL1 deubiquitinase inhibition: Primary qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645859">pubchem.aid:1645859</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645859, deposited by 24642; assay type Other.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>target enzyme</dt><dd>UniProtKB:P09936</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/P09936/entry">UniProtKB:P09936</a></dd></dl>
 </details></td></tr>
-<tr><td>USP10 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono">UniProtKB:Q14694</td><td><details><summary>pubchem.aid:1645856</summary><dl><dt>assay</dt><dd>USP10 deubiquitinase inhibition: Primary qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645856</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645856, deposited by 24642; assay type Other.</dd></dl>
+<tr><td>USP10 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/Q14694/entry">UniProtKB:Q14694</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645856">pubchem.aid:1645856</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>USP10 deubiquitinase inhibition: Primary qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645856">pubchem.aid:1645856</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645856, deposited by 24642; assay type Other.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>target enzyme</dt><dd>UniProtKB:Q14694</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q14694/entry">UniProtKB:Q14694</a></dd></dl>
 </details></td></tr>
-<tr><td>USP17 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono">UniProtKB:A8MUK1</td><td><details><summary>pubchem.aid:1645855</summary><dl><dt>assay</dt><dd>USP17 deubiquitinase inhibition: Primary qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645855</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645855, deposited by 24642; assay type Other.</dd></dl>
+<tr><td>USP17 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/A8MUK1/entry">UniProtKB:A8MUK1</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645855">pubchem.aid:1645855</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>USP17 deubiquitinase inhibition: Primary qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645855">pubchem.aid:1645855</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645855, deposited by 24642; assay type Other.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>target enzyme</dt><dd>UniProtKB:A8MUK1</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/A8MUK1/entry">UniProtKB:A8MUK1</a></dd></dl>
 </details></td></tr>
-<tr><td>USP28 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono">UniProtKB:Q96RU2</td><td><details><summary>pubchem.aid:1645857</summary><dl><dt>assay</dt><dd>USP28 deubiquitinase inhibition: Primary qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645857</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645857, deposited by 24642; assay type Other.</dd></dl>
+<tr><td>USP28 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/Q96RU2/entry">UniProtKB:Q96RU2</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645857">pubchem.aid:1645857</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>USP28 deubiquitinase inhibition: Primary qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645857">pubchem.aid:1645857</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645857, deposited by 24642; assay type Other.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>target enzyme</dt><dd>UniProtKB:Q96RU2</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q96RU2/entry">UniProtKB:Q96RU2</a></dd></dl>
 </details></td></tr>
-<tr><td>USP30 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono">UniProtKB:Q70CQ3</td><td><details><summary>pubchem.aid:1645860</summary><dl><dt>assay</dt><dd>USP30 deubiquitinase inhibition: Primary qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645860</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645860, deposited by 24642; assay type Other.</dd></dl>
+<tr><td>USP30 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/Q70CQ3/entry">UniProtKB:Q70CQ3</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645860">pubchem.aid:1645860</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>USP30 deubiquitinase inhibition: Primary qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645860">pubchem.aid:1645860</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645860, deposited by 24642; assay type Other.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>target enzyme</dt><dd>UniProtKB:Q70CQ3</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q70CQ3/entry">UniProtKB:Q70CQ3</a></dd></dl>
 </details></td></tr>
-<tr><td>USP7 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1645854</summary><dl><dt>assay</dt><dd>USP7 deubiquitinase inhibition: Primary qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645854</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645854, deposited by 24642; assay type Other. Target accession NP_003461 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>USP7 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645854">pubchem.aid:1645854</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>USP7 deubiquitinase inhibition: Primary qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645854">pubchem.aid:1645854</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645854, deposited by 24642; assay type Other. Target accession NP_003461 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd></dl>
 </details></td></tr>
-<tr><td>USP8 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono">UniProtKB:P40818</td><td><details><summary>pubchem.aid:1645853</summary><dl><dt>assay</dt><dd>USP8 deubiquitinase inhibition: Primary qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645853</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645853, deposited by 24642; assay type Other.</dd></dl>
+<tr><td>USP8 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/P40818/entry">UniProtKB:P40818</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645853">pubchem.aid:1645853</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>USP8 deubiquitinase inhibition: Primary qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645853">pubchem.aid:1645853</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645853, deposited by 24642; assay type Other.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>target enzyme</dt><dd>UniProtKB:P40818</dd></dl>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/P40818/entry">UniProtKB:P40818</a></dd></dl>
 </details></td></tr>
 </table></div>
 
@@ -346,31 +348,40 @@ by the corpus tests.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=XNPCAGMCQDGQKK-UHFFFAOYSA-N">AntibioticMech (flaviolin) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=naturalproductmech%3Amibig-cfe2b5c0a9">MediaIngredientMech (naturalproductmech:mibig-cfe2b5c0a9) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A1836">TaxonMech: Saccharopolyspora erythraea (NCBITaxon:1836) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A405948">TaxonMech: Saccharopolyspora erythraea NRRL 2338 (NCBITaxon:405948) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A100226">TaxonMech: Streptomyces coelicolor A3(2) (NCBITaxon:100226) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000285">PathwayMech (mibig:BGC0000285) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000902">PathwayMech (mibig:BGC0000902) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0002127">PathwayMech (mibig:BGC0002127) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A1836">TaxonMech: Saccharopolyspora erythraea (NCBITaxon:1836) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A405948">TaxonMech: Saccharopolyspora erythraea NRRL 2338 (NCBITaxon:405948) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A100226">TaxonMech: Streptomyces coelicolor A3(2) (NCBITaxon:100226) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000285">PathwayMech (mibig:BGC0000285) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000902">PathwayMech (mibig:BGC0000902) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0002127">PathwayMech (mibig:BGC0002127) &nearr;</a>
 </div>
 
 <h2>Open questions <span class="tag">1</span></h2>
-<div class="note"><p><strong>shared-structure</strong> — This structure is reported by more than one MIBiG entry: BGC0000285, BGC0000902, BGC0002127. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
+<div class="note"><p><strong>shared-structure</strong> <span class="tag">OPEN</span> <span class="tag">curation todo</span> — This structure is reported by more than one MIBiG entry: BGC0000285, BGC0000902, BGC0002127. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
+
+<h2 id="curation-history">Curation history <span class="tag">6</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-13T23:58:43Z">2026-10-13T23:58:43Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-10-13T10:45:46Z)</span><p>Seeded from the committed inventories and curation tables.</p></li>
+<li><time datetime="2026-09-27T16:47:58Z">2026-09-27T16:47:58Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added an evidence-backed flaviolin type III PKS pathway and BIOSYNTHESIS graph with Saccharopolyspora erythraea RppA UniProtKB:Q8KQM3, Streptomyces coelicolor SCO1206 UniProtKB:Q9FCA7, and conservative THN-to-flaviolin oxidation.</p></li>
+<li><time datetime="2026-09-25T03:03:47Z">2026-09-25T03:03:47Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(3 identical runs since 2026-09-10T05:54:16Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
 
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0000285</td><td>MIBIG</td><td>5</td></tr>
-<tr><td class="mono">BGC0000902</td><td>MIBIG</td><td>4</td></tr>
-<tr><td class="mono">BGC0002127</td><td>MIBIG</td><td>3</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000285">BGC0000285</a></td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000902">BGC0000902</a></td><td>MIBIG</td><td>4</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002127">BGC0002127</a></td><td>MIBIG</td><td>3</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/polyketides/flaviolin.yaml">data/natural_products/polyketides/flaviolin.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20naturalproductmech%3Amibig-cfe2b5c0a9&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Fpolyketides%2Fflaviolin.html">Report a problem with this record</a>: opens a GitHub issue that names naturalproductmech:mibig-cfe2b5c0a9 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Record last updated 2026-10-13 23:58 UTC, its latest curation event. Generated from the committed corpus. Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

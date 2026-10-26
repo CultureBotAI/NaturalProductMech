@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Alkaloids</a> &middot; violacein</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>violacein</h1>
-<p class="sub"><span class="mono">CHEBI:131914</span>
+<p class="sub"><span class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_131914">CHEBI:131914</a></span>
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 <span class="tag">antibacterial</span></p>
 <details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/alkaloids/violacein.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/alkaloids/violacein.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 <p>A member of the class of hydroxyindoles resulting from the formal oxidative coupling between the 3-position of 1,3-dihydro-2H-indol-2-one and the 3-position of 1,3-dihydro-2H-pyrrol-2-one, which is substituted at the 5 position by a 5-hydroxy-1H-indol-3-yl group, where the newly-formed double bond has E configuration. It is a purple chromobacterial pigment that has antibacterial, antifungal, antiprotozoan, and anticancer properties.</p>
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">XAPNKXIRQFHCHN-QGOAFFKASA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">C1=CC=C2C(=C1)/C(=C\3/C=C(NC3=O)C4=CNC5=C4C=C(C=C5)O)/C(=O)N2</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">pubchem:9928039</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/compound/9928039">pubchem:9928039</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Alkaloids</a> —
@@ -57,52 +59,52 @@ other, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Duganella sp. B2<br><span class="mono">NCBITaxon:445969</span></td>
+  <td>Duganella sp. B2<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=445969">NCBITaxon:445969</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0000831</td>
-  <td><span class="mono">PMID:22391969</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000831">mibig:BGC0000831</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/22391969/">PMID:22391969</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">4</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Pseudoalteromonas tunicata<br><span class="mono">NCBITaxon:314281</span></td>
+  <td>Pseudoalteromonas tunicata<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=314281">NCBITaxon:314281</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.3390/10101286</td>
+  <td class="mono"><a href="https://doi.org/10.3390/10101286">DOI:10.3390/10101286</a></td>
 </tr>
 <tr>
-  <td>Chromobacterium violaceum<br><span class="mono">NCBITaxon:536</span></td>
+  <td>Chromobacterium violaceum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=536">NCBITaxon:536</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/BI061998Z</td>
+  <td class="mono"><a href="https://doi.org/10.1021/BI061998Z">DOI:10.1021/BI061998Z</a></td>
 </tr>
 <tr>
-  <td>Chromobacterium violaceum<br><span class="mono">NCBITaxon:536</span></td>
+  <td>Chromobacterium violaceum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=536">NCBITaxon:536</a></span></td>
   <td>CHEBI</td>
-  <td class="mono">PMID:17176066</td>
+  <td class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/17176066/">PMID:17176066</a></td>
 </tr>
 <tr>
-  <td>Escherichia coli<br><span class="mono">NCBITaxon:562</span></td>
+  <td>Escherichia coli<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=562">NCBITaxon:562</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/OL0509585</td>
+  <td class="mono"><a href="https://doi.org/10.1021/OL0509585">DOI:10.1021/OL0509585</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0000831</td>
-  <td>Duganella sp. B2<br><span class="mono">NCBITaxon:445969</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000831">mibig:BGC0000831</a></td>
+  <td>Duganella sp. B2<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=445969">NCBITaxon:445969</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:GQ266676.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/GQ266676.1">genbank:GQ266676.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -112,27 +114,27 @@ isolation report left it.</p>
 <h2>Biosynthesis <span class="tag causal">curated</span></h2>
 <p class="sub">Written by a curator with claim-level evidence on each step; not
 derived from a source. This is what the rest of the record exists to support.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthesis steps"><table>
 <tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
 <tr>
   <td>1</td>
-  <td>VioD protodeoxyviolaceinate monooxygenase<br><span class="mono">UniProtKB:Q9S3U8</span></td>
-  <td class="mono">RHEA:49372</td>
-  <td class="mono">CHEBI:90907 &rarr; CHEBI:90898</td>
-  <td class="mono">DOI:10.1021/bi061998z</td>
+  <td>VioD protodeoxyviolaceinate monooxygenase<br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q9S3U8/entry">UniProtKB:Q9S3U8</a></span></td>
+  <td class="mono"><a href="https://www.rhea-db.org/rhea/49372">RHEA:49372</a></td>
+  <td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_90907">CHEBI:90907</a> &rarr; <a href="http://purl.obolibrary.org/obo/CHEBI_90898">CHEBI:90898</a></td>
+  <td class="mono"><a href="https://doi.org/10.1021/bi061998z">DOI:10.1021/bi061998z</a></td>
 </tr>
 <tr>
   <td>2</td>
-  <td>VioC violacein synthase<br><span class="mono">UniProtKB:Q9S3U9</span></td>
-  <td class="mono">RHEA:49120</td>
-  <td class="mono">CHEBI:90898 &rarr; CHEBI:90900</td>
-  <td class="mono">DOI:10.1021/bi061998z</td>
+  <td>VioC violacein synthase<br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q9S3U9/entry">UniProtKB:Q9S3U9</a></span></td>
+  <td class="mono"><a href="https://www.rhea-db.org/rhea/49120">RHEA:49120</a></td>
+  <td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_90898">CHEBI:90898</a> &rarr; <a href="http://purl.obolibrary.org/obo/CHEBI_90900">CHEBI:90900</a></td>
+  <td class="mono"><a href="https://doi.org/10.1021/bi061998z">DOI:10.1021/bi061998z</a></td>
 </tr>
 </table></div>
 <p class="sub">Step 1: This partial Chromobacterium violaceum VioD/VioC pathway follows the enzymatic carboxylate branch from protodeoxyviolaceinate to protoviolaceinate, rather than the downstream neutral proviolacein scaffold.</p><p class="sub">Step 2: This curated step stops at RHEA:49120 violaceinate. The later connection to neutral CHEBI:131914 violacein is left unexpanded because no exact enzymatic Rhea reaction connects the carboxylate and pyrrolidone forms.</p>
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for violacein">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for violacein">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -165,16 +167,16 @@ derived from a source. This is what the rest of the record exists to support.</p
 </div>
 
 <h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 4 edges</span></h2>
-<p class="sub">Partial Chromobacterium violaceum VioD/VioC enzymatic carboxylate branch from protodeoxyviolaceinate to violaceinate.</p><div class="scroll"><table>
+<p class="sub">Partial Chromobacterium violaceum VioD/VioC enzymatic carboxylate branch from protodeoxyviolaceinate to violaceinate.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>protodeoxyviolaceinate</td>
   <td>is hydroxylated by</td>
   <td>VioD</td>
   <td>VioD catalyzes the RHEA:49372 hydroxylation of protodeoxyviolaceinate to protoviolaceinate.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/bi061998z<br>DOI:10.1039/b705358d<br>https://www.uniprot.org/uniprotkb/Q9S3U8</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/bi061998z</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>purified five contiguously encoded proteins VioA-E after expression in Escherichia coli</dd><dt>notes</dt><dd>Balibar and Walsh reconstituted Chromobacterium violaceum VioA-E in vitro and demonstrated that the VioD then VioC flavin-dependent oxygenase sequence completes the late violacein pathway.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1039/b705358d</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>A biosynthetic intermediate of violacein produced by the mixed enzymes of VioABDE</dd><dt>notes</dt><dd>Shinoda et al. identified protoviolaceinic acid as the VioABDE product and showed that VioC oxygenates the right-side indole ring in the final enzymatic step.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q9S3U8</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q9S3U8 is Chromobacterium violaceum strain ATCC 12472/JCM 1249 VioD, gene vioD/CV_3271, cross-references EMBL AF172851 protein AAD51811.1, EMBL AB032799 protein BAA84785.1, and EMBL AE016825 protein AAQ60935.1, and annotates RHEA:49372.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/bi061998z">DOI:10.1021/bi061998z</a><br><a href="https://doi.org/10.1039/b705358d">DOI:10.1039/b705358d</a><br><a href="https://www.uniprot.org/uniprotkb/Q9S3U8">https://www.uniprot.org/uniprotkb/Q9S3U8</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/bi061998z">DOI:10.1021/bi061998z</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>purified five contiguously encoded proteins VioA-E after expression in Escherichia coli</dd><dt>notes</dt><dd>Balibar and Walsh reconstituted Chromobacterium violaceum VioA-E in vitro and demonstrated that the VioD then VioC flavin-dependent oxygenase sequence completes the late violacein pathway.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1039/b705358d">DOI:10.1039/b705358d</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>A biosynthetic intermediate of violacein produced by the mixed enzymes of VioABDE</dd><dt>notes</dt><dd>Shinoda et al. identified protoviolaceinic acid as the VioABDE product and showed that VioC oxygenates the right-side indole ring in the final enzymatic step.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q9S3U8">https://www.uniprot.org/uniprotkb/Q9S3U8</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q9S3U8 is Chromobacterium violaceum strain ATCC 12472/JCM 1249 VioD, gene vioD/CV_3271, cross-references EMBL AF172851 protein AAD51811.1, EMBL AB032799 protein BAA84785.1, and EMBL AE016825 protein AAQ60935.1, and annotates RHEA:49372.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -183,9 +185,9 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>forms</td>
   <td>protoviolaceinate</td>
   <td>The VioD carboxylate product is the major pH 7.3 microspecies of protoviolaceinic acid.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/bi061998z<br>DOI:10.1039/b705358d<br>https://www.uniprot.org/uniprotkb/Q9S3U8</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/bi061998z</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>purified five contiguously encoded proteins VioA-E after expression in Escherichia coli</dd><dt>notes</dt><dd>Balibar and Walsh reconstituted Chromobacterium violaceum VioA-E in vitro and demonstrated that the VioD then VioC flavin-dependent oxygenase sequence completes the late violacein pathway.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1039/b705358d</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>A biosynthetic intermediate of violacein produced by the mixed enzymes of VioABDE</dd><dt>notes</dt><dd>Shinoda et al. identified protoviolaceinic acid as the VioABDE product and showed that VioC oxygenates the right-side indole ring in the final enzymatic step.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q9S3U8</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q9S3U8 is Chromobacterium violaceum strain ATCC 12472/JCM 1249 VioD, gene vioD/CV_3271, cross-references EMBL AF172851 protein AAD51811.1, EMBL AB032799 protein BAA84785.1, and EMBL AE016825 protein AAQ60935.1, and annotates RHEA:49372.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/bi061998z">DOI:10.1021/bi061998z</a><br><a href="https://doi.org/10.1039/b705358d">DOI:10.1039/b705358d</a><br><a href="https://www.uniprot.org/uniprotkb/Q9S3U8">https://www.uniprot.org/uniprotkb/Q9S3U8</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/bi061998z">DOI:10.1021/bi061998z</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>purified five contiguously encoded proteins VioA-E after expression in Escherichia coli</dd><dt>notes</dt><dd>Balibar and Walsh reconstituted Chromobacterium violaceum VioA-E in vitro and demonstrated that the VioD then VioC flavin-dependent oxygenase sequence completes the late violacein pathway.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1039/b705358d">DOI:10.1039/b705358d</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>A biosynthetic intermediate of violacein produced by the mixed enzymes of VioABDE</dd><dt>notes</dt><dd>Shinoda et al. identified protoviolaceinic acid as the VioABDE product and showed that VioC oxygenates the right-side indole ring in the final enzymatic step.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q9S3U8">https://www.uniprot.org/uniprotkb/Q9S3U8</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q9S3U8 is Chromobacterium violaceum strain ATCC 12472/JCM 1249 VioD, gene vioD/CV_3271, cross-references EMBL AF172851 protein AAD51811.1, EMBL AB032799 protein BAA84785.1, and EMBL AE016825 protein AAQ60935.1, and annotates RHEA:49372.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -194,9 +196,9 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>is hydroxylated by</td>
   <td>VioC</td>
   <td>VioC catalyzes the RHEA:49120 hydroxylation of protoviolaceinate to violaceinate.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/bi061998z<br>DOI:10.1039/b705358d<br>https://www.uniprot.org/uniprotkb/Q9S3U9</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/bi061998z</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>purified five contiguously encoded proteins VioA-E after expression in Escherichia coli</dd><dt>notes</dt><dd>Balibar and Walsh reconstituted Chromobacterium violaceum VioA-E in vitro and demonstrated that the VioD then VioC flavin-dependent oxygenase sequence completes the late violacein pathway.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1039/b705358d</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>A biosynthetic intermediate of violacein produced by the mixed enzymes of VioABDE</dd><dt>notes</dt><dd>Shinoda et al. identified protoviolaceinic acid as the VioABDE product and showed that VioC oxygenates the right-side indole ring in the final enzymatic step.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q9S3U9</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q9S3U9 is Chromobacterium violaceum strain ATCC 12472/JCM 1249 VioC, gene vioC/CV_3272, cross-references EMBL AF172851 protein AAD51810.1, EMBL AB032799 protein BAA84784.1, and EMBL AE016825 protein AAQ60936.1, and annotates RHEA:49120.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/bi061998z">DOI:10.1021/bi061998z</a><br><a href="https://doi.org/10.1039/b705358d">DOI:10.1039/b705358d</a><br><a href="https://www.uniprot.org/uniprotkb/Q9S3U9">https://www.uniprot.org/uniprotkb/Q9S3U9</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/bi061998z">DOI:10.1021/bi061998z</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>purified five contiguously encoded proteins VioA-E after expression in Escherichia coli</dd><dt>notes</dt><dd>Balibar and Walsh reconstituted Chromobacterium violaceum VioA-E in vitro and demonstrated that the VioD then VioC flavin-dependent oxygenase sequence completes the late violacein pathway.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1039/b705358d">DOI:10.1039/b705358d</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>A biosynthetic intermediate of violacein produced by the mixed enzymes of VioABDE</dd><dt>notes</dt><dd>Shinoda et al. identified protoviolaceinic acid as the VioABDE product and showed that VioC oxygenates the right-side indole ring in the final enzymatic step.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q9S3U9">https://www.uniprot.org/uniprotkb/Q9S3U9</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q9S3U9 is Chromobacterium violaceum strain ATCC 12472/JCM 1249 VioC, gene vioC/CV_3272, cross-references EMBL AF172851 protein AAD51810.1, EMBL AB032799 protein BAA84784.1, and EMBL AE016825 protein AAQ60936.1, and annotates RHEA:49120.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -205,9 +207,9 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>forms</td>
   <td>violaceinate</td>
   <td>The VioC carboxylate product is violaceinate rather than neutral violacein.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/bi061998z<br>DOI:10.1039/b705358d<br>https://www.uniprot.org/uniprotkb/Q9S3U9</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/bi061998z</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>purified five contiguously encoded proteins VioA-E after expression in Escherichia coli</dd><dt>notes</dt><dd>Balibar and Walsh reconstituted Chromobacterium violaceum VioA-E in vitro and demonstrated that the VioD then VioC flavin-dependent oxygenase sequence completes the late violacein pathway.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1039/b705358d</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>A biosynthetic intermediate of violacein produced by the mixed enzymes of VioABDE</dd><dt>notes</dt><dd>Shinoda et al. identified protoviolaceinic acid as the VioABDE product and showed that VioC oxygenates the right-side indole ring in the final enzymatic step.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q9S3U9</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q9S3U9 is Chromobacterium violaceum strain ATCC 12472/JCM 1249 VioC, gene vioC/CV_3272, cross-references EMBL AF172851 protein AAD51810.1, EMBL AB032799 protein BAA84784.1, and EMBL AE016825 protein AAQ60936.1, and annotates RHEA:49120.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/bi061998z">DOI:10.1021/bi061998z</a><br><a href="https://doi.org/10.1039/b705358d">DOI:10.1039/b705358d</a><br><a href="https://www.uniprot.org/uniprotkb/Q9S3U9">https://www.uniprot.org/uniprotkb/Q9S3U9</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/bi061998z">DOI:10.1021/bi061998z</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>purified five contiguously encoded proteins VioA-E after expression in Escherichia coli</dd><dt>notes</dt><dd>Balibar and Walsh reconstituted Chromobacterium violaceum VioA-E in vitro and demonstrated that the VioD then VioC flavin-dependent oxygenase sequence completes the late violacein pathway.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1039/b705358d">DOI:10.1039/b705358d</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>A biosynthetic intermediate of violacein produced by the mixed enzymes of VioABDE</dd><dt>notes</dt><dd>Shinoda et al. identified protoviolaceinic acid as the VioABDE product and showed that VioC oxygenates the right-side indole ring in the final enzymatic step.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q9S3U9">https://www.uniprot.org/uniprotkb/Q9S3U9</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q9S3U9 is Chromobacterium violaceum strain ATCC 12472/JCM 1249 VioC, gene vioC/CV_3272, cross-references EMBL AF172851 protein AAD51810.1, EMBL AB032799 protein BAA84784.1, and EMBL AE016825 protein AAQ60936.1, and annotates RHEA:49120.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -224,24 +226,33 @@ by the corpus tests.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=XAPNKXIRQFHCHN-QGOAFFKASA-N">AntibioticMech (violacein) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=CHEBI%3A131914">MediaIngredientMech (CHEBI:131914) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A445969">TaxonMech: Duganella sp. B2 (NCBITaxon:445969) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000831">PathwayMech (mibig:BGC0000831) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q=CHEBI%3A131914">MediaIngredientMech (CHEBI:131914) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A445969">TaxonMech: Duganella sp. B2 (NCBITaxon:445969) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000831">PathwayMech (mibig:BGC0000831) &nearr;</a>
 </div>
 
 
+<h2 id="curation-history">Curation history <span class="tag">3</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-01T08:01:17Z">2026-10-01T08:01:17Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added exact UniProt-grounded Chromobacterium violaceum VioD and VioC RHEA carboxylate biosynthetic_pathway steps and a partial BIOSYNTHESIS causal graph from protodeoxyviolaceinate to violaceinate.</p></li>
+<li><time datetime="2026-09-25T03:03:43Z">2026-09-25T03:03:43Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:15Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
+
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0000831</td><td>MIBIG</td><td>3</td></tr>
-<tr><td class="mono">CHEBI:131914</td><td>CHEBI</td><td>3-star</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000831">BGC0000831</a></td><td>MIBIG</td><td>3</td></tr>
+<tr><td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_131914">CHEBI:131914</a></td><td>CHEBI</td><td>3-star</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/alkaloids/violacein.yaml">data/natural_products/alkaloids/violacein.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20CHEBI%3A131914&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Falkaloids%2Fviolacein.html">Report a problem with this record</a>: opens a GitHub issue that names CHEBI:131914 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Record last updated 2026-10-01 08:01 UTC, its latest curation event. Generated from the committed corpus. Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Alkaloids</a> &middot; saframycin B</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>saframycin B</h1>
-<p class="sub"><span class="mono">naturalproductmech:mibig-e368af9c2a</span>
+<p class="sub"><span class="mono"><a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/alkaloids/saframycin-b.yaml">naturalproductmech:mibig-e368af9c2a</a></span>
   <span class="tag">MINTED</span>
   <span class="tag">SEEDED</span>
 </p>
 <div class="note"><strong>Grounding review:</strong> No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.</div><details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/alkaloids/saframycin-b.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/alkaloids/saframycin-b.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">KOHPLTGVBZMVDW-BBTHKVSRSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">CC1=C(C(=O)C2=C(C1=O)C[C@@H]3CN4[C@H]([C@H]2N3C)CC5=C([C@@H]4CNC(=O)C(=O)C)C(=O)C(=C(C5=O)C)OC)OC</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">pubchem:171748</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/compound/171748">pubchem:171748</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Alkaloids</a> —
@@ -57,47 +59,47 @@ nrps, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Streptomyces lavendulae<br><span class="mono">NCBITaxon:1914</span></td>
+  <td>Streptomyces lavendulae<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1914">NCBITaxon:1914</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0000422</td>
-  <td><span class="mono">PMID:17981978</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000422">mibig:BGC0000422</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/17981978/">PMID:17981978</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">3</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Streptomyces lavendulae<br><span class="mono">NCBITaxon:1914</span></td>
+  <td>Streptomyces lavendulae<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1914">NCBITaxon:1914</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/S0040-4039(01)93972-3</td>
+  <td class="mono"><a href="https://doi.org/10.1016/S0040-4039%2801%2993972-3">DOI:10.1016/S0040-4039(01)93972-3</a></td>
 </tr>
 <tr>
-  <td>Streptomyces lavendulae<br><span class="mono">NCBITaxon:1914</span></td>
+  <td>Streptomyces lavendulae<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1914">NCBITaxon:1914</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.7164/ANTIBIOTICS.30.1015</td>
+  <td class="mono"><a href="https://doi.org/10.7164/ANTIBIOTICS.30.1015">DOI:10.7164/ANTIBIOTICS.30.1015</a></td>
 </tr>
 <tr>
-  <td>Streptomyces lavendulae<br><span class="mono">NCBITaxon:1914</span></td>
+  <td>Streptomyces lavendulae<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1914">NCBITaxon:1914</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.7164/ANTIBIOTICS.41.734</td>
+  <td class="mono"><a href="https://doi.org/10.7164/ANTIBIOTICS.41.734">DOI:10.7164/ANTIBIOTICS.41.734</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0000422</td>
-  <td>Streptomyces lavendulae<br><span class="mono">NCBITaxon:1914</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000422">mibig:BGC0000422</a></td>
+  <td>Streptomyces lavendulae<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1914">NCBITaxon:1914</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:DQ838002.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/DQ838002.1">genbank:DQ838002.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -107,20 +109,20 @@ isolation report left it.</p>
 <h2>Biosynthesis <span class="tag causal">curated</span></h2>
 <p class="sub">Written by a curator with claim-level evidence on each step; not
 derived from a source. This is what the rest of the record exists to support.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthesis steps"><table>
 <tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
 <tr>
   <td>1</td>
-  <td>SfmM2 L-tyrosine C(3)-methyltransferase<br><span class="mono">UniProtKB:B0CN31</span></td>
-  <td class="mono">RHEA:41428</td>
-  <td class="mono">CHEBI:17895 + CHEBI:59789 &rarr; CHEBI:79076 + CHEBI:57856</td>
-  <td class="mono">DOI:10.1074/jbc.M111.306316</td>
+  <td>SfmM2 L-tyrosine C(3)-methyltransferase<br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/B0CN31/entry">UniProtKB:B0CN31</a></span></td>
+  <td class="mono"><a href="https://www.rhea-db.org/rhea/41428">RHEA:41428</a></td>
+  <td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_17895">CHEBI:17895</a> + <a href="http://purl.obolibrary.org/obo/CHEBI_59789">CHEBI:59789</a> &rarr; <a href="http://purl.obolibrary.org/obo/CHEBI_79076">CHEBI:79076</a> + <a href="http://purl.obolibrary.org/obo/CHEBI_57856">CHEBI:57856</a></td>
+  <td class="mono"><a href="https://doi.org/10.1074/jbc.M111.306316">DOI:10.1074/jbc.M111.306316</a></td>
 </tr>
 </table></div>
 <p class="sub">Step 1: SfmM2 catalyzes L-tyrosine C-methylation to 3-methyl-L-tyrosine, an intermediate toward the 3-hydroxy-5-methyl-O-methyltyrosine residue of saframycin B.</p>
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for saframycin B">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for saframycin B">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -153,20 +155,20 @@ derived from a source. This is what the rest of the record exists to support.</p
 </div>
 
 <h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
-<p class="sub">Streptomyces lavendulae NRRL 11002 SfmM2 C-methylates L-tyrosine with S-adenosyl-L-methionine to form 3-methyl-L-tyrosine during saframycin B precursor biosynthesis.</p><div class="scroll"><table>
+<p class="sub">Streptomyces lavendulae NRRL 11002 SfmM2 C-methylates L-tyrosine with S-adenosyl-L-methionine to form 3-methyl-L-tyrosine during saframycin B precursor biosynthesis.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>L-tyrosine</td>
   <td>is C-methylated by</td>
   <td>SfmM2</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1074/jbc.M111.306316<br>DOI:10.1128/JB.00826-07<br>https://mite.bioinformatics.nl/repository/MITE0000032<br>https://mibig.secondarymetabolites.org/repository/BGC0000422.5/BGC0000422.gbk<br>https://www.uniprot.org/uniprotkb/B0CN31<br>https://www.ncbi.nlm.nih.gov/protein/ABI22137.1<br>https://www.rhea-db.org/rhea/41428</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1074/jbc.M111.306316</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>we elucidated the biosynthetic pathway of 3-OH-5-Me-OMe-Tyr by kinetic studies of SfmD in combination with biochemical assays of SfmM2, a methyltransferase within the same pathway</dd><dt>notes</dt><dd>Tang, Fu and Tang biochemically assayed SfmM2 while resolving the 3-hydroxy-5-methyl-O-methyltyrosine branch of saframycin A biosynthesis.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1128/JB.00826-07</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>the biosynthetic gene cluster for SFM-A was cloned and localized to a 62-kb contiguous DNA region</dd><dt>notes</dt><dd>Li et al. cloned and sequenced the Streptomyces lavendulae NRRL 11002 saframycin A cluster, deposited DQ838002, and provided the genomic locus that encodes sfmM2.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mite.bioinformatics.nl/repository/MITE0000032</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>MITE0000032 is active, assigns SfmM2 to the C-methylation of L-tyrosine to 3-methyl-L-tyrosine, records RHEA:41428 and EC:2.1.1.304 for the reaction, and links SfmM2 to UniProtKB:B0CN31, GenPept ABI22137.1 and MIBiG BGC0000422.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0000422.5/BGC0000422.gbk</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>MITE0000032: Methylation (100% identity)</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>MIBiG BGC0000422.5 places the Streptomyces lavendulae NRRL 11002 sfmM2 CDS at DQ838002.1:41474..42574 with GenPept protein_id ABI22137.1 and a MITE0000032 100% identity methylation annotation.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/B0CN31</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>GN   Name=sfmM2</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>Reviewed UniProtKB:B0CN31 resolves to the Streptomyces lavendulae L-tyrosine C(3)-methyltransferase SfmM2 entry, cross-references EMBL DQ838002 protein ABI22137.1, and annotates the RHEA:41428 / EC:2.1.1.304 catalytic activity.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/ABI22137.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>/gene=&#34;sfmM2&#34;</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>NCBI Protein ABI22137.1 is the 366 aa Streptomyces lavendulae NRRL 11002 SfmM2 protein translated from DQ838002.1:41474..42574.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.rhea-db.org/rhea/41428</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>RHEA:41428 represents L-tyrosine plus S-adenosyl-L-methionine yielding 3-methyl-L-tyrosine, S-adenosyl-L-homocysteine and H(+).</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1074/jbc.M111.306316">DOI:10.1074/jbc.M111.306316</a><br><a href="https://doi.org/10.1128/JB.00826-07">DOI:10.1128/JB.00826-07</a><br><a href="https://mite.bioinformatics.nl/repository/MITE0000032">https://mite.bioinformatics.nl/repository/MITE0000032</a><br><a href="https://mibig.secondarymetabolites.org/repository/BGC0000422.5/BGC0000422.gbk">https://mibig.secondarymetabolites.org/repository/BGC0000422.5/BGC0000422.gbk</a><br><a href="https://www.uniprot.org/uniprotkb/B0CN31">https://www.uniprot.org/uniprotkb/B0CN31</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/ABI22137.1">https://www.ncbi.nlm.nih.gov/protein/ABI22137.1</a><br><a href="https://www.rhea-db.org/rhea/41428">https://www.rhea-db.org/rhea/41428</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1074/jbc.M111.306316">DOI:10.1074/jbc.M111.306316</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>we elucidated the biosynthetic pathway of 3-OH-5-Me-OMe-Tyr by kinetic studies of SfmD in combination with biochemical assays of SfmM2, a methyltransferase within the same pathway</dd><dt>notes</dt><dd>Tang, Fu and Tang biochemically assayed SfmM2 while resolving the 3-hydroxy-5-methyl-O-methyltyrosine branch of saframycin A biosynthesis.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/JB.00826-07">DOI:10.1128/JB.00826-07</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>the biosynthetic gene cluster for SFM-A was cloned and localized to a 62-kb contiguous DNA region</dd><dt>notes</dt><dd>Li et al. cloned and sequenced the Streptomyces lavendulae NRRL 11002 saframycin A cluster, deposited DQ838002, and provided the genomic locus that encodes sfmM2.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mite.bioinformatics.nl/repository/MITE0000032">https://mite.bioinformatics.nl/repository/MITE0000032</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>MITE0000032 is active, assigns SfmM2 to the C-methylation of L-tyrosine to 3-methyl-L-tyrosine, records RHEA:41428 and EC:2.1.1.304 for the reaction, and links SfmM2 to UniProtKB:B0CN31, GenPept ABI22137.1 and MIBiG BGC0000422.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/repository/BGC0000422.5/BGC0000422.gbk">https://mibig.secondarymetabolites.org/repository/BGC0000422.5/BGC0000422.gbk</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>MITE0000032: Methylation (100% identity)</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>MIBiG BGC0000422.5 places the Streptomyces lavendulae NRRL 11002 sfmM2 CDS at DQ838002.1:41474..42574 with GenPept protein_id ABI22137.1 and a MITE0000032 100% identity methylation annotation.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/B0CN31">https://www.uniprot.org/uniprotkb/B0CN31</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>GN   Name=sfmM2</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>Reviewed UniProtKB:B0CN31 resolves to the Streptomyces lavendulae L-tyrosine C(3)-methyltransferase SfmM2 entry, cross-references EMBL DQ838002 protein ABI22137.1, and annotates the RHEA:41428 / EC:2.1.1.304 catalytic activity.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/ABI22137.1">https://www.ncbi.nlm.nih.gov/protein/ABI22137.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>/gene=&#34;sfmM2&#34;</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>NCBI Protein ABI22137.1 is the 366 aa Streptomyces lavendulae NRRL 11002 SfmM2 protein translated from DQ838002.1:41474..42574.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.rhea-db.org/rhea/41428">https://www.rhea-db.org/rhea/41428</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>RHEA:41428 represents L-tyrosine plus S-adenosyl-L-methionine yielding 3-methyl-L-tyrosine, S-adenosyl-L-homocysteine and H(+).</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -175,13 +177,13 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>is used by</td>
   <td>SfmM2</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1074/jbc.M111.306316<br>DOI:10.1128/JB.00826-07<br>https://mite.bioinformatics.nl/repository/MITE0000032<br>https://mibig.secondarymetabolites.org/repository/BGC0000422.5/BGC0000422.gbk<br>https://www.uniprot.org/uniprotkb/B0CN31<br>https://www.ncbi.nlm.nih.gov/protein/ABI22137.1<br>https://www.rhea-db.org/rhea/41428</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1074/jbc.M111.306316</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>we elucidated the biosynthetic pathway of 3-OH-5-Me-OMe-Tyr by kinetic studies of SfmD in combination with biochemical assays of SfmM2, a methyltransferase within the same pathway</dd><dt>notes</dt><dd>Tang, Fu and Tang biochemically assayed SfmM2 while resolving the 3-hydroxy-5-methyl-O-methyltyrosine branch of saframycin A biosynthesis.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1128/JB.00826-07</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>the biosynthetic gene cluster for SFM-A was cloned and localized to a 62-kb contiguous DNA region</dd><dt>notes</dt><dd>Li et al. cloned and sequenced the Streptomyces lavendulae NRRL 11002 saframycin A cluster, deposited DQ838002, and provided the genomic locus that encodes sfmM2.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mite.bioinformatics.nl/repository/MITE0000032</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>MITE0000032 is active, assigns SfmM2 to the C-methylation of L-tyrosine to 3-methyl-L-tyrosine, records RHEA:41428 and EC:2.1.1.304 for the reaction, and links SfmM2 to UniProtKB:B0CN31, GenPept ABI22137.1 and MIBiG BGC0000422.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0000422.5/BGC0000422.gbk</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>MITE0000032: Methylation (100% identity)</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>MIBiG BGC0000422.5 places the Streptomyces lavendulae NRRL 11002 sfmM2 CDS at DQ838002.1:41474..42574 with GenPept protein_id ABI22137.1 and a MITE0000032 100% identity methylation annotation.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/B0CN31</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>GN   Name=sfmM2</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>Reviewed UniProtKB:B0CN31 resolves to the Streptomyces lavendulae L-tyrosine C(3)-methyltransferase SfmM2 entry, cross-references EMBL DQ838002 protein ABI22137.1, and annotates the RHEA:41428 / EC:2.1.1.304 catalytic activity.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/ABI22137.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>/gene=&#34;sfmM2&#34;</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>NCBI Protein ABI22137.1 is the 366 aa Streptomyces lavendulae NRRL 11002 SfmM2 protein translated from DQ838002.1:41474..42574.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.rhea-db.org/rhea/41428</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>RHEA:41428 represents L-tyrosine plus S-adenosyl-L-methionine yielding 3-methyl-L-tyrosine, S-adenosyl-L-homocysteine and H(+).</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1074/jbc.M111.306316">DOI:10.1074/jbc.M111.306316</a><br><a href="https://doi.org/10.1128/JB.00826-07">DOI:10.1128/JB.00826-07</a><br><a href="https://mite.bioinformatics.nl/repository/MITE0000032">https://mite.bioinformatics.nl/repository/MITE0000032</a><br><a href="https://mibig.secondarymetabolites.org/repository/BGC0000422.5/BGC0000422.gbk">https://mibig.secondarymetabolites.org/repository/BGC0000422.5/BGC0000422.gbk</a><br><a href="https://www.uniprot.org/uniprotkb/B0CN31">https://www.uniprot.org/uniprotkb/B0CN31</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/ABI22137.1">https://www.ncbi.nlm.nih.gov/protein/ABI22137.1</a><br><a href="https://www.rhea-db.org/rhea/41428">https://www.rhea-db.org/rhea/41428</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1074/jbc.M111.306316">DOI:10.1074/jbc.M111.306316</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>we elucidated the biosynthetic pathway of 3-OH-5-Me-OMe-Tyr by kinetic studies of SfmD in combination with biochemical assays of SfmM2, a methyltransferase within the same pathway</dd><dt>notes</dt><dd>Tang, Fu and Tang biochemically assayed SfmM2 while resolving the 3-hydroxy-5-methyl-O-methyltyrosine branch of saframycin A biosynthesis.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/JB.00826-07">DOI:10.1128/JB.00826-07</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>the biosynthetic gene cluster for SFM-A was cloned and localized to a 62-kb contiguous DNA region</dd><dt>notes</dt><dd>Li et al. cloned and sequenced the Streptomyces lavendulae NRRL 11002 saframycin A cluster, deposited DQ838002, and provided the genomic locus that encodes sfmM2.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mite.bioinformatics.nl/repository/MITE0000032">https://mite.bioinformatics.nl/repository/MITE0000032</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>MITE0000032 is active, assigns SfmM2 to the C-methylation of L-tyrosine to 3-methyl-L-tyrosine, records RHEA:41428 and EC:2.1.1.304 for the reaction, and links SfmM2 to UniProtKB:B0CN31, GenPept ABI22137.1 and MIBiG BGC0000422.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/repository/BGC0000422.5/BGC0000422.gbk">https://mibig.secondarymetabolites.org/repository/BGC0000422.5/BGC0000422.gbk</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>MITE0000032: Methylation (100% identity)</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>MIBiG BGC0000422.5 places the Streptomyces lavendulae NRRL 11002 sfmM2 CDS at DQ838002.1:41474..42574 with GenPept protein_id ABI22137.1 and a MITE0000032 100% identity methylation annotation.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/B0CN31">https://www.uniprot.org/uniprotkb/B0CN31</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>GN   Name=sfmM2</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>Reviewed UniProtKB:B0CN31 resolves to the Streptomyces lavendulae L-tyrosine C(3)-methyltransferase SfmM2 entry, cross-references EMBL DQ838002 protein ABI22137.1, and annotates the RHEA:41428 / EC:2.1.1.304 catalytic activity.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/ABI22137.1">https://www.ncbi.nlm.nih.gov/protein/ABI22137.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>/gene=&#34;sfmM2&#34;</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>NCBI Protein ABI22137.1 is the 366 aa Streptomyces lavendulae NRRL 11002 SfmM2 protein translated from DQ838002.1:41474..42574.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.rhea-db.org/rhea/41428">https://www.rhea-db.org/rhea/41428</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>RHEA:41428 represents L-tyrosine plus S-adenosyl-L-methionine yielding 3-methyl-L-tyrosine, S-adenosyl-L-homocysteine and H(+).</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -190,13 +192,13 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>forms</td>
   <td>3-methyl-L-tyrosine</td>
   <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1074/jbc.M111.306316<br>DOI:10.1128/JB.00826-07<br>https://mite.bioinformatics.nl/repository/MITE0000032<br>https://mibig.secondarymetabolites.org/repository/BGC0000422.5/BGC0000422.gbk<br>https://www.uniprot.org/uniprotkb/B0CN31<br>https://www.ncbi.nlm.nih.gov/protein/ABI22137.1<br>https://www.rhea-db.org/rhea/41428</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1074/jbc.M111.306316</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>we elucidated the biosynthetic pathway of 3-OH-5-Me-OMe-Tyr by kinetic studies of SfmD in combination with biochemical assays of SfmM2, a methyltransferase within the same pathway</dd><dt>notes</dt><dd>Tang, Fu and Tang biochemically assayed SfmM2 while resolving the 3-hydroxy-5-methyl-O-methyltyrosine branch of saframycin A biosynthesis.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1128/JB.00826-07</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>the biosynthetic gene cluster for SFM-A was cloned and localized to a 62-kb contiguous DNA region</dd><dt>notes</dt><dd>Li et al. cloned and sequenced the Streptomyces lavendulae NRRL 11002 saframycin A cluster, deposited DQ838002, and provided the genomic locus that encodes sfmM2.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mite.bioinformatics.nl/repository/MITE0000032</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>MITE0000032 is active, assigns SfmM2 to the C-methylation of L-tyrosine to 3-methyl-L-tyrosine, records RHEA:41428 and EC:2.1.1.304 for the reaction, and links SfmM2 to UniProtKB:B0CN31, GenPept ABI22137.1 and MIBiG BGC0000422.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0000422.5/BGC0000422.gbk</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>MITE0000032: Methylation (100% identity)</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>MIBiG BGC0000422.5 places the Streptomyces lavendulae NRRL 11002 sfmM2 CDS at DQ838002.1:41474..42574 with GenPept protein_id ABI22137.1 and a MITE0000032 100% identity methylation annotation.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/B0CN31</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>GN   Name=sfmM2</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>Reviewed UniProtKB:B0CN31 resolves to the Streptomyces lavendulae L-tyrosine C(3)-methyltransferase SfmM2 entry, cross-references EMBL DQ838002 protein ABI22137.1, and annotates the RHEA:41428 / EC:2.1.1.304 catalytic activity.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/ABI22137.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>/gene=&#34;sfmM2&#34;</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>NCBI Protein ABI22137.1 is the 366 aa Streptomyces lavendulae NRRL 11002 SfmM2 protein translated from DQ838002.1:41474..42574.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.rhea-db.org/rhea/41428</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>RHEA:41428 represents L-tyrosine plus S-adenosyl-L-methionine yielding 3-methyl-L-tyrosine, S-adenosyl-L-homocysteine and H(+).</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1074/jbc.M111.306316">DOI:10.1074/jbc.M111.306316</a><br><a href="https://doi.org/10.1128/JB.00826-07">DOI:10.1128/JB.00826-07</a><br><a href="https://mite.bioinformatics.nl/repository/MITE0000032">https://mite.bioinformatics.nl/repository/MITE0000032</a><br><a href="https://mibig.secondarymetabolites.org/repository/BGC0000422.5/BGC0000422.gbk">https://mibig.secondarymetabolites.org/repository/BGC0000422.5/BGC0000422.gbk</a><br><a href="https://www.uniprot.org/uniprotkb/B0CN31">https://www.uniprot.org/uniprotkb/B0CN31</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/ABI22137.1">https://www.ncbi.nlm.nih.gov/protein/ABI22137.1</a><br><a href="https://www.rhea-db.org/rhea/41428">https://www.rhea-db.org/rhea/41428</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1074/jbc.M111.306316">DOI:10.1074/jbc.M111.306316</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>we elucidated the biosynthetic pathway of 3-OH-5-Me-OMe-Tyr by kinetic studies of SfmD in combination with biochemical assays of SfmM2, a methyltransferase within the same pathway</dd><dt>notes</dt><dd>Tang, Fu and Tang biochemically assayed SfmM2 while resolving the 3-hydroxy-5-methyl-O-methyltyrosine branch of saframycin A biosynthesis.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/JB.00826-07">DOI:10.1128/JB.00826-07</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>the biosynthetic gene cluster for SFM-A was cloned and localized to a 62-kb contiguous DNA region</dd><dt>notes</dt><dd>Li et al. cloned and sequenced the Streptomyces lavendulae NRRL 11002 saframycin A cluster, deposited DQ838002, and provided the genomic locus that encodes sfmM2.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mite.bioinformatics.nl/repository/MITE0000032">https://mite.bioinformatics.nl/repository/MITE0000032</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>MITE0000032 is active, assigns SfmM2 to the C-methylation of L-tyrosine to 3-methyl-L-tyrosine, records RHEA:41428 and EC:2.1.1.304 for the reaction, and links SfmM2 to UniProtKB:B0CN31, GenPept ABI22137.1 and MIBiG BGC0000422.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/repository/BGC0000422.5/BGC0000422.gbk">https://mibig.secondarymetabolites.org/repository/BGC0000422.5/BGC0000422.gbk</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>MITE0000032: Methylation (100% identity)</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>MIBiG BGC0000422.5 places the Streptomyces lavendulae NRRL 11002 sfmM2 CDS at DQ838002.1:41474..42574 with GenPept protein_id ABI22137.1 and a MITE0000032 100% identity methylation annotation.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/B0CN31">https://www.uniprot.org/uniprotkb/B0CN31</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>GN   Name=sfmM2</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>Reviewed UniProtKB:B0CN31 resolves to the Streptomyces lavendulae L-tyrosine C(3)-methyltransferase SfmM2 entry, cross-references EMBL DQ838002 protein ABI22137.1, and annotates the RHEA:41428 / EC:2.1.1.304 catalytic activity.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/ABI22137.1">https://www.ncbi.nlm.nih.gov/protein/ABI22137.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>/gene=&#34;sfmM2&#34;</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>NCBI Protein ABI22137.1 is the 366 aa Streptomyces lavendulae NRRL 11002 SfmM2 protein translated from DQ838002.1:41474..42574.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.rhea-db.org/rhea/41428">https://www.rhea-db.org/rhea/41428</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>RHEA:41428 represents L-tyrosine plus S-adenosyl-L-methionine yielding 3-methyl-L-tyrosine, S-adenosyl-L-homocysteine and H(+).</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -210,23 +212,32 @@ by the corpus tests.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=KOHPLTGVBZMVDW-BBTHKVSRSA-N">AntibioticMech (saframycin B) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=naturalproductmech%3Amibig-e368af9c2a">MediaIngredientMech (naturalproductmech:mibig-e368af9c2a) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A1914">TaxonMech: Streptomyces lavendulae (NCBITaxon:1914) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000422">PathwayMech (mibig:BGC0000422) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A1914">TaxonMech: Streptomyces lavendulae (NCBITaxon:1914) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000422">PathwayMech (mibig:BGC0000422) &nearr;</a>
 </div>
 
 
+<h2 id="curation-history">Curation history <span class="tag">4</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-13T10:43:51Z">2026-10-13T10:43:51Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources<p>Seeded from the committed inventories and curation tables.</p></li>
+<li><time datetime="2026-10-03T04:36:02Z">2026-10-03T04:36:02Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added the RHEA:41428 / UniProtKB:B0CN31-grounded SfmM2 biosynthetic_pathway step and a BIOSYNTHESIS causal graph for Streptomyces lavendulae NRRL 11002 SfmM2 C-methylation of L-tyrosine to 3-methyl-L-tyrosine in saframycin B precursor biosynthesis.</p></li>
+<li><time datetime="2026-09-25T03:02:33Z">2026-09-25T03:02:33Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:08Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
+
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0000422</td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000422">BGC0000422</a></td><td>MIBIG</td><td>5</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/alkaloids/saframycin-b.yaml">data/natural_products/alkaloids/saframycin-b.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20naturalproductmech%3Amibig-e368af9c2a&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Falkaloids%2Fsaframycin-b.html">Report a problem with this record</a>: opens a GitHub issue that names naturalproductmech:mibig-e368af9c2a and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Record last updated 2026-10-13 10:43 UTC, its latest curation event. Generated from the committed corpus. Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

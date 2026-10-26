@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Terpenoids</a> &middot; (+)-(2S,3R,9R)-pristinol</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,17 +32,17 @@
   </form>
 </div>
 <h1>(+)-(2S,3R,9R)-pristinol</h1>
-<p class="sub"><span class="mono">CHEBI:138165</span>
+<p class="sub"><span class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_138165">CHEBI:138165</a></span>
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 </p>
 <details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/terpenoids/2s-3r-9r-pristinol.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/terpenoids/2s-3r-9r-pristinol.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 <p>A bicyclic sesquiterpenoid that is 2,3,5,6,7,8,9,9a-octahydro-1H-cyclopenta[8]annulen-6-ol carrying four additional methyl substiuents at positions 1, 4, 8 and 8.</p>
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">PXKJCWZAMAFFIW-GLBIRDDMSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">C[C@@H]1CC/C/2=C(/C[C@@H](CC(C[C@@H]12)(C)C)O)\C</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
@@ -57,42 +59,42 @@ terpene, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Streptomyces pristinaespiralis ATCC 25486<br><span class="mono">NCBITaxon:457429</span></td>
+  <td>Streptomyces pristinaespiralis ATCC 25486<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=457429">NCBITaxon:457429</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0001746</td>
-  <td><span class="mono">PMID:27403888</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001746">mibig:BGC0001746</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/27403888/">PMID:27403888</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">2</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Streptomyces pristinaespiralis<br><span class="mono">NCBITaxon:38300</span></td>
+  <td>Streptomyces pristinaespiralis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=38300">NCBITaxon:38300</a></span></td>
   <td>CHEBI</td>
-  <td class="mono">PMID:27403888</td>
+  <td class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/27403888/">PMID:27403888</a></td>
 </tr>
 <tr>
-  <td>Streptomyces pristinaespiralis<br><span class="mono">NCBITaxon:457429</span></td>
+  <td>Streptomyces pristinaespiralis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=457429">NCBITaxon:457429</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1002/ANIE.201605425</td>
+  <td class="mono"><a href="https://doi.org/10.1002/ANIE.201605425">DOI:10.1002/ANIE.201605425</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0001746</td>
-  <td>Streptomyces pristinaespiralis ATCC 25486<br><span class="mono">NCBITaxon:457429</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001746">mibig:BGC0001746</a></td>
+  <td>Streptomyces pristinaespiralis ATCC 25486<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=457429">NCBITaxon:457429</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:NZ_CM000950.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/NZ_CM000950.1">genbank:NZ_CM000950.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -102,20 +104,20 @@ isolation report left it.</p>
 <h2>Biosynthesis <span class="tag causal">curated</span></h2>
 <p class="sub">Written by a curator with claim-level evidence on each step; not
 derived from a source. This is what the rest of the record exists to support.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthesis steps"><table>
 <tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
 <tr>
   <td>1</td>
-  <td>Pristinol synthase<br><span class="mono">UniProtKB:B5H7H3</span></td>
-  <td class="mono">RHEA:54372</td>
-  <td class="mono">CHEBI:175763 &rarr; CHEBI:138165</td>
-  <td class="mono">DOI:10.1002/anie.201605425</td>
+  <td>Pristinol synthase<br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/B5H7H3/entry">UniProtKB:B5H7H3</a></span></td>
+  <td class="mono"><a href="https://www.rhea-db.org/rhea/54372">RHEA:54372</a></td>
+  <td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_175763">CHEBI:175763</a> &rarr; <a href="http://purl.obolibrary.org/obo/CHEBI_138165">CHEBI:138165</a></td>
+  <td class="mono"><a href="https://doi.org/10.1002/anie.201605425">DOI:10.1002/anie.201605425</a></td>
 </tr>
 </table></div>
 <p class="sub">Step 1: Streptomyces pristinaespiralis ATCC 25486 pristinol synthase cyclizes (2E,6E)-farnesyl diphosphate with water to (+)-(2S,3R,9R)-pristinol and diphosphate.</p>
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for (+)-(2S,3R,9R)-pristinol">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for (+)-(2S,3R,9R)-pristinol">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -148,15 +150,15 @@ derived from a source. This is what the rest of the record exists to support.</p
 </div>
 
 <h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
-<p class="sub">Streptomyces pristinaespiralis ATCC 25486 pristinol synthase cyclizes (2E,6E)-farnesyl diphosphate to form (+)-(2S,3R,9R)-pristinol.</p><div class="scroll"><table>
+<p class="sub">Streptomyces pristinaespiralis ATCC 25486 pristinol synthase cyclizes (2E,6E)-farnesyl diphosphate to form (+)-(2S,3R,9R)-pristinol.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>BGC0001746 pristinol biosynthetic gene cluster</td>
   <td>encodes</td>
   <td>Pristinol synthase</td>
   <td>BGC0001746 contains SSDG_RS31275, the WP_005320742.1-encoded pristinol synthase.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://mibig.secondarymetabolites.org/repository/BGC0001746.3/BGC0001746.gbk<br>https://www.uniprot.org/uniprotkb/B5H7H3</summary><ul><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0001746.3/BGC0001746.gbk</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>MIBiG BGC0001746.3 maps the Streptomyces pristinaespiralis ATCC 25486 pristinol core CDS SSDG_RS31275 to RefSeq protein WP_005320742.1.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/B5H7H3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>Reviewed UniProtKB:B5H7H3 is the 372 aa Streptomyces pristinaespiralis ATCC 25486 pristinol synthase, cross-references RefSeq WP_005320742.1 on NZ_CM000950.1, and annotates RHEA:54372 from PMID:27403888.</dd></dl>
+  <td><span class="mono"><a href="https://mibig.secondarymetabolites.org/repository/BGC0001746.3/BGC0001746.gbk">https://mibig.secondarymetabolites.org/repository/BGC0001746.3/BGC0001746.gbk</a><br><a href="https://www.uniprot.org/uniprotkb/B5H7H3">https://www.uniprot.org/uniprotkb/B5H7H3</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/repository/BGC0001746.3/BGC0001746.gbk">https://mibig.secondarymetabolites.org/repository/BGC0001746.3/BGC0001746.gbk</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>MIBiG BGC0001746.3 maps the Streptomyces pristinaespiralis ATCC 25486 pristinol core CDS SSDG_RS31275 to RefSeq protein WP_005320742.1.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/B5H7H3">https://www.uniprot.org/uniprotkb/B5H7H3</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>Reviewed UniProtKB:B5H7H3 is the 372 aa Streptomyces pristinaespiralis ATCC 25486 pristinol synthase, cross-references RefSeq WP_005320742.1 on NZ_CM000950.1, and annotates RHEA:54372 from <a href="https://pubmed.ncbi.nlm.nih.gov/27403888/">PMID:27403888</a>.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -165,9 +167,9 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>is cyclized by</td>
   <td>Pristinol synthase</td>
   <td>Pristinol synthase abstracts diphosphate from FPP and catalyzes the rearranged sesquiterpenol-forming cyclization.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1002/anie.201605425<br>https://www.uniprot.org/uniprotkb/B5H7H3<br>https://www.rhea-db.org/rhea/54372</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1002/anie.201605425</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>synthase for (+)-(2S,3S,9R)-pristinol</dd><dt>notes</dt><dd>Klapschinski et al. characterized the Streptomyces pristinaespiralis ATCC 25486 terpene cyclase for pristinol; Rhea and IUBMB normalize the enzymatic product to (+)-(2S,3R,9R)-pristinol.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/B5H7H3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>Reviewed UniProtKB:B5H7H3 is the 372 aa Streptomyces pristinaespiralis ATCC 25486 pristinol synthase, cross-references RefSeq WP_005320742.1 on NZ_CM000950.1, and annotates RHEA:54372 from PMID:27403888.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.rhea-db.org/rhea/54372</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>RHEA:54372 is the (2E,6E)-farnesyl diphosphate plus H2O to (+)-(2S,3R,9R)-pristinol plus diphosphate reaction; RHEA:54373 is the left-to-right direction mapped to UniProtKB:B5H7H3 in Swiss-Prot.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1002/anie.201605425">DOI:10.1002/anie.201605425</a><br><a href="https://www.uniprot.org/uniprotkb/B5H7H3">https://www.uniprot.org/uniprotkb/B5H7H3</a><br><a href="https://www.rhea-db.org/rhea/54372">https://www.rhea-db.org/rhea/54372</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1002/anie.201605425">DOI:10.1002/anie.201605425</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>synthase for (+)-(2S,3S,9R)-pristinol</dd><dt>notes</dt><dd>Klapschinski et al. characterized the Streptomyces pristinaespiralis ATCC 25486 terpene cyclase for pristinol; Rhea and IUBMB normalize the enzymatic product to (+)-(2S,3R,9R)-pristinol.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/B5H7H3">https://www.uniprot.org/uniprotkb/B5H7H3</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>Reviewed UniProtKB:B5H7H3 is the 372 aa Streptomyces pristinaespiralis ATCC 25486 pristinol synthase, cross-references RefSeq WP_005320742.1 on NZ_CM000950.1, and annotates RHEA:54372 from <a href="https://pubmed.ncbi.nlm.nih.gov/27403888/">PMID:27403888</a>.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.rhea-db.org/rhea/54372">https://www.rhea-db.org/rhea/54372</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>RHEA:54372 is the (2E,6E)-farnesyl diphosphate plus H2O to (+)-(2S,3R,9R)-pristinol plus diphosphate reaction; RHEA:54373 is the left-to-right direction mapped to UniProtKB:B5H7H3 in Swiss-Prot.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -176,9 +178,9 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>produces</td>
   <td>(+)-(2S,3R,9R)-pristinol</td>
   <td>Pristinol synthase produces (+)-(2S,3R,9R)-pristinol via the RHEA:54372 reaction.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1002/anie.201605425<br>https://www.uniprot.org/uniprotkb/B5H7H3<br>https://www.rhea-db.org/rhea/54372</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1002/anie.201605425</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>synthase for (+)-(2S,3S,9R)-pristinol</dd><dt>notes</dt><dd>Klapschinski et al. characterized the Streptomyces pristinaespiralis ATCC 25486 terpene cyclase for pristinol; Rhea and IUBMB normalize the enzymatic product to (+)-(2S,3R,9R)-pristinol.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/B5H7H3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>Reviewed UniProtKB:B5H7H3 is the 372 aa Streptomyces pristinaespiralis ATCC 25486 pristinol synthase, cross-references RefSeq WP_005320742.1 on NZ_CM000950.1, and annotates RHEA:54372 from PMID:27403888.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.rhea-db.org/rhea/54372</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>RHEA:54372 is the (2E,6E)-farnesyl diphosphate plus H2O to (+)-(2S,3R,9R)-pristinol plus diphosphate reaction; RHEA:54373 is the left-to-right direction mapped to UniProtKB:B5H7H3 in Swiss-Prot.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1002/anie.201605425">DOI:10.1002/anie.201605425</a><br><a href="https://www.uniprot.org/uniprotkb/B5H7H3">https://www.uniprot.org/uniprotkb/B5H7H3</a><br><a href="https://www.rhea-db.org/rhea/54372">https://www.rhea-db.org/rhea/54372</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1002/anie.201605425">DOI:10.1002/anie.201605425</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>synthase for (+)-(2S,3S,9R)-pristinol</dd><dt>notes</dt><dd>Klapschinski et al. characterized the Streptomyces pristinaespiralis ATCC 25486 terpene cyclase for pristinol; Rhea and IUBMB normalize the enzymatic product to (+)-(2S,3R,9R)-pristinol.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/B5H7H3">https://www.uniprot.org/uniprotkb/B5H7H3</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>Reviewed UniProtKB:B5H7H3 is the 372 aa Streptomyces pristinaespiralis ATCC 25486 pristinol synthase, cross-references RefSeq WP_005320742.1 on NZ_CM000950.1, and annotates RHEA:54372 from <a href="https://pubmed.ncbi.nlm.nih.gov/27403888/">PMID:27403888</a>.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.rhea-db.org/rhea/54372">https://www.rhea-db.org/rhea/54372</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>RHEA:54372 is the (2E,6E)-farnesyl diphosphate plus H2O to (+)-(2S,3R,9R)-pristinol plus diphosphate reaction; RHEA:54373 is the left-to-right direction mapped to UniProtKB:B5H7H3 in Swiss-Prot.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -186,16 +188,16 @@ derived from a source. This is what the rest of the record exists to support.</p
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
-<p class="sub">Database-reported TaTC6 formation of (+)-(2S,3R,9R)-pristinol as a side product. A0A5S9I252 denotes the sequence-verified native Trichoderma atroviride FKI-3849 reference, not a verified full assayed construct. Functional and stereochemical product attribution remain database-level. No native producer, BGC membership, physical complex or measured Mg-binding claim is added.</p><div class="scroll"><table>
+<p class="sub">Database-reported TaTC6 formation of (+)-(2S,3R,9R)-pristinol as a side product. A0A5S9I252 denotes the sequence-verified native Trichoderma atroviride FKI-3849 reference, not a verified full assayed construct. Functional and stereochemical product attribution remain database-level. No native producer, BGC membership, physical complex or measured Mg-binding claim is added.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 2 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>TaTC6 native FKI-3849 reference</td>
   <td>is_database_reported_catalyst_of</td>
   <td>Database-reported TaTC6 FPP conversion</td>
   <td>The native reference mapping does not establish historical assay-stock or full construct/tag identity. UniProt separately reports a koraiol disruption phenotype; its applicability is unresolved and no phenotype edge is adopted. Its homodimer and Mg-binding assertions are homology-based and are not adopted here.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0A5S9I252<br>https://www.ncbi.nlm.nih.gov/protein/BBK61014.1<br>https://www.ncbi.nlm.nih.gov/nuccore/LC484924.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A5S9I252</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>notes</dt><dd>Reviewed entry 21/sequence 1 assigns RHEA:54372 to tatc6 and explicitly names CHEBI:138165 as product of FPP plus water; RHEA:54373 is annotated left-to-right. The function narrative calls trichobrasilenol the main product and pristinol a side product. These are adopted UniProt assertions, not independently inspected experiments. PMID31418991 / DOI10.1002/anie.201907964 is the database-cited bibliography; the primary paper and supplementary information were inaccessible and were not inspected.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/BBK61014.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>notes</dt><dd>Complete 386-aa native Trichoderma atroviride FKI-3849 reference, taxon63577, gene tatc6. GenPept annotates trichobrasilenol synthesis from FPP; it does not independently establish pristinol formation. Its in-vitro-assay code is a deposit annotation, not a newly inspected assay.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/LC484924.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>notes</dt><dd>Independent translation of the complete six-exon CDS join(1..242,308..434,497..515,569..1035,1100..1326,1385..1463), codon_start1/default table1: 1161 nt including stop equals 386-aa annotated translation, GenPept BBK61014.1 and UniProt A0A5S9I252. Independent GenPept coded_by accession, coordinates and orientation agree; both deposits name FKI-3849/taxon63577. This is native reference correspondence, not experimental construct equivalence.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/A0A5S9I252">https://www.uniprot.org/uniprotkb/A0A5S9I252</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/BBK61014.1">https://www.ncbi.nlm.nih.gov/protein/BBK61014.1</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/LC484924.1">https://www.ncbi.nlm.nih.gov/nuccore/LC484924.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0A5S9I252">https://www.uniprot.org/uniprotkb/A0A5S9I252</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>notes</dt><dd>Reviewed entry 21/sequence 1 assigns RHEA:54372 to tatc6 and explicitly names CHEBI:138165 as product of FPP plus water; RHEA:54373 is annotated left-to-right. The function narrative calls trichobrasilenol the main product and pristinol a side product. These are adopted UniProt assertions, not independently inspected experiments. PMID31418991 / DOI10.1002/anie.201907964 is the database-cited bibliography; the primary paper and supplementary information were inaccessible and were not inspected.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/BBK61014.1">https://www.ncbi.nlm.nih.gov/protein/BBK61014.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>notes</dt><dd>Complete 386-aa native Trichoderma atroviride FKI-3849 reference, taxon63577, gene tatc6. GenPept annotates trichobrasilenol synthesis from FPP; it does not independently establish pristinol formation. Its in-vitro-assay code is a deposit annotation, not a newly inspected assay.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/LC484924.1">https://www.ncbi.nlm.nih.gov/nuccore/LC484924.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>notes</dt><dd>Independent translation of the complete six-exon CDS join(1..242,308..434,497..515,569..1035,1100..1326,1385..1463), codon_start1/default table1: 1161 nt including stop equals 386-aa annotated translation, GenPept BBK61014.1 and UniProt A0A5S9I252. Independent GenPept coded_by accession, coordinates and orientation agree; both deposits name FKI-3849/taxon63577. This is native reference correspondence, not experimental construct equivalence.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -204,7 +206,7 @@ by the corpus tests.</p>
   <td>has_database_reported_product</td>
   <td>(+)-(2S,3R,9R)-pristinol</td>
   <td>The explicit UniProt reaction product CURIE CHEBI:138165 matches this owner, whose unchanged full InChIKey is PXKJCWZAMAFFIW-GLBIRDDMSA-N. This is database product mapping, not an independent spectrum or primary-paper stereochemical analysis. No exclusive specificity, product percentage or native production is asserted. This fungal side-product graph is separate from the existing Streptomyces B5H7H3/BGC0001746 mechanism; its historical naming/stereochemistry notes are preserved without a new adjudication.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0A5S9I252</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A5S9I252</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>notes</dt><dd>Reviewed entry 21/sequence 1 assigns RHEA:54372 to tatc6 and explicitly names CHEBI:138165 as product of FPP plus water; RHEA:54373 is annotated left-to-right. The function narrative calls trichobrasilenol the main product and pristinol a side product. These are adopted UniProt assertions, not independently inspected experiments. PMID31418991 / DOI10.1002/anie.201907964 is the database-cited bibliography; the primary paper and supplementary information were inaccessible and were not inspected.</dd><dt>snippet</dt><dd>(2E,6E)-farnesyl diphosphate + H2O = (+)-(2S,3R,9R)-pristinol + diphosphate</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/A0A5S9I252">https://www.uniprot.org/uniprotkb/A0A5S9I252</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0A5S9I252">https://www.uniprot.org/uniprotkb/A0A5S9I252</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>notes</dt><dd>Reviewed entry 21/sequence 1 assigns RHEA:54372 to tatc6 and explicitly names CHEBI:138165 as product of FPP plus water; RHEA:54373 is annotated left-to-right. The function narrative calls trichobrasilenol the main product and pristinol a side product. These are adopted UniProt assertions, not independently inspected experiments. PMID31418991 / DOI10.1002/anie.201907964 is the database-cited bibliography; the primary paper and supplementary information were inaccessible and were not inspected.</dd><dt>snippet</dt><dd>(2E,6E)-farnesyl diphosphate + H2O = (+)-(2S,3R,9R)-pristinol + diphosphate</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -218,24 +220,36 @@ by the corpus tests.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=PXKJCWZAMAFFIW-GLBIRDDMSA-N">AntibioticMech ((+)-(2S,3R,9R)-pristinol) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=CHEBI%3A138165">MediaIngredientMech (CHEBI:138165) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A457429">TaxonMech: Streptomyces pristinaespiralis ATCC 25486 (NCBITaxon:457429) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0001746">PathwayMech (mibig:BGC0001746) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q=CHEBI%3A138165">MediaIngredientMech (CHEBI:138165) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A457429">TaxonMech: Streptomyces pristinaespiralis ATCC 25486 (NCBITaxon:457429) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0001746">PathwayMech (mibig:BGC0001746) &nearr;</a>
 </div>
 
 
+<h2 id="curation-history">Curation history <span class="tag">6</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-13T10:44:46Z">2026-10-13T10:44:46Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources<p>Seeded from the committed inventories and curation tables.</p></li>
+<li><time datetime="2026-10-09T08:29:01Z">2026-10-09T08:29:01Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added a separate three-node/two-edge BIOSYNTHESIS graph for database-reported TaTC6 formation of (+)-(2S,3R,9R)-pristinol, grounded to UniProtKB:A0A5S9I252 by exact 386-aa native reference and six-exon CDS equality. Each edge has a stable source URL; product evidence includes an exact snippet. Primary paper/SI inaccessible: no primary-experiment claim, construct equivalence, native producer upgrade, BGC assignment, physical complex or Mg-binding claim. Koraiol disruption applicability unresolved and unadopted. Preserved every old graph/pathway, source field, structure, grade, history and SEEDED status; not a full-record sign-off.</p></li>
+<li><time datetime="2026-10-01T03:40:11Z">2026-10-01T03:40:11Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources<p>Seeded from the committed inventories and curation tables.</p></li>
+<li><time datetime="2026-10-01T03:15:42Z">2026-10-01T03:15:42Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added the exact Streptomyces pristinaespiralis ATCC 25486 UniProtKB:B5H7H3 pristinol synthase step and a BGC0001746 / RHEA:54372-grounded (+)-(2S,3R,9R)-pristinol BIOSYNTHESIS causal graph.</p></li>
+<li><time datetime="2026-09-25T03:03:08Z">2026-09-25T03:03:08Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:12Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
+
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0001746</td><td>MIBIG</td><td>3</td></tr>
-<tr><td class="mono">CHEBI:138165</td><td>CHEBI</td><td>3-star</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001746">BGC0001746</a></td><td>MIBIG</td><td>3</td></tr>
+<tr><td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_138165">CHEBI:138165</a></td><td>CHEBI</td><td>3-star</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/terpenoids/2s-3r-9r-pristinol.yaml">data/natural_products/terpenoids/2s-3r-9r-pristinol.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20CHEBI%3A138165&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Fterpenoids%2F2s-3r-9r-pristinol.html">Report a problem with this record</a>: opens a GitHub issue that names CHEBI:138165 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Record last updated 2026-10-13 10:44 UTC, its latest curation event. Generated from the committed corpus. Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Polyketides</a> &middot; auricin</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,17 +32,17 @@
   </form>
 </div>
 <h1>auricin</h1>
-<p class="sub"><span class="mono">CHEBI:156301</span>
+<p class="sub"><span class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_156301">CHEBI:156301</a></span>
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 <span class="tag">antimicrobial unspecified</span></p>
 <details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/auricin.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/auricin.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 <p>An angucycline-like polyketide discovered in Streptomyces aureofaciens that is only stable at acidic pH.</p>
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">DIESPMSGQPRWLG-VLKAYIDRSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">OC1=CC=CC2=C1C(C([C@]3(O[C@H](C)CC([C@H]3OC4CCC(N(C)C)C(C)O4)=O)O[C@@](C5)([H])[C@]6([H])OC5=O)=C6C2=O)=O</td></tr>
 <tr><th>Stereochemistry</th><td>  <span class="tag weak">undefined stereocentres</span> — the InChIKey does not
@@ -58,37 +60,37 @@ pks, saccharide, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Streptomyces aureofaciens<br><span class="mono">NCBITaxon:1894</span></td>
+  <td>Streptomyces aureofaciens<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1894">NCBITaxon:1894</a></span></td>
   <td><span class="tag causal">BGC_CHARACTERIZED</span></td>
-  <td class="mono">mibig:BGC0000201</td>
-  <td><span class="mono">PMID:12384301</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000201">mibig:BGC0000201</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/12384301/">PMID:12384301</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">1</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Streptomyces lavendulae subsp. lavendulae<br><span class="mono">NCBITaxon:58340</span></td>
+  <td>Streptomyces lavendulae subsp. lavendulae<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=58340">NCBITaxon:58340</a></span></td>
   <td>CHEBI</td>
-  <td class="mono">PMID:23373695</td>
+  <td class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/23373695/">PMID:23373695</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0000201</td>
-  <td>Streptomyces aureofaciens<br><span class="mono">NCBITaxon:1894</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000201">mibig:BGC0000201</a></td>
+  <td>Streptomyces aureofaciens<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1894">NCBITaxon:1894</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:KJ396772.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/KJ396772.1">genbank:KJ396772.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -98,7 +100,7 @@ isolation report left it.</p>
 
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for auricin">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for auricin">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -131,18 +133,18 @@ isolation report left it.</p>
 </div>
 
 <h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 6 edges</span></h2>
-<p class="sub">Native CCM3239 paired PKS-region disruptions with contrasting auricin readouts. Four protein nodes are sequence-verified native references, not proven assay alleles. No physical complex or catalytic pathway is asserted. The distant aur2AB references are outside the imported MIBiG BGC0000201 interval; that interval is not extended.</p><div class="scroll"><table>
+<p class="sub">Native CCM3239 paired PKS-region disruptions with contrasting auricin readouts. Four protein nodes are sequence-verified native references, not proven assay alleles. No physical complex or catalytic pathway is asserted. The distant aur2AB references are outside the imported MIBiG BGC0000201 interval; that interval is not extended.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>Aur2A (CCM3239 native reference)</td>
   <td>is a native reference for a gene product targeted by</td>
   <td>AprR replacement of the CCM3239 aur2AB region</td>
   <td>Reference-to-locus correspondence, not a verified experimental allele or evidence that this protein alone causes the phenotype.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1186/s13568-023-01591-2<br>https://www.uniprot.org/uniprotkb/A0A2K8PT11/entry<br>https://www.ncbi.nlm.nih.gov/protein/AIE41912.1<br>https://www.ncbi.nlm.nih.gov/nuccore/CP024986.1<br>DOI:10.1186/s13568-023-01591-2</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1186/s13568-023-01591-2</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Figure S10 identifies the protein reference; Table S2 gives the region-disruption primers.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A2K8PT11/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Unreviewed entry 27, sequence 1; 423 residues, taxon 58340, SLAV_40510, CP024986/ATZ29864.1. Automated enzyme names are not adopted as measured function.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AIE41912.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native pSA3239 reference, KJ396772.2:9703..10974 (-). The corresponding CP024986.1 CDS is 230108..231379 (+), protein ATZ29864.1. Both deposits identify CCM3239.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/CP024986.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Complete CDS translations, independent GenPept sequences and the direct UniProt sequence agree. Coding DNA is identical across KJ396772.1/.2 and CP024986.1. This is native-reference identity, not experimental stock verification.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1186/s13568-023-01591-2</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The full printed S10 sequence matches this reference. Both corresponding 39-nt primer prefixes map uniquely in each deposit. Some coding-end sequence lies within the homology arms; complete CDS removal is not inferred.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1186/s13568-023-01591-2">DOI:10.1186/s13568-023-01591-2</a><br><a href="https://www.uniprot.org/uniprotkb/A0A2K8PT11/entry">https://www.uniprot.org/uniprotkb/A0A2K8PT11/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AIE41912.1">https://www.ncbi.nlm.nih.gov/protein/AIE41912.1</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/CP024986.1">https://www.ncbi.nlm.nih.gov/nuccore/CP024986.1</a><br><a href="https://doi.org/10.1186/s13568-023-01591-2">DOI:10.1186/s13568-023-01591-2</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/s13568-023-01591-2">DOI:10.1186/s13568-023-01591-2</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Figure S10 identifies the protein reference; Table S2 gives the region-disruption primers.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0A2K8PT11/entry">https://www.uniprot.org/uniprotkb/A0A2K8PT11/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Unreviewed entry 27, sequence 1; 423 residues, taxon 58340, SLAV_40510, CP024986/ATZ29864.1. Automated enzyme names are not adopted as measured function.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AIE41912.1">https://www.ncbi.nlm.nih.gov/protein/AIE41912.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native pSA3239 reference, KJ396772.2:9703..10974 (-). The corresponding CP024986.1 CDS is 230108..231379 (+), protein ATZ29864.1. Both deposits identify CCM3239.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/CP024986.1">https://www.ncbi.nlm.nih.gov/nuccore/CP024986.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Complete CDS translations, independent GenPept sequences and the direct UniProt sequence agree. Coding DNA is identical across KJ396772.1/.2 and CP024986.1. This is native-reference identity, not experimental stock verification.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/s13568-023-01591-2">DOI:10.1186/s13568-023-01591-2</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The full printed S10 sequence matches this reference. Both corresponding 39-nt primer prefixes map uniquely in each deposit. Some coding-end sequence lies within the homology arms; complete CDS removal is not inferred.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -151,11 +153,11 @@ isolation report left it.</p>
   <td>is a native reference for a gene product targeted by</td>
   <td>AprR replacement of the CCM3239 aur2AB region</td>
   <td>Reference-to-locus correspondence, not a verified experimental allele or evidence that this protein alone causes the phenotype.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1186/s13568-023-01591-2<br>https://www.uniprot.org/uniprotkb/A0A2K8PW16/entry<br>https://www.ncbi.nlm.nih.gov/protein/AIE41911.1<br>https://www.ncbi.nlm.nih.gov/nuccore/CP024986.1<br>DOI:10.1186/s13568-023-01591-2</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1186/s13568-023-01591-2</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Figure S11 identifies the protein reference; Table S2 gives the region-disruption primers.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A2K8PW16/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Unreviewed entry 25, sequence 1; 420 residues, taxon 58340, SLAV_40515, CP024986/ATZ29865.1. Automated enzyme names are not adopted as measured function.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AIE41911.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native pSA3239 reference, KJ396772.2:8444..9706 (-). The corresponding CP024986.1 CDS is 231376..232638 (+), protein ATZ29865.1. Both deposits identify CCM3239.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/CP024986.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Complete CDS translations, independent GenPept sequences and the direct UniProt sequence agree. Coding DNA is identical across KJ396772.1/.2 and CP024986.1. This is native-reference identity, not experimental stock verification.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1186/s13568-023-01591-2</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The full printed S11 sequence matches this reference. Both corresponding 39-nt primer prefixes map uniquely in each deposit. Some coding-end sequence lies within the homology arms; complete CDS removal is not inferred.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1186/s13568-023-01591-2">DOI:10.1186/s13568-023-01591-2</a><br><a href="https://www.uniprot.org/uniprotkb/A0A2K8PW16/entry">https://www.uniprot.org/uniprotkb/A0A2K8PW16/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AIE41911.1">https://www.ncbi.nlm.nih.gov/protein/AIE41911.1</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/CP024986.1">https://www.ncbi.nlm.nih.gov/nuccore/CP024986.1</a><br><a href="https://doi.org/10.1186/s13568-023-01591-2">DOI:10.1186/s13568-023-01591-2</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/s13568-023-01591-2">DOI:10.1186/s13568-023-01591-2</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Figure S11 identifies the protein reference; Table S2 gives the region-disruption primers.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0A2K8PW16/entry">https://www.uniprot.org/uniprotkb/A0A2K8PW16/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Unreviewed entry 25, sequence 1; 420 residues, taxon 58340, SLAV_40515, CP024986/ATZ29865.1. Automated enzyme names are not adopted as measured function.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AIE41911.1">https://www.ncbi.nlm.nih.gov/protein/AIE41911.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native pSA3239 reference, KJ396772.2:8444..9706 (-). The corresponding CP024986.1 CDS is 231376..232638 (+), protein ATZ29865.1. Both deposits identify CCM3239.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/CP024986.1">https://www.ncbi.nlm.nih.gov/nuccore/CP024986.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Complete CDS translations, independent GenPept sequences and the direct UniProt sequence agree. Coding DNA is identical across KJ396772.1/.2 and CP024986.1. This is native-reference identity, not experimental stock verification.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/s13568-023-01591-2">DOI:10.1186/s13568-023-01591-2</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The full printed S11 sequence matches this reference. Both corresponding 39-nt primer prefixes map uniquely in each deposit. Some coding-end sequence lies within the homology arms; complete CDS removal is not inferred.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -164,11 +166,11 @@ isolation report left it.</p>
   <td>is a native reference for a gene product targeted by</td>
   <td>AprR replacement of the CCM3239 aur1DE region</td>
   <td>Reference-to-locus correspondence, not a verified experimental allele or evidence that this protein alone causes the phenotype.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1186/s13568-023-01591-2<br>https://www.uniprot.org/uniprotkb/A0A2K8PSV3/entry<br>https://www.ncbi.nlm.nih.gov/protein/AAX57191.1<br>https://www.ncbi.nlm.nih.gov/nuccore/CP024986.1<br>DOI:10.1186/s13568-023-01591-2</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1186/s13568-023-01591-2</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Figure S10 identifies the protein reference; Table S2 gives the region-disruption primers.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A2K8PSV3/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Unreviewed entry 27, sequence 1; 422 residues, taxon 58340, SLAV_40245, CP024986/ATZ29811.1. Automated enzyme names are not adopted as measured function.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AAX57191.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native pSA3239 reference, KJ396772.2:67454..68722 (+). The corresponding CP024986.1 CDS is 172355..173623 (-), protein ATZ29811.1. Both deposits identify CCM3239.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/CP024986.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Complete CDS translations, independent GenPept sequences and the direct UniProt sequence agree. Coding DNA is identical across KJ396772.1/.2 and CP024986.1. This is native-reference identity, not experimental stock verification.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1186/s13568-023-01591-2</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The full printed S10 sequence matches this reference. Both corresponding 39-nt primer prefixes map uniquely in each deposit. Some coding-end sequence lies within the homology arms; complete CDS removal is not inferred.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1186/s13568-023-01591-2">DOI:10.1186/s13568-023-01591-2</a><br><a href="https://www.uniprot.org/uniprotkb/A0A2K8PSV3/entry">https://www.uniprot.org/uniprotkb/A0A2K8PSV3/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AAX57191.1">https://www.ncbi.nlm.nih.gov/protein/AAX57191.1</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/CP024986.1">https://www.ncbi.nlm.nih.gov/nuccore/CP024986.1</a><br><a href="https://doi.org/10.1186/s13568-023-01591-2">DOI:10.1186/s13568-023-01591-2</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/s13568-023-01591-2">DOI:10.1186/s13568-023-01591-2</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Figure S10 identifies the protein reference; Table S2 gives the region-disruption primers.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0A2K8PSV3/entry">https://www.uniprot.org/uniprotkb/A0A2K8PSV3/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Unreviewed entry 27, sequence 1; 422 residues, taxon 58340, SLAV_40245, CP024986/ATZ29811.1. Automated enzyme names are not adopted as measured function.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AAX57191.1">https://www.ncbi.nlm.nih.gov/protein/AAX57191.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native pSA3239 reference, KJ396772.2:67454..68722 (+). The corresponding CP024986.1 CDS is 172355..173623 (-), protein ATZ29811.1. Both deposits identify CCM3239.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/CP024986.1">https://www.ncbi.nlm.nih.gov/nuccore/CP024986.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Complete CDS translations, independent GenPept sequences and the direct UniProt sequence agree. Coding DNA is identical across KJ396772.1/.2 and CP024986.1. This is native-reference identity, not experimental stock verification.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/s13568-023-01591-2">DOI:10.1186/s13568-023-01591-2</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The full printed S10 sequence matches this reference. Both corresponding 39-nt primer prefixes map uniquely in each deposit. Some coding-end sequence lies within the homology arms; complete CDS removal is not inferred.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -177,11 +179,11 @@ isolation report left it.</p>
   <td>is a native reference for a gene product targeted by</td>
   <td>AprR replacement of the CCM3239 aur1DE region</td>
   <td>Reference-to-locus correspondence, not a verified experimental allele or evidence that this protein alone causes the phenotype.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1186/s13568-023-01591-2<br>https://www.uniprot.org/uniprotkb/A0A2K8PUN7/entry<br>https://www.ncbi.nlm.nih.gov/protein/AAX57192.2<br>https://www.ncbi.nlm.nih.gov/nuccore/CP024986.1<br>DOI:10.1186/s13568-023-01591-2</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1186/s13568-023-01591-2</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Figure S11 identifies the protein reference; Table S2 gives the region-disruption primers.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A2K8PUN7/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Unreviewed entry 25, sequence 1; 405 residues, taxon 58340, SLAV_40240, CP024986/ATZ29810.1. Automated enzyme names are not adopted as measured function.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AAX57192.2</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native pSA3239 reference, KJ396772.2:68719..69936 (+). The corresponding CP024986.1 CDS is 171141..172358 (-), protein ATZ29810.1. Both deposits identify CCM3239.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/CP024986.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Complete CDS translations, independent GenPept sequences and the direct UniProt sequence agree. Coding DNA is identical across KJ396772.1/.2 and CP024986.1. This is native-reference identity, not experimental stock verification.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1186/s13568-023-01591-2</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The full printed S11 sequence matches this reference. Both corresponding 39-nt primer prefixes map uniquely in each deposit. Some coding-end sequence lies within the homology arms; complete CDS removal is not inferred.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1186/s13568-023-01591-2">DOI:10.1186/s13568-023-01591-2</a><br><a href="https://www.uniprot.org/uniprotkb/A0A2K8PUN7/entry">https://www.uniprot.org/uniprotkb/A0A2K8PUN7/entry</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AAX57192.2">https://www.ncbi.nlm.nih.gov/protein/AAX57192.2</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/CP024986.1">https://www.ncbi.nlm.nih.gov/nuccore/CP024986.1</a><br><a href="https://doi.org/10.1186/s13568-023-01591-2">DOI:10.1186/s13568-023-01591-2</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/s13568-023-01591-2">DOI:10.1186/s13568-023-01591-2</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Figure S11 identifies the protein reference; Table S2 gives the region-disruption primers.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0A2K8PUN7/entry">https://www.uniprot.org/uniprotkb/A0A2K8PUN7/entry</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Unreviewed entry 25, sequence 1; 405 residues, taxon 58340, SLAV_40240, CP024986/ATZ29810.1. Automated enzyme names are not adopted as measured function.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AAX57192.2">https://www.ncbi.nlm.nih.gov/protein/AAX57192.2</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native pSA3239 reference, KJ396772.2:68719..69936 (+). The corresponding CP024986.1 CDS is 171141..172358 (-), protein ATZ29810.1. Both deposits identify CCM3239.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/CP024986.1">https://www.ncbi.nlm.nih.gov/nuccore/CP024986.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Complete CDS translations, independent GenPept sequences and the direct UniProt sequence agree. Coding DNA is identical across KJ396772.1/.2 and CP024986.1. This is native-reference identity, not experimental stock verification.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/s13568-023-01591-2">DOI:10.1186/s13568-023-01591-2</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The full printed S11 sequence matches this reference. Both corresponding 39-nt primer prefixes map uniquely in each deposit. Some coding-end sequence lies within the homology arms; complete CDS removal is not inferred.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -190,8 +192,8 @@ isolation report left it.</p>
   <td>abolishes the reported production readout for</td>
   <td>auricin</td>
   <td>Paired-region perturbation; individual essentiality, rescue, isolated catalysis and absence of polar effects are not established.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1186/s13568-023-01591-2<br>https://www.ebi.ac.uk/chebi/CHEBI:156301</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1186/s13568-023-01591-2</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native CCM3239 in Bennet medium: Figure 5 compares TLC/biochromatography and 16-h HPLC; Figure S5 provides Southern controls. Not the engineered rabelomycin experiment.</dd><dt>snippet</dt><dd>deletion of the aur2AB genes resulted in the absence of auricin</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ebi.ac.uk/chebi/CHEBI:156301</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Pinned ChEBI and MIBiG structures agree with the owner key DIESPMSGQPRWLG-VLKAYIDRSA-N: neutral C28H31NO10, three unspecified tetrahedral centres. Compound correspondence remains name/database-grounded; the assay readouts do not verify every stereocentre.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1186/s13568-023-01591-2">DOI:10.1186/s13568-023-01591-2</a><br><a href="https://www.ebi.ac.uk/chebi/CHEBI:156301">https://www.ebi.ac.uk/chebi/CHEBI:156301</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/s13568-023-01591-2">DOI:10.1186/s13568-023-01591-2</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native CCM3239 in Bennet medium: Figure 5 compares TLC/biochromatography and 16-h HPLC; Figure S5 provides Southern controls. Not the engineered rabelomycin experiment.</dd><dt>snippet</dt><dd>deletion of the aur2AB genes resulted in the absence of auricin</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ebi.ac.uk/chebi/CHEBI:156301">https://www.ebi.ac.uk/chebi/CHEBI:156301</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Pinned ChEBI and MIBiG structures agree with the owner key DIESPMSGQPRWLG-VLKAYIDRSA-N: neutral C28H31NO10, three unspecified tetrahedral centres. Compound correspondence remains name/database-grounded; the assay readouts do not verify every stereocentre.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -200,7 +202,7 @@ isolation report left it.</p>
   <td>retains reported wild-type-like production readouts for</td>
   <td>auricin</td>
   <td>Condition-specific negative control, not universal dispensability or proof that these proteins have no biochemical activity.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1186/s13568-023-01591-2</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1186/s13568-023-01591-2</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The matched CCM3239 comparison retains the auricin-associated TLC and HPLC signals in Figure 5; Figure S4 provides Southern controls. No quantitative equivalence or stereochemical proof is inferred.</dd><dt>snippet</dt><dd>had no effect on auricin production.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1186/s13568-023-01591-2">DOI:10.1186/s13568-023-01591-2</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1186/s13568-023-01591-2">DOI:10.1186/s13568-023-01591-2</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The matched CCM3239 comparison retains the auricin-associated TLC and HPLC signals in Figure 5; Figure S4 provides Southern controls. No quantitative equivalence or stereochemical proof is inferred.</dd><dt>snippet</dt><dd>had no effect on auricin production.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -211,32 +213,41 @@ by the corpus tests.</p>
 
 
 <h2>Elsewhere in the fleet</h2>
-<ul><li>AntibioticMech — <a class="mono" href="https://culturebotai.github.io/AntibioticMech/pages/antimicrobial_unspecified/auricin.html">CHEBI:156301</a>    (same structure, same inchikey)</li>
+<ul><li>AntibioticMech — <a class="mono" href="https://culturebotai.github.io/AntibioticMech/pages/unspecified/auricin.html">CHEBI:156301</a>    (same structure, same inchikey)</li>
 </ul>
 
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=DIESPMSGQPRWLG-VLKAYIDRSA-N">AntibioticMech (auricin) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=CHEBI%3A156301">MediaIngredientMech (CHEBI:156301) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A1894">TaxonMech: Streptomyces aureofaciens (NCBITaxon:1894) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000201">PathwayMech (mibig:BGC0000201) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q=CHEBI%3A156301">MediaIngredientMech (CHEBI:156301) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A1894">TaxonMech: Streptomyces aureofaciens (NCBITaxon:1894) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000201">PathwayMech (mibig:BGC0000201) &nearr;</a>
 </div>
 
 <h2>Open questions <span class="tag">1</span></h2>
-<div class="note"><p><strong>curator-auricin-individual-pks-contributions</strong> — What are the individual Aur2A and Aur2B contributions, and can complementation separate loss of their activity from neighboring transcriptional effects?</p></div>
+<div class="note"><p><strong>curator-auricin-individual-pks-contributions</strong> <span class="tag">OPEN</span> <span class="tag">knowledge gap</span> — What are the individual Aur2A and Aur2B contributions, and can complementation separate loss of their activity from neighboring transcriptional effects?</p></div>
+
+<h2 id="curation-history">Curation history <span class="tag">3</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-11T05:56:02Z">2026-10-11T05:56:02Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added a native CCM3239 paired-PKS-disruption graph with four sequence-verified UniProt references, six cited edges and an individual-causality discussion. Checked complete native translations, GenPept, printed supplemental alignments and 39-nt disruption-primer prefixes. Preserved imported identity, producer/BGC fields, grades, incomplete stereochemistry and history. No individual essentiality, isolated catalysis, new BGC membership or REVIEWED upgrade asserted.</p></li>
+<li><time datetime="2026-09-25T03:01:47Z">2026-09-25T03:01:47Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:05Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
 
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0000201</td><td>MIBIG</td><td>5</td></tr>
-<tr><td class="mono">CHEBI:156301</td><td>CHEBI</td><td>3-star</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000201">BGC0000201</a></td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_156301">CHEBI:156301</a></td><td>CHEBI</td><td>3-star</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/polyketides/auricin.yaml">data/natural_products/polyketides/auricin.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20CHEBI%3A156301&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Fpolyketides%2Fauricin.html">Report a problem with this record</a>: opens a GitHub issue that names CHEBI:156301 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Record last updated 2026-10-11 05:56 UTC, its latest curation event. Generated from the committed corpus. Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

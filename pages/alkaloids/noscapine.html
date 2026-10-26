@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Alkaloids</a> &middot; (−)-noscapine</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>(−)-noscapine</h1>
-<p class="sub"><span class="mono">CHEBI:73237</span>
+<p class="sub"><span class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_73237">CHEBI:73237</a></span>
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 </p>
 <details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/alkaloids/noscapine.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/alkaloids/noscapine.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 <p>A benzylisoquinoline alkaloid that is 1,2,3,4-tetrahydroisoquinoline which is substituted by a 4,5-dimethoxy-3-oxo-1,3-dihydro-2-benzofuran-1-yl group at position 1, a methylenedioxy group at positions 6-7 and a methoxy group at position 8. Obtained from plants of the Papaveraceae family, it lacks significant painkilling properties and is primarily used for its antitussive (cough-suppressing) effects.</p>
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">AKNNEGZIBPJZJG-MSOLQXFVSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">CN1CCC2=CC3=C(C(=C2[C@@H]1[C@@H]4C5=C(C(=C(C=C5)OC)OC)C(=O)O4)OC)OCO3</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">pubchem:275196</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/compound/275196">pubchem:275196</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Alkaloids</a> —
@@ -57,154 +59,154 @@ other, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Papaver somniferum<br><span class="mono">NCBITaxon:3469</span></td>
+  <td>Papaver somniferum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3469">NCBITaxon:3469</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0001325</td>
-  <td><span class="mono">DOI:10.1371/journal.pone.0017733</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001325">mibig:BGC0001325</a></td>
+  <td><span class="mono"><a href="https://doi.org/10.1371/journal.pone.0017733">DOI:10.1371/journal.pone.0017733</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">25</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Corydalis heterocarpa var. japonica<br><span class="mono">NCBITaxon:1030657</span></td>
+  <td>Corydalis heterocarpa var. japonica<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1030657">NCBITaxon:1030657</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1002/ARDP.19873200805</td>
+  <td class="mono"><a href="https://doi.org/10.1002/ARDP.19873200805">DOI:10.1002/ARDP.19873200805</a></td>
 </tr>
 <tr>
-  <td>Papaver pseudo-orientale<br><span class="mono">NCBITaxon:215228</span></td>
+  <td>Papaver pseudo-orientale<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=215228">NCBITaxon:215228</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/S0031-9422(00)81705-7</td>
+  <td class="mono"><a href="https://doi.org/10.1016/S0031-9422%2800%2981705-7">DOI:10.1016/S0031-9422(00)81705-7</a></td>
 </tr>
 <tr>
-  <td>Papaver setigerum<br><span class="mono">NCBITaxon:215229</span></td>
+  <td>Papaver setigerum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=215229">NCBITaxon:215229</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1055/S-2007-969106</td>
+  <td class="mono"><a href="https://doi.org/10.1055/S-2007-969106">DOI:10.1055/S-2007-969106</a></td>
 </tr>
 <tr>
-  <td>Papaver orientale<br><span class="mono">NCBITaxon:22694</span></td>
+  <td>Papaver orientale<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=22694">NCBITaxon:22694</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/S0031-9422(00)81705-7</td>
+  <td class="mono"><a href="https://doi.org/10.1016/S0031-9422%2800%2981705-7">DOI:10.1016/S0031-9422(00)81705-7</a></td>
 </tr>
 <tr>
-  <td>Papaver fugax<br><span class="mono">NCBITaxon:3117443</span></td>
+  <td>Papaver fugax<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3117443">NCBITaxon:3117443</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/S0031-9422(00)81705-7</td>
+  <td class="mono"><a href="https://doi.org/10.1016/S0031-9422%2800%2981705-7">DOI:10.1016/S0031-9422(00)81705-7</a></td>
 </tr>
 <tr>
-  <td>Papaver rhoeas<br><span class="mono">NCBITaxon:33128</span></td>
+  <td>Papaver rhoeas<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=33128">NCBITaxon:33128</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1055/S-2006-960934</td>
+  <td class="mono"><a href="https://doi.org/10.1055/S-2006-960934">DOI:10.1055/S-2006-960934</a></td>
 </tr>
 <tr>
-  <td>Papaver oreophilum<br><span class="mono">NCBITaxon:3736021</span></td>
+  <td>Papaver oreophilum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3736021">NCBITaxon:3736021</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1021/NP070099O</td>
+  <td class="mono"><a href="https://doi.org/10.1021/NP070099O">DOI:10.1021/NP070099O</a></td>
 </tr>
 <tr>
-  <td>Roemeria carica<br><span class="mono">NCBITaxon:3736784</span></td>
+  <td>Roemeria carica<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3736784">NCBITaxon:3736784</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.3987/R-1986-05-1227</td>
+  <td class="mono"><a href="https://doi.org/10.3987/R-1986-05-1227">DOI:10.3987/R-1986-05-1227</a></td>
 </tr>
 <tr>
-  <td>Corydalis ochotensis<br><span class="mono">NCBITaxon:38907</span></td>
+  <td>Corydalis ochotensis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=38907">NCBITaxon:38907</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1002/ARDP.19873200805</td>
+  <td class="mono"><a href="https://doi.org/10.1002/ARDP.19873200805">DOI:10.1002/ARDP.19873200805</a></td>
 </tr>
 <tr>
-  <td>Corydalis solida<br><span class="mono">NCBITaxon:38914</span></td>
+  <td>Corydalis solida<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=38914">NCBITaxon:38914</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1139/V69-178</td>
+  <td class="mono"><a href="https://doi.org/10.1139/V69-178">DOI:10.1139/V69-178</a></td>
 </tr>
 <tr>
-  <td>Corydalis ophiocarpa<br><span class="mono">NCBITaxon:38929</span></td>
+  <td>Corydalis ophiocarpa<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=38929">NCBITaxon:38929</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1002/ARDP.19873200805</td>
+  <td class="mono"><a href="https://doi.org/10.1002/ARDP.19873200805">DOI:10.1002/ARDP.19873200805</a></td>
 </tr>
 <tr>
-  <td>Papaver somniferum<br><span class="mono">NCBITaxon:3469</span></td>
+  <td>Papaver somniferum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3469">NCBITaxon:3469</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1002/PCA.2800020205</td>
+  <td class="mono"><a href="https://doi.org/10.1002/PCA.2800020205">DOI:10.1002/PCA.2800020205</a></td>
 </tr>
 <tr>
-  <td>Papaver somniferum<br><span class="mono">NCBITaxon:3469</span></td>
+  <td>Papaver somniferum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3469">NCBITaxon:3469</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/0305-1978(88)90092-0</td>
+  <td class="mono"><a href="https://doi.org/10.1016/0305-1978%2888%2990092-0">DOI:10.1016/0305-1978(88)90092-0</a></td>
 </tr>
 <tr>
-  <td>Papaver somniferum<br><span class="mono">NCBITaxon:3469</span></td>
+  <td>Papaver somniferum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3469">NCBITaxon:3469</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/0379-0738(94)90219-4</td>
+  <td class="mono"><a href="https://doi.org/10.1016/0379-0738%2894%2990219-4">DOI:10.1016/0379-0738(94)90219-4</a></td>
 </tr>
 <tr>
-  <td>Papaver somniferum<br><span class="mono">NCBITaxon:3469</span></td>
+  <td>Papaver somniferum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3469">NCBITaxon:3469</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/0731-7085(95)01574-4</td>
+  <td class="mono"><a href="https://doi.org/10.1016/0731-7085%2895%2901574-4">DOI:10.1016/0731-7085(95)01574-4</a></td>
 </tr>
 <tr>
-  <td>Papaver somniferum<br><span class="mono">NCBITaxon:3469</span></td>
+  <td>Papaver somniferum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3469">NCBITaxon:3469</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/S0021-9673(00)94605-3</td>
+  <td class="mono"><a href="https://doi.org/10.1016/S0021-9673%2800%2994605-3">DOI:10.1016/S0021-9673(00)94605-3</a></td>
 </tr>
 <tr>
-  <td>Papaver somniferum<br><span class="mono">NCBITaxon:3469</span></td>
+  <td>Papaver somniferum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3469">NCBITaxon:3469</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/S0031-9422(00)88047-4</td>
+  <td class="mono"><a href="https://doi.org/10.1016/S0031-9422%2800%2988047-4">DOI:10.1016/S0031-9422(00)88047-4</a></td>
 </tr>
 <tr>
-  <td>Papaver somniferum<br><span class="mono">NCBITaxon:3469</span></td>
+  <td>Papaver somniferum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3469">NCBITaxon:3469</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/S0031-9422(99)00420-3</td>
+  <td class="mono"><a href="https://doi.org/10.1016/S0031-9422%2899%2900420-3">DOI:10.1016/S0031-9422(99)00420-3</a></td>
 </tr>
 <tr>
-  <td>Papaver somniferum<br><span class="mono">NCBITaxon:3469</span></td>
+  <td>Papaver somniferum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3469">NCBITaxon:3469</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1055/S-2006-957966</td>
+  <td class="mono"><a href="https://doi.org/10.1055/S-2006-957966">DOI:10.1055/S-2006-957966</a></td>
 </tr>
 <tr>
-  <td>Papaver somniferum<br><span class="mono">NCBITaxon:3469</span></td>
+  <td>Papaver somniferum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3469">NCBITaxon:3469</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1055/S-2006-959739</td>
+  <td class="mono"><a href="https://doi.org/10.1055/S-2006-959739">DOI:10.1055/S-2006-959739</a></td>
 </tr>
 <tr>
-  <td>Papaver somniferum<br><span class="mono">NCBITaxon:3469</span></td>
+  <td>Papaver somniferum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3469">NCBITaxon:3469</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1055/S-2007-969106</td>
+  <td class="mono"><a href="https://doi.org/10.1055/S-2007-969106">DOI:10.1055/S-2007-969106</a></td>
 </tr>
 <tr>
-  <td>Papaver somniferum<br><span class="mono">NCBITaxon:3469</span></td>
+  <td>Papaver somniferum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3469">NCBITaxon:3469</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1055/S-2007-969109</td>
+  <td class="mono"><a href="https://doi.org/10.1055/S-2007-969109">DOI:10.1055/S-2007-969109</a></td>
 </tr>
 <tr>
-  <td>Papaver somniferum<br><span class="mono">NCBITaxon:3469</span></td>
+  <td>Papaver somniferum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3469">NCBITaxon:3469</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1073/PNAS.95.4.1601</td>
+  <td class="mono"><a href="https://doi.org/10.1073/PNAS.95.4.1601">DOI:10.1073/PNAS.95.4.1601</a></td>
 </tr>
 <tr>
-  <td>Papaver somniferum<br><span class="mono">NCBITaxon:3469</span></td>
+  <td>Papaver somniferum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3469">NCBITaxon:3469</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1126/SCIENCE.1220757</td>
+  <td class="mono"><a href="https://doi.org/10.1126/SCIENCE.1220757">DOI:10.1126/SCIENCE.1220757</a></td>
 </tr>
 <tr>
-  <td>Papaver somniferum<br><span class="mono">NCBITaxon:3469</span></td>
+  <td>Papaver somniferum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3469">NCBITaxon:3469</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1515/ZNC-1984-9-1004</td>
+  <td class="mono"><a href="https://doi.org/10.1515/ZNC-1984-9-1004">DOI:10.1515/ZNC-1984-9-1004</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0001325</td>
-  <td>Papaver somniferum<br><span class="mono">NCBITaxon:3469</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001325">mibig:BGC0001325</a></td>
+  <td>Papaver somniferum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3469">NCBITaxon:3469</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
   <td class="mono">genbank:MIBIG.BGC0001325.1</td>
@@ -217,20 +219,20 @@ isolation report left it.</p>
 <h2>Biosynthesis <span class="tag causal">curated</span></h2>
 <p class="sub">Written by a curator with claim-level evidence on each step; not
 derived from a source. This is what the rest of the record exists to support.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthesis steps"><table>
 <tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
 <tr>
   <td>1</td>
-  <td>PsSDR1 noscapine synthase<br><span class="mono">UniProtKB:I3PLR3</span></td>
-  <td class="mono">RHEA:57404</td>
-  <td class="mono">CHEBI:141667 + CHEBI:57540 &rarr; CHEBI:73237 + CHEBI:57945 + CHEBI:15378</td>
-  <td class="mono">DOI:10.1038/ncomms12137</td>
+  <td>PsSDR1 noscapine synthase<br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/I3PLR3/entry">UniProtKB:I3PLR3</a></span></td>
+  <td class="mono"><a href="https://www.rhea-db.org/rhea/57404">RHEA:57404</a></td>
+  <td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_141667">CHEBI:141667</a> + <a href="http://purl.obolibrary.org/obo/CHEBI_57540">CHEBI:57540</a> &rarr; <a href="http://purl.obolibrary.org/obo/CHEBI_73237">CHEBI:73237</a> + <a href="http://purl.obolibrary.org/obo/CHEBI_57945">CHEBI:57945</a> + <a href="http://purl.obolibrary.org/obo/CHEBI_15378">CHEBI:15378</a></td>
+  <td class="mono"><a href="https://doi.org/10.1038/ncomms12137">DOI:10.1038/ncomms12137</a></td>
 </tr>
 </table></div>
 <p class="sub">Step 1: Papaver somniferum PsSDR1 oxidizes narcotine hemiacetal with NAD(+) to noscapine, NADH and H(+). This terminal SDR1 step records RHEA:57404 and leaves the upstream PsMT2/PsMT3 and PsCXE1 formation of narcotine hemiacetal unexpanded.</p>
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for (−)-noscapine">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for (−)-noscapine">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -263,16 +265,16 @@ derived from a source. This is what the rest of the record exists to support.</p
 </div>
 
 <h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
-<p class="sub">Papaver somniferum PsSDR1 oxidizes narcotine hemiacetal to noscapine in the late noscapine biosynthetic pathway.</p><div class="scroll"><table>
+<p class="sub">Papaver somniferum PsSDR1 oxidizes narcotine hemiacetal to noscapine in the late noscapine biosynthetic pathway.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>narcotine hemiacetal</td>
   <td>is dehydrogenated by</td>
   <td>PsSDR1</td>
   <td>RHEA:57404 places narcotine hemiacetal on the substrate side of the SDR1/NAD(+) noscapine synthase reaction.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1038/ncomms12137<br>https://www.uniprot.org/uniprotkb/I3PLR3<br>https://www.rhea-db.org/rhea/57404</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1038/ncomms12137</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Reconstituting PsCXE1 and PsSDR1 activities</dd><dt>notes</dt><dd>Li and Smolke reconstituted Papaver somniferum PsSDR1 in engineered Saccharomyces cerevisiae strains that traverse the late noscapine pathway and form noscapine-pathway intermediates.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/I3PLR3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>Reviewed UniProtKB:I3PLR3 is the 348 aa Papaver somniferum SDR1 noscapine synthase, cross-references EMBL JQ659007 protein AFB74619.1, annotates RHEA:57404 / left-to-right RHEA:57405, and cites DOI:10.1038/ncomms12137 for catalytic activity.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.rhea-db.org/rhea/57404</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>RHEA:57404 is the narcotine hemiacetal plus NAD(+) to noscapine plus NADH plus H(+) reaction; Rhea maps this master reaction and the RHEA:57405 left-to-right direction to UniProtKB:I3PLR3 in Swiss-Prot.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1038/ncomms12137">DOI:10.1038/ncomms12137</a><br><a href="https://www.uniprot.org/uniprotkb/I3PLR3">https://www.uniprot.org/uniprotkb/I3PLR3</a><br><a href="https://www.rhea-db.org/rhea/57404">https://www.rhea-db.org/rhea/57404</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1038/ncomms12137">DOI:10.1038/ncomms12137</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Reconstituting PsCXE1 and PsSDR1 activities</dd><dt>notes</dt><dd>Li and Smolke reconstituted Papaver somniferum PsSDR1 in engineered Saccharomyces cerevisiae strains that traverse the late noscapine pathway and form noscapine-pathway intermediates.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/I3PLR3">https://www.uniprot.org/uniprotkb/I3PLR3</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>Reviewed UniProtKB:I3PLR3 is the 348 aa Papaver somniferum SDR1 noscapine synthase, cross-references EMBL JQ659007 protein AFB74619.1, annotates RHEA:57404 / left-to-right RHEA:57405, and cites <a href="https://doi.org/10.1038/ncomms12137">DOI:10.1038/ncomms12137</a> for catalytic activity.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.rhea-db.org/rhea/57404">https://www.rhea-db.org/rhea/57404</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>RHEA:57404 is the narcotine hemiacetal plus NAD(+) to noscapine plus NADH plus H(+) reaction; Rhea maps this master reaction and the RHEA:57405 left-to-right direction to UniProtKB:I3PLR3 in Swiss-Prot.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -281,9 +283,9 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>forms</td>
   <td>noscapine</td>
   <td>RHEA:57404 places noscapine on the product side of the SDR1/NAD(+) noscapine synthase reaction.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1038/ncomms12137<br>https://www.uniprot.org/uniprotkb/I3PLR3<br>https://www.rhea-db.org/rhea/57404</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1038/ncomms12137</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Reconstituting PsCXE1 and PsSDR1 activities</dd><dt>notes</dt><dd>Li and Smolke reconstituted Papaver somniferum PsSDR1 in engineered Saccharomyces cerevisiae strains that traverse the late noscapine pathway and form noscapine-pathway intermediates.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/I3PLR3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>Reviewed UniProtKB:I3PLR3 is the 348 aa Papaver somniferum SDR1 noscapine synthase, cross-references EMBL JQ659007 protein AFB74619.1, annotates RHEA:57404 / left-to-right RHEA:57405, and cites DOI:10.1038/ncomms12137 for catalytic activity.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.rhea-db.org/rhea/57404</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>RHEA:57404 is the narcotine hemiacetal plus NAD(+) to noscapine plus NADH plus H(+) reaction; Rhea maps this master reaction and the RHEA:57405 left-to-right direction to UniProtKB:I3PLR3 in Swiss-Prot.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1038/ncomms12137">DOI:10.1038/ncomms12137</a><br><a href="https://www.uniprot.org/uniprotkb/I3PLR3">https://www.uniprot.org/uniprotkb/I3PLR3</a><br><a href="https://www.rhea-db.org/rhea/57404">https://www.rhea-db.org/rhea/57404</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1038/ncomms12137">DOI:10.1038/ncomms12137</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Reconstituting PsCXE1 and PsSDR1 activities</dd><dt>notes</dt><dd>Li and Smolke reconstituted Papaver somniferum PsSDR1 in engineered Saccharomyces cerevisiae strains that traverse the late noscapine pathway and form noscapine-pathway intermediates.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/I3PLR3">https://www.uniprot.org/uniprotkb/I3PLR3</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>Reviewed UniProtKB:I3PLR3 is the 348 aa Papaver somniferum SDR1 noscapine synthase, cross-references EMBL JQ659007 protein AFB74619.1, annotates RHEA:57404 / left-to-right RHEA:57405, and cites <a href="https://doi.org/10.1038/ncomms12137">DOI:10.1038/ncomms12137</a> for catalytic activity.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.rhea-db.org/rhea/57404">https://www.rhea-db.org/rhea/57404</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>RHEA:57404 is the narcotine hemiacetal plus NAD(+) to noscapine plus NADH plus H(+) reaction; Rhea maps this master reaction and the RHEA:57405 left-to-right direction to UniProtKB:I3PLR3 in Swiss-Prot.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -294,105 +296,105 @@ by the corpus tests.</p>
 
 <h2>Bioactivities <span class="tag">25</span></h2>
 <p class="sub">Entries preserve source qualifiers, targets and evidence. Repeated assay names or values are not independent replications; inspect source detail for differences.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Bioactivities"><table>
 <tr><th>Assay</th><th>Result</th><th>Target enzyme</th><th>Source detail</th></tr>
-<tr><td>A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HepG2 cells - 32 hour</td><td>OTHER 26.8325 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1224883</summary><dl><dt>assay</dt><dd>A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HepG2 cells - 32 hour</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1224883</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1224883, deposited by 824; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
+<tr><td>A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HepG2 cells - 32 hour</td><td>OTHER 26.8325 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1224883">pubchem.aid:1224883</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HepG2 cells - 32 hour</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1224883">pubchem.aid:1224883</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1224883, deposited by 824; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>26.8325</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HepG2 cells - 40 hour</td><td>OTHER 26.8325 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1224879</summary><dl><dt>assay</dt><dd>A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HepG2 cells - 40 hour</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1224879</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1224879, deposited by 824; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
+<tr><td>A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HepG2 cells - 40 hour</td><td>OTHER 26.8325 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1224879">pubchem.aid:1224879</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HepG2 cells - 40 hour</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1224879">pubchem.aid:1224879</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1224879, deposited by 824; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>26.8325</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>A quantitative high throughput screen for small molecules that induce DNA re-replication in SW480 colon adenocarcinoma cells.</td><td>OTHER 29.0929 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:624297</summary><dl><dt>assay</dt><dd>A quantitative high throughput screen for small molecules that induce DNA re-replication in SW480 colon adenocarcinoma cells.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:624297</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_056979 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>A quantitative high throughput screen for small molecules that induce DNA re-replication in SW480 colon adenocarcinoma cells.</td><td>OTHER 29.0929 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/624297">pubchem.aid:624297</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>A quantitative high throughput screen for small molecules that induce DNA re-replication in SW480 colon adenocarcinoma cells.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/624297">pubchem.aid:624297</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_056979 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>29.0929</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>A quantitative high throughput screen for small molecules that induce DNA re-replication in SW480 colon adenocarcinoma cells.</td><td>OTHER 23.1093 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:624297</summary><dl><dt>assay</dt><dd>A quantitative high throughput screen for small molecules that induce DNA re-replication in SW480 colon adenocarcinoma cells.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:624297</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_056979 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>A quantitative high throughput screen for small molecules that induce DNA re-replication in SW480 colon adenocarcinoma cells.</td><td>OTHER 23.1093 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/624297">pubchem.aid:624297</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>A quantitative high throughput screen for small molecules that induce DNA re-replication in SW480 colon adenocarcinoma cells.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/624297">pubchem.aid:624297</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_056979 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>23.1093</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Caspase-3/7 induction in CHO-K1 cells by small molecules, qHTS cell viability counter screen</td><td>OTHER 13.3332 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1346979</summary><dl><dt>assay</dt><dd>Caspase-3/7 induction in CHO-K1 cells by small molecules, qHTS cell viability counter screen</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1346979</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1346979, deposited by 824; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Caspase-3/7 induction in CHO-K1 cells by small molecules, qHTS cell viability counter screen</td><td>OTHER 13.3332 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1346979">pubchem.aid:1346979</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Caspase-3/7 induction in CHO-K1 cells by small molecules, qHTS cell viability counter screen</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1346979">pubchem.aid:1346979</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1346979, deposited by 824; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>13.3332</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Caspase-3/7 induction in HepG2 cells by small molecules, qHTS cell viability counter screen</td><td>OTHER 14.9601 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1346981</summary><dl><dt>assay</dt><dd>Caspase-3/7 induction in HepG2 cells by small molecules, qHTS cell viability counter screen</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1346981</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1346981, deposited by 824; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Caspase-3/7 induction in HepG2 cells by small molecules, qHTS cell viability counter screen</td><td>OTHER 14.9601 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1346981">pubchem.aid:1346981</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Caspase-3/7 induction in HepG2 cells by small molecules, qHTS cell viability counter screen</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1346981">pubchem.aid:1346981</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1346981, deposited by 824; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>14.9601</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Cellular viability qHTS for adrenocortical cancer (ACC) cell line NCI-H295R</td><td>OTHER 29.0929 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1963990</summary><dl><dt>assay</dt><dd>Cellular viability qHTS for adrenocortical cancer (ACC) cell line NCI-H295R</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1963990</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963990, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
+<tr><td>Cellular viability qHTS for adrenocortical cancer (ACC) cell line NCI-H295R</td><td>OTHER 29.0929 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963990">pubchem.aid:1963990</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Cellular viability qHTS for adrenocortical cancer (ACC) cell line NCI-H295R</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963990">pubchem.aid:1963990</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963990, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>29.0929</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Cellular viability qHTS for adrenocortical cancer (ACC) cell line SW-13</td><td>OTHER 23.1093 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1963989</summary><dl><dt>assay</dt><dd>Cellular viability qHTS for adrenocortical cancer (ACC) cell line SW-13</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1963989</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963989, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
+<tr><td>Cellular viability qHTS for adrenocortical cancer (ACC) cell line SW-13</td><td>OTHER 23.1093 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963989">pubchem.aid:1963989</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Cellular viability qHTS for adrenocortical cancer (ACC) cell line SW-13</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963989">pubchem.aid:1963989</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963989, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>23.1093</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line 8505C</td><td>OTHER 23.0153 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202553</summary><dl><dt>assay</dt><dd>Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line 8505C</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202553</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202553, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
+<tr><td>Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line 8505C</td><td>OTHER 23.0153 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202553">pubchem.aid:2202553</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line 8505C</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/2202553">pubchem.aid:2202553</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202553, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>23.0153</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Cytochrome P450 Family 2 Subfamily C Member 19 (CYP2C19) small molecule antagonists: luciferase reporter qHTS assay</td><td>OTHER 1.3803 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1671197</summary><dl><dt>assay</dt><dd>Cytochrome P450 Family 2 Subfamily C Member 19 (CYP2C19) small molecule antagonists: luciferase reporter qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1671197</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671197, deposited by 824; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Cytochrome P450 Family 2 Subfamily C Member 19 (CYP2C19) small molecule antagonists: luciferase reporter qHTS assay</td><td>OTHER 1.3803 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671197">pubchem.aid:1671197</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Cytochrome P450 Family 2 Subfamily C Member 19 (CYP2C19) small molecule antagonists: luciferase reporter qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671197">pubchem.aid:1671197</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671197, deposited by 824; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>1.3803</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Cytochrome P450 Family 2 Subfamily C Member 19 (CYP2C19) small molecule antagonists: luciferase reporter qHTS assay</td><td>OTHER 1.3803 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1671197</summary><dl><dt>assay</dt><dd>Cytochrome P450 Family 2 Subfamily C Member 19 (CYP2C19) small molecule antagonists: luciferase reporter qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1671197</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671197, deposited by 824; assay type Confirmatory. Source endpoint: Potency. Target accession AAV41877 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Cytochrome P450 Family 2 Subfamily C Member 19 (CYP2C19) small molecule antagonists: luciferase reporter qHTS assay</td><td>OTHER 1.3803 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671197">pubchem.aid:1671197</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Cytochrome P450 Family 2 Subfamily C Member 19 (CYP2C19) small molecule antagonists: luciferase reporter qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671197">pubchem.aid:1671197</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671197, deposited by 824; assay type Confirmatory. Source endpoint: Potency. Target accession AAV41877 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>1.3803</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Cytochrome P450 Family 2 Subfamily C Member 9 (CYP2C9) small molecule antagonists: luciferase reporter qHTS assay</td><td>OTHER 0.8709 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1671198</summary><dl><dt>assay</dt><dd>Cytochrome P450 Family 2 Subfamily C Member 9 (CYP2C9) small molecule antagonists: luciferase reporter qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1671198</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671198, deposited by 824; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Cytochrome P450 Family 2 Subfamily C Member 9 (CYP2C9) small molecule antagonists: luciferase reporter qHTS assay</td><td>OTHER 0.8709 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671198">pubchem.aid:1671198</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Cytochrome P450 Family 2 Subfamily C Member 9 (CYP2C9) small molecule antagonists: luciferase reporter qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671198">pubchem.aid:1671198</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671198, deposited by 824; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.8709</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Cytochrome P450 Family 2 Subfamily C Member 9 (CYP2C9) small molecule antagonists: luciferase reporter qHTS assay</td><td>OTHER 0.8709 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1671198</summary><dl><dt>assay</dt><dd>Cytochrome P450 Family 2 Subfamily C Member 9 (CYP2C9) small molecule antagonists: luciferase reporter qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1671198</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671198, deposited by 824; assay type Confirmatory. Source endpoint: Potency. Target accession AGS09764 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Cytochrome P450 Family 2 Subfamily C Member 9 (CYP2C9) small molecule antagonists: luciferase reporter qHTS assay</td><td>OTHER 0.8709 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671198">pubchem.aid:1671198</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Cytochrome P450 Family 2 Subfamily C Member 9 (CYP2C9) small molecule antagonists: luciferase reporter qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671198">pubchem.aid:1671198</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671198, deposited by 824; assay type Confirmatory. Source endpoint: Potency. Target accession AGS09764 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.8709</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Cytochrome P450 Family 2 Subfamily D Member 6 (CYP2D6) small molecule antagonists: luciferase reporter qHTS assay</td><td>OTHER 10.964 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1671196</summary><dl><dt>assay</dt><dd>Cytochrome P450 Family 2 Subfamily D Member 6 (CYP2D6) small molecule antagonists: luciferase reporter qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1671196</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671196, deposited by 824; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Cytochrome P450 Family 2 Subfamily D Member 6 (CYP2D6) small molecule antagonists: luciferase reporter qHTS assay</td><td>OTHER 10.964 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671196">pubchem.aid:1671196</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Cytochrome P450 Family 2 Subfamily D Member 6 (CYP2D6) small molecule antagonists: luciferase reporter qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671196">pubchem.aid:1671196</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671196, deposited by 824; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>10.964</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Cytochrome P450 Family 2 Subfamily D Member 6 (CYP2D6) small molecule antagonists: luciferase reporter qHTS assay</td><td>OTHER 10.964 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1671196</summary><dl><dt>assay</dt><dd>Cytochrome P450 Family 2 Subfamily D Member 6 (CYP2D6) small molecule antagonists: luciferase reporter qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1671196</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671196, deposited by 824; assay type Confirmatory. Source endpoint: Potency. Target accession ANW61984 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Cytochrome P450 Family 2 Subfamily D Member 6 (CYP2D6) small molecule antagonists: luciferase reporter qHTS assay</td><td>OTHER 10.964 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671196">pubchem.aid:1671196</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Cytochrome P450 Family 2 Subfamily D Member 6 (CYP2D6) small molecule antagonists: luciferase reporter qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671196">pubchem.aid:1671196</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671196, deposited by 824; assay type Confirmatory. Source endpoint: Potency. Target accession ANW61984 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>10.964</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Cytochrome P450 Family 3 Subfamily A Member 4 (CYP3A4) small molecule antagonists: luciferase reporter qHTS assay</td><td>OTHER 0.6918 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1671201</summary><dl><dt>assay</dt><dd>Cytochrome P450 Family 3 Subfamily A Member 4 (CYP3A4) small molecule antagonists: luciferase reporter qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1671201</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671201, deposited by 824; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Cytochrome P450 Family 3 Subfamily A Member 4 (CYP3A4) small molecule antagonists: luciferase reporter qHTS assay</td><td>OTHER 0.6918 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671201">pubchem.aid:1671201</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Cytochrome P450 Family 3 Subfamily A Member 4 (CYP3A4) small molecule antagonists: luciferase reporter qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671201">pubchem.aid:1671201</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671201, deposited by 824; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.6918</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Cytochrome P450 Family 3 Subfamily A Member 4 (CYP3A4) small molecule antagonists: luciferase reporter qHTS assay</td><td>OTHER 0.6918 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1671201</summary><dl><dt>assay</dt><dd>Cytochrome P450 Family 3 Subfamily A Member 4 (CYP3A4) small molecule antagonists: luciferase reporter qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1671201</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671201, deposited by 824; assay type Confirmatory. Source endpoint: Potency. Target accession ABI96208 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Cytochrome P450 Family 3 Subfamily A Member 4 (CYP3A4) small molecule antagonists: luciferase reporter qHTS assay</td><td>OTHER 0.6918 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671201">pubchem.aid:1671201</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Cytochrome P450 Family 3 Subfamily A Member 4 (CYP3A4) small molecule antagonists: luciferase reporter qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671201">pubchem.aid:1671201</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671201, deposited by 824; assay type Confirmatory. Source endpoint: Potency. Target accession ABI96208 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.6918</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Cytochrome P450 family 2 subfamily C member 9 (CYP2C9) small molecule antagonists: luciferase cell-based qHTS assay</td><td>OTHER 0.1096 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1645842</summary><dl><dt>assay</dt><dd>Cytochrome P450 family 2 subfamily C member 9 (CYP2C9) small molecule antagonists: luciferase cell-based qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645842</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645842, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession QLI62812 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Cytochrome P450 family 2 subfamily C member 9 (CYP2C9) small molecule antagonists: luciferase cell-based qHTS assay</td><td>OTHER 0.1096 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645842">pubchem.aid:1645842</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Cytochrome P450 family 2 subfamily C member 9 (CYP2C9) small molecule antagonists: luciferase cell-based qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645842">pubchem.aid:1645842</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645842, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession QLI62812 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.1096</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Cytochrome P450 family 2 subfamily D member 6 (CYP2D6) small molecule antagonists: luciferase cell-based qHTS assay</td><td>OTHER 4.8975 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1645840</summary><dl><dt>assay</dt><dd>Cytochrome P450 family 2 subfamily D member 6 (CYP2D6) small molecule antagonists: luciferase cell-based qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645840</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645840, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession ANW61984 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Cytochrome P450 family 2 subfamily D member 6 (CYP2D6) small molecule antagonists: luciferase cell-based qHTS assay</td><td>OTHER 4.8975 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645840">pubchem.aid:1645840</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Cytochrome P450 family 2 subfamily D member 6 (CYP2D6) small molecule antagonists: luciferase cell-based qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645840">pubchem.aid:1645840</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645840, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession ANW61984 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>4.8975</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Cytochrome P450 family 3 subfamily A member 4 (CYP3A4) small molecule antagonists: luciferase cell-based qHTS assay</td><td>OTHER 0.4365 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1645841</summary><dl><dt>assay</dt><dd>Cytochrome P450 family 3 subfamily A member 4 (CYP3A4) small molecule antagonists: luciferase cell-based qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645841</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645841, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession ABI96208 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Cytochrome P450 family 3 subfamily A member 4 (CYP3A4) small molecule antagonists: luciferase cell-based qHTS assay</td><td>OTHER 0.4365 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645841">pubchem.aid:1645841</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Cytochrome P450 family 3 subfamily A member 4 (CYP3A4) small molecule antagonists: luciferase cell-based qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1645841">pubchem.aid:1645841</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645841, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession ABI96208 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.4365</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Cytochrome P450 family 3 subfamily A member 7 (CYP3A7) small molecule antagonists: luciferase cell-based qHTS assay</td><td>OTHER 0.389 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1963596</summary><dl><dt>assay</dt><dd>Cytochrome P450 family 3 subfamily A member 7 (CYP3A7) small molecule antagonists: luciferase cell-based qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1963596</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963596, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
+<tr><td>Cytochrome P450 family 3 subfamily A member 7 (CYP3A7) small molecule antagonists: luciferase cell-based qHTS assay</td><td>OTHER 0.389 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963596">pubchem.aid:1963596</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Cytochrome P450 family 3 subfamily A member 7 (CYP3A7) small molecule antagonists: luciferase cell-based qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963596">pubchem.aid:1963596</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963596, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.389</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Cytochrome P450 family 3 subfamily A member 7 (CYP3A7) small molecule antagonists: luciferase cell-based qHTS assay</td><td>OTHER 0.389 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1963596</summary><dl><dt>assay</dt><dd>Cytochrome P450 family 3 subfamily A member 7 (CYP3A7) small molecule antagonists: luciferase cell-based qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1963596</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963596, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession NP_000756 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Cytochrome P450 family 3 subfamily A member 7 (CYP3A7) small molecule antagonists: luciferase cell-based qHTS assay</td><td>OTHER 0.389 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963596">pubchem.aid:1963596</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Cytochrome P450 family 3 subfamily A member 7 (CYP3A7) small molecule antagonists: luciferase cell-based qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1963596">pubchem.aid:1963596</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963596, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession NP_000756 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.389</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>GF-AFC viability counterscreen for inhibitors of alpha-synuclein gene (SNCA) expression</td><td>OTHER 5.6234 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1671193</summary><dl><dt>assay</dt><dd>GF-AFC viability counterscreen for inhibitors of alpha-synuclein gene (SNCA) expression</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1671193</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671193, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
+<tr><td>GF-AFC viability counterscreen for inhibitors of alpha-synuclein gene (SNCA) expression</td><td>OTHER 5.6234 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671193">pubchem.aid:1671193</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>GF-AFC viability counterscreen for inhibitors of alpha-synuclein gene (SNCA) expression</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1671193">pubchem.aid:1671193</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671193, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>5.6234</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Human pregnane X receptor (PXR) activation by small molecules, qHTS assay</td><td>OTHER 22.3872 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1346985</summary><dl><dt>assay</dt><dd>Human pregnane X receptor (PXR) activation by small molecules, qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1346985</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1346985, deposited by 824; assay type Confirmatory. Source endpoint: Potency. Target accession ADZ17384 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Human pregnane X receptor (PXR) activation by small molecules, qHTS assay</td><td>OTHER 22.3872 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1346985">pubchem.aid:1346985</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Human pregnane X receptor (PXR) activation by small molecules, qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1346985">pubchem.aid:1346985</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1346985, deposited by 824; assay type Confirmatory. Source endpoint: Potency. Target accession ADZ17384 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>22.3872</dd><dt>units</dt><dd>uM</dd></dl>
 </details></td></tr>
-<tr><td>Human pregnane X receptor (PXR) small molecule agonists, qHTS assay</td><td>OTHER 11.8832 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1346982</summary><dl><dt>assay</dt><dd>Human pregnane X receptor (PXR) small molecule agonists, qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1346982</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1346982, deposited by 824; assay type Confirmatory. Source endpoint: Potency. Target accession ADZ17384 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>Human pregnane X receptor (PXR) small molecule agonists, qHTS assay</td><td>OTHER 11.8832 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1346982">pubchem.aid:1346982</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Human pregnane X receptor (PXR) small molecule agonists, qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1346982">pubchem.aid:1346982</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1346982, deposited by 824; assay type Confirmatory. Source endpoint: Potency. Target accession ADZ17384 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>11.8832</dd><dt>units</dt><dd>uM</dd><dt>notes</dt><dd>119 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but not written here.</dd></dl>
 </details></td></tr>
@@ -402,24 +404,34 @@ by the corpus tests.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=AKNNEGZIBPJZJG-MSOLQXFVSA-N">AntibioticMech ((−)-noscapine) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=CHEBI%3A73237">MediaIngredientMech (CHEBI:73237) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A3469">TaxonMech: Papaver somniferum (NCBITaxon:3469) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0001325">PathwayMech (mibig:BGC0001325) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q=CHEBI%3A73237">MediaIngredientMech (CHEBI:73237) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A3469">TaxonMech: Papaver somniferum (NCBITaxon:3469) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0001325">PathwayMech (mibig:BGC0001325) &nearr;</a>
 </div>
 
 
+<h2 id="curation-history">Curation history <span class="tag">6</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-13T10:42:33Z">2026-10-13T10:42:33Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-10-13T07:36:32Z)</span><p>Seeded from the committed inventories and curation tables.</p></li>
+<li><time datetime="2026-09-30T23:47:37Z">2026-09-30T23:47:37Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added a RHEA-grounded PsSDR1 biosynthetic pathway step and causal graph for oxidizing narcotine hemiacetal to noscapine; grounded PsSDR1 to exact Papaver somniferum UniProtKB:I3PLR3.</p></li>
+<li><time datetime="2026-09-25T03:01:26Z">2026-09-25T03:01:26Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(3 identical runs since 2026-09-10T05:54:03Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
+
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0001325</td><td>MIBIG</td><td>3</td></tr>
-<tr><td class="mono">CHEBI:73237</td><td>CHEBI</td><td>3-star</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0001325">BGC0001325</a></td><td>MIBIG</td><td>3</td></tr>
+<tr><td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_73237">CHEBI:73237</a></td><td>CHEBI</td><td>3-star</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/alkaloids/noscapine.yaml">data/natural_products/alkaloids/noscapine.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20CHEBI%3A73237&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Falkaloids%2Fnoscapine.html">Report a problem with this record</a>: opens a GitHub issue that names CHEBI:73237 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Record last updated 2026-10-13 10:42 UTC, its latest curation event. Generated from the committed corpus. Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

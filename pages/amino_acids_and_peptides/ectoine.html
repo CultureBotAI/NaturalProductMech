@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Amino acids and peptides</a> &middot; ectoine</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>ectoine</h1>
-<p class="sub"><span class="mono">naturalproductmech:mibig-a51c74b16d</span>
+<p class="sub"><span class="mono"><a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/amino_acids_and_peptides/ectoine.yaml">naturalproductmech:mibig-a51c74b16d</a></span>
   <span class="tag">REVIEW_NEEDED</span>
   <span class="tag">SEEDED</span>
 </p>
 <div class="note"><strong>Grounding review:</strong> This structure matches more than one 3-star ChEBI entry: CHEBI:27592, CHEBI:58515. ChEBI keeps such entries separate on purpose — a compound and its zwitterion share an InChIKey — so the identity is not picked here. A curator decides which term this record is.</div><details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/amino_acids_and_peptides/ectoine.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/amino_acids_and_peptides/ectoine.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">WQXNXVUDBPYKBA-YFKPBYRVSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">CC1=NCC[C@H](N1)C(=O)O</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">pubchem:126041, npatlas:NPA024861</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/compound/126041">pubchem:126041</a>, <a href="https://www.npatlas.org/explore/compounds/NPA024861">npatlas:NPA024861</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Amino acids and peptides</a> —
@@ -57,224 +59,224 @@ other, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Sporosarcina pasteurii<br><span class="mono">NCBITaxon:1474</span></td>
+  <td>Sporosarcina pasteurii<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1474">NCBITaxon:1474</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0000852</td>
-  <td><span class="mono">PMID:11823218</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000852">mibig:BGC0000852</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/11823218/">PMID:11823218</a></span></td>
 </tr>
 <tr>
-  <td>Streptomyces anulatus<br><span class="mono">NCBITaxon:1892</span></td>
+  <td>Streptomyces anulatus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1892">NCBITaxon:1892</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0000853</td>
-  <td><span class="mono">PMID:15128576</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000853">mibig:BGC0000853</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/15128576/">PMID:15128576</a></span></td>
 </tr>
 <tr>
-  <td>Methylomicrobium alcaliphilum 20Z<br><span class="mono">NCBITaxon:1091494</span></td>
+  <td>Methylomicrobium alcaliphilum 20Z<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1091494">NCBITaxon:1091494</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0000854</td>
-  <td><span class="mono">PMID:16283251</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000854">mibig:BGC0000854</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/16283251/">PMID:16283251</a></span></td>
 </tr>
 <tr>
-  <td>Methylomicrobium kenyense<br><span class="mono">NCBITaxon:269709</span></td>
+  <td>Methylomicrobium kenyense<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=269709">NCBITaxon:269709</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0000855</td>
-  <td><span class="mono">DOI:10.1007/s00792-011-0396-x</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000855">mibig:BGC0000855</a></td>
+  <td><span class="mono"><a href="https://doi.org/10.1007/s00792-011-0396-x">DOI:10.1007/s00792-011-0396-x</a></span></td>
 </tr>
 <tr>
-  <td>Methylophaga thalassica<br><span class="mono">NCBITaxon:40223</span></td>
+  <td>Methylophaga thalassica<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=40223">NCBITaxon:40223</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0000856</td>
-  <td><span class="mono">DOI:10.1007/s00792-011-0396-x</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000856">mibig:BGC0000856</a></td>
+  <td><span class="mono"><a href="https://doi.org/10.1007/s00792-011-0396-x">DOI:10.1007/s00792-011-0396-x</a></span></td>
 </tr>
 <tr>
-  <td>Methylophaga alcalica<br><span class="mono">NCBITaxon:182774</span></td>
+  <td>Methylophaga alcalica<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=182774">NCBITaxon:182774</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0000857</td>
-  <td><span class="mono">PMID:19897647</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000857">mibig:BGC0000857</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/19897647/">PMID:19897647</a></span></td>
 </tr>
 <tr>
-  <td>Methylobacter marinus<br><span class="mono">NCBITaxon:34058</span></td>
+  <td>Methylobacter marinus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=34058">NCBITaxon:34058</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0000858</td>
-  <td><span class="mono">DOI:10.1007/s00792-011-0396-x</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000858">mibig:BGC0000858</a></td>
+  <td><span class="mono"><a href="https://doi.org/10.1007/s00792-011-0396-x">DOI:10.1007/s00792-011-0396-x</a></span></td>
 </tr>
 <tr>
-  <td>Methylomicrobium alcaliphilum<br><span class="mono">NCBITaxon:271065</span></td>
+  <td>Methylomicrobium alcaliphilum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=271065">NCBITaxon:271065</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0000859</td>
-  <td><span class="mono">DOI:10.1007/s00792-011-0396-x</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000859">mibig:BGC0000859</a></td>
+  <td><span class="mono"><a href="https://doi.org/10.1007/s00792-011-0396-x">DOI:10.1007/s00792-011-0396-x</a></span></td>
 </tr>
 <tr>
-  <td>Methylarcula marina<br><span class="mono">NCBITaxon:72022</span></td>
+  <td>Methylarcula marina<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=72022">NCBITaxon:72022</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0000860</td>
-  <td><span class="mono">DOI:10.1007/s00792-011-0396-x</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000860">mibig:BGC0000860</a></td>
+  <td><span class="mono"><a href="https://doi.org/10.1007/s00792-011-0396-x">DOI:10.1007/s00792-011-0396-x</a></span></td>
 </tr>
 <tr>
-  <td>Streptomyces sp.<br><span class="mono">NCBITaxon:1931</span></td>
+  <td>Streptomyces sp.<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1931">NCBITaxon:1931</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0002052</td>
-  <td><span class="mono">PMID:33712632</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002052">mibig:BGC0002052</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/33712632/">PMID:33712632</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">15</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Ectothiorhodospira<br><span class="mono">NCBITaxon:1051</span></td>
+  <td>Ectothiorhodospira<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1051">NCBITaxon:1051</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1111/J.1432-1033.1985.TB08903.X</td>
+  <td class="mono"><a href="https://doi.org/10.1111/J.1432-1033.1985.TB08903.X">DOI:10.1111/J.1432-1033.1985.TB08903.X</a></td>
 </tr>
 <tr>
-  <td>Halorhodospira halochloris<br><span class="mono">NCBITaxon:1052</span></td>
+  <td>Halorhodospira halochloris<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1052">NCBITaxon:1052</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1111/J.1432-1033.1985.TB08903.X</td>
+  <td class="mono"><a href="https://doi.org/10.1111/J.1432-1033.1985.TB08903.X">DOI:10.1111/J.1432-1033.1985.TB08903.X</a></td>
 </tr>
 <tr>
-  <td>Streptomyces<br><span class="mono">NCBITaxon:1883</span></td>
+  <td>Streptomyces<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1883">NCBITaxon:1883</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1038/S41598-021-84833-2</td>
+  <td class="mono"><a href="https://doi.org/10.1038/S41598-021-84833-2">DOI:10.1038/S41598-021-84833-2</a></td>
 </tr>
 <tr>
-  <td>Phaseolus vulgaris<br><span class="mono">NCBITaxon:3885</span></td>
+  <td>Phaseolus vulgaris<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3885">NCBITaxon:3885</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.3390/IJMS19041049</td>
+  <td class="mono"><a href="https://doi.org/10.3390/IJMS19041049">DOI:10.3390/IJMS19041049</a></td>
 </tr>
 <tr>
-  <td>Phaseolus vulgaris<br><span class="mono">NCBITaxon:3885</span></td>
+  <td>Phaseolus vulgaris<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3885">NCBITaxon:3885</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.3390/METABO4030599</td>
+  <td class="mono"><a href="https://doi.org/10.3390/METABO4030599">DOI:10.3390/METABO4030599</a></td>
 </tr>
 <tr>
-  <td>Streptomyces nodosus<br><span class="mono">NCBITaxon:40318</span></td>
+  <td>Streptomyces nodosus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=40318">NCBITaxon:40318</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/S00253-015-7060-9</td>
+  <td class="mono"><a href="https://doi.org/10.1007/S00253-015-7060-9">DOI:10.1007/S00253-015-7060-9</a></td>
 </tr>
 <tr>
-  <td>Streptomyces collinus<br><span class="mono">NCBITaxon:42684</span></td>
+  <td>Streptomyces collinus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=42684">NCBITaxon:42684</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/S10295-015-1685-7</td>
+  <td class="mono"><a href="https://doi.org/10.1007/S10295-015-1685-7">DOI:10.1007/S10295-015-1685-7</a></td>
 </tr>
 <tr>
-  <td>Streptomyces lydicus<br><span class="mono">NCBITaxon:47763</span></td>
+  <td>Streptomyces lydicus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=47763">NCBITaxon:47763</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1038/SREP44786</td>
+  <td class="mono"><a href="https://doi.org/10.1038/SREP44786">DOI:10.1038/SREP44786</a></td>
 </tr>
 <tr>
-  <td>Streptomyces spectabilis<br><span class="mono">NCBITaxon:68270</span></td>
+  <td>Streptomyces spectabilis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=68270">NCBITaxon:68270</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/S10295-019-02172-8</td>
+  <td class="mono"><a href="https://doi.org/10.1007/S10295-019-02172-8">DOI:10.1007/S10295-019-02172-8</a></td>
 </tr>
 <tr>
-  <td>Methylomicrobium kenyense<br><span class="mono">NCBITaxon:269709</span></td>
+  <td>Methylomicrobium kenyense<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=269709">NCBITaxon:269709</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/S00792-011-0396-X</td>
+  <td class="mono"><a href="https://doi.org/10.1007/S00792-011-0396-X">DOI:10.1007/S00792-011-0396-X</a></td>
 </tr>
 <tr>
-  <td>Methylomicrobium alcaliphilum<br><span class="mono">NCBITaxon:271065</span></td>
+  <td>Methylomicrobium alcaliphilum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=271065">NCBITaxon:271065</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/S00203-005-0042-Z</td>
+  <td class="mono"><a href="https://doi.org/10.1007/S00203-005-0042-Z">DOI:10.1007/S00203-005-0042-Z</a></td>
 </tr>
 <tr>
-  <td>Methylomicrobium alcaliphilum<br><span class="mono">NCBITaxon:271065</span></td>
+  <td>Methylomicrobium alcaliphilum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=271065">NCBITaxon:271065</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/S00792-011-0396-X</td>
+  <td class="mono"><a href="https://doi.org/10.1007/S00792-011-0396-X">DOI:10.1007/S00792-011-0396-X</a></td>
 </tr>
 <tr>
-  <td>Methylobacter marinus<br><span class="mono">NCBITaxon:34058</span></td>
+  <td>Methylobacter marinus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=34058">NCBITaxon:34058</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/S00792-011-0396-X</td>
+  <td class="mono"><a href="https://doi.org/10.1007/S00792-011-0396-X">DOI:10.1007/S00792-011-0396-X</a></td>
 </tr>
 <tr>
-  <td>Methylophaga thalassica<br><span class="mono">NCBITaxon:40223</span></td>
+  <td>Methylophaga thalassica<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=40223">NCBITaxon:40223</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/S00792-011-0396-X</td>
+  <td class="mono"><a href="https://doi.org/10.1007/S00792-011-0396-X">DOI:10.1007/S00792-011-0396-X</a></td>
 </tr>
 <tr>
-  <td>Methylarcula marina<br><span class="mono">NCBITaxon:72022</span></td>
+  <td>Methylarcula marina<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=72022">NCBITaxon:72022</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1007/S00792-011-0396-X</td>
+  <td class="mono"><a href="https://doi.org/10.1007/S00792-011-0396-X">DOI:10.1007/S00792-011-0396-X</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">10</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0000852</td>
-  <td>Sporosarcina pasteurii<br><span class="mono">NCBITaxon:1474</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000852">mibig:BGC0000852</a></td>
+  <td>Sporosarcina pasteurii<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1474">NCBITaxon:1474</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:AF316874.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AF316874.1">genbank:AF316874.1</a></td>
 </tr>
 <tr>
-  <td class="mono">mibig:BGC0000853</td>
-  <td>Streptomyces anulatus<br><span class="mono">NCBITaxon:1892</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000853">mibig:BGC0000853</a></td>
+  <td>Streptomyces anulatus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1892">NCBITaxon:1892</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:AY524544.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AY524544.1">genbank:AY524544.1</a></td>
 </tr>
 <tr>
-  <td class="mono">mibig:BGC0000854</td>
-  <td>Methylomicrobium alcaliphilum 20Z<br><span class="mono">NCBITaxon:1091494</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000854">mibig:BGC0000854</a></td>
+  <td>Methylomicrobium alcaliphilum 20Z<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1091494">NCBITaxon:1091494</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:DQ016501.2</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/DQ016501.2">genbank:DQ016501.2</a></td>
 </tr>
 <tr>
-  <td class="mono">mibig:BGC0000855</td>
-  <td>Methylomicrobium kenyense<br><span class="mono">NCBITaxon:269709</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000855">mibig:BGC0000855</a></td>
+  <td>Methylomicrobium kenyense<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=269709">NCBITaxon:269709</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:DQ238213.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/DQ238213.1">genbank:DQ238213.1</a></td>
 </tr>
 <tr>
-  <td class="mono">mibig:BGC0000856</td>
-  <td>Methylophaga thalassica<br><span class="mono">NCBITaxon:40223</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000856">mibig:BGC0000856</a></td>
+  <td>Methylophaga thalassica<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=40223">NCBITaxon:40223</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:EU315062.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/EU315062.1">genbank:EU315062.1</a></td>
 </tr>
 <tr>
-  <td class="mono">mibig:BGC0000857</td>
-  <td>Methylophaga alcalica<br><span class="mono">NCBITaxon:182774</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000857">mibig:BGC0000857</a></td>
+  <td>Methylophaga alcalica<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=182774">NCBITaxon:182774</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:EU315063.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/EU315063.1">genbank:EU315063.1</a></td>
 </tr>
 <tr>
-  <td class="mono">mibig:BGC0000858</td>
-  <td>Methylobacter marinus<br><span class="mono">NCBITaxon:34058</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000858">mibig:BGC0000858</a></td>
+  <td>Methylobacter marinus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=34058">NCBITaxon:34058</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:EU523734.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/EU523734.1">genbank:EU523734.1</a></td>
 </tr>
 <tr>
-  <td class="mono">mibig:BGC0000859</td>
-  <td>Methylomicrobium alcaliphilum<br><span class="mono">NCBITaxon:271065</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000859">mibig:BGC0000859</a></td>
+  <td>Methylomicrobium alcaliphilum<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=271065">NCBITaxon:271065</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:EU523735.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/EU523735.1">genbank:EU523735.1</a></td>
 </tr>
 <tr>
-  <td class="mono">mibig:BGC0000860</td>
-  <td>Methylarcula marina<br><span class="mono">NCBITaxon:72022</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000860">mibig:BGC0000860</a></td>
+  <td>Methylarcula marina<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=72022">NCBITaxon:72022</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:GU249592.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/GU249592.1">genbank:GU249592.1</a></td>
 </tr>
 <tr>
-  <td class="mono">mibig:BGC0002052</td>
-  <td>Streptomyces sp.<br><span class="mono">NCBITaxon:1931</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002052">mibig:BGC0002052</a></td>
+  <td>Streptomyces sp.<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1931">NCBITaxon:1931</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:MT149902.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/MT149902.1">genbank:MT149902.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -284,20 +286,20 @@ isolation report left it.</p>
 <h2>Biosynthesis <span class="tag causal">curated</span></h2>
 <p class="sub">Written by a curator with claim-level evidence on each step; not
 derived from a source. This is what the rest of the record exists to support.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthesis steps"><table>
 <tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
 <tr>
   <td>1</td>
-  <td>ThpC ectoine synthase<br><span class="mono">UniProtKB:Q6QUY8</span></td>
-  <td class="mono">RHEA:17281</td>
-  <td class="mono">CHEBI:58929 &rarr; CHEBI:58515</td>
-  <td class="mono">DOI:10.1128/AEM.70.5.3130-3132.2004</td>
+  <td>ThpC ectoine synthase<br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q6QUY8/entry">UniProtKB:Q6QUY8</a></span></td>
+  <td class="mono"><a href="https://www.rhea-db.org/rhea/17281">RHEA:17281</a></td>
+  <td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_58929">CHEBI:58929</a> &rarr; <a href="http://purl.obolibrary.org/obo/CHEBI_58515">CHEBI:58515</a></td>
+  <td class="mono"><a href="https://doi.org/10.1128/AEM.70.5.3130-3132.2004">DOI:10.1128/AEM.70.5.3130-3132.2004</a></td>
 </tr>
 </table></div>
 <p class="sub">Step 1: BGC0000853 thpC encodes the exact Streptomyces anulatus/Streptomyces chrysomallus protein Q6QUY8; its EctC assignment and RHEA:17281 ring-closure reaction are inferred from the ectoine_synt domain and UniProt family annotation rather than a direct ThpC enzyme assay.</p>
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for ectoine">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for ectoine">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -330,16 +332,16 @@ derived from a source. This is what the rest of the record exists to support.</p
 </div>
 
 <h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
-<p class="sub">Proposed Streptomyces anulatus/&#34;S. chrysomallus&#34; ThpC-catalyzed terminal ring closure from N-gamma-acetyl-L-2,4-diaminobutanoate to L-ectoine.</p><div class="scroll"><table>
+<p class="sub">Proposed Streptomyces anulatus/&#34;S. chrysomallus&#34; ThpC-catalyzed terminal ring closure from N-gamma-acetyl-L-2,4-diaminobutanoate to L-ectoine.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>(2S)-4-acetamido-2-aminobutanoate</td>
   <td>is cyclized by</td>
   <td>ThpC</td>
   <td>The exact BGC0000853 ThpC protein is grounded to UniProtKB:Q6QUY8, while the catalytic assignment is inferred from antiSMASH and UniProt family annotation.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AEM.70.5.3130-3132.2004<br>https://mibig.secondarymetabolites.org/repository/BGC0000853.3/<br>https://www.uniprot.org/uniprotkb/Q6QUY8</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AEM.70.5.3130-3132.2004</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>The nucleotide sequence of the thp genes from S. chrysomallus (ATCC 11523) has been deposited</dd><dt>notes</dt><dd>Prabhu et al. mapped the Streptomyces chrysomallus ectoine/hydroxyectoine thp locus and deposited GenBank AY524544; the same entry is imported by MIBiG BGC0000853 as Streptomyces anulatus.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0000853.3/</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MIBiG entry version 3 links BGC0000853 to ectoine biosynthesis from GenBank AY524544; the antiSMASH GenBank export annotates the AY524544 protein AAS02096.1 as thpC, ectoine cyclase.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q6QUY8</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q6QUY8 is the Streptomyces anulatus (Streptomyces chrysomallus) ectC/thpC gene product cross-referenced to EMBL AY524544 protein AAS02096.1; UniProt annotates the RHEA:17281 ectoine synthase activity by homology.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/AEM.70.5.3130-3132.2004">DOI:10.1128/AEM.70.5.3130-3132.2004</a><br><a href="https://mibig.secondarymetabolites.org/repository/BGC0000853.3/">https://mibig.secondarymetabolites.org/repository/BGC0000853.3/</a><br><a href="https://www.uniprot.org/uniprotkb/Q6QUY8">https://www.uniprot.org/uniprotkb/Q6QUY8</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AEM.70.5.3130-3132.2004">DOI:10.1128/AEM.70.5.3130-3132.2004</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>The nucleotide sequence of the thp genes from S. chrysomallus (ATCC 11523) has been deposited</dd><dt>notes</dt><dd>Prabhu et al. mapped the Streptomyces chrysomallus ectoine/hydroxyectoine thp locus and deposited GenBank AY524544; the same entry is imported by MIBiG BGC0000853 as Streptomyces anulatus.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/repository/BGC0000853.3/">https://mibig.secondarymetabolites.org/repository/BGC0000853.3/</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MIBiG entry version 3 links BGC0000853 to ectoine biosynthesis from GenBank AY524544; the antiSMASH GenBank export annotates the AY524544 protein AAS02096.1 as thpC, ectoine cyclase.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q6QUY8">https://www.uniprot.org/uniprotkb/Q6QUY8</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q6QUY8 is the Streptomyces anulatus (Streptomyces chrysomallus) ectC/thpC gene product cross-referenced to EMBL AY524544 protein AAS02096.1; UniProt annotates the RHEA:17281 ectoine synthase activity by homology.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -348,9 +350,9 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>forms</td>
   <td>L-ectoine</td>
   <td>RHEA:17281 forms the CHEBI:58515 zwitterion; this record keeps a minted identifier because ChEBI:27592 and CHEBI:58515 intentionally share an InChIKey.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AEM.70.5.3130-3132.2004<br>https://mibig.secondarymetabolites.org/repository/BGC0000853.3/<br>https://www.uniprot.org/uniprotkb/Q6QUY8</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AEM.70.5.3130-3132.2004</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>The nucleotide sequence of the thp genes from S. chrysomallus (ATCC 11523) has been deposited</dd><dt>notes</dt><dd>Prabhu et al. mapped the Streptomyces chrysomallus ectoine/hydroxyectoine thp locus and deposited GenBank AY524544; the same entry is imported by MIBiG BGC0000853 as Streptomyces anulatus.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0000853.3/</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MIBiG entry version 3 links BGC0000853 to ectoine biosynthesis from GenBank AY524544; the antiSMASH GenBank export annotates the AY524544 protein AAS02096.1 as thpC, ectoine cyclase.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q6QUY8</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q6QUY8 is the Streptomyces anulatus (Streptomyces chrysomallus) ectC/thpC gene product cross-referenced to EMBL AY524544 protein AAS02096.1; UniProt annotates the RHEA:17281 ectoine synthase activity by homology.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/AEM.70.5.3130-3132.2004">DOI:10.1128/AEM.70.5.3130-3132.2004</a><br><a href="https://mibig.secondarymetabolites.org/repository/BGC0000853.3/">https://mibig.secondarymetabolites.org/repository/BGC0000853.3/</a><br><a href="https://www.uniprot.org/uniprotkb/Q6QUY8">https://www.uniprot.org/uniprotkb/Q6QUY8</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AEM.70.5.3130-3132.2004">DOI:10.1128/AEM.70.5.3130-3132.2004</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>The nucleotide sequence of the thp genes from S. chrysomallus (ATCC 11523) has been deposited</dd><dt>notes</dt><dd>Prabhu et al. mapped the Streptomyces chrysomallus ectoine/hydroxyectoine thp locus and deposited GenBank AY524544; the same entry is imported by MIBiG BGC0000853 as Streptomyces anulatus.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/repository/BGC0000853.3/">https://mibig.secondarymetabolites.org/repository/BGC0000853.3/</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MIBiG entry version 3 links BGC0000853 to ectoine biosynthesis from GenBank AY524544; the antiSMASH GenBank export annotates the AY524544 protein AAS02096.1 as thpC, ectoine cyclase.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q6QUY8">https://www.uniprot.org/uniprotkb/Q6QUY8</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>Reviewed UniProtKB:Q6QUY8 is the Streptomyces anulatus (Streptomyces chrysomallus) ectC/thpC gene product cross-referenced to EMBL AY524544 protein AAS02096.1; UniProt annotates the RHEA:17281 ectoine synthase activity by homology.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -358,16 +360,16 @@ derived from a source. This is what the rest of the record exists to support.</p
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 6 edges</span></h2>
-<p class="sub">Separate proposed upstream ectoine context for native-reference ThpB and ThpA. Reviewed UniProt function and pathway annotations infer transamination then acetylation by homology. This is not a direct individual-protein assay or reconstitution. The existing ThpC terminal graph and partial pathway list remain unchanged; no cross-graph local edge, physical assembly, full-pathway sufficiency or exact owner microspecies identity is inferred.</p><div class="scroll"><table>
+<p class="sub">Separate proposed upstream ectoine context for native-reference ThpB and ThpA. Reviewed UniProt function and pathway annotations infer transamination then acetylation by homology. This is not a direct individual-protein assay or reconstitution. The existing ThpC terminal graph and partial pathway list remain unchanged; no cross-graph local edge, physical assembly, full-pathway sufficiency or exact owner microspecies identity is inferred.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 2 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>ThpB native reference, homology-assigned function</td>
   <td>is_database_proposed_catalyst_of</td>
   <td>Database-proposed ThpB transamination</td>
   <td>Function is ECO0000250, not an independently inspected ThpB experiment. UniProt PLP annotation is by similarity and Lys271 modification is ECO0000255; no native occupancy, catalytic-site measurement or complex is adopted.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q6QUY9<br>https://www.ncbi.nlm.nih.gov/protein/AAS02095.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AY524544.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q6QUY9</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Reviewed entry78/sequence1; FUNCTION ECO0000250 and protein existence3 are inferred from homology. PATHWAY explicitly assigns ectoine biosynthesis step1/3; no native individual enzyme assay is established. PMID15128576 is the sole bibliography reference and is tagged for genomic sequence, not this protein&#39;s experimental function. The paper&#39;s ThpD expression result is not transferred here. Reaction CURIEs denote reactions, not protein identity.</dd><dt>snippet</dt><dd>Catalyzes reversively the conversion of L-aspartate beta-semialdehyde</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AAS02095.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Independent complete420-aa native AAS02095.1, genethpB; coded_by AY524544.1:698..1960, plus-strand/table11. Source S.anulatus/taxon1892, no strain qualifier. A conceptual translation, not an independent protein-level assay.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/AY524544.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Full1263-nt CDS698..1960+, codon1/table11, matches annotation, independent GenPept and reviewed Q6QUY9, all420aa; exact coded_by DNA/coordinates agree. Native source gives no strain; ATCC11523/DSM40128/JCM4296/LMG20459/NBRC15393 are UniProt bibliographic aliases, not independently sequenced historical stock. The complete3366-bp locus is not a whole genome. UniParcUPI000023B703 is an unqueried crosslink, not independent archive proof.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q6QUY9">https://www.uniprot.org/uniprotkb/Q6QUY9</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AAS02095.1">https://www.ncbi.nlm.nih.gov/protein/AAS02095.1</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/AY524544.1">https://www.ncbi.nlm.nih.gov/nuccore/AY524544.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q6QUY9">https://www.uniprot.org/uniprotkb/Q6QUY9</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Reviewed entry78/sequence1; FUNCTION ECO0000250 and protein existence3 are inferred from homology. PATHWAY explicitly assigns ectoine biosynthesis step1/3; no native individual enzyme assay is established. PMID15128576 is the sole bibliography reference and is tagged for genomic sequence, not this protein&#39;s experimental function. The paper&#39;s ThpD expression result is not transferred here. Reaction CURIEs denote reactions, not protein identity.</dd><dt>snippet</dt><dd>Catalyzes reversively the conversion of L-aspartate beta-semialdehyde</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AAS02095.1">https://www.ncbi.nlm.nih.gov/protein/AAS02095.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Independent complete420-aa native AAS02095.1, genethpB; coded_by AY524544.1:698..1960, plus-strand/table11. Source S.anulatus/taxon1892, no strain qualifier. A conceptual translation, not an independent protein-level assay.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/AY524544.1">https://www.ncbi.nlm.nih.gov/nuccore/AY524544.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Full1263-nt CDS698..1960+, codon1/table11, matches annotation, independent GenPept and reviewed Q6QUY9, all420aa; exact coded_by DNA/coordinates agree. Native source gives no strain; ATCC11523/DSM40128/JCM4296/LMG20459/NBRC15393 are UniProt bibliographic aliases, not independently sequenced historical stock. The complete3366-bp locus is not a whole genome. UniParcUPI000023B703 is an unqueried crosslink, not independent archive proof.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -376,7 +378,7 @@ by the corpus tests.</p>
   <td>is_database_proposed_substrate_of</td>
   <td>Database-proposed ThpB transamination</td>
   <td>Biosynthetic direction follows UniProt FUNCTION and PATHWAY step1/3. RHEA11160&#39;s stored equation is written in the reverse direction, and FUNCTION explicitly says reversible. No irreversible flux or assay conditions inferred; intermediate ionic form is not independently grounded.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q6QUY9</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q6QUY9</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Reviewed entry78/sequence1; FUNCTION ECO0000250 and protein existence3 are inferred from homology. PATHWAY explicitly assigns ectoine biosynthesis step1/3; no native individual enzyme assay is established. PMID15128576 is the sole bibliography reference and is tagged for genomic sequence, not this protein&#39;s experimental function. The paper&#39;s ThpD expression result is not transferred here. Reaction CURIEs denote reactions, not protein identity.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q6QUY9">https://www.uniprot.org/uniprotkb/Q6QUY9</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q6QUY9">https://www.uniprot.org/uniprotkb/Q6QUY9</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Reviewed entry78/sequence1; FUNCTION ECO0000250 and protein existence3 are inferred from homology. PATHWAY explicitly assigns ectoine biosynthesis step1/3; no native individual enzyme assay is established. PMID15128576 is the sole bibliography reference and is tagged for genomic sequence, not this protein&#39;s experimental function. The paper&#39;s ThpD expression result is not transferred here. Reaction CURIEs denote reactions, not protein identity.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -385,7 +387,7 @@ by the corpus tests.</p>
   <td>has_database_proposed_product</td>
   <td>L-2,4-diaminobutyrate, database intermediate</td>
   <td>Database-proposed DABA formation with L-glutamate as amino donor. This is not a complete stoichiometric model, measured flux, exact native substrate assay or new ectoine producer claim.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q6QUY9</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q6QUY9</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Reviewed entry78/sequence1; FUNCTION ECO0000250 and protein existence3 are inferred from homology. PATHWAY explicitly assigns ectoine biosynthesis step1/3; no native individual enzyme assay is established. PMID15128576 is the sole bibliography reference and is tagged for genomic sequence, not this protein&#39;s experimental function. The paper&#39;s ThpD expression result is not transferred here. Reaction CURIEs denote reactions, not protein identity.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q6QUY9">https://www.uniprot.org/uniprotkb/Q6QUY9</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q6QUY9">https://www.uniprot.org/uniprotkb/Q6QUY9</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Reviewed entry78/sequence1; FUNCTION ECO0000250 and protein existence3 are inferred from homology. PATHWAY explicitly assigns ectoine biosynthesis step1/3; no native individual enzyme assay is established. PMID15128576 is the sole bibliography reference and is tagged for genomic sequence, not this protein&#39;s experimental function. The paper&#39;s ThpD expression result is not transferred here. Reaction CURIEs denote reactions, not protein identity.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -394,9 +396,9 @@ by the corpus tests.</p>
   <td>is_database_proposed_catalyst_of</td>
   <td>Database-proposed ThpA acetylation</td>
   <td>FUNCTION ECO0000250 supports the proposed acetyltransferase assignment. Full native sequence correspondence grounds the reference only, not a historical construct, primary individual-enzyme assay or physical ThpA/ThpB assembly.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q6QUZ0<br>https://www.ncbi.nlm.nih.gov/protein/AAS02094.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AY524544.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q6QUZ0</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Reviewed entry63/sequence1; FUNCTION ECO0000250 and protein existence3 are inferred from homology. PATHWAY explicitly assigns ectoine biosynthesis step2/3; no native individual enzyme assay is established. PMID15128576 is the sole bibliography reference and is tagged for genomic sequence, not this protein&#39;s experimental function. The paper&#39;s ThpD expression result is not transferred here. Reaction CURIEs denote reactions, not protein identity.</dd><dt>snippet</dt><dd>Catalyzes the acetylation of L-2,4-diaminobutyrate (DABA)</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AAS02094.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Independent complete176-aa native AAS02094.1, genethpA; coded_by AY524544.1:9..539, plus-strand/table11. Source S.anulatus/taxon1892, no strain qualifier. A conceptual translation, not an independent protein-level assay.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/AY524544.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Full531-nt CDS9..539+, codon1/table11, matches annotation, independent GenPept and reviewed Q6QUZ0, all176aa; exact coded_by DNA/coordinates agree. Native source gives no strain; ATCC11523/DSM40128/JCM4296/LMG20459/NBRC15393 are UniProt bibliographic aliases, not independently sequenced historical stock. The complete3366-bp locus is not a whole genome. UniParcUPI000023B702 is an unqueried crosslink, not independent archive proof.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q6QUZ0">https://www.uniprot.org/uniprotkb/Q6QUZ0</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AAS02094.1">https://www.ncbi.nlm.nih.gov/protein/AAS02094.1</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/AY524544.1">https://www.ncbi.nlm.nih.gov/nuccore/AY524544.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q6QUZ0">https://www.uniprot.org/uniprotkb/Q6QUZ0</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Reviewed entry63/sequence1; FUNCTION ECO0000250 and protein existence3 are inferred from homology. PATHWAY explicitly assigns ectoine biosynthesis step2/3; no native individual enzyme assay is established. PMID15128576 is the sole bibliography reference and is tagged for genomic sequence, not this protein&#39;s experimental function. The paper&#39;s ThpD expression result is not transferred here. Reaction CURIEs denote reactions, not protein identity.</dd><dt>snippet</dt><dd>Catalyzes the acetylation of L-2,4-diaminobutyrate (DABA)</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AAS02094.1">https://www.ncbi.nlm.nih.gov/protein/AAS02094.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Independent complete176-aa native AAS02094.1, genethpA; coded_by AY524544.1:9..539, plus-strand/table11. Source S.anulatus/taxon1892, no strain qualifier. A conceptual translation, not an independent protein-level assay.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/AY524544.1">https://www.ncbi.nlm.nih.gov/nuccore/AY524544.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Full531-nt CDS9..539+, codon1/table11, matches annotation, independent GenPept and reviewed Q6QUZ0, all176aa; exact coded_by DNA/coordinates agree. Native source gives no strain; ATCC11523/DSM40128/JCM4296/LMG20459/NBRC15393 are UniProt bibliographic aliases, not independently sequenced historical stock. The complete3366-bp locus is not a whole genome. UniParcUPI000023B702 is an unqueried crosslink, not independent archive proof.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -405,7 +407,7 @@ by the corpus tests.</p>
   <td>is_database_proposed_substrate_of</td>
   <td>Database-proposed ThpA acetylation</td>
   <td>UniProt FUNCTION names DABA and acetyl-CoA; PATHWAY says step2/3. This order is a database assertion, not inferred from thpA/thpB genomic positions. No exact experimental substrate or ionic-form identity adopted.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q6QUZ0</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q6QUZ0</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Reviewed entry63/sequence1; FUNCTION ECO0000250 and protein existence3 are inferred from homology. PATHWAY explicitly assigns ectoine biosynthesis step2/3; no native individual enzyme assay is established. PMID15128576 is the sole bibliography reference and is tagged for genomic sequence, not this protein&#39;s experimental function. The paper&#39;s ThpD expression result is not transferred here. Reaction CURIEs denote reactions, not protein identity.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q6QUZ0">https://www.uniprot.org/uniprotkb/Q6QUZ0</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q6QUZ0">https://www.uniprot.org/uniprotkb/Q6QUZ0</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Reviewed entry63/sequence1; FUNCTION ECO0000250 and protein existence3 are inferred from homology. PATHWAY explicitly assigns ectoine biosynthesis step2/3; no native individual enzyme assay is established. PMID15128576 is the sole bibliography reference and is tagged for genomic sequence, not this protein&#39;s experimental function. The paper&#39;s ThpD expression result is not transferred here. Reaction CURIEs denote reactions, not protein identity.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -414,7 +416,7 @@ by the corpus tests.</p>
   <td>has_database_proposed_product</td>
   <td>N-gamma-acetyl-L-2,4-diaminobutyrate, database intermediate</td>
   <td>Database ADABA intermediate, not ectoine or a final product. RHEA16901 is reaction provenance only; no independently verified chemical CURIE is assigned here. The existing ThpC substrate/product graph and terminal-step list are preserved without renumbering or owner-grounding changes.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q6QUZ0</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q6QUZ0</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Reviewed entry63/sequence1; FUNCTION ECO0000250 and protein existence3 are inferred from homology. PATHWAY explicitly assigns ectoine biosynthesis step2/3; no native individual enzyme assay is established. PMID15128576 is the sole bibliography reference and is tagged for genomic sequence, not this protein&#39;s experimental function. The paper&#39;s ThpD expression result is not transferred here. Reaction CURIEs denote reactions, not protein identity.</dd></dl>
+  <td><span class="mono"><a href="https://www.uniprot.org/uniprotkb/Q6QUZ0">https://www.uniprot.org/uniprotkb/Q6QUZ0</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q6QUZ0">https://www.uniprot.org/uniprotkb/Q6QUZ0</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Reviewed entry63/sequence1; FUNCTION ECO0000250 and protein existence3 are inferred from homology. PATHWAY explicitly assigns ectoine biosynthesis step2/3; no native individual enzyme assay is established. PMID15128576 is the sole bibliography reference and is tagged for genomic sequence, not this protein&#39;s experimental function. The paper&#39;s ThpD expression result is not transferred here. Reaction CURIEs denote reactions, not protein identity.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -422,17 +424,17 @@ by the corpus tests.</p>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 4 edges</span></h2>
-<p class="sub">ThpD expression shifts the measured ectoine/hydroxyectoine balance in a heterologous host. This is an expression phenotype, not purified-enzyme kinetics. Native reference identity and chemical-form limits remain separate from causal evidence. Previously inspected extracted main text, table and captions; no successful visual figure inspection. A later figure access challenge stopped further retrieval. No new paper access, supplementary verification or raw PDF checksum claimed.</p><div class="scroll"><table>
+<p class="sub">ThpD expression shifts the measured ectoine/hydroxyectoine balance in a heterologous host. This is an expression phenotype, not purified-enzyme kinetics. Native reference identity and chemical-form limits remain separate from causal evidence. Previously inspected extracted main text, table and captions; no successful visual figure inspection. A later figure access challenge stopped further retrieval. No new paper access, supplementary verification or raw PDF checksum claimed.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 3 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>ThpD native reference</td>
   <td>was_expressed_in_context</td>
   <td>Heterologous ThpD expression</td>
   <td>The paper links the donor gene to AY524544; mapping identifies the deposited reference, not the exact historical construct.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AEM.70.5.3130-3132.2004<br>https://www.uniprot.org/uniprotkb/Q6QUY7<br>https://www.ncbi.nlm.nih.gov/protein/AAS02097.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AY524544.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AEM.70.5.3130-3132.2004</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>snippet</dt><dd>thpD gene of S. chrysomallus was actively expressed</dd><dt>notes</dt><dd>Previously inspected extracted main text, table and captions; no successful visual figure inspection. A later figure access challenge stopped further retrieval. No new paper access, supplementary verification or raw PDF checksum claimed.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q6QUY7</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Reviewed entry64/sequence1,297aa, ectD/thpD, S.anulatus (S.chrysomallus)/tax1892. Direct EMBL AY524544/AAS02097.1 crosslink and bibliography ATCC11523 aliases support reference correspondence. Protein existence is inferred from homology. FUNCTION cites PMID15128576; reaction/Rhea45740 is by homology toQ93RV9, Fe/subunit annotations toQ2TDY4, and sites toQ1GNW5/Q2TDY4. These are not transferred as measured properties.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AAS02097.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Complete independent297-aa ThpD, gene thpD, S.anulatus/tax1892; coded_by AY524544.1:2452..3345, table11. No strain qualifier in the protein source. UniParcUPI000023B705 is an unqueried UniProt crosslink, not an independently inspected archive or UniProtKB accession.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/AY524544.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Complete3366-bp source read. Full894-nt plus-strand thpD CDS2452..3345, codon1/table11, translates exactly to annotation, independent GenPept and current UniProt, all297aa. Independent coded_by DNA/coordinates match. Source gives species1892 but no strain; no invented strain qualifier, historical-stock identity or experimental functional characterization of the other thp genes.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/AEM.70.5.3130-3132.2004">DOI:10.1128/AEM.70.5.3130-3132.2004</a><br><a href="https://www.uniprot.org/uniprotkb/Q6QUY7">https://www.uniprot.org/uniprotkb/Q6QUY7</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/AAS02097.1">https://www.ncbi.nlm.nih.gov/protein/AAS02097.1</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/AY524544.1">https://www.ncbi.nlm.nih.gov/nuccore/AY524544.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AEM.70.5.3130-3132.2004">DOI:10.1128/AEM.70.5.3130-3132.2004</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>snippet</dt><dd>thpD gene of S. chrysomallus was actively expressed</dd><dt>notes</dt><dd>Previously inspected extracted main text, table and captions; no successful visual figure inspection. A later figure access challenge stopped further retrieval. No new paper access, supplementary verification or raw PDF checksum claimed.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/Q6QUY7">https://www.uniprot.org/uniprotkb/Q6QUY7</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Reviewed entry64/sequence1,297aa, ectD/thpD, S.anulatus (S.chrysomallus)/tax1892. Direct EMBL AY524544/AAS02097.1 crosslink and bibliography ATCC11523 aliases support reference correspondence. Protein existence is inferred from homology. FUNCTION cites PMID15128576; reaction/Rhea45740 is by homology toQ93RV9, Fe/subunit annotations toQ2TDY4, and sites toQ1GNW5/Q2TDY4. These are not transferred as measured properties.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/AAS02097.1">https://www.ncbi.nlm.nih.gov/protein/AAS02097.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Complete independent297-aa ThpD, gene thpD, S.anulatus/tax1892; coded_by AY524544.1:2452..3345, table11. No strain qualifier in the protein source. UniParcUPI000023B705 is an unqueried UniProt crosslink, not an independently inspected archive or UniProtKB accession.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/AY524544.1">https://www.ncbi.nlm.nih.gov/nuccore/AY524544.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Complete3366-bp source read. Full894-nt plus-strand thpD CDS2452..3345, codon1/table11, translates exactly to annotation, independent GenPept and current UniProt, all297aa. Independent coded_by DNA/coordinates match. Source gives species1892 but no strain; no invented strain qualifier, historical-stock identity or experimental functional characterization of the other thp genes.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -441,7 +443,7 @@ by the corpus tests.</p>
   <td>was_host_for</td>
   <td>Heterologous ThpD expression</td>
   <td>AD-98 is the experimental host. The article&#39;s DSM304/DSM3043 inconsistency is not silently resolved; no native host protein is substituted.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AEM.70.5.3130-3132.2004</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AEM.70.5.3130-3132.2004</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Previously inspected extracted main text, table and captions; no successful visual figure inspection. A later figure access challenge stopped further retrieval. No new paper access, supplementary verification or raw PDF checksum claimed.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/AEM.70.5.3130-3132.2004">DOI:10.1128/AEM.70.5.3130-3132.2004</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AEM.70.5.3130-3132.2004">DOI:10.1128/AEM.70.5.3130-3132.2004</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Previously inspected extracted main text, table and captions; no successful visual figure inspection. A later figure access challenge stopped further retrieval. No new paper access, supplementary verification or raw PDF checksum claimed.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -450,7 +452,7 @@ by the corpus tests.</p>
   <td>increased_relative_hplc_fraction_of</td>
   <td>Hydroxyectoine, unresolved chemical form</td>
   <td>Relative HPLC fractions versus vector control; no absolute necessity, pathway finality or new native-producer claim. The product remains ungrounded.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AEM.70.5.3130-3132.2004</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AEM.70.5.3130-3132.2004</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Previously inspected extracted main text, table and captions; no successful visual figure inspection. A later figure access challenge stopped further retrieval. No new paper access, supplementary verification or raw PDF checksum claimed.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/AEM.70.5.3130-3132.2004">DOI:10.1128/AEM.70.5.3130-3132.2004</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AEM.70.5.3130-3132.2004">DOI:10.1128/AEM.70.5.3130-3132.2004</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Previously inspected extracted main text, table and captions; no successful visual figure inspection. A later figure access challenge stopped further retrieval. No new paper access, supplementary verification or raw PDF checksum claimed.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -459,7 +461,7 @@ by the corpus tests.</p>
   <td>decreased_relative_hplc_fraction_of</td>
   <td>Ectoine, source-named pool with unresolved protonation</td>
   <td>No exact microspecies identifier is selected for the assay-named pool. The owner&#39;s neutral/zwitterionic ambiguity stays REVIEW_NEEDED; no pH/speciation conclusion.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AEM.70.5.3130-3132.2004</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AEM.70.5.3130-3132.2004</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Previously inspected extracted main text, table and captions; no successful visual figure inspection. A later figure access challenge stopped further retrieval. No new paper access, supplementary verification or raw PDF checksum claimed.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1128/AEM.70.5.3130-3132.2004">DOI:10.1128/AEM.70.5.3130-3132.2004</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1128/AEM.70.5.3130-3132.2004">DOI:10.1128/AEM.70.5.3130-3132.2004</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Previously inspected extracted main text, table and captions; no successful visual figure inspection. A later figure access challenge stopped further retrieval. No new paper access, supplementary verification or raw PDF checksum claimed.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -470,60 +472,72 @@ by the corpus tests.</p>
 
 <h2>Bioactivities <span class="tag">2</span></h2>
 <p class="sub">Entries preserve source qualifiers, targets and evidence. Repeated assay names or values are not independent replications; inspect source detail for differences.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Bioactivities"><table>
 <tr><th>Assay</th><th>Result</th><th>Target enzyme</th><th>Source detail</th></tr>
-<tr><td>In vitro CYP3A4 Inhibition Assay from US Patent US9144538: &#34;Cosmetic compositions containing substituted azole and methods for alleviating the signs of photoaged skin&#34;</td><td>IC50 10 uM; INACTIVE</td><td class="mono">UniProtKB:P08684</td><td><details><summary>pubchem.aid:1801670</summary><dl><dt>assay</dt><dd>In vitro CYP3A4 Inhibition Assay from US Patent US9144538: &#34;Cosmetic compositions containing substituted azole and methods for alleviating the signs of photoaged skin&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1801670</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1801670, deposited by BindingDB; assay type Confirmatory.</dd></dl>
+<tr><td>In vitro CYP3A4 Inhibition Assay from US Patent US9144538: &#34;Cosmetic compositions containing substituted azole and methods for alleviating the signs of photoaged skin&#34;</td><td>IC50 10 uM; INACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/P08684/entry">UniProtKB:P08684</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1801670">pubchem.aid:1801670</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>In vitro CYP3A4 Inhibition Assay from US Patent US9144538: &#34;Cosmetic compositions containing substituted azole and methods for alleviating the signs of photoaged skin&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1801670">pubchem.aid:1801670</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1801670, deposited by BindingDB; assay type Confirmatory.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>INACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>10.0</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:P08684</dd></dl>
+</dd><dt>call</dt><dd>INACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>10.0</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/P08684/entry">UniProtKB:P08684</a></dd></dl>
 </details></td></tr>
-<tr><td>null from US Patent US9138393: &#34;Cosmetic compositions containing substituted azole and methods for improving the appearance of aging skin&#34;</td><td>IC50 10 uM; INACTIVE</td><td class="mono">UniProtKB:P08684</td><td><details><summary>pubchem.aid:1801654</summary><dl><dt>assay</dt><dd>null from US Patent US9138393: &#34;Cosmetic compositions containing substituted azole and methods for improving the appearance of aging skin&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1801654</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1801654, deposited by BindingDB; assay type Confirmatory.</dd></dl>
+<tr><td>null from US Patent US9138393: &#34;Cosmetic compositions containing substituted azole and methods for improving the appearance of aging skin&#34;</td><td>IC50 10 uM; INACTIVE</td><td class="mono"><a href="https://www.uniprot.org/uniprotkb/P08684/entry">UniProtKB:P08684</a></td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1801654">pubchem.aid:1801654</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>null from US Patent US9138393: &#34;Cosmetic compositions containing substituted azole and methods for improving the appearance of aging skin&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/1801654">pubchem.aid:1801654</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1801654, deposited by BindingDB; assay type Confirmatory.</dd></dl>
 </li></ul>
-</dd><dt>call</dt><dd>INACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>10.0</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:P08684</dd></dl>
+</dd><dt>call</dt><dd>INACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>10.0</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd><a href="https://www.uniprot.org/uniprotkb/P08684/entry">UniProtKB:P08684</a></dd></dl>
 </details></td></tr>
 </table></div>
 
 <h2>Elsewhere in the fleet</h2>
-<ul><li>PathwayMech — <span class="mono">MetaCyc:P101-PWY</span>    (biosynthesized by, same terminal product inchikey: chebi:58515 in the pinned chebi inventory; pathway taxon ncbitaxon:2746. product identity only; no assertion that this record&#39;s other producer taxa use this pathway.)</li>
+<ul><li>PathwayMech — <a class="mono" href="https://culturebotai.github.io/PathwayMech/pages/records/MetaCyc_P101-PWY.html">MetaCyc:P101-PWY</a>    (biosynthesized by, same terminal product inchikey: chebi:58515 in the pinned chebi inventory; pathway taxon ncbitaxon:2746. product identity only; no assertion that this record&#39;s other producer taxa use this pathway.)</li>
 </ul>
 
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=WQXNXVUDBPYKBA-YFKPBYRVSA-N">AntibioticMech (ectoine) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=naturalproductmech%3Amibig-a51c74b16d">MediaIngredientMech (naturalproductmech:mibig-a51c74b16d) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A1474">TaxonMech: Sporosarcina pasteurii (NCBITaxon:1474) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A1892">TaxonMech: Streptomyces anulatus (NCBITaxon:1892) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A1091494">TaxonMech: Methylomicrobium alcaliphilum 20Z (NCBITaxon:1091494) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A269709">TaxonMech: Methylomicrobium kenyense (NCBITaxon:269709) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000852">PathwayMech (mibig:BGC0000852) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000853">PathwayMech (mibig:BGC0000853) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000854">PathwayMech (mibig:BGC0000854) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A1474">TaxonMech: Sporosarcina pasteurii (NCBITaxon:1474) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A1892">TaxonMech: Streptomyces anulatus (NCBITaxon:1892) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A1091494">TaxonMech: Methylomicrobium alcaliphilum 20Z (NCBITaxon:1091494) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A269709">TaxonMech: Methylomicrobium kenyense (NCBITaxon:269709) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000852">PathwayMech (mibig:BGC0000852) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000853">PathwayMech (mibig:BGC0000853) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000854">PathwayMech (mibig:BGC0000854) &nearr;</a>
 </div>
 
 <h2>Open questions <span class="tag">1</span></h2>
-<div class="note"><p><strong>shared-structure</strong> — This structure is reported by more than one MIBiG entry: BGC0000852, BGC0000853, BGC0000854, BGC0000855, BGC0000856, BGC0000857, BGC0000858, BGC0000859, BGC0000860, BGC0002052. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
+<div class="note"><p><strong>shared-structure</strong> <span class="tag">OPEN</span> <span class="tag">curation todo</span> — This structure is reported by more than one MIBiG entry: BGC0000852, BGC0000853, BGC0000854, BGC0000855, BGC0000856, BGC0000857, BGC0000858, BGC0000859, BGC0000860, BGC0002052. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
+
+<h2 id="curation-history">Curation history <span class="tag">8</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-13T10:45:35Z">2026-10-13T10:45:35Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-10-13T07:43:19Z)</span><p>Seeded from the committed inventories and curation tables.</p></li>
+<li><time datetime="2026-10-07T19:04:36Z">2026-10-07T19:04:36Z</time> &middot; <strong>MERGE_PATHWAY_LINKS</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Integrated the previously proposed PR #586 PathwayMech product link at aa305727458c44ab05614901334540e2c87a9f3a with main f3bfec397457a22fd0118ba9d7f6a53d0e4fa7cc through the current seeder. Preserved every existing producer, activity and graph field and all main and feature history; no scientific pin refresh.</p></li>
+<li><time datetime="2026-10-05T17:41:20Z">2026-10-05T17:41:20Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources<p>Seeded from the committed inventories and curation tables.</p></li>
+<li><time datetime="2026-10-07T12:37:27Z">2026-10-07T12:37:27Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added two independently qualified BIOSYNTHESIS graphs, twelve new nodes and ten new edges, for native-reference ThpB/Q6QUY9, ThpA/Q6QUZ0 and ThpD/Q6QUY7. Complete AY524544.1 CDS translations equal native annotation, independent GenPept AAS02095.1/AAS02094.1/AAS02097.1 and reviewed UniProt, respectively 420/176/297aa; exact coded_by, table11 and species1892 agree. Native source has no strain qualifier; ATCC11523 aliases are bibliographic linkage, not historical assay-stock sequence proof. ThpB/ThpA function remains database homology attribution, with pathway order from explicit FUNCTION/PATHWAY text, not gene order or stored reversible-equation direction. ThpD supports a heterologous expression/HPLC phenotype, not purified-enzyme catalysis, absolute yield or universal necessity. Every new edge has a DOI or stable UniProt URL; three short exact snippets retained. Added explicit ThpD primary-access qualifications to the description and four primary evidence items; clarified that its genomic mapping does not establish experimental functions of other thp genes. Previously read main/table/captions remain the source; no new paper retrieval, successful figure visual review or raw PDF checksum. Other approved graph fields, directions, references and snippets are unchanged. No ThpD experiment transfer to ThpA/ThpB, PLP/iron occupancy, catalytic-site measurement, physical assembly, new producer/BGC grade or chemical-form resolution. Preserved the entire existing ThpC graph and proposed terminal pathway list, every old owner field, all ten producer/BGC claims, occurrences, activities, discussions, source grades, stereochemistry, classifications, SEEDED status and prior history. Original scratch-only events are not imported into production history; no full-record sign-off.</p></li>
+<li><time datetime="2026-10-01T05:42:24Z">2026-10-01T05:42:24Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added a proposed terminal Streptomyces anulatus/Streptomyces chrysomallus ThpC ectoine synthase pathway step and BIOSYNTHESIS causal graph; grounded BGC0000853 thpC to UniProtKB:Q6QUY8 through EMBL AY524544 protein AAS02096.1; and linked the inferred terminal ring-closure reaction to RHEA:17281.</p></li>
+<li><time datetime="2026-09-25T03:03:40Z">2026-09-25T03:03:40Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:15Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
 
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0000852</td><td>MIBIG</td><td>5</td></tr>
-<tr><td class="mono">BGC0000853</td><td>MIBIG</td><td>3</td></tr>
-<tr><td class="mono">BGC0000854</td><td>MIBIG</td><td>3</td></tr>
-<tr><td class="mono">BGC0000855</td><td>MIBIG</td><td>3</td></tr>
-<tr><td class="mono">BGC0000856</td><td>MIBIG</td><td>3</td></tr>
-<tr><td class="mono">BGC0000857</td><td>MIBIG</td><td>3</td></tr>
-<tr><td class="mono">BGC0000858</td><td>MIBIG</td><td>3</td></tr>
-<tr><td class="mono">BGC0000859</td><td>MIBIG</td><td>3</td></tr>
-<tr><td class="mono">BGC0000860</td><td>MIBIG</td><td>3</td></tr>
-<tr><td class="mono">BGC0002052</td><td>MIBIG</td><td>3</td></tr>
-<tr><td class="mono">CHEBI:27592</td><td>CHEBI</td><td>3-star</td></tr>
-<tr><td class="mono">CHEBI:58515</td><td>CHEBI</td><td>3-star</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000852">BGC0000852</a></td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000853">BGC0000853</a></td><td>MIBIG</td><td>3</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000854">BGC0000854</a></td><td>MIBIG</td><td>3</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000855">BGC0000855</a></td><td>MIBIG</td><td>3</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000856">BGC0000856</a></td><td>MIBIG</td><td>3</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000857">BGC0000857</a></td><td>MIBIG</td><td>3</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000858">BGC0000858</a></td><td>MIBIG</td><td>3</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000859">BGC0000859</a></td><td>MIBIG</td><td>3</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000860">BGC0000860</a></td><td>MIBIG</td><td>3</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002052">BGC0002052</a></td><td>MIBIG</td><td>3</td></tr>
+<tr><td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_27592">CHEBI:27592</a></td><td>CHEBI</td><td>3-star</td></tr>
+<tr><td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_58515">CHEBI:58515</a></td><td>CHEBI</td><td>3-star</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/amino_acids_and_peptides/ectoine.yaml">data/natural_products/amino_acids_and_peptides/ectoine.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20naturalproductmech%3Amibig-a51c74b16d&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Famino_acids_and_peptides%2Fectoine.html">Report a problem with this record</a>: opens a GitHub issue that names naturalproductmech:mibig-a51c74b16d and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Record last updated 2026-10-13 10:45 UTC, its latest curation event. Generated from the committed corpus. Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

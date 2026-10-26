@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Amino acids and peptides</a> &middot; alazopeptin</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,22 +32,22 @@
   </form>
 </div>
 <h1>alazopeptin</h1>
-<p class="sub"><span class="mono">naturalproductmech:mibig-7a2a294289</span>
+<p class="sub"><span class="mono"><a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/amino_acids_and_peptides/alazopeptin.yaml">naturalproductmech:mibig-7a2a294289</a></span>
   <span class="tag">MINTED</span>
   <span class="tag">SEEDED</span>
 </p>
 <div class="note"><strong>Grounding review:</strong> No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.</div><details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/amino_acids_and_peptides/alazopeptin.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/amino_acids_and_peptides/alazopeptin.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">LYUGICBKRYXVHJ-UHFFFAOYSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">C=CCNC(CCC(=O)C=[N+]=[N-])C(=O)NC(CCC(=O)C=[N+]=[N-])C(=O)O</td></tr>
 <tr><th>Stereochemistry</th><td>  <span class="tag weak">undefined stereocentres</span> — the InChIKey does not
   distinguish this compound from its stereoisomers</td></tr>
-<tr><th>Cross-references</th><td class="mono">npatlas:NPA033438</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://www.npatlas.org/explore/compounds/NPA033438">npatlas:NPA033438</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Amino acids and peptides</a> —
@@ -58,40 +60,40 @@ nrps, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Streptacidiphilus griseoplanus<br><span class="mono">NCBITaxon:66896</span></td>
+  <td>Streptacidiphilus griseoplanus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=66896">NCBITaxon:66896</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0002458</td>
-  <td><span class="mono">PMID:33624374</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002458">mibig:BGC0002458</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/33624374/">PMID:33624374</a></span></td>
 </tr>
 <tr>
-  <td>Kitasatospora azatica KCTC 9699<br><span class="mono">NCBITaxon:1449346</span></td>
+  <td>Kitasatospora azatica KCTC 9699<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1449346">NCBITaxon:1449346</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0002536</td>
-  <td><span class="mono">DOI:10.1038/ja.2008.83</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002536">mibig:BGC0002536</a></td>
+  <td><span class="mono"><a href="https://doi.org/10.1038/ja.2008.83">DOI:10.1038/ja.2008.83</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">0</span></h2>
 <p class="sub">None cited.</p>
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">2</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0002458</td>
-  <td>Streptacidiphilus griseoplanus<br><span class="mono">NCBITaxon:66896</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002458">mibig:BGC0002458</a></td>
+  <td>Streptacidiphilus griseoplanus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=66896">NCBITaxon:66896</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:LC593326.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/LC593326.1">genbank:LC593326.1</a></td>
 </tr>
 <tr>
-  <td class="mono">mibig:BGC0002536</td>
-  <td>Kitasatospora azatica KCTC 9699<br><span class="mono">NCBITaxon:1449346</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002536">mibig:BGC0002536</a></td>
+  <td>Kitasatospora azatica KCTC 9699<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1449346">NCBITaxon:1449346</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:NZ_JQMO01000003.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/NZ_JQMO01000003.1">genbank:NZ_JQMO01000003.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -101,27 +103,27 @@ isolation report left it.</p>
 <h2>Biosynthesis <span class="tag causal">curated</span></h2>
 <p class="sub">Written by a curator with claim-level evidence on each step; not
 derived from a source. This is what the rest of the record exists to support.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthesis steps"><table>
 <tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
 <tr>
   <td>1</td>
-  <td>AzpE<br><span class="mono">EC:1.14.13.248</span></td>
-  <td class="mono">RHEA:69008</td>
-  <td class="mono">CHEBI:29991 &rarr; CHEBI:180682</td>
-  <td class="mono">DOI:10.1002/anie.202100462</td>
+  <td>AzpE<br><span class="mono"><a href="https://enzyme.expasy.org/EC/1.14.13.248">EC:1.14.13.248</a></span></td>
+  <td class="mono"><a href="https://www.rhea-db.org/rhea/69008">RHEA:69008</a></td>
+  <td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_29991">CHEBI:29991</a> &rarr; <a href="http://purl.obolibrary.org/obo/CHEBI_180682">CHEBI:180682</a></td>
+  <td class="mono"><a href="https://doi.org/10.1002/anie.202100462">DOI:10.1002/anie.202100462</a></td>
 </tr>
 <tr>
   <td>2</td>
-  <td>AzpD<br><span class="mono">EC:4.3.99.5</span></td>
-  <td class="mono">RHEA:69044</td>
-  <td class="mono">CHEBI:180682 &rarr; CHEBI:16301</td>
-  <td class="mono">DOI:10.1002/anie.202100462</td>
+  <td>AzpD<br><span class="mono"><a href="https://enzyme.expasy.org/EC/4.3.99.5">EC:4.3.99.5</a></span></td>
+  <td class="mono"><a href="https://www.rhea-db.org/rhea/69044">RHEA:69044</a></td>
+  <td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_180682">CHEBI:180682</a> &rarr; <a href="http://purl.obolibrary.org/obo/CHEBI_16301">CHEBI:16301</a></td>
+  <td class="mono"><a href="https://doi.org/10.1002/anie.202100462">DOI:10.1002/anie.202100462</a></td>
 </tr>
 </table></div>
 <p class="sub">Step 1: AzpE is annotated as the Streptacidiphilus griseoplanus JCM 4300 BGC0002458 aspartate monooxygenase. The exact BCN13467.1 protein does not currently resolve as a UniProtKB entry, so this partial alazopeptin nitrite-supply step grounds the reaction class by EC and Rhea while grounding the AzpE causal-graph enzyme node to the native GenPept accession NCBIProtein:BCN13467.1 (not indexed in UniProtKB or UniParc).</p><p class="sub">Step 2: AzpD is annotated as the Streptacidiphilus griseoplanus JCM 4300 BGC0002458 nitrosuccinate lyase. The exact BCN13466.1 protein does not currently resolve as a UniProtKB entry, so this partial alazopeptin nitrite-supply step grounds the reaction class by EC and Rhea while grounding the AzpD causal-graph enzyme node to the native GenPept accession NCBIProtein:BCN13466.1 (not indexed in UniProtKB or UniParc).</p>
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for alazopeptin">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for alazopeptin">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -154,16 +156,16 @@ derived from a source. This is what the rest of the record exists to support.</p
 </div>
 
 <h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 4 edges</span></h2>
-<p class="sub">Partial Streptacidiphilus griseoplanus alazopeptin biosynthesis graph for the BGC0002458 AzpE/AzpD ANS-module reactions that convert L-aspartate to nitrite for downstream diazotization.</p><div class="scroll"><table>
+<p class="sub">Partial Streptacidiphilus griseoplanus alazopeptin biosynthesis graph for the BGC0002458 AzpE/AzpD ANS-module reactions that convert L-aspartate to nitrite for downstream diazotization.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>L-aspartate</td>
   <td>is oxidized by</td>
   <td>AzpE</td>
   <td>RHEA:69008 also consumes NADPH, O2, and protons and releases NADP(+) and water.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1002/anie.202100462<br>https://www.ncbi.nlm.nih.gov/protein/BCN13467.1<br>RHEA:69008</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1002/anie.202100462</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>gene inactivation and in vitro analysis of recombinant enzymes</dd><dt>notes</dt><dd>Kawai et al. reported the complete Streptacidiphilus griseoplanus alazopeptin pathway; this curation uses the BGC0002458 ANS module that supplies nitrite for diazotization but leaves downstream AzpL and NRPS steps uncurated.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/BCN13467.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>aspartate monooxygenase</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>NCBI GenPept BCN13467.1 is the LC593326.1 azpE coding sequence; exact UniProtKB searches for BCN13467 returned no matching entry; exact UniParc queries for BCN13467.1 and LC593326 on 2026-10-23 also returned no indexed entry, grounding the AzpE enzyme node as NCBIProtein:BCN13467.1.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>RHEA:69008</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>Rhea maps EC:1.14.13.248 to L-aspartate conversion to 2-nitrobutanedioate and annotates ChEBI participants CHEBI:29991 and CHEBI:180682.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1002/anie.202100462">DOI:10.1002/anie.202100462</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/BCN13467.1">https://www.ncbi.nlm.nih.gov/protein/BCN13467.1</a><br><a href="https://www.rhea-db.org/rhea/69008">RHEA:69008</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1002/anie.202100462">DOI:10.1002/anie.202100462</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>gene inactivation and in vitro analysis of recombinant enzymes</dd><dt>notes</dt><dd>Kawai et al. reported the complete Streptacidiphilus griseoplanus alazopeptin pathway; this curation uses the BGC0002458 ANS module that supplies nitrite for diazotization but leaves downstream AzpL and NRPS steps uncurated.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/BCN13467.1">https://www.ncbi.nlm.nih.gov/protein/BCN13467.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>aspartate monooxygenase</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>NCBI GenPept BCN13467.1 is the LC593326.1 azpE coding sequence; exact UniProtKB searches for BCN13467 returned no matching entry; exact UniParc queries for BCN13467.1 and LC593326 on 2026-10-23 also returned no indexed entry, grounding the AzpE enzyme node as NCBIProtein:BCN13467.1.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.rhea-db.org/rhea/69008">RHEA:69008</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>Rhea maps EC:1.14.13.248 to L-aspartate conversion to 2-nitrobutanedioate and annotates ChEBI participants CHEBI:29991 and CHEBI:180682.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -172,9 +174,9 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>forms</td>
   <td>2-nitrobutanedioate</td>
   <td>The EC/Rhea-grounded product of the annotated AzpE aspartate monooxygenase reaction is 2-nitrobutanedioate.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1002/anie.202100462<br>https://www.ncbi.nlm.nih.gov/protein/BCN13467.1<br>RHEA:69008</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1002/anie.202100462</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>gene inactivation and in vitro analysis of recombinant enzymes</dd><dt>notes</dt><dd>Kawai et al. reported the complete Streptacidiphilus griseoplanus alazopeptin pathway; this curation uses the BGC0002458 ANS module that supplies nitrite for diazotization but leaves downstream AzpL and NRPS steps uncurated.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/BCN13467.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>aspartate monooxygenase</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>NCBI GenPept BCN13467.1 is the LC593326.1 azpE coding sequence; exact UniProtKB searches for BCN13467 returned no matching entry; exact UniParc queries for BCN13467.1 and LC593326 on 2026-10-23 also returned no indexed entry, grounding the AzpE enzyme node as NCBIProtein:BCN13467.1.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>RHEA:69008</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>Rhea maps EC:1.14.13.248 to L-aspartate conversion to 2-nitrobutanedioate and annotates ChEBI participants CHEBI:29991 and CHEBI:180682.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1002/anie.202100462">DOI:10.1002/anie.202100462</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/BCN13467.1">https://www.ncbi.nlm.nih.gov/protein/BCN13467.1</a><br><a href="https://www.rhea-db.org/rhea/69008">RHEA:69008</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1002/anie.202100462">DOI:10.1002/anie.202100462</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>gene inactivation and in vitro analysis of recombinant enzymes</dd><dt>notes</dt><dd>Kawai et al. reported the complete Streptacidiphilus griseoplanus alazopeptin pathway; this curation uses the BGC0002458 ANS module that supplies nitrite for diazotization but leaves downstream AzpL and NRPS steps uncurated.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/BCN13467.1">https://www.ncbi.nlm.nih.gov/protein/BCN13467.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>aspartate monooxygenase</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>NCBI GenPept BCN13467.1 is the LC593326.1 azpE coding sequence; exact UniProtKB searches for BCN13467 returned no matching entry; exact UniParc queries for BCN13467.1 and LC593326 on 2026-10-23 also returned no indexed entry, grounding the AzpE enzyme node as NCBIProtein:BCN13467.1.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.rhea-db.org/rhea/69008">RHEA:69008</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>Rhea maps EC:1.14.13.248 to L-aspartate conversion to 2-nitrobutanedioate and annotates ChEBI participants CHEBI:29991 and CHEBI:180682.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -183,9 +185,9 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>is cleaved by</td>
   <td>AzpD</td>
   <td>RHEA:69044 places 2-nitrobutanedioate upstream of nitrite in the EC:4.3.99.5 reaction.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1002/anie.202100462<br>https://www.ncbi.nlm.nih.gov/protein/BCN13466.1<br>RHEA:69044</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1002/anie.202100462</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Complete Biosynthetic Pathway of Alazopeptin</dd><dt>notes</dt><dd>Kawai et al. reported the complete Streptacidiphilus griseoplanus alazopeptin pathway; this curation uses the BGC0002458 ANS module that supplies nitrite for diazotization but leaves downstream AzpL and NRPS steps uncurated.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/BCN13466.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>nitrosuccinate lyase</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>NCBI GenPept BCN13466.1 is the LC593326.1 azpD coding sequence; exact UniProtKB searches for BCN13466 returned no matching entry; exact UniParc queries for BCN13466.1 and LC593326 on 2026-10-23 also returned no indexed entry, grounding the AzpD enzyme node as NCBIProtein:BCN13466.1.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>RHEA:69044</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>Rhea maps EC:4.3.99.5 to 2-nitrobutanedioate cleavage to fumarate, nitrite, and a proton and annotates ChEBI participants CHEBI:180682, CHEBI:29806, CHEBI:16301, and CHEBI:15378.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1002/anie.202100462">DOI:10.1002/anie.202100462</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/BCN13466.1">https://www.ncbi.nlm.nih.gov/protein/BCN13466.1</a><br><a href="https://www.rhea-db.org/rhea/69044">RHEA:69044</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1002/anie.202100462">DOI:10.1002/anie.202100462</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Complete Biosynthetic Pathway of Alazopeptin</dd><dt>notes</dt><dd>Kawai et al. reported the complete Streptacidiphilus griseoplanus alazopeptin pathway; this curation uses the BGC0002458 ANS module that supplies nitrite for diazotization but leaves downstream AzpL and NRPS steps uncurated.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/BCN13466.1">https://www.ncbi.nlm.nih.gov/protein/BCN13466.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>nitrosuccinate lyase</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>NCBI GenPept BCN13466.1 is the LC593326.1 azpD coding sequence; exact UniProtKB searches for BCN13466 returned no matching entry; exact UniParc queries for BCN13466.1 and LC593326 on 2026-10-23 also returned no indexed entry, grounding the AzpD enzyme node as NCBIProtein:BCN13466.1.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.rhea-db.org/rhea/69044">RHEA:69044</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>Rhea maps EC:4.3.99.5 to 2-nitrobutanedioate cleavage to fumarate, nitrite, and a proton and annotates ChEBI participants CHEBI:180682, CHEBI:29806, CHEBI:16301, and CHEBI:15378.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -194,9 +196,9 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>forms</td>
   <td>nitrite</td>
   <td>The AzpD-associated Rhea reaction also releases fumarate and a proton.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1002/anie.202100462<br>https://www.ncbi.nlm.nih.gov/protein/BCN13466.1<br>RHEA:69044</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1002/anie.202100462</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Complete Biosynthetic Pathway of Alazopeptin</dd><dt>notes</dt><dd>Kawai et al. reported the complete Streptacidiphilus griseoplanus alazopeptin pathway; this curation uses the BGC0002458 ANS module that supplies nitrite for diazotization but leaves downstream AzpL and NRPS steps uncurated.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/BCN13466.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>nitrosuccinate lyase</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>NCBI GenPept BCN13466.1 is the LC593326.1 azpD coding sequence; exact UniProtKB searches for BCN13466 returned no matching entry; exact UniParc queries for BCN13466.1 and LC593326 on 2026-10-23 also returned no indexed entry, grounding the AzpD enzyme node as NCBIProtein:BCN13466.1.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>RHEA:69044</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>Rhea maps EC:4.3.99.5 to 2-nitrobutanedioate cleavage to fumarate, nitrite, and a proton and annotates ChEBI participants CHEBI:180682, CHEBI:29806, CHEBI:16301, and CHEBI:15378.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1002/anie.202100462">DOI:10.1002/anie.202100462</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/BCN13466.1">https://www.ncbi.nlm.nih.gov/protein/BCN13466.1</a><br><a href="https://www.rhea-db.org/rhea/69044">RHEA:69044</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1002/anie.202100462">DOI:10.1002/anie.202100462</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Complete Biosynthetic Pathway of Alazopeptin</dd><dt>notes</dt><dd>Kawai et al. reported the complete Streptacidiphilus griseoplanus alazopeptin pathway; this curation uses the BGC0002458 ANS module that supplies nitrite for diazotization but leaves downstream AzpL and NRPS steps uncurated.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/BCN13466.1">https://www.ncbi.nlm.nih.gov/protein/BCN13466.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>nitrosuccinate lyase</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>NCBI GenPept BCN13466.1 is the LC593326.1 azpD coding sequence; exact UniProtKB searches for BCN13466 returned no matching entry; exact UniParc queries for BCN13466.1 and LC593326 on 2026-10-23 also returned no indexed entry, grounding the AzpD enzyme node as NCBIProtein:BCN13466.1.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.rhea-db.org/rhea/69044">RHEA:69044</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-28</dd><dt>notes</dt><dd>Rhea maps EC:4.3.99.5 to 2-nitrobutanedioate cleavage to fumarate, nitrite, and a proton and annotates ChEBI participants CHEBI:180682, CHEBI:29806, CHEBI:16301, and CHEBI:15378.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -210,28 +212,38 @@ by the corpus tests.</p>
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=LYUGICBKRYXVHJ-UHFFFAOYSA-N">AntibioticMech (alazopeptin) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=naturalproductmech%3Amibig-7a2a294289">MediaIngredientMech (naturalproductmech:mibig-7a2a294289) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A66896">TaxonMech: Streptacidiphilus griseoplanus (NCBITaxon:66896) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A1449346">TaxonMech: Kitasatospora azatica KCTC 9699 (NCBITaxon:1449346) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0002458">PathwayMech (mibig:BGC0002458) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0002536">PathwayMech (mibig:BGC0002536) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A66896">TaxonMech: Streptacidiphilus griseoplanus (NCBITaxon:66896) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A1449346">TaxonMech: Kitasatospora azatica KCTC 9699 (NCBITaxon:1449346) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0002458">PathwayMech (mibig:BGC0002458) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0002536">PathwayMech (mibig:BGC0002536) &nearr;</a>
 </div>
 
 <h2>Open questions <span class="tag">1</span></h2>
-<div class="note"><p><strong>shared-structure</strong> — This structure is reported by more than one MIBiG entry: BGC0002458, BGC0002536. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
+<div class="note"><p><strong>shared-structure</strong> <span class="tag">OPEN</span> <span class="tag">curation todo</span> — This structure is reported by more than one MIBiG entry: BGC0002458, BGC0002536. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
+
+<h2 id="curation-history">Curation history <span class="tag">5</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-23T22:53:34Z">2026-10-23T22:53:34Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; antigravity <span class="tag">LLM-assisted</span><p>Grounded the Streptacidiphilus griseoplanus JCM 4300 (BGC0002458) AzpE and AzpD BIOSYNTHESIS causal graph ENZYME nodes (azpe, azpd) to their native GenPept accessions NCBIProtein:BCN13467.1 and NCBIProtein:BCN13466.1 while preserving EC:1.14.13.248 and EC:4.3.99.5 on the biosynthetic_pathway steps, and documented that LC593326.1 proteins BCN13467.1 and BCN13466.1 are not indexed in UniProtKB or UniParc.</p></li>
+<li><time datetime="2026-09-28T03:39:52Z">2026-09-28T03:39:52Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Replaced PR #274&#39;s direct Rhea evidence URLs with RHEA CURIE references after adversarial review issue #275 found that the official direct Rhea page URLs returned HTTP 403 to automated re-fetching.</p></li>
+<li><time datetime="2026-09-28T03:22:08Z">2026-09-28T03:22:08Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added a partial BGC0002458 Streptacidiphilus griseoplanus AzpE/AzpD ANS-module nitrite-supply pathway and BIOSYNTHESIS causal graph for alazopeptin. The AzpE/AzpD reactions are grounded to EC/Rhea, the exact BCN13467.1 and BCN13466.1 proteins are cited as NCBI GenPept records, and both enzyme nodes are intentionally left ungrounded because no exact UniProtKB accessions resolved.</p></li>
+<li><time datetime="2026-09-25T03:02:43Z">2026-09-25T03:02:43Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:09Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
 
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0002458</td><td>MIBIG</td><td>3</td></tr>
-<tr><td class="mono">BGC0002536</td><td>MIBIG</td><td>3</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002458">BGC0002458</a></td><td>MIBIG</td><td>3</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002536">BGC0002536</a></td><td>MIBIG</td><td>3</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/amino_acids_and_peptides/alazopeptin.yaml">data/natural_products/amino_acids_and_peptides/alazopeptin.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20naturalproductmech%3Amibig-7a2a294289&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Famino_acids_and_peptides%2Falazopeptin.html">Report a problem with this record</a>: opens a GitHub issue that names naturalproductmech:mibig-7a2a294289 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Record last updated 2026-10-23 22:53 UTC, its latest curation event. Generated from the committed corpus. Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

@@ -6,7 +6,7 @@
 InChIKey, harmonized from {{ source_count }} adopted sources.</p>
 
 <form class="hero-search" action="browse.html" method="get" role="search" aria-label="Search NaturalProductMech">
-  <input type="search" name="q" placeholder="Search {{ total }} natural products by name, ChEBI/InChIKey, synonym, producer, or pathway…" autocomplete="off">
+  <input type="search" name="q" placeholder="Search {{ total }} natural products by name, identifier, InChIKey, synonym or filing pathway…" autocomplete="off">
   <button type="submit">Search</button>
 </form>
 
@@ -53,8 +53,27 @@ record.</p>
 {% endfor %}
 </div>
 
+<h2 id="curation">How records are produced</h2>
+<blockquote class="quote">
+<p>{{ production_quote|code_spans }}</p>
+<p class="sub">— the repository's <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/README.md">README</a></p>
+</blockquote>
+<p>Each record states its curation status, and the schema defines what each one means.
+These are workflow decisions, not independently verified human review.</p>
+<div class="scroll" role="region" tabindex="0" aria-label="Curation statuses"><table>
+<tr><th>Status</th><th>Records</th><th>What it means (quoted from the <a href="schema.html#enum-CurationStatusEnum">schema</a>)</th></tr>
+{% for status in curation.statuses %}
+<tr><td class="mono">{{ status.text }}</td><td>{{ status.count }}</td><td>{{ status.description }}</td></tr>
+{% endfor %}
+</table></div>
+<p class="sub">Every change to a record appends a curation event that names its curator; a
+record page lists its own under <em>Curation history</em>. Across the corpus,
+{{ curation.events }} events name these curators:
+{% for name, count in curation.curators %}<span class="mono">{{ name }}</span> ({{ count }}){% if not loop.last %}, {% endif %}{% endfor %}.
+{{ curation.llm_assisted }} of the events are flagged <span class="mono">llm_assisted</span>.</p>
+
 <h2>What the corpus holds</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Field coverage"><table>
 <tr><th>Field</th><th>Records carrying at least one</th></tr>
 {% for name, count in coverage %}
 <tr><td class="mono">{{ name }}</td><td>{{ count }}</td></tr>
@@ -65,8 +84,8 @@ record.</p>
 <p class="sub">Machine-readable data exports, LinkML schema definitions, and embedding coordinate tables.</p>
 <div class="grid">
   <div class="card">
-    <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/src/naturalproductmech/schema/naturalproductmech.yaml">LinkML Schema (YAML)</a>
-    <div class="count">Formal schema for natural product structures, producer claims, occurrences, BGCs, and causal graphs (<a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/src/naturalproductmech/schema/mech_shared.yaml">mech_shared.yaml</a>, <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/src/naturalproductmech/schema/history.yaml">history.yaml</a>)</div>
+    <a href="schema.html">LinkML schema reference</a>
+    <div class="count">Every class, slot and enumeration, generated from the schema for natural product structures, producer claims, occurrences, BGCs, and causal graphs (YAML: <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/src/naturalproductmech/schema/naturalproductmech.yaml">naturalproductmech.yaml</a>, <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/src/naturalproductmech/schema/mech_shared.yaml">mech_shared.yaml</a>, <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/src/naturalproductmech/schema/history.yaml">history.yaml</a>)</div>
   </div>
   <div class="card">
     <a href="https://github.com/CultureBotAI/NaturalProductMech/tree/main/data/natural_products">Curated YAML Corpus ({{ total }} records)</a>

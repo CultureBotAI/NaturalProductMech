@@ -6,7 +6,6 @@ from copy import deepcopy
 from pathlib import Path
 
 import pytest
-from jinja2 import Environment, FileSystemLoader, select_autoescape
 from markupsafe import escape
 
 from naturalproductmech.curate.curation_event import record_curation_event
@@ -22,6 +21,12 @@ assert _spec and _spec.loader
 render_pages = importlib.util.module_from_spec(_spec)
 sys.modules["render_pages"] = render_pages
 _spec.loader.exec_module(render_pages)
+
+
+def shown(value):
+    """A source value as a record page shows it: a URL links itself, the rest is text."""
+    text = escape(value)
+    return f'<a href="{text}">{text}</a>' if value.startswith("https://") else str(text)
 
 
 @pytest.mark.parametrize("fields, expected", [
@@ -45,8 +50,7 @@ def test_bioactivity_result_preserves_both_measurement_and_call(fields, expected
     })
     assert record["bioactivities"][0]["result"] == expected
     assert record["bioactivities"][0]["source"] == observation
-    env = Environment(loader=FileSystemLoader(str(render_pages.TEMPLATES_DIR)),
-                      autoescape=select_autoescape(["html"]))
+    env = render_pages.template_environment()
     rendered = env.get_template("record.html").render(r=record)
     assert expected in rendered
     assert "Source endpoint: Potency." in rendered
@@ -81,8 +85,7 @@ def test_producer_strain_is_visible_and_evidence_is_retained(strain):
     assert producer == original
     assert view["producers"][0]["evidence"] == original["evidence"]
     assert view["producers"][0]["references"] == ["DOI:10.1/paper"]
-    env = Environment(loader=FileSystemLoader(str(render_pages.TEMPLATES_DIR)),
-                      autoescape=select_autoescape(["html"]))
+    env = render_pages.template_environment()
     rendered = env.get_template("record.html").render(r=view)
     assert rendered.count('<span class="mono">DOI:10.1/paper</span>') == 1
     assert '<script>alert("strain")</script>' not in rendered
@@ -128,13 +131,7 @@ def test_causal_graph_rendering_preserves_every_edge_reference():
         "DOI:10.2/structure",
     ]
 
-    env = Environment(
-        loader=FileSystemLoader(str(render_pages.TEMPLATES_DIR)),
-        autoescape=select_autoescape(["html"]),
-        trim_blocks=True,
-        lstrip_blocks=True,
-        keep_trailing_newline=True,
-    )
+    env = render_pages.template_environment()
     rendered = env.get_template("record.html").render(r=record)
 
     assert "DOI:10.1/primary<br>DOI:10.2/structure" in rendered
@@ -188,18 +185,20 @@ def test_graph_evidence_details_reach_html_without_changing_sources(
     (loaded_path, loaded), = render_pages.load_records()
     view = render_pages.build_record(loaded_path, loaded)
     assert view["graphs"][0]["edges"][0]["evidence"] == evidence
-    env = Environment(loader=FileSystemLoader(str(render_pages.TEMPLATES_DIR)),
-                      autoescape=select_autoescape(["html"]))
+    env = render_pages.template_environment()
     rendered = env.get_template("record.html").render(r=view)
     assert graph["description"] in rendered
     assert graph["edges"][0]["notes"] in rendered
-    references = "<br>".join(str(escape(item["reference"])) for item in evidence)
+    # The citations sit beside the disclosure, not inside its <summary>, so a
+    # reference link is never nested in the control that opens the detail.
+    references = "<br>".join(shown(item["reference"]) for item in evidence)
     assert '<details class="graph-evidence">' in rendered
-    assert f'<summary class="mono">{references}</summary>' in rendered
+    assert (f'<span class="mono">{references}</span><details class="graph-evidence">'
+            '<summary>Evidence detail</summary>') in rendered
     for item in evidence:
         for key, value in item.items():
             assert f"<dt>{key.replace('_', ' ')}</dt>" in rendered
-            assert f"<dd>{escape(value)}</dd>" in rendered
+            assert f"<dd>{shown(value)}</dd>" in rendered
     if detailed:
         assert "<script>" not in rendered
         assert rendered.index("PRIMARY_EXPERIMENT") < rendered.index("CURATOR_INFERENCE")
@@ -230,8 +229,7 @@ def test_target_qualifications_and_all_evidence_reach_html(source, detailed):
     doc = {"identifier": "CHEBI:1", "np_pathway": "POLYKETIDES", "molecular_targets": [target]}
     before = deepcopy(doc)
     view = render_pages.build_record(REPO_ROOT / "data/natural_products/polyketides/synthetic.yaml", doc)
-    env = Environment(loader=FileSystemLoader(str(render_pages.TEMPLATES_DIR)),
-                      autoescape=select_autoescape(["html"]))
+    env = render_pages.template_environment()
     rendered = env.get_template("record.html").render(r=view)
     assert str(escape(target["notes"])) in rendered
     assert "PROTEIN_COMPLEX" in rendered and "INHIBITS" in rendered
@@ -241,7 +239,7 @@ def test_target_qualifications_and_all_evidence_reach_html(source, detailed):
     for item in evidence:
         for key, value in item.items():
             assert f"<dt>{key.replace('_', ' ')}</dt>" in rendered
-            assert f"<dd>{escape(value)}</dd>" in rendered
+            assert f"<dd>{shown(value)}</dd>" in rendered
     assert doc == before
 
 
@@ -261,13 +259,7 @@ def test_pathway_step_without_grounded_compounds_renders_as_ungrounded():
         },
     )
 
-    env = Environment(
-        loader=FileSystemLoader(str(render_pages.TEMPLATES_DIR)),
-        autoescape=select_autoescape(["html"]),
-        trim_blocks=True,
-        lstrip_blocks=True,
-        keep_trailing_newline=True,
-    )
+    env = render_pages.template_environment()
     rendered = env.get_template("record.html").render(r=record)
 
     assert "ungrounded &rarr; ungrounded" in rendered
@@ -289,13 +281,7 @@ def test_pathway_step_without_step_number_renders_as_entry():
         },
     )
 
-    env = Environment(
-        loader=FileSystemLoader(str(render_pages.TEMPLATES_DIR)),
-        autoescape=select_autoescape(["html"]),
-        trim_blocks=True,
-        lstrip_blocks=True,
-        keep_trailing_newline=True,
-    )
+    env = render_pages.template_environment()
     rendered = env.get_template("record.html").render(r=record)
 
     assert "<tr><th>#</th>" in rendered

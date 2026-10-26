@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Polyketides</a> &middot; chondrochloren A</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>chondrochloren A</h1>
-<p class="sub"><span class="mono">CHEBI:132426</span>
+<p class="sub"><span class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_132426">CHEBI:132426</a></span>
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 <span class="tag">antimicrobial unspecified</span></p>
 <details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/chondrochloren-a.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/chondrochloren-a.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 <p>A monocarboxylic acid amide with formula C27H40ClNO7, that is produced by Chondromyces crocatus and exhibits antibiotic properties.</p>
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">FYBGSKAWXCBCIQ-JRAUAZSASA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">CCCC[C@@H](C)[C@H](O)[C@H](C)C(=O)C(\C)=C\[C@@H](OC)[C@@H](O)[C@@H](OC)C(=O)N\C=C/C1=CC=C(O)C(Cl)=C1</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">npatlas:NPA0508</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://www.npatlas.org/explore/compounds/NPA0508">npatlas:NPA0508</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Polyketides</a> —
@@ -57,42 +59,42 @@ nrps, pks, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Chondromyces crocatus<br><span class="mono">NCBITaxon:52</span></td>
+  <td>Chondromyces crocatus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=52">NCBITaxon:52</a></span></td>
   <td><span class="tag causal">BGC_CHARACTERIZED</span></td>
-  <td class="mono">mibig:BGC0000970</td>
-  <td><span class="mono">PMID:19171307</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000970">mibig:BGC0000970</a></td>
+  <td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/19171307/">PMID:19171307</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">2</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Chondromyces crocatus<br><span class="mono">NCBITaxon:52</span></td>
+  <td>Chondromyces crocatus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=52">NCBITaxon:52</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1002/EJOC.200200699</td>
+  <td class="mono"><a href="https://doi.org/10.1002/EJOC.200200699">DOI:10.1002/EJOC.200200699</a></td>
 </tr>
 <tr>
-  <td>Chondromyces crocatus<br><span class="mono">NCBITaxon:52</span></td>
+  <td>Chondromyces crocatus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=52">NCBITaxon:52</a></span></td>
   <td>CHEBI</td>
-  <td class="mono">PMID:19171307</td>
+  <td class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/19171307/">PMID:19171307</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0000970</td>
-  <td>Chondromyces crocatus<br><span class="mono">NCBITaxon:52</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000970">mibig:BGC0000970</a></td>
+  <td>Chondromyces crocatus<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=52">NCBITaxon:52</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:AM988861.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AM988861.1">genbank:AM988861.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -102,20 +104,20 @@ isolation report left it.</p>
 <h2>Biosynthesis <span class="tag causal">curated</span></h2>
 <p class="sub">Written by a curator with claim-level evidence on each step; not
 derived from a source. This is what the rest of the record exists to support.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthesis steps"><table>
 <tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
 <tr>
   <td>1</td>
-  <td>CndG 1&#39;-carboxy-chondrochloren decarboxylase<br><span class="mono">UniProtKB:B9ZUK6</span></td>
-  <td class="mono">RHEA:81491</td>
-  <td class="mono">CHEBI:231889 + CHEBI:57692 &rarr; CHEBI:132426</td>
-  <td class="mono">DOI:10.1074/jbc.M109.079707</td>
+  <td>CndG 1&#39;-carboxy-chondrochloren decarboxylase<br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/B9ZUK6/entry">UniProtKB:B9ZUK6</a></span></td>
+  <td class="mono"><a href="https://www.rhea-db.org/rhea/81491">RHEA:81491</a></td>
+  <td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_231889">CHEBI:231889</a> + <a href="http://purl.obolibrary.org/obo/CHEBI_57692">CHEBI:57692</a> &rarr; <a href="http://purl.obolibrary.org/obo/CHEBI_132426">CHEBI:132426</a></td>
+  <td class="mono"><a href="https://doi.org/10.1074/jbc.M109.079707">DOI:10.1074/jbc.M109.079707</a></td>
 </tr>
 </table></div>
 <p class="sub">Step 1: CndG carries out the terminal FAD-dependent oxidative decarboxylation of 1&#39;-carboxy-chondrochloren A to form mature chondrochloren A; Rhea maps the corresponding EC 4.1.1.129 reaction to RHEA:81491.</p>
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for chondrochloren A">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for chondrochloren A">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -148,18 +150,18 @@ derived from a source. This is what the rest of the record exists to support.</p
 </div>
 
 <h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
-<p class="sub">Partial C. crocatus chondrochloren A biosynthesis graph for CndG-catalyzed terminal oxidative decarboxylation.</p><div class="scroll"><table>
+<p class="sub">Partial C. crocatus chondrochloren A biosynthesis graph for CndG-catalyzed terminal oxidative decarboxylation.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>1&#39;-carboxy-chondrochloren A</td>
   <td>is oxidatively decarboxylated by</td>
   <td>CndG 1&#39;-carboxy-chondrochloren decarboxylase</td>
   <td>CndG oxidatively decarboxylates the carboxylated pre-chondrochloren A precursor.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1074/jbc.M109.079707<br>DOI:10.1016/j.chembiol.2008.11.005<br>https://mibig.secondarymetabolites.org/repository/BGC0000970.5/BGC0000970.gbk<br>https://www.uniprot.org/uniprotkb/B9ZUK6<br>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1074/jbc.M109.079707</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>shown to be an FAD-dependent oxidative decarboxylase</dd><dt>notes</dt><dd>Rachid et al. inactivated cndG in Chondromyces crocatus Cm c5, observed pre-chondrochloren accumulation and loss of mature chondrochloren production, then expressed CndG in E. coli and assayed oxidative decarboxylation of pre-chondrochlorens.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1016/j.chembiol.2008.11.005</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Rachid et al. sequenced the AM988861 chondrochloren biosynthetic gene cluster from C. crocatus Cm c5 and nominated CndG as the candidate oxidative decarboxylase.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0000970.5/BGC0000970.gbk</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>MIBiG BGC0000970.5 maps the C. crocatus AM988861 chondrochloren biosynthetic gene cluster CDS CAQ43085.1 to cndG and cross-references UniProtKB:B9ZUK6.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/B9ZUK6</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>Reviewed UniProtKB:B9ZUK6 is the 541 aa C. crocatus CndG 1&#39;-carboxy-chondrochloren decarboxylase, cross-references AM988861 protein CAQ43085.1, and annotates RHEA:81491 from PMID:20080978.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>The Rhea Swiss-Prot mapping links UniProtKB:B9ZUK6 to RHEA:81491, the EC 4.1.1.129 1&#39;-carboxy-chondrochloren A decarboxylation reaction.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1074/jbc.M109.079707">DOI:10.1074/jbc.M109.079707</a><br><a href="https://doi.org/10.1016/j.chembiol.2008.11.005">DOI:10.1016/j.chembiol.2008.11.005</a><br><a href="https://mibig.secondarymetabolites.org/repository/BGC0000970.5/BGC0000970.gbk">https://mibig.secondarymetabolites.org/repository/BGC0000970.5/BGC0000970.gbk</a><br><a href="https://www.uniprot.org/uniprotkb/B9ZUK6">https://www.uniprot.org/uniprotkb/B9ZUK6</a><br><a href="https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv">https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1074/jbc.M109.079707">DOI:10.1074/jbc.M109.079707</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>shown to be an FAD-dependent oxidative decarboxylase</dd><dt>notes</dt><dd>Rachid et al. inactivated cndG in Chondromyces crocatus Cm c5, observed pre-chondrochloren accumulation and loss of mature chondrochloren production, then expressed CndG in E. coli and assayed oxidative decarboxylation of pre-chondrochlorens.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.chembiol.2008.11.005">DOI:10.1016/j.chembiol.2008.11.005</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Rachid et al. sequenced the AM988861 chondrochloren biosynthetic gene cluster from C. crocatus Cm c5 and nominated CndG as the candidate oxidative decarboxylase.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/repository/BGC0000970.5/BGC0000970.gbk">https://mibig.secondarymetabolites.org/repository/BGC0000970.5/BGC0000970.gbk</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>MIBiG BGC0000970.5 maps the C. crocatus AM988861 chondrochloren biosynthetic gene cluster CDS CAQ43085.1 to cndG and cross-references UniProtKB:B9ZUK6.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/B9ZUK6">https://www.uniprot.org/uniprotkb/B9ZUK6</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>Reviewed UniProtKB:B9ZUK6 is the 541 aa C. crocatus CndG 1&#39;-carboxy-chondrochloren decarboxylase, cross-references AM988861 protein CAQ43085.1, and annotates RHEA:81491 from <a href="https://pubmed.ncbi.nlm.nih.gov/20080978/">PMID:20080978</a>.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv">https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>The Rhea Swiss-Prot mapping links UniProtKB:B9ZUK6 to RHEA:81491, the EC 4.1.1.129 1&#39;-carboxy-chondrochloren A decarboxylation reaction.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -168,11 +170,11 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>forms</td>
   <td>chondrochloren A</td>
   <td>The CndG reaction yields mature chondrochloren A from the inactive carboxylated precursor.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1074/jbc.M109.079707<br>DOI:10.1016/j.chembiol.2008.11.005<br>https://mibig.secondarymetabolites.org/repository/BGC0000970.5/BGC0000970.gbk<br>https://www.uniprot.org/uniprotkb/B9ZUK6<br>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1074/jbc.M109.079707</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>shown to be an FAD-dependent oxidative decarboxylase</dd><dt>notes</dt><dd>Rachid et al. inactivated cndG in Chondromyces crocatus Cm c5, observed pre-chondrochloren accumulation and loss of mature chondrochloren production, then expressed CndG in E. coli and assayed oxidative decarboxylation of pre-chondrochlorens.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>DOI:10.1016/j.chembiol.2008.11.005</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Rachid et al. sequenced the AM988861 chondrochloren biosynthetic gene cluster from C. crocatus Cm c5 and nominated CndG as the candidate oxidative decarboxylase.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0000970.5/BGC0000970.gbk</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>MIBiG BGC0000970.5 maps the C. crocatus AM988861 chondrochloren biosynthetic gene cluster CDS CAQ43085.1 to cndG and cross-references UniProtKB:B9ZUK6.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/B9ZUK6</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>Reviewed UniProtKB:B9ZUK6 is the 541 aa C. crocatus CndG 1&#39;-carboxy-chondrochloren decarboxylase, cross-references AM988861 protein CAQ43085.1, and annotates RHEA:81491 from PMID:20080978.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>The Rhea Swiss-Prot mapping links UniProtKB:B9ZUK6 to RHEA:81491, the EC 4.1.1.129 1&#39;-carboxy-chondrochloren A decarboxylation reaction.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1074/jbc.M109.079707">DOI:10.1074/jbc.M109.079707</a><br><a href="https://doi.org/10.1016/j.chembiol.2008.11.005">DOI:10.1016/j.chembiol.2008.11.005</a><br><a href="https://mibig.secondarymetabolites.org/repository/BGC0000970.5/BGC0000970.gbk">https://mibig.secondarymetabolites.org/repository/BGC0000970.5/BGC0000970.gbk</a><br><a href="https://www.uniprot.org/uniprotkb/B9ZUK6">https://www.uniprot.org/uniprotkb/B9ZUK6</a><br><a href="https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv">https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1074/jbc.M109.079707">DOI:10.1074/jbc.M109.079707</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>shown to be an FAD-dependent oxidative decarboxylase</dd><dt>notes</dt><dd>Rachid et al. inactivated cndG in Chondromyces crocatus Cm c5, observed pre-chondrochloren accumulation and loss of mature chondrochloren production, then expressed CndG in E. coli and assayed oxidative decarboxylation of pre-chondrochlorens.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1016/j.chembiol.2008.11.005">DOI:10.1016/j.chembiol.2008.11.005</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Rachid et al. sequenced the AM988861 chondrochloren biosynthetic gene cluster from C. crocatus Cm c5 and nominated CndG as the candidate oxidative decarboxylase.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://mibig.secondarymetabolites.org/repository/BGC0000970.5/BGC0000970.gbk">https://mibig.secondarymetabolites.org/repository/BGC0000970.5/BGC0000970.gbk</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>MIBiG BGC0000970.5 maps the C. crocatus AM988861 chondrochloren biosynthetic gene cluster CDS CAQ43085.1 to cndG and cross-references UniProtKB:B9ZUK6.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/B9ZUK6">https://www.uniprot.org/uniprotkb/B9ZUK6</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>Reviewed UniProtKB:B9ZUK6 is the 541 aa C. crocatus CndG 1&#39;-carboxy-chondrochloren decarboxylase, cross-references AM988861 protein CAQ43085.1, and annotates RHEA:81491 from <a href="https://pubmed.ncbi.nlm.nih.gov/20080978/">PMID:20080978</a>.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv">https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>The Rhea Swiss-Prot mapping links UniProtKB:B9ZUK6 to RHEA:81491, the EC 4.1.1.129 1&#39;-carboxy-chondrochloren A decarboxylation reaction.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -180,19 +182,19 @@ derived from a source. This is what the rest of the record exists to support.</p
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">2 nodes, 1 edge</span></h2>
-<p class="sub">Native-reference identity only for CndH in Chondromyces crocatus Cm c5/taxon 52/AM988861.1. Placement in this owner is curator-inferred from the shared BGC0000970 context, not proof of an exact-product reaction. The MITE wildcard phenol model does not identify a complete carrier-bound substrate; carrier and reductase are not assigned. No chlorination, deletion phenotype, pathway order or physical complex is asserted. Historical UniProtKB:B9ZUJ5 is deleted; its UniParc identifier is not a current UniProtKB example. The CndH primary paper (DOI:10.1016/j.jmb.2008.10.057) returned HTTP 403 and the distinct cluster paper (DOI:10.1016/j.chembiol.2008.11.005) was inaccessible on 2026-10-08; retrieval stopped for both. No primary CndH experiment is independently adopted.</p><div class="scroll"><table>
+<p class="sub">Native-reference identity only for CndH in Chondromyces crocatus Cm c5/taxon 52/AM988861.1. Placement in this owner is curator-inferred from the shared BGC0000970 context, not proof of an exact-product reaction. The MITE wildcard phenol model does not identify a complete carrier-bound substrate; carrier and reductase are not assigned. No chlorination, deletion phenotype, pathway order or physical complex is asserted. Historical UniProtKB:B9ZUJ5 is deleted; its UniParc identifier is not a current UniProtKB example. The CndH primary paper (<a href="https://doi.org/10.1016/j.jmb.2008.10.057">DOI:10.1016/j.jmb.2008.10.057</a>) returned HTTP 403 and the distinct cluster paper (<a href="https://doi.org/10.1016/j.chembiol.2008.11.005">DOI:10.1016/j.chembiol.2008.11.005</a>) was inaccessible on 2026-10-08; retrieval stopped for both. No primary CndH experiment is independently adopted.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 2 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>cndH CDS (AM988861.1)</td>
   <td>encodes the native protein reference</td>
   <td>CndH (C. crocatus Cm c5 native-reference example)</td>
   <td>5294..6832 reverse strand; 1539-nt complete CDS including stop, 512 residues. The deposited PDB sample sequence matches, but this does not establish all coordinate residues, tag processing, the full experimental preparation or activity. Native sequence identity is distinct from a primary reaction claim.</td>
-  <td><details class="graph-evidence"><summary class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AM988861.1<br>https://www.ncbi.nlm.nih.gov/protein/CAQ43074.1<br>https://data.rcsb.org/rest/v1/core/polymer_entity/3E1T/1<br>https://rest.uniprot.org/uniprotkb/B9ZUJ5.json<br>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000494.json<br>https://www.ncbi.nlm.nih.gov/nuccore/AM988861.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/AM988861.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>/gene=&#34;cndH&#34;</dd><dt>notes</dt><dd>The 51,243-bp cluster deposition annotates cndH/CAQ43074.1 at complement(5294..6832), codon_start 1, translation table 11, strain Cm c5/taxon 52. The deposited halogenase label is not independently inspected activity evidence.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/CAQ43074.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Versioned GenPept CAQ43074.1 is the 512-residue C. crocatus Cm c5 conceptual translation of cndH and explicitly codes from complement(AM988861.1:5294..6832). Its historical B9ZUJ5 cross-reference must not be treated as an active UniProtKB entry.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://data.rcsb.org/rest/v1/core/polymer_entity/3E1T/1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Independent PDB 3E1T entity 1 deposition (chain A) gives a 512-residue sample sequence, cndh source gene and C. crocatus taxon 52. It names E. coli as expression host, not as native producer. This is deposited sequence metadata, not a read of the inaccessible paper methods or proof that every residue is resolved.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://rest.uniprot.org/uniprotkb/B9ZUJ5.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>Not part of a reference proteome</dd><dt>notes</dt><dd>Current endpoint reports entryType Inactive and inactiveReasonType DELETED, linking historical B9ZUJ5 to UniParc UPI0001932834. Neither is selected as a current UniProtKB example. Deletion is not evidence that the native protein does not exist.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000494.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Pinned active MITE0000494 v1 links CndH with CAQ43074.1 and BGC0000970. Its uniprot field contains a UniParc identifier. Its wildcard phenol chlorination model and heterologous-expression evidence code are not promoted into an independently verified complete-substrate reaction.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/AM988861.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Complete-CDS-aware reverse-strand translation, deposited translation, separate GenPept and PDB entity 1 sample sequence agree over all 512 residues. Matching gene, accession, native strain and taxon establish this reference identity. Placement in this owner is inferred from its existing AM988861.1/BGC0000970 context, not from an experiment on the exact owner. The current exact-gene/taxon or accession UniProtKB query returned zero entries; this bounded result does not establish global database absence.</dd></dl>
+  <td><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/AM988861.1">https://www.ncbi.nlm.nih.gov/nuccore/AM988861.1</a><br><a href="https://www.ncbi.nlm.nih.gov/protein/CAQ43074.1">https://www.ncbi.nlm.nih.gov/protein/CAQ43074.1</a><br><a href="https://data.rcsb.org/rest/v1/core/polymer_entity/3E1T/1">https://data.rcsb.org/rest/v1/core/polymer_entity/3E1T/1</a><br><a href="https://rest.uniprot.org/uniprotkb/B9ZUJ5.json">https://rest.uniprot.org/uniprotkb/B9ZUJ5.json</a><br><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000494.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000494.json</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/AM988861.1">https://www.ncbi.nlm.nih.gov/nuccore/AM988861.1</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/AM988861.1">https://www.ncbi.nlm.nih.gov/nuccore/AM988861.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>/gene=&#34;cndH&#34;</dd><dt>notes</dt><dd>The 51,243-bp cluster deposition annotates cndH/CAQ43074.1 at complement(5294..6832), codon_start 1, translation table 11, strain Cm c5/taxon 52. The deposited halogenase label is not independently inspected activity evidence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/protein/CAQ43074.1">https://www.ncbi.nlm.nih.gov/protein/CAQ43074.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Versioned GenPept CAQ43074.1 is the 512-residue C. crocatus Cm c5 conceptual translation of cndH and explicitly codes from complement(AM988861.1:5294..6832). Its historical B9ZUJ5 cross-reference must not be treated as an active UniProtKB entry.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://data.rcsb.org/rest/v1/core/polymer_entity/3E1T/1">https://data.rcsb.org/rest/v1/core/polymer_entity/3E1T/1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Independent PDB 3E1T entity 1 deposition (chain A) gives a 512-residue sample sequence, cndh source gene and C. crocatus taxon 52. It names E. coli as expression host, not as native producer. This is deposited sequence metadata, not a read of the inaccessible paper methods or proof that every residue is resolved.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://rest.uniprot.org/uniprotkb/B9ZUJ5.json">https://rest.uniprot.org/uniprotkb/B9ZUJ5.json</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>Not part of a reference proteome</dd><dt>notes</dt><dd>Current endpoint reports entryType Inactive and inactiveReasonType DELETED, linking historical B9ZUJ5 to UniParc UPI0001932834. Neither is selected as a current UniProtKB example. Deletion is not evidence that the native protein does not exist.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000494.json">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000494.json</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Pinned active MITE0000494 v1 links CndH with CAQ43074.1 and BGC0000970. Its uniprot field contains a UniParc identifier. Its wildcard phenol chlorination model and heterologous-expression evidence code are not promoted into an independently verified complete-substrate reaction.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/AM988861.1">https://www.ncbi.nlm.nih.gov/nuccore/AM988861.1</a></dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Complete-CDS-aware reverse-strand translation, deposited translation, separate GenPept and PDB entity 1 sample sequence agree over all 512 residues. Matching gene, accession, native strain and taxon establish this reference identity. Placement in this owner is inferred from its existing AM988861.1/BGC0000970 context, not from an experiment on the exact owner. The current exact-gene/taxon or accession UniProtKB query returned zero entries; this bounded result does not establish global database absence.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -203,30 +205,41 @@ by the corpus tests.</p>
 
 
 <h2>Elsewhere in the fleet</h2>
-<ul><li>AntibioticMech — <a class="mono" href="https://culturebotai.github.io/AntibioticMech/pages/antimicrobial_unspecified/chondrochloren-a.html">CHEBI:132426</a>    (same structure, same inchikey)</li>
+<ul><li>AntibioticMech — <a class="mono" href="https://culturebotai.github.io/AntibioticMech/pages/unspecified/chondrochloren-a.html">CHEBI:132426</a>    (same structure, same inchikey)</li>
 </ul>
 
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=FYBGSKAWXCBCIQ-JRAUAZSASA-N">AntibioticMech (chondrochloren A) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=CHEBI%3A132426">MediaIngredientMech (CHEBI:132426) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A52">TaxonMech: Chondromyces crocatus (NCBITaxon:52) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000970">PathwayMech (mibig:BGC0000970) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q=CHEBI%3A132426">MediaIngredientMech (CHEBI:132426) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A52">TaxonMech: Chondromyces crocatus (NCBITaxon:52) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0000970">PathwayMech (mibig:BGC0000970) &nearr;</a>
 </div>
 
 
+<h2 id="curation-history">Curation history <span class="tag">5</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-13T10:43:11Z">2026-10-13T10:43:11Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources<p>Seeded from the committed inventories and curation tables.</p></li>
+<li><time datetime="2026-10-08T14:38:19Z">2026-10-08T14:38:19Z</time> &middot; <strong>RECORD_CURATED</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added one native-reference-only CndH/NCBIProtein:CAQ43074.1 encoding graph. Full reverse-strand CDS, deposited translation, separate GenPept and PDB 3E1T entity 1 sample sequences agree over 512 residues. Historical UniProtKB:B9ZUJ5 is deleted; UniParc UPI0001932834 is not a current UniProtKB example. Placement is inferred from the shared BGC0000970 context. No chlorination reaction, carrier/reductase identity, phenotype or experimental preparation is adopted. Existing CndG pathway/graph, seeded fields, source grades, status and prior history are preserved.</p></li>
+<li><time datetime="2026-09-30T14:09:41Z">2026-09-30T14:09:41Z</time> &middot; <strong>ADD_BIOSYNTHETIC_PROTEIN_GRAPH</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added exact UniProtKB:B9ZUK6 CndG grounding, the RHEA:81491 terminal chondrochloren A oxidative decarboxylation pathway step, and a BIOSYNTHESIS causal graph linking 1&#39;-carboxy-chondrochloren A through CndG to chondrochloren A.</p></li>
+<li><time datetime="2026-09-25T03:01:58Z">2026-09-25T03:01:58Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-09-10T05:54:06Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
+
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0000970</td><td>MIBIG</td><td>5</td></tr>
-<tr><td class="mono">CHEBI:132426</td><td>CHEBI</td><td>3-star</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0000970">BGC0000970</a></td><td>MIBIG</td><td>5</td></tr>
+<tr><td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_132426">CHEBI:132426</a></td><td>CHEBI</td><td>3-star</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/polyketides/chondrochloren-a.yaml">data/natural_products/polyketides/chondrochloren-a.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20CHEBI%3A132426&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Fpolyketides%2Fchondrochloren-a.html">Report a problem with this record</a>: opens a GitHub issue that names CHEBI:132426 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Record last updated 2026-10-13 10:43 UTC, its latest curation event. Generated from the committed corpus. Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

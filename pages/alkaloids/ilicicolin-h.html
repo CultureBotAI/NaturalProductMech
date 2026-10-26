@@ -9,6 +9,7 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site"><div class="wrap">
   <a class="home" href="../index.html">NaturalProductMech</a>
   <nav aria-label="Main navigation">
@@ -16,12 +17,13 @@
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
     <a href="../sequence-map.html">Sequence map</a>
-    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="record-topbar">
   <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Alkaloids</a> &middot; ilicicolin H</p>
   <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
@@ -30,21 +32,21 @@
   </form>
 </div>
 <h1>ilicicolin H</h1>
-<p class="sub"><span class="mono">CHEBI:77772</span>
+<p class="sub"><span class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_77772">CHEBI:77772</a></span>
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 <span class="tag">antifungal</span><span class="tag">antimicrobial unspecified</span><span class="tag">cytotoxic</span><span class="tag">enzyme inhibitor</span></p>
 <details class="status-legend"><summary>What these status tags mean</summary>
-<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/alkaloids/ilicicolin-h.yaml">record history</a>.</p>
+<p>This record is <strong>SEEDED</strong>: “Written from the committed inventories; no curator sign-off yet.” (the schema's <a href="../schema.html#enum-CurationStatusEnum">definition</a>).</p><p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="#curation-history">curation history</a> below and the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/alkaloids/ilicicolin-h.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
 </details>
 <p>An aromatic ketone in which the ketone carbonyl group is attached to a (1R,2R,4aS,7S,8aR)-4,7-dimethyl-1-[(1E)-prop-1-en-1-yl]-1,2,4a,5,6,7,8,8a-octahydronaphthalen-2-yl group and a 4-hydroxy-5-(4-hydroxyphenyl)-2-oxo-1,2-dihydropyridin-3-yl group. Isolated from the from the &#34;imperfect&#34; fungus Cylindrocladium iliciola strain MFC-870.</p>
 <h2>Structure</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Structure"><table>
 <tr><th>Standard InChIKey</th><td class="mono">BYVVOONSAAQMKI-RFKCMYLBSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">C/C=C/[C@@H]1[C@H]2C[C@H](CC[C@@H]2C(=C[C@H]1C(=O)C3=C(C(=CNC3=O)C4=CC=C(C=C4)O)O)C)C</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">pubchem:54704283, npatlas:NPA013324</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/compound/54704283">pubchem:54704283</a>, <a href="https://www.npatlas.org/explore/compounds/NPA013324">npatlas:NPA013324</a></td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Alkaloids</a> —
@@ -57,50 +59,50 @@ nrps, pks, from MIBiG.</p>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
 what the evidence addressed — a knockout and a database assertion are not the
 same claim.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Producer organisms"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Neonectria sp. DH2<br><span class="mono">NCBITaxon:1735992</span></td>
+  <td>Neonectria sp. DH2<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1735992">NCBITaxon:1735992</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0002035</td>
-  <td><span class="mono">DOI:10.3390/molecules24122267</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002035">mibig:BGC0002035</a></td>
+  <td><span class="mono"><a href="https://doi.org/10.3390/molecules24122267">DOI:10.3390/molecules24122267</a></span></td>
 </tr>
 <tr>
-  <td>Talaromyces variabilis<br><span class="mono">NCBITaxon:28576</span></td>
+  <td>Talaromyces variabilis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=28576">NCBITaxon:28576</a></span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
-  <td class="mono">mibig:BGC0002093</td>
-  <td><span class="mono">DOI:10.3390/molecules24122267</span></td>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002093">mibig:BGC0002093</a></td>
+  <td><span class="mono"><a href="https://doi.org/10.3390/molecules24122267">DOI:10.3390/molecules24122267</a></span></td>
 </tr>
 </table></div>
 
 <h2 id="occurrences">Occurrences <span class="tag">1</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Occurrences"><table>
 <tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
 <tr>
-  <td>Calonectria pyrochroa<br><span class="mono">NCBITaxon:57139</span></td>
+  <td>Calonectria pyrochroa<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=57139">NCBITaxon:57139</a></span></td>
   <td>LOTUS</td>
-  <td class="mono">DOI:10.1016/S0040-4039(00)93121-6</td>
+  <td class="mono"><a href="https://doi.org/10.1016/S0040-4039%2800%2993121-6">DOI:10.1016/S0040-4039(00)93121-6</a></td>
 </tr>
 </table></div>
 
 <h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">2</span></h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthetic gene clusters"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
-  <td class="mono">mibig:BGC0002035</td>
-  <td>Neonectria sp. DH2<br><span class="mono">NCBITaxon:1735992</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002035">mibig:BGC0002035</a></td>
+  <td>Neonectria sp. DH2<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1735992">NCBITaxon:1735992</a></span>
 </td>
   <td><span class="tag ">CLUSTER_UNSTATED</span></td>
-  <td class="mono">genbank:RQWH01000002.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/RQWH01000002.1">genbank:RQWH01000002.1</a></td>
 </tr>
 <tr>
-  <td class="mono">mibig:BGC0002093</td>
-  <td>Talaromyces variabilis<br><span class="mono">NCBITaxon:28576</span>
+  <td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002093">mibig:BGC0002093</a></td>
+  <td>Talaromyces variabilis<br><span class="mono"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=28576">NCBITaxon:28576</a></span>
 </td>
   <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
-  <td class="mono">genbank:MK539848.1</td>
+  <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/nuccore/MK539848.1">genbank:MK539848.1</a></td>
 </tr>
 </table></div>
 <p class="sub">A locus claim and a taxon claim are different questions.
@@ -110,20 +112,20 @@ isolation report left it.</p>
 <h2>Biosynthesis <span class="tag causal">curated</span></h2>
 <p class="sub">Written by a curator with claim-level evidence on each step; not
 derived from a source. This is what the rest of the record exists to support.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Biosynthesis steps"><table>
 <tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
 <tr>
   <td>1</td>
-  <td>IccE NADH-dependent flavin oxidoreductase<br><span class="mono">UniProtKB:A0A482N8M8</span></td>
-  <td class="mono">RHEA:64564</td>
-  <td class="mono">CHEBI:155888 &rarr; CHEBI:77772</td>
-  <td class="mono">DOI:10.1021/jacs.9b02204</td>
+  <td>IccE NADH-dependent flavin oxidoreductase<br><span class="mono"><a href="https://www.uniprot.org/uniprotkb/A0A482N8M8/entry">UniProtKB:A0A482N8M8</a></span></td>
+  <td class="mono"><a href="https://www.rhea-db.org/rhea/64564">RHEA:64564</a></td>
+  <td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_155888">CHEBI:155888</a> &rarr; <a href="http://purl.obolibrary.org/obo/CHEBI_77772">CHEBI:77772</a></td>
+  <td class="mono"><a href="https://doi.org/10.1021/jacs.9b02204">DOI:10.1021/jacs.9b02204</a></td>
 </tr>
 </table></div>
 <p class="sub">Step 1: Talaromyces variabilis HXQ-H-1 IccE epimerizes 8-epi-ilicicolin H to ilicicolin H; upstream IccA-IccD assembly is left unexpanded.</p>
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
-  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for ilicicolin H">
+  <svg viewBox="0 0 860 150" width="100%" role="img" aria-label="Biosynthetic and bioactivity flow for ilicicolin H">
     <defs>
       <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
@@ -156,17 +158,17 @@ derived from a source. This is what the rest of the record exists to support.</p
 </div>
 
 <h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
-<p class="sub">Talaromyces variabilis HXQ-H-1 IccE epimerizes 8-epi-ilicicolin H to form ilicicolin H.</p><div class="scroll"><table>
+<p class="sub">Talaromyces variabilis HXQ-H-1 IccE epimerizes 8-epi-ilicicolin H to form ilicicolin H.</p><div class="scroll" role="region" tabindex="0" aria-label="Causal graph 1 edges"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>8-epi-ilicicolin H</td>
   <td>is epimerized by</td>
   <td>IccE</td>
   <td>IccE catalyzes the RHEA:64564 epimerization from 8-epi-ilicicolin H.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/jacs.9b02204<br>https://www.ncbi.nlm.nih.gov/nuccore/MK539848.1<br>https://www.uniprot.org/uniprotkb/A0A482N8M8<br>https://www.rhea-db.org/rhea/64564</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/jacs.9b02204</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Zhang et al. characterized the Penicillium variabile, synonymous with Talaromyces variabilis, icc pathway and showed that IccE converts 8-epi-ilicicolin H to ilicicolin H in heterologous reconstitution and in vitro epimerization experiments.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/MK539848.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>GenBank MK539848.1 is the Talaromyces variabilis HXQ-H-1 ilicicolin H cluster sequence and places iccE at protein_id QBQ83707.1.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A482N8M8</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>Reviewed UniProtKB:A0A482N8M8 is the Talaromyces variabilis IccE / QBQ83707.1 gene product and annotates the RHEA:64564 catalytic activity of 8-epi-ilicicolin H epimerization.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.rhea-db.org/rhea/64564</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>RHEA:64564 is the 8-epi-ilicicolin H to ilicicolin H epimerization; the left-to-right RHEA:64565 direction maps to UniProtKB:A0A482N8M8.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/jacs.9b02204">DOI:10.1021/jacs.9b02204</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/MK539848.1">https://www.ncbi.nlm.nih.gov/nuccore/MK539848.1</a><br><a href="https://www.uniprot.org/uniprotkb/A0A482N8M8">https://www.uniprot.org/uniprotkb/A0A482N8M8</a><br><a href="https://www.rhea-db.org/rhea/64564">https://www.rhea-db.org/rhea/64564</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/jacs.9b02204">DOI:10.1021/jacs.9b02204</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Zhang et al. characterized the Penicillium variabile, synonymous with Talaromyces variabilis, icc pathway and showed that IccE converts 8-epi-ilicicolin H to ilicicolin H in heterologous reconstitution and in vitro epimerization experiments.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/MK539848.1">https://www.ncbi.nlm.nih.gov/nuccore/MK539848.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>GenBank MK539848.1 is the Talaromyces variabilis HXQ-H-1 ilicicolin H cluster sequence and places iccE at protein_id QBQ83707.1.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0A482N8M8">https://www.uniprot.org/uniprotkb/A0A482N8M8</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>Reviewed UniProtKB:A0A482N8M8 is the Talaromyces variabilis IccE / QBQ83707.1 gene product and annotates the RHEA:64564 catalytic activity of 8-epi-ilicicolin H epimerization.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.rhea-db.org/rhea/64564">https://www.rhea-db.org/rhea/64564</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>RHEA:64564 is the 8-epi-ilicicolin H to ilicicolin H epimerization; the left-to-right RHEA:64565 direction maps to UniProtKB:A0A482N8M8.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -175,10 +177,10 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>forms</td>
   <td>ilicicolin H</td>
   <td>IccE forms ilicicolin H as the final product of the Talaromyces variabilis icc pathway.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/jacs.9b02204<br>https://www.ncbi.nlm.nih.gov/nuccore/MK539848.1<br>https://www.uniprot.org/uniprotkb/A0A482N8M8<br>https://www.rhea-db.org/rhea/64564</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/jacs.9b02204</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Zhang et al. characterized the Penicillium variabile, synonymous with Talaromyces variabilis, icc pathway and showed that IccE converts 8-epi-ilicicolin H to ilicicolin H in heterologous reconstitution and in vitro epimerization experiments.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/MK539848.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>GenBank MK539848.1 is the Talaromyces variabilis HXQ-H-1 ilicicolin H cluster sequence and places iccE at protein_id QBQ83707.1.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A482N8M8</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>Reviewed UniProtKB:A0A482N8M8 is the Talaromyces variabilis IccE / QBQ83707.1 gene product and annotates the RHEA:64564 catalytic activity of 8-epi-ilicicolin H epimerization.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.rhea-db.org/rhea/64564</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>RHEA:64564 is the 8-epi-ilicicolin H to ilicicolin H epimerization; the left-to-right RHEA:64565 direction maps to UniProtKB:A0A482N8M8.</dd></dl>
+  <td><span class="mono"><a href="https://doi.org/10.1021/jacs.9b02204">DOI:10.1021/jacs.9b02204</a><br><a href="https://www.ncbi.nlm.nih.gov/nuccore/MK539848.1">https://www.ncbi.nlm.nih.gov/nuccore/MK539848.1</a><br><a href="https://www.uniprot.org/uniprotkb/A0A482N8M8">https://www.uniprot.org/uniprotkb/A0A482N8M8</a><br><a href="https://www.rhea-db.org/rhea/64564">https://www.rhea-db.org/rhea/64564</a></span><details class="graph-evidence"><summary>Evidence detail</summary><ul><li><dl><dt>reference</dt><dd><a href="https://doi.org/10.1021/jacs.9b02204">DOI:10.1021/jacs.9b02204</a></dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Zhang et al. characterized the Penicillium variabile, synonymous with Talaromyces variabilis, icc pathway and showed that IccE converts 8-epi-ilicicolin H to ilicicolin H in heterologous reconstitution and in vitro epimerization experiments.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.ncbi.nlm.nih.gov/nuccore/MK539848.1">https://www.ncbi.nlm.nih.gov/nuccore/MK539848.1</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>GenBank MK539848.1 is the Talaromyces variabilis HXQ-H-1 ilicicolin H cluster sequence and places iccE at protein_id QBQ83707.1.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.uniprot.org/uniprotkb/A0A482N8M8">https://www.uniprot.org/uniprotkb/A0A482N8M8</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>Reviewed UniProtKB:A0A482N8M8 is the Talaromyces variabilis IccE / QBQ83707.1 gene product and annotates the RHEA:64564 catalytic activity of 8-epi-ilicicolin H epimerization.</dd></dl>
+</li><li><dl><dt>reference</dt><dd><a href="https://www.rhea-db.org/rhea/64564">https://www.rhea-db.org/rhea/64564</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>RHEA:64564 is the 8-epi-ilicicolin H to ilicicolin H epimerization; the left-to-right RHEA:64565 direction maps to UniProtKB:A0A482N8M8.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -189,108 +191,118 @@ by the corpus tests.</p>
 
 <h2>Bioactivities <span class="tag">17</span></h2>
 <p class="sub">Entries preserve source qualifiers, targets and evidence. Repeated assay names or values are not independent replications; inspect source detail for differences.</p>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Bioactivities"><table>
 <tr><th>Assay</th><th>Result</th><th>Target enzyme</th><th>Source detail</th></tr>
-<tr><td>Anti-Fungal Single Agen: CaCi2 Measured in Microorganism System Using Plate Reader - 2148-01_Inhibitor_Dose_DryPowder_Activity_Set4</td><td>OTHER 4.81 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:624006</summary><dl><dt>assay</dt><dd>Anti-Fungal Single Agen: CaCi2 Measured in Microorganism System Using Plate Reader - 2148-01_Inhibitor_Dose_DryPowder_Activity_Set4</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:624006</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624006, deposited by Broad Institute; assay type Confirmatory. Source endpoint: AC50.</dd></dl>
+<tr><td>Anti-Fungal Single Agen: CaCi2 Measured in Microorganism System Using Plate Reader - 2148-01_Inhibitor_Dose_DryPowder_Activity_Set4</td><td>OTHER 4.81 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/624006">pubchem.aid:624006</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Anti-Fungal Single Agen: CaCi2 Measured in Microorganism System Using Plate Reader - 2148-01_Inhibitor_Dose_DryPowder_Activity_Set4</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/624006">pubchem.aid:624006</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624006, deposited by Broad Institute; assay type Confirmatory. Source endpoint: AC50.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>4.81</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ANTIFUNGAL</dd></dl>
 </details></td></tr>
-<tr><td>Anti-Fungal Single Agent: C.glabrata growth, Glycerol Measured in Microorganism System Using Plate Reader - 2148-04_Inhibitor_Dose_DryPowder_Activity_Set3</td><td>OTHER 2.94 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:623965</summary><dl><dt>assay</dt><dd>Anti-Fungal Single Agent: C.glabrata growth, Glycerol Measured in Microorganism System Using Plate Reader - 2148-04_Inhibitor_Dose_DryPowder_Activity_Set3</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:623965</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 623965, deposited by Broad Institute; assay type Confirmatory. Source endpoint: AC50.</dd></dl>
+<tr><td>Anti-Fungal Single Agent: C.glabrata growth, Glycerol Measured in Microorganism System Using Plate Reader - 2148-04_Inhibitor_Dose_DryPowder_Activity_Set3</td><td>OTHER 2.94 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/623965">pubchem.aid:623965</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Anti-Fungal Single Agent: C.glabrata growth, Glycerol Measured in Microorganism System Using Plate Reader - 2148-04_Inhibitor_Dose_DryPowder_Activity_Set3</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/623965">pubchem.aid:623965</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 623965, deposited by Broad Institute; assay type Confirmatory. Source endpoint: AC50.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>2.94</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ANTIFUNGAL</dd></dl>
 </details></td></tr>
-<tr><td>Anti-Fungal Single Agent: C.glabrata growth, Glycerol Measured in Microorganism System Using Plate Reader - 2148-04_Inhibitor_Dose_DryPowder_Activity_Set4</td><td>OTHER 2.45 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:624014</summary><dl><dt>assay</dt><dd>Anti-Fungal Single Agent: C.glabrata growth, Glycerol Measured in Microorganism System Using Plate Reader - 2148-04_Inhibitor_Dose_DryPowder_Activity_Set4</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:624014</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624014, deposited by Broad Institute; assay type Confirmatory. Source endpoint: AC50.</dd></dl>
+<tr><td>Anti-Fungal Single Agent: C.glabrata growth, Glycerol Measured in Microorganism System Using Plate Reader - 2148-04_Inhibitor_Dose_DryPowder_Activity_Set4</td><td>OTHER 2.45 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/624014">pubchem.aid:624014</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Anti-Fungal Single Agent: C.glabrata growth, Glycerol Measured in Microorganism System Using Plate Reader - 2148-04_Inhibitor_Dose_DryPowder_Activity_Set4</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/624014">pubchem.aid:624014</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624014, deposited by Broad Institute; assay type Confirmatory. Source endpoint: AC50.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>2.45</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ANTIFUNGAL</dd></dl>
 </details></td></tr>
-<tr><td>Anti-Fungal Single Agent: S.cerevisiae growth, Glycerol Measured in Microorganism System Using Plate Reader - 2148-06_Inhibitor_Dose_DryPowder_Activity_Set3</td><td>OTHER 0.0335 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:623969</summary><dl><dt>assay</dt><dd>Anti-Fungal Single Agent: S.cerevisiae growth, Glycerol Measured in Microorganism System Using Plate Reader - 2148-06_Inhibitor_Dose_DryPowder_Activity_Set3</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:623969</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 623969, deposited by Broad Institute; assay type Confirmatory. Source endpoint: AC50.</dd></dl>
+<tr><td>Anti-Fungal Single Agent: S.cerevisiae growth, Glycerol Measured in Microorganism System Using Plate Reader - 2148-06_Inhibitor_Dose_DryPowder_Activity_Set3</td><td>OTHER 0.0335 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/623969">pubchem.aid:623969</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Anti-Fungal Single Agent: S.cerevisiae growth, Glycerol Measured in Microorganism System Using Plate Reader - 2148-06_Inhibitor_Dose_DryPowder_Activity_Set3</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/623969">pubchem.aid:623969</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 623969, deposited by Broad Institute; assay type Confirmatory. Source endpoint: AC50.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.0335</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ANTIFUNGAL</dd></dl>
 </details></td></tr>
-<tr><td>Anti-Fungal Single Agent: S.cerevisiae growth, Glycerol Measured in Microorganism System Using Plate Reader - 2148-06_Inhibitor_Dose_DryPowder_Activity_Set4</td><td>OTHER 0.0275 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:624012</summary><dl><dt>assay</dt><dd>Anti-Fungal Single Agent: S.cerevisiae growth, Glycerol Measured in Microorganism System Using Plate Reader - 2148-06_Inhibitor_Dose_DryPowder_Activity_Set4</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:624012</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624012, deposited by Broad Institute; assay type Confirmatory. Source endpoint: AC50.</dd></dl>
+<tr><td>Anti-Fungal Single Agent: S.cerevisiae growth, Glycerol Measured in Microorganism System Using Plate Reader - 2148-06_Inhibitor_Dose_DryPowder_Activity_Set4</td><td>OTHER 0.0275 uM; ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/624012">pubchem.aid:624012</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Anti-Fungal Single Agent: S.cerevisiae growth, Glycerol Measured in Microorganism System Using Plate Reader - 2148-06_Inhibitor_Dose_DryPowder_Activity_Set4</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubchem.ncbi.nlm.nih.gov/bioassay/624012">pubchem.aid:624012</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624012, deposited by Broad Institute; assay type Confirmatory. Source endpoint: AC50.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>0.0275</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ANTIFUNGAL</dd></dl>
 </details></td></tr>
-<tr><td>HPAF-II Cancer Cell Toxicity qHTS against the NCATS CANVASS Library</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>PMID:30648156</summary><dl><dt>assay</dt><dd>HPAF-II Cancer Cell Toxicity qHTS against the NCATS CANVASS Library</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:30648156</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347346, deposited by NCGC; assay type Confirmatory.</dd></dl>
+<tr><td>HPAF-II Cancer Cell Toxicity qHTS against the NCATS CANVASS Library</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/30648156/">PMID:30648156</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>HPAF-II Cancer Cell Toxicity qHTS against the NCATS CANVASS Library</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/30648156/">PMID:30648156</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347346, deposited by NCGC; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>KB-3-1 Cancer Cell Toxicity qHTS against the NCATS CANVASS Library</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>PMID:30648156</summary><dl><dt>assay</dt><dd>KB-3-1 Cancer Cell Toxicity qHTS against the NCATS CANVASS Library</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:30648156</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347366, deposited by NCGC; assay type Confirmatory.</dd></dl>
+<tr><td>KB-3-1 Cancer Cell Toxicity qHTS against the NCATS CANVASS Library</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/30648156/">PMID:30648156</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>KB-3-1 Cancer Cell Toxicity qHTS against the NCATS CANVASS Library</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/30648156/">PMID:30648156</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347366, deposited by NCGC; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>KB-8-5-11 Cancer Cell Toxicity qHTS against the NCATS CANVASS Library</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>PMID:30648156</summary><dl><dt>assay</dt><dd>KB-8-5-11 Cancer Cell Toxicity qHTS against the NCATS CANVASS Library</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:30648156</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347364, deposited by NCGC; assay type Confirmatory.</dd></dl>
+<tr><td>KB-8-5-11 Cancer Cell Toxicity qHTS against the NCATS CANVASS Library</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/30648156/">PMID:30648156</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>KB-8-5-11 Cancer Cell Toxicity qHTS against the NCATS CANVASS Library</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/30648156/">PMID:30648156</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347364, deposited by NCGC; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>OV-SAHO Cancer Cell Toxicity qHTS against the NCATS CANVASS Library</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>PMID:30648156</summary><dl><dt>assay</dt><dd>OV-SAHO Cancer Cell Toxicity qHTS against the NCATS CANVASS Library</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:30648156</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347348, deposited by NCGC; assay type Confirmatory.</dd></dl>
+<tr><td>OV-SAHO Cancer Cell Toxicity qHTS against the NCATS CANVASS Library</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/30648156/">PMID:30648156</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>OV-SAHO Cancer Cell Toxicity qHTS against the NCATS CANVASS Library</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/30648156/">PMID:30648156</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347348, deposited by NCGC; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>Primary screen NINDS Rhodamine qHTS for Zika virus inhibitors</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>PMID:33229545</summary><dl><dt>assay</dt><dd>Primary screen NINDS Rhodamine qHTS for Zika virus inhibitors</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:33229545</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347160, deposited by NCGC; assay type Confirmatory.</dd></dl>
+<tr><td>Primary screen NINDS Rhodamine qHTS for Zika virus inhibitors</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/33229545/">PMID:33229545</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Primary screen NINDS Rhodamine qHTS for Zika virus inhibitors</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/33229545/">PMID:33229545</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347160, deposited by NCGC; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd></dl>
 </details></td></tr>
-<tr><td>SW1088 Cancer Cell Toxicity qHTS against the NCATS CANVASS Library</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>PMID:30648156</summary><dl><dt>assay</dt><dd>SW1088 Cancer Cell Toxicity qHTS against the NCATS CANVASS Library</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:30648156</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347350, deposited by NCGC; assay type Confirmatory.</dd></dl>
+<tr><td>SW1088 Cancer Cell Toxicity qHTS against the NCATS CANVASS Library</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/30648156/">PMID:30648156</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>SW1088 Cancer Cell Toxicity qHTS against the NCATS CANVASS Library</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/30648156/">PMID:30648156</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347350, deposited by NCGC; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>UWB1.289 Cancer Cell Toxicity qHTS against the NCATS CANVASS Library</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>PMID:30648156</summary><dl><dt>assay</dt><dd>UWB1.289 Cancer Cell Toxicity qHTS against the NCATS CANVASS Library</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:30648156</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347347, deposited by NCGC; assay type Confirmatory.</dd></dl>
+<tr><td>UWB1.289 Cancer Cell Toxicity qHTS against the NCATS CANVASS Library</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/30648156/">PMID:30648156</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>UWB1.289 Cancer Cell Toxicity qHTS against the NCATS CANVASS Library</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/30648156/">PMID:30648156</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347347, deposited by NCGC; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
 </details></td></tr>
-<tr><td>Vero-766 cells viability qHTS against the NCATS CANVASS Library: Counterscreen for Zika virus inhibition assay</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>PMID:30648156</summary><dl><dt>assay</dt><dd>Vero-766 cells viability qHTS against the NCATS CANVASS Library: Counterscreen for Zika virus inhibition assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:30648156</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347394, deposited by NCGC; assay type Confirmatory.</dd></dl>
+<tr><td>Vero-766 cells viability qHTS against the NCATS CANVASS Library: Counterscreen for Zika virus inhibition assay</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/30648156/">PMID:30648156</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>Vero-766 cells viability qHTS against the NCATS CANVASS Library: Counterscreen for Zika virus inhibition assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/30648156/">PMID:30648156</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347394, deposited by NCGC; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd></dl>
 </details></td></tr>
-<tr><td>qHTS assay for small molecule disruptors of mitochondrial membrane potential screened against the NCATS CANVASS Library</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>PMID:30648156</summary><dl><dt>assay</dt><dd>qHTS assay for small molecule disruptors of mitochondrial membrane potential screened against the NCATS CANVASS Library</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:30648156</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347389, deposited by NCGC; assay type Confirmatory.</dd></dl>
+<tr><td>qHTS assay for small molecule disruptors of mitochondrial membrane potential screened against the NCATS CANVASS Library</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/30648156/">PMID:30648156</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>qHTS assay for small molecule disruptors of mitochondrial membrane potential screened against the NCATS CANVASS Library</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/30648156/">PMID:30648156</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347389, deposited by NCGC; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd></dl>
 </details></td></tr>
-<tr><td>qHTS for Hypoxia signaling pathway (HIF-1) antagonists against the NCATS CANVASS Library</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>PMID:30648156</summary><dl><dt>assay</dt><dd>qHTS for Hypoxia signaling pathway (HIF-1) antagonists against the NCATS CANVASS Library</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:30648156</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347374, deposited by NCGC; assay type Confirmatory.</dd></dl>
+<tr><td>qHTS for Hypoxia signaling pathway (HIF-1) antagonists against the NCATS CANVASS Library</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/30648156/">PMID:30648156</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>qHTS for Hypoxia signaling pathway (HIF-1) antagonists against the NCATS CANVASS Library</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/30648156/">PMID:30648156</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347374, deposited by NCGC; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd></dl>
 </details></td></tr>
-<tr><td>qHTS for Hypoxia signaling pathway (HIF-1) antagonists against the NCATS CANVASS Library</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>PMID:30648156</summary><dl><dt>assay</dt><dd>qHTS for Hypoxia signaling pathway (HIF-1) antagonists against the NCATS CANVASS Library</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:30648156</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347374, deposited by NCGC; assay type Confirmatory. Target accession AAC68568 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+<tr><td>qHTS for Hypoxia signaling pathway (HIF-1) antagonists against the NCATS CANVASS Library</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/30648156/">PMID:30648156</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>qHTS for Hypoxia signaling pathway (HIF-1) antagonists against the NCATS CANVASS Library</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/30648156/">PMID:30648156</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347374, deposited by NCGC; assay type Confirmatory. Target accession AAC68568 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd></dl>
 </details></td></tr>
-<tr><td>qHTS for inhibitors of ER calcium dysfunction: SERCaMP assay screened against the NCATS CANVASS Library</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>PMID:30648156</summary><dl><dt>assay</dt><dd>qHTS for inhibitors of ER calcium dysfunction: SERCaMP assay screened against the NCATS CANVASS Library</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:30648156</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347393, deposited by NCGC; assay type Confirmatory.</dd></dl>
+<tr><td>qHTS for inhibitors of ER calcium dysfunction: SERCaMP assay screened against the NCATS CANVASS Library</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><span class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/30648156/">PMID:30648156</a></span><details><summary>Source fields</summary><dl><dt>assay</dt><dd>qHTS for inhibitors of ER calcium dysfunction: SERCaMP assay screened against the NCATS CANVASS Library</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd><a href="https://pubmed.ncbi.nlm.nih.gov/30648156/">PMID:30648156</a></dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1347393, deposited by NCGC; assay type Confirmatory.</dd></dl>
 </li></ul>
 </dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
 </details></td></tr>
 </table></div>
 
 <h2>Elsewhere in the fleet</h2>
-<ul><li>AntibioticMech — <a class="mono" href="https://culturebotai.github.io/AntibioticMech/pages/antimicrobial_unspecified/ilicicolin-h.html">CHEBI:77772</a>    (same structure, same inchikey)</li>
+<ul><li>AntibioticMech — <a class="mono" href="https://culturebotai.github.io/AntibioticMech/pages/unspecified/ilicicolin-h.html">CHEBI:77772</a>    (same structure, same inchikey)</li>
 </ul>
 
 <h2>Explore across X-Mech</h2>
 <div class="cross-mech-links">
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=BYVVOONSAAQMKI-RFKCMYLBSA-N">AntibioticMech (ilicicolin H) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=CHEBI%3A77772">MediaIngredientMech (CHEBI:77772) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A1735992">TaxonMech: Neonectria sp. DH2 (NCBITaxon:1735992) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A28576">TaxonMech: Talaromyces variabilis (NCBITaxon:28576) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0002035">PathwayMech (mibig:BGC0002035) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0002093">PathwayMech (mibig:BGC0002093) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q=CHEBI%3A77772">MediaIngredientMech (CHEBI:77772) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A1735992">TaxonMech: Neonectria sp. DH2 (NCBITaxon:1735992) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon%3A28576">TaxonMech: Talaromyces variabilis (NCBITaxon:28576) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0002035">PathwayMech (mibig:BGC0002035) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/pages/browse.html?q=BGC0002093">PathwayMech (mibig:BGC0002093) &nearr;</a>
 </div>
 
 <h2>Open questions <span class="tag">1</span></h2>
-<div class="note"><p><strong>shared-structure</strong> — This structure is reported by more than one MIBiG entry: BGC0002035, BGC0002093. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
+<div class="note"><p><strong>shared-structure</strong> <span class="tag">OPEN</span> <span class="tag">curation todo</span> — This structure is reported by more than one MIBiG entry: BGC0002035, BGC0002093. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
+
+<h2 id="curation-history">Curation history <span class="tag">6</span></h2>
+<p class="sub">Every recorded change to this record, newest first, with its curator, as the
+record's <span class="mono">curation_history</span> states it. Consecutive identical re-seeds are
+shown once.</p>
+<ol class="history">
+<li><time datetime="2026-10-13T23:56:59Z">2026-10-13T23:56:59Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(2 identical runs since 2026-10-13T07:36:45Z)</span><p>Seeded from the committed inventories and curation tables.</p></li>
+<li><time datetime="2026-09-30T22:41:38Z">2026-09-30T22:41:38Z</time> &middot; <strong>CURATED_BIOSYNTHESIS_GRAPH</strong> &middot; codex <span class="tag">LLM-assisted</span><p>Added the Talaromyces variabilis IccE 8-epi-ilicicolin H epimerization step and RHEA:64564 / UniProtKB:A0A482N8M8-grounded ilicicolin H BIOSYNTHESIS causal graph.</p></li>
+<li><time datetime="2026-09-25T03:01:40Z">2026-09-25T03:01:40Z</time> &middot; <strong>SEEDED_FROM_SOURCES</strong> &middot; seed_from_sources <span class="sub">(3 identical runs since 2026-09-10T05:54:04Z)</span><p>Seeded from the committed inventories in data/raw/.</p></li>
+</ol>
 
 <h2>Provenance</h2>
-<div class="scroll"><table>
+<div class="scroll" role="region" tabindex="0" aria-label="Provenance"><table>
 <tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
-<tr><td class="mono">BGC0002035</td><td>MIBIG</td><td>3</td></tr>
-<tr><td class="mono">BGC0002093</td><td>MIBIG</td><td>2</td></tr>
-<tr><td class="mono">CHEBI:77772</td><td>CHEBI</td><td>3-star</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002035">BGC0002035</a></td><td>MIBIG</td><td>3</td></tr>
+<tr><td class="mono"><a href="https://mibig.secondarymetabolites.org/go/BGC0002093">BGC0002093</a></td><td>MIBIG</td><td>2</td></tr>
+<tr><td class="mono"><a href="http://purl.obolibrary.org/obo/CHEBI_77772">CHEBI:77772</a></td><td>CHEBI</td><td>3-star</td></tr>
 </table></div>
 <p class="sub">This page is generated from
 <a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/alkaloids/ilicicolin-h.yaml">data/natural_products/alkaloids/ilicicolin-h.yaml</a>, which is generated from the
 committed inventories. Neither is edited by hand.</p>
-</main>
+<p class="record-actions"><a href="https://github.com/CultureBotAI/NaturalProductMech/issues/new?title=Problem%20with%20CHEBI%3A77772&amp;body=https%3A%2F%2Fculturebotai.github.io%2FNaturalProductMech%2Fpages%2Falkaloids%2Filicicolin-h.html">Report a problem with this record</a>: opens a GitHub issue that names CHEBI:77772 and links this page.</p></main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus (3116 records · from sources retrieved 2026-10-18 · corpus SHA-256 7c7187c24281). Every page is derived; edit the
+  <p>Record last updated 2026-10-13 23:56 UTC, its latest curation event. Generated from the committed corpus. Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>
