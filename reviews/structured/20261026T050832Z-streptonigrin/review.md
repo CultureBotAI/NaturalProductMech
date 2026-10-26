@@ -1,0 +1,2061 @@
+# Scientific review of streptonigrin
+
+- Review: 20261026T050832Z-streptonigrin
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-26T05:06:01.099046Z
+- Finished UTC: 2026-10-26T05:08:32.425808Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Streptonigrin has positive native parent support in the selected 2013 SI WT trace and several independently bounded historical sources. Its original 1985 plain constitution matches, while suggested axial configuration remains unassigned. Eleven raw LOTUS assertions become seven through the committed taxon merge and four exact duplicates, not exclusions. Several individual occurrence sources, the full 2013 main and accession bridge remain incomplete. Imported clinical wording remains historical source text, and current authorities are held; the review is partial.
+
+## Scope And Provenance
+
+One complete generated owner and any referenced components, assessed claim by claim for exact identity, provenance, origin, producer and occurrence scope, biosynthesis, classification, optional content and audit history.
+
+Selection: Campaign record 453, batch 046, selected in path order from the fresh-main authoritative validated catalogue and the separately validated targets in earlier batch commits (publication tracked separately). At selection, 518 of 3116 current records had campaign coverage and 2598 remained. The population search included ignored files. Exactly one target is assessed here.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 14373517042b407747272446f79953ae86d51fa4.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CHEBI:9287 | data/natural_products/alkaloids/streptonigrin.yaml | generated | streptonigrin |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Closed-schema target validation | passed | True | CHEBI:9287 | The documented target strict validator completed; scientific support is assessed separately. |
+| Corpus path and filing integrity | passed | True | CHEBI:9287 | Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its pinned path. |
+| Corpus reproduction | passed | True | CHEBI:9287 | Fresh canonical reproduction gate passed:all3116 records byte-identical to source seeding; source warnings remain retained. |
+| Native deterministic review queue | passed | True | CHEBI:9287 | Fresh deterministic review queue completed:8922 rows across12 queues. Queue output is not scientific-review coverage. |
+| Configured ontology identifier-label correspondence | passed | True | CHEBI:9287 | Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking mismatches and4898no-adapter skips remain explicit. |
+| Full repository quality gate on the fresh main baseline | passed | True | CHEBI:9287 | Canonical just qc completed with actual terminal exit0:1024 tests passed,4 skipped,2 dependency warnings;3116 records passed closed schema validation, site freshness, byte reproduction and lockfile integrity.22 governed artifacts and15 raw inventories passed. Prior DNS failed001 remains preserved. |
+| Complete owner and seven-set fidelity | passed | True | CHEBI:9287 | Actual selection, ten successful intakes and chronological root binding must precede authoring. All raw owners, 25 ordered history events, 70 source joins and zero component references must match. Record 457 has nine raw and emitted activities plus one inline graph mechanically compared only; full owner and raw scientific masks remain false. Other local owners/raw sets were read. Two no-data sentinels in 454 and 455 are not experiments or biological inactivity. |
+| actual all-ten intake and current content checks | passed | True | CHEBI:9287 | All ten official intakes and subsequent root equality receipts passed before this section was authored; exact raw owners, resolved views and all seven source sets were checked. |
+| source grade reproduction | passed | True | CHEBI:9287 | Producer and locus grades reproduce imported method vocabulary. Reproduction is distinct from experimental applicability. |
+| bounded positive named-product source support | passed | True | CHEBI:9287 | Named-product and original source identity are supported within the declared channel. Native, introduced and exact method applicability are assessed separately. |
+| source applicability for current claims | unavailable | True | CHEBI:9287 | The 1978, 1963 and 1987 original occurrence scopes and full 1984 main remain unclosed; retained bibliography is not complete source verification. The exact JQ414024.1 header and full 2013 main are not independently read. No experimental grade upgrade follows from the selected SI. No natural axial assignment, current clinical recommendation or additional definition producer is endorsed. |
+| Stored chemical representation and complete source row | passed | True | CHEBI:9287 | Fresh intake derivation agrees with the stored graph; the source selector, full row and prepared snapshot were independently rechecked. |
+| Required current literal chemical authorities | unavailable | True | CHEBI:9287 | Required current literal roles npatlas:NPA02378, CHEBI:9287 remain unavailable pending explicit user approval. No retained response, match, mismatch or normalized returned identifier is fabricated for these roles. Exact request spelling remains distinct from any future returned normalization. |
+| Exact original chemical depiction in the declared scope | passed | True | CHEBI:9287 | The original 1985 compound 1 drawing supports the complete plain streptonigrin constitution and passes the observed whole-graph comparison and MOL roundtrip. Suggested axial configuration in adjacent prose is not encoded or independently established; zero represented tetrahedral sites does not prove physical achirality. |
+| Represented source geometry and stereochemical limits | passed | True | CHEBI:9287 | The original 1985 compound 1 drawing supports the complete plain streptonigrin constitution and passes the observed whole-graph comparison and MOL roundtrip. Suggested axial configuration in adjacent prose is not encoded or independently established; zero represented tetrahedral sites does not prove physical achirality. |
+
+## Scientific And Domain Assessments
+
+### Complete history and native status
+
+provenance: supported. Targets: CHEBI:9287.
+
+Native status remains SEEDED and all 3 history actions retain their exact order: ['SEEDED_FROM_SOURCES', 'SEEDED_FROM_SOURCES', 'SEEDED_FROM_SOURCES']. Source-seeding history does not replace claim-level scientific assessment.
+
+### Present optional assertions
+
+completeness: supported. Targets: CHEBI:9287.
+
+Present local fields (definition, bioactivity_summary, related_records) were read; their exact source applicability remains bounded by the separate biological and chemical reviews.
+
+### Exact computed classification provenance
+
+representation: supported. Targets: CHEBI:9287.
+
+Exact-key NPClassifier version npclassifier.gnps2.org@2026-09-07 reproduces filing, superclass/class and glycoside fields. Computed classification is not independent natural-origin or mechanistic proof; any accepted identity correction requires effective-key reclassification.
+
+### Taxonomic identifiers versus experimental stocks
+
+provenance: supported. Targets: CHEBI:9287.
+
+Retained naming context: 1873: Micromonospora (genus); 1883: Streptomyces (genus); 1888: Streptomyces albus (species); 67300: Streptomyces albus (species). Current NCBI explicitly redirects 67300 to 1888 and lists flocculus as a synonym. The committed merge and citation deduplication already explain eleven raw assertions becoming seven occurrences; naming does not infer a new stock. Names alone do not prove occurrence, production or physical stock identity.
+
+### Literal organism routing
+
+grounding: supported. Targets: CHEBI:9287.
+
+All 11 literal LOTUS routes match P225; 11 match P685 and 0 have a qualified absent relation. Naming validity does not resolve original publication or stock applicability.
+
+### Native producer transcriptomic applicability
+
+completeness: not_applicable. Targets: CHEBI:9287.
+
+The retained catalogue contains 20 organisms and 28 datasets at its original access time. No exact native-producer name, stock or gene/module/compound association is established. This is bounded catalogue context, not an exhaustive current search.
+
+### current owner/history and source sets
+
+provenance: supported. Targets: CHEBI:9287.
+
+Actual complete owner/history and all seven source sets match the frozen inventory. Scientific judgments retain the declared original-source, congener and stock limits.
+
+### named-product and original source context
+
+provenance: supported. Targets: CHEBI:9287.
+
+The original 2013 abstract identifies S. flocculus CGMCC 4.1223 as a streptonigrin producer. Its retained SI Table S4 names the same WT parent-producing stock; Figure S1 labels parent 1 in the WT trace and in the stated comparison traces.
+
+### native, introduced, congener and source boundaries
+
+evidence: supported. Targets: CHEBI:9287.
+
+The exact parent is independently positive in the 2002 Micromonospora IM 2670 abstract, the selected 1985 retrostaticus provenance passage and the 1985 unidentified Streptomyces IA-CAS isolate 114 co-product passage. Streptonigrone and the 2002 substituted derivative are kept separate from parent 1. The original 1984 abstract explicitly describes streptonigrin-producing S. flocculus. The 1978 source remains metadata-only, and 1963/1987 main-text requests failed; those individual occurrence citations are not independently closed or automatically excluded. The 11 raw LOTUS rows reproduce seven written assertions after the committed 67300→1888 taxon merge and exact tuple deduplication. Four duplicate flocculus/albus tuples are not exclusions and no occurrence cap is reached. Current naming context does not independently prove every historical stock identity. The imported ChEBI definition’s carcinoma/leukopenia wording is source-attributed historical text. This review does not establish current clinical use, clinical efficacy or safety, or the separate rufochronmogenus occurrence. Fresh current ChEBI authority is held. The original 1985 parent drawing and root-observed comparison support the plain constitution. Suggested axial chirality in the historical discussion is not an assigned owner stereochemical result.
+
+### bounded primary source limitations
+
+completeness: unknown. Targets: CHEBI:9287.
+
+The 1978, 1963 and 1987 original occurrence scopes and full 1984 main remain unclosed; retained bibliography is not complete source verification. The exact JQ414024.1 header and full 2013 main are not independently read. No experimental grade upgrade follows from the selected SI. No natural axial assignment, current clinical recommendation or additional definition producer is endorsed.
+
+### Stored representation and source-concept provenance
+
+identity: supported. Targets: CHEBI:9287.
+
+The complete source row BGC0001783:1 and source-concept hash reproduce this stored representation; this does not establish that the upstream compound label is correct. Formula, charge, Standard and fixed-H distinctions are independently recorded. Primary support and any conflicting exact xref are assessed separately.
+
+### Exact authority eligibility and source representation
+
+provenance: supported. Targets: CHEBI:9287.
+
+Exactly one committed three-star ChEBI row has the stored full key; its current remote graph remains unavailable under the approval hold.
+
+### Exact literal chemical identifier scope
+
+representation: unknown. Targets: CHEBI:9287.
+
+Required current literal availability: [{"absence_inferred": false, "identifier": "npatlas:NPA02378", "owner_role": "xref", "status": "fresh_authority_unavailable_pending_user_approval"}, {"absence_inferred": false, "identifier": "CHEBI:9287", "owner_role": "identifier", "status": "fresh_authority_unavailable_pending_user_approval"}]. Exact request spelling is preserved; no unavailable response, normalized returned identifier or numerical comparison is invented. No authority graph is adopted.
+
+### Existing ChEBI role and unavailable current validation
+
+grounding: unknown. Targets: CHEBI:9287.
+
+[{"identifier": "CHEBI:9287", "name": "streptonigrin", "scope": "Existing committed source role; current remote validation unavailable", "standard_inchi_key": "PVYJZLYGTZKPJE-UHFFFAOYSA-N", "stars": "3"}]. Existing committed ChEBI role CHEBI:9287 has the exact stored full key and three-star local source status. Its current remote metadata/MOL is unavailable, so current eligibility or serialization equivalence is not independently confirmed. Candidate discovery is not performed; no grounding, replacement or promotion is selected.
+
+### Current literal-authority availability
+
+scope: unknown. Targets: CHEBI:9287.
+
+Required current literal roles npatlas:NPA02378, CHEBI:9287 remain unavailable pending explicit user approval. No retained response, match, mismatch or normalized returned identifier is fabricated for these roles. Exact request spelling remains distinct from any future returned normalization. The initial sixteen DNS failures, rejected retry and six unattempted requests are preserved. No alternate route or elapsed-time approval is inferred.
+
+### Existing local roles and unperformed discovery
+
+grounding: unknown. Targets: CHEBI:9287.
+
+Candidate discovery was not performed. Existing committed ChEBI rows retain their exact local key and stars; they are asserted source roles, not new remote candidates or current-response validation. No negative search, absence, replacement or promotion is inferred.
+
+### Positive original depiction within retained precision
+
+representation: supported. Targets: CHEBI:9287.
+
+The original 1985 compound 1 drawing supports the complete plain streptonigrin constitution and passes the observed whole-graph comparison and MOL roundtrip. Suggested axial configuration in adjacent prose is not encoded or independently established; zero represented tetrahedral sites does not prove physical achirality.
+
+### Primary identity and experimental precision
+
+scope: unknown. Targets: CHEBI:9287.
+
+Retained streptonigrin and the BGC0001783:1/version 5 raw row agree. The original 1985 compound 1 drawing, distinct from compound 2 streptonigrone, independently gives the same neutral C25H22N4O8 plain constitution at Standard and fixed-H levels with a passing MOL roundtrip. Zero represented tetrahedral centres does not establish physical achirality; the adjacent historical suggestion of axial S configuration remains a separate unassigned channel. CHEBI:9287 and literal short NPA02378 remain held.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| R453-OWNER | data/natural_products/alkaloids/streptonigrin.yaml; Prior bounded root owner read, mechanically verified unchanged against actual post-intake content | supports | Actual post-intake equality preserves 7 occurrence, 1 producer and 1 locus assertions, optional fields and history. The resolved view contains 0 exactly pinned external component(s). The prior complete owner read retains the separate scientific gaps and claim-level source limits. |
+| R453-LOCAL | /private/tmp/npm-review-work/453/local-sources.json; Complete resolved owner and all six captured source sets; seventh set independently compared | context_only | Exact captured rows and separately parsed PubChem rows match frozen preparation. Inventory equality does not establish experimental support. |
+| R453-PUBCHEM-PREP | data/raw/pubchem_bioassay.tsv; Complete exact-key retained assay-row inventory | context_only | This owner has 0 retained rows and 0 written observations. Across the cohort, record 457 has nine raw and nine emitted activities mechanically compared only; scientific interpretation remains incomplete. Records 454 and 455 each have a no-data sentinel, which is not an experiment or evidence of inactivity. Raw-only inventory does not establish an omission error or an experimental result. |
+| R453-Q1144013 | https://www.wikidata.org/wiki/Q1144013; Literal retained entity P225/P685 with original source-specific access time | context_only | All 11 literal LOTUS routes match P225; 11 match P685 and 0 have a qualified absent relation. Naming validity does not resolve original publication or stock applicability. |
+| R453-Q3061522 | https://www.wikidata.org/wiki/Q3061522; Literal retained entity P225/P685 with original source-specific access time | context_only | All 11 literal LOTUS routes match P225; 11 match P685 and 0 have a qualified absent relation. Naming validity does not resolve original publication or stock applicability. |
+| R453-Q62851335 | https://www.wikidata.org/wiki/Q62851335; Literal retained entity P225/P685 with original source-specific access time | context_only | All 11 literal LOTUS routes match P225; 11 match P685 and 0 have a qualified absent relation. Naming validity does not resolve original publication or stock applicability. |
+| R453-Q7623378 | https://www.wikidata.org/wiki/Q7623378; Literal retained entity P225/P685 with original source-specific access time | context_only | All 11 literal LOTUS routes match P225; 11 match P685 and 0 have a qualified absent relation. Naming validity does not resolve original publication or stock applicability. |
+| R453-TAXON-1873 | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=1129%2C1873%2C1883%2C1888%2C3803%2C5530%2C20406%2C20413%2C20416%2C20422%2C20805%2C24962%2C32049%2C47038%2C67300%2C89640%2C89659%2C90174%2C90190%2C90201%2C90210%2C90234%2C99017%2C457888%2C483874%2C491199%2C570715%2C655844%2C995841%2C1218706%2C1541393%2C1670457%2C1769941%2C1938221%2C1963369%2C2014685%2C2607090%2C2795974%2C2897604%2C3084112&amp;retmode=xml; Exact TaxId/ScientificName/rank/parent and OtherNames within retained response | context_only | Retained naming context: 1873: Micromonospora (genus); 1883: Streptomyces (genus); 1888: Streptomyces albus (species); 67300: Streptomyces albus (species). Current NCBI explicitly redirects 67300 to 1888 and lists flocculus as a synonym. The committed merge and citation deduplication already explain eleven raw assertions becoming seven occurrences; naming does not infer a new stock. Names alone do not prove occurrence, production or physical stock identity. |
+| R453-TAXON-1883 | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=1129%2C1873%2C1883%2C1888%2C3803%2C5530%2C20406%2C20413%2C20416%2C20422%2C20805%2C24962%2C32049%2C47038%2C67300%2C89640%2C89659%2C90174%2C90190%2C90201%2C90210%2C90234%2C99017%2C457888%2C483874%2C491199%2C570715%2C655844%2C995841%2C1218706%2C1541393%2C1670457%2C1769941%2C1938221%2C1963369%2C2014685%2C2607090%2C2795974%2C2897604%2C3084112&amp;retmode=xml; Exact TaxId/ScientificName/rank/parent and OtherNames within retained response | context_only | Retained naming context: 1873: Micromonospora (genus); 1883: Streptomyces (genus); 1888: Streptomyces albus (species); 67300: Streptomyces albus (species). Current NCBI explicitly redirects 67300 to 1888 and lists flocculus as a synonym. The committed merge and citation deduplication already explain eleven raw assertions becoming seven occurrences; naming does not infer a new stock. Names alone do not prove occurrence, production or physical stock identity. |
+| R453-TAXON-1888 | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=1129%2C1873%2C1883%2C1888%2C3803%2C5530%2C20406%2C20413%2C20416%2C20422%2C20805%2C24962%2C32049%2C47038%2C67300%2C89640%2C89659%2C90174%2C90190%2C90201%2C90210%2C90234%2C99017%2C457888%2C483874%2C491199%2C570715%2C655844%2C995841%2C1218706%2C1541393%2C1670457%2C1769941%2C1938221%2C1963369%2C2014685%2C2607090%2C2795974%2C2897604%2C3084112&amp;retmode=xml; Exact TaxId/ScientificName/rank/parent and OtherNames within retained response | context_only | Retained naming context: 1873: Micromonospora (genus); 1883: Streptomyces (genus); 1888: Streptomyces albus (species); 67300: Streptomyces albus (species). Current NCBI explicitly redirects 67300 to 1888 and lists flocculus as a synonym. The committed merge and citation deduplication already explain eleven raw assertions becoming seven occurrences; naming does not infer a new stock. Names alone do not prove occurrence, production or physical stock identity. |
+| R453-TAXON-67300 | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=1129%2C1873%2C1883%2C1888%2C3803%2C5530%2C20406%2C20413%2C20416%2C20422%2C20805%2C24962%2C32049%2C47038%2C67300%2C89640%2C89659%2C90174%2C90190%2C90201%2C90210%2C90234%2C99017%2C457888%2C483874%2C491199%2C570715%2C655844%2C995841%2C1218706%2C1541393%2C1670457%2C1769941%2C1938221%2C1963369%2C2014685%2C2607090%2C2795974%2C2897604%2C3084112&amp;retmode=xml; Exact TaxId/ScientificName/rank/parent and OtherNames within retained response | context_only | Retained naming context: 1873: Micromonospora (genus); 1883: Streptomyces (genus); 1888: Streptomyces albus (species); 67300: Streptomyces albus (species). Current NCBI explicitly redirects 67300 to 1888 and lists flocculus as a synonym. The committed merge and citation deduplication already explain eleven raw assertions becoming seven occurrences; naming does not infer a new stock. Names alone do not prove occurrence, production or physical stock identity. |
+| R453-IDENTIFIER-READ | /private/tmp/npm-review-work/shared-next-batch046/root-context/root-metadata-result-and-projection-read-001.json; Sixty-four P225 routes across 33 entities and 40 requested taxon IDs; 58 exact P685 matches and six qualified absent P685 relations | context_only | Root read original identifier values and naming context. These do not prove experimental occurrence, production or stock equivalence. |
+| R453-IMODULON | https://imodulondb.org/api/datasets; Complete retained 20-organism/28-dataset catalogue | context_only | The retained catalogue contains 20 organisms and 28 datasets at its original access time. No exact native-producer name, stock or gene/module/compound association is established. This is bounded catalogue context, not an exhaustive current search. |
+| S453-E-ACTUAL-LOCAL | /private/tmp/npm-review-work/453/local-sources.json; Complete resolved owner and captured rows; exact seven-set equality checked | context_only | Complete actual owner/history and all seven source sets match the prepared objects. Scientific conclusions and source limitations are recorded in the target plan. |
+| S453-E-CONSUMERS | /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py; Current 14373517 locus override473–571, producer/cluster1089–1153, consolidated discussion1497–1518 and shared-structure/unnamed-producer prompts1563–1595 | context_only | Static inspection covers exact source method grading, producer/reference qualification and consumed correction ordering. Current shared-structure replacement and consolidated discussions are separate capabilities; they do not select identity changes or broaden source endpoints. |
+| S453-E-GENERIC-SCHEMA | /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml; ProducerEvidenceBasisEnum and ClusterLinkEvidenceEnum; conf/producer_evidence.tsv and grading.py also read and pinned | context_only | Producer tiers concern evidence in the named organism; cloned-locus experiments are a distinct cluster question. Empty methods and a source assertion do not independently assert native knockout or exact pure-enzyme proof. |
+| S453-E-SEARCH | /private/tmp/npm-review-work/453/science-search.json; Exact read scope | context_only | Exact current curated-decision search is retained. Its scope is the curation tree; it does not establish absence of experimental evidence or all possible consumers. |
+| S453-E-ACCESS-LIMITS | local:ACCESS-LIMITS; All retained primary HTTP failures/successes and actual process observations | context_only | No access failure or authority hold is treated as experimental absence. |
+| S453-E-CURATION | local:CURATION; Claim-level source/evidence and maintained curation semantics | context_only | Conservative provenance versus experimental support; no record edits. |
+| S453-E-FORMAL-BINDING | local:FORMAL-BINDING; Current raw owner/history, exact component expansion and seven source sets | context_only | Preparation equality is established; actual selection, all-ten successful intakes and subsequent root checks must pass before authoring. |
+| S453-E-GRADING | local:GRADING; Current producer/locus grade functions | context_only | Mechanical grade reproduction does not independently establish native or introduced experimental endpoints. |
+| S453-E-GUARDS | local:GUARDS; All ten paths, owner pins and complete source rows/digests | context_only | Exact all-ten seven-source-set guards preserve complete rows, empty sets and original methods. |
+| S453-E-INTAKE-VIEW | local:INTAKE-VIEW; All ten exact raw/expanded digests; record 457 has one inline graph and no referenced component | context_only | Exact raw and expanded views preserve all ten owners; no referenced components occur. Mechanical equality does not establish scientific graph, pathway or assay validation. |
+| S453-E-INVENTORY | local:INVENTORY; Tentative orders 451–460, complete owners/history and seven raw sets | context_only | Provisional inventory only; no official selection or future lifecycle claim. |
+| S453-E-LOCAL | local:LOCAL; First-five full owner/history/seven-source semantics and ignored-inclusive retained discovery | context_only | Original local prerequisite scope; the present compiler independently rejoins all ten owners and 70 raw sets. |
+| S453-E-METHOD-MAP | local:METHOD-MAP; Current method-to-grade map | context_only | Producer and locus grades answer different questions; imported methods require exact source applicability. |
+| S453-E-PRIMARY-EPMC | https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:23421585%20OR%20EXT_ID:26403163%20OR%20EXT_ID:23301954%20OR%20EXT_ID:26366473&amp;format=json&amp;resultType=core&amp;pageSize=10; Four exact bibliographic records and access links | partial | Metadata and abstract corroboration; not an additional independent experiment. |
+| S453-E-PRIMARY-META | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;id=23421585,26403163,23301954,26366473&amp;retmode=xml; PMIDs 23421585, 26403163, 23301954 and 26366473; complete original titles/abstracts | partial | Original abstract provenance only; no full main-text or exact method-endpoint closure. |
+| S453-E-PRIMARY-PROVENANCE | local:PRIMARY-PROVENANCE; Exact parsed paragraph hashes, selected PDF locators and viewed-pixel receipts | context_only | Reproducible bounded reading scope, not a new experimental source. |
+| S453-E-ROOT-LOCAL | local:ROOT-LOCAL; Root current owner/history/raw read receipt | context_only | Local scope context; not independent experimental corroboration. |
+| S453-E-ROOT-SOURCE | local:ROOT-SOURCE; Root direct original-source read and five individually scoped conclusions | partial | Root bounded source adjudication accepts the declared biological scope; independent full source peer is separately bound. |
+| S453-E-SEEDER | local:SEEDER; Selected taxon merge, LOTUS projection, deduplication and cap clauses bound in STN-MERGE | context_only | Existing source projection mechanics only; no seeder import or execution. |
+| S453-E-SOURCE-PEER | local:SOURCE-PEER; Complete peer conclusions, original-source pins and conservative required-gap dispositions | partial | Independent full bounded source peer is clear within explicit direct and reused original scopes. |
+| S453-E-SOURCE-READ | local:SOURCE-READ; Complete first-five preferred 002 narratives, zero findings and explicit required source gaps | partial | Frozen source judgments distinguish exact native congeners, introduced material, locus applicability and remaining gaps. |
+| S453-E-STN-MERGE | local:STN-MERGE; Complete 11 raw LOTUS rows, taxon merge 67300→1888 and seven emitted tuples | context_only | Four repeated rows collapse by committed taxon merge and deduplication, not an exclusion or cap. |
+| S453-E-STN-OCC-META | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;id=12027749,4066496,4008345,6743267&amp;retmode=xml; PMIDs 12027749, 4066496, 4008345 and 6743267 | partial | Exact parent isolation abstract for Micromonospora IM 2670 and original flocculus-production abstract; two 1985 records have no abstracts. |
+| S453-E-STN-ROOT-MODEL | local:STN-ROOT-MODEL; Root-observed original 1985 constitution comparison | context_only | Plain constitution matches through the observed source channels; no axial-hand conclusion or rerun. |
+| S453-E-STN1978-META | https://api.crossref.org/works/10.1016%2FS0040-4039(01)85595-7; Exact DOI 10.1016/S0040-4039(01)85595-7 title and bibliography | partial | Bibliographic lead only; no original occurrence conclusion from its title. |
+| S453-E-STN1984 | https://pmc.ncbi.nlm.nih.gov/articles/PMC1153624/; Original abstract and exact linked PDF locator, DOI 10.1042/bj2200309 | partial | Source explicitly describes streptonigrin-producing S. flocculus; complete scanned main PDF remains unavailable. |
+| S453-E-STN1985-BIO | https://www.jstage.jst.go.jp/article/antibiotics1968/38/10/38_10_1429/_pdf; Printed 1429 opening continued on 1430; selected references | partial | Native Streptomyces retrostaticus parent provenance; no experimental assay reproduction or current clinical endorsement. |
+| S453-E-STN1985-IDENTITY | https://www.jstage.jst.go.jp/article/antibiotics1968/38/4/38_4_516/_pdf; Printed 516 opening/compound 1; printed 517 selected identity discussion | partial | Unidentified Streptomyces IA-CAS isolate 114 co-produces parent 1 and distinct streptonigrone 2. Plain constitutional depiction does not establish axial hand. |
+| S453-E-STN2013-SI | https://ndownloader.figshare.com/files/4088800; Physical 1–2 title/contents; physical 11 Table S4 exact parent-stock row; physical 20 Figure S1 | partial | CGMCC 4.1223 native WT parent 1 positive. No pathway/construct protocol compilation, grade upgrade, direct accession-header closure or natural axial assignment. |
+| S453-E-STN2013-SI-META | https://api.figshare.com/v2/articles/2446132; Official Figshare article 2446132/file 4088800/DOI 10.1021/ja3069243.s001 | partial | Exact title, PDF filename, size and original source route; does not itself establish scientific claims. |
+| C453-OWNER | data/natural_products/alkaloids/streptonigrin.yaml; Complete owner bytes and seven matching source-row sets mechanically checked; manual chemical identity scope only | supports | The chemical identity fields denote streptonigrin under CHEBI:9287. All source selectors, versions and complete row digests are retained in COMPARISON: [{"row_sha256": "a8a33164f15ed11b946a90ef4f4afcd51a78f6365b6d8bed541086e850092e5a", "selector": "BGC0001783:1", "version": "5"}]. The official intake and prepared owner bytes agree. |
+| C453-GRAPH | /private/tmp/npm-review-work/453/chemistry.json; Fresh intake RDKit result and frozen Standard/fixed-H comparison | supports | The stored SMILES recomputes to PVYJZLYGTZKPJE-UHFFFAOYSA-N, formula C25H22N4O8, formal charge 0; stored InChI/key agree. These are representation checks, not experimental identity proof. |
+| C453-COMPARISON | /private/tmp/npm-review-work/shared-next-batch046/chemistry-prep/retained-graph-comparison.json; Record 453; exact source rows and each graph comparison | supports | Exact Standard, fixed-H, formula, charge and stereo comparisons of the retained owner and complete raw rows; current authority responses and primary proof are separate evidence. |
+| C453-LOCAL-SEARCH | /private/tmp/npm-review-work/453/chemistry-search-receipt.json; Exact full key, label, slug and source selector in raw/owner/curation trees | supports | Ignored-inclusive bounded search preserves all matching paths; an absent curation decision does not imply a missing scientific source. |
+| C453-AUTHORITY-AVAILABILITY | /private/tmp/npm-review-work/shared-next-batch046/chemistry-prep/authority-limited-source-projection-001.json; Retained raw/versioned channels and explicitly unavailable current literal roles | partial | This is an availability and retained-source projection, not a fresh current-authority numerical comparison. Required held roles are not asserted absent, matching or mismatching. |
+| C453-AUTHORITY-DETAIL | /private/tmp/npm-review-work/shared-next-batch046/chemistry-prep/source-plan-001.json; Retained raw/versioned channels and explicitly unavailable current literal roles | partial | This is an availability and retained-source projection, not a fresh current-authority numerical comparison. Required held roles are not asserted absent, matching or mismatching. |
+| C453-STN1985 | DOI:10.7164/antibiotics.38.516; Physical page 1/printed 516 compound 1 and selected next-page identity/axial discussion.; retained snapshot /private/tmp/npm-review-work/shared-next-batch046/bgc-science/public-004/streptonigrone1985-main.pdf | partial | Exact parent streptonigrin constitution, distinct from streptonigrone. Suggested axial configuration is not encoded or independently reassigned. |
+| C453-PRIMARY-453 | local:root-executed-primary-model; Complete serialized original source graph/comparisons and stated limitations.; retained snapshot /private/tmp/npm-review-work/shared-next-batch046/chemistry-prep/primary-mapping-001/streptonigrin453-source-comparison-001.json | partial | All four source/owner comparisons and roundtrip true within the exact declared source scope; no current authority conclusion. |
+| C453-FIRST-READ | local:prior-bounded-source-reader; Selected chemical identity and access observations only; no fresh full-paper read claim.; retained snapshot /private/tmp/npm-review-work/shared-next-batch046/bgc-science/source-notes-451455-002.json | context_only | Previously bounded first-five original identity, congener and access scope. Biology readiness and findings are separately owned. |
+| C453-RETAINED | local:batch046-retained; Ten stored identity and twelve selected raw graph comparisons.; retained snapshot /private/tmp/npm-review-work/shared-next-batch046/chemistry-prep/retained-graph-comparison.json | partial | ROOT-executed stored/raw Standard and fixed-H agreement is separate from remote authority identity. |
+| C453-AUTH-LIMIT | local:batch046-auth-limit; Twelve raw/versioned channels and thirteen unavailable current literal roles.; retained snapshot /private/tmp/npm-review-work/shared-next-batch046/chemistry-prep/authority-limited-source-projection-001.json | partial | No unavailable role is asserted absent, matching or mismatching; no candidate promotion. |
+| C453-OWNER-READ | local:batch046-owner-read; Ten complete mechanical owner/history/source joins; 457 graph and assays excluded scientifically.; retained snapshot /private/tmp/npm-review-work/shared-next-batch046/chemistry-prep/owner-seven-set-source-freeze-read-001.json | partial | All chemistry whole-owner/raw manual flags false; complete mechanical equality true. |
+| C453-AUTH-HOLD | local:batch046-auth-hold; Exact rejected sixteen-request retry and approval reason; no process ran.; retained snapshot /private/tmp/npm-review-work/shared-next-batch046/chemistry-prep/literal-authority-approval-rejection-001.json | context_only | No retry, alternate tool, endpoint or delegated request after rejection. |
+| C453-AUTH-REQUEST | local:batch046-auth-request; Exact sixteen attempted plus six unattempted public literal-authority requests.; retained snapshot /private/tmp/npm-review-work/shared-next-batch046/chemistry-prep/literal-authority-approval-request-prepared-001.json | context_only | The pending approval scope does not authorize execution until an explicit answer. |
+| C453-CURATION | local:batch046-curation; Same-key identity/candidate and source-attribution rules.; retained snapshot /private/tmp/npm-record-reviews-20261021/docs/CURATION.md | context_only | Retained asserted identifiers, newly discovered candidates and structure replacements are separate; none is promoted from an unavailable lookup. |
+| C453-SOURCE-LIMITS | /private/tmp/npm-review-work/shared-next-batch046/chemistry-prep/source-notes-002.json; Entry 453: chemical observations, held literal roles, source precision and limitations; retained snapshot /private/tmp/npm-review-work/shared-next-batch046/chemistry-prep/source-notes-002.json | partial | All ten chemical scopes remain partial because required current literal authorities are unavailable under the explicit approval hold. Positive source comparisons for 451, 453 and 457 remain separately scoped; no chemical findings, replacement or candidate promotion is inferred. |
+
+## Limits And Additional Notes
+
+- Context establishes mechanical owner/history/source equality, literal identifier routing and computed classification. Primary production, exact stock and congener claims retain their source-specific gaps. Detailed 457 assay, target and graph science remains incomplete; both full scientific owner and raw-row flags remain false. Its nine raw and emitted activities are mechanically compared only. Two separate no-data sentinels do not establish inactivity. Literal names and explicit taxon redirects do not resolve stock, congener or citation applicability. The 457 occurrence cap retains sixteen raw-only distinct assertions; the accepted citation correction affects producer/locus references only.
+- The 1978, 1963 and 1987 original occurrence scopes and full 1984 main remain unclosed; retained bibliography is not complete source verification.
+- The exact JQ414024.1 header and full 2013 main are not independently read. No experimental grade upgrade follows from the selected SI.
+- No natural axial assignment, current clinical recommendation or additional definition producer is endorsed.
+- Stored/raw and reused-versioned evidence retain their original scopes and clocks. Current literal authorities remain unavailable under the approval hold. A positive original depiction does not establish an independent natural absolute-hand experiment; organism, locus, classification and history claims are separately scoped.
+- All ten chemical subsections remain partial because required current literal authorities are unavailable under the approval hold. The actual retained comparison verifies stored and selected raw encodings, not natural absolute configuration or current remote payload identity. Two previously retained versioned MIBiG bodies support four selected rows at their original access clocks; eight other selected versioned rows remain unavailable remotely. Thirteen current literal roles remain unqueried or unavailable. Existing local ChEBI roles are retained separately from candidate discovery; no candidate is promoted or excluded. Whole-owner and whole-raw scientific manual flags remain false for chemistry; complete byte/document/source-join checks are mechanical. Record 457 nine assays and one graph remain outside scientific scope. Failures and approval holds do not imply chemical absence, a wrong owner, or authority disagreement. No chemical finding, replacement, merge, curation, or lifecycle execution is proposed. The original 1985 drawing supports constitution only. Suggested axial chirality remains separate from represented tetrahedral/double-bond counts and is not assigned.
+- Configured consistency only; independent scientific claim support and unrestricted remote authority refresh are not implied.
+- FailedQC001 is retained for an explicit separate network-enabled retry; no artifact will be overwritten.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint and before downstream tests. Its actual exit1/log/input capture/root observation remain pinned; the selected successful canonical QC attempt002 is separately timed. No individual-review validation failure or counter reset is claimed.
+- Configured consistency only; independent scientific claim support and unrestricted remote authority refresh are not implied.
+- Configured consistency only; independent scientific claim support and unrestricted remote authority refresh are not implied.
+- Configured consistency only; independent scientific claim support and unrestricted remote authority refresh are not implied.
+- Configured consistency only; independent scientific claim support and unrestricted remote authority refresh are not implied.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings; this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions and no-adapter pairs; a successful command does not convert these into verified scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population was checked; external caches and generated bytecode are not asserted to be independently byte-pinned.
+- No scientific owner, inventory, curation table, native status or history was edited. Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification; target strict validation ran afresh. Scientific failed or unavailable checks are distinct from bundle validation.
+- Scientific conclusions integrate the chemical, biological and provenance assessments; source access and unresolved scopes remain explicit.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261026T050832Z-streptonigrin
+title: Scientific review of streptonigrin
+started_at: '2026-10-26T05:06:01.099046Z'
+finished_at: '2026-10-26T05:08:32.425808Z'
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: Streptonigrin has positive native parent support in the selected 2013 SI
+  WT trace and several independently bounded historical sources. Its original 1985
+  plain constitution matches, while suggested axial configuration remains unassigned.
+  Eleven raw LOTUS assertions become seven through the committed taxon merge and four
+  exact duplicates, not exclusions. Several individual occurrence sources, the full
+  2013 main and accession bridge remain incomplete. Imported clinical wording remains
+  historical source text, and current authorities are held; the review is partial.
+source:
+  git_revision: 14373517042b407747272446f79953ae86d51fa4
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/psychrophilin-c.yaml
+    sha256: 74dd641f36b1f9c61cca050d78afb7bda9f215ea41b303c0539130528d8355e4
+    role: context
+  - path: data/natural_products/alkaloids/psychrophilin-d.yaml
+    sha256: cb4790d0f5be263e94490f2a3692d1195e10524d7afe7bd4a06df942ea6b56cc
+    role: context
+  - path: data/natural_products/alkaloids/psychrophilin-e.yaml
+    sha256: b0c708793dfee5ed10475c7f8f76dd58afaf12d3ab0cc716cf6742a71120f91f
+    role: context
+  - path: data/natural_products/alkaloids/psychrophilin-f.yaml
+    sha256: b0dbf2aa0c39695067804b5005b9d32b5f6e770899d268ba41fb27d55a7c37e2
+    role: context
+  - path: data/natural_products/alkaloids/psychrophilin-g.yaml
+    sha256: 4ddc9b986b7e61d226ed7690cdf553d214656bb6e312e0619f1fbc796df5f391
+    role: context
+  - path: data/natural_products/alkaloids/pulcherrimin.yaml
+    sha256: 3c3bf74ddf54449219ce6c8737bd730b292d6059c1526becfabff0d72822b9b2
+    role: context
+  - path: data/natural_products/alkaloids/pyochelin-i.yaml
+    sha256: e9807db4f2cf2c81d7fa88b08e15ccbe33f1e45e5b8a52f4de182bdc83294706
+    role: context
+  - path: data/natural_products/alkaloids/pyocyanine.yaml
+    sha256: 5bb08a8448de48b5f9dc696e2e88d303978495187c752cf37ffc9916a38ab19a
+    role: context
+  - path: data/natural_products/alkaloids/pyoluteorin.yaml
+    sha256: 9222f25947c6758e93fce8cc7c6507fd2ab8280e46f7159eb6a0e53186835554
+    role: context
+  - path: data/natural_products/alkaloids/pyreudione-c.yaml
+    sha256: 9ec4d90586c54a553b0a1e6106f9afd7a817a6b786ac6012898fce6a570e64c9
+    role: context
+  - path: data/natural_products/alkaloids/pyrichalasin-h.yaml
+    sha256: a39d90ad74c4e8d2c988c3e06674a2437c784857aaab34c76bcf6dd52ccd36b5
+    role: context
+  - path: data/natural_products/alkaloids/pyridomycin.yaml
+    sha256: 8b97257c5dd7ab615b96234c5d1399c40adc1ec1a7dbd867c3d156cae446c5f5
+    role: context
+  - path: data/natural_products/alkaloids/pyrrolizixenamide-a.yaml
+    sha256: 6ff05b8ad31d379c3a68ad2b98fa61b6c04d5370fa52d7e71d8ed601f139bbb2
+    role: context
+  - path: data/natural_products/alkaloids/pyrrolnitrin.yaml
+    sha256: 33d918fa41d813347279c06758518be22ee19c9b4e9bdc4d281d8ba59a9e1a8c
+    role: context
+  - path: data/natural_products/alkaloids/pyrroloformamide-d.yaml
+    sha256: eb91928858ed6095d3054eac89d0bd1d9caaebeb747de02403697d1a5db12d88
+    role: context
+  - path: data/natural_products/alkaloids/pyrrolomycin-a.yaml
+    sha256: 4287a1c5db2a391d8a0204e5fee20d898e3cd5f5b82b804b178668accc5eeea6
+    role: context
+  - path: data/natural_products/alkaloids/pyrrolomycin-b.yaml
+    sha256: ecefebeb729775bf9bf8ca3e3b704c762cb8975c659d6499caadbe5c0cd9b064
+    role: context
+  - path: data/natural_products/alkaloids/pyrrolomycin-c.yaml
+    sha256: 83254a47a7d8775c37112c7c3686e9ba9e88ebc2b5f2e249b14567b6a848a02d
+    role: context
+  - path: data/natural_products/alkaloids/pyrrolomycin-d.yaml
+    sha256: 1db0ac26b0872a925a91435df5dd0b200963fad6efc440987a920f96c68fd5a3
+    role: context
+  - path: data/natural_products/alkaloids/pyrronazol-b.yaml
+    sha256: e1a0ade699b5ba60a74bcedac3568e966a9a53d7679c2cf108bd45473b46bdfb
+    role: context
+  - path: data/natural_products/alkaloids/pzn10.yaml
+    sha256: 8bc5d136e909d250cb8d5980396518e11ecca537f167a22ae57ba63271c49eb0
+    role: context
+  - path: data/natural_products/alkaloids/pzn11.yaml
+    sha256: 4900ffd76afdc4f8550e067995ec2c653bb2da9f46e679ff8d1c8db72d92a017
+    role: context
+  - path: data/natural_products/alkaloids/pzn5.yaml
+    sha256: 4b3da987b7b23d60acc3accccc61b837e487b2c3cbb49d42917ea40cb2ff66d7
+    role: context
+  - path: data/natural_products/alkaloids/pzn6.yaml
+    sha256: 2ccc85452f21ec6c7b418efef913cb1dd97c4bdc8bff8c49595681c157243625
+    role: context
+  - path: data/natural_products/alkaloids/pzn7.yaml
+    sha256: 867fe4dd28a071fa1d0ee02e611c2c1aa2338aef1b78420f83473b96ccf063c9
+    role: context
+  - path: data/natural_products/alkaloids/pzn9.yaml
+    sha256: dfeb0c960070ba22251ca7b89a5aea7ef3384a6a3a2d491d9b3584cd27f695c9
+    role: context
+  - path: data/natural_products/alkaloids/quinocarcin.yaml
+    sha256: cdd1564ff011928f1739185d7c5ce619ccf9f57ebac73829430b83e943102b30
+    role: context
+  - path: data/natural_products/alkaloids/quinolobactin.yaml
+    sha256: 702d7158bb3b1b332f2cc341609c141cc4443ebe27588cca38d2f6fad1be358e
+    role: context
+  - path: data/natural_products/alkaloids/rebeccamycin.yaml
+    sha256: dc1f97d7987351df20180314c2125b54dbf87adfe572f2aff185481dbf311bcb
+    role: context
+  - path: data/natural_products/alkaloids/reductasporine.yaml
+    sha256: 01bfa463f334fc378cd09988778536c801bfd8332c1edc0bf62b5a18819ac3bf
+    role: context
+  - path: data/natural_products/alkaloids/roseoflavin.yaml
+    sha256: 344ee7967ab944b34fb32365d5765891a92f4c493daafae747a998beb03712cd
+    role: context
+  - path: data/natural_products/alkaloids/roseophilin.yaml
+    sha256: eaa48e94710eb3ed86d912fd1432562dcc2ebef611379ce1bc6e63f0f298354b
+    role: context
+  - path: data/natural_products/alkaloids/rotihibin-a.yaml
+    sha256: fccec44a240204800cd58d348991ade077b390efac5f256b703d90bcc34e7933
+    role: context
+  - path: data/natural_products/alkaloids/rubradirin.yaml
+    sha256: cb2e44a162b75d96c882884ba19740d5827a2ec7cb4ebd51bea6a171da1f29c3
+    role: context
+  - path: data/natural_products/alkaloids/s-s-2-5-di-p-hydroxybenzyl-piperazine.yaml
+    sha256: 35590a36b5ca19e0082a1c3424ee2cdad1f0264931bfabee96e13ebe41b51edf
+    role: context
+  - path: data/natural_products/alkaloids/safracin-a.yaml
+    sha256: 133cca27dc01611ecc39281dd68704b6b3ec361b4ec4a606a5cd572b7806219b
+    role: context
+  - path: data/natural_products/alkaloids/safracin-b.yaml
+    sha256: 2d2dcdd689c46c9de2b736b83a5e3d3b20461f3c6c495b207154216ffd14898c
+    role: context
+  - path: data/natural_products/alkaloids/saframycin-a.yaml
+    sha256: c63c99659e9d5d5e40f6888bfdbea49d6d068c19d3a11b869d8ca5d021082402
+    role: context
+  - path: data/natural_products/alkaloids/saframycin-b.yaml
+    sha256: a7e04b3a9ba1d2745fdff00de9058508aa7f0ae26854f90490e046b861404a33
+    role: context
+  - path: data/natural_products/alkaloids/saxitoxin.yaml
+    sha256: 0f74783b0a0f341ec1cd2fd1eee13e63497cf05e07467cc8b36aae67c293d50d
+    role: context
+  - path: data/natural_products/alkaloids/schizokinen.yaml
+    sha256: b23e6d827ebcb5c40c26ef1c7be553a40f66f1462897ce3aaa5eb2ecb4115992
+    role: context
+  - path: data/natural_products/alkaloids/secimide.yaml
+    sha256: 870d26c0ffbbd8d8937fe802c59af2eb520d20539de4bb89cbac5c7feb764696
+    role: context
+  - path: data/natural_products/alkaloids/serratiochelin-a.yaml
+    sha256: 4a22e00343f800cc88e32a7381e371c731682615e217d55db6a3ff9f39bc0e3b
+    role: context
+  - path: data/natural_products/alkaloids/serratiochelin-b.yaml
+    sha256: 4cb6d7ecea0df6464139853f6f28d5158109f56900c3a55ac85136508ca97859
+    role: context
+  - path: data/natural_products/alkaloids/serratiochelin-c.yaml
+    sha256: 2c854b895f431d74dda91d1c7a985c23aa25dfcac24496ba90f3f484b938402d
+    role: context
+  - path: data/natural_products/alkaloids/sesbanimide-c.yaml
+    sha256: 3825e2102ccbc9f2c9c684ba5c1a01f8a6f96fd8d5e30c014583fb9a8f0e284c
+    role: context
+  - path: data/natural_products/alkaloids/sesbanimide-e.yaml
+    sha256: afed9936257750616dc7bbd1dde2efa5048c65cb1d7fff1dcc41b227799098ec
+    role: context
+  - path: data/natural_products/alkaloids/sesbanimide-f.yaml
+    sha256: 981e7c65e2fe5fb61275727b6d39630186c71a600795e848401f156f3c102434
+    role: context
+  - path: data/natural_products/alkaloids/sf2768.yaml
+    sha256: b4e7ef33b371769068e414fb4d9216031c473675ab5019c19d24b329f2be5435
+    role: context
+  - path: data/natural_products/alkaloids/siphonazole.yaml
+    sha256: 42f862b878d35cd6022b79655d365471e1f34f0dc9b53d8fc41b5d044cac75b0
+    role: context
+  - path: data/natural_products/alkaloids/spicamycin.yaml
+    sha256: 7c654341e9e5ca59ec1789ece4ba358af87416e863cd5b5bd8b7ab7b68d38102
+    role: context
+  - path: data/natural_products/alkaloids/spiroindimicin-a.yaml
+    sha256: 6254c229759fec987118c41510fcd30b979fc6151f6d7278840937c5bdaf469b
+    role: context
+  - path: data/natural_products/alkaloids/spiroindimicin-b.yaml
+    sha256: 3bfac7db6c7a5f186c1004755fede9c5dccbbcd73c2c0e40ac52ba6bf8d5e2bb
+    role: context
+  - path: data/natural_products/alkaloids/spiroindimicin-c.yaml
+    sha256: ad12ff127d42a1f5bcd96be26181b0bb25c74245a141bc1d6b982150ba959ad8
+    role: context
+  - path: data/natural_products/alkaloids/spiroindimicin-d.yaml
+    sha256: 69ad87f95be955b3cfb99dab03eaa620592ab062b9955b9f4d43322da7fab73a
+    role: context
+  - path: data/natural_products/alkaloids/stams-9i.yaml
+    sha256: 34ad832ea0fcb065156cf7534c46887774b0f2c6a2db9380ad823b197c7739df
+    role: context
+  - path: data/natural_products/alkaloids/stams-9n.yaml
+    sha256: 177e40627ff91d5d134df12815b24b01e248652d473aa2af7b0d8b4d1de6bef0
+    role: context
+  - path: data/natural_products/alkaloids/staurosporine-2.yaml
+    sha256: 7a75eb3ec9955918849185001f35b0a8fbe5ecf723c69cc9f31f282fe0c7c88c
+    role: context
+  - path: data/natural_products/alkaloids/staurosporine.yaml
+    sha256: 4dd9446519fe8fe744900cbbc24b8719987727c2e0f5ebb2ae81533847db9572
+    role: context
+  - path: data/natural_products/alkaloids/stieleriacine-a1.yaml
+    sha256: fcfba2d06bb5950fa5a80615e378a8de8377f908c30cb2aa86466fde19ab9984
+    role: context
+  - path: data/natural_products/alkaloids/stieleriacine-a2.yaml
+    sha256: 79ea804b945c94952f52b2a184ede5bd7d07b1adc0296cad912e849f3de396c3
+    role: context
+  - path: data/natural_products/alkaloids/streptazone-e.yaml
+    sha256: 8836c3247aa172a7123668236b7a43d67f8e22845eb244a395fc364f58b938bf
+    role: context
+  - path: data/natural_products/alkaloids/streptonigrin.yaml
+    sha256: ca394e358399d77e5e874a9459c2593cf4d530f9c8cf7d174372f01d7d73deb8
+    role: target
+  - path: data/natural_products/alkaloids/sulfadixiamycin-a.yaml
+    sha256: 41af168001a71dbe0e2547593ea014f772bee9a3fc7ca50382fe428af06a93e7
+    role: context
+  - path: data/natural_products/alkaloids/sulfadixiamycin-b.yaml
+    sha256: e45d64094add3e9494f6621f25dac848473e8af3f4051e2a1c4d47b9feccb798
+    role: context
+  - path: data/natural_products/alkaloids/sulfadixiamycin-c.yaml
+    sha256: b9175b4f385059ca428525dd7b7bfa48df2d26c52c444396b3f472607c5ecc08
+    role: context
+  - path: data/natural_products/alkaloids/swainsonine.yaml
+    sha256: 71f901034cc959cb19d0b42d482a473d40cceb6c24e629ee732c5fd3242db9c1
+    role: context
+  - path: data/natural_products/alkaloids/synechobactin-a.yaml
+    sha256: 050147e3daf9ce22789a4d83e147a4836cb3f159f4c2fef0de0e07b422441164
+    role: context
+  - path: data/natural_products/alkaloids/synechobactin-b.yaml
+    sha256: 667893a0e914b82f1e5a1dcdf158999db540eca7562ec902f44e47214cd4ebd1
+    role: context
+  - path: data/natural_products/alkaloids/synechobactin-c.yaml
+    sha256: 1865986c22662c1ea42190d422a7de87bb512710828156cb287aef8c633b9ab7
+    role: context
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: data/raw/taxon_merged.tsv
+    sha256: 97b3efa66d4fc1679ab65ae547e78b2f627f37bc8e45ae33f2719008fe3863bb
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: 11808e60990b3520dbe8f9c50f6574f54cd32165185577a699f988c77f3d27ec
+    role: context
+  - path: src/naturalproductmech/grading.py
+    sha256: ece54c4a2c0803f034ac59de51b1006cf79ea8d6b6256d75757d4adb88ea9630
+    role: context
+  - path: src/naturalproductmech/graph_components.py
+    sha256: 10f08517869f482954fd583fd19d5750ef286a76297c231e6c9a5ba8dc023e17
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: tests/test_claim_references.py
+    sha256: dcfdb3c3bb5d4b0564877ca54c65b4367c0eb12b1046dbabdfaff188ba41cc36
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 453, batch 046, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated targets in earlier
+    batch commits (publication tracked separately). At selection, 518 of 3116 current
+    records had campaign coverage and 2598 remained. The population search included
+    ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CHEBI:9287
+targets:
+- target_id: CHEBI:9287
+  path: data/natural_products/alkaloids/streptonigrin.yaml
+  label: streptonigrin
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - CHEBI:9287
+  command: just validate-strict data/natural_products/alkaloids/streptonigrin.yaml
+    --out /private/tmp/npm-review-work/453/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-26T05:06:04.137077Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its
+    pinned path.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-corpus-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.783967Z;
+    finished 2026-10-25T22:37:16.453216Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.log.
+    Reused for batch046 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch046. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - CHEBI:9287
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: Fresh canonical reproduction gate passed:all3116 records byte-identical
+    to source seeding; source warnings remain retained.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-reproduction-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784055Z;
+    finished 2026-10-25T22:37:31.682209Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.log.
+    Reused for batch046 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch046. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - CHEBI:9287
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: Fresh deterministic review queue completed:8922 rows across12 queues. Queue
+    output is not scientific-review coverage.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-review-queue-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just review-queue --tsv /private/tmp/npm-review-queue-batch-036-fresh14373517-001.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.781802Z;
+    finished 2026-10-25T22:37:08.229737Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.log.
+    Reused for batch046 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch046. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - CHEBI:9287
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking
+    mismatches and4898no-adapter skips remain explicit.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-validate-products-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784040Z;
+    finished 2026-10-25T22:37:32.251879Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.log.
+    Reused for batch046 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch046. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - CHEBI:9287
+- check_id: shared-qc
+  name: Full repository quality gate on the fresh main baseline
+  status: passed
+  required: true
+  summary: Canonical just qc completed with actual terminal exit0:1024 tests passed,4
+    skipped,2 dependency warnings;3116 records passed closed schema validation, site
+    freshness, byte reproduction and lockfile integrity.22 governed artifacts and15
+    raw inventories passed. Prior DNS failed001 remains preserved.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-qc-attempt-002
+    PYTHONDONTWRITEBYTECODE=1 just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-002 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:40:55.179857Z;
+    finished 2026-10-25T22:46:28.974296Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.log.
+    Reused for batch046 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch046. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - CHEBI:9287
+- check_id: R453-FULL-OWNER
+  name: Complete owner and seven-set fidelity
+  status: passed
+  required: true
+  summary: Actual selection, ten successful intakes and chronological root binding
+    must precede authoring. All raw owners, 25 ordered history events, 70 source joins
+    and zero component references must match. Record 457 has nine raw and emitted
+    activities plus one inline graph mechanically compared only; full owner and raw
+    scientific masks remain false. Other local owners/raw sets were read. Two no-data
+    sentinels in 454 and 455 are not experiments or biological inactivity.
+  target_ids:
+  - CHEBI:9287
+  evidence_ids:
+  - R453-OWNER
+  - R453-LOCAL
+  - R453-PUBCHEM-PREP
+- check_id: S453-C-LOCAL
+  name: actual all-ten intake and current content checks
+  status: passed
+  required: true
+  summary: All ten official intakes and subsequent root equality receipts passed before
+    this section was authored; exact raw owners, resolved views and all seven source
+    sets were checked.
+  target_ids:
+  - CHEBI:9287
+  evidence_ids:
+  - S453-E-ACTUAL-LOCAL
+  - S453-E-GUARDS
+  - S453-E-INTAKE-VIEW
+  - S453-E-FORMAL-BINDING
+- check_id: S453-C-GRADING
+  name: source grade reproduction
+  status: passed
+  required: true
+  summary: Producer and locus grades reproduce imported method vocabulary. Reproduction
+    is distinct from experimental applicability.
+  target_ids:
+  - CHEBI:9287
+  evidence_ids:
+  - S453-E-GUARDS
+  - S453-E-METHOD-MAP
+  - S453-E-GRADING
+- check_id: S453-C-POSITIVE-SOURCE
+  name: bounded positive named-product source support
+  status: passed
+  required: true
+  summary: Named-product and original source identity are supported within the declared
+    channel. Native, introduced and exact method applicability are assessed separately.
+  target_ids:
+  - CHEBI:9287
+  evidence_ids:
+  - S453-E-PRIMARY-META
+  - S453-E-PRIMARY-EPMC
+  - S453-E-STN-OCC-META
+  - S453-E-STN1985-BIO
+  - S453-E-STN1985-IDENTITY
+  - S453-E-STN1984
+  - S453-E-STN1978-META
+  - S453-E-STN2013-SI-META
+  - S453-E-STN2013-SI
+  - S453-E-STN-MERGE
+  - S453-E-STN-ROOT-MODEL
+  - S453-E-LOCAL
+  - S453-E-INVENTORY
+  - S453-E-ROOT-LOCAL
+  - S453-E-SEEDER
+  - S453-E-CURATION
+  - S453-E-ACCESS-LIMITS
+  - S453-E-PRIMARY-PROVENANCE
+- check_id: S453-C-REQUIRED-SOURCE
+  name: source applicability for current claims
+  status: unavailable
+  required: true
+  summary: The 1978, 1963 and 1987 original occurrence scopes and full 1984 main remain
+    unclosed; retained bibliography is not complete source verification. The exact
+    JQ414024.1 header and full 2013 main are not independently read. No experimental
+    grade upgrade follows from the selected SI. No natural axial assignment, current
+    clinical recommendation or additional definition producer is endorsed.
+  target_ids:
+  - CHEBI:9287
+  evidence_ids:
+  - S453-E-PRIMARY-META
+  - S453-E-PRIMARY-EPMC
+  - S453-E-STN-OCC-META
+  - S453-E-STN1985-BIO
+  - S453-E-STN1985-IDENTITY
+  - S453-E-STN1984
+  - S453-E-STN1978-META
+  - S453-E-STN2013-SI-META
+  - S453-E-STN2013-SI
+  - S453-E-STN-MERGE
+  - S453-E-STN-ROOT-MODEL
+  - S453-E-LOCAL
+  - S453-E-INVENTORY
+  - S453-E-ROOT-LOCAL
+  - S453-E-SEEDER
+  - S453-E-CURATION
+  - S453-E-ACCESS-LIMITS
+  - S453-E-PRIMARY-PROVENANCE
+  - S453-E-SOURCE-READ
+  - S453-E-SOURCE-PEER
+- check_id: C453-C-REPRESENTATION
+  name: Stored chemical representation and complete source row
+  status: passed
+  required: true
+  summary: Fresh intake derivation agrees with the stored graph; the source selector,
+    full row and prepared snapshot were independently rechecked.
+  target_ids:
+  - CHEBI:9287
+  evidence_ids:
+  - C453-OWNER
+  - C453-GRAPH
+  - C453-COMPARISON
+- check_id: C453-C-LITERAL-SCOPE
+  name: Required current literal chemical authorities
+  status: unavailable
+  required: true
+  summary: Required current literal roles npatlas:NPA02378, CHEBI:9287 remain unavailable
+    pending explicit user approval. No retained response, match, mismatch or normalized
+    returned identifier is fabricated for these roles. Exact request spelling remains
+    distinct from any future returned normalization.
+  target_ids:
+  - CHEBI:9287
+  evidence_ids:
+  - C453-STN1985
+  - C453-PRIMARY-453
+  - C453-FIRST-READ
+  - C453-RETAINED
+  - C453-AUTH-LIMIT
+  - C453-OWNER-READ
+  - C453-AUTH-HOLD
+  - C453-AUTH-REQUEST
+  - C453-CURATION
+  - C453-SOURCE-LIMITS
+  - C453-OWNER
+  - C453-GRAPH
+  - C453-COMPARISON
+  - C453-AUTHORITY-AVAILABILITY
+  - C453-AUTHORITY-DETAIL
+- check_id: C453-C-PRIMARY-SCOPE
+  name: Exact original chemical depiction in the declared scope
+  status: passed
+  required: true
+  summary: The original 1985 compound 1 drawing supports the complete plain streptonigrin
+    constitution and passes the observed whole-graph comparison and MOL roundtrip.
+    Suggested axial configuration in adjacent prose is not encoded or independently
+    established; zero represented tetrahedral sites does not prove physical achirality.
+  target_ids:
+  - CHEBI:9287
+  evidence_ids:
+  - C453-STN1985
+  - C453-PRIMARY-453
+  - C453-FIRST-READ
+  - C453-RETAINED
+  - C453-AUTH-LIMIT
+  - C453-OWNER-READ
+  - C453-AUTH-HOLD
+  - C453-AUTH-REQUEST
+  - C453-CURATION
+  - C453-SOURCE-LIMITS
+  - C453-OWNER
+  - C453-GRAPH
+  - C453-COMPARISON
+  - C453-AUTHORITY-AVAILABILITY
+  - C453-AUTHORITY-DETAIL
+- check_id: C453-C-SOURCE-PRECISION
+  name: Represented source geometry and stereochemical limits
+  status: passed
+  required: true
+  summary: The original 1985 compound 1 drawing supports the complete plain streptonigrin
+    constitution and passes the observed whole-graph comparison and MOL roundtrip.
+    Suggested axial configuration in adjacent prose is not encoded or independently
+    established; zero represented tetrahedral sites does not prove physical achirality.
+  target_ids:
+  - CHEBI:9287
+  evidence_ids:
+  - C453-STN1985
+  - C453-PRIMARY-453
+  - C453-FIRST-READ
+  - C453-RETAINED
+  - C453-AUTH-LIMIT
+  - C453-OWNER-READ
+  - C453-AUTH-HOLD
+  - C453-AUTH-REQUEST
+  - C453-CURATION
+  - C453-SOURCE-LIMITS
+  - C453-OWNER
+  - C453-GRAPH
+  - C453-COMPARISON
+  - C453-AUTHORITY-AVAILABILITY
+  - C453-AUTHORITY-DETAIL
+evidence:
+- evidence_id: R453-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/streptonigrin.yaml
+  locator: Prior bounded root owner read, mechanically verified unchanged against
+    actual post-intake content
+  accessed_at: '2026-10-26T05:06:47.147600Z'
+  support: supports
+  summary: Actual post-intake equality preserves 7 occurrence, 1 producer and 1 locus
+    assertions, optional fields and history. The resolved view contains 0 exactly
+    pinned external component(s). The prior complete owner read retains the separate
+    scientific gaps and claim-level source limits.
+  snapshot_sha256: ca394e358399d77e5e874a9459c2593cf4d530f9c8cf7d174372f01d7d73deb8
+- evidence_id: R453-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/453/local-sources.json
+  locator: Complete resolved owner and all six captured source sets; seventh set independently
+    compared
+  accessed_at: '2026-10-26T05:06:47.147600Z'
+  support: context_only
+  summary: Exact captured rows and separately parsed PubChem rows match frozen preparation.
+    Inventory equality does not establish experimental support.
+  snapshot_sha256: ee427518e265012a2f3f06a5cf9ba84e165da6dee36e18a9e90f4e421f9ffdf1
+- evidence_id: R453-PUBCHEM-PREP
+  kind: record_content
+  reference: data/raw/pubchem_bioassay.tsv
+  locator: Complete exact-key retained assay-row inventory
+  accessed_at: '2026-10-26T05:06:47.147600Z'
+  support: context_only
+  summary: This owner has 0 retained rows and 0 written observations. Across the cohort,
+    record 457 has nine raw and nine emitted activities mechanically compared only;
+    scientific interpretation remains incomplete. Records 454 and 455 each have a
+    no-data sentinel, which is not an experiment or evidence of inactivity. Raw-only
+    inventory does not establish an omission error or an experimental result.
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: R453-Q1144013
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q1144013
+  locator: Literal retained entity P225/P685 with original source-specific access
+    time
+  accessed_at: '2026-10-26T03:01:18.883480Z'
+  support: context_only
+  summary: All 11 literal LOTUS routes match P225; 11 match P685 and 0 have a qualified
+    absent relation. Naming validity does not resolve original publication or stock
+    applicability.
+  snapshot_sha256: bf184aee4780e8799d15cf14eb6371901a23b651fa08a92d7426bf658783e9bf
+- evidence_id: R453-Q3061522
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q3061522
+  locator: Literal retained entity P225/P685 with original source-specific access
+    time
+  accessed_at: '2026-10-26T03:01:18.883480Z'
+  support: context_only
+  summary: All 11 literal LOTUS routes match P225; 11 match P685 and 0 have a qualified
+    absent relation. Naming validity does not resolve original publication or stock
+    applicability.
+  snapshot_sha256: bf184aee4780e8799d15cf14eb6371901a23b651fa08a92d7426bf658783e9bf
+- evidence_id: R453-Q62851335
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q62851335
+  locator: Literal retained entity P225/P685 with original source-specific access
+    time
+  accessed_at: '2026-10-26T03:01:18.883480Z'
+  support: context_only
+  summary: All 11 literal LOTUS routes match P225; 11 match P685 and 0 have a qualified
+    absent relation. Naming validity does not resolve original publication or stock
+    applicability.
+  snapshot_sha256: bf184aee4780e8799d15cf14eb6371901a23b651fa08a92d7426bf658783e9bf
+- evidence_id: R453-Q7623378
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q7623378
+  locator: Literal retained entity P225/P685 with original source-specific access
+    time
+  accessed_at: '2026-10-26T03:01:18.883480Z'
+  support: context_only
+  summary: All 11 literal LOTUS routes match P225; 11 match P685 and 0 have a qualified
+    absent relation. Naming validity does not resolve original publication or stock
+    applicability.
+  snapshot_sha256: bf184aee4780e8799d15cf14eb6371901a23b651fa08a92d7426bf658783e9bf
+- evidence_id: R453-TAXON-1873
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1129%2C1873%2C1883%2C1888%2C3803%2C5530%2C20406%2C20413%2C20416%2C20422%2C20805%2C24962%2C32049%2C47038%2C67300%2C89640%2C89659%2C90174%2C90190%2C90201%2C90210%2C90234%2C99017%2C457888%2C483874%2C491199%2C570715%2C655844%2C995841%2C1218706%2C1541393%2C1670457%2C1769941%2C1938221%2C1963369%2C2014685%2C2607090%2C2795974%2C2897604%2C3084112&retmode=xml
+  locator: Exact TaxId/ScientificName/rank/parent and OtherNames within retained response
+  accessed_at: '2026-10-26T03:01:18.957352Z'
+  support: context_only
+  summary: 'Retained naming context: 1873: Micromonospora (genus); 1883: Streptomyces
+    (genus); 1888: Streptomyces albus (species); 67300: Streptomyces albus (species).
+    Current NCBI explicitly redirects 67300 to 1888 and lists flocculus as a synonym.
+    The committed merge and citation deduplication already explain eleven raw assertions
+    becoming seven occurrences; naming does not infer a new stock. Names alone do
+    not prove occurrence, production or physical stock identity.'
+  snapshot_sha256: b8ad85deabcf2b1164209c3b5e84b3691e79fe6be83254189b385173cc89684e
+- evidence_id: R453-TAXON-1883
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1129%2C1873%2C1883%2C1888%2C3803%2C5530%2C20406%2C20413%2C20416%2C20422%2C20805%2C24962%2C32049%2C47038%2C67300%2C89640%2C89659%2C90174%2C90190%2C90201%2C90210%2C90234%2C99017%2C457888%2C483874%2C491199%2C570715%2C655844%2C995841%2C1218706%2C1541393%2C1670457%2C1769941%2C1938221%2C1963369%2C2014685%2C2607090%2C2795974%2C2897604%2C3084112&retmode=xml
+  locator: Exact TaxId/ScientificName/rank/parent and OtherNames within retained response
+  accessed_at: '2026-10-26T03:01:18.957352Z'
+  support: context_only
+  summary: 'Retained naming context: 1873: Micromonospora (genus); 1883: Streptomyces
+    (genus); 1888: Streptomyces albus (species); 67300: Streptomyces albus (species).
+    Current NCBI explicitly redirects 67300 to 1888 and lists flocculus as a synonym.
+    The committed merge and citation deduplication already explain eleven raw assertions
+    becoming seven occurrences; naming does not infer a new stock. Names alone do
+    not prove occurrence, production or physical stock identity.'
+  snapshot_sha256: b8ad85deabcf2b1164209c3b5e84b3691e79fe6be83254189b385173cc89684e
+- evidence_id: R453-TAXON-1888
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1129%2C1873%2C1883%2C1888%2C3803%2C5530%2C20406%2C20413%2C20416%2C20422%2C20805%2C24962%2C32049%2C47038%2C67300%2C89640%2C89659%2C90174%2C90190%2C90201%2C90210%2C90234%2C99017%2C457888%2C483874%2C491199%2C570715%2C655844%2C995841%2C1218706%2C1541393%2C1670457%2C1769941%2C1938221%2C1963369%2C2014685%2C2607090%2C2795974%2C2897604%2C3084112&retmode=xml
+  locator: Exact TaxId/ScientificName/rank/parent and OtherNames within retained response
+  accessed_at: '2026-10-26T03:01:18.957352Z'
+  support: context_only
+  summary: 'Retained naming context: 1873: Micromonospora (genus); 1883: Streptomyces
+    (genus); 1888: Streptomyces albus (species); 67300: Streptomyces albus (species).
+    Current NCBI explicitly redirects 67300 to 1888 and lists flocculus as a synonym.
+    The committed merge and citation deduplication already explain eleven raw assertions
+    becoming seven occurrences; naming does not infer a new stock. Names alone do
+    not prove occurrence, production or physical stock identity.'
+  snapshot_sha256: b8ad85deabcf2b1164209c3b5e84b3691e79fe6be83254189b385173cc89684e
+- evidence_id: R453-TAXON-67300
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1129%2C1873%2C1883%2C1888%2C3803%2C5530%2C20406%2C20413%2C20416%2C20422%2C20805%2C24962%2C32049%2C47038%2C67300%2C89640%2C89659%2C90174%2C90190%2C90201%2C90210%2C90234%2C99017%2C457888%2C483874%2C491199%2C570715%2C655844%2C995841%2C1218706%2C1541393%2C1670457%2C1769941%2C1938221%2C1963369%2C2014685%2C2607090%2C2795974%2C2897604%2C3084112&retmode=xml
+  locator: Exact TaxId/ScientificName/rank/parent and OtherNames within retained response
+  accessed_at: '2026-10-26T03:01:18.957352Z'
+  support: context_only
+  summary: 'Retained naming context: 1873: Micromonospora (genus); 1883: Streptomyces
+    (genus); 1888: Streptomyces albus (species); 67300: Streptomyces albus (species).
+    Current NCBI explicitly redirects 67300 to 1888 and lists flocculus as a synonym.
+    The committed merge and citation deduplication already explain eleven raw assertions
+    becoming seven occurrences; naming does not infer a new stock. Names alone do
+    not prove occurrence, production or physical stock identity.'
+  snapshot_sha256: b8ad85deabcf2b1164209c3b5e84b3691e79fe6be83254189b385173cc89684e
+- evidence_id: R453-IDENTIFIER-READ
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch046/root-context/root-metadata-result-and-projection-read-001.json
+  locator: Sixty-four P225 routes across 33 entities and 40 requested taxon IDs; 58
+    exact P685 matches and six qualified absent P685 relations
+  accessed_at: '2026-10-26T03:05:34.438646Z'
+  support: context_only
+  summary: Root read original identifier values and naming context. These do not prove
+    experimental occurrence, production or stock equivalence.
+  snapshot_sha256: 09144af7176026d83bbc73481671c98e1c7d449b9f38ac3f55d7ac5a2d5df2f9
+- evidence_id: R453-IMODULON
+  kind: database
+  reference: https://imodulondb.org/api/datasets
+  locator: Complete retained 20-organism/28-dataset catalogue
+  accessed_at: '2026-10-22T04:52:27.596517Z'
+  support: context_only
+  summary: The retained catalogue contains 20 organisms and 28 datasets at its original
+    access time. No exact native-producer name, stock or gene/module/compound association
+    is established. This is bounded catalogue context, not an exhaustive current search.
+  snapshot_sha256: 155607e7023efdead5ebab3919279a0776d5665a7de9e28b67f02f8f521b0693
+- evidence_id: S453-E-ACTUAL-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/453/local-sources.json
+  locator: Complete resolved owner and captured rows; exact seven-set equality checked
+  accessed_at: '2026-10-26T05:07:27.846153Z'
+  support: context_only
+  summary: Complete actual owner/history and all seven source sets match the prepared
+    objects. Scientific conclusions and source limitations are recorded in the target
+    plan.
+  snapshot_sha256: ee427518e265012a2f3f06a5cf9ba84e165da6dee36e18a9e90f4e421f9ffdf1
+- evidence_id: S453-E-CONSUMERS
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: Current 14373517 locus override473–571, producer/cluster1089–1153, consolidated
+    discussion1497–1518 and shared-structure/unnamed-producer prompts1563–1595
+  accessed_at: '2026-10-26T05:07:27.846153Z'
+  support: context_only
+  summary: Static inspection covers exact source method grading, producer/reference
+    qualification and consumed correction ordering. Current shared-structure replacement
+    and consolidated discussions are separate capabilities; they do not select identity
+    changes or broaden source endpoints.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: S453-E-GENERIC-SCHEMA
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: ProducerEvidenceBasisEnum and ClusterLinkEvidenceEnum; conf/producer_evidence.tsv
+    and grading.py also read and pinned
+  accessed_at: '2026-10-26T05:07:27.846153Z'
+  support: context_only
+  summary: Producer tiers concern evidence in the named organism; cloned-locus experiments
+    are a distinct cluster question. Empty methods and a source assertion do not independently
+    assert native knockout or exact pure-enzyme proof.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: S453-E-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/453/science-search.json
+  locator: Exact read scope
+  accessed_at: '2026-10-26T05:07:27.853475Z'
+  support: context_only
+  summary: Exact current curated-decision search is retained. Its scope is the curation
+    tree; it does not establish absence of experimental evidence or all possible consumers.
+  snapshot_sha256: df37487188e6fd70776545c10613eacd1aee2a70652f6a36a7edf3325636cc7f
+  search_scope: rg --no-ignore --hidden -n -F over curation using exact identifier,
+    label, full key and source accessions
+- evidence_id: S453-E-ACCESS-LIMITS
+  kind: prior_review
+  reference: local:ACCESS-LIMITS
+  locator: All retained primary HTTP failures/successes and actual process observations
+  accessed_at: '2026-10-26T02:49:11.836445Z'
+  support: context_only
+  summary: No access failure or authority hold is treated as experimental absence.
+  snapshot_sha256: 818b25d3930dcac0f7651ba4b4c02c8c6936af461a209cbf696c2154a07ae7df
+- evidence_id: S453-E-CURATION
+  kind: record_content
+  reference: local:CURATION
+  locator: Claim-level source/evidence and maintained curation semantics
+  accessed_at: '2026-10-26T02:49:11.836445Z'
+  support: context_only
+  summary: Conservative provenance versus experimental support; no record edits.
+  snapshot_sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+- evidence_id: S453-E-FORMAL-BINDING
+  kind: prior_review
+  reference: local:FORMAL-BINDING
+  locator: Current raw owner/history, exact component expansion and seven source sets
+  accessed_at: '2026-10-26T02:56:15.291445Z'
+  support: context_only
+  summary: Preparation equality is established; actual selection, all-ten successful
+    intakes and subsequent root checks must pass before authoring.
+  snapshot_sha256: 5ae9f716fb6941ff294f4fb311843244a1990195c244f1b956488c54215e9439
+- evidence_id: S453-E-GRADING
+  kind: record_content
+  reference: local:GRADING
+  locator: Current producer/locus grade functions
+  accessed_at: '2026-10-26T02:56:15.291445Z'
+  support: context_only
+  summary: Mechanical grade reproduction does not independently establish native or
+    introduced experimental endpoints.
+  snapshot_sha256: ece54c4a2c0803f034ac59de51b1006cf79ea8d6b6256d75757d4adb88ea9630
+- evidence_id: S453-E-GUARDS
+  kind: record_content
+  reference: local:GUARDS
+  locator: All ten paths, owner pins and complete source rows/digests
+  accessed_at: '2026-10-26T02:56:15.291445Z'
+  support: context_only
+  summary: Exact all-ten seven-source-set guards preserve complete rows, empty sets
+    and original methods.
+  snapshot_sha256: 0ae41a53123e9e5b3940abef44a936180b170667ca8e6f99059a6513917f7203
+- evidence_id: S453-E-INTAKE-VIEW
+  kind: prior_review
+  reference: local:INTAKE-VIEW
+  locator: All ten exact raw/expanded digests; record 457 has one inline graph and
+    no referenced component
+  accessed_at: '2026-10-26T02:56:15.291445Z'
+  support: context_only
+  summary: Exact raw and expanded views preserve all ten owners; no referenced components
+    occur. Mechanical equality does not establish scientific graph, pathway or assay
+    validation.
+  snapshot_sha256: 1b514d41c62b434c732e3fc4af743fea4b3a47c5ebab64ae0800132ffe3c3302
+- evidence_id: S453-E-INVENTORY
+  kind: prior_review
+  reference: local:INVENTORY
+  locator: Tentative orders 451–460, complete owners/history and seven raw sets
+  accessed_at: '2026-10-26T02:49:11.836445Z'
+  support: context_only
+  summary: Provisional inventory only; no official selection or future lifecycle claim.
+  snapshot_sha256: d9bda719590740ce2d0a2f166fc85daa06e8770902039e46bc8627d92b3bfbcc
+- evidence_id: S453-E-LOCAL
+  kind: prior_review
+  reference: local:LOCAL
+  locator: First-five full owner/history/seven-source semantics and ignored-inclusive
+    retained discovery
+  accessed_at: '2026-10-26T02:49:11.836445Z'
+  support: context_only
+  summary: Original local prerequisite scope; the present compiler independently rejoins
+    all ten owners and 70 raw sets.
+  snapshot_sha256: 3d814ca4fbee4d62a9f379d8d5f03819e0f9ebcddc74f9203650dd4c3adc54f7
+- evidence_id: S453-E-METHOD-MAP
+  kind: record_content
+  reference: local:METHOD-MAP
+  locator: Current method-to-grade map
+  accessed_at: '2026-10-26T02:56:15.291445Z'
+  support: context_only
+  summary: Producer and locus grades answer different questions; imported methods
+    require exact source applicability.
+  snapshot_sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+- evidence_id: S453-E-PRIMARY-EPMC
+  kind: database
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:23421585%20OR%20EXT_ID:26403163%20OR%20EXT_ID:23301954%20OR%20EXT_ID:26366473&format=json&resultType=core&pageSize=10
+  locator: Four exact bibliographic records and access links
+  accessed_at: '2026-10-26T02:36:03.653195Z'
+  support: partial
+  summary: Metadata and abstract corroboration; not an additional independent experiment.
+  snapshot_sha256: e92e8bb14f0aacfba216b69505d5beb8fba773a5d25c238e5f2e3192d34a3221
+- evidence_id: S453-E-PRIMARY-META
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=23421585,26403163,23301954,26366473&retmode=xml
+  locator: PMIDs 23421585, 26403163, 23301954 and 26366473; complete original titles/abstracts
+  accessed_at: '2026-10-26T02:36:02.218728Z'
+  support: partial
+  summary: Original abstract provenance only; no full main-text or exact method-endpoint
+    closure.
+  snapshot_sha256: 652f23e60235fdb5ee3b28120fca77d34feeebd76a711a8b4f7969935ed3ec2c
+- evidence_id: S453-E-PRIMARY-PROVENANCE
+  kind: prior_review
+  reference: local:PRIMARY-PROVENANCE
+  locator: Exact parsed paragraph hashes, selected PDF locators and viewed-pixel receipts
+  accessed_at: '2026-10-26T02:49:11.836445Z'
+  support: context_only
+  summary: Reproducible bounded reading scope, not a new experimental source.
+  snapshot_sha256: a19283857137b72fc7d6b8da0fdf82a6ecb2d20d34478125a51b9fef759abe6e
+- evidence_id: S453-E-ROOT-LOCAL
+  kind: prior_review
+  reference: local:ROOT-LOCAL
+  locator: Root current owner/history/raw read receipt
+  accessed_at: '2026-10-26T02:49:11.836445Z'
+  support: context_only
+  summary: Local scope context; not independent experimental corroboration.
+  snapshot_sha256: a23a5b2add5e7481d3c87e609e1d6e0f0b2a39cc5f0e1dc77c266d3fba502ddc
+- evidence_id: S453-E-ROOT-SOURCE
+  kind: prior_review
+  reference: local:ROOT-SOURCE
+  locator: Root direct original-source read and five individually scoped conclusions
+  accessed_at: '2026-10-26T02:52:25.722571Z'
+  support: partial
+  summary: Root bounded source adjudication accepts the declared biological scope;
+    independent full source peer is separately bound.
+  snapshot_sha256: 506f3f3aa9a3516324279e36a6c943ad0b1df1a7f0d2da03ff9307b509aa4b2f
+- evidence_id: S453-E-SEEDER
+  kind: record_content
+  reference: local:SEEDER
+  locator: Selected taxon merge, LOTUS projection, deduplication and cap clauses bound
+    in STN-MERGE
+  accessed_at: '2026-10-26T02:49:11.836445Z'
+  support: context_only
+  summary: Existing source projection mechanics only; no seeder import or execution.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: S453-E-SOURCE-PEER
+  kind: prior_review
+  reference: local:SOURCE-PEER
+  locator: Complete peer conclusions, original-source pins and conservative required-gap
+    dispositions
+  accessed_at: '2026-10-26T02:56:00.431875Z'
+  support: partial
+  summary: Independent full bounded source peer is clear within explicit direct and
+    reused original scopes.
+  snapshot_sha256: 715c9251017d45d81eac64dda7330ad07e37d127fd6ba2ab8a2db87d179fd17d
+- evidence_id: S453-E-SOURCE-READ
+  kind: prior_review
+  reference: local:SOURCE-READ
+  locator: Complete first-five preferred 002 narratives, zero findings and explicit
+    required source gaps
+  accessed_at: '2026-10-26T02:50:01.652043Z'
+  support: partial
+  summary: Frozen source judgments distinguish exact native congeners, introduced
+    material, locus applicability and remaining gaps.
+  snapshot_sha256: 849994b2d42d4142fd0045cfb7f22450545e3de234c8515179e68188a0f78e3e
+- evidence_id: S453-E-STN-MERGE
+  kind: prior_review
+  reference: local:STN-MERGE
+  locator: Complete 11 raw LOTUS rows, taxon merge 67300→1888 and seven emitted tuples
+  accessed_at: '2026-10-26T02:49:11.836445Z'
+  support: context_only
+  summary: Four repeated rows collapse by committed taxon merge and deduplication,
+    not an exclusion or cap.
+  snapshot_sha256: a9670449dd1e79baec90dcea9a61a02ce902231f0c0540fb920c2633238f45bb
+- evidence_id: S453-E-STN-OCC-META
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=12027749,4066496,4008345,6743267&retmode=xml
+  locator: PMIDs 12027749, 4066496, 4008345 and 6743267
+  accessed_at: '2026-10-26T02:37:58.386817Z'
+  support: partial
+  summary: Exact parent isolation abstract for Micromonospora IM 2670 and original
+    flocculus-production abstract; two 1985 records have no abstracts.
+  snapshot_sha256: 12e40f68bd5512939da61cb6565145aba2a37f81e0d9030380388b95ffd6f1cb
+- evidence_id: S453-E-STN-ROOT-MODEL
+  kind: prior_review
+  reference: local:STN-ROOT-MODEL
+  locator: Root-observed original 1985 constitution comparison
+  accessed_at: '2026-10-26T02:49:11.836445Z'
+  support: context_only
+  summary: Plain constitution matches through the observed source channels; no axial-hand
+    conclusion or rerun.
+  snapshot_sha256: 19f95013ac5d25f9b52a4595f3af206c2cab64a563b02cbc134d9bcbdac2c08e
+- evidence_id: S453-E-STN1978-META
+  kind: database
+  reference: https://api.crossref.org/works/10.1016%2FS0040-4039(01)85595-7
+  locator: Exact DOI 10.1016/S0040-4039(01)85595-7 title and bibliography
+  accessed_at: '2026-10-26T02:38:11.412690Z'
+  support: partial
+  summary: Bibliographic lead only; no original occurrence conclusion from its title.
+  snapshot_sha256: 756b16428881e2496161d8fed1018b02b8ef5e336734c97a7daa7ece392dc499
+- evidence_id: S453-E-STN1984
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC1153624/
+  locator: Original abstract and exact linked PDF locator, DOI 10.1042/bj2200309
+  accessed_at: '2026-10-26T02:38:10.465339Z'
+  support: partial
+  summary: Source explicitly describes streptonigrin-producing S. flocculus; complete
+    scanned main PDF remains unavailable.
+  snapshot_sha256: 9605c934072188a0a0bca66e4de8c1e5b64e338f3e0c2e56f028b21bcc1aa3eb
+- evidence_id: S453-E-STN1985-BIO
+  kind: primary_source
+  reference: https://www.jstage.jst.go.jp/article/antibiotics1968/38/10/38_10_1429/_pdf
+  locator: Printed 1429 opening continued on 1430; selected references
+  accessed_at: '2026-10-26T02:38:03.688271Z'
+  support: partial
+  summary: Native Streptomyces retrostaticus parent provenance; no experimental assay
+    reproduction or current clinical endorsement.
+  snapshot_sha256: 5dda41a1abee4a0104b2f2b5a842c5f823bbc537931a269a79b6420957742eda
+- evidence_id: S453-E-STN1985-IDENTITY
+  kind: primary_source
+  reference: https://www.jstage.jst.go.jp/article/antibiotics1968/38/4/38_4_516/_pdf
+  locator: Printed 516 opening/compound 1; printed 517 selected identity discussion
+  accessed_at: '2026-10-26T02:38:10.139683Z'
+  support: partial
+  summary: Unidentified Streptomyces IA-CAS isolate 114 co-produces parent 1 and distinct
+    streptonigrone 2. Plain constitutional depiction does not establish axial hand.
+  snapshot_sha256: 9b8467e9f10332ed0e011fab38089e7ac7cbdf12c470f915c1b85e453ae7cbe2
+- evidence_id: S453-E-STN2013-SI
+  kind: primary_source
+  reference: https://ndownloader.figshare.com/files/4088800
+  locator: Physical 1–2 title/contents; physical 11 Table S4 exact parent-stock row;
+    physical 20 Figure S1
+  accessed_at: '2026-10-26T02:41:02.823829Z'
+  support: partial
+  summary: CGMCC 4.1223 native WT parent 1 positive. No pathway/construct protocol
+    compilation, grade upgrade, direct accession-header closure or natural axial assignment.
+  snapshot_sha256: bbfda20da522b4dfb9f9954de286da0f4e9dc0b859f431f6f0666d6ae0eee25b
+- evidence_id: S453-E-STN2013-SI-META
+  kind: database
+  reference: https://api.figshare.com/v2/articles/2446132
+  locator: Official Figshare article 2446132/file 4088800/DOI 10.1021/ja3069243.s001
+  accessed_at: '2026-10-26T02:39:16.874309Z'
+  support: partial
+  summary: Exact title, PDF filename, size and original source route; does not itself
+    establish scientific claims.
+  snapshot_sha256: 2ec601850a6e52820fc6937ea8fa94a29c5070052f65329163e7a1fb2d49163a
+- evidence_id: C453-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/streptonigrin.yaml
+  locator: Complete owner bytes and seven matching source-row sets mechanically checked;
+    manual chemical identity scope only
+  accessed_at: '2026-10-26T05:07:55.271995Z'
+  support: supports
+  summary: 'The chemical identity fields denote streptonigrin under CHEBI:9287. All
+    source selectors, versions and complete row digests are retained in COMPARISON:
+    [{"row_sha256": "a8a33164f15ed11b946a90ef4f4afcd51a78f6365b6d8bed541086e850092e5a",
+    "selector": "BGC0001783:1", "version": "5"}]. The official intake and prepared
+    owner bytes agree.'
+  snapshot_sha256: ca394e358399d77e5e874a9459c2593cf4d530f9c8cf7d174372f01d7d73deb8
+- evidence_id: C453-GRAPH
+  kind: validation
+  reference: /private/tmp/npm-review-work/453/chemistry.json
+  locator: Fresh intake RDKit result and frozen Standard/fixed-H comparison
+  accessed_at: '2026-10-26T05:06:02.220638Z'
+  support: supports
+  summary: The stored SMILES recomputes to PVYJZLYGTZKPJE-UHFFFAOYSA-N, formula C25H22N4O8,
+    formal charge 0; stored InChI/key agree. These are representation checks, not
+    experimental identity proof.
+  snapshot_sha256: 2c9b9863867f040cc26977af2de3e50067c1132991983a1da92683139ee4f8ba
+- evidence_id: C453-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch046/chemistry-prep/retained-graph-comparison.json
+  locator: Record 453; exact source rows and each graph comparison
+  accessed_at: '2026-10-26T02:28:46.682058Z'
+  support: supports
+  summary: Exact Standard, fixed-H, formula, charge and stereo comparisons of the
+    retained owner and complete raw rows; current authority responses and primary
+    proof are separate evidence.
+  snapshot_sha256: 5876f466c77c3a323e7f2a58074621df8217f3aac73df491412ff759f3c07e4e
+- evidence_id: C453-LOCAL-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/453/chemistry-search-receipt.json
+  locator: Exact full key, label, slug and source selector in raw/owner/curation trees
+  accessed_at: '2026-10-26T05:07:55.520748Z'
+  support: supports
+  summary: Ignored-inclusive bounded search preserves all matching paths; an absent
+    curation decision does not imply a missing scientific source.
+  snapshot_sha256: 246773d137091a5ebafd39994811b53e481ba4133f7a8be0ac8ac585b4b60d71
+  search_scope: rg --no-ignore --hidden; data/natural_products, data/raw and curation;
+    exact full key, current label, slug and BGC:compound_index. No claim beyond these
+    trees.
+- evidence_id: C453-AUTHORITY-AVAILABILITY
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch046/chemistry-prep/authority-limited-source-projection-001.json
+  locator: Retained raw/versioned channels and explicitly unavailable current literal
+    roles
+  accessed_at: '2026-10-26T02:55:18.611965Z'
+  support: partial
+  summary: This is an availability and retained-source projection, not a fresh current-authority
+    numerical comparison. Required held roles are not asserted absent, matching or
+    mismatching.
+  snapshot_sha256: a8c4f104fe13531f24f7a781fc677ce4021ca64c7fc5605a98f9bf157b3f2a6a
+- evidence_id: C453-AUTHORITY-DETAIL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch046/chemistry-prep/source-plan-001.json
+  locator: Retained raw/versioned channels and explicitly unavailable current literal
+    roles
+  accessed_at: '2026-10-26T03:03:33.608193Z'
+  support: partial
+  summary: This is an availability and retained-source projection, not a fresh current-authority
+    numerical comparison. Required held roles are not asserted absent, matching or
+    mismatching.
+  snapshot_sha256: 279c53bf1520f71824fd98979a50d438a11d8c56336df2932818952f053b16e0
+- evidence_id: C453-STN1985
+  kind: primary_source
+  reference: DOI:10.7164/antibiotics.38.516
+  locator: Physical page 1/printed 516 compound 1 and selected next-page identity/axial
+    discussion.; retained snapshot /private/tmp/npm-review-work/shared-next-batch046/bgc-science/public-004/streptonigrone1985-main.pdf
+  accessed_at: '2026-10-26T02:38:10.139683Z'
+  support: partial
+  summary: Exact parent streptonigrin constitution, distinct from streptonigrone.
+    Suggested axial configuration is not encoded or independently reassigned.
+  snapshot_sha256: 9b8467e9f10332ed0e011fab38089e7ac7cbdf12c470f915c1b85e453ae7cbe2
+- evidence_id: C453-PRIMARY-453
+  kind: validation
+  reference: local:root-executed-primary-model
+  locator: Complete serialized original source graph/comparisons and stated limitations.;
+    retained snapshot /private/tmp/npm-review-work/shared-next-batch046/chemistry-prep/primary-mapping-001/streptonigrin453-source-comparison-001.json
+  accessed_at: '2026-10-26T02:42:41.696346Z'
+  support: partial
+  summary: All four source/owner comparisons and roundtrip true within the exact declared
+    source scope; no current authority conclusion.
+  snapshot_sha256: 33fe0d464d4d24a1b3f3bdef03b69e7ec78595337168da2f9b9c23ef3e83750d
+- evidence_id: C453-FIRST-READ
+  kind: prior_review
+  reference: local:prior-bounded-source-reader
+  locator: Selected chemical identity and access observations only; no fresh full-paper
+    read claim.; retained snapshot /private/tmp/npm-review-work/shared-next-batch046/bgc-science/source-notes-451455-002.json
+  accessed_at: '2026-10-26T02:50:01.652043Z'
+  support: context_only
+  summary: Previously bounded first-five original identity, congener and access scope.
+    Biology readiness and findings are separately owned.
+  snapshot_sha256: 849994b2d42d4142fd0045cfb7f22450545e3de234c8515179e68188a0f78e3e
+- evidence_id: C453-RETAINED
+  kind: database
+  reference: local:batch046-retained
+  locator: Ten stored identity and twelve selected raw graph comparisons.; retained
+    snapshot /private/tmp/npm-review-work/shared-next-batch046/chemistry-prep/retained-graph-comparison.json
+  accessed_at: '2026-10-26T02:28:46.682058Z'
+  support: partial
+  summary: ROOT-executed stored/raw Standard and fixed-H agreement is separate from
+    remote authority identity.
+  snapshot_sha256: 5876f466c77c3a323e7f2a58074621df8217f3aac73df491412ff759f3c07e4e
+- evidence_id: C453-AUTH-LIMIT
+  kind: database
+  reference: local:batch046-auth-limit
+  locator: Twelve raw/versioned channels and thirteen unavailable current literal
+    roles.; retained snapshot /private/tmp/npm-review-work/shared-next-batch046/chemistry-prep/authority-limited-source-projection-001.json
+  accessed_at: '2026-10-26T02:55:18.611965Z'
+  support: partial
+  summary: No unavailable role is asserted absent, matching or mismatching; no candidate
+    promotion.
+  snapshot_sha256: a8c4f104fe13531f24f7a781fc677ce4021ca64c7fc5605a98f9bf157b3f2a6a
+- evidence_id: C453-OWNER-READ
+  kind: record_content
+  reference: local:batch046-owner-read
+  locator: Ten complete mechanical owner/history/source joins; 457 graph and assays
+    excluded scientifically.; retained snapshot /private/tmp/npm-review-work/shared-next-batch046/chemistry-prep/owner-seven-set-source-freeze-read-001.json
+  accessed_at: '2026-10-26T02:55:18.611266Z'
+  support: partial
+  summary: All chemistry whole-owner/raw manual flags false; complete mechanical equality
+    true.
+  snapshot_sha256: df87d9679cc564849762739fc7a86facfe50e790f0f7eb99bface8d97dc15cc0
+- evidence_id: C453-AUTH-HOLD
+  kind: record_content
+  reference: local:batch046-auth-hold
+  locator: Exact rejected sixteen-request retry and approval reason; no process ran.;
+    retained snapshot /private/tmp/npm-review-work/shared-next-batch046/chemistry-prep/literal-authority-approval-rejection-001.json
+  accessed_at: '2026-10-26T02:26:30.142225Z'
+  support: context_only
+  summary: No retry, alternate tool, endpoint or delegated request after rejection.
+  snapshot_sha256: 04ba9e4a60f20ae3b389ca5a5b1853fff0cecb669bddc4363f01dc61c83fba9a
+- evidence_id: C453-AUTH-REQUEST
+  kind: record_content
+  reference: local:batch046-auth-request
+  locator: Exact sixteen attempted plus six unattempted public literal-authority requests.;
+    retained snapshot /private/tmp/npm-review-work/shared-next-batch046/chemistry-prep/literal-authority-approval-request-prepared-001.json
+  accessed_at: '2026-10-26T02:26:39.016097Z'
+  support: context_only
+  summary: The pending approval scope does not authorize execution until an explicit
+    answer.
+  snapshot_sha256: ba79d615d1e7803ce227e6c337e0d8f5b78e64e5f0e2dc90347a17f311da9a76
+- evidence_id: C453-CURATION
+  kind: record_content
+  reference: local:batch046-curation
+  locator: Same-key identity/candidate and source-attribution rules.; retained snapshot
+    /private/tmp/npm-record-reviews-20261021/docs/CURATION.md
+  accessed_at: '2026-10-26T02:55:18.295910Z'
+  support: context_only
+  summary: Retained asserted identifiers, newly discovered candidates and structure
+    replacements are separate; none is promoted from an unavailable lookup.
+  snapshot_sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+- evidence_id: C453-SOURCE-LIMITS
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch046/chemistry-prep/source-notes-002.json
+  locator: 'Entry 453: chemical observations, held literal roles, source precision
+    and limitations; retained snapshot /private/tmp/npm-review-work/shared-next-batch046/chemistry-prep/source-notes-002.json'
+  accessed_at: '2026-10-26T02:58:43.768002Z'
+  support: partial
+  summary: All ten chemical scopes remain partial because required current literal
+    authorities are unavailable under the explicit approval hold. Positive source
+    comparisons for 451, 453 and 457 remain separately scoped; no chemical findings,
+    replacement or candidate promotion is inferred.
+  snapshot_sha256: 4d44fbff45c72ceb6479bb76bc3b9b3cefd6e0a10b20a8ced589af8199163042
+assessments:
+- assessment_id: R453-HISTORY
+  area: provenance
+  topic: Complete history and native status
+  outcome: supported
+  summary: 'Native status remains SEEDED and all 3 history actions retain their exact
+    order: [''SEEDED_FROM_SOURCES'', ''SEEDED_FROM_SOURCES'', ''SEEDED_FROM_SOURCES''].
+    Source-seeding history does not replace claim-level scientific assessment.'
+  target_ids:
+  - CHEBI:9287
+  evidence_ids:
+  - R453-OWNER
+- assessment_id: R453-OPTIONAL
+  area: completeness
+  topic: Present optional assertions
+  outcome: supported
+  summary: Present local fields (definition, bioactivity_summary, related_records)
+    were read; their exact source applicability remains bounded by the separate biological
+    and chemical reviews.
+  target_ids:
+  - CHEBI:9287
+  evidence_ids:
+  - R453-OWNER
+  - R453-LOCAL
+  - R453-PUBCHEM-PREP
+- assessment_id: R453-FILING
+  area: representation
+  topic: Exact computed classification provenance
+  outcome: supported
+  summary: Exact-key NPClassifier version npclassifier.gnps2.org@2026-09-07 reproduces
+    filing, superclass/class and glycoside fields. Computed classification is not
+    independent natural-origin or mechanistic proof; any accepted identity correction
+    requires effective-key reclassification.
+  target_ids:
+  - CHEBI:9287
+  evidence_ids:
+  - R453-OWNER
+  - R453-LOCAL
+- assessment_id: R453-TAXON-SCOPE
+  area: provenance
+  topic: Taxonomic identifiers versus experimental stocks
+  outcome: supported
+  summary: 'Retained naming context: 1873: Micromonospora (genus); 1883: Streptomyces
+    (genus); 1888: Streptomyces albus (species); 67300: Streptomyces albus (species).
+    Current NCBI explicitly redirects 67300 to 1888 and lists flocculus as a synonym.
+    The committed merge and citation deduplication already explain eleven raw assertions
+    becoming seven occurrences; naming does not infer a new stock. Names alone do
+    not prove occurrence, production or physical stock identity.'
+  target_ids:
+  - CHEBI:9287
+  evidence_ids:
+  - R453-OWNER
+  - R453-TAXON-1873
+  - R453-TAXON-1883
+  - R453-TAXON-1888
+  - R453-TAXON-67300
+  - R453-Q1144013
+  - R453-Q3061522
+  - R453-Q62851335
+  - R453-Q7623378
+- assessment_id: R453-ORGANISM-IDS
+  area: grounding
+  topic: Literal organism routing
+  outcome: supported
+  summary: All 11 literal LOTUS routes match P225; 11 match P685 and 0 have a qualified
+    absent relation. Naming validity does not resolve original publication or stock
+    applicability.
+  target_ids:
+  - CHEBI:9287
+  evidence_ids:
+  - R453-OWNER
+  - R453-IDENTIFIER-READ
+  - R453-TAXON-1873
+  - R453-TAXON-1883
+  - R453-TAXON-1888
+  - R453-TAXON-67300
+  - R453-Q1144013
+  - R453-Q3061522
+  - R453-Q62851335
+  - R453-Q7623378
+- assessment_id: R453-IMODULON-SCOPE
+  area: completeness
+  topic: Native producer transcriptomic applicability
+  outcome: not_applicable
+  summary: The retained catalogue contains 20 organisms and 28 datasets at its original
+    access time. No exact native-producer name, stock or gene/module/compound association
+    is established. This is bounded catalogue context, not an exhaustive current search.
+  target_ids:
+  - CHEBI:9287
+  evidence_ids:
+  - R453-OWNER
+  - R453-IMODULON
+- assessment_id: S453-A-LOCAL
+  area: provenance
+  topic: current owner/history and source sets
+  outcome: supported
+  summary: Actual complete owner/history and all seven source sets match the frozen
+    inventory. Scientific judgments retain the declared original-source, congener
+    and stock limits.
+  target_ids:
+  - CHEBI:9287
+  evidence_ids:
+  - S453-E-ACTUAL-LOCAL
+  - S453-E-LOCAL
+  - S453-E-GUARDS
+  - S453-E-INTAKE-VIEW
+- assessment_id: S453-A-SOURCE
+  area: provenance
+  topic: named-product and original source context
+  outcome: supported
+  summary: The original 2013 abstract identifies S. flocculus CGMCC 4.1223 as a streptonigrin
+    producer. Its retained SI Table S4 names the same WT parent-producing stock; Figure
+    S1 labels parent 1 in the WT trace and in the stated comparison traces.
+  target_ids:
+  - CHEBI:9287
+  evidence_ids:
+  - S453-E-PRIMARY-META
+  - S453-E-PRIMARY-EPMC
+  - S453-E-STN-OCC-META
+  - S453-E-STN1985-BIO
+  - S453-E-STN1985-IDENTITY
+  - S453-E-STN1984
+  - S453-E-STN1978-META
+  - S453-E-STN2013-SI-META
+  - S453-E-STN2013-SI
+  - S453-E-STN-MERGE
+  - S453-E-STN-ROOT-MODEL
+  - S453-E-LOCAL
+  - S453-E-INVENTORY
+  - S453-E-ROOT-LOCAL
+  - S453-E-SEEDER
+  - S453-E-CURATION
+  - S453-E-ACCESS-LIMITS
+  - S453-E-PRIMARY-PROVENANCE
+- assessment_id: S453-A-BOUNDARIES
+  area: evidence
+  topic: native, introduced, congener and source boundaries
+  outcome: supported
+  summary: The exact parent is independently positive in the 2002 Micromonospora IM
+    2670 abstract, the selected 1985 retrostaticus provenance passage and the 1985
+    unidentified Streptomyces IA-CAS isolate 114 co-product passage. Streptonigrone
+    and the 2002 substituted derivative are kept separate from parent 1. The original
+    1984 abstract explicitly describes streptonigrin-producing S. flocculus. The 1978
+    source remains metadata-only, and 1963/1987 main-text requests failed; those individual
+    occurrence citations are not independently closed or automatically excluded. The
+    11 raw LOTUS rows reproduce seven written assertions after the committed 67300→1888
+    taxon merge and exact tuple deduplication. Four duplicate flocculus/albus tuples
+    are not exclusions and no occurrence cap is reached. Current naming context does
+    not independently prove every historical stock identity. The imported ChEBI definition’s
+    carcinoma/leukopenia wording is source-attributed historical text. This review
+    does not establish current clinical use, clinical efficacy or safety, or the separate
+    rufochronmogenus occurrence. Fresh current ChEBI authority is held. The original
+    1985 parent drawing and root-observed comparison support the plain constitution.
+    Suggested axial chirality in the historical discussion is not an assigned owner
+    stereochemical result.
+  target_ids:
+  - CHEBI:9287
+  evidence_ids:
+  - S453-E-PRIMARY-META
+  - S453-E-PRIMARY-EPMC
+  - S453-E-STN-OCC-META
+  - S453-E-STN1985-BIO
+  - S453-E-STN1985-IDENTITY
+  - S453-E-STN1984
+  - S453-E-STN1978-META
+  - S453-E-STN2013-SI-META
+  - S453-E-STN2013-SI
+  - S453-E-STN-MERGE
+  - S453-E-STN-ROOT-MODEL
+  - S453-E-LOCAL
+  - S453-E-INVENTORY
+  - S453-E-ROOT-LOCAL
+  - S453-E-SEEDER
+  - S453-E-CURATION
+  - S453-E-ACCESS-LIMITS
+  - S453-E-PRIMARY-PROVENANCE
+  - S453-E-SOURCE-READ
+- assessment_id: S453-A-SOURCE-LIMIT
+  area: completeness
+  topic: bounded primary source limitations
+  outcome: unknown
+  summary: The 1978, 1963 and 1987 original occurrence scopes and full 1984 main remain
+    unclosed; retained bibliography is not complete source verification. The exact
+    JQ414024.1 header and full 2013 main are not independently read. No experimental
+    grade upgrade follows from the selected SI. No natural axial assignment, current
+    clinical recommendation or additional definition producer is endorsed.
+  target_ids:
+  - CHEBI:9287
+  evidence_ids:
+  - S453-E-PRIMARY-META
+  - S453-E-PRIMARY-EPMC
+  - S453-E-STN-OCC-META
+  - S453-E-STN1985-BIO
+  - S453-E-STN1985-IDENTITY
+  - S453-E-STN1984
+  - S453-E-STN1978-META
+  - S453-E-STN2013-SI-META
+  - S453-E-STN2013-SI
+  - S453-E-STN-MERGE
+  - S453-E-STN-ROOT-MODEL
+  - S453-E-LOCAL
+  - S453-E-INVENTORY
+  - S453-E-ROOT-LOCAL
+  - S453-E-SEEDER
+  - S453-E-CURATION
+  - S453-E-ACCESS-LIMITS
+  - S453-E-PRIMARY-PROVENANCE
+  - S453-E-SOURCE-READ
+  - S453-E-SOURCE-PEER
+  - S453-E-ROOT-SOURCE
+- assessment_id: C453-A-IDENTITY
+  area: identity
+  topic: Stored representation and source-concept provenance
+  outcome: supported
+  summary: The complete source row BGC0001783:1 and source-concept hash reproduce
+    this stored representation; this does not establish that the upstream compound
+    label is correct. Formula, charge, Standard and fixed-H distinctions are independently
+    recorded. Primary support and any conflicting exact xref are assessed separately.
+  target_ids:
+  - CHEBI:9287
+  evidence_ids:
+  - C453-OWNER
+  - C453-GRAPH
+  - C453-COMPARISON
+  dimensions:
+  - name: mibig_source_selector
+    value: BGC0001783:1
+    definition: Accession plus compound_index, distinct from the entry-level accession.
+    evidence_ids:
+    - C453-OWNER
+  - name: complete_raw_row_sha256
+    value: a8a33164f15ed11b946a90ef4f4afcd51a78f6365b6d8bed541086e850092e5a
+    definition: Sorted compact ASCII JSON of every parsed TSV field, including empty
+      values.
+    evidence_ids:
+    - C453-OWNER
+- assessment_id: C453-A-GROUNDING
+  area: provenance
+  topic: Exact authority eligibility and source representation
+  outcome: supported
+  summary: Exactly one committed three-star ChEBI row has the stored full key; its
+    current remote graph remains unavailable under the approval hold.
+  target_ids:
+  - CHEBI:9287
+  evidence_ids:
+  - C453-OWNER
+  - C453-COMPARISON
+  - C453-AUTHORITY-AVAILABILITY
+  - C453-LOCAL-SEARCH
+- assessment_id: C453-A-XREF
+  area: representation
+  topic: Exact literal chemical identifier scope
+  outcome: unknown
+  summary: 'Required current literal availability: [{"absence_inferred": false, "identifier":
+    "npatlas:NPA02378", "owner_role": "xref", "status": "fresh_authority_unavailable_pending_user_approval"},
+    {"absence_inferred": false, "identifier": "CHEBI:9287", "owner_role": "identifier",
+    "status": "fresh_authority_unavailable_pending_user_approval"}]. Exact request
+    spelling is preserved; no unavailable response, normalized returned identifier
+    or numerical comparison is invented. No authority graph is adopted.'
+  target_ids:
+  - CHEBI:9287
+  evidence_ids:
+  - C453-STN1985
+  - C453-PRIMARY-453
+  - C453-FIRST-READ
+  - C453-RETAINED
+  - C453-AUTH-LIMIT
+  - C453-OWNER-READ
+  - C453-AUTH-HOLD
+  - C453-AUTH-REQUEST
+  - C453-CURATION
+  - C453-SOURCE-LIMITS
+  - C453-OWNER
+  - C453-GRAPH
+  - C453-COMPARISON
+  - C453-AUTHORITY-AVAILABILITY
+  - C453-AUTHORITY-DETAIL
+- assessment_id: C453-A-ELIGIBILITY
+  area: grounding
+  topic: Existing ChEBI role and unavailable current validation
+  outcome: unknown
+  summary: '[{"identifier": "CHEBI:9287", "name": "streptonigrin", "scope": "Existing
+    committed source role; current remote validation unavailable", "standard_inchi_key":
+    "PVYJZLYGTZKPJE-UHFFFAOYSA-N", "stars": "3"}]. Existing committed ChEBI role CHEBI:9287
+    has the exact stored full key and three-star local source status. Its current
+    remote metadata/MOL is unavailable, so current eligibility or serialization equivalence
+    is not independently confirmed. Candidate discovery is not performed; no grounding,
+    replacement or promotion is selected.'
+  target_ids:
+  - CHEBI:9287
+  evidence_ids:
+  - C453-STN1985
+  - C453-PRIMARY-453
+  - C453-FIRST-READ
+  - C453-RETAINED
+  - C453-AUTH-LIMIT
+  - C453-OWNER-READ
+  - C453-AUTH-HOLD
+  - C453-AUTH-REQUEST
+  - C453-CURATION
+  - C453-SOURCE-LIMITS
+  - C453-OWNER
+  - C453-GRAPH
+  - C453-COMPARISON
+  - C453-AUTHORITY-AVAILABILITY
+  - C453-AUTHORITY-DETAIL
+- assessment_id: C453-A-HELD-AUTHORITY
+  area: scope
+  topic: Current literal-authority availability
+  outcome: unknown
+  summary: Required current literal roles npatlas:NPA02378, CHEBI:9287 remain unavailable
+    pending explicit user approval. No retained response, match, mismatch or normalized
+    returned identifier is fabricated for these roles. Exact request spelling remains
+    distinct from any future returned normalization. The initial sixteen DNS failures,
+    rejected retry and six unattempted requests are preserved. No alternate route
+    or elapsed-time approval is inferred.
+  target_ids:
+  - CHEBI:9287
+  evidence_ids:
+  - C453-STN1985
+  - C453-PRIMARY-453
+  - C453-FIRST-READ
+  - C453-RETAINED
+  - C453-AUTH-LIMIT
+  - C453-OWNER-READ
+  - C453-AUTH-HOLD
+  - C453-AUTH-REQUEST
+  - C453-CURATION
+  - C453-SOURCE-LIMITS
+  - C453-OWNER
+  - C453-GRAPH
+  - C453-COMPARISON
+  - C453-AUTHORITY-AVAILABILITY
+  - C453-AUTHORITY-DETAIL
+- assessment_id: C453-A-CANDIDATE-AVAILABILITY
+  area: grounding
+  topic: Existing local roles and unperformed discovery
+  outcome: unknown
+  summary: Candidate discovery was not performed. Existing committed ChEBI rows retain
+    their exact local key and stars; they are asserted source roles, not new remote
+    candidates or current-response validation. No negative search, absence, replacement
+    or promotion is inferred.
+  target_ids:
+  - CHEBI:9287
+  evidence_ids:
+  - C453-STN1985
+  - C453-PRIMARY-453
+  - C453-FIRST-READ
+  - C453-RETAINED
+  - C453-AUTH-LIMIT
+  - C453-OWNER-READ
+  - C453-AUTH-HOLD
+  - C453-AUTH-REQUEST
+  - C453-CURATION
+  - C453-SOURCE-LIMITS
+  - C453-OWNER
+  - C453-GRAPH
+  - C453-COMPARISON
+  - C453-AUTHORITY-AVAILABILITY
+  - C453-AUTHORITY-DETAIL
+- assessment_id: C453-A-PRIMARY-DEPICTION
+  area: representation
+  topic: Positive original depiction within retained precision
+  outcome: supported
+  summary: The original 1985 compound 1 drawing supports the complete plain streptonigrin
+    constitution and passes the observed whole-graph comparison and MOL roundtrip.
+    Suggested axial configuration in adjacent prose is not encoded or independently
+    established; zero represented tetrahedral sites does not prove physical achirality.
+  target_ids:
+  - CHEBI:9287
+  evidence_ids:
+  - C453-STN1985
+  - C453-PRIMARY-453
+  - C453-FIRST-READ
+  - C453-RETAINED
+  - C453-AUTH-LIMIT
+  - C453-OWNER-READ
+  - C453-AUTH-HOLD
+  - C453-AUTH-REQUEST
+  - C453-CURATION
+  - C453-SOURCE-LIMITS
+  - C453-OWNER
+  - C453-GRAPH
+  - C453-COMPARISON
+  - C453-AUTHORITY-AVAILABILITY
+  - C453-AUTHORITY-DETAIL
+- assessment_id: C453-A-PRIMARY-SCOPE
+  area: scope
+  topic: Primary identity and experimental precision
+  outcome: unknown
+  summary: Retained streptonigrin and the BGC0001783:1/version 5 raw row agree. The
+    original 1985 compound 1 drawing, distinct from compound 2 streptonigrone, independently
+    gives the same neutral C25H22N4O8 plain constitution at Standard and fixed-H levels
+    with a passing MOL roundtrip. Zero represented tetrahedral centres does not establish
+    physical achirality; the adjacent historical suggestion of axial S configuration
+    remains a separate unassigned channel. CHEBI:9287 and literal short NPA02378 remain
+    held.
+  target_ids:
+  - CHEBI:9287
+  evidence_ids:
+  - C453-STN1985
+  - C453-PRIMARY-453
+  - C453-FIRST-READ
+  - C453-RETAINED
+  - C453-AUTH-LIMIT
+  - C453-OWNER-READ
+  - C453-AUTH-HOLD
+  - C453-AUTH-REQUEST
+  - C453-CURATION
+  - C453-SOURCE-LIMITS
+  - C453-OWNER
+  - C453-GRAPH
+  - C453-COMPARISON
+  - C453-AUTHORITY-AVAILABILITY
+  - C453-AUTHORITY-DETAIL
+findings: []
+actions: []
+limitations:
+- Context establishes mechanical owner/history/source equality, literal identifier
+  routing and computed classification. Primary production, exact stock and congener
+  claims retain their source-specific gaps. Detailed 457 assay, target and graph science
+  remains incomplete; both full scientific owner and raw-row flags remain false. Its
+  nine raw and emitted activities are mechanically compared only. Two separate no-data
+  sentinels do not establish inactivity. Literal names and explicit taxon redirects
+  do not resolve stock, congener or citation applicability. The 457 occurrence cap
+  retains sixteen raw-only distinct assertions; the accepted citation correction affects
+  producer/locus references only.
+- The 1978, 1963 and 1987 original occurrence scopes and full 1984 main remain unclosed;
+  retained bibliography is not complete source verification.
+- The exact JQ414024.1 header and full 2013 main are not independently read. No experimental
+  grade upgrade follows from the selected SI.
+- No natural axial assignment, current clinical recommendation or additional definition
+  producer is endorsed.
+- Stored/raw and reused-versioned evidence retain their original scopes and clocks.
+  Current literal authorities remain unavailable under the approval hold. A positive
+  original depiction does not establish an independent natural absolute-hand experiment;
+  organism, locus, classification and history claims are separately scoped.
+- All ten chemical subsections remain partial because required current literal authorities
+  are unavailable under the approval hold. The actual retained comparison verifies
+  stored and selected raw encodings, not natural absolute configuration or current
+  remote payload identity. Two previously retained versioned MIBiG bodies support
+  four selected rows at their original access clocks; eight other selected versioned
+  rows remain unavailable remotely. Thirteen current literal roles remain unqueried
+  or unavailable. Existing local ChEBI roles are retained separately from candidate
+  discovery; no candidate is promoted or excluded. Whole-owner and whole-raw scientific
+  manual flags remain false for chemistry; complete byte/document/source-join checks
+  are mechanical. Record 457 nine assays and one graph remain outside scientific scope.
+  Failures and approval holds do not imply chemical absence, a wrong owner, or authority
+  disagreement. No chemical finding, replacement, merge, curation, or lifecycle execution
+  is proposed. The original 1985 drawing supports constitution only. Suggested axial
+  chirality remains separate from represented tetrahedral/double-bond counts and is
+  not assigned.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- FailedQC001 is retained for an explicit separate network-enabled retry; no artifact
+  will be overwritten.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint
+  and before downstream tests. Its actual exit1/log/input capture/root observation
+  remain pinned; the selected successful canonical QC attempt002 is separately timed.
+  No individual-review validation failure or counter reset is claimed.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter
+  skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings;
+  this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld
+  nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological
+  or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological
+  production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions
+  and no-adapter pairs; a successful command does not convert these into verified
+  scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command
+  execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population
+  was checked; external caches and generated bytecode are not asserted to be independently
+  byte-pinned.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+- Scientific conclusions integrate the chemical, biological and provenance assessments;
+  source access and unresolved scopes remain explicit.
+tags:
+- path-order-campaign
+- batch-046
+```
