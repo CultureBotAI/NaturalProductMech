@@ -1,0 +1,986 @@
+# Scientific review of megapolibactin E
+
+- Review: 20261028T182516Z-megapolibactin-e
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-28T18:03:44.312905Z
+- Finished UTC: 2026-10-28T18:25:16.579696Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Megapolibactin E is included in the explicitly isolated A–F series. Its complete retained connectivity, acyl-chain assignment and configuration are not independently certified from the read family/subgroup prose. No E-specific NO-release measurement is identified in the inspected primary activity paragraph/caption; no transfer from B or the plant-root experiments is made. The retained weak producer/locus grades, source versions and encoding differences remain explicit.
+
+## Scope And Provenance
+
+Exact current owner, all retained source rows and reconciled six official intake arrays; saved dual-encoding diagnostics and own primary main text and four XML figure captions. Scientific coverage is partial; complete literal owner/source reading is distinct from full scientific verification.
+
+Selection: One current unreviewed owner selected in canonical path order by batch 85; exact owner, source rows and actual intake were reconciled before interpretation.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 14373517042b407747272446f79953ae86d51fa4.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-f80786c59b | data/natural_products/amino_acids_and_peptides/megapolibactin-e.yaml | generated | megapolibactin E |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-f80786c59b | Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its pinned path. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-f80786c59b | Fresh canonical reproduction gate passed:all3116 records byte-identical to source seeding; source warnings remain retained. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-f80786c59b | Fresh deterministic review queue completed:8922 rows across12 queues. Queue output is not scientific-review coverage. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-f80786c59b | Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking mismatches and4898no-adapter skips remain explicit. |
+| Full repository quality gate on the fresh main baseline | passed | True | naturalproductmech:mibig-f80786c59b | Canonical just qc completed with actual terminal exit0:1024 tests passed,4 skipped,2 dependency warnings;3116 records passed closed schema validation, site freshness, byte reproduction and lockfile integrity.22 governed artifacts and15 raw inventories passed. Prior DNS failed001 remains preserved. |
+| Native strict target validation | passed | True | naturalproductmech:mibig-f80786c59b | The selected owner passed the documented strict validator. This establishes configured consistency only. |
+| Whole owner and exact retained source joins | passed | True | naturalproductmech:mibig-f80786c59b | The whole retained megapolibactin E owner and its three exact-key rows are preserved: one MIBiG compound row, one LOTUS occurrence row and one NPClassifier row. The other four retained source arrays and both supplemental arrays are empty under the declared joins. Three seed-history events preserve provenance, not independent scientific approval. |
+| Saved identifier and formula consistency with graph differences retained | passed | True | naturalproductmech:mibig-f80786c59b | megapolibactin E: both parses regenerate the declared full Standard InChIKey and formula C38H67N11O20, with net charge zero and nine specified tetrahedral centers. Both parsed encodings are acyclic and contain two uncharged R-N(OH)-N=O local groups. The InChI-derived graph additionally has seven unspecified C(-O)=N double bonds. Canonical SMILES and direct bond-order-sensitive whole-molecule matching differ between encodings; matching standardized identifiers does not establish an experimentally assigned natural structure. |
+| Own bibliographic identity and inspected primary text | passed | True | naturalproductmech:mibig-f80786c59b | The own PMID, DOI and PMCID join the retained citations to the saved complete main text. Original response clocks and exact source selectors are preserved. |
+| Complete congener-specific natural structure comparison | unavailable | True | naturalproductmech:mibig-f80786c59b | Megapolibactin E is included in the explicitly isolated A–F series. Its complete retained connectivity, acyl-chain assignment and configuration are not independently certified from the read family/subgroup prose. Paragraph 7 reports six isolated A–F compounds, five obtained in amounts sufficient for full characterization, plus discussion of two cyclic lactone congeners inferred by MS/MS. It does not identify which of the six lacked full characterization in the read prose. Figure pixels, spectra and supporting information have not been inspected. No complete retained atom-graph or absolute-configuration match is asserted. |
+| Independent mapping of natural absolute configuration | unavailable | True | naturalproductmech:mibig-f80786c59b | The source provides named C/F stereochemical analyses; the retained E stereo_complete flag is not independently established by those neighboring-congener measurements. |
+| Exact strain, taxon authority and locus context | unavailable | True | naturalproductmech:mibig-f80786c59b | The primary main text reports isolating megapolibactins A–F from P. megapolitana culture extracts. This supports production at the named species level for that isolated series; no exact retained genomic interval or strain identifier is verified by the read main text. Species-level source context does not verify the retained taxon identifier, exact strain or genome interval through a live authority lookup. |
+| Direct exact-locus and congener causal evidence | unavailable | True | naturalproductmech:mibig-f80786c59b | Figure 3 describes a deduced NRPS assembly line with predicted building blocks; paragraph 7 reports agreement between module organization and the elucidated peptide backbones/stereochemistry. The grbD/grbE experiments concern gramibactin, and the plbD disruption concerns plantaribactin. They are not direct megapolibactin gene-disruption evidence. Retained MIBiG BGC0002564/version 3 and genbank:CP041745.1 interval 901250–941056 remain database assertions. No direct megapolibactin knockout, exact locus sequence verification, pathway graph or accession validation is claimed. |
+| Congener-specific endpoint and assay scope | passed | True | naturalproductmech:mibig-f80786c59b | No E-specific NO-release measurement is identified in the inspected primary activity paragraph/caption; no transfer from B or the plant-root experiments is made. |
+| Retained mechanisms and molecular targets | not_applicable | False | naturalproductmech:mibig-f80786c59b | This exact owner contains no bioactivities, molecular_targets, biosynthetic_pathway, inline causal_graphs or referenced graph components. The inspected NO-release and iron-complex experiments do not supply a compound-specific protein-binding target or a complete causal graph. |
+| Computed classification and retained evidence versions | passed | True | naturalproductmech:mibig-f80786c59b | The NPClassifier filing is retained as a computed classification. MIBiG source version 3, its weak evidence grades, and the original seed-history timestamps remain distinct from primary experimental support. |
+
+## Scientific And Domain Assessments
+
+### Internal representation and formula boundaries
+
+consistency: supported. Targets: naturalproductmech:mibig-f80786c59b.
+
+megapolibactin E: both parses regenerate the declared full Standard InChIKey and formula C38H67N11O20, with net charge zero and nine specified tetrahedral centers. Both parsed encodings are acyclic and contain two uncharged R-N(OH)-N=O local groups. The InChI-derived graph additionally has seven unspecified C(-O)=N double bonds. Canonical SMILES and direct bond-order-sensitive whole-molecule matching differ between encodings; matching standardized identifiers does not establish an experimentally assigned natural structure.
+
+### Exact natural congener and stereochemistry
+
+identity: unknown. Targets: naturalproductmech:mibig-f80786c59b.
+
+Megapolibactin E is included in the explicitly isolated A–F series. Its complete retained connectivity, acyl-chain assignment and configuration are not independently certified from the read family/subgroup prose. The source provides named C/F stereochemical analyses; the retained E stereo_complete flag is not independently established by those neighboring-congener measurements.
+
+### Production versus taxon and strain resolution
+
+evidence: supported. Targets: naturalproductmech:mibig-f80786c59b.
+
+The primary main text reports isolating megapolibactins A–F from P. megapolitana culture extracts. This supports production at the named species level for that isolated series; no exact retained genomic interval or strain identifier is verified by the read main text. The retained SOURCE_ASSERTION grade remains unchanged.
+
+### Occurrence placement and publication independence
+
+evidence: supported. Targets: naturalproductmech:mibig-f80786c59b.
+
+The retained LOTUS DOI and MIBiG PMID map to the same verified own article. They are separate database assertions of occurrence and production, not independent publication replications. The named species occurrence is compatible with the isolation report; exact congener assignment remains subject to the structural limits below.
+
+### Predicted assembly line and exact locus support
+
+evidence: unknown. Targets: naturalproductmech:mibig-f80786c59b.
+
+Figure 3 describes a deduced NRPS assembly line with predicted building blocks; paragraph 7 reports agreement between module organization and the elucidated peptide backbones/stereochemistry. The grbD/grbE experiments concern gramibactin, and the plbD disruption concerns plantaribactin. They are not direct megapolibactin gene-disruption evidence. Retained MIBiG BGC0002564/version 3 and genbank:CP041745.1 interval 901250–941056 remain database assertions. No direct megapolibactin knockout, exact locus sequence verification, pathway graph or accession validation is claimed.
+
+### Compound-specific activity and mechanism boundary
+
+scope: unknown. Targets: naturalproductmech:mibig-f80786c59b.
+
+No E-specific NO-release measurement is identified in the inspected primary activity paragraph/caption; no transfer from B or the plant-root experiments is made. Family-level iron complexation and the B NO-release endpoint remain separate, and no quantitative or in-planta result is transferred to another congener.
+
+### Computed filing and unpopulated mechanism fields
+
+representation: supported. Targets: naturalproductmech:mibig-f80786c59b.
+
+Linear peptide and lipopeptide filing is compatible with the saved acyclic graph. NPClassifier is a computed filing source, not proof of natural identity. The absence of mechanism fields in this exact owner is preserved without inventing a molecular target or transferring another siderophore pathway.
+
+### Source versions, original clocks and evidence tiers
+
+provenance: supported. Targets: naturalproductmech:mibig-f80786c59b.
+
+MIBiG BGC0002564 entry version 3 is active, quality questionable and completeness unknown. Its compound_index=7 is an entry-local index, not a primary-paper compound number. SOURCE_ASSERTION grades the producer assertion and CLUSTER_UNSTATED grades the locus link. The LOTUS DOI 10.1002/ANIE.201906326 and entry PMID31276269 identify the same own article. Original metadata and primary retrieval clocks are retained from batch 75; later reuse does not become a new request. All three seed-history events remain intact.
+
+### Limits of the inspected scientific evidence
+
+completeness: unknown. Targets: naturalproductmech:mibig-f80786c59b.
+
+The complete saved main text and four in-XML captions have been read. Figure pixels, spectra and supplementary information have not been inspected; exact retained natural structure, complete stereochemical mapping, strain authority and the genomic interval remain unresolved. These gaps do not by themselves prove a wrong congener or justify a replacement structure.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| SCI848-LOCAL | /private/tmp/npm-review-work/shared-next-batch085-tentative/tentative-owner-source-inventory-001.json; /entries/7/owner_document; /entries/7/rows; /entries/7/graph_and_curation_scope | context_only | The whole retained megapolibactin E owner and its three exact-key rows are preserved: one MIBiG compound row, one LOTUS occurrence row and one NPClassifier row. The other four retained source arrays and both supplemental arrays are empty under the declared joins. Three seed-history events preserve provenance, not independent scientific approval. |
+| SCI848-ROWS | /private/tmp/npm-review-work/shared-next-batch085-tentative/tentative-owner-source-inventory-001.json; /entries/7/row_guards; /entries/7/rows/mibig_compounds/0; /entries/7/rows/lotus_occurrences/0; /entries/7/rows/npclassifier/0 | partial | MIBiG BGC0002564 entry version 3 is active, quality questionable and completeness unknown. Its compound_index=7 is an entry-local index, not a primary-paper compound number. SOURCE_ASSERTION grades the producer assertion and CLUSTER_UNSTATED grades the locus link. The rows retain the literal LOTUS DOI 10.1002/ANIE.201906326 and entry PMID31276269. These are separate source citation fields; the inventory alone does not verify their bibliographic identity. |
+| SCI848-ENCODINGS | /private/tmp/npm-review-work/shared-next-batch085-tentative/source-science-preparation/bgc-tentative85-seven-megapolibactin-dual-encoding-results-001.json; /records/5/smiles; /records/5/inchi; /records/5/comparisons; /records/5/atom_correspondence | supports | megapolibactin E: both parses regenerate the declared full Standard InChIKey and formula C38H67N11O20, with net charge zero and nine specified tetrahedral centers. Both parsed encodings are acyclic and contain two uncharged R-N(OH)-N=O local groups. The InChI-derived graph additionally has seven unspecified C(-O)=N double bonds. Canonical SMILES and direct bond-order-sensitive whole-molecule matching differ between encodings; matching standardized identifiers does not establish an experimentally assigned natural structure. |
+| SCI848-PUBMED | /private/tmp/npm-review-work/shared-next-batch075-tentative/literature-preparation/public-metadata-pubmed-001/pmid-31276269.xml; ./PubmedArticle/MedlineCitation/Article/ArticleTitle; ./PubmedArticle/MedlineCitation/Article/Abstract; ./PubmedArticle/PubmedData/ArticleIdList | context_only | The saved own PMID31276269 metadata identifies DOI10.1002/anie.201906326 and PMC6771848. The family-level abstract provides bibliographic and study context; exact congener claims below use the independently read primary main text and captions. |
+| SCI848-PRIMARY-IDENTITY | /private/tmp/npm-review-work/shared-next-batch075-tentative/literature-preparation/public-primary-001/pmc-6771848.xml; ./article/body/p[7]; ./article/body/fig[3]/caption; ./article/front/article-meta | partial | Megapolibactin E is included in the explicitly isolated A–F series. Its complete retained connectivity, acyl-chain assignment and configuration are not independently certified from the read family/subgroup prose. Paragraph 7 reports six isolated A–F compounds, five obtained in amounts sufficient for full characterization, plus discussion of two cyclic lactone congeners inferred by MS/MS. It does not identify which of the six lacked full characterization in the read prose. Figure pixels, spectra and supporting information have not been inspected. No complete retained atom-graph or absolute-configuration match is asserted. |
+| SCI848-PRIMARY-STEREOCHEMISTRY | /private/tmp/npm-review-work/shared-next-batch075-tentative/literature-preparation/public-primary-001/pmc-6771848.xml; ./article/body/p[7]; ./article/body/fig[3]/caption | partial | The source provides named C/F stereochemical analyses. Those neighboring-congener measurements do not independently establish all configurations of E. |
+| SCI848-PRIMARY-PRODUCER | /private/tmp/npm-review-work/shared-next-batch075-tentative/literature-preparation/public-primary-001/pmc-6771848.xml; ./article/body/p[5]; ./article/body/p[7]; ./article/body/fig[3]/caption | partial | The primary main text reports isolating megapolibactins A–F from P. megapolitana culture extracts. This supports production at the named species level for that isolated series; no exact retained genomic interval or strain identifier is verified by the read main text. Species-level source context does not verify the retained taxon identifier, exact strain or genome interval through a live authority lookup. |
+| SCI848-PRIMARY-OCCURRENCE | /private/tmp/npm-review-work/shared-next-batch075-tentative/literature-preparation/public-primary-001/pmc-6771848.xml; ./article/body/p[7]; ./article/front/article-meta | partial | Paragraph 7 reports isolation of the named megapolibactin A–F series from P. megapolitana and discusses two cyclic lactone congeners. It supports the reported organism and named series at that source level; the inspected passage does not give an Acyc-specific name or a complete congener-by-congener structural mapping. |
+| SCI848-PRIMARY-BIOSYNTHESIS | /private/tmp/npm-review-work/shared-next-batch075-tentative/literature-preparation/public-primary-001/pmc-6771848.xml; ./article/body/p[3]; ./article/body/p[5]; ./article/body/p[7]; ./article/body/p[8]; ./article/body/fig[3]/caption | partial | Figure 3 describes a deduced NRPS assembly line with predicted building blocks; paragraph 7 reports agreement between module organization and the elucidated peptide backbones and stereochemistry. The grbD/grbE experiments concern gramibactin, and the plbD disruption concerns plantaribactin. They are not direct megapolibactin gene-disruption evidence. No direct megapolibactin knockout or independent exact locus sequence verification follows from these inspected passages. |
+| SCI848-PRIMARY-ACTIVITY | /private/tmp/npm-review-work/shared-next-batch075-tentative/literature-preparation/public-primary-001/pmc-6771848.xml; ./article/body/p[7]; ./article/body/p[9]; ./article/body/p[10]; ./article/body/p[11]; ./article/body/fig[4]/caption | partial | No E-specific NO-release measurement is identified in the inspected primary activity paragraph/caption; no transfer from B or the plant-root experiments is made. The read primary distinguishes family-level iron-complex observations from congener-specific NO testing. Paragraph 10 directly names megapolibactin B for the in-vitro NO-release experiment. The plant-root imaging in paragraph 11/Figure 4 uses gramibactin and plantaribactin; it cannot establish in-planta activity for every megapolibactin. |
+
+## Limits And Additional Notes
+
+- Paragraph 7 reports six isolated A–F compounds, five obtained in amounts sufficient for full characterization, plus discussion of two cyclic lactone congeners inferred by MS/MS. It does not identify which of the six lacked full characterization in the read prose. Figure pixels, spectra and supporting information have not been inspected. No complete retained atom-graph or absolute-configuration match is asserted.
+- The source provides named C/F stereochemical analyses; the retained E stereo_complete flag is not independently established by those neighboring-congener measurements.
+- Species-level source context does not verify the retained taxon identifier, exact strain or genome interval through a live authority lookup.
+- Retained MIBiG BGC0002564/version 3 and genbank:CP041745.1 interval 901250–941056 remain database assertions. No direct megapolibactin knockout, exact locus sequence verification, pathway graph or accession validation is claimed.
+- The read primary distinguishes family-level iron-complex observations from congener-specific NO testing. Paragraph 10 directly names megapolibactin B for the in-vitro NO-release experiment. The plant-root imaging in paragraph 11/Figure 4 uses gramibactin and plantaribactin; it cannot establish in-planta activity for every megapolibactin.
+- Both saved encodings produce the retained standardized identifier and formula, while canonical SMILES and direct bond-order-sensitive graph comparisons differ. Seven additional unspecified C(-O)=N double bonds occur in the InChI-derived graph; this is preserved as a representation boundary, not an inferred natural-structure defect.
+- The original local chemistry execution retained two charge-rearrangement/undefined-stereo warnings. The saved stderr does not assign either warning to a particular congener.
+- The metadata figure count is five while the saved XML contains four actual figure-caption elements. Only those four captions were read; no missing image content is inferred.
+- Configured consistency only; independent scientific claim support and unrestricted remote authority refresh are not implied.
+- FailedQC001 is retained for an explicit separate network-enabled retry; no artifact will be overwritten.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint and before downstream tests. Its actual exit1/log/input capture/root observation remain pinned; the selected successful canonical QC attempt002 is separately timed. No individual-review validation failure or counter reset is claimed.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings; this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions and no-adapter pairs; a successful command does not convert these into verified scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population was checked; external caches and generated bytecode are not asserted to be independently byte-pinned.
+- The whole local owner and retained source rows were read. Full-owner scientific verification remains false; scientific_review denotes the bounded scientific interpretation in this report.
+- Original owner/source reading, two-encoding computation, primary-text reading, HTTP retrieval and later metadata reading retain separate clocks. Official intake separately computed SMILES facts.
+- No scientific record, maintained input or native curation status was changed. Any findings and actions record ROOT-adopted proposed work; exact-source limitations and unavailable checks remain explicit.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261028T182516Z-megapolibactin-e
+title: Scientific review of megapolibactin E
+started_at: '2026-10-28T18:03:44.312905Z'
+finished_at: '2026-10-28T18:25:16.579696Z'
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: Megapolibactin E is included in the explicitly isolated A–F series. Its complete
+  retained connectivity, acyl-chain assignment and configuration are not independently
+  certified from the read family/subgroup prose. No E-specific NO-release measurement
+  is identified in the inspected primary activity paragraph/caption; no transfer from
+  B or the plant-root experiments is made. The retained weak producer/locus grades,
+  source versions and encoding differences remain explicit.
+source:
+  git_revision: 14373517042b407747272446f79953ae86d51fa4
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/megapolibactin-e.yaml
+    sha256: dfab9d02eab1396c27c1b85309113ebd19e07ca63d207e2a84212f207e8ac1c2
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+targets:
+- target_id: naturalproductmech:mibig-f80786c59b
+  path: data/natural_products/amino_acids_and_peptides/megapolibactin-e.yaml
+  label: megapolibactin E
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+scope:
+  description: Exact current owner, all retained source rows and reconciled six official
+    intake arrays; saved dual-encoding diagnostics and own primary main text and four
+    XML figure captions. Scientific coverage is partial; complete literal owner/source
+    reading is distinct from full scientific verification.
+  selection: One current unreviewed owner selected in canonical path order by batch
+    85; exact owner, source rows and actual intake were reconciled before interpretation.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-f80786c59b
+  exclusions:
+  - target: Uninspected structure figures, spectra, supporting information and complete
+      natural configurations
+    reason: The inspected evidence does not independently establish every stored atom
+      connection or natural stereocentre.
+  - target: Unverified strain identity, taxon-ID authority, accession interval and
+      exact cluster causality
+    reason: Isolation, occurrence, database assertions and genetic evidence retain
+      their separate scopes; unresolved links remain explicit.
+  - target: Activity or mechanism transfer between congeners, engineered analogues
+      or incompatible stored structures
+    reason: Only the named material and the reported experimental context support
+      each activity assessment.
+checks:
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its
+    pinned path.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-corpus-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.783967Z;
+    finished 2026-10-25T22:37:16.453216Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.log.
+    Reused for batch085 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch085. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-f80786c59b
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: Fresh canonical reproduction gate passed:all3116 records byte-identical
+    to source seeding; source warnings remain retained.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-reproduction-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784055Z;
+    finished 2026-10-25T22:37:31.682209Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.log.
+    Reused for batch085 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch085. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-f80786c59b
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: Fresh deterministic review queue completed:8922 rows across12 queues. Queue
+    output is not scientific-review coverage.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-review-queue-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just review-queue --tsv /private/tmp/npm-review-queue-batch-036-fresh14373517-001.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.781802Z;
+    finished 2026-10-25T22:37:08.229737Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.log.
+    Reused for batch085 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch085. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-f80786c59b
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking
+    mismatches and4898no-adapter skips remain explicit.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-validate-products-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784040Z;
+    finished 2026-10-25T22:37:32.251879Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.log.
+    Reused for batch085 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch085. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-f80786c59b
+- check_id: shared-qc
+  name: Full repository quality gate on the fresh main baseline
+  status: passed
+  required: true
+  summary: Canonical just qc completed with actual terminal exit0:1024 tests passed,4
+    skipped,2 dependency warnings;3116 records passed closed schema validation, site
+    freshness, byte reproduction and lockfile integrity.22 governed artifacts and15
+    raw inventories passed. Prior DNS failed001 remains preserved.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-qc-attempt-002
+    PYTHONDONTWRITEBYTECODE=1 just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-002 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:40:55.179857Z;
+    finished 2026-10-25T22:46:28.974296Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.log.
+    Reused for batch085 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch085. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-f80786c59b
+- check_id: C-STRICT
+  name: Native strict target validation
+  status: passed
+  required: true
+  summary: The selected owner passed the documented strict validator. This establishes
+    configured consistency only.
+  command: just validate-strict data/natural_products/amino_acids_and_peptides/megapolibactin-e.yaml
+    --out /private/tmp/npm-review-work/848/strict.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Actual intake execution finished 2026-10-28T18:03:45.710913Z. Original
+    receipt: /private/tmp/npm-review-work/848/strict-receipt.json.'
+  target_ids:
+  - naturalproductmech:mibig-f80786c59b
+- check_id: SCI848-LOCAL-JOINS
+  name: Whole owner and exact retained source joins
+  status: passed
+  required: true
+  summary: 'The whole retained megapolibactin E owner and its three exact-key rows
+    are preserved: one MIBiG compound row, one LOTUS occurrence row and one NPClassifier
+    row. The other four retained source arrays and both supplemental arrays are empty
+    under the declared joins. Three seed-history events preserve provenance, not independent
+    scientific approval.'
+  evidence_ids:
+  - SCI848-LOCAL
+  - SCI848-ROWS
+  target_ids:
+  - naturalproductmech:mibig-f80786c59b
+- check_id: SCI848-ENCODING-BOUNDS
+  name: Saved identifier and formula consistency with graph differences retained
+  status: passed
+  required: true
+  summary: 'megapolibactin E: both parses regenerate the declared full Standard InChIKey
+    and formula C38H67N11O20, with net charge zero and nine specified tetrahedral
+    centers. Both parsed encodings are acyclic and contain two uncharged R-N(OH)-N=O
+    local groups. The InChI-derived graph additionally has seven unspecified C(-O)=N
+    double bonds. Canonical SMILES and direct bond-order-sensitive whole-molecule
+    matching differ between encodings; matching standardized identifiers does not
+    establish an experimentally assigned natural structure.'
+  evidence_ids:
+  - SCI848-ENCODINGS
+  - SCI848-LOCAL
+  target_ids:
+  - naturalproductmech:mibig-f80786c59b
+- check_id: SCI848-OWN-PUBLICATION
+  name: Own bibliographic identity and inspected primary text
+  status: passed
+  required: true
+  summary: The own PMID, DOI and PMCID join the retained citations to the saved complete
+    main text. Original response clocks and exact source selectors are preserved.
+  evidence_ids:
+  - SCI848-PUBMED
+  - SCI848-PRIMARY-IDENTITY
+  - SCI848-ROWS
+  target_ids:
+  - naturalproductmech:mibig-f80786c59b
+- check_id: SCI848-NATURAL-STRUCTURE
+  name: Complete congener-specific natural structure comparison
+  status: unavailable
+  required: true
+  summary: Megapolibactin E is included in the explicitly isolated A–F series. Its
+    complete retained connectivity, acyl-chain assignment and configuration are not
+    independently certified from the read family/subgroup prose. Paragraph 7 reports
+    six isolated A–F compounds, five obtained in amounts sufficient for full characterization,
+    plus discussion of two cyclic lactone congeners inferred by MS/MS. It does not
+    identify which of the six lacked full characterization in the read prose. Figure
+    pixels, spectra and supporting information have not been inspected. No complete
+    retained atom-graph or absolute-configuration match is asserted.
+  evidence_ids:
+  - SCI848-LOCAL
+  - SCI848-ENCODINGS
+  - SCI848-PRIMARY-IDENTITY
+  target_ids:
+  - naturalproductmech:mibig-f80786c59b
+- check_id: SCI848-NATURAL-STEREO
+  name: Independent mapping of natural absolute configuration
+  status: unavailable
+  required: true
+  summary: The source provides named C/F stereochemical analyses; the retained E stereo_complete
+    flag is not independently established by those neighboring-congener measurements.
+  evidence_ids:
+  - SCI848-ENCODINGS
+  - SCI848-PRIMARY-STEREOCHEMISTRY
+  target_ids:
+  - naturalproductmech:mibig-f80786c59b
+- check_id: SCI848-PRODUCER-AUTHORITY
+  name: Exact strain, taxon authority and locus context
+  status: unavailable
+  required: true
+  summary: The primary main text reports isolating megapolibactins A–F from P. megapolitana
+    culture extracts. This supports production at the named species level for that
+    isolated series; no exact retained genomic interval or strain identifier is verified
+    by the read main text. Species-level source context does not verify the retained
+    taxon identifier, exact strain or genome interval through a live authority lookup.
+  evidence_ids:
+  - SCI848-ROWS
+  - SCI848-PRIMARY-PRODUCER
+  target_ids:
+  - naturalproductmech:mibig-f80786c59b
+- check_id: SCI848-LOCUS-CAUSALITY
+  name: Direct exact-locus and congener causal evidence
+  status: unavailable
+  required: true
+  summary: Figure 3 describes a deduced NRPS assembly line with predicted building
+    blocks; paragraph 7 reports agreement between module organization and the elucidated
+    peptide backbones/stereochemistry. The grbD/grbE experiments concern gramibactin,
+    and the plbD disruption concerns plantaribactin. They are not direct megapolibactin
+    gene-disruption evidence. Retained MIBiG BGC0002564/version 3 and genbank:CP041745.1
+    interval 901250–941056 remain database assertions. No direct megapolibactin knockout,
+    exact locus sequence verification, pathway graph or accession validation is claimed.
+  evidence_ids:
+  - SCI848-ROWS
+  - SCI848-PRIMARY-BIOSYNTHESIS
+  target_ids:
+  - naturalproductmech:mibig-f80786c59b
+- check_id: SCI848-ACTIVITY-SCOPE
+  name: Congener-specific endpoint and assay scope
+  status: passed
+  required: true
+  summary: No E-specific NO-release measurement is identified in the inspected primary
+    activity paragraph/caption; no transfer from B or the plant-root experiments is
+    made.
+  evidence_ids:
+  - SCI848-LOCAL
+  - SCI848-PRIMARY-ACTIVITY
+  target_ids:
+  - naturalproductmech:mibig-f80786c59b
+- check_id: SCI848-MECHANISM-SCOPE
+  name: Retained mechanisms and molecular targets
+  status: not_applicable
+  required: false
+  summary: This exact owner contains no bioactivities, molecular_targets, biosynthetic_pathway,
+    inline causal_graphs or referenced graph components. The inspected NO-release
+    and iron-complex experiments do not supply a compound-specific protein-binding
+    target or a complete causal graph.
+  evidence_ids:
+  - SCI848-LOCAL
+  - SCI848-PRIMARY-ACTIVITY
+  - SCI848-PRIMARY-BIOSYNTHESIS
+  target_ids:
+  - naturalproductmech:mibig-f80786c59b
+- check_id: SCI848-FILING-PROVENANCE
+  name: Computed classification and retained evidence versions
+  status: passed
+  required: true
+  summary: The NPClassifier filing is retained as a computed classification. MIBiG
+    source version 3, its weak evidence grades, and the original seed-history timestamps
+    remain distinct from primary experimental support.
+  evidence_ids:
+  - SCI848-LOCAL
+  - SCI848-ROWS
+  - SCI848-ENCODINGS
+  target_ids:
+  - naturalproductmech:mibig-f80786c59b
+evidence:
+- evidence_id: SCI848-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch085-tentative/tentative-owner-source-inventory-001.json
+  locator: /entries/7/owner_document; /entries/7/rows; /entries/7/graph_and_curation_scope
+  accessed_at: '2026-10-28T16:20:04.375766Z'
+  snapshot_sha256: 5a7e378411605abc279ba5d4ef5a80dbb7509ad07f27299596a54279de31be83
+  support: context_only
+  summary: 'The whole retained megapolibactin E owner and its three exact-key rows
+    are preserved: one MIBiG compound row, one LOTUS occurrence row and one NPClassifier
+    row. The other four retained source arrays and both supplemental arrays are empty
+    under the declared joins. Three seed-history events preserve provenance, not independent
+    scientific approval.'
+- evidence_id: SCI848-ROWS
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch085-tentative/tentative-owner-source-inventory-001.json
+  locator: /entries/7/row_guards; /entries/7/rows/mibig_compounds/0; /entries/7/rows/lotus_occurrences/0;
+    /entries/7/rows/npclassifier/0
+  accessed_at: '2026-10-28T16:20:04.375766Z'
+  snapshot_sha256: 5a7e378411605abc279ba5d4ef5a80dbb7509ad07f27299596a54279de31be83
+  support: partial
+  summary: MIBiG BGC0002564 entry version 3 is active, quality questionable and completeness
+    unknown. Its compound_index=7 is an entry-local index, not a primary-paper compound
+    number. SOURCE_ASSERTION grades the producer assertion and CLUSTER_UNSTATED grades
+    the locus link. The rows retain the literal LOTUS DOI 10.1002/ANIE.201906326 and
+    entry PMID31276269. These are separate source citation fields; the inventory alone
+    does not verify their bibliographic identity.
+- evidence_id: SCI848-ENCODINGS
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch085-tentative/source-science-preparation/bgc-tentative85-seven-megapolibactin-dual-encoding-results-001.json
+  locator: /records/5/smiles; /records/5/inchi; /records/5/comparisons; /records/5/atom_correspondence
+  accessed_at: '2026-10-28T16:40:08.059081Z'
+  snapshot_sha256: e6ab2346d4c2be42cda702655bd215cda56d1a76ec495a3bd0254c5c43244251
+  support: supports
+  summary: 'megapolibactin E: both parses regenerate the declared full Standard InChIKey
+    and formula C38H67N11O20, with net charge zero and nine specified tetrahedral
+    centers. Both parsed encodings are acyclic and contain two uncharged R-N(OH)-N=O
+    local groups. The InChI-derived graph additionally has seven unspecified C(-O)=N
+    double bonds. Canonical SMILES and direct bond-order-sensitive whole-molecule
+    matching differ between encodings; matching standardized identifiers does not
+    establish an experimentally assigned natural structure.'
+- evidence_id: SCI848-PUBMED
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch075-tentative/literature-preparation/public-metadata-pubmed-001/pmid-31276269.xml
+  locator: ./PubmedArticle/MedlineCitation/Article/ArticleTitle; ./PubmedArticle/MedlineCitation/Article/Abstract;
+    ./PubmedArticle/PubmedData/ArticleIdList
+  accessed_at: '2026-10-27T21:50:06.798386Z'
+  snapshot_sha256: 93738ca9ef762aa1a7f3ce416435a41646b892dc47f5123c0bbc2293f25ae3f0
+  support: context_only
+  summary: The saved own PMID31276269 metadata identifies DOI10.1002/anie.201906326
+    and PMC6771848. The family-level abstract provides bibliographic and study context;
+    exact congener claims below use the independently read primary main text and captions.
+- evidence_id: SCI848-PRIMARY-IDENTITY
+  kind: primary_source
+  reference: /private/tmp/npm-review-work/shared-next-batch075-tentative/literature-preparation/public-primary-001/pmc-6771848.xml
+  locator: ./article/body/p[7]; ./article/body/fig[3]/caption; ./article/front/article-meta
+  accessed_at: '2026-10-27T22:01:47.233186Z'
+  snapshot_sha256: 84bf54200043ac11fb655719ebaa837a79fbb90421f816f7a9513076b20617ae
+  support: partial
+  summary: Megapolibactin E is included in the explicitly isolated A–F series. Its
+    complete retained connectivity, acyl-chain assignment and configuration are not
+    independently certified from the read family/subgroup prose. Paragraph 7 reports
+    six isolated A–F compounds, five obtained in amounts sufficient for full characterization,
+    plus discussion of two cyclic lactone congeners inferred by MS/MS. It does not
+    identify which of the six lacked full characterization in the read prose. Figure
+    pixels, spectra and supporting information have not been inspected. No complete
+    retained atom-graph or absolute-configuration match is asserted.
+- evidence_id: SCI848-PRIMARY-STEREOCHEMISTRY
+  kind: primary_source
+  reference: /private/tmp/npm-review-work/shared-next-batch075-tentative/literature-preparation/public-primary-001/pmc-6771848.xml
+  locator: ./article/body/p[7]; ./article/body/fig[3]/caption
+  accessed_at: '2026-10-27T22:01:47.233186Z'
+  snapshot_sha256: 84bf54200043ac11fb655719ebaa837a79fbb90421f816f7a9513076b20617ae
+  support: partial
+  summary: The source provides named C/F stereochemical analyses. Those neighboring-congener
+    measurements do not independently establish all configurations of E.
+- evidence_id: SCI848-PRIMARY-PRODUCER
+  kind: primary_source
+  reference: /private/tmp/npm-review-work/shared-next-batch075-tentative/literature-preparation/public-primary-001/pmc-6771848.xml
+  locator: ./article/body/p[5]; ./article/body/p[7]; ./article/body/fig[3]/caption
+  accessed_at: '2026-10-27T22:01:47.233186Z'
+  snapshot_sha256: 84bf54200043ac11fb655719ebaa837a79fbb90421f816f7a9513076b20617ae
+  support: partial
+  summary: The primary main text reports isolating megapolibactins A–F from P. megapolitana
+    culture extracts. This supports production at the named species level for that
+    isolated series; no exact retained genomic interval or strain identifier is verified
+    by the read main text. Species-level source context does not verify the retained
+    taxon identifier, exact strain or genome interval through a live authority lookup.
+- evidence_id: SCI848-PRIMARY-OCCURRENCE
+  kind: primary_source
+  reference: /private/tmp/npm-review-work/shared-next-batch075-tentative/literature-preparation/public-primary-001/pmc-6771848.xml
+  locator: ./article/body/p[7]; ./article/front/article-meta
+  accessed_at: '2026-10-27T22:01:47.233186Z'
+  snapshot_sha256: 84bf54200043ac11fb655719ebaa837a79fbb90421f816f7a9513076b20617ae
+  support: partial
+  summary: Paragraph 7 reports isolation of the named megapolibactin A–F series from
+    P. megapolitana and discusses two cyclic lactone congeners. It supports the reported
+    organism and named series at that source level; the inspected passage does not
+    give an Acyc-specific name or a complete congener-by-congener structural mapping.
+- evidence_id: SCI848-PRIMARY-BIOSYNTHESIS
+  kind: primary_source
+  reference: /private/tmp/npm-review-work/shared-next-batch075-tentative/literature-preparation/public-primary-001/pmc-6771848.xml
+  locator: ./article/body/p[3]; ./article/body/p[5]; ./article/body/p[7]; ./article/body/p[8];
+    ./article/body/fig[3]/caption
+  accessed_at: '2026-10-27T22:01:47.233186Z'
+  snapshot_sha256: 84bf54200043ac11fb655719ebaa837a79fbb90421f816f7a9513076b20617ae
+  support: partial
+  summary: Figure 3 describes a deduced NRPS assembly line with predicted building
+    blocks; paragraph 7 reports agreement between module organization and the elucidated
+    peptide backbones and stereochemistry. The grbD/grbE experiments concern gramibactin,
+    and the plbD disruption concerns plantaribactin. They are not direct megapolibactin
+    gene-disruption evidence. No direct megapolibactin knockout or independent exact
+    locus sequence verification follows from these inspected passages.
+- evidence_id: SCI848-PRIMARY-ACTIVITY
+  kind: primary_source
+  reference: /private/tmp/npm-review-work/shared-next-batch075-tentative/literature-preparation/public-primary-001/pmc-6771848.xml
+  locator: ./article/body/p[7]; ./article/body/p[9]; ./article/body/p[10]; ./article/body/p[11];
+    ./article/body/fig[4]/caption
+  accessed_at: '2026-10-27T22:01:47.233186Z'
+  snapshot_sha256: 84bf54200043ac11fb655719ebaa837a79fbb90421f816f7a9513076b20617ae
+  support: partial
+  summary: No E-specific NO-release measurement is identified in the inspected primary
+    activity paragraph/caption; no transfer from B or the plant-root experiments is
+    made. The read primary distinguishes family-level iron-complex observations from
+    congener-specific NO testing. Paragraph 10 directly names megapolibactin B for
+    the in-vitro NO-release experiment. The plant-root imaging in paragraph 11/Figure
+    4 uses gramibactin and plantaribactin; it cannot establish in-planta activity
+    for every megapolibactin.
+assessments:
+- assessment_id: SCI848-ENCODINGS
+  area: consistency
+  topic: Internal representation and formula boundaries
+  outcome: supported
+  summary: 'megapolibactin E: both parses regenerate the declared full Standard InChIKey
+    and formula C38H67N11O20, with net charge zero and nine specified tetrahedral
+    centers. Both parsed encodings are acyclic and contain two uncharged R-N(OH)-N=O
+    local groups. The InChI-derived graph additionally has seven unspecified C(-O)=N
+    double bonds. Canonical SMILES and direct bond-order-sensitive whole-molecule
+    matching differ between encodings; matching standardized identifiers does not
+    establish an experimentally assigned natural structure.'
+  evidence_ids:
+  - SCI848-LOCAL
+  - SCI848-ENCODINGS
+  target_ids:
+  - naturalproductmech:mibig-f80786c59b
+  dimensions:
+  - name: stereochemical_resolution
+    value: Retained stereo_complete=true; nine specified tetrahedral centres in each
+      parsed encoding; complete natural atom/configuration mapping unverified.
+    definition: The retained flag and saved graph diagnostics describe the encodings.
+      Named primary configuration analyses have the exact congener scope stated in
+      the identity assessment.
+    evidence_ids:
+    - SCI848-LOCAL
+    - SCI848-ENCODINGS
+    - SCI848-PRIMARY-STEREOCHEMISTRY
+- assessment_id: SCI848-NATURAL-IDENTITY
+  area: identity
+  topic: Exact natural congener and stereochemistry
+  outcome: unknown
+  summary: Megapolibactin E is included in the explicitly isolated A–F series. Its
+    complete retained connectivity, acyl-chain assignment and configuration are not
+    independently certified from the read family/subgroup prose. The source provides
+    named C/F stereochemical analyses; the retained E stereo_complete flag is not
+    independently established by those neighboring-congener measurements.
+  evidence_ids:
+  - SCI848-LOCAL
+  - SCI848-ENCODINGS
+  - SCI848-PRIMARY-IDENTITY
+  - SCI848-PRIMARY-STEREOCHEMISTRY
+  target_ids:
+  - naturalproductmech:mibig-f80786c59b
+- assessment_id: SCI848-PRODUCER
+  area: evidence
+  topic: Production versus taxon and strain resolution
+  outcome: supported
+  summary: The primary main text reports isolating megapolibactins A–F from P. megapolitana
+    culture extracts. This supports production at the named species level for that
+    isolated series; no exact retained genomic interval or strain identifier is verified
+    by the read main text. The retained SOURCE_ASSERTION grade remains unchanged.
+  evidence_ids:
+  - SCI848-LOCAL
+  - SCI848-ROWS
+  - SCI848-PRIMARY-PRODUCER
+  target_ids:
+  - naturalproductmech:mibig-f80786c59b
+  dimensions:
+  - name: taxon_strain
+    value: Retained NCBITaxon:420953, Paraburkholderia megapolitana; no strain is
+      specified in the owner and no exact strain assignment is verified by the inspected
+      main text.
+    definition: The primary culture-source statement supports named-species context.
+      It does not independently resolve the taxonomic identifier, exact strain or
+      genome interval.
+    evidence_ids:
+    - SCI848-LOCAL
+    - SCI848-ROWS
+    - SCI848-PRIMARY-PRODUCER
+- assessment_id: SCI848-OCCURRENCE
+  area: evidence
+  topic: Occurrence placement and publication independence
+  outcome: supported
+  summary: The retained LOTUS DOI and MIBiG PMID map to the same verified own article.
+    They are separate database assertions of occurrence and production, not independent
+    publication replications. The named species occurrence is compatible with the
+    isolation report; exact congener assignment remains subject to the structural
+    limits below.
+  evidence_ids:
+  - SCI848-ROWS
+  - SCI848-PUBMED
+  - SCI848-PRIMARY-OCCURRENCE
+  - SCI848-PRIMARY-IDENTITY
+  target_ids:
+  - naturalproductmech:mibig-f80786c59b
+- assessment_id: SCI848-BIOSYNTHESIS
+  area: evidence
+  topic: Predicted assembly line and exact locus support
+  outcome: unknown
+  summary: Figure 3 describes a deduced NRPS assembly line with predicted building
+    blocks; paragraph 7 reports agreement between module organization and the elucidated
+    peptide backbones/stereochemistry. The grbD/grbE experiments concern gramibactin,
+    and the plbD disruption concerns plantaribactin. They are not direct megapolibactin
+    gene-disruption evidence. Retained MIBiG BGC0002564/version 3 and genbank:CP041745.1
+    interval 901250–941056 remain database assertions. No direct megapolibactin knockout,
+    exact locus sequence verification, pathway graph or accession validation is claimed.
+  evidence_ids:
+  - SCI848-ROWS
+  - SCI848-PRIMARY-BIOSYNTHESIS
+  target_ids:
+  - naturalproductmech:mibig-f80786c59b
+- assessment_id: SCI848-ACTIVITY
+  area: scope
+  topic: Compound-specific activity and mechanism boundary
+  outcome: unknown
+  summary: No E-specific NO-release measurement is identified in the inspected primary
+    activity paragraph/caption; no transfer from B or the plant-root experiments is
+    made. Family-level iron complexation and the B NO-release endpoint remain separate,
+    and no quantitative or in-planta result is transferred to another congener.
+  evidence_ids:
+  - SCI848-LOCAL
+  - SCI848-PRIMARY-ACTIVITY
+  target_ids:
+  - naturalproductmech:mibig-f80786c59b
+- assessment_id: SCI848-CLASSIFICATION
+  area: representation
+  topic: Computed filing and unpopulated mechanism fields
+  outcome: supported
+  summary: Linear peptide and lipopeptide filing is compatible with the saved acyclic
+    graph. NPClassifier is a computed filing source, not proof of natural identity.
+    The absence of mechanism fields in this exact owner is preserved without inventing
+    a molecular target or transferring another siderophore pathway.
+  evidence_ids:
+  - SCI848-LOCAL
+  - SCI848-ROWS
+  - SCI848-ENCODINGS
+  - SCI848-PRIMARY-BIOSYNTHESIS
+  - SCI848-PRIMARY-ACTIVITY
+  target_ids:
+  - naturalproductmech:mibig-f80786c59b
+- assessment_id: SCI848-PROVENANCE
+  area: provenance
+  topic: Source versions, original clocks and evidence tiers
+  outcome: supported
+  summary: MIBiG BGC0002564 entry version 3 is active, quality questionable and completeness
+    unknown. Its compound_index=7 is an entry-local index, not a primary-paper compound
+    number. SOURCE_ASSERTION grades the producer assertion and CLUSTER_UNSTATED grades
+    the locus link. The LOTUS DOI 10.1002/ANIE.201906326 and entry PMID31276269 identify
+    the same own article. Original metadata and primary retrieval clocks are retained
+    from batch 75; later reuse does not become a new request. All three seed-history
+    events remain intact.
+  evidence_ids:
+  - SCI848-LOCAL
+  - SCI848-ROWS
+  - SCI848-PUBMED
+  - SCI848-PRIMARY-IDENTITY
+  target_ids:
+  - naturalproductmech:mibig-f80786c59b
+  dimensions:
+  - name: source_version
+    value: MIBiG BGC0002564 entry_version=3, active, quality=questionable, completeness=unknown;
+      NPClassifier npclassifier.gnps2.org@2026-09-07.
+    definition: These are exact retained source versions and quality fields. They
+      are not primary experimental grades or current live database verification.
+    evidence_ids:
+    - SCI848-ROWS
+    - SCI848-LOCAL
+  - name: evidence_tier
+    value: Producer SOURCE_ASSERTION; locus CLUSTER_UNSTATED; entry-level PMID citation;
+      LOTUS DATABASE_ASSERTION; inspected own main text and captions with congener-specific
+      limits.
+    definition: Database assertion, computed representation, metadata and primary
+      observations retain their separate scope; duplicate citations to one publication
+      do not provide independent replication.
+    evidence_ids:
+    - SCI848-ROWS
+    - SCI848-PUBMED
+    - SCI848-PRIMARY-PRODUCER
+    - SCI848-PRIMARY-BIOSYNTHESIS
+- assessment_id: SCI848-COMPLETENESS
+  area: completeness
+  topic: Limits of the inspected scientific evidence
+  outcome: unknown
+  summary: The complete saved main text and four in-XML captions have been read. Figure
+    pixels, spectra and supplementary information have not been inspected; exact retained
+    natural structure, complete stereochemical mapping, strain authority and the genomic
+    interval remain unresolved. These gaps do not by themselves prove a wrong congener
+    or justify a replacement structure.
+  evidence_ids:
+  - SCI848-LOCAL
+  - SCI848-PRIMARY-IDENTITY
+  - SCI848-PRIMARY-STEREOCHEMISTRY
+  - SCI848-PRIMARY-BIOSYNTHESIS
+  target_ids:
+  - naturalproductmech:mibig-f80786c59b
+findings: []
+actions: []
+limitations:
+- Paragraph 7 reports six isolated A–F compounds, five obtained in amounts sufficient
+  for full characterization, plus discussion of two cyclic lactone congeners inferred
+  by MS/MS. It does not identify which of the six lacked full characterization in
+  the read prose. Figure pixels, spectra and supporting information have not been
+  inspected. No complete retained atom-graph or absolute-configuration match is asserted.
+- The source provides named C/F stereochemical analyses; the retained E stereo_complete
+  flag is not independently established by those neighboring-congener measurements.
+- Species-level source context does not verify the retained taxon identifier, exact
+  strain or genome interval through a live authority lookup.
+- Retained MIBiG BGC0002564/version 3 and genbank:CP041745.1 interval 901250–941056
+  remain database assertions. No direct megapolibactin knockout, exact locus sequence
+  verification, pathway graph or accession validation is claimed.
+- The read primary distinguishes family-level iron-complex observations from congener-specific
+  NO testing. Paragraph 10 directly names megapolibactin B for the in-vitro NO-release
+  experiment. The plant-root imaging in paragraph 11/Figure 4 uses gramibactin and
+  plantaribactin; it cannot establish in-planta activity for every megapolibactin.
+- Both saved encodings produce the retained standardized identifier and formula, while
+  canonical SMILES and direct bond-order-sensitive graph comparisons differ. Seven
+  additional unspecified C(-O)=N double bonds occur in the InChI-derived graph; this
+  is preserved as a representation boundary, not an inferred natural-structure defect.
+- The original local chemistry execution retained two charge-rearrangement/undefined-stereo
+  warnings. The saved stderr does not assign either warning to a particular congener.
+- The metadata figure count is five while the saved XML contains four actual figure-caption
+  elements. Only those four captions were read; no missing image content is inferred.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- FailedQC001 is retained for an explicit separate network-enabled retry; no artifact
+  will be overwritten.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint
+  and before downstream tests. Its actual exit1/log/input capture/root observation
+  remain pinned; the selected successful canonical QC attempt002 is separately timed.
+  No individual-review validation failure or counter reset is claimed.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter
+  skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings;
+  this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld
+  nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological
+  or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological
+  production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions
+  and no-adapter pairs; a successful command does not convert these into verified
+  scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command
+  execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population
+  was checked; external caches and generated bytecode are not asserted to be independently
+  byte-pinned.
+notes:
+- The whole local owner and retained source rows were read. Full-owner scientific
+  verification remains false; scientific_review denotes the bounded scientific interpretation
+  in this report.
+- Original owner/source reading, two-encoding computation, primary-text reading, HTTP
+  retrieval and later metadata reading retain separate clocks. Official intake separately
+  computed SMILES facts.
+- No scientific record, maintained input or native curation status was changed. Any
+  findings and actions record ROOT-adopted proposed work; exact-source limitations
+  and unavailable checks remain explicit.
+```
