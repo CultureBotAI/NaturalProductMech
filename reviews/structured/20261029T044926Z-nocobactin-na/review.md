@@ -1,0 +1,980 @@
+# Scientific review of nocobactin NA
+
+- Review: 20261029T044926Z-nocobactin-na
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-29T04:11:00.877365Z
+- Finished UTC: 2026-10-29T04:49:26.036516Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Nocobactin NA has direct abstract-level nbt functional support in Nocardia farcinica IFM10152. The current primary route supplied matching frontmatter without a body, leaving exact locus boundaries and stereochemical identity unresolved. Functional, occurrence and mutant-phenotype evidence remain distinct.
+
+## Scope And Provenance
+
+Partial exact-owner/source-row and own saved-publication scientific review.
+
+Selection: One current unreviewed record selected in canonical path order; official batch91 selection and intake exactly reconcile the frozen owner and source evidence.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base ce6a5498df5be51116bd5e0c119023ee62bb5464.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-f09f7cc58f | data/natural_products/amino_acids_and_peptides/nocobactin-na.yaml | generated | nocobactin NA |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-f09f7cc58f | Fresh corpus gate passed:3116 PATHS.tsv rows and3116 files, each at its pinned path. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-f09f7cc58f | Fresh reproduction gate passed:all3116 records are byte-identical to seeding from maintained inputs. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-f09f7cc58f | Fresh deterministic review queue produced8922 rows across12 queues; this is not scientific review coverage. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-f09f7cc58f | Fresh configured identifier-label gate passed:13472 canonical,657 synonym and35 exception matches;499 nonblocking mismatches and4898 no-adapter skips remain explicit. |
+| Full repository quality gate on the fresh main baseline | passed | True | naturalproductmech:mibig-f09f7cc58f | Fresh full quality gate passed:1024 tests passed,4 skipped,2 dependency warnings;3116 closed-schema records have zero errors; site freshness, reproduction and lockfile checks passed, alongside22 governed artifacts and15 raw inventories. |
+| Native strict target validation | passed | True | naturalproductmech:mibig-f09f7cc58f | The selected owner passed the documented strict validator. This establishes configured consistency only. |
+| Saved dual-encoding consistency | passed | True | naturalproductmech:mibig-f09f7cc58f | The two saved RDKit 2026.03.5 parses give C36H53N5O10 and full key FIZYGGKXCBPDRF-WAXSWYNISA-N with paired Standard InChI agreement. Both canonical SMILES equality flags are false and exact atom correspondence is empty. The original strings, component counts, stereo arrays and parse clocks remain intact; no natural-identity or whole-graph-isomorphism conclusion follows. |
+| Exact compound and molecular-form correspondence | unavailable | True | naturalproductmech:mibig-f09f7cc58f | The retained FIZYGGKXCBPDRF-WAXSWYNISA-N structure and source rows are locally consistent. Own abstracts directly name nocobactin NA, but do not establish every atom and stereochemical feature of this exact stored structure. No alternative structure is selected. |
+| Stereochemical and representation resolution | unavailable | True | naturalproductmech:mibig-f09f7cc58f | The saved SMILES has four specified tetrahedral centres and an unspecified C=C feature. The maintained stereo_complete flag concerns tetrahedral centres only; an unspecified double feature is not by itself a false flag or wrong-isomer finding. Canonical SMILES representations differ and exact maps remain empty. |
+| Producer and strain-specific support | passed | True | naturalproductmech:mibig-f09f7cc58f | The own abstract directly reports nocobactin NA work in Nocardia farcinica IFM10152, including nbtA/nbtE disruption effects. This is stronger functional context than the seeded SOURCE_ASSERTION label, but exact taxon authority and grade changes remain separately adjudicated. |
+| Exact locus and evidence grade | unavailable | True | naturalproductmech:mibig-f09f7cc58f | The abstract describes ten nbt genes at two regions and functional evidence for nbtA, nbtE and nbtS. The single retained AP006618.1:820180–840689 interval has not been reconciled to that two-region description. This limitation does not prove the stored locus wrong or demonstrate every gene in the complete locus. |
+| Occurrence versus production and publication independence | unavailable | True | naturalproductmech:mibig-f09f7cc58f | The LOTUS species-level Nocardia farcinica NCBITaxon:37329 occurrence and strain-bearing IFM10152 producer NCBITaxon:247156 are different claims. Their DOI10.1128/JB.00897-10 and PMID21097631 resolve to one publication, so the two database placements are not independent papers. |
+| Computed filing and asserted classes | passed | True | naturalproductmech:mibig-f09f7cc58f | nocobactin NA is filed as AMINO_ACIDS_AND_PEPTIDES. NPClassifier npclassifier.gnps2.org@2026-09-07 reports pathways ['Amino acids and Peptides'], superclasses ['Oligopeptides'], classes ['Linear peptides', 'Lipopeptides'] and is_glycoside=false; these reproduce the retained row. MIBiG BGC classes ['NRPS', 'PKS'] are separate source assertions, not a curator-defined chemical identity. |
+| Pure-compound activity and optional mechanism scope | unavailable | True | naturalproductmech:mibig-f09f7cc58f | The reported mutant cytotoxicity is not a purified nocobactin NA potency or target assay. Putative IdeR regulation is not a demonstrated complete causal mechanism. The CID102002485 blank-AID sentinel is not inactivity, and no causal graph or molecular target is added. |
+| Source-specific citation applicability | passed | True | naturalproductmech:mibig-f09f7cc58f | Own PubMed and PMC abstracts support nbt functional claims, while PMC3019813 lacks a substantive article body. The exact bodyless response remains held. The unavailable body is an access limit, not evidence that the full paper lacks the unresolved details. |
+| Source versions history and ownership | passed | True | naturalproductmech:mibig-f09f7cc58f | MIBiG BGC0001027:1 version5, active, quality=questionable, completeness=unknown, reference_basis=ENTRY; NPClassifier npclassifier.gnps2.org@2026-09-07; 2 original history entries remain unchanged. All nine source arrays and exact row guards were checked. Retrieval, saved computation, original local reads and later scientific reading retain separate clocks. |
+
+## Scientific And Domain Assessments
+
+### Saved dual-encoding consistency
+
+consistency: supported. Targets: naturalproductmech:mibig-f09f7cc58f.
+
+The two saved RDKit 2026.03.5 parses give C36H53N5O10 and full key FIZYGGKXCBPDRF-WAXSWYNISA-N with paired Standard InChI agreement. Both canonical SMILES equality flags are false and exact atom correspondence is empty. The original strings, component counts, stereo arrays and parse clocks remain intact; no natural-identity or whole-graph-isomorphism conclusion follows.
+
+### Exact compound and molecular-form correspondence
+
+identity: unknown. Targets: naturalproductmech:mibig-f09f7cc58f.
+
+The retained FIZYGGKXCBPDRF-WAXSWYNISA-N structure and source rows are locally consistent. Own abstracts directly name nocobactin NA, but do not establish every atom and stereochemical feature of this exact stored structure. No alternative structure is selected.
+
+### Stereochemical and representation resolution
+
+identity: unknown. Targets: naturalproductmech:mibig-f09f7cc58f.
+
+The saved SMILES has four specified tetrahedral centres and an unspecified C=C feature. The maintained stereo_complete flag concerns tetrahedral centres only; an unspecified double feature is not by itself a false flag or wrong-isomer finding. Canonical SMILES representations differ and exact maps remain empty.
+
+### Producer and strain-specific support
+
+evidence: supported. Targets: naturalproductmech:mibig-f09f7cc58f.
+
+The own abstract directly reports nocobactin NA work in Nocardia farcinica IFM10152, including nbtA/nbtE disruption effects. This is stronger functional context than the seeded SOURCE_ASSERTION label, but exact taxon authority and grade changes remain separately adjudicated.
+
+### Exact locus and evidence grade
+
+evidence: unknown. Targets: naturalproductmech:mibig-f09f7cc58f.
+
+The abstract describes ten nbt genes at two regions and functional evidence for nbtA, nbtE and nbtS. The single retained AP006618.1:820180–840689 interval has not been reconciled to that two-region description. This limitation does not prove the stored locus wrong or demonstrate every gene in the complete locus.
+
+### Occurrence versus production and publication independence
+
+evidence: unknown. Targets: naturalproductmech:mibig-f09f7cc58f.
+
+The LOTUS species-level Nocardia farcinica NCBITaxon:37329 occurrence and strain-bearing IFM10152 producer NCBITaxon:247156 are different claims. Their DOI10.1128/JB.00897-10 and PMID21097631 resolve to one publication, so the two database placements are not independent papers.
+
+### Computed filing and asserted classes
+
+consistency: supported. Targets: naturalproductmech:mibig-f09f7cc58f.
+
+nocobactin NA is filed as AMINO_ACIDS_AND_PEPTIDES. NPClassifier npclassifier.gnps2.org@2026-09-07 reports pathways ['Amino acids and Peptides'], superclasses ['Oligopeptides'], classes ['Linear peptides', 'Lipopeptides'] and is_glycoside=false; these reproduce the retained row. MIBiG BGC classes ['NRPS', 'PKS'] are separate source assertions, not a curator-defined chemical identity.
+
+### Pure-compound activity and optional mechanism scope
+
+evidence: unknown. Targets: naturalproductmech:mibig-f09f7cc58f.
+
+The reported mutant cytotoxicity is not a purified nocobactin NA potency or target assay. Putative IdeR regulation is not a demonstrated complete causal mechanism. The CID102002485 blank-AID sentinel is not inactivity, and no causal graph or molecular target is added.
+
+### Source-specific citation applicability
+
+evidence: supported. Targets: naturalproductmech:mibig-f09f7cc58f.
+
+Own PubMed and PMC abstracts support nbt functional claims, while PMC3019813 lacks a substantive article body. The exact bodyless response remains held. The unavailable body is an access limit, not evidence that the full paper lacks the unresolved details.
+
+### Source versions history and ownership
+
+provenance: supported. Targets: naturalproductmech:mibig-f09f7cc58f.
+
+MIBiG BGC0001027:1 version5, active, quality=questionable, completeness=unknown, reference_basis=ENTRY; NPClassifier npclassifier.gnps2.org@2026-09-07; 2 original history entries remain unchanged. All nine source arrays and exact row guards were checked. Retrieval, saved computation, original local reads and later scientific reading retain separate clocks.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| SCI908-LOCAL | /private/tmp/npm-record-reviews-20261021/data/natural_products/amino_acids_and_peptides/nocobactin-na.yaml; whole owner; chemical_structure; producer_organisms; biosynthetic_gene_clusters; occurrences; np_classification; curation_history | context_only | The nocobactin NA owner retains FIZYGGKXCBPDRF-WAXSWYNISA-N, NATURAL_PRODUCT, MINTED and SEEDED. Its producer is Nocardia farcinica IFM 10152 (NCBITaxon:247156) at SOURCE_ASSERTION, separate from locus mibig:BGC0001027 version5 at CLUSTER_UNSTATED. It retains 1 occurrence objects and 2 history entries. No native status or claim is changed. |
+| SCI908-ROWS | /private/tmp/npm-review-work/shared-next-batch091-tentative/native-tentative91-owner-source-reconnaissance-DATA-001.json; /records/7/retained_rows; /records/7/supplemental_rows; /records/7/row_guards | supports | All nine exact-key retained/supplemental arrays are joined. Seven retained arrays contain 4 rows; both supplemental arrays are empty. MIBiG BGC0001027 compound_index1 version5 is active, quality=questionable, completeness=unknown, and reference_basis=ENTRY. These are source descriptors, not independent biological proof. |
+| SCI908-ENCODINGS | /private/tmp/npm-review-work/shared-next-batch091-tentative/source-science-preparation/bgc-tentative91-ten-owner-dual-encoding-results-001.json; /records/7/smiles; /records/7/inchi; /records/7/comparisons; /records/7/stereo_counts; /records/7/atom_correspondence | supports | The two saved RDKit 2026.03.5 parses give C36H53N5O10 and full key FIZYGGKXCBPDRF-WAXSWYNISA-N with paired Standard InChI agreement. Both canonical SMILES equality flags are false and exact atom correspondence is empty. The original strings, component counts, stereo arrays and parse clocks remain intact; no natural-identity or whole-graph-isomorphism conclusion follows. |
+| SCI908-PMID | /private/tmp/npm-review-work/shared-next-batch091-tentative/literature-preparation/public-metadata-seven-PubMed-001/pmid-21097631.xml; ./PubmedArticle/MedlineCitation/PMID; ./PubmedArticle/MedlineCitation/Article/ArticleTitle; ./PubmedArticle/MedlineCitation/Article/Abstract; ./PubmedArticle/PubmedData/ArticleIdList | partial | Own PMID:21097631 title/abstract and own ArticleIdList were read. The own abstract directly reports nocobactin NA work in Nocardia farcinica IFM10152, including nbtA/nbtE disruption effects. This is stronger functional context than the seeded SOURCE_ASSERTION label, but exact taxon authority and grade changes remain separately adjudicated. Foreign bibliography identifiers remain references to other works. |
+| SCI908-PMC | /private/tmp/npm-review-work/shared-next-batch091-tentative/literature-preparation/public-primary-five-own-PMC-001/pmc3019813.xml; ./article/front/article-meta; ./article/body; ./article/back | partial | The saved response contains own frontmatter and abstract only; no substantive body. Own PubMed and PMC abstracts support nbt functional claims, while PMC3019813 lacks a substantive article body. The exact bodyless response remains held. The unavailable body is an access limit, not evidence that the full paper lacks the unresolved details. |
+| SCI908-PMC-ACCESS | /private/tmp/npm-review-work/shared-next-batch091-tentative/literature-preparation/public-primary-five-own-PMC-001/pmc3019813.xml.access.json; /http_status; /identity; /success; /body; /started_at; /finished_at | supports | Original HTTP200 response: own frontmatter matched, article_body_present=false, success=false. Availability is separate from scientific evidence and later reading. |
+| SCI908-STEREO-METHOD | /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py; _chemistry; FindMolChiralCenters(includeUnassigned=True,useLegacyImplementation=False); stereo_complete | supports | The maintained extractor derives stereo_complete from unassigned tetrahedral centres. The flag does not attest to complete double-bond geometry, tautomer identity or experimentally established natural stereochemistry. |
+| SCI908-PROFILE | /private/tmp/npm-record-reviews-20261021/docs/record-review-profile.md; Native questions and ownership; REVIEWED prerequisites; four native dimensions | supports | Exact structure/origin, producer versus occurrence, active source version and evidence tier are distinct review dimensions. Partial source review does not promote native REVIEWED or a stronger biosynthetic grade. |
+| SCI908-CURATION | /private/tmp/npm-record-reviews-20261021/docs/CURATION.md; MIBiG claim-specific reference corrections; LOTUS occurrence exclusions; maintained input ownership | supports | Seeded citation corrections belong to exact maintained compound-row or occurrence-triple tables with source-row guards. Replacement references need inspected support. Curator-owned discussion may record unresolved evidence; regeneration, strict validation, reproduction and corpus checks follow a later authorized change. |
+
+## Limits And Additional Notes
+
+- Partial scientific coverage of the exact owner, all retained and supplemental source arrays and the named saved publications; full-owner scientific completeness remains unverified.
+- Original evidence timestamps preserve local byte reading, HTTP retrieval or saved parse clocks. Later scientific reading is recorded separately; a failed source-access route is not a canonical validation failure.
+- Current accepted source history has22 closed events,128 event leaves and137 held leaves; the six contextual PMC100110 leaves remain separate. No held route is retried and unavailable body content is not treated as a scientific negative result.
+- External chemical/protein/taxonomy identifiers and accession versions are retained assertions except where an exact inspected own-source anchor is stated. No graph, assay, protein example or natural stereostructure is inferred from family membership.
+- Document direct functional evidence with its gene and strain scope, then reconcile the exact accession interval before considering a maintained locus-evidence override. Keep gene disruption, enzyme function, whole-locus association and mutant phenotype distinct.
+- The matching PMC response contains no substantive article body; scientific support is limited to the available abstract and metadata.
+- Source seeding retains five unresolved assay-organism targets (one distinct Human label),42 withheld nonspecific producer claims and161 merged-taxonomy rewrites.
+- Queue diagnostics rank deterministic curation questions and do not prove literature support or review completion.
+- 499 configured nonblocking mismatches remain warnings;4898 pairs lacked an adapter.35 exception and657 synonym matches retain their configured scope; no fresh ontology authority retrieval is asserted.
+- Four tests were skipped; two dependency deprecations concern LinkML dataclass and Pandas copy-on-write behavior. Source seeding warnings and configured gate boundaries are retained in the full log.
+- Native baseline gates establish configured consistency, not independent biological production, exact stereochemistry or primary-source adequacy.
+- Configured ontology caches and scientific/test skips retain their original scope; a new command execution is not a fresh retrieval of every authority.
+- All tracked link objects are hashed as link-target bytes without dereferencing; canonical record source intake remains regular-file-only and uses the separately reviewed AGENTS.md context projection.
+- The whole local owner and retained source rows were read. Full-owner scientific verification remains false; scientific_review denotes the bounded scientific interpretation in this report.
+- Original owner/source reading, two-encoding computation, primary-text reading, HTTP retrieval and later metadata reading retain separate clocks. Official intake separately computed SMILES facts.
+- No scientific record, maintained input or native curation status was changed. Any findings and actions record ROOT-adopted proposed work; exact-source limitations and unavailable checks remain explicit.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261029T044926Z-nocobactin-na
+title: Scientific review of nocobactin NA
+started_at: '2026-10-29T04:11:00.877365Z'
+finished_at: '2026-10-29T04:49:26.036516Z'
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: Nocobactin NA has direct abstract-level nbt functional support in Nocardia
+  farcinica IFM10152. The current primary route supplied matching frontmatter without
+  a body, leaving exact locus boundaries and stereochemical identity unresolved. Functional,
+  occurrence and mutant-phenotype evidence remain distinct.
+source:
+  git_revision: ce6a5498df5be51116bd5e0c119023ee62bb5464
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: AGENTS.md
+    sha256: 69e4037f8dc97d4b00bb7bb83b41ceca025f6ef578d5c0bf8086f3400becde0b
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/nocobactin-na.yaml
+    sha256: b0e994ea9442f15283752d8c0278d99910ad4028e86d836bd5bf4356f86c0148
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+targets:
+- target_id: naturalproductmech:mibig-f09f7cc58f
+  path: data/natural_products/amino_acids_and_peptides/nocobactin-na.yaml
+  label: nocobactin NA
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+scope:
+  description: Partial exact-owner/source-row and own saved-publication scientific
+    review.
+  selection: One current unreviewed record selected in canonical path order; official
+    batch91 selection and intake exactly reconcile the frozen owner and source evidence.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-f09f7cc58f
+  exclusions:
+  - target: complete natural stereostructure verification
+    reason: This claim is outside the inspected source scope; the record-specific
+      evidence and limitations state what remains unresolved.
+  - target: unread own publications and supplements
+    reason: This claim is outside the inspected source scope; the record-specific
+      evidence and limitations state what remains unresolved.
+  - target: unverified external identifier mappings
+    reason: This claim is outside the inspected source scope; the record-specific
+      evidence and limitations state what remains unresolved.
+checks:
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: Fresh corpus gate passed:3116 PATHS.tsv rows and3116 files, each at its
+    pinned path.
+  command: env -u PYTEST_ADDOPTS UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache
+    RECORD_REVIEW_BASE=ce6a5498df5be51116bd5e0c119023ee62bb5464 PYTHONDONTWRITEBYTECODE=1
+    just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: Fresh batch087 command on ce6a5498df5be51116bd5e0c119023ee62bb5464 in
+    /private/tmp/npm-record-reviews-20261021. Started 2026-10-28T21:33:09.338684Z;
+    finished 2026-10-28T21:33:29.829334Z; ROOT observed at 2026-10-28T21:38:57.679080Z.
+    Original receipt /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/verify-corpus.json;
+    transcript /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/verify-corpus.log.
+    PYTEST_ADDOPTS was explicitly unset. Full tracked byte/mode capture and recheck
+    occurred separately after these gates; no pre-gate capture is inferred. Warnings,
+    configured exceptions and skips remain in the original transcript.
+  target_ids:
+  - naturalproductmech:mibig-f09f7cc58f
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: Fresh reproduction gate passed:all3116 records are byte-identical to seeding
+    from maintained inputs.
+  command: env -u PYTEST_ADDOPTS UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache
+    RECORD_REVIEW_BASE=ce6a5498df5be51116bd5e0c119023ee62bb5464 PYTHONDONTWRITEBYTECODE=1
+    just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: Fresh batch087 command on ce6a5498df5be51116bd5e0c119023ee62bb5464 in
+    /private/tmp/npm-record-reviews-20261021. Started 2026-10-28T21:33:09.338638Z;
+    finished 2026-10-28T21:33:44.898261Z; ROOT observed at 2026-10-28T21:38:57.679080Z.
+    Original receipt /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/verify-reproduction.json;
+    transcript /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/verify-reproduction.log.
+    PYTEST_ADDOPTS was explicitly unset. Full tracked byte/mode capture and recheck
+    occurred separately after these gates; no pre-gate capture is inferred. Warnings,
+    configured exceptions and skips remain in the original transcript.
+  target_ids:
+  - naturalproductmech:mibig-f09f7cc58f
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: Fresh deterministic review queue produced8922 rows across12 queues; this
+    is not scientific review coverage.
+  command: env -u PYTEST_ADDOPTS UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache
+    RECORD_REVIEW_BASE=ce6a5498df5be51116bd5e0c119023ee62bb5464 PYTHONDONTWRITEBYTECODE=1
+    just review-queue --tsv /private/tmp/npm-review-queue-batch-087-freshce6a5498-001.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: Fresh batch087 command on ce6a5498df5be51116bd5e0c119023ee62bb5464 in
+    /private/tmp/npm-record-reviews-20261021. Started 2026-10-28T21:33:09.340163Z;
+    finished 2026-10-28T21:33:21.471992Z; ROOT observed at 2026-10-28T21:38:57.679080Z.
+    Original receipt /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/review-queue.json;
+    transcript /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/review-queue.log.
+    PYTEST_ADDOPTS was explicitly unset. Full tracked byte/mode capture and recheck
+    occurred separately after these gates; no pre-gate capture is inferred. Warnings,
+    configured exceptions and skips remain in the original transcript.
+  target_ids:
+  - naturalproductmech:mibig-f09f7cc58f
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: Fresh configured identifier-label gate passed:13472 canonical,657 synonym
+    and35 exception matches;499 nonblocking mismatches and4898 no-adapter skips remain
+    explicit.
+  command: env -u PYTEST_ADDOPTS UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache
+    RECORD_REVIEW_BASE=ce6a5498df5be51116bd5e0c119023ee62bb5464 PYTHONDONTWRITEBYTECODE=1
+    just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: Fresh batch087 command on ce6a5498df5be51116bd5e0c119023ee62bb5464 in
+    /private/tmp/npm-record-reviews-20261021. Started 2026-10-28T21:33:09.340947Z;
+    finished 2026-10-28T21:33:45.063118Z; ROOT observed at 2026-10-28T21:38:57.679080Z.
+    Original receipt /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/validate-products.json;
+    transcript /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/validate-products.log.
+    PYTEST_ADDOPTS was explicitly unset. Full tracked byte/mode capture and recheck
+    occurred separately after these gates; no pre-gate capture is inferred. Warnings,
+    configured exceptions and skips remain in the original transcript.
+  target_ids:
+  - naturalproductmech:mibig-f09f7cc58f
+- check_id: shared-qc
+  name: Full repository quality gate on the fresh main baseline
+  status: passed
+  required: true
+  summary: Fresh full quality gate passed:1024 tests passed,4 skipped,2 dependency
+    warnings;3116 closed-schema records have zero errors; site freshness, reproduction
+    and lockfile checks passed, alongside22 governed artifacts and15 raw inventories.
+  command: env -u PYTEST_ADDOPTS UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache
+    RECORD_REVIEW_BASE=ce6a5498df5be51116bd5e0c119023ee62bb5464 PYTHONDONTWRITEBYTECODE=1
+    just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: Fresh batch087 command on ce6a5498df5be51116bd5e0c119023ee62bb5464 in
+    /private/tmp/npm-record-reviews-20261021. Started 2026-10-28T21:33:14.328372Z;
+    finished 2026-10-28T21:38:03.336464Z; ROOT observed at 2026-10-28T21:38:57.679080Z.
+    Original receipt /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/qc.json;
+    transcript /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/qc.log.
+    PYTEST_ADDOPTS was explicitly unset. Full tracked byte/mode capture and recheck
+    occurred separately after these gates; no pre-gate capture is inferred. Warnings,
+    configured exceptions and skips remain in the original transcript.
+  target_ids:
+  - naturalproductmech:mibig-f09f7cc58f
+- check_id: C-STRICT
+  name: Native strict target validation
+  status: passed
+  required: true
+  summary: The selected owner passed the documented strict validator. This establishes
+    configured consistency only.
+  command: just validate-strict data/natural_products/amino_acids_and_peptides/nocobactin-na.yaml
+    --out /private/tmp/npm-review-work/908/strict.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Actual intake execution finished 2026-10-29T04:11:02.232737Z. Original
+    receipt: /private/tmp/npm-review-work/908/strict-receipt.json.'
+  target_ids:
+  - naturalproductmech:mibig-f09f7cc58f
+- check_id: SCI908-ENCODINGS
+  name: Saved dual-encoding consistency
+  status: passed
+  required: true
+  summary: The two saved RDKit 2026.03.5 parses give C36H53N5O10 and full key FIZYGGKXCBPDRF-WAXSWYNISA-N
+    with paired Standard InChI agreement. Both canonical SMILES equality flags are
+    false and exact atom correspondence is empty. The original strings, component
+    counts, stereo arrays and parse clocks remain intact; no natural-identity or whole-graph-isomorphism
+    conclusion follows.
+  target_ids:
+  - naturalproductmech:mibig-f09f7cc58f
+  evidence_ids:
+  - SCI908-LOCAL
+  - SCI908-ENCODINGS
+  scope_note: Assessment of the named saved evidence and exact current owner; no new
+    chemical computation or canonical command.
+- check_id: SCI908-IDENTITY
+  name: Exact compound and molecular-form correspondence
+  status: unavailable
+  required: true
+  summary: The retained FIZYGGKXCBPDRF-WAXSWYNISA-N structure and source rows are
+    locally consistent. Own abstracts directly name nocobactin NA, but do not establish
+    every atom and stereochemical feature of this exact stored structure. No alternative
+    structure is selected.
+  target_ids:
+  - naturalproductmech:mibig-f09f7cc58f
+  evidence_ids:
+  - SCI908-LOCAL
+  - SCI908-ROWS
+  - SCI908-ENCODINGS
+  - SCI908-PMID
+  - SCI908-PMC
+  scope_note: Assessment of the named saved evidence and exact current owner; no new
+    chemical computation or canonical command.
+- check_id: SCI908-STEREO
+  name: Stereochemical and representation resolution
+  status: unavailable
+  required: true
+  summary: The saved SMILES has four specified tetrahedral centres and an unspecified
+    C=C feature. The maintained stereo_complete flag concerns tetrahedral centres
+    only; an unspecified double feature is not by itself a false flag or wrong-isomer
+    finding. Canonical SMILES representations differ and exact maps remain empty.
+  target_ids:
+  - naturalproductmech:mibig-f09f7cc58f
+  evidence_ids:
+  - SCI908-LOCAL
+  - SCI908-ENCODINGS
+  - SCI908-STEREO-METHOD
+  scope_note: Assessment of the named saved evidence and exact current owner; no new
+    chemical computation or canonical command.
+- check_id: SCI908-PRODUCER
+  name: Producer and strain-specific support
+  status: passed
+  required: true
+  summary: The own abstract directly reports nocobactin NA work in Nocardia farcinica
+    IFM10152, including nbtA/nbtE disruption effects. This is stronger functional
+    context than the seeded SOURCE_ASSERTION label, but exact taxon authority and
+    grade changes remain separately adjudicated.
+  target_ids:
+  - naturalproductmech:mibig-f09f7cc58f
+  evidence_ids:
+  - SCI908-LOCAL
+  - SCI908-ROWS
+  - SCI908-PMID
+  - SCI908-PMC
+  scope_note: Assessment of the named saved evidence and exact current owner; no new
+    chemical computation or canonical command.
+- check_id: SCI908-LOCUS
+  name: Exact locus and evidence grade
+  status: unavailable
+  required: true
+  summary: The abstract describes ten nbt genes at two regions and functional evidence
+    for nbtA, nbtE and nbtS. The single retained AP006618.1:820180–840689 interval
+    has not been reconciled to that two-region description. This limitation does not
+    prove the stored locus wrong or demonstrate every gene in the complete locus.
+  target_ids:
+  - naturalproductmech:mibig-f09f7cc58f
+  evidence_ids:
+  - SCI908-LOCAL
+  - SCI908-ROWS
+  - SCI908-PMID
+  - SCI908-PMC
+  scope_note: Assessment of the named saved evidence and exact current owner; no new
+    chemical computation or canonical command.
+- check_id: SCI908-OCCURRENCE
+  name: Occurrence versus production and publication independence
+  status: unavailable
+  required: true
+  summary: The LOTUS species-level Nocardia farcinica NCBITaxon:37329 occurrence and
+    strain-bearing IFM10152 producer NCBITaxon:247156 are different claims. Their
+    DOI10.1128/JB.00897-10 and PMID21097631 resolve to one publication, so the two
+    database placements are not independent papers.
+  target_ids:
+  - naturalproductmech:mibig-f09f7cc58f
+  evidence_ids:
+  - SCI908-LOCAL
+  - SCI908-ROWS
+  - SCI908-PMID
+  - SCI908-PMC
+  scope_note: Assessment of the named saved evidence and exact current owner; no new
+    chemical computation or canonical command.
+- check_id: SCI908-FILING
+  name: Computed filing and asserted classes
+  status: passed
+  required: true
+  summary: nocobactin NA is filed as AMINO_ACIDS_AND_PEPTIDES. NPClassifier npclassifier.gnps2.org@2026-09-07
+    reports pathways ['Amino acids and Peptides'], superclasses ['Oligopeptides'],
+    classes ['Linear peptides', 'Lipopeptides'] and is_glycoside=false; these reproduce
+    the retained row. MIBiG BGC classes ['NRPS', 'PKS'] are separate source assertions,
+    not a curator-defined chemical identity.
+  target_ids:
+  - naturalproductmech:mibig-f09f7cc58f
+  evidence_ids:
+  - SCI908-LOCAL
+  - SCI908-ROWS
+  scope_note: Assessment of the named saved evidence and exact current owner; no new
+    chemical computation or canonical command.
+- check_id: SCI908-ACTIVITY
+  name: Pure-compound activity and optional mechanism scope
+  status: unavailable
+  required: true
+  summary: The reported mutant cytotoxicity is not a purified nocobactin NA potency
+    or target assay. Putative IdeR regulation is not a demonstrated complete causal
+    mechanism. The CID102002485 blank-AID sentinel is not inactivity, and no causal
+    graph or molecular target is added.
+  target_ids:
+  - naturalproductmech:mibig-f09f7cc58f
+  evidence_ids:
+  - SCI908-LOCAL
+  - SCI908-ROWS
+  - SCI908-PMID
+  - SCI908-PMC
+  scope_note: Assessment of the named saved evidence and exact current owner; no new
+    chemical computation or canonical command.
+- check_id: SCI908-REFERENCE
+  name: Source-specific citation applicability
+  status: passed
+  required: true
+  summary: Own PubMed and PMC abstracts support nbt functional claims, while PMC3019813
+    lacks a substantive article body. The exact bodyless response remains held. The
+    unavailable body is an access limit, not evidence that the full paper lacks the
+    unresolved details.
+  target_ids:
+  - naturalproductmech:mibig-f09f7cc58f
+  evidence_ids:
+  - SCI908-LOCAL
+  - SCI908-ROWS
+  - SCI908-PMID
+  - SCI908-PMC
+  - SCI908-PMC-ACCESS
+  scope_note: Assessment of the named saved evidence and exact current owner; no new
+    chemical computation or canonical command.
+- check_id: SCI908-PROVENANCE
+  name: Source versions history and ownership
+  status: passed
+  required: true
+  summary: MIBiG BGC0001027:1 version5, active, quality=questionable, completeness=unknown,
+    reference_basis=ENTRY; NPClassifier npclassifier.gnps2.org@2026-09-07; 2 original
+    history entries remain unchanged. All nine source arrays and exact row guards
+    were checked. Retrieval, saved computation, original local reads and later scientific
+    reading retain separate clocks.
+  target_ids:
+  - naturalproductmech:mibig-f09f7cc58f
+  evidence_ids:
+  - SCI908-LOCAL
+  - SCI908-ROWS
+  - SCI908-PROFILE
+  scope_note: Assessment of the named saved evidence and exact current owner; no new
+    chemical computation or canonical command.
+evidence:
+- evidence_id: SCI908-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/amino_acids_and_peptides/nocobactin-na.yaml
+  locator: whole owner; chemical_structure; producer_organisms; biosynthetic_gene_clusters;
+    occurrences; np_classification; curation_history
+  accessed_at: '2026-10-29T03:02:56.717836Z'
+  snapshot_sha256: b0e994ea9442f15283752d8c0278d99910ad4028e86d836bd5bf4356f86c0148
+  support: context_only
+  summary: The nocobactin NA owner retains FIZYGGKXCBPDRF-WAXSWYNISA-N, NATURAL_PRODUCT,
+    MINTED and SEEDED. Its producer is Nocardia farcinica IFM 10152 (NCBITaxon:247156)
+    at SOURCE_ASSERTION, separate from locus mibig:BGC0001027 version5 at CLUSTER_UNSTATED.
+    It retains 1 occurrence objects and 2 history entries. No native status or claim
+    is changed.
+- evidence_id: SCI908-ROWS
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch091-tentative/native-tentative91-owner-source-reconnaissance-DATA-001.json
+  locator: /records/7/retained_rows; /records/7/supplemental_rows; /records/7/row_guards
+  accessed_at: '2026-10-29T03:02:56.717836Z'
+  snapshot_sha256: 2dc812dee4f29dd8df8f3dd541f725314e9c32b779ac4257210490aac1b0f044
+  support: supports
+  summary: All nine exact-key retained/supplemental arrays are joined. Seven retained
+    arrays contain 4 rows; both supplemental arrays are empty. MIBiG BGC0001027 compound_index1
+    version5 is active, quality=questionable, completeness=unknown, and reference_basis=ENTRY.
+    These are source descriptors, not independent biological proof.
+- evidence_id: SCI908-ENCODINGS
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch091-tentative/source-science-preparation/bgc-tentative91-ten-owner-dual-encoding-results-001.json
+  locator: /records/7/smiles; /records/7/inchi; /records/7/comparisons; /records/7/stereo_counts;
+    /records/7/atom_correspondence
+  accessed_at: '2026-10-29T03:12:01.170208Z'
+  snapshot_sha256: f79c9a2782c67d0fdb25cbf52a77831408cf0c87df45a20ed9c672f30d97cf17
+  support: supports
+  summary: The two saved RDKit 2026.03.5 parses give C36H53N5O10 and full key FIZYGGKXCBPDRF-WAXSWYNISA-N
+    with paired Standard InChI agreement. Both canonical SMILES equality flags are
+    false and exact atom correspondence is empty. The original strings, component
+    counts, stereo arrays and parse clocks remain intact; no natural-identity or whole-graph-isomorphism
+    conclusion follows.
+- evidence_id: SCI908-PMID
+  kind: primary_source
+  reference: /private/tmp/npm-review-work/shared-next-batch091-tentative/literature-preparation/public-metadata-seven-PubMed-001/pmid-21097631.xml
+  locator: ./PubmedArticle/MedlineCitation/PMID; ./PubmedArticle/MedlineCitation/Article/ArticleTitle;
+    ./PubmedArticle/MedlineCitation/Article/Abstract; ./PubmedArticle/PubmedData/ArticleIdList
+  accessed_at: '2026-10-29T03:41:28.044371Z'
+  snapshot_sha256: 8e1e8e55b30ae1b8b71e9cddc713aac42f18fff63c80ae68fd58cc9eb44fa634
+  support: partial
+  summary: Own PMID:21097631 title/abstract and own ArticleIdList were read. The own
+    abstract directly reports nocobactin NA work in Nocardia farcinica IFM10152, including
+    nbtA/nbtE disruption effects. This is stronger functional context than the seeded
+    SOURCE_ASSERTION label, but exact taxon authority and grade changes remain separately
+    adjudicated. Foreign bibliography identifiers remain references to other works.
+- evidence_id: SCI908-PMC
+  kind: primary_source
+  reference: /private/tmp/npm-review-work/shared-next-batch091-tentative/literature-preparation/public-primary-five-own-PMC-001/pmc3019813.xml
+  locator: ./article/front/article-meta; ./article/body; ./article/back
+  accessed_at: '2026-10-29T04:04:04.082728Z'
+  snapshot_sha256: f63772edfcdd3f85db323b07ceb2866d42bc269bd181846e89195acbed377f5f
+  support: partial
+  summary: The saved response contains own frontmatter and abstract only; no substantive
+    body. Own PubMed and PMC abstracts support nbt functional claims, while PMC3019813
+    lacks a substantive article body. The exact bodyless response remains held. The
+    unavailable body is an access limit, not evidence that the full paper lacks the
+    unresolved details.
+- evidence_id: SCI908-PMC-ACCESS
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next-batch091-tentative/literature-preparation/public-primary-five-own-PMC-001/pmc3019813.xml.access.json
+  locator: /http_status; /identity; /success; /body; /started_at; /finished_at
+  accessed_at: '2026-10-29T04:04:04.082728Z'
+  snapshot_sha256: 69f9d1a4c928fc5e8a77e70049a3dfd71e2f84469921af2421e213a5e4e05103
+  support: supports
+  summary: 'Original HTTP200 response: own frontmatter matched, article_body_present=false,
+    success=false. Availability is separate from scientific evidence and later reading.'
+  search_scope: One original initial request to https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3019813&retmode=xml
+    from 2026-10-29T04:04:03.745579Z to 2026-10-29T04:04:04.082728Z, with its exact
+    saved 9390-byte XML and access receipt. This is a single-route availability observation,
+    not a global literature search; no retry, alternate route or later-reading clock
+    is represented.
+- evidence_id: SCI908-STEREO-METHOD
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py
+  locator: _chemistry; FindMolChiralCenters(includeUnassigned=True,useLegacyImplementation=False);
+    stereo_complete
+  accessed_at: '2026-10-29T04:31:39.177646Z'
+  snapshot_sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+  support: supports
+  summary: The maintained extractor derives stereo_complete from unassigned tetrahedral
+    centres. The flag does not attest to complete double-bond geometry, tautomer identity
+    or experimentally established natural stereochemistry.
+- evidence_id: SCI908-PROFILE
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/docs/record-review-profile.md
+  locator: Native questions and ownership; REVIEWED prerequisites; four native dimensions
+  accessed_at: '2026-10-29T04:31:39.177646Z'
+  snapshot_sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+  support: supports
+  summary: Exact structure/origin, producer versus occurrence, active source version
+    and evidence tier are distinct review dimensions. Partial source review does not
+    promote native REVIEWED or a stronger biosynthetic grade.
+- evidence_id: SCI908-CURATION
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/docs/CURATION.md
+  locator: MIBiG claim-specific reference corrections; LOTUS occurrence exclusions;
+    maintained input ownership
+  accessed_at: '2026-10-29T04:31:39.177646Z'
+  snapshot_sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+  support: supports
+  summary: Seeded citation corrections belong to exact maintained compound-row or
+    occurrence-triple tables with source-row guards. Replacement references need inspected
+    support. Curator-owned discussion may record unresolved evidence; regeneration,
+    strict validation, reproduction and corpus checks follow a later authorized change.
+assessments:
+- assessment_id: SCI908-ENCODINGS
+  area: consistency
+  topic: Saved dual-encoding consistency
+  outcome: supported
+  summary: The two saved RDKit 2026.03.5 parses give C36H53N5O10 and full key FIZYGGKXCBPDRF-WAXSWYNISA-N
+    with paired Standard InChI agreement. Both canonical SMILES equality flags are
+    false and exact atom correspondence is empty. The original strings, component
+    counts, stereo arrays and parse clocks remain intact; no natural-identity or whole-graph-isomorphism
+    conclusion follows.
+  target_ids:
+  - naturalproductmech:mibig-f09f7cc58f
+  evidence_ids:
+  - SCI908-LOCAL
+  - SCI908-ENCODINGS
+- assessment_id: SCI908-IDENTITY
+  area: identity
+  topic: Exact compound and molecular-form correspondence
+  outcome: unknown
+  summary: The retained FIZYGGKXCBPDRF-WAXSWYNISA-N structure and source rows are
+    locally consistent. Own abstracts directly name nocobactin NA, but do not establish
+    every atom and stereochemical feature of this exact stored structure. No alternative
+    structure is selected.
+  target_ids:
+  - naturalproductmech:mibig-f09f7cc58f
+  evidence_ids:
+  - SCI908-LOCAL
+  - SCI908-ROWS
+  - SCI908-ENCODINGS
+  - SCI908-PMID
+  - SCI908-PMC
+- assessment_id: SCI908-STEREO
+  area: identity
+  topic: Stereochemical and representation resolution
+  outcome: unknown
+  summary: The saved SMILES has four specified tetrahedral centres and an unspecified
+    C=C feature. The maintained stereo_complete flag concerns tetrahedral centres
+    only; an unspecified double feature is not by itself a false flag or wrong-isomer
+    finding. Canonical SMILES representations differ and exact maps remain empty.
+  target_ids:
+  - naturalproductmech:mibig-f09f7cc58f
+  evidence_ids:
+  - SCI908-LOCAL
+  - SCI908-ENCODINGS
+  - SCI908-STEREO-METHOD
+  dimensions:
+  - name: stereochemical_resolution
+    value: 'nocobactin NA full key FIZYGGKXCBPDRF-WAXSWYNISA-N; stereo_complete=true;
+      saved SMILES stereo {"potential_by_type": {"Atom_Tetrahedral": 4, "Bond_Double":
+      1}, "potential_total": 5, "specification_counts": {"Specified": 4, "Unspecified":
+      1}, "unspecified_total": 1}; components=1'
+    definition: Literal saved tetrahedral/double/component resolution; independent
+      natural assignment remains separate.
+    evidence_ids:
+    - SCI908-LOCAL
+    - SCI908-ENCODINGS
+    - SCI908-STEREO-METHOD
+- assessment_id: SCI908-PRODUCER
+  area: evidence
+  topic: Producer and strain-specific support
+  outcome: supported
+  summary: The own abstract directly reports nocobactin NA work in Nocardia farcinica
+    IFM10152, including nbtA/nbtE disruption effects. This is stronger functional
+    context than the seeded SOURCE_ASSERTION label, but exact taxon authority and
+    grade changes remain separately adjudicated.
+  target_ids:
+  - naturalproductmech:mibig-f09f7cc58f
+  evidence_ids:
+  - SCI908-LOCAL
+  - SCI908-ROWS
+  - SCI908-PMID
+  - SCI908-PMC
+  dimensions:
+  - name: taxon_strain
+    value: 'Nocardia farcinica IFM 10152 / NCBITaxon:247156; separate occurrences:
+      Nocardia farcinica / NCBITaxon:37329'
+    definition: Retained strain-bearing producer and occurrence taxa are distinct;
+      taxonomic identifiers are not newly authority-resolved.
+    evidence_ids:
+    - SCI908-LOCAL
+    - SCI908-ROWS
+    - SCI908-PMID
+    - SCI908-PMC
+- assessment_id: SCI908-LOCUS
+  area: evidence
+  topic: Exact locus and evidence grade
+  outcome: unknown
+  summary: The abstract describes ten nbt genes at two regions and functional evidence
+    for nbtA, nbtE and nbtS. The single retained AP006618.1:820180–840689 interval
+    has not been reconciled to that two-region description. This limitation does not
+    prove the stored locus wrong or demonstrate every gene in the complete locus.
+  target_ids:
+  - naturalproductmech:mibig-f09f7cc58f
+  evidence_ids:
+  - SCI908-LOCAL
+  - SCI908-ROWS
+  - SCI908-PMID
+  - SCI908-PMC
+  dimensions:
+  - name: evidence_tier
+    value: producer SOURCE_ASSERTION; locus CLUSTER_UNSTATED; MIBiG reference PMID:21097631
+      (ENTRY); available source scope own abstract only
+    definition: Database assertion, source experiment, locus association and exact
+      natural structure are separate evidentiary questions.
+    evidence_ids:
+    - SCI908-LOCAL
+    - SCI908-ROWS
+    - SCI908-PMID
+    - SCI908-PMC
+- assessment_id: SCI908-OCCURRENCE
+  area: evidence
+  topic: Occurrence versus production and publication independence
+  outcome: unknown
+  summary: The LOTUS species-level Nocardia farcinica NCBITaxon:37329 occurrence and
+    strain-bearing IFM10152 producer NCBITaxon:247156 are different claims. Their
+    DOI10.1128/JB.00897-10 and PMID21097631 resolve to one publication, so the two
+    database placements are not independent papers.
+  target_ids:
+  - naturalproductmech:mibig-f09f7cc58f
+  evidence_ids:
+  - SCI908-LOCAL
+  - SCI908-ROWS
+  - SCI908-PMID
+  - SCI908-PMC
+- assessment_id: SCI908-FILING
+  area: consistency
+  topic: Computed filing and asserted classes
+  outcome: supported
+  summary: nocobactin NA is filed as AMINO_ACIDS_AND_PEPTIDES. NPClassifier npclassifier.gnps2.org@2026-09-07
+    reports pathways ['Amino acids and Peptides'], superclasses ['Oligopeptides'],
+    classes ['Linear peptides', 'Lipopeptides'] and is_glycoside=false; these reproduce
+    the retained row. MIBiG BGC classes ['NRPS', 'PKS'] are separate source assertions,
+    not a curator-defined chemical identity.
+  target_ids:
+  - naturalproductmech:mibig-f09f7cc58f
+  evidence_ids:
+  - SCI908-LOCAL
+  - SCI908-ROWS
+- assessment_id: SCI908-ACTIVITY
+  area: evidence
+  topic: Pure-compound activity and optional mechanism scope
+  outcome: unknown
+  summary: The reported mutant cytotoxicity is not a purified nocobactin NA potency
+    or target assay. Putative IdeR regulation is not a demonstrated complete causal
+    mechanism. The CID102002485 blank-AID sentinel is not inactivity, and no causal
+    graph or molecular target is added.
+  target_ids:
+  - naturalproductmech:mibig-f09f7cc58f
+  evidence_ids:
+  - SCI908-LOCAL
+  - SCI908-ROWS
+  - SCI908-PMID
+  - SCI908-PMC
+- assessment_id: SCI908-REFERENCE
+  area: evidence
+  topic: Source-specific citation applicability
+  outcome: supported
+  summary: Own PubMed and PMC abstracts support nbt functional claims, while PMC3019813
+    lacks a substantive article body. The exact bodyless response remains held. The
+    unavailable body is an access limit, not evidence that the full paper lacks the
+    unresolved details.
+  target_ids:
+  - naturalproductmech:mibig-f09f7cc58f
+  evidence_ids:
+  - SCI908-LOCAL
+  - SCI908-ROWS
+  - SCI908-PMID
+  - SCI908-PMC
+  - SCI908-PMC-ACCESS
+- assessment_id: SCI908-PROVENANCE
+  area: provenance
+  topic: Source versions history and ownership
+  outcome: supported
+  summary: MIBiG BGC0001027:1 version5, active, quality=questionable, completeness=unknown,
+    reference_basis=ENTRY; NPClassifier npclassifier.gnps2.org@2026-09-07; 2 original
+    history entries remain unchanged. All nine source arrays and exact row guards
+    were checked. Retrieval, saved computation, original local reads and later scientific
+    reading retain separate clocks.
+  target_ids:
+  - naturalproductmech:mibig-f09f7cc58f
+  evidence_ids:
+  - SCI908-LOCAL
+  - SCI908-ROWS
+  - SCI908-PROFILE
+  dimensions:
+  - name: source_version
+    value: MIBiG BGC0001027:1 version5, active, quality=questionable, completeness=unknown,
+      reference_basis=ENTRY; NPClassifier npclassifier.gnps2.org@2026-09-07; 2 original
+      history entries remain unchanged. All nine source arrays and exact row guards
+      were checked. Retrieval, saved computation, original local reads and later scientific
+      reading retain separate clocks.
+    definition: Source release/entry metadata and historical provenance, not experimental
+      confidence.
+    evidence_ids:
+    - SCI908-LOCAL
+    - SCI908-ROWS
+    - SCI908-PROFILE
+findings: []
+actions: []
+limitations:
+- Partial scientific coverage of the exact owner, all retained and supplemental source
+  arrays and the named saved publications; full-owner scientific completeness remains
+  unverified.
+- Original evidence timestamps preserve local byte reading, HTTP retrieval or saved
+  parse clocks. Later scientific reading is recorded separately; a failed source-access
+  route is not a canonical validation failure.
+- Current accepted source history has22 closed events,128 event leaves and137 held
+  leaves; the six contextual PMC100110 leaves remain separate. No held route is retried
+  and unavailable body content is not treated as a scientific negative result.
+- External chemical/protein/taxonomy identifiers and accession versions are retained
+  assertions except where an exact inspected own-source anchor is stated. No graph,
+  assay, protein example or natural stereostructure is inferred from family membership.
+- Document direct functional evidence with its gene and strain scope, then reconcile
+  the exact accession interval before considering a maintained locus-evidence override.
+  Keep gene disruption, enzyme function, whole-locus association and mutant phenotype
+  distinct.
+- The matching PMC response contains no substantive article body; scientific support
+  is limited to the available abstract and metadata.
+- Source seeding retains five unresolved assay-organism targets (one distinct Human
+  label),42 withheld nonspecific producer claims and161 merged-taxonomy rewrites.
+- Queue diagnostics rank deterministic curation questions and do not prove literature
+  support or review completion.
+- 499 configured nonblocking mismatches remain warnings;4898 pairs lacked an adapter.35
+  exception and657 synonym matches retain their configured scope; no fresh ontology
+  authority retrieval is asserted.
+- Four tests were skipped; two dependency deprecations concern LinkML dataclass and
+  Pandas copy-on-write behavior. Source seeding warnings and configured gate boundaries
+  are retained in the full log.
+- Native baseline gates establish configured consistency, not independent biological
+  production, exact stereochemistry or primary-source adequacy.
+- Configured ontology caches and scientific/test skips retain their original scope;
+  a new command execution is not a fresh retrieval of every authority.
+- All tracked link objects are hashed as link-target bytes without dereferencing;
+  canonical record source intake remains regular-file-only and uses the separately
+  reviewed AGENTS.md context projection.
+notes:
+- The whole local owner and retained source rows were read. Full-owner scientific
+  verification remains false; scientific_review denotes the bounded scientific interpretation
+  in this report.
+- Original owner/source reading, two-encoding computation, primary-text reading, HTTP
+  retrieval and later metadata reading retain separate clocks. Official intake separately
+  computed SMILES facts.
+- No scientific record, maintained input or native curation status was changed. Any
+  findings and actions record ROOT-adopted proposed work; exact-source limitations
+  and unavailable checks remain explicit.
+```
