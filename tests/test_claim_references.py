@@ -95,7 +95,10 @@ def test_missing_and_duplicate_targets_rejected(inputs, table, count):
         seed.build_records(inputs)
 
 
-@pytest.mark.parametrize("change", ["unnamed", "withheld", "unemitted", "structure"])
+@pytest.mark.parametrize(
+    "change",
+    ["unnamed", "withheld", "unemitted", "structure", "structure_unacknowledged_chebi"],
+)
 def test_decision_cannot_silently_disappear_or_cross_identity(inputs, change, monkeypatch):
     row = inputs["mibig_compounds"][0]
     if change == "unnamed":
@@ -104,7 +107,7 @@ def test_decision_cannot_silently_disappear_or_cross_identity(inputs, change, mo
         inputs["taxon_non_organism"] = [{"taxon_id": row["taxon_id"], "reason": "test"}]
     elif change == "unemitted":
         row["standard_inchi_key"] = ""
-    else:
+    elif change == "structure":
         original = seed.apply_structure_corrections
 
         def corrected(*args):
@@ -112,9 +115,52 @@ def test_decision_cannot_silently_disappear_or_cross_identity(inputs, change, mo
                      "structure_correction_reference": "PMID:1"} for r in original(*args)]
 
         monkeypatch.setattr(seed, "apply_structure_corrections", corrected)
+    else:
+        original = seed.apply_structure_corrections
+
+        def corrected(*args):
+            return [{**r, "structure_correction_note": "test",
+                     "structure_correction_reference": "PMID:1",
+                     "structure_source_id": "CHEBI:18208"} for r in original(*args)]
+
+        monkeypatch.setattr(seed, "apply_structure_corrections", corrected)
     inputs["mibig_claim_references"][0]["expected_source_row_sha256"] = row_digest(row)
     with pytest.raises(ValueError):
         seed.build_records(inputs)
+
+
+def test_structure_corrected_row_accepted_when_rationale_names_structure_source_id(
+    inputs, monkeypatch
+):
+    original = seed.apply_structure_corrections
+
+    def corrected(*args):
+        return [
+            {
+                **r,
+                "structure_correction_note": "Structure replaced with CHEBI:18208.",
+                "structure_correction_reference": "PMID:1",
+                "structure_source_id": "CHEBI:18208",
+            }
+            for r in original(*args)
+        ]
+
+    monkeypatch.setattr(seed, "apply_structure_corrections", corrected)
+    inputs["mibig_claim_references"][0]["rationale"] = (
+        f"{inputs['mibig_claim_references'][0]['rationale']} "
+        "Reviewed alongside CHEBI:18208 structure replacement."
+    )
+    doc, = seed.build_records(inputs)
+    for field in ("producer_organisms", "biosynthetic_gene_clusters"):
+        evidence = doc[field][0]["evidence"]
+        assert len(evidence) == 3
+        assert evidence[0]["reference"] == "PMID:26452553"
+        assert evidence[0]["evidence_type"] == "DATABASE_ASSERTION"
+        assert evidence[1]["reference"] == "PMID:1"
+        assert evidence[1]["evidence_type"] == "CURATOR_INFERENCE"
+        assert evidence[1]["notes"] == "Structure replaced with CHEBI:18208."
+        assert evidence[2]["evidence_type"] == "CURATOR_INFERENCE"
+        assert "CHEBI:18208" in evidence[2]["notes"]
 
 
 def test_no_decisions_preserves_ordinary_source_routing(inputs):

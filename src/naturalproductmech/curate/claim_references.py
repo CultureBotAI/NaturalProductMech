@@ -53,7 +53,10 @@ def correct_claim_reference(claim: dict, row: dict, decision: dict, *, field: st
     """Keep database evidence distinct from the curator's citation-routing decision."""
     if field not in {"producer_reference", "locus_reference"}:
         raise ValueError("unsupported claim reference field")
-    if row.get("structure_correction_note"):
+    if row.get("structure_correction_note") and (
+        not row.get("structure_source_id")
+        or row["structure_source_id"] not in decision["rationale"]
+    ):
         raise ValueError(f"{decision['source_id']}: claim references need review after structure correction")
     claim["evidence"][0] = {
         "reference": decision[field],

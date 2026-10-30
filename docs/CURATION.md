@@ -155,7 +155,9 @@ untouched row's `expected_source_row_sha256`, separate `producer_reference` and
 `curator`, ISO `date` and `rationale`. Each reference must be a stable DOI, PMID
 or HTTPS URL. Missing/duplicate rows, unknown fields, malformed attribution,
 source drift, a withheld producer or an unemitted owner stop seeding. A
-concurrent structure replacement requires separate adjudication and is rejected.
+concurrent structure replacement requires separate adjudication and is rejected
+unless `rationale` explicitly names the replacement target `structure_source_id`
+(`CHEBI:...`).
 
 Only the selected citation changes on the two claims. It remains
 `DATABASE_ASSERTION`; a separate `CURATOR_INFERENCE` explains the routing and

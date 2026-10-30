@@ -51,13 +51,13 @@ tasks:
     tests/test_structure_corrections.py and documentation in docs/CURATION.md.
 - task_id: naturalproductmech-infra-0003
   summary: Allow reviewed mibig_claim_references.tsv coexistence with structure corrections in claim_references.py when rationale names replacement structure_source_id
-  status: open
+  status: resolved
   issue_url: https://github.com/CultureBotAI/NaturalProductMech/issues/1047
   disposition: >-
-    Open for Cycle 3 Stage 6 (#1047): update correct_claim_reference in src/naturalproductmech/curate/claim_references.py
-    to permit structure-corrected rows when row["structure_source_id"] is explicitly named in decision["rationale"]
-    (matching producer_strains in scripts/seed_from_sources.py), with unit tests in tests/test_claim_references.py and
-    documentation in docs/CURATION.md.
+    Resolved in cycle 3 stage 6 (#1047): updated correct_claim_reference in src/naturalproductmech/curate/claim_references.py
+    to permit structure-corrected rows when row["structure_source_id"] is non-empty and explicitly named in decision["rationale"]
+    (matching producer_strains in scripts/seed_from_sources.py), added unit tests in tests/test_claim_references.py, and
+    documented the coexistence requirement in docs/CURATION.md.
 ```
 <!-- mech-infra-tasks:end -->
 
@@ -131,7 +131,7 @@ tasks:
 ### `naturalproductmech-infra-0003` — Allow reviewed `mibig_claim_references.tsv` coexistence with structure corrections in `claim_references.py` when `rationale` names replacement `structure_source_id`
 
 - **Origin**: `mech-goal-sequence-20261019`, cycle `3`, stage `5` (`resolve_review_findings`, `goal-10974`)
-- **Status**: `open` (pending Stage 6 implementation; tracked in https://github.com/CultureBotAI/NaturalProductMech/issues/1047)
+- **Status**: `resolved` (implemented and verified in cycle `3`, stage `6`; tracked in https://github.com/CultureBotAI/NaturalProductMech/issues/1047)
 - **Priority**: P2
 - **Dependencies**: `naturalproductmech-infra-0002` (resolved in #1015)
 - **Evidence paths**:
@@ -141,10 +141,17 @@ tasks:
   - `curation/mibig_producer_strains.tsv` (`BGC0000404:1`, `BGC0000405:3`, `BGC0000898:1`)
   - `tests/test_claim_references.py`
   - `docs/CURATION.md`
+  - `reviews/workflow/mech-goal-sequence-20261019/cycle-000003/stage-06/revision-0001/infra_snapshot.md`
+  - `reviews/workflow/mech-goal-sequence-20261019/cycle-000003/stage-06/revision-0001/implementation_plan.md`
+  - `reviews/workflow/mech-goal-sequence-20261019/cycle-000003/stage-06/revision-0001/validation.md`
   - `data/natural_products/amino_acids_and_peptides/benzylpenicillin-sodium.yaml`
 - **Observation**:
   1. During Cycle 3 Stage 5 triage of carried-forward finding `F-PEN-003` (`G-PEN-003`), we verified why `BGC0000404:1` and `BGC0000405:3` (`benzylpenicillin-sodium.yaml`, `CHEBI:51765`) cannot yet receive a `REPLACE_SHARED_WITH_CHEBI` structure replacement onto `CHEBI:18208` even after `naturalproductmech-infra-0002` (#1015) added `REPLACE_SHARED_WITH_CHEBI` to `src/naturalproductmech/curate/structure_corrections.py`.
   2. In `scripts/seed_from_sources.py` (lines 1119-1124), `producer_strains` permits a structure-corrected row when `row.get("structure_source_id")` is explicitly named in `qualification["rationale"]` (as used by `BGC0000898:1` naming `CHEBI:32540`). By contrast, `correct_claim_reference` in `src/naturalproductmech/curate/claim_references.py` (lines 56-57) unconditionally raises `ValueError(f"{decision['source_id']}: claim references need review after structure correction")` whenever `row.get("structure_correction_note")` is present. Because `BGC0000404:1` and `BGC0000405:3` have active `curation/mibig_claim_references.tsv` entries (#1023), any structure replacement on those rows is rejected even when the claim-reference rationale explicitly acknowledges the replacement `CHEBI:...` target.
 - **Desired outcome**:
   1. Update `correct_claim_reference` in `src/naturalproductmech/curate/claim_references.py` (with unit tests in `tests/test_claim_references.py` and documentation in `docs/CURATION.md`) so a row with `structure_correction_note` is permitted when `row.get("structure_source_id")` is non-empty and explicitly named in `decision["rationale"]`, and rejected otherwise.
+- **Resolution & Disposition**:
+  1. Updated `correct_claim_reference` in `src/naturalproductmech/curate/claim_references.py` so a structure-corrected row (`row.get("structure_correction_note")`) is permitted when `row.get("structure_source_id")` is non-empty and explicitly named in `decision["rationale"]` (matching `producer_strains` in `scripts/seed_from_sources.py`), and rejected with `ValueError` when `structure_source_id` is absent or omitted from `decision["rationale"]`.
+  2. Added unit tests in `tests/test_claim_references.py` verifying rejection when `structure_source_id` is absent or unacknowledged in `rationale` and acceptance (retaining both the structure-correction and citation-routing `CURATOR_INFERENCE` evidence items on `producer_organisms` and `biosynthetic_gene_clusters`) when `structure_source_id` is named in `rationale`.
+  3. Documented the coexistence requirement in `docs/CURATION.md` under `## MIBiG claim-specific reference corrections`.
 
