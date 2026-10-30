@@ -66,7 +66,7 @@ field coverage (records carrying at least one item):
   producer_organisms                   3077
   occurrences                          2341
   biosynthetic_gene_clusters           3116
-  biosynthetic_pathway                  185
+  biosynthetic_pathway                  196
   bioactivities                         174
   bioactivity_summary                   307
   molecular_targets                      15

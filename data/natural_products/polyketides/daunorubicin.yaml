@@ -618,6 +618,23 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-2e75a3117d
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:Q06528
+  enzyme_label: S. peucetius DnrK sequence reference
+  product: CHEBI:41977
+  proposed: true
+  notes: MITE0000492-reported carminomycin 4-O-methyltransferase reaction converting
+    carminomycin to daunorubicin (CHEBI:41977) by Streptomyces peucetius DnrK (UniProtKB:Q06528,
+    AAA26712.1 / AAA99001.1 on L13453.1 / L40425.1, BGC0000218). Synchronizes biosynthetic_pathway
+    with the existing MITE-backed causal_graph without upgrading producer or locus
+    evidence grades.
+  evidence:
+  - reference: DOI:10.1371/journal.pone.0049385
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: possess ssDNA-dependent ATPase and DNA helicase activities in vitro
+    notes: Q8I3W6 resolves in UniProtKB to PF3D7_0514100 from P. falciparum isolate
+      3D7 and annotates a UvrD-like helicase ATP-binding domain over amino acids 35-727.
 causal_graphs:
 - graph_id: daunorubicin-pfudn-inhibition
   scope: BIOACTIVITY
@@ -855,3 +872,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-30T08:59:04Z'
+  curator: antigravity
+  action: RECORD_CURATED
+  changes: Synchronized biosynthetic_pathway with the existing MITE-backed causal_graph
+    for DnrK (UniProtKB:Q06528, MITE0000492) on daunorubicin while preserving existing
+    causal_graphs and SEEDED status.
+  llm_assisted: true

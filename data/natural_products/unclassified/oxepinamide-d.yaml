@@ -88,6 +88,46 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:A0A0C1BVY7
+  enzyme_label: OpaC2 native reference from A. ustus 3.3904
+  product: naturalproductmech:mibig-d43cae12e4
+  proposed: true
+  notes: MITE0000310-reported hydroxylation of 15-deoxy-oxepinamide J to oxepinamide
+    D (naturalproductmech:mibig-d43cae12e4) by Aspergillus ustus 3.3904 OpaC2 (UniProtKB:A0A0C1BVY7,
+    KIA75686.1, AU33904_09299 on JOMC01000058.1, BGC0002323). Synchronizes biosynthetic_pathway
+    with the existing MITE-backed causal_graph without upgrading producer or locus
+    evidence grades.
+  evidence:
+  - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000310.json
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-07'
+    notes: MITE0000310 version 1, active, at the pinned commit. The example assigns
+      OpaC2 hydroxylation of a 1H-oxepin substrate to yield oxepinamide D. Its heterologous-expression,
+      in-vitro and knockout evidence codes are not independently inspected experimental
+      data; the cited primary paper was inaccessible. No assay condition, mutant phenotype
+      or experimental construct is adopted.
+    snippet: stereospecific hydroxylation at the C-3 position
+  - reference: https://www.uniprot.org/uniprotkb/A0A0C1BVY7
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-07'
+    notes: Unreviewed TrEMBL entry 29, sequence 1; 459 residues, HK57_00501, taxon
+      40382. It has no FUNCTION annotation and lists protein existence as inferred
+      from homology. This entry supports sequence identity only; MITE supplies the
+      OpaC2 name and specific hydroxylation attribution.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/KIA75686.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-07'
+    notes: Full conceptual translation and independent coded_by inspected; HK57_00501/AUSM36_001,
+      A. ustus strain 3.3904.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/JOMC01000058.1
+    evidence_type: CURATOR_INFERENCE
+    retrieved_on: '2026-10-07'
+    notes: 'Complete 1380-nt, five-exon, plus-strand CDS/table 1: join(12055..12220,12271..12857,12919..13262,13312..13538,13598..13653).
+      Full translation equals independent GenPept KIA75686.1 and UniProt A0A0C1BVY7,
+      459 residues. This verifies a native genomic reference, not a historical transcript,
+      experimental construct or assay stock.'
 causal_graphs:
 - graph_id: oxepinamide-d-opac2-database-hydroxylation
   scope: BIOSYNTHESIS
@@ -209,4 +249,11 @@ curation_history:
     identity, predicted residue or physiological-complex claim adopted. Preserved
     all source fields, grades, structure, A. puniceus occurrences, SEEDED status and
     prior history. Not full-record sign-off.'
+  llm_assisted: true
+- timestamp: '2026-10-30T08:59:04Z'
+  curator: antigravity
+  action: RECORD_CURATED
+  changes: Synchronized biosynthetic_pathway with the existing MITE-backed causal_graph
+    for OpaC2 (UniProtKB:A0A0C1BVY7, MITE0000310) on oxepinamide D while preserving
+    existing causal_graphs and SEEDED status.
   llm_assisted: true

@@ -79,6 +79,121 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:B8NJH0
+  enzyme_label: LepF short-chain dehydrogenase/reductase
+  notes: Primary-literature and MITE0000294-supported reduction of the ketonic Knoevenagel
+    condensation product to the alcohol precursor for LepI by Aspergillus flavus NRRL
+    3357 LepF (UniProtKB:B8NJH0, EED49869.1, AFLA_066870 on BGC0001445.5, DOI:10.1038/nature23882).
+    Synchronizes biosynthetic_pathway with the existing causal_graph without upgrading
+    producer or locus evidence grades.
+  evidence:
+  - reference: DOI:10.1038/nature23882
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Further addition of the P450 lepD yielded the final product 1, thereby
+      completing heterologous pathway reconstitution.
+    notes: Ohashi et al. heterologously reconstituted leporin B biosynthesis in Aspergillus
+      nidulans; after LepA/LepG/LepH/LepF/LepI formed leporin C as the desired pyran
+      product, further addition of LepD yielded leporin B.
+  - reference: https://mite.lisc.univie.ac.at/repository/MITE0000321
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: MITE0000321 is active and links LepD to UniProtKB:B8NJG8, GenPept EED49867.1,
+      MIBiG BGC0001445 and the N-hydroxylation of leporin C to leporin B.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0001445.5/BGC0001445.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: MIBiG BGC0001445.5 places EED49867.1 in the active Aspergillus flavus NRRL3357
+      leporin B biosynthetic gene cluster as the AFLA_066890 cytochrome P450 locus.
+  - reference: https://www.uniprot.org/uniprotkb/B8NJG8
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: Reviewed UniProtKB:B8NJG8 is the 508 aa Aspergillus flavus NRRL3357 cytochrome
+      P450 monooxygenase LepD entry and cross-references EMBL EQ963479 protein EED49867.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/EED49867.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: NCBI GenPept EED49867.1 is the Aspergillus flavus NRRL3357 cytochrome P450
+      protein encoded by AFLA_066890 on EQ963479.1.
+- step_number: 2
+  enzyme_id: UniProtKB:B8NJH3
+  enzyme_label: LepI SAM-dependent pericyclase
+  notes: Primary-literature and MITE0000316-supported stereoselective dehydration
+    and intramolecular hetero-Diels-Alder / retro-Claisen pericyclic conversion of
+    the LepF alcohol product to leporin C by Aspergillus flavus NRRL 3357 LepI (UniProtKB:B8NJH3,
+    EED49872.1, AFLA_066900 on BGC0001445.5, DOI:10.1038/nature23882). Synchronizes
+    biosynthetic_pathway with the existing causal_graph without upgrading producer
+    or locus evidence grades.
+  evidence:
+  - reference: DOI:10.1038/nature23882
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: which requires stereoselective dehydration to yield (E)-5 and subsequent
+      HDA reaction to 2
+    notes: Ohashi et al. heterologously expressed lepI in Aspergillus nidulans and
+      purified LepI from Escherichia coli; both assays supported LepI stereoselectively
+      dehydrating alcohol 4 and controlling the pericyclic reactions that produce
+      leporin C.
+  - reference: https://mite.lisc.univie.ac.at/repository/MITE0000316
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: MITE0000316 is active and links LepI to UniProtKB:B8NJH3, GenPept EED49872.1,
+      MIBiG BGC0001445, stereoselective dehydration and a hetero-Diels-Alder reaction.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0001445.5/BGC0001445.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: MIBiG BGC0001445.5 places EED49872.1 in the active Aspergillus flavus NRRL3357
+      leporin B biosynthetic gene cluster as the AFLA_066940 O-methyltransferase locus.
+  - reference: https://www.uniprot.org/uniprotkb/B8NJH3
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: Reviewed UniProtKB:B8NJH3 is the 387 aa Aspergillus flavus NRRL3357 O-methyltransferase
+      LepI entry and cross-references EMBL EQ963479 protein EED49872.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/EED49872.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: NCBI GenPept EED49872.1 is the Aspergillus flavus NRRL3357 putative O-methyltransferase
+      encoded by AFLA_066940 on EQ963479.1.
+- step_number: 3
+  enzyme_id: UniProtKB:B8NJG8
+  enzyme_label: LepD cytochrome P450 monooxygenase
+  product: naturalproductmech:mibig-6752ae6cca
+  notes: Primary-literature and MITE0000321-supported N-hydroxylation of leporin C
+    to leporin B (naturalproductmech:mibig-6752ae6cca) by Aspergillus flavus NRRL
+    3357 LepD (UniProtKB:B8NJG8, EED49867.1, AFLA_066850 on BGC0001445.5, DOI:10.1038/nature23882).
+    Synchronizes biosynthetic_pathway with the existing causal_graph without upgrading
+    producer or locus evidence grades.
+  evidence:
+  - reference: DOI:10.1038/nature23882
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: assayed in the presence of 3 and NADPH, which yielded a single product
+      4 corresponding to the reduced compound
+    notes: Ohashi et al. heterologously coexpressed LepF with LepA, LepG and LepH
+      in Aspergillus nidulans and assayed recombinant LepF from Saccharomyces cerevisiae
+      in vitro with ketone 3 plus NADPH; both experiments support LepF reducing ketone
+      3 to alcohol 4.
+  - reference: https://mite.lisc.univie.ac.at/repository/MITE0000294
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-02'
+    notes: MITE0000294 is active and links LepF to UniProtKB:B8NJH0, GenPept EED49869.1,
+      MIBiG BGC0001445, NADP and reduction of a ketone intermediate to a secondary
+      alcohol in the leporin biosynthetic pathway.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0001445.5/BGC0001445.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-02'
+    notes: MIBiG BGC0001445.5 places EED49869.1 in the active Aspergillus flavus NRRL3357
+      leporin B biosynthetic gene cluster as the AFLA_066910 conserved hypothetical
+      protein locus.
+  - reference: https://www.uniprot.org/uniprotkb/B8NJH0
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-02'
+    notes: Reviewed UniProtKB:B8NJH0 is the 361 aa Aspergillus flavus NRRL3357 oxidoreductase
+      LepF entry and cross-references EMBL EQ963479 protein EED49869.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/EED49869.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-02'
+    notes: NCBI GenPept EED49869.1 is the Aspergillus flavus NRRL3357 conserved hypothetical
+      protein encoded by AFLA_066910 on EQ963479.1.
 causal_graphs:
 - graph_id: leporin-b-lepd-n-hydroxylation
   scope: BIOSYNTHESIS
@@ -452,4 +567,12 @@ curation_history:
   changes: Added a BIOSYNTHESIS causal graph for Aspergillus flavus LepF reduction
     in leporin B biosynthesis; grounded LepF to UniProtKB:B8NJH0 and left ketone 3
     and alcohol 4 ungrounded because exact local corpus records are absent.
+  llm_assisted: true
+- timestamp: '2026-10-30T08:59:04Z'
+  curator: antigravity
+  action: RECORD_CURATED
+  changes: Synchronized biosynthetic_pathway with the existing primary-literature
+    and MITE-backed causal_graphs for LepF (UniProtKB:B8NJH0, MITE0000294), LepI (UniProtKB:B8NJH3,
+    MITE0000316), and LepD (UniProtKB:B8NJG8, MITE0000321) on leporin B while preserving
+    existing causal_graphs and SEEDED status.
   llm_assisted: true
