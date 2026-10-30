@@ -714,7 +714,7 @@ causal_graphs:
       evidence_type: DATABASE_ASSERTION
       notes: UniParc UPI0001895A6C (1283 aa) archives historical EMBL ACK77757.1 (Ala385
         version 1) and links inactive UniProtKB/TrEMBL B8Y4G4 (Kitasatospora aureofaciens,
-        taxon 1894, gene sa8), distinct from revised ACK77757.2 (Glu385, UPI0001DE5E11).
+        taxon 1894, gene sa8), distinct from revised ACK77757.2 (Thr385, UPI0001DE5E11).
       retrieved_on: '2026-10-30'
   - subject: bpsa_deletion
     predicate: abolishes reported blue-pigment production of
@@ -983,10 +983,11 @@ curation_history:
   changes: Added sequence-identical UniProtKB:A0ABR4SFP3 protein example node (UPI0001AEDEA9)
     for J1074 XNR_5716 PPTase (AGI92022.1) in indigoidine-j1074-pptase-reporter.
   llm_assisted: true
-- timestamp: '2026-10-30T11:14:36Z'
+- timestamp: '2026-10-30T11:59:12Z'
   curator: antigravity
   action: ADDED_UNIPROT_PROTEIN_EXAMPLES
   changes: Added verified UniParc UPI0001895A6C database assertion for historical
-    1283-aa Ala385 BpsA (NCBIProtein:ACK77757.1, inactive UniProtKB/TrEMBL B8Y4G4)
-    in indigoidine-ccm3239-bpsa-interventions.
+    1283-aa Ala385 BpsA (NCBIProtein:ACK77757.1, inactive UniProtKB/TrEMBL B8Y4G4,
+    distinct from revised Thr385 ACK77757.2 / UPI0001DE5E11) in indigoidine-ccm3239-bpsa-interventions
+    (#1055).
   llm_assisted: true

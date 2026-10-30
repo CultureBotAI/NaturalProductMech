@@ -274,7 +274,8 @@ causal_graphs:
     numbering matches native parent QLD23489.2. No mutant-specific accession is assigned
     here; these constructs are not equated to the native sequence. The R278A and R279A
     construct identities need review because of a Table S1 primer-label discrepancy;
-    their edges preserve reported results.
+    their edges preserve reported results. UniParc UPI0015DCE6B0 (329 aa) links active
+    EMBL QLD23489.2 with zero active or inactive UniProtKB entries.
   nodes:
   - node_id: h87a
     label: Reported EvdS6 H87A construct
@@ -493,6 +494,12 @@ causal_graphs:
       retrieved_on: '2026-10-17'
       notes: CP058322.1 HXZ27_04045 / QLD23489.2 is the 329-aa native EvdS6 UDP-D-glucuronic
         acid decarboxylase/reductase parent translation.
+    - reference: https://rest.uniprot.org/uniparc/UPI0015DCE6B0.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI0015DCE6B0 (329 aa) links active EMBL QLD23489.2 (Micromonospora
+        carbonacea var. aurantiaca, taxon 573964, EvdS6) with zero active or inactive
+        UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: evds6_parent
     predicate: is the wild-type parent of
     object: e128a
@@ -509,6 +516,12 @@ causal_graphs:
       retrieved_on: '2026-10-17'
       notes: CP058322.1 HXZ27_04045 / QLD23489.2 is the 329-aa native EvdS6 UDP-D-glucuronic
         acid decarboxylase/reductase parent translation.
+    - reference: https://rest.uniprot.org/uniparc/UPI0015DCE6B0.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI0015DCE6B0 (329 aa) links active EMBL QLD23489.2 (Micromonospora
+        carbonacea var. aurantiaca, taxon 573964, EvdS6) with zero active or inactive
+        UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: evds6_parent
     predicate: is the wild-type parent of
     object: n179a
@@ -525,6 +538,12 @@ causal_graphs:
       retrieved_on: '2026-10-17'
       notes: CP058322.1 HXZ27_04045 / QLD23489.2 is the 329-aa native EvdS6 UDP-D-glucuronic
         acid decarboxylase/reductase parent translation.
+    - reference: https://rest.uniprot.org/uniparc/UPI0015DCE6B0.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI0015DCE6B0 (329 aa) links active EMBL QLD23489.2 (Micromonospora
+        carbonacea var. aurantiaca, taxon 573964, EvdS6) with zero active or inactive
+        UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: evds6_parent
     predicate: is the wild-type parent of
     object: r278a
@@ -541,6 +560,12 @@ causal_graphs:
       retrieved_on: '2026-10-17'
       notes: CP058322.1 HXZ27_04045 / QLD23489.2 is the 329-aa native EvdS6 UDP-D-glucuronic
         acid decarboxylase/reductase parent translation.
+    - reference: https://rest.uniprot.org/uniparc/UPI0015DCE6B0.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI0015DCE6B0 (329 aa) links active EMBL QLD23489.2 (Micromonospora
+        carbonacea var. aurantiaca, taxon 573964, EvdS6) with zero active or inactive
+        UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: evds6_parent
     predicate: is the wild-type parent of
     object: r279a
@@ -557,6 +582,12 @@ causal_graphs:
       retrieved_on: '2026-10-17'
       notes: CP058322.1 HXZ27_04045 / QLD23489.2 is the 329-aa native EvdS6 UDP-D-glucuronic
         acid decarboxylase/reductase parent translation.
+    - reference: https://rest.uniprot.org/uniparc/UPI0015DCE6B0.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI0015DCE6B0 (329 aa) links active EMBL QLD23489.2 (Micromonospora
+        carbonacea var. aurantiaca, taxon 573964, EvdS6) with zero active or inactive
+        UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
 - graph_id: everninomicin-d-oxygenase-deletion-readouts
   scope: BIOSYNTHESIS
   description: Native gene-disruption evidence for EvdO1 and EvdMO1 in everninomicin
@@ -975,10 +1006,11 @@ curation_history:
     anchored the six EvdS6 alanine variants to native parent NCBIProtein:QLD23489.2
     (CP058322.1 HXZ27_04045, 329 aa).
   llm_assisted: true
-- timestamp: '2026-10-30T11:14:36Z'
+- timestamp: '2026-10-30T11:59:12Z'
   curator: antigravity
   action: ADDED_UNIPROT_PROTEIN_EXAMPLES
-  changes: Added verified UniParc UPI0015DCED91 and UPI0015DCE6B0 database assertions
+  changes: 'Added verified UniParc UPI0015DCED91 and UPI0015DCE6B0 database assertions
     and audit notes for EvdMO1 (QLD28329.2, inactive UniProtKB/TrEMBL A0A7H8XVJ8)
-    and EvdS6 (QLD23489.2, zero UniProtKB entries).
+    and EvdS6 (QLD23489.2, zero UniProtKB entries across all six evds6_parent wild-type
+    parent edges, #1056).'
   llm_assisted: true
