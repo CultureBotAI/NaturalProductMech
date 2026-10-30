@@ -107,6 +107,11 @@ def test_cannot_qualify_an_unnamed_producer(source, qualification):
         ],
         "antigravity",
     ),
+    ("polyketides/youssoufene-a1", [("mibig:BGC0002547", "OUC6819", "BGC_CHARACTERIZED")], "antigravity"),
+    ("unclassified/youssoufene-b1", [("mibig:BGC0002547", "OUC6819", "BGC_CHARACTERIZED")], "antigravity"),
+    ("unclassified/youssoufene-b2", [("mibig:BGC0002547", "OUC6819", "BGC_CHARACTERIZED")], "antigravity"),
+    ("unclassified/youssoufene-b3", [("mibig:BGC0002547", "OUC6819", "BGC_CHARACTERIZED")], "antigravity"),
+    ("unclassified/youssoufene-b4", [("mibig:BGC0002547", "OUC6819", "BGC_CHARACTERIZED")], "antigravity"),
 ])
 def test_curated_strain_context_keeps_database_assertions(relpath, expected, curator_token):
     root = Path(__file__).resolve().parents[1]

@@ -51,6 +51,18 @@ producer_organisms:
   - reference: PMID:31891272
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0002547 entry version 2; citation taken from the entry level
+  - reference: PMID:31891272
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Strain context: OUC6819. Li et al. 2020 (PMID:31891272, DOI:10.1021/acs.orglett.9b04559),
+      Liu et al. 2021 (PMID:33155752, DOI:10.1002/anie.202007777), and GenBank MN844187.1
+      explicitly identify Streptomyces youssoufiensis strain OUC6819 as the sequenced
+      and genetically characterized ysf cluster host for BGC0002547:2 (youssoufene
+      B1). Preserve NCBITaxon:654447 and existing BGC_CHARACTERIZED/CLUSTER_DEMONSTRATED
+      grades; separate BGC0002510 deposit metadata remains tracked in #1046. See issue
+      #1044. Taxon identity and evidence grade are unchanged; this is not a species-wide
+      experiment. MIBiG source row BGC0002547:2; SHA256 acd26c9ce0f501c27e8a2d0097dce5d2fbee8400976c822752702b3b9c486417.
+      Curator: antigravity; date: 2026-10-30.'
+  strain: OUC6819
 - taxon_id: NCBITaxon:1931
   taxon_label: Streptomyces sp.
   evidence_basis: SOURCE_ASSERTION
@@ -136,7 +148,7 @@ biosynthetic_pathway:
   - reference: DOI:10.1002/anie.202007777
     evidence_type: PRIMARY_EXPERIMENT
     snippet: YsfB/C, YsfD/E, and YsfJ/K
-    notes: Deng et al. used in vivo gene inactivation, in vitro reconstitution, and
+    notes: Liu et al. used in vivo gene inactivation, in vitro reconstitution, and
       intracellular tagged-carrier-protein tracking to assign the Streptomyces youssoufiensis
       OUC6819 YsfB/YsfC, YsfD/YsfE, and YsfJ/YsfK ketosynthase/chain-length-factor
       complexes to modular assembly of the youssoufene skeleton.
@@ -196,7 +208,7 @@ biosynthetic_pathway:
   - reference: DOI:10.1002/anie.202007777
     evidence_type: PRIMARY_EXPERIMENT
     snippet: YsfB/C, YsfD/E, and YsfJ/K
-    notes: Deng et al. used in vivo gene inactivation, in vitro reconstitution, and
+    notes: Liu et al. used in vivo gene inactivation, in vitro reconstitution, and
       intracellular tagged-carrier-protein tracking to assign the Streptomyces youssoufiensis
       OUC6819 YsfB/YsfC, YsfD/YsfE, and YsfJ/YsfK ketosynthase/chain-length-factor
       complexes to modular assembly of the youssoufene skeleton.
@@ -256,7 +268,7 @@ biosynthetic_pathway:
   - reference: DOI:10.1002/anie.202007777
     evidence_type: PRIMARY_EXPERIMENT
     snippet: isomerase-dependent ACP-tethered polyunsaturated chain elongation process
-    notes: Deng et al. used the native Ysf system to connect the OUC6819 isomerase
+    notes: Liu et al. used the native Ysf system to connect the OUC6819 isomerase
       step with the ACP-tethered polyunsaturated-chain elongation process in youssoufene
       biosynthesis.
   - reference: https://mibig.secondarymetabolites.org/repository/BGC0002547.2/index.html
@@ -300,7 +312,7 @@ biosynthetic_pathway:
   - reference: DOI:10.1002/anie.202007777
     evidence_type: PRIMARY_EXPERIMENT
     snippet: YsfB/C, YsfD/E, and YsfJ/K
-    notes: Deng et al. used in vivo gene inactivation, in vitro reconstitution, and
+    notes: Liu et al. used in vivo gene inactivation, in vitro reconstitution, and
       intracellular tagged-carrier-protein tracking to assign the Streptomyces youssoufiensis
       OUC6819 YsfB/YsfC, YsfD/YsfE, and YsfJ/YsfK ketosynthase/chain-length-factor
       complexes to modular assembly of the youssoufene skeleton.
@@ -426,9 +438,9 @@ causal_graphs:
     - reference: DOI:10.1002/anie.202007777
       evidence_type: PRIMARY_EXPERIMENT
       snippet: YsfB/C, YsfD/E, and YsfJ/K
-      notes: Deng et al. used in vivo gene inactivation, in vitro reconstitution,
-        and intracellular tagged-carrier-protein tracking to assign the Streptomyces
-        youssoufiensis OUC6819 YsfB/YsfC, YsfD/YsfE, and YsfJ/YsfK ketosynthase/chain-length-factor
+      notes: Liu et al. used in vivo gene inactivation, in vitro reconstitution, and
+        intracellular tagged-carrier-protein tracking to assign the Streptomyces youssoufiensis
+        OUC6819 YsfB/YsfC, YsfD/YsfE, and YsfJ/YsfK ketosynthase/chain-length-factor
         complexes to modular assembly of the youssoufene skeleton.
     - reference: https://mibig.secondarymetabolites.org/repository/BGC0002547.2/index.html
       evidence_type: DATABASE_ASSERTION
@@ -484,9 +496,9 @@ causal_graphs:
     - reference: DOI:10.1002/anie.202007777
       evidence_type: PRIMARY_EXPERIMENT
       snippet: YsfB/C, YsfD/E, and YsfJ/K
-      notes: Deng et al. used in vivo gene inactivation, in vitro reconstitution,
-        and intracellular tagged-carrier-protein tracking to assign the Streptomyces
-        youssoufiensis OUC6819 YsfB/YsfC, YsfD/YsfE, and YsfJ/YsfK ketosynthase/chain-length-factor
+      notes: Liu et al. used in vivo gene inactivation, in vitro reconstitution, and
+        intracellular tagged-carrier-protein tracking to assign the Streptomyces youssoufiensis
+        OUC6819 YsfB/YsfC, YsfD/YsfE, and YsfJ/YsfK ketosynthase/chain-length-factor
         complexes to modular assembly of the youssoufene skeleton.
     - reference: https://mibig.secondarymetabolites.org/repository/BGC0002547.2/index.html
       evidence_type: DATABASE_ASSERTION
@@ -542,9 +554,9 @@ causal_graphs:
     - reference: DOI:10.1002/anie.202007777
       evidence_type: PRIMARY_EXPERIMENT
       snippet: YsfB/C, YsfD/E, and YsfJ/K
-      notes: Deng et al. used in vivo gene inactivation, in vitro reconstitution,
-        and intracellular tagged-carrier-protein tracking to assign the Streptomyces
-        youssoufiensis OUC6819 YsfB/YsfC, YsfD/YsfE, and YsfJ/YsfK ketosynthase/chain-length-factor
+      notes: Liu et al. used in vivo gene inactivation, in vitro reconstitution, and
+        intracellular tagged-carrier-protein tracking to assign the Streptomyces youssoufiensis
+        OUC6819 YsfB/YsfC, YsfD/YsfE, and YsfJ/YsfK ketosynthase/chain-length-factor
         complexes to modular assembly of the youssoufene skeleton.
     - reference: https://mibig.secondarymetabolites.org/repository/BGC0002547.2/index.html
       evidence_type: DATABASE_ASSERTION
@@ -600,9 +612,9 @@ causal_graphs:
     - reference: DOI:10.1002/anie.202007777
       evidence_type: PRIMARY_EXPERIMENT
       snippet: YsfB/C, YsfD/E, and YsfJ/K
-      notes: Deng et al. used in vivo gene inactivation, in vitro reconstitution,
-        and intracellular tagged-carrier-protein tracking to assign the Streptomyces
-        youssoufiensis OUC6819 YsfB/YsfC, YsfD/YsfE, and YsfJ/YsfK ketosynthase/chain-length-factor
+      notes: Liu et al. used in vivo gene inactivation, in vitro reconstitution, and
+        intracellular tagged-carrier-protein tracking to assign the Streptomyces youssoufiensis
+        OUC6819 YsfB/YsfC, YsfD/YsfE, and YsfJ/YsfK ketosynthase/chain-length-factor
         complexes to modular assembly of the youssoufene skeleton.
     - reference: https://mibig.secondarymetabolites.org/repository/BGC0002547.2/index.html
       evidence_type: DATABASE_ASSERTION
@@ -658,9 +670,9 @@ causal_graphs:
     - reference: DOI:10.1002/anie.202007777
       evidence_type: PRIMARY_EXPERIMENT
       snippet: YsfB/C, YsfD/E, and YsfJ/K
-      notes: Deng et al. used in vivo gene inactivation, in vitro reconstitution,
-        and intracellular tagged-carrier-protein tracking to assign the Streptomyces
-        youssoufiensis OUC6819 YsfB/YsfC, YsfD/YsfE, and YsfJ/YsfK ketosynthase/chain-length-factor
+      notes: Liu et al. used in vivo gene inactivation, in vitro reconstitution, and
+        intracellular tagged-carrier-protein tracking to assign the Streptomyces youssoufiensis
+        OUC6819 YsfB/YsfC, YsfD/YsfE, and YsfJ/YsfK ketosynthase/chain-length-factor
         complexes to modular assembly of the youssoufene skeleton.
     - reference: https://mibig.secondarymetabolites.org/repository/BGC0002547.2/index.html
       evidence_type: DATABASE_ASSERTION
@@ -716,9 +728,9 @@ causal_graphs:
     - reference: DOI:10.1002/anie.202007777
       evidence_type: PRIMARY_EXPERIMENT
       snippet: YsfB/C, YsfD/E, and YsfJ/K
-      notes: Deng et al. used in vivo gene inactivation, in vitro reconstitution,
-        and intracellular tagged-carrier-protein tracking to assign the Streptomyces
-        youssoufiensis OUC6819 YsfB/YsfC, YsfD/YsfE, and YsfJ/YsfK ketosynthase/chain-length-factor
+      notes: Liu et al. used in vivo gene inactivation, in vitro reconstitution, and
+        intracellular tagged-carrier-protein tracking to assign the Streptomyces youssoufiensis
+        OUC6819 YsfB/YsfC, YsfD/YsfE, and YsfJ/YsfK ketosynthase/chain-length-factor
         complexes to modular assembly of the youssoufene skeleton.
     - reference: https://mibig.secondarymetabolites.org/repository/BGC0002547.2/index.html
       evidence_type: DATABASE_ASSERTION
@@ -776,9 +788,9 @@ causal_graphs:
     - reference: DOI:10.1002/anie.202007777
       evidence_type: PRIMARY_EXPERIMENT
       snippet: YsfB/C, YsfD/E, and YsfJ/K
-      notes: Deng et al. used in vivo gene inactivation, in vitro reconstitution,
-        and intracellular tagged-carrier-protein tracking to assign the Streptomyces
-        youssoufiensis OUC6819 YsfB/YsfC, YsfD/YsfE, and YsfJ/YsfK ketosynthase/chain-length-factor
+      notes: Liu et al. used in vivo gene inactivation, in vitro reconstitution, and
+        intracellular tagged-carrier-protein tracking to assign the Streptomyces youssoufiensis
+        OUC6819 YsfB/YsfC, YsfD/YsfE, and YsfJ/YsfK ketosynthase/chain-length-factor
         complexes to modular assembly of the youssoufene skeleton.
     - reference: https://mibig.secondarymetabolites.org/repository/BGC0002547.2/index.html
       evidence_type: DATABASE_ASSERTION
@@ -836,9 +848,9 @@ causal_graphs:
     - reference: DOI:10.1002/anie.202007777
       evidence_type: PRIMARY_EXPERIMENT
       snippet: YsfB/C, YsfD/E, and YsfJ/K
-      notes: Deng et al. used in vivo gene inactivation, in vitro reconstitution,
-        and intracellular tagged-carrier-protein tracking to assign the Streptomyces
-        youssoufiensis OUC6819 YsfB/YsfC, YsfD/YsfE, and YsfJ/YsfK ketosynthase/chain-length-factor
+      notes: Liu et al. used in vivo gene inactivation, in vitro reconstitution, and
+        intracellular tagged-carrier-protein tracking to assign the Streptomyces youssoufiensis
+        OUC6819 YsfB/YsfC, YsfD/YsfE, and YsfJ/YsfK ketosynthase/chain-length-factor
         complexes to modular assembly of the youssoufene skeleton.
     - reference: https://mibig.secondarymetabolites.org/repository/BGC0002547.2/index.html
       evidence_type: DATABASE_ASSERTION
@@ -896,9 +908,9 @@ causal_graphs:
     - reference: DOI:10.1002/anie.202007777
       evidence_type: PRIMARY_EXPERIMENT
       snippet: YsfB/C, YsfD/E, and YsfJ/K
-      notes: Deng et al. used in vivo gene inactivation, in vitro reconstitution,
-        and intracellular tagged-carrier-protein tracking to assign the Streptomyces
-        youssoufiensis OUC6819 YsfB/YsfC, YsfD/YsfE, and YsfJ/YsfK ketosynthase/chain-length-factor
+      notes: Liu et al. used in vivo gene inactivation, in vitro reconstitution, and
+        intracellular tagged-carrier-protein tracking to assign the Streptomyces youssoufiensis
+        OUC6819 YsfB/YsfC, YsfD/YsfE, and YsfJ/YsfK ketosynthase/chain-length-factor
         complexes to modular assembly of the youssoufene skeleton.
     - reference: https://mibig.secondarymetabolites.org/repository/BGC0002547.2/index.html
       evidence_type: DATABASE_ASSERTION
@@ -955,7 +967,7 @@ causal_graphs:
     - reference: DOI:10.1002/anie.202007777
       evidence_type: PRIMARY_EXPERIMENT
       snippet: isomerase-dependent ACP-tethered polyunsaturated chain elongation process
-      notes: Deng et al. used the native Ysf system to connect the OUC6819 isomerase
+      notes: Liu et al. used the native Ysf system to connect the OUC6819 isomerase
         step with the ACP-tethered polyunsaturated-chain elongation process in youssoufene
         biosynthesis.
     - reference: https://mibig.secondarymetabolites.org/repository/BGC0002547.2/index.html
@@ -997,7 +1009,7 @@ causal_graphs:
     - reference: DOI:10.1002/anie.202007777
       evidence_type: PRIMARY_EXPERIMENT
       snippet: benzene ring closure happens right after the formation
-      notes: Deng et al. placed benzene-ring closure immediately after formation of
+      notes: Liu et al. placed benzene-ring closure immediately after formation of
         the ACP-tethered C18 polyene in the OUC6819 Ysf type II PKS system.
   - subject: benzene_ring_closure
     predicate: contributes to
@@ -1009,9 +1021,9 @@ causal_graphs:
     - reference: DOI:10.1002/anie.202007777
       evidence_type: PRIMARY_EXPERIMENT
       snippet: YsfB/C, YsfD/E, and YsfJ/K
-      notes: Deng et al. used in vivo gene inactivation, in vitro reconstitution,
-        and intracellular tagged-carrier-protein tracking to assign the Streptomyces
-        youssoufiensis OUC6819 YsfB/YsfC, YsfD/YsfE, and YsfJ/YsfK ketosynthase/chain-length-factor
+      notes: Liu et al. used in vivo gene inactivation, in vitro reconstitution, and
+        intracellular tagged-carrier-protein tracking to assign the Streptomyces youssoufiensis
+        OUC6819 YsfB/YsfC, YsfD/YsfE, and YsfJ/YsfK ketosynthase/chain-length-factor
         complexes to modular assembly of the youssoufene skeleton.
     - reference: DOI:10.1021/acs.orglett.9b04559
       evidence_type: PRIMARY_EXPERIMENT
@@ -1069,3 +1081,15 @@ curation_history:
     corresponding UniProtKB/TrEMBL entries are retired/obsolete while preserving UNGROUNDED
     status on the heterodimeric KS/CLF PROTEIN_COMPLEX nodes.
   llm_assisted: true
+- timestamp: '2026-10-30T04:44:02Z'
+  curator: antigravity
+  action: RECORD_CURATED
+  changes: Corrected misattributed author citation from Deng et al. to Liu et al.
+    across all 16 DOI:10.1002/anie.202007777 (PMID:33155752, Angew. Chem. Int. Ed.
+    2021;60(1):153-158) PRIMARY_EXPERIMENT evidence notes (4 biosynthetic_pathway
+    steps and 12 causal_graphs edges) in youssoufene B1 (#1045).
+  llm_assisted: true
+- timestamp: '2026-10-30T04:49:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
