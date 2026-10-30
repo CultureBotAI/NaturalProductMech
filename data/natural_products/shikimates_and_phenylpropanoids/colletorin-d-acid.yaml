@@ -98,9 +98,9 @@ biosynthetic_pathway:
   product: naturalproductmech:mibig-2459be6395
   proposed: true
   notes: MITE0000464-reported reduction of Colletorin D acid to Colletorin D by CTC3
-    (UniProtKB:A0A1B7YD80, OLN87973.1, ctcC on LT671574.1). Synchronizes biosynthetic_pathway
-    with the existing MITE-backed causal_graph without upgrading producer or locus
-    evidence grades.
+    (UniProtKB:A0A1B7YD80, OBR09778.1, CH63R_05470 on LTAN01000004.1, BGC0002812).
+    Synchronizes biosynthetic_pathway with the existing MITE-backed causal_graph without
+    upgrading producer or locus evidence grades.
   evidence:
   - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000464.json
     evidence_type: DATABASE_ASSERTION
@@ -257,7 +257,7 @@ curation_history:
     fields, BGC_CORRELATED/CLUSTER_CORRELATED grades, occurrences, stereochemistry,
     classifications, SEEDED status and prior history. Not full-record sign-off.
   llm_assisted: true
-- timestamp: '2026-10-30T08:59:03Z'
+- timestamp: '2026-10-30T09:42:16Z'
   curator: antigravity
   action: RECORD_CURATED
   changes: Synchronized biosynthetic_pathway with the existing MITE-backed causal_graph

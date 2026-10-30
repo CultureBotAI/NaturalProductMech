@@ -99,10 +99,11 @@ biosynthetic_pathway:
   enzyme_label: CitB native DK1622 reference
   product: naturalproductmech:mibig-5cf4c39e1c
   proposed: true
-  notes: MITE0000426-reported CitB cytochrome P450 and MxPEP prolyl endopeptidase
-    maturation of the CitA precursor peptide (NCBIProtein:QLH55578.1) to cittilin
-    B on MT597450.1 (BGC0002492). Synchronizes biosynthetic_pathway with the existing
-    MITE-backed causal_graph without upgrading producer or locus evidence grades.
+  notes: MITE0000426-reported CitB cytochrome P450 precursor crosslinking and MxPep
+    leader removal maturing the CitA precursor peptide (NCBIProtein:QLH55578.1) to
+    cittilin B on MN731368.1 (BGC0002043). Synchronizes biosynthetic_pathway with
+    the existing MITE-backed causal_graph without upgrading producer or locus evidence
+    grades.
   evidence:
   - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json
     evidence_type: DATABASE_ASSERTION
@@ -139,9 +140,9 @@ biosynthetic_pathway:
   product: naturalproductmech:mibig-9e3bd2912f
   proposed: true
   notes: MITE0000425-reported O-methylation of cittilin B to cittilin A by CitC (UniProtKB:Q1DEH3,
-    ABF87018.1 / QLH55580.1, MXAN_0184 on CP000113.1). Synchronizes biosynthetic_pathway
-    with the existing MITE-backed causal_graph without upgrading producer or locus
-    evidence grades.
+    QLH55580.1 on MN731368.1, BGC0002043; DK1622 locus MXAN_0682 / ABF85961.1 on CP000113.1).
+    Synchronizes biosynthetic_pathway with the existing MITE-backed causal_graph without
+    upgrading producer or locus evidence grades.
   evidence:
   - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000425.json
     evidence_type: DATABASE_ASSERTION
@@ -534,7 +535,7 @@ curation_history:
     The separate cittilin A owner and its CitC graph remain unchanged. No full-record
     sign-off.
   llm_assisted: true
-- timestamp: '2026-10-30T08:59:03Z'
+- timestamp: '2026-10-30T09:42:17Z'
   curator: antigravity
   action: RECORD_CURATED
   changes: Synchronized biosynthetic_pathway with the existing MITE-backed causal_graphs

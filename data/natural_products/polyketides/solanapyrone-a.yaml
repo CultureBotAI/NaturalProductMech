@@ -172,10 +172,10 @@ biosynthetic_pathway:
   substrate: CHEBI:63164
   product: CHEBI:38229
   proposed: true
-  notes: UniProtKB:D7UQ40 / MITE0000455 / RHEA:31683-reported oxidation and exo-selective
-    Diels-Alder cycloisomerization of prosolanapyrone II (CHEBI:63164) to solanapyrone
-    A (CHEBI:38229) by Sol5 (BAJ09785.1 on AB514562.1, BGC0000146). Synchronizes biosynthetic_pathway
-    with the existing database-backed causal_graph without upgrading producer or locus
+  notes: UniProtKB:D7UQ40 / MITE0000455 / RHEA:31683-reported cycloisomerization of
+    prosolanapyrone III (CHEBI:63164) to solanapyrone A (CHEBI:38229) by Alternaria
+    solani Sol5 (BAJ09785.1 on AB514562.1). Synchronizes biosynthetic_pathway with
+    the existing database-backed causal_graph without upgrading producer or locus
     evidence grades.
   evidence:
   - reference: https://www.uniprot.org/uniprotkb/D7UQ40
@@ -201,6 +201,15 @@ biosynthetic_pathway:
       Translation equals CDS annotation, independent BAJ09785.1 and current D7UQ40/all515aa.
       Independent coded_by DNA/exons and A.solani/taxon48100 match; no strain is invented.
       Genomic splicing is not an independent transcript assay.
+  - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000455.json
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-07'
+    notes: MITE0000455v1 active encodes an oxidation/cycloaddition example whose product
+      matches the A owner's full InChIKey AWQLNKJBXASXDU-SFDCBXKLSA-N and complete
+      stereo in the retained repository-helper/RDKit2026.03.5 screen. Its top-level
+      comment explicitly says functionality is unclear. Its knockout code remains
+      database-level; the cited primary paper was inaccessible. The example is not
+      independently verified primary catalysis.
 causal_graphs:
 - graph_id: solanapyrone-a-sol5-database-cycloisomerization
   scope: BIOSYNTHESIS
@@ -335,7 +344,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
-- timestamp: '2026-10-30T08:59:03Z'
+- timestamp: '2026-10-30T09:42:17Z'
   curator: antigravity
   action: RECORD_CURATED
   changes: Synchronized biosynthetic_pathway with the existing database-backed causal_graph

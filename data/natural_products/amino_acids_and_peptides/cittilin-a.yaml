@@ -90,9 +90,9 @@ biosynthetic_pathway:
   product: naturalproductmech:mibig-9e3bd2912f
   proposed: true
   notes: MITE0000425-reported O-methylation of cittilin B to cittilin A by CitC (UniProtKB:Q1DEH3,
-    ABF87018.1 / QLH55580.1, MXAN_0184 on CP000113.1). Synchronizes biosynthetic_pathway
-    with the existing MITE-backed causal_graph without upgrading producer or locus
-    evidence grades.
+    QLH55580.1 on MN731368.1, BGC0002043; DK1622 locus MXAN_0682 / ABF85961.1 on CP000113.1).
+    Synchronizes biosynthetic_pathway with the existing MITE-backed causal_graph without
+    upgrading producer or locus evidence grades.
   evidence:
   - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000425.json
     evidence_type: DATABASE_ASSERTION
@@ -267,7 +267,7 @@ curation_history:
     CLUSTER_DEMONSTRATED source grades, occurrences, SEEDED status and append-only
     history. The cittilin B owner is unchanged. Not full-record sign-off.'
   llm_assisted: true
-- timestamp: '2026-10-30T08:59:03Z'
+- timestamp: '2026-10-30T09:42:16Z'
   curator: antigravity
   action: RECORD_CURATED
   changes: Synchronized biosynthetic_pathway with the existing MITE-backed causal_graph

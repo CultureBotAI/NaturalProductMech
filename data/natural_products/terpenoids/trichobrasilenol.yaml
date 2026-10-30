@@ -95,8 +95,43 @@ biosynthetic_pathway:
   proposed: true
   notes: UniProtKB:A0A5S9I252 / RHEA:66644-reported conversion of (2E,6E)-farnesyl
     diphosphate to trichobrasilenol (CHEBI:167379) by Trichoderma atroviride FKI-3849
-    TaTC6 (BBK61014.1 on LC484924.1, BGC0002605). Synchronizes biosynthetic_pathway
-    with the existing database-backed causal_graph without upgrading producer or locus
+    TaTC6 (BBK61014.1 on LC484924.1). Synchronizes biosynthetic_pathway with the existing
+    database-backed causal_graph without upgrading producer or locus evidence grades.
+  evidence:
+  - reference: https://www.uniprot.org/uniprotkb/A0A5S9I252
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-09'
+    notes: Reviewed entry 21/sequence 1 assigns RHEA:66644 to tatc6 and explicitly
+      names CHEBI:167379 as product of FPP plus water; RHEA:66645 is annotated left-to-right.
+      The function narrative calls trichobrasilenol the main product and pristinol
+      a side product. These are adopted UniProt assertions, not independently inspected
+      experiments. PMID31418991 / DOI10.1002/anie.201907964 is the database-cited
+      bibliography; the primary paper and supplementary information were inaccessible
+      and were not inspected.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/BBK61014.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-09'
+    notes: Complete 386-aa native Trichoderma atroviride FKI-3849 reference, taxon63577,
+      gene tatc6. GenPept annotates trichobrasilenol synthesis from FPP; it does not
+      independently establish pristinol formation. Its in-vitro-assay code is a deposit
+      annotation, not a newly inspected assay.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/LC484924.1
+    evidence_type: CURATOR_INFERENCE
+    retrieved_on: '2026-10-09'
+    notes: 'Independent translation of the complete six-exon CDS join(1..242,308..434,497..515,569..1035,1100..1326,1385..1463),
+      codon_start1/default table1: 1161 nt including stop equals 386-aa annotated
+      translation, GenPept BBK61014.1 and UniProt A0A5S9I252. Independent GenPept
+      coded_by accession, coordinates and orientation agree; both deposits name FKI-3849/taxon63577.
+      This is native reference correspondence, not experimental construct equivalence.'
+- step_number: 2
+  enzyme_id: UniProtKB:P9WER1
+  enzyme_label: BraB native CBS140778 reference
+  substrate: CHEBI:167379
+  proposed: true
+  notes: MITE0000202-reported glycosylation of trichobrasilenol (CHEBI:167379) with
+    a putative UDP-GlcNAc donor to brasilane A by Annulohypoxylon truncatum CBS 140778
+    BraB (UniProtKB:P9WER1, QOE88884.1 on MT383109.1, BGC0002260). Synchronizes biosynthetic_pathway
+    with the existing MITE-backed causal_graph without upgrading producer or locus
     evidence grades.
   evidence:
   - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000202.json
@@ -131,42 +166,6 @@ biosynthetic_pathway:
       coded_by DNA/coordinates and CBS140778/taxon327061 agree. Complete17473-bp cluster
       retained; source metadata and target CDS inspected, not a whole-cluster functional
       audit. No historical assay-stock or heterologous construct sequence inferred.
-- step_number: 2
-  enzyme_id: UniProtKB:P9WER1
-  enzyme_label: BraB native CBS140778 reference
-  substrate: CHEBI:167379
-  proposed: true
-  notes: MITE0000202-reported beta-D-xylosylation of trichobrasilenol (CHEBI:167379)
-    to brasilane A by Annulohypoxylon truncatum CBS 140778 BraB (UniProtKB:P9WER1,
-    QOE88884.1 on MT383109.1, BGC0002290). Synchronizes biosynthetic_pathway with
-    the existing MITE-backed causal_graph without upgrading producer or locus evidence
-    grades.
-  evidence:
-  - reference: https://www.uniprot.org/uniprotkb/A0A5S9I252
-    evidence_type: DATABASE_ASSERTION
-    retrieved_on: '2026-10-09'
-    notes: Reviewed entry 21/sequence 1 assigns RHEA:66644 to tatc6 and explicitly
-      names CHEBI:167379 as product of FPP plus water; RHEA:66645 is annotated left-to-right.
-      The function narrative calls trichobrasilenol the main product and pristinol
-      a side product. These are adopted UniProt assertions, not independently inspected
-      experiments. PMID31418991 / DOI10.1002/anie.201907964 is the database-cited
-      bibliography; the primary paper and supplementary information were inaccessible
-      and were not inspected.
-  - reference: https://www.ncbi.nlm.nih.gov/protein/BBK61014.1
-    evidence_type: DATABASE_ASSERTION
-    retrieved_on: '2026-10-09'
-    notes: Complete 386-aa native Trichoderma atroviride FKI-3849 reference, taxon63577,
-      gene tatc6. GenPept annotates trichobrasilenol synthesis from FPP; it does not
-      independently establish pristinol formation. Its in-vitro-assay code is a deposit
-      annotation, not a newly inspected assay.
-  - reference: https://www.ncbi.nlm.nih.gov/nuccore/LC484924.1
-    evidence_type: CURATOR_INFERENCE
-    retrieved_on: '2026-10-09'
-    notes: 'Independent translation of the complete six-exon CDS join(1..242,308..434,497..515,569..1035,1100..1326,1385..1463),
-      codon_start1/default table1: 1161 nt including stop equals 386-aa annotated
-      translation, GenPept BBK61014.1 and UniProt A0A5S9I252. Independent GenPept
-      coded_by accession, coordinates and orientation agree; both deposits name FKI-3849/taxon63577.
-      This is native reference correspondence, not experimental construct equivalence.'
 causal_graphs:
 - graph_id: trichobrasilenol-brab-database-substrate-glycosylation
   scope: BIOSYNTHESIS
@@ -400,7 +399,7 @@ curation_history:
     unresolved and unadopted. Preserved every old graph/pathway, source field, structure,
     grade, history and SEEDED status; not a full-record sign-off.'
   llm_assisted: true
-- timestamp: '2026-10-30T08:59:04Z'
+- timestamp: '2026-10-30T09:42:17Z'
   curator: antigravity
   action: RECORD_CURATED
   changes: Synchronized biosynthetic_pathway with the existing database-backed causal_graphs

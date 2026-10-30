@@ -626,15 +626,52 @@ biosynthetic_pathway:
   proposed: true
   notes: MITE0000492-reported carminomycin 4-O-methyltransferase reaction converting
     carminomycin to daunorubicin (CHEBI:41977) by Streptomyces peucetius DnrK (UniProtKB:Q06528,
-    AAA26712.1 / AAA99001.1 on L13453.1 / L40425.1, BGC0000218). Synchronizes biosynthetic_pathway
+    AAA26712.1 on L13453.1 / AAA99001.1 on L40425.1). Synchronizes biosynthetic_pathway
     with the existing MITE-backed causal_graph without upgrading producer or locus
     evidence grades.
   evidence:
-  - reference: DOI:10.1371/journal.pone.0049385
-    evidence_type: PRIMARY_EXPERIMENT
-    snippet: possess ssDNA-dependent ATPase and DNA helicase activities in vitro
-    notes: Q8I3W6 resolves in UniProtKB to PF3D7_0514100 from P. falciparum isolate
-      3D7 and annotates a UvrD-like helicase ATP-binding domain over amino acids 35-727.
+  - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000492.json
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-07'
+    notes: MITE0000492 version 1, active, at the pinned commit. It assigns carminomycin
+      4-O-methylation to DnrK and names daunorubicin as the product. Its heterologous-expression
+      and in-vitro evidence codes are not independently inspected primary experiments.
+    snippet: methylation of the 4-hydroxyl group
+  - reference: https://www.uniprot.org/uniprotkb/Q06528
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-07'
+    notes: 'Reviewed entry 113, sequence 2. FUNCTION assigns methyl transfer from
+      S-adenosyl-L-methionine to carminomycin''s 4-O position yielding daunorubicin.
+      Its experimentally coded annotation remains database evidence here: the cited
+      primary paper was inaccessible. No substrate-promiscuity, quaternary-equilibrium
+      or measured kinetic claim is adopted.'
+    snippet: carminomycin to form daunorubicin
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AAA26712.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-07'
+    notes: Complete conceptual translation and independent coded_by inspected. Source
+      is S. peucetius/taxon 1950 and records ATCC 29050 in the legacy tissue_lib qualifier;
+      this is database source metadata, not authenticated historical stock.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AAA99001.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-07'
+    notes: Independent alternate dnrK protein record from L40425.1; complete sequence
+      and coded_by checked. Its 356 residues match AAA26712.1 and current UniProt
+      Q06528.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/L13453.1
+    evidence_type: CURATOR_INFERENCE
+    retrieved_on: '2026-10-07'
+    notes: Complete 1071-nt CDS at 204..1274, plus strand, table 11, codon_start 1.
+      Full translation matches its CDS annotation, independent AAA26712.1 and UniProt356aa.
+      This is a genomic sequence deposit for clone pWHM902, not a verified complete
+      expression construct or historical assay-stock sequence.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/L40425.1
+    evidence_type: CURATOR_INFERENCE
+    retrieved_on: '2026-10-07'
+    notes: Complete dnrK CDS at 650..1720, plus strand, 1071nt/table11. Coding DNA
+      is identical to the L13453.1 CDS; full translation matches independent AAA99001.1
+      and UniProt356aa. Nearby putative dnrD/dnrP annotations are not adopted as pathway
+      experiments or as evidence for a physical enzyme complex.
 causal_graphs:
 - graph_id: daunorubicin-pfudn-inhibition
   scope: BIOACTIVITY
@@ -872,7 +909,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
-- timestamp: '2026-10-30T08:59:04Z'
+- timestamp: '2026-10-30T09:42:17Z'
   curator: antigravity
   action: RECORD_CURATED
   changes: Synchronized biosynthetic_pathway with the existing MITE-backed causal_graph

@@ -347,10 +347,10 @@ biosynthetic_pathway:
   enzyme_label: AgqB native 431 reference
   substrate: CHEBI:2120
   proposed: true
-  notes: MITE0000081-reported hydroxylation of 5-pentadecylresorcinol (cardol, CHEBI:2120)
-    to 2-hydroxy-5-pentadecylresorcinol by AgqB (UniProtKB:I0HIZ0, BAL92977.1, SCE431_03710
-    on AP012319.1, BGC0000886). Synchronizes biosynthetic_pathway with the existing
-    MITE-backed causal_graph without upgrading producer or locus evidence grades.
+  notes: MITE0000081-reported hydroxylation of linear-C15 cardol (CHEBI:2120) by Actinoplanes
+    missouriensis 431 AgqB (UniProtKB:I0HIZ0, BAL92977.1, agqB/AMIS_77570 on AP012319.1,
+    BGC0001077). Synchronizes biosynthetic_pathway with the existing MITE-backed causal_graph
+    without upgrading producer or locus evidence grades.
   evidence:
   - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000081.json
     evidence_type: DATABASE_ASSERTION
@@ -515,7 +515,7 @@ curation_history:
     attribution, SOURCE_ASSERTION/CLUSTER_DEMONSTRATED grades, occurrences, open cardol/Adipostatin-A
     name disagreement, SEEDED status and append-only history. Not full-record sign-off.'
   llm_assisted: true
-- timestamp: '2026-10-30T08:59:03Z'
+- timestamp: '2026-10-30T09:42:17Z'
   curator: antigravity
   action: RECORD_CURATED
   changes: Synchronized biosynthetic_pathway with the existing MITE-backed causal_graph
