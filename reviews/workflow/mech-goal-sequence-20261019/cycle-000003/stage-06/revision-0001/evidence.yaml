@@ -1,0 +1,45 @@
+schema_version: 1.0.0
+repository_key: naturalproductmech
+github_repository: CultureBotAI/NaturalProductMech
+run_id: mech-goal-sequence-20261019
+cycle: 3
+stage: 6
+revision: 1
+outcome: completed
+summary: >-
+  Froze INFRA_TASKS.md at 2026-10-30T06:21:01Z (SHA-256 eb12fdfbb7424d5f010501d1be4c50c4a24cab868f86dfa0ae24a9bfda44559d),
+  created a dependency-aware implementation plan for naturalproductmech-infra-0003 (#1047), updated correct_claim_reference
+  in src/naturalproductmech/curate/claim_references.py to permit structure-corrected rows when row["structure_source_id"] is
+  non-empty and explicitly named in decision["rationale"], added unit tests in tests/test_claim_references.py, documented the
+  coexistence requirement in docs/CURATION.md, updated INFRA_TASKS.md, and passed all repository validation gates.
+source_revision: c1d26d0b321d0345eb156547718e34d07b314b3a
+scope_frozen_at: '2026-10-30T06:21:01Z'
+artifacts:
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000003/stage-06/revision-0001/infra_snapshot.md
+    sha256: eb12fdfbb7424d5f010501d1be4c50c4a24cab868f86dfa0ae24a9bfda44559d
+    kind: infra_snapshot
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000003/stage-06/revision-0001/implementation_plan.md
+    sha256: d8cc1e189fb47c97739b28dd51b902c132dfc0be4d0c5e767926260b86e21a6e
+    kind: implementation_plan
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000003/stage-06/revision-0001/validation.md
+    sha256: 4febc4de56b58efafa2c7c5933993b9258f2ba621f79448db01ba8bf37b3da6b
+    kind: validation
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000003/stage-06/revision-0001/coverage.json
+    sha256: e4139961bb385b1dbd435a7d3babf0d119ba2b07036a8039425bb2fb67fb81e1
+    kind: supporting
+findings: []
+groups: []
+infra_tasks:
+  - task_id: naturalproductmech-infra-0003
+    summary: Allow reviewed mibig_claim_references.tsv coexistence with structure corrections in claim_references.py when rationale names replacement structure_source_id
+    status: resolved
+    issue_url: https://github.com/CultureBotAI/NaturalProductMech/issues/1047
+    resolution_evidence:
+      - reviews/workflow/mech-goal-sequence-20261019/cycle-000003/stage-06/revision-0001/implementation_plan.md
+      - reviews/workflow/mech-goal-sequence-20261019/cycle-000003/stage-06/revision-0001/validation.md
+    disposition: >-
+      Resolved in cycle 3 stage 6 (#1047): updated correct_claim_reference in src/naturalproductmech/curate/claim_references.py
+      to permit structure-corrected rows when row["structure_source_id"] is non-empty and explicitly named in decision["rationale"]
+      (matching producer_strains in scripts/seed_from_sources.py), added unit tests in tests/test_claim_references.py, and
+      documented the coexistence requirement in docs/CURATION.md.
+carry_forward_ids: []
