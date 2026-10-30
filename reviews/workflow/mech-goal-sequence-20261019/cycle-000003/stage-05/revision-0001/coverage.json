@@ -1,0 +1,60 @@
+{
+  "run_id": "mech-goal-sequence-20261019",
+  "cycle": 3,
+  "stage": 5,
+  "goal_id": "resolve_review_findings",
+  "revision": 1,
+  "consumed_reviews": [
+    "reviews/structured/20261025T055000Z-streptomyces-youssoufiensis-youssoufene-cohort/review.yaml",
+    "reviews/structured/20261025T055005Z-youssoufene-a1-record-review/review.yaml",
+    "reviews/workflow/mech-goal-sequence-20261019/cycle-000003/stage-04/revision-0001/evidence.yaml"
+  ],
+  "fresh_reviews": [
+    "reviews/structured/20261030T053500Z-streptomyces-youssoufiensis-stage5-remediation-review/review.yaml"
+  ],
+  "finding_groups": {
+    "total": 5,
+    "resolved": 2,
+    "deferred": 3,
+    "unresolved_blockers": 0
+  },
+  "github_issues": [
+    {
+      "group_id": "G-YSF-001",
+      "number": 1044,
+      "url": "https://github.com/CultureBotAI/NaturalProductMech/issues/1044",
+      "status": "resolved"
+    },
+    {
+      "group_id": "G-YSF-002",
+      "number": 1045,
+      "url": "https://github.com/CultureBotAI/NaturalProductMech/issues/1045",
+      "status": "resolved"
+    },
+    {
+      "group_id": "G-YSF-003",
+      "number": 1046,
+      "url": "https://github.com/CultureBotAI/NaturalProductMech/issues/1046",
+      "status": "deferred"
+    },
+    {
+      "group_id": "G-PEN-003",
+      "number": 1047,
+      "url": "https://github.com/CultureBotAI/NaturalProductMech/issues/1047",
+      "status": "deferred"
+    },
+    {
+      "group_id": "G-PIK-DES-003",
+      "number": 1012,
+      "url": "https://github.com/CultureBotAI/NaturalProductMech/issues/1012",
+      "status": "deferred"
+    }
+  ],
+  "remediated_targets": [
+    "naturalproductmech:mibig-78ea4c55fb",
+    "naturalproductmech:mibig-ccb60942af",
+    "naturalproductmech:mibig-cf5248036e",
+    "naturalproductmech:mibig-f827d9f550",
+    "naturalproductmech:mibig-18ba3c758c"
+  ]
+}
