@@ -15,7 +15,7 @@
 
 ## Fresh Post-Remediation Structured Review
 
-- **Bundle**: `reviews/structured/20261030T045500Z-streptomyces-youssoufiensis-stage5-remediation-review/review.yaml`
+- **Bundle**: `reviews/structured/20261030T053500Z-streptomyces-youssoufiensis-stage5-remediation-review/review.yaml`
 - **Verdict**: `pass_with_limitations` (`completion: completed`, `scientific_review: true`)
 - **Dispositions**:
   - `F-YSF-001` (`G-YSF-001`, `#1044`): `resolved`

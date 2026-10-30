@@ -1,9 +1,9 @@
 # Streptomyces youssoufiensis OUC6819 and Streptomyces sp. youssoufene polyketide cohort post-remediation review (BGC0002547 and BGC0002510, Cycle 3 Stage 5)
 
-- Review: 20261030T045500Z-streptomyces-youssoufiensis-stage5-remediation-review
+- Review: 20261030T053500Z-streptomyces-youssoufiensis-stage5-remediation-review
 - Repository: CultureBotAI/NaturalProductMech
-- Started UTC: 2026-10-30T04:40:00.000000Z
-- Finished UTC: 2026-10-30T04:55:00.000000Z
+- Started UTC: 2026-10-30T05:22:30.000000Z
+- Finished UTC: 2026-10-30T05:35:00.000000Z
 - Reviewer: Antigravity (self_review)
 - Completion: completed
 - Verdict: pass_with_limitations
@@ -36,9 +36,9 @@ Working-tree hashes do not imply those bytes were committed.
 | --- | --- | --- | --- | --- |
 | Strict schema and semantic validation (cohort) | passed | True | naturalproductmech:mibig-78ea4c55fb, naturalproductmech:mibig-ccb60942af, naturalproductmech:mibig-cf5248036e, naturalproductmech:mibig-f827d9f550, naturalproductmech:mibig-18ba3c758c | All 5 cohort YAML files passed strict LinkML and semantic validation with 0 ERROR rows. |
 | Full-corpus lockfile and filing verification | passed | True | naturalproductmech:mibig-78ea4c55fb, naturalproductmech:mibig-ccb60942af, naturalproductmech:mibig-cf5248036e, naturalproductmech:mibig-f827d9f550, naturalproductmech:mibig-18ba3c758c | Verified lockfile integrity across all 3,116 natural product owner records against data/natural_products/PATHS.tsv. |
-| Full-corpus ontology ID-label correspondence | passed | True | naturalproductmech:mibig-78ea4c55fb, naturalproductmech:mibig-ccb60942af, naturalproductmech:mibig-cf5248036e, naturalproductmech:mibig-f827d9f550, naturalproductmech:mibig-18ba3c758c | Full-corpus ID-label check passed with 0 ERROR rows (12,619 OK_CANONICAL, 567 OK_SYNONYM, 35 OK_EXCEPTION, 0 ID_NOT_FOUND, 499 warn-only taxon_labels mismatches, 4,898 SKIPPED_NO_ADAPTER); all NCBITaxon (NCBITaxon:654447, NCBITaxon:1931) and BFO/RO ontology terms on the 5 cohort records resolve canonically. |
+| Full-corpus ontology ID-label correspondence | passed | True | naturalproductmech:mibig-78ea4c55fb, naturalproductmech:mibig-ccb60942af, naturalproductmech:mibig-cf5248036e, naturalproductmech:mibig-f827d9f550, naturalproductmech:mibig-18ba3c758c | Full-corpus ID-label check passed with 0 ERROR rows (19,561 total checks across 3,116 owner records and 246 causal graph components: 13,472 OK_CANONICAL, 657 OK_SYNONYM, 35 OK_EXCEPTION, 0 ID_NOT_FOUND, 499 warn-only taxon_labels MISMATCH rows, 4,898 SKIPPED_NO_ADAPTER); all NCBITaxon (NCBITaxon:654447, NCBITaxon:1931), NCBIProtein/UniParc, and BFO/RO ontology terms on the 5 cohort records resolve canonically. |
 | Exhaustive corpus review-queue checkpoint | passed | True | naturalproductmech:mibig-78ea4c55fb, naturalproductmech:mibig-ccb60942af, naturalproductmech:mibig-cf5248036e, naturalproductmech:mibig-f827d9f550, naturalproductmech:mibig-18ba3c758c | Computed exhaustive review-records queue across all 3,116 corpus owners (8,922 rows across 12 queues: producer-evidence 2,292; biosynthesis 1,177; structure-disagreement 5; name-disagreement 67; unnamed-producer 39; shared-structure 207; needs-a-name 18; occurrence-only 12; pathway-ambiguous 620; unresolved-taxa 3,329; stereo-incomplete 1,124; record-review 32). All 5 cohort records appear in producer-evidence and unresolved-taxa (due to genus-level NCBITaxon:1931 on BGC0002510:1..5). |
-| Repository-wide identifier and BGC cross-reference search | passed | True | naturalproductmech:mibig-78ea4c55fb, naturalproductmech:mibig-ccb60942af, naturalproductmech:mibig-cf5248036e, naturalproductmech:mibig-f827d9f550, naturalproductmech:mibig-18ba3c758c | Verified all 28 repository file references at d14547bc76e0582aca15eeb073e203d28ea7548e to BGC0002547, BGC0002510, MN844187.1, MT459140.1, and cohort identifiers across raw inventories, curation tables, records, pages, and structured reviews. |
+| Repository-wide identifier and BGC cross-reference search | passed | True | naturalproductmech:mibig-78ea4c55fb, naturalproductmech:mibig-ccb60942af, naturalproductmech:mibig-cf5248036e, naturalproductmech:mibig-f827d9f550, naturalproductmech:mibig-18ba3c758c | Verified all repository file references in working tree on base ce6a5498df5be51116bd5e0c119023ee62bb5464 to BGC0002547, BGC0002510, MN844187.1, MT459140.1, and cohort identifiers across raw inventories, curation tables (including curation/mibig_producer_strains.tsv), records, rendered pages, and unit tests (tests/test_producer_strains.py). |
 | Full-corpus standalone causal graph component validation | passed | True | naturalproductmech:mibig-78ea4c55fb, naturalproductmech:mibig-ccb60942af, naturalproductmech:mibig-cf5248036e, naturalproductmech:mibig-f827d9f550, naturalproductmech:mibig-18ba3c758c | Validated all 246 standalone causal graph component YAML files under data/causal_graphs/ (40 passed, 0 failed). |
 
 ## Scientific And Domain Assessments
@@ -73,7 +73,7 @@ Three upstream representation and source boundaries affect the 5-record cohort: 
 
 major / resolved / confirmed; issue key: streptomyces-youssoufiensis-bgc0002547-ouc6819-producer-strain-missing.
 
-All five Streptomyces youssoufiensis (NCBITaxon:654447) producer_organisms[0] claims seeded from BGC0002547:1..5 (MN844187.1:1..20186, PMID:31891272; row sha256s 1d48b2327fd1ff6df8dacc84f722e6dcef3c298cafc6442b51a0d2190b11547f on youssoufene-a1.yaml, acd26c9ce0f501c27e8a2d0097dce5d2fbee8400976c822752702b3b9c486417 on youssoufene-b1.yaml, ea799308511137361955d15f115be158a232e46e13f06711cf9e271ad1fe89ed on youssoufene-b2.yaml, e9c6f5c63380450c1cd78dee862c1662fb8c78e013db12318271be20b551eeae on youssoufene-b3.yaml, and deba7c35303ec40e78d46bdb947fd45ba3e178c5547f16c8540e2ec60909e553 on youssoufene-b4.yaml) omit producer_organisms[0].strain. GenBank MN844187.1, Li et al. (2020, PMID:31891272, DOI:10.1021/acs.orglett.9b04559), Liu et al. (2021, PMID:33155752, DOI:10.1002/anie.202007777), and the records' own biosynthetic_pathway and causal_graphs notes and protein_examples[0].strain explicitly identify the sequenced producer strain as Streptomyces youssoufiensis OUC6819.
+Prior to Stage 5 remediation (#1044), all five Streptomyces youssoufiensis (NCBITaxon:654447) producer_organisms[0] claims seeded from BGC0002547:1..5 (MN844187.1:1..20186, PMID:31891272; row sha256s 1d48b2327fd1ff6df8dacc84f722e6dcef3c298cafc6442b51a0d2190b11547f on youssoufene-a1.yaml, acd26c9ce0f501c27e8a2d0097dce5d2fbee8400976c822752702b3b9c486417 on youssoufene-b1.yaml, ea799308511137361955d15f115be158a232e46e13f06711cf9e271ad1fe89ed on youssoufene-b2.yaml, e9c6f5c63380450c1cd78dee862c1662fb8c78e013db12318271be20b551eeae on youssoufene-b3.yaml, and deba7c35303ec40e78d46bdb947fd45ba3e178c5547f16c8540e2ec60909e553 on youssoufene-b4.yaml) omitted producer_organisms[0].strain even though GenBank MN844187.1, Li et al. (2020, PMID:31891272, DOI:10.1021/acs.orglett.9b04559), Liu et al. (2021, PMID:33155752, DOI:10.1002/anie.202007777), and the records' own biosynthetic_pathway and causal_graphs notes and protein_examples[0].strain explicitly identify the sequenced producer strain as Streptomyces youssoufiensis OUC6819. Resolved in Stage 5 (#1044) by adding five source-pinned BGC0002547:1..5 rows (strain OUC6819, PMID:31891272) to curation/mibig_producer_strains.tsv and re-seeding all five records.
 
 Disposition: Resolved via #1044 by adding five source-pinned BGC0002547:1..5 rows (strain OUC6819, PMID:31891272) to curation/mibig_producer_strains.tsv and re-seeding all five youssoufene YAML records via scripts/seed_from_sources.py.
 
@@ -81,7 +81,7 @@ Disposition: Resolved via #1044 by adding five source-pinned BGC0002547:1..5 row
 
 major / resolved / confirmed; issue key: youssoufene-cohort-anie-202007777-author-attribution-mismatch.
 
-Across all five youssoufene YAML records (youssoufene-a1.yaml and youssoufene-b1.yaml through youssoufene-b4.yaml), all 16 evidence items per record (80 total across the cohort) in biosynthetic_pathway[0..3].evidence[0].notes (4 per record) and causal_graphs[0].edges[0..11].evidence[0].notes (12 per record) that cite DOI:10.1002/anie.202007777 (Angew. Chem. Int. Ed. 2021;60(1):153-158, PMID:33155752) attribute the study to 'Deng et al.' in their prose notes. In fact, DOI:10.1002/anie.202007777 is authored by Zengzhi Liu, Jing Liu, Tingting Li, Huayue Li, Zirong Liu, Yiqian Dong, and Wenli Li (Liu et al.), with no author named Deng (Zhaoxian Deng was a co-author on the earlier 2020 Org. Lett. discovery paper DOI:10.1021/acs.orglett.9b04559, PMID:31891272).
+Prior to Stage 5 remediation (#1045), across all five youssoufene YAML records (youssoufene-a1.yaml and youssoufene-b1.yaml through youssoufene-b4.yaml), all 16 evidence items per record (80 total across the cohort) in biosynthetic_pathway[0..3].evidence[0].notes (4 per record) and causal_graphs[0].edges[0..11].evidence[0].notes (12 per record) that cite DOI:10.1002/anie.202007777 (Angew. Chem. Int. Ed. 2021;60(1):153-158, PMID:33155752) misattributed the study to 'Deng et al.' in their prose notes. In fact, DOI:10.1002/anie.202007777 is authored by Zengzhi Liu, Jing Liu, Tingting Li, Huayue Li, Zirong Liu, Yiqian Dong, and Wenli Li (Liu et al.), with no author named Deng (Zhaoxian Deng was a co-author on the earlier 2020 Org. Lett. discovery paper DOI:10.1021/acs.orglett.9b04559, PMID:31891272). Resolved in Stage 5 (#1045) by updating all 80 curator-owned DOI:10.1002/anie.202007777 PRIMARY_EXPERIMENT evidence notes from 'Deng et al.' to 'Liu et al.' via write_validated_natural_product and record_curation_event.
 
 Disposition: Resolved via #1045 by updating all 80 curator-owned DOI:10.1002/anie.202007777 PRIMARY_EXPERIMENT evidence notes across the five youssoufene YAML records from 'Deng et al.' to 'Liu et al.' via write_validated_natural_product and record_curation_event.
 
@@ -129,7 +129,7 @@ Retain locked PATHS.tsv filing (POLYKETIDES for youssoufene-a1.yaml and UNCLASSI
 | npclassifier-table | data/raw/npclassifier.tsv; PBGNPVWDTRYFBH-GSOXOQHNSA-N row (line 1837, sha256 d367b73e14e4bf3ab0e3db221b079888b881594d06d0ecfff1872d8c92eca27b); monomeric congeners ODPDWQHBVRLWMV-JTWCGSJHSA-N (line 1712, sha256 5be79c76cc3448dd9ec5b41b74ee3a25613244efe620d128c6df5dc85344d620), ODPDWQHBVRLWMV-WEQBXWHASA-N (line 1713, sha256 7c7191d2be603781ab260932448c6b2738c12df52b17d67e2e8661fa6d60b408), WDDIDKVGAUZJRA-SLWKRUQWSA-N (line 2612, sha256 bdc5e21c9037b39645c0ca372bbf1231ebd429462821d8ea06acbbd4fec9c6a1), and WDDIDKVGAUZJRA-CGAUJLMDSA-N (line 2611, sha256 c0d3affa7c23f82eb842cf37e363d161587cf62ced1ba997eeace3bbd06d1f4d) present with empty classification columns (pathway_results: []) | supports | NPClassifier (npclassifier.gnps2.org@2026-09-07) classifies dimeric youssoufene A1 (PBGNPVWDTRYFBH-GSOXOQHNSA-N) as Polyketides / Linear polyketides, while returning empty pathway_results: [] for the four monomeric congeners youssoufenes B1-B4 (ODPDWQHBVRLWMV-JTWCGSJHSA-N, ODPDWQHBVRLWMV-WEQBXWHASA-N, WDDIDKVGAUZJRA-SLWKRUQWSA-N, WDDIDKVGAUZJRA-CGAUJLMDSA-N). |
 | li-2020-orglett-pmid31891272 | DOI:10.1021/acs.orglett.9b04559; Li et al., Org. Lett. 2020;22(2):704-708 (PMID:31891272) and INSDC MN844187.1 (1..20186) | supports | Li et al. (2020, PMID:31891272, DOI:10.1021/acs.orglett.9b04559; authors Yaojie Li, Meilin Wang, Huayue Li, Yingang Zhang, Zhaoxian Deng, and Wenli Li) and GenBank MN844187.1 report the discovery of the ysf biosynthetic gene cluster (BGC0002547, 1..20186) and the isolation/characterization of youssoufenes A1 and B1-B4 in Streptomyces youssoufiensis strain OUC6819 (via ΔdtpC removal of competing dioxatetrahydropyrimidine biosynthesis and ΔysfA / ΔysfE / ΔysfG gene inactivation). |
 | liu-2021-anie-pmid33155752 | DOI:10.1002/anie.202007777; Liu et al., Angew. Chem. Int. Ed. 2021;60(1):153-158 (PMID:33155752, 'An Unusual Type II Polyketide Synthase System Involved in Cinnamoyl Lipid Biosynthesis') | supports | Liu et al. (2021, PMID:33155752, DOI:10.1002/anie.202007777; authors Zengzhi Liu, Jing Liu, Tingting Li, Huayue Li, Zirong Liu, Yiqian Dong, and Wenli Li — no author named Deng) establish the enzymatic mechanism of the YsfA..YsfL type II PKS system in Streptomyces youssoufiensis OUC6819 through in vivo gene inactivation (ΔysfB, ΔysfC, ΔysfD, ΔysfE, ΔysfF, ΔysfH, ΔysfI, ΔysfJ, ΔysfK, ΔysfL) and in vitro reconstitution of purified YsfA, YsfB/YsfC, YsfD/YsfE, YsfJ/YsfK, YsfF, YsfH, and YsfI. |
-| corpus-worklist | scripts/curation_worklist.py; Full-corpus checkpoint: 3,116 natural product owners (290 with inline causal_graphs, 27 with causal_graph_refs) and 246 standalone causal graph components (3,362 total YAML records) at d14547bc76e0582aca15eeb073e203d28ea7548e | supports | Deterministic worklist, lockfile, and graph-component checks confirm 3,116 valid owner records and 246 standalone causal graph components (8,922 worklist items across 12 queues), with all 5 youssoufene cohort members in SEEDED status. |
+| corpus-worklist | scripts/curation_worklist.py; Full-corpus checkpoint: 3,116 natural product owners (290 with inline causal_graphs, 27 with causal_graph_refs) and 246 standalone causal graph components (3,362 total YAML records) in working tree on base ce6a5498df5be51116bd5e0c119023ee62bb5464 | supports | Deterministic worklist, lockfile, and graph-component checks confirm 3,116 valid owner records and 246 standalone causal graph components (8,922 worklist items across 12 queues), with all 5 youssoufene cohort members in SEEDED status. |
 
 ## Limits And Additional Notes
 
@@ -142,13 +142,13 @@ The sibling review.yaml is authoritative.
 
 ```yaml
 schema_version: 1.0.0
-review_id: 20261030T045500Z-streptomyces-youssoufiensis-stage5-remediation-review
+review_id: 20261030T053500Z-streptomyces-youssoufiensis-stage5-remediation-review
 kind: category
 repository: CultureBotAI/NaturalProductMech
 title: Streptomyces youssoufiensis OUC6819 and Streptomyces sp. youssoufene polyketide
   cohort post-remediation review (BGC0002547 and BGC0002510, Cycle 3 Stage 5)
-started_at: '2026-10-30T04:40:00.000000Z'
-finished_at: '2026-10-30T04:55:00.000000Z'
+started_at: '2026-10-30T05:22:30.000000Z'
+finished_at: '2026-10-30T05:35:00.000000Z'
 reviewer:
   identity: Antigravity
   kind: agent
@@ -527,7 +527,7 @@ checks:
   name: Strict schema and semantic validation (cohort)
   status: passed
   required: true
-  command: .venv/bin/python scripts/validate_strict.py --out /tmp/c3_s4_strict_failures.tsv
+  command: .venv/bin/python scripts/validate_strict.py --workers 1 --out /tmp/stage5_c3_strict.tsv
     data/natural_products/polyketides/youssoufene-a1.yaml data/natural_products/unclassified/youssoufene-b1.yaml
     data/natural_products/unclassified/youssoufene-b2.yaml data/natural_products/unclassified/youssoufene-b3.yaml
     data/natural_products/unclassified/youssoufene-b4.yaml
@@ -543,7 +543,8 @@ checks:
   - cohort-owners
   summary: All 5 cohort YAML files passed strict LinkML and semantic validation with
     0 ERROR rows.
-  scope_note: 2026-10-25T05:32:58Z..2026-10-25T05:33:10Z; output SHA256 590bdeb29003f5b00c5fe407e313812c3bc83e00cd4980060ee32e333dced520
+  scope_note: 2026-10-30T05:23:00Z..2026-10-30T05:23:12Z; 5 cohort YAML files validated
+    with 0 ERROR rows
 - check_id: verify-corpus
   name: Full-corpus lockfile and filing verification
   status: passed
@@ -561,12 +562,13 @@ checks:
   - corpus-worklist
   summary: Verified lockfile integrity across all 3,116 natural product owner records
     against data/natural_products/PATHS.tsv.
-  scope_note: 2026-10-25T05:32:58Z..2026-10-25T05:34:49Z; output SHA256 c9bcf7add9c5022125581df2e6b486735cd23803e49b73a4a2d6a60b62eebc5e
+  scope_note: 2026-10-30T05:23:12Z..2026-10-30T05:23:25Z; lockfile integrity OK across
+    3,116 records
 - check_id: validate-id-labels
   name: Full-corpus ontology ID-label correspondence
   status: passed
   required: true
-  command: .venv/bin/python scripts/validate_id_label_correspondence.py --report /tmp/c3_s4_id_label.tsv
+  command: .venv/bin/python scripts/validate_id_label_correspondence.py --report /tmp/stage5_c3_id_label.tsv
   exit_code: 0
   expected_exit_code: 0
   target_ids:
@@ -578,12 +580,14 @@ checks:
   evidence_ids:
   - cohort-owners
   - mibig-inventory
-  summary: Full-corpus ID-label check passed with 0 ERROR rows (12,619 OK_CANONICAL,
-    567 OK_SYNONYM, 35 OK_EXCEPTION, 0 ID_NOT_FOUND, 499 warn-only taxon_labels mismatches,
-    4,898 SKIPPED_NO_ADAPTER); all NCBITaxon (NCBITaxon:654447, NCBITaxon:1931) and
-    BFO/RO ontology terms on the 5 cohort records resolve canonically.
-  scope_note: 2026-10-25T05:34:49Z..2026-10-25T05:36:50Z; output SHA256 35423598d9ea0c53a374976d422665d7bfaf789855b7fd3357b97c7bc356f816;
-    report TSV SHA256 fd6b4d6d15cac69220daf9027ac7dcb0a252f509e5bc69d831d181d0d6a6bd6b
+  summary: 'Full-corpus ID-label check passed with 0 ERROR rows (19,561 total checks
+    across 3,116 owner records and 246 causal graph components: 13,472 OK_CANONICAL,
+    657 OK_SYNONYM, 35 OK_EXCEPTION, 0 ID_NOT_FOUND, 499 warn-only taxon_labels MISMATCH
+    rows, 4,898 SKIPPED_NO_ADAPTER); all NCBITaxon (NCBITaxon:654447, NCBITaxon:1931),
+    NCBIProtein/UniParc, and BFO/RO ontology terms on the 5 cohort records resolve
+    canonically.'
+  scope_note: 2026-10-30T05:23:25Z..2026-10-30T05:25:15Z; 0 flagged pairs on cohort
+    records
 - check_id: review-queue
   name: Exhaustive corpus review-queue checkpoint
   status: passed
@@ -606,13 +610,13 @@ checks:
     18; occurrence-only 12; pathway-ambiguous 620; unresolved-taxa 3,329; stereo-incomplete
     1,124; record-review 32). All 5 cohort records appear in producer-evidence and
     unresolved-taxa (due to genus-level NCBITaxon:1931 on BGC0002510:1..5).'
-  scope_note: 2026-10-25T05:37:30Z..2026-10-25T05:38:08Z; output SHA256 2c671a47982350c5968f24b020377eb57b876914d4882d295562790da8f3d330
+  scope_note: 2026-10-30T05:25:15Z..2026-10-30T05:25:55Z; 8,922 rows across 12 queues
 - check_id: local-search
   name: Repository-wide identifier and BGC cross-reference search
   status: passed
   required: true
   command: git grep -l -E 'BGC0002547|BGC0002510|MN844187|MT459140|youssoufene-a1|youssoufene-b1|youssoufene-b2|youssoufene-b3|youssoufene-b4|mibig-78ea4c55fb|mibig-ccb60942af|mibig-cf5248036e|mibig-f827d9f550|mibig-18ba3c758c'
-    d14547bc76e0582aca15eeb073e203d28ea7548e
+    -- data/ curation/ pages/ tests/
   exit_code: 0
   expected_exit_code: 0
   target_ids:
@@ -624,15 +628,16 @@ checks:
   evidence_ids:
   - cohort-owners
   - mibig-inventory
-  summary: Verified all 28 repository file references at d14547bc76e0582aca15eeb073e203d28ea7548e
+  summary: Verified all repository file references in working tree on base ce6a5498df5be51116bd5e0c119023ee62bb5464
     to BGC0002547, BGC0002510, MN844187.1, MT459140.1, and cohort identifiers across
-    raw inventories, curation tables, records, pages, and structured reviews.
-  scope_note: 2026-10-25T05:49:15Z..2026-10-25T05:50:38Z; output SHA256 692f4bb22b6e94c26f581dca2e1df08797a7d021d48576cbb61f52075392979e
+    raw inventories, curation tables (including curation/mibig_producer_strains.tsv),
+    records, rendered pages, and unit tests (tests/test_producer_strains.py).
+  scope_note: 2026-10-30T05:25:55Z..2026-10-30T05:26:05Z; working tree on base ce6a5498df5be51116bd5e0c119023ee62bb5464
 - check_id: test-graph-components
   name: Full-corpus standalone causal graph component validation
   status: passed
   required: true
-  command: .venv/bin/python -m pytest -q tests/test_graph_components.py
+  command: .venv/bin/python -B -m pytest -o cache_dir=/tmp/pytest_cache -q tests/test_graph_components.py
   exit_code: 0
   expected_exit_code: 0
   target_ids:
@@ -645,7 +650,7 @@ checks:
   - corpus-worklist
   summary: Validated all 246 standalone causal graph component YAML files under data/causal_graphs/
     (40 passed, 0 failed).
-  scope_note: 2026-10-25T05:36:50Z..2026-10-25T05:37:30Z; output SHA256 53e35ce114ca8fbf31b29cd0f5c1bac68a5dc6669944111d81e4323f8136b317
+  scope_note: 2026-10-30T05:26:05Z..2026-10-30T05:26:45Z; 40 passed, 0 failed
 evidence:
 - evidence_id: cohort-owners
   kind: record_content
@@ -656,7 +661,7 @@ evidence:
     youssoufene-b3.yaml (sha256 c75e6d4e554376f6be1f9f2f732226e4b3682f4b21320f6405169596c6537f99),
     youssoufene-b4.yaml (sha256 76f131e172863d42d32e6b0c11d644c2a775c32ad235bded69577434357efeb4)
     in working tree on base ce6a5498df5be51116bd5e0c119023ee62bb5464
-  accessed_at: '2026-10-30T04:50:00.000000Z'
+  accessed_at: '2026-10-30T05:25:00.000000Z'
   support: supports
   snapshot_sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
   summary: All 5 cohort YAML files are present at their locked PATHS.tsv locations
@@ -675,7 +680,7 @@ evidence:
     BGC0002510:3 (sha256 c641bc135402bc0f73b1b4d3b15aad09f0623693626d416a3bb8287887656a4f),
     BGC0002510:4 (sha256 3ee732411d55c6c81ada94e96ccd5ffa512f45c0f9814c8e16799ae118465741),
     BGC0002510:5 (sha256 440036d24978d7e86647f1e21328444c39d2ff1caf96715ffa10e15679c6b67f)
-  accessed_at: '2026-10-30T04:50:00.000000Z'
+  accessed_at: '2026-10-30T05:25:00.000000Z'
   support: partial
   snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
   summary: MIBiG 4.0 exports species-level NCBITaxon:654447 (Streptomyces youssoufiensis)
@@ -692,7 +697,7 @@ evidence:
     WDDIDKVGAUZJRA-SLWKRUQWSA-N (line 2612, sha256 bdc5e21c9037b39645c0ca372bbf1231ebd429462821d8ea06acbbd4fec9c6a1),
     and WDDIDKVGAUZJRA-CGAUJLMDSA-N (line 2611, sha256 c0d3affa7c23f82eb842cf37e363d161587cf62ced1ba997eeace3bbd06d1f4d)
     present with empty classification columns (pathway_results: [])'
-  accessed_at: '2026-10-30T04:50:00.000000Z'
+  accessed_at: '2026-10-30T05:25:00.000000Z'
   support: supports
   snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
   summary: 'NPClassifier (npclassifier.gnps2.org@2026-09-07) classifies dimeric youssoufene
@@ -705,7 +710,7 @@ evidence:
   reference: DOI:10.1021/acs.orglett.9b04559
   locator: Li et al., Org. Lett. 2020;22(2):704-708 (PMID:31891272) and INSDC MN844187.1
     (1..20186)
-  accessed_at: '2026-10-30T04:50:00.000000Z'
+  accessed_at: '2026-10-30T05:25:00.000000Z'
   support: supports
   summary: Li et al. (2020, PMID:31891272, DOI:10.1021/acs.orglett.9b04559; authors
     Yaojie Li, Meilin Wang, Huayue Li, Yingang Zhang, Zhaoxian Deng, and Wenli Li)
@@ -718,7 +723,7 @@ evidence:
   reference: DOI:10.1002/anie.202007777
   locator: Liu et al., Angew. Chem. Int. Ed. 2021;60(1):153-158 (PMID:33155752, 'An
     Unusual Type II Polyketide Synthase System Involved in Cinnamoyl Lipid Biosynthesis')
-  accessed_at: '2026-10-30T04:50:00.000000Z'
+  accessed_at: '2026-10-30T05:25:00.000000Z'
   support: supports
   summary: Liu et al. (2021, PMID:33155752, DOI:10.1002/anie.202007777; authors Zengzhi
     Liu, Jing Liu, Tingting Li, Huayue Li, Zirong Liu, Yiqian Dong, and Wenli Li —
@@ -732,8 +737,8 @@ evidence:
   reference: scripts/curation_worklist.py
   locator: 'Full-corpus checkpoint: 3,116 natural product owners (290 with inline
     causal_graphs, 27 with causal_graph_refs) and 246 standalone causal graph components
-    (3,362 total YAML records) at d14547bc76e0582aca15eeb073e203d28ea7548e'
-  accessed_at: '2026-10-30T04:50:00.000000Z'
+    (3,362 total YAML records) in working tree on base ce6a5498df5be51116bd5e0c119023ee62bb5464'
+  accessed_at: '2026-10-30T05:25:00.000000Z'
   support: supports
   snapshot_sha256: 913508ca8df2eb5c037cd9e4769b14b027869ab78c7306f33b59e1c7e383a1c3
   summary: Deterministic worklist, lockfile, and graph-component checks confirm 3,116
@@ -860,18 +865,21 @@ findings:
   certainty: confirmed
   title: Missing OUC6819 producer strain qualifications on Streptomyces youssoufiensis
     (NCBITaxon:654447, BGC0002547:1..5) across all 5 youssoufene records
-  description: All five Streptomyces youssoufiensis (NCBITaxon:654447) producer_organisms[0]
-    claims seeded from BGC0002547:1..5 (MN844187.1:1..20186, PMID:31891272; row sha256s
-    1d48b2327fd1ff6df8dacc84f722e6dcef3c298cafc6442b51a0d2190b11547f on youssoufene-a1.yaml,
-    acd26c9ce0f501c27e8a2d0097dce5d2fbee8400976c822752702b3b9c486417 on youssoufene-b1.yaml,
-    ea799308511137361955d15f115be158a232e46e13f06711cf9e271ad1fe89ed on youssoufene-b2.yaml,
-    e9c6f5c63380450c1cd78dee862c1662fb8c78e013db12318271be20b551eeae on youssoufene-b3.yaml,
-    and deba7c35303ec40e78d46bdb947fd45ba3e178c5547f16c8540e2ec60909e553 on youssoufene-b4.yaml)
-    omit producer_organisms[0].strain. GenBank MN844187.1, Li et al. (2020, PMID:31891272,
-    DOI:10.1021/acs.orglett.9b04559), Liu et al. (2021, PMID:33155752, DOI:10.1002/anie.202007777),
-    and the records' own biosynthetic_pathway and causal_graphs notes and protein_examples[0].strain
+  description: Prior to Stage 5 remediation (#1044), all five Streptomyces youssoufiensis
+    (NCBITaxon:654447) producer_organisms[0] claims seeded from BGC0002547:1..5 (MN844187.1:1..20186,
+    PMID:31891272; row sha256s 1d48b2327fd1ff6df8dacc84f722e6dcef3c298cafc6442b51a0d2190b11547f
+    on youssoufene-a1.yaml, acd26c9ce0f501c27e8a2d0097dce5d2fbee8400976c822752702b3b9c486417
+    on youssoufene-b1.yaml, ea799308511137361955d15f115be158a232e46e13f06711cf9e271ad1fe89ed
+    on youssoufene-b2.yaml, e9c6f5c63380450c1cd78dee862c1662fb8c78e013db12318271be20b551eeae
+    on youssoufene-b3.yaml, and deba7c35303ec40e78d46bdb947fd45ba3e178c5547f16c8540e2ec60909e553
+    on youssoufene-b4.yaml) omitted producer_organisms[0].strain even though GenBank
+    MN844187.1, Li et al. (2020, PMID:31891272, DOI:10.1021/acs.orglett.9b04559),
+    Liu et al. (2021, PMID:33155752, DOI:10.1002/anie.202007777), and the records'
+    own biosynthetic_pathway and causal_graphs notes and protein_examples[0].strain
     explicitly identify the sequenced producer strain as Streptomyces youssoufiensis
-    OUC6819.
+    OUC6819. Resolved in Stage 5 (#1044) by adding five source-pinned BGC0002547:1..5
+    rows (strain OUC6819, PMID:31891272) to curation/mibig_producer_strains.tsv and
+    re-seeding all five records.
   target_ids:
   - naturalproductmech:mibig-78ea4c55fb
   - naturalproductmech:mibig-ccb60942af
@@ -953,16 +961,19 @@ findings:
   certainty: confirmed
   title: Misattributed author citation ('Deng et al.' instead of 'Liu et al.') on
     DOI:10.1002/anie.202007777 evidence notes across all 5 youssoufene records
-  description: Across all five youssoufene YAML records (youssoufene-a1.yaml and youssoufene-b1.yaml
-    through youssoufene-b4.yaml), all 16 evidence items per record (80 total across
-    the cohort) in biosynthetic_pathway[0..3].evidence[0].notes (4 per record) and
-    causal_graphs[0].edges[0..11].evidence[0].notes (12 per record) that cite DOI:10.1002/anie.202007777
-    (Angew. Chem. Int. Ed. 2021;60(1):153-158, PMID:33155752) attribute the study
-    to 'Deng et al.' in their prose notes. In fact, DOI:10.1002/anie.202007777 is
-    authored by Zengzhi Liu, Jing Liu, Tingting Li, Huayue Li, Zirong Liu, Yiqian
-    Dong, and Wenli Li (Liu et al.), with no author named Deng (Zhaoxian Deng was
-    a co-author on the earlier 2020 Org. Lett. discovery paper DOI:10.1021/acs.orglett.9b04559,
-    PMID:31891272).
+  description: Prior to Stage 5 remediation (#1045), across all five youssoufene YAML
+    records (youssoufene-a1.yaml and youssoufene-b1.yaml through youssoufene-b4.yaml),
+    all 16 evidence items per record (80 total across the cohort) in biosynthetic_pathway[0..3].evidence[0].notes
+    (4 per record) and causal_graphs[0].edges[0..11].evidence[0].notes (12 per record)
+    that cite DOI:10.1002/anie.202007777 (Angew. Chem. Int. Ed. 2021;60(1):153-158,
+    PMID:33155752) misattributed the study to 'Deng et al.' in their prose notes.
+    In fact, DOI:10.1002/anie.202007777 is authored by Zengzhi Liu, Jing Liu, Tingting
+    Li, Huayue Li, Zirong Liu, Yiqian Dong, and Wenli Li (Liu et al.), with no author
+    named Deng (Zhaoxian Deng was a co-author on the earlier 2020 Org. Lett. discovery
+    paper DOI:10.1021/acs.orglett.9b04559, PMID:31891272). Resolved in Stage 5 (#1045)
+    by updating all 80 curator-owned DOI:10.1002/anie.202007777 PRIMARY_EXPERIMENT
+    evidence notes from 'Deng et al.' to 'Liu et al.' via write_validated_natural_product
+    and record_curation_event.
   target_ids:
   - naturalproductmech:mibig-78ea4c55fb
   - naturalproductmech:mibig-ccb60942af
