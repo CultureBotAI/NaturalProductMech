@@ -47,8 +47,9 @@ graph:
       top-strand cuts after 35490/35630; standard blunting predicts 143 bp, not 156
       bp or an in-frame lesion. This curator reconstruction does not establish the
       actual mutant sequence and does not silently correct the thesis. Native GenPept/MIBiG
-      and the printed 244-aa PlaU alignment agree. Gene/taxon and exact EMBL-xref
-      UniProt queries returned no rows; no homolog substituted.
+      and the printed 244-aa PlaU alignment agree. UniParc UPI000068F3A7 links active
+      EMBL ABB69757.1 and inactive UniProtKB/TrEMBL Q2I772 (plaU, taxon 355249) with
+      zero active UniProtKB entries; no homolog substituted.
     evidence:
     - reference: https://freidok.uni-freiburg.de/data/6815
       evidence_type: PRIMARY_EXPERIMENT
@@ -70,6 +71,12 @@ graph:
       notes: 'Restriction geometry used for the native-sequence calculation: SfiI
         has a three-base 3-prime overhang; NheI a four-base 5-prime overhang. This
         calculation is not experimental mutant sequencing.'
+    - reference: https://rest.uniprot.org/uniparc/UPI000068F3A7.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI000068F3A7 (244 aa) links active EMBL ABB69757.1 (Streptomyces
+        sp. Tu6071, taxon 355249, gene plaU) and inactive UniProtKB/TrEMBL Q2I772,
+        with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: plau_lesion
     predicate: retains_detectable_profile_of
     object: production
@@ -104,8 +111,9 @@ graph:
       single-crossover clones. The delta-plaU parent is the negative control; plasmid
       positive control uses SCZ-R instead of C-SCZ-R. Native 237-aa ABB69767.1 matches
       GenBank/MIBiG translation, not an assayed purified protein or a mutant protein
-      sequence. Successful bounded UniProt gene/taxon and exact EMBL-xref queries
-      found no entry; no exact UniProt mapping claimed.
+      sequence. UniParc UPI000068F3B1 links active EMBL ABB69767.1 and inactive UniProtKB/TrEMBL
+      Q2I782 (plaZ, taxon 355249) with zero active UniProtKB entries; no active UniProtKB
+      mapping claimed.
     evidence:
     - reference: https://freidok.uni-freiburg.de/data/6815
       evidence_type: PRIMARY_EXPERIMENT
@@ -120,6 +128,12 @@ graph:
       evidence_type: CURATOR_INFERENCE
       notes: Curator comparison verifies exact native GenBank/MIBiG/GenPept PlaZ translation.
         This does not identify the translated insertion allele or measure SDR activity.
+    - reference: https://rest.uniprot.org/uniparc/UPI000068F3B1.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI000068F3B1 (237 aa) links active EMBL ABB69767.1 (Streptomyces
+        sp. Tu6071, taxon 355249, gene plaZ) and inactive UniProtKB/TrEMBL Q2I782,
+        with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: double_lesion
     predicate: retains_detectable
     object: production
@@ -143,4 +157,11 @@ curation_history:
     genetic edges and one verified snippet. Addressed #524: reported versus reconstructed
     PlaU deletion remains unresolved; PlaZ insertion and selection context explicit.
     Retained-production evidence is bounded, not direct catalysis or universal dispensability.'
+  llm_assisted: true
+- timestamp: '2026-10-30T11:15:59Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added verified UniParc UPI000068F3A7 and UPI000068F3B1 database assertions
+    and inactive UniProtKB/TrEMBL Q2I772/Q2I782 audit notes for PlaU (ABB69757.1)
+    and PlaZ (ABB69767.1).
   llm_assisted: true

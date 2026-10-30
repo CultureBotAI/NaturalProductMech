@@ -147,9 +147,9 @@ causal_graphs:
     object: bmp2_reference
     notes: Reference-locus mapping only. Native PS5 Bmp2 is not O-BC30 A0A0S2JXW2
       (43-aa difference) or the PDB-linked 409-aa GSH construct A0A140UHM3 with conflicting
-      Streptomyces taxonomy. Neither selected as a PS5 UniProt example. Bounded official
-      gene/taxon and AKJ75108 queries returned no current entry, not universal absence
-      of aliases.
+      Streptomyces taxonomy. Neither selected as a PS5 UniProt example. UniParc UPI00078B3448
+      links active EMBL AKJ75108.1 and inactive UniProtKB/TrEMBL A0A139ZY81 (bmp2,
+      taxon 1437473) with zero active UniProtKB entries.
     evidence:
     - reference: https://www.ncbi.nlm.nih.gov/protein/AKJ75108.1
       evidence_type: DATABASE_ASSERTION
@@ -168,6 +168,12 @@ causal_graphs:
         to the native CDS is curator inference; the experimental stock and mutant
         sequence were not independently verified.
       retrieved_on: '2026-10-07'
+    - reference: https://rest.uniprot.org/uniparc/UPI00078B3448.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI00078B3448 (406 aa) links active EMBL AKJ75108.1 (Pseudoalteromonas
+        sp. PS5, taxon 1437473, gene bmp2) and inactive UniProtKB/TrEMBL A0A139ZY81,
+        with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: bmp2_deletion
     predicate: targets
     object: bmp2_gene
@@ -233,4 +239,11 @@ curation_history:
     or pure-compound bioactivity adopted. Preserved all existing source grades, identity,
     stereochemistry, classifications, producers, BGCs, open discussion, SEEDED status
     and append-only history; no full-record sign-off.'
+  llm_assisted: true
+- timestamp: '2026-10-30T11:10:59Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added verified UniParc UPI00078B3448 database assertion and audit note
+    documenting inactive UniProtKB/TrEMBL A0A139ZY81 for Pseudoalteromonas sp. PS5
+    Bmp2 (NCBIProtein:AKJ75108.1) in tetrabromopyrrole-ps5-bmp2-genetic-production-context.
   llm_assisted: true

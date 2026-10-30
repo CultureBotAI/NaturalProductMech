@@ -105,6 +105,18 @@ graph:
     - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
       evidence_type: CURATOR_INFERENCE
       notes: Independent three-version comparison.
+    - reference: https://rest.uniprot.org/uniparc/UPI00000BA254.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI00000BA254 (677 aa) archives historical EMBL AAF67507.1 and
+        UniProtKB/Swiss-Prot Q9L9F4 sequence version 1 (LRRN at residues 123-126 before
+        the 2012 AF170880.4 revision).
+      retrieved_on: '2026-10-30'
+    - reference: https://rest.uniprot.org/uniparc/UPI000019C61F.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI000019C61F (677 aa) archives current EMBL AAF67507.2 and active
+        reviewed UniProtKB/Swiss-Prot Q9L9F4 sequence version 2 (APPD at residues
+        123-126; novN, Streptomyces niveus, taxon 193462).
+      retrieved_on: '2026-10-30'
   - subject: old
     predicate: constrains_sample_identification
     object: ambiguity
@@ -221,4 +233,11 @@ curation_history:
   action: RECORD_CURATED
   changes: 'Add cathomycin-novn-native-identity-and-his6-preparation with source-checked
     NovN evidence and review #560 limits.'
+  llm_assisted: true
+- timestamp: '2026-10-30T11:15:33Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added verified UniParc UPI00000BA254 and UPI000019C61F database assertions
+    distinguishing historical AAF67507.1 (Q9L9F4 v1) from current AAF67507.2 (UniProtKB:Q9L9F4
+    v2).
   llm_assisted: true

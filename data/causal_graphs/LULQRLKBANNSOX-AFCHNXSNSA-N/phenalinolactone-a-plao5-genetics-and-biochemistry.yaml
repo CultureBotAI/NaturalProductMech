@@ -75,6 +75,12 @@ graph:
       evidence_type: CURATOR_INFERENCE
       notes: Curator alignment of O5-A2/O5-B primers and reconstruction of their PstI
         ligation against DQ230532.1.
+    - reference: https://rest.uniprot.org/uniparc/UPI000068F3AE.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI000068F3AE (409 aa) links active EMBL ABB69764.1 (Streptomyces
+        sp. Tu6071, taxon 355249, gene plaO5) and inactive UniProtKB/TrEMBL Q2I777,
+        with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: lesion
     predicate: abolishes_detectable
     object: production
@@ -129,8 +135,9 @@ graph:
       446-aa N-terminal His6 fusion, sequence-checked insert, 43% MALDI peptide-mass
       fingerprint coverage, not complete protein sequencing. Native accession is not
       tagged construct. Curator comparison: printed 409-aa parent matches GenPept/GenBank/MIBiG;
-      expression-primer changes outside CDS. UniProt mapping unverified after service
-      error.'
+      expression-primer changes outside CDS. UniParc UPI000068F3AE links active EMBL
+      ABB69764.1 and inactive UniProtKB/TrEMBL Q2I777 (plaO5, taxon 355249) with zero
+      active UniProtKB entries.'
     evidence:
     - reference: https://freidok.uni-freiburg.de/data/3799
       evidence_type: PRIMARY_EXPERIMENT
@@ -216,4 +223,10 @@ curation_history:
     from data/natural_products/unclassified/phenalinolactone-a.yaml at aa0e38c4ac899ca5534b4ce02318c019fc44db29.
     Prior claim curation history remains on the owning record; graph content and evidence
     are unchanged.
+  llm_assisted: true
+- timestamp: '2026-10-30T11:16:02Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added verified UniParc UPI000068F3AE database assertion and inactive UniProtKB/TrEMBL
+    Q2I777 audit note for PlaO5 (NCBIProtein:ABB69764.1).
   llm_assisted: true

@@ -161,6 +161,12 @@ causal_graphs:
         agree. This is the compound/locus anchor, not gene-function evidence. Existing
         SOURCE_ASSERTION producer and CLUSTER_DEMONSTRATED locus grades remain unchanged,
         as do incomplete owner stereochemistry and SEEDED status.
+    - reference: https://rest.uniprot.org/uniparc/UPI001C062D75.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI001C062D75 (531 aa) links active EMBL QWP75303.1 (Lysobacter
+        sp. K5869, taxon 2820808, locus J5226_16935) and inactive UniProtKB/TrEMBL
+        A0A8F1I7A8, with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: hyne
     predicate: is_database_assigned_hydroxylase_in
     object: hyne_tailoring
@@ -209,6 +215,12 @@ causal_graphs:
         agree. This is the compound/locus anchor, not gene-function evidence. Existing
         SOURCE_ASSERTION producer and CLUSTER_DEMONSTRATED locus grades remain unchanged,
         as do incomplete owner stereochemistry and SEEDED status.
+    - reference: https://rest.uniprot.org/uniparc/UPI001C05F185.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI001C05F185 (320 aa) links active EMBL QWP75301.1 (Lysobacter
+        sp. K5869, taxon 2820808, locus J5226_16925) and inactive UniProtKB/TrEMBL
+        A0A8F1L6H1, with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: hyna
     predicate: is_database_listed_auxiliary_synthetase_in
     object: hync_tailoring
@@ -246,6 +258,12 @@ causal_graphs:
         independent GenPept coded_by coordinates, strand and DNA agree. Native reference
         identity and neighborhood do not independently prove biochemical function,
         physical interaction or native genetic necessity.
+    - reference: https://rest.uniprot.org/uniparc/UPI001C0620D5.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI001C0620D5 (6491 aa) links active EMBL QWP75305.1 (Lysobacter
+        sp. K5869, taxon 2820808, locus J5226_16945) and inactive UniProtKB/TrEMBL
+        A0A8F1I6R9, with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: hynb
     predicate: is_database_listed_auxiliary_synthetase_in
     object: hync_tailoring
@@ -283,6 +301,12 @@ causal_graphs:
         independent GenPept coded_by coordinates, strand and DNA agree. Native reference
         identity and neighborhood do not independently prove biochemical function,
         physical interaction or native genetic necessity.
+    - reference: https://rest.uniprot.org/uniparc/UPI001C0636B4.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI001C0636B4 (2447 aa) links active EMBL QWP75304.1 (Lysobacter
+        sp. K5869, taxon 2820808, locus J5226_16940) and inactive UniProtKB/TrEMBL
+        A0A8F1L663, with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: hyna
     predicate: is_database_listed_auxiliary_synthetase_in
     object: hyne_tailoring
@@ -320,6 +344,12 @@ causal_graphs:
         independent GenPept coded_by coordinates, strand and DNA agree. Native reference
         identity and neighborhood do not independently prove biochemical function,
         physical interaction or native genetic necessity.
+    - reference: https://rest.uniprot.org/uniparc/UPI001C0620D5.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI001C0620D5 (6491 aa) links active EMBL QWP75305.1 (Lysobacter
+        sp. K5869, taxon 2820808, locus J5226_16945) and inactive UniProtKB/TrEMBL
+        A0A8F1I6R9, with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
 curation_history:
 - timestamp: '2026-09-10T05:54:06Z'
   curator: seed_from_sources
@@ -345,4 +375,12 @@ curation_history:
     assignment, pathway order, physical complex, historical construct or native genetic-necessity
     claim. Preserved all original fields, source grades, incomplete owner stereochemistry,
     SEEDED status and history.
+  llm_assisted: true
+- timestamp: '2026-10-30T11:10:59Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added verified UniParc UPI001C0620D5, UPI001C0636B4, UPI001C062D75 and
+    UPI001C05F185 database assertions documenting inactive UniProtKB/TrEMBL cross-references
+    A0A8F1I6R9, A0A8F1L663, A0A8F1I7A8 and A0A8F1L6H1 for HynA/HynB/HynC/HynE (QWP75305.1,
+    QWP75304.1, QWP75303.1 and QWP75301.1).
   llm_assisted: true

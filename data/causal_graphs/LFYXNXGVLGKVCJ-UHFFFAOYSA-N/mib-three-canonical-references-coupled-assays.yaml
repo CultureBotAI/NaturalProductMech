@@ -134,6 +134,11 @@ graph:
         Sequence identity was independently verified; RefSeq species/multispecies
         assignment is not an experimental strain record. No shell-cargo claim follows
         from its automated name.
+    - reference: https://rest.uniprot.org/uniparc/UPI00037B9776.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI00037B9776 (438 aa) links active RefSeq WP_019890277.1 (Streptomyces
+        purpureus, taxon 1925) and carries zero active or inactive UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   description: Three independent recombinant assays, not one native three-enzyme pathway.
     Canonical references ground the reported proteins; exact inserts, tags, linkers
     and variants remain outside this claim. The owner retains unspecified stereochemistry
@@ -146,4 +151,10 @@ curation_history:
     data/natural_products/terpenoids/2-methylisoborneol.yaml, owner naturalproductmech:mibig-0eb8c93c6f,
     source commit 46837550f8903f16ac8a84de836908f5ce947929. Preserve every node, edge,
     evidence item and snippet; prior audit history remains on the owner.
+  llm_assisted: true
+- timestamp: '2026-10-30T11:14:37Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added verified UniParc UPI00037B9776 database assertion confirming zero
+    UniProtKB cross-references for Streptomyces purpureus MIBS (NCBIProtein:WP_019890277.1).
   llm_assisted: true

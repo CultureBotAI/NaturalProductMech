@@ -46,8 +46,8 @@ graph:
       lacking its own start codon. The parent accession is not an identifier for this
       fusion or its complete junction. GenPept retains a putative rRNA-methyltransferase
       name; this reporter study does not demonstrate an rRNA or natural-product substrate.
-      No active exact UniProtKB mapping was found in the bounded official gene/taxon
-      and EMBL-xref query.
+      UniParc UPI000068F39D links active EMBL ABB69747.1 and inactive UniProtKB/TrEMBL
+      Q2I758 (plaM2, taxon 355249) with zero active UniProtKB entries.
     evidence:
     - reference: DOI:10.1128/AEM.00434-11
       evidence_type: PRIMARY_EXPERIMENT
@@ -63,6 +63,12 @@ graph:
       notes: 'Curator native sequence comparison and Table 2 primer homology alignment:
         forward span 22371..22390; reverse 23707..23726. No complete fusion sequence
         is claimed.'
+    - reference: https://rest.uniprot.org/uniparc/UPI000068F39D.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI000068F39D (281 aa) links active EMBL ABB69747.1 (Streptomyces
+        sp. Tu6071, taxon 355249, gene plaM2) and inactive UniProtKB/TrEMBL Q2I758,
+        with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: strain
     predicate: carries_expression_construct_for
     object: fusion
@@ -147,4 +153,10 @@ curation_history:
     and plaM1/plaM2 discrepancies, internal disruption/construct limits, inference
     versus measured reporter output, and rejected inactive UniProt identities. Figure
     bars not independently inspected or digitized.'
+  llm_assisted: true
+- timestamp: '2026-10-30T11:15:56Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added verified UniParc UPI000068F39D database assertion and inactive UniProtKB/TrEMBL
+    Q2I758 audit note for PlaM2 (NCBIProtein:ABB69747.1).
   llm_assisted: true

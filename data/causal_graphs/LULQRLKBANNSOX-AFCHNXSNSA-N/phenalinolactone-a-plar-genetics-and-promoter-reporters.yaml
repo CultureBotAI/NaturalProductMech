@@ -175,6 +175,16 @@ graph:
       evidence_type: CURATOR_INFERENCE
       notes: Curator exact native GenBank/MIBiG/GenPept sequence comparison and Table
         2 primer homology alignment. Not a complete construct or mutant sequence.
+    - reference: https://rest.uniprot.org/uniprotkb/Q2I783.json
+      evidence_type: DATABASE_ASSERTION
+      notes: Q2I783 is an Inactive UniProtKB entry (DEMERGED) and is not used as an
+        active UniProtKB identifier.
+      retrieved_on: '2026-10-30'
+    - reference: https://rest.uniprot.org/uniparc/UPI000068F3B0.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UPI000068F3B0 links active EMBL ABB69766.1 (Streptomyces sp. Tu6071,
+        taxon 355249, gene plaR3) and inactive UniProtKB/TrEMBL Q2I783 (119 aa).
+      retrieved_on: '2026-10-30'
   - subject: delta_r1
     predicate: has_reported_production_phenotype
     object: r1_output
@@ -579,4 +589,10 @@ curation_history:
     and plaM1/plaM2 discrepancies, internal disruption/construct limits, inference
     versus measured reporter output, and rejected inactive UniProt identities. Figure
     bars not independently inspected or digitized.'
+  llm_assisted: true
+- timestamp: '2026-10-30T11:15:52Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added verified UniProtKB Q2I783 and UniParc UPI000068F3B0 database assertions
+    on delta_r3 -> plar3 (NCBIProtein:ABB69766.1), matching the PlaR1/PlaR2 edges.
   llm_assisted: true

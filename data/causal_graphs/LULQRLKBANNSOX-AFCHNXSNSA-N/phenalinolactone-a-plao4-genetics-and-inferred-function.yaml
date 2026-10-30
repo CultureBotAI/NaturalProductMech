@@ -43,7 +43,9 @@ graph:
       crossover''s short-only PCR does not exclude its wild-type allele. Curator comparison:
       appendix pages 138-139 match PlaO4 CDS; thesis G versus deposited A at 38851
       lies in plaA5, not a PlaO4 substitution. GenPept/GenBank/MIBiG and translated
-      thesis proteins agree. UniProt mapping failed; no homolog substituted.'
+      thesis proteins agree. UniParc UPI000068F3A9 links active EMBL ABB69759.1 and
+      inactive UniProtKB/TrEMBL Q2I770 (plaO4, taxon 355249) with zero active UniProtKB
+      entries; no homolog substituted.'
     evidence:
     - reference: https://freidok.uni-freiburg.de/data/2280
       evidence_type: PRIMARY_EXPERIMENT
@@ -58,6 +60,12 @@ graph:
       evidence_type: CURATOR_INFERENCE
       notes: Curator thesis/DQ230532.1/GenPept/MIBiG comparison; nucleotide versus
         protein agreement detailed on edge.
+    - reference: https://rest.uniprot.org/uniparc/UPI000068F3A9.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI000068F3A9 (391 aa) links active EMBL ABB69759.1 (Streptomyces
+        sp. Tu6071, taxon 355249, gene plaO4) and inactive UniProtKB/TrEMBL Q2I770,
+        with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: mutation
     predicate: disrupts_normal
     object: production
@@ -124,4 +132,10 @@ curation_history:
     from data/natural_products/unclassified/phenalinolactone-a.yaml at aa0e38c4ac899ca5534b4ce02318c019fc44db29.
     Prior claim curation history remains on the owning record; graph content and evidence
     are unchanged.
+  llm_assisted: true
+- timestamp: '2026-10-30T11:16:01Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added verified UniParc UPI000068F3A9 database assertion and inactive UniProtKB/TrEMBL
+    Q2I770 audit note for PlaO4 (NCBIProtein:ABB69759.1).
   llm_assisted: true

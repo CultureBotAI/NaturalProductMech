@@ -43,8 +43,9 @@ graph:
       translations agree; curator BstEII reconstruction predicts 378 bp but does not
       sequence the mutant. Native S65/K68 and Figure 3-16 disagree with thesis prose
       S66/K69. No catalytic-residue or beta-lactam-resistance function is established.
-      Exact gene/taxon and accession-xref UniProt searches returned no rows; no homolog
-      mapping substituted.
+      UniParc UPI000068F3A8 links active EMBL ABB69758.1 and inactive UniProtKB/TrEMBL
+      Q2I771 (plaV, taxon 355249) with zero active UniProtKB entries; no homolog mapping
+      substituted.
     evidence:
     - reference: https://freidok.uni-freiburg.de/data/6815
       evidence_type: PRIMARY_EXPERIMENT
@@ -60,6 +61,12 @@ graph:
       notes: Curator GenPept/GenBank/MIBiG sequence comparison and primer/BstEII mapping;
         compatible native cuts 378 bp apart. Motif numbering comparison is not site-directed-mutagenesis
         evidence.
+    - reference: https://rest.uniprot.org/uniparc/UPI000068F3A8.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI000068F3A8 (484 aa) links active EMBL ABB69758.1 (Streptomyces
+        sp. Tu6071, taxon 355249, gene plaV) and inactive UniProtKB/TrEMBL Q2I771,
+        with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: lesion
     predicate: abolishes_detectable
     object: production
@@ -140,4 +147,10 @@ curation_history:
     from data/natural_products/unclassified/phenalinolactone-a.yaml at aa0e38c4ac899ca5534b4ce02318c019fc44db29.
     Prior claim curation history remains on the owning record; graph content and evidence
     are unchanged.
+  llm_assisted: true
+- timestamp: '2026-10-30T11:16:00Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added verified UniParc UPI000068F3A8 database assertion and inactive UniProtKB/TrEMBL
+    Q2I771 audit note for PlaV (NCBIProtein:ABB69758.1).
   llm_assisted: true

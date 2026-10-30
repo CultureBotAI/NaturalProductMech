@@ -555,6 +555,12 @@ causal_graphs:
         both the deposited CDS translation and its independent genetic-code-11 translation.
         Source: uncultured bacterium, taxon 77133, clone m9-20, Texas desert soil.
         This validates the reference identity, not the catalytic assignment.'
+    - reference: https://rest.uniprot.org/uniparc/UPI000F0C4DE6.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI000F0C4DE6 (263 aa) links active EMBL ASV47079.1 (uncultured
+        bacterium, taxon 77133) and inactive UniProtKB/TrEMBL A0A3G1J153, with zero
+        active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: mxcD_like
     predicate: is proposed to supply DHBA for
     object: hosted_biosynthesis
@@ -582,6 +588,12 @@ causal_graphs:
         translation and its independent genetic-code-11 translation. Source: uncultured
         bacterium, taxon 77133, clone m9-20, Texas desert soil. This validates the
         reference identity, not the catalytic assignment.'
+    - reference: https://rest.uniprot.org/uniparc/UPI000F0CACEF.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI000F0CACEF (388 aa) links active EMBL ASV47080.1 (uncultured
+        bacterium, taxon 77133) and inactive UniProtKB/TrEMBL A0A3G1J168, with zero
+        active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: mxcE_like
     predicate: is proposed to activate DHBA for
     object: hosted_biosynthesis
@@ -609,6 +621,12 @@ causal_graphs:
         CDS translation and its independent genetic-code-11 translation. Source: uncultured
         bacterium, taxon 77133, clone m9-20, Texas desert soil. This validates the
         reference identity, not the catalytic assignment.'
+    - reference: https://rest.uniprot.org/uniparc/UPI000F0C0434.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI000F0C0434 (540 aa) links active EMBL ASV47081.1 (uncultured
+        bacterium, taxon 77133) and inactive UniProtKB/TrEMBL A0A3G1J158, with zero
+        active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: mxcG_like
     predicate: is proposed to assemble lysine and DHBA during
     object: hosted_biosynthesis
@@ -636,6 +654,12 @@ causal_graphs:
         CDS translation and its independent genetic-code-11 translation. Source: uncultured
         bacterium, taxon 77133, clone m9-20, Texas desert soil. This validates the
         reference identity, not the catalytic assignment.'
+    - reference: https://rest.uniprot.org/uniparc/UPI000F0C6D63.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI000F0C6D63 (1387 aa) links active EMBL ASV47084.1 (uncultured
+        bacterium, taxon 77133) and inactive UniProtKB/TrEMBL A0A3G1J160, with zero
+        active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: m920_locus
     predicate: supports biosynthesis in the engineered reporter host
     object: hosted_biosynthesis
@@ -727,3 +751,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-30T11:10:58Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added verified UniParc UPI000F0C4DE6, UPI000F0CACEF, UPI000F0C0434 and
+    UPI000F0C6D63 database assertions documenting inactive UniProtKB/TrEMBL cross-references
+    A0A3G1J153, A0A3G1J168, A0A3G1J158 and A0A3G1J160 for ASV47079.1, ASV47080.1,
+    ASV47081.1 and ASV47084.1 in myxochelin-a-m920-proposed-biosynthesis.
+  llm_assisted: true

@@ -100,6 +100,13 @@ graph:
         strain J1074. NCBI names this strain S. albidoflavus (taxon 1886); the paper
         uses S. albus. Exact-locus and GenPept-cross-reference UniProt queries did
         not resolve an accession; no homolog was substituted.
+    - reference: https://rest.uniprot.org/uniparc/UPI0001CE8D5E.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI0001CE8D5E (100 aa) links active EMBL AGI91495.1 (Streptomyces
+        albus J1074, taxon 457425, locus XNR_5179) and inactive UniProtKB/TrEMBL D6BAD9
+        (ScoT_55270), K1UZQ9 (SM8_03262) and A0A0S1UWG1 (SFR_6044), with zero active
+        UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: xnr_4478
     predicate: is coexpressed in
     object: paired_expression
@@ -167,6 +174,13 @@ graph:
         strain J1074. NCBI names this strain S. albidoflavus (taxon 1886); the paper
         uses S. albus. Exact-locus and GenPept-cross-reference UniProt queries did
         not resolve an accession; no homolog was substituted.
+    - reference: https://rest.uniprot.org/uniparc/UPI0001CE8D5E.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI0001CE8D5E (100 aa) links active EMBL AGI91495.1 (Streptomyces
+        albus J1074, taxon 457425, locus XNR_5179) and inactive UniProtKB/TrEMBL D6BAD9
+        (ScoT_55270), K1UZQ9 (SM8_03262) and A0A0S1UWG1 (SFR_6044), with zero active
+        UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: paired_expression_4772
     predicate: increases
     object: acid_production
@@ -321,4 +335,11 @@ curation_history:
     limit, and added sequence-identical UniProtKB protein example nodes D6AZ77 (UPI0001AEE243),
     D6B5H4 (UPI0001AEEB06), and A0ABR4S4L1 (UPI0001AECE6D) for J1074 redox partners
     XNR_4478, XNR_1673, and XNR_4772.
+  llm_assisted: true
+- timestamp: '2026-10-30T11:14:36Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added verified UniParc UPI0001CE8D5E database assertions for Streptomyces
+    albus J1074 ferredoxin XNR_5179 (NCBIProtein:AGI91495.1) on both paired-expression
+    edges.
   llm_assisted: true

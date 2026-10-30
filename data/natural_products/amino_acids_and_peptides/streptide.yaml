@@ -188,6 +188,13 @@ causal_graphs:
         This supports the StrA alias mapping, not a historical assay construct or
         modified peptide identity. The mature owner key UEOXFKPVURAKAA-RMYJOMHKSA-N
         differs. Source reaction stereochemistry remains unresolved under issue 702.
+    - reference: https://rest.uniprot.org/uniparc/UPI0000E5643E.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI0000E5643E (30 aa) links active EMBL ABJ66530.1 (Streptococcus
+        thermophilus ATCC BAA-491 / LMD-9, taxon 322159, gene STER_1357) and inactive
+        UniProtKB/TrEMBL entries Q03JU2 (STER_1357), F8LYE5 (STH8232_1610) and W7V534
+        (Y016_10450), with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
 curation_history:
 - timestamp: '2026-09-10T05:54:14Z'
   curator: seed_from_sources
@@ -214,4 +221,11 @@ curation_history:
     curated. No mature-product, modified-peptide, assay-construct, processing or physical-complex
     claim is added. No UniProtKB accession was examined or selected for this precursor.
     Reaction hold 702 remains open.
+  llm_assisted: true
+- timestamp: '2026-10-30T11:05:31Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added verified UniParc UPI0000E5643E database assertion and inactive UniProtKB/TrEMBL
+    Q03JU2/F8LYE5/W7V534 audit note for the 30-aa Streptide precursor StrA (NCBIProtein:ABJ66530.1)
+    in streptide-stra-native-precursor-reference.
   llm_assisted: true

@@ -71,8 +71,9 @@ graph:
       while the accompanying text says pKC-O3del. These source discrepancies remain
       explicit; native reconstruction is not an independently sequenced XO3 allele.
       The native 401-aa GenPept/GenBank/MIBiG and complete printed parent sequence
-      match. Official UniProt gene/taxon and exact EMBL-xref queries returned no rows;
-      no homolog used.
+      match. UniParc UPI000068F39E links active EMBL ABB69748.1 and inactive UniProtKB/TrEMBL
+      Q2I769 (PlaO3, taxon 355249) with zero active UniProtKB entries; no homolog
+      used.
     evidence:
     - reference: https://freidok.uni-freiburg.de/data/3799
       evidence_type: PRIMARY_EXPERIMENT
@@ -93,6 +94,12 @@ graph:
       notes: PflMI recognition/cut geometry yields a three-base 3-prime overhang;
         SphI contributes the downstream cut. The thesis prose calling both overhangs
         four-base is not used to reconstruct the allele.
+    - reference: https://rest.uniprot.org/uniparc/UPI000068F39E.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI000068F39E (401 aa) links active EMBL ABB69748.1 (Streptomyces
+        sp. Tu6071, taxon 355249, gene PlaO3) and inactive UniProtKB/TrEMBL Q2I769,
+        with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: single_crossover
     predicate: contains_recombined_alleles_of
     object: plao3
@@ -283,4 +290,10 @@ curation_history:
     Addressed review #526: retained source/sequence and construct qualifications;
     separated observed genetics from inferred chemistry, with exact native parent
     grounding and a verified snippet.'
+  llm_assisted: true
+- timestamp: '2026-10-30T11:15:57Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added verified UniParc UPI000068F39E database assertion and inactive UniProtKB/TrEMBL
+    Q2I769 audit note for PlaO3 (NCBIProtein:ABB69748.1).
   llm_assisted: true

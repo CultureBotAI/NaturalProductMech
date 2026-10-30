@@ -160,6 +160,12 @@ causal_graphs:
         Streptomyces sp. NTK 937, taxon 1487711. Native DNA/code-11 translation, CDS
         and separately retrieved GenPept sequence agree exactly. Product text is deposited
         annotation, not an adopted substrate-specific enzyme function.
+    - reference: https://rest.uniprot.org/uniparc/UPI0004A8E19B.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI0004A8E19B (456 aa) links active EMBL KDQ70105.1 (Streptomyces
+        sp. NTK 937, taxon 1487711, locus DT87_23840) and inactive UniProtKB/TrEMBL
+        A0A069K1L6 and A0A1C4RVL3, with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
     notes: This is an inferred native-reference-to-insert mapping, not direct sequencing
       of the assayed plasmid, a confirmed cbxA-E alias assignment, or a claim of individual
       expression, necessity, sufficiency or catalysis. No physical protein complex
@@ -193,6 +199,12 @@ causal_graphs:
         Streptomyces sp. NTK 937, taxon 1487711. Native DNA/code-11 translation, CDS
         and separately retrieved GenPept sequence agree exactly. Product text is deposited
         annotation, not an adopted substrate-specific enzyme function.
+    - reference: https://rest.uniprot.org/uniparc/UPI00049149D2.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI00049149D2 (351 aa) links active EMBL KDQ70106.1 (Streptomyces
+        sp. NTK 937, taxon 1487711, locus DT87_23845) and inactive UniProtKB/TrEMBL
+        A0A069JZJ7, A0A1A9CU65 and A0A1C4L5A3, with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
     notes: This is an inferred native-reference-to-insert mapping, not direct sequencing
       of the assayed plasmid, a confirmed cbxA-E alias assignment, or a claim of individual
       expression, necessity, sufficiency or catalysis. No physical protein complex
@@ -226,6 +238,12 @@ causal_graphs:
         Streptomyces sp. NTK 937, taxon 1487711. Native DNA/code-11 translation, CDS
         and separately retrieved GenPept sequence agree exactly. Product text is deposited
         annotation, not an adopted substrate-specific enzyme function.
+    - reference: https://rest.uniprot.org/uniparc/UPI0004A9154B.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI0004A9154B (557 aa) links active EMBL KDQ70107.1 (Streptomyces
+        sp. NTK 937, taxon 1487711, locus DT87_23850) and inactive UniProtKB/TrEMBL
+        A0A069K883, with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
     notes: This is an inferred native-reference-to-insert mapping, not direct sequencing
       of the assayed plasmid, a confirmed cbxA-E alias assignment, or a claim of individual
       expression, necessity, sufficiency or catalysis. No physical protein complex
@@ -259,6 +277,12 @@ causal_graphs:
         Streptomyces sp. NTK 937, taxon 1487711. Native DNA/code-11 translation, CDS
         and separately retrieved GenPept sequence agree exactly. Product text is deposited
         annotation, not an adopted substrate-specific enzyme function.
+    - reference: https://rest.uniprot.org/uniparc/UPI0004A940A8.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI0004A940A8 (125 aa) links active EMBL KDQ70108.1 (Streptomyces
+        sp. NTK 937, taxon 1487711, locus DT87_23855) and inactive UniProtKB/TrEMBL
+        A0A069JZH0, with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
     notes: This is an inferred native-reference-to-insert mapping, not direct sequencing
       of the assayed plasmid, a confirmed cbxA-E alias assignment, or a claim of individual
       expression, necessity, sufficiency or catalysis. No physical protein complex
@@ -292,6 +316,12 @@ causal_graphs:
         Streptomyces sp. NTK 937, taxon 1487711. Native DNA/code-11 translation, CDS
         and separately retrieved GenPept sequence agree exactly. Product text is deposited
         annotation, not an adopted substrate-specific enzyme function.
+    - reference: https://rest.uniprot.org/uniparc/UPI0004A8E9B0.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI0004A8E9B0 (519 aa) links active EMBL KDQ70109.1 (Streptomyces
+        sp. NTK 937, taxon 1487711, locus DT87_23860) and inactive UniProtKB/TrEMBL
+        A0A069JYK6, A0A1A9CVR2 and A0A1C4L5I3, with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
     notes: This is an inferred native-reference-to-insert mapping, not direct sequencing
       of the assayed plasmid, a confirmed cbxA-E alias assignment, or a claim of individual
       expression, necessity, sufficiency or catalysis. No physical protein complex
@@ -419,4 +449,11 @@ curation_history:
     URL evidence and source snippets. Preserved chemical-form boundaries, source-owned
     claims and SEEDED status; opened construct/alias/individual-function questions.
     No individual enzyme reaction, physical complex or producer-grade upgrade.
+  llm_assisted: true
+- timestamp: '2026-10-30T11:10:59Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added verified UniParc UPI0004A8E19B, UPI00049149D2, UPI0004A9154B, UPI0004A940A8
+    and UPI0004A8E9B0 database assertions documenting inactive UniProtKB/TrEMBL cross-references
+    for KDQ70105.1-KDQ70109.1 in caboxamycin-cassette-production.
   llm_assisted: true
