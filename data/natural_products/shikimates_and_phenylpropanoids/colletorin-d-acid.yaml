@@ -90,6 +90,48 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:A0A1B7YD80
+  enzyme_label: CTC3 native IMI349063 reference
+  substrate: naturalproductmech:mibig-d1c3064ecf
+  product: naturalproductmech:mibig-2459be6395
+  proposed: true
+  notes: MITE0000464-reported reduction of Colletorin D acid to Colletorin D by CTC3
+    (UniProtKB:A0A1B7YD80, OBR09778.1, CH63R_05470 on LTAN01000004.1, BGC0002812).
+    Synchronizes biosynthetic_pathway with the existing MITE-backed causal_graph without
+    upgrading producer or locus evidence grades.
+  evidence:
+  - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000464.json
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-07'
+    notes: MITE0000464 version1, active, attributes Colletorin D acid reduction to
+      CTC3, yielding Colletorin D. Its heterologous-expression code is not personally
+      inspected experimental data; the cited primary paper was inaccessible. No construct,
+      assay condition or measured activity is adopted.
+    snippet: Converts Colletorin D acid into Colletorin D
+  - reference: https://www.uniprot.org/uniprotkb/A0A1B7YD80
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-07'
+    notes: Unreviewed TrEMBL entry41, sequence1, 1078 residues, CH63R_05470, taxon759273.
+      There is no FUNCTION annotation; protein existence is inferred from homology
+      and the record flags WGS-derived preliminary sequence data. UniProt and GenPept
+      retain the submission name Gluconate kinase; UniProt also assigns an adenylate-forming
+      reductase family. Neither is an independent compound-specific assay. No gluconate
+      kinase function or predicted Ser608 modification is adopted.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/OBR09778.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-07'
+    notes: 'Full conceptual translation and independent coded_by inspected: CH63R_05470,
+      Colletotrichum higginsianum strain IMI349063/taxon759273. Source collection
+      metadata do not establish historical assay-stock identity.'
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/LTAN01000004.1
+    evidence_type: CURATOR_INFERENCE
+    retrieved_on: '2026-10-07'
+    notes: 'Complete3237-nt/three-exon negative-strand CDS, default table1: complement(join(400054..400461,400539..402986,403076..403456)).
+      Full translation equals the annotation, independent OBR09778.1 and current UniProt1078aa;
+      independent coded_by coordinates/DNA match. This proves a native genomic reference,
+      not a historical transcript, expression construct or assay-stock sequence.'
 causal_graphs:
 - graph_id: colletorin-d-acid-ctc3-database-substrate-reduction
   scope: BIOSYNTHESIS
@@ -214,4 +256,11 @@ curation_history:
     finality or inter-graph order claim. Preserved all pre-existing graphs, source
     fields, BGC_CORRELATED/CLUSTER_CORRELATED grades, occurrences, stereochemistry,
     classifications, SEEDED status and prior history. Not full-record sign-off.
+  llm_assisted: true
+- timestamp: '2026-10-30T09:42:16Z'
+  curator: antigravity
+  action: RECORD_CURATED
+  changes: Synchronized biosynthetic_pathway with the existing MITE-backed causal_graph
+    for CTC3 (UniProtKB:A0A1B7YD80, MITE0000464) on Colletorin D acid while preserving
+    existing causal_graphs and SEEDED status.
   llm_assisted: true

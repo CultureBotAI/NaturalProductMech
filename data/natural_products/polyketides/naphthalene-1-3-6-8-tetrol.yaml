@@ -264,6 +264,45 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0001257, BGC0001258,
     BGC0001906, BGC0002154. Confirm they describe the same compound rather than an
     upstream cross-reference error.'
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:A7KGZ3
+  enzyme_label: NapB2 native NRRL18422 reference
+  substrate: CHEBI:18365
+  proposed: true
+  notes: MITE0000084-reported database-proposed oxidation of naphthalene-1,3,6,8-tetrol
+    (CHEBI:18365) to flaviolin by NapB2 (UniProtKB:A7KGZ3, ABS50452.1 on EF397638.1,
+    BGC0001079). Synchronizes biosynthetic_pathway with the existing MITE-backed causal_graph
+    without upgrading producer or locus evidence grades.
+  evidence:
+  - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000084.json
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-07'
+    notes: MITE0000084 version1, active, names NapB2/A7KGZ3/ABS50452.1 and BGC0001079.
+      Its THN-to-flaviolin assignment is explicitly inference from genomic data and
+      chemical structure, not demonstrated enzyme activity. Both cited papers were
+      inaccessible; no independently inspected primary assay.
+    snippet: Inference from genomic data and chemical structure
+  - reference: https://www.uniprot.org/uniprotkb/A7KGZ3
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-07'
+    notes: Current TrEMBL28/sequence1,184aa, napB2/taxon270689, direct EMBL EF397638/ABS50452.1
+      cross-reference. No FUNCTION or catalytic comment. Predicted cupin annotations
+      do not prove THN oxidation.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/ABS50452.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-07'
+    notes: Complete184-residue putative-monooxygenase reference from Streptomyces
+      aculeolatus NRRL18422/taxon270689; full coded_by inspected. Native reference
+      identity is not historical assay-stock proof.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/EF397638.1?from=10400&to=11200
+    evidence_type: CURATOR_INFERENCE
+    retrieved_on: '2026-10-07'
+    notes: Complete555-nt plus-CDS10535..11089 in forward801-bp window10400..11200.
+      Codon1/table11 translation equals native annotation, independent ABS50452.1
+      and current A7KGZ3, all184aa. Absolute coded_by coordinates map to local136..690
+      and identical DNA; strain/taxon agree. Full-CDS window, not full genome, and
+      identity only, not function.
 causal_graphs:
 - graph_id: thn-napb2-database-proposed-oxidation
   scope: BIOSYNTHESIS
@@ -388,3 +427,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-30T09:42:17Z'
+  curator: antigravity
+  action: RECORD_CURATED
+  changes: Synchronized biosynthetic_pathway with the existing MITE-backed causal_graph
+    for NapB2 (UniProtKB:A7KGZ3, MITE0000084) on naphthalene-1,3,6,8-tetrol while
+    preserving existing causal_graphs and SEEDED status.
+  llm_assisted: true

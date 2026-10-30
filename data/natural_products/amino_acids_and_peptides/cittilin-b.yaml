@@ -93,6 +93,95 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: NCBIProtein:QLH55579.1
+  enzyme_label: CitB native DK1622 reference
+  product: naturalproductmech:mibig-5cf4c39e1c
+  proposed: true
+  notes: MITE0000426-reported CitB cytochrome P450 precursor crosslinking and MxPep
+    leader removal maturing the CitA precursor peptide (NCBIProtein:QLH55578.1) to
+    cittilin B on MN731368.1 (BGC0002043). Synchronizes biosynthetic_pathway with
+    the existing MITE-backed causal_graph without upgrading producer or locus evidence
+    grades.
+  evidence:
+  - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-07'
+    notes: MITE0000426 version 1, active, names CitB/QLH55579.1, UniParc UPI0002F6195D
+      and BGC0002043. Its narrative assigns precursor crosslinking to CitB and leader
+      removal to MxPep. Assay and knockout codes remain database assertions; the cited
+      primary paper was inaccessible. No independently inspected primary assay.
+    snippet: within the CitA precursor peptide
+  - reference: https://www.ncbi.nlm.nih.gov/protein/QLH55579.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-07'
+    notes: Complete independent GenPept cytochrome P450 reference, 450 residues, Myxococcus
+      xanthus DK1622/taxon246197; full coded_by inspected. Reference identity does
+      not identify a historical assay stock or construct.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/MN731368.1
+    evidence_type: CURATOR_INFERENCE
+    retrieved_on: '2026-10-07'
+    notes: Full1353-nt plus-strand CDS11483..12835, codon1/table11, translates exactly
+      to annotation, independent QLH55579.1 and UniParc, all450aa. Independent coded_by
+      DNA/coordinates and DK1622/taxon246197 source match. This verifies reference
+      sequence identity, not catalytic activity.
+  - reference: https://www.uniprot.org/uniparc/UPI0002F6195D
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-07'
+    notes: Retained450-residue archive has no active UniProtKB cross-reference. A0A7D5SGQ7
+      and A0AA46PCU6 are inactive, not selected as current UniProt examples. UniParc
+      is not UniProtKB; this bounded archive result does not establish universal UniProt
+      absence.
+- step_number: 2
+  enzyme_id: UniProtKB:Q1DEH3
+  enzyme_label: CitC native DK1622 reference
+  substrate: naturalproductmech:mibig-5cf4c39e1c
+  product: naturalproductmech:mibig-9e3bd2912f
+  proposed: true
+  notes: MITE0000425-reported O-methylation of cittilin B to cittilin A by CitC (UniProtKB:Q1DEH3,
+    QLH55580.1 on MN731368.1, BGC0002043; DK1622 locus MXAN_0682 / ABF85961.1 on CP000113.1).
+    Synchronizes biosynthetic_pathway with the existing MITE-backed causal_graph without
+    upgrading producer or locus evidence grades.
+  evidence:
+  - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000425.json
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-07'
+    notes: 'MITE0000425 version 1, active, identifies CitC, QLH55580.1/UniParc UPI00004FDDBF
+      and BGC0002043, and assigns O-methylation of cittilin B to yield cittilin A.
+      Its heterologous-expression and in-vitro codes are database assertions: the
+      cited primary paper was inaccessible. No specific assay, kinetic or native cofactor
+      claim is adopted.'
+    snippet: CitC specifically methylates cittilin B
+  - reference: https://www.uniprot.org/uniprotkb/Q1DEH3
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-07'
+    notes: Current TrEMBL entry103, sequence1,204aa, MXAN_0682/taxon246197, predicted
+      protein existence, no FUNCTION or catalytic-activity comment. The generic methyltransferase-domain
+      name and automated keywords are not independent cittilin evidence. Entry cross-links
+      CP000113/ABF85961.1, not directly MN731368/QLH55580.1; exact full sequence,
+      strain and UniParc provide the mapping.
+  - reference: https://www.uniprot.org/uniparc/UPI00004FDDBF
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-07'
+    notes: Retained full sequence archive links active Q1DEH3 and QLH55580 to the
+      same204-residue DK1622 reference. Inactive UniProt entries and other-strain
+      identical sequences are not selected as tested examples. UniParc is not a UniProtKB
+      accession.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/QLH55580.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-07'
+    notes: Complete independent GenPept methyltransferase record and coded_by inspected:204aa,
+      M.xanthus DK1622/taxon246197; no named CitC gene qualifier is required to replace
+      the exact protein mapping.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/MN731368.1
+    evidence_type: CURATOR_INFERENCE
+    retrieved_on: '2026-10-07'
+    notes: Complete615-nt plus-strand CDS12819..13433, codon1/table11, translates
+      exactly to annotation, independent QLH55580.1, UniParc and current Q1DEH3, all204aa.
+      Independent coded_by DNA/coordinates and genomic/source strain DK1622/taxon246197
+      match. No separate ABF85961.1/CP000113 native-CDS check or historical assay-stock/construct
+      identity is claimed.
 causal_graphs:
 - graph_id: cittilin-b-citb-mxpep-database-maturation
   scope: BIOSYNTHESIS
@@ -445,4 +534,11 @@ curation_history:
     source fields/grades, occurrences, structure, classification and SEEDED status.
     The separate cittilin A owner and its CitC graph remain unchanged. No full-record
     sign-off.
+  llm_assisted: true
+- timestamp: '2026-10-30T09:42:17Z'
+  curator: antigravity
+  action: RECORD_CURATED
+  changes: Synchronized biosynthetic_pathway with the existing MITE-backed causal_graphs
+    for CitB (NCBIProtein:QLH55579.1, MITE0000426) and CitC (UniProtKB:Q1DEH3, MITE0000425)
+    on cittilin B while preserving existing causal_graphs and SEEDED status.
   llm_assisted: true

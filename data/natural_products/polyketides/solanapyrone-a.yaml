@@ -164,6 +164,52 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-c3935a0044
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:D7UQ40
+  enzyme_label: Sol5 A.solani reference precursor
+  reaction_id: RHEA:31683
+  substrate: CHEBI:63164
+  product: CHEBI:38229
+  proposed: true
+  notes: UniProtKB:D7UQ40 / MITE0000455 / RHEA:31683-reported cycloisomerization of
+    prosolanapyrone III (CHEBI:63164) to solanapyrone A (CHEBI:38229) by Alternaria
+    solani Sol5 (BAJ09785.1 on AB514562.1). Synchronizes biosynthetic_pathway with
+    the existing database-backed causal_graph without upgrading producer or locus
+    evidence grades.
+  evidence:
+  - reference: https://www.uniprot.org/uniprotkb/D7UQ40
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-07'
+    notes: Current Swiss-Prot D7UQ40 entry53/sequence1, Alternaria solani/taxon48100,
+      explicitly assigns prosolanapyrone III to (-)-solanapyrone A via RHEA31683 and
+      left-to-right RHEA31684, with ChEBI63164/38229. This is a UniProt database assertion;
+      cited experiments and ECO0000269 codes are not independently reinspected primary
+      evidence here. The separate D-product reaction is not substituted.
+    snippet: subsequent Diels Alder cycloisomerization
+  - reference: https://www.ncbi.nlm.nih.gov/protein/BAJ09785.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-07'
+    notes: Complete independent GenPept sol5/oxidase-Diels-Alderase reference, 515aa,
+      A.solani/taxon48100. No strain or isolate qualifier. Full coded_by splicing
+      and source inspected; reference is not an identified historical assay stock
+      or mature construct.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/AB514562.1
+    evidence_type: CURATOR_INFERENCE
+    retrieved_on: '2026-10-07'
+    notes: Full1548-nt/table1 plus-strand CDS joins3092..3351,3404..3735, 3787..3939,3987..4520,4573..4841.
+      Translation equals CDS annotation, independent BAJ09785.1 and current D7UQ40/all515aa.
+      Independent coded_by DNA/exons and A.solani/taxon48100 match; no strain is invented.
+      Genomic splicing is not an independent transcript assay.
+  - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000455.json
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-07'
+    notes: MITE0000455v1 active encodes an oxidation/cycloaddition example whose product
+      matches the A owner's full InChIKey AWQLNKJBXASXDU-SFDCBXKLSA-N and complete
+      stereo in the retained repository-helper/RDKit2026.03.5 screen. Its top-level
+      comment explicitly says functionality is unclear. Its knockout code remains
+      database-level; the cited primary paper was inaccessible. The example is not
+      independently verified primary catalysis.
 causal_graphs:
 - graph_id: solanapyrone-a-sol5-database-cycloisomerization
   scope: BIOSYNTHESIS
@@ -298,3 +344,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-30T09:42:17Z'
+  curator: antigravity
+  action: RECORD_CURATED
+  changes: Synchronized biosynthetic_pathway with the existing database-backed causal_graph
+    for Sol5 (UniProtKB:D7UQ40, RHEA:31683, MITE0000455) on solanapyrone A while preserving
+    existing causal_graphs and SEEDED status.
+  llm_assisted: true
