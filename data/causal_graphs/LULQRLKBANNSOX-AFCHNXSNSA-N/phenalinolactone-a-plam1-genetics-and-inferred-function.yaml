@@ -43,7 +43,9 @@ graph:
       polar effects are not attributed to PlaM1 alone. Curator comparison: thesis
       appendix page 126 has C at 13742 versus deposited T (terminal Arg CGG versus
       CGA): synonymous, not identical DNA. GenPept/GenBank/MIBiG and translated thesis
-      proteins agree. UniProt mapping failed; no homolog substituted.'
+      proteins agree. UniParc UPI000068F395 links active EMBL ABB69739.1 and inactive
+      UniProtKB/TrEMBL Q2I754 (plaM1, taxon 355249) with zero active UniProtKB entries;
+      no homolog substituted.'
     evidence:
     - reference: https://freidok.uni-freiburg.de/data/2280
       evidence_type: PRIMARY_EXPERIMENT
@@ -58,6 +60,12 @@ graph:
       evidence_type: CURATOR_INFERENCE
       notes: Curator thesis/DQ230532.1/GenPept/MIBiG comparison; nucleotide versus
         protein agreement detailed on edge.
+    - reference: https://rest.uniprot.org/uniparc/UPI000068F395.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI000068F395 (303 aa) links active EMBL ABB69739.1 (Streptomyces
+        sp. Tu6071, taxon 355249, gene plaM1) and inactive UniProtKB/TrEMBL Q2I754,
+        with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: mutation
     predicate: disrupts_normal
     object: production
@@ -129,4 +137,10 @@ curation_history:
     from data/natural_products/unclassified/phenalinolactone-a.yaml at aa0e38c4ac899ca5534b4ce02318c019fc44db29.
     Prior claim curation history remains on the owning record; graph content and evidence
     are unchanged.
+  llm_assisted: true
+- timestamp: '2026-10-30T11:15:53Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added verified UniParc UPI000068F395 database assertion and inactive UniProtKB/TrEMBL
+    Q2I754 audit note for PlaM1 (NCBIProtein:ABB69739.1).
   llm_assisted: true

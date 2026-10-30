@@ -959,6 +959,12 @@ causal_graphs:
         coded_by DNA/coordinates and SYSU-MS4722/taxon 1756133 agree. The complete
         938-bp genomic deposit was read. CDS boundaries are exact but gene/mRNA boundaries
         are fuzzy; no full transcript/promoter or historical construct/stock proof.
+    - reference: https://rest.uniprot.org/uniparc/UPI00206C08DE.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI00206C08DE (265 aa) links active EMBL UPG58740.1 (Diaporthe
+        sp., taxon 1756133, gene phoK) and carries zero active or inactive UniProtKB
+        cross-references.
+      retrieved_on: '2026-10-30'
   - subject: emodin
     predicate: is_database_example_substrate_of
     object: reduction
@@ -1079,3 +1085,9 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-30T11:05:32Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added verified UniParc UPI00206C08DE database assertion and UniProtKB absence
+    note for Diaporthe sp. PhoK (NCBIProtein:UPG58740.1) in emodin-phok-database-substrate-reduction.
+  llm_assisted: true

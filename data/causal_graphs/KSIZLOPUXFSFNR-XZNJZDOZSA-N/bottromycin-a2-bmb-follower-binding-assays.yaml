@@ -65,6 +65,12 @@ graph:
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-03'
       notes: Canonical BmbB RRE parent.
+    - reference: https://rest.uniprot.org/uniparc/UPI00027EA686.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI00027EA686 (630 aa) links active EMBL CCM09442.1 (Streptomyces
+        bottropensis, taxon 42239, gene bmbB) and inactive UniProtKB/TrEMBL K0P1P7
+        (bmbB), with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
     notes: 'Figure S13C: Kd 876 +/- 67 nM by fluorescence polarization. SI Table S3
       domain sequence exactly matches residues 492-593 of the 630-aa canonical protein.'
   - subject: bmbf_rre
@@ -77,6 +83,12 @@ graph:
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-03'
       notes: Canonical BmbF RRE parent.
+    - reference: https://rest.uniprot.org/uniparc/UPI00027EA689.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI00027EA689 (670 aa) links active EMBL CCM09446.1 (Streptomyces
+        bottropensis, taxon 42239, gene bmbF) and inactive UniProtKB/TrEMBL K0P4U1
+        (bmbF), M3FCL1 and A0A7K3EJA3, with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
     notes: 'Figure S13D: Kd 597 +/- 25 nM by fluorescence polarization. SI Table S3
       domain sequence exactly matches residues 526-670 of the 670-aa canonical protein.'
   - subject: bmbd
@@ -129,4 +141,11 @@ curation_history:
     causal graph component to keep bottromycin-a2-2.yaml within the 64-KiB artifact
     limit, and added sequence-identical Streptomyces bottropensis UniProtKB:K0P8E3
     protein example node (UPI0001B7FB89) for BmbC (CCM09443.1).
+  llm_assisted: true
+- timestamp: '2026-10-30T11:15:28Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added verified UniParc UPI00027EA686 and UPI00027EA689 database assertions
+    documenting inactive UniProtKB/TrEMBL cross-references K0P1P7 (BmbB, CCM09442.1)
+    and K0P4U1 (BmbF, CCM09446.1).
   llm_assisted: true

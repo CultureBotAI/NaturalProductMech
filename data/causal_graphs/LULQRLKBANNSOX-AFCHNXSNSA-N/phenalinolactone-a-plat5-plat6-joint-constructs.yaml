@@ -70,8 +70,9 @@ graph:
       separately. Native PlaT5 is 386 aa, DQ230532.1:32273..33433 on the positive
       strand. GenPept, native GenBank and MIBiG translations agree. The accession
       identifies the native parent, not a complete sequenced plasmid or assayed purified
-      preparation. A bounded official UniProt gene/taxon plus exact EMBL-xref query
-      returned no rows; no homolog was substituted.
+      preparation. UniParc UPI000068F3A5 links active EMBL ABB69755.1 and inactive
+      UniProtKB/TrEMBL Q2I774 (plaT5, taxon 355249) with zero active UniProtKB entries;
+      no homolog was substituted.
     evidence:
     - reference: https://freidok.uni-freiburg.de/data/3799
       evidence_type: PRIMARY_EXPERIMENT
@@ -86,15 +87,21 @@ graph:
       notes: Curator comparison of GenPept sequence with native GenBank and MIBiG
         BGC0000654.4 CDS translations; identities match exactly. This does not experimentally
         verify expression or the entire engineered insert.
+    - reference: https://rest.uniprot.org/uniparc/UPI000068F3A5.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI000068F3A5 (386 aa) links active EMBL ABB69755.1 (Streptomyces
+        sp. Tu6071, taxon 355249, gene plaT5) and inactive UniProtKB/TrEMBL Q2I774,
+        with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: cassette
     predicate: introduces_encoding_sequence_for
     object: plat6
     notes: The same joint fragment includes native PlaT6, 593 aa, DQ230532.1:33430..35211
       on the positive strand, with a four-base native CDS overlap with plaT5. GenPept,
       GenBank and MIBiG translations agree. The native accession is not a measured
-      construct-specific protein sequence. The bounded official UniProt gene/taxon
-      plus exact EMBL-xref query returned no rows; an ortholog is not used as its
-      identity.
+      construct-specific protein sequence. UniParc UPI000068F3A6 links active EMBL
+      ABB69756.1 and inactive UniProtKB/TrEMBL Q2I773 (plaT6, taxon 355249) with zero
+      active UniProtKB entries; an ortholog is not used as its identity.
     evidence:
     - reference: https://freidok.uni-freiburg.de/data/3799
       evidence_type: PRIMARY_EXPERIMENT
@@ -109,6 +116,12 @@ graph:
       notes: Curator comparison verifies native GenBank/MIBiG/GenPept identity and
         the four-base CDS overlap; it does not establish translational coupling or
         quantify either protein.
+    - reference: https://rest.uniprot.org/uniparc/UPI000068F3A6.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI000068F3A6 (593 aa) links active EMBL ABB69756.1 (Streptomyces
+        sp. Tu6071, taxon 355249, gene plaT6) and inactive UniProtKB/TrEMBL Q2I773,
+        with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: p_set
     predicate: introduces_joint_cassette
     object: cassette
@@ -270,4 +283,11 @@ curation_history:
     graph: 12 nodes, 11 source-cited edges and two verified snippets. Addressed #527
     by preserving empty-vector confounding, clone-specific A/D profiles, construct-map/control-identity
     ambiguity and inferred rather than directly measured enzyme functions.'
+  llm_assisted: true
+- timestamp: '2026-10-30T11:15:58Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added verified UniParc UPI000068F3A5 and UPI000068F3A6 database assertions
+    and inactive UniProtKB/TrEMBL Q2I774/Q2I773 audit notes for PlaT5 (ABB69755.1)
+    and PlaT6 (ABB69756.1).
   llm_assisted: true

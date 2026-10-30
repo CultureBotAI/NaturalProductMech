@@ -53,8 +53,9 @@ graph:
       T at genomic 21398. These qualifications do not negate the PCR/Southern result
       or establish an independently sequenced mutant junction. Native 397-aa GenPept,
       GenBank and MIBiG translations agree; no mutant protein sequence is assigned.
-      Official UniProt gene/taxon and exact EMBL-xref queries returned no rows; no
-      homolog substituted.'
+      UniParc UPI000068F39C links active EMBL ABB69746.1 and inactive UniProtKB/TrEMBL
+      Q2I759 (plaO2, taxon 355249) with zero active UniProtKB entries; no homolog
+      substituted.'
     evidence:
     - reference: https://freidok.uni-freiburg.de/data/3799
       evidence_type: PRIMARY_EXPERIMENT
@@ -71,6 +72,12 @@ graph:
         identical. NcoI deletion is 300 bp; PstI cuts 21390/22581 give 1191 bp. O2blot-F
         maps to 21392..21408 with one mismatch; exact reverse primer maps to 21943..21957,
         giving a 566-bp span rather than reported 565 bp.'
+    - reference: https://rest.uniprot.org/uniparc/UPI000068F39C.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI000068F39C (397 aa) links active EMBL ABB69746.1 (Streptomyces
+        sp. Tu6071, taxon 355249, gene plaO2) and inactive UniProtKB/TrEMBL Q2I759,
+        with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: single_crossover
     predicate: retains_detectable_profile_of
     object: production
@@ -107,4 +114,10 @@ curation_history:
     review #526: retained source/sequence and construct qualifications; separated
     observed genetics from inferred chemistry, with exact native parent grounding
     and a verified snippet.'
+  llm_assisted: true
+- timestamp: '2026-10-30T11:15:55Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added verified UniParc UPI000068F39C database assertion and inactive UniProtKB/TrEMBL
+    Q2I759 audit note for PlaO2 (NCBIProtein:ABB69746.1).
   llm_assisted: true

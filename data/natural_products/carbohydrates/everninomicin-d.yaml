@@ -129,10 +129,10 @@ causal_graphs:
       adjacent evdS6-labelled HXZ27_04050/QLD23490.1. The PDB-linked UniProt A0A1C5ADV9
       was rejected as an exact parent: it is 324 aa and has two internal sequence
       conflicts with the assayed protein, in addition to the N-terminal difference.
-      Exact-locus/accession and taxon-lineage length-329 UniProt searches found no
-      exact match; this is a bounded search, not a claim of global absence. Current
-      GenPept assigns M. carbonacea subsp. aurantiaca, NRRL 2997, NCBITaxon:3454472;
-      its parent is NCBITaxon:47853, the species in the pinned MIBiG record.'
+      UniParc UPI0015DCE6B0 archives the exact 329-aa QLD23489.2 sequence with zero
+      active or inactive UniProtKB cross-references. Current GenPept assigns M. carbonacea
+      subsp. aurantiaca, NRRL 2997, NCBITaxon:3454472; its parent is NCBITaxon:47853,
+      the species in the pinned MIBiG record.'
     evidence:
     - reference: DOI:10.1016/j.jbc.2023.104893
       evidence_type: PRIMARY_EXPERIMENT
@@ -146,6 +146,12 @@ causal_graphs:
     - reference: https://ars.els-cdn.com/content/image/1-s2.0-S002192582301921X-mmc1.docx
       evidence_type: PRIMARY_EXPERIMENT
       notes: 'Tables S1/S2: genomic cloning primers and producer/host context.'
+    - reference: https://rest.uniprot.org/uniparc/UPI0015DCE6B0.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI0015DCE6B0 (329 aa) links active EMBL QLD23489.2 (Micromonospora
+        carbonacea var. aurantiaca, taxon 573964, EvdS6) with zero active or inactive
+        UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: evds6
     predicate: produces_in_vitro
     object: udp_ketoxylose
@@ -268,7 +274,8 @@ causal_graphs:
     numbering matches native parent QLD23489.2. No mutant-specific accession is assigned
     here; these constructs are not equated to the native sequence. The R278A and R279A
     construct identities need review because of a Table S1 primer-label discrepancy;
-    their edges preserve reported results.
+    their edges preserve reported results. UniParc UPI0015DCE6B0 (329 aa) links active
+    EMBL QLD23489.2 with zero active or inactive UniProtKB entries.
   nodes:
   - node_id: h87a
     label: Reported EvdS6 H87A construct
@@ -465,6 +472,12 @@ causal_graphs:
       retrieved_on: '2026-10-17'
       notes: CP058322.1 HXZ27_04045 / QLD23489.2 is the 329-aa native EvdS6 UDP-D-glucuronic
         acid decarboxylase/reductase parent translation.
+    - reference: https://rest.uniprot.org/uniparc/UPI0015DCE6B0.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI0015DCE6B0 (329 aa) links active EMBL QLD23489.2 (Micromonospora
+        carbonacea var. aurantiaca, taxon 573964, EvdS6) with zero active or inactive
+        UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: evds6_parent
     predicate: is the wild-type parent of
     object: t126a
@@ -481,6 +494,12 @@ causal_graphs:
       retrieved_on: '2026-10-17'
       notes: CP058322.1 HXZ27_04045 / QLD23489.2 is the 329-aa native EvdS6 UDP-D-glucuronic
         acid decarboxylase/reductase parent translation.
+    - reference: https://rest.uniprot.org/uniparc/UPI0015DCE6B0.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI0015DCE6B0 (329 aa) links active EMBL QLD23489.2 (Micromonospora
+        carbonacea var. aurantiaca, taxon 573964, EvdS6) with zero active or inactive
+        UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: evds6_parent
     predicate: is the wild-type parent of
     object: e128a
@@ -497,6 +516,12 @@ causal_graphs:
       retrieved_on: '2026-10-17'
       notes: CP058322.1 HXZ27_04045 / QLD23489.2 is the 329-aa native EvdS6 UDP-D-glucuronic
         acid decarboxylase/reductase parent translation.
+    - reference: https://rest.uniprot.org/uniparc/UPI0015DCE6B0.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI0015DCE6B0 (329 aa) links active EMBL QLD23489.2 (Micromonospora
+        carbonacea var. aurantiaca, taxon 573964, EvdS6) with zero active or inactive
+        UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: evds6_parent
     predicate: is the wild-type parent of
     object: n179a
@@ -513,6 +538,12 @@ causal_graphs:
       retrieved_on: '2026-10-17'
       notes: CP058322.1 HXZ27_04045 / QLD23489.2 is the 329-aa native EvdS6 UDP-D-glucuronic
         acid decarboxylase/reductase parent translation.
+    - reference: https://rest.uniprot.org/uniparc/UPI0015DCE6B0.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI0015DCE6B0 (329 aa) links active EMBL QLD23489.2 (Micromonospora
+        carbonacea var. aurantiaca, taxon 573964, EvdS6) with zero active or inactive
+        UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: evds6_parent
     predicate: is the wild-type parent of
     object: r278a
@@ -529,6 +560,12 @@ causal_graphs:
       retrieved_on: '2026-10-17'
       notes: CP058322.1 HXZ27_04045 / QLD23489.2 is the 329-aa native EvdS6 UDP-D-glucuronic
         acid decarboxylase/reductase parent translation.
+    - reference: https://rest.uniprot.org/uniparc/UPI0015DCE6B0.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI0015DCE6B0 (329 aa) links active EMBL QLD23489.2 (Micromonospora
+        carbonacea var. aurantiaca, taxon 573964, EvdS6) with zero active or inactive
+        UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: evds6_parent
     predicate: is the wild-type parent of
     object: r279a
@@ -545,6 +582,12 @@ causal_graphs:
       retrieved_on: '2026-10-17'
       notes: CP058322.1 HXZ27_04045 / QLD23489.2 is the 329-aa native EvdS6 UDP-D-glucuronic
         acid decarboxylase/reductase parent translation.
+    - reference: https://rest.uniprot.org/uniparc/UPI0015DCE6B0.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI0015DCE6B0 (329 aa) links active EMBL QLD23489.2 (Micromonospora
+        carbonacea var. aurantiaca, taxon 573964, EvdS6) with zero active or inactive
+        UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
 - graph_id: everninomicin-d-oxygenase-deletion-readouts
   scope: BIOSYNTHESIS
   description: Native gene-disruption evidence for EvdO1 and EvdMO1 in everninomicin
@@ -631,6 +674,12 @@ causal_graphs:
       evidence_type: DATABASE_ASSERTION
       notes: Native evdMO1/HXZ27_04060 translation in CP058322.1.
       retrieved_on: '2026-10-03'
+    - reference: https://rest.uniprot.org/uniparc/UPI0015DCED91.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI0015DCED91 (450 aa) links active EMBL QLD28329.2 (Micromonospora
+        carbonacea var. aurantiaca, taxon 573964, EvdMO1) and inactive UniProtKB/TrEMBL
+        A0A7H8XVJ8, with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: delete_evdmo1
     predicate: abolishes_detectable
     object: evd_detection
@@ -817,12 +866,13 @@ causal_graphs:
       experimental construct remains REVIEW_NEEDED. The paper names ATCC 27115 genomic
       DNA and pET28a(+)/E. coli BL21(DE3) expression. PDB-linked UniProt A0A1C5AE13
       was not used as an exact parent because it differs at H100N, T219K, A232T and
-      S444A (native-to-UniProt). Exact-locus/accession and taxonomy-lineage length-450
-      UniProt searches found no exact parent; this is a bounded result. The domain
-      is a separately expressed truncation, not a demonstrated proteolytic product.
-      Both 5T38 and 5T39 deposit the same 21-aa extension plus native residues 1-233.
-      The published truncation primer inserts TGA after R233, consistent with that
-      endpoint; the residue-447 discrepancy is outside this domain.
+      S444A (native-to-UniProt). UniParc UPI0015DCED91 links active EMBL QLD28329.2
+      and inactive UniProtKB/TrEMBL A0A7H8XVJ8 (450 aa, EvdMO1, taxon 573964) with
+      zero active UniProtKB entries. The domain is a separately expressed truncation,
+      not a demonstrated proteolytic product. Both 5T38 and 5T39 deposit the same
+      21-aa extension plus native residues 1-233. The published truncation primer
+      inserts TGA after R233, consistent with that endpoint; the residue-447 discrepancy
+      is outside this domain.
     evidence:
     - reference: DOI:10.1021/acs.biochem.8b00836
       evidence_type: PRIMARY_EXPERIMENT
@@ -840,6 +890,12 @@ causal_graphs:
       evidence_type: DATABASE_ASSERTION
       notes: Deposited native residues 1-233 plus tag and bound SAH; 1.15 A.
       retrieved_on: '2026-10-03'
+    - reference: https://rest.uniprot.org/uniparc/UPI0015DCED91.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI0015DCED91 (450 aa) links active EMBL QLD28329.2 (Micromonospora
+        carbonacea var. aurantiaca, taxon 573964, EvdMO1) and inactive UniProtKB/TrEMBL
+        A0A7H8XVJ8, with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: evdmo1
     predicate: contains_observed_bound_metal
     object: nickel
@@ -949,4 +1005,12 @@ curation_history:
     / QLD23479.1 EvdO1 sequence) in everninomicin-d-oxygenase-deletion-readouts and
     anchored the six EvdS6 alanine variants to native parent NCBIProtein:QLD23489.2
     (CP058322.1 HXZ27_04045, 329 aa).
+  llm_assisted: true
+- timestamp: '2026-10-30T11:59:12Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: 'Added verified UniParc UPI0015DCED91 and UPI0015DCE6B0 database assertions
+    and audit notes for EvdMO1 (QLD28329.2, inactive UniProtKB/TrEMBL A0A7H8XVJ8)
+    and EvdS6 (QLD23489.2, zero UniProtKB entries across all six evds6_parent wild-type
+    parent edges, #1056).'
   llm_assisted: true

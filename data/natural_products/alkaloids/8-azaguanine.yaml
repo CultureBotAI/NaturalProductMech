@@ -729,8 +729,8 @@ causal_graphs:
     predicate: deletes_gene_represented_by
     object: azgb_reference
     notes: The identifier denotes a deposited native gene product, not an intact protein
-      in the deletion strain or an independently sequenced mutant allele. No UniProt
-      homolog or other-strain Ptn protein is substituted.
+      in the deletion strain or an independently sequenced mutant allele. UniParc
+      UPI0006E298C9 links inactive S. pathocidini TrEMBL A0A6G9KGR0; no homolog substituted.
     evidence:
     - reference: DOI:10.3389/fbioe.2020.603514
       evidence_type: PRIMARY_EXPERIMENT
@@ -754,6 +754,12 @@ causal_graphs:
         matching the deposited translation. This is reference correspondence, not
         historical-stock or mutant-sequence identity. Article Illumina versus deposit
         PacBio metadata remains unresolved.
+    - reference: https://rest.uniprot.org/uniparc/UPI0006E298C9.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UPI0006E298C9 (408 aa) links active EMBL QLM04709.1 and inactive S. pathocidini
+        TrEMBL A0A6G9KGR0 (ACH429_00970); active UniProtKB xrefs are other Streptomyces
+        spp.
+      retrieved_on: '2026-10-30'
   - subject: azgb_deletion
     predicate: has_reported_reduced_amount_of
     object: azaguanine
@@ -1028,8 +1034,8 @@ causal_graphs:
     object: azgi_reference
     notes: The accession denotes the deposited native gene product, not an intact
       protein in the deletion strain or an independently sequenced mutant allele.
-      No exact UniProt mapping was established by the archived identifier-specific
-      query; no homolog or other-strain Ptn protein is substituted.
+      UniParc UPI001862886B links inactive S. pathocidini TrEMBL A0A7G3ZQC7 (zero
+      active UniProtKB xrefs); no homolog substituted.
     evidence:
     - reference: DOI:10.3389/fbioe.2020.603514
       evidence_type: PRIMARY_EXPERIMENT
@@ -1053,6 +1059,11 @@ causal_graphs:
         matching the deposited translation. Reference correspondence is not historical-stock
         or mutant-sequence identity. Article Illumina versus deposit PacBio metadata
         remains unresolved.
+    - reference: https://rest.uniprot.org/uniparc/UPI001862886B.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI001862886B (682 aa) links active EMBL QLM04715.1 (8-AzgI)
+        and inactive S. pathocidini TrEMBL A0A7G3ZQC7 (zero active UniProtKB xrefs).
+      retrieved_on: '2026-10-30'
   - subject: azgi_deletion
     predicate: has_reported_no_change_in_amount_of
     object: azaguanine
@@ -1076,8 +1087,8 @@ causal_graphs:
     object: azgj_reference
     notes: The accession denotes the deposited native gene product, not an intact
       protein in the deletion strain or an independently sequenced mutant allele.
-      No exact UniProt mapping was established by the archived identifier-specific
-      query; no homolog or other-strain Ptn protein is substituted.
+      UniParc UPI00185FCABD links inactive S. pathocidini TrEMBL A0A7G3ZQC8 (zero
+      active UniProtKB xrefs); no homolog substituted.
     evidence:
     - reference: DOI:10.3389/fbioe.2020.603514
       evidence_type: PRIMARY_EXPERIMENT
@@ -1102,6 +1113,11 @@ causal_graphs:
         matching the deposited translation. Reference correspondence is not historical-stock
         or mutant-sequence identity. Article Illumina versus deposit PacBio metadata
         remains unresolved.
+    - reference: https://rest.uniprot.org/uniparc/UPI00185FCABD.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI00185FCABD (103 aa) links active EMBL QLM04716.1 (8-AzgJ)
+        and inactive S. pathocidini TrEMBL A0A7G3ZQC8 (zero active UniProtKB xrefs).
+      retrieved_on: '2026-10-30'
   - subject: azgj_deletion
     predicate: has_reported_reduced_amount_of
     object: azaguanine
@@ -1122,8 +1138,8 @@ causal_graphs:
     object: azgk_reference
     notes: The accession denotes the deposited native gene product, not an intact
       protein in the deletion strain or an independently sequenced mutant allele.
-      No exact UniProt mapping was established by the archived identifier-specific
-      query; no homolog or other-strain Ptn protein is substituted.
+      UniParc UPI0006E35D5C links inactive S. pathocidini TrEMBL A0A7G3ZQC9 (ACH429_01015)
+      (active UniProtKB xrefs are other Streptomyces spp.); no homolog substituted.
     evidence:
     - reference: DOI:10.3389/fbioe.2020.603514
       evidence_type: PRIMARY_EXPERIMENT
@@ -1148,6 +1164,12 @@ causal_graphs:
         matching the deposited translation. Reference correspondence is not historical-stock
         or mutant-sequence identity. Article Illumina versus deposit PacBio metadata
         remains unresolved.
+    - reference: https://rest.uniprot.org/uniparc/UPI0006E35D5C.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI0006E35D5C (277 aa) links active EMBL QLM04717.1 (8-AzgK)
+        and inactive S. pathocidini TrEMBL A0A7G3ZQC9 (ACH429_01015) (active UniProtKB
+        xrefs are other Streptomyces spp.).
+      retrieved_on: '2026-10-30'
   - subject: azgk_deletion
     predicate: has_reported_small_increase_in_amount_of
     object: azaguanine
@@ -1284,4 +1306,11 @@ curation_history:
     example nodes (A0A6G9KI63, A0A6G9KI21, A0A6G9KJ81, A0A7G3ZQC3, A0A6G9KIY0, A0A7G3ZQC5,
     A0A7G3ZQC6) for 8-AzgA, 8-AzgC, 8-AzgD, 8-AzgE, 8-AzgF, 8-AzgG, and 8-AzgH via
     UniParc.
+  llm_assisted: true
+- timestamp: '2026-10-30T11:14:36Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added UniParc UPI0006E298C9, UPI001862886B, UPI00185FCABD and UPI0006E35D5C
+    assertions for QLM04709.1 and QLM04715.1-QLM04717.1 (inactive S. pathocidini TrEMBL
+    A0A6G9KGR0 and A0A7G3ZQC7-A0A7G3ZQC9).
   llm_assisted: true

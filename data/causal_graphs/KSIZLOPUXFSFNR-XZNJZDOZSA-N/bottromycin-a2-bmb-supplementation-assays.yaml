@@ -36,6 +36,12 @@ graph:
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-03'
       notes: 333-aa BmbG; identity from SI Table S1, purified protein in Figure S3.
+    - reference: https://rest.uniprot.org/uniparc/UPI00027EA68A.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI00027EA68A (333 aa) links active EMBL CCM09447.1 (Streptomyces
+        bottropensis, taxon 42239, gene bmbG) and inactive UniProtKB/TrEMBL K0P1P9
+        (bmbG), with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
     notes: BmbG supplied alone as supplement; comparison is endpoint conversion to
       the -18 Da species.
   - subject: bmbh
@@ -48,6 +54,12 @@ graph:
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-03'
       notes: 415-aa BmbH; identity from SI Table S1, purified protein in Figure S3.
+    - reference: https://rest.uniprot.org/uniparc/UPI00027EA68B.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI00027EA68B (415 aa) links active EMBL CCM09448.1 (Streptomyces
+        bottropensis, taxon 42239, gene bmbH) and inactive UniProtKB/TrEMBL K0P8F1
+        (bmbH), with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
     notes: BmbH supplied alone as supplement; no claim of statistical equivalence
       or universal lack of effect.
   - subject: bmbg
@@ -73,4 +85,11 @@ curation_history:
   action: ADDED_UNIPROT_PROTEIN_EXAMPLES
   changes: Extracted bottromycin-a2-bmb-supplementation-assays to an exact-owner causal
     graph component to keep bottromycin-a2-2.yaml within the 64-KiB artifact limit.
+  llm_assisted: true
+- timestamp: '2026-10-30T11:15:28Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added verified UniParc UPI00027EA68A and UPI00027EA68B database assertions
+    documenting inactive UniProtKB/TrEMBL cross-references K0P1P9 (BmbG, CCM09447.1)
+    and K0P8F1 (BmbH, CCM09448.1).
   llm_assisted: true

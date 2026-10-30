@@ -158,6 +158,12 @@ causal_graphs:
         Family/product annotations are not independent proof of the specific reaction.
         Gene/species and exact GenPept-xref UniProtKB searches returned no entries
         on2026-10-07; this is not global absence and no homolog was selected.
+    - reference: https://rest.uniprot.org/uniparc/UPI0010059CF8.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI0010059CF8 (310 aa) links active EMBL AXG22411.1 (Nocardia
+        argentinensis, taxon 1311812, gene ngnO1) and inactive UniProtKB/TrEMBL A0A3S7PZJ5,
+        with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: ngno1
     predicate: is_inferred_paired_oxidation_participant_in_biosynthesis_of
     object: nargenicin_a1
@@ -202,6 +208,12 @@ causal_graphs:
         owner SMILES, locusMH544245.1 and taxon1311812. No NgnO1/O2 gene-function
         or locus evidence is supplied by this entry. It anchors the source compound/locus
         assertion only, not the experimental function or producer-grade upgrade.
+    - reference: https://rest.uniprot.org/uniparc/UPI0010059CF8.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI0010059CF8 (310 aa) links active EMBL AXG22411.1 (Nocardia
+        argentinensis, taxon 1311812, gene ngnO1) and inactive UniProtKB/TrEMBL A0A3S7PZJ5,
+        with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: ngno2
     predicate: is_required_partner_in_reported_assay_for
     object: related_pathway_assay
@@ -234,6 +246,12 @@ causal_graphs:
         Family/product annotations are not independent proof of the specific reaction.
         Gene/species and exact GenPept-xref UniProtKB searches returned no entries
         on2026-10-07; this is not global absence and no homolog was selected.
+    - reference: https://rest.uniprot.org/uniparc/UPI00100575B1.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI00100575B1 (421 aa) links active EMBL AXG22410.1 (Nocardia
+        argentinensis, taxon 1311812, gene ngnO2) and inactive UniProtKB/TrEMBL A0A3S7PZG8,
+        with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: ngno2
     predicate: is_inferred_paired_oxidation_participant_in_biosynthesis_of
     object: nargenicin_a1
@@ -278,6 +296,12 @@ causal_graphs:
         owner SMILES, locusMH544245.1 and taxon1311812. No NgnO1/O2 gene-function
         or locus evidence is supplied by this entry. It anchors the source compound/locus
         assertion only, not the experimental function or producer-grade upgrade.
+    - reference: https://rest.uniprot.org/uniparc/UPI00100575B1.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI00100575B1 (421 aa) links active EMBL AXG22410.1 (Nocardia
+        argentinensis, taxon 1311812, gene ngnO2) and inactive UniProtKB/TrEMBL A0A3S7PZG8,
+        with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
 - graph_id: nargenicin-a1-ngnd-database-cyclase-native-parent
   scope: BIOSYNTHESIS
   description: Qualified database assignment of NgnD as a putative cyclase in nargenicin
@@ -356,6 +380,12 @@ causal_graphs:
         owner SMILES, source taxon 1311812 and locus MH544245.1. This is a compound/locus
         anchor only: the entry supplies no NgnD gene-function evidence and does not
         support a producer or cluster evidence-grade upgrade.'
+    - reference: https://rest.uniprot.org/uniparc/UPI001005A892.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI001005A892 (152 aa) links active EMBL AXG22404.1 (Nocardia
+        argentinensis, taxon 1311812, gene ngnD) and inactive UniProtKB/TrEMBL A0A3S7PZF0,
+        with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
   curator: seed_from_sources
@@ -391,4 +421,11 @@ curation_history:
     phenotype, exact cycloaddition reaction, mature owner formation, primary-paper
     access, producer-grade promotion or full-record REVIEWED status is claimed for
     NgnD.
+  llm_assisted: true
+- timestamp: '2026-10-30T11:08:57Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added verified UniParc UPI0010059CF8, UPI00100575B1 and UPI001005A892 database
+    assertions documenting inactive UniProtKB/TrEMBL cross-references A0A3S7PZJ5 (NgnO1,
+    AXG22411.1), A0A3S7PZG8 (NgnO2, AXG22410.1) and A0A3S7PZF0 (NgnD, AXG22404.1).
   llm_assisted: true

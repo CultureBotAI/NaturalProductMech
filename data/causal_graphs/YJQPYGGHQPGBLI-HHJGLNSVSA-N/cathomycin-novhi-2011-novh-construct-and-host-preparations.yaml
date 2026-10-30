@@ -80,6 +80,18 @@ graph:
     - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
       evidence_type: CURATOR_INFERENCE
       notes: Independent version comparison.
+    - reference: https://rest.uniprot.org/uniparc/UPI00000B0D82.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI00000B0D82 (600 aa) archives historical EMBL AAF67501.1 and
+        UniProtKB/Swiss-Prot Q9L9G0 sequence version 1 (before the 2012 AF170880.4
+        revision).
+      retrieved_on: '2026-10-30'
+    - reference: https://rest.uniprot.org/uniparc/UPI0002591263.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI0002591263 (600 aa) archives current EMBL AAF67501.2 and active
+        reviewed UniProtKB/Swiss-Prot Q9L9G0 sequence version 2 (novH, Streptomyces
+        niveus, taxon 193462).
+      retrieved_on: '2026-10-30'
   - subject: old
     predicate: matches_selected_window_in
     object: alignment
@@ -252,4 +264,11 @@ curation_history:
   action: RECORD_CURATED
   changes: 'Add cathomycin-novhi-2011-novh-construct-and-host-preparations with source-checked
     NovH/NovI evidence and #561 boundaries.'
+  llm_assisted: true
+- timestamp: '2026-10-30T11:15:29Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added verified UniParc UPI00000B0D82 and UPI0002591263 database assertions
+    distinguishing historical AAF67501.1 (Q9L9G0 v1) from current AAF67501.2 (UniProtKB:Q9L9G0
+    v2).
   llm_assisted: true

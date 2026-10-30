@@ -100,6 +100,12 @@ graph:
       evidence_type: CURATOR_INFERENCE
       notes: Exact native sequence and source-identity audit.
       retrieved_on: '2026-10-06'
+    - reference: https://rest.uniprot.org/uniparc/UPI000211726F.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI000211726F (111 aa) links active EMBL CBK62719.1 (Pseudoalteromonas
+        sp. SANK 73390, taxon 907232, gene tacpD) and inactive UniProtKB/TrEMBL F8J3F2,
+        with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: TacpD
     predicate: is_native_sequence_reference_for
     object: TacpD_prep
@@ -202,6 +208,12 @@ graph:
       evidence_type: CURATOR_INFERENCE
       notes: Exact native sequence and source-identity audit.
       retrieved_on: '2026-10-06'
+    - reference: https://rest.uniprot.org/uniparc/UPI0002117270.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI0002117270 (241 aa) links active EMBL CBK62720.1 (Pseudoalteromonas
+        sp. SANK 73390, taxon 907232, gene tmlS) and inactive UniProtKB/TrEMBL F8J3F3,
+        with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: TmlS
     predicate: is_native_sequence_reference_for
     object: TmlS_prep
@@ -400,4 +412,10 @@ curation_history:
     main article inaccessible/unread. Native references do not identify complete assay
     stocks. Author-agent issue#601 addressed,not independent approval or full-record
     sign-off.
+  llm_assisted: true
+- timestamp: '2026-10-30T11:15:45Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added verified UniParc UPI000211726F and UPI0002117270 database assertions
+    for TacpD (CBK62719.1, inactive F8J3F2) and TmlS (CBK62720.1, inactive F8J3F3).
   llm_assisted: true

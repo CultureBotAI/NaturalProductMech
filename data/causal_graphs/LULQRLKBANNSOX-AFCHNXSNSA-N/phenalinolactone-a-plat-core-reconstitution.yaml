@@ -11,8 +11,10 @@ graph:
     All four full-cassette genes were amplified from genomic DNA and TEDA-assembled
     under sp44 promoter/sr40 RBS. Authors report sequence-confirming plasmids; curator
     primer mapping supports native CDS boundaries, not independent full-plasmid sequencing.
-    UniProt mapping was unverified after service failures; exact native GenPept accessions
-    are used.
+    UniParc archives UPI000068F398 (PlaT1, ABB69742.1), UPI000068F399 (PlaT2, ABB69743.1),
+    UPI000068F39A (PlaT3, ABB69744.1) and UPI000068F3A4 (PlaT4, ABB69754.1) link only
+    inactive UniProtKB/TrEMBL entries Q2I763, Q2I762, Q2I761 and Q2I775 with zero
+    active UniProtKB accessions; exact native GenPept accessions are used.
   nodes:
   - node_id: plat1
     label: Native PlaT1 parent
@@ -97,6 +99,12 @@ graph:
       evidence_type: CURATOR_INFERENCE
       notes: Curator Table S3 primer/DQ230532.1 CDS-boundary alignment, not independent
         expression-plasmid sequencing.
+    - reference: https://rest.uniprot.org/uniparc/UPI000068F398.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI000068F398 (449 aa) links active EMBL ABB69742.1 (Streptomyces
+        sp. Tu6071, taxon 355249, gene plaT1) and inactive UniProtKB/TrEMBL Q2I763,
+        with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: full
     predicate: supplies_wild_type_encoding_gene_for
     object: plat2
@@ -119,6 +127,12 @@ graph:
       evidence_type: CURATOR_INFERENCE
       notes: Curator Table S3 primer/DQ230532.1 CDS-boundary alignment, not independent
         expression-plasmid sequencing.
+    - reference: https://rest.uniprot.org/uniparc/UPI000068F399.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI000068F399 (571 aa) links active EMBL ABB69743.1 (Streptomyces
+        sp. Tu6071, taxon 355249, gene plaT2) and inactive UniProtKB/TrEMBL Q2I762,
+        with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: full
     predicate: supplies_wild_type_encoding_gene_for
     object: plat3
@@ -141,6 +155,12 @@ graph:
       evidence_type: CURATOR_INFERENCE
       notes: Curator Table S3 primer/DQ230532.1 CDS-boundary alignment, not independent
         expression-plasmid sequencing.
+    - reference: https://rest.uniprot.org/uniparc/UPI000068F39A.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI000068F39A (337 aa) links active EMBL ABB69744.1 (Streptomyces
+        sp. Tu6071, taxon 355249, gene plaT3) and inactive UniProtKB/TrEMBL Q2I761,
+        with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: full
     predicate: supplies_wild_type_encoding_gene_for
     object: plat4
@@ -163,6 +183,12 @@ graph:
       evidence_type: CURATOR_INFERENCE
       notes: Curator Table S3 primer/DQ230532.1 CDS-boundary alignment, not independent
         expression-plasmid sequencing.
+    - reference: https://rest.uniprot.org/uniparc/UPI000068F3A4.json
+      evidence_type: DATABASE_ASSERTION
+      notes: UniParc UPI000068F3A4 (359 aa) links active EMBL ABB69754.1 (Streptomyces
+        sp. Tu6071, taxon 355249, gene plaT4) and inactive UniProtKB/TrEMBL Q2I775,
+        with zero active UniProtKB cross-references.
+      retrieved_on: '2026-10-30'
   - subject: full
     predicate: produces_detectable
     object: cyclic
@@ -320,4 +346,11 @@ curation_history:
     from data/natural_products/unclassified/phenalinolactone-a.yaml at aa0e38c4ac899ca5534b4ce02318c019fc44db29.
     Prior claim curation history remains on the owning record; graph content and evidence
     are unchanged.
+  llm_assisted: true
+- timestamp: '2026-10-30T11:15:54Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added verified UniParc UPI000068F398, UPI000068F399, UPI000068F39A and
+    UPI000068F3A4 database assertions and inactive UniProtKB/TrEMBL Q2I763/Q2I762/Q2I761/Q2I775
+    audit note for PlaT1-PlaT4.
   llm_assisted: true
