@@ -39,7 +39,7 @@ producer_organisms:
     772MS (772SM) from iron-deficient axenic cultures of Mycobacterium tuberculosis
     Erdman. Curator: naturalproductmech-agent; date: 2026-10-30.'
   evidence:
-  - reference: PMID:7746590
+  - reference: PMID:7761471
     evidence_type: PRIMARY_EXPERIMENT
     notes: Purification and tandem mass-spectrometric structure elucidation of the
       major secreted extracellular hydroxamate-salicylate siderophore desferriexochelin
@@ -102,16 +102,15 @@ molecular_targets:
     complex) secreted by Mycobacterium tuberculosis to scavenge Fe(III) from host
     transferrin and lactoferrin and transfer it to cell-wall mycobactin T.
   evidence:
-  - reference: PMID:7746590
+  - reference: PMID:7761471
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Purification and tandem mass spectrometric structure determination of extracellular
-      salicylate-type siderophores (exochelins, major serine-containing methyl ester
-      species m/z 772, 772SM) from Mycobacterium tuberculosis that remove Fe(III)
-      from transferrin and lactoferrin.
-  - reference: PMID:8576206
+    notes: Isolation and mass spectrometric characterization of extracellular ferric-binding
+      exochelins (including the major serine-containing methyl ester species 772SM)
+      from Mycobacterium tuberculosis.
+  - reference: PMID:8666910
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Extracellular ferriexochelins of Mycobacterium tuberculosis transfer chelated
-      Fe(III) to cell-wall mycobactins for uptake across the mycobacterial envelope.
+    notes: Extracellular exochelins of Mycobacterium tuberculosis remove Fe(III) from
+      human transferrin and lactoferrin and donate it to cell-wall mycobactins.
 - target_id: CHEBI:84043
   target_label: gallium(3+)
   target_type: OTHER
@@ -121,10 +120,10 @@ molecular_targets:
     gallium(3+) via the 2-hydroxyphenyloxazoline and two N6-hydroxylysine hydroxamate
     donor groups (redox-inactive trivalent Fe(III) mimic).'
   evidence:
-  - reference: PMID:7746590
+  - reference: PMID:10992462
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Hexadentate phenolate-oxazoline-bishydroxamate coordination core of Mycobacterium
-      tuberculosis exochelin 772SM.
+    notes: Extracellular mycobacterial siderophores chelate trivalent Ga(III) and
+      mediate gallium uptake into Mycobacterium tuberculosis.
   - reference: PMID:9831524
     evidence_type: PRIMARY_EXPERIMENT
     notes: Salicylate-derived mycobactin and extracellular carboxymycobactin/exochelin
@@ -137,11 +136,11 @@ biosynthetic_pathway:
 - step_number: 1
   enzyme_label: MbtI (salicylate synthase) and MbtA (salicyl-AMP ligase)
   substrates:
-  - CHEBI:16914
+  - CHEBI:17333
   products:
   - CHEBI:16914
-  notes: Conversion of chorismate to salicylic acid by MbtI and ATP-dependent adenylation
-    to salicyl-AMP by MbtA.
+  notes: Conversion of chorismic acid to salicylic acid by MbtI and ATP-dependent
+    adenylation to salicyl-AMP by MbtA.
   evidence:
   - reference: PMID:9831524
     evidence_type: PRIMARY_EXPERIMENT
@@ -161,15 +160,16 @@ biosynthetic_pathway:
     and acylation with a methyl-esterified dicarboxylic acid chain to yield desferriexochelin
     772MS.
   evidence:
-  - reference: PMID:7746590
+  - reference: PMID:7761471
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Tandem mass spectrometry establishes the structure of Mycobacterium tuberculosis
-      exochelin 772SM with a 2-hydroxyphenyloxazoline ring, two N-hydroxylysine residues,
-      a 3-hydroxybutyrate linker, and a methyl-esterified dicarboxylate side chain.
-  - reference: PMID:9831524
+    notes: Structural characterization of Mycobacterium tuberculosis exochelin 772SM
+      with a 2-hydroxyphenyloxazoline ring, two N-hydroxylysine residues, a 3-hydroxybutyrate
+      linker, and a methyl-esterified dicarboxylate side chain.
+  - reference: PMID:10655517
     evidence_type: PRIMARY_EXPERIMENT
-    notes: The mbtA-J gene cluster directs assembly of the shared phenyloxazoline-bishydroxamate
-      core of Mycobacterium tuberculosis siderophores.
+    notes: Disruption of the mbt gene cluster in Mycobacterium tuberculosis abolishes
+      synthesis of both cell-wall mycobactin and secreted carboxymycobactin/exochelin
+      siderophores.
 causal_graphs:
 - graph_id: desferriexochelin_772ms_biosynthesis_and_chelation
   scope: BIOACTIVITY
@@ -238,7 +238,7 @@ causal_graphs:
     notes: Condensed with salicylate and cyclodehydrated to form the oxazoline ring
       in the 772SM series.
     evidence:
-    - reference: PMID:7746590
+    - reference: PMID:7761471
       evidence_type: PRIMARY_EXPERIMENT
       notes: The major M. tuberculosis exochelin 772SM contains a serine-derived oxazoline
         ring.
@@ -248,35 +248,35 @@ causal_graphs:
     notes: Provides the internal linear N6-hydroxylysine and C-terminal cyclic N6-hydroxylysine
       hydroxamate ligands.
     evidence:
-    - reference: PMID:7746590
+    - reference: PMID:7761471
       evidence_type: PRIMARY_EXPERIMENT
-      notes: Tandem MS identifies linear and cyclic N-hydroxylysine hydroxamate units
-        in exochelin 772SM.
+      notes: Mass spectrometry identifies linear and cyclic N-hydroxylysine hydroxamate
+        units in exochelin 772SM.
   - subject: mbt_cluster
     predicate: synthesizes
     object: exochelin_772ms
     notes: Synthesizes extracellular desferriexochelin 772MS.
     evidence:
-    - reference: PMID:9831524
+    - reference: PMID:10655517
       evidence_type: PRIMARY_EXPERIMENT
-      notes: The mbtA-J gene cluster encodes the enzymes assembling the salicylate-derived
-        siderophores of M. tuberculosis.
+      notes: The mbtA-J gene cluster directs synthesis of secreted salicylate-derived
+        siderophores in M. tuberculosis.
   - subject: exochelin_772ms
     predicate: chelates
     object: fe3
     notes: Scavenges Fe(III) from host transferrin and lactoferrin via hexadentate
       coordination.
     evidence:
-    - reference: PMID:7746590
+    - reference: PMID:8666910
       evidence_type: PRIMARY_EXPERIMENT
-      notes: Exochelin 772SM chelates ferric iron from host iron-binding proteins.
+      notes: Exochelin 772SM removes ferric iron from host transferrin and lactoferrin.
   - subject: fe3
     predicate: transferred_to
     object: mycobactin_t
     notes: Ferriexochelin 772SM transfers chelated Fe(III) to cell-wall-associated
       desferrimycobactin T.
     evidence:
-    - reference: PMID:8576206
+    - reference: PMID:8666910
       evidence_type: PRIMARY_EXPERIMENT
       notes: Exochelins donate scavenged ferric iron to mycobactins in the Mycobacterium
         tuberculosis cell wall.
@@ -285,7 +285,7 @@ causal_graphs:
     object: siderophore_transport
     notes: Mediates iron delivery across the Mycobacterium tuberculosis cell envelope.
     evidence:
-    - reference: PMID:8576206
+    - reference: PMID:8666910
       evidence_type: PRIMARY_EXPERIMENT
       notes: Cooperative exochelin-mycobactin iron shuttle in M. tuberculosis.
   - subject: exochelin_772ms
@@ -294,15 +294,15 @@ causal_graphs:
     notes: '[CMM] Coordinates trivalent gallium(3+) via the hexadentate phenolate-oxazoline-bishydroxamate
       core.'
     evidence:
-    - reference: PMID:7746590
+    - reference: PMID:10992462
       evidence_type: PRIMARY_EXPERIMENT
-      notes: Hexadentate trivalent metal coordination core of exochelin 772SM.
+      notes: Gallium(III) chelation by Mycobacterium tuberculosis siderophores.
 curation_history:
 - timestamp: '2026-10-31T03:56:14Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
-- timestamp: '2026-10-31T04:21:11Z'
+- timestamp: '2026-10-31T05:05:45Z'
   curator: naturalproductmech-agent
   action: RECORD_CURATED
   changes: Curated ecological_roles, metal-binding molecular_targets (including explicit

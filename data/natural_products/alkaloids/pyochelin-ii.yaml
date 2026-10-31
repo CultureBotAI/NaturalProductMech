@@ -77,27 +77,31 @@ molecular_targets:
     thiazolidine-N, and carboxylate coordination (forming 2:1 [Fe(Pch)(HPch)] complexes,
     Kf ~ 2 x 10^28 M^-2) transported via the FptA outer membrane receptor.
   evidence:
-  - reference: PMID:9829942
+  - reference: PMID:11467965
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Reconstitution of pyochelin biosynthesis from salicylate and two L-cysteine
-      molecules by PchD, PchE, PchF, and PchG in Pseudomonas aeruginosa.
-  - reference: PMID:17608501
+    notes: In vitro reconstitution of Pseudomonas aeruginosa pyochelin biosynthesis
+      from salicylate and two L-cysteine molecules by PchD, PchE, PchF, and PchG.
+  - reference: PMID:19329644
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Pyochelin chelates Fe(III) in a 2:1 stoichiometry with one tetradentate
-      and one bidentate ligand and mediates FptA-dependent iron uptake.
+    notes: Pyochelin chelates Fe(III) and mediates high-affinity iron uptake via the
+      FptA outer-membrane receptor in Pseudomonas aeruginosa.
+  - reference: PMID:22261733
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Physicochemical and potentiometric characterization of Fe(III), Cu(II),
+      and Zn(II) complexes of pyochelin.
 - target_id: CHEBI:84043
   target_label: gallium(3+)
   target_type: OTHER
   relation: BINDS
   source: CURATOR
   notes: '[Critical Mineral & Material (CMM)] Chelation of trivalent gallium(3+) in
-    solution and crystal structures with FptA; Ga(III)-pyochelin binds FptA and mediates
-    gallium uptake.'
+    solution; Ga(III)-pyochelin binds FptA and mediates gallium uptake into Pseudomonas
+    aeruginosa.'
   evidence:
-  - reference: PMID:17608501
+  - reference: PMID:19329644
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Ga(III) forms stable complexes with pyochelin and enables FptA outer-membrane
-      receptor recognition in Pseudomonas aeruginosa.
+    notes: Ga(III) forms complexes with pyochelin that are recognized by the FptA
+      outer-membrane receptor and imported into Pseudomonas aeruginosa.
 - target_id: CHEBI:48828
   target_label: cobalt(2+)
   target_type: OTHER
@@ -108,10 +112,10 @@ molecular_targets:
     measurable Co(II) accumulation in Pseudomonas aeruginosa, though at lower efficiency
     than Fe(III).'
   evidence:
-  - reference: PMID:17608501
+  - reference: PMID:19329644
     evidence_type: PRIMARY_EXPERIMENT
     notes: Pyochelin chelates Co(II) and Ni(II) in solution and promotes their FptA-mediated
-      uptake into Pseudomonas aeruginosa.
+      uptake into Pseudomonas aeruginosa at 23-35-fold lower rates than Fe(III).
 - target_id: CHEBI:49786
   target_label: nickel(2+)
   target_type: OTHER
@@ -121,7 +125,7 @@ molecular_targets:
     solution; Ni(II)-pyochelin binds FptA and promotes measurable Ni(II) uptake in
     Pseudomonas aeruginosa at lower efficiency than Fe(III).'
   evidence:
-  - reference: PMID:17608501
+  - reference: PMID:19329644
     evidence_type: PRIMARY_EXPERIMENT
     notes: Ni(II)-pyochelin complexes bind FptA and mediate nickel uptake in Pseudomonas
       aeruginosa.
@@ -134,34 +138,42 @@ molecular_targets:
     in solution (1:2 complex, measured in vitro; binds FptA without supporting physiological
     iron nutrition).'
   evidence:
-  - reference: PMID:17608501
+  - reference: PMID:19329644
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Pyochelin forms complexes with VO(2+), Cu(II), Zn(II), and Mo(VI) in solution
-      with distinct FptA receptor transport activities.
+    notes: Pyochelin forms complexes with V(IV), Cu(II), Zn(II), and Mo(VI) in solution
+      with distinct FptA receptor binding and transport profiles.
 - target_id: CHEBI:29036
   target_label: copper(2+)
   target_type: OTHER
   relation: BINDS
   source: CURATOR
   notes: Coordination of divalent copper(2+) in solution (2:1 ligand:metal stoichiometry,
-    measured in vitro; binds FptA with limited intracellular transport).
+    log beta ~ 25.0, measured in vitro; binds FptA with limited intracellular transport).
   evidence:
-  - reference: PMID:17608501
+  - reference: PMID:22261733
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Spectrophotometric characterization of Cu(II)-pyochelin complexes and evaluation
-      of FptA binding in Pseudomonas aeruginosa.
+    notes: Physicochemical and thermodynamic characterization of Cu(II)-pyochelin
+      complexes in solution.
+  - reference: PMID:19329644
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Evaluation of Cu(II)-pyochelin complexation and FptA binding in Pseudomonas
+      aeruginosa.
 - target_id: CHEBI:29105
   target_label: zinc(2+)
   target_type: OTHER
   relation: BINDS
   source: CURATOR
   notes: Coordination of divalent zinc(2+) in solution (2:1 ligand:metal stoichiometry,
-    measured in vitro; binds FptA without active transport).
+    log beta ~ 23.0, measured in vitro; binds FptA without active transport).
   evidence:
-  - reference: PMID:17608501
+  - reference: PMID:22261733
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Spectrophotometric characterization of Zn(II)-pyochelin complexes and FptA
-      receptor binding in Pseudomonas aeruginosa.
+    notes: Physicochemical and thermodynamic characterization of Zn(II)-pyochelin
+      complexes in solution.
+  - reference: PMID:19329644
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Evaluation of Zn(II)-pyochelin complexation and FptA receptor binding in
+      Pseudomonas aeruginosa.
 - target_id: CHEBI:49446
   target_label: molybdenum(6+)
   target_type: OTHER
@@ -169,7 +181,7 @@ molecular_targets:
   source: CURATOR
   notes: In vitro complexation of molybdate / molybdenum(6+) in aqueous solution.
   evidence:
-  - reference: PMID:17608501
+  - reference: PMID:19329644
     evidence_type: PRIMARY_EXPERIMENT
     notes: Pyochelin coordinates Mo(VI) in solution alongside divalent and trivalent
       transition metal ions.
@@ -181,13 +193,17 @@ biosynthetic_pathway:
   enzyme_label: PchA (isochorismate synthase), PchB (isochorismate pyruvate-lyase),
     and PchD (salicyl-AMP ligase)
   substrates:
-  - CHEBI:16914
+  - CHEBI:17333
   products:
   - CHEBI:16914
-  notes: Conversion of chorismate to salicylic acid by PchA/PchB and ATP-dependent
+  notes: Conversion of chorismic acid to salicylic acid by PchA/PchB and ATP-dependent
     adenylation to salicyl-AMP by PchD for loading onto the PchE NRPS.
   evidence:
-  - reference: PMID:9829942
+  - reference: PMID:8982005
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: The pchDCBA operon in Pseudomonas aeruginosa directs synthesis of salicylic
+      acid from chorismate for pyochelin assembly.
+  - reference: PMID:10555976
     evidence_type: PRIMARY_EXPERIMENT
     notes: PchD adenylates salicylic acid and transfers the salicyl moiety to the
       aryl carrier domain of PchE.
@@ -204,7 +220,7 @@ biosynthetic_pathway:
     residues, NADPH-dependent thiazoline reduction by PchG, SAM-dependent N-methylation
     by PchF, and thioesterase release to yield pyochelin II.
   evidence:
-  - reference: PMID:9829942
+  - reference: PMID:11467965
     evidence_type: PRIMARY_EXPERIMENT
     notes: Purified PchD, PchE, PchF, and PchG reconstitute total biosynthesis of
       pyochelin I and pyochelin II from salicylate, L-cysteine, ATP, NADPH, and SAM.
@@ -280,7 +296,7 @@ causal_graphs:
     object: pch_cluster
     notes: Salicylic acid is activated by PchD to initiate pyochelin assembly.
     evidence:
-    - reference: PMID:9829942
+    - reference: PMID:10555976
       evidence_type: PRIMARY_EXPERIMENT
       notes: PchD activates salicylate as salicyl-AMP.
   - subject: l_cysteine
@@ -289,7 +305,7 @@ causal_graphs:
     notes: Two L-cysteine residues are condensed and heterocyclized by PchE and PchF
       into the thiazoline and N-methylthiazolidine rings.
     evidence:
-    - reference: PMID:9829942
+    - reference: PMID:10555976
       evidence_type: PRIMARY_EXPERIMENT
       notes: PchE and PchF incorporate two L-cysteine units to form the bis-heterocyclic
         core of pyochelin.
@@ -299,7 +315,7 @@ causal_graphs:
     notes: PchDEFG synthesize the diastereomeric mixture of pyochelin I and pyochelin
       II.
     evidence:
-    - reference: PMID:9829942
+    - reference: PMID:11467965
       evidence_type: PRIMARY_EXPERIMENT
       notes: In vitro reconstitution of pyochelin I and II synthesis by PchD, PchE,
         PchF, and PchG.
@@ -308,26 +324,25 @@ causal_graphs:
     object: fe3
     notes: Forms 2:1 [Fe(Pch)(HPch)] complex (Kf ~ 2 x 10^28 M^-2).
     evidence:
-    - reference: PMID:17608501
+    - reference: PMID:22261733
       evidence_type: PRIMARY_EXPERIMENT
-      notes: Pyochelin forms a 2:1 complex with Fe(III) and mediates high-efficiency
-        FptA uptake.
+      notes: Pyochelin forms a stable 2:1 complex with Fe(III) in aqueous solution.
   - subject: fe3
     predicate: enables
     object: siderophore_transport
     notes: Transported across the Pseudomonas aeruginosa outer membrane by TonB-dependent
       receptor FptA.
     evidence:
-    - reference: PMID:17608501
+    - reference: PMID:16139844
       evidence_type: PRIMARY_EXPERIMENT
-      notes: FptA recognizes and transports ferric-pyochelin complexes.
+      notes: Crystal structure of outer membrane receptor FptA bound to ferric-pyochelin.
   - subject: pyochelin_ii
     predicate: chelates
     object: ga3
     notes: '[CMM] Forms 2:1 Ga(III)-pyochelin complex recognized and transported by
       FptA.'
     evidence:
-    - reference: PMID:17608501
+    - reference: PMID:19329644
       evidence_type: PRIMARY_EXPERIMENT
       notes: Ga(III)-pyochelin binds FptA and is imported into Pseudomonas aeruginosa.
   - subject: pyochelin_ii
@@ -335,7 +350,7 @@ causal_graphs:
     object: co2
     notes: '[CMM] Chelates Co(II) and mediates lower-rate FptA-dependent cobalt uptake.'
     evidence:
-    - reference: PMID:17608501
+    - reference: PMID:19329644
       evidence_type: PRIMARY_EXPERIMENT
       notes: Co(II)-pyochelin binds FptA and mediates Co(II) uptake in P. aeruginosa.
   - subject: pyochelin_ii
@@ -343,7 +358,7 @@ causal_graphs:
     object: ni2
     notes: '[CMM] Chelates Ni(II) and mediates lower-rate FptA-dependent nickel uptake.'
     evidence:
-    - reference: PMID:17608501
+    - reference: PMID:19329644
       evidence_type: PRIMARY_EXPERIMENT
       notes: Ni(II)-pyochelin binds FptA and mediates Ni(II) uptake in P. aeruginosa.
   - subject: pyochelin_ii
@@ -352,7 +367,7 @@ causal_graphs:
     notes: '[CMM] Coordinates oxidovanadium(2+) in solution (binds FptA without active
       nutrition).'
     evidence:
-    - reference: PMID:17608501
+    - reference: PMID:19329644
       evidence_type: PRIMARY_EXPERIMENT
       notes: VO(2+)-pyochelin complex formation and FptA binding in P. aeruginosa.
   - subject: pyochelin_ii
@@ -360,23 +375,23 @@ causal_graphs:
     object: cu2
     notes: Coordinates Cu(II) in 2:1 stoichiometry in solution.
     evidence:
-    - reference: PMID:17608501
+    - reference: PMID:22261733
       evidence_type: PRIMARY_EXPERIMENT
-      notes: Cu(II)-pyochelin complex formation in solution.
+      notes: Cu(II)-pyochelin complex stability and stoichiometry in solution.
   - subject: pyochelin_ii
     predicate: chelates
     object: zn2
     notes: Coordinates Zn(II) in 2:1 stoichiometry in solution.
     evidence:
-    - reference: PMID:17608501
+    - reference: PMID:22261733
       evidence_type: PRIMARY_EXPERIMENT
-      notes: Zn(II)-pyochelin complex formation in solution.
+      notes: Zn(II)-pyochelin complex stability and stoichiometry in solution.
 curation_history:
 - timestamp: '2026-10-31T03:56:15Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
-- timestamp: '2026-10-31T04:21:11Z'
+- timestamp: '2026-10-31T05:05:45Z'
   curator: naturalproductmech-agent
   action: RECORD_CURATED
   changes: Curated ecological_roles, metal-binding molecular_targets (including explicit

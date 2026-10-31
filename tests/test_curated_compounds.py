@@ -48,7 +48,7 @@ CURATED_ROW = {
     "strain": "M145",
     "producer_evidence_basis": "BGC_CHARACTERIZED",
     "mibig_accession": "BGC0000940",
-    "reference": "PMID:15919996",
+    "reference": "PMID:15600304",
     "evidence_type": "PRIMARY_EXPERIMENT",
     "snippet": "Streptomyces coelicolor produces a mixture of desferrioxamines B and G1.",
     "notes": "In-frame deletion of desA-desD abolishes desferrioxamine G1 and B production.",
@@ -79,6 +79,19 @@ def test_load_curated_compounds_rejects_ambiguous_chebi_key():
     second_chebi = {**CHEBI_ROW, "chebi_id": "CHEBI:99999"}
     with pytest.raises(ValueError, match="shared by multiple ChEBI entries"):
         load_curated_compounds([CURATED_ROW], [CHEBI_ROW, second_chebi], [])
+
+
+def test_load_curated_compounds_rejects_mibig_accession_without_bgc_characterized():
+    bad = {**CURATED_ROW, "producer_evidence_basis": "AXENIC_CULTURE"}
+    msg = "mibig_accession requires producer_evidence_basis BGC_CHARACTERIZED"
+    with pytest.raises(ValueError, match=msg):
+        load_curated_compounds([bad], [CHEBI_ROW], [])
+
+
+def test_load_curated_compounds_rejects_unknown_mibig_accession():
+    mibig = [{"mibig_accession": "BGC0000001", "standard_inchi_key": "OTHERKEYXXXXXX-UHFFFAOYSA-N"}]
+    with pytest.raises(ValueError, match="not found in mibig_compounds.tsv"):
+        load_curated_compounds([CURATED_ROW], [CHEBI_ROW], mibig)
 
 
 def test_build_records_emits_curated_compound_and_carries_ecological_roles():

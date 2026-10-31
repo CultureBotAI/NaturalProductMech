@@ -39,8 +39,8 @@ def load_curated_compounds(
     """Validate curator-seeded ChEBI compounds and group their producer claims by InChIKey.
 
     Each row pins a 3-star structured ChEBI row by SHA-256 digest and supplies a
-    causal producer claim (`BGC_CHARACTERIZED`, `BGC_CORRELATED`, `ISOTOPE_FEEDING`,
-    or `AXENIC_CULTURE`) backed by a primary experiment or review citation.
+    causal producer claim (`BGC_CHARACTERIZED`, `ISOTOPE_FEEDING`, or
+    `AXENIC_CULTURE`) backed by a primary experiment or review citation.
     Structures already owned by MIBiG or shared by multiple 3-star ChEBI entries
     are rejected.
     """
@@ -53,6 +53,9 @@ def load_curated_compounds(
     )
     mibig_keys = {
         row["standard_inchi_key"] for row in mibig_rows if row.get("standard_inchi_key")
+    }
+    mibig_accs = {
+        row["mibig_accession"] for row in mibig_rows if row.get("mibig_accession")
     }
 
     grouped: dict[str, list[dict[str, str]]] = defaultdict(list)
@@ -105,8 +108,17 @@ def load_curated_compounds(
             raise ValueError(
                 f"{chebi_id}: curated compound requires a causal producer_evidence_basis"
             )
-        if row["mibig_accession"] and not re.fullmatch(r"BGC\d{7}", row["mibig_accession"]):
-            raise ValueError(f"{chebi_id}: invalid mibig_accession")
+        if row["mibig_accession"]:
+            if not re.fullmatch(r"BGC\d{7}", row["mibig_accession"]):
+                raise ValueError(f"{chebi_id}: invalid mibig_accession")
+            if row["producer_evidence_basis"] != "BGC_CHARACTERIZED":
+                raise ValueError(
+                    f"{chebi_id}: mibig_accession requires producer_evidence_basis BGC_CHARACTERIZED"
+                )
+            if mibig_accs and row["mibig_accession"] not in mibig_accs:
+                raise ValueError(
+                    f"{chebi_id}: mibig_accession {row['mibig_accession']} not found in mibig_compounds.tsv"
+                )
         if not re.fullmatch(r"(?:DOI:10\.\d{4,9}/\S+|PMID:\d+)", row["reference"]):
             raise ValueError(f"{chebi_id}: curated compound requires a DOI or PMID reference")
         if row["evidence_type"] not in ALLOWED_EVIDENCE_TYPES:

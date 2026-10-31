@@ -38,16 +38,16 @@ producer_organisms:
   taxon_label: Pseudomonas aeruginosa PAO1
   evidence_basis: BGC_CHARACTERIZED
   source: CURATOR
-  notes: 'In-frame deletion and in vitro enzymatic reconstitution of the flp operon
-    (PA2292-PA2295) in Pseudomonas aeruginosa PAO1 demonstrate biosynthesis of the
+  notes: 'In-frame deletion and in vitro enzymatic reconstitution of the flp/pab operon
+    (PA2302-PA2306) in Pseudomonas aeruginosa PAO1 demonstrate biosynthesis of the
     metal-free thiohydroxamate chelator fluopsin (N-methyl-N-hydroxythioformamide).
     Curator: naturalproductmech-agent; date: 2026-10-30.'
   evidence:
   - reference: PMID:34793213
     evidence_type: PRIMARY_EXPERIMENT
-    notes: In-frame deletion and in vitro enzymatic reconstitution of the flp operon
-      (PA2292-PA2295) in Pseudomonas aeruginosa PAO1 demonstrate biosynthesis of the
-      metal-free thiohydroxamate chelator fluopsin (N-methyl-N-hydroxythioformamide).
+    notes: In-frame deletion and in vitro enzymatic reconstitution of the flp/pab
+      operon (PA2302-PA2306) in Pseudomonas aeruginosa PAO1 demonstrate biosynthesis
+      of the metal-free thiohydroxamate chelator fluopsin (N-methyl-N-hydroxythioformamide).
   strain: PAO1
 source_concepts:
 - source: CHEBI
@@ -65,19 +65,18 @@ molecular_targets:
   source: CURATOR
   notes: Primary physiological copper(2+) chelation via two N-methyl-N-hydroxylthioamide
     (thiohydroxamate) ligands to form the square-planar bis(N-methyl-N-hydroxythioformamide)copper(II)
-    complex fluopsin C; induced under excess copper for detoxification and antimicrobial
-    defense.
+    complex fluopsin C (YC 73); induced under excess copper for detoxification and
+    antimicrobial defense.
   evidence:
   - reference: PMID:34793213
     evidence_type: PRIMARY_EXPERIMENT
     notes: Pseudomonas aeruginosa synthesizes the thiohydroxamate ligand N-methyl-N-hydroxythioformamide
       (fluopsin) via the flp gene cluster (PA2292-PA2295) in response to elevated
       copper, forming the copper complex fluopsin C.
-  - reference: PMID:5466529
+  - reference: PMID:5549384
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Chemical structure and synthesis of fluopsin C (bis-thiohydroxamate copper(II)
-      complex) and fluopsin F (tris-thiohydroxamate iron(III) complex) from Pseudomonas
-      fluorescens.
+    notes: Structure elucidation and total synthesis of thioformin (N-methyl-N-hydroxythioformamide)
+      and its cupric complex YC 73 (fluopsin C) from Pseudomonas.
 - target_id: CHEBI:29034
   target_label: iron(3+)
   target_type: OTHER
@@ -87,10 +86,10 @@ molecular_targets:
     the octahedral tris(N-methyl-N-hydroxythioformamide)iron(III) complex fluopsin
     F in culture broth.
   evidence:
-  - reference: PMID:5466529
+  - reference: PMID:4927254
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Fluopsin F is the tris(N-methyl-N-hydroxylthioamide)iron(III) coordination
-      complex co-isolated from Pseudomonas fluorescens KY 4032.
+    notes: Synthesis and characterization of metal complexes of thioformin (N-methyl-N-hydroxythioformamide),
+      including the ferric complex fluopsin F.
   - reference: PMID:34793213
     evidence_type: PRIMARY_EXPERIMENT
     notes: The thiohydroxamate monomer synthesized by the flp pathway chelates both
@@ -101,13 +100,14 @@ molecular_targets:
   relation: BINDS
   source: CURATOR
   notes: '[Critical Mineral & Material (CMM)] Square-planar bis-thiohydroxamate coordination
-    of divalent nickel(2+) in vitro (2:1 ligand:Ni(II) complex formed by transmetallation/synthetic
+    of divalent nickel(2+) in vitro (2:1 ligand:Ni(II) complex formed by synthetic
     complexation with the N-methyl-N-hydroxylthioamide ligand).'
   evidence:
-  - reference: PMID:5466529
+  - reference: PMID:4927254
     evidence_type: PRIMARY_EXPERIMENT
-    notes: N-methyl-N-hydroxylthioamide forms stable bis-chelate complexes with divalent
-      transition metal ions including Cu(II) and Ni(II).
+    notes: Preparation and characterization of transition-metal chelate complexes
+      of thioformin (N-methyl-N-hydroxythioformamide) including Ni(II), Co(II), Cu(II),
+      Fe(III), and Zn(II).
 - target_id: CHEBI:48828
   target_label: cobalt(2+)
   target_type: OTHER
@@ -117,10 +117,10 @@ molecular_targets:
     ligand in vitro (secondary non-physiological complexation relative to Cu(II) and
     Fe(III)).'
   evidence:
-  - reference: PMID:5466529
+  - reference: PMID:4927254
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Metal chelation properties of N-methyl-N-hydroxylthioamide across transition
-      metal cations.
+    notes: Preparation and characterization of transition-metal chelate complexes
+      of thioformin across divalent and trivalent metal cations.
 - target_id: CHEBI:29105
   target_label: zinc(2+)
   target_type: OTHER
@@ -129,10 +129,10 @@ molecular_targets:
   notes: Bidentate S,O-coordination of divalent zinc(2+) by the thiohydroxamate ligand
     in vitro.
   evidence:
-  - reference: PMID:5466529
+  - reference: PMID:4927254
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Preparation and characterization of metal complexes of N-methyl-N-hydroxylthioamide
-      (fluopsin ligand).
+    notes: Preparation and characterization of metal complexes of thioformin (fluopsin
+      ligand).
 ecological_roles:
 - CHEBI:26672
 - CHEBI:38161
@@ -253,9 +253,9 @@ causal_graphs:
     object: fluopsin_c
     notes: Yields the neutral bis(thiohydroxamato)copper(II) complex fluopsin C.
     evidence:
-    - reference: PMID:5466529
+    - reference: PMID:5549384
       evidence_type: PRIMARY_EXPERIMENT
-      notes: Fluopsin C is the 2:1 thiohydroxamate:Cu(II) coordination complex.
+      notes: Fluopsin C (YC 73) is the 2:1 thioformin:Cu(II) coordination complex.
   - subject: fluopsin_c
     predicate: regulates
     object: copper_transport
@@ -272,15 +272,15 @@ causal_graphs:
     notes: Three equivalents of fluopsin coordinate Fe(III) to form tris(thiohydroxamato)iron(III)
       (fluopsin F).
     evidence:
-    - reference: PMID:5466529
+    - reference: PMID:4927254
       evidence_type: PRIMARY_EXPERIMENT
-      notes: Fluopsin F is the 3:1 thiohydroxamate:Fe(III) complex.
+      notes: Fluopsin F is the 3:1 thioformin:Fe(III) complex.
   - subject: fluopsin
     predicate: chelates
     object: ni2
     notes: '[CMM] In vitro bidentate S,O-coordination of divalent nickel(2+).'
     evidence:
-    - reference: PMID:5466529
+    - reference: PMID:4927254
       evidence_type: PRIMARY_EXPERIMENT
       notes: Formation of divalent metal bis-thiohydroxamate complexes in solution.
   - subject: fluopsin
@@ -288,7 +288,7 @@ causal_graphs:
     object: co2
     notes: '[CMM] In vitro bidentate S,O-coordination of cobalt(2+).'
     evidence:
-    - reference: PMID:5466529
+    - reference: PMID:4927254
       evidence_type: PRIMARY_EXPERIMENT
       notes: Formation of transition-metal thiohydroxamate complexes in solution.
 curation_history:
@@ -296,7 +296,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
-- timestamp: '2026-10-31T04:21:12Z'
+- timestamp: '2026-10-31T05:05:45Z'
   curator: naturalproductmech-agent
   action: RECORD_CURATED
   changes: Curated ecological_roles, metal-binding molecular_targets (including explicit

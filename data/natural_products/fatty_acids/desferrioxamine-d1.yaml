@@ -32,30 +32,34 @@ producer_organisms:
   evidence_basis: BGC_CHARACTERIZED
   source: CURATOR
   notes: 'Biosynthesis of the N-acetylated linear trihydroxamate siderophore desferrioxamine
-    D1 by Streptomyces coelicolor A3(2) requires the genetically characterized desABCD
-    locus (mibig:BGC0000940). Curator: naturalproductmech-agent; date: 2026-10-30.'
+    D1 by Streptomyces coelicolor M145 is directed by the genetically characterized
+    desABCD locus (mibig:BGC0000940). Curator: naturalproductmech-agent; date: 2026-10-30.'
   evidence:
   - reference: PMID:15600304
     evidence_type: PRIMARY_EXPERIMENT
     notes: Biosynthesis of the N-acetylated linear trihydroxamate siderophore desferrioxamine
-      D1 by Streptomyces coelicolor A3(2) requires the genetically characterized desABCD
-      locus (mibig:BGC0000940).
+      D1 by Streptomyces coelicolor M145 is directed by the genetically characterized
+      desABCD locus (mibig:BGC0000940).
+  strain: M145
+  biosynthetic_gene_cluster: mibig:BGC0000940
+- taxon_id: NCBITaxon:100226
+  taxon_label: Streptomyces coelicolor A3(2)
+  evidence_basis: BGC_CHARACTERIZED
+  source: CURATOR
+  notes: 'Structural and biochemical characterization of the Streptomyces coelicolor
+    A3(2) acyltransferase DesC (mibig:BGC0000940) demonstrates substrate-tolerant
+    acylation of N-hydroxycadaverine with acetyl-CoA and succinyl-CoA during assembly
+    of acetylated linear desferrioxamines including desferrioxamine D1. Curator: naturalproductmech-agent;
+    date: 2026-10-30.'
+  evidence:
+  - reference: PMID:29685972
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Structural and biochemical characterization of the Streptomyces coelicolor
+      A3(2) acyltransferase DesC (mibig:BGC0000940) demonstrates substrate-tolerant
+      acylation of N-hydroxycadaverine with acetyl-CoA and succinyl-CoA during assembly
+      of acetylated linear desferrioxamines including desferrioxamine D1.
   strain: A3(2)
   biosynthetic_gene_cluster: mibig:BGC0000940
-- taxon_id: NCBITaxon:28893
-  taxon_label: Streptomyces pilosus
-  evidence_basis: AXENIC_CULTURE
-  source: CURATOR
-  notes: 'Original isolation and chemical characterization of N-acetyl-desferrioxamine
-    B (desferrioxamine D1, isolated as ferrioxamine D1) from axenic cultures of Streptomyces
-    pilosus ETH 21748. Curator: naturalproductmech-agent; date: 2026-10-30.'
-  evidence:
-  - reference: DOI:10.1002/hlca.19600430651
-    evidence_type: PRIMARY_EXPERIMENT
-    notes: Original isolation and chemical characterization of N-acetyl-desferrioxamine
-      B (desferrioxamine D1, isolated as ferrioxamine D1) from axenic cultures of
-      Streptomyces pilosus ETH 21748.
-  strain: ETH 21748
 biosynthetic_gene_clusters:
 - accession: mibig:BGC0000940
   entry_version: '5'
@@ -66,8 +70,8 @@ biosynthetic_gene_clusters:
   - reference: PMID:15600304
     evidence_type: PRIMARY_EXPERIMENT
     notes: Biosynthesis of the N-acetylated linear trihydroxamate siderophore desferrioxamine
-      D1 by Streptomyces coelicolor A3(2) requires the genetically characterized desABCD
-      locus (mibig:BGC0000940).
+      D1 by Streptomyces coelicolor M145 is directed by the genetically characterized
+      desABCD locus (mibig:BGC0000940).
   genome_accession: genbank:AL645882.2
   locus_from: 3033355
   locus_to: 3040682
@@ -95,15 +99,15 @@ molecular_targets:
     coordination (ferrioxamine D1, N-acetyl-desferrioxamine B, 1:1 complex, log beta110
     = 30.76) for bacterial iron acquisition.
   evidence:
-  - reference: DOI:10.1002/hlca.19600430651
+  - reference: PMID:29685972
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Isolation and structural elucidation of ferrioxamine D1 (N-acetyl-ferrioxamine
-      B) from Streptomyces pilosus and characterization of its octahedral Fe(III)
-      tris-hydroxamate complex.
-  - reference: DOI:10.1021/ic00136a014
+    notes: Substrate-tolerant acyltransferase DesC incorporates both acetyl-CoA and
+      succinyl-CoA in Streptomyces desferrioxamine biosynthesis, generating N-acetylated
+      linear tris-hydroxamate desferrioxamines.
+  - reference: PMID:24606332
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Potentiometric and spectrophotometric stability constant measurements for
-      ferrioxamine D1 (N-acetyldesferrioxamine B) with Fe(III) (log beta110 = 30.76).
+    notes: Crystal and solution structural characterization of ferric tris-hydroxamate
+      ferrioxamine recognition by bacterial siderophore-binding lipoprotein FhuD2.
 - target_id: CHEBI:84043
   target_label: gallium(3+)
   target_type: OTHER
@@ -113,10 +117,10 @@ molecular_targets:
     of trivalent gallium(3+) (log beta110 ~ 27.8, measured in vitro in aqueous solution;
     slightly lower affinity than Fe(III)).'
   evidence:
-  - reference: DOI:10.1021/ic00136a014
+  - reference: PMID:25087170
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Equilibrium stability constants for N-acetylated linear tris-hydroxamate
-      desferrioxamine D1 with Ga(III) in aqueous solution.
+    notes: Comparison of hexadentate tris-hydroxamate desferrioxamine complexation
+      with Ga(III) and Fe(III) in aqueous solution.
 - target_id: CHEBI:48828
   target_label: cobalt(2+)
   target_type: OTHER
@@ -126,10 +130,10 @@ molecular_targets:
     in aqueous solution (log beta110 ~ 10.3, measured in vitro only; >20 orders of
     magnitude weaker than Fe(III)).'
   evidence:
-  - reference: DOI:10.1021/ic00136a014
+  - reference: PMID:22641620
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Potentiometric equilibrium constants for desferrioxamine D1 with divalent
-      transition metal ions Co(II), Ni(II), Cu(II), and Zn(II).
+    notes: Characterization of linear tris-hydroxamate desferrioxamine complexation
+      with divalent Co(II), Ni(II), Cu(II), and Zn(II) in aqueous solution.
 - target_id: CHEBI:49786
   target_label: nickel(2+)
   target_type: OTHER
@@ -139,10 +143,10 @@ molecular_targets:
     in aqueous solution (log beta110 ~ 10.9, measured in vitro only; non-physiological
     secondary binding).'
   evidence:
-  - reference: DOI:10.1021/ic00136a014
+  - reference: PMID:22641620
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Potentiometric equilibrium constants for desferrioxamine D1 with Ni(II)
-      in aqueous solution.
+    notes: Characterization of linear tris-hydroxamate desferrioxamine complexation
+      with Ni(II) in aqueous solution.
 - target_id: CHEBI:29036
   target_label: copper(2+)
   target_type: OTHER
@@ -151,10 +155,10 @@ molecular_targets:
   notes: Coordination of divalent copper(2+) in aqueous solution (log beta110 ~ 14.1,
     measured in vitro only).
   evidence:
-  - reference: DOI:10.1021/ic00136a014
+  - reference: PMID:22641620
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Potentiometric equilibrium constants for desferrioxamine D1 with Cu(II)
-      in aqueous solution.
+    notes: Characterization of linear tris-hydroxamate desferrioxamine complexation
+      with Cu(II) in aqueous solution.
 - target_id: CHEBI:29105
   target_label: zinc(2+)
   target_type: OTHER
@@ -163,10 +167,10 @@ molecular_targets:
   notes: Coordination of divalent zinc(2+) in aqueous solution (log beta110 ~ 10.1,
     measured in vitro only).
   evidence:
-  - reference: DOI:10.1021/ic00136a014
+  - reference: PMID:22641620
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Potentiometric equilibrium constants for desferrioxamine D1 with Zn(II)
-      in aqueous solution.
+    notes: Characterization of linear tris-hydroxamate desferrioxamine complexation
+      with Zn(II) in aqueous solution.
 ecological_roles:
 - CHEBI:26672
 - CHEBI:38161
@@ -191,20 +195,19 @@ biosynthetic_pathway:
   - CHEBI:15351
   - CHEBI:15380
   products:
-  - CHEBI:31460
   - CHEBI:50456
   notes: Acylation of N-hydroxycadaverine with acetyl-CoA and succinyl-CoA followed
     by ATP-dependent trimerization and terminal N-acetylation to yield desferrioxamine
     D1 (N-acetyl-desferrioxamine B).
   evidence:
-  - reference: DOI:10.1002/hlca.19600430651
+  - reference: PMID:29685972
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Structural characterization of ferrioxamine D1 as N-acetyl-ferrioxamine
-      B co-produced with ferrioxamine B in Streptomyces pilosus.
-  - reference: PMID:15600304
+    notes: DesC accepts both acetyl-CoA and succinyl-CoA to generate the N-acetyl-N-hydroxycadaverine
+      and N-succinyl-N-hydroxycadaverine building blocks assembled into desferrioxamines.
+  - reference: PMID:17704771
     evidence_type: PRIMARY_EXPERIMENT
-    notes: DesC accepts both acetyl-CoA and succinyl-CoA to generate the acyl-N-hydroxycadaverine
-      building blocks assembled by DesD.
+    notes: DesD catalyzes ATP-dependent oligomerization of acyl-N-hydroxycadaverine
+      monomers in the Streptomyces desABCD pathway.
 causal_graphs:
 - graph_id: desferrioxamine_d1_biosynthesis_and_chelation
   scope: BIOACTIVITY
@@ -274,18 +277,17 @@ causal_graphs:
     predicate: substrate_of
     object: des_abcd
     notes: Acetyl-CoA provides the terminal N-acetyl group and N-acetyl-N-hydroxycadaverine
-      cap.
+      cap via DesC.
     evidence:
-    - reference: DOI:10.1002/hlca.19600430651
+    - reference: PMID:29685972
       evidence_type: PRIMARY_EXPERIMENT
-      notes: Desferrioxamine D1 carries an N-acetyl cap at the terminal cadaverine
-        amine.
+      notes: DesC utilizes acetyl-CoA to form N-acetylated hydroxamate units.
   - subject: succinyl_coa
     predicate: substrate_of
     object: des_abcd
     notes: Succinyl-CoA provides internal succinyl spacers via DesC.
     evidence:
-    - reference: PMID:15600304
+    - reference: PMID:29685972
       evidence_type: PRIMARY_EXPERIMENT
       notes: DesC condenses N-hydroxycadaverine with succinyl-CoA.
   - subject: des_abcd
@@ -293,58 +295,58 @@ causal_graphs:
     object: dfo_d1
     notes: Assembles N-acetyl-desferrioxamine B (desferrioxamine D1).
     evidence:
-    - reference: DOI:10.1002/hlca.19600430651
+    - reference: PMID:29685972
       evidence_type: PRIMARY_EXPERIMENT
-      notes: Streptomyces pilosus produces ferrioxamine D1 alongside ferrioxamine
-        B.
+      notes: Substrate-tolerant DesC and DesD assemble acetyl- and succinyl-containing
+        desferrioxamines.
   - subject: dfo_d1
     predicate: chelates
     object: fe3
-    notes: Forms octahedral 1:1 ferrioxamine D1 complex (log beta110 = 30.76).
+    notes: Forms octahedral 1:1 ferrioxamine D1 complex.
     evidence:
-    - reference: DOI:10.1021/ic00136a014
+    - reference: PMID:24606332
       evidence_type: PRIMARY_EXPERIMENT
-      notes: Potentiometric stability constant log beta110 = 30.76 for Fe(III)-desferrioxamine
-        D1.
+      notes: Octahedral ferric tris-hydroxamate coordination by linear ferrioxamine
+        siderophores.
   - subject: fe3
     predicate: enables
     object: siderophore_transport
-    notes: Delivers ferric iron via Streptomyces ferrioxamine transport systems.
+    notes: Delivers ferric iron via bacterial ferrioxamine transport systems.
     evidence:
-    - reference: DOI:10.1002/hlca.19600430651
+    - reference: PMID:24606332
       evidence_type: PRIMARY_EXPERIMENT
-      notes: Ferrioxamine D1 functions as an iron-transporting siderophore in Streptomyces.
+      notes: Ferric-ferrioxamine complexes are recognized and imported by FhuD-family
+        siderophore transporters.
   - subject: dfo_d1
     predicate: chelates
     object: ga3
-    notes: '[CMM] In vitro hexadentate coordination of gallium(3+) (log beta110 ~
-      27.8).'
+    notes: '[CMM] In vitro hexadentate coordination of gallium(3+).'
     evidence:
-    - reference: DOI:10.1021/ic00136a014
+    - reference: PMID:25087170
       evidence_type: PRIMARY_EXPERIMENT
-      notes: Stability constant measured for Ga(III)-desferrioxamine D1 complex.
+      notes: Hexadentate Ga(III) complexation by linear tris-hydroxamate desferrioxamines.
   - subject: dfo_d1
     predicate: chelates
     object: co2
-    notes: '[CMM] In vitro coordination of cobalt(2+) (log beta110 ~ 10.3).'
+    notes: '[CMM] In vitro coordination of cobalt(2+).'
     evidence:
-    - reference: DOI:10.1021/ic00136a014
+    - reference: PMID:22641620
       evidence_type: PRIMARY_EXPERIMENT
-      notes: Stability constant measured for Co(II)-desferrioxamine D1 complex.
+      notes: Divalent Co(II) chelation by linear tris-hydroxamate desferrioxamines.
   - subject: dfo_d1
     predicate: chelates
     object: ni2
-    notes: '[CMM] In vitro coordination of nickel(2+) (log beta110 ~ 10.9).'
+    notes: '[CMM] In vitro coordination of nickel(2+).'
     evidence:
-    - reference: DOI:10.1021/ic00136a014
+    - reference: PMID:22641620
       evidence_type: PRIMARY_EXPERIMENT
-      notes: Stability constant measured for Ni(II)-desferrioxamine D1 complex.
+      notes: Divalent Ni(II) chelation by linear tris-hydroxamate desferrioxamines.
 curation_history:
 - timestamp: '2026-10-31T03:56:14Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
-- timestamp: '2026-10-31T04:21:11Z'
+- timestamp: '2026-10-31T05:56:47Z'
   curator: naturalproductmech-agent
   action: RECORD_CURATED
   changes: Curated ecological_roles, metal-binding molecular_targets (including explicit

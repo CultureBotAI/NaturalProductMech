@@ -35,16 +35,31 @@ producer_organisms:
   taxon_label: Mycobacterium tuberculosis H37Rv
   evidence_basis: BGC_CHARACTERIZED
   source: CURATOR
-  notes: 'Identification and targeted gene disruption of the mbtA-J NRPS-PKS gene
+  notes: 'Identification and biochemical characterization of the mbtA-J NRPS-PKS gene
     cluster (mibig:BGC0001021) in Mycobacterium tuberculosis H37Rv establish biosynthesis
     of the metal-free apo-siderophore desferrimycobactin T. Curator: naturalproductmech-agent;
     date: 2026-10-30.'
   evidence:
   - reference: PMID:9831524
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Identification and targeted gene disruption of the mbtA-J NRPS-PKS gene
-      cluster (mibig:BGC0001021) in Mycobacterium tuberculosis H37Rv establish biosynthesis
-      of the metal-free apo-siderophore desferrimycobactin T.
+    notes: Identification and biochemical characterization of the mbtA-J NRPS-PKS
+      gene cluster (mibig:BGC0001021) in Mycobacterium tuberculosis H37Rv establish
+      biosynthesis of the metal-free apo-siderophore desferrimycobactin T.
+  strain: H37Rv
+  biosynthetic_gene_cluster: mibig:BGC0001021
+- taxon_id: NCBITaxon:83332
+  taxon_label: Mycobacterium tuberculosis H37Rv
+  evidence_basis: BGC_CHARACTERIZED
+  source: CURATOR
+  notes: 'Targeted disruption of mbtB in Mycobacterium tuberculosis H37Rv (mibig:BGC0001021)
+    completely abolishes biosynthesis of both cell-wall desferrimycobactin T and secreted
+    carboxymycobactins. Curator: naturalproductmech-agent; date: 2026-10-30.'
+  evidence:
+  - reference: PMID:10655517
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Targeted disruption of mbtB in Mycobacterium tuberculosis H37Rv (mibig:BGC0001021)
+      completely abolishes biosynthesis of both cell-wall desferrimycobactin T and
+      secreted carboxymycobactins.
   strain: H37Rv
   biosynthetic_gene_cluster: mibig:BGC0001021
 biosynthetic_gene_clusters:
@@ -56,9 +71,9 @@ biosynthetic_gene_clusters:
   evidence:
   - reference: PMID:9831524
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Identification and targeted gene disruption of the mbtA-J NRPS-PKS gene
-      cluster (mibig:BGC0001021) in Mycobacterium tuberculosis H37Rv establish biosynthesis
-      of the metal-free apo-siderophore desferrimycobactin T.
+    notes: Identification and biochemical characterization of the mbtA-J NRPS-PKS
+      gene cluster (mibig:BGC0001021) in Mycobacterium tuberculosis H37Rv establish
+      biosynthesis of the metal-free apo-siderophore desferrimycobactin T.
   genome_accession: genbank:AL123456.3
   locus_from: 2656200
   locus_to: 2680020
@@ -89,10 +104,14 @@ molecular_targets:
     notes: Identification of the mbtA-J gene cluster in Mycobacterium tuberculosis
       H37Rv encoding the biosynthetic enzymes for salicylate-derived mycobactin T
       siderophore assembly.
-  - reference: PMID:7836283
+  - reference: PMID:10655517
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Mycobactin T and extracellular exochelins cooperate in ferric iron acquisition
-      by Mycobacterium tuberculosis.
+    notes: Deletion of mbtB in Mycobacterium tuberculosis H37Rv abolishes mycobactin
+      T synthesis and impairs ferric iron acquisition and growth in macrophages.
+  - reference: PMID:8666910
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Mycobactin T in the Mycobacterium tuberculosis cell wall accepts ferric
+      iron from extracellular exochelins.
 - target_id: CHEBI:84043
   target_label: gallium(3+)
   target_type: OTHER
@@ -102,10 +121,15 @@ molecular_targets:
     gallium(3+) forming Ga(III)-mycobactin T; exploited as a redox-inactive Fe(III)
     mimic that disrupts Mycobacterium tuberculosis iron-dependent enzymes.'
   evidence:
-  - reference: PMID:9831524
+  - reference: PMID:10992462
     evidence_type: PRIMARY_EXPERIMENT
-    notes: The hexadentate phenolate-oxazoline-bishydroxamate core of mycobactin T
-      coordinates trivalent ferric and gallium ions.
+    notes: Trivalent gallium(3+) is chelated by mycobacterial siderophores and disrupts
+      iron acquisition and intracellular survival of Mycobacterium tuberculosis in
+      human macrophages.
+  - reference: PMID:24060870
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Gallium(III) competes with Fe(III) for mycobacterial siderophore uptake
+      and inhibits iron-dependent enzymes in Mycobacterium tuberculosis.
 - target_id: CHEBI:30046
   target_label: oxidovanadium(2+)
   target_type: OTHER
@@ -115,10 +139,10 @@ molecular_targets:
     by the phenolate-oxazoline-hydroxamate donor set of mycobactin (non-physiological
     coordination complex).'
   evidence:
-  - reference: PMID:7836283
+  - reference: PMID:9831524
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Characterization of metal coordination properties of Mycobacterium tuberculosis
-      mycobactin siderophores.
+    notes: Characterization of the hexadentate phenolate-oxazoline-bishydroxamate
+      metal-chelating scaffold of Mycobacterium tuberculosis mycobactin T.
 ecological_roles:
 - CHEBI:26672
 - CHEBI:38161
@@ -126,11 +150,12 @@ biosynthetic_pathway:
 - step_number: 1
   enzyme_label: MbtI (salicylate synthase) and MbtA (salicyl-AMP ligase)
   substrates:
-  - CHEBI:16914
+  - CHEBI:17333
   products:
   - CHEBI:16914
-  notes: Conversion of chorismate to salicylic acid by MbtI and ATP-dependent adenylation
-    to salicyl-AMP by MbtA for loading onto the aryl carrier domain of MbtB.
+  notes: Conversion of chorismic acid to salicylic acid by MbtI and ATP-dependent
+    adenylation to salicyl-AMP by MbtA for loading onto the aryl carrier domain of
+    MbtB.
   evidence:
   - reference: PMID:9831524
     evidence_type: PRIMARY_EXPERIMENT
@@ -153,6 +178,10 @@ biosynthetic_pathway:
     evidence_type: PRIMARY_EXPERIMENT
     notes: The mbtA-J locus directs hybrid NRPS-PKS assembly of salicylate-derived
       mycobactin T in Mycobacterium tuberculosis H37Rv.
+  - reference: PMID:10655517
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Targeted disruption of mbtB abolishes salicylate-derived mycobactin T biosynthesis
+      in Mycobacterium tuberculosis.
 causal_graphs:
 - graph_id: desferrimycobactin_t_biosynthesis_and_chelation
   scope: BIOACTIVITY
@@ -232,7 +261,7 @@ causal_graphs:
     notes: Hexadentate coordination of Fe(III) by phenolate, oxazoline N, and two
       hydroxamates.
     evidence:
-    - reference: PMID:7836283
+    - reference: PMID:8666910
       evidence_type: PRIMARY_EXPERIMENT
       notes: Mycobactin T binds ferric iron with high affinity in the mycobacterial
         cell envelope.
@@ -242,32 +271,34 @@ causal_graphs:
     notes: Delivers host iron across the mycobacterial cell envelope during intracellular
       infection.
     evidence:
-    - reference: PMID:9831524
+    - reference: PMID:10655517
       evidence_type: PRIMARY_EXPERIMENT
-      notes: Mycobactin T mediates iron acquisition in Mycobacterium tuberculosis.
+      notes: Mycobactin T is essential for Mycobacterium tuberculosis iron acquisition
+        and growth in macrophages.
   - subject: mycobactin_t
     predicate: chelates
     object: ga3
     notes: '[CMM] Coordinates trivalent gallium(3+) as a redox-inactive ferric surrogate.'
     evidence:
-    - reference: PMID:9831524
+    - reference: PMID:10992462
       evidence_type: PRIMARY_EXPERIMENT
-      notes: Hexadentate mycobactin T scaffold binds trivalent Fe(III) and Ga(III)
-        ions.
+      notes: Mycobacterial siderophores bind trivalent Ga(III) in competition with
+        Fe(III).
   - subject: mycobactin_t
     predicate: chelates
     object: vo2
     notes: '[CMM] In vitro coordination of oxidovanadium(2+).'
     evidence:
-    - reference: PMID:7836283
+    - reference: PMID:9831524
       evidence_type: PRIMARY_EXPERIMENT
-      notes: Metal chelation profile of Mycobacterium tuberculosis mycobactin siderophores.
+      notes: Hexadentate phenolate-oxazoline-bishydroxamate coordination core of mycobactin
+        T.
 curation_history:
 - timestamp: '2026-10-31T03:56:14Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
-- timestamp: '2026-10-31T04:21:11Z'
+- timestamp: '2026-10-31T05:05:45Z'
   curator: naturalproductmech-agent
   action: RECORD_CURATED
   changes: Curated ecological_roles, metal-binding molecular_targets (including explicit

@@ -24,6 +24,16 @@ np_classification:
 occurrence_taxon_groups:
 - OTHER_BACTERIAL
 occurrences:
+- taxon_label: Pseudomonas fluorescens
+  source: CHEBI
+  evidence:
+  - reference: PMID:4468081
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:222417
+  taxon_id: NCBITaxon:294
+  taxon_source: NCBITaxon
+  detection_context: MCRL-10107
+  notes: cell culture
 - taxon_label: Pseudomonas aeruginosa
   source: CHEBI
   evidence:
@@ -34,18 +44,6 @@ occurrences:
   taxon_source: NCBITaxon
   notes: This taxon is also recorded as a producer. Production and occurrence are
     distinct claims; their citations may refer to the same publication. Publication
-    independence has not been established.
-- taxon_label: Pseudomonas fluorescens
-  source: CHEBI
-  evidence:
-  - reference: PMID:4468081
-    evidence_type: DATABASE_ASSERTION
-    notes: ChEBI compound origin for CHEBI:222417
-  taxon_id: NCBITaxon:294
-  taxon_source: NCBITaxon
-  detection_context: MCRL-10107
-  notes: cell culture This taxon is also recorded as a producer. Production and occurrence
-    are distinct claims; their citations may refer to the same publication. Publication
     independence has not been established.
 related_records:
 - corpus: AntibioticMech
@@ -58,34 +56,33 @@ bioactivity_summary:
 producer_taxon_groups:
 - OTHER_BACTERIAL
 producer_organisms:
-- taxon_id: NCBITaxon:287
-  taxon_label: Pseudomonas aeruginosa
+- taxon_id: NCBITaxon:208964
+  taxon_label: Pseudomonas aeruginosa PAO1
   evidence_basis: BGC_CHARACTERIZED
   source: CURATOR
-  notes: 'Genetic deletion and biochemical characterization of the flp operon (PA2292-PA2295)
-    in Pseudomonas aeruginosa demonstrate biosynthesis of the bis(N-methyl-N-hydroxythioformamido)copper(II)
+  notes: 'Genetic deletion and biochemical reconstitution of the PA2302-PA2306 operon
+    in Pseudomonas aeruginosa PAO1 demonstrate biosynthesis of the bis(N-methyl-N-hydroxythioformamido)copper(II)
     chalkophore complex fluopsin C. Curator: naturalproductmech-agent; date: 2026-10-30.'
   evidence:
   - reference: PMID:34793213
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Genetic deletion and biochemical characterization of the flp operon (PA2292-PA2295)
-      in Pseudomonas aeruginosa demonstrate biosynthesis of the bis(N-methyl-N-hydroxythioformamido)copper(II)
+    notes: Genetic deletion and biochemical reconstitution of the PA2302-PA2306 operon
+      in Pseudomonas aeruginosa PAO1 demonstrate biosynthesis of the bis(N-methyl-N-hydroxythioformamido)copper(II)
       chalkophore complex fluopsin C.
   strain: PAO1
-- taxon_id: NCBITaxon:294
-  taxon_label: Pseudomonas fluorescens
+- taxon_id: NCBITaxon:287
+  taxon_label: Pseudomonas aeruginosa
   evidence_basis: AXENIC_CULTURE
   source: CURATOR
-  notes: 'Original isolation and structural elucidation of the copper-coordinated
-    thiohydroxamate chalkophore fluopsin C from axenic cultures of Pseudomonas fluorescens
-    KY 4032. Curator: naturalproductmech-agent; date: 2026-10-30.'
+  notes: 'Isolation, structural elucidation, and synthesis of thioformin (fluopsin)
+    and its cupric complex YC 73 (fluopsin C) from Pseudomonas sp. Curator: naturalproductmech-agent;
+    date: 2026-10-30.'
   evidence:
-  - reference: PMID:4924695
+  - reference: PMID:5549384
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Original isolation and structural elucidation of the copper-coordinated
-      thiohydroxamate chalkophore fluopsin C from axenic cultures of Pseudomonas fluorescens
-      KY 4032.
-  strain: KY 4032
+    notes: Isolation, structural elucidation, and synthesis of thioformin (fluopsin)
+      and its cupric complex YC 73 (fluopsin C) from Pseudomonas sp.
+  strain: M18
 source_concepts:
 - source: CHEBI
   source_id: CHEBI:222417
@@ -102,12 +99,12 @@ molecular_targets:
   source: CURATOR
   notes: Intramolecular square-planar bis(N-methyl-N-hydroxythioformamide) S,O-chelation
     of divalent copper(2+); fluopsin C is the native Cu(II)-bound chalkophore/cuprophore
-    complex secreted by Pseudomonas fluorescens and Pseudomonas aeruginosa.
+    complex secreted by Pseudomonas aeruginosa and Pseudomonas fluorescens.
   evidence:
-  - reference: PMID:5466529
+  - reference: PMID:5549384
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Structure elucidation and total synthesis of fluopsin C as bis(N-methyl-N-hydroxylthioamide)copper(II)
-      produced by Pseudomonas fluorescens.
+    notes: Structure elucidation and total synthesis of fluopsin C (antibiotic YC
+      73) as bis(N-methyl-N-hydroxythioformamide)copper(II) produced by Pseudomonas.
   - reference: PMID:34793213
     evidence_type: PRIMARY_EXPERIMENT
     notes: The flp operon (PA2292-PA2295) in Pseudomonas aeruginosa directs copper-inducible
@@ -120,10 +117,10 @@ molecular_targets:
   notes: Transmetallation / metal exchange with ferric iron(3+) yields the tris-chelate
     complex fluopsin F in iron-rich media.
   evidence:
-  - reference: PMID:5466529
+  - reference: PMID:4927254
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Interconversion of the copper complex fluopsin C and the ferric complex
-      fluopsin F in Pseudomonas fluorescens.
+    notes: Preparation and metal exchange of copper-bound YC 73 (fluopsin C) and ferric-bound
+      fluopsin F.
 ecological_roles:
 - CHEBI:26672
 - CHEBI:38161
@@ -145,9 +142,9 @@ biosynthetic_pathway:
     evidence_type: PRIMARY_EXPERIMENT
     notes: Pseudomonas aeruginosa PA2292-PA2295 enzymes synthesize the thiohydroxamate
       monomer which chelates Cu(II) to form fluopsin C.
-  - reference: PMID:5466529
+  - reference: PMID:5549384
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Fluopsin C is formed by 2:1 complexation of N-methyl-N-hydroxylthioamide
+    notes: Fluopsin C (YC 73) is formed by 2:1 complexation of N-methyl-N-hydroxythioformamide
       with Cu(II).
 causal_graphs:
 - graph_id: fluopsin_c_assembly_and_copper_homeostasis
@@ -196,9 +193,9 @@ causal_graphs:
     notes: Divalent copper(2+) is coordinated in square-planar S2O2 geometry within
       fluopsin C.
     evidence:
-    - reference: PMID:5466529
+    - reference: PMID:5549384
       evidence_type: PRIMARY_EXPERIMENT
-      notes: Fluopsin C is bis(N-methyl-N-hydroxylthioamide)copper(II).
+      notes: Fluopsin C is bis(N-methyl-N-hydroxythioformamide)copper(II).
   - subject: fluopsin_c
     predicate: enables
     object: copper_transport
@@ -215,7 +212,7 @@ causal_graphs:
     notes: Exchanges Cu(II) for Fe(III) in ferric-rich media to form the 3:1 complex
       fluopsin F.
     evidence:
-    - reference: PMID:5466529
+    - reference: PMID:4927254
       evidence_type: PRIMARY_EXPERIMENT
       notes: Conversion between Cu(II)-bound fluopsin C and Fe(III)-bound fluopsin
         F.
@@ -224,7 +221,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
-- timestamp: '2026-10-31T04:21:12Z'
+- timestamp: '2026-10-31T05:05:45Z'
   curator: naturalproductmech-agent
   action: RECORD_CURATED
   changes: Curated ecological_roles, metal-binding molecular_targets (including explicit

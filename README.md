@@ -75,9 +75,9 @@ field coverage (records carrying at least one item):
   related_records                       212
   discussions                           362
 
-producer claims: 3423 (822 causal, 162 correlational)
-  AXENIC_CULTURE                          4
-  BGC_CHARACTERIZED                     818
+producer claims: 3424 (823 causal, 162 correlational)
+  AXENIC_CULTURE                          3
+  BGC_CHARACTERIZED                     820
   BGC_CORRELATED                        162
   SOURCE_ASSERTION                     2439
 
