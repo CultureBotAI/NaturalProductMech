@@ -1,0 +1,472 @@
+identifier: CHEBI:83125
+label: desferricoprogen
+chemical_structure:
+  smiles: '[H][C@@]1(CCCN(O)C(=O)/C=C(\C)CCO)NC(=O)[C@]([H])(CCCN(O)C(=O)/C=C(\C)CCOC(=O)[C@H](CCCN(O)C(=O)/C=C(\C)CCO)NC(C)=O)NC1=O'
+  standard_inchi: InChI=1S/C35H56N6O13/c1-23(11-17-42)20-30(45)39(51)14-5-8-27-33(48)38-28(34(49)37-27)9-6-15-40(52)32(47)22-25(3)13-19-54-35(50)29(36-26(4)44)10-7-16-41(53)31(46)21-24(2)12-18-43/h20-22,27-29,42-43,51-53H,5-19H2,1-4H3,(H,36,44)(H,37,49)(H,38,48)/b23-20+,24-21+,25-22+/t27-,28-,29-/m0/s1
+  standard_inchi_key: AKLLFACZGZTMGS-FCRFISLRSA-N
+  stereo_complete: true
+  structure_source: CHEBI
+  structure_source_id: CHEBI:83125
+np_pathway: UNCLASSIFIED
+biosynthesis_origin: NATURAL_PRODUCT
+definition: A member of the class of 2,5-diketopiperazines that is 2,5-diketopiperazine
+  which is substituted at positions 3 and 6 by 3-(hydroxyamino)propyl groups in which
+  the nitrogens have been acylated by (2E)-5-hydroxy-3-methylpent-2-enoyl groups.
+  The substituent at position 3 has been further modified by having its terminal hydroxy
+  group esterified by condensation with the carboxy group of N2-acetyl-N5-hydroxy-L-ornithine
+  in which the N5 nitrogen has been acylated by a (2E)-5-hydroxy-3-methylpent-2-enoyl
+  group.
+definition_source: CHEBI:83125
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-10-31
+  pathway_results: []
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+producer_taxon_groups:
+- FUNGAL
+producer_organisms:
+- taxon_id: NCBITaxon:5141
+  taxon_label: Neurospora crassa
+  evidence_basis: AXENIC_CULTURE
+  source: CURATOR
+  notes: 'Purification and Mossbauer/HPLC characterization of coprogen (desferricoprogen
+    ferric complex) biosynthesized as the major extracellular siderophore of iron-deficient
+    Neurospora crassa 74A. Curator: naturalproductmech-agent; date: 2026-10-31.'
+  evidence:
+  - reference: PMID:2951253
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Purification and Mossbauer/HPLC characterization of coprogen (desferricoprogen
+      ferric complex) biosynthesized as the major extracellular siderophore of iron-deficient
+      Neurospora crassa 74A.
+  strain: 74A
+- taxon_id: NCBITaxon:162425
+  taxon_label: Aspergillus nidulans
+  evidence_basis: AXENIC_CULTURE
+  source: CURATOR
+  notes: 'Isolation and characterization of desferricoprogen and coprogen produced
+    by iron-limited axenic cultures of filamentous ascomycete fungi. Curator: naturalproductmech-agent;
+    date: 2026-10-31.'
+  evidence:
+  - reference: PMID:5484314
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Isolation and characterization of desferricoprogen and coprogen produced
+      by iron-limited axenic cultures of filamentous ascomycete fungi.
+  strain: FGSC A4
+source_concepts:
+- source: CHEBI
+  source_id: CHEBI:83125
+  source_label: desferricoprogen
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-e61206e136
+grounding_status: EXACT
+curation_status: REVIEWED
+molecular_targets:
+- target_id: CHEBI:29034
+  target_label: iron(3+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: Hexadentate octahedral coordination of ferric iron(3+) via three trans-anhydromevalonyl-N5-hydroxy-L-ornithine
+    hydroxamate groups (composed of a diketopiperazine dimer ester-linked to a third
+    N-acetylated monomer) to form coprogen; also oxidizes Fe(II) to Fe(III) under
+    anaerobic conditions.
+  evidence:
+  - reference: PMID:2951253
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Mossbauer spectroscopy and in vivo transport characterization of ferric
+      coprogen (Fe(III)-desferricoprogen) in Neurospora crassa.
+  - reference: PMID:15522421
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: pH-potentiometric, UV-Vis spectrophotometric, and cyclic voltammetric characterization
+      of Fe(III)-desferricoprogen stability in aqueous solution.
+- target_id: CHEBI:84043
+  target_label: gallium(3+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: '[Critical Mineral & Material (CMM)] High-stability octahedral trihydroxamate
+    coordination of trivalent gallium(3+) in aqueous solution measured by pH-potentiometry
+    and UV-Vis spectrophotometry.'
+  evidence:
+  - reference: PMID:15522421
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Potentiometric and spectrophotometric determination of high-stability Ga(III)-desferricoprogen
+      complexes in aqueous solution.
+- target_id: CHEBI:49470
+  target_label: aluminium(3+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: '[Critical Mineral & Material (CMM)] High-stability octahedral trihydroxamate
+    coordination of trivalent aluminium(3+) in aqueous solution measured by pH-potentiometry.'
+  evidence:
+  - reference: PMID:15522421
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Potentiometric determination of Al(III)-desferricoprogen complex formation
+      constants in aqueous solution.
+- target_id: CHEBI:49664
+  target_label: indium(3+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: '[Critical Mineral & Material (CMM)] High-stability octahedral trihydroxamate
+    coordination of trivalent indium(3+) in aqueous solution; because of its longer
+    connecting chain and larger cavity, desferricoprogen forms slightly more stable
+    In(III) complexes than desferrioxamine B.'
+  evidence:
+  - reference: PMID:15522421
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Potentiometric determination of In(III)-desferricoprogen stability constants
+      in aqueous solution.
+- target_id: CHEBI:49544
+  target_label: chromium(3+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: '[Critical Mineral & Material (CMM)] Octahedral coordination of chromium(3+)
+    by desferricoprogen (cis-lambda and trans-delta coordination isomers resolved
+    by reverse-phase HPLC) that competitively inhibit coprogen uptake in Neurospora
+    crassa.'
+  evidence:
+  - reference: PMID:2934378
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Resolution and uptake-inhibition characterization of cis and trans coordination
+      isomers of chromic desferricoprogen in Neurospora crassa.
+- target_id: CHEBI:49786
+  target_label: nickel(2+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: '[Critical Mineral & Material (CMM)] Coordination of divalent nickel(2+)
+    in aqueous solution measured by pH-potentiometry (in vitro solution complexation
+    significantly weaker than trivalent Fe(III), Ga(III), Al(III), and In(III) chelation).'
+  evidence:
+  - reference: PMID:15522421
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: pH-potentiometric and spectrophotometric determination of Ni(II)-desferricoprogen
+      stability constants in aqueous solution.
+- target_id: CHEBI:29036
+  target_label: copper(2+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: Coordination of divalent copper(2+) in aqueous solution measured by pH-potentiometry
+    and UV-Vis spectrophotometry, forming mononuclear and stable trinuclear [Cu3L2]
+    complexes in vitro.
+  evidence:
+  - reference: PMID:15522421
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: pH-potentiometric and UV-Vis characterization of mononuclear and trinuclear
+      [Cu3L2] copper(II)-desferricoprogen complexes.
+- target_id: CHEBI:29105
+  target_label: zinc(2+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: Coordination of divalent zinc(2+) in aqueous solution measured by pH-potentiometry
+    (in vitro complexation weaker than trivalent Fe(III) chelation).
+  evidence:
+  - reference: PMID:15522421
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: pH-potentiometric determination of Zn(II)-desferricoprogen stability constants
+      in aqueous solution.
+- target_id: CHEBI:48775
+  target_label: cadmium(2+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: Moderate-stability coordination of divalent cadmium(2+) in aqueous solution
+    measured by pH-potentiometry in vitro.
+  evidence:
+  - reference: PMID:18486225
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Potentiometric investigation of Cd(II) complexation by desferricoprogen
+      in aqueous solution.
+ecological_roles:
+- CHEBI:26672
+- CHEBI:38161
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_label: L-ornithine N5-monooxygenase (SidA) and trans-anhydromevalonyl-CoA
+    transferase (SidF)
+  substrates:
+  - CHEBI:15729
+  - CHEBI:17710
+  products:
+  - CHEBI:79095
+  notes: N5-hydroxylation of L-ornithine to N5-hydroxy-L-ornithine followed by N5-acylation
+    with mevalonate-derived trans-anhydromevalonyl-CoA to yield N5-trans-anhydromevalonyl-N5-hydroxy-L-ornithine.
+  evidence:
+  - reference: PMID:25062661
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Biosynthesis of coprogen-family siderophores in filamentous fungi requires
+      N5-hydroxyornithine acylation with trans-anhydromevalonyl-CoA.
+  - reference: PMID:19700391
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Iron-repressed transcription of sid1 (NCU07117, L-ornithine N5-monooxygenase)
+      governs coprogen biosynthesis in Neurospora crassa.
+- step_number: 2
+  enzyme_label: Coprogen nonribosomal peptide synthetase (SidD) and N-acetyltransferase
+  substrates:
+  - CHEBI:79095
+  - CHEBI:15351
+  - CHEBI:15422
+  products:
+  - CHEBI:133861
+  - CHEBI:83125
+  notes: NRPS-catalyzed condensation of three N5-trans-anhydromevalonyl-N5-hydroxy-L-ornithine
+    units (forming a diketopiperazine ring linked via an ester bond to a third monomer)
+    producing desferricoprogen B, followed by Nalpha-acetylation to yield desferricoprogen.
+  evidence:
+  - reference: PMID:25062661
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Targeted deletion of the sidD NRPS gene in Aspergillus niger abolishes
+      coprogen B and coprogen biosynthesis.
+  - reference: PMID:19700391
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Production of coprogen by iron-starved Neurospora crassa.
+causal_graphs:
+- graph_id: desferricoprogen_biosynthesis_and_metal_chelation
+  scope: BIOACTIVITY
+  description: Fungal NRPS-directed biosynthesis of the ester-linked diketopiperazine
+    trihydroxamate siderophore desferricoprogen in Neurospora crassa and Aspergillus
+    niger, hexadentate chelation of Fe(III), CMM cations Ga(III), Al(III), In(III),
+    Cr(III), and Ni(II), plus Cu(II), Zn(II), and Cd(II), and bacterial xenosiderophore
+    uptake via FhuE.
+  nodes:
+  - node_id: l_ornithine
+    label: L-ornithine
+    node_type: PRECURSOR
+    identifier: CHEBI:15729
+    grounding_status: GROUNDED
+  - node_id: mevalonate
+    label: (R)-mevalonic acid
+    node_type: PRECURSOR
+    identifier: CHEBI:17710
+    grounding_status: GROUNDED
+  - node_id: h_orn
+    label: N(5)-hydroxy-L-ornithine
+    node_type: PRECURSOR
+    identifier: CHEBI:79095
+    grounding_status: GROUNDED
+  - node_id: sidd
+    label: Coprogen nonribosomal peptide synthetase SidD
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: desferricoprogen_b
+    label: desferricoprogen B
+    node_type: PRECURSOR
+    identifier: CHEBI:133861
+    grounding_status: GROUNDED
+  - node_id: desferricoprogen
+    label: desferricoprogen
+    node_type: COMPOUND
+    identifier: CHEBI:83125
+    grounding_status: GROUNDED
+  - node_id: fe3
+    label: iron(3+)
+    node_type: OTHER
+    identifier: CHEBI:29034
+    grounding_status: GROUNDED
+  - node_id: ga3
+    label: gallium(3+)
+    node_type: OTHER
+    identifier: CHEBI:84043
+    grounding_status: GROUNDED
+  - node_id: al3
+    label: aluminium(3+)
+    node_type: OTHER
+    identifier: CHEBI:49470
+    grounding_status: GROUNDED
+  - node_id: in3
+    label: indium(3+)
+    node_type: OTHER
+    identifier: CHEBI:49664
+    grounding_status: GROUNDED
+  - node_id: cr3
+    label: chromium(3+)
+    node_type: OTHER
+    identifier: CHEBI:49544
+    grounding_status: GROUNDED
+  - node_id: ni2
+    label: nickel(2+)
+    node_type: OTHER
+    identifier: CHEBI:49786
+    grounding_status: GROUNDED
+  - node_id: cu2
+    label: copper(2+)
+    node_type: OTHER
+    identifier: CHEBI:29036
+    grounding_status: GROUNDED
+  - node_id: zn2
+    label: zinc(2+)
+    node_type: OTHER
+    identifier: CHEBI:29105
+    grounding_status: GROUNDED
+  - node_id: cd2
+    label: cadmium(2+)
+    node_type: OTHER
+    identifier: CHEBI:48775
+    grounding_status: GROUNDED
+  - node_id: fhue
+    label: Outer membrane receptor FhuE
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: siderophore_transport
+    label: siderophore transport
+    node_type: PROCESS
+    identifier: GO:0015891
+    grounding_status: GROUNDED
+  edges:
+  - subject: l_ornithine
+    predicate: converted_to
+    object: h_orn
+    notes: N5-hydroxylation of L-ornithine generates N5-hydroxy-L-ornithine.
+    evidence:
+    - reference: PMID:19700391
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: sid1 (NCU07117) encodes L-ornithine N5-monooxygenase initiating coprogen
+        biosynthesis.
+  - subject: mevalonate
+    predicate: substrate_of
+    object: sidd
+    notes: Supplies the trans-anhydromevalonyl acyl groups of the three hydroxamate
+      units.
+    evidence:
+    - reference: PMID:25062661
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Mevalonate-derived trans-anhydromevalonyl-CoA acylates N5-hydroxyornithine.
+  - subject: h_orn
+    predicate: substrate_of
+    object: sidd
+    notes: SidD condenses three N5-trans-anhydromevalonyl-N5-hydroxy-L-ornithine monomers.
+    evidence:
+    - reference: PMID:25062661
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: SidD NRPS assembles the coprogen B / coprogen trihydroxamate scaffold.
+  - subject: sidd
+    predicate: synthesizes
+    object: desferricoprogen_b
+    notes: Releases the deacetylated precursor desferricoprogen B.
+    evidence:
+    - reference: PMID:5484314
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Desferricoprogen B is the N-deacetylated derivative of desferricoprogen.
+  - subject: desferricoprogen_b
+    predicate: precursor_of
+    object: desferricoprogen
+    notes: Nalpha-acetylation converts desferricoprogen B into desferricoprogen.
+    evidence:
+    - reference: PMID:25062661
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Aspergillus niger produces both coprogen B and N-acetylated coprogen
+        via the SidD pathway.
+  - subject: desferricoprogen
+    predicate: chelates
+    object: fe3
+    notes: Hexadentate coordination of ferric iron(3+) to form coprogen.
+    evidence:
+    - reference: PMID:2951253
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Mossbauer study of ferric coprogen in Neurospora crassa.
+  - subject: desferricoprogen
+    predicate: chelates
+    object: ga3
+    notes: '[CMM] High-stability octahedral coordination of gallium(3+) in aqueous
+      solution.'
+    evidence:
+    - reference: PMID:15522421
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Potentiometric and spectrophotometric characterization of Ga(III)-desferricoprogen.
+  - subject: desferricoprogen
+    predicate: chelates
+    object: al3
+    notes: '[CMM] High-stability octahedral coordination of aluminium(3+) in aqueous
+      solution.'
+    evidence:
+    - reference: PMID:15522421
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Potentiometric characterization of Al(III)-desferricoprogen.
+  - subject: desferricoprogen
+    predicate: chelates
+    object: in3
+    notes: '[CMM] High-stability octahedral coordination of indium(3+) in aqueous
+      solution.'
+    evidence:
+    - reference: PMID:15522421
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Potentiometric characterization of In(III)-desferricoprogen.
+  - subject: desferricoprogen
+    predicate: chelates
+    object: cr3
+    notes: '[CMM] Octahedral coordination of chromium(3+) into cis and trans chromic
+      desferricoprogen isomers.'
+    evidence:
+    - reference: PMID:2934378
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Chromic desferricoprogen isomers inhibit coprogen uptake in Neurospora
+        crassa.
+  - subject: desferricoprogen
+    predicate: chelates
+    object: ni2
+    notes: '[CMM] Coordinates divalent nickel(2+) in aqueous solution.'
+    evidence:
+    - reference: PMID:15522421
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Potentiometric stability constants of Ni(II)-desferricoprogen.
+  - subject: desferricoprogen
+    predicate: chelates
+    object: cu2
+    notes: Coordinates divalent copper(2+) into mononuclear and trinuclear [Cu3L2]
+      complexes.
+    evidence:
+    - reference: PMID:15522421
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Potentiometric and UV-Vis characterization of Cu(II)-desferricoprogen.
+  - subject: desferricoprogen
+    predicate: chelates
+    object: zn2
+    notes: Coordinates divalent zinc(2+) in aqueous solution.
+    evidence:
+    - reference: PMID:15522421
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Potentiometric stability constants of Zn(II)-desferricoprogen.
+  - subject: desferricoprogen
+    predicate: chelates
+    object: cd2
+    notes: Coordinates divalent cadmium(2+) with moderate stability in aqueous solution.
+    evidence:
+    - reference: PMID:18486225
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Potentiometric characterization of Cd(II)-desferricoprogen.
+  - subject: fe3
+    predicate: binds
+    object: fhue
+    notes: Ferric-coprogen is recognized by the E. coli outer membrane receptor FhuE.
+    evidence:
+    - reference: PMID:3032906
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: FhuE is the outer membrane receptor for ferric-coprogen in E. coli.
+  - subject: fhue
+    predicate: enables
+    object: siderophore_transport
+    notes: TonB-dependent import of ferric-coprogen across the outer membrane.
+    evidence:
+    - reference: PMID:3032906
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: fhuE-mediated ferric-coprogen transport.
+curation_history:
+- timestamp: '2026-10-31T08:00:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-31T08:42:25Z'
+  curator: naturalproductmech-agent
+  action: RECORD_CURATED
+  changes: Curated ecological_roles, metal-binding molecular_targets (including explicit
+    Critical Mineral & Material [CMM] annotations and primary literature evidence),
+    biosynthetic_pathway steps, and connected causal_graphs; promoted curation_status
+    to REVIEWED.
+  llm_assisted: true

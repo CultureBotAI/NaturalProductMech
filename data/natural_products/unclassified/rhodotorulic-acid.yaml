@@ -1,0 +1,345 @@
+identifier: CHEBI:84731
+label: rhodotorulic acid
+chemical_structure:
+  smiles: CC(=O)N(O)CCC[C@@H]1NC(=O)[C@H](CCCN(O)C(C)=O)NC1=O
+  standard_inchi: InChI=1S/C14H24N4O6/c1-9(19)17(23)7-3-5-11-13(21)16-12(14(22)15-11)6-4-8-18(24)10(2)20/h11-12,23-24H,3-8H2,1-2H3,(H,15,22)(H,16,21)/t11-,12-/m0/s1
+  standard_inchi_key: PUWVNTVQJFSBDH-RYUDHWBXSA-N
+  stereo_complete: true
+  structure_source: CHEBI
+  structure_source_id: CHEBI:84731
+np_pathway: UNCLASSIFIED
+biosynthesis_origin: NATURAL_PRODUCT
+definition: A member of the class of 2,5-diketopiperazines obtained by cyclodimerisation
+  of N5-acetyl-N5-hydroxy-L-ornithine.
+definition_source: CHEBI:84731
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-10-31
+  pathway_results:
+  - Alkaloids
+  - Amino acids and Peptides
+  superclass_results:
+  - Peptide alkaloids
+  - Small peptides
+  class_results:
+  - Dipeptides
+  - Simple diketopiperazine alkaloids
+  is_glycoside: false
+occurrence_taxon_groups:
+- FUNGAL
+occurrences:
+- taxon_label: Rhodotorula mucilaginosa
+  source: CHEBI
+  evidence:
+  - reference: PMID:23490182
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:84731
+  taxon_id: NCBITaxon:5537
+  taxon_source: NCBITaxon
+  detection_context: LM9
+producer_taxon_groups:
+- FUNGAL
+producer_organisms:
+- taxon_id: NCBITaxon:5535
+  taxon_label: Rhodotorula glutinis
+  evidence_basis: AXENIC_CULTURE
+  source: CURATOR
+  notes: 'Isolation and structural elucidation of the diketopiperazine dihydroxamate
+    siderophore rhodotorulic acid secreted in high yield by iron-deficient axenic
+    cultures of Rhodotorula pilimanae (Rhodotorula glutinis ATCC 26207). Curator:
+    naturalproductmech-agent; date: 2026-10-31.'
+  evidence:
+  - reference: PMID:4971459
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Isolation and structural elucidation of the diketopiperazine dihydroxamate
+      siderophore rhodotorulic acid secreted in high yield by iron-deficient axenic
+      cultures of Rhodotorula pilimanae (Rhodotorula glutinis ATCC 26207).
+  strain: ATCC 26207
+- taxon_id: NCBITaxon:5535
+  taxon_label: Rhodotorula glutinis
+  evidence_basis: AXENIC_CULTURE
+  source: CURATOR
+  notes: 'Chemotaxonomic and LC-MS characterization of rhodotorulic acid production
+    across axenic iron-limited cultures of Rhodotorula glutinis and related Microbotryomycetes.
+    Curator: naturalproductmech-agent; date: 2026-10-31.'
+  evidence:
+  - reference: PMID:14531617
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Chemotaxonomic and LC-MS characterization of rhodotorulic acid production
+      across axenic iron-limited cultures of Rhodotorula glutinis and related Microbotryomycetes.
+  strain: CBS 20
+source_concepts:
+- source: CHEBI
+  source_id: CHEBI:84731
+  source_label: rhodotorulic acid
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-039686c131
+grounding_status: EXACT
+curation_status: REVIEWED
+molecular_targets:
+- target_id: CHEBI:29034
+  target_label: iron(3+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: Tetradentate dihydroxamate coordination of ferric iron(3+); because each
+    rhodotorulic acid ligand provides only two hydroxamate donor groups (4 oxygen
+    atoms), it forms a binuclear 3:2 ligand:metal complex Fe2(RA)3 at neutral pH (log
+    beta230 = 62.2) that mediates ferric ion delivery to the cell surface in Rhodotorula.
+  evidence:
+  - reference: PMID:4971459
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Isolation, structural elucidation, and ferric complex stoichiometry (Fe2L3)
+      of rhodotorulic acid from iron-deficient Rhodotorula pilimanae.
+  - reference: PMID:30750
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Coordination chemistry and 55Fe uptake kinetics of ferric rhodotorulate
+      in Rhodotorula pilimanae.
+  - reference: PMID:11151360
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Spectrophotometric and stopped-flow kinetic characterization of proton-driven
+      Fe(III) dissociation from the binuclear Fe2(rhodotorulate)3 complex in aqueous
+      solution.
+- target_id: CHEBI:84043
+  target_label: gallium(3+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: '[Critical Mineral & Material (CMM)] Coordination of trivalent gallium(3+)
+    in aqueous solution; excess Ga(III) quantitatively and rapidly displaces Fe(III)
+    from ferric rhodotorulic acid under reducing conditions (with maximal exchange
+    rate at pH 6.5).'
+  evidence:
+  - reference: PMID:2945591
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Spectroscopic kinetic demonstration of quantitative reductive displacement
+      of Fe(III) by Ga(III) in ferric rhodotorulic acid.
+- target_id: CHEBI:49470
+  target_label: aluminium(3+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: '[Critical Mineral & Material (CMM)] Chelation of trivalent aluminium(3+)
+    in vitro; rhodotorulic acid significantly solubilizes aluminium from insoluble
+    aluminium borate and mobilizes Al(III) from human plasma transferrin.'
+  evidence:
+  - reference: PMID:2019981
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: In vitro evaluation of rhodotorulic acid for aluminium(3+) solubilization,
+      mobilization from transferrin, and octanol/aqueous complex partitioning.
+- target_id: CHEBI:49544
+  target_label: chromium(3+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: '[Critical Mineral & Material (CMM)] Kinetically inert octahedral coordination
+    of chromium(3+) in the binuclear complex Cr2(rhodotorulate)3 (resolved into delta-cis,
+    delta-trans, and lambda-trans isomers) used to probe stereospecific cell-surface
+    recognition in Rhodotorula pilimanae.'
+  evidence:
+  - reference: PMID:30750
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Synthesis and transport study of kinetically inert chromic-substituted
+      rhodotorulic acid complexes in Rhodotorula pilimanae.
+  - reference: PMID:4055766
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Separation and visible/circular dichroism spectroscopic characterization
+      of geometric and optical isomers of chromic rhodotorulate Cr2(RA)3.
+ecological_roles:
+- CHEBI:26672
+- CHEBI:38161
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_label: L-ornithine N5-monooxygenase and N5-hydroxyornithine N5-acetyltransferase
+  substrates:
+  - CHEBI:15729
+  - CHEBI:15351
+  products:
+  - CHEBI:79095
+  notes: N5-hydroxylation of L-ornithine followed by acetyl-CoA-dependent N5-acetylation
+    to generate N5-acetyl-N5-hydroxy-L-ornithine.
+  evidence:
+  - reference: PMID:4971459
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Rhodotorulic acid is assembled from two units of delta-N-acetyl-L-delta-N-hydroxyornithine.
+- step_number: 2
+  enzyme_label: Rhodotorulic acid nonribosomal peptide synthetase (diketopiperazine
+    cyclase)
+  substrates:
+  - CHEBI:79095
+  - CHEBI:15422
+  products:
+  - CHEBI:84731
+  notes: ATP-dependent activation and head-to-tail cyclodimerization of two N5-acetyl-N5-hydroxy-L-ornithine
+    units to form the 2,5-diketopiperazine dihydroxamate siderophore rhodotorulic
+    acid.
+  evidence:
+  - reference: PMID:4971459
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Structure elucidation of rhodotorulic acid as the diketopiperazine dimer
+      of delta-N-acetyl-L-delta-N-hydroxyornithine.
+  - reference: PMID:14531617
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Characterization of iron-regulated rhodotorulic acid production in Rhodotorula
+      mucilaginosa.
+causal_graphs:
+- graph_id: rhodotorulic_acid_biosynthesis_and_metal_chelation
+  scope: BIOACTIVITY
+  description: Biosynthesis of the diketopiperazine dihydroxamate siderophore rhodotorulic
+    acid in basidiomycetous yeasts (Rhodotorula spp.), formation of binuclear 3:2
+    complexes with Fe(III) and CMM trivalent cations Ga(III), Al(III), and Cr(III),
+    and bacterial xenosiderophore uptake via Escherichia coli FhuE.
+  nodes:
+  - node_id: l_ornithine
+    label: L-ornithine
+    node_type: PRECURSOR
+    identifier: CHEBI:15729
+    grounding_status: GROUNDED
+  - node_id: acetyl_coa
+    label: acetyl-CoA
+    node_type: PRECURSOR
+    identifier: CHEBI:15351
+    grounding_status: GROUNDED
+  - node_id: h_orn
+    label: N(5)-hydroxy-L-ornithine
+    node_type: PRECURSOR
+    identifier: CHEBI:79095
+    grounding_status: GROUNDED
+  - node_id: ra_nrps
+    label: Rhodotorulic acid synthetase
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: rhodotorulic_acid
+    label: rhodotorulic acid
+    node_type: COMPOUND
+    identifier: CHEBI:84731
+    grounding_status: GROUNDED
+  - node_id: fe3
+    label: iron(3+)
+    node_type: OTHER
+    identifier: CHEBI:29034
+    grounding_status: GROUNDED
+  - node_id: ga3
+    label: gallium(3+)
+    node_type: OTHER
+    identifier: CHEBI:84043
+    grounding_status: GROUNDED
+  - node_id: al3
+    label: aluminium(3+)
+    node_type: OTHER
+    identifier: CHEBI:49470
+    grounding_status: GROUNDED
+  - node_id: cr3
+    label: chromium(3+)
+    node_type: OTHER
+    identifier: CHEBI:49544
+    grounding_status: GROUNDED
+  - node_id: fhue
+    label: Outer membrane receptor FhuE
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: iron_transport
+    label: iron ion transport
+    node_type: PROCESS
+    identifier: GO:0006826
+    grounding_status: GROUNDED
+  edges:
+  - subject: l_ornithine
+    predicate: converted_to
+    object: h_orn
+    notes: L-ornithine is N5-hydroxylated and N5-acetylated in the first committed
+      steps.
+    evidence:
+    - reference: PMID:4971459
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Rhodotorulic acid is composed of two delta-N-acetyl-L-delta-N-hydroxyornithine
+        residues.
+  - subject: acetyl_coa
+    predicate: substrate_of
+    object: h_orn
+    notes: Donates the N5-acetyl group of the hydroxamate ligand.
+    evidence:
+    - reference: PMID:4971459
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Each hydroxamate group carries an N-acetyl substituent.
+  - subject: h_orn
+    predicate: substrate_of
+    object: ra_nrps
+    notes: Two N5-acetyl-N5-hydroxy-L-ornithine monomers are condensed head-to-tail.
+    evidence:
+    - reference: PMID:4971459
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Cyclodimerization forms the 2,5-diketopiperazine ring.
+  - subject: ra_nrps
+    predicate: synthesizes
+    object: rhodotorulic_acid
+    notes: Releases rhodotorulic acid.
+    evidence:
+    - reference: PMID:14531617
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Iron-regulated production of rhodotorulic acid in Rhodotorula mucilaginosa.
+  - subject: rhodotorulic_acid
+    predicate: chelates
+    object: fe3
+    notes: Forms the binuclear complex Fe2(RA)3 (log beta230 = 62.2).
+    evidence:
+    - reference: PMID:11151360
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Thermodynamic and kinetic characterization of Fe2(RA)3.
+  - subject: rhodotorulic_acid
+    predicate: chelates
+    object: ga3
+    notes: '[CMM] Coordinates trivalent gallium(3+) via reductive displacement of
+      Fe(III).'
+    evidence:
+    - reference: PMID:2945591
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Quantitative displacement of Fe(III) by Ga(III) in ferric rhodotorulic
+        acid.
+  - subject: rhodotorulic_acid
+    predicate: chelates
+    object: al3
+    notes: '[CMM] Chelates and solubilizes trivalent aluminium(3+) in vitro.'
+    evidence:
+    - reference: PMID:2019981
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Aluminium solubilization and mobilization from transferrin by rhodotorulic
+        acid.
+  - subject: rhodotorulic_acid
+    predicate: chelates
+    object: cr3
+    notes: '[CMM] Forms kinetically inert binuclear Cr2(RA)3 complexes.'
+    evidence:
+    - reference: PMID:4055766
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Resolution and CD spectroscopy of delta and lambda isomers of Cr2(RA)3.
+  - subject: fe3
+    predicate: binds
+    object: fhue
+    notes: Ferric-rhodotorulate is recognized as a xenosiderophore by E. coli FhuE.
+    evidence:
+    - reference: PMID:6353165
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: FhuE outer membrane receptor mediates ferric-rhodotorulate uptake in
+        Escherichia coli K-12.
+  - subject: fhue
+    predicate: enables
+    object: iron_transport
+    notes: Translocates iron across the bacterial outer membrane.
+    evidence:
+    - reference: PMID:6353165
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: fhuE-dependent iron nutrition via rhodotorulic acid.
+curation_history:
+- timestamp: '2026-10-31T08:00:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-31T08:42:24Z'
+  curator: naturalproductmech-agent
+  action: RECORD_CURATED
+  changes: Curated ecological_roles, metal-binding molecular_targets (including explicit
+    Critical Mineral & Material [CMM] annotations and primary literature evidence),
+    biosynthetic_pathway steps, and connected causal_graphs; promoted curation_status
+    to REVIEWED.
+  llm_assisted: true
