@@ -1,0 +1,873 @@
+schema_version: 1.0.0
+review_id: 20261021T080040Z-3-2-hydroxy-3-oxo-4-methylhexyl-indole
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'Hydroxy-methylhexyl indole: natural occurrence and unresolved congener assays'
+started_at: '2026-10-21T07:54:51.365887Z'
+finished_at: '2026-10-21T08:00:40.365086Z'
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: The exact hydroxyhexyl indole, two declared unassigned centres, NPAtlas cross-reference,
+  minted grounding and source grades are coherent. Original patent isolation, NMR
+  and high-resolution mass support natural occurrence. No confirmed corrective finding
+  was established. Exact 1995 journal citation content and 2014 congener experiments
+  remain unverified.
+source:
+  git_revision: 10ed28fcdadb3d955c30732ff05b5d0e4adbee3b
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/3-2-hydroxy-3-oxo-4-methylhexyl-indole.yaml
+    sha256: 6dc2a537105df20efe5c7173e0aec0b40b24b23014e0a555cddc71ca6cf575ad
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One full generated owner, all source concepts, chemical identity and
+    declared stereochemical resolution, occurrence and producer/locus evidence, classification,
+    grounding and history.
+  selection: Fourteenth initially unreviewed path, fourth in batch 002 from fresh
+    origin/main; earlier review starts and saves follow path order. The fresh-main
+    authoritative list has 91 valid bundles covering 54 of 3,116 records; the ten
+    reviews in pending PR 1000 are separate campaign coverage. Ignored files were
+    included. This bundle has one target.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-f5689fc9ff
+targets:
+- target_id: naturalproductmech:mibig-f5689fc9ff
+  path: data/natural_products/alkaloids/3-2-hydroxy-3-oxo-4-methylhexyl-indole.yaml
+  label: 3-(2'-hydroxy-3'-oxo-4'-methylhexyl)-indole
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The entire owner validates with zero ERROR rows.
+  target_ids:
+  - naturalproductmech:mibig-f5689fc9ff
+  command: just validate-strict data/natural_products/alkaloids/3-2-hydroxy-3-oxo-4-methylhexyl-indole.yaml
+    --out /private/tmp/npm-review-work/014/strict.tsv
+  exit_code: 0
+  scope_note: Actual target command finished 2026-10-21T07:54:54.221959Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 record files agree with 3,116 PATHS.tsv rows and their pinned
+    filing pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just verify-corpus
+    --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016808Z; finished 2026-10-21T06:37:52.997020Z. Exact
+    session transcript: /private/tmp/npm-native-checks/verify-corpus.log. Reused for
+    batch 002 because the tracked source tree and HEAD remain the exact same base
+    commit; this command was not rerun for batch 002. The review author must assign
+    the exact target_ids.'
+  target_ids:
+  - naturalproductmech:mibig-f5689fc9ff
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 records are byte-identical to the seeder output from committed
+    inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just verify-reproduction
+    --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016703Z; finished 2026-10-21T06:38:35.570687Z. Exact
+    session transcript: /private/tmp/npm-native-checks/verify-reproduction.log. Reused
+    for batch 002 because the tracked source tree and HEAD remain the exact same base
+    commit; this command was not rerun for batch 002. The review author must assign
+    the exact target_ids.'
+  target_ids:
+  - naturalproductmech:mibig-f5689fc9ff
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The documented exhaustive queue command produced 8,928 diagnostic rows
+    in 12 queues; deterministic queue output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just review-queue
+    --tsv /private/tmp/npm-review-queue-initial.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016598Z; finished 2026-10-21T06:37:11.018366Z. Exact
+    session transcript: /private/tmp/npm-native-checks/review-queue.log. Reused for
+    batch 002 because the tracked source tree and HEAD remain the exact same base
+    commit; this command was not rerun for batch 002. The review author must assign
+    the exact target_ids.'
+  target_ids:
+  - naturalproductmech:mibig-f5689fc9ff
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'Full configured gate passed using existing CHEBI and GO caches plus the
+    committed taxonomy adapter: 13,434 canonical matches, 646 synonym matches, 35
+    documented exceptions, 499 warning-only mismatches and 4,722 pairs skipped because
+    their prefixes have no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:56.498212Z; finished 2026-10-21T06:38:54.776253Z. Exact
+    session transcript: /private/tmp/npm-native-checks/validate-products.log. Reused
+    for batch 002 because the tracked source tree and HEAD remain the exact same base
+    commit; this command was not rerun for batch 002. The review author must assign
+    the exact target_ids.'
+  target_ids:
+  - naturalproductmech:mibig-f5689fc9ff
+- check_id: shared-qc
+  name: Full repository quality gate after environment repair
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed after installing the pinned
+    linter, allowing the read-only governance fetch, and restoring the required provenance
+    tag. Tests: 999 passed, 4 skipped, 2 warnings. Closed-schema validation: 3,116
+    records and zero errors. Documentation, provenance, source queue, governed artifacts,
+    generated pages, reproduction, filing integrity and corpus reporting all passed.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:46:02.058886Z; finished 2026-10-21T06:54:53.950582Z. Exact
+    session transcript: /private/tmp/npm-native-checks/qc-attempt4.log. Reused for
+    batch 002 because the tracked source tree and HEAD remain the exact same base
+    commit; this command was not rerun for batch 002. The review author must assign
+    the exact target_ids.'
+  target_ids:
+  - naturalproductmech:mibig-f5689fc9ff
+- check_id: C-IDENTITY
+  name: Exact connectivity and declared stereo resolution
+  status: passed
+  required: true
+  summary: Owner, NPAtlas, PubChem and official ChEBI default MOL agree on the exact
+    connectivity and two unspecified centres. The only current ChEBI hit has two stars;
+    the minted rationale is consistent.
+  target_ids:
+  - naturalproductmech:mibig-f5689fc9ff
+  evidence_ids:
+  - E-CHEMISTRY
+  - E-STRUCTURE-COMPARISON
+  - E-NPATLAS
+  - E-CHEBI-SEARCH
+  - E-CHEBI-MOL
+- check_id: C-CITED-1995
+  name: Exact compound in the cited1995 journal paper
+  status: unavailable
+  required: true
+  summary: The primary abstract identifies indole isolation from X. bovienii A2 but
+    does not name this target. Database mapping and independent patent occurrence
+    are positive; the original journal compound-level content remains uninspected.
+  target_ids:
+  - naturalproductmech:mibig-f5689fc9ff
+  evidence_ids:
+  - E-PUBMED-1995
+  - E-NPATLAS
+  - E-PRIMARY-PATENT
+- check_id: C-CITED-2014
+  name: Exact congener assays and stereochemistry in the2014 primary
+  status: unavailable
+  required: true
+  summary: Complete primary abstract supports SS-2004 xenocyloin experiments at family
+    scope. Full body and SI were unavailable; exact target panels and stereochemical
+    assignments cannot be adjudicated.
+  target_ids:
+  - naturalproductmech:mibig-f5689fc9ff
+  evidence_ids:
+  - E-PUBMED-2014
+  - xcl-fulltext-si-unavailable
+  - xcl-institutional-copy-unavailable
+- check_id: C-IMODULON
+  name: Structured expression-source applicability
+  status: not_applicable
+  required: false
+  summary: The returned complete dataset catalogue has no Xenorhabdus coverage. No
+    biological absence is inferred.
+  target_ids:
+  - naturalproductmech:mibig-f5689fc9ff
+  evidence_ids:
+  - R-IMODULON-CATALOGUE
+evidence:
+- evidence_id: E-LOCAL
+  kind: record_content
+  reference: data/natural_products/alkaloids/3-2-hydroxy-3-oxo-4-methylhexyl-indole.yaml
+  locator: Complete owner and resolved view, including all nested evidence and two
+    seed events
+  accessed_at: '2026-10-21T07:58:32.185262Z'
+  support: supports
+  summary: The complete owner and resolved record denote MIBiG compound 2 hydroxyhexyl
+    indole. One LOTUS species occurrence, one source-asserted SS-2004 producer and
+    one demonstrated-locus database assertion are present. The owner has no components,
+    pathways, causal graphs, activity, target, clinical, dataset or sibling-corpus
+    claim. Its two historical seed events and SEEDED status do not imply prior scientific
+    sign-off.
+  snapshot_sha256: 6dc2a537105df20efe5c7173e0aec0b40b24b23014e0a555cddc71ca6cf575ad
+- evidence_id: E-CHEMISTRY
+  kind: validation
+  reference: /private/tmp/npm-review-work/014/chemistry.json
+  locator: RDKit 2026.03.5 parse and complete Standard InChI/key calculation
+  accessed_at: '2026-10-21T07:54:52.614657Z'
+  support: supports
+  summary: RDKit2026.03.5 confirms the exact stored InChI and GRVFODKSPHRUNC-UHFFFAOYSA-N,
+    C15H19NO2, charge 0 and exact mass 245.141578848. Side-chain C2-prime and C4-prime
+    are unassigned stereocentres, matching stereo_complete:false. The hydroxyl group
+    is free; no acetate is present.
+  snapshot_sha256: 3c1cac04c83b86a1b5311c3ef693e5743ae14c9062fedeeb117060c729d8b9fe
+- evidence_id: E-STRUCTURE-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/014/identity-comparison.json
+  locator: Complete five-way canonical graph/InChIKey comparison and source-concept
+    hash
+  accessed_at: '2026-10-21T07:56:32.014033Z'
+  support: supports
+  summary: Owner, MIBiG compound 2, NPA016111, PubChem and the official ChEBI default
+    MOL all canonicalize to CCC(C)C(=O)C(O)Cc1c[nH]c2ccccc12 and the same full key.
+    All retain two unspecified centres. Hashing MIBIG, a null separator and BGC0000189:2
+    gives naturalproductmech:mibig-f5689fc9ff. The different MOL atom indexes do not
+    change stereocentre identity.
+  snapshot_sha256: 415e0c7befb45140de6372ebc2b03ac2f080655300ce63ec4feaa257c186b5b9
+- evidence_id: E-NPATLAS
+  kind: database
+  reference: https://www.npatlas.org/api/v1/compound/NPA016111?include=classifications
+  locator: 'Complete official API response: current structure, origins, reassignments,
+    exclusions, external IDs and NPClassifier'
+  accessed_at: '2026-10-21T07:55:53.309305Z'
+  support: supports
+  summary: NPA016111 has the exact owner name, full InChI/key, C15H19NO2 and unresolved-stereochemistry
+    graph. Current structure version 1 has no reassignment or exclusion. Its origin
+    metadata map to Li et al. 1995, DOI10.1021/np50121a016 and X. bovienii A2. NPClassifier
+    results agree with the owner. This successful full API download has a retained
+    response hash.
+  snapshot_sha256: db536b376bebce7360d02f501580c0710ccfe36aa87f1d1c2fb84e8ed8964fc0
+- evidence_id: E-PUBCHEM
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/GRVFODKSPHRUNC-UHFFFAOYSA-N/property/InChI,InChIKey,MolecularFormula,IsomericSMILES/JSON
+  locator: Full-key PUG property response for CID 15285577
+  accessed_at: '2026-10-21T07:55:53.309186Z'
+  support: supports
+  summary: PubChem CID 15285577 has the same full InChI/key, formula C15H19NO2 and
+    hydroxyhexyl graph with no assigned stereocentres. Direct graph comparison confirms
+    equivalence.
+  snapshot_sha256: 1c6edbe46447809c5bef750f371275ce245d1951aa453814fc9b16fe0bd363e8
+- evidence_id: E-CHEBI-SEARCH
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=GRVFODKSPHRUNC-UHFFFAOYSA-N&size=100
+  locator: Exact full InChIKey query; total 1, number_pages 1
+  accessed_at: '2026-10-21T07:55:53.308670Z'
+  support: supports
+  summary: The official full-key query returns exactly one result, CHEBI:220715, rated
+    two stars. It is not eligible for exact three-star grounding under the current
+    repository rule.
+  snapshot_sha256: f1064c74c7d957822ab1abe3ef639a31764ba73db71c69a4f45a6eb998f16eb0
+  search_scope: Official ChEBI public es_search API; term=GRVFODKSPHRUNC-UHFFFAOYSA-N,
+    size=100; returned total 1 and number_pages 1. Bounded exact-key search, not a
+    claim about unindexed alternate structures.
+- evidence_id: E-CHEBI
+  kind: database
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/220715/
+  locator: Current star rating, chemical data, default structure and origin metadata
+  accessed_at: '2026-10-21T07:56:13.423806Z'
+  support: supports
+  summary: CHEBI:220715 is the exact named stereo-unspecified hydroxyhexyl compound,
+    two stars, with full owner InChI/key and C15H19NO2. Default structure 3429302
+    is linked. The exported SMILES omits aromatic [nH] and fails RDKit; the valid
+    official MOL establishes the represented chemical identity instead.
+  snapshot_sha256: a5e068d7505b9811dd8e2fdeb74586f694fb593f2b2dbfeacd540e70ddacaa46
+- evidence_id: E-CHEBI-MOL
+  kind: database
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/220715/
+  locator: Complete official default molfile
+  accessed_at: '2026-10-21T07:56:13.425971Z'
+  support: supports
+  summary: The official default MOL parses and exactly matches the owner connectivity
+    and full key, with both stereocentres unassigned.
+  snapshot_sha256: cbfd2737ab6e2fd2b75e1a72fc65cf9362d6d210a572802eeafc794ca4c44dc4
+- evidence_id: E-SOURCE-ROWS
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: BGC0000189 version 4 compound_index2; complete exact-key row captured in
+    local-sources.json
+  accessed_at: '2026-10-21T07:58:32.185262Z'
+  support: supports
+  summary: The pinned BGC0000189 version 4 compound_index2 row gives the exact hydroxyhexyl
+    structure and NPA016111, SS-2004 taxon 406818, FN667741.1:3771005..3779127, active
+    status, PKS/Type III and entry-level PMID24488732. It reproduces the owner methods
+    and separate producer/locus grades. Source quality questionable is metadata, not
+    an error verdict.
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: E-LOTUS
+  kind: record_content
+  reference: data/raw/lotus_occurrences.tsv
+  locator: Only complete-key row captured in local-sources.json
+  accessed_at: '2026-10-21T07:58:32.185262Z'
+  support: supports
+  summary: The exact GRVFODKSPHRUNC-UHFFFAOYSA-N row gives species X. bovienii, taxon
+    40576, Wikidata Q26307560 and DOI10.1021/NP50121A016. The owner preserves the
+    imported occurrence-only DATABASE_ASSERTION scope.
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: E-PUBMED-1995
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=24488732,7561900&retmode=xml
+  locator: PubmedArticle PMID 7561900; ArticleId DOI and full AbstractText; reused
+    012 source receipt, assessed against the full014 owner
+  accessed_at: '2026-10-21T07:49:07.390045Z'
+  support: partial
+  summary: PMID 7561900 maps to DOI 10.1021/np50121a016, Li et al., Journal of Natural
+    Products 58(7):1081-1086,1995. The abstract reports isolation of indoles and dithiolopyrrolones
+    from X. bovienii A2 but does not name the individual indole structures. Exact
+    structure-to-reference mapping therefore also uses NPAtlas and the separate primary
+    patent, not this abstract alone.
+  snapshot_sha256: a3ac05ea8d63ac020ceaaa5fd45a1ed0ce1bee13948e096900dc59d63d3eca99
+- evidence_id: E-PRIMARY-PATENT
+  kind: primary_source
+  reference: https://patentimages.storage.googleapis.com/88/ee/a5/deee26bcd7e0de/WO1995003695A1.pdf
+  locator: WO1995003695A1 original PDF, printed pp 32 and34 (PDF pages 34 and36),
+    Examples 10–11; independently visually read 2026-10-21T07:57:00Z and07:57:06Z
+  accessed_at: '2026-10-21T07:55:42.903242Z'
+  support: supports
+  summary: 'Example 10 isolates ID3 from X. bovienii cell-free broth. Example 11 identifies
+    exact hydroxyhexyl ID3: molecular ion 245, CI 246, C15H19NO2 calculated/found
+    245.1416, fifteen carbon resonances and proton/IR data. The original printed formula
+    reads H19; the HTML transcription has an E. No absolute stereochemical assignment
+    is reported here. The neighboring hydroxy-pentyl ID4 is distinct.'
+  snapshot_sha256: 80a64cb6cbbd141f11962790dc81c37ac9b7a3e52b5320f67c2d5ea78ee44803
+- evidence_id: E-TAXA
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=40576,406818&retmode=xml
+  locator: TaxaSet entries 40576 and 406818, scientific names, ranks, parent and lineage;
+    reused 012 source receipt, assessed against the full014 owner
+  accessed_at: '2026-10-21T07:49:07.390300Z'
+  support: supports
+  summary: NCBITaxon:40576 is species Xenorhabdus bovienii. NCBITaxon:406818 is strain
+    Xenorhabdus bovienii SS-2004, directly parented to 40576. Both belong to Bacteria,
+    Pseudomonadota, Gammaproteobacteria, Enterobacterales, Morganellaceae. OTHER_BACTERIAL
+    is consistent for both; A2 and SS-2004 remain distinct contexts.
+  snapshot_sha256: e30e7f63a8a598c81d5de79fe275304036a4144e701d74fb74d1bf9ac4ca249b
+- evidence_id: E-WIKIDATA
+  kind: authority
+  reference: https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q26307560&props=labels%7Cclaims&languages=en&format=json
+  locator: Entity Q26307560 English label and P685 taxon mapping; reused 012 source
+    receipt, assessed against the full014 owner
+  accessed_at: '2026-10-21T07:50:13.547545Z'
+  support: supports
+  summary: Q26307560 resolves to Xenorhabdus bovienii and its P685 statement is 40576,
+    agreeing with the occurrence note and NCBI species identity. The later successful
+    API retrieval supersedes the initial403 attempt.
+  snapshot_sha256: 717159983c1676ff6cb57d6b11425bcf6d58074c6a1cc6b732eb85273fa7af29
+- evidence_id: E-MIBIG
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0000189.4/annotations.json
+  locator: Complete v4 JSON, compounds[1] (one-based compound 2), taxonomy, loci,
+    classes and legacy references; source originally retrieved for 012
+  accessed_at: '2026-10-21T07:49:07.389720Z'
+  support: supports
+  summary: Reused official version 4 JSON explicitly lists the target as compound
+    2, hydroxy-methyl-oxohexyl indole, NPA016111, C15H19NO2. The exact graph matches
+    the newly read owner. Its three neighboring compounds differ by acetylation or
+    chain length. SS-2004/taxon 406818, FN667741.1 interval, PKS/Type III and locus
+    method categories are unchanged. The compound evidence array is empty; PMID24488732
+    is entry-level.
+  snapshot_sha256: 19dc9b2968df6671963e288b5a18c06322ff4d9b85078fcf930cd7ad43bfee14
+- evidence_id: E-LOCUS
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=FN667741.1&db=nuccore&report=genbank&retmode=text&from=3771005&to=3779127
+  locator: Official FN667741.1 genomic region 3771005..3779127, LOCUS and source feature;
+    reused 012 source receipt, assessed against the full014 owner
+  accessed_at: '2026-10-21T07:49:07.390142Z'
+  support: supports
+  summary: The requested interval contains 8,123 nt on accession FN667741.1 and explicitly
+    identifies X. bovienii SS-2004, taxon 406818. This verifies accession, coordinates
+    and organism, independently of whether a particular experiment proves exact congener
+    formation. No protein accession is asserted in the owner.
+  snapshot_sha256: eca1cf9eaaf3166c42cd8d3437c1d41c88cdc2fddfc3393776a8a29a76bd8122
+- evidence_id: E-PUBMED-2014
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=24488732,7561900&retmode=xml
+  locator: PubmedArticle PMID 24488732; ArticleId DOI and complete AbstractText; reused
+    012 source receipt, assessed against the full014 owner
+  accessed_at: '2026-10-21T07:49:07.390045Z'
+  support: partial
+  summary: PMID 24488732 is Proschak et al. 2014, DOI 10.1002/cbic.201300694. The
+    abstract reports SS-2004 xenocyloin biosynthesis studied by heterologous expression
+    and enzyme assays, an S-selective XclA condensation and XclB/C acylation. The
+    abstract does not map the exact hydroxyhexyl target to an individual assay or
+    assign both target stereocentres.
+  snapshot_sha256: a3ac05ea8d63ac020ceaaa5fd45a1ed0ce1bee13948e096900dc59d63d3eca99
+- evidence_id: E-NPCLASSIFIER
+  kind: record_content
+  reference: data/raw/npclassifier.tsv
+  locator: Exact full-key row, model npclassifier.gnps2.org@2026-09-07
+  accessed_at: '2026-10-21T07:58:32.185262Z'
+  support: supports
+  summary: The exact-key committed row records Alkaloids / Tryptophan alkaloids /
+    Simple indole alkaloids, is_glycoside=false and model npclassifier.gnps2.org@2026-09-07.
+    All match the owner; the graph contains a free-hydroxyl indole without a glycoside.
+    The source PKS label remains a separate axis.
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: E-GROUNDING-RULE
+  kind: record_content
+  reference: scripts/seed_from_sources.py
+  locator: mint_identifier lines284–292 and MIBiG source-concept/grounding branch
+    lines950–981
+  accessed_at: '2026-10-21T07:58:32.185262Z'
+  support: supports
+  summary: The current seeder hashes MIBIG plus accession:compound_index and uses
+    eligible three-star ChEBI full-key matches. The exact compound 2 hash reproduces
+    the owner ID. The pinned inventory has no eligible match for this key; the current
+    two-star candidate therefore does not invalidate MINTED.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: E-GRADE-RULE
+  kind: record_content
+  reference: docs/HARMONIZATION.md
+  locator: Producer versus occurrence section and method-to-producer/locus grading
+    table
+  accessed_at: '2026-10-21T07:54:32.791480Z'
+  support: supports
+  summary: Heterologous expression and enzymatic assays map to SOURCE_ASSERTION for
+    the native producer and CLUSTER_DEMONSTRATED for the locus. The owner preserves
+    that separation and cites both imported claims as DATABASE_ASSERTION. This rule
+    explains extraction; it does not establish compound-specific experiments.
+  snapshot_sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+- evidence_id: xcl-native-locus-bridge
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=FN667741.1&db=nuccore&report=genbank&retmode=text&from=3771005&to=3779127
+  locator: VERSION, source strain/taxon, full interval CDS annotation; locus.gb; reused
+    012 source receipt, assessed against the full014 owner
+  accessed_at: '2026-10-21T07:49:07Z'
+  support: supports
+  summary: The 8123-bp interval belongs to X. bovienii SS-2004 with taxon 406818.
+    CBJ83019.1/XBJ1_3901 (MIBiG xclA) lies at 3777430..3779127 on the reverse strand,
+    and CBJ83018.1/XBJ1_3900 (MIBiG xclB) lies at 3776409..3777440 on the reverse
+    strand. The interval also includes CBJ83016.1/XBJ1_3898, annotated as a synthase
+    III, but the inspected GenBank annotation alone does not identify it experimentally
+    as XclC. These records establish the strain/accession bridge, not full-locus sufficiency
+    or historical construct sequences.
+- evidence_id: xcl-fulltext-si-unavailable
+  kind: search
+  reference: https://chemistry-europe.onlinelibrary.wiley.com/doi/abs/10.1002/cbic.201300694
+  locator: Public publisher page identifies SI cbic_201300694_sm_miscellaneous_information.pdf;
+    attempted full, PDF, suppl/supinfo and normal downloadSupplement routes; bgc-access.json;
+    reused 012 source receipt, assessed against the full014 owner
+  accessed_at: '2026-10-21T07:52:30Z'
+  support: unknown
+  summary: The publisher abstract and SI filename were visible in indexed primary
+    content. Both Wiley domains returned HTTP 403 for the exact supplement and full
+    text, as did the normal PDF and downloadSupplement routes. The Crossref-listed
+    TDM endpoint returned HTTP 400 requiring a TDM client token; no credentials or
+    paid service were used. The body and SI were therefore not obtained or inspected.
+    Access failure is not evidence that the paper lacks the exact product experiment.
+  search_scope: Free public sources only. DOI/title/author and exact SI-filename searches,
+    publisher chemistry-europe/onlinelibrary routes, Crossref-provided TDM endpoint,
+    OpenAlex article locations and the author-linked MPG.PuRe item were checked. No
+    broad claim of literature absence. Search snippets were used as leads, not experimental
+    proof. These prior access attempts are reused; no new failed-network route was
+    retried for 014.
+- evidence_id: xcl-institutional-copy-unavailable
+  kind: search
+  reference: https://pure.mpg.de/rest/items/item_3369009
+  locator: Public author-linked institutional record, complete JSON; bgc-pure-item.json
+    and bgc-access.json; reused 012 source receipt, assessed against the full014 owner
+  accessed_at: '2026-10-21T07:51:28Z'
+  support: unknown
+  summary: The author publication list resolves to MPG.PuRe item 3369009. Its complete
+    public REST record contains the matching article metadata and abstract, without
+    a file/component entry providing the manuscript or supplement. OpenAlex separately
+    listed only closed publisher and PubMed locations. This bounded repository check
+    supplied no additional experimental text; it does not show that no author copy
+    exists elsewhere.
+  search_scope: Exact author-linked item3369009 and DOI-matched OpenAlex work; no
+    recursive institutional-repository absence claim.
+- evidence_id: R-IMODULON-CATALOGUE
+  kind: search
+  reference: /private/tmp/npm-review-work/010/imodulon-datasets.txt
+  locator: Complete installed kg-microbe-sources datasets response; actual command
+    receipt in010/imodulon-context-receipts.json
+  accessed_at: '2026-10-21T07:21:15.957321Z'
+  support: context_only
+  summary: The complete returned catalogue has 28 dataset keys; none covers Xenorhabdus.
+    No strain-matched structured expression-module query is applicable to this record.
+    This is catalogue coverage only and not evidence against xenocyloin production
+    or gene activity.
+  search_scope: All28 dataset rows returned by the installed read-only runner. Original
+    command/result reused; no new network query or independent global database export
+    is claimed.
+  snapshot_sha256: 1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549
+assessments:
+- assessment_id: A-IDENTITY
+  area: identity
+  topic: Exact represented connectivity, congener boundary and honest stereo flag
+  outcome: supported
+  summary: The label, free-hydroxyl owner graph, full InChI/key, C15H19NO2 and NPA016111
+    agree. Patent ID3 is the same hydroxyhexyl compound; the acetylated and shorter
+    pentyl congeners are distinguishable. Both C2-prime and C4-prime are unspecified
+    and stereo_complete:false is honest. This establishes the represented structure,
+    not a fully assigned absolute stereoisomer.
+  target_ids:
+  - naturalproductmech:mibig-f5689fc9ff
+  evidence_ids:
+  - E-LOCAL
+  - E-CHEMISTRY
+  - E-STRUCTURE-COMPARISON
+  - E-NPATLAS
+  - E-PUBCHEM
+  - E-PRIMARY-PATENT
+- assessment_id: A-GROUNDING
+  area: grounding
+  topic: Minted identity remains justified by the eligible-source rule
+  outcome: supported
+  summary: The minted identity recomputes from BGC0000189 compound 2. CHEBI:220715
+    has the exact graph but only two stars, so the stored no-three-star rationale
+    remains consistent with both the pinned inventory and the current bounded search.
+    The valid official default MOL resolves its malformed SMILES export.
+  target_ids:
+  - naturalproductmech:mibig-f5689fc9ff
+  evidence_ids:
+  - E-GROUNDING-RULE
+  - E-STRUCTURE-COMPARISON
+  - E-CHEBI-SEARCH
+  - E-CHEBI
+  - E-CHEBI-MOL
+- assessment_id: A-XREF
+  area: identity
+  topic: NPA016111 is the exact hydroxyhexyl representation
+  outcome: supported
+  summary: The sole xref NPA016111 has the same complete graph, formula and full InChI/key,
+    with no reassignment, exclusion or resolved stereochemistry beyond the owner.
+  target_ids:
+  - naturalproductmech:mibig-f5689fc9ff
+  evidence_ids:
+  - E-NPATLAS
+  - E-CHEMISTRY
+  - E-LOCAL
+- assessment_id: A-OCCURRENCE
+  area: evidence
+  topic: Species occurrence corroborated by independent primary patent
+  outcome: supported
+  summary: The owner faithfully retains the LOTUS species triple at database-assertion
+    level. Independent primary patent Examples 10–11 isolate and identify exact ID3
+    from X. bovienii broth. This supports actual species occurrence; it does not establish
+    the individual compound content of the original cited journal article or attribute
+    A2 evidence to SS-2004.
+  target_ids:
+  - naturalproductmech:mibig-f5689fc9ff
+  evidence_ids:
+  - E-LOTUS
+  - E-PRIMARY-PATENT
+  - E-TAXA
+- assessment_id: A-TAXONOMY
+  area: grounding
+  topic: Species, strain and Wikidata mapping
+  outcome: supported
+  summary: Occurrence taxon 40576 is X. bovienii species; producer and locus taxon
+    406818 are its SS-2004 strain. Wikidata Q26307560 resolves to the stated species.
+    Both OTHER_BACTERIAL facets are coherent, and the two source strains are not collapsed.
+  target_ids:
+  - naturalproductmech:mibig-f5689fc9ff
+  evidence_ids:
+  - E-TAXA
+  - E-WIKIDATA
+  - E-LOCUS
+  - E-LOCAL
+- assessment_id: A-CLASSIFICATION
+  area: consistency
+  topic: Computed filing and asserted locus class remain distinct
+  outcome: supported
+  summary: ALKALOIDS and the versioned NPClassifier results reproduce the committed
+    exact-key row and match the indole scaffold. PKS is independently preserved from
+    the MIBiG locus, whose Type III/acylating-ketosynthase context is compatible with
+    the 2014 abstract. No computed class is used as evidence of natural origin.
+  target_ids:
+  - naturalproductmech:mibig-f5689fc9ff
+  evidence_ids:
+  - E-NPCLASSIFIER
+  - E-MIBIG
+  - E-PUBMED-2014
+  - E-LOCAL
+- assessment_id: A-NATURAL-ORIGIN
+  area: evidence
+  topic: Biological occurrence supports natural-product origin
+  outcome: supported
+  summary: Primary patent isolation of exact ID3 from bacterial culture broth independently
+    supports NATURAL_PRODUCT; no computed class or congener is used as origin evidence.
+  target_ids:
+  - naturalproductmech:mibig-f5689fc9ff
+  evidence_ids:
+  - E-PRIMARY-PATENT
+  - E-NPATLAS
+  - E-PUBMED-1995
+- assessment_id: A-PROVENANCE
+  area: provenance
+  topic: Source version, generated status and historical events
+  outcome: supported
+  summary: MIBiG version 4 compound 2 is the correct source concept and the complete
+    owner reproduces its pinned claims. SEEDED and two historical seed events accurately
+    avoid a completed-curation assertion. Review does not change history or status.
+  target_ids:
+  - naturalproductmech:mibig-f5689fc9ff
+  evidence_ids:
+  - E-LOCAL
+  - E-SOURCE-ROWS
+  - E-MIBIG
+  - E-GROUNDING-RULE
+- assessment_id: A-OPTIONAL-CONTENT
+  area: completeness
+  topic: No unsupported demand to populate optional mechanisms or activity
+  outcome: not_applicable
+  summary: The complete owner contains no mechanism graph, pathway, activity observation
+    or summary, molecular target, clinical status, dataset or sibling-record assertion.
+    Optional absence alone is not a defect. The full returned iModulonDB catalogue
+    contains no covered Xenorhabdus dataset, so a strain-matched expression query
+    is not applicable.
+  target_ids:
+  - naturalproductmech:mibig-f5689fc9ff
+  evidence_ids:
+  - E-LOCAL
+  - E-LOCUS
+  - R-IMODULON-CATALOGUE
+- assessment_id: A-CITED-ISOLATION
+  area: evidence
+  topic: Original1995 DOI exact-compound citation verification
+  outcome: unknown
+  summary: DOI 10.1021/np50121a016 and PMID 7561900 identify the same original isolation
+    article. Its inspected abstract reports indoles from X. bovienii A2 but does not
+    explicitly name this target. NPAtlas maps this exact structure to that DOI, supporting
+    the imported database citation; it does not substitute for direct inspection of
+    the cited paper. The independent patent supports actual occurrence, but neither
+    its authorship nor matching compound name proves the journal body contains this
+    exact hydroxyhexyl structure. Citation-specific verification remains incomplete.
+  target_ids:
+  - naturalproductmech:mibig-f5689fc9ff
+  evidence_ids:
+  - E-PUBMED-1995
+  - E-NPATLAS
+  - E-LOTUS
+  - E-PRIMARY-PATENT
+- assessment_id: xcl-source-and-locus-metadata
+  area: evidence
+  topic: BGC0000189 compound 2 source, strain and locus mapping
+  outcome: supported
+  summary: The target-specific current MIBiG structure, SS-2004 taxon, interval and
+    methods match the full owner. SOURCE_ASSERTION producer and CLUSTER_DEMONSTRATED
+    locus reproduce the documented two-claim method mapping. The primary abstract
+    corroborates strain and method categories at family level, without native knockout
+    or exact-congener proof.
+  target_ids:
+  - naturalproductmech:mibig-f5689fc9ff
+  evidence_ids:
+  - E-MIBIG
+  - xcl-native-locus-bridge
+  - E-GRADE-RULE
+  - E-PUBMED-2014
+- assessment_id: xcl-exact-product-assay-scope
+  area: evidence
+  topic: Exact hydroxyhexyl congener in the 2014 experiments
+  outcome: unknown
+  summary: MIBiG lists the target as compound 2 within the demonstrated locus, but
+    the accessible 2014 abstract discusses xenocyloins collectively. Exact hydroxyhexyl
+    product panels, native detection, constructs and controls remain unverified without
+    the body/SI. The free-hydroxyl target must not be treated as a directly demonstrated
+    XclB/C acylation product merely because acetylated congeners share the locus.
+    No contradictory experiment was found.
+  target_ids:
+  - naturalproductmech:mibig-f5689fc9ff
+  evidence_ids:
+  - E-MIBIG
+  - E-PUBMED-2014
+  - xcl-fulltext-si-unavailable
+  - xcl-institutional-copy-unavailable
+- assessment_id: xcl-stereochemical-scope
+  area: identity
+  topic: S-selectivity versus two-centre exact target stereochemistry
+  outcome: unknown
+  summary: The primary abstract reports XclA S-selectivity but does not identify the
+    exact hydroxyhexyl substrate/product or establish both stereocentre assignments.
+    C2-prime and C4-prime remain unspecified in the owner; no R/S repair or stereo_complete:true
+    promotion is justified from that abstract alone.
+  target_ids:
+  - naturalproductmech:mibig-f5689fc9ff
+  evidence_ids:
+  - E-GRADE-RULE
+  - E-PUBMED-2014
+  - xcl-fulltext-si-unavailable
+findings: []
+actions: []
+limitations:
+- The original 1995 journal DOI is correctly identified, but its individual ID3 structure/citation
+  content remains unverified because only the primary abstract was accessible. NPAtlas
+  provides database mapping; independent patent occurrence is kept separate from journal-citation
+  verification.
+- The 2014 main body and named supplement were unavailable through the previously
+  documented free routes. The same real access receipts are reused, without claiming
+  a new retrieval or inspection. Exact hydroxyhexyl experiments, native chromatograms,
+  constructs, controls and stereochemical measurements remain unverified.
+- Two unassigned stereocentres accurately describe the current owner. XclA S-selectivity
+  in a family-level abstract cannot establish both configurations of this specific
+  congener. No raw spectrum was reinterpreted.
+- The primary patent was visually checked in its original PDF. Printed ID3 formula
+  C15H19NO2 corrects an HTML transcription error, and its mass data agree with the
+  owner. Patent ID1, ID2 and ID4 are different congeners; their data are not substituted.
+- CHEBI:220715 is a two-star exact match. Its SMILES export fails RDKit, while its
+  valid default MOL matches the owner. The full-key search is bounded and does not
+  claim universal ontology absence.
+- No mechanism, molecular target, activity or clinical assertion is present to audit.
+  Optional absence is not a defect; iModulonDB is not applicable to any actual named
+  gene/protein/regulator assertion in this owner.
+- No confirmed contradictory owner assertion was established. Scientific review remains
+  partial for the original 1995 citation and 2014 target-specific experiments; no
+  corrective finding or unsupported maintained-input change is proposed. Native checks
+  and final bundle save are supplied by the root reviewer.
+- The configured full identifier-label gate accepts 499 warning-level taxon-label
+  mismatches, 35 explicit exceptions and 4,722 no-adapter pairs across the corpus;
+  its exit 0 is not independent verification of every identifier or of this record's
+  scientific claims.
+- The quality suite skips the optional sibling AntibioticMech checkout comparison
+  because the isolated clone has no sibling checkout, and skips three command-frontmatter
+  cases because their parameter sets are empty. Pinned-hash and network governance
+  checks still ran.
+- Shared native gates assess deterministic corpus consistency and configured invariants.
+  They do not establish biological production, stereochemical specificity, evidence
+  adequacy or literature-level claim support.
+notes:
+- No scientific owner, source inventory or native curation status/history was changed.
+  Partial scientific review does not promote SEEDED to REVIEWED.
+- Native corpus checks reuse actual successful commands from the identical tracked
+  base with original receipts. Exact target strict validation was run afresh.
+- If further primary access resolves the remaining citation or stereochemical questions,
+  record a new immutable review observation before proposing a maintained-source correction.
+  No corrective input change is supported solely by unavailable text.
+tags:
+- path-order-campaign
+- batch-002
+- xenocyloin
+- stereo-incomplete
