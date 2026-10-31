@@ -1,0 +1,1395 @@
+# Acu-dioxomorpholine A: confirmed ring-nitrogen transcription error
+
+- Review: 20261021T110915Z-acu-dioxomorpholine-a
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-21T10:56:59.860505Z
+- Finished UTC: 2026-10-21T11:09:15.278246Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The source-derived graph substitutes carbon for a ring amide nitrogen and therefore denotes the wrong molecule despite internally matching SMILES, InChI and key. Original drawings and mass evidence support a two-nitrogen scaffold; historical absolute configuration remains unresolved. Heterologous FAC genetics and native isotope feeding are kept distinct.
+
+## Scope And Provenance
+
+One complete generated owner and any referenced components, assessed claim by claim for exact identity, provenance, origin, producer and occurrence scope, biosynthesis, classification, optional content and audit history.
+
+Selection: Campaign record 43, batch 005, selected in path order from the fresh-main authoritative validated catalogue and the separately validated pending-PR targets. At selection, 94 of 3116 current records had campaign coverage and 3022 remained. The population search included ignored files. Exactly one target is assessed here.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 1c2402097718c138b081e00943de8f04de0541cd.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-3e7b2e9aed | data/natural_products/alkaloids/acu-dioxomorpholine-a.yaml | generated | acu-dioxomorpholine A |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Closed-schema target validation | passed | True | naturalproductmech:mibig-3e7b2e9aed | The documented target strict validator completed; scientific support is assessed separately. |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-3e7b2e9aed | All 3,116 current record files agree with PATHS.tsv and their pinned filing pathways. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-3e7b2e9aed | All 3,116 current records passed the documented byte-reproduction gate against committed inventories and maintained curation inputs. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-3e7b2e9aed | The exhaustive review queue produced 8,928 diagnostic rows across 12 queues; this deterministic output does not establish scientific review. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-3e7b2e9aed | The configured identifier-label gate passed using the existing ontology caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions, 499 warning-only mismatches and 4,744 pairs skipped because their prefixes have no adapter. |
+| Full repository quality gate on the current main baseline | passed | True | naturalproductmech:mibig-3e7b2e9aed | The full documented just qc recipe passed on the unchanged main baseline during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). All configured lint, governance, documentation, provenance, source-queue, schema, rendering, reproduction, filing-integrity and reporting stages completed successfully. |
+| Original-primary structure versus stored owner graph | failed | True | naturalproductmech:mibig-3e7b2e9aed | Confirmed constitutional mismatch: the diagnostic ran successfully (exit 0), but the scientific comparison fails because one ring N is replaced by C. Correcting only undefined stereocentres cannot repair it. |
+| Reproducible molecular graph diagnostic | passed | True | naturalproductmech:mibig-3e7b2e9aed | The diagnostic completed, verified the original input pins and reproduced both the internally consistent owner graph and the distinct primary-transcribed graph. Its completed execution is separate from the failed scientific identity comparison. |
+| Original native and FAC-host experiment scope | passed | True | naturalproductmech:mibig-3e7b2e9aed | The exact named-product literature was read and native isotope feeding was separated from heterologous expression/FAC deletions. These experiments concern the published two-nitrogen compound; identity migration must precede attaching them to a corrected owner. |
+| Independent absolute stereochemistry of original acu-dioxomorpholine A | unavailable | True | naturalproductmech:mibig-3e7b2e9aed | The bounded original 2014/2018 and later 2026 source set supplies relative/assigned drawings and stronger absolute anchoring for the new opposite enantiomer, but not independent absolute proof for the historical original-A material. Do not equate the reported four-centre candidate with fully re-established historical stereochemistry. |
+| Current source identifiers and bounded locus resolution | passed | True | naturalproductmech:mibig-3e7b2e9aed | MIBiG accession/version, taxon, GenBank interval and minted source concept resolve; the successful taxonomy/GenBank retries supersede initial rate-limit failures. This check concerns resolution and provenance, not the failed scientific A identity. |
+| Current ChEBI query and congener boundary | passed | True | naturalproductmech:mibig-3e7b2e9aed | Explicit no-match bodies are distinguished from access failure, and the two-star name hit is identified as N-methyl B rather than accepted as A. No exhaustive authority-absence claim is made. |
+| Applicable structured expression dataset | not_applicable | False | naturalproductmech:mibig-3e7b2e9aed | No matching fungal donor or A. nidulans host dataset occurs in the complete retained catalogue. |
+
+## Scientific And Domain Assessments
+
+### One carbon substitutes for the ring amide nitrogen
+
+identity: concern. Targets: naturalproductmech:mibig-3e7b2e9aed.
+
+The current molecule is internally consistent but is not the published acu-dioxomorpholine A. Its old key DQGMTSDVSAYSGR-MDZJEUOHSA-N denotes the wrong element/connectivity graph. The paper-transcribed candidate RLEKOSLSLNBPJB-BBLPPJRLSA-N has the correct two-nitrogen formula and four reported centres, subject to a separate absolute-assignment limitation.
+
+### Reported graph versus independently established absolute configuration
+
+identity: unknown. Targets: naturalproductmech:mibig-3e7b2e9aed.
+
+Four published assignments can be transcribed precisely, but original-A absolute proof remains unresolved. The fifth potential centre and two undefined flags in the old graph are artifacts of its wrong connectivity. Neither the N-methyl B NOESY data nor the newly characterized opposite enantiomer automatically completes the original-A absolute proof.
+
+### Native biosynthesis of the named two-nitrogen product
+
+provenance: supported. Targets: naturalproductmech:mibig-3e7b2e9aed.
+
+The named A is detected in parental A. aculeatus extracts, and native isotope incorporation provides production evidence beyond mere isolation. Retain a natural-product interpretation for the corrected named compound, while recognizing that the present wrong one-nitrogen graph has no support from these experiments. Do not call the feeding culture axenic without direct evidence.
+
+### FAC demonstration and conservative imported producer grading
+
+evidence: supported. Targets: naturalproductmech:mibig-3e7b2e9aed.
+
+Heterologous expression supports CLUSTER_DEMONSTRATED for the correctly named product; the current source-only producer grade is a conservative faithful rendering of that MIBiG method, not an inflated claim. FAC ΔadxA/B/C supports necessity in the engineered host, not native knockout evidence. After identity repair, retain explicit native feeding support separately and avoid adding native Knock-out studies or original-Adx Enzymatic assays from these papers.
+
+### Optional pathway and protein detail
+
+completeness: supported. Targets: naturalproductmech:mibig-3e7b2e9aed.
+
+Absence of an optional detailed pathway is not itself a defect. Any future Adx pathway should distinguish measured genetic/labeling evidence from proposed AdxA/AdxB/AdxC reactions, alternative prenylation order and unvalidated Arg197 chemistry. Later Aau proteins are homologues from another strain that produce the opposite enantiomer, not interchangeable Adx protein examples.
+
+### No target-specific bioactivity transfer
+
+evidence: supported. Targets: naturalproductmech:mibig-3e7b2e9aed.
+
+The owner appropriately contains no activity or molecular-target claim. The inspected sources discuss P-glycoprotein inhibition by related compounds and an antifungal test of N-methyl B; neither is a direct A assay. No clinical or ecological function is inferred.
+
+### Seeded provenance and status boundary
+
+provenance: supported. Targets: naturalproductmech:mibig-3e7b2e9aed.
+
+The raw MIBiG assertion, source version and conservative split between producer and locus grades remain auditable. The current SEEDED status must not be promoted while identity is wrong and absolute proof remains unresolved. No source, owner, native history or generated artifact was changed in this audit.
+
+### Current authority agreement preserves the known source graph error
+
+identity: concern. Targets: naturalproductmech:mibig-3e7b2e9aed.
+
+The frozen owner reproduces current MIBiG A exactly, including the missing ring nitrogen. Database agreement is therefore provenance support, not a second proof of correct molecular identity. The constitutional blocker and required correction are reported once in the science packet.
+
+### Bounded ChEBI searches and minted source identity
+
+grounding: concern. Targets: naturalproductmech:mibig-3e7b2e9aed.
+
+No exact current ChEBI result was returned for either full A key, and no corresponding row occurs in the complete committed inventory. The sole name hit is two-star N-methyl B and cannot repair A. The minted source identifier resolves correctly, but a groundable correct A identity still depends on the separate structure adjudication.
+
+### Current strain authority and deposited locus source
+
+scope: supported. Targets: naturalproductmech:mibig-3e7b2e9aed.
+
+The strain-ranked taxon and GenBank source consistently identify ATCC 16872. The requested interval is present and includes three deposited CDS annotations. This is native sequence-record context, not proof of historical stock identity, exact expressed proteins or biochemical function.
+
+### Computed filing result and asserted biosynthetic class
+
+provenance: concern. Targets: naturalproductmech:mibig-3e7b2e9aed.
+
+The current classification is faithfully attributed, and NRPS remains separate from the predicted filing pathway. Because the NPClassifier input graph is wrong, classification must be checked on the adjudicated corrected structure rather than copied solely because the label stays A. This is a consequence of the existing identity blocker, not a duplicate finding.
+
+### Stable source concept and unchanged seeded history
+
+provenance: supported. Targets: naturalproductmech:mibig-3e7b2e9aed.
+
+The minted ID reproduces the seeder source-concept hash, source version is explicit, and both native history entries are seeding events. Current SEEDED status is accurate; neither this identifier audit nor the separate scientific review changes it.
+
+### Unasserted optional targets, assays and graph content
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-3e7b2e9aed.
+
+No optional xref, protein, pathway, activity, target, occurrence or clinical claim is asserted. The current source module annotations do not require promoting inferred substrates into a verified mechanism. Missing optional content is not independently treated as a defect.
+
+## Findings
+
+### S043-F-WRONG-CONSTITUTION: The acu-dioxomorpholine A graph substitutes carbon for a ring amide nitrogen
+
+blocker / open / confirmed; issue key: mibig-bgc0002226-compound2-ring-amide-nitrogen-mistranscribed.
+
+The current one-nitrogen graph DQGMTSDVSAYSGR-MDZJEUOHSA-N is constitutionally different from the original named compound, not merely incompletely stereospecified. Original 2018 SI drawings and the403.202 ion establish a two-nitrogen C25H26N2O3 scaffold. The raw graph instead yields C26H27NO3 and adds a false fifth potential carbon stereocentre. The independently transcribed published assignment gives RLEKOSLSLNBPJB-BBLPPJRLSA-N; its historical absolute proof is a separate unresolved question. Thus current natural-origin and locus evidence are attached to the wrong molecular graph even though their database provenance is faithfully retained.
+
+## Recommended Actions And Acceptance Checks
+
+### S043-ACTION-STRUCTURE
+
+Adjudicate the exact A structure before changing biological claims. Pin untouched BGC0002226:2 version 3 to full parsed-row SHA256 9fcf7b12b7559eec7ae872f5631399376c163bad3189cdd9c5be99ceeb42b1d4, original key DQGMTSDVSAYSGR-MDZJEUOHSA-N, taxon NCBITaxon:690307, KV878985.1 bounds 92151..104699, original Heterologous expression method and PMID:29631395. The existing structure-correction actions require a structured 3-star ChEBI destination and cannot consume a literal primary-derived structure. If no separately verified eligible A destination exists, explicitly implement and test a narrowly scoped, full-row-pinned literal-structure decision before adding such a table row; preserve the raw inventory. Require graph/InChI/formula validation, collision checks, original/corrected provenance and reproducible source attribution, rather than labeling the corrected graph as an unchanged MIBiG default. The published assigned graph in structure-comparison.json is a reviewable candidate only; independently adjudicate the defensible stereochemical resolution and retain the historical absolute-proof limit instead of silently asserting a fully proved four-centre configuration. Compose the new correction explicitly with any claim/strain decisions: current consumers reject concurrent structure correction, and ordinary REPLACE method overrides do not supply full-row guards. Migrate the generated owner through the approved writer/event path after a canary; do not hand-edit its structure or use the reserved unconsumed decisions.tsv.
+
+- Reject stale, missing or duplicated BGC0002226:2 rows and every changed source field; preserve the original complete raw row and N-methyl B sibling untouched. Do not use compound_index 1.
+- The chosen destination has the correct two-nitrogen scaffold and neutral C25H26N2O3. Explain the accepted stereochemical resolution: the four-centre published candidate is RLEKOSLSLNBPJB-BBLPPJRLSA-N, not an independently proved original-A absolute structure. Never substitute the 2026 opposite enantiomer or N-methyl B.
+- Search destination keys/identifiers/owners including ignored files before migration; reject an occupied or ambiguous destination unless a separate owner migration is reviewed. Preserve the stable MIBiG source concept and explicit old-to-new provenance; do not equate old and new keys.
+- Rejoin classification, occurrences, assays, ontology grounding and sibling links only from the chosen corrected identity. Do not carry old-key claims or NPClassifier output automatically. Ensure the NPClassifier correction consumer handles the new action and follow its documented dry run/canary.
+- After identity correction, retain native isotope-feeding context as separately attributed primary evidence using the supported curator-owned producer/writer route, not a fabricated MIBiG method. Keep imported SOURCE_ASSERTION and heterologous CLUSTER_DEMONSTRATED provenance distinguishable. FAC deletion is not native Knock-out studies; AauC assays of ent-A do not establish original-Adx enzyme activity.
+- Test correction/claim/strain composition explicitly, including existing rejection behavior and source drift. Do not pair a new structure correction with a claim-reference or strain table row and assume the current code accepts it.
+- Inspect the canary owner and all changed claims, append the required curation event for the separately authorized migration, maintain PATHS.tsv through its documented path, and run strict validation, provenance, corpus integrity, byte reproduction and full required QC. Leave scientific status unpromoted while the original-A stereochemical question remains unresolved.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| S043-OWNER | data/natural_products/alkaloids/acu-dioxomorpholine-a.yaml; Complete generated YAML and complete resolved local-sources.json; original 35 inspection pins rechecked before analysis. | supports | The single MIBiG-derived owner asserts acu-dioxomorpholine A using a one-nitrogen graph, an incompletely specified five-carbon-centre stereochemical structure, a native source assertion and a demonstrated heterologous locus. It has no xrefs, occurrences, activities, molecular targets or mechanism components. |
+| S043-RAW | data/raw/mibig_compounds.tsv; Exact untouched BGC0002226:2, version 3; full parsed-row digest 9fcf7b12b7559eec7ae872f5631399376c163bad3189cdd9c5be99ceeb42b1d4; original row retained in /private/tmp/npm-review-work/043/structure-comparison.json. | supports | The wrong graph, old key, one compound selector, source methods and entry-level PMID 29631395 are inherited together. Full-row pin includes all fields and empty strings, taxon 690307, KV878985.1:92151..104699 and Heterologous expression. |
+| S043-CHEMISTRY | /private/tmp/npm-review-work/043/structure-comparison.json; Pinned-RDKit diagnostic /private/tmp/npm-review-work/043/structure-audit.py; actual receipt /private/tmp/npm-review-work/043/structure-audit-receipt.json; owner atom 16 versus the ring amide N in the primary drawings. | supports | The owner SMILES, InChI and key agree internally, but give C26H27NO3, mass 401.199093724 and five potential carbon stereocentres (two undefined). The independently transcribed published graph gives C25H26N2O3, mass 402.194342692, four assigned centres 2R, 3S, 9R, 12R and key RLEKOSLSLNBPJB-BBLPPJRLSA-N. A separate edit of the owner atom 16 C to N plus displayed C9 stereochemistry yields that same candidate. This tests graph transcription, not historical absolute proof. |
+| S043-2018-IDENTITY | DOI:10.1021/acschembio.8b00024; Complete main scientific body and all main figure captions read; opening Results paragraph, Fig 2 and Fig3. Original file /private/tmp/npm-review-work/shared-next-batch005/bgc/acu-2018.xml; access receipt /private/tmp/npm-review-work/shared-next-batch005/bgc/access-103746.json. | supports | The A feature at m/z403.2020 is identified by accurate mass, MS/MS relatedness to N-methyl B and labeled precursor incorporation. Its written C25H27N2O3 describes the protonated ion; neutral C25H26N2O3 matches the drawn two-nitrogen scaffold. The paper renames the earlier N-methyl material B. It does not report a newly isolated original-A NMR set or a direct original-A absolute-configuration experiment. |
+| S043-2018-SI | DOI:10.1021/acschembio.8b00024; All 15 numbered SI pages text/captions and Table S1 read; original Fig S1 (p2), Fig S2 (p3), Fig S5 (p8) pixels independently viewed. Sequence alignments were not recomputed. Original file /private/tmp/npm-review-work/shared-next-batch005/bgc/acu-si-official.pdf; access receipt /private/tmp/npm-review-work/shared-next-batch005/bgc/access-103850.json. | supports | Fig S1 distinguishes A (indoline R=H) from B (R=Me), with the shared ring amide N present in both. Fig S2 shows A 403.202 and B 417.217 with analogous fragments. Fig S5 shows loss of the A 403.202 signal after adxA, adxB or adxC deletion; four neighboring FAC deletions retain it. These pixels independently establish the elemental/connectivity error and the experiment endpoint. |
+| S043-2018-NATIVE | DOI:10.1021/acschembio.8b00024; Results on isotope feeding; Stable Isotope Feeding method; Fig 2A caption and Fig 3 atom-tracking caption. Original file /private/tmp/npm-review-work/shared-next-batch005/bgc/acu-2018.xml; access receipt /private/tmp/npm-review-work/shared-next-batch005/bgc/access-103746.json. | supports | A occurs in the native parental A. aculeatus extract and the engineered A. nidulans FAC extract. Native A. aculeatus cultures on solid GMM were fed 1 mM labeled Trp/Phe precursors at 30 °C for 3 days. Trp and phenyl-ring deuterium, 13C9-Phe and D8/15N-Phe shifts support biosynthesis of the named two-nitrogen product; Phe nitrogen is lost. This is native isotope incorporation, not a purified Adx assay or stereochemical measurement. |
+| S043-2018-FAC | DOI:10.1021/acschembio.8b00024; Results on seven FAC deletants; gene-deletion method; Fig 1 and Fig 4 captions. Original file /private/tmp/npm-review-work/shared-next-batch005/bgc/acu-2018.xml; access receipt /private/tmp/npm-review-work/shared-next-batch005/bgc/access-103746.json. | supports | AaFAC30-6A16 was engineered in E. coli, then expressed in A. nidulans. Loss of A after deletion of adxA/B/C supports the cloned locus in that heterologous host. The paper proposes AdxB reduction, AdxA loading/ester chemistry and AdxC reverse prenylation from genetics, labeling and homology; it explicitly leaves the Arg197 catalytic role and prenylation order unresolved. The deletions are not native A. aculeatus knockouts. |
+| S043-2017-DONOR | DOI:10.1038/nchembio.2408; Targeted predecessor read: library donor paragraph; FAC selection, library construction/transformation and Red/ET recombineering method paragraphs. Other compounds not audited. Original file /private/tmp/npm-review-work/shared-next-batch005/bgc/acu-2017.xml; access receipt /private/tmp/npm-review-work/shared-next-batch005/bgc/access-104001.json. | supports | The FAC platform library names A. aculeatus ATCC 16872 as donor; FACs are A. nidulans/E. coli shuttle constructs. The Red/ET protocol performs deletions in E. coli SW102 and subsequently transfers the altered FAC into A. nidulans. This supplies a bibliographic donor-stock bridge; it is not a new authentication of the historical stock or the deposited locus. |
+| S043-2014-CONGENER | DOI:10.3390/molecules190810898; Targeted original §2.2 acu-dioxomorpholine text and Table 3, original Fig 7 pixels, §2.3 activity, introductory strain comparison and §3.1–3.2 strain/extraction scope. Other metabolites not audited. Original file /private/tmp/npm-review-work/shared-next-batch005/bgc/acu-2014.pdf; access receipt /private/tmp/npm-review-work/shared-next-batch005/bgc/access-103720.json. | supports | The isolated 2014 compound has indoline N-methylation and is the later B, not A. NOESY establishes relative stereochemistry. IBT 21030 was used for isolation and compared with the ex-type IBT 3244/ATCC 16872 for identification; these are not one stock. The reported Candida test is of that N-methyl compound, so its negative result cannot be assigned to A. |
+| S043-2026-ENT | DOI:10.1016/j.synbio.2026.01.032; Complete main body and main figure captions independently read, especially p0025, p0100, p0120, p0135 and p0155; original /private/tmp/npm-review-work/shared-next-batch005/acu-2026/primary.xml; receipt /private/tmp/npm-review-work/shared-next-batch005/acu-2026/access-104809.json. | supports | A distinct A. aculeatus CRI323-04 aau locus produces ent-A through engineered A. nidulans LO8030. Compound3 has neutral C25H26N2O3 and opposite 2S, 3R, 9S, 12S; its assignment uses precursor 1 Marfey evidence, relative NMR and biosynthetic linkage. Purified His-AauC converts 1 to 3 with DMAPP. The study does not remeasure the historical original-A sample or prove that AdxC from ATCC 16872 makes this enantiomer. |
+| S043-2026-FIG1 | DOI:10.1016/j.synbio.2026.01.032; Original Figure 1b pixels independently viewed at /private/tmp/npm-review-work/shared-next-batch005/acu-2026/figure1.jpg; receipt /private/tmp/npm-review-work/shared-next-batch005/acu-2026/access-104828.json. | supports | The previous-work A and new ent-A are drawn as opposite four-centre structures, both containing two nitrogens. Previous A is explicitly labeled 2R, 3S, 9R, 12R and new ent-A 2S, 3R, 9S, 12S. The drawing corroborates the constitutional transcription and reported assignments, but is not an independent original-A absolute-configuration measurement. |
+| S043-REPAIR-OWNERS | src/naturalproductmech/curate/structure_corrections.py; Full structure-correction and claim-reference loaders; docs/CURATION.md structure/claim/strain sections; seed_from_sources.py override and correction-composition/emission sections; extract_npclassifier.py structures_needing_classification; grading.py and conf/producer_evidence.tsv. | supports | The current correction consumer accepts only replacements/splits onto structured 3-star ChEBI rows. It does not support a literal literature graph. Citation/strain qualifications explicitly reject simultaneous structure replacement. MIBiG REPLACE method overrides do not enforce full-row expected_* pins, and the method vocabulary has no isotope-feeding entry; Knock-out studies is specifically native. A tested new decision/consumer and explicit composition are needed for this graph repair. |
+| I043-OWNER | data/natural_products/alkaloids/acu-dioxomorpholine-a.yaml; Complete owner, local-sources.json, all source concepts and both seed-history events | supports | The owner contains one MIBiG source concept, taxon/locus pair and pinned NPClassifier classification. No external chemical xref, occurrence list, pathway, graph component, protein example, assay, molecular target or clinical claim is asserted. Its internally consistent graph is scientifically wrong for the name, as documented in the separate science packet. |
+| I043-AUDIT | /private/tmp/npm-review-work/043/identity/identifier-audit.json; Independent current MIBiG A/B and ChEBI name-hit graph reconstruction; source-concept hash derivation; bounded GenBank annotation parsing; exact-key inventory projection | supports | The current MIBiG A graph equals the owner in full Standard key and fixed-H InChI. The current MIBiG B graph equals the ChEBI name hit, with C26H28N2O3 and key HZOLEYOVBYTDAS-LUHVKKMXSA-N. The unchanged A graph is C26H27NO3, DQGMTSDVSAYSGR-MDZJEUOHSA-N. Internal agreement confirms propagation of the source error; it does not vindicate the named identity. |
+| I043-MIBIG | https://mibig.secondarymetabolites.org/repository/BGC0002226.3/annotations.json; Entire response, both compound objects, changelog, taxonomy, locus and inferred module evidence; local snapshot /private/tmp/npm-review-work/043/identity/mibig.json | supports | BGC0002226 version 3 is active, quality questionable, completeness unknown. Compound index 2 is A with the unchanged erroneous graph and no external database IDs. Index 1 is N-methyl B with a different two-nitrogen graph and its own NPAtlas link. The 2022-10-07 changelog explicitly records a B structure update, not an A repair. Taxon 690307, KV878985.1:92151..104699, NRPS/Type I, Heterologous expression and legacy PMID 29631395 match the frozen row. Module substrates carry Structure-based inference, not measured enzyme-substrate evidence. |
+| I043-CHEBI-OLD-KEY | https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=DQGMTSDVSAYSGR-MDZJEUOHSA-N&amp;size=100; Complete JSON no-match body and request receipt; local snapshot /private/tmp/npm-review-work/043/identity/chebi-search.json.error | supports | The HTTP 404 body explicitly reports no compound matching the owner full key. This is a bounded negative search result, not a network-unavailable response or universal absence claim. |
+| I043-CHEBI-PRIMARY-KEY | https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=RLEKOSLSLNBPJB-BBLPPJRLSA-N&amp;size=100; Complete JSON no-match body and request receipt; local snapshot /private/tmp/npm-review-work/043/identity/chebi-primary-key.json.error | supports | The HTTP 404 body explicitly reports no compound matching the primary-transcribed full key RLEKOSLSLNBPJB-BBLPPJRLSA-N. This does not exclude other chemical representations or stereochemical entries beyond that exact query. |
+| I043-CHEBI-NAME | https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=acu-dioxomorpholine&amp;size=100; All returned name-search fields, total=1, star count, charge, formula, full InChI/key and SMILES; local snapshot /private/tmp/npm-review-work/043/identity/chebi-name.json | supports | The acu-dioxomorpholine query returns one result, CHEBI:220088, with two stars, neutral C26H28N2O3 and key HZOLEYOVBYTDAS-LUHVKKMXSA-N. Its graph has an indoline N-methyl substituent and equals current MIBiG B, so it is neither A nor an eligible three-star A replacement. The generic authority name cannot override exact graph identity. |
+| I043-TAXON | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=690307&amp;retmode=xml; Complete top-level Taxon, rank, parent and lineage; successful serial retry after the retained initial HTTP 429; local snapshot /private/tmp/npm-review-work/043/identity/taxonomy-retry.xml | supports | NCBI taxon 690307 resolves to Aspergillus aculeatus ATCC 16872 at strain rank, with species parent 5053 and fungal lineage. This directly supports the deposited strain label and FUNGAL grouping. It does not authenticate the historical experimental stock independently. |
+| I043-GENBANK | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&amp;id=KV878985.1&amp;rettype=gb&amp;retmode=text&amp;seq_start=92151&amp;seq_stop=104699; Entire header and all feature locations/non-sequence qualifiers; bounded sequence length and stored-translation lengths/hashes parsed in identifier-audit.json. DNA translation and historical XP/OJJ equivalence were not independently checked.; local snapshot /private/tmp/npm-review-work/043/identity/genbank-locus-retry.gb | supports | KV878985.1 returns exactly the requested 12,549 bp region 92151..104699 of ASPACscaffold_16. Source qualifiers state ATCC 16872, ATCC:16872, taxon 690307 and culture from type material; links are BioProject PRJNA82765 and BioSample SAMN00788628. Three complete CDS annotations carry OJJ96433.1, OJJ96434.1 and OJJ96435.1, with stored translation lengths 2413, 378 and 422 aa. All products remain annotated hypothetical protein. Accession, source context and interval are supported; these annotations do not prove Adx chemistry or exact experimental constructs. |
+| I043-RAW | data/raw/mibig_compounds.tsv; Exact BGC0002226:2 row; source-concept derivation and complete committed exact-key inventory projections in identifier-audit.json | supports | Hashing MIBIG plus a NUL separator plus BGC0002226:2 with the actual seeder rule reproduces naturalproductmech:mibig-3e7b2e9aed. The identifier names that stable source concept, not proof of chemical correctness. The complete pinned ChEBI structure inventory has no row for either the current wrong key or the primary-transcribed full key. |
+| I043-CLASS | data/raw/npclassifier.tsv; Exact owner-key row and full-key projection for the primary-transcribed candidate | context_only | The owner correctly attributes Alkaloids, empty superclass/class lists and non-glycoside to the pinned NPClassifier 2026-09-07 model. That row was computed from the wrong owner graph; no row for the corrected candidate was found in the complete committed inventory. The computed output cannot be transferred automatically through a structure correction. MIBiG NRPS is a separate source-asserted class. |
+| I043-SEARCH | /private/tmp/npm-review-work/043/identity/local-search.txt; All matching output inspected; source/curation/implementation/target/PATHS search includes hidden and ignored files | supports | Matches are the target owner/PATHS entry, its NPClassifier row and the two MIBiG A/B source rows. No exact-target maintained correction appeared in the searched curation or implementation paths. This search did not inspect other generated owners or establish campaign coverage. |
+| I043-IMODULON | https://imodulondb.org/; Complete retained 28-dataset catalogue at /private/tmp/npm-review-work/010/imodulon-datasets.txt | context_only | The catalogue has no Aspergillus aculeatus or A. nidulans dataset. Bacterial E. coli datasets cannot stand in for this fungal donor or heterologous-host system. No applicable regulatory expression module is claimed. |
+
+## Limits And Additional Notes
+
+- The 2018 full main body, all SI text/captions and original SI Figures S1/S2/S5 were independently inspected; the main Figure 2 original pixels were not retrieved in the preparation. Its native/heterologous comparison is read from full text and caption, not represented as a new direct pixel inspection.
+- The 2026 complete main text and original Figure 1 were read; this audit did not reprocess raw NMR, independently solve absolute stereochemistry or inspect all 104 SI pages. Its opposite-enantiomer evidence cannot complete the original-A absolute proof.
+- The 2014 primary was read only in the stated target congener, relative-structure, strain and activity sections. It concerns N-methyl B and does not independently identify an original A isolation stock.
+- Historical stock authentication, exact native CDS/protein mapping and current taxonomic/database authority checks are outside this scientific packet and belong to the separate identifier audit. The 2017 donor bridge is bibliographic, not a new sequence-authentication result.
+- No primary result supports the current one-nitrogen molecule as acu-dioxomorpholine A. The constitutional error is confirmed; unavailable historical absolute proof is reported as an uncertainty rather than a second confirmed stereochemical error.
+- All proposed changes require separate curation authorization and implementation. No review was saved and no source, generated owner, native status or history was modified.
+- ChEBI absence is bounded to the two exact full-key queries, the acu-dioxomorpholine name query and the complete pinned structure inventory. Other representations, future releases and unqueried authorities are not ruled out.
+- The initial NCBI requests returned HTTP 429; the separately retained serial retries succeeded. Failed responses were preserved and are not represented as successful retrievals.
+- GenBank metadata and CDS intervals/translation lengths were inspected; native DNA-to-protein translation, historical XP-to-OJJ sequence equivalence and experimental construct identity were not independently established. Matching lengths alone are not sequence identity.
+- The source and authority agreement does not resolve the chemical-identity blocker or original-A absolute-configuration limitation already recorded in the science packet. No additional identity finding or action is duplicated here.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35 explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). Skipped tests are not counted as passing tests. Existing ontology caches were used; no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do not establish biological production, stereochemical specificity, evidence adequacy, or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology results. Reuse establishes unchanged repository inputs; it is not a new remote authority query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all tracked files are hashed. Generated Python bytecode and external tool caches are not claimed to have been independently byte-pinned at the prior execution.
+- No scientific owner, inventory, curation table, native status or history was edited. Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification; target strict validation ran afresh. Scientific failed or unavailable checks are distinct from bundle validation.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T110915Z-acu-dioxomorpholine-a
+title: 'Acu-dioxomorpholine A: confirmed ring-nitrogen transcription error'
+started_at: '2026-10-21T10:56:59.860505Z'
+finished_at: '2026-10-21T11:09:15.278246Z'
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The source-derived graph substitutes carbon for a ring amide nitrogen and
+  therefore denotes the wrong molecule despite internally matching SMILES, InChI and
+  key. Original drawings and mass evidence support a two-nitrogen scaffold; historical
+  absolute configuration remains unresolved. Heterologous FAC genetics and native
+  isotope feeding are kept distinct.
+source:
+  git_revision: 1c2402097718c138b081e00943de8f04de0541cd
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/acu-dioxomorpholine-a.yaml
+    sha256: d18f2366b8098715ce83acd65e678962a80817ceb63da2a0d7e8a147f084fd68
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/extract_npclassifier.py
+    sha256: 408b25dd9fe570c9a5eb8f4d5f660608d3eb4a9b3c588e9cda15c6ea504e3259
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+    role: context
+  - path: src/naturalproductmech/grading.py
+    sha256: ece54c4a2c0803f034ac59de51b1006cf79ea8d6b6256d75757d4adb88ea9630
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 43, batch 005, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated pending-PR targets.
+    At selection, 94 of 3116 current records had campaign coverage and 3022 remained.
+    The population search included ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-3e7b2e9aed
+targets:
+- target_id: naturalproductmech:mibig-3e7b2e9aed
+  path: data/natural_products/alkaloids/acu-dioxomorpholine-a.yaml
+  label: acu-dioxomorpholine A
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-3e7b2e9aed
+  command: just validate-strict data/natural_products/alkaloids/acu-dioxomorpholine-a.yaml
+    --out /private/tmp/npm-review-work/043/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T10:57:02.153867Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 current record files agree with PATHS.tsv and their pinned filing
+    pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055340+00:00;
+    finished 2026-10-21T09:55:22.727768+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-corpus.log. Reused
+    for batch005 only after fresh fetch/base/tree equality and all 9,182 tracked file
+    bytes and modes were verified against the original batch004 baseline (208,070,649
+    bytes). This gate was not rerun for batch005; original times, scope, warnings,
+    exceptions and skips are preserved.'
+  target_ids:
+  - naturalproductmech:mibig-3e7b2e9aed
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 current records passed the documented byte-reproduction gate
+    against committed inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055361+00:00;
+    finished 2026-10-21T09:56:44.050706+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-reproduction.log.
+    Reused for batch005 only after fresh fetch/base/tree equality and all 9,182 tracked
+    file bytes and modes were verified against the original batch004 baseline (208,070,649
+    bytes). This gate was not rerun for batch005; original times, scope, warnings,
+    exceptions and skips are preserved.'
+  target_ids:
+  - naturalproductmech:mibig-3e7b2e9aed
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The exhaustive review queue produced 8,928 diagnostic rows across 12 queues;
+    this deterministic output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just review-queue --tsv /private/tmp/npm-review-queue-batch-004.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.057401+00:00;
+    finished 2026-10-21T09:54:38.468783+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/review-queue.log. Reused
+    for batch005 only after fresh fetch/base/tree equality and all 9,182 tracked file
+    bytes and modes were verified against the original batch004 baseline (208,070,649
+    bytes). This gate was not rerun for batch005; original times, scope, warnings,
+    exceptions and skips are preserved.'
+  target_ids:
+  - naturalproductmech:mibig-3e7b2e9aed
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'The configured identifier-label gate passed using the existing ontology
+    caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions,
+    499 warning-only mismatches and 4,744 pairs skipped because their prefixes have
+    no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.061733+00:00;
+    finished 2026-10-21T09:56:36.296159+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/validate-products.log. Reused
+    for batch005 only after fresh fetch/base/tree equality and all 9,182 tracked file
+    bytes and modes were verified against the original batch004 baseline (208,070,649
+    bytes). This gate was not rerun for batch005; original times, scope, warnings,
+    exceptions and skips are preserved.'
+  target_ids:
+  - naturalproductmech:mibig-3e7b2e9aed
+- check_id: shared-qc
+  name: Full repository quality gate on the current main baseline
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed on the unchanged main baseline
+    during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+    All configured lint, governance, documentation, provenance, source-queue, schema,
+    rendering, reproduction, filing-integrity and reporting stages completed successfully.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:30.560925+00:00;
+    finished 2026-10-21T10:04:44.806799+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/qc.log. Reused for batch005
+    only after fresh fetch/base/tree equality and all 9,182 tracked file bytes and
+    modes were verified against the original batch004 baseline (208,070,649 bytes).
+    This gate was not rerun for batch005; original times, scope, warnings, exceptions
+    and skips are preserved.'
+  target_ids:
+  - naturalproductmech:mibig-3e7b2e9aed
+- check_id: S043-GRAPH-COMPARE
+  name: Original-primary structure versus stored owner graph
+  status: failed
+  required: true
+  summary: 'Confirmed constitutional mismatch: the diagnostic ran successfully (exit
+    0), but the scientific comparison fails because one ring N is replaced by C. Correcting
+    only undefined stereocentres cannot repair it.'
+  target_ids:
+  - naturalproductmech:mibig-3e7b2e9aed
+  evidence_ids:
+  - S043-OWNER
+  - S043-RAW
+  - S043-CHEMISTRY
+  - S043-2018-IDENTITY
+  - S043-2018-SI
+  - S043-2026-FIG1
+- check_id: S043-GRAPH-DIAGNOSTIC
+  name: Reproducible molecular graph diagnostic
+  status: passed
+  required: true
+  summary: The diagnostic completed, verified the original input pins and reproduced
+    both the internally consistent owner graph and the distinct primary-transcribed
+    graph. Its completed execution is separate from the failed scientific identity
+    comparison.
+  target_ids:
+  - naturalproductmech:mibig-3e7b2e9aed
+  evidence_ids:
+  - S043-CHEMISTRY
+  command: .venv/bin/python /private/tmp/npm-review-work/043/structure-audit.py
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: Executed 2026-10-21T11:00:19.979863+00:00–2026-10-21T11:00:21.629808+00:00
+    in /private/tmp/npm-record-reviews-20261021. A zero process exit means the diagnostic
+    completed and assertions about the observed mismatch passed; it does not mean
+    scientific identity passed.
+- check_id: S043-EXPERIMENT-SCOPE
+  name: Original native and FAC-host experiment scope
+  status: passed
+  required: true
+  summary: The exact named-product literature was read and native isotope feeding
+    was separated from heterologous expression/FAC deletions. These experiments concern
+    the published two-nitrogen compound; identity migration must precede attaching
+    them to a corrected owner.
+  target_ids:
+  - naturalproductmech:mibig-3e7b2e9aed
+  evidence_ids:
+  - S043-2018-NATIVE
+  - S043-2018-FAC
+  - S043-2018-SI
+  - S043-2017-DONOR
+- check_id: S043-HISTORICAL-ABSOLUTE
+  name: Independent absolute stereochemistry of original acu-dioxomorpholine A
+  status: unavailable
+  required: true
+  summary: The bounded original 2014/2018 and later 2026 source set supplies relative/assigned
+    drawings and stronger absolute anchoring for the new opposite enantiomer, but
+    not independent absolute proof for the historical original-A material. Do not
+    equate the reported four-centre candidate with fully re-established historical
+    stereochemistry.
+  target_ids:
+  - naturalproductmech:mibig-3e7b2e9aed
+  evidence_ids:
+  - S043-2014-CONGENER
+  - S043-2018-IDENTITY
+  - S043-2018-SI
+  - S043-2026-ENT
+  - S043-2026-FIG1
+- check_id: I043-SOURCE-RESOLUTION
+  name: Current source identifiers and bounded locus resolution
+  status: passed
+  required: true
+  summary: MIBiG accession/version, taxon, GenBank interval and minted source concept
+    resolve; the successful taxonomy/GenBank retries supersede initial rate-limit
+    failures. This check concerns resolution and provenance, not the failed scientific
+    A identity.
+  target_ids:
+  - naturalproductmech:mibig-3e7b2e9aed
+  evidence_ids:
+  - I043-MIBIG
+  - I043-TAXON
+  - I043-GENBANK
+  - I043-RAW
+- check_id: I043-CHEBI-BOUNDARY
+  name: Current ChEBI query and congener boundary
+  status: passed
+  required: true
+  summary: Explicit no-match bodies are distinguished from access failure, and the
+    two-star name hit is identified as N-methyl B rather than accepted as A. No exhaustive
+    authority-absence claim is made.
+  target_ids:
+  - naturalproductmech:mibig-3e7b2e9aed
+  evidence_ids:
+  - I043-CHEBI-OLD-KEY
+  - I043-CHEBI-PRIMARY-KEY
+  - I043-CHEBI-NAME
+  - I043-AUDIT
+- check_id: I043-IMODULON-CHECK
+  name: Applicable structured expression dataset
+  status: not_applicable
+  required: false
+  summary: No matching fungal donor or A. nidulans host dataset occurs in the complete
+    retained catalogue.
+  target_ids:
+  - naturalproductmech:mibig-3e7b2e9aed
+  evidence_ids:
+  - I043-IMODULON
+evidence:
+- evidence_id: S043-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/acu-dioxomorpholine-a.yaml
+  locator: Complete generated YAML and complete resolved local-sources.json; original
+    35 inspection pins rechecked before analysis.
+  accessed_at: '2026-10-21T11:03:25.941495Z'
+  support: supports
+  summary: The single MIBiG-derived owner asserts acu-dioxomorpholine A using a one-nitrogen
+    graph, an incompletely specified five-carbon-centre stereochemical structure,
+    a native source assertion and a demonstrated heterologous locus. It has no xrefs,
+    occurrences, activities, molecular targets or mechanism components.
+  snapshot_sha256: d18f2366b8098715ce83acd65e678962a80817ceb63da2a0d7e8a147f084fd68
+- evidence_id: S043-RAW
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: Exact untouched BGC0002226:2, version 3; full parsed-row digest 9fcf7b12b7559eec7ae872f5631399376c163bad3189cdd9c5be99ceeb42b1d4;
+    original row retained in /private/tmp/npm-review-work/043/structure-comparison.json.
+  accessed_at: '2026-10-21T11:03:25.941495Z'
+  support: supports
+  summary: The wrong graph, old key, one compound selector, source methods and entry-level
+    PMID 29631395 are inherited together. Full-row pin includes all fields and empty
+    strings, taxon 690307, KV878985.1:92151..104699 and Heterologous expression.
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: S043-CHEMISTRY
+  kind: validation
+  reference: /private/tmp/npm-review-work/043/structure-comparison.json
+  locator: Pinned-RDKit diagnostic /private/tmp/npm-review-work/043/structure-audit.py;
+    actual receipt /private/tmp/npm-review-work/043/structure-audit-receipt.json;
+    owner atom 16 versus the ring amide N in the primary drawings.
+  accessed_at: '2026-10-21T11:00:21.629808Z'
+  support: supports
+  summary: The owner SMILES, InChI and key agree internally, but give C26H27NO3, mass
+    401.199093724 and five potential carbon stereocentres (two undefined). The independently
+    transcribed published graph gives C25H26N2O3, mass 402.194342692, four assigned
+    centres 2R, 3S, 9R, 12R and key RLEKOSLSLNBPJB-BBLPPJRLSA-N. A separate edit of
+    the owner atom 16 C to N plus displayed C9 stereochemistry yields that same candidate.
+    This tests graph transcription, not historical absolute proof.
+  snapshot_sha256: 6e9afcb2e72d48d8fbdb57683b990780110c316e7c5a4cb45c53421656df17c3
+- evidence_id: S043-2018-IDENTITY
+  kind: primary_source
+  reference: DOI:10.1021/acschembio.8b00024
+  locator: Complete main scientific body and all main figure captions read; opening
+    Results paragraph, Fig 2 and Fig3. Original file /private/tmp/npm-review-work/shared-next-batch005/bgc/acu-2018.xml;
+    access receipt /private/tmp/npm-review-work/shared-next-batch005/bgc/access-103746.json.
+  accessed_at: '2026-10-21T10:37:45.376647Z'
+  support: supports
+  summary: The A feature at m/z403.2020 is identified by accurate mass, MS/MS relatedness
+    to N-methyl B and labeled precursor incorporation. Its written C25H27N2O3 describes
+    the protonated ion; neutral C25H26N2O3 matches the drawn two-nitrogen scaffold.
+    The paper renames the earlier N-methyl material B. It does not report a newly
+    isolated original-A NMR set or a direct original-A absolute-configuration experiment.
+  snapshot_sha256: 34f9d1d82162f38b3bce7bc823c13b6e0b8423c344ec77186f74f485c809589f
+- evidence_id: S043-2018-SI
+  kind: primary_source
+  reference: DOI:10.1021/acschembio.8b00024
+  locator: All 15 numbered SI pages text/captions and Table S1 read; original Fig
+    S1 (p2), Fig S2 (p3), Fig S5 (p8) pixels independently viewed. Sequence alignments
+    were not recomputed. Original file /private/tmp/npm-review-work/shared-next-batch005/bgc/acu-si-official.pdf;
+    access receipt /private/tmp/npm-review-work/shared-next-batch005/bgc/access-103850.json.
+  accessed_at: '2026-10-21T10:38:50.895883Z'
+  support: supports
+  summary: Fig S1 distinguishes A (indoline R=H) from B (R=Me), with the shared ring
+    amide N present in both. Fig S2 shows A 403.202 and B 417.217 with analogous fragments.
+    Fig S5 shows loss of the A 403.202 signal after adxA, adxB or adxC deletion; four
+    neighboring FAC deletions retain it. These pixels independently establish the
+    elemental/connectivity error and the experiment endpoint.
+  snapshot_sha256: 6a3fec117fb628d2280366c4d71e857134e5289bf426df34a08a4ce4613c3d3b
+- evidence_id: S043-2018-NATIVE
+  kind: primary_source
+  reference: DOI:10.1021/acschembio.8b00024
+  locator: Results on isotope feeding; Stable Isotope Feeding method; Fig 2A caption
+    and Fig 3 atom-tracking caption. Original file /private/tmp/npm-review-work/shared-next-batch005/bgc/acu-2018.xml;
+    access receipt /private/tmp/npm-review-work/shared-next-batch005/bgc/access-103746.json.
+  accessed_at: '2026-10-21T10:37:45.376647Z'
+  support: supports
+  summary: A occurs in the native parental A. aculeatus extract and the engineered
+    A. nidulans FAC extract. Native A. aculeatus cultures on solid GMM were fed 1
+    mM labeled Trp/Phe precursors at 30 °C for 3 days. Trp and phenyl-ring deuterium,
+    13C9-Phe and D8/15N-Phe shifts support biosynthesis of the named two-nitrogen
+    product; Phe nitrogen is lost. This is native isotope incorporation, not a purified
+    Adx assay or stereochemical measurement.
+  snapshot_sha256: 34f9d1d82162f38b3bce7bc823c13b6e0b8423c344ec77186f74f485c809589f
+- evidence_id: S043-2018-FAC
+  kind: primary_source
+  reference: DOI:10.1021/acschembio.8b00024
+  locator: Results on seven FAC deletants; gene-deletion method; Fig 1 and Fig 4 captions.
+    Original file /private/tmp/npm-review-work/shared-next-batch005/bgc/acu-2018.xml;
+    access receipt /private/tmp/npm-review-work/shared-next-batch005/bgc/access-103746.json.
+  accessed_at: '2026-10-21T10:37:45.376647Z'
+  support: supports
+  summary: AaFAC30-6A16 was engineered in E. coli, then expressed in A. nidulans.
+    Loss of A after deletion of adxA/B/C supports the cloned locus in that heterologous
+    host. The paper proposes AdxB reduction, AdxA loading/ester chemistry and AdxC
+    reverse prenylation from genetics, labeling and homology; it explicitly leaves
+    the Arg197 catalytic role and prenylation order unresolved. The deletions are
+    not native A. aculeatus knockouts.
+  snapshot_sha256: 34f9d1d82162f38b3bce7bc823c13b6e0b8423c344ec77186f74f485c809589f
+- evidence_id: S043-2017-DONOR
+  kind: primary_source
+  reference: DOI:10.1038/nchembio.2408
+  locator: 'Targeted predecessor read: library donor paragraph; FAC selection, library
+    construction/transformation and Red/ET recombineering method paragraphs. Other
+    compounds not audited. Original file /private/tmp/npm-review-work/shared-next-batch005/bgc/acu-2017.xml;
+    access receipt /private/tmp/npm-review-work/shared-next-batch005/bgc/access-104001.json.'
+  accessed_at: '2026-10-21T10:39:58.953313Z'
+  support: supports
+  summary: The FAC platform library names A. aculeatus ATCC 16872 as donor; FACs are
+    A. nidulans/E. coli shuttle constructs. The Red/ET protocol performs deletions
+    in E. coli SW102 and subsequently transfers the altered FAC into A. nidulans.
+    This supplies a bibliographic donor-stock bridge; it is not a new authentication
+    of the historical stock or the deposited locus.
+  snapshot_sha256: 3a5c28d19ed559dc32c744dfa53512aec52bf611bd8b3380a3123cd8ac2a9984
+- evidence_id: S043-2014-CONGENER
+  kind: primary_source
+  reference: DOI:10.3390/molecules190810898
+  locator: Targeted original §2.2 acu-dioxomorpholine text and Table 3, original Fig
+    7 pixels, §2.3 activity, introductory strain comparison and §3.1–3.2 strain/extraction
+    scope. Other metabolites not audited. Original file /private/tmp/npm-review-work/shared-next-batch005/bgc/acu-2014.pdf;
+    access receipt /private/tmp/npm-review-work/shared-next-batch005/bgc/access-103720.json.
+  accessed_at: '2026-10-21T10:37:20.685611Z'
+  support: supports
+  summary: The isolated 2014 compound has indoline N-methylation and is the later
+    B, not A. NOESY establishes relative stereochemistry. IBT 21030 was used for isolation
+    and compared with the ex-type IBT 3244/ATCC 16872 for identification; these are
+    not one stock. The reported Candida test is of that N-methyl compound, so its
+    negative result cannot be assigned to A.
+  snapshot_sha256: 27c46832413b8fefe4825dd103bc947c064c1ab5b28941c35ae97cd0c75a936c
+- evidence_id: S043-2026-ENT
+  kind: primary_source
+  reference: DOI:10.1016/j.synbio.2026.01.032
+  locator: Complete main body and main figure captions independently read, especially
+    p0025, p0100, p0120, p0135 and p0155; original /private/tmp/npm-review-work/shared-next-batch005/acu-2026/primary.xml;
+    receipt /private/tmp/npm-review-work/shared-next-batch005/acu-2026/access-104809.json.
+  accessed_at: '2026-10-21T10:48:08.280038Z'
+  support: supports
+  summary: A distinct A. aculeatus CRI323-04 aau locus produces ent-A through engineered
+    A. nidulans LO8030. Compound3 has neutral C25H26N2O3 and opposite 2S, 3R, 9S,
+    12S; its assignment uses precursor 1 Marfey evidence, relative NMR and biosynthetic
+    linkage. Purified His-AauC converts 1 to 3 with DMAPP. The study does not remeasure
+    the historical original-A sample or prove that AdxC from ATCC 16872 makes this
+    enantiomer.
+  snapshot_sha256: acabbfa0cd52ad2b1272a2604ed3b7a0767a78dccef7aaefa99971b0598f102e
+- evidence_id: S043-2026-FIG1
+  kind: primary_source
+  reference: DOI:10.1016/j.synbio.2026.01.032
+  locator: Original Figure 1b pixels independently viewed at /private/tmp/npm-review-work/shared-next-batch005/acu-2026/figure1.jpg;
+    receipt /private/tmp/npm-review-work/shared-next-batch005/acu-2026/access-104828.json.
+  accessed_at: '2026-10-21T10:48:28.179635Z'
+  support: supports
+  summary: The previous-work A and new ent-A are drawn as opposite four-centre structures,
+    both containing two nitrogens. Previous A is explicitly labeled 2R, 3S, 9R, 12R
+    and new ent-A 2S, 3R, 9S, 12S. The drawing corroborates the constitutional transcription
+    and reported assignments, but is not an independent original-A absolute-configuration
+    measurement.
+  snapshot_sha256: b42155a0addfe83b0cf88bba1021ef4be0092504931b9b07cbde9b2c20e169d6
+- evidence_id: S043-REPAIR-OWNERS
+  kind: record_content
+  reference: src/naturalproductmech/curate/structure_corrections.py
+  locator: Full structure-correction and claim-reference loaders; docs/CURATION.md
+    structure/claim/strain sections; seed_from_sources.py override and correction-composition/emission
+    sections; extract_npclassifier.py structures_needing_classification; grading.py
+    and conf/producer_evidence.tsv.
+  accessed_at: '2026-10-21T11:03:25.941495Z'
+  support: supports
+  summary: The current correction consumer accepts only replacements/splits onto structured
+    3-star ChEBI rows. It does not support a literal literature graph. Citation/strain
+    qualifications explicitly reject simultaneous structure replacement. MIBiG REPLACE
+    method overrides do not enforce full-row expected_* pins, and the method vocabulary
+    has no isotope-feeding entry; Knock-out studies is specifically native. A tested
+    new decision/consumer and explicit composition are needed for this graph repair.
+  snapshot_sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+- evidence_id: I043-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/acu-dioxomorpholine-a.yaml
+  locator: Complete owner, local-sources.json, all source concepts and both seed-history
+    events
+  accessed_at: '2026-10-21T11:07:00.949495Z'
+  support: supports
+  summary: The owner contains one MIBiG source concept, taxon/locus pair and pinned
+    NPClassifier classification. No external chemical xref, occurrence list, pathway,
+    graph component, protein example, assay, molecular target or clinical claim is
+    asserted. Its internally consistent graph is scientifically wrong for the name,
+    as documented in the separate science packet.
+  snapshot_sha256: d18f2366b8098715ce83acd65e678962a80817ceb63da2a0d7e8a147f084fd68
+- evidence_id: I043-AUDIT
+  kind: validation
+  reference: /private/tmp/npm-review-work/043/identity/identifier-audit.json
+  locator: Independent current MIBiG A/B and ChEBI name-hit graph reconstruction;
+    source-concept hash derivation; bounded GenBank annotation parsing; exact-key
+    inventory projection
+  accessed_at: '2026-10-21T11:05:47.586280Z'
+  support: supports
+  summary: The current MIBiG A graph equals the owner in full Standard key and fixed-H
+    InChI. The current MIBiG B graph equals the ChEBI name hit, with C26H28N2O3 and
+    key HZOLEYOVBYTDAS-LUHVKKMXSA-N. The unchanged A graph is C26H27NO3, DQGMTSDVSAYSGR-MDZJEUOHSA-N.
+    Internal agreement confirms propagation of the source error; it does not vindicate
+    the named identity.
+  snapshot_sha256: 6963247e7d7656d259c692d36390b13c49564972d9fb972321f175a7c09778da
+- evidence_id: I043-MIBIG
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0002226.3/annotations.json
+  locator: Entire response, both compound objects, changelog, taxonomy, locus and
+    inferred module evidence; local snapshot /private/tmp/npm-review-work/043/identity/mibig.json
+  accessed_at: '2026-10-21T10:58:24.780258Z'
+  support: supports
+  summary: BGC0002226 version 3 is active, quality questionable, completeness unknown.
+    Compound index 2 is A with the unchanged erroneous graph and no external database
+    IDs. Index 1 is N-methyl B with a different two-nitrogen graph and its own NPAtlas
+    link. The 2022-10-07 changelog explicitly records a B structure update, not an
+    A repair. Taxon 690307, KV878985.1:92151..104699, NRPS/Type I, Heterologous expression
+    and legacy PMID 29631395 match the frozen row. Module substrates carry Structure-based
+    inference, not measured enzyme-substrate evidence.
+  snapshot_sha256: 70b26d67528d790c3de04aa6fc3face7a73c835646491b699abe43fb2003102c
+- evidence_id: I043-CHEBI-OLD-KEY
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=DQGMTSDVSAYSGR-MDZJEUOHSA-N&size=100
+  locator: Complete JSON no-match body and request receipt; local snapshot /private/tmp/npm-review-work/043/identity/chebi-search.json.error
+  accessed_at: '2026-10-21T10:58:24.829681Z'
+  support: supports
+  summary: The HTTP 404 body explicitly reports no compound matching the owner full
+    key. This is a bounded negative search result, not a network-unavailable response
+    or universal absence claim.
+  snapshot_sha256: 01eabc5592c74ac1a7a9974b238ef75285f0650635bb2dc490c16da88b140061
+  search_scope: Current ChEBI es_search term DQGMTSDVSAYSGR-MDZJEUOHSA-N, size 100;
+    exact full-key query only.
+- evidence_id: I043-CHEBI-PRIMARY-KEY
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=RLEKOSLSLNBPJB-BBLPPJRLSA-N&size=100
+  locator: Complete JSON no-match body and request receipt; local snapshot /private/tmp/npm-review-work/043/identity/chebi-primary-key.json.error
+  accessed_at: '2026-10-21T11:00:34.178265Z'
+  support: supports
+  summary: The HTTP 404 body explicitly reports no compound matching the primary-transcribed
+    full key RLEKOSLSLNBPJB-BBLPPJRLSA-N. This does not exclude other chemical representations
+    or stereochemical entries beyond that exact query.
+  snapshot_sha256: f7cf7c1d5c6ec162484eec70cff6912438c70e23b5828edf8f23322a9ba18fd5
+  search_scope: Current ChEBI es_search term RLEKOSLSLNBPJB-BBLPPJRLSA-N, size 100;
+    exact reported four-centre candidate query only.
+- evidence_id: I043-CHEBI-NAME
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=acu-dioxomorpholine&size=100
+  locator: All returned name-search fields, total=1, star count, charge, formula,
+    full InChI/key and SMILES; local snapshot /private/tmp/npm-review-work/043/identity/chebi-name.json
+  accessed_at: '2026-10-21T10:58:25.010721Z'
+  support: supports
+  summary: The acu-dioxomorpholine query returns one result, CHEBI:220088, with two
+    stars, neutral C26H28N2O3 and key HZOLEYOVBYTDAS-LUHVKKMXSA-N. Its graph has an
+    indoline N-methyl substituent and equals current MIBiG B, so it is neither A nor
+    an eligible three-star A replacement. The generic authority name cannot override
+    exact graph identity.
+  snapshot_sha256: 2f42163aa8e757703e79d565e28b7a5859df3d265cdda12dfa4f30481b93977b
+  search_scope: Current ChEBI es_search term acu-dioxomorpholine, size 100; one returned
+    result, one page.
+- evidence_id: I043-TAXON
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=690307&retmode=xml
+  locator: Complete top-level Taxon, rank, parent and lineage; successful serial retry
+    after the retained initial HTTP 429; local snapshot /private/tmp/npm-review-work/043/identity/taxonomy-retry.xml
+  accessed_at: '2026-10-21T10:59:18.767371Z'
+  support: supports
+  summary: NCBI taxon 690307 resolves to Aspergillus aculeatus ATCC 16872 at strain
+    rank, with species parent 5053 and fungal lineage. This directly supports the
+    deposited strain label and FUNGAL grouping. It does not authenticate the historical
+    experimental stock independently.
+  snapshot_sha256: 435c81c4b961a079a2b5535c4c9535b4005ef995a281fea00ecea9fd189cfb9d
+- evidence_id: I043-GENBANK
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=KV878985.1&rettype=gb&retmode=text&seq_start=92151&seq_stop=104699
+  locator: Entire header and all feature locations/non-sequence qualifiers; bounded
+    sequence length and stored-translation lengths/hashes parsed in identifier-audit.json.
+    DNA translation and historical XP/OJJ equivalence were not independently checked.;
+    local snapshot /private/tmp/npm-review-work/043/identity/genbank-locus-retry.gb
+  accessed_at: '2026-10-21T10:59:19.143344Z'
+  support: supports
+  summary: KV878985.1 returns exactly the requested 12,549 bp region 92151..104699
+    of ASPACscaffold_16. Source qualifiers state ATCC 16872, ATCC:16872, taxon 690307
+    and culture from type material; links are BioProject PRJNA82765 and BioSample
+    SAMN00788628. Three complete CDS annotations carry OJJ96433.1, OJJ96434.1 and
+    OJJ96435.1, with stored translation lengths 2413, 378 and 422 aa. All products
+    remain annotated hypothetical protein. Accession, source context and interval
+    are supported; these annotations do not prove Adx chemistry or exact experimental
+    constructs.
+  snapshot_sha256: 8fc4dbe9d403255651d88bb9bdc58d8eb897ec0be49e4e977c4e52beb7c1faea
+- evidence_id: I043-RAW
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: Exact BGC0002226:2 row; source-concept derivation and complete committed
+    exact-key inventory projections in identifier-audit.json
+  accessed_at: '2026-10-21T11:07:00.949495Z'
+  support: supports
+  summary: Hashing MIBIG plus a NUL separator plus BGC0002226:2 with the actual seeder
+    rule reproduces naturalproductmech:mibig-3e7b2e9aed. The identifier names that
+    stable source concept, not proof of chemical correctness. The complete pinned
+    ChEBI structure inventory has no row for either the current wrong key or the primary-transcribed
+    full key.
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: I043-CLASS
+  kind: record_content
+  reference: data/raw/npclassifier.tsv
+  locator: Exact owner-key row and full-key projection for the primary-transcribed
+    candidate
+  accessed_at: '2026-10-21T11:07:00.949495Z'
+  support: context_only
+  summary: The owner correctly attributes Alkaloids, empty superclass/class lists
+    and non-glycoside to the pinned NPClassifier 2026-09-07 model. That row was computed
+    from the wrong owner graph; no row for the corrected candidate was found in the
+    complete committed inventory. The computed output cannot be transferred automatically
+    through a structure correction. MIBiG NRPS is a separate source-asserted class.
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: I043-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/043/identity/local-search.txt
+  locator: All matching output inspected; source/curation/implementation/target/PATHS
+    search includes hidden and ignored files
+  accessed_at: '2026-10-21T11:05:47.585069Z'
+  support: supports
+  summary: Matches are the target owner/PATHS entry, its NPClassifier row and the
+    two MIBiG A/B source rows. No exact-target maintained correction appeared in the
+    searched curation or implementation paths. This search did not inspect other generated
+    owners or establish campaign coverage.
+  snapshot_sha256: 1f0b9373992e9e36c26f7467663b87ac31eb4e4d9b00430a10ce50d8940d249a
+  search_scope: rg --no-ignore --hidden -n -i DQGMTSDVSAYSGR|RLEKOSLSLNBPJB|acu-dioxomorpholine-a|BGC0002226|naturalproductmech:mibig-3e7b2e9aed
+    curation data/raw data/natural_products/PATHS.tsv data/natural_products/alkaloids/acu-dioxomorpholine-a.yaml
+    src scripts conf
+- evidence_id: I043-IMODULON
+  kind: database
+  reference: https://imodulondb.org/
+  locator: Complete retained 28-dataset catalogue at /private/tmp/npm-review-work/010/imodulon-datasets.txt
+  accessed_at: '2026-10-21T07:21:15.957321Z'
+  support: context_only
+  summary: The catalogue has no Aspergillus aculeatus or A. nidulans dataset. Bacterial
+    E. coli datasets cannot stand in for this fungal donor or heterologous-host system.
+    No applicable regulatory expression module is claimed.
+  snapshot_sha256: 1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549
+assessments:
+- assessment_id: S043-A-IDENTITY
+  area: identity
+  topic: One carbon substitutes for the ring amide nitrogen
+  outcome: concern
+  summary: The current molecule is internally consistent but is not the published
+    acu-dioxomorpholine A. Its old key DQGMTSDVSAYSGR-MDZJEUOHSA-N denotes the wrong
+    element/connectivity graph. The paper-transcribed candidate RLEKOSLSLNBPJB-BBLPPJRLSA-N
+    has the correct two-nitrogen formula and four reported centres, subject to a separate
+    absolute-assignment limitation.
+  target_ids:
+  - naturalproductmech:mibig-3e7b2e9aed
+  evidence_ids:
+  - S043-OWNER
+  - S043-CHEMISTRY
+  - S043-2018-IDENTITY
+  - S043-2018-SI
+  - S043-2026-FIG1
+  dimensions:
+  - name: owner_formula
+    value: C26H27NO3
+    definition: Formula calculated from the actual stored graph.
+    evidence_ids:
+    - S043-CHEMISTRY
+  - name: published_neutral_formula
+    value: C25H26N2O3
+    definition: Neutral formula consistent with original structure and403.202 protonated
+      ion.
+    evidence_ids:
+    - S043-2018-IDENTITY
+    - S043-CHEMISTRY
+  - name: constitutional_difference
+    value: shared ring amide N replaced by carbon
+    definition: Owner atom 16 is C; the same three graph neighbors connect to the
+      N in the published scaffold.
+    evidence_ids:
+    - S043-CHEMISTRY
+    - S043-2018-SI
+- assessment_id: S043-A-STEREO
+  area: identity
+  topic: Reported graph versus independently established absolute configuration
+  outcome: unknown
+  summary: Four published assignments can be transcribed precisely, but original-A
+    absolute proof remains unresolved. The fifth potential centre and two undefined
+    flags in the old graph are artifacts of its wrong connectivity. Neither the N-methyl
+    B NOESY data nor the newly characterized opposite enantiomer automatically completes
+    the original-A absolute proof.
+  target_ids:
+  - naturalproductmech:mibig-3e7b2e9aed
+  evidence_ids:
+  - S043-CHEMISTRY
+  - S043-2014-CONGENER
+  - S043-2018-IDENTITY
+  - S043-2026-ENT
+  - S043-2026-FIG1
+  dimensions:
+  - name: published_A_assignment
+    value: 2R, 3S, 9R, 12R
+    definition: Assignment displayed in the original-family figure and explicitly
+      labeled in 2026; not independently remeasured historical material.
+    evidence_ids:
+    - S043-2018-SI
+    - S043-2026-FIG1
+  - name: new_ent_assignment
+    value: 2S, 3R, 9S, 12S
+    definition: Separately characterized 2026 compound 3; enantiomer-specific evidence
+      does not transfer.
+    evidence_ids:
+    - S043-2026-ENT
+- assessment_id: S043-A-ORIGIN
+  area: provenance
+  topic: Native biosynthesis of the named two-nitrogen product
+  outcome: supported
+  summary: The named A is detected in parental A. aculeatus extracts, and native isotope
+    incorporation provides production evidence beyond mere isolation. Retain a natural-product
+    interpretation for the corrected named compound, while recognizing that the present
+    wrong one-nitrogen graph has no support from these experiments. Do not call the
+    feeding culture axenic without direct evidence.
+  target_ids:
+  - naturalproductmech:mibig-3e7b2e9aed
+  evidence_ids:
+  - S043-2018-NATIVE
+  - S043-2017-DONOR
+  - S043-CHEMISTRY
+  dimensions:
+  - name: native_context
+    value: A. aculeatus parental culture; solid GMM;1 mM labeled precursor;30 °C;
+      3 days
+    definition: Reported isotope-feeding conditions; ATCC 16872 donor identification
+      comes from the cited platform study.
+    evidence_ids:
+    - S043-2018-NATIVE
+    - S043-2017-DONOR
+- assessment_id: S043-A-LOCUS
+  area: evidence
+  topic: FAC demonstration and conservative imported producer grading
+  outcome: supported
+  summary: Heterologous expression supports CLUSTER_DEMONSTRATED for the correctly
+    named product; the current source-only producer grade is a conservative faithful
+    rendering of that MIBiG method, not an inflated claim. FAC ΔadxA/B/C supports
+    necessity in the engineered host, not native knockout evidence. After identity
+    repair, retain explicit native feeding support separately and avoid adding native
+    Knock-out studies or original-Adx Enzymatic assays from these papers.
+  target_ids:
+  - naturalproductmech:mibig-3e7b2e9aed
+  evidence_ids:
+  - S043-RAW
+  - S043-2018-FAC
+  - S043-2018-SI
+  - S043-2017-DONOR
+  - S043-REPAIR-OWNERS
+  dimensions:
+  - name: experimental_product_host
+    value: A. nidulans carrying AaFAC30-6A16
+    definition: Distinguishes locus-expression host from native A. aculeatus donor.
+    evidence_ids:
+    - S043-2018-FAC
+  - name: deletion_site
+    value: FAC recombineering in E. coli, then A. nidulans expression
+    definition: Not a genomic deletion in the native A. aculeatus producer.
+    evidence_ids:
+    - S043-2018-FAC
+    - S043-2017-DONOR
+- assessment_id: S043-A-MECHANISM
+  area: completeness
+  topic: Optional pathway and protein detail
+  outcome: supported
+  summary: Absence of an optional detailed pathway is not itself a defect. Any future
+    Adx pathway should distinguish measured genetic/labeling evidence from proposed
+    AdxA/AdxB/AdxC reactions, alternative prenylation order and unvalidated Arg197
+    chemistry. Later Aau proteins are homologues from another strain that produce
+    the opposite enantiomer, not interchangeable Adx protein examples.
+  target_ids:
+  - naturalproductmech:mibig-3e7b2e9aed
+  evidence_ids:
+  - S043-OWNER
+  - S043-2018-FAC
+  - S043-2026-ENT
+- assessment_id: S043-A-ACTIVITY
+  area: evidence
+  topic: No target-specific bioactivity transfer
+  outcome: supported
+  summary: The owner appropriately contains no activity or molecular-target claim.
+    The inspected sources discuss P-glycoprotein inhibition by related compounds and
+    an antifungal test of N-methyl B; neither is a direct A assay. No clinical or
+    ecological function is inferred.
+  target_ids:
+  - naturalproductmech:mibig-3e7b2e9aed
+  evidence_ids:
+  - S043-OWNER
+  - S043-2018-IDENTITY
+  - S043-2014-CONGENER
+  - S043-2026-ENT
+- assessment_id: S043-A-STATUS
+  area: provenance
+  topic: Seeded provenance and status boundary
+  outcome: supported
+  summary: The raw MIBiG assertion, source version and conservative split between
+    producer and locus grades remain auditable. The current SEEDED status must not
+    be promoted while identity is wrong and absolute proof remains unresolved. No
+    source, owner, native history or generated artifact was changed in this audit.
+  target_ids:
+  - naturalproductmech:mibig-3e7b2e9aed
+  evidence_ids:
+  - S043-OWNER
+  - S043-RAW
+  - S043-REPAIR-OWNERS
+- assessment_id: I043-IDENTITY
+  area: identity
+  topic: Current authority agreement preserves the known source graph error
+  outcome: concern
+  summary: The frozen owner reproduces current MIBiG A exactly, including the missing
+    ring nitrogen. Database agreement is therefore provenance support, not a second
+    proof of correct molecular identity. The constitutional blocker and required correction
+    are reported once in the science packet.
+  target_ids:
+  - naturalproductmech:mibig-3e7b2e9aed
+  evidence_ids:
+  - I043-OWNER
+  - I043-AUDIT
+  - I043-MIBIG
+- assessment_id: I043-GROUNDING
+  area: grounding
+  topic: Bounded ChEBI searches and minted source identity
+  outcome: concern
+  summary: No exact current ChEBI result was returned for either full A key, and no
+    corresponding row occurs in the complete committed inventory. The sole name hit
+    is two-star N-methyl B and cannot repair A. The minted source identifier resolves
+    correctly, but a groundable correct A identity still depends on the separate structure
+    adjudication.
+  target_ids:
+  - naturalproductmech:mibig-3e7b2e9aed
+  evidence_ids:
+  - I043-RAW
+  - I043-CHEBI-OLD-KEY
+  - I043-CHEBI-PRIMARY-KEY
+  - I043-CHEBI-NAME
+  - I043-AUDIT
+- assessment_id: I043-TAXON
+  area: scope
+  topic: Current strain authority and deposited locus source
+  outcome: supported
+  summary: The strain-ranked taxon and GenBank source consistently identify ATCC 16872.
+    The requested interval is present and includes three deposited CDS annotations.
+    This is native sequence-record context, not proof of historical stock identity,
+    exact expressed proteins or biochemical function.
+  target_ids:
+  - naturalproductmech:mibig-3e7b2e9aed
+  evidence_ids:
+  - I043-TAXON
+  - I043-GENBANK
+  - I043-MIBIG
+  dimensions:
+  - name: producer_taxon_rank
+    value: 'strain: NCBITaxon:690307, Aspergillus aculeatus ATCC 16872'
+    definition: Current NCBI rank and name, distinct from species parent 5053.
+    evidence_ids:
+    - I043-TAXON
+  - name: deposited_locus_interval
+    value: KV878985.1:92151..104699; 12,549 bp
+    definition: One-based inclusive requested coordinates; GenBank subsection features
+      are locally renumbered and mapped back in identifier-audit.json.
+    evidence_ids:
+    - I043-GENBANK
+- assessment_id: I043-CLASSIFICATION
+  area: provenance
+  topic: Computed filing result and asserted biosynthetic class
+  outcome: concern
+  summary: The current classification is faithfully attributed, and NRPS remains separate
+    from the predicted filing pathway. Because the NPClassifier input graph is wrong,
+    classification must be checked on the adjudicated corrected structure rather than
+    copied solely because the label stays A. This is a consequence of the existing
+    identity blocker, not a duplicate finding.
+  target_ids:
+  - naturalproductmech:mibig-3e7b2e9aed
+  evidence_ids:
+  - I043-OWNER
+  - I043-CLASS
+  - I043-MIBIG
+- assessment_id: I043-HISTORY
+  area: provenance
+  topic: Stable source concept and unchanged seeded history
+  outcome: supported
+  summary: The minted ID reproduces the seeder source-concept hash, source version
+    is explicit, and both native history entries are seeding events. Current SEEDED
+    status is accurate; neither this identifier audit nor the separate scientific
+    review changes it.
+  target_ids:
+  - naturalproductmech:mibig-3e7b2e9aed
+  evidence_ids:
+  - I043-OWNER
+  - I043-RAW
+- assessment_id: I043-OPTIONAL
+  area: completeness
+  topic: Unasserted optional targets, assays and graph content
+  outcome: not_applicable
+  summary: No optional xref, protein, pathway, activity, target, occurrence or clinical
+    claim is asserted. The current source module annotations do not require promoting
+    inferred substrates into a verified mechanism. Missing optional content is not
+    independently treated as a defect.
+  target_ids:
+  - naturalproductmech:mibig-3e7b2e9aed
+  evidence_ids:
+  - I043-OWNER
+  - I043-MIBIG
+findings:
+- finding_id: S043-F-WRONG-CONSTITUTION
+  issue_key: mibig-bgc0002226-compound2-ring-amide-nitrogen-mistranscribed
+  category: identity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: The acu-dioxomorpholine A graph substitutes carbon for a ring amide nitrogen
+  description: The current one-nitrogen graph DQGMTSDVSAYSGR-MDZJEUOHSA-N is constitutionally
+    different from the original named compound, not merely incompletely stereospecified.
+    Original 2018 SI drawings and the403.202 ion establish a two-nitrogen C25H26N2O3
+    scaffold. The raw graph instead yields C26H27NO3 and adds a false fifth potential
+    carbon stereocentre. The independently transcribed published assignment gives
+    RLEKOSLSLNBPJB-BBLPPJRLSA-N; its historical absolute proof is a separate unresolved
+    question. Thus current natural-origin and locus evidence are attached to the wrong
+    molecular graph even though their database provenance is faithfully retained.
+  target_ids:
+  - naturalproductmech:mibig-3e7b2e9aed
+  field_paths:
+  - chemical_structure
+  - label
+  - biosynthesis_origin
+  - producer_organisms
+  - biosynthetic_gene_clusters
+  - source_concepts
+  evidence_ids:
+  - S043-OWNER
+  - S043-RAW
+  - S043-CHEMISTRY
+  - S043-2018-IDENTITY
+  - S043-2018-SI
+  - S043-2026-FIG1
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: Maintained chemical decision table; new literal-structure action/consumer
+      would first require explicit implementation and tests
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/structure_corrections.py
+    role: Existing fail-closed ChEBI-only correction consumer; extend explicitly rather
+      than inventing a supported action
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Correction application before identity grouping, provenance emission, claim
+      migration and normal generation
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_npclassifier.py
+    role: Consumes structure corrections when choosing structures for classification
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/PATHS.tsv
+    role: Guarded identifier/path migration only if required after exact destination
+      identity adjudication
+  rule_id: 'review-checklist identity/structure: one exact molecular graph; no near-miss
+    identity'
+  native_severity: 'blocker: the record denotes the wrong constitutional structure'
+  normalization_reason: One source graph transcription error is reported once; its
+    propagated origin/locus attachments and false stereocentre count are consequences,
+    not independent findings.
+actions:
+- action_id: S043-ACTION-STRUCTURE
+  finding_ids:
+  - S043-F-WRONG-CONSTITUTION
+  target_ids:
+  - naturalproductmech:mibig-3e7b2e9aed
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: Maintained chemical decision table; new literal-structure action/consumer
+      would first require explicit implementation and tests
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/structure_corrections.py
+    role: Existing fail-closed ChEBI-only correction consumer; extend explicitly rather
+      than inventing a supported action
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Correction application before identity grouping, provenance emission, claim
+      migration and normal generation
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_npclassifier.py
+    role: Consumes structure corrections when choosing structures for classification
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/PATHS.tsv
+    role: Guarded identifier/path migration only if required after exact destination
+      identity adjudication
+  description: 'Adjudicate the exact A structure before changing biological claims.
+    Pin untouched BGC0002226:2 version 3 to full parsed-row SHA256 9fcf7b12b7559eec7ae872f5631399376c163bad3189cdd9c5be99ceeb42b1d4,
+    original key DQGMTSDVSAYSGR-MDZJEUOHSA-N, taxon NCBITaxon:690307, KV878985.1 bounds
+    92151..104699, original Heterologous expression method and PMID:29631395. The
+    existing structure-correction actions require a structured 3-star ChEBI destination
+    and cannot consume a literal primary-derived structure. If no separately verified
+    eligible A destination exists, explicitly implement and test a narrowly scoped,
+    full-row-pinned literal-structure decision before adding such a table row; preserve
+    the raw inventory. Require graph/InChI/formula validation, collision checks, original/corrected
+    provenance and reproducible source attribution, rather than labeling the corrected
+    graph as an unchanged MIBiG default. The published assigned graph in structure-comparison.json
+    is a reviewable candidate only; independently adjudicate the defensible stereochemical
+    resolution and retain the historical absolute-proof limit instead of silently
+    asserting a fully proved four-centre configuration. Compose the new correction
+    explicitly with any claim/strain decisions: current consumers reject concurrent
+    structure correction, and ordinary REPLACE method overrides do not supply full-row
+    guards. Migrate the generated owner through the approved writer/event path after
+    a canary; do not hand-edit its structure or use the reserved unconsumed decisions.tsv.'
+  generator: A newly implemented, explicitly tested literal-structure correction consumer
+    (or an independently verified eligible ChEBI correction), followed by scripts/extract_npclassifier.py
+    and scripts/seed_from_sources.py through the documented guarded migration.
+  acceptance_checks:
+  - Reject stale, missing or duplicated BGC0002226:2 rows and every changed source
+    field; preserve the original complete raw row and N-methyl B sibling untouched.
+    Do not use compound_index 1.
+  - 'The chosen destination has the correct two-nitrogen scaffold and neutral C25H26N2O3.
+    Explain the accepted stereochemical resolution: the four-centre published candidate
+    is RLEKOSLSLNBPJB-BBLPPJRLSA-N, not an independently proved original-A absolute
+    structure. Never substitute the 2026 opposite enantiomer or N-methyl B.'
+  - Search destination keys/identifiers/owners including ignored files before migration;
+    reject an occupied or ambiguous destination unless a separate owner migration
+    is reviewed. Preserve the stable MIBiG source concept and explicit old-to-new
+    provenance; do not equate old and new keys.
+  - Rejoin classification, occurrences, assays, ontology grounding and sibling links
+    only from the chosen corrected identity. Do not carry old-key claims or NPClassifier
+    output automatically. Ensure the NPClassifier correction consumer handles the
+    new action and follow its documented dry run/canary.
+  - After identity correction, retain native isotope-feeding context as separately
+    attributed primary evidence using the supported curator-owned producer/writer
+    route, not a fabricated MIBiG method. Keep imported SOURCE_ASSERTION and heterologous
+    CLUSTER_DEMONSTRATED provenance distinguishable. FAC deletion is not native Knock-out
+    studies; AauC assays of ent-A do not establish original-Adx enzyme activity.
+  - Test correction/claim/strain composition explicitly, including existing rejection
+    behavior and source drift. Do not pair a new structure correction with a claim-reference
+    or strain table row and assume the current code accepts it.
+  - Inspect the canary owner and all changed claims, append the required curation
+    event for the separately authorized migration, maintain PATHS.tsv through its
+    documented path, and run strict validation, provenance, corpus integrity, byte
+    reproduction and full required QC. Leave scientific status unpromoted while the
+    original-A stereochemical question remains unresolved.
+limitations:
+- The 2018 full main body, all SI text/captions and original SI Figures S1/S2/S5 were
+  independently inspected; the main Figure 2 original pixels were not retrieved in
+  the preparation. Its native/heterologous comparison is read from full text and caption,
+  not represented as a new direct pixel inspection.
+- The 2026 complete main text and original Figure 1 were read; this audit did not
+  reprocess raw NMR, independently solve absolute stereochemistry or inspect all 104
+  SI pages. Its opposite-enantiomer evidence cannot complete the original-A absolute
+  proof.
+- The 2014 primary was read only in the stated target congener, relative-structure,
+  strain and activity sections. It concerns N-methyl B and does not independently
+  identify an original A isolation stock.
+- Historical stock authentication, exact native CDS/protein mapping and current taxonomic/database
+  authority checks are outside this scientific packet and belong to the separate identifier
+  audit. The 2017 donor bridge is bibliographic, not a new sequence-authentication
+  result.
+- No primary result supports the current one-nitrogen molecule as acu-dioxomorpholine
+  A. The constitutional error is confirmed; unavailable historical absolute proof
+  is reported as an uncertainty rather than a second confirmed stereochemical error.
+- All proposed changes require separate curation authorization and implementation.
+  No review was saved and no source, generated owner, native status or history was
+  modified.
+- ChEBI absence is bounded to the two exact full-key queries, the acu-dioxomorpholine
+  name query and the complete pinned structure inventory. Other representations, future
+  releases and unqueried authorities are not ruled out.
+- The initial NCBI requests returned HTTP 429; the separately retained serial retries
+  succeeded. Failed responses were preserved and are not represented as successful
+  retrievals.
+- GenBank metadata and CDS intervals/translation lengths were inspected; native DNA-to-protein
+  translation, historical XP-to-OJJ sequence equivalence and experimental construct
+  identity were not independently established. Matching lengths alone are not sequence
+  identity.
+- The source and authority agreement does not resolve the chemical-identity blocker
+  or original-A absolute-configuration limitation already recorded in the science
+  packet. No additional identity finding or action is duplicated here.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35
+  explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently
+  verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+  Skipped tests are not counted as passing tests. Existing ontology caches were used;
+  no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do
+  not establish biological production, stereochemical specificity, evidence adequacy,
+  or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology
+  results. Reuse establishes unchanged repository inputs; it is not a new remote authority
+  query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all
+  tracked files are hashed. Generated Python bytecode and external tool caches are
+  not claimed to have been independently byte-pinned at the prior execution.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+tags:
+- path-order-campaign
+- batch-005
+- constitutional-identity-blocker
+- stereochemical-limit
+```
