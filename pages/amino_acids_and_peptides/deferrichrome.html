@@ -104,20 +104,20 @@ derived from a source. This is what the rest of the record exists to support.</p
 <tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
 <tr>
   <td>1</td>
-  <td>L-ornithine N5-monooxygenase (Sid1 / Sib2) and N5-hydroxyornithine N5-acetyltransferase (Sib3)</td>
+  <td>L-ornithine N5-monooxygenase (Sid1 / Sib2)</td>
   <td class="mono"></td>
-  <td class="mono">CHEBI:15729 + CHEBI:15351 &rarr; CHEBI:79095</td>
+  <td class="mono">CHEBI:15729 &rarr; CHEBI:79095</td>
   <td class="mono">PMID:8430103</td>
 </tr>
 <tr>
   <td>2</td>
-  <td>Ferrichrome nonribosomal peptide synthetase (Sid2 / Sib1)</td>
+  <td>N5-hydroxyornithine N5-acetyltransferase (Sib3) and ferrichrome nonribosomal peptide synthetase (Sid2 / Sib1)</td>
   <td class="mono"></td>
-  <td class="mono">CHEBI:15428 + CHEBI:79095 + CHEBI:15422 &rarr; CHEBI:90132</td>
+  <td class="mono">CHEBI:79095 + CHEBI:15351 + CHEBI:15428 + CHEBI:15422 &rarr; CHEBI:90132</td>
   <td class="mono">PMID:11395469</td>
 </tr>
 </table></div>
-<p class="sub">Step 1: FAD- and NADPH-dependent N5-hydroxylation of L-ornithine to N5-hydroxy-L-ornithine by Sid1 (Ustilago maydis) or Sib2 (Schizosaccharomyces pombe), followed by acetyl-CoA-dependent N5-acetylation (Sib3) to N5-acetyl-N5-hydroxy-L-ornithine.</p><p class="sub">Step 2: Iterative assembly and macrocyclization of three glycine units and three N5-acetyl-N5-hydroxy-L-ornithine units by the multimodular NRPS Sid2 (Ustilago maydis) or Sib1 (Schizosaccharomyces pombe) to release deferrichrome.</p>
+<p class="sub">Step 1: FAD- and NADPH-dependent N5-hydroxylation of L-ornithine to N(5)-hydroxy-L-ornithine by Sid1 (Ustilago maydis) or Sib2 (Schizosaccharomyces pombe).</p><p class="sub">Step 2: Acetyl-CoA-dependent N5-acetylation of N(5)-hydroxy-L-ornithine (by Sib3 in S. pombe) followed by iterative assembly and macrocyclization of three glycine units and three N5-acetyl-N5-hydroxy-L-ornithine units by the multimodular NRPS Sid2 (Ustilago maydis) or Sib1 (Schizosaccharomyces pombe) to release deferrichrome.</p>
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
   <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for deferrichrome">
@@ -168,8 +168,8 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>L-ornithine N5-monooxygenase Sid1</td>
   <td>synthesizes</td>
   <td>N(5)-hydroxy-L-ornithine</td>
-  <td>Produces N5-hydroxy-L-ornithine, which is N5-acetylated by Sib3.</td>
-  <td><details class="graph-evidence"><summary class="mono">PMID:35928155</summary><ul><li><dl><dt>reference</dt><dd>PMID:35928155</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Sib2 and Sib3 generate N5-acetyl-N5-hydroxy-L-ornithine.</dd></dl>
+  <td>Produces N(5)-hydroxy-L-ornithine.</td>
+  <td><details class="graph-evidence"><summary class="mono">PMID:8430103</summary><ul><li><dl><dt>reference</dt><dd>PMID:8430103</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Sid1 catalyzes N5-hydroxylation of L-ornithine to N(5)-hydroxy-L-ornithine.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -177,8 +177,9 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>N(5)-hydroxy-L-ornithine</td>
   <td>substrate_of</td>
   <td>Ferrichrome synthetase Sid2 / Sib1</td>
-  <td>Three N5-acetyl-N5-hydroxy-L-ornithine units are incorporated by the NRPS.</td>
-  <td><details class="graph-evidence"><summary class="mono">PMID:11395469</summary><ul><li><dl><dt>reference</dt><dd>PMID:11395469</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Sid2 NRPS incorporates three hydroxamate-ornithine units and three glycines.</dd></dl>
+  <td>Following N5-acetylation by Sib3, three N(5)-hydroxy-L-ornithine-derived hydroxamate units are incorporated by the NRPS.</td>
+  <td><details class="graph-evidence"><summary class="mono">PMID:11395469<br>PMID:35928155</summary><ul><li><dl><dt>reference</dt><dd>PMID:11395469</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Sid2 NRPS incorporates three hydroxamate-ornithine units and three glycines.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>PMID:35928155</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Sib3 N5-acetylates N(5)-hydroxy-L-ornithine prior to NRPS assembly.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -228,10 +229,10 @@ derived from a source. This is what the rest of the record exists to support.</p
 </details></td>
 </tr>
 <tr>
-  <td>iron(3+)</td>
+  <td>deferrichrome</td>
   <td>binds</td>
   <td>Ferrichrome outer membrane transporter FhuA</td>
-  <td>Ferrichrome binds the extracellular pocket of E. coli FhuA.</td>
+  <td>In its ferric-complexed form (ferrichrome), deferrichrome binds the extracellular pocket of the E. coli outer membrane transporter FhuA.</td>
   <td><details class="graph-evidence"><summary class="mono">PMID:9856937</summary><ul><li><dl><dt>reference</dt><dd>PMID:9856937</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Crystal structure of FhuA bound to ferrichrome.</dd></dl>
 </li></ul>
 </details></td>

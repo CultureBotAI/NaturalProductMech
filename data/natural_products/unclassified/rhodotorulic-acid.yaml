@@ -37,6 +37,9 @@ occurrences:
   taxon_id: NCBITaxon:5537
   taxon_source: NCBITaxon
   detection_context: LM9
+  notes: This taxon is also recorded as a producer. Production and occurrence are
+    distinct claims; their citations may refer to the same publication. Publication
+    independence has not been established.
 producer_taxon_groups:
 - FUNGAL
 producer_organisms:
@@ -55,19 +58,18 @@ producer_organisms:
       siderophore rhodotorulic acid secreted in high yield by iron-deficient axenic
       cultures of Rhodotorula pilimanae (Rhodotorula glutinis ATCC 26207).
   strain: ATCC 26207
-- taxon_id: NCBITaxon:5535
-  taxon_label: Rhodotorula glutinis
+- taxon_id: NCBITaxon:5537
+  taxon_label: Rhodotorula mucilaginosa
   evidence_basis: AXENIC_CULTURE
   source: CURATOR
-  notes: 'Chemotaxonomic and LC-MS characterization of rhodotorulic acid production
-    across axenic iron-limited cultures of Rhodotorula glutinis and related Microbotryomycetes.
-    Curator: naturalproductmech-agent; date: 2026-10-31.'
+  notes: 'Characterization of iron-regulated rhodotorulic acid biosynthesis in axenic
+    iron-limited cultures of Rhodotorula mucilaginosa. Curator: naturalproductmech-agent;
+    date: 2026-10-31.'
   evidence:
   - reference: PMID:14531617
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Chemotaxonomic and LC-MS characterization of rhodotorulic acid production
-      across axenic iron-limited cultures of Rhodotorula glutinis and related Microbotryomycetes.
-  strain: CBS 20
+    notes: Characterization of iron-regulated rhodotorulic acid biosynthesis in axenic
+      iron-limited cultures of Rhodotorula mucilaginosa.
 source_concepts:
 - source: CHEBI
   source_id: CHEBI:84731
@@ -150,27 +152,27 @@ ecological_roles:
 - CHEBI:38161
 biosynthetic_pathway:
 - step_number: 1
-  enzyme_label: L-ornithine N5-monooxygenase and N5-hydroxyornithine N5-acetyltransferase
+  enzyme_label: L-ornithine N5-monooxygenase
   substrates:
   - CHEBI:15729
-  - CHEBI:15351
   products:
   - CHEBI:79095
-  notes: N5-hydroxylation of L-ornithine followed by acetyl-CoA-dependent N5-acetylation
-    to generate N5-acetyl-N5-hydroxy-L-ornithine.
+  notes: N5-hydroxylation of L-ornithine to generate N(5)-hydroxy-L-ornithine.
   evidence:
   - reference: PMID:4971459
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Rhodotorulic acid is assembled from two units of delta-N-acetyl-L-delta-N-hydroxyornithine.
+    notes: Rhodotorulic acid is biosynthesized from L-ornithine via N(5)-hydroxy-L-ornithine.
 - step_number: 2
-  enzyme_label: Rhodotorulic acid nonribosomal peptide synthetase (diketopiperazine
-    cyclase)
+  enzyme_label: N5-hydroxyornithine N5-acetyltransferase and rhodotorulic acid nonribosomal
+    peptide synthetase (diketopiperazine cyclase)
   substrates:
   - CHEBI:79095
+  - CHEBI:15351
   - CHEBI:15422
   products:
   - CHEBI:84731
-  notes: ATP-dependent activation and head-to-tail cyclodimerization of two N5-acetyl-N5-hydroxy-L-ornithine
+  notes: Acetyl-CoA-dependent N5-acetylation of N(5)-hydroxy-L-ornithine followed
+    by ATP-dependent NRPS activation and head-to-tail cyclodimerization of two N5-acetyl-N5-hydroxy-L-ornithine
     units to form the 2,5-diketopiperazine dihydroxamate siderophore rhodotorulic
     acid.
   evidence:
@@ -247,17 +249,17 @@ causal_graphs:
   - subject: l_ornithine
     predicate: converted_to
     object: h_orn
-    notes: L-ornithine is N5-hydroxylated and N5-acetylated in the first committed
-      steps.
+    notes: L-ornithine is N5-hydroxylated to N(5)-hydroxy-L-ornithine in the first
+      committed step.
     evidence:
     - reference: PMID:4971459
       evidence_type: PRIMARY_EXPERIMENT
-      notes: Rhodotorulic acid is composed of two delta-N-acetyl-L-delta-N-hydroxyornithine
-        residues.
+      notes: Rhodotorulic acid is derived from L-ornithine via N(5)-hydroxy-L-ornithine.
   - subject: acetyl_coa
     predicate: substrate_of
-    object: h_orn
-    notes: Donates the N5-acetyl group of the hydroxamate ligand.
+    object: ra_nrps
+    notes: Donates the N5-acetyl groups during N5-acetylation and diketopiperazine
+      assembly.
     evidence:
     - reference: PMID:4971459
       evidence_type: PRIMARY_EXPERIMENT
@@ -265,7 +267,8 @@ causal_graphs:
   - subject: h_orn
     predicate: substrate_of
     object: ra_nrps
-    notes: Two N5-acetyl-N5-hydroxy-L-ornithine monomers are condensed head-to-tail.
+    notes: Two N(5)-hydroxy-L-ornithine units undergo N5-acetylation and head-to-tail
+      condensation.
     evidence:
     - reference: PMID:4971459
       evidence_type: PRIMARY_EXPERIMENT
@@ -313,10 +316,11 @@ causal_graphs:
     - reference: PMID:4055766
       evidence_type: PRIMARY_EXPERIMENT
       notes: Resolution and CD spectroscopy of delta and lambda isomers of Cr2(RA)3.
-  - subject: fe3
+  - subject: rhodotorulic_acid
     predicate: binds
     object: fhue
-    notes: Ferric-rhodotorulate is recognized as a xenosiderophore by E. coli FhuE.
+    notes: In its ferric-complexed form Fe2(RA)3, rhodotorulic acid is recognized
+      as a xenosiderophore by the E. coli outer membrane receptor FhuE.
     evidence:
     - reference: PMID:6353165
       evidence_type: PRIMARY_EXPERIMENT
@@ -335,7 +339,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
-- timestamp: '2026-10-31T08:42:24Z'
+- timestamp: '2026-10-31T09:48:48Z'
   curator: naturalproductmech-agent
   action: RECORD_CURATED
   changes: Curated ecological_roles, metal-binding molecular_targets (including explicit

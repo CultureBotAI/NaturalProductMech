@@ -67,12 +67,10 @@ same claim.</p>
 </details></td>
 </tr>
 <tr>
-  <td>Rhodotorula glutinis<br>Strain: CBS 20<br><span class="mono">NCBITaxon:5535</span></td>
+  <td>Rhodotorula mucilaginosa<br><span class="mono">NCBITaxon:5537</span></td>
   <td><span class="tag causal">AXENIC_CULTURE</span></td>
   <td class="mono"></td>
-  <td><details class="graph-evidence"><summary><span class="mono">PMID:14531617</span></summary><ul><li><dl><dt>reference</dt><dd>PMID:14531617</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Chemotaxonomic and LC-MS characterization of rhodotorulic acid production across axenic iron-limited cultures of Rhodotorula glutinis and related Microbotryomycetes.</dd></dl>
-</li></ul>
-</details></td>
+  <td><span class="mono">PMID:14531617</span></td>
 </tr>
 </table></div>
 
@@ -96,20 +94,20 @@ derived from a source. This is what the rest of the record exists to support.</p
 <tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
 <tr>
   <td>1</td>
-  <td>L-ornithine N5-monooxygenase and N5-hydroxyornithine N5-acetyltransferase</td>
+  <td>L-ornithine N5-monooxygenase</td>
   <td class="mono"></td>
-  <td class="mono">CHEBI:15729 + CHEBI:15351 &rarr; CHEBI:79095</td>
+  <td class="mono">CHEBI:15729 &rarr; CHEBI:79095</td>
   <td class="mono">PMID:4971459</td>
 </tr>
 <tr>
   <td>2</td>
-  <td>Rhodotorulic acid nonribosomal peptide synthetase (diketopiperazine cyclase)</td>
+  <td>N5-hydroxyornithine N5-acetyltransferase and rhodotorulic acid nonribosomal peptide synthetase (diketopiperazine cyclase)</td>
   <td class="mono"></td>
-  <td class="mono">CHEBI:79095 + CHEBI:15422 &rarr; CHEBI:84731</td>
+  <td class="mono">CHEBI:79095 + CHEBI:15351 + CHEBI:15422 &rarr; CHEBI:84731</td>
   <td class="mono">PMID:4971459</td>
 </tr>
 </table></div>
-<p class="sub">Step 1: N5-hydroxylation of L-ornithine followed by acetyl-CoA-dependent N5-acetylation to generate N5-acetyl-N5-hydroxy-L-ornithine.</p><p class="sub">Step 2: ATP-dependent activation and head-to-tail cyclodimerization of two N5-acetyl-N5-hydroxy-L-ornithine units to form the 2,5-diketopiperazine dihydroxamate siderophore rhodotorulic acid.</p>
+<p class="sub">Step 1: N5-hydroxylation of L-ornithine to generate N(5)-hydroxy-L-ornithine.</p><p class="sub">Step 2: Acetyl-CoA-dependent N5-acetylation of N(5)-hydroxy-L-ornithine followed by ATP-dependent NRPS activation and head-to-tail cyclodimerization of two N5-acetyl-N5-hydroxy-L-ornithine units to form the 2,5-diketopiperazine dihydroxamate siderophore rhodotorulic acid.</p>
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
   <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for rhodotorulic acid">
@@ -151,16 +149,16 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>L-ornithine</td>
   <td>converted_to</td>
   <td>N(5)-hydroxy-L-ornithine</td>
-  <td>L-ornithine is N5-hydroxylated and N5-acetylated in the first committed steps.</td>
-  <td><details class="graph-evidence"><summary class="mono">PMID:4971459</summary><ul><li><dl><dt>reference</dt><dd>PMID:4971459</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Rhodotorulic acid is composed of two delta-N-acetyl-L-delta-N-hydroxyornithine residues.</dd></dl>
+  <td>L-ornithine is N5-hydroxylated to N(5)-hydroxy-L-ornithine in the first committed step.</td>
+  <td><details class="graph-evidence"><summary class="mono">PMID:4971459</summary><ul><li><dl><dt>reference</dt><dd>PMID:4971459</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Rhodotorulic acid is derived from L-ornithine via N(5)-hydroxy-L-ornithine.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
 <tr>
   <td>acetyl-CoA</td>
   <td>substrate_of</td>
-  <td>N(5)-hydroxy-L-ornithine</td>
-  <td>Donates the N5-acetyl group of the hydroxamate ligand.</td>
+  <td>Rhodotorulic acid synthetase</td>
+  <td>Donates the N5-acetyl groups during N5-acetylation and diketopiperazine assembly.</td>
   <td><details class="graph-evidence"><summary class="mono">PMID:4971459</summary><ul><li><dl><dt>reference</dt><dd>PMID:4971459</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Each hydroxamate group carries an N-acetyl substituent.</dd></dl>
 </li></ul>
 </details></td>
@@ -169,7 +167,7 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>N(5)-hydroxy-L-ornithine</td>
   <td>substrate_of</td>
   <td>Rhodotorulic acid synthetase</td>
-  <td>Two N5-acetyl-N5-hydroxy-L-ornithine monomers are condensed head-to-tail.</td>
+  <td>Two N(5)-hydroxy-L-ornithine units undergo N5-acetylation and head-to-tail condensation.</td>
   <td><details class="graph-evidence"><summary class="mono">PMID:4971459</summary><ul><li><dl><dt>reference</dt><dd>PMID:4971459</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Cyclodimerization forms the 2,5-diketopiperazine ring.</dd></dl>
 </li></ul>
 </details></td>
@@ -220,10 +218,10 @@ derived from a source. This is what the rest of the record exists to support.</p
 </details></td>
 </tr>
 <tr>
-  <td>iron(3+)</td>
+  <td>rhodotorulic acid</td>
   <td>binds</td>
   <td>Outer membrane receptor FhuE</td>
-  <td>Ferric-rhodotorulate is recognized as a xenosiderophore by E. coli FhuE.</td>
+  <td>In its ferric-complexed form Fe2(RA)3, rhodotorulic acid is recognized as a xenosiderophore by the E. coli outer membrane receptor FhuE.</td>
   <td><details class="graph-evidence"><summary class="mono">PMID:6353165</summary><ul><li><dl><dt>reference</dt><dd>PMID:6353165</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>FhuE outer membrane receptor mediates ferric-rhodotorulate uptake in Escherichia coli K-12.</dd></dl>
 </li></ul>
 </details></td>
@@ -288,7 +286,7 @@ by the corpus tests.</p>
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=PUWVNTVQJFSBDH-RYUDHWBXSA-N">AntibioticMech (rhodotorulic acid) &nearr;</a>
   <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=CHEBI%3A84731">MediaIngredientMech (CHEBI:84731) &nearr;</a>
   <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A5535">TaxonMech: Rhodotorula glutinis (NCBITaxon:5535) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A5535">TaxonMech: Rhodotorula glutinis (NCBITaxon:5535) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A5537">TaxonMech: Rhodotorula mucilaginosa (NCBITaxon:5537) &nearr;</a>
 </div>
 
 

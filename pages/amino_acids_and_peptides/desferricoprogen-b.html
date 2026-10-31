@@ -67,10 +67,10 @@ same claim.</p>
 </details></td>
 </tr>
 <tr>
-  <td>Aspergillus nidulans<br>Strain: FGSC A4<br><span class="mono">NCBITaxon:162425</span></td>
-  <td><span class="tag causal">AXENIC_CULTURE</span></td>
+  <td>Aspergillus niger<br>Strain: N402<br><span class="mono">NCBITaxon:5061</span></td>
+  <td><span class="tag causal">BGC_CHARACTERIZED</span></td>
   <td class="mono"></td>
-  <td><details class="graph-evidence"><summary><span class="mono">PMID:19700391</span></summary><ul><li><dl><dt>reference</dt><dd>PMID:19700391</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>RP-HPLC/ESI-MS identification of coprogen B (desferricoprogen B) biosynthesis alongside coprogen in iron-starved cultures of Penicillium and Aspergillus species.</dd></dl>
+  <td><details class="graph-evidence"><summary><span class="mono">PMID:25062661</span></summary><ul><li><dl><dt>reference</dt><dd>PMID:25062661</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Targeted gene deletion of sidA (An16g01850, L-ornithine N5-monooxygenase) and sidD (An03g03560, nonribosomal peptide synthetase) in Aspergillus niger N402 completely abolishes coprogen B (desferricoprogen B) biosynthesis.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -144,8 +144,8 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>L-ornithine</td>
   <td>converted_to</td>
   <td>N(5)-hydroxy-L-ornithine</td>
-  <td>L-ornithine is N5-hydroxylated to N5-hydroxy-L-ornithine.</td>
-  <td><details class="graph-evidence"><summary class="mono">PMID:25062661</summary><ul><li><dl><dt>reference</dt><dd>PMID:25062661</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>First committed step of fungal hydroxamate siderophore synthesis.</dd></dl>
+  <td>L-ornithine is N5-hydroxylated by SidA to N(5)-hydroxy-L-ornithine.</td>
+  <td><details class="graph-evidence"><summary class="mono">PMID:25062661</summary><ul><li><dl><dt>reference</dt><dd>PMID:25062661</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>SidA (An16g01850) catalyzes the first committed step of fungal hydroxamate siderophore synthesis in Aspergillus niger.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -162,7 +162,7 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>N(5)-hydroxy-L-ornithine</td>
   <td>substrate_of</td>
   <td>Coprogen nonribosomal peptide synthetase SidD</td>
-  <td>Three acylated N5-hydroxy-L-ornithine units are condensed by SidD.</td>
+  <td>Following N5-acylation with trans-anhydromevalonyl-CoA, three N(5)-hydroxy-L-ornithine-derived units are condensed by SidD.</td>
   <td><details class="graph-evidence"><summary class="mono">PMID:25062661</summary><ul><li><dl><dt>reference</dt><dd>PMID:25062661</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>SidD NRPS catalyzes assembly of the trimeric ester-linked diketopiperazine scaffold.</dd></dl>
 </li></ul>
 </details></td>
@@ -186,11 +186,12 @@ derived from a source. This is what the rest of the record exists to support.</p
 </details></td>
 </tr>
 <tr>
-  <td>iron(3+)</td>
+  <td>desferricoprogen B</td>
   <td>enables</td>
   <td>iron ion transport</td>
-  <td>Mediates fungal ferric iron acquisition under iron starvation.</td>
-  <td><details class="graph-evidence"><summary class="mono">PMID:19700391</summary><ul><li><dl><dt>reference</dt><dd>PMID:19700391</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Extracellular siderophore production in iron-starved Neurospora crassa.</dd></dl>
+  <td>In its ferric-complexed form (coprogen B), desferricoprogen B mediates fungal extracellular ferric iron acquisition under iron starvation.</td>
+  <td><details class="graph-evidence"><summary class="mono">PMID:5484314<br>PMID:25062661</summary><ul><li><dl><dt>reference</dt><dd>PMID:5484314</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Coprogen B is secreted as an extracellular ferric siderophore under iron-limiting growth.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>PMID:25062661</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Extracellular coprogen B biosynthesis under iron starvation in Aspergillus niger.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -206,7 +207,7 @@ by the corpus tests.</p>
   <td></td>
   <td></td>
   <td><details class="graph-evidence target-evidence"><summary class="mono">PMID:5484314<br>PMID:25062661</summary><ul><li><dl><dt>reference</dt><dd>PMID:5484314</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Isolation and structural elucidation of coprogen B (the ferric complex of desferricoprogen B) from Penicillium, Fusarium, and Neurospora crassa.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>PMID:25062661</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Genetic deletion of sidD in Aspergillus niger abolishes biosynthesis of coprogen B.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>PMID:25062661</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Genetic deletion of sidD in Aspergillus niger N402 abolishes biosynthesis of coprogen B.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -219,7 +220,7 @@ by the corpus tests.</p>
   <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=XRSRJBBRTCEBNS-CAGSISFISA-N">AntibioticMech (desferricoprogen B) &nearr;</a>
   <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=CHEBI%3A133861">MediaIngredientMech (CHEBI:133861) &nearr;</a>
   <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A5141">TaxonMech: Neurospora crassa (NCBITaxon:5141) &nearr;</a>
-  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A162425">TaxonMech: Aspergillus nidulans (NCBITaxon:162425) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A5061">TaxonMech: Aspergillus niger (NCBITaxon:5061) &nearr;</a>
 </div>
 
 

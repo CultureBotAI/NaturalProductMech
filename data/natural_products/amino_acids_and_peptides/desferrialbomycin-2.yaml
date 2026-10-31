@@ -24,6 +24,8 @@ np_classification:
   class_results:
   - Linear peptides
   is_glycoside: false
+bgc_class:
+- NRPS
 producer_taxon_groups:
 - ACTINOBACTERIAL
 producer_organisms:
@@ -32,30 +34,53 @@ producer_organisms:
   evidence_basis: BGC_CHARACTERIZED
   source: CURATOR
   notes: 'Sequencing, heterologous expression, and gene inactivation of the abmA-R
-    biosynthetic gene cluster in Streptomyces sp. ATCC 700974 establish biosynthesis
-    of the Trojan-horse peptidyl-nucleoside siderophore-antibiotic albomycin delta2
-    (desferrialbomycin delta2). Curator: naturalproductmech-agent; date: 2026-10-31.'
+    biosynthetic gene cluster (mibig:BGC0002300) in Streptomyces sp. ATCC 700974 establish
+    biosynthesis of the Trojan-horse peptidyl-nucleoside siderophore-antibiotic albomycin
+    delta2 (desferrialbomycin delta2). Curator: naturalproductmech-agent; date: 2026-10-31.'
   evidence:
   - reference: PMID:22704654
     evidence_type: PRIMARY_EXPERIMENT
     notes: Sequencing, heterologous expression, and gene inactivation of the abmA-R
-      biosynthetic gene cluster in Streptomyces sp. ATCC 700974 establish biosynthesis
-      of the Trojan-horse peptidyl-nucleoside siderophore-antibiotic albomycin delta2
-      (desferrialbomycin delta2).
+      biosynthetic gene cluster (mibig:BGC0002300) in Streptomyces sp. ATCC 700974
+      establish biosynthesis of the Trojan-horse peptidyl-nucleoside siderophore-antibiotic
+      albomycin delta2 (desferrialbomycin delta2).
   strain: ATCC 700974
+  biosynthetic_gene_cluster: mibig:BGC0002300
 - taxon_id: NCBITaxon:1911
   taxon_label: Streptomyces griseus
   evidence_basis: AXENIC_CULTURE
   source: CURATOR
-  notes: 'Isolation and characterization of albomycin delta2 produced by Streptomyces
-    griseus and active transport of its ferric chelate across the bacterial envelope.
-    Curator: naturalproductmech-agent; date: 2026-10-31.'
+  notes: 'Isolation and characterization of albomycin produced by Streptomyces griseus
+    strain TÜ 6 and active transport and intracellular cleavage of its ferric chelate
+    in Escherichia coli K-12. Curator: naturalproductmech-agent; date: 2026-10-31.'
   evidence:
   - reference: PMID:387415
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Isolation and characterization of albomycin delta2 produced by Streptomyces
-      griseus and active transport of its ferric chelate across the bacterial envelope.
-  strain: ATCC 23345
+    notes: Isolation and characterization of albomycin produced by Streptomyces griseus
+      strain TÜ 6 and active transport and intracellular cleavage of its ferric chelate
+      in Escherichia coli K-12.
+  strain: TÜ 6
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002300
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1931
+  organism_label: Streptomyces sp.
+  evidence:
+  - reference: PMID:22704654
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Sequencing, heterologous expression, and gene inactivation of the abmA-R
+      biosynthetic gene cluster (mibig:BGC0002300) in Streptomyces sp. ATCC 700974
+      establish biosynthesis of the Trojan-horse peptidyl-nucleoside siderophore-antibiotic
+      albomycin delta2 (desferrialbomycin delta2).
+  genome_accession: genbank:JN252488.1
+  locus_from: 6184
+  locus_to: 34320
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
 source_concepts:
 - source: CHEBI
   source_id: CHEBI:83200
@@ -206,10 +231,11 @@ causal_graphs:
     - reference: PMID:10850805
       evidence_type: PRIMARY_EXPERIMENT
       notes: Octahedral Fe(III) coordination by the trihydroxamate moiety.
-  - subject: fe3
+  - subject: desferrialbomycin
     predicate: binds
     object: fhua
-    notes: Ferric-albomycin delta2 binds the FhuA outer membrane receptor.
+    notes: In its ferric-complexed form (albomycin delta2), desferrialbomycin delta2
+      binds the E. coli outer membrane receptor FhuA.
     evidence:
     - reference: PMID:10850805
       evidence_type: PRIMARY_EXPERIMENT
@@ -219,9 +245,10 @@ causal_graphs:
     object: fhud
     notes: Translocates ferric-albomycin into the periplasm for capture by FhuD.
     evidence:
-    - reference: PMID:16707680
+    - reference: PMID:10742172
       evidence_type: PRIMARY_EXPERIMENT
-      notes: Ferric hydroxamate binding protein FhuD mediates albomycin transport.
+      notes: 2.0 A crystal structure of E. coli periplasmic binding protein FhuD bound
+        to albomycin delta2.
   - subject: fhud
     predicate: enables
     object: siderophore_transport
@@ -237,7 +264,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
-- timestamp: '2026-10-31T08:42:25Z'
+- timestamp: '2026-10-31T09:48:48Z'
   curator: naturalproductmech-agent
   action: RECORD_CURATED
   changes: Curated ecological_roles, metal-binding molecular_targets (including explicit

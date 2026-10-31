@@ -50,7 +50,8 @@
 <p><a href="index.html">Amino acids and peptides</a> —
 computed by NPClassifier npclassifier.gnps2.org@2026-10-31,
 which is why it is pinned rather than recomputed.
-</p>
+ The gene cluster's asserted class is
+nrps, from MIBiG.</p>
 
 <h2>Producer organisms <span class="tag">2</span></h2>
 <p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
@@ -61,16 +62,16 @@ same claim.</p>
 <tr>
   <td>Streptomyces sp.<br>Strain: ATCC 700974<br><span class="mono">NCBITaxon:1931</span></td>
   <td><span class="tag causal">BGC_CHARACTERIZED</span></td>
-  <td class="mono"></td>
-  <td><details class="graph-evidence"><summary><span class="mono">PMID:22704654</span></summary><ul><li><dl><dt>reference</dt><dd>PMID:22704654</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Sequencing, heterologous expression, and gene inactivation of the abmA-R biosynthetic gene cluster in Streptomyces sp. ATCC 700974 establish biosynthesis of the Trojan-horse peptidyl-nucleoside siderophore-antibiotic albomycin delta2 (desferrialbomycin delta2).</dd></dl>
+  <td class="mono">mibig:BGC0002300</td>
+  <td><details class="graph-evidence"><summary><span class="mono">PMID:22704654</span></summary><ul><li><dl><dt>reference</dt><dd>PMID:22704654</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Sequencing, heterologous expression, and gene inactivation of the abmA-R biosynthetic gene cluster (mibig:BGC0002300) in Streptomyces sp. ATCC 700974 establish biosynthesis of the Trojan-horse peptidyl-nucleoside siderophore-antibiotic albomycin delta2 (desferrialbomycin delta2).</dd></dl>
 </li></ul>
 </details></td>
 </tr>
 <tr>
-  <td>Streptomyces griseus<br>Strain: ATCC 23345<br><span class="mono">NCBITaxon:1911</span></td>
+  <td>Streptomyces griseus<br>Strain: TÜ 6<br><span class="mono">NCBITaxon:1911</span></td>
   <td><span class="tag causal">AXENIC_CULTURE</span></td>
   <td class="mono"></td>
-  <td><details class="graph-evidence"><summary><span class="mono">PMID:387415</span></summary><ul><li><dl><dt>reference</dt><dd>PMID:387415</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Isolation and characterization of albomycin delta2 produced by Streptomyces griseus and active transport of its ferric chelate across the bacterial envelope.</dd></dl>
+  <td><details class="graph-evidence"><summary><span class="mono">PMID:387415</span></summary><ul><li><dl><dt>reference</dt><dd>PMID:387415</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Isolation and characterization of albomycin produced by Streptomyces griseus strain TÜ 6 and active transport and intracellular cleavage of its ferric chelate in Escherichia coli K-12.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -78,6 +79,20 @@ same claim.</p>
 
 <h2 id="occurrences">Occurrences <span class="tag">0</span></h2>
 <p class="sub">None cited.</p>
+<h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
+<div class="scroll"><table>
+<tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
+<tr>
+  <td class="mono">mibig:BGC0002300</td>
+  <td>Streptomyces sp.<br><span class="mono">NCBITaxon:1931</span>
+</td>
+  <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
+  <td class="mono">genbank:JN252488.1</td>
+</tr>
+</table></div>
+<p class="sub">A locus claim and a taxon claim are different questions.
+Heterologous expression settles the first and leaves the second where the
+isolation report left it.</p>
 
 <h2>Biosynthesis <span class="tag causal">curated</span></h2>
 <p class="sub">Written by a curator with claim-level evidence on each step; not
@@ -109,7 +124,7 @@ derived from a source. This is what the rest of the record exists to support.</p
 
     <rect x="232" y="24" width="186" height="98" rx="10" fill="var(--panel)" stroke="var(--rule)"/>
     <text x="244" y="48" font-size="11" font-weight="700" fill="var(--muted)">BIOSYNTHETIC LOCUS</text>
-    <text x="244" y="70" font-size="12.5" font-weight="600" fill="var(--ink)">0 gene clusters</text>
+    <text x="244" y="70" font-size="12.5" font-weight="600" fill="var(--ink)">1 gene cluster</text>
     <text x="244" y="92" font-size="11.5" fill="var(--muted)">1 curated pathway step</text>
     <line x1="418" y1="73" x2="446" y2="73" stroke="var(--link)" stroke-width="1.8" marker-end="url(#np-arrow)"/>
 
@@ -176,10 +191,10 @@ derived from a source. This is what the rest of the record exists to support.</p
 </details></td>
 </tr>
 <tr>
-  <td>iron(3+)</td>
+  <td>desferrialbomycin δ2</td>
   <td>binds</td>
   <td>Outer membrane transporter FhuA</td>
-  <td>Ferric-albomycin delta2 binds the FhuA outer membrane receptor.</td>
+  <td>In its ferric-complexed form (albomycin delta2), desferrialbomycin delta2 binds the E. coli outer membrane receptor FhuA.</td>
   <td><details class="graph-evidence"><summary class="mono">PMID:10850805</summary><ul><li><dl><dt>reference</dt><dd>PMID:10850805</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Crystal structure of FhuA-albomycin delta2 complex.</dd></dl>
 </li></ul>
 </details></td>
@@ -189,7 +204,7 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>transfers_to</td>
   <td>Periplasmic binding protein FhuD</td>
   <td>Translocates ferric-albomycin into the periplasm for capture by FhuD.</td>
-  <td><details class="graph-evidence"><summary class="mono">PMID:16707680</summary><ul><li><dl><dt>reference</dt><dd>PMID:16707680</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Ferric hydroxamate binding protein FhuD mediates albomycin transport.</dd></dl>
+  <td><details class="graph-evidence"><summary class="mono">PMID:10742172</summary><ul><li><dl><dt>reference</dt><dd>PMID:10742172</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>2.0 A crystal structure of E. coli periplasmic binding protein FhuD bound to albomycin delta2.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -229,6 +244,7 @@ by the corpus tests.</p>
   <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=CHEBI%3A83200">MediaIngredientMech (CHEBI:83200) &nearr;</a>
   <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A1931">TaxonMech: Streptomyces sp. (NCBITaxon:1931) &nearr;</a>
   <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A1911">TaxonMech: Streptomyces griseus (NCBITaxon:1911) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0002300">PathwayMech (mibig:BGC0002300) &nearr;</a>
 </div>
 
 

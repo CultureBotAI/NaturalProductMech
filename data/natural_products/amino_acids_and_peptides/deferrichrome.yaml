@@ -146,37 +146,36 @@ ecological_roles:
 - CHEBI:38161
 biosynthetic_pathway:
 - step_number: 1
-  enzyme_label: L-ornithine N5-monooxygenase (Sid1 / Sib2) and N5-hydroxyornithine
-    N5-acetyltransferase (Sib3)
+  enzyme_label: L-ornithine N5-monooxygenase (Sid1 / Sib2)
   substrates:
   - CHEBI:15729
-  - CHEBI:15351
   products:
   - CHEBI:79095
-  notes: FAD- and NADPH-dependent N5-hydroxylation of L-ornithine to N5-hydroxy-L-ornithine
-    by Sid1 (Ustilago maydis) or Sib2 (Schizosaccharomyces pombe), followed by acetyl-CoA-dependent
-    N5-acetylation (Sib3) to N5-acetyl-N5-hydroxy-L-ornithine.
+  notes: FAD- and NADPH-dependent N5-hydroxylation of L-ornithine to N(5)-hydroxy-L-ornithine
+    by Sid1 (Ustilago maydis) or Sib2 (Schizosaccharomyces pombe).
   evidence:
   - reference: PMID:8430103
     evidence_type: PRIMARY_EXPERIMENT
     notes: Cloning and targeted disruption of sid1 encoding L-ornithine N5-oxygenase
       in Ustilago maydis abolish deferrichrome biosynthesis.
-  - reference: PMID:35928155
+  - reference: PMID:20435771
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Genetic characterization of Sib2 (ornithine N5-monooxygenase) and Sib3
-      (N5-transacetylase) required for ferrichrome biosynthesis in Schizosaccharomyces
-      pombe.
+    notes: Genetic deletion of sib2+ encoding L-ornithine N5-oxygenase in Schizosaccharomyces
+      pombe abolishes ferrichrome biosynthesis.
 - step_number: 2
-  enzyme_label: Ferrichrome nonribosomal peptide synthetase (Sid2 / Sib1)
+  enzyme_label: N5-hydroxyornithine N5-acetyltransferase (Sib3) and ferrichrome nonribosomal
+    peptide synthetase (Sid2 / Sib1)
   substrates:
-  - CHEBI:15428
   - CHEBI:79095
+  - CHEBI:15351
+  - CHEBI:15428
   - CHEBI:15422
   products:
   - CHEBI:90132
-  notes: Iterative assembly and macrocyclization of three glycine units and three
-    N5-acetyl-N5-hydroxy-L-ornithine units by the multimodular NRPS Sid2 (Ustilago
-    maydis) or Sib1 (Schizosaccharomyces pombe) to release deferrichrome.
+  notes: Acetyl-CoA-dependent N5-acetylation of N(5)-hydroxy-L-ornithine (by Sib3
+    in S. pombe) followed by iterative assembly and macrocyclization of three glycine
+    units and three N5-acetyl-N5-hydroxy-L-ornithine units by the multimodular NRPS
+    Sid2 (Ustilago maydis) or Sib1 (Schizosaccharomyces pombe) to release deferrichrome.
   evidence:
   - reference: PMID:11395469
     evidence_type: PRIMARY_EXPERIMENT
@@ -186,6 +185,11 @@ biosynthetic_pathway:
     evidence_type: PRIMARY_EXPERIMENT
     notes: Genetic deletion of sib1+ and sib2+ in Schizosaccharomyces pombe abolishes
       ferrichrome synthesis.
+  - reference: PMID:35928155
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Genetic characterization of Sib2 (ornithine N5-monooxygenase) and Sib3
+      (N5-transacetylase) required for ferrichrome biosynthesis in Schizosaccharomyces
+      pombe.
 causal_graphs:
 - graph_id: deferrichrome_biosynthesis_and_metal_chelation
   scope: BIOACTIVITY
@@ -258,19 +262,23 @@ causal_graphs:
   - subject: sid1
     predicate: synthesizes
     object: h_orn
-    notes: Produces N5-hydroxy-L-ornithine, which is N5-acetylated by Sib3.
+    notes: Produces N(5)-hydroxy-L-ornithine.
     evidence:
-    - reference: PMID:35928155
+    - reference: PMID:8430103
       evidence_type: PRIMARY_EXPERIMENT
-      notes: Sib2 and Sib3 generate N5-acetyl-N5-hydroxy-L-ornithine.
+      notes: Sid1 catalyzes N5-hydroxylation of L-ornithine to N(5)-hydroxy-L-ornithine.
   - subject: h_orn
     predicate: substrate_of
     object: sid2
-    notes: Three N5-acetyl-N5-hydroxy-L-ornithine units are incorporated by the NRPS.
+    notes: Following N5-acetylation by Sib3, three N(5)-hydroxy-L-ornithine-derived
+      hydroxamate units are incorporated by the NRPS.
     evidence:
     - reference: PMID:11395469
       evidence_type: PRIMARY_EXPERIMENT
       notes: Sid2 NRPS incorporates three hydroxamate-ornithine units and three glycines.
+    - reference: PMID:35928155
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sib3 N5-acetylates N(5)-hydroxy-L-ornithine prior to NRPS assembly.
   - subject: glycine
     predicate: substrate_of
     object: sid2
@@ -311,10 +319,11 @@ causal_graphs:
     - reference: PMID:2279065
       evidence_type: PRIMARY_EXPERIMENT
       notes: 1H-NMR solution conformation of alumichrome.
-  - subject: fe3
+  - subject: deferrichrome
     predicate: binds
     object: fhua
-    notes: Ferrichrome binds the extracellular pocket of E. coli FhuA.
+    notes: In its ferric-complexed form (ferrichrome), deferrichrome binds the extracellular
+      pocket of the E. coli outer membrane transporter FhuA.
     evidence:
     - reference: PMID:9856937
       evidence_type: PRIMARY_EXPERIMENT
@@ -332,7 +341,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
-- timestamp: '2026-10-31T08:42:25Z'
+- timestamp: '2026-10-31T09:48:48Z'
   curator: naturalproductmech-agent
   action: RECORD_CURATED
   changes: Curated ecological_roles, metal-binding molecular_targets (including explicit

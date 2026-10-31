@@ -37,6 +37,9 @@ occurrences:
   taxon_id: NCBITaxon:5061
   taxon_source: NCBITaxon
   detection_context: N402
+  notes: This taxon is also recorded as a producer. Production and occurrence are
+    distinct claims; their citations may refer to the same publication. Publication
+    independence has not been established.
 producer_taxon_groups:
 - FUNGAL
 producer_organisms:
@@ -54,19 +57,21 @@ producer_organisms:
       secreted by iron-deficient axenic cultures of Neurospora crassa and Fusarium
       dimerum.
   strain: ATCC 10816
-- taxon_id: NCBITaxon:162425
-  taxon_label: Aspergillus nidulans
-  evidence_basis: AXENIC_CULTURE
+- taxon_id: NCBITaxon:5061
+  taxon_label: Aspergillus niger
+  evidence_basis: BGC_CHARACTERIZED
   source: CURATOR
-  notes: 'RP-HPLC/ESI-MS identification of coprogen B (desferricoprogen B) biosynthesis
-    alongside coprogen in iron-starved cultures of Penicillium and Aspergillus species.
-    Curator: naturalproductmech-agent; date: 2026-10-31.'
+  notes: 'Targeted gene deletion of sidA (An16g01850, L-ornithine N5-monooxygenase)
+    and sidD (An03g03560, nonribosomal peptide synthetase) in Aspergillus niger N402
+    completely abolishes coprogen B (desferricoprogen B) biosynthesis. Curator: naturalproductmech-agent;
+    date: 2026-10-31.'
   evidence:
-  - reference: PMID:19700391
+  - reference: PMID:25062661
     evidence_type: PRIMARY_EXPERIMENT
-    notes: RP-HPLC/ESI-MS identification of coprogen B (desferricoprogen B) biosynthesis
-      alongside coprogen in iron-starved cultures of Penicillium and Aspergillus species.
-  strain: FGSC A4
+    notes: Targeted gene deletion of sidA (An16g01850, L-ornithine N5-monooxygenase)
+      and sidD (An03g03560, nonribosomal peptide synthetase) in Aspergillus niger
+      N402 completely abolishes coprogen B (desferricoprogen B) biosynthesis.
+  strain: N402
 source_concepts:
 - source: CHEBI
   source_id: CHEBI:133861
@@ -90,8 +95,8 @@ molecular_targets:
       of desferricoprogen B) from Penicillium, Fusarium, and Neurospora crassa.
   - reference: PMID:25062661
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Genetic deletion of sidD in Aspergillus niger abolishes biosynthesis of
-      coprogen B.
+    notes: Genetic deletion of sidD in Aspergillus niger N402 abolishes biosynthesis
+      of coprogen B.
 ecological_roles:
 - CHEBI:26672
 - CHEBI:38161
@@ -111,8 +116,8 @@ biosynthetic_pathway:
   evidence:
   - reference: PMID:25062661
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Functional characterization of the Aspergillus niger sidD NRPS gene required
-      for coprogen B biosynthesis.
+    notes: Functional characterization of the Aspergillus niger N402 sidD NRPS gene
+      (An03g03560) required for coprogen B biosynthesis.
   - reference: PMID:5484314
     evidence_type: PRIMARY_EXPERIMENT
     notes: Chemical characterization of coprogen B from iron-deficient fungal cultures.
@@ -161,11 +166,12 @@ causal_graphs:
   - subject: l_ornithine
     predicate: converted_to
     object: h_orn
-    notes: L-ornithine is N5-hydroxylated to N5-hydroxy-L-ornithine.
+    notes: L-ornithine is N5-hydroxylated by SidA to N(5)-hydroxy-L-ornithine.
     evidence:
     - reference: PMID:25062661
       evidence_type: PRIMARY_EXPERIMENT
-      notes: First committed step of fungal hydroxamate siderophore synthesis.
+      notes: SidA (An16g01850) catalyzes the first committed step of fungal hydroxamate
+        siderophore synthesis in Aspergillus niger.
   - subject: mevalonate
     predicate: substrate_of
     object: sidd
@@ -177,7 +183,8 @@ causal_graphs:
   - subject: h_orn
     predicate: substrate_of
     object: sidd
-    notes: Three acylated N5-hydroxy-L-ornithine units are condensed by SidD.
+    notes: Following N5-acylation with trans-anhydromevalonyl-CoA, three N(5)-hydroxy-L-ornithine-derived
+      units are condensed by SidD.
     evidence:
     - reference: PMID:25062661
       evidence_type: PRIMARY_EXPERIMENT
@@ -199,20 +206,26 @@ causal_graphs:
     - reference: PMID:5484314
       evidence_type: PRIMARY_EXPERIMENT
       notes: Characterization of the ferric complex coprogen B.
-  - subject: fe3
+  - subject: desferricoprogen_b
     predicate: enables
     object: iron_transport
-    notes: Mediates fungal ferric iron acquisition under iron starvation.
+    notes: In its ferric-complexed form (coprogen B), desferricoprogen B mediates
+      fungal extracellular ferric iron acquisition under iron starvation.
     evidence:
-    - reference: PMID:19700391
+    - reference: PMID:5484314
       evidence_type: PRIMARY_EXPERIMENT
-      notes: Extracellular siderophore production in iron-starved Neurospora crassa.
+      notes: Coprogen B is secreted as an extracellular ferric siderophore under iron-limiting
+        growth.
+    - reference: PMID:25062661
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Extracellular coprogen B biosynthesis under iron starvation in Aspergillus
+        niger.
 curation_history:
 - timestamp: '2026-10-31T08:00:00Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
-- timestamp: '2026-10-31T08:42:25Z'
+- timestamp: '2026-10-31T09:48:48Z'
   curator: naturalproductmech-agent
   action: RECORD_CURATED
   changes: Curated ecological_roles, metal-binding molecular_targets (including explicit

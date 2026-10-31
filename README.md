@@ -66,7 +66,7 @@ field coverage (records carrying at least one item):
   occurrence_taxon_groups              2351
   producer_organisms                   3097
   occurrences                          2351
-  biosynthetic_gene_clusters           3122
+  biosynthetic_gene_clusters           3123
   biosynthetic_pathway                  216
   bioactivities                         174
   bioactivity_summary                   314
@@ -76,18 +76,18 @@ field coverage (records carrying at least one item):
   discussions                           362
 
 producer claims: 3441 (840 causal, 162 correlational)
-  AXENIC_CULTURE                         16
-  BGC_CHARACTERIZED                     824
+  AXENIC_CULTURE                         14
+  BGC_CHARACTERIZED                     826
   BGC_CORRELATED                        162
   SOURCE_ASSERTION                     2439
 
-cluster link claims: 3455 (1361 demonstrated)
+cluster link claims: 3456 (1362 demonstrated)
   CLUSTER_CORRELATED                    110
-  CLUSTER_DEMONSTRATED                 1361
+  CLUSTER_DEMONSTRATED                 1362
   CLUSTER_PREDICTED                       2
   CLUSTER_UNSTATED                     1982
 
-records with a producer taxon also reported in a cited occurrence (publication independence not assessed): 737
+records with a producer taxon also reported in a cited occurrence (publication independence not assessed): 739
 records whose only origin evidence is a gene cluster with no named host: 27
 
 These grade two different questions and they come apart. A producer
