@@ -38,15 +38,15 @@ producer_organisms:
   taxon_label: Pseudomonas aeruginosa PAO1
   evidence_basis: BGC_CHARACTERIZED
   source: CURATOR
-  notes: 'In-frame deletion and in vitro enzymatic reconstitution of the flp/pab operon
-    (PA2302-PA2306) in Pseudomonas aeruginosa PAO1 demonstrate biosynthesis of the
-    metal-free thiohydroxamate chelator fluopsin (N-methyl-N-hydroxythioformamide).
+  notes: 'In-frame deletion and in vitro enzymatic reconstitution of the flcA-flcE
+    operon (PA3515-PA3519) in Pseudomonas aeruginosa PAO1 demonstrate biosynthesis
+    of the metal-free thiohydroxamate chelator fluopsin (N-methyl-N-hydroxythioformamide).
     Curator: naturalproductmech-agent; date: 2026-10-30.'
   evidence:
   - reference: PMID:34793213
     evidence_type: PRIMARY_EXPERIMENT
-    notes: In-frame deletion and in vitro enzymatic reconstitution of the flp/pab
-      operon (PA2302-PA2306) in Pseudomonas aeruginosa PAO1 demonstrate biosynthesis
+    notes: In-frame deletion and in vitro enzymatic reconstitution of the flcA-flcE
+      operon (PA3515-PA3519) in Pseudomonas aeruginosa PAO1 demonstrate biosynthesis
       of the metal-free thiohydroxamate chelator fluopsin (N-methyl-N-hydroxythioformamide).
   strain: PAO1
 source_concepts:
@@ -71,7 +71,7 @@ molecular_targets:
   - reference: PMID:34793213
     evidence_type: PRIMARY_EXPERIMENT
     notes: Pseudomonas aeruginosa synthesizes the thiohydroxamate ligand N-methyl-N-hydroxythioformamide
-      (fluopsin) via the flp gene cluster (PA2292-PA2295) in response to elevated
+      (fluopsin) via the flcA-flcE gene cluster (PA3515-PA3519) in response to elevated
       copper, forming the copper complex fluopsin C.
   - reference: PMID:5549384
     evidence_type: PRIMARY_EXPERIMENT
@@ -92,8 +92,8 @@ molecular_targets:
       including the ferric complex fluopsin F.
   - reference: PMID:34793213
     evidence_type: PRIMARY_EXPERIMENT
-    notes: The thiohydroxamate monomer synthesized by the flp pathway chelates both
-      Cu(II) (fluopsin C) and Fe(III) (fluopsin F).
+    notes: The thiohydroxamate monomer synthesized by the flcA-flcE pathway chelates
+      both Cu(II) (fluopsin C) and Fe(III) (fluopsin F).
 - target_id: CHEBI:49786
   target_label: nickel(2+)
   target_type: OTHER
@@ -138,7 +138,7 @@ ecological_roles:
 - CHEBI:38161
 biosynthetic_pathway:
 - step_number: 1
-  enzyme_label: PA2292-PA2295 (Flp biosynthetic enzymes)
+  enzyme_label: FlcA-FlcE (PA3515-PA3519 biosynthetic enzymes)
   substrates:
   - CHEBI:17561
   - CHEBI:15414
@@ -150,16 +150,16 @@ biosynthetic_pathway:
   evidence:
   - reference: PMID:34793213
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Genetic and biochemical characterization of the flp (PA2292-PA2295) operon
-      in Pseudomonas aeruginosa establishes L-cysteine-derived biosynthesis of the
-      thiohydroxamate chelator and its Cu(II) complex fluopsin C.
+    notes: Genetic and biochemical characterization of the flcA-flcE (PA3515-PA3519)
+      operon in Pseudomonas aeruginosa establishes L-cysteine-derived biosynthesis
+      of the thiohydroxamate chelator and its Cu(II) complex fluopsin C.
 causal_graphs:
 - graph_id: fluopsin_biosynthesis_and_metal_chelation
   scope: BIOACTIVITY
   description: Copper-inducible biosynthesis of the thiohydroxamate metallophore fluopsin
-    (N-methyl-N-hydroxythioformamide) from L-cysteine via the flp operon in Pseudomonas
-    spp. and bidentate S,O-chelation of Cu(II) (forming fluopsin C), Fe(III) (forming
-    fluopsin F), and CMM cations Ni(II) and Co(II).
+    (N-methyl-N-hydroxythioformamide) from L-cysteine via the flcA-flcE (PA3515-PA3519)
+    operon in Pseudomonas spp. and bidentate S,O-chelation of Cu(II) (forming fluopsin
+    C), Fe(III) (forming fluopsin F), and CMM cations Ni(II) and Co(II).
   nodes:
   - node_id: l_cysteine
     label: L-cysteine
@@ -171,8 +171,8 @@ causal_graphs:
     node_type: PRECURSOR
     identifier: CHEBI:15414
     grounding_status: GROUNDED
-  - node_id: flp_cluster
-    label: flp (PA2292-PA2295) biosynthetic operon
+  - node_id: flc_cluster
+    label: flcA-flcE (PA3515-PA3519) biosynthetic operon
     node_type: GENE_CLUSTER
     grounding_status: UNGROUNDED
   - node_id: fluopsin
@@ -213,7 +213,7 @@ causal_graphs:
   edges:
   - subject: l_cysteine
     predicate: substrate_of
-    object: flp_cluster
+    object: flc_cluster
     notes: L-cysteine donates the sulfur and nitrogen atoms of the thiohydroxamate
       group.
     evidence:
@@ -223,22 +223,22 @@ causal_graphs:
         thiohydroxamate core.
   - subject: sam
     predicate: substrate_of
-    object: flp_cluster
+    object: flc_cluster
     notes: SAM provides the N-methyl group of N-methyl-N-hydroxythioformamide.
     evidence:
     - reference: PMID:34793213
       evidence_type: PRIMARY_EXPERIMENT
-      notes: SAM-dependent methyltransferase activity in the flp operon installs the
-        N-methyl substituent.
-  - subject: flp_cluster
+      notes: SAM-dependent methyltransferase activity in the flcA-flcE operon installs
+        the N-methyl substituent.
+  - subject: flc_cluster
     predicate: synthesizes
     object: fluopsin
     notes: Produces the monomeric thiohydroxamate ligand fluopsin.
     evidence:
     - reference: PMID:34793213
       evidence_type: PRIMARY_EXPERIMENT
-      notes: The flp operon synthesizes the monomeric thiohydroxamate ligand in Pseudomonas
-        aeruginosa.
+      notes: The flcA-flcE operon synthesizes the monomeric thiohydroxamate ligand
+        in Pseudomonas aeruginosa.
   - subject: fluopsin
     predicate: chelates
     object: cu2
@@ -264,8 +264,8 @@ causal_graphs:
     evidence:
     - reference: PMID:34793213
       evidence_type: PRIMARY_EXPERIMENT
-      notes: Deletion of the flp operon sensitizes P. aeruginosa to elevated copper
-        concentrations.
+      notes: Deletion of the flcA-flcE operon sensitizes P. aeruginosa to elevated
+        copper concentrations.
   - subject: fluopsin
     predicate: chelates
     object: fe3
@@ -296,7 +296,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
-- timestamp: '2026-10-31T05:05:45Z'
+- timestamp: '2026-10-31T06:14:53Z'
   curator: naturalproductmech-agent
   action: RECORD_CURATED
   changes: Curated ecological_roles, metal-binding molecular_targets (including explicit

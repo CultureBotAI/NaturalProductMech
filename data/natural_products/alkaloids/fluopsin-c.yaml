@@ -60,15 +60,17 @@ producer_organisms:
   taxon_label: Pseudomonas aeruginosa PAO1
   evidence_basis: BGC_CHARACTERIZED
   source: CURATOR
-  notes: 'Genetic deletion and biochemical reconstitution of the PA2302-PA2306 operon
-    in Pseudomonas aeruginosa PAO1 demonstrate biosynthesis of the bis(N-methyl-N-hydroxythioformamido)copper(II)
-    chalkophore complex fluopsin C. Curator: naturalproductmech-agent; date: 2026-10-30.'
+  notes: 'Genetic deletion and biochemical reconstitution of the flcA-flcE operon
+    (PA3515-PA3519) in Pseudomonas aeruginosa PAO1 demonstrate biosynthesis of the
+    bis(N-methyl-N-hydroxythioformamido)copper(II) chalkophore complex fluopsin C.
+    Curator: naturalproductmech-agent; date: 2026-10-30.'
   evidence:
   - reference: PMID:34793213
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Genetic deletion and biochemical reconstitution of the PA2302-PA2306 operon
-      in Pseudomonas aeruginosa PAO1 demonstrate biosynthesis of the bis(N-methyl-N-hydroxythioformamido)copper(II)
-      chalkophore complex fluopsin C.
+    notes: Genetic deletion and biochemical reconstitution of the flcA-flcE operon
+      (PA3515-PA3519) in Pseudomonas aeruginosa PAO1 demonstrate biosynthesis of the
+      bis(N-methyl-N-hydroxythioformamido)copper(II) chalkophore complex fluopsin
+      C.
   strain: PAO1
 - taxon_id: NCBITaxon:287
   taxon_label: Pseudomonas aeruginosa
@@ -107,8 +109,8 @@ molecular_targets:
       73) as bis(N-methyl-N-hydroxythioformamide)copper(II) produced by Pseudomonas.
   - reference: PMID:34793213
     evidence_type: PRIMARY_EXPERIMENT
-    notes: The flp operon (PA2292-PA2295) in Pseudomonas aeruginosa directs copper-inducible
-      production of fluopsin C for copper resistance.
+    notes: The flcA-flcE operon (PA3515-PA3519) in Pseudomonas aeruginosa directs
+      copper-inducible production of fluopsin C for copper resistance.
 - target_id: CHEBI:29034
   target_label: iron(3+)
   target_type: OTHER
@@ -126,7 +128,8 @@ ecological_roles:
 - CHEBI:38161
 biosynthetic_pathway:
 - step_number: 1
-  enzyme_label: PA2292-PA2295 (Flp biosynthetic pathway) + spontaneous Cu(II) complexation
+  enzyme_label: FlcA-FlcE (PA3515-PA3519 biosynthetic pathway) + spontaneous Cu(II)
+    complexation
   substrates:
   - CHEBI:17561
   - CHEBI:15414
@@ -140,8 +143,8 @@ biosynthetic_pathway:
   evidence:
   - reference: PMID:34793213
     evidence_type: PRIMARY_EXPERIMENT
-    notes: Pseudomonas aeruginosa PA2292-PA2295 enzymes synthesize the thiohydroxamate
-      monomer which chelates Cu(II) to form fluopsin C.
+    notes: Pseudomonas aeruginosa FlcA-FlcE (PA3515-PA3519) enzymes synthesize the
+      thiohydroxamate monomer which chelates Cu(II) to form fluopsin C.
   - reference: PMID:5549384
     evidence_type: PRIMARY_EXPERIMENT
     notes: Fluopsin C (YC 73) is formed by 2:1 complexation of N-methyl-N-hydroxythioformamide
@@ -221,7 +224,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
-- timestamp: '2026-10-31T05:05:45Z'
+- timestamp: '2026-10-31T06:14:53Z'
   curator: naturalproductmech-agent
   action: RECORD_CURATED
   changes: Curated ecological_roles, metal-binding molecular_targets (including explicit
