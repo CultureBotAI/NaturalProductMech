@@ -1,0 +1,312 @@
+identifier: CHEBI:61152
+label: desferriexochelin 772MS
+chemical_structure:
+  smiles: COC(=O)CCCCCC(=O)N(O)CCCCC(NC(=O)C1COC(c2ccccc2O)=N1)C(=O)OC(C)CC(=O)NC1CCCCN(O)C1=O
+  standard_inchi: InChI=1S/C34H49N5O12/c1-22(20-28(41)35-24-13-8-11-19-39(48)33(24)45)51-34(46)25(14-9-10-18-38(47)29(42)16-4-3-5-17-30(43)49-2)36-31(44)26-21-50-32(37-26)23-12-6-7-15-27(23)40/h6-7,12,15,22,24-26,40,47-48H,3-5,8-11,13-14,16-21H2,1-2H3,(H,35,41)(H,36,44)
+  standard_inchi_key: CICZEXPNYSZNEI-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: CHEBI
+  structure_source_id: CHEBI:61152
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+biosynthesis_origin: NATURAL_PRODUCT
+definition: A carboxylic ester-lactam secreted by Mycobacterium tuberculosis which
+  is both lipid- and water-soluble and acts as a siderophore.
+definition_source: CHEBI:61152
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-10-30
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Depsipeptides
+  - Linear peptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+producer_taxon_groups:
+- ACTINOBACTERIAL
+producer_organisms:
+- taxon_id: NCBITaxon:1773
+  taxon_label: Mycobacterium tuberculosis
+  evidence_basis: AXENIC_CULTURE
+  source: CURATOR
+  notes: 'Purification and tandem mass-spectrometric structure elucidation of the
+    major secreted extracellular hydroxamate-salicylate siderophore desferriexochelin
+    772MS (772SM) from iron-deficient axenic cultures of Mycobacterium tuberculosis
+    Erdman. Curator: naturalproductmech-agent; date: 2026-10-30.'
+  evidence:
+  - reference: PMID:7746590
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Purification and tandem mass-spectrometric structure elucidation of the
+      major secreted extracellular hydroxamate-salicylate siderophore desferriexochelin
+      772MS (772SM) from iron-deficient axenic cultures of Mycobacterium tuberculosis
+      Erdman.
+  strain: Erdman
+- taxon_id: NCBITaxon:83332
+  taxon_label: Mycobacterium tuberculosis H37Rv
+  evidence_basis: BGC_CHARACTERIZED
+  source: CURATOR
+  notes: 'The mbtA-J NRPS-PKS biosynthetic gene cluster (mibig:BGC0001021) of Mycobacterium
+    tuberculosis H37Rv directs assembly of the shared phenyloxazoline-bishydroxamate
+    core of both cell-wall mycobactin T and secreted carboxymycobactins/exochelins
+    including desferriexochelin 772MS. Curator: naturalproductmech-agent; date: 2026-10-30.'
+  evidence:
+  - reference: PMID:9831524
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: The mbtA-J NRPS-PKS biosynthetic gene cluster (mibig:BGC0001021) of Mycobacterium
+      tuberculosis H37Rv directs assembly of the shared phenyloxazoline-bishydroxamate
+      core of both cell-wall mycobactin T and secreted carboxymycobactins/exochelins
+      including desferriexochelin 772MS.
+  strain: H37Rv
+  biosynthetic_gene_cluster: mibig:BGC0001021
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001021
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:83332
+  organism_label: Mycobacterium tuberculosis H37Rv
+  evidence:
+  - reference: PMID:9831524
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: The mbtA-J NRPS-PKS biosynthetic gene cluster (mibig:BGC0001021) of Mycobacterium
+      tuberculosis H37Rv directs assembly of the shared phenyloxazoline-bishydroxamate
+      core of both cell-wall mycobactin T and secreted carboxymycobactins/exochelins
+      including desferriexochelin 772MS.
+  genome_accession: genbank:AL123456.3
+  locus_from: 2656200
+  locus_to: 2680020
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: CHEBI
+  source_id: CHEBI:61152
+  source_label: desferriexochelin 772MS
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-e2da49d6b4
+grounding_status: EXACT
+curation_status: REVIEWED
+molecular_targets:
+- target_id: CHEBI:29034
+  target_label: iron(3+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: Primary physiological ferric ion chelation via hexadentate 2-hydroxyphenyloxazoline
+    + bis-hydroxamate coordination (ferriexochelin 772SM / carboxymycobactin, 1:1
+    complex) secreted by Mycobacterium tuberculosis to scavenge Fe(III) from host
+    transferrin and lactoferrin and transfer it to cell-wall mycobactin T.
+  evidence:
+  - reference: PMID:7746590
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Purification and tandem mass spectrometric structure determination of extracellular
+      salicylate-type siderophores (exochelins, major serine-containing methyl ester
+      species m/z 772, 772SM) from Mycobacterium tuberculosis that remove Fe(III)
+      from transferrin and lactoferrin.
+  - reference: PMID:8576206
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Extracellular ferriexochelins of Mycobacterium tuberculosis transfer chelated
+      Fe(III) to cell-wall mycobactins for uptake across the mycobacterial envelope.
+- target_id: CHEBI:84043
+  target_label: gallium(3+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: '[Critical Mineral & Material (CMM)] Hexadentate coordination of trivalent
+    gallium(3+) via the 2-hydroxyphenyloxazoline and two N6-hydroxylysine hydroxamate
+    donor groups (redox-inactive trivalent Fe(III) mimic).'
+  evidence:
+  - reference: PMID:7746590
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Hexadentate phenolate-oxazoline-bishydroxamate coordination core of Mycobacterium
+      tuberculosis exochelin 772SM.
+  - reference: PMID:9831524
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Salicylate-derived mycobactin and extracellular carboxymycobactin/exochelin
+      siderophores of Mycobacterium tuberculosis share the hexadentate phenolate-oxazoline-bishydroxamate
+      trivalent metal-binding core.
+ecological_roles:
+- CHEBI:26672
+- CHEBI:38161
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_label: MbtI (salicylate synthase) and MbtA (salicyl-AMP ligase)
+  substrates:
+  - CHEBI:16914
+  products:
+  - CHEBI:16914
+  notes: Conversion of chorismate to salicylic acid by MbtI and ATP-dependent adenylation
+    to salicyl-AMP by MbtA.
+  evidence:
+  - reference: PMID:9831524
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: The mbtA-J gene cluster of Mycobacterium tuberculosis encodes the biosynthetic
+      enzymes for salicylate-derived siderophores, including both cell-wall mycobactin
+      T and extracellular carboxymycobactins/exochelins.
+- step_number: 2
+  enzyme_label: MbtB-MbtF (NRPS-PKS), MbtG (lysine N6-monooxygenase), and MbtK (acyltransferase)
+  substrates:
+  - CHEBI:16914
+  - CHEBI:17115
+  - CHEBI:18019
+  products:
+  - CHEBI:61152
+  notes: Hybrid NRPS-PKS assembly of the 2-hydroxyphenyloxazoline-lysine-3-hydroxybutyrate-cyclolysine
+    core from salicylic acid, L-serine, and L-lysine, followed by N6-hydroxylation
+    and acylation with a methyl-esterified dicarboxylic acid chain to yield desferriexochelin
+    772MS.
+  evidence:
+  - reference: PMID:7746590
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Tandem mass spectrometry establishes the structure of Mycobacterium tuberculosis
+      exochelin 772SM with a 2-hydroxyphenyloxazoline ring, two N-hydroxylysine residues,
+      a 3-hydroxybutyrate linker, and a methyl-esterified dicarboxylate side chain.
+  - reference: PMID:9831524
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: The mbtA-J gene cluster directs assembly of the shared phenyloxazoline-bishydroxamate
+      core of Mycobacterium tuberculosis siderophores.
+causal_graphs:
+- graph_id: desferriexochelin_772ms_biosynthesis_and_chelation
+  scope: BIOACTIVITY
+  description: Hybrid NRPS-PKS biosynthesis of the extracellular salicylate-type siderophore
+    desferriexochelin 772MS in Mycobacterium tuberculosis and hexadentate coordination
+    of host Fe(III) and CMM cation Ga(III).
+  nodes:
+  - node_id: salicylate
+    label: salicylic acid
+    node_type: PRECURSOR
+    identifier: CHEBI:16914
+    grounding_status: GROUNDED
+  - node_id: l_serine
+    label: L-serine
+    node_type: PRECURSOR
+    identifier: CHEBI:17115
+    grounding_status: GROUNDED
+  - node_id: l_lysine
+    label: L-lysine
+    node_type: PRECURSOR
+    identifier: CHEBI:18019
+    grounding_status: GROUNDED
+  - node_id: mbt_cluster
+    label: mbtA-J biosynthetic gene cluster (BGC0001021)
+    node_type: GENE_CLUSTER
+    grounding_status: UNGROUNDED
+  - node_id: exochelin_772ms
+    label: desferriexochelin 772MS
+    node_type: COMPOUND
+    identifier: CHEBI:61152
+    grounding_status: GROUNDED
+  - node_id: fe3
+    label: iron(3+)
+    node_type: OTHER
+    identifier: CHEBI:29034
+    grounding_status: GROUNDED
+  - node_id: ga3
+    label: gallium(3+)
+    node_type: OTHER
+    identifier: CHEBI:84043
+    grounding_status: GROUNDED
+  - node_id: mycobactin_t
+    label: desferrimycobactin T
+    node_type: COMPOUND
+    identifier: CHEBI:61168
+    grounding_status: GROUNDED
+  - node_id: siderophore_transport
+    label: siderophore transport
+    node_type: PROCESS
+    identifier: GO:0015891
+    grounding_status: GROUNDED
+  edges:
+  - subject: salicylate
+    predicate: substrate_of
+    object: mbt_cluster
+    notes: Activated as salicyl-AMP by MbtA to form the N-terminal 2-hydroxyphenyloxazoline
+      ring.
+    evidence:
+    - reference: PMID:9831524
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: MbtA activates salicylic acid for incorporation into M. tuberculosis
+        salicylate-derived siderophores.
+  - subject: l_serine
+    predicate: substrate_of
+    object: mbt_cluster
+    notes: Condensed with salicylate and cyclodehydrated to form the oxazoline ring
+      in the 772SM series.
+    evidence:
+    - reference: PMID:7746590
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: The major M. tuberculosis exochelin 772SM contains a serine-derived oxazoline
+        ring.
+  - subject: l_lysine
+    predicate: substrate_of
+    object: mbt_cluster
+    notes: Provides the internal linear N6-hydroxylysine and C-terminal cyclic N6-hydroxylysine
+      hydroxamate ligands.
+    evidence:
+    - reference: PMID:7746590
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Tandem MS identifies linear and cyclic N-hydroxylysine hydroxamate units
+        in exochelin 772SM.
+  - subject: mbt_cluster
+    predicate: synthesizes
+    object: exochelin_772ms
+    notes: Synthesizes extracellular desferriexochelin 772MS.
+    evidence:
+    - reference: PMID:9831524
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: The mbtA-J gene cluster encodes the enzymes assembling the salicylate-derived
+        siderophores of M. tuberculosis.
+  - subject: exochelin_772ms
+    predicate: chelates
+    object: fe3
+    notes: Scavenges Fe(III) from host transferrin and lactoferrin via hexadentate
+      coordination.
+    evidence:
+    - reference: PMID:7746590
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Exochelin 772SM chelates ferric iron from host iron-binding proteins.
+  - subject: fe3
+    predicate: transferred_to
+    object: mycobactin_t
+    notes: Ferriexochelin 772SM transfers chelated Fe(III) to cell-wall-associated
+      desferrimycobactin T.
+    evidence:
+    - reference: PMID:8576206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Exochelins donate scavenged ferric iron to mycobactins in the Mycobacterium
+        tuberculosis cell wall.
+  - subject: mycobactin_t
+    predicate: enables
+    object: siderophore_transport
+    notes: Mediates iron delivery across the Mycobacterium tuberculosis cell envelope.
+    evidence:
+    - reference: PMID:8576206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Cooperative exochelin-mycobactin iron shuttle in M. tuberculosis.
+  - subject: exochelin_772ms
+    predicate: chelates
+    object: ga3
+    notes: '[CMM] Coordinates trivalent gallium(3+) via the hexadentate phenolate-oxazoline-bishydroxamate
+      core.'
+    evidence:
+    - reference: PMID:7746590
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Hexadentate trivalent metal coordination core of exochelin 772SM.
+curation_history:
+- timestamp: '2026-10-31T03:56:14Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-31T04:21:11Z'
+  curator: naturalproductmech-agent
+  action: RECORD_CURATED
+  changes: Curated ecological_roles, metal-binding molecular_targets (including explicit
+    Critical Mineral & Material [CMM] annotations and primary literature evidence),
+    biosynthetic_pathway steps, and connected causal_graphs; promoted curation_status
+    to REVIEWED.
+  llm_assisted: true

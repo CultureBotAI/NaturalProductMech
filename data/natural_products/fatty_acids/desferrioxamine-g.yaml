@@ -1,0 +1,382 @@
+identifier: CHEBI:50439
+label: desferrioxamine G
+chemical_structure:
+  smiles: NCCCCCN(O)C(=O)CCC(=O)NCCCCCN(O)C(=O)CCC(=O)NCCCCCN(O)C(=O)CCC(=O)O
+  standard_inchi: InChI=1S/C27H50N6O10/c28-16-4-1-7-19-31(41)24(36)12-10-22(34)29-17-5-2-8-20-32(42)25(37)13-11-23(35)30-18-6-3-9-21-33(43)26(38)14-15-27(39)40/h41-43H,1-21,28H2,(H,29,34)(H,30,35)(H,39,40)
+  standard_inchi_key: MIVGUYBAQIHKPJ-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: CHEBI
+  structure_source_id: CHEBI:50439
+np_pathway: FATTY_ACIDS
+biosynthesis_origin: NATURAL_PRODUCT
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-10-30
+  pathway_results:
+  - Fatty acids
+  superclass_results:
+  - Fatty amides
+  class_results:
+  - N-acyl amines
+  is_glycoside: false
+bgc_class:
+- OTHER
+producer_taxon_groups:
+- ACTINOBACTERIAL
+producer_organisms:
+- taxon_id: NCBITaxon:100226
+  taxon_label: Streptomyces coelicolor A3(2)
+  evidence_basis: BGC_CHARACTERIZED
+  source: CURATOR
+  notes: 'Genetic inactivation and characterization of the desABCD biosynthetic gene
+    cluster (mibig:BGC0000940) in Streptomyces coelicolor A3(2) establish biosynthesis
+    of linear desferrioxamine G (desferrioxamine G1) alongside desferrioxamines B,
+    E, and D1. Curator: naturalproductmech-agent; date: 2026-10-30.'
+  evidence:
+  - reference: PMID:15600304
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Genetic inactivation and characterization of the desABCD biosynthetic gene
+      cluster (mibig:BGC0000940) in Streptomyces coelicolor A3(2) establish biosynthesis
+      of linear desferrioxamine G (desferrioxamine G1) alongside desferrioxamines
+      B, E, and D1.
+  strain: A3(2)
+  biosynthetic_gene_cluster: mibig:BGC0000940
+- taxon_id: NCBITaxon:28893
+  taxon_label: Streptomyces pilosus
+  evidence_basis: AXENIC_CULTURE
+  source: CURATOR
+  notes: 'Original isolation and structural elucidation of linear desferrioxamine
+    G (as its ferric complex ferrioxamine G) from axenic iron-limited cultures of
+    Streptomyces pilosus ETH 21748. Curator: naturalproductmech-agent; date: 2026-10-30.'
+  evidence:
+  - reference: PMID:14056468
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Original isolation and structural elucidation of linear desferrioxamine
+      G (as its ferric complex ferrioxamine G) from axenic iron-limited cultures of
+      Streptomyces pilosus ETH 21748.
+  strain: ETH 21748
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000940
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:100226
+  organism_label: Streptomyces coelicolor A3(2)
+  evidence:
+  - reference: PMID:15600304
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Genetic inactivation and characterization of the desABCD biosynthetic gene
+      cluster (mibig:BGC0000940) in Streptomyces coelicolor A3(2) establish biosynthesis
+      of linear desferrioxamine G (desferrioxamine G1) alongside desferrioxamines
+      B, E, and D1.
+  genome_accession: genbank:AL645882.2
+  locus_from: 3033355
+  locus_to: 3040682
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: CHEBI
+  source_id: CHEBI:50439
+  source_label: desferrioxamine G
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-eeac6ac4e1
+grounding_status: EXACT
+curation_status: REVIEWED
+molecular_targets:
+- target_id: CHEBI:29034
+  target_label: iron(3+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: Primary physiological ferric ion chelation via hexadentate tris-hydroxamate
+    coordination (ferrioxamine G1, 1:1 complex, log beta110 ~ 30.6) mediating high-affinity
+    bacterial iron acquisition.
+  evidence:
+  - reference: PMID:15600304
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Identification and genetic characterization of the desABCD desferrioxamine
+      biosynthetic gene cluster in Streptomyces coelicolor A3(2).
+  - reference: PMID:17704773
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: NIS synthetase DesD catalyzes the ATP-dependent condensation of N-hydroxy-N-succinylcadaverine
+      to form both linear desferrioxamine G1 and macrocyclic desferrioxamine E for
+      ferric iron acquisition.
+  - reference: DOI:10.1021/ic00136a014
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Potentiometric and spectrophotometric determination of stability constants
+      of linear tris-hydroxamate ferrioxamine complexes with Fe(III), Ga(III), Al(III),
+      and divalent transition metals.
+- target_id: CHEBI:84043
+  target_label: gallium(3+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: '[Critical Mineral & Material (CMM)] Hexadentate tris-hydroxamate coordination
+    of trivalent gallium(3+) (log beta110 ~ 27.6, measured in vitro as a redox-inactive
+    Fe(III) surrogate; lower affinity than Fe(III) and not a physiological metabolic
+    cofactor).'
+  evidence:
+  - reference: DOI:10.1021/ic00136a014
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Linear tris-hydroxamate desferrioxamine ligands form stable 1:1 hexadentate
+      complexes with Ga(III) in aqueous solution.
+- target_id: CHEBI:48828
+  target_label: cobalt(2+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: '[Critical Mineral & Material (CMM)] Coordination of divalent cobalt(2+)
+    in aqueous solution (measured in vitro; ~15-20 orders of magnitude weaker than
+    Fe(III), oxidation-prone to Co(III)-tris-hydroxamate in aerobic solution).'
+  evidence:
+  - reference: DOI:10.1021/ic00136a014
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Thermodynamic stability constants for linear tris-hydroxamate desferrioxamine
+      complexes with divalent Co(II), Ni(II), Cu(II), and Zn(II) in aqueous solution.
+- target_id: CHEBI:49786
+  target_label: nickel(2+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: '[Critical Mineral & Material (CMM)] Coordination of divalent nickel(2+)
+    in aqueous solution (log K ~ 10-11, measured in vitro only; secondary non-physiological
+    binding relative to Fe(III)).'
+  evidence:
+  - reference: DOI:10.1021/ic00136a014
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Thermodynamic stability constants for linear tris-hydroxamate desferrioxamine
+      complexes with divalent Co(II), Ni(II), Cu(II), and Zn(II) in aqueous solution.
+- target_id: CHEBI:49701
+  target_label: lanthanum(3+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: '[Critical Mineral & Material (CMM)] Coordination of trivalent rare earth
+    element lanthanum(3+) in aqueous solution (log beta ~ 10-12, measured in vitro
+    only; weaker than Fe(III) and Ga(III)).'
+  evidence:
+  - reference: DOI:10.1021/ic00136a014
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Solution equilibrium studies of linear tris-hydroxamate desferrioxamine
+      chelation across trivalent metal cations.
+- target_id: CHEBI:29036
+  target_label: copper(2+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: In vitro coordination of divalent copper(2+) via hydroxamate oxygen donors
+    (log beta ~ 14, secondary relative to Fe(III)).
+  evidence:
+  - reference: DOI:10.1021/ic00136a014
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Thermodynamic stability constants for linear tris-hydroxamate desferrioxamine
+      complexes with Cu(II) in aqueous solution.
+ecological_roles:
+- CHEBI:26672
+- CHEBI:38161
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_label: DesA (lysine decarboxylase)
+  substrates:
+  - CHEBI:18019
+  products:
+  - CHEBI:18127
+  notes: Pyridoxal 5'-phosphate-dependent decarboxylation of L-lysine to cadaverine;
+    first committed step of the desABCD desferrioxamine biosynthetic pathway in Streptomyces
+    coelicolor A3(2).
+  evidence:
+  - reference: PMID:15600304
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: The desABCD operon of Streptomyces coelicolor A3(2) directs the biosynthesis
+      of desferrioxamines G1, B, and E starting from L-lysine decarboxylation by DesA.
+- step_number: 2
+  enzyme_label: DesB (cadaverine monooxygenase) and DesC (N-hydroxycadaverine acyltransferase)
+  substrates:
+  - CHEBI:18127
+  - CHEBI:15380
+  notes: FAD-dependent N-hydroxylation of cadaverine to N-hydroxycadaverine followed
+    by DesC-catalyzed N-succinylation with succinyl-CoA to form N-hydroxy-N-succinylcadaverine
+    (HSC) monomers.
+  evidence:
+  - reference: PMID:15600304
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: DesB N-hydroxylates cadaverine and DesC acylates N-hydroxycadaverine with
+      succinyl-CoA to generate N-hydroxy-N-succinylcadaverine.
+- step_number: 3
+  enzyme_label: DesD (NRPS-independent siderophore synthetase)
+  substrates:
+  - CHEBI:15380
+  products:
+  - CHEBI:50439
+  notes: ATP-dependent iterative condensation of three N-hydroxy-N-succinylcadaverine
+    units without macrocyclization to yield linear desferrioxamine G.
+  evidence:
+  - reference: PMID:17704773
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Recombinant DesD catalyzes ATP-dependent trimerization of N-hydroxy-N-succinylcadaverine
+      to form linear desferrioxamine G1 and cyclic desferrioxamine E.
+causal_graphs:
+- graph_id: desferrioxamine_g_biosynthesis_and_chelation
+  scope: BIOACTIVITY
+  description: DesABCD-mediated biosynthesis of linear tris-hydroxamate siderophore
+    desferrioxamine G from L-lysine and succinyl-CoA and subsequent chelation of physiological
+    Fe(III) as well as critical minerals Ga(III), Co(II), Ni(II), and La(III).
+  nodes:
+  - node_id: l_lysine
+    label: L-lysine
+    node_type: PRECURSOR
+    identifier: CHEBI:18019
+    grounding_status: GROUNDED
+  - node_id: cadaverine
+    label: cadaverine
+    node_type: PRECURSOR
+    identifier: CHEBI:18127
+    grounding_status: GROUNDED
+  - node_id: succinyl_coa
+    label: succinyl-CoA
+    node_type: PRECURSOR
+    identifier: CHEBI:15380
+    grounding_status: GROUNDED
+  - node_id: des_abcd
+    label: desABCD biosynthetic gene cluster (BGC0000940)
+    node_type: GENE_CLUSTER
+    grounding_status: UNGROUNDED
+  - node_id: dfo_g
+    label: desferrioxamine G
+    node_type: COMPOUND
+    identifier: CHEBI:50439
+    grounding_status: GROUNDED
+  - node_id: fe3
+    label: iron(3+)
+    node_type: OTHER
+    identifier: CHEBI:29034
+    grounding_status: GROUNDED
+  - node_id: ga3
+    label: gallium(3+)
+    node_type: OTHER
+    identifier: CHEBI:84043
+    grounding_status: GROUNDED
+  - node_id: co2
+    label: cobalt(2+)
+    node_type: OTHER
+    identifier: CHEBI:48828
+    grounding_status: GROUNDED
+  - node_id: ni2
+    label: nickel(2+)
+    node_type: OTHER
+    identifier: CHEBI:49786
+    grounding_status: GROUNDED
+  - node_id: la3
+    label: lanthanum(3+)
+    node_type: OTHER
+    identifier: CHEBI:49701
+    grounding_status: GROUNDED
+  - node_id: siderophore_transport
+    label: siderophore transport
+    node_type: PROCESS
+    identifier: GO:0015891
+    grounding_status: GROUNDED
+  edges:
+  - subject: l_lysine
+    predicate: converted_to
+    object: cadaverine
+    notes: DesA decarboxylates L-lysine to cadaverine.
+    evidence:
+    - reference: PMID:15600304
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: DesA converts L-lysine to cadaverine in the desABCD pathway.
+  - subject: cadaverine
+    predicate: substrate_of
+    object: des_abcd
+    notes: Cadaverine and succinyl-CoA are converted by DesB, DesC, and DesD.
+    evidence:
+    - reference: PMID:15600304
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: DesB, DesC, and DesD convert cadaverine and succinyl-CoA into desferrioxamine
+        G1.
+  - subject: succinyl_coa
+    predicate: substrate_of
+    object: des_abcd
+    notes: Succinyl-CoA provides the succinyl linkers in N-hydroxy-N-succinylcadaverine.
+    evidence:
+    - reference: PMID:15600304
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: DesC uses succinyl-CoA to form N-hydroxy-N-succinylcadaverine.
+  - subject: des_abcd
+    predicate: synthesizes
+    object: dfo_g
+    notes: DesD trimerizes N-hydroxy-N-succinylcadaverine to release linear desferrioxamine
+      G.
+    evidence:
+    - reference: PMID:17704773
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: DesD synthesizes linear desferrioxamine G1 from three N-hydroxy-N-succinylcadaverine
+        units.
+  - subject: dfo_g
+    predicate: chelates
+    object: fe3
+    notes: Forms 1:1 hexadentate ferrioxamine G1 complex (log beta110 ~ 30.6).
+    evidence:
+    - reference: DOI:10.1021/ic00136a014
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Hexadentate tris-hydroxamate coordination of Fe(III) in aqueous solution.
+  - subject: fe3
+    predicate: enables
+    object: siderophore_transport
+    notes: Ferrioxamine G1 delivers ferric iron to Streptomyces cells via ferrioxamine
+      uptake ABC transporters.
+    evidence:
+    - reference: PMID:15600304
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Desferrioxamine G1 serves as an extracellular ferric siderophore in Streptomyces
+        coelicolor.
+  - subject: dfo_g
+    predicate: chelates
+    object: ga3
+    notes: '[CMM] In vitro hexadentate coordination of trivalent gallium(3+) (log
+      beta110 ~ 27.6).'
+    evidence:
+    - reference: DOI:10.1021/ic00136a014
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Linear tris-hydroxamate desferrioxamines form stable 1:1 Ga(III) complexes.
+  - subject: dfo_g
+    predicate: chelates
+    object: co2
+    notes: '[CMM] Secondary in vitro coordination of divalent cobalt(2+).'
+    evidence:
+    - reference: DOI:10.1021/ic00136a014
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Solution equilibrium constants measured for Co(II) tris-hydroxamate complexes.
+  - subject: dfo_g
+    predicate: chelates
+    object: ni2
+    notes: '[CMM] Secondary in vitro coordination of divalent nickel(2+).'
+    evidence:
+    - reference: DOI:10.1021/ic00136a014
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Solution equilibrium constants measured for Ni(II) tris-hydroxamate complexes.
+  - subject: dfo_g
+    predicate: chelates
+    object: la3
+    notes: '[CMM] Secondary in vitro coordination of trivalent rare earth lanthanum(3+).'
+    evidence:
+    - reference: DOI:10.1021/ic00136a014
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Solution equilibrium constants measured for trivalent metal tris-hydroxamate
+        complexes.
+curation_history:
+- timestamp: '2026-10-31T03:56:14Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-31T04:21:11Z'
+  curator: naturalproductmech-agent
+  action: RECORD_CURATED
+  changes: Curated ecological_roles, metal-binding molecular_targets (including explicit
+    Critical Mineral & Material [CMM] annotations and primary literature evidence),
+    biosynthetic_pathway steps, and connected causal_graphs; promoted curation_status
+    to REVIEWED.
+  llm_assisted: true

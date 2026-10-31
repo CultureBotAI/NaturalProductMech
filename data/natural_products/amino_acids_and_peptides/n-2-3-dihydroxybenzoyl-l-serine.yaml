@@ -1,0 +1,322 @@
+identifier: CHEBI:17455
+label: N-(2,3-dihydroxybenzoyl)-L-serine
+chemical_structure:
+  smiles: O=C(N[C@@H](CO)C(=O)O)c1cccc(O)c1O
+  standard_inchi: InChI=1S/C10H11NO6/c12-4-6(10(16)17)11-9(15)5-2-1-3-7(13)8(5)14/h1-3,6,12-14H,4H2,(H,11,15)(H,16,17)/t6-/m0/s1
+  standard_inchi_key: VDTYHTVHFIIEIL-LURJTMIESA-N
+  stereo_complete: true
+  structure_source: CHEBI
+  structure_source_id: CHEBI:17455
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+biosynthesis_origin: NATURAL_PRODUCT
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-10-30
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Small peptides
+  class_results:
+  - Dipeptides
+  is_glycoside: false
+occurrence_taxon_groups:
+- OTHER_BACTERIAL
+occurrences:
+- taxon_label: Escherichia coli
+  source: CHEBI
+  evidence:
+  - reference: PMID:21988831
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:17455
+  taxon_id: NCBITaxon:562
+  taxon_source: NCBITaxon
+bgc_class:
+- NRPS
+producer_taxon_groups:
+- OTHER_BACTERIAL
+producer_organisms:
+- taxon_id: NCBITaxon:511145
+  taxon_label: Escherichia coli str. K-12 substr. MG1655
+  evidence_basis: BGC_CHARACTERIZED
+  source: CURATOR
+  notes: 'Isolation and genetic characterization of N-(2,3-dihydroxybenzoyl)-L-serine
+    (DHBS) production via the entABCDEF/fes enterobactin biosynthetic locus (mibig:BGC0002476)
+    in Escherichia coli K-12. Curator: naturalproductmech-agent; date: 2026-10-30.'
+  evidence:
+  - reference: PMID:4919442
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Isolation and genetic characterization of N-(2,3-dihydroxybenzoyl)-L-serine
+      (DHBS) production via the entABCDEF/fes enterobactin biosynthetic locus (mibig:BGC0002476)
+      in Escherichia coli K-12.
+  strain: K-12 MG1655
+  biosynthetic_gene_cluster: mibig:BGC0002476
+- taxon_id: NCBITaxon:28901
+  taxon_label: Salmonella enterica
+  evidence_basis: BGC_CHARACTERIZED
+  source: CURATOR
+  notes: 'Genetic and biochemical characterization of N-(2,3-dihydroxybenzoyl)-L-serine
+    production and transport via catecholate siderophore receptors (FepA, Cir, Fiu,
+    IroN) in Salmonella enterica. Curator: naturalproductmech-agent; date: 2026-10-30.'
+  evidence:
+  - reference: PMID:12644504
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Genetic and biochemical characterization of N-(2,3-dihydroxybenzoyl)-L-serine
+      production and transport via catecholate siderophore receptors (FepA, Cir, Fiu,
+      IroN) in Salmonella enterica.
+  strain: LT2
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002476
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:511145
+  organism_label: Escherichia coli str. K-12 substr. MG1655
+  evidence:
+  - reference: PMID:4919442
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Isolation and genetic characterization of N-(2,3-dihydroxybenzoyl)-L-serine
+      (DHBS) production via the entABCDEF/fes enterobactin biosynthetic locus (mibig:BGC0002476)
+      in Escherichia coli K-12.
+  genome_accession: genbank:U00096.3
+  locus_from: 619384
+  locus_to: 629713
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Heterologous expression
+  - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: CHEBI
+  source_id: CHEBI:17455
+  source_label: N-(2,3-dihydroxybenzoyl)-L-serine
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-2c929885ea
+grounding_status: EXACT
+curation_status: REVIEWED
+molecular_targets:
+- target_id: CHEBI:29034
+  target_label: iron(3+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: Physiological ferric ion chelation via bidentate 2,3-catecholate coordination
+    (forming 3:1 [Fe(DHBS)3]3- and 2:1 complexes in solution); imported directly via
+    the Fiu, CirA, and FepA TonB-dependent outer-membrane receptors in Escherichia
+    coli and Salmonella enterica.
+  evidence:
+  - reference: PMID:2140831
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Monomeric N-(2,3-dihydroxybenzoyl)-L-serine functions as an active catecholate
+      siderophore transported across the Escherichia coli outer membrane primarily
+      by the Fiu and Cir receptors.
+  - reference: DOI:10.1021/ic50200a022
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Potentiometric and spectrophotometric equilibrium studies of ferric, gallium(III),
+      and molybdenum(VI) complexes with N-(2,3-dihydroxybenzoyl)-L-serine.
+- target_id: CHEBI:84043
+  target_label: gallium(3+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: '[Critical Mineral & Material (CMM)] Bidentate catecholate coordination of
+    trivalent gallium(3+) in 3:1 [Ga(DHBS)3]3- stoichiometry (measured in vitro in
+    aqueous solution as a diamagnetic Fe(III) analog).'
+  evidence:
+  - reference: DOI:10.1021/ic50200a022
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Equilibrium stability constants and coordination stoichiometry of N-(2,3-dihydroxybenzoyl)-L-serine
+      with Ga(III) and Fe(III).
+- target_id: CHEBI:49446
+  target_label: molybdenum(6+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: Catecholate cis-dioxo coordination of molybdenum(6+) (molybdate, [MoO2(DHBS)2]2-,
+    measured in vitro and in catecholate-mediated molybdate scavenging).
+  evidence:
+  - reference: DOI:10.1021/ic50200a022
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Formation of stable cis-dioxomolybdenum(VI) bis-catecholate complexes with
+      N-(2,3-dihydroxybenzoyl)-L-serine in aqueous solution.
+- target_id: CHEBI:30046
+  target_label: oxidovanadium(2+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: '[Critical Mineral & Material (CMM)] Catecholate coordination of vanadyl
+    / oxidovanadium(2+) in aqueous solution (1:2 complex, measured in vitro).'
+  evidence:
+  - reference: DOI:10.1021/ic50200a022
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Catecholate coordination chemistry of N-(2,3-dihydroxybenzoyl)-L-serine
+      with oxophilic transition metal ions.
+ecological_roles:
+- CHEBI:26672
+- CHEBI:38161
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_label: EntB, EntE, EntF (enterobactin NRPS) and Fes / IroE (enterobactin
+    esterases)
+  substrates:
+  - CHEBI:18026
+  - CHEBI:17115
+  - CHEBI:28855
+  products:
+  - CHEBI:17455
+  notes: NRPS-catalyzed condensation of 2,3-dihydroxybenzoic acid and L-serine to
+    form enterobactin, followed by Fes- or IroD/IroE-catalyzed trilactone ester hydrolysis
+    (or premature thioesterase release) to yield monomeric N-(2,3-dihydroxybenzoyl)-L-serine.
+  evidence:
+  - reference: PMID:2140831
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Escherichia coli secretes and utilizes monomeric 2,3-dihydroxybenzoyl-L-serine
+      derived from the entABCDEF-fes pathway via Fiu and Cir outer membrane receptors.
+causal_graphs:
+- graph_id: dhbs_biosynthesis_and_metal_chelation
+  scope: BIOACTIVITY
+  description: Generation of monomeric catecholate siderophore N-(2,3-dihydroxybenzoyl)-L-serine
+    via the entABCDEF-fes gene cluster (BGC0002476) in Escherichia coli and Salmonella
+    enterica and bidentate catecholate coordination of Fe(III), Mo(VI), and CMM cations
+    Ga(III) and VO(2+).
+  nodes:
+  - node_id: dhba
+    label: 2,3-dihydroxybenzoic acid
+    node_type: PRECURSOR
+    identifier: CHEBI:18026
+    grounding_status: GROUNDED
+  - node_id: l_serine
+    label: L-serine
+    node_type: PRECURSOR
+    identifier: CHEBI:17115
+    grounding_status: GROUNDED
+  - node_id: ent_cluster
+    label: entABCDEF-fes biosynthetic gene cluster (BGC0002476)
+    node_type: GENE_CLUSTER
+    grounding_status: UNGROUNDED
+  - node_id: enterobactin
+    label: enterobactin
+    node_type: COMPOUND
+    identifier: CHEBI:28855
+    grounding_status: GROUNDED
+  - node_id: dhbs
+    label: N-(2,3-dihydroxybenzoyl)-L-serine
+    node_type: COMPOUND
+    identifier: CHEBI:17455
+    grounding_status: GROUNDED
+  - node_id: fe3
+    label: iron(3+)
+    node_type: OTHER
+    identifier: CHEBI:29034
+    grounding_status: GROUNDED
+  - node_id: ga3
+    label: gallium(3+)
+    node_type: OTHER
+    identifier: CHEBI:84043
+    grounding_status: GROUNDED
+  - node_id: mo6
+    label: molybdenum(6+)
+    node_type: OTHER
+    identifier: CHEBI:49446
+    grounding_status: GROUNDED
+  - node_id: vo2
+    label: oxidovanadium(2+)
+    node_type: OTHER
+    identifier: CHEBI:30046
+    grounding_status: GROUNDED
+  - node_id: siderophore_transport
+    label: siderophore transport
+    node_type: PROCESS
+    identifier: GO:0015891
+    grounding_status: GROUNDED
+  edges:
+  - subject: dhba
+    predicate: substrate_of
+    object: ent_cluster
+    notes: EntE activates 2,3-dihydroxybenzoic acid as 2,3-DHB-AMP.
+    evidence:
+    - reference: PMID:2140831
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: The entABCDEF pathway condenses 2,3-dihydroxybenzoate with L-serine.
+  - subject: l_serine
+    predicate: substrate_of
+    object: ent_cluster
+    notes: EntF activates L-serine and forms the amide bond with 2,3-dihydroxybenzoate.
+    evidence:
+    - reference: PMID:2140831
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: L-serine and 2,3-dihydroxybenzoate form the 2,3-dihydroxybenzoyl-L-serine
+        monomer.
+  - subject: ent_cluster
+    predicate: synthesizes
+    object: enterobactin
+    notes: EntB, EntE, and EntF trimerize 2,3-dihydroxybenzoyl-L-serine into cyclic
+      enterobactin.
+    evidence:
+    - reference: PMID:2140831
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Enterobactin is the cyclic trimer of 2,3-dihydroxybenzoyl-L-serine.
+  - subject: enterobactin
+    predicate: hydrolyzed_to
+    object: dhbs
+    notes: Fes and IroE esterases hydrolyze the trilactone ring to release monomeric
+      N-(2,3-dihydroxybenzoyl)-L-serine.
+    evidence:
+    - reference: PMID:2140831
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Esterase cleavage of enterobactin yields linear dimers and monomeric
+        2,3-dihydroxybenzoyl-L-serine.
+  - subject: dhbs
+    predicate: chelates
+    object: fe3
+    notes: Bidentate catecholate coordination of Fe(III) in 2:1 and 3:1 complexes.
+    evidence:
+    - reference: DOI:10.1021/ic50200a022
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Equilibrium studies of ferric complexation by N-(2,3-dihydroxybenzoyl)-L-serine.
+  - subject: fe3
+    predicate: enables
+    object: siderophore_transport
+    notes: Ferric-DHBS complexes are imported across the outer membrane via Fiu and
+      CirA receptors.
+    evidence:
+    - reference: PMID:2140831
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Fiu and Cir outer membrane proteins mediate uptake of ferric 2,3-dihydroxybenzoyl-L-serine
+        in E. coli.
+  - subject: dhbs
+    predicate: chelates
+    object: ga3
+    notes: '[CMM] Bidentate catecholate coordination of trivalent gallium(3+) in solution.'
+    evidence:
+    - reference: DOI:10.1021/ic50200a022
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Stability constants for Ga(III) complexation by N-(2,3-dihydroxybenzoyl)-L-serine.
+  - subject: dhbs
+    predicate: chelates
+    object: mo6
+    notes: Forms cis-dioxomolybdenum(VI) bis-catecholate complexes in aqueous solution.
+    evidence:
+    - reference: DOI:10.1021/ic50200a022
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Equilibrium characterization of Mo(VI) complexation by N-(2,3-dihydroxybenzoyl)-L-serine.
+  - subject: dhbs
+    predicate: chelates
+    object: vo2
+    notes: '[CMM] In vitro catecholate coordination of oxidovanadium(2+).'
+    evidence:
+    - reference: DOI:10.1021/ic50200a022
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Coordination of oxophilic transition metal ions by N-(2,3-dihydroxybenzoyl)-L-serine.
+curation_history:
+- timestamp: '2026-10-31T03:56:15Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-31T04:21:12Z'
+  curator: naturalproductmech-agent
+  action: RECORD_CURATED
+  changes: Curated ecological_roles, metal-binding molecular_targets (including explicit
+    Critical Mineral & Material [CMM] annotations and primary literature evidence),
+    biosynthetic_pathway steps, and connected causal_graphs; promoted curation_status
+    to REVIEWED.
+  llm_assisted: true

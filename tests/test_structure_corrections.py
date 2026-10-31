@@ -271,6 +271,7 @@ def test_corrected_seed_joins_only_corrected_key(inputs):
     inventories.pop("mibig_claim_references")
     inventories.pop("pubchem_bioassay_exclusions")
     inventories.pop("lotus_occurrence_exclusions")
+    inventories.pop("curated_compounds", None)
     doc, = seed.build_records(inventories)
     assert doc["identifier"] == "CHEBI:80024"
     assert doc["chemical_structure"]["structure_source"] == "CHEBI"

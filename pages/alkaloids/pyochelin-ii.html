@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>pyochelin II — NaturalProductMech</title>
+<meta name="description" content="Individual natural product structures, one record per Standard InChIKey, with producer organisms, cited occurrences and biosynthetic gene clusters kept apart.">
+<link rel="stylesheet" href="../style.css">
+<script src="../theme-toggle.js"></script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="home" href="../index.html">NaturalProductMech</a>
+  <nav aria-label="Main navigation">
+    <a href="../browse.html">Browse</a>
+    <a href="../chemical-map.html">Structure map</a>
+    <a href="../map.html">Corpus map</a>
+    <a href="../sequence-map.html">Sequence map</a>
+    <a href="../index.html#downloads">Downloads &amp; Schema</a>
+    <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
+    <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
+  </nav>
+</div></header>
+<main class="wrap">
+<div class="record-topbar">
+  <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Alkaloids</a> &middot; pyochelin II</p>
+  <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
+    <input type="search" name="q" placeholder="Search compounds…" autocomplete="off">
+    <button type="submit">Search</button>
+  </form>
+</div>
+<h1>pyochelin II</h1>
+<p class="sub"><span class="mono">CHEBI:67185</span>
+  <span class="tag">EXACT</span>
+  <span class="tag">REVIEWED</span>
+</p>
+<details class="status-legend"><summary>What these status tags mean</summary>
+<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/alkaloids/pyochelin-ii.yaml">record history</a>.</p>
+<p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
+</details>
+<p>A pyochelin that has S-stereochemistry at the thioaminal centre; the diastereoisomer with R-stereochemistry at this centre is pyochelin I. Pseudomonas aeruginosa produces a mixture of pyochelin I (major) and pyochelin I (minor) via condensation of salicylic acid and two molecules of cysteine. The enantiomeric compounds, enant-pyochelin I and II, are produced by Pseudomonas fluorescens.</p>
+<h2>Structure</h2>
+<div class="scroll"><table>
+<tr><th>Standard InChIKey</th><td class="mono">NYBZAGXTZXPYND-NRUUGDAUSA-N</td></tr>
+<tr><th>SMILES</th><td class="mono">[H][C@]1([C@]2([H])SC[C@@H](C(=O)O)N2C)CSC(c2ccccc2O)=N1</td></tr>
+<tr><th>Stereochemistry</th><td>fully defined</td></tr>
+</table></div>
+
+<h2>Filing pathway</h2>
+<p><a href="index.html">Alkaloids</a> —
+computed by NPClassifier npclassifier.gnps2.org@2026-10-30,
+which is why it is pinned rather than recomputed.
+ The gene cluster's asserted class is
+nrps, from MIBiG.</p>
+
+<h2>Producer organisms <span class="tag">1</span></h2>
+<p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
+what the evidence addressed — a knockout and a database assertion are not the
+same claim.</p>
+<div class="scroll"><table>
+<tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
+<tr>
+  <td>Pseudomonas aeruginosa PAO1<br>Strain: PAO1<br><span class="mono">NCBITaxon:208964</span></td>
+  <td><span class="tag causal">BGC_CHARACTERIZED</span></td>
+  <td class="mono">mibig:BGC0000412</td>
+  <td><details class="graph-evidence"><summary><span class="mono">PMID:9846750</span></summary><ul><li><dl><dt>reference</dt><dd>PMID:9846750</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Biosynthesis of the 2&#39;&#39;S diastereomer pyochelin II by Pseudomonas aeruginosa PAO1 via the genetically characterized pchDCBAEFGHI gene cluster (mibig:BGC0000412).</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+
+<h2 id="occurrences">Occurrences <span class="tag">0</span></h2>
+<p class="sub">None cited.</p>
+<h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
+<div class="scroll"><table>
+<tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
+<tr>
+  <td class="mono">mibig:BGC0000412</td>
+  <td>Pseudomonas aeruginosa PAO1<br><span class="mono">NCBITaxon:208964</span>
+</td>
+  <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
+  <td class="mono">genbank:AF074705.2</td>
+</tr>
+</table></div>
+<p class="sub">A locus claim and a taxon claim are different questions.
+Heterologous expression settles the first and leaves the second where the
+isolation report left it.</p>
+
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>PchA (isochorismate synthase), PchB (isochorismate pyruvate-lyase), and PchD (salicyl-AMP ligase)</td>
+  <td class="mono"></td>
+  <td class="mono">CHEBI:16914 &rarr; CHEBI:16914</td>
+  <td class="mono">PMID:9829942</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>PchE (NRPS), PchF (NRPS with methyltransferase and thioesterase domains), and PchG (thiazoline reductase)</td>
+  <td class="mono"></td>
+  <td class="mono">CHEBI:16914 + CHEBI:17561 + CHEBI:15414 &rarr; CHEBI:67185</td>
+  <td class="mono">PMID:9829942</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: Conversion of chorismate to salicylic acid by PchA/PchB and ATP-dependent adenylation to salicyl-AMP by PchD for loading onto the PchE NRPS.</p><p class="sub">Step 2: NRPS condensation and cyclodehydration of salicylate with two L-cysteine residues, NADPH-dependent thiazoline reduction by PchG, SAM-dependent N-methylation by PchF, and thioesterase release to yield pyochelin II.</p>
+<h2>Mechanism &amp; Biosynthesis Overview</h2>
+<div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
+  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for pyochelin II">
+    <defs>
+      <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+        <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
+      </marker>
+    </defs>
+    <rect x="14" y="24" width="186" height="98" rx="10" fill="var(--panel)" stroke="var(--rule)"/>
+    <text x="26" y="48" font-size="11" font-weight="700" fill="var(--muted)">PRODUCERS &amp; OCCURRENCE</text>
+    <text x="26" y="70" font-size="12.5" font-weight="600" fill="var(--ink)">1 producer (1 causal)</text>
+    <text x="26" y="92" font-size="11.5" fill="var(--muted)">0 cited occurrences</text>
+    <line x1="200" y1="73" x2="228" y2="73" stroke="var(--link)" stroke-width="1.8" marker-end="url(#np-arrow)"/>
+
+    <rect x="232" y="24" width="186" height="98" rx="10" fill="var(--panel)" stroke="var(--rule)"/>
+    <text x="244" y="48" font-size="11" font-weight="700" fill="var(--muted)">BIOSYNTHETIC LOCUS</text>
+    <text x="244" y="70" font-size="12.5" font-weight="600" fill="var(--ink)">1 gene cluster</text>
+    <text x="244" y="92" font-size="11.5" fill="var(--muted)">2 curated pathway steps</text>
+    <line x1="418" y1="73" x2="446" y2="73" stroke="var(--link)" stroke-width="1.8" marker-end="url(#np-arrow)"/>
+
+    <rect x="450" y="20" width="190" height="106" rx="10" fill="var(--panel)" stroke="var(--link)" stroke-width="1.8"/>
+    <text x="462" y="45" font-size="11" font-weight="700" fill="var(--link)">NATURAL PRODUCT</text>
+    <text x="462" y="68" font-size="12.5" font-weight="700" fill="var(--ink)">pyochelin II</text>
+    <text x="462" y="88" font-size="11" fill="var(--muted)">CHEBI:67185</text>
+    <text x="462" y="108" font-size="11" fill="var(--muted)">Alkaloids</text>
+    <line x1="640" y1="73" x2="668" y2="73" stroke="var(--link)" stroke-width="1.8" marker-end="url(#np-arrow)"/>
+
+    <rect x="672" y="24" width="174" height="98" rx="10" fill="var(--panel)" stroke="var(--rule)"/>
+    <text x="684" y="48" font-size="11" font-weight="700" fill="var(--muted)">TARGETS &amp; BIOACTIVITY</text>
+    <text x="684" y="70" font-size="12.5" font-weight="600" fill="var(--ink)">8 molecular targets</text>
+    <text x="684" y="92" font-size="11.5" fill="var(--muted)">0 bioactivities &middot; 1 graph</text>
+  </svg>
+</div>
+
+<h2>Causal graph &mdash; bioactivity <span class="tag">12 nodes, 11 edges</span></h2>
+<p class="sub">NRPS-directed biosynthesis of phenolate-thiazoline-thiazolidine metallophore pyochelin II by the pchDCBA/pchEFGHI cluster (BGC0000412) in Pseudomonas aeruginosa and chelation of Fe(III), CMM cations Ga(III), Co(II), Ni(II), VO(2+), and Cu(II)/Zn(II)/Mo(VI).</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>salicylic acid</td>
+  <td>substrate_of</td>
+  <td>pchDCBA/pchEFGHI biosynthetic gene cluster (BGC0000412)</td>
+  <td>Salicylic acid is activated by PchD to initiate pyochelin assembly.</td>
+  <td><details class="graph-evidence"><summary class="mono">PMID:9829942</summary><ul><li><dl><dt>reference</dt><dd>PMID:9829942</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>PchD activates salicylate as salicyl-AMP.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>L-cysteine</td>
+  <td>substrate_of</td>
+  <td>pchDCBA/pchEFGHI biosynthetic gene cluster (BGC0000412)</td>
+  <td>Two L-cysteine residues are condensed and heterocyclized by PchE and PchF into the thiazoline and N-methylthiazolidine rings.</td>
+  <td><details class="graph-evidence"><summary class="mono">PMID:9829942</summary><ul><li><dl><dt>reference</dt><dd>PMID:9829942</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>PchE and PchF incorporate two L-cysteine units to form the bis-heterocyclic core of pyochelin.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>pchDCBA/pchEFGHI biosynthetic gene cluster (BGC0000412)</td>
+  <td>synthesizes</td>
+  <td>pyochelin II</td>
+  <td>PchDEFG synthesize the diastereomeric mixture of pyochelin I and pyochelin II.</td>
+  <td><details class="graph-evidence"><summary class="mono">PMID:9829942</summary><ul><li><dl><dt>reference</dt><dd>PMID:9829942</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>In vitro reconstitution of pyochelin I and II synthesis by PchD, PchE, PchF, and PchG.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>pyochelin II</td>
+  <td>chelates</td>
+  <td>iron(3+)</td>
+  <td>Forms 2:1 [Fe(Pch)(HPch)] complex (Kf ~ 2 x 10^28 M^-2).</td>
+  <td><details class="graph-evidence"><summary class="mono">PMID:17608501</summary><ul><li><dl><dt>reference</dt><dd>PMID:17608501</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Pyochelin forms a 2:1 complex with Fe(III) and mediates high-efficiency FptA uptake.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>iron(3+)</td>
+  <td>enables</td>
+  <td>siderophore transport</td>
+  <td>Transported across the Pseudomonas aeruginosa outer membrane by TonB-dependent receptor FptA.</td>
+  <td><details class="graph-evidence"><summary class="mono">PMID:17608501</summary><ul><li><dl><dt>reference</dt><dd>PMID:17608501</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>FptA recognizes and transports ferric-pyochelin complexes.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>pyochelin II</td>
+  <td>chelates</td>
+  <td>gallium(3+)</td>
+  <td>[CMM] Forms 2:1 Ga(III)-pyochelin complex recognized and transported by FptA.</td>
+  <td><details class="graph-evidence"><summary class="mono">PMID:17608501</summary><ul><li><dl><dt>reference</dt><dd>PMID:17608501</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Ga(III)-pyochelin binds FptA and is imported into Pseudomonas aeruginosa.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>pyochelin II</td>
+  <td>chelates</td>
+  <td>cobalt(2+)</td>
+  <td>[CMM] Chelates Co(II) and mediates lower-rate FptA-dependent cobalt uptake.</td>
+  <td><details class="graph-evidence"><summary class="mono">PMID:17608501</summary><ul><li><dl><dt>reference</dt><dd>PMID:17608501</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Co(II)-pyochelin binds FptA and mediates Co(II) uptake in P. aeruginosa.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>pyochelin II</td>
+  <td>chelates</td>
+  <td>nickel(2+)</td>
+  <td>[CMM] Chelates Ni(II) and mediates lower-rate FptA-dependent nickel uptake.</td>
+  <td><details class="graph-evidence"><summary class="mono">PMID:17608501</summary><ul><li><dl><dt>reference</dt><dd>PMID:17608501</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Ni(II)-pyochelin binds FptA and mediates Ni(II) uptake in P. aeruginosa.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>pyochelin II</td>
+  <td>chelates</td>
+  <td>oxidovanadium(2+)</td>
+  <td>[CMM] Coordinates oxidovanadium(2+) in solution (binds FptA without active nutrition).</td>
+  <td><details class="graph-evidence"><summary class="mono">PMID:17608501</summary><ul><li><dl><dt>reference</dt><dd>PMID:17608501</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>VO(2+)-pyochelin complex formation and FptA binding in P. aeruginosa.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>pyochelin II</td>
+  <td>chelates</td>
+  <td>copper(2+)</td>
+  <td>Coordinates Cu(II) in 2:1 stoichiometry in solution.</td>
+  <td><details class="graph-evidence"><summary class="mono">PMID:17608501</summary><ul><li><dl><dt>reference</dt><dd>PMID:17608501</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Cu(II)-pyochelin complex formation in solution.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>pyochelin II</td>
+  <td>chelates</td>
+  <td>zinc(2+)</td>
+  <td>Coordinates Zn(II) in 2:1 stoichiometry in solution.</td>
+  <td><details class="graph-evidence"><summary class="mono">PMID:17608501</summary><ul><li><dl><dt>reference</dt><dd>PMID:17608501</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Zn(II)-pyochelin complex formation in solution.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+
+<h2>Molecular targets <span class="tag">8</span></h2>
+<div class="scroll"><table>
+<tr><th>Target</th><th>Target organism</th><th>Measurement</th><th>Evidence</th></tr>
+<tr>
+  <td>iron(3+)<br><span class="mono">OTHER BINDS</span><p class="graph-evidence sub">Primary physiological ferric ion chelation via tetradentate phenolate, thiazoline-N, thiazolidine-N, and carboxylate coordination (forming 2:1 [Fe(Pch)(HPch)] complexes, Kf ~ 2 x 10^28 M^-2) transported via the FptA outer membrane receptor.</p></td>
+  <td></td>
+  <td></td>
+  <td><details class="graph-evidence target-evidence"><summary class="mono">PMID:9829942<br>PMID:17608501</summary><ul><li><dl><dt>reference</dt><dd>PMID:9829942</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Reconstitution of pyochelin biosynthesis from salicylate and two L-cysteine molecules by PchD, PchE, PchF, and PchG in Pseudomonas aeruginosa.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>PMID:17608501</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Pyochelin chelates Fe(III) in a 2:1 stoichiometry with one tetradentate and one bidentate ligand and mediates FptA-dependent iron uptake.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>gallium(3+)<br><span class="mono">OTHER BINDS</span><p class="graph-evidence sub">[Critical Mineral &amp; Material (CMM)] Chelation of trivalent gallium(3+) in solution and crystal structures with FptA; Ga(III)-pyochelin binds FptA and mediates gallium uptake.</p></td>
+  <td></td>
+  <td></td>
+  <td><details class="graph-evidence target-evidence"><summary class="mono">PMID:17608501</summary><ul><li><dl><dt>reference</dt><dd>PMID:17608501</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Ga(III) forms stable complexes with pyochelin and enables FptA outer-membrane receptor recognition in Pseudomonas aeruginosa.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>cobalt(2+)<br><span class="mono">OTHER BINDS</span><p class="graph-evidence sub">[Critical Mineral &amp; Material (CMM)] Chelation of divalent cobalt(2+) in solution; Co(II)-pyochelin binds the FptA outer membrane receptor and promotes measurable Co(II) accumulation in Pseudomonas aeruginosa, though at lower efficiency than Fe(III).</p></td>
+  <td></td>
+  <td></td>
+  <td><details class="graph-evidence target-evidence"><summary class="mono">PMID:17608501</summary><ul><li><dl><dt>reference</dt><dd>PMID:17608501</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Pyochelin chelates Co(II) and Ni(II) in solution and promotes their FptA-mediated uptake into Pseudomonas aeruginosa.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>nickel(2+)<br><span class="mono">OTHER BINDS</span><p class="graph-evidence sub">[Critical Mineral &amp; Material (CMM)] Chelation of divalent nickel(2+) in solution; Ni(II)-pyochelin binds FptA and promotes measurable Ni(II) uptake in Pseudomonas aeruginosa at lower efficiency than Fe(III).</p></td>
+  <td></td>
+  <td></td>
+  <td><details class="graph-evidence target-evidence"><summary class="mono">PMID:17608501</summary><ul><li><dl><dt>reference</dt><dd>PMID:17608501</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Ni(II)-pyochelin complexes bind FptA and mediate nickel uptake in Pseudomonas aeruginosa.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>oxidovanadium(2+)<br><span class="mono">OTHER BINDS</span><p class="graph-evidence sub">[Critical Mineral &amp; Material (CMM)] Coordination of vanadyl / oxidovanadium(2+) in solution (1:2 complex, measured in vitro; binds FptA without supporting physiological iron nutrition).</p></td>
+  <td></td>
+  <td></td>
+  <td><details class="graph-evidence target-evidence"><summary class="mono">PMID:17608501</summary><ul><li><dl><dt>reference</dt><dd>PMID:17608501</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Pyochelin forms complexes with VO(2+), Cu(II), Zn(II), and Mo(VI) in solution with distinct FptA receptor transport activities.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>copper(2+)<br><span class="mono">OTHER BINDS</span><p class="graph-evidence sub">Coordination of divalent copper(2+) in solution (2:1 ligand:metal stoichiometry, measured in vitro; binds FptA with limited intracellular transport).</p></td>
+  <td></td>
+  <td></td>
+  <td><details class="graph-evidence target-evidence"><summary class="mono">PMID:17608501</summary><ul><li><dl><dt>reference</dt><dd>PMID:17608501</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Spectrophotometric characterization of Cu(II)-pyochelin complexes and evaluation of FptA binding in Pseudomonas aeruginosa.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>zinc(2+)<br><span class="mono">OTHER BINDS</span><p class="graph-evidence sub">Coordination of divalent zinc(2+) in solution (2:1 ligand:metal stoichiometry, measured in vitro; binds FptA without active transport).</p></td>
+  <td></td>
+  <td></td>
+  <td><details class="graph-evidence target-evidence"><summary class="mono">PMID:17608501</summary><ul><li><dl><dt>reference</dt><dd>PMID:17608501</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Spectrophotometric characterization of Zn(II)-pyochelin complexes and FptA receptor binding in Pseudomonas aeruginosa.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>molybdenum(6+)<br><span class="mono">OTHER BINDS</span><p class="graph-evidence sub">In vitro complexation of molybdate / molybdenum(6+) in aqueous solution.</p></td>
+  <td></td>
+  <td></td>
+  <td><details class="graph-evidence target-evidence"><summary class="mono">PMID:17608501</summary><ul><li><dl><dt>reference</dt><dd>PMID:17608501</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Pyochelin coordinates Mo(VI) in solution alongside divalent and trivalent transition metal ions.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+
+
+
+<h2>Explore across X-Mech</h2>
+<div class="cross-mech-links">
+  <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=NYBZAGXTZXPYND-NRUUGDAUSA-N">AntibioticMech (pyochelin II) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=CHEBI%3A67185">MediaIngredientMech (CHEBI:67185) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A208964">TaxonMech: Pseudomonas aeruginosa PAO1 (NCBITaxon:208964) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000412">PathwayMech (mibig:BGC0000412) &nearr;</a>
+</div>
+
+
+<h2>Provenance</h2>
+<div class="scroll"><table>
+<tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
+<tr><td class="mono">CHEBI:67185</td><td>CHEBI</td><td>3-star</td></tr>
+</table></div>
+<p class="sub">This page is generated from
+<a class="mono" href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/natural_products/alkaloids/pyochelin-ii.yaml">data/natural_products/alkaloids/pyochelin-ii.yaml</a>, which is generated from the
+committed inventories. Neither is edited by hand.</p>
+</main>
+<footer class="site"><div class="wrap">
+  <p>Generated from the committed corpus (3126 records · from sources retrieved 2026-10-30 · corpus SHA-256 82566e4d06e9). Every page is derived; edit the
+  record or the extractor, never the page.
+  Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
+  <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>
+</div></footer>
+</body>
+</html>

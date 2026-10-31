@@ -235,6 +235,24 @@ The first decision removes a geldanamycin assay-comparator association from
 Humicola fuscoatra; it does not remove the paper's actual fungal metabolites.
 Canary, reproduction and full QC remain required.
 
+## Curated literature-backed ChEBI compounds
+
+`curation/curated_compounds.tsv` seeds an unambiguous 3-star ChEBI compound
+(`data/raw/chebi_structures.tsv`) that is not already owned by an active MIBiG
+compound row, when primary literature establishes microbial biosynthesis by a
+named taxon. Each row requires `chebi_id`, the complete parsed ChEBI row's
+`expected_chebi_row_sha256` (computed with `row_digest`), RDKit-derived
+`standard_inchi`, `standard_inchi_key` and `stereo_complete`, the producing
+`taxon_id` and `taxon_label`, optional `strain`, `producer_evidence_basis`
+(`BGC_CHARACTERIZED`, `ISOTOPE_FEEDING` or `AXENIC_CULTURE`), optional
+`mibig_accession`, a stable DOI/PMID `reference`, `evidence_type`
+(`PRIMARY_EXPERIMENT` or `REVIEW`), optional verbatim `snippet`, `notes`,
+`curator` and ISO `date`. Missing or ambiguous ChEBI rows, ChEBI digest drift,
+already-occupied InChIKeys, duplicate `(standard_inchi_key, taxon_id, strain, reference)`
+claims, or inconsistent chemistry across multiple producer rows for the same
+compound stop seeding. `extract_npclassifier.py` also includes structures from
+this table.
+
 ## What a re-seed keeps, and what it overwrites
 
 The corpus is generated, so a re-seed rebuilds every record. What it does *not*
@@ -244,7 +262,7 @@ cannot inherit another compound's curation:
 
 | carried | why |
 |---|---|
-| `biosynthetic_pathway`, `causal_graphs`, `causal_graph_refs` | M6 curation; the seeder does not produce them at all |
+| `ecological_roles`, `biosynthetic_pathway`, `causal_graphs`, `causal_graph_refs` | M6 curation; the seeder does not produce them at all |
 | `molecular_targets` items with `source: CURATOR` | explicit curator ownership; appended after freshly rebuilt imported targets |
 | `curation_history` | the trail, and re-stamped only when seeder-owned content changed |
 | `curation_status` when it is not `SEEDED` | only a curator moves a record off `SEEDED`, so only a curator can move it back |

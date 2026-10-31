@@ -46,6 +46,7 @@ MIBIG_INVENTORY = RAW_DIR / "mibig_compounds.tsv"
 INVENTORY_NAME = "npclassifier.tsv"
 
 sys.path.insert(0, str(REPO_ROOT / "src"))
+from naturalproductmech.curate.curated_compounds import load_curated_compounds  # noqa: E402
 from naturalproductmech.curate.structure_corrections import apply_structure_corrections  # noqa: E402
 
 API = "https://npclassifier.gnps2.org/classify"
@@ -73,17 +74,26 @@ def structures_needing_classification() -> dict[str, str]:
     if MIBIG_INVENTORY.exists():
         with MIBIG_INVENTORY.open(newline="", encoding="utf-8") as fh:
             rows = list(csv.DictReader(fh, delimiter="\t"))
+    chebi = []
+    if (RAW_DIR / "chebi_structures.tsv").exists():
+        with (RAW_DIR / "chebi_structures.tsv").open(newline="", encoding="utf-8") as fh:
+            chebi = list(csv.DictReader(fh, delimiter="\t"))
     corrections_path = REPO_ROOT / "curation" / "mibig_structure_corrections.tsv"
     if corrections_path.exists():
         with corrections_path.open(newline="", encoding="utf-8") as fh:
             corrections = list(csv.DictReader(fh, delimiter="\t"))
-        with (RAW_DIR / "chebi_structures.tsv").open(newline="", encoding="utf-8") as fh:
-            chebi = list(csv.DictReader(fh, delimiter="\t"))
         rows = apply_structure_corrections(rows, corrections, chebi)
     for row in rows:
         key, smiles = row["standard_inchi_key"], row["smiles"]
         if key and smiles:
             wanted.setdefault(key, smiles)
+    curated_path = REPO_ROOT / "curation" / "curated_compounds.tsv"
+    if curated_path.exists():
+        with curated_path.open(newline="", encoding="utf-8") as fh:
+            curated = list(csv.DictReader(fh, delimiter="\t"))
+        chebi_by_id = {row["chebi_id"]: row for row in chebi}
+        for key, curated_rows in load_curated_compounds(curated, chebi, rows).items():
+            wanted.setdefault(key, chebi_by_id[curated_rows[0]["chebi_id"]]["smiles"])
     return wanted
 
 
