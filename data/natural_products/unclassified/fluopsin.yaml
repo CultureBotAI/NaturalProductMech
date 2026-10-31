@@ -1,0 +1,306 @@
+identifier: CHEBI:231919
+label: fluopsin
+chemical_structure:
+  smiles: CN(O)C=S
+  standard_inchi: InChI=1S/C2H5NOS/c1-3(4)2-5/h2,4H,1H3
+  standard_inchi_key: LSLVHNSGLHQBDX-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: CHEBI
+  structure_source_id: CHEBI:231919
+np_pathway: UNCLASSIFIED
+biosynthesis_origin: NATURAL_PRODUCT
+definition: A thiocarbonyl compound that is ammonia in which the hydrogens are substituted
+  by methyl, hydroxy, and carbonothioyl groups.
+definition_source: CHEBI:231919
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-10-30
+  pathway_results:
+  - Amino acids and Peptides
+  - Shikimates and Phenylpropanoids
+  superclass_results:
+  - Small peptides
+  class_results:
+  - Aminoacids
+  is_glycoside: false
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:231919
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: 74f6cc8362498900f2fe2c13d0b6fdb66dd30976
+bioactivity_summary:
+- ANTIBACTERIAL
+producer_taxon_groups:
+- OTHER_BACTERIAL
+producer_organisms:
+- taxon_id: NCBITaxon:208964
+  taxon_label: Pseudomonas aeruginosa PAO1
+  evidence_basis: BGC_CHARACTERIZED
+  source: CURATOR
+  notes: 'In-frame deletion and in vitro enzymatic reconstitution of the flcA-flcE
+    operon (PA3515-PA3519) in Pseudomonas aeruginosa PAO1 demonstrate biosynthesis
+    of the metal-free thiohydroxamate chelator fluopsin (N-methyl-N-hydroxythioformamide).
+    Curator: naturalproductmech-agent; date: 2026-10-30.'
+  evidence:
+  - reference: PMID:34793213
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: In-frame deletion and in vitro enzymatic reconstitution of the flcA-flcE
+      operon (PA3515-PA3519) in Pseudomonas aeruginosa PAO1 demonstrate biosynthesis
+      of the metal-free thiohydroxamate chelator fluopsin (N-methyl-N-hydroxythioformamide).
+  strain: PAO1
+source_concepts:
+- source: CHEBI
+  source_id: CHEBI:231919
+  source_label: fluopsin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-51c373e7fa
+grounding_status: EXACT
+curation_status: REVIEWED
+molecular_targets:
+- target_id: CHEBI:29036
+  target_label: copper(2+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: Primary physiological copper(2+) chelation via two N-methyl-N-hydroxylthioamide
+    (thiohydroxamate) ligands to form the square-planar bis(N-methyl-N-hydroxythioformamide)copper(II)
+    complex fluopsin C (YC 73); induced under excess copper for detoxification and
+    antimicrobial defense.
+  evidence:
+  - reference: PMID:34793213
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Pseudomonas aeruginosa synthesizes the thiohydroxamate ligand N-methyl-N-hydroxythioformamide
+      (fluopsin) via the flcA-flcE gene cluster (PA3515-PA3519) in response to elevated
+      copper, forming the copper complex fluopsin C.
+  - reference: PMID:5549384
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Structure elucidation and total synthesis of thioformin (N-methyl-N-hydroxythioformamide)
+      and its cupric complex YC 73 (fluopsin C) from Pseudomonas.
+- target_id: CHEBI:29034
+  target_label: iron(3+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: Chelation of ferric iron(3+) in a 3:1 ligand:metal stoichiometry to form
+    the octahedral tris(N-methyl-N-hydroxythioformamide)iron(III) complex fluopsin
+    F in culture broth.
+  evidence:
+  - reference: PMID:4927254
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Synthesis and characterization of metal complexes of thioformin (N-methyl-N-hydroxythioformamide),
+      including the ferric complex fluopsin F.
+  - reference: PMID:34793213
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: The thiohydroxamate monomer synthesized by the flcA-flcE pathway chelates
+      both Cu(II) (fluopsin C) and Fe(III) (fluopsin F).
+- target_id: CHEBI:49786
+  target_label: nickel(2+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: '[Critical Mineral & Material (CMM)] Square-planar bis-thiohydroxamate coordination
+    of divalent nickel(2+) in vitro (2:1 ligand:Ni(II) complex formed by synthetic
+    complexation with the N-methyl-N-hydroxylthioamide ligand).'
+  evidence:
+  - reference: PMID:4927254
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Preparation and characterization of transition-metal chelate complexes
+      of thioformin (N-methyl-N-hydroxythioformamide) including Ni(II), Co(II), Cu(II),
+      Fe(III), and Zn(II).
+- target_id: CHEBI:48828
+  target_label: cobalt(2+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: '[Critical Mineral & Material (CMM)] Coordination of cobalt(2+) by the N-methyl-N-hydroxylthioamide
+    ligand in vitro (secondary non-physiological complexation relative to Cu(II) and
+    Fe(III)).'
+  evidence:
+  - reference: PMID:4927254
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Preparation and characterization of transition-metal chelate complexes
+      of thioformin across divalent and trivalent metal cations.
+- target_id: CHEBI:29105
+  target_label: zinc(2+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: Bidentate S,O-coordination of divalent zinc(2+) by the thiohydroxamate ligand
+    in vitro.
+  evidence:
+  - reference: PMID:4927254
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Preparation and characterization of metal complexes of thioformin (fluopsin
+      ligand).
+ecological_roles:
+- CHEBI:26672
+- CHEBI:38161
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_label: FlcA-FlcE (PA3515-PA3519 biosynthetic enzymes)
+  substrates:
+  - CHEBI:17561
+  - CHEBI:15414
+  products:
+  - CHEBI:231919
+  notes: Conjugation of L-cysteine and fumarate followed by lyase cleavage, N-hydroxylation,
+    and SAM-dependent N-methylation to yield the free thiohydroxamate monomer fluopsin
+    (N-methyl-N-hydroxythioformamide).
+  evidence:
+  - reference: PMID:34793213
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Genetic and biochemical characterization of the flcA-flcE (PA3515-PA3519)
+      operon in Pseudomonas aeruginosa establishes L-cysteine-derived biosynthesis
+      of the thiohydroxamate chelator and its Cu(II) complex fluopsin C.
+causal_graphs:
+- graph_id: fluopsin_biosynthesis_and_metal_chelation
+  scope: BIOACTIVITY
+  description: Copper-inducible biosynthesis of the thiohydroxamate metallophore fluopsin
+    (N-methyl-N-hydroxythioformamide) from L-cysteine via the flcA-flcE (PA3515-PA3519)
+    operon in Pseudomonas spp. and bidentate S,O-chelation of Cu(II) (forming fluopsin
+    C), Fe(III) (forming fluopsin F), and CMM cations Ni(II) and Co(II).
+  nodes:
+  - node_id: l_cysteine
+    label: L-cysteine
+    node_type: PRECURSOR
+    identifier: CHEBI:17561
+    grounding_status: GROUNDED
+  - node_id: sam
+    label: S-adenosyl-L-methionine
+    node_type: PRECURSOR
+    identifier: CHEBI:15414
+    grounding_status: GROUNDED
+  - node_id: flc_cluster
+    label: flcA-flcE (PA3515-PA3519) biosynthetic operon
+    node_type: GENE_CLUSTER
+    grounding_status: UNGROUNDED
+  - node_id: fluopsin
+    label: fluopsin
+    node_type: COMPOUND
+    identifier: CHEBI:231919
+    grounding_status: GROUNDED
+  - node_id: cu2
+    label: copper(2+)
+    node_type: OTHER
+    identifier: CHEBI:29036
+    grounding_status: GROUNDED
+  - node_id: fluopsin_c
+    label: fluopsin C
+    node_type: COMPOUND
+    identifier: CHEBI:222417
+    grounding_status: GROUNDED
+  - node_id: fe3
+    label: iron(3+)
+    node_type: OTHER
+    identifier: CHEBI:29034
+    grounding_status: GROUNDED
+  - node_id: ni2
+    label: nickel(2+)
+    node_type: OTHER
+    identifier: CHEBI:49786
+    grounding_status: GROUNDED
+  - node_id: co2
+    label: cobalt(2+)
+    node_type: OTHER
+    identifier: CHEBI:48828
+    grounding_status: GROUNDED
+  - node_id: copper_transport
+    label: copper ion transport
+    node_type: PROCESS
+    identifier: GO:0006825
+    grounding_status: GROUNDED
+  edges:
+  - subject: l_cysteine
+    predicate: substrate_of
+    object: flc_cluster
+    notes: L-cysteine donates the sulfur and nitrogen atoms of the thiohydroxamate
+      group.
+    evidence:
+    - reference: PMID:34793213
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Enzymatic reconstitution shows L-cysteine is the precursor of the fluopsin
+        thiohydroxamate core.
+  - subject: sam
+    predicate: substrate_of
+    object: flc_cluster
+    notes: SAM provides the N-methyl group of N-methyl-N-hydroxythioformamide.
+    evidence:
+    - reference: PMID:34793213
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: SAM-dependent methyltransferase activity in the flcA-flcE operon installs
+        the N-methyl substituent.
+  - subject: flc_cluster
+    predicate: synthesizes
+    object: fluopsin
+    notes: Produces the monomeric thiohydroxamate ligand fluopsin.
+    evidence:
+    - reference: PMID:34793213
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: The flcA-flcE operon synthesizes the monomeric thiohydroxamate ligand
+        in Pseudomonas aeruginosa.
+  - subject: fluopsin
+    predicate: chelates
+    object: cu2
+    notes: Two equivalents of fluopsin coordinate Cu(II) via S,O-donor atoms.
+    evidence:
+    - reference: PMID:34793213
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Two thiohydroxamate monomers coordinate one Cu(II) ion to yield fluopsin
+        C.
+  - subject: cu2
+    predicate: forms_complex
+    object: fluopsin_c
+    notes: Yields the neutral bis(thiohydroxamato)copper(II) complex fluopsin C.
+    evidence:
+    - reference: PMID:5549384
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Fluopsin C (YC 73) is the 2:1 thioformin:Cu(II) coordination complex.
+  - subject: fluopsin_c
+    predicate: regulates
+    object: copper_transport
+    notes: Protects Pseudomonas aeruginosa against copper toxicity and mediates copper
+      homeostasis.
+    evidence:
+    - reference: PMID:34793213
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Deletion of the flcA-flcE operon sensitizes P. aeruginosa to elevated
+        copper concentrations.
+  - subject: fluopsin
+    predicate: chelates
+    object: fe3
+    notes: Three equivalents of fluopsin coordinate Fe(III) to form tris(thiohydroxamato)iron(III)
+      (fluopsin F).
+    evidence:
+    - reference: PMID:4927254
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Fluopsin F is the 3:1 thioformin:Fe(III) complex.
+  - subject: fluopsin
+    predicate: chelates
+    object: ni2
+    notes: '[CMM] In vitro bidentate S,O-coordination of divalent nickel(2+).'
+    evidence:
+    - reference: PMID:4927254
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Formation of divalent metal bis-thiohydroxamate complexes in solution.
+  - subject: fluopsin
+    predicate: chelates
+    object: co2
+    notes: '[CMM] In vitro bidentate S,O-coordination of cobalt(2+).'
+    evidence:
+    - reference: PMID:4927254
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Formation of transition-metal thiohydroxamate complexes in solution.
+curation_history:
+- timestamp: '2026-10-31T03:56:14Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-31T06:14:53Z'
+  curator: naturalproductmech-agent
+  action: RECORD_CURATED
+  changes: Curated ecological_roles, metal-binding molecular_targets (including explicit
+    Critical Mineral & Material [CMM] annotations and primary literature evidence),
+    biosynthetic_pathway steps, and connected causal_graphs; promoted curation_status
+    to REVIEWED.
+  llm_assisted: true

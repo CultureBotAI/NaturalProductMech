@@ -71,6 +71,7 @@ from naturalproductmech.curate.claim_references import (  # noqa: E402
     correct_claim_reference,
     load_claim_references,
 )
+from naturalproductmech.curate.curated_compounds import load_curated_compounds  # noqa: E402
 from naturalproductmech.curate.curation_event import record_curation_event  # noqa: E402
 from naturalproductmech.curate.lotus_exclusions import (  # noqa: E402
     load_lotus_exclusions,
@@ -112,6 +113,7 @@ MIBIG_XREF_EXCLUSIONS = CURATION_DIR / "mibig_xref_exclusions.tsv"
 MIBIG_CLAIM_REFERENCES = CURATION_DIR / "mibig_claim_references.tsv"
 PUBCHEM_BIOASSAY_EXCLUSIONS = CURATION_DIR / "pubchem_bioassay_exclusions.tsv"
 LOTUS_OCCURRENCE_EXCLUSIONS = CURATION_DIR / "lotus_occurrence_exclusions.tsv"
+CURATED_COMPOUNDS = CURATION_DIR / "curated_compounds.tsv"
 
 # MIBiG's cluster vocabulary -> the schema enum. Six values in 4.0; `alkaloid`
 # was removed when compound classification was split from cluster
@@ -311,6 +313,7 @@ def choose_pathway(pathway_results: list[str]) -> str:
 INTERNAL_PREFIX = "_"
 
 CURATOR_OWNED_CARRIED_FIELDS = (
+    "ecological_roles",
     "biosynthetic_pathway",
     "causal_graphs",
     "causal_graph_refs",
@@ -461,6 +464,8 @@ def read_inventories() -> dict[str, list[dict[str, str]]]:
         inventories[PUBCHEM_BIOASSAY_EXCLUSIONS.stem] = read_tsv(PUBCHEM_BIOASSAY_EXCLUSIONS)
     if LOTUS_OCCURRENCE_EXCLUSIONS.exists():
         inventories[LOTUS_OCCURRENCE_EXCLUSIONS.stem] = read_tsv(LOTUS_OCCURRENCE_EXCLUSIONS)
+    if CURATED_COMPOUNDS.exists():
+        inventories[CURATED_COMPOUNDS.stem] = read_tsv(CURATED_COMPOUNDS)
     return inventories
 
 
@@ -825,7 +830,12 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
     for identifier, override in mibig_locus_overrides.items():
         if override.get("action") == "WITHDRAW" and source_counts[identifier] != 1:
             raise ValueError(f"{identifier} WITHDRAW requires exactly one matching source row")
-    if not mibig_rows:
+    curated_by_key = load_curated_compounds(
+        inventories.get("curated_compounds") or [],
+        inventories.get("chebi_structures") or [],
+        mibig_rows,
+    )
+    if not mibig_rows and not curated_by_key:
         if lotus_exclusions:
             raise ValueError("LOTUS exclusions did not reach a record")
         if assay_exclusions:
@@ -835,6 +845,11 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
         apply_mibig_locus_evidence_override(row, mibig_locus_overrides, source_row=raw)
         for row, raw in zip(mibig_rows, raw_mibig_rows, strict=True)
     ]
+    mibig_by_acc: dict[str, dict[str, str]] = {}
+    for row in mibig_rows:
+        acc = row.get("mibig_accession")
+        if acc and acc not in mibig_by_acc:
+            mibig_by_acc[acc] = row
 
     classification = {
         row["standard_inchi_key"]: row
@@ -1636,6 +1651,436 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
             doc["_split_structure_correction"] = True
         records.append(doc)
 
+    for key, curated_rows in sorted(curated_by_key.items()):
+        lead = curated_rows[0]
+        identifier = lead["chebi_id"]
+        chebi_match = chebi_by_id[identifier]
+        label = chebi_match["name"]
+
+        classified = classification.get(key)
+        pathway_results = [
+            x for x in (classified["pathway_results"].split("|") if classified else []) if x
+        ]
+        pathway = choose_pathway(pathway_results)
+
+        doc = {
+            "identifier": identifier,
+            "label": label,
+            "chemical_structure": {
+                "smiles": chebi_match["smiles"],
+                "standard_inchi": lead["standard_inchi"],
+                "standard_inchi_key": key,
+                "stereo_complete": lead["stereo_complete"] == "true",
+                "structure_source": "CHEBI",
+                "structure_source_id": identifier,
+            },
+            "np_pathway": pathway,
+            "biosynthesis_origin": "NATURAL_PRODUCT",
+        }
+        if chebi_match["definition"]:
+            doc["definition"] = chebi_match["definition"]
+            doc["definition_source"] = identifier
+        if classified:
+            doc["np_classification"] = {
+                "tool": "NPClassifier",
+                "tool_version": classified["model_version"],
+                "pathway_results": pathway_results,
+                "superclass_results": [
+                    x for x in classified["superclass_results"].split("|") if x
+                ],
+                "class_results": [x for x in classified["class_results"].split("|") if x],
+                "is_glycoside": classified["is_glycoside"] == "true",
+            }
+
+        producers = []
+        clusters: list[dict[str, Any]] = []
+        bgc_classes: list[str] = []
+        seen_clusters: set[tuple[str, str]] = set()
+        for row in curated_rows:
+            host = merges.get(row["taxon_id"], row["taxon_id"])
+            reason = non_organism.get(host)
+            if reason:
+                raise ValueError(
+                    f"{identifier}: curated producer taxon {row['taxon_id']} ({host}) "
+                    f"is non-organism ({reason})"
+                )
+            evidence_item: dict[str, Any] = {
+                "reference": row["reference"],
+                "evidence_type": row["evidence_type"],
+            }
+            if row["snippet"]:
+                evidence_item["snippet"] = row["snippet"]
+            evidence_item["notes"] = row["notes"]
+            producer: dict[str, Any] = {
+                "taxon_id": row["taxon_id"],
+                "taxon_label": row["taxon_label"],
+                "evidence_basis": row["producer_evidence_basis"],
+                "source": "CURATOR",
+                "notes": f"{row['notes']} Curator: {row['curator']}; date: {row['date']}.",
+                "evidence": [evidence_item],
+            }
+            if row["strain"]:
+                producer["strain"] = row["strain"]
+            if row["mibig_accession"]:
+                producer["biosynthetic_gene_cluster"] = f"mibig:{row['mibig_accession']}"
+            rewrite_merged_taxon(
+                producer, "taxon_id", merges, taxon_rewrites, "CURATOR", note=True)
+            producers.append(producer)
+            if row["mibig_accession"]:
+                acc = row["mibig_accession"]
+                cluster_key = (acc, producer["taxon_id"])
+                if cluster_key not in seen_clusters:
+                    seen_clusters.add(cluster_key)
+                    mibig_ref = mibig_by_acc.get(acc)
+                    cluster: dict[str, Any] = {
+                        "accession": f"mibig:{acc}",
+                    }
+                    if mibig_ref and mibig_ref.get("entry_version"):
+                        cluster["entry_version"] = mibig_ref["entry_version"]
+                    if mibig_ref and mibig_ref.get("entry_status"):
+                        cluster["entry_status"] = mibig_ref["entry_status"]
+                    cluster["organism_taxon_id"] = producer["taxon_id"]
+                    cluster["organism_label"] = producer["taxon_label"]
+                    cluster["evidence"] = [deepcopy(evidence_item)]
+                    if mibig_ref and mibig_ref.get("genome_accession"):
+                        cluster["genome_accession"] = f"genbank:{mibig_ref['genome_accession']}"
+                    if mibig_ref:
+                        for field, column in (("locus_from", "locus_from"), ("locus_to", "locus_to")):
+                            val = mibig_ref.get(column) or ""
+                            if val.isdigit() and int(val) > 0:
+                                cluster[field] = int(val)
+                        c_classes = []
+                        for value in (mibig_ref.get("bgc_classes") or "").split("|"):
+                            mapped = BGC_CLASS_MAP.get(value.strip())
+                            if mapped:
+                                if mapped not in c_classes:
+                                    c_classes.append(mapped)
+                                if mapped not in bgc_classes:
+                                    bgc_classes.append(mapped)
+                        if c_classes:
+                            cluster["bgc_class"] = c_classes
+                        methods = [
+                            m for m in (mibig_ref.get("locus_evidence_methods") or "").split("|") if m
+                        ]
+                        if methods:
+                            cluster["locus_evidence_methods"] = methods
+                    cluster["link_evidence_basis"] = (
+                        "CLUSTER_DEMONSTRATED"
+                        if row["producer_evidence_basis"] == "BGC_CHARACTERIZED"
+                        else "CLUSTER_CORRELATED"
+                    )
+                    clusters.append(cluster)
+
+        source_concepts = [{
+            "source": "CHEBI",
+            "source_id": chebi_match["chebi_id"],
+            "source_label": chebi_match["name"],
+            "source_version": f"{chebi_match['stars']}-star",
+            "minted_identifier": mint_identifier("CHEBI", chebi_match["chebi_id"]),
+        }]
+
+        occurrences = []
+        for origin in origins_by_chebi.get(identifier) or []:
+            occurrence = {
+                "taxon_label": origin["species_text"],
+                "source": "CHEBI",
+                "evidence": [{
+                    "reference": f"PMID:{origin['source_accession']}"
+                    if origin["source_accession"].isdigit() else origin["source_accession"],
+                    "evidence_type": "DATABASE_ASSERTION",
+                    "notes": f"ChEBI compound origin for {identifier}",
+                }],
+            }
+            if not re.match(r"^(?:\d+$|PMID:|DOI:|https://)", origin["source_accession"]):
+                occurrence["evidence"][0].update({
+                    "reference": f"https://www.ebi.ac.uk/chebi/{identifier}",
+                    "notes": (f"ChEBI compound origin for {identifier}; "
+                              f"source bibliography: {origin['source_accession']}"),
+                })
+            if origin["species_accession"].isdigit():
+                occurrence["taxon_id"] = f"NCBITaxon:{origin['species_accession']}"
+                occurrence["taxon_source"] = "NCBITaxon"
+                rewrite_merged_taxon(occurrence, "taxon_id", merges, taxon_rewrites, "ChEBI", note=True)
+            if origin["strain_text"]:
+                occurrence["detection_context"] = origin["strain_text"]
+            context = " ".join(x for x in (origin["component_text"], origin["comments"]) if x)
+            if context:
+                occurrence["notes"] = context[:400]
+            occurrences.append(occurrence)
+
+        excluded_lotus = []
+        for row in lotus_by_key.get(key) or []:
+            row_key = lotus_key(row)
+            if row_key in lotus_exclusions:
+                excluded_lotus.append(lotus_exclusions[row_key])
+                applied_lotus_exclusions.add(row_key)
+                continue
+            occurrence = {
+                "taxon_id": row["taxon_id"],
+                "taxon_label": row["organism_name"],
+                "taxon_source": "NCBITaxon",
+                "source": "LOTUS",
+                "evidence": [{
+                    "reference": f"DOI:{row['reference_doi']}",
+                    "evidence_type": "DATABASE_ASSERTION",
+                    "notes": (
+                        "LOTUS structure-organism-reference triple. LOTUS reports that "
+                        "the compound was found in the organism; it does not assert that "
+                        "the organism produces it."
+                    ),
+                }],
+            }
+            if row["organism_wikidata"]:
+                occurrence["notes"] = f"Wikidata organism {row['organism_wikidata']}"
+            rewrite_merged_taxon(occurrence, "taxon_id", merges, taxon_rewrites, "LOTUS", note=True)
+            occurrences.append(occurrence)
+
+        for row in cyano_by_key.get(key) or []:
+            occurrence = {
+                "taxon_id": row["taxon_id"],
+                "taxon_label": row["taxon_label"],
+                "taxon_source": "NCBITaxon",
+                "source": "CYANOMETDB",
+                "evidence": [{
+                    "reference": row["reference"],
+                    "evidence_type": "DATABASE_ASSERTION",
+                    "notes": (
+                        "CyanoMetDB isolation report, manually curated from the primary "
+                        "literature"
+                        + (f"; structure confirmed by {row['nmr_used']}" if row["nmr_used"] else "")
+                        + "."
+                    ),
+                }],
+            }
+            context = " ".join(
+                x for x in (
+                    f"strain {row['strain']}" if row["strain"] else "",
+                    row["field_sample"] if row["field_sample"] else "",
+                ) if x
+            )
+            if context:
+                occurrence["detection_context"] = context[:200]
+            rewrite_merged_taxon(occurrence, "taxon_id", merges, taxon_rewrites, "CyanoMetDB", note=True)
+            occurrences.append(occurrence)
+
+        deduped = []
+        seen_occurrence = set()
+        for occurrence in occurrences:
+            signature = (
+                occurrence.get("taxon_id") or occurrence["taxon_label"],
+                occurrence["evidence"][0]["reference"],
+            )
+            if signature in seen_occurrence:
+                continue
+            seen_occurrence.add(signature)
+            deduped.append(occurrence)
+
+        producer_taxa = {p["taxon_id"] for p in producers}
+        for occurrence in deduped:
+            if occurrence.get("taxon_id") in producer_taxa:
+                note = ("This taxon is also recorded as a producer. Production and occurrence "
+                        "are distinct claims; their citations may refer to the same publication. "
+                        "Publication independence has not been established.")
+                occurrence["notes"] = (
+                    f"{occurrence['notes']} {note}" if occurrence.get("notes") else note
+                )
+
+        if deduped:
+            deduped.sort(key=lambda o: (
+                o.get("taxon_id") in producer_taxa,
+                o.get("taxon_id") or "",
+                o["evidence"][0]["reference"],
+            ))
+            omitted = len(deduped) - MAX_OCCURRENCES_PER_RECORD
+            if omitted > 0:
+                kept_occurrences = deduped[:MAX_OCCURRENCES_PER_RECORD]
+                note = (
+                    f"{omitted} further cited occurrences are recorded in "
+                    f"data/raw/lotus_occurrences.tsv and data/raw/chebi_origins.tsv "
+                    f"but not written here: a record carrying hundreds of them cannot "
+                    f"be reviewed. The inventories are the complete record."
+                )
+                kept_occurrences[-1]["notes"] = (
+                    f"{kept_occurrences[-1]['notes']} {note}"
+                    if kept_occurrences[-1].get("notes") else note
+                )
+                deduped = kept_occurrences
+            occurrence_groups = taxon_groups_for(deduped, taxon_groups)
+            if occurrence_groups:
+                doc["occurrence_taxon_groups"] = occurrence_groups
+            doc["occurrences"] = deduped
+
+        summary_classes = set()
+        bioactivities = []
+        excluded_assays = []
+        for row in assays_by_key.get(key) or []:
+            row_key = assay_key(row)
+            if row_key in assay_exclusions:
+                excluded_assays.append(assay_exclusions[row_key])
+                applied_assay_exclusions.add(row_key)
+                continue
+            observation = {
+                "assay": row["assay_name"] or f"PubChem AID {row['aid']}",
+                "evidence": [{
+                    "reference": row["reference"] or f"pubchem.aid:{row['aid']}",
+                    "evidence_type": "DATABASE_ASSERTION",
+                    "notes": (
+                        f"PubChem BioAssay AID {row['aid']}"
+                        + (f", deposited by {row['depositor']}" if row["depositor"] else "")
+                        + (f"; assay type {row['assay_type']}" if row["assay_type"] else "")
+                        + "."
+                    ),
+                }],
+            }
+            outcome = row["activity_outcome"].strip()
+            observation["call"] = {
+                "active": "ACTIVE", "inactive": "INACTIVE",
+            }.get(outcome.lower(), "NOT_DETERMINED")
+            if observation["call"] == "NOT_DETERMINED":
+                observation["evidence"][0]["notes"] += (
+                    f" Source outcome: {outcome or '(missing)'}."
+                )
+            if row["activity_value_um"] and row["activity_name"]:
+                measurement = MEASUREMENT_TYPES.get(row["activity_name"].strip().upper(), "OTHER")
+                observation["measurement_type"] = measurement
+                if measurement == "OTHER":
+                    observation["evidence"][0]["notes"] += (
+                        f" Source endpoint: {row['activity_name']}."
+                    )
+                observation["value"] = float(row["activity_value_um"])
+                observation["units"] = "uM"
+            target_accession = row["target_accession"].strip()
+            if target_accession and UNIPROT_ACCESSION_RE.fullmatch(target_accession):
+                observation["target_enzyme"] = f"UniProtKB:{target_accession}"
+            elif target_accession:
+                observation["evidence"][0]["notes"] += (
+                    f" Target accession {target_accession} was left ungrounded because "
+                    "PubChem did not provide a UniProtKB accession."
+                )
+            activity_class = classify_activity(row["assay_name"], aid=row["aid"])
+            if activity_class and observation["call"] == "ACTIVE":
+                observation["activity_class"] = activity_class
+            bioactivities.append(observation)
+
+        if bioactivities:
+            bioactivities.sort(key=lambda b: (0 if "value" in b else 1, b["assay"]))
+            omitted = len(bioactivities) - MAX_BIOACTIVITIES_PER_RECORD
+            if omitted > 0:
+                bioactivities = bioactivities[:MAX_BIOACTIVITIES_PER_RECORD]
+                bioactivities[-1]["notes"] = (
+                    f"{omitted} further PubChem assay results are in "
+                    f"data/raw/pubchem_bioassay.tsv but not written here."
+                )
+            doc["bioactivities"] = bioactivities
+            summary_classes.update(b["activity_class"] for b in bioactivities
+                                   if b.get("activity_class") and b.get("call") == "ACTIVE")
+
+        targets = []
+        for row in targets_by_key.get(key) or []:
+            context = ", ".join(
+                part for part in (
+                    f"pH {row['ph']}" if row["ph"] else "",
+                    f"{row['temperature_c']} C" if row["temperature_c"] else "",
+                ) if part
+            )
+            target = {
+                "target_label": row["target_name"] or "unnamed target",
+                "target_type": "PROTEIN",
+                "relation": "BINDS",
+                "measurement_type": row["measurement_type"],
+                "measurement_value": float(row["measurement_value_nm"]),
+                "measurement_units": "nM",
+                "source": "BINDINGDB",
+                "evidence": [{
+                    "reference": row["reference"],
+                    "evidence_type": "DATABASE_ASSERTION",
+                    "notes": (
+                        "BindingDB own-curated affinity"
+                        + (f"; measured at {context}" if context else "")
+                        + f"; qualifier {row['measurement_qualifier']}."
+                    ),
+                }],
+            }
+            if row["uniprot"]:
+                target["protein_examples"] = [f"UniProtKB:{row['uniprot']}"]
+            if row["target_organism"]:
+                organism = " ".join(row["target_organism"].split())
+                resolved = taxon_by_name.get(organism.lower())
+                if resolved:
+                    target["taxon_id"] = resolved
+                else:
+                    unresolved_target_organisms[organism] += 1
+                target["taxon_label"] = row["target_organism"]
+            targets.append(target)
+        if targets:
+            omitted = len(targets) - MAX_MOLECULAR_TARGETS_PER_RECORD
+            if omitted > 0:
+                targets = targets[:MAX_MOLECULAR_TARGETS_PER_RECORD]
+                targets[-1]["notes"] = (
+                    f"{omitted} further BindingDB target rows are in "
+                    f"data/raw/bindingdb_targets.tsv but not written here."
+                )
+            doc["molecular_targets"] = targets
+
+        links = [{
+            "corpus": "AntibioticMech",
+            "identifier": sibling["identifier"],
+            "relation": "SAME_STRUCTURE",
+            "basis": "SAME_INCHIKEY",
+            "source_version": sibling["corpus_commit"],
+        } for sibling in sibling_by_key.get(key) or []]
+        links.extend({
+            "corpus": "PathwayMech",
+            "identifier": pathway["identifier"],
+            "relation": "BIOSYNTHESIZED_BY",
+            "basis": pathway["basis"],
+            "source_version": pathway["corpus_commit"],
+        } for pathway in pathway_by_key.get(key) or [])
+        if links:
+            doc["related_records"] = links
+
+        for sibling in sibling_by_key.get(key) or []:
+            mapped = SIBLING_ACTIVITY_CLASSES.get(sibling.get("antimicrobial_class", ""))
+            if mapped:
+                summary_classes.add(mapped)
+
+        if summary_classes:
+            doc["bioactivity_summary"] = sorted(summary_classes)
+
+        if bgc_classes:
+            doc["bgc_class"] = bgc_classes
+
+        producer_groups = taxon_groups_for(producers, taxon_groups)
+        if producer_groups:
+            doc["producer_taxon_groups"] = producer_groups
+        doc["producer_organisms"] = producers
+        if clusters:
+            doc["biosynthetic_gene_clusters"] = clusters
+
+        doc["source_concepts"] = source_concepts
+        doc["grounding_status"] = "EXACT"
+        doc["curation_status"] = "SEEDED"
+
+        discussions = [bioassay_exclusion_discussion(d) for d in excluded_assays]
+        discussions.extend(lotus_exclusion_discussion(d) for d in excluded_lotus)
+        if PAPER_INTERNAL_NAME.match(label):
+            discussions.append({
+                "discussion_id": "needs-a-name",
+                "kind": "CURATION_TODO",
+                "status": "OPEN",
+                "prompt": (
+                    f"This record is labelled {label!r}, which is a label from the "
+                    f"cited paper's own numbering rather than a compound name. "
+                    f"Resolve a name from the literature or a structure registry."
+                ),
+            })
+        if discussions:
+            doc["discussions"] = discussions
+
+        doc["_slug"] = slugify(label, identifier)
+        doc["_curated_compound"] = True
+        records.append(doc)
+
     # Slugs are published URLs and must be unique. A clash is resolved
     # deterministically rather than by whichever record was built first.
     # Records split out of a shared-structure collision sort after existing
@@ -1643,7 +2088,10 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
     seen: Counter[str] = Counter()
     for doc in sorted(
         records,
-        key=lambda d: (bool(d.get("_split_structure_correction")), d["identifier"]),
+        key=lambda d: (
+            bool(d.get("_split_structure_correction") or d.get("_curated_compound")),
+            d["identifier"],
+        ),
     ):
         base = doc["_slug"]
         seen[base] += 1

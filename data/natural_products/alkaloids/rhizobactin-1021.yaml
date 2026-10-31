@@ -1,0 +1,238 @@
+identifier: CHEBI:74252
+label: rhizobactin 1021
+chemical_structure:
+  smiles: CCCCCCC/C=C/C(=O)N(O)CCCNC(=O)CC(O)(CC(=O)NCCCN(O)C(C)=O)C(=O)O
+  standard_inchi: InChI=1S/C24H42N4O9/c1-3-4-5-6-7-8-9-12-22(32)28(37)16-11-14-26-21(31)18-24(35,23(33)34)17-20(30)25-13-10-15-27(36)19(2)29/h9,12,35-37H,3-8,10-11,13-18H2,1-2H3,(H,25,30)(H,26,31)(H,33,34)/b12-9+
+  standard_inchi_key: WRSKPFYPBJAAEG-FMIVXFBMSA-N
+  stereo_complete: false
+  structure_source: CHEBI
+  structure_source_id: CHEBI:74252
+np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
+definition: A hydoxy monocarboxylic acid that is citric acid in which the two carboxy
+  groups attached to methylene groups have each been converted to the carboxamide
+  arising by formal condensation with the primary amino group of N-hydroxypropane-1,3-diamine
+  and in which the nitrogen of one of the hydroxylamino groups has been acetylated
+  while the other has been acylated with a (2E)-dec-2-enoyl group. Rhizobactin 1021
+  is a siderophore obtained fromj the nitrogen-fixing alfalfa symbiont Rhizobium meliloti
+  1021.
+definition_source: CHEBI:74252
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-10-30
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Ornithine alkaloids
+  class_results:
+  - Polyamines
+  is_glycoside: false
+producer_taxon_groups:
+- OTHER_BACTERIAL
+producer_organisms:
+- taxon_id: NCBITaxon:382
+  taxon_label: Sinorhizobium meliloti
+  evidence_basis: BGC_CHARACTERIZED
+  source: CURATOR
+  notes: 'Insertional mutagenesis and sequence characterization of the rhbABCDEF siderophore
+    biosynthesis operon in Sinorhizobium meliloti establish biosynthesis of the asymmetric
+    citrate-based dihydroxamate siderophore rhizobactin 1021. Curator: naturalproductmech-agent;
+    date: 2026-10-30.'
+  evidence:
+  - reference: PMID:11274118
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Insertional mutagenesis and sequence characterization of the rhbABCDEF
+      siderophore biosynthesis operon in Sinorhizobium meliloti establish biosynthesis
+      of the asymmetric citrate-based dihydroxamate siderophore rhizobactin 1021.
+  strain: '2011'
+source_concepts:
+- source: CHEBI
+  source_id: CHEBI:74252
+  source_label: rhizobactin 1021
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-e9cf297234
+grounding_status: EXACT
+curation_status: REVIEWED
+molecular_targets:
+- target_id: CHEBI:29034
+  target_label: iron(3+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: Primary physiological ferric ion chelation via hexadentate alpha-hydroxycarboxylate
+    (citrate core) + bis-hydroxamate coordination (1:1 Fe(III)-rhizobactin 1021 complex).
+  evidence:
+  - reference: PMID:11274118
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Genetic and functional characterization of the rhbABCDEF biosynthesis operon
+      and rhtA outer-membrane receptor gene for the citrate-hydroxamate siderophore
+      rhizobactin 1021 in Sinorhizobium meliloti 2011.
+  - reference: PMID:15990296
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Total synthesis and structural modeling of the amphiphilic citrate-bishydroxamate
+      siderophore rhizobactin 1021 and its Fe(III) complex.
+- target_id: CHEBI:84043
+  target_label: gallium(3+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: '[Critical Mineral & Material (CMM)] Hexadentate coordination of trivalent
+    gallium(3+) in vitro via the central citrate alpha-hydroxycarboxylate and two
+    flanking N4-hydroxy-1,3-diaminopropane hydroxamate arms (diamagnetic Fe(III) surrogate).'
+  evidence:
+  - reference: PMID:15990296
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Structural characterization and metal coordination modeling of the hexadentate
+      citrate-bishydroxamate scaffold of rhizobactin 1021.
+- target_id: CHEBI:29036
+  target_label: copper(2+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: In vitro coordination of divalent copper(2+) by the citrate-bishydroxamate
+    scaffold of rhizobactin 1021 (secondary non-physiological complexation).
+  evidence:
+  - reference: PMID:15990296
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Synthesis and coordination chemistry of the amphiphilic citrate-hydroxamate
+      siderophore rhizobactin 1021.
+ecological_roles:
+- CHEBI:26672
+- CHEBI:38161
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_label: RhbA (diaminobutyrate aminotransferase) and RhbB (diaminobutyrate
+    decarboxylase)
+  notes: Condensation of L-aspartate 4-semialdehyde and L-glutamate to L-2,4-diaminobutyrate
+    followed by pyridoxal 5'-phosphate-dependent decarboxylation to synthesize the
+    symmetrical 1,3-diaminopropane diamine precursor in Sinorhizobium meliloti.
+  evidence:
+  - reference: PMID:11274118
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: RhbA and RhbB convert L-aspartate beta-semialdehyde and glutamate into
+      1,3-diaminopropane in the Sinorhizobium meliloti rhbABCDEF pathway.
+- step_number: 2
+  enzyme_label: RhbD (acyltransferase), RhbE (1,3-diaminopropane monooxygenase), RhbC
+    and RhbF (NIS siderophore synthetases)
+  substrates:
+  - CHEBI:30769
+  - CHEBI:15351
+  products:
+  - CHEBI:74252
+  notes: N4-hydroxylation of 1,3-diaminopropane, asymmetric N-acylation with acetyl-CoA
+    and (E)-dec-2-enoyl-ACP/CoA, and ATP-dependent NIS condensation with citric acid
+    to yield rhizobactin 1021.
+  evidence:
+  - reference: PMID:11274118
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: The rhbABCDEF operon directs asymmetric assembly of rhizobactin 1021 from
+      citric acid, two N-hydroxy-1,3-diaminopropane units, an acetyl group, and an
+      (E)-dec-2-enoyl fatty acyl chain.
+causal_graphs:
+- graph_id: rhizobactin_1021_biosynthesis_and_chelation
+  scope: BIOACTIVITY
+  description: NIS-mediated biosynthesis of the amphiphilic citrate-bishydroxamate
+    siderophore rhizobactin 1021 by the rhbABCDEF operon in Sinorhizobium meliloti
+    and hexadentate chelation of Fe(III) and CMM cation Ga(III).
+  nodes:
+  - node_id: citrate
+    label: citric acid
+    node_type: PRECURSOR
+    identifier: CHEBI:30769
+    grounding_status: GROUNDED
+  - node_id: acetyl_coa
+    label: acetyl-CoA
+    node_type: PRECURSOR
+    identifier: CHEBI:15351
+    grounding_status: GROUNDED
+  - node_id: rhb_operon
+    label: rhbABCDEF biosynthetic operon
+    node_type: GENE_CLUSTER
+    grounding_status: UNGROUNDED
+  - node_id: rhizobactin_1021
+    label: rhizobactin 1021
+    node_type: COMPOUND
+    identifier: CHEBI:74252
+    grounding_status: GROUNDED
+  - node_id: fe3
+    label: iron(3+)
+    node_type: OTHER
+    identifier: CHEBI:29034
+    grounding_status: GROUNDED
+  - node_id: ga3
+    label: gallium(3+)
+    node_type: OTHER
+    identifier: CHEBI:84043
+    grounding_status: GROUNDED
+  - node_id: siderophore_transport
+    label: siderophore transport
+    node_type: PROCESS
+    identifier: GO:0015891
+    grounding_status: GROUNDED
+  edges:
+  - subject: citrate
+    predicate: substrate_of
+    object: rhb_operon
+    notes: Citric acid provides the central alpha-hydroxycarboxylate backbone condensed
+      by RhbC and RhbF.
+    evidence:
+    - reference: PMID:11274118
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: RhbC and RhbF are NIS synthetases that condense substituted 1,3-diaminopropane
+        units onto citric acid.
+  - subject: acetyl_coa
+    predicate: substrate_of
+    object: rhb_operon
+    notes: Acetyl-CoA acylates one N-hydroxy-1,3-diaminopropane arm.
+    evidence:
+    - reference: PMID:15990296
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Rhizobactin 1021 contains one N-acetyl-N-hydroxy-1,3-diaminopropane arm
+        and one (E)-dec-2-enoyl arm.
+  - subject: rhb_operon
+    predicate: synthesizes
+    object: rhizobactin_1021
+    notes: rhbABCDEF synthesizes rhizobactin 1021 in Sinorhizobium meliloti.
+    evidence:
+    - reference: PMID:11274118
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Insertional mutagenesis in rhbABCDEF abolishes rhizobactin 1021 synthesis.
+  - subject: rhizobactin_1021
+    predicate: chelates
+    object: fe3
+    notes: Hexadentate coordination of Fe(III) via citrate alpha-hydroxycarboxylate
+      and two hydroxamate groups.
+    evidence:
+    - reference: PMID:15990296
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Rhizobactin 1021 forms a 1:1 hexadentate ferric complex.
+  - subject: fe3
+    predicate: enables
+    object: siderophore_transport
+    notes: Ferric-rhizobactin 1021 is imported across the outer membrane by RhtA and
+      across the inner membrane by RhtX.
+    evidence:
+    - reference: PMID:15126460
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: RhtX and RhtA mediate rhizobactin 1021 utilization in Sinorhizobium meliloti.
+  - subject: rhizobactin_1021
+    predicate: chelates
+    object: ga3
+    notes: '[CMM] In vitro hexadentate coordination of trivalent gallium(3+).'
+    evidence:
+    - reference: PMID:15990296
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Structural modeling of trivalent metal coordination by rhizobactin 1021.
+curation_history:
+- timestamp: '2026-10-31T03:56:15Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-31T05:05:46Z'
+  curator: naturalproductmech-agent
+  action: RECORD_CURATED
+  changes: Curated ecological_roles, metal-binding molecular_targets (including explicit
+    Critical Mineral & Material [CMM] annotations and primary literature evidence),
+    biosynthetic_pathway steps, and connected causal_graphs; promoted curation_status
+    to REVIEWED.
+  llm_assisted: true

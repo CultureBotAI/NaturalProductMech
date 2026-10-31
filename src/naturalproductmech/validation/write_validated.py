@@ -119,9 +119,10 @@ def canonicalize_top_level_keys(doc: dict[str, Any]) -> dict[str, Any]:
     Matches the exact top-level slot ordering emitted by
     ``scripts/seed_from_sources.py`` (and enforced by
     ``scripts/check_reproduction.py``) so curator scripts that insert
-    ``biosynthetic_pathway``, ``causal_graphs``, ``causal_graph_refs``,
-    ``discussions``, ``molecular_targets``, or ``curation_history`` in arbitrary
-    dict insertion order still serialize byte-identically to a fresh re-seed:
+    ``ecological_roles``, ``biosynthetic_pathway``, ``causal_graphs``,
+    ``causal_graph_refs``, ``discussions``, ``molecular_targets``, or
+    ``curation_history`` in arbitrary dict insertion order still serialize
+    byte-identically to a fresh re-seed:
 
     - Imported ``molecular_targets`` (at least one entry with
       ``source != 'CURATOR'``) sit after ``bioactivities``; curator-only
@@ -187,6 +188,7 @@ def canonicalize_top_level_keys(doc: dict[str, Any]) -> dict[str, Any]:
         "curation_status",
         *(("discussions",) if has_source_discussions else ()),
         *( () if has_imported_targets else ("molecular_targets",)),
+        "ecological_roles",
         "biosynthetic_pathway",
         "causal_graphs",
         "causal_graph_refs",

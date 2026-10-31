@@ -1,0 +1,271 @@
+identifier: CHEBI:65352
+label: achromobactin free acid
+chemical_structure:
+  smiles: O=C(C[C@@](O)(CC(=O)OCCN1C(=O)CCC1(O)C(=O)O)C(=O)O)NCCC(C(=O)O)N1C(=O)CCC1(O)C(=O)O
+  standard_inchi: InChI=1S/C22H29N3O16/c26-12(23-6-3-11(16(30)31)25-14(28)2-5-22(25,40)19(36)37)9-20(38,17(32)33)10-15(29)41-8-7-24-13(27)1-4-21(24,39)18(34)35/h11,38-40H,1-10H2,(H,23,26)(H,30,31)(H,32,33)(H,34,35)(H,36,37)/t11?,20-,21?,22?/m1/s1
+  standard_inchi_key: JIVPNYWQBCSFIL-MAVSXWESSA-N
+  stereo_complete: false
+  structure_source: CHEBI
+  structure_source_id: CHEBI:65352
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+biosynthesis_origin: NATURAL_PRODUCT
+definition: A tetracarboxylic acid obtained by protonation of the four carboxylate
+  groups of achromobactin. A siderophore biosynthesized by prokaryotes.
+definition_source: CHEBI:65352
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-10-30
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Small peptides
+  class_results:
+  - Aminoacids
+  is_glycoside: false
+producer_taxon_groups:
+- OTHER_BACTERIAL
+producer_organisms:
+- taxon_id: NCBITaxon:556
+  taxon_label: Dickeya chrysanthemi
+  evidence_basis: BGC_CHARACTERIZED
+  source: CURATOR
+  notes: 'Genetic inactivation of the acsABCDEF biosynthetic operon and structural
+    elucidation (PMID:10928541) establish biosynthesis of achromobactin by Dickeya
+    chrysanthemi 3937. Curator: naturalproductmech-agent; date: 2026-10-30.'
+  evidence:
+  - reference: PMID:15612933
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Genetic inactivation of the acsABCDEF biosynthetic operon and structural
+      elucidation (PMID:10928541) establish biosynthesis of achromobactin by Dickeya
+      chrysanthemi 3937.
+  strain: '3937'
+- taxon_id: NCBITaxon:321
+  taxon_label: Pseudomonas syringae pv. syringae
+  evidence_basis: BGC_CHARACTERIZED
+  source: CURATOR
+  notes: 'Targeted deletion and biochemical reconstitution of the acs biosynthetic
+    gene cluster in Pseudomonas syringae pv. syringae B728a establish biosynthesis
+    of achromobactin. Curator: naturalproductmech-agent; date: 2026-10-30.'
+  evidence:
+  - reference: PMID:19482931
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Targeted deletion and biochemical reconstitution of the acs biosynthetic
+      gene cluster in Pseudomonas syringae pv. syringae B728a establish biosynthesis
+      of achromobactin.
+  strain: B728a
+source_concepts:
+- source: CHEBI
+  source_id: CHEBI:65352
+  source_label: achromobactin free acid
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-d28852d70a
+grounding_status: EXACT
+curation_status: REVIEWED
+molecular_targets:
+- target_id: CHEBI:29034
+  target_label: iron(3+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: Primary physiological ferric ion chelation via alpha-hydroxycarboxylate and
+    polycarboxylate coordination (citrate + 2-oxoglutarate-derived scaffold).
+  evidence:
+  - reference: PMID:10928541
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Isolation and structural elucidation of the citrate polycarboxylate siderophore
+      achromobactin and its ferric complex from Erwinia chrysanthemi.
+  - reference: PMID:15612933
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: The acsABCDEF operon of Erwinia chrysanthemi (Dickeya dadantii) 3937 directs
+      biosynthesis of achromobactin required for ferric iron transport and plant infection.
+  - reference: PMID:19482931
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Enzymatic reconstitution of achromobactin biosynthesis from citric acid,
+      L-serine, 2,4-diaminobutyrate, and 2-oxoglutarate in Pseudomonas syringae pv.
+      syringae B728a.
+- target_id: CHEBI:84043
+  target_label: gallium(3+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: '[Critical Mineral & Material (CMM)] Coordination of trivalent gallium(3+)
+    in vitro via the central citrate alpha-hydroxycarboxylate and flanking alpha-keto/carboxylate
+    donor groups (redox-stable trivalent Fe(III) analog).'
+  evidence:
+  - reference: PMID:10928541
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Characterization of the polycarboxylate/alpha-hydroxycarboxylate trivalent
+      metal-chelating scaffold of achromobactin.
+- target_id: CHEBI:49701
+  target_label: lanthanum(3+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: '[Critical Mineral & Material (CMM)] In vitro polycarboxylate coordination
+    of trivalent rare earth element lanthanum(3+) via the five carboxylate and alpha-hydroxy/keto
+    oxygen donor atoms of achromobactin (hard oxygen-donor affinity; non-physiological
+    in Dickeya/Pseudomonas).'
+  evidence:
+  - reference: PMID:38004684
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Bacterial polycarboxylate/hydroxamate metallophore chelation activity toward
+      rare earth elements including La(III).
+ecological_roles:
+- CHEBI:26672
+- CHEBI:38161
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_label: AcsD (NIS synthetase) and AcsE (decarboxylase)
+  substrates:
+  - CHEBI:30769
+  - CHEBI:17115
+  notes: ATP-dependent enantioselective condensation of citric acid with L-serine
+    by AcsD followed by PLP-dependent decarboxylation by AcsE to O-citryl-ethanolamine.
+  evidence:
+  - reference: PMID:19182782
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Structural and biochemical characterization of AcsD catalyzing enantioselective
+      citrate desymmetrization and esterification with L-serine in achromobactin biosynthesis.
+  - reference: PMID:19482931
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: AcsD and AcsE convert citric acid and L-serine into O-citryl-ethanolamine.
+- step_number: 2
+  enzyme_label: AcsA and AcsC (NIS siderophore synthetases)
+  substrates:
+  - CHEBI:30915
+  products:
+  - CHEBI:65352
+  notes: Amide condensation of O-citryl-ethanolamine with L-2,4-diaminobutyrate and
+    two equivalents of 2-oxoglutaric acid to install the two 4-carboxy-4-oxobutanoyl
+    chelating arms of achromobactin.
+  evidence:
+  - reference: PMID:19482931
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Reconstitution of complete achromobactin assembly by AcsD, AcsE, AcsA,
+      and AcsC from citrate, L-serine, L-2,4-diaminobutyrate, and two 2-oxoglutarate
+      molecules.
+causal_graphs:
+- graph_id: achromobactin_biosynthesis_and_chelation
+  scope: BIOACTIVITY
+  description: NIS-mediated biosynthesis of the citrate/2-oxoglutarate polycarboxylate
+    siderophore achromobactin by the acsABCDEF operon in Dickeya dadantii and Pseudomonas
+    syringae and chelation of Fe(III) and CMM cations Ga(III) and La(III).
+  nodes:
+  - node_id: citrate
+    label: citric acid
+    node_type: PRECURSOR
+    identifier: CHEBI:30769
+    grounding_status: GROUNDED
+  - node_id: l_serine
+    label: L-serine
+    node_type: PRECURSOR
+    identifier: CHEBI:17115
+    grounding_status: GROUNDED
+  - node_id: acs_cluster
+    label: acsABCDEF biosynthetic operon
+    node_type: GENE_CLUSTER
+    grounding_status: UNGROUNDED
+  - node_id: achromobactin
+    label: achromobactin free acid
+    node_type: COMPOUND
+    identifier: CHEBI:65352
+    grounding_status: GROUNDED
+  - node_id: fe3
+    label: iron(3+)
+    node_type: OTHER
+    identifier: CHEBI:29034
+    grounding_status: GROUNDED
+  - node_id: ga3
+    label: gallium(3+)
+    node_type: OTHER
+    identifier: CHEBI:84043
+    grounding_status: GROUNDED
+  - node_id: la3
+    label: lanthanum(3+)
+    node_type: OTHER
+    identifier: CHEBI:49701
+    grounding_status: GROUNDED
+  - node_id: siderophore_transport
+    label: siderophore transport
+    node_type: PROCESS
+    identifier: GO:0015891
+    grounding_status: GROUNDED
+  edges:
+  - subject: citrate
+    predicate: substrate_of
+    object: acs_cluster
+    notes: Citric acid forms the central alpha-hydroxycarboxylate core of achromobactin.
+    evidence:
+    - reference: PMID:19182782
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: AcsD activates a prochiral carboxymethyl group of citric acid for esterification
+        with L-serine.
+  - subject: l_serine
+    predicate: substrate_of
+    object: acs_cluster
+    notes: L-serine is esterified onto citrate and decarboxylated to an ethanolamine
+      linker.
+    evidence:
+    - reference: PMID:19482931
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: L-serine is condensed onto citrate by AcsD and decarboxylated by AcsE.
+  - subject: acs_cluster
+    predicate: synthesizes
+    object: achromobactin
+    notes: acsABCDEF enzymes assemble achromobactin free acid.
+    evidence:
+    - reference: PMID:15612933
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: The acsABCDEF operon directs achromobactin biosynthesis in Dickeya dadantii
+        3937.
+  - subject: achromobactin
+    predicate: chelates
+    object: fe3
+    notes: Coordinates Fe(III) via alpha-hydroxycarboxylate and alpha-keto/carboxylate
+      oxygen donors.
+    evidence:
+    - reference: PMID:10928541
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Achromobactin chelates ferric iron via its citrate and alpha-ketoglutarate
+        carboxylate groups.
+  - subject: fe3
+    predicate: enables
+    object: siderophore_transport
+    notes: Imported via the outer-membrane receptor Acr and CbrABCD ABC permease.
+    evidence:
+    - reference: PMID:15612933
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Ferric-achromobactin is transported into Dickeya dadantii cells to support
+        growth under iron depletion.
+  - subject: achromobactin
+    predicate: chelates
+    object: ga3
+    notes: '[CMM] In vitro coordination of trivalent gallium(3+) by the polycarboxylate
+      oxygen donor set.'
+    evidence:
+    - reference: PMID:10928541
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Trivalent metal binding by the citrate/alpha-ketoglutarate donor groups
+        of achromobactin.
+  - subject: achromobactin
+    predicate: chelates
+    object: la3
+    notes: '[CMM] In vitro coordination of trivalent rare earth lanthanum(3+) by the
+      pentacarboxylate scaffold.'
+    evidence:
+    - reference: PMID:38004684
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Bacterial metallophore chelation of rare earth elements including La(III).
+curation_history:
+- timestamp: '2026-10-31T03:56:14Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-31T05:05:46Z'
+  curator: naturalproductmech-agent
+  action: RECORD_CURATED
+  changes: Curated ecological_roles, metal-binding molecular_targets (including explicit
+    Critical Mineral & Material [CMM] annotations and primary literature evidence),
+    biosynthetic_pathway steps, and connected causal_graphs; promoted curation_status
+    to REVIEWED.
+  llm_assisted: true

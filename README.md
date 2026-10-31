@@ -37,55 +37,57 @@ see [curation](docs/CURATION.md#complete-mechanism-reads) for the data contract.
 <!-- BEGIN GENERATED CORPUS STATS -->
 
 ```
-records: 3116
-unique InChIKeys: 3116
-structures with undefined stereocentres: 1124
+records: 3126
+unique InChIKeys: 3126
+structures with undefined stereocentres: 1127
 
 by pathway (the filing decision, computed):
-  ALKALOIDS                             509
-  AMINO_ACIDS_AND_PEPTIDES              655
+  ALKALOIDS                             512
+  AMINO_ACIDS_AND_PEPTIDES              658
   CARBOHYDRATES                         104
-  FATTY_ACIDS                            82
+  FATTY_ACIDS                            84
   POLYKETIDES                           869
   SHIKIMATES_AND_PHENYLPROPANOIDS        64
   TERPENOIDS                            213
-  UNCLASSIFIED                          620
+  UNCLASSIFIED                          622
 
 by curation status:
+  REVIEWED                               10
   SEEDED                               3116
 
 by grounding status:
-  EXACT                                 364
+  EXACT                                 374
   MINTED                               2743
   REVIEW_NEEDED                           9
 
 field coverage (records carrying at least one item):
-  biosynthesis_origin                  3116
-  producer_taxon_groups                3077
-  occurrence_taxon_groups              2341
-  producer_organisms                   3077
-  occurrences                          2341
-  biosynthetic_gene_clusters           3116
-  biosynthetic_pathway                  196
+  biosynthesis_origin                  3126
+  producer_taxon_groups                3087
+  occurrence_taxon_groups              2343
+  producer_organisms                   3087
+  occurrences                          2343
+  biosynthetic_gene_clusters           3122
+  biosynthetic_pathway                  206
   bioactivities                         174
-  bioactivity_summary                   307
-  molecular_targets                      15
-  causal_graphs                         297
-  related_records                       210
+  bioactivity_summary                   309
+  molecular_targets                      25
+  causal_graphs                         307
+  related_records                       212
   discussions                           362
 
-producer claims: 3407 (806 causal, 162 correlational)
-  BGC_CHARACTERIZED                     806
+producer claims: 3424 (823 causal, 162 correlational)
+  AXENIC_CULTURE                          3
+  BGC_CHARACTERIZED                     820
   BGC_CORRELATED                        162
   SOURCE_ASSERTION                     2439
 
-cluster link claims: 3449 (1355 demonstrated)
+cluster link claims: 3455 (1361 demonstrated)
   CLUSTER_CORRELATED                    110
-  CLUSTER_DEMONSTRATED                 1355
+  CLUSTER_DEMONSTRATED                 1361
   CLUSTER_PREDICTED                       2
   CLUSTER_UNSTATED                     1982
 
-records with a producer taxon also reported in a cited occurrence (publication independence not assessed): 731
+records with a producer taxon also reported in a cited occurrence (publication independence not assessed): 732
 records whose only origin evidence is a gene cluster with no named host: 27
 
 These grade two different questions and they come apart. A producer

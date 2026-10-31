@@ -1,0 +1,308 @@
+identifier: CHEBI:61168
+label: desferrimycobactin T
+chemical_structure:
+  smiles: CCCCCCCCCCCCCCCCCCCC(=O)N(O)CCCC[C@H](NC(=O)[C@@H]1COC(c2ccccc2O)=N1)C(=O)O[C@H](C)CC(=O)N[C@H]1CCCCN(O)C1=O
+  standard_inchi: InChI=1S/C46H75N5O10/c1-3-4-5-6-7-8-9-10-11-12-13-14-15-16-17-18-19-30-42(54)50(58)31-24-23-28-38(48-43(55)39-34-60-44(49-39)36-26-20-21-29-40(36)52)46(57)61-35(2)33-41(53)47-37-27-22-25-32-51(59)45(37)56/h20-21,26,29,35,37-39,52,58-59H,3-19,22-25,27-28,30-34H2,1-2H3,(H,47,53)(H,48,55)/t35-,37+,38+,39+/m1/s1
+  standard_inchi_key: FLJNVPAGIYBTDU-XWINOZFQSA-N
+  stereo_complete: true
+  structure_source: CHEBI
+  structure_source_id: CHEBI:61168
+np_pathway: UNCLASSIFIED
+biosynthesis_origin: NATURAL_PRODUCT
+definition: A cyclic hydroxamic acid secreted by Mycobacterium tuberculosis which
+  is lipid-soluble and acts as a siderophore.
+definition_source: CHEBI:61168
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-10-30
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Depsipeptides
+  - Linear peptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+producer_taxon_groups:
+- ACTINOBACTERIAL
+producer_organisms:
+- taxon_id: NCBITaxon:83332
+  taxon_label: Mycobacterium tuberculosis H37Rv
+  evidence_basis: BGC_CHARACTERIZED
+  source: CURATOR
+  notes: 'Identification and biochemical characterization of the mbtA-J NRPS-PKS gene
+    cluster (mibig:BGC0001021) in Mycobacterium tuberculosis H37Rv establish biosynthesis
+    of the metal-free apo-siderophore desferrimycobactin T. Curator: naturalproductmech-agent;
+    date: 2026-10-30.'
+  evidence:
+  - reference: PMID:9831524
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Identification and biochemical characterization of the mbtA-J NRPS-PKS
+      gene cluster (mibig:BGC0001021) in Mycobacterium tuberculosis H37Rv establish
+      biosynthesis of the metal-free apo-siderophore desferrimycobactin T.
+  strain: H37Rv
+  biosynthetic_gene_cluster: mibig:BGC0001021
+- taxon_id: NCBITaxon:83332
+  taxon_label: Mycobacterium tuberculosis H37Rv
+  evidence_basis: BGC_CHARACTERIZED
+  source: CURATOR
+  notes: 'Targeted disruption of mbtB in Mycobacterium tuberculosis H37Rv (mibig:BGC0001021)
+    completely abolishes biosynthesis of both cell-wall desferrimycobactin T and secreted
+    carboxymycobactins. Curator: naturalproductmech-agent; date: 2026-10-30.'
+  evidence:
+  - reference: PMID:10655517
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Targeted disruption of mbtB in Mycobacterium tuberculosis H37Rv (mibig:BGC0001021)
+      completely abolishes biosynthesis of both cell-wall desferrimycobactin T and
+      secreted carboxymycobactins.
+  strain: H37Rv
+  biosynthetic_gene_cluster: mibig:BGC0001021
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001021
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:83332
+  organism_label: Mycobacterium tuberculosis H37Rv
+  evidence:
+  - reference: PMID:9831524
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Identification and biochemical characterization of the mbtA-J NRPS-PKS
+      gene cluster (mibig:BGC0001021) in Mycobacterium tuberculosis H37Rv establish
+      biosynthesis of the metal-free apo-siderophore desferrimycobactin T.
+  genome_accession: genbank:AL123456.3
+  locus_from: 2656200
+  locus_to: 2680020
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: CHEBI
+  source_id: CHEBI:61168
+  source_label: desferrimycobactin T
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-1797d3a2e4
+grounding_status: EXACT
+curation_status: REVIEWED
+molecular_targets:
+- target_id: CHEBI:29034
+  target_label: iron(3+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: Primary physiological ferric ion chelation via hexadentate 2-hydroxyphenyloxazoline
+    + bis-hydroxamate coordination (mycobactin T, 1:1 complex, Ka ~ 10^30 M^-1) essential
+    for Mycobacterium tuberculosis iron acquisition in macrophages.
+  evidence:
+  - reference: PMID:9831524
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Identification of the mbtA-J gene cluster in Mycobacterium tuberculosis
+      H37Rv encoding the biosynthetic enzymes for salicylate-derived mycobactin T
+      siderophore assembly.
+  - reference: PMID:10655517
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Deletion of mbtB in Mycobacterium tuberculosis H37Rv abolishes mycobactin
+      T synthesis and impairs ferric iron acquisition and growth in macrophages.
+  - reference: PMID:8666910
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Mycobactin T in the Mycobacterium tuberculosis cell wall accepts ferric
+      iron from extracellular exochelins.
+- target_id: CHEBI:84043
+  target_label: gallium(3+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: '[Critical Mineral & Material (CMM)] Hexadentate coordination of trivalent
+    gallium(3+) forming Ga(III)-mycobactin T; exploited as a redox-inactive Fe(III)
+    mimic that disrupts Mycobacterium tuberculosis iron-dependent enzymes.'
+  evidence:
+  - reference: PMID:10992462
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Trivalent gallium(3+) is chelated by mycobacterial siderophores and disrupts
+      iron acquisition and intracellular survival of Mycobacterium tuberculosis in
+      human macrophages.
+  - reference: PMID:24060870
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Gallium(III) competes with Fe(III) for mycobacterial siderophore uptake
+      and inhibits iron-dependent enzymes in Mycobacterium tuberculosis.
+- target_id: CHEBI:30046
+  target_label: oxidovanadium(2+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: '[Critical Mineral & Material (CMM)] In vitro coordination of vanadyl / oxidovanadium(2+)
+    by the phenolate-oxazoline-hydroxamate donor set of mycobactin (non-physiological
+    coordination complex).'
+  evidence:
+  - reference: PMID:9831524
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Characterization of the hexadentate phenolate-oxazoline-bishydroxamate
+      metal-chelating scaffold of Mycobacterium tuberculosis mycobactin T.
+ecological_roles:
+- CHEBI:26672
+- CHEBI:38161
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_label: MbtI (salicylate synthase) and MbtA (salicyl-AMP ligase)
+  substrates:
+  - CHEBI:17333
+  products:
+  - CHEBI:16914
+  notes: Conversion of chorismic acid to salicylic acid by MbtI and ATP-dependent
+    adenylation to salicyl-AMP by MbtA for loading onto the aryl carrier domain of
+    MbtB.
+  evidence:
+  - reference: PMID:9831524
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: The mbtA-J gene cluster of Mycobacterium tuberculosis H37Rv encodes salicylate
+      activation by MbtA and hybrid NRPS-PKS assembly by MbtB-MbtF.
+- step_number: 2
+  enzyme_label: MbtB, MbtE, MbtF (NRPS), MbtC, MbtD (PKS), MbtG (lysine N6-monooxygenase),
+    and MbtK (acyltransferase)
+  substrates:
+  - CHEBI:16914
+  - CHEBI:17115
+  - CHEBI:18019
+  products:
+  - CHEBI:61168
+  notes: Hybrid NRPS-PKS assembly of the phenyloxazoline-peptidyl-polyketide core
+    and N6-hydroxylation/acylation of L-lysine residues to yield cell-envelope-associated
+    lipophilic desferrimycobactin T.
+  evidence:
+  - reference: PMID:9831524
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: The mbtA-J locus directs hybrid NRPS-PKS assembly of salicylate-derived
+      mycobactin T in Mycobacterium tuberculosis H37Rv.
+  - reference: PMID:10655517
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Targeted disruption of mbtB abolishes salicylate-derived mycobactin T biosynthesis
+      in Mycobacterium tuberculosis.
+causal_graphs:
+- graph_id: desferrimycobactin_t_biosynthesis_and_chelation
+  scope: BIOACTIVITY
+  description: Hybrid NRPS-PKS biosynthesis of desferrimycobactin T by the mbtA-J
+    locus (BGC0001021) in Mycobacterium tuberculosis and hexadentate chelation of
+    Fe(III) and CMM cations Ga(III) and VO(2+).
+  nodes:
+  - node_id: salicylate
+    label: salicylic acid
+    node_type: PRECURSOR
+    identifier: CHEBI:16914
+    grounding_status: GROUNDED
+  - node_id: l_lysine
+    label: L-lysine
+    node_type: PRECURSOR
+    identifier: CHEBI:18019
+    grounding_status: GROUNDED
+  - node_id: mbt_cluster
+    label: mbtA-J biosynthetic gene cluster (BGC0001021)
+    node_type: GENE_CLUSTER
+    grounding_status: UNGROUNDED
+  - node_id: mycobactin_t
+    label: desferrimycobactin T
+    node_type: COMPOUND
+    identifier: CHEBI:61168
+    grounding_status: GROUNDED
+  - node_id: fe3
+    label: iron(3+)
+    node_type: OTHER
+    identifier: CHEBI:29034
+    grounding_status: GROUNDED
+  - node_id: ga3
+    label: gallium(3+)
+    node_type: OTHER
+    identifier: CHEBI:84043
+    grounding_status: GROUNDED
+  - node_id: vo2
+    label: oxidovanadium(2+)
+    node_type: OTHER
+    identifier: CHEBI:30046
+    grounding_status: GROUNDED
+  - node_id: iron_transport
+    label: iron ion transport
+    node_type: PROCESS
+    identifier: GO:0006826
+    grounding_status: GROUNDED
+  edges:
+  - subject: salicylate
+    predicate: substrate_of
+    object: mbt_cluster
+    notes: MbtA activates salicylic acid as salicyl-AMP to initiate mycobactin T assembly.
+    evidence:
+    - reference: PMID:9831524
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: MbtA adenylates salicylic acid for loading onto MbtB.
+  - subject: l_lysine
+    predicate: substrate_of
+    object: mbt_cluster
+    notes: Two L-lysine residues are N6-hydroxylated by MbtG to form the internal
+      linear and cyclic hydroxamate ligands.
+    evidence:
+    - reference: PMID:9831524
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: MbtG catalyzes N6-hydroxylation of lysine in the mbt pathway.
+  - subject: mbt_cluster
+    predicate: synthesizes
+    object: mycobactin_t
+    notes: MbtA-J NRPS-PKS assembly line produces desferrimycobactin T.
+    evidence:
+    - reference: PMID:9831524
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: mbtA-J in M. tuberculosis H37Rv encodes the mycobactin T biosynthetic
+        enzymes.
+  - subject: mycobactin_t
+    predicate: chelates
+    object: fe3
+    notes: Hexadentate coordination of Fe(III) by phenolate, oxazoline N, and two
+      hydroxamates.
+    evidence:
+    - reference: PMID:8666910
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Mycobactin T binds ferric iron with high affinity in the mycobacterial
+        cell envelope.
+  - subject: fe3
+    predicate: enables
+    object: iron_transport
+    notes: Delivers host iron across the mycobacterial cell envelope during intracellular
+      infection.
+    evidence:
+    - reference: PMID:10655517
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Mycobactin T is essential for Mycobacterium tuberculosis iron acquisition
+        and growth in macrophages.
+  - subject: mycobactin_t
+    predicate: chelates
+    object: ga3
+    notes: '[CMM] Coordinates trivalent gallium(3+) as a redox-inactive ferric surrogate.'
+    evidence:
+    - reference: PMID:10992462
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Mycobacterial siderophores bind trivalent Ga(III) in competition with
+        Fe(III).
+  - subject: mycobactin_t
+    predicate: chelates
+    object: vo2
+    notes: '[CMM] In vitro coordination of oxidovanadium(2+).'
+    evidence:
+    - reference: PMID:9831524
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Hexadentate phenolate-oxazoline-bishydroxamate coordination core of mycobactin
+        T.
+curation_history:
+- timestamp: '2026-10-31T03:56:14Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-31T05:05:45Z'
+  curator: naturalproductmech-agent
+  action: RECORD_CURATED
+  changes: Curated ecological_roles, metal-binding molecular_targets (including explicit
+    Critical Mineral & Material [CMM] annotations and primary literature evidence),
+    biosynthetic_pathway steps, and connected causal_graphs; promoted curation_status
+    to REVIEWED.
+  llm_assisted: true
