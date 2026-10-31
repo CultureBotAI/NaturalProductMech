@@ -1,0 +1,245 @@
+identifier: CHEBI:65906
+label: formobactin
+chemical_structure:
+  smiles: CCCCCCCCCC(OC(=O)[C@H](CCCCN(O)C=O)NC(=O)c1nc(-c2ccccc2O)oc1C)C(C)(C)C(=O)NC1CCCCN(O)C1=O
+  standard_inchi: InChI=1S/C38H57N5O10/c1-5-6-7-8-9-10-11-22-31(38(3,4)37(49)40-28-19-15-17-24-43(51)35(28)47)53-36(48)29(20-14-16-23-42(50)25-44)39-33(46)32-26(2)52-34(41-32)27-18-12-13-21-30(27)45/h12-13,18,21,25,28-29,31,45,50-51H,5-11,14-17,19-20,22-24H2,1-4H3,(H,39,46)(H,40,49)/t28?,29-,31?/m0/s1
+  standard_inchi_key: ZZBSPTCNZDTZBR-QGXZNONUSA-N
+  stereo_complete: false
+  structure_source: CHEBI
+  structure_source_id: CHEBI:65906
+np_pathway: UNCLASSIFIED
+biosynthesis_origin: NATURAL_PRODUCT
+definition: A cyclic hydroxamic acid derivative and antibiotic isolated from Nocardia
+  sp. strain ND20. It exerts an inhibitory effect on lipid peroxidation and also has
+  a potent protecting effect on neuronal cells.
+definition_source: CHEBI:65906
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-10-31
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Depsipeptides
+  - Linear peptides
+  - Lipopeptides
+  is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
+occurrences:
+- taxon_label: Nocardia
+  source: CHEBI
+  evidence:
+  - reference: PMID:8931715
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:65906
+  taxon_id: NCBITaxon:1821
+  taxon_source: NCBITaxon
+  detection_context: ND20
+  notes: This taxon is also recorded as a producer. Production and occurrence are
+    distinct claims; their citations may refer to the same publication. Publication
+    independence has not been established.
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:65906
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: 74f6cc8362498900f2fe2c13d0b6fdb66dd30976
+bioactivity_summary:
+- ANTIMICROBIAL_UNSPECIFIED
+producer_taxon_groups:
+- ACTINOBACTERIAL
+producer_organisms:
+- taxon_id: NCBITaxon:1821
+  taxon_label: Nocardia
+  evidence_basis: AXENIC_CULTURE
+  source: CURATOR
+  notes: 'Isolation, NMR/MS structure elucidation, and free-radical scavenging characterization
+    of the nocobactin-like phenyloxazole-hydroxamate-formylhydroxamate siderophore
+    formobactin from Nocardia sp. strain ND20. Curator: naturalproductmech-agent;
+    date: 2026-10-31.'
+  evidence:
+  - reference: PMID:8931715
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Isolation, NMR/MS structure elucidation, and free-radical scavenging characterization
+      of the nocobactin-like phenyloxazole-hydroxamate-formylhydroxamate siderophore
+      formobactin from Nocardia sp. strain ND20.
+  strain: ND20
+source_concepts:
+- source: CHEBI
+  source_id: CHEBI:65906
+  source_label: formobactin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-64b1e7540f
+grounding_status: EXACT
+curation_status: REVIEWED
+molecular_targets:
+- target_id: CHEBI:29034
+  target_label: iron(3+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: Hexadentate coordination of ferric iron(3+) via the 2-(2-hydroxyphenyl)-5-methyl-1,3-oxazole-4-carboxamide
+    phenolate/oxazoline N,O-donors, the central N-formylhydroxamate group, and the
+    terminal cyclic N-hydroxyornithine hydroxamate lactam in Nocardia sp. ND20.
+  evidence:
+  - reference: PMID:8931715
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Isolation, structural elucidation, and iron-chelating / radical-scavenging
+      characterization of formobactin from Nocardia sp. ND20.
+- target_id: CHEBI:29033
+  target_label: iron(2+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: Suppression of iron-catalyzed lipid peroxidation in rat brain homogenate
+    (IC50 = 0.065 uM) by chelating iron cations and preventing Fenton radical generation.
+  evidence:
+  - reference: PMID:8931715
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Formobactin potently inhibits iron-induced lipid peroxidation in rat brain
+      homogenate (IC50 = 0.065 uM) and protects neural cells from L-glutamate toxicity.
+ecological_roles:
+- CHEBI:26672
+- CHEBI:38161
+- CHEBI:35224
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_label: Formobactin NRPS-PKS synthetase
+  substrates:
+  - CHEBI:16914
+  - CHEBI:15729
+  - CHEBI:79095
+  products:
+  - CHEBI:65906
+  notes: Nonribosomal condensation of salicylic acid, L-threonine (cyclized to 5-methyl-1,3-oxazole),
+    an N-formyl-N-hydroxy-L-ornithine / alkyl-malonyl-derived spacer, and a C-terminal
+    N-hydroxy-L-ornithine cyclic hydroxamate in Nocardia sp. ND20 to yield formobactin.
+  evidence:
+  - reference: PMID:8931715
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Isolation and structural elucidation of the nocobactin-type phenyloxazole-hydroxamate
+      siderophore formobactin from Nocardia sp. ND20.
+causal_graphs:
+- graph_id: formobactin_biosynthesis_and_iron_chelation
+  scope: BIOACTIVITY
+  description: Biosynthesis of the phenyloxazole-hydroxamate siderophore formobactin
+    in Nocardia sp. ND20, hexadentate chelation of Fe(III)/Fe(II), and inhibition
+    of iron-dependent oxidative stress and lipid peroxidation.
+  nodes:
+  - node_id: salicylate
+    label: salicylic acid
+    node_type: PRECURSOR
+    identifier: CHEBI:16914
+    grounding_status: GROUNDED
+  - node_id: l_ornithine
+    label: L-ornithine
+    node_type: PRECURSOR
+    identifier: CHEBI:15729
+    grounding_status: GROUNDED
+  - node_id: h_orn
+    label: N(5)-hydroxy-L-ornithine
+    node_type: PRECURSOR
+    identifier: CHEBI:79095
+    grounding_status: GROUNDED
+  - node_id: formobactin_nrps
+    label: Formobactin NRPS-PKS synthetase
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: formobactin
+    label: formobactin
+    node_type: COMPOUND
+    identifier: CHEBI:65906
+    grounding_status: GROUNDED
+  - node_id: fe3
+    label: iron(3+)
+    node_type: OTHER
+    identifier: CHEBI:29034
+    grounding_status: GROUNDED
+  - node_id: fe2
+    label: iron(2+)
+    node_type: OTHER
+    identifier: CHEBI:29033
+    grounding_status: GROUNDED
+  - node_id: oxidative_stress
+    label: response to oxidative stress
+    node_type: PROCESS
+    identifier: GO:0006979
+    grounding_status: GROUNDED
+  edges:
+  - subject: salicylate
+    predicate: substrate_of
+    object: formobactin_nrps
+    notes: Forms the 2-hydroxyphenyl-5-methyloxazole chelating cap.
+    evidence:
+    - reference: PMID:8931715
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Formobactin contains a 2-(2-hydroxyphenyl)-5-methyloxazole-4-carboxamide
+        cap.
+  - subject: l_ornithine
+    predicate: converted_to
+    object: h_orn
+    notes: N5-hydroxylation generates the hydroxamate building blocks.
+    evidence:
+    - reference: PMID:8931715
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Formobactin contains N-formylhydroxamate and cyclic N-hydroxyornithine
+        lactam moieties.
+  - subject: h_orn
+    predicate: substrate_of
+    object: formobactin_nrps
+    notes: Incorporated into the internal N-formylhydroxamate and terminal cyclic
+      hydroxamate rings.
+    evidence:
+    - reference: PMID:8931715
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: NMR structure elucidation of formobactin.
+  - subject: formobactin_nrps
+    predicate: synthesizes
+    object: formobactin
+    notes: Produces formobactin in Nocardia sp. ND20.
+    evidence:
+    - reference: PMID:8931715
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Purification of formobactin from Nocardia sp. ND20 mycelium.
+  - subject: formobactin
+    predicate: chelates
+    object: fe3
+    notes: Hexadentate coordination of ferric iron(3+) via phenolate, oxazole N, and
+      two hydroxamate groups.
+    evidence:
+    - reference: PMID:8931715
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Iron-binding characterization of formobactin.
+  - subject: formobactin
+    predicate: chelates
+    object: fe2
+    notes: Sequesters catalytic iron to block Fenton-type lipid peroxidation (IC50
+      = 0.065 uM).
+    evidence:
+    - reference: PMID:8931715
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Inhibition of lipid peroxidation in rat brain homogenate by formobactin.
+  - subject: formobactin
+    predicate: regulates
+    object: oxidative_stress
+    notes: Protects cells against iron-catalyzed free-radical oxidative damage.
+    evidence:
+    - reference: PMID:8931715
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Suppression of free radical generation and glutamate-induced neurotoxicity.
+curation_history:
+- timestamp: '2026-10-31T08:00:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-31T08:42:25Z'
+  curator: naturalproductmech-agent
+  action: RECORD_CURATED
+  changes: Curated ecological_roles, metal-binding molecular_targets (including explicit
+    Critical Mineral & Material [CMM] annotations and primary literature evidence),
+    biosynthetic_pathway steps, and connected causal_graphs; promoted curation_status
+    to REVIEWED.
+  llm_assisted: true

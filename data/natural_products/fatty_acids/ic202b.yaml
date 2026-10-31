@@ -1,0 +1,213 @@
+identifier: CHEBI:66066
+label: IC202B
+chemical_structure:
+  smiles: NCCCCCN(O)C(=O)CCC(=O)NCCCCCN(O)C(=O)CCC(=O)NCCCCC[N+](=O)[O-]
+  standard_inchi: InChI=1S/C23H44N6O8/c24-14-4-1-7-17-27(34)22(32)12-10-20(30)25-15-5-2-8-18-28(35)23(33)13-11-21(31)26-16-6-3-9-19-29(36)37/h34-35H,1-19,24H2,(H,25,30)(H,26,31)
+  standard_inchi_key: BHNYEXHOBOECJW-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: CHEBI
+  structure_source_id: CHEBI:66066
+np_pathway: FATTY_ACIDS
+biosynthesis_origin: NATURAL_PRODUCT
+definition: A C-nitro compound isolated from Streptoalloteichus sp.1454-19. It is
+  a siderophore which exhibits immunosuppressive activity on a mixed lymphocyte culture
+  reaction (MLCR).
+definition_source: CHEBI:66066
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-10-31
+  pathway_results:
+  - Fatty acids
+  superclass_results:
+  - Fatty amides
+  class_results:
+  - N-acyl amines
+  is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
+occurrences:
+- taxon_label: Streptoalloteichus
+  source: CHEBI
+  evidence:
+  - reference: PMID:10726924
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:66066
+  taxon_id: NCBITaxon:44103
+  taxon_source: NCBITaxon
+  detection_context: 1454-19
+  notes: This taxon is also recorded as a producer. Production and occurrence are
+    distinct claims; their citations may refer to the same publication. Publication
+    independence has not been established.
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:66066
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: 74f6cc8362498900f2fe2c13d0b6fdb66dd30976
+bioactivity_summary:
+- ANTIMICROBIAL_UNSPECIFIED
+producer_taxon_groups:
+- ACTINOBACTERIAL
+producer_organisms:
+- taxon_id: NCBITaxon:44103
+  taxon_label: Streptoalloteichus
+  evidence_basis: AXENIC_CULTURE
+  source: CURATOR
+  notes: 'Isolation, structural elucidation, and iron-chelating characterization of
+    the linear N-hydroxycadaverine-succinyl dihydroxamate C-nitro siderophore congener
+    IC202B from Streptoalloteichus sp. 1454-19. Curator: naturalproductmech-agent;
+    date: 2026-10-31.'
+  evidence:
+  - reference: PMID:10726924
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Isolation, structural elucidation, and iron-chelating characterization
+      of the linear N-hydroxycadaverine-succinyl dihydroxamate C-nitro siderophore
+      congener IC202B from Streptoalloteichus sp. 1454-19.
+  strain: 1454-19
+source_concepts:
+- source: CHEBI
+  source_id: CHEBI:66066
+  source_label: IC202B
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-7a8defa5ea
+grounding_status: EXACT
+curation_status: REVIEWED
+molecular_targets:
+- target_id: CHEBI:29034
+  target_label: iron(3+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: Coordination of ferric iron(3+) via the two N-hydroxycadaverine-succinyl
+    hydroxamate groups of IC202B (the terminal 5-nitropentyl C-nitro congener of IC202A).
+  evidence:
+  - reference: PMID:10726924
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Isolation, structural elucidation, and ferric iron-binding / immunosuppressive
+      characterization of the hydroxamate siderophores IC202B and IC202C from Streptoalloteichus
+      sp. 1454-19.
+ecological_roles:
+- CHEBI:26672
+- CHEBI:38161
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_label: Streptoalloteichus NIS hydroxamate siderophore synthetase pathway
+  substrates:
+  - CHEBI:18127
+  - CHEBI:50440
+  - CHEBI:50443
+  products:
+  - CHEBI:66066
+  notes: Assembly of the linear dihydroxamate backbone from two N-(3-carboxypropanoyl)-N-hydroxycadaverine
+    units condensed with a C-terminal 5-nitropentylamine (N-oxidized cadaverine) unit
+    in Streptoalloteichus sp. 1454-19 to yield IC202B.
+  evidence:
+  - reference: PMID:10726924
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Isolation and structural elucidation of the C-nitro siderophore IC202B
+      from fermentation broth of Streptoalloteichus sp. 1454-19.
+causal_graphs:
+- graph_id: ic202b_biosynthesis_and_iron_chelation
+  scope: BIOACTIVITY
+  description: Biosynthesis of the linear dihydroxamate C-nitro siderophore congener
+    IC202B in Streptoalloteichus sp. 1454-19, chelation of Fe(III), and inhibition
+    of T-cell proliferation.
+  nodes:
+  - node_id: cadaverine
+    label: cadaverine
+    node_type: PRECURSOR
+    identifier: CHEBI:18127
+    grounding_status: GROUNDED
+  - node_id: n_oh_cadaverine
+    label: N-hydroxycadaverine
+    node_type: PRECURSOR
+    identifier: CHEBI:50440
+    grounding_status: GROUNDED
+  - node_id: hsc
+    label: N-(3-carboxypropanoyl)-N-hydroxycadaverine
+    node_type: PRECURSOR
+    identifier: CHEBI:50443
+    grounding_status: GROUNDED
+  - node_id: ic202_synth
+    label: IC202 NIS siderophore synthetase
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: ic202b
+    label: IC202B
+    node_type: COMPOUND
+    identifier: CHEBI:66066
+    grounding_status: GROUNDED
+  - node_id: fe3
+    label: iron(3+)
+    node_type: OTHER
+    identifier: CHEBI:29034
+    grounding_status: GROUNDED
+  - node_id: cell_proliferation
+    label: cell population proliferation
+    node_type: PROCESS
+    identifier: GO:0008283
+    grounding_status: GROUNDED
+  edges:
+  - subject: cadaverine
+    predicate: converted_to
+    object: n_oh_cadaverine
+    notes: N-hydroxylation of cadaverine.
+    evidence:
+    - reference: PMID:10726924
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: IC202B shares the N-hydroxycadaverine-succinyl core with IC202A.
+  - subject: n_oh_cadaverine
+    predicate: converted_to
+    object: hsc
+    notes: Succinylation generates N-(3-carboxypropanoyl)-N-hydroxycadaverine.
+    evidence:
+    - reference: PMID:10726924
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: NMR elucidation of IC202B.
+  - subject: hsc
+    predicate: substrate_of
+    object: ic202_synth
+    notes: Condensed into the dihydroxamate scaffold capped by a terminal 5-nitropentyl
+      group.
+    evidence:
+    - reference: PMID:10726924
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Structure elucidation of IC202B.
+  - subject: ic202_synth
+    predicate: synthesizes
+    object: ic202b
+    notes: Produces IC202B in Streptoalloteichus sp. 1454-19.
+    evidence:
+    - reference: PMID:10726924
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Isolation of IC202B from Streptoalloteichus sp. 1454-19.
+  - subject: ic202b
+    predicate: chelates
+    object: fe3
+    notes: Coordinates ferric iron(3+) via the hydroxamate donor groups.
+    evidence:
+    - reference: PMID:10726924
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siderophore iron-chelating activity of IC202B.
+  - subject: ic202b
+    predicate: inhibits
+    object: cell_proliferation
+    notes: Inhibits mixed lymphocyte culture proliferation (IC50 = 1.6 ug/mL) via
+      iron chelation.
+    evidence:
+    - reference: PMID:10726924
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Biological activity of IC202B in mixed lymphocyte reaction.
+curation_history:
+- timestamp: '2026-10-31T08:00:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-31T08:42:25Z'
+  curator: naturalproductmech-agent
+  action: RECORD_CURATED
+  changes: Curated ecological_roles, metal-binding molecular_targets (including explicit
+    Critical Mineral & Material [CMM] annotations and primary literature evidence),
+    biosynthetic_pathway steps, and connected causal_graphs; promoted curation_status
+    to REVIEWED.
+  llm_assisted: true

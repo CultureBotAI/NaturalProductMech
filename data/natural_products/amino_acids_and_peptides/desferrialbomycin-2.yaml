@@ -1,0 +1,274 @@
+identifier: CHEBI:83200
+label: desferrialbomycin δ2
+chemical_structure:
+  smiles: '[H][C@]1([C@@H](O)[C@@H](NC(=O)[C@H](CO)NC(=O)[C@H](CCCN(O)C(C)=O)NC(=O)[C@H](CCCN(O)C(C)=O)NC(=O)[C@@H](N)CCCN(O)C(C)=O)C(=O)O)S[C@@]([H])(n2ccc(=NC(N)=O)n(C)c2=O)[C@H](O)[C@H]1O'
+  standard_inchi: InChI=1S/C37H60N12O18S/c1-17(51)47(65)12-5-8-20(38)30(57)40-21(9-6-13-48(66)18(2)52)31(58)41-22(10-7-14-49(67)19(3)53)32(59)42-23(16-50)33(60)44-25(35(61)62)26(54)29-27(55)28(56)34(68-29)46-15-11-24(43-36(39)63)45(4)37(46)64/h11,15,20-23,25-29,34,50,54-56,65-67H,5-10,12-14,16,38H2,1-4H3,(H2,39,63)(H,40,57)(H,41,58)(H,42,59)(H,44,60)(H,61,62)/t20-,21-,22-,23-,25+,26-,27+,28+,29+,34+/m0/s1
+  standard_inchi_key: YXNKTOYTHKJHIU-RREKCFDTSA-N
+  stereo_complete: true
+  structure_source: CHEBI
+  structure_source_id: CHEBI:83200
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+biosynthesis_origin: NATURAL_PRODUCT
+definition: A member of the class of desferrialbomycins that is desferrialbomycin
+  ε in which the hydrogen attached to the nitrogen at position 4 of the pyrimidone
+  moiety is replaced by a carbamoyl group. The iron(III) complex of desferrialbomycin
+  δ1 is the antibiotic albomycin δ2.
+definition_source: CHEBI:83200
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-10-31
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_taxon_groups:
+- ACTINOBACTERIAL
+producer_organisms:
+- taxon_id: NCBITaxon:1931
+  taxon_label: Streptomyces sp.
+  evidence_basis: BGC_CHARACTERIZED
+  source: CURATOR
+  notes: 'Sequencing, heterologous expression, and gene inactivation of the abmA-R
+    biosynthetic gene cluster (mibig:BGC0002300) in Streptomyces sp. ATCC 700974 establish
+    biosynthesis of the Trojan-horse peptidyl-nucleoside siderophore-antibiotic albomycin
+    delta2 (desferrialbomycin delta2). Curator: naturalproductmech-agent; date: 2026-10-31.'
+  evidence:
+  - reference: PMID:22704654
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Sequencing, heterologous expression, and gene inactivation of the abmA-R
+      biosynthetic gene cluster (mibig:BGC0002300) in Streptomyces sp. ATCC 700974
+      establish biosynthesis of the Trojan-horse peptidyl-nucleoside siderophore-antibiotic
+      albomycin delta2 (desferrialbomycin delta2).
+  strain: ATCC 700974
+  biosynthetic_gene_cluster: mibig:BGC0002300
+- taxon_id: NCBITaxon:1911
+  taxon_label: Streptomyces griseus
+  evidence_basis: AXENIC_CULTURE
+  source: CURATOR
+  notes: 'Isolation and characterization of albomycin produced by Streptomyces griseus
+    strain TÜ 6 and active transport and intracellular cleavage of its ferric chelate
+    in Escherichia coli K-12. Curator: naturalproductmech-agent; date: 2026-10-31.'
+  evidence:
+  - reference: PMID:387415
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Isolation and characterization of albomycin produced by Streptomyces griseus
+      strain TÜ 6 and active transport and intracellular cleavage of its ferric chelate
+      in Escherichia coli K-12.
+  strain: TÜ 6
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002300
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1931
+  organism_label: Streptomyces sp.
+  evidence:
+  - reference: PMID:22704654
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Sequencing, heterologous expression, and gene inactivation of the abmA-R
+      biosynthetic gene cluster (mibig:BGC0002300) in Streptomyces sp. ATCC 700974
+      establish biosynthesis of the Trojan-horse peptidyl-nucleoside siderophore-antibiotic
+      albomycin delta2 (desferrialbomycin delta2).
+  genome_accession: genbank:JN252488.1
+  locus_from: 6184
+  locus_to: 34320
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: CHEBI
+  source_id: CHEBI:83200
+  source_label: desferrialbomycin δ2
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-64679f1f01
+grounding_status: EXACT
+curation_status: REVIEWED
+molecular_targets:
+- target_id: CHEBI:29034
+  target_label: iron(3+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: Hexadentate octahedral coordination of ferric iron(3+) via the N-terminal
+    tri-N5-acetyl-N5-hydroxy-L-ornithine peptide carrier moiety to form the active
+    Trojan-horse sideromycin albomycin delta2.
+  evidence:
+  - reference: PMID:22704654
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Identification and characterization of the abmA-R biosynthetic gene cluster
+      (mibig:BGC0002300) for the peptidyl nucleoside sideromycin albomycin delta2
+      in Streptomyces sp. ATCC 700974.
+  - reference: PMID:10850805
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Crystal structures of Escherichia coli outer membrane receptor FhuA in
+      complex with ferric-bound albomycin delta2 at 2.95 A resolution.
+  - reference: PMID:387415
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Demonstration of ferric hydroxamate carrier-mediated uptake and intracellular
+      peptidase cleavage of albomycin in Escherichia coli K-12.
+ecological_roles:
+- CHEBI:26672
+- CHEBI:38161
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_label: AbmA-AbmR biosynthetic enzymes (mibig:BGC0002300)
+  substrates:
+  - CHEBI:15729
+  - CHEBI:17115
+  - CHEBI:16704
+  - CHEBI:15351
+  products:
+  - CHEBI:83200
+  notes: Biosynthesis of the 6'-amino-4'-thioheptose nucleoside warhead (SB-217452)
+    from uridine and L-serine, coupled to the N-terminal tri-N5-acetyl-N5-hydroxy-L-ornithine
+    siderophore peptide to yield desferrialbomycin delta2.
+  evidence:
+  - reference: PMID:22704654
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Genetic deletion and heterologous expression of the abm gene cluster (mibig:BGC0002300)
+      from Streptomyces sp. ATCC 700974 establish the biosynthetic pathway for albomycin
+      delta2.
+causal_graphs:
+- graph_id: desferrialbomycin_delta2_trojan_horse_sideromycin
+  scope: BIOACTIVITY
+  description: Biosynthesis of the Trojan-horse peptidyl-nucleoside sideromycin desferrialbomycin
+    delta2 via the abmA-R cluster (mibig:BGC0002300) in Streptomyces sp. ATCC 700974,
+    trihydroxamate chelation of Fe(III), and active uptake via bacterial FhuA and
+    FhuD.
+  nodes:
+  - node_id: l_ornithine
+    label: L-ornithine
+    node_type: PRECURSOR
+    identifier: CHEBI:15729
+    grounding_status: GROUNDED
+  - node_id: l_serine
+    label: L-serine
+    node_type: PRECURSOR
+    identifier: CHEBI:17115
+    grounding_status: GROUNDED
+  - node_id: uridine
+    label: uridine
+    node_type: PRECURSOR
+    identifier: CHEBI:16704
+    grounding_status: GROUNDED
+  - node_id: abm_cluster
+    label: abmA-R biosynthetic gene cluster
+    node_type: GENE_CLUSTER
+    identifier: mibig:BGC0002300
+    grounding_status: GROUNDED
+  - node_id: desferrialbomycin
+    label: desferrialbomycin δ2
+    node_type: COMPOUND
+    identifier: CHEBI:83200
+    grounding_status: GROUNDED
+  - node_id: fe3
+    label: iron(3+)
+    node_type: OTHER
+    identifier: CHEBI:29034
+    grounding_status: GROUNDED
+  - node_id: fhua
+    label: Outer membrane transporter FhuA
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: fhud
+    label: Periplasmic binding protein FhuD
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: siderophore_transport
+    label: siderophore transport
+    node_type: PROCESS
+    identifier: GO:0015891
+    grounding_status: GROUNDED
+  edges:
+  - subject: l_ornithine
+    predicate: substrate_of
+    object: abm_cluster
+    notes: Supplies the three N5-acetyl-N5-hydroxy-L-ornithine residues of the siderophore
+      cap.
+    evidence:
+    - reference: PMID:22704654
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: abm cluster enzymes hydroxylate, acetylate, and condense three L-ornithine
+        units.
+  - subject: l_serine
+    predicate: substrate_of
+    object: abm_cluster
+    notes: Provides the L-seryl linker between the trihydroxamate peptide and the
+      thionucleoside warhead.
+    evidence:
+    - reference: PMID:22704654
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: L-serine links the trihydroxamate peptide to the thioribosyl nucleoside.
+  - subject: uridine
+    predicate: substrate_of
+    object: abm_cluster
+    notes: Precursor of the N4-carbamoyl-3-methylcytidine thionucleoside warhead.
+    evidence:
+    - reference: PMID:22704654
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Abm enzymes elaborate the thionucleoside core from uridine.
+  - subject: abm_cluster
+    predicate: synthesizes
+    object: desferrialbomycin
+    notes: Produces metal-free desferrialbomycin delta2.
+    evidence:
+    - reference: PMID:22704654
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Heterologous expression of BGC0002300 in S. coelicolor produces albomycin
+        delta2.
+  - subject: desferrialbomycin
+    predicate: chelates
+    object: fe3
+    notes: Trihydroxamate peptide cap coordinates ferric iron(3+) to form albomycin
+      delta2.
+    evidence:
+    - reference: PMID:10850805
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Octahedral Fe(III) coordination by the trihydroxamate moiety.
+  - subject: desferrialbomycin
+    predicate: binds
+    object: fhua
+    notes: In its ferric-complexed form (albomycin delta2), desferrialbomycin delta2
+      binds the E. coli outer membrane receptor FhuA.
+    evidence:
+    - reference: PMID:10850805
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Crystal structure of FhuA-albomycin delta2 complex.
+  - subject: fhua
+    predicate: transfers_to
+    object: fhud
+    notes: Translocates ferric-albomycin into the periplasm for capture by FhuD.
+    evidence:
+    - reference: PMID:10742172
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 2.0 A crystal structure of E. coli periplasmic binding protein FhuD bound
+        to albomycin delta2.
+  - subject: fhud
+    predicate: enables
+    object: siderophore_transport
+    notes: Mediates Trojan-horse import into the bacterial cytoplasm where peptidase
+      N releases the seryl-tRNA synthetase inhibitor warhead.
+    evidence:
+    - reference: PMID:387415
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Intracellular peptidase cleavage is required for albomycin antibacterial
+        activity.
+curation_history:
+- timestamp: '2026-10-31T08:00:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-31T09:48:48Z'
+  curator: naturalproductmech-agent
+  action: RECORD_CURATED
+  changes: Curated ecological_roles, metal-binding molecular_targets (including explicit
+    Critical Mineral & Material [CMM] annotations and primary literature evidence),
+    biosynthetic_pathway steps, and connected causal_graphs; promoted curation_status
+    to REVIEWED.
+  llm_assisted: true

@@ -1,0 +1,228 @@
+identifier: CHEBI:65375
+label: agrochelin
+chemical_structure:
+  smiles: '[H][C@@]1([C@@H](O)C(C)(C)C(=O)O)CS[C@@]([H])([C@@]2([H])CSC(c3c(O)cccc3CCCCC)=N2)N1C'
+  standard_inchi: InChI=1S/C23H34N2O4S2/c1-5-6-7-9-14-10-8-11-17(26)18(14)20-24-15(12-30-20)21-25(4)16(13-31-21)19(27)23(2,3)22(28)29/h8,10-11,15-16,19,21,26-27H,5-7,9,12-13H2,1-4H3,(H,28,29)/t15-,16+,19-,21+/m1/s1
+  standard_inchi_key: QZBCDLLHQSDFIG-ZEVBXJOLSA-N
+  stereo_complete: true
+  structure_source: CHEBI
+  structure_source_id: CHEBI:65375
+np_pathway: UNCLASSIFIED
+biosynthesis_origin: NATURAL_PRODUCT
+definition: A member of the class thiazolidines that is (3S)-3-hydroxy-2,2-dimethyl-3-[(4R)-3-methyl-1,3-thiazolidin-4-yl]propanoic
+  acid which is substituted at position 2 by a (4R)-2-(2-hydroxy-6-pentylphenyl)-4,5-dihydro-1,3-thiazol-4-yl
+  group. A cytotoxic antibiotic, it is produced by the fermentation of Agrobacterium.
+definition_source: CHEBI:65375
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-10-31
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Melithiazole and Myxothiazole derivatives
+  is_glycoside: false
+occurrence_taxon_groups:
+- OTHER_BACTERIAL
+occurrences:
+- taxon_label: Agrobacterium sp.
+  source: CHEBI
+  evidence:
+  - reference: PMID:10656570
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:65375
+  taxon_id: NCBITaxon:361
+  taxon_source: NCBITaxon
+  notes: Marine Agrobacterium This taxon is also recorded as a producer. Production
+    and occurrence are distinct claims; their citations may refer to the same publication.
+    Publication independence has not been established.
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:65375
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: 74f6cc8362498900f2fe2c13d0b6fdb66dd30976
+bioactivity_summary:
+- ANTIMICROBIAL_UNSPECIFIED
+producer_taxon_groups:
+- OTHER_BACTERIAL
+producer_organisms:
+- taxon_id: NCBITaxon:361
+  taxon_label: Agrobacterium sp.
+  evidence_basis: AXENIC_CULTURE
+  source: CURATOR
+  notes: 'Bioassay-guided isolation, 2D-NMR structure elucidation, and iron-chelation
+    characterization of the thiazoline-thiazolidine alkaloid siderophore agrochelin
+    from marine Agrobacterium sp. strain L-335-5. Curator: naturalproductmech-agent;
+    date: 2026-10-31.'
+  evidence:
+  - reference: PMID:10656570
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Bioassay-guided isolation, 2D-NMR structure elucidation, and iron-chelation
+      characterization of the thiazoline-thiazolidine alkaloid siderophore agrochelin
+      from marine Agrobacterium sp. strain L-335-5.
+  strain: L-335-5
+source_concepts:
+- source: CHEBI
+  source_id: CHEBI:65375
+  source_label: agrochelin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-726c4fb56f
+grounding_status: EXACT
+curation_status: REVIEWED
+molecular_targets:
+- target_id: CHEBI:29034
+  target_label: iron(3+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: Chelation of ferric iron(3+) via the 2-(2-hydroxy-6-pentylphenyl)-4,5-dihydro-1,3-thiazol-4-yl
+    (phenolate and thiazoline N), 3-methyl-1,3-thiazolidin-4-yl, and 3-hydroxy-2,2-dimethylpropanoate
+    oxygen and nitrogen donor groups of agrochelin.
+  evidence:
+  - reference: PMID:10656570
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Isolation, structural elucidation, and iron-chelating / cytotoxic characterization
+      of the thiazoline-thiazolidine alkaloid siderophore agrochelin from the marine
+      bacterium Agrobacterium sp. L-335-5.
+  - reference: PMID:31293678
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Genomics-guided discovery and siderophore characterization of the agrochelin
+      stereoisomer massiliachelin.
+ecological_roles:
+- CHEBI:26672
+- CHEBI:38161
+- CHEBI:35224
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_label: Agrochelin hybrid PKS-NRPS synthetase
+  substrates:
+  - CHEBI:15351
+  - CHEBI:15531
+  - CHEBI:17561
+  products:
+  - CHEBI:65375
+  notes: Hybrid PKS-NRPS assembly of a polyketide-derived 6-pentylsalicylate starter
+    unit condensed with two L-cysteine residues (cyclized to tandem 4,5-dihydro-1,3-thiazole
+    and N-methyl-1,3-thiazolidine rings) and a terminal 3-hydroxy-2,2-dimethylpropanoate
+    unit in marine Agrobacterium sp. L-335-5 to yield agrochelin.
+  evidence:
+  - reference: PMID:10656570
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Isolation and 2D-NMR structural elucidation of agrochelin from fermentation
+      broth of marine Agrobacterium sp. L-335-5.
+  - reference: PMID:31293678
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Characterization of the homologous PKS-NRPS biosynthetic pathway assembling
+      the 6-pentylsalicyl-thiazoline-thiazolidine-hydroxyisobutyrate scaffold.
+causal_graphs:
+- graph_id: agrochelin_biosynthesis_and_metal_chelation
+  scope: BIOACTIVITY
+  description: Hybrid PKS-NRPS biosynthesis of the marine bacterial 6-pentylsalicyl-thiazoline-thiazolidine
+    siderophore agrochelin in Agrobacterium sp. L-335-5, chelation of Fe(III), and
+    iron-chelation-associated cytotoxicity.
+  nodes:
+  - node_id: acetyl_coa
+    label: acetyl-CoA
+    node_type: PRECURSOR
+    identifier: CHEBI:15351
+    grounding_status: GROUNDED
+  - node_id: malonyl_coa
+    label: malonyl-CoA
+    node_type: PRECURSOR
+    identifier: CHEBI:15531
+    grounding_status: GROUNDED
+  - node_id: l_cysteine
+    label: L-cysteine
+    node_type: PRECURSOR
+    identifier: CHEBI:17561
+    grounding_status: GROUNDED
+  - node_id: agrochelin_pathway
+    label: Agrochelin hybrid PKS-NRPS synthetase
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: agrochelin
+    label: agrochelin
+    node_type: COMPOUND
+    identifier: CHEBI:65375
+    grounding_status: GROUNDED
+  - node_id: fe3
+    label: iron(3+)
+    node_type: OTHER
+    identifier: CHEBI:29034
+    grounding_status: GROUNDED
+  - node_id: cell_proliferation
+    label: cell population proliferation
+    node_type: PROCESS
+    identifier: GO:0008283
+    grounding_status: GROUNDED
+  edges:
+  - subject: acetyl_coa
+    predicate: substrate_of
+    object: agrochelin_pathway
+    notes: Starter unit for polyketide assembly of the 2-hydroxy-6-pentylphenyl moiety.
+    evidence:
+    - reference: PMID:10656570
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Agrochelin contains a 2-hydroxy-6-pentylphenyl aromatic cap.
+  - subject: malonyl_coa
+    predicate: substrate_of
+    object: agrochelin_pathway
+    notes: Extender units for the 6-pentylsalicylate and 3-hydroxy-2,2-dimethylpropanoate
+      moieties.
+    evidence:
+    - reference: PMID:31293678
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PKS modules assemble the 6-pentylsalicylate starter and dimethylmalonyl-derived
+        C-terminal extension.
+  - subject: l_cysteine
+    predicate: substrate_of
+    object: agrochelin_pathway
+    notes: Two L-cysteine units are cyclized into the tandem 4,5-dihydro-1,3-thiazole
+      and 3-methyl-1,3-thiazolidine rings.
+    evidence:
+    - reference: PMID:10656570
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 2D-NMR structure elucidation identifies tandem dihydrothiazole and N-methylthiazolidine
+        rings.
+  - subject: agrochelin_pathway
+    predicate: synthesizes
+    object: agrochelin
+    notes: Produces agrochelin in Agrobacterium sp. L-335-5.
+    evidence:
+    - reference: PMID:10656570
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Isolation of agrochelin from marine Agrobacterium sp. L-335-5.
+  - subject: agrochelin
+    predicate: chelates
+    object: fe3
+    notes: Coordinates ferric iron(3+) via phenolate, thiazoline, thiazolidine, and
+      beta-hydroxy acid donors.
+    evidence:
+    - reference: PMID:10656570
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siderophore iron-binding activity of agrochelin.
+  - subject: agrochelin
+    predicate: inhibits
+    object: cell_proliferation
+    notes: Exhibits potent cytotoxicity against tumor cell lines via metal chelation.
+    evidence:
+    - reference: PMID:10656570
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sub-micromolar cytotoxicity of agrochelin against P388, A549, HT29, and
+        MEL28 tumor cells.
+curation_history:
+- timestamp: '2026-10-31T08:00:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-31T08:42:25Z'
+  curator: naturalproductmech-agent
+  action: RECORD_CURATED
+  changes: Curated ecological_roles, metal-binding molecular_targets (including explicit
+    Critical Mineral & Material [CMM] annotations and primary literature evidence),
+    biosynthetic_pathway steps, and connected causal_graphs; promoted curation_status
+    to REVIEWED.
+  llm_assisted: true

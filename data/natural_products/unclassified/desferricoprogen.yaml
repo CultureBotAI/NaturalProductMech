@@ -1,0 +1,328 @@
+identifier: CHEBI:83125
+label: desferricoprogen
+chemical_structure:
+  smiles: '[H][C@@]1(CCCN(O)C(=O)/C=C(\C)CCO)NC(=O)[C@]([H])(CCCN(O)C(=O)/C=C(\C)CCOC(=O)[C@H](CCCN(O)C(=O)/C=C(\C)CCO)NC(C)=O)NC1=O'
+  standard_inchi: InChI=1S/C35H56N6O13/c1-23(11-17-42)20-30(45)39(51)14-5-8-27-33(48)38-28(34(49)37-27)9-6-15-40(52)32(47)22-25(3)13-19-54-35(50)29(36-26(4)44)10-7-16-41(53)31(46)21-24(2)12-18-43/h20-22,27-29,42-43,51-53H,5-19H2,1-4H3,(H,36,44)(H,37,49)(H,38,48)/b23-20+,24-21+,25-22+/t27-,28-,29-/m0/s1
+  standard_inchi_key: AKLLFACZGZTMGS-FCRFISLRSA-N
+  stereo_complete: true
+  structure_source: CHEBI
+  structure_source_id: CHEBI:83125
+np_pathway: UNCLASSIFIED
+biosynthesis_origin: NATURAL_PRODUCT
+definition: A member of the class of 2,5-diketopiperazines that is 2,5-diketopiperazine
+  which is substituted at positions 3 and 6 by 3-(hydroxyamino)propyl groups in which
+  the nitrogens have been acylated by (2E)-5-hydroxy-3-methylpent-2-enoyl groups.
+  The substituent at position 3 has been further modified by having its terminal hydroxy
+  group esterified by condensation with the carboxy group of N2-acetyl-N5-hydroxy-L-ornithine
+  in which the N5 nitrogen has been acylated by a (2E)-5-hydroxy-3-methylpent-2-enoyl
+  group.
+definition_source: CHEBI:83125
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-10-31
+  pathway_results: []
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+producer_taxon_groups:
+- FUNGAL
+producer_organisms:
+- taxon_id: NCBITaxon:5141
+  taxon_label: Neurospora crassa
+  evidence_basis: AXENIC_CULTURE
+  source: CURATOR
+  notes: 'Purification and Mossbauer/HPLC characterization of coprogen (desferricoprogen
+    ferric complex) biosynthesized as the major extracellular siderophore of iron-deficient
+    Neurospora crassa 74A. Curator: naturalproductmech-agent; date: 2026-10-31.'
+  evidence:
+  - reference: PMID:2951253
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Purification and Mossbauer/HPLC characterization of coprogen (desferricoprogen
+      ferric complex) biosynthesized as the major extracellular siderophore of iron-deficient
+      Neurospora crassa 74A.
+  strain: 74A
+- taxon_id: NCBITaxon:5061
+  taxon_label: Aspergillus niger
+  evidence_basis: BGC_CHARACTERIZED
+  source: CURATOR
+  notes: 'Targeted gene deletion of sidA (An16g01850) and sidD (An03g03560) and LC-MS
+    metabolite profiling in Aspergillus niger N402 establish biosynthesis of coprogen
+    (desferricoprogen) and coprogen B. Curator: naturalproductmech-agent; date: 2026-10-31.'
+  evidence:
+  - reference: PMID:25062661
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Targeted gene deletion of sidA (An16g01850) and sidD (An03g03560) and LC-MS
+      metabolite profiling in Aspergillus niger N402 establish biosynthesis of coprogen
+      (desferricoprogen) and coprogen B.
+  strain: N402
+source_concepts:
+- source: CHEBI
+  source_id: CHEBI:83125
+  source_label: desferricoprogen
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-e61206e136
+grounding_status: EXACT
+curation_status: REVIEWED
+molecular_targets:
+- target_id: CHEBI:29034
+  target_label: iron(3+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: Hexadentate octahedral coordination of ferric iron(3+) via three trans-anhydromevalonyl-N5-hydroxy-L-ornithine
+    hydroxamate groups (composed of a diketopiperazine dimer ester-linked to a third
+    N-acetylated monomer) to form coprogen.
+  evidence:
+  - reference: PMID:2951253
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Mossbauer spectroscopy and in vivo transport characterization of ferric
+      coprogen (Fe(III)-desferricoprogen) in Neurospora crassa.
+  - reference: PMID:5484314
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Isolation and structural characterization of ferric coprogen and coprogen
+      B from filamentous fungi.
+  - reference: PMID:2934378
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Characterization of ferric coprogen recognition and transport in Neurospora
+      crassa.
+- target_id: CHEBI:84043
+  target_label: gallium(3+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: '[Critical Mineral & Material (CMM)] Octahedral trihydroxamate coordination
+    of trivalent gallium(3+) by desferricoprogen to form [Ga(III)]-coprogen, characterized
+    by 68Ga radiolabeling, complex stability assays, and microbial uptake.'
+  evidence:
+  - reference: PMID:20351354
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Radiolabeling, in vitro stability, and Aspergillus fumigatus uptake evaluation
+      of 68Ga-labeled fungal siderophores including [68Ga]Ga-coprogen.
+  - reference: PMID:40099411
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Radiochemical complexation, stability, partition coefficient, and microbial
+      uptake characterization of [68Ga]Ga-coprogen.
+- target_id: CHEBI:49544
+  target_label: chromium(3+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: '[Critical Mineral & Material (CMM)] Octahedral coordination of chromium(3+)
+    by desferricoprogen (cis-lambda and trans-delta coordination isomers resolved
+    by reverse-phase HPLC) that competitively inhibit coprogen uptake in Neurospora
+    crassa.'
+  evidence:
+  - reference: PMID:2934378
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Resolution and uptake-inhibition characterization of cis and trans coordination
+      isomers of chromic desferricoprogen in Neurospora crassa.
+ecological_roles:
+- CHEBI:26672
+- CHEBI:38161
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_label: L-ornithine N5-monooxygenase (SidA)
+  substrates:
+  - CHEBI:15729
+  products:
+  - CHEBI:79095
+  notes: FAD- and NADPH-dependent N5-hydroxylation of L-ornithine to N(5)-hydroxy-L-ornithine
+    by SidA (An16g01850 in Aspergillus niger).
+  evidence:
+  - reference: PMID:25062661
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Targeted deletion of sidA (An16g01850, L-ornithine N5-monooxygenase) in
+      Aspergillus niger N402 abolishes coprogen and coprogen B biosynthesis.
+  - reference: PMID:2951253
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Biosynthesis of extracellular coprogen in iron-deficient Neurospora crassa
+      74A.
+- step_number: 2
+  enzyme_label: Trans-anhydromevalonyl-CoA transferase (SidF), coprogen nonribosomal
+    peptide synthetase (SidD), and N-acetyltransferase
+  substrates:
+  - CHEBI:79095
+  - CHEBI:17710
+  - CHEBI:15351
+  - CHEBI:15422
+  products:
+  - CHEBI:133861
+  - CHEBI:83125
+  notes: N5-acylation of N(5)-hydroxy-L-ornithine with mevalonate-derived trans-anhydromevalonyl-CoA
+    followed by SidD (An03g03560) NRPS-catalyzed condensation of three N5-trans-anhydromevalonyl-N5-hydroxy-L-ornithine
+    units (forming a diketopiperazine ring linked via an ester bond to a third monomer)
+    to produce desferricoprogen B, and subsequent Nalpha-acetylation to yield desferricoprogen.
+  evidence:
+  - reference: PMID:25062661
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Targeted deletion of the sidD NRPS gene (An03g03560) in Aspergillus niger
+      N402 abolishes coprogen B and coprogen biosynthesis.
+  - reference: PMID:5484314
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Isolation and structural elucidation of coprogen B (N-deacetylated precursor)
+      and coprogen from filamentous fungi.
+causal_graphs:
+- graph_id: desferricoprogen_biosynthesis_and_metal_chelation
+  scope: BIOACTIVITY
+  description: Fungal NRPS-directed biosynthesis of the ester-linked diketopiperazine
+    trihydroxamate siderophore desferricoprogen in Neurospora crassa and Aspergillus
+    niger, hexadentate chelation of Fe(III) and CMM trivalent cations Ga(III) and
+    Cr(III), and bacterial xenosiderophore uptake via FhuE.
+  nodes:
+  - node_id: l_ornithine
+    label: L-ornithine
+    node_type: PRECURSOR
+    identifier: CHEBI:15729
+    grounding_status: GROUNDED
+  - node_id: mevalonate
+    label: (R)-mevalonic acid
+    node_type: PRECURSOR
+    identifier: CHEBI:17710
+    grounding_status: GROUNDED
+  - node_id: h_orn
+    label: N(5)-hydroxy-L-ornithine
+    node_type: PRECURSOR
+    identifier: CHEBI:79095
+    grounding_status: GROUNDED
+  - node_id: sidd
+    label: Coprogen nonribosomal peptide synthetase SidD
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: desferricoprogen_b
+    label: desferricoprogen B
+    node_type: PRECURSOR
+    identifier: CHEBI:133861
+    grounding_status: GROUNDED
+  - node_id: desferricoprogen
+    label: desferricoprogen
+    node_type: COMPOUND
+    identifier: CHEBI:83125
+    grounding_status: GROUNDED
+  - node_id: fe3
+    label: iron(3+)
+    node_type: OTHER
+    identifier: CHEBI:29034
+    grounding_status: GROUNDED
+  - node_id: ga3
+    label: gallium(3+)
+    node_type: OTHER
+    identifier: CHEBI:84043
+    grounding_status: GROUNDED
+  - node_id: cr3
+    label: chromium(3+)
+    node_type: OTHER
+    identifier: CHEBI:49544
+    grounding_status: GROUNDED
+  - node_id: fhue
+    label: Outer membrane receptor FhuE
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: siderophore_transport
+    label: siderophore transport
+    node_type: PROCESS
+    identifier: GO:0015891
+    grounding_status: GROUNDED
+  edges:
+  - subject: l_ornithine
+    predicate: converted_to
+    object: h_orn
+    notes: N5-hydroxylation of L-ornithine by SidA generates N(5)-hydroxy-L-ornithine.
+    evidence:
+    - reference: PMID:25062661
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: sidA (An16g01850) encodes L-ornithine N5-monooxygenase initiating coprogen
+        biosynthesis in Aspergillus niger.
+  - subject: mevalonate
+    predicate: substrate_of
+    object: sidd
+    notes: Supplies the trans-anhydromevalonyl acyl groups of the three hydroxamate
+      units.
+    evidence:
+    - reference: PMID:25062661
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Mevalonate-derived trans-anhydromevalonyl-CoA acylates N5-hydroxyornithine.
+  - subject: h_orn
+    predicate: substrate_of
+    object: sidd
+    notes: Following N5-acylation with trans-anhydromevalonyl-CoA, three N(5)-hydroxy-L-ornithine-derived
+      monomers are condensed by SidD.
+    evidence:
+    - reference: PMID:25062661
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: SidD NRPS assembles the coprogen B / coprogen trihydroxamate scaffold.
+  - subject: sidd
+    predicate: synthesizes
+    object: desferricoprogen_b
+    notes: Releases the N-deacetylated precursor desferricoprogen B.
+    evidence:
+    - reference: PMID:5484314
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Desferricoprogen B is the N-deacetylated derivative of desferricoprogen.
+  - subject: desferricoprogen_b
+    predicate: precursor_of
+    object: desferricoprogen
+    notes: Nalpha-acetylation converts desferricoprogen B into desferricoprogen.
+    evidence:
+    - reference: PMID:25062661
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Aspergillus niger produces both coprogen B and N-acetylated coprogen
+        via the SidD pathway.
+  - subject: desferricoprogen
+    predicate: chelates
+    object: fe3
+    notes: Hexadentate coordination of ferric iron(3+) to form coprogen.
+    evidence:
+    - reference: PMID:2951253
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Mossbauer study of ferric coprogen in Neurospora crassa.
+  - subject: desferricoprogen
+    predicate: chelates
+    object: ga3
+    notes: '[CMM] Octahedral coordination of trivalent gallium(3+) to form [Ga(III)]-coprogen.'
+    evidence:
+    - reference: PMID:20351354
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 68Ga radiolabeling, stability, and fungal uptake of [68Ga]Ga-coprogen.
+    - reference: PMID:40099411
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Radiochemical complexation, stability, and microbial uptake of [68Ga]Ga-coprogen.
+  - subject: desferricoprogen
+    predicate: chelates
+    object: cr3
+    notes: '[CMM] Octahedral coordination of chromium(3+) into cis and trans chromic
+      desferricoprogen isomers.'
+    evidence:
+    - reference: PMID:2934378
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Chromic desferricoprogen isomers inhibit coprogen uptake in Neurospora
+        crassa.
+  - subject: desferricoprogen
+    predicate: binds
+    object: fhue
+    notes: In its ferric-complexed form (coprogen), desferricoprogen is recognized
+      by the E. coli outer membrane receptor FhuE.
+    evidence:
+    - reference: PMID:3032906
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: FhuE is the outer membrane receptor for ferric-coprogen in E. coli.
+  - subject: fhue
+    predicate: enables
+    object: siderophore_transport
+    notes: TonB-dependent import of ferric-coprogen across the outer membrane.
+    evidence:
+    - reference: PMID:3032906
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: fhuE-mediated ferric-coprogen transport.
+curation_history:
+- timestamp: '2026-10-31T08:00:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-31T10:21:40Z'
+  curator: naturalproductmech-agent
+  action: RECORD_CURATED
+  changes: Curated ecological_roles, metal-binding molecular_targets (including explicit
+    Critical Mineral & Material [CMM] annotations and primary literature evidence),
+    biosynthetic_pathway steps, and connected causal_graphs; promoted curation_status
+    to REVIEWED.
+  llm_assisted: true

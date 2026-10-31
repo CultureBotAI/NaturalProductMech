@@ -1,0 +1,235 @@
+identifier: CHEBI:133861
+label: desferricoprogen B
+chemical_structure:
+  smiles: '[H][C@@]1(CCCN(O)C(=O)/C=C(\C)CCO)NC(=O)[C@]([H])(CCCN(O)C(=O)/C=C(\C)CCOC(=O)[C@@H](N)CCCN(O)C(=O)/C=C(\C)CCO)NC1=O'
+  standard_inchi: InChI=1S/C33H54N6O12/c1-22(10-16-40)19-28(42)37(48)13-4-7-25(34)33(47)51-18-12-24(3)21-30(44)39(50)15-6-9-27-32(46)35-26(31(45)36-27)8-5-14-38(49)29(43)20-23(2)11-17-41/h19-21,25-27,40-41,48-50H,4-18,34H2,1-3H3,(H,35,46)(H,36,45)/b22-19+,23-20+,24-21+/t25-,26-,27-/m0/s1
+  standard_inchi_key: XRSRJBBRTCEBNS-CAGSISFISA-N
+  stereo_complete: true
+  structure_source: CHEBI
+  structure_source_id: CHEBI:133861
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+biosynthesis_origin: NATURAL_PRODUCT
+definition: A member of the class of 2,5-diketopiperazines that is 2,5-diketopiperazine
+  which is substituted at positions 3 and 6 by 3-(hydroxyamino)propyl groups in which
+  the nitrogens have been acylated by (2E)-5-hydroxy-3-methylpent-2-enoyl groups.
+  The substituent at position 3 has been further modified by having its terminal hydroxy
+  group esterified by condensation with the carboxy group of N5-hydroxy-L-ornithine
+  in which the N5 nitrogen has been acylated by a (2E)-5-hydroxy-3-methylpent-2-enoyl
+  group.
+definition_source: CHEBI:133861
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-10-31
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+occurrence_taxon_groups:
+- FUNGAL
+occurrences:
+- taxon_label: Aspergillus niger
+  source: CHEBI
+  evidence:
+  - reference: PMID:25062661
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:133861
+  taxon_id: NCBITaxon:5061
+  taxon_source: NCBITaxon
+  detection_context: N402
+  notes: This taxon is also recorded as a producer. Production and occurrence are
+    distinct claims; their citations may refer to the same publication. Publication
+    independence has not been established.
+producer_taxon_groups:
+- FUNGAL
+producer_organisms:
+- taxon_id: NCBITaxon:5141
+  taxon_label: Neurospora crassa
+  evidence_basis: AXENIC_CULTURE
+  source: CURATOR
+  notes: 'Isolation and structural elucidation of desferricoprogen B (deacetyl-desferricoprogen)
+    secreted by iron-deficient axenic cultures of Neurospora crassa and Fusarium dimerum.
+    Curator: naturalproductmech-agent; date: 2026-10-31.'
+  evidence:
+  - reference: PMID:5484314
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Isolation and structural elucidation of desferricoprogen B (deacetyl-desferricoprogen)
+      secreted by iron-deficient axenic cultures of Neurospora crassa and Fusarium
+      dimerum.
+  strain: ATCC 10816
+- taxon_id: NCBITaxon:5061
+  taxon_label: Aspergillus niger
+  evidence_basis: BGC_CHARACTERIZED
+  source: CURATOR
+  notes: 'Targeted gene deletion of sidA (An16g01850, L-ornithine N5-monooxygenase)
+    and sidD (An03g03560, nonribosomal peptide synthetase) in Aspergillus niger N402
+    completely abolishes coprogen B (desferricoprogen B) biosynthesis. Curator: naturalproductmech-agent;
+    date: 2026-10-31.'
+  evidence:
+  - reference: PMID:25062661
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Targeted gene deletion of sidA (An16g01850, L-ornithine N5-monooxygenase)
+      and sidD (An03g03560, nonribosomal peptide synthetase) in Aspergillus niger
+      N402 completely abolishes coprogen B (desferricoprogen B) biosynthesis.
+  strain: N402
+source_concepts:
+- source: CHEBI
+  source_id: CHEBI:133861
+  source_label: desferricoprogen B
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-5e2d78b98d
+grounding_status: EXACT
+curation_status: REVIEWED
+molecular_targets:
+- target_id: CHEBI:29034
+  target_label: iron(3+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: Hexadentate octahedral coordination of ferric iron(3+) via three trans-anhydromevalonyl-N5-hydroxy-L-ornithine
+    hydroxamate groups to form coprogen B (deacetylcoprogen).
+  evidence:
+  - reference: PMID:5484314
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Isolation and structural elucidation of coprogen B (the ferric complex
+      of desferricoprogen B) from Penicillium, Fusarium, and Neurospora crassa.
+  - reference: PMID:25062661
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Genetic deletion of sidD in Aspergillus niger N402 abolishes biosynthesis
+      of coprogen B.
+ecological_roles:
+- CHEBI:26672
+- CHEBI:38161
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_label: Coprogen nonribosomal peptide synthetase (SidD)
+  substrates:
+  - CHEBI:15729
+  - CHEBI:17710
+  - CHEBI:79095
+  - CHEBI:15422
+  products:
+  - CHEBI:133861
+  notes: Iterative condensation of three N5-trans-anhydromevalonyl-N5-hydroxy-L-ornithine
+    units (forming a 2,5-diketopiperazine dimer esterified to a third monomer bearing
+    a free alpha-amino group) to release desferricoprogen B.
+  evidence:
+  - reference: PMID:25062661
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Functional characterization of the Aspergillus niger N402 sidD NRPS gene
+      (An03g03560) required for coprogen B biosynthesis.
+  - reference: PMID:5484314
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Chemical characterization of coprogen B from iron-deficient fungal cultures.
+causal_graphs:
+- graph_id: desferricoprogen_b_biosynthesis_and_metal_chelation
+  scope: BIOACTIVITY
+  description: SidD NRPS-catalyzed biosynthesis of the trihydroxamate siderophore
+    desferricoprogen B in filamentous fungi (Neurospora crassa, Aspergillus niger)
+    and octahedral chelation of ferric iron(3+) to form coprogen B.
+  nodes:
+  - node_id: l_ornithine
+    label: L-ornithine
+    node_type: PRECURSOR
+    identifier: CHEBI:15729
+    grounding_status: GROUNDED
+  - node_id: mevalonate
+    label: (R)-mevalonic acid
+    node_type: PRECURSOR
+    identifier: CHEBI:17710
+    grounding_status: GROUNDED
+  - node_id: h_orn
+    label: N(5)-hydroxy-L-ornithine
+    node_type: PRECURSOR
+    identifier: CHEBI:79095
+    grounding_status: GROUNDED
+  - node_id: sidd
+    label: Coprogen nonribosomal peptide synthetase SidD
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: desferricoprogen_b
+    label: desferricoprogen B
+    node_type: COMPOUND
+    identifier: CHEBI:133861
+    grounding_status: GROUNDED
+  - node_id: fe3
+    label: iron(3+)
+    node_type: OTHER
+    identifier: CHEBI:29034
+    grounding_status: GROUNDED
+  - node_id: iron_transport
+    label: iron ion transport
+    node_type: PROCESS
+    identifier: GO:0006826
+    grounding_status: GROUNDED
+  edges:
+  - subject: l_ornithine
+    predicate: converted_to
+    object: h_orn
+    notes: L-ornithine is N5-hydroxylated by SidA to N(5)-hydroxy-L-ornithine.
+    evidence:
+    - reference: PMID:25062661
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: SidA (An16g01850) catalyzes the first committed step of fungal hydroxamate
+        siderophore synthesis in Aspergillus niger.
+  - subject: mevalonate
+    predicate: substrate_of
+    object: sidd
+    notes: Provides the trans-anhydromevalonyl acyl groups.
+    evidence:
+    - reference: PMID:5484314
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Coprogen B contains three trans-anhydromevalonic acid residues.
+  - subject: h_orn
+    predicate: substrate_of
+    object: sidd
+    notes: Following N5-acylation with trans-anhydromevalonyl-CoA, three N(5)-hydroxy-L-ornithine-derived
+      units are condensed by SidD.
+    evidence:
+    - reference: PMID:25062661
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: SidD NRPS catalyzes assembly of the trimeric ester-linked diketopiperazine
+        scaffold.
+  - subject: sidd
+    predicate: synthesizes
+    object: desferricoprogen_b
+    notes: Releases desferricoprogen B.
+    evidence:
+    - reference: PMID:25062661
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Deletion of sidD abolishes coprogen B production in Aspergillus niger.
+  - subject: desferricoprogen_b
+    predicate: chelates
+    object: fe3
+    notes: Hexadentate coordination of ferric iron(3+) to form coprogen B.
+    evidence:
+    - reference: PMID:5484314
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Characterization of the ferric complex coprogen B.
+  - subject: desferricoprogen_b
+    predicate: enables
+    object: iron_transport
+    notes: In its ferric-complexed form (coprogen B), desferricoprogen B mediates
+      fungal extracellular ferric iron acquisition under iron starvation.
+    evidence:
+    - reference: PMID:5484314
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Coprogen B is secreted as an extracellular ferric siderophore under iron-limiting
+        growth.
+    - reference: PMID:25062661
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Extracellular coprogen B biosynthesis under iron starvation in Aspergillus
+        niger.
+curation_history:
+- timestamp: '2026-10-31T08:00:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-31T09:48:48Z'
+  curator: naturalproductmech-agent
+  action: RECORD_CURATED
+  changes: Curated ecological_roles, metal-binding molecular_targets (including explicit
+    Critical Mineral & Material [CMM] annotations and primary literature evidence),
+    biosynthetic_pathway steps, and connected causal_graphs; promoted curation_status
+    to REVIEWED.
+  llm_assisted: true

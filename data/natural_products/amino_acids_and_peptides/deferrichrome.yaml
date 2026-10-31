@@ -1,0 +1,351 @@
+identifier: CHEBI:90132
+label: deferrichrome
+chemical_structure:
+  smiles: CC(=O)N(O)CCC[C@@H]1NC(=O)CNC(=O)CNC(=O)CNC(=O)[C@H](CCCN(O)C(C)=O)NC(=O)[C@H](CCCN(O)C(C)=O)NC1=O
+  standard_inchi: InChI=1S/C27H45N9O12/c1-16(37)34(46)10-4-7-19-25(43)30-14-23(41)28-13-22(40)29-15-24(42)31-20(8-5-11-35(47)17(2)38)26(44)33-21(27(45)32-19)9-6-12-36(48)18(3)39/h19-21,46-48H,4-15H2,1-3H3,(H,28,41)(H,29,40)(H,30,43)(H,31,42)(H,32,45)(H,33,44)/t19-,20-,21-/m0/s1
+  standard_inchi_key: ZFDAUYPBCXMSBF-ACRUOGEOSA-N
+  stereo_complete: true
+  structure_source: CHEBI
+  structure_source_id: CHEBI:90132
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+biosynthesis_origin: NATURAL_PRODUCT
+definition: A homodetic cyclic peptide composed from two units of three glycyl and
+  three N5-acetyl-N5-hydroxy-L-ornithyl residues.
+definition_source: CHEBI:90132
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-10-31
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+occurrence_taxon_groups:
+- CHORDATE
+occurrences:
+- taxon_label: Mus musculus
+  source: CHEBI
+  evidence:
+  - reference: https://www.ebi.ac.uk/chebi/CHEBI:90132
+    evidence_type: DATABASE_ASSERTION
+    notes: 'ChEBI compound origin for CHEBI:90132; source bibliography: 10.1371/journal.pone.0115359'
+  taxon_id: NCBITaxon:10090
+  taxon_source: NCBITaxon
+producer_taxon_groups:
+- FUNGAL
+producer_organisms:
+- taxon_id: NCBITaxon:5270
+  taxon_label: Ustilago maydis
+  evidence_basis: BGC_CHARACTERIZED
+  source: CURATOR
+  notes: 'Cloning, targeted disruption, and complementation of sid1 (L-ornithine N5-oxygenase)
+    in Ustilago maydis establish biosynthesis of the cyclic hexapeptide trihydroxamate
+    siderophore deferrichrome. Curator: naturalproductmech-agent; date: 2026-10-31.'
+  evidence:
+  - reference: PMID:8430103
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Cloning, targeted disruption, and complementation of sid1 (L-ornithine
+      N5-oxygenase) in Ustilago maydis establish biosynthesis of the cyclic hexapeptide
+      trihydroxamate siderophore deferrichrome.
+  strain: '518'
+- taxon_id: NCBITaxon:5270
+  taxon_label: Ustilago maydis
+  evidence_basis: BGC_CHARACTERIZED
+  source: CURATOR
+  notes: 'Targeted gene replacement of sid2 (nonribosomal peptide synthetase) in Ustilago
+    maydis completely abolishes deferrichrome biosynthesis. Curator: naturalproductmech-agent;
+    date: 2026-10-31.'
+  evidence:
+  - reference: PMID:11395469
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Targeted gene replacement of sid2 (nonribosomal peptide synthetase) in
+      Ustilago maydis completely abolishes deferrichrome biosynthesis.
+  strain: FB1
+- taxon_id: NCBITaxon:4896
+  taxon_label: Schizosaccharomyces pombe
+  evidence_basis: BGC_CHARACTERIZED
+  source: CURATOR
+  notes: 'Genetic deletion of sib1+ (NRPS) and sib2+ (L-ornithine N5-oxygenase) in
+    Schizosaccharomyces pombe demonstrates biosynthesis of ferrichrome/deferrichrome.
+    Curator: naturalproductmech-agent; date: 2026-10-31.'
+  evidence:
+  - reference: PMID:20435771
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Genetic deletion of sib1+ (NRPS) and sib2+ (L-ornithine N5-oxygenase) in
+      Schizosaccharomyces pombe demonstrates biosynthesis of ferrichrome/deferrichrome.
+  strain: 972h-
+source_concepts:
+- source: CHEBI
+  source_id: CHEBI:90132
+  source_label: deferrichrome
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-3af6a10991
+grounding_status: EXACT
+curation_status: REVIEWED
+molecular_targets:
+- target_id: CHEBI:29034
+  target_label: iron(3+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: Hexadentate octahedral coordination of ferric iron(3+) via three N5-acetyl-N5-hydroxy-L-ornithine
+    hydroxamate groups on the cyclic hexapeptide cyclo[(Gly)3-(N5-acetyl-N5-hydroxy-L-Orn)3]
+    scaffold to form ferrichrome (log beta110 = 29.1).
+  evidence:
+  - reference: PMID:8430103
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Biosynthesis of the cyclic hexapeptide trihydroxamate siderophore ferrichrome
+      (deferrichrome + Fe(III)) in Ustilago maydis.
+  - reference: PMID:9856937
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: X-ray crystal structure of ferric-bound ferrichrome complexed with the
+      Escherichia coli outer membrane transporter FhuA at 2.5 A resolution.
+- target_id: CHEBI:84043
+  target_label: gallium(3+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: '[Critical Mineral & Material (CMM)] High-affinity octahedral chelation of
+    trivalent gallium(3+) by deferrichrome to form [Ga(III)]-deferrichrome (gallichrome),
+    characterized by 1H-NMR solution conformation analysis, a 1.9 A co-crystal structure
+    with Escherichia coli FhuD, and 68Ga-radiolabeled PET imaging.'
+  evidence:
+  - reference: PMID:10742172
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: 1.9 A X-ray crystal structure of Escherichia coli periplasmic binding protein
+      FhuD complexed with gallichrome ([Ga(III)]-deferrichrome).
+  - reference: PMID:2279065
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: 1H-NMR spectroscopic determination of the solution conformation of gallichrome
+      ([Ga(III)]-deferrichrome).
+  - reference: PMID:38436776
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Preclinical characterization of 68Ga-labeled ferrichrome siderophore complexes
+      for PET imaging.
+- target_id: CHEBI:49470
+  target_label: aluminium(3+)
+  target_type: OTHER
+  relation: BINDS
+  source: CURATOR
+  notes: '[Critical Mineral & Material (CMM)] Octahedral coordination of trivalent
+    aluminium(3+) by deferrichrome to form the diamagnetic complex alumichrome ([Al(III)]-deferrichrome),
+    characterized by 1H-, 13C-, and 15N-NMR spectroscopy.'
+  evidence:
+  - reference: PMID:2279065
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: 1H-NMR solution conformation analysis of alumichrome ([Al(III)]-deferrichrome)
+      in d6-DMSO.
+  - reference: PMID:486399
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Complete 13C-NMR chemical shift assignment and conformational analysis
+      of alumichrome.
+ecological_roles:
+- CHEBI:26672
+- CHEBI:38161
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_label: L-ornithine N5-monooxygenase (Sid1 / Sib2)
+  substrates:
+  - CHEBI:15729
+  products:
+  - CHEBI:79095
+  notes: FAD- and NADPH-dependent N5-hydroxylation of L-ornithine to N(5)-hydroxy-L-ornithine
+    by Sid1 (Ustilago maydis) or Sib2 (Schizosaccharomyces pombe).
+  evidence:
+  - reference: PMID:8430103
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Cloning and targeted disruption of sid1 encoding L-ornithine N5-oxygenase
+      in Ustilago maydis abolish deferrichrome biosynthesis.
+  - reference: PMID:20435771
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Genetic deletion of sib2+ encoding L-ornithine N5-oxygenase in Schizosaccharomyces
+      pombe abolishes ferrichrome biosynthesis.
+- step_number: 2
+  enzyme_label: N5-hydroxyornithine N5-acetyltransferase (Sib3) and ferrichrome nonribosomal
+    peptide synthetase (Sid2 / Sib1)
+  substrates:
+  - CHEBI:79095
+  - CHEBI:15351
+  - CHEBI:15428
+  - CHEBI:15422
+  products:
+  - CHEBI:90132
+  notes: Acetyl-CoA-dependent N5-acetylation of N(5)-hydroxy-L-ornithine (by Sib3
+    in S. pombe) followed by iterative assembly and macrocyclization of three glycine
+    units and three N5-acetyl-N5-hydroxy-L-ornithine units by the multimodular NRPS
+    Sid2 (Ustilago maydis) or Sib1 (Schizosaccharomyces pombe) to release deferrichrome.
+  evidence:
+  - reference: PMID:11395469
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Targeted disruption of the sid2 NRPS gene in Ustilago maydis abolishes
+      ferrichrome biosynthesis.
+  - reference: PMID:20435771
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Genetic deletion of sib1+ and sib2+ in Schizosaccharomyces pombe abolishes
+      ferrichrome synthesis.
+  - reference: PMID:35928155
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Genetic characterization of Sib2 (ornithine N5-monooxygenase) and Sib3
+      (N5-transacetylase) required for ferrichrome biosynthesis in Schizosaccharomyces
+      pombe.
+causal_graphs:
+- graph_id: deferrichrome_biosynthesis_and_metal_chelation
+  scope: BIOACTIVITY
+  description: Fungal NRPS-directed biosynthesis of the cyclic hexapeptide trihydroxamate
+    siderophore deferrichrome via Sid1/Sid2 (Ustilago maydis) and Sib1/Sib2/Sib3 (Schizosaccharomyces
+    pombe), octahedral chelation of Fe(III) and CMM cations Ga(III) and Al(III), and
+    xenosiderophore uptake via bacterial FhuA.
+  nodes:
+  - node_id: l_ornithine
+    label: L-ornithine
+    node_type: PRECURSOR
+    identifier: CHEBI:15729
+    grounding_status: GROUNDED
+  - node_id: glycine
+    label: glycine
+    node_type: PRECURSOR
+    identifier: CHEBI:15428
+    grounding_status: GROUNDED
+  - node_id: sid1
+    label: L-ornithine N5-monooxygenase Sid1
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: h_orn
+    label: N(5)-hydroxy-L-ornithine
+    node_type: PRECURSOR
+    identifier: CHEBI:79095
+    grounding_status: GROUNDED
+  - node_id: sid2
+    label: Ferrichrome synthetase Sid2 / Sib1
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: deferrichrome
+    label: deferrichrome
+    node_type: COMPOUND
+    identifier: CHEBI:90132
+    grounding_status: GROUNDED
+  - node_id: fe3
+    label: iron(3+)
+    node_type: OTHER
+    identifier: CHEBI:29034
+    grounding_status: GROUNDED
+  - node_id: ga3
+    label: gallium(3+)
+    node_type: OTHER
+    identifier: CHEBI:84043
+    grounding_status: GROUNDED
+  - node_id: al3
+    label: aluminium(3+)
+    node_type: OTHER
+    identifier: CHEBI:49470
+    grounding_status: GROUNDED
+  - node_id: fhua
+    label: Ferrichrome outer membrane transporter FhuA
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: siderophore_transport
+    label: siderophore transport
+    node_type: PROCESS
+    identifier: GO:0015891
+    grounding_status: GROUNDED
+  edges:
+  - subject: l_ornithine
+    predicate: substrate_of
+    object: sid1
+    notes: Sid1/Sib2 catalyzes N5-hydroxylation of L-ornithine.
+    evidence:
+    - reference: PMID:8430103
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: sid1 encodes L-ornithine N5-oxygenase in Ustilago maydis.
+  - subject: sid1
+    predicate: synthesizes
+    object: h_orn
+    notes: Produces N(5)-hydroxy-L-ornithine.
+    evidence:
+    - reference: PMID:8430103
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sid1 catalyzes N5-hydroxylation of L-ornithine to N(5)-hydroxy-L-ornithine.
+  - subject: h_orn
+    predicate: substrate_of
+    object: sid2
+    notes: Following N5-acetylation by Sib3, three N(5)-hydroxy-L-ornithine-derived
+      hydroxamate units are incorporated by the NRPS.
+    evidence:
+    - reference: PMID:11395469
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sid2 NRPS incorporates three hydroxamate-ornithine units and three glycines.
+    - reference: PMID:35928155
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sib3 N5-acetylates N(5)-hydroxy-L-ornithine prior to NRPS assembly.
+  - subject: glycine
+    predicate: substrate_of
+    object: sid2
+    notes: Three glycine residues form the tripeptide spacer of the hexapeptide ring.
+    evidence:
+    - reference: PMID:20435771
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sib1 NRPS condenses glycine and N5-acetyl-N5-hydroxyornithine into ferrichrome.
+  - subject: sid2
+    predicate: synthesizes
+    object: deferrichrome
+    notes: Macrocyclization releases metal-free deferrichrome.
+    evidence:
+    - reference: PMID:11395469
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Disruption of sid2 abolishes deferrichrome production.
+  - subject: deferrichrome
+    predicate: chelates
+    object: fe3
+    notes: Hexadentate trihydroxamate chelation of Fe(III) (log beta110 = 29.1).
+    evidence:
+    - reference: PMID:9856937
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Octahedral coordination of Fe(III) in ferrichrome.
+  - subject: deferrichrome
+    predicate: chelates
+    object: ga3
+    notes: '[CMM] Octahedral chelation of trivalent gallium(3+) to form gallichrome.'
+    evidence:
+    - reference: PMID:10742172
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 1.9 A crystal structure of gallichrome bound to E. coli FhuD.
+  - subject: deferrichrome
+    predicate: chelates
+    object: al3
+    notes: '[CMM] Octahedral chelation of trivalent aluminium(3+) to form alumichrome.'
+    evidence:
+    - reference: PMID:2279065
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 1H-NMR solution conformation of alumichrome.
+  - subject: deferrichrome
+    predicate: binds
+    object: fhua
+    notes: In its ferric-complexed form (ferrichrome), deferrichrome binds the extracellular
+      pocket of the E. coli outer membrane transporter FhuA.
+    evidence:
+    - reference: PMID:9856937
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Crystal structure of FhuA bound to ferrichrome.
+  - subject: fhua
+    predicate: enables
+    object: siderophore_transport
+    notes: TonB-dependent translocation of ferrichrome into the periplasm.
+    evidence:
+    - reference: PMID:9856937
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Ligand binding induces allosteric unwinding of the FhuA TonB box.
+curation_history:
+- timestamp: '2026-10-31T08:00:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-31T09:48:48Z'
+  curator: naturalproductmech-agent
+  action: RECORD_CURATED
+  changes: Curated ecological_roles, metal-binding molecular_targets (including explicit
+    Critical Mineral & Material [CMM] annotations and primary literature evidence),
+    biosynthetic_pathway steps, and connected causal_graphs; promoted curation_status
+    to REVIEWED.
+  llm_assisted: true
