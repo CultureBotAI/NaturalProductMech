@@ -92,12 +92,16 @@ molecular_targets:
   source: CURATOR
   notes: '[Critical Mineral & Material (CMM)] Octahedral trihydroxamate coordination
     of trivalent gallium(3+) by desferricoprogen to form [Ga(III)]-coprogen, characterized
-    by radiolabeling, stability assays, and fungal uptake in Aspergillus fumigatus.'
+    by 68Ga radiolabeling, complex stability assays, and microbial uptake.'
   evidence:
-  - reference: PMID:22019183
+  - reference: PMID:20351354
     evidence_type: PRIMARY_EXPERIMENT
-    notes: In vitro complexation, stability, and fungal uptake evaluation of [68Ga]Ga-coprogen
-      formed from desferricoprogen and trivalent gallium-68.
+    notes: Radiolabeling, in vitro stability, and Aspergillus fumigatus uptake evaluation
+      of 68Ga-labeled fungal siderophores including [68Ga]Ga-coprogen.
+  - reference: PMID:40099411
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Radiochemical complexation, stability, partition coefficient, and microbial
+      uptake characterization of [68Ga]Ga-coprogen.
 - target_id: CHEBI:49544
   target_label: chromium(3+)
   target_type: OTHER
@@ -276,9 +280,12 @@ causal_graphs:
     object: ga3
     notes: '[CMM] Octahedral coordination of trivalent gallium(3+) to form [Ga(III)]-coprogen.'
     evidence:
-    - reference: PMID:22019183
+    - reference: PMID:20351354
       evidence_type: PRIMARY_EXPERIMENT
-      notes: Complexation, stability, and fungal uptake of [68Ga]Ga-coprogen.
+      notes: 68Ga radiolabeling, stability, and fungal uptake of [68Ga]Ga-coprogen.
+    - reference: PMID:40099411
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Radiochemical complexation, stability, and microbial uptake of [68Ga]Ga-coprogen.
   - subject: desferricoprogen
     predicate: chelates
     object: cr3
@@ -311,7 +318,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
-- timestamp: '2026-10-31T09:48:48Z'
+- timestamp: '2026-10-31T10:21:40Z'
   curator: naturalproductmech-agent
   action: RECORD_CURATED
   changes: Curated ecological_roles, metal-binding molecular_targets (including explicit
