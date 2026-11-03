@@ -1,0 +1,1637 @@
+# Local evidence review: bromophene
+
+- Review: 20261103T092247Z-bromophene
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-11-03T08:49:42.189146Z
+- Finished UTC: 2026-11-03T09:22:47.686570Z
+- Reviewer: Codex root with native_checks, bgc_science and review_support peer agents (independent)
+- Completion: partial
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+bromophene: qualified partial review retaining source evidence grades, exact representation boundaries and owner-local assay and computed-model limits.
+
+## Scope And Provenance
+
+One complete NaturalProductRecord, including all present scientific claims, history and declared mechanisms; external verification remains unavailable.
+
+Selection: Campaign path order 2187; one of the next ten uncovered paths selected from the 3116-record corpus. Membership uses the canonical validated catalogue plus retained committed campaign bundles.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base ce6a5498df5be51116bd5e0c119023ee62bb5464.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-298e047897 | data/natural_products/shikimates_and_phenylpropanoids/bromophene.yaml | generated | bromophene |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| strict_ten | passed | True | naturalproductmech:mibig-298e047897 | Closed-schema validation of the ten selected owners and any referenced components reported zero errors. |
+| strict_full | passed | True | naturalproductmech:mibig-298e047897 | Full closed-schema validation scanned all 3116 owners and reported zero errors. |
+| lockfile | passed | True | naturalproductmech:mibig-298e047897 | PATHS.tsv and filesystem agree on all 3116 records and their pinned filing pathways. |
+| reproduction | passed | True | naturalproductmech:mibig-298e047897 | All 3116 records reproduce byte-identically from the retained inventories and carried curator content. This does not independently validate curator science. |
+| queue | passed | True | naturalproductmech:mibig-298e047897 | The full local queue contains 8922 diagnostic rows; selected-target entries were inspected. Queue diagnostics are leads, not scientific sign-off. |
+| Full just qc | unavailable | True | naturalproductmech:mibig-298e047897 | Not run under the external-request prohibition: the complete recipe includes upstream vendored synchronization. The five executed local checks are recorded separately. |
+| Complete OAK identifier/label authority check | unavailable | True | naturalproductmech:mibig-298e047897 | Complete offline ontology authority coverage was not established for this run; no ontology retrieval or remote resolution was attempted. Retained taxonomy evidence has only its explicitly stated local scope. |
+| Primary literature and current structured database/identifier verification | unavailable | True | naturalproductmech:mibig-298e047897 | All external requests are prohibited by the user. Fresh database and identifier verification and complete primary-literature coverage are unavailable. Any retained original literature actually inspected is recorded separately with its historical scope. |
+
+## Scientific And Domain Assessments
+
+### Exact structure concept and grounding scope
+
+identity: supported. Targets: naturalproductmech:mibig-298e047897.
+
+Bromophene retains full key TXODBIOSWNNKJM-UHFFFAOYSA-N and neutral C12H6Br4O2. No retained exact-key ChEBI hit supports a more specific grounding, so MINTED is bounded to the inspected snapshot. Active BGC0001465 version 5 names bromophene at compound index 1; questionable quality and unknown completeness are source metadata. Bistribromopyrrole and Pentabromopseudilin share that directly owned BGC but have distinct full keys and remain separate compounds. The retained PubChem xref is not a newly resolved structure authority.
+
+### Paired molecular representations and stereochemical limits
+
+representation: supported. Targets: naturalproductmech:mibig-298e047897.
+
+Both stored forms parsed as neutral C12H6Br4O2, 18 atoms and 19 bonds; all ten saved comparisons agree and the atom correspondence is complete. Both have no potential tetrahedral or double-bond stereo in the saved diagnostic. Literal stereo_complete:true reflects the maintained atom-centered scope; it does not prove absence or assignment of axial stereochemistry. The saved full_graph_identity_established flag remains false, and no experimental natural-identity determination follows from the comparison. Original diagnostic stderr is empty.
+
+### Producer, occurrence and locus evidence grades
+
+provenance: supported. Targets: naturalproductmech:mibig-298e047897.
+
+The MIBiG SOURCE_ASSERTION producer is Marinomonas mediterranea MMB-1, NCBITaxon:717774; BGC0001465 is CLUSTER_UNSTATED with no locus experiment stated. NC_015276.1 coordinates 4521275–4533494 remain deposited locus provenance. Two species-level Pseudoalteromonas phenolica, NCBITaxon:161398, LOTUS occurrences do not demonstrate production by MMB-1 or by every member of either taxon. Direct-companion producer claims stay on their own records.
+
+### Citation placement and historical verification scope
+
+evidence: supported. Targets: naturalproductmech:mibig-298e047897.
+
+PMID:24974229 is the MIBiG ENTRY citation, while DOI:10.1021/NP100506Z and DOI:10.1128/AAC.47.2.480-488.2003 are LOTUS occurrence citations. Their bibliographic independence and precise experimental scope were not freshly checked. Unselected Pentabromopseudilin retains its own assay and historical graph/pathway citations; these do not become bromophene evidence.
+
+### Occurrence, assay and companion boundaries
+
+scope: supported. Targets: naturalproductmech:mibig-298e047897.
+
+The selected owner has two LOTUS occurrence assertions and no written bioactivity, bioactivity summary, target or mechanism roots. Its exact assay/BindingDB/sibling frames are empty. Unselected Pentabromopseudilin has AID 977608, Active IC50 1.4 uM with PMID:24446431 and blank target accession; its derived-affinity context and raw graph/pathway are not transferred here. Bistribromopyrrole has a blank-AID sentinel, which is neither an assay nor evidence of inactivity. These contexts explain intake assay-exclusion dependencies without adding a selected activity claim.
+
+### Computed classification and full-table topology limits
+
+other: supported. Targets: naturalproductmech:mibig-298e047897.
+
+NPClassifier reports Diphenyl ethers (DPEs) / Marine-bacterial DPEs, is_glycoside=false, as explicitly computed output. The saved structure instead has two aromatic six-membered rings joined directly by C5–C6, with phenolic O14 on C7 and O15 on C4 and four bromine atoms: there is no C–O–C bridge. The DPE class is therefore not a literal topology description of this saved biphenyl. This is a model-applicability limitation, not a newly established wrong-structure or source-record defect; the model output and source OTHER BGC class remain attributed rather than promoted to experimental assertions.
+
+### Partial scientific completion and maintained ownership
+
+completeness: supported. Targets: naturalproductmech:mibig-298e047897.
+
+All seven core areas and twelve dimensions were assessed against actual intake, whole raw/history, retained source rows/cache and both complete saved chemical forms. Five local gates passed; full QC/OAK and external verification remain unavailable. This owner has no selected mechanism roots/components and no maintained reader applies. The inspected source assertions and bounded local structure facts provide positive support; no concrete source-record contradiction requiring a curation finding was established. Native SEEDED status/history and all corpus/source bytes remain unchanged.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| support-2187-owner | /private/tmp/npm-record-reviews-20261021/data/natural_products/shikimates_and_phenylpropanoids/bromophene.yaml; Complete raw owner, lines 1-98. | supports | Whole selected owner and 2 history events personally read; current exact bytes match retained inventory and capture. |
+| support-2187-capture | /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json; /records/6/owner_document; /records/6/owner_pin; /records/6/read_started_at; /records/6/read_finished_at | supports | Complete actual captured owner and original access clocks; component resolution is assessed separately where applicable. |
+| support-2187-intake | /private/tmp/npm-review-work/shared-next-batch219/intakes/2187-inspect-001.json; /status; /source; /targets/0 | supports | Original inspection-only intake with 41 current inputs and explicit maintained ownership. |
+| support-2187-source-plan | /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-target-input-plan-001.json; /records/6; /source_placement_count; /unique_source_path_count | supports | Exact current selected raw/history/source frames and input map equal the retained inventory and actual intake; cohort 422 placements/94 paths. |
+| support-2187-plan-acceptance | /private/tmp/npm-review-work/shared-next-batch219/root-target-input-plan-acceptance-001.json; /status; /plan; /notes; /actual_intake_acceptance; /source_placements; /unique_source_paths | supports | ROOT accepts exact saved source-plan and intake equality; this is not a scientific verdict. |
+| support-2187-history | /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; /contexts/7/complete_raw_history; /contexts/7/history_count | supports | All 2 owner history events preserved; historical verification annotations are not new verification. |
+| support-2187-direct-contexts | /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-target-input-plan-001.json; /records/6/proposed_companion_paths; /records/6/direct_companion_predicates; /records/6/declared_mechanism_roots_literal; /records/6/component_paths | supports | 2 admitted direct companions; selected mechanism applicability and component paths retained without transitive expansion. |
+| support-2187-source-notes | /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-scope-notes-001.json; /reading/review_support; /reading/bgc_science; /reading/components; /cautions; /curation | supports | Whole source-reading attribution and bounded 65-token/eight-table zero-hit curation scan. The11 complementary cache stanzas are my reading; shared 341663/41900 stanzas are BGC reading. No new external or corpus-wide absence assertion. |
+| support-2187-query-mibig_compounds | /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; /contexts/7/source_scope_inventory/joins/mibig_compounds | supports | Saved predicate exact complete standard_inchi_key equality; query "TXODBIOSWNNKJM-UHFFFAOYSA-N"; 1 retained rows. Empty results have only this exact pinned scope. |
+| support-2187-row-mibig_compounds-0 | /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv; Physical TSV lines 1776-1776; exact retained row /contexts/7/source_scope_inventory/joins/mibig_compounds/matches/0 in /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; raw row SHA256 5b01126827acd5cfe0c41cf56d9dca0826f14dfc00ecd85ef88b727416e04cde. | supports | Retained row fields (structure strings remain in the exact cited row): {"mibig_accession":"BGC0001465","entry_version":"5","entry_status":"active","entry_quality":"questionable","entry_completeness":"unknown","compound_name":"bromophene","compound_index":"1","standard_inchi_key":"TXODBIOSWNNKJM-UHFFFAOYSA-N","stereo_complete":"true","compound_classes":"","database_ids":"pubchem:30891","taxon_id":"NCBITaxon:717774","taxon_label":"Marinomonas mediterranea MMB-1","bgc_classes":"other","bgc_subclasses":"other","genome_accession":"NC_015276.1","locus_from":"4521275","locus_to":"4533494","locus_evidence_methods":"","producer_evidence_basis":"SOURCE_ASSERTION","cluster_link_evidence_basis":"CLUSTER_UNSTATED","primary_reference":"PMID:24974229","reference_basis":"ENTRY"} |
+| support-2187-query-chebi_structures | /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; /contexts/7/source_scope_inventory/joins/chebi_structures | supports | Saved predicate exact complete standard_inchi_key equality; query "TXODBIOSWNNKJM-UHFFFAOYSA-N"; 0 retained rows. Empty results have only this exact pinned scope. |
+| support-2187-query-lotus_occurrences | /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; /contexts/7/source_scope_inventory/joins/lotus_occurrences | supports | Saved predicate exact complete standard_inchi_key equality; query "TXODBIOSWNNKJM-UHFFFAOYSA-N"; 2 retained rows. Empty results have only this exact pinned scope. |
+| support-2187-row-lotus_occurrences-0 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Physical TSV lines 8577-8577; exact retained row /contexts/7/source_scope_inventory/joins/lotus_occurrences/matches/0 in /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; raw row SHA256 cc7e38898cf4f47ed52647b63a2df69ad7c6e9191b1fa8123760f66bd2f050f1. | supports | Retained row fields (structure strings remain in the exact cited row): {"standard_inchi_key":"TXODBIOSWNNKJM-UHFFFAOYSA-N","organism_name":"Pseudoalteromonas phenolica","taxon_id":"NCBITaxon:161398","organism_wikidata":"http://www.wikidata.org/entity/Q7254495","reference_doi":"10.1021/NP100506Z","structure_wikidata":"http://www.wikidata.org/entity/Q15426194"} |
+| support-2187-row-lotus_occurrences-1 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Physical TSV lines 8578-8578; exact retained row /contexts/7/source_scope_inventory/joins/lotus_occurrences/matches/1 in /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; raw row SHA256 e739b80f39ed5c9d3e33e84a95b3ab5203a069e5f16b8c359d8efc8aa4e5453e. | supports | Retained row fields (structure strings remain in the exact cited row): {"standard_inchi_key":"TXODBIOSWNNKJM-UHFFFAOYSA-N","organism_name":"Pseudoalteromonas phenolica","taxon_id":"NCBITaxon:161398","organism_wikidata":"http://www.wikidata.org/entity/Q7254495","reference_doi":"10.1128/AAC.47.2.480-488.2003","structure_wikidata":"http://www.wikidata.org/entity/Q15426194"} |
+| support-2187-query-cyanometdb_occurrences | /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; /contexts/7/source_scope_inventory/joins/cyanometdb_occurrences | supports | Saved predicate exact complete standard_inchi_key equality; query "TXODBIOSWNNKJM-UHFFFAOYSA-N"; 0 retained rows. Empty results have only this exact pinned scope. |
+| support-2187-query-npclassifier | /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; /contexts/7/source_scope_inventory/joins/npclassifier | supports | Saved predicate exact complete standard_inchi_key equality; query "TXODBIOSWNNKJM-UHFFFAOYSA-N"; 1 retained rows. Empty results have only this exact pinned scope. |
+| support-2187-row-npclassifier-0 | /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv; Physical TSV lines 2346-2346; exact retained row /contexts/7/source_scope_inventory/joins/npclassifier/matches/0 in /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; raw row SHA256 0a89be4b5f4b6fea50d89730fa14f3b8180a76317eaf5d1d492c8afaba8fbc59. | supports | Retained row fields (structure strings remain in the exact cited row): {"standard_inchi_key":"TXODBIOSWNNKJM-UHFFFAOYSA-N","pathway_results":"Shikimates and Phenylpropanoids","superclass_results":"Diphenyl ethers (DPEs)","class_results":"Marine-bacterial DPEs","is_glycoside":"false","model_version":"npclassifier.gnps2.org@2026-09-07"} |
+| support-2187-query-pubchem_bioassay | /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; /contexts/7/source_scope_inventory/joins/pubchem_bioassay | supports | Saved predicate exact complete standard_inchi_key equality; query "TXODBIOSWNNKJM-UHFFFAOYSA-N"; 0 retained rows. Empty results have only this exact pinned scope. |
+| support-2187-query-bindingdb_targets | /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; /contexts/7/source_scope_inventory/joins/bindingdb_targets | supports | Saved predicate exact complete standard_inchi_key equality; query "TXODBIOSWNNKJM-UHFFFAOYSA-N"; 0 retained rows. Empty results have only this exact pinned scope. |
+| support-2187-query-antibioticmech_inchikeys | /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; /contexts/7/source_scope_inventory/joins/antibioticmech_inchikeys | supports | Saved predicate exact complete standard_inchi_key equality; query "TXODBIOSWNNKJM-UHFFFAOYSA-N"; 0 retained rows. Empty results have only this exact pinned scope. |
+| support-2187-query-chebi_origins | /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; /contexts/7/source_scope_inventory/joins/chebi_origins | supports | Saved predicate exact chebi_id from exact full-key structure rows; query []; 0 retained rows. Empty results have only this exact pinned scope. |
+| support-2187-companion-0 | /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; /contexts/0 | supports | Complete directly admitted companion bistribromopyrrole, full keyCKUAYXRLIBAUTH-UHFFFAOYSA-N, 2 histories; no identity/activity/producer transfer. |
+| support-2187-companion-0-query-mibig_compounds | /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; /contexts/0/source_scope_inventory/joins/mibig_compounds | supports | Saved predicate exact complete standard_inchi_key equality; query "CKUAYXRLIBAUTH-UHFFFAOYSA-N"; 1 retained rows. Empty results have only this exact pinned scope. |
+| support-2187-companion-0-row-mibig_compounds-0 | /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv; Physical TSV lines 1777-1777; exact retained row /contexts/0/source_scope_inventory/joins/mibig_compounds/matches/0 in /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; raw row SHA256 2dd4bd638f2b951849c7e5fe99b59cc9f2de54fae8ee6524d4106a99048fb023. | supports | Retained row fields (structure strings remain in the exact cited row): {"mibig_accession":"BGC0001465","entry_version":"5","entry_status":"active","entry_quality":"questionable","entry_completeness":"unknown","compound_name":"bistribromopyrrole","compound_index":"2","standard_inchi_key":"CKUAYXRLIBAUTH-UHFFFAOYSA-N","stereo_complete":"true","compound_classes":"","database_ids":"pubchem:23426790","taxon_id":"NCBITaxon:717774","taxon_label":"Marinomonas mediterranea MMB-1","bgc_classes":"other","bgc_subclasses":"other","genome_accession":"NC_015276.1","locus_from":"4521275","locus_to":"4533494","locus_evidence_methods":"","producer_evidence_basis":"SOURCE_ASSERTION","cluster_link_evidence_basis":"CLUSTER_UNSTATED","primary_reference":"PMID:24974229","reference_basis":"ENTRY"} |
+| support-2187-companion-0-query-chebi_structures | /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; /contexts/0/source_scope_inventory/joins/chebi_structures | supports | Saved predicate exact complete standard_inchi_key equality; query "CKUAYXRLIBAUTH-UHFFFAOYSA-N"; 0 retained rows. Empty results have only this exact pinned scope. |
+| support-2187-companion-0-query-lotus_occurrences | /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; /contexts/0/source_scope_inventory/joins/lotus_occurrences | supports | Saved predicate exact complete standard_inchi_key equality; query "CKUAYXRLIBAUTH-UHFFFAOYSA-N"; 0 retained rows. Empty results have only this exact pinned scope. |
+| support-2187-companion-0-query-cyanometdb_occurrences | /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; /contexts/0/source_scope_inventory/joins/cyanometdb_occurrences | supports | Saved predicate exact complete standard_inchi_key equality; query "CKUAYXRLIBAUTH-UHFFFAOYSA-N"; 0 retained rows. Empty results have only this exact pinned scope. |
+| support-2187-companion-0-query-npclassifier | /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; /contexts/0/source_scope_inventory/joins/npclassifier | supports | Saved predicate exact complete standard_inchi_key equality; query "CKUAYXRLIBAUTH-UHFFFAOYSA-N"; 1 retained rows. Empty results have only this exact pinned scope. |
+| support-2187-companion-0-row-npclassifier-0 | /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv; Physical TSV lines 304-304; exact retained row /contexts/0/source_scope_inventory/joins/npclassifier/matches/0 in /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; raw row SHA256 55b3ee00c87ab2211d7935cc14e599e2ef8b967f86bda70f82e2375f5eb02386. | supports | Retained row fields (structure strings remain in the exact cited row): {"standard_inchi_key":"CKUAYXRLIBAUTH-UHFFFAOYSA-N","pathway_results":"Alkaloids","superclass_results":"","class_results":"","is_glycoside":"false","model_version":"npclassifier.gnps2.org@2026-09-07"} |
+| support-2187-companion-0-query-pubchem_bioassay | /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; /contexts/0/source_scope_inventory/joins/pubchem_bioassay | supports | Saved predicate exact complete standard_inchi_key equality; query "CKUAYXRLIBAUTH-UHFFFAOYSA-N"; 1 retained rows. Empty results have only this exact pinned scope. |
+| support-2187-companion-0-row-pubchem_bioassay-0 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; Physical TSV lines 906-906; exact retained row /contexts/0/source_scope_inventory/joins/pubchem_bioassay/matches/0 in /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; raw row SHA256 c813485194e0e6b4cf46f38d8548d37c1aec54046474bbd7437a62f9bcb96191. | supports | Retained row fields (structure strings remain in the exact cited row): {"standard_inchi_key":"CKUAYXRLIBAUTH-UHFFFAOYSA-N","cid":"23426790","aid":"","assay_name":"(no assay data)","assay_type":"","depositor":"","activity_outcome":"","activity_name":"","activity_value_um":"","target_accession":"","reference":""} |
+| support-2187-companion-0-query-bindingdb_targets | /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; /contexts/0/source_scope_inventory/joins/bindingdb_targets | supports | Saved predicate exact complete standard_inchi_key equality; query "CKUAYXRLIBAUTH-UHFFFAOYSA-N"; 0 retained rows. Empty results have only this exact pinned scope. |
+| support-2187-companion-0-query-antibioticmech_inchikeys | /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; /contexts/0/source_scope_inventory/joins/antibioticmech_inchikeys | supports | Saved predicate exact complete standard_inchi_key equality; query "CKUAYXRLIBAUTH-UHFFFAOYSA-N"; 0 retained rows. Empty results have only this exact pinned scope. |
+| support-2187-companion-0-query-chebi_origins | /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; /contexts/0/source_scope_inventory/joins/chebi_origins | supports | Saved predicate exact chebi_id from exact full-key structure rows; query []; 0 retained rows. Empty results have only this exact pinned scope. |
+| support-2187-companion-11 | /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; /contexts/11 | supports | Complete directly admitted companion pentabromopseudilin, full keyLXMNWKJHYOZUQL-UHFFFAOYSA-N, 4 histories; no identity/activity/producer transfer. |
+| support-2187-companion-11-query-mibig_compounds | /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; /contexts/11/source_scope_inventory/joins/mibig_compounds | supports | Saved predicate exact complete standard_inchi_key equality; query "LXMNWKJHYOZUQL-UHFFFAOYSA-N"; 3 retained rows. Empty results have only this exact pinned scope. |
+| support-2187-companion-11-row-mibig_compounds-0 | /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv; Physical TSV lines 970-970; exact retained row /contexts/11/source_scope_inventory/joins/mibig_compounds/matches/0 in /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; raw row SHA256 4d5ba7804629a2d073bbc1c101dbc9df5a84874172db7203deb2f52c2be2ad94. | supports | Retained row fields (structure strings remain in the exact cited row): {"mibig_accession":"BGC0000890","entry_version":"5","entry_status":"active","entry_quality":"questionable","entry_completeness":"complete","compound_name":"pentabromopseudilin","compound_index":"1","standard_inchi_key":"LXMNWKJHYOZUQL-UHFFFAOYSA-N","stereo_complete":"true","compound_classes":"","database_ids":"pubchem:324093","taxon_id":"NCBITaxon:1315281","taxon_label":"Pseudoalteromonas phenolica O-BC30","bgc_classes":"other","bgc_subclasses":"aminocoumarin","genome_accession":"KF540211.1","locus_from":"","locus_to":"","locus_evidence_methods":"Heterologous expression","producer_evidence_basis":"SOURCE_ASSERTION","cluster_link_evidence_basis":"CLUSTER_DEMONSTRATED","primary_reference":"PMID:24974229","reference_basis":"ENTRY"} |
+| support-2187-companion-11-row-mibig_compounds-1 | /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv; Physical TSV lines 971-971; exact retained row /contexts/11/source_scope_inventory/joins/mibig_compounds/matches/1 in /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; raw row SHA256 8a8585f03dde595ac075866339ae9c400fbd4f62160cea885a28f32883c2b2f5. | supports | Retained row fields (structure strings remain in the exact cited row): {"mibig_accession":"BGC0000891","entry_version":"4","entry_status":"active","entry_quality":"questionable","entry_completeness":"complete","compound_name":"pentabromopseudilin","compound_index":"1","standard_inchi_key":"LXMNWKJHYOZUQL-UHFFFAOYSA-N","stereo_complete":"true","compound_classes":"","database_ids":"","taxon_id":"NCBITaxon:1353533","taxon_label":"Pseudoalteromonas luteoviolacea 2ta16","bgc_classes":"other","bgc_subclasses":"aminocoumarin","genome_accession":"AUSV01000133.1","locus_from":"32483","locus_to":"43745","locus_evidence_methods":"Enzymatic assays&#124;Heterologous expression&#124;Gene expression correlated with compound production","producer_evidence_basis":"BGC_CORRELATED","cluster_link_evidence_basis":"CLUSTER_DEMONSTRATED","primary_reference":"PMID:24974229","reference_basis":"ENTRY"} |
+| support-2187-companion-11-row-mibig_compounds-2 | /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv; Physical TSV lines 1778-1778; exact retained row /contexts/11/source_scope_inventory/joins/mibig_compounds/matches/2 in /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; raw row SHA256 3b1a7b2f1c9d6df02ba25eca0d7d92df5bc81338eefed37d63f4e620639c4b40. | supports | Retained row fields (structure strings remain in the exact cited row): {"mibig_accession":"BGC0001465","entry_version":"5","entry_status":"active","entry_quality":"questionable","entry_completeness":"unknown","compound_name":"pentabromopseudilin","compound_index":"3","standard_inchi_key":"LXMNWKJHYOZUQL-UHFFFAOYSA-N","stereo_complete":"true","compound_classes":"","database_ids":"pubchem:324093","taxon_id":"NCBITaxon:717774","taxon_label":"Marinomonas mediterranea MMB-1","bgc_classes":"other","bgc_subclasses":"other","genome_accession":"NC_015276.1","locus_from":"4521275","locus_to":"4533494","locus_evidence_methods":"","producer_evidence_basis":"SOURCE_ASSERTION","cluster_link_evidence_basis":"CLUSTER_UNSTATED","primary_reference":"PMID:24974229","reference_basis":"ENTRY"} |
+| support-2187-companion-11-query-chebi_structures | /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; /contexts/11/source_scope_inventory/joins/chebi_structures | supports | Saved predicate exact complete standard_inchi_key equality; query "LXMNWKJHYOZUQL-UHFFFAOYSA-N"; 0 retained rows. Empty results have only this exact pinned scope. |
+| support-2187-companion-11-query-lotus_occurrences | /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; /contexts/11/source_scope_inventory/joins/lotus_occurrences | supports | Saved predicate exact complete standard_inchi_key equality; query "LXMNWKJHYOZUQL-UHFFFAOYSA-N"; 2 retained rows. Empty results have only this exact pinned scope. |
+| support-2187-companion-11-row-lotus_occurrences-0 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Physical TSV lines 4325-4325; exact retained row /contexts/11/source_scope_inventory/joins/lotus_occurrences/matches/0 in /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; raw row SHA256 66d9caaceaab43e8e9cdd3840781708ad1d3c346c27f7052adfcfef51efced91. | supports | Retained row fields (structure strings remain in the exact cited row): {"standard_inchi_key":"LXMNWKJHYOZUQL-UHFFFAOYSA-N","organism_name":"Pseudoalteromonas luteoviolacea","taxon_id":"NCBITaxon:43657","organism_wikidata":"http://www.wikidata.org/entity/Q7254487","reference_doi":"10.1021/JO00092A020","structure_wikidata":"http://www.wikidata.org/entity/Q27138952"} |
+| support-2187-companion-11-row-lotus_occurrences-1 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Physical TSV lines 4326-4326; exact retained row /contexts/11/source_scope_inventory/joins/lotus_occurrences/matches/1 in /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; raw row SHA256 9bb2ec1b974b3462f4a8a847c0aa8db74b061006252752a49ada85a8ab4b3802. | supports | Retained row fields (structure strings remain in the exact cited row): {"standard_inchi_key":"LXMNWKJHYOZUQL-UHFFFAOYSA-N","organism_name":"Pseudoalteromonas luteoviolacea","taxon_id":"NCBITaxon:43657","organism_wikidata":"http://www.wikidata.org/entity/Q7254487","reference_doi":"10.1021/NP100506Z","structure_wikidata":"http://www.wikidata.org/entity/Q27138952"} |
+| support-2187-companion-11-query-cyanometdb_occurrences | /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; /contexts/11/source_scope_inventory/joins/cyanometdb_occurrences | supports | Saved predicate exact complete standard_inchi_key equality; query "LXMNWKJHYOZUQL-UHFFFAOYSA-N"; 0 retained rows. Empty results have only this exact pinned scope. |
+| support-2187-companion-11-query-npclassifier | /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; /contexts/11/source_scope_inventory/joins/npclassifier | supports | Saved predicate exact complete standard_inchi_key equality; query "LXMNWKJHYOZUQL-UHFFFAOYSA-N"; 1 retained rows. Empty results have only this exact pinned scope. |
+| support-2187-companion-11-row-npclassifier-0 | /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv; Physical TSV lines 1429-1429; exact retained row /contexts/11/source_scope_inventory/joins/npclassifier/matches/0 in /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; raw row SHA256 beb18c608485e63721849f3db019b1abf86b19a6d98b5b873f55ba3e52a119c1. | supports | Retained row fields (structure strings remain in the exact cited row): {"standard_inchi_key":"LXMNWKJHYOZUQL-UHFFFAOYSA-N","pathway_results":"Shikimates and Phenylpropanoids","superclass_results":"Diphenyl ethers (DPEs)","class_results":"Marine-bacterial DPEs","is_glycoside":"false","model_version":"npclassifier.gnps2.org@2026-09-07"} |
+| support-2187-companion-11-query-pubchem_bioassay | /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; /contexts/11/source_scope_inventory/joins/pubchem_bioassay | supports | Saved predicate exact complete standard_inchi_key equality; query "LXMNWKJHYOZUQL-UHFFFAOYSA-N"; 1 retained rows. Empty results have only this exact pinned scope. |
+| support-2187-companion-11-row-pubchem_bioassay-0 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; Physical TSV lines 3813-3813; exact retained row /contexts/11/source_scope_inventory/joins/pubchem_bioassay/matches/0 in /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; raw row SHA256 d777329f267f281991aef980ec86f24b67d490732117db3cccd218c9c48bc074. | supports | Retained row fields (structure strings remain in the exact cited row): {"standard_inchi_key":"LXMNWKJHYOZUQL-UHFFFAOYSA-N","cid":"324093","aid":"977608","assay_name":"Experimentally measured binding affinity data (IC50) for protein-ligand complexes derived from PDB","assay_type":"Other","depositor":"Shanghai Institute of Organic Chemistry","activity_outcome":"Active","activity_name":"IC50","activity_value_um":"1.4","target_accession":"","reference":"PMID:24446431"} |
+| support-2187-companion-11-query-bindingdb_targets | /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; /contexts/11/source_scope_inventory/joins/bindingdb_targets | supports | Saved predicate exact complete standard_inchi_key equality; query "LXMNWKJHYOZUQL-UHFFFAOYSA-N"; 0 retained rows. Empty results have only this exact pinned scope. |
+| support-2187-companion-11-query-antibioticmech_inchikeys | /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; /contexts/11/source_scope_inventory/joins/antibioticmech_inchikeys | supports | Saved predicate exact complete standard_inchi_key equality; query "LXMNWKJHYOZUQL-UHFFFAOYSA-N"; 0 retained rows. Empty results have only this exact pinned scope. |
+| support-2187-companion-11-query-chebi_origins | /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; /contexts/11/source_scope_inventory/joins/chebi_origins | supports | Saved predicate exact chebi_id from exact full-key structure rows; query []; 0 retained rows. Empty results have only this exact pinned scope. |
+| support-2187-taxon-routes | /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; /contexts/7/source_scope_inventory/source_taxa; /contexts/7/source_scope_inventory/forward_taxon_merge_matches; /contexts/7/source_scope_inventory/nonorganism_matches; /cached_taxonomy/unmatched_ids | supports | Exact selected taxon routes: no forward-merge/nonorganism matches and no unmatched cached IDs. This is cached routing, not live taxonomy or proof of production. |
+| support-2187-taxon-161398 | /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; /cached_taxonomy/whole_stanzas/13 | supports | Complete cached stanza NCBITaxon:161398, physical corpus_taxa.obo lines 55273-55276. Whole stanza personally read. Cached labels/synonyms retain taxonomic scope, not experimentally established producer identity. |
+| support-2187-taxon-717774 | /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json; /cached_taxonomy/whole_stanzas/23 | supports | Complete cached stanza NCBITaxon:717774, physical corpus_taxa.obo lines 109081-109086. Whole stanza personally read. Cached labels/synonyms retain taxonomic scope, not experimentally established producer identity. |
+| support-2187-chemistry | /private/tmp/npm-review-work/shared-next-batch219/chemistry-local/diagnostic-DATA-001.json; /records/6/declared_structure; /records/6/smiles; /records/6/inchi; /records/6/comparisons; /records/6/atom_correspondence | supports | Both stored forms parsed as neutral C12H6Br4O2, 18 atoms and 19 bonds; all ten saved comparisons agree and the atom correspondence is complete. Both have no potential tetrahedral or double-bond stereo in the saved diagnostic. Literal stereo_complete:true does not prove absence or assignment of axial stereochemistry. The saved full_graph_identity_established flag remains false, and no experimental natural-identity determination follows from the comparison. |
+| support-2187-stereo | /private/tmp/npm-review-work/shared-next-batch219/chemistry-local/diagnostic-DATA-001.json; /records/6/declared_structure; /records/6/smiles/computed/potential_stereo; /records/6/smiles/computed/stereo_counts; /records/6/inchi/computed/potential_stereo; /records/6/inchi/computed/stereo_counts; /records/6/smiles/computed/atoms; /records/6/smiles/computed/bonds; /records/6/inchi/computed/atoms; /records/6/inchi/computed/bonds | supports | No saved potential tetrahedral/double stereo; literal true flag does not resolve possible axial stereochemical questions. |
+| support-2187-topology | /private/tmp/npm-review-work/shared-next-batch219/chemistry-local/diagnostic-DATA-001.json; /records/6/smiles/computed; /records/6/inchi/computed | supports | Saved SMILES: two aromatic six-membered rings, direct inter-ring C5–C6 bond, phenolic O14/C7 and O15/C4, four bromines, no C–O–C bridge, carbonyl or saturated C5O ring. |
+| support-2187-stereo-method | /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py; Lines 165-172. | supports | The maintained stereo_complete derivation asks FindMolChiralCenters for unassigned atom centers; it is not a universal geometric/axial/natural-stereo assertion. |
+| support-2187-diagnostic-execution | /private/tmp/npm-review-work/shared-next-batch219/chemistry-local/diagnostic-execution-001.json; Complete original JSON execution receipt. | supports | Original single diagnostic execution receipt and its saved stdout/stderr; no repeat computation. |
+| support-2187-diagnostic-acceptance | /private/tmp/npm-review-work/shared-next-batch219/chemistry-local/root-diagnostic-acceptance-001.json; /status; /DATA; /execution; /original_terminal; /false_comparisons; /stderr_bytes; /limitations | supports | ROOT accepts the original 20-form local computation, with empty stderr and explicit canonical/identity limitations. |
+| support-2187-intake-acceptance | /private/tmp/npm-review-work/shared-next-batch219/root-intake-ready-001.json; /status; /intake_summary; /source_placements; /unique_source_paths; /per_order_counts; /mechanism_owner_orders | supports | ROOT accepts ten original intakes and exact 422/94 source map; no scientific verdict. |
+| support-2187-native-acceptance | /private/tmp/npm-review-work/shared-next-batch219/root-native-checks-acceptance-001.json; /status; /ledger; /local_checks_passed; /queue_rows; /selected_queue_rows; /unavailable | supports | Five original local gates passed; queue 8922 total/13 selected rows. Full QC and OAK unavailable; local gate success is not scientific sign-off. |
+| support-2187-source-ownership | /private/tmp/npm-review-work/shared-next-batch219/intakes/2187-inspect-001.json; /targets/0/owner_paths; /targets/0/ownership_note | supports | Generated inventory/seeder fields and, where present, curator-owned mechanism components retain distinct maintained owners. No source record or native status/history was edited. |
+| root-native-strict_ten | /private/tmp/npm-native-checks/batch-219/validate-strict-selected10-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-219/native-current219-five-gates-execution-001.json | supports | Closed-schema validation of the ten selected owners and any referenced components reported zero errors. |
+| root-native-strict_full | /private/tmp/npm-native-checks/batch-219/validate-all-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-219/native-current219-five-gates-execution-001.json | supports | Full closed-schema validation scanned all 3116 owners and reported zero errors. |
+| root-native-lockfile | /private/tmp/npm-native-checks/batch-219/verify-corpus-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-219/native-current219-five-gates-execution-001.json | supports | PATHS.tsv and filesystem agree on all 3116 records and their pinned filing pathways. |
+| root-native-reproduction | /private/tmp/npm-native-checks/batch-219/verify-reproduction-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-219/native-current219-five-gates-execution-001.json | supports | All 3116 records reproduce byte-identically from the retained inventories and carried curator content. This does not independently validate curator science. |
+| root-native-queue | /private/tmp/npm-native-checks/batch-219/review-queue-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-219/native-current219-five-gates-execution-001.json | supports | The full local queue contains 8922 diagnostic rows; selected-target entries were inspected. Queue diagnostics are leads, not scientific sign-off. |
+
+## Limits And Additional Notes
+
+- No external requests or fresh primary-literature/API/ontology/taxonomy/accession verification. Source xrefs and historical citations remain assertions at their stated resolution.
+- The DPE model label is not supported as a literal ether linkage by the saved biphenyl topology; no model retraining, source edit or natural stereochemical inference was performed.
+- Full QC and complete OAK authority coverage were unavailable. Local validation and reproduction do not prove biological claims or justify native status promotion.
+- No source record, generated owner, component or curation history was edited in this review.
+- The whole selected owner was read, but scientific completion is partial because full QC, complete ontology authority coverage and external source verification were unavailable. No native status or history was changed.
+- The branch uses cached base ce6a5498df5be51116bd5e0c119023ee62bb5464. Fresh origin/main verification and publication are deferred because the user prohibits all external requests.
+- Personal whole reading covers the selected owner/history, admitted direct companions, assigned full source payloads and both saved molecular tables; cache/components carry explicitly identified team attribution.
+- Author previously prepared controller/diagnostic/assembler sources; scientific interpretation is not an independent source-mechanics peer. Independent scientific peer remains separate.
+- Original stderr is empty; no global warning has been assigned to this owner.
+- Saved review coverage is distinct from the native SEEDED/REVIEWED curation state. Proposed actions are not performed edits.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261103T092247Z-bromophene
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'Local evidence review: bromophene'
+started_at: '2026-11-03T08:49:42.189146Z'
+finished_at: '2026-11-03T09:22:47.686570Z'
+reviewer:
+  identity: Codex root with native_checks, bgc_science and review_support peer agents
+  kind: agent
+  independence: independent
+  independence_basis: This review team inspected existing owner and retained source
+    bytes without editing them; scientific fragments were cross-checked separately
+    from their author. Local validation is not treated as scientific proof.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: 'bromophene: qualified partial review retaining source evidence grades, exact
+  representation boundaries and owner-local assay and computed-model limits.'
+source:
+  git_revision: ce6a5498df5be51116bd5e0c119023ee62bb5464
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: AGENTS.md
+    sha256: 69e4037f8dc97d4b00bb7bb83b41ceca025f6ef578d5c0bf8086f3400becde0b
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: curation/pubchem_bioassay_exclusions.tsv
+    sha256: 76f9cbb17e62a270afed637b5058a553cfe85c754c6c9ec406635f12dae572fa
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/bistribromopyrrole.yaml
+    sha256: 8b3c8887fe4dbe182936e0ee4f4883028e3f11a6dfbab7aff87a8e887ef95bdf
+    role: context
+  - path: data/natural_products/shikimates_and_phenylpropanoids/bromophene.yaml
+    sha256: 59027979fbfb4cd3b7263a6ca4bc9c6dd2f36d4b0c9792661b9262e9823832bc
+    role: target
+  - path: data/natural_products/shikimates_and_phenylpropanoids/pentabromopseudilin.yaml
+    sha256: ace546ff07e8dcdc1f238e4a2cf711ad3b236474c1d182e0fe633a30b630812b
+    role: context
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/bioassay_exclusions.py
+    sha256: 4a4176e072ac9759aa8a9e88300d7e2de5aaf4ebf30b5c42fcf4c9c0b6cebbb4
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete NaturalProductRecord, including all present scientific
+    claims, history and declared mechanisms; external verification remains unavailable.
+  selection: Campaign path order 2187; one of the next ten uncovered paths selected
+    from the 3116-record corpus. Membership uses the canonical validated catalogue
+    plus retained committed campaign bundles.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-298e047897
+targets:
+- target_id: naturalproductmech:mibig-298e047897
+  path: data/natural_products/shikimates_and_phenylpropanoids/bromophene.yaml
+  label: bromophene
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained harmonization generator; seeded fields are corrected through
+      maintained inputs and validated regeneration.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Retained MIBiG structure, producer and compound-specific locus assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/npclassifier.tsv
+    role: Pinned computed classification and filing assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Maintained extraction of MIBiG compound names, structures, stereochemistry
+      flags and source provenance.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Retained cited occurrence assertions, distinct from demonstrated production.
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/pubchem_bioassay_exclusions.tsv
+    role: Exact assay identity exclusion decisions for selected/direct source context.
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/bioassay_exclusions.py
+    role: Maintained source-row identity/digest guard; text-only dependency.
+  ownership_note: This review proposes no record edit. Source corrections belong in
+    maintained inventories, implemented curation tables, extractors or the seeder;
+    generated pages are not owners.
+checks:
+- check_id: root-native-strict_ten
+  name: strict_ten
+  status: passed
+  required: true
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  target_ids:
+  - naturalproductmech:mibig-298e047897
+  command: just validate-strict data/natural_products/shikimates_and_phenylpropanoids/aspulvinone-h.yaml
+    data/natural_products/shikimates_and_phenylpropanoids/atromentin.yaml data/natural_products/shikimates_and_phenylpropanoids/bactobolin.yaml
+    data/natural_products/shikimates_and_phenylpropanoids/bagremycin-a.yaml data/natural_products/shikimates_and_phenylpropanoids/bagremycin-b.yaml
+    data/natural_products/shikimates_and_phenylpropanoids/basiliskamide-a.yaml data/natural_products/shikimates_and_phenylpropanoids/bromophene.yaml
+    data/natural_products/shikimates_and_phenylpropanoids/butyrolactone-i.yaml data/natural_products/shikimates_and_phenylpropanoids/cacibiocin-b.yaml
+    data/natural_products/shikimates_and_phenylpropanoids/cathomycin.yaml --workers
+    1 --out /private/tmp/npm-native-checks/batch-219/validate-strict-selected10-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_ten
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-strict_full
+  name: strict_full
+  status: passed
+  required: true
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  target_ids:
+  - naturalproductmech:mibig-298e047897
+  command: just validate-all --workers 1 --out /private/tmp/npm-native-checks/batch-219/validate-all-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_full
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-lockfile
+  name: lockfile
+  status: passed
+  required: true
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  target_ids:
+  - naturalproductmech:mibig-298e047897
+  command: just verify-corpus --summary
+  exit_code: 0
+  evidence_ids:
+  - root-native-lockfile
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-reproduction
+  name: reproduction
+  status: passed
+  required: true
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  target_ids:
+  - naturalproductmech:mibig-298e047897
+  command: just verify-reproduction
+  exit_code: 0
+  evidence_ids:
+  - root-native-reproduction
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-queue
+  name: queue
+  status: passed
+  required: true
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  target_ids:
+  - naturalproductmech:mibig-298e047897
+  command: just review-queue --tsv /private/tmp/npm-native-checks/batch-219/review-queue-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-queue
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-full-qc
+  name: Full just qc
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-298e047897
+  summary: 'Not run under the external-request prohibition: the complete recipe includes
+    upstream vendored synchronization. The five executed local checks are recorded
+    separately.'
+- check_id: root-ontology-authorities
+  name: Complete OAK identifier/label authority check
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-298e047897
+  summary: Complete offline ontology authority coverage was not established for this
+    run; no ontology retrieval or remote resolution was attempted. Retained taxonomy
+    evidence has only its explicitly stated local scope.
+- check_id: root-primary-and-live-sources
+  name: Primary literature and current structured database/identifier verification
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-298e047897
+  summary: All external requests are prohibited by the user. Fresh database and identifier
+    verification and complete primary-literature coverage are unavailable. Any retained
+    original literature actually inspected is recorded separately with its historical
+    scope.
+evidence:
+- evidence_id: support-2187-owner
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/shikimates_and_phenylpropanoids/bromophene.yaml
+  locator: Complete raw owner, lines 1-98.
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Whole selected owner and 2 history events personally read; current exact
+    bytes match retained inventory and capture.
+  snapshot_sha256: 59027979fbfb4cd3b7263a6ca4bc9c6dd2f36d4b0c9792661b9262e9823832bc
+- evidence_id: support-2187-capture
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/6/owner_document; /records/6/owner_pin; /records/6/read_started_at;
+    /records/6/read_finished_at
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Complete actual captured owner and original access clocks; component resolution
+    is assessed separately where applicable.
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2187-intake
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch219/intakes/2187-inspect-001.json
+  locator: /status; /source; /targets/0
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Original inspection-only intake with 41 current inputs and explicit maintained
+    ownership.
+  snapshot_sha256: a4c410bd3968d3d7ef1846b3cf574186057b750fa6f2979abac8bbe627f75e36
+- evidence_id: support-2187-source-plan
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-target-input-plan-001.json
+  locator: /records/6; /source_placement_count; /unique_source_path_count
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Exact current selected raw/history/source frames and input map equal the
+    retained inventory and actual intake; cohort 422 placements/94 paths.
+  snapshot_sha256: e916ee57bc5ec554e1146cde7cd06bd547c949795e818e70aa9b763769bbab5e
+- evidence_id: support-2187-plan-acceptance
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch219/root-target-input-plan-acceptance-001.json
+  locator: /status; /plan; /notes; /actual_intake_acceptance; /source_placements;
+    /unique_source_paths
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: ROOT accepts exact saved source-plan and intake equality; this is not a
+    scientific verdict.
+  snapshot_sha256: 696f459a9a2d88da915d93d977343d7304f9448f71cd29ac63d0f26fd57d261a
+- evidence_id: support-2187-history
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/7/complete_raw_history; /contexts/7/history_count
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: All 2 owner history events preserved; historical verification annotations
+    are not new verification.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2187-direct-contexts
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-target-input-plan-001.json
+  locator: /records/6/proposed_companion_paths; /records/6/direct_companion_predicates;
+    /records/6/declared_mechanism_roots_literal; /records/6/component_paths
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 2 admitted direct companions; selected mechanism applicability and component
+    paths retained without transitive expansion.
+  snapshot_sha256: e916ee57bc5ec554e1146cde7cd06bd547c949795e818e70aa9b763769bbab5e
+- evidence_id: support-2187-source-notes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-scope-notes-001.json
+  locator: /reading/review_support; /reading/bgc_science; /reading/components; /cautions;
+    /curation
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Whole source-reading attribution and bounded 65-token/eight-table zero-hit
+    curation scan. The11 complementary cache stanzas are my reading; shared 341663/41900
+    stanzas are BGC reading. No new external or corpus-wide absence assertion.
+  snapshot_sha256: 58207f6cd3ec20557a15cee20a157352a42c86c9b884ed61e2af20e298c36eb8
+- evidence_id: support-2187-query-mibig_compounds
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/7/source_scope_inventory/joins/mibig_compounds
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "TXODBIOSWNNKJM-UHFFFAOYSA-N";
+    1 retained rows. Empty results have only this exact pinned scope.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2187-row-mibig_compounds-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv
+  locator: Physical TSV lines 1776-1776; exact retained row /contexts/7/source_scope_inventory/joins/mibig_compounds/matches/0
+    in /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json;
+    raw row SHA256 5b01126827acd5cfe0c41cf56d9dca0826f14dfc00ecd85ef88b727416e04cde.
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Retained row fields (structure strings remain in the exact cited row):
+    {"mibig_accession":"BGC0001465","entry_version":"5","entry_status":"active","entry_quality":"questionable","entry_completeness":"unknown","compound_name":"bromophene","compound_index":"1","standard_inchi_key":"TXODBIOSWNNKJM-UHFFFAOYSA-N","stereo_complete":"true","compound_classes":"","database_ids":"pubchem:30891","taxon_id":"NCBITaxon:717774","taxon_label":"Marinomonas
+    mediterranea MMB-1","bgc_classes":"other","bgc_subclasses":"other","genome_accession":"NC_015276.1","locus_from":"4521275","locus_to":"4533494","locus_evidence_methods":"","producer_evidence_basis":"SOURCE_ASSERTION","cluster_link_evidence_basis":"CLUSTER_UNSTATED","primary_reference":"PMID:24974229","reference_basis":"ENTRY"}'
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: support-2187-query-chebi_structures
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/7/source_scope_inventory/joins/chebi_structures
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "TXODBIOSWNNKJM-UHFFFAOYSA-N";
+    0 retained rows. Empty results have only this exact pinned scope.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2187-query-lotus_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/7/source_scope_inventory/joins/lotus_occurrences
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "TXODBIOSWNNKJM-UHFFFAOYSA-N";
+    2 retained rows. Empty results have only this exact pinned scope.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2187-row-lotus_occurrences-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Physical TSV lines 8577-8577; exact retained row /contexts/7/source_scope_inventory/joins/lotus_occurrences/matches/0
+    in /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json;
+    raw row SHA256 cc7e38898cf4f47ed52647b63a2df69ad7c6e9191b1fa8123760f66bd2f050f1.
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Retained row fields (structure strings remain in the exact cited row):
+    {"standard_inchi_key":"TXODBIOSWNNKJM-UHFFFAOYSA-N","organism_name":"Pseudoalteromonas
+    phenolica","taxon_id":"NCBITaxon:161398","organism_wikidata":"http://www.wikidata.org/entity/Q7254495","reference_doi":"10.1021/NP100506Z","structure_wikidata":"http://www.wikidata.org/entity/Q15426194"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2187-row-lotus_occurrences-1
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Physical TSV lines 8578-8578; exact retained row /contexts/7/source_scope_inventory/joins/lotus_occurrences/matches/1
+    in /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json;
+    raw row SHA256 e739b80f39ed5c9d3e33e84a95b3ab5203a069e5f16b8c359d8efc8aa4e5453e.
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Retained row fields (structure strings remain in the exact cited row):
+    {"standard_inchi_key":"TXODBIOSWNNKJM-UHFFFAOYSA-N","organism_name":"Pseudoalteromonas
+    phenolica","taxon_id":"NCBITaxon:161398","organism_wikidata":"http://www.wikidata.org/entity/Q7254495","reference_doi":"10.1128/AAC.47.2.480-488.2003","structure_wikidata":"http://www.wikidata.org/entity/Q15426194"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2187-query-cyanometdb_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/7/source_scope_inventory/joins/cyanometdb_occurrences
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "TXODBIOSWNNKJM-UHFFFAOYSA-N";
+    0 retained rows. Empty results have only this exact pinned scope.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2187-query-npclassifier
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/7/source_scope_inventory/joins/npclassifier
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "TXODBIOSWNNKJM-UHFFFAOYSA-N";
+    1 retained rows. Empty results have only this exact pinned scope.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2187-row-npclassifier-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv
+  locator: Physical TSV lines 2346-2346; exact retained row /contexts/7/source_scope_inventory/joins/npclassifier/matches/0
+    in /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json;
+    raw row SHA256 0a89be4b5f4b6fea50d89730fa14f3b8180a76317eaf5d1d492c8afaba8fbc59.
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Retained row fields (structure strings remain in the exact cited row):
+    {"standard_inchi_key":"TXODBIOSWNNKJM-UHFFFAOYSA-N","pathway_results":"Shikimates
+    and Phenylpropanoids","superclass_results":"Diphenyl ethers (DPEs)","class_results":"Marine-bacterial
+    DPEs","is_glycoside":"false","model_version":"npclassifier.gnps2.org@2026-09-07"}'
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: support-2187-query-pubchem_bioassay
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/7/source_scope_inventory/joins/pubchem_bioassay
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "TXODBIOSWNNKJM-UHFFFAOYSA-N";
+    0 retained rows. Empty results have only this exact pinned scope.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2187-query-bindingdb_targets
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/7/source_scope_inventory/joins/bindingdb_targets
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "TXODBIOSWNNKJM-UHFFFAOYSA-N";
+    0 retained rows. Empty results have only this exact pinned scope.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2187-query-antibioticmech_inchikeys
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/7/source_scope_inventory/joins/antibioticmech_inchikeys
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "TXODBIOSWNNKJM-UHFFFAOYSA-N";
+    0 retained rows. Empty results have only this exact pinned scope.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2187-query-chebi_origins
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/7/source_scope_inventory/joins/chebi_origins
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Saved predicate exact chebi_id from exact full-key structure rows; query
+    []; 0 retained rows. Empty results have only this exact pinned scope.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2187-companion-0
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/0
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Complete directly admitted companion bistribromopyrrole, full keyCKUAYXRLIBAUTH-UHFFFAOYSA-N,
+    2 histories; no identity/activity/producer transfer.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2187-companion-0-query-mibig_compounds
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/0/source_scope_inventory/joins/mibig_compounds
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "CKUAYXRLIBAUTH-UHFFFAOYSA-N";
+    1 retained rows. Empty results have only this exact pinned scope.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2187-companion-0-row-mibig_compounds-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv
+  locator: Physical TSV lines 1777-1777; exact retained row /contexts/0/source_scope_inventory/joins/mibig_compounds/matches/0
+    in /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json;
+    raw row SHA256 2dd4bd638f2b951849c7e5fe99b59cc9f2de54fae8ee6524d4106a99048fb023.
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Retained row fields (structure strings remain in the exact cited row):
+    {"mibig_accession":"BGC0001465","entry_version":"5","entry_status":"active","entry_quality":"questionable","entry_completeness":"unknown","compound_name":"bistribromopyrrole","compound_index":"2","standard_inchi_key":"CKUAYXRLIBAUTH-UHFFFAOYSA-N","stereo_complete":"true","compound_classes":"","database_ids":"pubchem:23426790","taxon_id":"NCBITaxon:717774","taxon_label":"Marinomonas
+    mediterranea MMB-1","bgc_classes":"other","bgc_subclasses":"other","genome_accession":"NC_015276.1","locus_from":"4521275","locus_to":"4533494","locus_evidence_methods":"","producer_evidence_basis":"SOURCE_ASSERTION","cluster_link_evidence_basis":"CLUSTER_UNSTATED","primary_reference":"PMID:24974229","reference_basis":"ENTRY"}'
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: support-2187-companion-0-query-chebi_structures
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/0/source_scope_inventory/joins/chebi_structures
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "CKUAYXRLIBAUTH-UHFFFAOYSA-N";
+    0 retained rows. Empty results have only this exact pinned scope.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2187-companion-0-query-lotus_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/0/source_scope_inventory/joins/lotus_occurrences
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "CKUAYXRLIBAUTH-UHFFFAOYSA-N";
+    0 retained rows. Empty results have only this exact pinned scope.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2187-companion-0-query-cyanometdb_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/0/source_scope_inventory/joins/cyanometdb_occurrences
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "CKUAYXRLIBAUTH-UHFFFAOYSA-N";
+    0 retained rows. Empty results have only this exact pinned scope.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2187-companion-0-query-npclassifier
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/0/source_scope_inventory/joins/npclassifier
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "CKUAYXRLIBAUTH-UHFFFAOYSA-N";
+    1 retained rows. Empty results have only this exact pinned scope.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2187-companion-0-row-npclassifier-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv
+  locator: Physical TSV lines 304-304; exact retained row /contexts/0/source_scope_inventory/joins/npclassifier/matches/0
+    in /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json;
+    raw row SHA256 55b3ee00c87ab2211d7935cc14e599e2ef8b967f86bda70f82e2375f5eb02386.
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Retained row fields (structure strings remain in the exact cited row):
+    {"standard_inchi_key":"CKUAYXRLIBAUTH-UHFFFAOYSA-N","pathway_results":"Alkaloids","superclass_results":"","class_results":"","is_glycoside":"false","model_version":"npclassifier.gnps2.org@2026-09-07"}'
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: support-2187-companion-0-query-pubchem_bioassay
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/0/source_scope_inventory/joins/pubchem_bioassay
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "CKUAYXRLIBAUTH-UHFFFAOYSA-N";
+    1 retained rows. Empty results have only this exact pinned scope.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2187-companion-0-row-pubchem_bioassay-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: Physical TSV lines 906-906; exact retained row /contexts/0/source_scope_inventory/joins/pubchem_bioassay/matches/0
+    in /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json;
+    raw row SHA256 c813485194e0e6b4cf46f38d8548d37c1aec54046474bbd7437a62f9bcb96191.
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Retained row fields (structure strings remain in the exact cited row):
+    {"standard_inchi_key":"CKUAYXRLIBAUTH-UHFFFAOYSA-N","cid":"23426790","aid":"","assay_name":"(no
+    assay data)","assay_type":"","depositor":"","activity_outcome":"","activity_name":"","activity_value_um":"","target_accession":"","reference":""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2187-companion-0-query-bindingdb_targets
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/0/source_scope_inventory/joins/bindingdb_targets
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "CKUAYXRLIBAUTH-UHFFFAOYSA-N";
+    0 retained rows. Empty results have only this exact pinned scope.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2187-companion-0-query-antibioticmech_inchikeys
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/0/source_scope_inventory/joins/antibioticmech_inchikeys
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "CKUAYXRLIBAUTH-UHFFFAOYSA-N";
+    0 retained rows. Empty results have only this exact pinned scope.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2187-companion-0-query-chebi_origins
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/0/source_scope_inventory/joins/chebi_origins
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Saved predicate exact chebi_id from exact full-key structure rows; query
+    []; 0 retained rows. Empty results have only this exact pinned scope.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2187-companion-11
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/11
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Complete directly admitted companion pentabromopseudilin, full keyLXMNWKJHYOZUQL-UHFFFAOYSA-N,
+    4 histories; no identity/activity/producer transfer.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2187-companion-11-query-mibig_compounds
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/11/source_scope_inventory/joins/mibig_compounds
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "LXMNWKJHYOZUQL-UHFFFAOYSA-N";
+    3 retained rows. Empty results have only this exact pinned scope.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2187-companion-11-row-mibig_compounds-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv
+  locator: Physical TSV lines 970-970; exact retained row /contexts/11/source_scope_inventory/joins/mibig_compounds/matches/0
+    in /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json;
+    raw row SHA256 4d5ba7804629a2d073bbc1c101dbc9df5a84874172db7203deb2f52c2be2ad94.
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Retained row fields (structure strings remain in the exact cited row):
+    {"mibig_accession":"BGC0000890","entry_version":"5","entry_status":"active","entry_quality":"questionable","entry_completeness":"complete","compound_name":"pentabromopseudilin","compound_index":"1","standard_inchi_key":"LXMNWKJHYOZUQL-UHFFFAOYSA-N","stereo_complete":"true","compound_classes":"","database_ids":"pubchem:324093","taxon_id":"NCBITaxon:1315281","taxon_label":"Pseudoalteromonas
+    phenolica O-BC30","bgc_classes":"other","bgc_subclasses":"aminocoumarin","genome_accession":"KF540211.1","locus_from":"","locus_to":"","locus_evidence_methods":"Heterologous
+    expression","producer_evidence_basis":"SOURCE_ASSERTION","cluster_link_evidence_basis":"CLUSTER_DEMONSTRATED","primary_reference":"PMID:24974229","reference_basis":"ENTRY"}'
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: support-2187-companion-11-row-mibig_compounds-1
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv
+  locator: Physical TSV lines 971-971; exact retained row /contexts/11/source_scope_inventory/joins/mibig_compounds/matches/1
+    in /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json;
+    raw row SHA256 8a8585f03dde595ac075866339ae9c400fbd4f62160cea885a28f32883c2b2f5.
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Retained row fields (structure strings remain in the exact cited row):
+    {"mibig_accession":"BGC0000891","entry_version":"4","entry_status":"active","entry_quality":"questionable","entry_completeness":"complete","compound_name":"pentabromopseudilin","compound_index":"1","standard_inchi_key":"LXMNWKJHYOZUQL-UHFFFAOYSA-N","stereo_complete":"true","compound_classes":"","database_ids":"","taxon_id":"NCBITaxon:1353533","taxon_label":"Pseudoalteromonas
+    luteoviolacea 2ta16","bgc_classes":"other","bgc_subclasses":"aminocoumarin","genome_accession":"AUSV01000133.1","locus_from":"32483","locus_to":"43745","locus_evidence_methods":"Enzymatic
+    assays|Heterologous expression|Gene expression correlated with compound production","producer_evidence_basis":"BGC_CORRELATED","cluster_link_evidence_basis":"CLUSTER_DEMONSTRATED","primary_reference":"PMID:24974229","reference_basis":"ENTRY"}'
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: support-2187-companion-11-row-mibig_compounds-2
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv
+  locator: Physical TSV lines 1778-1778; exact retained row /contexts/11/source_scope_inventory/joins/mibig_compounds/matches/2
+    in /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json;
+    raw row SHA256 3b1a7b2f1c9d6df02ba25eca0d7d92df5bc81338eefed37d63f4e620639c4b40.
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Retained row fields (structure strings remain in the exact cited row):
+    {"mibig_accession":"BGC0001465","entry_version":"5","entry_status":"active","entry_quality":"questionable","entry_completeness":"unknown","compound_name":"pentabromopseudilin","compound_index":"3","standard_inchi_key":"LXMNWKJHYOZUQL-UHFFFAOYSA-N","stereo_complete":"true","compound_classes":"","database_ids":"pubchem:324093","taxon_id":"NCBITaxon:717774","taxon_label":"Marinomonas
+    mediterranea MMB-1","bgc_classes":"other","bgc_subclasses":"other","genome_accession":"NC_015276.1","locus_from":"4521275","locus_to":"4533494","locus_evidence_methods":"","producer_evidence_basis":"SOURCE_ASSERTION","cluster_link_evidence_basis":"CLUSTER_UNSTATED","primary_reference":"PMID:24974229","reference_basis":"ENTRY"}'
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: support-2187-companion-11-query-chebi_structures
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/11/source_scope_inventory/joins/chebi_structures
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "LXMNWKJHYOZUQL-UHFFFAOYSA-N";
+    0 retained rows. Empty results have only this exact pinned scope.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2187-companion-11-query-lotus_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/11/source_scope_inventory/joins/lotus_occurrences
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "LXMNWKJHYOZUQL-UHFFFAOYSA-N";
+    2 retained rows. Empty results have only this exact pinned scope.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2187-companion-11-row-lotus_occurrences-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Physical TSV lines 4325-4325; exact retained row /contexts/11/source_scope_inventory/joins/lotus_occurrences/matches/0
+    in /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json;
+    raw row SHA256 66d9caaceaab43e8e9cdd3840781708ad1d3c346c27f7052adfcfef51efced91.
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Retained row fields (structure strings remain in the exact cited row):
+    {"standard_inchi_key":"LXMNWKJHYOZUQL-UHFFFAOYSA-N","organism_name":"Pseudoalteromonas
+    luteoviolacea","taxon_id":"NCBITaxon:43657","organism_wikidata":"http://www.wikidata.org/entity/Q7254487","reference_doi":"10.1021/JO00092A020","structure_wikidata":"http://www.wikidata.org/entity/Q27138952"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2187-companion-11-row-lotus_occurrences-1
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Physical TSV lines 4326-4326; exact retained row /contexts/11/source_scope_inventory/joins/lotus_occurrences/matches/1
+    in /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json;
+    raw row SHA256 9bb2ec1b974b3462f4a8a847c0aa8db74b061006252752a49ada85a8ab4b3802.
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Retained row fields (structure strings remain in the exact cited row):
+    {"standard_inchi_key":"LXMNWKJHYOZUQL-UHFFFAOYSA-N","organism_name":"Pseudoalteromonas
+    luteoviolacea","taxon_id":"NCBITaxon:43657","organism_wikidata":"http://www.wikidata.org/entity/Q7254487","reference_doi":"10.1021/NP100506Z","structure_wikidata":"http://www.wikidata.org/entity/Q27138952"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2187-companion-11-query-cyanometdb_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/11/source_scope_inventory/joins/cyanometdb_occurrences
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "LXMNWKJHYOZUQL-UHFFFAOYSA-N";
+    0 retained rows. Empty results have only this exact pinned scope.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2187-companion-11-query-npclassifier
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/11/source_scope_inventory/joins/npclassifier
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "LXMNWKJHYOZUQL-UHFFFAOYSA-N";
+    1 retained rows. Empty results have only this exact pinned scope.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2187-companion-11-row-npclassifier-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv
+  locator: Physical TSV lines 1429-1429; exact retained row /contexts/11/source_scope_inventory/joins/npclassifier/matches/0
+    in /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json;
+    raw row SHA256 beb18c608485e63721849f3db019b1abf86b19a6d98b5b873f55ba3e52a119c1.
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Retained row fields (structure strings remain in the exact cited row):
+    {"standard_inchi_key":"LXMNWKJHYOZUQL-UHFFFAOYSA-N","pathway_results":"Shikimates
+    and Phenylpropanoids","superclass_results":"Diphenyl ethers (DPEs)","class_results":"Marine-bacterial
+    DPEs","is_glycoside":"false","model_version":"npclassifier.gnps2.org@2026-09-07"}'
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: support-2187-companion-11-query-pubchem_bioassay
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/11/source_scope_inventory/joins/pubchem_bioassay
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "LXMNWKJHYOZUQL-UHFFFAOYSA-N";
+    1 retained rows. Empty results have only this exact pinned scope.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2187-companion-11-row-pubchem_bioassay-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: Physical TSV lines 3813-3813; exact retained row /contexts/11/source_scope_inventory/joins/pubchem_bioassay/matches/0
+    in /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json;
+    raw row SHA256 d777329f267f281991aef980ec86f24b67d490732117db3cccd218c9c48bc074.
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Retained row fields (structure strings remain in the exact cited row):
+    {"standard_inchi_key":"LXMNWKJHYOZUQL-UHFFFAOYSA-N","cid":"324093","aid":"977608","assay_name":"Experimentally
+    measured binding affinity data (IC50) for protein-ligand complexes derived from
+    PDB","assay_type":"Other","depositor":"Shanghai Institute of Organic Chemistry","activity_outcome":"Active","activity_name":"IC50","activity_value_um":"1.4","target_accession":"","reference":"PMID:24446431"}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2187-companion-11-query-bindingdb_targets
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/11/source_scope_inventory/joins/bindingdb_targets
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "LXMNWKJHYOZUQL-UHFFFAOYSA-N";
+    0 retained rows. Empty results have only this exact pinned scope.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2187-companion-11-query-antibioticmech_inchikeys
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/11/source_scope_inventory/joins/antibioticmech_inchikeys
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "LXMNWKJHYOZUQL-UHFFFAOYSA-N";
+    0 retained rows. Empty results have only this exact pinned scope.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2187-companion-11-query-chebi_origins
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/11/source_scope_inventory/joins/chebi_origins
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Saved predicate exact chebi_id from exact full-key structure rows; query
+    []; 0 retained rows. Empty results have only this exact pinned scope.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2187-taxon-routes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/7/source_scope_inventory/source_taxa; /contexts/7/source_scope_inventory/forward_taxon_merge_matches;
+    /contexts/7/source_scope_inventory/nonorganism_matches; /cached_taxonomy/unmatched_ids
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Exact selected taxon routes: no forward-merge/nonorganism matches and
+    no unmatched cached IDs. This is cached routing, not live taxonomy or proof of
+    production.'
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2187-taxon-161398
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /cached_taxonomy/whole_stanzas/13
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Complete cached stanza NCBITaxon:161398, physical corpus_taxa.obo lines
+    55273-55276. Whole stanza personally read. Cached labels/synonyms retain taxonomic
+    scope, not experimentally established producer identity.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2187-taxon-717774
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /cached_taxonomy/whole_stanzas/23
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Complete cached stanza NCBITaxon:717774, physical corpus_taxa.obo lines
+    109081-109086. Whole stanza personally read. Cached labels/synonyms retain taxonomic
+    scope, not experimentally established producer identity.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2187-chemistry
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch219/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/6/declared_structure; /records/6/smiles; /records/6/inchi; /records/6/comparisons;
+    /records/6/atom_correspondence
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Both stored forms parsed as neutral C12H6Br4O2, 18 atoms and 19 bonds;
+    all ten saved comparisons agree and the atom correspondence is complete. Both
+    have no potential tetrahedral or double-bond stereo in the saved diagnostic. Literal
+    stereo_complete:true does not prove absence or assignment of axial stereochemistry.
+    The saved full_graph_identity_established flag remains false, and no experimental
+    natural-identity determination follows from the comparison.
+  snapshot_sha256: 4c9a084d7b80a7634173a635f8576b06db26a025f5c996902bbe36ab20e22187
+- evidence_id: support-2187-stereo
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch219/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/6/declared_structure; /records/6/smiles/computed/potential_stereo;
+    /records/6/smiles/computed/stereo_counts; /records/6/inchi/computed/potential_stereo;
+    /records/6/inchi/computed/stereo_counts; /records/6/smiles/computed/atoms; /records/6/smiles/computed/bonds;
+    /records/6/inchi/computed/atoms; /records/6/inchi/computed/bonds
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: No saved potential tetrahedral/double stereo; literal true flag does not
+    resolve possible axial stereochemical questions.
+  snapshot_sha256: 4c9a084d7b80a7634173a635f8576b06db26a025f5c996902bbe36ab20e22187
+- evidence_id: support-2187-topology
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch219/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/6/smiles/computed; /records/6/inchi/computed
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Saved SMILES: two aromatic six-membered rings, direct inter-ring C5–C6
+    bond, phenolic O14/C7 and O15/C4, four bromines, no C–O–C bridge, carbonyl or
+    saturated C5O ring.'
+  snapshot_sha256: 4c9a084d7b80a7634173a635f8576b06db26a025f5c996902bbe36ab20e22187
+- evidence_id: support-2187-stereo-method
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py
+  locator: Lines 165-172.
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: The maintained stereo_complete derivation asks FindMolChiralCenters for
+    unassigned atom centers; it is not a universal geometric/axial/natural-stereo
+    assertion.
+  snapshot_sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+- evidence_id: support-2187-diagnostic-execution
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch219/chemistry-local/diagnostic-execution-001.json
+  locator: Complete original JSON execution receipt.
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Original single diagnostic execution receipt and its saved stdout/stderr;
+    no repeat computation.
+  snapshot_sha256: 65a232c4f9e76cdcba0d36f2b2afdeb2b1ff6bd3948423186dc66d8a8d83c329
+- evidence_id: support-2187-diagnostic-acceptance
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch219/chemistry-local/root-diagnostic-acceptance-001.json
+  locator: /status; /DATA; /execution; /original_terminal; /false_comparisons; /stderr_bytes;
+    /limitations
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: ROOT accepts the original 20-form local computation, with empty stderr
+    and explicit canonical/identity limitations.
+  snapshot_sha256: 9d86c46cc594b27eb7d8af2b459a505806fab0fe879924bcb82d8915ea91c6c0
+- evidence_id: support-2187-intake-acceptance
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch219/root-intake-ready-001.json
+  locator: /status; /intake_summary; /source_placements; /unique_source_paths; /per_order_counts;
+    /mechanism_owner_orders
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: ROOT accepts ten original intakes and exact 422/94 source map; no scientific
+    verdict.
+  snapshot_sha256: b55a9ac100bcb962b17d4ea2de485fca21016491c09d0c2c0fdf309c4cf0e5f4
+- evidence_id: support-2187-native-acceptance
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch219/root-native-checks-acceptance-001.json
+  locator: /status; /ledger; /local_checks_passed; /queue_rows; /selected_queue_rows;
+    /unavailable
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Five original local gates passed; queue 8922 total/13 selected rows. Full
+    QC and OAK unavailable; local gate success is not scientific sign-off.
+  snapshot_sha256: 1970e7734ae524688ab1064cfba1f840b5619df82803cd1a59297ba45438a4ef
+- evidence_id: support-2187-source-ownership
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/intakes/2187-inspect-001.json
+  locator: /targets/0/owner_paths; /targets/0/ownership_note
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Generated inventory/seeder fields and, where present, curator-owned mechanism
+    components retain distinct maintained owners. No source record or native status/history
+    was edited.
+  snapshot_sha256: a4c410bd3968d3d7ef1846b3cf574186057b750fa6f2979abac8bbe627f75e36
+- evidence_id: root-native-strict_ten
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-219/validate-strict-selected10-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-219/native-current219-five-gates-execution-001.json
+  accessed_at: '2026-11-03T08:54:55.683305Z'
+  support: supports
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  snapshot_sha256: 4924b09f392ce3a7de40076e78b039af61006aab5babfc7336809c1d1a7066df
+- evidence_id: root-native-strict_full
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-219/validate-all-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-219/native-current219-five-gates-execution-001.json
+  accessed_at: '2026-11-03T08:55:22.353823Z'
+  support: supports
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  snapshot_sha256: 95bff207615fa197d63e6a572adfc1000494959736ef2bbf81763964ad50960a
+- evidence_id: root-native-lockfile
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-219/verify-corpus-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-219/native-current219-five-gates-execution-001.json
+  accessed_at: '2026-11-03T08:55:44.349599Z'
+  support: supports
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  snapshot_sha256: 254f171c7dff0f1ecbee5f47f75d2b7046143ae7fc499d9a1c08263e1c5125d8
+- evidence_id: root-native-reproduction
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-219/verify-reproduction-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-219/native-current219-five-gates-execution-001.json
+  accessed_at: '2026-11-03T08:56:21.949336Z'
+  support: supports
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  snapshot_sha256: cfc38f4e3f434e7f3651975f2cb228e5cda848476b2c53d1636d8746b794237a
+- evidence_id: root-native-queue
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-219/review-queue-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-219/native-current219-five-gates-execution-001.json
+  accessed_at: '2026-11-03T08:56:34.961048Z'
+  support: supports
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  snapshot_sha256: 42dcce392aeabee4644ffdf1db140ee988d03426e6bedea09bdba7dfc54b24c9
+assessments:
+- assessment_id: support-2187-A1
+  area: identity
+  topic: Exact structure concept and grounding scope
+  outcome: supported
+  summary: Bromophene retains full key TXODBIOSWNNKJM-UHFFFAOYSA-N and neutral C12H6Br4O2.
+    No retained exact-key ChEBI hit supports a more specific grounding, so MINTED
+    is bounded to the inspected snapshot. Active BGC0001465 version 5 names bromophene
+    at compound index 1; questionable quality and unknown completeness are source
+    metadata. Bistribromopyrrole and Pentabromopseudilin share that directly owned
+    BGC but have distinct full keys and remain separate compounds. The retained PubChem
+    xref is not a newly resolved structure authority.
+  target_ids:
+  - naturalproductmech:mibig-298e047897
+  evidence_ids:
+  - support-2187-owner
+  - support-2187-capture
+  - support-2187-intake
+  - support-2187-source-plan
+  - support-2187-plan-acceptance
+  - support-2187-direct-contexts
+  - support-2187-query-chebi_structures
+  - support-2187-row-mibig_compounds-0
+  - support-2187-companion-0
+  - support-2187-companion-0-row-mibig_compounds-0
+  - support-2187-companion-0-row-npclassifier-0
+  - support-2187-companion-0-row-pubchem_bioassay-0
+  - support-2187-companion-11
+  - support-2187-companion-11-row-mibig_compounds-0
+  - support-2187-companion-11-row-mibig_compounds-1
+  - support-2187-companion-11-row-mibig_compounds-2
+  - support-2187-companion-11-row-lotus_occurrences-0
+  - support-2187-companion-11-row-lotus_occurrences-1
+  - support-2187-companion-11-row-npclassifier-0
+  - support-2187-companion-11-row-pubchem_bioassay-0
+  dimensions:
+  - name: standard_inchi_key
+    value: TXODBIOSWNNKJM-UHFFFAOYSA-N
+    definition: Exact inspected scope; retained source assertions, saved computation
+      and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2187-owner
+    - support-2187-capture
+    - support-2187-intake
+    - support-2187-source-plan
+    - support-2187-plan-acceptance
+    - support-2187-direct-contexts
+    - support-2187-query-chebi_structures
+    - support-2187-row-mibig_compounds-0
+    - support-2187-companion-0
+    - support-2187-companion-0-row-mibig_compounds-0
+    - support-2187-companion-0-row-npclassifier-0
+    - support-2187-companion-0-row-pubchem_bioassay-0
+    - support-2187-companion-11
+    - support-2187-companion-11-row-mibig_compounds-0
+    - support-2187-companion-11-row-mibig_compounds-1
+    - support-2187-companion-11-row-mibig_compounds-2
+    - support-2187-companion-11-row-lotus_occurrences-0
+    - support-2187-companion-11-row-lotus_occurrences-1
+    - support-2187-companion-11-row-npclassifier-0
+    - support-2187-companion-11-row-pubchem_bioassay-0
+  - name: grounding_scope
+    value: MINTED; no retained exact-key ChEBI hit; no fresh xref resolution
+    definition: Exact inspected scope; retained source assertions, saved computation
+      and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2187-owner
+    - support-2187-capture
+    - support-2187-intake
+    - support-2187-source-plan
+    - support-2187-plan-acceptance
+    - support-2187-direct-contexts
+    - support-2187-query-chebi_structures
+    - support-2187-row-mibig_compounds-0
+    - support-2187-companion-0
+    - support-2187-companion-0-row-mibig_compounds-0
+    - support-2187-companion-0-row-npclassifier-0
+    - support-2187-companion-0-row-pubchem_bioassay-0
+    - support-2187-companion-11
+    - support-2187-companion-11-row-mibig_compounds-0
+    - support-2187-companion-11-row-mibig_compounds-1
+    - support-2187-companion-11-row-mibig_compounds-2
+    - support-2187-companion-11-row-lotus_occurrences-0
+    - support-2187-companion-11-row-lotus_occurrences-1
+    - support-2187-companion-11-row-npclassifier-0
+    - support-2187-companion-11-row-pubchem_bioassay-0
+- assessment_id: support-2187-A2
+  area: representation
+  topic: Paired molecular representations and stereochemical limits
+  outcome: supported
+  summary: Both stored forms parsed as neutral C12H6Br4O2, 18 atoms and 19 bonds;
+    all ten saved comparisons agree and the atom correspondence is complete. Both
+    have no potential tetrahedral or double-bond stereo in the saved diagnostic. Literal
+    stereo_complete:true reflects the maintained atom-centered scope; it does not
+    prove absence or assignment of axial stereochemistry. The saved full_graph_identity_established
+    flag remains false, and no experimental natural-identity determination follows
+    from the comparison. Original diagnostic stderr is empty.
+  target_ids:
+  - naturalproductmech:mibig-298e047897
+  evidence_ids:
+  - support-2187-owner
+  - support-2187-capture
+  - support-2187-intake
+  - support-2187-source-plan
+  - support-2187-plan-acceptance
+  - support-2187-chemistry
+  - support-2187-stereo
+  - support-2187-stereo-method
+  - support-2187-diagnostic-execution
+  - support-2187-diagnostic-acceptance
+  dimensions:
+  - name: stereochemical_resolution
+    value: No saved potential tetrahedral/double stereo; literal true flag does not
+      resolve possible axial stereochemical questions.
+    definition: Exact inspected scope; retained source assertions, saved computation
+      and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2187-owner
+    - support-2187-capture
+    - support-2187-intake
+    - support-2187-source-plan
+    - support-2187-plan-acceptance
+    - support-2187-chemistry
+    - support-2187-stereo
+    - support-2187-stereo-method
+    - support-2187-diagnostic-execution
+    - support-2187-diagnostic-acceptance
+  - name: representation_correspondence
+    value: Ten comparisons true; complete 18-atom map; full_graph_identity_established:false.
+    definition: Exact inspected scope; retained source assertions, saved computation
+      and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2187-owner
+    - support-2187-capture
+    - support-2187-intake
+    - support-2187-source-plan
+    - support-2187-plan-acceptance
+    - support-2187-chemistry
+    - support-2187-stereo
+    - support-2187-stereo-method
+    - support-2187-diagnostic-execution
+    - support-2187-diagnostic-acceptance
+- assessment_id: support-2187-A3
+  area: provenance
+  topic: Producer, occurrence and locus evidence grades
+  outcome: supported
+  summary: The MIBiG SOURCE_ASSERTION producer is Marinomonas mediterranea MMB-1,
+    NCBITaxon:717774; BGC0001465 is CLUSTER_UNSTATED with no locus experiment stated.
+    NC_015276.1 coordinates 4521275–4533494 remain deposited locus provenance. Two
+    species-level Pseudoalteromonas phenolica, NCBITaxon:161398, LOTUS occurrences
+    do not demonstrate production by MMB-1 or by every member of either taxon. Direct-companion
+    producer claims stay on their own records.
+  target_ids:
+  - naturalproductmech:mibig-298e047897
+  evidence_ids:
+  - support-2187-owner
+  - support-2187-capture
+  - support-2187-intake
+  - support-2187-source-plan
+  - support-2187-plan-acceptance
+  - support-2187-row-mibig_compounds-0
+  - support-2187-row-lotus_occurrences-0
+  - support-2187-row-lotus_occurrences-1
+  - support-2187-taxon-routes
+  - support-2187-taxon-161398
+  - support-2187-taxon-717774
+  dimensions:
+  - name: taxon_and_strain_scope
+    value: NCBITaxon:161398; NCBITaxon:717774; cached/source scope only
+    definition: Exact inspected scope; retained source assertions, saved computation
+      and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2187-owner
+    - support-2187-capture
+    - support-2187-intake
+    - support-2187-source-plan
+    - support-2187-plan-acceptance
+    - support-2187-row-mibig_compounds-0
+    - support-2187-row-lotus_occurrences-0
+    - support-2187-row-lotus_occurrences-1
+    - support-2187-taxon-routes
+    - support-2187-taxon-161398
+    - support-2187-taxon-717774
+  - name: producer_evidence_tier
+    value: SOURCE_ASSERTION; MMB-1 strain717774 distinct from occurrence species161398
+    definition: Exact inspected scope; retained source assertions, saved computation
+      and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2187-owner
+    - support-2187-capture
+    - support-2187-intake
+    - support-2187-source-plan
+    - support-2187-plan-acceptance
+    - support-2187-row-mibig_compounds-0
+    - support-2187-row-lotus_occurrences-0
+    - support-2187-row-lotus_occurrences-1
+    - support-2187-taxon-routes
+    - support-2187-taxon-161398
+    - support-2187-taxon-717774
+  - name: locus_evidence_tier
+    value: CLUSTER_UNSTATED; no locus experiment stated
+    definition: Exact inspected scope; retained source assertions, saved computation
+      and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2187-owner
+    - support-2187-capture
+    - support-2187-intake
+    - support-2187-source-plan
+    - support-2187-plan-acceptance
+    - support-2187-row-mibig_compounds-0
+    - support-2187-row-lotus_occurrences-0
+    - support-2187-row-lotus_occurrences-1
+    - support-2187-taxon-routes
+    - support-2187-taxon-161398
+    - support-2187-taxon-717774
+- assessment_id: support-2187-A4
+  area: evidence
+  topic: Citation placement and historical verification scope
+  outcome: supported
+  summary: PMID:24974229 is the MIBiG ENTRY citation, while DOI:10.1021/NP100506Z
+    and DOI:10.1128/AAC.47.2.480-488.2003 are LOTUS occurrence citations. Their bibliographic
+    independence and precise experimental scope were not freshly checked. Unselected
+    Pentabromopseudilin retains its own assay and historical graph/pathway citations;
+    these do not become bromophene evidence.
+  target_ids:
+  - naturalproductmech:mibig-298e047897
+  evidence_ids:
+  - support-2187-owner
+  - support-2187-capture
+  - support-2187-intake
+  - support-2187-source-plan
+  - support-2187-plan-acceptance
+  - support-2187-history
+  - support-2187-source-notes
+  - support-2187-row-mibig_compounds-0
+  - support-2187-row-lotus_occurrences-0
+  - support-2187-row-lotus_occurrences-1
+  dimensions:
+  - name: citation_scope
+    value: ENTRY PMID:24974229; separate LOTUS occurrence DOI assertions
+    definition: Exact inspected scope; retained source assertions, saved computation
+      and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2187-owner
+    - support-2187-capture
+    - support-2187-intake
+    - support-2187-source-plan
+    - support-2187-plan-acceptance
+    - support-2187-history
+    - support-2187-source-notes
+    - support-2187-row-mibig_compounds-0
+    - support-2187-row-lotus_occurrences-0
+    - support-2187-row-lotus_occurrences-1
+- assessment_id: support-2187-A5
+  area: scope
+  topic: Occurrence, assay and companion boundaries
+  outcome: supported
+  summary: The selected owner has two LOTUS occurrence assertions and no written bioactivity,
+    bioactivity summary, target or mechanism roots. Its exact assay/BindingDB/sibling
+    frames are empty. Unselected Pentabromopseudilin has AID 977608, Active IC50 1.4
+    uM with PMID:24446431 and blank target accession; its derived-affinity context
+    and raw graph/pathway are not transferred here. Bistribromopyrrole has a blank-AID
+    sentinel, which is neither an assay nor evidence of inactivity. These contexts
+    explain intake assay-exclusion dependencies without adding a selected activity
+    claim.
+  target_ids:
+  - naturalproductmech:mibig-298e047897
+  evidence_ids:
+  - support-2187-owner
+  - support-2187-capture
+  - support-2187-intake
+  - support-2187-source-plan
+  - support-2187-plan-acceptance
+  - support-2187-query-lotus_occurrences
+  - support-2187-query-cyanometdb_occurrences
+  - support-2187-query-pubchem_bioassay
+  - support-2187-query-bindingdb_targets
+  - support-2187-query-antibioticmech_inchikeys
+  - support-2187-query-chebi_origins
+  - support-2187-row-lotus_occurrences-0
+  - support-2187-row-lotus_occurrences-1
+  - support-2187-companion-0
+  - support-2187-companion-0-row-mibig_compounds-0
+  - support-2187-companion-0-row-npclassifier-0
+  - support-2187-companion-0-row-pubchem_bioassay-0
+  - support-2187-companion-11
+  - support-2187-companion-11-row-mibig_compounds-0
+  - support-2187-companion-11-row-mibig_compounds-1
+  - support-2187-companion-11-row-mibig_compounds-2
+  - support-2187-companion-11-row-lotus_occurrences-0
+  - support-2187-companion-11-row-lotus_occurrences-1
+  - support-2187-companion-11-row-npclassifier-0
+  - support-2187-companion-11-row-pubchem_bioassay-0
+  dimensions:
+  - name: occurrence_scope
+    value: Two species-level LOTUS assertions; no companion producer or activity transfer
+    definition: Exact inspected scope; retained source assertions, saved computation
+      and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2187-owner
+    - support-2187-capture
+    - support-2187-intake
+    - support-2187-source-plan
+    - support-2187-plan-acceptance
+    - support-2187-query-lotus_occurrences
+    - support-2187-query-cyanometdb_occurrences
+    - support-2187-query-pubchem_bioassay
+    - support-2187-query-bindingdb_targets
+    - support-2187-query-antibioticmech_inchikeys
+    - support-2187-query-chebi_origins
+    - support-2187-row-lotus_occurrences-0
+    - support-2187-row-lotus_occurrences-1
+    - support-2187-companion-0
+    - support-2187-companion-0-row-mibig_compounds-0
+    - support-2187-companion-0-row-npclassifier-0
+    - support-2187-companion-0-row-pubchem_bioassay-0
+    - support-2187-companion-11
+    - support-2187-companion-11-row-mibig_compounds-0
+    - support-2187-companion-11-row-mibig_compounds-1
+    - support-2187-companion-11-row-mibig_compounds-2
+    - support-2187-companion-11-row-lotus_occurrences-0
+    - support-2187-companion-11-row-lotus_occurrences-1
+    - support-2187-companion-11-row-npclassifier-0
+    - support-2187-companion-11-row-pubchem_bioassay-0
+  - name: assay_scope
+    value: Selected assay frames empty; companion AID977608 and blank sentinel remain
+      context only
+    definition: Exact inspected scope; retained source assertions, saved computation
+      and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2187-owner
+    - support-2187-capture
+    - support-2187-intake
+    - support-2187-source-plan
+    - support-2187-plan-acceptance
+    - support-2187-query-lotus_occurrences
+    - support-2187-query-cyanometdb_occurrences
+    - support-2187-query-pubchem_bioassay
+    - support-2187-query-bindingdb_targets
+    - support-2187-query-antibioticmech_inchikeys
+    - support-2187-query-chebi_origins
+    - support-2187-row-lotus_occurrences-0
+    - support-2187-row-lotus_occurrences-1
+    - support-2187-companion-0
+    - support-2187-companion-0-row-mibig_compounds-0
+    - support-2187-companion-0-row-npclassifier-0
+    - support-2187-companion-0-row-pubchem_bioassay-0
+    - support-2187-companion-11
+    - support-2187-companion-11-row-mibig_compounds-0
+    - support-2187-companion-11-row-mibig_compounds-1
+    - support-2187-companion-11-row-mibig_compounds-2
+    - support-2187-companion-11-row-lotus_occurrences-0
+    - support-2187-companion-11-row-lotus_occurrences-1
+    - support-2187-companion-11-row-npclassifier-0
+    - support-2187-companion-11-row-pubchem_bioassay-0
+- assessment_id: support-2187-A6
+  area: other
+  topic: Computed classification and full-table topology limits
+  outcome: supported
+  summary: 'NPClassifier reports Diphenyl ethers (DPEs) / Marine-bacterial DPEs, is_glycoside=false,
+    as explicitly computed output. The saved structure instead has two aromatic six-membered
+    rings joined directly by C5–C6, with phenolic O14 on C7 and O15 on C4 and four
+    bromine atoms: there is no C–O–C bridge. The DPE class is therefore not a literal
+    topology description of this saved biphenyl. This is a model-applicability limitation,
+    not a newly established wrong-structure or source-record defect; the model output
+    and source OTHER BGC class remain attributed rather than promoted to experimental
+    assertions.'
+  target_ids:
+  - naturalproductmech:mibig-298e047897
+  evidence_ids:
+  - support-2187-owner
+  - support-2187-capture
+  - support-2187-intake
+  - support-2187-source-plan
+  - support-2187-plan-acceptance
+  - support-2187-topology
+  - support-2187-chemistry
+  - support-2187-row-npclassifier-0
+  - support-2187-row-mibig_compounds-0
+  dimensions:
+  - name: computed_classification
+    value: Shikimates and Phenylpropanoids / Diphenyl ethers (DPEs) / Marine-bacterial
+      DPEs; glycoside=false; npclassifier.gnps2.org@2026-09-07
+    definition: Exact inspected scope; retained source assertions, saved computation
+      and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2187-owner
+    - support-2187-capture
+    - support-2187-intake
+    - support-2187-source-plan
+    - support-2187-plan-acceptance
+    - support-2187-topology
+    - support-2187-chemistry
+    - support-2187-row-npclassifier-0
+    - support-2187-row-mibig_compounds-0
+- assessment_id: support-2187-A7
+  area: completeness
+  topic: Partial scientific completion and maintained ownership
+  outcome: supported
+  summary: All seven core areas and twelve dimensions were assessed against actual
+    intake, whole raw/history, retained source rows/cache and both complete saved
+    chemical forms. Five local gates passed; full QC/OAK and external verification
+    remain unavailable. This owner has no selected mechanism roots/components and
+    no maintained reader applies. The inspected source assertions and bounded local
+    structure facts provide positive support; no concrete source-record contradiction
+    requiring a curation finding was established. Native SEEDED status/history and
+    all corpus/source bytes remain unchanged.
+  target_ids:
+  - naturalproductmech:mibig-298e047897
+  evidence_ids:
+  - support-2187-owner
+  - support-2187-capture
+  - support-2187-intake
+  - support-2187-source-plan
+  - support-2187-plan-acceptance
+  - support-2187-history
+  - support-2187-source-notes
+  - support-2187-direct-contexts
+  - support-2187-intake-acceptance
+  - support-2187-native-acceptance
+  - support-2187-diagnostic-acceptance
+  - support-2187-source-ownership
+  dimensions:
+  - name: review_completion
+    value: partial; full QC/OAK/external verification unavailable; no native status/history
+      or source edits
+    definition: Exact inspected scope; retained source assertions, saved computation
+      and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2187-owner
+    - support-2187-capture
+    - support-2187-intake
+    - support-2187-source-plan
+    - support-2187-plan-acceptance
+    - support-2187-history
+    - support-2187-source-notes
+    - support-2187-direct-contexts
+    - support-2187-intake-acceptance
+    - support-2187-native-acceptance
+    - support-2187-diagnostic-acceptance
+    - support-2187-source-ownership
+findings: []
+actions: []
+limitations:
+- No external requests or fresh primary-literature/API/ontology/taxonomy/accession
+  verification. Source xrefs and historical citations remain assertions at their stated
+  resolution.
+- The DPE model label is not supported as a literal ether linkage by the saved biphenyl
+  topology; no model retraining, source edit or natural stereochemical inference was
+  performed.
+- Full QC and complete OAK authority coverage were unavailable. Local validation and
+  reproduction do not prove biological claims or justify native status promotion.
+- No source record, generated owner, component or curation history was edited in this
+  review.
+- The whole selected owner was read, but scientific completion is partial because
+  full QC, complete ontology authority coverage and external source verification were
+  unavailable. No native status or history was changed.
+- The branch uses cached base ce6a5498df5be51116bd5e0c119023ee62bb5464. Fresh origin/main
+  verification and publication are deferred because the user prohibits all external
+  requests.
+notes:
+- Personal whole reading covers the selected owner/history, admitted direct companions,
+  assigned full source payloads and both saved molecular tables; cache/components
+  carry explicitly identified team attribution.
+- Author previously prepared controller/diagnostic/assembler sources; scientific interpretation
+  is not an independent source-mechanics peer. Independent scientific peer remains
+  separate.
+- Original stderr is empty; no global warning has been assigned to this owner.
+- Saved review coverage is distinct from the native SEEDED/REVIEWED curation state.
+  Proposed actions are not performed edits.
+tags:
+- offline
+- record-review
+- batch-219
+```
