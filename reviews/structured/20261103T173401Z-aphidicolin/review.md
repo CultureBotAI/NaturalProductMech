@@ -1,0 +1,3607 @@
+# Local evidence review: aphidicolin
+
+- Review: 20261103T173401Z-aphidicolin
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-11-03T17:10:56.611245Z
+- Finished UTC: 2026-11-03T17:34:01.116101Z
+- Reviewer: Codex root with native_checks, bgc_science and review_support peer agents (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+Partial review needs a narrow curation correction: two written malarial delayed-death assay labels overstate retained support for enzyme inhibition. Preserve their Active calls and potencies, the mixed 71-row assay scope, other qualified activity routes and the locally consistent structure.
+
+## Scope And Provenance
+
+One complete NaturalProductRecord, including all present scientific claims, history and declared mechanisms; external verification remains unavailable.
+
+Selection: Campaign path order 2268; one of the next ten uncovered paths selected from the 3116-record corpus. Membership uses the canonical validated catalogue plus retained committed campaign bundles.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base ce6a5498df5be51116bd5e0c119023ee62bb5464.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CHEBI:2766 | data/natural_products/terpenoids/aphidicolin.yaml | generated | aphidicolin |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| strict_ten | passed | True | CHEBI:2766 | Closed-schema validation of the ten selected owners and any referenced components reported zero errors. |
+| strict_full | passed | True | CHEBI:2766 | Full closed-schema validation scanned all 3116 owners and reported zero errors. |
+| lockfile | passed | True | CHEBI:2766 | PATHS.tsv and filesystem agree on all 3116 records and their pinned filing pathways. |
+| reproduction | passed | True | CHEBI:2766 | All 3116 records reproduce byte-identically from the retained inventories and carried curator content. This does not independently validate curator science. |
+| queue | passed | True | CHEBI:2766 | The full local queue contains 8922 diagnostic rows; selected-target entries were inspected. Queue diagnostics are leads, not scientific sign-off. |
+| Full just qc | unavailable | True | CHEBI:2766 | Not run under the external-request prohibition: the complete recipe includes upstream vendored synchronization. The five executed local checks are recorded separately. |
+| Complete OAK identifier/label authority check | unavailable | True | CHEBI:2766 | Complete offline ontology authority coverage was not established for this run; no ontology retrieval or remote resolution was attempted. Retained taxonomy evidence has only its explicitly stated local scope. |
+| Primary literature and current structured database/identifier verification | unavailable | True | CHEBI:2766 | All external requests are prohibited by the user. Fresh database and identifier verification and complete primary-literature coverage are unavailable. Any retained original literature actually inspected is recorded separately with its historical scope. |
+
+## Scientific And Domain Assessments
+
+### Exact structure concept and grounding
+
+identity: supported. Targets: CHEBI:2766.
+
+The EXACT CHEBI:2766 owner joins the MIBiG BGC0000676 version 5 structure and retained three-star ChEBI row by full key NOFOAYPPHIUXJR-APNQCZIXSA-N. MIBiG source compound_index=1, PubChem CID457964 and other cross-references retain their own scope. Three direct BGC companions have distinct full keys; aphidicolan-16β-ol's unresolved cross-reference does not invalidate or resolve this selected key.
+
+### Stored representation and stereochemistry
+
+representation: supported. Targets: CHEBI:2766.
+
+Both forms give neutral C20H34O4, 24 heavy atoms, 27 bonds and the declared full key, with all ten comparison flags true and eight specified tetrahedral centers. All bond types are SINGLE; four terminal hydroxyl oxygens are retained. The complete saved chirality-aware atom map is not an independent natural identity or external-authority determination. stereo_complete:true describes the encoded centers rather than experimental proof of the original isolate.
+
+### Producer, locus, taxon and strain roles
+
+provenance: supported. Targets: CHEBI:2766.
+
+MIBiG BGC0000676 version 5 is active, quality questionable and completeness complete. Phoma betae 1979465 is a SOURCE_ASSERTION producer, while heterologous expression supports the separate CLUSTER_DEMONSTRATED locus at AB114137.1 without coordinates. Occurrence sources name several fungi and a Pyrenula genus entry; these are not additional demonstrated producers. The retained forward merge 291364→2231603 explains the rewritten ChEBI taxon ID; cached Akanthomyces muscarius lists Cephalosporium aphidicola as an exact synonym, without a fresh taxonomy lookup.
+
+### Citation placement and primary-source limits
+
+evidence: supported. Targets: CHEBI:2766.
+
+The MIBiG producer/locus entry citation is PMID:14745177. Twenty-two LOTUS placements and three ChEBI-origin placements yield 24 written occurrences after the retained Botrytis/Botryotinia duplication is handled. DOI and PMID overlap is not publication independence. Assay evidence cites specific PubChem AIDs when the retained reference is blank; the P-glycoprotein row separately carries PMID:31515284. ChEBI's definition and the exact-key AntibioticMech ANTIVIRAL annotation are separate retained sources, not proof that each screen measures that mechanism.
+
+### Occurrence and assay boundaries
+
+scope: concern. Targets: CHEBI:2766.
+
+The saved source contains 71 assay placements across 61 distinct AIDs: 47 Active, 16 Inconclusive and eight Inactive. The owner writes 25 measurement-prioritized observations and explicitly notes 46 omitted results. Repeated AIDs preserve target-populated and blank-target placements; potencies do not override source calls, and EPAC agonist/antagonist or cellular NSD2 screens do not by themselves prove direct binding or enzymatic mechanism. Written observations 10 and 11 are delayed-death malarial-plastid screens, AIDs 504832/504834, with OTHER/Potency values 0.5221/0.5858 uM and no retained molecular target. Their ENZYME_INHIBITOR classes lack support at that assay level; the finding preserves both Active calls and all values. Separate NSD2-labeled observations, cytotoxic and Leishmania screens, and sibling ANTIVIRAL annotation retain their own qualified summary routes.
+
+### Computed classification and complete saved topology
+
+other: supported. Targets: CHEBI:2766.
+
+NPClassifier retains Terpenoids / Diterpenoids / Aphidicolane diterpenoids and Tetracyclic diterpenoids, is_glycoside:false. The complete four-carbon-ring framework has two hydroxymethyl groups (C9–O10 and C19–O20), a secondary hydroxyl (C15–O16) and a tertiary hydroxyl (C7–O8), using SMILES indices. There is no carbonyl, C–O–C bridge, ring oxygen or sugar residue. These indexed motifs support the broad polyhydroxylated tetracyclic description without assigning the definition's biochemical positions anew.
+
+### Review completion and unavailable verification
+
+completeness: unknown. Targets: CHEBI:2766.
+
+This is a partial scientific review of the exact admitted owner and retained source scope. Five local commands and original saved chemistry were accepted; FullQC and complete OAK were unavailable. No selected maintained reader is applicable because all four mechanism roots are absent; companion graphs do not change that applicability. No live identifier/taxonomy/protein response or independent natural identity was verified, and this review does not set native REVIEWED status.
+
+## Findings
+
+### support-2268-delayed-death-enzyme-class: Two malarial delayed-death screens lack retained support for ENZYME_INHIBITOR typing
+
+major / open / confirmed; issue key: aphidicolin-delayed-death-plastid-assays-enzyme-inhibitor-overstatement.
+
+bioactivities[10] and [11] cite AIDs 504832 and 504834, delayed-death malarial-parasite plastid screens at 48 and 96 hours. Exact retained rows 4547/4548 report Active, Potency 0.5221/0.5858 uM, with blank target and reference. The generic inhibitors-of title fallback supplies ENZYME_INHIBITOR, although these phenotype-level rows do not identify an enzyme or an enzyme-inhibition endpoint. The confirmed gap is the observation-level class inference, not a biological contradiction, invalid Active call or assertion of compound inactivity. Coarse schema classes require support but have no separate finer ENZYME_INHIBITOR definition. Four written NSD2 placements across two AIDs remain separate enzyme-named, cellular-screen evidence; this finding does not automatically remove the compound summary or claim direct biochemical inhibition from those screens.
+
+Disposition: Exact saved source rows, current written observations and maintained classification logic establish the support gap without external retrieval.
+
+## Recommended Actions And Acceptance Checks
+
+### support-2268-repair-delayed-death-classification
+
+Narrow maintained classify_activity so the exact delayed-death malarial-plastid titles do not acquire ENZYME_INHIBITOR solely from generic inhibition wording. Omit only the unsupported optional classes unless inspected evidence supports a replacement. Preserve AIDs 504832/504834, both Active calls, incubation descriptions, OTHER/Potency 0.5221/0.5858 uM and blank targets/references. Keep the other 23 written observations and 71-row retained inventory, including mixed outcomes, repeated-AID target variants and independent NSD2 summary support with cellular-screen limitations. Recompute summaries from appropriately supported written evidence; do not invent a molecular target or transfer companion pharmacology.
+
+- The two exact delayed-death observations retain all source calls and quantitative fields without unsupported ENZYME_INHIBITOR labels.
+- Regression coverage distinguishes these phenotype-level titles from supported enzyme-named assays while preserving all other written observations and repeated target variants.
+- Summary derivation uses supported written evidence, retains separate NSD2 and sibling scopes, and introduces no direct-binding or biochemical inhibition claim.
+- After authorized implementation, regenerate through the maintained seeder and run required strict/reproduction/corpus/review checks.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| support-2268-owner | /private/tmp/npm-record-reviews-20261021/data/natural_products/terpenoids/aphidicolin.yaml; lines 1–634 | supports | Whole current plaintext owner and all 3 history events. Literal identifier CHEBI:2766, label aphidicolin and full key NOFOAYPPHIUXJR-APNQCZIXSA-N. Historical annotations remain retained claims, not fresh verification. |
+| support-2268-capture | /private/tmp/npm-review-work/shared-next-batch227/owner-capture-DATA-001.json; /records/7/owner_document; /records/7/owner_pin | supports | Exact captured complete owner, including its source assertions, written occurrences/activity, computed classification, mechanism roots where present and complete history. |
+| support-2268-source-plan | /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json; /records/7 | supports | Complete admitted selected source context, all nine query frames/full payloads, exact direct companions and 43 proposed inputs; this artifact does not itself establish scientific correctness. |
+| support-2268-intake | /private/tmp/npm-review-work/shared-next-batch227/intakes/2268-inspect-001.json; /status; /source; /targets | supports | Original canonical inspection of the exact target, maintained ownership roles and all admitted input snapshots. |
+| support-2268-plan-acceptance | /private/tmp/npm-review-work/shared-next-batch227/root-input-plan-acceptance-001.json; /observer; /recorded_at; /status; /accepted; /input_plan; /derivation; /inventory; /inventory_acceptance; /notes; /composer_execution; /original_tools; /source_adoption; /selection; /capture; /verification; /external_requests; /target_invocations_by_this_acceptance | supports | ROOT accepts the original source plan, exact418 input placements/53 paths and preserved unnumbered pathway item; scientific findings are separate. |
+| support-2268-intake-acceptance | /private/tmp/npm-review-work/shared-next-batch227/root-intake-ready-001.json; /observer; /recorded_at; /status; /accepted; /selection; /capture; /environment; /input_plan; /input_plan_acceptance; /inventory_acceptance; /intake_summary; /execution; /original_tools; /source_adoption; /native_checks_acceptance; /original_terminal; /verification; /limits; /external_requests; /target_invocations_by_this_acceptance | supports | ROOT accepts all ten original canonical intakes and current418/53 maps; the receipt records scientific diagnostics/readers as pending at its historical seal. |
+| support-2268-diagnostic-acceptance | /private/tmp/npm-review-work/shared-next-batch227/root-local-diagnostics-acceptance-001.json; /observer; /observed_at; /status; /accepted; /DATA; /execution; /original_tools; /source_adoption; /intake_ready; /original_terminal; /verification; /unspecified_stereo; /ROOT_reading; /limits; /external_requests; /target_invocations_by_this_acceptance | supports | ROOT accepts the original twenty stored-form computations with100 true comparison flags, zero stderr and zero denials. Representation consistency is not natural identity; source cross-reference limits remain. |
+| support-2268-native-gates | /private/tmp/npm-review-work/shared-next-batch227/root-native-five-gates-acceptance-001.json; /observer; /observed_at; /accepted; /status; /ledger; /original_tools; /own_readback; /original_terminal; /five_local_commands_passed; /all_native_gates_passed; /unavailable; /ROOT_reading; /verification; /external_requests; /target_invocations_by_this_acceptance | supports | ROOT accepts five successful documented local commands. FullQC and complete OAK remain unavailable; mechanical checks do not establish scientific completeness. |
+| support-2268-chemistry-execution | /private/tmp/npm-review-work/shared-next-batch227/chemistry-local/diagnostic-execution-001.json; /started_at; /finished_at; /exit_code; /stdout; /stderr; /external_requests | supports | The original ROOT-owned chemistry process returned zero once with an empty stderr stream; no additional parse is claimed. |
+| support-2268-chemistry | /private/tmp/npm-review-work/shared-next-batch227/chemistry-local/diagnostic-DATA-001.json; /records/7/declared_structure; /records/7/smiles; /records/7/inchi; /records/7/comparisons; /records/7/atom_correspondence | supports | Both forms give neutral C20H34O4, 24 heavy atoms, 27 bonds and the declared full key, with all ten comparison flags true and eight specified tetrahedral centers. All bond types are SINGLE; four terminal hydroxyl oxygens are retained. The complete saved chirality-aware atom map is not an independent natural identity or external-authority determination. stereo_complete:true describes the encoded centers rather than experimental proof of the original isolate. |
+| support-2268-topology | /private/tmp/npm-review-work/shared-next-batch227/chemistry-local/diagnostic-DATA-001.json; /records/7/smiles/computed; /records/7/inchi/computed | supports | Complete saved paired atom/bond/ring/stereo/motif tables. The complete four-carbon-ring framework has two hydroxymethyl groups (C9–O10 and C19–O20), a secondary hydroxyl (C15–O16) and a tertiary hydroxyl (C7–O8), using SMILES indices. There is no carbonyl, C–O–C bridge, ring oxygen or sugar residue. These indexed motifs support the broad polyhydroxylated tetracyclic description without assigning the definition's biochemical positions anew. |
+| support-2268-stereo-method | /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py; lines 142–173 | supports | Maintained structure_fields derives standard InChI/key and sets stereo_complete from undefined tetrahedral-center detection. It does not independently determine natural absolute configuration. |
+| support-2268-seeder | /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py; lines 982–1025 | supports | Maintained seeder copies the lead structure/completeness flag and preserves the named model/version and all returned classification fields. |
+| support-2268-structure-schema | /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml; lines 392–425 | supports | Schema documents undefined stereocentres and explicitly distinguishes named/versioned computed classification from source assertions. |
+| support-2268-review-profile | /private/tmp/npm-record-reviews-20261021/docs/record-review-profile.md; lines 35–57 | supports | Review profile separates exact structure, producer/occurrence evidence, activity and computed classification; native REVIEWED requires more than saving this partial review. |
+| support-2268-source-notes | /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-source-scope-notes-001.json; /reading; /curation; /cautions; /totals | supports | Whole source-reading attribution and bounded implemented-curation scan, including exact prior raw carries and source-specific limitations; no new query is claimed here. |
+| support-2268-taxonomy-routes | /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json; /records/7/source_scope_inventory/source_taxa; /records/7/source_scope_inventory/forward_taxon_merge_matches; /records/7/source_scope_inventory/nonorganism_matches | supports | Exact selected source taxa and retained forward-merge/nonorganism matches. Only matched saved routes are included; no fresh taxonomy authority or global absence is inferred. |
+| support-2268-mechanism-scope | /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json; /records/7/declared_mechanism_roots_literal; /records/7/component_paths; /records/7/literal_mechanism_inventory; /records/7/proposed_companion_paths | supports | Exact selected mechanism-root and direct-companion applicability; unselected or other selected owner graphs remain context only. |
+| support-2268-query-mibig_compounds | /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json; /records/7/source_scope_inventory/joins/mibig_compounds | supports | Retained local query frame: {"count": 1, "predicate": "exact complete standard_inchi_key equality", "query": "NOFOAYPPHIUXJR-APNQCZIXSA-N"}. Empty results are bounded to this saved predicate and inventory. |
+| support-2268-row-mibig_compounds-0 | /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv; physical lines 811–811 | supports | Complete retained row payload: {"bgc_classes": "terpene", "bgc_subclasses": "Diterpene", "cluster_link_evidence_basis": "CLUSTER_DEMONSTRATED", "compound_classes": "", "compound_index": "1", "compound_name": "aphidicolin", "database_ids": "npatlas:NPA010945&#124;pubchem:457964&#124;chebi:2766&#124;chembl:CHEMBL29711&#124;chemspider:10280269", "entry_completeness": "complete", "entry_quality": "questionable", "entry_status": "active", "entry_version": "5", "genome_accession": "AB114137.1", "locus_evidence_methods": "Heterologous expression", "locus_from": "", "locus_to": "", "mibig_accession": "BGC0000676", "primary_reference": "PMID:14745177", "producer_evidence_basis": "SOURCE_ASSERTION", "reference_basis": "ENTRY", "smiles": "[H][C@]12C[C@]3([H])C[C@]1(CC[C@]3(O)CO)[C@@]1(C)CC[C@@H](O)[C@@](C)(CO)[C@]1([H])CC2", "standard_inchi": "InChI=1S/C20H34O4/c1-17(11-21)15-4-3-13-9-14-10-19(13,7-8-20(14,24)12-22)18(15,2)6-5-16(17)23/h13-16,21-24H,3-12H2,1-2H3/t13-,14+,15-,16+,17-,18-,19-,20-/m0/s1", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "stereo_complete": "true", "taxon_id": "NCBITaxon:1979465", "taxon_label": "Phoma betae"} |
+| support-2268-query-chebi_structures | /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json; /records/7/source_scope_inventory/joins/chebi_structures | supports | Retained local query frame: {"count": 1, "predicate": "exact complete standard_inchi_key equality", "query": "NOFOAYPPHIUXJR-APNQCZIXSA-N"}. Empty results are bounded to this saved predicate and inventory. |
+| support-2268-row-chebi_structures-0 | /private/tmp/npm-record-reviews-20261021/data/raw/chebi_structures.tsv; physical lines 410–410 | supports | Complete retained row payload: {"chebi_id": "CHEBI:2766", "definition": "A tetracyclic diterpenoid that has an tetradecahydro-8,11a-methanocyclohepta[a]naphthalene skeleton with two hydroxymethyl substituents at positions 4 and 9, two methyl substituents at positions 4 and 11b and two hydroxy substituents at positions 3 and 9. An antibiotic with antiviral and antimitotical properties. Aphidicolin is a reversible inhibitor of eukaryotic nuclear DNA replication.", "name": "aphidicolin", "smiles": "[H][C@@]12CC[C@]3([H])[C@](C)(CC[C@@H](O)[C@@]3(C)CO)[C@]13CC[C@](O)(CO)[C@H](C2)C3", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "stars": "3"} |
+| support-2268-query-lotus_occurrences | /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json; /records/7/source_scope_inventory/joins/lotus_occurrences | supports | Retained local query frame: {"count": 22, "predicate": "exact complete standard_inchi_key equality", "query": "NOFOAYPPHIUXJR-APNQCZIXSA-N"}. Empty results are bounded to this saved predicate and inventory. |
+| support-2268-row-lotus_occurrences-0 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 6055–6055 | supports | Complete retained row payload: {"organism_name": "Nigrospora sphaerica", "organism_wikidata": "http://www.wikidata.org/entity/Q28401122", "reference_doi": "10.1055/S-0034-1368301", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:114231"} |
+| support-2268-row-lotus_occurrences-1 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 6056–6056 | supports | Complete retained row payload: {"organism_name": "Pyrenula", "organism_wikidata": "http://www.wikidata.org/entity/Q7263465", "reference_doi": "10.1021/NP500143K", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:146308"} |
+| support-2268-row-lotus_occurrences-2 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 6057–6057 | supports | Complete retained row payload: {"organism_name": "Cephalosporium aphidicola", "organism_wikidata": "http://www.wikidata.org/entity/Q104096162", "reference_doi": "10.1016/0031-9422(88)80267-X", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:2231603"} |
+| support-2268-row-lotus_occurrences-3 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 6058–6058 | supports | Complete retained row payload: {"organism_name": "Cephalosporium aphidicola", "organism_wikidata": "http://www.wikidata.org/entity/Q104096162", "reference_doi": "10.1016/0031-9422(92)80164-A", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:2231603"} |
+| support-2268-row-lotus_occurrences-4 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 6059–6059 | supports | Complete retained row payload: {"organism_name": "Cephalosporium aphidicola", "organism_wikidata": "http://www.wikidata.org/entity/Q104096162", "reference_doi": "10.1016/S0031-9422(96)00713-3", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:2231603"} |
+| support-2268-row-lotus_occurrences-5 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 6060–6060 | supports | Complete retained row payload: {"organism_name": "Cephalosporium aphidicola", "organism_wikidata": "http://www.wikidata.org/entity/Q104096162", "reference_doi": "10.1021/NP200431K", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:2231603"} |
+| support-2268-row-lotus_occurrences-6 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 6061–6061 | supports | Complete retained row payload: {"organism_name": "Cephalosporium aphidicola", "organism_wikidata": "http://www.wikidata.org/entity/Q104096162", "reference_doi": "10.1039/C39870001492", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:2231603"} |
+| support-2268-row-lotus_occurrences-7 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 6062–6062 | supports | Complete retained row payload: {"organism_name": "Cephalosporium aphidicola", "organism_wikidata": "http://www.wikidata.org/entity/Q104096162", "reference_doi": "10.1039/P19730002841", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:2231603"} |
+| support-2268-row-lotus_occurrences-8 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 6063–6063 | supports | Complete retained row payload: {"organism_name": "Cephalosporium aphidicola", "organism_wikidata": "http://www.wikidata.org/entity/Q104096162", "reference_doi": "10.1039/P19840002751", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:2231603"} |
+| support-2268-row-lotus_occurrences-9 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 6064–6064 | supports | Complete retained row payload: {"organism_name": "Cephalosporium aphidicola", "organism_wikidata": "http://www.wikidata.org/entity/Q104096162", "reference_doi": "10.1039/P19840002755", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:2231603"} |
+| support-2268-row-lotus_occurrences-10 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 6065–6065 | supports | Complete retained row payload: {"organism_name": "Cephalosporium aphidicola", "organism_wikidata": "http://www.wikidata.org/entity/Q104096162", "reference_doi": "10.1039/P19850002705", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:2231603"} |
+| support-2268-row-lotus_occurrences-11 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 6066–6066 | supports | Complete retained row payload: {"organism_name": "Cephalosporium aphidicola", "organism_wikidata": "http://www.wikidata.org/entity/Q104096162", "reference_doi": "10.1039/P19880002009", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:2231603"} |
+| support-2268-row-lotus_occurrences-12 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 6067–6067 | supports | Complete retained row payload: {"organism_name": "Cephalosporium aphidicola", "organism_wikidata": "http://www.wikidata.org/entity/Q104096162", "reference_doi": "10.1039/P19920002079", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:2231603"} |
+| support-2268-row-lotus_occurrences-13 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 6068–6068 | supports | Complete retained row payload: {"organism_name": "Tolypocladium inflatum", "organism_wikidata": "http://www.wikidata.org/entity/Q7814689", "reference_doi": "10.1021/NP200431K", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:29910"} |
+| support-2268-row-lotus_occurrences-14 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 6069–6069 | supports | Complete retained row payload: {"organism_name": "Pleospora bjoerlingii", "organism_wikidata": "http://www.wikidata.org/entity/Q104096285", "reference_doi": "10.1016/S0040-4020(99)00392-0", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:318712"} |
+| support-2268-row-lotus_occurrences-15 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 6070–6070 | supports | Complete retained row payload: {"organism_name": "Pleospora bjoerlingii", "organism_wikidata": "http://www.wikidata.org/entity/Q104096285", "reference_doi": "10.1080/00021369.1984.10866385", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:318712"} |
+| support-2268-row-lotus_occurrences-16 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 6071–6071 | supports | Complete retained row payload: {"organism_name": "Pleospora bjoerlingii", "organism_wikidata": "http://www.wikidata.org/entity/Q104096285", "reference_doi": "10.1271/BBB1961.48.1687", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:318712"} |
+| support-2268-row-lotus_occurrences-17 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 6072–6072 | supports | Complete retained row payload: {"organism_name": "Pleospora bjoerlingii", "organism_wikidata": "http://www.wikidata.org/entity/Q104096285", "reference_doi": "10.1271/BBB1961.53.299", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:318712"} |
+| support-2268-row-lotus_occurrences-18 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 6073–6073 | supports | Complete retained row payload: {"organism_name": "Pleospora bjoerlingii", "organism_wikidata": "http://www.wikidata.org/entity/Q104096285", "reference_doi": "10.3186/JJPHYTOPATH.51.219", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:318712"} |
+| support-2268-row-lotus_occurrences-19 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 6074–6074 | supports | Complete retained row payload: {"organism_name": "Nigrospora oryzae", "organism_wikidata": "http://www.wikidata.org/entity/Q103811004", "reference_doi": "10.1055/S-0034-1368301", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:335854"} |
+| support-2268-row-lotus_occurrences-20 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 6075–6075 | supports | Complete retained row payload: {"organism_name": "Botrytis cinerea", "organism_wikidata": "http://www.wikidata.org/entity/Q1135851", "reference_doi": "10.1021/ACS.JNATPROD.9B00705", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:40559"} |
+| support-2268-row-lotus_occurrences-21 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 6076–6076 | supports | Complete retained row payload: {"organism_name": "Botryotinia fuckeliana", "organism_wikidata": "http://www.wikidata.org/entity/Q2911830", "reference_doi": "10.1021/ACS.JNATPROD.9B00705", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:40559"} |
+| support-2268-query-cyanometdb_occurrences | /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json; /records/7/source_scope_inventory/joins/cyanometdb_occurrences | supports | Retained local query frame: {"count": 0, "predicate": "exact complete standard_inchi_key equality", "query": "NOFOAYPPHIUXJR-APNQCZIXSA-N"}. Empty results are bounded to this saved predicate and inventory. |
+| support-2268-query-npclassifier | /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json; /records/7/source_scope_inventory/joins/npclassifier | supports | Retained local query frame: {"count": 1, "predicate": "exact complete standard_inchi_key equality", "query": "NOFOAYPPHIUXJR-APNQCZIXSA-N"}. Empty results are bounded to this saved predicate and inventory. |
+| support-2268-row-npclassifier-0 | /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv; physical lines 1640–1640 | supports | Complete retained row payload: {"class_results": "Aphidicolane diterpenoids&#124;Tetracyclic diterpenoids", "is_glycoside": "false", "model_version": "npclassifier.gnps2.org@2026-09-07", "pathway_results": "Terpenoids", "smiles": "[H][C@]12C[C@]3([H])C[C@]1(CC[C@]3(O)CO)[C@@]1(C)CC[C@@H](O)[C@@](C)(CO)[C@]1([H])CC2", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "superclass_results": "Diterpenoids"} |
+| support-2268-query-pubchem_bioassay | /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json; /records/7/source_scope_inventory/joins/pubchem_bioassay | supports | Retained local query frame: {"count": 71, "predicate": "exact complete standard_inchi_key equality", "query": "NOFOAYPPHIUXJR-APNQCZIXSA-N"}. Empty results are bounded to this saved predicate and inventory. |
+| support-2268-row-pubchem_bioassay-0 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4493–4493 | supports | Complete retained row payload: {"activity_name": "", "activity_outcome": "Active", "activity_value_um": "", "aid": "1020", "assay_name": "Counter Screen for Glucose-6-Phosphate Dehydrogenase-based Primary Assay", "assay_type": "Screening", "cid": "457964", "depositor": "Burnham Center for Chemical Genomics", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "AAA25265"} |
+| support-2268-row-pubchem_bioassay-1 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4494–4494 | supports | Complete retained row payload: {"activity_name": "EC50", "activity_outcome": "Active", "activity_value_um": "1.731", "aid": "1045", "assay_name": "High Throughput Screen to Identify Compounds that Suppress the Growth of Human Colon Tumor Cells Lacking Oncogenic Beta Catenin Expression - Dose Response", "assay_type": "Confirmatory", "cid": "457964", "depositor": "SRMLSC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""} |
+| support-2268-row-pubchem_bioassay-2 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4495–4495 | supports | Complete retained row payload: {"activity_name": "EC50", "activity_outcome": "Active", "activity_value_um": "0.839", "aid": "1047", "assay_name": "High Throughput Screen to Identify Compounds that Suppress the Growth of Cells with a Deletion of the PTEN Tumor Suppressor - Dose Response", "assay_type": "Confirmatory", "cid": "457964", "depositor": "SRMLSC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""} |
+| support-2268-row-pubchem_bioassay-3 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4496–4496 | supports | Complete retained row payload: {"activity_name": "", "activity_outcome": "Active", "activity_value_um": "", "aid": "1063", "assay_name": "Leishmania major promastigote HTS", "assay_type": "Screening", "cid": "457964", "depositor": "University of Pittsburgh Molecular Library Screening Center", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""} |
+| support-2268-row-pubchem_bioassay-4 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4497–4497 | supports | Complete retained row payload: {"activity_name": "", "activity_outcome": "Active", "activity_value_um": "", "aid": "1258", "assay_name": "Leishmania major promastigote HTS - primary screen repeat 1 uM", "assay_type": "Screening", "cid": "457964", "depositor": "University of Pittsburgh Molecular Library Screening Center", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""} |
+| support-2268-row-pubchem_bioassay-5 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4498–4498 | supports | Complete retained row payload: {"activity_name": "", "activity_outcome": "Active", "activity_value_um": "", "aid": "1259407", "assay_name": "CCRIS mutagenicity studies", "assay_type": "Other", "cid": "457964", "depositor": "22070", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""} |
+| support-2268-row-pubchem_bioassay-6 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4499–4499 | supports | Complete retained row payload: {"activity_name": "", "activity_outcome": "Active", "activity_value_um": "", "aid": "1259408", "assay_name": "GENE-TOX mutagenicity studies", "assay_type": "Other", "cid": "457964", "depositor": "22071", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""} |
+| support-2268-row-pubchem_bioassay-7 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4500–4500 | supports | Complete retained row payload: {"activity_name": "", "activity_outcome": "Active", "activity_value_um": "", "aid": "1259416", "assay_name": "Toxoplasma gondii inhibition HTS in the presence of IFN-y", "assay_type": "Screening", "cid": "457964", "depositor": "Broad Institute", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "NP_000610"} |
+| support-2268-row-pubchem_bioassay-8 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4501–4501 | supports | Complete retained row payload: {"activity_name": "", "activity_outcome": "Active", "activity_value_um": "", "aid": "1259421", "assay_name": "Toxoplasma gondii HTS in the absence of IFN-y", "assay_type": "Screening", "cid": "457964", "depositor": "Broad Institute", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "NP_000610"} |
+| support-2268-row-pubchem_bioassay-9 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4502–4502 | supports | Complete retained row payload: {"activity_name": "", "activity_outcome": "Active", "activity_value_um": "", "aid": "1285", "assay_name": "Primary screen for compounds that inhibit Alzheimer's amyloid precursor protein (APP) translation", "assay_type": "Screening", "cid": "457964", "depositor": "Columbia University Molecular Screening Center", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "AAB23646"} |
+| support-2268-row-pubchem_bioassay-10 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4503–4503 | supports | Complete retained row payload: {"activity_name": "", "activity_outcome": "Active", "activity_value_um": "", "aid": "1296008", "assay_name": "Cytotoxic Profiling of Annotated Libraries Using Quantitative High-Throughput Screening", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "PMID:31498718", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""} |
+| support-2268-row-pubchem_bioassay-11 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4504–4504 | supports | Complete retained row payload: {"activity_name": "", "activity_outcome": "Active", "activity_value_um": "", "aid": "1296009", "assay_name": "qHTS assay to identify novel small-molecules to repurpose for Merkel cell carcinoma treatment", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""} |
+| support-2268-row-pubchem_bioassay-12 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4505–4505 | supports | Complete retained row payload: {"activity_name": "Potency", "activity_outcome": "Inconclusive", "activity_value_um": "8.0538", "aid": "1346987", "assay_name": "P-glycoprotein substrates identified in KB-8-5-11 adenocarcinoma cell line, qHTS therapeutic library screen", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "PMID:31515284", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""} |
+| support-2268-row-pubchem_bioassay-13 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4506–4506 | supports | Complete retained row payload: {"activity_name": "", "activity_outcome": "Active", "activity_value_um": "", "aid": "1446", "assay_name": "Primary cell-based high throughput assay for inhibitors of the Janus kinase 2 mutant JAK2V617F", "assay_type": "Screening", "cid": "457964", "depositor": "The Scripps Research Institute Molecular Screening Center", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "EAW58774"} |
+| support-2268-row-pubchem_bioassay-14 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4507–4507 | supports | Complete retained row payload: {"activity_name": "Potency", "activity_outcome": "Inactive", "activity_value_um": "2.2387", "aid": "1458", "assay_name": "qHTS Assay for Enhancers of SMN2 Splice Variant Expression", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "NP_059107"} |
+| support-2268-row-pubchem_bioassay-15 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4508–4508 | supports | Complete retained row payload: {"activity_name": "Potency", "activity_outcome": "Inactive", "activity_value_um": "0.7943", "aid": "1458", "assay_name": "qHTS Assay for Enhancers of SMN2 Splice Variant Expression", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "NP_059107"} |
+| support-2268-row-pubchem_bioassay-16 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4509–4509 | supports | Complete retained row payload: {"activity_name": "", "activity_outcome": "Active", "activity_value_um": "", "aid": "1486", "assay_name": "Counterscreen for inhibitors of Janus kinase 2 mutant JAK2V617F: Cell-based high throughput assay to identify inhibitors of parental Ba/F3 cell viability.", "assay_type": "Screening", "cid": "457964", "depositor": "The Scripps Research Institute Molecular Screening Center", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""} |
+| support-2268-row-pubchem_bioassay-17 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4510–4510 | supports | Complete retained row payload: {"activity_name": "Potency", "activity_outcome": "Inconclusive", "activity_value_um": "0.7943", "aid": "1487", "assay_name": "qHTS Assay for Modulators of Lamin A Splicing", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "NP_733822"} |
+| support-2268-row-pubchem_bioassay-18 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4511–4511 | supports | Complete retained row payload: {"activity_name": "Potency", "activity_outcome": "Active", "activity_value_um": "3.1868", "aid": "1645876", "assay_name": "Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""} |
+| support-2268-row-pubchem_bioassay-19 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4512–4512 | supports | Complete retained row payload: {"activity_name": "Potency", "activity_outcome": "Active", "activity_value_um": "3.1868", "aid": "1645876", "assay_name": "Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "O96028"} |
+| support-2268-row-pubchem_bioassay-20 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4513–4513 | supports | Complete retained row payload: {"activity_name": "Potency", "activity_outcome": "Active", "activity_value_um": "2.8403", "aid": "1645877", "assay_name": "Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an RCH-ACV wild type WT cells (2C)", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""} |
+| support-2268-row-pubchem_bioassay-21 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4514–4514 | supports | Complete retained row payload: {"activity_name": "Potency", "activity_outcome": "Active", "activity_value_um": "2.8403", "aid": "1645877", "assay_name": "Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an RCH-ACV wild type WT cells (2C)", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "O96028"} |
+| support-2268-row-pubchem_bioassay-22 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4515–4515 | supports | Complete retained row payload: {"activity_name": "Potency", "activity_outcome": "Inconclusive", "activity_value_um": "10", "aid": "1645882", "assay_name": "Validation qHTS for antagonist of cAMP-regulated guanine nucleotide exchange factor 3 (EPAC1)", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""} |
+| support-2268-row-pubchem_bioassay-23 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4516–4516 | supports | Complete retained row payload: {"activity_name": "Potency", "activity_outcome": "Inconclusive", "activity_value_um": "10", "aid": "1645882", "assay_name": "Validation qHTS for antagonist of cAMP-regulated guanine nucleotide exchange factor 3 (EPAC1)", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "O95398"} |
+| support-2268-row-pubchem_bioassay-24 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4517–4517 | supports | Complete retained row payload: {"activity_name": "Potency", "activity_outcome": "Inactive", "activity_value_um": "50.1187", "aid": "1645883", "assay_name": "Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange factor 3 (EPAC1)", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""} |
+| support-2268-row-pubchem_bioassay-25 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4518–4518 | supports | Complete retained row payload: {"activity_name": "Potency", "activity_outcome": "Inactive", "activity_value_um": "50.1187", "aid": "1645883", "assay_name": "Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange factor 3 (EPAC1)", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "O95398"} |
+| support-2268-row-pubchem_bioassay-26 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4519–4519 | supports | Complete retained row payload: {"activity_name": "Potency", "activity_outcome": "Active", "activity_value_um": "63.0957", "aid": "1645886", "assay_name": "Validation qHTS for antagonist of cAMP-regulated guanine nucleotide exchange factor 4 (EPAC2)", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""} |
+| support-2268-row-pubchem_bioassay-27 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4520–4520 | supports | Complete retained row payload: {"activity_name": "Potency", "activity_outcome": "Active", "activity_value_um": "63.0957", "aid": "1645886", "assay_name": "Validation qHTS for antagonist of cAMP-regulated guanine nucleotide exchange factor 4 (EPAC2)", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "Q8WZA2"} |
+| support-2268-row-pubchem_bioassay-28 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4521–4521 | supports | Complete retained row payload: {"activity_name": "Potency", "activity_outcome": "Inactive", "activity_value_um": "7.9433", "aid": "1645887", "assay_name": "Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange factor 4 (EPAC2)", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""} |
+| support-2268-row-pubchem_bioassay-29 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4522–4522 | supports | Complete retained row payload: {"activity_name": "Potency", "activity_outcome": "Inactive", "activity_value_um": "7.9433", "aid": "1645887", "assay_name": "Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange factor 4 (EPAC2)", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "Q8WZA2"} |
+| support-2268-row-pubchem_bioassay-30 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4523–4523 | supports | Complete retained row payload: {"activity_name": "Potency", "activity_outcome": "Inconclusive", "activity_value_um": "141.254", "aid": "1671190", "assay_name": "Primary qHTS assay for inhibitors of human arachidonate 12S-lipoxygenase (ALOX12): Round 2", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""} |
+| support-2268-row-pubchem_bioassay-31 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4524–4524 | supports | Complete retained row payload: {"activity_name": "Potency", "activity_outcome": "Inconclusive", "activity_value_um": "141.254", "aid": "1671190", "assay_name": "Primary qHTS assay for inhibitors of human arachidonate 12S-lipoxygenase (ALOX12): Round 2", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "P18054"} |
+| support-2268-row-pubchem_bioassay-32 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4525–4525 | supports | Complete retained row payload: {"activity_name": "", "activity_outcome": "Active", "activity_value_um": "", "aid": "1813", "assay_name": "MLPCN Alpha-Synuclein 5'UTR - 5'-UTR binding - inhibitors", "assay_type": "Screening", "cid": "457964", "depositor": "Broad Institute", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""} |
+| support-2268-row-pubchem_bioassay-33 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4526–4526 | supports | Complete retained row payload: {"activity_name": "", "activity_outcome": "Active", "activity_value_um": "", "aid": "1825", "assay_name": "Luminescence-based counterscreen assay for KLF5 inhibitors: cell-based high throughput screening assay to identify cytotoxic compounds using the IEC-6 intestinal epithelial cell line.", "assay_type": "Screening", "cid": "457964", "depositor": "The Scripps Research Institute Molecular Screening Center", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""} |
+| support-2268-row-pubchem_bioassay-34 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4527–4527 | supports | Complete retained row payload: {"activity_name": "", "activity_outcome": "Active", "activity_value_um": "", "aid": "1907", "assay_name": "Luminescence-based confirmation cell-based assay for cytotoxic compounds using the IEC-6 intestinal epithelial cell line.", "assay_type": "Screening", "cid": "457964", "depositor": "The Scripps Research Institute Molecular Screening Center", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""} |
+| support-2268-row-pubchem_bioassay-35 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4528–4528 | supports | Complete retained row payload: {"activity_name": "EC50", "activity_outcome": "Active", "activity_value_um": "38.639", "aid": "1933", "assay_name": "Luminescence Cell-Based Dose Response HTS to Identify Compounds Cytotoxic to BJ-TERT RAS-Independent Fibroblast", "assay_type": "Confirmatory", "cid": "457964", "depositor": "Broad Institute", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""} |
+| support-2268-row-pubchem_bioassay-36 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4529–4529 | supports | Complete retained row payload: {"activity_name": "EC50", "activity_outcome": "Inconclusive", "activity_value_um": "150", "aid": "1934", "assay_name": "Luminescence Cell-Based Dose Response HTS to Identify Compounds Cytotoxic to DRD Non-Viral Oncogenic Fibroblast", "assay_type": "Confirmatory", "cid": "457964", "depositor": "Broad Institute", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""} |
+| support-2268-row-pubchem_bioassay-37 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4530–4530 | supports | Complete retained row payload: {"activity_name": "EC50", "activity_outcome": "Inactive", "activity_value_um": "150", "aid": "1935", "assay_name": "Luminescence Cell-Based Dose Response HTS to Identify Compounds Cytotoxic to BJ-TERT-LT-ST RAS-Independent Fibroblast", "assay_type": "Confirmatory", "cid": "457964", "depositor": "Broad Institute", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""} |
+| support-2268-row-pubchem_bioassay-38 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4531–4531 | supports | Complete retained row payload: {"activity_name": "EC50", "activity_outcome": "Active", "activity_value_um": "28.62", "aid": "1936", "assay_name": "Luminescence Cell-Based Dose Confirmation HTS to Identify Compounds Cytotoxic to BJeLR RAS-Dependent Fibroblast", "assay_type": "Confirmatory", "cid": "457964", "depositor": "Broad Institute", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""} |
+| support-2268-row-pubchem_bioassay-39 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4532–4532 | supports | Complete retained row payload: {"activity_name": "Potency", "activity_outcome": "Active", "activity_value_um": "1.0139", "aid": "1963823", "assay_name": "Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) naive MV4-11 cells", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""} |
+| support-2268-row-pubchem_bioassay-40 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4533–4533 | supports | Complete retained row payload: {"activity_name": "Potency", "activity_outcome": "Active", "activity_value_um": "1.0139", "aid": "1963823", "assay_name": "Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) naive MV4-11 cells", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "P43405"} |
+| support-2268-row-pubchem_bioassay-41 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4534–4534 | supports | Complete retained row payload: {"activity_name": "Potency", "activity_outcome": "Active", "activity_value_um": "1.0139", "aid": "1963824", "assay_name": "Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug resistant MV4-11 cells", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""} |
+| support-2268-row-pubchem_bioassay-42 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4535–4535 | supports | Complete retained row payload: {"activity_name": "Potency", "activity_outcome": "Active", "activity_value_um": "1.0139", "aid": "1963824", "assay_name": "Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug resistant MV4-11 cells", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "P43405"} |
+| support-2268-row-pubchem_bioassay-43 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4536–4536 | supports | Complete retained row payload: {"activity_name": "EC50", "activity_outcome": "Active", "activity_value_um": "0.136", "aid": "2008", "assay_name": "Leishmania major promastigote EC50 determinations", "assay_type": "Confirmatory", "cid": "457964", "depositor": "University of Pittsburgh Molecular Library Screening Center", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""} |
+| support-2268-row-pubchem_bioassay-44 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4537–4537 | supports | Complete retained row payload: {"activity_name": "Potency", "activity_outcome": "Inconclusive", "activity_value_um": "39.8107", "aid": "2517", "assay_name": "qHTS Assay for Inhibitors of the Human Apurinic/apyrimidinic Endonuclease 1 (APE1)", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "1DE9_A"} |
+| support-2268-row-pubchem_bioassay-45 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4538–4538 | supports | Complete retained row payload: {"activity_name": "Potency", "activity_outcome": "Inconclusive", "activity_value_um": "5.6234", "aid": "2549", "assay_name": "qHTS Assay for Inhibitors of RecQ-Like Dna Helicase 1 (RECQ1)", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "2WWY_A"} |
+| support-2268-row-pubchem_bioassay-46 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4539–4539 | supports | Complete retained row payload: {"activity_name": "Potency", "activity_outcome": "Inactive", "activity_value_um": "0.631", "aid": "2673", "assay_name": "qHTS Multiplex Assay to Identify Dual Action Probes in a Cell Model of Huntington: Cytoprotection confirmation (ATP)", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "NP_002102"} |
+| support-2268-row-pubchem_bioassay-47 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4540–4540 | supports | Complete retained row payload: {"activity_name": "Potency", "activity_outcome": "Inconclusive", "activity_value_um": "0.206", "aid": "2685", "assay_name": "qHTS Assay for Lipid Storage Modulators in Drosophila S3 Cells", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""} |
+| support-2268-row-pubchem_bioassay-48 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4541–4541 | supports | Complete retained row payload: {"activity_name": "", "activity_outcome": "Active", "activity_value_um": "", "aid": "371", "assay_name": "Human A549 Lung Tumor Cell Growth Inhibition Assay", "assay_type": "Screening", "cid": "457964", "depositor": "SRMLSC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""} |
+| support-2268-row-pubchem_bioassay-49 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4542–4542 | supports | Complete retained row payload: {"activity_name": "EC50", "activity_outcome": "Active", "activity_value_um": "", "aid": "430", "assay_name": "Fluorescent HTS Cytotoxicity/Cell viability assay (HPDE-C7 cells)", "assay_type": "Confirmatory", "cid": "457964", "depositor": "Burnham Center for Chemical Genomics", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""} |
+| support-2268-row-pubchem_bioassay-50 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4543–4543 | supports | Complete retained row payload: {"activity_name": "EC50", "activity_outcome": "Active", "activity_value_um": "", "aid": "431", "assay_name": "Fluorescent HTS Cytotoxicity/Cell viability assay (HPDE-C7K cells)", "assay_type": "Confirmatory", "cid": "457964", "depositor": "Burnham Center for Chemical Genomics", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""} |
+| support-2268-row-pubchem_bioassay-51 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4544–4544 | supports | Complete retained row payload: {"activity_name": "", "activity_outcome": "Active", "activity_value_um": "", "aid": "493162", "assay_name": "A screen for compounds that inhibit processive DNA synthesis of vaccinia virus", "assay_type": "Other", "cid": "457964", "depositor": "ICCB-Longwood/NSRB Screening Facility, Harvard Medical School", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "AAB59829"} |
+| support-2268-row-pubchem_bioassay-52 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4545–4545 | supports | Complete retained row payload: {"activity_name": "Potency", "activity_outcome": "Inconclusive", "activity_value_um": "6.3096", "aid": "504332", "assay_name": "qHTS Assay for Inhibitors of Histone Lysine Methyltransferase G9a", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "CAQ07474"} |
+| support-2268-row-pubchem_bioassay-53 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4546–4546 | supports | Complete retained row payload: {"activity_name": "", "activity_outcome": "Active", "activity_value_um": "", "aid": "504541", "assay_name": "Assay for Inhibitors of the beta-Arrestin-Adaptor Protein 2 Interaction for Validation Set", "assay_type": "Screening", "cid": "457964", "depositor": "NMMLSC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "AAH03636"} |
+| support-2268-row-pubchem_bioassay-54 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4547–4547 | supports | Complete retained row payload: {"activity_name": "Potency", "activity_outcome": "Active", "activity_value_um": "0.5221", "aid": "504832", "assay_name": "Primary qHTS for delayed death inhibitors of the malarial parasite plastid, 48 hour incubation", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""} |
+| support-2268-row-pubchem_bioassay-55 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4548–4548 | supports | Complete retained row payload: {"activity_name": "Potency", "activity_outcome": "Active", "activity_value_um": "0.5858", "aid": "504834", "assay_name": "Primary qHTS for delayed death inhibitors of the malarial parasite plastid, 96 hour incubation", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""} |
+| support-2268-row-pubchem_bioassay-56 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4549–4549 | supports | Complete retained row payload: {"activity_name": "", "activity_outcome": "Active", "activity_value_um": "", "aid": "525", "assay_name": "Primary Cell-based High Throughput Screening assay for inhibitors of the nuclear receptor Steroidogenic Factor 1 (SF-1)", "assay_type": "Screening", "cid": "457964", "depositor": "The Scripps Research Institute Molecular Screening Center", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "NP_004950"} |
+| support-2268-row-pubchem_bioassay-57 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4550–4550 | supports | Complete retained row payload: {"activity_name": "Potency", "activity_outcome": "Inconclusive", "activity_value_um": "0.7308", "aid": "540256", "assay_name": "qHTS for Inhibitors of binding or entry into cells for Lassa Virus", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""} |
+| support-2268-row-pubchem_bioassay-58 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4551–4551 | supports | Complete retained row payload: {"activity_name": "Potency", "activity_outcome": "Active", "activity_value_um": "0.5174", "aid": "540276", "assay_name": "qHTS for inhibitors of binding or entry into cells for Marburg Virus", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "B45705"} |
+| support-2268-row-pubchem_bioassay-59 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4552–4552 | supports | Complete retained row payload: {"activity_name": "", "activity_outcome": "Active", "activity_value_um": "", "aid": "561", "assay_name": "Primary Cell-based High Throughput Screening assay for inhibitors of the Retinoic Acid Receptor-related orphan receptor A (RORA)", "assay_type": "Screening", "cid": "457964", "depositor": "The Scripps Research Institute Molecular Screening Center", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "P35398"} |
+| support-2268-row-pubchem_bioassay-60 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4553–4553 | supports | Complete retained row payload: {"activity_name": "", "activity_outcome": "Active", "activity_value_um": "", "aid": "599", "assay_name": "Counterscreen for inhibitors of the nuclear receptor Steroidogenic Factor 1 (SF-1): A cell-based dose-response assay for inhibition of the RAR-related orphan receptor A (RORA)", "assay_type": "Confirmatory", "cid": "457964", "depositor": "The Scripps Research Institute Molecular Screening Center", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "P35398"} |
+| support-2268-row-pubchem_bioassay-61 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4554–4554 | supports | Complete retained row payload: {"activity_name": "", "activity_outcome": "Active", "activity_value_um": "", "aid": "600", "assay_name": "Dose-response cell-based assay for inhibitors of the nuclear receptor Steroidogenic Factor 1 (SF-1)", "assay_type": "Confirmatory", "cid": "457964", "depositor": "The Scripps Research Institute Molecular Screening Center", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "NP_004950"} |
+| support-2268-row-pubchem_bioassay-62 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4555–4555 | supports | Complete retained row payload: {"activity_name": "", "activity_outcome": "Active", "activity_value_um": "", "aid": "610", "assay_name": "Dose-response cell-based assay for inhibitors of the Retinoic Acid Receptor-related orphan receptor A (RORA)", "assay_type": "Confirmatory", "cid": "457964", "depositor": "The Scripps Research Institute Molecular Screening Center", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "P35398"} |
+| support-2268-row-pubchem_bioassay-63 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4556–4556 | supports | Complete retained row payload: {"activity_name": "", "activity_outcome": "Active", "activity_value_um": "", "aid": "611", "assay_name": "Counterscreen for inhibitors of the Retinoic Acid Receptor-related orphan receptor A (RORA): A cell-based dose-response assay for inhibition of the Steroidogenic Factor 1 (SF-1)", "assay_type": "Confirmatory", "cid": "457964", "depositor": "The Scripps Research Institute Molecular Screening Center", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "NP_004950"} |
+| support-2268-row-pubchem_bioassay-64 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4557–4557 | supports | Complete retained row payload: {"activity_name": "", "activity_outcome": "Active", "activity_value_um": "", "aid": "645", "assay_name": "Isolation of Inhibitors of Her-Kinase Expression - 66K library screen", "assay_type": "Screening", "cid": "457964", "depositor": "SRMLSC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""} |
+| support-2268-row-pubchem_bioassay-65 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4558–4558 | supports | Complete retained row payload: {"activity_name": "Potency", "activity_outcome": "Active", "activity_value_um": "0.131", "aid": "686978", "assay_name": "qHTS for Inhibitors of human tyrosyl-DNA phosphodiesterase 1 (TDP1): qHTS in cells in absence of CPT", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "AAI07878"} |
+| support-2268-row-pubchem_bioassay-66 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4559–4559 | supports | Complete retained row payload: {"activity_name": "Potency", "activity_outcome": "Active", "activity_value_um": "0.1041", "aid": "686979", "assay_name": "qHTS for Inhibitors of human tyrosyl-DNA phosphodiesterase 1 (TDP1): qHTS in cells in presence of CPT", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "AAI07878"} |
+| support-2268-row-pubchem_bioassay-67 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4560–4560 | supports | Complete retained row payload: {"activity_name": "Potency", "activity_outcome": "Inconclusive", "activity_value_um": "31.6228", "aid": "720532", "assay_name": "qHTS for Inhibitors of binding or entry into cells for Marburg Virus", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "B45705"} |
+| support-2268-row-pubchem_bioassay-68 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4561–4561 | supports | Complete retained row payload: {"activity_name": "Potency", "activity_outcome": "Inconclusive", "activity_value_um": "39.8107", "aid": "720533", "assay_name": "qHTS for Inhibitors of binding or entry into cells for Lassa Virus", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""} |
+| support-2268-row-pubchem_bioassay-69 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4562–4562 | supports | Complete retained row payload: {"activity_name": "Potency", "activity_outcome": "Inconclusive", "activity_value_um": "1.9953", "aid": "914", "assay_name": "qHTS Assay for Identification of Small Molecule Agonists for Hypoxia Response Element Signaling Pathway", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "AAP88778"} |
+| support-2268-row-pubchem_bioassay-70 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical lines 4563–4563 | supports | Complete retained row payload: {"activity_name": "Potency", "activity_outcome": "Inconclusive", "activity_value_um": "1.9953", "aid": "915", "assay_name": "qHTS Assay for Identification of Small Molecule Antagonists for Hypoxia Response Element Signaling Pathway", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "AAP88778"} |
+| support-2268-query-bindingdb_targets | /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json; /records/7/source_scope_inventory/joins/bindingdb_targets | supports | Retained local query frame: {"count": 0, "predicate": "exact complete standard_inchi_key equality", "query": "NOFOAYPPHIUXJR-APNQCZIXSA-N"}. Empty results are bounded to this saved predicate and inventory. |
+| support-2268-query-antibioticmech_inchikeys | /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json; /records/7/source_scope_inventory/joins/antibioticmech_inchikeys | supports | Retained local query frame: {"count": 1, "predicate": "exact complete standard_inchi_key equality", "query": "NOFOAYPPHIUXJR-APNQCZIXSA-N"}. Empty results are bounded to this saved predicate and inventory. |
+| support-2268-row-antibioticmech_inchikeys-0 | /private/tmp/npm-record-reviews-20261021/data/raw/antibioticmech_inchikeys.tsv; physical lines 1496–1496 | supports | Complete retained row payload: {"antimicrobial_class": "ANTIVIRAL", "corpus_commit": "74f6cc8362498900f2fe2c13d0b6fdb66dd30976", "identifier": "CHEBI:2766", "label": "aphidicolin", "slug": "aphidicolin", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N"} |
+| support-2268-query-chebi_origins | /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json; /records/7/source_scope_inventory/joins/chebi_origins | supports | Retained local query frame: {"count": 3, "predicate": "exact chebi_id from exact full-key structure rows", "query": ["CHEBI:2766"]}. Empty results are bounded to this saved predicate and inventory. |
+| support-2268-row-chebi_origins-0 | /private/tmp/npm-record-reviews-20261021/data/raw/chebi_origins.tsv; physical lines 227–227 | supports | Complete retained row payload: {"chebi_id": "CHEBI:2766", "comments": "", "component_text": "", "source_accession": "29191129", "species_accession": "5062", "species_text": "Aspergillus oryzae", "strain_text": ""} |
+| support-2268-row-chebi_origins-1 | /private/tmp/npm-record-reviews-20261021/data/raw/chebi_origins.tsv; physical lines 228–228 | supports | Complete retained row payload: {"chebi_id": "CHEBI:2766", "comments": "", "component_text": "", "source_accession": "21812410", "species_accession": "291364", "species_text": "Cephalosporium aphidicola", "strain_text": ""} |
+| support-2268-row-chebi_origins-2 | /private/tmp/npm-record-reviews-20261021/data/raw/chebi_origins.tsv; physical lines 229–229 | supports | Complete retained row payload: {"chebi_id": "CHEBI:2766", "comments": "Ethylacetate extract and fungus isolated from a soil sample on fruiting body of Cordyceps sinensis", "component_text": "", "source_accession": "21812410", "species_accession": "29910", "species_text": "Tolypocladium inflatum", "strain_text": ""} |
+| support-2268-cache-114231 | /private/tmp/npm-record-reviews-20261021/data/raw/corpus_taxa.obo; physical lines 44973–44978 | supports | Complete cached stanza, not a fresh taxonomy response:<br>[Term]<br>id: NCBITaxon:114231<br>name: Nigrospora sphaerica<br>synonym: "Nigrospora sphaerica (Sacc.) E.W. Mason, 1927" EXACT []<br>synonym: "Trichosporum sphaericum" EXACT []<br><br> |
+| support-2268-cache-146308 | /private/tmp/npm-record-reviews-20261021/data/raw/corpus_taxa.obo; physical lines 51709–51712 | supports | Complete cached stanza, not a fresh taxonomy response:<br>[Term]<br>id: NCBITaxon:146308<br>name: Pyrenula<br><br> |
+| support-2268-cache-1979465 | /private/tmp/npm-record-reviews-20261021/data/raw/corpus_taxa.obo; physical lines 142689–142695 | supports | Complete cached stanza, not a fresh taxonomy response:<br>[Term]<br>id: NCBITaxon:1979465<br>name: Neocamarosporium betae<br>synonym: "Phoma betae" EXACT []<br>synonym: "Pleospora betae (Berl.) Nevod., 1915" EXACT []<br>synonym: "Pyrenophora echinella var. betae" EXACT []<br><br> |
+| support-2268-cache-2231603 | /private/tmp/npm-record-reviews-20261021/data/raw/corpus_taxa.obo; physical lines 145815–145821 | supports | Complete cached stanza, not a fresh taxonomy response:<br>[Term]<br>id: NCBITaxon:2231603<br>name: Akanthomyces muscarius<br>synonym: "Cephalosporium aphidicola" EXACT []<br>synonym: "Cephalosporium muscarium" EXACT []<br>synonym: "Lecanicillium muscarium" EXACT []<br><br> |
+| support-2268-cache-29910 | /private/tmp/npm-record-reviews-20261021/data/raw/corpus_taxa.obo; physical lines 13668–13675 | supports | Complete cached stanza, not a fresh taxonomy response:<br>[Term]<br>id: NCBITaxon:29910<br>name: Tolypocladium inflatum<br>synonym: "Beauveria nivea" EXACT []<br>synonym: "Cordyceps subsessilis" EXACT []<br>synonym: "Elaphocordyceps subsessilis" EXACT []<br>synonym: "Tolypocladium niveum" EXACT []<br><br> |
+| support-2268-cache-318712 | /private/tmp/npm-record-reviews-20261021/data/raw/corpus_taxa.obo; physical lines 82116–82119 | supports | Complete cached stanza, not a fresh taxonomy response:<br>[Term]<br>id: NCBITaxon:318712<br>name: Pleospora bjoerlingii<br><br> |
+| support-2268-cache-335854 | /private/tmp/npm-record-reviews-20261021/data/raw/corpus_taxa.obo; physical lines 84046–84051 | supports | Complete cached stanza, not a fresh taxonomy response:<br>[Term]<br>id: NCBITaxon:335854<br>name: Nigrospora oryzae<br>synonym: "Khuskia oryzae" EXACT []<br>synonym: "Monotospora oryzae" EXACT []<br><br> |
+| support-2268-cache-40559 | /private/tmp/npm-record-reviews-20261021/data/raw/corpus_taxa.obo; physical lines 18031–18038 | supports | Complete cached stanza, not a fresh taxonomy response:<br>[Term]<br>id: NCBITaxon:40559<br>name: Botrytis cinerea<br>synonym: "Botryotinia fuckeliana" EXACT []<br>synonym: "Botrytis cinerea Pers., 1801" EXACT []<br>synonym: "Peziza fuckeliana" EXACT []<br>synonym: "Sclerotinia fuckeliana" EXACT []<br><br> |
+| support-2268-cache-5062 | /private/tmp/npm-record-reviews-20261021/data/raw/corpus_taxa.obo; physical lines 7883–7889 | supports | Complete cached stanza, not a fresh taxonomy response:<br>[Term]<br>id: NCBITaxon:5062<br>name: Aspergillus oryzae<br>synonym: "Aspergillus flavus var. oryzae" EXACT []<br>synonym: "Aspergillus oryzae (Ahlb.) Cohn, 1884" EXACT []<br>synonym: "Eurotium oryzae" EXACT []<br><br> |
+| support-2268-taxon-merge-0 | /private/tmp/npm-record-reviews-20261021/data/raw/taxon_merged.tsv; physical lines 303–303 | supports | Complete retained forward merge payload: {"new_taxon_id": "NCBITaxon:2231603", "old_taxon_id": "NCBITaxon:291364", "requested_by": "chebi_origins"} |
+| support-2268-companions | /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json; /records/7/proposed_companion_paths; /records/7/direct_companion_predicates | supports | Exactly 3 direct companion placements admitted by the recorded root/full-key/owned-BGC predicates. Shared context is not synonymy or automatic claim transfer. |
+| support-2268-companion-0 | /private/tmp/npm-record-reviews-20261021/data/natural_products/terpenoids/17-deoxyaphidicolin.yaml; lines 1–75 | supports | Whole admitted companion plaintext/history: 17-deoxyaphidicolin (naturalproductmech:mibig-f03b04b9d4), full key HRPBVTJJLYDCOZ-XPZISPLRSA-N, owned BGCs BGC0000676, selected mechanism roots []. Its identity, producer/occurrence, assay and historical mechanism claims remain owner-specific. |
+| support-2268-companion-1 | /private/tmp/npm-record-reviews-20261021/data/natural_products/terpenoids/3-deoxyaphidicolin.yaml; lines 1–141 | supports | Whole admitted companion plaintext/history: 3-deoxyaphidicolin (naturalproductmech:mibig-2dc5a6506a), full key VHWTVINEPPOCLA-DTMQFJJTSA-N, owned BGCs BGC0000676, selected mechanism roots []. Its identity, producer/occurrence, assay and historical mechanism claims remain owner-specific. |
+| support-2268-companion-2 | /private/tmp/npm-record-reviews-20261021/data/natural_products/terpenoids/aphidicolan-16-ol.yaml; lines 1–86 | supports | Whole admitted companion plaintext/history: aphidicolan-16β-ol (naturalproductmech:mibig-1e5a3884b3), full key ODCPNBCPLWJVQI-NHWXPXPKSA-N, owned BGCs BGC0000676, selected mechanism roots []. Its identity, producer/occurrence, assay and historical mechanism claims remain owner-specific. |
+| support-2268-activity-classifier | /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py; lines 128–178; lines 1310–1381 | supports | Maintained classify_activity claims unambiguous title support but has a generic inhibition fallback. Active written observations receive optional classes and drive summary derivation after measurement-prioritized capping. This explains the two unsupported class inferences without changing source calls or defining finer schema semantics. |
+| support-2268-activity-schema | /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml; lines 631–664; lines 920–944 | supports | Bioactivity observations preserve assay, call, measurement, target and evidence separately. Coarse activity classes must be backed; ENZYME_INHIBITOR has no separate fine-grained definition here. |
+| root-native-strict_ten | /private/tmp/npm-native-checks/batch-227/validate-strict-selected10-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-227/native-current227-five-gates-execution-001.json | supports | Closed-schema validation of the ten selected owners and any referenced components reported zero errors. |
+| root-native-strict_full | /private/tmp/npm-native-checks/batch-227/validate-all-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-227/native-current227-five-gates-execution-001.json | supports | Full closed-schema validation scanned all 3116 owners and reported zero errors. |
+| root-native-lockfile | /private/tmp/npm-native-checks/batch-227/verify-corpus-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-227/native-current227-five-gates-execution-001.json | supports | PATHS.tsv and filesystem agree on all 3116 records and their pinned filing pathways. |
+| root-native-reproduction | /private/tmp/npm-native-checks/batch-227/verify-reproduction-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-227/native-current227-five-gates-execution-001.json | supports | All 3116 records reproduce byte-identically from the retained inventories and carried curator content. This does not independently validate curator science. |
+| root-native-queue | /private/tmp/npm-native-checks/batch-227/review-queue-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-227/native-current227-five-gates-execution-001.json | supports | The full local queue contains 8922 diagnostic rows; selected-target entries were inspected. Queue diagnostics are leads, not scientific sign-off. |
+
+## Limits And Additional Notes
+
+- FullQC and complete OAK were unavailable; five local commands do not establish scientific completeness.
+- No external retrieval or live identifier, taxonomy, protein or publication query was performed. These assessments use original saved owner-form computations; no additional molecular parses occurred during fragment authoring.
+- The original diagnostic stream has zero stderr. Stored representation agreement does not establish natural identity, primary evidence or complete natural stereochemistry.
+- Retained source grades, cached taxonomy, citations and versioned predictions preserve their own scopes; publication independence was not established.
+- No scientific source record or curation history was edited. Canonical persistence and campaign operations remain ROOT-owned.
+- The finding is limited to two optional activity classes. Source calls, potencies, other assay scopes and separate summary evidence are preserved.
+- The whole selected owner was read, but scientific completion is partial because full QC, complete ontology authority coverage and external source verification were unavailable. No native status or history was changed.
+- The branch uses cached base ce6a5498df5be51116bd5e0c119023ee62bb5464. Fresh origin/main verification and publication are deferred because the user prohibits all external requests.
+- Native's bounded saved-review continuity search f33d76/126f74 used rg -uu in W review.yaml/completed-review.yaml and R/reviews/structured, including ignored files. Exact target/key recovery8d6e91 found only other-owner companion/context or deoxy-name matches; no same-owner prior issue_key was identified in those scopes. This is attributed bounded continuity, not global absence.
+- Selected mechanism scope is complete as admitted; no companion graph or assay is transferred to this owner.
+- Saved review coverage is distinct from the native SEEDED/REVIEWED curation state. Proposed actions are not performed edits.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261103T173401Z-aphidicolin
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'Local evidence review: aphidicolin'
+started_at: '2026-11-03T17:10:56.611245Z'
+finished_at: '2026-11-03T17:34:01.116101Z'
+reviewer:
+  identity: Codex root with native_checks, bgc_science and review_support peer agents
+  kind: agent
+  independence: independent
+  independence_basis: This review team inspected existing owner and retained source
+    bytes without editing them; scientific fragments were cross-checked separately
+    from their author. Local validation is not treated as scientific proof.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: 'Partial review needs a narrow curation correction: two written malarial
+  delayed-death assay labels overstate retained support for enzyme inhibition. Preserve
+  their Active calls and potencies, the mixed 71-row assay scope, other qualified
+  activity routes and the locally consistent structure.'
+source:
+  git_revision: ce6a5498df5be51116bd5e0c119023ee62bb5464
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: AGENTS.md
+    sha256: 69e4037f8dc97d4b00bb7bb83b41ceca025f6ef578d5c0bf8086f3400becde0b
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: curation/pubchem_bioassay_exclusions.tsv
+    sha256: 76f9cbb17e62a270afed637b5058a553cfe85c754c6c9ec406635f12dae572fa
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/terpenoids/17-deoxyaphidicolin.yaml
+    sha256: b0ba2f377df42f543868793e786a6e9715283e8defaf540d6573bc9d6f927489
+    role: context
+  - path: data/natural_products/terpenoids/3-deoxyaphidicolin.yaml
+    sha256: c5dbf3db73550f35cb9a039b0e494747a0810a7e8c34fc711ec0449d73b17a68
+    role: context
+  - path: data/natural_products/terpenoids/aphidicolan-16-ol.yaml
+    sha256: 7d87ac33e3226606ade6c946fd04bce43bad3ec1e84c1d531569ed2b7b609867
+    role: context
+  - path: data/natural_products/terpenoids/aphidicolin.yaml
+    sha256: 555b2f4825047ae87306b130f370d3ca67ab418c7a28ecd4406f23b81c9d608d
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: data/raw/taxon_merged.tsv
+    sha256: 97b3efa66d4fc1679ab65ae547e78b2f627f37bc8e45ae33f2719008fe3863bb
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/bioassay_exclusions.py
+    sha256: 4a4176e072ac9759aa8a9e88300d7e2de5aaf4ebf30b5c42fcf4c9c0b6cebbb4
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete NaturalProductRecord, including all present scientific
+    claims, history and declared mechanisms; external verification remains unavailable.
+  selection: Campaign path order 2268; one of the next ten uncovered paths selected
+    from the 3116-record corpus. Membership uses the canonical validated catalogue
+    plus retained committed campaign bundles.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CHEBI:2766
+targets:
+- target_id: CHEBI:2766
+  path: data/natural_products/terpenoids/aphidicolin.yaml
+  label: aphidicolin
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained harmonization generator; seeded fields are corrected through
+      maintained inputs and validated regeneration.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Retained MIBiG structure, producer and compound-specific locus assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/npclassifier.tsv
+    role: Pinned computed classification and filing assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Maintained extraction of MIBiG compound names, structures, stereochemistry
+      flags and source provenance.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: Retained ChEBI identifiers, definitions and exact chemical forms.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Retained cited occurrence assertions, distinct from demonstrated production.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_origins.tsv
+    role: Retained cited occurrence assertions, distinct from demonstrated production.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/pubchem_bioassay.tsv
+    role: Retained assay rows or empty-assay sentinels; source outcome and title alone
+      do not establish mechanism.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/antibioticmech_inchikeys.tsv
+    role: Pinned full-key AntibioticMech structure links and coarse activity summaries;
+      no transfer of mechanism.
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/pubchem_bioassay_exclusions.tsv
+    role: Exact assay identity exclusion decisions for selected/direct source context.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/taxon_merged.tsv
+    role: Exact retained selected/direct taxon decision; no fresh authority.
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/bioassay_exclusions.py
+    role: Maintained source-row identity/digest guard; text-only dependency.
+  ownership_note: This review proposes no record edit. Source corrections belong in
+    maintained inventories, implemented curation tables, extractors or the seeder;
+    generated pages are not owners.
+checks:
+- check_id: root-native-strict_ten
+  name: strict_ten
+  status: passed
+  required: true
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  target_ids:
+  - CHEBI:2766
+  command: just validate-strict data/natural_products/terpenoids/aculene-a.yaml data/natural_products/terpenoids/aculene-b.yaml
+    data/natural_products/terpenoids/aculene-c.yaml data/natural_products/terpenoids/aculene-d.yaml
+    data/natural_products/terpenoids/aculin-a.yaml data/natural_products/terpenoids/albaflavenone.yaml
+    data/natural_products/terpenoids/aphidicolan-16-ol.yaml data/natural_products/terpenoids/aphidicolin.yaml
+    data/natural_products/terpenoids/asperaculane-a.yaml data/natural_products/terpenoids/asperaculane-b.yaml
+    --workers 1 --out /private/tmp/npm-native-checks/batch-227/validate-strict-selected10-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_ten
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-strict_full
+  name: strict_full
+  status: passed
+  required: true
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  target_ids:
+  - CHEBI:2766
+  command: just validate-all --workers 1 --out /private/tmp/npm-native-checks/batch-227/validate-all-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_full
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-lockfile
+  name: lockfile
+  status: passed
+  required: true
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  target_ids:
+  - CHEBI:2766
+  command: just verify-corpus --summary
+  exit_code: 0
+  evidence_ids:
+  - root-native-lockfile
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-reproduction
+  name: reproduction
+  status: passed
+  required: true
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  target_ids:
+  - CHEBI:2766
+  command: just verify-reproduction
+  exit_code: 0
+  evidence_ids:
+  - root-native-reproduction
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-queue
+  name: queue
+  status: passed
+  required: true
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  target_ids:
+  - CHEBI:2766
+  command: just review-queue --tsv /private/tmp/npm-native-checks/batch-227/review-queue-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-queue
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-full-qc
+  name: Full just qc
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:2766
+  summary: 'Not run under the external-request prohibition: the complete recipe includes
+    upstream vendored synchronization. The five executed local checks are recorded
+    separately.'
+- check_id: root-ontology-authorities
+  name: Complete OAK identifier/label authority check
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:2766
+  summary: Complete offline ontology authority coverage was not established for this
+    run; no ontology retrieval or remote resolution was attempted. Retained taxonomy
+    evidence has only its explicitly stated local scope.
+- check_id: root-primary-and-live-sources
+  name: Primary literature and current structured database/identifier verification
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:2766
+  summary: All external requests are prohibited by the user. Fresh database and identifier
+    verification and complete primary-literature coverage are unavailable. Any retained
+    original literature actually inspected is recorded separately with its historical
+    scope.
+evidence:
+- evidence_id: support-2268-owner
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/terpenoids/aphidicolin.yaml
+  locator: lines 1–634
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: Whole current plaintext owner and all 3 history events. Literal identifier
+    CHEBI:2766, label aphidicolin and full key NOFOAYPPHIUXJR-APNQCZIXSA-N. Historical
+    annotations remain retained claims, not fresh verification.
+  snapshot_sha256: 555b2f4825047ae87306b130f370d3ca67ab418c7a28ecd4406f23b81c9d608d
+- evidence_id: support-2268-capture
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227/owner-capture-DATA-001.json
+  locator: /records/7/owner_document; /records/7/owner_pin
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: Exact captured complete owner, including its source assertions, written
+    occurrences/activity, computed classification, mechanism roots where present and
+    complete history.
+  snapshot_sha256: 9d49efe4d919c526ff2bebd821217647650195b32d951150f15b9f3bc7913026
+- evidence_id: support-2268-source-plan
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json
+  locator: /records/7
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: Complete admitted selected source context, all nine query frames/full payloads,
+    exact direct companions and 43 proposed inputs; this artifact does not itself
+    establish scientific correctness.
+  snapshot_sha256: 5537c37fdf8a54893bcbd0c967e1d857f8ac7004044a38e11d9ce2174146ba11
+- evidence_id: support-2268-intake
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch227/intakes/2268-inspect-001.json
+  locator: /status; /source; /targets
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: Original canonical inspection of the exact target, maintained ownership
+    roles and all admitted input snapshots.
+  snapshot_sha256: 0b1c8186b46964e22ffaf6a71a6bb6d18ab7802519f2ef7df61d360554fb1414
+- evidence_id: support-2268-plan-acceptance
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch227/root-input-plan-acceptance-001.json
+  locator: /observer; /recorded_at; /status; /accepted; /input_plan; /derivation;
+    /inventory; /inventory_acceptance; /notes; /composer_execution; /original_tools;
+    /source_adoption; /selection; /capture; /verification; /external_requests; /target_invocations_by_this_acceptance
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: ROOT accepts the original source plan, exact418 input placements/53 paths
+    and preserved unnumbered pathway item; scientific findings are separate.
+  snapshot_sha256: eca63a2e032e35c9bb8f233056b0bc6257aad535a61d7fdc9b33db1aa7f1b302
+- evidence_id: support-2268-intake-acceptance
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch227/root-intake-ready-001.json
+  locator: /observer; /recorded_at; /status; /accepted; /selection; /capture; /environment;
+    /input_plan; /input_plan_acceptance; /inventory_acceptance; /intake_summary; /execution;
+    /original_tools; /source_adoption; /native_checks_acceptance; /original_terminal;
+    /verification; /limits; /external_requests; /target_invocations_by_this_acceptance
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: ROOT accepts all ten original canonical intakes and current418/53 maps;
+    the receipt records scientific diagnostics/readers as pending at its historical
+    seal.
+  snapshot_sha256: 8a1dce2c5b8f17939c216983455dbc1ebad823ae10e6bd9cce0c093a142af697
+- evidence_id: support-2268-diagnostic-acceptance
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch227/root-local-diagnostics-acceptance-001.json
+  locator: /observer; /observed_at; /status; /accepted; /DATA; /execution; /original_tools;
+    /source_adoption; /intake_ready; /original_terminal; /verification; /unspecified_stereo;
+    /ROOT_reading; /limits; /external_requests; /target_invocations_by_this_acceptance
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: ROOT accepts the original twenty stored-form computations with100 true
+    comparison flags, zero stderr and zero denials. Representation consistency is
+    not natural identity; source cross-reference limits remain.
+  snapshot_sha256: 14967c4d38b8f806e2c49ea51068afd81aa23e83df4ac04f451efd2729cbba96
+- evidence_id: support-2268-native-gates
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch227/root-native-five-gates-acceptance-001.json
+  locator: /observer; /observed_at; /accepted; /status; /ledger; /original_tools;
+    /own_readback; /original_terminal; /five_local_commands_passed; /all_native_gates_passed;
+    /unavailable; /ROOT_reading; /verification; /external_requests; /target_invocations_by_this_acceptance
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: ROOT accepts five successful documented local commands. FullQC and complete
+    OAK remain unavailable; mechanical checks do not establish scientific completeness.
+  snapshot_sha256: cb9726f77bbd42dd0c0f0a205c3a6b2ab9e79d41c1d386a92117ce95e15b33e1
+- evidence_id: support-2268-chemistry-execution
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch227/chemistry-local/diagnostic-execution-001.json
+  locator: /started_at; /finished_at; /exit_code; /stdout; /stderr; /external_requests
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: The original ROOT-owned chemistry process returned zero once with an empty
+    stderr stream; no additional parse is claimed.
+  snapshot_sha256: cd7c3ddbf99f1e149846db81d2e8927177241049dc9316408da347ef0b73d8c6
+- evidence_id: support-2268-chemistry
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/7/declared_structure; /records/7/smiles; /records/7/inchi; /records/7/comparisons;
+    /records/7/atom_correspondence
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: Both forms give neutral C20H34O4, 24 heavy atoms, 27 bonds and the declared
+    full key, with all ten comparison flags true and eight specified tetrahedral centers.
+    All bond types are SINGLE; four terminal hydroxyl oxygens are retained. The complete
+    saved chirality-aware atom map is not an independent natural identity or external-authority
+    determination. stereo_complete:true describes the encoded centers rather than
+    experimental proof of the original isolate.
+  snapshot_sha256: 310fb39c1a9fad6c657cd7aa0986819b02834117d6db86c6b88fd2ddc774a9f2
+- evidence_id: support-2268-topology
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/7/smiles/computed; /records/7/inchi/computed
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: Complete saved paired atom/bond/ring/stereo/motif tables. The complete
+    four-carbon-ring framework has two hydroxymethyl groups (C9–O10 and C19–O20),
+    a secondary hydroxyl (C15–O16) and a tertiary hydroxyl (C7–O8), using SMILES indices.
+    There is no carbonyl, C–O–C bridge, ring oxygen or sugar residue. These indexed
+    motifs support the broad polyhydroxylated tetracyclic description without assigning
+    the definition's biochemical positions anew.
+  snapshot_sha256: 310fb39c1a9fad6c657cd7aa0986819b02834117d6db86c6b88fd2ddc774a9f2
+- evidence_id: support-2268-stereo-method
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py
+  locator: lines 142–173
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: Maintained structure_fields derives standard InChI/key and sets stereo_complete
+    from undefined tetrahedral-center detection. It does not independently determine
+    natural absolute configuration.
+  snapshot_sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+- evidence_id: support-2268-seeder
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: lines 982–1025
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: Maintained seeder copies the lead structure/completeness flag and preserves
+    the named model/version and all returned classification fields.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: support-2268-structure-schema
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: lines 392–425
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: Schema documents undefined stereocentres and explicitly distinguishes named/versioned
+    computed classification from source assertions.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: support-2268-review-profile
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/docs/record-review-profile.md
+  locator: lines 35–57
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: Review profile separates exact structure, producer/occurrence evidence,
+    activity and computed classification; native REVIEWED requires more than saving
+    this partial review.
+  snapshot_sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+- evidence_id: support-2268-source-notes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-source-scope-notes-001.json
+  locator: /reading; /curation; /cautions; /totals
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: Whole source-reading attribution and bounded implemented-curation scan,
+    including exact prior raw carries and source-specific limitations; no new query
+    is claimed here.
+  snapshot_sha256: 08d4d93cb884f9de019060f9073cf0078f34762b7f0e197c80633692a65b08b0
+- evidence_id: support-2268-taxonomy-routes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json
+  locator: /records/7/source_scope_inventory/source_taxa; /records/7/source_scope_inventory/forward_taxon_merge_matches;
+    /records/7/source_scope_inventory/nonorganism_matches
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: Exact selected source taxa and retained forward-merge/nonorganism matches.
+    Only matched saved routes are included; no fresh taxonomy authority or global
+    absence is inferred.
+  snapshot_sha256: 5537c37fdf8a54893bcbd0c967e1d857f8ac7004044a38e11d9ce2174146ba11
+- evidence_id: support-2268-mechanism-scope
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json
+  locator: /records/7/declared_mechanism_roots_literal; /records/7/component_paths;
+    /records/7/literal_mechanism_inventory; /records/7/proposed_companion_paths
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: Exact selected mechanism-root and direct-companion applicability; unselected
+    or other selected owner graphs remain context only.
+  snapshot_sha256: 5537c37fdf8a54893bcbd0c967e1d857f8ac7004044a38e11d9ce2174146ba11
+- evidence_id: support-2268-query-mibig_compounds
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json
+  locator: /records/7/source_scope_inventory/joins/mibig_compounds
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Retained local query frame: {"count": 1, "predicate": "exact complete
+    standard_inchi_key equality", "query": "NOFOAYPPHIUXJR-APNQCZIXSA-N"}. Empty results
+    are bounded to this saved predicate and inventory.'
+  snapshot_sha256: 5537c37fdf8a54893bcbd0c967e1d857f8ac7004044a38e11d9ce2174146ba11
+- evidence_id: support-2268-row-mibig_compounds-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv
+  locator: physical lines 811–811
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"bgc_classes": "terpene", "bgc_subclasses":
+    "Diterpene", "cluster_link_evidence_basis": "CLUSTER_DEMONSTRATED", "compound_classes":
+    "", "compound_index": "1", "compound_name": "aphidicolin", "database_ids": "npatlas:NPA010945|pubchem:457964|chebi:2766|chembl:CHEMBL29711|chemspider:10280269",
+    "entry_completeness": "complete", "entry_quality": "questionable", "entry_status":
+    "active", "entry_version": "5", "genome_accession": "AB114137.1", "locus_evidence_methods":
+    "Heterologous expression", "locus_from": "", "locus_to": "", "mibig_accession":
+    "BGC0000676", "primary_reference": "PMID:14745177", "producer_evidence_basis":
+    "SOURCE_ASSERTION", "reference_basis": "ENTRY", "smiles": "[H][C@]12C[C@]3([H])C[C@]1(CC[C@]3(O)CO)[C@@]1(C)CC[C@@H](O)[C@@](C)(CO)[C@]1([H])CC2",
+    "standard_inchi": "InChI=1S/C20H34O4/c1-17(11-21)15-4-3-13-9-14-10-19(13,7-8-20(14,24)12-22)18(15,2)6-5-16(17)23/h13-16,21-24H,3-12H2,1-2H3/t13-,14+,15-,16+,17-,18-,19-,20-/m0/s1",
+    "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "stereo_complete": "true",
+    "taxon_id": "NCBITaxon:1979465", "taxon_label": "Phoma betae"}'
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: support-2268-query-chebi_structures
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json
+  locator: /records/7/source_scope_inventory/joins/chebi_structures
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Retained local query frame: {"count": 1, "predicate": "exact complete
+    standard_inchi_key equality", "query": "NOFOAYPPHIUXJR-APNQCZIXSA-N"}. Empty results
+    are bounded to this saved predicate and inventory.'
+  snapshot_sha256: 5537c37fdf8a54893bcbd0c967e1d857f8ac7004044a38e11d9ce2174146ba11
+- evidence_id: support-2268-row-chebi_structures-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/chebi_structures.tsv
+  locator: physical lines 410–410
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"chebi_id": "CHEBI:2766", "definition":
+    "A tetracyclic diterpenoid that has an tetradecahydro-8,11a-methanocyclohepta[a]naphthalene
+    skeleton with two hydroxymethyl substituents at positions 4 and 9, two methyl
+    substituents at positions 4 and 11b and two hydroxy substituents at positions
+    3 and 9. An antibiotic with antiviral and antimitotical properties. Aphidicolin
+    is a reversible inhibitor of eukaryotic nuclear DNA replication.", "name": "aphidicolin",
+    "smiles": "[H][C@@]12CC[C@]3([H])[C@](C)(CC[C@@H](O)[C@@]3(C)CO)[C@]13CC[C@](O)(CO)[C@H](C2)C3",
+    "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "stars": "3"}'
+  snapshot_sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+- evidence_id: support-2268-query-lotus_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json
+  locator: /records/7/source_scope_inventory/joins/lotus_occurrences
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Retained local query frame: {"count": 22, "predicate": "exact complete
+    standard_inchi_key equality", "query": "NOFOAYPPHIUXJR-APNQCZIXSA-N"}. Empty results
+    are bounded to this saved predicate and inventory.'
+  snapshot_sha256: 5537c37fdf8a54893bcbd0c967e1d857f8ac7004044a38e11d9ce2174146ba11
+- evidence_id: support-2268-row-lotus_occurrences-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 6055–6055
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Nigrospora sphaerica",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q28401122", "reference_doi":
+    "10.1055/S-0034-1368301", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:114231"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2268-row-lotus_occurrences-1
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 6056–6056
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Pyrenula", "organism_wikidata":
+    "http://www.wikidata.org/entity/Q7263465", "reference_doi": "10.1021/NP500143K",
+    "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q414000",
+    "taxon_id": "NCBITaxon:146308"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2268-row-lotus_occurrences-2
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 6057–6057
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Cephalosporium aphidicola",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q104096162", "reference_doi":
+    "10.1016/0031-9422(88)80267-X", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:2231603"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2268-row-lotus_occurrences-3
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 6058–6058
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Cephalosporium aphidicola",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q104096162", "reference_doi":
+    "10.1016/0031-9422(92)80164-A", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:2231603"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2268-row-lotus_occurrences-4
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 6059–6059
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Cephalosporium aphidicola",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q104096162", "reference_doi":
+    "10.1016/S0031-9422(96)00713-3", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:2231603"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2268-row-lotus_occurrences-5
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 6060–6060
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Cephalosporium aphidicola",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q104096162", "reference_doi":
+    "10.1021/NP200431K", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "structure_wikidata":
+    "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:2231603"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2268-row-lotus_occurrences-6
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 6061–6061
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Cephalosporium aphidicola",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q104096162", "reference_doi":
+    "10.1039/C39870001492", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "structure_wikidata":
+    "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:2231603"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2268-row-lotus_occurrences-7
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 6062–6062
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Cephalosporium aphidicola",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q104096162", "reference_doi":
+    "10.1039/P19730002841", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "structure_wikidata":
+    "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:2231603"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2268-row-lotus_occurrences-8
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 6063–6063
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Cephalosporium aphidicola",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q104096162", "reference_doi":
+    "10.1039/P19840002751", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "structure_wikidata":
+    "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:2231603"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2268-row-lotus_occurrences-9
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 6064–6064
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Cephalosporium aphidicola",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q104096162", "reference_doi":
+    "10.1039/P19840002755", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "structure_wikidata":
+    "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:2231603"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2268-row-lotus_occurrences-10
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 6065–6065
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Cephalosporium aphidicola",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q104096162", "reference_doi":
+    "10.1039/P19850002705", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "structure_wikidata":
+    "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:2231603"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2268-row-lotus_occurrences-11
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 6066–6066
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Cephalosporium aphidicola",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q104096162", "reference_doi":
+    "10.1039/P19880002009", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "structure_wikidata":
+    "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:2231603"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2268-row-lotus_occurrences-12
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 6067–6067
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Cephalosporium aphidicola",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q104096162", "reference_doi":
+    "10.1039/P19920002079", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "structure_wikidata":
+    "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:2231603"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2268-row-lotus_occurrences-13
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 6068–6068
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Tolypocladium inflatum",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q7814689", "reference_doi":
+    "10.1021/NP200431K", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "structure_wikidata":
+    "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:29910"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2268-row-lotus_occurrences-14
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 6069–6069
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Pleospora bjoerlingii",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q104096285", "reference_doi":
+    "10.1016/S0040-4020(99)00392-0", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:318712"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2268-row-lotus_occurrences-15
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 6070–6070
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Pleospora bjoerlingii",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q104096285", "reference_doi":
+    "10.1080/00021369.1984.10866385", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:318712"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2268-row-lotus_occurrences-16
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 6071–6071
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Pleospora bjoerlingii",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q104096285", "reference_doi":
+    "10.1271/BBB1961.48.1687", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:318712"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2268-row-lotus_occurrences-17
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 6072–6072
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Pleospora bjoerlingii",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q104096285", "reference_doi":
+    "10.1271/BBB1961.53.299", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:318712"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2268-row-lotus_occurrences-18
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 6073–6073
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Pleospora bjoerlingii",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q104096285", "reference_doi":
+    "10.3186/JJPHYTOPATH.51.219", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:318712"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2268-row-lotus_occurrences-19
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 6074–6074
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Nigrospora oryzae",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q103811004", "reference_doi":
+    "10.1055/S-0034-1368301", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:335854"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2268-row-lotus_occurrences-20
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 6075–6075
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Botrytis cinerea", "organism_wikidata":
+    "http://www.wikidata.org/entity/Q1135851", "reference_doi": "10.1021/ACS.JNATPROD.9B00705",
+    "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q414000",
+    "taxon_id": "NCBITaxon:40559"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2268-row-lotus_occurrences-21
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 6076–6076
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Botryotinia fuckeliana",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q2911830", "reference_doi":
+    "10.1021/ACS.JNATPROD.9B00705", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q414000", "taxon_id": "NCBITaxon:40559"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2268-query-cyanometdb_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json
+  locator: /records/7/source_scope_inventory/joins/cyanometdb_occurrences
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Retained local query frame: {"count": 0, "predicate": "exact complete
+    standard_inchi_key equality", "query": "NOFOAYPPHIUXJR-APNQCZIXSA-N"}. Empty results
+    are bounded to this saved predicate and inventory.'
+  snapshot_sha256: 5537c37fdf8a54893bcbd0c967e1d857f8ac7004044a38e11d9ce2174146ba11
+- evidence_id: support-2268-query-npclassifier
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json
+  locator: /records/7/source_scope_inventory/joins/npclassifier
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Retained local query frame: {"count": 1, "predicate": "exact complete
+    standard_inchi_key equality", "query": "NOFOAYPPHIUXJR-APNQCZIXSA-N"}. Empty results
+    are bounded to this saved predicate and inventory.'
+  snapshot_sha256: 5537c37fdf8a54893bcbd0c967e1d857f8ac7004044a38e11d9ce2174146ba11
+- evidence_id: support-2268-row-npclassifier-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv
+  locator: physical lines 1640–1640
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"class_results": "Aphidicolane diterpenoids|Tetracyclic
+    diterpenoids", "is_glycoside": "false", "model_version": "npclassifier.gnps2.org@2026-09-07",
+    "pathway_results": "Terpenoids", "smiles": "[H][C@]12C[C@]3([H])C[C@]1(CC[C@]3(O)CO)[C@@]1(C)CC[C@@H](O)[C@@](C)(CO)[C@]1([H])CC2",
+    "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "superclass_results": "Diterpenoids"}'
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: support-2268-query-pubchem_bioassay
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json
+  locator: /records/7/source_scope_inventory/joins/pubchem_bioassay
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Retained local query frame: {"count": 71, "predicate": "exact complete
+    standard_inchi_key equality", "query": "NOFOAYPPHIUXJR-APNQCZIXSA-N"}. Empty results
+    are bounded to this saved predicate and inventory.'
+  snapshot_sha256: 5537c37fdf8a54893bcbd0c967e1d857f8ac7004044a38e11d9ce2174146ba11
+- evidence_id: support-2268-row-pubchem_bioassay-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4493–4493
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "", "activity_outcome":
+    "Active", "activity_value_um": "", "aid": "1020", "assay_name": "Counter Screen
+    for Glucose-6-Phosphate Dehydrogenase-based Primary Assay", "assay_type": "Screening",
+    "cid": "457964", "depositor": "Burnham Center for Chemical Genomics", "reference":
+    "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "AAA25265"}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-1
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4494–4494
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "EC50", "activity_outcome":
+    "Active", "activity_value_um": "1.731", "aid": "1045", "assay_name": "High Throughput
+    Screen to Identify Compounds that Suppress the Growth of Human Colon Tumor Cells
+    Lacking Oncogenic Beta Catenin Expression - Dose Response", "assay_type": "Confirmatory",
+    "cid": "457964", "depositor": "SRMLSC", "reference": "", "standard_inchi_key":
+    "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-2
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4495–4495
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "EC50", "activity_outcome":
+    "Active", "activity_value_um": "0.839", "aid": "1047", "assay_name": "High Throughput
+    Screen to Identify Compounds that Suppress the Growth of Cells with a Deletion
+    of the PTEN Tumor Suppressor - Dose Response", "assay_type": "Confirmatory", "cid":
+    "457964", "depositor": "SRMLSC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N",
+    "target_accession": ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-3
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4496–4496
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "", "activity_outcome":
+    "Active", "activity_value_um": "", "aid": "1063", "assay_name": "Leishmania major
+    promastigote HTS", "assay_type": "Screening", "cid": "457964", "depositor": "University
+    of Pittsburgh Molecular Library Screening Center", "reference": "", "standard_inchi_key":
+    "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-4
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4497–4497
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "", "activity_outcome":
+    "Active", "activity_value_um": "", "aid": "1258", "assay_name": "Leishmania major
+    promastigote HTS - primary screen repeat 1 uM", "assay_type": "Screening", "cid":
+    "457964", "depositor": "University of Pittsburgh Molecular Library Screening Center",
+    "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession":
+    ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-5
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4498–4498
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "", "activity_outcome":
+    "Active", "activity_value_um": "", "aid": "1259407", "assay_name": "CCRIS mutagenicity
+    studies", "assay_type": "Other", "cid": "457964", "depositor": "22070", "reference":
+    "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-6
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4499–4499
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "", "activity_outcome":
+    "Active", "activity_value_um": "", "aid": "1259408", "assay_name": "GENE-TOX mutagenicity
+    studies", "assay_type": "Other", "cid": "457964", "depositor": "22071", "reference":
+    "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-7
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4500–4500
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "", "activity_outcome":
+    "Active", "activity_value_um": "", "aid": "1259416", "assay_name": "Toxoplasma
+    gondii inhibition HTS in the presence of IFN-y", "assay_type": "Screening", "cid":
+    "457964", "depositor": "Broad Institute", "reference": "", "standard_inchi_key":
+    "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "NP_000610"}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-8
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4501–4501
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "", "activity_outcome":
+    "Active", "activity_value_um": "", "aid": "1259421", "assay_name": "Toxoplasma
+    gondii HTS in the absence of IFN-y", "assay_type": "Screening", "cid": "457964",
+    "depositor": "Broad Institute", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N",
+    "target_accession": "NP_000610"}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-9
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4502–4502
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "", "activity_outcome":
+    "Active", "activity_value_um": "", "aid": "1285", "assay_name": "Primary screen
+    for compounds that inhibit Alzheimer''s amyloid precursor protein (APP) translation",
+    "assay_type": "Screening", "cid": "457964", "depositor": "Columbia University
+    Molecular Screening Center", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N",
+    "target_accession": "AAB23646"}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-10
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4503–4503
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "", "activity_outcome":
+    "Active", "activity_value_um": "", "aid": "1296008", "assay_name": "Cytotoxic
+    Profiling of Annotated Libraries Using Quantitative High-Throughput Screening",
+    "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference":
+    "PMID:31498718", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession":
+    ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-11
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4504–4504
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "", "activity_outcome":
+    "Active", "activity_value_um": "", "aid": "1296009", "assay_name": "qHTS assay
+    to identify novel small-molecules to repurpose for Merkel cell carcinoma treatment",
+    "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference":
+    "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-12
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4505–4505
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "Potency", "activity_outcome":
+    "Inconclusive", "activity_value_um": "8.0538", "aid": "1346987", "assay_name":
+    "P-glycoprotein substrates identified in KB-8-5-11 adenocarcinoma cell line, qHTS
+    therapeutic library screen", "assay_type": "Confirmatory", "cid": "457964", "depositor":
+    "NCGC", "reference": "PMID:31515284", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N",
+    "target_accession": ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-13
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4506–4506
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "", "activity_outcome":
+    "Active", "activity_value_um": "", "aid": "1446", "assay_name": "Primary cell-based
+    high throughput assay for inhibitors of the Janus kinase 2 mutant JAK2V617F",
+    "assay_type": "Screening", "cid": "457964", "depositor": "The Scripps Research
+    Institute Molecular Screening Center", "reference": "", "standard_inchi_key":
+    "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "EAW58774"}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-14
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4507–4507
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "Potency", "activity_outcome":
+    "Inactive", "activity_value_um": "2.2387", "aid": "1458", "assay_name": "qHTS
+    Assay for Enhancers of SMN2 Splice Variant Expression", "assay_type": "Confirmatory",
+    "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N",
+    "target_accession": "NP_059107"}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-15
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4508–4508
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "Potency", "activity_outcome":
+    "Inactive", "activity_value_um": "0.7943", "aid": "1458", "assay_name": "qHTS
+    Assay for Enhancers of SMN2 Splice Variant Expression", "assay_type": "Confirmatory",
+    "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N",
+    "target_accession": "NP_059107"}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-16
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4509–4509
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "", "activity_outcome":
+    "Active", "activity_value_um": "", "aid": "1486", "assay_name": "Counterscreen
+    for inhibitors of Janus kinase 2 mutant JAK2V617F: Cell-based high throughput
+    assay to identify inhibitors of parental Ba/F3 cell viability.", "assay_type":
+    "Screening", "cid": "457964", "depositor": "The Scripps Research Institute Molecular
+    Screening Center", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N",
+    "target_accession": ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-17
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4510–4510
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "Potency", "activity_outcome":
+    "Inconclusive", "activity_value_um": "0.7943", "aid": "1487", "assay_name": "qHTS
+    Assay for Modulators of Lamin A Splicing", "assay_type": "Confirmatory", "cid":
+    "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N",
+    "target_accession": "NP_733822"}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-18
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4511–4511
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "Potency", "activity_outcome":
+    "Active", "activity_value_um": "3.1868", "aid": "1645876", "assay_name": "Primary
+    qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in
+    an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)", "assay_type": "Confirmatory",
+    "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N",
+    "target_accession": ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-19
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4512–4512
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "Potency", "activity_outcome":
+    "Active", "activity_value_um": "3.1868", "aid": "1645876", "assay_name": "Primary
+    qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in
+    an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)", "assay_type": "Confirmatory",
+    "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N",
+    "target_accession": "O96028"}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-20
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4513–4513
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "Potency", "activity_outcome":
+    "Active", "activity_value_um": "2.8403", "aid": "1645877", "assay_name": "Primary
+    qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in
+    an RCH-ACV wild type WT cells (2C)", "assay_type": "Confirmatory", "cid": "457964",
+    "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N",
+    "target_accession": ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-21
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4514–4514
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "Potency", "activity_outcome":
+    "Active", "activity_value_um": "2.8403", "aid": "1645877", "assay_name": "Primary
+    qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in
+    an RCH-ACV wild type WT cells (2C)", "assay_type": "Confirmatory", "cid": "457964",
+    "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N",
+    "target_accession": "O96028"}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-22
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4515–4515
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "Potency", "activity_outcome":
+    "Inconclusive", "activity_value_um": "10", "aid": "1645882", "assay_name": "Validation
+    qHTS for antagonist of cAMP-regulated guanine nucleotide exchange factor 3 (EPAC1)",
+    "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference":
+    "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-23
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4516–4516
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "Potency", "activity_outcome":
+    "Inconclusive", "activity_value_um": "10", "aid": "1645882", "assay_name": "Validation
+    qHTS for antagonist of cAMP-regulated guanine nucleotide exchange factor 3 (EPAC1)",
+    "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference":
+    "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "O95398"}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-24
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4517–4517
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "Potency", "activity_outcome":
+    "Inactive", "activity_value_um": "50.1187", "aid": "1645883", "assay_name": "Validation
+    qHTS for agonist of cAMP-regulated guanine nucleotide exchange factor 3 (EPAC1)",
+    "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference":
+    "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-25
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4518–4518
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "Potency", "activity_outcome":
+    "Inactive", "activity_value_um": "50.1187", "aid": "1645883", "assay_name": "Validation
+    qHTS for agonist of cAMP-regulated guanine nucleotide exchange factor 3 (EPAC1)",
+    "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference":
+    "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "O95398"}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-26
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4519–4519
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "Potency", "activity_outcome":
+    "Active", "activity_value_um": "63.0957", "aid": "1645886", "assay_name": "Validation
+    qHTS for antagonist of cAMP-regulated guanine nucleotide exchange factor 4 (EPAC2)",
+    "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference":
+    "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-27
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4520–4520
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "Potency", "activity_outcome":
+    "Active", "activity_value_um": "63.0957", "aid": "1645886", "assay_name": "Validation
+    qHTS for antagonist of cAMP-regulated guanine nucleotide exchange factor 4 (EPAC2)",
+    "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference":
+    "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "Q8WZA2"}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-28
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4521–4521
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "Potency", "activity_outcome":
+    "Inactive", "activity_value_um": "7.9433", "aid": "1645887", "assay_name": "Validation
+    qHTS for agonist of cAMP-regulated guanine nucleotide exchange factor 4 (EPAC2)",
+    "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference":
+    "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-29
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4522–4522
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "Potency", "activity_outcome":
+    "Inactive", "activity_value_um": "7.9433", "aid": "1645887", "assay_name": "Validation
+    qHTS for agonist of cAMP-regulated guanine nucleotide exchange factor 4 (EPAC2)",
+    "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference":
+    "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "Q8WZA2"}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-30
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4523–4523
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "Potency", "activity_outcome":
+    "Inconclusive", "activity_value_um": "141.254", "aid": "1671190", "assay_name":
+    "Primary qHTS assay for inhibitors of human arachidonate 12S-lipoxygenase (ALOX12):
+    Round 2", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC",
+    "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession":
+    ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-31
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4524–4524
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "Potency", "activity_outcome":
+    "Inconclusive", "activity_value_um": "141.254", "aid": "1671190", "assay_name":
+    "Primary qHTS assay for inhibitors of human arachidonate 12S-lipoxygenase (ALOX12):
+    Round 2", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC",
+    "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession":
+    "P18054"}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-32
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4525–4525
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "", "activity_outcome":
+    "Active", "activity_value_um": "", "aid": "1813", "assay_name": "MLPCN Alpha-Synuclein
+    5''UTR - 5''-UTR binding - inhibitors", "assay_type": "Screening", "cid": "457964",
+    "depositor": "Broad Institute", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N",
+    "target_accession": ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-33
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4526–4526
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "", "activity_outcome":
+    "Active", "activity_value_um": "", "aid": "1825", "assay_name": "Luminescence-based
+    counterscreen assay for KLF5 inhibitors: cell-based high throughput screening
+    assay to identify cytotoxic compounds using the IEC-6 intestinal epithelial cell
+    line.", "assay_type": "Screening", "cid": "457964", "depositor": "The Scripps
+    Research Institute Molecular Screening Center", "reference": "", "standard_inchi_key":
+    "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-34
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4527–4527
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "", "activity_outcome":
+    "Active", "activity_value_um": "", "aid": "1907", "assay_name": "Luminescence-based
+    confirmation cell-based assay for cytotoxic compounds using the IEC-6 intestinal
+    epithelial cell line.", "assay_type": "Screening", "cid": "457964", "depositor":
+    "The Scripps Research Institute Molecular Screening Center", "reference": "",
+    "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-35
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4528–4528
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "EC50", "activity_outcome":
+    "Active", "activity_value_um": "38.639", "aid": "1933", "assay_name": "Luminescence
+    Cell-Based Dose Response HTS to Identify Compounds Cytotoxic to BJ-TERT RAS-Independent
+    Fibroblast", "assay_type": "Confirmatory", "cid": "457964", "depositor": "Broad
+    Institute", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N",
+    "target_accession": ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-36
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4529–4529
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "EC50", "activity_outcome":
+    "Inconclusive", "activity_value_um": "150", "aid": "1934", "assay_name": "Luminescence
+    Cell-Based Dose Response HTS to Identify Compounds Cytotoxic to DRD Non-Viral
+    Oncogenic Fibroblast", "assay_type": "Confirmatory", "cid": "457964", "depositor":
+    "Broad Institute", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N",
+    "target_accession": ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-37
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4530–4530
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "EC50", "activity_outcome":
+    "Inactive", "activity_value_um": "150", "aid": "1935", "assay_name": "Luminescence
+    Cell-Based Dose Response HTS to Identify Compounds Cytotoxic to BJ-TERT-LT-ST
+    RAS-Independent Fibroblast", "assay_type": "Confirmatory", "cid": "457964", "depositor":
+    "Broad Institute", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N",
+    "target_accession": ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-38
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4531–4531
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "EC50", "activity_outcome":
+    "Active", "activity_value_um": "28.62", "aid": "1936", "assay_name": "Luminescence
+    Cell-Based Dose Confirmation HTS to Identify Compounds Cytotoxic to BJeLR RAS-Dependent
+    Fibroblast", "assay_type": "Confirmatory", "cid": "457964", "depositor": "Broad
+    Institute", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N",
+    "target_accession": ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-39
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4532–4532
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "Potency", "activity_outcome":
+    "Active", "activity_value_um": "1.0139", "aid": "1963823", "assay_name": "Viability
+    qHTS for spleen associated tyrosine kinase inhibitor (SYKi) naive MV4-11 cells",
+    "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference":
+    "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-40
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4533–4533
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "Potency", "activity_outcome":
+    "Active", "activity_value_um": "1.0139", "aid": "1963823", "assay_name": "Viability
+    qHTS for spleen associated tyrosine kinase inhibitor (SYKi) naive MV4-11 cells",
+    "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference":
+    "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "P43405"}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-41
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4534–4534
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "Potency", "activity_outcome":
+    "Active", "activity_value_um": "1.0139", "aid": "1963824", "assay_name": "Viability
+    qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug resistant MV4-11
+    cells", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference":
+    "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-42
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4535–4535
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "Potency", "activity_outcome":
+    "Active", "activity_value_um": "1.0139", "aid": "1963824", "assay_name": "Viability
+    qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug resistant MV4-11
+    cells", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference":
+    "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "P43405"}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-43
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4536–4536
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "EC50", "activity_outcome":
+    "Active", "activity_value_um": "0.136", "aid": "2008", "assay_name": "Leishmania
+    major promastigote EC50 determinations", "assay_type": "Confirmatory", "cid":
+    "457964", "depositor": "University of Pittsburgh Molecular Library Screening Center",
+    "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession":
+    ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-44
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4537–4537
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "Potency", "activity_outcome":
+    "Inconclusive", "activity_value_um": "39.8107", "aid": "2517", "assay_name": "qHTS
+    Assay for Inhibitors of the Human Apurinic/apyrimidinic Endonuclease 1 (APE1)",
+    "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference":
+    "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "1DE9_A"}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-45
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4538–4538
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "Potency", "activity_outcome":
+    "Inconclusive", "activity_value_um": "5.6234", "aid": "2549", "assay_name": "qHTS
+    Assay for Inhibitors of RecQ-Like Dna Helicase 1 (RECQ1)", "assay_type": "Confirmatory",
+    "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N",
+    "target_accession": "2WWY_A"}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-46
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4539–4539
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "Potency", "activity_outcome":
+    "Inactive", "activity_value_um": "0.631", "aid": "2673", "assay_name": "qHTS Multiplex
+    Assay to Identify Dual Action Probes in a Cell Model of Huntington: Cytoprotection
+    confirmation (ATP)", "assay_type": "Confirmatory", "cid": "457964", "depositor":
+    "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N",
+    "target_accession": "NP_002102"}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-47
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4540–4540
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "Potency", "activity_outcome":
+    "Inconclusive", "activity_value_um": "0.206", "aid": "2685", "assay_name": "qHTS
+    Assay for Lipid Storage Modulators in Drosophila S3 Cells", "assay_type": "Confirmatory",
+    "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N",
+    "target_accession": ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-48
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4541–4541
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "", "activity_outcome":
+    "Active", "activity_value_um": "", "aid": "371", "assay_name": "Human A549 Lung
+    Tumor Cell Growth Inhibition Assay", "assay_type": "Screening", "cid": "457964",
+    "depositor": "SRMLSC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N",
+    "target_accession": ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-49
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4542–4542
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "EC50", "activity_outcome":
+    "Active", "activity_value_um": "", "aid": "430", "assay_name": "Fluorescent HTS
+    Cytotoxicity/Cell viability assay (HPDE-C7 cells)", "assay_type": "Confirmatory",
+    "cid": "457964", "depositor": "Burnham Center for Chemical Genomics", "reference":
+    "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-50
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4543–4543
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "EC50", "activity_outcome":
+    "Active", "activity_value_um": "", "aid": "431", "assay_name": "Fluorescent HTS
+    Cytotoxicity/Cell viability assay (HPDE-C7K cells)", "assay_type": "Confirmatory",
+    "cid": "457964", "depositor": "Burnham Center for Chemical Genomics", "reference":
+    "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-51
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4544–4544
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "", "activity_outcome":
+    "Active", "activity_value_um": "", "aid": "493162", "assay_name": "A screen for
+    compounds that inhibit processive DNA synthesis of vaccinia virus", "assay_type":
+    "Other", "cid": "457964", "depositor": "ICCB-Longwood/NSRB Screening Facility,
+    Harvard Medical School", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N",
+    "target_accession": "AAB59829"}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-52
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4545–4545
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "Potency", "activity_outcome":
+    "Inconclusive", "activity_value_um": "6.3096", "aid": "504332", "assay_name":
+    "qHTS Assay for Inhibitors of Histone Lysine Methyltransferase G9a", "assay_type":
+    "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key":
+    "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "CAQ07474"}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-53
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4546–4546
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "", "activity_outcome":
+    "Active", "activity_value_um": "", "aid": "504541", "assay_name": "Assay for Inhibitors
+    of the beta-Arrestin-Adaptor Protein 2 Interaction for Validation Set", "assay_type":
+    "Screening", "cid": "457964", "depositor": "NMMLSC", "reference": "", "standard_inchi_key":
+    "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "AAH03636"}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-54
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4547–4547
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "Potency", "activity_outcome":
+    "Active", "activity_value_um": "0.5221", "aid": "504832", "assay_name": "Primary
+    qHTS for delayed death inhibitors of the malarial parasite plastid, 48 hour incubation",
+    "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference":
+    "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-55
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4548–4548
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "Potency", "activity_outcome":
+    "Active", "activity_value_um": "0.5858", "aid": "504834", "assay_name": "Primary
+    qHTS for delayed death inhibitors of the malarial parasite plastid, 96 hour incubation",
+    "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference":
+    "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-56
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4549–4549
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "", "activity_outcome":
+    "Active", "activity_value_um": "", "aid": "525", "assay_name": "Primary Cell-based
+    High Throughput Screening assay for inhibitors of the nuclear receptor Steroidogenic
+    Factor 1 (SF-1)", "assay_type": "Screening", "cid": "457964", "depositor": "The
+    Scripps Research Institute Molecular Screening Center", "reference": "", "standard_inchi_key":
+    "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "NP_004950"}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-57
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4550–4550
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "Potency", "activity_outcome":
+    "Inconclusive", "activity_value_um": "0.7308", "aid": "540256", "assay_name":
+    "qHTS for Inhibitors of binding or entry into cells for Lassa Virus", "assay_type":
+    "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key":
+    "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-58
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4551–4551
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "Potency", "activity_outcome":
+    "Active", "activity_value_um": "0.5174", "aid": "540276", "assay_name": "qHTS
+    for inhibitors of binding or entry into cells for Marburg Virus", "assay_type":
+    "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key":
+    "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "B45705"}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-59
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4552–4552
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "", "activity_outcome":
+    "Active", "activity_value_um": "", "aid": "561", "assay_name": "Primary Cell-based
+    High Throughput Screening assay for inhibitors of the Retinoic Acid Receptor-related
+    orphan receptor A (RORA)", "assay_type": "Screening", "cid": "457964", "depositor":
+    "The Scripps Research Institute Molecular Screening Center", "reference": "",
+    "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "P35398"}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-60
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4553–4553
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "", "activity_outcome":
+    "Active", "activity_value_um": "", "aid": "599", "assay_name": "Counterscreen
+    for inhibitors of the nuclear receptor Steroidogenic Factor 1 (SF-1): A cell-based
+    dose-response assay for inhibition of the RAR-related orphan receptor A (RORA)",
+    "assay_type": "Confirmatory", "cid": "457964", "depositor": "The Scripps Research
+    Institute Molecular Screening Center", "reference": "", "standard_inchi_key":
+    "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "P35398"}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-61
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4554–4554
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "", "activity_outcome":
+    "Active", "activity_value_um": "", "aid": "600", "assay_name": "Dose-response
+    cell-based assay for inhibitors of the nuclear receptor Steroidogenic Factor 1
+    (SF-1)", "assay_type": "Confirmatory", "cid": "457964", "depositor": "The Scripps
+    Research Institute Molecular Screening Center", "reference": "", "standard_inchi_key":
+    "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "NP_004950"}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-62
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4555–4555
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "", "activity_outcome":
+    "Active", "activity_value_um": "", "aid": "610", "assay_name": "Dose-response
+    cell-based assay for inhibitors of the Retinoic Acid Receptor-related orphan receptor
+    A (RORA)", "assay_type": "Confirmatory", "cid": "457964", "depositor": "The Scripps
+    Research Institute Molecular Screening Center", "reference": "", "standard_inchi_key":
+    "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "P35398"}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-63
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4556–4556
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "", "activity_outcome":
+    "Active", "activity_value_um": "", "aid": "611", "assay_name": "Counterscreen
+    for inhibitors of the Retinoic Acid Receptor-related orphan receptor A (RORA):
+    A cell-based dose-response assay for inhibition of the Steroidogenic Factor 1
+    (SF-1)", "assay_type": "Confirmatory", "cid": "457964", "depositor": "The Scripps
+    Research Institute Molecular Screening Center", "reference": "", "standard_inchi_key":
+    "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "NP_004950"}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-64
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4557–4557
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "", "activity_outcome":
+    "Active", "activity_value_um": "", "aid": "645", "assay_name": "Isolation of Inhibitors
+    of Her-Kinase Expression - 66K library screen", "assay_type": "Screening", "cid":
+    "457964", "depositor": "SRMLSC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N",
+    "target_accession": ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-65
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4558–4558
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "Potency", "activity_outcome":
+    "Active", "activity_value_um": "0.131", "aid": "686978", "assay_name": "qHTS for
+    Inhibitors of human tyrosyl-DNA phosphodiesterase 1 (TDP1): qHTS in cells in absence
+    of CPT", "assay_type": "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference":
+    "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "AAI07878"}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-66
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4559–4559
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "Potency", "activity_outcome":
+    "Active", "activity_value_um": "0.1041", "aid": "686979", "assay_name": "qHTS
+    for Inhibitors of human tyrosyl-DNA phosphodiesterase 1 (TDP1): qHTS in cells
+    in presence of CPT", "assay_type": "Confirmatory", "cid": "457964", "depositor":
+    "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N",
+    "target_accession": "AAI07878"}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-67
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4560–4560
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "Potency", "activity_outcome":
+    "Inconclusive", "activity_value_um": "31.6228", "aid": "720532", "assay_name":
+    "qHTS for Inhibitors of binding or entry into cells for Marburg Virus", "assay_type":
+    "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key":
+    "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": "B45705"}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-68
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4561–4561
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "Potency", "activity_outcome":
+    "Inconclusive", "activity_value_um": "39.8107", "aid": "720533", "assay_name":
+    "qHTS for Inhibitors of binding or entry into cells for Lassa Virus", "assay_type":
+    "Confirmatory", "cid": "457964", "depositor": "NCGC", "reference": "", "standard_inchi_key":
+    "NOFOAYPPHIUXJR-APNQCZIXSA-N", "target_accession": ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-69
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4562–4562
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "Potency", "activity_outcome":
+    "Inconclusive", "activity_value_um": "1.9953", "aid": "914", "assay_name": "qHTS
+    Assay for Identification of Small Molecule Agonists for Hypoxia Response Element
+    Signaling Pathway", "assay_type": "Confirmatory", "cid": "457964", "depositor":
+    "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N",
+    "target_accession": "AAP88778"}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-row-pubchem_bioassay-70
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 4563–4563
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "Potency", "activity_outcome":
+    "Inconclusive", "activity_value_um": "1.9953", "aid": "915", "assay_name": "qHTS
+    Assay for Identification of Small Molecule Antagonists for Hypoxia Response Element
+    Signaling Pathway", "assay_type": "Confirmatory", "cid": "457964", "depositor":
+    "NCGC", "reference": "", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N",
+    "target_accession": "AAP88778"}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2268-query-bindingdb_targets
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json
+  locator: /records/7/source_scope_inventory/joins/bindingdb_targets
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Retained local query frame: {"count": 0, "predicate": "exact complete
+    standard_inchi_key equality", "query": "NOFOAYPPHIUXJR-APNQCZIXSA-N"}. Empty results
+    are bounded to this saved predicate and inventory.'
+  snapshot_sha256: 5537c37fdf8a54893bcbd0c967e1d857f8ac7004044a38e11d9ce2174146ba11
+- evidence_id: support-2268-query-antibioticmech_inchikeys
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json
+  locator: /records/7/source_scope_inventory/joins/antibioticmech_inchikeys
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Retained local query frame: {"count": 1, "predicate": "exact complete
+    standard_inchi_key equality", "query": "NOFOAYPPHIUXJR-APNQCZIXSA-N"}. Empty results
+    are bounded to this saved predicate and inventory.'
+  snapshot_sha256: 5537c37fdf8a54893bcbd0c967e1d857f8ac7004044a38e11d9ce2174146ba11
+- evidence_id: support-2268-row-antibioticmech_inchikeys-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/antibioticmech_inchikeys.tsv
+  locator: physical lines 1496–1496
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"antimicrobial_class": "ANTIVIRAL", "corpus_commit":
+    "74f6cc8362498900f2fe2c13d0b6fdb66dd30976", "identifier": "CHEBI:2766", "label":
+    "aphidicolin", "slug": "aphidicolin", "standard_inchi_key": "NOFOAYPPHIUXJR-APNQCZIXSA-N"}'
+  snapshot_sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+- evidence_id: support-2268-query-chebi_origins
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json
+  locator: /records/7/source_scope_inventory/joins/chebi_origins
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Retained local query frame: {"count": 3, "predicate": "exact chebi_id
+    from exact full-key structure rows", "query": ["CHEBI:2766"]}. Empty results are
+    bounded to this saved predicate and inventory.'
+  snapshot_sha256: 5537c37fdf8a54893bcbd0c967e1d857f8ac7004044a38e11d9ce2174146ba11
+- evidence_id: support-2268-row-chebi_origins-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/chebi_origins.tsv
+  locator: physical lines 227–227
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"chebi_id": "CHEBI:2766", "comments":
+    "", "component_text": "", "source_accession": "29191129", "species_accession":
+    "5062", "species_text": "Aspergillus oryzae", "strain_text": ""}'
+  snapshot_sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+- evidence_id: support-2268-row-chebi_origins-1
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/chebi_origins.tsv
+  locator: physical lines 228–228
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"chebi_id": "CHEBI:2766", "comments":
+    "", "component_text": "", "source_accession": "21812410", "species_accession":
+    "291364", "species_text": "Cephalosporium aphidicola", "strain_text": ""}'
+  snapshot_sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+- evidence_id: support-2268-row-chebi_origins-2
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/chebi_origins.tsv
+  locator: physical lines 229–229
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"chebi_id": "CHEBI:2766", "comments":
+    "Ethylacetate extract and fungus isolated from a soil sample on fruiting body
+    of Cordyceps sinensis", "component_text": "", "source_accession": "21812410",
+    "species_accession": "29910", "species_text": "Tolypocladium inflatum", "strain_text":
+    ""}'
+  snapshot_sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+- evidence_id: support-2268-cache-114231
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/corpus_taxa.obo
+  locator: physical lines 44973–44978
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete cached stanza, not a fresh taxonomy response:
+
+    [Term]
+
+    id: NCBITaxon:114231
+
+    name: Nigrospora sphaerica
+
+    synonym: "Nigrospora sphaerica (Sacc.) E.W. Mason, 1927" EXACT []
+
+    synonym: "Trichosporum sphaericum" EXACT []
+
+
+    '
+  snapshot_sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+- evidence_id: support-2268-cache-146308
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/corpus_taxa.obo
+  locator: physical lines 51709–51712
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete cached stanza, not a fresh taxonomy response:
+
+    [Term]
+
+    id: NCBITaxon:146308
+
+    name: Pyrenula
+
+
+    '
+  snapshot_sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+- evidence_id: support-2268-cache-1979465
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/corpus_taxa.obo
+  locator: physical lines 142689–142695
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete cached stanza, not a fresh taxonomy response:
+
+    [Term]
+
+    id: NCBITaxon:1979465
+
+    name: Neocamarosporium betae
+
+    synonym: "Phoma betae" EXACT []
+
+    synonym: "Pleospora betae (Berl.) Nevod., 1915" EXACT []
+
+    synonym: "Pyrenophora echinella var. betae" EXACT []
+
+
+    '
+  snapshot_sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+- evidence_id: support-2268-cache-2231603
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/corpus_taxa.obo
+  locator: physical lines 145815–145821
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete cached stanza, not a fresh taxonomy response:
+
+    [Term]
+
+    id: NCBITaxon:2231603
+
+    name: Akanthomyces muscarius
+
+    synonym: "Cephalosporium aphidicola" EXACT []
+
+    synonym: "Cephalosporium muscarium" EXACT []
+
+    synonym: "Lecanicillium muscarium" EXACT []
+
+
+    '
+  snapshot_sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+- evidence_id: support-2268-cache-29910
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/corpus_taxa.obo
+  locator: physical lines 13668–13675
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete cached stanza, not a fresh taxonomy response:
+
+    [Term]
+
+    id: NCBITaxon:29910
+
+    name: Tolypocladium inflatum
+
+    synonym: "Beauveria nivea" EXACT []
+
+    synonym: "Cordyceps subsessilis" EXACT []
+
+    synonym: "Elaphocordyceps subsessilis" EXACT []
+
+    synonym: "Tolypocladium niveum" EXACT []
+
+
+    '
+  snapshot_sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+- evidence_id: support-2268-cache-318712
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/corpus_taxa.obo
+  locator: physical lines 82116–82119
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete cached stanza, not a fresh taxonomy response:
+
+    [Term]
+
+    id: NCBITaxon:318712
+
+    name: Pleospora bjoerlingii
+
+
+    '
+  snapshot_sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+- evidence_id: support-2268-cache-335854
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/corpus_taxa.obo
+  locator: physical lines 84046–84051
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete cached stanza, not a fresh taxonomy response:
+
+    [Term]
+
+    id: NCBITaxon:335854
+
+    name: Nigrospora oryzae
+
+    synonym: "Khuskia oryzae" EXACT []
+
+    synonym: "Monotospora oryzae" EXACT []
+
+
+    '
+  snapshot_sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+- evidence_id: support-2268-cache-40559
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/corpus_taxa.obo
+  locator: physical lines 18031–18038
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete cached stanza, not a fresh taxonomy response:
+
+    [Term]
+
+    id: NCBITaxon:40559
+
+    name: Botrytis cinerea
+
+    synonym: "Botryotinia fuckeliana" EXACT []
+
+    synonym: "Botrytis cinerea Pers., 1801" EXACT []
+
+    synonym: "Peziza fuckeliana" EXACT []
+
+    synonym: "Sclerotinia fuckeliana" EXACT []
+
+
+    '
+  snapshot_sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+- evidence_id: support-2268-cache-5062
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/corpus_taxa.obo
+  locator: physical lines 7883–7889
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete cached stanza, not a fresh taxonomy response:
+
+    [Term]
+
+    id: NCBITaxon:5062
+
+    name: Aspergillus oryzae
+
+    synonym: "Aspergillus flavus var. oryzae" EXACT []
+
+    synonym: "Aspergillus oryzae (Ahlb.) Cohn, 1884" EXACT []
+
+    synonym: "Eurotium oryzae" EXACT []
+
+
+    '
+  snapshot_sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+- evidence_id: support-2268-taxon-merge-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/taxon_merged.tsv
+  locator: physical lines 303–303
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained forward merge payload: {"new_taxon_id": "NCBITaxon:2231603",
+    "old_taxon_id": "NCBITaxon:291364", "requested_by": "chebi_origins"}'
+  snapshot_sha256: 97b3efa66d4fc1679ab65ae547e78b2f627f37bc8e45ae33f2719008fe3863bb
+- evidence_id: support-2268-companions
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json
+  locator: /records/7/proposed_companion_paths; /records/7/direct_companion_predicates
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: Exactly 3 direct companion placements admitted by the recorded root/full-key/owned-BGC
+    predicates. Shared context is not synonymy or automatic claim transfer.
+  snapshot_sha256: 5537c37fdf8a54893bcbd0c967e1d857f8ac7004044a38e11d9ce2174146ba11
+- evidence_id: support-2268-companion-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/terpenoids/17-deoxyaphidicolin.yaml
+  locator: lines 1–75
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Whole admitted companion plaintext/history: 17-deoxyaphidicolin (naturalproductmech:mibig-f03b04b9d4),
+    full key HRPBVTJJLYDCOZ-XPZISPLRSA-N, owned BGCs BGC0000676, selected mechanism
+    roots []. Its identity, producer/occurrence, assay and historical mechanism claims
+    remain owner-specific.'
+  snapshot_sha256: b0ba2f377df42f543868793e786a6e9715283e8defaf540d6573bc9d6f927489
+- evidence_id: support-2268-companion-1
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/terpenoids/3-deoxyaphidicolin.yaml
+  locator: lines 1–141
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Whole admitted companion plaintext/history: 3-deoxyaphidicolin (naturalproductmech:mibig-2dc5a6506a),
+    full key VHWTVINEPPOCLA-DTMQFJJTSA-N, owned BGCs BGC0000676, selected mechanism
+    roots []. Its identity, producer/occurrence, assay and historical mechanism claims
+    remain owner-specific.'
+  snapshot_sha256: c5dbf3db73550f35cb9a039b0e494747a0810a7e8c34fc711ec0449d73b17a68
+- evidence_id: support-2268-companion-2
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/terpenoids/aphidicolan-16-ol.yaml
+  locator: lines 1–86
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Whole admitted companion plaintext/history: aphidicolan-16β-ol (naturalproductmech:mibig-1e5a3884b3),
+    full key ODCPNBCPLWJVQI-NHWXPXPKSA-N, owned BGCs BGC0000676, selected mechanism
+    roots []. Its identity, producer/occurrence, assay and historical mechanism claims
+    remain owner-specific.'
+  snapshot_sha256: 7d87ac33e3226606ade6c946fd04bce43bad3ec1e84c1d531569ed2b7b609867
+- evidence_id: support-2268-activity-classifier
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: lines 128–178; lines 1310–1381
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: Maintained classify_activity claims unambiguous title support but has a
+    generic inhibition fallback. Active written observations receive optional classes
+    and drive summary derivation after measurement-prioritized capping. This explains
+    the two unsupported class inferences without changing source calls or defining
+    finer schema semantics.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: support-2268-activity-schema
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: lines 631–664; lines 920–944
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: Bioactivity observations preserve assay, call, measurement, target and
+    evidence separately. Coarse activity classes must be backed; ENZYME_INHIBITOR
+    has no separate fine-grained definition here.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: root-native-strict_ten
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-227/validate-strict-selected10-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-227/native-current227-five-gates-execution-001.json
+  accessed_at: '2026-11-03T17:12:11.356673Z'
+  support: supports
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  snapshot_sha256: e8998673dfc66cfe5e88cee01e9e8af72040248e60a1d519e5001d28b6da7542
+- evidence_id: root-native-strict_full
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-227/validate-all-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-227/native-current227-five-gates-execution-001.json
+  accessed_at: '2026-11-03T17:12:37.686250Z'
+  support: supports
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  snapshot_sha256: 4b9cab24405253d6b4fb56ff59f013dcdf9ea9c1a980935a83cbbc661d9d7b8c
+- evidence_id: root-native-lockfile
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-227/verify-corpus-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-227/native-current227-five-gates-execution-001.json
+  accessed_at: '2026-11-03T17:12:58.213877Z'
+  support: supports
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  snapshot_sha256: 254f171c7dff0f1ecbee5f47f75d2b7046143ae7fc499d9a1c08263e1c5125d8
+- evidence_id: root-native-reproduction
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-227/verify-reproduction-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-227/native-current227-five-gates-execution-001.json
+  accessed_at: '2026-11-03T17:13:32.681472Z'
+  support: supports
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  snapshot_sha256: cfc38f4e3f434e7f3651975f2cb228e5cda848476b2c53d1636d8746b794237a
+- evidence_id: root-native-queue
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-227/review-queue-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-227/native-current227-five-gates-execution-001.json
+  accessed_at: '2026-11-03T17:13:44.564564Z'
+  support: supports
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  snapshot_sha256: 68832113362bd405215bb25de9aacdabbbd0adafee48e333f4dd6f64da397bbd
+assessments:
+- assessment_id: support-2268-A1
+  area: identity
+  topic: Exact structure concept and grounding
+  outcome: supported
+  summary: The EXACT CHEBI:2766 owner joins the MIBiG BGC0000676 version 5 structure
+    and retained three-star ChEBI row by full key NOFOAYPPHIUXJR-APNQCZIXSA-N. MIBiG
+    source compound_index=1, PubChem CID457964 and other cross-references retain their
+    own scope. Three direct BGC companions have distinct full keys; aphidicolan-16β-ol's
+    unresolved cross-reference does not invalidate or resolve this selected key.
+  target_ids:
+  - CHEBI:2766
+  evidence_ids:
+  - support-2268-owner
+  - support-2268-capture
+  - support-2268-source-plan
+  - support-2268-query-mibig_compounds
+  - support-2268-query-chebi_structures
+  - support-2268-row-mibig_compounds-0
+  - support-2268-row-chebi_structures-0
+  - support-2268-companions
+  - support-2268-companion-0
+  - support-2268-companion-1
+  - support-2268-companion-2
+  dimensions:
+  - name: standard_inchi_key
+    value: NOFOAYPPHIUXJR-APNQCZIXSA-N
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2268-owner
+    - support-2268-capture
+    - support-2268-source-plan
+    - support-2268-query-mibig_compounds
+    - support-2268-query-chebi_structures
+    - support-2268-row-mibig_compounds-0
+    - support-2268-row-chebi_structures-0
+    - support-2268-companions
+    - support-2268-companion-0
+    - support-2268-companion-1
+    - support-2268-companion-2
+  - name: grounding_scope
+    value: The EXACT CHEBI:2766 owner joins the MIBiG BGC0000676 version 5 structure
+      and retained three-star ChEBI row by full key NOFOAYPPHIUXJR-APNQCZIXSA-N. MIBiG
+      source compound_index=1, PubChem CID457964 and other cross-references retain
+      their own scope. Three direct BGC companions have distinct full keys; aphidicolan-16β-ol's
+      unresolved cross-reference does not invalidate or resolve this selected key.
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2268-owner
+    - support-2268-capture
+    - support-2268-source-plan
+    - support-2268-query-mibig_compounds
+    - support-2268-query-chebi_structures
+    - support-2268-row-mibig_compounds-0
+    - support-2268-row-chebi_structures-0
+    - support-2268-companions
+    - support-2268-companion-0
+    - support-2268-companion-1
+    - support-2268-companion-2
+- assessment_id: support-2268-A2
+  area: representation
+  topic: Stored representation and stereochemistry
+  outcome: supported
+  summary: Both forms give neutral C20H34O4, 24 heavy atoms, 27 bonds and the declared
+    full key, with all ten comparison flags true and eight specified tetrahedral centers.
+    All bond types are SINGLE; four terminal hydroxyl oxygens are retained. The complete
+    saved chirality-aware atom map is not an independent natural identity or external-authority
+    determination. stereo_complete:true describes the encoded centers rather than
+    experimental proof of the original isolate.
+  target_ids:
+  - CHEBI:2766
+  evidence_ids:
+  - support-2268-capture
+  - support-2268-chemistry
+  - support-2268-stereo-method
+  - support-2268-structure-schema
+  dimensions:
+  - name: stereochemical_resolution
+    value: Eight specified tetrahedral centers in both saved forms; no unspecified
+      potential-stereo entry.
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2268-capture
+    - support-2268-chemistry
+    - support-2268-stereo-method
+    - support-2268-structure-schema
+  - name: representation_correspondence
+    value: Both forms give neutral C20H34O4, 24 heavy atoms, 27 bonds and the declared
+      full key, with all ten comparison flags true and eight specified tetrahedral
+      centers. All bond types are SINGLE; four terminal hydroxyl oxygens are retained.
+      The complete saved chirality-aware atom map is not an independent natural identity
+      or external-authority determination. stereo_complete:true describes the encoded
+      centers rather than experimental proof of the original isolate.
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2268-capture
+    - support-2268-chemistry
+    - support-2268-stereo-method
+    - support-2268-structure-schema
+- assessment_id: support-2268-A3
+  area: provenance
+  topic: Producer, locus, taxon and strain roles
+  outcome: supported
+  summary: MIBiG BGC0000676 version 5 is active, quality questionable and completeness
+    complete. Phoma betae 1979465 is a SOURCE_ASSERTION producer, while heterologous
+    expression supports the separate CLUSTER_DEMONSTRATED locus at AB114137.1 without
+    coordinates. Occurrence sources name several fungi and a Pyrenula genus entry;
+    these are not additional demonstrated producers. The retained forward merge 291364→2231603
+    explains the rewritten ChEBI taxon ID; cached Akanthomyces muscarius lists Cephalosporium
+    aphidicola as an exact synonym, without a fresh taxonomy lookup.
+  target_ids:
+  - CHEBI:2766
+  evidence_ids:
+  - support-2268-owner
+  - support-2268-capture
+  - support-2268-source-plan
+  - support-2268-query-mibig_compounds
+  - support-2268-query-lotus_occurrences
+  - support-2268-query-chebi_origins
+  - support-2268-row-mibig_compounds-0
+  - support-2268-row-lotus_occurrences-0
+  - support-2268-row-lotus_occurrences-1
+  - support-2268-row-lotus_occurrences-2
+  - support-2268-row-lotus_occurrences-3
+  - support-2268-row-lotus_occurrences-4
+  - support-2268-row-lotus_occurrences-5
+  - support-2268-row-lotus_occurrences-6
+  - support-2268-row-lotus_occurrences-7
+  - support-2268-row-lotus_occurrences-8
+  - support-2268-row-lotus_occurrences-9
+  - support-2268-row-lotus_occurrences-10
+  - support-2268-row-lotus_occurrences-11
+  - support-2268-row-lotus_occurrences-12
+  - support-2268-row-lotus_occurrences-13
+  - support-2268-row-lotus_occurrences-14
+  - support-2268-row-lotus_occurrences-15
+  - support-2268-row-lotus_occurrences-16
+  - support-2268-row-lotus_occurrences-17
+  - support-2268-row-lotus_occurrences-18
+  - support-2268-row-lotus_occurrences-19
+  - support-2268-row-lotus_occurrences-20
+  - support-2268-row-lotus_occurrences-21
+  - support-2268-row-chebi_origins-0
+  - support-2268-row-chebi_origins-1
+  - support-2268-row-chebi_origins-2
+  - support-2268-cache-114231
+  - support-2268-cache-146308
+  - support-2268-cache-1979465
+  - support-2268-cache-2231603
+  - support-2268-cache-29910
+  - support-2268-cache-318712
+  - support-2268-cache-335854
+  - support-2268-cache-40559
+  - support-2268-cache-5062
+  - support-2268-taxon-merge-0
+  - support-2268-taxonomy-routes
+  - support-2268-source-notes
+  - support-2268-companion-0
+  - support-2268-companion-1
+  - support-2268-companion-2
+  dimensions:
+  - name: taxon_and_strain_scope
+    value: MIBiG BGC0000676 version 5 is active, quality questionable and completeness
+      complete. Phoma betae 1979465 is a SOURCE_ASSERTION producer, while heterologous
+      expression supports the separate CLUSTER_DEMONSTRATED locus at AB114137.1 without
+      coordinates. Occurrence sources name several fungi and a Pyrenula genus entry;
+      these are not additional demonstrated producers. The retained forward merge
+      291364→2231603 explains the rewritten ChEBI taxon ID; cached Akanthomyces muscarius
+      lists Cephalosporium aphidicola as an exact synonym, without a fresh taxonomy
+      lookup.
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2268-owner
+    - support-2268-capture
+    - support-2268-source-plan
+    - support-2268-query-mibig_compounds
+    - support-2268-query-lotus_occurrences
+    - support-2268-query-chebi_origins
+    - support-2268-row-mibig_compounds-0
+    - support-2268-row-lotus_occurrences-0
+    - support-2268-row-lotus_occurrences-1
+    - support-2268-row-lotus_occurrences-2
+    - support-2268-row-lotus_occurrences-3
+    - support-2268-row-lotus_occurrences-4
+    - support-2268-row-lotus_occurrences-5
+    - support-2268-row-lotus_occurrences-6
+    - support-2268-row-lotus_occurrences-7
+    - support-2268-row-lotus_occurrences-8
+    - support-2268-row-lotus_occurrences-9
+    - support-2268-row-lotus_occurrences-10
+    - support-2268-row-lotus_occurrences-11
+    - support-2268-row-lotus_occurrences-12
+    - support-2268-row-lotus_occurrences-13
+    - support-2268-row-lotus_occurrences-14
+    - support-2268-row-lotus_occurrences-15
+    - support-2268-row-lotus_occurrences-16
+    - support-2268-row-lotus_occurrences-17
+    - support-2268-row-lotus_occurrences-18
+    - support-2268-row-lotus_occurrences-19
+    - support-2268-row-lotus_occurrences-20
+    - support-2268-row-lotus_occurrences-21
+    - support-2268-row-chebi_origins-0
+    - support-2268-row-chebi_origins-1
+    - support-2268-row-chebi_origins-2
+    - support-2268-cache-114231
+    - support-2268-cache-146308
+    - support-2268-cache-1979465
+    - support-2268-cache-2231603
+    - support-2268-cache-29910
+    - support-2268-cache-318712
+    - support-2268-cache-335854
+    - support-2268-cache-40559
+    - support-2268-cache-5062
+    - support-2268-taxon-merge-0
+    - support-2268-taxonomy-routes
+    - support-2268-source-notes
+    - support-2268-companion-0
+    - support-2268-companion-1
+    - support-2268-companion-2
+  - name: producer_evidence_tier
+    value: SOURCE_ASSERTION; Phoma betae 1979465, separate from reported occurrences.
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2268-owner
+    - support-2268-capture
+    - support-2268-source-plan
+    - support-2268-query-mibig_compounds
+    - support-2268-query-lotus_occurrences
+    - support-2268-query-chebi_origins
+    - support-2268-row-mibig_compounds-0
+    - support-2268-row-lotus_occurrences-0
+    - support-2268-row-lotus_occurrences-1
+    - support-2268-row-lotus_occurrences-2
+    - support-2268-row-lotus_occurrences-3
+    - support-2268-row-lotus_occurrences-4
+    - support-2268-row-lotus_occurrences-5
+    - support-2268-row-lotus_occurrences-6
+    - support-2268-row-lotus_occurrences-7
+    - support-2268-row-lotus_occurrences-8
+    - support-2268-row-lotus_occurrences-9
+    - support-2268-row-lotus_occurrences-10
+    - support-2268-row-lotus_occurrences-11
+    - support-2268-row-lotus_occurrences-12
+    - support-2268-row-lotus_occurrences-13
+    - support-2268-row-lotus_occurrences-14
+    - support-2268-row-lotus_occurrences-15
+    - support-2268-row-lotus_occurrences-16
+    - support-2268-row-lotus_occurrences-17
+    - support-2268-row-lotus_occurrences-18
+    - support-2268-row-lotus_occurrences-19
+    - support-2268-row-lotus_occurrences-20
+    - support-2268-row-lotus_occurrences-21
+    - support-2268-row-chebi_origins-0
+    - support-2268-row-chebi_origins-1
+    - support-2268-row-chebi_origins-2
+    - support-2268-cache-114231
+    - support-2268-cache-146308
+    - support-2268-cache-1979465
+    - support-2268-cache-2231603
+    - support-2268-cache-29910
+    - support-2268-cache-318712
+    - support-2268-cache-335854
+    - support-2268-cache-40559
+    - support-2268-cache-5062
+    - support-2268-taxon-merge-0
+    - support-2268-taxonomy-routes
+    - support-2268-source-notes
+    - support-2268-companion-0
+    - support-2268-companion-1
+    - support-2268-companion-2
+  - name: locus_evidence_tier
+    value: CLUSTER_DEMONSTRATED; heterologous expression, BGC0000676 v5; AB114137.1,
+      no coordinates.
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2268-owner
+    - support-2268-capture
+    - support-2268-source-plan
+    - support-2268-query-mibig_compounds
+    - support-2268-query-lotus_occurrences
+    - support-2268-query-chebi_origins
+    - support-2268-row-mibig_compounds-0
+    - support-2268-row-lotus_occurrences-0
+    - support-2268-row-lotus_occurrences-1
+    - support-2268-row-lotus_occurrences-2
+    - support-2268-row-lotus_occurrences-3
+    - support-2268-row-lotus_occurrences-4
+    - support-2268-row-lotus_occurrences-5
+    - support-2268-row-lotus_occurrences-6
+    - support-2268-row-lotus_occurrences-7
+    - support-2268-row-lotus_occurrences-8
+    - support-2268-row-lotus_occurrences-9
+    - support-2268-row-lotus_occurrences-10
+    - support-2268-row-lotus_occurrences-11
+    - support-2268-row-lotus_occurrences-12
+    - support-2268-row-lotus_occurrences-13
+    - support-2268-row-lotus_occurrences-14
+    - support-2268-row-lotus_occurrences-15
+    - support-2268-row-lotus_occurrences-16
+    - support-2268-row-lotus_occurrences-17
+    - support-2268-row-lotus_occurrences-18
+    - support-2268-row-lotus_occurrences-19
+    - support-2268-row-lotus_occurrences-20
+    - support-2268-row-lotus_occurrences-21
+    - support-2268-row-chebi_origins-0
+    - support-2268-row-chebi_origins-1
+    - support-2268-row-chebi_origins-2
+    - support-2268-cache-114231
+    - support-2268-cache-146308
+    - support-2268-cache-1979465
+    - support-2268-cache-2231603
+    - support-2268-cache-29910
+    - support-2268-cache-318712
+    - support-2268-cache-335854
+    - support-2268-cache-40559
+    - support-2268-cache-5062
+    - support-2268-taxon-merge-0
+    - support-2268-taxonomy-routes
+    - support-2268-source-notes
+    - support-2268-companion-0
+    - support-2268-companion-1
+    - support-2268-companion-2
+- assessment_id: support-2268-A4
+  area: evidence
+  topic: Citation placement and primary-source limits
+  outcome: supported
+  summary: The MIBiG producer/locus entry citation is PMID:14745177. Twenty-two LOTUS
+    placements and three ChEBI-origin placements yield 24 written occurrences after
+    the retained Botrytis/Botryotinia duplication is handled. DOI and PMID overlap
+    is not publication independence. Assay evidence cites specific PubChem AIDs when
+    the retained reference is blank; the P-glycoprotein row separately carries PMID:31515284.
+    ChEBI's definition and the exact-key AntibioticMech ANTIVIRAL annotation are separate
+    retained sources, not proof that each screen measures that mechanism.
+  target_ids:
+  - CHEBI:2766
+  evidence_ids:
+  - support-2268-owner
+  - support-2268-capture
+  - support-2268-source-plan
+  - support-2268-query-mibig_compounds
+  - support-2268-query-lotus_occurrences
+  - support-2268-query-chebi_origins
+  - support-2268-query-pubchem_bioassay
+  - support-2268-row-mibig_compounds-0
+  - support-2268-row-lotus_occurrences-0
+  - support-2268-row-lotus_occurrences-1
+  - support-2268-row-lotus_occurrences-2
+  - support-2268-row-lotus_occurrences-3
+  - support-2268-row-lotus_occurrences-4
+  - support-2268-row-lotus_occurrences-5
+  - support-2268-row-lotus_occurrences-6
+  - support-2268-row-lotus_occurrences-7
+  - support-2268-row-lotus_occurrences-8
+  - support-2268-row-lotus_occurrences-9
+  - support-2268-row-lotus_occurrences-10
+  - support-2268-row-lotus_occurrences-11
+  - support-2268-row-lotus_occurrences-12
+  - support-2268-row-lotus_occurrences-13
+  - support-2268-row-lotus_occurrences-14
+  - support-2268-row-lotus_occurrences-15
+  - support-2268-row-lotus_occurrences-16
+  - support-2268-row-lotus_occurrences-17
+  - support-2268-row-lotus_occurrences-18
+  - support-2268-row-lotus_occurrences-19
+  - support-2268-row-lotus_occurrences-20
+  - support-2268-row-lotus_occurrences-21
+  - support-2268-row-chebi_origins-0
+  - support-2268-row-chebi_origins-1
+  - support-2268-row-chebi_origins-2
+  - support-2268-row-pubchem_bioassay-0
+  - support-2268-row-pubchem_bioassay-1
+  - support-2268-row-pubchem_bioassay-2
+  - support-2268-row-pubchem_bioassay-3
+  - support-2268-row-pubchem_bioassay-4
+  - support-2268-row-pubchem_bioassay-5
+  - support-2268-row-pubchem_bioassay-6
+  - support-2268-row-pubchem_bioassay-7
+  - support-2268-row-pubchem_bioassay-8
+  - support-2268-row-pubchem_bioassay-9
+  - support-2268-row-pubchem_bioassay-10
+  - support-2268-row-pubchem_bioassay-11
+  - support-2268-row-pubchem_bioassay-12
+  - support-2268-row-pubchem_bioassay-13
+  - support-2268-row-pubchem_bioassay-14
+  - support-2268-row-pubchem_bioassay-15
+  - support-2268-row-pubchem_bioassay-16
+  - support-2268-row-pubchem_bioassay-17
+  - support-2268-row-pubchem_bioassay-18
+  - support-2268-row-pubchem_bioassay-19
+  - support-2268-row-pubchem_bioassay-20
+  - support-2268-row-pubchem_bioassay-21
+  - support-2268-row-pubchem_bioassay-22
+  - support-2268-row-pubchem_bioassay-23
+  - support-2268-row-pubchem_bioassay-24
+  - support-2268-row-pubchem_bioassay-25
+  - support-2268-row-pubchem_bioassay-26
+  - support-2268-row-pubchem_bioassay-27
+  - support-2268-row-pubchem_bioassay-28
+  - support-2268-row-pubchem_bioassay-29
+  - support-2268-row-pubchem_bioassay-30
+  - support-2268-row-pubchem_bioassay-31
+  - support-2268-row-pubchem_bioassay-32
+  - support-2268-row-pubchem_bioassay-33
+  - support-2268-row-pubchem_bioassay-34
+  - support-2268-row-pubchem_bioassay-35
+  - support-2268-row-pubchem_bioassay-36
+  - support-2268-row-pubchem_bioassay-37
+  - support-2268-row-pubchem_bioassay-38
+  - support-2268-row-pubchem_bioassay-39
+  - support-2268-row-pubchem_bioassay-40
+  - support-2268-row-pubchem_bioassay-41
+  - support-2268-row-pubchem_bioassay-42
+  - support-2268-row-pubchem_bioassay-43
+  - support-2268-row-pubchem_bioassay-44
+  - support-2268-row-pubchem_bioassay-45
+  - support-2268-row-pubchem_bioassay-46
+  - support-2268-row-pubchem_bioassay-47
+  - support-2268-row-pubchem_bioassay-48
+  - support-2268-row-pubchem_bioassay-49
+  - support-2268-row-pubchem_bioassay-50
+  - support-2268-row-pubchem_bioassay-51
+  - support-2268-row-pubchem_bioassay-52
+  - support-2268-row-pubchem_bioassay-53
+  - support-2268-row-pubchem_bioassay-54
+  - support-2268-row-pubchem_bioassay-55
+  - support-2268-row-pubchem_bioassay-56
+  - support-2268-row-pubchem_bioassay-57
+  - support-2268-row-pubchem_bioassay-58
+  - support-2268-row-pubchem_bioassay-59
+  - support-2268-row-pubchem_bioassay-60
+  - support-2268-row-pubchem_bioassay-61
+  - support-2268-row-pubchem_bioassay-62
+  - support-2268-row-pubchem_bioassay-63
+  - support-2268-row-pubchem_bioassay-64
+  - support-2268-row-pubchem_bioassay-65
+  - support-2268-row-pubchem_bioassay-66
+  - support-2268-row-pubchem_bioassay-67
+  - support-2268-row-pubchem_bioassay-68
+  - support-2268-row-pubchem_bioassay-69
+  - support-2268-row-pubchem_bioassay-70
+  - support-2268-companions
+  - support-2268-companion-0
+  - support-2268-companion-1
+  - support-2268-companion-2
+  dimensions:
+  - name: citation_scope
+    value: The MIBiG producer/locus entry citation is PMID:14745177. Twenty-two LOTUS
+      placements and three ChEBI-origin placements yield 24 written occurrences after
+      the retained Botrytis/Botryotinia duplication is handled. DOI and PMID overlap
+      is not publication independence. Assay evidence cites specific PubChem AIDs
+      when the retained reference is blank; the P-glycoprotein row separately carries
+      PMID:31515284. ChEBI's definition and the exact-key AntibioticMech ANTIVIRAL
+      annotation are separate retained sources, not proof that each screen measures
+      that mechanism.
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2268-owner
+    - support-2268-capture
+    - support-2268-source-plan
+    - support-2268-query-mibig_compounds
+    - support-2268-query-lotus_occurrences
+    - support-2268-query-chebi_origins
+    - support-2268-query-pubchem_bioassay
+    - support-2268-row-mibig_compounds-0
+    - support-2268-row-lotus_occurrences-0
+    - support-2268-row-lotus_occurrences-1
+    - support-2268-row-lotus_occurrences-2
+    - support-2268-row-lotus_occurrences-3
+    - support-2268-row-lotus_occurrences-4
+    - support-2268-row-lotus_occurrences-5
+    - support-2268-row-lotus_occurrences-6
+    - support-2268-row-lotus_occurrences-7
+    - support-2268-row-lotus_occurrences-8
+    - support-2268-row-lotus_occurrences-9
+    - support-2268-row-lotus_occurrences-10
+    - support-2268-row-lotus_occurrences-11
+    - support-2268-row-lotus_occurrences-12
+    - support-2268-row-lotus_occurrences-13
+    - support-2268-row-lotus_occurrences-14
+    - support-2268-row-lotus_occurrences-15
+    - support-2268-row-lotus_occurrences-16
+    - support-2268-row-lotus_occurrences-17
+    - support-2268-row-lotus_occurrences-18
+    - support-2268-row-lotus_occurrences-19
+    - support-2268-row-lotus_occurrences-20
+    - support-2268-row-lotus_occurrences-21
+    - support-2268-row-chebi_origins-0
+    - support-2268-row-chebi_origins-1
+    - support-2268-row-chebi_origins-2
+    - support-2268-row-pubchem_bioassay-0
+    - support-2268-row-pubchem_bioassay-1
+    - support-2268-row-pubchem_bioassay-2
+    - support-2268-row-pubchem_bioassay-3
+    - support-2268-row-pubchem_bioassay-4
+    - support-2268-row-pubchem_bioassay-5
+    - support-2268-row-pubchem_bioassay-6
+    - support-2268-row-pubchem_bioassay-7
+    - support-2268-row-pubchem_bioassay-8
+    - support-2268-row-pubchem_bioassay-9
+    - support-2268-row-pubchem_bioassay-10
+    - support-2268-row-pubchem_bioassay-11
+    - support-2268-row-pubchem_bioassay-12
+    - support-2268-row-pubchem_bioassay-13
+    - support-2268-row-pubchem_bioassay-14
+    - support-2268-row-pubchem_bioassay-15
+    - support-2268-row-pubchem_bioassay-16
+    - support-2268-row-pubchem_bioassay-17
+    - support-2268-row-pubchem_bioassay-18
+    - support-2268-row-pubchem_bioassay-19
+    - support-2268-row-pubchem_bioassay-20
+    - support-2268-row-pubchem_bioassay-21
+    - support-2268-row-pubchem_bioassay-22
+    - support-2268-row-pubchem_bioassay-23
+    - support-2268-row-pubchem_bioassay-24
+    - support-2268-row-pubchem_bioassay-25
+    - support-2268-row-pubchem_bioassay-26
+    - support-2268-row-pubchem_bioassay-27
+    - support-2268-row-pubchem_bioassay-28
+    - support-2268-row-pubchem_bioassay-29
+    - support-2268-row-pubchem_bioassay-30
+    - support-2268-row-pubchem_bioassay-31
+    - support-2268-row-pubchem_bioassay-32
+    - support-2268-row-pubchem_bioassay-33
+    - support-2268-row-pubchem_bioassay-34
+    - support-2268-row-pubchem_bioassay-35
+    - support-2268-row-pubchem_bioassay-36
+    - support-2268-row-pubchem_bioassay-37
+    - support-2268-row-pubchem_bioassay-38
+    - support-2268-row-pubchem_bioassay-39
+    - support-2268-row-pubchem_bioassay-40
+    - support-2268-row-pubchem_bioassay-41
+    - support-2268-row-pubchem_bioassay-42
+    - support-2268-row-pubchem_bioassay-43
+    - support-2268-row-pubchem_bioassay-44
+    - support-2268-row-pubchem_bioassay-45
+    - support-2268-row-pubchem_bioassay-46
+    - support-2268-row-pubchem_bioassay-47
+    - support-2268-row-pubchem_bioassay-48
+    - support-2268-row-pubchem_bioassay-49
+    - support-2268-row-pubchem_bioassay-50
+    - support-2268-row-pubchem_bioassay-51
+    - support-2268-row-pubchem_bioassay-52
+    - support-2268-row-pubchem_bioassay-53
+    - support-2268-row-pubchem_bioassay-54
+    - support-2268-row-pubchem_bioassay-55
+    - support-2268-row-pubchem_bioassay-56
+    - support-2268-row-pubchem_bioassay-57
+    - support-2268-row-pubchem_bioassay-58
+    - support-2268-row-pubchem_bioassay-59
+    - support-2268-row-pubchem_bioassay-60
+    - support-2268-row-pubchem_bioassay-61
+    - support-2268-row-pubchem_bioassay-62
+    - support-2268-row-pubchem_bioassay-63
+    - support-2268-row-pubchem_bioassay-64
+    - support-2268-row-pubchem_bioassay-65
+    - support-2268-row-pubchem_bioassay-66
+    - support-2268-row-pubchem_bioassay-67
+    - support-2268-row-pubchem_bioassay-68
+    - support-2268-row-pubchem_bioassay-69
+    - support-2268-row-pubchem_bioassay-70
+    - support-2268-companions
+    - support-2268-companion-0
+    - support-2268-companion-1
+    - support-2268-companion-2
+- assessment_id: support-2268-A5
+  area: scope
+  topic: Occurrence and assay boundaries
+  outcome: concern
+  summary: 'The saved source contains 71 assay placements across 61 distinct AIDs:
+    47 Active, 16 Inconclusive and eight Inactive. The owner writes 25 measurement-prioritized
+    observations and explicitly notes 46 omitted results. Repeated AIDs preserve target-populated
+    and blank-target placements; potencies do not override source calls, and EPAC
+    agonist/antagonist or cellular NSD2 screens do not by themselves prove direct
+    binding or enzymatic mechanism. Written observations 10 and 11 are delayed-death
+    malarial-plastid screens, AIDs 504832/504834, with OTHER/Potency values 0.5221/0.5858
+    uM and no retained molecular target. Their ENZYME_INHIBITOR classes lack support
+    at that assay level; the finding preserves both Active calls and all values. Separate
+    NSD2-labeled observations, cytotoxic and Leishmania screens, and sibling ANTIVIRAL
+    annotation retain their own qualified summary routes.'
+  target_ids:
+  - CHEBI:2766
+  evidence_ids:
+  - support-2268-owner
+  - support-2268-capture
+  - support-2268-source-plan
+  - support-2268-query-lotus_occurrences
+  - support-2268-query-chebi_origins
+  - support-2268-query-pubchem_bioassay
+  - support-2268-query-bindingdb_targets
+  - support-2268-query-antibioticmech_inchikeys
+  - support-2268-query-cyanometdb_occurrences
+  - support-2268-row-lotus_occurrences-0
+  - support-2268-row-lotus_occurrences-1
+  - support-2268-row-lotus_occurrences-2
+  - support-2268-row-lotus_occurrences-3
+  - support-2268-row-lotus_occurrences-4
+  - support-2268-row-lotus_occurrences-5
+  - support-2268-row-lotus_occurrences-6
+  - support-2268-row-lotus_occurrences-7
+  - support-2268-row-lotus_occurrences-8
+  - support-2268-row-lotus_occurrences-9
+  - support-2268-row-lotus_occurrences-10
+  - support-2268-row-lotus_occurrences-11
+  - support-2268-row-lotus_occurrences-12
+  - support-2268-row-lotus_occurrences-13
+  - support-2268-row-lotus_occurrences-14
+  - support-2268-row-lotus_occurrences-15
+  - support-2268-row-lotus_occurrences-16
+  - support-2268-row-lotus_occurrences-17
+  - support-2268-row-lotus_occurrences-18
+  - support-2268-row-lotus_occurrences-19
+  - support-2268-row-lotus_occurrences-20
+  - support-2268-row-lotus_occurrences-21
+  - support-2268-row-chebi_origins-0
+  - support-2268-row-chebi_origins-1
+  - support-2268-row-chebi_origins-2
+  - support-2268-row-pubchem_bioassay-0
+  - support-2268-row-pubchem_bioassay-1
+  - support-2268-row-pubchem_bioassay-2
+  - support-2268-row-pubchem_bioassay-3
+  - support-2268-row-pubchem_bioassay-4
+  - support-2268-row-pubchem_bioassay-5
+  - support-2268-row-pubchem_bioassay-6
+  - support-2268-row-pubchem_bioassay-7
+  - support-2268-row-pubchem_bioassay-8
+  - support-2268-row-pubchem_bioassay-9
+  - support-2268-row-pubchem_bioassay-10
+  - support-2268-row-pubchem_bioassay-11
+  - support-2268-row-pubchem_bioassay-12
+  - support-2268-row-pubchem_bioassay-13
+  - support-2268-row-pubchem_bioassay-14
+  - support-2268-row-pubchem_bioassay-15
+  - support-2268-row-pubchem_bioassay-16
+  - support-2268-row-pubchem_bioassay-17
+  - support-2268-row-pubchem_bioassay-18
+  - support-2268-row-pubchem_bioassay-19
+  - support-2268-row-pubchem_bioassay-20
+  - support-2268-row-pubchem_bioassay-21
+  - support-2268-row-pubchem_bioassay-22
+  - support-2268-row-pubchem_bioassay-23
+  - support-2268-row-pubchem_bioassay-24
+  - support-2268-row-pubchem_bioassay-25
+  - support-2268-row-pubchem_bioassay-26
+  - support-2268-row-pubchem_bioassay-27
+  - support-2268-row-pubchem_bioassay-28
+  - support-2268-row-pubchem_bioassay-29
+  - support-2268-row-pubchem_bioassay-30
+  - support-2268-row-pubchem_bioassay-31
+  - support-2268-row-pubchem_bioassay-32
+  - support-2268-row-pubchem_bioassay-33
+  - support-2268-row-pubchem_bioassay-34
+  - support-2268-row-pubchem_bioassay-35
+  - support-2268-row-pubchem_bioassay-36
+  - support-2268-row-pubchem_bioassay-37
+  - support-2268-row-pubchem_bioassay-38
+  - support-2268-row-pubchem_bioassay-39
+  - support-2268-row-pubchem_bioassay-40
+  - support-2268-row-pubchem_bioassay-41
+  - support-2268-row-pubchem_bioassay-42
+  - support-2268-row-pubchem_bioassay-43
+  - support-2268-row-pubchem_bioassay-44
+  - support-2268-row-pubchem_bioassay-45
+  - support-2268-row-pubchem_bioassay-46
+  - support-2268-row-pubchem_bioassay-47
+  - support-2268-row-pubchem_bioassay-48
+  - support-2268-row-pubchem_bioassay-49
+  - support-2268-row-pubchem_bioassay-50
+  - support-2268-row-pubchem_bioassay-51
+  - support-2268-row-pubchem_bioassay-52
+  - support-2268-row-pubchem_bioassay-53
+  - support-2268-row-pubchem_bioassay-54
+  - support-2268-row-pubchem_bioassay-55
+  - support-2268-row-pubchem_bioassay-56
+  - support-2268-row-pubchem_bioassay-57
+  - support-2268-row-pubchem_bioassay-58
+  - support-2268-row-pubchem_bioassay-59
+  - support-2268-row-pubchem_bioassay-60
+  - support-2268-row-pubchem_bioassay-61
+  - support-2268-row-pubchem_bioassay-62
+  - support-2268-row-pubchem_bioassay-63
+  - support-2268-row-pubchem_bioassay-64
+  - support-2268-row-pubchem_bioassay-65
+  - support-2268-row-pubchem_bioassay-66
+  - support-2268-row-pubchem_bioassay-67
+  - support-2268-row-pubchem_bioassay-68
+  - support-2268-row-pubchem_bioassay-69
+  - support-2268-row-pubchem_bioassay-70
+  - support-2268-row-antibioticmech_inchikeys-0
+  - support-2268-mechanism-scope
+  - support-2268-companions
+  - support-2268-taxonomy-routes
+  - support-2268-cache-114231
+  - support-2268-cache-146308
+  - support-2268-cache-1979465
+  - support-2268-cache-2231603
+  - support-2268-cache-29910
+  - support-2268-cache-318712
+  - support-2268-cache-335854
+  - support-2268-cache-40559
+  - support-2268-cache-5062
+  - support-2268-taxon-merge-0
+  - support-2268-companion-0
+  - support-2268-companion-1
+  - support-2268-companion-2
+  - support-2268-activity-classifier
+  - support-2268-activity-schema
+  dimensions:
+  - name: occurrence_scope
+    value: 'The saved source contains 71 assay placements across 61 distinct AIDs:
+      47 Active, 16 Inconclusive and eight Inactive. The owner writes 25 measurement-prioritized
+      observations and explicitly notes 46 omitted results. Repeated AIDs preserve
+      target-populated and blank-target placements; potencies do not override source
+      calls, and EPAC agonist/antagonist or cellular NSD2 screens do not by themselves
+      prove direct binding or enzymatic mechanism. Written observations 10 and 11
+      are delayed-death malarial-plastid screens, AIDs 504832/504834, with OTHER/Potency
+      values 0.5221/0.5858 uM and no retained molecular target. Their ENZYME_INHIBITOR
+      classes lack support at that assay level; the finding preserves both Active
+      calls and all values. Separate NSD2-labeled observations, cytotoxic and Leishmania
+      screens, and sibling ANTIVIRAL annotation retain their own qualified summary
+      routes.'
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2268-owner
+    - support-2268-capture
+    - support-2268-source-plan
+    - support-2268-query-lotus_occurrences
+    - support-2268-query-chebi_origins
+    - support-2268-query-pubchem_bioassay
+    - support-2268-query-bindingdb_targets
+    - support-2268-query-antibioticmech_inchikeys
+    - support-2268-query-cyanometdb_occurrences
+    - support-2268-row-lotus_occurrences-0
+    - support-2268-row-lotus_occurrences-1
+    - support-2268-row-lotus_occurrences-2
+    - support-2268-row-lotus_occurrences-3
+    - support-2268-row-lotus_occurrences-4
+    - support-2268-row-lotus_occurrences-5
+    - support-2268-row-lotus_occurrences-6
+    - support-2268-row-lotus_occurrences-7
+    - support-2268-row-lotus_occurrences-8
+    - support-2268-row-lotus_occurrences-9
+    - support-2268-row-lotus_occurrences-10
+    - support-2268-row-lotus_occurrences-11
+    - support-2268-row-lotus_occurrences-12
+    - support-2268-row-lotus_occurrences-13
+    - support-2268-row-lotus_occurrences-14
+    - support-2268-row-lotus_occurrences-15
+    - support-2268-row-lotus_occurrences-16
+    - support-2268-row-lotus_occurrences-17
+    - support-2268-row-lotus_occurrences-18
+    - support-2268-row-lotus_occurrences-19
+    - support-2268-row-lotus_occurrences-20
+    - support-2268-row-lotus_occurrences-21
+    - support-2268-row-chebi_origins-0
+    - support-2268-row-chebi_origins-1
+    - support-2268-row-chebi_origins-2
+    - support-2268-row-pubchem_bioassay-0
+    - support-2268-row-pubchem_bioassay-1
+    - support-2268-row-pubchem_bioassay-2
+    - support-2268-row-pubchem_bioassay-3
+    - support-2268-row-pubchem_bioassay-4
+    - support-2268-row-pubchem_bioassay-5
+    - support-2268-row-pubchem_bioassay-6
+    - support-2268-row-pubchem_bioassay-7
+    - support-2268-row-pubchem_bioassay-8
+    - support-2268-row-pubchem_bioassay-9
+    - support-2268-row-pubchem_bioassay-10
+    - support-2268-row-pubchem_bioassay-11
+    - support-2268-row-pubchem_bioassay-12
+    - support-2268-row-pubchem_bioassay-13
+    - support-2268-row-pubchem_bioassay-14
+    - support-2268-row-pubchem_bioassay-15
+    - support-2268-row-pubchem_bioassay-16
+    - support-2268-row-pubchem_bioassay-17
+    - support-2268-row-pubchem_bioassay-18
+    - support-2268-row-pubchem_bioassay-19
+    - support-2268-row-pubchem_bioassay-20
+    - support-2268-row-pubchem_bioassay-21
+    - support-2268-row-pubchem_bioassay-22
+    - support-2268-row-pubchem_bioassay-23
+    - support-2268-row-pubchem_bioassay-24
+    - support-2268-row-pubchem_bioassay-25
+    - support-2268-row-pubchem_bioassay-26
+    - support-2268-row-pubchem_bioassay-27
+    - support-2268-row-pubchem_bioassay-28
+    - support-2268-row-pubchem_bioassay-29
+    - support-2268-row-pubchem_bioassay-30
+    - support-2268-row-pubchem_bioassay-31
+    - support-2268-row-pubchem_bioassay-32
+    - support-2268-row-pubchem_bioassay-33
+    - support-2268-row-pubchem_bioassay-34
+    - support-2268-row-pubchem_bioassay-35
+    - support-2268-row-pubchem_bioassay-36
+    - support-2268-row-pubchem_bioassay-37
+    - support-2268-row-pubchem_bioassay-38
+    - support-2268-row-pubchem_bioassay-39
+    - support-2268-row-pubchem_bioassay-40
+    - support-2268-row-pubchem_bioassay-41
+    - support-2268-row-pubchem_bioassay-42
+    - support-2268-row-pubchem_bioassay-43
+    - support-2268-row-pubchem_bioassay-44
+    - support-2268-row-pubchem_bioassay-45
+    - support-2268-row-pubchem_bioassay-46
+    - support-2268-row-pubchem_bioassay-47
+    - support-2268-row-pubchem_bioassay-48
+    - support-2268-row-pubchem_bioassay-49
+    - support-2268-row-pubchem_bioassay-50
+    - support-2268-row-pubchem_bioassay-51
+    - support-2268-row-pubchem_bioassay-52
+    - support-2268-row-pubchem_bioassay-53
+    - support-2268-row-pubchem_bioassay-54
+    - support-2268-row-pubchem_bioassay-55
+    - support-2268-row-pubchem_bioassay-56
+    - support-2268-row-pubchem_bioassay-57
+    - support-2268-row-pubchem_bioassay-58
+    - support-2268-row-pubchem_bioassay-59
+    - support-2268-row-pubchem_bioassay-60
+    - support-2268-row-pubchem_bioassay-61
+    - support-2268-row-pubchem_bioassay-62
+    - support-2268-row-pubchem_bioassay-63
+    - support-2268-row-pubchem_bioassay-64
+    - support-2268-row-pubchem_bioassay-65
+    - support-2268-row-pubchem_bioassay-66
+    - support-2268-row-pubchem_bioassay-67
+    - support-2268-row-pubchem_bioassay-68
+    - support-2268-row-pubchem_bioassay-69
+    - support-2268-row-pubchem_bioassay-70
+    - support-2268-row-antibioticmech_inchikeys-0
+    - support-2268-mechanism-scope
+    - support-2268-companions
+    - support-2268-taxonomy-routes
+    - support-2268-cache-114231
+    - support-2268-cache-146308
+    - support-2268-cache-1979465
+    - support-2268-cache-2231603
+    - support-2268-cache-29910
+    - support-2268-cache-318712
+    - support-2268-cache-335854
+    - support-2268-cache-40559
+    - support-2268-cache-5062
+    - support-2268-taxon-merge-0
+    - support-2268-companion-0
+    - support-2268-companion-1
+    - support-2268-companion-2
+    - support-2268-activity-classifier
+    - support-2268-activity-schema
+  - name: assay_scope
+    value: 'The saved source contains 71 assay placements across 61 distinct AIDs:
+      47 Active, 16 Inconclusive and eight Inactive. The owner writes 25 measurement-prioritized
+      observations and explicitly notes 46 omitted results. Repeated AIDs preserve
+      target-populated and blank-target placements; potencies do not override source
+      calls, and EPAC agonist/antagonist or cellular NSD2 screens do not by themselves
+      prove direct binding or enzymatic mechanism. Written observations 10 and 11
+      are delayed-death malarial-plastid screens, AIDs 504832/504834, with OTHER/Potency
+      values 0.5221/0.5858 uM and no retained molecular target. Their ENZYME_INHIBITOR
+      classes lack support at that assay level; the finding preserves both Active
+      calls and all values. Separate NSD2-labeled observations, cytotoxic and Leishmania
+      screens, and sibling ANTIVIRAL annotation retain their own qualified summary
+      routes.'
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2268-owner
+    - support-2268-capture
+    - support-2268-source-plan
+    - support-2268-query-lotus_occurrences
+    - support-2268-query-chebi_origins
+    - support-2268-query-pubchem_bioassay
+    - support-2268-query-bindingdb_targets
+    - support-2268-query-antibioticmech_inchikeys
+    - support-2268-query-cyanometdb_occurrences
+    - support-2268-row-lotus_occurrences-0
+    - support-2268-row-lotus_occurrences-1
+    - support-2268-row-lotus_occurrences-2
+    - support-2268-row-lotus_occurrences-3
+    - support-2268-row-lotus_occurrences-4
+    - support-2268-row-lotus_occurrences-5
+    - support-2268-row-lotus_occurrences-6
+    - support-2268-row-lotus_occurrences-7
+    - support-2268-row-lotus_occurrences-8
+    - support-2268-row-lotus_occurrences-9
+    - support-2268-row-lotus_occurrences-10
+    - support-2268-row-lotus_occurrences-11
+    - support-2268-row-lotus_occurrences-12
+    - support-2268-row-lotus_occurrences-13
+    - support-2268-row-lotus_occurrences-14
+    - support-2268-row-lotus_occurrences-15
+    - support-2268-row-lotus_occurrences-16
+    - support-2268-row-lotus_occurrences-17
+    - support-2268-row-lotus_occurrences-18
+    - support-2268-row-lotus_occurrences-19
+    - support-2268-row-lotus_occurrences-20
+    - support-2268-row-lotus_occurrences-21
+    - support-2268-row-chebi_origins-0
+    - support-2268-row-chebi_origins-1
+    - support-2268-row-chebi_origins-2
+    - support-2268-row-pubchem_bioassay-0
+    - support-2268-row-pubchem_bioassay-1
+    - support-2268-row-pubchem_bioassay-2
+    - support-2268-row-pubchem_bioassay-3
+    - support-2268-row-pubchem_bioassay-4
+    - support-2268-row-pubchem_bioassay-5
+    - support-2268-row-pubchem_bioassay-6
+    - support-2268-row-pubchem_bioassay-7
+    - support-2268-row-pubchem_bioassay-8
+    - support-2268-row-pubchem_bioassay-9
+    - support-2268-row-pubchem_bioassay-10
+    - support-2268-row-pubchem_bioassay-11
+    - support-2268-row-pubchem_bioassay-12
+    - support-2268-row-pubchem_bioassay-13
+    - support-2268-row-pubchem_bioassay-14
+    - support-2268-row-pubchem_bioassay-15
+    - support-2268-row-pubchem_bioassay-16
+    - support-2268-row-pubchem_bioassay-17
+    - support-2268-row-pubchem_bioassay-18
+    - support-2268-row-pubchem_bioassay-19
+    - support-2268-row-pubchem_bioassay-20
+    - support-2268-row-pubchem_bioassay-21
+    - support-2268-row-pubchem_bioassay-22
+    - support-2268-row-pubchem_bioassay-23
+    - support-2268-row-pubchem_bioassay-24
+    - support-2268-row-pubchem_bioassay-25
+    - support-2268-row-pubchem_bioassay-26
+    - support-2268-row-pubchem_bioassay-27
+    - support-2268-row-pubchem_bioassay-28
+    - support-2268-row-pubchem_bioassay-29
+    - support-2268-row-pubchem_bioassay-30
+    - support-2268-row-pubchem_bioassay-31
+    - support-2268-row-pubchem_bioassay-32
+    - support-2268-row-pubchem_bioassay-33
+    - support-2268-row-pubchem_bioassay-34
+    - support-2268-row-pubchem_bioassay-35
+    - support-2268-row-pubchem_bioassay-36
+    - support-2268-row-pubchem_bioassay-37
+    - support-2268-row-pubchem_bioassay-38
+    - support-2268-row-pubchem_bioassay-39
+    - support-2268-row-pubchem_bioassay-40
+    - support-2268-row-pubchem_bioassay-41
+    - support-2268-row-pubchem_bioassay-42
+    - support-2268-row-pubchem_bioassay-43
+    - support-2268-row-pubchem_bioassay-44
+    - support-2268-row-pubchem_bioassay-45
+    - support-2268-row-pubchem_bioassay-46
+    - support-2268-row-pubchem_bioassay-47
+    - support-2268-row-pubchem_bioassay-48
+    - support-2268-row-pubchem_bioassay-49
+    - support-2268-row-pubchem_bioassay-50
+    - support-2268-row-pubchem_bioassay-51
+    - support-2268-row-pubchem_bioassay-52
+    - support-2268-row-pubchem_bioassay-53
+    - support-2268-row-pubchem_bioassay-54
+    - support-2268-row-pubchem_bioassay-55
+    - support-2268-row-pubchem_bioassay-56
+    - support-2268-row-pubchem_bioassay-57
+    - support-2268-row-pubchem_bioassay-58
+    - support-2268-row-pubchem_bioassay-59
+    - support-2268-row-pubchem_bioassay-60
+    - support-2268-row-pubchem_bioassay-61
+    - support-2268-row-pubchem_bioassay-62
+    - support-2268-row-pubchem_bioassay-63
+    - support-2268-row-pubchem_bioassay-64
+    - support-2268-row-pubchem_bioassay-65
+    - support-2268-row-pubchem_bioassay-66
+    - support-2268-row-pubchem_bioassay-67
+    - support-2268-row-pubchem_bioassay-68
+    - support-2268-row-pubchem_bioassay-69
+    - support-2268-row-pubchem_bioassay-70
+    - support-2268-row-antibioticmech_inchikeys-0
+    - support-2268-mechanism-scope
+    - support-2268-companions
+    - support-2268-taxonomy-routes
+    - support-2268-cache-114231
+    - support-2268-cache-146308
+    - support-2268-cache-1979465
+    - support-2268-cache-2231603
+    - support-2268-cache-29910
+    - support-2268-cache-318712
+    - support-2268-cache-335854
+    - support-2268-cache-40559
+    - support-2268-cache-5062
+    - support-2268-taxon-merge-0
+    - support-2268-companion-0
+    - support-2268-companion-1
+    - support-2268-companion-2
+    - support-2268-activity-classifier
+    - support-2268-activity-schema
+- assessment_id: support-2268-A6
+  area: other
+  topic: Computed classification and complete saved topology
+  outcome: supported
+  summary: NPClassifier retains Terpenoids / Diterpenoids / Aphidicolane diterpenoids
+    and Tetracyclic diterpenoids, is_glycoside:false. The complete four-carbon-ring
+    framework has two hydroxymethyl groups (C9–O10 and C19–O20), a secondary hydroxyl
+    (C15–O16) and a tertiary hydroxyl (C7–O8), using SMILES indices. There is no carbonyl,
+    C–O–C bridge, ring oxygen or sugar residue. These indexed motifs support the broad
+    polyhydroxylated tetracyclic description without assigning the definition's biochemical
+    positions anew.
+  target_ids:
+  - CHEBI:2766
+  evidence_ids:
+  - support-2268-capture
+  - support-2268-topology
+  - support-2268-seeder
+  - support-2268-structure-schema
+  - support-2268-query-npclassifier
+  - support-2268-query-mibig_compounds
+  - support-2268-row-npclassifier-0
+  - support-2268-row-mibig_compounds-0
+  dimensions:
+  - name: computed_classification
+    value: NPClassifier retains Terpenoids / Diterpenoids / Aphidicolane diterpenoids
+      and Tetracyclic diterpenoids, is_glycoside:false. The complete four-carbon-ring
+      framework has two hydroxymethyl groups (C9–O10 and C19–O20), a secondary hydroxyl
+      (C15–O16) and a tertiary hydroxyl (C7–O8), using SMILES indices. There is no
+      carbonyl, C–O–C bridge, ring oxygen or sugar residue. These indexed motifs support
+      the broad polyhydroxylated tetracyclic description without assigning the definition's
+      biochemical positions anew.
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2268-capture
+    - support-2268-topology
+    - support-2268-seeder
+    - support-2268-structure-schema
+    - support-2268-query-npclassifier
+    - support-2268-query-mibig_compounds
+    - support-2268-row-npclassifier-0
+    - support-2268-row-mibig_compounds-0
+- assessment_id: support-2268-A7
+  area: completeness
+  topic: Review completion and unavailable verification
+  outcome: unknown
+  summary: This is a partial scientific review of the exact admitted owner and retained
+    source scope. Five local commands and original saved chemistry were accepted;
+    FullQC and complete OAK were unavailable. No selected maintained reader is applicable
+    because all four mechanism roots are absent; companion graphs do not change that
+    applicability. No live identifier/taxonomy/protein response or independent natural
+    identity was verified, and this review does not set native REVIEWED status.
+  target_ids:
+  - CHEBI:2766
+  evidence_ids:
+  - support-2268-intake
+  - support-2268-plan-acceptance
+  - support-2268-intake-acceptance
+  - support-2268-diagnostic-acceptance
+  - support-2268-native-gates
+  - support-2268-chemistry-execution
+  - support-2268-review-profile
+  - support-2268-source-notes
+  - support-2268-mechanism-scope
+  dimensions:
+  - name: review_completion
+    value: This is a partial scientific review of the exact admitted owner and retained
+      source scope. Five local commands and original saved chemistry were accepted;
+      FullQC and complete OAK were unavailable. No selected maintained reader is applicable
+      because all four mechanism roots are absent; companion graphs do not change
+      that applicability. No live identifier/taxonomy/protein response or independent
+      natural identity was verified, and this review does not set native REVIEWED
+      status.
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2268-intake
+    - support-2268-plan-acceptance
+    - support-2268-intake-acceptance
+    - support-2268-diagnostic-acceptance
+    - support-2268-native-gates
+    - support-2268-chemistry-execution
+    - support-2268-review-profile
+    - support-2268-source-notes
+    - support-2268-mechanism-scope
+findings:
+- finding_id: support-2268-delayed-death-enzyme-class
+  issue_key: aphidicolin-delayed-death-plastid-assays-enzyme-inhibitor-overstatement
+  category: scope
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Two malarial delayed-death screens lack retained support for ENZYME_INHIBITOR
+    typing
+  description: bioactivities[10] and [11] cite AIDs 504832 and 504834, delayed-death
+    malarial-parasite plastid screens at 48 and 96 hours. Exact retained rows 4547/4548
+    report Active, Potency 0.5221/0.5858 uM, with blank target and reference. The
+    generic inhibitors-of title fallback supplies ENZYME_INHIBITOR, although these
+    phenotype-level rows do not identify an enzyme or an enzyme-inhibition endpoint.
+    The confirmed gap is the observation-level class inference, not a biological contradiction,
+    invalid Active call or assertion of compound inactivity. Coarse schema classes
+    require support but have no separate finer ENZYME_INHIBITOR definition. Four written
+    NSD2 placements across two AIDs remain separate enzyme-named, cellular-screen
+    evidence; this finding does not automatically remove the compound summary or claim
+    direct biochemical inhibition from those screens.
+  target_ids:
+  - CHEBI:2766
+  field_paths:
+  - bioactivities[10].activity_class
+  - bioactivities[11].activity_class
+  evidence_ids:
+  - support-2268-capture
+  - support-2268-activity-classifier
+  - support-2268-activity-schema
+  - support-2268-review-profile
+  - support-2268-row-pubchem_bioassay-54
+  - support-2268-row-pubchem_bioassay-55
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained classify_activity, observation-class insertion and summary derivation
+      owner
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/terpenoids/aphidicolin.yaml
+    role: Generated affected observations; regenerate after maintained correction
+  ownership_note: Repair the maintained title-to-class support boundary; generated-YAML-only
+    edits and reserved decisions.tsv do not address the maintained cause.
+  normalization_reason: Major because two generated scientific class assertions overstate
+    their retained assay evidence while mechanical gates pass; scope is limited to
+    these optional observation classes.
+  disposition_reason: Exact saved source rows, current written observations and maintained
+    classification logic establish the support gap without external retrieval.
+actions:
+- action_id: support-2268-repair-delayed-death-classification
+  description: Narrow maintained classify_activity so the exact delayed-death malarial-plastid
+    titles do not acquire ENZYME_INHIBITOR solely from generic inhibition wording.
+    Omit only the unsupported optional classes unless inspected evidence supports
+    a replacement. Preserve AIDs 504832/504834, both Active calls, incubation descriptions,
+    OTHER/Potency 0.5221/0.5858 uM and blank targets/references. Keep the other 23
+    written observations and 71-row retained inventory, including mixed outcomes,
+    repeated-AID target variants and independent NSD2 summary support with cellular-screen
+    limitations. Recompute summaries from appropriately supported written evidence;
+    do not invent a molecular target or transfer companion pharmacology.
+  finding_ids:
+  - support-2268-delayed-death-enzyme-class
+  target_ids:
+  - CHEBI:2766
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained classify_activity, observation-class insertion and summary derivation
+      owner
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/terpenoids/aphidicolin.yaml
+    role: Generated affected observations; regenerate after maintained correction
+  ownership_note: Proposed maintained correction only; no source mutation, regeneration
+    or external request performed.
+  acceptance_checks:
+  - The two exact delayed-death observations retain all source calls and quantitative
+    fields without unsupported ENZYME_INHIBITOR labels.
+  - Regression coverage distinguishes these phenotype-level titles from supported
+    enzyme-named assays while preserving all other written observations and repeated
+    target variants.
+  - Summary derivation uses supported written evidence, retains separate NSD2 and
+    sibling scopes, and introduces no direct-binding or biochemical inhibition claim.
+  - After authorized implementation, regenerate through the maintained seeder and
+    run required strict/reproduction/corpus/review checks.
+  generator: scripts/seed_from_sources.py
+limitations:
+- FullQC and complete OAK were unavailable; five local commands do not establish scientific
+  completeness.
+- No external retrieval or live identifier, taxonomy, protein or publication query
+  was performed. These assessments use original saved owner-form computations; no
+  additional molecular parses occurred during fragment authoring.
+- The original diagnostic stream has zero stderr. Stored representation agreement
+  does not establish natural identity, primary evidence or complete natural stereochemistry.
+- Retained source grades, cached taxonomy, citations and versioned predictions preserve
+  their own scopes; publication independence was not established.
+- No scientific source record or curation history was edited. Canonical persistence
+  and campaign operations remain ROOT-owned.
+- The finding is limited to two optional activity classes. Source calls, potencies,
+  other assay scopes and separate summary evidence are preserved.
+- The whole selected owner was read, but scientific completion is partial because
+  full QC, complete ontology authority coverage and external source verification were
+  unavailable. No native status or history was changed.
+- The branch uses cached base ce6a5498df5be51116bd5e0c119023ee62bb5464. Fresh origin/main
+  verification and publication are deferred because the user prohibits all external
+  requests.
+notes:
+- Native's bounded saved-review continuity search f33d76/126f74 used rg -uu in W review.yaml/completed-review.yaml
+  and R/reviews/structured, including ignored files. Exact target/key recovery8d6e91
+  found only other-owner companion/context or deoxy-name matches; no same-owner prior
+  issue_key was identified in those scopes. This is attributed bounded continuity,
+  not global absence.
+- Selected mechanism scope is complete as admitted; no companion graph or assay is
+  transferred to this owner.
+- Saved review coverage is distinct from the native SEEDED/REVIEWED curation state.
+  Proposed actions are not performed edits.
+tags:
+- offline
+- record-review
+- batch-227
+```
