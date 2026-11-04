@@ -1,0 +1,1310 @@
+# Agroclavine I: wrong-congener locus and inapplicable occurrence citations
+
+- Review: 20261021T112012Z-agroclavine-i
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-21T11:09:31.557519Z
+- Finished UTC: 2026-10-21T11:20:12.247192Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The cis Agroclavine I structure is internally consistent and agrees across five current representations. Its BGC source cites experiments on ordinary agroclavine, and two P. sizovae occurrence triples cite the same fully inspected 1914 morphology paper. Two major findings have separate maintained repair routes. The original 1984 full structure and P. canescens evidence remain unavailable.
+
+## Scope And Provenance
+
+One complete generated owner and any referenced components, assessed claim by claim for exact identity, provenance, origin, producer and occurrence scope, biosynthesis, classification, optional content and audit history.
+
+Selection: Campaign record 47, batch 005, selected in path order from the fresh-main authoritative validated catalogue and the separately validated pending-PR targets. At selection, 94 of 3116 current records had campaign coverage and 3022 remained. The population search included ignored files. Exactly one target is assessed here.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 1c2402097718c138b081e00943de8f04de0541cd.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-a931453c98 | data/natural_products/alkaloids/agroclavine-i.yaml | generated | Agroclavine I |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Closed-schema target validation | passed | True | naturalproductmech:mibig-a931453c98 | The documented target strict validator completed; scientific support is assessed separately. |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-a931453c98 | All 3,116 current record files agree with PATHS.tsv and their pinned filing pathways. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-a931453c98 | All 3,116 current records passed the documented byte-reproduction gate against committed inventories and maintained curation inputs. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-a931453c98 | The exhaustive review queue produced 8,928 diagnostic rows across 12 queues; this deterministic output does not establish scientific review. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-a931453c98 | The configured identifier-label gate passed using the existing ontology caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions, 499 warning-only mismatches and 4,744 pairs skipped because their prefixes have no adapter. |
+| Full repository quality gate on the current main baseline | passed | True | naturalproductmech:mibig-a931453c98 | The full documented just qc recipe passed on the unchanged main baseline during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). All configured lint, governance, documentation, provenance, source-queue, schema, rendering, reproduction, filing-integrity and reporting stages completed successfully. |
+| Relative cis versus ordinary-trans congener distinction | passed | True | naturalproductmech:mibig-a931453c98 | The original 1991 structure comparison and 1984 abstract distinguish agroclavine-I from ordinary agroclavine. Racemic synthesis is not treated as an absolute-configuration determination. |
+| Original 1984 full structure and both assigned species occurrences | unavailable | True | naturalproductmech:mibig-a931453c98 | The primary abstract positively identifies P. kapuscinskii and cis-I, but the complete original structural analysis and the P. canescens scope remain inaccessible. No confirmed exclusion of P. canescens is made. |
+| Exact agroclavine-I producer/locus citation applicability | failed | True | naturalproductmech:mibig-a931453c98 | The full cited 2007 paper tests the ordinary agroclavine pathway, not the distinct cis-I congener. Current low grades accurately disclose a database assertion but do not repair its misassigned source support. |
+| Full original support for both P. sizovae DOI triples | failed | True | naturalproductmech:mibig-a931453c98 | Both DOI aliases resolve to the same fully read morphology article, which provides no exact chemical occurrence support. Original printed pages 211–215 were inspected. |
+| Independent exact chemical representations | passed | True | naturalproductmech:mibig-a931453c98 | Five parsed graphs agree; scientific source applicability is evaluated separately. |
+| Applicable expression dataset | not_applicable | False | naturalproductmech:mibig-a931453c98 | No native organism/strain match in the complete retained catalogue. |
+
+## Scientific And Domain Assessments
+
+### Relative identity, natural origin and absolute-assignment limits
+
+identity: supported. Targets: naturalproductmech:mibig-a931453c98.
+
+Agroclavine-I is a naturally reported cis C/D congener, distinguished from ordinary agroclavine in original synthetic work and explicitly assigned 5R,10S in the 2003 primary abstract. There is no basis to replace the cis owner with ordinary agroclavine or label it synthetic because a racemic synthesis exists. Direct original 1984 full structural and absolute-assignment evidence remains a required limitation; current exact chemical authorities are audited separately.
+
+### P. kapuscinskii positive abstract; P. canescens unresolved
+
+evidence: unknown. Targets: naturalproductmech:mibig-a931453c98.
+
+The 1984 primary abstract directly supports agroclavine-I in P. kapuscinskii UCM F-2156D. It cannot decide the separate P. canescens triple because the body is unavailable. Neither a species synonym nor a confirmed citation error is inferred from that abstract.
+
+### Two aliases of an inapplicable original publication
+
+evidence: concern. Targets: naturalproductmech:mibig-a931453c98.
+
+Both P. sizovae triples cite the same 1914 article. Full text and original pixels establish a morphological study without an agroclavine-I occurrence report. This is one citation-scope defect represented by two exact source rows, not two independent biological findings.
+
+### Ordinary-agroclavine evidence does not establish cis-I production
+
+evidence: concern. Targets: naturalproductmech:mibig-a931453c98.
+
+The 2007 native strain, cloned EAS region and cross-complementation experiments are genuine, but their chemically specified ordinary agroclavine/elymoclavine/lysergic-acid endpoints do not support the exact cis-I pair. No general biological incapacity is inferred. Correct the producer/locus applicability, rather than adding inappropriate experimental methods or merely substituting the SD58 strain label.
+
+### Claim scope and optional mechanistic content
+
+completeness: supported. Targets: naturalproductmech:mibig-a931453c98.
+
+The source-supported work needed is exact-congener provenance and occurrence correction. No optional pathway, enzyme, activity or unrelated P. citrinum occurrence addition is required. NPClassifier results remain computational classifications; the disputed BGC-derived class should be recomputed with the biological association if it is suppressed, without treating that as an independent classifier defect.
+
+### Exact cis chemical referent
+
+identity: supported. Targets: naturalproductmech:mibig-a931453c98.
+
+Five directly parsed graphs agree in full standardized and fixed-H form. Original absolute proof is separately bounded; ordinary agroclavine is not substituted.
+
+### Minted identity and source-specific xref
+
+grounding: supported. Targets: naturalproductmech:mibig-a931453c98.
+
+NPA012491 resolves exactly. Current ChEBI is two-star and the complete eligible inventory lacks an exact row, so the minted grounding is consistent.
+
+### Taxon identifiers versus occurrence applicability
+
+scope: supported. Targets: naturalproductmech:mibig-a931453c98.
+
+All four taxon concepts and three organism Wikidata crosswalks resolve; this is distinct from the scientific validity of each attached publication.
+
+### Classification and native history
+
+provenance: supported. Targets: naturalproductmech:mibig-a931453c98.
+
+Versioned source classifications and native seed history are retained. No status promotion follows from this review, and absent optional mechanism content is not counted as a defect.
+
+## Findings
+
+### S047-F-LOCUS: Separate cis agroclavine-I from the ordinary agroclavine locus evidence
+
+major / open / confirmed; issue key: mibig-bgc0001267-compound2-cis-agroclavine-source-conflation.
+
+MIBiG compound 2 supplies the correct cis-I structure and name but attaches C. fusiformis/EU006773.1 and a 2007 primary studying ordinary agroclavine. The original full paper does not establish this exact-congener production or locus pair. The current SOURCE_ASSERTION/CLUSTER_UNSTATED labels faithfully express the imported low grade, yet leave the misassigned biological assertion and citation in place. Preserve the valid cis natural-product owner and raw provenance while withholding this pair through an explicitly supported maintained mechanism.
+
+### S047-F-1914: Exclude both inapplicable 1914 P. sizovae occurrence triples
+
+major / open / confirmed; issue key: agroclavine-i-sizovae-1914-morphology-citation.
+
+The two DOI strings cite one Charles Thom morphology article, not agroclavine-I isolation or detection. This conclusion rests on the entire original article and all five printed pages, not its title or publication date. Preserve the raw assertions and exclude both exact triples from effective occurrences; no universal absence or replacement occurrence is asserted.
+
+## Recommended Actions And Acceptance Checks
+
+### S047-ACTION-LOCUS
+
+Implement a typed, consumed curation decision that withholds only the producer and locus association from BGC0001267:2 for this exact cis-I owner, retaining the raw row and source-concept provenance with a cited controversy. Pin complete raw-row SHA256 2ad7bef1102090f516d6c853cd5457c9fd2a7ec4c9d3fc9264e6491ff2b29cb6 and require exact source ID, version 3, key XJOOMMHNYOJWCZ-DZGCQCFKSA-N, taxon NCBITaxon:40602, EU006773.1, explicitly empty bounds/methods, DOI:10.1128/aem.01040-07 and COMPOUND_EVIDENCE basis. This needs a new tested typed consumer/table integrated into scripts/seed_from_sources.py; neither the current method WITHDRAW nor citation-only overlay can implement it. Do not add an inert row to a reserved/general table or hand-edit generated YAML.
+
+- A unique complete source-row SHA and exact precondition check must reject raw drift, duplicate/ambiguous matches and unsupported composition with structure, method, strain or citation overlays.
+- Regeneration keeps the cis-I owner identifier, exact structure, NPA xref, valid independent occurrences and original raw provenance. It suppresses only the disputed C. fusiformis producer and EU006773.1 locus association and recomputes dependent producer groups/BGC classes without leaving an orphan biological claim.
+- Retain a curator-attributed controversy citing the fully inspected 2007 paper and original cis/trans distinction, explaining the withheld pair without asserting biological incapacity.
+- The MIBiG-driven seed loop must preserve the compound even when its only current BGC biological assertion is withheld. Do not delete the raw row, substitute ordinary agroclavine, or silently migrate existing sources to another owner.
+- Implement focused consumer tests for drift, exact scope, source preservation and composition; inspect the target diff and run strict validation, seed reproduction and repository gates during later authorized remediation.
+
+### S047-ACTION-1914
+
+Add two curation/lotus_occurrence_exclusions.tsv decisions for XJOOMMHNYOJWCZ-DZGCQCFKSA-N and NCBITaxon:904685, using exact DOI/full-row SHA pairs: 10.1080/00275514.1914.12020966 =&gt; ed95d0c0a8d89ecc459d94b00e57cb60a9ad5eec0405d75ba5edf209f962427f; 10.2307/3753616 =&gt; 6d689e33e601a1f6bd8df1e00ac7bd089673d2c58e329a1185eadca46d2991d1. Supply curator, actual date, rationale and a stable original-article reference. The existing implemented loader already provides full-row drift guards and retained controversy. This excludes unsupported source triples without deleting raw evidence.
+
+- Both exact DOI aliases are suppressed; neither remaining 1984 triple is changed by this decision. Retain the unresolved P. canescens scope as a research gap rather than treating it as another confirmed exclusion.
+- Reject any exact-triple ambiguity or full-row hash drift. Retain two source-specific controversy records so the raw provenance and alias identity remain reviewable.
+- Preserve owner chemistry, identifier, independently supported occurrence and source records; regenerate and inspect the exact owner diff before later strict/seed/QC acceptance.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| S047-OWNER | data/natural_products/alkaloids/agroclavine-i.yaml; Complete YAML, all four occurrences and the sole producer/locus/source concept | supports | The exact cis agroclavine-I owner contains SOURCE_ASSERTION for Claviceps fusiformis and CLUSTER_UNSTATED for BGC0001267, both citing DOI:10.1128/aem.01040-07. Four LOTUS triples cite the 1984 study or two 1914 DOI aliases. No pathway, protein, activity or molecular-target assertions require supplementation. |
+| S047-RAW | data/raw/mibig_compounds.tsv; Exact BGC0001267:2 row and four exact LOTUS rows; independent complete-row equality check against parsed TSV inventories | supports | The MIBiG version 3 active, questionable-quality, unknown-completeness row has exact key XJOOMMHNYOJWCZ-DZGCQCFKSA-N, taxon NCBITaxon:40602, EU006773.1, empty bounds and methods, and COMPOUND_EVIDENCE citation DOI:10.1128/aem.01040-07. Full canonical source-row SHA256 is 2ad7bef1102090f516d6c853cd5457c9fd2a7ec4c9d3fc9264e6491ff2b29cb6. These fields reproduce the owner faithfully; the biological applicability must be adjudicated separately. |
+| S047-LOTUS-ROWS | data/raw/lotus_occurrences.tsv; Four exact full-key triples; source row hashes recorded in science-source-row-pins.json | supports | Two 1984 rows name P. kapuscinskii and P. canescens. Two rows name P. sizovae with DOI:10.1080/00275514.1914.12020966 and DOI:10.2307/3753616. Each matches exactly one current parsed raw row. Citation aliasing is not independent publication evidence. |
+| S047-2007-BODY | https://pmc.ncbi.nlm.nih.gov/articles/PMC2168186/?report=xml; Full original abstract, Introduction, all Methods/Results/Discussion, Table 1, figure captions and references; DOI:10.1128/AEM.01040-07 | supports | The paper studies ordinary agroclavine and elymoclavine in C. fusiformis SD58 (=ATCC 26245), compared with C. purpurea P1. Its cosmid Cf26E11 yielded a 35.4 kb contig containing a 19.6 kb EAS region with nine homologues. It uses agroclavine standards and reports no cis agroclavine-I standard, formation experiment or exact-congener locus assignment. This is a bounded whole-article evidence-scope conclusion, not a claim that the species cannot make agroclavine-I. |
+| S047-2007-EXPERIMENTS | https://pmc.ncbi.nlm.nih.gov/articles/PMC2168186/?report=xml; Methods alkaloid extraction and transformation; Results cross-complementation; Figures 5–8 captions | supports | C. fusiformis cloA and lpsB pseudogene failed to restore the corresponding C. purpurea mutants. Conversely, functional C. purpurea cloA introduced into C. fusiformis enabled paspalic and lysergic acid production, checked against standards by TLC and LC-MS. These interventions concern downstream chemistry of the ordinary pathway. They cannot be transferred to cis agroclavine-I or used to upgrade its current methods. |
+| S047-2007-FIG6 | https://cdn.ncbi.nlm.nih.gov/pmc/blobs/3859/2168186/7f006d4b3aa5/zam0220783490006.jpg; Original Figure 6 image, all lanes and labels viewed | supports | The native and Cp-cloA transformed C. fusiformis TLC lanes are compared with labelled agroclavine, elymoclavine and lysergic-acid standards. This supports the named ordinary pathway readout. No quantitative band measurement or cis-I identification is inferred. |
+| S047-2007-FIG8 | https://cdn.ncbi.nlm.nih.gov/pmc/blobs/3859/2168186/5f88cd4eda19/zam0220783490008.jpg; Original Figure 8 pathway diagram, labels viewed | supports | The diagram distinguishes the WT block and introduced functional CloA route among agroclavine, elymoclavine, lysergic acid and later ergot alkaloids. This diagram supplies pathway context; it does not identify a cis agroclavine-I product. |
+| S047-1991-CIS-TRANS | https://www.jstage.jst.go.jp/article/cpb1958/39/1/39_1_23/_pdf/-char/en; Printed pages 23–25 and 29; original Chart 5 pixels on page 25 and exact compound-24 experimental paragraph on page 29 | supports | This original racemic synthesis distinguishes ordinary agroclavine 21 with a trans C/D junction from agroclavine-I 24 with a cis junction. Compound 24 NMR is compared with published natural-product data. The racemic synthesis corroborates relative identity and distinguishes congeners; it does not establish a natural absolute enantiomer or C. fusiformis production. The source uses ±, not an assertion of a single positive optical enantiomer. |
+| S047-1984-ABSTRACT | https://www.sciencedirect.com/science/article/pii/S0040403901911621; Search-indexed original publisher abstract for DOI:10.1016/S0040-4039(01)91162-1; direct article access failed | supports | The primary abstract reports 100 MHz proton NMR of agroclavine-I and epoxyagroclavine-I from P. kapuscinskii UCM F-2156D and a cis C/D junction. This positively supports that named species/strain occurrence at abstract scope. The unavailable full body prevents checking complete structural assignment, absolute anchor and whether it also supports P. canescens. |
+| S047-1984-ACCESS | https://www.sciencedirect.com/science/article/abs/pii/S0040403901911621; Retained direct original-publisher access attempt, HTTP 403 | context_only | A bounded direct original-article request failed. Search-indexed abstract content was subsequently retained, but this is not original full-body or figure access. |
+| S047-2003-ABSTRACT | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;id=14768549&amp;retmode=xml; Complete original PubMed abstract, PMID:14768549 | supports | The authors explicitly report agroclavine-I and epoxyagroclavine-I with 5R,10S configuration from P. citrinum VKM FW-800. This is an independent natural-product and absolute-assignment assertion, without inspectable original methods here. It is not evidence for C. fusiformis or one of the four stored LOTUS triples, and no additional occurrence is required by this review. |
+| S047-1914-METADATA | https://api.crossref.org/works/10.1080%2F00275514.1914.12020966; Both independently retrieved DOI metadata responses; title, author, journal, volume, pages and alternate identifier | supports | DOI:10.1080/00275514.1914.12020966 and DOI:10.2307/3753616 resolve to Charles Thom, Conidium Production in Penicillium, Mycologia 6(4), 211–215 (1914). The response also lists the alternate DOI. Publication identity is independently corroborated by the original printed heading. |
+| S047-1914-FULL | https://archive.org/download/mycologia6191newy/mycologia6191newy_djvu.txt; Complete original article printed pages 211–215, OCR from title through end footnotes; original page pixels independently checked | supports | The article describes conidiophore and sterigma structure, cytological development, branching, conidial chains and culture-dependent morphology. Figure 1 concerns cell development. There is no agroclavine-I isolation, chemical identity or P. sizovae compound-occurrence experiment anywhere in the inspected full article. Both stored DOI aliases are therefore inapplicable as support for those exact occurrence assertions; this says nothing about whether that species could produce the compound in other literature. |
+| S047-1914-PIXELS-211 | https://archive.org/download/mycologia6191newy/page/n288.jpg; Original printed page 211, title, byline and beginning of article, independently viewed | supports | The original printed first page confirms the article identity and morphological scope. Archive image indexing is one less than the scandata leafNum for these pages; the corrected route is retained explicitly rather than treating the initially requested n289 image as page 211. |
+| S047-1914-PIXELS-212 | https://archive.org/download/mycologia6191newy/page/n289.jpg; Original printed page 212, fully viewed; local filename retained from the initial off-by-one request | supports | Original article text and morphological figure/footnotes were checked against OCR. No chemical occurrence claim is present on this page. Printed-page numbers, not misleading initial local filenames or scandata numbering, define this locator. |
+| S047-1914-PIXELS-213 | https://archive.org/download/mycologia6191newy/page/n290.jpg; Original printed page 213, fully viewed; local filename retained from the initial off-by-one request | supports | Original article text and morphological figure/footnotes were checked against OCR. No chemical occurrence claim is present on this page. Printed-page numbers, not misleading initial local filenames or scandata numbering, define this locator. |
+| S047-1914-PIXELS-214 | https://archive.org/download/mycologia6191newy/page/n291.jpg; Original printed page 214, fully viewed; local filename retained from the initial off-by-one request | supports | Original article text and morphological figure/footnotes were checked against OCR. No chemical occurrence claim is present on this page. Printed-page numbers, not misleading initial local filenames or scandata numbering, define this locator. |
+| S047-1914-PIXELS-215 | https://archive.org/download/mycologia6191newy/page/n292.jpg; Original printed page 215, fully viewed; local filename retained from the initial off-by-one request | supports | Original article text and morphological figure/footnotes were checked against OCR. No chemical occurrence claim is present on this page. Printed-page numbers, not misleading initial local filenames or scandata numbering, define this locator. |
+| S047-CONSUMER-MIBIG | scripts/seed_from_sources.py; load/apply_mibig_locus_evidence_override; MIBiG-driven grouping and unconditional named producer/cluster emission; complete claim_references.py | supports | WITHDRAW removes nonempty source methods while retaining the producer/locus; it rejects this already-empty original method field. REPLACE requires a nonempty method list. Citation routing only changes references and explicitly leaves taxon, locus and grades. Neither existing route can suppress this unsupported exact-congener producer/locus pair. Removing the sole MIBiG raw row would also remove the record from the MIBiG-driven seed loop. |
+| S047-CONSUMER-LOTUS | src/naturalproductmech/curate/lotus_exclusions.py; Complete loader and controversy emitter; seed_from_sources.py exact triple filtering | supports | The implemented exclusion loader requires exact full key, taxon and DOI plus the canonical complete raw-row SHA and attribution. It rejects ambiguous/stale rows and emits a resolved controversy preserving the raw assertion. Two separate alias rows must be excluded; one exclusion cannot cover both strings. |
+| S047-OVERLAY-SEARCH | curation/; Ignored-inclusive exact source ID, target ID and key search | context_only | No target-specific correction matched in curation/, conf/ or src/naturalproductmech/curate/. This is a bounded maintained-input search, not an assertion of absence throughout the repository or literature. |
+| R047-OWNER | data/natural_products/alkaloids/agroclavine-i.yaml; Complete owner and exact-key parsed local inventories | supports | The owner explicitly denotes cis Agroclavine I, with two assigned stereocentres and four LOTUS triples. Its Claviceps source association and both 1914 citation aliases are evaluated against primary sources in the scientific packet. No pathway, molecular target or measured activity is asserted. |
+| R047-CHEM | /private/tmp/npm-review-work/047/identity/chemical-comparison.json; Five independently parsed complete chemical graphs | supports | Owner, MIBiG, NPAtlas, official ChEBI MOL and Wikidata P2017 agree on full key XJOOMMHNYOJWCZ-DZGCQCFKSA-N, fixed-H form, neutral C16H18N2 and two assigned centres. This is cis Agroclavine I; database agreement does not make ordinary agroclavine a synonym or prove the original absolute-configuration derivation. |
+| R047-CHEBI | https://www.ebi.ac.uk/chebi/backend/api/public/compound/224643/; Complete relevant identifier, structure, taxon and provenance fields | supports | Released CHEBI224643 is a two-star exact Agroclavine I entry. The systematic name specifies 6aR,10aS; the source origin is genus-level Penicillium5073 and the 1984 DOI. The API display SMILES loses the indole N-H; the official MOL, not a silently repaired display string, was parsed. |
+| R047-MOL | https://www.ebi.ac.uk/chebi/backend/api/public/molfile/224643/; Complete official MOL independently parsed | supports | Official graph retains the same full stereochemical and fixed-H identity. |
+| R047-NPA | https://www.npatlas.org/api/v1/compound/NPA012491; Complete relevant identifier, structure, taxon and provenance fields | supports | NPA012491 resolves exactly, with no listed exclusion or reassignment. Its original source is the 1984 conformational paper and Penicillium kapuscinskii strain UCM F-2156D. Its nested taxon is genus-level, not an independent strain authentication. |
+| R047-MIBIG | https://mibig.secondarymetabolites.org/repository/BGC0001267.3/annotations.json; Complete relevant identifier, structure, taxon and provenance fields | supports | Active BGC0001267 version3 compound2 is named Agroclavine I but lists agroclavine as a synonym and cites the ordinary-agroclavine 2007 experiment. Compound1 is a distinct elymoclavine. Source taxon40602, EU006773.1 and empty locus methods are faithfully imported. Source name conflation is adjudicated separately; quality questionable and completeness unknown are source flags. |
+| R047-GENBANK | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&amp;id=EU006773.1&amp;rettype=gb&amp;retmode=text; Header, source, bibliography and feature qualifiers; not independent translation | supports | The deposited 36,856-bp EU006773.1 sequence is Claviceps fusiformis PRL1980 and cites PMID17720822. The inspected source/header and feature qualifiers support the accession/stock context, not production of the cis isomer. No native protein examples, complete CDS translations or tagged constructs are claimed by this packet. |
+| R047-TAXON | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=40602,1195888,5083,904685&amp;retmode=xml; All four top-level Taxon names, ranks, parent links and aliases | supports | Claviceps fusiformis40602 and the three Penicillium species1195888,5083,904685 resolve separately at species rank. Their identifiers do not establish source-specific occurrence or interchangeability. The 1984 second-taxon question remains a primary-evidence limit. |
+| R047-WIKI | https://www.wikidata.org/w/api.php?action=wbgetentities&amp;ids=Q108146596%7CQ10622893%7CQ20897861%7CQ77509269&amp;props=labels%7Cclaims&amp;languages=en&amp;format=json; Complete relevant identifier, structure, taxon and provenance fields | supports | Q108146596, Q10622893 and Q20897861 explicitly map to their three stored NCBI species identifiers. Chemical Q77509269 P2017/P234/P235 carry the complete cis identity; its P233 is stereounspecified and is not substituted for the exact graph. |
+| R047-DOI-A | https://api.crossref.org/works/10.1080%2F00275514.1914.12020966; Complete relevant identifier, structure, taxon and provenance fields | supports | The supplied DOI resolves in Crossref to Charles Thom, Conidium Production in Penicillium, Mycologia6(4),1914,pp211–215, canonical DOI10.1080/00275514.1914.12020966. Both identifiers describe one article. Full primary pages, rather than metadata alone, establish the wrong-citation finding. |
+| R047-DOI-B | https://api.crossref.org/works/10.2307%2F3753616; Complete relevant identifier, structure, taxon and provenance fields | supports | The supplied DOI resolves in Crossref to Charles Thom, Conidium Production in Penicillium, Mycologia6(4),1914,pp211–215, canonical DOI10.1080/00275514.1914.12020966. Both identifiers describe one article. Full primary pages, rather than metadata alone, establish the wrong-citation finding. |
+| R047-RAW | data/raw/chebi_structures.tsv; Complete parsed exact-key inventory and original source projection | supports | No eligible exact three-star ChEBI row occurs in the complete pinned inventory. Two-star current ChEBI224643 does not authorize grounding promotion. The NPClassifier row preserves its explicit version and Alkaloids/Tryptophan alkaloids/Ergot alkaloids output; it is not experimental mechanism. |
+| R047-IMODULON | https://imodulondb.org/; Complete retained28-dataset catalogue | context_only | No matching fungal organism/strain dataset occurs in the complete retained catalogue. No expression module is inferred. |
+
+## Limits And Additional Notes
+
+- Original 1984 full text, structural figures and absolute-assignment methods remain unavailable after bounded public access. Its indexed original abstract is positive for P. kapuscinskii UCM F-2156D, but cannot resolve the distinct P. canescens triple. This required gap makes the recommendation partial.
+- The 1991 synthesis is racemic and supports relative cis/trans identity; no natural absolute configuration is inferred from its racemate. The 2003 5R,10S report was inspected only as a primary abstract. Current authority graph agreement is a separate check, not a substitute for those methods.
+- The complete 2007 body and original Figures 6/8 were read; Figure 1 was viewed but its small raster was not used as independent absolute stereochemical proof. No genomic sequence translation or biochemical assay reanalysis is claimed.
+- The complete 1914 article was read in OCR and all original printed pages 211–215. Archive image indexing differed by one from scandata; original files and a correction receipt are preserved. The adjacent page 216 is not treated as part of the article.
+- This packet does not adjudicate other records, assert a universally absent compound in any species, or create missing optional pathway/protein/activity content. Current taxonomy/chemical authority and genomic metadata are supplied by the separate identifier packet.
+- Current graph agreement cannot independently prove the historical absolute configuration.
+- Deposited accession context was inspected without reconstructing every CDS or experimental construct; the owner contains no protein examples.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35 explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). Skipped tests are not counted as passing tests. Existing ontology caches were used; no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do not establish biological production, stereochemical specificity, evidence adequacy, or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology results. Reuse establishes unchanged repository inputs; it is not a new remote authority query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all tracked files are hashed. Generated Python bytecode and external tool caches are not claimed to have been independently byte-pinned at the prior execution.
+- No scientific owner, inventory, curation table, native status or history was edited. Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification; target strict validation ran afresh. Scientific failed or unavailable checks are distinct from bundle validation.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T112012Z-agroclavine-i
+title: 'Agroclavine I: wrong-congener locus and inapplicable occurrence citations'
+started_at: '2026-10-21T11:09:31.557519Z'
+finished_at: '2026-10-21T11:20:12.247192Z'
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The cis Agroclavine I structure is internally consistent and agrees across
+  five current representations. Its BGC source cites experiments on ordinary agroclavine,
+  and two P. sizovae occurrence triples cite the same fully inspected 1914 morphology
+  paper. Two major findings have separate maintained repair routes. The original 1984
+  full structure and P. canescens evidence remain unavailable.
+source:
+  git_revision: 1c2402097718c138b081e00943de8f04de0541cd
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/agroclavine-i.yaml
+    sha256: c2fbc4b10145dbda7f2d351cb18cd21edad2801bf82f8b5338a552512472be45
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/lotus_exclusions.py
+    sha256: 6352cac7c587eab5a56d907c523cc899d02d197009081624bf8649c675ee30f7
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 47, batch 005, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated pending-PR targets.
+    At selection, 94 of 3116 current records had campaign coverage and 3022 remained.
+    The population search included ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-a931453c98
+targets:
+- target_id: naturalproductmech:mibig-a931453c98
+  path: data/natural_products/alkaloids/agroclavine-i.yaml
+  label: Agroclavine I
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-a931453c98
+  command: just validate-strict data/natural_products/alkaloids/agroclavine-i.yaml
+    --out /private/tmp/npm-review-work/047/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T11:09:34.756172Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 current record files agree with PATHS.tsv and their pinned filing
+    pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055340+00:00;
+    finished 2026-10-21T09:55:22.727768+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-corpus.log. Reused
+    for batch005 only after fresh fetch/base/tree equality and all 9,182 tracked file
+    bytes and modes were verified against the original batch004 baseline (208,070,649
+    bytes). This gate was not rerun for batch005; original times, scope, warnings,
+    exceptions and skips are preserved.'
+  target_ids:
+  - naturalproductmech:mibig-a931453c98
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 current records passed the documented byte-reproduction gate
+    against committed inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055361+00:00;
+    finished 2026-10-21T09:56:44.050706+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-reproduction.log.
+    Reused for batch005 only after fresh fetch/base/tree equality and all 9,182 tracked
+    file bytes and modes were verified against the original batch004 baseline (208,070,649
+    bytes). This gate was not rerun for batch005; original times, scope, warnings,
+    exceptions and skips are preserved.'
+  target_ids:
+  - naturalproductmech:mibig-a931453c98
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The exhaustive review queue produced 8,928 diagnostic rows across 12 queues;
+    this deterministic output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just review-queue --tsv /private/tmp/npm-review-queue-batch-004.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.057401+00:00;
+    finished 2026-10-21T09:54:38.468783+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/review-queue.log. Reused
+    for batch005 only after fresh fetch/base/tree equality and all 9,182 tracked file
+    bytes and modes were verified against the original batch004 baseline (208,070,649
+    bytes). This gate was not rerun for batch005; original times, scope, warnings,
+    exceptions and skips are preserved.'
+  target_ids:
+  - naturalproductmech:mibig-a931453c98
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'The configured identifier-label gate passed using the existing ontology
+    caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions,
+    499 warning-only mismatches and 4,744 pairs skipped because their prefixes have
+    no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.061733+00:00;
+    finished 2026-10-21T09:56:36.296159+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/validate-products.log. Reused
+    for batch005 only after fresh fetch/base/tree equality and all 9,182 tracked file
+    bytes and modes were verified against the original batch004 baseline (208,070,649
+    bytes). This gate was not rerun for batch005; original times, scope, warnings,
+    exceptions and skips are preserved.'
+  target_ids:
+  - naturalproductmech:mibig-a931453c98
+- check_id: shared-qc
+  name: Full repository quality gate on the current main baseline
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed on the unchanged main baseline
+    during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+    All configured lint, governance, documentation, provenance, source-queue, schema,
+    rendering, reproduction, filing-integrity and reporting stages completed successfully.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:30.560925+00:00;
+    finished 2026-10-21T10:04:44.806799+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/qc.log. Reused for batch005
+    only after fresh fetch/base/tree equality and all 9,182 tracked file bytes and
+    modes were verified against the original batch004 baseline (208,070,649 bytes).
+    This gate was not rerun for batch005; original times, scope, warnings, exceptions
+    and skips are preserved.'
+  target_ids:
+  - naturalproductmech:mibig-a931453c98
+- check_id: S047-C-CIS
+  name: Relative cis versus ordinary-trans congener distinction
+  status: passed
+  required: true
+  summary: The original 1991 structure comparison and 1984 abstract distinguish agroclavine-I
+    from ordinary agroclavine. Racemic synthesis is not treated as an absolute-configuration
+    determination.
+  target_ids:
+  - naturalproductmech:mibig-a931453c98
+  evidence_ids:
+  - S047-1991-CIS-TRANS
+  - S047-1984-ABSTRACT
+  - S047-2003-ABSTRACT
+- check_id: S047-C-1984
+  name: Original 1984 full structure and both assigned species occurrences
+  status: unavailable
+  required: true
+  summary: The primary abstract positively identifies P. kapuscinskii and cis-I, but
+    the complete original structural analysis and the P. canescens scope remain inaccessible.
+    No confirmed exclusion of P. canescens is made.
+  target_ids:
+  - naturalproductmech:mibig-a931453c98
+  evidence_ids:
+  - S047-1984-ABSTRACT
+  - S047-1984-ACCESS
+  - S047-LOTUS-ROWS
+- check_id: S047-C-LOCUS
+  name: Exact agroclavine-I producer/locus citation applicability
+  status: failed
+  required: true
+  summary: The full cited 2007 paper tests the ordinary agroclavine pathway, not the
+    distinct cis-I congener. Current low grades accurately disclose a database assertion
+    but do not repair its misassigned source support.
+  target_ids:
+  - naturalproductmech:mibig-a931453c98
+  evidence_ids:
+  - S047-OWNER
+  - S047-RAW
+  - S047-2007-BODY
+  - S047-2007-EXPERIMENTS
+  - S047-1991-CIS-TRANS
+- check_id: S047-C-1914
+  name: Full original support for both P. sizovae DOI triples
+  status: failed
+  required: true
+  summary: Both DOI aliases resolve to the same fully read morphology article, which
+    provides no exact chemical occurrence support. Original printed pages 211–215
+    were inspected.
+  target_ids:
+  - naturalproductmech:mibig-a931453c98
+  evidence_ids:
+  - S047-LOTUS-ROWS
+  - S047-1914-METADATA
+  - S047-1914-FULL
+  - S047-1914-PIXELS-211
+  - S047-1914-PIXELS-212
+  - S047-1914-PIXELS-213
+  - S047-1914-PIXELS-214
+  - S047-1914-PIXELS-215
+- check_id: R047-C-ID
+  name: Independent exact chemical representations
+  status: passed
+  required: true
+  summary: Five parsed graphs agree; scientific source applicability is evaluated
+    separately.
+  target_ids:
+  - naturalproductmech:mibig-a931453c98
+  evidence_ids:
+  - R047-CHEM
+  - R047-NPA
+  - R047-MOL
+- check_id: R047-C-IMODULON
+  name: Applicable expression dataset
+  status: not_applicable
+  required: false
+  summary: No native organism/strain match in the complete retained catalogue.
+  target_ids:
+  - naturalproductmech:mibig-a931453c98
+  evidence_ids:
+  - R047-IMODULON
+evidence:
+- evidence_id: S047-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/agroclavine-i.yaml
+  locator: Complete YAML, all four occurrences and the sole producer/locus/source
+    concept
+  accessed_at: '2026-10-21T11:18:50.999444Z'
+  support: supports
+  summary: The exact cis agroclavine-I owner contains SOURCE_ASSERTION for Claviceps
+    fusiformis and CLUSTER_UNSTATED for BGC0001267, both citing DOI:10.1128/aem.01040-07.
+    Four LOTUS triples cite the 1984 study or two 1914 DOI aliases. No pathway, protein,
+    activity or molecular-target assertions require supplementation.
+  snapshot_sha256: c2fbc4b10145dbda7f2d351cb18cd21edad2801bf82f8b5338a552512472be45
+- evidence_id: S047-RAW
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: Exact BGC0001267:2 row and four exact LOTUS rows; independent complete-row
+    equality check against parsed TSV inventories
+  accessed_at: '2026-10-21T11:18:50.999444Z'
+  support: supports
+  summary: The MIBiG version 3 active, questionable-quality, unknown-completeness
+    row has exact key XJOOMMHNYOJWCZ-DZGCQCFKSA-N, taxon NCBITaxon:40602, EU006773.1,
+    empty bounds and methods, and COMPOUND_EVIDENCE citation DOI:10.1128/aem.01040-07.
+    Full canonical source-row SHA256 is 2ad7bef1102090f516d6c853cd5457c9fd2a7ec4c9d3fc9264e6491ff2b29cb6.
+    These fields reproduce the owner faithfully; the biological applicability must
+    be adjudicated separately.
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: S047-LOTUS-ROWS
+  kind: record_content
+  reference: data/raw/lotus_occurrences.tsv
+  locator: Four exact full-key triples; source row hashes recorded in science-source-row-pins.json
+  accessed_at: '2026-10-21T11:18:50.999444Z'
+  support: supports
+  summary: Two 1984 rows name P. kapuscinskii and P. canescens. Two rows name P. sizovae
+    with DOI:10.1080/00275514.1914.12020966 and DOI:10.2307/3753616. Each matches
+    exactly one current parsed raw row. Citation aliasing is not independent publication
+    evidence.
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: S047-2007-BODY
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC2168186/?report=xml
+  locator: Full original abstract, Introduction, all Methods/Results/Discussion, Table
+    1, figure captions and references; DOI:10.1128/AEM.01040-07
+  accessed_at: '2026-10-21T11:11:20.349647Z'
+  support: supports
+  summary: The paper studies ordinary agroclavine and elymoclavine in C. fusiformis
+    SD58 (=ATCC 26245), compared with C. purpurea P1. Its cosmid Cf26E11 yielded a
+    35.4 kb contig containing a 19.6 kb EAS region with nine homologues. It uses agroclavine
+    standards and reports no cis agroclavine-I standard, formation experiment or exact-congener
+    locus assignment. This is a bounded whole-article evidence-scope conclusion, not
+    a claim that the species cannot make agroclavine-I.
+  snapshot_sha256: 903f59dc5902571536e3f5497c067fd84dcc43a38fb1044b34411981080b597f
+- evidence_id: S047-2007-EXPERIMENTS
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC2168186/?report=xml
+  locator: Methods alkaloid extraction and transformation; Results cross-complementation;
+    Figures 5–8 captions
+  accessed_at: '2026-10-21T11:11:20.349647Z'
+  support: supports
+  summary: C. fusiformis cloA and lpsB pseudogene failed to restore the corresponding
+    C. purpurea mutants. Conversely, functional C. purpurea cloA introduced into C.
+    fusiformis enabled paspalic and lysergic acid production, checked against standards
+    by TLC and LC-MS. These interventions concern downstream chemistry of the ordinary
+    pathway. They cannot be transferred to cis agroclavine-I or used to upgrade its
+    current methods.
+  snapshot_sha256: 903f59dc5902571536e3f5497c067fd84dcc43a38fb1044b34411981080b597f
+- evidence_id: S047-2007-FIG6
+  kind: primary_source
+  reference: https://cdn.ncbi.nlm.nih.gov/pmc/blobs/3859/2168186/7f006d4b3aa5/zam0220783490006.jpg
+  locator: Original Figure 6 image, all lanes and labels viewed
+  accessed_at: '2026-10-21T11:13:45.148361Z'
+  support: supports
+  summary: The native and Cp-cloA transformed C. fusiformis TLC lanes are compared
+    with labelled agroclavine, elymoclavine and lysergic-acid standards. This supports
+    the named ordinary pathway readout. No quantitative band measurement or cis-I
+    identification is inferred.
+  snapshot_sha256: f014ddd89a0a32e381314b31ce537a4e2eb56c6bcf92e7257783afc6ca438a54
+- evidence_id: S047-2007-FIG8
+  kind: primary_source
+  reference: https://cdn.ncbi.nlm.nih.gov/pmc/blobs/3859/2168186/5f88cd4eda19/zam0220783490008.jpg
+  locator: Original Figure 8 pathway diagram, labels viewed
+  accessed_at: '2026-10-21T11:13:45.148439Z'
+  support: supports
+  summary: The diagram distinguishes the WT block and introduced functional CloA route
+    among agroclavine, elymoclavine, lysergic acid and later ergot alkaloids. This
+    diagram supplies pathway context; it does not identify a cis agroclavine-I product.
+  snapshot_sha256: bd2a1c77afb96ca1e33335bf48f2fbd883978b32a9c2cb8cbd3493b84f5882a0
+- evidence_id: S047-1991-CIS-TRANS
+  kind: primary_source
+  reference: https://www.jstage.jst.go.jp/article/cpb1958/39/1/39_1_23/_pdf/-char/en
+  locator: Printed pages 23–25 and 29; original Chart 5 pixels on page 25 and exact
+    compound-24 experimental paragraph on page 29
+  accessed_at: '2026-10-21T10:41:42.779324Z'
+  support: supports
+  summary: This original racemic synthesis distinguishes ordinary agroclavine 21 with
+    a trans C/D junction from agroclavine-I 24 with a cis junction. Compound 24 NMR
+    is compared with published natural-product data. The racemic synthesis corroborates
+    relative identity and distinguishes congeners; it does not establish a natural
+    absolute enantiomer or C. fusiformis production. The source uses ±, not an assertion
+    of a single positive optical enantiomer.
+  snapshot_sha256: d0559f93e5c11d4a20bdb377687b416015b827965af53a11a93103763eaac817
+- evidence_id: S047-1984-ABSTRACT
+  kind: primary_source
+  reference: https://www.sciencedirect.com/science/article/pii/S0040403901911621
+  locator: Search-indexed original publisher abstract for DOI:10.1016/S0040-4039(01)91162-1;
+    direct article access failed
+  accessed_at: '2026-10-21T10:44:38Z'
+  support: supports
+  summary: The primary abstract reports 100 MHz proton NMR of agroclavine-I and epoxyagroclavine-I
+    from P. kapuscinskii UCM F-2156D and a cis C/D junction. This positively supports
+    that named species/strain occurrence at abstract scope. The unavailable full body
+    prevents checking complete structural assignment, absolute anchor and whether
+    it also supports P. canescens.
+  snapshot_sha256: 2fe65602190f6e27d74a5697ca21ecd80e366ecf8e716cf95a2428cb6a996215
+- evidence_id: S047-1984-ACCESS
+  kind: search
+  reference: https://www.sciencedirect.com/science/article/abs/pii/S0040403901911621
+  locator: Retained direct original-publisher access attempt, HTTP 403
+  accessed_at: '2026-10-21T10:43:36Z'
+  support: context_only
+  summary: A bounded direct original-article request failed. Search-indexed abstract
+    content was subsequently retained, but this is not original full-body or figure
+    access.
+  snapshot_sha256: b0bbec40ba1207256ef1a161c0c91b8dc1909617305e4b796d4878fb82d1fcb6
+  search_scope: Prepared public primary-source requests and indexed publisher abstract
+    only; no renewed failed routes, paid sources or inference that the full text does
+    not exist.
+- evidence_id: S047-2003-ABSTRACT
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=14768549&retmode=xml
+  locator: Complete original PubMed abstract, PMID:14768549
+  accessed_at: '2026-10-21T10:40:52.485168Z'
+  support: supports
+  summary: The authors explicitly report agroclavine-I and epoxyagroclavine-I with
+    5R,10S configuration from P. citrinum VKM FW-800. This is an independent natural-product
+    and absolute-assignment assertion, without inspectable original methods here.
+    It is not evidence for C. fusiformis or one of the four stored LOTUS triples,
+    and no additional occurrence is required by this review.
+  snapshot_sha256: cc637328965ca139bcabd80980d3b168d8455e059f42f8fb482bc12bd7815638
+- evidence_id: S047-1914-METADATA
+  kind: authority
+  reference: https://api.crossref.org/works/10.1080%2F00275514.1914.12020966
+  locator: Both independently retrieved DOI metadata responses; title, author, journal,
+    volume, pages and alternate identifier
+  accessed_at: '2026-10-21T11:10:13.389364Z'
+  support: supports
+  summary: DOI:10.1080/00275514.1914.12020966 and DOI:10.2307/3753616 resolve to Charles
+    Thom, Conidium Production in Penicillium, Mycologia 6(4), 211–215 (1914). The
+    response also lists the alternate DOI. Publication identity is independently corroborated
+    by the original printed heading.
+  snapshot_sha256: 775ca477eea0408bf99c64d5df94cd5765c139cbfb525cffefe9812d7d79693d
+- evidence_id: S047-1914-FULL
+  kind: primary_source
+  reference: https://archive.org/download/mycologia6191newy/mycologia6191newy_djvu.txt
+  locator: Complete original article printed pages 211–215, OCR from title through
+    end footnotes; original page pixels independently checked
+  accessed_at: '2026-10-21T11:13:14.788342Z'
+  support: supports
+  summary: The article describes conidiophore and sterigma structure, cytological
+    development, branching, conidial chains and culture-dependent morphology. Figure
+    1 concerns cell development. There is no agroclavine-I isolation, chemical identity
+    or P. sizovae compound-occurrence experiment anywhere in the inspected full article.
+    Both stored DOI aliases are therefore inapplicable as support for those exact
+    occurrence assertions; this says nothing about whether that species could produce
+    the compound in other literature.
+  snapshot_sha256: adbbb839c3c9dad6c287d6fee01f45f687ccbaad6a5b106ecf37256b63458080
+- evidence_id: S047-1914-PIXELS-211
+  kind: primary_source
+  reference: https://archive.org/download/mycologia6191newy/page/n288.jpg
+  locator: Original printed page 211, title, byline and beginning of article, independently
+    viewed
+  accessed_at: '2026-10-21T11:14:28.480794Z'
+  support: supports
+  summary: The original printed first page confirms the article identity and morphological
+    scope. Archive image indexing is one less than the scandata leafNum for these
+    pages; the corrected route is retained explicitly rather than treating the initially
+    requested n289 image as page 211.
+  snapshot_sha256: 6c71f742cacc00d08c05bb3e964507ee6c9ff9980f7791f760d944c5fb5b5ef9
+- evidence_id: S047-1914-PIXELS-212
+  kind: primary_source
+  reference: https://archive.org/download/mycologia6191newy/page/n289.jpg
+  locator: Original printed page 212, fully viewed; local filename retained from the
+    initial off-by-one request
+  accessed_at: '2026-10-21T11:13:45.148487Z'
+  support: supports
+  summary: Original article text and morphological figure/footnotes were checked against
+    OCR. No chemical occurrence claim is present on this page. Printed-page numbers,
+    not misleading initial local filenames or scandata numbering, define this locator.
+  snapshot_sha256: 5aa89c282a7d305614c88f1b461541114f2e5f7ade3fc1ae2cfb6f85cba161af
+- evidence_id: S047-1914-PIXELS-213
+  kind: primary_source
+  reference: https://archive.org/download/mycologia6191newy/page/n290.jpg
+  locator: Original printed page 213, fully viewed; local filename retained from the
+    initial off-by-one request
+  accessed_at: '2026-10-21T11:13:45.459975Z'
+  support: supports
+  summary: Original article text and morphological figure/footnotes were checked against
+    OCR. No chemical occurrence claim is present on this page. Printed-page numbers,
+    not misleading initial local filenames or scandata numbering, define this locator.
+  snapshot_sha256: 8c1b78c4b3b1420ed94e5fc4696266010fe17affb2bd344218642868d1ce1a58
+- evidence_id: S047-1914-PIXELS-214
+  kind: primary_source
+  reference: https://archive.org/download/mycologia6191newy/page/n291.jpg
+  locator: Original printed page 214, fully viewed; local filename retained from the
+    initial off-by-one request
+  accessed_at: '2026-10-21T11:13:45.501316Z'
+  support: supports
+  summary: Original article text and morphological figure/footnotes were checked against
+    OCR. No chemical occurrence claim is present on this page. Printed-page numbers,
+    not misleading initial local filenames or scandata numbering, define this locator.
+  snapshot_sha256: b82e1d206661f517ed1bff0a7b88be165c30745f4e0632a15915c169b6c43967
+- evidence_id: S047-1914-PIXELS-215
+  kind: primary_source
+  reference: https://archive.org/download/mycologia6191newy/page/n292.jpg
+  locator: Original printed page 215, fully viewed; local filename retained from the
+    initial off-by-one request
+  accessed_at: '2026-10-21T11:13:45.506431Z'
+  support: supports
+  summary: Original article text and morphological figure/footnotes were checked against
+    OCR. No chemical occurrence claim is present on this page. Printed-page numbers,
+    not misleading initial local filenames or scandata numbering, define this locator.
+  snapshot_sha256: 2e1d3c285d41b13000d1143d37d81386ca76924767dc66489f1ccc5e4f17c4ff
+- evidence_id: S047-CONSUMER-MIBIG
+  kind: record_content
+  reference: scripts/seed_from_sources.py
+  locator: load/apply_mibig_locus_evidence_override; MIBiG-driven grouping and unconditional
+    named producer/cluster emission; complete claim_references.py
+  accessed_at: '2026-10-21T11:18:50.999444Z'
+  support: supports
+  summary: WITHDRAW removes nonempty source methods while retaining the producer/locus;
+    it rejects this already-empty original method field. REPLACE requires a nonempty
+    method list. Citation routing only changes references and explicitly leaves taxon,
+    locus and grades. Neither existing route can suppress this unsupported exact-congener
+    producer/locus pair. Removing the sole MIBiG raw row would also remove the record
+    from the MIBiG-driven seed loop.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: S047-CONSUMER-LOTUS
+  kind: record_content
+  reference: src/naturalproductmech/curate/lotus_exclusions.py
+  locator: Complete loader and controversy emitter; seed_from_sources.py exact triple
+    filtering
+  accessed_at: '2026-10-21T11:18:50.999444Z'
+  support: supports
+  summary: The implemented exclusion loader requires exact full key, taxon and DOI
+    plus the canonical complete raw-row SHA and attribution. It rejects ambiguous/stale
+    rows and emits a resolved controversy preserving the raw assertion. Two separate
+    alias rows must be excluded; one exclusion cannot cover both strings.
+  snapshot_sha256: 6352cac7c587eab5a56d907c523cc899d02d197009081624bf8649c675ee30f7
+- evidence_id: S047-OVERLAY-SEARCH
+  kind: search
+  reference: curation/
+  locator: Ignored-inclusive exact source ID, target ID and key search
+  accessed_at: '2026-10-21T11:17:06.145950Z'
+  support: context_only
+  summary: No target-specific correction matched in curation/, conf/ or src/naturalproductmech/curate/.
+    This is a bounded maintained-input search, not an assertion of absence throughout
+    the repository or literature.
+  snapshot_sha256: c382f0803e7938924b49e457173a432a7470fed653c70630dbce7eac58634218
+  search_scope: 'Ignored-inclusive exact source/owner/key search in maintained curation
+    tables, configuration and curate consumers only. Command: rg --no-ignore --hidden
+    -n BGC0001267|mibig-a931453c98|XJOOMMHNYOJWCZ-DZGCQCFKSA-N curation conf src/naturalproductmech/curate;
+    exit 1, empty stdout/stderr.'
+- evidence_id: R047-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/agroclavine-i.yaml
+  locator: Complete owner and exact-key parsed local inventories
+  accessed_at: '2026-10-21T11:19:18.798183Z'
+  support: supports
+  summary: The owner explicitly denotes cis Agroclavine I, with two assigned stereocentres
+    and four LOTUS triples. Its Claviceps source association and both 1914 citation
+    aliases are evaluated against primary sources in the scientific packet. No pathway,
+    molecular target or measured activity is asserted.
+  snapshot_sha256: c2fbc4b10145dbda7f2d351cb18cd21edad2801bf82f8b5338a552512472be45
+- evidence_id: R047-CHEM
+  kind: validation
+  reference: /private/tmp/npm-review-work/047/identity/chemical-comparison.json
+  locator: Five independently parsed complete chemical graphs
+  accessed_at: '2026-10-21T11:19:21.301796Z'
+  support: supports
+  summary: Owner, MIBiG, NPAtlas, official ChEBI MOL and Wikidata P2017 agree on full
+    key XJOOMMHNYOJWCZ-DZGCQCFKSA-N, fixed-H form, neutral C16H18N2 and two assigned
+    centres. This is cis Agroclavine I; database agreement does not make ordinary
+    agroclavine a synonym or prove the original absolute-configuration derivation.
+  snapshot_sha256: 8756d4f70a3c10e90769cd5aa693e8b140530422943b3a8f522e591be9455b21
+- evidence_id: R047-CHEBI
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/224643/
+  locator: Complete relevant identifier, structure, taxon and provenance fields
+  accessed_at: '2026-10-21T11:11:20.434614Z'
+  support: supports
+  summary: Released CHEBI224643 is a two-star exact Agroclavine I entry. The systematic
+    name specifies 6aR,10aS; the source origin is genus-level Penicillium5073 and
+    the 1984 DOI. The API display SMILES loses the indole N-H; the official MOL, not
+    a silently repaired display string, was parsed.
+  snapshot_sha256: 1f236573c586c990ad907ee1506f47614147ca86419f3e71255cdedd4ef1dade
+- evidence_id: R047-MOL
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/224643/
+  locator: Complete official MOL independently parsed
+  accessed_at: '2026-10-21T11:11:20.349577Z'
+  support: supports
+  summary: Official graph retains the same full stereochemical and fixed-H identity.
+  snapshot_sha256: 86ee5e14574049114bfe714d265dd1e02400587cf97122c80fa1e03ac69574ed
+- evidence_id: R047-NPA
+  kind: database
+  reference: https://www.npatlas.org/api/v1/compound/NPA012491
+  locator: Complete relevant identifier, structure, taxon and provenance fields
+  accessed_at: '2026-10-21T11:10:12.724005Z'
+  support: supports
+  summary: NPA012491 resolves exactly, with no listed exclusion or reassignment. Its
+    original source is the 1984 conformational paper and Penicillium kapuscinskii
+    strain UCM F-2156D. Its nested taxon is genus-level, not an independent strain
+    authentication.
+  snapshot_sha256: 64417789d98a0d56544e9d1b5ed620253da2f6ebbee0fa2b41e960aa41084f7d
+- evidence_id: R047-MIBIG
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0001267.3/annotations.json
+  locator: Complete relevant identifier, structure, taxon and provenance fields
+  accessed_at: '2026-10-21T11:10:13.060079Z'
+  support: supports
+  summary: Active BGC0001267 version3 compound2 is named Agroclavine I but lists agroclavine
+    as a synonym and cites the ordinary-agroclavine 2007 experiment. Compound1 is
+    a distinct elymoclavine. Source taxon40602, EU006773.1 and empty locus methods
+    are faithfully imported. Source name conflation is adjudicated separately; quality
+    questionable and completeness unknown are source flags.
+  snapshot_sha256: 3c864859b9b921dff37b3c7fcc17157e8193b49d6ab411811f25eb508aa4743a
+- evidence_id: R047-GENBANK
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=EU006773.1&rettype=gb&retmode=text
+  locator: Header, source, bibliography and feature qualifiers; not independent translation
+  accessed_at: '2026-10-21T11:10:13.700545Z'
+  support: supports
+  summary: The deposited 36,856-bp EU006773.1 sequence is Claviceps fusiformis PRL1980
+    and cites PMID17720822. The inspected source/header and feature qualifiers support
+    the accession/stock context, not production of the cis isomer. No native protein
+    examples, complete CDS translations or tagged constructs are claimed by this packet.
+  snapshot_sha256: c43f2e59024f7907dfd1226675d941312694eb71616f2f82447e1969f65d2945
+- evidence_id: R047-TAXON
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=40602,1195888,5083,904685&retmode=xml
+  locator: All four top-level Taxon names, ranks, parent links and aliases
+  accessed_at: '2026-10-21T11:10:13.389268Z'
+  support: supports
+  summary: Claviceps fusiformis40602 and the three Penicillium species1195888,5083,904685
+    resolve separately at species rank. Their identifiers do not establish source-specific
+    occurrence or interchangeability. The 1984 second-taxon question remains a primary-evidence
+    limit.
+  snapshot_sha256: 931ad82303e32d518a1354b8440737129dfbb9cf5a8bf292a469b06a856ca229
+- evidence_id: R047-WIKI
+  kind: database
+  reference: https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q108146596%7CQ10622893%7CQ20897861%7CQ77509269&props=labels%7Cclaims&languages=en&format=json
+  locator: Complete relevant identifier, structure, taxon and provenance fields
+  accessed_at: '2026-10-21T11:10:13.540157Z'
+  support: supports
+  summary: Q108146596, Q10622893 and Q20897861 explicitly map to their three stored
+    NCBI species identifiers. Chemical Q77509269 P2017/P234/P235 carry the complete
+    cis identity; its P233 is stereounspecified and is not substituted for the exact
+    graph.
+  snapshot_sha256: 715dfbb450738fbf866d4d049c3d257fea9ce332072b0732c0982c2277a79cae
+- evidence_id: R047-DOI-A
+  kind: database
+  reference: https://api.crossref.org/works/10.1080%2F00275514.1914.12020966
+  locator: Complete relevant identifier, structure, taxon and provenance fields
+  accessed_at: '2026-10-21T11:10:13.647173Z'
+  support: supports
+  summary: The supplied DOI resolves in Crossref to Charles Thom, Conidium Production
+    in Penicillium, Mycologia6(4),1914,pp211–215, canonical DOI10.1080/00275514.1914.12020966.
+    Both identifiers describe one article. Full primary pages, rather than metadata
+    alone, establish the wrong-citation finding.
+  snapshot_sha256: 775ca477eea0408bf99c64d5df94cd5765c139cbfb525cffefe9812d7d79693d
+- evidence_id: R047-DOI-B
+  kind: database
+  reference: https://api.crossref.org/works/10.2307%2F3753616
+  locator: Complete relevant identifier, structure, taxon and provenance fields
+  accessed_at: '2026-10-21T11:10:14.053997Z'
+  support: supports
+  summary: The supplied DOI resolves in Crossref to Charles Thom, Conidium Production
+    in Penicillium, Mycologia6(4),1914,pp211–215, canonical DOI10.1080/00275514.1914.12020966.
+    Both identifiers describe one article. Full primary pages, rather than metadata
+    alone, establish the wrong-citation finding.
+  snapshot_sha256: 775ca477eea0408bf99c64d5df94cd5765c139cbfb525cffefe9812d7d79693d
+- evidence_id: R047-RAW
+  kind: record_content
+  reference: data/raw/chebi_structures.tsv
+  locator: Complete parsed exact-key inventory and original source projection
+  accessed_at: '2026-10-21T11:19:18.798183Z'
+  support: supports
+  summary: No eligible exact three-star ChEBI row occurs in the complete pinned inventory.
+    Two-star current ChEBI224643 does not authorize grounding promotion. The NPClassifier
+    row preserves its explicit version and Alkaloids/Tryptophan alkaloids/Ergot alkaloids
+    output; it is not experimental mechanism.
+  snapshot_sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+- evidence_id: R047-IMODULON
+  kind: database
+  reference: https://imodulondb.org/
+  locator: Complete retained28-dataset catalogue
+  accessed_at: '2026-10-21T07:21:15.957321Z'
+  support: context_only
+  summary: No matching fungal organism/strain dataset occurs in the complete retained
+    catalogue. No expression module is inferred.
+  snapshot_sha256: 1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549
+assessments:
+- assessment_id: S047-A-IDENTITY
+  area: identity
+  topic: Relative identity, natural origin and absolute-assignment limits
+  outcome: supported
+  summary: Agroclavine-I is a naturally reported cis C/D congener, distinguished from
+    ordinary agroclavine in original synthetic work and explicitly assigned 5R,10S
+    in the 2003 primary abstract. There is no basis to replace the cis owner with
+    ordinary agroclavine or label it synthetic because a racemic synthesis exists.
+    Direct original 1984 full structural and absolute-assignment evidence remains
+    a required limitation; current exact chemical authorities are audited separately.
+  target_ids:
+  - naturalproductmech:mibig-a931453c98
+  evidence_ids:
+  - S047-OWNER
+  - S047-1991-CIS-TRANS
+  - S047-1984-ABSTRACT
+  - S047-2003-ABSTRACT
+- assessment_id: S047-A-1984
+  area: evidence
+  topic: P. kapuscinskii positive abstract; P. canescens unresolved
+  outcome: unknown
+  summary: The 1984 primary abstract directly supports agroclavine-I in P. kapuscinskii
+    UCM F-2156D. It cannot decide the separate P. canescens triple because the body
+    is unavailable. Neither a species synonym nor a confirmed citation error is inferred
+    from that abstract.
+  target_ids:
+  - naturalproductmech:mibig-a931453c98
+  evidence_ids:
+  - S047-LOTUS-ROWS
+  - S047-1984-ABSTRACT
+  - S047-1984-ACCESS
+- assessment_id: S047-A-1914
+  area: evidence
+  topic: Two aliases of an inapplicable original publication
+  outcome: concern
+  summary: Both P. sizovae triples cite the same 1914 article. Full text and original
+    pixels establish a morphological study without an agroclavine-I occurrence report.
+    This is one citation-scope defect represented by two exact source rows, not two
+    independent biological findings.
+  target_ids:
+  - naturalproductmech:mibig-a931453c98
+  evidence_ids:
+  - S047-LOTUS-ROWS
+  - S047-1914-METADATA
+  - S047-1914-FULL
+  - S047-1914-PIXELS-211
+  - S047-1914-PIXELS-215
+- assessment_id: S047-A-LOCUS
+  area: evidence
+  topic: Ordinary-agroclavine evidence does not establish cis-I production
+  outcome: concern
+  summary: The 2007 native strain, cloned EAS region and cross-complementation experiments
+    are genuine, but their chemically specified ordinary agroclavine/elymoclavine/lysergic-acid
+    endpoints do not support the exact cis-I pair. No general biological incapacity
+    is inferred. Correct the producer/locus applicability, rather than adding inappropriate
+    experimental methods or merely substituting the SD58 strain label.
+  target_ids:
+  - naturalproductmech:mibig-a931453c98
+  evidence_ids:
+  - S047-RAW
+  - S047-2007-BODY
+  - S047-2007-EXPERIMENTS
+  - S047-2007-FIG6
+  - S047-2007-FIG8
+  - S047-1991-CIS-TRANS
+- assessment_id: S047-A-COMPLETENESS
+  area: completeness
+  topic: Claim scope and optional mechanistic content
+  outcome: supported
+  summary: The source-supported work needed is exact-congener provenance and occurrence
+    correction. No optional pathway, enzyme, activity or unrelated P. citrinum occurrence
+    addition is required. NPClassifier results remain computational classifications;
+    the disputed BGC-derived class should be recomputed with the biological association
+    if it is suppressed, without treating that as an independent classifier defect.
+  target_ids:
+  - naturalproductmech:mibig-a931453c98
+  evidence_ids:
+  - S047-OWNER
+  - S047-RAW
+  - S047-2007-EXPERIMENTS
+  - S047-CONSUMER-MIBIG
+- assessment_id: R047-A-ID
+  area: identity
+  topic: Exact cis chemical referent
+  outcome: supported
+  summary: Five directly parsed graphs agree in full standardized and fixed-H form.
+    Original absolute proof is separately bounded; ordinary agroclavine is not substituted.
+  target_ids:
+  - naturalproductmech:mibig-a931453c98
+  evidence_ids:
+  - R047-CHEM
+  - R047-CHEBI
+  - R047-NPA
+  - R047-WIKI
+- assessment_id: R047-A-GROUND
+  area: grounding
+  topic: Minted identity and source-specific xref
+  outcome: supported
+  summary: NPA012491 resolves exactly. Current ChEBI is two-star and the complete
+    eligible inventory lacks an exact row, so the minted grounding is consistent.
+  target_ids:
+  - naturalproductmech:mibig-a931453c98
+  evidence_ids:
+  - R047-RAW
+  - R047-CHEBI
+  - R047-NPA
+- assessment_id: R047-A-TAX
+  area: scope
+  topic: Taxon identifiers versus occurrence applicability
+  outcome: supported
+  summary: All four taxon concepts and three organism Wikidata crosswalks resolve;
+    this is distinct from the scientific validity of each attached publication.
+  target_ids:
+  - naturalproductmech:mibig-a931453c98
+  evidence_ids:
+  - R047-TAXON
+  - R047-WIKI
+  - R047-MIBIG
+- assessment_id: R047-A-PROV
+  area: provenance
+  topic: Classification and native history
+  outcome: supported
+  summary: Versioned source classifications and native seed history are retained.
+    No status promotion follows from this review, and absent optional mechanism content
+    is not counted as a defect.
+  target_ids:
+  - naturalproductmech:mibig-a931453c98
+  evidence_ids:
+  - R047-RAW
+  - R047-OWNER
+findings:
+- finding_id: S047-F-LOCUS
+  issue_key: mibig-bgc0001267-compound2-cis-agroclavine-source-conflation
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Separate cis agroclavine-I from the ordinary agroclavine locus evidence
+  description: MIBiG compound 2 supplies the correct cis-I structure and name but
+    attaches C. fusiformis/EU006773.1 and a 2007 primary studying ordinary agroclavine.
+    The original full paper does not establish this exact-congener production or locus
+    pair. The current SOURCE_ASSERTION/CLUSTER_UNSTATED labels faithfully express
+    the imported low grade, yet leave the misassigned biological assertion and citation
+    in place. Preserve the valid cis natural-product owner and raw provenance while
+    withholding this pair through an explicitly supported maintained mechanism.
+  target_ids:
+  - naturalproductmech:mibig-a931453c98
+  field_paths:
+  - producer_organisms[0]
+  - biosynthetic_gene_clusters[0]
+  - bgc_class
+  evidence_ids:
+  - S047-OWNER
+  - S047-RAW
+  - S047-1991-CIS-TRANS
+  - S047-2007-BODY
+  - S047-2007-EXPERIMENTS
+  - S047-2007-FIG6
+  - S047-CONSUMER-MIBIG
+  rule_id: 'review-checklist: exact-structure producer/locus and primary-source scope'
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Required tested typed producer/locus suppression and dependent class emission
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Existing citation-only consumer boundary; not itself a suppression route
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Existing method-only override boundary; not usable as an empty-method withdrawal
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Preserved complete raw BGC0001267:2 assertion and drift pin
+- finding_id: S047-F-1914
+  issue_key: agroclavine-i-sizovae-1914-morphology-citation
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Exclude both inapplicable 1914 P. sizovae occurrence triples
+  description: The two DOI strings cite one Charles Thom morphology article, not agroclavine-I
+    isolation or detection. This conclusion rests on the entire original article and
+    all five printed pages, not its title or publication date. Preserve the raw assertions
+    and exclude both exact triples from effective occurrences; no universal absence
+    or replacement occurrence is asserted.
+  target_ids:
+  - naturalproductmech:mibig-a931453c98
+  field_paths:
+  - occurrences[2]
+  - occurrences[3]
+  evidence_ids:
+  - S047-LOTUS-ROWS
+  - S047-1914-METADATA
+  - S047-1914-FULL
+  - S047-1914-PIXELS-211
+  - S047-1914-PIXELS-212
+  - S047-1914-PIXELS-213
+  - S047-1914-PIXELS-214
+  - S047-1914-PIXELS-215
+  - S047-CONSUMER-LOTUS
+  rule_id: 'review-checklist: exact compound-organism-reference support'
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/lotus_occurrence_exclusions.tsv
+    role: Consumed exact-triple exclusions
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/lotus_exclusions.py
+    role: Full-row drift guard and retained controversy
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Deterministic exclusion application
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Preserved raw source assertions
+actions:
+- action_id: S047-ACTION-LOCUS
+  description: Implement a typed, consumed curation decision that withholds only the
+    producer and locus association from BGC0001267:2 for this exact cis-I owner, retaining
+    the raw row and source-concept provenance with a cited controversy. Pin complete
+    raw-row SHA256 2ad7bef1102090f516d6c853cd5457c9fd2a7ec4c9d3fc9264e6491ff2b29cb6
+    and require exact source ID, version 3, key XJOOMMHNYOJWCZ-DZGCQCFKSA-N, taxon
+    NCBITaxon:40602, EU006773.1, explicitly empty bounds/methods, DOI:10.1128/aem.01040-07
+    and COMPOUND_EVIDENCE basis. This needs a new tested typed consumer/table integrated
+    into scripts/seed_from_sources.py; neither the current method WITHDRAW nor citation-only
+    overlay can implement it. Do not add an inert row to a reserved/general table
+    or hand-edit generated YAML.
+  finding_ids:
+  - S047-F-LOCUS
+  target_ids:
+  - naturalproductmech:mibig-a931453c98
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Required tested typed producer/locus suppression and dependent class emission
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Existing citation-only consumer boundary; not itself a suppression route
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Existing method-only override boundary; not usable as an empty-method withdrawal
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Preserved complete raw BGC0001267:2 assertion and drift pin
+  generator: scripts/seed_from_sources.py
+  acceptance_checks:
+  - A unique complete source-row SHA and exact precondition check must reject raw
+    drift, duplicate/ambiguous matches and unsupported composition with structure,
+    method, strain or citation overlays.
+  - Regeneration keeps the cis-I owner identifier, exact structure, NPA xref, valid
+    independent occurrences and original raw provenance. It suppresses only the disputed
+    C. fusiformis producer and EU006773.1 locus association and recomputes dependent
+    producer groups/BGC classes without leaving an orphan biological claim.
+  - Retain a curator-attributed controversy citing the fully inspected 2007 paper
+    and original cis/trans distinction, explaining the withheld pair without asserting
+    biological incapacity.
+  - The MIBiG-driven seed loop must preserve the compound even when its only current
+    BGC biological assertion is withheld. Do not delete the raw row, substitute ordinary
+    agroclavine, or silently migrate existing sources to another owner.
+  - Implement focused consumer tests for drift, exact scope, source preservation and
+    composition; inspect the target diff and run strict validation, seed reproduction
+    and repository gates during later authorized remediation.
+- action_id: S047-ACTION-1914
+  description: 'Add two curation/lotus_occurrence_exclusions.tsv decisions for XJOOMMHNYOJWCZ-DZGCQCFKSA-N
+    and NCBITaxon:904685, using exact DOI/full-row SHA pairs: 10.1080/00275514.1914.12020966
+    => ed95d0c0a8d89ecc459d94b00e57cb60a9ad5eec0405d75ba5edf209f962427f; 10.2307/3753616
+    => 6d689e33e601a1f6bd8df1e00ac7bd089673d2c58e329a1185eadca46d2991d1. Supply curator,
+    actual date, rationale and a stable original-article reference. The existing implemented
+    loader already provides full-row drift guards and retained controversy. This excludes
+    unsupported source triples without deleting raw evidence.'
+  finding_ids:
+  - S047-F-1914
+  target_ids:
+  - naturalproductmech:mibig-a931453c98
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/lotus_occurrence_exclusions.tsv
+    role: Consumed exact-triple exclusions
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/lotus_exclusions.py
+    role: Full-row drift guard and retained controversy
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Deterministic exclusion application
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Preserved raw source assertions
+  generator: scripts/seed_from_sources.py
+  acceptance_checks:
+  - Both exact DOI aliases are suppressed; neither remaining 1984 triple is changed
+    by this decision. Retain the unresolved P. canescens scope as a research gap rather
+    than treating it as another confirmed exclusion.
+  - Reject any exact-triple ambiguity or full-row hash drift. Retain two source-specific
+    controversy records so the raw provenance and alias identity remain reviewable.
+  - Preserve owner chemistry, identifier, independently supported occurrence and source
+    records; regenerate and inspect the exact owner diff before later strict/seed/QC
+    acceptance.
+limitations:
+- Original 1984 full text, structural figures and absolute-assignment methods remain
+  unavailable after bounded public access. Its indexed original abstract is positive
+  for P. kapuscinskii UCM F-2156D, but cannot resolve the distinct P. canescens triple.
+  This required gap makes the recommendation partial.
+- The 1991 synthesis is racemic and supports relative cis/trans identity; no natural
+  absolute configuration is inferred from its racemate. The 2003 5R,10S report was
+  inspected only as a primary abstract. Current authority graph agreement is a separate
+  check, not a substitute for those methods.
+- The complete 2007 body and original Figures 6/8 were read; Figure 1 was viewed but
+  its small raster was not used as independent absolute stereochemical proof. No genomic
+  sequence translation or biochemical assay reanalysis is claimed.
+- The complete 1914 article was read in OCR and all original printed pages 211–215.
+  Archive image indexing differed by one from scandata; original files and a correction
+  receipt are preserved. The adjacent page 216 is not treated as part of the article.
+- This packet does not adjudicate other records, assert a universally absent compound
+  in any species, or create missing optional pathway/protein/activity content. Current
+  taxonomy/chemical authority and genomic metadata are supplied by the separate identifier
+  packet.
+- Current graph agreement cannot independently prove the historical absolute configuration.
+- Deposited accession context was inspected without reconstructing every CDS or experimental
+  construct; the owner contains no protein examples.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35
+  explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently
+  verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+  Skipped tests are not counted as passing tests. Existing ontology caches were used;
+  no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do
+  not establish biological production, stereochemical specificity, evidence adequacy,
+  or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology
+  results. Reuse establishes unchanged repository inputs; it is not a new remote authority
+  query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all
+  tracked files are hashed. Generated Python bytecode and external tool caches are
+  not claimed to have been independently byte-pinned at the prior execution.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+tags:
+- path-order-campaign
+- batch-005
+```
