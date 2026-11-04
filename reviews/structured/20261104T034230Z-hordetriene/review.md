@@ -1,0 +1,1301 @@
+# Local evidence review: hordetriene
+
+- Review: 20261104T034230Z-hordetriene
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-11-04T02:51:03.727368Z
+- Finished UTC: 2026-11-04T03:42:30.344532Z
+- Reviewer: Codex root with native_checks, bgc_science and review_support peer agents (independent)
+- Completion: partial
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Hordetriene retains agreeing C20H30 forms with one aromatic carbocycle, two additional carbocycles and two specified tetrahedral centres. Its source-asserted barley producer, demonstrated locus grade and computed Cleistanthane class are separately preserved. The shared BGC does not establish identity or an interconversion pathway with Hordediene.
+
+## Scope And Provenance
+
+One complete NaturalProductRecord, including all present scientific claims, history and declared mechanisms; external verification remains unavailable.
+
+Selection: Campaign path order 2335; one of the next ten uncovered paths selected from the 3116-record corpus. Membership uses the canonical validated catalogue plus retained committed campaign bundles.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base ce6a5498df5be51116bd5e0c119023ee62bb5464.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-c08c967ca6 | data/natural_products/terpenoids/hordetriene.yaml | generated | hordetriene |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| strict_ten | passed | True | naturalproductmech:mibig-c08c967ca6 | Closed-schema validation of the ten selected owners and any referenced components reported zero errors. |
+| strict_full | passed | True | naturalproductmech:mibig-c08c967ca6 | Full closed-schema validation scanned all 3116 owners and reported zero errors. |
+| lockfile | passed | True | naturalproductmech:mibig-c08c967ca6 | PATHS.tsv and filesystem agree on all 3116 records and their pinned filing pathways. |
+| reproduction | passed | True | naturalproductmech:mibig-c08c967ca6 | All 3116 records reproduce byte-identically from the retained inventories and carried curator content. This does not independently validate curator science. |
+| queue | passed | True | naturalproductmech:mibig-c08c967ca6 | The full local queue contains 8922 diagnostic rows; selected-target entries were inspected. Queue diagnostics are leads, not scientific sign-off. |
+| Full just qc | unavailable | True | naturalproductmech:mibig-c08c967ca6 | Not run under the external-request prohibition: the complete recipe includes upstream vendored synchronization. The five executed local checks are recorded separately. |
+| Complete OAK identifier/label authority check | unavailable | True | naturalproductmech:mibig-c08c967ca6 | Complete offline ontology authority coverage was not established for this run; no ontology retrieval or remote resolution was attempted. Retained taxonomy evidence has only its explicitly stated local scope. |
+| Primary literature and current structured database/identifier verification | unavailable | True | naturalproductmech:mibig-c08c967ca6 | All external requests are prohibited by the user. Fresh database and identifier verification and complete primary-literature coverage are unavailable. Any retained original literature actually inspected is recorded separately with its historical scope. |
+
+## Scientific And Domain Assessments
+
+### Identity
+
+identity: supported. Targets: naturalproductmech:mibig-c08c967ca6.
+
+The exact retained owner naturalproductmech:mibig-c08c967ca6 has full key JAXBFJVZLAUHTD-AZUAARDMSA-N and the MIBiG BGC0002395 version 2 source label hordetriene, compound index 3. Both stored representations agree with the declared full key; the saved exact ChEBI query has no match. Its C20H30/aromatic representation is distinct from the C20H32 hordediene and oxygenated 11-hydroxy-hordetriene companion. MINTED source fidelity is assessed without substituting a shared-name, cluster or connectivity-level identity claim or fresh natural-stereoisomer confirmation.
+
+### Stored molecular representation
+
+representation: supported. Targets: naturalproductmech:mibig-c08c967ca6.
+
+Both saved forms represent neutral C20H30 with 20 carbon atoms, 22 bonds and one component. The cycle basis has three six-membered carbocycles: one aromatic ring and two nonaromatic rings. SMILES atoms 3/4/5/6/7/9 are aromatic; the saved bond table preserves that aromaticity rather than assigning three independent acyclic alkene geometries. Two tetrahedral centres are specified, SMILES 0S/12S corresponding to InChI-form 17S/19S, with none unresolved. There are no oxygen atoms, sugar residues or glycosidic linkages. All ten comparison flags and complete atom-count correspondence are true, while full_graph_identity_established remains false. This agreement does not independently establish the natural product or a conversion from its companions. The stored stereo_complete flag is assessed against the maintained extractor’s tetrahedral-centre test; it is not blanket proof of every bond geometry or natural stereochemical assignment.
+
+### Producer and locus evidence
+
+provenance: supported. Targets: naturalproductmech:mibig-c08c967ca6.
+
+MIBiG physical row 2948 retains active BGC0002395 version 2, questionable quality, unknown completeness, Hordeum vulgare subsp. vulgare (NCBITaxon:112509), and GPC_000011790.1 positions 9581242–10180879. Producer evidence remains SOURCE_ASSERTION; Heterologous expression and Enzymatic assays support CLUSTER_DEMONSTRATED for the locus as a separate proposition. The cached taxon label is local evidence only. Neither the locus grade nor the presence of two related products proves a complete pathway, the exact natural stereoisomer or independent native production of every listed compound.
+
+### Citation scope
+
+evidence: supported. Targets: naturalproductmech:mibig-c08c967ca6.
+
+The producer/locus placements retain ENTRY-level DOI:10.1101/2021.05.21.445084 as a database assertion. The same source publication is attached to the other two BGC0002395 compound contexts, which does not create three independent studies. Locus methods, source version and compound index are preserved without claiming fresh access to the publication, construct design, enzyme sequence or compound-specific stereochemical experiment. No companion citation is promoted beyond its retained claim scope.
+
+### Occurrence and assay scope
+
+evidence: supported. Targets: naturalproductmech:mibig-c08c967ca6.
+
+No occurrence, bioactivity or molecular-target field is written in this owner. The complete exact retained LOTUS, ChEBI-origin, CyanoMetDB, PubChem, BindingDB and AntibioticMech frames have no matches; source_taxa nevertheless retains NCBITaxon:112509. The local forward/nonorganism/related route lists are empty. These facts bound the accessed source evidence and do not establish inactivity or universal absence. Shared cluster/publication membership cannot add a biological occurrence, target or activity from hordediene or 11-hydroxy-hordetriene.
+
+### Computed classification applicability
+
+consistency: supported. Targets: naturalproductmech:mibig-c08c967ca6.
+
+The named/versioned NPClassifier output is Terpenoids, Diterpenoids, Cleistanthane diterpenoids and is_glycoside:false. A C20 aromatic hydrocarbon is compatible with broad diterpenoid filing and has no represented sugar or glycosidic linkage. The precise Cleistanthane prediction is retained as computed provenance, without treating it as a source assertion, direct enzyme mechanism or independently confirmed scaffold assignment. It is kept separate from MIBiG TERPENE and from the different fine-class prediction for hordediene; no model result is silently harmonized across companions.
+
+### Scientific completion
+
+completeness: unknown. Targets: naturalproductmech:mibig-c08c967ca6.
+
+The review is partial after complete current owner/history, actual intake, retained source evidence and both molecular forms were assessed. Source fidelity and represented configurations are locally supported, but primary experimental/natural-identity evidence was not refreshed. No mechanism root requires a maintained reader. Full QC and complete OAK coverage remain unavailable; the accepted diagnostic and local gates do not remove those limits. No supported local record correction is identified, and no source status/history is changed.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| bgc-2335-owner | /private/tmp/npm-record-reviews-20261021/data/natural_products/terpenoids/hordetriene.yaml; Whole current owner plaintext and complete curation_history | supports | Complete current owner and all 2 history entries; native curation_status remains SEEDED. |
+| bgc-2335-capture | /private/tmp/npm-review-work/shared-next-batch234/owner-capture-DATA-001.json; /records/4 | supports | Complete captured owner preserves every written field/history; selected maintained-reader applicability is false and no component reference is declared. |
+| bgc-2335-intake | /private/tmp/npm-review-work/shared-next-batch234/intakes/2335-inspect-001.json; /status; /repository; /source; /targets | supports | Actual canonical intake for naturalproductmech:mibig-c08c967ca6; 39 pinned input placements and explicit maintained source/curator ownership. |
+| bgc-2335-grounding-owner | /private/tmp/npm-review-work/shared-next-batch234/owner-capture-DATA-001.json; /records/4/owner_document | supports | Complete written field projection; absence is bounded by the complete captured owner: {"chemical_structure":{"smiles":"[H][C@@]23CCc1c(ccc(C)c1CC)[C@@]2(C)CCC[C@@]3(C)C","standard_inchi":"InChI=1S/C20H30/c1-6-15-14(2)8-10-17-16(15)9-11-18-19(3,4)12-7-13-20(17,18)5/h8,10,18H,6-7,9,11-13H2,1-5H3/t18-,20+/m0/s1","standard_inchi_key":"JAXBFJVZLAUHTD-AZUAARDMSA-N","stereo_complete":true,"structure_source":"MIBIG","structure_source_id":"mibig:BGC0002395"},"grounding_notes":"No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.","grounding_status":"MINTED","identifier":"naturalproductmech:mibig-c08c967ca6","label":"hordetriene","source_concepts":[{"minted_identifier":"naturalproductmech:mibig-c08c967ca6","source":"MIBIG","source_id":"BGC0002395","source_label":"hordetriene","source_version":"2"}]} |
+| bgc-2335-origin-owner | /private/tmp/npm-review-work/shared-next-batch234/owner-capture-DATA-001.json; /records/4/owner_document | supports | Complete written field projection; absence is bounded by the complete captured owner: {"biosynthetic_gene_clusters":[{"accession":"mibig:BGC0002395","bgc_class":["TERPENE"],"entry_status":"active","entry_version":"2","evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"MIBiG BGC0002395 entry version 2; citation taken from the entry level","reference":"DOI:10.1101/2021.05.21.445084"}],"genome_accession":"genbank:GPC_000011790.1","link_evidence_basis":"CLUSTER_DEMONSTRATED","locus_evidence_methods":["Heterologous expression","Enzymatic assays"],"locus_from":9581242,"locus_to":10180879,"organism_label":"Hordeum vulgare subsp. vulgare","organism_taxon_id":"NCBITaxon:112509"}],"producer_organisms":[{"biosynthetic_gene_cluster":"mibig:BGC0002395","evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"MIBiG BGC0002395 entry version 2; citation taken from the entry level","reference":"DOI:10.1101/2021.05.21.445084"}],"evidence_basis":"SOURCE_ASSERTION","notes":"Locus evidence: Heterologous expression&#124;Enzymatic assays. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different question.","source":"MIBIG","source_version":"2","taxon_id":"NCBITaxon:112509","taxon_label":"Hordeum vulgare subsp. vulgare"}],"producer_taxon_groups":["LAND_PLANT"],"source_concepts":[{"minted_identifier":"naturalproductmech:mibig-c08c967ca6","source":"MIBIG","source_id":"BGC0002395","source_label":"hordetriene","source_version":"2"}]} |
+| bgc-2335-occurrence-owner | /private/tmp/npm-review-work/shared-next-batch234/owner-capture-DATA-001.json; /records/4/owner_document | supports | Complete written field projection; absence is bounded by the complete captured owner: {"grounding_notes":"No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier."} |
+| bgc-2335-assay-owner | /private/tmp/npm-review-work/shared-next-batch234/owner-capture-DATA-001.json; /records/4/owner_document | supports | Complete written field projection; absence is bounded by the complete captured owner: {} |
+| bgc-2335-classification-owner | /private/tmp/npm-review-work/shared-next-batch234/owner-capture-DATA-001.json; /records/4/owner_document | supports | Complete written field projection; absence is bounded by the complete captured owner: {"bgc_class":["TERPENE"],"biosynthesis_origin":"NATURAL_PRODUCT","np_classification":{"class_results":["Cleistanthane diterpenoids"],"is_glycoside":false,"pathway_results":["Terpenoids"],"superclass_results":["Diterpenoids"],"tool":"NPClassifier","tool_version":"npclassifier.gnps2.org@2026-09-07"},"np_pathway":"TERPENOIDS"} |
+| bgc-2335-chemistry | /private/tmp/npm-review-work/shared-next-batch234/chemistry-local/diagnostic-DATA-001.json; /records/4/declared_structure; /records/4/smiles/status; /records/4/inchi/status; /records/4/smiles/computed; /records/4/inchi/computed; /records/4/comparisons; /records/4/atom_correspondence | supports | Both stored forms parsed. Exact original comparison/correspondence and stereo values: {"atom_correspondence":{"complete_atom_count_match":true,"full_graph_identity_established":false,"scope":"One chirality-aware substructure match; no independent full graph or natural identity claim.","smiles_to_inchi_atom_indices":[17,10,8,15,16,9,7,13,1,14,5,0,19,4,12,6,11,18,2,3]},"comparisons":{"atom_count_equal":true,"bond_count_equal":true,"both_keys_equal_declared":true,"canonical_isomeric_smiles_equal":true,"canonical_nonisomeric_smiles_equal":true,"formal_charge_equal":true,"formula_equal":true,"smiles_formula_equals_literal_InChI_main_layer":true,"standard_inchi_equal":true,"standard_inchi_key_equal":true},"declared_structure":{"smiles":"[H][C@@]23CCc1c(ccc(C)c1CC)[C@@]2(C)CCC[C@@]3(C)C","standard_inchi":"InChI=1S/C20H30/c1-6-15-14(2)8-10-17-16(15)9-11-18-19(3,4)12-7-13-20(17,18)5/h8,10,18H,6-7,9,11-13H2,1-5H3/t18-,20+/m0/s1","standard_inchi_key":"JAXBFJVZLAUHTD-AZUAARDMSA-N","stereo_complete":true,"structure_source":"MIBIG","structure_source_id":"mibig:BGC0002395"},"saved_stereo":{"inchi":{"Atom_Tetrahedral:Specified":2},"smiles":{"Atom_Tetrahedral:Specified":2}}} |
+| bgc-2335-topology | /private/tmp/npm-review-work/shared-next-batch234/chemistry-local/diagnostic-DATA-001.json; /records/4/smiles/computed; /records/4/inchi/computed; /records/4/declared_structure; /records/4/literal_InChI_layers; /records/4/comparisons; /records/4/atom_correspondence | supports | Complete saved topology interpretation: Both saved forms represent neutral C20H30 with 20 carbon atoms, 22 bonds and one component. The cycle basis has three six-membered carbocycles: one aromatic ring and two nonaromatic rings. SMILES atoms 3/4/5/6/7/9 are aromatic; the saved bond table preserves that aromaticity rather than assigning three independent acyclic alkene geometries. Two tetrahedral centres are specified, SMILES 0S/12S corresponding to InChI-form 17S/19S, with none unresolved. There are no oxygen atoms, sugar residues or glycosidic linkages. All ten comparison flags and complete atom-count correspondence are true, while full_graph_identity_established remains false. This agreement does not independently establish the natural product or a conversion from its companions. |
+| bgc-2335-diagnostic-execution | /private/tmp/npm-review-work/shared-next-batch234/chemistry-local/diagnostic-execution-001.json; Whole current diagnostic-execution | supports | ROOT operated one original stored-form diagnostic, exit 0, one attempt, preserved original streams and closed environment. This execution receipt is not independent scientific verification. |
+| bgc-2335-diagnostic-acceptance | /private/tmp/npm-review-work/shared-next-batch234/root-diagnostic-acceptance-001.json; /status; /accepted; /DATA; /execution; /verification; /warnings_scope; /limits | supports | ROOT accepts the original 20 stored parses and exact original comparisons/key/capture joins. Four original undefined-stereo warnings remain global and unassigned. Acceptance establishes local execution integrity, not natural identity or full graph proof. |
+| bgc-2335-native-acceptance | /private/tmp/npm-review-work/shared-next-batch234/root-native-five-gates-acceptance-001.json; Whole current native-acceptance | supports | Five original local gates passed. Full QC and complete OAK coverage remain unavailable, so these results do not establish all required validation or a scientific verdict. |
+| bgc-2335-intake-acceptance | /private/tmp/npm-review-work/shared-next-batch234/root-intake-acceptance-001.json; Whole current intake-acceptance | supports | ROOT accepts ten actual canonical intakes and exact current source ownership/input plans; scientific assessment is separate. |
+| bgc-2335-inventory-acceptance | /private/tmp/npm-review-work/shared-next-batch234/root-source-inventory-acceptance-001.json; Whole current inventory-acceptance | supports | ROOT accepts the original saved inventory and current input/raw/query/row joins. Complete meaning reading is separately attributed in source notes. |
+| bgc-2335-plan-acceptance | /private/tmp/npm-review-work/shared-next-batch234/root-input-plan-acceptance-001.json; Whole current plan-acceptance | supports | ROOT accepts the actual input plan and preserved source contexts, without a scientific verdict. |
+| bgc-2335-plan | /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-target-input-plan-001.json; /records/4 | supports | Current one-record input plan with exact direct companions, predicates and input roles. |
+| bgc-2335-source-notes | /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-scope-notes-001.json; /reading; /cautions; /scientific_limits | supports | Complete disjoint source/raw-history reading and exact carries, with compound-specific cautions; source planning did not adjudicate pre-intake science. |
+| bgc-2335-curation-scope | /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-scope-notes-001.json; /curation | supports | Eight explicitly opened implemented curation tables, including ignored files, were scanned over 92 distinct exact literals with zero textual hits in this bounded scope. Reserved decisions.tsv was not consumed. |
+| bgc-2335-query-mibig_compounds | /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json; /contexts/15/source_scope_inventory/joins/mibig_compounds | supports | Complete retained query frame, exact predicate and all matches/no-match fields: {"matches":[{"last_physical_line":2948,"physical_line":2948,"raw_tsv_record":"BGC0002395\t2\tactive\tquestionable\tunknown\thordetriene\t3\t[H][C@@]23CCc1c(ccc(C)c1CC)[C@@]2(C)CCC[C@@]3(C)C\tInChI=1S/C20H30/c1-6-15-14(2)8-10-17-16(15)9-11-18-19(3,4)12-7-13-20(17,18)5/h8,10,18H,6-7,9,11-13H2,1-5H3/t18-,20+/m0/s1\tJAXBFJVZLAUHTD-AZUAARDMSA-N\ttrue\t\t\tNCBITaxon:112509\tHordeum vulgare subsp. vulgare\tterpene\tUnknown\tGPC_000011790.1\t9581242\t10180879\tHeterologous expression&#124;Enzymatic assays\tSOURCE_ASSERTION\tCLUSTER_DEMONSTRATED\tDOI:10.1101/2021.05.21.445084\tENTRY\n","row":{"bgc_classes":"terpene","bgc_subclasses":"Unknown","cluster_link_evidence_basis":"CLUSTER_DEMONSTRATED","compound_classes":"","compound_index":"3","compound_name":"hordetriene","database_ids":"","entry_completeness":"unknown","entry_quality":"questionable","entry_status":"active","entry_version":"2","genome_accession":"GPC_000011790.1","locus_evidence_methods":"Heterologous expression&#124;Enzymatic assays","locus_from":"9581242","locus_to":"10180879","mibig_accession":"BGC0002395","primary_reference":"DOI:10.1101/2021.05.21.445084","producer_evidence_basis":"SOURCE_ASSERTION","reference_basis":"ENTRY","smiles":"[H][C@@]23CCc1c(ccc(C)c1CC)[C@@]2(C)CCC[C@@]3(C)C","standard_inchi":"InChI=1S/C20H30/c1-6-15-14(2)8-10-17-16(15)9-11-18-19(3,4)12-7-13-20(17,18)5/h8,10,18H,6-7,9,11-13H2,1-5H3/t18-,20+/m0/s1","standard_inchi_key":"JAXBFJVZLAUHTD-AZUAARDMSA-N","stereo_complete":"true","taxon_id":"NCBITaxon:112509","taxon_label":"Hordeum vulgare subsp. vulgare"},"row_sha256":"d47b4fcb81c275610cff697c9434e2ba7e12d7b4e5cbacef973ce97b4349451d"}],"predicate":"exact complete standard_inchi_key equality","query":"JAXBFJVZLAUHTD-AZUAARDMSA-N"} |
+| bgc-2335-source-mibig_compounds | /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv; Header line 1; physical lines 2948–2948, row_sha256 d47b4fcb81c275610cff697c9434e2ba7e12d7b4e5cbacef973ce97b4349451d | supports | Complete retained physical row payloads, every field: [{"bgc_classes":"terpene","bgc_subclasses":"Unknown","cluster_link_evidence_basis":"CLUSTER_DEMONSTRATED","compound_classes":"","compound_index":"3","compound_name":"hordetriene","database_ids":"","entry_completeness":"unknown","entry_quality":"questionable","entry_status":"active","entry_version":"2","genome_accession":"GPC_000011790.1","locus_evidence_methods":"Heterologous expression&#124;Enzymatic assays","locus_from":"9581242","locus_to":"10180879","mibig_accession":"BGC0002395","primary_reference":"DOI:10.1101/2021.05.21.445084","producer_evidence_basis":"SOURCE_ASSERTION","reference_basis":"ENTRY","smiles":"[H][C@@]23CCc1c(ccc(C)c1CC)[C@@]2(C)CCC[C@@]3(C)C","standard_inchi":"InChI=1S/C20H30/c1-6-15-14(2)8-10-17-16(15)9-11-18-19(3,4)12-7-13-20(17,18)5/h8,10,18H,6-7,9,11-13H2,1-5H3/t18-,20+/m0/s1","standard_inchi_key":"JAXBFJVZLAUHTD-AZUAARDMSA-N","stereo_complete":"true","taxon_id":"NCBITaxon:112509","taxon_label":"Hordeum vulgare subsp. vulgare"}] |
+| bgc-2335-query-chebi_structures | /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json; /contexts/15/source_scope_inventory/joins/chebi_structures | supports | Complete retained query frame, exact predicate and all matches/no-match fields: {"matches":[],"predicate":"exact complete standard_inchi_key equality","query":"JAXBFJVZLAUHTD-AZUAARDMSA-N"} |
+| bgc-2335-query-lotus_occurrences | /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json; /contexts/15/source_scope_inventory/joins/lotus_occurrences | supports | Complete retained query frame, exact predicate and all matches/no-match fields: {"matches":[],"predicate":"exact complete standard_inchi_key equality","query":"JAXBFJVZLAUHTD-AZUAARDMSA-N"} |
+| bgc-2335-query-cyanometdb_occurrences | /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json; /contexts/15/source_scope_inventory/joins/cyanometdb_occurrences | supports | Complete retained query frame, exact predicate and all matches/no-match fields: {"matches":[],"predicate":"exact complete standard_inchi_key equality","query":"JAXBFJVZLAUHTD-AZUAARDMSA-N"} |
+| bgc-2335-query-npclassifier | /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json; /contexts/15/source_scope_inventory/joins/npclassifier | supports | Complete retained query frame, exact predicate and all matches/no-match fields: {"matches":[{"last_physical_line":1071,"physical_line":1071,"raw_tsv_record":"JAXBFJVZLAUHTD-AZUAARDMSA-N\t[H][C@@]23CCc1c(ccc(C)c1CC)[C@@]2(C)CCC[C@@]3(C)C\tTerpenoids\tDiterpenoids\tCleistanthane diterpenoids\tfalse\tnpclassifier.gnps2.org@2026-09-07\n","row":{"class_results":"Cleistanthane diterpenoids","is_glycoside":"false","model_version":"npclassifier.gnps2.org@2026-09-07","pathway_results":"Terpenoids","smiles":"[H][C@@]23CCc1c(ccc(C)c1CC)[C@@]2(C)CCC[C@@]3(C)C","standard_inchi_key":"JAXBFJVZLAUHTD-AZUAARDMSA-N","superclass_results":"Diterpenoids"},"row_sha256":"28d9331abce13e8c351c14bf3f51504c85b2f89e0274fd0b265b81be8e0a2fec"}],"predicate":"exact complete standard_inchi_key equality","query":"JAXBFJVZLAUHTD-AZUAARDMSA-N"} |
+| bgc-2335-source-npclassifier | /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv; Header line 1; physical lines 1071–1071, row_sha256 28d9331abce13e8c351c14bf3f51504c85b2f89e0274fd0b265b81be8e0a2fec | supports | Complete retained physical row payloads, every field: [{"class_results":"Cleistanthane diterpenoids","is_glycoside":"false","model_version":"npclassifier.gnps2.org@2026-09-07","pathway_results":"Terpenoids","smiles":"[H][C@@]23CCc1c(ccc(C)c1CC)[C@@]2(C)CCC[C@@]3(C)C","standard_inchi_key":"JAXBFJVZLAUHTD-AZUAARDMSA-N","superclass_results":"Diterpenoids"}] |
+| bgc-2335-query-pubchem_bioassay | /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json; /contexts/15/source_scope_inventory/joins/pubchem_bioassay | supports | Complete retained query frame, exact predicate and all matches/no-match fields: {"matches":[],"predicate":"exact complete standard_inchi_key equality","query":"JAXBFJVZLAUHTD-AZUAARDMSA-N"} |
+| bgc-2335-query-bindingdb_targets | /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json; /contexts/15/source_scope_inventory/joins/bindingdb_targets | supports | Complete retained query frame, exact predicate and all matches/no-match fields: {"matches":[],"predicate":"exact complete standard_inchi_key equality","query":"JAXBFJVZLAUHTD-AZUAARDMSA-N"} |
+| bgc-2335-query-antibioticmech_inchikeys | /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json; /contexts/15/source_scope_inventory/joins/antibioticmech_inchikeys | supports | Complete retained query frame, exact predicate and all matches/no-match fields: {"matches":[],"predicate":"exact complete standard_inchi_key equality","query":"JAXBFJVZLAUHTD-AZUAARDMSA-N"} |
+| bgc-2335-query-chebi_origins | /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json; /contexts/15/source_scope_inventory/joins/chebi_origins | supports | Complete retained query frame, exact predicate and all matches/no-match fields: {"matches":[],"predicate":"exact chebi_id from exact full-key structure rows","query":[]} |
+| bgc-2335-source-routes | /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json; /contexts/15/source_scope_inventory/source_taxa; /contexts/15/source_scope_inventory/forward_taxon_merge_matches; /contexts/15/source_scope_inventory/nonorganism_matches; /contexts/15/source_scope_inventory/actual_assay_rows; /contexts/15/source_scope_inventory/blank_AID_sentinels; /contexts/15/source_scope_inventory/related_corpus_rows | supports | Exact source taxa and route lists; source_taxa is distinct from the empty forward/nonorganism and actual-assay/related routes; a blank-AID sentinel is separate: {"actual_assay_rows":[],"blank_AID_sentinels":[],"forward_taxon_merge_matches":[],"nonorganism_matches":[],"related_corpus_rows":[],"source_taxa":["NCBITaxon:112509"]} |
+| bgc-2335-cached-taxonomy | /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json; /cached_taxonomy/input; /cached_taxonomy/whole_stanzas/20 | supports | Complete relevant cached stanzas, with no fresh taxonomy verification: [{"complete_stanza":"[Term]\nid: NCBITaxon:112509\nname: Hordeum vulgare subsp. vulgare\nsynonym: \"Hordeum sativum\" EXACT []\nsynonym: \"Hordeum vulgare var. nudum\" EXACT []\nsynonym: \"Hordeum vulgare var. vulgare\" EXACT []\n\n","id":"NCBITaxon:112509","physical_line":44501}] |
+| bgc-2335-direct-contexts | /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json; /records/4/direct_companion_paths; /records/4/direct_companion_predicates | supports | Exact one-hop scope, with no claim transfer: {"direct_companion_paths":["data/natural_products/terpenoids/11-hydroxy-hordetriene.yaml","data/natural_products/terpenoids/hordediene.yaml"],"direct_companion_predicates":[{"path":"data/natural_products/terpenoids/11-hydroxy-hordetriene.yaml","same_complete_InChIKey":false,"same_root_identifier":false,"shared_owned_BGCs":["BGC0002395"]},{"path":"data/natural_products/terpenoids/hordediene.yaml","same_complete_InChIKey":false,"same_root_identifier":false,"shared_owned_BGCs":["BGC0002395"]}]} |
+| bgc-2335-companion-boundaries | /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json; /contexts/6; /contexts/14 | supports | Complete context meanings/raw histories are attributed in the notes; exact identity/root boundaries: [{"declared_mechanism_roots_literal":[],"history_count":2,"identifier":"naturalproductmech:mibig-d48eb9f379","label":"11-hydroxy-hordetriene","owned_bgc_ids":["BGC0002395"],"path":"data/natural_products/terpenoids/11-hydroxy-hordetriene.yaml","standard_inchi_key":"YYSUSRQGRLYIIF-PXNSSMCTSA-N"},{"declared_mechanism_roots_literal":[],"history_count":2,"identifier":"naturalproductmech:mibig-0fe3bf9750","label":"hordediene","owned_bgc_ids":["BGC0002395"],"path":"data/natural_products/terpenoids/hordediene.yaml","standard_inchi_key":"ARGPOPPJQDBJKF-ZAAXVRCTSA-N"}] |
+| bgc-2335-structure-schema | /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml; Lines 392–433 | supports | The structure flag describes undefined stereocentres. ComputedClassification is explicitly a named/versioned prediction from structure, never a source assertion or an admission criterion. |
+| bgc-2335-stereo-method | /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py; Lines 142–173 | supports | Maintained stereo_complete derives from FindMolChiralCenters and absence of question-mark centre tags. It is not blanket all-bond-geometry or natural-identity proof. |
+| bgc-2335-classification-seeder | /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py; Lines 972–1020 | supports | Maintained seeding preserves lead source structures and named/versioned computed predictions separately; the computed pathway can control filing without becoming a source assertion. |
+| bgc-2335-review-profile | /private/tmp/npm-record-reviews-20261021/docs/record-review-profile.md; Whole current profile | supports | One-record claim-level scientific review requires twelve dimensions and truthful partial completion/unavailable-check limits. |
+| bgc-2335-review-skill | /private/tmp/npm-record-reviews-20261021/.claude/skills/review-yaml-record/SKILL.md; Whole current skill | supports | The review does not edit source records; the overriding absolute no-request instruction limits evidence access to retained local files. |
+| root-native-strict_ten | /private/tmp/npm-native-checks/batch-234/validate-strict-selected10-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-234/native-current234-five-gates-execution-001.json | supports | Closed-schema validation of the ten selected owners and any referenced components reported zero errors. |
+| root-native-strict_full | /private/tmp/npm-native-checks/batch-234/validate-all-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-234/native-current234-five-gates-execution-001.json | supports | Full closed-schema validation scanned all 3116 owners and reported zero errors. |
+| root-native-lockfile | /private/tmp/npm-native-checks/batch-234/verify-corpus-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-234/native-current234-five-gates-execution-001.json | supports | PATHS.tsv and filesystem agree on all 3116 records and their pinned filing pathways. |
+| root-native-reproduction | /private/tmp/npm-native-checks/batch-234/verify-reproduction-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-234/native-current234-five-gates-execution-001.json | supports | All 3116 records reproduce byte-identically from the retained inventories and carried curator content. This does not independently validate curator science. |
+| root-native-queue | /private/tmp/npm-native-checks/batch-234/review-queue-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-234/native-current234-five-gates-execution-001.json | supports | The full local queue contains 8922 diagnostic rows; selected-target entries were inspected. Queue diagnostics are leads, not scientific sign-off. |
+
+## Limits And Additional Notes
+
+- All evidence is retained locally. No external identifier, taxonomy, primary publication, protein sequence or natural stereochemical assignment was refreshed under the absolute no-request instruction.
+- Full QC and complete OAK authority coverage remain unavailable. Local gate and parse success establish only their explicit mechanical scope; no maintained reader applies to these owners.
+- Exact no-match joins are bounded by saved predicates/snapshots. Shared names, loci, taxa, citations or companions do not transfer compound-specific production, activity, mechanism or independent-study status.
+- Four original undefined-stereo warnings are global and unassigned. No additional molecular/YAML parse, source query or target invocation occurred during this scientific authoring.
+- No source record, native status or history is edited. Any supported future correction belongs to the maintained source/curator owners listed in the actual canonical intake.
+- The whole selected owner was read, but scientific completion is partial because full QC, complete ontology authority coverage and external source verification were unavailable. No native status or history was changed.
+- The branch uses cached base ce6a5498df5be51116bd5e0c119023ee62bb5464. Fresh origin/main verification and publication are deferred because the user prohibits all external requests.
+- Complete owner/history and actual intake were read. Full source payload meanings and direct-companion/raw-history carries remain explicitly attributed in pinned source notes.
+- BGC personally read all ten first-five molecular forms: 216 atom rows / 240 bond rows plus complete scalars, ring/stereo/motif tables and original comparisons/maps. Diagnostic indices are zero-based, not biochemical locants.
+- ROOT operated original activation/capture, collector/composer, canonical intakes and chemistry; Native operated original gates; no maintained reader applies to these five owners. BGC authored source planning and these scientific assessments without invoking any target during scientific authoring.
+- Saved review coverage is distinct from the native SEEDED/REVIEWED curation state. Proposed actions are not performed edits.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261104T034230Z-hordetriene
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'Local evidence review: hordetriene'
+started_at: '2026-11-04T02:51:03.727368Z'
+finished_at: '2026-11-04T03:42:30.344532Z'
+reviewer:
+  identity: Codex root with native_checks, bgc_science and review_support peer agents
+  kind: agent
+  independence: independent
+  independence_basis: This review team inspected existing owner and retained source
+    bytes without editing them; scientific fragments were cross-checked separately
+    from their author. Local validation is not treated as scientific proof.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: Hordetriene retains agreeing C20H30 forms with one aromatic carbocycle, two
+  additional carbocycles and two specified tetrahedral centres. Its source-asserted
+  barley producer, demonstrated locus grade and computed Cleistanthane class are separately
+  preserved. The shared BGC does not establish identity or an interconversion pathway
+  with Hordediene.
+source:
+  git_revision: ce6a5498df5be51116bd5e0c119023ee62bb5464
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: AGENTS.md
+    sha256: 69e4037f8dc97d4b00bb7bb83b41ceca025f6ef578d5c0bf8086f3400becde0b
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/terpenoids/11-hydroxy-hordetriene.yaml
+    sha256: b708b4a7aa0ec347ecda6e63449cd814d1c0fe70893453ddf4b1ab819371effc
+    role: context
+  - path: data/natural_products/terpenoids/hordediene.yaml
+    sha256: 6f7d95f18f9311bef2f6032b375a4bf38958867a75a1883d2129786e3ab1113a
+    role: context
+  - path: data/natural_products/terpenoids/hordetriene.yaml
+    sha256: b3b86eaaa184082644e6cb658e8093bf328be24901ed32144cbec449945fcb7e
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete NaturalProductRecord, including all present scientific
+    claims, history and declared mechanisms; external verification remains unavailable.
+  selection: Campaign path order 2335; one of the next ten uncovered paths selected
+    from the 3116-record corpus. Membership uses the canonical validated catalogue
+    plus retained committed campaign bundles.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-c08c967ca6
+targets:
+- target_id: naturalproductmech:mibig-c08c967ca6
+  path: data/natural_products/terpenoids/hordetriene.yaml
+  label: hordetriene
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained harmonization generator; seeded fields are corrected through
+      maintained inputs and validated regeneration.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Retained MIBiG structure, producer and compound-specific locus assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/npclassifier.tsv
+    role: Pinned computed classification and filing assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Maintained extraction of MIBiG compound names, structures, stereochemistry
+      flags and source provenance.
+  ownership_note: This review proposes no record edit. Source corrections belong in
+    maintained inventories, implemented curation tables, extractors or the seeder;
+    generated pages are not owners.
+checks:
+- check_id: root-native-strict_ten
+  name: strict_ten
+  status: passed
+  required: true
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  target_ids:
+  - naturalproductmech:mibig-c08c967ca6
+  command: just validate-strict data/natural_products/terpenoids/heptelidic-acid.yaml
+    data/natural_products/terpenoids/hirsutene.yaml data/natural_products/terpenoids/hopene.yaml
+    data/natural_products/terpenoids/hordediene.yaml data/natural_products/terpenoids/hordetriene.yaml
+    data/natural_products/terpenoids/hygromycin-a.yaml data/natural_products/terpenoids/indosespene.yaml
+    data/natural_products/terpenoids/isobrevione-e.yaml data/natural_products/terpenoids/isochloro-merochlorin-b.yaml
+    data/natural_products/terpenoids/isorenieratene.yaml --workers 1 --out /private/tmp/npm-native-checks/batch-234/validate-strict-selected10-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_ten
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-strict_full
+  name: strict_full
+  status: passed
+  required: true
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  target_ids:
+  - naturalproductmech:mibig-c08c967ca6
+  command: just validate-all --workers 1 --out /private/tmp/npm-native-checks/batch-234/validate-all-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_full
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-lockfile
+  name: lockfile
+  status: passed
+  required: true
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  target_ids:
+  - naturalproductmech:mibig-c08c967ca6
+  command: just verify-corpus --summary
+  exit_code: 0
+  evidence_ids:
+  - root-native-lockfile
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-reproduction
+  name: reproduction
+  status: passed
+  required: true
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  target_ids:
+  - naturalproductmech:mibig-c08c967ca6
+  command: just verify-reproduction
+  exit_code: 0
+  evidence_ids:
+  - root-native-reproduction
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-queue
+  name: queue
+  status: passed
+  required: true
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  target_ids:
+  - naturalproductmech:mibig-c08c967ca6
+  command: just review-queue --tsv /private/tmp/npm-native-checks/batch-234/review-queue-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-queue
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-full-qc
+  name: Full just qc
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-c08c967ca6
+  summary: 'Not run under the external-request prohibition: the complete recipe includes
+    upstream vendored synchronization. The five executed local checks are recorded
+    separately.'
+- check_id: root-ontology-authorities
+  name: Complete OAK identifier/label authority check
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-c08c967ca6
+  summary: Complete offline ontology authority coverage was not established for this
+    run; no ontology retrieval or remote resolution was attempted. Retained taxonomy
+    evidence has only its explicitly stated local scope.
+- check_id: root-primary-and-live-sources
+  name: Primary literature and current structured database/identifier verification
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-c08c967ca6
+  summary: All external requests are prohibited by the user. Fresh database and identifier
+    verification and complete primary-literature coverage are unavailable. Any retained
+    original literature actually inspected is recorded separately with its historical
+    scope.
+evidence:
+- evidence_id: bgc-2335-owner
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/terpenoids/hordetriene.yaml
+  locator: Whole current owner plaintext and complete curation_history
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: Complete current owner and all 2 history entries; native curation_status
+    remains SEEDED.
+  snapshot_sha256: b3b86eaaa184082644e6cb658e8093bf328be24901ed32144cbec449945fcb7e
+- evidence_id: bgc-2335-capture
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/owner-capture-DATA-001.json
+  locator: /records/4
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: Complete captured owner preserves every written field/history; selected
+    maintained-reader applicability is false and no component reference is declared.
+  snapshot_sha256: 685e975cd87c5fcbc0cd260bdba7c0a2934720ad590120a3c7b9bf4c921410c2
+- evidence_id: bgc-2335-intake
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/intakes/2335-inspect-001.json
+  locator: /status; /repository; /source; /targets
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: Actual canonical intake for naturalproductmech:mibig-c08c967ca6; 39 pinned
+    input placements and explicit maintained source/curator ownership.
+  snapshot_sha256: 91680dae837d77ac4fc393ec796a868c5c2f1c927a370084b4d836a983e0421a
+- evidence_id: bgc-2335-grounding-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/owner-capture-DATA-001.json
+  locator: /records/4/owner_document
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete written field projection; absence is bounded by the complete
+    captured owner: {"chemical_structure":{"smiles":"[H][C@@]23CCc1c(ccc(C)c1CC)[C@@]2(C)CCC[C@@]3(C)C","standard_inchi":"InChI=1S/C20H30/c1-6-15-14(2)8-10-17-16(15)9-11-18-19(3,4)12-7-13-20(17,18)5/h8,10,18H,6-7,9,11-13H2,1-5H3/t18-,20+/m0/s1","standard_inchi_key":"JAXBFJVZLAUHTD-AZUAARDMSA-N","stereo_complete":true,"structure_source":"MIBIG","structure_source_id":"mibig:BGC0002395"},"grounding_notes":"No
+    3-star ChEBI entry shares this structure, so the record keeps a content-hashed
+    identifier.","grounding_status":"MINTED","identifier":"naturalproductmech:mibig-c08c967ca6","label":"hordetriene","source_concepts":[{"minted_identifier":"naturalproductmech:mibig-c08c967ca6","source":"MIBIG","source_id":"BGC0002395","source_label":"hordetriene","source_version":"2"}]}'
+  snapshot_sha256: 685e975cd87c5fcbc0cd260bdba7c0a2934720ad590120a3c7b9bf4c921410c2
+- evidence_id: bgc-2335-origin-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/owner-capture-DATA-001.json
+  locator: /records/4/owner_document
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete written field projection; absence is bounded by the complete
+    captured owner: {"biosynthetic_gene_clusters":[{"accession":"mibig:BGC0002395","bgc_class":["TERPENE"],"entry_status":"active","entry_version":"2","evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"MIBiG
+    BGC0002395 entry version 2; citation taken from the entry level","reference":"DOI:10.1101/2021.05.21.445084"}],"genome_accession":"genbank:GPC_000011790.1","link_evidence_basis":"CLUSTER_DEMONSTRATED","locus_evidence_methods":["Heterologous
+    expression","Enzymatic assays"],"locus_from":9581242,"locus_to":10180879,"organism_label":"Hordeum
+    vulgare subsp. vulgare","organism_taxon_id":"NCBITaxon:112509"}],"producer_organisms":[{"biosynthetic_gene_cluster":"mibig:BGC0002395","evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"MIBiG
+    BGC0002395 entry version 2; citation taken from the entry level","reference":"DOI:10.1101/2021.05.21.445084"}],"evidence_basis":"SOURCE_ASSERTION","notes":"Locus
+    evidence: Heterologous expression|Enzymatic assays. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.","source":"MIBIG","source_version":"2","taxon_id":"NCBITaxon:112509","taxon_label":"Hordeum
+    vulgare subsp. vulgare"}],"producer_taxon_groups":["LAND_PLANT"],"source_concepts":[{"minted_identifier":"naturalproductmech:mibig-c08c967ca6","source":"MIBIG","source_id":"BGC0002395","source_label":"hordetriene","source_version":"2"}]}'
+  snapshot_sha256: 685e975cd87c5fcbc0cd260bdba7c0a2934720ad590120a3c7b9bf4c921410c2
+- evidence_id: bgc-2335-occurrence-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/owner-capture-DATA-001.json
+  locator: /records/4/owner_document
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete written field projection; absence is bounded by the complete
+    captured owner: {"grounding_notes":"No 3-star ChEBI entry shares this structure,
+    so the record keeps a content-hashed identifier."}'
+  snapshot_sha256: 685e975cd87c5fcbc0cd260bdba7c0a2934720ad590120a3c7b9bf4c921410c2
+- evidence_id: bgc-2335-assay-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/owner-capture-DATA-001.json
+  locator: /records/4/owner_document
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete written field projection; absence is bounded by the complete
+    captured owner: {}'
+  snapshot_sha256: 685e975cd87c5fcbc0cd260bdba7c0a2934720ad590120a3c7b9bf4c921410c2
+- evidence_id: bgc-2335-classification-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/owner-capture-DATA-001.json
+  locator: /records/4/owner_document
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete written field projection; absence is bounded by the complete
+    captured owner: {"bgc_class":["TERPENE"],"biosynthesis_origin":"NATURAL_PRODUCT","np_classification":{"class_results":["Cleistanthane
+    diterpenoids"],"is_glycoside":false,"pathway_results":["Terpenoids"],"superclass_results":["Diterpenoids"],"tool":"NPClassifier","tool_version":"npclassifier.gnps2.org@2026-09-07"},"np_pathway":"TERPENOIDS"}'
+  snapshot_sha256: 685e975cd87c5fcbc0cd260bdba7c0a2934720ad590120a3c7b9bf4c921410c2
+- evidence_id: bgc-2335-chemistry
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/4/declared_structure; /records/4/smiles/status; /records/4/inchi/status;
+    /records/4/smiles/computed; /records/4/inchi/computed; /records/4/comparisons;
+    /records/4/atom_correspondence
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Both stored forms parsed. Exact original comparison/correspondence and
+    stereo values: {"atom_correspondence":{"complete_atom_count_match":true,"full_graph_identity_established":false,"scope":"One
+    chirality-aware substructure match; no independent full graph or natural identity
+    claim.","smiles_to_inchi_atom_indices":[17,10,8,15,16,9,7,13,1,14,5,0,19,4,12,6,11,18,2,3]},"comparisons":{"atom_count_equal":true,"bond_count_equal":true,"both_keys_equal_declared":true,"canonical_isomeric_smiles_equal":true,"canonical_nonisomeric_smiles_equal":true,"formal_charge_equal":true,"formula_equal":true,"smiles_formula_equals_literal_InChI_main_layer":true,"standard_inchi_equal":true,"standard_inchi_key_equal":true},"declared_structure":{"smiles":"[H][C@@]23CCc1c(ccc(C)c1CC)[C@@]2(C)CCC[C@@]3(C)C","standard_inchi":"InChI=1S/C20H30/c1-6-15-14(2)8-10-17-16(15)9-11-18-19(3,4)12-7-13-20(17,18)5/h8,10,18H,6-7,9,11-13H2,1-5H3/t18-,20+/m0/s1","standard_inchi_key":"JAXBFJVZLAUHTD-AZUAARDMSA-N","stereo_complete":true,"structure_source":"MIBIG","structure_source_id":"mibig:BGC0002395"},"saved_stereo":{"inchi":{"Atom_Tetrahedral:Specified":2},"smiles":{"Atom_Tetrahedral:Specified":2}}}'
+  snapshot_sha256: 816109c1f8ded0ba3050e06805885b40faa13f7b8f59b68ed3c6e5f9509bbf2c
+- evidence_id: bgc-2335-topology
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/4/smiles/computed; /records/4/inchi/computed; /records/4/declared_structure;
+    /records/4/literal_InChI_layers; /records/4/comparisons; /records/4/atom_correspondence
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete saved topology interpretation: Both saved forms represent neutral
+    C20H30 with 20 carbon atoms, 22 bonds and one component. The cycle basis has three
+    six-membered carbocycles: one aromatic ring and two nonaromatic rings. SMILES
+    atoms 3/4/5/6/7/9 are aromatic; the saved bond table preserves that aromaticity
+    rather than assigning three independent acyclic alkene geometries. Two tetrahedral
+    centres are specified, SMILES 0S/12S corresponding to InChI-form 17S/19S, with
+    none unresolved. There are no oxygen atoms, sugar residues or glycosidic linkages.
+    All ten comparison flags and complete atom-count correspondence are true, while
+    full_graph_identity_established remains false. This agreement does not independently
+    establish the natural product or a conversion from its companions.'
+  snapshot_sha256: 816109c1f8ded0ba3050e06805885b40faa13f7b8f59b68ed3c6e5f9509bbf2c
+- evidence_id: bgc-2335-diagnostic-execution
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/chemistry-local/diagnostic-execution-001.json
+  locator: Whole current diagnostic-execution
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: ROOT operated one original stored-form diagnostic, exit 0, one attempt,
+    preserved original streams and closed environment. This execution receipt is not
+    independent scientific verification.
+  snapshot_sha256: 873fea2b7ac543d0193b0c1d9eb2e133b3cccf956df1b97740f2e7726f892caf
+- evidence_id: bgc-2335-diagnostic-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/root-diagnostic-acceptance-001.json
+  locator: /status; /accepted; /DATA; /execution; /verification; /warnings_scope;
+    /limits
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: ROOT accepts the original 20 stored parses and exact original comparisons/key/capture
+    joins. Four original undefined-stereo warnings remain global and unassigned. Acceptance
+    establishes local execution integrity, not natural identity or full graph proof.
+  snapshot_sha256: f7919a1be685503b598b6b4f44cc5afcefa1704c0a28293fd4faee95f6809e75
+- evidence_id: bgc-2335-native-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/root-native-five-gates-acceptance-001.json
+  locator: Whole current native-acceptance
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: Five original local gates passed. Full QC and complete OAK coverage remain
+    unavailable, so these results do not establish all required validation or a scientific
+    verdict.
+  snapshot_sha256: 9b347913accb95a57046572b329d24f2b6c534cd2508f62284190eeb4d7b671a
+- evidence_id: bgc-2335-intake-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/root-intake-acceptance-001.json
+  locator: Whole current intake-acceptance
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: ROOT accepts ten actual canonical intakes and exact current source ownership/input
+    plans; scientific assessment is separate.
+  snapshot_sha256: ab4d160d38578683c3857d1f68d898e77f4d78fada2c45a5dfbee2ac84711f4c
+- evidence_id: bgc-2335-inventory-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/root-source-inventory-acceptance-001.json
+  locator: Whole current inventory-acceptance
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: ROOT accepts the original saved inventory and current input/raw/query/row
+    joins. Complete meaning reading is separately attributed in source notes.
+  snapshot_sha256: 8620060199b8cb588265f159597b48ef2f5eec6524a4cf7df2cdd79b355691fd
+- evidence_id: bgc-2335-plan-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/root-input-plan-acceptance-001.json
+  locator: Whole current plan-acceptance
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: ROOT accepts the actual input plan and preserved source contexts, without
+    a scientific verdict.
+  snapshot_sha256: deb5f4c33ef02d9305b2facff8cb41fb97ce52a98ecdd06b4c4f76b57be743ca
+- evidence_id: bgc-2335-plan
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-target-input-plan-001.json
+  locator: /records/4
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: Current one-record input plan with exact direct companions, predicates
+    and input roles.
+  snapshot_sha256: e7c5d98e12dd26b964130aa3c74bcc688dde7562ea027f2f0409f775d60b5245
+- evidence_id: bgc-2335-source-notes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-scope-notes-001.json
+  locator: /reading; /cautions; /scientific_limits
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: Complete disjoint source/raw-history reading and exact carries, with compound-specific
+    cautions; source planning did not adjudicate pre-intake science.
+  snapshot_sha256: 685535fd23ffb826f01db2da0f521fe110097c0929a6ef8132722b2456ede5be
+- evidence_id: bgc-2335-curation-scope
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-scope-notes-001.json
+  locator: /curation
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: Eight explicitly opened implemented curation tables, including ignored
+    files, were scanned over 92 distinct exact literals with zero textual hits in
+    this bounded scope. Reserved decisions.tsv was not consumed.
+  snapshot_sha256: 685535fd23ffb826f01db2da0f521fe110097c0929a6ef8132722b2456ede5be
+- evidence_id: bgc-2335-query-mibig_compounds
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json
+  locator: /contexts/15/source_scope_inventory/joins/mibig_compounds
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete retained query frame, exact predicate and all matches/no-match
+    fields: {"matches":[{"last_physical_line":2948,"physical_line":2948,"raw_tsv_record":"BGC0002395\t2\tactive\tquestionable\tunknown\thordetriene\t3\t[H][C@@]23CCc1c(ccc(C)c1CC)[C@@]2(C)CCC[C@@]3(C)C\tInChI=1S/C20H30/c1-6-15-14(2)8-10-17-16(15)9-11-18-19(3,4)12-7-13-20(17,18)5/h8,10,18H,6-7,9,11-13H2,1-5H3/t18-,20+/m0/s1\tJAXBFJVZLAUHTD-AZUAARDMSA-N\ttrue\t\t\tNCBITaxon:112509\tHordeum
+    vulgare subsp. vulgare\tterpene\tUnknown\tGPC_000011790.1\t9581242\t10180879\tHeterologous
+    expression|Enzymatic assays\tSOURCE_ASSERTION\tCLUSTER_DEMONSTRATED\tDOI:10.1101/2021.05.21.445084\tENTRY\n","row":{"bgc_classes":"terpene","bgc_subclasses":"Unknown","cluster_link_evidence_basis":"CLUSTER_DEMONSTRATED","compound_classes":"","compound_index":"3","compound_name":"hordetriene","database_ids":"","entry_completeness":"unknown","entry_quality":"questionable","entry_status":"active","entry_version":"2","genome_accession":"GPC_000011790.1","locus_evidence_methods":"Heterologous
+    expression|Enzymatic assays","locus_from":"9581242","locus_to":"10180879","mibig_accession":"BGC0002395","primary_reference":"DOI:10.1101/2021.05.21.445084","producer_evidence_basis":"SOURCE_ASSERTION","reference_basis":"ENTRY","smiles":"[H][C@@]23CCc1c(ccc(C)c1CC)[C@@]2(C)CCC[C@@]3(C)C","standard_inchi":"InChI=1S/C20H30/c1-6-15-14(2)8-10-17-16(15)9-11-18-19(3,4)12-7-13-20(17,18)5/h8,10,18H,6-7,9,11-13H2,1-5H3/t18-,20+/m0/s1","standard_inchi_key":"JAXBFJVZLAUHTD-AZUAARDMSA-N","stereo_complete":"true","taxon_id":"NCBITaxon:112509","taxon_label":"Hordeum
+    vulgare subsp. vulgare"},"row_sha256":"d47b4fcb81c275610cff697c9434e2ba7e12d7b4e5cbacef973ce97b4349451d"}],"predicate":"exact
+    complete standard_inchi_key equality","query":"JAXBFJVZLAUHTD-AZUAARDMSA-N"}'
+  snapshot_sha256: cceb756ce0d1dcd24c26c05b558acf8366ebd9d830603ab3da900ce34934ec00
+- evidence_id: bgc-2335-source-mibig_compounds
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv
+  locator: Header line 1; physical lines 2948–2948, row_sha256 d47b4fcb81c275610cff697c9434e2ba7e12d7b4e5cbacef973ce97b4349451d
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete retained physical row payloads, every field: [{"bgc_classes":"terpene","bgc_subclasses":"Unknown","cluster_link_evidence_basis":"CLUSTER_DEMONSTRATED","compound_classes":"","compound_index":"3","compound_name":"hordetriene","database_ids":"","entry_completeness":"unknown","entry_quality":"questionable","entry_status":"active","entry_version":"2","genome_accession":"GPC_000011790.1","locus_evidence_methods":"Heterologous
+    expression|Enzymatic assays","locus_from":"9581242","locus_to":"10180879","mibig_accession":"BGC0002395","primary_reference":"DOI:10.1101/2021.05.21.445084","producer_evidence_basis":"SOURCE_ASSERTION","reference_basis":"ENTRY","smiles":"[H][C@@]23CCc1c(ccc(C)c1CC)[C@@]2(C)CCC[C@@]3(C)C","standard_inchi":"InChI=1S/C20H30/c1-6-15-14(2)8-10-17-16(15)9-11-18-19(3,4)12-7-13-20(17,18)5/h8,10,18H,6-7,9,11-13H2,1-5H3/t18-,20+/m0/s1","standard_inchi_key":"JAXBFJVZLAUHTD-AZUAARDMSA-N","stereo_complete":"true","taxon_id":"NCBITaxon:112509","taxon_label":"Hordeum
+    vulgare subsp. vulgare"}]'
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: bgc-2335-query-chebi_structures
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json
+  locator: /contexts/15/source_scope_inventory/joins/chebi_structures
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete retained query frame, exact predicate and all matches/no-match
+    fields: {"matches":[],"predicate":"exact complete standard_inchi_key equality","query":"JAXBFJVZLAUHTD-AZUAARDMSA-N"}'
+  snapshot_sha256: cceb756ce0d1dcd24c26c05b558acf8366ebd9d830603ab3da900ce34934ec00
+- evidence_id: bgc-2335-query-lotus_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json
+  locator: /contexts/15/source_scope_inventory/joins/lotus_occurrences
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete retained query frame, exact predicate and all matches/no-match
+    fields: {"matches":[],"predicate":"exact complete standard_inchi_key equality","query":"JAXBFJVZLAUHTD-AZUAARDMSA-N"}'
+  snapshot_sha256: cceb756ce0d1dcd24c26c05b558acf8366ebd9d830603ab3da900ce34934ec00
+- evidence_id: bgc-2335-query-cyanometdb_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json
+  locator: /contexts/15/source_scope_inventory/joins/cyanometdb_occurrences
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete retained query frame, exact predicate and all matches/no-match
+    fields: {"matches":[],"predicate":"exact complete standard_inchi_key equality","query":"JAXBFJVZLAUHTD-AZUAARDMSA-N"}'
+  snapshot_sha256: cceb756ce0d1dcd24c26c05b558acf8366ebd9d830603ab3da900ce34934ec00
+- evidence_id: bgc-2335-query-npclassifier
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json
+  locator: /contexts/15/source_scope_inventory/joins/npclassifier
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete retained query frame, exact predicate and all matches/no-match
+    fields: {"matches":[{"last_physical_line":1071,"physical_line":1071,"raw_tsv_record":"JAXBFJVZLAUHTD-AZUAARDMSA-N\t[H][C@@]23CCc1c(ccc(C)c1CC)[C@@]2(C)CCC[C@@]3(C)C\tTerpenoids\tDiterpenoids\tCleistanthane
+    diterpenoids\tfalse\tnpclassifier.gnps2.org@2026-09-07\n","row":{"class_results":"Cleistanthane
+    diterpenoids","is_glycoside":"false","model_version":"npclassifier.gnps2.org@2026-09-07","pathway_results":"Terpenoids","smiles":"[H][C@@]23CCc1c(ccc(C)c1CC)[C@@]2(C)CCC[C@@]3(C)C","standard_inchi_key":"JAXBFJVZLAUHTD-AZUAARDMSA-N","superclass_results":"Diterpenoids"},"row_sha256":"28d9331abce13e8c351c14bf3f51504c85b2f89e0274fd0b265b81be8e0a2fec"}],"predicate":"exact
+    complete standard_inchi_key equality","query":"JAXBFJVZLAUHTD-AZUAARDMSA-N"}'
+  snapshot_sha256: cceb756ce0d1dcd24c26c05b558acf8366ebd9d830603ab3da900ce34934ec00
+- evidence_id: bgc-2335-source-npclassifier
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv
+  locator: Header line 1; physical lines 1071–1071, row_sha256 28d9331abce13e8c351c14bf3f51504c85b2f89e0274fd0b265b81be8e0a2fec
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete retained physical row payloads, every field: [{"class_results":"Cleistanthane
+    diterpenoids","is_glycoside":"false","model_version":"npclassifier.gnps2.org@2026-09-07","pathway_results":"Terpenoids","smiles":"[H][C@@]23CCc1c(ccc(C)c1CC)[C@@]2(C)CCC[C@@]3(C)C","standard_inchi_key":"JAXBFJVZLAUHTD-AZUAARDMSA-N","superclass_results":"Diterpenoids"}]'
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: bgc-2335-query-pubchem_bioassay
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json
+  locator: /contexts/15/source_scope_inventory/joins/pubchem_bioassay
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete retained query frame, exact predicate and all matches/no-match
+    fields: {"matches":[],"predicate":"exact complete standard_inchi_key equality","query":"JAXBFJVZLAUHTD-AZUAARDMSA-N"}'
+  snapshot_sha256: cceb756ce0d1dcd24c26c05b558acf8366ebd9d830603ab3da900ce34934ec00
+- evidence_id: bgc-2335-query-bindingdb_targets
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json
+  locator: /contexts/15/source_scope_inventory/joins/bindingdb_targets
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete retained query frame, exact predicate and all matches/no-match
+    fields: {"matches":[],"predicate":"exact complete standard_inchi_key equality","query":"JAXBFJVZLAUHTD-AZUAARDMSA-N"}'
+  snapshot_sha256: cceb756ce0d1dcd24c26c05b558acf8366ebd9d830603ab3da900ce34934ec00
+- evidence_id: bgc-2335-query-antibioticmech_inchikeys
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json
+  locator: /contexts/15/source_scope_inventory/joins/antibioticmech_inchikeys
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete retained query frame, exact predicate and all matches/no-match
+    fields: {"matches":[],"predicate":"exact complete standard_inchi_key equality","query":"JAXBFJVZLAUHTD-AZUAARDMSA-N"}'
+  snapshot_sha256: cceb756ce0d1dcd24c26c05b558acf8366ebd9d830603ab3da900ce34934ec00
+- evidence_id: bgc-2335-query-chebi_origins
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json
+  locator: /contexts/15/source_scope_inventory/joins/chebi_origins
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete retained query frame, exact predicate and all matches/no-match
+    fields: {"matches":[],"predicate":"exact chebi_id from exact full-key structure
+    rows","query":[]}'
+  snapshot_sha256: cceb756ce0d1dcd24c26c05b558acf8366ebd9d830603ab3da900ce34934ec00
+- evidence_id: bgc-2335-source-routes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json
+  locator: /contexts/15/source_scope_inventory/source_taxa; /contexts/15/source_scope_inventory/forward_taxon_merge_matches;
+    /contexts/15/source_scope_inventory/nonorganism_matches; /contexts/15/source_scope_inventory/actual_assay_rows;
+    /contexts/15/source_scope_inventory/blank_AID_sentinels; /contexts/15/source_scope_inventory/related_corpus_rows
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Exact source taxa and route lists; source_taxa is distinct from the empty
+    forward/nonorganism and actual-assay/related routes; a blank-AID sentinel is separate:
+    {"actual_assay_rows":[],"blank_AID_sentinels":[],"forward_taxon_merge_matches":[],"nonorganism_matches":[],"related_corpus_rows":[],"source_taxa":["NCBITaxon:112509"]}'
+  snapshot_sha256: cceb756ce0d1dcd24c26c05b558acf8366ebd9d830603ab3da900ce34934ec00
+- evidence_id: bgc-2335-cached-taxonomy
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json
+  locator: /cached_taxonomy/input; /cached_taxonomy/whole_stanzas/20
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete relevant cached stanzas, with no fresh taxonomy verification:
+    [{"complete_stanza":"[Term]\nid: NCBITaxon:112509\nname: Hordeum vulgare subsp.
+    vulgare\nsynonym: \"Hordeum sativum\" EXACT []\nsynonym: \"Hordeum vulgare var.
+    nudum\" EXACT []\nsynonym: \"Hordeum vulgare var. vulgare\" EXACT []\n\n","id":"NCBITaxon:112509","physical_line":44501}]'
+  snapshot_sha256: cceb756ce0d1dcd24c26c05b558acf8366ebd9d830603ab3da900ce34934ec00
+- evidence_id: bgc-2335-direct-contexts
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json
+  locator: /records/4/direct_companion_paths; /records/4/direct_companion_predicates
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Exact one-hop scope, with no claim transfer: {"direct_companion_paths":["data/natural_products/terpenoids/11-hydroxy-hordetriene.yaml","data/natural_products/terpenoids/hordediene.yaml"],"direct_companion_predicates":[{"path":"data/natural_products/terpenoids/11-hydroxy-hordetriene.yaml","same_complete_InChIKey":false,"same_root_identifier":false,"shared_owned_BGCs":["BGC0002395"]},{"path":"data/natural_products/terpenoids/hordediene.yaml","same_complete_InChIKey":false,"same_root_identifier":false,"shared_owned_BGCs":["BGC0002395"]}]}'
+  snapshot_sha256: cceb756ce0d1dcd24c26c05b558acf8366ebd9d830603ab3da900ce34934ec00
+- evidence_id: bgc-2335-companion-boundaries
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json
+  locator: /contexts/6; /contexts/14
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete context meanings/raw histories are attributed in the notes; exact
+    identity/root boundaries: [{"declared_mechanism_roots_literal":[],"history_count":2,"identifier":"naturalproductmech:mibig-d48eb9f379","label":"11-hydroxy-hordetriene","owned_bgc_ids":["BGC0002395"],"path":"data/natural_products/terpenoids/11-hydroxy-hordetriene.yaml","standard_inchi_key":"YYSUSRQGRLYIIF-PXNSSMCTSA-N"},{"declared_mechanism_roots_literal":[],"history_count":2,"identifier":"naturalproductmech:mibig-0fe3bf9750","label":"hordediene","owned_bgc_ids":["BGC0002395"],"path":"data/natural_products/terpenoids/hordediene.yaml","standard_inchi_key":"ARGPOPPJQDBJKF-ZAAXVRCTSA-N"}]'
+  snapshot_sha256: cceb756ce0d1dcd24c26c05b558acf8366ebd9d830603ab3da900ce34934ec00
+- evidence_id: bgc-2335-structure-schema
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: Lines 392–433
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: The structure flag describes undefined stereocentres. ComputedClassification
+    is explicitly a named/versioned prediction from structure, never a source assertion
+    or an admission criterion.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: bgc-2335-stereo-method
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py
+  locator: Lines 142–173
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: Maintained stereo_complete derives from FindMolChiralCenters and absence
+    of question-mark centre tags. It is not blanket all-bond-geometry or natural-identity
+    proof.
+  snapshot_sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+- evidence_id: bgc-2335-classification-seeder
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: Lines 972–1020
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: Maintained seeding preserves lead source structures and named/versioned
+    computed predictions separately; the computed pathway can control filing without
+    becoming a source assertion.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: bgc-2335-review-profile
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/docs/record-review-profile.md
+  locator: Whole current profile
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: One-record claim-level scientific review requires twelve dimensions and
+    truthful partial completion/unavailable-check limits.
+  snapshot_sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+- evidence_id: bgc-2335-review-skill
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/.claude/skills/review-yaml-record/SKILL.md
+  locator: Whole current skill
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: The review does not edit source records; the overriding absolute no-request
+    instruction limits evidence access to retained local files.
+  snapshot_sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+- evidence_id: root-native-strict_ten
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-234/validate-strict-selected10-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-234/native-current234-five-gates-execution-001.json
+  accessed_at: '2026-11-04T02:55:22.278361Z'
+  support: supports
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  snapshot_sha256: 6eb86fafb52d8d3429bb2ad9e02f2f463878ab1404f0317aff94bd7061395d56
+- evidence_id: root-native-strict_full
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-234/validate-all-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-234/native-current234-five-gates-execution-001.json
+  accessed_at: '2026-11-04T02:55:48.333466Z'
+  support: supports
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  snapshot_sha256: ff284eb1ad827f1ffd4ecec5a30b5186cc5f1b6b80d7e49382abc277e6843741
+- evidence_id: root-native-lockfile
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-234/verify-corpus-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-234/native-current234-five-gates-execution-001.json
+  accessed_at: '2026-11-04T02:56:08.161413Z'
+  support: supports
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  snapshot_sha256: 254f171c7dff0f1ecbee5f47f75d2b7046143ae7fc499d9a1c08263e1c5125d8
+- evidence_id: root-native-reproduction
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-234/verify-reproduction-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-234/native-current234-five-gates-execution-001.json
+  accessed_at: '2026-11-04T02:56:42.801518Z'
+  support: supports
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  snapshot_sha256: cfc38f4e3f434e7f3651975f2cb228e5cda848476b2c53d1636d8746b794237a
+- evidence_id: root-native-queue
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-234/review-queue-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-234/native-current234-five-gates-execution-001.json
+  accessed_at: '2026-11-04T02:56:54.762248Z'
+  support: supports
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  snapshot_sha256: 3eed9b74d9496ee4db28632a8d7dae2208b83298376ae2b368e8ec8d0c8d0c91
+assessments:
+- assessment_id: bgc-2335-identity
+  area: identity
+  topic: Identity
+  outcome: supported
+  summary: The exact retained owner naturalproductmech:mibig-c08c967ca6 has full key
+    JAXBFJVZLAUHTD-AZUAARDMSA-N and the MIBiG BGC0002395 version 2 source label hordetriene,
+    compound index 3. Both stored representations agree with the declared full key;
+    the saved exact ChEBI query has no match. Its C20H30/aromatic representation is
+    distinct from the C20H32 hordediene and oxygenated 11-hydroxy-hordetriene companion.
+    MINTED source fidelity is assessed without substituting a shared-name, cluster
+    or connectivity-level identity claim or fresh natural-stereoisomer confirmation.
+  target_ids:
+  - naturalproductmech:mibig-c08c967ca6
+  evidence_ids:
+  - bgc-2335-grounding-owner
+  - bgc-2335-source-mibig_compounds
+  - bgc-2335-query-chebi_structures
+  - bgc-2335-chemistry
+  - bgc-2335-direct-contexts
+  - bgc-2335-companion-boundaries
+  dimensions:
+  - name: standard_inchi_key
+    value: JAXBFJVZLAUHTD-AZUAARDMSA-N; exact full retained key, not a name or connectivity-block
+      substitute.
+    definition: Exact full key; no name, first-block or congener substitution.
+    evidence_ids:
+    - bgc-2335-grounding-owner
+    - bgc-2335-source-mibig_compounds
+    - bgc-2335-query-chebi_structures
+    - bgc-2335-chemistry
+    - bgc-2335-direct-contexts
+    - bgc-2335-companion-boundaries
+  - name: grounding_scope
+    value: The exact retained owner naturalproductmech:mibig-c08c967ca6 has full key
+      JAXBFJVZLAUHTD-AZUAARDMSA-N and the MIBiG BGC0002395 version 2 source label
+      hordetriene, compound index 3. Both stored representations agree with the declared
+      full key; the saved exact ChEBI query has no match. Its C20H30/aromatic representation
+      is distinct from the C20H32 hordediene and oxygenated 11-hydroxy-hordetriene
+      companion. MINTED source fidelity is assessed without substituting a shared-name,
+      cluster or connectivity-level identity claim or fresh natural-stereoisomer confirmation.
+    definition: Local grounding fidelity is distinct from fresh natural-identity verification.
+    evidence_ids:
+    - bgc-2335-grounding-owner
+    - bgc-2335-source-mibig_compounds
+    - bgc-2335-query-chebi_structures
+    - bgc-2335-chemistry
+    - bgc-2335-direct-contexts
+    - bgc-2335-companion-boundaries
+- assessment_id: bgc-2335-representation
+  area: representation
+  topic: Stored molecular representation
+  outcome: supported
+  summary: 'Both saved forms represent neutral C20H30 with 20 carbon atoms, 22 bonds
+    and one component. The cycle basis has three six-membered carbocycles: one aromatic
+    ring and two nonaromatic rings. SMILES atoms 3/4/5/6/7/9 are aromatic; the saved
+    bond table preserves that aromaticity rather than assigning three independent
+    acyclic alkene geometries. Two tetrahedral centres are specified, SMILES 0S/12S
+    corresponding to InChI-form 17S/19S, with none unresolved. There are no oxygen
+    atoms, sugar residues or glycosidic linkages. All ten comparison flags and complete
+    atom-count correspondence are true, while full_graph_identity_established remains
+    false. This agreement does not independently establish the natural product or
+    a conversion from its companions. The stored stereo_complete flag is assessed
+    against the maintained extractor’s tetrahedral-centre test; it is not blanket
+    proof of every bond geometry or natural stereochemical assignment.'
+  target_ids:
+  - naturalproductmech:mibig-c08c967ca6
+  evidence_ids:
+  - bgc-2335-chemistry
+  - bgc-2335-topology
+  - bgc-2335-grounding-owner
+  - bgc-2335-stereo-method
+  - bgc-2335-structure-schema
+  dimensions:
+  - name: stereochemistry_scope
+    value: 'Both saved forms represent neutral C20H30 with 20 carbon atoms, 22 bonds
+      and one component. The cycle basis has three six-membered carbocycles: one aromatic
+      ring and two nonaromatic rings. SMILES atoms 3/4/5/6/7/9 are aromatic; the saved
+      bond table preserves that aromaticity rather than assigning three independent
+      acyclic alkene geometries. Two tetrahedral centres are specified, SMILES 0S/12S
+      corresponding to InChI-form 17S/19S, with none unresolved. There are no oxygen
+      atoms, sugar residues or glycosidic linkages. All ten comparison flags and complete
+      atom-count correspondence are true, while full_graph_identity_established remains
+      false. This agreement does not independently establish the natural product or
+      a conversion from its companions. The stored stereo_complete flag is assessed
+      against the maintained extractor’s tetrahedral-centre test; it is not blanket
+      proof of every bond geometry or natural stereochemical assignment.'
+    definition: Saved complete stereo/atom/bond interpretation, not an experimental
+      assignment or a new parse.
+    evidence_ids:
+    - bgc-2335-chemistry
+    - bgc-2335-topology
+    - bgc-2335-grounding-owner
+    - bgc-2335-stereo-method
+    - bgc-2335-structure-schema
+  - name: representation_correspondence
+    value: All ten saved comparisons and complete atom-count correspondence are true;
+      original full_graph_identity_established remains false. Stored normalization
+      is not independent exact natural-graph identity.
+    definition: Normalized identifier agreement does not establish explicit full-graph
+      or natural-form identity.
+    evidence_ids:
+    - bgc-2335-chemistry
+    - bgc-2335-topology
+    - bgc-2335-grounding-owner
+    - bgc-2335-stereo-method
+    - bgc-2335-structure-schema
+- assessment_id: bgc-2335-provenance
+  area: provenance
+  topic: Producer and locus evidence
+  outcome: supported
+  summary: MIBiG physical row 2948 retains active BGC0002395 version 2, questionable
+    quality, unknown completeness, Hordeum vulgare subsp. vulgare (NCBITaxon:112509),
+    and GPC_000011790.1 positions 9581242–10180879. Producer evidence remains SOURCE_ASSERTION;
+    Heterologous expression and Enzymatic assays support CLUSTER_DEMONSTRATED for
+    the locus as a separate proposition. The cached taxon label is local evidence
+    only. Neither the locus grade nor the presence of two related products proves
+    a complete pathway, the exact natural stereoisomer or independent native production
+    of every listed compound.
+  target_ids:
+  - naturalproductmech:mibig-c08c967ca6
+  evidence_ids:
+  - bgc-2335-origin-owner
+  - bgc-2335-source-mibig_compounds
+  - bgc-2335-cached-taxonomy
+  - bgc-2335-source-routes
+  dimensions:
+  - name: taxon_scope
+    value: MIBiG physical row 2948 retains active BGC0002395 version 2, questionable
+      quality, unknown completeness, Hordeum vulgare subsp. vulgare (NCBITaxon:112509),
+      and GPC_000011790.1 positions 9581242–10180879. Producer evidence remains SOURCE_ASSERTION;
+      Heterologous expression and Enzymatic assays support CLUSTER_DEMONSTRATED for
+      the locus as a separate proposition. The cached taxon label is local evidence
+      only. Neither the locus grade nor the presence of two related products proves
+      a complete pathway, the exact natural stereoisomer or independent native production
+      of every listed compound.
+    definition: Source taxa and cached labels preserve genus/species/strain scope;
+      no fresh ancestry or production inference.
+    evidence_ids:
+    - bgc-2335-origin-owner
+    - bgc-2335-source-mibig_compounds
+    - bgc-2335-cached-taxonomy
+    - bgc-2335-source-routes
+  - name: producer_evidence
+    value: MIBiG physical row 2948 retains active BGC0002395 version 2, questionable
+      quality, unknown completeness, Hordeum vulgare subsp. vulgare (NCBITaxon:112509),
+      and GPC_000011790.1 positions 9581242–10180879. Producer evidence remains SOURCE_ASSERTION;
+      Heterologous expression and Enzymatic assays support CLUSTER_DEMONSTRATED for
+      the locus as a separate proposition. The cached taxon label is local evidence
+      only. Neither the locus grade nor the presence of two related products proves
+      a complete pathway, the exact natural stereoisomer or independent native production
+      of every listed compound.
+    definition: Producer evidence is assessed separately from occurrence and locus
+      support.
+    evidence_ids:
+    - bgc-2335-origin-owner
+    - bgc-2335-source-mibig_compounds
+    - bgc-2335-cached-taxonomy
+    - bgc-2335-source-routes
+  - name: locus_evidence
+    value: MIBiG physical row 2948 retains active BGC0002395 version 2, questionable
+      quality, unknown completeness, Hordeum vulgare subsp. vulgare (NCBITaxon:112509),
+      and GPC_000011790.1 positions 9581242–10180879. Producer evidence remains SOURCE_ASSERTION;
+      Heterologous expression and Enzymatic assays support CLUSTER_DEMONSTRATED for
+      the locus as a separate proposition. The cached taxon label is local evidence
+      only. Neither the locus grade nor the presence of two related products proves
+      a complete pathway, the exact natural stereoisomer or independent native production
+      of every listed compound.
+    definition: Source version/status/method/grade does not establish a complete pathway
+      or fresh primary support.
+    evidence_ids:
+    - bgc-2335-origin-owner
+    - bgc-2335-source-mibig_compounds
+    - bgc-2335-cached-taxonomy
+    - bgc-2335-source-routes
+- assessment_id: bgc-2335-citations
+  area: evidence
+  topic: Citation scope
+  outcome: supported
+  summary: The producer/locus placements retain ENTRY-level DOI:10.1101/2021.05.21.445084
+    as a database assertion. The same source publication is attached to the other
+    two BGC0002395 compound contexts, which does not create three independent studies.
+    Locus methods, source version and compound index are preserved without claiming
+    fresh access to the publication, construct design, enzyme sequence or compound-specific
+    stereochemical experiment. No companion citation is promoted beyond its retained
+    claim scope.
+  target_ids:
+  - naturalproductmech:mibig-c08c967ca6
+  evidence_ids:
+  - bgc-2335-grounding-owner
+  - bgc-2335-origin-owner
+  - bgc-2335-source-mibig_compounds
+  - bgc-2335-source-notes
+  - bgc-2335-direct-contexts
+  - bgc-2335-companion-boundaries
+  dimensions:
+  - name: citation_scope
+    value: The producer/locus placements retain ENTRY-level DOI:10.1101/2021.05.21.445084
+      as a database assertion. The same source publication is attached to the other
+      two BGC0002395 compound contexts, which does not create three independent studies.
+      Locus methods, source version and compound index are preserved without claiming
+      fresh access to the publication, construct design, enzyme sequence or compound-specific
+      stereochemical experiment. No companion citation is promoted beyond its retained
+      claim scope.
+    definition: Citation roles remain database assertions; no publication independence
+      or fresh source access is assumed.
+    evidence_ids:
+    - bgc-2335-grounding-owner
+    - bgc-2335-origin-owner
+    - bgc-2335-source-mibig_compounds
+    - bgc-2335-source-notes
+    - bgc-2335-direct-contexts
+    - bgc-2335-companion-boundaries
+- assessment_id: bgc-2335-occurrence
+  area: evidence
+  topic: Occurrence and assay scope
+  outcome: supported
+  summary: No occurrence, bioactivity or molecular-target field is written in this
+    owner. The complete exact retained LOTUS, ChEBI-origin, CyanoMetDB, PubChem, BindingDB
+    and AntibioticMech frames have no matches; source_taxa nevertheless retains NCBITaxon:112509.
+    The local forward/nonorganism/related route lists are empty. These facts bound
+    the accessed source evidence and do not establish inactivity or universal absence.
+    Shared cluster/publication membership cannot add a biological occurrence, target
+    or activity from hordediene or 11-hydroxy-hordetriene.
+  target_ids:
+  - naturalproductmech:mibig-c08c967ca6
+  evidence_ids:
+  - bgc-2335-occurrence-owner
+  - bgc-2335-assay-owner
+  - bgc-2335-query-lotus_occurrences
+  - bgc-2335-query-chebi_origins
+  - bgc-2335-query-cyanometdb_occurrences
+  - bgc-2335-query-pubchem_bioassay
+  - bgc-2335-query-bindingdb_targets
+  - bgc-2335-query-antibioticmech_inchikeys
+  - bgc-2335-source-routes
+  - bgc-2335-cached-taxonomy
+  - bgc-2335-source-notes
+  dimensions:
+  - name: occurrence_scope
+    value: No occurrence, bioactivity or molecular-target field is written in this
+      owner. The complete exact retained LOTUS, ChEBI-origin, CyanoMetDB, PubChem,
+      BindingDB and AntibioticMech frames have no matches; source_taxa nevertheless
+      retains NCBITaxon:112509. The local forward/nonorganism/related route lists
+      are empty. These facts bound the accessed source evidence and do not establish
+      inactivity or universal absence. Shared cluster/publication membership cannot
+      add a biological occurrence, target or activity from hordediene or 11-hydroxy-hordetriene.
+    definition: Occurrence assertions are not counts of independent experiments or
+      producers.
+    evidence_ids:
+    - bgc-2335-occurrence-owner
+    - bgc-2335-assay-owner
+    - bgc-2335-query-lotus_occurrences
+    - bgc-2335-query-chebi_origins
+    - bgc-2335-query-cyanometdb_occurrences
+    - bgc-2335-query-pubchem_bioassay
+    - bgc-2335-query-bindingdb_targets
+    - bgc-2335-query-antibioticmech_inchikeys
+    - bgc-2335-source-routes
+    - bgc-2335-cached-taxonomy
+    - bgc-2335-source-notes
+  - name: assay_target_scope
+    value: No written bioactivity or molecular target and no actual assay/target result
+      in the exact retained PubChem/BindingDB/AntibioticMech joins. A blank-AID sentinel,
+      where present, is not an activity result. This is a bounded source result, not
+      global inactivity or absence.
+    definition: Written claims and exact retained assay/target routes are bounded;
+      no global biological absence claim.
+    evidence_ids:
+    - bgc-2335-occurrence-owner
+    - bgc-2335-assay-owner
+    - bgc-2335-query-lotus_occurrences
+    - bgc-2335-query-chebi_origins
+    - bgc-2335-query-cyanometdb_occurrences
+    - bgc-2335-query-pubchem_bioassay
+    - bgc-2335-query-bindingdb_targets
+    - bgc-2335-query-antibioticmech_inchikeys
+    - bgc-2335-source-routes
+    - bgc-2335-cached-taxonomy
+    - bgc-2335-source-notes
+- assessment_id: bgc-2335-classification
+  area: consistency
+  topic: Computed classification applicability
+  outcome: supported
+  summary: The named/versioned NPClassifier output is Terpenoids, Diterpenoids, Cleistanthane
+    diterpenoids and is_glycoside:false. A C20 aromatic hydrocarbon is compatible
+    with broad diterpenoid filing and has no represented sugar or glycosidic linkage.
+    The precise Cleistanthane prediction is retained as computed provenance, without
+    treating it as a source assertion, direct enzyme mechanism or independently confirmed
+    scaffold assignment. It is kept separate from MIBiG TERPENE and from the different
+    fine-class prediction for hordediene; no model result is silently harmonized across
+    companions.
+  target_ids:
+  - naturalproductmech:mibig-c08c967ca6
+  evidence_ids:
+  - bgc-2335-classification-owner
+  - bgc-2335-source-npclassifier
+  - bgc-2335-source-mibig_compounds
+  - bgc-2335-chemistry
+  - bgc-2335-topology
+  - bgc-2335-structure-schema
+  - bgc-2335-classification-seeder
+  dimensions:
+  - name: classification_applicability
+    value: The named/versioned NPClassifier output is Terpenoids, Diterpenoids, Cleistanthane
+      diterpenoids and is_glycoside:false. A C20 aromatic hydrocarbon is compatible
+      with broad diterpenoid filing and has no represented sugar or glycosidic linkage.
+      The precise Cleistanthane prediction is retained as computed provenance, without
+      treating it as a source assertion, direct enzyme mechanism or independently
+      confirmed scaffold assignment. It is kept separate from MIBiG TERPENE and from
+      the different fine-class prediction for hordediene; no model result is silently
+      harmonized across companions.
+    definition: Model filing labels, observed topology and source BGC classes remain
+      distinct axes.
+    evidence_ids:
+    - bgc-2335-classification-owner
+    - bgc-2335-source-npclassifier
+    - bgc-2335-source-mibig_compounds
+    - bgc-2335-chemistry
+    - bgc-2335-topology
+    - bgc-2335-structure-schema
+    - bgc-2335-classification-seeder
+- assessment_id: bgc-2335-completion
+  area: completeness
+  topic: Scientific completion
+  outcome: unknown
+  summary: The review is partial after complete current owner/history, actual intake,
+    retained source evidence and both molecular forms were assessed. Source fidelity
+    and represented configurations are locally supported, but primary experimental/natural-identity
+    evidence was not refreshed. No mechanism root requires a maintained reader. Full
+    QC and complete OAK coverage remain unavailable; the accepted diagnostic and local
+    gates do not remove those limits. No supported local record correction is identified,
+    and no source status/history is changed.
+  target_ids:
+  - naturalproductmech:mibig-c08c967ca6
+  evidence_ids:
+  - bgc-2335-owner
+  - bgc-2335-capture
+  - bgc-2335-intake
+  - bgc-2335-plan
+  - bgc-2335-intake-acceptance
+  - bgc-2335-inventory-acceptance
+  - bgc-2335-plan-acceptance
+  - bgc-2335-source-notes
+  - bgc-2335-curation-scope
+  - bgc-2335-diagnostic-execution
+  - bgc-2335-diagnostic-acceptance
+  - bgc-2335-native-acceptance
+  - bgc-2335-review-profile
+  - bgc-2335-review-skill
+  dimensions:
+  - name: review_completion
+    value: 'Partial: actual retained evidence and complete saved forms assessed; no
+      mechanism reader applies to this owner. Full QC/OAK and fresh primary/identity
+      authority remain unavailable.'
+    definition: Completion reflects actual evidence access and check coverage; parsing
+      and gate success are not scientific proof.
+    evidence_ids:
+    - bgc-2335-owner
+    - bgc-2335-capture
+    - bgc-2335-intake
+    - bgc-2335-plan
+    - bgc-2335-intake-acceptance
+    - bgc-2335-inventory-acceptance
+    - bgc-2335-plan-acceptance
+    - bgc-2335-source-notes
+    - bgc-2335-curation-scope
+    - bgc-2335-diagnostic-execution
+    - bgc-2335-diagnostic-acceptance
+    - bgc-2335-native-acceptance
+    - bgc-2335-review-profile
+    - bgc-2335-review-skill
+findings: []
+actions: []
+limitations:
+- All evidence is retained locally. No external identifier, taxonomy, primary publication,
+  protein sequence or natural stereochemical assignment was refreshed under the absolute
+  no-request instruction.
+- Full QC and complete OAK authority coverage remain unavailable. Local gate and parse
+  success establish only their explicit mechanical scope; no maintained reader applies
+  to these owners.
+- Exact no-match joins are bounded by saved predicates/snapshots. Shared names, loci,
+  taxa, citations or companions do not transfer compound-specific production, activity,
+  mechanism or independent-study status.
+- Four original undefined-stereo warnings are global and unassigned. No additional
+  molecular/YAML parse, source query or target invocation occurred during this scientific
+  authoring.
+- No source record, native status or history is edited. Any supported future correction
+  belongs to the maintained source/curator owners listed in the actual canonical intake.
+- The whole selected owner was read, but scientific completion is partial because
+  full QC, complete ontology authority coverage and external source verification were
+  unavailable. No native status or history was changed.
+- The branch uses cached base ce6a5498df5be51116bd5e0c119023ee62bb5464. Fresh origin/main
+  verification and publication are deferred because the user prohibits all external
+  requests.
+notes:
+- Complete owner/history and actual intake were read. Full source payload meanings
+  and direct-companion/raw-history carries remain explicitly attributed in pinned
+  source notes.
+- 'BGC personally read all ten first-five molecular forms: 216 atom rows / 240 bond
+  rows plus complete scalars, ring/stereo/motif tables and original comparisons/maps.
+  Diagnostic indices are zero-based, not biochemical locants.'
+- ROOT operated original activation/capture, collector/composer, canonical intakes
+  and chemistry; Native operated original gates; no maintained reader applies to these
+  five owners. BGC authored source planning and these scientific assessments without
+  invoking any target during scientific authoring.
+- Saved review coverage is distinct from the native SEEDED/REVIEWED curation state.
+  Proposed actions are not performed edits.
+tags:
+- offline
+- record-review
+- batch-234
+```

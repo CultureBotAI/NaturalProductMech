@@ -1,0 +1,1334 @@
+# Local evidence review: heptelidic acid
+
+- Review: 20261104T034230Z-heptelidic-acid
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-11-04T02:51:03.721117Z
+- Finished UTC: 2026-11-04T03:42:30.301382Z
+- Reviewer: Codex root with native_checks, bgc_science and review_support peer agents (independent)
+- Completion: partial
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Heptelidic acid preserves a locally consistent C15H20O5 representation with four unresolved tetrahedral centres, a source-asserted Aspergillus oryzae RIB40 producer and a separate Aspergillus flavus occurrence. The review supports retained-source fidelity with explicit stereochemical, locus and primary-evidence limits; no concrete local correction is established.
+
+## Scope And Provenance
+
+One complete NaturalProductRecord, including all present scientific claims, history and declared mechanisms; external verification remains unavailable.
+
+Selection: Campaign path order 2331; one of the next ten uncovered paths selected from the 3116-record corpus. Membership uses the canonical validated catalogue plus retained committed campaign bundles.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base ce6a5498df5be51116bd5e0c119023ee62bb5464.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-f2f3051989 | data/natural_products/terpenoids/heptelidic-acid.yaml | generated | heptelidic acid |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| strict_ten | passed | True | naturalproductmech:mibig-f2f3051989 | Closed-schema validation of the ten selected owners and any referenced components reported zero errors. |
+| strict_full | passed | True | naturalproductmech:mibig-f2f3051989 | Full closed-schema validation scanned all 3116 owners and reported zero errors. |
+| lockfile | passed | True | naturalproductmech:mibig-f2f3051989 | PATHS.tsv and filesystem agree on all 3116 records and their pinned filing pathways. |
+| reproduction | passed | True | naturalproductmech:mibig-f2f3051989 | All 3116 records reproduce byte-identically from the retained inventories and carried curator content. This does not independently validate curator science. |
+| queue | passed | True | naturalproductmech:mibig-f2f3051989 | The full local queue contains 8922 diagnostic rows; selected-target entries were inspected. Queue diagnostics are leads, not scientific sign-off. |
+| Full just qc | unavailable | True | naturalproductmech:mibig-f2f3051989 | Not run under the external-request prohibition: the complete recipe includes upstream vendored synchronization. The five executed local checks are recorded separately. |
+| Complete OAK identifier/label authority check | unavailable | True | naturalproductmech:mibig-f2f3051989 | Complete offline ontology authority coverage was not established for this run; no ontology retrieval or remote resolution was attempted. Retained taxonomy evidence has only its explicitly stated local scope. |
+| Primary literature and current structured database/identifier verification | unavailable | True | naturalproductmech:mibig-f2f3051989 | All external requests are prohibited by the user. Fresh database and identifier verification and complete primary-literature coverage are unavailable. Any retained original literature actually inspected is recorded separately with its historical scope. |
+
+## Scientific And Domain Assessments
+
+### Identity
+
+identity: supported. Targets: naturalproductmech:mibig-f2f3051989.
+
+The minted identifier naturalproductmech:mibig-f2f3051989 and full key JESMSCGUTIEROV-UHFFFAOYSA-N identify the exact retained MIBiG BGC0001995 version 3 compound, named heptelidic acid. The stored SMILES and standard InChI agree locally with that full key, and the exact retained ChEBI structure query has no match. The MINTED grounding and historical no-matching-ChEBI note are therefore retained within this snapshot; neither the name nor the PubChem:10016502 cross-reference has been independently reverified. Four undefined tetrahedral centres prevent treating this representation as a fully assigned natural stereoisomer.
+
+### Stored molecular representation
+
+representation: supported. Targets: naturalproductmech:mibig-f2f3051989.
+
+Both saved forms represent neutral C15H20O5, with 20 heavy atoms, 22 bonds and one connected component. The complete graph contains a six-membered carbocycle, a three-membered epoxide and a seven-membered lactone, together with a carboxylic acid and one endocyclic C=C. In the saved SMILES table, the epoxide ring is atoms 7/6/8, the lactone includes ester carbonyl C15=O16 and O14, and the acid is C17(=O18)-O19H. Four tetrahedral centres, SMILES atoms 3/6/9/10, remain unspecified in both representations; no absolute configuration is supplied by this review. All ten saved comparison flags and complete atom-count correspondence are true, while the original full_graph_identity_established flag remains false. These observations establish the represented topology and normalization agreement, not independent natural identity. The stored stereo_complete flag is assessed against the maintained extractor’s tetrahedral-centre test; it is not blanket proof of every bond geometry or natural stereochemical assignment.
+
+### Producer and locus evidence
+
+provenance: supported. Targets: naturalproductmech:mibig-f2f3051989.
+
+MIBiG physical row 2292 retains BGC0001995 version 3, active status, questionable quality and unknown completeness, with Aspergillus oryzae RIB40 (NCBITaxon:510516), NC_036441.1 positions 1039554–1067040 and TERPENE source class. The producer is explicitly SOURCE_ASSERTION; no locus method is stated and the locus remains CLUSTER_UNSTATED. The cached strain label supports only the retained local taxon mapping. The separate Aspergillus flavus occurrence does not establish that strain as a producer, strengthen the locus grade, or supply a complete pathway.
+
+### Citation scope
+
+evidence: supported. Targets: naturalproductmech:mibig-f2f3051989.
+
+DOI:10.1080/09168451.2018.1549934 is retained as an ENTRY-level MIBiG database assertion for the producer/locus and also as the LOTUS occurrence reference. Those placements have different claim scopes but do not constitute independent studies merely because they occur in two source tables. No publication text, exact isolation/stereochemical assignment or experimental locus result was freshly accessed. The entry-level citation is not promoted to a directly inspected compound-specific experiment.
+
+### Occurrence and assay scope
+
+evidence: supported. Targets: naturalproductmech:mibig-f2f3051989.
+
+The one written LOTUS occurrence and physical row 3007 name Aspergillus flavus (NCBITaxon:5059), with DOI:10.1080/09168451.2018.1549934; the complete cached stanza preserves that local label. This occurrence remains separate from the source-asserted A. oryzae RIB40 producer. PubChem row 3095 for CID10016502 has a blank AID and the literal no-assay-data sentinel, with no outcome, measurement or target. It is neither an inactive result nor an actual bioassay. The complete owner has no bioactivity or molecular-target declaration; the exact retained ChEBI-origin, CyanoMetDB, BindingDB and AntibioticMech joins add no matches. These are bounded source results, not a claim that the compound lacks biological activity.
+
+### Computed classification applicability
+
+consistency: supported. Targets: naturalproductmech:mibig-f2f3051989.
+
+The retained NPClassifier model npclassifier.gnps2.org@2026-09-07 predicts Terpenoids, Sesquiterpenoids, Cadinane sesquiterpenoids and is_glycoside:false. The 15-carbon oxygenated framework and complete epoxide/lactone/acid topology permit a broad representation-level comparison, and there is no separate sugar residue or glycosidic connection in the saved graph. They do not independently establish the named Cadinane subclass or a biosynthetic route. The versioned prediction and TERPENOIDS filing remain separate from the MIBiG TERPENE source class and from producer/locus evidence; no model output is silently replaced.
+
+### Scientific completion
+
+completeness: unknown. Targets: naturalproductmech:mibig-f2f3051989.
+
+This is a partial one-record scientific review of the complete retained owner/history, actual canonical intake, exact source payloads and complete paired molecular tables. Four unresolved centres, source-only producer/locus support and unrefreshed primary/identifier evidence remain material limits. No declared mechanism root requires a maintained reader for this owner. Five local gates and original diagnostic acceptance establish their bounded mechanical results; full QC and complete OAK authority coverage are unavailable. No supported source-record correction is identified from the evidence accessed.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| bgc-2331-owner | /private/tmp/npm-record-reviews-20261021/data/natural_products/terpenoids/heptelidic-acid.yaml; Whole current owner plaintext and complete curation_history | supports | Complete current owner and all 2 history entries; native curation_status remains SEEDED. |
+| bgc-2331-capture | /private/tmp/npm-review-work/shared-next-batch234/owner-capture-DATA-001.json; /records/0 | supports | Complete captured owner preserves every written field/history; selected maintained-reader applicability is false and no component reference is declared. |
+| bgc-2331-intake | /private/tmp/npm-review-work/shared-next-batch234/intakes/2331-inspect-001.json; /status; /repository; /source; /targets | supports | Actual canonical intake for naturalproductmech:mibig-f2f3051989; 37 pinned input placements and explicit maintained source/curator ownership. |
+| bgc-2331-grounding-owner | /private/tmp/npm-review-work/shared-next-batch234/owner-capture-DATA-001.json; /records/0/owner_document | supports | Complete written field projection; absence is bounded by the complete captured owner: {"chemical_structure":{"smiles":"CC(C)C1CCC2(CO2)C3C1C=C(COC3=O)C(=O)O","standard_inchi":"InChI=1S/C15H20O5/c1-8(2)10-3-4-15(7-20-15)12-11(10)5-9(13(16)17)6-19-14(12)18/h5,8,10-12H,3-4,6-7H2,1-2H3,(H,16,17)","standard_inchi_key":"JESMSCGUTIEROV-UHFFFAOYSA-N","stereo_complete":false,"structure_source":"MIBIG","structure_source_id":"mibig:BGC0001995"},"grounding_notes":"No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.","grounding_status":"MINTED","identifier":"naturalproductmech:mibig-f2f3051989","label":"heptelidic acid","source_concepts":[{"minted_identifier":"naturalproductmech:mibig-f2f3051989","source":"MIBIG","source_id":"BGC0001995","source_label":"heptelidic acid","source_version":"3"}],"xrefs":["pubchem:10016502"]} |
+| bgc-2331-origin-owner | /private/tmp/npm-review-work/shared-next-batch234/owner-capture-DATA-001.json; /records/0/owner_document | supports | Complete written field projection; absence is bounded by the complete captured owner: {"biosynthetic_gene_clusters":[{"accession":"mibig:BGC0001995","bgc_class":["TERPENE"],"entry_status":"active","entry_version":"3","evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"MIBiG BGC0001995 entry version 3; citation taken from the entry level","reference":"DOI:10.1080/09168451.2018.1549934"}],"genome_accession":"genbank:NC_036441.1","link_evidence_basis":"CLUSTER_UNSTATED","locus_from":1039554,"locus_to":1067040,"organism_label":"Aspergillus oryzae RIB40","organism_taxon_id":"NCBITaxon:510516"}],"producer_organisms":[{"biosynthetic_gene_cluster":"mibig:BGC0001995","evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"MIBiG BGC0001995 entry version 3; citation taken from the entry level","reference":"DOI:10.1080/09168451.2018.1549934"}],"evidence_basis":"SOURCE_ASSERTION","notes":"Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED; this field grades the taxon claim, which is a different question.","source":"MIBIG","source_version":"3","taxon_id":"NCBITaxon:510516","taxon_label":"Aspergillus oryzae RIB40"}],"producer_taxon_groups":["FUNGAL"],"source_concepts":[{"minted_identifier":"naturalproductmech:mibig-f2f3051989","source":"MIBIG","source_id":"BGC0001995","source_label":"heptelidic acid","source_version":"3"}]} |
+| bgc-2331-occurrence-owner | /private/tmp/npm-review-work/shared-next-batch234/owner-capture-DATA-001.json; /records/0/owner_document | supports | Complete written field projection; absence is bounded by the complete captured owner: {"grounding_notes":"No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.","occurrence_taxon_groups":["FUNGAL"],"occurrences":[{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS structure-organism-reference triple. LOTUS reports that the compound was found in the organism; it does not assert that the organism produces it.","reference":"DOI:10.1080/09168451.2018.1549934"}],"notes":"Wikidata organism http://www.wikidata.org/entity/Q137096","source":"LOTUS","taxon_id":"NCBITaxon:5059","taxon_label":"Aspergillus flavus","taxon_source":"NCBITaxon"}]} |
+| bgc-2331-assay-owner | /private/tmp/npm-review-work/shared-next-batch234/owner-capture-DATA-001.json; /records/0/owner_document | supports | Complete written field projection; absence is bounded by the complete captured owner: {} |
+| bgc-2331-classification-owner | /private/tmp/npm-review-work/shared-next-batch234/owner-capture-DATA-001.json; /records/0/owner_document | supports | Complete written field projection; absence is bounded by the complete captured owner: {"bgc_class":["TERPENE"],"biosynthesis_origin":"NATURAL_PRODUCT","np_classification":{"class_results":["Cadinane sesquiterpenoids"],"is_glycoside":false,"pathway_results":["Terpenoids"],"superclass_results":["Sesquiterpenoids"],"tool":"NPClassifier","tool_version":"npclassifier.gnps2.org@2026-09-07"},"np_pathway":"TERPENOIDS"} |
+| bgc-2331-chemistry | /private/tmp/npm-review-work/shared-next-batch234/chemistry-local/diagnostic-DATA-001.json; /records/0/declared_structure; /records/0/smiles/status; /records/0/inchi/status; /records/0/smiles/computed; /records/0/inchi/computed; /records/0/comparisons; /records/0/atom_correspondence | supports | Both stored forms parsed. Exact original comparison/correspondence and stereo values: {"atom_correspondence":{"complete_atom_count_match":true,"full_graph_identity_established":false,"scope":"One chirality-aware substructure match; no independent full graph or natural identity claim.","smiles_to_inchi_atom_indices":[0,7,1,9,2,3,14,6,19,11,10,4,8,5,18,13,17,12,15,16]},"comparisons":{"atom_count_equal":true,"bond_count_equal":true,"both_keys_equal_declared":true,"canonical_isomeric_smiles_equal":true,"canonical_nonisomeric_smiles_equal":true,"formal_charge_equal":true,"formula_equal":true,"smiles_formula_equals_literal_InChI_main_layer":true,"standard_inchi_equal":true,"standard_inchi_key_equal":true},"declared_structure":{"smiles":"CC(C)C1CCC2(CO2)C3C1C=C(COC3=O)C(=O)O","standard_inchi":"InChI=1S/C15H20O5/c1-8(2)10-3-4-15(7-20-15)12-11(10)5-9(13(16)17)6-19-14(12)18/h5,8,10-12H,3-4,6-7H2,1-2H3,(H,16,17)","standard_inchi_key":"JESMSCGUTIEROV-UHFFFAOYSA-N","stereo_complete":false,"structure_source":"MIBIG","structure_source_id":"mibig:BGC0001995"},"saved_stereo":{"inchi":{"Atom_Tetrahedral:Unspecified":4},"smiles":{"Atom_Tetrahedral:Unspecified":4}}} |
+| bgc-2331-topology | /private/tmp/npm-review-work/shared-next-batch234/chemistry-local/diagnostic-DATA-001.json; /records/0/smiles/computed; /records/0/inchi/computed; /records/0/declared_structure; /records/0/literal_InChI_layers; /records/0/comparisons; /records/0/atom_correspondence | supports | Complete saved topology interpretation: Both saved forms represent neutral C15H20O5, with 20 heavy atoms, 22 bonds and one connected component. The complete graph contains a six-membered carbocycle, a three-membered epoxide and a seven-membered lactone, together with a carboxylic acid and one endocyclic C=C. In the saved SMILES table, the epoxide ring is atoms 7/6/8, the lactone includes ester carbonyl C15=O16 and O14, and the acid is C17(=O18)-O19H. Four tetrahedral centres, SMILES atoms 3/6/9/10, remain unspecified in both representations; no absolute configuration is supplied by this review. All ten saved comparison flags and complete atom-count correspondence are true, while the original full_graph_identity_established flag remains false. These observations establish the represented topology and normalization agreement, not independent natural identity. |
+| bgc-2331-diagnostic-execution | /private/tmp/npm-review-work/shared-next-batch234/chemistry-local/diagnostic-execution-001.json; Whole current diagnostic-execution | supports | ROOT operated one original stored-form diagnostic, exit 0, one attempt, preserved original streams and closed environment. This execution receipt is not independent scientific verification. |
+| bgc-2331-diagnostic-acceptance | /private/tmp/npm-review-work/shared-next-batch234/root-diagnostic-acceptance-001.json; /status; /accepted; /DATA; /execution; /verification; /warnings_scope; /limits | supports | ROOT accepts the original 20 stored parses and exact original comparisons/key/capture joins. Four original undefined-stereo warnings remain global and unassigned. Acceptance establishes local execution integrity, not natural identity or full graph proof. |
+| bgc-2331-native-acceptance | /private/tmp/npm-review-work/shared-next-batch234/root-native-five-gates-acceptance-001.json; Whole current native-acceptance | supports | Five original local gates passed. Full QC and complete OAK coverage remain unavailable, so these results do not establish all required validation or a scientific verdict. |
+| bgc-2331-intake-acceptance | /private/tmp/npm-review-work/shared-next-batch234/root-intake-acceptance-001.json; Whole current intake-acceptance | supports | ROOT accepts ten actual canonical intakes and exact current source ownership/input plans; scientific assessment is separate. |
+| bgc-2331-inventory-acceptance | /private/tmp/npm-review-work/shared-next-batch234/root-source-inventory-acceptance-001.json; Whole current inventory-acceptance | supports | ROOT accepts the original saved inventory and current input/raw/query/row joins. Complete meaning reading is separately attributed in source notes. |
+| bgc-2331-plan-acceptance | /private/tmp/npm-review-work/shared-next-batch234/root-input-plan-acceptance-001.json; Whole current plan-acceptance | supports | ROOT accepts the actual input plan and preserved source contexts, without a scientific verdict. |
+| bgc-2331-plan | /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-target-input-plan-001.json; /records/0 | supports | Current one-record input plan with exact direct companions, predicates and input roles. |
+| bgc-2331-source-notes | /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-scope-notes-001.json; /reading; /cautions; /scientific_limits | supports | Complete disjoint source/raw-history reading and exact carries, with compound-specific cautions; source planning did not adjudicate pre-intake science. |
+| bgc-2331-curation-scope | /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-scope-notes-001.json; /curation | supports | Eight explicitly opened implemented curation tables, including ignored files, were scanned over 92 distinct exact literals with zero textual hits in this bounded scope. Reserved decisions.tsv was not consumed. |
+| bgc-2331-query-mibig_compounds | /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json; /contexts/11/source_scope_inventory/joins/mibig_compounds | supports | Complete retained query frame, exact predicate and all matches/no-match fields: {"matches":[{"last_physical_line":2292,"physical_line":2292,"raw_tsv_record":"BGC0001995\t3\tactive\tquestionable\tunknown\theptelidic acid\t1\tCC(C)C1CCC2(CO2)C3C1C=C(COC3=O)C(=O)O\tInChI=1S/C15H20O5/c1-8(2)10-3-4-15(7-20-15)12-11(10)5-9(13(16)17)6-19-14(12)18/h5,8,10-12H,3-4,6-7H2,1-2H3,(H,16,17)\tJESMSCGUTIEROV-UHFFFAOYSA-N\tfalse\t\tpubchem:10016502\tNCBITaxon:510516\tAspergillus oryzae RIB40\tterpene\tUnknown\tNC_036441.1\t1039554\t1067040\t\tSOURCE_ASSERTION\tCLUSTER_UNSTATED\tDOI:10.1080/09168451.2018.1549934\tENTRY\n","row":{"bgc_classes":"terpene","bgc_subclasses":"Unknown","cluster_link_evidence_basis":"CLUSTER_UNSTATED","compound_classes":"","compound_index":"1","compound_name":"heptelidic acid","database_ids":"pubchem:10016502","entry_completeness":"unknown","entry_quality":"questionable","entry_status":"active","entry_version":"3","genome_accession":"NC_036441.1","locus_evidence_methods":"","locus_from":"1039554","locus_to":"1067040","mibig_accession":"BGC0001995","primary_reference":"DOI:10.1080/09168451.2018.1549934","producer_evidence_basis":"SOURCE_ASSERTION","reference_basis":"ENTRY","smiles":"CC(C)C1CCC2(CO2)C3C1C=C(COC3=O)C(=O)O","standard_inchi":"InChI=1S/C15H20O5/c1-8(2)10-3-4-15(7-20-15)12-11(10)5-9(13(16)17)6-19-14(12)18/h5,8,10-12H,3-4,6-7H2,1-2H3,(H,16,17)","standard_inchi_key":"JESMSCGUTIEROV-UHFFFAOYSA-N","stereo_complete":"false","taxon_id":"NCBITaxon:510516","taxon_label":"Aspergillus oryzae RIB40"},"row_sha256":"fa7d0c67493f02963fe9983a1ed47b5a81408162366c7612489b03c3da5c7106"}],"predicate":"exact complete standard_inchi_key equality","query":"JESMSCGUTIEROV-UHFFFAOYSA-N"} |
+| bgc-2331-source-mibig_compounds | /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv; Header line 1; physical lines 2292–2292, row_sha256 fa7d0c67493f02963fe9983a1ed47b5a81408162366c7612489b03c3da5c7106 | supports | Complete retained physical row payloads, every field: [{"bgc_classes":"terpene","bgc_subclasses":"Unknown","cluster_link_evidence_basis":"CLUSTER_UNSTATED","compound_classes":"","compound_index":"1","compound_name":"heptelidic acid","database_ids":"pubchem:10016502","entry_completeness":"unknown","entry_quality":"questionable","entry_status":"active","entry_version":"3","genome_accession":"NC_036441.1","locus_evidence_methods":"","locus_from":"1039554","locus_to":"1067040","mibig_accession":"BGC0001995","primary_reference":"DOI:10.1080/09168451.2018.1549934","producer_evidence_basis":"SOURCE_ASSERTION","reference_basis":"ENTRY","smiles":"CC(C)C1CCC2(CO2)C3C1C=C(COC3=O)C(=O)O","standard_inchi":"InChI=1S/C15H20O5/c1-8(2)10-3-4-15(7-20-15)12-11(10)5-9(13(16)17)6-19-14(12)18/h5,8,10-12H,3-4,6-7H2,1-2H3,(H,16,17)","standard_inchi_key":"JESMSCGUTIEROV-UHFFFAOYSA-N","stereo_complete":"false","taxon_id":"NCBITaxon:510516","taxon_label":"Aspergillus oryzae RIB40"}] |
+| bgc-2331-query-chebi_structures | /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json; /contexts/11/source_scope_inventory/joins/chebi_structures | supports | Complete retained query frame, exact predicate and all matches/no-match fields: {"matches":[],"predicate":"exact complete standard_inchi_key equality","query":"JESMSCGUTIEROV-UHFFFAOYSA-N"} |
+| bgc-2331-query-lotus_occurrences | /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json; /contexts/11/source_scope_inventory/joins/lotus_occurrences | supports | Complete retained query frame, exact predicate and all matches/no-match fields: {"matches":[{"last_physical_line":3007,"physical_line":3007,"raw_tsv_record":"JESMSCGUTIEROV-UHFFFAOYSA-N\tAspergillus flavus\tNCBITaxon:5059\thttp://www.wikidata.org/entity/Q137096\t10.1080/09168451.2018.1549934\thttp://www.wikidata.org/entity/Q115948487\n","row":{"organism_name":"Aspergillus flavus","organism_wikidata":"http://www.wikidata.org/entity/Q137096","reference_doi":"10.1080/09168451.2018.1549934","standard_inchi_key":"JESMSCGUTIEROV-UHFFFAOYSA-N","structure_wikidata":"http://www.wikidata.org/entity/Q115948487","taxon_id":"NCBITaxon:5059"},"row_sha256":"d442648c757543eacc987ba5a173b5dea9209ec6de231be82d36913f57b9c006"}],"predicate":"exact complete standard_inchi_key equality","query":"JESMSCGUTIEROV-UHFFFAOYSA-N"} |
+| bgc-2331-source-lotus_occurrences | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical lines 3007–3007, row_sha256 d442648c757543eacc987ba5a173b5dea9209ec6de231be82d36913f57b9c006 | supports | Complete retained physical row payloads, every field: [{"organism_name":"Aspergillus flavus","organism_wikidata":"http://www.wikidata.org/entity/Q137096","reference_doi":"10.1080/09168451.2018.1549934","standard_inchi_key":"JESMSCGUTIEROV-UHFFFAOYSA-N","structure_wikidata":"http://www.wikidata.org/entity/Q115948487","taxon_id":"NCBITaxon:5059"}] |
+| bgc-2331-query-cyanometdb_occurrences | /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json; /contexts/11/source_scope_inventory/joins/cyanometdb_occurrences | supports | Complete retained query frame, exact predicate and all matches/no-match fields: {"matches":[],"predicate":"exact complete standard_inchi_key equality","query":"JESMSCGUTIEROV-UHFFFAOYSA-N"} |
+| bgc-2331-query-npclassifier | /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json; /contexts/11/source_scope_inventory/joins/npclassifier | supports | Complete retained query frame, exact predicate and all matches/no-match fields: {"matches":[{"last_physical_line":1096,"physical_line":1096,"raw_tsv_record":"JESMSCGUTIEROV-UHFFFAOYSA-N\tCC(C)C1CCC2(CO2)C3C1C=C(COC3=O)C(=O)O\tTerpenoids\tSesquiterpenoids\tCadinane sesquiterpenoids\tfalse\tnpclassifier.gnps2.org@2026-09-07\n","row":{"class_results":"Cadinane sesquiterpenoids","is_glycoside":"false","model_version":"npclassifier.gnps2.org@2026-09-07","pathway_results":"Terpenoids","smiles":"CC(C)C1CCC2(CO2)C3C1C=C(COC3=O)C(=O)O","standard_inchi_key":"JESMSCGUTIEROV-UHFFFAOYSA-N","superclass_results":"Sesquiterpenoids"},"row_sha256":"d90580da7033fceb412d2c3332f189d3e10dd73675a6fc5e845a5bb7776fbdab"}],"predicate":"exact complete standard_inchi_key equality","query":"JESMSCGUTIEROV-UHFFFAOYSA-N"} |
+| bgc-2331-source-npclassifier | /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv; Header line 1; physical lines 1096–1096, row_sha256 d90580da7033fceb412d2c3332f189d3e10dd73675a6fc5e845a5bb7776fbdab | supports | Complete retained physical row payloads, every field: [{"class_results":"Cadinane sesquiterpenoids","is_glycoside":"false","model_version":"npclassifier.gnps2.org@2026-09-07","pathway_results":"Terpenoids","smiles":"CC(C)C1CCC2(CO2)C3C1C=C(COC3=O)C(=O)O","standard_inchi_key":"JESMSCGUTIEROV-UHFFFAOYSA-N","superclass_results":"Sesquiterpenoids"}] |
+| bgc-2331-query-pubchem_bioassay | /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json; /contexts/11/source_scope_inventory/joins/pubchem_bioassay | supports | Complete retained query frame, exact predicate and all matches/no-match fields: {"matches":[{"last_physical_line":3095,"physical_line":3095,"raw_tsv_record":"JESMSCGUTIEROV-UHFFFAOYSA-N\t10016502\t\t(no assay data)\t\t\t\t\t\t\t\n","row":{"activity_name":"","activity_outcome":"","activity_value_um":"","aid":"","assay_name":"(no assay data)","assay_type":"","cid":"10016502","depositor":"","reference":"","standard_inchi_key":"JESMSCGUTIEROV-UHFFFAOYSA-N","target_accession":""},"row_sha256":"29de3c565d0a30ed37943df61721f707e092184ac6cc312364c57dc8afe0842b"}],"predicate":"exact complete standard_inchi_key equality","query":"JESMSCGUTIEROV-UHFFFAOYSA-N"} |
+| bgc-2331-source-pubchem_bioassay | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; Header line 1; physical lines 3095–3095, row_sha256 29de3c565d0a30ed37943df61721f707e092184ac6cc312364c57dc8afe0842b | supports | Complete retained physical row payloads, every field: [{"activity_name":"","activity_outcome":"","activity_value_um":"","aid":"","assay_name":"(no assay data)","assay_type":"","cid":"10016502","depositor":"","reference":"","standard_inchi_key":"JESMSCGUTIEROV-UHFFFAOYSA-N","target_accession":""}] |
+| bgc-2331-query-bindingdb_targets | /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json; /contexts/11/source_scope_inventory/joins/bindingdb_targets | supports | Complete retained query frame, exact predicate and all matches/no-match fields: {"matches":[],"predicate":"exact complete standard_inchi_key equality","query":"JESMSCGUTIEROV-UHFFFAOYSA-N"} |
+| bgc-2331-query-antibioticmech_inchikeys | /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json; /contexts/11/source_scope_inventory/joins/antibioticmech_inchikeys | supports | Complete retained query frame, exact predicate and all matches/no-match fields: {"matches":[],"predicate":"exact complete standard_inchi_key equality","query":"JESMSCGUTIEROV-UHFFFAOYSA-N"} |
+| bgc-2331-query-chebi_origins | /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json; /contexts/11/source_scope_inventory/joins/chebi_origins | supports | Complete retained query frame, exact predicate and all matches/no-match fields: {"matches":[],"predicate":"exact chebi_id from exact full-key structure rows","query":[]} |
+| bgc-2331-source-routes | /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json; /contexts/11/source_scope_inventory/source_taxa; /contexts/11/source_scope_inventory/forward_taxon_merge_matches; /contexts/11/source_scope_inventory/nonorganism_matches; /contexts/11/source_scope_inventory/actual_assay_rows; /contexts/11/source_scope_inventory/blank_AID_sentinels; /contexts/11/source_scope_inventory/related_corpus_rows | supports | Exact source taxa and route lists; source_taxa is distinct from the empty forward/nonorganism and actual-assay/related routes; a blank-AID sentinel is separate: {"actual_assay_rows":[],"blank_AID_sentinels":[{"last_physical_line":3095,"physical_line":3095,"raw_tsv_record":"JESMSCGUTIEROV-UHFFFAOYSA-N\t10016502\t\t(no assay data)\t\t\t\t\t\t\t\n","row":{"activity_name":"","activity_outcome":"","activity_value_um":"","aid":"","assay_name":"(no assay data)","assay_type":"","cid":"10016502","depositor":"","reference":"","standard_inchi_key":"JESMSCGUTIEROV-UHFFFAOYSA-N","target_accession":""},"row_sha256":"29de3c565d0a30ed37943df61721f707e092184ac6cc312364c57dc8afe0842b"}],"forward_taxon_merge_matches":[],"nonorganism_matches":[],"related_corpus_rows":[],"source_taxa":["NCBITaxon:5059","NCBITaxon:510516"]} |
+| bgc-2331-cached-taxonomy | /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json; /cached_taxonomy/input; /cached_taxonomy/whole_stanzas/10; /cached_taxonomy/whole_stanzas/23 | supports | Complete relevant cached stanzas, with no fresh taxonomy verification: [{"complete_stanza":"[Term]\nid: NCBITaxon:5059\nname: Aspergillus flavus\nsynonym: \"Aspergillus flavus var. parvisclerotigenus\" EXACT []\nsynonym: \"Aspergillus parvisclerotigenus\" EXACT []\nsynonym: \"Petromyces flavus\" EXACT []\n\n","id":"NCBITaxon:5059","physical_line":7866},{"complete_stanza":"[Term]\nid: NCBITaxon:510516\nname: Aspergillus oryzae RIB40\n\n","id":"NCBITaxon:510516","physical_line":99955}] |
+| bgc-2331-direct-contexts | /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json; /records/0/direct_companion_paths; /records/0/direct_companion_predicates | supports | Exact one-hop scope, with no claim transfer: {"direct_companion_paths":[],"direct_companion_predicates":[]} |
+| bgc-2331-structure-schema | /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml; Lines 392–433 | supports | The structure flag describes undefined stereocentres. ComputedClassification is explicitly a named/versioned prediction from structure, never a source assertion or an admission criterion. |
+| bgc-2331-stereo-method | /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py; Lines 142–173 | supports | Maintained stereo_complete derives from FindMolChiralCenters and absence of question-mark centre tags. It is not blanket all-bond-geometry or natural-identity proof. |
+| bgc-2331-classification-seeder | /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py; Lines 972–1020 | supports | Maintained seeding preserves lead source structures and named/versioned computed predictions separately; the computed pathway can control filing without becoming a source assertion. |
+| bgc-2331-review-profile | /private/tmp/npm-record-reviews-20261021/docs/record-review-profile.md; Whole current profile | supports | One-record claim-level scientific review requires twelve dimensions and truthful partial completion/unavailable-check limits. |
+| bgc-2331-review-skill | /private/tmp/npm-record-reviews-20261021/.claude/skills/review-yaml-record/SKILL.md; Whole current skill | supports | The review does not edit source records; the overriding absolute no-request instruction limits evidence access to retained local files. |
+| root-native-strict_ten | /private/tmp/npm-native-checks/batch-234/validate-strict-selected10-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-234/native-current234-five-gates-execution-001.json | supports | Closed-schema validation of the ten selected owners and any referenced components reported zero errors. |
+| root-native-strict_full | /private/tmp/npm-native-checks/batch-234/validate-all-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-234/native-current234-five-gates-execution-001.json | supports | Full closed-schema validation scanned all 3116 owners and reported zero errors. |
+| root-native-lockfile | /private/tmp/npm-native-checks/batch-234/verify-corpus-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-234/native-current234-five-gates-execution-001.json | supports | PATHS.tsv and filesystem agree on all 3116 records and their pinned filing pathways. |
+| root-native-reproduction | /private/tmp/npm-native-checks/batch-234/verify-reproduction-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-234/native-current234-five-gates-execution-001.json | supports | All 3116 records reproduce byte-identically from the retained inventories and carried curator content. This does not independently validate curator science. |
+| root-native-queue | /private/tmp/npm-native-checks/batch-234/review-queue-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-234/native-current234-five-gates-execution-001.json | supports | The full local queue contains 8922 diagnostic rows; selected-target entries were inspected. Queue diagnostics are leads, not scientific sign-off. |
+
+## Limits And Additional Notes
+
+- All evidence is retained locally. No external identifier, taxonomy, primary publication, protein sequence or natural stereochemical assignment was refreshed under the absolute no-request instruction.
+- Full QC and complete OAK authority coverage remain unavailable. Local gate and parse success establish only their explicit mechanical scope; no maintained reader applies to these owners.
+- Exact no-match joins are bounded by saved predicates/snapshots. Shared names, loci, taxa, citations or companions do not transfer compound-specific production, activity, mechanism or independent-study status.
+- Four original undefined-stereo warnings are global and unassigned. No additional molecular/YAML parse, source query or target invocation occurred during this scientific authoring.
+- No source record, native status or history is edited. Any supported future correction belongs to the maintained source/curator owners listed in the actual canonical intake.
+- The whole selected owner was read, but scientific completion is partial because full QC, complete ontology authority coverage and external source verification were unavailable. No native status or history was changed.
+- The branch uses cached base ce6a5498df5be51116bd5e0c119023ee62bb5464. Fresh origin/main verification and publication are deferred because the user prohibits all external requests.
+- Complete owner/history and actual intake were read. Full source payload meanings and direct-companion/raw-history carries remain explicitly attributed in pinned source notes.
+- BGC personally read all ten first-five molecular forms: 216 atom rows / 240 bond rows plus complete scalars, ring/stereo/motif tables and original comparisons/maps. Diagnostic indices are zero-based, not biochemical locants.
+- ROOT operated original activation/capture, collector/composer, canonical intakes and chemistry; Native operated original gates; no maintained reader applies to these five owners. BGC authored source planning and these scientific assessments without invoking any target during scientific authoring.
+- Saved review coverage is distinct from the native SEEDED/REVIEWED curation state. Proposed actions are not performed edits.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261104T034230Z-heptelidic-acid
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'Local evidence review: heptelidic acid'
+started_at: '2026-11-04T02:51:03.721117Z'
+finished_at: '2026-11-04T03:42:30.301382Z'
+reviewer:
+  identity: Codex root with native_checks, bgc_science and review_support peer agents
+  kind: agent
+  independence: independent
+  independence_basis: This review team inspected existing owner and retained source
+    bytes without editing them; scientific fragments were cross-checked separately
+    from their author. Local validation is not treated as scientific proof.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: Heptelidic acid preserves a locally consistent C15H20O5 representation with
+  four unresolved tetrahedral centres, a source-asserted Aspergillus oryzae RIB40
+  producer and a separate Aspergillus flavus occurrence. The review supports retained-source
+  fidelity with explicit stereochemical, locus and primary-evidence limits; no concrete
+  local correction is established.
+source:
+  git_revision: ce6a5498df5be51116bd5e0c119023ee62bb5464
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: AGENTS.md
+    sha256: 69e4037f8dc97d4b00bb7bb83b41ceca025f6ef578d5c0bf8086f3400becde0b
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/terpenoids/heptelidic-acid.yaml
+    sha256: dbf97b9f61c29b0de2331f83618f2dc05089910f9bdacb669bbbdc3e796dbeb1
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete NaturalProductRecord, including all present scientific
+    claims, history and declared mechanisms; external verification remains unavailable.
+  selection: Campaign path order 2331; one of the next ten uncovered paths selected
+    from the 3116-record corpus. Membership uses the canonical validated catalogue
+    plus retained committed campaign bundles.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-f2f3051989
+targets:
+- target_id: naturalproductmech:mibig-f2f3051989
+  path: data/natural_products/terpenoids/heptelidic-acid.yaml
+  label: heptelidic acid
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained harmonization generator; seeded fields are corrected through
+      maintained inputs and validated regeneration.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Retained MIBiG structure, producer and compound-specific locus assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/npclassifier.tsv
+    role: Pinned computed classification and filing assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Maintained extraction of MIBiG compound names, structures, stereochemistry
+      flags and source provenance.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Retained cited occurrence assertions, distinct from demonstrated production.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/pubchem_bioassay.tsv
+    role: Retained assay rows or empty-assay sentinels; source outcome and title alone
+      do not establish mechanism.
+  ownership_note: This review proposes no record edit. Source corrections belong in
+    maintained inventories, implemented curation tables, extractors or the seeder;
+    generated pages are not owners.
+checks:
+- check_id: root-native-strict_ten
+  name: strict_ten
+  status: passed
+  required: true
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  target_ids:
+  - naturalproductmech:mibig-f2f3051989
+  command: just validate-strict data/natural_products/terpenoids/heptelidic-acid.yaml
+    data/natural_products/terpenoids/hirsutene.yaml data/natural_products/terpenoids/hopene.yaml
+    data/natural_products/terpenoids/hordediene.yaml data/natural_products/terpenoids/hordetriene.yaml
+    data/natural_products/terpenoids/hygromycin-a.yaml data/natural_products/terpenoids/indosespene.yaml
+    data/natural_products/terpenoids/isobrevione-e.yaml data/natural_products/terpenoids/isochloro-merochlorin-b.yaml
+    data/natural_products/terpenoids/isorenieratene.yaml --workers 1 --out /private/tmp/npm-native-checks/batch-234/validate-strict-selected10-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_ten
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-strict_full
+  name: strict_full
+  status: passed
+  required: true
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  target_ids:
+  - naturalproductmech:mibig-f2f3051989
+  command: just validate-all --workers 1 --out /private/tmp/npm-native-checks/batch-234/validate-all-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_full
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-lockfile
+  name: lockfile
+  status: passed
+  required: true
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  target_ids:
+  - naturalproductmech:mibig-f2f3051989
+  command: just verify-corpus --summary
+  exit_code: 0
+  evidence_ids:
+  - root-native-lockfile
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-reproduction
+  name: reproduction
+  status: passed
+  required: true
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  target_ids:
+  - naturalproductmech:mibig-f2f3051989
+  command: just verify-reproduction
+  exit_code: 0
+  evidence_ids:
+  - root-native-reproduction
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-queue
+  name: queue
+  status: passed
+  required: true
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  target_ids:
+  - naturalproductmech:mibig-f2f3051989
+  command: just review-queue --tsv /private/tmp/npm-native-checks/batch-234/review-queue-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-queue
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-full-qc
+  name: Full just qc
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-f2f3051989
+  summary: 'Not run under the external-request prohibition: the complete recipe includes
+    upstream vendored synchronization. The five executed local checks are recorded
+    separately.'
+- check_id: root-ontology-authorities
+  name: Complete OAK identifier/label authority check
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-f2f3051989
+  summary: Complete offline ontology authority coverage was not established for this
+    run; no ontology retrieval or remote resolution was attempted. Retained taxonomy
+    evidence has only its explicitly stated local scope.
+- check_id: root-primary-and-live-sources
+  name: Primary literature and current structured database/identifier verification
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-f2f3051989
+  summary: All external requests are prohibited by the user. Fresh database and identifier
+    verification and complete primary-literature coverage are unavailable. Any retained
+    original literature actually inspected is recorded separately with its historical
+    scope.
+evidence:
+- evidence_id: bgc-2331-owner
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/terpenoids/heptelidic-acid.yaml
+  locator: Whole current owner plaintext and complete curation_history
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: Complete current owner and all 2 history entries; native curation_status
+    remains SEEDED.
+  snapshot_sha256: dbf97b9f61c29b0de2331f83618f2dc05089910f9bdacb669bbbdc3e796dbeb1
+- evidence_id: bgc-2331-capture
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/owner-capture-DATA-001.json
+  locator: /records/0
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: Complete captured owner preserves every written field/history; selected
+    maintained-reader applicability is false and no component reference is declared.
+  snapshot_sha256: 685e975cd87c5fcbc0cd260bdba7c0a2934720ad590120a3c7b9bf4c921410c2
+- evidence_id: bgc-2331-intake
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/intakes/2331-inspect-001.json
+  locator: /status; /repository; /source; /targets
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: Actual canonical intake for naturalproductmech:mibig-f2f3051989; 37 pinned
+    input placements and explicit maintained source/curator ownership.
+  snapshot_sha256: 628137181f18bf2328f6ee8720fd3c1b0fd8ce7078932d89cebe1d018441dd40
+- evidence_id: bgc-2331-grounding-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/owner-capture-DATA-001.json
+  locator: /records/0/owner_document
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete written field projection; absence is bounded by the complete
+    captured owner: {"chemical_structure":{"smiles":"CC(C)C1CCC2(CO2)C3C1C=C(COC3=O)C(=O)O","standard_inchi":"InChI=1S/C15H20O5/c1-8(2)10-3-4-15(7-20-15)12-11(10)5-9(13(16)17)6-19-14(12)18/h5,8,10-12H,3-4,6-7H2,1-2H3,(H,16,17)","standard_inchi_key":"JESMSCGUTIEROV-UHFFFAOYSA-N","stereo_complete":false,"structure_source":"MIBIG","structure_source_id":"mibig:BGC0001995"},"grounding_notes":"No
+    3-star ChEBI entry shares this structure, so the record keeps a content-hashed
+    identifier.","grounding_status":"MINTED","identifier":"naturalproductmech:mibig-f2f3051989","label":"heptelidic
+    acid","source_concepts":[{"minted_identifier":"naturalproductmech:mibig-f2f3051989","source":"MIBIG","source_id":"BGC0001995","source_label":"heptelidic
+    acid","source_version":"3"}],"xrefs":["pubchem:10016502"]}'
+  snapshot_sha256: 685e975cd87c5fcbc0cd260bdba7c0a2934720ad590120a3c7b9bf4c921410c2
+- evidence_id: bgc-2331-origin-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/owner-capture-DATA-001.json
+  locator: /records/0/owner_document
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete written field projection; absence is bounded by the complete
+    captured owner: {"biosynthetic_gene_clusters":[{"accession":"mibig:BGC0001995","bgc_class":["TERPENE"],"entry_status":"active","entry_version":"3","evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"MIBiG
+    BGC0001995 entry version 3; citation taken from the entry level","reference":"DOI:10.1080/09168451.2018.1549934"}],"genome_accession":"genbank:NC_036441.1","link_evidence_basis":"CLUSTER_UNSTATED","locus_from":1039554,"locus_to":1067040,"organism_label":"Aspergillus
+    oryzae RIB40","organism_taxon_id":"NCBITaxon:510516"}],"producer_organisms":[{"biosynthetic_gene_cluster":"mibig:BGC0001995","evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"MIBiG
+    BGC0001995 entry version 3; citation taken from the entry level","reference":"DOI:10.1080/09168451.2018.1549934"}],"evidence_basis":"SOURCE_ASSERTION","notes":"Locus
+    evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED; this
+    field grades the taxon claim, which is a different question.","source":"MIBIG","source_version":"3","taxon_id":"NCBITaxon:510516","taxon_label":"Aspergillus
+    oryzae RIB40"}],"producer_taxon_groups":["FUNGAL"],"source_concepts":[{"minted_identifier":"naturalproductmech:mibig-f2f3051989","source":"MIBIG","source_id":"BGC0001995","source_label":"heptelidic
+    acid","source_version":"3"}]}'
+  snapshot_sha256: 685e975cd87c5fcbc0cd260bdba7c0a2934720ad590120a3c7b9bf4c921410c2
+- evidence_id: bgc-2331-occurrence-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/owner-capture-DATA-001.json
+  locator: /records/0/owner_document
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete written field projection; absence is bounded by the complete
+    captured owner: {"grounding_notes":"No 3-star ChEBI entry shares this structure,
+    so the record keeps a content-hashed identifier.","occurrence_taxon_groups":["FUNGAL"],"occurrences":[{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.","reference":"DOI:10.1080/09168451.2018.1549934"}],"notes":"Wikidata
+    organism http://www.wikidata.org/entity/Q137096","source":"LOTUS","taxon_id":"NCBITaxon:5059","taxon_label":"Aspergillus
+    flavus","taxon_source":"NCBITaxon"}]}'
+  snapshot_sha256: 685e975cd87c5fcbc0cd260bdba7c0a2934720ad590120a3c7b9bf4c921410c2
+- evidence_id: bgc-2331-assay-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/owner-capture-DATA-001.json
+  locator: /records/0/owner_document
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete written field projection; absence is bounded by the complete
+    captured owner: {}'
+  snapshot_sha256: 685e975cd87c5fcbc0cd260bdba7c0a2934720ad590120a3c7b9bf4c921410c2
+- evidence_id: bgc-2331-classification-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/owner-capture-DATA-001.json
+  locator: /records/0/owner_document
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete written field projection; absence is bounded by the complete
+    captured owner: {"bgc_class":["TERPENE"],"biosynthesis_origin":"NATURAL_PRODUCT","np_classification":{"class_results":["Cadinane
+    sesquiterpenoids"],"is_glycoside":false,"pathway_results":["Terpenoids"],"superclass_results":["Sesquiterpenoids"],"tool":"NPClassifier","tool_version":"npclassifier.gnps2.org@2026-09-07"},"np_pathway":"TERPENOIDS"}'
+  snapshot_sha256: 685e975cd87c5fcbc0cd260bdba7c0a2934720ad590120a3c7b9bf4c921410c2
+- evidence_id: bgc-2331-chemistry
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/0/declared_structure; /records/0/smiles/status; /records/0/inchi/status;
+    /records/0/smiles/computed; /records/0/inchi/computed; /records/0/comparisons;
+    /records/0/atom_correspondence
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Both stored forms parsed. Exact original comparison/correspondence and
+    stereo values: {"atom_correspondence":{"complete_atom_count_match":true,"full_graph_identity_established":false,"scope":"One
+    chirality-aware substructure match; no independent full graph or natural identity
+    claim.","smiles_to_inchi_atom_indices":[0,7,1,9,2,3,14,6,19,11,10,4,8,5,18,13,17,12,15,16]},"comparisons":{"atom_count_equal":true,"bond_count_equal":true,"both_keys_equal_declared":true,"canonical_isomeric_smiles_equal":true,"canonical_nonisomeric_smiles_equal":true,"formal_charge_equal":true,"formula_equal":true,"smiles_formula_equals_literal_InChI_main_layer":true,"standard_inchi_equal":true,"standard_inchi_key_equal":true},"declared_structure":{"smiles":"CC(C)C1CCC2(CO2)C3C1C=C(COC3=O)C(=O)O","standard_inchi":"InChI=1S/C15H20O5/c1-8(2)10-3-4-15(7-20-15)12-11(10)5-9(13(16)17)6-19-14(12)18/h5,8,10-12H,3-4,6-7H2,1-2H3,(H,16,17)","standard_inchi_key":"JESMSCGUTIEROV-UHFFFAOYSA-N","stereo_complete":false,"structure_source":"MIBIG","structure_source_id":"mibig:BGC0001995"},"saved_stereo":{"inchi":{"Atom_Tetrahedral:Unspecified":4},"smiles":{"Atom_Tetrahedral:Unspecified":4}}}'
+  snapshot_sha256: 816109c1f8ded0ba3050e06805885b40faa13f7b8f59b68ed3c6e5f9509bbf2c
+- evidence_id: bgc-2331-topology
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/0/smiles/computed; /records/0/inchi/computed; /records/0/declared_structure;
+    /records/0/literal_InChI_layers; /records/0/comparisons; /records/0/atom_correspondence
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete saved topology interpretation: Both saved forms represent neutral
+    C15H20O5, with 20 heavy atoms, 22 bonds and one connected component. The complete
+    graph contains a six-membered carbocycle, a three-membered epoxide and a seven-membered
+    lactone, together with a carboxylic acid and one endocyclic C=C. In the saved
+    SMILES table, the epoxide ring is atoms 7/6/8, the lactone includes ester carbonyl
+    C15=O16 and O14, and the acid is C17(=O18)-O19H. Four tetrahedral centres, SMILES
+    atoms 3/6/9/10, remain unspecified in both representations; no absolute configuration
+    is supplied by this review. All ten saved comparison flags and complete atom-count
+    correspondence are true, while the original full_graph_identity_established flag
+    remains false. These observations establish the represented topology and normalization
+    agreement, not independent natural identity.'
+  snapshot_sha256: 816109c1f8ded0ba3050e06805885b40faa13f7b8f59b68ed3c6e5f9509bbf2c
+- evidence_id: bgc-2331-diagnostic-execution
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/chemistry-local/diagnostic-execution-001.json
+  locator: Whole current diagnostic-execution
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: ROOT operated one original stored-form diagnostic, exit 0, one attempt,
+    preserved original streams and closed environment. This execution receipt is not
+    independent scientific verification.
+  snapshot_sha256: 873fea2b7ac543d0193b0c1d9eb2e133b3cccf956df1b97740f2e7726f892caf
+- evidence_id: bgc-2331-diagnostic-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/root-diagnostic-acceptance-001.json
+  locator: /status; /accepted; /DATA; /execution; /verification; /warnings_scope;
+    /limits
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: ROOT accepts the original 20 stored parses and exact original comparisons/key/capture
+    joins. Four original undefined-stereo warnings remain global and unassigned. Acceptance
+    establishes local execution integrity, not natural identity or full graph proof.
+  snapshot_sha256: f7919a1be685503b598b6b4f44cc5afcefa1704c0a28293fd4faee95f6809e75
+- evidence_id: bgc-2331-native-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/root-native-five-gates-acceptance-001.json
+  locator: Whole current native-acceptance
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: Five original local gates passed. Full QC and complete OAK coverage remain
+    unavailable, so these results do not establish all required validation or a scientific
+    verdict.
+  snapshot_sha256: 9b347913accb95a57046572b329d24f2b6c534cd2508f62284190eeb4d7b671a
+- evidence_id: bgc-2331-intake-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/root-intake-acceptance-001.json
+  locator: Whole current intake-acceptance
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: ROOT accepts ten actual canonical intakes and exact current source ownership/input
+    plans; scientific assessment is separate.
+  snapshot_sha256: ab4d160d38578683c3857d1f68d898e77f4d78fada2c45a5dfbee2ac84711f4c
+- evidence_id: bgc-2331-inventory-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/root-source-inventory-acceptance-001.json
+  locator: Whole current inventory-acceptance
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: ROOT accepts the original saved inventory and current input/raw/query/row
+    joins. Complete meaning reading is separately attributed in source notes.
+  snapshot_sha256: 8620060199b8cb588265f159597b48ef2f5eec6524a4cf7df2cdd79b355691fd
+- evidence_id: bgc-2331-plan-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/root-input-plan-acceptance-001.json
+  locator: Whole current plan-acceptance
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: ROOT accepts the actual input plan and preserved source contexts, without
+    a scientific verdict.
+  snapshot_sha256: deb5f4c33ef02d9305b2facff8cb41fb97ce52a98ecdd06b4c4f76b57be743ca
+- evidence_id: bgc-2331-plan
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-target-input-plan-001.json
+  locator: /records/0
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: Current one-record input plan with exact direct companions, predicates
+    and input roles.
+  snapshot_sha256: e7c5d98e12dd26b964130aa3c74bcc688dde7562ea027f2f0409f775d60b5245
+- evidence_id: bgc-2331-source-notes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-scope-notes-001.json
+  locator: /reading; /cautions; /scientific_limits
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: Complete disjoint source/raw-history reading and exact carries, with compound-specific
+    cautions; source planning did not adjudicate pre-intake science.
+  snapshot_sha256: 685535fd23ffb826f01db2da0f521fe110097c0929a6ef8132722b2456ede5be
+- evidence_id: bgc-2331-curation-scope
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-scope-notes-001.json
+  locator: /curation
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: Eight explicitly opened implemented curation tables, including ignored
+    files, were scanned over 92 distinct exact literals with zero textual hits in
+    this bounded scope. Reserved decisions.tsv was not consumed.
+  snapshot_sha256: 685535fd23ffb826f01db2da0f521fe110097c0929a6ef8132722b2456ede5be
+- evidence_id: bgc-2331-query-mibig_compounds
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json
+  locator: /contexts/11/source_scope_inventory/joins/mibig_compounds
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete retained query frame, exact predicate and all matches/no-match
+    fields: {"matches":[{"last_physical_line":2292,"physical_line":2292,"raw_tsv_record":"BGC0001995\t3\tactive\tquestionable\tunknown\theptelidic
+    acid\t1\tCC(C)C1CCC2(CO2)C3C1C=C(COC3=O)C(=O)O\tInChI=1S/C15H20O5/c1-8(2)10-3-4-15(7-20-15)12-11(10)5-9(13(16)17)6-19-14(12)18/h5,8,10-12H,3-4,6-7H2,1-2H3,(H,16,17)\tJESMSCGUTIEROV-UHFFFAOYSA-N\tfalse\t\tpubchem:10016502\tNCBITaxon:510516\tAspergillus
+    oryzae RIB40\tterpene\tUnknown\tNC_036441.1\t1039554\t1067040\t\tSOURCE_ASSERTION\tCLUSTER_UNSTATED\tDOI:10.1080/09168451.2018.1549934\tENTRY\n","row":{"bgc_classes":"terpene","bgc_subclasses":"Unknown","cluster_link_evidence_basis":"CLUSTER_UNSTATED","compound_classes":"","compound_index":"1","compound_name":"heptelidic
+    acid","database_ids":"pubchem:10016502","entry_completeness":"unknown","entry_quality":"questionable","entry_status":"active","entry_version":"3","genome_accession":"NC_036441.1","locus_evidence_methods":"","locus_from":"1039554","locus_to":"1067040","mibig_accession":"BGC0001995","primary_reference":"DOI:10.1080/09168451.2018.1549934","producer_evidence_basis":"SOURCE_ASSERTION","reference_basis":"ENTRY","smiles":"CC(C)C1CCC2(CO2)C3C1C=C(COC3=O)C(=O)O","standard_inchi":"InChI=1S/C15H20O5/c1-8(2)10-3-4-15(7-20-15)12-11(10)5-9(13(16)17)6-19-14(12)18/h5,8,10-12H,3-4,6-7H2,1-2H3,(H,16,17)","standard_inchi_key":"JESMSCGUTIEROV-UHFFFAOYSA-N","stereo_complete":"false","taxon_id":"NCBITaxon:510516","taxon_label":"Aspergillus
+    oryzae RIB40"},"row_sha256":"fa7d0c67493f02963fe9983a1ed47b5a81408162366c7612489b03c3da5c7106"}],"predicate":"exact
+    complete standard_inchi_key equality","query":"JESMSCGUTIEROV-UHFFFAOYSA-N"}'
+  snapshot_sha256: cceb756ce0d1dcd24c26c05b558acf8366ebd9d830603ab3da900ce34934ec00
+- evidence_id: bgc-2331-source-mibig_compounds
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv
+  locator: Header line 1; physical lines 2292–2292, row_sha256 fa7d0c67493f02963fe9983a1ed47b5a81408162366c7612489b03c3da5c7106
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete retained physical row payloads, every field: [{"bgc_classes":"terpene","bgc_subclasses":"Unknown","cluster_link_evidence_basis":"CLUSTER_UNSTATED","compound_classes":"","compound_index":"1","compound_name":"heptelidic
+    acid","database_ids":"pubchem:10016502","entry_completeness":"unknown","entry_quality":"questionable","entry_status":"active","entry_version":"3","genome_accession":"NC_036441.1","locus_evidence_methods":"","locus_from":"1039554","locus_to":"1067040","mibig_accession":"BGC0001995","primary_reference":"DOI:10.1080/09168451.2018.1549934","producer_evidence_basis":"SOURCE_ASSERTION","reference_basis":"ENTRY","smiles":"CC(C)C1CCC2(CO2)C3C1C=C(COC3=O)C(=O)O","standard_inchi":"InChI=1S/C15H20O5/c1-8(2)10-3-4-15(7-20-15)12-11(10)5-9(13(16)17)6-19-14(12)18/h5,8,10-12H,3-4,6-7H2,1-2H3,(H,16,17)","standard_inchi_key":"JESMSCGUTIEROV-UHFFFAOYSA-N","stereo_complete":"false","taxon_id":"NCBITaxon:510516","taxon_label":"Aspergillus
+    oryzae RIB40"}]'
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: bgc-2331-query-chebi_structures
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json
+  locator: /contexts/11/source_scope_inventory/joins/chebi_structures
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete retained query frame, exact predicate and all matches/no-match
+    fields: {"matches":[],"predicate":"exact complete standard_inchi_key equality","query":"JESMSCGUTIEROV-UHFFFAOYSA-N"}'
+  snapshot_sha256: cceb756ce0d1dcd24c26c05b558acf8366ebd9d830603ab3da900ce34934ec00
+- evidence_id: bgc-2331-query-lotus_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json
+  locator: /contexts/11/source_scope_inventory/joins/lotus_occurrences
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete retained query frame, exact predicate and all matches/no-match
+    fields: {"matches":[{"last_physical_line":3007,"physical_line":3007,"raw_tsv_record":"JESMSCGUTIEROV-UHFFFAOYSA-N\tAspergillus
+    flavus\tNCBITaxon:5059\thttp://www.wikidata.org/entity/Q137096\t10.1080/09168451.2018.1549934\thttp://www.wikidata.org/entity/Q115948487\n","row":{"organism_name":"Aspergillus
+    flavus","organism_wikidata":"http://www.wikidata.org/entity/Q137096","reference_doi":"10.1080/09168451.2018.1549934","standard_inchi_key":"JESMSCGUTIEROV-UHFFFAOYSA-N","structure_wikidata":"http://www.wikidata.org/entity/Q115948487","taxon_id":"NCBITaxon:5059"},"row_sha256":"d442648c757543eacc987ba5a173b5dea9209ec6de231be82d36913f57b9c006"}],"predicate":"exact
+    complete standard_inchi_key equality","query":"JESMSCGUTIEROV-UHFFFAOYSA-N"}'
+  snapshot_sha256: cceb756ce0d1dcd24c26c05b558acf8366ebd9d830603ab3da900ce34934ec00
+- evidence_id: bgc-2331-source-lotus_occurrences
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical lines 3007–3007, row_sha256 d442648c757543eacc987ba5a173b5dea9209ec6de231be82d36913f57b9c006
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete retained physical row payloads, every field: [{"organism_name":"Aspergillus
+    flavus","organism_wikidata":"http://www.wikidata.org/entity/Q137096","reference_doi":"10.1080/09168451.2018.1549934","standard_inchi_key":"JESMSCGUTIEROV-UHFFFAOYSA-N","structure_wikidata":"http://www.wikidata.org/entity/Q115948487","taxon_id":"NCBITaxon:5059"}]'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: bgc-2331-query-cyanometdb_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json
+  locator: /contexts/11/source_scope_inventory/joins/cyanometdb_occurrences
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete retained query frame, exact predicate and all matches/no-match
+    fields: {"matches":[],"predicate":"exact complete standard_inchi_key equality","query":"JESMSCGUTIEROV-UHFFFAOYSA-N"}'
+  snapshot_sha256: cceb756ce0d1dcd24c26c05b558acf8366ebd9d830603ab3da900ce34934ec00
+- evidence_id: bgc-2331-query-npclassifier
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json
+  locator: /contexts/11/source_scope_inventory/joins/npclassifier
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete retained query frame, exact predicate and all matches/no-match
+    fields: {"matches":[{"last_physical_line":1096,"physical_line":1096,"raw_tsv_record":"JESMSCGUTIEROV-UHFFFAOYSA-N\tCC(C)C1CCC2(CO2)C3C1C=C(COC3=O)C(=O)O\tTerpenoids\tSesquiterpenoids\tCadinane
+    sesquiterpenoids\tfalse\tnpclassifier.gnps2.org@2026-09-07\n","row":{"class_results":"Cadinane
+    sesquiterpenoids","is_glycoside":"false","model_version":"npclassifier.gnps2.org@2026-09-07","pathway_results":"Terpenoids","smiles":"CC(C)C1CCC2(CO2)C3C1C=C(COC3=O)C(=O)O","standard_inchi_key":"JESMSCGUTIEROV-UHFFFAOYSA-N","superclass_results":"Sesquiterpenoids"},"row_sha256":"d90580da7033fceb412d2c3332f189d3e10dd73675a6fc5e845a5bb7776fbdab"}],"predicate":"exact
+    complete standard_inchi_key equality","query":"JESMSCGUTIEROV-UHFFFAOYSA-N"}'
+  snapshot_sha256: cceb756ce0d1dcd24c26c05b558acf8366ebd9d830603ab3da900ce34934ec00
+- evidence_id: bgc-2331-source-npclassifier
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv
+  locator: Header line 1; physical lines 1096–1096, row_sha256 d90580da7033fceb412d2c3332f189d3e10dd73675a6fc5e845a5bb7776fbdab
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete retained physical row payloads, every field: [{"class_results":"Cadinane
+    sesquiterpenoids","is_glycoside":"false","model_version":"npclassifier.gnps2.org@2026-09-07","pathway_results":"Terpenoids","smiles":"CC(C)C1CCC2(CO2)C3C1C=C(COC3=O)C(=O)O","standard_inchi_key":"JESMSCGUTIEROV-UHFFFAOYSA-N","superclass_results":"Sesquiterpenoids"}]'
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: bgc-2331-query-pubchem_bioassay
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json
+  locator: /contexts/11/source_scope_inventory/joins/pubchem_bioassay
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete retained query frame, exact predicate and all matches/no-match
+    fields: {"matches":[{"last_physical_line":3095,"physical_line":3095,"raw_tsv_record":"JESMSCGUTIEROV-UHFFFAOYSA-N\t10016502\t\t(no
+    assay data)\t\t\t\t\t\t\t\n","row":{"activity_name":"","activity_outcome":"","activity_value_um":"","aid":"","assay_name":"(no
+    assay data)","assay_type":"","cid":"10016502","depositor":"","reference":"","standard_inchi_key":"JESMSCGUTIEROV-UHFFFAOYSA-N","target_accession":""},"row_sha256":"29de3c565d0a30ed37943df61721f707e092184ac6cc312364c57dc8afe0842b"}],"predicate":"exact
+    complete standard_inchi_key equality","query":"JESMSCGUTIEROV-UHFFFAOYSA-N"}'
+  snapshot_sha256: cceb756ce0d1dcd24c26c05b558acf8366ebd9d830603ab3da900ce34934ec00
+- evidence_id: bgc-2331-source-pubchem_bioassay
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: Header line 1; physical lines 3095–3095, row_sha256 29de3c565d0a30ed37943df61721f707e092184ac6cc312364c57dc8afe0842b
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete retained physical row payloads, every field: [{"activity_name":"","activity_outcome":"","activity_value_um":"","aid":"","assay_name":"(no
+    assay data)","assay_type":"","cid":"10016502","depositor":"","reference":"","standard_inchi_key":"JESMSCGUTIEROV-UHFFFAOYSA-N","target_accession":""}]'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: bgc-2331-query-bindingdb_targets
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json
+  locator: /contexts/11/source_scope_inventory/joins/bindingdb_targets
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete retained query frame, exact predicate and all matches/no-match
+    fields: {"matches":[],"predicate":"exact complete standard_inchi_key equality","query":"JESMSCGUTIEROV-UHFFFAOYSA-N"}'
+  snapshot_sha256: cceb756ce0d1dcd24c26c05b558acf8366ebd9d830603ab3da900ce34934ec00
+- evidence_id: bgc-2331-query-antibioticmech_inchikeys
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json
+  locator: /contexts/11/source_scope_inventory/joins/antibioticmech_inchikeys
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete retained query frame, exact predicate and all matches/no-match
+    fields: {"matches":[],"predicate":"exact complete standard_inchi_key equality","query":"JESMSCGUTIEROV-UHFFFAOYSA-N"}'
+  snapshot_sha256: cceb756ce0d1dcd24c26c05b558acf8366ebd9d830603ab3da900ce34934ec00
+- evidence_id: bgc-2331-query-chebi_origins
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json
+  locator: /contexts/11/source_scope_inventory/joins/chebi_origins
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete retained query frame, exact predicate and all matches/no-match
+    fields: {"matches":[],"predicate":"exact chebi_id from exact full-key structure
+    rows","query":[]}'
+  snapshot_sha256: cceb756ce0d1dcd24c26c05b558acf8366ebd9d830603ab3da900ce34934ec00
+- evidence_id: bgc-2331-source-routes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json
+  locator: /contexts/11/source_scope_inventory/source_taxa; /contexts/11/source_scope_inventory/forward_taxon_merge_matches;
+    /contexts/11/source_scope_inventory/nonorganism_matches; /contexts/11/source_scope_inventory/actual_assay_rows;
+    /contexts/11/source_scope_inventory/blank_AID_sentinels; /contexts/11/source_scope_inventory/related_corpus_rows
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Exact source taxa and route lists; source_taxa is distinct from the empty
+    forward/nonorganism and actual-assay/related routes; a blank-AID sentinel is separate:
+    {"actual_assay_rows":[],"blank_AID_sentinels":[{"last_physical_line":3095,"physical_line":3095,"raw_tsv_record":"JESMSCGUTIEROV-UHFFFAOYSA-N\t10016502\t\t(no
+    assay data)\t\t\t\t\t\t\t\n","row":{"activity_name":"","activity_outcome":"","activity_value_um":"","aid":"","assay_name":"(no
+    assay data)","assay_type":"","cid":"10016502","depositor":"","reference":"","standard_inchi_key":"JESMSCGUTIEROV-UHFFFAOYSA-N","target_accession":""},"row_sha256":"29de3c565d0a30ed37943df61721f707e092184ac6cc312364c57dc8afe0842b"}],"forward_taxon_merge_matches":[],"nonorganism_matches":[],"related_corpus_rows":[],"source_taxa":["NCBITaxon:5059","NCBITaxon:510516"]}'
+  snapshot_sha256: cceb756ce0d1dcd24c26c05b558acf8366ebd9d830603ab3da900ce34934ec00
+- evidence_id: bgc-2331-cached-taxonomy
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json
+  locator: /cached_taxonomy/input; /cached_taxonomy/whole_stanzas/10; /cached_taxonomy/whole_stanzas/23
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Complete relevant cached stanzas, with no fresh taxonomy verification:
+    [{"complete_stanza":"[Term]\nid: NCBITaxon:5059\nname: Aspergillus flavus\nsynonym:
+    \"Aspergillus flavus var. parvisclerotigenus\" EXACT []\nsynonym: \"Aspergillus
+    parvisclerotigenus\" EXACT []\nsynonym: \"Petromyces flavus\" EXACT []\n\n","id":"NCBITaxon:5059","physical_line":7866},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:510516\nname: Aspergillus oryzae RIB40\n\n","id":"NCBITaxon:510516","physical_line":99955}]'
+  snapshot_sha256: cceb756ce0d1dcd24c26c05b558acf8366ebd9d830603ab3da900ce34934ec00
+- evidence_id: bgc-2331-direct-contexts
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json
+  locator: /records/0/direct_companion_paths; /records/0/direct_companion_predicates
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: 'Exact one-hop scope, with no claim transfer: {"direct_companion_paths":[],"direct_companion_predicates":[]}'
+  snapshot_sha256: cceb756ce0d1dcd24c26c05b558acf8366ebd9d830603ab3da900ce34934ec00
+- evidence_id: bgc-2331-structure-schema
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: Lines 392–433
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: The structure flag describes undefined stereocentres. ComputedClassification
+    is explicitly a named/versioned prediction from structure, never a source assertion
+    or an admission criterion.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: bgc-2331-stereo-method
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py
+  locator: Lines 142–173
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: Maintained stereo_complete derives from FindMolChiralCenters and absence
+    of question-mark centre tags. It is not blanket all-bond-geometry or natural-identity
+    proof.
+  snapshot_sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+- evidence_id: bgc-2331-classification-seeder
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: Lines 972–1020
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: Maintained seeding preserves lead source structures and named/versioned
+    computed predictions separately; the computed pathway can control filing without
+    becoming a source assertion.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: bgc-2331-review-profile
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/docs/record-review-profile.md
+  locator: Whole current profile
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: One-record claim-level scientific review requires twelve dimensions and
+    truthful partial completion/unavailable-check limits.
+  snapshot_sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+- evidence_id: bgc-2331-review-skill
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/.claude/skills/review-yaml-record/SKILL.md
+  locator: Whole current skill
+  accessed_at: '2026-11-04T03:26:45.582324Z'
+  support: supports
+  summary: The review does not edit source records; the overriding absolute no-request
+    instruction limits evidence access to retained local files.
+  snapshot_sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+- evidence_id: root-native-strict_ten
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-234/validate-strict-selected10-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-234/native-current234-five-gates-execution-001.json
+  accessed_at: '2026-11-04T02:55:22.278361Z'
+  support: supports
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  snapshot_sha256: 6eb86fafb52d8d3429bb2ad9e02f2f463878ab1404f0317aff94bd7061395d56
+- evidence_id: root-native-strict_full
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-234/validate-all-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-234/native-current234-five-gates-execution-001.json
+  accessed_at: '2026-11-04T02:55:48.333466Z'
+  support: supports
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  snapshot_sha256: ff284eb1ad827f1ffd4ecec5a30b5186cc5f1b6b80d7e49382abc277e6843741
+- evidence_id: root-native-lockfile
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-234/verify-corpus-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-234/native-current234-five-gates-execution-001.json
+  accessed_at: '2026-11-04T02:56:08.161413Z'
+  support: supports
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  snapshot_sha256: 254f171c7dff0f1ecbee5f47f75d2b7046143ae7fc499d9a1c08263e1c5125d8
+- evidence_id: root-native-reproduction
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-234/verify-reproduction-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-234/native-current234-five-gates-execution-001.json
+  accessed_at: '2026-11-04T02:56:42.801518Z'
+  support: supports
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  snapshot_sha256: cfc38f4e3f434e7f3651975f2cb228e5cda848476b2c53d1636d8746b794237a
+- evidence_id: root-native-queue
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-234/review-queue-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-234/native-current234-five-gates-execution-001.json
+  accessed_at: '2026-11-04T02:56:54.762248Z'
+  support: supports
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  snapshot_sha256: 3eed9b74d9496ee4db28632a8d7dae2208b83298376ae2b368e8ec8d0c8d0c91
+assessments:
+- assessment_id: bgc-2331-identity
+  area: identity
+  topic: Identity
+  outcome: supported
+  summary: The minted identifier naturalproductmech:mibig-f2f3051989 and full key
+    JESMSCGUTIEROV-UHFFFAOYSA-N identify the exact retained MIBiG BGC0001995 version
+    3 compound, named heptelidic acid. The stored SMILES and standard InChI agree
+    locally with that full key, and the exact retained ChEBI structure query has no
+    match. The MINTED grounding and historical no-matching-ChEBI note are therefore
+    retained within this snapshot; neither the name nor the PubChem:10016502 cross-reference
+    has been independently reverified. Four undefined tetrahedral centres prevent
+    treating this representation as a fully assigned natural stereoisomer.
+  target_ids:
+  - naturalproductmech:mibig-f2f3051989
+  evidence_ids:
+  - bgc-2331-grounding-owner
+  - bgc-2331-source-mibig_compounds
+  - bgc-2331-query-chebi_structures
+  - bgc-2331-chemistry
+  - bgc-2331-direct-contexts
+  dimensions:
+  - name: standard_inchi_key
+    value: JESMSCGUTIEROV-UHFFFAOYSA-N; exact full retained key, not a name or connectivity-block
+      substitute.
+    definition: Exact full key; no name, first-block or congener substitution.
+    evidence_ids:
+    - bgc-2331-grounding-owner
+    - bgc-2331-source-mibig_compounds
+    - bgc-2331-query-chebi_structures
+    - bgc-2331-chemistry
+    - bgc-2331-direct-contexts
+  - name: grounding_scope
+    value: The minted identifier naturalproductmech:mibig-f2f3051989 and full key
+      JESMSCGUTIEROV-UHFFFAOYSA-N identify the exact retained MIBiG BGC0001995 version
+      3 compound, named heptelidic acid. The stored SMILES and standard InChI agree
+      locally with that full key, and the exact retained ChEBI structure query has
+      no match. The MINTED grounding and historical no-matching-ChEBI note are therefore
+      retained within this snapshot; neither the name nor the PubChem:10016502 cross-reference
+      has been independently reverified. Four undefined tetrahedral centres prevent
+      treating this representation as a fully assigned natural stereoisomer.
+    definition: Local grounding fidelity is distinct from fresh natural-identity verification.
+    evidence_ids:
+    - bgc-2331-grounding-owner
+    - bgc-2331-source-mibig_compounds
+    - bgc-2331-query-chebi_structures
+    - bgc-2331-chemistry
+    - bgc-2331-direct-contexts
+- assessment_id: bgc-2331-representation
+  area: representation
+  topic: Stored molecular representation
+  outcome: supported
+  summary: Both saved forms represent neutral C15H20O5, with 20 heavy atoms, 22 bonds
+    and one connected component. The complete graph contains a six-membered carbocycle,
+    a three-membered epoxide and a seven-membered lactone, together with a carboxylic
+    acid and one endocyclic C=C. In the saved SMILES table, the epoxide ring is atoms
+    7/6/8, the lactone includes ester carbonyl C15=O16 and O14, and the acid is C17(=O18)-O19H.
+    Four tetrahedral centres, SMILES atoms 3/6/9/10, remain unspecified in both representations;
+    no absolute configuration is supplied by this review. All ten saved comparison
+    flags and complete atom-count correspondence are true, while the original full_graph_identity_established
+    flag remains false. These observations establish the represented topology and
+    normalization agreement, not independent natural identity. The stored stereo_complete
+    flag is assessed against the maintained extractor’s tetrahedral-centre test; it
+    is not blanket proof of every bond geometry or natural stereochemical assignment.
+  target_ids:
+  - naturalproductmech:mibig-f2f3051989
+  evidence_ids:
+  - bgc-2331-chemistry
+  - bgc-2331-topology
+  - bgc-2331-grounding-owner
+  - bgc-2331-stereo-method
+  - bgc-2331-structure-schema
+  dimensions:
+  - name: stereochemistry_scope
+    value: Both saved forms represent neutral C15H20O5, with 20 heavy atoms, 22 bonds
+      and one connected component. The complete graph contains a six-membered carbocycle,
+      a three-membered epoxide and a seven-membered lactone, together with a carboxylic
+      acid and one endocyclic C=C. In the saved SMILES table, the epoxide ring is
+      atoms 7/6/8, the lactone includes ester carbonyl C15=O16 and O14, and the acid
+      is C17(=O18)-O19H. Four tetrahedral centres, SMILES atoms 3/6/9/10, remain unspecified
+      in both representations; no absolute configuration is supplied by this review.
+      All ten saved comparison flags and complete atom-count correspondence are true,
+      while the original full_graph_identity_established flag remains false. These
+      observations establish the represented topology and normalization agreement,
+      not independent natural identity. The stored stereo_complete flag is assessed
+      against the maintained extractor’s tetrahedral-centre test; it is not blanket
+      proof of every bond geometry or natural stereochemical assignment.
+    definition: Saved complete stereo/atom/bond interpretation, not an experimental
+      assignment or a new parse.
+    evidence_ids:
+    - bgc-2331-chemistry
+    - bgc-2331-topology
+    - bgc-2331-grounding-owner
+    - bgc-2331-stereo-method
+    - bgc-2331-structure-schema
+  - name: representation_correspondence
+    value: All ten saved comparisons and complete atom-count correspondence are true;
+      original full_graph_identity_established remains false. Stored normalization
+      is not independent exact natural-graph identity.
+    definition: Normalized identifier agreement does not establish explicit full-graph
+      or natural-form identity.
+    evidence_ids:
+    - bgc-2331-chemistry
+    - bgc-2331-topology
+    - bgc-2331-grounding-owner
+    - bgc-2331-stereo-method
+    - bgc-2331-structure-schema
+- assessment_id: bgc-2331-provenance
+  area: provenance
+  topic: Producer and locus evidence
+  outcome: supported
+  summary: MIBiG physical row 2292 retains BGC0001995 version 3, active status, questionable
+    quality and unknown completeness, with Aspergillus oryzae RIB40 (NCBITaxon:510516),
+    NC_036441.1 positions 1039554–1067040 and TERPENE source class. The producer is
+    explicitly SOURCE_ASSERTION; no locus method is stated and the locus remains CLUSTER_UNSTATED.
+    The cached strain label supports only the retained local taxon mapping. The separate
+    Aspergillus flavus occurrence does not establish that strain as a producer, strengthen
+    the locus grade, or supply a complete pathway.
+  target_ids:
+  - naturalproductmech:mibig-f2f3051989
+  evidence_ids:
+  - bgc-2331-origin-owner
+  - bgc-2331-source-mibig_compounds
+  - bgc-2331-cached-taxonomy
+  - bgc-2331-source-routes
+  dimensions:
+  - name: taxon_scope
+    value: MIBiG physical row 2292 retains BGC0001995 version 3, active status, questionable
+      quality and unknown completeness, with Aspergillus oryzae RIB40 (NCBITaxon:510516),
+      NC_036441.1 positions 1039554–1067040 and TERPENE source class. The producer
+      is explicitly SOURCE_ASSERTION; no locus method is stated and the locus remains
+      CLUSTER_UNSTATED. The cached strain label supports only the retained local taxon
+      mapping. The separate Aspergillus flavus occurrence does not establish that
+      strain as a producer, strengthen the locus grade, or supply a complete pathway.
+    definition: Source taxa and cached labels preserve genus/species/strain scope;
+      no fresh ancestry or production inference.
+    evidence_ids:
+    - bgc-2331-origin-owner
+    - bgc-2331-source-mibig_compounds
+    - bgc-2331-cached-taxonomy
+    - bgc-2331-source-routes
+  - name: producer_evidence
+    value: MIBiG physical row 2292 retains BGC0001995 version 3, active status, questionable
+      quality and unknown completeness, with Aspergillus oryzae RIB40 (NCBITaxon:510516),
+      NC_036441.1 positions 1039554–1067040 and TERPENE source class. The producer
+      is explicitly SOURCE_ASSERTION; no locus method is stated and the locus remains
+      CLUSTER_UNSTATED. The cached strain label supports only the retained local taxon
+      mapping. The separate Aspergillus flavus occurrence does not establish that
+      strain as a producer, strengthen the locus grade, or supply a complete pathway.
+    definition: Producer evidence is assessed separately from occurrence and locus
+      support.
+    evidence_ids:
+    - bgc-2331-origin-owner
+    - bgc-2331-source-mibig_compounds
+    - bgc-2331-cached-taxonomy
+    - bgc-2331-source-routes
+  - name: locus_evidence
+    value: MIBiG physical row 2292 retains BGC0001995 version 3, active status, questionable
+      quality and unknown completeness, with Aspergillus oryzae RIB40 (NCBITaxon:510516),
+      NC_036441.1 positions 1039554–1067040 and TERPENE source class. The producer
+      is explicitly SOURCE_ASSERTION; no locus method is stated and the locus remains
+      CLUSTER_UNSTATED. The cached strain label supports only the retained local taxon
+      mapping. The separate Aspergillus flavus occurrence does not establish that
+      strain as a producer, strengthen the locus grade, or supply a complete pathway.
+    definition: Source version/status/method/grade does not establish a complete pathway
+      or fresh primary support.
+    evidence_ids:
+    - bgc-2331-origin-owner
+    - bgc-2331-source-mibig_compounds
+    - bgc-2331-cached-taxonomy
+    - bgc-2331-source-routes
+- assessment_id: bgc-2331-citations
+  area: evidence
+  topic: Citation scope
+  outcome: supported
+  summary: DOI:10.1080/09168451.2018.1549934 is retained as an ENTRY-level MIBiG database
+    assertion for the producer/locus and also as the LOTUS occurrence reference. Those
+    placements have different claim scopes but do not constitute independent studies
+    merely because they occur in two source tables. No publication text, exact isolation/stereochemical
+    assignment or experimental locus result was freshly accessed. The entry-level
+    citation is not promoted to a directly inspected compound-specific experiment.
+  target_ids:
+  - naturalproductmech:mibig-f2f3051989
+  evidence_ids:
+  - bgc-2331-grounding-owner
+  - bgc-2331-origin-owner
+  - bgc-2331-source-mibig_compounds
+  - bgc-2331-source-lotus_occurrences
+  - bgc-2331-source-notes
+  - bgc-2331-direct-contexts
+  dimensions:
+  - name: citation_scope
+    value: DOI:10.1080/09168451.2018.1549934 is retained as an ENTRY-level MIBiG database
+      assertion for the producer/locus and also as the LOTUS occurrence reference.
+      Those placements have different claim scopes but do not constitute independent
+      studies merely because they occur in two source tables. No publication text,
+      exact isolation/stereochemical assignment or experimental locus result was freshly
+      accessed. The entry-level citation is not promoted to a directly inspected compound-specific
+      experiment.
+    definition: Citation roles remain database assertions; no publication independence
+      or fresh source access is assumed.
+    evidence_ids:
+    - bgc-2331-grounding-owner
+    - bgc-2331-origin-owner
+    - bgc-2331-source-mibig_compounds
+    - bgc-2331-source-lotus_occurrences
+    - bgc-2331-source-notes
+    - bgc-2331-direct-contexts
+- assessment_id: bgc-2331-occurrence
+  area: evidence
+  topic: Occurrence and assay scope
+  outcome: supported
+  summary: The one written LOTUS occurrence and physical row 3007 name Aspergillus
+    flavus (NCBITaxon:5059), with DOI:10.1080/09168451.2018.1549934; the complete
+    cached stanza preserves that local label. This occurrence remains separate from
+    the source-asserted A. oryzae RIB40 producer. PubChem row 3095 for CID10016502
+    has a blank AID and the literal no-assay-data sentinel, with no outcome, measurement
+    or target. It is neither an inactive result nor an actual bioassay. The complete
+    owner has no bioactivity or molecular-target declaration; the exact retained ChEBI-origin,
+    CyanoMetDB, BindingDB and AntibioticMech joins add no matches. These are bounded
+    source results, not a claim that the compound lacks biological activity.
+  target_ids:
+  - naturalproductmech:mibig-f2f3051989
+  evidence_ids:
+  - bgc-2331-occurrence-owner
+  - bgc-2331-assay-owner
+  - bgc-2331-source-lotus_occurrences
+  - bgc-2331-query-lotus_occurrences
+  - bgc-2331-query-chebi_origins
+  - bgc-2331-query-cyanometdb_occurrences
+  - bgc-2331-query-pubchem_bioassay
+  - bgc-2331-source-pubchem_bioassay
+  - bgc-2331-query-bindingdb_targets
+  - bgc-2331-query-antibioticmech_inchikeys
+  - bgc-2331-source-routes
+  - bgc-2331-cached-taxonomy
+  - bgc-2331-source-notes
+  dimensions:
+  - name: occurrence_scope
+    value: The one written LOTUS occurrence and physical row 3007 name Aspergillus
+      flavus (NCBITaxon:5059), with DOI:10.1080/09168451.2018.1549934; the complete
+      cached stanza preserves that local label. This occurrence remains separate from
+      the source-asserted A. oryzae RIB40 producer. PubChem row 3095 for CID10016502
+      has a blank AID and the literal no-assay-data sentinel, with no outcome, measurement
+      or target. It is neither an inactive result nor an actual bioassay. The complete
+      owner has no bioactivity or molecular-target declaration; the exact retained
+      ChEBI-origin, CyanoMetDB, BindingDB and AntibioticMech joins add no matches.
+      These are bounded source results, not a claim that the compound lacks biological
+      activity.
+    definition: Occurrence assertions are not counts of independent experiments or
+      producers.
+    evidence_ids:
+    - bgc-2331-occurrence-owner
+    - bgc-2331-assay-owner
+    - bgc-2331-source-lotus_occurrences
+    - bgc-2331-query-lotus_occurrences
+    - bgc-2331-query-chebi_origins
+    - bgc-2331-query-cyanometdb_occurrences
+    - bgc-2331-query-pubchem_bioassay
+    - bgc-2331-source-pubchem_bioassay
+    - bgc-2331-query-bindingdb_targets
+    - bgc-2331-query-antibioticmech_inchikeys
+    - bgc-2331-source-routes
+    - bgc-2331-cached-taxonomy
+    - bgc-2331-source-notes
+  - name: assay_target_scope
+    value: No written bioactivity or molecular target and no actual assay/target result
+      in the exact retained PubChem/BindingDB/AntibioticMech joins. A blank-AID sentinel,
+      where present, is not an activity result. This is a bounded source result, not
+      global inactivity or absence.
+    definition: Written claims and exact retained assay/target routes are bounded;
+      no global biological absence claim.
+    evidence_ids:
+    - bgc-2331-occurrence-owner
+    - bgc-2331-assay-owner
+    - bgc-2331-source-lotus_occurrences
+    - bgc-2331-query-lotus_occurrences
+    - bgc-2331-query-chebi_origins
+    - bgc-2331-query-cyanometdb_occurrences
+    - bgc-2331-query-pubchem_bioassay
+    - bgc-2331-source-pubchem_bioassay
+    - bgc-2331-query-bindingdb_targets
+    - bgc-2331-query-antibioticmech_inchikeys
+    - bgc-2331-source-routes
+    - bgc-2331-cached-taxonomy
+    - bgc-2331-source-notes
+- assessment_id: bgc-2331-classification
+  area: consistency
+  topic: Computed classification applicability
+  outcome: supported
+  summary: The retained NPClassifier model npclassifier.gnps2.org@2026-09-07 predicts
+    Terpenoids, Sesquiterpenoids, Cadinane sesquiterpenoids and is_glycoside:false.
+    The 15-carbon oxygenated framework and complete epoxide/lactone/acid topology
+    permit a broad representation-level comparison, and there is no separate sugar
+    residue or glycosidic connection in the saved graph. They do not independently
+    establish the named Cadinane subclass or a biosynthetic route. The versioned prediction
+    and TERPENOIDS filing remain separate from the MIBiG TERPENE source class and
+    from producer/locus evidence; no model output is silently replaced.
+  target_ids:
+  - naturalproductmech:mibig-f2f3051989
+  evidence_ids:
+  - bgc-2331-classification-owner
+  - bgc-2331-source-npclassifier
+  - bgc-2331-source-mibig_compounds
+  - bgc-2331-chemistry
+  - bgc-2331-topology
+  - bgc-2331-structure-schema
+  - bgc-2331-classification-seeder
+  dimensions:
+  - name: classification_applicability
+    value: The retained NPClassifier model npclassifier.gnps2.org@2026-09-07 predicts
+      Terpenoids, Sesquiterpenoids, Cadinane sesquiterpenoids and is_glycoside:false.
+      The 15-carbon oxygenated framework and complete epoxide/lactone/acid topology
+      permit a broad representation-level comparison, and there is no separate sugar
+      residue or glycosidic connection in the saved graph. They do not independently
+      establish the named Cadinane subclass or a biosynthetic route. The versioned
+      prediction and TERPENOIDS filing remain separate from the MIBiG TERPENE source
+      class and from producer/locus evidence; no model output is silently replaced.
+    definition: Model filing labels, observed topology and source BGC classes remain
+      distinct axes.
+    evidence_ids:
+    - bgc-2331-classification-owner
+    - bgc-2331-source-npclassifier
+    - bgc-2331-source-mibig_compounds
+    - bgc-2331-chemistry
+    - bgc-2331-topology
+    - bgc-2331-structure-schema
+    - bgc-2331-classification-seeder
+- assessment_id: bgc-2331-completion
+  area: completeness
+  topic: Scientific completion
+  outcome: unknown
+  summary: This is a partial one-record scientific review of the complete retained
+    owner/history, actual canonical intake, exact source payloads and complete paired
+    molecular tables. Four unresolved centres, source-only producer/locus support
+    and unrefreshed primary/identifier evidence remain material limits. No declared
+    mechanism root requires a maintained reader for this owner. Five local gates and
+    original diagnostic acceptance establish their bounded mechanical results; full
+    QC and complete OAK authority coverage are unavailable. No supported source-record
+    correction is identified from the evidence accessed.
+  target_ids:
+  - naturalproductmech:mibig-f2f3051989
+  evidence_ids:
+  - bgc-2331-owner
+  - bgc-2331-capture
+  - bgc-2331-intake
+  - bgc-2331-plan
+  - bgc-2331-intake-acceptance
+  - bgc-2331-inventory-acceptance
+  - bgc-2331-plan-acceptance
+  - bgc-2331-source-notes
+  - bgc-2331-curation-scope
+  - bgc-2331-diagnostic-execution
+  - bgc-2331-diagnostic-acceptance
+  - bgc-2331-native-acceptance
+  - bgc-2331-review-profile
+  - bgc-2331-review-skill
+  dimensions:
+  - name: review_completion
+    value: 'Partial: actual retained evidence and complete saved forms assessed; no
+      mechanism reader applies to this owner. Full QC/OAK and fresh primary/identity
+      authority remain unavailable.'
+    definition: Completion reflects actual evidence access and check coverage; parsing
+      and gate success are not scientific proof.
+    evidence_ids:
+    - bgc-2331-owner
+    - bgc-2331-capture
+    - bgc-2331-intake
+    - bgc-2331-plan
+    - bgc-2331-intake-acceptance
+    - bgc-2331-inventory-acceptance
+    - bgc-2331-plan-acceptance
+    - bgc-2331-source-notes
+    - bgc-2331-curation-scope
+    - bgc-2331-diagnostic-execution
+    - bgc-2331-diagnostic-acceptance
+    - bgc-2331-native-acceptance
+    - bgc-2331-review-profile
+    - bgc-2331-review-skill
+findings: []
+actions: []
+limitations:
+- All evidence is retained locally. No external identifier, taxonomy, primary publication,
+  protein sequence or natural stereochemical assignment was refreshed under the absolute
+  no-request instruction.
+- Full QC and complete OAK authority coverage remain unavailable. Local gate and parse
+  success establish only their explicit mechanical scope; no maintained reader applies
+  to these owners.
+- Exact no-match joins are bounded by saved predicates/snapshots. Shared names, loci,
+  taxa, citations or companions do not transfer compound-specific production, activity,
+  mechanism or independent-study status.
+- Four original undefined-stereo warnings are global and unassigned. No additional
+  molecular/YAML parse, source query or target invocation occurred during this scientific
+  authoring.
+- No source record, native status or history is edited. Any supported future correction
+  belongs to the maintained source/curator owners listed in the actual canonical intake.
+- The whole selected owner was read, but scientific completion is partial because
+  full QC, complete ontology authority coverage and external source verification were
+  unavailable. No native status or history was changed.
+- The branch uses cached base ce6a5498df5be51116bd5e0c119023ee62bb5464. Fresh origin/main
+  verification and publication are deferred because the user prohibits all external
+  requests.
+notes:
+- Complete owner/history and actual intake were read. Full source payload meanings
+  and direct-companion/raw-history carries remain explicitly attributed in pinned
+  source notes.
+- 'BGC personally read all ten first-five molecular forms: 216 atom rows / 240 bond
+  rows plus complete scalars, ring/stereo/motif tables and original comparisons/maps.
+  Diagnostic indices are zero-based, not biochemical locants.'
+- ROOT operated original activation/capture, collector/composer, canonical intakes
+  and chemistry; Native operated original gates; no maintained reader applies to these
+  five owners. BGC authored source planning and these scientific assessments without
+  invoking any target during scientific authoring.
+- Saved review coverage is distinct from the native SEEDED/REVIEWED curation state.
+  Proposed actions are not performed edits.
+tags:
+- offline
+- record-review
+- batch-234
+```
