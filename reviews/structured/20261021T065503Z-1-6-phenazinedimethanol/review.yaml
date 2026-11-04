@@ -1,0 +1,905 @@
+schema_version: 1.0.0
+review_id: 20261021T065503Z-1-6-phenazinedimethanol
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: '1,6-phenazinedimethanol: exact identity, occurrence and experimental BGC scope'
+started_at: '2026-10-21T06:37:21.308762Z'
+finished_at: '2026-10-21T06:55:03.674978Z'
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This review team did not author or modify the selected owner
+    or its source inventories. Parallel source inspections were reconciled into this
+    single review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: 'The exact achiral structure, PubChem equivalence, minted identity and cited
+  Brevibacterium occurrence are supported. The cited biosynthesis experiment characterizes
+  a smaller phenazine ehp operon expressed in Escherichia coli, whereas the MIBiG-derived
+  record assigns NRPS to a broader interval and leaves locus evidence unstated. Reconcile
+  the experimentally supported region and class without upgrading native Serratia
+  production: the paper reports no phenazine-like molecules under its tested native
+  culture conditions.'
+source:
+  git_revision: 10ed28fcdadb3d955c30732ff05b5d0e4adbee3b
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/1-6-phenazinedimethanol.yaml
+    sha256: 69ea69c7e0073a97493b6af05b34ae614138c8132aabc87d3b74085e5d20a33c
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: Claim-level review of one full generated NaturalProductRecord and its
+    complete resolved mechanism view.
+  selection: First path without a target in validated scripts/record_review.py list
+    output from fresh origin/main 10ed28fcdadb3d955c30732ff05b5d0e4adbee3b. At campaign
+    start the declared glob contained 3,116 records, 54 covered by 91 validated bundles
+    and 3,062 unreviewed; ignored bundles are included by the helper. This bundle
+    assesses only this one target.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-1155c4085f
+targets:
+- target_id: naturalproductmech:mibig-1155c4085f
+  path: data/natural_products/alkaloids/1-6-phenazinedimethanol.yaml
+  label: 1,6-phenazinedimethanol
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG seed identity, producer and cluster source
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated record transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema and component validation
+  status: passed
+  required: true
+  summary: One owner validated; zero ERROR rows.
+  target_ids:
+  - naturalproductmech:mibig-1155c4085f
+  command: just validate-strict data/natural_products/alkaloids/1-6-phenazinedimethanol.yaml
+    --out /private/tmp/npm-review-work/001/strict.tsv
+  exit_code: 0
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 record files agree with 3,116 PATHS.tsv rows and their pinned
+    filing pathways.
+  target_ids:
+  - naturalproductmech:mibig-1155c4085f
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just verify-corpus
+    --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016808+00:00; finished 2026-10-21T06:37:52.997020+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/verify-corpus.log.'
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 records are byte-identical to the seeder output from committed
+    inventories and maintained curation inputs.
+  target_ids:
+  - naturalproductmech:mibig-1155c4085f
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just verify-reproduction
+    --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016703+00:00; finished 2026-10-21T06:38:35.570687+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/verify-reproduction.log.'
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The documented exhaustive queue command produced 8,928 diagnostic rows
+    in 12 queues; deterministic queue output does not establish scientific review.
+  target_ids:
+  - naturalproductmech:mibig-1155c4085f
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just review-queue
+    --tsv /private/tmp/npm-review-queue-initial.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016598+00:00; finished 2026-10-21T06:37:11.018366+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/review-queue.log.'
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'Full configured gate passed using existing CHEBI and GO caches plus the
+    committed taxonomy adapter: 13,434 canonical matches, 646 synonym matches, 35
+    documented exceptions, 499 warning-only mismatches and 4,722 pairs skipped because
+    their prefixes have no adapter.'
+  target_ids:
+  - naturalproductmech:mibig-1155c4085f
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:56.498212+00:00; finished 2026-10-21T06:38:54.776253+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/validate-products.log.'
+- check_id: qc-environment-attempt1
+  name: Initial QC attempt before installing the pinned linter
+  status: failed
+  required: false
+  summary: The first full QC invocation stopped at lint because the isolated copied
+    Python environment lacked Ruff. Exact uv.lock version Ruff 0.16.6 was subsequently
+    installed and lint passed on later invocations.
+  target_ids:
+  - naturalproductmech:mibig-1155c4085f
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just qc
+  exit_code: 1
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:56.497107+00:00; finished 2026-10-21T06:36:56.918133+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/qc.log.'
+- check_id: qc-network-attempt2
+  name: QC attempt without network access
+  status: failed
+  required: false
+  summary: After Ruff installation, QC passed lint and stopped at vendored-sync because
+    sandbox DNS could not reach the pinned public CLAW governance source. Approved
+    network access allowed the next invocation to verify all 22 governed artifacts.
+  target_ids:
+  - naturalproductmech:mibig-1155c4085f
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just qc
+  exit_code: 1
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:37:57.661447+00:00; finished 2026-10-21T06:37:59.874785+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/qc-attempt2.log.'
+- check_id: qc-tag-attempt3
+  name: QC attempt before restoring the required provenance tag
+  status: failed
+  required: false
+  summary: 'QC passed lint, vendored sync, documentation, provenance and source queue,
+    then stopped at tests: 998 passed, 1 failed, 4 skipped. The sole failure was the
+    isolated clone lacking refs/tags/review-base/gentamicin-20261013; it was not a
+    failed archive-content assertion. The tag was subsequently fetched from origin.'
+  target_ids:
+  - naturalproductmech:mibig-1155c4085f
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just qc
+  exit_code: 1
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:38:17.713062+00:00; finished 2026-10-21T06:45:43.079802+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/qc-attempt3.log.'
+- check_id: qc-tag-remediation
+  name: Targeted verification after restoring the provenance tag
+  status: passed
+  required: false
+  summary: After restoring the required tag, the exact previously failed gentamicin
+    archive test passed (1 passed). No repository content was edited for this remediation.
+  target_ids:
+  - naturalproductmech:mibig-1155c4085f
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just test -q
+    tests/test_gentamicin_review_archive.py::test_gentamicin_archive_and_scoped_dispositions
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:45:52.383490+00:00; finished 2026-10-21T06:45:54.030116+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/gentamicin-tag-check.log.'
+- check_id: qc-skip-diagnosis
+  name: Diagnosis of the suite skip conditions
+  status: passed
+  required: false
+  summary: 'The four observed skip cases were reproduced with pytest skip reasons
+    enabled: the optional sibling AntibioticMech comparison has no sibling checkout
+    in the isolated clone, and three command-frontmatter tests have empty parameter
+    sets. This diagnostic invocation executed no passing tests; it reported four skips.'
+  target_ids:
+  - naturalproductmech:mibig-1155c4085f
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just test -q
+    -rs tests/test_schema.py::test_shared_mech_modules_are_byte_identical_to_the_fleet
+    tests/test_skill_frontmatter.py::test_command_frontmatter_has_no_duplicate_keys
+    tests/test_skill_frontmatter.py::test_command_frontmatter_is_valid_yaml tests/test_skill_frontmatter.py::test_command_declares_a_usable_description
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:46:30.259937+00:00; finished 2026-10-21T06:46:31.251048+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/skipped-tests-diagnosis.log.'
+- check_id: shared-qc
+  name: Full repository quality gate after environment repair
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed after installing the pinned
+    linter, allowing the read-only governance fetch, and restoring the required provenance
+    tag. Tests: 999 passed, 4 skipped, 2 warnings. Closed-schema validation: 3,116
+    records and zero errors. Documentation, provenance, source queue, governed artifacts,
+    generated pages, reproduction, filing integrity and corpus reporting all passed.'
+  target_ids:
+  - naturalproductmech:mibig-1155c4085f
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:46:02.058886+00:00; finished 2026-10-21T06:54:53.950582+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/qc-attempt4.log.'
+- check_id: C-IMODULON
+  name: Expression-module adapter applicability
+  status: not_applicable
+  required: false
+  summary: No gene-level expression, regulator or iModulon claim is used to support
+    this record. Direct compound and BGC experiments were inspected; no absence claim
+    about database coverage is made.
+  target_ids:
+  - naturalproductmech:mibig-1155c4085f
+evidence:
+- evidence_id: E-LOCAL
+  kind: record_content
+  reference: data/natural_products/alkaloids/1-6-phenazinedimethanol.yaml
+  locator: Complete YAML, including identity, structure, xrefs, occurrence, classification,
+    optional-section presence and curation_history
+  accessed_at: '2026-10-21T06:40:48Z'
+  support: supports
+  summary: Read the complete exact owner and its resolved representation. It denotes
+    one phenazine structure, imports one LOTUS occurrence and one MIBiG source concept,
+    and contains no causal_graph_refs. Optional assertion sections and seed history
+    were inspected directly.
+  snapshot_sha256: 69ea69c7e0073a97493b6af05b34ae614138c8132aabc87d3b74085e5d20a33c
+- evidence_id: E-PUBCHEM
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/44607162/property/InChIKey,InChI,CanonicalSMILES,MolecularFormula/JSON
+  locator: 'PropertyTable.Properties[0]: CID, ConnectivitySMILES, InChI, InChIKey,
+    MolecularFormula'
+  accessed_at: '2026-10-21T06:38:09Z'
+  support: supports
+  summary: Official PubChem response identifies CID 44607162 with the exact record
+    SMILES and Standard InChI, key WFYLTIMBLPIRRU-UHFFFAOYSA-N and formula C14H12N2O2.
+- evidence_id: E-PUBCHEM-NAME
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/44607162/synonyms/JSON
+  locator: InformationList.Information[0].Synonym
+  accessed_at: '2026-10-21T06:38:27Z'
+  support: supports
+  summary: Official synonym response names 1,6-phenazinedimethanol and lists CHEBI:198968
+    as a cross-reference lead, subsequently checked directly.
+- evidence_id: E-CHOI
+  kind: primary_source
+  reference: https://www.nature.com/articles/ja200992
+  locator: Abstract on the official publisher preview, reached through https://www.nature.com/articles/ja200992.pdf;
+    DOI:10.1038/ja.2009.92
+  accessed_at: '2026-10-21T06:38:09Z'
+  support: supports
+  summary: The authors identify compound 2 as 1,6-phenazinedimethanol isolated from
+    culture broth of Brevibacterium sp. KMD 003 obtained from a Callyspongia sponge.
+    This supports the exact-compound occurrence; the main methods were not available
+    in the preview.
+- evidence_id: E-CHOI-FIG
+  kind: primary_source
+  reference: https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fja.2009.92/MediaObjects/41429_2009_Article_BFja200992_Fig1_HTML.gif
+  locator: Figure 1, lower structure labelled 2; downloaded image visually inspected
+  accessed_at: '2026-10-21T06:38:43Z'
+  support: supports
+  summary: Published compound 2 depicts the phenazine ring with two hydroxymethyl
+    groups at the stated positions, agreeing with the record connectivity and showing
+    no stereogenic centre.
+  snapshot_sha256: 73dbb244a6656582a78787759ca8042af8f1be9c3365816174dbcb4dc0a48754
+- evidence_id: E-CHOI-SI
+  kind: primary_source
+  reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fja.2009.92/MediaObjects/41429_2009_BFja200992_MOESM427_ESM.pdf
+  locator: Supplement contents S2 and compound-2 spectral captions S11, S14-S19
+  accessed_at: '2026-10-21T06:38:27Z'
+  support: context_only
+  summary: The publisher supplies MS and NMR supporting data explicitly assigned to
+    compound 2. Captions and extracted text were inspected; raw spectra were not independently
+    reinterpreted.
+- evidence_id: E-PUBMED-CHOI
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=19798118&retmode=xml
+  locator: MedlineCitation/PMID; Article/ELocationID; PubmedData/ArticleIdList; Article/Abstract
+  accessed_at: '2026-10-21T06:39:32Z'
+  support: supports
+  summary: NCBI XML maps PMID:19798118 to DOI:10.1038/ja.2009.92 and the exact isolation-paper
+    title. The abstract was inspected directly, independently of search-result snippets.
+- evidence_id: E-CHEBI
+  kind: database
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/198968/
+  locator: chebi_accession, name, stars, default_structure, chemical_data and compound_origins
+  accessed_at: '2026-10-21T06:38:43Z'
+  support: supports
+  summary: Official ChEBI response names 1,6-phenazinedimethanol with the exact Standard
+    InChIKey, neutral charge and formula C14H12N2O2. The released entry has two stars,
+    so this match does not meet the repository three-star grounding rule.
+- evidence_id: E-WIKIDATA
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q148611
+  locator: Label, taxon name, taxon rank and NCBI taxonomy ID; inspected page cites
+    revision 2517982510
+  accessed_at: '2026-10-21T06:39:32Z'
+  support: supports
+  summary: The occurrence provenance identifier resolves to Brevibacterium, genus,
+    with NCBI Taxonomy ID 1696.
+- evidence_id: E-TAXA
+  kind: authority
+  reference: data/raw/corpus_taxa.obo
+  locator: 'Term stanza id: NCBITaxon:1696'
+  accessed_at: '2026-10-21T06:40:48Z'
+  support: supports
+  summary: The pinned local taxon stanza names NCBITaxon:1696 as Brevibacterium, agreeing
+    with the occurrence and external identifier.
+  snapshot_sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+- evidence_id: E-LOTUS
+  kind: database
+  reference: data/raw/lotus_occurrences.tsv
+  locator: Exact row keyed by WFYLTIMBLPIRRU-UHFFFAOYSA-N / NCBITaxon:1696 / 10.1038/JA.2009.92;
+    inspected in local-sources.json extraction
+  accessed_at: '2026-10-21T06:40:48Z'
+  support: supports
+  summary: The maintained source triple links this exact structure to Brevibacterium
+    and the inspected isolation DOI; its organism Wikidata URI is Q148611. The owner
+    correctly marks the source as LOTUS and evidence as DATABASE_ASSERTION.
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: E-CHEMISTRY
+  kind: validation
+  reference: /private/tmp/npm-review-work/001/chemistry.json
+  locator: Calculated from target chemical_structure.smiles using Chem.MolFromSmiles,
+    inchi.MolToInchi, inchi.MolToInchiKey, rdMolDescriptors.CalcMolFormula, Chem.GetFormalCharge,
+    Chem.FindMolChiralCenters(includeUnassigned=True), Descriptors.ExactMolWt. Assertions
+    compared regenerated InChI and key with the owner; exit 0.
+  accessed_at: '2026-10-21T06:40:48Z'
+  support: supports
+  summary: RDKit 2026.03.5 output regenerates the record Standard InChI and InChIKey
+    from its SMILES, with formula C14H12N2O2, charge 0, no chiral centres and exact
+    mass 240.089877624. This is internal chemical consistency evidence, not a new
+    experimental structure determination.
+  snapshot_sha256: a1fd9c49ecb7403a73920d7685c69310f711d8764093286ecfac4deda422c7fe
+- evidence_id: E-GROUNDING-INVENTORY
+  kind: search
+  reference: data/raw/chebi_structures.tsv
+  locator: Exact-key, label and slug search of the entire pinned eligible ChEBI inventory
+  accessed_at: '2026-10-21T06:40:48Z'
+  support: context_only
+  summary: No matching key, label or slug was found in the pinned eligible ChEBI inventory;
+    the local source extraction likewise contains no exact-key ChEBI row. This is
+    bounded to the committed inventory, not an exhaustive claim about all current
+    ChEBI entries.
+  snapshot_sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+  search_scope: Ran rg --no-ignore --hidden -n -F -e WFYLTIMBLPIRRU-UHFFFAOYSA-N -e
+    1,6-phenazinedimethanol -e 1-6-phenazinedimethanol data/raw/chebi_structures.tsv
+    on 2026-10-21. Exit1 meant no matches. Explicit entire file searched with ignored-file
+    exclusions disabled; no global ontology absence inference.
+- evidence_id: E-CLASSIFICATION
+  kind: database
+  reference: data/raw/npclassifier.tsv
+  locator: Row 2630 keyed by WFYLTIMBLPIRRU-UHFFFAOYSA-N
+  accessed_at: '2026-10-21T06:40:48Z'
+  support: supports
+  summary: Pinned computed row gives Alkaloids; Anthranilic acid alkaloids; Phenazine
+    alkaloids; is_glycoside=false; model_version=npclassifier.gnps2.org@2026-09-07,
+    matching the owner.
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: E-FILING
+  kind: record_content
+  reference: data/natural_products/PATHS.tsv
+  locator: Row keyed by naturalproductmech:mibig-1155c4085f
+  accessed_at: '2026-10-21T06:40:48Z'
+  support: supports
+  summary: The path pin records ALKALOIDS and data/natural_products/alkaloids/1-6-phenazinedimethanol.yaml
+    for this minted identifier.
+  snapshot_sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+- evidence_id: E-POLICY
+  kind: authority
+  reference: docs/HARMONIZATION.md
+  locator: Identity resolution and Filing sections
+  accessed_at: '2026-10-21T06:40:48Z'
+  support: supports
+  summary: Exact grounding requires an unambiguous three-star ChEBI default structure.
+    Otherwise a stable source-derived minted identifier is retained. NPClassifier
+    filing is explicitly computed and PATHS.tsv-pinned.
+  snapshot_sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+- evidence_id: bgc-mibig-v3
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0002002.3/annotations.json
+  locator: accession/version/status/quality/completeness; loci[0]; biosynthesis.classes;
+    compounds[0]; taxonomy; legacy_references
+  accessed_at: '2026-10-21T06:39:45Z'
+  support: supports
+  summary: 'Directly retrieved and read JSON: BGC0002002 version 3 is active, quality
+    questionable, completeness unknown. It lists 1,6-phenazinedimethanol with the
+    record SMILES and PubChem 44607162; Serratia fonticola taxon 47917; NZ_CP011254.1
+    at 780776..795170; NRPS, Type I. Locus and compound evidence arrays are empty;
+    the legacy entry reference is PMID:29548983. The record faithfully retains these
+    source assertions.'
+- evidence_id: bgc-primary-29548983
+  kind: primary_source
+  reference: https://mediatum.ub.tum.de/doc/1473998/1473998.pdf
+  locator: 'Greunke et al., Metabolic Engineering 47 (2018) 334–345, DOI:10.1016/j.ymben.2018.03.010,
+    reprinted in Duell dissertation: PDF pages 40–42 (article 335–337),44–45 (339–340),105
+    (Table S2),107 (Table S4),110–112 (Figure S4/Table S5).'
+  accessed_at: '2026-10-21T06:40:45Z'
+  support: partial
+  summary: Inspected downloaded primary article and supplement, not search snippets.
+    The source strain was S. fonticola DSM 4576, genome NZ_CP011254. Its extracts
+    lacked detectable phenazine-like compounds under the tested conditions. The authors
+    expressed a 9.7 kb, eleven-gene ehp phenazine operon in E. coli BAP1 and compared
+    empty-vector controls. Purified compound 1 was identified as 1,6-phenazinedimethanol
+    by HR-ESI-MS 241.0971 [M+H]+ and proton NMR. Figure 2 and Table S4 identify five
+    core phenazine genes and auxiliary genes; none is described as an NRPS. The experiment
+    establishes the cloned operon’s capacity, not observed native production. The
+    paper does not experimentally test all of MIBiG’s larger 14.4 kb interval.
+  quote: did not appear to contain any phenazine-like molecules
+  search_scope: Retrieved free institutional PDF using urllib.request and inspected
+    selected pages with pdftotext. Initial web-tool PDF access returned 429; direct
+    download succeeded. No paywalled access or provider credits used.
+- evidence_id: bgc-ncbi-genome
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=NZ_CP011254.1&db=nuccore&report=genbank&retmode=text&from=780776&to=795170
+  locator: LOCUS/DEFINITION/ACCESSION/VERSION; source feature; CDS WN53_RS03350 and
+    neighboring phenazine-related genes
+  accessed_at: '2026-10-21T06:39:45Z'
+  support: supports
+  summary: Direct GenBank-format response resolves NZ_CP011254.1 and REGION 780776..795170
+    to Serratia fonticola DSM 4576, taxon 47917, isolated from water. It identifies
+    the record as RefSeq identical to GenBank CP011254.1. The 14,395 bp region includes
+    an automated non-ribosomal peptide synthetase annotation at WN53_RS03350 (absolute
+    783777..785546) alongside PhzF and PhzA/PhzB family annotations. Genome coordinates
+    resolve, but automated gene annotations alone do not establish compound-specific
+    NRPS chemistry.
+- evidence_id: bgc-taxonomy
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?command=show&id=47917&lvl=&mode=node
+  locator: TaxonomyID/current name/rank/type-strain list
+  accessed_at: '2026-10-21T06:40:45Z'
+  support: supports
+  summary: NCBI taxonomy 47917 resolves to species Serratia fonticola. DSM 4576 is
+    a listed type-strain designation; no conflicting taxon identity was found on this
+    inspected entry.
+- evidence_id: bgc-pubmed-reference
+  kind: database
+  reference: https://pubmed.ncbi.nlm.nih.gov/29548983/
+  locator: Bibliographic metadata and abstract
+  accessed_at: '2026-10-21T06:40:45Z'
+  support: supports
+  summary: PMID:29548983 resolves to Greunke et al., Direct Pathway Cloning (DiPaC)
+    to unlock natural product biosynthetic potential, Metabolic Engineering 47:334–345
+    (2018), DOI:10.1016/j.ymben.2018.03.010. The abstract describes phenazine discovery
+    from S. fonticola and heterologous pathway methods; the exact compound and experimental
+    scope require the inspected article text.
+assessments:
+- assessment_id: A-IDENTITY
+  area: identity
+  topic: Exact structure, label and PubChem equivalence
+  outcome: supported
+  summary: The target is one exact 1,6-phenazinedimethanol structure. Published compound
+    2, official PubChem CID 44607162, CHEBI:198968 and the internally regenerated
+    chemistry agree. The sole chemical xref is exact at the inspected structure resolution.
+  target_ids:
+  - naturalproductmech:mibig-1155c4085f
+  evidence_ids:
+  - E-LOCAL
+  - E-PUBCHEM
+  - E-PUBCHEM-NAME
+  - E-CHOI-FIG
+  - E-CHEBI
+  - E-CHEMISTRY
+  dimensions:
+  - name: stereochemical_resolution
+    value: Achiral connectivity; no chiral centres identified
+    definition: Supported stereochemical resolution, not an inferred absolute configuration
+    evidence_ids:
+    - E-CHOI-FIG
+    - E-CHEMISTRY
+  - name: standard_inchi_key
+    value: WFYLTIMBLPIRRU-UHFFFAOYSA-N
+    definition: Exact structure key shared by the owner and inspected databases
+    evidence_ids:
+    - E-LOCAL
+    - E-PUBCHEM
+    - E-CHEBI
+  details: The owner does not supply molecular formula, charge or masses; their absence
+    is not treated as an optional-field defect. External values and calculation are
+    mutually consistent. No synonyms, parent_compounds or congener_of assertions occur
+    in the complete owner to assess.
+- assessment_id: A-GROUNDING
+  area: grounding
+  topic: Minted identity under the pinned three-star rule
+  outcome: supported
+  summary: The MINTED status is consistent with the eligible committed inventory and
+    current verified two-star ChEBI match. CHEBI198968 is not a qualifying three-star
+    candidate under the declared policy.
+  target_ids:
+  - naturalproductmech:mibig-1155c4085f
+  evidence_ids:
+  - E-LOCAL
+  - E-GROUNDING-INVENTORY
+  - E-CHEBI
+  - E-POLICY
+  dimensions:
+  - name: grounding_tier
+    value: MINTED; current exact ChEBI match has 2 stars
+    definition: Repository grounding eligibility distinguishes three-star default
+      structures from lower-tier matches
+    evidence_ids:
+    - E-LOCAL
+    - E-CHEBI
+    - E-POLICY
+- assessment_id: A-OCCURRENCE
+  area: evidence
+  topic: Exact-compound Brevibacterium occurrence and provenance
+  outcome: supported
+  summary: The LOTUS occurrence has a claim-level citation to the correct isolation
+    paper. Its DOI identifies compound 2 from Brevibacterium sp. KMD 003 culture broth;
+    NCBITaxon:1696 and Wikidata Q148611 agree with the recorded genus. This supports
+    a genus-level occurrence without asserting production by all genus members.
+  target_ids:
+  - naturalproductmech:mibig-1155c4085f
+  evidence_ids:
+  - E-LOCAL
+  - E-LOTUS
+  - E-CHOI
+  - E-PUBMED-CHOI
+  - E-WIKIDATA
+  - E-TAXA
+  dimensions:
+  - name: taxon_rank
+    value: 'Genus: Brevibacterium; NCBITaxon:1696'
+    definition: Resolution of the occurrence taxon, not a species-wide or genus-wide
+      biosynthetic assertion
+    evidence_ids:
+    - E-LOCAL
+    - E-TAXA
+    - E-WIKIDATA
+  - name: published_strain_context
+    value: Brevibacterium sp. KMD 003
+    definition: Strain context in the primary paper; optional enrichment beyond the
+      imported genus triple
+    evidence_ids:
+    - E-CHOI
+  - name: occurrence_evidence_tier
+    value: LOTUS DATABASE_ASSERTION; primary abstract and published structure corroborate
+      occurrence
+    definition: The source assertion and independently inspected primary support are
+      kept distinct
+    evidence_ids:
+    - E-LOCAL
+    - E-LOTUS
+    - E-CHOI
+    - E-CHOI-FIG
+  details: The occurrence remains separate from the Serratia producer claim. Preserving
+    KMD 003 and culture-broth context in future curated notes would improve specificity
+    but omitted optional context alone is not a finding. This assessment does not
+    promote the LOTUS occurrence into a producer claim.
+- assessment_id: A-COMPUTED-CLASSIFICATION
+  area: provenance
+  topic: Computed filing and pinned classification
+  outcome: supported
+  summary: ALKALOIDS filing and the full NPClassifier output match the exact-key inventory
+    and PATHS.tsv pin. The owner explicitly names NPClassifier and its version, so
+    these classes retain computed provenance. The separate MIBiG NRPS assertion is
+    evaluated in the BGC assessment, not certified here.
+  target_ids:
+  - naturalproductmech:mibig-1155c4085f
+  evidence_ids:
+  - E-LOCAL
+  - E-CLASSIFICATION
+  - E-FILING
+  - E-POLICY
+  dimensions:
+  - name: classifier_version
+    value: npclassifier.gnps2.org@2026-09-07
+    definition: Version label of the committed computed classification used for filing
+    evidence_ids:
+    - E-LOCAL
+    - E-CLASSIFICATION
+- assessment_id: A-OPTIONAL-ASSERTIONS
+  area: scope
+  topic: Absent optional assertions and component references
+  outcome: not_applicable
+  summary: The complete owner has no bioactivities, bioactivity_summary, molecular_targets,
+    biosynthetic_pathway, causal_graphs, causal_graph_refs, related_records, clinical-status,
+    dataset or discussion assertions. There are no declared mechanism components or
+    edges to resolve for this owner. Optional omissions alone are not findings.
+  target_ids:
+  - naturalproductmech:mibig-1155c4085f
+  evidence_ids:
+  - E-LOCAL
+  details: This is a statement about fields in the fully read owner, not a repository-wide
+    or literature-wide absence claim. The primary paper suggests possible future compound-specific
+    activity curation, but no quantitative assay assertion is present to validate
+    in this record.
+- assessment_id: A-SEED-HISTORY
+  area: provenance
+  topic: Native status and seed-event scope
+  outcome: supported
+  summary: The record remains SEEDED with two SEEDED_FROM_SOURCES events attributed
+    to seed_from_sources. These are transparent seed history, not a claim of native
+    scientific review. This read-only review does not change status or append history.
+  target_ids:
+  - naturalproductmech:mibig-1155c4085f
+  evidence_ids:
+  - E-LOCAL
+- assessment_id: bgc-source-fidelity
+  area: provenance
+  topic: MIBiG accession, version, source claims and taxon
+  outcome: supported
+  summary: The accession, active version 3, compound structure, species taxon, locus
+    coordinates and source-level NRPS assignment are faithfully reproduced. SOURCE_ASSERTION
+    and CLUSTER_UNSTATED accurately describe the missing structured evidence in the
+    pinned source. Scientific interpretation still requires the primary experiment
+    below.
+  target_ids:
+  - naturalproductmech:mibig-1155c4085f
+  evidence_ids:
+  - bgc-mibig-v3
+  - bgc-ncbi-genome
+  - bgc-taxonomy
+  - bgc-pubmed-reference
+- assessment_id: bgc-experiment-scope
+  area: evidence
+  topic: Demonstrated phenazine operon versus broader NRPS-labelled source region
+  outcome: concern
+  summary: The primary experiment supports a smaller phenazine operon. The record
+    omits this distinction, strain and heterologous evidence while retaining only
+    the broader source NRPS classification. This is a compound-specific biosynthetic
+    interpretation gap rather than failed source reproduction.
+  target_ids:
+  - naturalproductmech:mibig-1155c4085f
+  evidence_ids:
+  - bgc-primary-29548983
+  - bgc-mibig-v3
+  - bgc-ncbi-genome
+  dimensions:
+  - name: strain
+    value: Serratia fonticola DSM 4576
+    definition: DNA donor and native strain assayed in the cited study
+    evidence_ids:
+    - bgc-primary-29548983
+    - bgc-ncbi-genome
+  - name: producer_evidence
+    value: SOURCE_ASSERTION; native production not demonstrated under tested conditions
+    definition: Heterologous expression supports a locus link without demonstrating
+      biosynthesis in the native source organism
+    evidence_ids:
+    - bgc-primary-29548983
+  - name: cluster_evidence
+    value: Heterologous expression of the 9.7 kb ehp clone
+    definition: Experimental evidence must be mapped to the tested operon before upgrading
+      the deposited broader locus
+    evidence_ids:
+    - bgc-primary-29548983
+findings:
+- finding_id: bgc-operon-classification
+  issue_key: mibig-bgc0002002-phenazine-operon-scope
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: NRPS-labelled source interval does not describe the experimentally demonstrated
+    phenazine operon
+  description: 'The source assigns NRPS/Type I to a 14.4 kb region containing an annotated
+    NRPS. The cited experiment instead demonstrates an eleven-gene 9.7 kb ehp phenazine
+    operon. A faithful source copy therefore leaves a material scope mismatch: the
+    record does not explain which portion was tested or that the experimental pathway
+    lacks an NRPS in its reported gene inventory. Missing heterologous evidence and
+    strain context are grouped here as the same claim-level reconciliation. This does
+    not prove native production, invalidate the accession, or justify automatically
+    deleting every source NRPS assertion.'
+  target_ids:
+  - naturalproductmech:mibig-1155c4085f
+  field_paths:
+  - bgc_class
+  - biosynthetic_gene_clusters[0].bgc_class
+  - biosynthetic_gene_clusters[0].locus_from
+  - biosynthetic_gene_clusters[0].locus_to
+  - biosynthetic_gene_clusters[0].link_evidence_basis
+  - producer_organisms[0]
+  evidence_ids:
+  - bgc-mibig-v3
+  - bgc-primary-29548983
+  - bgc-ncbi-genome
+  rule_id: 'docs/record-review-profile.md: active compound-specific clusters and source
+    evidence tier; docs/HARMONIZATION.md: producer versus cluster evidence'
+  native_severity: 'major: materially incomplete and potentially misleading compound-specific
+    biosynthetic representation'
+  normalization_reason: One material source/experiment reconciliation is counted once;
+    conservative evidence undergrading and missing strain are not inflated into separate
+    findings.
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: seeded source row BGC0002002, compound_index 1
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: MIBiG source interpretation
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: generated record and claim emission
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: implemented locus evidence qualification
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: implemented source-pinned strain qualification
+actions:
+- action_id: reconcile-ehp-source-context
+  description: Map the published clone boundaries and eleven genes to the source genome,
+    then reconcile the broader MIBiG NRPS classification with the demonstrated phenazine
+    operon through maintained source interpretation or an explicitly supported qualification
+    path. Preserve database provenance. Add the inspected heterologous method through
+    the implemented locus override only at its verified scope; retain native producer
+    SOURCE_ASSERTION and record the tested-condition nondetection. Add DSM 4576 via
+    the source-pinned strain table. Do not claim native biosynthesis from the heterologous
+    host.
+  finding_ids:
+  - bgc-operon-classification
+  target_ids:
+  - naturalproductmech:mibig-1155c4085f
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: seeded source row BGC0002002, compound_index 1
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: MIBiG source interpretation
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: generated record and claim emission
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: implemented locus evidence qualification
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: implemented source-pinned strain qualification
+  generator: scripts/seed_from_sources.py through documented seed canary and guarded
+    seeding
+  acceptance_checks:
+  - Inspect publication Figure 2, Table S4 and cloning primers against the exact genome
+    to establish tested boundaries before any class or evidence-grade change.
+  - The generated claim distinguishes the source’s broader NRPS-labelled region from
+    the demonstrated ehp phenazine operon, retains PMID:29548983 and separate curator
+    evidence, and preserves native SOURCE_ASSERTION with strain DSM 4576.
+  - Run just seed-canary naturalproductmech:mibig-1155c4085f and inspect the generated
+    record; then documented seeding, just validate-strict data/natural_products/alkaloids/1-6-phenazinedimethanol.yaml,
+    just verify-reproduction, just verify-corpus --summary, and just qc.
+limitations:
+- The Choi 2009 main article was available only as an official subscription preview.
+  Its abstract, published structure image and supplementary captions/text were inspected,
+  but full isolation/assay methods and independent reinterpretation of the supplied
+  spectra were not performed.
+- The grounding absence check is restricted to the full committed eligible ChEBI inventory,
+  searched with ignored-file exclusions disabled. The current directly inspected exact
+  ChEBI match has two stars; no exhaustive search across every current ChEBI structure
+  is claimed.
+- The temporary RDKit result is retained as a content-hashed calculation output and
+  its substantive values are recorded above; it establishes internal chemical consistency,
+  not experimental identity on its own.
+- 'Free-source access failures were worked around through official alternatives: the
+  PubChem interactive page failed while its API succeeded; Wikidata entity-JSON access
+  failed while the source page succeeded. No paid content or provider credits were
+  used.'
+- The exact primer-to-genome boundary alignment was not performed; the 9.7 kb versus
+  14.4 kb interval difference and gene-inventory discrepancy are directly documented,
+  while a final replacement class and coordinates remain curation work.
+- Negative native extracts apply only to the conditions used by Greunke et al.; they
+  do not establish incapacity under all conditions.
+- The GenBank response uses a current 2026 annotation and thus is used for accession/strain/coordinate
+  resolution and annotation context, not to silently replace the pinned MIBiG v3 gene
+  inventory.
+- The configured full identifier-label gate accepts 499 warning-level taxon-label
+  mismatches, 35 explicit exceptions and 4,722 no-adapter pairs across the corpus;
+  its exit 0 is not independent verification of every identifier or of this record's
+  scientific claims.
+- The quality suite skips the optional sibling AntibioticMech checkout comparison
+  because the isolated clone has no sibling checkout, and skips three command-frontmatter
+  cases because their parameter sets are empty. Pinned-hash and network governance
+  checks still ran.
+- Shared native gates assess deterministic corpus consistency and configured invariants.
+  They do not establish biological production, stereochemical specificity, evidence
+  adequacy or literature-level claim support.
+- The configured ontology gate skips unsupported adapters and permits 499 corpus-wide
+  taxon-label warnings; its exit zero is not universal identifier verification.
+- The bounded review does not independently reinterpret raw NMR spectra or certify
+  native production beyond inspected experimental conditions.
+notes:
+- No owner, inventory, component, curation status or history was edited. Follow-up
+  actions are proposals only.
+- The initial review listing lacked eleven historical commits; those were fetched
+  and the 91 existing bundles then validated successfully. Initial local chemistry
+  tooling lacked RDKit; exact lockfile dependencies were installed only in the isolated
+  environment before the successful chemistry check.
+- Native SEEDED status remains unchanged; a saved scientific review does not satisfy
+  every native REVIEWED gate.
+tags:
+- path-order-campaign
+- batch-001
+- phenazine

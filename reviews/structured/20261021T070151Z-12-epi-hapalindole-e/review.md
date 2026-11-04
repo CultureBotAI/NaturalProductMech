@@ -1,0 +1,1421 @@
+# 12-epi-hapalindole E: identity, occurrence and exact WelO5 product evidence
+
+- Review: 20261021T070151Z-12-epi-hapalindole-e
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-21T06:56:51.003933Z
+- Finished UTC: 2026-10-21T07:01:51.873456Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The exact chlorinated E structure and chemical xrefs are supported at their inspected resolution. Wild-type WelO5 from the listed UTEX B1830 locus makes exact E, supporting retained CLUSTER_DEMONSTRATED with corrected citations. Two LOTUS occurrence attributions remain provisional concerns. The CyanoMetDB note also needs to distinguish its NMR-used flag from overall structure confirmation.
+
+## Scope And Provenance
+
+One complete generated owner and resolved mechanism; all field groups inspected, with partial access to the specified primary sources.
+
+Selection: Unreviewed path number 5 in deterministic path order from the initial validated review list: 91 bundles covered 54 of 3,116 corpus records and 3,062 remained. Coverage accounting includes ignored bundles. This bundle assesses only one target.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 10ed28fcdadb3d955c30732ff05b5d0e4adbee3b.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-fa36d6dbf9 | data/natural_products/alkaloids/12-epi-hapalindole-e.yaml | generated | 12-epi-hapalindole E |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Closed-schema and component validation | passed | True | naturalproductmech:mibig-fa36d6dbf9 | One complete owner validated with zero ERROR rows. |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-fa36d6dbf9 | All 3,116 record files agree with 3,116 PATHS.tsv rows and their pinned filing pathways. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-fa36d6dbf9 | All 3,116 records are byte-identical to the seeder output from committed inventories and maintained curation inputs. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-fa36d6dbf9 | The documented exhaustive queue command produced 8,928 diagnostic rows in 12 queues; deterministic queue output does not establish scientific review. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-fa36d6dbf9 | Full configured gate passed using existing CHEBI and GO caches plus the committed taxonomy adapter: 13,434 canonical matches, 646 synonym matches, 35 documented exceptions, 499 warning-only mismatches and 4,722 pairs skipped because their prefixes have no adapter. |
+| Initial QC attempt before installing the pinned linter | failed | False | naturalproductmech:mibig-fa36d6dbf9 | The first full QC invocation stopped at lint because the isolated copied Python environment lacked Ruff. Exact uv.lock version Ruff 0.16.6 was subsequently installed and lint passed on later invocations. |
+| QC attempt without network access | failed | False | naturalproductmech:mibig-fa36d6dbf9 | After Ruff installation, QC passed lint and stopped at vendored-sync because sandbox DNS could not reach the pinned public CLAW governance source. Approved network access allowed the next invocation to verify all 22 governed artifacts. |
+| QC attempt before restoring the required provenance tag | failed | False | naturalproductmech:mibig-fa36d6dbf9 | QC passed lint, vendored sync, documentation, provenance and source queue, then stopped at tests: 998 passed, 1 failed, 4 skipped. The sole failure was the isolated clone lacking refs/tags/review-base/gentamicin-20261013; it was not a failed archive-content assertion. The tag was subsequently fetched from origin. |
+| Targeted verification after restoring the provenance tag | passed | False | naturalproductmech:mibig-fa36d6dbf9 | After restoring the required tag, the exact previously failed gentamicin archive test passed (1 passed). No repository content was edited for this remediation. |
+| Diagnosis of the suite skip conditions | passed | False | naturalproductmech:mibig-fa36d6dbf9 | The four observed skip cases were reproduced with pytest skip reasons enabled: the optional sibling AntibioticMech comparison has no sibling checkout in the isolated clone, and three command-frontmatter tests have empty parameter sets. This diagnostic invocation executed no passing tests; it reported four skips. |
+| Full repository quality gate after environment repair | passed | True | naturalproductmech:mibig-fa36d6dbf9 | The full documented just qc recipe passed after installing the pinned linter, allowing the read-only governance fetch, and restoring the required provenance tag. Tests: 999 passed, 4 skipped, 2 warnings. Closed-schema validation: 3,116 records and zero errors. Documentation, provenance, source queue, governed artifacts, generated pages, reproduction, filing integrity and corpus reporting all passed. |
+| Full source adjudication of the listed occurrence differences | unavailable | True | naturalproductmech:mibig-fa36d6dbf9 | Relevant primary abstracts and source metadata were inspected, but full passages needed to adjudicate the suspicious LOTUS taxon/reference combinations remain inaccessible. |
+| External genus-level Wikidata provenance identifiers | passed | True | naturalproductmech:mibig-fa36d6dbf9 | Official MediaWiki API resolved both genus provenance identifiers and matched the NCBI taxa after other public routes failed. |
+| Expression-module source applicability | not_applicable | False | naturalproductmech:mibig-fa36d6dbf9 | No expression-module or regulatory claim is used. Direct compound and biochemical sources were inspected; no source-coverage absence is inferred. |
+| Exact E occurrence assignment in cited 2014 source | unavailable | True | naturalproductmech:mibig-fa36d6dbf9 | The cited study main text and source row were inspected, but the original E-specific chromatogram/structure panel was not accessible. Later enzyme-product NMR and a native chromatogram without a labelled E peak cannot substitute for that occurrence assignment. |
+
+## Scientific And Domain Assessments
+
+### Exact chlorinated E congener and five-centre representation
+
+identity: supported. Targets: naturalproductmech:mibig-fa36d6dbf9.
+
+The owner consistently denotes 12-epi-hapalindole E isonitrile, with five assigned stereocentres, formula C21H23ClN2 and full key IJEJDCXOVNHHAX-CMWLGVBASA-N. NPAtlas, ChEBI and the exact PubChem entry agree.
+
+### Short compound label retains exact identity
+
+identity: supported. Targets: naturalproductmech:mibig-fa36d6dbf9.
+
+NPAtlas and ChEBI use 12-epi-hapalindole E for this same isonitrile. The label need not spell out isonitrile to identify the encoded compound; no ambiguity finding follows merely from the shorter name.
+
+### Exact equivalence of both asserted xrefs
+
+identity: supported. Targets: naturalproductmech:mibig-fa36d6dbf9.
+
+NPAtlas matches all structure identifiers. CyanoMetDB 1553 matches through its complete five-centre SMILES and systematic name, whose recalculated key equals the owner. Its stored underassigned InChI/key remains explicitly qualified.
+
+### Source representation conflict and separate occurrence row
+
+representation: concern. Targets: naturalproductmech:mibig-fa36d6dbf9.
+
+CyanoMetDB 1553 has inconsistent SMILES and InChI stereochemical completeness. The complete-key row 2766 independently carries the occurrence metadata seen in the owner. These distinct source rows explain the provenance without establishing that the owner structure or xref is wrong.
+
+### Minted identity follows the three-star grounding rule
+
+grounding: supported. Targets: naturalproductmech:mibig-fa36d6dbf9.
+
+No eligible match exists in the complete pinned inventory, and current exact candidate CHEBI:220080 has two stars. MINTED remains consistent with the repository rule.
+
+### Five-centre agreement with the exact E primary drawing
+
+evidence: supported. Targets: naturalproductmech:mibig-fa36d6dbf9.
+
+Independent transcription of the published E structure reproduces the owner full key, including C13R at the chlorine-bearing centre. This establishes agreement with the primary configuration drawing, not an independent experimental stereochemical determination.
+
+### Computed filing and seed history
+
+provenance: supported. Targets: naturalproductmech:mibig-fa36d6dbf9.
+
+The complete source extraction matches the owner’s explicitly computed Alkaloids/Tryptophan alkaloids classification, Hapalindole alkaloids and Simple indole alkaloids classes, and pinned model version. Source BGC TERPENE/OTHER has a separate provenance. Both seed events retain SEEDED; neither claims scientific sign-off.
+
+### Complete mechanism and optional assertions
+
+scope: not_applicable. Targets: naturalproductmech:mibig-fa36d6dbf9.
+
+No optional mechanism, activity, molecular target, clinical or related-record claim occurs in the complete owner or resolved view. Their absence alone is not a defect.
+
+### Claim-specific occurrence attribution
+
+evidence: concern. Targets: naturalproductmech:mibig-fa36d6dbf9.
+
+Five occurrence objects retain distinct source scopes. Primary abstracts support exact E in Fischerella ATCC 43239 and Hapalosiphon laingii. The imported CyanoMetDB 2014 observation explicitly reports structure confirmation=no and is assessed with the primary metabolite-profile evidence; it is not upgraded to a new isolation proof. Two extra LOTUS taxon/reference combinations need full-source verification.
+
+### Occurrence organism provenance identifiers
+
+grounding: supported. Targets: naturalproductmech:mibig-fa36d6dbf9.
+
+Both genus-level Wikidata identifiers resolve to the recorded NCBI taxa, and the species-level identifier was independently verified. These identifier correspondences do not establish the biological occurrence by themselves.
+
+### Exact E structure, producer taxon and locus provenance
+
+grounding: supported. Targets: naturalproductmech:mibig-fa36d6dbf9.
+
+The source compound index 2 matches the stored E structure, and the strain taxon, sequence accession and WelO5 protein map consistently. TERPENE / OTHER and omitted numerical bounds preserve the versioned source faithfully.
+
+### Exact-product enzymatic formation by the recorded locus
+
+evidence: supported. Targets: naturalproductmech:mibig-fa36d6dbf9.
+
+The primary product characterization and exact protein/accession bridge support CLUSTER_DEMONSTRATED for E: wild-type UTEX B1830 WelO5 forms it by chlorinating C. Retain this locus grade with the correct citation. Heterologous expression here supplied protein for in vitro assays; these experiments do not upgrade native producer SOURCE_ASSERTION.
+
+### CyanoMetDB native occurrence and reported structural method
+
+evidence: unknown. Targets: naturalproductmech:mibig-fa36d6dbf9.
+
+The occurrence is faithfully represented as a database assertion with UTEX B1830 context. Its source row records no NMR, and the inspected 2014 main text supports HPLC/UV/HRMS profiling. The original E-specific occurrence panel remains unverified; enzymatic E NMR in a different study must not be silently substituted as native UTEX NMR isolation. This access gap alone does not justify withdrawing the occurrence. The inspected later Figure S9 does not label an E peak and therefore does not close this exact occurrence gap.
+
+## Findings
+
+### R-LOTUS-SCOPE: Several LOTUS occurrence citations need exact organism and compound verification
+
+major / open / provisional; issue key: lotus-ijejdcxovnhhax-occurrence-reference-scope.
+
+The 2007 abstract directly reports Fischerella ATCC 43239, whereas this additional triple names Hapalosiphon. The 1987 metadata names H. fontinalis and other compounds, whereas this triple names H. welwitschii and exact E. Full article passages may resolve these differences, so none is declared disproven from an abstract or title alone. Their source support was not established in this review. Exact-compound occurrence supported by other publications does not validate these separate provenance triples.
+
+### bgc-e-claim-reference: Producer and demonstrated E locus reuse a compound-level reference
+
+major / open / confirmed; issue key: mibig-bgc0000668-compound2-claim-reference.
+
+BGC0000668:2 repeats DOI:10.1021/jo00226a009 as the sole producer and locus citation. This came from compound-level NMR metadata, not the experimental WelO5 study. Exact E formation is supported by retrieved modern primary evidence and maps to the recorded UTEX B1830 locus, so the repair is claim-specific reference routing rather than withdrawing the supported locus grade. The 1987 DOI’s full article was not inspected; no article-wide absence claim is made from its metadata alone.
+
+### cyanometdb-nmr-wording: NMR usage flag is rendered as overall structure confirmation
+
+minor / open / confirmed; issue key: cyanometdb-nmr-used-rendered-as-structure-confirmed.
+
+The exact CyanoMetDB source row stores nmr_used=no, but the generated evidence note reads structure confirmed by no. This turns a method-usage flag into ambiguous wording about overall identification. No NMR does not imply failed identity: chromatographic, UV or mass-spectral evidence may still apply. The note should identify the actual source field while retaining the occurrence as a database assertion and its remaining method limitations.
+
+## Recommended Actions And Acceptance Checks
+
+### R-ADJUDICATE-LOTUS
+
+Inspect full source passages for each listed triple, distinguishing new isolation, historical occurrence discussion and current taxonomy. If a triple is unsupported, withhold only its exact source row through the implemented pinned exclusion table. Retain supported observations; do not replace citations or taxa by inference.
+
+- For IJEJDCXOVNHHAX-CMWLGVBASA-N, document exact support or a full-row-pinned exclusion for NCBITaxon:162985 / literal DOI:10.1016/J.PHYTOCHEM.2007.06.024, NCBITaxon:162986 / literal DOI:10.1021/JO00226A009.
+- Inspect just seed-canary naturalproductmech:mibig-fa36d6dbf9 output, then documented seeding; run just validate-strict data/natural_products/alkaloids/12-epi-hapalindole-e.yaml, just verify-reproduction, just verify-corpus --summary and just qc.
+
+### route-e-claim-references
+
+Use curation/mibig_claim_references.tsv with BGC0000668:2 and the exact source-row hash to route the locus to PMID:25218740 / DOI:10.1038/nchembio.1625, documenting WelO5 AHI58816.1 and its exact accession/strain bridge. Select a separately justified producer reference or the versioned MIBiG assertion. Retain CLUSTER_DEMONSTRATED for E and native SOURCE_ASSERTION; distinguish heterologous protein production and in vitro formation from native culture biosynthesis. Preserve CyanoMetDB nmr_used=no as a method limitation and avoid claiming NMR-confirmed native UTEX E from the enzyme-product NMR comparison.
+
+- The generated locus citation identifies exact E formation by the UTEX B1830 WelO5 protein encoded by KF811479.1; IC-52-3 results are explicitly distinguished.
+- Producer SOURCE_ASSERTION and supported CLUSTER_DEMONSTRATED remain separate; a NMR assay product is not represented as native-culture NMR evidence.
+- Use just seed-canary naturalproductmech:mibig-fa36d6dbf9, inspect output, then documented seeding and just validate-strict data/natural_products/alkaloids/12-epi-hapalindole-e.yaml, just verify-reproduction, just verify-corpus --summary and just qc.
+
+### render-cyanometdb-nmr-usage
+
+Change the CyanoMetDB evidence-note emitter in scripts/seed_from_sources.py to explicitly report NMR used: no for this source value, instead of structure confirmed by no. Preserve the raw nmr_used value, reference, strain context and database-assertion grade; retain any separately supported chromatographic, UV or mass-spectral identification evidence without calling it NMR confirmation.
+
+- The E canary emits an explicit NMR used: no statement with the original source citation and strain.
+- No-NMR is not rendered as failed identification, absence or an overall structure-confidence conclusion; the source row remains unchanged.
+- Run the documented seed canary for naturalproductmech:mibig-fa36d6dbf9, review the generated change, then strict validation, reproduction, corpus verification and required QC.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| E-IDENTITY-LOCAL | data/natural_products/alkaloids/12-epi-hapalindole-e.yaml; Complete owner; chemical_structure, xrefs, source_concepts and grounding_notes | supports | The full owner represents a chlorinated tricyclic isonitrile with five assigned stereocentres and full key IJEJDCXOVNHHAX-CMWLGVBASA-N. Its label is 12-epi-hapalindole E. No definition or synonym is asserted. |
+| E-NPATLAS | https://www.npatlas.org/api/v1/compound/NPA015996?include=classifications; npaid, original_name, smiles, inchi and inchikey | supports | NPA015996 uses the same short name, 12-epi-hapalindole E, and matches the full stereochemical InChI and key. Its formula C21H23ClN2 includes one chlorine atom. This is a chemical-equivalence check, not validation of the database origin reference. |
+| E-CHEBI-IDENTITY | https://www.ebi.ac.uk/chebi/backend/api/public/compound/220080/; chebi_accession, name, stars and default_structure id3426757 | supports | CHEBI:220080 is named 12-epi-hapalindole E and its default structure matches the entire owner InChI and key. It has two stars, so it does not satisfy the repository three-star grounding requirement. |
+| E-PUBCHEM-IDENTITY | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/101677549/property/InChI,InChIKey,IsomericSMILES/JSON; PropertyTable.Properties[0]; CID obtained by exact full-key lookup | supports | PubChem CID 101677549 gives the exact owner full InChI, isomeric SMILES and key IJEJDCXOVNHHAX-CMWLGVBASA-N. The separately encountered CID 101719783 lacks one stereochemical assignment and is not treated as an exact full-key equivalent. |
+| E-CYANOMETDB-SOURCE | https://zenodo.org/records/13854577/files/CyanoMetDB_V03_2024.csv?download=1; Exact rows CyanoMetDB_1553 and CyanoMetDB_2766; names, SMILES_isomeric, InChI, InChlKey, DOI_No1, NMR_used and strain | context_only | The asserted xref row 1553 contains a complete five-centre SMILES and systematic name but an InChI with 20? and key IJEJDCXOVNHHAX-MUUICVMPSA-N. A second row, 2766, has the complete owner key, the short name, DOI 10.1002/cbic.201300794, NMR_used=no and UTEX B 1830. The latter explains the generated occurrence provenance; differing row metadata are not a citation error by themselves. |
+| E-CYANOMETDB-RECOMPUTE | /private/tmp/npm-review-work/005/cyanometdb-connectivity-rows.json; Complete official CSV searched for connectivity prefix IJEJDCXOVNHHAX; isomeric SMILES recomputed with RDKit | supports | Rows 1553 and 2766 both regenerate the exact full owner key IJEJDCXOVNHHAX-CMWLGVBASA-N. The third connectivity-family row, 2288, is hapalindole E with the opposite C12 configuration and regenerates IJEJDCXOVNHHAX-GRARQNNCSA-N; it is correctly excluded from exact equivalence. |
+| E-CHEMISTRY-IDENTITY | /private/tmp/npm-review-work/005/chemistry.json; RDKit 2026.03.5 result generated 2026-10-21T06:56:51.933702Z; complete result inspected | supports | The encoded SMILES reproduces the stored InChI and key, neutral formula C21H23ClN2 and exact mass 338.154976416. Its five assigned centres are zero-based atoms 3:S, 5:R, 7:S, 11:R and 14:S. No unassigned centre was reported. |
+| E-GROUNDING-SEARCH | data/raw/chebi_structures.tsv; Complete pinned eligible inventory searched for connectivity key, exact label and slug | supports | The pinned eligible ChEBI inventory has no match for this connectivity key, exact label or slug. The directly inspected current exact candidate CHEBI:220080 is two-star. |
+| E-GROUNDING-POLICY | docs/HARMONIZATION.md; Identity resolution: unambiguous three-star default-structure rule | supports | Only an unambiguous three-star ChEBI default-structure match grounds automatically; a two-star exact entry does not require replacement of the minted identifier. |
+| E-PRIMARY-STEREOCHEMISTRY | https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnchembio.1625/MediaObjects/41589_2014_BFnchembio1625_MOESM45_ESM.pdf; Hillwig and Liu, DOI 10.1038/nchembio.1625; Supplementary Figure 1c, PDF page 2, product 4; full page rendered at 250 dpi and visually inspected | supports | The primary supplement explicitly labels product 4 as 12-epi-hapalindole E and draws all five stereocentres, including the chlorine-bearing C13 centre. Its isonitrile connectivity and ring skeleton match the owner. |
+| E-STEREO-MAPPING | /private/tmp/npm-review-work/005/stereo-mapping.json; Independent transcription of all five directed bonds from Supplementary Figure 1c, after removal of every owner stereo tag | supports | Published directions are C12–methyl toward, C13–chlorine away, C15–hydrogen toward, C10–hydrogen away and C11–isonitrile nitrogen toward the viewer. These yield C10S/C11R/C12S/C13R/C15S and regenerate the exact full key IJEJDCXOVNHHAX-CMWLGVBASA-N. |
+| R-LOCAL | data/natural_products/alkaloids/12-epi-hapalindole-e.yaml; Entire YAML, complete read_natural_product view and exact-key source rows | supports | The complete E owner was read, including all 5 occurrence objects, producer and locus claims, chemical xrefs, two seed events and SEEDED status. No biosynthetic pathway, molecular target, activity, clinical, related-record or causal-graph assertion is present. There are no declared component references. |
+| R-2007 | https://pubmed.ncbi.nlm.nih.gov/17686499/; Abstract and DOI metadata; DOI:10.1016/j.phytochem.2007.06.024 | supports | The primary abstract explicitly identifies 12-epi-hapalindole E isonitrile as isolated from Fischerella ATCC 43239, alongside other named hapalindoles, with mass-spectrometric and NMR structure analysis. This directly supports the Fischerella occurrence. The abstract does not establish a separate Hapalosiphon occurrence, and unavailable full text prevents adjudicating whether its historical discussion supports that additional triple. |
+| R-1995-ABSTRACT | DOI:10.1021/np50125a025; Primary article abstract reproduced on its ResearchGate publication page, https://www.researchgate.net/publication/231716831_New_Hapalindoles_from_the_Cyanophyte_Hapalosiphon_laingii , Abstract lines 36-38; exact title/authors/DOI independently checked with Crossref | supports | The inspected reproduced primary abstract names 12-epi-hapalindole E isonitrile among compounds isolated from cultured Hapalosiphon laingii. This supports the genus-level Hapalosiphon occurrence. Only the primary abstract was used; citing-paper excerpts on the same page were excluded. Full methods were not available, and the mirror date is not treated as the issue date. |
+| R-1995-METADATA | https://api.crossref.org/works/10.1021/np50125a025; Official DOI/title and publication-date fields | supports | The DOI resolves to Klein et al., New Hapalindoles from the Cyanophyte Hapalosiphon laingii, Journal of Natural Products 58(11):1781–1785, published in November 1995. This verifies the identity of the primary abstract; metadata alone does not establish the compound occurrence. |
+| R-LOCAL-TAXA | data/raw/corpus_taxa.obo; Complete term stanzas for NCBITaxon:1190, NCBITaxon:162985 and NCBITaxon:162986 | supports | The pinned authority gives Fischerella, Hapalosiphon and Hapalosiphon welwitschii for the three occurrence taxa respectively. Genus-level occurrences are not assertions of production by every member. |
+| R-WIKIDATA-SPECIES | https://www.wikidata.org/wiki/Special:EntityData/Q67340456.json; entity Q67340456 revision 2543823250, label/en and claims P225/P685 | supports | Previously inspected Q67340456 is Hapalosiphon welwitschii, NCBI Taxonomy 162986. Applicability was checked against this owner’s species-level LOTUS provenance URI. The genus URIs were subsequently resolved through the official API; see R-WIKIDATA-GENERA. |
+| R-ACCESS | Public primary-source and provenance-URI access attempts; Exact article title/DOI searches; ACS article/abstract/PDF, Elsevier API, institutional repositories and direct Wikidata entity routes | unknown | Full 1987, 1994, 1995 and 2007 primary texts were not obtained. Primary 2007 and 1995 abstracts and 1994 institutional abstract were directly inspected. Wikidata genus URIs Q27438671 and Q12745369 could not be read through page or JSON routes; no deletion or incorrect-identity inference follows from access failure. The official MediaWiki API subsequently resolved both genus URIs; see R-WIKIDATA-GENERA. |
+| R-WIKIDATA-GENERA | https://www.wikidata.org/w/api.php?action=wbgetentities&amp;ids=Q27438671%7CQ12745369&amp;props=labels%7Cclaims&amp;languages=en&amp;format=json; entities Q27438671 and Q12745369, English labels and P225/P685 claims | supports | The official MediaWiki API resolves Q27438671 to Fischerella with NCBI Taxonomy1190 and Q12745369 to Hapalosiphon with NCBI Taxonomy162985. This alternate public route resolves the earlier page/JSON access limitation and matches the occurrence provenance identifiers. |
+| bgc-v5-source | https://mibig.secondarymetabolites.org/repository/BGC0000668.5/annotations.json; compounds[1]; loci[0]; taxonomy; genes.annotations; legacy_references | supports | Reused complete version-5 JSON read at the stated timestamp; applicability checked against current full record and exact raw row. Compound index 2 is 12-epi-hapalindole E with matching stored chlorinated stereochemical SMILES, C21H23ClN2, and compound NMR reference DOI:10.1021/jo00226a009. Source locus is KF811479.1, strain taxon 1433842, with entry-wide Enzymatic assays / Heterologous expression methods. WelO5 is AHI58816.1. Source classes are terpene/Monoterpene and other; unspecified 0/0 bounds are correctly omitted. Entry references include PMID:24677572 and PMID:25218740. |
+| bgc-kf811479 | https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=KF811479.1&amp;db=nuccore&amp;report=genbank&amp;retmode=text; LOCUS, DEFINITION, VERSION, source feature and REFERENCE 1 | supports | Previously inspected accession source reused after confirming that the reviewed record lists KF811479.1 and taxon 1433842. The deposit is a 36,570 bp partial indolinone biosynthetic cluster from Hapalosiphon welwitschii UTEX B 1830, explicitly strain UTEX B 1830; its linked primary publication is PMID:24677572. |
+| bgc-taxon-1433842 | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?command=show&amp;id=1433842&amp;lvl=&amp;mode=node; Taxonomy ID, current/equivalent names, rank and lineage | supports | Previously inspected NCBI taxonomy entry applies directly to this E record: 1433842 is the strain-level Hapalosiphon welwitschii UTEX B 1830 taxon, with equivalent UTEX 1830 spelling. Applies directly to the producer and cluster organism identifiers in this record. |
+| bgc-cited-doi-metadata | https://api.crossref.org/works/10.1021/jo00226a009; title, published date, container-title, volume/issue/pages; independently matched indexed ACS publisher metadata | partial | Reused with applicability checked for this E record. Official DOI metadata identifies the cited publication as the 1987 Journal of Organic Chemistry paper Fontonamide and anhydrohapaloxindole A, two new alkaloids from the blue-green alga Hapalosiphon fontinalis, 52(17):3773-3777. This is not the modern exact E formation experiment or the 2014 KF811479.1 cluster paper. Full primary text was inaccessible; the title alone does not prove E absent from the article. |
+| bgc-welo5-accession | https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=AHI58816.1&amp;db=protein&amp;report=genpept&amp;retmode=text; DEFINITION, VERSION, DBSOURCE, source feature and coded_by qualifier | supports | Direct GenPept text identifies AHI58816.1 as the 290-residue WelO5 protein from Hapalosiphon welwitschii UTEX B 1830, taxon 1433842, encoded by complement(KF811479.1:126..998). This supplies the protein-to-exact-locus and strain bridge for the wild-type halogenase experiments. |
+| bgc-primary25218740 | https://www.nature.com/articles/nchembio.1625; Primary abstract and linked supplementary material; PMID:25218740 / DOI:10.1038/nchembio.1625 | supports | The primary abstract reports regio- and stereospecific WelO5 chlorination of free 12-epi-hapalindole C and 12-epi-fischerindole U. The official publisher HTML supplied the freely accessible supplementary PDF link. Main body was subscription content, so product identity is grounded in the inspected primary supplement and follow-up experiments, not inferred from the abstract alone. |
+| bgc-welo5-2014-si | https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnchembio.1625/MediaObjects/41589_2014_BFnchembio1625_MOESM45_ESM.pdf; PDF page 2 Supplementary Figure 1; page 8 Figure 7; page 9 Figure 8; page 10 Figure 9; DOI:10.1038/nchembio.1625 supplement | supports | Original free 18-page supplement retrieved. Figure S1 identifies WelO5 conversion of C (3) to E (4). S7 characterizes enzymatically generated E by HRMS; S8 compares its 1H NMR with E isolated from IC-52-3. S9 describes a non-axenic UTEX B1830 crude-extract chromatogram and selected UV/HRMS data. These distinguish enzymatic E product identification from native-culture occurrence. The chemical assay establishes the exact E product, while the NMR comparator’s source strain does not change the tested enzyme’s origin. |
+| bgc-primary-bjoc2017 | https://www.beilstein-journals.org/bjoc/articles/13/115; Results and Discussion, compound definitions in Figure 1, wild-type comparison in Figure 2, Experimental; DOI:10.3762/bjoc.13.115 | supports | The primary text explicitly distinguishes wild-type WelO5 from UTEX B1830 and WelO5* from IC-52-3. It defines C as 1 and E as chlorinated 1a and compares both enzymes forming 1a from 1. Wild-type UTEX WelO5 is slower but active; Figure 2 and the reported observed rate support E formation by the correct strain’s enzyme, independent of the faster IC-52-3 variant. |
+| bgc-primary24677572 | https://pmc.ncbi.nlm.nih.gov/articles/PMC4382313/; Strain/metabolite profiling paragraphs; Figures 1 and 5 captions; Experimental Section; DOI:10.1002/cbic.201300794 | partial | Reused complete main text and official XML inspection for the cited CyanoMetDB study. The paper profiles xenic UTEX B1830 by HPLC/UV/HRMS and attributes the hapalindole/fischerindole suite to this culture; it deposits KF811479.1. The original E-specific chromatogram/structure panel could not be inspected through the attempted free supplement/image routes. This supports culture and method context but is not an independently verified E-specific NMR isolation result. |
+| bgc-local-routing | data/raw/mibig_compounds.tsv; data/raw/cyanometdb_occurrences.tsv; scripts/extract_mibig.py; scripts/seed_from_sources.py; mibig_compounds.tsv row 790 / BGC0000668:2; cyanometdb_occurrences.tsv row 30; seed_from_sources.py line 1233; current producer and locus citations | supports | Exact MIBiG row uses COMPOUND_EVIDENCE DOI:10.1021/jo00226a009 for the strong locus and producer claims, despite modern experimental references. The CyanoMetDB exact-key row is H. welwitschii, strain UTEX B1830, DOI:10.1002/cbic.201300794, nmr_used=no. The seeder renders this as structure confirmed by no; the underlying datum means no NMR used, not failed identity or absence. |
+| bgc-native-s9-visual | https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnchembio.1625/MediaObjects/41589_2014_BFnchembio1625_MOESM45_ESM.pdf; PDF page 10 / Supplementary Figure 9; rendered primary figure inspected at /private/tmp/npm-review-work/005/welo5-2014-si-page10.png | context_only | Independently viewed the complete native-extract figure. The eight labelled peaks include 12-epi-hapalindole C and fischerindoles U/G/I, but none is labelled 12-epi-hapalindole E. Thus this figure is not direct native E occurrence proof. Its limited displayed assignments do not prove E absent from the culture or other experiments. |
+
+## Limits And Additional Notes
+
+- The older CyanoMetDB 1553 stored InChI/key leaves C11 unspecified despite its complete isomeric SMILES. Exact xref equivalence is supported specifically by that complete SMILES; the conflict is not concealed.
+- The primary structure comparison transcribes published bond directions. Spectra, optical rotations and experimental datasets were not independently reinterpreted.
+- Current ChEBI checking covers the identified exact candidate CHEBI:220080 plus the complete pinned eligible inventory, not every current ontology entity.
+- The compound has no asserted optional synonym or definition. Their absence alone does not create an identity finding.
+- The primary 1995 abstract was inspected on a publication-page mirror, with official DOI metadata confirming its identity. Full original methods were not inspected.
+- Full texts needed to adjudicate the listed LOTUS taxon/reference differences were not available through attempted free routes; findings remain provisional.
+- The 2014 Nature primary main body was not obtained; its official abstract, complete free supplement and independent 2017 primary experimental comparison were inspected.
+- The original 2014 ChemBioChem supplementary E-specific occurrence panel remains inaccessible through attempted free routes. The source’s nmr_used=no is preserved and is not treated as failed identification.
+- DOI:10.1021/jo00226a009 is still inspected only through official metadata; no whole-article absence conclusion is drawn.
+- Shared source evidence retains its real original inspection timestamps and is applied only to this target’s exact compound, taxon and locus.
+- The configured full identifier-label gate accepts 499 warning-level taxon-label mismatches, 35 explicit exceptions and 4,722 no-adapter pairs across the corpus; its exit 0 is not independent verification of every identifier or of this record's scientific claims.
+- The quality suite skips the optional sibling AntibioticMech checkout comparison because the isolated clone has no sibling checkout, and skips three command-frontmatter cases because their parameter sets are empty. Pinned-hash and network governance checks still ran.
+- Shared native gates assess deterministic corpus consistency and configured invariants. They do not establish biological production, stereochemical specificity, evidence adequacy or literature-level claim support.
+- No scientific owner, source inventory, component, curation status or seed history was edited. All corrective actions are proposed work only.
+- Native producer evidence remains distinct from occurrence and enzyme-locus evidence. A saved partial scientific review does not confer native REVIEWED status.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T070151Z-12-epi-hapalindole-e
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: '12-epi-hapalindole E: identity, occurrence and exact WelO5 product evidence'
+started_at: '2026-10-21T06:56:51.003933Z'
+finished_at: '2026-10-21T07:01:51.873456Z'
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This review team did not author or modify the selected scientific
+    owner or its maintained source inputs. Parallel source inspections were reconciled
+    into this one-target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The exact chlorinated E structure and chemical xrefs are supported at their
+  inspected resolution. Wild-type WelO5 from the listed UTEX B1830 locus makes exact
+  E, supporting retained CLUSTER_DEMONSTRATED with corrected citations. Two LOTUS
+  occurrence attributions remain provisional concerns. The CyanoMetDB note also needs
+  to distinguish its NMR-used flag from overall structure confirmation.
+source:
+  git_revision: 10ed28fcdadb3d955c30732ff05b5d0e4adbee3b
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/12-epi-hapalindole-e.yaml
+    sha256: 53dd389c7a761ab75995edc7f33d3a40a3e08c9a86d881f22a910974bf4d235c
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete generated owner and resolved mechanism; all field groups
+    inspected, with partial access to the specified primary sources.
+  selection: 'Unreviewed path number 5 in deterministic path order from the initial
+    validated review list: 91 bundles covered 54 of 3,116 corpus records and 3,062
+    remained. Coverage accounting includes ignored bundles. This bundle assesses only
+    one target.'
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-fa36d6dbf9
+targets:
+- target_id: naturalproductmech:mibig-fa36d6dbf9
+  path: data/natural_products/alkaloids/12-epi-hapalindole-e.yaml
+  label: 12-epi-hapalindole E
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema and component validation
+  status: passed
+  required: true
+  summary: One complete owner validated with zero ERROR rows.
+  command: just validate-strict data/natural_products/alkaloids/12-epi-hapalindole-e.yaml
+    --out /private/tmp/npm-review-work/005/strict.tsv
+  exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-fa36d6dbf9
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 record files agree with 3,116 PATHS.tsv rows and their pinned
+    filing pathways.
+  target_ids:
+  - naturalproductmech:mibig-fa36d6dbf9
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just verify-corpus
+    --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016808+00:00; finished 2026-10-21T06:37:52.997020+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/verify-corpus.log.'
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 records are byte-identical to the seeder output from committed
+    inventories and maintained curation inputs.
+  target_ids:
+  - naturalproductmech:mibig-fa36d6dbf9
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just verify-reproduction
+    --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016703+00:00; finished 2026-10-21T06:38:35.570687+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/verify-reproduction.log.'
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The documented exhaustive queue command produced 8,928 diagnostic rows
+    in 12 queues; deterministic queue output does not establish scientific review.
+  target_ids:
+  - naturalproductmech:mibig-fa36d6dbf9
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just review-queue
+    --tsv /private/tmp/npm-review-queue-initial.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016598+00:00; finished 2026-10-21T06:37:11.018366+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/review-queue.log.'
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'Full configured gate passed using existing CHEBI and GO caches plus the
+    committed taxonomy adapter: 13,434 canonical matches, 646 synonym matches, 35
+    documented exceptions, 499 warning-only mismatches and 4,722 pairs skipped because
+    their prefixes have no adapter.'
+  target_ids:
+  - naturalproductmech:mibig-fa36d6dbf9
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:56.498212+00:00; finished 2026-10-21T06:38:54.776253+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/validate-products.log.'
+- check_id: qc-environment-attempt1
+  name: Initial QC attempt before installing the pinned linter
+  status: failed
+  required: false
+  summary: The first full QC invocation stopped at lint because the isolated copied
+    Python environment lacked Ruff. Exact uv.lock version Ruff 0.16.6 was subsequently
+    installed and lint passed on later invocations.
+  target_ids:
+  - naturalproductmech:mibig-fa36d6dbf9
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just qc
+  exit_code: 1
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:56.497107+00:00; finished 2026-10-21T06:36:56.918133+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/qc.log.'
+- check_id: qc-network-attempt2
+  name: QC attempt without network access
+  status: failed
+  required: false
+  summary: After Ruff installation, QC passed lint and stopped at vendored-sync because
+    sandbox DNS could not reach the pinned public CLAW governance source. Approved
+    network access allowed the next invocation to verify all 22 governed artifacts.
+  target_ids:
+  - naturalproductmech:mibig-fa36d6dbf9
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just qc
+  exit_code: 1
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:37:57.661447+00:00; finished 2026-10-21T06:37:59.874785+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/qc-attempt2.log.'
+- check_id: qc-tag-attempt3
+  name: QC attempt before restoring the required provenance tag
+  status: failed
+  required: false
+  summary: 'QC passed lint, vendored sync, documentation, provenance and source queue,
+    then stopped at tests: 998 passed, 1 failed, 4 skipped. The sole failure was the
+    isolated clone lacking refs/tags/review-base/gentamicin-20261013; it was not a
+    failed archive-content assertion. The tag was subsequently fetched from origin.'
+  target_ids:
+  - naturalproductmech:mibig-fa36d6dbf9
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just qc
+  exit_code: 1
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:38:17.713062+00:00; finished 2026-10-21T06:45:43.079802+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/qc-attempt3.log.'
+- check_id: qc-tag-remediation
+  name: Targeted verification after restoring the provenance tag
+  status: passed
+  required: false
+  summary: After restoring the required tag, the exact previously failed gentamicin
+    archive test passed (1 passed). No repository content was edited for this remediation.
+  target_ids:
+  - naturalproductmech:mibig-fa36d6dbf9
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just test -q
+    tests/test_gentamicin_review_archive.py::test_gentamicin_archive_and_scoped_dispositions
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:45:52.383490+00:00; finished 2026-10-21T06:45:54.030116+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/gentamicin-tag-check.log.'
+- check_id: qc-skip-diagnosis
+  name: Diagnosis of the suite skip conditions
+  status: passed
+  required: false
+  summary: 'The four observed skip cases were reproduced with pytest skip reasons
+    enabled: the optional sibling AntibioticMech comparison has no sibling checkout
+    in the isolated clone, and three command-frontmatter tests have empty parameter
+    sets. This diagnostic invocation executed no passing tests; it reported four skips.'
+  target_ids:
+  - naturalproductmech:mibig-fa36d6dbf9
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just test -q
+    -rs tests/test_schema.py::test_shared_mech_modules_are_byte_identical_to_the_fleet
+    tests/test_skill_frontmatter.py::test_command_frontmatter_has_no_duplicate_keys
+    tests/test_skill_frontmatter.py::test_command_frontmatter_is_valid_yaml tests/test_skill_frontmatter.py::test_command_declares_a_usable_description
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:46:30.259937+00:00; finished 2026-10-21T06:46:31.251048+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/skipped-tests-diagnosis.log.'
+- check_id: shared-qc
+  name: Full repository quality gate after environment repair
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed after installing the pinned
+    linter, allowing the read-only governance fetch, and restoring the required provenance
+    tag. Tests: 999 passed, 4 skipped, 2 warnings. Closed-schema validation: 3,116
+    records and zero errors. Documentation, provenance, source queue, governed artifacts,
+    generated pages, reproduction, filing integrity and corpus reporting all passed.'
+  target_ids:
+  - naturalproductmech:mibig-fa36d6dbf9
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:46:02.058886+00:00; finished 2026-10-21T06:54:53.950582+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/qc-attempt4.log.'
+- check_id: C-OCCURRENCE-SOURCE
+  name: Full source adjudication of the listed occurrence differences
+  status: unavailable
+  required: true
+  summary: Relevant primary abstracts and source metadata were inspected, but full
+    passages needed to adjudicate the suspicious LOTUS taxon/reference combinations
+    remain inaccessible.
+  target_ids:
+  - naturalproductmech:mibig-fa36d6dbf9
+  evidence_ids:
+  - R-ACCESS
+- check_id: C-PROVENANCE-URI
+  name: External genus-level Wikidata provenance identifiers
+  status: passed
+  required: true
+  summary: Official MediaWiki API resolved both genus provenance identifiers and matched
+    the NCBI taxa after other public routes failed.
+  target_ids:
+  - naturalproductmech:mibig-fa36d6dbf9
+  evidence_ids:
+  - R-LOCAL-TAXA
+  - R-WIKIDATA-GENERA
+- check_id: C-IMODULON
+  name: Expression-module source applicability
+  status: not_applicable
+  required: false
+  summary: No expression-module or regulatory claim is used. Direct compound and biochemical
+    sources were inspected; no source-coverage absence is inferred.
+  target_ids:
+  - naturalproductmech:mibig-fa36d6dbf9
+- check_id: C-CYANO-PRIMARY
+  name: Exact E occurrence assignment in cited 2014 source
+  status: unavailable
+  required: true
+  summary: The cited study main text and source row were inspected, but the original
+    E-specific chromatogram/structure panel was not accessible. Later enzyme-product
+    NMR and a native chromatogram without a labelled E peak cannot substitute for
+    that occurrence assignment.
+  target_ids:
+  - naturalproductmech:mibig-fa36d6dbf9
+  evidence_ids:
+  - bgc-primary24677572
+  - bgc-native-s9-visual
+evidence:
+- evidence_id: E-IDENTITY-LOCAL
+  kind: record_content
+  reference: data/natural_products/alkaloids/12-epi-hapalindole-e.yaml
+  locator: Complete owner; chemical_structure, xrefs, source_concepts and grounding_notes
+  accessed_at: '2026-10-21T06:57:08Z'
+  support: supports
+  summary: The full owner represents a chlorinated tricyclic isonitrile with five
+    assigned stereocentres and full key IJEJDCXOVNHHAX-CMWLGVBASA-N. Its label is
+    12-epi-hapalindole E. No definition or synonym is asserted.
+  snapshot_sha256: 53dd389c7a761ab75995edc7f33d3a40a3e08c9a86d881f22a910974bf4d235c
+- evidence_id: E-NPATLAS
+  kind: database
+  reference: https://www.npatlas.org/api/v1/compound/NPA015996?include=classifications
+  locator: npaid, original_name, smiles, inchi and inchikey
+  accessed_at: '2026-10-21T06:57:24Z'
+  support: supports
+  summary: NPA015996 uses the same short name, 12-epi-hapalindole E, and matches the
+    full stereochemical InChI and key. Its formula C21H23ClN2 includes one chlorine
+    atom. This is a chemical-equivalence check, not validation of the database origin
+    reference.
+  snapshot_sha256: 4a1f9a239753fa225b1e671c35e2238d7b621a5d3e9374420a8d8d2981da42b7
+- evidence_id: E-CHEBI-IDENTITY
+  kind: database
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/220080/
+  locator: chebi_accession, name, stars and default_structure id3426757
+  accessed_at: '2026-10-21T06:59:18Z'
+  support: supports
+  summary: CHEBI:220080 is named 12-epi-hapalindole E and its default structure matches
+    the entire owner InChI and key. It has two stars, so it does not satisfy the repository
+    three-star grounding requirement.
+  snapshot_sha256: 5ba8d978794c5bf5dc4410e9a0d1b6e1fb82cc49d4c0a8a05a6a6d06ec592850
+- evidence_id: E-PUBCHEM-IDENTITY
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/101677549/property/InChI,InChIKey,IsomericSMILES/JSON
+  locator: PropertyTable.Properties[0]; CID obtained by exact full-key lookup
+  accessed_at: '2026-10-21T06:59:18Z'
+  support: supports
+  summary: PubChem CID 101677549 gives the exact owner full InChI, isomeric SMILES
+    and key IJEJDCXOVNHHAX-CMWLGVBASA-N. The separately encountered CID 101719783
+    lacks one stereochemical assignment and is not treated as an exact full-key equivalent.
+  snapshot_sha256: e78f9f6920806788ec34be49b2ff97438bd8cc2a473f3a6e45fe900601db7549
+- evidence_id: E-CYANOMETDB-SOURCE
+  kind: database
+  reference: https://zenodo.org/records/13854577/files/CyanoMetDB_V03_2024.csv?download=1
+  locator: Exact rows CyanoMetDB_1553 and CyanoMetDB_2766; names, SMILES_isomeric,
+    InChI, InChlKey, DOI_No1, NMR_used and strain
+  accessed_at: '2026-10-21T06:58:56.143162Z'
+  support: context_only
+  summary: The asserted xref row 1553 contains a complete five-centre SMILES and systematic
+    name but an InChI with 20? and key IJEJDCXOVNHHAX-MUUICVMPSA-N. A second row,
+    2766, has the complete owner key, the short name, DOI 10.1002/cbic.201300794,
+    NMR_used=no and UTEX B 1830. The latter explains the generated occurrence provenance;
+    differing row metadata are not a citation error by themselves.
+  snapshot_sha256: 91aa57146c9e803d5eeef656fc0e5cfc8f804531b1b83718757e96aa848a4121
+- evidence_id: E-CYANOMETDB-RECOMPUTE
+  kind: validation
+  reference: /private/tmp/npm-review-work/005/cyanometdb-connectivity-rows.json
+  locator: Complete official CSV searched for connectivity prefix IJEJDCXOVNHHAX;
+    isomeric SMILES recomputed with RDKit
+  accessed_at: '2026-10-21T06:58:56.143162Z'
+  support: supports
+  summary: Rows 1553 and 2766 both regenerate the exact full owner key IJEJDCXOVNHHAX-CMWLGVBASA-N.
+    The third connectivity-family row, 2288, is hapalindole E with the opposite C12
+    configuration and regenerates IJEJDCXOVNHHAX-GRARQNNCSA-N; it is correctly excluded
+    from exact equivalence.
+  snapshot_sha256: a3f215944de1f5c3d89ef4e5fd18766bf902b8d5069722039dfb69c49c7f0aaf
+- evidence_id: E-CHEMISTRY-IDENTITY
+  kind: validation
+  reference: /private/tmp/npm-review-work/005/chemistry.json
+  locator: RDKit 2026.03.5 result generated 2026-10-21T06:56:51.933702Z; complete
+    result inspected
+  accessed_at: '2026-10-21T06:57:08Z'
+  support: supports
+  summary: The encoded SMILES reproduces the stored InChI and key, neutral formula
+    C21H23ClN2 and exact mass 338.154976416. Its five assigned centres are zero-based
+    atoms 3:S, 5:R, 7:S, 11:R and 14:S. No unassigned centre was reported.
+  snapshot_sha256: 48022db9ec1f3b493dea1434b7fc0a95e7b13210df1d59cd1e35e22d250d2dfc
+- evidence_id: E-GROUNDING-SEARCH
+  kind: search
+  reference: data/raw/chebi_structures.tsv
+  locator: Complete pinned eligible inventory searched for connectivity key, exact
+    label and slug
+  accessed_at: '2026-10-21T06:57:24Z'
+  support: supports
+  summary: The pinned eligible ChEBI inventory has no match for this connectivity
+    key, exact label or slug. The directly inspected current exact candidate CHEBI:220080
+    is two-star.
+  search_scope: Ran rg --no-ignore --hidden -n -F with patterns IJEJDCXOVNHHAX, 12-epi-hapalindole
+    E and 12-epi-hapalindole-e against the entire explicitly named inventory. Ignored-file
+    exclusions were disabled; exit 1 means no matches.
+  snapshot_sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+- evidence_id: E-GROUNDING-POLICY
+  kind: authority
+  reference: docs/HARMONIZATION.md
+  locator: 'Identity resolution: unambiguous three-star default-structure rule'
+  accessed_at: '2026-10-21T06:45:28Z'
+  support: supports
+  summary: Only an unambiguous three-star ChEBI default-structure match grounds automatically;
+    a two-star exact entry does not require replacement of the minted identifier.
+  snapshot_sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+- evidence_id: E-PRIMARY-STEREOCHEMISTRY
+  kind: primary_source
+  reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnchembio.1625/MediaObjects/41589_2014_BFnchembio1625_MOESM45_ESM.pdf
+  locator: Hillwig and Liu, DOI 10.1038/nchembio.1625; Supplementary Figure 1c, PDF
+    page 2, product 4; full page rendered at 250 dpi and visually inspected
+  accessed_at: '2026-10-21T06:59:18Z'
+  support: supports
+  summary: The primary supplement explicitly labels product 4 as 12-epi-hapalindole
+    E and draws all five stereocentres, including the chlorine-bearing C13 centre.
+    Its isonitrile connectivity and ring skeleton match the owner.
+  snapshot_sha256: 2a7045cafc789f75c28ed0e99a0b4aa40b601716c85ebcd075887eaacd730811
+- evidence_id: E-STEREO-MAPPING
+  kind: validation
+  reference: /private/tmp/npm-review-work/005/stereo-mapping.json
+  locator: Independent transcription of all five directed bonds from Supplementary
+    Figure 1c, after removal of every owner stereo tag
+  accessed_at: '2026-10-21T07:00:06.471330Z'
+  support: supports
+  summary: Published directions are C12–methyl toward, C13–chlorine away, C15–hydrogen
+    toward, C10–hydrogen away and C11–isonitrile nitrogen toward the viewer. These
+    yield C10S/C11R/C12S/C13R/C15S and regenerate the exact full key IJEJDCXOVNHHAX-CMWLGVBASA-N.
+  snapshot_sha256: a6619cb0a149fc2488fd723c23e3be7631336748b5e5d102fcc36f5144a241ff
+- evidence_id: R-LOCAL
+  kind: record_content
+  reference: data/natural_products/alkaloids/12-epi-hapalindole-e.yaml
+  locator: Entire YAML, complete read_natural_product view and exact-key source rows
+  accessed_at: '2026-10-21T06:56:51.933702Z'
+  support: supports
+  summary: The complete E owner was read, including all 5 occurrence objects, producer
+    and locus claims, chemical xrefs, two seed events and SEEDED status. No biosynthetic
+    pathway, molecular target, activity, clinical, related-record or causal-graph
+    assertion is present. There are no declared component references.
+  snapshot_sha256: 53dd389c7a761ab75995edc7f33d3a40a3e08c9a86d881f22a910974bf4d235c
+- evidence_id: R-2007
+  kind: primary_source
+  reference: https://pubmed.ncbi.nlm.nih.gov/17686499/
+  locator: Abstract and DOI metadata; DOI:10.1016/j.phytochem.2007.06.024
+  accessed_at: '2026-10-21T06:54:35Z'
+  support: supports
+  summary: The primary abstract explicitly identifies 12-epi-hapalindole E isonitrile
+    as isolated from Fischerella ATCC 43239, alongside other named hapalindoles, with
+    mass-spectrometric and NMR structure analysis. This directly supports the Fischerella
+    occurrence. The abstract does not establish a separate Hapalosiphon occurrence,
+    and unavailable full text prevents adjudicating whether its historical discussion
+    supports that additional triple.
+- evidence_id: R-1995-ABSTRACT
+  kind: primary_source
+  reference: DOI:10.1021/np50125a025
+  locator: Primary article abstract reproduced on its ResearchGate publication page,
+    https://www.researchgate.net/publication/231716831_New_Hapalindoles_from_the_Cyanophyte_Hapalosiphon_laingii
+    , Abstract lines 36-38; exact title/authors/DOI independently checked with Crossref
+  accessed_at: '2026-10-21T06:57:14Z'
+  support: supports
+  summary: The inspected reproduced primary abstract names 12-epi-hapalindole E isonitrile
+    among compounds isolated from cultured Hapalosiphon laingii. This supports the
+    genus-level Hapalosiphon occurrence. Only the primary abstract was used; citing-paper
+    excerpts on the same page were excluded. Full methods were not available, and
+    the mirror date is not treated as the issue date.
+- evidence_id: R-1995-METADATA
+  kind: authority
+  reference: https://api.crossref.org/works/10.1021/np50125a025
+  locator: Official DOI/title and publication-date fields
+  accessed_at: '2026-10-21T06:56:03.360106Z'
+  support: supports
+  summary: The DOI resolves to Klein et al., New Hapalindoles from the Cyanophyte
+    Hapalosiphon laingii, Journal of Natural Products 58(11):1781–1785, published
+    in November 1995. This verifies the identity of the primary abstract; metadata
+    alone does not establish the compound occurrence.
+- evidence_id: R-LOCAL-TAXA
+  kind: authority
+  reference: data/raw/corpus_taxa.obo
+  locator: Complete term stanzas for NCBITaxon:1190, NCBITaxon:162985 and NCBITaxon:162986
+  accessed_at: '2026-10-21T06:57:25Z'
+  support: supports
+  summary: The pinned authority gives Fischerella, Hapalosiphon and Hapalosiphon welwitschii
+    for the three occurrence taxa respectively. Genus-level occurrences are not assertions
+    of production by every member.
+  snapshot_sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+- evidence_id: R-WIKIDATA-SPECIES
+  kind: database
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q67340456.json
+  locator: entity Q67340456 revision 2543823250, label/en and claims P225/P685
+  accessed_at: '2026-10-21T06:44:23.635771Z'
+  support: supports
+  summary: Previously inspected Q67340456 is Hapalosiphon welwitschii, NCBI Taxonomy
+    162986. Applicability was checked against this owner’s species-level LOTUS provenance
+    URI. The genus URIs were subsequently resolved through the official API; see R-WIKIDATA-GENERA.
+  snapshot_sha256: 53fdaac9788b1ac4ea420b9173248f248da507f8d3a1ab73fa39607f8c6cd4fb
+- evidence_id: R-ACCESS
+  kind: search
+  reference: Public primary-source and provenance-URI access attempts
+  locator: Exact article title/DOI searches; ACS article/abstract/PDF, Elsevier API,
+    institutional repositories and direct Wikidata entity routes
+  accessed_at: '2026-10-21T06:57:25Z'
+  support: unknown
+  summary: Full 1987, 1994, 1995 and 2007 primary texts were not obtained. Primary
+    2007 and 1995 abstracts and 1994 institutional abstract were directly inspected.
+    Wikidata genus URIs Q27438671 and Q12745369 could not be read through page or
+    JSON routes; no deletion or incorrect-identity inference follows from access failure.
+    The official MediaWiki API subsequently resolved both genus URIs; see R-WIKIDATA-GENERA.
+  search_scope: Exact DOI/title plus pdf searches and author-institution searches;
+    official ACS routes returned 403/inaccessible, Elsevier full-article endpoint
+    unavailable, institution results lacked the needed full paper. Direct Wikidata
+    pages and entity JSON returned 403/inaccessible. Ignored-file-independent local
+    lookup in corpus_taxa.obo verified current pinned labels. This is bounded access
+    scope, not exhaustive scientific or database absence.
+- evidence_id: R-WIKIDATA-GENERA
+  kind: database
+  reference: https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q27438671%7CQ12745369&props=labels%7Cclaims&languages=en&format=json
+  locator: entities Q27438671 and Q12745369, English labels and P225/P685 claims
+  accessed_at: '2026-10-21T07:00:58.318760Z'
+  support: supports
+  summary: The official MediaWiki API resolves Q27438671 to Fischerella with NCBI
+    Taxonomy1190 and Q12745369 to Hapalosiphon with NCBI Taxonomy162985. This alternate
+    public route resolves the earlier page/JSON access limitation and matches the
+    occurrence provenance identifiers.
+  snapshot_sha256: 52694c8b09872109767436718e91f70005b5a7903484f66c20850c6d3b225147
+- evidence_id: bgc-v5-source
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0000668.5/annotations.json
+  locator: compounds[1]; loci[0]; taxonomy; genes.annotations; legacy_references
+  accessed_at: '2026-10-21T06:55:12Z'
+  support: supports
+  summary: Reused complete version-5 JSON read at the stated timestamp; applicability
+    checked against current full record and exact raw row. Compound index 2 is 12-epi-hapalindole
+    E with matching stored chlorinated stereochemical SMILES, C21H23ClN2, and compound
+    NMR reference DOI:10.1021/jo00226a009. Source locus is KF811479.1, strain taxon
+    1433842, with entry-wide Enzymatic assays / Heterologous expression methods. WelO5
+    is AHI58816.1. Source classes are terpene/Monoterpene and other; unspecified 0/0
+    bounds are correctly omitted. Entry references include PMID:24677572 and PMID:25218740.
+- evidence_id: bgc-kf811479
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=KF811479.1&db=nuccore&report=genbank&retmode=text
+  locator: LOCUS, DEFINITION, VERSION, source feature and REFERENCE 1
+  accessed_at: '2026-10-21T06:43:48Z'
+  support: supports
+  summary: Previously inspected accession source reused after confirming that the
+    reviewed record lists KF811479.1 and taxon 1433842. The deposit is a 36,570 bp
+    partial indolinone biosynthetic cluster from Hapalosiphon welwitschii UTEX B 1830,
+    explicitly strain UTEX B 1830; its linked primary publication is PMID:24677572.
+- evidence_id: bgc-taxon-1433842
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?command=show&id=1433842&lvl=&mode=node
+  locator: Taxonomy ID, current/equivalent names, rank and lineage
+  accessed_at: '2026-10-21T06:45:11Z'
+  support: supports
+  summary: 'Previously inspected NCBI taxonomy entry applies directly to this E record:
+    1433842 is the strain-level Hapalosiphon welwitschii UTEX B 1830 taxon, with equivalent
+    UTEX 1830 spelling. Applies directly to the producer and cluster organism identifiers
+    in this record.'
+- evidence_id: bgc-cited-doi-metadata
+  kind: authority
+  reference: https://api.crossref.org/works/10.1021/jo00226a009
+  locator: title, published date, container-title, volume/issue/pages; independently
+    matched indexed ACS publisher metadata
+  accessed_at: '2026-10-21T06:50:50Z'
+  support: partial
+  summary: Reused with applicability checked for this E record. Official DOI metadata
+    identifies the cited publication as the 1987 Journal of Organic Chemistry paper
+    Fontonamide and anhydrohapaloxindole A, two new alkaloids from the blue-green
+    alga Hapalosiphon fontinalis, 52(17):3773-3777. This is not the modern exact E
+    formation experiment or the 2014 KF811479.1 cluster paper. Full primary text was
+    inaccessible; the title alone does not prove E absent from the article.
+- evidence_id: bgc-welo5-accession
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=AHI58816.1&db=protein&report=genpept&retmode=text
+  locator: DEFINITION, VERSION, DBSOURCE, source feature and coded_by qualifier
+  accessed_at: '2026-10-21T06:57:19Z'
+  support: supports
+  summary: Direct GenPept text identifies AHI58816.1 as the 290-residue WelO5 protein
+    from Hapalosiphon welwitschii UTEX B 1830, taxon 1433842, encoded by complement(KF811479.1:126..998).
+    This supplies the protein-to-exact-locus and strain bridge for the wild-type halogenase
+    experiments.
+- evidence_id: bgc-primary25218740
+  kind: primary_source
+  reference: https://www.nature.com/articles/nchembio.1625
+  locator: Primary abstract and linked supplementary material; PMID:25218740 / DOI:10.1038/nchembio.1625
+  accessed_at: '2026-10-21T06:57:19Z'
+  support: supports
+  summary: The primary abstract reports regio- and stereospecific WelO5 chlorination
+    of free 12-epi-hapalindole C and 12-epi-fischerindole U. The official publisher
+    HTML supplied the freely accessible supplementary PDF link. Main body was subscription
+    content, so product identity is grounded in the inspected primary supplement and
+    follow-up experiments, not inferred from the abstract alone.
+- evidence_id: bgc-welo5-2014-si
+  kind: primary_source
+  reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnchembio.1625/MediaObjects/41589_2014_BFnchembio1625_MOESM45_ESM.pdf
+  locator: PDF page 2 Supplementary Figure 1; page 8 Figure 7; page 9 Figure 8; page
+    10 Figure 9; DOI:10.1038/nchembio.1625 supplement
+  accessed_at: '2026-10-21T06:58:15Z'
+  support: supports
+  summary: Original free 18-page supplement retrieved. Figure S1 identifies WelO5
+    conversion of C (3) to E (4). S7 characterizes enzymatically generated E by HRMS;
+    S8 compares its 1H NMR with E isolated from IC-52-3. S9 describes a non-axenic
+    UTEX B1830 crude-extract chromatogram and selected UV/HRMS data. These distinguish
+    enzymatic E product identification from native-culture occurrence. The chemical
+    assay establishes the exact E product, while the NMR comparator’s source strain
+    does not change the tested enzyme’s origin.
+  search_scope: PDF text inspected at the listed figures and relevant surrounding
+    captions; source PDF and extracted text retained temporarily under /private/tmp/npm-review-work/005/
+    for independent graphical review.
+- evidence_id: bgc-primary-bjoc2017
+  kind: primary_source
+  reference: https://www.beilstein-journals.org/bjoc/articles/13/115
+  locator: Results and Discussion, compound definitions in Figure 1, wild-type comparison
+    in Figure 2, Experimental; DOI:10.3762/bjoc.13.115
+  accessed_at: '2026-10-21T06:58:34Z'
+  support: supports
+  summary: The primary text explicitly distinguishes wild-type WelO5 from UTEX B1830
+    and WelO5* from IC-52-3. It defines C as 1 and E as chlorinated 1a and compares
+    both enzymes forming 1a from 1. Wild-type UTEX WelO5 is slower but active; Figure
+    2 and the reported observed rate support E formation by the correct strain’s enzyme,
+    independent of the faster IC-52-3 variant.
+- evidence_id: bgc-primary24677572
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC4382313/
+  locator: Strain/metabolite profiling paragraphs; Figures 1 and 5 captions; Experimental
+    Section; DOI:10.1002/cbic.201300794
+  accessed_at: '2026-10-21T06:53:50Z'
+  support: partial
+  summary: Reused complete main text and official XML inspection for the cited CyanoMetDB
+    study. The paper profiles xenic UTEX B1830 by HPLC/UV/HRMS and attributes the
+    hapalindole/fischerindole suite to this culture; it deposits KF811479.1. The original
+    E-specific chromatogram/structure panel could not be inspected through the attempted
+    free supplement/image routes. This supports culture and method context but is
+    not an independently verified E-specific NMR isolation result.
+- evidence_id: bgc-local-routing
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv; data/raw/cyanometdb_occurrences.tsv; scripts/extract_mibig.py;
+    scripts/seed_from_sources.py
+  locator: mibig_compounds.tsv row 790 / BGC0000668:2; cyanometdb_occurrences.tsv
+    row 30; seed_from_sources.py line 1233; current producer and locus citations
+  accessed_at: '2026-10-21T06:58:34Z'
+  support: supports
+  summary: Exact MIBiG row uses COMPOUND_EVIDENCE DOI:10.1021/jo00226a009 for the
+    strong locus and producer claims, despite modern experimental references. The
+    CyanoMetDB exact-key row is H. welwitschii, strain UTEX B1830, DOI:10.1002/cbic.201300794,
+    nmr_used=no. The seeder renders this as structure confirmed by no; the underlying
+    datum means no NMR used, not failed identity or absence.
+  search_scope: Read full current target and local-source packet. rg --no-ignore --hidden
+    searched the exact key/source key/minted identifier in the relevant raw inventories
+    and correction tables, including ignored files in these scoped paths.
+- evidence_id: bgc-native-s9-visual
+  kind: primary_source
+  reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnchembio.1625/MediaObjects/41589_2014_BFnchembio1625_MOESM45_ESM.pdf
+  locator: PDF page 10 / Supplementary Figure 9; rendered primary figure inspected
+    at /private/tmp/npm-review-work/005/welo5-2014-si-page10.png
+  accessed_at: '2026-10-21T07:00:26Z'
+  support: context_only
+  summary: Independently viewed the complete native-extract figure. The eight labelled
+    peaks include 12-epi-hapalindole C and fischerindoles U/G/I, but none is labelled
+    12-epi-hapalindole E. Thus this figure is not direct native E occurrence proof.
+    Its limited displayed assignments do not prove E absent from the culture or other
+    experiments.
+assessments:
+- assessment_id: A-IDENTITY-REPRESENTATION
+  area: identity
+  topic: Exact chlorinated E congener and five-centre representation
+  outcome: supported
+  summary: The owner consistently denotes 12-epi-hapalindole E isonitrile, with five
+    assigned stereocentres, formula C21H23ClN2 and full key IJEJDCXOVNHHAX-CMWLGVBASA-N.
+    NPAtlas, ChEBI and the exact PubChem entry agree.
+  target_ids:
+  - naturalproductmech:mibig-fa36d6dbf9
+  evidence_ids:
+  - E-IDENTITY-LOCAL
+  - E-NPATLAS
+  - E-CHEBI-IDENTITY
+  - E-PUBCHEM-IDENTITY
+  - E-CHEMISTRY-IDENTITY
+- assessment_id: A-NAME
+  area: identity
+  topic: Short compound label retains exact identity
+  outcome: supported
+  summary: NPAtlas and ChEBI use 12-epi-hapalindole E for this same isonitrile. The
+    label need not spell out isonitrile to identify the encoded compound; no ambiguity
+    finding follows merely from the shorter name.
+  target_ids:
+  - naturalproductmech:mibig-fa36d6dbf9
+  evidence_ids:
+  - E-IDENTITY-LOCAL
+  - E-NPATLAS
+  - E-CHEBI-IDENTITY
+- assessment_id: A-XREF-EQUIVALENCE
+  area: identity
+  topic: Exact equivalence of both asserted xrefs
+  outcome: supported
+  summary: NPAtlas matches all structure identifiers. CyanoMetDB 1553 matches through
+    its complete five-centre SMILES and systematic name, whose recalculated key equals
+    the owner. Its stored underassigned InChI/key remains explicitly qualified.
+  target_ids:
+  - naturalproductmech:mibig-fa36d6dbf9
+  evidence_ids:
+  - E-NPATLAS
+  - E-CYANOMETDB-SOURCE
+  - E-CYANOMETDB-RECOMPUTE
+- assessment_id: A-CYANOMETDB-REPRESENTATION
+  area: representation
+  topic: Source representation conflict and separate occurrence row
+  outcome: concern
+  summary: CyanoMetDB 1553 has inconsistent SMILES and InChI stereochemical completeness.
+    The complete-key row 2766 independently carries the occurrence metadata seen in
+    the owner. These distinct source rows explain the provenance without establishing
+    that the owner structure or xref is wrong.
+  target_ids:
+  - naturalproductmech:mibig-fa36d6dbf9
+  evidence_ids:
+  - E-CYANOMETDB-SOURCE
+  - E-CYANOMETDB-RECOMPUTE
+- assessment_id: A-GROUNDING
+  area: grounding
+  topic: Minted identity follows the three-star grounding rule
+  outcome: supported
+  summary: No eligible match exists in the complete pinned inventory, and current
+    exact candidate CHEBI:220080 has two stars. MINTED remains consistent with the
+    repository rule.
+  target_ids:
+  - naturalproductmech:mibig-fa36d6dbf9
+  evidence_ids:
+  - E-IDENTITY-LOCAL
+  - E-GROUNDING-SEARCH
+  - E-CHEBI-IDENTITY
+  - E-GROUNDING-POLICY
+- assessment_id: A-PRIMARY-STEREOCHEMISTRY
+  area: evidence
+  topic: Five-centre agreement with the exact E primary drawing
+  outcome: supported
+  summary: Independent transcription of the published E structure reproduces the owner
+    full key, including C13R at the chlorine-bearing centre. This establishes agreement
+    with the primary configuration drawing, not an independent experimental stereochemical
+    determination.
+  target_ids:
+  - naturalproductmech:mibig-fa36d6dbf9
+  evidence_ids:
+  - E-PRIMARY-STEREOCHEMISTRY
+  - E-STEREO-MAPPING
+  dimensions:
+  - name: primary_configuration_mapping
+    value: C10 = atom 14:S; C11 = atom 11:R; C12 = atom 7:S; C13 = atom 5:R; C15 =
+      atom 3:S
+    definition: Natural-product ring positions mapped to zero-based RDKit atom indices
+      by connectivity and published directed bonds
+    evidence_ids:
+    - E-PRIMARY-STEREOCHEMISTRY
+    - E-STEREO-MAPPING
+- assessment_id: R-CLASSIFICATION
+  area: provenance
+  topic: Computed filing and seed history
+  outcome: supported
+  summary: The complete source extraction matches the owner’s explicitly computed
+    Alkaloids/Tryptophan alkaloids classification, Hapalindole alkaloids and Simple
+    indole alkaloids classes, and pinned model version. Source BGC TERPENE/OTHER has
+    a separate provenance. Both seed events retain SEEDED; neither claims scientific
+    sign-off.
+  target_ids:
+  - naturalproductmech:mibig-fa36d6dbf9
+  evidence_ids:
+  - R-LOCAL
+  - bgc-v5-source
+- assessment_id: R-OPTIONAL
+  area: scope
+  topic: Complete mechanism and optional assertions
+  outcome: not_applicable
+  summary: No optional mechanism, activity, molecular target, clinical or related-record
+    claim occurs in the complete owner or resolved view. Their absence alone is not
+    a defect.
+  target_ids:
+  - naturalproductmech:mibig-fa36d6dbf9
+  evidence_ids:
+  - R-LOCAL
+- assessment_id: R-OCCURRENCES
+  area: evidence
+  topic: Claim-specific occurrence attribution
+  outcome: concern
+  summary: Five occurrence objects retain distinct source scopes. Primary abstracts
+    support exact E in Fischerella ATCC 43239 and Hapalosiphon laingii. The imported
+    CyanoMetDB 2014 observation explicitly reports structure confirmation=no and is
+    assessed with the primary metabolite-profile evidence; it is not upgraded to a
+    new isolation proof. Two extra LOTUS taxon/reference combinations need full-source
+    verification.
+  target_ids:
+  - naturalproductmech:mibig-fa36d6dbf9
+  evidence_ids:
+  - R-LOCAL
+  - R-2007
+  - R-1995-ABSTRACT
+  - R-1995-METADATA
+  - R-LOCAL-TAXA
+  - bgc-cited-doi-metadata
+  - R-ACCESS
+  dimensions:
+  - name: occurrence_resolution
+    value: Genus-level Fischerella/Hapalosiphon and species-level H. welwitschii
+    definition: Occurrence observations retain source taxonomic scope independently
+      of strain-specific producer assertions
+    evidence_ids:
+    - R-LOCAL
+    - R-LOCAL-TAXA
+- assessment_id: R-PROVENANCE-URIS
+  area: grounding
+  topic: Occurrence organism provenance identifiers
+  outcome: supported
+  summary: Both genus-level Wikidata identifiers resolve to the recorded NCBI taxa,
+    and the species-level identifier was independently verified. These identifier
+    correspondences do not establish the biological occurrence by themselves.
+  target_ids:
+  - naturalproductmech:mibig-fa36d6dbf9
+  evidence_ids:
+  - R-WIKIDATA-GENERA
+  - R-WIKIDATA-SPECIES
+  - R-LOCAL-TAXA
+- assessment_id: bgc-e-identifiers-supported
+  area: grounding
+  topic: Exact E structure, producer taxon and locus provenance
+  outcome: supported
+  summary: The source compound index 2 matches the stored E structure, and the strain
+    taxon, sequence accession and WelO5 protein map consistently. TERPENE / OTHER
+    and omitted numerical bounds preserve the versioned source faithfully.
+  target_ids:
+  - naturalproductmech:mibig-fa36d6dbf9
+  evidence_ids:
+  - bgc-v5-source
+  - bgc-kf811479
+  - bgc-taxon-1433842
+  - bgc-welo5-accession
+- assessment_id: bgc-e-formation-supported
+  area: evidence
+  topic: Exact-product enzymatic formation by the recorded locus
+  outcome: supported
+  summary: 'The primary product characterization and exact protein/accession bridge
+    support CLUSTER_DEMONSTRATED for E: wild-type UTEX B1830 WelO5 forms it by chlorinating
+    C. Retain this locus grade with the correct citation. Heterologous expression
+    here supplied protein for in vitro assays; these experiments do not upgrade native
+    producer SOURCE_ASSERTION.'
+  target_ids:
+  - naturalproductmech:mibig-fa36d6dbf9
+  evidence_ids:
+  - bgc-welo5-2014-si
+  - bgc-primary-bjoc2017
+  - bgc-welo5-accession
+- assessment_id: bgc-e-occurrence-scope
+  area: evidence
+  topic: CyanoMetDB native occurrence and reported structural method
+  outcome: unknown
+  summary: The occurrence is faithfully represented as a database assertion with UTEX
+    B1830 context. Its source row records no NMR, and the inspected 2014 main text
+    supports HPLC/UV/HRMS profiling. The original E-specific occurrence panel remains
+    unverified; enzymatic E NMR in a different study must not be silently substituted
+    as native UTEX NMR isolation. This access gap alone does not justify withdrawing
+    the occurrence. The inspected later Figure S9 does not label an E peak and therefore
+    does not close this exact occurrence gap.
+  target_ids:
+  - naturalproductmech:mibig-fa36d6dbf9
+  evidence_ids:
+  - bgc-primary24677572
+  - bgc-local-routing
+  - bgc-welo5-2014-si
+  - bgc-native-s9-visual
+findings:
+- finding_id: R-LOTUS-SCOPE
+  issue_key: lotus-ijejdcxovnhhax-occurrence-reference-scope
+  category: evidence
+  severity: major
+  status: open
+  certainty: provisional
+  title: Several LOTUS occurrence citations need exact organism and compound verification
+  description: The 2007 abstract directly reports Fischerella ATCC 43239, whereas
+    this additional triple names Hapalosiphon. The 1987 metadata names H. fontinalis
+    and other compounds, whereas this triple names H. welwitschii and exact E. Full
+    article passages may resolve these differences, so none is declared disproven
+    from an abstract or title alone. Their source support was not established in this
+    review. Exact-compound occurrence supported by other publications does not validate
+    these separate provenance triples.
+  target_ids:
+  - naturalproductmech:mibig-fa36d6dbf9
+  field_paths:
+  - occurrences[1].evidence[0].reference
+  - occurrences[4].evidence[0].reference
+  evidence_ids:
+  - R-LOCAL
+  - R-2007
+  - R-1995-ABSTRACT
+  - R-1995-METADATA
+  - R-LOCAL-TAXA
+  - bgc-cited-doi-metadata
+  - R-ACCESS
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Exact imported structure-organism-reference triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/lotus_occurrence_exclusions.tsv
+    role: Implemented full-row-pinned exclusions
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated occurrence emission
+  rule_id: '.claude/skills/curate-yaml-record/references/review-checklist.md: Occurrences'
+  native_severity: 'major: potentially unsupported structure-organism-reference triples'
+  normalization_reason: Related occurrence source-scope concerns are grouped once;
+    each affected triple remains enumerated and provisional until full-text adjudication.
+- finding_id: bgc-e-claim-reference
+  issue_key: mibig-bgc0000668-compound2-claim-reference
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Producer and demonstrated E locus reuse a compound-level reference
+  description: BGC0000668:2 repeats DOI:10.1021/jo00226a009 as the sole producer and
+    locus citation. This came from compound-level NMR metadata, not the experimental
+    WelO5 study. Exact E formation is supported by retrieved modern primary evidence
+    and maps to the recorded UTEX B1830 locus, so the repair is claim-specific reference
+    routing rather than withdrawing the supported locus grade. The 1987 DOI’s full
+    article was not inspected; no article-wide absence claim is made from its metadata
+    alone.
+  target_ids:
+  - naturalproductmech:mibig-fa36d6dbf9
+  field_paths:
+  - producer_organisms[0].evidence
+  - biosynthetic_gene_clusters[0].evidence
+  evidence_ids:
+  - bgc-v5-source
+  - bgc-cited-doi-metadata
+  - bgc-local-routing
+  - bgc-welo5-2014-si
+  - bgc-primary-bjoc2017
+  - bgc-welo5-accession
+  rule_id: 'review-yaml-record Evidence Rules: claim-level reference placement and
+    exact strain/congener scope'
+  native_severity: 'major: sole claim citations omit the experiments supporting the
+    asserted locus demonstration'
+  normalization_reason: One citation-routing finding. Direct exact-product evidence
+    supports the grade, so no separate unsupported-grade finding is counted.
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: source-pinned producer and locus citation correction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: claim-reference selection
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: source row BGC0000668:2
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: generated producer and locus evidence
+- finding_id: cyanometdb-nmr-wording
+  issue_key: cyanometdb-nmr-used-rendered-as-structure-confirmed
+  category: representation
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: NMR usage flag is rendered as overall structure confirmation
+  description: 'The exact CyanoMetDB source row stores nmr_used=no, but the generated
+    evidence note reads structure confirmed by no. This turns a method-usage flag
+    into ambiguous wording about overall identification. No NMR does not imply failed
+    identity: chromatographic, UV or mass-spectral evidence may still apply. The note
+    should identify the actual source field while retaining the occurrence as a database
+    assertion and its remaining method limitations.'
+  target_ids:
+  - naturalproductmech:mibig-fa36d6dbf9
+  field_paths:
+  - occurrences[3].evidence[0].notes
+  evidence_ids:
+  - bgc-local-routing
+  - bgc-primary24677572
+  rule_id: 'review-yaml-record Evidence Rules: preserve evidence meaning; exact method
+    provenance'
+  native_severity: 'minor: misleading evidence-method wording without an unsupported
+    grade upgrade'
+  normalization_reason: A distinct representation defect caused by the generic evidence-note
+    emitter; its shared issue key supports grouping the generator repair without inferring
+    findings for unreviewed records.
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: CyanoMetDB evidence-note emitter
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: exact E source row with nmr_used=no
+actions:
+- action_id: R-ADJUDICATE-LOTUS
+  description: Inspect full source passages for each listed triple, distinguishing
+    new isolation, historical occurrence discussion and current taxonomy. If a triple
+    is unsupported, withhold only its exact source row through the implemented pinned
+    exclusion table. Retain supported observations; do not replace citations or taxa
+    by inference.
+  finding_ids:
+  - R-LOTUS-SCOPE
+  target_ids:
+  - naturalproductmech:mibig-fa36d6dbf9
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Exact imported structure-organism-reference triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/lotus_occurrence_exclusions.tsv
+    role: Implemented full-row-pinned exclusions
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated occurrence emission
+  generator: scripts/seed_from_sources.py through source-pinned correction and guarded
+    regeneration
+  acceptance_checks:
+  - For IJEJDCXOVNHHAX-CMWLGVBASA-N, document exact support or a full-row-pinned exclusion
+    for NCBITaxon:162985 / literal DOI:10.1016/J.PHYTOCHEM.2007.06.024, NCBITaxon:162986
+    / literal DOI:10.1021/JO00226A009.
+  - Inspect just seed-canary naturalproductmech:mibig-fa36d6dbf9 output, then documented
+    seeding; run just validate-strict data/natural_products/alkaloids/12-epi-hapalindole-e.yaml,
+    just verify-reproduction, just verify-corpus --summary and just qc.
+- action_id: route-e-claim-references
+  description: Use curation/mibig_claim_references.tsv with BGC0000668:2 and the exact
+    source-row hash to route the locus to PMID:25218740 / DOI:10.1038/nchembio.1625,
+    documenting WelO5 AHI58816.1 and its exact accession/strain bridge. Select a separately
+    justified producer reference or the versioned MIBiG assertion. Retain CLUSTER_DEMONSTRATED
+    for E and native SOURCE_ASSERTION; distinguish heterologous protein production
+    and in vitro formation from native culture biosynthesis. Preserve CyanoMetDB nmr_used=no
+    as a method limitation and avoid claiming NMR-confirmed native UTEX E from the
+    enzyme-product NMR comparison.
+  finding_ids:
+  - bgc-e-claim-reference
+  target_ids:
+  - naturalproductmech:mibig-fa36d6dbf9
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: source-pinned producer and locus citation correction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: claim-reference selection
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: source row BGC0000668:2
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: generated producer and locus evidence
+  generator: scripts/seed_from_sources.py via documented source-pinned claim-reference
+    correction and guarded regeneration
+  acceptance_checks:
+  - The generated locus citation identifies exact E formation by the UTEX B1830 WelO5
+    protein encoded by KF811479.1; IC-52-3 results are explicitly distinguished.
+  - Producer SOURCE_ASSERTION and supported CLUSTER_DEMONSTRATED remain separate;
+    a NMR assay product is not represented as native-culture NMR evidence.
+  - Use just seed-canary naturalproductmech:mibig-fa36d6dbf9, inspect output, then
+    documented seeding and just validate-strict data/natural_products/alkaloids/12-epi-hapalindole-e.yaml,
+    just verify-reproduction, just verify-corpus --summary and just qc.
+- action_id: render-cyanometdb-nmr-usage
+  description: 'Change the CyanoMetDB evidence-note emitter in scripts/seed_from_sources.py
+    to explicitly report NMR used: no for this source value, instead of structure
+    confirmed by no. Preserve the raw nmr_used value, reference, strain context and
+    database-assertion grade; retain any separately supported chromatographic, UV
+    or mass-spectral identification evidence without calling it NMR confirmation.'
+  finding_ids:
+  - cyanometdb-nmr-wording
+  target_ids:
+  - naturalproductmech:mibig-fa36d6dbf9
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: CyanoMetDB evidence-note emitter
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: exact E source row with nmr_used=no
+  generator: scripts/seed_from_sources.py via guarded regeneration
+  acceptance_checks:
+  - 'The E canary emits an explicit NMR used: no statement with the original source
+    citation and strain.'
+  - No-NMR is not rendered as failed identification, absence or an overall structure-confidence
+    conclusion; the source row remains unchanged.
+  - Run the documented seed canary for naturalproductmech:mibig-fa36d6dbf9, review
+    the generated change, then strict validation, reproduction, corpus verification
+    and required QC.
+limitations:
+- The older CyanoMetDB 1553 stored InChI/key leaves C11 unspecified despite its complete
+  isomeric SMILES. Exact xref equivalence is supported specifically by that complete
+  SMILES; the conflict is not concealed.
+- The primary structure comparison transcribes published bond directions. Spectra,
+  optical rotations and experimental datasets were not independently reinterpreted.
+- Current ChEBI checking covers the identified exact candidate CHEBI:220080 plus the
+  complete pinned eligible inventory, not every current ontology entity.
+- The compound has no asserted optional synonym or definition. Their absence alone
+  does not create an identity finding.
+- The primary 1995 abstract was inspected on a publication-page mirror, with official
+  DOI metadata confirming its identity. Full original methods were not inspected.
+- Full texts needed to adjudicate the listed LOTUS taxon/reference differences were
+  not available through attempted free routes; findings remain provisional.
+- The 2014 Nature primary main body was not obtained; its official abstract, complete
+  free supplement and independent 2017 primary experimental comparison were inspected.
+- The original 2014 ChemBioChem supplementary E-specific occurrence panel remains
+  inaccessible through attempted free routes. The source’s nmr_used=no is preserved
+  and is not treated as failed identification.
+- DOI:10.1021/jo00226a009 is still inspected only through official metadata; no whole-article
+  absence conclusion is drawn.
+- Shared source evidence retains its real original inspection timestamps and is applied
+  only to this target’s exact compound, taxon and locus.
+- The configured full identifier-label gate accepts 499 warning-level taxon-label
+  mismatches, 35 explicit exceptions and 4,722 no-adapter pairs across the corpus;
+  its exit 0 is not independent verification of every identifier or of this record's
+  scientific claims.
+- The quality suite skips the optional sibling AntibioticMech checkout comparison
+  because the isolated clone has no sibling checkout, and skips three command-frontmatter
+  cases because their parameter sets are empty. Pinned-hash and network governance
+  checks still ran.
+- Shared native gates assess deterministic corpus consistency and configured invariants.
+  They do not establish biological production, stereochemical specificity, evidence
+  adequacy or literature-level claim support.
+notes:
+- No scientific owner, source inventory, component, curation status or seed history
+  was edited. All corrective actions are proposed work only.
+- Native producer evidence remains distinct from occurrence and enzyme-locus evidence.
+  A saved partial scientific review does not confer native REVIEWED status.
+tags:
+- path-order-campaign
+- batch-001
+- hapalindole
+```
