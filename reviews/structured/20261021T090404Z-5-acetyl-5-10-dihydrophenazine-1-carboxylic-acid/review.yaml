@@ -1,0 +1,721 @@
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T090404Z-5-acetyl-5-10-dihydrophenazine-1-carboxylic-acid
+title: '5-acetyl-5,10-dihydrophenazine-1-carboxylic acid: exact compound 1 and source
+  scope'
+started_at: '2026-10-21T08:53:25.299996Z'
+finished_at: '2026-10-21T09:04:04.844795Z'
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: The exact acetyl structure, NPAtlas xref, minted grounding and source provenance
+  are supported. No curation defect was confirmed. The tentative genomic comparison
+  does not establish exact-product causation; inaccessible main-text methods leave
+  this review partial.
+source:
+  git_revision: 10ed28fcdadb3d955c30732ff05b5d0e4adbee3b
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/5-acetyl-5-10-dihydrophenazine-1-carboxylic-acid.yaml
+    sha256: 0fc6c32b0e0723bf38f182ff0b2167fcf001264d4156d8b569a75259f85d5635
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 24, batch 003, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated pending-PR targets.
+    At selection, 74 of 3116 current records had campaign coverage and 3042 remained.
+    The population search included ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-95bd5cbf76
+targets:
+- target_id: naturalproductmech:mibig-95bd5cbf76
+  path: data/natural_products/alkaloids/5-acetyl-5-10-dihydrophenazine-1-carboxylic-acid.yaml
+  label: 5-acetyl-5,10-dihydrophenazine-1-carboxylic acid
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-95bd5cbf76
+  command: just validate-strict data/natural_products/alkaloids/5-acetyl-5-10-dihydrophenazine-1-carboxylic-acid.yaml
+    --out /private/tmp/npm-review-work/024/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T08:53:31.088570Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 record files agree with 3,116 PATHS.tsv rows and their pinned
+    filing pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just verify-corpus
+    --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016808+00:00; finished 2026-10-21T06:37:52.997020+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/verify-corpus.log. Reused
+    for batch 003 after verifying exact HEAD/base/tree equality and all tracked worktree
+    bytes against the original baseline. This command was not rerun for batch 003;
+    original times and receipts are retained.'
+  target_ids:
+  - naturalproductmech:mibig-95bd5cbf76
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 records are byte-identical to the seeder output from committed
+    inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just verify-reproduction
+    --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016703+00:00; finished 2026-10-21T06:38:35.570687+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/verify-reproduction.log.
+    Reused for batch 003 after verifying exact HEAD/base/tree equality and all tracked
+    worktree bytes against the original baseline. This command was not rerun for batch
+    003; original times and receipts are retained.'
+  target_ids:
+  - naturalproductmech:mibig-95bd5cbf76
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The documented exhaustive queue command produced 8,928 diagnostic rows
+    in 12 queues; deterministic queue output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just review-queue
+    --tsv /private/tmp/npm-review-queue-initial.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016598+00:00; finished 2026-10-21T06:37:11.018366+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/review-queue.log. Reused
+    for batch 003 after verifying exact HEAD/base/tree equality and all tracked worktree
+    bytes against the original baseline. This command was not rerun for batch 003;
+    original times and receipts are retained.'
+  target_ids:
+  - naturalproductmech:mibig-95bd5cbf76
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'Full configured gate passed using existing CHEBI and GO caches plus the
+    committed taxonomy adapter: 13,434 canonical matches, 646 synonym matches, 35
+    documented exceptions, 499 warning-only mismatches and 4,722 pairs skipped because
+    their prefixes have no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:56.498212+00:00; finished 2026-10-21T06:38:54.776253+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/validate-products.log.
+    Reused for batch 003 after verifying exact HEAD/base/tree equality and all tracked
+    worktree bytes against the original baseline. This command was not rerun for batch
+    003; original times and receipts are retained.'
+  target_ids:
+  - naturalproductmech:mibig-95bd5cbf76
+- check_id: shared-qc
+  name: Full repository quality gate after environment repair
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed after installing the pinned
+    linter, allowing the read-only governance fetch, and restoring the required provenance
+    tag. Tests: 999 passed, 4 skipped, 2 warnings. Closed-schema validation: 3,116
+    records and zero errors. Documentation, provenance, source queue, governed artifacts,
+    generated pages, reproduction, filing integrity and corpus reporting all passed.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:46:02.058886+00:00; finished 2026-10-21T06:54:53.950582+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/qc-attempt4.log. Reused
+    for batch 003 after verifying exact HEAD/base/tree equality and all tracked worktree
+    bytes against the original baseline. This command was not rerun for batch 003;
+    original times and receipts are retained.'
+  target_ids:
+  - naturalproductmech:mibig-95bd5cbf76
+- check_id: R024-CHEMISTRY
+  name: Independent exact-structure and stable-identifier reconstruction
+  status: passed
+  required: true
+  summary: Five official/local graph representations match in Standard and fixed-H
+    identity; no stereocentres are missing and the minted source hash matches.
+  target_ids:
+  - naturalproductmech:mibig-95bd5cbf76
+  command: .venv/bin/python /private/tmp/npm-review-work/024/compare-identity.py
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - R024-CHEMISTRY
+- check_id: R024-SEARCH-1
+  name: Ignored-inclusive search 1
+  status: passed
+  required: false
+  summary: Bounded matches/no-matches recorded; exit 1 means no matching line and
+    is expected for these specific queries.
+  target_ids:
+  - naturalproductmech:mibig-95bd5cbf76
+  command: rg -l --no-ignore --hidden -F -e OTRRZLYYKZUVRM -e NPA014023 -e naturalproductmech:mibig-95bd5cbf76
+    -e 5-acetyl-5-10-dihydrophenazine-1-carboxylic-acid -e '5-acetyl-5,10-dihydrophenazine-1-carboxylic
+    acid' data/natural_products
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - R024-SEARCH
+- check_id: R024-SEARCH-2
+  name: Ignored-inclusive search 2
+  status: passed
+  required: false
+  summary: Bounded matches/no-matches recorded; exit 1 means no matching line and
+    is expected for these specific queries.
+  target_ids:
+  - naturalproductmech:mibig-95bd5cbf76
+  command: rg -l --no-ignore --hidden -F -e OTRRZLYYKZUVRM -e NPA014023 -e naturalproductmech:mibig-95bd5cbf76
+    -e 5-acetyl-5-10-dihydrophenazine-1-carboxylic-acid -e '5-acetyl-5,10-dihydrophenazine-1-carboxylic
+    acid' data/raw
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - R024-SEARCH
+- check_id: R024-SEARCH-3
+  name: Ignored-inclusive search 3
+  status: passed
+  required: false
+  summary: Bounded matches/no-matches recorded; exit 1 means no matching line and
+    is expected for these specific queries.
+  target_ids:
+  - naturalproductmech:mibig-95bd5cbf76
+  command: rg -l --no-ignore --hidden -F -e OTRRZLYYKZUVRM -e NPA014023 -e naturalproductmech:mibig-95bd5cbf76
+    -e 5-acetyl-5-10-dihydrophenazine-1-carboxylic-acid -e '5-acetyl-5,10-dihydrophenazine-1-carboxylic
+    acid' curation conf src scripts
+  exit_code: 1
+  expected_exit_code: 1
+  evidence_ids:
+  - R024-SEARCH
+- check_id: R024-SEARCH-4
+  name: Ignored-inclusive search 4
+  status: passed
+  required: false
+  summary: Bounded matches/no-matches recorded; exit 1 means no matching line and
+    is expected for these specific queries.
+  target_ids:
+  - naturalproductmech:mibig-95bd5cbf76
+  command: rg -l --no-ignore --hidden -F -e OTRRZLYYKZUVRM -e NPA014023 -e naturalproductmech:mibig-95bd5cbf76
+    -e 5-acetyl-5-10-dihydrophenazine-1-carboxylic-acid -e '5-acetyl-5,10-dihydrophenazine-1-carboxylic
+    acid' reviews/structured
+  exit_code: 1
+  expected_exit_code: 1
+  evidence_ids:
+  - R024-SEARCH
+- check_id: R024-PRIMARY-BODY
+  name: Full original isolation/biosynthesis paper
+  status: unavailable
+  required: true
+  summary: The official supplement and abstract were read; original main-body experimental
+    details remain inaccessible after the shared bounded attempts.
+  target_ids:
+  - naturalproductmech:mibig-95bd5cbf76
+  evidence_ids:
+  - R024-ACCESS
+  - R024-PRIMARY
+evidence:
+- evidence_id: R024-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/5-acetyl-5-10-dihydrophenazine-1-carboxylic-acid.yaml
+  locator: Whole owner, all source/provenance fields and complete resolved local-sources.json
+  accessed_at: '2026-10-21T08:59:56.391469Z'
+  support: supports
+  summary: The record is the acetyl dihydrophenazine with one LOTUS occurrence, one
+    MIBiG producer and locus, one NPAtlas xref, model-versioned classification, minted
+    source concept and two seed events. There are no inline/ref causal graphs, named
+    proteins, pathway steps, assay observations, bioactivity summary, targets, related
+    records, unresolved discussions or clinical claims.
+  snapshot_sha256: 0fc6c32b0e0723bf38f182ff0b2167fcf001264d4156d8b569a75259f85d5635
+- evidence_id: R024-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/024/local-sources.json
+  locator: All matching MIBiG, LOTUS, ChEBI and classifier extraction rows
+  accessed_at: '2026-10-21T08:59:56.391469Z'
+  support: supports
+  summary: The exact matching raw row is BGC0000934 compound index 1, full key OTRRZLYYKZUVRM-UHFFFAOYSA-N,
+    source version 4, NPA014023, HKI 714/taxon 1485014 and KJ207079.1; locus methods/bounds
+    are blank. LOTUS has a single genus 2063/DOI 10.1021/NP400915P assertion. The
+    model predicts non-glycoside phenazine alkaloid; no matching eligible local ChEBI
+    row was extracted.
+  snapshot_sha256: 67d29401307b1ecf8f7eceb0ec80475f9558677012d1c2452a242a9b6ab34585
+- evidence_id: R024-CHEMISTRY
+  kind: validation
+  reference: /private/tmp/npm-review-work/024/identity-comparison.json
+  locator: Independent five-graph reconstruction and source-concept hash
+  accessed_at: '2026-10-21T08:58:34.071341Z'
+  support: supports
+  summary: Owner, NPA014023, current ChEBI default MOL/SMILES and MIBiG compound 1
+    share the full Standard InChI/key and fixed-H InChI. All are neutral C15H12N2O3
+    with exact mass 268.084792244 and no stereocentres. The implemented MIBIG/BGC0000934:1
+    hash reproduces naturalproductmech:mibig-95bd5cbf76.
+  snapshot_sha256: 4902fba46214d3fd09df97b0cd2e609a95ab0041fea159e0b932d17af2b764bd
+- evidence_id: R024-NPATLAS
+  kind: database
+  reference: https://www.npatlas.org/api/v1/compound/NPA014023?include=classifications
+  locator: Complete NPA014023 identity, origin/reference and current classification
+    fields
+  accessed_at: '2026-10-21T08:57:55.049054Z'
+  support: supports
+  summary: The current NPAtlas entry is exact acetyl compound 1, C15H12N2O3 and OTRRZLYYKZUVRM-UHFFFAOYSA-N;
+    its original source is Heine et al. 2014 DOI 10.1021/np400915p, PMID 24617951,
+    Kitasatospora sp. HKI 714. There is no listed reassignment. The NPClassifier export
+    agrees with the local computed family.
+  snapshot_sha256: 1d49dd7d85750e4b1f8041ec1eecbba3efc2f0b80ca50bdc072af780a4afa887
+- evidence_id: R024-CHEBI-SEARCH
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=OTRRZLYYKZUVRM-UHFFFAOYSA-N&size=100
+  locator: Exact full-key current official ChEBI search
+  accessed_at: '2026-10-21T08:57:55.049525Z'
+  support: supports
+  summary: The query returned exactly one hit, CHEBI:209698, with two stars. No eligible
+    three-star hit was returned in this bounded search.
+  snapshot_sha256: f673f671ec51ee0555b3d84722300bdc28a7032f7e4418e2ced35f00bbbf22a7
+  search_scope: Official es_search term=OTRRZLYYKZUVRM-UHFFFAOYSA-N, size 100, total
+    1, one page; coupled with ignored-inclusive local source/corpus/curation searches.
+    No global synonym-space absence claimed.
+- evidence_id: R024-CHEBI
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/209698/
+  locator: Complete CHEBI:209698 plus parsed default MOL 3385292
+  accessed_at: '2026-10-21T08:58:14.146700Z'
+  support: supports
+  summary: The released ChEBI record is an exact neutral acid match, with two-star
+    status, HKI 714 taxon 1485014 and PMID 24617951 origin. The default MOL independently
+    matches the owner; its SHA256 is 1624980139e987d2698d9e8d413d440dbcfba0865ddbc961a5dc3812e6df42f6.
+    Two-star eligibility does not satisfy this repository’s required three-star authority
+    rule.
+  snapshot_sha256: 129cca283270a652a8d400b3817ecf8cfab4c3eedb36a38f4a05458af94e0379
+- evidence_id: R024-MIBIG
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0000934.4/annotations.json
+  locator: Reused current BGC0000934 v4 response, independently inspected compound
+    1 and shared locus/taxonomy
+  accessed_at: '2026-10-21T08:53:48.782718Z'
+  support: supports
+  summary: Compound 1 is the exact acetyl structure with NPA014023. The source is
+    active, its quality is questionable, and its completeness is complete. HKI 714,
+    taxon 1485014 and KJ207079.1 agree with the inventory. The evidence arrays are
+    empty; sentinel bounds 0/0 are not a meaningful locus interval. The database antibacterial
+    annotation is separate from any mechanistic experiment.
+  snapshot_sha256: 34a22ac98c4bc084aa927968687c8c571f7092feab9b2322617f4bcaab7d8c5d
+- evidence_id: R024-TAXA-LOCUS
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=KJ207079.1&rettype=gb&retmode=text
+  locator: Reused KJ207079.1 source feature and citation; NCBI Taxonomy 1485014/2063
+    and Wikidata Q6417881 inspected separately
+  accessed_at: '2026-10-21T08:53:48.990679Z'
+  support: supports
+  summary: GenBank is a 25,554-bp endophenazine locus from soil strain HKI 714, taxon
+    1485014, citing PMID:24617951. The current NCBI lineage places this organism in
+    genus Kitasatospora (2063) and Actinomycetota. The official Wikidata page maps
+    Q6417881 to the same genus and NCBI identifier. These sources verify accession
+    and organism identity, without demonstrating acetyl-compound formation by this
+    locus.
+  snapshot_sha256: cbb8cbd8274c3e03c7db4c623dd06bf0bb1e20d9b61ae3d560de1eb99b8f51f8
+- evidence_id: R024-TAXONOMY
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1485014,2063&retmode=xml
+  locator: Complete current taxon nodes and lineage, original retrieval reused
+  accessed_at: '2026-10-21T08:53:49.356438Z'
+  support: supports
+  summary: The two numeric taxon identifiers resolve as the record says. HKI 714 is
+    a member of the LOTUS genus; a genus occurrence and a separately specific producer
+    assertion are compatible. Both ACTINOBACTERIAL groups are justified by the lineage.
+  snapshot_sha256: 34257c8f9ca4ecbe1939d28a665607f8afdf3aa41cf6f490ae7adceeeca24fbd
+- evidence_id: R024-WIKIDATA
+  kind: authority
+  reference: https://www.wikidata.org/wiki/Q6417881
+  locator: Rendered Q6417881 genus rank and NCBI 2063 mapping
+  accessed_at: '2026-10-21T08:55:00Z'
+  support: supports
+  summary: The stable organism note resolves to the correct genus. This is the successfully
+    inspected entity page, reusing its original browser access receipt, not the failed
+    API response.
+  snapshot_sha256: ea711ab1fe8425c29b7ade45fa8f652769e2d13f59fa3937f477e8f9e442f1f2
+- evidence_id: R024-PRIMARY
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=24617951&retmode=xml
+  locator: PubMed primary abstract and complete identifier metadata
+  accessed_at: '2026-10-21T08:31:28.139905Z'
+  support: supports
+  summary: The recorded DOI/PMID name the exact 2014 HKI 714 paper. Its abstract reports
+    a 200-L cultivation with bioactivity-guided isolation of dihydrophenazines/endophenazines,
+    and calls the candidate cluster presumed. The abstract supports publication/strain
+    context but does not enumerate exact compound 1 workup or direct gene experiments.
+  snapshot_sha256: 7e989faf68a939cd94b4a3a154ab92d2268b58759f1455e0e4224d39c8257ad9
+- evidence_id: R024-SI-STRUCTURE
+  kind: primary_source
+  reference: https://pstorage-acs-6854636.s3.amazonaws.com/3940393/np400915p_si_001.pdf
+  locator: Figure S1 p2, compound 1 analytical paragraph p3 and NMR p7; compound 1
+    spectrum collection pp7–9
+  accessed_at: '2026-10-21T08:31:53.028323Z'
+  support: supports
+  summary: Figure S1 assigns compound 1 as R=H in N5-C(=O)-CH2-R, giving an acetyl
+    methyl; compound 2 is R=OH. Compound 1 is explicitly named 5-acetyl-5,10-dihydrophenazine-1-carboxylic
+    acid. The yellow solid has observed [M+H]+ 269.0925 and calculated 269.0921 for
+    C15H13N2O3. Page 7 shows its acetyl methyl near 2.21 ppm and the corresponding
+    13C signal at 22.50 ppm. This checks the published drawing and characterization,
+    without independent raw-spectrum reprocessing.
+  snapshot_sha256: 0b704cfebbe9a56e2d3095aba08883754036c973e144cf504338c21b5a37344e
+- evidence_id: R024-SI-ACTIVITY
+  kind: primary_source
+  reference: https://pstorage-acs-6854636.s3.amazonaws.com/3940393/np400915p_si_001.pdf
+  locator: Table S1 p4, exact compound 1 row, visually inspected
+  accessed_at: '2026-10-21T08:31:53.028323Z'
+  support: supports
+  summary: 'Compound 1 inhibition-zone diameters (mm): B. subtilis ATC 6633 [printed],
+    0; S. aureus SG 511, 0; E. coli SG 458, 16; P. aeruginosa SG 137, 15; P. aeruginosa
+    K 799/61, ND; MRSA 134/93 R 9, 12; VRE E. faecalis 1528, 14; M. vaccae IMET 10670,
+    13; S. salmonicolor SBUG 549, ND; C. albicans H 8, 0; P. notatum JP 36, 0. ND
+    means not determined, not zero. These are zone measurements, with no MIC or positive
+    antifungal result for this compound. Loading and detailed methods are absent from
+    the table.'
+  snapshot_sha256: 0b704cfebbe9a56e2d3095aba08883754036c973e144cf504338c21b5a37344e
+- evidence_id: R024-SI-LOCUS
+  kind: primary_source
+  reference: https://pstorage-acs-6854636.s3.amazonaws.com/3940393/np400915p_si_001.pdf
+  locator: Contents and Table S2 pp5–6, tentative cluster and homolog annotations
+  accessed_at: '2026-10-21T08:31:53.028323Z'
+  support: supports
+  summary: The comparison is explicitly tentative and is associated in the contents
+    with endophenazine A1, compound 3. The homolog accession/function list does not
+    establish which native enzyme acetylates the dihydrophenazine or demonstrate exact
+    compound 1 production. No compound 1 knockout/reconstitution assay is described
+    in the inspected SI; the unread main article remains outside that absence statement.
+  snapshot_sha256: 0b704cfebbe9a56e2d3095aba08883754036c973e144cf504338c21b5a37344e
+- evidence_id: R024-GRADING
+  kind: record_content
+  reference: conf/producer_evidence.tsv
+  locator: Method-specific organism and locus grading rules
+  accessed_at: '2026-10-21T08:59:56.391469Z'
+  support: supports
+  summary: SOURCE_ASSERTION/CLUSTER_UNSTATED follows the imported empty method list.
+    Genomic homology alone would be a locus prediction, not causal native-producer
+    evidence. The available exact-compound sources do not justify a demonstrated-grade
+    change.
+  snapshot_sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+- evidence_id: R024-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/024/local-search-receipts.json
+  locator: Four exact identity/name/slug searches with ignored and hidden files included
+  accessed_at: '2026-10-21T08:58:15.257289Z'
+  support: supports
+  summary: Only the target/PATHS and three raw inventories matched in the scoped corpus/source
+    searches. No target-specific curation/code/config row or earlier structured review
+    matched the five query strings. This does not turn an optional absent assay/mechanism
+    into a required defect.
+  snapshot_sha256: 9a71b78289a69787cffc3fe5b0f6d9ab338b4dc48cc6d743a7c0a3bce308d978
+  search_scope: rg -l --no-ignore --hidden -F for OTRRZLYYKZUVRM, NPA014023, mintedID,
+    slug and exact label across data/natural_products, data/raw, curation/conf/src/scripts,
+    reviews/structured. Expected no-match exit 1 has empty stderr.
+- evidence_id: R024-ACCESS
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next/phenazines2014/supplement-access.json
+  locator: Prior official-publisher/free-discovery receipt, reused without repeated
+    failed retrieval
+  accessed_at: '2026-10-21T08:31:53.029315Z'
+  support: unknown
+  summary: 'The original main body remains unavailable: publisher HTML/PDF 403, no
+    PMC identifier, no usable open location in the inspected discovery sources. Official
+    SI and abstract are available. Compound 1-specific cultivation/workup and the
+    complete experiment section therefore remain unverified.'
+  snapshot_sha256: 699e2cd355c23eb60ee2fc83b6821de3ec50a09bcbe352ba8b0c38228a930592
+  search_scope: Previously recorded exact DOI/title and author-institution searches,
+    publisher, PubMed, OpenAlex and official SI routes in shared-next/phenazines2014.
+    Reused actual receipts; no claim that no public copy exists.
+assessments:
+- assessment_id: R024-IDENTITY
+  area: identity
+  topic: Compound 1 is the achiral acetyl congener
+  outcome: supported
+  summary: Primary Figure S1 and the compound 1 analytical paragraph independently
+    support the owner’s N5-acetyl/N10-H dihydrophenazine carboxylic acid. Official
+    database graphs agree exactly, including fixed-H form. There is no missing stereocentre,
+    and the hydroxyacetyl compound is a distinct structure.
+  target_ids:
+  - naturalproductmech:mibig-95bd5cbf76
+  evidence_ids:
+  - R024-OWNER
+  - R024-CHEMISTRY
+  - R024-NPATLAS
+  - R024-CHEBI
+  - R024-SI-STRUCTURE
+- assessment_id: R024-GROUNDING
+  area: grounding
+  topic: Eligible authority search and minted identity
+  outcome: supported
+  summary: CHEBI:209698 matches chemically but has only two stars; the current bounded
+    search found no eligible exact entry. The stable source-concept hash is reproduced,
+    so MINTED and its stated reason remain supported.
+  target_ids:
+  - naturalproductmech:mibig-95bd5cbf76
+  evidence_ids:
+  - R024-CHEBI-SEARCH
+  - R024-CHEBI
+  - R024-CHEMISTRY
+  - R024-LOCAL
+- assessment_id: R024-ORIGIN-SCOPE
+  area: scope
+  topic: Source-faithful genus occurrence and strain producer
+  outcome: supported
+  summary: The reported biological isolate context supports NATURAL_PRODUCT at the
+    represented source-assertion level. LOTUS supplies a correct Kitasatospora genus
+    occurrence; HKI 714 is separately identified as producer and belongs to that genus.
+    No species-wide production claim or wrong-strain transfer is present. Exact main-body
+    workup details remain separately unresolved.
+  target_ids:
+  - naturalproductmech:mibig-95bd5cbf76
+  evidence_ids:
+  - R024-LOCAL
+  - R024-NPATLAS
+  - R024-PRIMARY
+  - R024-SI-STRUCTURE
+  - R024-TAXONOMY
+  - R024-WIKIDATA
+- assessment_id: R024-LOCUS
+  area: evidence
+  topic: Presumed endophenazine cluster is not an exact acetylation assay
+  outcome: supported
+  summary: The accession, active version, class and taxon fields match the source,
+    and the record accurately reports no imported locus method. The available genomic
+    comparison is tentative and does not directly test this acetyl product; retain
+    the two current evidence tiers rather than borrowing proof from other endophenazines.
+  target_ids:
+  - naturalproductmech:mibig-95bd5cbf76
+  evidence_ids:
+  - R024-MIBIG
+  - R024-TAXA-LOCUS
+  - R024-SI-LOCUS
+  - R024-GRADING
+- assessment_id: R024-PRIMARY-LIMIT
+  area: evidence
+  topic: Original compound 1 formation and detailed assay protocol
+  outcome: unknown
+  summary: The original main article could not be fully inspected. Exact isolation
+    yield, culture/workup details and any further biosynthetic experimental qualifications
+    remain unverified. This required limitation makes the scientific review partial,
+    although no contradiction was confirmed in the asserted fields.
+  target_ids:
+  - naturalproductmech:mibig-95bd5cbf76
+  evidence_ids:
+  - R024-PRIMARY
+  - R024-SI-STRUCTURE
+  - R024-SI-ACTIVITY
+  - R024-ACCESS
+- assessment_id: R024-ACTIVITY
+  area: quantity
+  topic: Compound 1 zones and unpopulated optional activity fields
+  outcome: not_applicable
+  summary: The record makes no activity or molecular-target claim. The SI provides
+    compound 1 antibacterial zone responses with two ND cells; it supplies no MIC
+    and no positive antifungal result for this exact compound. Optional later capture
+    must retain strain, endpoint, mm units and protocol limits. Omission alone is
+    not a finding.
+  target_ids:
+  - naturalproductmech:mibig-95bd5cbf76
+  evidence_ids:
+  - R024-OWNER
+  - R024-SI-ACTIVITY
+- assessment_id: R024-CLASSIFICATION
+  area: provenance
+  topic: Versioned model output and source class
+  outcome: supported
+  summary: The exact-key local classifier row is reproduced and agrees with the current
+    NPAtlas prediction. Phenazine alkaloid filing fits the primary scaffold; Anthranilic
+    acid alkaloids remains a model superclass, while OTHER comes from MIBiG. Neither
+    annotation states an experimentally proven pathway.
+  target_ids:
+  - naturalproductmech:mibig-95bd5cbf76
+  evidence_ids:
+  - R024-LOCAL
+  - R024-NPATLAS
+  - R024-SI-STRUCTURE
+  - R024-MIBIG
+- assessment_id: R024-COVERAGE
+  area: completeness
+  topic: History and all present owner fields
+  outcome: supported
+  summary: The single source concept, two seed events and SEEDED status are coherent.
+    No target-specific curation overlay was found in ignored-inclusive searches. No
+    named gene, protein, regulator or expression assertion makes iModulonDB applicable
+    here. Optional graphs, synonyms, targets, activity fields and related-record links
+    are not required additions.
+  target_ids:
+  - naturalproductmech:mibig-95bd5cbf76
+  evidence_ids:
+  - R024-OWNER
+  - R024-LOCAL
+  - R024-SEARCH
+findings: []
+actions: []
+limitations:
+- Full original DOI 10.1021/np400915p methods/body remains unavailable; preserve a
+  partial review and SEEDED status.
+- Compound 1 identity and Table S1 row were independently checked. The assessment
+  does not transfer compound 2 hydroxylation, antifungal response or its zone values.
+- Genomic homology and a deposited locus do not establish exact native acetylation
+  or direct enzyme causation; no whole-paper absence claim is made.
+- SI spectra were inspected at the published characterization level, not independently
+  reprocessed. Assay loading/protocol is unavailable and no MIC is inferred.
+- The configured full identifier-label gate accepts 499 warning-level taxon-label
+  mismatches, 35 explicit exceptions and 4,722 no-adapter pairs across the corpus;
+  its exit 0 is not independent verification of every identifier or of this record's
+  scientific claims.
+- The quality suite skips the optional sibling AntibioticMech checkout comparison
+  because the isolated clone has no sibling checkout, and skips three command-frontmatter
+  cases because their parameter sets are empty. Pinned-hash and network governance
+  checks still ran.
+- Shared native gates assess deterministic corpus consistency and configured invariants.
+  They do not establish biological production, stereochemical specificity, evidence
+  adequacy or literature-level claim support.
+- Baseline reuse concerns the identical committed inputs and original executed checks;
+  it does not claim a fresh network/governance or ontology-cache refresh.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+tags:
+- path-order-campaign
+- batch-003
+- phenazine
+- compound-specific-evidence

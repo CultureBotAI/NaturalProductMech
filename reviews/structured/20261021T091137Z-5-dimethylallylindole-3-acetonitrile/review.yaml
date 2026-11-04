@@ -1,0 +1,1225 @@
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T091137Z-5-dimethylallylindole-3-acetonitrile
+title: Review of 5-dimethylallylindole-3-acetonitrile
+started_at: '2026-10-21T08:56:02.250933Z'
+finished_at: '2026-10-21T09:11:37.155463Z'
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The exact product and two enzyme steps are supported, and terminal dehydration
+  remains appropriately proposed. Two LOTUS occurrence claims use donor or unrelated
+  species in place of the tested TK23 host; eight mechanism notes misattribute the
+  primary authors.
+source:
+  git_revision: 10ed28fcdadb3d955c30732ff05b5d0e4adbee3b
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/5-dimethylallylindole-3-acetonitrile.yaml
+    sha256: 73bf16c6df17251837b4d61406481cac802a88058f46703196ed6d05d75ea736
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/lotus_exclusions.py
+    sha256: 6352cac7c587eab5a56d907c523cc899d02d197009081624bf8649c675ee30f7
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 25, batch 003, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated pending-PR targets.
+    At selection, 74 of 3116 current records had campaign coverage and 3042 remained.
+    The population search included ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-380600c810
+targets:
+- target_id: naturalproductmech:mibig-380600c810
+  path: data/natural_products/alkaloids/5-dimethylallylindole-3-acetonitrile.yaml
+  label: 5-dimethylallylindole-3-acetonitrile
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/alkaloids/5-dimethylallylindole-3-acetonitrile.yaml
+    role: Curator-owned assertions, inline mechanisms, discussions and audit history
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-380600c810
+  command: just validate-strict data/natural_products/alkaloids/5-dimethylallylindole-3-acetonitrile.yaml
+    --out /private/tmp/npm-review-work/025/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T08:56:04.835927Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 record files agree with 3,116 PATHS.tsv rows and their pinned
+    filing pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just verify-corpus
+    --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016808+00:00; finished 2026-10-21T06:37:52.997020+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/verify-corpus.log. Reused
+    for batch 003 after verifying exact HEAD/base/tree equality and all tracked worktree
+    bytes against the original baseline. This command was not rerun for batch 003;
+    original times and receipts are retained.'
+  target_ids:
+  - naturalproductmech:mibig-380600c810
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 records are byte-identical to the seeder output from committed
+    inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just verify-reproduction
+    --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016703+00:00; finished 2026-10-21T06:38:35.570687+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/verify-reproduction.log.
+    Reused for batch 003 after verifying exact HEAD/base/tree equality and all tracked
+    worktree bytes against the original baseline. This command was not rerun for batch
+    003; original times and receipts are retained.'
+  target_ids:
+  - naturalproductmech:mibig-380600c810
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The documented exhaustive queue command produced 8,928 diagnostic rows
+    in 12 queues; deterministic queue output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just review-queue
+    --tsv /private/tmp/npm-review-queue-initial.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016598+00:00; finished 2026-10-21T06:37:11.018366+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/review-queue.log. Reused
+    for batch 003 after verifying exact HEAD/base/tree equality and all tracked worktree
+    bytes against the original baseline. This command was not rerun for batch 003;
+    original times and receipts are retained.'
+  target_ids:
+  - naturalproductmech:mibig-380600c810
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'Full configured gate passed using existing CHEBI and GO caches plus the
+    committed taxonomy adapter: 13,434 canonical matches, 646 synonym matches, 35
+    documented exceptions, 499 warning-only mismatches and 4,722 pairs skipped because
+    their prefixes have no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:56.498212+00:00; finished 2026-10-21T06:38:54.776253+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/validate-products.log.
+    Reused for batch 003 after verifying exact HEAD/base/tree equality and all tracked
+    worktree bytes against the original baseline. This command was not rerun for batch
+    003; original times and receipts are retained.'
+  target_ids:
+  - naturalproductmech:mibig-380600c810
+- check_id: shared-qc
+  name: Full repository quality gate after environment repair
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed after installing the pinned
+    linter, allowing the read-only governance fetch, and restoring the required provenance
+    tag. Tests: 999 passed, 4 skipped, 2 warnings. Closed-schema validation: 3,116
+    records and zero errors. Documentation, provenance, source queue, governed artifacts,
+    generated pages, reproduction, filing integrity and corpus reporting all passed.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:46:02.058886+00:00; finished 2026-10-21T06:54:53.950582+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/qc-attempt4.log. Reused
+    for batch 003 after verifying exact HEAD/base/tree equality and all tracked worktree
+    bytes against the original baseline. This command was not rerun for batch 003;
+    original times and receipts are retained.'
+  target_ids:
+  - naturalproductmech:mibig-380600c810
+- check_id: PP025-C-NATIVE
+  name: Exact native protein, CDS and genomic mapping
+  status: passed
+  required: true
+  summary: Both current unreviewed UniProt proteins exactly equal independent translations
+    of the native and MIBiG CDSs; coordinates, strand, accession and taxon are coherent.
+  target_ids:
+  - naturalproductmech:mibig-380600c810
+  evidence_ids:
+  - PP025-Q9ADJ2
+  - PP025-Q8CJJ9
+  - PP025-GENBANK
+  - PP025-MIBIG-GBK
+  - PP025-NATIVE-TAXON
+  - PP025-COMPARISON
+  command: .venv/bin/python /private/tmp/npm-review-work/025/check-proteins-precursors.py
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: PP025-C-PRECURSORS
+  name: Exact precursor structure groundings
+  status: passed
+  required: true
+  summary: The official three-star ChEBI molfiles support the stored L-tryptophan
+    and DMAPP identifiers, including L configuration and neutral representation.
+  target_ids:
+  - naturalproductmech:mibig-380600c810
+  evidence_ids:
+  - PP025-TRP
+  - PP025-TRP-MOL
+  - PP025-DMAPP
+  - PP025-DMAPP-MOL
+  - PP025-COMPARISON
+  command: .venv/bin/python /private/tmp/npm-review-work/025/check-proteins-precursors.py
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: PP025-C-TAXON-IDS
+  name: Current taxonomic identifier mapping
+  status: passed
+  required: true
+  summary: The stored taxon and Wikidata identifiers resolve as labeled. This is an
+    identifier check only; scientific occurrence support is evaluated separately from
+    the original paper.
+  target_ids:
+  - naturalproductmech:mibig-380600c810
+  evidence_ids:
+  - PP025-NATIVE-TAXON
+  - PP025-SPECIES
+  - PP025-WIKIDATA
+  - PP025-COMPARISON
+- check_id: C025-PRIMARY
+  name: Exact primary compound, culture host and mechanism scope
+  status: passed
+  required: true
+  summary: Full primary body and original figures/table were inspected. Exact compound
+    2, both enzyme reactions, the proposed terminal dehydration and every stored evidence
+    snippet were checked; occurrence host and author attribution defects are separately
+    recorded as findings.
+  target_ids:
+  - naturalproductmech:mibig-380600c810
+  evidence_ids:
+  - E025-IDENTITY
+  - E025-HOST
+  - E025-ASSAY67
+  - E025-ASSAY68
+  - E025-TERMINAL
+  - E025-AUTHOR
+- check_id: C025-STRUCTURED-CONTEXT
+  name: Covered coelicolor iModulon structured-source audit
+  status: passed
+  required: true
+  summary: Installed read-only runner queries and official gene metadata were inspected.
+    Exact SCO genes resolve, while selected component searches supply no material
+    component context; no chemical or native-necessity inference follows.
+  target_ids:
+  - naturalproductmech:mibig-380600c810
+  evidence_ids:
+  - E025-IMODULON-SEARCH
+  - E025-IMODULON-GENE67
+  - E025-IMODULON-GENE68
+evidence:
+- evidence_id: E025-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/5-dimethylallylindole-3-acetonitrile.yaml
+  locator: Complete owner, both pathway steps, every graph node/edge/evidence and
+    all history entries
+  accessed_at: '2026-10-21T09:07:22.201241Z'
+  support: supports
+  summary: The complete owner contains one exact MIBiG source concept, two LOTUS occurrences,
+    source-asserted native producer, heterologously demonstrated locus, two enzyme
+    steps and one seven-node/six-edge partial BIOSYNTHESIS graph. No activity, molecular-target
+    or phenotype claim is asserted.
+  snapshot_sha256: 73bf16c6df17251837b4d61406481cac802a88058f46703196ed6d05d75ea736
+- evidence_id: E025-RAW
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: Exact BGC0002128:1 row and complete exact-key LOTUS/NPClassifier rows in
+    /025/local-sources.json
+  accessed_at: '2026-10-21T09:07:22.201241Z'
+  support: supports
+  summary: 'The generated row is faithful to version 3: taxon 100226, AL645882.2:8279373..8288044,
+    Heterologous expression, SOURCE_ASSERTION and CLUSTER_DEMONSTRATED. The complete
+    row SHA256 is 2ba8db336227546de640c33f325a75a8ea0261f863b32129ae3b48f482b408ee.
+    Both LOTUS rows cite the same 2013 DOI, so they do not represent independent publications.'
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: E025-MIBIG
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0002128.3/annotations.json
+  locator: Version 3 compound 0, loci, taxonomy, class and legacy references
+  accessed_at: '2026-10-21T09:00:59.129265Z'
+  support: supports
+  summary: The pinned entry stores the exact target SMILES, locus coordinates, heterologous
+    method and coelicolor A3(2) source taxon. It cites PMID 23430264 and the matching
+    JBC DOI. Active/questionable/unknown metadata and OTHER class are faithfully represented;
+    these fields do not establish native production or minimal pathway boundaries.
+  snapshot_sha256: 082944b36f66d0c84080345890ded0e406f46d90f2e91f2e86e2a52eedc9397c
+- evidence_id: E025-AUTHOR
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3617294&retmode=xml
+  locator: Front author list and title; all three stored snippet passages in narrative
+    abstract
+  accessed_at: '2026-10-21T08:30:44.189257Z'
+  support: supports
+  summary: The source authors are Taro Ozaki, Makoto Nishiyama and Tomohisa Kuzuyama.
+    All three stored snippet passages occur in the abstract (chemical L typography
+    normalized). The eight notes naming Izumikawa et al. therefore misattribute the
+    correct DOI and experiments.
+  snapshot_sha256: f195eed5ef9127b33fa1ed814cd49b455cb56f63a50a3f43009db03d6febef01
+- evidence_id: E025-HOST
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3617294&retmode=xml
+  locator: 'Experimental Procedures: culture conditions and construction; Table 1;
+    Results: Heterologous Expression; Discussion first paragraph'
+  accessed_at: '2026-10-21T08:30:44.189257Z'
+  support: supports
+  summary: SCO7467/7468 were PCR-cloned from coelicolor A3(2) genomic DNA and introduced
+    into S. lividans TK23 as pSCO103. Preparative isolation of exact 2 used the transformed
+    TK23 broth. Empty-vector and SCO7467-only cultures yielded negligible 2, so this
+    was a gene-dosage experiment in a metabolically capable host. The authors state
+    biosynthetic ability for both organisms, but the described product-isolation experiment
+    is not a native coelicolor culture isolation. No universal absence claim follows.
+  snapshot_sha256: f195eed5ef9127b33fa1ed814cd49b455cb56f63a50a3f43009db03d6febef01
+- evidence_id: E025-IDENTITY
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3617294&retmode=xml
+  locator: Isolation and Structural Determination of 5-DMAIAN; spectral-data section;
+    Figure 2D
+  accessed_at: '2026-10-21T08:30:44.189257Z'
+  support: supports
+  summary: Two liters of transformed TK23 broth yielded 8.9 mg compound 2. NMR and
+    high-resolution MS establish the exact C5-prenyl indole-3-acetonitrile, formula
+    C15H16N2; observed [M+H]+ 225.1385 versus calculated 225.1386. The C2/C6 prenyl
+    nitriles 5/6 are different products of separate enzyme assays, not the isolated
+    culture compound 2.
+  snapshot_sha256: f195eed5ef9127b33fa1ed814cd49b455cb56f63a50a3f43009db03d6febef01
+- evidence_id: E025-ASSAY67
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3617294&retmode=xml
+  locator: Experimental Procedures prenyltransferase assay and product isolation;
+    Results recombinant SCO7467; Figure 4A–C
+  accessed_at: '2026-10-21T08:30:44.189257Z'
+  support: supports
+  summary: Purified N-terminal His8-SCO7467 from E. coli BL21(DE3) transfers dimethylallyl
+    from DMAPP onto C5 of L-tryptophan 3 to give structurally assigned 5-DMAT 4. The
+    standard assay used 1 mM each substrate, 1 mg/mL enzyme, 100 mM Tris pH 8, 30
+    °C, 10 min. Activity persists with EDTA. IAN 1 instead yields minor C2/C6 nitriles
+    5/6; direct IAN→exact 5-DMAIAN is not the assigned route.
+  snapshot_sha256: f195eed5ef9127b33fa1ed814cd49b455cb56f63a50a3f43009db03d6febef01
+- evidence_id: E025-ASSAY68
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3617294&retmode=xml
+  locator: Experimental Procedures SCO7468 reaction/product isolation; Results in-vitro
+    SCO7468; Figures 3 and 5
+  accessed_at: '2026-10-21T08:30:44.189257Z'
+  support: supports
+  summary: Purified N-terminal His8-SCO7468 contains bound FAD and converts 5-DMAT
+    4 to the isolated syn/anti aldoxime 7. The tested conversion requires NADPH and
+    is not detected with NADH. The standard assay used 50 µM 4, 1 mg/mL enzyme, 1
+    mM NADPH at 30 °C for 10 min. The Methods and Figure 5 establish oxime formation;
+    the Results sentence mentioning DMAPP in the preparative SCO7468 reaction is inconsistent
+    with that actual method and is not copied into the owner.
+  snapshot_sha256: f195eed5ef9127b33fa1ed814cd49b455cb56f63a50a3f43009db03d6febef01
+- evidence_id: E025-TERMINAL
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3617294&retmode=xml
+  locator: Abstract final pathway sentence; Discussion third paragraph; Figure 7B
+    dashed arrow outside demonstrated box
+  accessed_at: '2026-10-21T08:30:44.189257Z'
+  support: supports
+  summary: The 7→2 dehydration is explicitly presumed to involve an unidentified enzyme,
+    possibly a promiscuous host dehydratase. There is no assigned terminal enzyme
+    or purified 7→2 assay in this study. The owner correctly marks the edge as proposed
+    and leaves it unassigned; source-kind PRIMARY_EXPERIMENT does not erase that explicit
+    qualification. The two structured enzyme steps stop at oxime 7.
+  snapshot_sha256: f195eed5ef9127b33fa1ed814cd49b455cb56f63a50a3f43009db03d6febef01
+- evidence_id: E025-NATIVE
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3617294&retmode=xml
+  locator: Discussion first and third paragraphs, all culture protocols and Figure
+    2
+  accessed_at: '2026-10-21T08:30:44.189257Z'
+  support: supports
+  summary: The authors infer that coelicolor A3(2) has biosynthetic ability, while
+    direct culture-product work is performed in TK23. The existing coelicolor producer
+    grade SOURCE_ASSERTION is therefore appropriate. Heterologous introduction of
+    the two donor genes and exact product enrichment support their locus contribution,
+    but do not prove native necessity, full 8.7 kb-region sufficiency or that the
+    two proteins alone complete nitrile synthesis.
+  snapshot_sha256: f195eed5ef9127b33fa1ed814cd49b455cb56f63a50a3f43009db03d6febef01
+- evidence_id: E025-ECOLOGY
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3617294&retmode=xml
+  locator: Discussion final paragraphs and Figure 1 comparative neighborhoods
+  accessed_at: '2026-10-21T08:30:44.189257Z'
+  support: supports
+  summary: Figure 1 compares homologous neighborhoods, including lividans TK24; the
+    experimental host is TK23 in Table 1/methods/Figure 2. Related neighborhoods do
+    not prove exact product occurrence in all listed organisms. Proposed auxin-like
+    or plant-signalling roles are not tested activities of compound 2 in this paper.
+    The owner does not assert those phenotypes.
+  snapshot_sha256: f195eed5ef9127b33fa1ed814cd49b455cb56f63a50a3f43009db03d6febef01
+- evidence_id: E025-FIG-zbc0181345270002
+  kind: primary_source
+  reference: https://cdn.ncbi.nlm.nih.gov/pmc/blobs/d942/3617294/a69e1b9c5bd2/zbc0181345270002.jpg
+  locator: Figure 2A–D pixels
+  accessed_at: '2026-10-21T08:35:29.458454Z'
+  support: supports
+  summary: The actual TK23 pSCO103 chromatogram labels exact compound 2; the plasmid
+    controls, unprenylated IAN 1 and target C5 structure are distinct.
+  snapshot_sha256: 1ac86857b27a8ab9c893c78b9f60f04cf6c0fb90529cfde66c6b5db9e0d31241
+- evidence_id: E025-FIG-zbc0181345270004
+  kind: primary_source
+  reference: https://cdn.ncbi.nlm.nih.gov/pmc/blobs/d942/3617294/97a2289eb898/zbc0181345270004.jpg
+  locator: Figure 4A–C pixels
+  accessed_at: '2026-10-21T08:35:29.672560Z'
+  support: supports
+  summary: SCO7467 forms 5-DMAT 4 from L-Trp 3 with DMAPP; the direct IAN branch forms
+    isomers 5 and 6.
+  snapshot_sha256: fbaccb4d5ec0eb6608e582e65c919e17871c1437ca6404d1cd61be5838371492
+- evidence_id: E025-FIG-zbc0181345270005
+  kind: primary_source
+  reference: https://cdn.ncbi.nlm.nih.gov/pmc/blobs/d942/3617294/31b8f659e82a/zbc0181345270005.jpg
+  locator: Figure 5A–D pixels
+  accessed_at: '2026-10-21T08:35:29.708255Z'
+  support: supports
+  summary: NADPH-dependent SCO7468 conversion ends at oxime 7. Separate panels test
+    unprenylated Trp→IAOx 8, not direct nitrile 2 formation.
+  snapshot_sha256: ba9a839ea9b7b350eeb157bd885bd46b1b38c1b175d4dc70ca4e2ad1878f4588
+- evidence_id: E025-FIG-zbc0181345270007
+  kind: primary_source
+  reference: https://cdn.ncbi.nlm.nih.gov/pmc/blobs/d942/3617294/a46f517d1174/zbc0181345270007.jpg
+  locator: Figure 7B pixels
+  accessed_at: '2026-10-21T08:35:29.817879Z'
+  support: supports
+  summary: The experimentally assigned 3→4→7 reactions are boxed; dashed 7→2 lies
+    outside the box. The original proposed/demonstrated distinction is preserved by
+    the owner.
+  snapshot_sha256: 38568d53174b0ba81d276ba629b69de6a4bf588aadd603b37c27ebd9830ed67e
+- evidence_id: E025-FIG-zbc018134527t001
+  kind: primary_source
+  reference: https://cdn.ncbi.nlm.nih.gov/pmc/blobs/d942/3617294/142aefa18005/zbc018134527t001.jpg
+  locator: Table 1 original pixels
+  accessed_at: '2026-10-21T08:35:29.458276Z'
+  support: supports
+  summary: The table distinguishes coelicolor A3(2) gene donor, lividans TK23 culture
+    host, E. coli DH5alpha cloning host and BL21(DE3) recombinant-protein host. pHIS8
+    supplies an N-terminal eight-histidine tag; neither TK24 nor 1326 is the experimental
+    host designation in this table.
+  snapshot_sha256: 39b585084ff055ec256f2560a3727c8c5dbd8214e09a6b0111d7f1896b0ac151
+- evidence_id: E025-NPATLAS
+  kind: database
+  reference: https://www.npatlas.org/api/v1/compound/NPA032817
+  locator: Complete official NPA032817 structure/origin metadata
+  accessed_at: '2026-10-21T09:00:59.129833Z'
+  support: supports
+  summary: The full InChI, full key and SMILES match the owner and original compound
+    2. The origin reference is the correct 2013 paper and author list. The database
+    labels origin coelicolor A3(2), but that is not independent evidence of native
+    culture isolation beyond the same paper.
+  snapshot_sha256: e0c0706a3f43078afa63556481ae7e0db11725bd2cb95614fdb84cbb6290ec6a
+- evidence_id: E025-CHEBI
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/220077/
+  locator: CHEBI:220077 complete official payload, status/stars and standard InChI/key
+  accessed_at: '2026-10-21T09:01:56.802529Z'
+  support: supports
+  summary: Current ChEBI:220077, named 5-DMAIAN, is released with two stars and declares
+    the exact owner standard InChI/key. It is not an eligible three-star replacement
+    under current minting policy. Its coelicolor origin refers to the same PMID and
+    supplies no independent native occurrence experiment. No candidate SMILES is substituted
+    into the owner.
+  snapshot_sha256: 998530a5519ae296ed5a79df4f2020ce26e7c657807d213709339d12afdbb231
+- evidence_id: E025-CHEMISTRY
+  kind: validation
+  reference: /private/tmp/npm-review-work/025/chemistry.json
+  locator: Independent RDKit owner calculation from intake
+  accessed_at: '2026-10-21T08:56:03.240575Z'
+  support: supports
+  summary: The owner reproduces its exact InChI/key, formula C15H16N2, neutral charge
+    and exact mass 224.131348512, with no tetrahedral centres. The prenyl alkene has
+    identical methyl substituents at one end, so no E/Z stereochemistry is missing.
+    MIBIG plus null separator plus BGC0002128:1 hashes to the stored minted suffix
+    380600c810.
+  snapshot_sha256: e0f4b536661e5f185a25316bd4b7aff8cc94e9c61c3ec5293e1a9526600860c5
+- evidence_id: E025-CLASSIFICATION
+  kind: record_content
+  reference: data/raw/npclassifier.tsv
+  locator: Exact full-key model row captured in /025/local-sources.json
+  accessed_at: '2026-10-21T09:07:22.201241Z'
+  support: supports
+  summary: The imported 2026-09-07 NPClassifier row returns Alkaloids, Tryptophan
+    alkaloids, Simple indole alkaloids and non-glycoside, matching the owner. Computed
+    filing is separate from source OTHER biosynthetic class.
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: E025-LOTUS-ROWS
+  kind: record_content
+  reference: data/raw/lotus_occurrences.tsv
+  locator: Both complete exact-key source triples and SHA digests
+  accessed_at: '2026-10-21T09:07:22.201241Z'
+  support: supports
+  summary: The albidoflavus 1886 row digest is e16ecd7a81f8869f29b4b750a4e4f5f10d4a9e8d4cbb9bf20a00f23d4bbceaee,
+    and coelicolor 1902 row digest is b5158b98b1b310aec9a05ca614d49cae2029ded5b75d28a603ad06df47bbd5cf.
+    Both cite 10.1074/JBC.M112.436451. These exact taxon/DOI tuples are independent
+    source assertions to adjudicate, not synonyms of the experimentally used TK23
+    host.
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: E025-TRANSFORM
+  kind: record_content
+  reference: src/naturalproductmech/curate/lotus_exclusions.py
+  locator: Complete LOTUS exclusion loader and seeder consumption; curator-owned carried
+    fields
+  accessed_at: '2026-10-21T09:07:22.201241Z'
+  support: supports
+  summary: The implemented exclusion loader requires the exact full key/taxon/DOI
+    tuple, a unique complete raw row and its SHA256 digest; it emits a discussion
+    while preserving raw provenance. The seeder carries curator-owned biosynthetic_pathway
+    and causal_graphs, so author-note repairs belong in the owner and must survive
+    a regeneration canary. No maintained primary-culture occurrence insertion is assumed
+    to exist.
+  snapshot_sha256: 6352cac7c587eab5a56d907c523cc899d02d197009081624bf8649c675ee30f7
+- evidence_id: E025-IMODULON-SEARCH
+  kind: search
+  reference: https://imodulondb.org/api/genes/s_coelicolor/modulome478/SCO7467
+  locator: Installed read-only runner searches, exact SCO7467/SCO7468 plus dimethylallyl/tryptophan/indole/prenyltransferase
+  accessed_at: '2026-10-21T09:00:04.842487Z'
+  support: context_only
+  summary: Both exact gene queries return the corresponding gene. No iModulon name/regulator/function
+    match is returned for the six queries. Keyword gene hits such as miaB/trp genes
+    are unrelated context; this result does not establish that the SCO genes belong
+    to no component. No native metabolite or reaction claim is derived from the search.
+  snapshot_sha256: b391c1de854a04f1c54ec8062f0f952ac0e70fd41d610ba23b12cd669a124e04
+  search_scope: s_coelicolor/modulome478; six explicit installed-runner queries, all
+    exit0. Dataset-local search, not a complete component-membership audit or whole-resource
+    absence claim.
+- evidence_id: E025-IMODULON-GENE67
+  kind: database
+  reference: https://imodulondb.org/api/genes/s_coelicolor/modulome478/SCO7467
+  locator: Official source gene annotation returned by structured source API
+  accessed_at: '2026-10-21T09:00:59.307015Z'
+  support: context_only
+  summary: The coelicolor dataset maps SCO7467 to Q9ADJ2, positions 8279637..8280764
+    on plus strand, STRING taxon 100226 and operon Op5287. This is annotation context,
+    not evidence of compound production or exact coexpression.
+  snapshot_sha256: f1b4ecb51d0900cbdb7216054f591caa1be1c0d0b8eadb020a1f1427e44af8e8
+- evidence_id: E025-IMODULON-GENE68
+  kind: database
+  reference: https://imodulondb.org/api/genes/s_coelicolor/modulome478/SCO7468
+  locator: Official source gene annotation returned by structured source API
+  accessed_at: '2026-10-21T09:00:59.345560Z'
+  support: context_only
+  summary: The coelicolor dataset maps SCO7468 to Q8CJJ9, positions 8280867..8282165
+    on minus strand, STRING taxon 100226 and operon Op5288. No native metabolite identity,
+    regulatory mechanism or reaction follows from this annotation alone.
+  snapshot_sha256: e18977f82ecb8659b6ae602417fbaba6fff1d91567e60238e236324c64b924d3
+- evidence_id: E025-LOCAL-SEARCH
+  kind: search
+  reference: /private/tmp/npm-record-reviews-20261021/curation
+  locator: rg --no-ignore --hidden exact identifier, BGC and full-key search
+  accessed_at: '2026-10-21T09:07:22.201241Z'
+  support: context_only
+  summary: No matching exact-target decision was returned in the inspected curation
+    directory. Ignored and hidden files were included. This bounded search does not
+    claim no unrelated correction mechanism exists.
+  search_scope: Complete curation directory, patterns mibig-380600c810/BGC0002128/OTLRZZMUVKJCDO;
+    ignored and hidden files included.
+- evidence_id: PP025-Q9ADJ2
+  kind: authority
+  reference: https://rest.uniprot.org/uniprotkb/Q9ADJ2.json
+  locator: /private/tmp/npm-review-work/025/proteins-precursors/uniprot-Q9ADJ2.json
+  accessed_at: '2026-10-21T08:59:34.960856Z'
+  support: supports
+  summary: Current UniProt Q9ADJ2 is an unreviewed TrEMBL entry for SCO7467/SCBAC14E8.07
+    in taxon 100226, with 375 amino acids and EMBL protein CAC36059.1. Its native
+    sequence exactly matches independently translated AL645882.2 and MIBiG CDSs. The
+    automated recommended prenyltransferase name does not independently establish
+    regioselectivity or the assayed construct.
+  snapshot_sha256: e3505000dd3e1ec09d2726da01a9f6b5bde101b6acc9e7e386257a03bc49a093
+- evidence_id: PP025-Q8CJJ9
+  kind: authority
+  reference: https://rest.uniprot.org/uniprotkb/Q8CJJ9.json
+  locator: /private/tmp/npm-review-work/025/proteins-precursors/uniprot-Q8CJJ9.json
+  accessed_at: '2026-10-21T08:59:34.973388Z'
+  support: supports
+  summary: Current UniProt Q8CJJ9 is an unreviewed TrEMBL entry for SCO7468/SCBAC14E8.08c/SCBAC17A6.01c
+    in taxon 100226, with 432 amino acids and EMBL protein CAD55403.1. Its native
+    sequence exactly matches independently translated AL645882.2 and MIBiG CDSs. The
+    submission label is flavin-binding monooxygenase; reaction specificity requires
+    the separate primary assays.
+  snapshot_sha256: 654b3f071cf9c321468e13c3216b07859f4d5f158678c39e0e518f1706ada023
+- evidence_id: PP025-GENBANK
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=AL645882.2&rettype=gbwithparts&retmode=text&seq_start=8279000&seq_stop=8288500
+  locator: /private/tmp/npm-review-work/025/proteins-precursors/native-AL645882.2-8279000-8288500.gb
+  accessed_at: '2026-10-21T08:59:35.176186Z'
+  support: supports
+  summary: The official AL645882.2 bounded window 8279000..8288500 has 9501 bases
+    and source strain A3(2), taxon 100226. SCO7467 is 8279637..8280764 on the plus
+    strand and SCO7468 is complement(8280867..8282165). Independent bacterial-code
+    translation yields exactly CAC36059.1/Q9ADJ2 and CAD55403.1/Q8CJJ9, respectively.
+    Both complete CDSs lie within the stored owner locus 8279373..8288044.
+  snapshot_sha256: fee0a9d33feeb53b25cd9fb98a675af27cbd570f693b66a34b3f083073ff870a
+- evidence_id: PP025-MIBIG-GBK
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0002128.3/BGC0002128.gbk
+  locator: /private/tmp/npm-review-work/025/proteins-precursors/mibig-BGC0002128-v3.gbk
+  accessed_at: '2026-10-21T08:59:35.190549Z'
+  support: supports
+  summary: The version 3 downloadable GenBank file is a wider 21128-base antiSMASH
+    region with Orig. start 8269636 and Orig. end 8290764. Local CDSs 10001..11128
+    and complement(11231..12529) map to the same absolute AL645882.2 coordinates,
+    nucleotide sequences, proteins and UniProt accessions. This wider artifact is
+    not evidence that the stored 8672-base inclusive locus boundary is wrong.
+  snapshot_sha256: c87534fd0b82697e2fb7bcbe23f27c76f9044405f57a0c4749bc5478157dc88e
+- evidence_id: PP025-TRP
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/16828/
+  locator: /private/tmp/npm-review-work/025/proteins-precursors/chebi-16828.json
+  accessed_at: '2026-10-21T08:59:35.176089Z'
+  support: supports
+  summary: Three-star CHEBI:16828 is L-tryptophan, C11H12N2O2, with full key QIVBCDIJIAJPQS-VIFPVBQESA-N.
+    The grounded representation is neutral NH2/COOH with S configuration, distinct
+    from the separately linked zwitterion CHEBI:57912. The graph does not specify
+    an assay-pH microstate.
+  snapshot_sha256: eb4325e5454737b389b5c29eb32c8c675786ec4042ef61aea9cde988baaec4a9
+- evidence_id: PP025-TRP-MOL
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/16828/
+  locator: /private/tmp/npm-review-work/025/proteins-precursors/chebi-16828.mol
+  accessed_at: '2026-10-21T08:59:35.705888Z'
+  support: supports
+  summary: The official L-tryptophan molfile independently regenerates the full ChEBI
+    key, neutral formula and S stereocentre by RDKit. The molfile and InChI provide
+    the structure verification; the public JSON SMILES omits the indole [nH] notation
+    and is not used as the parsing input.
+  snapshot_sha256: a7c29d96ee48fd4a63ad7a5f2e6b26f3ffbef0a500cbd7568c96aae1b194417e
+- evidence_id: PP025-DMAPP
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/16057/
+  locator: /private/tmp/npm-review-work/025/proteins-precursors/chebi-16057.json
+  accessed_at: '2026-10-21T08:59:35.658185Z'
+  support: supports
+  summary: Three-star CHEBI:16057 is prenyl diphosphate, with explicit dimethylallyl
+    diphosphate and DMAPP synonyms, formula C5H12O7P2 and key CBIDRCWHNCKSTO-UHFFFAOYSA-N.
+    It is the neutral acid representation and links to its trianion CHEBI:57623; the
+    stored label is an exact synonym, not an isopentenyl-diphosphate positional-isomer
+    substitution.
+  snapshot_sha256: 7f1848996f7f347389ca5da507071c2d6b0e0afd539b66b4710435281bf305a6
+- evidence_id: PP025-DMAPP-MOL
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/16057/
+  locator: /private/tmp/npm-review-work/025/proteins-precursors/chebi-16057.mol
+  accessed_at: '2026-10-21T08:59:35.867104Z'
+  support: supports
+  summary: The official DMAPP molfile independently regenerates CBIDRCWHNCKSTO-UHFFFAOYSA-N,
+    C5H12O7P2 and total formal charge zero. No physiological protonation state or
+    reaction charge balance is inferred from this abstraction.
+  snapshot_sha256: e0e6b7b77078e6e508a656cde90164a829ec568859e33bf28dd5db3ad37d2188
+- evidence_id: PP025-NATIVE-TAXON
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=100226&retmode=xml
+  locator: /private/tmp/npm-review-work/025/proteins-precursors/NCBITaxon-100226.xml
+  accessed_at: '2026-10-21T08:59:35.648421Z'
+  support: supports
+  summary: NCBI taxon 100226 is the strain-level Streptomyces coelicolor A3(2), with
+    parent species 1902. This supports native sequence provenance and the stored donor
+    taxon, not detection of the final product in the native donor.
+  snapshot_sha256: e812291698a51a1a856e65b17390b9dc3cc02a2ab0a3aa0eea231dd04ebb287e
+- evidence_id: PP025-SPECIES
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1886,1902,1916&retmode=xml
+  locator: /private/tmp/npm-review-work/025/proteins-precursors/taxonomy-occurrence.xml
+  accessed_at: '2026-10-21T09:00:32.049078Z'
+  support: context_only
+  summary: The current NCBI records keep 1886 S. albidoflavus and 1902 S. coelicolor
+    as separate species under the S. albidoflavus group 1477431; 1916 is S. lividans
+    under Streptomyces. Direct synonyms were inspected. Taxonomic relatedness and
+    historical type material do not establish that the experimental A3(2), TK23, TK24
+    or 1326 cultures are interchangeable.
+  snapshot_sha256: 25def2676fa1f8ab08f0f954ce3dc9cae447cabe09189987e49a95195389805f
+- evidence_id: PP025-WIKIDATA
+  kind: database
+  reference: https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q22286833%7CQ2355919&props=labels%7Cclaims&languages=en&format=json
+  locator: /private/tmp/npm-review-work/025/proteins-precursors/wikidata-occurrence.json
+  accessed_at: '2026-10-21T09:00:32.204818Z'
+  support: context_only
+  summary: Q22286833 currently names S. albidoflavus and maps to NCBI 1886; Q2355919
+    names S. coelicolor and maps to 1902. The stored LOTUS identifiers are internally
+    consistent with these current entities. This metadata does not verify the occurrence
+    experiments or transfer a TK23 result to either species.
+  snapshot_sha256: 3c1720e5c56b00870e5175ed0d929b55cf38899dfd93a7ef71c8012c16c8d855
+- evidence_id: PP025-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/025/proteins-precursors/comparison.json
+  locator: /private/tmp/npm-review-work/025/check-proteins-precursors.py
+  accessed_at: '2026-10-21T09:04:02.802860Z'
+  support: supports
+  snapshot_sha256: 8c4f7f002a6cf9023465f26b6a5089d906864518bd209abb26381e56186ccfb4
+  summary: The executed independent comparison translated both complete CDSs using
+    bacterial table 11, checked terminal stops and exact amino-acid and DNA equality
+    across both GenBank artifacts and UniProt, mapped absolute coordinates, confirmed
+    both CDSs lie within the owner locus, regenerated both official chemical molfile
+    keys and charges, and checked taxonomy/Wikidata identifiers. All assertions passed.
+assessments:
+- assessment_id: A025-IDENTITY
+  area: identity
+  topic: Exact C5-prenyl nitrile, stereo and origin
+  outcome: supported
+  summary: Original compound 2, NPA032817, source SMILES and independent owner chemistry
+    agree. No stereocentre or discriminable alkene geometry is omitted. Biological
+    formation in the engineered host supports NATURAL_PRODUCT; genetic overexpression
+    does not turn this into a semisynthetic compound.
+  target_ids:
+  - naturalproductmech:mibig-380600c810
+  evidence_ids:
+  - E025-OWNER
+  - E025-IDENTITY
+  - E025-FIG-zbc0181345270002
+  - E025-NPATLAS
+  - E025-CHEMISTRY
+- assessment_id: A025-GROUNDING
+  area: grounding
+  topic: Content hash and current exact ChEBI candidate
+  outcome: supported
+  summary: The exact source-concept hash reproduces the current minted identifier.
+    A current exact-key ChEBI candidate exists, but it is two-star and therefore does
+    not invalidate the record statement that no eligible three-star entry is selected.
+  target_ids:
+  - naturalproductmech:mibig-380600c810
+  evidence_ids:
+  - E025-RAW
+  - E025-CHEBI
+  - E025-CHEMISTRY
+- assessment_id: A025-STEPS
+  area: evidence
+  topic: Both structured enzyme steps
+  outcome: supported
+  summary: Step 1 is L-Trp plus DMAPP→5-DMAT by recombinant SCO7467; step 2 is 5-DMAT→syn/anti
+    5-DMAIAOx by recombinant SCO7468. The ungrounded intermediates are not falsely
+    assigned stable chemical identifiers. The assays use His8 constructs, not a claim
+    that untagged native proteins were directly purified from coelicolor.
+  target_ids:
+  - naturalproductmech:mibig-380600c810
+  evidence_ids:
+  - E025-ASSAY67
+  - E025-ASSAY68
+  - E025-FIG-zbc0181345270004
+  - E025-FIG-zbc0181345270005
+  - E025-FIG-zbc018134527t001
+- assessment_id: A025-GRAPH
+  area: evidence
+  topic: Seven nodes and six edges, including proposed terminal dehydration
+  outcome: supported
+  summary: The first three edges describe SCO7467 substrate/donor/product roles; the
+    next two describe SCO7468 substrate/product roles. The final edge explicitly remains
+    proposed and unassigned. No enzyme node is made to catalyze 7→2. Graph description
+    identifies the donor-gene system and says partial; it is not evidence of a fully
+    established native-cell pathway. All snippet texts match the source apart from
+    chemical-type typography; author attribution is a separate provenance concern.
+  target_ids:
+  - naturalproductmech:mibig-380600c810
+  evidence_ids:
+  - E025-AUTHOR
+  - E025-ASSAY67
+  - E025-ASSAY68
+  - E025-TERMINAL
+  - E025-FIG-zbc0181345270007
+- assessment_id: A025-PRODUCER
+  area: evidence
+  topic: Gene donor native assertion versus tested culture host
+  outcome: supported
+  summary: The paper explicitly attributes biosynthetic ability to coelicolor and
+    lividans, but its exact-product culture isolation is TK23. SOURCE_ASSERTION for
+    native coelicolor is appropriately bounded and is not upgraded by heterologous
+    expression or iModulon context. It does not assert incapacity or experimentally
+    demonstrated absence under native conditions.
+  target_ids:
+  - naturalproductmech:mibig-380600c810
+  evidence_ids:
+  - E025-HOST
+  - E025-NATIVE
+  - E025-MIBIG
+  - E025-FIG-zbc018134527t001
+  - PP025-NATIVE-TAXON
+- assessment_id: A025-LOCUS
+  area: evidence
+  topic: Heterologous expression and exact native locus metadata
+  outcome: supported
+  summary: The method and grade accurately describe donor gene contribution demonstrated
+    after introduction into TK23. The host already had a nearly identical endogenous
+    cluster and trace product; the result must not be restated as two-protein minimal
+    sufficiency, a blank-host reconstruction or necessity of every base in the deposited
+    range. Native sequence/coordinate verification is supplied by the independent
+    protein audit.
+  target_ids:
+  - naturalproductmech:mibig-380600c810
+  evidence_ids:
+  - E025-MIBIG
+  - E025-HOST
+  - E025-NATIVE
+  - E025-TERMINAL
+  - PP025-GENBANK
+  - PP025-MIBIG-GBK
+  - PP025-COMPARISON
+- assessment_id: A025-OCCURRENCE
+  area: evidence
+  topic: Two imported occurrence taxa versus the primary culture experiment
+  outcome: concern
+  summary: The exact compound was isolated from engineered S. lividans TK23. The paper
+    does not document culture isolation of it from S. albidoflavus or S. coelicolor.
+    A coelicolor gene-donor/ability assertion is not a direct found-in-organism observation,
+    and albidoflavus is not an experimental species in the full inspected study. Retain
+    native producer source provenance separately while correcting these exact occurrence
+    triples.
+  target_ids:
+  - naturalproductmech:mibig-380600c810
+  evidence_ids:
+  - E025-LOTUS-ROWS
+  - E025-HOST
+  - E025-IDENTITY
+  - E025-FIG-zbc0181345270002
+  - E025-FIG-zbc018134527t001
+  - E025-NATIVE
+  - PP025-SPECIES
+  - PP025-WIKIDATA
+- assessment_id: A025-AUTHOR
+  area: provenance
+  topic: Repeated author attribution in correct-primary evidence notes
+  outcome: concern
+  summary: The DOI and quoted scientific claims are correct, but eight curator-owned
+    notes call this Ozaki/Nishiyama/Kuzuyama paper Izumikawa et al. This is one repeated
+    provenance defect, not eight independent scientific findings.
+  target_ids:
+  - naturalproductmech:mibig-380600c810
+  evidence_ids:
+  - E025-OWNER
+  - E025-AUTHOR
+- assessment_id: A025-CONTEXT
+  area: completeness
+  topic: Computed filing and optional phenotype/dataset context
+  outcome: supported
+  summary: Computed classification is faithfully reproduced. No experimental plant
+    phenotype, receptor or molecular target was established for compound 2 in this
+    source, and none is invented in the owner. The covered coelicolor iModulon dataset
+    supplies exact gene annotations but no retrieved component evidence warranting
+    a biological-grade change.
+  target_ids:
+  - naturalproductmech:mibig-380600c810
+  evidence_ids:
+  - E025-CLASSIFICATION
+  - E025-ECOLOGY
+  - E025-IMODULON-SEARCH
+  - E025-IMODULON-GENE67
+  - E025-IMODULON-GENE68
+- assessment_id: A025-HISTORY
+  area: provenance
+  topic: Source concept and manual mechanism history
+  outcome: supported
+  summary: The two SEEDED entries and later RECORD_CURATED event accurately distinguish
+    generated source assertions from manually added pathway/graph fields. SEEDED status
+    does not itself claim this scientific review was completed. The history requires
+    no rewrite; any correction should append its own bounded curation event.
+  target_ids:
+  - naturalproductmech:mibig-380600c810
+  evidence_ids:
+  - E025-OWNER
+  - E025-RAW
+  - E025-TRANSFORM
+- assessment_id: PP025-A-PROTEINS
+  area: identity
+  topic: Native enzyme examples and exact sequence provenance
+  outcome: supported
+  summary: Q9ADJ2 and Q8CJJ9 are exact native A3(2) protein examples for SCO7467 and
+    SCO7468. Their current unreviewed status is accurately qualified. The native sequences
+    ground the examples; the separate primary article must support catalytic assignments
+    and the N-terminal His8 assay constructs.
+  target_ids:
+  - naturalproductmech:mibig-380600c810
+  evidence_ids:
+  - PP025-Q9ADJ2
+  - PP025-Q8CJJ9
+  - PP025-GENBANK
+  - PP025-MIBIG-GBK
+  - PP025-COMPARISON
+- assessment_id: PP025-A-PRECURSORS
+  area: identity
+  topic: Grounded precursor chemistry and graph abstraction
+  outcome: supported
+  summary: CHEBI:16828 and CHEBI:16057 identify the intended L-tryptophan and dimethylallyl
+    diphosphate structures. Neutral database forms do not assert physiological charge
+    states. The two intermediates are explicitly ungrounded and the final node uses
+    the owner identifier; no false external grounding is introduced. Proposed dehydration
+    remains explicitly proposed in the read owner, with reaction evidence independently
+    reviewed by the scientific reviewer.
+  target_ids:
+  - naturalproductmech:mibig-380600c810
+  evidence_ids:
+  - PP025-TRP
+  - PP025-TRP-MOL
+  - PP025-DMAPP
+  - PP025-DMAPP-MOL
+  - PP025-COMPARISON
+- assessment_id: PP025-A-TAXON-BOUNDARY
+  area: provenance
+  topic: Species, native donor and experimental host boundaries
+  outcome: supported
+  summary: Current metadata distinguishes native donor A3(2)/100226, its parent S.
+    coelicolor/1902, S. albidoflavus/1886 and S. lividans/1916. The LOTUS Wikidata
+    links match their labels but cannot establish an occurrence experiment. No nomenclatural
+    or strain substitution is justified from these metadata alone.
+  target_ids:
+  - naturalproductmech:mibig-380600c810
+  evidence_ids:
+  - PP025-NATIVE-TAXON
+  - PP025-SPECIES
+  - PP025-WIKIDATA
+findings:
+- finding_id: F025-OCCURRENCE-HOST
+  issue_key: 5-dmaian-jbc2013-lotus-occurrence-host-scope
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The two LOTUS occurrences do not identify the experimentally observed culture
+    host
+  description: The cited full study isolates exact 5-DMAIAN from S. lividans TK23
+    expressing coelicolor SCO7467/7468, with trace product in empty-vector TK23. It
+    does not report exact-product isolation from the listed albidoflavus 1886 or coelicolor
+    1902 cultures. Coelicolor is the donor organism, and the authors infer its biosynthetic
+    ability; that supports retaining a source-level producer assertion but not substituting
+    it for a species occurrence experiment. The albidoflavus name is not an experimental
+    organism in the inspected full study. Correct only these exact source triples,
+    without asserting that either species can never produce the compound.
+  target_ids:
+  - naturalproductmech:mibig-380600c810
+  field_paths:
+  - occurrences[0]
+  - occurrences[1]
+  evidence_ids:
+  - E025-LOTUS-ROWS
+  - E025-HOST
+  - E025-IDENTITY
+  - E025-FIG-zbc0181345270002
+  - E025-FIG-zbc018134527t001
+  - E025-NATIVE
+  - E025-TRANSFORM
+  - PP025-SPECIES
+  - PP025-WIKIDATA
+  rule_id: 'review-yaml-record Evidence Rules: distinguish gene donor, expression
+    host, producer assertion and exact culture occurrence'
+  native_severity: 'major: biological occurrence attributed to species not used for
+    exact product culture isolation'
+  normalization_reason: Both source triples reflect the same cited-study host/provenance
+    confusion and are corrected as one claim-scope issue; no native producer downgrade
+    is implied.
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/lotus_occurrence_exclusions.tsv
+    role: SHA-pinned exact occurrence qualification
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: unaltered original source assertions
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/lotus_exclusions.py
+    role: implemented unique-tuple and complete-row guard
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: emission and provenance retention
+- finding_id: F025-AUTHOR
+  issue_key: 5-dmaian-jbc2013-author-attribution
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Eight evidence notes name the wrong authors
+  description: The correct DOI is authored by Ozaki, Nishiyama and Kuzuyama, but eight
+    mechanism notes attribute the work to Izumikawa et al. The reaction claims and
+    snippets are otherwise supported. Correct the repeated attribution without altering
+    the scientific scope or historical audit entries.
+  target_ids:
+  - naturalproductmech:mibig-380600c810
+  field_paths:
+  - biosynthetic_pathway[0].evidence[0].notes
+  - biosynthetic_pathway[1].evidence[0].notes
+  - causal_graphs[0].edges[0].evidence[0].notes
+  - causal_graphs[0].edges[1].evidence[0].notes
+  - causal_graphs[0].edges[2].evidence[0].notes
+  - causal_graphs[0].edges[3].evidence[0].notes
+  - causal_graphs[0].edges[4].evidence[0].notes
+  - causal_graphs[0].edges[5].notes
+  evidence_ids:
+  - E025-OWNER
+  - E025-AUTHOR
+  - E025-TRANSFORM
+  rule_id: 'review-yaml-record Evidence Rules: accurate primary-source attribution'
+  native_severity: 'minor: wrong author attribution in otherwise correct source evidence'
+  normalization_reason: One copied attribution defect across eight fields is recorded
+    once.
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/alkaloids/5-dimethylallylindole-3-acetonitrile.yaml
+    role: curator-owned pathway and inline graph evidence notes
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: preservation of curator-owned mechanism fields during regeneration
+actions:
+- action_id: ACT025-OCCURRENCE-HOST
+  description: 'Add two reviewed decisions to the implemented curation/lotus_occurrence_exclusions.tsv
+    for exact key OTLRZZMUVKJCDO-UHFFFAOYSA-N and literal DOI 10.1074/JBC.M112.436451:
+    NCBITaxon:1886 with expected_source_row_sha256 e16ecd7a81f8869f29b4b750a4e4f5f10d4a9e8d4cbb9bf20a00f23d4bbceaee,
+    and NCBITaxon:1902 with b5158b98b1b310aec9a05ca614d49cae2029ded5b75d28a603ad06df47bbd5cf.
+    Cite PMID:23430264 or DOI:10.1074/jbc.M112.436451 and state the positive TK23/pSCO103
+    culture-isolation context and the distinct coelicolor donor/ability assertion.
+    Preserve both raw rows and let the existing loader emit their auditable exclusion
+    discussions. Do not remap either raw taxon to TK23, TK24 or 1326, and do not lower
+    the MIBiG source-asserted coelicolor producer or heterologous locus grade. Record
+    the supported TK23 culture context in the exclusion rationale and mechanism notes;
+    if a positive structured primary-culture occurrence is desired, implement a guarded
+    maintained path first rather than inventing an existing source enum/loader.'
+  finding_ids:
+  - F025-OCCURRENCE-HOST
+  target_ids:
+  - naturalproductmech:mibig-380600c810
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/lotus_occurrence_exclusions.tsv
+    role: SHA-pinned exact occurrence qualification
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: unaltered original source assertions
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/lotus_exclusions.py
+    role: implemented unique-tuple and complete-row guard
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: emission and provenance retention
+  generator: Existing SHA-pinned LOTUS exclusion loader and seed regeneration; no
+    raw-row mutation
+  acceptance_checks:
+  - Both exact tuples resolve uniquely and any change to any raw-row field fails the
+    stored SHA guard.
+  - The regenerated occurrences omit only the two unsupported species/citation triples,
+    and source discussions retain their original assertions plus the directly observed
+    TK23/pSCO103 context.
+  - Coelicolor SOURCE_ASSERTION, BGC0002128 heterologous method/grade, exact chemical
+    identity and two experimentally supported enzyme steps are preserved.
+  - No universal species incapacity, complete two-enzyme nitrile reconstitution, or
+    TK24/1326 strain substitution is introduced.
+  - Run a targeted seed canary and inspect complete occurrence/discussion output,
+    then strict validation and required reproduction/QC.
+- action_id: ACT025-AUTHOR
+  description: Through the validated curation writer, in the eight listed curator-owned
+    fields replace the erroneous Izumikawa attribution with Ozaki et al. (or remove
+    the author name while retaining the exact DOI and scientific statement). Keep
+    every snippet, demonstrated enzyme step and explicitly proposed terminal conversion
+    intact. Append a curation event; do not rewrite prior history. Verify that the
+    existing carried-field seeding logic preserves these corrections.
+  finding_ids:
+  - F025-AUTHOR
+  target_ids:
+  - naturalproductmech:mibig-380600c810
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/alkaloids/5-dimethylallylindole-3-acetonitrile.yaml
+    role: curator-owned pathway and inline graph evidence notes
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: preservation of curator-owned mechanism fields during regeneration
+  generator: Curator-owned owner YAML fields preserved by scripts/seed_from_sources.py;
+    regeneration canary
+  acceptance_checks:
+  - All eight specified notes accurately attribute DOI 10.1074/jbc.M112.436451 to
+    Ozaki, Nishiyama and Kuzuyama.
+  - No graph node, predicate, source-grade or unknown-terminal-enzyme boundary changes
+    as a side effect.
+  - Regeneration preserves the corrected pathway/graph notes and the append-only curation
+    event; strict validation and required checks pass.
+limitations:
+- The full original article body and all figures/table were inspected in source preparation
+  and target-specific passages/pixels re-inspected here; original access times are
+  retained. The inaccessible JBC PDF route does not prevent full-body inspection.
+- Native coelicolor production is an author/source assertion inferred from donor genes
+  and heterologous/enzyme results; no coelicolor native knockout or direct native
+  culture isolation is asserted. This is not evidence of universal absence.
+- The exact terminal aldoxime-to-nitrile catalyst remains unknown. The paper supplies
+  a proposed host-dependent dehydration, not purified terminal conversion or a minimal
+  two-protein system.
+- The native protein references are checked separately from the N-terminal His8 assay
+  constructs; no exact full vector/linker reconstruction is implied.
+- iModulon searches concern one source dataset and selected keywords, not complete
+  component memberships or experimental metabolite/chemistry validation.
+- The current exact-key ChEBI candidate is two-star and not substituted; the bounded
+  authority search does not claim no unpublished or differently indexed submission
+  exists.
+- This packet independently verifies the two requested native protein sequences and
+  precursor groundings. Enzyme specificity, actual culture observations and proposed
+  terminal conversion require the separate primary-paper assessment.
+- Native UniProt proteins are not the complete recombinant N-terminal His8 constructs.
+  Vector-derived residues and cloning junctions were not reconstructed in this packet.
+- The downloaded MIBiG GenBank artifact is wider than the stored BGC bounds. CDS mapping
+  uses its explicit original offset; artifact length is not treated as a corrected
+  experimental cluster boundary.
+- Current species and Wikidata mappings do not equate A3(2), TK23, TK24 and 1326 or
+  prove an S. albidoflavus occurrence. Historical naming alone does not replace an
+  exact strain bridge.
+- No exact stable identifiers were selected for the two ungrounded intermediates during
+  this bounded task. Their explicit ungrounded state is preserved; this is not a universal
+  claim that no such identifier exists.
+- The configured full identifier-label gate accepts 499 warning-level taxon-label
+  mismatches, 35 explicit exceptions and 4,722 no-adapter pairs across the corpus;
+  its exit 0 is not independent verification of every identifier or of this record's
+  scientific claims.
+- The quality suite skips the optional sibling AntibioticMech checkout comparison
+  because the isolated clone has no sibling checkout, and skips three command-frontmatter
+  cases because their parameter sets are empty. Pinned-hash and network governance
+  checks still ran.
+- Shared native gates assess deterministic corpus consistency and configured invariants.
+  They do not establish biological production, stereochemical specificity, evidence
+  adequacy or literature-level claim support.
+- Baseline reuse concerns the identical committed inputs and original executed checks;
+  it does not claim a fresh network/governance or ontology-cache refresh.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+tags:
+- path-order-campaign
+- batch-003
+- occurrence-host-scope
+- primary-attribution
+- native-protein-verified
