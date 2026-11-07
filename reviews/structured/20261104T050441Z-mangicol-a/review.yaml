@@ -1,0 +1,1533 @@
+schema_version: 1.0.0
+review_id: 20261104T050441Z-mangicol-a
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'Local evidence review: mangicol A'
+started_at: '2026-11-04T04:24:34.165370Z'
+finished_at: '2026-11-04T05:04:41.531392Z'
+reviewer:
+  identity: Codex root with native_checks, bgc_science and review_support peer agents
+  kind: agent
+  independence: independent
+  independence_basis: This review team inspected existing owner and retained source
+    bytes without editing them; scientific fragments were cross-checked separately
+    from their author. Local validation is not treated as scientific proof.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: Mangicol A retains exact local ChEBI/MIBiG grounding, matching polyhydroxylated
+  C25 forms and eleven specified stereocentres. Fusarium equiseti producer provenance,
+  Fusarium heterosporum occurrence/definition claims and the anti-inflammatory definition
+  statement remain separately attributed. No source correction is established by the
+  current local evidence.
+source:
+  git_revision: ce6a5498df5be51116bd5e0c119023ee62bb5464
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: AGENTS.md
+    sha256: 69e4037f8dc97d4b00bb7bb83b41ceca025f6ef578d5c0bf8086f3400becde0b
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/terpenoids/mangicol-a.yaml
+    sha256: a94c359022be4d6d0c29342047919e4e51fb0efdbaa1690e215d068d7577df38
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete NaturalProductRecord, including all present scientific
+    claims, history and declared mechanisms; external verification remains unavailable.
+  selection: Campaign path order 2349; one of the next ten uncovered paths selected
+    from the 3116-record corpus. Membership uses the canonical validated catalogue
+    plus retained committed campaign bundles.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CHEBI:156320
+targets:
+- target_id: CHEBI:156320
+  path: data/natural_products/terpenoids/mangicol-a.yaml
+  label: mangicol A
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained harmonization generator; seeded fields are corrected through
+      maintained inputs and validated regeneration.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Retained MIBiG structure, producer and compound-specific locus assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/npclassifier.tsv
+    role: Pinned computed classification and filing assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Maintained extraction of MIBiG compound names, structures, stereochemistry
+      flags and source provenance.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: Retained ChEBI identifiers, definitions and exact chemical forms.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Retained cited occurrence assertions, distinct from demonstrated production.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_origins.tsv
+    role: Retained cited occurrence assertions, distinct from demonstrated production.
+  ownership_note: This review proposes no record edit. Source corrections belong in
+    maintained inventories, implemented curation tables, extractors or the seeder;
+    generated pages are not owners.
+checks:
+- check_id: root-native-strict_ten
+  name: strict_ten
+  status: passed
+  required: true
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  target_ids:
+  - CHEBI:156320
+  command: just validate-strict data/natural_products/terpenoids/jerangolid-d.yaml
+    data/natural_products/terpenoids/juniperol-longiborneol.yaml data/natural_products/terpenoids/kainic-acid-lactone.yaml
+    data/natural_products/terpenoids/koraiol.yaml data/natural_products/terpenoids/ks-505a.yaml
+    data/natural_products/terpenoids/lankacidin-c.yaml data/natural_products/terpenoids/lupeol.yaml
+    data/natural_products/terpenoids/lycosantalonol.yaml data/natural_products/terpenoids/mangicol-a.yaml
+    data/natural_products/terpenoids/marinoterpin-a.yaml --workers 1 --out /private/tmp/npm-native-checks/batch-235/validate-strict-selected10-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_ten
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-strict_full
+  name: strict_full
+  status: passed
+  required: true
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  target_ids:
+  - CHEBI:156320
+  command: just validate-all --workers 1 --out /private/tmp/npm-native-checks/batch-235/validate-all-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_full
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-lockfile
+  name: lockfile
+  status: passed
+  required: true
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  target_ids:
+  - CHEBI:156320
+  command: just verify-corpus --summary
+  exit_code: 0
+  evidence_ids:
+  - root-native-lockfile
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-reproduction
+  name: reproduction
+  status: passed
+  required: true
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  target_ids:
+  - CHEBI:156320
+  command: just verify-reproduction
+  exit_code: 0
+  evidence_ids:
+  - root-native-reproduction
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-queue
+  name: queue
+  status: passed
+  required: true
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  target_ids:
+  - CHEBI:156320
+  command: just review-queue --tsv /private/tmp/npm-native-checks/batch-235/review-queue-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-queue
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-full-qc
+  name: Full just qc
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:156320
+  summary: 'Not run under the external-request prohibition: the complete recipe includes
+    upstream vendored synchronization. The five executed local checks are recorded
+    separately.'
+- check_id: root-ontology-authorities
+  name: Complete OAK identifier/label authority check
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:156320
+  summary: Complete offline ontology authority coverage was not established for this
+    run; no ontology retrieval or remote resolution was attempted. Retained taxonomy
+    evidence has only its explicitly stated local scope.
+- check_id: root-primary-and-live-sources
+  name: Primary literature and current structured database/identifier verification
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:156320
+  summary: All external requests are prohibited by the user. Fresh database and identifier
+    verification and complete primary-literature coverage are unavailable. Any retained
+    original literature actually inspected is recorded separately with its historical
+    scope.
+evidence:
+- evidence_id: support-2349-owner
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/terpenoids/mangicol-a.yaml
+  locator: Whole current owner plaintext and complete curation_history
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: Complete owner and all 3 history events are covered by current exact whole-reading
+    attribution. Native status remains SEEDED.
+  snapshot_sha256: a94c359022be4d6d0c29342047919e4e51fb0efdbaa1690e215d068d7577df38
+- evidence_id: support-2349-capture
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch235/owner-capture-DATA-001.json
+  locator: /records/8
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: 'Complete original captured owner and exact mechanism/component presence,
+    distinct from maintained resolution. Exact copied saved values: {"/records/8":
+    {"component_captures": [], "mechanism_capture_scope": "raw_owner_and_declared_components_only_not_maintained_resolution",
+    "order": 2349, "owner_document": {"bgc_class": ["TERPENE"], "biosynthesis_origin":
+    "NATURAL_PRODUCT", "biosynthetic_gene_clusters": [{"accession": "mibig:BGC0001659",
+    "bgc_class": ["TERPENE"], "entry_status": "active", "entry_version": "3", "evidence":
+    [{"evidence_type": "DATABASE_ASSERTION", "notes": "MIBiG BGC0001659 entry version
+    3; citation taken from the entry level", "reference": "DOI:10.1055/s-0035-1556229"}],
+    "genome_accession": "genbank:KU376508.1", "link_evidence_basis": "CLUSTER_UNSTATED",
+    "locus_from": 90, "locus_to": 16646, "organism_label": "Fusarium equiseti", "organism_taxon_id":
+    "NCBITaxon:61235"}], "chemical_structure": {"smiles": "[H][C@@]12CC[C@H](C)[C@@]11[C@H](O)C[C@H](C)C1=C[C@@]1(C)CC[C@](C)(C[C@H](O)[C@H](O)[C@@](C)(O)CO)[C@@]21[H]",
+    "standard_inchi": "InChI=1S/C25H42O5/c1-14-10-19(28)25-15(2)6-7-16(25)20-22(3,11-17(14)25)8-9-23(20,4)12-18(27)21(29)24(5,30)13-26/h11,14-16,18-21,26-30H,6-10,12-13H2,1-5H3/t14-,15-,16-,18-,19+,20-,21-,22+,23+,24-,25+/m0/s1",
+    "standard_inchi_key": "KJHICOOTWQEHPN-DVMFOLSNSA-N", "stereo_complete": true,
+    "structure_source": "MIBIG", "structure_source_id": "mibig:BGC0001659"}, "curation_history":
+    [{"action": "SEEDED_FROM_SOURCES", "changes": "Seeded from the committed inventories
+    in data/raw/.", "curator": "seed_from_sources", "timestamp": "2026-09-10T05:54:08Z"},
+    {"action": "SEEDED_FROM_SOURCES", "changes": "Seeded from the committed inventories
+    in data/raw/.", "curator": "seed_from_sources", "timestamp": "2026-09-25T03:02:32Z"},
+    {"action": "SEEDED_FROM_SOURCES", "changes": "Seeded from the committed inventories
+    and curation tables.", "curator": "seed_from_sources", "timestamp": "2026-10-13T10:43:50Z"}],
+    "curation_status": "SEEDED", "definition": "A sesterterpenoid natural product
+    found in the fungus Fusarium heterosporum. It exhibits significant antiinflammatory
+    activity in the PMA-induced mouse ear edema model.", "definition_source": "CHEBI:156320",
+    "grounding_status": "EXACT", "identifier": "CHEBI:156320", "label": "mangicol
+    A", "np_classification": {"class_results": ["Mangicol-type sesterterpenoids"],
+    "is_glycoside": false, "pathway_results": ["Terpenoids"], "superclass_results":
+    ["Sesterterpenoids"], "tool": "NPClassifier", "tool_version": "npclassifier.gnps2.org@2026-09-07"},
+    "np_pathway": "TERPENOIDS", "occurrence_taxon_groups": ["FUNGAL"], "occurrences":
+    [{"evidence": [{"evidence_type": "DATABASE_ASSERTION", "notes": "LOTUS structure-organism-reference
+    triple. LOTUS reports that the compound was found in the organism; it does not
+    assert that the organism produces it.", "reference": "DOI:10.1021/JO000081H"}],
+    "notes": "Wikidata organism http://www.wikidata.org/entity/Q103806210", "source":
+    "LOTUS", "taxon_id": "NCBITaxon:42747", "taxon_label": "Fusarium heterosporum",
+    "taxon_source": "NCBITaxon"}, {"evidence": [{"evidence_type": "DATABASE_ASSERTION",
+    "notes": "ChEBI compound origin for CHEBI:156320", "reference": "PMID:10956462"}],
+    "source": "CHEBI", "taxon_id": "NCBITaxon:42747", "taxon_label": "Fusarium heterosporum",
+    "taxon_source": "NCBITaxon"}, {"detection_context": "CNC-477", "evidence": [{"evidence_type":
+    "DATABASE_ASSERTION", "notes": "ChEBI compound origin for CHEBI:156320", "reference":
+    "10.1055/s-0035-1556229"}], "notes": "This taxon is also recorded as a producer.
+    Production and occurrence are distinct claims; their citations may refer to the
+    same publication. Publication independence has not been established.", "source":
+    "CHEBI", "taxon_id": "NCBITaxon:61235", "taxon_label": "Fusarium equiseti", "taxon_source":
+    "NCBITaxon"}, {"evidence": [{"evidence_type": "DATABASE_ASSERTION", "notes": "LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.", "reference":
+    "DOI:10.1055/S-0035-1556229"}], "notes": "Wikidata organism http://www.wikidata.org/entity/Q103817240
+    This taxon is also recorded as a producer. Production and occurrence are distinct
+    claims; their citations may refer to the same publication. Publication independence
+    has not been established.", "source": "LOTUS", "taxon_id": "NCBITaxon:61235",
+    "taxon_label": "Fusarium equiseti", "taxon_source": "NCBITaxon"}], "producer_organisms":
+    [{"biosynthetic_gene_cluster": "mibig:BGC0001659", "evidence": [{"evidence_type":
+    "DATABASE_ASSERTION", "notes": "MIBiG BGC0001659 entry version 3; citation taken
+    from the entry level", "reference": "DOI:10.1055/s-0035-1556229"}], "evidence_basis":
+    "SOURCE_ASSERTION", "notes": "Locus evidence: none stated. That evidence grades
+    the LOCUS as CLUSTER_UNSTATED; this field grades the taxon claim, which is a different
+    question.", "source": "MIBIG", "source_version": "3", "taxon_id": "NCBITaxon:61235",
+    "taxon_label": "Fusarium equiseti"}], "producer_taxon_groups": ["FUNGAL"], "source_concepts":
+    [{"minted_identifier": "naturalproductmech:mibig-5aa05be218", "source": "MIBIG",
+    "source_id": "BGC0001659", "source_label": "mangicol A", "source_version": "3"},
+    {"minted_identifier": "naturalproductmech:chebi-b47ad3efaf", "source": "CHEBI",
+    "source_id": "CHEBI:156320", "source_label": "mangicol A", "source_version": "3-star"}],
+    "xrefs": ["npatlas:NPA016972"]}, "owner_pin": {"bytes": 4859, "path": "/private/tmp/npm-record-reviews-20261021/data/natural_products/terpenoids/mangicol-a.yaml",
+    "sha256": "a94c359022be4d6d0c29342047919e4e51fb0efdbaa1690e215d068d7577df38"},
+    "path": "data/natural_products/terpenoids/mangicol-a.yaml", "read_finished_at":
+    "2026-11-04T04:24:34.167679Z", "read_started_at": "2026-11-04T04:24:34.165370Z"}}'
+  snapshot_sha256: 737113ad2be45fc9acc4de288533248ae3f569c8c5cb2b430be99880d0d8d705
+- evidence_id: support-2349-grounding-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch235/owner-capture-DATA-001.json
+  locator: /records/8/owner_document/identifier; /records/8/owner_document/label;
+    /records/8/owner_document/chemical_structure; /records/8/owner_document/definition;
+    /records/8/owner_document/definition_source; /records/8/owner_document/grounding_status;
+    /records/8/owner_document/source_concepts; /records/8/owner_document/xrefs
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: 'Exact identity, source definition and grounding fields, including unresolved
+    discussion where present. Exact copied saved values: {"/records/8/owner_document/chemical_structure":
+    {"smiles": "[H][C@@]12CC[C@H](C)[C@@]11[C@H](O)C[C@H](C)C1=C[C@@]1(C)CC[C@](C)(C[C@H](O)[C@H](O)[C@@](C)(O)CO)[C@@]21[H]",
+    "standard_inchi": "InChI=1S/C25H42O5/c1-14-10-19(28)25-15(2)6-7-16(25)20-22(3,11-17(14)25)8-9-23(20,4)12-18(27)21(29)24(5,30)13-26/h11,14-16,18-21,26-30H,6-10,12-13H2,1-5H3/t14-,15-,16-,18-,19+,20-,21-,22+,23+,24-,25+/m0/s1",
+    "standard_inchi_key": "KJHICOOTWQEHPN-DVMFOLSNSA-N", "stereo_complete": true,
+    "structure_source": "MIBIG", "structure_source_id": "mibig:BGC0001659"}, "/records/8/owner_document/definition":
+    "A sesterterpenoid natural product found in the fungus Fusarium heterosporum.
+    It exhibits significant antiinflammatory activity in the PMA-induced mouse ear
+    edema model.", "/records/8/owner_document/definition_source": "CHEBI:156320",
+    "/records/8/owner_document/grounding_status": "EXACT", "/records/8/owner_document/identifier":
+    "CHEBI:156320", "/records/8/owner_document/label": "mangicol A", "/records/8/owner_document/source_concepts":
+    [{"minted_identifier": "naturalproductmech:mibig-5aa05be218", "source": "MIBIG",
+    "source_id": "BGC0001659", "source_label": "mangicol A", "source_version": "3"},
+    {"minted_identifier": "naturalproductmech:chebi-b47ad3efaf", "source": "CHEBI",
+    "source_id": "CHEBI:156320", "source_label": "mangicol A", "source_version": "3-star"}],
+    "/records/8/owner_document/xrefs": ["npatlas:NPA016972"]}'
+  snapshot_sha256: 737113ad2be45fc9acc4de288533248ae3f569c8c5cb2b430be99880d0d8d705
+- evidence_id: support-2349-origin-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch235/owner-capture-DATA-001.json
+  locator: /records/8/owner_document/producer_organisms; /records/8/owner_document/biosynthetic_gene_clusters;
+    /records/8/owner_document/producer_taxon_groups
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: 'Separately graded producer and locus source assertions. Exact copied saved
+    values: {"/records/8/owner_document/biosynthetic_gene_clusters": [{"accession":
+    "mibig:BGC0001659", "bgc_class": ["TERPENE"], "entry_status": "active", "entry_version":
+    "3", "evidence": [{"evidence_type": "DATABASE_ASSERTION", "notes": "MIBiG BGC0001659
+    entry version 3; citation taken from the entry level", "reference": "DOI:10.1055/s-0035-1556229"}],
+    "genome_accession": "genbank:KU376508.1", "link_evidence_basis": "CLUSTER_UNSTATED",
+    "locus_from": 90, "locus_to": 16646, "organism_label": "Fusarium equiseti", "organism_taxon_id":
+    "NCBITaxon:61235"}], "/records/8/owner_document/producer_organisms": [{"biosynthetic_gene_cluster":
+    "mibig:BGC0001659", "evidence": [{"evidence_type": "DATABASE_ASSERTION", "notes":
+    "MIBiG BGC0001659 entry version 3; citation taken from the entry level", "reference":
+    "DOI:10.1055/s-0035-1556229"}], "evidence_basis": "SOURCE_ASSERTION", "notes":
+    "Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.", "source":
+    "MIBIG", "source_version": "3", "taxon_id": "NCBITaxon:61235", "taxon_label":
+    "Fusarium equiseti"}], "/records/8/owner_document/producer_taxon_groups": ["FUNGAL"]}'
+  snapshot_sha256: 737113ad2be45fc9acc4de288533248ae3f569c8c5cb2b430be99880d0d8d705
+- evidence_id: support-2349-occurrence-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch235/owner-capture-DATA-001.json
+  locator: /records/8/owner_document/occurrences; /records/8/owner_document/occurrence_taxon_groups
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: 'Written occurrence placements and retained further-row notes. Exact copied
+    saved values: {"/records/8/owner_document/occurrence_taxon_groups": ["FUNGAL"],
+    "/records/8/owner_document/occurrences": [{"evidence": [{"evidence_type": "DATABASE_ASSERTION",
+    "notes": "LOTUS structure-organism-reference triple. LOTUS reports that the compound
+    was found in the organism; it does not assert that the organism produces it.",
+    "reference": "DOI:10.1021/JO000081H"}], "notes": "Wikidata organism http://www.wikidata.org/entity/Q103806210",
+    "source": "LOTUS", "taxon_id": "NCBITaxon:42747", "taxon_label": "Fusarium heterosporum",
+    "taxon_source": "NCBITaxon"}, {"evidence": [{"evidence_type": "DATABASE_ASSERTION",
+    "notes": "ChEBI compound origin for CHEBI:156320", "reference": "PMID:10956462"}],
+    "source": "CHEBI", "taxon_id": "NCBITaxon:42747", "taxon_label": "Fusarium heterosporum",
+    "taxon_source": "NCBITaxon"}, {"detection_context": "CNC-477", "evidence": [{"evidence_type":
+    "DATABASE_ASSERTION", "notes": "ChEBI compound origin for CHEBI:156320", "reference":
+    "10.1055/s-0035-1556229"}], "notes": "This taxon is also recorded as a producer.
+    Production and occurrence are distinct claims; their citations may refer to the
+    same publication. Publication independence has not been established.", "source":
+    "CHEBI", "taxon_id": "NCBITaxon:61235", "taxon_label": "Fusarium equiseti", "taxon_source":
+    "NCBITaxon"}, {"evidence": [{"evidence_type": "DATABASE_ASSERTION", "notes": "LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.", "reference":
+    "DOI:10.1055/S-0035-1556229"}], "notes": "Wikidata organism http://www.wikidata.org/entity/Q103817240
+    This taxon is also recorded as a producer. Production and occurrence are distinct
+    claims; their citations may refer to the same publication. Publication independence
+    has not been established.", "source": "LOTUS", "taxon_id": "NCBITaxon:61235",
+    "taxon_label": "Fusarium equiseti", "taxon_source": "NCBITaxon"}]}'
+  snapshot_sha256: 737113ad2be45fc9acc4de288533248ae3f569c8c5cb2b430be99880d0d8d705
+- evidence_id: support-2349-assay-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch235/owner-capture-DATA-001.json
+  locator: /records/8/owner_document
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: 'Written observations; whole-owner selector establishes optional-root absence
+    within this owner only. Exact copied saved values: {"/records/8/owner_document":
+    {"bgc_class": ["TERPENE"], "biosynthesis_origin": "NATURAL_PRODUCT", "biosynthetic_gene_clusters":
+    [{"accession": "mibig:BGC0001659", "bgc_class": ["TERPENE"], "entry_status": "active",
+    "entry_version": "3", "evidence": [{"evidence_type": "DATABASE_ASSERTION", "notes":
+    "MIBiG BGC0001659 entry version 3; citation taken from the entry level", "reference":
+    "DOI:10.1055/s-0035-1556229"}], "genome_accession": "genbank:KU376508.1", "link_evidence_basis":
+    "CLUSTER_UNSTATED", "locus_from": 90, "locus_to": 16646, "organism_label": "Fusarium
+    equiseti", "organism_taxon_id": "NCBITaxon:61235"}], "chemical_structure": {"smiles":
+    "[H][C@@]12CC[C@H](C)[C@@]11[C@H](O)C[C@H](C)C1=C[C@@]1(C)CC[C@](C)(C[C@H](O)[C@H](O)[C@@](C)(O)CO)[C@@]21[H]",
+    "standard_inchi": "InChI=1S/C25H42O5/c1-14-10-19(28)25-15(2)6-7-16(25)20-22(3,11-17(14)25)8-9-23(20,4)12-18(27)21(29)24(5,30)13-26/h11,14-16,18-21,26-30H,6-10,12-13H2,1-5H3/t14-,15-,16-,18-,19+,20-,21-,22+,23+,24-,25+/m0/s1",
+    "standard_inchi_key": "KJHICOOTWQEHPN-DVMFOLSNSA-N", "stereo_complete": true,
+    "structure_source": "MIBIG", "structure_source_id": "mibig:BGC0001659"}, "curation_history":
+    [{"action": "SEEDED_FROM_SOURCES", "changes": "Seeded from the committed inventories
+    in data/raw/.", "curator": "seed_from_sources", "timestamp": "2026-09-10T05:54:08Z"},
+    {"action": "SEEDED_FROM_SOURCES", "changes": "Seeded from the committed inventories
+    in data/raw/.", "curator": "seed_from_sources", "timestamp": "2026-09-25T03:02:32Z"},
+    {"action": "SEEDED_FROM_SOURCES", "changes": "Seeded from the committed inventories
+    and curation tables.", "curator": "seed_from_sources", "timestamp": "2026-10-13T10:43:50Z"}],
+    "curation_status": "SEEDED", "definition": "A sesterterpenoid natural product
+    found in the fungus Fusarium heterosporum. It exhibits significant antiinflammatory
+    activity in the PMA-induced mouse ear edema model.", "definition_source": "CHEBI:156320",
+    "grounding_status": "EXACT", "identifier": "CHEBI:156320", "label": "mangicol
+    A", "np_classification": {"class_results": ["Mangicol-type sesterterpenoids"],
+    "is_glycoside": false, "pathway_results": ["Terpenoids"], "superclass_results":
+    ["Sesterterpenoids"], "tool": "NPClassifier", "tool_version": "npclassifier.gnps2.org@2026-09-07"},
+    "np_pathway": "TERPENOIDS", "occurrence_taxon_groups": ["FUNGAL"], "occurrences":
+    [{"evidence": [{"evidence_type": "DATABASE_ASSERTION", "notes": "LOTUS structure-organism-reference
+    triple. LOTUS reports that the compound was found in the organism; it does not
+    assert that the organism produces it.", "reference": "DOI:10.1021/JO000081H"}],
+    "notes": "Wikidata organism http://www.wikidata.org/entity/Q103806210", "source":
+    "LOTUS", "taxon_id": "NCBITaxon:42747", "taxon_label": "Fusarium heterosporum",
+    "taxon_source": "NCBITaxon"}, {"evidence": [{"evidence_type": "DATABASE_ASSERTION",
+    "notes": "ChEBI compound origin for CHEBI:156320", "reference": "PMID:10956462"}],
+    "source": "CHEBI", "taxon_id": "NCBITaxon:42747", "taxon_label": "Fusarium heterosporum",
+    "taxon_source": "NCBITaxon"}, {"detection_context": "CNC-477", "evidence": [{"evidence_type":
+    "DATABASE_ASSERTION", "notes": "ChEBI compound origin for CHEBI:156320", "reference":
+    "10.1055/s-0035-1556229"}], "notes": "This taxon is also recorded as a producer.
+    Production and occurrence are distinct claims; their citations may refer to the
+    same publication. Publication independence has not been established.", "source":
+    "CHEBI", "taxon_id": "NCBITaxon:61235", "taxon_label": "Fusarium equiseti", "taxon_source":
+    "NCBITaxon"}, {"evidence": [{"evidence_type": "DATABASE_ASSERTION", "notes": "LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.", "reference":
+    "DOI:10.1055/S-0035-1556229"}], "notes": "Wikidata organism http://www.wikidata.org/entity/Q103817240
+    This taxon is also recorded as a producer. Production and occurrence are distinct
+    claims; their citations may refer to the same publication. Publication independence
+    has not been established.", "source": "LOTUS", "taxon_id": "NCBITaxon:61235",
+    "taxon_label": "Fusarium equiseti", "taxon_source": "NCBITaxon"}], "producer_organisms":
+    [{"biosynthetic_gene_cluster": "mibig:BGC0001659", "evidence": [{"evidence_type":
+    "DATABASE_ASSERTION", "notes": "MIBiG BGC0001659 entry version 3; citation taken
+    from the entry level", "reference": "DOI:10.1055/s-0035-1556229"}], "evidence_basis":
+    "SOURCE_ASSERTION", "notes": "Locus evidence: none stated. That evidence grades
+    the LOCUS as CLUSTER_UNSTATED; this field grades the taxon claim, which is a different
+    question.", "source": "MIBIG", "source_version": "3", "taxon_id": "NCBITaxon:61235",
+    "taxon_label": "Fusarium equiseti"}], "producer_taxon_groups": ["FUNGAL"], "source_concepts":
+    [{"minted_identifier": "naturalproductmech:mibig-5aa05be218", "source": "MIBIG",
+    "source_id": "BGC0001659", "source_label": "mangicol A", "source_version": "3"},
+    {"minted_identifier": "naturalproductmech:chebi-b47ad3efaf", "source": "CHEBI",
+    "source_id": "CHEBI:156320", "source_label": "mangicol A", "source_version": "3-star"}],
+    "xrefs": ["npatlas:NPA016972"]}}'
+  snapshot_sha256: 737113ad2be45fc9acc4de288533248ae3f569c8c5cb2b430be99880d0d8d705
+- evidence_id: support-2349-classification-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch235/owner-capture-DATA-001.json
+  locator: /records/8/owner_document/np_pathway; /records/8/owner_document/np_classification;
+    /records/8/owner_document/bgc_class
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: 'Versioned computed filing and separately asserted BGC/compound classes.
+    Exact copied saved values: {"/records/8/owner_document/bgc_class": ["TERPENE"],
+    "/records/8/owner_document/np_classification": {"class_results": ["Mangicol-type
+    sesterterpenoids"], "is_glycoside": false, "pathway_results": ["Terpenoids"],
+    "superclass_results": ["Sesterterpenoids"], "tool": "NPClassifier", "tool_version":
+    "npclassifier.gnps2.org@2026-09-07"}, "/records/8/owner_document/np_pathway":
+    "TERPENOIDS"}'
+  snapshot_sha256: 737113ad2be45fc9acc4de288533248ae3f569c8c5cb2b430be99880d0d8d705
+- evidence_id: support-2349-chemistry
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch235/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/8/declared_structure; /records/8/comparisons; /records/8/atom_correspondence
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: 'Complete original declared forms/comparisons/map, unchanged. Exact copied
+    saved values: {"/records/8/atom_correspondence": {"complete_atom_count_match":
+    true, "full_graph_identity_established": false, "scope": "One chirality-aware
+    substructure match; no independent full graph or natural identity claim.", "smiles_to_inchi_atom_indices":
+    [15, 6, 5, 14, 1, 24, 18, 27, 9, 13, 0, 16, 10, 21, 2, 7, 8, 22, 3, 11, 17, 26,
+    20, 28, 23, 4, 29, 12, 25, 19]}, "/records/8/comparisons": {"atom_count_equal":
+    true, "bond_count_equal": true, "both_keys_equal_declared": true, "canonical_isomeric_smiles_equal":
+    true, "canonical_nonisomeric_smiles_equal": true, "formal_charge_equal": true,
+    "formula_equal": true, "smiles_formula_equals_literal_InChI_main_layer": true,
+    "standard_inchi_equal": true, "standard_inchi_key_equal": true}, "/records/8/declared_structure":
+    {"smiles": "[H][C@@]12CC[C@H](C)[C@@]11[C@H](O)C[C@H](C)C1=C[C@@]1(C)CC[C@](C)(C[C@H](O)[C@H](O)[C@@](C)(O)CO)[C@@]21[H]",
+    "standard_inchi": "InChI=1S/C25H42O5/c1-14-10-19(28)25-15(2)6-7-16(25)20-22(3,11-17(14)25)8-9-23(20,4)12-18(27)21(29)24(5,30)13-26/h11,14-16,18-21,26-30H,6-10,12-13H2,1-5H3/t14-,15-,16-,18-,19+,20-,21-,22+,23+,24-,25+/m0/s1",
+    "standard_inchi_key": "KJHICOOTWQEHPN-DVMFOLSNSA-N", "stereo_complete": true,
+    "structure_source": "MIBIG", "structure_source_id": "mibig:BGC0001659"}}'
+  snapshot_sha256: aeff6d2db3c52b75fa7cd85438a014925445302087c33263b7522f3f556e0d4c
+- evidence_id: support-2349-topology
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch235/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/8/smiles/computed; /records/8/inchi/computed; /records/8/declared_structure;
+    /records/8/comparisons; /records/8/atom_correspondence
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: Both complete saved forms are neutral C25H42O5 with 30 heavy atoms, 33
+    bonds and one component. They retain four carbocyclic rings, one ring alkene and
+    five hydroxyls, including the side-chain alcohol groups. Eleven tetrahedral centres
+    are specified in both forms, with no additional potential stereo entry left unspecified
+    by this detector. The ring alkene has no assigned E/Z entry in the saved potential-stereo
+    inventory; none is invented. All ten original comparison flags agree and the chirality-aware
+    match covers thirty atoms while its full_graph_identity_established flag remains
+    false. The complete tables contain no carbonyl, ether bridge or separate sugar
+    residue.
+  snapshot_sha256: aeff6d2db3c52b75fa7cd85438a014925445302087c33263b7522f3f556e0d4c
+- evidence_id: support-2349-intake
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch235/intakes/2349-inspect-001.json
+  locator: /status; /repository; /source; /targets
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: 'Actual canonical intake, all admitted input roles and maintained correction
+    ownership. Exact copied saved values: {"/repository": "CultureBotAI/NaturalProductMech",
+    "/source": {"git_revision": "ce6a5498df5be51116bd5e0c119023ee62bb5464", "inputs":
+    [{"path": ".claude/skills/curate-yaml-record/references/review-checklist.md",
+    "role": "context", "sha256": "13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9"},
+    {"path": ".claude/skills/review-yaml-record/SKILL.md", "role": "context", "sha256":
+    "493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae"}, {"path":
+    "AGENTS.md", "role": "context", "sha256": "69e4037f8dc97d4b00bb7bb83b41ceca025f6ef578d5c0bf8086f3400becde0b"},
+    {"path": "conf/id_label_targets.yaml", "role": "context", "sha256": "24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6"},
+    {"path": "conf/producer_evidence.tsv", "role": "context", "sha256": "67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131"},
+    {"path": "conf/record_review.yaml", "role": "context", "sha256": "e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8"},
+    {"path": "curation/lotus_occurrence_exclusions.tsv", "role": "context", "sha256":
+    "d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d"}, {"path":
+    "curation/mibig_claim_references.tsv", "role": "context", "sha256": "bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029"},
+    {"path": "curation/mibig_locus_evidence_overrides.tsv", "role": "context", "sha256":
+    "7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e"}, {"path":
+    "curation/mibig_producer_isolates.tsv", "role": "context", "sha256": "8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8"},
+    {"path": "curation/mibig_producer_strains.tsv", "role": "context", "sha256": "bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae"},
+    {"path": "curation/mibig_structure_corrections.tsv", "role": "context", "sha256":
+    "c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0"}, {"path":
+    "curation/mibig_xref_exclusions.tsv", "role": "context", "sha256": "cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c"},
+    {"path": "data/natural_products/PATHS.tsv", "role": "context", "sha256": "2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3"},
+    {"path": "data/natural_products/terpenoids/mangicol-a.yaml", "role": "target",
+    "sha256": "a94c359022be4d6d0c29342047919e4e51fb0efdbaa1690e215d068d7577df38"},
+    {"path": "data/raw/MANIFEST.yaml", "role": "context", "sha256": "b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3"},
+    {"path": "data/raw/antibioticmech_inchikeys.tsv", "role": "context", "sha256":
+    "ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6"}, {"path":
+    "data/raw/bindingdb_targets.tsv", "role": "context", "sha256": "3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1"},
+    {"path": "data/raw/chebi_origins.tsv", "role": "context", "sha256": "fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8"},
+    {"path": "data/raw/chebi_structures.tsv", "role": "context", "sha256": "62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2"},
+    {"path": "data/raw/corpus_taxa.obo", "role": "context", "sha256": "8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9"},
+    {"path": "data/raw/cyanometdb_occurrences.tsv", "role": "context", "sha256": "f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8"},
+    {"path": "data/raw/lotus_occurrences.tsv", "role": "context", "sha256": "ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94"},
+    {"path": "data/raw/mibig_compounds.tsv", "role": "context", "sha256": "e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6"},
+    {"path": "data/raw/npclassifier.tsv", "role": "context", "sha256": "acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3"},
+    {"path": "data/raw/pubchem_bioassay.tsv", "role": "context", "sha256": "6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b"},
+    {"path": "docs/CURATION.md", "role": "context", "sha256": "c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa"},
+    {"path": "docs/HARMONIZATION.md", "role": "context", "sha256": "c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79"},
+    {"path": "docs/record-review-profile.md", "role": "context", "sha256": "1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a"},
+    {"path": "docs/record-reviews.md", "role": "context", "sha256": "452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b"},
+    {"path": "justfile", "role": "context", "sha256": "4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550"},
+    {"path": "schema/record_review.yaml", "role": "context", "sha256": "229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb"},
+    {"path": "scripts/extract_chebi.py", "role": "context", "sha256": "46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f"},
+    {"path": "scripts/extract_mibig.py", "role": "context", "sha256": "e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c"},
+    {"path": "scripts/seed_from_sources.py", "role": "context", "sha256": "5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5"},
+    {"path": "src/naturalproductmech/curate/claim_references.py", "role": "context",
+    "sha256": "0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3"},
+    {"path": "src/naturalproductmech/schema/naturalproductmech.yaml", "role": "context",
+    "sha256": "9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d"}],
+    "state": "working_tree"}, "/status": "inspection_only", "/targets": [{"kind":
+    "generated", "label": "mangicol A", "owner_paths": [{"path": "scripts/seed_from_sources.py",
+    "repository": "CultureBotAI/NaturalProductMech", "role": "Maintained harmonization
+    generator; seeded fields are corrected through maintained inputs and validated
+    regeneration."}, {"path": "data/raw/mibig_compounds.tsv", "repository": "CultureBotAI/NaturalProductMech",
+    "role": "Retained MIBiG structure, producer and compound-specific locus assertions."},
+    {"path": "data/raw/npclassifier.tsv", "repository": "CultureBotAI/NaturalProductMech",
+    "role": "Pinned computed classification and filing assertions."}, {"path": "scripts/extract_mibig.py",
+    "repository": "CultureBotAI/NaturalProductMech", "role": "Maintained extraction
+    of MIBiG compound names, structures, stereochemistry flags and source provenance."},
+    {"path": "data/raw/chebi_structures.tsv", "repository": "CultureBotAI/NaturalProductMech",
+    "role": "Retained ChEBI identifiers, definitions and exact chemical forms."},
+    {"path": "data/raw/lotus_occurrences.tsv", "repository": "CultureBotAI/NaturalProductMech",
+    "role": "Retained cited occurrence assertions, distinct from demonstrated production."},
+    {"path": "data/raw/chebi_origins.tsv", "repository": "CultureBotAI/NaturalProductMech",
+    "role": "Retained cited occurrence assertions, distinct from demonstrated production."}],
+    "ownership_note": "This review proposes no record edit. Source corrections belong
+    in maintained inventories, implemented curation tables, extractors or the seeder;
+    generated pages are not owners.", "path": "data/natural_products/terpenoids/mangicol-a.yaml",
+    "record_class": "NaturalProductRecord", "target_id": "CHEBI:156320"}]}'
+  snapshot_sha256: 35f04c8d060216fcca6ef7f16ab933c2a367edfc64350d50f203f6bb3e9aa7a4
+- evidence_id: support-2349-intake-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch235/root-intake-native-acceptance-001.json
+  locator: /status; /accepted; /verification
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: ROOT accepts ten original canonical intakes, 387 source placements and
+    58 distinct paths; historical pre-chemistry wording is not an assertion that later
+    results remain pending.
+  snapshot_sha256: 97b8f40e4ce5c08c4508e916b5951f267a4aba333bf78abf8275d7c8c865e7f0
+- evidence_id: support-2349-inventory-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch235/root-source-inventory-acceptance-001.json
+  locator: /status; /totals
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: ROOT accepts the original local inventory; source meanings remain separately
+    attributed.
+  snapshot_sha256: efe55c8fc90acc75742e2e133be3d52885ba31a8027a7ef4736e7bc020950af9
+- evidence_id: support-2349-plan-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch235/root-source-plan-acceptance-001.json
+  locator: /status; /accepted
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: ROOT accepts the original input plan, not a scientific verdict.
+  snapshot_sha256: ebd812deb22f4b63b07c62f2cfb77b5ccaefd41fa85e5da34e9ad033ab96431c
+- evidence_id: support-2349-diagnostic-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch235/chemistry-local/root-diagnostic-acceptance-001.json
+  locator: /status; /accepted; /verification; /warning_scope; /stderr
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: ROOT accepts twenty original stored parses and all100 stored-form comparison
+    flags are true. Two undefined-stereo and two charge-rearrangement warnings remain
+    global and unassigned.
+  snapshot_sha256: 5c7d1831ae5c8d9ffdafa16a84aaf306a7641eec7b63ed29999a7182721156f6
+- evidence_id: support-2349-native-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch235/root-native-five-gates-acceptance-001.json
+  locator: Whole saved actual native-result authority
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: Five original local commands passed within their saved result scope; full
+    QC and complete OAK authority coverage remain unavailable.
+  snapshot_sha256: 713d96670fed493630776183217dec028aa27c64ca70142c925e14679e8064bc
+- evidence_id: support-2349-diagnostic-execution
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch235/chemistry-local/diagnostic-execution-001.json
+  locator: Whole original execution receipt
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: ROOT operated the one accepted diagnostic. No replay, alternate parse or
+    owner-specific warning attribution is introduced.
+  snapshot_sha256: c6f0da32c1be702c997e92c5892ea02e38a069abc6c0b720fa4e1338b674661c
+- evidence_id: support-2349-plan
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch235-tentative/bgc-prep/bgc-conditional235-target-input-plan-001.json
+  locator: /records/8; /source_placement_count; /unique_source_path_count
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: Complete accepted owner input plan; cohort 387 placements /58 paths, this
+    owner 37 placements.
+  snapshot_sha256: 4534eaf8666f0c106f388a2d17af4dc6b1edc20f665e7aef9a03813706c19ddb
+- evidence_id: support-2349-source-notes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch235-tentative/bgc-prep/bgc-conditional235-source-scope-notes-001.json
+  locator: /reading; /cautions; /scientific_limits
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: Joint complete source reading, exact raw/history carries and source-specific
+    cautions; these notes precede scientific adjudication.
+  snapshot_sha256: 8c85f257f59a062eabc086ac4dd94acabd196bf072e6d66aa20f1215dd31aaa7
+- evidence_id: support-2349-curation-scope
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch235-tentative/bgc-prep/bgc-conditional235-source-scope-notes-001.json
+  locator: /curation
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: ROOT performed the bounded1233-literal scan of eight directly opened implemented
+    tables, including ignored files. Its sole taxon1931 rationale hit concerns unrelated
+    BGC1648/lasalocid and cannot transfer strain FXJ1.172 to Marinoterpins. Reserved
+    decisions.tsv was unconsumed; no global absence claim follows.
+  snapshot_sha256: 8c85f257f59a062eabc086ac4dd94acabd196bf072e6d66aa20f1215dd31aaa7
+- evidence_id: support-2349-source-routes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch235-tentative/bgc-prep/bgc-conditional235-source-inventory-DATA-001.json
+  locator: /contexts/12/source_scope_inventory/matched_chebi_ids; /contexts/12/source_scope_inventory/source_taxa;
+    /contexts/12/source_scope_inventory/forward_taxon_merge_matches; /contexts/12/source_scope_inventory/nonorganism_matches;
+    /contexts/12/source_scope_inventory/actual_assay_rows; /contexts/12/source_scope_inventory/blank_AID_sentinels;
+    /contexts/12/source_scope_inventory/related_corpus_rows
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: 'Complete saved route metadata, including assay/sentinel distinctions and
+    exact empty routes. Exact copied saved values: {"/contexts/12/source_scope_inventory/actual_assay_rows":
+    [], "/contexts/12/source_scope_inventory/blank_AID_sentinels": [], "/contexts/12/source_scope_inventory/forward_taxon_merge_matches":
+    [], "/contexts/12/source_scope_inventory/matched_chebi_ids": ["CHEBI:156320"],
+    "/contexts/12/source_scope_inventory/nonorganism_matches": [], "/contexts/12/source_scope_inventory/related_corpus_rows":
+    [], "/contexts/12/source_scope_inventory/source_taxa": ["NCBITaxon:42747", "NCBITaxon:61235"]}'
+  snapshot_sha256: c2c0b5aea707e489d5ee15669255da5bd3355adc7faba67c80f438ee9dd68ca7
+- evidence_id: support-2349-cached-taxonomy
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch235-tentative/bgc-prep/bgc-conditional235-source-inventory-DATA-001.json
+  locator: /cached_taxonomy/whole_stanzas/147; /cached_taxonomy/whole_stanzas/218
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: 'All relevant saved cached stanzas, including exact forward-merge destinations;
+    names and synonyms remain retained local authority. Exact copied saved values:
+    {"/cached_taxonomy/whole_stanzas/147": {"complete_stanza": "[Term]\nid: NCBITaxon:42747\nname:
+    Fusarium heterosporum\n\n", "id": "NCBITaxon:42747", "physical_line": 19495},
+    "/cached_taxonomy/whole_stanzas/218": {"complete_stanza": "[Term]\nid: NCBITaxon:61235\nname:
+    Fusarium equiseti\nsynonym: \"Gibberella intricans\" EXACT []\nsynonym: \"Selenosporium
+    equiseti\" EXACT []\n\n", "id": "NCBITaxon:61235", "physical_line": 27935}}'
+  snapshot_sha256: c2c0b5aea707e489d5ee15669255da5bd3355adc7faba67c80f438ee9dd68ca7
+- evidence_id: support-2349-query-mibig_compounds
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch235-tentative/bgc-prep/bgc-conditional235-source-inventory-DATA-001.json
+  locator: /contexts/12/source_scope_inventory/joins/mibig_compounds
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: 'Complete retained query frame, all matches and exact no-match scope; no
+    replay. Exact copied saved values: {"/contexts/12/source_scope_inventory/joins/mibig_compounds":
+    {"matches": [{"last_physical_line": 1980, "physical_line": 1980, "raw_tsv_record":
+    "BGC0001659\t3\tactive\tquestionable\tunknown\tmangicol A\t1\t[H][C@@]12CC[C@H](C)[C@@]11[C@H](O)C[C@H](C)C1=C[C@@]1(C)CC[C@](C)(C[C@H](O)[C@H](O)[C@@](C)(O)CO)[C@@]21[H]\tInChI=1S/C25H42O5/c1-14-10-19(28)25-15(2)6-7-16(25)20-22(3,11-17(14)25)8-9-23(20,4)12-18(27)21(29)24(5,30)13-26/h11,14-16,18-21,26-30H,6-10,12-13H2,1-5H3/t14-,15-,16-,18-,19+,20-,21-,22+,23+,24-,25+/m0/s1\tKJHICOOTWQEHPN-DVMFOLSNSA-N\ttrue\t\tnpatlas:NPA016972\tNCBITaxon:61235\tFusarium
+    equiseti\tterpene\tUnknown\tKU376508.1\t90\t16646\t\tSOURCE_ASSERTION\tCLUSTER_UNSTATED\tDOI:10.1055/s-0035-1556229\tENTRY\n",
+    "row": {"bgc_classes": "terpene", "bgc_subclasses": "Unknown", "cluster_link_evidence_basis":
+    "CLUSTER_UNSTATED", "compound_classes": "", "compound_index": "1", "compound_name":
+    "mangicol A", "database_ids": "npatlas:NPA016972", "entry_completeness": "unknown",
+    "entry_quality": "questionable", "entry_status": "active", "entry_version": "3",
+    "genome_accession": "KU376508.1", "locus_evidence_methods": "", "locus_from":
+    "90", "locus_to": "16646", "mibig_accession": "BGC0001659", "primary_reference":
+    "DOI:10.1055/s-0035-1556229", "producer_evidence_basis": "SOURCE_ASSERTION", "reference_basis":
+    "ENTRY", "smiles": "[H][C@@]12CC[C@H](C)[C@@]11[C@H](O)C[C@H](C)C1=C[C@@]1(C)CC[C@](C)(C[C@H](O)[C@H](O)[C@@](C)(O)CO)[C@@]21[H]",
+    "standard_inchi": "InChI=1S/C25H42O5/c1-14-10-19(28)25-15(2)6-7-16(25)20-22(3,11-17(14)25)8-9-23(20,4)12-18(27)21(29)24(5,30)13-26/h11,14-16,18-21,26-30H,6-10,12-13H2,1-5H3/t14-,15-,16-,18-,19+,20-,21-,22+,23+,24-,25+/m0/s1",
+    "standard_inchi_key": "KJHICOOTWQEHPN-DVMFOLSNSA-N", "stereo_complete": "true",
+    "taxon_id": "NCBITaxon:61235", "taxon_label": "Fusarium equiseti"}, "row_sha256":
+    "0bc2e068ceb6fc39bcc56e895ae06b16095147d516faf2229d991cc3a56dc410"}], "predicate":
+    "exact complete standard_inchi_key equality", "query": "KJHICOOTWQEHPN-DVMFOLSNSA-N"}}'
+  snapshot_sha256: c2c0b5aea707e489d5ee15669255da5bd3355adc7faba67c80f438ee9dd68ca7
+- evidence_id: support-2349-source-mibig_compounds
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv
+  locator: Header line 1; physical lines 1980–1980, row_sha256 0bc2e068ceb6fc39bcc56e895ae06b16095147d516faf2229d991cc3a56dc410
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: 'Complete retained physical row fields: [{"bgc_classes": "terpene", "bgc_subclasses":
+    "Unknown", "cluster_link_evidence_basis": "CLUSTER_UNSTATED", "compound_classes":
+    "", "compound_index": "1", "compound_name": "mangicol A", "database_ids": "npatlas:NPA016972",
+    "entry_completeness": "unknown", "entry_quality": "questionable", "entry_status":
+    "active", "entry_version": "3", "genome_accession": "KU376508.1", "locus_evidence_methods":
+    "", "locus_from": "90", "locus_to": "16646", "mibig_accession": "BGC0001659",
+    "primary_reference": "DOI:10.1055/s-0035-1556229", "producer_evidence_basis":
+    "SOURCE_ASSERTION", "reference_basis": "ENTRY", "smiles": "[H][C@@]12CC[C@H](C)[C@@]11[C@H](O)C[C@H](C)C1=C[C@@]1(C)CC[C@](C)(C[C@H](O)[C@H](O)[C@@](C)(O)CO)[C@@]21[H]",
+    "standard_inchi": "InChI=1S/C25H42O5/c1-14-10-19(28)25-15(2)6-7-16(25)20-22(3,11-17(14)25)8-9-23(20,4)12-18(27)21(29)24(5,30)13-26/h11,14-16,18-21,26-30H,6-10,12-13H2,1-5H3/t14-,15-,16-,18-,19+,20-,21-,22+,23+,24-,25+/m0/s1",
+    "standard_inchi_key": "KJHICOOTWQEHPN-DVMFOLSNSA-N", "stereo_complete": "true",
+    "taxon_id": "NCBITaxon:61235", "taxon_label": "Fusarium equiseti"}]'
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: support-2349-query-chebi_structures
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch235-tentative/bgc-prep/bgc-conditional235-source-inventory-DATA-001.json
+  locator: /contexts/12/source_scope_inventory/joins/chebi_structures
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: 'Complete retained query frame, all matches and exact no-match scope; no
+    replay. Exact copied saved values: {"/contexts/12/source_scope_inventory/joins/chebi_structures":
+    {"matches": [{"last_physical_line": 43075, "physical_line": 43075, "raw_tsv_record":
+    "CHEBI:156320\tmangicol A\tA sesterterpenoid natural product found in the fungus
+    Fusarium heterosporum. It exhibits significant antiinflammatory activity in the
+    PMA-induced mouse ear edema model.\t3\tKJHICOOTWQEHPN-DVMFOLSNSA-N\t[H][C@@]12CC[C@H](C)[C@]13C(=C[C@@]1(C)CC[C@](C)(C[C@H](O)[C@H](O)[C@@](C)(O)CO)[C@@]21[H])[C@@H](C)C[C@H]3O\n",
+    "row": {"chebi_id": "CHEBI:156320", "definition": "A sesterterpenoid natural product
+    found in the fungus Fusarium heterosporum. It exhibits significant antiinflammatory
+    activity in the PMA-induced mouse ear edema model.", "name": "mangicol A", "smiles":
+    "[H][C@@]12CC[C@H](C)[C@]13C(=C[C@@]1(C)CC[C@](C)(C[C@H](O)[C@H](O)[C@@](C)(O)CO)[C@@]21[H])[C@@H](C)C[C@H]3O",
+    "standard_inchi_key": "KJHICOOTWQEHPN-DVMFOLSNSA-N", "stars": "3"}, "row_sha256":
+    "e09e2724d99b64a4f81790bb2e5298c397d30aca2f91fa44164f015eb0124254"}], "predicate":
+    "exact complete standard_inchi_key equality", "query": "KJHICOOTWQEHPN-DVMFOLSNSA-N"}}'
+  snapshot_sha256: c2c0b5aea707e489d5ee15669255da5bd3355adc7faba67c80f438ee9dd68ca7
+- evidence_id: support-2349-source-chebi_structures
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/chebi_structures.tsv
+  locator: Header line 1; physical lines 43075–43075, row_sha256 e09e2724d99b64a4f81790bb2e5298c397d30aca2f91fa44164f015eb0124254
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: 'Complete retained physical row fields: [{"chebi_id": "CHEBI:156320", "definition":
+    "A sesterterpenoid natural product found in the fungus Fusarium heterosporum.
+    It exhibits significant antiinflammatory activity in the PMA-induced mouse ear
+    edema model.", "name": "mangicol A", "smiles": "[H][C@@]12CC[C@H](C)[C@]13C(=C[C@@]1(C)CC[C@](C)(C[C@H](O)[C@H](O)[C@@](C)(O)CO)[C@@]21[H])[C@@H](C)C[C@H]3O",
+    "standard_inchi_key": "KJHICOOTWQEHPN-DVMFOLSNSA-N", "stars": "3"}]'
+  snapshot_sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+- evidence_id: support-2349-query-lotus_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch235-tentative/bgc-prep/bgc-conditional235-source-inventory-DATA-001.json
+  locator: /contexts/12/source_scope_inventory/joins/lotus_occurrences
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: 'Complete retained query frame, all matches and exact no-match scope; no
+    replay. Exact copied saved values: {"/contexts/12/source_scope_inventory/joins/lotus_occurrences":
+    {"matches": [{"last_physical_line": 3621, "physical_line": 3621, "raw_tsv_record":
+    "KJHICOOTWQEHPN-DVMFOLSNSA-N\tFusarium heterosporum\tNCBITaxon:42747\thttp://www.wikidata.org/entity/Q103806210\t10.1021/JO000081H\thttp://www.wikidata.org/entity/Q77624741\n",
+    "row": {"organism_name": "Fusarium heterosporum", "organism_wikidata": "http://www.wikidata.org/entity/Q103806210",
+    "reference_doi": "10.1021/JO000081H", "standard_inchi_key": "KJHICOOTWQEHPN-DVMFOLSNSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q77624741", "taxon_id":
+    "NCBITaxon:42747"}, "row_sha256": "fbbfac981bbc61a0d4123529fe0addf1e94f69b9bcb1356e3d2dc000d1532659"},
+    {"last_physical_line": 3622, "physical_line": 3622, "raw_tsv_record": "KJHICOOTWQEHPN-DVMFOLSNSA-N\tFusarium
+    equiseti\tNCBITaxon:61235\thttp://www.wikidata.org/entity/Q103817240\t10.1055/S-0035-1556229\thttp://www.wikidata.org/entity/Q77624741\n",
+    "row": {"organism_name": "Fusarium equiseti", "organism_wikidata": "http://www.wikidata.org/entity/Q103817240",
+    "reference_doi": "10.1055/S-0035-1556229", "standard_inchi_key": "KJHICOOTWQEHPN-DVMFOLSNSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q77624741", "taxon_id":
+    "NCBITaxon:61235"}, "row_sha256": "6e3f044e699ee94a833786b3948daad74e2555c34e2b384ae500be008bdb867f"}],
+    "predicate": "exact complete standard_inchi_key equality", "query": "KJHICOOTWQEHPN-DVMFOLSNSA-N"}}'
+  snapshot_sha256: c2c0b5aea707e489d5ee15669255da5bd3355adc7faba67c80f438ee9dd68ca7
+- evidence_id: support-2349-source-lotus_occurrences
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical lines 3621–3621, row_sha256 fbbfac981bbc61a0d4123529fe0addf1e94f69b9bcb1356e3d2dc000d1532659;
+    physical lines 3622–3622, row_sha256 6e3f044e699ee94a833786b3948daad74e2555c34e2b384ae500be008bdb867f
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: 'Complete retained physical row fields: [{"organism_name": "Fusarium heterosporum",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q103806210", "reference_doi":
+    "10.1021/JO000081H", "standard_inchi_key": "KJHICOOTWQEHPN-DVMFOLSNSA-N", "structure_wikidata":
+    "http://www.wikidata.org/entity/Q77624741", "taxon_id": "NCBITaxon:42747"}, {"organism_name":
+    "Fusarium equiseti", "organism_wikidata": "http://www.wikidata.org/entity/Q103817240",
+    "reference_doi": "10.1055/S-0035-1556229", "standard_inchi_key": "KJHICOOTWQEHPN-DVMFOLSNSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q77624741", "taxon_id":
+    "NCBITaxon:61235"}]'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2349-query-cyanometdb_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch235-tentative/bgc-prep/bgc-conditional235-source-inventory-DATA-001.json
+  locator: /contexts/12/source_scope_inventory/joins/cyanometdb_occurrences
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: 'Complete retained query frame, all matches and exact no-match scope; no
+    replay. Exact copied saved values: {"/contexts/12/source_scope_inventory/joins/cyanometdb_occurrences":
+    {"matches": [], "predicate": "exact complete standard_inchi_key equality", "query":
+    "KJHICOOTWQEHPN-DVMFOLSNSA-N"}}'
+  snapshot_sha256: c2c0b5aea707e489d5ee15669255da5bd3355adc7faba67c80f438ee9dd68ca7
+- evidence_id: support-2349-query-npclassifier
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch235-tentative/bgc-prep/bgc-conditional235-source-inventory-DATA-001.json
+  locator: /contexts/12/source_scope_inventory/joins/npclassifier
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: 'Complete retained query frame, all matches and exact no-match scope; no
+    replay. Exact copied saved values: {"/contexts/12/source_scope_inventory/joins/npclassifier":
+    {"matches": [{"last_physical_line": 1251, "physical_line": 1251, "raw_tsv_record":
+    "KJHICOOTWQEHPN-DVMFOLSNSA-N\t[H][C@@]12CC[C@H](C)[C@@]11[C@H](O)C[C@H](C)C1=C[C@@]1(C)CC[C@](C)(C[C@H](O)[C@H](O)[C@@](C)(O)CO)[C@@]21[H]\tTerpenoids\tSesterterpenoids\tMangicol-type
+    sesterterpenoids\tfalse\tnpclassifier.gnps2.org@2026-09-07\n", "row": {"class_results":
+    "Mangicol-type sesterterpenoids", "is_glycoside": "false", "model_version": "npclassifier.gnps2.org@2026-09-07",
+    "pathway_results": "Terpenoids", "smiles": "[H][C@@]12CC[C@H](C)[C@@]11[C@H](O)C[C@H](C)C1=C[C@@]1(C)CC[C@](C)(C[C@H](O)[C@H](O)[C@@](C)(O)CO)[C@@]21[H]",
+    "standard_inchi_key": "KJHICOOTWQEHPN-DVMFOLSNSA-N", "superclass_results": "Sesterterpenoids"},
+    "row_sha256": "f690235449cd5a69a69b2f4971148b7cd5b56a4a9a8d950448aeece2fe376a23"}],
+    "predicate": "exact complete standard_inchi_key equality", "query": "KJHICOOTWQEHPN-DVMFOLSNSA-N"}}'
+  snapshot_sha256: c2c0b5aea707e489d5ee15669255da5bd3355adc7faba67c80f438ee9dd68ca7
+- evidence_id: support-2349-source-npclassifier
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv
+  locator: Header line 1; physical lines 1251–1251, row_sha256 f690235449cd5a69a69b2f4971148b7cd5b56a4a9a8d950448aeece2fe376a23
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: 'Complete retained physical row fields: [{"class_results": "Mangicol-type
+    sesterterpenoids", "is_glycoside": "false", "model_version": "npclassifier.gnps2.org@2026-09-07",
+    "pathway_results": "Terpenoids", "smiles": "[H][C@@]12CC[C@H](C)[C@@]11[C@H](O)C[C@H](C)C1=C[C@@]1(C)CC[C@](C)(C[C@H](O)[C@H](O)[C@@](C)(O)CO)[C@@]21[H]",
+    "standard_inchi_key": "KJHICOOTWQEHPN-DVMFOLSNSA-N", "superclass_results": "Sesterterpenoids"}]'
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: support-2349-query-pubchem_bioassay
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch235-tentative/bgc-prep/bgc-conditional235-source-inventory-DATA-001.json
+  locator: /contexts/12/source_scope_inventory/joins/pubchem_bioassay
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: 'Complete retained query frame, all matches and exact no-match scope; no
+    replay. Exact copied saved values: {"/contexts/12/source_scope_inventory/joins/pubchem_bioassay":
+    {"matches": [], "predicate": "exact complete standard_inchi_key equality", "query":
+    "KJHICOOTWQEHPN-DVMFOLSNSA-N"}}'
+  snapshot_sha256: c2c0b5aea707e489d5ee15669255da5bd3355adc7faba67c80f438ee9dd68ca7
+- evidence_id: support-2349-query-bindingdb_targets
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch235-tentative/bgc-prep/bgc-conditional235-source-inventory-DATA-001.json
+  locator: /contexts/12/source_scope_inventory/joins/bindingdb_targets
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: 'Complete retained query frame, all matches and exact no-match scope; no
+    replay. Exact copied saved values: {"/contexts/12/source_scope_inventory/joins/bindingdb_targets":
+    {"matches": [], "predicate": "exact complete standard_inchi_key equality", "query":
+    "KJHICOOTWQEHPN-DVMFOLSNSA-N"}}'
+  snapshot_sha256: c2c0b5aea707e489d5ee15669255da5bd3355adc7faba67c80f438ee9dd68ca7
+- evidence_id: support-2349-query-antibioticmech_inchikeys
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch235-tentative/bgc-prep/bgc-conditional235-source-inventory-DATA-001.json
+  locator: /contexts/12/source_scope_inventory/joins/antibioticmech_inchikeys
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: 'Complete retained query frame, all matches and exact no-match scope; no
+    replay. Exact copied saved values: {"/contexts/12/source_scope_inventory/joins/antibioticmech_inchikeys":
+    {"matches": [], "predicate": "exact complete standard_inchi_key equality", "query":
+    "KJHICOOTWQEHPN-DVMFOLSNSA-N"}}'
+  snapshot_sha256: c2c0b5aea707e489d5ee15669255da5bd3355adc7faba67c80f438ee9dd68ca7
+- evidence_id: support-2349-query-chebi_origins
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch235-tentative/bgc-prep/bgc-conditional235-source-inventory-DATA-001.json
+  locator: /contexts/12/source_scope_inventory/joins/chebi_origins
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: 'Complete retained query frame, all matches and exact no-match scope; no
+    replay. Exact copied saved values: {"/contexts/12/source_scope_inventory/joins/chebi_origins":
+    {"matches": [{"last_physical_line": 17002, "physical_line": 17002, "raw_tsv_record":
+    "CHEBI:156320\tFusarium equiseti\t61235\t\tCNC-477\t10.1055/s-0035-1556229\t\n",
+    "row": {"chebi_id": "CHEBI:156320", "comments": "", "component_text": "", "source_accession":
+    "10.1055/s-0035-1556229", "species_accession": "61235", "species_text": "Fusarium
+    equiseti", "strain_text": "CNC-477"}, "row_sha256": "200e757403ab612495a4bf56ecb6f6827afda7b5c6117df1047161cc673d99da"},
+    {"last_physical_line": 17003, "physical_line": 17003, "raw_tsv_record": "CHEBI:156320\tFusarium
+    heterosporum\t42747\t\t\t10956462\t\n", "row": {"chebi_id": "CHEBI:156320", "comments":
+    "", "component_text": "", "source_accession": "10956462", "species_accession":
+    "42747", "species_text": "Fusarium heterosporum", "strain_text": ""}, "row_sha256":
+    "04e055871b7d7a88782ea5a06d91c364792f462909f41d4be68f9d75e69c1d80"}], "predicate":
+    "exact chebi_id from exact full-key structure rows", "query": ["CHEBI:156320"]}}'
+  snapshot_sha256: c2c0b5aea707e489d5ee15669255da5bd3355adc7faba67c80f438ee9dd68ca7
+- evidence_id: support-2349-source-chebi_origins
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/chebi_origins.tsv
+  locator: Header line 1; physical lines 17002–17002, row_sha256 200e757403ab612495a4bf56ecb6f6827afda7b5c6117df1047161cc673d99da;
+    physical lines 17003–17003, row_sha256 04e055871b7d7a88782ea5a06d91c364792f462909f41d4be68f9d75e69c1d80
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: 'Complete retained physical row fields: [{"chebi_id": "CHEBI:156320", "comments":
+    "", "component_text": "", "source_accession": "10.1055/s-0035-1556229", "species_accession":
+    "61235", "species_text": "Fusarium equiseti", "strain_text": "CNC-477"}, {"chebi_id":
+    "CHEBI:156320", "comments": "", "component_text": "", "source_accession": "10956462",
+    "species_accession": "42747", "species_text": "Fusarium heterosporum", "strain_text":
+    ""}]'
+  snapshot_sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+- evidence_id: support-2349-direct-contexts
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch235-tentative/bgc-prep/bgc-conditional235-source-inventory-DATA-001.json
+  locator: /records/8/direct_companion_paths; /records/8/direct_companion_predicates
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: 'Exact direct companion scope; a shared locus is not identity or transferred
+    evidence. Exact copied saved values: {"/records/8/direct_companion_paths": [],
+    "/records/8/direct_companion_predicates": []}'
+  snapshot_sha256: c2c0b5aea707e489d5ee15669255da5bd3355adc7faba67c80f438ee9dd68ca7
+- evidence_id: support-2349-companion-boundaries
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch235-tentative/bgc-prep/bgc-conditional235-source-inventory-DATA-001.json
+  locator: /records/8/direct_companion_paths
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: 'Complete source and raw/history carries are explicitly attributed in source
+    notes. Distinct companion metadata: []'
+  snapshot_sha256: c2c0b5aea707e489d5ee15669255da5bd3355adc7faba67c80f438ee9dd68ca7
+- evidence_id: support-2349-structure-schema
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: lines 175–200; lines 368–435
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: Schema separates stored structures, partial stereo and versioned computed
+    classification from asserted identity.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: support-2349-stereo-method
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py
+  locator: lines 145–174
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: The source stereo_complete predicate uses unassigned tetrahedral centres
+    in source SMILES, not every normalized tautomer or natural stereochemical proof.
+  snapshot_sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+- evidence_id: support-2349-classification-seeder
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: lines 296–307; lines 982–1020
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: Maintained seeder retains source structure and all versioned model arrays;
+    no regeneration was run.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: support-2349-review-profile
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/docs/record-review-profile.md
+  locator: Whole current profile
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: Twelve scientific dimensions and partial completion reflect actual access
+    and check limits.
+  snapshot_sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+- evidence_id: support-2349-review-skill
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/.claude/skills/review-yaml-record/SKILL.md
+  locator: Whole current skill under the absolute no-outbound instruction
+  accessed_at: '2026-11-04T04:54:20.560210Z'
+  support: supports
+  summary: Read-only review, maintained ownership and no native-status promotion apply;
+    no external lookup authorized.
+  snapshot_sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+- evidence_id: root-native-strict_ten
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-235/validate-strict-selected10-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-235/native-current235-five-gates-execution-001.json
+  accessed_at: '2026-11-04T04:28:50.246712Z'
+  support: supports
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  snapshot_sha256: 451bdae3fced338f9cab6a0065481c50af073167c8f08ea2278221cdc9bd3b9f
+- evidence_id: root-native-strict_full
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-235/validate-all-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-235/native-current235-five-gates-execution-001.json
+  accessed_at: '2026-11-04T04:29:16.400882Z'
+  support: supports
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  snapshot_sha256: 855c8f91f20c1843d397c7f6cc176f7bc5b008882a65cac37c9d332069c3fa14
+- evidence_id: root-native-lockfile
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-235/verify-corpus-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-235/native-current235-five-gates-execution-001.json
+  accessed_at: '2026-11-04T04:29:36.734590Z'
+  support: supports
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  snapshot_sha256: 254f171c7dff0f1ecbee5f47f75d2b7046143ae7fc499d9a1c08263e1c5125d8
+- evidence_id: root-native-reproduction
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-235/verify-reproduction-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-235/native-current235-five-gates-execution-001.json
+  accessed_at: '2026-11-04T04:30:13.718045Z'
+  support: supports
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  snapshot_sha256: cfc38f4e3f434e7f3651975f2cb228e5cda848476b2c53d1636d8746b794237a
+- evidence_id: root-native-queue
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-235/review-queue-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-235/native-current235-five-gates-execution-001.json
+  accessed_at: '2026-11-04T04:30:25.980598Z'
+  support: supports
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  snapshot_sha256: f0f15dd29bebbfeaee4046ecb5069d24cf4a36fdd1c6d046bf9208c3c24d4d57
+assessments:
+- assessment_id: support-2349-identity
+  area: identity
+  topic: Retained structure and identifier correspondence
+  outcome: supported
+  summary: CHEBI:156320 and full key KJHICOOTWQEHPN-DVMFOLSNSA-N retain matching MIBiG
+    BGC0001659 version 3 and 3-star ChEBI mangicol A concepts. NPAtlas NPA016972 was
+    not freshly resolved. The ChEBI definition names a sesterterpenoid found in Fusarium
+    heterosporum and describes activity in a PMA-induced mouse ear edema model; those
+    are retained definition claims, not new evidence of a particular producer strain
+    or assay verification. Exact local grounding is distinct from fresh confirmation
+    of the natural stereochemical form.
+  target_ids:
+  - CHEBI:156320
+  evidence_ids:
+  - support-2349-grounding-owner
+  - support-2349-source-mibig_compounds
+  - support-2349-query-chebi_structures
+  - support-2349-chemistry
+  - support-2349-direct-contexts
+  - support-2349-companion-boundaries
+  dimensions:
+  - name: standard_inchi_key
+    value: KJHICOOTWQEHPN-DVMFOLSNSA-N; exact retained full key.
+    definition: Exact full key; no name, first-block or congener substitution.
+    evidence_ids:
+    - support-2349-grounding-owner
+    - support-2349-source-mibig_compounds
+    - support-2349-query-chebi_structures
+    - support-2349-chemistry
+    - support-2349-direct-contexts
+    - support-2349-companion-boundaries
+  - name: grounding_scope
+    value: CHEBI:156320 and full key KJHICOOTWQEHPN-DVMFOLSNSA-N retain matching MIBiG
+      BGC0001659 version 3 and 3-star ChEBI mangicol A concepts. NPAtlas NPA016972
+      was not freshly resolved. The ChEBI definition names a sesterterpenoid found
+      in Fusarium heterosporum and describes activity in a PMA-induced mouse ear edema
+      model; those are retained definition claims, not new evidence of a particular
+      producer strain or assay verification. Exact local grounding is distinct from
+      fresh confirmation of the natural stereochemical form.
+    definition: Retained local grounding fidelity is distinct from fresh natural-identity
+      verification.
+    evidence_ids:
+    - support-2349-grounding-owner
+    - support-2349-source-mibig_compounds
+    - support-2349-query-chebi_structures
+    - support-2349-chemistry
+    - support-2349-direct-contexts
+    - support-2349-companion-boundaries
+- assessment_id: support-2349-representation
+  area: representation
+  topic: Representation
+  outcome: supported
+  summary: Both complete saved forms are neutral C25H42O5 with 30 heavy atoms, 33
+    bonds and one component. They retain four carbocyclic rings, one ring alkene and
+    five hydroxyls, including the side-chain alcohol groups. Eleven tetrahedral centres
+    are specified in both forms, with no additional potential stereo entry left unspecified
+    by this detector. The ring alkene has no assigned E/Z entry in the saved potential-stereo
+    inventory; none is invented. All ten original comparison flags agree and the chirality-aware
+    match covers thirty atoms while its full_graph_identity_established flag remains
+    false. The complete tables contain no carbonyl, ether bridge or separate sugar
+    residue.
+  target_ids:
+  - CHEBI:156320
+  evidence_ids:
+  - support-2349-grounding-owner
+  - support-2349-chemistry
+  - support-2349-topology
+  - support-2349-diagnostic-acceptance
+  - support-2349-structure-schema
+  - support-2349-stereo-method
+  dimensions:
+  - name: stereochemistry_scope
+    value: Both complete saved forms are neutral C25H42O5 with 30 heavy atoms, 33
+      bonds and one component. They retain four carbocyclic rings, one ring alkene
+      and five hydroxyls, including the side-chain alcohol groups. Eleven tetrahedral
+      centres are specified in both forms, with no additional potential stereo entry
+      left unspecified by this detector. The ring alkene has no assigned E/Z entry
+      in the saved potential-stereo inventory; none is invented. All ten original
+      comparison flags agree and the chirality-aware match covers thirty atoms while
+      its full_graph_identity_established flag remains false. The complete tables
+      contain no carbonyl, ether bridge or separate sugar residue.
+    definition: Complete saved stereo/atom/bond interpretation; no new parse or experimental
+      assignment.
+    evidence_ids:
+    - support-2349-grounding-owner
+    - support-2349-chemistry
+    - support-2349-topology
+    - support-2349-diagnostic-acceptance
+    - support-2349-structure-schema
+    - support-2349-stereo-method
+  - name: representation_correspondence
+    value: Both complete saved forms are neutral C25H42O5 with 30 heavy atoms, 33
+      bonds and one component. They retain four carbocyclic rings, one ring alkene
+      and five hydroxyls, including the side-chain alcohol groups. Eleven tetrahedral
+      centres are specified in both forms, with no additional potential stereo entry
+      left unspecified by this detector. The ring alkene has no assigned E/Z entry
+      in the saved potential-stereo inventory; none is invented. All ten original
+      comparison flags agree and the chirality-aware match covers thirty atoms while
+      its full_graph_identity_established flag remains false. The complete tables
+      contain no carbonyl, ether bridge or separate sugar residue.
+    definition: Normalized identifier agreement does not establish fixed-graph or
+      natural-form identity.
+    evidence_ids:
+    - support-2349-grounding-owner
+    - support-2349-chemistry
+    - support-2349-topology
+    - support-2349-diagnostic-acceptance
+    - support-2349-structure-schema
+    - support-2349-stereo-method
+- assessment_id: support-2349-provenance
+  area: provenance
+  topic: Origin
+  outcome: supported
+  summary: The active MIBiG BGC0001659 version 3 entry retains Fusarium equiseti (NCBITaxon:61235),
+    GenBank KU376508.1, coordinates90–16646 and TERPENE class. Producer SOURCE_ASSERTION
+    and locus CLUSTER_UNSTATED are preserved; the raw entry retains questionable quality
+    and unknown completeness. The ChEBI origin row naming strain CNC477 is a separate
+    occurrence assertion and is not silently promoted to demonstrated producer-strain
+    evidence. Fusarium heterosporum (NCBITaxon:42747) is not treated as an alias of
+    F. equiseti.
+  target_ids:
+  - CHEBI:156320
+  evidence_ids:
+  - support-2349-origin-owner
+  - support-2349-source-mibig_compounds
+  - support-2349-cached-taxonomy
+  - support-2349-source-routes
+  - support-2349-direct-contexts
+  - support-2349-companion-boundaries
+  dimensions:
+  - name: taxon_scope
+    value: The active MIBiG BGC0001659 version 3 entry retains Fusarium equiseti (NCBITaxon:61235),
+      GenBank KU376508.1, coordinates90–16646 and TERPENE class. Producer SOURCE_ASSERTION
+      and locus CLUSTER_UNSTATED are preserved; the raw entry retains questionable
+      quality and unknown completeness. The ChEBI origin row naming strain CNC477
+      is a separate occurrence assertion and is not silently promoted to demonstrated
+      producer-strain evidence. Fusarium heterosporum (NCBITaxon:42747) is not treated
+      as an alias of F. equiseti.
+    definition: Producer, occurrence, species, strain and unresolved labels retain
+      separate scope; cached labels are not fresh authority.
+    evidence_ids:
+    - support-2349-origin-owner
+    - support-2349-source-mibig_compounds
+    - support-2349-cached-taxonomy
+    - support-2349-source-routes
+    - support-2349-direct-contexts
+    - support-2349-companion-boundaries
+  - name: producer_evidence
+    value: The active MIBiG BGC0001659 version 3 entry retains Fusarium equiseti (NCBITaxon:61235),
+      GenBank KU376508.1, coordinates90–16646 and TERPENE class. Producer SOURCE_ASSERTION
+      and locus CLUSTER_UNSTATED are preserved; the raw entry retains questionable
+      quality and unknown completeness. The ChEBI origin row naming strain CNC477
+      is a separate occurrence assertion and is not silently promoted to demonstrated
+      producer-strain evidence. Fusarium heterosporum (NCBITaxon:42747) is not treated
+      as an alias of F. equiseti.
+    definition: Producer evidence is assessed separately from occurrence and locus
+      support.
+    evidence_ids:
+    - support-2349-origin-owner
+    - support-2349-source-mibig_compounds
+    - support-2349-cached-taxonomy
+    - support-2349-source-routes
+    - support-2349-direct-contexts
+    - support-2349-companion-boundaries
+  - name: locus_evidence
+    value: The active MIBiG BGC0001659 version 3 entry retains Fusarium equiseti (NCBITaxon:61235),
+      GenBank KU376508.1, coordinates90–16646 and TERPENE class. Producer SOURCE_ASSERTION
+      and locus CLUSTER_UNSTATED are preserved; the raw entry retains questionable
+      quality and unknown completeness. The ChEBI origin row naming strain CNC477
+      is a separate occurrence assertion and is not silently promoted to demonstrated
+      producer-strain evidence. Fusarium heterosporum (NCBITaxon:42747) is not treated
+      as an alias of F. equiseti.
+    definition: Source version/status/method/grade is not a complete pathway or fresh
+      primary verification.
+    evidence_ids:
+    - support-2349-origin-owner
+    - support-2349-source-mibig_compounds
+    - support-2349-cached-taxonomy
+    - support-2349-source-routes
+    - support-2349-direct-contexts
+    - support-2349-companion-boundaries
+- assessment_id: support-2349-citations
+  area: evidence
+  topic: Citations
+  outcome: supported
+  summary: DOI:10.1055/s-0035-1556229 is MIBiG ENTRY-level database provenance. The
+    retained occurrence inventory also has the uppercase DOI form, DOI:10.1021/JO000081H
+    and PMID:10956462 with their respective source roles. Literal citation casing,
+    PMID/DOI forms and placements are preserved without asserting publication independence
+    or a new identifier crosswalk. The ChEBI anti-inflammatory definition is not presented
+    as a newly read primary experiment.
+  target_ids:
+  - CHEBI:156320
+  evidence_ids:
+  - support-2349-origin-owner
+  - support-2349-occurrence-owner
+  - support-2349-source-mibig_compounds
+  - support-2349-source-notes
+  - support-2349-direct-contexts
+  - support-2349-companion-boundaries
+  - support-2349-source-chebi_structures
+  - support-2349-source-lotus_occurrences
+  - support-2349-source-chebi_origins
+  dimensions:
+  - name: citation_scope
+    value: DOI:10.1055/s-0035-1556229 is MIBiG ENTRY-level database provenance. The
+      retained occurrence inventory also has the uppercase DOI form, DOI:10.1021/JO000081H
+      and PMID:10956462 with their respective source roles. Literal citation casing,
+      PMID/DOI forms and placements are preserved without asserting publication independence
+      or a new identifier crosswalk. The ChEBI anti-inflammatory definition is not
+      presented as a newly read primary experiment.
+    definition: Database provenance, historical primary-experiment support and occurrence
+      citations retain distinct roles; no publication independence or fresh access
+      is assumed.
+    evidence_ids:
+    - support-2349-origin-owner
+    - support-2349-occurrence-owner
+    - support-2349-source-mibig_compounds
+    - support-2349-source-notes
+    - support-2349-direct-contexts
+    - support-2349-companion-boundaries
+    - support-2349-source-chebi_structures
+    - support-2349-source-lotus_occurrences
+    - support-2349-source-chebi_origins
+- assessment_id: support-2349-occurrence
+  area: evidence
+  topic: Activity
+  outcome: supported
+  summary: Four written occurrence placements retain the two Fusarium taxa across
+    LOTUS and ChEBI origin sources, including the CNC477 strain detail in its source
+    row. Repeated taxon/publication contexts do not represent four independent experiments
+    and do not strengthen the source-only locus grade. No structured bioactivity,
+    molecular target or biosynthetic mechanism is declared. Exact retained PubChem
+    and BindingDB queries are empty; this does not negate the attributed ChEBI definition’s
+    activity claim or establish universal inactivity.
+  target_ids:
+  - CHEBI:156320
+  evidence_ids:
+  - support-2349-occurrence-owner
+  - support-2349-assay-owner
+  - support-2349-source-routes
+  - support-2349-cached-taxonomy
+  - support-2349-query-lotus_occurrences
+  - support-2349-query-chebi_origins
+  - support-2349-query-cyanometdb_occurrences
+  - support-2349-query-pubchem_bioassay
+  - support-2349-query-bindingdb_targets
+  - support-2349-query-antibioticmech_inchikeys
+  - support-2349-direct-contexts
+  - support-2349-companion-boundaries
+  dimensions:
+  - name: occurrence_scope
+    value: Four written occurrence placements retain the two Fusarium taxa across
+      LOTUS and ChEBI origin sources, including the CNC477 strain detail in its source
+      row. Repeated taxon/publication contexts do not represent four independent experiments
+      and do not strengthen the source-only locus grade. No structured bioactivity,
+      molecular target or biosynthetic mechanism is declared. Exact retained PubChem
+      and BindingDB queries are empty; this does not negate the attributed ChEBI definition’s
+      activity claim or establish universal inactivity.
+    definition: Occurrence placements are not counts of independent experiments or
+      demonstrated producers.
+    evidence_ids:
+    - support-2349-occurrence-owner
+    - support-2349-assay-owner
+    - support-2349-source-routes
+    - support-2349-cached-taxonomy
+    - support-2349-query-lotus_occurrences
+    - support-2349-query-chebi_origins
+    - support-2349-query-cyanometdb_occurrences
+    - support-2349-query-pubchem_bioassay
+    - support-2349-query-bindingdb_targets
+    - support-2349-query-antibioticmech_inchikeys
+    - support-2349-direct-contexts
+    - support-2349-companion-boundaries
+  - name: assay_target_scope
+    value: Four written occurrence placements retain the two Fusarium taxa across
+      LOTUS and ChEBI origin sources, including the CNC477 strain detail in its source
+      row. Repeated taxon/publication contexts do not represent four independent experiments
+      and do not strengthen the source-only locus grade. No structured bioactivity,
+      molecular target or biosynthetic mechanism is declared. Exact retained PubChem
+      and BindingDB queries are empty; this does not negate the attributed ChEBI definition’s
+      activity claim or establish universal inactivity.
+    definition: Exact retained assay/target assertions are bounded; biosynthetic proteins
+      are not pharmacological target evidence.
+    evidence_ids:
+    - support-2349-occurrence-owner
+    - support-2349-assay-owner
+    - support-2349-source-routes
+    - support-2349-cached-taxonomy
+    - support-2349-query-lotus_occurrences
+    - support-2349-query-chebi_origins
+    - support-2349-query-cyanometdb_occurrences
+    - support-2349-query-pubchem_bioassay
+    - support-2349-query-bindingdb_targets
+    - support-2349-query-antibioticmech_inchikeys
+    - support-2349-direct-contexts
+    - support-2349-companion-boundaries
+- assessment_id: support-2349-classification
+  area: consistency
+  topic: Versioned classification applicability
+  outcome: supported
+  summary: 'The versioned Terpenoids/Sesterterpenoids/Mangicol-type sesterterpenoids
+    and is_glycoside:false model output is compatible with the saved C25 carbocyclic
+    polyol and the separately retained ChEBI/source class. Five hydroxyls alone are
+    not a sugar residue: the whole tables show no ring oxygen or O-carbon bridge.
+    This is bounded representation-level applicability, not a refreshed biosynthetic
+    or natural-identity proof.'
+  target_ids:
+  - CHEBI:156320
+  evidence_ids:
+  - support-2349-classification-owner
+  - support-2349-source-mibig_compounds
+  - support-2349-source-npclassifier
+  - support-2349-chemistry
+  - support-2349-topology
+  - support-2349-structure-schema
+  - support-2349-classification-seeder
+  - support-2349-direct-contexts
+  - support-2349-companion-boundaries
+  dimensions:
+  - name: classification_applicability
+    value: 'The versioned Terpenoids/Sesterterpenoids/Mangicol-type sesterterpenoids
+      and is_glycoside:false model output is compatible with the saved C25 carbocyclic
+      polyol and the separately retained ChEBI/source class. Five hydroxyls alone
+      are not a sugar residue: the whole tables show no ring oxygen or O-carbon bridge.
+      This is bounded representation-level applicability, not a refreshed biosynthetic
+      or natural-identity proof.'
+    definition: Model filing labels, observed topology and source BGC classes remain
+      distinct evidence types.
+    evidence_ids:
+    - support-2349-classification-owner
+    - support-2349-source-mibig_compounds
+    - support-2349-source-npclassifier
+    - support-2349-chemistry
+    - support-2349-topology
+    - support-2349-structure-schema
+    - support-2349-classification-seeder
+    - support-2349-direct-contexts
+    - support-2349-companion-boundaries
+- assessment_id: support-2349-completion
+  area: completeness
+  topic: Completion
+  outcome: unknown
+  summary: The complete current owner/history, actual intake, all retained selected
+    source rows and both molecular forms are covered by explicit readings. No maintained-reader
+    root is applicable. Exact biological origin, primary activity and identifier verification
+    remain limited by unavailable fresh access, full QC and complete OAK coverage.
+    A partial qualified review with no confirmed corrective finding is supported.
+  target_ids:
+  - CHEBI:156320
+  evidence_ids:
+  - support-2349-owner
+  - support-2349-capture
+  - support-2349-intake
+  - support-2349-intake-acceptance
+  - support-2349-inventory-acceptance
+  - support-2349-plan
+  - support-2349-plan-acceptance
+  - support-2349-source-notes
+  - support-2349-curation-scope
+  - support-2349-diagnostic-execution
+  - support-2349-diagnostic-acceptance
+  - support-2349-native-acceptance
+  - support-2349-review-profile
+  - support-2349-review-skill
+  - support-2349-query-mibig_compounds
+  - support-2349-query-chebi_structures
+  - support-2349-query-lotus_occurrences
+  - support-2349-query-cyanometdb_occurrences
+  - support-2349-query-npclassifier
+  - support-2349-query-pubchem_bioassay
+  - support-2349-query-bindingdb_targets
+  - support-2349-query-antibioticmech_inchikeys
+  - support-2349-query-chebi_origins
+  dimensions:
+  - name: review_completion
+    value: The complete current owner/history, actual intake, all retained selected
+      source rows and both molecular forms are covered by explicit readings. No maintained-reader
+      root is applicable. Exact biological origin, primary activity and identifier
+      verification remain limited by unavailable fresh access, full QC and complete
+      OAK coverage. A partial qualified review with no confirmed corrective finding
+      is supported.
+    definition: Completion reflects actual evidence access and required-check coverage;
+      parsing and gate success are not scientific proof.
+    evidence_ids:
+    - support-2349-owner
+    - support-2349-capture
+    - support-2349-intake
+    - support-2349-intake-acceptance
+    - support-2349-inventory-acceptance
+    - support-2349-plan
+    - support-2349-plan-acceptance
+    - support-2349-source-notes
+    - support-2349-curation-scope
+    - support-2349-diagnostic-execution
+    - support-2349-diagnostic-acceptance
+    - support-2349-native-acceptance
+    - support-2349-review-profile
+    - support-2349-review-skill
+    - support-2349-query-mibig_compounds
+    - support-2349-query-chebi_structures
+    - support-2349-query-lotus_occurrences
+    - support-2349-query-cyanometdb_occurrences
+    - support-2349-query-npclassifier
+    - support-2349-query-pubchem_bioassay
+    - support-2349-query-bindingdb_targets
+    - support-2349-query-antibioticmech_inchikeys
+    - support-2349-query-chebi_origins
+findings: []
+actions: []
+limitations:
+- All evidence is retained locally. No external publication, identifier, taxonomy,
+  protein sequence or natural stereochemical assertion was refreshed under the absolute
+  no-request instruction.
+- Full QC and complete OAK authority coverage remain unavailable. Original gates,
+  stored-form parsing and maintained-reader preservation establish only their stated
+  scope.
+- Exact empty joins are bounded by saved predicates/snapshots; shared loci, names,
+  taxa or citations do not transfer identity, production, activity or mechanism.
+- Two original undefined-stereo and two charge-rearrangement warnings remain global
+  and unassigned. No additional molecular/YAML parse, source query or target invocation
+  occurred during scientific authoring.
+- No source record or native status/history is edited. Computed model concerns do
+  not automatically establish a maintained-source defect.
+- The whole selected owner was read, but scientific completion is partial because
+  full QC, complete ontology authority coverage and external source verification were
+  unavailable. No native status or history was changed.
+- The branch uses cached base ce6a5498df5be51116bd5e0c119023ee62bb5464. Fresh origin/main
+  verification and publication are deferred because the user prohibits all external
+  requests.
+notes:
+- Support personally read all five complete raw owners/history, actual intakes and
+  the disjoint source partition; exact prior companion carries and BGC/Native complementary
+  readings remain attributed in the joint notes.
+- 'Support personally read all ten saved forms: 312 atom and 338 bond rows, every
+  scalar/ring/stereo/motif/map (a98425, da0f1d, d898a7, dc945f). The original correspondence
+  limits are preserved; no new graph computation or molecular parse.'
+- ROOT operated activation/capture, inventory/composer, canonical intakes and the
+  diagnostic. Native operated original gates and maintained reader under ROOT authorization;
+  ROOT separately accepted results. Scientific authoring invoked none of these targets.
+- Saved review coverage is distinct from the native SEEDED/REVIEWED curation state.
+  Proposed actions are not performed edits.
+tags:
+- offline
+- record-review
+- batch-235
