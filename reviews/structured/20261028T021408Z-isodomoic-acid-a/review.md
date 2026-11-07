@@ -1,0 +1,919 @@
+# Scientific review of isodomoic acid A
+
+- Review: 20261028T021408Z-isodomoic-acid-a
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-28T01:58:01.156143Z
+- Finished UTC: 2026-10-28T02:14:08.054924Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Isodomoic acid A has internally consistent retained structure encodings. The 2018 study reports current parent-specific occurrence in Chondria armata. Complete natural configuration, exact later locus/producer applicability and quantitative activity remain unresolved; derivative and domoic-acid results are kept separate.
+
+## Scope And Provenance
+
+Bounded whole-owner, retained-source-row and saved-encoding assessment with complete accessible 2018 primary text and source-specific metadata. Parent-specific occurrence, new derivatives, proposed biosynthesis and historical context remain distinct.
+
+Selection: One exact record selected in canonical repository path order from the unreviewed population; this report assesses only its declared partial scientific scope.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 14373517042b407747272446f79953ae86d51fa4.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CHEBI:176782 | data/natural_products/amino_acids_and_peptides/isodomoic-acid-a.yaml | generated | isodomoic acid A |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Corpus path and filing integrity | passed | True | CHEBI:176782 | Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its pinned path. |
+| Corpus reproduction | passed | True | CHEBI:176782 | Fresh canonical reproduction gate passed:all3116 records byte-identical to source seeding; source warnings remain retained. |
+| Native deterministic review queue | passed | True | CHEBI:176782 | Fresh deterministic review queue completed:8922 rows across12 queues. Queue output is not scientific-review coverage. |
+| Configured ontology identifier-label correspondence | passed | True | CHEBI:176782 | Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking mismatches and4898no-adapter skips remain explicit. |
+| Full repository quality gate on the fresh main baseline | passed | True | CHEBI:176782 | Canonical just qc completed with actual terminal exit0:1024 tests passed,4 skipped,2 dependency warnings;3116 records passed closed schema validation, site freshness, byte reproduction and lockfile integrity.22 governed artifacts and15 raw inventories passed. Prior DNS failed001 remains preserved. |
+| Native strict target validation | passed | True | CHEBI:176782 | The selected owner passed the documented strict validator. This establishes configured consistency only. |
+| Whole owner and distinct retained source claims | passed | True | CHEBI:176782 | The complete owner retains source-array counts mibig_compounds=1, lotus_occurrences=2, chebi_structures=1, chebi_origins=1, npclassifier=1, cyanometdb_occurrences=0, pubchem_bioassay=0; both supplemental arrays are empty. Retained MIBiG BGC0002644 version2 is questionable quality/unknown completeness with compound-level citation, SOURCE_ASSERTION producer and CLUSTER_DEMONSTRATED locus grade. These are database evidence grades, not independent verification. |
+| Internal structure and geometry consistency | passed | True | CHEBI:176782 | Stored SMILES and Standard InChI agree on full key DDAJBUQQWFXHDM-UUYKTWPLSA-N, formula C15H21NO6, one fragment and charge zero. Both encode three specified carbon centres and agree on normalized alkene stereochemistry. Local stereo_complete=true is encoding completeness, not proof of the natural assignment. A/B have the same connectivity-key block but different stereochemical keys; C has a different retained connectivity key. Encoding-local bond descriptor order does not imply a discrepancy. |
+| Parent identity versus new derivatives | passed | True | CHEBI:176782 | The six newly reported compounds2–7 are methyl/hydroxymethyl isodomoic-acid derivatives and linear glutamate derivatives, not parent A/B/C. Their geometry assignments, including explicitly assumed portions for hydroxymethyl derivatives, cannot verify the stored parent structures. Labeled compound4 incorporation into domoic acid in Pseudo-nitzschia multiseries concerns that precursor/product experiment, not a parent-A/B/C production or enzyme assay. |
+| Exact natural parent configuration | unavailable | True | CHEBI:176782 | The stored encoding is internally consistent, but no atom-by-atom natural assignment of this parent was verified. The 1986 title supplies no structural detail, and current derivative assignments are not parent assignments. |
+| Compound-specific occurrence scope | passed | True | CHEBI:176782 | The 2018 article separately identifies parent isodomoic acid A as compound10 and reports its quantification in Chondria armata material, with author-prepared standards. This supports current natural-sample occurrence. It does not establish cell-autonomous biosynthesis, the exact stored absolute configuration or the later cited genomic locus. Own DOI10.1248/cpb.34.4892 title names structures of isodomoic acids A, B and C from Chondria armata and describes them as insecticidal amino acids. No abstract is supplied. This supports a named publication association only; exact configurations, assay organism, potency and molecular mechanism are not provided by the title. |
+| Exact producer and retained locus applicability | unavailable | True | CHEBI:176782 | The retained producer/cluster evidence cites DOI10.1073/pnas.2117407119 at COMPOUND_EVIDENCE level and records enzymatic assays, OK169902.1 with locus_to7903 and no supplied locus_from. Cached own Crossref title and Significance discuss domoic-acid biosynthesis in Chondria armata broadly; they do not independently resolve the individual A/B/C product, exact accession interval or all catalytic steps. The public PNAS route returned a complete HTTP403 challenge with no own article identity/body. |
+| Direct precursor evidence and proposed pathway | unavailable | True | CHEBI:176782 | The 2018 authors propose a glutamate-related/isoprenoid biosynthetic scheme, including parent A/B context and predicted enzyme families. Only the stated compound4-to-domoic-acid precursor experiment is directly demonstrated there. Predicted families and the broader scheme are not characterized proteins or exact locus proof; the article identifies gene discovery as future work. The whole owner has no inline or referenced causal graph. |
+| Source compound class versus model prediction | unavailable | True | CHEBI:176782 | The retained MIBiG compound class is Monoterpenoid, while its BGC classes are OTHER/TERPENE and NPClassifier separately predicts amino-acid/peptide filing. The proposed glutamate-plus-isoprenoid context is compatible with mixed biosynthetic contributions, but this review does not verify an exclusive source class or every precursor atom. |
+| Parent-specific quantitative activity and target | unavailable | True | CHEBI:176782 | The 1986 title describes the named parents as insecticidal but supplies no assay organism, endpoint value or direct target. Introductory domoic-acid neurotoxicity and the new substituted derivatives cannot supply a parent-specific receptor mechanism. Empty local activity/target and assay arrays do not establish inactivity. |
+
+## Scientific And Domain Assessments
+
+### Whole owner and distinct retained source claims
+
+representation: supported. Targets: CHEBI:176782.
+
+The complete owner retains source-array counts mibig_compounds=1, lotus_occurrences=2, chebi_structures=1, chebi_origins=1, npclassifier=1, cyanometdb_occurrences=0, pubchem_bioassay=0; both supplemental arrays are empty. Retained MIBiG BGC0002644 version2 is questionable quality/unknown completeness with compound-level citation, SOURCE_ASSERTION producer and CLUSTER_DEMONSTRATED locus grade. These are database evidence grades, not independent verification.
+
+### Internal structure and geometry consistency
+
+representation: supported. Targets: CHEBI:176782.
+
+Stored SMILES and Standard InChI agree on full key DDAJBUQQWFXHDM-UUYKTWPLSA-N, formula C15H21NO6, one fragment and charge zero. Both encode three specified carbon centres and agree on normalized alkene stereochemistry. Local stereo_complete=true is encoding completeness, not proof of the natural assignment. A/B have the same connectivity-key block but different stereochemical keys; C has a different retained connectivity key. Encoding-local bond descriptor order does not imply a discrepancy.
+
+### Parent identity versus new derivatives
+
+identity: supported. Targets: CHEBI:176782.
+
+The six newly reported compounds2–7 are methyl/hydroxymethyl isodomoic-acid derivatives and linear glutamate derivatives, not parent A/B/C. Their geometry assignments, including explicitly assumed portions for hydroxymethyl derivatives, cannot verify the stored parent structures. Labeled compound4 incorporation into domoic acid in Pseudo-nitzschia multiseries concerns that precursor/product experiment, not a parent-A/B/C production or enzyme assay.
+
+### Exact natural parent configuration
+
+identity: unknown. Targets: CHEBI:176782.
+
+The stored encoding is internally consistent, but no atom-by-atom natural assignment of this parent was verified. The 1986 title supplies no structural detail, and current derivative assignments are not parent assignments.
+
+### Compound-specific occurrence scope
+
+provenance: supported. Targets: CHEBI:176782.
+
+The 2018 article separately identifies parent isodomoic acid A as compound10 and reports its quantification in Chondria armata material, with author-prepared standards. This supports current natural-sample occurrence. It does not establish cell-autonomous biosynthesis, the exact stored absolute configuration or the later cited genomic locus. Own DOI10.1248/cpb.34.4892 title names structures of isodomoic acids A, B and C from Chondria armata and describes them as insecticidal amino acids. No abstract is supplied. This supports a named publication association only; exact configurations, assay organism, potency and molecular mechanism are not provided by the title.
+
+### Exact producer and retained locus applicability
+
+provenance: unknown. Targets: CHEBI:176782.
+
+The retained producer/cluster evidence cites DOI10.1073/pnas.2117407119 at COMPOUND_EVIDENCE level and records enzymatic assays, OK169902.1 with locus_to7903 and no supplied locus_from. Cached own Crossref title and Significance discuss domoic-acid biosynthesis in Chondria armata broadly; they do not independently resolve the individual A/B/C product, exact accession interval or all catalytic steps. The public PNAS route returned a complete HTTP403 challenge with no own article identity/body.
+
+### Direct precursor evidence and proposed pathway
+
+graph: unknown. Targets: CHEBI:176782.
+
+The 2018 authors propose a glutamate-related/isoprenoid biosynthetic scheme, including parent A/B context and predicted enzyme families. Only the stated compound4-to-domoic-acid precursor experiment is directly demonstrated there. Predicted families and the broader scheme are not characterized proteins or exact locus proof; the article identifies gene discovery as future work. The whole owner has no inline or referenced causal graph.
+
+### Source compound class versus model prediction
+
+completeness: unknown. Targets: CHEBI:176782.
+
+The retained MIBiG compound class is Monoterpenoid, while its BGC classes are OTHER/TERPENE and NPClassifier separately predicts amino-acid/peptide filing. The proposed glutamate-plus-isoprenoid context is compatible with mixed biosynthetic contributions, but this review does not verify an exclusive source class or every precursor atom.
+
+### Parent-specific quantitative activity and target
+
+quantity: unknown. Targets: CHEBI:176782.
+
+The 1986 title describes the named parents as insecticidal but supplies no assay organism, endpoint value or direct target. Introductory domoic-acid neurotoxicity and the new substituted derivatives cannot supply a parent-specific receptor mechanism. Empty local activity/target and assay arrays do not establish inactivity.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| SCI775-LOCAL | /private/tmp/npm-review-work/shared-next-batch078-tentative/tentative-owner-source-inventory-001.json; /entries/4/owner_document; /entries/4/rows; /entries/4/supplemental_retained_rows | context_only | The complete owner retains source-array counts mibig_compounds=1, lotus_occurrences=2, chebi_structures=1, chebi_origins=1, npclassifier=1, cyanometdb_occurrences=0, pubchem_bioassay=0; both supplemental arrays are empty. Retained MIBiG BGC0002644 version2 is questionable quality/unknown completeness with compound-level citation, SOURCE_ASSERTION producer and CLUSTER_DEMONSTRATED locus grade. These are database evidence grades, not independent verification. |
+| SCI775-CHEM | /private/tmp/npm-review-work/shared-next-batch078-tentative/source-science-preparation/root-tentative78-local-chemical-consistency-and-neighbors-001.json; /records/4/smiles; /records/4/inchi; /records/4/comparisons | supports | Stored SMILES and Standard InChI agree on full key DDAJBUQQWFXHDM-UUYKTWPLSA-N, formula C15H21NO6, one fragment and charge zero. Both encode three specified carbon centres and agree on normalized alkene stereochemistry. Local stereo_complete=true is encoding completeness, not proof of the natural assignment. A/B have the same connectivity-key block but different stereochemical keys; C has a different retained connectivity key. Encoding-local bond descriptor order does not imply a discrepancy. |
+| SCI775-PRIMARY-PARENT | /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-primary-001/pmc-5762911.xml; front/article-meta; body Par4, Par13, Par15 and Par25; caption Fig4 | partial | The 2018 article separately identifies parent isodomoic acid A as compound10 and reports its quantification in Chondria armata material, with author-prepared standards. This supports current natural-sample occurrence. It does not establish cell-autonomous biosynthesis, the exact stored absolute configuration or the later cited genomic locus. |
+| SCI775-PRIMARY-DERIVATIVES | /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-primary-001/pmc-5762911.xml; body Par7, Par9, Par11–Par12, Par14 and Par18 | partial | The six newly reported compounds2–7 are methyl/hydroxymethyl isodomoic-acid derivatives and linear glutamate derivatives, not parent A/B/C. Their geometry assignments, including explicitly assumed portions for hydroxymethyl derivatives, cannot verify the stored parent structures. Labeled compound4 incorporation into domoic acid in Pseudo-nitzschia multiseries concerns that precursor/product experiment, not a parent-A/B/C production or enzyme assay. |
+| SCI775-PRIMARY-SCHEME | /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-primary-001/pmc-5762911.xml; body Par15–Par18; caption Fig6 | partial | The 2018 authors propose a glutamate-related/isoprenoid biosynthetic scheme, including parent A/B context and predicted enzyme families. Only the stated compound4-to-domoic-acid precursor experiment is directly demonstrated there. Predicted families and the broader scheme are not characterized proteins or exact locus proof; the article identifies gene discovery as future work. |
+| SCI775-CPB-TITLE | /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-metadata-held-crossref-001/doi-07.json; /message/DOI; /message/title; absent /message/abstract | partial | Own DOI10.1248/cpb.34.4892 title names structures of isodomoic acids A, B and C from Chondria armata and describes them as insecticidal amino acids. No abstract is supplied. This supports a named publication association only; exact configurations, assay organism, potency and molecular mechanism are not provided by the title. |
+| SCI775-PNAS-METADATA | /private/tmp/npm-review-work/shared-next-batch068-tentative/literature-preparation/public-metadata-crossref-001/doi-094a91803edd.json; /message/DOI; /message/title; /message/abstract Significance only | context_only | The retained producer/cluster evidence cites DOI10.1073/pnas.2117407119 at COMPOUND_EVIDENCE level and records enzymatic assays, OK169902.1 with locus_to7903 and no supplied locus_from. Cached own Crossref title and Significance discuss domoic-acid biosynthesis in Chondria armata broadly; they do not independently resolve the individual A/B/C product, exact accession interval or all catalytic steps. The public PNAS route returned a complete HTTP403 challenge with no own article identity/body. |
+| SCI775-PNAS-ACCESS | /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-primary-independent-001/pnas-2117407119/pnas-2117407119-primary.html.access.json; /http_status; /identity; /body; /success | context_only | The original PNAS initial route returned HTTP403 challenge HTML; no own scientific article identity or body was available. This is an access limitation, not a canonical review-validation failure or scientific contradiction. No retry or alternate was executed. |
+| SCI775-TOXICON-TITLE | /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-metadata-held-crossref-001/doi-06.json; /message/DOI; /message/title; absent /message/abstract | context_only | The separate LOTUS DOI10.1016/s0041-0101(96)00123-7 has an own title naming two new domoic-acid isomers from Chondria armata without naming either isomer. The inspected 2018 article cites this as historical G/H context. Title-only metadata does not establish its applicability to parent A, nor prove a miscitation or absence of A in the full paper. |
+
+## Limits And Additional Notes
+
+- Complete 2018 article text and captions were read, but figure pixels and supplements were not independently inspected. Parent and derivative identities and assumptions remain distinct.
+- The 1986 source was inspected only as own DOI/title metadata, not full text. Its title does not prove natural configurations or quantitative activity.
+- The later PNAS source remains cached title/Significance-only metadata plus a failed HTTP403 primary attempt; exact product/locus and accession claims remain unresolved.
+- Retained database producer and locus grades have not been upgraded. Natural-sample occurrence is separate from cell-autonomous biosynthesis.
+- MIBiG source classes and NPClassifier predictions retain their attribution; complete exact precursor/class reconciliation remains unresolved.
+- The isotope incorporation result concerns compound4 and domoic acid, not a parent-A/B/C enzyme assay. No operational procedure or speculative target is added.
+- Original owner/source, chemistry, HTTP and later reading clocks remain distinct; no scientific record or curation status was modified.
+- Configured consistency only; independent scientific claim support and unrestricted remote authority refresh are not implied.
+- FailedQC001 is retained for an explicit separate network-enabled retry; no artifact will be overwritten.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint and before downstream tests. Its actual exit1/log/input capture/root observation remain pinned; the selected successful canonical QC attempt002 is separately timed. No individual-review validation failure or counter reset is claimed.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings; this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions and no-adapter pairs; a successful command does not convert these into verified scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population was checked; external caches and generated bytecode are not asserted to be independently byte-pinned.
+- The whole local owner and retained source rows were read. Full-owner scientific verification remains false; scientific_review denotes the bounded scientific interpretation in this report.
+- Original owner/source reading, two-encoding computation, neighbor inspection, HTTP retrieval and later metadata reading retain separate clocks. Official intake separately computed SMILES facts.
+- No scientific record, maintained input or native curation status was changed. Any findings and actions record ROOT-adopted proposed work; exact-source limitations and unavailable checks remain explicit.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261028T021408Z-isodomoic-acid-a
+title: Scientific review of isodomoic acid A
+started_at: '2026-10-28T01:58:01.156143Z'
+finished_at: '2026-10-28T02:14:08.054924Z'
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: Isodomoic acid A has internally consistent retained structure encodings.
+  The 2018 study reports current parent-specific occurrence in Chondria armata. Complete
+  natural configuration, exact later locus/producer applicability and quantitative
+  activity remain unresolved; derivative and domoic-acid results are kept separate.
+source:
+  git_revision: 14373517042b407747272446f79953ae86d51fa4
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/isodomoic-acid-a.yaml
+    sha256: 40cbab3963b21f6af6f5466c194a83b246ecbb1f703fbbdc466774b227c45f3d
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+targets:
+- target_id: CHEBI:176782
+  path: data/natural_products/amino_acids_and_peptides/isodomoic-acid-a.yaml
+  label: isodomoic acid A
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+scope:
+  description: Bounded whole-owner, retained-source-row and saved-encoding assessment
+    with complete accessible 2018 primary text and source-specific metadata. Parent-specific
+    occurrence, new derivatives, proposed biosynthesis and historical context remain
+    distinct.
+  selection: One exact record selected in canonical repository path order from the
+    unreviewed population; this report assesses only its declared partial scientific
+    scope.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CHEBI:176782
+  exclusions:
+  - target: Full-owner scientific verification
+    reason: Not independently established within this report; the corresponding scientific
+      checks, assessments and source-access limitations retain their stated boundaries.
+  - target: Exact natural parent configuration
+    reason: Not independently established within this report; the corresponding scientific
+      checks, assessments and source-access limitations retain their stated boundaries.
+  - target: Exact producer and retained locus applicability
+    reason: Not independently established within this report; the corresponding scientific
+      checks, assessments and source-access limitations retain their stated boundaries.
+  - target: Direct precursor evidence and proposed pathway
+    reason: Not independently established within this report; the corresponding scientific
+      checks, assessments and source-access limitations retain their stated boundaries.
+  - target: Source compound class versus model prediction
+    reason: Not independently established within this report; the corresponding scientific
+      checks, assessments and source-access limitations retain their stated boundaries.
+  - target: Parent-specific quantitative activity and target
+    reason: Not independently established within this report; the corresponding scientific
+      checks, assessments and source-access limitations retain their stated boundaries.
+  - target: Complete 1986 and later biosynthesis primary articles
+    reason: Not independently established within this report; the corresponding scientific
+      checks, assessments and source-access limitations retain their stated boundaries.
+  - target: Supplementary structure assignments and figure image inspection
+    reason: Not independently established within this report; the corresponding scientific
+      checks, assessments and source-access limitations retain their stated boundaries.
+checks:
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its
+    pinned path.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-corpus-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.783967Z;
+    finished 2026-10-25T22:37:16.453216Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.log.
+    Reused for batch078 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch078. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - CHEBI:176782
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: Fresh canonical reproduction gate passed:all3116 records byte-identical
+    to source seeding; source warnings remain retained.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-reproduction-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784055Z;
+    finished 2026-10-25T22:37:31.682209Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.log.
+    Reused for batch078 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch078. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - CHEBI:176782
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: Fresh deterministic review queue completed:8922 rows across12 queues. Queue
+    output is not scientific-review coverage.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-review-queue-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just review-queue --tsv /private/tmp/npm-review-queue-batch-036-fresh14373517-001.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.781802Z;
+    finished 2026-10-25T22:37:08.229737Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.log.
+    Reused for batch078 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch078. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - CHEBI:176782
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking
+    mismatches and4898no-adapter skips remain explicit.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-validate-products-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784040Z;
+    finished 2026-10-25T22:37:32.251879Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.log.
+    Reused for batch078 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch078. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - CHEBI:176782
+- check_id: shared-qc
+  name: Full repository quality gate on the fresh main baseline
+  status: passed
+  required: true
+  summary: Canonical just qc completed with actual terminal exit0:1024 tests passed,4
+    skipped,2 dependency warnings;3116 records passed closed schema validation, site
+    freshness, byte reproduction and lockfile integrity.22 governed artifacts and15
+    raw inventories passed. Prior DNS failed001 remains preserved.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-qc-attempt-002
+    PYTHONDONTWRITEBYTECODE=1 just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-002 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:40:55.179857Z;
+    finished 2026-10-25T22:46:28.974296Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.log.
+    Reused for batch078 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch078. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - CHEBI:176782
+- check_id: C-STRICT
+  name: Native strict target validation
+  status: passed
+  required: true
+  summary: The selected owner passed the documented strict validator. This establishes
+    configured consistency only.
+  command: just validate-strict data/natural_products/amino_acids_and_peptides/isodomoic-acid-a.yaml
+    --out /private/tmp/npm-review-work/775/strict.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Actual intake execution finished 2026-10-28T01:58:02.494588Z. Original
+    receipt: /private/tmp/npm-review-work/775/strict-receipt.json.'
+  target_ids:
+  - CHEBI:176782
+- check_id: SCI775-LOCAL-JOINS
+  name: Whole owner and distinct retained source claims
+  status: passed
+  required: true
+  summary: The complete owner retains source-array counts mibig_compounds=1, lotus_occurrences=2,
+    chebi_structures=1, chebi_origins=1, npclassifier=1, cyanometdb_occurrences=0,
+    pubchem_bioassay=0; both supplemental arrays are empty. Retained MIBiG BGC0002644
+    version2 is questionable quality/unknown completeness with compound-level citation,
+    SOURCE_ASSERTION producer and CLUSTER_DEMONSTRATED locus grade. These are database
+    evidence grades, not independent verification.
+  evidence_ids:
+  - SCI775-LOCAL
+  target_ids:
+  - CHEBI:176782
+- check_id: SCI775-ENCODINGS
+  name: Internal structure and geometry consistency
+  status: passed
+  required: true
+  summary: Stored SMILES and Standard InChI agree on full key DDAJBUQQWFXHDM-UUYKTWPLSA-N,
+    formula C15H21NO6, one fragment and charge zero. Both encode three specified carbon
+    centres and agree on normalized alkene stereochemistry. Local stereo_complete=true
+    is encoding completeness, not proof of the natural assignment. A/B have the same
+    connectivity-key block but different stereochemical keys; C has a different retained
+    connectivity key. Encoding-local bond descriptor order does not imply a discrepancy.
+  evidence_ids:
+  - SCI775-LOCAL
+  - SCI775-CHEM
+  target_ids:
+  - CHEBI:176782
+- check_id: SCI775-PARENT-DERIVATIVE
+  name: Parent identity versus new derivatives
+  status: passed
+  required: true
+  summary: The six newly reported compounds2–7 are methyl/hydroxymethyl isodomoic-acid
+    derivatives and linear glutamate derivatives, not parent A/B/C. Their geometry
+    assignments, including explicitly assumed portions for hydroxymethyl derivatives,
+    cannot verify the stored parent structures. Labeled compound4 incorporation into
+    domoic acid in Pseudo-nitzschia multiseries concerns that precursor/product experiment,
+    not a parent-A/B/C production or enzyme assay.
+  evidence_ids:
+  - SCI775-PRIMARY-PARENT
+  - SCI775-PRIMARY-DERIVATIVES
+  target_ids:
+  - CHEBI:176782
+- check_id: SCI775-NATURAL-CONFIGURATION
+  name: Exact natural parent configuration
+  status: unavailable
+  required: true
+  summary: The stored encoding is internally consistent, but no atom-by-atom natural
+    assignment of this parent was verified. The 1986 title supplies no structural
+    detail, and current derivative assignments are not parent assignments.
+  evidence_ids:
+  - SCI775-CHEM
+  - SCI775-PRIMARY-DERIVATIVES
+  - SCI775-CPB-TITLE
+  target_ids:
+  - CHEBI:176782
+- check_id: SCI775-OCCURRENCE
+  name: Compound-specific occurrence scope
+  status: passed
+  required: true
+  summary: The 2018 article separately identifies parent isodomoic acid A as compound10
+    and reports its quantification in Chondria armata material, with author-prepared
+    standards. This supports current natural-sample occurrence. It does not establish
+    cell-autonomous biosynthesis, the exact stored absolute configuration or the later
+    cited genomic locus. Own DOI10.1248/cpb.34.4892 title names structures of isodomoic
+    acids A, B and C from Chondria armata and describes them as insecticidal amino
+    acids. No abstract is supplied. This supports a named publication association
+    only; exact configurations, assay organism, potency and molecular mechanism are
+    not provided by the title.
+  evidence_ids:
+  - SCI775-LOCAL
+  - SCI775-PRIMARY-PARENT
+  - SCI775-CPB-TITLE
+  target_ids:
+  - CHEBI:176782
+- check_id: SCI775-PRODUCER-LOCUS
+  name: Exact producer and retained locus applicability
+  status: unavailable
+  required: true
+  summary: The retained producer/cluster evidence cites DOI10.1073/pnas.2117407119
+    at COMPOUND_EVIDENCE level and records enzymatic assays, OK169902.1 with locus_to7903
+    and no supplied locus_from. Cached own Crossref title and Significance discuss
+    domoic-acid biosynthesis in Chondria armata broadly; they do not independently
+    resolve the individual A/B/C product, exact accession interval or all catalytic
+    steps. The public PNAS route returned a complete HTTP403 challenge with no own
+    article identity/body.
+  evidence_ids:
+  - SCI775-LOCAL
+  - SCI775-PNAS-METADATA
+  - SCI775-PNAS-ACCESS
+  target_ids:
+  - CHEBI:176782
+- check_id: SCI775-PROPOSED-MECHANISM
+  name: Direct precursor evidence and proposed pathway
+  status: unavailable
+  required: true
+  summary: The 2018 authors propose a glutamate-related/isoprenoid biosynthetic scheme,
+    including parent A/B context and predicted enzyme families. Only the stated compound4-to-domoic-acid
+    precursor experiment is directly demonstrated there. Predicted families and the
+    broader scheme are not characterized proteins or exact locus proof; the article
+    identifies gene discovery as future work. The whole owner has no inline or referenced
+    causal graph.
+  evidence_ids:
+  - SCI775-LOCAL
+  - SCI775-PRIMARY-SCHEME
+  - SCI775-PRIMARY-DERIVATIVES
+  target_ids:
+  - CHEBI:176782
+- check_id: SCI775-CLASSIFICATION
+  name: Source compound class versus model prediction
+  status: unavailable
+  required: true
+  summary: The retained MIBiG compound class is Monoterpenoid, while its BGC classes
+    are OTHER/TERPENE and NPClassifier separately predicts amino-acid/peptide filing.
+    The proposed glutamate-plus-isoprenoid context is compatible with mixed biosynthetic
+    contributions, but this review does not verify an exclusive source class or every
+    precursor atom.
+  evidence_ids:
+  - SCI775-LOCAL
+  - SCI775-PRIMARY-SCHEME
+  target_ids:
+  - CHEBI:176782
+- check_id: SCI775-ACTIVITY
+  name: Parent-specific quantitative activity and target
+  status: unavailable
+  required: true
+  summary: The 1986 title describes the named parents as insecticidal but supplies
+    no assay organism, endpoint value or direct target. Introductory domoic-acid neurotoxicity
+    and the new substituted derivatives cannot supply a parent-specific receptor mechanism.
+    Empty local activity/target and assay arrays do not establish inactivity.
+  evidence_ids:
+  - SCI775-LOCAL
+  - SCI775-CPB-TITLE
+  - SCI775-PRIMARY-DERIVATIVES
+  target_ids:
+  - CHEBI:176782
+evidence:
+- evidence_id: SCI775-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch078-tentative/tentative-owner-source-inventory-001.json
+  accessed_at: '2026-10-28T01:06:16.361028Z'
+  locator: /entries/4/owner_document; /entries/4/rows; /entries/4/supplemental_retained_rows
+  snapshot_sha256: 6e7c1275120177e359bfc0f18d576ac2c47a4b2c7f86b5316c76c23a48805005
+  support: context_only
+  summary: The complete owner retains source-array counts mibig_compounds=1, lotus_occurrences=2,
+    chebi_structures=1, chebi_origins=1, npclassifier=1, cyanometdb_occurrences=0,
+    pubchem_bioassay=0; both supplemental arrays are empty. Retained MIBiG BGC0002644
+    version2 is questionable quality/unknown completeness with compound-level citation,
+    SOURCE_ASSERTION producer and CLUSTER_DEMONSTRATED locus grade. These are database
+    evidence grades, not independent verification.
+- evidence_id: SCI775-CHEM
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch078-tentative/source-science-preparation/root-tentative78-local-chemical-consistency-and-neighbors-001.json
+  accessed_at: '2026-10-28T01:12:04.988330Z'
+  locator: /records/4/smiles; /records/4/inchi; /records/4/comparisons
+  snapshot_sha256: 6a561d4c073dd142c1a75ad210503570b162fc8a6ff0994c3ee847503f67e37d
+  support: supports
+  summary: Stored SMILES and Standard InChI agree on full key DDAJBUQQWFXHDM-UUYKTWPLSA-N,
+    formula C15H21NO6, one fragment and charge zero. Both encode three specified carbon
+    centres and agree on normalized alkene stereochemistry. Local stereo_complete=true
+    is encoding completeness, not proof of the natural assignment. A/B have the same
+    connectivity-key block but different stereochemical keys; C has a different retained
+    connectivity key. Encoding-local bond descriptor order does not imply a discrepancy.
+- evidence_id: SCI775-PRIMARY-PARENT
+  kind: primary_source
+  reference: /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-primary-001/pmc-5762911.xml
+  accessed_at: '2026-10-28T01:40:20.813992Z'
+  locator: front/article-meta; body Par4, Par13, Par15 and Par25; caption Fig4
+  snapshot_sha256: 6ce1d671ff1bfa2efce50c960116d96d9726f5d81d687e775f59e0ac36bc9ead
+  support: partial
+  summary: The 2018 article separately identifies parent isodomoic acid A as compound10
+    and reports its quantification in Chondria armata material, with author-prepared
+    standards. This supports current natural-sample occurrence. It does not establish
+    cell-autonomous biosynthesis, the exact stored absolute configuration or the later
+    cited genomic locus.
+- evidence_id: SCI775-PRIMARY-DERIVATIVES
+  kind: primary_source
+  reference: /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-primary-001/pmc-5762911.xml
+  accessed_at: '2026-10-28T01:40:20.813992Z'
+  locator: body Par7, Par9, Par11–Par12, Par14 and Par18
+  snapshot_sha256: 6ce1d671ff1bfa2efce50c960116d96d9726f5d81d687e775f59e0ac36bc9ead
+  support: partial
+  summary: The six newly reported compounds2–7 are methyl/hydroxymethyl isodomoic-acid
+    derivatives and linear glutamate derivatives, not parent A/B/C. Their geometry
+    assignments, including explicitly assumed portions for hydroxymethyl derivatives,
+    cannot verify the stored parent structures. Labeled compound4 incorporation into
+    domoic acid in Pseudo-nitzschia multiseries concerns that precursor/product experiment,
+    not a parent-A/B/C production or enzyme assay.
+- evidence_id: SCI775-PRIMARY-SCHEME
+  kind: primary_source
+  reference: /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-primary-001/pmc-5762911.xml
+  accessed_at: '2026-10-28T01:40:20.813992Z'
+  locator: body Par15–Par18; caption Fig6
+  snapshot_sha256: 6ce1d671ff1bfa2efce50c960116d96d9726f5d81d687e775f59e0ac36bc9ead
+  support: partial
+  summary: The 2018 authors propose a glutamate-related/isoprenoid biosynthetic scheme,
+    including parent A/B context and predicted enzyme families. Only the stated compound4-to-domoic-acid
+    precursor experiment is directly demonstrated there. Predicted families and the
+    broader scheme are not characterized proteins or exact locus proof; the article
+    identifies gene discovery as future work.
+- evidence_id: SCI775-CPB-TITLE
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-metadata-held-crossref-001/doi-07.json
+  accessed_at: '2026-10-28T01:56:34.271825Z'
+  locator: /message/DOI; /message/title; absent /message/abstract
+  snapshot_sha256: 9993d1b2ebca2a56993950ab610839b9bef42fedbec3fcee198f6286184d1231
+  support: partial
+  summary: Own DOI10.1248/cpb.34.4892 title names structures of isodomoic acids A,
+    B and C from Chondria armata and describes them as insecticidal amino acids. No
+    abstract is supplied. This supports a named publication association only; exact
+    configurations, assay organism, potency and molecular mechanism are not provided
+    by the title.
+- evidence_id: SCI775-PNAS-METADATA
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch068-tentative/literature-preparation/public-metadata-crossref-001/doi-094a91803edd.json
+  accessed_at: '2026-10-27T16:14:30.788083Z'
+  locator: /message/DOI; /message/title; /message/abstract Significance only
+  snapshot_sha256: b82684f8e4931009e0b70713a163eec9e10d9886f30932fc81bbe50d782ee1db
+  support: context_only
+  summary: The retained producer/cluster evidence cites DOI10.1073/pnas.2117407119
+    at COMPOUND_EVIDENCE level and records enzymatic assays, OK169902.1 with locus_to7903
+    and no supplied locus_from. Cached own Crossref title and Significance discuss
+    domoic-acid biosynthesis in Chondria armata broadly; they do not independently
+    resolve the individual A/B/C product, exact accession interval or all catalytic
+    steps. The public PNAS route returned a complete HTTP403 challenge with no own
+    article identity/body.
+- evidence_id: SCI775-PNAS-ACCESS
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-primary-independent-001/pnas-2117407119/pnas-2117407119-primary.html.access.json
+  accessed_at: '2026-10-28T01:49:22.753474Z'
+  locator: /http_status; /identity; /body; /success
+  snapshot_sha256: 66d0c98104614f9b220d6592e850f683f219854ed8af54e643fc890640bc2c65
+  support: context_only
+  summary: The original PNAS initial route returned HTTP403 challenge HTML; no own
+    scientific article identity or body was available. This is an access limitation,
+    not a canonical review-validation failure or scientific contradiction. No retry
+    or alternate was executed.
+- evidence_id: SCI775-TOXICON-TITLE
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-metadata-held-crossref-001/doi-06.json
+  accessed_at: '2026-10-28T01:56:33.288553Z'
+  locator: /message/DOI; /message/title; absent /message/abstract
+  snapshot_sha256: 2c5a1cbe0246d176b8426d57aa59dfd512410c7ed94fe7afa0c880322b4edc1d
+  support: context_only
+  summary: The separate LOTUS DOI10.1016/s0041-0101(96)00123-7 has an own title naming
+    two new domoic-acid isomers from Chondria armata without naming either isomer.
+    The inspected 2018 article cites this as historical G/H context. Title-only metadata
+    does not establish its applicability to parent A, nor prove a miscitation or absence
+    of A in the full paper.
+assessments:
+- assessment_id: SCI775-LOCAL-JOINS
+  area: representation
+  topic: Whole owner and distinct retained source claims
+  outcome: supported
+  summary: The complete owner retains source-array counts mibig_compounds=1, lotus_occurrences=2,
+    chebi_structures=1, chebi_origins=1, npclassifier=1, cyanometdb_occurrences=0,
+    pubchem_bioassay=0; both supplemental arrays are empty. Retained MIBiG BGC0002644
+    version2 is questionable quality/unknown completeness with compound-level citation,
+    SOURCE_ASSERTION producer and CLUSTER_DEMONSTRATED locus grade. These are database
+    evidence grades, not independent verification.
+  evidence_ids:
+  - SCI775-LOCAL
+  target_ids:
+  - CHEBI:176782
+- assessment_id: SCI775-ENCODINGS
+  area: representation
+  topic: Internal structure and geometry consistency
+  outcome: supported
+  summary: Stored SMILES and Standard InChI agree on full key DDAJBUQQWFXHDM-UUYKTWPLSA-N,
+    formula C15H21NO6, one fragment and charge zero. Both encode three specified carbon
+    centres and agree on normalized alkene stereochemistry. Local stereo_complete=true
+    is encoding completeness, not proof of the natural assignment. A/B have the same
+    connectivity-key block but different stereochemical keys; C has a different retained
+    connectivity key. Encoding-local bond descriptor order does not imply a discrepancy.
+  evidence_ids:
+  - SCI775-LOCAL
+  - SCI775-CHEM
+  target_ids:
+  - CHEBI:176782
+- assessment_id: SCI775-PARENT-DERIVATIVE
+  area: identity
+  topic: Parent identity versus new derivatives
+  outcome: supported
+  summary: The six newly reported compounds2–7 are methyl/hydroxymethyl isodomoic-acid
+    derivatives and linear glutamate derivatives, not parent A/B/C. Their geometry
+    assignments, including explicitly assumed portions for hydroxymethyl derivatives,
+    cannot verify the stored parent structures. Labeled compound4 incorporation into
+    domoic acid in Pseudo-nitzschia multiseries concerns that precursor/product experiment,
+    not a parent-A/B/C production or enzyme assay.
+  evidence_ids:
+  - SCI775-PRIMARY-PARENT
+  - SCI775-PRIMARY-DERIVATIVES
+  target_ids:
+  - CHEBI:176782
+- assessment_id: SCI775-NATURAL-CONFIGURATION
+  area: identity
+  topic: Exact natural parent configuration
+  outcome: unknown
+  summary: The stored encoding is internally consistent, but no atom-by-atom natural
+    assignment of this parent was verified. The 1986 title supplies no structural
+    detail, and current derivative assignments are not parent assignments.
+  evidence_ids:
+  - SCI775-CHEM
+  - SCI775-PRIMARY-DERIVATIVES
+  - SCI775-CPB-TITLE
+  target_ids:
+  - CHEBI:176782
+- assessment_id: SCI775-OCCURRENCE
+  area: provenance
+  topic: Compound-specific occurrence scope
+  outcome: supported
+  summary: The 2018 article separately identifies parent isodomoic acid A as compound10
+    and reports its quantification in Chondria armata material, with author-prepared
+    standards. This supports current natural-sample occurrence. It does not establish
+    cell-autonomous biosynthesis, the exact stored absolute configuration or the later
+    cited genomic locus. Own DOI10.1248/cpb.34.4892 title names structures of isodomoic
+    acids A, B and C from Chondria armata and describes them as insecticidal amino
+    acids. No abstract is supplied. This supports a named publication association
+    only; exact configurations, assay organism, potency and molecular mechanism are
+    not provided by the title.
+  evidence_ids:
+  - SCI775-LOCAL
+  - SCI775-PRIMARY-PARENT
+  - SCI775-CPB-TITLE
+  target_ids:
+  - CHEBI:176782
+- assessment_id: SCI775-PRODUCER-LOCUS
+  area: provenance
+  topic: Exact producer and retained locus applicability
+  outcome: unknown
+  summary: The retained producer/cluster evidence cites DOI10.1073/pnas.2117407119
+    at COMPOUND_EVIDENCE level and records enzymatic assays, OK169902.1 with locus_to7903
+    and no supplied locus_from. Cached own Crossref title and Significance discuss
+    domoic-acid biosynthesis in Chondria armata broadly; they do not independently
+    resolve the individual A/B/C product, exact accession interval or all catalytic
+    steps. The public PNAS route returned a complete HTTP403 challenge with no own
+    article identity/body.
+  evidence_ids:
+  - SCI775-LOCAL
+  - SCI775-PNAS-METADATA
+  - SCI775-PNAS-ACCESS
+  target_ids:
+  - CHEBI:176782
+- assessment_id: SCI775-PROPOSED-MECHANISM
+  area: graph
+  topic: Direct precursor evidence and proposed pathway
+  outcome: unknown
+  summary: The 2018 authors propose a glutamate-related/isoprenoid biosynthetic scheme,
+    including parent A/B context and predicted enzyme families. Only the stated compound4-to-domoic-acid
+    precursor experiment is directly demonstrated there. Predicted families and the
+    broader scheme are not characterized proteins or exact locus proof; the article
+    identifies gene discovery as future work. The whole owner has no inline or referenced
+    causal graph.
+  evidence_ids:
+  - SCI775-LOCAL
+  - SCI775-PRIMARY-SCHEME
+  - SCI775-PRIMARY-DERIVATIVES
+  target_ids:
+  - CHEBI:176782
+- assessment_id: SCI775-CLASSIFICATION
+  area: completeness
+  topic: Source compound class versus model prediction
+  outcome: unknown
+  summary: The retained MIBiG compound class is Monoterpenoid, while its BGC classes
+    are OTHER/TERPENE and NPClassifier separately predicts amino-acid/peptide filing.
+    The proposed glutamate-plus-isoprenoid context is compatible with mixed biosynthetic
+    contributions, but this review does not verify an exclusive source class or every
+    precursor atom.
+  evidence_ids:
+  - SCI775-LOCAL
+  - SCI775-PRIMARY-SCHEME
+  target_ids:
+  - CHEBI:176782
+- assessment_id: SCI775-ACTIVITY
+  area: quantity
+  topic: Parent-specific quantitative activity and target
+  outcome: unknown
+  summary: The 1986 title describes the named parents as insecticidal but supplies
+    no assay organism, endpoint value or direct target. Introductory domoic-acid neurotoxicity
+    and the new substituted derivatives cannot supply a parent-specific receptor mechanism.
+    Empty local activity/target and assay arrays do not establish inactivity.
+  evidence_ids:
+  - SCI775-LOCAL
+  - SCI775-CPB-TITLE
+  - SCI775-PRIMARY-DERIVATIVES
+  target_ids:
+  - CHEBI:176782
+findings: []
+actions: []
+limitations:
+- Complete 2018 article text and captions were read, but figure pixels and supplements
+  were not independently inspected. Parent and derivative identities and assumptions
+  remain distinct.
+- The 1986 source was inspected only as own DOI/title metadata, not full text. Its
+  title does not prove natural configurations or quantitative activity.
+- The later PNAS source remains cached title/Significance-only metadata plus a failed
+  HTTP403 primary attempt; exact product/locus and accession claims remain unresolved.
+- Retained database producer and locus grades have not been upgraded. Natural-sample
+  occurrence is separate from cell-autonomous biosynthesis.
+- MIBiG source classes and NPClassifier predictions retain their attribution; complete
+  exact precursor/class reconciliation remains unresolved.
+- The isotope incorporation result concerns compound4 and domoic acid, not a parent-A/B/C
+  enzyme assay. No operational procedure or speculative target is added.
+- Original owner/source, chemistry, HTTP and later reading clocks remain distinct;
+  no scientific record or curation status was modified.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- FailedQC001 is retained for an explicit separate network-enabled retry; no artifact
+  will be overwritten.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint
+  and before downstream tests. Its actual exit1/log/input capture/root observation
+  remain pinned; the selected successful canonical QC attempt002 is separately timed.
+  No individual-review validation failure or counter reset is claimed.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter
+  skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings;
+  this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld
+  nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological
+  or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological
+  production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions
+  and no-adapter pairs; a successful command does not convert these into verified
+  scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command
+  execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population
+  was checked; external caches and generated bytecode are not asserted to be independently
+  byte-pinned.
+notes:
+- The whole local owner and retained source rows were read. Full-owner scientific
+  verification remains false; scientific_review denotes the bounded scientific interpretation
+  in this report.
+- Original owner/source reading, two-encoding computation, neighbor inspection, HTTP
+  retrieval and later metadata reading retain separate clocks. Official intake separately
+  computed SMILES facts.
+- No scientific record, maintained input or native curation status was changed. Any
+  findings and actions record ROOT-adopted proposed work; exact-source limitations
+  and unavailable checks remain explicit.
+```
