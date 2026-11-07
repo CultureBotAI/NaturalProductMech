@@ -1,0 +1,1847 @@
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T200727Z-congocidine
+title: 'congocidine: identity and claim-level evidence review'
+started_at: '2026-10-21T20:01:00.713318Z'
+finished_at: '2026-10-21T20:07:27.096513Z'
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: Congocidine/netropsin chemical identity is supported with an explicit source
+  tautomer boundary. A siderophore citation, functional IC50 values emitted as binding,
+  two biochemical assays classified as antiparasitic, and fragment-reference sequence
+  wording need curation. Original native-grade and assay-form source gaps remain.
+source:
+  git_revision: 1c2402097718c138b081e00943de8f04de0541cd
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: curation/pubchem_bioassay_exclusions.tsv
+    sha256: 76f9cbb17e62a270afed637b5058a553cfe85c754c6c9ec406635f12dae572fa
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/colibrimycin.yaml
+    sha256: 23ce306bc47f27ffb3fe67b6e80d3da9ab22317726cd9085d5d326bd0f5cc323
+    role: context
+  - path: data/natural_products/alkaloids/collismycin-a.yaml
+    sha256: 9d76e2f7a86bb0a62eb38dc832634c91f70dde1224e9d79330d3bbdf216f8745
+    role: context
+  - path: data/natural_products/alkaloids/communesin-a.yaml
+    sha256: 6af8c84f54f414c6a8caddc0fbe3f00a2fa7fe9ce581ae5aec9cc31d12509a5b
+    role: context
+  - path: data/natural_products/alkaloids/communesin-b.yaml
+    sha256: d70d91a01d1f2a63fd65620cc01cf4788deff83cd46b6d4667f619a64e1f8ac2
+    role: context
+  - path: data/natural_products/alkaloids/communesin-c.yaml
+    sha256: f8770ff55b9ed4572cfa052ae366957b1bbf4f18e02f841ceb0c113b38040e0c
+    role: context
+  - path: data/natural_products/alkaloids/communesin-d.yaml
+    sha256: b45a4ed6f68f87fa95da2d4dd36479602d38add8cbc009a301881785950ec17a
+    role: context
+  - path: data/natural_products/alkaloids/communesin-e.yaml
+    sha256: 04d85b78a1d5566dee72b305dabd726fb33f893736537420061b6dcddd2b7728
+    role: context
+  - path: data/natural_products/alkaloids/communesin-g.yaml
+    sha256: bb12cd74c80df90f78b3f5bac466d3ce0ad36bcd5ff242fb9e8785deb9adc94c
+    role: context
+  - path: data/natural_products/alkaloids/communesin-h.yaml
+    sha256: 416fa8ce7f2b5b2c74111dd1317b91800ec39a2000c19d3dcd908a1afe2c080b
+    role: context
+  - path: data/natural_products/alkaloids/congocidine.yaml
+    sha256: f7e696f8f1c74b18e62f6f8cc2b77ff4ab95b5fe22dbae5281ae1061759e9df8
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/bioassay_exclusions.py
+    sha256: 4a4176e072ac9759aa8a9e88300d7e2de5aaf4ebf30b5c42fcf4c9c0b6cebbb4
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/lotus_exclusions.py
+    sha256: 6352cac7c587eab5a56d907c523cc899d02d197009081624bf8649c675ee30f7
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+    role: context
+  - path: src/naturalproductmech/curate/xref_exclusions.py
+    sha256: 17c3d9e7794bae596b22cf19a2dd5bc2169475d6fea81ea4e6f1781a53af9157
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: tests/test_claim_references.py
+    sha256: 11b2fc60dbe32154df63fb2e8c784c7c8ba6585581c09bba2eebe2c5192d4c06
+    role: context
+  - path: tests/test_lotus_exclusions.py
+    sha256: 3e3aa443714202e1bc41f0fb236e6bf69caabd68a16af23b972323f5f846386c
+    role: context
+  - path: tests/test_producer_strains.py
+    sha256: 17002ef1640464777f1925d12d842ed83c9098aad6de724ae0ea236ecccc4ff3
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 160, batch 016, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated targets in earlier
+    batch commits (publication tracked separately). At selection, 204 of 3116 current
+    records had campaign coverage and 2912 remained. The population search included
+    ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+targets:
+- target_id: naturalproductmech:mibig-0a89c3541b
+  path: data/natural_products/alkaloids/congocidine.yaml
+  label: congocidine
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/alkaloids/congocidine.yaml
+    role: Curator-owned assertions, inline mechanisms, discussions and audit history
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  command: just validate-strict data/natural_products/alkaloids/congocidine.yaml --out
+    /private/tmp/npm-review-work/160/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T20:01:02.237684Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 current record files agree with PATHS.tsv and their pinned filing
+    pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055340+00:00;
+    finished 2026-10-21T09:55:22.727768+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-corpus.log. Reused
+    for batch016 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch016. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 current records passed the documented byte-reproduction gate
+    against committed inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055361+00:00;
+    finished 2026-10-21T09:56:44.050706+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-reproduction.log.
+    Reused for batch016 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch016. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The exhaustive review queue produced 8,928 diagnostic rows across 12 queues;
+    this deterministic output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just review-queue --tsv /private/tmp/npm-review-queue-batch-004.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.057401+00:00;
+    finished 2026-10-21T09:54:38.468783+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/review-queue.log. Reused
+    for batch016 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch016. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'The configured identifier-label gate passed using the existing ontology
+    caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions,
+    499 warning-only mismatches and 4,744 pairs skipped because their prefixes have
+    no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.061733+00:00;
+    finished 2026-10-21T09:56:36.296159+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/validate-products.log. Reused
+    for batch016 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch016. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+- check_id: shared-qc
+  name: Full repository quality gate on the current main baseline
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed on the unchanged main baseline
+    during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+    All configured lint, governance, documentation, provenance, source-queue, schema,
+    rendering, reproduction, filing-integrity and reporting stages completed successfully.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:30.560925+00:00;
+    finished 2026-10-21T10:04:44.806799+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/qc.log. Reused for batch016
+    only after a fresh fetch/clean branch, equal commit/tree and two reads of all
+    9,182 tracked byte streams and modes (208,070,649 bytes), including a recheck
+    after the fresh authoritative catalogue. This gate was not rerun for batch016.
+    Original execution times, scope, warnings, exceptions and skips are retained.'
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+- check_id: R160-FULL-OWNER
+  name: Complete owner and captured-source scope
+  status: passed
+  required: true
+  summary: Successful official intake and a fresh root full-owner/read receipt precede
+    this authoring. All six officially captured sets and the separately re-read seventh
+    PubChem set match; additional BindingDB rows and the exact curated graph/history
+    are checked for congocidine. The external component set is empty.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  evidence_ids:
+  - R160-OWNER
+  - R160-LOCAL
+  - R160-PUBCHEM-PREP
+- check_id: R160-EXTRA-SOURCES
+  name: BindingDB and curated inline graph/history inventory
+  status: passed
+  required: true
+  summary: All four additional BindingDB rows, the complete four-node/four-edge inline
+    graph and the RECORD_CURATED event are explicitly included. Exact owner equality
+    guards their full content; no scientific support is inferred merely from presence.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  evidence_ids:
+  - R160-OWNER
+  - R160-BINDINGDB
+- check_id: C160-C-REPRESENTATION
+  name: Stored chemical representation and complete source row
+  status: passed
+  required: true
+  summary: Fresh intake derivation agrees with the stored graph; the source selector,
+    full row and prepared snapshot were independently rechecked.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  evidence_ids:
+  - C160-OWNER
+  - C160-GRAPH
+  - C160-COMPARISON
+- check_id: C160-C-LITERAL-RESOLUTION
+  name: Literal chemical identifier resolution and representation inventory
+  status: passed
+  required: true
+  summary: All present literal identifiers resolved and their complete returned representations
+    were compared. This check verifies resolution and measurement, not equivalence
+    of mismatching graphs.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  evidence_ids:
+  - C160-COMPARISON
+  - C160-AUTH-1
+  - C160-AUTH-2
+  - C160-AUTH-3
+  - C160-AUTH-4
+  - C160-AUTH-5
+  - C160-AUTH-6
+  - C160-AUTH-7
+  - C160-AUTH-8
+  - C160-AUTH-9
+- check_id: C160-C-SOURCE-SYNONYMY
+  name: Congocidine/netropsin exact identity and explicit tautomer boundary
+  status: passed
+  required: true
+  summary: Both source selectors are separately retained and minted, with equal Standard
+    identity and an explicit guanidine tautomer distinction. No constitutional defect
+    follows from their fixed-H difference. The two-star dihydrochloride name candidate
+    is not silently equated to the neutral graph.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  evidence_ids:
+  - C160-OWNER
+  - C160-COMPARISON
+  - C160-TAUTOMER
+- check_id: S160-C-BIOACTIVITY-VALUES
+  name: All four written assay values, units and source calls
+  status: passed
+  required: true
+  summary: Values/calls and sample identity agree; the errors concern endpoint classification
+    and relation semantics, not the retained numbers.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  evidence_ids:
+  - S160-E-LOCAL
+  - S160-E-PFUDN2014
+  - S160-E-ASSAY
+  - S160-E-SID
+- check_id: S160-C-CITATION
+  name: Product-specific support for PMID 17074905
+  status: failed
+  required: true
+  summary: Complete original body concerns different compounds/locus and cannot support
+    the emitted congocidine citation.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  evidence_ids:
+  - S160-E-SIDEROPHORE
+  - S160-E-LOCAL
+- check_id: S160-C-FUNCTIONAL
+  name: Binding versus functional endpoint semantics
+  status: failed
+  required: true
+  summary: Functional IC50 measurements are emitted as binding affinities and two
+    biochemical observations as antiparasitic potency.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  evidence_ids:
+  - S160-E-PFUDN2014
+  - S160-E-ASSAY
+  - S160-E-CONSUMERS
+  - S160-E-LOCAL
+- check_id: S160-C-REQUIRED-PRIMARY
+  name: Required remaining native-grade, original occurrence and assay-form scope
+  status: unavailable
+  required: true
+  summary: Original 2015/2009 main, 2005 resistance, 1951 isolation and 2010 assay
+    bodies remain unavailable. The available SI, original abstracts and exact protocol
+    data are not silently promoted to full-body reads.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  evidence_ids:
+  - S160-E-SOURCE-LIMITS
+  - S160-E-ABSTRACTS
+  - S160-E-PYR-SI
+  - S160-E-ASSAY
+- check_id: S160-C-GRAPH-ACTIVITY
+  name: Existing four curated activity edges
+  status: passed
+  required: true
+  summary: All four activity predicates remain supported at recombinant fragment/functional
+    assay scope; no direct protein-binding graph edge is introduced.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  evidence_ids:
+  - S160-E-PFUDN2012
+  - S160-E-PFUDN2014
+  - S160-E-LOCAL
+evidence:
+- evidence_id: R160-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/congocidine.yaml
+  locator: Complete post-intake owner, optional assertions and all history events
+  accessed_at: '2026-10-21T20:04:43.816701Z'
+  support: supports
+  summary: 'Root read the complete owner after successful official intake: 6 occurrence,
+    2 producer and 2 locus assertions. No referenced external component is present.
+    Optional fields: causal_graphs, molecular_targets, bioactivities, bioactivity_summary,
+    discussions.'
+  snapshot_sha256: f7e696f8f1c74b18e62f6f8cc2b77ff4ab95b5fe22dbae5281ae1061759e9df8
+- evidence_id: R160-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/160/local-sources.json
+  locator: Complete resolved owner and all six officially captured raw row sets
+  accessed_at: '2026-10-21T20:04:43.816701Z'
+  support: context_only
+  summary: All six captured MIBiG, LOTUS, ChEBI structures/origins, CyanoMetDB and
+    NPClassifier sets match the frozen preparation, including empty sets. The separate
+    seventh PubChem inventory comparison is distinguished below. Source fidelity does
+    not itself establish experimental support.
+  snapshot_sha256: 2d91d1257423b697a017a10a81a0a906cd19ec1dae8f448692d69032ee1407a0
+- evidence_id: R160-PUBCHEM-PREP
+  kind: record_content
+  reference: data/raw/pubchem_bioassay.tsv
+  locator: Exact-key rows compared with the separate provisional seventh source set
+  accessed_at: '2026-10-21T20:04:56.678506Z'
+  support: context_only
+  summary: The separate committed PubChem raw set contains 4 matching rows and reproduces
+    the frozen preparation. This is not part of the official six-set intake. The four
+    congocidine observations, where present, remain actual source observations whose
+    endpoint/call interpretation belongs to science. Empty/no-assay-data rows elsewhere
+    are not tested outcomes.
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: R160-BINDINGDB
+  kind: record_content
+  reference: data/raw/bindingdb_targets.tsv
+  locator: All four exact-key source rows, matched against frozen source preparation
+    and current full raw table
+  accessed_at: '2026-10-21T20:04:43.816701Z'
+  support: context_only
+  summary: Four raw functional IC50 observations match the retained source rows. This
+    comparison verifies provenance only; BINDS wording, protein forms and functional
+    versus affinity interpretation require separate scientific assessment.
+  snapshot_sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+- evidence_id: R160-Q22286894
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q22286894
+  locator: P225 and P685 in the retained complete five-entity response
+  accessed_at: '2026-10-21T19:11:59.126255Z'
+  support: context_only
+  summary: Literal scientific name and NCBI taxon identifier agree with the matched
+    source rows. Identifier routing does not establish occurrence chemistry, producing
+    stock or experiment.
+  snapshot_sha256: 6d8f9d2d8718433284cbc9c6f531c7c32702d7a2e0b4cb2aaf7b67f90d3b34b3
+- evidence_id: R160-Q26291425
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q26291425
+  locator: P225 and P685 in the retained complete five-entity response
+  accessed_at: '2026-10-21T19:11:59.126255Z'
+  support: context_only
+  summary: Literal scientific name and NCBI taxon identifier agree with the matched
+    source rows. Identifier routing does not establish occurrence chemistry, producing
+    stock or experiment.
+  snapshot_sha256: 6d8f9d2d8718433284cbc9c6f531c7c32702d7a2e0b4cb2aaf7b67f90d3b34b3
+- evidence_id: R160-TAXON-CONTEXT
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&retmode=xml&id=1068630,1883,1889,2162715,27334,278992,5073,55404,5833,9606
+  locator: Exact relevant TaxId, ScientificName, Rank, ParentTaxId and OtherNames
+    fields
+  accessed_at: '2026-10-21T19:11:59.373457Z'
+  support: context_only
+  summary: NCBI 278992 is S. ambofaciens ATCC 23877 at strain rank beneath species
+    1889. NCBI 55404 is S. netropsis at species rank, with historical names and DSM
+    40846 type-material context; this does not equate all DSM/CGMCC cultures. NCBI
+    5833 P. falciparum and 9606 H. sapiens route target organisms, not fragment sequence,
+    active protein form, binding or cellular efficacy.
+  snapshot_sha256: a0f8a6a8c8b577912c0e7dd0420c6d1f3e9c02a9e9b2067b2ec2000ca52f27f6
+- evidence_id: R160-IMODULON
+  kind: database
+  reference: https://imodulondb.org/api/datasets
+  locator: Complete 20-organism, 28-dataset official catalogue
+  accessed_at: '2026-10-21T19:11:58.893319Z'
+  support: context_only
+  summary: The full retained catalogue establishes membership only. None of these
+    exact native producer labels occurs in it. Listed S. albidoflavus, S. coelicolor
+    or E. coli datasets do not establish an exact CS40/CS147/ambofaciens/netropsis
+    culture, introduced construct, recombinant protein or native production.
+  snapshot_sha256: 155607e7023efdead5ebab3919279a0776d5665a7de9e28b67f02f8f521b0693
+- evidence_id: C160-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/congocidine.yaml
+  locator: Complete owner and all seven matching source-row sets; no referenced components
+  accessed_at: '2026-10-21T20:05:03.539502Z'
+  support: supports
+  summary: 'The complete owner denotes congocidine under naturalproductmech:mibig-0a89c3541b.
+    All source selectors, versions and complete row digests are retained in COMPARISON:
+    [{"row_sha256": "1f7b868e88a50151aca12f72b7fb7953e9761970ccbc5bc4db733bab88ed89fd",
+    "selector": "BGC0000327:1", "version": "5"}, {"row_sha256": "d830f031cf43fe8224672c08571215dc275a03956cc528cb1970c0efee8e40ab",
+    "selector": "BGC0001147:3", "version": "4"}]. The official intake and prepared
+    owner bytes agree.'
+  snapshot_sha256: f7e696f8f1c74b18e62f6f8cc2b77ff4ab95b5fe22dbae5281ae1061759e9df8
+- evidence_id: C160-GRAPH
+  kind: validation
+  reference: /private/tmp/npm-review-work/160/chemistry.json
+  locator: Fresh intake RDKit result and frozen Standard/fixed-H comparison
+  accessed_at: '2026-10-21T20:01:01.317178Z'
+  support: supports
+  summary: The stored SMILES recomputes to IDBIFFKSXLYUOT-UHFFFAOYSA-N, formula C18H26N10O3,
+    formal charge 0; stored InChI/key agree. These are representation checks, not
+    experimental identity proof.
+  snapshot_sha256: 094c48021a37268bc79ad4c3339854d243f5bbeb15c46590755edcb56bf84875
+- evidence_id: C160-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch016/chemistry-prep/chemical-comparison.json
+  locator: Record 160; exact source rows and each graph comparison
+  accessed_at: '2026-10-21T19:10:47.417527Z'
+  support: supports
+  summary: Exact Standard, fixed-H, formula, charge and stereo comparisons of the
+    retained owner, complete raw rows and current authority responses; primary experimental
+    proof is assessed separately.
+  snapshot_sha256: 64d643f40dacc509053ee0f09aac5a84b68c0809965220aae4b4e794303eb1a0
+- evidence_id: C160-LOCAL-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/160/chemistry-search-receipt.json
+  locator: Exact full key, label, slug and source selector in raw/owner/curation trees
+  accessed_at: '2026-10-21T20:05:03.740440Z'
+  support: supports
+  summary: Ignored-inclusive bounded search preserves all matching paths; an absent
+    curation decision does not imply a missing scientific source.
+  snapshot_sha256: 8d6a76c1c84789944f44226630481f998d12504715da05f5fc145072a4dd0967
+  search_scope: rg --no-ignore --hidden; data/natural_products, data/raw and curation;
+    exact full key, current label, slug and BGC:compound_index. No claim beyond these
+    trees.
+- evidence_id: C160-CHEBI-SEARCH-1
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=IDBIFFKSXLYUOT-UHFFFAOYSA-N&size=100
+  locator: Literal key search; chebi-key-congocidine.json
+  accessed_at: '2026-10-21T19:08:36.499584Z'
+  support: supports
+  summary: 'No compound matches the provided term: ''IDBIFFKSXLYUOT-UHFFFAOYSA-N'''
+  snapshot_sha256: 73f26b3c280ace35af02619013d24f3bbff2607666262cb2b73a273ecbcf18dd
+  search_scope: Official ChEBI es_search bounded key request, size=100, exact URL
+    retained. This is not a universal absence claim.
+- evidence_id: C160-CHEBI-SEARCH-2
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=congocidine&size=100
+  locator: Literal name search; chebi-name-congocidine.json
+  accessed_at: '2026-10-21T19:08:36.447685Z'
+  support: supports
+  summary: 'No compound matches the provided term: ''congocidine'''
+  snapshot_sha256: 01900a2706798967be526a25cd0c2989bdd267003a41eb171a21894e32a46969
+  search_scope: Official ChEBI es_search bounded name request, size=100, exact URL
+    retained. This is not a universal absence claim.
+- evidence_id: C160-AUTH-1
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0000327.5/annotations.json
+  locator: compounds[0].structure; BGC0000327.5.json
+  accessed_at: '2026-10-21T19:08:34.485989Z'
+  support: supports
+  summary: 'current MIBiG BGC0000327:1: representation parses=True; parsed key IDBIFFKSXLYUOT-UHFFFAOYSA-N;
+    exact stored Standard key match=True, fixed-H match=False. This current database
+    representation is not independent primary experimental proof.'
+  snapshot_sha256: d97a9f493370465812e9978ed91f65b6562103cb41b1c1216657bd297ee8def9
+- evidence_id: C160-AUTH-2
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0001147.4/annotations.json
+  locator: compounds[2].structure; BGC0001147.4.json
+  accessed_at: '2026-10-21T19:08:34.708679Z'
+  support: supports
+  summary: 'current MIBiG BGC0001147:3: representation parses=True; parsed key IDBIFFKSXLYUOT-UHFFFAOYSA-N;
+    exact stored Standard key match=True, fixed-H match=True. This current database
+    representation is not independent primary experimental proof.'
+  snapshot_sha256: 2437b7defdce310ba84038b74163b9cb25248cb35b94c16f082146024e8220ec
+- evidence_id: C160-AUTH-3
+  kind: authority
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/4461/property/MolecularFormula,InChI,InChIKey,CanonicalSMILES,IsomericSMILES,Charge/JSON
+  locator: PropertyTable.Properties[].SMILES; pubchem-4461.json
+  accessed_at: '2026-10-21T19:08:34.603760Z'
+  support: supports
+  summary: 'PubChem literal 4461: representation parses=True; parsed key IDBIFFKSXLYUOT-UHFFFAOYSA-N;
+    exact stored Standard key match=True, fixed-H match=True. This current database
+    representation is not independent primary experimental proof.'
+  snapshot_sha256: e762099bc161dd8be6cc36083bc69579cfd1290924585434e5479c15c34e7e36
+- evidence_id: C160-AUTH-4
+  kind: authority
+  reference: https://www.npatlas.org/api/v1/compound/NPA018236
+  locator: smiles; NPA018236.json
+  accessed_at: '2026-10-21T19:08:34.489346Z'
+  support: supports
+  summary: 'NPAtlas literal NPA018236: representation parses=True; parsed key IDBIFFKSXLYUOT-UHFFFAOYSA-N;
+    exact stored Standard key match=True, fixed-H match=True. This current database
+    representation is not independent primary experimental proof.'
+  snapshot_sha256: a76adec94332674980f6843252ab1aa8702439d0a67e37a22c058f50eb455244
+- evidence_id: C160-AUTH-5
+  kind: authority
+  reference: https://www.npatlas.org/api/v1/compound/NPA018236
+  locator: mol_structures[0].structure_smiles; NPA018236.json
+  accessed_at: '2026-10-21T19:08:34.489346Z'
+  support: supports
+  summary: 'NPAtlas historical/current version 1: representation parses=True; parsed
+    key IDBIFFKSXLYUOT-UHFFFAOYSA-N; exact stored Standard key match=True, fixed-H
+    match=True. This current database representation is not independent primary experimental
+    proof.'
+  snapshot_sha256: a76adec94332674980f6843252ab1aa8702439d0a67e37a22c058f50eb455244
+- evidence_id: C160-AUTH-6
+  kind: authority
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q3874969.json
+  locator: P2017; Q3874969.json
+  accessed_at: '2026-10-21T19:08:34.771193Z'
+  support: supports
+  summary: 'Wikidata Q3874969: representation parses=True; parsed key IDBIFFKSXLYUOT-UHFFFAOYSA-N;
+    exact stored Standard key match=True, fixed-H match=False. This current database
+    representation is not independent primary experimental proof.'
+  snapshot_sha256: de0d0565420e7470f72f4d03985209b27528706ddc354d6130ea32cb9a68d8fb
+- evidence_id: C160-AUTH-7
+  kind: authority
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q3874969.json
+  locator: P233; Q3874969.json
+  accessed_at: '2026-10-21T19:08:34.771193Z'
+  support: supports
+  summary: 'Wikidata Q3874969: representation parses=True; parsed key IDBIFFKSXLYUOT-UHFFFAOYSA-N;
+    exact stored Standard key match=True, fixed-H match=True. This current database
+    representation is not independent primary experimental proof. Canonical P233 is
+    not an isomeric stereo assertion; compare P2017 when present.'
+  snapshot_sha256: de0d0565420e7470f72f4d03985209b27528706ddc354d6130ea32cb9a68d8fb
+- evidence_id: C160-AUTH-8
+  kind: authority
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q3874969.json
+  locator: P234 Standard InChI (normalized reconstruction; not a literal fixed-H assertion);
+    Q3874969.json
+  accessed_at: '2026-10-21T19:08:34.771193Z'
+  support: supports
+  summary: 'Wikidata Q3874969: representation parses=True; parsed key IDBIFFKSXLYUOT-UHFFFAOYSA-N;
+    exact stored Standard key match=True, fixed-H match=False. This current database
+    representation is not independent primary experimental proof.'
+  snapshot_sha256: de0d0565420e7470f72f4d03985209b27528706ddc354d6130ea32cb9a68d8fb
+- evidence_id: C160-AUTH-9
+  kind: authority
+  reference: https://www.chemspider.com/Chemical-Structure.4306.html
+  locator: JSON-LD InChI (normalized reconstruction; fixed-H source not established);
+    chemspider-4306.html
+  accessed_at: '2026-10-21T19:08:35.655394Z'
+  support: supports
+  summary: 'ChemSpider raw literal 4306: representation parses=True; parsed key IDBIFFKSXLYUOT-UHFFFAOYSA-N;
+    exact stored Standard key match=True, fixed-H match=False. This current database
+    representation is not independent primary experimental proof.'
+  snapshot_sha256: 9d2ee22a3a86ed1e3fff2bd03a596176b9e04077bd03ac262c60d609b0d79328
+- evidence_id: C160-TAUTOMER
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch016/chemistry-prep/representation-comparison.json
+  locator: Order 160; both complete source rows and guanidine heavy-atom/bond/H mapping
+  accessed_at: '2026-10-21T19:13:18.763475Z'
+  support: supports
+  summary: The two MIBiG rows share neutral achiral C18H26N10O3 Standard identity
+    but differ in guanidine H/bond placement. Four symmetry-related heavy-atom mappings
+    and matching canonical tautomer support the relationship. Literal PubChem4461
+    and NPA018236 match the retained lead fixed-H representation.
+  snapshot_sha256: 2221c8d192754ee6b490b67a0f27f24e278dac234d89fe518e1cea92586518a7
+- evidence_id: S160-E-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/160/local-sources.json
+  locator: Complete resolved owner, components and six captured source sets; seventh
+    PubChem plus BindingDB verified from raw TSV
+  accessed_at: '2026-10-21T20:05:04.696896Z'
+  support: context_only
+  summary: The complete actual owner and six captured source sets match the prepared
+    complete read; the seventh PubChem set and additional BindingDB set were separately
+    reread and compared field for field. Current methods and producer/locus tiers
+    remain distinct from primary experimental conclusions.
+  snapshot_sha256: 2d91d1257423b697a017a10a81a0a906cd19ec1dae8f448692d69032ee1407a0
+- evidence_id: S160-E-CONSUMERS
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: Inspected exact loader/application and emission ranges; supporting consumers
+    and tests pinned
+  accessed_at: '2026-10-21T20:05:04.696896Z'
+  support: context_only
+  summary: Read method override loader/application, claim-reference and strain composition,
+    source joins, activity classifier, BindingDB target emission and curator graph
+    carry. REPLACE ignores expected fields; pair an applicable complete-row citation
+    guard or implement a tested direct guard. WITHDRAW cannot withdraw an empty method
+    set or suppress a producer/locus. Citation/strain overlays do not change producer
+    taxon, coordinate or grade, and current seed composition rejects them after structure
+    correction. Imported BindingDB targets are rebuilt with BINDS; curator graphs
+    survive only at the same Standard key.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: S160-E-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/160/science-search.json
+  locator: Prepared exact source scope
+  accessed_at: '2026-10-21T20:05:04.702741Z'
+  support: context_only
+  summary: Current exact-key/name/accession qualification search retained. This bounded
+    decision-tree search does not establish absence of primary scientific evidence
+    or generic consumers.
+  snapshot_sha256: 3c31033b5b94d66edbad6acd0ca29c773e61a353bb6a777115cf64154aad6047
+  search_scope: rg --no-ignore --hidden -n -F over curation, using exact identifier,
+    label, Standard InChIKey and every relevant BGC accession.
+- evidence_id: S160-E-SOURCE-LIMITS
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next-batch016/bgc-science/source-notes.json
+  locator: Frozen bounded primary access/read scope and actual retrieval receipts
+  accessed_at: '2026-10-21T19:20:13.837290Z'
+  support: unknown
+  summary: Original JNP 2004 D and G/H 2005 bodies, congocidine 2009/2015 mains, 2005
+    resistance, 1951 isolation and 2010 antiamidolytic bodies remain unavailable after
+    bounded public routes. Positive original abstracts, 2015 SI and other fully read
+    sources are kept distinct.
+  snapshot_sha256: b23186b38656f45e403666fd60baa8242272ac55f1c72569a856e8c86702e10d
+  search_scope: Exact cited DOI/PMID publisher, official repository, author-page,
+    Figshare and metadata routes retained in retrieval-index.json and shared review-support
+    receipts; ignored-inclusive local inventories searched. No exhaustive absence
+    claim.
+- evidence_id: S160-E-PYR-SI
+  kind: primary_source
+  reference: https://ndownloader.figshare.com/files/3828166
+  locator: Complete 28-page official SI text, Tables S1–S3, original Figure S7 on
+    physical page 18
+  accessed_at: '2026-10-21T19:14:42.051822Z'
+  support: supports
+  summary: DSM 40846 is the native donor. Native DST001 has a dst18 insertion; systematic
+    deletions and dual-cluster strains are S. lividans TK23. S7 peak 2 is congocidine;
+    Δdst5 and Δdst10 lose that peak, Δdst26 retains it. The experiments support heterologous
+    genetic linkage, not cluster 1 sufficiency or purified final-product reconstitution.
+    Main article remains unavailable.
+  snapshot_sha256: 9a84feaa0470d2b5d88df5e4062aace3c208d733170beff5229adf7284aaece3
+- evidence_id: S160-E-SIDEROPHORE
+  kind: primary_source
+  reference: https://www.microbiologyresearch.org/deliver/fulltext/micro/152/11/3355.pdf?itemId=/content/journal/micro/10.1099/mic.0.29161-0&mimeType=pdf
+  locator: Complete original 12-page scientific body, tables, captions and references
+  accessed_at: '2026-10-21T19:11:59.375752Z'
+  support: supports
+  summary: PMID 17074905 concerns coelichelin/desferrioxamines and iron acquisition.
+    Its experimental cch locus is SAMR0548–0559. It supplies neither exact congocidine
+    production nor the asserted congocidine-locus experiment. This citation mismatch
+    does not refute independent congocidine production by ATCC 23877.
+  snapshot_sha256: 8066d61ae854ba49c46115839bb3f8a0c19d5484f3adbe49f55f5a53ceb91882
+- evidence_id: S160-E-MINING
+  kind: primary_source
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4047045/fullTextXML
+  locator: Complete scientific body, Methods, tables and captions
+  accessed_at: '2026-10-21T19:10:02.614692Z'
+  support: supports
+  summary: New exact congocidine isolation, NMR/HRMS and pya25 loss/complementation
+    concern S. netropsis CGMCC 4.1650/KF158418. pya26 deletion retains congocidine.
+    S. ambofaciens is positively mentioned as prior producer citing 2009, not the
+    new experimental host; no DSM 40846 equivalence follows.
+  snapshot_sha256: 781d87a98d8ec4281370aa018fc8334909b385163b5d8ddd72815878013cccb1
+- evidence_id: S160-E-KINAMYCIN
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC3067597/?report=xml
+  locator: Bounded abstract/introduction, relevant Methods/Table 1, every exact congocidine
+    mention and reference 23
+  accessed_at: '2026-10-21T19:11:40.249949Z'
+  support: supports
+  summary: The paper explicitly reports S. ambofaciens ATCC 23877 as a congocidine
+    producer while citing the 2009 study. Its new experiments concern kinamycins.
+    This is positive source-assertion occurrence evidence, not an independent congocidine
+    isolation experiment.
+  snapshot_sha256: 83e474474f87dfbf75d6d1a7b068422735971a38eafb2ed2d30fe62e0090ccf9
+- evidence_id: S160-E-PFUDN2014
+  kind: primary_source
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4234510/fullTextXML
+  locator: Complete scientific body, Methods, Tables 1/2 and figure captions, with
+    truncated text reread
+  accessed_at: '2026-10-21T19:09:17.964137Z'
+  support: supports
+  summary: Commercial netropsin inhibits purified PfUDN ssDNA-dependent ATPase at
+    IC50 3.1 µM and DNA unwinding at 4.7 µM. DNA/protein preincubation and ssDNA titration
+    support DNA-mediated interference. These are cell-free functional endpoints, not
+    direct compound–protein affinity or the dsRNA parasite-growth experiment.
+  snapshot_sha256: 476f8fde9c2ae35ed478283ae9edfbc24d846817b86b4c5df09587c4587b9810
+- evidence_id: S160-E-PFUDN2012
+  kind: primary_source
+  reference: https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0049385&type=manuscript
+  locator: Cloning/purification, ATPase/unwinding/directionality, depletion and endogenous
+    sections; original Figure 4 viewed separately
+  accessed_at: '2026-10-21T19:09:17.165261Z'
+  support: supports
+  summary: The pET28a+/BL21(DE3)pLysS His-tagged PfUDN N-terminal fragment is reported
+    as residues 35–727. Purified N and C1 fragments have ATPase/unwinding activity;
+    C2 does not. The N construct is a partial deposited coding sequence, not the entire
+    current 1441-residue native protein.
+  snapshot_sha256: 24b209365699e87308013b754c2720a427694910ee3c516e6b24a54fd3334ad2
+- evidence_id: S160-E-KJ-GB
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=KJ634466.1&rettype=gbwithparts&retmode=text
+  locator: Complete submitted header/source/features; no independent full CDS translation
+  accessed_at: '2026-10-21T19:10:02.756534Z'
+  support: supports
+  summary: KJ634466.1 is a 28,600-bp DSM 40846/taxon 55404 cluster-1 record. It does
+    not independently establish cluster-1 sufficiency or complete tested dual-cluster
+    construct equivalence.
+  snapshot_sha256: 14899097f18a5a75913a1172de0a94183897cf88a6501759a2acae328b40c03c
+- evidence_id: S160-E-AM-GB
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=AM238664.2&seq_start=1082965&seq_stop=1112107&rettype=gbwithparts&retmode=text
+  locator: Complete bounded header/source and SAMR0900–SAMR0921 feature qualifiers
+  accessed_at: '2026-10-21T19:10:03.156948Z'
+  support: supports
+  summary: The exact stored interval is 29,143 bp from ATCC 23877/taxon 278992. NRPS-like
+    and netropsin-resistance features support the annotation bridge; chromosome reference
+    PMID 17074905 is not product-specific evidence.
+  snapshot_sha256: 7febaf2f07b276feac508fbb5e59d3b6b9529afec37600eb0e5113f8e9d63623
+- evidence_id: S160-E-PARTIAL-GB
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=FJ588849&rettype=gbwithparts&retmode=text
+  locator: Complete partial CDS <1..>2079 and ACL99766.1 qualifier
+  accessed_at: '2026-10-21T19:11:00.560676Z'
+  support: supports
+  summary: The deposited 3D7 fragment encodes 693 residues. Partial-boundary syntax
+    is retained; no terminal-stop or initiating-methionine substitution is imposed.
+  snapshot_sha256: 74f0b493081ac872888fc2b8c7f6c258bb039116f2b5af8ab1cedb84a9314212
+- evidence_id: S160-E-UP
+  kind: database
+  reference: https://rest.uniprot.org/uniprotkb/Q8I3W6.json
+  locator: Complete current sequence plus entry status/version/gene and catalytic
+    evidence fields
+  accessed_at: '2026-10-21T19:10:03.443408Z'
+  support: supports
+  summary: Q8I3W6 is unreviewed TrEMBL version 139, sequence version 1, 1441 residues,
+    PF3D7_0514100. Automated catalytic annotations do not supply new exact-compound
+    experiments.
+  snapshot_sha256: c8b9005bfc55e2368916c85a6fdf101aeec5c0e5b170c1302b824230f70178fd
+- evidence_id: S160-E-ASSAY
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1802946/JSON
+  locator: Exact deposited SID 103952143 functional antiamidolytic rows and description/protocol
+  accessed_at: '2026-10-21T19:11:58.176545Z'
+  support: supports
+  summary: P00749 and P00747 observations are 30 and 40 µM with deposited Inactive
+    calls. The <=10 µM active threshold differs from absence of all inhibition. The
+    pNA 405-nm protocol is 20 min at 37 °C. No explicit comparator qualifier appears
+    in the inspected full data; no censoring loss is invented.
+  snapshot_sha256: 6cd38d705513112bc98ede2798b0fe5497e53f52eb6cd3fc325e8951976659c7
+- evidence_id: S160-E-SID
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/substance/sid/103952143/SDF
+  locator: Exact shared deposited substance graph for the four current observations
+  accessed_at: '2026-10-21T19:11:40.564340Z'
+  support: supports
+  summary: SID 103952143/BDBM50055660 has the retained Standard InChIKey. This confirms
+    sample graph identity at the stated resolution, not formulation or direct-binding
+    interpretation.
+  snapshot_sha256: df3d4b59a915efa1e5cb388d61fc056520bad57987261c8b91418b025d1e7f54
+- evidence_id: S160-E-FRAGMENT-COMPARE
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch016/bgc-science/pfudn-partial-translation-comparison.json
+  locator: Independent partial-CDS translation and full current-reference interval
+    comparison
+  accessed_at: '2026-10-21T19:16:43.700692Z'
+  support: supports
+  summary: 'All 2079 bases translate exactly to the 693-residue submitted qualifier.
+    Against current Q8I3W6 residues 35–727 there are three differences: native 152
+    submitted T/current M, 217 T/A, 376 D/N. No full fusion or actual 2014 stock was
+    reconstructed. The positive functional observations remain intact.'
+  snapshot_sha256: cf42ff0a847a1ed342268ba92603e5cb6744ba6cf7188651024f03f968cbebf5
+- evidence_id: S160-E-ABSTRACTS
+  kind: primary_source
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A25415678%20OR%20EXT_ID%3A17074905%20OR%20EXT_ID%3A20429779%20OR%20EXT_ID%3A24707807%20OR%20EXT_ID%3A19389628%20OR%20DOI%3A%2210.1002/jobm.200410529%22%20OR%20DOI%3A%2210.1099/mic.0.29161-0%22%20OR%20DOI%3A%2210.1128/JB.01269-10%22%20OR%20DOI%3A%2210.1371/journal.pone.0099077%22%20OR%20DOI%3A%2210.1371/journal.pone.0049385%22%20OR%20DOI%3A%2210.1021/ja01145a113%22&format=json&resultType=core&pageSize=50
+  locator: Exact original article abstracts and own DOI/PMID identifiers; not full
+    articles
+  accessed_at: '2026-10-21T19:09:17.744561Z'
+  support: partial
+  summary: The 2009 congocidine abstract positively reports S. ambofaciens biosynthesis,
+    heterologous expression and eight in-frame deletions. The 2005 resistance abstract
+    concerns S. flavopersicus NRRL 2820 netP1/netP2 tested in S. lividans. Original
+    1951 information remains title/metadata-only; 2010 antiamidolytic body remains
+    unavailable.
+  snapshot_sha256: 73e02c88efa41ec32b1146a3d955049422248230469014e4ae995f9b9a48d3cb
+- evidence_id: S160-E-P00747
+  kind: database
+  reference: https://rest.uniprot.org/uniprotkb/P00747.json
+  locator: Current reviewed entry status, complete sequence length, names and processed-chain
+    feature metadata; no exact assay-preparation proof
+  accessed_at: '2026-10-21T19:10:03.886903Z'
+  support: context_only
+  summary: P00747 is reviewed human plasminogen, 810 residues, with processed plasmin
+    chains. Current annotation is an organism-specific reference, not the exact 2010
+    reagent or direct binding evidence.
+  snapshot_sha256: 53fa624b303af26f5471d6365c036471713f127be717fd62f1220441de1b06d1
+- evidence_id: S160-E-P00749
+  kind: database
+  reference: https://rest.uniprot.org/uniprotkb/P00749.json
+  locator: Current reviewed entry status, complete sequence length, names and processed-chain
+    feature metadata; no exact assay-preparation proof
+  accessed_at: '2026-10-21T19:10:04.192131Z'
+  support: context_only
+  summary: P00749 is reviewed human urokinase-type plasminogen activator, 431 residues,
+    with processed active forms. Current annotation is an organism-specific reference,
+    not the exact 2010 reagent or direct binding evidence.
+  snapshot_sha256: 0324fc52439734649476e178b000c54a6b35a1b5004be0effe9d92140fb7b40b
+assessments:
+- assessment_id: R160-HISTORY
+  area: provenance
+  topic: Native status and complete audit history
+  outcome: supported
+  summary: The five retained events include four seed events and one 2026-09-11 RECORD_CURATED
+    event by codex. That event describes adding the fragment-qualified PfUDN activity
+    graph while leaving imported BindingDB rows source-owned and avoiding a direct
+    compound–protein graph edge. Status remains SEEDED; a curation event is not a
+    prior structured-review pass or proof that every current imported claim is valid.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  evidence_ids:
+  - R160-OWNER
+- assessment_id: R160-OPTIONAL
+  area: completeness
+  topic: Complete optional-assertion inventory
+  outcome: supported
+  summary: Congocidine has four written PubChem observations, four imported BindingDB
+    target rows, one ANTIPARASITIC summary, one four-node/four-edge inline PfUDN activity
+    graph and an open shared-structure discussion. No external graph component is
+    referenced. The graph has fragment-to-activity and compound-to-activity edges;
+    it contains no direct compound–protein binding edge. Science independently adjudicates
+    all values, calls, class/relation semantics, protein/construct scope and citations;
+    chemistry owns the two-source exact/microstate relationship. No optional biosynthetic
+    pathway is required.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  evidence_ids:
+  - R160-OWNER
+  - R160-LOCAL
+  - R160-BINDINGDB
+- assessment_id: R160-FILING
+  area: representation
+  topic: Exact-key computed classification provenance
+  outcome: supported
+  summary: The exact-key NPClassifier projection and version npclassifier.gnps2.org@2026-09-07
+    reproduce the owner filing, superclass/class labels and glycoside value false.
+    Computed labels are not independent precursor, mechanism or natural-origin evidence.
+    Any accepted new identity requires reclassification for its effective key.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  evidence_ids:
+  - R160-OWNER
+  - R160-LOCAL
+- assessment_id: R160-ORGANISM-IDS
+  area: grounding
+  topic: Literal organism identifier routing
+  outcome: supported
+  summary: All literal organism-QID routes agree at the inspected P225/P685 scope.
+    Occurrence and experimental-unit support remain separate.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  evidence_ids:
+  - R160-Q22286894
+  - R160-Q26291425
+- assessment_id: R160-TAXON-SCOPE
+  area: provenance
+  topic: Taxonomic names versus experimental stocks
+  outcome: supported
+  summary: NCBI 278992 is S. ambofaciens ATCC 23877 at strain rank beneath species
+    1889. NCBI 55404 is S. netropsis at species rank, with historical names and DSM
+    40846 type-material context; this does not equate all DSM/CGMCC cultures. NCBI
+    5833 P. falciparum and 9606 H. sapiens route target organisms, not fragment sequence,
+    active protein form, binding or cellular efficacy.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  evidence_ids:
+  - R160-TAXON-CONTEXT
+  - R160-OWNER
+- assessment_id: R160-IMODULON-SCOPE
+  area: completeness
+  topic: Producer transcriptomic applicability
+  outcome: not_applicable
+  summary: No exact native producer species/strain dataset is represented in the inspected
+    catalogue. Related species and possible experimental hosts do not establish a
+    construct/condition match; no gene/module or compound-production inference is
+    made.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  evidence_ids:
+  - R160-OWNER
+  - R160-IMODULON
+- assessment_id: C160-A-IDENTITY
+  area: identity
+  topic: Stored representation and source-concept provenance
+  outcome: supported
+  summary: The complete source row BGC0000327:1 and source-concept hash reproduce
+    this stored representation; this does not establish that the upstream compound
+    label is correct. Formula, charge, Standard and fixed-H distinctions are independently
+    recorded. Primary support and any conflicting exact xref are assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  evidence_ids:
+  - C160-OWNER
+  - C160-GRAPH
+  - C160-COMPARISON
+  dimensions:
+  - name: mibig_source_selector
+    value: BGC0000327:1
+    definition: Accession plus compound_index, distinct from the entry-level accession.
+    evidence_ids:
+    - C160-OWNER
+  - name: complete_raw_row_sha256
+    value: 1f7b868e88a50151aca12f72b7fb7953e9761970ccbc5bc4db733bab88ed89fd
+    definition: Sorted compact ASCII JSON of every parsed TSV field, including empty
+      values.
+    evidence_ids:
+    - C160-OWNER
+- assessment_id: C160-A-GROUNDING
+  area: provenance
+  topic: Exact authority eligibility and source representation
+  outcome: supported
+  summary: No exact eligible row exists in the committed ChEBI projection for this
+    owner. Current bounded name/key searches do not justify a different congener or
+    a two-star grounding.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  evidence_ids:
+  - C160-OWNER
+  - C160-COMPARISON
+  - C160-LOCAL-SEARCH
+  - C160-CHEBI-SEARCH-1
+  - C160-CHEBI-SEARCH-2
+- assessment_id: C160-A-LITERAL-IDENTIFIERS
+  area: representation
+  topic: Literal chemical identifier precision and namespaces
+  outcome: supported
+  summary: 'Each literal was requested as stored; canonical NPAtlas aliases are recorded
+    without inventing padding. Exact graph results: [{"fixed_h_equal": true, "formula":
+    "C18H26N10O3", "key": "IDBIFFKSXLYUOT-UHFFFAOYSA-N", "literal": "pubchem:4461",
+    "standard_equal": true}, {"fixed_h_equal": true, "formula": "C18H26N10O3", "key":
+    "IDBIFFKSXLYUOT-UHFFFAOYSA-N", "literal": "npatlas:NPA018236", "standard_equal":
+    true}]. A mismatch may be constitution, stereo precision or tautomer representation;
+    the source-specific interpretation follows. Wikidata canonical P233 and isomeric
+    P2017 are separate assertions.'
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  evidence_ids:
+  - C160-COMPARISON
+  - C160-AUTH-1
+  - C160-AUTH-2
+  - C160-AUTH-3
+  - C160-AUTH-4
+  - C160-AUTH-5
+  - C160-AUTH-6
+  - C160-AUTH-7
+  - C160-AUTH-8
+  - C160-AUTH-9
+- assessment_id: C160-A-CHEBI-POLICY
+  area: provenance
+  topic: Current ChEBI eligibility versus copied source assertions
+  outcome: supported
+  summary: No record in this set has an eligible exact committed three-star ChEBI
+    row. Current two-star collismycin/communesin results and the netropsin dihydrochloride
+    name candidate are not eligible exact neutral-owner groundings. Bounded 404 results
+    are query-specific. No JSON default SMILES is adopted merely because an authority
+    name or InChI agrees.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  evidence_ids:
+  - C160-OWNER
+  - C160-COMPARISON
+  - C160-LOCAL-SEARCH
+  - C160-AUTH-1
+  - C160-AUTH-2
+  - C160-AUTH-3
+  - C160-AUTH-4
+  - C160-AUTH-5
+  - C160-AUTH-6
+  - C160-AUTH-7
+  - C160-AUTH-8
+  - C160-AUTH-9
+- assessment_id: C160-A-IDENTITY-RESOLUTION
+  area: identity
+  topic: Achiral neutral identity and measured source representations
+  outcome: supported
+  summary: The literal identifiers and lead neutral graph agree; the second source
+    and Wikidata representations are qualified at fixed-H resolution. ChemSpider4306
+    occurs in raw provenance but is not an emitted literal xref. Reconstructing Standard
+    InChI does not prove its literal fixed-H form. Experimental SID and fragment/protein
+    scope remain in the science packet.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  evidence_ids:
+  - C160-OWNER
+  - C160-COMPARISON
+  - C160-TAUTOMER
+  - C160-AUTH-1
+  - C160-AUTH-2
+  - C160-AUTH-3
+  - C160-AUTH-4
+  - C160-AUTH-5
+  - C160-AUTH-6
+  - C160-AUTH-7
+  - C160-AUTH-8
+  - C160-AUTH-9
+- assessment_id: S160-A-ORIGIN
+  area: evidence
+  topic: biosynthesis_origin and both producer_organisms
+  outcome: supported
+  summary: Natural congocidine/netropsin production is supported by independent native
+    reports. DSM 40846, CGMCC 4.1650 and ATCC 23877 remain distinct experimental units;
+    taxonomy merging alone does not equate stocks.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  evidence_ids:
+  - S160-E-LOCAL
+  - S160-E-PYR-SI
+  - S160-E-MINING
+  - S160-E-KINAMYCIN
+  - S160-E-ABSTRACTS
+  - S160-E-KJ-GB
+  - S160-E-AM-GB
+- assessment_id: S160-A-1147
+  area: evidence
+  topic: producer_organisms[0] and biosynthetic_gene_clusters[0]
+  outcome: concern
+  summary: The donor and two-cluster heterologous genetic endpoints are positive.
+    S7 systematic loss-of-peak mutants are TK23, while native DST001 is a dst18 insertion.
+    Imported methods map mechanically to BGC_CHARACTERIZED, but the available SI does
+    not alone establish the exact native congocidine loss phenotype needed to interpret
+    that taxon grade. Preserve the positive experiments and obtain the main before
+    choosing a native-grade correction.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  evidence_ids:
+  - S160-E-LOCAL
+  - S160-E-PYR-SI
+  - S160-E-KJ-GB
+  - S160-E-SOURCE-LIMITS
+  dimensions:
+  - name: native_donor
+    value: S. netropsis DSM 40846
+    definition: Deposited cluster 1 and SI donor; native dst18 insertion distinct
+      from systematic heterologous deletions.
+    evidence_ids:
+    - S160-E-PYR-SI
+    - S160-E-KJ-GB
+  - name: heterologous_experimental_unit
+    value: S. lividans TK23 with pDST034 and pDST037
+    definition: Two-cluster context; exact congocidine peak 2 genetic outcomes.
+    evidence_ids:
+    - S160-E-PYR-SI
+  - name: grade_boundary
+    value: BGC_CHARACTERIZED versus exact native endpoint unresolved
+    definition: Current method mapping is source-faithful, but mutant host matters
+      biologically.
+    evidence_ids:
+    - S160-E-LOCAL
+    - S160-E-PYR-SI
+- assessment_id: S160-A-0327
+  area: evidence
+  topic: producer_organisms[1] and biosynthetic_gene_clusters[1]
+  outcome: concern
+  summary: The deposited ATCC 23877 interval is verified and the producer is independently
+    supported. PMID 17074905 is a siderophore paper, not congocidine evidence. The
+    positive 2009 original abstract can support corrected conservative citation routing,
+    while detailed method enrichment remains unavailable.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  evidence_ids:
+  - S160-E-LOCAL
+  - S160-E-AM-GB
+  - S160-E-SIDEROPHORE
+  - S160-E-ABSTRACTS
+  - S160-E-KINAMYCIN
+  dimensions:
+  - name: native_strain
+    value: S. ambofaciens ATCC 23877
+    definition: Exact source window and positive prior-producer statement.
+    evidence_ids:
+    - S160-E-AM-GB
+    - S160-E-KINAMYCIN
+  - name: retained_evidence_tier
+    value: SOURCE_ASSERTION / CLUSTER_UNSTATED
+    definition: Citation repair does not independently upgrade experiments.
+    evidence_ids:
+    - S160-E-LOCAL
+    - S160-E-ABSTRACTS
+- assessment_id: S160-A-OCC-0
+  area: evidence
+  topic: occurrences[0]
+  outcome: unknown
+  summary: The 2005 resistance abstract concerns S. flavopersicus NRRL 2820 netP1/netP2
+    tested in S. lividans. The original body is unavailable, so the S. ambofaciens
+    triple is unresolved rather than a confirmed absence claim.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  evidence_ids:
+  - S160-E-LOCAL
+  - S160-E-ABSTRACTS
+  - S160-E-SOURCE-LIMITS
+- assessment_id: S160-A-OCC-1
+  area: evidence
+  topic: occurrences[1]
+  outcome: supported
+  summary: Original 2009 abstract explicitly supports S. ambofaciens congocidine production;
+    detailed protocol remains unavailable.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  evidence_ids:
+  - S160-E-LOCAL
+  - S160-E-ABSTRACTS
+  - S160-E-SOURCE-LIMITS
+- assessment_id: S160-A-OCC-2
+  area: evidence
+  topic: occurrences[2]
+  outcome: concern
+  summary: The complete cited 2006 body studies siderophores and does not supply this
+    congocidine occurrence. Correct this exact triple without denying independent
+    production.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  evidence_ids:
+  - S160-E-LOCAL
+  - S160-E-SIDEROPHORE
+  - S160-E-SOURCE-LIMITS
+- assessment_id: S160-A-OCC-3
+  area: evidence
+  topic: occurrences[3]
+  outcome: supported
+  summary: The 2011 paper positively states ATCC 23877 produces congocidine, citing
+    2009; its new experiments concern kinamycin.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  evidence_ids:
+  - S160-E-LOCAL
+  - S160-E-KINAMYCIN
+  - S160-E-SOURCE-LIMITS
+- assessment_id: S160-A-OCC-4
+  area: evidence
+  topic: occurrences[4]
+  outcome: supported
+  summary: The 2014 paper positively recounts S. ambofaciens congocidine as background;
+    its new isolation and pya25 genetics concern CGMCC 4.1650.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  evidence_ids:
+  - S160-E-LOCAL
+  - S160-E-MINING
+  - S160-E-SOURCE-LIMITS
+- assessment_id: S160-A-OCC-5
+  area: evidence
+  topic: occurrences[5]
+  outcome: unknown
+  summary: Original 1951 title/metadata are available but not the experimental body.
+    The exact S. netropsis occurrence remains bounded source assertion rather than
+    independently certified isolation.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  evidence_ids:
+  - S160-E-LOCAL
+  - S160-E-ABSTRACTS
+  - S160-E-SOURCE-LIMITS
+- assessment_id: S160-A-ACTIVITY
+  area: evidence
+  topic: bioactivities[0..3] values, units, calls and assay scope
+  outcome: concern
+  summary: 'All four deposited numerical values and calls agree: 40/30 µM antiamidolytic
+    Inactive, 4.7/3.1 µM helicase/ATPase Active. Inactive is a potency-threshold call,
+    not zero effect. The two PfUDN observations are biochemical inhibition, not quantitative
+    antiparasitic efficacy. The separate dsRNA parasite-growth result does not measure
+    netropsin.'
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  evidence_ids:
+  - S160-E-LOCAL
+  - S160-E-PFUDN2014
+  - S160-E-ASSAY
+  - S160-E-SID
+  dimensions:
+  - name: quantitative_endpoint
+    value: Cell-free functional IC50
+    definition: DNA unwinding, ATPase or antiamidolytic assay; not binding Kd or parasite-growth
+      potency.
+    evidence_ids:
+    - S160-E-PFUDN2014
+    - S160-E-ASSAY
+  - name: inactive_scope
+    value: Deposited <=10 µM active threshold
+    definition: 30/40 µM calls preserved without fabricated censoring comparator or
+      absolute inactivity.
+    evidence_ids:
+    - S160-E-ASSAY
+- assessment_id: S160-A-BINDING
+  area: evidence
+  topic: molecular_targets[0..3]
+  outcome: concern
+  summary: All four BindingDB IC50 observations are functional inhibition values.
+    The unconditional BINDS relation and affinity wording overstate what those measurements
+    show. PfUDN inhibition is specifically compatible with DNA-mediated interference;
+    direct protein affinity was not measured.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  evidence_ids:
+  - S160-E-LOCAL
+  - S160-E-PFUDN2014
+  - S160-E-ASSAY
+  - S160-E-CONSUMERS
+- assessment_id: S160-A-GRAPH
+  area: evidence
+  topic: causal_graphs[0] four edges and cited snippets
+  outcome: supported
+  summary: The graph deliberately targets ATPase and DNA-unwinding processes rather
+    than asserting compound–protein binding. The 2012 fragment activity and 2014 exact
+    inhibition endpoints support these four edges at their stated recombinant scope.
+    The source snippets match the relevant claims; retain DNA-mediated interpretation
+    and do not transfer to full-length native protein or parasite-growth potency.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  evidence_ids:
+  - S160-E-LOCAL
+  - S160-E-PFUDN2012
+  - S160-E-PFUDN2014
+- assessment_id: S160-A-PROTEIN
+  area: evidence
+  topic: causal_graphs[0].nodes[1] and edges[0..1] reference correspondence
+  outcome: concern
+  summary: The deposited N-terminal coding fragment and current Q8I3W6 are corresponding
+    helicase sequences, but three residues differ in the reported interval. The current
+    identifier can remain a qualified reference example rather than an exact reconstructed
+    experimental sequence. Complete tagged fusion and actual 2014 stock identity are
+    unestablished.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  evidence_ids:
+  - S160-E-LOCAL
+  - S160-E-PARTIAL-GB
+  - S160-E-UP
+  - S160-E-FRAGMENT-COMPARE
+  - S160-E-PFUDN2012
+  dimensions:
+  - name: submitted_partial_sequence
+    value: FJ588849.1 / ACL99766.1, 693 residues
+    definition: Independent nucleotide translation agrees with submitted qualifier.
+    evidence_ids:
+    - S160-E-PARTIAL-GB
+    - S160-E-FRAGMENT-COMPARE
+  - name: reference_difference
+    value: 152 T/M; 217 T/A; 376 D/N
+    definition: Submitted versus current Q8I3W6 residue at the reported 35–727 interval.
+    evidence_ids:
+    - S160-E-FRAGMENT-COMPARE
+    - S160-E-UP
+- assessment_id: S160-A-ENZYME-FORMS
+  area: evidence
+  topic: bioactivities[0..1].target_enzyme and molecular_targets[2..3].protein_examples
+  outcome: unknown
+  summary: P00747 is the plasminogen precursor with processed plasmin chains; P00749
+    is the urokinase precursor with active forms. These are valid organism-specific
+    protein examples, not proof of the exact 2010 material or a direct binding endpoint.
+    Full 2010 body remains unavailable.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  evidence_ids:
+  - S160-E-LOCAL
+  - S160-E-ASSAY
+  - S160-E-ABSTRACTS
+  - S160-E-SOURCE-LIMITS
+  - S160-E-P00747
+  - S160-E-P00749
+- assessment_id: S160-A-SHARED-STRUCTURE
+  area: evidence
+  topic: discussions[0] shared-structure question
+  outcome: supported
+  summary: Both sources concern congocidine/netropsin as the same named natural product,
+    with independent deposited loci. Current source microstates share Standard identity
+    but differ fixed-H guanidine placement as independently assessed by chemistry.
+    Preserve that distinction in any future discussion resolution rather than claiming
+    identical displayed microstates.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  evidence_ids:
+  - S160-E-LOCAL
+  - S160-E-PYR-SI
+  - S160-E-ABSTRACTS
+- assessment_id: S160-A-NATIVE-GRADE-RESOLUTION
+  area: evidence
+  topic: Required follow-up for BGC0001147 native producer grade
+  outcome: unknown
+  summary: Inspect the original main for an exact native congocidine loss/rescue endpoint
+    before revising the grade. If only heterologous necessity is established, retain
+    that locus evidence but implement a separately guarded producer-versus-locus method
+    scope; current single method list jointly grades both and cannot express that
+    separation. No unsupported universal withdrawal is selected here.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  evidence_ids:
+  - S160-E-LOCAL
+  - S160-E-PYR-SI
+  - S160-E-SOURCE-LIMITS
+  - S160-E-CONSUMERS
+findings:
+- finding_id: S160-F-CITATION
+  issue_key: congocidine-pmid17074905-siderophore-citation
+  category: provenance
+  severity: major
+  status: open
+  certainty: confirmed
+  title: A siderophore paper is routed to congocidine producer, locus and occurrence
+    claims
+  description: The complete cited 2006 article concerns coelichelin/desferrioxamines.
+    Independent congocidine production is positive; repair this citation route without
+    denying the organism association.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  field_paths:
+  - producer_organisms[1].evidence
+  - biosynthetic_gene_clusters[1].evidence
+  - occurrences[2]
+  evidence_ids:
+  - S160-E-LOCAL
+  - S160-E-SIDEROPHORE
+  - S160-E-ABSTRACTS
+  - S160-E-KINAMYCIN
+  - S160-E-CONSUMERS
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: Consumed exact MIBiG reference routing
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Whole-row citation guard
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/lotus_occurrence_exclusions.tsv
+    role: Consumed exact unsupported LOTUS triple exclusion
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/lotus_exclusions.py
+    role: Whole-row exact triple loader
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Application and occurrence recomputation
+  - repository: CultureBotAI/NaturalProductMech
+    path: tests/test_claim_references.py
+    role: Citation drift/composition tests
+  - repository: CultureBotAI/NaturalProductMech
+    path: tests/test_lotus_exclusions.py
+    role: Exact triple and stale-row tests
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Unchanged source row
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Unchanged raw triple
+- finding_id: S160-F-BINDING
+  issue_key: bindingdb-functional-ic50-emitted-as-binds
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Functional inhibition values are emitted as direct binding assertions
+  description: The four source measurements are IC50 functional endpoints, not direct
+    affinities. Unconditional BINDS and generated affinity wording overstate source
+    semantics, particularly for DNA-mediated PfUDN inhibition.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  field_paths:
+  - molecular_targets[0].relation
+  - molecular_targets[1].relation
+  - molecular_targets[2].relation
+  - molecular_targets[3].relation
+  - molecular_targets[0].evidence
+  - molecular_targets[1].evidence
+  - molecular_targets[2].evidence
+  - molecular_targets[3].evidence
+  evidence_ids:
+  - S160-E-LOCAL
+  - S160-E-PFUDN2014
+  - S160-E-ASSAY
+  - S160-E-CONSUMERS
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Imported target relation and wording emission; new guarded endpoint route
+      required
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/bindingdb_targets.tsv
+    role: All four immutable source measurements
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/schema/naturalproductmech.yaml
+    role: Allowed target relations and evidence semantics
+- finding_id: S160-F-CLASS
+  issue_key: pubchem-pfudn-biochemical-endpoints-antiparasitic
+  category: representation
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Two biochemical PfUDN assays are labeled antiparasitic efficacy
+  description: The Plasmodium title match labels cell-free ATPase/unwinding IC50 observations
+    ANTIPARASITIC. The cited parasite-growth result is dsRNA knockdown, a different
+    experimental intervention. Other netropsin antiparasitic literature does not change
+    these measured endpoints.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  field_paths:
+  - bioactivities[2].activity_class
+  - bioactivities[3].activity_class
+  - bioactivity_summary
+  evidence_ids:
+  - S160-E-LOCAL
+  - S160-E-PFUDN2014
+  - S160-E-CONSUMERS
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: classify_activity and derived summary; narrow guarded endpoint correction
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/pubchem_bioassay.tsv
+    role: Two immutable biochemical assay rows
+- finding_id: S160-F-FRAGMENT
+  issue_key: congocidine-pfudn-submitted-current-sequence-context
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: The fragment grounding should record the submitted versus current sequence
+    differences
+  description: The graph already names a fragment and supports activity predicates.
+    Its wording presents residues 35–727 of current Q8I3W6 without the three substitutions
+    in the submitted experimental sequence. A narrow correspondence qualification
+    improves provenance without retracting the experiments.
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  field_paths:
+  - causal_graphs[0].nodes[1]
+  - causal_graphs[0].edges[0].notes
+  - causal_graphs[0].edges[1].notes
+  evidence_ids:
+  - S160-E-LOCAL
+  - S160-E-PFUDN2012
+  - S160-E-PARTIAL-GB
+  - S160-E-UP
+  - S160-E-FRAGMENT-COMPARE
+  - S160-E-CONSUMERS
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/alkaloids/congocidine.yaml
+    role: Existing curator-owned inline graph, through validated curation workflow
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Same-key curator graph carry contract
+actions:
+- action_id: S160-ACT-CITATION
+  finding_ids:
+  - S160-F-CITATION
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: Consumed exact MIBiG reference routing
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Whole-row citation guard
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/lotus_occurrence_exclusions.tsv
+    role: Consumed exact unsupported LOTUS triple exclusion
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/lotus_exclusions.py
+    role: Whole-row exact triple loader
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Application and occurrence recomputation
+  - repository: CultureBotAI/NaturalProductMech
+    path: tests/test_claim_references.py
+    role: Citation drift/composition tests
+  - repository: CultureBotAI/NaturalProductMech
+    path: tests/test_lotus_exclusions.py
+    role: Exact triple and stale-row tests
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Unchanged source row
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Unchanged raw triple
+  description: 'Use mibig_claim_references source_id=BGC0000327:1 with producer_reference=PMID:19389628,
+    locus_reference=PMID:19389628 and source_reference=PMID:19389628, explicit abstract-only
+    and ATCC 23877 corroboration rationale, and full-row guard complete raw row {"bgc_classes":
+    "NRPS", "bgc_subclasses": "Type I", "cluster_link_evidence_basis": "CLUSTER_UNSTATED",
+    "compound_classes": "", "compound_index": "1", "compound_name": "netropsin", "database_ids":
+    "npatlas:NPA018236", "entry_completeness": "unknown", "entry_quality": "questionable",
+    "entry_status": "active", "entry_version": "5", "genome_accession": "AM238664.2",
+    "locus_evidence_methods": "", "locus_from": "1082965", "locus_to": "1112107",
+    "mibig_accession": "BGC0000327", "primary_reference": "PMID:17074905", "producer_evidence_basis":
+    "SOURCE_ASSERTION", "reference_basis": "ENTRY", "smiles": "CN1C=C(NC(=O)C2=CC(NC(=O)CNC(N)=N)=CN2C)C=C1C(=O)NCCC(N)=N",
+    "standard_inchi": "InChI=1S/C18H26N10O3/c1-27-9-11(6-12(27)16(30)23-4-3-14(19)20)26-17(31)13-5-10(8-28(13)2)25-15(29)7-24-18(21)22/h5-6,8-9H,3-4,7H2,1-2H3,(H3,19,20)(H,23,30)(H,25,29)(H,26,31)(H4,21,22,24)",
+    "standard_inchi_key": "IDBIFFKSXLYUOT-UHFFFAOYSA-N", "stereo_complete": "true",
+    "taxon_id": "NCBITaxon:278992", "taxon_label": "Streptomyces ambofaciens ATCC
+    23877"}; expected_source_row_sha256=1f7b868e88a50151aca12f72b7fb7953e9761970ccbc5bc4db733bab88ed89fd.
+    Do not upgrade empty methods from the abstract. Exclude only the exact LOTUS key/taxon/DOI
+    through lotus_occurrence_exclusions with full guard complete raw row {"organism_name":
+    "Streptomyces ambofaciens", "organism_wikidata": "http://www.wikidata.org/entity/Q22286894",
+    "reference_doi": "10.1099/MIC.0.29161-0", "standard_inchi_key": "IDBIFFKSXLYUOT-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q3874969", "taxon_id": "NCBITaxon:1889"};
+    expected_source_row_sha256=5a90437f5ce841802ac3e3f8ebadb3336776c020db6459f4d3889c764072f592.
+    Preserve the other positive S. ambofaciens triples and raw rows. If independent
+    chemistry changes the joined key, re-adjudicate all source associations and implement
+    tested composition; existing reference correction rejects structure_correction_note.'
+  acceptance_checks:
+  - Changed raw fields and ambiguous selectors fail closed.
+  - Only the wrong 2006 citation/triple is replaced/withheld; positive 2009/2011/2014
+    evidence and organism origin survive.
+  - No new genotype, method or source taxon is inferred from chromosome reference
+    metadata.
+  - Run existing exact citation and LOTUS tests plus regeneration/strict/reference/history
+    gates after separately authorized implementation.
+- action_id: S160-ACT-BINDING
+  finding_ids:
+  - S160-F-BINDING
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Imported target relation and wording emission; new guarded endpoint route
+      required
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/bindingdb_targets.tsv
+    role: All four immutable source measurements
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/schema/naturalproductmech.yaml
+    role: Allowed target relations and evidence semantics
+  description: 'Implement a consumed, attributed, full-row-guarded BindingDB endpoint
+    qualification or equally narrow tested seeder rule before emitting the four targets.
+    Preserve each value, units, EQUAL qualifier, pH/temperature and source; replace
+    direct-binding interpretation with functional-inhibition scope, using an appropriate
+    existing relation only after source-specific adjudication. Do not infer direct
+    protein interaction from INHIBITS either; PfUDN mechanism remains DNA-mediated-compatible.
+    Adding a separate CURATOR target alone leaves the erroneous imported row and is
+    insufficient. Complete guarded input rows: [{"expected_source_row_sha256": "dbddcc42040f6331240c38eb99716390002f412953598b0e68a34592122fd24f",
+    "row": {"curation_source": "Curated from the literature by BindingDB", "measurement_qualifier":
+    "EQUAL", "measurement_type": "IC50", "measurement_value_nm": "3100", "ph": "8.0000",
+    "reference": "PMID:24707807", "standard_inchi_key": "IDBIFFKSXLYUOT-UHFFFAOYSA-N",
+    "target_name": "DNA helicase [35-727]", "target_organism": "Plasmodium falciparum",
+    "temperature_c": "37.00 C", "uniprot": ""}}, {"expected_source_row_sha256": "1631603f51eb10f887b873f49a6fa787cdc4fbaec63473347c5abf15a819e94e",
+    "row": {"curation_source": "Curated from the literature by BindingDB", "measurement_qualifier":
+    "EQUAL", "measurement_type": "IC50", "measurement_value_nm": "4700", "ph": "8.0000",
+    "reference": "PMID:24707807", "standard_inchi_key": "IDBIFFKSXLYUOT-UHFFFAOYSA-N",
+    "target_name": "DNA helicase [35-727]", "target_organism": "Plasmodium falciparum",
+    "temperature_c": "37.00 C", "uniprot": ""}}, {"expected_source_row_sha256": "f43cbf52cd5396ea0e0def13a310318b2fd58eec04792ad4a9a7d10edc04656a",
+    "row": {"curation_source": "Curated from the literature by BindingDB", "measurement_qualifier":
+    "EQUAL", "measurement_type": "IC50", "measurement_value_nm": "40000", "ph": "",
+    "reference": "PMID:20429779", "standard_inchi_key": "IDBIFFKSXLYUOT-UHFFFAOYSA-N",
+    "target_name": "Plasminogen", "target_organism": "Homo sapiens", "temperature_c":
+    "", "uniprot": "P00747"}}, {"expected_source_row_sha256": "af77aad08db8669d6b0ffe883ae7e09150da9c4c330e5db363070447730d3aef",
+    "row": {"curation_source": "Curated from the literature by BindingDB", "measurement_qualifier":
+    "EQUAL", "measurement_type": "IC50", "measurement_value_nm": "30000", "ph": "",
+    "reference": "PMID:20429779", "standard_inchi_key": "IDBIFFKSXLYUOT-UHFFFAOYSA-N",
+    "target_name": "Urokinase-type plasminogen activator", "target_organism": "Homo
+    sapiens", "temperature_c": "", "uniprot": "P00749"}}]'
+  acceptance_checks:
+  - All four complete row hashes and expected old BINDS/evidence fields are enforced,
+    including blank UniProt values.
+  - Retain numeric IC50 observations and graph activity edges; no Kd, direct affinity
+    or exact experimental protein sequence is invented.
+  - Test at least one genuine affinity row as unaffected and reject stale/duplicate
+    target selectors.
+  - Reseeding preserves the corrected imported interpretation and curator graph; no
+    generated owner hand edit.
+- action_id: S160-ACT-CLASS
+  finding_ids:
+  - S160-F-CLASS
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: classify_activity and derived summary; narrow guarded endpoint correction
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/pubchem_bioassay.tsv
+    role: Two immutable biochemical assay rows
+  description: 'Add a consumed complete-row-guarded endpoint/class qualification or
+    narrow tested classifier rule for AIDs 1802684 and 1802685 only. Retain ACTIVE
+    calls, 3.1/4.7 µM IC50, citations and names; remove unsupported ANTIPARASITIC
+    from these observations, optionally use a source-supported biochemical class,
+    and recompute the summary. A separate independently supported antiparasitic assay
+    could later support a summary; no blanket claim that netropsin lacks that activity.
+    Existing exclusion table removes whole rows and is not a class editor. Complete
+    row guards: [{"expected_source_row_sha256": "d0e278b8c86bc3e158a8a10654458bcf7a557a2e422ce296700200529bff0847",
+    "row": {"activity_name": "IC50", "activity_outcome": "Active", "activity_value_um":
+    "3.1", "aid": "1802684", "assay_name": "DNA-Dependent ATPase Assay from Article
+    10.1186/1471-2091-15-9: \"Plasmodium falciparum UvrD activities are downregulated
+    by DNA-interacting compounds and its dsRNA inhibits malaria parasite growth.\"",
+    "assay_type": "Confirmatory", "cid": "4461", "depositor": "BindingDB", "reference":
+    "PMID:24707807", "standard_inchi_key": "IDBIFFKSXLYUOT-UHFFFAOYSA-N", "target_accession":
+    ""}}, {"expected_source_row_sha256": "6ebbe32c23fd185ea8befc4fd76c0ab469cb6ea43b38d22357307151cccd8ff2",
+    "row": {"activity_name": "IC50", "activity_outcome": "Active", "activity_value_um":
+    "4.7", "aid": "1802685", "assay_name": "DNA Helicase Assay from Article 10.1186/1471-2091-15-9:
+    \"Plasmodium falciparum UvrD activities are downregulated by DNA-interacting compounds
+    and its dsRNA inhibits malaria parasite growth.\"", "assay_type": "Confirmatory",
+    "cid": "4461", "depositor": "BindingDB", "reference": "PMID:24707807", "standard_inchi_key":
+    "IDBIFFKSXLYUOT-UHFFFAOYSA-N", "target_accession": ""}}]'
+  acceptance_checks:
+  - Both full raw rows and old activity_class values are checked; drift rejects the
+    decision.
+  - All four observations and their numeric values survive; only two endpoint classifications
+    change.
+  - The summary derives from actually supported written evidence, and unrelated parasite
+    growth assays remain unchanged.
+  - Test new classification/qualification logic and normal regeneration/reference/history
+    gates after authorization.
+- action_id: S160-ACT-FRAGMENT
+  finding_ids:
+  - S160-F-FRAGMENT
+  target_ids:
+  - naturalproductmech:mibig-0a89c3541b
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/alkaloids/congocidine.yaml
+    role: Existing curator-owned inline graph, through validated curation workflow
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Same-key curator graph carry contract
+  description: Use the validated curation writer/event route for this curator-owned
+    inline graph, after rechecking the exact unchanged owner hash f7e696f8f1c74b18e62f6f8cc2b77ff4ab95b5fe22dbae5281ae1061759e9df8.
+    Retain Q8I3W6 as the corresponding native reference and explicitly cite FJ588849.1/ACL99766.1
+    for the submitted 693-residue core, recording T/M at native 152, T/A at 217 and
+    D/N at 376. Do not assert complete fusion or actual 2014 stock equality. Keep
+    four process-level edges and exact inhibitor values. Verify the same-key carry
+    behavior on reseed; a separate chemical key migration needs explicit graph ownership
+    adjudication.
+  acceptance_checks:
+  - Expected old node/edge text and complete owner SHA are checked before curation.
+  - No activity or native sequence is silently substituted; full fusion remains unestablished.
+  - Append a curation event and verify regeneration preserves the qualified graph.
+limitations:
+- The root section inventories present claims and source routing; chemical identities,
+  source-specific experiments, definition claims and optional-content assertions require
+  their separately scoped scientific assessments.
+- Authority matches establish the representations actually returned at their retained
+  access times; they are not independent experimental structure or absolute-hand determinations.
+  Root and science sections separately assess organism, locus, classification and
+  history claims.
+- The BGC0001147 native-grade interpretation remains unresolved without the original
+  main; systematic SI mutants are heterologous and native dst18 insertion does not
+  alone settle exact congocidine necessity.
+- Current UniProt annotations and precursor accessions do not independently identify
+  exact 2010 protein preparations.
+- No explicit comparator loss is asserted for the 30/40 µM antiamidolytic measurements.
+- Prepared source retrieval times and exact snapshots are reused; no new source access
+  is implied by formal authoring time.
+- Independent chemistry owns exact structure, stereochemistry and xref repairs; root
+  owns generic taxon/history/computed classification context. Every chemistry-plus-biological
+  overlay composition must be explicitly tested.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35
+  explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently
+  verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+  Skipped tests are not counted as passing tests. Existing ontology caches were used;
+  no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do
+  not establish biological production, stereochemical specificity, evidence adequacy,
+  or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology
+  results. Reuse establishes unchanged repository inputs; it is not a new remote authority
+  query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all
+  tracked files are hashed. Generated Python bytecode and external tool caches are
+  not claimed to have been independently byte-pinned at the prior execution.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+- Positive named-product evidence is retained at its demonstrated structure, strain
+  and assay resolution; confirmed defects and required source gaps are recorded separately.
+tags:
+- path-order-campaign
+- batch-016
+- scientific-review
+- identity
+- source-scope
