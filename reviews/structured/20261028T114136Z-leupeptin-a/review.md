@@ -1,0 +1,1233 @@
+# Scientific review of leupeptin A
+
+- Review: 20261028T114136Z-leupeptin-a
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-28T11:15:24.171196Z
+- Finished UTC: 2026-10-28T11:41:36.409466Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+Leupeptin A retains two source-specific producer/locus contexts, eight source assay observations and incomplete stereochemical encoding. Exact native congener/configuration and the CHEBI:6426 same-structure relationship remain unresolved. One binding/entry observation carries an unsupported enzyme-inhibitor classification; this is separate from positive papain observations and the record-level enzyme-inhibitor summary.
+
+## Scope And Provenance
+
+Whole current owner and retained source arrays with exact own publication evidence and bounded identity, producer, occurrence, biosynthesis and activity interpretation.
+
+Selection: One exact owner selected from the unreviewed corpus in canonical path order; whole local owner and retained rows were read, with the bounded scientific verification described here.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 14373517042b407747272446f79953ae86d51fa4.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-42f99235c6 | data/natural_products/amino_acids_and_peptides/leupeptin-a.yaml | generated | leupeptin A |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-42f99235c6 | Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its pinned path. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-42f99235c6 | Fresh canonical reproduction gate passed:all3116 records byte-identical to source seeding; source warnings remain retained. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-42f99235c6 | Fresh deterministic review queue completed:8922 rows across12 queues. Queue output is not scientific-review coverage. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-42f99235c6 | Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking mismatches and4898no-adapter skips remain explicit. |
+| Full repository quality gate on the fresh main baseline | passed | True | naturalproductmech:mibig-42f99235c6 | Canonical just qc completed with actual terminal exit0:1024 tests passed,4 skipped,2 dependency warnings;3116 records passed closed schema validation, site freshness, byte reproduction and lockfile integrity.22 governed artifacts and15 raw inventories passed. Prior DNS failed001 remains preserved. |
+| Native strict target validation | passed | True | naturalproductmech:mibig-42f99235c6 | The selected owner passed the documented strict validator. This establishes configured consistency only. |
+| Whole retained owner and raw source-array joins | passed | True | naturalproductmech:mibig-42f99235c6 | The whole current owner equals the frozen inventory owner/resolved object. All seven retained source arrays (13 rows) and two supplemental arrays (0 rows) rejoin exact named raw-table positions; all 6 original history entries are preserved. The current official owner and six arrays also agree, with 37 captured repository inputs. This establishes source consistency, not independent biological truth. |
+| Current official owner and six-array reconciliation | passed | True | naturalproductmech:mibig-42f99235c6 | The accepted current reconciliation and direct replay confirm whole owner/six-array equality and all 37 current source pins. This is input fidelity, not a scientific verdict. |
+| Saved two-encoding diagnostics and current intake comparison | passed | True | naturalproductmech:mibig-42f99235c6 | Saved SMILES and Standard InChI agree on GDBQQVLCIARPGH-BSOSBYQFSA-N, formula C20H38N6O4, 1 fragment and formal charge 0; actual intake facts agree. Both encodings retain 1 unassigned tetrahedral carbon site. InChI reports 3 C(-O)=N and 1 guanidino C=N local diagnostics. These representation-dependent double-bond flags are separate from unspecified carbon configuration. Internal agreement is not natural-identity proof. |
+| Identity and configuration evidence | unavailable | True | naturalproductmech:mibig-42f99235c6 | Both retained MIBiG entries encode exactly the same incomplete SMILES/InChI/key under leupeptin Ac and leupeptin A. CHEBI:6426 is a different full key with the same first block and explicit stereochemical notation at the aldehyde-adjacent carbon. This requires exact-identity/xref resolution, not a claim of opposite stereochemistry or a proven wrong natural structure. |
+| Producer claim evidence | unavailable | True | naturalproductmech:mibig-42f99235c6 | Keep the Streptomyces roseus BGC0002095 producer grade BGC_CHARACTERIZED separate from Xenorhabdus bovienii SS-2004 BGC0002134 SOURCE_ASSERTION. The own Crossref abstracts distinguish a Streptomyces leupeptin NRPS context from gammaproteobacterial ligase-based leupeptins; neither abstract settles every congener or configuration. |
+| Occurrence claim evidence | unavailable | False | naturalproductmech:mibig-42f99235c6 | The LOTUS Xenorhabdus bovienii occurrence is species-level, while the producer assertion names SS-2004. Streptomyces roseus occurrence cites the 1969 work; its current Crossref response supplies a title only. Do not promote an occurrence to a demonstrated producer or assume independent replication from duplicated references. |
+| Locus and biosynthetic evidence | unavailable | True | naturalproductmech:mibig-42f99235c6 | BGC0002095 carries NRPS and knockout/enzyme/heterologous locus evidence; BGC0002134 carries OTHER and heterologous evidence. The preprint abstract distinguishes livipeptin tRNA dependence from leupeptin production and must not transfer the livipeptin mechanism to this owner. |
+| Activity and target evidence | failed | True | naturalproductmech:mibig-42f99235c6 | Eight retained PubChem rows are eight observations, not eight independent experiments. Preserve generic Potency as OTHER, the inactive and inconclusive NSP2Pro calls, duplicated papain AID rows, and ungrounded B45705. The cell binding/entry assay AID720532 does not establish an enzyme target despite the seeded ENZYME_INHIBITOR label. |
+| Source and history evidence | passed | False | naturalproductmech:mibig-42f99235c6 | Both open curation discussions and six original events are retained. The same encoded key across two MIBiG sources is not proof of biological equivalence. The ChEBI key mismatch is documented locally, while source-specific natural configuration and the correct curation choice remain unresolved. |
+| Classification evidence scope | unavailable | False | naturalproductmech:mibig-42f99235c6 | The filing pathway and NPClassifier labels remain explicitly computational or retained source classifications. Their presence does not independently verify natural identity, source-specific product class or every ontology mapping. |
+| Own source and claim-level boundaries | passed | True | naturalproductmech:mibig-42f99235c6 | Own article IDs and original response clocks are kept separate from bibliography identifiers. Supplied abstracts support only their stated material and claim scope; title-only metadata is not exact-structure or native-producer proof. |
+
+## Scientific And Domain Assessments
+
+### Internal representation diagnostics
+
+representation: supported. Targets: naturalproductmech:mibig-42f99235c6.
+
+Saved SMILES and Standard InChI agree on GDBQQVLCIARPGH-BSOSBYQFSA-N, formula C20H38N6O4, 1 fragment and formal charge 0; actual intake facts agree. Both encodings retain 1 unassigned tetrahedral carbon site. InChI reports 3 C(-O)=N and 1 guanidino C=N local diagnostics. These representation-dependent double-bond flags are separate from unspecified carbon configuration. Internal agreement is not natural-identity proof.
+
+### Identity and configuration evidence
+
+identity: concern. Targets: naturalproductmech:mibig-42f99235c6.
+
+Both retained MIBiG entries encode exactly the same incomplete SMILES/InChI/key under leupeptin Ac and leupeptin A. CHEBI:6426 is a different full key with the same first block and explicit stereochemical notation at the aldehyde-adjacent carbon. This requires exact-identity/xref resolution, not a claim of opposite stereochemistry or a proven wrong natural structure.
+
+### Producer claim evidence
+
+evidence: unknown. Targets: naturalproductmech:mibig-42f99235c6.
+
+Keep the Streptomyces roseus BGC0002095 producer grade BGC_CHARACTERIZED separate from Xenorhabdus bovienii SS-2004 BGC0002134 SOURCE_ASSERTION. The own Crossref abstracts distinguish a Streptomyces leupeptin NRPS context from gammaproteobacterial ligase-based leupeptins; neither abstract settles every congener or configuration.
+
+### Occurrence claim evidence
+
+scope: unknown. Targets: naturalproductmech:mibig-42f99235c6.
+
+The LOTUS Xenorhabdus bovienii occurrence is species-level, while the producer assertion names SS-2004. Streptomyces roseus occurrence cites the 1969 work; its current Crossref response supplies a title only. Do not promote an occurrence to a demonstrated producer or assume independent replication from duplicated references.
+
+### Locus and biosynthetic evidence
+
+completeness: unknown. Targets: naturalproductmech:mibig-42f99235c6.
+
+BGC0002095 carries NRPS and knockout/enzyme/heterologous locus evidence; BGC0002134 carries OTHER and heterologous evidence. The preprint abstract distinguishes livipeptin tRNA dependence from leupeptin production and must not transfer the livipeptin mechanism to this owner.
+
+### Activity and target evidence
+
+evidence: concern. Targets: naturalproductmech:mibig-42f99235c6.
+
+Eight retained PubChem rows are eight observations, not eight independent experiments. Preserve generic Potency as OTHER, the inactive and inconclusive NSP2Pro calls, duplicated papain AID rows, and ungrounded B45705. The cell binding/entry assay AID720532 does not establish an enzyme target despite the seeded ENZYME_INHIBITOR label.
+
+### Source and history evidence
+
+provenance: supported. Targets: naturalproductmech:mibig-42f99235c6.
+
+Both open curation discussions and six original events are retained. The same encoded key across two MIBiG sources is not proof of biological equivalence. The ChEBI key mismatch is documented locally, while source-specific natural configuration and the correct curation choice remain unresolved.
+
+### Retained versus computational classification
+
+representation: unknown. Targets: naturalproductmech:mibig-42f99235c6.
+
+The filing pathway and NPClassifier labels remain explicitly computational or retained source classifications. Their presence does not independently verify natural identity, source-specific product class or every ontology mapping.
+
+### Evidence level and source boundaries
+
+scope: supported. Targets: naturalproductmech:mibig-42f99235c6.
+
+Own article IDs and original response clocks are kept separate from bibliography identifiers. Supplied abstracts support only their stated material and claim scope; title-only metadata is not exact-structure or native-producer proof.
+
+## Findings
+
+### F814-AID720532-UNSUPPORTED-ENZYME-CLASS: Binding/entry observation has an unsupported enzyme-inhibitor class
+
+major / open / confirmed; issue key: leupeptin-a-aid720532-unsupported-enzyme-class.
+
+The retained AID720532 observation is classified ENZYME_INHIBITOR, although its source assay describes inhibition of binding or entry into cells and supplies no grounded enzyme target. The current seeder reaches this class from generic inhibitor/binding words in the title. That source supports the recorded assay call and endpoint, but not the added enzyme mechanism. This finding is confined to bioactivities[5]. It does not deny leupeptin A enzyme inhibition generally: the separate papain observations remain relevant. No more specific antiviral mechanism, target or replacement class is inferred.
+
+## Recommended Actions And Acceptance Checks
+
+### A814-NARROW-AID720532-CLASSIFICATION
+
+Correct the maintained activity-class transform so this exact title-pinned observation does not receive an enzyme-inhibitor class solely from generic binding/inhibitor wording. Leave the optional class unset unless separately inspected enzyme-specific evidence supports it. Preserve the source observation and its original call, value, units, endpoint and ungrounded target note; do not substitute a more specific antiviral mechanism.
+
+- Reproduce the exact current owner observation and full retained key/CID72429/AID720532 row with its original digest before changing the transform.
+- Use a narrowly reviewed, source-title-pinned condition or a separately reviewed classifier rule with explicit impact accounting; do not infer a new curation table is already consumed.
+- Add a meaningful classifier regression demonstrating that this binding/entry title does not imply enzyme inhibition, and preserve the supported papain classification. Any broader rule requires a separately bounded impact review.
+- After separately authorized regeneration, the AID720532 observation preserves its original ACTIVE call, generic Potency-as-OTHER measurement, value, units and database evidence while the unsupported class is absent. No enzyme or antiviral target is invented.
+- Retain all other observations, source histories and independent positive papain support for the record-level ENZYME_INHIBITOR summary. Do not remove the whole raw row to repair only its classification.
+- Use the documented guarded seeder/canary and history-preserving writer, then verify reproduction and applicable full-corpus gates. No corpus edit or validation execution is authorized by this candidate DATA.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| SCI814-LOCAL | /private/tmp/npm-review-work/shared-next-batch082-tentative/tentative-owner-source-inventory-001.json; /entries/3/owner_document; /entries/3/rows; /entries/3/supplemental_retained_rows | supports | The whole current owner equals the frozen inventory owner/resolved object. All seven retained source arrays (13 rows) and two supplemental arrays (0 rows) rejoin exact named raw-table positions; all 6 original history entries are preserved. The current official owner and six arrays also agree, with 37 captured repository inputs. This establishes source consistency, not independent biological truth. |
+| SCI814-ENCODINGS | /private/tmp/npm-review-work/shared-next-batch082-tentative/source-science-preparation/root-tentative82-local-chemical-consistency-and-neighbors-001.json; /records/3/smiles; /records/3/inchi; /records/3/comparisons | supports | Saved SMILES and Standard InChI agree on GDBQQVLCIARPGH-BSOSBYQFSA-N, formula C20H38N6O4, 1 fragment and formal charge 0; actual intake facts agree. Both encodings retain 1 unassigned tetrahedral carbon site. InChI reports 3 C(-O)=N and 1 guanidino C=N local diagnostics. These representation-dependent double-bond flags are separate from unspecified carbon configuration. Internal agreement is not natural-identity proof. |
+| SCI814-CURRENT-JOIN | /private/tmp/npm-review-work/shared-next-batch082/root-current82-intake-reconciliation-001.json; /records/3; /counts | supports | Current owner, six official source arrays and 37 source-capture pins reconcile exactly to the tentative inventory. Original intake, strict and chemistry clocks remain separate; no new intake or computation was run here. |
+| SCI814-KEY-CENSUS | /private/tmp/npm-review-work/shared-next-batch082-tentative/source-science-preparation/root-tentative82-declared-key-collision-census-001.json; /records/3; /population; /counts | supports | The saved ignored-inclusive census of 3116 declared owner keys finds only this owner for its full key and connectivity prefix. This is a literal declared-key census, not a graph-isomorphism or near-analog search, and does not establish natural identity. |
+| SCI814-CR04 | DOI:10.1002/anie.202005506; /message/DOI; /message/title; /message/abstract (presence checked); /message/type; /message/resource/primary/URL | partial | Own Crossref abstract supports a gammaproteobacterial leupeptin family and ligase-based biosynthetic context. It does not establish exact B/C/D configurations or native isolation of each congener. |
+| SCI814-CR05 | DOI:10.1101/2020.10.26.356543; /message/DOI; /message/title; /message/abstract (presence checked); /message/type; /message/resource/primary/URL | partial | Own posted-content preprint abstract distinguishes tRNA-dependent livipeptin from leupeptin biosynthesis in Streptomyces roseous ATCC31245. The livipeptin mechanism must not be assigned to leupeptin A or Pr; spelling/strain equivalence and exact congener assignment remain unresolved. |
+| SCI814-CR06 | DOI:10.1248/cpb.17.1896; /message/DOI; /message/title; /message/abstract (presence checked); /message/type; /message/resource/primary/URL | partial | Own Crossref title identifies historical isolation and characterization of leupeptins, but no abstract is supplied. Exact Ac/Pr material, configuration and source-taxon assignments are not independently verified. |
+| CAND814-OWN-OBSERVATION | data/natural_products/amino_acids_and_peptides/leupeptin-a.yaml; /bioactivities/5; /bioactivities/0; /bioactivities/1; /bioactivity_summary | supports | The owner labels the AID720532 cell binding/entry observation ENZYME_INHIBITOR without a grounded enzyme target. Separate positive papain observations independently support the record-level enzyme-inhibitor summary. |
+| CAND814-RETAINED-ASSAY | pubchem.aid:720532; data/raw/pubchem_bioassay.tsv zero-based data row 1688; exact full key GDBQQVLCIARPGH-BSOSBYQFSA-N, CID72429, AID720532 | partial | The retained row describes a binding/entry assay and preserves an Active call, generic Potency endpoint and ungrounded B45705. It does not state an enzyme-specific endpoint or establish a molecular mechanism. |
+| CAND814-CLASSIFIER | scripts/seed_from_sources.py; lines128-178 and1330-1383 | supports | The current classifier assigns ENZYME_INHIBITOR through a generic inhibitor/binding title fallback. Static matching confirms that this is the only matching activity-class pattern for the retained title; no source function was executed. |
+| CAND814-EVIDENCE-RULE | docs/CURATION.md; Evidence rules; What may back a bioactivity_summary value | context_only | Claims require support at the narrowest observation. Positive source calls and generic endpoints must be preserved; an observation-level mechanism inference cannot be justified by an independent observation elsewhere on the compound. |
+| CAND814-SEVERITY-RUBRIC | docs/record-reviews.md; Verdict And Severity | context_only | The native rubric assigns major severity to materially unsupported claims or systemic source/generator errors. This candidate concerns one unsupported semantic classification, not wrong molecular identity. |
+| CAND814-MAINTAINED-OWNERSHIP | docs/record-review-profile.md; Native questions and ownership | context_only | Generated claims are corrected through the maintained transform or implemented input, not a YAML-only patch. The existing whole-row exclusion interface does not selectively repair activity_class and is not proposed as the fix. |
+| SCI814-CHEBI6426-RETAINED-ROW | CHEBI:6426; data/raw/chebi_structures.tsv: zero-based data row 1276 (one-based data row 1277), chebi_id=CHEBI:6426; saved local notes /additional_exact_named_CHEBI_row | partial | The separately read retained ChEBI row has full key GDBQQVLCIARPGH-ULQDDVLXSA-N and explicit stereochemical notation at the aldehyde-adjacent carbon, while the owner has GDBQQVLCIARPGH-BSOSBYQFSA-N and an unspecified centre. This exact named-ID row is outside the frozen exact-full-key join, which correctly returned no matching ChEBI row. It supports a retained-table comparison only, not live authority verification, opposite configuration or complete natural stereochemistry. The timestamp is the original saved local-note reading time, not a ChEBI acquisition time. |
+
+## Limits And Additional Notes
+
+- Both retained MIBiG entries encode exactly the same incomplete SMILES/InChI/key under leupeptin Ac and leupeptin A. CHEBI:6426 is a different full key with the same first block and explicit stereochemical notation at the aldehyde-adjacent carbon. This requires exact-identity/xref resolution, not a claim of opposite stereochemistry or a proven wrong natural structure.
+- Keep the Streptomyces roseus BGC0002095 producer grade BGC_CHARACTERIZED separate from Xenorhabdus bovienii SS-2004 BGC0002134 SOURCE_ASSERTION. The own Crossref abstracts distinguish a Streptomyces leupeptin NRPS context from gammaproteobacterial ligase-based leupeptins; neither abstract settles every congener or configuration.
+- BGC0002095 carries NRPS and knockout/enzyme/heterologous locus evidence; BGC0002134 carries OTHER and heterologous evidence. The preprint abstract distinguishes livipeptin tRNA dependence from leupeptin production and must not transfer the livipeptin mechanism to this owner.
+- The scientific review is partial: source-specific identity, complete natural configuration, and unverified authority mappings are not silently promoted from internal consistency or metadata.
+- No verified protein example, direct molecular target, operational production or assay protocol, clinical conclusion, or new corpus claim is added.
+- Own metadata supplies only the available abstract or title; no complete primary article was obtained for the compound-specific claims assessed here.
+- Unsupported classification on one retained observation only; identity/xref/stereochemistry and general compound activity are separate.
+- The CHEBI:6426 relationship, unspecified stereochemistry and shared-source encoding question remain separate from the assay-classification candidate.
+- Configured consistency only; independent scientific claim support and unrestricted remote authority refresh are not implied.
+- FailedQC001 is retained for an explicit separate network-enabled retry; no artifact will be overwritten.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint and before downstream tests. Its actual exit1/log/input capture/root observation remain pinned; the selected successful canonical QC attempt002 is separately timed. No individual-review validation failure or counter reset is claimed.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings; this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions and no-adapter pairs; a successful command does not convert these into verified scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population was checked; external caches and generated bytecode are not asserted to be independently byte-pinned.
+- The whole local owner and retained source rows were read. Full-owner scientific verification remains false; scientific_review denotes the bounded scientific interpretation in this report.
+- Original owner/source reading, two-encoding computation, neighbor inspection, HTTP retrieval and later metadata reading retain separate clocks. Official intake separately computed SMILES facts.
+- No scientific record, maintained input or native curation status was changed. Any findings and actions record ROOT-adopted proposed work; exact-source limitations and unavailable checks remain explicit.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261028T114136Z-leupeptin-a
+title: Scientific review of leupeptin A
+started_at: '2026-10-28T11:15:24.171196Z'
+finished_at: '2026-10-28T11:41:36.409466Z'
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: Leupeptin A retains two source-specific producer/locus contexts, eight source
+  assay observations and incomplete stereochemical encoding. Exact native congener/configuration
+  and the CHEBI:6426 same-structure relationship remain unresolved. One binding/entry
+  observation carries an unsupported enzyme-inhibitor classification; this is separate
+  from positive papain observations and the record-level enzyme-inhibitor summary.
+source:
+  git_revision: 14373517042b407747272446f79953ae86d51fa4
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/leupeptin-a.yaml
+    sha256: e4d702ffb4f40c08fba270230fd68809934d27a15edadb25f45dd0b8c4f7324f
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+targets:
+- target_id: naturalproductmech:mibig-42f99235c6
+  path: data/natural_products/amino_acids_and_peptides/leupeptin-a.yaml
+  label: leupeptin A
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/amino_acids_and_peptides/leupeptin-a.yaml
+    role: Curator-owned assertions, inline mechanisms, discussions and audit history
+scope:
+  description: Whole current owner and retained source arrays with exact own publication
+    evidence and bounded identity, producer, occurrence, biosynthesis and activity
+    interpretation.
+  selection: One exact owner selected from the unreviewed corpus in canonical path
+    order; whole local owner and retained rows were read, with the bounded scientific
+    verification described here.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-42f99235c6
+  exclusions:
+  - target: Complete natural atom/configuration assignment beyond inspected evidence
+    reason: Outside the inspected evidence and bounded scientific verification of
+      this review.
+  - target: Uninspected figure pixels, supplementary or correction article content
+    reason: Outside the inspected evidence and bounded scientific verification of
+      this review.
+  - target: Current physical-stock, sequence and external authority verification
+    reason: Outside the inspected evidence and bounded scientific verification of
+      this review.
+  - target: Unreported congener-specific assays or molecular mechanisms
+    reason: Outside the inspected evidence and bounded scientific verification of
+      this review.
+  - target: Operational production, engineering or assay instructions
+    reason: Outside the inspected evidence and bounded scientific verification of
+      this review.
+checks:
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its
+    pinned path.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-corpus-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.783967Z;
+    finished 2026-10-25T22:37:16.453216Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.log.
+    Reused for batch082 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch082. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-42f99235c6
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: Fresh canonical reproduction gate passed:all3116 records byte-identical
+    to source seeding; source warnings remain retained.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-reproduction-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784055Z;
+    finished 2026-10-25T22:37:31.682209Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.log.
+    Reused for batch082 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch082. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-42f99235c6
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: Fresh deterministic review queue completed:8922 rows across12 queues. Queue
+    output is not scientific-review coverage.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-review-queue-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just review-queue --tsv /private/tmp/npm-review-queue-batch-036-fresh14373517-001.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.781802Z;
+    finished 2026-10-25T22:37:08.229737Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.log.
+    Reused for batch082 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch082. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-42f99235c6
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking
+    mismatches and4898no-adapter skips remain explicit.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-validate-products-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784040Z;
+    finished 2026-10-25T22:37:32.251879Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.log.
+    Reused for batch082 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch082. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-42f99235c6
+- check_id: shared-qc
+  name: Full repository quality gate on the fresh main baseline
+  status: passed
+  required: true
+  summary: Canonical just qc completed with actual terminal exit0:1024 tests passed,4
+    skipped,2 dependency warnings;3116 records passed closed schema validation, site
+    freshness, byte reproduction and lockfile integrity.22 governed artifacts and15
+    raw inventories passed. Prior DNS failed001 remains preserved.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-qc-attempt-002
+    PYTHONDONTWRITEBYTECODE=1 just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-002 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:40:55.179857Z;
+    finished 2026-10-25T22:46:28.974296Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.log.
+    Reused for batch082 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch082. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-42f99235c6
+- check_id: C-STRICT
+  name: Native strict target validation
+  status: passed
+  required: true
+  summary: The selected owner passed the documented strict validator. This establishes
+    configured consistency only.
+  command: just validate-strict data/natural_products/amino_acids_and_peptides/leupeptin-a.yaml
+    --out /private/tmp/npm-review-work/814/strict.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Actual intake execution finished 2026-10-28T11:15:25.521680Z. Original
+    receipt: /private/tmp/npm-review-work/814/strict-receipt.json.'
+  target_ids:
+  - naturalproductmech:mibig-42f99235c6
+- check_id: SCI814-LOCAL-JOINS
+  name: Whole retained owner and raw source-array joins
+  status: passed
+  required: true
+  summary: The whole current owner equals the frozen inventory owner/resolved object.
+    All seven retained source arrays (13 rows) and two supplemental arrays (0 rows)
+    rejoin exact named raw-table positions; all 6 original history entries are preserved.
+    The current official owner and six arrays also agree, with 37 captured repository
+    inputs. This establishes source consistency, not independent biological truth.
+  evidence_ids:
+  - SCI814-LOCAL
+  target_ids:
+  - naturalproductmech:mibig-42f99235c6
+- check_id: SCI814-CURRENT-INTAKE-JOIN
+  name: Current official owner and six-array reconciliation
+  status: passed
+  required: true
+  summary: The accepted current reconciliation and direct replay confirm whole owner/six-array
+    equality and all 37 current source pins. This is input fidelity, not a scientific
+    verdict.
+  evidence_ids:
+  - SCI814-CURRENT-JOIN
+  target_ids:
+  - naturalproductmech:mibig-42f99235c6
+- check_id: SCI814-ENCODINGS
+  name: Saved two-encoding diagnostics and current intake comparison
+  status: passed
+  required: true
+  summary: Saved SMILES and Standard InChI agree on GDBQQVLCIARPGH-BSOSBYQFSA-N, formula
+    C20H38N6O4, 1 fragment and formal charge 0; actual intake facts agree. Both encodings
+    retain 1 unassigned tetrahedral carbon site. InChI reports 3 C(-O)=N and 1 guanidino
+    C=N local diagnostics. These representation-dependent double-bond flags are separate
+    from unspecified carbon configuration. Internal agreement is not natural-identity
+    proof.
+  evidence_ids:
+  - SCI814-ENCODINGS
+  - SCI814-CURRENT-JOIN
+  target_ids:
+  - naturalproductmech:mibig-42f99235c6
+- check_id: SCI814-IDENTITY
+  name: Identity and configuration evidence
+  status: unavailable
+  required: true
+  summary: Both retained MIBiG entries encode exactly the same incomplete SMILES/InChI/key
+    under leupeptin Ac and leupeptin A. CHEBI:6426 is a different full key with the
+    same first block and explicit stereochemical notation at the aldehyde-adjacent
+    carbon. This requires exact-identity/xref resolution, not a claim of opposite
+    stereochemistry or a proven wrong natural structure.
+  evidence_ids:
+  - SCI814-LOCAL
+  - SCI814-ENCODINGS
+  - SCI814-CURRENT-JOIN
+  - SCI814-KEY-CENSUS
+  - SCI814-CR04
+  - SCI814-CR05
+  - SCI814-CR06
+  - SCI814-CHEBI6426-RETAINED-ROW
+  target_ids:
+  - naturalproductmech:mibig-42f99235c6
+- check_id: SCI814-PRODUCER
+  name: Producer claim evidence
+  status: unavailable
+  required: true
+  summary: Keep the Streptomyces roseus BGC0002095 producer grade BGC_CHARACTERIZED
+    separate from Xenorhabdus bovienii SS-2004 BGC0002134 SOURCE_ASSERTION. The own
+    Crossref abstracts distinguish a Streptomyces leupeptin NRPS context from gammaproteobacterial
+    ligase-based leupeptins; neither abstract settles every congener or configuration.
+  evidence_ids:
+  - SCI814-LOCAL
+  - SCI814-ENCODINGS
+  - SCI814-CURRENT-JOIN
+  - SCI814-KEY-CENSUS
+  - SCI814-CR04
+  - SCI814-CR05
+  - SCI814-CR06
+  target_ids:
+  - naturalproductmech:mibig-42f99235c6
+- check_id: SCI814-OCCURRENCE
+  name: Occurrence claim evidence
+  status: unavailable
+  required: false
+  summary: The LOTUS Xenorhabdus bovienii occurrence is species-level, while the producer
+    assertion names SS-2004. Streptomyces roseus occurrence cites the 1969 work; its
+    current Crossref response supplies a title only. Do not promote an occurrence
+    to a demonstrated producer or assume independent replication from duplicated references.
+  evidence_ids:
+  - SCI814-LOCAL
+  - SCI814-ENCODINGS
+  - SCI814-CURRENT-JOIN
+  - SCI814-KEY-CENSUS
+  - SCI814-CR04
+  - SCI814-CR05
+  - SCI814-CR06
+  target_ids:
+  - naturalproductmech:mibig-42f99235c6
+- check_id: SCI814-BIOSYNTHESIS
+  name: Locus and biosynthetic evidence
+  status: unavailable
+  required: true
+  summary: BGC0002095 carries NRPS and knockout/enzyme/heterologous locus evidence;
+    BGC0002134 carries OTHER and heterologous evidence. The preprint abstract distinguishes
+    livipeptin tRNA dependence from leupeptin production and must not transfer the
+    livipeptin mechanism to this owner.
+  evidence_ids:
+  - SCI814-LOCAL
+  - SCI814-ENCODINGS
+  - SCI814-CURRENT-JOIN
+  - SCI814-KEY-CENSUS
+  - SCI814-CR04
+  - SCI814-CR05
+  - SCI814-CR06
+  target_ids:
+  - naturalproductmech:mibig-42f99235c6
+- check_id: SCI814-ACTIVITY
+  name: Activity and target evidence
+  status: failed
+  required: true
+  summary: Eight retained PubChem rows are eight observations, not eight independent
+    experiments. Preserve generic Potency as OTHER, the inactive and inconclusive
+    NSP2Pro calls, duplicated papain AID rows, and ungrounded B45705. The cell binding/entry
+    assay AID720532 does not establish an enzyme target despite the seeded ENZYME_INHIBITOR
+    label.
+  evidence_ids:
+  - SCI814-LOCAL
+  - SCI814-ENCODINGS
+  - SCI814-CURRENT-JOIN
+  - SCI814-KEY-CENSUS
+  - SCI814-CR04
+  - SCI814-CR05
+  - SCI814-CR06
+  - CAND814-OWN-OBSERVATION
+  - CAND814-RETAINED-ASSAY
+  - CAND814-CLASSIFIER
+  - CAND814-EVIDENCE-RULE
+  - CAND814-SEVERITY-RUBRIC
+  - CAND814-MAINTAINED-OWNERSHIP
+  target_ids:
+  - naturalproductmech:mibig-42f99235c6
+- check_id: SCI814-PROVENANCE
+  name: Source and history evidence
+  status: passed
+  required: false
+  summary: Both open curation discussions and six original events are retained. The
+    same encoded key across two MIBiG sources is not proof of biological equivalence.
+    The ChEBI key mismatch is documented locally, while source-specific natural configuration
+    and the correct curation choice remain unresolved.
+  evidence_ids:
+  - SCI814-LOCAL
+  - SCI814-ENCODINGS
+  - SCI814-CURRENT-JOIN
+  - SCI814-KEY-CENSUS
+  - SCI814-CR04
+  - SCI814-CR05
+  - SCI814-CR06
+  - SCI814-CHEBI6426-RETAINED-ROW
+  target_ids:
+  - naturalproductmech:mibig-42f99235c6
+- check_id: SCI814-CLASSIFICATION
+  name: Classification evidence scope
+  status: unavailable
+  required: false
+  summary: The filing pathway and NPClassifier labels remain explicitly computational
+    or retained source classifications. Their presence does not independently verify
+    natural identity, source-specific product class or every ontology mapping.
+  evidence_ids:
+  - SCI814-LOCAL
+  target_ids:
+  - naturalproductmech:mibig-42f99235c6
+- check_id: SCI814-SOURCE-BOUNDARY
+  name: Own source and claim-level boundaries
+  status: passed
+  required: true
+  summary: Own article IDs and original response clocks are kept separate from bibliography
+    identifiers. Supplied abstracts support only their stated material and claim scope;
+    title-only metadata is not exact-structure or native-producer proof.
+  evidence_ids:
+  - SCI814-LOCAL
+  - SCI814-ENCODINGS
+  - SCI814-CURRENT-JOIN
+  - SCI814-KEY-CENSUS
+  - SCI814-CR04
+  - SCI814-CR05
+  - SCI814-CR06
+  target_ids:
+  - naturalproductmech:mibig-42f99235c6
+evidence:
+- evidence_id: SCI814-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch082-tentative/tentative-owner-source-inventory-001.json
+  locator: /entries/3/owner_document; /entries/3/rows; /entries/3/supplemental_retained_rows
+  accessed_at: '2026-10-28T10:07:36.289293Z'
+  snapshot_sha256: 477c551faa157bcada534b89a49041cd2ebe4582b8e06b867faa7da3ceb90f9e
+  support: supports
+  summary: The whole current owner equals the frozen inventory owner/resolved object.
+    All seven retained source arrays (13 rows) and two supplemental arrays (0 rows)
+    rejoin exact named raw-table positions; all 6 original history entries are preserved.
+    The current official owner and six arrays also agree, with 37 captured repository
+    inputs. This establishes source consistency, not independent biological truth.
+- evidence_id: SCI814-ENCODINGS
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch082-tentative/source-science-preparation/root-tentative82-local-chemical-consistency-and-neighbors-001.json
+  locator: /records/3/smiles; /records/3/inchi; /records/3/comparisons
+  accessed_at: '2026-10-28T11:16:04.868545Z'
+  snapshot_sha256: 3c5d366cde6ad2f87ce2c630576aaaa92a80e9ccaeec1486b3bcea71d66ea2b1
+  support: supports
+  summary: Saved SMILES and Standard InChI agree on GDBQQVLCIARPGH-BSOSBYQFSA-N, formula
+    C20H38N6O4, 1 fragment and formal charge 0; actual intake facts agree. Both encodings
+    retain 1 unassigned tetrahedral carbon site. InChI reports 3 C(-O)=N and 1 guanidino
+    C=N local diagnostics. These representation-dependent double-bond flags are separate
+    from unspecified carbon configuration. Internal agreement is not natural-identity
+    proof.
+- evidence_id: SCI814-CURRENT-JOIN
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch082/root-current82-intake-reconciliation-001.json
+  locator: /records/3; /counts
+  accessed_at: '2026-10-28T11:15:25.578990Z'
+  snapshot_sha256: 6eba553bcc63c25374cdde9c9a9bda73ddd993cc8bcb3dd61dc75d5e5f89daf8
+  support: supports
+  summary: Current owner, six official source arrays and 37 source-capture pins reconcile
+    exactly to the tentative inventory. Original intake, strict and chemistry clocks
+    remain separate; no new intake or computation was run here.
+- evidence_id: SCI814-KEY-CENSUS
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch082-tentative/source-science-preparation/root-tentative82-declared-key-collision-census-001.json
+  locator: /records/3; /population; /counts
+  accessed_at: '2026-10-28T11:17:23.445162Z'
+  snapshot_sha256: 769a157109dc08dfd538933e3ce48b8bd4aabf8ea1873ab552c9c53bd5dd044f
+  support: supports
+  summary: The saved ignored-inclusive census of 3116 declared owner keys finds only
+    this owner for its full key and connectivity prefix. This is a literal declared-key
+    census, not a graph-isomorphism or near-analog search, and does not establish
+    natural identity.
+- evidence_id: SCI814-CR04
+  kind: database
+  reference: DOI:10.1002/anie.202005506
+  locator: /message/DOI; /message/title; /message/abstract (presence checked); /message/type;
+    /message/resource/primary/URL
+  accessed_at: '2026-10-28T11:00:54.128873Z'
+  snapshot_sha256: 484b56492d04fa84533655a2f33611177da101d18b029b047677e3a6b97ee363
+  support: partial
+  summary: Own Crossref abstract supports a gammaproteobacterial leupeptin family
+    and ligase-based biosynthetic context. It does not establish exact B/C/D configurations
+    or native isolation of each congener.
+- evidence_id: SCI814-CR05
+  kind: database
+  reference: DOI:10.1101/2020.10.26.356543
+  locator: /message/DOI; /message/title; /message/abstract (presence checked); /message/type;
+    /message/resource/primary/URL
+  accessed_at: '2026-10-28T11:00:55.070458Z'
+  snapshot_sha256: ea6da7aa4b768e196ee050825e58e550b931e1306a0996b9513b97d357b0b858
+  support: partial
+  summary: Own posted-content preprint abstract distinguishes tRNA-dependent livipeptin
+    from leupeptin biosynthesis in Streptomyces roseous ATCC31245. The livipeptin
+    mechanism must not be assigned to leupeptin A or Pr; spelling/strain equivalence
+    and exact congener assignment remain unresolved.
+- evidence_id: SCI814-CR06
+  kind: database
+  reference: DOI:10.1248/cpb.17.1896
+  locator: /message/DOI; /message/title; /message/abstract (presence checked); /message/type;
+    /message/resource/primary/URL
+  accessed_at: '2026-10-28T11:00:55.808436Z'
+  snapshot_sha256: 6997162d7cde72d0e896cf21c2b3c50dcddcafbd342e4a583ee6100f8504db0f
+  support: partial
+  summary: Own Crossref title identifies historical isolation and characterization
+    of leupeptins, but no abstract is supplied. Exact Ac/Pr material, configuration
+    and source-taxon assignments are not independently verified.
+- evidence_id: CAND814-OWN-OBSERVATION
+  kind: record_content
+  reference: data/natural_products/amino_acids_and_peptides/leupeptin-a.yaml
+  locator: /bioactivities/5; /bioactivities/0; /bioactivities/1; /bioactivity_summary
+  accessed_at: '2026-10-28T10:07:36.289293Z'
+  snapshot_sha256: e4d702ffb4f40c08fba270230fd68809934d27a15edadb25f45dd0b8c4f7324f
+  support: supports
+  summary: The owner labels the AID720532 cell binding/entry observation ENZYME_INHIBITOR
+    without a grounded enzyme target. Separate positive papain observations independently
+    support the record-level enzyme-inhibitor summary.
+- evidence_id: CAND814-RETAINED-ASSAY
+  kind: database
+  reference: pubchem.aid:720532
+  locator: data/raw/pubchem_bioassay.tsv zero-based data row 1688; exact full key
+    GDBQQVLCIARPGH-BSOSBYQFSA-N, CID72429, AID720532
+  accessed_at: '2026-10-28T10:07:36.289293Z'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+  support: partial
+  summary: The retained row describes a binding/entry assay and preserves an Active
+    call, generic Potency endpoint and ungrounded B45705. It does not state an enzyme-specific
+    endpoint or establish a molecular mechanism.
+- evidence_id: CAND814-CLASSIFIER
+  kind: record_content
+  reference: scripts/seed_from_sources.py
+  locator: lines128-178 and1330-1383
+  accessed_at: '2026-10-28T11:15:50.879409Z'
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+  support: supports
+  summary: The current classifier assigns ENZYME_INHIBITOR through a generic inhibitor/binding
+    title fallback. Static matching confirms that this is the only matching activity-class
+    pattern for the retained title; no source function was executed.
+- evidence_id: CAND814-EVIDENCE-RULE
+  kind: record_content
+  reference: docs/CURATION.md
+  locator: Evidence rules; What may back a bioactivity_summary value
+  accessed_at: '2026-10-28T11:15:50.879409Z'
+  snapshot_sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+  support: context_only
+  summary: Claims require support at the narrowest observation. Positive source calls
+    and generic endpoints must be preserved; an observation-level mechanism inference
+    cannot be justified by an independent observation elsewhere on the compound.
+- evidence_id: CAND814-SEVERITY-RUBRIC
+  kind: record_content
+  reference: docs/record-reviews.md
+  locator: Verdict And Severity
+  accessed_at: '2026-10-28T11:15:50.879409Z'
+  snapshot_sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+  support: context_only
+  summary: The native rubric assigns major severity to materially unsupported claims
+    or systemic source/generator errors. This candidate concerns one unsupported semantic
+    classification, not wrong molecular identity.
+- evidence_id: CAND814-MAINTAINED-OWNERSHIP
+  kind: record_content
+  reference: docs/record-review-profile.md
+  locator: Native questions and ownership
+  accessed_at: '2026-10-28T11:15:50.879409Z'
+  snapshot_sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+  support: context_only
+  summary: Generated claims are corrected through the maintained transform or implemented
+    input, not a YAML-only patch. The existing whole-row exclusion interface does
+    not selectively repair activity_class and is not proposed as the fix.
+- evidence_id: SCI814-CHEBI6426-RETAINED-ROW
+  kind: database
+  reference: CHEBI:6426
+  locator: 'data/raw/chebi_structures.tsv: zero-based data row 1276 (one-based data
+    row 1277), chebi_id=CHEBI:6426; saved local notes /additional_exact_named_CHEBI_row'
+  accessed_at: '2026-10-28T11:05:05.000215Z'
+  snapshot_sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+  support: partial
+  summary: The separately read retained ChEBI row has full key GDBQQVLCIARPGH-ULQDDVLXSA-N
+    and explicit stereochemical notation at the aldehyde-adjacent carbon, while the
+    owner has GDBQQVLCIARPGH-BSOSBYQFSA-N and an unspecified centre. This exact named-ID
+    row is outside the frozen exact-full-key join, which correctly returned no matching
+    ChEBI row. It supports a retained-table comparison only, not live authority verification,
+    opposite configuration or complete natural stereochemistry. The timestamp is the
+    original saved local-note reading time, not a ChEBI acquisition time.
+assessments:
+- assessment_id: SCI814-ENCODINGS
+  area: representation
+  topic: Internal representation diagnostics
+  outcome: supported
+  summary: Saved SMILES and Standard InChI agree on GDBQQVLCIARPGH-BSOSBYQFSA-N, formula
+    C20H38N6O4, 1 fragment and formal charge 0; actual intake facts agree. Both encodings
+    retain 1 unassigned tetrahedral carbon site. InChI reports 3 C(-O)=N and 1 guanidino
+    C=N local diagnostics. These representation-dependent double-bond flags are separate
+    from unspecified carbon configuration. Internal agreement is not natural-identity
+    proof.
+  evidence_ids:
+  - SCI814-ENCODINGS
+  - SCI814-CURRENT-JOIN
+  target_ids:
+  - naturalproductmech:mibig-42f99235c6
+- assessment_id: SCI814-IDENTITY
+  area: identity
+  topic: Identity and configuration evidence
+  outcome: concern
+  summary: Both retained MIBiG entries encode exactly the same incomplete SMILES/InChI/key
+    under leupeptin Ac and leupeptin A. CHEBI:6426 is a different full key with the
+    same first block and explicit stereochemical notation at the aldehyde-adjacent
+    carbon. This requires exact-identity/xref resolution, not a claim of opposite
+    stereochemistry or a proven wrong natural structure.
+  evidence_ids:
+  - SCI814-LOCAL
+  - SCI814-ENCODINGS
+  - SCI814-CURRENT-JOIN
+  - SCI814-KEY-CENSUS
+  - SCI814-CR04
+  - SCI814-CR05
+  - SCI814-CR06
+  - SCI814-CHEBI6426-RETAINED-ROW
+  target_ids:
+  - naturalproductmech:mibig-42f99235c6
+  dimensions:
+  - name: retained_stereo_complete
+    value: 'false'
+    definition: Literal owner chemical_structure.stereo_complete flag. It describes
+      the retained encoding, not independent confirmation of natural-product configuration
+      or identity.
+    evidence_ids:
+    - SCI814-LOCAL
+  - name: saved_unassigned_tetrahedral_carbon_count
+    value: '{"inchi":1,"smiles":1}'
+    definition: Saved per-encoding carbon stereochemistry counts; representation-dependent
+      double-bond flags and unresolved primary identity discrepancies are separate.
+      No chemistry is rerun.
+    evidence_ids:
+    - SCI814-ENCODINGS
+  - name: retained_source_versions
+    value: '[{"source":"MIBIG","source_id":"BGC0002095","source_label":"leupeptin
+      Ac","source_version":"3"},{"source":"MIBIG","source_id":"BGC0002134","source_label":"leupeptin
+      A","source_version":"4"}]'
+    definition: Exact retained source-concept version and label associations; a database
+      version is not a primary-publication version or scientific verification.
+    evidence_ids:
+    - SCI814-LOCAL
+- assessment_id: SCI814-PRODUCER
+  area: evidence
+  topic: Producer claim evidence
+  outcome: unknown
+  summary: Keep the Streptomyces roseus BGC0002095 producer grade BGC_CHARACTERIZED
+    separate from Xenorhabdus bovienii SS-2004 BGC0002134 SOURCE_ASSERTION. The own
+    Crossref abstracts distinguish a Streptomyces leupeptin NRPS context from gammaproteobacterial
+    ligase-based leupeptins; neither abstract settles every congener or configuration.
+  evidence_ids:
+  - SCI814-LOCAL
+  - SCI814-ENCODINGS
+  - SCI814-CURRENT-JOIN
+  - SCI814-KEY-CENSUS
+  - SCI814-CR04
+  - SCI814-CR05
+  - SCI814-CR06
+  target_ids:
+  - naturalproductmech:mibig-42f99235c6
+  dimensions:
+  - name: retained_producer_taxon_strain
+    value: '[{"biosynthetic_gene_cluster":"mibig:BGC0002095","taxon_id":"NCBITaxon:66430","taxon_label":"Streptomyces
+      roseus"},{"biosynthetic_gene_cluster":"mibig:BGC0002134","taxon_id":"NCBITaxon:406818","taxon_label":"Xenorhabdus
+      bovienii SS-2004"}]'
+    definition: Exact retained producer taxon IDs and labels, including strain text
+      only where the label contains it. No additional strain identity, synonymy or
+      native-production proof is inferred.
+    evidence_ids:
+    - SCI814-LOCAL
+  - name: retained_producer_evidence_tier
+    value: '[{"biosynthetic_gene_cluster":"mibig:BGC0002095","evidence_basis":"BGC_CHARACTERIZED"},{"biosynthetic_gene_cluster":"mibig:BGC0002134","evidence_basis":"SOURCE_ASSERTION"}]'
+    definition: Literal source-specific producer grades. SOURCE_ASSERTION and BGC_CHARACTERIZED
+      are retained assertions, distinct from locus grades and the independently inspected
+      publication scope.
+    evidence_ids:
+    - SCI814-LOCAL
+  - name: retained_producer_source_version
+    value: '[{"biosynthetic_gene_cluster":"mibig:BGC0002095","source":"MIBIG","source_version":"3"},{"biosynthetic_gene_cluster":"mibig:BGC0002134","source":"MIBIG","source_version":"4"}]'
+    definition: Exact source/version associated with each producer assertion; no version
+      or strain association is transferred between entries.
+    evidence_ids:
+    - SCI814-LOCAL
+- assessment_id: SCI814-OCCURRENCE
+  area: scope
+  topic: Occurrence claim evidence
+  outcome: unknown
+  summary: The LOTUS Xenorhabdus bovienii occurrence is species-level, while the producer
+    assertion names SS-2004. Streptomyces roseus occurrence cites the 1969 work; its
+    current Crossref response supplies a title only. Do not promote an occurrence
+    to a demonstrated producer or assume independent replication from duplicated references.
+  evidence_ids:
+  - SCI814-LOCAL
+  - SCI814-ENCODINGS
+  - SCI814-CURRENT-JOIN
+  - SCI814-KEY-CENSUS
+  - SCI814-CR04
+  - SCI814-CR05
+  - SCI814-CR06
+  target_ids:
+  - naturalproductmech:mibig-42f99235c6
+- assessment_id: SCI814-BIOSYNTHESIS
+  area: completeness
+  topic: Locus and biosynthetic evidence
+  outcome: unknown
+  summary: BGC0002095 carries NRPS and knockout/enzyme/heterologous locus evidence;
+    BGC0002134 carries OTHER and heterologous evidence. The preprint abstract distinguishes
+    livipeptin tRNA dependence from leupeptin production and must not transfer the
+    livipeptin mechanism to this owner.
+  evidence_ids:
+  - SCI814-LOCAL
+  - SCI814-ENCODINGS
+  - SCI814-CURRENT-JOIN
+  - SCI814-KEY-CENSUS
+  - SCI814-CR04
+  - SCI814-CR05
+  - SCI814-CR06
+  target_ids:
+  - naturalproductmech:mibig-42f99235c6
+  dimensions:
+  - name: retained_locus_taxon_strain
+    value: '[{"accession":"mibig:BGC0002095","organism_label":"Streptomyces roseus","organism_taxon_id":"NCBITaxon:66430"},{"accession":"mibig:BGC0002134","organism_label":"Xenorhabdus
+      bovienii SS-2004","organism_taxon_id":"NCBITaxon:406818"}]'
+    definition: Exact retained locus taxon/strain labels. A locus association does
+      not independently demonstrate the precise natural compound in that organism.
+    evidence_ids:
+    - SCI814-LOCAL
+  - name: retained_locus_evidence_tier
+    value: '[{"accession":"mibig:BGC0002095","link_evidence_basis":"CLUSTER_DEMONSTRATED"},{"accession":"mibig:BGC0002134","link_evidence_basis":"CLUSTER_DEMONSTRATED"}]'
+    definition: Literal source locus grades, kept separate from producer grades, exact-congener
+      identity and the review evidence level.
+    evidence_ids:
+    - SCI814-LOCAL
+  - name: retained_locus_evidence_methods
+    value: '[{"accession":"mibig:BGC0002095","locus_evidence_methods":["Knock-out
+      studies","Enzymatic assays","Heterologous expression"]},{"accession":"mibig:BGC0002134","locus_evidence_methods":["Heterologous
+      expression"]}]'
+    definition: Exact retained method labels, not a claim that each method has been
+      independently verified for every molecular step or compound-specific assertion.
+    evidence_ids:
+    - SCI814-LOCAL
+  - name: retained_locus_source_version
+    value: '[{"accession":"mibig:BGC0002095","entry_status":"active","entry_version":"3"},{"accession":"mibig:BGC0002134","entry_status":"active","entry_version":"4"}]'
+    definition: Exact retained entry version/status association; source status is
+      not an independent scientific conclusion.
+    evidence_ids:
+    - SCI814-LOCAL
+- assessment_id: SCI814-ACTIVITY
+  area: evidence
+  topic: Activity and target evidence
+  outcome: concern
+  summary: Eight retained PubChem rows are eight observations, not eight independent
+    experiments. Preserve generic Potency as OTHER, the inactive and inconclusive
+    NSP2Pro calls, duplicated papain AID rows, and ungrounded B45705. The cell binding/entry
+    assay AID720532 does not establish an enzyme target despite the seeded ENZYME_INHIBITOR
+    label.
+  evidence_ids:
+  - SCI814-LOCAL
+  - SCI814-ENCODINGS
+  - SCI814-CURRENT-JOIN
+  - SCI814-KEY-CENSUS
+  - SCI814-CR04
+  - SCI814-CR05
+  - SCI814-CR06
+  - CAND814-OWN-OBSERVATION
+  - CAND814-RETAINED-ASSAY
+  - CAND814-CLASSIFIER
+  - CAND814-EVIDENCE-RULE
+  - CAND814-SEVERITY-RUBRIC
+  - CAND814-MAINTAINED-OWNERSHIP
+  target_ids:
+  - naturalproductmech:mibig-42f99235c6
+- assessment_id: SCI814-PROVENANCE
+  area: provenance
+  topic: Source and history evidence
+  outcome: supported
+  summary: Both open curation discussions and six original events are retained. The
+    same encoded key across two MIBiG sources is not proof of biological equivalence.
+    The ChEBI key mismatch is documented locally, while source-specific natural configuration
+    and the correct curation choice remain unresolved.
+  evidence_ids:
+  - SCI814-LOCAL
+  - SCI814-ENCODINGS
+  - SCI814-CURRENT-JOIN
+  - SCI814-KEY-CENSUS
+  - SCI814-CR04
+  - SCI814-CR05
+  - SCI814-CR06
+  - SCI814-CHEBI6426-RETAINED-ROW
+  target_ids:
+  - naturalproductmech:mibig-42f99235c6
+- assessment_id: SCI814-CLASSIFICATION
+  area: representation
+  topic: Retained versus computational classification
+  outcome: unknown
+  summary: The filing pathway and NPClassifier labels remain explicitly computational
+    or retained source classifications. Their presence does not independently verify
+    natural identity, source-specific product class or every ontology mapping.
+  evidence_ids:
+  - SCI814-LOCAL
+  target_ids:
+  - naturalproductmech:mibig-42f99235c6
+- assessment_id: SCI814-SOURCE-BOUNDARY
+  area: scope
+  topic: Evidence level and source boundaries
+  outcome: supported
+  summary: Own article IDs and original response clocks are kept separate from bibliography
+    identifiers. Supplied abstracts support only their stated material and claim scope;
+    title-only metadata is not exact-structure or native-producer proof.
+  evidence_ids:
+  - SCI814-LOCAL
+  - SCI814-ENCODINGS
+  - SCI814-CURRENT-JOIN
+  - SCI814-KEY-CENSUS
+  - SCI814-CR04
+  - SCI814-CR05
+  - SCI814-CR06
+  target_ids:
+  - naturalproductmech:mibig-42f99235c6
+findings:
+- finding_id: F814-AID720532-UNSUPPORTED-ENZYME-CLASS
+  issue_key: leupeptin-a-aid720532-unsupported-enzyme-class
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Binding/entry observation has an unsupported enzyme-inhibitor class
+  description: 'The retained AID720532 observation is classified ENZYME_INHIBITOR,
+    although its source assay describes inhibition of binding or entry into cells
+    and supplies no grounded enzyme target. The current seeder reaches this class
+    from generic inhibitor/binding words in the title. That source supports the recorded
+    assay call and endpoint, but not the added enzyme mechanism. This finding is confined
+    to bioactivities[5]. It does not deny leupeptin A enzyme inhibition generally:
+    the separate papain observations remain relevant. No more specific antiviral mechanism,
+    target or replacement class is inferred.'
+  target_ids:
+  - naturalproductmech:mibig-42f99235c6
+  field_paths:
+  - bioactivities[5].activity_class
+  evidence_ids:
+  - CAND814-OWN-OBSERVATION
+  - CAND814-RETAINED-ASSAY
+  - CAND814-CLASSIFIER
+  - CAND814-EVIDENCE-RULE
+  - CAND814-SEVERITY-RUBRIC
+  - CAND814-MAINTAINED-OWNERSHIP
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained classify_activity transform and emitted observation/summary logic;
+      narrow unsupported title-based classification.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/pubchem_bioassay.tsv
+    role: Preserve the original exact source row and endpoint/call; do not rewrite
+      evidence.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/amino_acids_and_peptides/leupeptin-a.yaml
+    role: Generated owner to reproduce after separately authorized, evidence-preserving
+      curation; no direct patch.
+  - repository: CultureBotAI/NaturalProductMech
+    path: docs/CURATION.md
+    role: Evidence, source-call, endpoint and maintained-input rules.
+  rule_id: observation-activity-class-requires-specific-source-support
+  native_severity: major for materially unsupported observation classification
+  normalization_reason: The generated observation makes a specific enzyme-inhibition
+    classification that its retained binding/entry evidence does not establish. The
+    exact unsupported inference and its title-fallback origin are confirmed. Major
+    severity applies to the material evidence/classification defect; it does not assert
+    that enzyme inhibition is biologically absent or that the compound identity is
+    wrong.
+actions:
+- action_id: A814-NARROW-AID720532-CLASSIFICATION
+  finding_ids:
+  - F814-AID720532-UNSUPPORTED-ENZYME-CLASS
+  target_ids:
+  - naturalproductmech:mibig-42f99235c6
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained classify_activity transform and emitted observation/summary logic;
+      narrow unsupported title-based classification.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/pubchem_bioassay.tsv
+    role: Preserve the original exact source row and endpoint/call; do not rewrite
+      evidence.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/amino_acids_and_peptides/leupeptin-a.yaml
+    role: Generated owner to reproduce after separately authorized, evidence-preserving
+      curation; no direct patch.
+  - repository: CultureBotAI/NaturalProductMech
+    path: docs/CURATION.md
+    role: Evidence, source-call, endpoint and maintained-input rules.
+  description: Correct the maintained activity-class transform so this exact title-pinned
+    observation does not receive an enzyme-inhibitor class solely from generic binding/inhibitor
+    wording. Leave the optional class unset unless separately inspected enzyme-specific
+    evidence supports it. Preserve the source observation and its original call, value,
+    units, endpoint and ungrounded target note; do not substitute a more specific
+    antiviral mechanism.
+  acceptance_checks:
+  - Reproduce the exact current owner observation and full retained key/CID72429/AID720532
+    row with its original digest before changing the transform.
+  - Use a narrowly reviewed, source-title-pinned condition or a separately reviewed
+    classifier rule with explicit impact accounting; do not infer a new curation table
+    is already consumed.
+  - Add a meaningful classifier regression demonstrating that this binding/entry title
+    does not imply enzyme inhibition, and preserve the supported papain classification.
+    Any broader rule requires a separately bounded impact review.
+  - After separately authorized regeneration, the AID720532 observation preserves
+    its original ACTIVE call, generic Potency-as-OTHER measurement, value, units and
+    database evidence while the unsupported class is absent. No enzyme or antiviral
+    target is invented.
+  - Retain all other observations, source histories and independent positive papain
+    support for the record-level ENZYME_INHIBITOR summary. Do not remove the whole
+    raw row to repair only its classification.
+  - Use the documented guarded seeder/canary and history-preserving writer, then verify
+    reproduction and applicable full-corpus gates. No corpus edit or validation execution
+    is authorized by this candidate DATA.
+  generator: scripts/seed_from_sources.py after separately authorized maintained-transform
+    correction
+limitations:
+- Both retained MIBiG entries encode exactly the same incomplete SMILES/InChI/key
+  under leupeptin Ac and leupeptin A. CHEBI:6426 is a different full key with the
+  same first block and explicit stereochemical notation at the aldehyde-adjacent carbon.
+  This requires exact-identity/xref resolution, not a claim of opposite stereochemistry
+  or a proven wrong natural structure.
+- Keep the Streptomyces roseus BGC0002095 producer grade BGC_CHARACTERIZED separate
+  from Xenorhabdus bovienii SS-2004 BGC0002134 SOURCE_ASSERTION. The own Crossref
+  abstracts distinguish a Streptomyces leupeptin NRPS context from gammaproteobacterial
+  ligase-based leupeptins; neither abstract settles every congener or configuration.
+- BGC0002095 carries NRPS and knockout/enzyme/heterologous locus evidence; BGC0002134
+  carries OTHER and heterologous evidence. The preprint abstract distinguishes livipeptin
+  tRNA dependence from leupeptin production and must not transfer the livipeptin mechanism
+  to this owner.
+- 'The scientific review is partial: source-specific identity, complete natural configuration,
+  and unverified authority mappings are not silently promoted from internal consistency
+  or metadata.'
+- No verified protein example, direct molecular target, operational production or
+  assay protocol, clinical conclusion, or new corpus claim is added.
+- Own metadata supplies only the available abstract or title; no complete primary
+  article was obtained for the compound-specific claims assessed here.
+- Unsupported classification on one retained observation only; identity/xref/stereochemistry
+  and general compound activity are separate.
+- The CHEBI:6426 relationship, unspecified stereochemistry and shared-source encoding
+  question remain separate from the assay-classification candidate.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- FailedQC001 is retained for an explicit separate network-enabled retry; no artifact
+  will be overwritten.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint
+  and before downstream tests. Its actual exit1/log/input capture/root observation
+  remain pinned; the selected successful canonical QC attempt002 is separately timed.
+  No individual-review validation failure or counter reset is claimed.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter
+  skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings;
+  this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld
+  nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological
+  or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological
+  production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions
+  and no-adapter pairs; a successful command does not convert these into verified
+  scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command
+  execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population
+  was checked; external caches and generated bytecode are not asserted to be independently
+  byte-pinned.
+notes:
+- The whole local owner and retained source rows were read. Full-owner scientific
+  verification remains false; scientific_review denotes the bounded scientific interpretation
+  in this report.
+- Original owner/source reading, two-encoding computation, neighbor inspection, HTTP
+  retrieval and later metadata reading retain separate clocks. Official intake separately
+  computed SMILES facts.
+- No scientific record, maintained input or native curation status was changed. Any
+  findings and actions record ROOT-adopted proposed work; exact-source limitations
+  and unavailable checks remain explicit.
+```
