@@ -1,0 +1,2124 @@
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T163310Z-biotin
+title: 'Biotin: genotype, assay interpretation and measurement bounds'
+started_at: '2026-10-21T16:18:32.002711Z'
+finished_at: '2026-10-21T16:33:10.790489Z'
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: Exact biotin identity and the protein-binding graph are supported. Four major
+  findings concern the unqualified auxotrophic locus, binding and antiviral activity
+  classifications, and lost assay inequalities. A minor finding records dropped sample
+  context. Every occurrence and written assay is assessed within its available primary-source
+  scope.
+source:
+  git_revision: 1c2402097718c138b081e00943de8f04de0541cd
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/SKILL.md
+    sha256: 37bab7503a87a7c801f7726f826fdd410588e1536253488c4ca69d451383fa02
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: PLAN.md
+    sha256: 5360993626369fec5462d45f3cfc68cb1653690ad72de10de6cad32d870e6035
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/decisions.tsv
+    sha256: 7214a74975fb2cb65521da18dd14ea1c65665f50060106976dc0db9caf887805
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: curation/pubchem_bioassay_exclusions.tsv
+    sha256: 76f9cbb17e62a270afed637b5058a553cfe85c754c6c9ec406635f12dae572fa
+    role: context
+  - path: curation/source_queue.tsv
+    sha256: 050c07d90cbe51b3811ed4ff4efde5799f3a302a975858453082ab12e3cca625
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/biotin.yaml
+    sha256: 3cb161be27dbbe01f75a85b0d99d783b6bacaa09167bd4404d30aa5cb0abdaf8
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/extract_pubchem_bioassay.py
+    sha256: 24f9d794e7cf97c420351cb751f8767f7d81a5f22aed01669b2318d6755e7c00
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/bioassay_exclusions.py
+    sha256: 4a4176e072ac9759aa8a9e88300d7e2de5aaf4ebf30b5c42fcf4c9c0b6cebbb4
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/curation_event.py
+    sha256: dd39419502a9a7acf40e134a7642c5e310808cea33708eef300c62ba76dad6a5
+    role: context
+  - path: src/naturalproductmech/curate/lotus_exclusions.py
+    sha256: 6352cac7c587eab5a56d907c523cc899d02d197009081624bf8649c675ee30f7
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+    role: context
+  - path: src/naturalproductmech/grading.py
+    sha256: ece54c4a2c0803f034ac59de51b1006cf79ea8d6b6256d75757d4adb88ea9630
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: src/naturalproductmech/validation/write_validated.py
+    sha256: eb35df21c03c2e6272e665ea4d179f870a1ec6db61d52939058add44a0edde7f
+    role: context
+  - path: tests/test_bioassay_exclusions.py
+    sha256: 099a0b8f6f51ce93406344440b63d99db7203486ed92797d90990005bdb6bbd0
+    role: context
+  - path: tests/test_claim_references.py
+    sha256: 11b2fc60dbe32154df63fb2e8c784c7c8ba6585581c09bba2eebe2c5192d4c06
+    role: context
+  - path: tests/test_lotus_exclusions.py
+    sha256: 3e3aa443714202e1bc41f0fb236e6bf69caabd68a16af23b972323f5f846386c
+    role: context
+  - path: tests/test_mibig_locus_evidence_overrides.py
+    sha256: 9177b5bd24f6e47cc4743857179217d9e0d4add9560b2ce3faefaebe53ba09a0
+    role: context
+  - path: tests/test_producer_isolates.py
+    sha256: 8f96b00fbb66564f2d5e5c2108c991135eec8731b10d9f2d9f2f73830080ccd9
+    role: context
+  - path: tests/test_producer_strains.py
+    sha256: 17002ef1640464777f1925d12d842ed83c9098aad6de724ae0ea236ecccc4ff3
+    role: context
+  - path: tests/test_seed_skeleton.py
+    sha256: 72ec216fb0ed365b09f1cfb64fb06c701c50b5d7c2df409d8dbf613d302803bf
+    role: context
+  - path: tests/test_structure_corrections.py
+    sha256: f0b91c7ed2ffeddb844e6927e4891c1fa3cfd1d11eb70f1c3eda6bf80ae05303
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 110, batch 011, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated targets in earlier
+    batch commits (publication tracked separately). At selection, 154 of 3116 current
+    records had campaign coverage and 2962 remained. The population search included
+    ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CHEBI:15956
+targets:
+- target_id: CHEBI:15956
+  path: data/natural_products/alkaloids/biotin.yaml
+  label: biotin
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/alkaloids/biotin.yaml
+    role: Curator-owned assertions, inline mechanisms, discussions and audit history
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - CHEBI:15956
+  command: just validate-strict data/natural_products/alkaloids/biotin.yaml --out
+    /private/tmp/npm-review-work/110/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T16:18:33.949573Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 current record files agree with PATHS.tsv and their pinned filing
+    pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055340+00:00;
+    finished 2026-10-21T09:55:22.727768+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-corpus.log. Reused
+    for batch011 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch011. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - CHEBI:15956
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 current records passed the documented byte-reproduction gate
+    against committed inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055361+00:00;
+    finished 2026-10-21T09:56:44.050706+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-reproduction.log.
+    Reused for batch011 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch011. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - CHEBI:15956
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The exhaustive review queue produced 8,928 diagnostic rows across 12 queues;
+    this deterministic output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just review-queue --tsv /private/tmp/npm-review-queue-batch-004.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.057401+00:00;
+    finished 2026-10-21T09:54:38.468783+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/review-queue.log. Reused
+    for batch011 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch011. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - CHEBI:15956
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'The configured identifier-label gate passed using the existing ontology
+    caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions,
+    499 warning-only mismatches and 4,744 pairs skipped because their prefixes have
+    no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.061733+00:00;
+    finished 2026-10-21T09:56:36.296159+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/validate-products.log. Reused
+    for batch011 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch011. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - CHEBI:15956
+- check_id: shared-qc
+  name: Full repository quality gate on the current main baseline
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed on the unchanged main baseline
+    during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+    All configured lint, governance, documentation, provenance, source-queue, schema,
+    rendering, reproduction, filing-integrity and reporting stages completed successfully.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:30.560925+00:00;
+    finished 2026-10-21T10:04:44.806799+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/qc.log. Reused for batch011
+    only after a fresh fetch/clean branch, equal commit/tree and two reads of all
+    9,182 tracked byte streams and modes (208,070,649 bytes), including a recheck
+    after the fresh authoritative catalogue. This gate was not rerun for batch011.
+    Original execution times, scope, warnings, exceptions and skips are retained.'
+  target_ids:
+  - CHEBI:15956
+- check_id: R110-FULL-OWNER
+  name: Complete owner and referenced-component scope
+  status: passed
+  required: true
+  summary: Full owner, exact matching intake source rows and the empty referenced-component
+    set were read and checked against the actual intake. Fresh target strict validation
+    is retained separately.
+  target_ids:
+  - CHEBI:15956
+  evidence_ids:
+  - R110-OWNER
+  - R110-LOCAL
+- check_id: S110-C-GENOTYPE
+  name: Exact accession genotype applicability
+  status: failed
+  required: true
+  summary: FJ430072 explicitly represents an auxotroph and truncated biA1; unqualified
+    functional production applicability needs curation.
+  target_ids:
+  - CHEBI:15956
+  evidence_ids:
+  - S110-E-GENBANK
+  - S110-E-FGB
+- check_id: S110-C-CLASS
+  name: Assay-derived activity-class support
+  status: failed
+  required: true
+  summary: Binding affinity does not support ENZYME_INHIBITOR; the NS1A biochemical
+    endpoint does not support ANTIVIRAL.
+  target_ids:
+  - CHEBI:15956
+  evidence_ids:
+  - S110-E-BINDING
+  - S110-E-AID504329
+  - S110-E-CLASSIFIER
+- check_id: S110-C-BOUNDS
+  name: Exact detailed assay inequality preservation
+  status: failed
+  required: true
+  summary: Three confirmed source inequalities are absent from the emitted observations
+    despite an available qualifier field.
+  target_ids:
+  - CHEBI:15956
+  evidence_ids:
+  - S110-E-ROW588440
+  - S110-E-ROW602182
+  - S110-E-ROW504329
+  - S110-E-SCHEMA
+  - S110-E-EXTRACTOR
+- check_id: S110-C-GRAPH
+  name: Protein/construct and structural-binding evidence
+  status: passed
+  required: true
+  summary: Native examples, deposited polymers, BTN complexes and model extents are
+    explicitly distinguished; no false enzyme-inhibition inference is used.
+  target_ids:
+  - CHEBI:15956
+  evidence_ids:
+  - S110-E-P22629
+  - S110-E-P02701
+  - S110-E-1STP
+  - S110-E-1AVD
+  - S110-E-PROTEINCALC
+- check_id: S110-C-PRIMARYGAPS
+  name: Required occurrence/genetic and numerical primary source access
+  status: unavailable
+  required: true
+  summary: Cited FGB experimental main, five unresolved occurrence bodies, Geigy page
+    and original numeric affinity conditions remain unavailable. Source assertions
+    are preserved rather than certified as independent direct measurements.
+  target_ids:
+  - CHEBI:15956
+  evidence_ids:
+  - S110-E-FGB
+  - S110-E-OCCGAPS
+  - S110-E-BINDPRIMARY
+  - S110-E-ROUTES
+- check_id: C110-C-IDENTITY
+  name: Complete literal authority and two-source graph equivalence
+  status: passed
+  required: true
+  summary: All seven parsed graphs agree in formula, charge, full key, fixed-H and
+    assigned stereo count.
+  target_ids:
+  - CHEBI:15956
+  evidence_ids:
+  - C110-E-CALC
+  - C110-E-CHEBI
+  - C110-E-MOL
+  - C110-E-PC
+  - C110-E-NPA
+- check_id: C110-C-GROUND
+  name: Eligible identifier and definition fidelity
+  status: passed
+  required: true
+  summary: Three-star exact ChEBI and literal xrefs are supported; definition markup
+    normalization preserves its chemical meaning.
+  target_ids:
+  - CHEBI:15956
+  evidence_ids:
+  - C110-E-OWNER
+  - C110-E-CHEBI
+  - C110-E-PC
+  - C110-E-NPA
+evidence:
+- evidence_id: R110-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/biotin.yaml
+  locator: Complete owner, all assertions, inline graph, discussions and history
+  accessed_at: '2026-10-21T16:19:22.240896Z'
+  support: supports
+  summary: 'Root read the entire biotin owner following its official intake and rechecked
+    the source-preparation bytes against this base. It has 23 occurrence, 2 producer
+    and 2 cluster assertions. The referenced component set is empty. Present optional
+    fields: causal_graphs, bioactivities, bioactivity_summary, discussions.'
+  snapshot_sha256: 3cb161be27dbbe01f75a85b0d99d783b6bacaa09167bd4404d30aa5cb0abdaf8
+- evidence_id: R110-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/110/local-sources.json
+  locator: Complete resolved owner and all exact matching local source rows
+  accessed_at: '2026-10-21T16:19:22.240896Z'
+  support: context_only
+  summary: Root read the complete resolved owner and every matching MIBiG, LOTUS,
+    ChEBI, CyanoMetDB and NPClassifier row captured by intake. This is a source-fidelity
+    assessment, separate from independent experimental support. The biotin PubChem
+    inventory and all 25 emitted assays are assessed in a separately pinned scientific
+    section.
+  snapshot_sha256: 89b33d62e4e97b0eca532e326e03367b6b42b5ccfde3d49d94cc5a4aefa31719
+- evidence_id: R110-Q10563106
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q10563106
+  locator: Literal entity and all nondeprecated P225/P685 values
+  accessed_at: '2026-10-21T15:55:34.036365Z'
+  support: context_only
+  summary: Literal Q10563106 resolves to P225 Lipomyces starkeyi. P685 29829 matches
+    the local taxon identifiers. This checks identifier routing only, not occurrence,
+    native production or experimental-stock identity.
+  snapshot_sha256: 95bd451541285b30e68b07c85c5d35491ccd5c634271b0d19b50892012ac5e61
+- evidence_id: R110-Q11006
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q11006
+  locator: Literal entity and all nondeprecated P225/P685 values
+  accessed_at: '2026-10-21T15:55:34.036365Z'
+  support: context_only
+  summary: Literal Q11006 resolves to P225 Glycine max. P685 3847 matches the local
+    taxon identifiers. This checks identifier routing only, not occurrence, native
+    production or experimental-stock identity.
+  snapshot_sha256: 95bd451541285b30e68b07c85c5d35491ccd5c634271b0d19b50892012ac5e61
+- evidence_id: R110-Q1135229
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q1135229
+  locator: Literal entity and all nondeprecated P225/P685 values
+  accessed_at: '2026-10-21T15:55:34.036365Z'
+  support: context_only
+  summary: Literal Q1135229 resolves to P225 Artemia salina. P685 85549 matches the
+    local taxon identifiers. This checks identifier routing only, not occurrence,
+    native production or experimental-stock identity.
+  snapshot_sha256: 95bd451541285b30e68b07c85c5d35491ccd5c634271b0d19b50892012ac5e61
+- evidence_id: R110-Q146380
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q146380
+  locator: Literal entity and all nondeprecated P225/P685 values
+  accessed_at: '2026-10-21T15:55:34.036365Z'
+  support: context_only
+  summary: Literal Q146380 resolves to P225 Achromobacter. P685 222 matches the local
+    taxon identifiers. This checks identifier routing only, not occurrence, native
+    production or experimental-stock identity.
+  snapshot_sha256: 95bd451541285b30e68b07c85c5d35491ccd5c634271b0d19b50892012ac5e61
+- evidence_id: R110-Q15632547
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q15632547
+  locator: Literal entity and all nondeprecated P225/P685 values
+  accessed_at: '2026-10-21T15:55:34.036365Z'
+  support: context_only
+  summary: Literal Q15632547 resolves to P225 Phycomyces blakesleeanus. P685 4837
+    matches the local taxon identifiers. This checks identifier routing only, not
+    occurrence, native production or experimental-stock identity.
+  snapshot_sha256: 95bd451541285b30e68b07c85c5d35491ccd5c634271b0d19b50892012ac5e61
+- evidence_id: R110-Q15978631
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q15978631
+  locator: Literal entity and all nondeprecated P225/P685 values
+  accessed_at: '2026-10-21T15:55:34.036365Z'
+  support: context_only
+  summary: Literal Q15978631 resolves to P225 Homo sapiens. P685 9606 matches the
+    local taxon identifiers. This checks identifier routing only, not occurrence,
+    native production or experimental-stock identity.
+  snapshot_sha256: 95bd451541285b30e68b07c85c5d35491ccd5c634271b0d19b50892012ac5e61
+- evidence_id: R110-Q18324723
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q18324723
+  locator: Literal entity and all nondeprecated P225/P685 values
+  accessed_at: '2026-10-21T15:55:34.036365Z'
+  support: context_only
+  summary: Literal Q18324723 resolves to P225 Lysinibacillus sphaericus. P685 1421
+    matches the local taxon identifiers. This checks identifier routing only, not
+    occurrence, native production or experimental-stock identity.
+  snapshot_sha256: 95bd451541285b30e68b07c85c5d35491ccd5c634271b0d19b50892012ac5e61
+- evidence_id: R110-Q25419
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q25419
+  locator: Literal entity and all nondeprecated P225/P685 values
+  accessed_at: '2026-10-21T15:55:34.036365Z'
+  support: context_only
+  summary: Literal Q25419 resolves to P225 Escherichia coli. P685 562 matches the
+    local taxon identifiers. This checks identifier routing only, not occurrence,
+    native production or experimental-stock identity.
+  snapshot_sha256: 95bd451541285b30e68b07c85c5d35491ccd5c634271b0d19b50892012ac5e61
+- evidence_id: R110-Q42339
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q42339
+  locator: Literal entity and all nondeprecated P225/P685 values
+  accessed_at: '2026-10-21T15:55:34.036365Z'
+  support: context_only
+  summary: Literal Q42339 resolves to P225 Phaseolus vulgaris. P685 3885 matches the
+    local taxon identifiers. This checks identifier routing only, not occurrence,
+    native production or experimental-stock identity.
+  snapshot_sha256: 95bd451541285b30e68b07c85c5d35491ccd5c634271b0d19b50892012ac5e61
+- evidence_id: R110-Q683881
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q683881
+  locator: Literal entity and all nondeprecated P225/P685 values
+  accessed_at: '2026-10-21T14:29:21.806728Z'
+  support: context_only
+  summary: Literal Q683881 resolves to P225 Aspergillus nidulans. P685 162425 matches
+    the local taxon identifiers. This checks identifier routing only, not occurrence,
+    native production or experimental-stock identity.
+  snapshot_sha256: 5caccd1cf52cadb24fff9e659dca928af82dd3f7002e63555777e91bb60cfbfa
+- evidence_id: R110-Q91703
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q91703
+  locator: Literal entity and all nondeprecated P225/P685 values
+  accessed_at: '2026-10-21T15:55:34.036365Z'
+  support: context_only
+  summary: Literal Q91703 resolves to P225 Caenorhabditis elegans. P685 6239 matches
+    the local taxon identifiers. This checks identifier routing only, not occurrence,
+    native production or experimental-stock identity.
+  snapshot_sha256: 95bd451541285b30e68b07c85c5d35491ccd5c634271b0d19b50892012ac5e61
+- evidence_id: R110-IMODULON
+  kind: database
+  reference: https://imodulondb.org/api/datasets
+  locator: Complete official 20-organism/28-dataset catalogue
+  accessed_at: '2026-10-21T15:57:37.699699Z'
+  support: context_only
+  summary: The complete API catalogue retrieved at this timestamp matches the retained
+    catalogue bytes. This evidence concerns catalogue membership only. The earlier
+    adapter catalogue retains its original 2026-10-21T07:21:15.957321Z completion
+    time in the separately pinned source packet.
+  snapshot_sha256: 155607e7023efdead5ebab3919279a0776d5665a7de9e28b67f02f8f521b0693
+- evidence_id: R110-IMODULON-CONTEXT
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch011/imodulon-context/source-notes.json
+  locator: 'Prepared source packet: candidate_context, actual_accesses, metadata and
+    the fully verified 53-input manifest'
+  accessed_at: '2026-10-21T16:00:03.119199Z'
+  support: context_only
+  summary: The packet records the three official /meta responses and six scoped adapter
+    queries with their individual original 2026-10-21T15:57–15:58Z access times. Its
+    preparation/read-completion timestamp is used here, not presented as a new API
+    retrieval. Exact species, stock, gene-search and component limits remain explicit;
+    no chemical identity, production, native stock equivalence or module membership
+    is inferred.
+  snapshot_sha256: bb8dbcfd2ba18338393c3ed0da030ee8f19a9f4c73c2a8e32791240299d50d3d
+- evidence_id: S110-E-OWNER
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/alkaloids/biotin.yaml
+  locator: 'Entire owner: 2 producer/locus assertions, 23 occurrences, 25 bioactivities
+    and 3-node/2-edge graph'
+  accessed_at: '2026-10-21T16:31:28.333325Z'
+  support: supports
+  summary: The exact fresh intake matches the complete source-preparation owner. Both
+    MIBiG methods are empty and correctly map to SOURCE_ASSERTION/CLUSTER_UNSTATED.
+    All 103 exact raw PubChem rows were compared; 25 are written,78 explicitly omitted.
+    Source fidelity does not establish every biological interpretation.
+  snapshot_sha256: 3cb161be27dbbe01f75a85b0d99d783b6bacaa09167bd4404d30aa5cb0abdaf8
+- evidence_id: S110-E-MIBIG1238
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0001238.3/annotations.json
+  locator: Exact version3 compound1, organism, accession and empty method list
+  accessed_at: '2026-10-21T15:35:33.404283Z'
+  support: supports
+  summary: Current versioned source preserves the imported named biotin association
+    and weak grades. Genotype applicability is assessed against the exact deposit;
+    no missing method is automatically upgraded.
+  snapshot_sha256: 85754beb81627bea0608d4bf336b2b2fd871863f85cbfe45aff8c6aba7571106
+- evidence_id: S110-E-MIBIG1239
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0001239.3/annotations.json
+  locator: Exact version3 compound1, organism, accession and empty method list
+  accessed_at: '2026-10-21T15:35:33.609244Z'
+  support: supports
+  summary: Current versioned source preserves the imported named biotin association
+    and weak grades. Genotype applicability is assessed against the exact deposit;
+    no missing method is automatically upgraded.
+  snapshot_sha256: 7586485b64cb5e0fb91ed05eadba688127ba725ad25c4d1b7b5d324022b30ee9
+- evidence_id: S110-E-GENBANK
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=FJ430072.1,FJ430073.1&rettype=gb&retmode=text
+  locator: FJ430072.1/FJ430073.1 source and full feature qualifiers, not an independent
+    nucleotide translation
+  accessed_at: '2026-10-21T15:40:50.657365Z'
+  support: supports
+  summary: FJ430072.1 is Glasgow G051, explicitly a biotin auxotroph mutant. biA1
+    is truncated; variation3404^3405 annotates a G insertion that restores the aminotransferase
+    domain. FJ430073.1 is literal strain FGCS 4 with intact bifunctional biDA. These
+    are different submitted genotypes, not interchangeable functional locus sequences.
+    Empty source bounds remain empty.
+  snapshot_sha256: 4dc749ea88ef41b9e926640751d3f2c38f6628fa989976e8dd43685e332fff52
+- evidence_id: S110-E-FGB
+  kind: primary_source
+  reference: PMID:20713166
+  locator: PMID20713166 original abstract
+  accessed_at: '2026-10-21T15:35:32.236127Z'
+  support: partial
+  summary: The cited Fungal Genetics and Biology study reports bioDA functions by
+    complementation of E. coli auxotrophs, identifies biA mutant lesions and uses
+    bioDA to complement A. nidulans biA1. This supports biological pathway context
+    and a repaired/complemented derivative, not functionality of the uncorrected FJ430072
+    sequence. Full experimental main remains unavailable.
+  snapshot_sha256: 61ef10134436d1de2695a078003419dedd4991d32861640eb7a909edd047e201
+- evidence_id: S110-E-JBC
+  kind: primary_source
+  reference: DOI:10.1074/jbc.M111.279687
+  locator: Full scientific body; native backgrounds, bioF deletion, GFP/ARL rescue
+    and localization
+  accessed_at: '2026-10-21T15:41:06.804520Z'
+  support: supports
+  summary: The separate later PMID21998305 study uses FGSC A1145 and biA1 FGSC A26/Glasgow
+    G051. ΔbioF growth loss/biotin rescue, full GFP-BioF native rescue, failed ARL-deleted
+    native rescue, E. coli bioF103 complementation and peroxisomal localization are
+    distinct endpoints. They do not convert the submitted uncorrected FJ430072 genotype
+    into a producing strain or constitute direct final-biotin LC-MS quantitation.
+  snapshot_sha256: 4834de95330b5f6f1d5fe260933595cc13d3cc649141221d5374f98d0ec13d49
+- evidence_id: S110-E-ROUTES
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch011/bgc-science/curator-routing/source-only-routing-notes.json
+  locator: Statically inspected method, strain, reference, source-emission and graph
+    ownership contracts
+  accessed_at: '2026-10-21T16:31:28.333325Z'
+  support: context_only
+  summary: Every organism-bearing MIBiG row emits a positive producer. SOURCE_ASSERTION
+    is weak positive, not UNKNOWN. WITHDRAW requires nonempty methods and neither
+    removes producer nor locus objects. Current strain/reference routes cannot solve
+    genotype attribution. Curator-owned graph/discussion carry is same-key only; generic
+    occurrence/producer prose is regenerated. All consulted consumers are pinned.
+  snapshot_sha256: 598a497d5fbbd966ad5ce0e4ac6ca08b40ae2039425362f0fb881cefaf3b082d
+- evidence_id: S110-E-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next-batch011/bgc-science/curator-routing/ignored-inclusive-search-receipts.json
+  locator: Ignored-inclusive curation selectors and implementation scope
+  accessed_at: '2026-10-21T16:31:28.333325Z'
+  support: context_only
+  summary: Retained rg --no-ignore --hidden searches included exact biotin/source
+    selectors and current curation overlays. No existing target-specific genotype
+    qualification consumer was found in that scope. This is a bounded static implementation
+    result, not a repository-wide proof of all possible functionality.
+  snapshot_sha256: 5983727d1b68effce0718a6eae1f5c17145ee56c1104d97b255da83806227e60
+  search_scope: 'Bounded retained source and code search: Ignored-inclusive curation
+    selectors and implementation scope. Exact queries, access failures and ignored-inclusive
+    curation selectors are retained in the pinned preparation and routing receipts.
+    No new web retrieval or exhaustive external-absence conclusion is asserted.'
+- evidence_id: S110-E-ASSAYS
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/171548/assaysummary/JSON
+  locator: All exact CID171548 retained rows, reproduced selection and source joins
+  accessed_at: '2026-10-21T15:47:11.260874Z'
+  support: supports
+  summary: All103 retained raw rows have current summary matches. Deterministic projection
+    reproduces25 observations and78 omitted; target-labelled duplicate rows are not
+    independent experiments. Fourteen written AID977611 observations are Kd bindings
+    to named PDB chains, not enzyme inhibition.
+  snapshot_sha256: 8afe38eaacadb96c9f6ccfac32c66366708e17d2548c978928a0a08581f0b13a
+- evidence_id: S110-E-BINDING
+  kind: primary_source
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/977611,1811/description/JSON
+  locator: Official depositor AID977611 description version3 and endpoint definitions
+  accessed_at: '2026-10-21T15:47:10.594129Z'
+  support: supports
+  summary: The collection explicitly deposits experimentally measured dissociation
+    affinities for protein-ligand complexes. A Kd observation for avidin/streptavidin,
+    including binding-pocket/circular-permutation variants, does not establish inhibition
+    of enzyme catalysis.
+  snapshot_sha256: a6ddea7173a8ee1ad81d56563477c3547ddeaa9b62e64c9fae2ba6d43beb2241
+- evidence_id: S110-E-CLASSIFIER
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: classify_activity lines129–181; observation/summary emission; occurrence
+    deduplication
+  accessed_at: '2026-10-21T16:31:28.333325Z'
+  support: supports
+  summary: The binding-title regex yields ENZYME_INHIBITOR for all14 written Kd observations.
+    The influenza-title regex yields ANTIVIRAL for the NS1A biochemical assay. Both
+    classes propagate into the summary. PubChem emission omits qualifier. Occurrence
+    deduplication keys only taxon and first reference, dropping a second sample context.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: S110-E-EXTRACTOR
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/extract_pubchem_bioassay.py
+  locator: Inventory columns, rows_from_summary and already-queried CID skip
+  accessed_at: '2026-10-21T16:31:28.333325Z'
+  support: supports
+  summary: The retained summary extractor does not preserve the detailed SID-level
+    comparator. Re-running its ordinary completed-CID path will not recover missing
+    bounds; a separately guarded detailed-result enrichment/refresh and seeder mapping
+    is needed.
+  snapshot_sha256: 24f9d794e7cf97c420351cb751f8767f7d81a5f22aed01669b2318d6755e7c00
+- evidence_id: S110-E-SCHEMA
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: BioactivityObservation.qualifier and MeasurementQualifierEnum
+  accessed_at: '2026-10-21T16:31:28.333325Z'
+  support: supports
+  summary: The existing schema can represent LESS_THAN and GREATER_THAN; no schema
+    invention is needed to preserve the three exact deposited inequality signs.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: S110-E-AID588681
+  kind: primary_source
+  reference: pubchem.aid:588681
+  locator: Complete depositor description/protocol and endpoint definitions
+  accessed_at: '2026-10-21T15:55:09.687998Z'
+  support: supports
+  summary: Recombinant wild-type IDE fluorescence-polarization apparent activation
+    assay. Fluorescein–Abeta(1–40)–Lys–biotin substrate is incubated with IDE for
+    3.5 h; avidin is added afterward. Changes in polarization are interpreted as substrate
+    cleavage. Ten nominal concentrations to 54.7 µM, triplicate. SID 49674668 is Active,
+    EC50 = 2.526 µM, with an explicit equality qualifier. The result is an assay readout.
+    The same SID is positive in the end-addition artifact counterscreen 588442, so
+    this record alone does not establish selective catalytic activation of IDE. The
+    shared avidin/biotin readout makes competition plausible, but its precise mechanism
+    is not demonstrated by these results.
+  snapshot_sha256: 947b58654f474a9c023fb5214158facb4448c30be3d7a7687a3b2ecc6c129f73
+- evidence_id: S110-E-ROW588681
+  kind: primary_source
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/588681/JSON?sid=49674668
+  locator: Exact SID/CID detailed result and field definitions
+  accessed_at: '2026-10-21T15:55:34.457272Z'
+  support: supports
+  summary: SID 49674668 is Active, EC50 = 2.526 µM, with an explicit equality qualifier.
+  snapshot_sha256: aab51e756a07c5c86899fa0726bcf2f7a775b3e977c7873fedd1dd3b008ce3aa
+- evidence_id: S110-E-AID588442
+  kind: primary_source
+  reference: pubchem.aid:588442
+  locator: Complete depositor description/protocol and endpoint definitions
+  accessed_at: '2026-10-21T15:55:09.754485Z'
+  support: supports
+  summary: End-addition fluorescence-polarization artifact counterscreen. The same
+    substrate/HEK-cell reaction proceeds for 4 h and avidin is added; test compound
+    is added immediately before polarization acquisition. The depositor explicitly
+    states that the calculated activity reflects signal interference rather than an
+    effect on IDE activity. SID 49674668 is Active, EC50 = 2.057 µM, equality qualifier.
+    Positive activity is a positive artifact/counterscreen result. It must not be
+    relabeled as enzyme activation or therapeutic activity. The observation itself
+    is useful and should remain distinguishable from the catalytic assay.
+  snapshot_sha256: 33c2a725357b9098667201799f92ae652095bfdfa16c4bc59ae0f7707fde749b
+- evidence_id: S110-E-ROW588442
+  kind: primary_source
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/588442/JSON?sid=49674668
+  locator: Exact SID/CID detailed result and field definitions
+  accessed_at: '2026-10-21T15:55:34.438317Z'
+  support: supports
+  summary: SID 49674668 is Active, EC50 = 2.057 µM, equality qualifier.
+  snapshot_sha256: 2071d99e41f38e7f8d8928de659223a6737311c425287f50a579800828463062
+- evidence_id: S110-E-AID588440
+  kind: primary_source
+  reference: pubchem.aid:588440
+  locator: Complete depositor description/protocol and endpoint definitions
+  accessed_at: '2026-10-21T15:55:09.674293Z'
+  support: supports
+  summary: HEK-cell LDH-release/membrane-integrity counterscreen. Four-hour compound
+    exposure, CytoTox-ONE coupled LDH readout, DMSO and Triton-X100 controls; nominal
+    10-point series to 90 µM. The source labels its half-response endpoint IC50 despite
+    the LDH-release design. SID 49674668 is Inactive; exact deposited Qualifier is
+    > and IC50 is  89.251 µM. Highest stated actual series point is 89.2 µM; One replicate
+    reaches51.3%; retain the deposited Inactive call and > bound without claiming
+    every replicate is below50%. This is absence of the defined LDH-release hit within
+    this assay, not universal nontoxicity. The numeric endpoint is a lower bound and
+    cannot be represented faithfully as an unqualified equality. Preserve the source
+    endpoint name while explaining the biological readout.
+  snapshot_sha256: fe1f393348a31857b395dadce625d32cc1db17fbd8c2542fac6346515967f448
+- evidence_id: S110-E-ROW588440
+  kind: primary_source
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/588440/JSON?sid=49674668
+  locator: Exact SID/CID detailed result and field definitions
+  accessed_at: '2026-10-21T15:55:34.606943Z'
+  support: supports
+  summary: SID 49674668 is Inactive; exact deposited Qualifier is > and IC50 is  89.251
+    µM. Highest stated actual series point is 89.2 µM; TID20 at0.041 µM is51.3%; this
+    does not alter the deposited Inactive call or bound.
+  snapshot_sha256: a61bc3abbad1c38933bf49430068adb7998b9c04e0a69f36247f267ef90c90f8
+- evidence_id: S110-E-AID602182
+  kind: primary_source
+  reference: pubchem.aid:602182
+  locator: Complete depositor description/protocol and endpoint definitions
+  accessed_at: '2026-10-21T15:55:09.763938Z'
+  support: supports
+  summary: GFP/fluorescence counterscreen with ABL1–eGFP but no RIN1 binding partner.
+    ABL1–eGFP is incubated with compound 10 min at 25 °C. The absence of RIN1 means
+    the readout cannot establish RIN1–ABL interaction inhibition. The depositor calls
+    positive results artifacts; compounds are tested to nominal 67.5 µM in triplicate.
+    SID 49674668 is Inactive; exact deposited Qualifier is > and IC50 is  67.588 µM.
+    This supports lack of GFP/optical artifact under this particular assay condition,
+    not an independent negative ABL kinase or RIN1-interaction result. The endpoint
+    is a lower bound.
+  snapshot_sha256: 0ad1eaabebc03d168d450e91bb1b17d389039041573ee0ef147ced72115a4453
+- evidence_id: S110-E-ROW602182
+  kind: primary_source
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/602182/JSON?sid=49674668
+  locator: Exact SID/CID detailed result and field definitions
+  accessed_at: '2026-10-21T15:55:34.455399Z'
+  support: supports
+  summary: SID 49674668 is Inactive; exact deposited Qualifier is > and IC50 is  67.588
+    µM.
+  snapshot_sha256: 506082753ba9443a793d8261ae41f88c7709c159b864034d43452a01dd11ec54
+- evidence_id: S110-E-AID1671197
+  kind: primary_source
+  reference: pubchem.aid:1671197
+  locator: Complete depositor description/protocol and endpoint definitions
+  accessed_at: '2026-10-21T15:55:10.531273Z'
+  support: supports
+  summary: CYP2C19 P450-Glo biochemical luminescence assay, not a direct receptor
+    antagonist assay. Enzyme–substrate mix, NADPH regeneration,1 h at 37 °C, followed
+    by luciferin detection; ketoconazole control. SID 170464763 overall outcome is
+    Inactive. Potency 0.1096 µM comes from replicate 1, whose phenotype is Activator
+    and curve description is Partial curve; partial efficacy; poor fit. Replicates
+    2/3 are Inactive. The overall negative call must be retained. The potency is a
+    fitted AC50 for an imperfect apparent-activation curve in one replicate; it is
+    not CYP2C19 inhibition potency. The paired written rows differ by target annotation,
+    not by independent samples.
+  snapshot_sha256: 7a9a5c613c48115f6ed5f30d9a22553f5bd3f73369b80da317c894db953828bd
+- evidence_id: S110-E-ROW1671197
+  kind: primary_source
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1671197/JSON?sid=170464763
+  locator: Exact SID/CID detailed result and field definitions
+  accessed_at: '2026-10-21T15:55:35.998825Z'
+  support: supports
+  summary: SID 170464763 overall outcome is Inactive. Potency 0.1096 µM comes from
+    replicate 1, whose phenotype is Activator and curve description is Partial curve;
+    partial efficacy; poor fit. Replicates 2/3 are Inactive.
+  snapshot_sha256: b1f95061f37b59e567faceae06372abf426b9d533e754ba008b2675e8d5759be
+- evidence_id: S110-E-AID1671196
+  kind: primary_source
+  reference: pubchem.aid:1671196
+  locator: Complete depositor description/protocol and endpoint definitions
+  accessed_at: '2026-10-21T15:55:10.473641Z'
+  support: supports
+  summary: CYP2D6 P450-Glo biochemical luminescence assay. Enzyme–substrate mix, NADPH
+    regeneration,1 h at room temperature, luciferin detection; quinidine control.
+    SID 170464763 overall outcome is Inconclusive. Replicate1 Potency 43.6486 µM,
+    phenotype Inhibitor, curve Single point of activity; replicates 2/3 are Inactive.
+    NOT_DETERMINED preserves the current source outcome. The number is a fit associated
+    with a high-concentration single-point response, not a confirmed concentration-response
+    inhibitor result. Paired target/no-target rows are not independent experiments.
+  snapshot_sha256: f93dff78c287d6522280c054c69eede0ea84cce52c30bc76b1cc99d29d542b53
+- evidence_id: S110-E-ROW1671196
+  kind: primary_source
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1671196/JSON?sid=170464763
+  locator: Exact SID/CID detailed result and field definitions
+  accessed_at: '2026-10-21T15:55:36.805589Z'
+  support: supports
+  summary: SID 170464763 overall outcome is Inconclusive. Replicate1 Potency 43.6486
+    µM, phenotype Inhibitor, curve Single point of activity; replicates 2/3 are Inactive.
+  snapshot_sha256: 94aac4b0599f007e3195f994eb14c38cf59b22948d298d58c8c9d2c5aab57325
+- evidence_id: S110-E-AID1963596
+  kind: primary_source
+  reference: pubchem.aid:1963596
+  locator: Complete depositor description/protocol and endpoint definitions
+  accessed_at: '2026-10-21T15:55:10.197950Z'
+  support: supports
+  summary: CYP3A7 P450-Glo enzyme/substrate luminescence assay. Although the title
+    says cell-based, the actual deposited protocol contains enzyme/substrate mix and
+    NADPH regeneration, followed by luciferin detection, with no cell incubation described.
+    Ketoconazole control;1 h at room temperature. SID 170464763 overall outcome is
+    Inconclusive; Potency 21.8761 µM, phenotype Inhibitor, curve Single point of activity.
+    Largest listed tested concentration 57.45 µM has about39% inhibitory response.
+    Preserve NOT_DETERMINED. Do not infer cellular antiviral or confirmed CYP inhibition
+    from the title or fitted potency. The protocol/title scope distinction is source-specific,
+    not an invented missing cell line.
+  snapshot_sha256: 42c477b237fbcbb8b5c899dc639fbab3b7278cc5ef69207c079b43a7a512052d
+- evidence_id: S110-E-ROW1963596
+  kind: primary_source
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1963596/JSON?sid=170464763
+  locator: Exact SID/CID detailed result and field definitions
+  accessed_at: '2026-10-21T15:55:34.879956Z'
+  support: supports
+  summary: SID 170464763 overall outcome is Inconclusive; Potency 21.8761 µM, phenotype
+    Inhibitor, curve Single point of activity. Largest listed tested concentration
+    57.45 µM has about39% inhibitory response.
+  snapshot_sha256: 2faf49485b80d043e7b8e6d561071e81463b572437acb74257ba2f7c03d1b77a
+- evidence_id: S110-E-AID504329
+  kind: primary_source
+  reference: pubchem.aid:504329
+  locator: Complete depositor description/protocol and endpoint definitions
+  accessed_at: '2026-10-21T15:55:10.188341Z'
+  support: supports
+  summary: Acellular influenza NS1A–dsRNA AlphaScreen signal-inhibition assay. NS1A
+    and dsRNA are incubated 15 min at 37 °C, then acceptor and donor beads are added.
+    Signal is measured 680 nm excitation/570 nm emission. Ten concentrations span100–0.195
+    µM; >30% inhibition at any concentration qualifies as Active. No infection, replication,
+    viral yield or cell-viability endpoint occurs in this protocol. Exact SID 49674668/CID
+    171548 row is Active/Verified, IC50 Modifier <, value 0.2 µM. It gives82.2% inhibition
+    already at 0.195 µM and99.48% at 100 µM. This is a censored biochemical signal-inhibition
+    hit, not direct antiviral efficacy. The title alone cannot support ANTIVIRAL.
+    It also does not establish direct NS1A binding or rule out assay interference.
+    No biotin-specific AlphaScreen interference mechanism or universal absence of
+    antiviral activity is asserted.
+  snapshot_sha256: 2f031a306cbf3b6e021403c7177911aa7804d8fa22d81eb63f98fbdc298c02ae
+- evidence_id: S110-E-ROW504329
+  kind: primary_source
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/504329/CSV?sid=49674668
+  locator: Exact SID/CID detailed result and field definitions
+  accessed_at: '2026-10-21T15:56:15.880627Z'
+  support: supports
+  summary: Exact SID 49674668/CID 171548 row is Active/Verified, IC50 Modifier <,
+    value 0.2 µM. It gives82.2% inhibition already at 0.195 µM and99.48% at 100 µM.
+  snapshot_sha256: 6e3664695c08b4a2e8017c98178d03e64a3849532bbe3764b506be074a0a0bcf
+- evidence_id: S110-E-ASSAYQA
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch011/biotin-other-assays-independent-qa/source-only-qa.json
+  locator: Independent exact SID/CID joins and three comparator checks
+  accessed_at: '2026-10-21T16:31:28.333325Z'
+  support: context_only
+  summary: 'Independent QA confirms the comparator losses and paired IDE artifact
+    scope. It corrects frozen source-note wording: AID588440 TID20 is51.3%, so no
+    blanket below50% assertion is retained. This is additive evidence; frozen sources
+    remain unchanged.'
+  snapshot_sha256: 87450918f000c3400ff031d960fdca4e3f17a16d227e0df53b4546a7a7b6a08d
+- evidence_id: S110-E-P22629
+  kind: authority
+  reference: https://rest.uniprot.org/uniprotkb/P22629.json
+  locator: Complete current183-aa reviewed sequence, taxon1895, function/subunit annotations
+  accessed_at: '2026-10-21T15:45:01.679908Z'
+  support: supports
+  summary: Reviewed S. avidinii streptavidin precursor forms a noncovalent biotin
+    complex and homotetramer. This is native protein identity, not a complete experimental
+    construct or a new affinity measurement.
+  snapshot_sha256: af77a7254de1ee7158ff9abfbd01bb7f5bf1ae77e8036bc9faa1d6b348fd77f5
+- evidence_id: S110-E-P02701
+  kind: authority
+  reference: https://rest.uniprot.org/uniprotkb/P02701.json
+  locator: Complete current152-aa reviewed sequence, taxon9031, function/subunit annotations
+  accessed_at: '2026-10-21T15:45:01.511516Z'
+  support: supports
+  summary: Reviewed chicken avidin precursor forms a noncovalent biotin complex and
+    homotetramer. Current reference sequence is distinguished from archived crystallographic
+    polymer.
+  snapshot_sha256: 8beacddc11e1c7c9f60fe2b6ea2672fdc7cdc996c46d0fed765d6e17a5fbf13e
+- evidence_id: S110-E-1STP
+  kind: primary_source
+  reference: DOI:10.2210/pdb1stp/pdb
+  locator: Deposited polymer, BTN ligand, sequence mapping, model residue coverage
+    and assembly metadata
+  accessed_at: '2026-10-21T15:46:14.060785Z'
+  support: supports
+  summary: 1STP deposited159-aa polymer exactly matches P22629 residues25–183; modeled
+    chainA spans deposited13–133,121 residues. Biotin complex supports binds; tetrameric
+    assembly is distinct from asymmetric-unit chain count. The graph’s40fM number
+    is separately attributed to PubChem/PDBbind, not extracted as a kinetic measurement
+    from the coordinates.
+  snapshot_sha256: 36be77b9722ebb9f603b27bf16cbc30057f87ab9923a2d2adab0eadbdb30c30f
+- evidence_id: S110-E-1AVD
+  kind: primary_source
+  reference: DOI:10.2210/pdb1avd/pdb
+  locator: Deposited polymer, BTN, archived/current sequence comparison, model coverage
+    and assembly
+  accessed_at: '2026-10-21T15:46:14.024469Z'
+  support: supports
+  summary: 1AVD deposited128-aa polymer maps to P02701 residues25–152 with depositedT34/currentI58
+    and depositedE53/currentQ77. Archived reference already had E at the second position;
+    no engineered mutation is inferred. Modeled A has123 residues3–125 and B124 residues2–125.
+    The complex supports binds; the graph’s1fM is a database affinity attribution,
+    not an independently re-read numerical primary table.
+  snapshot_sha256: 27fcdebd0b222a90d82395992798cfe13dd9bd79ecb281f136ef22d8a80c356b
+- evidence_id: S110-E-PROTEINCALC
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch011/bgc-science/biotin/native-pdb-comparison.json
+  locator: Complete deposited/reference sequence comparisons and modeled residue counts
+  accessed_at: '2026-10-21T16:31:28.333325Z'
+  support: context_only
+  summary: Exact sequence extents and differences were calculated independently of
+    the annotation cross-reference. No inference from sequence equality to function
+    or affinity is made.
+  snapshot_sha256: 3698bee749c4bb0b16951ae7417aff82c6498e36b07c8b2f9d4281009ccfeaf0
+- evidence_id: S110-E-BINDPRIMARY
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=34617948,22873683,20713166,19425150,21988831,10577274,8515446,10850797,12925786,2911722,9568892,9636711&retmode=xml
+  locator: Original cited binding abstracts for PMID2911722,8515446,10850797,12925786,9568892,9636711
+  accessed_at: '2026-10-21T15:35:32.236127Z'
+  support: partial
+  summary: The original abstracts support structural binding studies and distinguish
+    variants such as S45A and circular permutation. The graph title/snippet fragments
+    match the cited original study scope. Full numerical affinity conditions and tables
+    were not obtained; retained 1998/2000 PMC bodies are abstract/reference pages,
+    not full methods.
+  snapshot_sha256: 61ef10134436d1de2695a078003419dedd4991d32861640eb7a909edd047e201
+- evidence_id: S110-E-O0
+  kind: primary_source
+  reference: DOI:10.1271/bbb1961.49.2783
+  locator: Complete three-page original paper and original page 2785 pixels inspected.
+  accessed_at: '2026-10-21T15:51:03.021699Z'
+  support: supports
+  summary: Bacillus sphaericus resting cells were supplied dimethyldethiobiotin. The
+    study reports dimethylbiotin and a minor biotin product, comparison with authentic
+    BAP esters and L. plantarum microbiological detection. It also reports DTB-to-biotin
+    conversion under the same conditions. This is precursor-fed bioconversion, not
+    an unamended culture-isolation experiment. The prose reuses B2 when referring
+    to biotin although earlier B1 denotes biotin; preserve that source label discrepancy
+    rather than silently swapping peaks.
+  snapshot_sha256: 5103065041fb99db4fe9728988fec89465ef5185a9e683e47e9f9c3de8a29089
+- evidence_id: S110-E-O1
+  kind: primary_source
+  reference: DOI:10.2323/jgam.20.277
+  locator: Complete 11-page original body and Figure 1 original page 280 pixels inspected.
+  accessed_at: '2026-10-21T15:51:41.317716Z'
+  support: supports
+  summary: Lipomyces starkeyi IAM 4753 is tested in defined glucose/mineral medium
+    across pH values. Cellular biotin is measured after hydrolysis by L. plantarum
+    ATCC8014 microbiological assay. Figure 1 reports increased cellular biotin without
+    added biotin at initial pH4.5/5.5; radiolabeled supplementation experiments separately
+    measure uptake/degradation. Analytical specificity is that of the reported microbiological
+    assay, not a modern full stereochemical isolation.
+  snapshot_sha256: 7fb50082ae12f973864577cc73c2a35e24c0995994f9a1a6dc1b0520fddbf92f
+- evidence_id: S110-E-O2
+  kind: primary_source
+  reference: DOI:10.3390/metabo4030599
+  locator: Main introduction/results, Table 2 biotin row, full experimental section
+    and conclusion inspected. Official SI archive retrieved; old XLS tables retained
+    but not decoded.
+  accessed_at: '2026-10-21T15:50:03.375770Z'
+  support: supports
+  summary: P. vulgaris cv. Yukitebou root exudates are analyzed by CE–TOF-MS after
+    collection from washed roots. Table 2 explicitly lists biotin. This supports reported
+    occurrence in the root-exudate sample; it is not direct proof of plant de novo
+    production or an independent absolute-configuration determination.
+  snapshot_sha256: 00b59cff5ef11d83a020bbfb0be006f95a7ae2cf5cfdb92a6cef0256a357aa3c
+- evidence_id: S110-E-O3
+  kind: primary_source
+  reference: DOI:10.3390/ijms19041049
+  locator: Biotin row in main Table 1, complete Methods sections3.1–3.4, supplementary
+    archive and exact biotin rows in Table S7 sheets2/3 inspected.
+  accessed_at: '2026-10-21T15:50:03.564741Z'
+  support: supports
+  summary: Methanol extracts of P. vulgaris cv. Negro jamapa roots/nodules infected
+    by P. phymatum STM815T are profiled by non-targeted negative-ion flow-injection
+    TOF-MS. Main Table1 names biotin C00120; SI TableS7 ion247 at m/z243.08001276017049
+    is annotated Biotin/C10H16N2O3S. The method explicitly allows multiple mass-matched
+    candidates in general. This sample is a symbiotic plant–bacterial nodule and annotation
+    alone neither assigns organismal production nor independently resolves stereochemistry.
+  snapshot_sha256: 02fa34f94282aace2eed2b31a9d7f43d0aecc625c5a4ff2d098e13a87948b179
+- evidence_id: S110-E-O4
+  kind: primary_source
+  reference: DOI:10.1038/msb.2011.65; PMID:21988831
+  locator: Original full-body biotin/biomass passage, surrounding model Methods, abstract
+    and cited-source entry inspected.
+  accessed_at: '2026-10-21T15:50:03.860230Z'
+  support: supports
+  summary: iJO1366 is a genome-scale E. coli metabolic reconstruction. Its biomass
+    biotin coefficient is explicitly taken from a prior published estimate of 250
+    molecules/cell, citing Delli-Bovi et al.2010. This paper supplies model/curated-literature
+    context; this packet does not relabel its biotin claim as a new chemical isolation.
+  snapshot_sha256: bc39f0d8bb02051ca1d73b866213bcd3bf0e11a1ec1826336715b80c8325c252
+- evidence_id: S110-E-O5
+  kind: primary_source
+  reference: DOI:10.1007/s11306-016-1051-4
+  locator: Original abstract and study/model scope inspected; local full-body text
+    searched for the literal biotin string. The full detailed model/SI was not audited.
+  accessed_at: '2026-10-21T15:50:03.520441Z'
+  support: partial
+  summary: Recon2.2 human metabolic reconstruction is model curation, not automatically
+    an independently measured biotin occurrence. The local body search has no literal
+    biotin occurrence; this does not prove the metabolite is absent from its model
+    files or supplementary evidence.
+  snapshot_sha256: 3949adedb703be36728f48a64efa0442d6ab4fdf272db21b27762a4b552c8042
+- evidence_id: S110-E-O6
+  kind: primary_source
+  reference: DOI:10.1038/nbt.2488
+  locator: Original abstract and study/model scope inspected; local full-body text
+    searched for the literal biotin string. The full detailed model/SI was not audited.
+  accessed_at: '2026-10-21T15:50:03.691111Z'
+  support: partial
+  summary: Recon2 human metabolic reconstruction is model curation, not automatically
+    an independently measured biotin occurrence. The local body search has no literal
+    biotin occurrence; this does not prove the metabolite is absent from its model
+    files or supplementary evidence.
+  snapshot_sha256: 98fed73d58577cb73fe2a3f6f07c6f2d40b2f0d074d8426c610c9eaa545e7a24
+- evidence_id: S110-E-O7
+  kind: primary_source
+  reference: DOI:10.3389/fmolb.2018.00096
+  locator: Original abstract and study/model scope inspected; local full-body text
+    searched for the literal biotin string. The full detailed model/SI was not audited.
+  accessed_at: '2026-10-21T15:50:03.603557Z'
+  support: partial
+  summary: WormJam C. elegans consensus metabolic reconstruction is model curation,
+    not automatically an independently measured biotin occurrence. The local body
+    search has no literal biotin occurrence; this does not prove the metabolite is
+    absent from its model files or supplementary evidence.
+  snapshot_sha256: bc4839d4c70d1175e09bb98c91cb55e36bf025e6a343e8dc45f432a27c2bbba5
+- evidence_id: S110-E-O8
+  kind: primary_source
+  reference: DOI:10.1111/j.1600-0404.1999.tb07369.x; PMID:10577274
+  locator: Original abstract read.
+  accessed_at: '2026-10-21T15:35:32.236127Z'
+  support: supports
+  summary: Human CSF and serum samples were measured by radioligand assay after inhibition
+    of biotinidase. The abstract describes recovery and sensitivity. This is positive
+    sample-occurrence evidence; whole-body biosynthesis and disease causality are
+    different claims.
+  snapshot_sha256: 61ef10134436d1de2695a078003419dedd4991d32861640eb7a909edd047e201
+- evidence_id: S110-E-O9
+  kind: primary_source
+  reference: DOI:10.1073/pnas.69.8.2219; PMID:4559599
+  locator: Original abstract read; PMC HTML confirmed abstract and references only.
+  accessed_at: '2026-10-21T15:50:03.846842Z'
+  support: partial
+  summary: The paper reports E. coli bio-gene deletions, complementation/enzyme assays,
+    transcriptional polarity and repression by added biotin. This is genetic/regulatory
+    evidence; exact chemical isolation and detailed mutant assay conditions were not
+    inspected.
+  snapshot_sha256: e270374b335c5219f700a108b331fa3123b02a9cd5d010b736db4801392652a0
+- evidence_id: S110-E-O16
+  kind: primary_source
+  reference: PMID:19425150 / mouse BioModels MODEL1507180067
+  locator: Original abstract read.
+  accessed_at: '2026-10-21T15:35:32.236127Z'
+  support: partial
+  summary: Mouse metabolic reconstruction is model evidence. The full source-to-experiment
+    path for the biotin entry was not audited.
+  snapshot_sha256: 61ef10134436d1de2695a078003419dedd4991d32861640eb7a909edd047e201
+- evidence_id: S110-E-SALIVA
+  kind: primary_source
+  reference: DOI:10.1007/s11306-012-0464-y
+  locator: Original workbook Sheet1 Table S3 row146; decoded closure; original main
+    remains a preview
+  accessed_at: '2026-10-21T15:51:56.671903Z'
+  support: supports
+  summary: The exact Biotin/CHEBI15956 row reports female24/male27 saliva sample groups.
+    The duplicated Sheet2 has stale Morning/Afternoon headers and is not another experiment.
+    Table units remain unstated; no molar unit or causal sex effect is inferred. This
+    closes the earlier unread-XLS gap, while main remains a preview.
+  snapshot_sha256: 41938a626b7bb286d841997f44a9a0195bcbe359fd3e5b869ef52f0147bf4b8e
+- evidence_id: S110-E-BEANCLOSURE
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch011/biotin-occurrence-closure/source-notes.json
+  locator: All4 original XLS workbooks/all6 sheets; exact bean TableS3 row51
+  accessed_at: '2026-10-21T16:31:28.333325Z'
+  support: context_only
+  summary: The original bean supplement at20 days after transplanting explicitly reports
+    biotin relative peak areas at P0/P1/P8. It does not show induction by P deficiency
+    or prove axenic plant biosynthesis. Original XLS access is15:50:48.648687Z; decoded
+    original-table scope is pinned in the closure manifest.
+  snapshot_sha256: 4f848e17bbdd4bc733bc683a523b897dbea9f1acf9b554c5bf6d925c1c38a33d
+- evidence_id: S110-E-MTBLS
+  kind: primary_source
+  reference: https://www.ebi.ac.uk/metabolights/MTBLS87
+  locator: Official positive-mode MAF physicalrow16 with sample/assay/investigation
+    mappings
+  accessed_at: '2026-10-21T16:05:30.977073Z'
+  support: supports
+  summary: MTBLS87 is the distinct2014 blood/fission-yeast study DOI10.1039/c4mb00346b.
+    Exact Biotin/CHEBI15956 row gives m/z245.095,[M+H]+,RT6.2, and nonzero signals
+    in several human blood fractions and all3 yeast samples. Values are normalized
+    peak areas, not concentrations; zeros are not absence. No exact biotin standard
+    trace or named MSIlevel is established.
+  snapshot_sha256: f75e9e4ba80634d80991e649b8c7791a15bc1a1f2073a03bcc0441b3804cc2f4
+- evidence_id: S110-E-MAFIDENTITY
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch011/biotin-occurrence-closure/MTBLS87-identity-addendum.json
+  locator: Exact isomeric InChI and stereo-unspecified SMILES in the MAF row
+  accessed_at: '2026-10-21T16:31:28.333325Z'
+  support: context_only
+  summary: The deposited InChI reproduces the owner’s full Standard key, while the
+    deposited SMILES omits three centres. InChI reconstruction can choose a different
+    fixed-H tautomer; this is not an independent absolute-hand experiment.
+  snapshot_sha256: 46d2677315dfb491cafb58a0ba847c0aaf1317c9bf3bd75f28977784aa9b20e2
+- evidence_id: S110-E-ORIGINS
+  kind: record_content
+  reference: /private/tmp/npm-review-work/110/local-sources.json
+  locator: Seven complete ChEBI origin rows and23 emitted occurrences
+  accessed_at: '2026-10-21T16:31:28.333325Z'
+  support: supports
+  summary: Geigy human origins include separate urine and blood rows with identical
+    taxon/reference. The current deduplication retains urine only. This is a loss
+    of source-reported context, not verification of the unavailable original handbook
+    page.
+  snapshot_sha256: 89b33d62e4e97b0eca532e326e03367b6b42b5ccfde3d49d94cc5a4aefa31719
+- evidence_id: S110-E-OCCGAPS
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next-batch011/bgc-science/biotin/occurrence-exact-metadata.json
+  locator: Exact DOI metadata and bounded unresolved full-body leads
+  accessed_at: '2026-10-21T16:31:28.333325Z'
+  support: unknown
+  summary: Achromobacter1981, soybean2009, Artemia, E. coli pimeloyl-CoA1994 and Phycomyces1996
+    full experimental sources remain unresolved. Original Geigy page was not recovered.
+    Titles or no literal-string hits do not prove that the database triples are wrong.
+  snapshot_sha256: 4e871d236f7cb6d115961bd88359a6fef72fc326d7664d9755883c8bced0aa0f
+  search_scope: 'Bounded retained source and code search: Exact DOI metadata and bounded
+    unresolved full-body leads. Exact queries, access failures and ignored-inclusive
+    curation selectors are retained in the pinned preparation and routing receipts.
+    No new web retrieval or exhaustive external-absence conclusion is asserted.'
+- evidence_id: C110-E-OWNER
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/alkaloids/biotin.yaml
+  locator: Complete chemical_structure, identifier, definition, xrefs, source concepts
+    and graph compound node
+  accessed_at: '2026-10-21T16:31:34.442619Z'
+  support: supports
+  summary: The record is neutral biotin CHEBI15956 with full key YBJHBAHKTGYVGT-ZKWXMUAHSA-N
+    and three assigned centres. Both MIBiG source concepts group by that exact key.
+    The graph compound node uses the same identifier; no alternate ion or congener
+    is introduced.
+  snapshot_sha256: 3cb161be27dbbe01f75a85b0d99d783b6bacaa09167bd4404d30aa5cb0abdaf8
+- evidence_id: C110-E-CHEBI
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/15956/
+  locator: Released three-star entry, definition, formula/charge and complete structure
+  accessed_at: '2026-10-21T15:40:50.790311Z'
+  support: supports
+  summary: Current CHEBI15956 is a released three-star biotin entry. Its neutral structure
+    and definition match the owner after HTML markup removal. The definition describes
+    the parent of biotins; it does not establish a histidine precursor route.
+  snapshot_sha256: 812a8f1e19c022488176ca20a45c4ccb98c5f94a4fcd1b9cfb52f3cb54f242fa
+- evidence_id: C110-E-MOL
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/15956/
+  locator: Complete official MOL graph
+  accessed_at: '2026-10-21T15:40:50.288860Z'
+  support: supports
+  summary: The official neutral graph agrees with owner at full Standard and fixed-H
+    identity and three assigned centres. This is the neutral parent, not a deprotonated
+    biotinate replacement.
+  snapshot_sha256: 0c6e02fedab6b746584dd2b28840203429ca77aa8209a8b3eba2d571b7382cd6
+- evidence_id: C110-E-PC
+  kind: authority
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/171548/property/InChI,InChIKey,CanonicalSMILES,IsomericSMILES/JSON
+  locator: Literal CID171548 complete property row
+  accessed_at: '2026-10-21T15:40:50.327666Z'
+  support: supports
+  summary: The literal PubChem xref returns the exact stereospecific neutral graph.
+    Full Standard and fixed-H identity agree, including charge and formula C10H16N2O3S.
+  snapshot_sha256: d519cf489bf76d23430c78d804efe6409ffe3c01f2f9c6d7c883eb9392bdcd87
+- evidence_id: C110-E-NPA
+  kind: authority
+  reference: https://www.npatlas.org/api/v1/compound/NPA013155
+  locator: Literal NPA013155 complete compound row and current graph
+  accessed_at: '2026-10-21T15:45:00.951568Z'
+  support: supports
+  summary: The literal NPAtlas entry is Biotin with the exact same Standard/fixed-H
+    graph. Its upstream bibliographic metadata is not used as independent experimental
+    proof or copied into the owner; the chemical xref itself resolves correctly.
+  snapshot_sha256: 8aa565cbd45e12441aefa1562aab69b1f7392fe6b0b0a896c877fb8a41d9c2bd
+- evidence_id: C110-E-CALC
+  kind: record_content
+  reference: /private/tmp/npm-review-work/110/exact-chemical-comparison.json
+  locator: 'Seven independently parsed graphs: owner, two source rows and four current
+    representations'
+  accessed_at: '2026-10-21T16:31:34.442619Z'
+  support: supports
+  summary: Every graph yields neutral C10H16N2O3S with full key YBJHBAHKTGYVGT-ZKWXMUAHSA-N
+    and identical fixed-H InChI. Each has three assigned tetrahedral centres; atom
+    indices depend on graph traversal and are not natural-product position numbers.
+  snapshot_sha256: 70bc183f1895df2c61713d4c861c708acef1590809ee4ac3c2f13db7a12c4355
+- evidence_id: C110-E-MAF
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch011/biotin-occurrence-closure/MTBLS87-identity-addendum.json
+  locator: Exact deposited identification strings; separate occurrence identity limit
+  accessed_at: '2026-10-21T16:31:34.442619Z'
+  support: context_only
+  summary: The source MAF’s isomeric InChI agrees at Standard identity, while its
+    SMILES omits stereo. Reconstructing a Standard InChI can select a different lactim
+    fixed-H tautomer, so that reconstruction is not used to claim that all occurrence
+    representations are fixed-H identical. It is identification metadata, not an absolute-stereochemistry
+    experiment.
+  snapshot_sha256: 46d2677315dfb491cafb58a0ba847c0aaf1317c9bf3bd75f28977784aa9b20e2
+assessments:
+- assessment_id: R110-HISTORY
+  area: provenance
+  topic: Native status and retained audit history
+  outcome: supported
+  summary: Five seed events and the 2026-09-11 RECORD_CURATED event remain intact.
+    The curator event, identity and llm_assisted flag describe the binding graph and
+    historical PDBe mapping. Current native-versus-deposited sequence, assembly and
+    original-study checks independently assess that assertion; an audit-trail statement
+    is not itself proof of experimental support. SEEDED status is unchanged.
+  target_ids:
+  - CHEBI:15956
+  evidence_ids:
+  - R110-OWNER
+- assessment_id: R110-OPTIONAL
+  area: completeness
+  topic: Present optional assertions and enrichment limits
+  outcome: supported
+  summary: The owner contains an inline two-protein binding graph, 25 imported bioactivity
+    observations, two derived bioactivity classes and discussions. The scientific
+    sections assess every graph edge and each represented assay context, distinguish
+    deposited chains from native precursors, preserve negative/inconclusive calls
+    and original bounds, and inspect every occurrence source. No biosynthetic pathway,
+    clinical status or engineering application is inferred from these optional fields.
+  target_ids:
+  - CHEBI:15956
+  evidence_ids:
+  - R110-OWNER
+  - R110-LOCAL
+- assessment_id: R110-FILING
+  area: representation
+  topic: Computed filing and exact-key classification provenance
+  outcome: supported
+  summary: The current owner reproduces its exact-key NPClassifier result, including
+    npclassifier.gnps2.org@2026-09-07, Alkaloids filing and all returned superclass/class
+    labels. It preserves the false glycoside prediction. These predictions do not
+    independently prove precursor use, natural origin or absolute stereochemistry.
+    Any future identity correction requires classification against the corrected effective
+    key.
+  target_ids:
+  - CHEBI:15956
+  evidence_ids:
+  - R110-OWNER
+  - R110-LOCAL
+- assessment_id: R110-ORGANISM-IDS
+  area: provenance
+  topic: Literal organism-identifier routing
+  outcome: supported
+  summary: All literal organism entities have matching scientific names; available
+    P685 values agree. Primary occurrence and producer support are assessed independently.
+  target_ids:
+  - CHEBI:15956
+  evidence_ids:
+  - R110-Q10563106
+  - R110-Q11006
+  - R110-Q1135229
+  - R110-Q146380
+  - R110-Q15632547
+  - R110-Q15978631
+  - R110-Q18324723
+  - R110-Q25419
+  - R110-Q42339
+  - R110-Q683881
+  - R110-Q91703
+- assessment_id: R110-IMODULON-SCOPE
+  area: completeness
+  topic: Producer and experimental-host transcriptomic applicability
+  outcome: supported
+  summary: Occurrence/bacterial pathway context only, separate from the Aspergillus
+    producer-locus claims. The metadata lists BW25113, DGF-298, GMOS, MG1655 and W3110.
+    The exact bioB search returns e_coli/precise1k/b0775, annotated biotin synthase;
+    it returns no component. This bacterial gene hit does not establish the fungal
+    BioDA locus, any fungal growth rescue, protein construct equivalence, exact small-molecule
+    isolation, or any of the binding/antiviral assay claims. Listed E. coli strains
+    are not silently equated to the auxotroph-complementation experimental strains.
+    The complete inspected catalogue has no exact Aspergillus nidulans native-producer
+    dataset. Other occurrence taxa are not assigned to expression datasets merely
+    through family or genus similarity.
+  target_ids:
+  - CHEBI:15956
+  evidence_ids:
+  - R110-OWNER
+  - R110-IMODULON
+  - R110-IMODULON-CONTEXT
+- assessment_id: S110-A-LOCUS
+  area: evidence
+  topic: Both source claims and exact submitted genotypes
+  outcome: concern
+  summary: The species-level biological origin is supported, but FJ430072 must be
+    explicitly retained as mutant provenance rather than an intact functional production
+    locus. Preserve the distinct FJ430073 assertion and empty bounds; later native
+    deletion/rescue and E. coli complementation are not interchangeable endpoints.
+  target_ids:
+  - CHEBI:15956
+  evidence_ids:
+  - S110-E-OWNER
+  - S110-E-MIBIG1238
+  - S110-E-MIBIG1239
+  - S110-E-GENBANK
+  - S110-E-FGB
+  - S110-E-JBC
+  - S110-E-ROUTES
+  dimensions:
+  - name: submitted_mutant
+    value: BGC0001238 / FJ430072.1 / Glasgow G051 / biA1
+    definition: Untreated auxotrophic genotype with truncated biA1; repaired and complemented
+      derivatives are distinct.
+    evidence_ids:
+    - S110-E-GENBANK
+    - S110-E-FGB
+  - name: intact_submission
+    value: BGC0001239 / FJ430073.1 / literal FGCS 4 / biDA
+    definition: Separate intact deposit; do not silently spell-correct the submitted
+      strain or equate it with later experimental backgrounds.
+    evidence_ids:
+    - S110-E-GENBANK
+  - name: formal_evidence_tier
+    value: SOURCE_ASSERTION and CLUSTER_UNSTATED from empty methods
+    definition: Source-faithful weak grades do not remove a positive mutant-genotype
+      applicability conflict.
+    evidence_ids:
+    - S110-E-OWNER
+    - S110-E-MIBIG1238
+    - S110-E-MIBIG1239
+    - S110-E-ROUTES
+- assessment_id: S110-A-OCC1
+  area: evidence
+  topic: 'Occurrences1 and3: original bacterial/yeast experiments'
+  outcome: supported
+  summary: Index1 is supplied-precursor bioconversion in resting Bacillus/Lysinibacillus
+    cells. Index3 is cellular Lipomyces biotin measured microbiologically, with unamended
+    culture and radiolabel-uptake experiments separated. These support reported occurrence
+    within their analytical scope, not universal biosynthesis or fresh absolute stereochemistry.
+  target_ids:
+  - CHEBI:15956
+  evidence_ids:
+  - S110-E-O0
+  - S110-E-O1
+  - S110-E-OWNER
+- assessment_id: S110-A-OCC2
+  area: evidence
+  topic: 'Occurrences5 and6: plant-associated samples'
+  outcome: supported
+  summary: The2018 infected nodule/root extract has a biotin mass annotation;2014
+    root exudate has an exact table row and20DAT relative peak areas. Neither source
+    identifies a plant-only producer or proves axenic biosynthesis.
+  target_ids:
+  - CHEBI:15956
+  evidence_ids:
+  - S110-E-O2
+  - S110-E-O3
+  - S110-E-BEANCLOSURE
+- assessment_id: S110-A-OCC3
+  area: evidence
+  topic: 'Occurrences14,17,19,20,21: human sample observations'
+  outcome: supported
+  summary: Saliva DOI and ChEBI bibliography refer to the same study. CSF DOI/PMID
+    are likewise one radioligand study. MTBLS87 is a separate blood study with an
+    exact full-key annotation and sample signals. Preserve source assay/identity limits
+    and do not assert human biosynthesis.
+  target_ids:
+  - CHEBI:15956
+  evidence_ids:
+  - S110-E-SALIVA
+  - S110-E-O8
+  - S110-E-MTBLS
+  - S110-E-MAFIDENTITY
+- assessment_id: S110-A-MODELS
+  area: evidence
+  topic: 'Occurrences0,9,11,12,15,16: model-backed source assertions'
+  outcome: unknown
+  summary: Mouse BioModels, iJO1366, WormJam and Recon2/2.2 are retained database
+    assertions. iJO1366 explicitly cites an earlier biotin biomass estimate; DOI/PMID
+    aliases are not independent measurements. Model/source-to-experiment chains remain
+    unaudited. Neither study type nor a literal search zero alone warrants exclusion.
+  target_ids:
+  - CHEBI:15956
+  evidence_ids:
+  - S110-E-O4
+  - S110-E-O5
+  - S110-E-O6
+  - S110-E-O7
+  - S110-E-O16
+  - S110-E-ROUTES
+- assessment_id: S110-A-OCCGAPS
+  area: completeness
+  topic: 'Occurrences2,4,7,8,10,13,18,22: bounded remaining primary scope'
+  outcome: unknown
+  summary: Five exact DOI bodies and Geigy page remain unresolved. E. coli1972 is
+    inspected at original-abstract genetic scope only. A. nidulans FGB abstract supports
+    pathway/complementation context but the detailed sample experiment remains unavailable.
+    Preserve positive source assertions without upgrading them to independently verified
+    isolation.
+  target_ids:
+  - CHEBI:15956
+  evidence_ids:
+  - S110-E-OCCGAPS
+  - S110-E-O9
+  - S110-E-ORIGINS
+  - S110-E-FGB
+- assessment_id: S110-A-ASSAYFIDELITY
+  area: provenance
+  topic: All25 written observations and103-row source inventory
+  outcome: supported
+  summary: Current summary correspondence, exact CID/full key, assay identifiers,
+    units, endpoint names and deposited calls reproduce. The78 omitted records are
+    explicitly disclosed. This does not imply validation of assay interpretation or
+    independent chains/samples.
+  target_ids:
+  - CHEBI:15956
+  evidence_ids:
+  - S110-E-OWNER
+  - S110-E-ASSAYS
+- assessment_id: S110-A-BINDING
+  area: evidence
+  topic: 'Bioactivities11–24: affinity observations'
+  outcome: concern
+  summary: These are14 Kd records for named avidin/streptavidin constructs, not enzyme
+    inhibition. Retain measurements and exact chain identifiers; the original numeric
+    conditions remain unverified. Mutant/circular-permutation values must not be generalized
+    to unmodified native proteins.
+  target_ids:
+  - CHEBI:15956
+  evidence_ids:
+  - S110-E-ASSAYS
+  - S110-E-BINDING
+  - S110-E-BINDPRIMARY
+  - S110-E-P22629
+  - S110-E-P02701
+  - S110-E-CLASSIFIER
+- assessment_id: S110-A-IDE
+  area: evidence
+  topic: 'Bioactivities0–1: apparent IDE activation and artifact control'
+  outcome: supported
+  summary: Both active source calls are accurately recorded. The same SID is positive
+    in the end-addition artifact assay; do not infer selective catalytic activation
+    or a specific interference mechanism. The actual artifact readout remains useful.
+  target_ids:
+  - CHEBI:15956
+  evidence_ids:
+  - S110-E-AID588681
+  - S110-E-ROW588681
+  - S110-E-AID588442
+  - S110-E-ROW588442
+  - S110-E-ASSAYQA
+- assessment_id: S110-A-COUNTERS
+  area: quantity
+  topic: 'Bioactivities2–3: bounded negative counterscreens'
+  outcome: concern
+  summary: Deposited Inactive calls remain valid, scoped to LDH-release and GFP/optical
+    readouts. Their IC50 values are >89.251 and >67.588 µM, not equalities. One LDH
+    replicate reaches51.3%; this does not change the deposited call. These are not
+    universal nontoxicity or negative ABL catalytic evidence.
+  target_ids:
+  - CHEBI:15956
+  evidence_ids:
+  - S110-E-AID588440
+  - S110-E-ROW588440
+  - S110-E-AID602182
+  - S110-E-ROW602182
+  - S110-E-ASSAYQA
+- assessment_id: S110-A-CYP
+  area: evidence
+  topic: 'Bioactivities4–9: CYP assay calls and fitted endpoint limits'
+  outcome: supported
+  summary: CYP2C19 remains Inactive despite a poor-fit partial apparent-activation
+    replicate; CYP2D6/CYP3A7 remain NOT_DETERMINED from Inconclusive single-point
+    responses. OTHER/Potency preserves the source endpoint. Target/no-target duplicates
+    are not independent experiments; CYP3A7 protocol is enzyme-based despite its title.
+  target_ids:
+  - CHEBI:15956
+  evidence_ids:
+  - S110-E-AID1671197
+  - S110-E-ROW1671197
+  - S110-E-AID1671196
+  - S110-E-ROW1671196
+  - S110-E-AID1963596
+  - S110-E-ROW1963596
+- assessment_id: S110-A-NS1
+  area: evidence
+  topic: 'Bioactivity10: NS1A biochemical hit versus antiviral claim'
+  outcome: concern
+  summary: Active/Verified is the source call for acellular NS1A–dsRNA AlphaScreen
+    inhibition, with IC50<0.2 µM. This experiment has no infection/replication endpoint
+    and does not establish direct NS1 binding. ANTIVIRAL and the missing comparator
+    are separate curation issues.
+  target_ids:
+  - CHEBI:15956
+  evidence_ids:
+  - S110-E-AID504329
+  - S110-E-ROW504329
+  - S110-E-CLASSIFIER
+  - S110-E-ASSAYQA
+- assessment_id: S110-A-GRAPH
+  area: graph
+  topic: All3 graph nodes and2 binds edges
+  outcome: supported
+  summary: CHEBI15956 and the reviewed native protein examples resolve. Original structural
+    complex evidence supports both binds predicates and homotetrameric description.
+    Deposited polymers/model coverage/current native references remain distinct;1AVD
+    differences are not automatically engineered mutations. Notes correctly attribute40fM/1fM
+    to database affinity rows, whose original numerical conditions remain unverified.
+  target_ids:
+  - CHEBI:15956
+  evidence_ids:
+  - S110-E-OWNER
+  - S110-E-P22629
+  - S110-E-P02701
+  - S110-E-1STP
+  - S110-E-1AVD
+  - S110-E-PROTEINCALC
+  - S110-E-BINDPRIMARY
+- assessment_id: C110-A-IDENTITY
+  area: identity
+  topic: Exact compound, ion state and stereochemical resolution
+  outcome: supported
+  summary: Both deposited source graphs and all literal current chemical authorities
+    match the same neutral stereospecific biotin, including fixed-H identity for actual
+    SMILES/MOL representations. No structural conflation is detected in the shared-structure
+    grouping.
+  target_ids:
+  - CHEBI:15956
+  evidence_ids:
+  - C110-E-OWNER
+  - C110-E-CHEBI
+  - C110-E-MOL
+  - C110-E-PC
+  - C110-E-NPA
+  - C110-E-CALC
+  dimensions:
+  - name: representation
+    value: Neutral parent; three assigned tetrahedral centres
+    definition: Full Standard and actual fixed-H graph comparisons, not key-prefix
+      or name-only agreement.
+    evidence_ids:
+    - C110-E-CALC
+    - C110-E-CHEBI
+    - C110-E-MOL
+- assessment_id: C110-A-GROUND
+  area: grounding
+  topic: Three-star identifier and literal xrefs
+  outcome: supported
+  summary: CHEBI15956 is an eligible exact three-star identifier. Both NPAtlas and
+    PubChem xrefs return the exact full graph. Grouping two same-structure source
+    assertions does not equate their distinct mutant/intact genotype provenance, which
+    is addressed in science.
+  target_ids:
+  - CHEBI:15956
+  evidence_ids:
+  - C110-E-OWNER
+  - C110-E-CHEBI
+  - C110-E-PC
+  - C110-E-NPA
+  - C110-E-CALC
+- assessment_id: C110-A-DEFINITION
+  area: representation
+  topic: Definition, source graph and computed class boundary
+  outcome: supported
+  summary: The imported chemical definition matches current ChEBI. NPClassifier labels
+    remain computational categories and are not experimental precursor assignments.
+    No added biosynthetic route is inferred from Histidine alkaloids or the ALKALOIDS
+    filing.
+  target_ids:
+  - CHEBI:15956
+  evidence_ids:
+  - C110-E-OWNER
+  - C110-E-CHEBI
+- assessment_id: C110-A-OCCIDENTITY
+  area: evidence
+  topic: Occurrence annotations versus parent structure
+  outcome: supported
+  summary: MTBLS87’s exact isomeric identifier matches biotin; its incomplete SMILES
+    and InChI-reconstructed tautomer are separately bounded. The chemical owner need
+    not be changed to an unspecified or reconstructed occurrence representation.
+  target_ids:
+  - CHEBI:15956
+  evidence_ids:
+  - C110-E-MAF
+  - C110-E-CALC
+findings:
+- finding_id: S110-F-GENOTYPE
+  issue_key: mibig-bgc0001238-uncorrected-bia1-auxotroph-provenance
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The exact FJ430072 auxotrophic genotype lacks a functional-locus qualifier
+  description: The weak grades are source-faithful but the unqualified producer/locus
+    association points to a deposited biotin auxotroph with truncated biA1. This is
+    positive genotype evidence, not absence inferred from an inaccessible paper. It
+    does not refute the species or the separate intact FJ430073 source.
+  target_ids:
+  - CHEBI:15956
+  field_paths:
+  - producer_organisms[0]
+  - biosynthetic_gene_clusters[0]
+  evidence_ids:
+  - S110-E-OWNER
+  - S110-E-GENBANK
+  - S110-E-FGB
+  - S110-E-JBC
+  - S110-E-ROUTES
+  - S110-E-SEARCH
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Original exact rows to pin
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Implement typed source-specific genotype qualification/withholding
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Citation composition boundary
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/producer_strains.py
+    role: Strain-only route is insufficient
+- finding_id: S110-F-BINDCLASS
+  issue_key: pubchem-binding-affinity-title-misclassified-enzyme-inhibition
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Binding Kd observations acquire an unsupported enzyme-inhibitor class
+  description: Fourteen written avidin/streptavidin Kd rows are labelled ENZYME_INHIBITOR
+    solely because the generic assay title contains binding. Their valid binding measurements
+    do not show inhibition of catalysis.
+  target_ids:
+  - CHEBI:15956
+  field_paths:
+  - bioactivities[11].activity_class
+  - bioactivities[12].activity_class
+  - bioactivities[13].activity_class
+  - bioactivities[14].activity_class
+  - bioactivities[15].activity_class
+  - bioactivities[16].activity_class
+  - bioactivities[17].activity_class
+  - bioactivities[18].activity_class
+  - bioactivities[19].activity_class
+  - bioactivities[20].activity_class
+  - bioactivities[21].activity_class
+  - bioactivities[22].activity_class
+  - bioactivities[23].activity_class
+  - bioactivities[24].activity_class
+  - bioactivity_summary
+  evidence_ids:
+  - S110-E-OWNER
+  - S110-E-ASSAYS
+  - S110-E-BINDING
+  - S110-E-CLASSIFIER
+  - S110-E-P22629
+  - S110-E-P02701
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Activity classifier and derived summary
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/pubchem_bioassay.tsv
+    role: Unchanged source measurements and target identities
+  - repository: CultureBotAI/NaturalProductMech
+    path: tests/test_seed_skeleton.py
+    role: Classifier regression acceptance
+- finding_id: S110-F-NS1CLASS
+  issue_key: pubchem-aid504329-biochemical-hit-not-antiviral-endpoint
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: An acellular NS1A screen is labelled antiviral efficacy
+  description: The inspected official assay measures NS1A–dsRNA AlphaScreen signal
+    inhibition without infection, replication or viral-yield endpoints. Its positive
+    call is valid at assay scope; the title-derived ANTIVIRAL claim is unsupported.
+  target_ids:
+  - CHEBI:15956
+  field_paths:
+  - bioactivities[10].activity_class
+  - bioactivity_summary
+  evidence_ids:
+  - S110-E-OWNER
+  - S110-E-AID504329
+  - S110-E-ROW504329
+  - S110-E-CLASSIFIER
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Assay-aware class rule and summary
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/pubchem_bioassay.tsv
+    role: Full exact source row
+  - repository: CultureBotAI/NaturalProductMech
+    path: tests/test_seed_skeleton.py
+    role: Biochemical versus antiviral classification regression
+- finding_id: S110-F-QUALIFIERS
+  issue_key: pubchem-summary-extraction-drops-censored-measurement-qualifiers
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Three censored assay values lose their inequality signs
+  description: Exact SID-level results report >89.251µM, >67.588µM and <0.2µM. The
+    summary extractor/seeder emits plain numbers without qualifiers, making bounded
+    values look like equalities.
+  target_ids:
+  - CHEBI:15956
+  field_paths:
+  - bioactivities[2].qualifier
+  - bioactivities[3].qualifier
+  - bioactivities[10].qualifier
+  evidence_ids:
+  - S110-E-ROW588440
+  - S110-E-ROW602182
+  - S110-E-ROW504329
+  - S110-E-ASSAYQA
+  - S110-E-EXTRACTOR
+  - S110-E-SCHEMA
+  - S110-E-CLASSIFIER
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_pubchem_bioassay.py
+    role: Detailed SID/result enrichment and refresh
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/pubchem_bioassay.tsv
+    role: Maintained extraction with comparator provenance
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Map existing qualifier enum
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/schema/naturalproductmech.yaml
+    role: Existing qualifier semantics
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/bioassay_exclusions.py
+    role: Existing full-row guards must be readjudicated after inventory shape change
+- finding_id: S110-F-GEIGY
+  issue_key: occurrence-deduplication-drops-distinct-sample-context
+  category: representation
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Geigy source contexts collapse from blood and urine to urine only
+  description: Two complete ChEBI source rows share taxon/reference but differ in
+    component_text. The current deduplication drops blood. This confirms a representation
+    loss from the source inventory, not independent primary confirmation of blood
+    biotin from the unavailable handbook.
+  target_ids:
+  - CHEBI:15956
+  field_paths:
+  - occurrences[18].notes
+  evidence_ids:
+  - S110-E-ORIGINS
+  - S110-E-CLASSIFIER
+  - S110-E-OCCGAPS
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Context-preserving occurrence deduplication
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_origins.tsv
+    role: Both original rows retained
+  - repository: CultureBotAI/NaturalProductMech
+    path: tests/test_seed_skeleton.py
+    role: Distinct source-context regression
+actions:
+- action_id: S110-ACT-GENOTYPE
+  finding_ids:
+  - S110-F-GENOTYPE
+  target_ids:
+  - CHEBI:15956
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Original exact rows to pin
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Implement typed source-specific genotype qualification/withholding
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Citation composition boundary
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/producer_strains.py
+    role: Strain-only route is insufficient
+  generator: scripts/seed_from_sources.py
+  description: 'For BGC0001238:1 pin complete raw row SHA256 6a9fa4682354dfb71940bfd03de66c493c6b53170529cddaf13e6a59fda593a1,
+    owner chemical key and exact old context {"entry_version": "3", "genome_accession":
+    "FJ430072.1", "locus_evidence_methods": "", "locus_from": "", "locus_to": "",
+    "primary_reference": "PMID:20713166", "reference_basis": "ENTRY", "standard_inchi_key":
+    "YBJHBAHKTGYVGT-ZKWXMUAHSA-N", "taxon_id": "NCBITaxon:162425"}. Implement/test
+    a typed full-row guarded decision that either retains this source as explicitly
+    nonfunctional mutant-locus provenance with no implied intact production, or withholds
+    its positive producer/locus link while retaining the accession in source_concepts/discussion.
+    The chosen representation must explicitly distinguish untreated Glasgow G051,
+    restored insertion and recombinant complementation. Existing WITHDRAW cannot operate
+    on empty methods and cannot suppress claims; generic reference or strain edits
+    are insufficient. Preserve BGC0001239:1 row SHA256 84ded4dd1f45c92a057c2c3da6668a9f879fe6e359c856af235299b0d81c7650,
+    literal FGCS 4 and the shared chemical/occurrence owner. For the intact source,
+    a full-row-pinned producer strain annotation is possible, but do not transfer
+    later JBC methods across genotypes.'
+  acceptance_checks:
+  - Reject all original-row drift, duplicate selectors and unsupported simultaneous
+    reference/strain/structure corrections.
+  - Require explicit producer versus locus scope; do not silently substitute FJ430073
+    or label the mutant as a positive native producer.
+  - Preserve empty bounds, intact-source assertion, positive occurrence and biological
+    origin. No taxon-wide absence claim.
+  - Ensure later broad reference overrides cannot erase the genotype qualifier or
+    reattach a primary claim to a withheld producer; test this composition before
+    regeneration.
+- action_id: S110-ACT-BINDCLASS
+  finding_ids:
+  - S110-F-BINDCLASS
+  target_ids:
+  - CHEBI:15956
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Activity classifier and derived summary
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/pubchem_bioassay.tsv
+    role: Unchanged source measurements and target identities
+  - repository: CultureBotAI/NaturalProductMech
+    path: tests/test_seed_skeleton.py
+    role: Classifier regression acceptance
+  generator: scripts/seed_from_sources.py
+  description: Correct classify_activity so generic binding/Kd evidence alone cannot
+    yield ENZYME_INHIBITOR. Use the inspected AID977611/version3/title and endpoint
+    scope as a regression case, pin CID171548/full key and the complete raw-row set
+    (29 retained affinity rows,14 written; digests ["09bf740ae7c81c58f03d285b7f4196cbe03cc4bb8463e2655beb68be4c491600",
+    "4be8644724542efd1d613858e2aafc19a573f9176dd600295d34663662135e14", "4bf1fc44d9641094ff97ceab73313cccede5dea3c1482ce331869a16501e3258",
+    "6729d2ab6d4a9b6d275021eab71bd7e4d9c53aa81ee9d1dc94ca7afc75b0a4ba", "b193efc37f508e674b27d2c8d8cae7d7c78563b3667bef9392e952b3783fc8b1",
+    "5627ba1e9d201f6aa3589f7155656606bbea732fd66bd57364a3390deca5e326", "3f98aadc95d986a4d3320e12da8594c6c4dcce3b855db5ad48e7e5fc9e363c73",
+    "801b024e80832de3febd274858d12ec972034e843bf9d5b897f2a26c5ae05bab", "a24ef726d131e9fe405b1f1052984734026fbae6ab70d542c5ac0d94de7cc975",
+    "0223fc1cf98d1372a0adc805a54b8dbd2e1574e5fa1071c4d2602b0e1c46ea13", "37c888e21dfb122bc067fa202ae590824bbf7acb18795281855d703f49d80e71",
+    "45ce93999cc229f1ab59b07f2105c1257ce1745b6c78028bb0a4ed1d0f658ff9", "3b2cce9748d0e2e8e314856187f2828e8444c34751e0bf263f4fb0b32b311837",
+    "b546245020ebe17905ae20fa5328976260c6747d292a4f95415af92970d849a9", "642a9630aafd28d6a70a75c39e8aa5d47c36e239fb560805f5ff540ac2b74f5b",
+    "e8baa782628cdf819cc47c814b27566a9f190ec02e2cfe3d9af8dd38d1cf6c64", "9b4e740b7ef69a795ec9daa6ad5dbff4ca36bedee35c0c397d2c558a00ad3511",
+    "f06694844da856a01ebb17439983fdfc045fa572d2a933488844df7ee229ea20", "79b2f8b376a08404e5267bf0885ae1dad8b2dd180516219e29fb04d3cf84b341",
+    "a3e0234ab2e28777ffd69c6c38ff78592e39b7410def4ab994b3a191a02e1519", "cc1fcddddf08599ef7143965d65ee1a0154896885076524eda4614c54339dd00",
+    "15a35b1cd292086c0b03a5df8cf50fe3a9beb0a79011ee115ad462d52da74288", "2a455b7ced942e9bcad948c16ae678c0773857d6af5f9251d38341a137be6277",
+    "4d8c1f21f5e140da0c7ba4cdeff9811c17cdb978a457c4697cff53296410a0ab", "ad7b4d337b71637827e62b0704847a6242c67f409af42c58fcfc29c0bead07ec",
+    "5a79a327e873e89184195ba829b771e36aab44db3c3ed469a1bfd39c01912aae", "2d6a88578325bac33ca33632f95ed6e90a2edf7bdde9e6798b145dd442bdc0f6",
+    "e2930cc8bf66e4f01bbc78fcd43c41dc03218570f75891c5788109c96f519aea", "d8fabff14b83fc0cfcb63bd9d7472232435754df8dba5c49e42874c9e9db7f1f"]).
+    Preserve each call, Kd, units, reference and chain-specific target note; do not
+    exclude valid binding rows. Recompute the summary from corrected written classes.
+    The separate binding graph stays supported.
+  acceptance_checks:
+  - Fail or require readjudication on title/AID/endpoint/source-row drift; never classify
+    an unknown changed assay by an old exception.
+  - Confirm all14 written binding classes disappear while numeric values/chain IDs
+    remain identical.
+  - Keep independently supported true catalytic-inhibition assays classifiable; binding
+    alone must not suffice.
+  - Recompute summary and retain the disclosed78-row cap; no manual generated-owner
+    edits.
+- action_id: S110-ACT-NS1CLASS
+  finding_ids:
+  - S110-F-NS1CLASS
+  target_ids:
+  - CHEBI:15956
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Assay-aware class rule and summary
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/pubchem_bioassay.tsv
+    role: Full exact source row
+  - repository: CultureBotAI/NaturalProductMech
+    path: tests/test_seed_skeleton.py
+    role: Biochemical versus antiviral classification regression
+  generator: scripts/seed_from_sources.py
+  description: Pin exact AID504329, CID171548, SID49674668, title 'Discovery of Small
+    Molecule Probes for H1N1 Influenza NS1A' and raw-row SHA256 e8b9fc0f6d76be8e519eb06a7d4ebd7c986e8970bb532f52d47562c1a88b890a.
+    Add an exact consumed class qualification or revise the classifier with assay-endpoint
+    evidence so this biochemical screen emits no ANTIVIRAL class. Keep Active/Verified
+    source call and the censored IC50 observation. Record the acellular endpoint and
+    unresolved interference/direct-binding limits; do not replace ANTIVIRAL with an
+    equally unsupported enzyme-inhibition class.
+  acceptance_checks:
+  - Exact source drift must reject the qualification; do not generalize from all influenza
+    titles.
+  - Preserve the measured hit and its source reference, remove only unsupported activity
+    interpretation and derived summary entry.
+  - No claim that biotin has no antiviral effects in other experiments; no asserted
+    AlphaScreen interference mechanism.
+- action_id: S110-ACT-QUALIFIERS
+  finding_ids:
+  - S110-F-QUALIFIERS
+  target_ids:
+  - CHEBI:15956
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_pubchem_bioassay.py
+    role: Detailed SID/result enrichment and refresh
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/pubchem_bioassay.tsv
+    role: Maintained extraction with comparator provenance
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Map existing qualifier enum
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/schema/naturalproductmech.yaml
+    role: Existing qualifier semantics
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/bioassay_exclusions.py
+    role: Existing full-row guards must be readjudicated after inventory shape change
+  generator: scripts/seed_from_sources.py
+  description: 'Pin the three full raw-row digests {"504329": "e8b9fc0f6d76be8e519eb06a7d4ebd7c986e8970bb532f52d47562c1a88b890a",
+    "588440": "47f3a065c4532d1d571870b41fee5187fa27e0d6bf14e342e2b9036c3a975955",
+    "602182": "2df220f473392799ed0498a45c761550364723a3d5f9eb727fa1412ba5dc334f"},
+    exact CID171548/SID49674668, endpoint IC50, source values/units and detail-response
+    hashes. Implement a reviewed detailed-result refresh/enrichment (ordinary done-CID
+    skip is insufficient), preserving raw source comparator and provenance. Map >
+    to GREATER_THAN for indices2/3 and < to LESS_THAN for index10 through the already
+    existing qualifier field. Keep values, units and deposited calls. If adding columns
+    changes raw-row digests, explicitly audit existing exclusion/other consumers instead
+    of blindly refreshing guards.'
+  acceptance_checks:
+  - Verify exact AID/SID/CID/full-key/endpoint/unit joins and reject ambiguous or
+    changed detailed rows.
+  - Output the three enum qualifiers while numeric values/calls remain identical;
+    equality and missing-source qualifiers stay distinct.
+  - Do not infer comparators from negative calls or assay maximum concentrations.
+  - Test inventory refresh, stale-row rejection and full-row overlay migration before
+    separately authorized extraction/seeding.
+- action_id: S110-ACT-GEIGY
+  finding_ids:
+  - S110-F-GEIGY
+  target_ids:
+  - CHEBI:15956
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Context-preserving occurrence deduplication
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_origins.tsv
+    role: Both original rows retained
+  - repository: CultureBotAI/NaturalProductMech
+    path: tests/test_seed_skeleton.py
+    role: Distinct source-context regression
+  generator: scripts/seed_from_sources.py
+  description: 'Pin both complete origin rows and literal reference/taxon with digests
+    {"blood": "f3f2ec95b4a1784d314188f6ccdcc11699276d42c11f2f884117797d4d21dd2b",
+    "urine": "60b4cc587f5a1bfd1aefd6053ead2ab562da24f1e2bac8cf12366e65d1ae0043"}.
+    Change deduplication to retain or deterministically merge distinct sample contexts
+    and their provenance before capping. Keep both as ChEBI source assertions; do
+    not add original concentrations or a PRIMARY_EXPERIMENT label. Preserve DOI/PMID
+    alias and publication-independence boundaries.'
+  acceptance_checks:
+  - Urine and blood source-reported contexts both survive regeneration without claiming
+    two independent studies.
+  - Exact duplicate rows still deduplicate deterministically; genuinely different
+    contexts cannot be lost by input ordering.
+  - No primary handbook access is falsely certified, and no positive occurrence elsewhere
+    is removed.
+limitations:
+- This review evaluates present assertions and bounded source gaps; it does not claim
+  exhaustive discovery of every later publication or require all optional mechanisms
+  for coverage.
+- Full cited FGB main, several exact occurrence bodies, Geigy page and original binding-affinity
+  numeric tables remain unavailable. Accessible abstracts are explicitly labelled,
+  not described as complete body reads.
+- All25 written assays are assessed; the78 omitted inventory observations were checked
+  for source correspondence and cap accounting, not each independently mechanistically
+  re-reviewed.
+- Model occurrence assertions are not automatically wrong; their experiment-tracing
+  gaps remain unknown. Saliva/MTBLS87 closure supersedes earlier parsing limits, not
+  the frozen original files.
+- No unreported final-product fungal quantitation, full native accession translation,
+  tagged construct sequence or direct NS1 binding is inferred.
+- Any proposed new typed correction/qualifier consumer is implementation work still
+  required; no tests or curation changes were executed.
+- Current authority identity agreement is not a new determination of natural absolute
+  configuration. Biological sample specificity and genotype applicability are independently
+  assessed in the science packet.
+- NPAtlas origin bibliography and every ChEBI ontology descendant were not used to
+  assert additional source claims. The current graph/identifier and definition fields
+  were inspected.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35
+  explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently
+  verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+  Skipped tests are not counted as passing tests. Existing ontology caches were used;
+  no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do
+  not establish biological production, stereochemical specificity, evidence adequacy,
+  or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology
+  results. Reuse establishes unchanged repository inputs; it is not a new remote authority
+  query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all
+  tracked files are hashed. Generated Python bytecode and external tool caches are
+  not claimed to have been independently byte-pinned at the prior execution.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+tags:
+- path-order-campaign
+- batch-011
