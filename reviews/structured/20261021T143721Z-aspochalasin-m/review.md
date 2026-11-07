@@ -1,0 +1,1168 @@
+# Aspochalasin M: source-consistent identity with unresolved original absolute evidence
+
+- Review: 20261021T143721Z-aspochalasin-m
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-21T14:24:49.620798Z
+- Finished UTC: 2026-10-21T14:37:21.264543Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The stored structure and literal NPAtlas reference agree with current source graphs, while native ffsA disruption and independent fungal isolation support biological origin. Add the documented CNL-338 strain. The original Spicaria elegans occurrence maps to the current Mariannaea elegans name; the genus difference is not an error. Detailed 2009 M-specific absolute evidence and full 2020 main remain unavailable, so the review stays partial.
+
+## Scope And Provenance
+
+One complete generated owner and any referenced components, assessed claim by claim for exact identity, provenance, origin, producer and occurrence scope, biosynthesis, classification, optional content and audit history.
+
+Selection: Campaign record 85, batch 009, selected in path order from the fresh-main authoritative validated catalogue and the separately validated targets in earlier batch commits (publication tracked separately). At selection, 134 of 3116 current records had campaign coverage and 2982 remained. The population search included ignored files. Exactly one target is assessed here.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 1c2402097718c138b081e00943de8f04de0541cd.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-7fc6e870d5 | data/natural_products/alkaloids/aspochalasin-m.yaml | generated | aspochalasin M |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Closed-schema target validation | passed | True | naturalproductmech:mibig-7fc6e870d5 | The documented target strict validator completed; scientific support is assessed separately. |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-7fc6e870d5 | All 3,116 current record files agree with PATHS.tsv and their pinned filing pathways. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-7fc6e870d5 | All 3,116 current records passed the documented byte-reproduction gate against committed inventories and maintained curation inputs. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-7fc6e870d5 | The exhaustive review queue produced 8,928 diagnostic rows across 12 queues; this deterministic output does not establish scientific review. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-7fc6e870d5 | The configured identifier-label gate passed using the existing ontology caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions, 499 warning-only mismatches and 4,744 pairs skipped because their prefixes have no adapter. |
+| Full repository quality gate on the current main baseline | passed | True | naturalproductmech:mibig-7fc6e870d5 | The full documented just qc recipe passed on the unchanged main baseline during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). All configured lint, governance, documentation, provenance, source-queue, schema, rendering, reproduction, filing-integrity and reporting stages completed successfully. |
+| Complete owner and component scope | passed | True | naturalproductmech:mibig-7fc6e870d5 | Complete owner and all matching local source rows read. The native resolved view confirms the empty component-reference set; all formal input hashes agree. |
+| Native exact-product knockout applicability | passed | True | naturalproductmech:mibig-7fc6e870d5 | The native CNL-338 ffsA disruption and the retained source-product assignment support the current method and two-claim grade at the culture-extract scope. |
+| Complete 2020 main narrative | unavailable | True | naturalproductmech:mibig-7fc6e870d5 | The full main remains unavailable; official SI and original Figure 2 provide direct experimental scope, but unread narrative is not certified. |
+| Original 2009 detailed M isolation and assignment | unavailable | True | naturalproductmech:mibig-7fc6e870d5 | The original abstract is affirmative, but original detailed methods and exact M-specific assignment remain inaccessible. Later NMR comparison cannot replace that exact source verification. |
+| M exact graph and literal authority comparison | passed | True | naturalproductmech:mibig-7fc6e870d5 | The parsed owner, literal NPAtlas and current source representations agree at full and fixed-H identity. |
+| Original M-specific absolute-assignment experiment | unavailable | True | naturalproductmech:mibig-7fc6e870d5 | The original full 2009 main/SI was not recovered; grouped abstract methods and known-compound NMR comparisons do not close this check. |
+
+## Scientific And Domain Assessments
+
+### Native status and retained history
+
+provenance: supported. Targets: naturalproductmech:mibig-7fc6e870d5.
+
+The dated SEEDED_FROM_SOURCES entries and retained SEEDED status describe generated provenance. The review does not promote native status or add a curation event.
+
+### Optional mechanism, activity and application scope
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-7fc6e870d5.
+
+The complete owner has no structured pathway, causal graph, molecular target, activity, clinical status, application, cross-corpus link or discussion claim. Optional enrichment is separate from correcting present assertions; no mechanism or activity is inferred from the compound name or computed class.
+
+### Computed filing and source-asserted classes
+
+representation: supported. Targets: naturalproductmech:mibig-7fc6e870d5.
+
+The owner reproduces its exact-key NPClassifier row, including model version npclassifier.gnps2.org@2026-09-07, Alkaloids filing, every returned superclass/class label and false glycoside flag. These are explicitly computed predictions, not experimental proof of precursor use, ring taxonomy, natural origin or exact stereochemical identity. BGC class claims retain their separate MIBiG provenance and biological assessment.
+
+### Structured transcriptomic context
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-7fc6e870d5.
+
+The asserted native producer and exact biosynthetic locus lack a matching dataset in the inspected catalogue. No coexpression/module-membership claim is present in this owner. Recombinant E. coli, yeast or A. oryzae work is not substituted for native-producer transcriptomic evidence. Database noncoverage is not negative biological evidence; paper-specific expression experiments are assessed separately.
+
+### Literal LOTUS organism-identifier routing
+
+provenance: supported. Targets: naturalproductmech:mibig-7fc6e870d5.
+
+Every literal organism entity in the matching LOTUS rows resolves to its retained species and NCBI taxon identifier. Compound occurrence, experimental host versus substrate and strain-level taxonomy require the separate primary-source assessment.
+
+### Original Spicaria elegans name and current Mariannaea occurrence
+
+provenance: supported. Targets: naturalproductmech:mibig-7fc6e870d5.
+
+The genus difference between the 2009 source and current occurrence label is an established synonym mapping. It is not a false occurrence finding. The primary-source availability and exact compound assignment remain separately assessed.
+
+### Native production, experiment and locus evidence tiers
+
+evidence: supported. Targets: naturalproductmech:mibig-7fc6e870d5.
+
+The cited study directly disrupts ffsA in native CNL-338 and loses the named aspochalasin M extract signal. Independent QM507 culture isolation reinforces biological source context without transferring its phenotype or any enzyme activity to CNL-338. Keep existing method and grades.
+
+### Experimental strain retained beyond species label
+
+evidence: concern. Targets: naturalproductmech:mibig-7fc6e870d5.
+
+CNL-338 is an exact biological qualifier for the graded experiment. Its absence obscures the distinction from other A. flavipes isolates and from cloning/comparator organisms.
+
+### Source-specific occurrence and identity resolution
+
+evidence: unknown. Targets: naturalproductmech:mibig-7fc6e870d5.
+
+The single LOTUS citation positively reports M from Spicaria elegans at abstract level. The Mariannaea taxonomic crosswalk and original detailed isolate context remain separately qualified. Later QM507/CNL-338 isolation supports natural origin; no current source justifies importing the new-congener ECD result as M-specific proof.
+
+### Broad class and optional biological content
+
+representation: supported. Targets: naturalproductmech:mibig-7fc6e870d5.
+
+PKS/NRPS follows the native hybrid synthase experiment and the cytochalasan family. NPClassifier is computed annotation. The sparse owner does not assert an individual reaction, molecular target or cytotoxic mechanism requiring borrowed congener evidence.
+
+### M constitution and literal authority equivalence
+
+identity: supported. Targets: naturalproductmech:mibig-7fc6e870d5.
+
+The neutral C24H35NO4 owner with six assigned centres matches the current MIBiG graph, literal NPAtlas NPA016352 and retained exact chemical authority comparison, including fixed-H identity. No eligible three-star exact ChEBI replacement was found in the retained exact-key lookup; minting remains consistent with that bounded result.
+
+### Exact M absolute configuration
+
+evidence: unknown. Targets: naturalproductmech:mibig-7fc6e870d5.
+
+The graph is source-consistent, but the required original M-specific absolute experiment cannot be assigned from the family abstract. No opposite configuration is established, and no correction is justified by transferring another congener’s Mosher or X-ray result.
+
+## Findings
+
+### S085-F-STRAIN: Retain CNL-338 as the experimental producer strain
+
+minor / open / confirmed; issue key: mibig-bgc0002204-compound5-experimental-strain.
+
+The exact native knockout supporting aspochalasin M was performed in CNL-338; the owner retains only the species label. Add the experimental qualifier while preserving the supported source grades.
+
+## Recommended Actions And Acceptance Checks
+
+### S085-ACT-STRAIN
+
+Add a consumed row to mibig_producer_strains.tsv with source_id=BGC0002204:5, expected_source_row_sha256=9ec711845e654a79af471d4b9abb13fb6b4ac4409fd919bb4a7ee04bf209ae48, strain=CNL-338, reference=PMID:32913332 and dated curator rationale. Preserve original source version3, taxon41900, MT586757.1, empty bounds, Knock-out studies and both grades. Explain native deletion versus E. coli cloning and separate QM507 isolation. Implement tested same-source propagation to BGC.notes because the current strain helper is producer-only. Coordinate with the chemistry packet: if a structural or relative-resolution route is implemented, extend and test composition using the unchanged original raw-row guard, because the current seeder rejects strain qualification after structure correction. Do not merely refresh pins or hand-edit the owner.
+
+- Fail closed on duplicate rows or any original raw-field drift.
+- Regeneration retains CNL-338 and accurate native-versus-cloning context in both producer and BGC, with unchanged supported method and grades.
+- Test the combined chemistry/strain/claim-reference operation if chemistry changes, including exact joins, old-key provenance and no loss of the qualifier.
+- Do not transfer another congener absolute experiment, activity, reaction or source strain.
+- After implementation run the documented exact-target reproduction/strict/corpus/QC gates; this review does not run them.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| R085-OWNER | data/natural_products/alkaloids/aspochalasin-m.yaml; Complete owner, all scientific claims, inline graphs and history entries | supports | Root read the complete aspochalasin M owner following its individual intake. It has 1 occurrences, 1 producer and 1 cluster assertions. Referenced components are empty. Present optional fields: none. These observations use complete parsed content, not a filtered search miss. |
+| R085-LOCAL-SOURCES | /private/tmp/npm-review-work/085/local-sources.json; Every matching MIBiG, LOTUS, ChEBI, CyanoMetDB and NPClassifier row plus resolved owner | context_only | Root read all matching source rows. The resolved owner equals the complete parsed raw YAML. Retained source assertions and deterministic joins are distinguished from the exact primary experiments reviewed separately. |
+| R085-IMODULON-DATASETS | /private/tmp/npm-review-work/010/imodulon-datasets.txt; Full 28-row dataset catalogue; original retrieval in 010/imodulon-context-receipts.json | context_only | The complete same-session catalogue retrieved at 07:21:15 UTC has no Aspergillus, Mariannaea, Actinomadura or Stigmatella dataset. The catalogue is reused with its original timestamp; no fresh retrieval is claimed. Species matching alone would not establish an exact strain, gene, locus or product experiment. |
+| R085-Q10577250 | https://www.wikidata.org/wiki/Special:EntityData/Q10577250.json; Exact organism entity, scientific name and P685 NCBI Taxonomy identifier | context_only | Literal organism entity Q10577250 resolves as Mariannaea elegans, with P685 509241, matching the local LOTUS row. This verifies identifier routing only; it does not support compound occurrence, assign experimental strain or settle historical taxonomic revisions. |
+| R085-TAXON-NCBI | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=509241&amp;retmode=xml; Exact taxon/name record; scientific names and synonym/current-name relations | context_only | Taxon509241 is Mariannaea elegans and its explicit synonyms include Spicaria elegans and Penicillium elegans. This checks name equivalence, not identity of an experimental isolate. |
+| R085-TAXON-FUNGORUM | https://www.speciesfungorum.org/names/NamesRecord.asp?RecordId=241672; Exact taxon/name record; scientific names and synonym/current-name relations | context_only | The exact Spicaria elegans (Corda) Harz name record241672 gives Mariannaea elegans (Corda) Samson as the current name, with Penicillium elegans as basionym. This checks name equivalence, not identity of an experimental isolate. |
+| R085-LOCAL-TAXON | data/raw/corpus_taxa.obo; Complete NCBITaxon509241 stanza | supports | The retained local taxonomy likewise lists Spicaria elegans and Penicillium elegans as exact synonyms of Mariannaea elegans. |
+| S085-E-LOCAL | data/natural_products/alkaloids/aspochalasin-m.yaml; Complete owner, resolved local rows and exact MIBiG compound | supports | The owner asserts aspochalasin M from A. flavipes with native Knock-out studies, BGC_CHARACTERIZED and CLUSTER_DEMONSTRATED, citing PMID32913332. It omits the CNL-338 experimental strain. There are no optional enzyme graphs or direct activity claims. |
+| S085-E-SI2020 | https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41429-020-00368-0/MediaObjects/41429_2020_368_MOESM1_ESM.docx; Complete official SI text, methods, compound data, PCR construction/verification, LC-MS, tables and references | supports | A. flavipes CNL-338 is the native algal-endophyte culture and the recipient of the ffsA disruption. aspochalasin M is Figure 1 compound 6, isolated at 0.5 mg. Both insertion junctions are PCR-verified. Culture-extract LC-MS is compared with isolated standards. E. coli TOP10 only propagates the cloning cassette; individual pathway arrows and comparator protein accessions are not final-product enzyme assays. |
+| S085-E-FIG2020 | https://www.nature.com/articles/s41429-020-00368-0/figures/2; Entire original Figure 2 pixels; panel g, compound 6, m/z402 | supports | The M standard and mutant EIC support loss of the named product after ffsA disruption; C and M coelute in the WT overview and share m/z402, so mass alone does not distinguish them. The compound isolation and NMR comparison are separate supporting observations. |
+| S085-E-MAIN2017 | https://pmc.ncbi.nlm.nih.gov/articles/PMC5304325/; Complete Results/Experimental scientific text previously read; exact known-compound mapping, culture and isolation reread | supports | Native A. flavipes QM507 (ITS KP339510) supplies aspochalasin M as compound 18, isolated at 5.6 mg from rice culture at 28 C for 28 days. M18 is identified by literature NMR comparison. ECD of new compounds 6–13 is not an M18 absolute experiment, and the reported activity set 1–14 does not support activity claims for M18. |
+| S085-E-ORIGINAL | https://chemistry-europe.onlinelibrary.wiley.com/doi/abs/10.1002/ejoc.200801085; Official indexed primary abstract retained in exact web receipt; original main/SI unavailable | supports | The 2009 primary abstract names new aspochalasins M–Q, compounds 2–6, from marine-derived Spicaria elegans. It affirmatively supports the named M isolation, but its family-level X-ray/Mosher sentence does not identify which experiment applies to M. The current Mariannaea label requires its separate taxonomic crosswalk. |
+| S085-E-ACCESS | https://chemistry-europe.onlinelibrary.wiley.com/doi/suppl/10.1002/ejoc.200801085/supinfo/ejoc_200801085_sm_miscellaneous_information.pdf; Bounded original-main/SI retrieval receipt and exact OpenAlex location follow-up | unknown | The exact official SI route returned403 and the inspected metadata supplied no public full text. These attempts leave original detailed culture and exact M assignment unresolved; they are not a global absence claim. |
+| S085-E-CONSUMER | src/naturalproductmech/curate/producer_strains.py; Complete current strain loader/emitter and seeder qualification call | supports | One exact source row and its full digest guard strain context. The current helper emits producer-only qualification, and the seeder rejects structure_correction_note before it. Any combined chemistry/strain repair requires tested composition and explicit BGC-context propagation. |
+| C085-LOCAL | /private/tmp/npm-record-reviews-20261021/data/natural_products/alkaloids/aspochalasin-m.yaml; Complete owner, exact structure, literal xrefs, source concepts and full history; local source rows and current intake chemistry | supports | Full owner read. Parsed structure gives GBCXTRJHTIEBIA-DNJNAQMOSA-N, C24H35NO4, formal charge 0; native intake InChI and key match. 0 referenced components. |
+| C085-COMPARE | /private/tmp/npm-review-work/shared-next-batch009/chemistry-prep/chemical-comparison.json; aspochalasin M exact complete graph comparison | supports | The inspected source graph matches the owner key and raw MIBiG row. Current original authority graphs were parsed separately, retaining fixed-H/tautomer distinctions, invalid default representations, and assigned versus undefined centres. Detailed exact comparisons are retained in the selected row. |
+| C085-MIBIG | https://mibig.secondarymetabolites.org/repository/BGC0002204.3/annotations.json; {'mibig_accession': 'BGC0002204', 'compound_index': '5', 'entry_version': '3'} complete exact compound row | supports | Current source names aspochalasin M; its graph and fixed-H identity match the raw owner=True. This is source agreement, not independent experimental proof. |
+| C085-AUTH0 | https://www.npatlas.org/api/v1/compound/NPA016352; Exact requested/returned namespace and complete source record; original MOL/SDF where retained | supports | npatlas NPA016352; returned name NPA016352; declared key GBCXTRJHTIEBIA-DNJNAQMOSA-N; parsed original graph key GBCXTRJHTIEBIA-DNJNAQMOSA-N; formula C24H35NO4; charge 0; stars not applicable. Comparison {'comparable': True, 'standard_inchi_key': True, 'fixed_h_inchi': True, 'formula': True, 'formal_charge': True, 'stereo_erased_canonical_smiles': True}. |
+| C085-AUTH1 | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/GBCXTRJHTIEBIA-DNJNAQMOSA-N/property/InChIKey,InChI,IsomericSMILES,MolecularFormula,Charge/JSON; Exact requested/returned namespace and complete source record; original MOL/SDF where retained | supports | pubchem.compound 137700389; returned name aspochalasin M; declared key GBCXTRJHTIEBIA-DNJNAQMOSA-N; parsed original graph key GBCXTRJHTIEBIA-DNJNAQMOSA-N; formula C24H35NO4; charge 0; stars not applicable. Comparison {'comparable': True, 'standard_inchi_key': True, 'fixed_h_inchi': True, 'formula': True, 'formal_charge': True, 'stereo_erased_canonical_smiles': True}. |
+| C085-AUTH2 | https://www.ebi.ac.uk/chebi/backend/api/public/compound/222090/; Exact requested/returned namespace and complete source record; original MOL/SDF where retained | supports | chebi CHEBI:222090; returned name Aspochalasin M; declared key GBCXTRJHTIEBIA-DNJNAQMOSA-N; parsed original graph key GBCXTRJHTIEBIA-DNJNAQMOSA-N; formula C24H35NO4; charge 0; stars 2. Comparison {'comparable': True, 'standard_inchi_key': True, 'fixed_h_inchi': True, 'formula': True, 'formal_charge': True, 'stereo_erased_canonical_smiles': True}. |
+| C085-SI2020 | https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41429-020-00368-0/MediaObjects/41429_2020_368_MOESM1_ESM.docx; Complete SI, exact named M characterization and isolation | supports | Named aspochalasin M is purified and compared by NMR/MS. This corroborates the named metabolite and depicted structure, but does not independently establish an absolute hand. |
+| C085-FIG2020 | https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41429-020-00368-0/MediaObjects/41429_2020_368_Fig1_HTML.png; Original Figure 1, exact M (6) | supports | The drawing depicts the M constitution and the retained relative arrangement; no M-specific absolute experiment follows from the drawing. |
+| C085-ABSTRACT2009 | https://chemistry-europe.onlinelibrary.wiley.com/doi/abs/10.1002/ejoc.200801085; Original publisher abstract DOI 10.1002/ejoc.200801085, exact M (2) | partial | The original abstract identifies new M–Q as 2–6, with M (2), and collectively reports X-ray/Mosher methods. That grouped statement does not identify which exact absolute experiment applies to M. |
+| C085-PRIMARY2017 | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&amp;id=5304325&amp;retmode=xml; Known aspochalasin M (18) identification, ECD and configuration scope | supports | The later paper identifies known M (18) by spectral comparison. ECD applies to the new numbered congeners 6–13, not M18; no sibling absolute hand is transferred. |
+| C085-ACCESS | /private/tmp/npm-review-work/shared-next-batch009/absolute-followup/source-notes.json; Exact DOI main/SI access attempts and bounded later primary follow-up | context_only | Original 2009 M full main and SI remain unavailable through retained publisher, repository metadata and official supplement routes. No exhaustive literature-absence assertion is made. |
+
+## Limits And Additional Notes
+
+- This review assesses current assertions and concrete source questions. It does not claim exhaustive discovery of subsequent studies or require every optional mechanism as a condition of review coverage.
+- Full 2020 main text remains unavailable. Direct SI procedures and original figures are inspected; individual enzyme arrows remain proposals.
+- No raw-spectrum reassignment, ECD calculation or native full-protein reconstruction was performed. Chemistry and current authority identity are handled separately.
+- The original 2009 detailed M paper and SI remain unavailable. A genus-name change alone is not a confirmed false occurrence; retain the separate taxonomic crosswalk assessment.
+- Original 2009 M detailed structural/absolute evidence and full 2020 main remain unavailable through the retained bounded routes. The positive source reports are preserved, with no false opposite-hand finding or blanket denial of an absolute determination.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35 explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). Skipped tests are not counted as passing tests. Existing ontology caches were used; no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do not establish biological production, stereochemical specificity, evidence adequacy, or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology results. Reuse establishes unchanged repository inputs; it is not a new remote authority query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all tracked files are hashed. Generated Python bytecode and external tool caches are not claimed to have been independently byte-pinned at the prior execution.
+- No scientific owner, inventory, curation table, native status or history was edited. Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification; target strict validation ran afresh. Scientific failed or unavailable checks are distinct from bundle validation.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T143721Z-aspochalasin-m
+title: 'Aspochalasin M: source-consistent identity with unresolved original absolute
+  evidence'
+started_at: '2026-10-21T14:24:49.620798Z'
+finished_at: '2026-10-21T14:37:21.264543Z'
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: The stored structure and literal NPAtlas reference agree with current source
+  graphs, while native ffsA disruption and independent fungal isolation support biological
+  origin. Add the documented CNL-338 strain. The original Spicaria elegans occurrence
+  maps to the current Mariannaea elegans name; the genus difference is not an error.
+  Detailed 2009 M-specific absolute evidence and full 2020 main remain unavailable,
+  so the review stays partial.
+source:
+  git_revision: 1c2402097718c138b081e00943de8f04de0541cd
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/aspochalasin-m.yaml
+    sha256: 8e69e817d31e720b50945daa33a22774fcf8b3ce9715555f1f7aa1c46114cf6d
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/lotus_exclusions.py
+    sha256: 6352cac7c587eab5a56d907c523cc899d02d197009081624bf8649c675ee30f7
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 85, batch 009, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated targets in earlier
+    batch commits (publication tracked separately). At selection, 134 of 3116 current
+    records had campaign coverage and 2982 remained. The population search included
+    ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-7fc6e870d5
+targets:
+- target_id: naturalproductmech:mibig-7fc6e870d5
+  path: data/natural_products/alkaloids/aspochalasin-m.yaml
+  label: aspochalasin M
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-7fc6e870d5
+  command: just validate-strict data/natural_products/alkaloids/aspochalasin-m.yaml
+    --out /private/tmp/npm-review-work/085/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T14:24:51.239354Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 current record files agree with PATHS.tsv and their pinned filing
+    pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055340+00:00;
+    finished 2026-10-21T09:55:22.727768+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-corpus.log. Reused
+    for batch009 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch009. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-7fc6e870d5
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 current records passed the documented byte-reproduction gate
+    against committed inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055361+00:00;
+    finished 2026-10-21T09:56:44.050706+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-reproduction.log.
+    Reused for batch009 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch009. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-7fc6e870d5
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The exhaustive review queue produced 8,928 diagnostic rows across 12 queues;
+    this deterministic output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just review-queue --tsv /private/tmp/npm-review-queue-batch-004.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.057401+00:00;
+    finished 2026-10-21T09:54:38.468783+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/review-queue.log. Reused
+    for batch009 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch009. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-7fc6e870d5
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'The configured identifier-label gate passed using the existing ontology
+    caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions,
+    499 warning-only mismatches and 4,744 pairs skipped because their prefixes have
+    no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.061733+00:00;
+    finished 2026-10-21T09:56:36.296159+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/validate-products.log. Reused
+    for batch009 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch009. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-7fc6e870d5
+- check_id: shared-qc
+  name: Full repository quality gate on the current main baseline
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed on the unchanged main baseline
+    during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+    All configured lint, governance, documentation, provenance, source-queue, schema,
+    rendering, reproduction, filing-integrity and reporting stages completed successfully.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:30.560925+00:00;
+    finished 2026-10-21T10:04:44.806799+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/qc.log. Reused for batch009
+    only after a fresh fetch/clean branch, equal commit/tree and two reads of all
+    9,182 tracked byte streams and modes (208,070,649 bytes), including a recheck
+    after the fresh authoritative catalogue. This gate was not rerun for batch009.
+    Original execution times, scope, warnings, exceptions and skips are retained.'
+  target_ids:
+  - naturalproductmech:mibig-7fc6e870d5
+- check_id: R085-FULL-OWNER
+  name: Complete owner and component scope
+  status: passed
+  required: true
+  summary: Complete owner and all matching local source rows read. The native resolved
+    view confirms the empty component-reference set; all formal input hashes agree.
+  target_ids:
+  - naturalproductmech:mibig-7fc6e870d5
+  evidence_ids:
+  - R085-OWNER
+  - R085-LOCAL-SOURCES
+- check_id: S085-C-METHOD
+  name: Native exact-product knockout applicability
+  status: passed
+  required: true
+  summary: The native CNL-338 ffsA disruption and the retained source-product assignment
+    support the current method and two-claim grade at the culture-extract scope.
+  target_ids:
+  - naturalproductmech:mibig-7fc6e870d5
+  evidence_ids:
+  - S085-E-LOCAL
+  - S085-E-SI2020
+  - S085-E-FIG2020
+- check_id: S085-C-MAIN
+  name: Complete 2020 main narrative
+  status: unavailable
+  required: true
+  summary: The full main remains unavailable; official SI and original Figure 2 provide
+    direct experimental scope, but unread narrative is not certified.
+  target_ids:
+  - naturalproductmech:mibig-7fc6e870d5
+  evidence_ids:
+  - S085-E-SI2020
+  - S085-E-FIG2020
+- check_id: S085-C-ORIGINAL
+  name: Original 2009 detailed M isolation and assignment
+  status: unavailable
+  required: true
+  summary: The original abstract is affirmative, but original detailed methods and
+    exact M-specific assignment remain inaccessible. Later NMR comparison cannot replace
+    that exact source verification.
+  target_ids:
+  - naturalproductmech:mibig-7fc6e870d5
+  evidence_ids:
+  - S085-E-ORIGINAL
+  - S085-E-ACCESS
+  - S085-E-MAIN2017
+- check_id: C085-GRAPH
+  name: M exact graph and literal authority comparison
+  status: passed
+  required: true
+  summary: The parsed owner, literal NPAtlas and current source representations agree
+    at full and fixed-H identity.
+  target_ids:
+  - naturalproductmech:mibig-7fc6e870d5
+  evidence_ids:
+  - C085-LOCAL
+  - C085-COMPARE
+  - C085-MIBIG
+  - C085-SI2020
+  - C085-FIG2020
+  - C085-ABSTRACT2009
+  - C085-PRIMARY2017
+  - C085-AUTH0
+  - C085-AUTH1
+  - C085-AUTH2
+- check_id: C085-ABSOLUTE
+  name: Original M-specific absolute-assignment experiment
+  status: unavailable
+  required: true
+  summary: The original full 2009 main/SI was not recovered; grouped abstract methods
+    and known-compound NMR comparisons do not close this check.
+  target_ids:
+  - naturalproductmech:mibig-7fc6e870d5
+  evidence_ids:
+  - C085-ABSTRACT2009
+  - C085-PRIMARY2017
+  - C085-ACCESS
+evidence:
+- evidence_id: R085-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/aspochalasin-m.yaml
+  locator: Complete owner, all scientific claims, inline graphs and history entries
+  accessed_at: '2026-10-21T14:28:41.613530Z'
+  support: supports
+  summary: 'Root read the complete aspochalasin M owner following its individual intake.
+    It has 1 occurrences, 1 producer and 1 cluster assertions. Referenced components
+    are empty. Present optional fields: none. These observations use complete parsed
+    content, not a filtered search miss.'
+  snapshot_sha256: 8e69e817d31e720b50945daa33a22774fcf8b3ce9715555f1f7aa1c46114cf6d
+- evidence_id: R085-LOCAL-SOURCES
+  kind: record_content
+  reference: /private/tmp/npm-review-work/085/local-sources.json
+  locator: Every matching MIBiG, LOTUS, ChEBI, CyanoMetDB and NPClassifier row plus
+    resolved owner
+  accessed_at: '2026-10-21T14:28:41.613530Z'
+  support: context_only
+  summary: Root read all matching source rows. The resolved owner equals the complete
+    parsed raw YAML. Retained source assertions and deterministic joins are distinguished
+    from the exact primary experiments reviewed separately.
+  snapshot_sha256: 4caa09d4d0e30c0db50edf487ca05159b0ed6caa62f11941d3a6675145cb5767
+- evidence_id: R085-IMODULON-DATASETS
+  kind: database
+  reference: /private/tmp/npm-review-work/010/imodulon-datasets.txt
+  locator: Full 28-row dataset catalogue; original retrieval in 010/imodulon-context-receipts.json
+  accessed_at: '2026-10-21T07:21:15.957321Z'
+  support: context_only
+  summary: The complete same-session catalogue retrieved at 07:21:15 UTC has no Aspergillus,
+    Mariannaea, Actinomadura or Stigmatella dataset. The catalogue is reused with
+    its original timestamp; no fresh retrieval is claimed. Species matching alone
+    would not establish an exact strain, gene, locus or product experiment.
+  snapshot_sha256: 1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549
+- evidence_id: R085-Q10577250
+  kind: database
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q10577250.json
+  locator: Exact organism entity, scientific name and P685 NCBI Taxonomy identifier
+  accessed_at: '2026-10-21T14:29:21.364914Z'
+  support: context_only
+  summary: Literal organism entity Q10577250 resolves as Mariannaea elegans, with
+    P685 509241, matching the local LOTUS row. This verifies identifier routing only;
+    it does not support compound occurrence, assign experimental strain or settle
+    historical taxonomic revisions.
+  snapshot_sha256: d94158ffb849313104a31f499a0075aa76be5d868eaa2bf761f604d30a5faeb7
+- evidence_id: R085-TAXON-NCBI
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=509241&retmode=xml
+  locator: Exact taxon/name record; scientific names and synonym/current-name relations
+  accessed_at: '2026-10-21T14:35:29.121321Z'
+  support: context_only
+  summary: Taxon509241 is Mariannaea elegans and its explicit synonyms include Spicaria
+    elegans and Penicillium elegans. This checks name equivalence, not identity of
+    an experimental isolate.
+  snapshot_sha256: 06d7f2d8f7be6ca3ea9a8c3e51c125be71f45245895f7b1449b4c454d34e56ef
+- evidence_id: R085-TAXON-FUNGORUM
+  kind: database
+  reference: https://www.speciesfungorum.org/names/NamesRecord.asp?RecordId=241672
+  locator: Exact taxon/name record; scientific names and synonym/current-name relations
+  accessed_at: '2026-10-21T14:35:29.428485Z'
+  support: context_only
+  summary: The exact Spicaria elegans (Corda) Harz name record241672 gives Mariannaea
+    elegans (Corda) Samson as the current name, with Penicillium elegans as basionym.
+    This checks name equivalence, not identity of an experimental isolate.
+  snapshot_sha256: 4fcd0c51d30838450ee18db21de5627d856611eea6450ee9f57bf539544f95a7
+- evidence_id: R085-LOCAL-TAXON
+  kind: record_content
+  reference: data/raw/corpus_taxa.obo
+  locator: Complete NCBITaxon509241 stanza
+  accessed_at: '2026-10-21T14:36:12.775588Z'
+  support: supports
+  summary: The retained local taxonomy likewise lists Spicaria elegans and Penicillium
+    elegans as exact synonyms of Mariannaea elegans.
+  snapshot_sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+- evidence_id: S085-E-LOCAL
+  kind: record_content
+  reference: data/natural_products/alkaloids/aspochalasin-m.yaml
+  locator: Complete owner, resolved local rows and exact MIBiG compound
+  accessed_at: '2026-10-21T14:35:07.571218Z'
+  support: supports
+  summary: The owner asserts aspochalasin M from A. flavipes with native Knock-out
+    studies, BGC_CHARACTERIZED and CLUSTER_DEMONSTRATED, citing PMID32913332. It omits
+    the CNL-338 experimental strain. There are no optional enzyme graphs or direct
+    activity claims.
+  snapshot_sha256: 8e69e817d31e720b50945daa33a22774fcf8b3ce9715555f1f7aa1c46114cf6d
+- evidence_id: S085-E-SI2020
+  kind: primary_source
+  reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41429-020-00368-0/MediaObjects/41429_2020_368_MOESM1_ESM.docx
+  locator: Complete official SI text, methods, compound data, PCR construction/verification,
+    LC-MS, tables and references
+  accessed_at: '2026-10-21T13:23:29.243796Z'
+  support: supports
+  summary: A. flavipes CNL-338 is the native algal-endophyte culture and the recipient
+    of the ffsA disruption. aspochalasin M is Figure 1 compound 6, isolated at 0.5
+    mg. Both insertion junctions are PCR-verified. Culture-extract LC-MS is compared
+    with isolated standards. E. coli TOP10 only propagates the cloning cassette; individual
+    pathway arrows and comparator protein accessions are not final-product enzyme
+    assays.
+  snapshot_sha256: 0ff42a2164326a7dbfe8604f3737af0997162380367b0a68c049b913a2588010
+- evidence_id: S085-E-FIG2020
+  kind: primary_source
+  reference: https://www.nature.com/articles/s41429-020-00368-0/figures/2
+  locator: Entire original Figure 2 pixels; panel g, compound 6, m/z402
+  accessed_at: '2026-10-21T13:23:29.535518Z'
+  support: supports
+  summary: The M standard and mutant EIC support loss of the named product after ffsA
+    disruption; C and M coelute in the WT overview and share m/z402, so mass alone
+    does not distinguish them. The compound isolation and NMR comparison are separate
+    supporting observations.
+  snapshot_sha256: b538c744ae41db2926bd514ef7558432d7b40161cce60595ca730ad672ba1ac1
+- evidence_id: S085-E-MAIN2017
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC5304325/
+  locator: Complete Results/Experimental scientific text previously read; exact known-compound
+    mapping, culture and isolation reread
+  accessed_at: '2026-10-21T14:05:51.319081Z'
+  support: supports
+  summary: Native A. flavipes QM507 (ITS KP339510) supplies aspochalasin M as compound
+    18, isolated at 5.6 mg from rice culture at 28 C for 28 days. M18 is identified
+    by literature NMR comparison. ECD of new compounds 6–13 is not an M18 absolute
+    experiment, and the reported activity set 1–14 does not support activity claims
+    for M18.
+  snapshot_sha256: 3cfb5bab8fa58cd140b0138c0956955450d4d5fac285c10828bd3676f9eb770a
+- evidence_id: S085-E-ORIGINAL
+  kind: primary_source
+  reference: https://chemistry-europe.onlinelibrary.wiley.com/doi/abs/10.1002/ejoc.200801085
+  locator: Official indexed primary abstract retained in exact web receipt; original
+    main/SI unavailable
+  accessed_at: '2026-10-21T14:01:48Z'
+  support: supports
+  summary: The 2009 primary abstract names new aspochalasins M–Q, compounds 2–6, from
+    marine-derived Spicaria elegans. It affirmatively supports the named M isolation,
+    but its family-level X-ray/Mosher sentence does not identify which experiment
+    applies to M. The current Mariannaea label requires its separate taxonomic crosswalk.
+  snapshot_sha256: 1b2b74681e5dde52bece343c1bf48122cac335f0952b611899f786129329ca60
+- evidence_id: S085-E-ACCESS
+  kind: search
+  reference: https://chemistry-europe.onlinelibrary.wiley.com/doi/suppl/10.1002/ejoc.200801085/supinfo/ejoc_200801085_sm_miscellaneous_information.pdf
+  locator: Bounded original-main/SI retrieval receipt and exact OpenAlex location
+    follow-up
+  accessed_at: '2026-10-21T14:00:29.767940Z'
+  support: unknown
+  summary: The exact official SI route returned403 and the inspected metadata supplied
+    no public full text. These attempts leave original detailed culture and exact
+    M assignment unresolved; they are not a global absence claim.
+  snapshot_sha256: 894169ae8a16bfbee1ee44bfc16425deaf56020cc110f412ee6fd40113e36a9f
+  search_scope: Exact original DOI, its official supplementary filename and retained
+    OpenAlex locations; failed routes were not repeatedly retried.
+- evidence_id: S085-E-CONSUMER
+  kind: record_content
+  reference: src/naturalproductmech/curate/producer_strains.py
+  locator: Complete current strain loader/emitter and seeder qualification call
+  accessed_at: '2026-10-21T14:35:07.571218Z'
+  support: supports
+  summary: One exact source row and its full digest guard strain context. The current
+    helper emits producer-only qualification, and the seeder rejects structure_correction_note
+    before it. Any combined chemistry/strain repair requires tested composition and
+    explicit BGC-context propagation.
+  snapshot_sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+- evidence_id: C085-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/alkaloids/aspochalasin-m.yaml
+  locator: Complete owner, exact structure, literal xrefs, source concepts and full
+    history; local source rows and current intake chemistry
+  accessed_at: '2026-10-21T14:35:54.420050Z'
+  support: supports
+  summary: Full owner read. Parsed structure gives GBCXTRJHTIEBIA-DNJNAQMOSA-N, C24H35NO4,
+    formal charge 0; native intake InChI and key match. 0 referenced components.
+  snapshot_sha256: 8e69e817d31e720b50945daa33a22774fcf8b3ce9715555f1f7aa1c46114cf6d
+- evidence_id: C085-COMPARE
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch009/chemistry-prep/chemical-comparison.json
+  locator: aspochalasin M exact complete graph comparison
+  accessed_at: '2026-10-21T13:30:02.585471Z'
+  support: supports
+  summary: The inspected source graph matches the owner key and raw MIBiG row. Current
+    original authority graphs were parsed separately, retaining fixed-H/tautomer distinctions,
+    invalid default representations, and assigned versus undefined centres. Detailed
+    exact comparisons are retained in the selected row.
+  snapshot_sha256: b3f3b3c9ff9602a489cae8f945ec6ab8ce183df7f2402a84e5a3ef34f5993652
+- evidence_id: C085-MIBIG
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0002204.3/annotations.json
+  locator: '{''mibig_accession'': ''BGC0002204'', ''compound_index'': ''5'', ''entry_version'':
+    ''3''} complete exact compound row'
+  accessed_at: '2026-10-21T13:21:52.567844Z'
+  support: supports
+  summary: Current source names aspochalasin M; its graph and fixed-H identity match
+    the raw owner=True. This is source agreement, not independent experimental proof.
+  snapshot_sha256: c70e8e64e6c8814f4deca9628c4a1a97acdf74fbbfef43700f1714f4df09721f
+- evidence_id: C085-AUTH0
+  kind: authority
+  reference: https://www.npatlas.org/api/v1/compound/NPA016352
+  locator: Exact requested/returned namespace and complete source record; original
+    MOL/SDF where retained
+  accessed_at: '2026-10-21T13:21:55.034074Z'
+  support: supports
+  summary: 'npatlas NPA016352; returned name NPA016352; declared key GBCXTRJHTIEBIA-DNJNAQMOSA-N;
+    parsed original graph key GBCXTRJHTIEBIA-DNJNAQMOSA-N; formula C24H35NO4; charge
+    0; stars not applicable. Comparison {''comparable'': True, ''standard_inchi_key'':
+    True, ''fixed_h_inchi'': True, ''formula'': True, ''formal_charge'': True, ''stereo_erased_canonical_smiles'':
+    True}.'
+  snapshot_sha256: 3d5acb1b3af1c9cbb90d9b9ece61a282038ebd50db9902246581c34e41b82045
+- evidence_id: C085-AUTH1
+  kind: authority
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/GBCXTRJHTIEBIA-DNJNAQMOSA-N/property/InChIKey,InChI,IsomericSMILES,MolecularFormula,Charge/JSON
+  locator: Exact requested/returned namespace and complete source record; original
+    MOL/SDF where retained
+  accessed_at: '2026-10-21T13:21:55.232120Z'
+  support: supports
+  summary: 'pubchem.compound 137700389; returned name aspochalasin M; declared key
+    GBCXTRJHTIEBIA-DNJNAQMOSA-N; parsed original graph key GBCXTRJHTIEBIA-DNJNAQMOSA-N;
+    formula C24H35NO4; charge 0; stars not applicable. Comparison {''comparable'':
+    True, ''standard_inchi_key'': True, ''fixed_h_inchi'': True, ''formula'': True,
+    ''formal_charge'': True, ''stereo_erased_canonical_smiles'': True}.'
+  snapshot_sha256: 5c710014a2e8cb352951ad5d227bdff29e579f1c0366dc23511b8c31c1b86590
+- evidence_id: C085-AUTH2
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/222090/
+  locator: Exact requested/returned namespace and complete source record; original
+    MOL/SDF where retained
+  accessed_at: '2026-10-21T13:22:54.982615Z'
+  support: supports
+  summary: 'chebi CHEBI:222090; returned name Aspochalasin M; declared key GBCXTRJHTIEBIA-DNJNAQMOSA-N;
+    parsed original graph key GBCXTRJHTIEBIA-DNJNAQMOSA-N; formula C24H35NO4; charge
+    0; stars 2. Comparison {''comparable'': True, ''standard_inchi_key'': True, ''fixed_h_inchi'':
+    True, ''formula'': True, ''formal_charge'': True, ''stereo_erased_canonical_smiles'':
+    True}.'
+  snapshot_sha256: ea00b4afd8d7773fe72cae5635e13c4bf287ea484ef910dd36727ebf08bc987c
+- evidence_id: C085-SI2020
+  kind: primary_source
+  reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41429-020-00368-0/MediaObjects/41429_2020_368_MOESM1_ESM.docx
+  locator: Complete SI, exact named M characterization and isolation
+  accessed_at: '2026-10-21T13:23:29.243796Z'
+  support: supports
+  summary: Named aspochalasin M is purified and compared by NMR/MS. This corroborates
+    the named metabolite and depicted structure, but does not independently establish
+    an absolute hand.
+  snapshot_sha256: 0ff42a2164326a7dbfe8604f3737af0997162380367b0a68c049b913a2588010
+- evidence_id: C085-FIG2020
+  kind: primary_source
+  reference: https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41429-020-00368-0/MediaObjects/41429_2020_368_Fig1_HTML.png
+  locator: Original Figure 1, exact M (6)
+  accessed_at: '2026-10-21T13:23:29.734811Z'
+  support: supports
+  summary: The drawing depicts the M constitution and the retained relative arrangement;
+    no M-specific absolute experiment follows from the drawing.
+  snapshot_sha256: 1336c5e894a5e5674bc6c28592cb147a998475fdd51222cfdda03f225b4b445c
+- evidence_id: C085-ABSTRACT2009
+  kind: primary_source
+  reference: https://chemistry-europe.onlinelibrary.wiley.com/doi/abs/10.1002/ejoc.200801085
+  locator: Original publisher abstract DOI 10.1002/ejoc.200801085, exact M (2)
+  accessed_at: '2026-10-21T14:01:48Z'
+  support: partial
+  summary: The original abstract identifies new M–Q as 2–6, with M (2), and collectively
+    reports X-ray/Mosher methods. That grouped statement does not identify which exact
+    absolute experiment applies to M.
+  snapshot_sha256: 1b2b74681e5dde52bece343c1bf48122cac335f0952b611899f786129329ca60
+- evidence_id: C085-PRIMARY2017
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=5304325&retmode=xml
+  locator: Known aspochalasin M (18) identification, ECD and configuration scope
+  accessed_at: '2026-10-21T14:05:51.319081Z'
+  support: supports
+  summary: The later paper identifies known M (18) by spectral comparison. ECD applies
+    to the new numbered congeners 6–13, not M18; no sibling absolute hand is transferred.
+  snapshot_sha256: 3cfb5bab8fa58cd140b0138c0956955450d4d5fac285c10828bd3676f9eb770a
+- evidence_id: C085-ACCESS
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next-batch009/absolute-followup/source-notes.json
+  locator: Exact DOI main/SI access attempts and bounded later primary follow-up
+  accessed_at: '2026-10-21T14:04:56.097338Z'
+  support: context_only
+  summary: Original 2009 M full main and SI remain unavailable through retained publisher,
+    repository metadata and official supplement routes. No exhaustive literature-absence
+    assertion is made.
+  snapshot_sha256: 6307f66505c007b9b95976f4abb3795ba52e499a9aa1bee5cd737ebc9a2d777f
+  search_scope: Exact 2009 DOI publisher/SI and OpenAlex locations plus retained later
+    2017 primary; no paid access, contact, or repeated failed routes.
+assessments:
+- assessment_id: R085-HISTORY
+  area: provenance
+  topic: Native status and retained history
+  outcome: supported
+  summary: The dated SEEDED_FROM_SOURCES entries and retained SEEDED status describe
+    generated provenance. The review does not promote native status or add a curation
+    event.
+  target_ids:
+  - naturalproductmech:mibig-7fc6e870d5
+  evidence_ids:
+  - R085-OWNER
+- assessment_id: R085-OPTIONAL
+  area: completeness
+  topic: Optional mechanism, activity and application scope
+  outcome: not_applicable
+  summary: The complete owner has no structured pathway, causal graph, molecular target,
+    activity, clinical status, application, cross-corpus link or discussion claim.
+    Optional enrichment is separate from correcting present assertions; no mechanism
+    or activity is inferred from the compound name or computed class.
+  target_ids:
+  - naturalproductmech:mibig-7fc6e870d5
+  evidence_ids:
+  - R085-OWNER
+  - R085-LOCAL-SOURCES
+- assessment_id: R085-FILING
+  area: representation
+  topic: Computed filing and source-asserted classes
+  outcome: supported
+  summary: The owner reproduces its exact-key NPClassifier row, including model version
+    npclassifier.gnps2.org@2026-09-07, Alkaloids filing, every returned superclass/class
+    label and false glycoside flag. These are explicitly computed predictions, not
+    experimental proof of precursor use, ring taxonomy, natural origin or exact stereochemical
+    identity. BGC class claims retain their separate MIBiG provenance and biological
+    assessment.
+  target_ids:
+  - naturalproductmech:mibig-7fc6e870d5
+  evidence_ids:
+  - R085-OWNER
+  - R085-LOCAL-SOURCES
+- assessment_id: R085-IMODULON
+  area: completeness
+  topic: Structured transcriptomic context
+  outcome: not_applicable
+  summary: The asserted native producer and exact biosynthetic locus lack a matching
+    dataset in the inspected catalogue. No coexpression/module-membership claim is
+    present in this owner. Recombinant E. coli, yeast or A. oryzae work is not substituted
+    for native-producer transcriptomic evidence. Database noncoverage is not negative
+    biological evidence; paper-specific expression experiments are assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-7fc6e870d5
+  evidence_ids:
+  - R085-OWNER
+  - R085-IMODULON-DATASETS
+- assessment_id: R085-ORGANISM-IDS
+  area: provenance
+  topic: Literal LOTUS organism-identifier routing
+  outcome: supported
+  summary: Every literal organism entity in the matching LOTUS rows resolves to its
+    retained species and NCBI taxon identifier. Compound occurrence, experimental
+    host versus substrate and strain-level taxonomy require the separate primary-source
+    assessment.
+  target_ids:
+  - naturalproductmech:mibig-7fc6e870d5
+  evidence_ids:
+  - R085-LOCAL-SOURCES
+  - R085-Q10577250
+- assessment_id: R085-TAXON-CROSSWALK
+  area: provenance
+  topic: Original Spicaria elegans name and current Mariannaea occurrence
+  outcome: supported
+  summary: The genus difference between the 2009 source and current occurrence label
+    is an established synonym mapping. It is not a false occurrence finding. The primary-source
+    availability and exact compound assignment remain separately assessed.
+  target_ids:
+  - naturalproductmech:mibig-7fc6e870d5
+  evidence_ids:
+  - R085-TAXON-NCBI
+  - R085-TAXON-FUNGORUM
+  - R085-LOCAL-TAXON
+- assessment_id: S085-A-NATIVE
+  area: evidence
+  topic: Native production, experiment and locus evidence tiers
+  outcome: supported
+  summary: The cited study directly disrupts ffsA in native CNL-338 and loses the
+    named aspochalasin M extract signal. Independent QM507 culture isolation reinforces
+    biological source context without transferring its phenotype or any enzyme activity
+    to CNL-338. Keep existing method and grades.
+  target_ids:
+  - naturalproductmech:mibig-7fc6e870d5
+  evidence_ids:
+  - S085-E-SI2020
+  - S085-E-FIG2020
+  - S085-E-MAIN2017
+  dimensions:
+  - name: native_experimental_strain
+    value: A. flavipes CNL-338; separate QM507 isolation
+    definition: CNL-338 supplies the genomic deletion; QM507 supplies independent
+      chemically characterized material.
+    evidence_ids:
+    - S085-E-SI2020
+    - S085-E-MAIN2017
+  - name: producer_locus_evidence_tiers
+    value: BGC_CHARACTERIZED; CLUSTER_DEMONSTRATED; Knock-out studies
+    definition: Native pathway necessity is supported. No heterologous final-product
+      or purified-enzyme method is added.
+    evidence_ids:
+    - S085-E-FIG2020
+    - S085-E-SI2020
+- assessment_id: S085-A-STRAIN
+  area: evidence
+  topic: Experimental strain retained beyond species label
+  outcome: concern
+  summary: CNL-338 is an exact biological qualifier for the graded experiment. Its
+    absence obscures the distinction from other A. flavipes isolates and from cloning/comparator
+    organisms.
+  target_ids:
+  - naturalproductmech:mibig-7fc6e870d5
+  evidence_ids:
+  - S085-E-LOCAL
+  - S085-E-SI2020
+  - S085-E-CONSUMER
+- assessment_id: S085-A-ORIGIN
+  area: evidence
+  topic: Source-specific occurrence and identity resolution
+  outcome: unknown
+  summary: The single LOTUS citation positively reports M from Spicaria elegans at
+    abstract level. The Mariannaea taxonomic crosswalk and original detailed isolate
+    context remain separately qualified. Later QM507/CNL-338 isolation supports natural
+    origin; no current source justifies importing the new-congener ECD result as M-specific
+    proof.
+  target_ids:
+  - naturalproductmech:mibig-7fc6e870d5
+  evidence_ids:
+  - S085-E-LOCAL
+  - S085-E-ORIGINAL
+  - S085-E-MAIN2017
+  - S085-E-SI2020
+- assessment_id: S085-A-CLASS
+  area: representation
+  topic: Broad class and optional biological content
+  outcome: supported
+  summary: PKS/NRPS follows the native hybrid synthase experiment and the cytochalasan
+    family. NPClassifier is computed annotation. The sparse owner does not assert
+    an individual reaction, molecular target or cytotoxic mechanism requiring borrowed
+    congener evidence.
+  target_ids:
+  - naturalproductmech:mibig-7fc6e870d5
+  evidence_ids:
+  - S085-E-LOCAL
+  - S085-E-SI2020
+  - S085-E-MAIN2017
+- assessment_id: C085-IDENTITY
+  area: identity
+  topic: M constitution and literal authority equivalence
+  outcome: supported
+  summary: The neutral C24H35NO4 owner with six assigned centres matches the current
+    MIBiG graph, literal NPAtlas NPA016352 and retained exact chemical authority comparison,
+    including fixed-H identity. No eligible three-star exact ChEBI replacement was
+    found in the retained exact-key lookup; minting remains consistent with that bounded
+    result.
+  target_ids:
+  - naturalproductmech:mibig-7fc6e870d5
+  evidence_ids:
+  - C085-LOCAL
+  - C085-COMPARE
+  - C085-MIBIG
+  - C085-SI2020
+  - C085-FIG2020
+  - C085-ABSTRACT2009
+  - C085-PRIMARY2017
+  - C085-AUTH0
+  - C085-AUTH1
+  - C085-AUTH2
+- assessment_id: C085-ABSOLUTE
+  area: evidence
+  topic: Exact M absolute configuration
+  outcome: unknown
+  summary: The graph is source-consistent, but the required original M-specific absolute
+    experiment cannot be assigned from the family abstract. No opposite configuration
+    is established, and no correction is justified by transferring another congener’s
+    Mosher or X-ray result.
+  target_ids:
+  - naturalproductmech:mibig-7fc6e870d5
+  evidence_ids:
+  - C085-LOCAL
+  - C085-COMPARE
+  - C085-MIBIG
+  - C085-SI2020
+  - C085-FIG2020
+  - C085-ABSTRACT2009
+  - C085-PRIMARY2017
+  - C085-AUTH0
+  - C085-AUTH1
+  - C085-AUTH2
+  dimensions:
+  - name: stereochemical_resolution
+    value: Six assigned centres; exact original absolute method unresolved
+    definition: Source graph precision is not mistaken for an independently inspected
+      natural-product absolute determination.
+    evidence_ids:
+    - C085-LOCAL
+    - C085-ABSTRACT2009
+    - C085-PRIMARY2017
+findings:
+- finding_id: S085-F-STRAIN
+  issue_key: mibig-bgc0002204-compound5-experimental-strain
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Retain CNL-338 as the experimental producer strain
+  description: The exact native knockout supporting aspochalasin M was performed in
+    CNL-338; the owner retains only the species label. Add the experimental qualifier
+    while preserving the supported source grades.
+  target_ids:
+  - naturalproductmech:mibig-7fc6e870d5
+  field_paths:
+  - producer_organisms[0].strain
+  - producer_organisms[0].notes
+  - biosynthetic_gene_clusters[0].notes
+  evidence_ids:
+  - S085-E-LOCAL
+  - S085-E-SI2020
+  - S085-E-FIG2020
+  - S085-E-CONSUMER
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Consumed exact-source strain context
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/producer_strains.py
+    role: Whole-row guard and producer-only emitter
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Tested source-context propagation and composition
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Unchanged original assertion
+actions:
+- action_id: S085-ACT-STRAIN
+  description: 'Add a consumed row to mibig_producer_strains.tsv with source_id=BGC0002204:5,
+    expected_source_row_sha256=9ec711845e654a79af471d4b9abb13fb6b4ac4409fd919bb4a7ee04bf209ae48,
+    strain=CNL-338, reference=PMID:32913332 and dated curator rationale. Preserve
+    original source version3, taxon41900, MT586757.1, empty bounds, Knock-out studies
+    and both grades. Explain native deletion versus E. coli cloning and separate QM507
+    isolation. Implement tested same-source propagation to BGC.notes because the current
+    strain helper is producer-only. Coordinate with the chemistry packet: if a structural
+    or relative-resolution route is implemented, extend and test composition using
+    the unchanged original raw-row guard, because the current seeder rejects strain
+    qualification after structure correction. Do not merely refresh pins or hand-edit
+    the owner.'
+  finding_ids:
+  - S085-F-STRAIN
+  target_ids:
+  - naturalproductmech:mibig-7fc6e870d5
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Consumed exact-source strain context
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/producer_strains.py
+    role: Whole-row guard and producer-only emitter
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Tested source-context propagation and composition
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Unchanged original assertion
+  generator: scripts/seed_from_sources.py and consumed strain context
+  acceptance_checks:
+  - Fail closed on duplicate rows or any original raw-field drift.
+  - Regeneration retains CNL-338 and accurate native-versus-cloning context in both
+    producer and BGC, with unchanged supported method and grades.
+  - Test the combined chemistry/strain/claim-reference operation if chemistry changes,
+    including exact joins, old-key provenance and no loss of the qualifier.
+  - Do not transfer another congener absolute experiment, activity, reaction or source
+    strain.
+  - After implementation run the documented exact-target reproduction/strict/corpus/QC
+    gates; this review does not run them.
+limitations:
+- This review assesses current assertions and concrete source questions. It does not
+  claim exhaustive discovery of subsequent studies or require every optional mechanism
+  as a condition of review coverage.
+- Full 2020 main text remains unavailable. Direct SI procedures and original figures
+  are inspected; individual enzyme arrows remain proposals.
+- No raw-spectrum reassignment, ECD calculation or native full-protein reconstruction
+  was performed. Chemistry and current authority identity are handled separately.
+- The original 2009 detailed M paper and SI remain unavailable. A genus-name change
+  alone is not a confirmed false occurrence; retain the separate taxonomic crosswalk
+  assessment.
+- Original 2009 M detailed structural/absolute evidence and full 2020 main remain
+  unavailable through the retained bounded routes. The positive source reports are
+  preserved, with no false opposite-hand finding or blanket denial of an absolute
+  determination.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35
+  explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently
+  verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+  Skipped tests are not counted as passing tests. Existing ontology caches were used;
+  no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do
+  not establish biological production, stereochemical specificity, evidence adequacy,
+  or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology
+  results. Reuse establishes unchanged repository inputs; it is not a new remote authority
+  query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all
+  tracked files are hashed. Generated Python bytecode and external tool caches are
+  not claimed to have been independently byte-pinned at the prior execution.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+tags:
+- path-order-campaign
+- batch-009
+- fungal
+- cytochalasan
+- primary-access-limitation
+```

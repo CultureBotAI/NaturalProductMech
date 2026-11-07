@@ -1,0 +1,1259 @@
+# Aspyridone B: relative-only identity and precursor-method overreach
+
+- Review: 20261021T144719Z-aspyridone-b
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-21T14:24:55.420864Z
+- Finished UTC: 2026-10-21T14:47:19.665744Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The stored absolute hand exceeds the original suggested syn assignment. Native induced B isolation is supported, but the imported enzymatic and heterologous methods terminate at a precursor or at A. Preserve the positive native occurrence and relative evidence without transferring the A-specific anti revision or asserting untested A4 production.
+
+## Scope And Provenance
+
+One complete generated owner and any referenced components, assessed claim by claim for exact identity, provenance, origin, producer and occurrence scope, biosynthesis, classification, optional content and audit history.
+
+Selection: Campaign record 87, batch 009, selected in path order from the fresh-main authoritative validated catalogue and the separately validated targets in earlier batch commits (publication tracked separately). At selection, 134 of 3116 current records had campaign coverage and 2982 remained. The population search included ignored files. Exactly one target is assessed here.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 1c2402097718c138b081e00943de8f04de0541cd.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CHEBI:64705 | data/natural_products/alkaloids/aspyridone-b.yaml | generated | aspyridone B |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Closed-schema target validation | passed | True | CHEBI:64705 | The documented target strict validator completed; scientific support is assessed separately. |
+| Corpus path and filing integrity | passed | True | CHEBI:64705 | All 3,116 current record files agree with PATHS.tsv and their pinned filing pathways. |
+| Corpus reproduction | passed | True | CHEBI:64705 | All 3,116 current records passed the documented byte-reproduction gate against committed inventories and maintained curation inputs. |
+| Native deterministic review queue | passed | True | CHEBI:64705 | The exhaustive review queue produced 8,928 diagnostic rows across 12 queues; this deterministic output does not establish scientific review. |
+| Configured ontology identifier-label correspondence | passed | True | CHEBI:64705 | The configured identifier-label gate passed using the existing ontology caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions, 499 warning-only mismatches and 4,744 pairs skipped because their prefixes have no adapter. |
+| Full repository quality gate on the current main baseline | passed | True | CHEBI:64705 | The full documented just qc recipe passed on the unchanged main baseline during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). All configured lint, governance, documentation, provenance, source-queue, schema, rendering, reproduction, filing-integrity and reporting stages completed successfully. |
+| Complete owner and component scope | passed | True | CHEBI:64705 | Complete owner and all matching local source rows read. The native resolved view confirms the empty component-reference set; all formal input hashes agree. |
+| Native exact-product source and occurrence scope | passed | True | CHEBI:64705 | The 2007 main and original SI support native engineered SB4.1 isolation of B; no heterologous host is recorded as a natural occurrence. |
+| Final-product locus method and citation fidelity | failed | True | CHEBI:64705 | The imported methods conflate the 2010 precursor experiment, 2007 native induction and later final-A experiment; current claim text does not preserve their endpoint and strain boundaries. |
+| Supplemental donor and crystal-detail access | unavailable | False | CHEBI:64705 | The full main establishes its stated endpoint, but inaccessible SI/CIF details remain unknown. They are not evidence of a false occurrence. |
+| Primary relative/absolute scope and current graph adjudication | failed | True | CHEBI:64705 | The record expresses a definite absolute hand exceeding the cited source’s suggested relative assignment. |
+| Exact absolute-hand experiment and refinement | unavailable | True | CHEBI:64705 | No B-specific absolute experiment was found in the bounded inspected source set. The unavailable 2013 SI/CIF concerns A; it cannot be counted as a missing B experiment or used to transfer the A revision or an absolute hand to B. This is not an exhaustive absence claim. |
+
+## Scientific And Domain Assessments
+
+### Native status and retained history
+
+provenance: supported. Targets: CHEBI:64705.
+
+The dated SEEDED_FROM_SOURCES entries and retained SEEDED status describe generated provenance. The review does not promote native status or add a curation event.
+
+### Optional mechanism, activity and application scope
+
+completeness: not_applicable. Targets: CHEBI:64705.
+
+The complete owner has no structured pathway, causal graph, molecular target, activity, clinical status, application, cross-corpus link or discussion claim. Optional enrichment is separate from correcting present assertions; no mechanism or activity is inferred from the compound name or computed class.
+
+### Computed filing and source-asserted classes
+
+representation: supported. Targets: CHEBI:64705.
+
+The owner reproduces its exact-key NPClassifier row, including model version npclassifier.gnps2.org@2026-09-07, Alkaloids filing, every returned superclass/class label and false glycoside flag. These are explicitly computed predictions, not experimental proof of precursor use, ring taxonomy, natural origin or exact stereochemical identity. BGC class claims retain their separate MIBiG provenance and biological assessment.
+
+### Structured transcriptomic context
+
+completeness: not_applicable. Targets: CHEBI:64705.
+
+The asserted native producer and exact biosynthetic locus lack a matching dataset in the inspected catalogue. No coexpression/module-membership claim is present in this owner. Recombinant E. coli, yeast or A. oryzae work is not substituted for native-producer transcriptomic evidence. Database noncoverage is not negative biological evidence; paper-specific expression experiments are assessed separately.
+
+### Literal LOTUS organism-identifier routing
+
+provenance: supported. Targets: CHEBI:64705.
+
+Every literal organism entity in the matching LOTUS rows resolves to its retained species and NCBI taxon identifier. Compound occurrence, experimental host versus substrate and strain-level taxonomy require the separate primary-source assessment.
+
+### Native origin and the single LOTUS occurrence
+
+evidence: supported. Targets: CHEBI:64705.
+
+Original NMR/HRMS isolation of B from induced A. nidulans SB4.1 supports biological origin at the published resolution. The species-level LOTUS statement is consistent; it does not certify A4 stock production or an absolute hand.
+
+### Exact endpoint and experimental strain scope
+
+evidence: concern. Targets: CHEBI:64705.
+
+The producer remains a database A4 assertion. Native SB4.1 correlation, A4-derived precursor enzymology and M-2-3 final-A production must be separately qualified. No tested strain is silently relabelled as another.
+
+### Exact source graph, tautomer and current authority equivalence
+
+identity: supported. Targets: CHEBI:64705.
+
+The current B graph matches the original B depiction and official ChEBI MOL. B is constitutionally distinct from A by the extra phenyl hydroxyl. The A-specific anti revision cannot be assigned to B. The default ChEBI SMILES is invalid in the retained parser; the unaltered official MOL is valid. Alternate PubChem 15942860/15942861 tautomers share each corresponding Standard key but differ in fixed-H identity; they are not treated as identical depictions.
+
+### Relative configuration versus absolute precision
+
+evidence: concern. Targets: CHEBI:64705.
+
+The owner encodes one absolute syn hand, while the cited full original source supplies a suggested relative relationship. No inspected B-specific experiment establishes absolute hand, and the 2013 A crystal supplies no B result.
+
+## Findings
+
+### S087-F-ENDPOINT: The locus methods collapse precursor, native induction and final-product experiments
+
+major / open / confirmed; issue key: mibig-bgc0000959-final-product-method-and-strain-conflation.
+
+The 2007 citation demonstrates native engineered SB4.1 induction, not the two imported methods in A4. The 2010 enzymatic/yeast experiment stops at preaspyridone. No final-B heterologous or purified-enzyme result occurs in these studies. The 2013 failure to produce B does not negate the 2007 native isolation. Preserve the positive native result while correcting the exact method/stock claim.
+
+### C087-F-STEREO: Represent the B side-chain assignment at its supported relative scope
+
+major / open / confirmed; issue key: aspyridone-b-relative-only-source-encoded-absolute.
+
+The stored S/S hand is a literal rendition of the original drawing, whereas the complete source establishes only a suggested syn relationship. This is unsupported absolute precision, not evidence that the opposite enantiomer is correct or that B shares A’s later anti revision.
+
+## Recommended Actions And Acceptance Checks
+
+### S087-ACT-ENDPOINT
+
+WITHDRAW both imported strong methods from the current exact B claim using the existing guarded action, with explicit empty replacement methods. This preserves the source origin/locus assertion as SOURCE_ASSERTION/CLUSTER_UNSTATED, not deletion. Record the positive 2007 SB4.1 native expression correlation separately; a reviewed claim-scoped implementation may represent that experimental locus as CLUSTER_CORRELATED without automatically promoting the A4 producer or asserting SB4.1=A4. Pin source_id=BGC0000959:2, expected_source_row_sha256=20925a9c9bfad11b37c45097b812cc38762691a9e40692aebe3044980df81eb4, entry_version=5, taxon_id=NCBITaxon:227321, genome_accession=BN001305.1, locus_from=383588, locus_to=417319, standard_inchi_key=SFWFNVOTIWZXMZ-QWRGUYRKSA-N, original methods=Enzymatic assays&#124;Heterologous expression. Use the minted MIBiG source-concept identifier as override key, not the CHEBI record ID. Pair the method decision with the consumed claim-reference full-row hash guard (or add and test equivalent complete-row enforcement) and dated curator attribution. Route the native occurrence/context to DOI:10.1038/nchembio869 and retain DOI:10.1021/ja107084d explicitly as precursor-only. The current REPLACE action alone does not enforce expected_*; do not present a row containing those inert fields as guarded. Current citation/strain consumers reject a structure-corrected row: any combined identity, method and citation repair requires a reviewed/tested composition preserving the untouched original-row pin, exact resulting owner and old-key join adjudication. Do not use producer_strains.tsv to rename A4 as SB4.1.
+
+- Exact original selector, full row SHA and all WITHDRAW context fields must match; drift/duplicates fail closed.
+- Preserve raw upstream methods, citation and source assertion as provenance; distinguish retained source assertions from applicable experiment grades.
+- No A4 producer upgrade from native SB4.1 or heterologous M-2-3; no precursor endpoint becomes final A/B proof.
+- Exercise the exact structure/method/citation composition or retain the existing rejection. Regenerate and run documented strict, reproduction, corpus and QC gates only in a separately authorized curation.
+
+### C087-A-STEREO
+
+Before changing identity, implement and test a typed primary-derived representation action keyed BGC0000959:2, full original raw-row SHA256 20925a9c9bfad11b37c45097b812cc38762691a9e40692aebe3044980df81eb4, old key SFWFNVOTIWZXMZ-QWRGUYRKSA-N, old SMILES 'CC[C@H](C)C[C@H](C)C(=O)C1=C(C(=CNC1=O)C2=CC(=C(C=C2)O)O)O', stereo_complete=true and current CHEBI:64705 row SHA256 800025a8ee54c979a000f7b6b7f749e6cb4bb0e755418a1e46d0d1667aa136d5. The reviewable provisional representation is CCC(C)CC(C)C(=O)c1c(O)c(-c2ccc(O)c(O)c2)c[nH]c1=O / SFWFNVOTIWZXMZ-UHFFFAOYSA-N with stereo_complete=false, plus the separately explicit source constraint: C8/C10 syn was suggested by the 2007 comparative carbon-shift argument; absolute hand unresolved. Do not claim racemization or choose an enantiomer. Preserve the old source graph and attribution as disputed history. Current eligible ChEBI is not a repair target; re-mint/re-ground only after a fresh exact-key eligibility/collision audit. Re-adjudicate old-key occurrence, definition, classification and xref joins explicitly: do not automatically transfer them or silently discard supported named-metabolite evidence. No raw inventory/YAML edits, reserved decision rows or unimplemented ordinary correction action. Compose the identity change with the science packet’s exact citation/method and strain actions using original-row pins and explicit transformed-row verification, because the current consumer rejects some combinations.
+
+- Original raw row, old graph, ChEBI row and all context drift fail closed; no sibling compound changes.
+- The regenerated graph does not assert an unsupported hand; exact relative constraint and original evidence strength remain visible.
+- No silent equivalence to old ChEBI/PubChem or wrong-key inventory joins; preserved named-metabolite claims each receive independent adjudication.
+- Identity, source citation, method and strain corrections compose without bypassing current incompatibility guards; collisions and repeated targets reject.
+- No A anti revision is transferred to B; provenance and reproduction checks pass.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| R087-OWNER | data/natural_products/alkaloids/aspyridone-b.yaml; Complete owner, all scientific claims, inline graphs and history entries | supports | Root read the complete aspyridone B owner following its individual intake. It has 1 occurrences, 1 producer and 1 cluster assertions. Referenced components are empty. Present optional fields: none. These observations use complete parsed content, not a filtered search miss. |
+| R087-LOCAL-SOURCES | /private/tmp/npm-review-work/087/local-sources.json; Every matching MIBiG, LOTUS, ChEBI, CyanoMetDB and NPClassifier row plus resolved owner | context_only | Root read all matching source rows. The resolved owner equals the complete parsed raw YAML. Retained source assertions and deterministic joins are distinguished from the exact primary experiments reviewed separately. |
+| R087-IMODULON-DATASETS | /private/tmp/npm-review-work/010/imodulon-datasets.txt; Full 28-row dataset catalogue; original retrieval in 010/imodulon-context-receipts.json | context_only | The complete same-session catalogue retrieved at 07:21:15 UTC has no Aspergillus, Mariannaea, Actinomadura or Stigmatella dataset. The catalogue is reused with its original timestamp; no fresh retrieval is claimed. Species matching alone would not establish an exact strain, gene, locus or product experiment. |
+| R087-Q683881 | https://www.wikidata.org/wiki/Special:EntityData/Q683881.json; Exact organism entity, scientific name and P685 NCBI Taxonomy identifier | context_only | Literal organism entity Q683881 resolves as Aspergillus nidulans, with P685 162425, matching the local LOTUS row. This verifies identifier routing only; it does not support compound occurrence, assign experimental strain or settle historical taxonomic revisions. |
+| S087-E-LOCAL | data/natural_products/alkaloids/aspyridone-b.yaml; Complete owner and every supplied matching source row | supports | The exact BGC0000959:2 v5 row names A4 taxon 227321, BN001305.1:383588..417319, Enzymatic assays&#124;Heterologous expression and PMID 17369821; the generated producer is SOURCE_ASSERTION and locus CLUSTER_DEMONSTRATED. The sole LOTUS occurrence cites the 2007 A. nidulans study. Complete raw-row SHA256: 20925a9c9bfad11b37c45097b812cc38762691a9e40692aebe3044980df81eb4. |
+| S087-E-2007 | https://doi.org/10.1038/nchembio869; All five published pages; Methods, Figures 2–3, Table 1 and Scheme 1 | supports | Native A. nidulans AXB4A2 was transformed with alcAp-apdR to make SB4.1. Induced transcript and HPLC comparisons with AXB4A/control and repressed cultures link the apd region to both products; 13 L culture yielded A (10 mg) and B (5 mg), characterized by NMR/HRMS. The scheme is proposed enzymology, not a purified final-product assay. The exact B occurrence is positive at the primary structural resolution. |
+| S087-E-2007-SI | https://doi.org/10.1038/nchembio869; All six official SI text files; exact genotype Table S2, Northern Figure S1 and Methods | supports | SB4.1 is an engineered AXB4A2 background with ectopic apdR activation. Northern measurements and induced/repressed controls are experimental expression evidence. E. coli DH5alpha is a cloning host. Homology-based proposed protein functions in Table S1 are not enzyme assays, and FGSC A4 is not the tested strain named in this native induction experiment. |
+| S087-E-2010 | https://doi.org/10.1021/ja107084d; Complete scientific body and all figure captions | supports | FGSC A4 supplies the reannotated apdA/apdC genes. Recombinant tagged ApdA from yeast BJ5464-NpgA and ApdC from E. coli BL21(DE3) produce preaspyridone 7 in vitro; yeast coexpression produces the same tetramic-acid precursor. Neither final A nor B is the assay endpoint. |
+| S087-E-2010-SI | https://ndownloader.figshare.com/files/4400272; Official SI S1–S4 molecular biology, expression, purified assay and product purification | supports | The original SI independently identifies A4 donor, reannotated constructs and tagged proteins. Purified reactions use 25 micromolar enzymes and 12 h incubation; product 7 is purified from yeast for NMR. This closes the earlier SI access gap and confirms precursor-only scope. |
+| S087-E-2013 | https://doi.org/10.1039/C3SC51785C; Complete 12-page main; original pages 3–4, Table 1, Results and Experimental | supports | A. oryzae M-2-3 expressing apdACE produces final aspyridone A at 119.8 mg/L (390.6 mg/L is total mixed products). The crystal revises A to the anti relative class; it is not an absolute-hand result. The donor genomic A. nidulans strain is not specified in the accessible main. SB4.1 gives low-titre A by LC-MS; failure to detect B under these conditions does not refute its 2007 isolation. ApdB N-oxygenation and other transformations are not final B production. |
+| S087-E-2013-ACCESS | https://doi.org/10.1039/C3SC51785C; Bounded RSC official SI and CCDC 941138 retrieval attempts; access-01 through access-04 | context_only | The 2013 main is fully recovered, but the official SI and crystal CIF were not recovered through the retained routes. No per-gene SI qRT-PCR result, donor-stock bridge, Flack statistic or independent absolute-hand proof is inferred. The original failed responses remain preserved. |
+| S087-E-CONSUMERS | scripts/seed_from_sources.py; Method override loader/application and producer/cluster emission; full claim-reference/strain contracts | supports | WITHDRAW enforces seven original context fields but not a complete-row SHA by itself. REPLACE enforces no expected_* fields. Pair a correction with the full-row-pinned claim-reference contract or extend/test enforcement. Claim references and strain qualifiers reject structure_correction_note. A strain qualifier cannot change A4 taxon identity into SB4.1 or independently separate producer and locus grades. |
+| C087-LOCAL | /private/tmp/npm-record-reviews-20261021/data/natural_products/alkaloids/aspyridone-b.yaml; Complete owner, exact structure, literal xrefs, source concepts and full history; local source rows and current intake chemistry | supports | Full owner read. Parsed structure gives SFWFNVOTIWZXMZ-QWRGUYRKSA-N, C19H23NO5, formal charge 0; native intake InChI and key match. 0 referenced components. |
+| C087-COMPARE | /private/tmp/npm-review-work/shared-next-batch009/chemistry-prep/chemical-comparison.json; aspyridone B exact complete graph comparison | supports | The inspected source graph matches the owner key and raw MIBiG row. Current original authority graphs were parsed separately, retaining fixed-H/tautomer distinctions, invalid default representations, and assigned versus undefined centres. Detailed exact comparisons are retained in the selected row. |
+| C087-MIBIG | https://mibig.secondarymetabolites.org/repository/BGC0000959.5/annotations.json; {'mibig_accession': 'BGC0000959', 'compound_index': '2', 'entry_version': '5'} complete exact compound row | supports | Current source names aspyridone B; its graph and fixed-H identity match the raw owner=True. This is source agreement, not independent experimental proof. |
+| C087-AUTH0 | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/SFWFNVOTIWZXMZ-QWRGUYRKSA-N/property/InChIKey,InChI,IsomericSMILES,MolecularFormula,Charge/JSON; Exact requested/returned namespace and complete source record; original MOL/SDF where retained | supports | pubchem.compound 15942861; returned name aspyridone B; declared key SFWFNVOTIWZXMZ-QWRGUYRKSA-N; parsed original graph key SFWFNVOTIWZXMZ-QWRGUYRKSA-N; formula C19H23NO5; charge 0; stars not applicable. Comparison {'comparable': True, 'standard_inchi_key': True, 'fixed_h_inchi': False, 'formula': True, 'formal_charge': True, 'stereo_erased_canonical_smiles': False}. |
+| C087-AUTH1 | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/SFWFNVOTIWZXMZ-QWRGUYRKSA-N/property/InChIKey,InChI,IsomericSMILES,MolecularFormula,Charge/JSON; Exact requested/returned namespace and complete source record; original MOL/SDF where retained | supports | pubchem.compound 54710081; returned name aspyridone B; declared key SFWFNVOTIWZXMZ-QWRGUYRKSA-N; parsed original graph key SFWFNVOTIWZXMZ-QWRGUYRKSA-N; formula C19H23NO5; charge 0; stars not applicable. Comparison {'comparable': True, 'standard_inchi_key': True, 'fixed_h_inchi': True, 'formula': True, 'formal_charge': True, 'stereo_erased_canonical_smiles': True}. |
+| C087-AUTH2 | https://www.ebi.ac.uk/chebi/backend/api/public/compound/64705/; Exact requested/returned namespace and complete source record; original MOL/SDF where retained | supports | chebi CHEBI:64705; returned name aspyridone B; declared key SFWFNVOTIWZXMZ-QWRGUYRKSA-N; parsed original graph key SFWFNVOTIWZXMZ-QWRGUYRKSA-N; formula C19H23NO5; charge 0; stars 3. Comparison {'comparable': True, 'standard_inchi_key': True, 'fixed_h_inchi': True, 'formula': True, 'formal_charge': True, 'stereo_erased_canonical_smiles': True}. Default SMILES is invalid under the inspected parser; the separate official MOL is used without silently repairing that SMILES. |
+| C087-PRIMARY2007 | https://www.iab.kit.edu/microbio/img/content/2007%20nature%20Brakhage%20genome%20mining.pdf; Complete original main; printed page 214 structure assignment; A/B characterization | supports | The paper suggests syn C8/C10 by comparing carbon shifts with experimental/calculated shifts of similar partial structures. B differs by its additional phenyl hydroxyl. The inspected methods and structure discussion establish no independent absolute hand for these side-chain centres. |
+| C087-FIG2007 | https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnchembio869/MediaObjects/41589_2007_Article_BFnchembio869_Fig3_HTML.jpg; Original Figure 3, numbered A1 and B2 | supports | Both side-chain methyl stereobonds in the original extended zigzag are hashed. Independent numbered transcription gives C8S/C10S for each depicted hand, matching the owner; the drawing itself does not establish absolute configuration. |
+| C087-PRIMARY2013 | https://d-nb.info/1214327176/34; Full original main; pp 3847–3849 and 3851; Figure 3; Methods 4.10 | supports | The crystal of heterologously produced A1 establishes anti pendant methyls, revising the earlier syn suggestion. A was recovered from A. oryzae M-2-3 apdACE. No B2 was recovered in the reported heterologous experiments or SB4.1 under those conditions; the A crystal does not determine B configuration. A1 deposition is CCDC 941138; this read does not supply an independently inspected absolute-refinement report. |
+| C087-TRANSCRIPTION | /private/tmp/npm-review-work/shared-next-batch009/aspyridone-revision-comparison/comparison.json; Numbered 2007 wedges, current official MOL/SDF graphs and diagnostic anti alternatives | supports | The original/current A and B graphs encode C8S/C10S (syn). The anti relative class consists of C8S/C10R and C8R/C10S diagnostic alternatives. These are not two isolated products, nor a selected absolute repair. Final A/B numbering differs from precursor 6 C7/C9. |
+| C087-STATICQA | /private/tmp/npm-review-work/shared-next-batch009/native-checks/aspyridone-followup/comparison-static-qa.json; Independent original-pixel, numbering and manual CIP inspection | supports | The independent check confirms carbonyl&gt;C9&gt;methyl&gt;H at C8 and C9-to-carbonyl&gt;ethyl&gt;methyl&gt;H at C10; no mapping/orientation error was found. It supplies no new absolute experiment. |
+| C087-CONSUMER | /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/curate/structure_corrections.py; Full correction contract and seeder invocation/identity joins | supports | The implemented correction accepts only REPLACE_WITH_CHEBI or SPLIT_SHARED_WITH_CHEBI onto a distinct eligible three-star ChEBI graph. It cannot express a primary-derived underdetermined graph plus explicit relative constraint. Current exact ChEBI graph remains the same source syn hand; do not use it as an anti repair. |
+| C087-SEARCH | /private/tmp/npm-review-work/087/chemistry-correction-search.json; Ignored-inclusive target correction and primary-relative contract search | context_only | No existing target-specific correction or primary-relative structure contract was found within the inspected maintained paths. Exact command/output retained. |
+| C087-MODEL | /private/tmp/npm-review-work/087/proposed-relative-representation.json; Independently parsed achiral graph with separately retained source relative constraint | supports | The proposed machine graph leaves both side-chain centres undefined and preserves constitution/charge/tautomer; the anti or suggested-syn relation is retained separately. This is not a racemate assertion and is not yet supported by the current correction loader. |
+
+## Limits And Additional Notes
+
+- This review assesses current assertions and concrete source questions. It does not claim exhaustive discovery of subsequent studies or require every optional mechanism as a condition of review coverage.
+- The 2007 relative assignment and 2013 A-specific revision are adjudicated in the separate chemistry packet; no absolute enantiomer is established by the genetic experiments.
+- The 2013 SI/CIF and exact donor-stock details remain unavailable. The accessible main supports the stated final-A endpoint; no uninspected supplemental conclusion is asserted.
+- No optional protein graph or complete biosynthetic pathway was added or required for these sparse owners.
+- No crystal CIF or detailed 2013 SI absolute-refinement data was inspected. The cited sources do not justify choosing one anti absolute hand for A or transferring the A revision to B. Suggested relative B geometry is retained at the original evidence strength.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35 explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). Skipped tests are not counted as passing tests. Existing ontology caches were used; no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do not establish biological production, stereochemical specificity, evidence adequacy, or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology results. Reuse establishes unchanged repository inputs; it is not a new remote authority query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all tracked files are hashed. Generated Python bytecode and external tool caches are not claimed to have been independently byte-pinned at the prior execution.
+- No scientific owner, inventory, curation table, native status or history was edited. Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification; target strict validation ran afresh. Scientific failed or unavailable checks are distinct from bundle validation.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T144719Z-aspyridone-b
+title: 'Aspyridone B: relative-only identity and precursor-method overreach'
+started_at: '2026-10-21T14:24:55.420864Z'
+finished_at: '2026-10-21T14:47:19.665744Z'
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The stored absolute hand exceeds the original suggested syn assignment. Native
+  induced B isolation is supported, but the imported enzymatic and heterologous methods
+  terminate at a precursor or at A. Preserve the positive native occurrence and relative
+  evidence without transferring the A-specific anti revision or asserting untested
+  A4 production.
+source:
+  git_revision: 1c2402097718c138b081e00943de8f04de0541cd
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/aspyridone-b.yaml
+    sha256: 8806be47ee657da4e65492b9030bf09a08787b14df7116d493502a3d58fb653b
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+    role: context
+  - path: src/naturalproductmech/grading.py
+    sha256: ece54c4a2c0803f034ac59de51b1006cf79ea8d6b6256d75757d4adb88ea9630
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 87, batch 009, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated targets in earlier
+    batch commits (publication tracked separately). At selection, 134 of 3116 current
+    records had campaign coverage and 2982 remained. The population search included
+    ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CHEBI:64705
+targets:
+- target_id: CHEBI:64705
+  path: data/natural_products/alkaloids/aspyridone-b.yaml
+  label: aspyridone B
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - CHEBI:64705
+  command: just validate-strict data/natural_products/alkaloids/aspyridone-b.yaml
+    --out /private/tmp/npm-review-work/087/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T14:24:57.137317Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 current record files agree with PATHS.tsv and their pinned filing
+    pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055340+00:00;
+    finished 2026-10-21T09:55:22.727768+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-corpus.log. Reused
+    for batch009 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch009. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - CHEBI:64705
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 current records passed the documented byte-reproduction gate
+    against committed inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055361+00:00;
+    finished 2026-10-21T09:56:44.050706+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-reproduction.log.
+    Reused for batch009 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch009. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - CHEBI:64705
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The exhaustive review queue produced 8,928 diagnostic rows across 12 queues;
+    this deterministic output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just review-queue --tsv /private/tmp/npm-review-queue-batch-004.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.057401+00:00;
+    finished 2026-10-21T09:54:38.468783+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/review-queue.log. Reused
+    for batch009 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch009. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - CHEBI:64705
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'The configured identifier-label gate passed using the existing ontology
+    caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions,
+    499 warning-only mismatches and 4,744 pairs skipped because their prefixes have
+    no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.061733+00:00;
+    finished 2026-10-21T09:56:36.296159+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/validate-products.log. Reused
+    for batch009 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch009. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - CHEBI:64705
+- check_id: shared-qc
+  name: Full repository quality gate on the current main baseline
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed on the unchanged main baseline
+    during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+    All configured lint, governance, documentation, provenance, source-queue, schema,
+    rendering, reproduction, filing-integrity and reporting stages completed successfully.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:30.560925+00:00;
+    finished 2026-10-21T10:04:44.806799+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/qc.log. Reused for batch009
+    only after a fresh fetch/clean branch, equal commit/tree and two reads of all
+    9,182 tracked byte streams and modes (208,070,649 bytes), including a recheck
+    after the fresh authoritative catalogue. This gate was not rerun for batch009.
+    Original execution times, scope, warnings, exceptions and skips are retained.'
+  target_ids:
+  - CHEBI:64705
+- check_id: R087-FULL-OWNER
+  name: Complete owner and component scope
+  status: passed
+  required: true
+  summary: Complete owner and all matching local source rows read. The native resolved
+    view confirms the empty component-reference set; all formal input hashes agree.
+  target_ids:
+  - CHEBI:64705
+  evidence_ids:
+  - R087-OWNER
+  - R087-LOCAL-SOURCES
+- check_id: S087-C-NATIVE
+  name: Native exact-product source and occurrence scope
+  status: passed
+  required: true
+  summary: The 2007 main and original SI support native engineered SB4.1 isolation
+    of B; no heterologous host is recorded as a natural occurrence.
+  target_ids:
+  - CHEBI:64705
+  evidence_ids:
+  - S087-E-2007
+  - S087-E-2007-SI
+- check_id: S087-C-METHOD
+  name: Final-product locus method and citation fidelity
+  status: failed
+  required: true
+  summary: The imported methods conflate the 2010 precursor experiment, 2007 native
+    induction and later final-A experiment; current claim text does not preserve their
+    endpoint and strain boundaries.
+  target_ids:
+  - CHEBI:64705
+  evidence_ids:
+  - S087-E-LOCAL
+  - S087-E-2007
+  - S087-E-2010
+  - S087-E-2013
+- check_id: S087-C-2013-SI
+  name: Supplemental donor and crystal-detail access
+  status: unavailable
+  required: false
+  summary: The full main establishes its stated endpoint, but inaccessible SI/CIF
+    details remain unknown. They are not evidence of a false occurrence.
+  target_ids:
+  - CHEBI:64705
+  evidence_ids:
+  - S087-E-2013-ACCESS
+- check_id: C087-STRUCTURE
+  name: Primary relative/absolute scope and current graph adjudication
+  status: failed
+  required: true
+  summary: The record expresses a definite absolute hand exceeding the cited source’s
+    suggested relative assignment.
+  target_ids:
+  - CHEBI:64705
+  evidence_ids:
+  - C087-LOCAL
+  - C087-COMPARE
+  - C087-MIBIG
+  - C087-PRIMARY2007
+  - C087-FIG2007
+  - C087-PRIMARY2013
+  - C087-TRANSCRIPTION
+  - C087-AUTH0
+  - C087-AUTH1
+  - C087-AUTH2
+- check_id: C087-ABSOLUTE
+  name: Exact absolute-hand experiment and refinement
+  status: unavailable
+  required: true
+  summary: No B-specific absolute experiment was found in the bounded inspected source
+    set. The unavailable 2013 SI/CIF concerns A; it cannot be counted as a missing
+    B experiment or used to transfer the A revision or an absolute hand to B. This
+    is not an exhaustive absence claim.
+  target_ids:
+  - CHEBI:64705
+  evidence_ids:
+  - C087-PRIMARY2007
+  - C087-PRIMARY2013
+  - C087-TRANSCRIPTION
+evidence:
+- evidence_id: R087-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/aspyridone-b.yaml
+  locator: Complete owner, all scientific claims, inline graphs and history entries
+  accessed_at: '2026-10-21T14:28:41.613530Z'
+  support: supports
+  summary: 'Root read the complete aspyridone B owner following its individual intake.
+    It has 1 occurrences, 1 producer and 1 cluster assertions. Referenced components
+    are empty. Present optional fields: none. These observations use complete parsed
+    content, not a filtered search miss.'
+  snapshot_sha256: 8806be47ee657da4e65492b9030bf09a08787b14df7116d493502a3d58fb653b
+- evidence_id: R087-LOCAL-SOURCES
+  kind: record_content
+  reference: /private/tmp/npm-review-work/087/local-sources.json
+  locator: Every matching MIBiG, LOTUS, ChEBI, CyanoMetDB and NPClassifier row plus
+    resolved owner
+  accessed_at: '2026-10-21T14:28:41.613530Z'
+  support: context_only
+  summary: Root read all matching source rows. The resolved owner equals the complete
+    parsed raw YAML. Retained source assertions and deterministic joins are distinguished
+    from the exact primary experiments reviewed separately.
+  snapshot_sha256: 2293776b1e49fe6f6073a11d873b8ce31aa5a086f012e00e9073d92dd6aa788d
+- evidence_id: R087-IMODULON-DATASETS
+  kind: database
+  reference: /private/tmp/npm-review-work/010/imodulon-datasets.txt
+  locator: Full 28-row dataset catalogue; original retrieval in 010/imodulon-context-receipts.json
+  accessed_at: '2026-10-21T07:21:15.957321Z'
+  support: context_only
+  summary: The complete same-session catalogue retrieved at 07:21:15 UTC has no Aspergillus,
+    Mariannaea, Actinomadura or Stigmatella dataset. The catalogue is reused with
+    its original timestamp; no fresh retrieval is claimed. Species matching alone
+    would not establish an exact strain, gene, locus or product experiment.
+  snapshot_sha256: 1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549
+- evidence_id: R087-Q683881
+  kind: database
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q683881.json
+  locator: Exact organism entity, scientific name and P685 NCBI Taxonomy identifier
+  accessed_at: '2026-10-21T14:29:21.806728Z'
+  support: context_only
+  summary: Literal organism entity Q683881 resolves as Aspergillus nidulans, with
+    P685 162425, matching the local LOTUS row. This verifies identifier routing only;
+    it does not support compound occurrence, assign experimental strain or settle
+    historical taxonomic revisions.
+  snapshot_sha256: 5caccd1cf52cadb24fff9e659dca928af82dd3f7002e63555777e91bb60cfbfa
+- evidence_id: S087-E-LOCAL
+  kind: record_content
+  reference: data/natural_products/alkaloids/aspyridone-b.yaml
+  locator: Complete owner and every supplied matching source row
+  accessed_at: '2026-10-21T14:33:25.940545Z'
+  support: supports
+  summary: 'The exact BGC0000959:2 v5 row names A4 taxon 227321, BN001305.1:383588..417319,
+    Enzymatic assays|Heterologous expression and PMID 17369821; the generated producer
+    is SOURCE_ASSERTION and locus CLUSTER_DEMONSTRATED. The sole LOTUS occurrence
+    cites the 2007 A. nidulans study. Complete raw-row SHA256: 20925a9c9bfad11b37c45097b812cc38762691a9e40692aebe3044980df81eb4.'
+  snapshot_sha256: 8806be47ee657da4e65492b9030bf09a08787b14df7116d493502a3d58fb653b
+- evidence_id: S087-E-2007
+  kind: primary_source
+  reference: https://doi.org/10.1038/nchembio869
+  locator: All five published pages; Methods, Figures 2–3, Table 1 and Scheme 1
+  accessed_at: '2026-10-21T13:24:12.197145Z'
+  support: supports
+  summary: Native A. nidulans AXB4A2 was transformed with alcAp-apdR to make SB4.1.
+    Induced transcript and HPLC comparisons with AXB4A/control and repressed cultures
+    link the apd region to both products; 13 L culture yielded A (10 mg) and B (5
+    mg), characterized by NMR/HRMS. The scheme is proposed enzymology, not a purified
+    final-product assay. The exact B occurrence is positive at the primary structural
+    resolution.
+  snapshot_sha256: 5488cc4728cdcbe36c43b87e3f977883de563ee365b9307eac6718c1c7b903fc
+- evidence_id: S087-E-2007-SI
+  kind: primary_source
+  reference: https://doi.org/10.1038/nchembio869
+  locator: All six official SI text files; exact genotype Table S2, Northern Figure
+    S1 and Methods
+  accessed_at: '2026-10-21T13:23:30.661210Z'
+  support: supports
+  summary: SB4.1 is an engineered AXB4A2 background with ectopic apdR activation.
+    Northern measurements and induced/repressed controls are experimental expression
+    evidence. E. coli DH5alpha is a cloning host. Homology-based proposed protein
+    functions in Table S1 are not enzyme assays, and FGSC A4 is not the tested strain
+    named in this native induction experiment.
+  snapshot_sha256: c0aad52596a83c0ec5acaae7a6b79f969ba7bd0a3a842622390c37071c49c8cf
+- evidence_id: S087-E-2010
+  kind: primary_source
+  reference: https://doi.org/10.1021/ja107084d
+  locator: Complete scientific body and all figure captions
+  accessed_at: '2026-10-21T13:23:30.126063Z'
+  support: supports
+  summary: FGSC A4 supplies the reannotated apdA/apdC genes. Recombinant tagged ApdA
+    from yeast BJ5464-NpgA and ApdC from E. coli BL21(DE3) produce preaspyridone 7
+    in vitro; yeast coexpression produces the same tetramic-acid precursor. Neither
+    final A nor B is the assay endpoint.
+  snapshot_sha256: 6c1b50ce7cd5075d27546494be107db172295c681499bc9bc9ab3fc32022b652
+- evidence_id: S087-E-2010-SI
+  kind: primary_source
+  reference: https://ndownloader.figshare.com/files/4400272
+  locator: Official SI S1–S4 molecular biology, expression, purified assay and product
+    purification
+  accessed_at: '2026-10-21T13:34:56.508233Z'
+  support: supports
+  summary: The original SI independently identifies A4 donor, reannotated constructs
+    and tagged proteins. Purified reactions use 25 micromolar enzymes and 12 h incubation;
+    product 7 is purified from yeast for NMR. This closes the earlier SI access gap
+    and confirms precursor-only scope.
+  snapshot_sha256: 42897537a3e9d15ad42fcbc09239626cd9e7cb0815b7060ee2df1949da2929f5
+- evidence_id: S087-E-2013
+  kind: primary_source
+  reference: https://doi.org/10.1039/C3SC51785C
+  locator: Complete 12-page main; original pages 3–4, Table 1, Results and Experimental
+  accessed_at: '2026-10-21T14:15:34.912404Z'
+  support: supports
+  summary: A. oryzae M-2-3 expressing apdACE produces final aspyridone A at 119.8
+    mg/L (390.6 mg/L is total mixed products). The crystal revises A to the anti relative
+    class; it is not an absolute-hand result. The donor genomic A. nidulans strain
+    is not specified in the accessible main. SB4.1 gives low-titre A by LC-MS; failure
+    to detect B under these conditions does not refute its 2007 isolation. ApdB N-oxygenation
+    and other transformations are not final B production.
+  snapshot_sha256: 0232ebbd1b5d564e061de59a905ec52aa0e4a007d6364a5e8da35e905c9577f3
+- evidence_id: S087-E-2013-ACCESS
+  kind: search
+  reference: https://doi.org/10.1039/C3SC51785C
+  locator: Bounded RSC official SI and CCDC 941138 retrieval attempts; access-01 through
+    access-04
+  accessed_at: '2026-10-21T14:33:25.940545Z'
+  support: context_only
+  summary: The 2013 main is fully recovered, but the official SI and crystal CIF were
+    not recovered through the retained routes. No per-gene SI qRT-PCR result, donor-stock
+    bridge, Flack statistic or independent absolute-hand proof is inferred. The original
+    failed responses remain preserved.
+  snapshot_sha256: 94c31e26c9b4ebf22c709216cb86bcdb23f212035adaf2216a5e926b2559d780
+  search_scope: The listed official RSC SI and CCDC routes and retained primary-literature
+    searches; no claim of global source absence.
+- evidence_id: S087-E-CONSUMERS
+  kind: record_content
+  reference: scripts/seed_from_sources.py
+  locator: Method override loader/application and producer/cluster emission; full
+    claim-reference/strain contracts
+  accessed_at: '2026-10-21T14:33:25.940545Z'
+  support: supports
+  summary: WITHDRAW enforces seven original context fields but not a complete-row
+    SHA by itself. REPLACE enforces no expected_* fields. Pair a correction with the
+    full-row-pinned claim-reference contract or extend/test enforcement. Claim references
+    and strain qualifiers reject structure_correction_note. A strain qualifier cannot
+    change A4 taxon identity into SB4.1 or independently separate producer and locus
+    grades.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: C087-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/alkaloids/aspyridone-b.yaml
+  locator: Complete owner, exact structure, literal xrefs, source concepts and full
+    history; local source rows and current intake chemistry
+  accessed_at: '2026-10-21T14:37:21.068336Z'
+  support: supports
+  summary: Full owner read. Parsed structure gives SFWFNVOTIWZXMZ-QWRGUYRKSA-N, C19H23NO5,
+    formal charge 0; native intake InChI and key match. 0 referenced components.
+  snapshot_sha256: 8806be47ee657da4e65492b9030bf09a08787b14df7116d493502a3d58fb653b
+- evidence_id: C087-COMPARE
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch009/chemistry-prep/chemical-comparison.json
+  locator: aspyridone B exact complete graph comparison
+  accessed_at: '2026-10-21T13:30:02.585471Z'
+  support: supports
+  summary: The inspected source graph matches the owner key and raw MIBiG row. Current
+    original authority graphs were parsed separately, retaining fixed-H/tautomer distinctions,
+    invalid default representations, and assigned versus undefined centres. Detailed
+    exact comparisons are retained in the selected row.
+  snapshot_sha256: b3f3b3c9ff9602a489cae8f945ec6ab8ce183df7f2402a84e5a3ef34f5993652
+- evidence_id: C087-MIBIG
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0000959.5/annotations.json
+  locator: '{''mibig_accession'': ''BGC0000959'', ''compound_index'': ''2'', ''entry_version'':
+    ''5''} complete exact compound row'
+  accessed_at: '2026-10-21T13:21:49.014214Z'
+  support: supports
+  summary: Current source names aspyridone B; its graph and fixed-H identity match
+    the raw owner=True. This is source agreement, not independent experimental proof.
+  snapshot_sha256: 8723514d374010e56c7dff5fdc22cfb8a9b812463674b9903e26c335f968cd7e
+- evidence_id: C087-AUTH0
+  kind: authority
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/SFWFNVOTIWZXMZ-QWRGUYRKSA-N/property/InChIKey,InChI,IsomericSMILES,MolecularFormula,Charge/JSON
+  locator: Exact requested/returned namespace and complete source record; original
+    MOL/SDF where retained
+  accessed_at: '2026-10-21T13:21:50.156597Z'
+  support: supports
+  summary: 'pubchem.compound 15942861; returned name aspyridone B; declared key SFWFNVOTIWZXMZ-QWRGUYRKSA-N;
+    parsed original graph key SFWFNVOTIWZXMZ-QWRGUYRKSA-N; formula C19H23NO5; charge
+    0; stars not applicable. Comparison {''comparable'': True, ''standard_inchi_key'':
+    True, ''fixed_h_inchi'': False, ''formula'': True, ''formal_charge'': True, ''stereo_erased_canonical_smiles'':
+    False}.'
+  snapshot_sha256: 56fb84e5b3f105d6d4489ba27069675876a6f09b3c120a7a9ca8318f9ef1e229
+- evidence_id: C087-AUTH1
+  kind: authority
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/SFWFNVOTIWZXMZ-QWRGUYRKSA-N/property/InChIKey,InChI,IsomericSMILES,MolecularFormula,Charge/JSON
+  locator: Exact requested/returned namespace and complete source record; original
+    MOL/SDF where retained
+  accessed_at: '2026-10-21T13:21:50.156597Z'
+  support: supports
+  summary: 'pubchem.compound 54710081; returned name aspyridone B; declared key SFWFNVOTIWZXMZ-QWRGUYRKSA-N;
+    parsed original graph key SFWFNVOTIWZXMZ-QWRGUYRKSA-N; formula C19H23NO5; charge
+    0; stars not applicable. Comparison {''comparable'': True, ''standard_inchi_key'':
+    True, ''fixed_h_inchi'': True, ''formula'': True, ''formal_charge'': True, ''stereo_erased_canonical_smiles'':
+    True}.'
+  snapshot_sha256: 56fb84e5b3f105d6d4489ba27069675876a6f09b3c120a7a9ca8318f9ef1e229
+- evidence_id: C087-AUTH2
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/64705/
+  locator: Exact requested/returned namespace and complete source record; original
+    MOL/SDF where retained
+  accessed_at: '2026-10-21T13:22:56.972522Z'
+  support: supports
+  summary: 'chebi CHEBI:64705; returned name aspyridone B; declared key SFWFNVOTIWZXMZ-QWRGUYRKSA-N;
+    parsed original graph key SFWFNVOTIWZXMZ-QWRGUYRKSA-N; formula C19H23NO5; charge
+    0; stars 3. Comparison {''comparable'': True, ''standard_inchi_key'': True, ''fixed_h_inchi'':
+    True, ''formula'': True, ''formal_charge'': True, ''stereo_erased_canonical_smiles'':
+    True}. Default SMILES is invalid under the inspected parser; the separate official
+    MOL is used without silently repairing that SMILES.'
+  snapshot_sha256: 66420a172488dcb404f5a56ee665c19405f4167fe6e16edfd7bcd538750df780
+- evidence_id: C087-PRIMARY2007
+  kind: primary_source
+  reference: https://www.iab.kit.edu/microbio/img/content/2007%20nature%20Brakhage%20genome%20mining.pdf
+  locator: Complete original main; printed page 214 structure assignment; A/B characterization
+  accessed_at: '2026-10-21T13:24:12.197145Z'
+  support: supports
+  summary: The paper suggests syn C8/C10 by comparing carbon shifts with experimental/calculated
+    shifts of similar partial structures. B differs by its additional phenyl hydroxyl.
+    The inspected methods and structure discussion establish no independent absolute
+    hand for these side-chain centres.
+  snapshot_sha256: 5488cc4728cdcbe36c43b87e3f977883de563ee365b9307eac6718c1c7b903fc
+- evidence_id: C087-FIG2007
+  kind: primary_source
+  reference: https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnchembio869/MediaObjects/41589_2007_Article_BFnchembio869_Fig3_HTML.jpg
+  locator: Original Figure 3, numbered A1 and B2
+  accessed_at: '2026-10-21T13:23:30.225780Z'
+  support: supports
+  summary: Both side-chain methyl stereobonds in the original extended zigzag are
+    hashed. Independent numbered transcription gives C8S/C10S for each depicted hand,
+    matching the owner; the drawing itself does not establish absolute configuration.
+  snapshot_sha256: e4055406346239bd719e7360271814615ee310f6aeb302acfbe807e785280bce
+- evidence_id: C087-PRIMARY2013
+  kind: primary_source
+  reference: https://d-nb.info/1214327176/34
+  locator: Full original main; pp 3847–3849 and 3851; Figure 3; Methods 4.10
+  accessed_at: '2026-10-21T14:15:34.912404Z'
+  support: supports
+  summary: The crystal of heterologously produced A1 establishes anti pendant methyls,
+    revising the earlier syn suggestion. A was recovered from A. oryzae M-2-3 apdACE.
+    No B2 was recovered in the reported heterologous experiments or SB4.1 under those
+    conditions; the A crystal does not determine B configuration. A1 deposition is
+    CCDC 941138; this read does not supply an independently inspected absolute-refinement
+    report.
+  snapshot_sha256: 0232ebbd1b5d564e061de59a905ec52aa0e4a007d6364a5e8da35e905c9577f3
+- evidence_id: C087-TRANSCRIPTION
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch009/aspyridone-revision-comparison/comparison.json
+  locator: Numbered 2007 wedges, current official MOL/SDF graphs and diagnostic anti
+    alternatives
+  accessed_at: '2026-10-21T14:21:00.793850Z'
+  support: supports
+  summary: The original/current A and B graphs encode C8S/C10S (syn). The anti relative
+    class consists of C8S/C10R and C8R/C10S diagnostic alternatives. These are not
+    two isolated products, nor a selected absolute repair. Final A/B numbering differs
+    from precursor 6 C7/C9.
+  snapshot_sha256: af450c5070d386fd2f3c8b28b6f67b5cc15acca3b87ab29024e4c2100b90f47d
+- evidence_id: C087-STATICQA
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch009/native-checks/aspyridone-followup/comparison-static-qa.json
+  locator: Independent original-pixel, numbering and manual CIP inspection
+  accessed_at: '2026-10-21T14:37:21.068336Z'
+  support: supports
+  summary: The independent check confirms carbonyl>C9>methyl>H at C8 and C9-to-carbonyl>ethyl>methyl>H
+    at C10; no mapping/orientation error was found. It supplies no new absolute experiment.
+  snapshot_sha256: 8dceef19ab18f04a6e172538c5f7e22f84c12c61c6de5c2bfe8b8f3eb452f42d
+- evidence_id: C087-CONSUMER
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/curate/structure_corrections.py
+  locator: Full correction contract and seeder invocation/identity joins
+  accessed_at: '2026-10-21T14:37:21.068336Z'
+  support: supports
+  summary: The implemented correction accepts only REPLACE_WITH_CHEBI or SPLIT_SHARED_WITH_CHEBI
+    onto a distinct eligible three-star ChEBI graph. It cannot express a primary-derived
+    underdetermined graph plus explicit relative constraint. Current exact ChEBI graph
+    remains the same source syn hand; do not use it as an anti repair.
+  snapshot_sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+- evidence_id: C087-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/087/chemistry-correction-search.json
+  locator: Ignored-inclusive target correction and primary-relative contract search
+  accessed_at: '2026-10-21T14:37:21.079317Z'
+  support: context_only
+  summary: No existing target-specific correction or primary-relative structure contract
+    was found within the inspected maintained paths. Exact command/output retained.
+  snapshot_sha256: 241b64fc22a58811fc2c9eaadf2aba531e02be7f5d10804dc18a03523450711a
+  search_scope: Ignored-inclusive maintained curation, src/naturalproductmech and
+    seeder. Bounded implementation search, not an exhaustive literature claim.
+- evidence_id: C087-MODEL
+  kind: validation
+  reference: /private/tmp/npm-review-work/087/proposed-relative-representation.json
+  locator: Independently parsed achiral graph with separately retained source relative
+    constraint
+  accessed_at: '2026-10-21T14:37:21.080073Z'
+  support: supports
+  summary: The proposed machine graph leaves both side-chain centres undefined and
+    preserves constitution/charge/tautomer; the anti or suggested-syn relation is
+    retained separately. This is not a racemate assertion and is not yet supported
+    by the current correction loader.
+  snapshot_sha256: 9179175a7a0a4e0a9ee3168c437dee52645246f240c1c87f1f46e5d81f0c2c58
+assessments:
+- assessment_id: R087-HISTORY
+  area: provenance
+  topic: Native status and retained history
+  outcome: supported
+  summary: The dated SEEDED_FROM_SOURCES entries and retained SEEDED status describe
+    generated provenance. The review does not promote native status or add a curation
+    event.
+  target_ids:
+  - CHEBI:64705
+  evidence_ids:
+  - R087-OWNER
+- assessment_id: R087-OPTIONAL
+  area: completeness
+  topic: Optional mechanism, activity and application scope
+  outcome: not_applicable
+  summary: The complete owner has no structured pathway, causal graph, molecular target,
+    activity, clinical status, application, cross-corpus link or discussion claim.
+    Optional enrichment is separate from correcting present assertions; no mechanism
+    or activity is inferred from the compound name or computed class.
+  target_ids:
+  - CHEBI:64705
+  evidence_ids:
+  - R087-OWNER
+  - R087-LOCAL-SOURCES
+- assessment_id: R087-FILING
+  area: representation
+  topic: Computed filing and source-asserted classes
+  outcome: supported
+  summary: The owner reproduces its exact-key NPClassifier row, including model version
+    npclassifier.gnps2.org@2026-09-07, Alkaloids filing, every returned superclass/class
+    label and false glycoside flag. These are explicitly computed predictions, not
+    experimental proof of precursor use, ring taxonomy, natural origin or exact stereochemical
+    identity. BGC class claims retain their separate MIBiG provenance and biological
+    assessment.
+  target_ids:
+  - CHEBI:64705
+  evidence_ids:
+  - R087-OWNER
+  - R087-LOCAL-SOURCES
+- assessment_id: R087-IMODULON
+  area: completeness
+  topic: Structured transcriptomic context
+  outcome: not_applicable
+  summary: The asserted native producer and exact biosynthetic locus lack a matching
+    dataset in the inspected catalogue. No coexpression/module-membership claim is
+    present in this owner. Recombinant E. coli, yeast or A. oryzae work is not substituted
+    for native-producer transcriptomic evidence. Database noncoverage is not negative
+    biological evidence; paper-specific expression experiments are assessed separately.
+  target_ids:
+  - CHEBI:64705
+  evidence_ids:
+  - R087-OWNER
+  - R087-IMODULON-DATASETS
+- assessment_id: R087-ORGANISM-IDS
+  area: provenance
+  topic: Literal LOTUS organism-identifier routing
+  outcome: supported
+  summary: Every literal organism entity in the matching LOTUS rows resolves to its
+    retained species and NCBI taxon identifier. Compound occurrence, experimental
+    host versus substrate and strain-level taxonomy require the separate primary-source
+    assessment.
+  target_ids:
+  - CHEBI:64705
+  evidence_ids:
+  - R087-LOCAL-SOURCES
+  - R087-Q683881
+- assessment_id: S087-A-ORIGIN
+  area: evidence
+  topic: Native origin and the single LOTUS occurrence
+  outcome: supported
+  summary: Original NMR/HRMS isolation of B from induced A. nidulans SB4.1 supports
+    biological origin at the published resolution. The species-level LOTUS statement
+    is consistent; it does not certify A4 stock production or an absolute hand.
+  target_ids:
+  - CHEBI:64705
+  evidence_ids:
+  - S087-E-2007
+  - S087-E-2007-SI
+- assessment_id: S087-A-METHOD
+  area: evidence
+  topic: Exact endpoint and experimental strain scope
+  outcome: concern
+  summary: The producer remains a database A4 assertion. Native SB4.1 correlation,
+    A4-derived precursor enzymology and M-2-3 final-A production must be separately
+    qualified. No tested strain is silently relabelled as another.
+  target_ids:
+  - CHEBI:64705
+  evidence_ids:
+  - S087-E-2007
+  - S087-E-2010
+  - S087-E-2010-SI
+  - S087-E-2013
+  dimensions:
+  - name: native_experiment
+    value: AXB4A2-derived SB4.1, induced apdR; both final A and B
+    definition: Measured transcript/product correlation and isolated products, not
+      native A4 knockout proof.
+    evidence_ids:
+    - S087-E-2007
+    - S087-E-2007-SI
+  - name: heterologous_endpoint
+    value: '2010: preaspyridone 7; 2013: final A only'
+    definition: Precursor synthesis and final-product synthesis are not interchangeable
+      method evidence.
+    evidence_ids:
+    - S087-E-2010
+    - S087-E-2013
+- assessment_id: C087-GRAPH
+  area: identity
+  topic: Exact source graph, tautomer and current authority equivalence
+  outcome: supported
+  summary: The current B graph matches the original B depiction and official ChEBI
+    MOL. B is constitutionally distinct from A by the extra phenyl hydroxyl. The A-specific
+    anti revision cannot be assigned to B. The default ChEBI SMILES is invalid in
+    the retained parser; the unaltered official MOL is valid. Alternate PubChem 15942860/15942861
+    tautomers share each corresponding Standard key but differ in fixed-H identity;
+    they are not treated as identical depictions.
+  target_ids:
+  - CHEBI:64705
+  evidence_ids:
+  - C087-LOCAL
+  - C087-COMPARE
+  - C087-MIBIG
+  - C087-PRIMARY2007
+  - C087-FIG2007
+  - C087-PRIMARY2013
+  - C087-TRANSCRIPTION
+  - C087-AUTH0
+  - C087-AUTH1
+  - C087-AUTH2
+- assessment_id: C087-STEREO
+  area: evidence
+  topic: Relative configuration versus absolute precision
+  outcome: concern
+  summary: The owner encodes one absolute syn hand, while the cited full original
+    source supplies a suggested relative relationship. No inspected B-specific experiment
+    establishes absolute hand, and the 2013 A crystal supplies no B result.
+  target_ids:
+  - CHEBI:64705
+  evidence_ids:
+  - C087-LOCAL
+  - C087-COMPARE
+  - C087-MIBIG
+  - C087-PRIMARY2007
+  - C087-FIG2007
+  - C087-PRIMARY2013
+  - C087-TRANSCRIPTION
+  - C087-AUTH0
+  - C087-AUTH1
+  - C087-AUTH2
+  dimensions:
+  - name: stereochemical_resolution
+    value: 'B: suggested syn relative; stored absolute hand not established'
+    definition: Relative arrangement, depicted absolute-looking graph and experimental
+      absolute determination are separate evidence levels.
+    evidence_ids:
+    - C087-PRIMARY2007
+    - C087-PRIMARY2013
+    - C087-TRANSCRIPTION
+findings:
+- finding_id: S087-F-ENDPOINT
+  issue_key: mibig-bgc0000959-final-product-method-and-strain-conflation
+  category: provenance
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The locus methods collapse precursor, native induction and final-product
+    experiments
+  description: The 2007 citation demonstrates native engineered SB4.1 induction, not
+    the two imported methods in A4. The 2010 enzymatic/yeast experiment stops at preaspyridone.
+    No final-B heterologous or purified-enzyme result occurs in these studies. The
+    2013 failure to produce B does not negate the 2007 native isolation. Preserve
+    the positive native result while correcting the exact method/stock claim.
+  target_ids:
+  - CHEBI:64705
+  field_paths:
+  - biosynthetic_gene_clusters[0].locus_evidence_methods
+  - biosynthetic_gene_clusters[0].link_evidence_basis
+  - biosynthetic_gene_clusters[0].evidence
+  - producer_organisms[0].notes
+  - producer_organisms[0].evidence
+  evidence_ids:
+  - S087-E-LOCAL
+  - S087-E-2007
+  - S087-E-2010
+  - S087-E-2013
+  - S087-E-CONSUMERS
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Exact-source method decision
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: Full-row-SHA citation and qualification
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Consumed routing and structure guard
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Method/claim scope and grade emission
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Unmodified original source provenance
+- finding_id: C087-F-STEREO
+  issue_key: aspyridone-b-relative-only-source-encoded-absolute
+  category: identity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Represent the B side-chain assignment at its supported relative scope
+  description: The stored S/S hand is a literal rendition of the original drawing,
+    whereas the complete source establishes only a suggested syn relationship. This
+    is unsupported absolute precision, not evidence that the opposite enantiomer is
+    correct or that B shares A’s later anti revision.
+  target_ids:
+  - CHEBI:64705
+  field_paths:
+  - identifier
+  - chemical_structure
+  - grounding_status
+  - source_concepts
+  - xrefs
+  evidence_ids:
+  - C087-PRIMARY2007
+  - C087-FIG2007
+  - C087-PRIMARY2013
+  - C087-TRANSCRIPTION
+  - C087-CONSUMER
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/structure_corrections.py
+    role: Implement a guarded primary-derived graph and relative-constraint action
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: Use only after an explicit tested contract extension
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Preserve representation/relative scope and explicitly adjudicate key-based
+      joins
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Preserve original source graph and row provenance
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: Preserve current source graph; no silent ChEBI correction
+actions:
+- action_id: S087-ACT-ENDPOINT
+  description: 'WITHDRAW both imported strong methods from the current exact B claim
+    using the existing guarded action, with explicit empty replacement methods. This
+    preserves the source origin/locus assertion as SOURCE_ASSERTION/CLUSTER_UNSTATED,
+    not deletion. Record the positive 2007 SB4.1 native expression correlation separately;
+    a reviewed claim-scoped implementation may represent that experimental locus as
+    CLUSTER_CORRELATED without automatically promoting the A4 producer or asserting
+    SB4.1=A4. Pin source_id=BGC0000959:2, expected_source_row_sha256=20925a9c9bfad11b37c45097b812cc38762691a9e40692aebe3044980df81eb4,
+    entry_version=5, taxon_id=NCBITaxon:227321, genome_accession=BN001305.1, locus_from=383588,
+    locus_to=417319, standard_inchi_key=SFWFNVOTIWZXMZ-QWRGUYRKSA-N, original methods=Enzymatic
+    assays|Heterologous expression. Use the minted MIBiG source-concept identifier
+    as override key, not the CHEBI record ID. Pair the method decision with the consumed
+    claim-reference full-row hash guard (or add and test equivalent complete-row enforcement)
+    and dated curator attribution. Route the native occurrence/context to DOI:10.1038/nchembio869
+    and retain DOI:10.1021/ja107084d explicitly as precursor-only. The current REPLACE
+    action alone does not enforce expected_*; do not present a row containing those
+    inert fields as guarded. Current citation/strain consumers reject a structure-corrected
+    row: any combined identity, method and citation repair requires a reviewed/tested
+    composition preserving the untouched original-row pin, exact resulting owner and
+    old-key join adjudication. Do not use producer_strains.tsv to rename A4 as SB4.1.'
+  finding_ids:
+  - S087-F-ENDPOINT
+  target_ids:
+  - CHEBI:64705
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Exact-source method decision
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: Full-row-SHA citation and qualification
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Consumed routing and structure guard
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Method/claim scope and grade emission
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Unmodified original source provenance
+  generator: scripts/seed_from_sources.py consuming exact MIBiG method and claim-reference
+    decisions
+  acceptance_checks:
+  - Exact original selector, full row SHA and all WITHDRAW context fields must match;
+    drift/duplicates fail closed.
+  - Preserve raw upstream methods, citation and source assertion as provenance; distinguish
+    retained source assertions from applicable experiment grades.
+  - No A4 producer upgrade from native SB4.1 or heterologous M-2-3; no precursor endpoint
+    becomes final A/B proof.
+  - Exercise the exact structure/method/citation composition or retain the existing
+    rejection. Regenerate and run documented strict, reproduction, corpus and QC gates
+    only in a separately authorized curation.
+- action_id: C087-A-STEREO
+  finding_ids:
+  - C087-F-STEREO
+  target_ids:
+  - CHEBI:64705
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/structure_corrections.py
+    role: Implement a guarded primary-derived graph and relative-constraint action
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: Use only after an explicit tested contract extension
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Preserve representation/relative scope and explicitly adjudicate key-based
+      joins
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Preserve original source graph and row provenance
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: Preserve current source graph; no silent ChEBI correction
+  description: 'Before changing identity, implement and test a typed primary-derived
+    representation action keyed BGC0000959:2, full original raw-row SHA256 20925a9c9bfad11b37c45097b812cc38762691a9e40692aebe3044980df81eb4,
+    old key SFWFNVOTIWZXMZ-QWRGUYRKSA-N, old SMILES ''CC[C@H](C)C[C@H](C)C(=O)C1=C(C(=CNC1=O)C2=CC(=C(C=C2)O)O)O'',
+    stereo_complete=true and current CHEBI:64705 row SHA256 800025a8ee54c979a000f7b6b7f749e6cb4bb0e755418a1e46d0d1667aa136d5.
+    The reviewable provisional representation is CCC(C)CC(C)C(=O)c1c(O)c(-c2ccc(O)c(O)c2)c[nH]c1=O
+    / SFWFNVOTIWZXMZ-UHFFFAOYSA-N with stereo_complete=false, plus the separately
+    explicit source constraint: C8/C10 syn was suggested by the 2007 comparative carbon-shift
+    argument; absolute hand unresolved. Do not claim racemization or choose an enantiomer.
+    Preserve the old source graph and attribution as disputed history. Current eligible
+    ChEBI is not a repair target; re-mint/re-ground only after a fresh exact-key eligibility/collision
+    audit. Re-adjudicate old-key occurrence, definition, classification and xref joins
+    explicitly: do not automatically transfer them or silently discard supported named-metabolite
+    evidence. No raw inventory/YAML edits, reserved decision rows or unimplemented
+    ordinary correction action. Compose the identity change with the science packet’s
+    exact citation/method and strain actions using original-row pins and explicit
+    transformed-row verification, because the current consumer rejects some combinations.'
+  generator: Tested extension of structure correction and seeder relative-constraint/identity-migration
+    contracts, then guarded regeneration.
+  acceptance_checks:
+  - Original raw row, old graph, ChEBI row and all context drift fail closed; no sibling
+    compound changes.
+  - The regenerated graph does not assert an unsupported hand; exact relative constraint
+    and original evidence strength remain visible.
+  - No silent equivalence to old ChEBI/PubChem or wrong-key inventory joins; preserved
+    named-metabolite claims each receive independent adjudication.
+  - Identity, source citation, method and strain corrections compose without bypassing
+    current incompatibility guards; collisions and repeated targets reject.
+  - No A anti revision is transferred to B; provenance and reproduction checks pass.
+limitations:
+- This review assesses current assertions and concrete source questions. It does not
+  claim exhaustive discovery of subsequent studies or require every optional mechanism
+  as a condition of review coverage.
+- The 2007 relative assignment and 2013 A-specific revision are adjudicated in the
+  separate chemistry packet; no absolute enantiomer is established by the genetic
+  experiments.
+- The 2013 SI/CIF and exact donor-stock details remain unavailable. The accessible
+  main supports the stated final-A endpoint; no uninspected supplemental conclusion
+  is asserted.
+- No optional protein graph or complete biosynthetic pathway was added or required
+  for these sparse owners.
+- No crystal CIF or detailed 2013 SI absolute-refinement data was inspected. The cited
+  sources do not justify choosing one anti absolute hand for A or transferring the
+  A revision to B. Suggested relative B geometry is retained at the original evidence
+  strength.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35
+  explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently
+  verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+  Skipped tests are not counted as passing tests. Existing ontology caches were used;
+  no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do
+  not establish biological production, stereochemical specificity, evidence adequacy,
+  or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology
+  results. Reuse establishes unchanged repository inputs; it is not a new remote authority
+  query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all
+  tracked files are hashed. Generated Python bytecode and external tool caches are
+  not claimed to have been independently byte-pinned at the prior execution.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+tags:
+- path-order-campaign
+- batch-009
+```
