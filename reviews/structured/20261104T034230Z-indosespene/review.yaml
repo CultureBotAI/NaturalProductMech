@@ -1,0 +1,1968 @@
+schema_version: 1.0.0
+review_id: 20261104T034230Z-indosespene
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'Local evidence review: indosespene'
+started_at: '2026-11-04T02:51:03.731190Z'
+finished_at: '2026-11-04T03:42:30.367234Z'
+reviewer:
+  identity: Codex root with native_checks, bgc_science and review_support peer agents
+  kind: agent
+  independence: independent
+  independence_basis: This review team inspected existing owner and retained source
+    bytes without editing them; scientific fragments were cross-checked separately
+    from their author. Local validation is not treated as scientific proof.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: Indosespene retains consistent stored representations and a source-supported
+  local identity boundary. The HKI0576 producer/locus assertion is kept distinct from
+  the characterized SCSIO 02999 XiaI homolog recorded in the partial downstream mechanism.
+  No source-record correction is established; the accepted original maintained result
+  preserves the complete owner and historical mechanism, within the stated verification
+  limits.
+source:
+  git_revision: ce6a5498df5be51116bd5e0c119023ee62bb5464
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: AGENTS.md
+    sha256: 69e4037f8dc97d4b00bb7bb83b41ceca025f6ef578d5c0bf8086f3400becde0b
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/dixiamycin-a.yaml
+    sha256: 9da2b3210e1eea731c3aa967fa9b9723426b676f9575ffd69e232d61f183b070
+    role: context
+  - path: data/natural_products/alkaloids/sulfadixiamycin-a.yaml
+    sha256: 41af168001a71dbe0e2547593ea014f772bee9a3fc7ca50382fe428af06a93e7
+    role: context
+  - path: data/natural_products/alkaloids/sulfadixiamycin-b.yaml
+    sha256: e45d64094add3e9494f6621f25dac848473e8af3f4051e2a1c4d47b9feccb798
+    role: context
+  - path: data/natural_products/alkaloids/sulfadixiamycin-c.yaml
+    sha256: b9175b4f385059ca428525dd7b7bfa48df2d26c52c444396b3f472607c5ecc08
+    role: context
+  - path: data/natural_products/alkaloids/xiamycin-a.yaml
+    sha256: 36d7bcb4a2327283319bc7748248cc05f512499a5d408139eeba00698ffca881
+    role: context
+  - path: data/natural_products/terpenoids/indosespene.yaml
+    sha256: 25fe1c76cd6e0e980054888a0de7ad02b96630a96e0525082bd6619929108d66
+    role: target
+  - path: data/natural_products/terpenoids/sespenine.yaml
+    sha256: 4cc1321d5f7b8b58e58f9159b09803ce99c67b1d06b0ce67be584c8ad1d11412
+    role: context
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/graph_components.py
+    sha256: 10f08517869f482954fd583fd19d5750ef286a76297c231e6c9a5ba8dc023e17
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: src/naturalproductmech/validation/write_validated.py
+    sha256: 4b7648fc5d2e7a5d26ad8bb168dbcae609aaa2694434a8ed5cfcb33fb66ff80a
+    role: context
+scope:
+  description: One complete NaturalProductRecord, including all present scientific
+    claims, history and declared mechanisms; external verification remains unavailable.
+  selection: Campaign path order 2337; one of the next ten uncovered paths selected
+    from the 3116-record corpus. Membership uses the canonical validated catalogue
+    plus retained committed campaign bundles.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-cb4ddd98d8
+targets:
+- target_id: naturalproductmech:mibig-cb4ddd98d8
+  path: data/natural_products/terpenoids/indosespene.yaml
+  label: indosespene
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained harmonization generator; seeded fields are corrected through
+      maintained inputs and validated regeneration.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Retained MIBiG structure, producer and compound-specific locus assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/npclassifier.tsv
+    role: Pinned computed classification and filing assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Maintained extraction of MIBiG compound names, structures, stereochemistry
+      flags and source provenance.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Retained cited occurrence assertions, distinct from demonstrated production.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/pubchem_bioassay.tsv
+    role: Retained assay rows or empty-assay sentinels; source outcome and title alone
+      do not establish mechanism.
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/graph_components.py
+    role: Future maintained complete-owner reader implementation; not invoked in this
+      plan.
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/validation/write_validated.py
+    role: Future maintained complete-owner reader implementation; not invoked in this
+      plan.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/terpenoids/indosespene.yaml
+    role: Curator-owned declared graphs, graph references, pathway steps and history;
+      imported molecular-target assertions and other seeded fields retain inventory
+      ownership. Curated graph/pathway changes require the validated writer and a
+      curation event.
+  ownership_note: This review proposes no record edit. Source corrections belong in
+    maintained inventories, implemented curation tables, extractors or the seeder;
+    generated pages are not owners. This mechanism-bearing owner requires separately
+    authorized complete maintained resolution before scientific assessment and draft
+    assembly. Raw owner capture is not a maintained resolved view.
+checks:
+- name: Complete offline maintained reader for indosespene
+  command: /private/tmp/npm-record-reviews-20261021/.venv/bin/python -I -B /private/tmp/npm-review-work/shared-next-batch234/read-selected-mechanism-guarded-001.py
+    2337 71fbbf20423cdaeb6c1122e60c963fb4b06a7597498a76d169b57bfdd1b9b2dd b6118881b8c0f6c2644b42b7c8e0d15d81b3d7b3aef4ea8a1662b0ac784f3e3d
+    f9f94d32e9ad2ce944df6845d88f913d82f34c7dcb5d404e4993fbb9cbbf9685 685e975cd87c5fcbc0cd260bdba7c0a2934720ad590120a3c7b9bf4c921410c2
+    86e1f474999523449bfa1e1b952ef39959df9fd86d91d890e0698453d87ae219
+  exit_code: 0
+  status: passed
+  required: true
+  check_id: maintained-mechanism-reader
+  summary: One original offline maintained call preserves the complete Indosespene
+    owner, one graph/three nodes/two edges, one pathway step and three history events;
+    the qualified historical homolog claim is not independently reverified.
+  target_ids:
+  - naturalproductmech:mibig-cb4ddd98d8
+  evidence_ids:
+  - support-2337-mechanism-owner
+  - support-2337-reader
+  - support-2337-reader-acceptance
+  - support-2337-reader-execution
+- check_id: root-native-strict_ten
+  name: strict_ten
+  status: passed
+  required: true
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  target_ids:
+  - naturalproductmech:mibig-cb4ddd98d8
+  command: just validate-strict data/natural_products/terpenoids/heptelidic-acid.yaml
+    data/natural_products/terpenoids/hirsutene.yaml data/natural_products/terpenoids/hopene.yaml
+    data/natural_products/terpenoids/hordediene.yaml data/natural_products/terpenoids/hordetriene.yaml
+    data/natural_products/terpenoids/hygromycin-a.yaml data/natural_products/terpenoids/indosespene.yaml
+    data/natural_products/terpenoids/isobrevione-e.yaml data/natural_products/terpenoids/isochloro-merochlorin-b.yaml
+    data/natural_products/terpenoids/isorenieratene.yaml --workers 1 --out /private/tmp/npm-native-checks/batch-234/validate-strict-selected10-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_ten
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-strict_full
+  name: strict_full
+  status: passed
+  required: true
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  target_ids:
+  - naturalproductmech:mibig-cb4ddd98d8
+  command: just validate-all --workers 1 --out /private/tmp/npm-native-checks/batch-234/validate-all-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_full
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-lockfile
+  name: lockfile
+  status: passed
+  required: true
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  target_ids:
+  - naturalproductmech:mibig-cb4ddd98d8
+  command: just verify-corpus --summary
+  exit_code: 0
+  evidence_ids:
+  - root-native-lockfile
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-reproduction
+  name: reproduction
+  status: passed
+  required: true
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  target_ids:
+  - naturalproductmech:mibig-cb4ddd98d8
+  command: just verify-reproduction
+  exit_code: 0
+  evidence_ids:
+  - root-native-reproduction
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-queue
+  name: queue
+  status: passed
+  required: true
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  target_ids:
+  - naturalproductmech:mibig-cb4ddd98d8
+  command: just review-queue --tsv /private/tmp/npm-native-checks/batch-234/review-queue-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-queue
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-full-qc
+  name: Full just qc
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-cb4ddd98d8
+  summary: 'Not run under the external-request prohibition: the complete recipe includes
+    upstream vendored synchronization. The five executed local checks are recorded
+    separately.'
+- check_id: root-ontology-authorities
+  name: Complete OAK identifier/label authority check
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-cb4ddd98d8
+  summary: Complete offline ontology authority coverage was not established for this
+    run; no ontology retrieval or remote resolution was attempted. Retained taxonomy
+    evidence has only its explicitly stated local scope.
+- check_id: root-primary-and-live-sources
+  name: Primary literature and current structured database/identifier verification
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-cb4ddd98d8
+  summary: All external requests are prohibited by the user. Fresh database and identifier
+    verification and complete primary-literature coverage are unavailable. Any retained
+    original literature actually inspected is recorded separately with its historical
+    scope.
+evidence:
+- evidence_id: support-2337-owner
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/terpenoids/indosespene.yaml
+  locator: Whole current owner plaintext and complete curation_history
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: Complete owner and all 3 history events are covered by current exact whole-reading
+    attribution. Native status remains SEEDED.
+  snapshot_sha256: 25fe1c76cd6e0e980054888a0de7ad02b96630a96e0525082bd6619929108d66
+- evidence_id: support-2337-capture
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/owner-capture-DATA-001.json
+  locator: /records/6
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: 'Complete original captured owner and exact mechanism/component presence,
+    distinct from maintained resolution. Exact copied saved values: {"/records/6":
+    {"component_captures": [], "mechanism_capture_scope": "raw_owner_and_declared_components_only_not_maintained_resolution",
+    "order": 2337, "owner_document": {"bgc_class": ["TERPENE", "OTHER"], "biosynthesis_origin":
+    "NATURAL_PRODUCT", "biosynthetic_gene_clusters": [{"accession": "mibig:BGC0000665",
+    "bgc_class": ["TERPENE", "OTHER"], "entry_status": "active", "entry_version":
+    "5", "evidence": [{"evidence_type": "DATABASE_ASSERTION", "notes": "MIBiG BGC0000665
+    entry version 5; citation taken from the compound evidence level", "reference":
+    "DOI:10.1039/c1ob05283g"}], "genome_accession": "genbank:HE815466.1", "link_evidence_basis":
+    "CLUSTER_DEMONSTRATED", "locus_evidence_methods": ["Knock-out studies", "Enzymatic
+    assays", "Heterologous expression"], "organism_label": "Streptomyces sp. HKI0576",
+    "organism_taxon_id": "NCBITaxon:995841"}], "biosynthetic_pathway": [{"enzyme_id":
+    "UniProtKB:I3VFB9", "enzyme_label": "XiaI", "evidence": [{"evidence_type": "PRIMARY_EXPERIMENT",
+    "notes": "Li et al. identified the Streptomyces sp. SCSIO 02999 xiamycin/oxiamycin
+    cluster and biochemically assigned XiaI to the indosespene-to-xiamycin A oxidative
+    cyclization.", "reference": "DOI:10.1021/ja303004g", "snippet": "the flavin dependent
+    oxygenase XiaI was biochemically characterized in vitro to convert indosespene
+    to XMA"}, {"evidence_type": "DATABASE_ASSERTION", "notes": "UniProtKB:I3VFB9 resolves
+    XiaI to the unreviewed Streptomyces sp. SCSIO 02999 protein and cross-references
+    EMBL JQ812811 protein AFK78075.1.", "reference": "https://www.uniprot.org/uniprotkb/I3VFB9",
+    "retrieved_on": "2026-09-27"}, {"evidence_type": "DATABASE_ASSERTION", "notes":
+    "NCBI GenPept AFK78075.1 is the JQ812811.1 XiaI coding sequence from the Streptomyces
+    sp. SCSIO 02999 xiamycin/oxiamycin gene cluster.", "reference": "https://www.ncbi.nlm.nih.gov/protein/AFK78075.1",
+    "retrieved_on": "2026-09-27"}], "notes": "This curates the biochemically characterized
+    Streptomyces sp. SCSIO 02999 XiaI (UniProtKB:I3VFB9, mibig:BGC0000666) oxidative
+    cyclization of indosespene to xiamycin A as the characterized homolog for the
+    xim/xia pathway (this indosespene record is seeded from the homologous Streptomyces
+    sp. HKI0576 xim cluster mibig:BGC0000665); upstream formation of indosespene and
+    parallel oxiamycin tailoring remain uncurated.", "product": "naturalproductmech:mibig-9f978c0043",
+    "step_number": 1, "substrate": "naturalproductmech:mibig-cb4ddd98d8"}], "causal_graphs":
+    [{"description": "Partial xiamycin A biosynthesis graph on indosespene (seeded
+    with the Streptomyces sp. HKI0576 mibig:BGC0000665 xim cluster) recording the
+    biochemically characterized homologous Streptomyces sp. SCSIO 02999 (mibig:BGC0000666)
+    flavin-dependent monooxygenase XiaI oxidative cyclization of indosespene into
+    xiamycin A.", "edges": [{"evidence": [{"evidence_type": "PRIMARY_EXPERIMENT",
+    "notes": "Li et al. identified the Streptomyces sp. SCSIO 02999 xiamycin/oxiamycin
+    cluster and biochemically assigned XiaI to the indosespene-to-xiamycin A oxidative
+    cyclization.", "reference": "DOI:10.1021/ja303004g", "snippet": "the flavin dependent
+    oxygenase XiaI was biochemically characterized in vitro to convert indosespene
+    to XMA"}, {"evidence_type": "DATABASE_ASSERTION", "notes": "UniProtKB:I3VFB9 resolves
+    XiaI to the unreviewed Streptomyces sp. SCSIO 02999 protein and cross-references
+    EMBL JQ812811 protein AFK78075.1.", "reference": "https://www.uniprot.org/uniprotkb/I3VFB9",
+    "retrieved_on": "2026-09-27"}, {"evidence_type": "DATABASE_ASSERTION", "notes":
+    "NCBI GenPept AFK78075.1 is the JQ812811.1 XiaI coding sequence from the Streptomyces
+    sp. SCSIO 02999 xiamycin/oxiamycin gene cluster.", "reference": "https://www.ncbi.nlm.nih.gov/protein/AFK78075.1",
+    "retrieved_on": "2026-09-27"}], "object": "xiai", "predicate": "is oxidatively
+    cyclized by", "subject": "indosespene"}, {"evidence": [{"evidence_type": "PRIMARY_EXPERIMENT",
+    "notes": "Li et al. identified the Streptomyces sp. SCSIO 02999 xiamycin/oxiamycin
+    cluster and biochemically assigned XiaI to the indosespene-to-xiamycin A oxidative
+    cyclization.", "reference": "DOI:10.1021/ja303004g", "snippet": "the flavin dependent
+    oxygenase XiaI was biochemically characterized in vitro to convert indosespene
+    to XMA"}, {"evidence_type": "DATABASE_ASSERTION", "notes": "UniProtKB:I3VFB9 resolves
+    XiaI to the unreviewed Streptomyces sp. SCSIO 02999 protein and cross-references
+    EMBL JQ812811 protein AFK78075.1.", "reference": "https://www.uniprot.org/uniprotkb/I3VFB9",
+    "retrieved_on": "2026-09-27"}, {"evidence_type": "DATABASE_ASSERTION", "notes":
+    "NCBI GenPept AFK78075.1 is the JQ812811.1 XiaI coding sequence from the Streptomyces
+    sp. SCSIO 02999 xiamycin/oxiamycin gene cluster.", "reference": "https://www.ncbi.nlm.nih.gov/protein/AFK78075.1",
+    "retrieved_on": "2026-09-27"}], "notes": "This is a single curated tailoring step;
+    upstream indosespene formation and the alternative oxiamycin branch remain uncurated.",
+    "object": "xiamycin_a", "predicate": "forms", "subject": "xiai"}], "graph_id":
+    "indosespene-xiai-biosynthesis", "nodes": [{"grounding_status": "GROUNDED", "identifier":
+    "naturalproductmech:mibig-cb4ddd98d8", "label": "indosespene", "node_id": "indosespene",
+    "node_type": "COMPOUND"}, {"grounding_status": "GROUNDED", "identifier": "UniProtKB:I3VFB9",
+    "label": "XiaI", "node_id": "xiai", "node_type": "ENZYME"}, {"grounding_status":
+    "GROUNDED", "identifier": "naturalproductmech:mibig-9f978c0043", "label": "xiamycin
+    A", "node_id": "xiamycin_a", "node_type": "COMPOUND"}], "scope": "BIOSYNTHESIS"}],
+    "chemical_structure": {"smiles": "C[C@]12CC[C@@H]([C@@]([C@@H]1CCC(=C)[C@@H]2CC3=CNC4=CC=CC=C43)(C)C(=O)O)O",
+    "standard_inchi": "InChI=1S/C23H29NO3/c1-14-8-9-19-22(2,11-10-20(25)23(19,3)21(26)27)17(14)12-15-13-24-18-7-5-4-6-16(15)18/h4-7,13,17,19-20,24-25H,1,8-12H2,2-3H3,(H,26,27)/t17-,19+,20-,22+,23-/m0/s1",
+    "standard_inchi_key": "QDZOYOCJZCVSSV-BZJMLBMJSA-N", "stereo_complete": true,
+    "structure_source": "MIBIG", "structure_source_id": "mibig:BGC0000665"}, "compound_classes":
+    ["Meroterpenoid"], "curation_history": [{"action": "SEEDED_FROM_SOURCES", "changes":
+    "Seeded from the committed inventories in data/raw/.", "curator": "seed_from_sources",
+    "timestamp": "2026-09-10T05:54:12Z"}, {"action": "SEEDED_FROM_SOURCES", "changes":
+    "Seeded from the committed inventories in data/raw/.", "curator": "seed_from_sources",
+    "timestamp": "2026-09-25T03:03:09Z"}, {"action": "RECORD_CURATED", "changes":
+    "Added BIOSYNTHESIS pathway and causal graph to indosespene (naturalproductmech:mibig-cb4ddd98d8,
+    mibig:BGC0000665 in Streptomyces sp. HKI0576) recording its downstream oxidative
+    cyclization to xiamycin A (naturalproductmech:mibig-9f978c0043) catalyzed by the
+    biochemically characterized homologous flavin-dependent monooxygenase XiaI (UniProtKB:I3VFB9,
+    mibig:BGC0000666 in Streptomyces sp. SCSIO 02999).", "curator": "antigravity",
+    "llm_assisted": true, "timestamp": "2026-10-23T08:00:00Z"}], "curation_status":
+    "SEEDED", "grounding_notes": "No 3-star ChEBI entry shares this structure, so
+    the record keeps a content-hashed identifier.", "grounding_status": "MINTED",
+    "identifier": "naturalproductmech:mibig-cb4ddd98d8", "label": "indosespene", "np_classification":
+    {"class_results": ["Indole-Diterpenoid alkaloids (Penitrems)"], "is_glycoside":
+    false, "pathway_results": ["Terpenoids"], "superclass_results": ["Tryptophan alkaloids"],
+    "tool": "NPClassifier", "tool_version": "npclassifier.gnps2.org@2026-09-07"},
+    "np_pathway": "TERPENOIDS", "occurrence_taxon_groups": ["ACTINOBACTERIAL"], "occurrences":
+    [{"evidence": [{"evidence_type": "DATABASE_ASSERTION", "notes": "LOTUS structure-organism-reference
+    triple. LOTUS reports that the compound was found in the organism; it does not
+    assert that the organism produces it.", "reference": "DOI:10.1039/C1OB05283G"}],
+    "notes": "Wikidata organism http://www.wikidata.org/entity/Q1144013", "source":
+    "LOTUS", "taxon_id": "NCBITaxon:1883", "taxon_label": "Streptomyces", "taxon_source":
+    "NCBITaxon"}], "producer_organisms": [{"biosynthetic_gene_cluster": "mibig:BGC0000665",
+    "evidence": [{"evidence_type": "DATABASE_ASSERTION", "notes": "MIBiG BGC0000665
+    entry version 5; citation taken from the compound evidence level", "reference":
+    "DOI:10.1039/c1ob05283g"}], "evidence_basis": "BGC_CHARACTERIZED", "notes": "Locus
+    evidence: Knock-out studies|Enzymatic assays|Heterologous expression. That evidence
+    grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which
+    is a different question.", "source": "MIBIG", "source_version": "5", "taxon_id":
+    "NCBITaxon:995841", "taxon_label": "Streptomyces sp. HKI0576"}], "producer_taxon_groups":
+    ["ACTINOBACTERIAL"], "source_concepts": [{"minted_identifier": "naturalproductmech:mibig-cb4ddd98d8",
+    "source": "MIBIG", "source_id": "BGC0000665", "source_label": "indosespene", "source_version":
+    "5"}], "xrefs": ["pubchem:53468951"]}, "owner_pin": {"bytes": 8595, "path": "/private/tmp/npm-record-reviews-20261021/data/natural_products/terpenoids/indosespene.yaml",
+    "sha256": "25fe1c76cd6e0e980054888a0de7ad02b96630a96e0525082bd6619929108d66"},
+    "path": "data/natural_products/terpenoids/indosespene.yaml", "read_finished_at":
+    "2026-11-04T02:51:03.734679Z", "read_started_at": "2026-11-04T02:51:03.731190Z"}}'
+  snapshot_sha256: 685e975cd87c5fcbc0cd260bdba7c0a2934720ad590120a3c7b9bf4c921410c2
+- evidence_id: support-2337-grounding-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/owner-capture-DATA-001.json
+  locator: /records/6/owner_document/identifier; /records/6/owner_document/label;
+    /records/6/owner_document/chemical_structure; /records/6/owner_document/grounding_status;
+    /records/6/owner_document/grounding_notes; /records/6/owner_document/source_concepts;
+    /records/6/owner_document/xrefs
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: 'Exact identity, source definition and grounding fields, including unresolved
+    discussion where present. Exact copied saved values: {"/records/6/owner_document/chemical_structure":
+    {"smiles": "C[C@]12CC[C@@H]([C@@]([C@@H]1CCC(=C)[C@@H]2CC3=CNC4=CC=CC=C43)(C)C(=O)O)O",
+    "standard_inchi": "InChI=1S/C23H29NO3/c1-14-8-9-19-22(2,11-10-20(25)23(19,3)21(26)27)17(14)12-15-13-24-18-7-5-4-6-16(15)18/h4-7,13,17,19-20,24-25H,1,8-12H2,2-3H3,(H,26,27)/t17-,19+,20-,22+,23-/m0/s1",
+    "standard_inchi_key": "QDZOYOCJZCVSSV-BZJMLBMJSA-N", "stereo_complete": true,
+    "structure_source": "MIBIG", "structure_source_id": "mibig:BGC0000665"}, "/records/6/owner_document/grounding_notes":
+    "No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed
+    identifier.", "/records/6/owner_document/grounding_status": "MINTED", "/records/6/owner_document/identifier":
+    "naturalproductmech:mibig-cb4ddd98d8", "/records/6/owner_document/label": "indosespene",
+    "/records/6/owner_document/source_concepts": [{"minted_identifier": "naturalproductmech:mibig-cb4ddd98d8",
+    "source": "MIBIG", "source_id": "BGC0000665", "source_label": "indosespene", "source_version":
+    "5"}], "/records/6/owner_document/xrefs": ["pubchem:53468951"]}'
+  snapshot_sha256: 685e975cd87c5fcbc0cd260bdba7c0a2934720ad590120a3c7b9bf4c921410c2
+- evidence_id: support-2337-origin-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/owner-capture-DATA-001.json
+  locator: /records/6/owner_document/producer_organisms; /records/6/owner_document/biosynthetic_gene_clusters;
+    /records/6/owner_document/producer_taxon_groups
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: 'Separately graded producer and locus source assertions. Exact copied saved
+    values: {"/records/6/owner_document/biosynthetic_gene_clusters": [{"accession":
+    "mibig:BGC0000665", "bgc_class": ["TERPENE", "OTHER"], "entry_status": "active",
+    "entry_version": "5", "evidence": [{"evidence_type": "DATABASE_ASSERTION", "notes":
+    "MIBiG BGC0000665 entry version 5; citation taken from the compound evidence level",
+    "reference": "DOI:10.1039/c1ob05283g"}], "genome_accession": "genbank:HE815466.1",
+    "link_evidence_basis": "CLUSTER_DEMONSTRATED", "locus_evidence_methods": ["Knock-out
+    studies", "Enzymatic assays", "Heterologous expression"], "organism_label": "Streptomyces
+    sp. HKI0576", "organism_taxon_id": "NCBITaxon:995841"}], "/records/6/owner_document/producer_organisms":
+    [{"biosynthetic_gene_cluster": "mibig:BGC0000665", "evidence": [{"evidence_type":
+    "DATABASE_ASSERTION", "notes": "MIBiG BGC0000665 entry version 5; citation taken
+    from the compound evidence level", "reference": "DOI:10.1039/c1ob05283g"}], "evidence_basis":
+    "BGC_CHARACTERIZED", "notes": "Locus evidence: Knock-out studies|Enzymatic assays|Heterologous
+    expression. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field
+    grades the taxon claim, which is a different question.", "source": "MIBIG", "source_version":
+    "5", "taxon_id": "NCBITaxon:995841", "taxon_label": "Streptomyces sp. HKI0576"}],
+    "/records/6/owner_document/producer_taxon_groups": ["ACTINOBACTERIAL"]}'
+  snapshot_sha256: 685e975cd87c5fcbc0cd260bdba7c0a2934720ad590120a3c7b9bf4c921410c2
+- evidence_id: support-2337-occurrence-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/owner-capture-DATA-001.json
+  locator: /records/6/owner_document/occurrences; /records/6/owner_document/occurrence_taxon_groups
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: 'Written occurrence placements and retained further-row notes. Exact copied
+    saved values: {"/records/6/owner_document/occurrence_taxon_groups": ["ACTINOBACTERIAL"],
+    "/records/6/owner_document/occurrences": [{"evidence": [{"evidence_type": "DATABASE_ASSERTION",
+    "notes": "LOTUS structure-organism-reference triple. LOTUS reports that the compound
+    was found in the organism; it does not assert that the organism produces it.",
+    "reference": "DOI:10.1039/C1OB05283G"}], "notes": "Wikidata organism http://www.wikidata.org/entity/Q1144013",
+    "source": "LOTUS", "taxon_id": "NCBITaxon:1883", "taxon_label": "Streptomyces",
+    "taxon_source": "NCBITaxon"}]}'
+  snapshot_sha256: 685e975cd87c5fcbc0cd260bdba7c0a2934720ad590120a3c7b9bf4c921410c2
+- evidence_id: support-2337-assay-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/owner-capture-DATA-001.json
+  locator: /records/6/owner_document
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: 'Written observations; whole-owner selector establishes optional-root absence
+    within this owner only. Exact copied saved values: {"/records/6/owner_document":
+    {"bgc_class": ["TERPENE", "OTHER"], "biosynthesis_origin": "NATURAL_PRODUCT",
+    "biosynthetic_gene_clusters": [{"accession": "mibig:BGC0000665", "bgc_class":
+    ["TERPENE", "OTHER"], "entry_status": "active", "entry_version": "5", "evidence":
+    [{"evidence_type": "DATABASE_ASSERTION", "notes": "MIBiG BGC0000665 entry version
+    5; citation taken from the compound evidence level", "reference": "DOI:10.1039/c1ob05283g"}],
+    "genome_accession": "genbank:HE815466.1", "link_evidence_basis": "CLUSTER_DEMONSTRATED",
+    "locus_evidence_methods": ["Knock-out studies", "Enzymatic assays", "Heterologous
+    expression"], "organism_label": "Streptomyces sp. HKI0576", "organism_taxon_id":
+    "NCBITaxon:995841"}], "biosynthetic_pathway": [{"enzyme_id": "UniProtKB:I3VFB9",
+    "enzyme_label": "XiaI", "evidence": [{"evidence_type": "PRIMARY_EXPERIMENT", "notes":
+    "Li et al. identified the Streptomyces sp. SCSIO 02999 xiamycin/oxiamycin cluster
+    and biochemically assigned XiaI to the indosespene-to-xiamycin A oxidative cyclization.",
+    "reference": "DOI:10.1021/ja303004g", "snippet": "the flavin dependent oxygenase
+    XiaI was biochemically characterized in vitro to convert indosespene to XMA"},
+    {"evidence_type": "DATABASE_ASSERTION", "notes": "UniProtKB:I3VFB9 resolves XiaI
+    to the unreviewed Streptomyces sp. SCSIO 02999 protein and cross-references EMBL
+    JQ812811 protein AFK78075.1.", "reference": "https://www.uniprot.org/uniprotkb/I3VFB9",
+    "retrieved_on": "2026-09-27"}, {"evidence_type": "DATABASE_ASSERTION", "notes":
+    "NCBI GenPept AFK78075.1 is the JQ812811.1 XiaI coding sequence from the Streptomyces
+    sp. SCSIO 02999 xiamycin/oxiamycin gene cluster.", "reference": "https://www.ncbi.nlm.nih.gov/protein/AFK78075.1",
+    "retrieved_on": "2026-09-27"}], "notes": "This curates the biochemically characterized
+    Streptomyces sp. SCSIO 02999 XiaI (UniProtKB:I3VFB9, mibig:BGC0000666) oxidative
+    cyclization of indosespene to xiamycin A as the characterized homolog for the
+    xim/xia pathway (this indosespene record is seeded from the homologous Streptomyces
+    sp. HKI0576 xim cluster mibig:BGC0000665); upstream formation of indosespene and
+    parallel oxiamycin tailoring remain uncurated.", "product": "naturalproductmech:mibig-9f978c0043",
+    "step_number": 1, "substrate": "naturalproductmech:mibig-cb4ddd98d8"}], "causal_graphs":
+    [{"description": "Partial xiamycin A biosynthesis graph on indosespene (seeded
+    with the Streptomyces sp. HKI0576 mibig:BGC0000665 xim cluster) recording the
+    biochemically characterized homologous Streptomyces sp. SCSIO 02999 (mibig:BGC0000666)
+    flavin-dependent monooxygenase XiaI oxidative cyclization of indosespene into
+    xiamycin A.", "edges": [{"evidence": [{"evidence_type": "PRIMARY_EXPERIMENT",
+    "notes": "Li et al. identified the Streptomyces sp. SCSIO 02999 xiamycin/oxiamycin
+    cluster and biochemically assigned XiaI to the indosespene-to-xiamycin A oxidative
+    cyclization.", "reference": "DOI:10.1021/ja303004g", "snippet": "the flavin dependent
+    oxygenase XiaI was biochemically characterized in vitro to convert indosespene
+    to XMA"}, {"evidence_type": "DATABASE_ASSERTION", "notes": "UniProtKB:I3VFB9 resolves
+    XiaI to the unreviewed Streptomyces sp. SCSIO 02999 protein and cross-references
+    EMBL JQ812811 protein AFK78075.1.", "reference": "https://www.uniprot.org/uniprotkb/I3VFB9",
+    "retrieved_on": "2026-09-27"}, {"evidence_type": "DATABASE_ASSERTION", "notes":
+    "NCBI GenPept AFK78075.1 is the JQ812811.1 XiaI coding sequence from the Streptomyces
+    sp. SCSIO 02999 xiamycin/oxiamycin gene cluster.", "reference": "https://www.ncbi.nlm.nih.gov/protein/AFK78075.1",
+    "retrieved_on": "2026-09-27"}], "object": "xiai", "predicate": "is oxidatively
+    cyclized by", "subject": "indosespene"}, {"evidence": [{"evidence_type": "PRIMARY_EXPERIMENT",
+    "notes": "Li et al. identified the Streptomyces sp. SCSIO 02999 xiamycin/oxiamycin
+    cluster and biochemically assigned XiaI to the indosespene-to-xiamycin A oxidative
+    cyclization.", "reference": "DOI:10.1021/ja303004g", "snippet": "the flavin dependent
+    oxygenase XiaI was biochemically characterized in vitro to convert indosespene
+    to XMA"}, {"evidence_type": "DATABASE_ASSERTION", "notes": "UniProtKB:I3VFB9 resolves
+    XiaI to the unreviewed Streptomyces sp. SCSIO 02999 protein and cross-references
+    EMBL JQ812811 protein AFK78075.1.", "reference": "https://www.uniprot.org/uniprotkb/I3VFB9",
+    "retrieved_on": "2026-09-27"}, {"evidence_type": "DATABASE_ASSERTION", "notes":
+    "NCBI GenPept AFK78075.1 is the JQ812811.1 XiaI coding sequence from the Streptomyces
+    sp. SCSIO 02999 xiamycin/oxiamycin gene cluster.", "reference": "https://www.ncbi.nlm.nih.gov/protein/AFK78075.1",
+    "retrieved_on": "2026-09-27"}], "notes": "This is a single curated tailoring step;
+    upstream indosespene formation and the alternative oxiamycin branch remain uncurated.",
+    "object": "xiamycin_a", "predicate": "forms", "subject": "xiai"}], "graph_id":
+    "indosespene-xiai-biosynthesis", "nodes": [{"grounding_status": "GROUNDED", "identifier":
+    "naturalproductmech:mibig-cb4ddd98d8", "label": "indosespene", "node_id": "indosespene",
+    "node_type": "COMPOUND"}, {"grounding_status": "GROUNDED", "identifier": "UniProtKB:I3VFB9",
+    "label": "XiaI", "node_id": "xiai", "node_type": "ENZYME"}, {"grounding_status":
+    "GROUNDED", "identifier": "naturalproductmech:mibig-9f978c0043", "label": "xiamycin
+    A", "node_id": "xiamycin_a", "node_type": "COMPOUND"}], "scope": "BIOSYNTHESIS"}],
+    "chemical_structure": {"smiles": "C[C@]12CC[C@@H]([C@@]([C@@H]1CCC(=C)[C@@H]2CC3=CNC4=CC=CC=C43)(C)C(=O)O)O",
+    "standard_inchi": "InChI=1S/C23H29NO3/c1-14-8-9-19-22(2,11-10-20(25)23(19,3)21(26)27)17(14)12-15-13-24-18-7-5-4-6-16(15)18/h4-7,13,17,19-20,24-25H,1,8-12H2,2-3H3,(H,26,27)/t17-,19+,20-,22+,23-/m0/s1",
+    "standard_inchi_key": "QDZOYOCJZCVSSV-BZJMLBMJSA-N", "stereo_complete": true,
+    "structure_source": "MIBIG", "structure_source_id": "mibig:BGC0000665"}, "compound_classes":
+    ["Meroterpenoid"], "curation_history": [{"action": "SEEDED_FROM_SOURCES", "changes":
+    "Seeded from the committed inventories in data/raw/.", "curator": "seed_from_sources",
+    "timestamp": "2026-09-10T05:54:12Z"}, {"action": "SEEDED_FROM_SOURCES", "changes":
+    "Seeded from the committed inventories in data/raw/.", "curator": "seed_from_sources",
+    "timestamp": "2026-09-25T03:03:09Z"}, {"action": "RECORD_CURATED", "changes":
+    "Added BIOSYNTHESIS pathway and causal graph to indosespene (naturalproductmech:mibig-cb4ddd98d8,
+    mibig:BGC0000665 in Streptomyces sp. HKI0576) recording its downstream oxidative
+    cyclization to xiamycin A (naturalproductmech:mibig-9f978c0043) catalyzed by the
+    biochemically characterized homologous flavin-dependent monooxygenase XiaI (UniProtKB:I3VFB9,
+    mibig:BGC0000666 in Streptomyces sp. SCSIO 02999).", "curator": "antigravity",
+    "llm_assisted": true, "timestamp": "2026-10-23T08:00:00Z"}], "curation_status":
+    "SEEDED", "grounding_notes": "No 3-star ChEBI entry shares this structure, so
+    the record keeps a content-hashed identifier.", "grounding_status": "MINTED",
+    "identifier": "naturalproductmech:mibig-cb4ddd98d8", "label": "indosespene", "np_classification":
+    {"class_results": ["Indole-Diterpenoid alkaloids (Penitrems)"], "is_glycoside":
+    false, "pathway_results": ["Terpenoids"], "superclass_results": ["Tryptophan alkaloids"],
+    "tool": "NPClassifier", "tool_version": "npclassifier.gnps2.org@2026-09-07"},
+    "np_pathway": "TERPENOIDS", "occurrence_taxon_groups": ["ACTINOBACTERIAL"], "occurrences":
+    [{"evidence": [{"evidence_type": "DATABASE_ASSERTION", "notes": "LOTUS structure-organism-reference
+    triple. LOTUS reports that the compound was found in the organism; it does not
+    assert that the organism produces it.", "reference": "DOI:10.1039/C1OB05283G"}],
+    "notes": "Wikidata organism http://www.wikidata.org/entity/Q1144013", "source":
+    "LOTUS", "taxon_id": "NCBITaxon:1883", "taxon_label": "Streptomyces", "taxon_source":
+    "NCBITaxon"}], "producer_organisms": [{"biosynthetic_gene_cluster": "mibig:BGC0000665",
+    "evidence": [{"evidence_type": "DATABASE_ASSERTION", "notes": "MIBiG BGC0000665
+    entry version 5; citation taken from the compound evidence level", "reference":
+    "DOI:10.1039/c1ob05283g"}], "evidence_basis": "BGC_CHARACTERIZED", "notes": "Locus
+    evidence: Knock-out studies|Enzymatic assays|Heterologous expression. That evidence
+    grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which
+    is a different question.", "source": "MIBIG", "source_version": "5", "taxon_id":
+    "NCBITaxon:995841", "taxon_label": "Streptomyces sp. HKI0576"}], "producer_taxon_groups":
+    ["ACTINOBACTERIAL"], "source_concepts": [{"minted_identifier": "naturalproductmech:mibig-cb4ddd98d8",
+    "source": "MIBIG", "source_id": "BGC0000665", "source_label": "indosespene", "source_version":
+    "5"}], "xrefs": ["pubchem:53468951"]}}'
+  snapshot_sha256: 685e975cd87c5fcbc0cd260bdba7c0a2934720ad590120a3c7b9bf4c921410c2
+- evidence_id: support-2337-classification-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/owner-capture-DATA-001.json
+  locator: /records/6/owner_document/np_pathway; /records/6/owner_document/np_classification;
+    /records/6/owner_document/bgc_class; /records/6/owner_document/compound_classes
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: 'Versioned computed filing and separately asserted BGC/compound classes.
+    Exact copied saved values: {"/records/6/owner_document/bgc_class": ["TERPENE",
+    "OTHER"], "/records/6/owner_document/compound_classes": ["Meroterpenoid"], "/records/6/owner_document/np_classification":
+    {"class_results": ["Indole-Diterpenoid alkaloids (Penitrems)"], "is_glycoside":
+    false, "pathway_results": ["Terpenoids"], "superclass_results": ["Tryptophan alkaloids"],
+    "tool": "NPClassifier", "tool_version": "npclassifier.gnps2.org@2026-09-07"},
+    "/records/6/owner_document/np_pathway": "TERPENOIDS"}'
+  snapshot_sha256: 685e975cd87c5fcbc0cd260bdba7c0a2934720ad590120a3c7b9bf4c921410c2
+- evidence_id: support-2337-chemistry
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/6/declared_structure; /records/6/comparisons; /records/6/atom_correspondence
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: 'Complete original declared forms/comparisons/map, unchanged. Exact copied
+    saved values: {"/records/6/atom_correspondence": {"complete_atom_count_match":
+    true, "full_graph_identity_established": false, "scope": "One chirality-aware
+    substructure match; no independent full graph or natural identity claim.", "smiles_to_inchi_atom_indices":
+    [1, 21, 10, 9, 19, 22, 18, 8, 7, 13, 0, 16, 11, 14, 12, 23, 17, 6, 4, 3, 5, 15,
+    2, 20, 25, 26, 24]}, "/records/6/comparisons": {"atom_count_equal": true, "bond_count_equal":
+    true, "both_keys_equal_declared": true, "canonical_isomeric_smiles_equal": true,
+    "canonical_nonisomeric_smiles_equal": true, "formal_charge_equal": true, "formula_equal":
+    true, "smiles_formula_equals_literal_InChI_main_layer": true, "standard_inchi_equal":
+    true, "standard_inchi_key_equal": true}, "/records/6/declared_structure": {"smiles":
+    "C[C@]12CC[C@@H]([C@@]([C@@H]1CCC(=C)[C@@H]2CC3=CNC4=CC=CC=C43)(C)C(=O)O)O", "standard_inchi":
+    "InChI=1S/C23H29NO3/c1-14-8-9-19-22(2,11-10-20(25)23(19,3)21(26)27)17(14)12-15-13-24-18-7-5-4-6-16(15)18/h4-7,13,17,19-20,24-25H,1,8-12H2,2-3H3,(H,26,27)/t17-,19+,20-,22+,23-/m0/s1",
+    "standard_inchi_key": "QDZOYOCJZCVSSV-BZJMLBMJSA-N", "stereo_complete": true,
+    "structure_source": "MIBIG", "structure_source_id": "mibig:BGC0000665"}}'
+  snapshot_sha256: 816109c1f8ded0ba3050e06805885b40faa13f7b8f59b68ed3c6e5f9509bbf2c
+- evidence_id: support-2337-topology
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/6/smiles/computed; /records/6/inchi/computed; /records/6/declared_structure;
+    /records/6/comparisons; /records/6/atom_correspondence
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: Both saved forms represent neutral C23H29NO3 with 27 heavy atoms, 30 bonds
+    and one connected component. The complete graph combines a bicyclic aliphatic
+    framework bearing an exocyclic methylene, a hydroxyl and a carboxylic acid with
+    a methylene-linked indole. Five tetrahedral centres are specified in both forms.
+    All ten original comparisons are true and the saved chirality-aware correspondence
+    spans all atoms, while full_graph_identity_established remains false. These results
+    support local stored-form consistency, not fresh natural identity, enzyme specificity
+    or independent stereochemical assignment.
+  snapshot_sha256: 816109c1f8ded0ba3050e06805885b40faa13f7b8f59b68ed3c6e5f9509bbf2c
+- evidence_id: support-2337-intake
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/intakes/2337-inspect-001.json
+  locator: /status; /repository; /source; /targets
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: 'Actual canonical intake, all admitted input roles and maintained correction
+    ownership. Exact copied saved values: {"/repository": "CultureBotAI/NaturalProductMech",
+    "/source": {"git_revision": "ce6a5498df5be51116bd5e0c119023ee62bb5464", "inputs":
+    [{"path": ".claude/skills/curate-yaml-record/references/review-checklist.md",
+    "role": "context", "sha256": "13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9"},
+    {"path": ".claude/skills/review-yaml-record/SKILL.md", "role": "context", "sha256":
+    "493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae"}, {"path":
+    "AGENTS.md", "role": "context", "sha256": "69e4037f8dc97d4b00bb7bb83b41ceca025f6ef578d5c0bf8086f3400becde0b"},
+    {"path": "conf/id_label_targets.yaml", "role": "context", "sha256": "24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6"},
+    {"path": "conf/producer_evidence.tsv", "role": "context", "sha256": "67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131"},
+    {"path": "conf/record_review.yaml", "role": "context", "sha256": "e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8"},
+    {"path": "curation/lotus_occurrence_exclusions.tsv", "role": "context", "sha256":
+    "d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d"}, {"path":
+    "curation/mibig_claim_references.tsv", "role": "context", "sha256": "bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029"},
+    {"path": "curation/mibig_locus_evidence_overrides.tsv", "role": "context", "sha256":
+    "7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e"}, {"path":
+    "curation/mibig_producer_isolates.tsv", "role": "context", "sha256": "8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8"},
+    {"path": "curation/mibig_producer_strains.tsv", "role": "context", "sha256": "bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae"},
+    {"path": "curation/mibig_structure_corrections.tsv", "role": "context", "sha256":
+    "c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0"}, {"path":
+    "curation/mibig_xref_exclusions.tsv", "role": "context", "sha256": "cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c"},
+    {"path": "data/natural_products/PATHS.tsv", "role": "context", "sha256": "2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3"},
+    {"path": "data/natural_products/alkaloids/dixiamycin-a.yaml", "role": "context",
+    "sha256": "9da2b3210e1eea731c3aa967fa9b9723426b676f9575ffd69e232d61f183b070"},
+    {"path": "data/natural_products/alkaloids/sulfadixiamycin-a.yaml", "role": "context",
+    "sha256": "41af168001a71dbe0e2547593ea014f772bee9a3fc7ca50382fe428af06a93e7"},
+    {"path": "data/natural_products/alkaloids/sulfadixiamycin-b.yaml", "role": "context",
+    "sha256": "e45d64094add3e9494f6621f25dac848473e8af3f4051e2a1c4d47b9feccb798"},
+    {"path": "data/natural_products/alkaloids/sulfadixiamycin-c.yaml", "role": "context",
+    "sha256": "b9175b4f385059ca428525dd7b7bfa48df2d26c52c444396b3f472607c5ecc08"},
+    {"path": "data/natural_products/alkaloids/xiamycin-a.yaml", "role": "context",
+    "sha256": "36d7bcb4a2327283319bc7748248cc05f512499a5d408139eeba00698ffca881"},
+    {"path": "data/natural_products/terpenoids/indosespene.yaml", "role": "target",
+    "sha256": "25fe1c76cd6e0e980054888a0de7ad02b96630a96e0525082bd6619929108d66"},
+    {"path": "data/natural_products/terpenoids/sespenine.yaml", "role": "context",
+    "sha256": "4cc1321d5f7b8b58e58f9159b09803ce99c67b1d06b0ce67be584c8ad1d11412"},
+    {"path": "data/raw/MANIFEST.yaml", "role": "context", "sha256": "b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3"},
+    {"path": "data/raw/antibioticmech_inchikeys.tsv", "role": "context", "sha256":
+    "ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6"}, {"path":
+    "data/raw/bindingdb_targets.tsv", "role": "context", "sha256": "3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1"},
+    {"path": "data/raw/chebi_origins.tsv", "role": "context", "sha256": "fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8"},
+    {"path": "data/raw/chebi_structures.tsv", "role": "context", "sha256": "62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2"},
+    {"path": "data/raw/corpus_taxa.obo", "role": "context", "sha256": "8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9"},
+    {"path": "data/raw/cyanometdb_occurrences.tsv", "role": "context", "sha256": "f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8"},
+    {"path": "data/raw/lotus_occurrences.tsv", "role": "context", "sha256": "ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94"},
+    {"path": "data/raw/mibig_compounds.tsv", "role": "context", "sha256": "e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6"},
+    {"path": "data/raw/npclassifier.tsv", "role": "context", "sha256": "acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3"},
+    {"path": "data/raw/pubchem_bioassay.tsv", "role": "context", "sha256": "6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b"},
+    {"path": "docs/CURATION.md", "role": "context", "sha256": "c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa"},
+    {"path": "docs/HARMONIZATION.md", "role": "context", "sha256": "c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79"},
+    {"path": "docs/record-review-profile.md", "role": "context", "sha256": "1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a"},
+    {"path": "docs/record-reviews.md", "role": "context", "sha256": "452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b"},
+    {"path": "justfile", "role": "context", "sha256": "4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550"},
+    {"path": "schema/record_review.yaml", "role": "context", "sha256": "229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb"},
+    {"path": "scripts/extract_chebi.py", "role": "context", "sha256": "46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f"},
+    {"path": "scripts/extract_mibig.py", "role": "context", "sha256": "e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c"},
+    {"path": "scripts/seed_from_sources.py", "role": "context", "sha256": "5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5"},
+    {"path": "src/naturalproductmech/curate/claim_references.py", "role": "context",
+    "sha256": "0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3"},
+    {"path": "src/naturalproductmech/graph_components.py", "role": "context", "sha256":
+    "10f08517869f482954fd583fd19d5750ef286a76297c231e6c9a5ba8dc023e17"}, {"path":
+    "src/naturalproductmech/schema/naturalproductmech.yaml", "role": "context", "sha256":
+    "9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d"}, {"path":
+    "src/naturalproductmech/validation/write_validated.py", "role": "context", "sha256":
+    "4b7648fc5d2e7a5d26ad8bb168dbcae609aaa2694434a8ed5cfcb33fb66ff80a"}], "state":
+    "working_tree"}, "/status": "inspection_only", "/targets": [{"kind": "generated",
+    "label": "indosespene", "owner_paths": [{"path": "scripts/seed_from_sources.py",
+    "repository": "CultureBotAI/NaturalProductMech", "role": "Maintained harmonization
+    generator; seeded fields are corrected through maintained inputs and validated
+    regeneration."}, {"path": "data/raw/mibig_compounds.tsv", "repository": "CultureBotAI/NaturalProductMech",
+    "role": "Retained MIBiG structure, producer and compound-specific locus assertions."},
+    {"path": "data/raw/npclassifier.tsv", "repository": "CultureBotAI/NaturalProductMech",
+    "role": "Pinned computed classification and filing assertions."}, {"path": "scripts/extract_mibig.py",
+    "repository": "CultureBotAI/NaturalProductMech", "role": "Maintained extraction
+    of MIBiG compound names, structures, stereochemistry flags and source provenance."},
+    {"path": "data/raw/lotus_occurrences.tsv", "repository": "CultureBotAI/NaturalProductMech",
+    "role": "Retained cited occurrence assertions, distinct from demonstrated production."},
+    {"path": "data/raw/pubchem_bioassay.tsv", "repository": "CultureBotAI/NaturalProductMech",
+    "role": "Retained assay rows or empty-assay sentinels; source outcome and title
+    alone do not establish mechanism."}, {"path": "src/naturalproductmech/graph_components.py",
+    "repository": "CultureBotAI/NaturalProductMech", "role": "Future maintained complete-owner
+    reader implementation; not invoked in this plan."}, {"path": "src/naturalproductmech/validation/write_validated.py",
+    "repository": "CultureBotAI/NaturalProductMech", "role": "Future maintained complete-owner
+    reader implementation; not invoked in this plan."}, {"path": "data/natural_products/terpenoids/indosespene.yaml",
+    "repository": "CultureBotAI/NaturalProductMech", "role": "Curator-owned declared
+    graphs, graph references, pathway steps and history; imported molecular-target
+    assertions and other seeded fields retain inventory ownership. Curated graph/pathway
+    changes require the validated writer and a curation event."}], "ownership_note":
+    "This review proposes no record edit. Source corrections belong in maintained
+    inventories, implemented curation tables, extractors or the seeder; generated
+    pages are not owners. This mechanism-bearing owner requires separately authorized
+    complete maintained resolution before scientific assessment and draft assembly.
+    Raw owner capture is not a maintained resolved view.", "path": "data/natural_products/terpenoids/indosespene.yaml",
+    "record_class": "NaturalProductRecord", "target_id": "naturalproductmech:mibig-cb4ddd98d8"}]}'
+  snapshot_sha256: b6118881b8c0f6c2644b42b7c8e0d15d81b3d7b3aef4ea8a1662b0ac784f3e3d
+- evidence_id: support-2337-intake-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/root-intake-acceptance-001.json
+  locator: /status; /accepted; /verification
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: ROOT accepts ten original canonical intakes, 391 source placements and
+    64 distinct paths; historical pre-chemistry wording is not an assertion that later
+    results remain pending.
+  snapshot_sha256: ab4d160d38578683c3857d1f68d898e77f4d78fada2c45a5dfbee2ac84711f4c
+- evidence_id: support-2337-inventory-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/root-source-inventory-acceptance-001.json
+  locator: /status; /accepted
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: ROOT accepts the original local inventory; source meanings remain separately
+    attributed.
+  snapshot_sha256: 8620060199b8cb588265f159597b48ef2f5eec6524a4cf7df2cdd79b355691fd
+- evidence_id: support-2337-plan-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/root-input-plan-acceptance-001.json
+  locator: /status; /accepted
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: ROOT accepts the original input plan, not a scientific verdict.
+  snapshot_sha256: deb5f4c33ef02d9305b2facff8cb41fb97ce52a98ecdd06b4c4f76b57be743ca
+- evidence_id: support-2337-diagnostic-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/root-diagnostic-acceptance-001.json
+  locator: /status; /accepted; /verification; /warnings_scope
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: ROOT accepts twenty original stored parses. Hygromycin retains two false
+    canonical-SMILES comparisons; the four original undefined-stereo warnings remain
+    global and unassigned.
+  snapshot_sha256: f7919a1be685503b598b6b4f44cc5afcefa1704c0a28293fd4faee95f6809e75
+- evidence_id: support-2337-native-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/root-native-five-gates-acceptance-001.json
+  locator: /status; /verification; /limits
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: Five original local commands passed; full QC and complete OAK authority
+    coverage remain unavailable.
+  snapshot_sha256: 9b347913accb95a57046572b329d24f2b6c534cd2508f62284190eeb4d7b671a
+- evidence_id: support-2337-diagnostic-execution
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/chemistry-local/diagnostic-execution-001.json
+  locator: Whole original execution receipt
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: ROOT operated the one accepted diagnostic. No replay, alternate parse or
+    owner-specific warning attribution is introduced.
+  snapshot_sha256: 873fea2b7ac543d0193b0c1d9eb2e133b3cccf956df1b97740f2e7726f892caf
+- evidence_id: support-2337-plan
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-target-input-plan-001.json
+  locator: /records/6; /source_placement_count; /unique_source_path_count
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: Complete accepted owner input plan; cohort 391 placements /64 paths, this
+    owner 45 placements.
+  snapshot_sha256: e7c5d98e12dd26b964130aa3c74bcc688dde7562ea027f2f0409f775d60b5245
+- evidence_id: support-2337-source-notes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-scope-notes-001.json
+  locator: /reading; /cautions; /scientific_limits
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: Joint complete source reading, exact raw/history carries and source-specific
+    cautions; these notes precede scientific adjudication.
+  snapshot_sha256: 685535fd23ffb826f01db2da0f521fe110097c0929a6ef8132722b2456ede5be
+- evidence_id: support-2337-curation-scope
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-scope-notes-001.json
+  locator: /curation
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: BGC performed the bounded 92-literal scan of eight directly opened implemented
+    tables, including ignored files, with zero textual hits. Reserved decisions.tsv
+    was unconsumed; no global absence claim follows.
+  snapshot_sha256: 685535fd23ffb826f01db2da0f521fe110097c0929a6ef8132722b2456ede5be
+- evidence_id: support-2337-source-routes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json
+  locator: /contexts/17/source_scope_inventory/matched_chebi_ids; /contexts/17/source_scope_inventory/source_taxa;
+    /contexts/17/source_scope_inventory/forward_taxon_merge_matches; /contexts/17/source_scope_inventory/nonorganism_matches;
+    /contexts/17/source_scope_inventory/actual_assay_rows; /contexts/17/source_scope_inventory/blank_AID_sentinels;
+    /contexts/17/source_scope_inventory/related_corpus_rows
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: 'Complete saved route metadata, including assay/sentinel distinctions and
+    exact empty routes. Exact copied saved values: {"/contexts/17/source_scope_inventory/actual_assay_rows":
+    [], "/contexts/17/source_scope_inventory/blank_AID_sentinels": [{"last_physical_line":
+    5548, "physical_line": 5548, "raw_tsv_record": "QDZOYOCJZCVSSV-BZJMLBMJSA-N\t53468951\t\t(no
+    assay data)\t\t\t\t\t\t\t\n", "row": {"activity_name": "", "activity_outcome":
+    "", "activity_value_um": "", "aid": "", "assay_name": "(no assay data)", "assay_type":
+    "", "cid": "53468951", "depositor": "", "reference": "", "standard_inchi_key":
+    "QDZOYOCJZCVSSV-BZJMLBMJSA-N", "target_accession": ""}, "row_sha256": "857e8a2d0a87e4863f0991791c272ce44edcd1ba43ed32836690ea04e3218758"}],
+    "/contexts/17/source_scope_inventory/forward_taxon_merge_matches": [], "/contexts/17/source_scope_inventory/matched_chebi_ids":
+    [], "/contexts/17/source_scope_inventory/nonorganism_matches": [], "/contexts/17/source_scope_inventory/related_corpus_rows":
+    [], "/contexts/17/source_scope_inventory/source_taxa": ["NCBITaxon:1883", "NCBITaxon:995841"]}'
+  snapshot_sha256: cceb756ce0d1dcd24c26c05b558acf8366ebd9d830603ab3da900ce34934ec00
+- evidence_id: support-2337-cached-taxonomy
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json
+  locator: /cached_taxonomy/whole_stanzas/3; /cached_taxonomy/whole_stanzas/25
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: 'All relevant saved cached stanzas, including exact forward-merge destinations;
+    names and synonyms remain retained local authority. Exact copied saved values:
+    {"/cached_taxonomy/whole_stanzas/25": {"complete_stanza": "[Term]\nid: NCBITaxon:995841\nname:
+    Streptomyces sp. HKI0576\n\n", "id": "NCBITaxon:995841", "physical_line": 114675},
+    "/cached_taxonomy/whole_stanzas/3": {"complete_stanza": "[Term]\nid: NCBITaxon:1883\nname:
+    Streptomyces\nsynonym: \"\\\"Microstreptospora\\\" Yan et al.\" EXACT []\nsynonym:
+    \"Actinopycnidium Krasil''nikov 1962\" EXACT []\nsynonym: \"Actinosporangium Krasil''nikov
+    and Yuan 1961\" EXACT []\nsynonym: \"Chainia\" EXACT []\nsynonym: \"Elytrosporangium
+    Falcao de Morais et al. 1966\" EXACT []\nsynonym: \"Kitasatoa Matsumae and Hata
+    1968 (Approved Lists 1980)\" EXACT []\nsynonym: \"Microellobosporia\" EXACT []\nsynonym:
+    \"Streptoverticillium Baldacci 1958\" EXACT []\n\n", "id": "NCBITaxon:1883", "physical_line":
+    2798}}'
+  snapshot_sha256: cceb756ce0d1dcd24c26c05b558acf8366ebd9d830603ab3da900ce34934ec00
+- evidence_id: support-2337-query-mibig_compounds
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json
+  locator: /contexts/17/source_scope_inventory/joins/mibig_compounds
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: 'Complete retained query frame, all matches and exact no-match scope; no
+    replay. Exact copied saved values: {"/contexts/17/source_scope_inventory/joins/mibig_compounds":
+    {"matches": [{"last_physical_line": 780, "physical_line": 780, "raw_tsv_record":
+    "BGC0000665\t5\tactive\tquestionable\tcomplete\tindosespene\t2\tC[C@]12CC[C@@H]([C@@]([C@@H]1CCC(=C)[C@@H]2CC3=CNC4=CC=CC=C43)(C)C(=O)O)O\tInChI=1S/C23H29NO3/c1-14-8-9-19-22(2,11-10-20(25)23(19,3)21(26)27)17(14)12-15-13-24-18-7-5-4-6-16(15)18/h4-7,13,17,19-20,24-25H,1,8-12H2,2-3H3,(H,26,27)/t17-,19+,20-,22+,23-/m0/s1\tQDZOYOCJZCVSSV-BZJMLBMJSA-N\ttrue\tMeroterpenoid\tpubchem:53468951\tNCBITaxon:995841\tStreptomyces
+    sp. HKI0576\tterpene|other\tSesquiterpene|other\tHE815466.1\t\t\tKnock-out studies|Enzymatic
+    assays|Heterologous expression\tBGC_CHARACTERIZED\tCLUSTER_DEMONSTRATED\tDOI:10.1039/c1ob05283g\tCOMPOUND_EVIDENCE\n",
+    "row": {"bgc_classes": "terpene|other", "bgc_subclasses": "Sesquiterpene|other",
+    "cluster_link_evidence_basis": "CLUSTER_DEMONSTRATED", "compound_classes": "Meroterpenoid",
+    "compound_index": "2", "compound_name": "indosespene", "database_ids": "pubchem:53468951",
+    "entry_completeness": "complete", "entry_quality": "questionable", "entry_status":
+    "active", "entry_version": "5", "genome_accession": "HE815466.1", "locus_evidence_methods":
+    "Knock-out studies|Enzymatic assays|Heterologous expression", "locus_from": "",
+    "locus_to": "", "mibig_accession": "BGC0000665", "primary_reference": "DOI:10.1039/c1ob05283g",
+    "producer_evidence_basis": "BGC_CHARACTERIZED", "reference_basis": "COMPOUND_EVIDENCE",
+    "smiles": "C[C@]12CC[C@@H]([C@@]([C@@H]1CCC(=C)[C@@H]2CC3=CNC4=CC=CC=C43)(C)C(=O)O)O",
+    "standard_inchi": "InChI=1S/C23H29NO3/c1-14-8-9-19-22(2,11-10-20(25)23(19,3)21(26)27)17(14)12-15-13-24-18-7-5-4-6-16(15)18/h4-7,13,17,19-20,24-25H,1,8-12H2,2-3H3,(H,26,27)/t17-,19+,20-,22+,23-/m0/s1",
+    "standard_inchi_key": "QDZOYOCJZCVSSV-BZJMLBMJSA-N", "stereo_complete": "true",
+    "taxon_id": "NCBITaxon:995841", "taxon_label": "Streptomyces sp. HKI0576"}, "row_sha256":
+    "380f7e6146593e65da88bde2aca94668ad29d0857f609e369e014feaa4a4c3b7"}], "predicate":
+    "exact complete standard_inchi_key equality", "query": "QDZOYOCJZCVSSV-BZJMLBMJSA-N"}}'
+  snapshot_sha256: cceb756ce0d1dcd24c26c05b558acf8366ebd9d830603ab3da900ce34934ec00
+- evidence_id: support-2337-source-mibig_compounds
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv
+  locator: Header line 1; physical lines 780–780, row_sha256 380f7e6146593e65da88bde2aca94668ad29d0857f609e369e014feaa4a4c3b7
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: 'Complete retained physical row fields: [{"bgc_classes": "terpene|other",
+    "bgc_subclasses": "Sesquiterpene|other", "cluster_link_evidence_basis": "CLUSTER_DEMONSTRATED",
+    "compound_classes": "Meroterpenoid", "compound_index": "2", "compound_name": "indosespene",
+    "database_ids": "pubchem:53468951", "entry_completeness": "complete", "entry_quality":
+    "questionable", "entry_status": "active", "entry_version": "5", "genome_accession":
+    "HE815466.1", "locus_evidence_methods": "Knock-out studies|Enzymatic assays|Heterologous
+    expression", "locus_from": "", "locus_to": "", "mibig_accession": "BGC0000665",
+    "primary_reference": "DOI:10.1039/c1ob05283g", "producer_evidence_basis": "BGC_CHARACTERIZED",
+    "reference_basis": "COMPOUND_EVIDENCE", "smiles": "C[C@]12CC[C@@H]([C@@]([C@@H]1CCC(=C)[C@@H]2CC3=CNC4=CC=CC=C43)(C)C(=O)O)O",
+    "standard_inchi": "InChI=1S/C23H29NO3/c1-14-8-9-19-22(2,11-10-20(25)23(19,3)21(26)27)17(14)12-15-13-24-18-7-5-4-6-16(15)18/h4-7,13,17,19-20,24-25H,1,8-12H2,2-3H3,(H,26,27)/t17-,19+,20-,22+,23-/m0/s1",
+    "standard_inchi_key": "QDZOYOCJZCVSSV-BZJMLBMJSA-N", "stereo_complete": "true",
+    "taxon_id": "NCBITaxon:995841", "taxon_label": "Streptomyces sp. HKI0576"}]'
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: support-2337-query-chebi_structures
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json
+  locator: /contexts/17/source_scope_inventory/joins/chebi_structures
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: 'Complete retained query frame, all matches and exact no-match scope; no
+    replay. Exact copied saved values: {"/contexts/17/source_scope_inventory/joins/chebi_structures":
+    {"matches": [], "predicate": "exact complete standard_inchi_key equality", "query":
+    "QDZOYOCJZCVSSV-BZJMLBMJSA-N"}}'
+  snapshot_sha256: cceb756ce0d1dcd24c26c05b558acf8366ebd9d830603ab3da900ce34934ec00
+- evidence_id: support-2337-query-lotus_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json
+  locator: /contexts/17/source_scope_inventory/joins/lotus_occurrences
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: 'Complete retained query frame, all matches and exact no-match scope; no
+    replay. Exact copied saved values: {"/contexts/17/source_scope_inventory/joins/lotus_occurrences":
+    {"matches": [{"last_physical_line": 7175, "physical_line": 7175, "raw_tsv_record":
+    "QDZOYOCJZCVSSV-BZJMLBMJSA-N\tStreptomyces\tNCBITaxon:1883\thttp://www.wikidata.org/entity/Q1144013\t10.1039/C1OB05283G\thttp://www.wikidata.org/entity/Q77279626\n",
+    "row": {"organism_name": "Streptomyces", "organism_wikidata": "http://www.wikidata.org/entity/Q1144013",
+    "reference_doi": "10.1039/C1OB05283G", "standard_inchi_key": "QDZOYOCJZCVSSV-BZJMLBMJSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q77279626", "taxon_id":
+    "NCBITaxon:1883"}, "row_sha256": "2126983eb55d6c1ae8f9cbd67d2fc6268fd725637d9babea23ff1703fc05e09c"}],
+    "predicate": "exact complete standard_inchi_key equality", "query": "QDZOYOCJZCVSSV-BZJMLBMJSA-N"}}'
+  snapshot_sha256: cceb756ce0d1dcd24c26c05b558acf8366ebd9d830603ab3da900ce34934ec00
+- evidence_id: support-2337-source-lotus_occurrences
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical lines 7175–7175, row_sha256 2126983eb55d6c1ae8f9cbd67d2fc6268fd725637d9babea23ff1703fc05e09c
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: 'Complete retained physical row fields: [{"organism_name": "Streptomyces",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q1144013", "reference_doi":
+    "10.1039/C1OB05283G", "standard_inchi_key": "QDZOYOCJZCVSSV-BZJMLBMJSA-N", "structure_wikidata":
+    "http://www.wikidata.org/entity/Q77279626", "taxon_id": "NCBITaxon:1883"}]'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2337-query-cyanometdb_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json
+  locator: /contexts/17/source_scope_inventory/joins/cyanometdb_occurrences
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: 'Complete retained query frame, all matches and exact no-match scope; no
+    replay. Exact copied saved values: {"/contexts/17/source_scope_inventory/joins/cyanometdb_occurrences":
+    {"matches": [], "predicate": "exact complete standard_inchi_key equality", "query":
+    "QDZOYOCJZCVSSV-BZJMLBMJSA-N"}}'
+  snapshot_sha256: cceb756ce0d1dcd24c26c05b558acf8366ebd9d830603ab3da900ce34934ec00
+- evidence_id: support-2337-query-npclassifier
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json
+  locator: /contexts/17/source_scope_inventory/joins/npclassifier
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: 'Complete retained query frame, all matches and exact no-match scope; no
+    replay. Exact copied saved values: {"/contexts/17/source_scope_inventory/joins/npclassifier":
+    {"matches": [{"last_physical_line": 1970, "physical_line": 1970, "raw_tsv_record":
+    "QDZOYOCJZCVSSV-BZJMLBMJSA-N\tC[C@]12CC[C@@H]([C@@]([C@@H]1CCC(=C)[C@@H]2CC3=CNC4=CC=CC=C43)(C)C(=O)O)O\tTerpenoids\tTryptophan
+    alkaloids\tIndole-Diterpenoid alkaloids (Penitrems)\tfalse\tnpclassifier.gnps2.org@2026-09-07\n",
+    "row": {"class_results": "Indole-Diterpenoid alkaloids (Penitrems)", "is_glycoside":
+    "false", "model_version": "npclassifier.gnps2.org@2026-09-07", "pathway_results":
+    "Terpenoids", "smiles": "C[C@]12CC[C@@H]([C@@]([C@@H]1CCC(=C)[C@@H]2CC3=CNC4=CC=CC=C43)(C)C(=O)O)O",
+    "standard_inchi_key": "QDZOYOCJZCVSSV-BZJMLBMJSA-N", "superclass_results": "Tryptophan
+    alkaloids"}, "row_sha256": "868afa7d8a841525c87b5bda380f5e36659670d899a55b626d6a0a5807bc3ed9"}],
+    "predicate": "exact complete standard_inchi_key equality", "query": "QDZOYOCJZCVSSV-BZJMLBMJSA-N"}}'
+  snapshot_sha256: cceb756ce0d1dcd24c26c05b558acf8366ebd9d830603ab3da900ce34934ec00
+- evidence_id: support-2337-source-npclassifier
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv
+  locator: Header line 1; physical lines 1970–1970, row_sha256 868afa7d8a841525c87b5bda380f5e36659670d899a55b626d6a0a5807bc3ed9
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: 'Complete retained physical row fields: [{"class_results": "Indole-Diterpenoid
+    alkaloids (Penitrems)", "is_glycoside": "false", "model_version": "npclassifier.gnps2.org@2026-09-07",
+    "pathway_results": "Terpenoids", "smiles": "C[C@]12CC[C@@H]([C@@]([C@@H]1CCC(=C)[C@@H]2CC3=CNC4=CC=CC=C43)(C)C(=O)O)O",
+    "standard_inchi_key": "QDZOYOCJZCVSSV-BZJMLBMJSA-N", "superclass_results": "Tryptophan
+    alkaloids"}]'
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: support-2337-query-pubchem_bioassay
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json
+  locator: /contexts/17/source_scope_inventory/joins/pubchem_bioassay
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: 'Complete retained query frame, all matches and exact no-match scope; no
+    replay. Exact copied saved values: {"/contexts/17/source_scope_inventory/joins/pubchem_bioassay":
+    {"matches": [{"last_physical_line": 5548, "physical_line": 5548, "raw_tsv_record":
+    "QDZOYOCJZCVSSV-BZJMLBMJSA-N\t53468951\t\t(no assay data)\t\t\t\t\t\t\t\n", "row":
+    {"activity_name": "", "activity_outcome": "", "activity_value_um": "", "aid":
+    "", "assay_name": "(no assay data)", "assay_type": "", "cid": "53468951", "depositor":
+    "", "reference": "", "standard_inchi_key": "QDZOYOCJZCVSSV-BZJMLBMJSA-N", "target_accession":
+    ""}, "row_sha256": "857e8a2d0a87e4863f0991791c272ce44edcd1ba43ed32836690ea04e3218758"}],
+    "predicate": "exact complete standard_inchi_key equality", "query": "QDZOYOCJZCVSSV-BZJMLBMJSA-N"}}'
+  snapshot_sha256: cceb756ce0d1dcd24c26c05b558acf8366ebd9d830603ab3da900ce34934ec00
+- evidence_id: support-2337-source-pubchem_bioassay
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: Header line 1; physical lines 5548–5548, row_sha256 857e8a2d0a87e4863f0991791c272ce44edcd1ba43ed32836690ea04e3218758
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: 'Complete retained physical row fields: [{"activity_name": "", "activity_outcome":
+    "", "activity_value_um": "", "aid": "", "assay_name": "(no assay data)", "assay_type":
+    "", "cid": "53468951", "depositor": "", "reference": "", "standard_inchi_key":
+    "QDZOYOCJZCVSSV-BZJMLBMJSA-N", "target_accession": ""}]'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2337-query-bindingdb_targets
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json
+  locator: /contexts/17/source_scope_inventory/joins/bindingdb_targets
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: 'Complete retained query frame, all matches and exact no-match scope; no
+    replay. Exact copied saved values: {"/contexts/17/source_scope_inventory/joins/bindingdb_targets":
+    {"matches": [], "predicate": "exact complete standard_inchi_key equality", "query":
+    "QDZOYOCJZCVSSV-BZJMLBMJSA-N"}}'
+  snapshot_sha256: cceb756ce0d1dcd24c26c05b558acf8366ebd9d830603ab3da900ce34934ec00
+- evidence_id: support-2337-query-antibioticmech_inchikeys
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json
+  locator: /contexts/17/source_scope_inventory/joins/antibioticmech_inchikeys
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: 'Complete retained query frame, all matches and exact no-match scope; no
+    replay. Exact copied saved values: {"/contexts/17/source_scope_inventory/joins/antibioticmech_inchikeys":
+    {"matches": [], "predicate": "exact complete standard_inchi_key equality", "query":
+    "QDZOYOCJZCVSSV-BZJMLBMJSA-N"}}'
+  snapshot_sha256: cceb756ce0d1dcd24c26c05b558acf8366ebd9d830603ab3da900ce34934ec00
+- evidence_id: support-2337-query-chebi_origins
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json
+  locator: /contexts/17/source_scope_inventory/joins/chebi_origins
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: 'Complete retained query frame, all matches and exact no-match scope; no
+    replay. Exact copied saved values: {"/contexts/17/source_scope_inventory/joins/chebi_origins":
+    {"matches": [], "predicate": "exact chebi_id from exact full-key structure rows",
+    "query": []}}'
+  snapshot_sha256: cceb756ce0d1dcd24c26c05b558acf8366ebd9d830603ab3da900ce34934ec00
+- evidence_id: support-2337-direct-contexts
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json
+  locator: /records/6/direct_companion_paths; /records/6/direct_companion_predicates
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: 'Exact direct companion scope; a shared locus is not identity or transferred
+    evidence. Exact copied saved values: {"/records/6/direct_companion_paths": ["data/natural_products/alkaloids/dixiamycin-a.yaml",
+    "data/natural_products/alkaloids/sulfadixiamycin-a.yaml", "data/natural_products/alkaloids/sulfadixiamycin-b.yaml",
+    "data/natural_products/alkaloids/sulfadixiamycin-c.yaml", "data/natural_products/alkaloids/xiamycin-a.yaml",
+    "data/natural_products/terpenoids/sespenine.yaml"], "/records/6/direct_companion_predicates":
+    [{"path": "data/natural_products/alkaloids/dixiamycin-a.yaml", "same_complete_InChIKey":
+    false, "same_root_identifier": false, "shared_owned_BGCs": ["BGC0000665"]}, {"path":
+    "data/natural_products/alkaloids/sulfadixiamycin-a.yaml", "same_complete_InChIKey":
+    false, "same_root_identifier": false, "shared_owned_BGCs": ["BGC0000665"]}, {"path":
+    "data/natural_products/alkaloids/sulfadixiamycin-b.yaml", "same_complete_InChIKey":
+    false, "same_root_identifier": false, "shared_owned_BGCs": ["BGC0000665"]}, {"path":
+    "data/natural_products/alkaloids/sulfadixiamycin-c.yaml", "same_complete_InChIKey":
+    false, "same_root_identifier": false, "shared_owned_BGCs": ["BGC0000665"]}, {"path":
+    "data/natural_products/alkaloids/xiamycin-a.yaml", "same_complete_InChIKey": false,
+    "same_root_identifier": false, "shared_owned_BGCs": ["BGC0000665"]}, {"path":
+    "data/natural_products/terpenoids/sespenine.yaml", "same_complete_InChIKey": false,
+    "same_root_identifier": false, "shared_owned_BGCs": ["BGC0000665"]}]}'
+  snapshot_sha256: cceb756ce0d1dcd24c26c05b558acf8366ebd9d830603ab3da900ce34934ec00
+- evidence_id: support-2337-companion-boundaries
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234-tentative/bgc-prep/bgc-conditional234-source-inventory-DATA-001.json
+  locator: /contexts/0; /contexts/1; /contexts/2; /contexts/3; /contexts/4; /contexts/23
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: 'Complete source and raw/history carries are explicitly attributed in source
+    notes. Distinct companion metadata: [{"declared_mechanism_roots_literal": ["causal_graphs",
+    "biosynthetic_pathway"], "history_count": 4, "identifier": "naturalproductmech:mibig-abcb3d7c73",
+    "input": {"bytes": 13976, "path": "/private/tmp/npm-record-reviews-20261021/data/natural_products/alkaloids/dixiamycin-a.yaml",
+    "sha256": "9da2b3210e1eea731c3aa967fa9b9723426b676f9575ffd69e232d61f183b070"},
+    "label": "dixiamycin A", "owned_bgc_ids": ["BGC0000665"], "path": "data/natural_products/alkaloids/dixiamycin-a.yaml",
+    "standard_inchi_key": "CPQSJHUUXUXWOT-IPPPMHIGSA-N"}, {"declared_mechanism_roots_literal":
+    [], "history_count": 2, "identifier": "naturalproductmech:mibig-e1666ddbc8", "input":
+    {"bytes": 3524, "path": "/private/tmp/npm-record-reviews-20261021/data/natural_products/alkaloids/sulfadixiamycin-a.yaml",
+    "sha256": "41af168001a71dbe0e2547593ea014f772bee9a3fc7ca50382fe428af06a93e7"},
+    "label": "sulfadixiamycin A", "owned_bgc_ids": ["BGC0000665"], "path": "data/natural_products/alkaloids/sulfadixiamycin-a.yaml",
+    "standard_inchi_key": "JBUHSCUDVQFUJD-IPPPMHIGSA-N"}, {"declared_mechanism_roots_literal":
+    [], "history_count": 2, "identifier": "naturalproductmech:mibig-39315124e4", "input":
+    {"bytes": 3517, "path": "/private/tmp/npm-record-reviews-20261021/data/natural_products/alkaloids/sulfadixiamycin-b.yaml",
+    "sha256": "e45d64094add3e9494f6621f25dac848473e8af3f4051e2a1c4d47b9feccb798"},
+    "label": "sulfadixiamycin B", "owned_bgc_ids": ["BGC0000665"], "path": "data/natural_products/alkaloids/sulfadixiamycin-b.yaml",
+    "standard_inchi_key": "RVJXPFRHRQFKKH-IPPPMHIGSA-N"}, {"declared_mechanism_roots_literal":
+    [], "history_count": 2, "identifier": "naturalproductmech:mibig-7308bf132e", "input":
+    {"bytes": 3521, "path": "/private/tmp/npm-record-reviews-20261021/data/natural_products/alkaloids/sulfadixiamycin-c.yaml",
+    "sha256": "b9175b4f385059ca428525dd7b7bfa48df2d26c52c444396b3f472607c5ecc08"},
+    "label": "sulfadixiamycin C", "owned_bgc_ids": ["BGC0000665"], "path": "data/natural_products/alkaloids/sulfadixiamycin-c.yaml",
+    "standard_inchi_key": "JUHALZHBXHSBMH-LPHIXDDYSA-N"}, {"declared_mechanism_roots_literal":
+    ["causal_graphs", "biosynthetic_pathway"], "history_count": 4, "identifier": "naturalproductmech:mibig-9f978c0043",
+    "input": {"bytes": 10499, "path": "/private/tmp/npm-record-reviews-20261021/data/natural_products/alkaloids/xiamycin-a.yaml",
+    "sha256": "36d7bcb4a2327283319bc7748248cc05f512499a5d408139eeba00698ffca881"},
+    "label": "xiamycin A", "owned_bgc_ids": ["BGC0000665", "BGC0000666"], "path":
+    "data/natural_products/alkaloids/xiamycin-a.yaml", "standard_inchi_key": "XUTJPVCJXVRRLB-SKWRMQMOSA-N"},
+    {"declared_mechanism_roots_literal": [], "history_count": 2, "identifier": "naturalproductmech:mibig-913edfac99",
+    "input": {"bytes": 3249, "path": "/private/tmp/npm-record-reviews-20261021/data/natural_products/terpenoids/sespenine.yaml",
+    "sha256": "4cc1321d5f7b8b58e58f9159b09803ce99c67b1d06b0ce67be584c8ad1d11412"},
+    "label": "sespenine", "owned_bgc_ids": ["BGC0000665"], "path": "data/natural_products/terpenoids/sespenine.yaml",
+    "standard_inchi_key": "UESFHRIHCVPQCD-IVIJAOBASA-N"}]'
+  snapshot_sha256: cceb756ce0d1dcd24c26c05b558acf8366ebd9d830603ab3da900ce34934ec00
+- evidence_id: support-2337-structure-schema
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: lines 175–200; lines 368–435
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: Schema separates stored structures, partial stereo and versioned computed
+    classification from asserted identity.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: support-2337-stereo-method
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py
+  locator: lines 145–174
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: The source stereo_complete predicate uses unassigned tetrahedral centres
+    in source SMILES, not every normalized tautomer or natural stereochemical proof.
+  snapshot_sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+- evidence_id: support-2337-classification-seeder
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: lines 296–307; lines 982–1020
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: Maintained seeder retains source structure and all versioned model arrays;
+    no regeneration was run.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: support-2337-review-profile
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/docs/record-review-profile.md
+  locator: Whole current profile
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: Twelve scientific dimensions and partial completion reflect actual access
+    and check limits.
+  snapshot_sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+- evidence_id: support-2337-review-skill
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/.claude/skills/review-yaml-record/SKILL.md
+  locator: Whole current skill under the absolute no-outbound instruction
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: Read-only review, maintained ownership and no native-status promotion apply;
+    no external lookup authorized.
+  snapshot_sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+- evidence_id: support-2337-mechanism-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/owner-capture-DATA-001.json
+  locator: /records/6/owner_document/causal_graphs; /records/6/owner_document/biosynthetic_pathway;
+    /records/6/owner_document/curation_history
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: 'Complete retained graph/pathway/history, with qualified historical primary
+    and database mapping claims. Exact copied saved values: {"/records/6/owner_document/biosynthetic_pathway":
+    [{"enzyme_id": "UniProtKB:I3VFB9", "enzyme_label": "XiaI", "evidence": [{"evidence_type":
+    "PRIMARY_EXPERIMENT", "notes": "Li et al. identified the Streptomyces sp. SCSIO
+    02999 xiamycin/oxiamycin cluster and biochemically assigned XiaI to the indosespene-to-xiamycin
+    A oxidative cyclization.", "reference": "DOI:10.1021/ja303004g", "snippet": "the
+    flavin dependent oxygenase XiaI was biochemically characterized in vitro to convert
+    indosespene to XMA"}, {"evidence_type": "DATABASE_ASSERTION", "notes": "UniProtKB:I3VFB9
+    resolves XiaI to the unreviewed Streptomyces sp. SCSIO 02999 protein and cross-references
+    EMBL JQ812811 protein AFK78075.1.", "reference": "https://www.uniprot.org/uniprotkb/I3VFB9",
+    "retrieved_on": "2026-09-27"}, {"evidence_type": "DATABASE_ASSERTION", "notes":
+    "NCBI GenPept AFK78075.1 is the JQ812811.1 XiaI coding sequence from the Streptomyces
+    sp. SCSIO 02999 xiamycin/oxiamycin gene cluster.", "reference": "https://www.ncbi.nlm.nih.gov/protein/AFK78075.1",
+    "retrieved_on": "2026-09-27"}], "notes": "This curates the biochemically characterized
+    Streptomyces sp. SCSIO 02999 XiaI (UniProtKB:I3VFB9, mibig:BGC0000666) oxidative
+    cyclization of indosespene to xiamycin A as the characterized homolog for the
+    xim/xia pathway (this indosespene record is seeded from the homologous Streptomyces
+    sp. HKI0576 xim cluster mibig:BGC0000665); upstream formation of indosespene and
+    parallel oxiamycin tailoring remain uncurated.", "product": "naturalproductmech:mibig-9f978c0043",
+    "step_number": 1, "substrate": "naturalproductmech:mibig-cb4ddd98d8"}], "/records/6/owner_document/causal_graphs":
+    [{"description": "Partial xiamycin A biosynthesis graph on indosespene (seeded
+    with the Streptomyces sp. HKI0576 mibig:BGC0000665 xim cluster) recording the
+    biochemically characterized homologous Streptomyces sp. SCSIO 02999 (mibig:BGC0000666)
+    flavin-dependent monooxygenase XiaI oxidative cyclization of indosespene into
+    xiamycin A.", "edges": [{"evidence": [{"evidence_type": "PRIMARY_EXPERIMENT",
+    "notes": "Li et al. identified the Streptomyces sp. SCSIO 02999 xiamycin/oxiamycin
+    cluster and biochemically assigned XiaI to the indosespene-to-xiamycin A oxidative
+    cyclization.", "reference": "DOI:10.1021/ja303004g", "snippet": "the flavin dependent
+    oxygenase XiaI was biochemically characterized in vitro to convert indosespene
+    to XMA"}, {"evidence_type": "DATABASE_ASSERTION", "notes": "UniProtKB:I3VFB9 resolves
+    XiaI to the unreviewed Streptomyces sp. SCSIO 02999 protein and cross-references
+    EMBL JQ812811 protein AFK78075.1.", "reference": "https://www.uniprot.org/uniprotkb/I3VFB9",
+    "retrieved_on": "2026-09-27"}, {"evidence_type": "DATABASE_ASSERTION", "notes":
+    "NCBI GenPept AFK78075.1 is the JQ812811.1 XiaI coding sequence from the Streptomyces
+    sp. SCSIO 02999 xiamycin/oxiamycin gene cluster.", "reference": "https://www.ncbi.nlm.nih.gov/protein/AFK78075.1",
+    "retrieved_on": "2026-09-27"}], "object": "xiai", "predicate": "is oxidatively
+    cyclized by", "subject": "indosespene"}, {"evidence": [{"evidence_type": "PRIMARY_EXPERIMENT",
+    "notes": "Li et al. identified the Streptomyces sp. SCSIO 02999 xiamycin/oxiamycin
+    cluster and biochemically assigned XiaI to the indosespene-to-xiamycin A oxidative
+    cyclization.", "reference": "DOI:10.1021/ja303004g", "snippet": "the flavin dependent
+    oxygenase XiaI was biochemically characterized in vitro to convert indosespene
+    to XMA"}, {"evidence_type": "DATABASE_ASSERTION", "notes": "UniProtKB:I3VFB9 resolves
+    XiaI to the unreviewed Streptomyces sp. SCSIO 02999 protein and cross-references
+    EMBL JQ812811 protein AFK78075.1.", "reference": "https://www.uniprot.org/uniprotkb/I3VFB9",
+    "retrieved_on": "2026-09-27"}, {"evidence_type": "DATABASE_ASSERTION", "notes":
+    "NCBI GenPept AFK78075.1 is the JQ812811.1 XiaI coding sequence from the Streptomyces
+    sp. SCSIO 02999 xiamycin/oxiamycin gene cluster.", "reference": "https://www.ncbi.nlm.nih.gov/protein/AFK78075.1",
+    "retrieved_on": "2026-09-27"}], "notes": "This is a single curated tailoring step;
+    upstream indosespene formation and the alternative oxiamycin branch remain uncurated.",
+    "object": "xiamycin_a", "predicate": "forms", "subject": "xiai"}], "graph_id":
+    "indosespene-xiai-biosynthesis", "nodes": [{"grounding_status": "GROUNDED", "identifier":
+    "naturalproductmech:mibig-cb4ddd98d8", "label": "indosespene", "node_id": "indosespene",
+    "node_type": "COMPOUND"}, {"grounding_status": "GROUNDED", "identifier": "UniProtKB:I3VFB9",
+    "label": "XiaI", "node_id": "xiai", "node_type": "ENZYME"}, {"grounding_status":
+    "GROUNDED", "identifier": "naturalproductmech:mibig-9f978c0043", "label": "xiamycin
+    A", "node_id": "xiamycin_a", "node_type": "COMPOUND"}], "scope": "BIOSYNTHESIS"}],
+    "/records/6/owner_document/curation_history": [{"action": "SEEDED_FROM_SOURCES",
+    "changes": "Seeded from the committed inventories in data/raw/.", "curator": "seed_from_sources",
+    "timestamp": "2026-09-10T05:54:12Z"}, {"action": "SEEDED_FROM_SOURCES", "changes":
+    "Seeded from the committed inventories in data/raw/.", "curator": "seed_from_sources",
+    "timestamp": "2026-09-25T03:03:09Z"}, {"action": "RECORD_CURATED", "changes":
+    "Added BIOSYNTHESIS pathway and causal graph to indosespene (naturalproductmech:mibig-cb4ddd98d8,
+    mibig:BGC0000665 in Streptomyces sp. HKI0576) recording its downstream oxidative
+    cyclization to xiamycin A (naturalproductmech:mibig-9f978c0043) catalyzed by the
+    biochemically characterized homologous flavin-dependent monooxygenase XiaI (UniProtKB:I3VFB9,
+    mibig:BGC0000666 in Streptomyces sp. SCSIO 02999).", "curator": "antigravity",
+    "llm_assisted": true, "timestamp": "2026-10-23T08:00:00Z"}]}'
+  snapshot_sha256: 685e975cd87c5fcbc0cd260bdba7c0a2934720ad590120a3c7b9bf4c921410c2
+- evidence_id: support-2337-reader
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/native-current234-indosespene-maintained-reader-DATA-001.json
+  locator: /status; /counts; /returned_view_equals_expected_complete_owner; /view_mismatches;
+    /resolved_view/causal_graphs; /resolved_view/biosynthetic_pathway; /resolved_view/curation_history;
+    /limitations
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: 'Accepted maintained result preserves the complete owner and historical
+    mechanism; no primary/sequence verification is added. Exact copied saved values:
+    {"/counts": {"component_graphs": 0, "component_history_events": [], "component_refs":
+    0, "curation_history": 3, "edges": 2, "graphs": 1, "inline_graphs": 1, "molecular_targets":
+    0, "nodes": 3, "pathway_steps": 1}, "/limitations": ["Maintained topology and,
+    where references exist, component schema/ownership/history validation are distinct
+    from complete-owner preservation. They do not independently verify mechanism science,
+    primary publications, sequences, constructs, groundings or the full owner schema.",
+    "The expected-view object is a comparison oracle from the separately captured
+    complete owner and complete ordered components; only causal_graphs is expanded.
+    It is not a substitute for the one maintained call.", "Every owner field, target
+    measurement/evidence item, pathway item and owner history is preserved; raw root
+    presence is checked exactly, and only resolved causal_graphs may be added for
+    a component-only owner. Referenced graphs append after inline graphs in exact
+    reference order. Complete component documents and their histories remain separately
+    preserved in component_captures. Owners without refs retain absent refs and empty
+    components.", "Any known urllib3 socket-construction capability probe is denied
+    before action and retained explicitly; any other denial fails this attempt.",
+    "Critical dependency and resource pins are pre/post checked. Additional actually
+    loaded local modules and file reads are recorded, not claimed statically exhaustively
+    reviewed.", "Raw primary-experiment labels, database references, protein identifiers
+    and historical source claims remain attributed annotations; the complete maintained
+    view does not add primary, sequence, producer, natural-identity or stereochemical
+    verification.", "No molecular parsing, canonical gate, Git command, campaign read
+    or record mutation is invoked."], "/resolved_view/biosynthetic_pathway": [{"enzyme_id":
+    "UniProtKB:I3VFB9", "enzyme_label": "XiaI", "evidence": [{"evidence_type": "PRIMARY_EXPERIMENT",
+    "notes": "Li et al. identified the Streptomyces sp. SCSIO 02999 xiamycin/oxiamycin
+    cluster and biochemically assigned XiaI to the indosespene-to-xiamycin A oxidative
+    cyclization.", "reference": "DOI:10.1021/ja303004g", "snippet": "the flavin dependent
+    oxygenase XiaI was biochemically characterized in vitro to convert indosespene
+    to XMA"}, {"evidence_type": "DATABASE_ASSERTION", "notes": "UniProtKB:I3VFB9 resolves
+    XiaI to the unreviewed Streptomyces sp. SCSIO 02999 protein and cross-references
+    EMBL JQ812811 protein AFK78075.1.", "reference": "https://www.uniprot.org/uniprotkb/I3VFB9",
+    "retrieved_on": "2026-09-27"}, {"evidence_type": "DATABASE_ASSERTION", "notes":
+    "NCBI GenPept AFK78075.1 is the JQ812811.1 XiaI coding sequence from the Streptomyces
+    sp. SCSIO 02999 xiamycin/oxiamycin gene cluster.", "reference": "https://www.ncbi.nlm.nih.gov/protein/AFK78075.1",
+    "retrieved_on": "2026-09-27"}], "notes": "This curates the biochemically characterized
+    Streptomyces sp. SCSIO 02999 XiaI (UniProtKB:I3VFB9, mibig:BGC0000666) oxidative
+    cyclization of indosespene to xiamycin A as the characterized homolog for the
+    xim/xia pathway (this indosespene record is seeded from the homologous Streptomyces
+    sp. HKI0576 xim cluster mibig:BGC0000665); upstream formation of indosespene and
+    parallel oxiamycin tailoring remain uncurated.", "product": "naturalproductmech:mibig-9f978c0043",
+    "step_number": 1, "substrate": "naturalproductmech:mibig-cb4ddd98d8"}], "/resolved_view/causal_graphs":
+    [{"description": "Partial xiamycin A biosynthesis graph on indosespene (seeded
+    with the Streptomyces sp. HKI0576 mibig:BGC0000665 xim cluster) recording the
+    biochemically characterized homologous Streptomyces sp. SCSIO 02999 (mibig:BGC0000666)
+    flavin-dependent monooxygenase XiaI oxidative cyclization of indosespene into
+    xiamycin A.", "edges": [{"evidence": [{"evidence_type": "PRIMARY_EXPERIMENT",
+    "notes": "Li et al. identified the Streptomyces sp. SCSIO 02999 xiamycin/oxiamycin
+    cluster and biochemically assigned XiaI to the indosespene-to-xiamycin A oxidative
+    cyclization.", "reference": "DOI:10.1021/ja303004g", "snippet": "the flavin dependent
+    oxygenase XiaI was biochemically characterized in vitro to convert indosespene
+    to XMA"}, {"evidence_type": "DATABASE_ASSERTION", "notes": "UniProtKB:I3VFB9 resolves
+    XiaI to the unreviewed Streptomyces sp. SCSIO 02999 protein and cross-references
+    EMBL JQ812811 protein AFK78075.1.", "reference": "https://www.uniprot.org/uniprotkb/I3VFB9",
+    "retrieved_on": "2026-09-27"}, {"evidence_type": "DATABASE_ASSERTION", "notes":
+    "NCBI GenPept AFK78075.1 is the JQ812811.1 XiaI coding sequence from the Streptomyces
+    sp. SCSIO 02999 xiamycin/oxiamycin gene cluster.", "reference": "https://www.ncbi.nlm.nih.gov/protein/AFK78075.1",
+    "retrieved_on": "2026-09-27"}], "object": "xiai", "predicate": "is oxidatively
+    cyclized by", "subject": "indosespene"}, {"evidence": [{"evidence_type": "PRIMARY_EXPERIMENT",
+    "notes": "Li et al. identified the Streptomyces sp. SCSIO 02999 xiamycin/oxiamycin
+    cluster and biochemically assigned XiaI to the indosespene-to-xiamycin A oxidative
+    cyclization.", "reference": "DOI:10.1021/ja303004g", "snippet": "the flavin dependent
+    oxygenase XiaI was biochemically characterized in vitro to convert indosespene
+    to XMA"}, {"evidence_type": "DATABASE_ASSERTION", "notes": "UniProtKB:I3VFB9 resolves
+    XiaI to the unreviewed Streptomyces sp. SCSIO 02999 protein and cross-references
+    EMBL JQ812811 protein AFK78075.1.", "reference": "https://www.uniprot.org/uniprotkb/I3VFB9",
+    "retrieved_on": "2026-09-27"}, {"evidence_type": "DATABASE_ASSERTION", "notes":
+    "NCBI GenPept AFK78075.1 is the JQ812811.1 XiaI coding sequence from the Streptomyces
+    sp. SCSIO 02999 xiamycin/oxiamycin gene cluster.", "reference": "https://www.ncbi.nlm.nih.gov/protein/AFK78075.1",
+    "retrieved_on": "2026-09-27"}], "notes": "This is a single curated tailoring step;
+    upstream indosespene formation and the alternative oxiamycin branch remain uncurated.",
+    "object": "xiamycin_a", "predicate": "forms", "subject": "xiai"}], "graph_id":
+    "indosespene-xiai-biosynthesis", "nodes": [{"grounding_status": "GROUNDED", "identifier":
+    "naturalproductmech:mibig-cb4ddd98d8", "label": "indosespene", "node_id": "indosespene",
+    "node_type": "COMPOUND"}, {"grounding_status": "GROUNDED", "identifier": "UniProtKB:I3VFB9",
+    "label": "XiaI", "node_id": "xiai", "node_type": "ENZYME"}, {"grounding_status":
+    "GROUNDED", "identifier": "naturalproductmech:mibig-9f978c0043", "label": "xiamycin
+    A", "node_id": "xiamycin_a", "node_type": "COMPOUND"}], "scope": "BIOSYNTHESIS"}],
+    "/resolved_view/curation_history": [{"action": "SEEDED_FROM_SOURCES", "changes":
+    "Seeded from the committed inventories in data/raw/.", "curator": "seed_from_sources",
+    "timestamp": "2026-09-10T05:54:12Z"}, {"action": "SEEDED_FROM_SOURCES", "changes":
+    "Seeded from the committed inventories in data/raw/.", "curator": "seed_from_sources",
+    "timestamp": "2026-09-25T03:03:09Z"}, {"action": "RECORD_CURATED", "changes":
+    "Added BIOSYNTHESIS pathway and causal graph to indosespene (naturalproductmech:mibig-cb4ddd98d8,
+    mibig:BGC0000665 in Streptomyces sp. HKI0576) recording its downstream oxidative
+    cyclization to xiamycin A (naturalproductmech:mibig-9f978c0043) catalyzed by the
+    biochemically characterized homologous flavin-dependent monooxygenase XiaI (UniProtKB:I3VFB9,
+    mibig:BGC0000666 in Streptomyces sp. SCSIO 02999).", "curator": "antigravity",
+    "llm_assisted": true, "timestamp": "2026-10-23T08:00:00Z"}], "/returned_view_equals_expected_complete_owner":
+    true, "/status": "maintained_reader_returned_and_verified_offline", "/view_mismatches":
+    []}'
+  snapshot_sha256: 07f5c9950f3dc7de1aa373cb4dfdd2ed817e1de0370d8380ee705a61f2008e52
+- evidence_id: support-2337-reader-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/root-maintained-reader-acceptance-001.json
+  locator: /status; /DATA; /execution; /original_tools; /verification; /review_check_contract;
+    /expected_denial
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: 'ROOT accepts the original reader and exact check contract; the known capability
+    probe was blocked before socket creation. Exact copied saved values: {"/DATA":
+    {"bytes": 665815, "path": "/private/tmp/npm-review-work/shared-next-batch234/native-current234-indosespene-maintained-reader-DATA-001.json",
+    "sha256": "07f5c9950f3dc7de1aa373cb4dfdd2ed817e1de0370d8380ee705a61f2008e52"},
+    "/execution": {"bytes": 5616, "path": "/private/tmp/npm-review-work/shared-next-batch234/native-current234-indosespene-reader-execution-001.json",
+    "sha256": "beebd1e687ca534b87319797d03b339ce8108b2acd34765da1d9d30787c0767b"},
+    "/expected_denial": {"before_action": true, "count": 1, "event": "socket.__new__",
+    "origin": "urllib3.util.connection._has_ipv6", "request_sent": false}, "/original_tools":
+    {"bytes": 1250, "path": "/private/tmp/npm-review-work/shared-next-batch234/native-current234-indosespene-reader-original-tools-001.json",
+    "sha256": "bfd63d89f7a68a30b9e8acbe970a466782017345a77cd2f54db116cd2dd76d74"},
+    "/review_check_contract": {"command": "/private/tmp/npm-record-reviews-20261021/.venv/bin/python
+    -I -B /private/tmp/npm-review-work/shared-next-batch234/read-selected-mechanism-guarded-001.py
+    2337 71fbbf20423cdaeb6c1122e60c963fb4b06a7597498a76d169b57bfdd1b9b2dd b6118881b8c0f6c2644b42b7c8e0d15d81b3d7b3aef4ea8a1662b0ac784f3e3d
+    f9f94d32e9ad2ce944df6845d88f913d82f34c7dcb5d404e4993fbb9cbbf9685 685e975cd87c5fcbc0cd260bdba7c0a2934720ad590120a3c7b9bf4c921410c2
+    86e1f474999523449bfa1e1b952ef39959df9fd86d91d890e0698453d87ae219", "exit_code":
+    0, "exit_source": "original tool terminal and process receipt", "name": "Complete
+    offline maintained reader for indosespene", "required": true, "status": "passed",
+    "target_order": 2337}, "/status": "accepted_original_offline_maintained_reader",
+    "/verification": {"complete_owner_equality": true, "counts": {"component_graphs":
+    0, "component_history_events": [], "component_refs": 0, "curation_history": 3,
+    "edges": 2, "graphs": 1, "inline_graphs": 1, "molecular_targets": 0, "nodes":
+    3, "pathway_steps": 1}, "current_pin_paths": 1032, "current_pin_placements": 1988,
+    "external_requests": false, "molecular_parses": 0, "original_exit_code": 0, "positive_content_exact":
+    true, "reader_calls": 1, "retries": 0}}'
+  snapshot_sha256: 1db6dd52c5c883c8d902842d2971928ef981a5e5f61804da5036ddb9183f255c
+- evidence_id: support-2337-reader-execution
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch234/native-current234-indosespene-reader-execution-001.json
+  locator: Whole original execution receipt
+  accessed_at: '2026-11-04T03:38:15.928251Z'
+  support: supports
+  summary: Native operated the one Indosespene reader, original 6fca6e/session63853
+    to c32d94/exit0, empty stderr and no retry. ROOT separately accepted it.
+  snapshot_sha256: beebd1e687ca534b87319797d03b339ce8108b2acd34765da1d9d30787c0767b
+- evidence_id: root-native-strict_ten
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-234/validate-strict-selected10-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-234/native-current234-five-gates-execution-001.json
+  accessed_at: '2026-11-04T02:55:22.278361Z'
+  support: supports
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  snapshot_sha256: 6eb86fafb52d8d3429bb2ad9e02f2f463878ab1404f0317aff94bd7061395d56
+- evidence_id: root-native-strict_full
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-234/validate-all-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-234/native-current234-five-gates-execution-001.json
+  accessed_at: '2026-11-04T02:55:48.333466Z'
+  support: supports
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  snapshot_sha256: ff284eb1ad827f1ffd4ecec5a30b5186cc5f1b6b80d7e49382abc277e6843741
+- evidence_id: root-native-lockfile
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-234/verify-corpus-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-234/native-current234-five-gates-execution-001.json
+  accessed_at: '2026-11-04T02:56:08.161413Z'
+  support: supports
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  snapshot_sha256: 254f171c7dff0f1ecbee5f47f75d2b7046143ae7fc499d9a1c08263e1c5125d8
+- evidence_id: root-native-reproduction
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-234/verify-reproduction-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-234/native-current234-five-gates-execution-001.json
+  accessed_at: '2026-11-04T02:56:42.801518Z'
+  support: supports
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  snapshot_sha256: cfc38f4e3f434e7f3651975f2cb228e5cda848476b2c53d1636d8746b794237a
+- evidence_id: root-native-queue
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-234/review-queue-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-234/native-current234-five-gates-execution-001.json
+  accessed_at: '2026-11-04T02:56:54.762248Z'
+  support: supports
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  snapshot_sha256: 3eed9b74d9496ee4db28632a8d7dae2208b83298376ae2b368e8ec8d0c8d0c91
+assessments:
+- assessment_id: support-2337-identity
+  area: identity
+  topic: Identity
+  outcome: supported
+  summary: The minted identifier naturalproductmech:mibig-cb4ddd98d8 and full key
+    QDZOYOCJZCVSSV-BZJMLBMJSA-N preserve the exact MIBiG BGC0000665 version 5 compound
+    indosespene. PubChem 53468951 remains an unrefreshed cross-reference, and the
+    exact retained ChEBI join adds no match. Six shared-locus companions have distinct
+    identities/full keys; a shared cluster does not merge indosespene with xiamycin
+    A, the dimeric or sulfated companions, or sespenine. The graph product link is
+    a reaction relationship, not an exact-identity cross-reference.
+  target_ids:
+  - naturalproductmech:mibig-cb4ddd98d8
+  evidence_ids:
+  - support-2337-grounding-owner
+  - support-2337-source-mibig_compounds
+  - support-2337-query-chebi_structures
+  - support-2337-chemistry
+  - support-2337-direct-contexts
+  - support-2337-companion-boundaries
+  dimensions:
+  - name: standard_inchi_key
+    value: QDZOYOCJZCVSSV-BZJMLBMJSA-N; exact retained full key.
+    definition: Exact full key; no name, first-block or congener substitution.
+    evidence_ids:
+    - support-2337-grounding-owner
+    - support-2337-source-mibig_compounds
+    - support-2337-query-chebi_structures
+    - support-2337-chemistry
+    - support-2337-direct-contexts
+    - support-2337-companion-boundaries
+  - name: grounding_scope
+    value: The minted identifier naturalproductmech:mibig-cb4ddd98d8 and full key
+      QDZOYOCJZCVSSV-BZJMLBMJSA-N preserve the exact MIBiG BGC0000665 version 5 compound
+      indosespene. PubChem 53468951 remains an unrefreshed cross-reference, and the
+      exact retained ChEBI join adds no match. Six shared-locus companions have distinct
+      identities/full keys; a shared cluster does not merge indosespene with xiamycin
+      A, the dimeric or sulfated companions, or sespenine. The graph product link
+      is a reaction relationship, not an exact-identity cross-reference.
+    definition: Retained local grounding fidelity is distinct from fresh natural-identity
+      verification.
+    evidence_ids:
+    - support-2337-grounding-owner
+    - support-2337-source-mibig_compounds
+    - support-2337-query-chebi_structures
+    - support-2337-chemistry
+    - support-2337-direct-contexts
+    - support-2337-companion-boundaries
+- assessment_id: support-2337-representation
+  area: representation
+  topic: Representation
+  outcome: supported
+  summary: Both saved forms represent neutral C23H29NO3 with 27 heavy atoms, 30 bonds
+    and one connected component. The complete graph combines a bicyclic aliphatic
+    framework bearing an exocyclic methylene, a hydroxyl and a carboxylic acid with
+    a methylene-linked indole. Five tetrahedral centres are specified in both forms.
+    All ten original comparisons are true and the saved chirality-aware correspondence
+    spans all atoms, while full_graph_identity_established remains false. These results
+    support local stored-form consistency, not fresh natural identity, enzyme specificity
+    or independent stereochemical assignment.
+  target_ids:
+  - naturalproductmech:mibig-cb4ddd98d8
+  evidence_ids:
+  - support-2337-grounding-owner
+  - support-2337-chemistry
+  - support-2337-topology
+  - support-2337-diagnostic-acceptance
+  - support-2337-structure-schema
+  - support-2337-stereo-method
+  dimensions:
+  - name: stereochemistry_scope
+    value: Both saved forms represent neutral C23H29NO3 with 27 heavy atoms, 30 bonds
+      and one connected component. The complete graph combines a bicyclic aliphatic
+      framework bearing an exocyclic methylene, a hydroxyl and a carboxylic acid with
+      a methylene-linked indole. Five tetrahedral centres are specified in both forms.
+      All ten original comparisons are true and the saved chirality-aware correspondence
+      spans all atoms, while full_graph_identity_established remains false. These
+      results support local stored-form consistency, not fresh natural identity, enzyme
+      specificity or independent stereochemical assignment.
+    definition: Complete saved stereo/atom/bond interpretation; no new parse or experimental
+      assignment.
+    evidence_ids:
+    - support-2337-grounding-owner
+    - support-2337-chemistry
+    - support-2337-topology
+    - support-2337-diagnostic-acceptance
+    - support-2337-structure-schema
+    - support-2337-stereo-method
+  - name: representation_correspondence
+    value: Both saved forms represent neutral C23H29NO3 with 27 heavy atoms, 30 bonds
+      and one connected component. The complete graph combines a bicyclic aliphatic
+      framework bearing an exocyclic methylene, a hydroxyl and a carboxylic acid with
+      a methylene-linked indole. Five tetrahedral centres are specified in both forms.
+      All ten original comparisons are true and the saved chirality-aware correspondence
+      spans all atoms, while full_graph_identity_established remains false. These
+      results support local stored-form consistency, not fresh natural identity, enzyme
+      specificity or independent stereochemical assignment.
+    definition: Normalized identifier agreement does not establish fixed-graph or
+      natural-form identity.
+    evidence_ids:
+    - support-2337-grounding-owner
+    - support-2337-chemistry
+    - support-2337-topology
+    - support-2337-diagnostic-acceptance
+    - support-2337-structure-schema
+    - support-2337-stereo-method
+- assessment_id: support-2337-provenance
+  area: provenance
+  topic: Origin
+  outcome: supported
+  summary: MIBiG BGC0000665 version 5 retains Streptomyces sp. HKI0576 (NCBITaxon:995841),
+    GenBank HE815466.1, active status and TERPENE/OTHER source classes. The producer
+    grade is BGC_CHARACTERIZED; the locus grade is CLUSTER_DEMONSTRATED with Knock-out
+    studies, Enzymatic assays and Heterologous expression retained as source methods.
+    These grades describe the retained database assertions and do not transfer the
+    exact XiaI protein identity from another strain. The separate genus-level Streptomyces
+    occurrence is not evidence for production by an additional strain.
+  target_ids:
+  - naturalproductmech:mibig-cb4ddd98d8
+  evidence_ids:
+  - support-2337-origin-owner
+  - support-2337-source-mibig_compounds
+  - support-2337-cached-taxonomy
+  - support-2337-source-routes
+  - support-2337-direct-contexts
+  - support-2337-companion-boundaries
+  dimensions:
+  - name: taxon_scope
+    value: MIBiG BGC0000665 version 5 retains Streptomyces sp. HKI0576 (NCBITaxon:995841),
+      GenBank HE815466.1, active status and TERPENE/OTHER source classes. The producer
+      grade is BGC_CHARACTERIZED; the locus grade is CLUSTER_DEMONSTRATED with Knock-out
+      studies, Enzymatic assays and Heterologous expression retained as source methods.
+      These grades describe the retained database assertions and do not transfer the
+      exact XiaI protein identity from another strain. The separate genus-level Streptomyces
+      occurrence is not evidence for production by an additional strain.
+    definition: Producer, occurrence, species, strain and unresolved labels retain
+      separate scope; cached labels are not fresh authority.
+    evidence_ids:
+    - support-2337-origin-owner
+    - support-2337-source-mibig_compounds
+    - support-2337-cached-taxonomy
+    - support-2337-source-routes
+    - support-2337-direct-contexts
+    - support-2337-companion-boundaries
+  - name: producer_evidence
+    value: MIBiG BGC0000665 version 5 retains Streptomyces sp. HKI0576 (NCBITaxon:995841),
+      GenBank HE815466.1, active status and TERPENE/OTHER source classes. The producer
+      grade is BGC_CHARACTERIZED; the locus grade is CLUSTER_DEMONSTRATED with Knock-out
+      studies, Enzymatic assays and Heterologous expression retained as source methods.
+      These grades describe the retained database assertions and do not transfer the
+      exact XiaI protein identity from another strain. The separate genus-level Streptomyces
+      occurrence is not evidence for production by an additional strain.
+    definition: Producer evidence is assessed separately from occurrence and locus
+      support.
+    evidence_ids:
+    - support-2337-origin-owner
+    - support-2337-source-mibig_compounds
+    - support-2337-cached-taxonomy
+    - support-2337-source-routes
+    - support-2337-direct-contexts
+    - support-2337-companion-boundaries
+  - name: locus_evidence
+    value: MIBiG BGC0000665 version 5 retains Streptomyces sp. HKI0576 (NCBITaxon:995841),
+      GenBank HE815466.1, active status and TERPENE/OTHER source classes. The producer
+      grade is BGC_CHARACTERIZED; the locus grade is CLUSTER_DEMONSTRATED with Knock-out
+      studies, Enzymatic assays and Heterologous expression retained as source methods.
+      These grades describe the retained database assertions and do not transfer the
+      exact XiaI protein identity from another strain. The separate genus-level Streptomyces
+      occurrence is not evidence for production by an additional strain.
+    definition: Source version/status/method/grade is not a complete pathway or fresh
+      primary verification.
+    evidence_ids:
+    - support-2337-origin-owner
+    - support-2337-source-mibig_compounds
+    - support-2337-cached-taxonomy
+    - support-2337-source-routes
+    - support-2337-direct-contexts
+    - support-2337-companion-boundaries
+- assessment_id: support-2337-citations
+  area: evidence
+  topic: Citations
+  outcome: supported
+  summary: The producer/locus evidence uses compound-level DOI:10.1039/c1ob05283g
+    as a MIBiG DATABASE_ASSERTION. The LOTUS occurrence uses the same DOI with uppercase
+    spelling; those source placements are not independent experiments. The mechanism
+    separately retains DOI:10.1021/ja303004g as historical PRIMARY_EXPERIMENT evidence
+    and two database protein mappings. Their roles are preserved individually, without
+    claiming fresh article access, current accession resolution or independently verified
+    quotations.
+  target_ids:
+  - naturalproductmech:mibig-cb4ddd98d8
+  evidence_ids:
+  - support-2337-origin-owner
+  - support-2337-occurrence-owner
+  - support-2337-source-mibig_compounds
+  - support-2337-source-notes
+  - support-2337-direct-contexts
+  - support-2337-companion-boundaries
+  - support-2337-source-lotus_occurrences
+  - support-2337-source-pubchem_bioassay
+  - support-2337-mechanism-owner
+  - support-2337-reader
+  dimensions:
+  - name: citation_scope
+    value: The producer/locus evidence uses compound-level DOI:10.1039/c1ob05283g
+      as a MIBiG DATABASE_ASSERTION. The LOTUS occurrence uses the same DOI with uppercase
+      spelling; those source placements are not independent experiments. The mechanism
+      separately retains DOI:10.1021/ja303004g as historical PRIMARY_EXPERIMENT evidence
+      and two database protein mappings. Their roles are preserved individually, without
+      claiming fresh article access, current accession resolution or independently
+      verified quotations.
+    definition: Database provenance, historical primary-experiment support and occurrence
+      citations retain distinct roles; no publication independence or fresh access
+      is assumed.
+    evidence_ids:
+    - support-2337-origin-owner
+    - support-2337-occurrence-owner
+    - support-2337-source-mibig_compounds
+    - support-2337-source-notes
+    - support-2337-direct-contexts
+    - support-2337-companion-boundaries
+    - support-2337-source-lotus_occurrences
+    - support-2337-source-pubchem_bioassay
+    - support-2337-mechanism-owner
+    - support-2337-reader
+- assessment_id: support-2337-occurrence
+  area: evidence
+  topic: Activity
+  outcome: supported
+  summary: The single written LOTUS occurrence names Streptomyces (NCBITaxon:1883),
+    not HKI0576 at strain resolution, and retains DOI:10.1039/C1OB05283G. The PubChem
+    blank-AID sentinel carries no assay outcome, potency or target and is not an inactive
+    assay. No bioactivity or molecular-target declaration is present in the complete
+    owner. Exact retained BindingDB, sibling and other source joins remain bounded;
+    the biosynthetic enzyme node is not a pharmacological target or evidence of activity.
+  target_ids:
+  - naturalproductmech:mibig-cb4ddd98d8
+  evidence_ids:
+  - support-2337-occurrence-owner
+  - support-2337-assay-owner
+  - support-2337-source-routes
+  - support-2337-cached-taxonomy
+  - support-2337-query-lotus_occurrences
+  - support-2337-query-chebi_origins
+  - support-2337-query-cyanometdb_occurrences
+  - support-2337-query-pubchem_bioassay
+  - support-2337-query-bindingdb_targets
+  - support-2337-query-antibioticmech_inchikeys
+  - support-2337-direct-contexts
+  - support-2337-companion-boundaries
+  dimensions:
+  - name: occurrence_scope
+    value: The single written LOTUS occurrence names Streptomyces (NCBITaxon:1883),
+      not HKI0576 at strain resolution, and retains DOI:10.1039/C1OB05283G. The PubChem
+      blank-AID sentinel carries no assay outcome, potency or target and is not an
+      inactive assay. No bioactivity or molecular-target declaration is present in
+      the complete owner. Exact retained BindingDB, sibling and other source joins
+      remain bounded; the biosynthetic enzyme node is not a pharmacological target
+      or evidence of activity.
+    definition: Occurrence placements are not counts of independent experiments or
+      demonstrated producers.
+    evidence_ids:
+    - support-2337-occurrence-owner
+    - support-2337-assay-owner
+    - support-2337-source-routes
+    - support-2337-cached-taxonomy
+    - support-2337-query-lotus_occurrences
+    - support-2337-query-chebi_origins
+    - support-2337-query-cyanometdb_occurrences
+    - support-2337-query-pubchem_bioassay
+    - support-2337-query-bindingdb_targets
+    - support-2337-query-antibioticmech_inchikeys
+    - support-2337-direct-contexts
+    - support-2337-companion-boundaries
+  - name: assay_target_scope
+    value: The single written LOTUS occurrence names Streptomyces (NCBITaxon:1883),
+      not HKI0576 at strain resolution, and retains DOI:10.1039/C1OB05283G. The PubChem
+      blank-AID sentinel carries no assay outcome, potency or target and is not an
+      inactive assay. No bioactivity or molecular-target declaration is present in
+      the complete owner. Exact retained BindingDB, sibling and other source joins
+      remain bounded; the biosynthetic enzyme node is not a pharmacological target
+      or evidence of activity.
+    definition: Exact retained assay/target assertions are bounded; biosynthetic proteins
+      are not pharmacological target evidence.
+    evidence_ids:
+    - support-2337-occurrence-owner
+    - support-2337-assay-owner
+    - support-2337-source-routes
+    - support-2337-cached-taxonomy
+    - support-2337-query-lotus_occurrences
+    - support-2337-query-chebi_origins
+    - support-2337-query-cyanometdb_occurrences
+    - support-2337-query-pubchem_bioassay
+    - support-2337-query-bindingdb_targets
+    - support-2337-query-antibioticmech_inchikeys
+    - support-2337-direct-contexts
+    - support-2337-companion-boundaries
+- assessment_id: support-2337-classification
+  area: consistency
+  topic: Classification
+  outcome: supported
+  summary: NPClassifier npclassifier.gnps2.org@2026-09-07 predicts Terpenoids, Tryptophan
+    alkaloids, Indole-Diterpenoid alkaloids (Penitrems) and is_glycoside:false. The
+    indole and terpenoid-like carbon framework permit a broad topology comparison,
+    but do not independently establish the named Penitrems class or an exact biosynthetic
+    route. The model filing remains distinct from MIBiG TERPENE/OTHER BGC classes
+    and the source-asserted Meroterpenoid compound class. No sugar residue is represented,
+    and no classifier value is silently replaced.
+  target_ids:
+  - naturalproductmech:mibig-cb4ddd98d8
+  evidence_ids:
+  - support-2337-classification-owner
+  - support-2337-source-mibig_compounds
+  - support-2337-source-npclassifier
+  - support-2337-chemistry
+  - support-2337-topology
+  - support-2337-structure-schema
+  - support-2337-classification-seeder
+  - support-2337-direct-contexts
+  - support-2337-companion-boundaries
+  dimensions:
+  - name: classification_applicability
+    value: NPClassifier npclassifier.gnps2.org@2026-09-07 predicts Terpenoids, Tryptophan
+      alkaloids, Indole-Diterpenoid alkaloids (Penitrems) and is_glycoside:false.
+      The indole and terpenoid-like carbon framework permit a broad topology comparison,
+      but do not independently establish the named Penitrems class or an exact biosynthetic
+      route. The model filing remains distinct from MIBiG TERPENE/OTHER BGC classes
+      and the source-asserted Meroterpenoid compound class. No sugar residue is represented,
+      and no classifier value is silently replaced.
+    definition: Model filing labels, observed topology and source BGC classes remain
+      distinct evidence types.
+    evidence_ids:
+    - support-2337-classification-owner
+    - support-2337-source-mibig_compounds
+    - support-2337-source-npclassifier
+    - support-2337-chemistry
+    - support-2337-topology
+    - support-2337-structure-schema
+    - support-2337-classification-seeder
+    - support-2337-direct-contexts
+    - support-2337-companion-boundaries
+- assessment_id: support-2337-completion
+  area: completeness
+  topic: Completion
+  outcome: unknown
+  summary: The whole retained owner/history, actual intake, exact source payloads
+    and both complete molecular forms have been read. The accepted original maintained
+    result preserves the complete captured owner, original inline mechanism and three
+    history events, including the LLM-assisted curator event. The one original reader
+    check passed; the known capability probe was blocked before socket creation and
+    no request was sent. Full QC, complete OAK coverage and fresh primary/identifier
+    verification remain unavailable; no native status promotion or record edit follows
+    from local consistency.
+  target_ids:
+  - naturalproductmech:mibig-cb4ddd98d8
+  evidence_ids:
+  - support-2337-owner
+  - support-2337-capture
+  - support-2337-intake
+  - support-2337-intake-acceptance
+  - support-2337-inventory-acceptance
+  - support-2337-plan
+  - support-2337-plan-acceptance
+  - support-2337-source-notes
+  - support-2337-curation-scope
+  - support-2337-diagnostic-execution
+  - support-2337-diagnostic-acceptance
+  - support-2337-native-acceptance
+  - support-2337-review-profile
+  - support-2337-review-skill
+  - support-2337-query-mibig_compounds
+  - support-2337-query-chebi_structures
+  - support-2337-query-lotus_occurrences
+  - support-2337-query-cyanometdb_occurrences
+  - support-2337-query-npclassifier
+  - support-2337-query-pubchem_bioassay
+  - support-2337-query-bindingdb_targets
+  - support-2337-query-antibioticmech_inchikeys
+  - support-2337-query-chebi_origins
+  - support-2337-reader-acceptance
+  - support-2337-reader-execution
+  dimensions:
+  - name: review_completion
+    value: The whole retained owner/history, actual intake, exact source payloads
+      and both complete molecular forms have been read. The accepted original maintained
+      result preserves the complete captured owner, original inline mechanism and
+      three history events, including the LLM-assisted curator event. The one original
+      reader check passed; the known capability probe was blocked before socket creation
+      and no request was sent. Full QC, complete OAK coverage and fresh primary/identifier
+      verification remain unavailable; no native status promotion or record edit follows
+      from local consistency.
+    definition: Completion reflects actual evidence access and required-check coverage;
+      parsing and gate success are not scientific proof.
+    evidence_ids:
+    - support-2337-owner
+    - support-2337-capture
+    - support-2337-intake
+    - support-2337-intake-acceptance
+    - support-2337-inventory-acceptance
+    - support-2337-plan
+    - support-2337-plan-acceptance
+    - support-2337-source-notes
+    - support-2337-curation-scope
+    - support-2337-diagnostic-execution
+    - support-2337-diagnostic-acceptance
+    - support-2337-native-acceptance
+    - support-2337-review-profile
+    - support-2337-review-skill
+    - support-2337-query-mibig_compounds
+    - support-2337-query-chebi_structures
+    - support-2337-query-lotus_occurrences
+    - support-2337-query-cyanometdb_occurrences
+    - support-2337-query-npclassifier
+    - support-2337-query-pubchem_bioassay
+    - support-2337-query-bindingdb_targets
+    - support-2337-query-antibioticmech_inchikeys
+    - support-2337-query-chebi_origins
+    - support-2337-reader-acceptance
+    - support-2337-reader-execution
+- assessment_id: support-2337-pathway
+  area: graph
+  topic: Pathway
+  outcome: supported
+  summary: The complete captured owner declares one BIOSYNTHESIS graph with three
+    grounded nodes and two directed edges, and one ordered pathway step. Indosespene
+    is consumed by XiaI to form xiamycin A; this is a downstream tailoring step rather
+    than a complete account of indosespene formation. Every edge and the pathway step
+    retain the primary DOI plus two database references. The pathway has singular
+    substrate/product fields and no proposed field; absence is preserved rather than
+    turned into an invented value. Upstream formation and the alternative oxiamycin
+    branch remain explicitly uncurated. The accepted original maintained reader preserves
+    the complete owner, this graph and pathway, their ordered evidence and all three
+    history events; it does not independently verify the historical scientific claims.
+  target_ids:
+  - naturalproductmech:mibig-cb4ddd98d8
+  evidence_ids:
+  - support-2337-mechanism-owner
+  - support-2337-reader
+  - support-2337-reader-acceptance
+  - support-2337-reader-execution
+- assessment_id: support-2337-protein
+  area: graph
+  topic: Protein
+  outcome: supported
+  summary: XiaI is grounded as UniProtKB:I3VFB9, with historical GenPept AFK78075.1/JQ812811.1
+    mapping to Streptomyces sp. SCSIO 02999 and BGC0000666. The notes explicitly identify
+    this biochemically characterized homolog as context for the HKI0576 xim cluster
+    BGC0000665, not an experimentally proven HKI0576 protein assignment. The historical
+    in-vitro conversion assertion is distinct from the database accession mappings.
+    Exact current sequence, construct/cofactor conditions and independent primary-article
+    verification are unavailable; the review does not broaden homolog evidence to
+    every strain or to the uncurated branches.
+  target_ids:
+  - naturalproductmech:mibig-cb4ddd98d8
+  evidence_ids:
+  - support-2337-mechanism-owner
+  - support-2337-reader
+  - support-2337-reader-acceptance
+  - support-2337-reader-execution
+findings: []
+actions: []
+limitations:
+- All evidence is retained locally. No external publication, identifier, taxonomy,
+  protein sequence or natural stereochemical assertion was refreshed under the absolute
+  no-request instruction.
+- Full QC and complete OAK authority coverage remain unavailable. Original gates,
+  stored-form parsing and maintained-reader preservation establish only their stated
+  scope.
+- Exact empty joins are bounded by saved predicates/snapshots; shared loci, names,
+  taxa or citations do not transfer identity, production, activity or mechanism.
+- Four original omitted-undefined-stereo warnings remain global and unassigned. No
+  additional molecular/YAML parse, source query or target invocation occurred during
+  scientific authoring.
+- No source record or native status/history is edited. Computed model concerns do
+  not automatically establish a maintained-source defect.
+- The whole selected owner was read, but scientific completion is partial because
+  full QC, complete ontology authority coverage and external source verification were
+  unavailable. No native status or history was changed.
+- The branch uses cached base ce6a5498df5be51116bd5e0c119023ee62bb5464. Fresh origin/main
+  verification and publication are deferred because the user prohibits all external
+  requests.
+notes:
+- Support personally read all five complete raw owners/history, actual intakes and
+  the disjoint source partition; exact prior companion carries and BGC complementary
+  readings remain attributed in the joint notes.
+- 'Support personally read all ten saved forms: 336 atom and 366 bond rows, every
+  scalar/ring/stereo/motif/map. Reading receipt 1951e284 preserves the explicit Hygromycin
+  witness and original diagnostic limits.'
+- ROOT operated activation/capture, inventory/composer, canonical intakes and the
+  diagnostic. Native operated original gates and maintained reader under ROOT authorization;
+  ROOT separately accepted results. Scientific authoring invoked none of these targets.
+- Saved review coverage is distinct from the native SEEDED/REVIEWED curation state.
+  Proposed actions are not performed edits.
+tags:
+- offline
+- record-review
+- batch-234
