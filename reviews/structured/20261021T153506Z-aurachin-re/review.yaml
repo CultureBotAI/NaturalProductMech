@@ -1,0 +1,988 @@
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T153506Z-aurachin-re
+title: 'aurachin RE: supported native identity and recoverable experimental context'
+started_at: '2026-10-21T15:22:59.578060Z'
+finished_at: '2026-10-21T15:35:06.103931Z'
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The stored aurachin RE structure, unresolved 9-prime stereocentre and native
+  Rhodococcus occurrence are supported. The full cited study provides native knockout/complementation,
+  heterologous production and a purified final-step assay that can enrich the source-faithful
+  empty-method record together with JCM 6824 strain context. Source-internal host
+  and mutant inconsistencies are explicitly excluded from those endpoints.
+source:
+  git_revision: 1c2402097718c138b081e00943de8f04de0541cd
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: PLAN.md
+    sha256: 5360993626369fec5462d45f3cfc68cb1653690ad72de10de6cad32d870e6035
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/aurachin-re.yaml
+    sha256: 578cfe13b401c1fee67afcd89a991a3f7e41e24ab86ecaf6ff61c070ec7acb8b
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+    role: context
+  - path: src/naturalproductmech/grading.py
+    sha256: ece54c4a2c0803f034ac59de51b1006cf79ea8d6b6256d75757d4adb88ea9630
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 93, batch 010, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated targets in earlier
+    batch commits (publication tracked separately). At selection, 144 of 3116 current
+    records had campaign coverage and 2972 remained. The population search included
+    ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-171daf3d42
+targets:
+- target_id: naturalproductmech:mibig-171daf3d42
+  path: data/natural_products/alkaloids/aurachin-re.yaml
+  label: aurachin RE
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-171daf3d42
+  command: just validate-strict data/natural_products/alkaloids/aurachin-re.yaml --out
+    /private/tmp/npm-review-work/093/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T15:23:01.099611Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 current record files agree with PATHS.tsv and their pinned filing
+    pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055340+00:00;
+    finished 2026-10-21T09:55:22.727768+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-corpus.log. Reused
+    for batch010 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch010. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-171daf3d42
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 current records passed the documented byte-reproduction gate
+    against committed inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055361+00:00;
+    finished 2026-10-21T09:56:44.050706+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-reproduction.log.
+    Reused for batch010 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch010. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-171daf3d42
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The exhaustive review queue produced 8,928 diagnostic rows across 12 queues;
+    this deterministic output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just review-queue --tsv /private/tmp/npm-review-queue-batch-004.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.057401+00:00;
+    finished 2026-10-21T09:54:38.468783+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/review-queue.log. Reused
+    for batch010 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch010. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-171daf3d42
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'The configured identifier-label gate passed using the existing ontology
+    caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions,
+    499 warning-only mismatches and 4,744 pairs skipped because their prefixes have
+    no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.061733+00:00;
+    finished 2026-10-21T09:56:36.296159+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/validate-products.log. Reused
+    for batch010 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch010. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-171daf3d42
+- check_id: shared-qc
+  name: Full repository quality gate on the current main baseline
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed on the unchanged main baseline
+    during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+    All configured lint, governance, documentation, provenance, source-queue, schema,
+    rendering, reproduction, filing-integrity and reporting stages completed successfully.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:30.560925+00:00;
+    finished 2026-10-21T10:04:44.806799+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/qc.log. Reused for batch010
+    only after a fresh fetch/clean branch, equal commit/tree and two reads of all
+    9,182 tracked byte streams and modes (208,070,649 bytes), including a recheck
+    after the fresh authoritative catalogue. This gate was not rerun for batch010.
+    Original execution times, scope, warnings, exceptions and skips are retained.'
+  target_ids:
+  - naturalproductmech:mibig-171daf3d42
+- check_id: R093-FULL-OWNER
+  name: Complete owner and referenced-component scope
+  status: passed
+  required: true
+  summary: The entire owner and all matching local source rows were read. The resolved
+    view confirms the empty component-reference set; all formal input hashes and fresh
+    intake/strict success receipts agree.
+  target_ids:
+  - naturalproductmech:mibig-171daf3d42
+  evidence_ids:
+  - R093-OWNER
+  - R093-LOCAL-SOURCES
+- check_id: S093-C-NATIVE
+  name: Exact native, heterologous and final-enzyme endpoint applicability
+  status: passed
+  required: true
+  summary: Original full primary/SI and exact deposited strain/accession support the
+    bounded three-method curation route.
+  target_ids:
+  - naturalproductmech:mibig-171daf3d42
+  evidence_ids:
+  - S093-E-2013
+  - S093-E-2013SI
+  - S093-E-AB694012
+- check_id: S093-C-2008
+  name: Detailed original discovery methods
+  status: unavailable
+  required: false
+  summary: The full 2008 paper was not recovered. This does not block the exact occurrence
+    assertion because its complete primary abstract explicitly reports it and the
+    full 2013 native study corroborates the strain; no detailed original assay or
+    absolute assignment is adopted.
+  target_ids:
+  - naturalproductmech:mibig-171daf3d42
+  evidence_ids:
+  - S093-E-2008
+- check_id: C093-INTERNAL
+  name: Internal exact graph and provenance consistency
+  status: passed
+  required: true
+  summary: SMILES, Standard InChI, key, formula/charge, source concepts and literal
+    current xrefs are consistent at the stored resolution. This check does not independently
+    prove all experimental stereochemistry.
+  target_ids:
+  - naturalproductmech:mibig-171daf3d42
+  evidence_ids:
+  - C093-OWNER
+  - C093-RAW
+  - C093-COMPARISON
+  - C093-OWNER-COMPARISON
+  - C093-AUTH0
+  - C093-AUTH1
+  - C093-AUTH2
+  - C093-AUTH3
+  - C093-AUTH4
+- check_id: C093-PRIMARY-RESOLUTION
+  name: Primary depiction and retained stereo uncertainty
+  status: passed
+  required: true
+  summary: The source drawing does not require an assigned 9-prime hand; the owner
+    does not invent one.
+  target_ids:
+  - naturalproductmech:mibig-171daf3d42
+  evidence_ids:
+  - C093-PRIMARY
+  - C093-OWNER
+  - C093-COMPARISON
+evidence:
+- evidence_id: R093-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/aurachin-re.yaml
+  locator: Complete owner, every assertion, inline graph, discussion and history event
+  accessed_at: '2026-10-21T15:24:59.730317Z'
+  support: supports
+  summary: 'Root read the complete aurachin RE owner after its individual intake.
+    It contains 1 occurrence, 1 producer and 1 cluster assertions. Referenced components
+    are empty. Present optional fields: none. This scope is based on complete parsed
+    contents, not a filtered search miss.'
+  snapshot_sha256: 578cfe13b401c1fee67afcd89a991a3f7e41e24ab86ecaf6ff61c070ec7acb8b
+- evidence_id: R093-LOCAL-SOURCES
+  kind: record_content
+  reference: /private/tmp/npm-review-work/093/local-sources.json
+  locator: Every matching MIBiG, LOTUS, ChEBI, CyanoMetDB and NPClassifier row and
+    complete resolved owner
+  accessed_at: '2026-10-21T15:24:59.730317Z'
+  support: context_only
+  summary: Root read every matching source row. The native resolved owner equals the
+    complete parsed raw YAML. Imported assertions and deterministic joins remain distinct
+    from independently inspected primary experiments.
+  snapshot_sha256: aeede96e459e38202af4642bf5c2bca007967ec87b0863829dd51d4b653aff40
+- evidence_id: R093-IMODULON-DATASETS
+  kind: database
+  reference: /private/tmp/npm-review-work/010/imodulon-datasets.txt
+  locator: Complete 28-row dataset catalogue; original receipt 010/imodulon-context-receipts.json
+  accessed_at: '2026-10-21T07:21:15.957321Z'
+  support: context_only
+  summary: The catalogue was retrieved on 2026-10-21 at 07:21:15 UTC and is reused
+    with that original time. It includes P. aeruginosa precise364/precise411 and S.
+    albidoflavus/S. coelicolor datasets. It has no named Stigmatella, Rhodococcus,
+    Herpetosiphon or S. mirabilis dataset, and no identified NA04227 dataset. Species
+    or genus matching alone does not establish exact stock, gene, locus or metabolite
+    evidence.
+  snapshot_sha256: 1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549
+- evidence_id: R093-Q24897598
+  kind: database
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q24897598.json
+  locator: Exact organism entity, scientific name and P685 NCBI Taxonomy mapping
+  accessed_at: '2026-10-21T15:06:29.761530Z'
+  support: context_only
+  summary: Literal entity Q24897598 resolves as Rhodococcus erythropolis, P685 1833,
+    matching every associated local LOTUS row. This verifies identifier routing only,
+    not compound occurrence, experimental strain identity or historical taxonomic
+    revisions.
+  snapshot_sha256: f6ebc648c829127af04020553f106f56523fc2bb9eba464615ea4e5df44e9952
+- evidence_id: S093-E-LOCAL
+  kind: record_content
+  reference: data/natural_products/alkaloids/aurachin-re.yaml
+  locator: Complete actual owner, inline components and parsed source rows
+  accessed_at: '2026-10-21T15:34:23.150255Z'
+  support: supports
+  summary: The owner imports a single BGC0001075:1 version 5 source row, R. erythropolis,
+    AB694012.1 and PMID23677853 with empty methods/SOURCE_ASSERTION/CLUSTER_UNSTATED.
+    The one LOTUS occurrence cites the separate 2008 discovery. No individual enzyme
+    graph or activity claim is asserted.
+  snapshot_sha256: 578cfe13b401c1fee67afcd89a991a3f7e41e24ab86ecaf6ff61c070ec7acb8b
+- evidence_id: S093-E-CONSUMER
+  kind: record_content
+  reference: src/naturalproductmech/curate/producer_strains.py
+  locator: Complete strain loader/emitter; seeder application order and method override
+    code inspected separately
+  accessed_at: '2026-10-21T15:34:23.150255Z'
+  support: supports
+  summary: The consumed strain table requires one exact MIBiG compound source and
+    its full original-row SHA256. The emitter attaches strain context to the producer
+    only. Existing source assertion and locus evidence are distinct; an explicit tested
+    emitter extension is needed to propagate the same qualification to BGC notes.
+    No reserved decisions.tsv route is assumed.
+  snapshot_sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+- evidence_id: S093-E-2013
+  kind: primary_source
+  reference: https://mhlw-grants.niph.go.jp/system/files/2013/133121/201321001A/201321001A0017.pdf
+  locator: Complete original pp. 1085–1093 in government compilation physical pp.
+    11–19; native-mutant, expression, enzyme and analytical methods; original relevant
+    figure pixels
+  accessed_at: '2026-10-21T14:46:54.542144Z'
+  support: supports
+  summary: The full original 2013 article identifies native R. erythropolis JCM 6824
+    and a 17,525 bp rau region. Native rauA mutant M02 loses RE and accumulates the
+    isolated N-deoxy precursor 2; pK4-rauA complementation restores a small RE signal.
+    Full rauA–I expression in R. erythropolis JCM 3201 yields RE versus vector control,
+    whereas expression induction impairs growth. Purified C-terminal His6 RauA made
+    in E. coli directly converts precursor 2 to RE in an NADPH/ferredoxin system.
+    These are three separate experimental contexts, with an exact final RE endpoint.
+  snapshot_sha256: 461a5a744f01c08b4d3112272602d38f6bf87a5d442266e066d9d035e8bd8bb1
+- evidence_id: S093-E-2013SI
+  kind: primary_source
+  reference: https://mhlw-grants.niph.go.jp/system/files/2013/133121/201321001A/201321001A0018.pdf
+  locator: Complete six-page original SI at the beginning of the adjacent government
+    compilation; Tables S1–S2 and Figures S1–S2
+  accessed_at: '2026-10-21T14:50:27.216641Z'
+  support: supports
+  summary: The original SI supplies strains/plasmids, mutant construction and LC/HPLC
+    comparisons. Native JCM 6824 is distinguished from JCM 3201 and recombinant E.
+    coli. The rauG transposon phenotype is not equated with the markerless rauG mutant,
+    which retains production; rauH/I retain weak product in SI despite broad main-text
+    wording. Only exact endpoint-positive experiments are adopted.
+  snapshot_sha256: c50f06b6c40fa2aa43d7665f54ba8fdf2e54ee22f9d49c69ba77320ea9bdde51
+- evidence_id: S093-E-AB694012
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/nuccore/AB694012.1
+  locator: Complete source/header and all gene/CDS qualifiers; no assay-construct
+    sequence equivalence inferred
+  accessed_at: '2026-10-21T15:25:53.250244Z'
+  support: supports
+  summary: The versioned 17,525 bp deposition explicitly names R. erythropolis JCM
+    6824 and PMID23677853. It contains rauA at 3559..4794 (BAN59735.1) and rauB–I
+    through 12982. This is a positive accession/strain/gene bridge to the cited primary
+    study, not proof that every current annotated protein equals an experimental fusion.
+  snapshot_sha256: 00f4f228747a4ca23d8996663271cbabaca3ca2e27723a9d52b7e42381a91c1d
+- evidence_id: S093-E-2008
+  kind: primary_source
+  reference: https://doi.org/10.1038/ja.2008.96
+  locator: Complete retained primary abstract/preview only; not the full 2008 article
+  accessed_at: '2026-10-21T15:34:23.150255Z'
+  support: supports
+  summary: The complete accessible original publisher abstract explicitly reports
+    isolation and NMR/MS identification of aurachin RE from culture broth of R. erythropolis
+    JCM 6824 and a broad Gram-positive antimicrobial spectrum. It supports the named
+    native occurrence, but supplies no detailed assay or absolute C9′ assignment.
+    The precise original web-call UTC was not retained; accessed_at records this formal
+    reread of the retained primary response, whose source preparation and failed full-paper
+    routes are pinned.
+  snapshot_sha256: 9e5276d6fcc288194cfcf82f1a6499f6f409a89509981c055da95ce08fe52cb2
+- evidence_id: S093-E-METHOD-CONSUMER
+  kind: record_content
+  reference: scripts/seed_from_sources.py
+  locator: load/apply_mibig_locus_evidence_overrides, source-row application order
+    and producer/BGC emitters
+  accessed_at: '2026-10-21T15:34:23.150255Z'
+  support: supports
+  summary: REPLACE accepts known nonempty methods and recomputes the two grades. Its
+    expected_* columns are not enforced. A jointly required consumed strain qualifier
+    can enforce the exact whole original-row digest; it must be mandatory and tested
+    together with the method override. The currently correct PMID23677853 need not
+    be redundantly replaced.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: C093-OWNER
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/alkaloids/aurachin-re.yaml
+  locator: Complete owner, literal xrefs, definition, source concepts, classification
+    and discussion/history
+  accessed_at: '2026-10-21T15:29:24.963010Z'
+  support: supports
+  summary: Owner and resolved packet are identical. Intake chemistry gives CHMBGHGLJJOOSO-VAKGXLRMSA-N,
+    formula C25H33NO3, charge 0 and centres [[4, '?']]. The evidence scope here is
+    chemical identity and provenance; biology and causal claims are assessed separately.
+  snapshot_sha256: 578cfe13b401c1fee67afcd89a991a3f7e41e24ab86ecaf6ff61c070ec7acb8b
+- evidence_id: C093-RAW
+  kind: record_content
+  reference: /private/tmp/npm-review-work/093/local-sources.json
+  locator: All matching complete raw MIBiG, ChEBI, LOTUS and classifier rows
+  accessed_at: '2026-10-21T15:29:24.963010Z'
+  support: supports
+  summary: All 1 MIBiG rows, 1 LOTUS rows, 0 eligible ChEBI rows and 1 classifier
+    rows were read. Complete parsed row SHA256 values and reproduced source-concept
+    IDs are retained in the per-record comparison.
+  snapshot_sha256: aeede96e459e38202af4642bf5c2bca007967ec87b0863829dd51d4b653aff40
+- evidence_id: C093-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch010/chemistry-first-seven/chemical-comparison.json
+  locator: aurachin RE complete Standard and fixed-H graph comparison
+  accessed_at: '2026-10-21T14:58:36.456215Z'
+  support: supports
+  summary: Raw/current BGC0001075.5, literal NPA0904 endpoint (returns canonical NPA000904)
+    and literal PubChem 25188767 agree Standard InChI and fixed-H and leave one side-chain
+    centre unspecified. Exact-key ChEBI query returned 404. Name-hit two-star CHEBI198323
+    JSON/MOL instead encode 9-prime S, key CHMBGHGLJJOOSO-DFRRJILVSA-N; same stereo-erased
+    connectivity but different stereochemical resolution.
+  snapshot_sha256: 68a2e565c0d5e67c8e524396a3d503990757f4924b65437559ab5129ab112710
+- evidence_id: C093-AUTH0
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0001075.5/annotations.json
+  locator: current BGC0001075; compounds[0].structure
+  accessed_at: '2026-10-21T14:57:04.673828Z'
+  support: supports
+  summary: 'Valid parsed representation: True. Key CHMBGHGLJJOOSO-VAKGXLRMSA-N; formula
+    C25H33NO3; charge 0; tetrahedral centres [[4, ''?'']].'
+  snapshot_sha256: 5a96d3d29c39635718b9b3fe21782c68f292642b4b2b86e0b774f4c28614f754
+- evidence_id: C093-AUTH1
+  kind: authority
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/25188767/property/InChIKey,InChI,IsomericSMILES,MolecularFormula,Charge/JSON
+  locator: PubChem 25188767; PropertyTable.Properties[0].SMILES
+  accessed_at: '2026-10-21T14:57:04.591090Z'
+  support: supports
+  summary: 'Valid parsed representation: True. Key CHMBGHGLJJOOSO-VAKGXLRMSA-N; formula
+    C25H33NO3; charge 0; tetrahedral centres [[23, ''?'']].'
+  snapshot_sha256: 97cc5c7a07e5d11ed8542b77638b25675d3783c28e3a956416d485fd4f198f4e
+- evidence_id: C093-AUTH2
+  kind: authority
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/CHMBGHGLJJOOSO-VAKGXLRMSA-N/property/InChIKey,InChI,IsomericSMILES,MolecularFormula,Charge/JSON
+  locator: PubChem 25188767; PropertyTable.Properties[0].SMILES
+  accessed_at: '2026-10-21T14:57:04.158515Z'
+  support: supports
+  summary: 'Valid parsed representation: True. Key CHMBGHGLJJOOSO-VAKGXLRMSA-N; formula
+    C25H33NO3; charge 0; tetrahedral centres [[23, ''?'']].'
+  snapshot_sha256: 97cc5c7a07e5d11ed8542b77638b25675d3783c28e3a956416d485fd4f198f4e
+- evidence_id: C093-AUTH3
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/198323/
+  locator: ChEBI JSON CHEBI:198323; default_structure.smiles
+  accessed_at: '2026-10-21T14:57:56.772454Z'
+  support: supports
+  summary: 'Valid parsed representation: True. Key CHMBGHGLJJOOSO-DFRRJILVSA-N; formula
+    C25H33NO3; charge 0; tetrahedral centres [[4, ''S'']].'
+  snapshot_sha256: 651062d9fcec9eb22903178187a8aa9d83293bc6acbbd86c22bb494168d984c6
+- evidence_id: C093-AUTH4
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/198323/
+  locator: ChEBI MOL 198323; official MOL
+  accessed_at: '2026-10-21T14:57:56.721212Z'
+  support: supports
+  summary: 'Valid parsed representation: True. Key CHMBGHGLJJOOSO-DFRRJILVSA-N; formula
+    C25H33NO3; charge 0; tetrahedral centres [[23, ''S'']].'
+  snapshot_sha256: 7723c5c10ad9ddfb489572273fec0d7714e513852c6804808fc44c983d8c4949
+- evidence_id: C093-GROUNDING-CODE
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: mint_identifier, choose_pathway, grouping and exact-key ChEBI grounding;
+    source_concepts emission
+  accessed_at: '2026-10-21T15:29:24.963010Z'
+  support: supports
+  summary: Source-concept identifiers hash source and accession:compound index, not
+    labels or chemical keys. A unique eligible exact-key ChEBI row grounds EXACT;
+    absent eligible rows retain the minted source identifier. Classification is joined
+    by exact key.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: C093-ELIGIBILITY-CODE
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/extract_chebi.py
+  locator: MIN_STARS and extract_compounds status/stars filter
+  accessed_at: '2026-10-21T15:29:24.963010Z'
+  support: supports
+  summary: Only the eligible three-star projection enters exact grounding; a currently
+    accessible two-star record is not an asserted eligible authority.
+  snapshot_sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+- evidence_id: C093-WIKIDATA-Q75059403
+  kind: database
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q75059403.json
+  locator: Current P235, P234, P2017 and literal chemical entity identity
+  accessed_at: '2026-10-21T15:27:08.532806Z'
+  support: supports
+  summary: Literal LOTUS chemical entity Q75059403 resolves to the stored full key;
+    every retained isomeric SMILES reproduces the same Standard key and fixed-H graph.
+    Canonical stereo-free SMILES is not substituted for the isomeric property.
+  snapshot_sha256: ed3c354b0aafa8dd28c2e2e942975d301ba2e7806f391be7554de1bcb82fbc2f
+- evidence_id: C093-OWNER-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/093/chemistry-owner-comparison.json
+  locator: Exact owner/current authority linkage; independently parsed Wikidata and
+    reconstructed source-concept hashes
+  accessed_at: '2026-10-21T15:29:25.686348Z'
+  support: supports
+  summary: Recomputed all literal chemical Wikidata isomeric graphs and 1 accession:index
+    source concepts against this owner. Full row pins and ignored-inclusive local
+    search are recorded.
+  snapshot_sha256: ba1b7ad9f3beeffa650397c052c03d9d8a1df96dd0b37877b3b4fba5ce1b90ff
+- evidence_id: C093-PRIMARY
+  kind: primary_source
+  reference: https://mhlw-grants.niph.go.jp/system/files/2013/133121/201321001A/201321001A0017.pdf
+  locator: Original 2013 Scheme 1 on printed page 1085 / physical page 11
+  accessed_at: '2026-10-21T14:46:54.542144Z'
+  support: supports
+  summary: RE compound 1 is the N-hydroxy, side-chain-hydroxylated quinolin-4-one.
+    Its 9-prime OH bond is drawn without an absolute stereobond. The owner leaves
+    that centre unspecified and retains the two discriminable E farnesyl alkenes.
+  snapshot_sha256: 461a5a744f01c08b4d3112272602d38f6bf87a5d442266e066d9d035e8bd8bb1
+- evidence_id: C093-ELIGIBLE-SEARCH
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=CHMBGHGLJJOOSO-VAKGXLRMSA-N&size=100
+  locator: Bounded current exact full-key query
+  accessed_at: '2026-10-21T14:57:05.685983Z'
+  support: supports
+  summary: Exact CHMBGHGLJJOOSO-VAKGXLRMSA-N query returned HTTP 404/no match. The
+    separately inspected name hit CHEBI:198323 has two stars and explicitly encodes
+    9-prime S, key CHMBGHGLJJOOSO-DFRRJILVSA-N; it is not an exact match to the unspecified
+    owner.
+  snapshot_sha256: b16d7949482d5a776d0065ebac3424cd0f3e4df4ba27ab16724ea9f2d694c30f
+  search_scope: Current exact full-key ChEBI query and retained name-hit JSON/MOL
+    only; no exhaustive later absolute-configuration literature search is claimed.
+assessments:
+- assessment_id: R093-HISTORY
+  area: provenance
+  topic: Native status and retained audit history
+  outcome: supported
+  summary: The dated seed events and retained SEEDED status document generated provenance.
+    This review adds no native curation event or status promotion. The October 13
+    event is another SEEDED_FROM_SOURCES event, explicitly including curation-table
+    inputs.
+  target_ids:
+  - naturalproductmech:mibig-171daf3d42
+  evidence_ids:
+  - R093-OWNER
+- assessment_id: R093-OPTIONAL
+  area: completeness
+  topic: Present optional assertions and enrichment limits
+  outcome: not_applicable
+  summary: The complete owner contains no structured pathway, causal graph, molecular
+    target, bioactivity, clinical status, application, cross-corpus relationship or
+    discussion. Optional enrichment is separate from correcting present claims; compound
+    names and computed classes do not establish a mechanism or activity.
+  target_ids:
+  - naturalproductmech:mibig-171daf3d42
+  evidence_ids:
+  - R093-OWNER
+  - R093-LOCAL-SOURCES
+- assessment_id: R093-FILING
+  area: representation
+  topic: Computed filing and returned class scope
+  outcome: supported
+  summary: The owner reproduces its exact-key NPClassifier result, including model
+    version npclassifier.gnps2.org@2026-09-07, Alkaloids filing, every superclass/class
+    label (including the empty returned sets where applicable), and false glycoside
+    flag. These remain computed predictions, not experiments proving precursor use,
+    natural origin or stereochemistry. BGC classes retain their separate MIBiG source
+    and biological assessment.
+  target_ids:
+  - naturalproductmech:mibig-171daf3d42
+  evidence_ids:
+  - R093-OWNER
+  - R093-LOCAL-SOURCES
+- assessment_id: R093-IMODULON-SCOPE
+  area: completeness
+  topic: Native-producer transcriptomic coverage boundary
+  outcome: not_applicable
+  summary: No exact asserted native producer/experimental strain dataset is identified
+    in the complete inspected catalogue. Streptomyces genus overlap does not identify
+    NA04227 or P8-A2. S. albidoflavus, S. coelicolor and E. coli resources are not
+    substituted for native-producer expression context merely because these organisms
+    appear as heterologous hosts in a paper. Catalogue noncoverage is not negative
+    biological evidence.
+  target_ids:
+  - naturalproductmech:mibig-171daf3d42
+  evidence_ids:
+  - R093-OWNER
+  - R093-IMODULON-DATASETS
+- assessment_id: R093-ORGANISM-IDS
+  area: provenance
+  topic: Literal LOTUS organism-identifier routing
+  outcome: supported
+  summary: Every literal organism entity in the matching LOTUS rows resolves to its
+    retained taxon and NCBI identifier. The primary-source assessment independently
+    addresses exact compound occurrence, native producer, collection host and experimental
+    strain.
+  target_ids:
+  - naturalproductmech:mibig-171daf3d42
+  evidence_ids:
+  - R093-LOCAL-SOURCES
+  - R093-Q24897598
+- assessment_id: S093-A-NATIVE
+  area: evidence
+  topic: Exact native producer, locus and experimental tiers
+  outcome: supported
+  summary: Native JCM 6824 rauA deletion/complementation directly links its locus
+    to RE production. Full rauA–I heterologous expression establishes cluster sufficiency
+    in a different Rhodococcus host; purified RauA establishes the final N-oxidation
+    step. These do not establish every proposed step or the 9′ hydroxylase. Existing
+    grades accurately describe the empty imported source methods, but omit strong
+    applicable primary experiments that can be adopted through curation.
+  target_ids:
+  - naturalproductmech:mibig-171daf3d42
+  evidence_ids:
+  - S093-E-2013
+  - S093-E-2013SI
+  - S093-E-AB694012
+  dimensions:
+  - name: native_experimental_strain
+    value: Rhodococcus erythropolis JCM 6824
+    definition: Native M02 rauA deletion and genetic complementation; do not replace
+      this with the heterologous host.
+    evidence_ids:
+    - S093-E-2013
+    - S093-E-2013SI
+    - S093-E-AB694012
+  - name: heterologous_and_in_vitro_context
+    value: JCM 3201 plus full rauA–I; recombinant C-terminal His6 RauA in E. coli
+    definition: Full-product heterologous and enzyme endpoints are independently supported;
+      expression hosts are not native RE producers.
+    evidence_ids:
+    - S093-E-2013
+    - S093-E-2013SI
+  - name: producer_locus_evidence_tiers
+    value: Imported SOURCE_ASSERTION/CLUSTER_UNSTATED; eligible curated BGC_CHARACTERIZED/CLUSTER_DEMONSTRATED
+    definition: The stronger producer grade derives from the native knockout, not
+      from heterologous expression or purified enzyme assays.
+    evidence_ids:
+    - S093-E-2013
+    - S093-E-2013SI
+    - S093-E-METHOD-CONSUMER
+- assessment_id: S093-A-OCCURRENCE
+  area: evidence
+  topic: Original occurrence and biological origin
+  outcome: supported
+  summary: The original 2008 abstract affirmatively reports exact RE isolation from
+    JCM 6824; the complete 2013 native study independently corroborates that biological
+    source. Species-level LOTUS occurrence is coherent and is not treated as an independently
+    demonstrated producer merely from its database label. Natural origin is supported.
+    No absolute configuration is inferred for the unassigned 9′ centre.
+  target_ids:
+  - naturalproductmech:mibig-171daf3d42
+  evidence_ids:
+  - S093-E-2013
+  - S093-E-2013SI
+  - S093-E-2008
+- assessment_id: S093-A-CONFLICTS
+  area: evidence
+  topic: Source-internal host and mutant wording limits
+  outcome: supported
+  summary: Scheme 2 has a JCM 6825 caption discrepancy, while the source record, full
+    methods and culture context identify JCM 6824. The single-gene resting-cell Methods
+    name M1218 (JCM 2895-derived) while Results name JCM 3201; that particular assay
+    is excluded from the proposed grading rationale. The retained full-cluster JCM
+    3201 result, native M02 result and purified RauA result suffice without resolving
+    that mismatch or claiming all rau genes are essential.
+  target_ids:
+  - naturalproductmech:mibig-171daf3d42
+  evidence_ids:
+  - S093-E-2013
+  - S093-E-2013SI
+  - S093-E-AB694012
+- assessment_id: S093-A-CLASS
+  area: representation
+  topic: Broad class and sparse optional content
+  outcome: supported
+  summary: The quinolone/N-hydroxy aurachin class and hybrid terpene/PKS source context
+    are consistent with the primary biosynthetic study. Computed NPClassifier labels
+    remain computational. No missing optional protein, graph or activity slot is itself
+    a defect.
+  target_ids:
+  - naturalproductmech:mibig-171daf3d42
+  evidence_ids:
+  - S093-E-2013
+  - S093-E-LOCAL
+- assessment_id: C093-CLASS
+  area: representation
+  topic: Classifier provenance and filing
+  outcome: supported
+  summary: The complete exact-key NPClassifier row reproduces the stored Alkaloids
+    filing and all supplied superclass/class labels; empty finer classifications are
+    preserved. This is model-derived classification, not evidence of biological origin.
+  target_ids:
+  - naturalproductmech:mibig-171daf3d42
+  evidence_ids:
+  - C093-RAW
+  - C093-GROUNDING-CODE
+- assessment_id: C093-IDENTITY
+  area: identity
+  topic: Unspecified side-chain hand preserved
+  outcome: supported
+  summary: The current MIBiG graph, literal NPAtlas NPA0904 endpoint (canonical NPA000904),
+    PubChem 25188767 and LOTUS chemical Wikidata agree with the stored full/fixed-H
+    graph. The original 2013 drawing supports the same constitutional and alkene resolution.
+    One unresolved 9-prime centre is correctly reflected by stereo_complete false.
+  target_ids:
+  - naturalproductmech:mibig-171daf3d42
+  evidence_ids:
+  - C093-OWNER
+  - C093-PRIMARY
+  - C093-COMPARISON
+  - C093-OWNER-COMPARISON
+  - C093-AUTH0
+  - C093-AUTH1
+  - C093-AUTH2
+  - C093-AUTH3
+  - C093-AUTH4
+- assessment_id: C093-GROUNDING
+  area: grounding
+  topic: Name-only ChEBI stereoisomer excluded
+  outcome: supported
+  summary: The two-star name hit specifies 9-prime S and therefore differs in stereochemical
+    resolution. Neither its label nor authority status proves the natural hand. The
+    minted identity and lack of an exact eligible grounding are retained; no replacement
+    by CHEBI:198323 is justified.
+  target_ids:
+  - naturalproductmech:mibig-171daf3d42
+  evidence_ids:
+  - C093-ELIGIBLE-SEARCH
+  - C093-COMPARISON
+  - C093-GROUNDING-CODE
+  - C093-ELIGIBILITY-CODE
+  - C093-AUTH0
+  - C093-AUTH1
+  - C093-AUTH2
+  - C093-AUTH3
+  - C093-AUTH4
+findings:
+- finding_id: S093-F-CONTEXT
+  issue_key: mibig-bgc0001075-compound1-experimental-context
+  category: completeness
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Adopt the exact RE experiments with their native strain context
+  description: The imported empty-method grade is source-faithful, not a false assertion.
+    However, the cited full primary study supplies an applicable native rauA knockout/complement,
+    full rauA–I heterologous production and exact final RauA product assay, while
+    the owner omits both these methods and JCM 6824. A coordinated curated enrichment
+    would make the record experimentally informative without transferring host or
+    precursor evidence.
+  target_ids:
+  - naturalproductmech:mibig-171daf3d42
+  field_paths:
+  - producer_organisms[0].strain
+  - producer_organisms[0].evidence_basis
+  - producer_organisms[0].evidence
+  - biosynthetic_gene_clusters[0].locus_evidence_methods
+  - biosynthetic_gene_clusters[0].link_evidence_basis
+  - biosynthetic_gene_clusters[0].notes
+  evidence_ids:
+  - S093-E-2013
+  - S093-E-2013SI
+  - S093-E-AB694012
+  - S093-E-METHOD-CONSUMER
+  - S093-E-LOCAL
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Consumed exact-source method adoption
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Mandatory whole-row-pinned native strain context
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/producer_strains.py
+    role: Existing full-row guard and evidence emitter
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Coordinated grading and provenance emission
+  - repository: CultureBotAI/NaturalProductMech
+    path: conf/producer_evidence.tsv
+    role: Separate organism and cluster method semantics
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Preserved original empty-method source row
+actions:
+- action_id: S093-ACT-CONTEXT
+  description: For source BGC0001075:1, add a consumed strain row with expected_source_row_sha256=7f904cf4f69aad27e54a2831678e53bfba6a2ddd7b3f88cc711edda5e0f35f10,
+    strain=JCM 6824, reference=PMID:23677853 and dated rationale. Jointly add REPLACE
+    for minted_identifier=naturalproductmech:mibig-171daf3d42, source=MIBIG, source_id=BGC0001075,
+    methods=Knock-out studies|Heterologous expression|Enzymatic assays. The current
+    REPLACE consumer ignores expected_* columns; enforce the full original row through
+    the jointly required strain row, with a composition check that rejects a missing/mismatched
+    guard. Preserve original source version 5, taxon1833, accession AB694012.1, empty
+    bounds and full key CHMBGHGLJJOOSO-VAKGXLRMSA-N. Keep the already correct PMID23677853
+    rather than adding a redundant claim-reference override. Emit the curator rationale
+    and original empty-method provenance on both claims, including a tested BGC.notes
+    propagation extension. Recompute BGC_CHARACTERIZED/CLUSTER_DEMONSTRATED from the
+    existing method map, attributing the producer upgrade specifically to native M02.
+    Preserve the original raw row and source concepts.
+  finding_ids:
+  - S093-F-CONTEXT
+  target_ids:
+  - naturalproductmech:mibig-171daf3d42
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Consumed exact-source method adoption
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Mandatory whole-row-pinned native strain context
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/producer_strains.py
+    role: Existing full-row guard and evidence emitter
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Coordinated grading and provenance emission
+  - repository: CultureBotAI/NaturalProductMech
+    path: conf/producer_evidence.tsv
+    role: Separate organism and cluster method semantics
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Preserved original empty-method source row
+  generator: scripts/seed_from_sources.py with coordinated consumed method and strain
+    rows
+  acceptance_checks:
+  - Fail closed if the full original row changes, if a duplicate decision exists,
+    or if the REPLACE decision is separated from its consumed full-row guard.
+  - Regeneration carries JCM 6824, curated method provenance and source-empty-method
+    context on the exact producer/locus; source assertions from other compounds remain
+    unchanged.
+  - Verify separate native M02, full-cluster JCM 3201 and purified RauA endpoints;
+    exclude the source-conflicted single-gene resting-cell assay and any claim that
+    all rau genes are essential.
+  - Ensure only native knockout sets BGC_CHARACTERIZED; heterologous and enzyme methods
+    grade the locus. Preserve the unspecified 9′ centre and all occurrence/xref joins.
+  - Run documented reproduction, strict, corpus and QC gates after the curation implementation.
+limitations:
+- The review assesses current assertions and concrete evidence gaps. It does not claim
+  exhaustive discovery of every later study or require every optional mechanism for
+  review coverage.
+- The full original 2008 discovery paper remains inaccessible; its primary abstract
+  is affirmative but is not represented as a full experimental read.
+- No raw spectrum reanalysis, absolute 9′ assignment or complete tagged-construct/native
+  sequence comparison is claimed. Primary source inconsistencies are retained and
+  excluded from the exact adopted endpoints.
+- The original 2008 isolation full body remains inaccessible in the retained source
+  preparation; the 2013 primary drawing is used at its stated resolution. No later
+  absolute assignment or opposite stereoisomer is inferred from the name-matched two-star
+  ChEBI record.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35
+  explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently
+  verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+  Skipped tests are not counted as passing tests. Existing ontology caches were used;
+  no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do
+  not establish biological production, stereochemical specificity, evidence adequacy,
+  or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology
+  results. Reuse establishes unchanged repository inputs; it is not a new remote authority
+  query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all
+  tracked files are hashed. Generated Python bytecode and external tool caches are
+  not claimed to have been independently byte-pinned at the prior execution.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+tags:
+- path-order-campaign
+- batch-010
