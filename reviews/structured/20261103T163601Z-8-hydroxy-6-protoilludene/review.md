@@ -1,0 +1,1655 @@
+# Local evidence review: 8α-hydroxy-6-protoilludene
+
+- Review: 20261103T163601Z-8-hydroxy-6-protoilludene
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-11-03T16:10:24.081787Z
+- Finished UTC: 2026-11-03T16:36:01.252655Z
+- Reviewer: Codex root with native_checks, bgc_science and review_support peer agents (independent)
+- Completion: partial
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Qualified partial review: the represented four-center protoilludene alcohol and separate provenance grades are traceable. The preserved Pro1/CYP-Arm3 biosynthetic pathway remains distinct from CYPArm2 downstream consumption and historical native-reference/abstract-only qualifications.
+
+## Scope And Provenance
+
+One complete NaturalProductRecord, including all present scientific claims, history and declared mechanisms; external verification remains unavailable.
+
+Selection: Campaign path order 2259; one of the next ten uncovered paths selected from the 3116-record corpus. Membership uses the canonical validated catalogue plus retained committed campaign bundles.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base ce6a5498df5be51116bd5e0c119023ee62bb5464.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-32b7a54e39 | data/natural_products/terpenoids/8-hydroxy-6-protoilludene.yaml | generated | 8α-hydroxy-6-protoilludene |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Complete offline maintained reader for 8α-hydroxy-6-protoilludene | passed | True | naturalproductmech:mibig-32b7a54e39 | One original offline maintained call preserved the complete owner and its historically qualified graph/pathway/history content. No fresh primary-source or protein verification is inferred. |
+| strict_ten | passed | True | naturalproductmech:mibig-32b7a54e39 | Closed-schema validation of the ten selected owners and any referenced components reported zero errors. |
+| strict_full | passed | True | naturalproductmech:mibig-32b7a54e39 | Full closed-schema validation scanned all 3116 owners and reported zero errors. |
+| lockfile | passed | True | naturalproductmech:mibig-32b7a54e39 | PATHS.tsv and filesystem agree on all 3116 records and their pinned filing pathways. |
+| reproduction | passed | True | naturalproductmech:mibig-32b7a54e39 | All 3116 records reproduce byte-identically from the retained inventories and carried curator content. This does not independently validate curator science. |
+| queue | passed | True | naturalproductmech:mibig-32b7a54e39 | The full local queue contains 8922 diagnostic rows; selected-target entries were inspected. Queue diagnostics are leads, not scientific sign-off. |
+| Full just qc | unavailable | True | naturalproductmech:mibig-32b7a54e39 | Not run under the external-request prohibition: the complete recipe includes upstream vendored synchronization. The five executed local checks are recorded separately. |
+| Complete OAK identifier/label authority check | unavailable | True | naturalproductmech:mibig-32b7a54e39 | Complete offline ontology authority coverage was not established for this run; no ontology retrieval or remote resolution was attempted. Retained taxonomy evidence has only its explicitly stated local scope. |
+| Primary literature and current structured database/identifier verification | unavailable | True | naturalproductmech:mibig-32b7a54e39 | All external requests are prohibited by the user. Fresh database and identifier verification and complete primary-literature coverage are unavailable. Any retained original literature actually inspected is recorded separately with its historical scope. |
+
+## Scientific And Domain Assessments
+
+### Exact structure concept and grounding
+
+identity: supported. Targets: naturalproductmech:mibig-32b7a54e39.
+
+The MINTED owner naturalproductmech:mibig-32b7a54e39 retains full key XTXSLQPVMVDDTB-ZRQNBYAXSA-N from BGC0002445 version 3, with source compound_index=2 and label 8α-hydroxy-6-protoilludene. The exact-full-key ChEBI query is empty in this admitted inventory and no direct companion is selected. Grounded graph precursors and intermediates do not independently ground the owner; the stereo-incomplete MITE substrate key XTXSLQPVMVDDTB-SUTJQRNSSA-N is expressly not its exact full key.
+
+### Stored representation and stereochemistry
+
+representation: supported. Targets: naturalproductmech:mibig-32b7a54e39.
+
+Both stored forms yield neutral C15H24O, 16 heavy atoms and 18 bonds with equal standard InChI/full key and both canonical SMILES comparisons true. Four tetrahedral centers are specified in each, consistent with the retained stereo_complete:true at that scope. The internal small-ring alkene is present without a separately enumerated E/Z potential-stereo entry. The single saved correspondence does not establish independent natural identity, a primary absolute-configuration determination or equality to the stereo-incomplete downstream model.
+
+### Producer, locus, taxon and strain roles
+
+provenance: supported. Targets: naturalproductmech:mibig-32b7a54e39.
+
+MIBiG BGC0002445 version 3 remains active, source quality questionable and completeness unknown. Armillaria gallica NCBITaxon:47427 is a SOURCE_ASSERTION producer, while the locus is CLUSTER_DEMONSTRATED from Heterologous expression. MT277003.1 coordinates 1..45006 are retained. The graph's FU02472 native-reference context and yeast experiments have distinct roles; heterologous activity is not a reason to upgrade native production or silently replace the species-level seeded claim.
+
+### Citation placement and primary-source limits
+
+evidence: supported. Targets: naturalproductmech:mibig-32b7a54e39.
+
+The seeded producer/locus evidence retains entry-level PMID:33191459 as DATABASE_ASSERTION; the LOTUS occurrence cites DOI:10.1007/S00253-020-11006-Y without establishing publication independence. The pathway/first graph separately retains DOI:10.1074/jbc.M110.165845 and DOI:10.1007/s00253-020-11006-y as historical PRIMARY_EXPERIMENT annotations, with GenPept references. CYPArm2's downstream graph explicitly limits DOI:10.1002/cbic.202300179 to an earlier returned abstract, with full text and supplements uninspected. This review read saved annotations only; their evidence labels are not fresh primary-source verification.
+
+### Occurrence and assay boundaries
+
+scope: supported. Targets: naturalproductmech:mibig-32b7a54e39.
+
+One written LOTUS occurrence retains Armillaria gallica 47427 and its database citation, separately from the producer assertion. The selected PubChem, BindingDB, related-corpus, CyanometDB and ChEBI-origin queries are empty in the admitted scope. No pharmacological assay or molecular-target root is written. Enzyme substrate use in a biosynthesis graph is not a pharmacological target observation. CYPArm2 consumes this owner downstream; it is not additional evidence for a route producing the owner.
+
+### Computed classification and complete saved topology
+
+other: supported. Targets: naturalproductmech:mibig-32b7a54e39.
+
+NPClassifier returns Terpenoids / Sesquiterpenoids / Protoilludane sesquiterpenoids and is_glycoside:false. The saved graph has a C15 skeleton with fused four-, five- and six-carbon rings, one internal alkene C1=C2 and one secondary hydroxyl C14-O15 in the SMILES numbering. Four centers are specified, with no carbonyl, nitrogen, phosphorus, ether bridge or sugar-ring candidate. The predicted class is compatible with this topology, but neither topology nor a model output independently proves its biosynthetic history.
+
+### Review completion and unavailable verification
+
+completeness: unknown. Targets: naturalproductmech:mibig-32b7a54e39.
+
+This is a partial scientific review of the exact admitted owner and retained source scope. Five local commands and original saved chemistry were accepted; FullQC and complete OAK were unavailable. The original selected maintained-reader result and ROOT acceptance establish complete-owner preservation within their explicit limits. No primary publication, live identifier/taxonomy/protein response or independent natural identity was verified, and this review does not set native REVIEWED status.
+
+### Biosynthesis, models and downstream scope
+
+graph: supported. Targets: naturalproductmech:mibig-32b7a54e39.
+
+The accepted maintained view preserves three inline graphs, 11 nodes, eight edges, 17 graph evidence placements, two pathway steps with five evidence placements and all six owner history events; no components or molecular targets are introduced. The first graph/two steps describe Pro1 conversion of farnesyl diphosphate to Delta(6)-protoilludene, then CYP-Arm3 production of this owner. The CYPArm2 graph instead retains reported 13-hydroxylation consuming this owner. Its named dihydroxylated product and process remain ungrounded; the MITE model lacks C8 stereochemistry. No missing geometry, complete downstream pathway, reaction order from gene order, kinetic value or product structure is invented.
+
+### Protein references, constructs and evidence limits
+
+grounding: supported. Targets: naturalproductmech:mibig-32b7a54e39.
+
+Pro1 UniProtKB:A0A7U3MPB9/QJQ03973.1 and CYP-Arm3 UniProtKB:A0A7S5T363/QJQ03972.1 retain their historical gene/protein and activity associations; pathway step 1 retains RHEA:34695. CYPArm2 UniProtKB:A0A7S5T5B1/QJQ03971.1 is a qualified FU02472 native-reference example: a deposited 1542-nt CDS including stop across 12 reverse-strand exons and a historical 513-residue matching claim, while mRNA boundaries are partial. These annotations do not verify the 2023 assay construct, transcript, mature processing, heme occupancy, assembly, strict specificity or full assay. No original article/API response or protein sequence was inspected anew.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| support-2259-owner | /private/tmp/npm-record-reviews-20261021/data/natural_products/terpenoids/8-hydroxy-6-protoilludene.yaml; lines 1–385 | supports | Whole current plaintext owner and all 6 history events. Literal identifier naturalproductmech:mibig-32b7a54e39, label 8α-hydroxy-6-protoilludene and full key XTXSLQPVMVDDTB-ZRQNBYAXSA-N. Historical annotations remain retained claims, not fresh scientific verification. |
+| support-2259-capture | /private/tmp/npm-review-work/shared-next-batch226/owner-capture-DATA-001.json; /records/8/owner_document; /records/8/owner_pin | supports | Exact captured complete owner, including structure, provenance, written occurrences, computed classification, mechanism annotations where present and complete history. |
+| support-2259-source-plan | /private/tmp/npm-review-work/shared-next-batch226-tentative/bgc-prep/bgc-conditional226-target-input-plan-001.json; /records/8 | supports | Complete admitted selected source context: nine retained query frames with full copied payloads, 39 inputs and 0 direct companion paths. This is a bounded local inventory scope. |
+| support-2259-intake | /private/tmp/npm-review-work/shared-next-batch226/intakes/2259-inspect-001.json; /status; /source; /targets | supports | Original canonical inspection of the exact target and maintained ownership roles with input snapshots; inspection is not a scientific verdict. |
+| support-2259-plan-acceptance | /private/tmp/npm-review-work/shared-next-batch226/root-input-plan-acceptance-001.json; /accepted; /plan; /inventory; /source_notes; /source_placements; /unique_source_paths; /selected_reader_orders | supports | ROOT accepts the actual plan with 448 input placements and 72 unique paths; selected reader orders are 2256 and 2259. |
+| support-2259-intake-acceptance | /private/tmp/npm-review-work/shared-next-batch226/root-intake-ready-001.json; /accepted; /status; /intake_summary; /intakes_execution; /source_placements; /unique_source_paths; /mechanism_owner_orders | supports | ROOT accepts the ten original canonical intakes and exact 448/72 input scope; only 2256 and 2259 have selected mechanism-reader applicability. |
+| support-2259-diagnostic-acceptance | /private/tmp/npm-review-work/shared-next-batch226/root-local-diagnostics-acceptance-001.json; /status; /DATA; /execution; /successful_forms; /comparison_flags_true; /comparison_flags_false; /global_stderr_warnings; /full_QC_and_OAK | supports | ROOT accepts the original twenty saved form computations. There are 98 true comparison flags, with only 2257 canonical isomeric/nonisomeric comparisons false. Eight global omitted-undefined-stereo warnings remain unassigned; FullQC and complete OAK are unavailable. |
+| support-2259-native-gates | /private/tmp/npm-review-work/shared-next-batch226/root-native-five-gates-acceptance-001.json; /accepted; /ledger; /five_local_commands_passed; /all_native_gates_passed; /unavailable_required_gates; /scope | supports | ROOT accepts five successful local commands within the receipt's stated scope; unavailable required gates prevent a claim of complete validation. |
+| support-2259-chemistry-execution | /private/tmp/npm-review-work/shared-next-batch226/chemistry-local/diagnostic-execution-001.json; /started_at; /finished_at; /exit_code; /DATA; /stdout; /stderr; /external_requests; /retries | supports | Original ROOT-owned diagnostic execution returned zero once. Exact DATA/stdout/stderr pins preserve the original stream, without reattribution or replay; there was no retry or external request. |
+| support-2259-chemistry | /private/tmp/npm-review-work/shared-next-batch226/chemistry-local/diagnostic-DATA-001.json; /records/8/declared_structure; /records/8/smiles/computed; /records/8/inchi/computed; /records/8/comparisons; /records/8/atom_correspondence; /records/8/smiles/status; /records/8/inchi/status | supports | Both stored forms yield neutral C15H24O, 16 heavy atoms and 18 bonds with equal standard InChI/full key and both canonical SMILES comparisons true. Four tetrahedral centers are specified in each, consistent with the retained stereo_complete:true at that scope. The internal small-ring alkene is present without a separately enumerated E/Z potential-stereo entry. The single saved correspondence does not establish independent natural identity or a primary absolute-configuration determination. |
+| support-2259-topology | /private/tmp/npm-review-work/shared-next-batch226/chemistry-local/diagnostic-DATA-001.json; /records/8/smiles/computed; /records/8/inchi/computed | supports | Both complete paired tables describe neutral C15H24O with fused four-, five- and six-carbon rings, four specified tetrahedral centers, one internal alkene and a secondary hydroxyl. SMILES C1=C2 is the alkene and C14-O15 bears the hydroxyl. There is no carbonyl, nitrogen, phosphorus, ether bridge or saturated C5O candidate. |
+| support-2259-stereo-method | /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py; lines 142–173 | supports | Maintained structure_fields parses the source SMILES, derives standard InChI/key and sets stereo_complete by checking undefined tetrahedral centers with FindMolChiralCenters. That implementation is narrower than every possible geometric or tautomeric ambiguity. |
+| support-2259-seeder | /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py; lines 982–1025 | supports | Maintained seeder copies the lead structure and completeness flag, uses a returned classification to choose filing, and preserves named tool/version plus pathway/superclass/class/glycoside predictions. |
+| support-2259-structure-schema | /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml; lines 392–425 | supports | Schema documents undefined stereocentres and requires computed classification to retain named tool/version. Computed classification is not a source assertion or an admission rationale. |
+| support-2259-review-profile | /private/tmp/npm-record-reviews-20261021/docs/record-review-profile.md; lines 35–57 | supports | Review profile separates source evidence, computed classification, producer/occurrence claims and complete maintained mechanism reading. Source corrections belong in maintained owners; reserved decisions.tsv is not consumed. A saved review does not promote native status or append history. |
+| support-2259-source-notes | /private/tmp/npm-review-work/shared-next-batch226-tentative/bgc-prep/bgc-conditional226-source-scope-notes-001.json; /reading; /curation; /cautions; /totals | supports | Complete saved-source reading is attributed between BGC and Support, with prior raw carries by exact bytes. The bounded 84-token eight-table curation scan had zero hits; PubChem exclusions were supplemental/unadmitted because no actual AID is present. This does not establish global absence. |
+| support-2259-taxonomy-routes | /private/tmp/npm-review-work/shared-next-batch226-tentative/bgc-prep/bgc-conditional226-target-input-plan-001.json; /records/8/source_scope_inventory/source_taxa; /records/8/source_scope_inventory/forward_taxon_merge_matches; /records/8/source_scope_inventory/nonorganism_matches | supports | Exact selected source-taxon set and bounded forward-merge/nonorganism routes. The forward-merge and nonorganism match lists are empty here; cached labels retain their historical scope and do not constitute live taxonomy verification. |
+| support-2259-mechanism-scope | /private/tmp/npm-review-work/shared-next-batch226-tentative/bgc-prep/bgc-conditional226-target-input-plan-001.json; /records/8/declared_mechanism_roots_literal; /records/8/component_paths; /records/8/literal_mechanism_inventory; /records/8/proposed_companion_paths | supports | Selected literal mechanism roots and direct context membership for 2259; component list is empty. Positive unselected companions do not create an additional selected maintained-reader route. |
+| support-2259-query-mibig_compounds | /private/tmp/npm-review-work/shared-next-batch226-tentative/bgc-prep/bgc-conditional226-target-input-plan-001.json; /records/8/source_scope_inventory/joins/mibig_compounds | supports | Retained local query frame: {"predicate": "exact complete standard_inchi_key equality", "query": "XTXSLQPVMVDDTB-ZRQNBYAXSA-N", "positive_row_count": 1}. Empty results are scoped to this predicate and retained table, not the wider literature or live database. |
+| support-2259-row-mibig_compounds-0 | /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv; physical lines 3042–3042 | supports | Complete retained row payload: {"bgc_classes": "terpene", "bgc_subclasses": "Unknown", "cluster_link_evidence_basis": "CLUSTER_DEMONSTRATED", "compound_classes": "", "compound_index": "2", "compound_name": "8α-hydroxy-6-protoilludene", "database_ids": "npatlas:NPA033501", "entry_completeness": "unknown", "entry_quality": "questionable", "entry_status": "active", "entry_version": "3", "genome_accession": "MT277003.1", "locus_evidence_methods": "Heterologous expression", "locus_from": "1", "locus_to": "45006", "mibig_accession": "BGC0002445", "primary_reference": "PMID:33191459", "producer_evidence_basis": "SOURCE_ASSERTION", "reference_basis": "ENTRY", "smiles": "CC1=C2CC[C@]2(C)[C@H]2CC(C)(C)C[C@H]2[C@@H]1O", "standard_inchi": "InChI=1S/C15H24O/c1-9-11-5-6-15(11,4)12-8-14(2,3)7-10(12)13(9)16/h10,12-13,16H,5-8H2,1-4H3/t10-,12+,13-,15+/m1/s1", "standard_inchi_key": "XTXSLQPVMVDDTB-ZRQNBYAXSA-N", "stereo_complete": "true", "taxon_id": "NCBITaxon:47427", "taxon_label": "Armillaria gallica"} |
+| support-2259-query-chebi_structures | /private/tmp/npm-review-work/shared-next-batch226-tentative/bgc-prep/bgc-conditional226-target-input-plan-001.json; /records/8/source_scope_inventory/joins/chebi_structures | supports | Retained local query frame: {"predicate": "exact complete standard_inchi_key equality", "query": "XTXSLQPVMVDDTB-ZRQNBYAXSA-N", "positive_row_count": 0}. Empty results are scoped to this predicate and retained table, not the wider literature or live database. |
+| support-2259-query-lotus_occurrences | /private/tmp/npm-review-work/shared-next-batch226-tentative/bgc-prep/bgc-conditional226-target-input-plan-001.json; /records/8/source_scope_inventory/joins/lotus_occurrences | supports | Retained local query frame: {"predicate": "exact complete standard_inchi_key equality", "query": "XTXSLQPVMVDDTB-ZRQNBYAXSA-N", "positive_row_count": 1}. Empty results are scoped to this predicate and retained table, not the wider literature or live database. |
+| support-2259-row-lotus_occurrences-0 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 9664–9664 | supports | Complete retained row payload: {"organism_name": "Armillaria gallica", "organism_wikidata": "http://www.wikidata.org/entity/Q630885", "reference_doi": "10.1007/S00253-020-11006-Y", "standard_inchi_key": "XTXSLQPVMVDDTB-ZRQNBYAXSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q113959500", "taxon_id": "NCBITaxon:47427"} |
+| support-2259-query-cyanometdb_occurrences | /private/tmp/npm-review-work/shared-next-batch226-tentative/bgc-prep/bgc-conditional226-target-input-plan-001.json; /records/8/source_scope_inventory/joins/cyanometdb_occurrences | supports | Retained local query frame: {"predicate": "exact complete standard_inchi_key equality", "query": "XTXSLQPVMVDDTB-ZRQNBYAXSA-N", "positive_row_count": 0}. Empty results are scoped to this predicate and retained table, not the wider literature or live database. |
+| support-2259-query-npclassifier | /private/tmp/npm-review-work/shared-next-batch226-tentative/bgc-prep/bgc-conditional226-target-input-plan-001.json; /records/8/source_scope_inventory/joins/npclassifier | supports | Retained local query frame: {"predicate": "exact complete standard_inchi_key equality", "query": "XTXSLQPVMVDDTB-ZRQNBYAXSA-N", "positive_row_count": 1}. Empty results are scoped to this predicate and retained table, not the wider literature or live database. |
+| support-2259-row-npclassifier-0 | /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv; physical lines 2835–2835 | supports | Complete retained row payload: {"class_results": "Protoilludane sesquiterpenoids", "is_glycoside": "false", "model_version": "npclassifier.gnps2.org@2026-09-07", "pathway_results": "Terpenoids", "smiles": "CC1=C2CC[C@]2(C)[C@H]2CC(C)(C)C[C@H]2[C@@H]1O", "standard_inchi_key": "XTXSLQPVMVDDTB-ZRQNBYAXSA-N", "superclass_results": "Sesquiterpenoids"} |
+| support-2259-query-pubchem_bioassay | /private/tmp/npm-review-work/shared-next-batch226-tentative/bgc-prep/bgc-conditional226-target-input-plan-001.json; /records/8/source_scope_inventory/joins/pubchem_bioassay | supports | Retained local query frame: {"predicate": "exact complete standard_inchi_key equality", "query": "XTXSLQPVMVDDTB-ZRQNBYAXSA-N", "positive_row_count": 0}. Empty results are scoped to this predicate and retained table, not the wider literature or live database. |
+| support-2259-query-bindingdb_targets | /private/tmp/npm-review-work/shared-next-batch226-tentative/bgc-prep/bgc-conditional226-target-input-plan-001.json; /records/8/source_scope_inventory/joins/bindingdb_targets | supports | Retained local query frame: {"predicate": "exact complete standard_inchi_key equality", "query": "XTXSLQPVMVDDTB-ZRQNBYAXSA-N", "positive_row_count": 0}. Empty results are scoped to this predicate and retained table, not the wider literature or live database. |
+| support-2259-query-antibioticmech_inchikeys | /private/tmp/npm-review-work/shared-next-batch226-tentative/bgc-prep/bgc-conditional226-target-input-plan-001.json; /records/8/source_scope_inventory/joins/antibioticmech_inchikeys | supports | Retained local query frame: {"predicate": "exact complete standard_inchi_key equality", "query": "XTXSLQPVMVDDTB-ZRQNBYAXSA-N", "positive_row_count": 0}. Empty results are scoped to this predicate and retained table, not the wider literature or live database. |
+| support-2259-query-chebi_origins | /private/tmp/npm-review-work/shared-next-batch226-tentative/bgc-prep/bgc-conditional226-target-input-plan-001.json; /records/8/source_scope_inventory/joins/chebi_origins | supports | Retained local query frame: {"predicate": "exact chebi_id from exact full-key structure rows", "query": [], "positive_row_count": 0}. Empty results are scoped to this predicate and retained table, not the wider literature or live database. |
+| support-2259-cache-47427 | /private/tmp/npm-record-reviews-20261021/data/raw/corpus_taxa.obo; physical lines 21399–21404 | supports | Complete cached stanza, not a fresh taxonomy response:<br>[Term]<br>id: NCBITaxon:47427<br>name: Armillaria gallica<br>synonym: "Armillaria bulbosa" EXACT []<br>synonym: "Armillaria lutea" EXACT []<br><br> |
+| support-2259-companions | /private/tmp/npm-review-work/shared-next-batch226-tentative/bgc-prep/bgc-conditional226-target-input-plan-001.json; /records/8/proposed_companion_paths; /records/8/direct_companion_predicates | supports | Exactly 0 direct companion placements admitted under the saved root/full-key/owned-BGC predicates; no recursive expansion or activity/mechanism transfer is claimed. |
+| support-2259-reader-data | /private/tmp/npm-review-work/shared-next-batch226/native-current226-8-hydroxy-6-protoilludene-maintained-reader-DATA-001.json; /status; /raw_owner; /expected_view; /resolved_view; /counts; /returned_view_equals_expected_complete_owner; /denials; /unexpected_denials; /errors; /external_requests; /limitations | supports | Original maintained call returned the exact complete captured owner, including all nonmechanistic fields and history, with no component expansion. Counts and limitations are retained. The sole known IPv6 socket-construction probe was denied before action; no request or unexpected denial/error is reported. Topology/preservation does not freshly validate primary papers, sequences, natural identity or mechanism science. |
+| support-2259-reader-execution | /private/tmp/npm-review-work/shared-next-batch226/native-current226-8-hydroxy-6-protoilludene-reader-execution-001.json; /started_at; /finished_at; /source; /configuration; /authorization; /exit_code; /DATA; /stdout; /stderr; /original_tool; /external_requests; /retries | supports | Original Native-owned maintained reader executed once and returned zero, with exact source/configuration/authorization and DATA/stdout/stderr pins retained. This execution receipt does not itself establish scientific mechanism validity. |
+| support-2259-reader-acceptance | /private/tmp/npm-review-work/shared-next-batch226/root-2259-maintained-reader-acceptance-001.json; /status; /order; /DATA; /execution; /verification; /review_check_contract; /limits | supports | ROOT independently accepts the exact original DATA/execution/current inputs and complete-owner equality; the exact maintained-mechanism-reader check contract is retained. |
+| support-2259-graph-0 | /private/tmp/npm-review-work/shared-next-batch226/native-current226-8-hydroxy-6-protoilludene-maintained-reader-DATA-001.json; /resolved_view/causal_graphs/0 | supports | Complete retained graph annotation; historical source/evidence claims, not new primary verification: {"description": "Armillaria gallica 8α-hydroxy-6-protoilludene biosynthesis graph for Pro1 cyclization of farnesyl diphosphate followed by CYP-Arm3 hydroxylation.", "edges": [{"evidence": [{"evidence_type": "PRIMARY_EXPERIMENT", "notes": "The earlier A. gallica Pro1 cDNA study experimentally established that Pro1 catalyzes farnesyl diphosphate cyclization to Delta(6)-protoilludene.", "reference": "DOI:10.1074/jbc.M110.165845", "snippet": "farnesyl diphosphate to produce protoilludene"}, {"evidence_type": "PRIMARY_EXPERIMENT", "notes": "The Armillaria BGC study identified the MT277003.1 gene cluster and annotated GenPept QJQ03973.1 as the BGC0002445 Pro1 protein.", "reference": "DOI:10.1007/s00253-020-11006-y"}, {"evidence_type": "DATABASE_ASSERTION", "notes": "NCBI resolves GenPept QJQ03973.1 to the MT277003.1 coding sequence for the Armillaria gallica 6-protoilludene synthase Pro1.", "reference": "https://www.ncbi.nlm.nih.gov/protein/QJQ03973.1", "retrieved_on": "2026-09-27"}], "object": "pro1", "predicate": "is cyclized by", "subject": "farnesyl_diphosphate"}, {"evidence": [{"evidence_type": "PRIMARY_EXPERIMENT", "notes": "The earlier A. gallica Pro1 cDNA study experimentally established that Pro1 catalyzes farnesyl diphosphate cyclization to Delta(6)-protoilludene.", "reference": "DOI:10.1074/jbc.M110.165845", "snippet": "farnesyl diphosphate to produce protoilludene"}, {"evidence_type": "PRIMARY_EXPERIMENT", "notes": "The Armillaria BGC study identified the MT277003.1 gene cluster and annotated GenPept QJQ03973.1 as the BGC0002445 Pro1 protein.", "reference": "DOI:10.1007/s00253-020-11006-y"}, {"evidence_type": "DATABASE_ASSERTION", "notes": "NCBI resolves GenPept QJQ03973.1 to the MT277003.1 coding sequence for the Armillaria gallica 6-protoilludene synthase Pro1.", "reference": "https://www.ncbi.nlm.nih.gov/protein/QJQ03973.1", "retrieved_on": "2026-09-27"}], "object": "delta6_protoilludene", "predicate": "forms", "subject": "pro1"}, {"evidence": [{"evidence_type": "PRIMARY_EXPERIMENT", "notes": "Armillaria gallica CYP-Arm3 hydroxylated Delta(6)-protoilludene to 8α-hydroxy-6-protoilludene in yeast feeding and coexpression experiments.", "reference": "DOI:10.1007/s00253-020-11006-y", "snippet": "8α-hydroxy-6-protoilludene intermediate produced by CYP-Arm3"}, {"evidence_type": "DATABASE_ASSERTION", "notes": "NCBI resolves GenPept QJQ03972.1 to the MT277003.1 coding sequence for Armillaria gallica CYP-Arm3.", "reference": "https://www.ncbi.nlm.nih.gov/protein/QJQ03972.1", "retrieved_on": "2026-09-27"}], "object": "cyp_arm3", "predicate": "is hydroxylated by", "subject": "delta6_protoilludene"}, {"evidence": [{"evidence_type": "PRIMARY_EXPERIMENT", "notes": "Armillaria gallica CYP-Arm3 hydroxylated Delta(6)-protoilludene to 8α-hydroxy-6-protoilludene in yeast feeding and coexpression experiments.", "reference": "DOI:10.1007/s00253-020-11006-y", "snippet": "8α-hydroxy-6-protoilludene intermediate produced by CYP-Arm3"}, {"evidence_type": "DATABASE_ASSERTION", "notes": "NCBI resolves GenPept QJQ03972.1 to the MT277003.1 coding sequence for Armillaria gallica CYP-Arm3.", "reference": "https://www.ncbi.nlm.nih.gov/protein/QJQ03972.1", "retrieved_on": "2026-09-27"}], "object": "hydroxy_protoilludene", "predicate": "forms", "subject": "cyp_arm3"}], "graph_id": "8-hydroxy-6-protoilludene-biosynthesis", "nodes": [{"grounding_status": "GROUNDED", "identifier": "CHEBI:175763", "label": "(2E,6E)-farnesyl diphosphate", "node_id": "farnesyl_diphosphate", "node_type": "PRECURSOR"}, {"grounding_status": "GROUNDED", "identifier": "UniProtKB:A0A7U3MPB9", "label": "Pro1", "node_id": "pro1", "node_type": "ENZYME"}, {"grounding_status": "GROUNDED", "identifier": "CHEBI:68655", "label": "Delta(6)-protoilludene", "node_id": "delta6_protoilludene", "node_type": "COMPOUND"}, {"grounding_status": "GROUNDED", "identifier": "UniProtKB:A0A7S5T363", "label": "CYP-Arm3", "node_id": "cyp_arm3", "node_type": "ENZYME"}, {"grounding_status": "GROUNDED", "identifier": "naturalproductmech:mibig-32b7a54e39", "label": "8α-hydroxy-6-protoilludene", "node_id": "hydroxy_protoilludene", "node_type": "COMPOUND"}], "scope": "BIOSYNTHESIS"} |
+| support-2259-graph-1 | /private/tmp/npm-review-work/shared-next-batch226/native-current226-8-hydroxy-6-protoilludene-maintained-reader-DATA-001.json; /resolved_view/causal_graphs/1 | supports | Complete retained graph annotation; historical source/evidence claims, not new primary verification: {"description": "Native reference in Armillaria gallica FU02472/BGC0002445. The complete CDS is a deposited gene model, not an independently verified experimental transcript. The annotated mRNA boundaries are partial. Native reference identity does not establish the sequence of the 2023 assay construct, mature processing or experimental heme occupancy.", "edges": [{"evidence": [{"evidence_type": "DATABASE_ASSERTION", "notes": "GenBank assigns gene CYP-Arm2 and protein QJQ03971.1 to the spliced CDS.", "reference": "https://www.ncbi.nlm.nih.gov/nuccore/MT277003.1", "retrieved_on": "2026-10-08", "snippet": "/gene=\"CYP-Arm2\""}, {"evidence_type": "DATABASE_ASSERTION", "notes": "The separate 513-residue GenPept record identifies FU02472 and the same 12-exon reverse-strand CDS.", "reference": "https://www.ncbi.nlm.nih.gov/protein/QJQ03971.1", "retrieved_on": "2026-10-08"}, {"evidence_type": "CURATOR_INFERENCE", "notes": "Unreviewed entry version 22, sequence version 1. CDS-aware translation, deposited translation, GenPept QJQ03971.1 and A0A7S5T5B1 agree over all 513 residues. This is native-reference identity only. UniProt has no specific FUNCTION or CATALYTIC ACTIVITY comment.", "reference": "https://www.uniprot.org/uniprotkb/A0A7S5T5B1/entry", "retrieved_on": "2026-10-08"}], "notes": "FU02472, taxon 47427; complete 1542-nt CDS including stop, 513-residue reference. The CDS spans MT277003.1 positions 17425..19546 with 12 reverse-strand exons.", "object": "cyp_arm2", "predicate": "encodes the native protein reference", "subject": "cyp_arm2_cds"}], "graph_id": "8-hydroxy-6-protoilludene-cyparm2-native-reference", "nodes": [{"grounding_status": "UNGROUNDED", "label": "CYP-Arm2 CDS (MT277003.1, 12 reverse-strand exons)", "node_id": "cyp_arm2_cds", "node_type": "GENE"}, {"grounding_status": "GROUNDED", "identifier": "UniProtKB:A0A7S5T5B1", "label": "CYPArm2 (FU02472 native-reference example)", "node_id": "cyp_arm2", "node_type": "ENZYME"}], "scope": "BIOSYNTHESIS"} |
+| support-2259-graph-2 | /private/tmp/npm-review-work/shared-next-batch226/native-current226-8-hydroxy-6-protoilludene-maintained-reader-DATA-001.json; /resolved_view/causal_graphs/2 | supports | Complete retained graph annotation; historical source/evidence claims, not new primary verification: {"description": "Partial downstream-consumption graph: the 2023 abstract names 8α-hydroxy-6-protoilludene as a CYPArm2 substrate and reports an NMR-identified dihydroxylated product. This is not another route producing this owner and does not extend its existing two-step biosynthetic_pathway. The protein is a qualified native reference example, not a sequence-verified assay construct. Only the returned abstract was read, not full text or supplements. The MITE model lacks C8 stereochemistry; no complete product structure, ChEBI/Rhea assignment, assembly or kinetic claim is adopted.", "edges": [{"evidence": [{"evidence_type": "PRIMARY_EXPERIMENT", "notes": "Abstract text returned by an official-domain web search before the subsequent PubMed browser-check stop; full text and supplements were not inspected. The abstract reports CYPArm2 as a protoilludene 13-hydroxylase; this is an abstract-level experimental report, not an independently audited full assay.", "reference": "DOI:10.1002/cbic.202300179", "retrieved_on": "2026-10-08", "snippet": "confirming that CYPArm2 is a protoilludene 13-hydroxylase."}, {"evidence_type": "DATABASE_ASSERTION", "notes": "Active MITE0000295 version 1 links CYPArm2 to A0A7S5T5B1, QJQ03971.1 and BGC0002445. This is a database association, not independent sequence verification of the 2023 assay stock.", "reference": "https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000295.json", "retrieved_on": "2026-10-08"}], "notes": "The native accession is an example for the named CYPArm2 activity. The abstract does not establish the exact experimental construct sequence. No claim of native heme occupancy or strict substrate specificity.", "object": "hydroxylation_13", "predicate": "is reported to catalyze", "subject": "cyp_arm2"}, {"evidence": [{"evidence_type": "PRIMARY_EXPERIMENT", "notes": "Abstract text returned by an official-domain web search before the subsequent PubMed browser-check stop; full text and supplements were not inspected. The named accepted substrates include this 8alpha-hydroxylated compound. No reaction ordering is inferred from gene order, and the under-specified MITE structure is not used as exact stereochemical identity evidence.", "reference": "DOI:10.1002/cbic.202300179", "retrieved_on": "2026-10-08", "snippet": "accepts Δ-6-protoilludene and 8α-hydroxy-6-protoilludene as substrates."}], "notes": "Owner consumption, not owner production. The abstract explicitly names the 8alpha substrate. MITE's model key XTXSLQPVMVDDTB-SUTJQRNSSA-N is stereo-incomplete and is not asserted equal to this owner's full key XTXSLQPVMVDDTB-ZRQNBYAXSA-N.", "object": "hydroxylation_13", "predicate": "is reported as a substrate of", "subject": "hydroxy_protoilludene"}, {"evidence": [{"evidence_type": "PRIMARY_EXPERIMENT", "notes": "Abstract text returned by an official-domain web search before the subsequent PubMed browser-check stop; full text and supplements were not inspected. The abstract reports NMR identification of the named dihydroxylated product after recombinant yeast biosynthesis. No analytical spectra, yield, kinetic values or downstream complete pathway are imported.", "reference": "DOI:10.1002/cbic.202300179", "retrieved_on": "2026-10-08", "snippet": "identification of 8α,13-dihydroxy-protoilludene"}], "notes": "Named product only: no stable chemical identifier or full stereochemical structure is assigned. MITE's product model is also stereo-incomplete; its unspecified center is not filled in.", "object": "dihydroxy_protoilludene", "predicate": "is reported to produce", "subject": "hydroxylation_13"}], "graph_id": "8-hydroxy-6-protoilludene-cyparm2-downstream-consumption", "nodes": [{"grounding_status": "GROUNDED", "identifier": "UniProtKB:A0A7S5T5B1", "label": "CYPArm2 (FU02472 native-reference example)", "node_id": "cyp_arm2", "node_type": "ENZYME"}, {"grounding_status": "GROUNDED", "identifier": "naturalproductmech:mibig-32b7a54e39", "label": "8α-hydroxy-6-protoilludene", "node_id": "hydroxy_protoilludene", "node_type": "PRECURSOR"}, {"grounding_status": "UNGROUNDED", "label": "Reported CYPArm2 13-hydroxylation", "node_id": "hydroxylation_13", "node_type": "PROCESS"}, {"grounding_status": "UNGROUNDED", "label": "8α,13-dihydroxy-protoilludene (reported product)", "node_id": "dihydroxy_protoilludene", "node_type": "COMPOUND"}], "scope": "BIOSYNTHESIS"} |
+| support-2259-pathway-0 | /private/tmp/npm-review-work/shared-next-batch226/native-current226-8-hydroxy-6-protoilludene-maintained-reader-DATA-001.json; /resolved_view/biosynthetic_pathway/0 | supports | Complete retained pathway annotation, whose experimental/database labels remain historical: {"enzyme_id": "UniProtKB:A0A7U3MPB9", "enzyme_label": "6-protoilludene synthase", "evidence": [{"evidence_type": "PRIMARY_EXPERIMENT", "notes": "The earlier A. gallica Pro1 cDNA study experimentally established that Pro1 catalyzes farnesyl diphosphate cyclization to Delta(6)-protoilludene.", "reference": "DOI:10.1074/jbc.M110.165845", "snippet": "farnesyl diphosphate to produce protoilludene"}, {"evidence_type": "PRIMARY_EXPERIMENT", "notes": "The Armillaria BGC study identified the MT277003.1 gene cluster and annotated GenPept QJQ03973.1 as the BGC0002445 Pro1 protein.", "reference": "DOI:10.1007/s00253-020-11006-y"}, {"evidence_type": "DATABASE_ASSERTION", "notes": "NCBI resolves GenPept QJQ03973.1 to the MT277003.1 coding sequence for the Armillaria gallica 6-protoilludene synthase Pro1.", "reference": "https://www.ncbi.nlm.nih.gov/protein/QJQ03973.1", "retrieved_on": "2026-09-27"}], "notes": "Armillaria gallica Pro1 cyclizes (2E,6E)-farnesyl diphosphate to Delta(6)-protoilludene. UniProtKB:A0A7U3MPB9 resolves to the BGC0002445 MT277003.1 Pro1 sequence, while the earlier functional assay established A. gallica Pro1 sesquiterpene synthase activity.", "product": "CHEBI:68655", "reaction_id": "RHEA:34695", "step_number": 1, "substrate": "CHEBI:175763"} |
+| support-2259-pathway-1 | /private/tmp/npm-review-work/shared-next-batch226/native-current226-8-hydroxy-6-protoilludene-maintained-reader-DATA-001.json; /resolved_view/biosynthetic_pathway/1 | supports | Complete retained pathway annotation, whose experimental/database labels remain historical: {"enzyme_id": "UniProtKB:A0A7S5T363", "enzyme_label": "CYP-Arm3", "evidence": [{"evidence_type": "PRIMARY_EXPERIMENT", "notes": "Armillaria gallica CYP-Arm3 hydroxylated Delta(6)-protoilludene to 8α-hydroxy-6-protoilludene in yeast feeding and coexpression experiments.", "reference": "DOI:10.1007/s00253-020-11006-y", "snippet": "8α-hydroxy-6-protoilludene intermediate produced by CYP-Arm3"}, {"evidence_type": "DATABASE_ASSERTION", "notes": "NCBI resolves GenPept QJQ03972.1 to the MT277003.1 coding sequence for Armillaria gallica CYP-Arm3.", "reference": "https://www.ncbi.nlm.nih.gov/protein/QJQ03972.1", "retrieved_on": "2026-09-27"}], "notes": "Armillaria gallica CYP-Arm3 hydroxylates Delta(6)-protoilludene to 8α-hydroxy-6-protoilludene.", "product": "naturalproductmech:mibig-32b7a54e39", "step_number": 2, "substrate": "CHEBI:68655"} |
+| support-2259-reader-history | /private/tmp/npm-review-work/shared-next-batch226/native-current226-8-hydroxy-6-protoilludene-maintained-reader-DATA-001.json; /resolved_view/curation_history | supports | Complete preserved owner history, with historical curation actions and limitations: [{"action": "SEEDED_FROM_SOURCES", "changes": "Seeded from the committed inventories in data/raw/.", "curator": "seed_from_sources", "timestamp": "2026-09-10T05:54:16Z"}, {"action": "SEEDED_FROM_SOURCES", "changes": "Seeded from the committed inventories in data/raw/.", "curator": "seed_from_sources", "timestamp": "2026-09-25T03:03:48Z"}, {"action": "RECORD_CURATED", "changes": "Added a two-step Armillaria gallica biosynthetic pathway and BIOSYNTHESIS causal graph for Pro1 cyclization of farnesyl diphosphate to Delta(6)-protoilludene followed by CYP-Arm3 hydroxylation to 8α-hydroxy-6-protoilludene.", "curator": "codex", "llm_assisted": true, "timestamp": "2026-09-27T02:19:37Z"}, {"action": "RECORD_CURATED", "changes": "Removed broad MIBiG BGC0002445 evidence from the Pro1 pathway step and graph edges because the MIBiG record supports the BGC assertion rather than the exact enzyme-level cyclization claims.", "curator": "codex", "llm_assisted": true, "timestamp": "2026-09-27T02:37:04Z"}, {"action": "RECORD_CURATED", "changes": "Added CYPArm2 native-reference and downstream-consumption graphs using UniProtKB:A0A7S5T5B1 as the FU02472 native-reference example. The 2023 abstract reports the owner as a substrate, not a product, of 13-hydroxylation. Kept the reported dihydroxylated product and reaction identifiers ungrounded; did not fill the MITE model's unspecified stereochemistry. Preserved the Pro1/CYP-Arm3 pathway and graph, source fields and prior history. No assay-construct, assembly, kinetic or producer-grade upgrade asserted.", "curator": "codex", "llm_assisted": true, "timestamp": "2026-10-08T07:35:16Z"}, {"action": "SEEDED_FROM_SOURCES", "changes": "Seeded from the committed inventories and curation tables.", "curator": "seed_from_sources", "timestamp": "2026-10-13T10:45:48Z"}] |
+| root-native-strict_ten | /private/tmp/npm-native-checks/batch-226/validate-strict-selected10-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-226/native-current226-five-gates-execution-001.json | supports | Closed-schema validation of the ten selected owners and any referenced components reported zero errors. |
+| root-native-strict_full | /private/tmp/npm-native-checks/batch-226/validate-all-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-226/native-current226-five-gates-execution-001.json | supports | Full closed-schema validation scanned all 3116 owners and reported zero errors. |
+| root-native-lockfile | /private/tmp/npm-native-checks/batch-226/verify-corpus-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-226/native-current226-five-gates-execution-001.json | supports | PATHS.tsv and filesystem agree on all 3116 records and their pinned filing pathways. |
+| root-native-reproduction | /private/tmp/npm-native-checks/batch-226/verify-reproduction-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-226/native-current226-five-gates-execution-001.json | supports | All 3116 records reproduce byte-identically from the retained inventories and carried curator content. This does not independently validate curator science. |
+| root-native-queue | /private/tmp/npm-native-checks/batch-226/review-queue-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-226/native-current226-five-gates-execution-001.json | supports | The full local queue contains 8922 diagnostic rows; selected-target entries were inspected. Queue diagnostics are leads, not scientific sign-off. |
+
+## Limits And Additional Notes
+
+- FullQC and complete OAK were unavailable; five successful local commands do not establish scientific completeness.
+- No external retrieval or live identifier, taxonomy, protein or publication query was performed. These assessments use original saved owner-form computations; no additional molecular parses occurred during fragment authoring.
+- The original chemistry stream contains eight omitted-undefined-stereo warnings. They are global and are not attributed to owners from timing or inference.
+- Retained source grades, database citations, cached taxonomy and versioned predictions keep their own scopes. Representation agreement does not establish natural identity, publication independence or complete natural stereochemistry.
+- No scientific source record or curation history was edited. Canonical persistence and campaign operations remain ROOT-owned.
+- The maintained reader preserves the complete saved owner; its successful topology/preservation result does not freshly validate historical publications, sequences, constructs or mechanism assertions.
+- The whole selected owner was read, but scientific completion is partial because full QC, complete ontology authority coverage and external source verification were unavailable. No native status or history was changed.
+- The branch uses cached base ce6a5498df5be51116bd5e0c119023ee62bb5464. Fresh origin/main verification and publication are deferred because the user prohibits all external requests.
+- Selected reader applicability is restricted to this owner's literal positive roots.
+- Saved review coverage is distinct from the native SEEDED/REVIEWED curation state. Proposed actions are not performed edits.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261103T163601Z-8-hydroxy-6-protoilludene
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'Local evidence review: 8α-hydroxy-6-protoilludene'
+started_at: '2026-11-03T16:10:24.081787Z'
+finished_at: '2026-11-03T16:36:01.252655Z'
+reviewer:
+  identity: Codex root with native_checks, bgc_science and review_support peer agents
+  kind: agent
+  independence: independent
+  independence_basis: This review team inspected existing owner and retained source
+    bytes without editing them; scientific fragments were cross-checked separately
+    from their author. Local validation is not treated as scientific proof.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: 'Qualified partial review: the represented four-center protoilludene alcohol
+  and separate provenance grades are traceable. The preserved Pro1/CYP-Arm3 biosynthetic
+  pathway remains distinct from CYPArm2 downstream consumption and historical native-reference/abstract-only
+  qualifications.'
+source:
+  git_revision: ce6a5498df5be51116bd5e0c119023ee62bb5464
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: AGENTS.md
+    sha256: 69e4037f8dc97d4b00bb7bb83b41ceca025f6ef578d5c0bf8086f3400becde0b
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/terpenoids/8-hydroxy-6-protoilludene.yaml
+    sha256: fd6df91e36fdcade161dfdf6d3796cefef81b00fcbec978d1d49ba592a74333c
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/graph_components.py
+    sha256: 10f08517869f482954fd583fd19d5750ef286a76297c231e6c9a5ba8dc023e17
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: src/naturalproductmech/validation/write_validated.py
+    sha256: 4b7648fc5d2e7a5d26ad8bb168dbcae609aaa2694434a8ed5cfcb33fb66ff80a
+    role: context
+scope:
+  description: One complete NaturalProductRecord, including all present scientific
+    claims, history and declared mechanisms; external verification remains unavailable.
+  selection: Campaign path order 2259; one of the next ten uncovered paths selected
+    from the 3116-record corpus. Membership uses the canonical validated catalogue
+    plus retained committed campaign bundles.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-32b7a54e39
+targets:
+- target_id: naturalproductmech:mibig-32b7a54e39
+  path: data/natural_products/terpenoids/8-hydroxy-6-protoilludene.yaml
+  label: 8α-hydroxy-6-protoilludene
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained harmonization generator; seeded fields are corrected through
+      maintained inputs and validated regeneration.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Retained MIBiG structure, producer and compound-specific locus assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/npclassifier.tsv
+    role: Pinned computed classification and filing assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Maintained extraction of MIBiG compound names, structures, stereochemistry
+      flags and source provenance.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Retained cited occurrence assertions, distinct from demonstrated production.
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/graph_components.py
+    role: Future maintained complete-owner reader implementation; not invoked in this
+      plan.
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/validation/write_validated.py
+    role: Future maintained complete-owner reader implementation; not invoked in this
+      plan.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/terpenoids/8-hydroxy-6-protoilludene.yaml
+    role: Curator-owned declared graphs, graph references, pathway steps and history;
+      imported molecular-target assertions and other seeded fields retain inventory
+      ownership. Curated graph/pathway changes require the validated writer and a
+      curation event.
+  ownership_note: This review proposes no record edit. Source corrections belong in
+    maintained inventories, implemented curation tables, extractors or the seeder;
+    generated pages are not owners. This mechanism-bearing owner requires separately
+    authorized complete maintained resolution before scientific assessment and draft
+    assembly. Raw owner capture is not a maintained resolved view.
+checks:
+- check_id: maintained-mechanism-reader
+  name: Complete offline maintained reader for 8α-hydroxy-6-protoilludene
+  command: /private/tmp/npm-record-reviews-20261021/.venv/bin/python -I -B /private/tmp/npm-review-work/shared-next-batch226/read-selected-mechanism-guarded-001.py
+    2259 86fd95211bb0bfaa9386db3589ee8135b5ac0ac41dc142a68f0d47e3feea1f8d 4d70d35dc211ed2af582705e6d048590e98c2a6e5a1f9a9e123418111d53d6dd
+    d43ae5cb54fb23e9af898965c50355d9e20b6eda5506232f5cc5dda32a85dcda 39a09efef203ca9e288817223f63671042244ab58ffd48c19989979b25cdf028
+    4d25b101561fcbbc4b9f7a6c5b2cb3a2e0a37b6f93ed3d521f3b87bbc8170be8
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-32b7a54e39
+  evidence_ids:
+  - support-2259-reader-data
+  - support-2259-reader-execution
+  - support-2259-reader-acceptance
+  summary: One original offline maintained call preserved the complete owner and its
+    historically qualified graph/pathway/history content. No fresh primary-source
+    or protein verification is inferred.
+- check_id: root-native-strict_ten
+  name: strict_ten
+  status: passed
+  required: true
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  target_ids:
+  - naturalproductmech:mibig-32b7a54e39
+  command: just validate-strict data/natural_products/terpenoids/6-anteisoheptadecyl-4-o-dihydrofarnesyl-2-methoxyhydroquinone.yaml
+    data/natural_products/terpenoids/6-anteisoheptadecyl-4-o-geranyl-2-methoxyhydroquinone.yaml
+    data/natural_products/terpenoids/6-isoheptadecyl-4-o-dihydrofarnesyl-2-methoxyhydroquinone.yaml
+    data/natural_products/terpenoids/6-isoheptadecyl-4-o-geranyl-2-methoxyhydroquinone.yaml
+    data/natural_products/terpenoids/6-isopalmityl-4-o-dihydrofarnesyl-2-methoxyhydroquinone.yaml
+    data/natural_products/terpenoids/6-isopalmityl-4-o-geranyl-2-methoxyhydroquinone.yaml
+    data/natural_products/terpenoids/7-deoxypactamycin.yaml data/natural_products/terpenoids/8-9-epibotrydial.yaml
+    data/natural_products/terpenoids/8-hydroxy-6-protoilludene.yaml data/natural_products/terpenoids/acorenol.yaml
+    --workers 1 --out /private/tmp/npm-native-checks/batch-226/validate-strict-selected10-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_ten
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-strict_full
+  name: strict_full
+  status: passed
+  required: true
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  target_ids:
+  - naturalproductmech:mibig-32b7a54e39
+  command: just validate-all --workers 1 --out /private/tmp/npm-native-checks/batch-226/validate-all-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_full
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-lockfile
+  name: lockfile
+  status: passed
+  required: true
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  target_ids:
+  - naturalproductmech:mibig-32b7a54e39
+  command: just verify-corpus --summary
+  exit_code: 0
+  evidence_ids:
+  - root-native-lockfile
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-reproduction
+  name: reproduction
+  status: passed
+  required: true
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  target_ids:
+  - naturalproductmech:mibig-32b7a54e39
+  command: just verify-reproduction
+  exit_code: 0
+  evidence_ids:
+  - root-native-reproduction
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-queue
+  name: queue
+  status: passed
+  required: true
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  target_ids:
+  - naturalproductmech:mibig-32b7a54e39
+  command: just review-queue --tsv /private/tmp/npm-native-checks/batch-226/review-queue-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-queue
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-full-qc
+  name: Full just qc
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-32b7a54e39
+  summary: 'Not run under the external-request prohibition: the complete recipe includes
+    upstream vendored synchronization. The five executed local checks are recorded
+    separately.'
+- check_id: root-ontology-authorities
+  name: Complete OAK identifier/label authority check
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-32b7a54e39
+  summary: Complete offline ontology authority coverage was not established for this
+    run; no ontology retrieval or remote resolution was attempted. Retained taxonomy
+    evidence has only its explicitly stated local scope.
+- check_id: root-primary-and-live-sources
+  name: Primary literature and current structured database/identifier verification
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-32b7a54e39
+  summary: All external requests are prohibited by the user. Fresh database and identifier
+    verification and complete primary-literature coverage are unavailable. Any retained
+    original literature actually inspected is recorded separately with its historical
+    scope.
+evidence:
+- evidence_id: support-2259-owner
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/terpenoids/8-hydroxy-6-protoilludene.yaml
+  locator: lines 1–385
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: Whole current plaintext owner and all 6 history events. Literal identifier
+    naturalproductmech:mibig-32b7a54e39, label 8α-hydroxy-6-protoilludene and full
+    key XTXSLQPVMVDDTB-ZRQNBYAXSA-N. Historical annotations remain retained claims,
+    not fresh scientific verification.
+  snapshot_sha256: fd6df91e36fdcade161dfdf6d3796cefef81b00fcbec978d1d49ba592a74333c
+- evidence_id: support-2259-capture
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch226/owner-capture-DATA-001.json
+  locator: /records/8/owner_document; /records/8/owner_pin
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: Exact captured complete owner, including structure, provenance, written
+    occurrences, computed classification, mechanism annotations where present and
+    complete history.
+  snapshot_sha256: 39a09efef203ca9e288817223f63671042244ab58ffd48c19989979b25cdf028
+- evidence_id: support-2259-source-plan
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch226-tentative/bgc-prep/bgc-conditional226-target-input-plan-001.json
+  locator: /records/8
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: 'Complete admitted selected source context: nine retained query frames
+    with full copied payloads, 39 inputs and 0 direct companion paths. This is a bounded
+    local inventory scope.'
+  snapshot_sha256: 5d36a99b7ee05f0c9ceb3903fe8e49600ac44f6442f21e499ef04d738a8870eb
+- evidence_id: support-2259-intake
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch226/intakes/2259-inspect-001.json
+  locator: /status; /source; /targets
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: Original canonical inspection of the exact target and maintained ownership
+    roles with input snapshots; inspection is not a scientific verdict.
+  snapshot_sha256: 4d70d35dc211ed2af582705e6d048590e98c2a6e5a1f9a9e123418111d53d6dd
+- evidence_id: support-2259-plan-acceptance
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch226/root-input-plan-acceptance-001.json
+  locator: /accepted; /plan; /inventory; /source_notes; /source_placements; /unique_source_paths;
+    /selected_reader_orders
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: ROOT accepts the actual plan with 448 input placements and 72 unique paths;
+    selected reader orders are 2256 and 2259.
+  snapshot_sha256: c4eb227ed6d0e6bf96877c3b5f15e9275f07ebb86aff2d4edf7d9749a8871251
+- evidence_id: support-2259-intake-acceptance
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch226/root-intake-ready-001.json
+  locator: /accepted; /status; /intake_summary; /intakes_execution; /source_placements;
+    /unique_source_paths; /mechanism_owner_orders
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: ROOT accepts the ten original canonical intakes and exact 448/72 input
+    scope; only 2256 and 2259 have selected mechanism-reader applicability.
+  snapshot_sha256: cee04496c89499477fb14b1f5bd349baff9a19879f761f843ba1ef13423cfc52
+- evidence_id: support-2259-diagnostic-acceptance
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch226/root-local-diagnostics-acceptance-001.json
+  locator: /status; /DATA; /execution; /successful_forms; /comparison_flags_true;
+    /comparison_flags_false; /global_stderr_warnings; /full_QC_and_OAK
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: ROOT accepts the original twenty saved form computations. There are 98
+    true comparison flags, with only 2257 canonical isomeric/nonisomeric comparisons
+    false. Eight global omitted-undefined-stereo warnings remain unassigned; FullQC
+    and complete OAK are unavailable.
+  snapshot_sha256: 67c8acc7ddac7662cd7f52c95e058806b4dfc64ee849c335a75ab601fecc35cf
+- evidence_id: support-2259-native-gates
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch226/root-native-five-gates-acceptance-001.json
+  locator: /accepted; /ledger; /five_local_commands_passed; /all_native_gates_passed;
+    /unavailable_required_gates; /scope
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: ROOT accepts five successful local commands within the receipt's stated
+    scope; unavailable required gates prevent a claim of complete validation.
+  snapshot_sha256: 66ab88f5308b0868c13d372cd15007e234fd6213978218e700b8b4998ae0ee5a
+- evidence_id: support-2259-chemistry-execution
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch226/chemistry-local/diagnostic-execution-001.json
+  locator: /started_at; /finished_at; /exit_code; /DATA; /stdout; /stderr; /external_requests;
+    /retries
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: Original ROOT-owned diagnostic execution returned zero once. Exact DATA/stdout/stderr
+    pins preserve the original stream, without reattribution or replay; there was
+    no retry or external request.
+  snapshot_sha256: 31d79354b21eee031db3ba3dcf19679c5c456728ccf47fccd7ae84163f290d61
+- evidence_id: support-2259-chemistry
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch226/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/8/declared_structure; /records/8/smiles/computed; /records/8/inchi/computed;
+    /records/8/comparisons; /records/8/atom_correspondence; /records/8/smiles/status;
+    /records/8/inchi/status
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: Both stored forms yield neutral C15H24O, 16 heavy atoms and 18 bonds with
+    equal standard InChI/full key and both canonical SMILES comparisons true. Four
+    tetrahedral centers are specified in each, consistent with the retained stereo_complete:true
+    at that scope. The internal small-ring alkene is present without a separately
+    enumerated E/Z potential-stereo entry. The single saved correspondence does not
+    establish independent natural identity or a primary absolute-configuration determination.
+  snapshot_sha256: 9402e619ad45ee271669f7c409f81b7af6e2e529a58aed6239da2c56d05b22e2
+- evidence_id: support-2259-topology
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch226/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/8/smiles/computed; /records/8/inchi/computed
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: Both complete paired tables describe neutral C15H24O with fused four-,
+    five- and six-carbon rings, four specified tetrahedral centers, one internal alkene
+    and a secondary hydroxyl. SMILES C1=C2 is the alkene and C14-O15 bears the hydroxyl.
+    There is no carbonyl, nitrogen, phosphorus, ether bridge or saturated C5O candidate.
+  snapshot_sha256: 9402e619ad45ee271669f7c409f81b7af6e2e529a58aed6239da2c56d05b22e2
+- evidence_id: support-2259-stereo-method
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py
+  locator: lines 142–173
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: Maintained structure_fields parses the source SMILES, derives standard
+    InChI/key and sets stereo_complete by checking undefined tetrahedral centers with
+    FindMolChiralCenters. That implementation is narrower than every possible geometric
+    or tautomeric ambiguity.
+  snapshot_sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+- evidence_id: support-2259-seeder
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: lines 982–1025
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: Maintained seeder copies the lead structure and completeness flag, uses
+    a returned classification to choose filing, and preserves named tool/version plus
+    pathway/superclass/class/glycoside predictions.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: support-2259-structure-schema
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: lines 392–425
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: Schema documents undefined stereocentres and requires computed classification
+    to retain named tool/version. Computed classification is not a source assertion
+    or an admission rationale.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: support-2259-review-profile
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/docs/record-review-profile.md
+  locator: lines 35–57
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: Review profile separates source evidence, computed classification, producer/occurrence
+    claims and complete maintained mechanism reading. Source corrections belong in
+    maintained owners; reserved decisions.tsv is not consumed. A saved review does
+    not promote native status or append history.
+  snapshot_sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+- evidence_id: support-2259-source-notes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch226-tentative/bgc-prep/bgc-conditional226-source-scope-notes-001.json
+  locator: /reading; /curation; /cautions; /totals
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: Complete saved-source reading is attributed between BGC and Support, with
+    prior raw carries by exact bytes. The bounded 84-token eight-table curation scan
+    had zero hits; PubChem exclusions were supplemental/unadmitted because no actual
+    AID is present. This does not establish global absence.
+  snapshot_sha256: 1597c81b8311af685af0357a207d5e49353a00216d5c48d722f31a05f06be0b4
+- evidence_id: support-2259-taxonomy-routes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch226-tentative/bgc-prep/bgc-conditional226-target-input-plan-001.json
+  locator: /records/8/source_scope_inventory/source_taxa; /records/8/source_scope_inventory/forward_taxon_merge_matches;
+    /records/8/source_scope_inventory/nonorganism_matches
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: Exact selected source-taxon set and bounded forward-merge/nonorganism routes.
+    The forward-merge and nonorganism match lists are empty here; cached labels retain
+    their historical scope and do not constitute live taxonomy verification.
+  snapshot_sha256: 5d36a99b7ee05f0c9ceb3903fe8e49600ac44f6442f21e499ef04d738a8870eb
+- evidence_id: support-2259-mechanism-scope
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch226-tentative/bgc-prep/bgc-conditional226-target-input-plan-001.json
+  locator: /records/8/declared_mechanism_roots_literal; /records/8/component_paths;
+    /records/8/literal_mechanism_inventory; /records/8/proposed_companion_paths
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: Selected literal mechanism roots and direct context membership for 2259;
+    component list is empty. Positive unselected companions do not create an additional
+    selected maintained-reader route.
+  snapshot_sha256: 5d36a99b7ee05f0c9ceb3903fe8e49600ac44f6442f21e499ef04d738a8870eb
+- evidence_id: support-2259-query-mibig_compounds
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch226-tentative/bgc-prep/bgc-conditional226-target-input-plan-001.json
+  locator: /records/8/source_scope_inventory/joins/mibig_compounds
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: 'Retained local query frame: {"predicate": "exact complete standard_inchi_key
+    equality", "query": "XTXSLQPVMVDDTB-ZRQNBYAXSA-N", "positive_row_count": 1}. Empty
+    results are scoped to this predicate and retained table, not the wider literature
+    or live database.'
+  snapshot_sha256: 5d36a99b7ee05f0c9ceb3903fe8e49600ac44f6442f21e499ef04d738a8870eb
+- evidence_id: support-2259-row-mibig_compounds-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv
+  locator: physical lines 3042–3042
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: 'Complete retained row payload: {"bgc_classes": "terpene", "bgc_subclasses":
+    "Unknown", "cluster_link_evidence_basis": "CLUSTER_DEMONSTRATED", "compound_classes":
+    "", "compound_index": "2", "compound_name": "8α-hydroxy-6-protoilludene", "database_ids":
+    "npatlas:NPA033501", "entry_completeness": "unknown", "entry_quality": "questionable",
+    "entry_status": "active", "entry_version": "3", "genome_accession": "MT277003.1",
+    "locus_evidence_methods": "Heterologous expression", "locus_from": "1", "locus_to":
+    "45006", "mibig_accession": "BGC0002445", "primary_reference": "PMID:33191459",
+    "producer_evidence_basis": "SOURCE_ASSERTION", "reference_basis": "ENTRY", "smiles":
+    "CC1=C2CC[C@]2(C)[C@H]2CC(C)(C)C[C@H]2[C@@H]1O", "standard_inchi": "InChI=1S/C15H24O/c1-9-11-5-6-15(11,4)12-8-14(2,3)7-10(12)13(9)16/h10,12-13,16H,5-8H2,1-4H3/t10-,12+,13-,15+/m1/s1",
+    "standard_inchi_key": "XTXSLQPVMVDDTB-ZRQNBYAXSA-N", "stereo_complete": "true",
+    "taxon_id": "NCBITaxon:47427", "taxon_label": "Armillaria gallica"}'
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: support-2259-query-chebi_structures
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch226-tentative/bgc-prep/bgc-conditional226-target-input-plan-001.json
+  locator: /records/8/source_scope_inventory/joins/chebi_structures
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: 'Retained local query frame: {"predicate": "exact complete standard_inchi_key
+    equality", "query": "XTXSLQPVMVDDTB-ZRQNBYAXSA-N", "positive_row_count": 0}. Empty
+    results are scoped to this predicate and retained table, not the wider literature
+    or live database.'
+  snapshot_sha256: 5d36a99b7ee05f0c9ceb3903fe8e49600ac44f6442f21e499ef04d738a8870eb
+- evidence_id: support-2259-query-lotus_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch226-tentative/bgc-prep/bgc-conditional226-target-input-plan-001.json
+  locator: /records/8/source_scope_inventory/joins/lotus_occurrences
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: 'Retained local query frame: {"predicate": "exact complete standard_inchi_key
+    equality", "query": "XTXSLQPVMVDDTB-ZRQNBYAXSA-N", "positive_row_count": 1}. Empty
+    results are scoped to this predicate and retained table, not the wider literature
+    or live database.'
+  snapshot_sha256: 5d36a99b7ee05f0c9ceb3903fe8e49600ac44f6442f21e499ef04d738a8870eb
+- evidence_id: support-2259-row-lotus_occurrences-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 9664–9664
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Armillaria gallica",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q630885", "reference_doi":
+    "10.1007/S00253-020-11006-Y", "standard_inchi_key": "XTXSLQPVMVDDTB-ZRQNBYAXSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q113959500", "taxon_id":
+    "NCBITaxon:47427"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2259-query-cyanometdb_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch226-tentative/bgc-prep/bgc-conditional226-target-input-plan-001.json
+  locator: /records/8/source_scope_inventory/joins/cyanometdb_occurrences
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: 'Retained local query frame: {"predicate": "exact complete standard_inchi_key
+    equality", "query": "XTXSLQPVMVDDTB-ZRQNBYAXSA-N", "positive_row_count": 0}. Empty
+    results are scoped to this predicate and retained table, not the wider literature
+    or live database.'
+  snapshot_sha256: 5d36a99b7ee05f0c9ceb3903fe8e49600ac44f6442f21e499ef04d738a8870eb
+- evidence_id: support-2259-query-npclassifier
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch226-tentative/bgc-prep/bgc-conditional226-target-input-plan-001.json
+  locator: /records/8/source_scope_inventory/joins/npclassifier
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: 'Retained local query frame: {"predicate": "exact complete standard_inchi_key
+    equality", "query": "XTXSLQPVMVDDTB-ZRQNBYAXSA-N", "positive_row_count": 1}. Empty
+    results are scoped to this predicate and retained table, not the wider literature
+    or live database.'
+  snapshot_sha256: 5d36a99b7ee05f0c9ceb3903fe8e49600ac44f6442f21e499ef04d738a8870eb
+- evidence_id: support-2259-row-npclassifier-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv
+  locator: physical lines 2835–2835
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: 'Complete retained row payload: {"class_results": "Protoilludane sesquiterpenoids",
+    "is_glycoside": "false", "model_version": "npclassifier.gnps2.org@2026-09-07",
+    "pathway_results": "Terpenoids", "smiles": "CC1=C2CC[C@]2(C)[C@H]2CC(C)(C)C[C@H]2[C@@H]1O",
+    "standard_inchi_key": "XTXSLQPVMVDDTB-ZRQNBYAXSA-N", "superclass_results": "Sesquiterpenoids"}'
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: support-2259-query-pubchem_bioassay
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch226-tentative/bgc-prep/bgc-conditional226-target-input-plan-001.json
+  locator: /records/8/source_scope_inventory/joins/pubchem_bioassay
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: 'Retained local query frame: {"predicate": "exact complete standard_inchi_key
+    equality", "query": "XTXSLQPVMVDDTB-ZRQNBYAXSA-N", "positive_row_count": 0}. Empty
+    results are scoped to this predicate and retained table, not the wider literature
+    or live database.'
+  snapshot_sha256: 5d36a99b7ee05f0c9ceb3903fe8e49600ac44f6442f21e499ef04d738a8870eb
+- evidence_id: support-2259-query-bindingdb_targets
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch226-tentative/bgc-prep/bgc-conditional226-target-input-plan-001.json
+  locator: /records/8/source_scope_inventory/joins/bindingdb_targets
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: 'Retained local query frame: {"predicate": "exact complete standard_inchi_key
+    equality", "query": "XTXSLQPVMVDDTB-ZRQNBYAXSA-N", "positive_row_count": 0}. Empty
+    results are scoped to this predicate and retained table, not the wider literature
+    or live database.'
+  snapshot_sha256: 5d36a99b7ee05f0c9ceb3903fe8e49600ac44f6442f21e499ef04d738a8870eb
+- evidence_id: support-2259-query-antibioticmech_inchikeys
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch226-tentative/bgc-prep/bgc-conditional226-target-input-plan-001.json
+  locator: /records/8/source_scope_inventory/joins/antibioticmech_inchikeys
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: 'Retained local query frame: {"predicate": "exact complete standard_inchi_key
+    equality", "query": "XTXSLQPVMVDDTB-ZRQNBYAXSA-N", "positive_row_count": 0}. Empty
+    results are scoped to this predicate and retained table, not the wider literature
+    or live database.'
+  snapshot_sha256: 5d36a99b7ee05f0c9ceb3903fe8e49600ac44f6442f21e499ef04d738a8870eb
+- evidence_id: support-2259-query-chebi_origins
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch226-tentative/bgc-prep/bgc-conditional226-target-input-plan-001.json
+  locator: /records/8/source_scope_inventory/joins/chebi_origins
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: 'Retained local query frame: {"predicate": "exact chebi_id from exact full-key
+    structure rows", "query": [], "positive_row_count": 0}. Empty results are scoped
+    to this predicate and retained table, not the wider literature or live database.'
+  snapshot_sha256: 5d36a99b7ee05f0c9ceb3903fe8e49600ac44f6442f21e499ef04d738a8870eb
+- evidence_id: support-2259-cache-47427
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/corpus_taxa.obo
+  locator: physical lines 21399–21404
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: 'Complete cached stanza, not a fresh taxonomy response:
+
+    [Term]
+
+    id: NCBITaxon:47427
+
+    name: Armillaria gallica
+
+    synonym: "Armillaria bulbosa" EXACT []
+
+    synonym: "Armillaria lutea" EXACT []
+
+
+    '
+  snapshot_sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+- evidence_id: support-2259-companions
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch226-tentative/bgc-prep/bgc-conditional226-target-input-plan-001.json
+  locator: /records/8/proposed_companion_paths; /records/8/direct_companion_predicates
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: Exactly 0 direct companion placements admitted under the saved root/full-key/owned-BGC
+    predicates; no recursive expansion or activity/mechanism transfer is claimed.
+  snapshot_sha256: 5d36a99b7ee05f0c9ceb3903fe8e49600ac44f6442f21e499ef04d738a8870eb
+- evidence_id: support-2259-reader-data
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch226/native-current226-8-hydroxy-6-protoilludene-maintained-reader-DATA-001.json
+  locator: /status; /raw_owner; /expected_view; /resolved_view; /counts; /returned_view_equals_expected_complete_owner;
+    /denials; /unexpected_denials; /errors; /external_requests; /limitations
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: Original maintained call returned the exact complete captured owner, including
+    all nonmechanistic fields and history, with no component expansion. Counts and
+    limitations are retained. The sole known IPv6 socket-construction probe was denied
+    before action; no request or unexpected denial/error is reported. Topology/preservation
+    does not freshly validate primary papers, sequences, natural identity or mechanism
+    science.
+  snapshot_sha256: 6408621b3b6ec500b810b8e0868131284855e25dd2c3591dcfd624ce95d8b3a3
+- evidence_id: support-2259-reader-execution
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch226/native-current226-8-hydroxy-6-protoilludene-reader-execution-001.json
+  locator: /started_at; /finished_at; /source; /configuration; /authorization; /exit_code;
+    /DATA; /stdout; /stderr; /original_tool; /external_requests; /retries
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: Original Native-owned maintained reader executed once and returned zero,
+    with exact source/configuration/authorization and DATA/stdout/stderr pins retained.
+    This execution receipt does not itself establish scientific mechanism validity.
+  snapshot_sha256: 3aeea1ccc2727c3358545341f6e958d089e85bd092894f412b3f9f6a371e3ee5
+- evidence_id: support-2259-reader-acceptance
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch226/root-2259-maintained-reader-acceptance-001.json
+  locator: /status; /order; /DATA; /execution; /verification; /review_check_contract;
+    /limits
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: ROOT independently accepts the exact original DATA/execution/current inputs
+    and complete-owner equality; the exact maintained-mechanism-reader check contract
+    is retained.
+  snapshot_sha256: 1cdb265d3954bad4341dcdd5f18bdc196f8852e041d765c6c872b0e76a9346c3
+- evidence_id: support-2259-graph-0
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch226/native-current226-8-hydroxy-6-protoilludene-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/0
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: 'Complete retained graph annotation; historical source/evidence claims,
+    not new primary verification: {"description": "Armillaria gallica 8α-hydroxy-6-protoilludene
+    biosynthesis graph for Pro1 cyclization of farnesyl diphosphate followed by CYP-Arm3
+    hydroxylation.", "edges": [{"evidence": [{"evidence_type": "PRIMARY_EXPERIMENT",
+    "notes": "The earlier A. gallica Pro1 cDNA study experimentally established that
+    Pro1 catalyzes farnesyl diphosphate cyclization to Delta(6)-protoilludene.", "reference":
+    "DOI:10.1074/jbc.M110.165845", "snippet": "farnesyl diphosphate to produce protoilludene"},
+    {"evidence_type": "PRIMARY_EXPERIMENT", "notes": "The Armillaria BGC study identified
+    the MT277003.1 gene cluster and annotated GenPept QJQ03973.1 as the BGC0002445
+    Pro1 protein.", "reference": "DOI:10.1007/s00253-020-11006-y"}, {"evidence_type":
+    "DATABASE_ASSERTION", "notes": "NCBI resolves GenPept QJQ03973.1 to the MT277003.1
+    coding sequence for the Armillaria gallica 6-protoilludene synthase Pro1.", "reference":
+    "https://www.ncbi.nlm.nih.gov/protein/QJQ03973.1", "retrieved_on": "2026-09-27"}],
+    "object": "pro1", "predicate": "is cyclized by", "subject": "farnesyl_diphosphate"},
+    {"evidence": [{"evidence_type": "PRIMARY_EXPERIMENT", "notes": "The earlier A.
+    gallica Pro1 cDNA study experimentally established that Pro1 catalyzes farnesyl
+    diphosphate cyclization to Delta(6)-protoilludene.", "reference": "DOI:10.1074/jbc.M110.165845",
+    "snippet": "farnesyl diphosphate to produce protoilludene"}, {"evidence_type":
+    "PRIMARY_EXPERIMENT", "notes": "The Armillaria BGC study identified the MT277003.1
+    gene cluster and annotated GenPept QJQ03973.1 as the BGC0002445 Pro1 protein.",
+    "reference": "DOI:10.1007/s00253-020-11006-y"}, {"evidence_type": "DATABASE_ASSERTION",
+    "notes": "NCBI resolves GenPept QJQ03973.1 to the MT277003.1 coding sequence for
+    the Armillaria gallica 6-protoilludene synthase Pro1.", "reference": "https://www.ncbi.nlm.nih.gov/protein/QJQ03973.1",
+    "retrieved_on": "2026-09-27"}], "object": "delta6_protoilludene", "predicate":
+    "forms", "subject": "pro1"}, {"evidence": [{"evidence_type": "PRIMARY_EXPERIMENT",
+    "notes": "Armillaria gallica CYP-Arm3 hydroxylated Delta(6)-protoilludene to 8α-hydroxy-6-protoilludene
+    in yeast feeding and coexpression experiments.", "reference": "DOI:10.1007/s00253-020-11006-y",
+    "snippet": "8α-hydroxy-6-protoilludene intermediate produced by CYP-Arm3"}, {"evidence_type":
+    "DATABASE_ASSERTION", "notes": "NCBI resolves GenPept QJQ03972.1 to the MT277003.1
+    coding sequence for Armillaria gallica CYP-Arm3.", "reference": "https://www.ncbi.nlm.nih.gov/protein/QJQ03972.1",
+    "retrieved_on": "2026-09-27"}], "object": "cyp_arm3", "predicate": "is hydroxylated
+    by", "subject": "delta6_protoilludene"}, {"evidence": [{"evidence_type": "PRIMARY_EXPERIMENT",
+    "notes": "Armillaria gallica CYP-Arm3 hydroxylated Delta(6)-protoilludene to 8α-hydroxy-6-protoilludene
+    in yeast feeding and coexpression experiments.", "reference": "DOI:10.1007/s00253-020-11006-y",
+    "snippet": "8α-hydroxy-6-protoilludene intermediate produced by CYP-Arm3"}, {"evidence_type":
+    "DATABASE_ASSERTION", "notes": "NCBI resolves GenPept QJQ03972.1 to the MT277003.1
+    coding sequence for Armillaria gallica CYP-Arm3.", "reference": "https://www.ncbi.nlm.nih.gov/protein/QJQ03972.1",
+    "retrieved_on": "2026-09-27"}], "object": "hydroxy_protoilludene", "predicate":
+    "forms", "subject": "cyp_arm3"}], "graph_id": "8-hydroxy-6-protoilludene-biosynthesis",
+    "nodes": [{"grounding_status": "GROUNDED", "identifier": "CHEBI:175763", "label":
+    "(2E,6E)-farnesyl diphosphate", "node_id": "farnesyl_diphosphate", "node_type":
+    "PRECURSOR"}, {"grounding_status": "GROUNDED", "identifier": "UniProtKB:A0A7U3MPB9",
+    "label": "Pro1", "node_id": "pro1", "node_type": "ENZYME"}, {"grounding_status":
+    "GROUNDED", "identifier": "CHEBI:68655", "label": "Delta(6)-protoilludene", "node_id":
+    "delta6_protoilludene", "node_type": "COMPOUND"}, {"grounding_status": "GROUNDED",
+    "identifier": "UniProtKB:A0A7S5T363", "label": "CYP-Arm3", "node_id": "cyp_arm3",
+    "node_type": "ENZYME"}, {"grounding_status": "GROUNDED", "identifier": "naturalproductmech:mibig-32b7a54e39",
+    "label": "8α-hydroxy-6-protoilludene", "node_id": "hydroxy_protoilludene", "node_type":
+    "COMPOUND"}], "scope": "BIOSYNTHESIS"}'
+  snapshot_sha256: 6408621b3b6ec500b810b8e0868131284855e25dd2c3591dcfd624ce95d8b3a3
+- evidence_id: support-2259-graph-1
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch226/native-current226-8-hydroxy-6-protoilludene-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/1
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: 'Complete retained graph annotation; historical source/evidence claims,
+    not new primary verification: {"description": "Native reference in Armillaria
+    gallica FU02472/BGC0002445. The complete CDS is a deposited gene model, not an
+    independently verified experimental transcript. The annotated mRNA boundaries
+    are partial. Native reference identity does not establish the sequence of the
+    2023 assay construct, mature processing or experimental heme occupancy.", "edges":
+    [{"evidence": [{"evidence_type": "DATABASE_ASSERTION", "notes": "GenBank assigns
+    gene CYP-Arm2 and protein QJQ03971.1 to the spliced CDS.", "reference": "https://www.ncbi.nlm.nih.gov/nuccore/MT277003.1",
+    "retrieved_on": "2026-10-08", "snippet": "/gene=\"CYP-Arm2\""}, {"evidence_type":
+    "DATABASE_ASSERTION", "notes": "The separate 513-residue GenPept record identifies
+    FU02472 and the same 12-exon reverse-strand CDS.", "reference": "https://www.ncbi.nlm.nih.gov/protein/QJQ03971.1",
+    "retrieved_on": "2026-10-08"}, {"evidence_type": "CURATOR_INFERENCE", "notes":
+    "Unreviewed entry version 22, sequence version 1. CDS-aware translation, deposited
+    translation, GenPept QJQ03971.1 and A0A7S5T5B1 agree over all 513 residues. This
+    is native-reference identity only. UniProt has no specific FUNCTION or CATALYTIC
+    ACTIVITY comment.", "reference": "https://www.uniprot.org/uniprotkb/A0A7S5T5B1/entry",
+    "retrieved_on": "2026-10-08"}], "notes": "FU02472, taxon 47427; complete 1542-nt
+    CDS including stop, 513-residue reference. The CDS spans MT277003.1 positions
+    17425..19546 with 12 reverse-strand exons.", "object": "cyp_arm2", "predicate":
+    "encodes the native protein reference", "subject": "cyp_arm2_cds"}], "graph_id":
+    "8-hydroxy-6-protoilludene-cyparm2-native-reference", "nodes": [{"grounding_status":
+    "UNGROUNDED", "label": "CYP-Arm2 CDS (MT277003.1, 12 reverse-strand exons)", "node_id":
+    "cyp_arm2_cds", "node_type": "GENE"}, {"grounding_status": "GROUNDED", "identifier":
+    "UniProtKB:A0A7S5T5B1", "label": "CYPArm2 (FU02472 native-reference example)",
+    "node_id": "cyp_arm2", "node_type": "ENZYME"}], "scope": "BIOSYNTHESIS"}'
+  snapshot_sha256: 6408621b3b6ec500b810b8e0868131284855e25dd2c3591dcfd624ce95d8b3a3
+- evidence_id: support-2259-graph-2
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch226/native-current226-8-hydroxy-6-protoilludene-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/2
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: 'Complete retained graph annotation; historical source/evidence claims,
+    not new primary verification: {"description": "Partial downstream-consumption
+    graph: the 2023 abstract names 8α-hydroxy-6-protoilludene as a CYPArm2 substrate
+    and reports an NMR-identified dihydroxylated product. This is not another route
+    producing this owner and does not extend its existing two-step biosynthetic_pathway.
+    The protein is a qualified native reference example, not a sequence-verified assay
+    construct. Only the returned abstract was read, not full text or supplements.
+    The MITE model lacks C8 stereochemistry; no complete product structure, ChEBI/Rhea
+    assignment, assembly or kinetic claim is adopted.", "edges": [{"evidence": [{"evidence_type":
+    "PRIMARY_EXPERIMENT", "notes": "Abstract text returned by an official-domain web
+    search before the subsequent PubMed browser-check stop; full text and supplements
+    were not inspected. The abstract reports CYPArm2 as a protoilludene 13-hydroxylase;
+    this is an abstract-level experimental report, not an independently audited full
+    assay.", "reference": "DOI:10.1002/cbic.202300179", "retrieved_on": "2026-10-08",
+    "snippet": "confirming that CYPArm2 is a protoilludene 13-hydroxylase."}, {"evidence_type":
+    "DATABASE_ASSERTION", "notes": "Active MITE0000295 version 1 links CYPArm2 to
+    A0A7S5T5B1, QJQ03971.1 and BGC0002445. This is a database association, not independent
+    sequence verification of the 2023 assay stock.", "reference": "https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000295.json",
+    "retrieved_on": "2026-10-08"}], "notes": "The native accession is an example for
+    the named CYPArm2 activity. The abstract does not establish the exact experimental
+    construct sequence. No claim of native heme occupancy or strict substrate specificity.",
+    "object": "hydroxylation_13", "predicate": "is reported to catalyze", "subject":
+    "cyp_arm2"}, {"evidence": [{"evidence_type": "PRIMARY_EXPERIMENT", "notes": "Abstract
+    text returned by an official-domain web search before the subsequent PubMed browser-check
+    stop; full text and supplements were not inspected. The named accepted substrates
+    include this 8alpha-hydroxylated compound. No reaction ordering is inferred from
+    gene order, and the under-specified MITE structure is not used as exact stereochemical
+    identity evidence.", "reference": "DOI:10.1002/cbic.202300179", "retrieved_on":
+    "2026-10-08", "snippet": "accepts Δ-6-protoilludene and 8α-hydroxy-6-protoilludene
+    as substrates."}], "notes": "Owner consumption, not owner production. The abstract
+    explicitly names the 8alpha substrate. MITE''s model key XTXSLQPVMVDDTB-SUTJQRNSSA-N
+    is stereo-incomplete and is not asserted equal to this owner''s full key XTXSLQPVMVDDTB-ZRQNBYAXSA-N.",
+    "object": "hydroxylation_13", "predicate": "is reported as a substrate of", "subject":
+    "hydroxy_protoilludene"}, {"evidence": [{"evidence_type": "PRIMARY_EXPERIMENT",
+    "notes": "Abstract text returned by an official-domain web search before the subsequent
+    PubMed browser-check stop; full text and supplements were not inspected. The abstract
+    reports NMR identification of the named dihydroxylated product after recombinant
+    yeast biosynthesis. No analytical spectra, yield, kinetic values or downstream
+    complete pathway are imported.", "reference": "DOI:10.1002/cbic.202300179", "retrieved_on":
+    "2026-10-08", "snippet": "identification of 8α,13-dihydroxy-protoilludene"}],
+    "notes": "Named product only: no stable chemical identifier or full stereochemical
+    structure is assigned. MITE''s product model is also stereo-incomplete; its unspecified
+    center is not filled in.", "object": "dihydroxy_protoilludene", "predicate": "is
+    reported to produce", "subject": "hydroxylation_13"}], "graph_id": "8-hydroxy-6-protoilludene-cyparm2-downstream-consumption",
+    "nodes": [{"grounding_status": "GROUNDED", "identifier": "UniProtKB:A0A7S5T5B1",
+    "label": "CYPArm2 (FU02472 native-reference example)", "node_id": "cyp_arm2",
+    "node_type": "ENZYME"}, {"grounding_status": "GROUNDED", "identifier": "naturalproductmech:mibig-32b7a54e39",
+    "label": "8α-hydroxy-6-protoilludene", "node_id": "hydroxy_protoilludene", "node_type":
+    "PRECURSOR"}, {"grounding_status": "UNGROUNDED", "label": "Reported CYPArm2 13-hydroxylation",
+    "node_id": "hydroxylation_13", "node_type": "PROCESS"}, {"grounding_status": "UNGROUNDED",
+    "label": "8α,13-dihydroxy-protoilludene (reported product)", "node_id": "dihydroxy_protoilludene",
+    "node_type": "COMPOUND"}], "scope": "BIOSYNTHESIS"}'
+  snapshot_sha256: 6408621b3b6ec500b810b8e0868131284855e25dd2c3591dcfd624ce95d8b3a3
+- evidence_id: support-2259-pathway-0
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch226/native-current226-8-hydroxy-6-protoilludene-maintained-reader-DATA-001.json
+  locator: /resolved_view/biosynthetic_pathway/0
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: 'Complete retained pathway annotation, whose experimental/database labels
+    remain historical: {"enzyme_id": "UniProtKB:A0A7U3MPB9", "enzyme_label": "6-protoilludene
+    synthase", "evidence": [{"evidence_type": "PRIMARY_EXPERIMENT", "notes": "The
+    earlier A. gallica Pro1 cDNA study experimentally established that Pro1 catalyzes
+    farnesyl diphosphate cyclization to Delta(6)-protoilludene.", "reference": "DOI:10.1074/jbc.M110.165845",
+    "snippet": "farnesyl diphosphate to produce protoilludene"}, {"evidence_type":
+    "PRIMARY_EXPERIMENT", "notes": "The Armillaria BGC study identified the MT277003.1
+    gene cluster and annotated GenPept QJQ03973.1 as the BGC0002445 Pro1 protein.",
+    "reference": "DOI:10.1007/s00253-020-11006-y"}, {"evidence_type": "DATABASE_ASSERTION",
+    "notes": "NCBI resolves GenPept QJQ03973.1 to the MT277003.1 coding sequence for
+    the Armillaria gallica 6-protoilludene synthase Pro1.", "reference": "https://www.ncbi.nlm.nih.gov/protein/QJQ03973.1",
+    "retrieved_on": "2026-09-27"}], "notes": "Armillaria gallica Pro1 cyclizes (2E,6E)-farnesyl
+    diphosphate to Delta(6)-protoilludene. UniProtKB:A0A7U3MPB9 resolves to the BGC0002445
+    MT277003.1 Pro1 sequence, while the earlier functional assay established A. gallica
+    Pro1 sesquiterpene synthase activity.", "product": "CHEBI:68655", "reaction_id":
+    "RHEA:34695", "step_number": 1, "substrate": "CHEBI:175763"}'
+  snapshot_sha256: 6408621b3b6ec500b810b8e0868131284855e25dd2c3591dcfd624ce95d8b3a3
+- evidence_id: support-2259-pathway-1
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch226/native-current226-8-hydroxy-6-protoilludene-maintained-reader-DATA-001.json
+  locator: /resolved_view/biosynthetic_pathway/1
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: 'Complete retained pathway annotation, whose experimental/database labels
+    remain historical: {"enzyme_id": "UniProtKB:A0A7S5T363", "enzyme_label": "CYP-Arm3",
+    "evidence": [{"evidence_type": "PRIMARY_EXPERIMENT", "notes": "Armillaria gallica
+    CYP-Arm3 hydroxylated Delta(6)-protoilludene to 8α-hydroxy-6-protoilludene in
+    yeast feeding and coexpression experiments.", "reference": "DOI:10.1007/s00253-020-11006-y",
+    "snippet": "8α-hydroxy-6-protoilludene intermediate produced by CYP-Arm3"}, {"evidence_type":
+    "DATABASE_ASSERTION", "notes": "NCBI resolves GenPept QJQ03972.1 to the MT277003.1
+    coding sequence for Armillaria gallica CYP-Arm3.", "reference": "https://www.ncbi.nlm.nih.gov/protein/QJQ03972.1",
+    "retrieved_on": "2026-09-27"}], "notes": "Armillaria gallica CYP-Arm3 hydroxylates
+    Delta(6)-protoilludene to 8α-hydroxy-6-protoilludene.", "product": "naturalproductmech:mibig-32b7a54e39",
+    "step_number": 2, "substrate": "CHEBI:68655"}'
+  snapshot_sha256: 6408621b3b6ec500b810b8e0868131284855e25dd2c3591dcfd624ce95d8b3a3
+- evidence_id: support-2259-reader-history
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch226/native-current226-8-hydroxy-6-protoilludene-maintained-reader-DATA-001.json
+  locator: /resolved_view/curation_history
+  accessed_at: '2026-11-03T16:30:19.393654Z'
+  support: supports
+  summary: 'Complete preserved owner history, with historical curation actions and
+    limitations: [{"action": "SEEDED_FROM_SOURCES", "changes": "Seeded from the committed
+    inventories in data/raw/.", "curator": "seed_from_sources", "timestamp": "2026-09-10T05:54:16Z"},
+    {"action": "SEEDED_FROM_SOURCES", "changes": "Seeded from the committed inventories
+    in data/raw/.", "curator": "seed_from_sources", "timestamp": "2026-09-25T03:03:48Z"},
+    {"action": "RECORD_CURATED", "changes": "Added a two-step Armillaria gallica biosynthetic
+    pathway and BIOSYNTHESIS causal graph for Pro1 cyclization of farnesyl diphosphate
+    to Delta(6)-protoilludene followed by CYP-Arm3 hydroxylation to 8α-hydroxy-6-protoilludene.",
+    "curator": "codex", "llm_assisted": true, "timestamp": "2026-09-27T02:19:37Z"},
+    {"action": "RECORD_CURATED", "changes": "Removed broad MIBiG BGC0002445 evidence
+    from the Pro1 pathway step and graph edges because the MIBiG record supports the
+    BGC assertion rather than the exact enzyme-level cyclization claims.", "curator":
+    "codex", "llm_assisted": true, "timestamp": "2026-09-27T02:37:04Z"}, {"action":
+    "RECORD_CURATED", "changes": "Added CYPArm2 native-reference and downstream-consumption
+    graphs using UniProtKB:A0A7S5T5B1 as the FU02472 native-reference example. The
+    2023 abstract reports the owner as a substrate, not a product, of 13-hydroxylation.
+    Kept the reported dihydroxylated product and reaction identifiers ungrounded;
+    did not fill the MITE model''s unspecified stereochemistry. Preserved the Pro1/CYP-Arm3
+    pathway and graph, source fields and prior history. No assay-construct, assembly,
+    kinetic or producer-grade upgrade asserted.", "curator": "codex", "llm_assisted":
+    true, "timestamp": "2026-10-08T07:35:16Z"}, {"action": "SEEDED_FROM_SOURCES",
+    "changes": "Seeded from the committed inventories and curation tables.", "curator":
+    "seed_from_sources", "timestamp": "2026-10-13T10:45:48Z"}]'
+  snapshot_sha256: 6408621b3b6ec500b810b8e0868131284855e25dd2c3591dcfd624ce95d8b3a3
+- evidence_id: root-native-strict_ten
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-226/validate-strict-selected10-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-226/native-current226-five-gates-execution-001.json
+  accessed_at: '2026-11-03T16:11:35.707228Z'
+  support: supports
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  snapshot_sha256: 3fa23498b91d1b30f655811c3728349e2862f93bc03bc07753c393f7ca5481c4
+- evidence_id: root-native-strict_full
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-226/validate-all-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-226/native-current226-five-gates-execution-001.json
+  accessed_at: '2026-11-03T16:12:01.451422Z'
+  support: supports
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  snapshot_sha256: 48c2f4b016834c4f1144f8443efbd602f5e144b6e9f62e4980e5d8de20ea3584
+- evidence_id: root-native-lockfile
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-226/verify-corpus-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-226/native-current226-five-gates-execution-001.json
+  accessed_at: '2026-11-03T16:12:21.633510Z'
+  support: supports
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  snapshot_sha256: 254f171c7dff0f1ecbee5f47f75d2b7046143ae7fc499d9a1c08263e1c5125d8
+- evidence_id: root-native-reproduction
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-226/verify-reproduction-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-226/native-current226-five-gates-execution-001.json
+  accessed_at: '2026-11-03T16:12:56.658279Z'
+  support: supports
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  snapshot_sha256: cfc38f4e3f434e7f3651975f2cb228e5cda848476b2c53d1636d8746b794237a
+- evidence_id: root-native-queue
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-226/review-queue-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-226/native-current226-five-gates-execution-001.json
+  accessed_at: '2026-11-03T16:13:08.681619Z'
+  support: supports
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  snapshot_sha256: 471651bc2d9c52a88f0d76e62dd1d43baf68fe35de766f6346cf3befbab82970
+assessments:
+- assessment_id: support-2259-A1
+  area: identity
+  topic: Exact structure concept and grounding
+  outcome: supported
+  summary: The MINTED owner naturalproductmech:mibig-32b7a54e39 retains full key XTXSLQPVMVDDTB-ZRQNBYAXSA-N
+    from BGC0002445 version 3, with source compound_index=2 and label 8α-hydroxy-6-protoilludene.
+    The exact-full-key ChEBI query is empty in this admitted inventory and no direct
+    companion is selected. Grounded graph precursors and intermediates do not independently
+    ground the owner; the stereo-incomplete MITE substrate key XTXSLQPVMVDDTB-SUTJQRNSSA-N
+    is expressly not its exact full key.
+  target_ids:
+  - naturalproductmech:mibig-32b7a54e39
+  evidence_ids:
+  - support-2259-owner
+  - support-2259-capture
+  - support-2259-source-plan
+  - support-2259-query-chebi_structures
+  - support-2259-row-mibig_compounds-0
+  - support-2259-companions
+  dimensions:
+  - name: standard_inchi_key
+    value: XTXSLQPVMVDDTB-ZRQNBYAXSA-N
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2259-owner
+    - support-2259-capture
+    - support-2259-source-plan
+    - support-2259-query-chebi_structures
+    - support-2259-row-mibig_compounds-0
+    - support-2259-companions
+  - name: grounding_scope
+    value: The MINTED owner naturalproductmech:mibig-32b7a54e39 retains full key XTXSLQPVMVDDTB-ZRQNBYAXSA-N
+      from BGC0002445 version 3, with source compound_index=2 and label 8α-hydroxy-6-protoilludene.
+      The exact-full-key ChEBI query is empty in this admitted inventory and no direct
+      companion is selected. Grounded graph precursors and intermediates do not independently
+      ground the owner; the stereo-incomplete MITE substrate key XTXSLQPVMVDDTB-SUTJQRNSSA-N
+      is expressly not its exact full key.
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2259-owner
+    - support-2259-capture
+    - support-2259-source-plan
+    - support-2259-query-chebi_structures
+    - support-2259-row-mibig_compounds-0
+    - support-2259-companions
+- assessment_id: support-2259-A2
+  area: representation
+  topic: Stored representation and stereochemistry
+  outcome: supported
+  summary: Both stored forms yield neutral C15H24O, 16 heavy atoms and 18 bonds with
+    equal standard InChI/full key and both canonical SMILES comparisons true. Four
+    tetrahedral centers are specified in each, consistent with the retained stereo_complete:true
+    at that scope. The internal small-ring alkene is present without a separately
+    enumerated E/Z potential-stereo entry. The single saved correspondence does not
+    establish independent natural identity, a primary absolute-configuration determination
+    or equality to the stereo-incomplete downstream model.
+  target_ids:
+  - naturalproductmech:mibig-32b7a54e39
+  evidence_ids:
+  - support-2259-owner
+  - support-2259-chemistry
+  - support-2259-stereo-method
+  - support-2259-seeder
+  - support-2259-structure-schema
+  dimensions:
+  - name: stereochemical_resolution
+    value: Four specified tetrahedral centers; equal canonical structures; stereo-incomplete
+      MITE model remains separate.
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2259-owner
+    - support-2259-chemistry
+    - support-2259-stereo-method
+    - support-2259-seeder
+    - support-2259-structure-schema
+  - name: representation_correspondence
+    value: Both stored forms yield neutral C15H24O, 16 heavy atoms and 18 bonds with
+      equal standard InChI/full key and both canonical SMILES comparisons true. Four
+      tetrahedral centers are specified in each, consistent with the retained stereo_complete:true
+      at that scope. The internal small-ring alkene is present without a separately
+      enumerated E/Z potential-stereo entry. The single saved correspondence does
+      not establish independent natural identity, a primary absolute-configuration
+      determination or equality to the stereo-incomplete downstream model.
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2259-owner
+    - support-2259-chemistry
+    - support-2259-stereo-method
+    - support-2259-seeder
+    - support-2259-structure-schema
+- assessment_id: support-2259-A3
+  area: provenance
+  topic: Producer, locus, taxon and strain roles
+  outcome: supported
+  summary: MIBiG BGC0002445 version 3 remains active, source quality questionable
+    and completeness unknown. Armillaria gallica NCBITaxon:47427 is a SOURCE_ASSERTION
+    producer, while the locus is CLUSTER_DEMONSTRATED from Heterologous expression.
+    MT277003.1 coordinates 1..45006 are retained. The graph's FU02472 native-reference
+    context and yeast experiments have distinct roles; heterologous activity is not
+    a reason to upgrade native production or silently replace the species-level seeded
+    claim.
+  target_ids:
+  - naturalproductmech:mibig-32b7a54e39
+  evidence_ids:
+  - support-2259-owner
+  - support-2259-capture
+  - support-2259-source-plan
+  - support-2259-row-mibig_compounds-0
+  - support-2259-row-lotus_occurrences-0
+  - support-2259-taxonomy-routes
+  - support-2259-cache-47427
+  - support-2259-source-notes
+  dimensions:
+  - name: taxon_and_strain_scope
+    value: MIBiG BGC0002445 version 3 remains active, source quality questionable
+      and completeness unknown. Armillaria gallica NCBITaxon:47427 is a SOURCE_ASSERTION
+      producer, while the locus is CLUSTER_DEMONSTRATED from Heterologous expression.
+      MT277003.1 coordinates 1..45006 are retained. The graph's FU02472 native-reference
+      context and yeast experiments have distinct roles; heterologous activity is
+      not a reason to upgrade native production or silently replace the species-level
+      seeded claim.
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2259-owner
+    - support-2259-capture
+    - support-2259-source-plan
+    - support-2259-row-mibig_compounds-0
+    - support-2259-row-lotus_occurrences-0
+    - support-2259-taxonomy-routes
+    - support-2259-cache-47427
+    - support-2259-source-notes
+  - name: producer_evidence_tier
+    value: SOURCE_ASSERTION; Armillaria gallica species 47427; FU02472 and yeast roles
+      are separately qualified.
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2259-owner
+    - support-2259-capture
+    - support-2259-source-plan
+    - support-2259-row-mibig_compounds-0
+    - support-2259-row-lotus_occurrences-0
+    - support-2259-taxonomy-routes
+    - support-2259-cache-47427
+    - support-2259-source-notes
+  - name: locus_evidence_tier
+    value: CLUSTER_DEMONSTRATED; BGC0002445 v3 active; Heterologous expression retained.
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2259-owner
+    - support-2259-capture
+    - support-2259-source-plan
+    - support-2259-row-mibig_compounds-0
+    - support-2259-row-lotus_occurrences-0
+    - support-2259-taxonomy-routes
+    - support-2259-cache-47427
+    - support-2259-source-notes
+- assessment_id: support-2259-A4
+  area: evidence
+  topic: Citation placement and primary-source limits
+  outcome: supported
+  summary: The seeded producer/locus evidence retains entry-level PMID:33191459 as
+    DATABASE_ASSERTION; the LOTUS occurrence cites DOI:10.1007/S00253-020-11006-Y
+    without establishing publication independence. The pathway/first graph separately
+    retains DOI:10.1074/jbc.M110.165845 and DOI:10.1007/s00253-020-11006-y as historical
+    PRIMARY_EXPERIMENT annotations, with GenPept references. CYPArm2's downstream
+    graph explicitly limits DOI:10.1002/cbic.202300179 to an earlier returned abstract,
+    with full text and supplements uninspected. This review read saved annotations
+    only; their evidence labels are not fresh primary-source verification.
+  target_ids:
+  - naturalproductmech:mibig-32b7a54e39
+  evidence_ids:
+  - support-2259-owner
+  - support-2259-capture
+  - support-2259-source-plan
+  - support-2259-row-mibig_compounds-0
+  - support-2259-row-lotus_occurrences-0
+  - support-2259-graph-0
+  - support-2259-graph-1
+  - support-2259-graph-2
+  - support-2259-pathway-0
+  - support-2259-pathway-1
+  - support-2259-reader-data
+  - support-2259-reader-execution
+  - support-2259-reader-acceptance
+  dimensions:
+  - name: citation_scope
+    value: The seeded producer/locus evidence retains entry-level PMID:33191459 as
+      DATABASE_ASSERTION; the LOTUS occurrence cites DOI:10.1007/S00253-020-11006-Y
+      without establishing publication independence. The pathway/first graph separately
+      retains DOI:10.1074/jbc.M110.165845 and DOI:10.1007/s00253-020-11006-y as historical
+      PRIMARY_EXPERIMENT annotations, with GenPept references. CYPArm2's downstream
+      graph explicitly limits DOI:10.1002/cbic.202300179 to an earlier returned abstract,
+      with full text and supplements uninspected. This review read saved annotations
+      only; their evidence labels are not fresh primary-source verification.
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2259-owner
+    - support-2259-capture
+    - support-2259-source-plan
+    - support-2259-row-mibig_compounds-0
+    - support-2259-row-lotus_occurrences-0
+    - support-2259-graph-0
+    - support-2259-graph-1
+    - support-2259-graph-2
+    - support-2259-pathway-0
+    - support-2259-pathway-1
+    - support-2259-reader-data
+    - support-2259-reader-execution
+    - support-2259-reader-acceptance
+- assessment_id: support-2259-A5
+  area: scope
+  topic: Occurrence and assay boundaries
+  outcome: supported
+  summary: One written LOTUS occurrence retains Armillaria gallica 47427 and its database
+    citation, separately from the producer assertion. The selected PubChem, BindingDB,
+    related-corpus, CyanometDB and ChEBI-origin queries are empty in the admitted
+    scope. No pharmacological assay or molecular-target root is written. Enzyme substrate
+    use in a biosynthesis graph is not a pharmacological target observation. CYPArm2
+    consumes this owner downstream; it is not additional evidence for a route producing
+    the owner.
+  target_ids:
+  - naturalproductmech:mibig-32b7a54e39
+  evidence_ids:
+  - support-2259-owner
+  - support-2259-capture
+  - support-2259-source-plan
+  - support-2259-query-mibig_compounds
+  - support-2259-query-chebi_structures
+  - support-2259-query-lotus_occurrences
+  - support-2259-query-cyanometdb_occurrences
+  - support-2259-query-npclassifier
+  - support-2259-query-pubchem_bioassay
+  - support-2259-query-bindingdb_targets
+  - support-2259-query-antibioticmech_inchikeys
+  - support-2259-query-chebi_origins
+  - support-2259-row-lotus_occurrences-0
+  - support-2259-mechanism-scope
+  - support-2259-companions
+  - support-2259-graph-0
+  - support-2259-graph-1
+  - support-2259-graph-2
+  - support-2259-pathway-0
+  - support-2259-pathway-1
+  dimensions:
+  - name: occurrence_scope
+    value: One written LOTUS occurrence retains Armillaria gallica 47427 and its database
+      citation, separately from the producer assertion. The selected PubChem, BindingDB,
+      related-corpus, CyanometDB and ChEBI-origin queries are empty in the admitted
+      scope. No pharmacological assay or molecular-target root is written. Enzyme
+      substrate use in a biosynthesis graph is not a pharmacological target observation.
+      CYPArm2 consumes this owner downstream; it is not additional evidence for a
+      route producing the owner.
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2259-owner
+    - support-2259-capture
+    - support-2259-source-plan
+    - support-2259-query-mibig_compounds
+    - support-2259-query-chebi_structures
+    - support-2259-query-lotus_occurrences
+    - support-2259-query-cyanometdb_occurrences
+    - support-2259-query-npclassifier
+    - support-2259-query-pubchem_bioassay
+    - support-2259-query-bindingdb_targets
+    - support-2259-query-antibioticmech_inchikeys
+    - support-2259-query-chebi_origins
+    - support-2259-row-lotus_occurrences-0
+    - support-2259-mechanism-scope
+    - support-2259-companions
+    - support-2259-graph-0
+    - support-2259-graph-1
+    - support-2259-graph-2
+    - support-2259-pathway-0
+    - support-2259-pathway-1
+  - name: assay_scope
+    value: One written LOTUS occurrence retains Armillaria gallica 47427 and its database
+      citation, separately from the producer assertion. The selected PubChem, BindingDB,
+      related-corpus, CyanometDB and ChEBI-origin queries are empty in the admitted
+      scope. No pharmacological assay or molecular-target root is written. Enzyme
+      substrate use in a biosynthesis graph is not a pharmacological target observation.
+      CYPArm2 consumes this owner downstream; it is not additional evidence for a
+      route producing the owner.
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2259-owner
+    - support-2259-capture
+    - support-2259-source-plan
+    - support-2259-query-mibig_compounds
+    - support-2259-query-chebi_structures
+    - support-2259-query-lotus_occurrences
+    - support-2259-query-cyanometdb_occurrences
+    - support-2259-query-npclassifier
+    - support-2259-query-pubchem_bioassay
+    - support-2259-query-bindingdb_targets
+    - support-2259-query-antibioticmech_inchikeys
+    - support-2259-query-chebi_origins
+    - support-2259-row-lotus_occurrences-0
+    - support-2259-mechanism-scope
+    - support-2259-companions
+    - support-2259-graph-0
+    - support-2259-graph-1
+    - support-2259-graph-2
+    - support-2259-pathway-0
+    - support-2259-pathway-1
+- assessment_id: support-2259-A6
+  area: other
+  topic: Computed classification and complete saved topology
+  outcome: supported
+  summary: NPClassifier returns Terpenoids / Sesquiterpenoids / Protoilludane sesquiterpenoids
+    and is_glycoside:false. The saved graph has a C15 skeleton with fused four-, five-
+    and six-carbon rings, one internal alkene C1=C2 and one secondary hydroxyl C14-O15
+    in the SMILES numbering. Four centers are specified, with no carbonyl, nitrogen,
+    phosphorus, ether bridge or sugar-ring candidate. The predicted class is compatible
+    with this topology, but neither topology nor a model output independently proves
+    its biosynthetic history.
+  target_ids:
+  - naturalproductmech:mibig-32b7a54e39
+  evidence_ids:
+  - support-2259-capture
+  - support-2259-topology
+  - support-2259-row-npclassifier-0
+  - support-2259-row-mibig_compounds-0
+  - support-2259-seeder
+  - support-2259-structure-schema
+  dimensions:
+  - name: computed_classification
+    value: NPClassifier returns Terpenoids / Sesquiterpenoids / Protoilludane sesquiterpenoids
+      and is_glycoside:false. The saved graph has a C15 skeleton with fused four-,
+      five- and six-carbon rings, one internal alkene C1=C2 and one secondary hydroxyl
+      C14-O15 in the SMILES numbering. Four centers are specified, with no carbonyl,
+      nitrogen, phosphorus, ether bridge or sugar-ring candidate. The predicted class
+      is compatible with this topology, but neither topology nor a model output independently
+      proves its biosynthetic history.
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2259-capture
+    - support-2259-topology
+    - support-2259-row-npclassifier-0
+    - support-2259-row-mibig_compounds-0
+    - support-2259-seeder
+    - support-2259-structure-schema
+- assessment_id: support-2259-A7
+  area: completeness
+  topic: Review completion and unavailable verification
+  outcome: unknown
+  summary: This is a partial scientific review of the exact admitted owner and retained
+    source scope. Five local commands and original saved chemistry were accepted;
+    FullQC and complete OAK were unavailable. The original selected maintained-reader
+    result and ROOT acceptance establish complete-owner preservation within their
+    explicit limits. No primary publication, live identifier/taxonomy/protein response
+    or independent natural identity was verified, and this review does not set native
+    REVIEWED status.
+  target_ids:
+  - naturalproductmech:mibig-32b7a54e39
+  evidence_ids:
+  - support-2259-intake
+  - support-2259-plan-acceptance
+  - support-2259-intake-acceptance
+  - support-2259-diagnostic-acceptance
+  - support-2259-native-gates
+  - support-2259-chemistry-execution
+  - support-2259-review-profile
+  - support-2259-source-notes
+  - support-2259-reader-data
+  - support-2259-reader-execution
+  - support-2259-reader-acceptance
+  dimensions:
+  - name: review_completion
+    value: This is a partial scientific review of the exact admitted owner and retained
+      source scope. Five local commands and original saved chemistry were accepted;
+      FullQC and complete OAK were unavailable. The original selected maintained-reader
+      result and ROOT acceptance establish complete-owner preservation within their
+      explicit limits. No primary publication, live identifier/taxonomy/protein response
+      or independent natural identity was verified, and this review does not set native
+      REVIEWED status.
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2259-intake
+    - support-2259-plan-acceptance
+    - support-2259-intake-acceptance
+    - support-2259-diagnostic-acceptance
+    - support-2259-native-gates
+    - support-2259-chemistry-execution
+    - support-2259-review-profile
+    - support-2259-source-notes
+    - support-2259-reader-data
+    - support-2259-reader-execution
+    - support-2259-reader-acceptance
+- assessment_id: support-2259-A8
+  area: graph
+  topic: Biosynthesis, models and downstream scope
+  outcome: supported
+  summary: The accepted maintained view preserves three inline graphs, 11 nodes, eight
+    edges, 17 graph evidence placements, two pathway steps with five evidence placements
+    and all six owner history events; no components or molecular targets are introduced.
+    The first graph/two steps describe Pro1 conversion of farnesyl diphosphate to
+    Delta(6)-protoilludene, then CYP-Arm3 production of this owner. The CYPArm2 graph
+    instead retains reported 13-hydroxylation consuming this owner. Its named dihydroxylated
+    product and process remain ungrounded; the MITE model lacks C8 stereochemistry.
+    No missing geometry, complete downstream pathway, reaction order from gene order,
+    kinetic value or product structure is invented.
+  target_ids:
+  - naturalproductmech:mibig-32b7a54e39
+  evidence_ids:
+  - support-2259-owner
+  - support-2259-capture
+  - support-2259-source-plan
+  - support-2259-mechanism-scope
+  - support-2259-reader-data
+  - support-2259-reader-execution
+  - support-2259-reader-acceptance
+  - support-2259-graph-0
+  - support-2259-graph-1
+  - support-2259-graph-2
+  - support-2259-pathway-0
+  - support-2259-pathway-1
+  - support-2259-reader-history
+  - support-2259-chemistry
+  dimensions: []
+- assessment_id: support-2259-A9
+  area: grounding
+  topic: Protein references, constructs and evidence limits
+  outcome: supported
+  summary: 'Pro1 UniProtKB:A0A7U3MPB9/QJQ03973.1 and CYP-Arm3 UniProtKB:A0A7S5T363/QJQ03972.1
+    retain their historical gene/protein and activity associations; pathway step 1
+    retains RHEA:34695. CYPArm2 UniProtKB:A0A7S5T5B1/QJQ03971.1 is a qualified FU02472
+    native-reference example: a deposited 1542-nt CDS including stop across 12 reverse-strand
+    exons and a historical 513-residue matching claim, while mRNA boundaries are partial.
+    These annotations do not verify the 2023 assay construct, transcript, mature processing,
+    heme occupancy, assembly, strict specificity or full assay. No original article/API
+    response or protein sequence was inspected anew.'
+  target_ids:
+  - naturalproductmech:mibig-32b7a54e39
+  evidence_ids:
+  - support-2259-owner
+  - support-2259-capture
+  - support-2259-source-plan
+  - support-2259-mechanism-scope
+  - support-2259-reader-data
+  - support-2259-reader-execution
+  - support-2259-reader-acceptance
+  - support-2259-graph-0
+  - support-2259-graph-1
+  - support-2259-graph-2
+  - support-2259-pathway-0
+  - support-2259-pathway-1
+  - support-2259-reader-history
+  - support-2259-chemistry
+  dimensions: []
+findings: []
+actions: []
+limitations:
+- FullQC and complete OAK were unavailable; five successful local commands do not
+  establish scientific completeness.
+- No external retrieval or live identifier, taxonomy, protein or publication query
+  was performed. These assessments use original saved owner-form computations; no
+  additional molecular parses occurred during fragment authoring.
+- The original chemistry stream contains eight omitted-undefined-stereo warnings.
+  They are global and are not attributed to owners from timing or inference.
+- Retained source grades, database citations, cached taxonomy and versioned predictions
+  keep their own scopes. Representation agreement does not establish natural identity,
+  publication independence or complete natural stereochemistry.
+- No scientific source record or curation history was edited. Canonical persistence
+  and campaign operations remain ROOT-owned.
+- The maintained reader preserves the complete saved owner; its successful topology/preservation
+  result does not freshly validate historical publications, sequences, constructs
+  or mechanism assertions.
+- The whole selected owner was read, but scientific completion is partial because
+  full QC, complete ontology authority coverage and external source verification were
+  unavailable. No native status or history was changed.
+- The branch uses cached base ce6a5498df5be51116bd5e0c119023ee62bb5464. Fresh origin/main
+  verification and publication are deferred because the user prohibits all external
+  requests.
+notes:
+- Selected reader applicability is restricted to this owner's literal positive roots.
+- Saved review coverage is distinct from the native SEEDED/REVIEWED curation state.
+  Proposed actions are not performed edits.
+tags:
+- offline
+- record-review
+- batch-226
+```
