@@ -1,0 +1,1995 @@
+schema_version: 1.0.0
+review_id: 20261103T173401Z-albaflavenone
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'Local evidence review: albaflavenone'
+started_at: '2026-11-03T17:10:56.601179Z'
+finished_at: '2026-11-03T17:34:01.094338Z'
+reviewer:
+  identity: Codex root with native_checks, bgc_science and review_support peer agents
+  kind: agent
+  independence: independent
+  independence_basis: This review team inspected existing owner and retained source
+    bytes without editing them; scientific fragments were cross-checked separately
+    from their author. Local validation is not treated as scientific proof.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: 'Qualified partial review: the exact-key grounding, stored structure and
+  source-specific producer/locus grades are traceable. The complete maintained mechanism
+  preserves the unnumbered CYP170B1 alternative and its unresolved construct, sequence
+  and strain limits; the coarse sibling antimicrobial claim is not widened.'
+source:
+  git_revision: ce6a5498df5be51116bd5e0c119023ee62bb5464
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: AGENTS.md
+    sha256: 69e4037f8dc97d4b00bb7bb83b41ceca025f6ef578d5c0bf8086f3400becde0b
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/terpenoids/albaflavenone.yaml
+    sha256: 2bc3730122214e836b7bf4f414ac6ec603b81fe07ec3c7d17e1b95eca7bd71f3
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/graph_components.py
+    sha256: 10f08517869f482954fd583fd19d5750ef286a76297c231e6c9a5ba8dc023e17
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: src/naturalproductmech/validation/write_validated.py
+    sha256: 4b7648fc5d2e7a5d26ad8bb168dbcae609aaa2694434a8ed5cfcb33fb66ff80a
+    role: context
+scope:
+  description: One complete NaturalProductRecord, including all present scientific
+    claims, history and declared mechanisms; external verification remains unavailable.
+  selection: Campaign path order 2266; one of the next ten uncovered paths selected
+    from the 3116-record corpus. Membership uses the canonical validated catalogue
+    plus retained committed campaign bundles.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CHEBI:51460
+targets:
+- target_id: CHEBI:51460
+  path: data/natural_products/terpenoids/albaflavenone.yaml
+  label: albaflavenone
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained harmonization generator; seeded fields are corrected through
+      maintained inputs and validated regeneration.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Retained MIBiG structure, producer and compound-specific locus assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/npclassifier.tsv
+    role: Pinned computed classification and filing assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Maintained extraction of MIBiG compound names, structures, stereochemistry
+      flags and source provenance.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: Retained ChEBI identifiers, definitions and exact chemical forms.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Retained cited occurrence assertions, distinct from demonstrated production.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_origins.tsv
+    role: Retained cited occurrence assertions, distinct from demonstrated production.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/pubchem_bioassay.tsv
+    role: Retained assay rows or empty-assay sentinels; source outcome and title alone
+      do not establish mechanism.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/antibioticmech_inchikeys.tsv
+    role: Pinned full-key AntibioticMech structure links and coarse activity summaries;
+      no transfer of mechanism.
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/graph_components.py
+    role: Future maintained complete-owner reader implementation; not invoked in this
+      plan.
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/validation/write_validated.py
+    role: Future maintained complete-owner reader implementation; not invoked in this
+      plan.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/terpenoids/albaflavenone.yaml
+    role: Curator-owned declared graphs, graph references, pathway steps and history;
+      imported molecular-target assertions and other seeded fields retain inventory
+      ownership. Curated graph/pathway changes require the validated writer and a
+      curation event.
+  ownership_note: This review proposes no record edit. Source corrections belong in
+    maintained inventories, implemented curation tables, extractors or the seeder;
+    generated pages are not owners. This mechanism-bearing owner requires separately
+    authorized complete maintained resolution before scientific assessment and draft
+    assembly. Raw owner capture is not a maintained resolved view.
+checks:
+- check_id: maintained-mechanism-reader
+  name: Complete offline maintained reader for albaflavenone
+  command: /private/tmp/npm-record-reviews-20261021/.venv/bin/python -I -B /private/tmp/npm-review-work/shared-next-batch227/read-selected-mechanism-guarded-001.py
+    2266 2c1354901c89ced9f3b78249933ea91ee8a67da8453ae2b5fafac9a8138be74c 8640f364b81979dc11a7f6e12bbde57448f2369a729640d266be67817f87e0e9
+    83618dd2b5359705b73a8c2f7455bed442da451e34e7a850139a7205be9b3f9f 9d49efe4d919c526ff2bebd821217647650195b32d951150f15b9f3bc7913026
+    b8839ae73bf6cc45d3a8252e13f3f01080d55c93ac8beb8533e93c11693ab350
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CHEBI:51460
+  evidence_ids:
+  - support-2266-reader-data
+  - support-2266-reader-execution
+  - support-2266-reader-acceptance
+  summary: One original guarded maintained call preserved the complete owner and qualified
+    historical mechanism/pathway/history content. No fresh primary or sequence verification
+    is inferred.
+- check_id: root-native-strict_ten
+  name: strict_ten
+  status: passed
+  required: true
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  target_ids:
+  - CHEBI:51460
+  command: just validate-strict data/natural_products/terpenoids/aculene-a.yaml data/natural_products/terpenoids/aculene-b.yaml
+    data/natural_products/terpenoids/aculene-c.yaml data/natural_products/terpenoids/aculene-d.yaml
+    data/natural_products/terpenoids/aculin-a.yaml data/natural_products/terpenoids/albaflavenone.yaml
+    data/natural_products/terpenoids/aphidicolan-16-ol.yaml data/natural_products/terpenoids/aphidicolin.yaml
+    data/natural_products/terpenoids/asperaculane-a.yaml data/natural_products/terpenoids/asperaculane-b.yaml
+    --workers 1 --out /private/tmp/npm-native-checks/batch-227/validate-strict-selected10-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_ten
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-strict_full
+  name: strict_full
+  status: passed
+  required: true
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  target_ids:
+  - CHEBI:51460
+  command: just validate-all --workers 1 --out /private/tmp/npm-native-checks/batch-227/validate-all-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_full
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-lockfile
+  name: lockfile
+  status: passed
+  required: true
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  target_ids:
+  - CHEBI:51460
+  command: just verify-corpus --summary
+  exit_code: 0
+  evidence_ids:
+  - root-native-lockfile
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-reproduction
+  name: reproduction
+  status: passed
+  required: true
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  target_ids:
+  - CHEBI:51460
+  command: just verify-reproduction
+  exit_code: 0
+  evidence_ids:
+  - root-native-reproduction
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-queue
+  name: queue
+  status: passed
+  required: true
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  target_ids:
+  - CHEBI:51460
+  command: just review-queue --tsv /private/tmp/npm-native-checks/batch-227/review-queue-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-queue
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-full-qc
+  name: Full just qc
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:51460
+  summary: 'Not run under the external-request prohibition: the complete recipe includes
+    upstream vendored synchronization. The five executed local checks are recorded
+    separately.'
+- check_id: root-ontology-authorities
+  name: Complete OAK identifier/label authority check
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:51460
+  summary: Complete offline ontology authority coverage was not established for this
+    run; no ontology retrieval or remote resolution was attempted. Retained taxonomy
+    evidence has only its explicitly stated local scope.
+- check_id: root-primary-and-live-sources
+  name: Primary literature and current structured database/identifier verification
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:51460
+  summary: All external requests are prohibited by the user. Fresh database and identifier
+    verification and complete primary-literature coverage are unavailable. Any retained
+    original literature actually inspected is recorded separately with its historical
+    scope.
+evidence:
+- evidence_id: support-2266-owner
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/terpenoids/albaflavenone.yaml
+  locator: lines 1–486
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: Whole current plaintext owner and all 5 history events. Literal identifier
+    CHEBI:51460, label albaflavenone and full key SHUZZAXJEJPUGA-CCUNJIBTSA-N. Historical
+    annotations remain retained claims, not fresh verification.
+  snapshot_sha256: 2bc3730122214e836b7bf4f414ac6ec603b81fe07ec3c7d17e1b95eca7bd71f3
+- evidence_id: support-2266-capture
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227/owner-capture-DATA-001.json
+  locator: /records/5/owner_document; /records/5/owner_pin
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: Exact captured complete owner, including its source assertions, written
+    occurrences/activity, computed classification, mechanism roots where present and
+    complete history.
+  snapshot_sha256: 9d49efe4d919c526ff2bebd821217647650195b32d951150f15b9f3bc7913026
+- evidence_id: support-2266-source-plan
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json
+  locator: /records/5
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: Complete admitted selected source context, all nine query frames/full payloads,
+    exact direct companions and 39 proposed inputs; this artifact does not itself
+    establish scientific correctness.
+  snapshot_sha256: 5537c37fdf8a54893bcbd0c967e1d857f8ac7004044a38e11d9ce2174146ba11
+- evidence_id: support-2266-intake
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch227/intakes/2266-inspect-001.json
+  locator: /status; /source; /targets
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: Original canonical inspection of the exact target, maintained ownership
+    roles and all admitted input snapshots.
+  snapshot_sha256: 8640f364b81979dc11a7f6e12bbde57448f2369a729640d266be67817f87e0e9
+- evidence_id: support-2266-plan-acceptance
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch227/root-input-plan-acceptance-001.json
+  locator: /observer; /recorded_at; /status; /accepted; /input_plan; /derivation;
+    /inventory; /inventory_acceptance; /notes; /composer_execution; /original_tools;
+    /source_adoption; /selection; /capture; /verification; /external_requests; /target_invocations_by_this_acceptance
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: ROOT accepts the original source plan, exact418 input placements/53 paths
+    and preserved unnumbered pathway item; scientific findings are separate.
+  snapshot_sha256: eca63a2e032e35c9bb8f233056b0bc6257aad535a61d7fdc9b33db1aa7f1b302
+- evidence_id: support-2266-intake-acceptance
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch227/root-intake-ready-001.json
+  locator: /observer; /recorded_at; /status; /accepted; /selection; /capture; /environment;
+    /input_plan; /input_plan_acceptance; /inventory_acceptance; /intake_summary; /execution;
+    /original_tools; /source_adoption; /native_checks_acceptance; /original_terminal;
+    /verification; /limits; /external_requests; /target_invocations_by_this_acceptance
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: ROOT accepts all ten original canonical intakes and current418/53 maps;
+    the receipt records scientific diagnostics/readers as pending at its historical
+    seal.
+  snapshot_sha256: 8a1dce2c5b8f17939c216983455dbc1ebad823ae10e6bd9cce0c093a142af697
+- evidence_id: support-2266-diagnostic-acceptance
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch227/root-local-diagnostics-acceptance-001.json
+  locator: /observer; /observed_at; /status; /accepted; /DATA; /execution; /original_tools;
+    /source_adoption; /intake_ready; /original_terminal; /verification; /unspecified_stereo;
+    /ROOT_reading; /limits; /external_requests; /target_invocations_by_this_acceptance
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: ROOT accepts the original twenty stored-form computations with100 true
+    comparison flags, zero stderr and zero denials. Representation consistency is
+    not natural identity; source cross-reference limits remain.
+  snapshot_sha256: 14967c4d38b8f806e2c49ea51068afd81aa23e83df4ac04f451efd2729cbba96
+- evidence_id: support-2266-native-gates
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch227/root-native-five-gates-acceptance-001.json
+  locator: /observer; /observed_at; /accepted; /status; /ledger; /original_tools;
+    /own_readback; /original_terminal; /five_local_commands_passed; /all_native_gates_passed;
+    /unavailable; /ROOT_reading; /verification; /external_requests; /target_invocations_by_this_acceptance
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: ROOT accepts five successful documented local commands. FullQC and complete
+    OAK remain unavailable; mechanical checks do not establish scientific completeness.
+  snapshot_sha256: cb9726f77bbd42dd0c0f0a205c3a6b2ab9e79d41c1d386a92117ce95e15b33e1
+- evidence_id: support-2266-chemistry-execution
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch227/chemistry-local/diagnostic-execution-001.json
+  locator: /started_at; /finished_at; /exit_code; /stdout; /stderr; /external_requests
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: The original ROOT-owned chemistry process returned zero once with an empty
+    stderr stream; no additional parse is claimed.
+  snapshot_sha256: cd7c3ddbf99f1e149846db81d2e8927177241049dc9316408da347ef0b73d8c6
+- evidence_id: support-2266-chemistry
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/5/declared_structure; /records/5/smiles; /records/5/inchi; /records/5/comparisons;
+    /records/5/atom_correspondence
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Both stored forms give neutral C15H22O, 16 heavy atoms, 18 bonds and the
+    declared full key, with all ten comparison flags true. Three tetrahedral centers
+    are specified in both forms: SMILES indices 1 and 11 are S, and 14 is R. The saved
+    map is a complete chirality-aware substructure correspondence with full_graph_identity_established:false.
+    It supports internal representation consistency, not an independent natural identity
+    or absolute-configuration determination.'
+  snapshot_sha256: 310fb39c1a9fad6c657cd7aa0986819b02834117d6db86c6b88fd2ddc774a9f2
+- evidence_id: support-2266-topology
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/5/smiles/computed; /records/5/inchi/computed
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: Complete saved paired atom/bond/ring/stereo/motif tables. The complete
+    saved graph has 15 carbons, one ketone C3=O4, an adjacent endocyclic C5=C6 bond,
+    and three carbon-only rings; no ether bridge, ester, nitrogen or sugar residue
+    is present. This is consistent with a non-glycosylated oxygenated sesquiterpenoid
+    representation.
+  snapshot_sha256: 310fb39c1a9fad6c657cd7aa0986819b02834117d6db86c6b88fd2ddc774a9f2
+- evidence_id: support-2266-stereo-method
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py
+  locator: lines 142–173
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: Maintained structure_fields derives standard InChI/key and sets stereo_complete
+    from undefined tetrahedral-center detection. It does not independently determine
+    natural absolute configuration.
+  snapshot_sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+- evidence_id: support-2266-seeder
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: lines 982–1025
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: Maintained seeder copies the lead structure/completeness flag and preserves
+    the named model/version and all returned classification fields.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: support-2266-structure-schema
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: lines 392–425
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: Schema documents undefined stereocentres and explicitly distinguishes named/versioned
+    computed classification from source assertions.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: support-2266-review-profile
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/docs/record-review-profile.md
+  locator: lines 35–57
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: Review profile separates exact structure, producer/occurrence evidence,
+    activity and computed classification; native REVIEWED requires more than saving
+    this partial review.
+  snapshot_sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+- evidence_id: support-2266-source-notes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-source-scope-notes-001.json
+  locator: /reading; /curation; /cautions; /totals
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: Whole source-reading attribution and bounded implemented-curation scan,
+    including exact prior raw carries and source-specific limitations; no new query
+    is claimed here.
+  snapshot_sha256: 08d4d93cb884f9de019060f9073cf0078f34762b7f0e197c80633692a65b08b0
+- evidence_id: support-2266-taxonomy-routes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json
+  locator: /records/5/source_scope_inventory/source_taxa; /records/5/source_scope_inventory/forward_taxon_merge_matches;
+    /records/5/source_scope_inventory/nonorganism_matches
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: Exact selected source taxa and retained forward-merge/nonorganism matches.
+    Only matched saved routes are included; no fresh taxonomy authority or global
+    absence is inferred.
+  snapshot_sha256: 5537c37fdf8a54893bcbd0c967e1d857f8ac7004044a38e11d9ce2174146ba11
+- evidence_id: support-2266-mechanism-scope
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json
+  locator: /records/5/declared_mechanism_roots_literal; /records/5/component_paths;
+    /records/5/literal_mechanism_inventory; /records/5/proposed_companion_paths
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: Exact selected mechanism-root and direct-companion applicability; unselected
+    or other selected owner graphs remain context only.
+  snapshot_sha256: 5537c37fdf8a54893bcbd0c967e1d857f8ac7004044a38e11d9ce2174146ba11
+- evidence_id: support-2266-query-mibig_compounds
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json
+  locator: /records/5/source_scope_inventory/joins/mibig_compounds
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Retained local query frame: {"count": 1, "predicate": "exact complete
+    standard_inchi_key equality", "query": "SHUZZAXJEJPUGA-CCUNJIBTSA-N"}. Empty results
+    are bounded to this saved predicate and inventory.'
+  snapshot_sha256: 5537c37fdf8a54893bcbd0c967e1d857f8ac7004044a38e11d9ce2174146ba11
+- evidence_id: support-2266-row-mibig_compounds-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv
+  locator: physical lines 775–775
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"bgc_classes": "terpene", "bgc_subclasses":
+    "Unknown", "cluster_link_evidence_basis": "CLUSTER_UNSTATED", "compound_classes":
+    "", "compound_index": "1", "compound_name": "albaflavenone", "database_ids": "npatlas:NPA017239|pubchem:25137938",
+    "entry_completeness": "unknown", "entry_quality": "questionable", "entry_status":
+    "active", "entry_version": "5", "genome_accession": "AL645882.2", "locus_evidence_methods":
+    "", "locus_from": "5681016", "locus_to": "5683483", "mibig_accession": "BGC0000660",
+    "primary_reference": "PMID:18234666", "producer_evidence_basis": "SOURCE_ASSERTION",
+    "reference_basis": "ENTRY", "smiles": "C[C@H]1CC(=O)C2=C(C)C(C)(C)[C@H]3CC[C@@]12C3",
+    "standard_inchi": "InChI=1S/C15H22O/c1-9-7-12(16)13-10(2)14(3,4)11-5-6-15(9,13)8-11/h9,11H,5-8H2,1-4H3/t9-,11-,15+/m0/s1",
+    "standard_inchi_key": "SHUZZAXJEJPUGA-CCUNJIBTSA-N", "stereo_complete": "true",
+    "taxon_id": "NCBITaxon:100226", "taxon_label": "Streptomyces coelicolor A3(2)"}'
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: support-2266-query-chebi_structures
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json
+  locator: /records/5/source_scope_inventory/joins/chebi_structures
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Retained local query frame: {"count": 1, "predicate": "exact complete
+    standard_inchi_key equality", "query": "SHUZZAXJEJPUGA-CCUNJIBTSA-N"}. Empty results
+    are bounded to this saved predicate and inventory.'
+  snapshot_sha256: 5537c37fdf8a54893bcbd0c967e1d857f8ac7004044a38e11d9ce2174146ba11
+- evidence_id: support-2266-row-chebi_structures-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/chebi_structures.tsv
+  locator: physical lines 14359–14359
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"chebi_id": "CHEBI:51460", "definition":
+    "A carbotricyclic compound that is (+)-epi-isozizaene in which the hydrogens at
+    position 5 have been replaced by an oxo group.", "name": "albaflavenone", "smiles":
+    "[H][C@]12CC[C@]3(C1)C(=C(C)C2(C)C)C(=O)C[C@@H]3C", "standard_inchi_key": "SHUZZAXJEJPUGA-CCUNJIBTSA-N",
+    "stars": "3"}'
+  snapshot_sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+- evidence_id: support-2266-query-lotus_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json
+  locator: /records/5/source_scope_inventory/joins/lotus_occurrences
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Retained local query frame: {"count": 21, "predicate": "exact complete
+    standard_inchi_key equality", "query": "SHUZZAXJEJPUGA-CCUNJIBTSA-N"}. Empty results
+    are bounded to this saved predicate and inventory.'
+  snapshot_sha256: 5537c37fdf8a54893bcbd0c967e1d857f8ac7004044a38e11d9ce2174146ba11
+- evidence_id: support-2266-row-lotus_occurrences-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 8379–8379
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Streptomyces albidoflavus",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q22286833", "reference_doi":
+    "10.1007/S00253-015-7060-9", "standard_inchi_key": "SHUZZAXJEJPUGA-CCUNJIBTSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q27122616", "taxon_id":
+    "NCBITaxon:1886"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2266-row-lotus_occurrences-1
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 8380–8380
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Streptomyces albidoflavus",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q22286833", "reference_doi":
+    "10.1007/S00253-019-10240-3", "standard_inchi_key": "SHUZZAXJEJPUGA-CCUNJIBTSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q27122616", "taxon_id":
+    "NCBITaxon:1886"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2266-row-lotus_occurrences-2
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 8381–8381
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Streptomyces albidoflavus",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q22286833", "reference_doi":
+    "10.1007/S10295-013-1383-2", "standard_inchi_key": "SHUZZAXJEJPUGA-CCUNJIBTSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q27122616", "taxon_id":
+    "NCBITaxon:1886"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2266-row-lotus_occurrences-3
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 8382–8382
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Streptomyces albidoflavus",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q22286833", "reference_doi":
+    "10.1007/S10295-015-1685-7", "standard_inchi_key": "SHUZZAXJEJPUGA-CCUNJIBTSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q27122616", "taxon_id":
+    "NCBITaxon:1886"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2266-row-lotus_occurrences-4
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 8383–8383
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Streptomyces albidoflavus",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q22286833", "reference_doi":
+    "10.1007/S10295-019-02172-8", "standard_inchi_key": "SHUZZAXJEJPUGA-CCUNJIBTSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q27122616", "taxon_id":
+    "NCBITaxon:1886"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2266-row-lotus_occurrences-5
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 8384–8384
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Streptomyces albidoflavus",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q22286833", "reference_doi":
+    "10.1016/B978-0-12-404634-4.00014-0", "standard_inchi_key": "SHUZZAXJEJPUGA-CCUNJIBTSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q27122616", "taxon_id":
+    "NCBITaxon:1886"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2266-row-lotus_occurrences-6
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 8385–8385
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Streptomyces albidoflavus",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q22286833", "reference_doi":
+    "10.1021/JA901313V", "standard_inchi_key": "SHUZZAXJEJPUGA-CCUNJIBTSA-N", "structure_wikidata":
+    "http://www.wikidata.org/entity/Q27122616", "taxon_id": "NCBITaxon:1886"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2266-row-lotus_occurrences-7
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 8386–8386
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Streptomyces albidoflavus",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q22286833", "reference_doi":
+    "10.1074/JBC.M710421200", "standard_inchi_key": "SHUZZAXJEJPUGA-CCUNJIBTSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q27122616", "taxon_id":
+    "NCBITaxon:1886"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2266-row-lotus_occurrences-8
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 8387–8387
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Streptomyces albidoflavus",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q22286833", "reference_doi":
+    "10.1111/J.1742-4658.2011.08447.X", "standard_inchi_key": "SHUZZAXJEJPUGA-CCUNJIBTSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q27122616", "taxon_id":
+    "NCBITaxon:1886"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2266-row-lotus_occurrences-9
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 8388–8388
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Streptomyces albidoflavus",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q22286833", "reference_doi":
+    "10.1128/JB.00017-11", "standard_inchi_key": "SHUZZAXJEJPUGA-CCUNJIBTSA-N", "structure_wikidata":
+    "http://www.wikidata.org/entity/Q27122616", "taxon_id": "NCBITaxon:1886"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2266-row-lotus_occurrences-10
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 8389–8389
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Streptomyces albidoflavus",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q22286833", "reference_doi":
+    "10.7164/ANTIBIOTICS.47.434", "standard_inchi_key": "SHUZZAXJEJPUGA-CCUNJIBTSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q27122616", "taxon_id":
+    "NCBITaxon:1886"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2266-row-lotus_occurrences-11
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 8390–8390
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Streptomyces coelicolor",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q2355919", "reference_doi":
+    "10.1007/S00253-015-7060-9", "standard_inchi_key": "SHUZZAXJEJPUGA-CCUNJIBTSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q27122616", "taxon_id":
+    "NCBITaxon:1902"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2266-row-lotus_occurrences-12
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 8391–8391
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Streptomyces coelicolor",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q2355919", "reference_doi":
+    "10.1007/S00253-019-10240-3", "standard_inchi_key": "SHUZZAXJEJPUGA-CCUNJIBTSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q27122616", "taxon_id":
+    "NCBITaxon:1902"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2266-row-lotus_occurrences-13
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 8392–8392
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Streptomyces coelicolor",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q2355919", "reference_doi":
+    "10.1007/S10295-013-1383-2", "standard_inchi_key": "SHUZZAXJEJPUGA-CCUNJIBTSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q27122616", "taxon_id":
+    "NCBITaxon:1902"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2266-row-lotus_occurrences-14
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 8393–8393
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Streptomyces coelicolor",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q2355919", "reference_doi":
+    "10.1007/S10295-015-1685-7", "standard_inchi_key": "SHUZZAXJEJPUGA-CCUNJIBTSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q27122616", "taxon_id":
+    "NCBITaxon:1902"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2266-row-lotus_occurrences-15
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 8394–8394
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Streptomyces coelicolor",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q2355919", "reference_doi":
+    "10.1007/S10295-019-02172-8", "standard_inchi_key": "SHUZZAXJEJPUGA-CCUNJIBTSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q27122616", "taxon_id":
+    "NCBITaxon:1902"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2266-row-lotus_occurrences-16
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 8395–8395
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Streptomyces coelicolor",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q2355919", "reference_doi":
+    "10.1016/B978-0-12-404634-4.00014-0", "standard_inchi_key": "SHUZZAXJEJPUGA-CCUNJIBTSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q27122616", "taxon_id":
+    "NCBITaxon:1902"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2266-row-lotus_occurrences-17
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 8396–8396
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Streptomyces coelicolor",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q2355919", "reference_doi":
+    "10.1021/JA901313V", "standard_inchi_key": "SHUZZAXJEJPUGA-CCUNJIBTSA-N", "structure_wikidata":
+    "http://www.wikidata.org/entity/Q27122616", "taxon_id": "NCBITaxon:1902"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2266-row-lotus_occurrences-18
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 8397–8397
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Streptomyces coelicolor",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q2355919", "reference_doi":
+    "10.1074/JBC.M710421200", "standard_inchi_key": "SHUZZAXJEJPUGA-CCUNJIBTSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q27122616", "taxon_id":
+    "NCBITaxon:1902"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2266-row-lotus_occurrences-19
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 8398–8398
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Streptomyces coelicolor",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q2355919", "reference_doi":
+    "10.1111/J.1742-4658.2011.08447.X", "standard_inchi_key": "SHUZZAXJEJPUGA-CCUNJIBTSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q27122616", "taxon_id":
+    "NCBITaxon:1902"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2266-row-lotus_occurrences-20
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 8399–8399
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"organism_name": "Streptomyces coelicolor",
+    "organism_wikidata": "http://www.wikidata.org/entity/Q2355919", "reference_doi":
+    "10.1128/JB.00017-11", "standard_inchi_key": "SHUZZAXJEJPUGA-CCUNJIBTSA-N", "structure_wikidata":
+    "http://www.wikidata.org/entity/Q27122616", "taxon_id": "NCBITaxon:1902"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2266-query-cyanometdb_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json
+  locator: /records/5/source_scope_inventory/joins/cyanometdb_occurrences
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Retained local query frame: {"count": 0, "predicate": "exact complete
+    standard_inchi_key equality", "query": "SHUZZAXJEJPUGA-CCUNJIBTSA-N"}. Empty results
+    are bounded to this saved predicate and inventory.'
+  snapshot_sha256: 5537c37fdf8a54893bcbd0c967e1d857f8ac7004044a38e11d9ce2174146ba11
+- evidence_id: support-2266-query-npclassifier
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json
+  locator: /records/5/source_scope_inventory/joins/npclassifier
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Retained local query frame: {"count": 1, "predicate": "exact complete
+    standard_inchi_key equality", "query": "SHUZZAXJEJPUGA-CCUNJIBTSA-N"}. Empty results
+    are bounded to this saved predicate and inventory.'
+  snapshot_sha256: 5537c37fdf8a54893bcbd0c967e1d857f8ac7004044a38e11d9ce2174146ba11
+- evidence_id: support-2266-row-npclassifier-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv
+  locator: physical lines 2248–2248
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"class_results": "Zizaane sesquiterpenoids",
+    "is_glycoside": "false", "model_version": "npclassifier.gnps2.org@2026-09-07",
+    "pathway_results": "Terpenoids", "smiles": "C[C@H]1CC(=O)C2=C(C)C(C)(C)[C@H]3CC[C@@]12C3",
+    "standard_inchi_key": "SHUZZAXJEJPUGA-CCUNJIBTSA-N", "superclass_results": "Sesquiterpenoids"}'
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: support-2266-query-pubchem_bioassay
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json
+  locator: /records/5/source_scope_inventory/joins/pubchem_bioassay
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Retained local query frame: {"count": 1, "predicate": "exact complete
+    standard_inchi_key equality", "query": "SHUZZAXJEJPUGA-CCUNJIBTSA-N"}. Empty results
+    are bounded to this saved predicate and inventory.'
+  snapshot_sha256: 5537c37fdf8a54893bcbd0c967e1d857f8ac7004044a38e11d9ce2174146ba11
+- evidence_id: support-2266-row-pubchem_bioassay-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical lines 6969–6969
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"activity_name": "", "activity_outcome":
+    "", "activity_value_um": "", "aid": "", "assay_name": "(no assay data)", "assay_type":
+    "", "cid": "25137938", "depositor": "", "reference": "", "standard_inchi_key":
+    "SHUZZAXJEJPUGA-CCUNJIBTSA-N", "target_accession": ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2266-query-bindingdb_targets
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json
+  locator: /records/5/source_scope_inventory/joins/bindingdb_targets
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Retained local query frame: {"count": 0, "predicate": "exact complete
+    standard_inchi_key equality", "query": "SHUZZAXJEJPUGA-CCUNJIBTSA-N"}. Empty results
+    are bounded to this saved predicate and inventory.'
+  snapshot_sha256: 5537c37fdf8a54893bcbd0c967e1d857f8ac7004044a38e11d9ce2174146ba11
+- evidence_id: support-2266-query-antibioticmech_inchikeys
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json
+  locator: /records/5/source_scope_inventory/joins/antibioticmech_inchikeys
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Retained local query frame: {"count": 1, "predicate": "exact complete
+    standard_inchi_key equality", "query": "SHUZZAXJEJPUGA-CCUNJIBTSA-N"}. Empty results
+    are bounded to this saved predicate and inventory.'
+  snapshot_sha256: 5537c37fdf8a54893bcbd0c967e1d857f8ac7004044a38e11d9ce2174146ba11
+- evidence_id: support-2266-row-antibioticmech_inchikeys-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/antibioticmech_inchikeys.tsv
+  locator: physical lines 2057–2057
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"antimicrobial_class": "ANTIMICROBIAL_UNSPECIFIED",
+    "corpus_commit": "74f6cc8362498900f2fe2c13d0b6fdb66dd30976", "identifier": "CHEBI:51460",
+    "label": "albaflavenone", "slug": "albaflavenone", "standard_inchi_key": "SHUZZAXJEJPUGA-CCUNJIBTSA-N"}'
+  snapshot_sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+- evidence_id: support-2266-query-chebi_origins
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json
+  locator: /records/5/source_scope_inventory/joins/chebi_origins
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Retained local query frame: {"count": 1, "predicate": "exact chebi_id
+    from exact full-key structure rows", "query": ["CHEBI:51460"]}. Empty results
+    are bounded to this saved predicate and inventory.'
+  snapshot_sha256: 5537c37fdf8a54893bcbd0c967e1d857f8ac7004044a38e11d9ce2174146ba11
+- evidence_id: support-2266-row-chebi_origins-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/chebi_origins.tsv
+  locator: physical lines 5398–5398
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained row payload: {"chebi_id": "CHEBI:51460", "comments":
+    "", "component_text": "", "source_accession": "22151149", "species_accession":
+    "100226", "species_text": "Streptomyces coelicolor A3(2)", "strain_text": ""}'
+  snapshot_sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+- evidence_id: support-2266-cache-100226
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/corpus_taxa.obo
+  locator: physical lines 41549–41552
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete cached stanza, not a fresh taxonomy response:
+
+    [Term]
+
+    id: NCBITaxon:100226
+
+    name: Streptomyces coelicolor A3(2)
+
+
+    '
+  snapshot_sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+- evidence_id: support-2266-cache-1886
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/corpus_taxa.obo
+  locator: physical lines 2820–2828
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete cached stanza, not a fresh taxonomy response:
+
+    [Term]
+
+    id: NCBITaxon:1886
+
+    name: Streptomyces albidoflavus
+
+    synonym: "Actinomyces albidoflavus" EXACT []
+
+    synonym: "Actinomyces globisporus var. caucasicus" EXACT []
+
+    synonym: "Cladothrix albido-flava" EXACT []
+
+    synonym: "Streptomyces albidoflavus (Rossi Doria 1891) Waksman and Henrici 1948
+    (Approved Lists 1980)" EXACT []
+
+    synonym: "Streptomyces globisporus subsp. caucasicus" EXACT []
+
+
+    '
+  snapshot_sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+- evidence_id: support-2266-cache-1902
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/corpus_taxa.obo
+  locator: physical lines 2915–2923
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete cached stanza, not a fresh taxonomy response:
+
+    [Term]
+
+    id: NCBITaxon:1902
+
+    name: Streptomyces coelicolor
+
+    synonym: "Actinomyces coelicolor" EXACT []
+
+    synonym: "Cladothrix coelicolor" EXACT []
+
+    synonym: "Nocardia coelicolor" EXACT []
+
+    synonym: "Streptomyces coelicolor (Muller 1908) Waksman and Henrici 1948 (Approved
+    Lists 1980)" EXACT []
+
+    synonym: "Streptomyces coelicolor subspecies coelicolor" EXACT []
+
+
+    '
+  snapshot_sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+- evidence_id: support-2266-companions
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227-tentative/bgc-prep/bgc-conditional227-target-input-plan-001.json
+  locator: /records/5/proposed_companion_paths; /records/5/direct_companion_predicates
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: Exactly 0 direct companion placements admitted by the recorded root/full-key/owned-BGC
+    predicates. Shared context is not synonymy or automatic claim transfer.
+  snapshot_sha256: 5537c37fdf8a54893bcbd0c967e1d857f8ac7004044a38e11d9ce2174146ba11
+- evidence_id: support-2266-reader-data
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227/native-current227-albaflavenone-maintained-reader-DATA-001.json
+  locator: /raw_owner; /expected_view; /resolved_view; /returned_view_equals_expected_complete_owner;
+    /counts; /review_check_metadata; /reader_call_count; /denials; /unexpected_denials;
+    /errors; /limitations
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: The sole original maintained call preserves the complete owner, two graphs,
+    seven nodes, five edges, three pathway items including [1,2,null], and five history
+    events. The one known socket-construction capability probe was denied before action;
+    no request or new scientific verification is inferred.
+  snapshot_sha256: 20ff08cc96ec629aca4296b8d16fb162c63529451665311d6e95cb397a17867e
+- evidence_id: support-2266-reader-execution
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch227/native-current227-albaflavenone-reader-execution-001.json
+  locator: /started_at; /finished_at; /exit_code; /source; /configuration; /DATA;
+    /stdout; /stderr; /original_tool; /original_start_tool; /retries; /external_requests
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: Native executed one original guarded call, exit0, empty stderr and no retry;
+    original result and stream pins are retained.
+  snapshot_sha256: 210805a7dae549fd694dc074c64b09f2bb796e63ce08fb921c028657e8eb101f
+- evidence_id: support-2266-reader-acceptance
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch227/root-2266-maintained-reader-acceptance-001.json
+  locator: /observer; /recorded_at; /status; /order; /DATA; /execution; /source_adoption;
+    /original_tools; /verification; /review_check_contract; /ROOT_reading; /limits;
+    /new_target_invocations; /external_requests
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: ROOT accepts the exact original reader and complete-owner equality with
+    its review-check contract, current pins and scientific limits.
+  snapshot_sha256: d5d0fc7ec94bdfb3fc5e03d0731aaf9905da3a74bcbe39a7fa1ff0ac54e6490c
+- evidence_id: support-2266-graph-0
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227/native-current227-albaflavenone-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/0
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained graph payload, historical evidence not freshly verified:
+    {"description": "Partial Streptomyces coelicolor albaflavenone biosynthesis graph
+    for Cyc1-catalyzed sesquiterpene cyclization and CYP170A1-catalyzed oxidation
+    to albaflavenone.", "edges": [{"evidence": [{"evidence_type": "PRIMARY_EXPERIMENT",
+    "notes": "UniProtKB:Q9K499 resolves to the Streptomyces coelicolor A3(2) cyc1/SCO5222
+    gene product, maps to EMBL AL939123 protein CAB94607.1, and annotates RHEA:25992
+    for (+)-epi-isozizaene formation.", "reference": "DOI:10.1021/ja061292s", "snippet":
+    "Molecular cloning and characterization of a new sesquiterpene synthase"}], "object":
+    "cyc1", "predicate": "is cyclized by", "subject": "farnesyl_diphosphate"}, {"evidence":
+    [{"evidence_type": "PRIMARY_EXPERIMENT", "notes": "UniProtKB:Q9K499 resolves to
+    the Streptomyces coelicolor A3(2) cyc1/SCO5222 gene product, maps to EMBL AL939123
+    protein CAB94607.1, and annotates RHEA:25992 for (+)-epi-isozizaene formation.",
+    "reference": "DOI:10.1021/ja061292s", "snippet": "Molecular cloning and characterization
+    of a new sesquiterpene synthase"}], "object": "epi_isozizaene", "predicate": "forms",
+    "subject": "cyc1"}, {"evidence": [{"evidence_type": "PRIMARY_EXPERIMENT", "notes":
+    "UniProtKB:Q9K498 resolves to the adjacent Streptomyces coelicolor A3(2) SCO5223
+    gene product, maps to EMBL AL939123 protein CAB94608.1, and annotates the composite
+    left-to-right RHEA:32440 reaction for CYP170A1 oxidation of (+)-epi-isozizaene
+    to albaflavenone.", "reference": "DOI:10.1074/JBC.M710421200", "snippet": "Biosynthesis
+    of the sesquiterpene antibiotic albaflavenone in Streptomyces coelicolor A3(2)"}],
+    "object": "cyp170a1", "predicate": "is oxidized by", "subject": "epi_isozizaene"},
+    {"evidence": [{"evidence_type": "PRIMARY_EXPERIMENT", "notes": "UniProtKB:Q9K498
+    resolves to the adjacent Streptomyces coelicolor A3(2) SCO5223 gene product, maps
+    to EMBL AL939123 protein CAB94608.1, and annotates the composite left-to-right
+    RHEA:32440 reaction for CYP170A1 oxidation of (+)-epi-isozizaene to albaflavenone.",
+    "reference": "DOI:10.1074/JBC.M710421200", "snippet": "Biosynthesis of the sesquiterpene
+    antibiotic albaflavenone in Streptomyces coelicolor A3(2)"}], "object": "albaflavenone",
+    "predicate": "forms", "subject": "cyp170a1"}], "graph_id": "albaflavenone-sco5222-sco5223-biosynthesis",
+    "nodes": [{"grounding_status": "GROUNDED", "identifier": "CHEBI:175763", "label":
+    "(2E,6E)-farnesyl diphosphate", "node_id": "farnesyl_diphosphate", "node_type":
+    "PRECURSOR"}, {"grounding_status": "GROUNDED", "identifier": "UniProtKB:Q9K499",
+    "label": "Cyc1", "node_id": "cyc1", "node_type": "ENZYME"}, {"grounding_status":
+    "GROUNDED", "identifier": "CHEBI:51458", "label": "(+)-epi-isozizaene", "node_id":
+    "epi_isozizaene", "node_type": "COMPOUND"}, {"grounding_status": "GROUNDED", "identifier":
+    "UniProtKB:Q9K498", "label": "CYP170A1", "node_id": "cyp170a1", "node_type": "ENZYME"},
+    {"grounding_status": "GROUNDED", "identifier": "CHEBI:51460", "label": "albaflavenone",
+    "node_id": "albaflavenone", "node_type": "COMPOUND"}], "scope": "BIOSYNTHESIS"}'
+  snapshot_sha256: 20ff08cc96ec629aca4296b8d16fb162c63529451665311d6e95cb397a17867e
+- evidence_id: support-2266-graph-1
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227/native-current227-albaflavenone-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/1
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained graph payload, historical evidence not freshly verified:
+    {"description": "Source-named CYP170B1 assay; no defensible sequence accession
+    selected. Q82IV2 and Q9K498 denote other organisms, not this protein.", "edges":
+    [{"evidence": [{"evidence_type": "PRIMARY_EXPERIMENT", "notes": "Results and Methods
+    read. GC/MS comparison with an authentic standard; recombinant C-terminally tagged
+    enzyme with E. coli redox partners. Figure pixels and SI uninspected; later HTTP403.",
+    "reference": "DOI:10.1111/j.1742-4658.2011.08447.x", "retrieved_on": "2026-10-09",
+    "snippet": "CYP170B1 can catalyze the conversion of epi-isozizaene to albaflavenone"}],
+    "notes": "Functional assignment is experimental; sequence grounding is unresolved.",
+    "object": "albaflavenone", "predicate": "catalyzes_formation_from_epi_isozizaene_in_vitro",
+    "subject": "cyp170b1"}], "graph_id": "albaflavenone-cyp170b1-recombinant-assay",
+    "nodes": [{"grounding_status": "UNGROUNDED", "label": "CYP170B1 (S. albus; sequence
+    ungrounded)", "node_id": "cyp170b1", "node_type": "ENZYME"}, {"grounding_status":
+    "GROUNDED", "identifier": "CHEBI:51460", "label": "albaflavenone", "node_id":
+    "albaflavenone", "node_type": "COMPOUND"}], "scope": "BIOSYNTHESIS"}'
+  snapshot_sha256: 20ff08cc96ec629aca4296b8d16fb162c63529451665311d6e95cb397a17867e
+- evidence_id: support-2266-step-0
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227/native-current227-albaflavenone-maintained-reader-DATA-001.json
+  locator: /resolved_view/biosynthetic_pathway/0
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained pathway item including exact presence/absence and evidence:
+    {"enzyme_id": "UniProtKB:Q9K499", "enzyme_label": "Cyc1 epi-isozizaene synthase",
+    "evidence": [{"evidence_type": "PRIMARY_EXPERIMENT", "notes": "UniProtKB:Q9K499
+    resolves to the Streptomyces coelicolor A3(2) cyc1/SCO5222 gene product, maps
+    to EMBL AL939123 protein CAB94607.1, and annotates RHEA:25992 for (+)-epi-isozizaene
+    formation.", "reference": "DOI:10.1021/ja061292s", "snippet": "Molecular cloning
+    and characterization of a new sesquiterpene synthase"}], "notes": "Cyc1/SCO5222
+    cyclizes (2E,6E)-farnesyl diphosphate to the (+)-epi-isozizaene committed intermediate
+    in albaflavenone biosynthesis.", "product": "CHEBI:51458", "reaction_id": "RHEA:25992",
+    "step_number": 1, "substrate": "CHEBI:175763"}'
+  snapshot_sha256: 20ff08cc96ec629aca4296b8d16fb162c63529451665311d6e95cb397a17867e
+- evidence_id: support-2266-step-1
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227/native-current227-albaflavenone-maintained-reader-DATA-001.json
+  locator: /resolved_view/biosynthetic_pathway/1
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained pathway item including exact presence/absence and evidence:
+    {"enzyme_id": "UniProtKB:Q9K498", "enzyme_label": "CYP170A1 albaflavenone monooxygenase",
+    "evidence": [{"evidence_type": "PRIMARY_EXPERIMENT", "notes": "UniProtKB:Q9K498
+    resolves to the adjacent Streptomyces coelicolor A3(2) SCO5223 gene product, maps
+    to EMBL AL939123 protein CAB94608.1, and annotates the composite left-to-right
+    RHEA:32440 reaction for CYP170A1 oxidation of (+)-epi-isozizaene to albaflavenone.",
+    "reference": "DOI:10.1074/JBC.M710421200", "snippet": "Biosynthesis of the sesquiterpene
+    antibiotic albaflavenone in Streptomyces coelicolor A3(2)"}], "notes": "CYP170A1/SCO5223
+    oxidizes (+)-epi-isozizaene through albaflavenol intermediates to albaflavenone.",
+    "product": "CHEBI:51460", "reaction_id": "RHEA:32440", "step_number": 2, "substrate":
+    "CHEBI:51458"}'
+  snapshot_sha256: 20ff08cc96ec629aca4296b8d16fb162c63529451665311d6e95cb397a17867e
+- evidence_id: support-2266-step-2
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227/native-current227-albaflavenone-maintained-reader-DATA-001.json
+  locator: /resolved_view/biosynthetic_pathway/2
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete retained pathway item including exact presence/absence and evidence:
+    {"enzyme_label": "CYP170B1 (S. albus; sequence ungrounded)", "evidence": [{"evidence_type":
+    "PRIMARY_EXPERIMENT", "notes": "Results and Methods read. GC/MS comparison with
+    an authentic standard; recombinant C-terminally tagged enzyme with E. coli redox
+    partners. Figure pixels and SI uninspected; later HTTP403.", "reference": "DOI:10.1111/j.1742-4658.2011.08447.x",
+    "retrieved_on": "2026-10-09", "snippet": "CYP170B1 can catalyze the conversion
+    of epi-isozizaene to albaflavenone"}], "notes": "Reported S. albus ATCC 2396 protein;
+    exact accession, construct sequence and strain alias unresolved. This alternative
+    assay is not a continuation of the S. coelicolor steps. No new stereochemical
+    determination, native-partner assignment or producer upgrade.", "product": "CHEBI:51460",
+    "proposed": false, "substrate": "CHEBI:51458"}'
+  snapshot_sha256: 20ff08cc96ec629aca4296b8d16fb162c63529451665311d6e95cb397a17867e
+- evidence_id: support-2266-reader-history
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch227/native-current227-albaflavenone-maintained-reader-DATA-001.json
+  locator: /resolved_view/curation_history
+  accessed_at: '2026-11-03T17:27:45.233107Z'
+  support: supports
+  summary: 'Complete owner history preserved in the accepted maintained view: [{"action":
+    "SEEDED_FROM_SOURCES", "changes": "Seeded from the committed inventories in data/raw/.",
+    "curator": "seed_from_sources", "timestamp": "2026-09-10T05:54:13Z"}, {"action":
+    "SEEDED_FROM_SOURCES", "changes": "Seeded from the committed inventories in data/raw/.",
+    "curator": "seed_from_sources", "timestamp": "2026-09-25T03:03:23Z"}, {"action":
+    "RECORD_CURATED", "changes": "Added a two-step BIOSYNTHESIS pathway and causal
+    graph for albaflavenone biosynthesis; grounded the Streptomyces coelicolor Cyc1
+    and CYP170A1 enzymes to UniProtKB:Q9K499 and UniProtKB:Q9K498 via SCO5222/SCO5223;
+    and cited the experimentally characterized RHEA:25992 and RHEA:32440 reactions.",
+    "curator": "codex", "llm_assisted": true, "timestamp": "2026-09-26T22:27:12Z"},
+    {"action": "RECORD_CURATED", "changes": "Add the reported S. albus CYP170B1 albaflavenone
+    assay as one pathway entry and one BIOSYNTHESIS edge with a DOI and verbatim snippet.
+    Keep the source-named protein UNGROUNDED; do not substitute Q82IV2 or Q9K498,
+    infer an exact construct, equate strains or upgrade native production, chemistry,
+    BGC grades or SEEDED status.", "curator": "codex", "llm_assisted": true, "timestamp":
+    "2026-10-09T04:47:53Z"}, {"action": "SEEDED_FROM_SOURCES", "changes": "Seeded
+    from the committed inventories and curation tables.", "curator": "seed_from_sources",
+    "timestamp": "2026-10-13T10:45:07Z"}]'
+  snapshot_sha256: 20ff08cc96ec629aca4296b8d16fb162c63529451665311d6e95cb397a17867e
+- evidence_id: root-native-strict_ten
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-227/validate-strict-selected10-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-227/native-current227-five-gates-execution-001.json
+  accessed_at: '2026-11-03T17:12:11.356673Z'
+  support: supports
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  snapshot_sha256: e8998673dfc66cfe5e88cee01e9e8af72040248e60a1d519e5001d28b6da7542
+- evidence_id: root-native-strict_full
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-227/validate-all-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-227/native-current227-five-gates-execution-001.json
+  accessed_at: '2026-11-03T17:12:37.686250Z'
+  support: supports
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  snapshot_sha256: 4b9cab24405253d6b4fb56ff59f013dcdf9ea9c1a980935a83cbbc661d9d7b8c
+- evidence_id: root-native-lockfile
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-227/verify-corpus-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-227/native-current227-five-gates-execution-001.json
+  accessed_at: '2026-11-03T17:12:58.213877Z'
+  support: supports
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  snapshot_sha256: 254f171c7dff0f1ecbee5f47f75d2b7046143ae7fc499d9a1c08263e1c5125d8
+- evidence_id: root-native-reproduction
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-227/verify-reproduction-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-227/native-current227-five-gates-execution-001.json
+  accessed_at: '2026-11-03T17:13:32.681472Z'
+  support: supports
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  snapshot_sha256: cfc38f4e3f434e7f3651975f2cb228e5cda848476b2c53d1636d8746b794237a
+- evidence_id: root-native-queue
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-227/review-queue-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-227/native-current227-five-gates-execution-001.json
+  accessed_at: '2026-11-03T17:13:44.564564Z'
+  support: supports
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  snapshot_sha256: 68832113362bd405215bb25de9aacdabbbd0adafee48e333f4dd6f64da397bbd
+assessments:
+- assessment_id: support-2266-A1
+  area: identity
+  topic: Exact structure concept and grounding
+  outcome: supported
+  summary: The EXACT CHEBI:51460 owner retains the MIBiG BGC0000660 version 5 full
+    key SHUZZAXJEJPUGA-CCUNJIBTSA-N, which also joins the retained three-star ChEBI
+    row. Its definition describes an oxo derivative of epi-isozizaene. The exact selected
+    direct-companion map is empty. Cross-references and historical graph annotations
+    remain source assertions; neither the key join nor the stored-form agreement independently
+    verifies the natural isolate.
+  target_ids:
+  - CHEBI:51460
+  evidence_ids:
+  - support-2266-owner
+  - support-2266-capture
+  - support-2266-source-plan
+  - support-2266-query-mibig_compounds
+  - support-2266-query-chebi_structures
+  - support-2266-row-mibig_compounds-0
+  - support-2266-row-chebi_structures-0
+  - support-2266-companions
+  dimensions:
+  - name: standard_inchi_key
+    value: SHUZZAXJEJPUGA-CCUNJIBTSA-N
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2266-owner
+    - support-2266-capture
+    - support-2266-source-plan
+    - support-2266-query-mibig_compounds
+    - support-2266-query-chebi_structures
+    - support-2266-row-mibig_compounds-0
+    - support-2266-row-chebi_structures-0
+    - support-2266-companions
+  - name: grounding_scope
+    value: The EXACT CHEBI:51460 owner retains the MIBiG BGC0000660 version 5 full
+      key SHUZZAXJEJPUGA-CCUNJIBTSA-N, which also joins the retained three-star ChEBI
+      row. Its definition describes an oxo derivative of epi-isozizaene. The exact
+      selected direct-companion map is empty. Cross-references and historical graph
+      annotations remain source assertions; neither the key join nor the stored-form
+      agreement independently verifies the natural isolate.
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2266-owner
+    - support-2266-capture
+    - support-2266-source-plan
+    - support-2266-query-mibig_compounds
+    - support-2266-query-chebi_structures
+    - support-2266-row-mibig_compounds-0
+    - support-2266-row-chebi_structures-0
+    - support-2266-companions
+- assessment_id: support-2266-A2
+  area: representation
+  topic: Stored representation and stereochemistry
+  outcome: supported
+  summary: 'Both stored forms give neutral C15H22O, 16 heavy atoms, 18 bonds and the
+    declared full key, with all ten comparison flags true. Three tetrahedral centers
+    are specified in both forms: SMILES indices 1 and 11 are S, and 14 is R. The saved
+    map is a complete chirality-aware substructure correspondence with full_graph_identity_established:false.
+    It supports internal representation consistency, not an independent natural identity
+    or absolute-configuration determination.'
+  target_ids:
+  - CHEBI:51460
+  evidence_ids:
+  - support-2266-capture
+  - support-2266-chemistry
+  - support-2266-stereo-method
+  - support-2266-structure-schema
+  dimensions:
+  - name: stereochemical_resolution
+    value: Three specified tetrahedral centers in each saved form; no unspecified
+      potential-stereo entry is reported.
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2266-capture
+    - support-2266-chemistry
+    - support-2266-stereo-method
+    - support-2266-structure-schema
+  - name: representation_correspondence
+    value: 'Both stored forms give neutral C15H22O, 16 heavy atoms, 18 bonds and the
+      declared full key, with all ten comparison flags true. Three tetrahedral centers
+      are specified in both forms: SMILES indices 1 and 11 are S, and 14 is R. The
+      saved map is a complete chirality-aware substructure correspondence with full_graph_identity_established:false.
+      It supports internal representation consistency, not an independent natural
+      identity or absolute-configuration determination.'
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2266-capture
+    - support-2266-chemistry
+    - support-2266-stereo-method
+    - support-2266-structure-schema
+- assessment_id: support-2266-A3
+  area: provenance
+  topic: Producer, locus, taxon and strain roles
+  outcome: supported
+  summary: The retained MIBiG row is active, quality questionable and completeness
+    unknown. Its producer assertion is Streptomyces coelicolor A3(2), NCBITaxon:100226,
+    graded SOURCE_ASSERTION; the separate BGC0000660 locus remains CLUSTER_UNSTATED
+    with no locus methods stated. AL645882.2 coordinates 5681016–5683483 identify
+    the locus. Historical curated enzyme experiments do not silently upgrade these
+    source-specific grades. Species-level S. coelicolor 1902 and S. albidoflavus 1886
+    occurrences remain separate from the strain producer and the source-named S. albus
+    CYP170B1 assay.
+  target_ids:
+  - CHEBI:51460
+  evidence_ids:
+  - support-2266-owner
+  - support-2266-capture
+  - support-2266-source-plan
+  - support-2266-query-mibig_compounds
+  - support-2266-query-lotus_occurrences
+  - support-2266-query-chebi_origins
+  - support-2266-row-mibig_compounds-0
+  - support-2266-row-lotus_occurrences-0
+  - support-2266-row-lotus_occurrences-1
+  - support-2266-row-lotus_occurrences-2
+  - support-2266-row-lotus_occurrences-3
+  - support-2266-row-lotus_occurrences-4
+  - support-2266-row-lotus_occurrences-5
+  - support-2266-row-lotus_occurrences-6
+  - support-2266-row-lotus_occurrences-7
+  - support-2266-row-lotus_occurrences-8
+  - support-2266-row-lotus_occurrences-9
+  - support-2266-row-lotus_occurrences-10
+  - support-2266-row-lotus_occurrences-11
+  - support-2266-row-lotus_occurrences-12
+  - support-2266-row-lotus_occurrences-13
+  - support-2266-row-lotus_occurrences-14
+  - support-2266-row-lotus_occurrences-15
+  - support-2266-row-lotus_occurrences-16
+  - support-2266-row-lotus_occurrences-17
+  - support-2266-row-lotus_occurrences-18
+  - support-2266-row-lotus_occurrences-19
+  - support-2266-row-lotus_occurrences-20
+  - support-2266-row-chebi_origins-0
+  - support-2266-cache-100226
+  - support-2266-cache-1886
+  - support-2266-cache-1902
+  - support-2266-taxonomy-routes
+  - support-2266-source-notes
+  - support-2266-reader-data
+  - support-2266-reader-execution
+  - support-2266-reader-acceptance
+  - support-2266-graph-0
+  - support-2266-graph-1
+  - support-2266-step-0
+  - support-2266-step-1
+  - support-2266-step-2
+  - support-2266-reader-history
+  dimensions:
+  - name: taxon_and_strain_scope
+    value: The retained MIBiG row is active, quality questionable and completeness
+      unknown. Its producer assertion is Streptomyces coelicolor A3(2), NCBITaxon:100226,
+      graded SOURCE_ASSERTION; the separate BGC0000660 locus remains CLUSTER_UNSTATED
+      with no locus methods stated. AL645882.2 coordinates 5681016–5683483 identify
+      the locus. Historical curated enzyme experiments do not silently upgrade these
+      source-specific grades. Species-level S. coelicolor 1902 and S. albidoflavus
+      1886 occurrences remain separate from the strain producer and the source-named
+      S. albus CYP170B1 assay.
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2266-owner
+    - support-2266-capture
+    - support-2266-source-plan
+    - support-2266-query-mibig_compounds
+    - support-2266-query-lotus_occurrences
+    - support-2266-query-chebi_origins
+    - support-2266-row-mibig_compounds-0
+    - support-2266-row-lotus_occurrences-0
+    - support-2266-row-lotus_occurrences-1
+    - support-2266-row-lotus_occurrences-2
+    - support-2266-row-lotus_occurrences-3
+    - support-2266-row-lotus_occurrences-4
+    - support-2266-row-lotus_occurrences-5
+    - support-2266-row-lotus_occurrences-6
+    - support-2266-row-lotus_occurrences-7
+    - support-2266-row-lotus_occurrences-8
+    - support-2266-row-lotus_occurrences-9
+    - support-2266-row-lotus_occurrences-10
+    - support-2266-row-lotus_occurrences-11
+    - support-2266-row-lotus_occurrences-12
+    - support-2266-row-lotus_occurrences-13
+    - support-2266-row-lotus_occurrences-14
+    - support-2266-row-lotus_occurrences-15
+    - support-2266-row-lotus_occurrences-16
+    - support-2266-row-lotus_occurrences-17
+    - support-2266-row-lotus_occurrences-18
+    - support-2266-row-lotus_occurrences-19
+    - support-2266-row-lotus_occurrences-20
+    - support-2266-row-chebi_origins-0
+    - support-2266-cache-100226
+    - support-2266-cache-1886
+    - support-2266-cache-1902
+    - support-2266-taxonomy-routes
+    - support-2266-source-notes
+    - support-2266-reader-data
+    - support-2266-reader-execution
+    - support-2266-reader-acceptance
+    - support-2266-graph-0
+    - support-2266-graph-1
+    - support-2266-step-0
+    - support-2266-step-1
+    - support-2266-step-2
+    - support-2266-reader-history
+  - name: producer_evidence_tier
+    value: SOURCE_ASSERTION; S. coelicolor A3(2), NCBITaxon:100226.
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2266-owner
+    - support-2266-capture
+    - support-2266-source-plan
+    - support-2266-query-mibig_compounds
+    - support-2266-query-lotus_occurrences
+    - support-2266-query-chebi_origins
+    - support-2266-row-mibig_compounds-0
+    - support-2266-row-lotus_occurrences-0
+    - support-2266-row-lotus_occurrences-1
+    - support-2266-row-lotus_occurrences-2
+    - support-2266-row-lotus_occurrences-3
+    - support-2266-row-lotus_occurrences-4
+    - support-2266-row-lotus_occurrences-5
+    - support-2266-row-lotus_occurrences-6
+    - support-2266-row-lotus_occurrences-7
+    - support-2266-row-lotus_occurrences-8
+    - support-2266-row-lotus_occurrences-9
+    - support-2266-row-lotus_occurrences-10
+    - support-2266-row-lotus_occurrences-11
+    - support-2266-row-lotus_occurrences-12
+    - support-2266-row-lotus_occurrences-13
+    - support-2266-row-lotus_occurrences-14
+    - support-2266-row-lotus_occurrences-15
+    - support-2266-row-lotus_occurrences-16
+    - support-2266-row-lotus_occurrences-17
+    - support-2266-row-lotus_occurrences-18
+    - support-2266-row-lotus_occurrences-19
+    - support-2266-row-lotus_occurrences-20
+    - support-2266-row-chebi_origins-0
+    - support-2266-cache-100226
+    - support-2266-cache-1886
+    - support-2266-cache-1902
+    - support-2266-taxonomy-routes
+    - support-2266-source-notes
+    - support-2266-reader-data
+    - support-2266-reader-execution
+    - support-2266-reader-acceptance
+    - support-2266-graph-0
+    - support-2266-graph-1
+    - support-2266-step-0
+    - support-2266-step-1
+    - support-2266-step-2
+    - support-2266-reader-history
+  - name: locus_evidence_tier
+    value: CLUSTER_UNSTATED; BGC0000660 v5, active, no locus methods stated.
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2266-owner
+    - support-2266-capture
+    - support-2266-source-plan
+    - support-2266-query-mibig_compounds
+    - support-2266-query-lotus_occurrences
+    - support-2266-query-chebi_origins
+    - support-2266-row-mibig_compounds-0
+    - support-2266-row-lotus_occurrences-0
+    - support-2266-row-lotus_occurrences-1
+    - support-2266-row-lotus_occurrences-2
+    - support-2266-row-lotus_occurrences-3
+    - support-2266-row-lotus_occurrences-4
+    - support-2266-row-lotus_occurrences-5
+    - support-2266-row-lotus_occurrences-6
+    - support-2266-row-lotus_occurrences-7
+    - support-2266-row-lotus_occurrences-8
+    - support-2266-row-lotus_occurrences-9
+    - support-2266-row-lotus_occurrences-10
+    - support-2266-row-lotus_occurrences-11
+    - support-2266-row-lotus_occurrences-12
+    - support-2266-row-lotus_occurrences-13
+    - support-2266-row-lotus_occurrences-14
+    - support-2266-row-lotus_occurrences-15
+    - support-2266-row-lotus_occurrences-16
+    - support-2266-row-lotus_occurrences-17
+    - support-2266-row-lotus_occurrences-18
+    - support-2266-row-lotus_occurrences-19
+    - support-2266-row-lotus_occurrences-20
+    - support-2266-row-chebi_origins-0
+    - support-2266-cache-100226
+    - support-2266-cache-1886
+    - support-2266-cache-1902
+    - support-2266-taxonomy-routes
+    - support-2266-source-notes
+    - support-2266-reader-data
+    - support-2266-reader-execution
+    - support-2266-reader-acceptance
+    - support-2266-graph-0
+    - support-2266-graph-1
+    - support-2266-step-0
+    - support-2266-step-1
+    - support-2266-step-2
+    - support-2266-reader-history
+- assessment_id: support-2266-A4
+  area: evidence
+  topic: Citation placement and primary-source limits
+  outcome: supported
+  summary: The producer/locus entry-level citation is PMID:18234666 as DATABASE_ASSERTION.
+    The 21 LOTUS triples and ChEBI origin PMID:22151149 support occurrence claims
+    with possible shared publications, not independent producer demonstrations. Graph
+    and pathway evidence retains DOI:10.1021/ja061292s, DOI:10.1074/JBC.M710421200
+    and the separately qualified CYP170B1 DOI:10.1111/j.1742-4658.2011.08447.x. These
+    historical annotations and quoted assay notes were read locally; no original paper,
+    sequence database or live identifier was retrieved.
+  target_ids:
+  - CHEBI:51460
+  evidence_ids:
+  - support-2266-owner
+  - support-2266-capture
+  - support-2266-source-plan
+  - support-2266-query-mibig_compounds
+  - support-2266-query-lotus_occurrences
+  - support-2266-query-chebi_origins
+  - support-2266-query-pubchem_bioassay
+  - support-2266-row-mibig_compounds-0
+  - support-2266-row-lotus_occurrences-0
+  - support-2266-row-lotus_occurrences-1
+  - support-2266-row-lotus_occurrences-2
+  - support-2266-row-lotus_occurrences-3
+  - support-2266-row-lotus_occurrences-4
+  - support-2266-row-lotus_occurrences-5
+  - support-2266-row-lotus_occurrences-6
+  - support-2266-row-lotus_occurrences-7
+  - support-2266-row-lotus_occurrences-8
+  - support-2266-row-lotus_occurrences-9
+  - support-2266-row-lotus_occurrences-10
+  - support-2266-row-lotus_occurrences-11
+  - support-2266-row-lotus_occurrences-12
+  - support-2266-row-lotus_occurrences-13
+  - support-2266-row-lotus_occurrences-14
+  - support-2266-row-lotus_occurrences-15
+  - support-2266-row-lotus_occurrences-16
+  - support-2266-row-lotus_occurrences-17
+  - support-2266-row-lotus_occurrences-18
+  - support-2266-row-lotus_occurrences-19
+  - support-2266-row-lotus_occurrences-20
+  - support-2266-row-chebi_origins-0
+  - support-2266-row-pubchem_bioassay-0
+  - support-2266-companions
+  - support-2266-reader-data
+  - support-2266-reader-execution
+  - support-2266-reader-acceptance
+  - support-2266-graph-0
+  - support-2266-graph-1
+  - support-2266-step-0
+  - support-2266-step-1
+  - support-2266-step-2
+  - support-2266-reader-history
+  dimensions:
+  - name: citation_scope
+    value: The producer/locus entry-level citation is PMID:18234666 as DATABASE_ASSERTION.
+      The 21 LOTUS triples and ChEBI origin PMID:22151149 support occurrence claims
+      with possible shared publications, not independent producer demonstrations.
+      Graph and pathway evidence retains DOI:10.1021/ja061292s, DOI:10.1074/JBC.M710421200
+      and the separately qualified CYP170B1 DOI:10.1111/j.1742-4658.2011.08447.x.
+      These historical annotations and quoted assay notes were read locally; no original
+      paper, sequence database or live identifier was retrieved.
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2266-owner
+    - support-2266-capture
+    - support-2266-source-plan
+    - support-2266-query-mibig_compounds
+    - support-2266-query-lotus_occurrences
+    - support-2266-query-chebi_origins
+    - support-2266-query-pubchem_bioassay
+    - support-2266-row-mibig_compounds-0
+    - support-2266-row-lotus_occurrences-0
+    - support-2266-row-lotus_occurrences-1
+    - support-2266-row-lotus_occurrences-2
+    - support-2266-row-lotus_occurrences-3
+    - support-2266-row-lotus_occurrences-4
+    - support-2266-row-lotus_occurrences-5
+    - support-2266-row-lotus_occurrences-6
+    - support-2266-row-lotus_occurrences-7
+    - support-2266-row-lotus_occurrences-8
+    - support-2266-row-lotus_occurrences-9
+    - support-2266-row-lotus_occurrences-10
+    - support-2266-row-lotus_occurrences-11
+    - support-2266-row-lotus_occurrences-12
+    - support-2266-row-lotus_occurrences-13
+    - support-2266-row-lotus_occurrences-14
+    - support-2266-row-lotus_occurrences-15
+    - support-2266-row-lotus_occurrences-16
+    - support-2266-row-lotus_occurrences-17
+    - support-2266-row-lotus_occurrences-18
+    - support-2266-row-lotus_occurrences-19
+    - support-2266-row-lotus_occurrences-20
+    - support-2266-row-chebi_origins-0
+    - support-2266-row-pubchem_bioassay-0
+    - support-2266-companions
+    - support-2266-reader-data
+    - support-2266-reader-execution
+    - support-2266-reader-acceptance
+    - support-2266-graph-0
+    - support-2266-graph-1
+    - support-2266-step-0
+    - support-2266-step-1
+    - support-2266-step-2
+    - support-2266-reader-history
+- assessment_id: support-2266-A5
+  area: scope
+  topic: Occurrence and assay boundaries
+  outcome: supported
+  summary: 'The owner has 22 written occurrences: 21 LOTUS triples across S. albidoflavus
+    and S. coelicolor plus one ChEBI strain occurrence. Repeated DOI/taxon placements
+    are not independent experiments. PubChem CID25137938 has a blank-AID ''(no assay
+    data)'' sentinel, not a negative assay. The coarse ANTIMICROBIAL_UNSPECIFIED summary
+    is traceable to the exact-key AntibioticMech row and retained sibling commit;
+    it establishes neither antibacterial specificity nor potency. Cached taxonomy
+    does not settle the historical S. albus ATCC 2396 strain equivalence.'
+  target_ids:
+  - CHEBI:51460
+  evidence_ids:
+  - support-2266-owner
+  - support-2266-capture
+  - support-2266-source-plan
+  - support-2266-query-lotus_occurrences
+  - support-2266-query-chebi_origins
+  - support-2266-query-pubchem_bioassay
+  - support-2266-query-bindingdb_targets
+  - support-2266-query-antibioticmech_inchikeys
+  - support-2266-query-cyanometdb_occurrences
+  - support-2266-row-lotus_occurrences-0
+  - support-2266-row-lotus_occurrences-1
+  - support-2266-row-lotus_occurrences-2
+  - support-2266-row-lotus_occurrences-3
+  - support-2266-row-lotus_occurrences-4
+  - support-2266-row-lotus_occurrences-5
+  - support-2266-row-lotus_occurrences-6
+  - support-2266-row-lotus_occurrences-7
+  - support-2266-row-lotus_occurrences-8
+  - support-2266-row-lotus_occurrences-9
+  - support-2266-row-lotus_occurrences-10
+  - support-2266-row-lotus_occurrences-11
+  - support-2266-row-lotus_occurrences-12
+  - support-2266-row-lotus_occurrences-13
+  - support-2266-row-lotus_occurrences-14
+  - support-2266-row-lotus_occurrences-15
+  - support-2266-row-lotus_occurrences-16
+  - support-2266-row-lotus_occurrences-17
+  - support-2266-row-lotus_occurrences-18
+  - support-2266-row-lotus_occurrences-19
+  - support-2266-row-lotus_occurrences-20
+  - support-2266-row-chebi_origins-0
+  - support-2266-row-pubchem_bioassay-0
+  - support-2266-row-antibioticmech_inchikeys-0
+  - support-2266-mechanism-scope
+  - support-2266-companions
+  - support-2266-taxonomy-routes
+  - support-2266-cache-100226
+  - support-2266-cache-1886
+  - support-2266-cache-1902
+  dimensions:
+  - name: occurrence_scope
+    value: 'The owner has 22 written occurrences: 21 LOTUS triples across S. albidoflavus
+      and S. coelicolor plus one ChEBI strain occurrence. Repeated DOI/taxon placements
+      are not independent experiments. PubChem CID25137938 has a blank-AID ''(no assay
+      data)'' sentinel, not a negative assay. The coarse ANTIMICROBIAL_UNSPECIFIED
+      summary is traceable to the exact-key AntibioticMech row and retained sibling
+      commit; it establishes neither antibacterial specificity nor potency. Cached
+      taxonomy does not settle the historical S. albus ATCC 2396 strain equivalence.'
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2266-owner
+    - support-2266-capture
+    - support-2266-source-plan
+    - support-2266-query-lotus_occurrences
+    - support-2266-query-chebi_origins
+    - support-2266-query-pubchem_bioassay
+    - support-2266-query-bindingdb_targets
+    - support-2266-query-antibioticmech_inchikeys
+    - support-2266-query-cyanometdb_occurrences
+    - support-2266-row-lotus_occurrences-0
+    - support-2266-row-lotus_occurrences-1
+    - support-2266-row-lotus_occurrences-2
+    - support-2266-row-lotus_occurrences-3
+    - support-2266-row-lotus_occurrences-4
+    - support-2266-row-lotus_occurrences-5
+    - support-2266-row-lotus_occurrences-6
+    - support-2266-row-lotus_occurrences-7
+    - support-2266-row-lotus_occurrences-8
+    - support-2266-row-lotus_occurrences-9
+    - support-2266-row-lotus_occurrences-10
+    - support-2266-row-lotus_occurrences-11
+    - support-2266-row-lotus_occurrences-12
+    - support-2266-row-lotus_occurrences-13
+    - support-2266-row-lotus_occurrences-14
+    - support-2266-row-lotus_occurrences-15
+    - support-2266-row-lotus_occurrences-16
+    - support-2266-row-lotus_occurrences-17
+    - support-2266-row-lotus_occurrences-18
+    - support-2266-row-lotus_occurrences-19
+    - support-2266-row-lotus_occurrences-20
+    - support-2266-row-chebi_origins-0
+    - support-2266-row-pubchem_bioassay-0
+    - support-2266-row-antibioticmech_inchikeys-0
+    - support-2266-mechanism-scope
+    - support-2266-companions
+    - support-2266-taxonomy-routes
+    - support-2266-cache-100226
+    - support-2266-cache-1886
+    - support-2266-cache-1902
+  - name: assay_scope
+    value: 'The owner has 22 written occurrences: 21 LOTUS triples across S. albidoflavus
+      and S. coelicolor plus one ChEBI strain occurrence. Repeated DOI/taxon placements
+      are not independent experiments. PubChem CID25137938 has a blank-AID ''(no assay
+      data)'' sentinel, not a negative assay. The coarse ANTIMICROBIAL_UNSPECIFIED
+      summary is traceable to the exact-key AntibioticMech row and retained sibling
+      commit; it establishes neither antibacterial specificity nor potency. Cached
+      taxonomy does not settle the historical S. albus ATCC 2396 strain equivalence.'
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2266-owner
+    - support-2266-capture
+    - support-2266-source-plan
+    - support-2266-query-lotus_occurrences
+    - support-2266-query-chebi_origins
+    - support-2266-query-pubchem_bioassay
+    - support-2266-query-bindingdb_targets
+    - support-2266-query-antibioticmech_inchikeys
+    - support-2266-query-cyanometdb_occurrences
+    - support-2266-row-lotus_occurrences-0
+    - support-2266-row-lotus_occurrences-1
+    - support-2266-row-lotus_occurrences-2
+    - support-2266-row-lotus_occurrences-3
+    - support-2266-row-lotus_occurrences-4
+    - support-2266-row-lotus_occurrences-5
+    - support-2266-row-lotus_occurrences-6
+    - support-2266-row-lotus_occurrences-7
+    - support-2266-row-lotus_occurrences-8
+    - support-2266-row-lotus_occurrences-9
+    - support-2266-row-lotus_occurrences-10
+    - support-2266-row-lotus_occurrences-11
+    - support-2266-row-lotus_occurrences-12
+    - support-2266-row-lotus_occurrences-13
+    - support-2266-row-lotus_occurrences-14
+    - support-2266-row-lotus_occurrences-15
+    - support-2266-row-lotus_occurrences-16
+    - support-2266-row-lotus_occurrences-17
+    - support-2266-row-lotus_occurrences-18
+    - support-2266-row-lotus_occurrences-19
+    - support-2266-row-lotus_occurrences-20
+    - support-2266-row-chebi_origins-0
+    - support-2266-row-pubchem_bioassay-0
+    - support-2266-row-antibioticmech_inchikeys-0
+    - support-2266-mechanism-scope
+    - support-2266-companions
+    - support-2266-taxonomy-routes
+    - support-2266-cache-100226
+    - support-2266-cache-1886
+    - support-2266-cache-1902
+- assessment_id: support-2266-A6
+  area: other
+  topic: Computed classification and complete saved topology
+  outcome: supported
+  summary: The versioned NPClassifier output is Terpenoids / Sesquiterpenoids / Zizaane
+    sesquiterpenoids, is_glycoside:false. The complete saved graph has 15 carbons,
+    one ketone C3=O4, an adjacent endocyclic C5=C6 bond, and three carbon-only rings;
+    no ether bridge, ester, nitrogen or sugar residue is present. This is consistent
+    with a non-glycosylated oxygenated sesquiterpenoid representation. The model's
+    named skeletal subclass and the definition's biochemical numbering remain retained
+    labels, not independently assigned by atom indices.
+  target_ids:
+  - CHEBI:51460
+  evidence_ids:
+  - support-2266-capture
+  - support-2266-topology
+  - support-2266-seeder
+  - support-2266-structure-schema
+  - support-2266-query-npclassifier
+  - support-2266-query-mibig_compounds
+  - support-2266-row-npclassifier-0
+  - support-2266-row-mibig_compounds-0
+  dimensions:
+  - name: computed_classification
+    value: The versioned NPClassifier output is Terpenoids / Sesquiterpenoids / Zizaane
+      sesquiterpenoids, is_glycoside:false. The complete saved graph has 15 carbons,
+      one ketone C3=O4, an adjacent endocyclic C5=C6 bond, and three carbon-only rings;
+      no ether bridge, ester, nitrogen or sugar residue is present. This is consistent
+      with a non-glycosylated oxygenated sesquiterpenoid representation. The model's
+      named skeletal subclass and the definition's biochemical numbering remain retained
+      labels, not independently assigned by atom indices.
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2266-capture
+    - support-2266-topology
+    - support-2266-seeder
+    - support-2266-structure-schema
+    - support-2266-query-npclassifier
+    - support-2266-query-mibig_compounds
+    - support-2266-row-npclassifier-0
+    - support-2266-row-mibig_compounds-0
+- assessment_id: support-2266-A7
+  area: completeness
+  topic: Review completion and unavailable verification
+  outcome: unknown
+  summary: This is a partial scientific review of the exact admitted owner and retained
+    source scope. Five local commands and original saved chemistry were accepted;
+    FullQC and complete OAK were unavailable. The accepted maintained reader preserves
+    the complete Albaflavenone owner and all three pathway items; it does not independently
+    validate primary experiments or protein sequences. No live identifier/taxonomy/protein
+    response or independent natural identity was verified, and this review does not
+    set native REVIEWED status.
+  target_ids:
+  - CHEBI:51460
+  evidence_ids:
+  - support-2266-intake
+  - support-2266-plan-acceptance
+  - support-2266-intake-acceptance
+  - support-2266-diagnostic-acceptance
+  - support-2266-native-gates
+  - support-2266-chemistry-execution
+  - support-2266-review-profile
+  - support-2266-source-notes
+  - support-2266-mechanism-scope
+  - support-2266-capture
+  - support-2266-reader-data
+  - support-2266-reader-execution
+  - support-2266-reader-acceptance
+  - support-2266-graph-0
+  - support-2266-graph-1
+  - support-2266-step-0
+  - support-2266-step-1
+  - support-2266-step-2
+  - support-2266-reader-history
+  dimensions:
+  - name: review_completion
+    value: This is a partial scientific review of the exact admitted owner and retained
+      source scope. Five local commands and original saved chemistry were accepted;
+      FullQC and complete OAK were unavailable. The accepted maintained reader preserves
+      the complete Albaflavenone owner and all three pathway items; it does not independently
+      validate primary experiments or protein sequences. No live identifier/taxonomy/protein
+      response or independent natural identity was verified, and this review does
+      not set native REVIEWED status.
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2266-intake
+    - support-2266-plan-acceptance
+    - support-2266-intake-acceptance
+    - support-2266-diagnostic-acceptance
+    - support-2266-native-gates
+    - support-2266-chemistry-execution
+    - support-2266-review-profile
+    - support-2266-source-notes
+    - support-2266-mechanism-scope
+    - support-2266-capture
+    - support-2266-reader-data
+    - support-2266-reader-execution
+    - support-2266-reader-acceptance
+    - support-2266-graph-0
+    - support-2266-graph-1
+    - support-2266-step-0
+    - support-2266-step-1
+    - support-2266-step-2
+    - support-2266-reader-history
+- assessment_id: support-2266-A8
+  area: graph
+  topic: Maintained mechanism and alternative assay scope
+  outcome: supported
+  summary: The accepted maintained view preserves two complete BIOSYNTHESIS graphs,
+    seven nodes, five edges and three pathway items. Numbered steps 1 and 2 retain
+    Cyc1-mediated FPP to epi-isozizaene and CYP170A1-mediated oxidation to albaflavenone
+    in S. coelicolor. The third item is an unnumbered alternative CYP170B1 assay,
+    with proposed:false explicitly present and step_number, enzyme_id and reaction_id
+    absent. It is not an invented third stage of the numbered native pathway. The
+    alternative recombinant assay uses epi-isozizaene and authentic-standard GC-MS
+    product comparison under its historical conditions; it does not establish native
+    production by the source-named strain.
+  target_ids:
+  - CHEBI:51460
+  evidence_ids:
+  - support-2266-capture
+  - support-2266-reader-data
+  - support-2266-reader-execution
+  - support-2266-reader-acceptance
+  - support-2266-graph-0
+  - support-2266-graph-1
+  - support-2266-step-0
+  - support-2266-step-1
+  - support-2266-step-2
+  - support-2266-reader-history
+  dimensions: []
+- assessment_id: support-2266-A9
+  area: provenance
+  topic: Protein groundings, construct and sequence limits
+  outcome: supported
+  summary: 'Cyc1 and CYP170A1 retain UniProtKB:Q9K499/Q9K498, SCO5222/SCO5223, EMBL:CAB94607.1/CAB94608.1
+    and RHEA:25992/32440 cross-references. They are distinct protein examples with
+    their own evidence. The source-named S. albus ATCC 2396 CYP170B1 stays UNGROUNDED:
+    the exact accession, native versus tagged recombinant sequence, and strain equivalence
+    remain unresolved; Q82IV2 or Q9K498 must not be substituted. Historical C-terminal-tag/E.
+    coli redox-partner and construct notes are assay qualifications, not fresh sequence
+    alignment or database verification.'
+  target_ids:
+  - CHEBI:51460
+  evidence_ids:
+  - support-2266-capture
+  - support-2266-reader-data
+  - support-2266-reader-execution
+  - support-2266-reader-acceptance
+  - support-2266-graph-0
+  - support-2266-graph-1
+  - support-2266-step-0
+  - support-2266-step-1
+  - support-2266-step-2
+  - support-2266-reader-history
+  dimensions: []
+findings: []
+actions: []
+limitations:
+- FullQC and complete OAK were unavailable; five local commands do not establish scientific
+  completeness.
+- No external retrieval or live identifier, taxonomy, protein or publication query
+  was performed. These assessments use original saved owner-form computations; no
+  additional molecular parses occurred during fragment authoring.
+- The original diagnostic stream has zero stderr. Stored representation agreement
+  does not establish natural identity, primary evidence or complete natural stereochemistry.
+- Retained source grades, cached taxonomy, citations and versioned predictions preserve
+  their own scopes; publication independence was not established.
+- No scientific source record or curation history was edited. Canonical persistence
+  and campaign operations remain ROOT-owned.
+- Historical CYP170B1 sequence, construct and strain identity remain unresolved; an
+  accepted maintained view does not settle them or upgrade producer/locus grades.
+- The whole selected owner was read, but scientific completion is partial because
+  full QC, complete ontology authority coverage and external source verification were
+  unavailable. No native status or history was changed.
+- The branch uses cached base ce6a5498df5be51116bd5e0c119023ee62bb5464. Fresh origin/main
+  verification and publication are deferred because the user prohibits all external
+  requests.
+notes:
+- Selected mechanism scope is complete as admitted; no companion graph or assay is
+  transferred to this owner.
+- Saved review coverage is distinct from the native SEEDED/REVIEWED curation state.
+  Proposed actions are not performed edits.
+tags:
+- offline
+- record-review
+- batch-227
