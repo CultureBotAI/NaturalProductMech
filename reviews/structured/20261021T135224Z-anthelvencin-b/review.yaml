@@ -1,0 +1,947 @@
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T135224Z-anthelvencin-b
+title: 'Anthelvencin B: supported congener and native genetics, missing strain and
+  taxonomy context'
+started_at: '2026-10-21T13:48:15.272639Z'
+finished_at: '2026-10-21T13:52:24.841286Z'
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The record represents the unmethylated 2020 anthelvencin B at its supported
+  HRMS/MS and unspecified-stereocentre resolution. Native ant8 loss supports the locus
+  link. A major scope finding requires ATCC14583 and the later disputed species assignment
+  on producer/BGC claims; neither A/C rescue nor the different2021 B is transferred
+  to this congener.
+source:
+  git_revision: 1c2402097718c138b081e00943de8f04de0541cd
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/anthelvencin-b.yaml
+    sha256: d439282671a15048cedd94db10b458bb9bbc588f12f2312baac1abf91dab932e
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 71, batch 008, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated targets in earlier
+    batch commits (publication tracked separately). At selection, 124 of 3116 current
+    records had campaign coverage and 2992 remained. The population search included
+    ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-76579e8010
+targets:
+- target_id: naturalproductmech:mibig-76579e8010
+  path: data/natural_products/alkaloids/anthelvencin-b.yaml
+  label: anthelvencin B
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-76579e8010
+  command: just validate-strict data/natural_products/alkaloids/anthelvencin-b.yaml
+    --out /private/tmp/npm-review-work/071/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T13:48:17.650346Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 current record files agree with PATHS.tsv and their pinned filing
+    pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055340+00:00;
+    finished 2026-10-21T09:55:22.727768+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-corpus.log. Reused
+    for batch008 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch008. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-76579e8010
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 current records passed the documented byte-reproduction gate
+    against committed inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055361+00:00;
+    finished 2026-10-21T09:56:44.050706+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-reproduction.log.
+    Reused for batch008 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch008. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-76579e8010
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The exhaustive review queue produced 8,928 diagnostic rows across 12 queues;
+    this deterministic output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just review-queue --tsv /private/tmp/npm-review-queue-batch-004.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.057401+00:00;
+    finished 2026-10-21T09:54:38.468783+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/review-queue.log. Reused
+    for batch008 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch008. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-76579e8010
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'The configured identifier-label gate passed using the existing ontology
+    caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions,
+    499 warning-only mismatches and 4,744 pairs skipped because their prefixes have
+    no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.061733+00:00;
+    finished 2026-10-21T09:56:36.296159+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/validate-products.log. Reused
+    for batch008 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch008. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-76579e8010
+- check_id: shared-qc
+  name: Full repository quality gate on the current main baseline
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed on the unchanged main baseline
+    during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+    All configured lint, governance, documentation, provenance, source-queue, schema,
+    rendering, reproduction, filing-integrity and reporting stages completed successfully.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:30.560925+00:00;
+    finished 2026-10-21T10:04:44.806799+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/qc.log. Reused for batch008
+    only after a fresh fetch/clean branch, equal commit/tree and two reads of all
+    9,182 tracked byte streams and modes (208,070,649 bytes), including a recheck
+    after the fresh authoritative catalogue. This gate was not rerun for batch008.
+    Original execution times, scope, warnings, exceptions and skips are retained.'
+  target_ids:
+  - naturalproductmech:mibig-76579e8010
+- check_id: R071-FULL-OWNER
+  name: Complete owner and component scope
+  status: passed
+  required: true
+  summary: The complete owner and every matching local source row were read. The empty
+    referenced-component set was confirmed by the native resolved reader; all captured
+    input hashes still agree.
+  target_ids:
+  - naturalproductmech:mibig-76579e8010
+  evidence_ids:
+  - R071-OWNER
+  - R071-LOCAL-SOURCES
+- check_id: C071-IDENTITY-CHECK
+  name: Chemical graph and source identity at asserted resolution
+  status: passed
+  required: true
+  summary: Full Standard/fixed-H reconstruction, primary B drawing, exact raw row
+    and source-concept mint agree; no absolute hand or absent xref is invented.
+  target_ids:
+  - naturalproductmech:mibig-76579e8010
+  evidence_ids:
+  - C071-CALC
+  - C071-PRIMARY
+  - C071-RAW
+  - C071-MIBIG
+- check_id: S071-C-SOURCE
+  name: Exact-congener primary support and native genetic scope
+  status: passed
+  required: true
+  summary: The cited complete accepted primary manuscript and official SI were inspected;
+    exact product peaks and native loss experiments support the imported method, with
+    congener-specific rescue limits retained.
+  target_ids:
+  - naturalproductmech:mibig-76579e8010
+  evidence_ids:
+  - S071-E-MAIN
+  - S071-E-SI
+  - S071-E-LOCUS
+- check_id: S071-C-TAXON
+  name: Experimental stock and contested species qualification
+  status: failed
+  required: true
+  summary: The exact culture is demonstrated, but its strain and disputed biological
+    species placement are absent from the producer/BGC representation.
+  target_ids:
+  - naturalproductmech:mibig-76579e8010
+  evidence_ids:
+  - S071-E-LOCAL
+  - S071-E-2021
+  - S071-E-ASSEMBLY
+evidence:
+- evidence_id: R071-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/anthelvencin-b.yaml
+  locator: Complete owner YAML, every source claim and history entry
+  accessed_at: '2026-10-21T13:49:21.619544Z'
+  support: supports
+  summary: Root read the complete anthelvencin B owner following its individual intake.
+    It contains 0 occurrences, one producer and one cluster. Its component-reference
+    set and optional mechanism, activity, target, application, cross-corpus and discussion
+    fields are empty. This is based on complete parsed contents, not a filtered text-search
+    miss.
+  snapshot_sha256: d439282671a15048cedd94db10b458bb9bbc588f12f2312baac1abf91dab932e
+- evidence_id: R071-LOCAL-SOURCES
+  kind: record_content
+  reference: /private/tmp/npm-review-work/071/local-sources.json
+  locator: Every matching MIBiG, LOTUS, ChEBI, CyanoMetDB and NPClassifier row plus
+    complete resolved view
+  accessed_at: '2026-10-21T13:49:21.619544Z'
+  support: context_only
+  summary: Root read all matching rows and the complete owner. These retained database
+    assertions and deterministic joins are distinguished from the exact primary experiments
+    assessed separately.
+  snapshot_sha256: 16b05f6b01d4db7e280befc5ae4259266e656de1b3dd4a85c24d0bbda4da585e
+- evidence_id: R071-IMODULON-DATASETS
+  kind: database
+  reference: /private/tmp/npm-review-work/010/imodulon-datasets.txt
+  locator: Full 28-row dataset catalogue; actual retrieval receipt retained in 010/imodulon-context-receipts.json
+  accessed_at: '2026-10-21T07:21:15.957321Z'
+  support: context_only
+  summary: The full same-session catalogue retrieved at 07:21:15 UTC contains S. albidoflavus
+    and S. coelicolor datasets, but no S. venezuelae, S. argillaceus, S. refuineus
+    or A. candidus dataset. No fresh retrieval is claimed. Matching a species label
+    alone does not establish an exact experimental strain, locus or product.
+  snapshot_sha256: 1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549
+- evidence_id: C071-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/anthelvencin-b.yaml
+  locator: Complete owner and resolved mechanism
+  accessed_at: '2026-10-21T13:51:41.734295Z'
+  support: supports
+  summary: The exact owner anthelvencin B and all locally resolved contents were read;
+    it identifies PDZYVFIUNSCDOC-UHFFFAOYSA-N.
+  snapshot_sha256: d439282671a15048cedd94db10b458bb9bbc588f12f2312baac1abf91dab932e
+- evidence_id: C071-RAW
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: Complete relevant source rows
+  accessed_at: '2026-10-21T13:51:41.734295Z'
+  support: supports
+  summary: 'Canonical sorted-JSON full-row SHA256 pins: [{"selector": "BGC0002042:2",
+    "version": "3", "sha256": "199a0236a9c7bc58cb27c1500d9bbc36e6e115694820becde639ef781db2dce1"}].
+    Source-concept mints: {"BGC0002042:2": "naturalproductmech:mibig-76579e8010"}.
+    Exact eligible ChEBI projection has 0 row(s).'
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: C071-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/071/chemistry-local-search.txt
+  locator: Ignored-inclusive exact key, identifier and slug search
+  accessed_at: '2026-10-21T13:51:41.808307Z'
+  support: supports
+  summary: Current owner, curation, configuration and source-code matching paths inspected;
+    this is a bounded local inventory search, not universal absence.
+  snapshot_sha256: bc51332e8229b10a2d0a9463689f34ad01f17f0cd15d8ae3fd6276b4094050bd
+  search_scope: rg --no-ignore --hidden -l -F -e PDZYVFIUNSCDOC-UHFFFAOYSA-N -e naturalproductmech:mibig-76579e8010
+    -e anthelvencin-b data/natural_products curation conf src scripts
+- evidence_id: C071-CLASS
+  kind: record_content
+  reference: data/raw/npclassifier.tsv
+  locator: Exact-key classification row and PATHS filing
+  accessed_at: '2026-10-21T13:51:41.734295Z'
+  support: context_only
+  summary: The exact-key classifier row, source model version and owner classification
+    were compared. Computed filing is kept separate from source-asserted BGC and molecular
+    classes.
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: C071-MIBIG
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0002042.3/annotations.json
+  locator: Complete retained response for the exact identifier/query
+  accessed_at: '2026-10-21T12:55:37.462606Z'
+  support: supports
+  summary: Current BGC0002042 version 3 is active, quality questionable, completeness
+    complete. The selected exact compound graph independently agrees with the owner;
+    complete versioned source metadata and changelog were read.
+  snapshot_sha256: 7f848be6a931fccb35fb081abfe16d93320822475b346e13ffa97be2c2c06020
+- evidence_id: C071-CHEBI-KEY
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=PDZYVFIUNSCDOC-UHFFFAOYSA-N&size=100
+  locator: Complete retained response for the exact identifier/query
+  accessed_at: '2026-10-21T13:03:14.884341Z'
+  support: supports
+  summary: The exact full-key query returned HTTP 404 with explicit no compound match.
+    This is a bounded search result, not a universal ChEBI absence claim.
+  snapshot_sha256: 443ff610abf2a767c06809e26bb8de325303dfa119645184d40d0e9205630444
+- evidence_id: C071-CHEBI-NAME
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=anthelvencin+B&size=100
+  locator: Complete retained response for the exact identifier/query
+  accessed_at: '2026-10-21T13:03:42.265734Z'
+  support: supports
+  summary: The literal anthelvencin B name query returned HTTP 404 with explicit no
+    compound match.
+  snapshot_sha256: 4ef5da27e92c006407e1e8b424807e06900949ff4c4a669a5c9585a9ea7bd493
+- evidence_id: C071-PUBCHEM-KEY
+  kind: authority
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/PDZYVFIUNSCDOC-UHFFFAOYSA-N/property/InChIKey,InChI,IsomericSMILES,MolecularFormula,Charge/JSON
+  locator: Complete retained response for the exact identifier/query
+  accessed_at: '2026-10-21T13:03:15.795454Z'
+  support: supports
+  summary: The exact full-key PubChem Compound query returned HTTP 404/no CID. The
+    owner does not assert a PubChem xref, so this is not a broken owner identifier.
+  snapshot_sha256: 838fee6fe52f387ee0e552541b837866589239f48fedaa1fb96efa208b0b7173
+- evidence_id: C071-TAX
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=54571&retmode=xml
+  locator: Complete retained response for the exact identifier/query
+  accessed_at: '2026-10-21T13:08:56.752265Z'
+  support: supports
+  summary: NCBITaxon:54571 resolves to Streptomyces venezuelae at species rank, with
+    actinomycetotal lineage. It does not identify a specific ATCC 14583 strain.
+  snapshot_sha256: 402ba95337d317272822f819ce23f97a2999d183713a817066676219fece93c5
+- evidence_id: C071-ASSEMBLY
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=assembly&id=4693161&retmode=json
+  locator: Complete retained response for the exact identifier/query
+  accessed_at: '2026-10-21T13:09:09.248060Z'
+  support: supports
+  summary: GCF_008642355.1/GCA_008642355.1 explicitly maps ATCC 14583 to taxid 54571.
+    Its taxonomy check is Inconclusive; this current database association is retained
+    alongside the 2021 genomic circumscription conflict.
+  snapshot_sha256: f252ab15c2f3efed51486b076625fdb8d1fc1ae7095aef0fda516cbe4d4421e2
+- evidence_id: C071-GENBANK
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/nuccore/MK483114.1
+  locator: Versioned 30,551 bp locus header and source feature
+  accessed_at: '2026-10-21T12:30:53.672999Z'
+  support: supports
+  summary: MK483114.1 source/definition identifies ATCC 14583 and taxon54571; the
+    unpublished reference title instead says ATCC 14593. The 1540..27652 locus is
+    within the deposited sequence; no unexamined CDS/construct equivalence is inferred.
+  snapshot_sha256: 783b97587fef65bd1b18ff4394a72cae323faf6cffc2c6ebfda60dfd6bf29c51
+- evidence_id: C071-PRIMARY
+  kind: primary_source
+  reference: DOI:10.1021/acschembio.9b00960
+  locator: Original Figure1A compound 2; chemical identification paragraph and SI
+    FigureS4
+  accessed_at: '2026-10-21T12:20:51Z'
+  support: supports
+  summary: B is the unmethylated bis-pyrrole compound 2. Peak II m/z 414.1998 is assigned
+    by HRMS/MS; the graph leaves its cyclic amidine centre unspecified. A-specific
+    2D NMR and racemic precursor feeding do not establish B absolute configuration.
+    The neutral owner is a molecular representation, not a claim that the measured
+    ions were uncharged.
+  snapshot_sha256: 3479ef8f0b6eba70888f5e72d056efe599fbe91ed60856bded9768ceeeb64663
+- evidence_id: C071-CALC
+  kind: validation
+  reference: /private/tmp/npm-review-work/071/chemistry-authority-comparison.json
+  locator: Full Standard/fixed-H chemistry, formula, charge and all tetrahedral centres
+  accessed_at: '2026-10-21T13:51:41.810023Z'
+  support: supports
+  summary: Fresh read-only molecular calculations retain every compared source representation
+    and do not silently add stereochemistry.
+  snapshot_sha256: 42ed0a6723126fd62c9d6223235d4d8c78f5adc5ebf19f697fd2d687e05851b4
+- evidence_id: S071-E-LOCAL
+  kind: record_content
+  reference: data/natural_products/alkaloids/anthelvencin-b.yaml
+  locator: Complete owner, resolved local sources and exact BGC0002042:2 raw row
+  accessed_at: '2026-10-21T13:50:53.868794Z'
+  support: supports
+  summary: The full owner has no mechanism components. Its exact congener is linked
+    to BGC0002042 version 3 and PMID:32129986 with native knockout methods and strong
+    producer/locus grades. No occurrence is asserted.
+  snapshot_sha256: d439282671a15048cedd94db10b458bb9bbc588f12f2312baac1abf91dab932e
+- evidence_id: S071-E-MAIN
+  kind: primary_source
+  reference: https://doi.org/10.1021/acschembio.9b00960
+  locator: 'Results: ant8 loss, chemical nature of II–IV, ant23/ant24 tests; Figures
+    2–4; complete Methods'
+  accessed_at: '2026-10-21T12:20:51Z'
+  support: supports
+  summary: B is the unmethylated peak II, measured [M+H]+ 414.1998 versus calculated
+    414.1997. It disappears in the native ant8 replacement ANT007. The chemical identification
+    fraction came from the ATCC 14583-derived ANT012 strain carrying a second ant23-ant24
+    copy. The shown genetic rescue and precursor feeding peaks are A and C, so exact
+    B rescue is not claimed. The 2020 study establishes native genetic dependence,
+    not purified final-product enzymology. The proposed Ant15 methylation sequence
+    and individual assembly reactions are not all directly assayed.
+  snapshot_sha256: 3479ef8f0b6eba70888f5e72d056efe599fbe91ed60856bded9768ceeeb64663
+- evidence_id: S071-E-SI
+  kind: primary_source
+  reference: https://acs.figshare.com/doi/suppl/10.1021/acschembio.9b00960
+  locator: Complete official SI; Tables S1–S3; Figure S4 physical page 12; S8/S9 physical
+    pages 22–24
+  accessed_at: '2026-10-21T12:13:40.791747Z'
+  support: supports
+  summary: The exact product HRMS/MS parent and fragments were inspected. B has neither
+    pyrrole N-methyl group. ANT007, ANT008 and ANT009 are native ant8, ant23 and ant24
+    replacements; ANT013/014 complementation expresses both ant23 and ant24. S8 labels
+    A (1), C (3) and precursor 5; no exact B rescue is shown. The natural ADPC-derived
+    centre is not assigned by racemic feeding.
+  snapshot_sha256: c10501cfc37d06872de9eda36178f20a233429f4085eff5d3070cc341b4a679a
+- evidence_id: S071-E-2021
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.isci.2021.103410
+  locator: Phylogenomic Results; pyrrolamide Results; Figure 4; Methods disruption/expression/assays
+  accessed_at: '2026-10-21T13:08:06.467062Z'
+  support: supports
+  summary: The genome analysis separates ATCC 14583/14584/14585 from the authors’
+    true S. venezuelae group, without naming an accepted replacement species. Main
+    Figure 4 calls the dimethyl compound B, constitutionally the 2020 C; it does not
+    establish the unmethylated 2020 B. New CRISPR deletions were made in ATCC 14585.
+    Purified tagged/TEV-cleaved Athv28 proteins from three stocks make ADPC from glutamine,
+    not complete anthelvencins.
+  snapshot_sha256: 3d535ebe79ee79a78715f19c7ae5fd763861004f59e294517299dd505976fc01
+- evidence_id: S071-E-2021-SI
+  kind: primary_source
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8627960/supplementaryFiles
+  locator: 'Official mmc1.pdf: Data S1 physical page 15; pathway/PCR physical page
+    23; Table S1 physical page 26'
+  accessed_at: '2026-10-21T13:21:04.900081Z'
+  support: context_only
+  summary: The supplement retains obsolete A regioisomer drawings in both Data S1
+    and the pathway, unlike the revised main Figure 4. Its observed-mass labels also
+    disagree with calculated masses and the main dataset. The dimethyl B depiction
+    still crosswalks to 2020 C. The exact ATCC 14583 Athv28 core-to-Ant24 bridge is
+    recorded separately; neither sequence equality nor precursor assays establish
+    final-product enzymology.
+  snapshot_sha256: a2efc1d0c91d65d84f4aa654dd5a768112504c7ac34b534cec7c3b5ae63fec4a
+- evidence_id: S071-E-LOCUS
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/nuccore/MK483114.1
+  locator: Header, source qualifiers and boundary genes ant22/ant24
+  accessed_at: '2026-10-21T12:30:53.672999Z'
+  support: supports
+  summary: The 30,551 bp accession identifies ATCC 14583, culture_collection ATCC:14583
+    and taxon 54571. The curated 1540..27652 region is within this accession. The
+    unpublished reference title says 14593, unlike the explicit source/strain fields
+    and primary paper; it is not grounds to replace the experimental stock. No protein
+    functional inference is made from metadata.
+  snapshot_sha256: 783b97587fef65bd1b18ff4394a72cae323faf6cffc2c6ebfda60dfd6bf29c51
+- evidence_id: S071-E-ASSEMBLY
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/assembly/GCF_008642355.1
+  locator: Current assembly UID 4693161; strain, taxid and taxonomy-check-status
+  accessed_at: '2026-10-21T13:09:09.541390Z'
+  support: supports
+  summary: Current assembly metadata maps exact ATCC 14583 to S. venezuelae taxid/speciestaxid
+    54571 and reports an Inconclusive taxonomy check. This is a current deposit mapping,
+    distinct from settled biological species circumscription.
+  snapshot_sha256: f252ab15c2f3efed51486b076625fdb8d1fc1ae7095aef0fda516cbe4d4421e2
+- evidence_id: S071-E-CONSUMERS
+  kind: record_content
+  reference: src/naturalproductmech/curate/producer_strains.py
+  locator: Complete loader; seeder producer/cluster emission lines 1094–1150
+  accessed_at: '2026-10-21T13:50:53.868794Z'
+  support: supports
+  summary: The implemented strain table requires unique exact BGC:compound ID, full
+    raw-row SHA, strain, reference, curator, date and rationale. It qualifies only
+    the producer. BGC-context propagation is not currently implemented and must be
+    explicitly added/tested; reserved decisions.tsv is not a consumed repair.
+  snapshot_sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+- evidence_id: S071-E-QUALIFIER-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/071/science-qualification-search.json
+  locator: Exact consumed table and loader/seeder search
+  accessed_at: '2026-10-21T13:51:46.427404Z'
+  support: context_only
+  summary: No existing BGC0002042 row-specific strain qualification appears in the
+    consumed table or its loader/seeder. The current producer-only versus BGC behavior
+    was separately read from code.
+  snapshot_sha256: d37db80d9e6dd20d7c19ac523e774f132dbb477ae8cc2d724fe2400e93c133e4
+  search_scope: Ignored-inclusive exact BGC selector search of the consumed strain
+    table and its loader/seeder; no claim of repository-wide absence. Query BGC0002042(:[23])?
+    returned exit 1/no match. This does not establish absence of historical reviews
+    or unconsumed files.
+assessments:
+- assessment_id: R071-HISTORY
+  area: provenance
+  topic: Native status and retained seed history
+  outcome: supported
+  summary: The 2 dated SEEDED_FROM_SOURCES entries and SEEDED status describe generated
+    provenance. No curation event or native status promotion is inferred from this
+    review. The 2026-10-13 table-based reseeding entry, where present, is another
+    seed event.
+  target_ids:
+  - naturalproductmech:mibig-76579e8010
+  evidence_ids:
+  - R071-OWNER
+- assessment_id: R071-OPTIONAL
+  area: completeness
+  topic: Optional mechanism, activity and application fields
+  outcome: not_applicable
+  summary: The owner has no structured pathway, causal graph, molecular target, bioactivity,
+    summary, clinical status or engineering application claim. Optional enrichment
+    is separate from correcting present assertions; no activity or enzyme function
+    is inferred from the name or class.
+  target_ids:
+  - naturalproductmech:mibig-76579e8010
+  evidence_ids:
+  - R071-OWNER
+  - R071-LOCAL-SOURCES
+- assessment_id: R071-FILING
+  area: representation
+  topic: Computed filing and source-asserted classes
+  outcome: supported
+  summary: The owner reproduces its exact-key NPClassifier row, with model version
+    npclassifier.gnps2.org@2026-09-07, Alkaloids filing, all returned superclass/class
+    labels, and false glycoside flag. These are explicitly computed classifications;
+    they do not establish precursor use or natural origin. The separate BGC and compound-class
+    assertions retain their MIBiG source and receive biological assessment in the
+    science packet.
+  target_ids:
+  - naturalproductmech:mibig-76579e8010
+  evidence_ids:
+  - R071-OWNER
+  - R071-LOCAL-SOURCES
+- assessment_id: R071-IMODULON
+  area: completeness
+  topic: Structured transcriptomic context
+  outcome: not_applicable
+  summary: The native producer and exact biosynthetic locus lack a matching dataset
+    in the inspected catalogue. Recombinant E. coli or A. oryzae expression experiments
+    do not become native-producer transcriptomic context; database noncoverage is
+    not negative biological evidence.
+  target_ids:
+  - naturalproductmech:mibig-76579e8010
+  evidence_ids:
+  - R071-OWNER
+  - R071-IMODULON-DATASETS
+- assessment_id: C071-IDENTITY
+  area: identity
+  topic: Exact B constitution and stated stereochemical resolution
+  outcome: supported
+  summary: Neutral C18H23N9O3, full key PDZYVFIUNSCDOC-UHFFFAOYSA-N and fixed-H key
+    PDZYVFIUNSCDOC-PKARQZKTNA-N reproduce. The original B drawing and current MIBiG
+    compound agree on both unmethylated pyrroles and one unspecified cyclic amidine
+    centre; stereo_complete:false is accurate.
+  target_ids:
+  - naturalproductmech:mibig-76579e8010
+  evidence_ids:
+  - C071-OWNER
+  - C071-CALC
+  - C071-MIBIG
+  - C071-PRIMARY
+- assessment_id: C071-GROUNDING
+  area: grounding
+  topic: Source-concept identifier and bounded authority search
+  outcome: supported
+  summary: The exact source concept BGC0002042:2 reproducibly mints naturalproductmech:mibig-76579e8010.
+    The complete pinned eligible ChEBI projection is empty; current exact-key/name
+    queries return no match. No explicit external chemical xref is present or silently
+    added.
+  target_ids:
+  - naturalproductmech:mibig-76579e8010
+  evidence_ids:
+  - C071-RAW
+  - C071-SEARCH
+  - C071-CHEBI-KEY
+  - C071-CHEBI-NAME
+  - C071-PUBCHEM-KEY
+- assessment_id: C071-CLASSIFICATION
+  area: provenance
+  topic: Versioned computed filing versus asserted cluster class
+  outcome: supported
+  summary: ALKALOIDS, Peptide alkaloids and Simple amide alkaloids are attributed
+    to the exact-key NPClassifier row/version. MIBiG NRPS is a separate cluster class;
+    the source TypeI subclass is not rendered as an owner experimental mechanism.
+  target_ids:
+  - naturalproductmech:mibig-76579e8010
+  evidence_ids:
+  - C071-CLASS
+  - C071-RAW
+  - C071-OWNER
+  - C071-MIBIG
+- assessment_id: C071-SOURCE-IDS
+  area: scope
+  topic: Current species identifier and versioned deposited culture
+  outcome: supported
+  summary: NCBITaxon:54571 and MK483114.1 resolve as stated. Exact culture ATCC 14583
+    is established in accession/assembly metadata; the conflicting2021 species circumscription
+    and missing rendered strain are evaluated in the independent biological scope
+    finding rather than inventing a new taxon.
+  target_ids:
+  - naturalproductmech:mibig-76579e8010
+  evidence_ids:
+  - C071-TAX
+  - C071-ASSEMBLY
+  - C071-GENBANK
+- assessment_id: S071-A-ORIGIN
+  area: evidence
+  topic: Exact B natural origin and locus support
+  outcome: supported
+  summary: B is the unmethylated peak II, measured [M+H]+ 414.1998 versus calculated
+    414.1997. It disappears in the native ant8 replacement ANT007. The chemical identification
+    fraction came from the ATCC 14583-derived ANT012 strain carrying a second ant23-ant24
+    copy. The shown genetic rescue and precursor feeding peaks are A and C, so exact
+    B rescue is not claimed.
+  target_ids:
+  - naturalproductmech:mibig-76579e8010
+  evidence_ids:
+  - S071-E-MAIN
+  - S071-E-SI
+  - S071-E-LOCUS
+  dimensions:
+  - name: experimental_strain
+    value: ATCC 14583; native replacement mutants; ANT012 identification material
+    definition: The stock tested in the cited 2020 native study, distinguished from
+      the later ATCC 14585 CRISPR host.
+    evidence_ids:
+    - S071-E-MAIN
+    - S071-E-SI
+    - S071-E-2021
+  - name: evidence_tier
+    value: Native knockout support; no complete-product purified-enzyme assay
+    definition: A final-product loss result supports the existing cluster grade without
+      transferring precursor enzymology or another congener’s rescue.
+    evidence_ids:
+    - S071-E-MAIN
+    - S071-E-SI
+  - name: taxonomic_context
+    value: Historical/current deposit 54571; 2021 biological species assignment disputed
+    definition: The exact strain remains supported while its species placement requires
+      qualification.
+    evidence_ids:
+    - S071-E-2021
+    - S071-E-ASSEMBLY
+- assessment_id: S071-A-TAXON
+  area: identity
+  topic: Experimental strain and species circumscription
+  outcome: concern
+  summary: The source’s native stock is supported, but the current strongest producer
+    claim and BGC organism label omit ATCC 14583 and the primary-versus-current-database
+    species conflict.
+  target_ids:
+  - naturalproductmech:mibig-76579e8010
+  evidence_ids:
+  - S071-E-LOCAL
+  - S071-E-2021
+  - S071-E-ASSEMBLY
+  dimensions:
+  - name: taxonomic_context
+    value: Historical/current deposit 54571; 2021 biological species assignment disputed
+    definition: The exact strain remains supported while its species placement requires
+      qualification.
+    evidence_ids:
+    - S071-E-2021
+    - S071-E-ASSEMBLY
+- assessment_id: S071-A-METHOD
+  area: evidence
+  topic: Imported methods versus later precursor evidence
+  outcome: supported
+  summary: Knock-out studies and CLUSTER_DEMONSTRATED are supported for this exact
+    congener at the stated 2020 identification resolution. Do not add Enzymatic assays
+    from the later ADPC experiment or misroute the 2021 B label.
+  target_ids:
+  - naturalproductmech:mibig-76579e8010
+  evidence_ids:
+  - S071-E-MAIN
+  - S071-E-SI
+  - S071-E-2021
+  - S071-E-2021-SI
+- assessment_id: S071-A-CLASS
+  area: representation
+  topic: Computed filing and asserted biosynthetic class
+  outcome: supported
+  summary: The pinned NPClassifier peptide/simple-amide alkaloid output is explicitly
+    computed. NRPS is consistent with the primary stand-alone-domain type II NRPS
+    system. The raw Type I subclass is not emitted as a claim in this owner.
+  target_ids:
+  - naturalproductmech:mibig-76579e8010
+  evidence_ids:
+  - S071-E-LOCAL
+  - S071-E-MAIN
+findings:
+- finding_id: S071-F-STRAIN
+  issue_key: mibig-bgc0002042-atcc14583-producer-context
+  category: provenance
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The producer omits the exact stock and disputed species assignment
+  description: The 2020 native experiment supports ATCC 14583, but the owner emits
+    an unqualified strongest S. venezuelae producer claim and BGC organism label.
+    The 2021 primary genome analysis disputes this species placement; the current
+    assembly still maps the strain to 54571 with an inconclusive taxonomy check. Qualify
+    both claims without inventing a replacement taxon or discarding valid native production.
+    This repeats the same source-context cause on a distinct congener; it does not
+    supersede another target’s review.
+  target_ids:
+  - naturalproductmech:mibig-76579e8010
+  field_paths:
+  - producer_organisms[0]
+  - biosynthetic_gene_clusters[0].organism_taxon_id
+  - biosynthetic_gene_clusters[0].organism_label
+  evidence_ids:
+  - S071-E-LOCAL
+  - S071-E-MAIN
+  - S071-E-SI
+  - S071-E-2021
+  - S071-E-ASSEMBLY
+  - S071-E-CONSUMERS
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Exact-row-pinned strain qualification
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/producer_strains.py
+    role: Consumed producer qualification and tested context extension
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Producer and BGC context emission
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Preserved full source row
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/schema/naturalproductmech.yaml
+    role: Existing notes fields for source context
+  rule_id: 'review-yaml-record: preserve experimental strain and source conflicts'
+  native_severity: 'major: unsupported unqualified species scope'
+  normalization_reason: The strain-level native locus is supported; the strongest
+    species claim requires a material qualification.
+actions:
+- action_id: S071-ACT-STRAIN
+  description: 'Add a consumed strain qualification with source_id=BGC0002042:2, expected_source_row_sha256=199a0236a9c7bc58cb27c1500d9bbc36e6e115694820becde639ef781db2dce1,
+    strain=ATCC 14583, reference=PMID:32129986 and dated curator/rationale. Cite PMID:34877485
+    in the rationale for the disputed biological species assignment, retaining 54571
+    as the historical/current deposit mapping with an inconclusive taxonomy check.
+    The existing consumer only qualifies producer context: implement and test guarded
+    propagation of the same context to the existing BGC notes field. Preserve native
+    loss evidence and distinguish ANT012 from WT, dual ant23-ant24 rescue from single-gene
+    rescue, ATCC 14585 from 14583, and 2021 B from 2020 B. Do not relabel the stock
+    as S. gardneri or add a complete-product enzyme method. Do not claim an exact
+    B rescue from S8 or the A/C feeding result.'
+  finding_ids:
+  - S071-F-STRAIN
+  target_ids:
+  - naturalproductmech:mibig-76579e8010
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Exact-row-pinned strain qualification
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/producer_strains.py
+    role: Consumed producer qualification and tested context extension
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Producer and BGC context emission
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Preserved full source row
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/schema/naturalproductmech.yaml
+    role: Existing notes fields for source context
+  generator: scripts/seed_from_sources.py with the consumed strain table and explicitly
+    tested context propagation
+  acceptance_checks:
+  - Require exactly one matching complete raw compound row and its SHA; altered source
+    data or duplicate qualifiers must fail.
+  - Test current producer-only strain emission separately from the new BGC-note propagation;
+    preserve exact structure, existing methods, grades and source references.
+  - Verify both producer and BGC notes name ATCC 14583, cite the 2021 conflict and
+    retain current 54571 mapping without an unsupported replacement species.
+  - The exact-target canary must preserve congener-specific assay limits and leave
+    unrelated rows unchanged. Run documented strict validation, verify-reproduction,
+    verify-corpus and QC after authorized curation.
+limitations:
+- The review assesses current record assertions and concrete source questions. It
+  does not claim exhaustive discovery of every subsequent study or require optional
+  mechanistic enrichment as a precondition for review coverage.
+- The 2020 B chemical assignment is HRMS/MS-level; A NMR is not B evidence. No independently
+  established absolute configuration is claimed, and the owner already preserves an
+  undefined centre.
+- Current species/assembly naming remains in tension with the 2021 phylogenomic circumscription.
+  This packet verifies identifier resolution; the science packet owns the strain/taxonomic
+  qualification action.
+- Exact authority queries are bounded negative searches, not proof of global absence.
+- The 2020 accepted manuscript is retained from a public mirror; its scientific text
+  and official SI were inspected. The original 1965 body was not obtained, but no
+  current claim depends solely on that historical citation.
+- No new absolute stereochemistry is established. The owner leaves the ADPC-derived
+  centre unspecified; racemic feeding and A-only NMR do not resolve B/C configuration.
+- The 2021 SI has obsolete A drawings and discrepant observed-mass labels; its 14585
+  genetics and precursor-only assays are not transferred by a congener letter alone.
+  No raw instrument data were reprocessed.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35
+  explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently
+  verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+  Skipped tests are not counted as passing tests. Existing ontology caches were used;
+  no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do
+  not establish biological production, stereochemical specificity, evidence adequacy,
+  or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology
+  results. Reuse establishes unchanged repository inputs; it is not a new remote authority
+  query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all
+  tracked files are hashed. Generated Python bytecode and external tool caches are
+  not claimed to have been independently byte-pinned at the prior execution.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+- Scientific taxonomy check fails for the current representation; this completed review
+  records that finding and does not claim a failed review-bundle validation.
+tags:
+- path-order-campaign
+- batch-008
