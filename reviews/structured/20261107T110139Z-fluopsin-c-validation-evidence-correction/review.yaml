@@ -1,0 +1,255 @@
+schema_version: 1.0.0
+review_id: 20261107T110139Z-fluopsin-c-validation-evidence-correction
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: Correct strict-validation evidence locators for fluopsin C
+started_at: '2026-11-07T10:59:50.497418Z'
+finished_at: '2026-11-07T11:01:39.605817Z'
+reviewer:
+  identity: Codex ROOT
+  kind: agent
+  independence: self_review
+  independence_basis: Correction of two locator choices in ROOT’s earlier review assembly,
+    identified by the separate Native consistency peer.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: pass_with_limitations
+scientific_review: false
+summary: This provenance-only observation corrects the two strict-validation evidence
+  references in 20261107T105522Z-fluopsin-c. The original results passed; their substantive
+  summaries are in stderr, while the predecessor references empty stdout. Scientific
+  assessments and source-request limits remain those of the predecessor. No native
+  gate or chemical analysis was repeated.
+source:
+  git_revision: 18ca5dd6b9023670f10355084b45a8757a7a4e9e
+  state: working_tree
+  inputs:
+  - path: AGENTS.md
+    sha256: 69e4037f8dc97d4b00bb7bb83b41ceca025f6ef578d5c0bf8086f3400becde0b
+    role: context
+  - path: data/natural_products/alkaloids/fluopsin-c.yaml
+    sha256: f17d9d8c41472fbe731f931ae8ad2dc2921cc665198ad383d173edf69e2dcfe5
+    role: target
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: reviews/structured/20261107T105522Z-fluopsin-c/review.md
+    sha256: 3970ed103a06809ff6977b804b114de22d90117cdbf7a6e79e0fac76beb38f38
+    role: context
+  - path: reviews/structured/20261107T105522Z-fluopsin-c/review.yaml
+    sha256: d9c5a21e0e16e968bb4db8bb7a03e6327b81dcda300a618afc7198d801de0733
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: e9b844d10fb7d2889521677716098da5883c7fd7d3c887a5cb600b87bbca0c21
+    role: context
+scope:
+  description: One exact record; bounded correction of validation-evidence locators
+    only. No additional scientific target coverage.
+  selection: Same fluopsin C target as the immutable predecessor; not a new campaign
+    selection.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CHEBI:222417
+targets:
+- target_id: CHEBI:222417
+  path: data/natural_products/alkaloids/fluopsin-c.yaml
+  label: fluopsin C
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/alkaloids/fluopsin-c.yaml
+    role: Curator-owned pathway, graphs, molecular targets and audit history; retain
+      imported source-owned fields through the seeder.
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained source harmonization and guarded emission of generated record
+      fields.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: Pinned structure/source inventory; changes belong in the maintained extractor
+      or reviewed supported curation lane.
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/curated_compounds.tsv
+    role: Maintained literature-backed ChEBI admission, chemistry and exact strain-qualified
+      producer assertions.
+  ownership_note: Review only. Imported rows remain source-owned; curator-owned mechanisms
+    require the validated writer and an artifact-specific event for any future change.
+    Reserved curation/decisions.tsv is not an effective seeder input.
+checks:
+- check_id: PC288-strict_ten
+  name: Retained original strict_ten result
+  status: passed
+  required: true
+  summary: Original exit0/10 files/zero errors verified against the saved receipt
+    and actual stderr. No native gate rerun.
+  target_ids:
+  - CHEBI:222417
+  command: /opt/homebrew/bin/just validate-strict data/natural_products/alkaloids/fluopsin-c.yaml
+    data/natural_products/alkaloids/pyochelin-ii.yaml data/natural_products/alkaloids/rhizobactin-1021.yaml
+    data/natural_products/amino_acids_and_peptides/achromobactin-free-acid.yaml data/natural_products/amino_acids_and_peptides/deferrichrome.yaml
+    data/natural_products/amino_acids_and_peptides/desferrialbomycin-2.yaml data/natural_products/amino_acids_and_peptides/desferricoprogen-b.yaml
+    data/natural_products/amino_acids_and_peptides/desferriexochelin-772ms.yaml data/natural_products/amino_acids_and_peptides/n-2-3-dihydroxybenzoyl-l-serine.yaml
+    data/natural_products/amino_acids_and_peptides/radamycin.yaml --workers 2 --quiet
+    --out /Users/marcin/agent-work/NaturalProductMech/npm-native-checks/batch-288/selected-strict-001.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - PC288-strict_ten
+  - PC288-strict_ten-receipt
+  scope_note: Historical local execution reused as attributed evidence; only its locator
+    is corrected here.
+- check_id: PC288-strict_full
+  name: Retained original strict_full result
+  status: passed
+  required: true
+  summary: Original exit0/3136 files/zero errors verified against the saved receipt
+    and actual stderr. No native gate rerun.
+  target_ids:
+  - CHEBI:222417
+  command: /opt/homebrew/bin/just validate-strict --workers 2 --quiet --out /Users/marcin/agent-work/NaturalProductMech/npm-native-checks/batch-288/full-strict-001.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - PC288-strict_full
+  - PC288-strict_full-receipt
+  scope_note: Historical local execution reused as attributed evidence; only its locator
+    is corrected here.
+- check_id: PC288-intake
+  name: Canonical correction input capture
+  status: passed
+  required: true
+  summary: Exact target and predecessor files captured successfully; all recorded
+    input hashes still match.
+  target_ids:
+  - CHEBI:222417
+  command: /Users/marcin/agent-work/NaturalProductMech/npm-record-reviews-20261021/.venv/bin/python
+    scripts/record_review.py inspect --targets /Users/marcin/agent-work/NaturalProductMech/npm-review-work/shared-next-batch288/intakes-001/2871-targets-001.json
+    --input reviews/structured/20261107T105522Z-fluopsin-c/review.yaml --input reviews/structured/20261107T105522Z-fluopsin-c/review.md
+    --input scripts/validate_strict.py --input scripts/record_review.py --input schema/record_review.yaml
+    --input docs/record-reviews.md --input docs/record-review-profile.md --input justfile
+    --input AGENTS.md
+  exit_code: 0
+  evidence_ids:
+  - PC288-intake
+evidence:
+- evidence_id: PC288-prior
+  kind: prior_review
+  reference: reviews/structured/20261107T105522Z-fluopsin-c/review.yaml
+  locator: evidence entries EV288-strict_ten and EV288-strict_full; original references/empty
+    stdout hashes are retained verbatim.
+  accessed_at: '2026-11-07T11:01:39.604530Z'
+  support: supports
+  summary: The saved predecessor points both strict-check evidence entries to empty
+    stdout streams. This observation supplies precise references to the retained nonempty
+    stderr summaries without changing the predecessor.
+  snapshot_sha256: d9c5a21e0e16e968bb4db8bb7a03e6327b81dcda300a618afc7198d801de0733
+- evidence_id: PC288-strict_ten
+  kind: validation
+  reference: /Users/marcin/agent-work/NaturalProductMech/npm-review-work/shared-next-batch288/local-executions/native-strict-ten-001/stderr
+  locator: 'validate-strict summary: files scanned, files with ERROR, total ERROR
+    rows; retained original stderr.'
+  accessed_at: '2026-11-07T11:01:39.604530Z'
+  support: supports
+  summary: The original maintained strict run scanned10 files and reported zero error
+    rows. Its original receipt records exit0; this run was not repeated for the correction.
+  snapshot_sha256: f27cc4305f99346ce232c497e20eed0e0b6a60ecb60c79c18e2c1ec3a97ba614
+- evidence_id: PC288-strict_ten-receipt
+  kind: validation
+  reference: /Users/marcin/agent-work/NaturalProductMech/npm-review-work/shared-next-batch288/local-executions/native-strict-ten-001/receipt.json
+  locator: exit_code, command, stdout and stderr SHA256 pins.
+  accessed_at: '2026-11-07T11:01:39.604530Z'
+  support: supports
+  summary: Original process receipt binds the exact invocation and both retained streams.
+  snapshot_sha256: 9a9a589f8d8bfbfee51eab38a77a25eae9fd609c89fbe8a76f78dc514ab0c702
+- evidence_id: PC288-strict_full
+  kind: validation
+  reference: /Users/marcin/agent-work/NaturalProductMech/npm-review-work/shared-next-batch288/local-executions/native-strict-full-001/stderr
+  locator: 'validate-strict summary: files scanned, files with ERROR, total ERROR
+    rows; retained original stderr.'
+  accessed_at: '2026-11-07T11:01:39.604530Z'
+  support: supports
+  summary: The original maintained strict run scanned3136 files and reported zero
+    error rows. Its original receipt records exit0; this run was not repeated for
+    the correction.
+  snapshot_sha256: 210749c3fb55154cd48a727fe43622e1db2ef79bddabb38b299f55ff887e4f0f
+- evidence_id: PC288-strict_full-receipt
+  kind: validation
+  reference: /Users/marcin/agent-work/NaturalProductMech/npm-review-work/shared-next-batch288/local-executions/native-strict-full-001/receipt.json
+  locator: exit_code, command, stdout and stderr SHA256 pins.
+  accessed_at: '2026-11-07T11:01:39.604530Z'
+  support: supports
+  summary: Original process receipt binds the exact invocation and both retained streams.
+  snapshot_sha256: e49297265cc8a9f4887ed53719adea732e6b1deae28b3e546d874c58391b4b5b
+- evidence_id: PC288-intake
+  kind: validation
+  reference: /Users/marcin/agent-work/NaturalProductMech/npm-review-work/shared-next-batch288/local-executions/inspect-2871-correction-001/stdout
+  locator: Canonical captured target and source inputs, including both immutable predecessor
+    files.
+  accessed_at: '2026-11-07T11:01:39.604530Z'
+  support: supports
+  summary: Canonical inspection captured the same exact target and unchanged predecessor
+    files before this provenance-only assessment.
+  snapshot_sha256: 45e695e606939474e1215f91e7a510b1e5accfaec3f3337173951e0cd59cfdad
+assessments:
+- assessment_id: PC288-locators
+  area: provenance
+  topic: Precise retained validation output references
+  outcome: supported
+  summary: 'Both original strict invocations exited0 and retained nonempty stderr
+    summaries: ten selected files and3136 corpus files, respectively, with zero errors.
+    The references below identify those original outputs. The predecessor and all
+    scientific assertions remain unchanged.'
+  details: "[\n  {\n    \"prior_evidence_id\": \"EV288-strict_ten\",\n    \"prior_reference\"\
+    : \"/Users/marcin/agent-work/NaturalProductMech/npm-review-work/shared-next-batch288/local-executions/native-strict-ten-001/stdout\"\
+    ,\n    \"corrected_reference\": \"/Users/marcin/agent-work/NaturalProductMech/npm-review-work/shared-next-batch288/local-executions/native-strict-ten-001/stderr\"\
+    ,\n    \"corrected_sha256\": \"f27cc4305f99346ce232c497e20eed0e0b6a60ecb60c79c18e2c1ec3a97ba614\"\
+    \n  },\n  {\n    \"prior_evidence_id\": \"EV288-strict_full\",\n    \"prior_reference\"\
+    : \"/Users/marcin/agent-work/NaturalProductMech/npm-review-work/shared-next-batch288/local-executions/native-strict-full-001/stdout\"\
+    ,\n    \"corrected_reference\": \"/Users/marcin/agent-work/NaturalProductMech/npm-review-work/shared-next-batch288/local-executions/native-strict-full-001/stderr\"\
+    ,\n    \"corrected_sha256\": \"210749c3fb55154cd48a727fe43622e1db2ef79bddabb38b299f55ff887e4f0f\"\
+    \n  }\n]"
+  target_ids:
+  - CHEBI:222417
+  evidence_ids:
+  - PC288-prior
+  - PC288-strict_ten
+  - PC288-strict_ten-receipt
+  - PC288-strict_full
+  - PC288-strict_full-receipt
+  - PC288-intake
+findings: []
+actions: []
+limitations:
+- This is a technical provenance correction, not a new scientific review or an independent
+  confirmation of the original experiments.
+- The predecessor’s partial review, unavailable full QC/OAK/fresh-source checks, and
+  chemical-representation limitations are preserved. No earlier scientific finding
+  is closed.
+- The original review remains immutable. This linked observation supplies the corrected
+  references; it adds no distinct covered target.
+related_reviews:
+- repository: CultureBotAI/NaturalProductMech
+  review_id: 20261107T105522Z-fluopsin-c
+  relationship: Corrects validation evidence locators EV288-strict_ten and EV288-strict_full
+    only; preserves the predecessor and its scientific assessments.
+links:
+- reviews/structured/20261107T105522Z-fluopsin-c/review.yaml
+- reviews/structured/20261107T105522Z-fluopsin-c/review.md
+tags:
+- batch-288
+- provenance-correction
+- no-new-scientific-coverage
