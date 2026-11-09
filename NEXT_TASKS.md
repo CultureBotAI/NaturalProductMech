@@ -8,6 +8,44 @@ discussion; this file carries the order.
 Milestones are in `PLAN.md` §7. M0–M5 have landed (M4, fleet admission, in
 culturebotai-claw#395); M6 has not.
 
+## Requested next chemistry work — 2026-11-08 intake
+
+This is the proposed execution order for the user's five chemistry blocker
+groups, after current authorized work and a verified workflow boundary. While the backlog PR
+is open, it is a proposed order; after merge it must reach the session through
+NPM's own workflow. This file is not an automatic runtime queue, and a saved
+backlog or a transport result is not proof that the native session accepted work.
+
+| Order | Issue | Implementation plan | First bounded outcome |
+| --- | --- | --- | --- |
+| 1 | [#1237: Resolve metallophore identifiers and source eligibility](https://github.com/CultureBotAI/NaturalProductMech/issues/1237) | [Plan](https://github.com/CultureBotAI/NaturalProductMech/issues/1237#issuecomment-6731359732) | Reject the three wrong supplied ChEBI mappings; account for existing staphylopine and the bacillopaline near-match before source refresh. |
+| 2 | [#1238: Repair the pinned pre-pseudomonine representation](https://github.com/CultureBotAI/NaturalProductMech/issues/1238) | [Plan](https://github.com/CultureBotAI/NaturalProductMech/issues/1238#issuecomment-6731415274) | Use a source-pinned, identity-preserving representation canary; repeat at the locked RDKit version. |
+| 3 | [#1240: Adjudicate pre-putrebactin form ambiguity](https://github.com/CultureBotAI/NaturalProductMech/issues/1240) | [Plan](https://github.com/CultureBotAI/NaturalProductMech/issues/1240#issuecomment-6731416669) | Keep the collision guard; preserve both source concepts until exact-form or unresolved admission is reviewed. |
+| 4 | [#1239: Hold and adjudicate the tenuazonic-acid candidate](https://github.com/CultureBotAI/NaturalProductMech/issues/1239) | [Plan](https://github.com/CultureBotAI/NaturalProductMech/issues/1239#issuecomment-6731415891) | Preserve the existing BGC0002158 owner; no automatic tautomer-key merge or second record. |
+| 5 | [#1241: Distinguish ferric complexes from free ligands](https://github.com/CultureBotAI/NaturalProductMech/issues/1241) | [Plan](https://github.com/CultureBotAI/NaturalProductMech/issues/1241#issuecomment-6731417235) | Retain metal/protonation/source identity and inspect workup and producer evidence for each exact entity. |
+
+The order resolves identifier mistakes first, then uses the narrow representation
+repair as the implementation canary before broader identity decisions. Work
+touching shared admission/identity code should be serialized and re-reviewed
+after earlier changes; an unresolved scientific decision stays deferred rather
+than weakening a guard. Each issue's source pins, evidence requirements,
+negative controls and PR boundaries govern its implementation. Follow normal
+branch/PR, repository checks and independent adversarial review; merges remain
+a separate user decision. This request does not authorize data changes merely
+because a name appears in the list.
+
+**Dispatch hold at intake verification:** the supervisor's adopted C4S3
+protein-example goal and the separately completed user-directed chelator goal
+do not match. PR #1054 and its still-open findings #1055/#1056 remain attributed
+to C4S3; the completed chelator work does not close them. Preserve active work,
+drafts, receipts and repair budgets. This backlog supplies neither closure
+evidence nor authority to reconcile that boundary. Do not replay either goal
+or send around the supervisor gate. Once separately approved reconciliation
+and ordinary closure checks establish a safe boundary, recheck the process,
+screen, native state and supported task-dispatch path. Require exact native
+acceptance of any scoped request; otherwise retain this order and report the
+hold.
+
 ## Claims the code does not yet deliver
 
 Documentation was ported from AntibioticMech ahead of the code. These are the
