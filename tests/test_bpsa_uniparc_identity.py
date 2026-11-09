@@ -5,6 +5,7 @@ import hashlib
 import json
 from pathlib import Path
 
+import pytest
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -52,8 +53,16 @@ def test_previously_cited_archive_cannot_identify_bpsa():
                    for row in wrong["uniParcCrossReferences"])
 
 
-def test_current_indigoidine_assertions_and_history_preserve_identity_boundaries():
+@pytest.mark.parametrize("append_later_event", [False, True])
+def test_current_indigoidine_assertions_and_history_preserve_identity_boundaries(append_later_event):
     doc = yaml.safe_load((ROOT / "data/natural_products/alkaloids/indigoidine.yaml").read_text())
+    if append_later_event:
+        doc["curation_history"].append({
+            "timestamp": "2026-11-10T00:00:00Z",
+            "curator": "offline_test_fixture",
+            "action": "ADDED_DISCUSSION",
+            "changes": "Synthetic unrelated follow-up for test robustness only.",
+        })
     graph = next(row for row in doc["causal_graphs"]
                  if row["graph_id"] == "indigoidine-ccm3239-bpsa-interventions")
     edge = next(row for row in graph["edges"]
@@ -72,7 +81,18 @@ def test_current_indigoidine_assertions_and_history_preserve_identity_boundaries
     assert nodes["bpsa_historical"]["identifier"] == "NCBIProtein:ACK77757.1"
     # Retain the old event verbatim as historical provenance, and append its correction.
     history = doc["curation_history"]
-    assert "UPI0001DE5E11" in history[-2]["changes"]
-    assert history[-1]["action"] == "CORRECTED_UNIPARC_REFERENCE"
-    assert "#1244" in history[-1]["changes"]
-    assert "UPI000444B524" in history[-1]["changes"]
+    historical_index, historical_event = next(
+        (index, event) for index, event in enumerate(history)
+        if event["action"] == "ADDED_UNIPROT_PROTEIN_EXAMPLES"
+        and "#1055" in event["changes"]
+        and "UPI0001DE5E11" in event["changes"]
+    )
+    correction_index, correction_event = next(
+        (index, event) for index, event in enumerate(history)
+        if event["action"] == "CORRECTED_UNIPARC_REFERENCE"
+        and "#1244" in event["changes"]
+        and "UPI000444B524" in event["changes"]
+    )
+    assert historical_index < correction_index
+    assert "ACK77757.1" in historical_event["changes"]
+    assert "preserved all prior history" in correction_event["changes"]
