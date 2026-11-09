@@ -10,8 +10,8 @@ culturebotai-claw#395); M6 has not.
 
 ## Requested next chemistry work — 2026-11-08 intake
 
-This is the user's requested order for the five chemistry blocker groups, after
-current authorized work and a verified workflow boundary. While the backlog PR
+This is the proposed execution order for the user's five chemistry blocker
+groups, after current authorized work and a verified workflow boundary. While the backlog PR
 is open, it is a proposed order; after merge it must reach the session through
 NPM's own workflow. This file is not an automatic runtime queue, and a saved
 backlog or a transport result is not proof that the native session accepted work.
