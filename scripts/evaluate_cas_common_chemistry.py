@@ -53,6 +53,9 @@ REDISTRIBUTION_CLASS = "NON_COMMERCIAL"
 INCHIKEY_PREFIX_RE = re.compile(r"^InChIKey=", re.IGNORECASE)
 ZWITTERION_SIGNAL_RE = re.compile(r"\[\w+\+\].*\[\w+-\]|\[\w+-\].*\[\w+\+\]")
 FORMAL_CHARGE_RE = re.compile(r"\[[^\[\]]*[+-]\d*\]")
+BRACKET_ATOM_RE = re.compile(r"\[([^\[\]]+)\]")
+ATOM_CHARGE_TOKEN_RE = re.compile(r"([+-]\d+|\++|-+)\Z")
+ION_SUFFIX_RE = re.compile(r"\(\d*[+-]\)\Z")
 
 
 def strip_inchikey_prefix(value: str) -> str:
@@ -60,14 +63,40 @@ def strip_inchikey_prefix(value: str) -> str:
     return INCHIKEY_PREFIX_RE.sub("", (value or "").strip())
 
 
+def compute_smiles_net_charge(smiles: str) -> int:
+    """Compute the net formal charge across all bracketed atoms in a SMILES string."""
+    total = 0
+    for atom_body in BRACKET_ATOM_RE.findall(smiles or ""):
+        match = ATOM_CHARGE_TOKEN_RE.search(atom_body)
+        if not match:
+            continue
+        token = match.group(1)
+        sign = 1 if token[0] == "+" else -1
+        magnitude = int(token[1:]) if len(token) > 1 and token[1:].isdigit() else len(token)
+        total += sign * magnitude
+    return total
+
+
 def is_zwitterionic_smiles(smiles: str) -> bool:
-    """Return True if a SMILES carries both formal positive and negative charges."""
-    return bool(ZWITTERION_SIGNAL_RE.search(smiles or ""))
+    """Return True if a SMILES carries both formal positive and negative charges with net charge 0."""
+    return bool(ZWITTERION_SIGNAL_RE.search(smiles or "")) and compute_smiles_net_charge(smiles) == 0
 
 
 def has_formal_charge_smiles(smiles: str) -> bool:
     """Return True if a SMILES carries any formal charge token (`[...+]` or `[...-]`)."""
     return bool(FORMAL_CHARGE_RE.search(smiles or ""))
+
+
+def classify_chebi_charge_state(candidate: dict[str, str]) -> str:
+    """Classify a ChEBI candidate as `NEUTRAL`, `ZWITTERION`, or `NET_CHARGED_ION`."""
+    smiles = (candidate.get("smiles") or "").strip()
+    name = (candidate.get("name") or "").strip()
+    net_charge = compute_smiles_net_charge(smiles)
+    if net_charge != 0 or ION_SUFFIX_RE.search(name):
+        return "NET_CHARGED_ION"
+    if has_formal_charge_smiles(smiles) or "zwitterion" in name.lower():
+        return "ZWITTERION"
+    return "NEUTRAL"
 
 
 def validate_output_path_is_outside_corpus(output_path: Path, repo_root: Path = REPO_ROOT) -> None:
@@ -128,29 +157,44 @@ def evaluate_review_needed_rows(
         corpus_ik = (cs.get("standard_inchi_key") or "").strip()
         cas_ik = strip_inchikey_prefix(row.get("inchikey") or "")
         cas_smiles = (row.get("canonical_smiles") or "").strip()
-        cas_zwitterion = is_zwitterionic_smiles(cas_smiles)
+        cas_net_charge = compute_smiles_net_charge(cas_smiles)
+        if cas_net_charge != 0:
+            cas_charge_state = "NET_CHARGED_ION"
+        elif is_zwitterionic_smiles(cas_smiles):
+            cas_charge_state = "ZWITTERION"
+        else:
+            cas_charge_state = "NEUTRAL"
 
-        candidates = chebi_by_ik.get(corpus_ik or cas_ik, [])
+        rec_label = (rec.get("label") or row.get("query_name") or "").strip()
+        rec_label_cf = rec_label.casefold()
+        candidates = sorted(
+            chebi_by_ik.get(corpus_ik or cas_ik, []),
+            key=lambda c: (0 if (c.get("name") or "").strip().casefold() == rec_label_cf else 1),
+        )
         neutral_chebi = [
             c["chebi_id"]
             for c in candidates
-            if not has_formal_charge_smiles(c.get("smiles") or "")
-            and "zwitterion" not in (c.get("name") or "").lower()
-            and not re.search(r"\(\d*[+-]\)\Z", (c.get("name") or "").strip())
+            if classify_chebi_charge_state(c) == "NEUTRAL"
         ]
         zwitterion_chebi = [
             c["chebi_id"]
             for c in candidates
-            if has_formal_charge_smiles(c.get("smiles") or "")
-            or "zwitterion" in (c.get("name") or "").lower()
-            or bool(re.search(r"\(\d*[+-]\)\Z", (c.get("name") or "").strip()))
+            if classify_chebi_charge_state(c) == "ZWITTERION"
+        ]
+        net_charged_chebi = [
+            c["chebi_id"]
+            for c in candidates
+            if classify_chebi_charge_state(c) == "NET_CHARGED_ION"
         ]
 
-        preferred_chebi = (
-            neutral_chebi[0]
-            if (not cas_zwitterion and neutral_chebi)
-            else (zwitterion_chebi[0] if cas_zwitterion and zwitterion_chebi else "")
-        )
+        if cas_charge_state == "NEUTRAL" and neutral_chebi:
+            preferred_chebi = neutral_chebi[0]
+        elif cas_charge_state == "ZWITTERION" and zwitterion_chebi:
+            preferred_chebi = zwitterion_chebi[0]
+        elif cas_charge_state == "NET_CHARGED_ION" and net_charged_chebi:
+            preferred_chebi = net_charged_chebi[0]
+        else:
+            preferred_chebi = ""
 
         results.append(
             {
@@ -161,9 +205,10 @@ def evaluate_review_needed_rows(
                 "corpus_inchikey": corpus_ik,
                 "cas_inchikey": cas_ik,
                 "inchikey_agreement": "AGREES" if corpus_ik == cas_ik else "DIFFERS",
-                "cas_charge_state": "ZWITTERION" if cas_zwitterion else "NEUTRAL",
+                "cas_charge_state": cas_charge_state,
                 "neutral_chebi_candidates": "|".join(neutral_chebi),
                 "zwitterion_chebi_candidates": "|".join(zwitterion_chebi),
+                "net_charged_chebi_candidates": "|".join(net_charged_chebi),
                 "cas_aligned_chebi_id": preferred_chebi,
             }
         )
@@ -208,7 +253,8 @@ def main(argv: list[str] | None = None) -> int:
             f"  {item['identifier']} ({item['label']}) -> CAS {item['cas_rn']} "
             f"[{item['cas_charge_state']}] aligns with {item['cas_aligned_chebi_id']} "
             f"(neutral={item['neutral_chebi_candidates']}, "
-            f"zwitterion={item['zwitterion_chebi_candidates']})"
+            f"zwitterion={item['zwitterion_chebi_candidates']}, "
+            f"net_charged={item['net_charged_chebi_candidates']})"
         )
     print()
     print("NOT WRITTEN. CAS Common Chemistry is CC BY-NC 4.0, so nothing from it")
@@ -228,6 +274,7 @@ def main(argv: list[str] | None = None) -> int:
             "cas_charge_state",
             "neutral_chebi_candidates",
             "zwitterion_chebi_candidates",
+            "net_charged_chebi_candidates",
             "cas_aligned_chebi_id",
         ]
         with args.output_tsv.open("w", newline="", encoding="utf-8") as fh:
