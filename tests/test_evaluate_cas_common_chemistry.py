@@ -15,6 +15,7 @@ from check_source_queue import QUEUE_PATH, UNSEEDABLE  # noqa: E402
 from evaluate_cas_common_chemistry import (  # noqa: E402
     REDISTRIBUTION_CLASS,
     evaluate_review_needed_rows,
+    has_formal_charge_smiles,
     is_zwitterionic_smiles,
     strip_inchikey_prefix,
     validate_output_path_is_outside_corpus,
@@ -36,6 +37,8 @@ def test_cas_common_chemistry_is_recorded_as_blocked_non_commercial_in_source_qu
 def test_is_zwitterionic_smiles_distinguishes_neutral_and_zwitterion():
     assert is_zwitterionic_smiles("CC1=NCC(C(=O)O)N1") is False
     assert is_zwitterionic_smiles("CC1=NC[C@H](C(=O)[O-])[NH2+]1") is True
+    assert has_formal_charge_smiles("CC1=NCC(C(=O)O)N1") is False
+    assert has_formal_charge_smiles("NCCCC([NH3+])CC(=O)N") is True
     assert strip_inchikey_prefix("InChIKey=WNYADZVDBIBLJJ-UHFFFAOYSA-N") == (
         "WNYADZVDBIBLJJ-UHFFFAOYSA-N"
     )

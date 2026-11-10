@@ -52,6 +52,7 @@ REDISTRIBUTION_CLASS = "NON_COMMERCIAL"
 
 INCHIKEY_PREFIX_RE = re.compile(r"^InChIKey=", re.IGNORECASE)
 ZWITTERION_SIGNAL_RE = re.compile(r"\[\w+\+\].*\[\w+-\]|\[\w+-\].*\[\w+\+\]")
+FORMAL_CHARGE_RE = re.compile(r"\[[^\[\]]*[+-]\d*\]")
 
 
 def strip_inchikey_prefix(value: str) -> str:
@@ -62,6 +63,11 @@ def strip_inchikey_prefix(value: str) -> str:
 def is_zwitterionic_smiles(smiles: str) -> bool:
     """Return True if a SMILES carries both formal positive and negative charges."""
     return bool(ZWITTERION_SIGNAL_RE.search(smiles or ""))
+
+
+def has_formal_charge_smiles(smiles: str) -> bool:
+    """Return True if a SMILES carries any formal charge token (`[...+]` or `[...-]`)."""
+    return bool(FORMAL_CHARGE_RE.search(smiles or ""))
 
 
 def validate_output_path_is_outside_corpus(output_path: Path, repo_root: Path = REPO_ROOT) -> None:
@@ -128,14 +134,16 @@ def evaluate_review_needed_rows(
         neutral_chebi = [
             c["chebi_id"]
             for c in candidates
-            if not is_zwitterionic_smiles(c.get("smiles") or "")
+            if not has_formal_charge_smiles(c.get("smiles") or "")
             and "zwitterion" not in (c.get("name") or "").lower()
+            and not re.search(r"\(\d*[+-]\)\Z", (c.get("name") or "").strip())
         ]
         zwitterion_chebi = [
             c["chebi_id"]
             for c in candidates
-            if is_zwitterionic_smiles(c.get("smiles") or "")
+            if has_formal_charge_smiles(c.get("smiles") or "")
             or "zwitterion" in (c.get("name") or "").lower()
+            or bool(re.search(r"\(\d*[+-]\)\Z", (c.get("name") or "").strip()))
         ]
 
         preferred_chebi = (
