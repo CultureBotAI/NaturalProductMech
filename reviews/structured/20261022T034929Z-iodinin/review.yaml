@@ -1,0 +1,2029 @@
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261022T034929Z-iodinin
+title: Scientific review of iodinin
+started_at: '2026-10-22T03:46:53.319514Z'
+finished_at: '2026-10-22T03:49:29.564212Z'
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: Iodinin has a matching original neutral structure and deposited sample graph,
+  positive native loss/rescue evidence and separate purified formation. The imported
+  expression/product-correlation method and the older occurrence source remain unclosed
+  without weakening the independently supported native and enzyme endpoints. Nine
+  reported yeast-growth observations retain their limited class interpretation; neither
+  a direct protein mechanism nor a human anticancer conclusion follows.
+source:
+  git_revision: 71a28cf520dc96a7107b00d87703ba1e59acc02c
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/fusaric-acid.yaml
+    sha256: 08df80fe6e2184db09fadf22414f961ec3ed4c183a6bfba817a2899e13d203da
+    role: context
+  - path: data/natural_products/alkaloids/fusaridione-a.yaml
+    sha256: c9739e915f6e22d331a6d25810a333f368adbd56aae03ee698e8fb3db175f690
+    role: context
+  - path: data/natural_products/alkaloids/fusarin-c.yaml
+    sha256: b7393c2db3de8240089e532e542efe58aa43d1c84619df000e4e970c26bdf519
+    role: context
+  - path: data/natural_products/alkaloids/fusarin-d.yaml
+    sha256: 7f5666f829a54a26078dc85792153ad656cc2aef0f6f8db48793fdcb629da106
+    role: context
+  - path: data/natural_products/alkaloids/fusarochromene.yaml
+    sha256: f653a81c04f30502862e365013fef6947eb101c9b2d3594bf2ac1db978709812
+    role: context
+  - path: data/natural_products/alkaloids/fusatin.yaml
+    sha256: cf9c1426d58fa207b0a81ff4af6a4afdaad5b1d68f9cc3d8756e3d790e3e1fa1
+    role: context
+  - path: data/natural_products/alkaloids/fusatinic-acid.yaml
+    sha256: bc1df041b6b93fa1263f79739c48a3c9eb64ad797d01aec1834f5c0e0e22e73d
+    role: context
+  - path: data/natural_products/alkaloids/gaburedin-d.yaml
+    sha256: a1ea0516f1e6c3a2e49ac68af1394148092a2c5327862d0253a3fbebc00ae2ef
+    role: context
+  - path: data/natural_products/alkaloids/gilvusmycin.yaml
+    sha256: 5d76f1088d6338e31c76eaf665034151c33124dc90669c1f8c2c057efa3b8610
+    role: context
+  - path: data/natural_products/alkaloids/gladiofungin-a.yaml
+    sha256: d5f92e508d0fd0febe6312c11c77b32d9fab8a8d15ff9752010bf67eda70e8d7
+    role: context
+  - path: data/natural_products/alkaloids/gladiofungin-b.yaml
+    sha256: 0537d2d991e3555bf5d80eb18d58d901225b65770e4685da1a5ab3aea9a3b931
+    role: context
+  - path: data/natural_products/alkaloids/glandicoline-a.yaml
+    sha256: 661c320e2d349c03e909e5b1b4a3cf9e01680d67f3a4e5890c5b3525ccdc9f19
+    role: context
+  - path: data/natural_products/alkaloids/glandicoline-b.yaml
+    sha256: a0dbffefcec24c9150cfb7a0c374d88f399b072e012edf8eb17e9682f940891a
+    role: context
+  - path: data/natural_products/alkaloids/gonyautoxin-2.yaml
+    sha256: b0c35c96128ccd3b1c00be59cb6fa9ac05aa890afa32696453fb966f7c3e98ba
+    role: context
+  - path: data/natural_products/alkaloids/griseoluteic-acid.yaml
+    sha256: 0dd4033f1be811a42299ab2ff59f7ef982c4ce7d568a58ef75ef13ead0977fd6
+    role: context
+  - path: data/natural_products/alkaloids/grixazone-a.yaml
+    sha256: 3afeef2427dbf63f2c1f33efb8d63262ba2a897f725ac54b4b225aa36e16e316
+    role: context
+  - path: data/natural_products/alkaloids/guanipiperazine-a.yaml
+    sha256: 234f3406f9e6faf5c4c38db04dc8ef91ac859e59538ed0c29879df5ae5ce633b
+    role: context
+  - path: data/natural_products/alkaloids/guanipiperazine-b.yaml
+    sha256: fbe1a98e00e730ecbae027c3eaaf9197e147fca076fe35d97615974defdefa1a
+    role: context
+  - path: data/natural_products/alkaloids/guanitoxin.yaml
+    sha256: 96b4c6ac0c2fc969ae4ac042d4365ea4d73c655a7a6c6f69f8ed4b15f3d47204
+    role: context
+  - path: data/natural_products/alkaloids/hancockiamide-b.yaml
+    sha256: 58b9d5b380eacc91cc1d3aab37d029a47c688385e40dc571ac81f02500765eb2
+    role: context
+  - path: data/natural_products/alkaloids/hancockiamide-c.yaml
+    sha256: f5455801d553581ab6b134955ecb527b48fcdc2aa4e10c86e498aee815ed3335
+    role: context
+  - path: data/natural_products/alkaloids/hancockiamide-d.yaml
+    sha256: 758bf46b4fe8f6572a482e563b64e2899f1d012dcd59d74cb761270fdc8e741f
+    role: context
+  - path: data/natural_products/alkaloids/hexadehydroastechrome.yaml
+    sha256: a065c38b64efa17029b83d2381f84e8973b2f450b3a1b37a194ad0f639c12497
+    role: context
+  - path: data/natural_products/alkaloids/holomycin.yaml
+    sha256: 125f0e310f19582f45f65b82dca90f687fd9463338de592bea14c720e432c3fa
+    role: context
+  - path: data/natural_products/alkaloids/homoanatoxin-a.yaml
+    sha256: 532435867b2dc7742709c97d2e7a857d707bfdce2218e799b7fba96c4f7cd952
+    role: context
+  - path: data/natural_products/alkaloids/huperzine-a.yaml
+    sha256: 5cd4ffb5e2c23fa2cc74b8982cab87d6dc4fe1aaaac89ca759d117fdb364a5a4
+    role: context
+  - path: data/natural_products/alkaloids/hydroxysporine.yaml
+    sha256: 82203ab475b10e5e75bc4742963c5d1eb7ea98aa28ac2ea2c8e961d0d98ac163
+    role: context
+  - path: data/natural_products/alkaloids/ilicicolin-h.yaml
+    sha256: a40244c649b727e078fae647300d2be11f9abd1616d865fe7c3d50e48be62bda
+    role: context
+  - path: data/natural_products/alkaloids/ilicicolin-j.yaml
+    sha256: 83af9c59c72e30686a5bce5d8d725afa9b1475d36aa7609c676fbd6f5d759057
+    role: context
+  - path: data/natural_products/alkaloids/iminimycin-a.yaml
+    sha256: c3d760bfba7f1a604735bf4d3a4ba4d04225870643d0e0dddc5edd172372ec00
+    role: context
+  - path: data/natural_products/alkaloids/iminimycin-b.yaml
+    sha256: 486bec3a8bb7fe97f77bce427b87ccb1d0e965338fabfde34cc8d0af8055e0bc
+    role: context
+  - path: data/natural_products/alkaloids/imizoquin-c.yaml
+    sha256: 67fc96ff1f98fa217c3533ee1c0ae689c339e8c5580d1a3ab580193c8edba624
+    role: context
+  - path: data/natural_products/alkaloids/imizoquin-d.yaml
+    sha256: d651476e0ef9ae0622f52517b8c89e098692146c1e7be603668a1ce25f0ebed6
+    role: context
+  - path: data/natural_products/alkaloids/indimicin-a.yaml
+    sha256: 4867b4ccd262132aab7d66c81d7a418c1f6f81bbfebcd7a8ba6e82fe0ba526df
+    role: context
+  - path: data/natural_products/alkaloids/indimicin-b.yaml
+    sha256: 8c02b3b43dc1a267c31cc4940d7d65383aa8dbd58bc74a61f9e1a7693b513d78
+    role: context
+  - path: data/natural_products/alkaloids/indimicin-c.yaml
+    sha256: 1f331e4e464f472c02a4417dd4fe03bd908003032b7b5b9199d25da68fa5ad2e
+    role: context
+  - path: data/natural_products/alkaloids/indimicin-d.yaml
+    sha256: f113324530458ad4f2d148f97b83e1972ed461158c6b0a762eaf9c358cc6b5ab
+    role: context
+  - path: data/natural_products/alkaloids/indimicin-e.yaml
+    sha256: d2aa92f1a00cd22dae3faa532ebb3ab4542427c329646b066fe8b62cecb56b18
+    role: context
+  - path: data/natural_products/alkaloids/indolmycin.yaml
+    sha256: 48aa7a59f48d7a586c2b1f67ed695a51aabb46641c5d953874745b9ab3257ac6
+    role: context
+  - path: data/natural_products/alkaloids/iodinin.yaml
+    sha256: 883f3b3f30ad1e52c4852386e47611cdd1624bf2fcb81c41fefd4e7f5f596c7b
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/extract_pubchem_bioassay.py
+    sha256: 24f9d794e7cf97c420351cb751f8767f7d81a5f22aed01669b2318d6755e7c00
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/lotus_exclusions.py
+    sha256: 6352cac7c587eab5a56d907c523cc899d02d197009081624bf8649c675ee30f7
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+    role: context
+  - path: src/naturalproductmech/curate/xref_exclusions.py
+    sha256: 17c3d9e7794bae596b22cf19a2dd5bc2169475d6fea81ea4e6f1781a53af9157
+    role: context
+  - path: src/naturalproductmech/grading.py
+    sha256: ece54c4a2c0803f034ac59de51b1006cf79ea8d6b6256d75757d4adb88ea9630
+    role: context
+  - path: src/naturalproductmech/graph_components.py
+    sha256: 10f08517869f482954fd583fd19d5750ef286a76297c231e6c9a5ba8dc023e17
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: tests/test_lotus_exclusions.py
+    sha256: 3e3aa443714202e1bc41f0fb236e6bf69caabd68a16af23b972323f5f846386c
+    role: context
+  - path: tests/test_seed_skeleton.py
+    sha256: 72ec216fb0ed365b09f1cfb64fb06c701c50b5d7c2df409d8dbf613d302803bf
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 260, batch 026, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated targets in earlier
+    batch commits (publication tracked separately). At selection, 310 of 3116 current
+    records had campaign coverage and 2806 remained. The population search included
+    ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+targets:
+- target_id: naturalproductmech:mibig-97ae0794cf
+  path: data/natural_products/alkaloids/iodinin.yaml
+  label: iodinin
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/alkaloids/iodinin.yaml
+    role: Curator-owned assertions, inline mechanisms, discussions and audit history
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  command: just validate-strict data/natural_products/alkaloids/iodinin.yaml --out
+    /private/tmp/npm-review-work/260/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-22T03:46:55.449361Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All3116 corpus records are filed exactly where PATHS.tsv pins them.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=71a28cf520dc96a7107b00d87703ba1e59acc02c
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-025-baseline-verify-corpus-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-025 execution on 71a28cf520dc96a7107b00d87703ba1e59acc02c
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-22T02:47:33.579477Z;
+    finished 2026-10-22T02:47:57.474870Z. Exact original receipt: /private/tmp/npm-native-checks/batch-025/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-025/verify-corpus.log. Reused
+    for batch026 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,190 tracked byte streams and modes (208,330,337 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch026. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All3116 records reproduce byte-for-byte from data/raw/.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=71a28cf520dc96a7107b00d87703ba1e59acc02c
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-025-baseline-verify-reproduction-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-025 execution on 71a28cf520dc96a7107b00d87703ba1e59acc02c
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-22T02:47:33.576606Z;
+    finished 2026-10-22T02:48:13.940243Z. Exact original receipt: /private/tmp/npm-native-checks/batch-025/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-025/verify-reproduction.log.
+    Reused for batch026 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,190 tracked byte streams and modes (208,330,337 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch026. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The canonical review-queue command completed with actual exit0 on the fresh
+    main base; exact output, warnings and skips remain in the pinned transcript.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=71a28cf520dc96a7107b00d87703ba1e59acc02c
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-025-baseline-review-queue-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just review-queue --tsv /private/tmp/npm-review-queue-batch-025.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-025 execution on 71a28cf520dc96a7107b00d87703ba1e59acc02c
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-22T02:47:33.576310Z;
+    finished 2026-10-22T02:47:48.002005Z. Exact original receipt: /private/tmp/npm-native-checks/batch-025/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-025/review-queue.log. Reused
+    for batch026 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,190 tracked byte streams and modes (208,330,337 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch026. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: Configured identifier-label gate passed with13449canonical matches,646synonym
+    matches and35configured exceptions.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=71a28cf520dc96a7107b00d87703ba1e59acc02c
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-025-baseline-validate-products-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-025 execution on 71a28cf520dc96a7107b00d87703ba1e59acc02c
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-22T02:47:33.580281Z;
+    finished 2026-10-22T02:48:13.699538Z. Exact original receipt: /private/tmp/npm-native-checks/batch-025/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-025/validate-products.log. Reused
+    for batch026 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,190 tracked byte streams and modes (208,330,337 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch026. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+- check_id: shared-qc
+  name: Full repository quality gate on the fresh main baseline
+  status: passed
+  required: true
+  summary: 'Actual canonical just qc retry002 terminal0. All gates passed: lint;22
+    governed artifacts; documentation;15 inventory provenance;44 source queue entries;999
+    tests passed,4 skipped,2 dependency warnings;strict3116 zeroerrors;generated site;3116
+    byte-identical reproduction;PATHS integrity;corpus report.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=71a28cf520dc96a7107b00d87703ba1e59acc02c
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-025-baseline-qc-attempt-002
+    PYTHONDONTWRITEBYTECODE=1 just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-025 execution on 71a28cf520dc96a7107b00d87703ba1e59acc02c
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-22T02:52:11.932860Z;
+    finished 2026-10-22T02:57:35.691390Z. Exact original receipt: /private/tmp/npm-native-checks/batch-025/qc-attempt-002.json;
+    transcript: /private/tmp/npm-native-checks/batch-025/qc-attempt-002.log. Reused
+    for batch026 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,190 tracked byte streams and modes (208,330,337 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch026. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+- check_id: R260-FULL-OWNER
+  name: Complete owner and seven-set fidelity
+  status: passed
+  required: true
+  summary: All ten successful official intakes and post-intake root reads precede
+    authoring. Every complete owner and seven-source-set join matches the prepared
+    bytes. The indolmycin pathway, three inline graphs and discussions are explicitly
+    in scope; they are not validated merely by this inventory.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - R260-OWNER
+  - R260-LOCAL
+  - R260-PUBCHEM-PREP
+- check_id: R260-ASSAY-FIDELITY
+  name: Exact deposited assay fields and scope
+  status: passed
+  required: true
+  summary: All nine written Active calls and blank numeric endpoints match exact original
+    raw and deposited sample tuples. The current summary has 91 rows; 18 selected
+    rows and 48 individual sample results were read, while 73 other current rows remain
+    outside this scientific audit.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - R260-OWNER
+  - R260-ASSAY-PLAN
+  - R260-ASSAY-ROOT-READ
+  - R260-ASSAY-SUMMARY
+  - R260-SUMMARY-COUNTS
+  - R260-EXTRACTOR
+- check_id: S260-C-LOCAL
+  name: Actual source fidelity
+  status: passed
+  required: true
+  summary: Complete owner and all seven raw source sets agree with the fresh successful
+    intake and prepared source guards; source fidelity does not itself prove every
+    scientific claim.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - S260-E-LOCAL
+  - S260-E-GUARDS
+- check_id: S260-C-NATIVE-ENDPOINT
+  name: Exact native iodinin endpoint
+  status: passed
+  required: true
+  summary: Named iodinin 6 native WT/loss/rescue and exact deposited source interval
+    provide positive biological support.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - S260-E-IOD19-S13
+  - S260-E-IOD-NATIVE-GB
+  - S260-E-ROOT-IOD-SCOPE
+  - S260-E-SOURCE-PRECISION
+- check_id: S260-C-ENZYME
+  name: Exact purified substrate/product scope
+  status: passed
+  required: true
+  summary: Original SI physical page 16 (Supplementary Figure 6, panel c) demonstrates
+    purified XpzH conversion of 4 to 5/6; introduced-cell experiments remain separately
+    described.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - S260-E-IOD19-SI
+  - S260-E-IOD19-S16
+  - S260-E-SOURCE-PRECISION
+- check_id: S260-C-CORRELATION
+  name: Imported correlation-method applicability
+  status: unavailable
+  required: true
+  summary: Direct expression/product correlation remains required unavailable at the
+    inspected source scope; full-main absence is not asserted and strong grades remain
+    supported by other methods.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - S260-E-IOD19-SI
+  - S260-E-IOD19-PREVIEW
+  - S260-E-ROOT-IOD-SCOPE
+  - S260-E-SOURCE-PRECISION
+- check_id: S260-C-OCCURRENCES
+  name: Every emitted occurrence primary
+  status: unavailable
+  required: true
+  summary: OPC15 source is positive; the separate exact 1979 Brevibacterium occurrence
+    remains required unavailable.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - S260-E-IOD88-MAIN
+  - S260-E-IOD79-METADATA
+  - S260-E-LIMITS
+- check_id: S260-C-ASSAYS
+  name: Reported sample and endpoint scope
+  status: passed
+  required: true
+  summary: The separate exact sample/protocol audit supports the retained nine observations
+    within yeast-growth limits; its additive summary-count correction is mandatory.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - S260-E-ROOT-ASSAYS
+  - S260-E-ROOT-ASSAY-COUNT
+  - S260-E-ROOT-SAMPLE
+- check_id: C260-C-REPRESENTATION
+  name: Stored chemical representation and complete source row
+  status: passed
+  required: true
+  summary: Fresh intake derivation agrees with the stored graph; the source selector,
+    full row and prepared snapshot were independently rechecked.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - C260-OWNER
+  - C260-GRAPH
+  - C260-COMPARISON
+- check_id: C260-C-LITERAL-SCOPE
+  name: Exact literal chemical authority scope
+  status: passed
+  required: true
+  summary: Every literal identifier is preserved and measured against its exact returned
+    representation; default encodings and returned short-NPAtlas spelling remain explicit.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - C260-PRIMARY-1988
+  - C260-SOURCE-LIMITS
+  - C260-PRIMARY-COMPARISON
+  - C260-ORIGINAL-SAMPLE
+  - C260-OWNER
+  - C260-GRAPH
+  - C260-COMPARISON
+  - C260-AUTHORITY-COMPARISON
+  - C260-AUTHORITY-DETAIL
+  - C260-AUTH-1
+  - C260-AUTH-2
+  - C260-AUTH-3
+  - C260-AUTH-4
+- check_id: C260-C-PRIMARY-IDENTITY
+  name: Original exact compound constitution and depiction
+  status: passed
+  required: true
+  summary: The original 1988 Figure3 final product I independently reconstructs neutral
+    achiral 1,6-dihydroxyphenazine bis-N-oxide and matches owner Standard/fixed-H
+    identity. Literal CID135441735, current MIBiG and original SID473387 atom/bond/charge
+    graph all match. Original deposited JSON contains no stereo declarations and has
+    net charge zero from two N+ and two oxide O− atoms. ChEBI192372 is instead a dianion
+    and is not an exact neutral-owner grounding.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - C260-PRIMARY-1988
+  - C260-SOURCE-LIMITS
+  - C260-PRIMARY-COMPARISON
+  - C260-ORIGINAL-SAMPLE
+  - C260-OWNER
+  - C260-GRAPH
+  - C260-COMPARISON
+  - C260-AUTHORITY-COMPARISON
+  - C260-AUTHORITY-DETAIL
+  - C260-AUTH-1
+  - C260-AUTH-2
+  - C260-AUTH-3
+  - C260-AUTH-4
+- check_id: C260-C-ABSOLUTE-SCOPE
+  name: Independent experimental stereochemical scope
+  status: not_applicable
+  required: false
+  summary: The exact primary molecule is achiral; no carbon absolute hand applies.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - C260-PRIMARY-1988
+  - C260-SOURCE-LIMITS
+  - C260-PRIMARY-COMPARISON
+  - C260-ORIGINAL-SAMPLE
+  - C260-OWNER
+  - C260-GRAPH
+  - C260-COMPARISON
+  - C260-AUTHORITY-COMPARISON
+  - C260-AUTHORITY-DETAIL
+  - C260-AUTH-1
+  - C260-AUTH-2
+  - C260-AUTH-3
+  - C260-AUTH-4
+evidence:
+- evidence_id: R260-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/iodinin.yaml
+  locator: Complete actual owner, all optional fields and history events
+  accessed_at: '2026-10-22T03:48:14.060921Z'
+  support: supports
+  summary: 'Root read the complete post-intake owner: 2 occurrence, 1 producer and
+    1 locus assertions. Present optional fields: bioactivities, bioactivity_summary.
+    No external component is present.'
+  snapshot_sha256: 883f3b3f30ad1e52c4852386e47611cdd1624bf2fcb81c41fefd4e7f5f596c7b
+- evidence_id: R260-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/260/local-sources.json
+  locator: Complete resolved owner and all six captured source sets; seventh set independently
+    compared
+  accessed_at: '2026-10-22T03:48:14.060921Z'
+  support: context_only
+  summary: Exact captured rows and separately parsed PubChem rows match frozen preparation.
+    Inventory equality does not establish experimental support.
+  snapshot_sha256: 1a218c5ecc642f5ff90b2c966388c7f5958221daf201742ad4219c52c78362ae
+- evidence_id: R260-PUBCHEM-PREP
+  kind: record_content
+  reference: data/raw/pubchem_bioassay.tsv
+  locator: Complete exact-key retained rows and no-data sentinels
+  accessed_at: '2026-10-22T03:48:14.060921Z'
+  support: context_only
+  summary: This owner has 9 retained rows and 9 written observations. Across the cohort
+    there are nine observations plus three no-data sentinels. Current-only summary
+    rows are separate.
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: R260-Q26269004
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q26269004
+  locator: 'Exact retained six-entity response: English label and P225/P685 for this
+    entity'
+  accessed_at: '2026-10-22T00:49:24.207073Z'
+  support: context_only
+  summary: Literal organism name/taxon routing agrees; this is not experimental occurrence,
+    stock equivalence or production evidence.
+  snapshot_sha256: 8ff9c49df17c1dd73e41b30716f1488580e3447e2b9050d3ff18ffe49cd02b09
+- evidence_id: R260-Q4962548
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q4962548
+  locator: 'Exact retained six-entity response: English label and P225/P685 for this
+    entity'
+  accessed_at: '2026-10-22T00:49:24.207073Z'
+  support: context_only
+  summary: Literal organism name/taxon routing agrees; this is not experimental occurrence,
+    stock equivalence or production evidence.
+  snapshot_sha256: 8ff9c49df17c1dd73e41b30716f1488580e3447e2b9050d3ff18ffe49cd02b09
+- evidence_id: R260-TAXON-CONTEXT
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&retmode=xml&id=1883,1888,1911,2014,5059,31943,67263,332952,455632,1427518,2878388
+  locator: Relevant TaxId/ScientificName/rank/parent and OtherNames in 11-record response
+  accessed_at: '2026-10-22T00:49:24.410170Z'
+  support: context_only
+  summary: NCBI1427518 names Xenorhabdus szentirmaii DSM 16338 as a strain. NCBI31943
+    retains Chromobacterium iodinum as historical naming for Brevibacterium iodinum,
+    and NCBI 2014 retains Nocardia dassonvillei under Nocardiopsis dassonvillei. These
+    routes support identifier context, not congener identity or native production
+    experiments.
+  snapshot_sha256: 6b624207b24014e6275b86eb320c96296ec61c341039941e988c41ba260119fe
+- evidence_id: R260-IDENTIFIER-COUNT
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch026/root-identifier-route-count-addendum-001.json
+  locator: 'counts and corrected_claim: 12 literal LOTUS routes, six entities and
+    11 taxa'
+  accessed_at: '2026-10-22T01:11:04.134377Z'
+  support: context_only
+  summary: The additive root count check corrects the preserved original prose count.
+    Literal identifier correspondence remains distinct from experimental occurrence
+    or production.
+  snapshot_sha256: de1aa684e6843ac4edb966f5468812fbfb75230d13f6811c1c086fae1d719526
+- evidence_id: R260-IMODULON
+  kind: database
+  reference: https://imodulondb.org/api/datasets
+  locator: Complete 20-organism/28-dataset official catalogue
+  accessed_at: '2026-10-22T00:49:24.303002Z'
+  support: context_only
+  summary: No emitted native producer is an exact organism/stock match in the returned
+    20-organism/28-dataset catalogue. E. coli and S. albidoflavus are broader contexts,
+    not evidence for an unspecified recombinant platform strain, gene-module membership
+    or expression-linked chemistry. No transcriptomic production claim is added.
+  snapshot_sha256: 155607e7023efdead5ebab3919279a0776d5665a7de9e28b67f02f8f521b0693
+- evidence_id: R260-ASSAY-PLAN
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch026/root-authoring/assay-source-plan-v2.json
+  locator: All 9 ordered observations/full raw-row hashes, 18 selected summary rows
+    and 48 exact SID result rows
+  accessed_at: '2026-10-22T01:14:37.811789Z'
+  support: context_only
+  summary: The plan preserves nine Active nonnumeric yeast-screen observations and
+    the CYTOTOXIC summary; no assay finding or numeric potency is selected.
+  snapshot_sha256: 48f8acf2caa511def3711a6540576774846f998728c3b8310a1a3678666c5e5c
+- evidence_id: R260-ASSAY-ROOT-READ
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch026/root-assay-source-read-001.json
+  locator: All 9 original descriptions and 48 exact SID 473387 result rows; count-only
+    correction separately bound
+  accessed_at: '2026-10-22T00:52:09.646222Z'
+  support: context_only
+  summary: Root read all retained protocols and results at their exact yeast context.
+    The separate count addendum preserves 91/18/73 summary scope.
+  snapshot_sha256: 0541fa5a03b1467a5c94db8c1d762c9d19e40e276239c00ea6b7b2c4a8a2e0cd
+- evidence_id: R260-ASSAY-SUMMARY
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/135441735/assaysummary/JSON
+  locator: 'Table.Columns/Table.Row: 18 selected tuples for 9 retained AIDs; 73 other
+    rows not scientifically audited'
+  accessed_at: '2026-10-22T00:49:22.543336Z'
+  support: supports
+  summary: Each retained Active tuple is present for SID473387. Separate Inactive
+    nonnumeric entries remain in the source; no current-only result replaces the owner.
+  snapshot_sha256: e402979743607649d1f00537775f24ad23f40dfa6736c6b00ae58945aae83fb0
+- evidence_id: R260-SAMPLE-IDENTITY
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch026/root-iodinin-sample-identity-read-001.json
+  locator: Complete original SID473387 JSON/SDF/currentCID/owner comparison; models
+    and pinned original inputs
+  accessed_at: '2026-10-22T00:55:35.307651Z'
+  support: context_only
+  summary: Independent original depositor-graph reconstruction matches the retained
+    achiral neutral phenazine dioxide at full Standard/fixed-H resolution. This does
+    not establish purity, native origin or a molecular target.
+  snapshot_sha256: 4cb11ee93f238fa187e265253e7670718d70bb33182b5219dd3f08639b66d71b
+- evidence_id: R260-SUMMARY-COUNTS
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch026/root-assay-summary-count-addendum-001.json
+  locator: Counts:91 total summary rows,18 selected rows,73 other rows
+  accessed_at: '2026-10-22T00:52:20.235736Z'
+  support: context_only
+  summary: The original narrative’s other 82 count was corrected additively. The 73
+    other current summary rows were not scientifically audited or inserted into the
+    owner.
+  snapshot_sha256: a707e4854a6e8b55a190e1bb956114a78e9cc83b75bda0e0858b8fdc8181e37c
+- evidence_id: R260-SEEDER
+  kind: record_content
+  reference: scripts/seed_from_sources.py
+  locator: classify_activity and source observation/summary projection
+  accessed_at: '2026-10-22T01:14:37.811789Z'
+  support: context_only
+  summary: ACTIVITY_CLASS_PATTERNS explicitly maps growth-inhibition wording to CYTOTOXIC.
+    This supports the retained broad class at the exact yeast-screen scope without
+    implying a cancer endpoint or enzyme target.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: R260-EXTRACTOR
+  kind: record_content
+  reference: scripts/extract_pubchem_bioassay.py
+  locator: rows_from_summary lines139–187 and metadata extraction
+  accessed_at: '2026-10-22T01:10:18.941566Z'
+  support: context_only
+  summary: The extractor retains Active nonnumeric rows; separate Inactive nonnumeric
+    summary entries are not coerced into Active or added as owner observations.
+  snapshot_sha256: 24f9d794e7cf97c420351cb751f8767f7d81a5f22aed01669b2318d6755e7c00
+- evidence_id: R260-CLASSIFIER-TESTS
+  kind: record_content
+  reference: tests/test_seed_skeleton.py
+  locator: Exact classifier and source-projection regression coverage
+  accessed_at: '2026-10-22T01:10:18.941566Z'
+  support: context_only
+  summary: Existing tests and source consumers are pinned; no code change or new assay
+    exclusion is proposed.
+  snapshot_sha256: 72ec216fb0ed365b09f1cfb64fb06c701c50b5d7c2df409d8dbf613d302803bf
+- evidence_id: R260-BIOACTIVITY-SCHEMA
+  kind: record_content
+  reference: src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: BioactivityClassEnum:CYTOTOXIC and observation fields
+  accessed_at: '2026-10-22T01:14:37.811789Z'
+  support: context_only
+  summary: BioactivityClassEnum lists CYTOTOXIC, and the schema defines observation
+    fields. Growth-inhibition title semantics come from the separately pinned seeder
+    ACTIVITY_CLASS_PATTERNS; the enum itself supplies no narrower endpoint definition.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: R260-AID-167
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/167/description/JSON
+  locator: 'PC_AssayContainer[6].assay.descr: complete description/results definitions/comments/xrefs'
+  accessed_at: '2026-10-22T00:49:22.645089Z'
+  support: supports
+  summary: The bub3 yeast strain is the experimental cellular context. The source
+    measures growth inhibition relative to vehicle controls and supplies a retained
+    Active result for SID473387/NSC402910. This is a phenotypic screen, not measured
+    human tumour efficacy, cell death, protein binding or enzyme inhibition. No quantitative
+    potency is written in the owner.
+  snapshot_sha256: b4b9c9a041ff4caf425f5ede794ba3d02bfd92aa21927ca5a8e8350bc838d6e1
+- evidence_id: R260-RESULT-167
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/167/JSON?sid=473387
+  locator: 'PC_AssaySubmit.assay.descr and data: exact SID473387/NSC402910 concentration-specific
+    result rows'
+  accessed_at: '2026-10-22T00:51:02.115476Z'
+  support: supports
+  summary: Exact deposited calls/concentration/growth-inhibition/replicate/range values
+    remain in the snapshot. They are not IC50 or affinity measurements and are not
+    copied into new quantitative owner fields.
+  snapshot_sha256: 80db9b4edb4164972a46d728441a03c420e688249a40438f9d9f3c7a4a7a1ff6
+- evidence_id: R260-AID-165
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/165/description/JSON
+  locator: 'PC_AssayContainer[5].assay.descr: complete description/results definitions/comments/xrefs'
+  accessed_at: '2026-10-22T00:49:22.645089Z'
+  support: supports
+  summary: The cln2 rad14 yeast strain is the experimental cellular context. The source
+    measures growth inhibition relative to vehicle controls and supplies a retained
+    Active result for SID473387/NSC402910. This is a phenotypic screen, not measured
+    human tumour efficacy, cell death, protein binding or enzyme inhibition. No quantitative
+    potency is written in the owner.
+  snapshot_sha256: b4b9c9a041ff4caf425f5ede794ba3d02bfd92aa21927ca5a8e8350bc838d6e1
+- evidence_id: R260-RESULT-165
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/165/JSON?sid=473387
+  locator: 'PC_AssaySubmit.assay.descr and data: exact SID473387/NSC402910 concentration-specific
+    result rows'
+  accessed_at: '2026-10-22T00:50:56.617695Z'
+  support: supports
+  summary: Exact deposited calls/concentration/growth-inhibition/replicate/range values
+    remain in the snapshot. They are not IC50 or affinity measurements and are not
+    copied into new quantitative owner fields.
+  snapshot_sha256: ed097f8c655a886528cecc83aa49b045efd9f5da8dee99ea4427714e82d4fa87
+- evidence_id: R260-AID-157
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/157/description/JSON
+  locator: 'PC_AssayContainer[3].assay.descr: complete description/results definitions/comments/xrefs'
+  accessed_at: '2026-10-22T00:49:22.645089Z'
+  support: supports
+  summary: The mec2-1 yeast strain is the experimental cellular context. The source
+    measures growth inhibition relative to vehicle controls and supplies a retained
+    Active result for SID473387/NSC402910. This is a phenotypic screen, not measured
+    human tumour efficacy, cell death, protein binding or enzyme inhibition. No quantitative
+    potency is written in the owner.
+  snapshot_sha256: b4b9c9a041ff4caf425f5ede794ba3d02bfd92aa21927ca5a8e8350bc838d6e1
+- evidence_id: R260-RESULT-157
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/157/JSON?sid=473387
+  locator: 'PC_AssaySubmit.assay.descr and data: exact SID473387/NSC402910 concentration-specific
+    result rows'
+  accessed_at: '2026-10-22T00:50:51.519734Z'
+  support: supports
+  summary: Exact deposited calls/concentration/growth-inhibition/replicate/range values
+    remain in the snapshot. They are not IC50 or affinity measurements and are not
+    copied into new quantitative owner fields.
+  snapshot_sha256: ac3fe24744ac49d9ee73f8b936eab5da454311322e15f495e480fd4c84df19ad
+- evidence_id: R260-AID-175
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/175/description/JSON
+  locator: 'PC_AssayContainer[7].assay.descr: complete description/results definitions/comments/xrefs'
+  accessed_at: '2026-10-22T00:49:22.645089Z'
+  support: supports
+  summary: The mlh1 rad18 yeast strain is the experimental cellular context. The source
+    measures growth inhibition relative to vehicle controls and supplies a retained
+    Active result for SID473387/NSC402910. This is a phenotypic screen, not measured
+    human tumour efficacy, cell death, protein binding or enzyme inhibition. No quantitative
+    potency is written in the owner.
+  snapshot_sha256: b4b9c9a041ff4caf425f5ede794ba3d02bfd92aa21927ca5a8e8350bc838d6e1
+- evidence_id: R260-RESULT-175
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/175/JSON?sid=473387
+  locator: 'PC_AssaySubmit.assay.descr and data: exact SID473387/NSC402910 concentration-specific
+    result rows'
+  accessed_at: '2026-10-22T00:51:01.945917Z'
+  support: supports
+  summary: Exact deposited calls/concentration/growth-inhibition/replicate/range values
+    remain in the snapshot. They are not IC50 or affinity measurements and are not
+    copied into new quantitative owner fields.
+  snapshot_sha256: 0a515f815def5ccc76afdf75b0d497e8ca2315e9ba2d5c87c7ac482f0f140814
+- evidence_id: R260-AID-177
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/177/description/JSON
+  locator: 'PC_AssayContainer[8].assay.descr: complete description/results definitions/comments/xrefs'
+  accessed_at: '2026-10-22T00:49:22.645089Z'
+  support: supports
+  summary: The rad18 yeast strain is the experimental cellular context. The source
+    measures growth inhibition relative to vehicle controls and supplies a retained
+    Active result for SID473387/NSC402910. This is a phenotypic screen, not measured
+    human tumour efficacy, cell death, protein binding or enzyme inhibition. No quantitative
+    potency is written in the owner.
+  snapshot_sha256: b4b9c9a041ff4caf425f5ede794ba3d02bfd92aa21927ca5a8e8350bc838d6e1
+- evidence_id: R260-RESULT-177
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/177/JSON?sid=473387
+  locator: 'PC_AssaySubmit.assay.descr and data: exact SID473387/NSC402910 concentration-specific
+    result rows'
+  accessed_at: '2026-10-22T00:51:02.370668Z'
+  support: supports
+  summary: Exact deposited calls/concentration/growth-inhibition/replicate/range values
+    remain in the snapshot. They are not IC50 or affinity measurements and are not
+    copied into new quantitative owner fields.
+  snapshot_sha256: c3e7aa1d0881e3fd8de3eb53404a9b54946f29cbe7aed5b31db0bb99e98ccf0f
+- evidence_id: R260-AID-155
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/155/description/JSON
+  locator: 'PC_AssayContainer[2].assay.descr: complete description/results definitions/comments/xrefs'
+  accessed_at: '2026-10-22T00:49:22.645089Z'
+  support: supports
+  summary: The rad50 yeast strain is the experimental cellular context. The source
+    measures growth inhibition relative to vehicle controls and supplies a retained
+    Active result for SID473387/NSC402910. This is a phenotypic screen, not measured
+    human tumour efficacy, cell death, protein binding or enzyme inhibition. No quantitative
+    potency is written in the owner.
+  snapshot_sha256: b4b9c9a041ff4caf425f5ede794ba3d02bfd92aa21927ca5a8e8350bc838d6e1
+- evidence_id: R260-RESULT-155
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/155/JSON?sid=473387
+  locator: 'PC_AssaySubmit.assay.descr and data: exact SID473387/NSC402910 concentration-specific
+    result rows'
+  accessed_at: '2026-10-22T00:50:51.416661Z'
+  support: supports
+  summary: Exact deposited calls/concentration/growth-inhibition/replicate/range values
+    remain in the snapshot. They are not IC50 or affinity measurements and are not
+    copied into new quantitative owner fields.
+  snapshot_sha256: d4c02f09e650e839b2e4dca3b20d9d9599d4fd418daad7611d7fbf17961122ec
+- evidence_id: R260-AID-151
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/151/description/JSON
+  locator: 'PC_AssayContainer[1].assay.descr: complete description/results definitions/comments/xrefs'
+  accessed_at: '2026-10-22T00:49:22.645089Z'
+  support: supports
+  summary: The rad50EPP+ yeast strain is the experimental cellular context. The source
+    measures growth inhibition relative to vehicle controls and supplies a retained
+    Active result for SID473387/NSC402910. This is a phenotypic screen, not measured
+    human tumour efficacy, cell death, protein binding or enzyme inhibition. No quantitative
+    potency is written in the owner.
+  snapshot_sha256: b4b9c9a041ff4caf425f5ede794ba3d02bfd92aa21927ca5a8e8350bc838d6e1
+- evidence_id: R260-RESULT-151
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/151/JSON?sid=473387
+  locator: 'PC_AssaySubmit.assay.descr and data: exact SID473387/NSC402910 concentration-specific
+    result rows'
+  accessed_at: '2026-10-22T00:50:45.684807Z'
+  support: supports
+  summary: Exact deposited calls/concentration/growth-inhibition/replicate/range values
+    remain in the snapshot. They are not IC50 or affinity measurements and are not
+    copied into new quantitative owner fields.
+  snapshot_sha256: e81bd0e23d398f4ad2baf797204bf4cecab9dcbcc3be2ffe00fb72ed0658722e
+- evidence_id: R260-AID-147
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/147/description/JSON
+  locator: 'PC_AssayContainer[0].assay.descr: complete description/results definitions/comments/xrefs'
+  accessed_at: '2026-10-22T00:49:22.645089Z'
+  support: supports
+  summary: The rad52 yeast strain is the experimental cellular context. The source
+    measures growth inhibition relative to vehicle controls and supplies a retained
+    Active result for SID473387/NSC402910. This is a phenotypic screen, not measured
+    human tumour efficacy, cell death, protein binding or enzyme inhibition. No quantitative
+    potency is written in the owner.
+  snapshot_sha256: b4b9c9a041ff4caf425f5ede794ba3d02bfd92aa21927ca5a8e8350bc838d6e1
+- evidence_id: R260-RESULT-147
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/147/JSON?sid=473387
+  locator: 'PC_AssaySubmit.assay.descr and data: exact SID473387/NSC402910 concentration-specific
+    result rows'
+  accessed_at: '2026-10-22T00:50:45.832012Z'
+  support: supports
+  summary: Exact deposited calls/concentration/growth-inhibition/replicate/range values
+    remain in the snapshot. They are not IC50 or affinity measurements and are not
+    copied into new quantitative owner fields.
+  snapshot_sha256: 405ef2ffdc997316b57a29593b8544f60234af4fe1e08453670acd32ec01b35a
+- evidence_id: R260-AID-161
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/161/description/JSON
+  locator: 'PC_AssayContainer[4].assay.descr: complete description/results definitions/comments/xrefs'
+  accessed_at: '2026-10-22T00:49:22.645089Z'
+  support: supports
+  summary: The sgs1 mgt1 yeast strain is the experimental cellular context. The source
+    measures growth inhibition relative to vehicle controls and supplies a retained
+    Active result for SID473387/NSC402910. This is a phenotypic screen, not measured
+    human tumour efficacy, cell death, protein binding or enzyme inhibition. No quantitative
+    potency is written in the owner.
+  snapshot_sha256: b4b9c9a041ff4caf425f5ede794ba3d02bfd92aa21927ca5a8e8350bc838d6e1
+- evidence_id: R260-RESULT-161
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/161/JSON?sid=473387
+  locator: 'PC_AssaySubmit.assay.descr and data: exact SID473387/NSC402910 concentration-specific
+    result rows'
+  accessed_at: '2026-10-22T00:50:56.125912Z'
+  support: supports
+  summary: Exact deposited calls/concentration/growth-inhibition/replicate/range values
+    remain in the snapshot. They are not IC50 or affinity measurements and are not
+    copied into new quantitative owner fields.
+  snapshot_sha256: 980fa1a3685d45afe170f0f7d7e22b94cdf4658c793d83e3f0ee23dbed291a5b
+- evidence_id: S260-E-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/260/local-sources.json
+  locator: Complete resolved owner and captured rows; exact seven-set equality checked
+  accessed_at: '2026-10-22T03:48:47.483355Z'
+  support: context_only
+  summary: Complete actual owner including any inline graph/pathway, six captured
+    source sets and separately compared seventh PubChem set match the prepared complete
+    reads.
+  snapshot_sha256: 1a218c5ecc642f5ff90b2c966388c7f5958221daf201742ad4219c52c78362ae
+- evidence_id: S260-E-CONSUMERS
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: LOTUS exclusion, producer/locus emission, method overrides and correction
+    order
+  accessed_at: '2026-10-22T03:48:47.483355Z'
+  support: context_only
+  summary: Static inspection covers exact LOTUS exclusions, source method grading
+    and producer/reference qualification order. Exact consumers have their own evidence
+    snapshots.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: S260-E-SCHEMA
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: ProducerEvidenceBasisEnum and ClusterLinkEvidenceEnum; conf/producer_evidence.tsv
+    and grading.py also read and pinned
+  accessed_at: '2026-10-22T03:48:47.483355Z'
+  support: context_only
+  summary: Producer tiers concern evidence in the named organism; cloned-locus experiments
+    are a distinct cluster question. Empty methods and a source assertion do not independently
+    assert native knockout or exact pure-enzyme proof.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: S260-E-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/260/science-search.json
+  locator: Exact read scope
+  accessed_at: '2026-10-22T03:48:47.489039Z'
+  support: context_only
+  summary: Exact current curated-decision search is retained. Its scope is the curation
+    tree; it does not establish absence of experimental evidence or all possible consumers.
+  snapshot_sha256: a41bbb091196916d1bec76d88f3f3de8c76b0ced65add7611881a32986d42639
+  search_scope: rg --no-ignore --hidden -n -F over curation using exact identifier,
+    label, full key and source accessions
+- evidence_id: S260-E-CURRENT-IOD
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0001868.4/
+  locator: Exact versioned compound, organism, locus and reference fields
+  accessed_at: '2026-10-22T00:50:38.969016Z'
+  support: context_only
+  summary: Current source annotation remains distinct from the retained raw row and
+    direct compound-specific primary experiments.
+  snapshot_sha256: d761b50a3957f569dcf6c89e5a3f15ffe4f72686f6850829548485197447dbbe
+- evidence_id: S260-E-GRADE-MAP
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/conf/producer_evidence.tsv
+  locator: Complete method-to-producer/cluster mapping and comments
+  accessed_at: '2026-10-22T01:16:11.391322Z'
+  support: context_only
+  summary: Native producer evidence and locus linkage are distinct. Positive native
+    knockout and enzyme assays can support strong grades while a separate imported
+    method remains unresolved.
+  snapshot_sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+- evidence_id: S260-E-GUARDS
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch026/science-authoring/source-row-guards.json
+  locator: entries 251..260, exact owner and all seven complete row sets
+  accessed_at: '2026-10-22T01:16:11.391322Z'
+  support: context_only
+  summary: All ten owner/seven-set guards are verified before any future output; actual
+    fresh selection and post-intake root reads remain required.
+  snapshot_sha256: 12de4619b7874925dfcb46c52517321251265b899c5f982d01b57782cd2cac15
+- evidence_id: S260-E-IOD-NATIVE-GB
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/nuccore/NIBV01000002.1
+  locator: Exact region 193424..204464, source/header and all 11 CDS qualifiers
+  accessed_at: '2026-10-22T00:59:12.658605Z'
+  support: context_only
+  summary: The submitted locus joins DSM16338/type material and the imported interval.
+    Xsze02205/02206 annotations are consistent with XpzH/G; no independent full sequence
+    or construct equivalence is asserted.
+  snapshot_sha256: 0f3a3b73432b4cf99574dee6113a3e852cbaa1ce7581270043837eb377fce543
+- evidence_id: S260-E-IOD-PRIMARY-PEER
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch026/review-support/iodinin1988-primary-static-pixel-peer-001.json
+  locator: Original 1988 Figure 3 graph static/pixel check
+  accessed_at: '2026-10-22T01:16:11.391322Z'
+  support: context_only
+  summary: Neutral achiral iodinin constitution agrees with the retained graph; no
+    proposed pathway arrow becomes a new enzyme experiment.
+  snapshot_sha256: 04d63e90d69d4df51fd7a30e72c34756f8b02d0a9b9e166ecb58194f94fd30ab
+- evidence_id: S260-E-IOD19-PREVIEW
+  kind: primary_source
+  reference: DOI:10.1038/s41589-019-0246-1
+  locator: Publisher abstract/preview only
+  accessed_at: '2026-10-21T20:10:02.345119Z'
+  support: partial
+  summary: The retained publisher body is a preview, not the full main. Detailed uninspected
+    expression/product-correlation support remains unresolved.
+  snapshot_sha256: 159e656f5630b39bc856c041afd9c447ea819dfef977d042726d7f0cf55dbe16
+- evidence_id: S260-E-IOD19-S13
+  kind: primary_source
+  reference: DOI:10.1038/s41589-019-0246-1
+  locator: 'Original SI physical page 13, Supplementary Figure 3: native wild type,
+    ΔxpzGH and complementation chromatograms'
+  accessed_at: '2026-10-21T20:10:30.724965Z'
+  support: partial
+  summary: Supplementary Figure 3 shows native loss/rescue with a small wild-type
+    iodinin 6 peak. The introduced rescue remains distinct from full-cluster de novo
+    host production.
+  snapshot_sha256: 13a327f6f45993c6fff7592a3c58a8d4a83c5af4bee46ff83e228d91897bc13b
+- evidence_id: S260-E-IOD19-S16
+  kind: primary_source
+  reference: DOI:10.1038/s41589-019-0246-1
+  locator: 'Original SI physical page 16, Supplementary Figure 6, panel c: purified
+    XpzH conversion of 4 to 5/6 with controls'
+  accessed_at: '2026-10-21T20:10:30.724965Z'
+  support: partial
+  summary: Supplementary Figure 6, panel c shows purified XpzH consumption of 4 to
+    5/6 with controls. Fed-cell experiments and full-cluster host sufficiency remain
+    separate claims.
+  snapshot_sha256: 648cc194e440da80ead78a30f24aab76fcf7d605d93d30b45b68a8e0b42efa94
+- evidence_id: S260-E-IOD19-SI
+  kind: primary_source
+  reference: DOI:10.1038/s41589-019-0246-1
+  locator: SI physical pages 1–4 source/method/function tables; Table S6 on physical
+    page 10; physical pages 13–17, Supplementary Figures 3–7; physical page 38 disc-assay
+    context and page 39 references
+  accessed_at: '2026-10-21T20:10:30.724965Z'
+  support: partial
+  summary: Exact iodinin 6 appears in DSM16338 wild type, disappears in ΔxpzGH and
+    is restored by introduced xpzGH. Fed-cell XpzGH and purified XpzH formation are
+    separate. Table S6 expression counts do not alone show transcript/product correlation.
+  snapshot_sha256: f4208df19e736e7ef858deb0ac06ba917fb3f0b7bf6b3320b02ff22cad22269c
+- evidence_id: S260-E-IOD79-METADATA
+  kind: database
+  reference: DOI:10.1039/P19790002416
+  locator: Exact DOI metadata for incorporation of deuterated shikimic acid
+  accessed_at: '2026-10-22T00:53:49.471542Z'
+  support: context_only
+  summary: Exact older Brevibacterium occurrence primary body remains inaccessible.
+    Adjacent DOI ending 2411 is a different paper and cannot replace this reference.
+  snapshot_sha256: b49fab7638aa34e1853a824c049186c20d41b39b261c67708d637c82464e3e5a
+- evidence_id: S260-E-IOD88-MAIN
+  kind: primary_source
+  reference: DOI:10.1271/BBB1961.52.301
+  locator: All six pages; native OPC15 isolation and Figure 3 physical page 5
+  accessed_at: '2026-10-22T00:51:19.348767Z'
+  support: partial
+  summary: Native Nocardiopsis dassonvillei OPC15 yields named iodinin compared to
+    authentic material; Figure 3 is a proposed pathway and no purified terminal reaction
+    is inferred.
+  snapshot_sha256: ebb9d3a0996204b04300c2dd465a5c4578cd865aa144db4253d4954a7cdd6b23
+- evidence_id: S260-E-LIMITS
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch026/review-support/source-notes.json
+  locator: All five record narratives, source_access_boundaries and timing
+  accessed_at: '2026-10-22T01:16:11.391322Z'
+  support: context_only
+  summary: Original evidence, unresolved retrievals and source-specific read boundaries
+    are retained. Source access gaps do not prove false production or absence.
+  snapshot_sha256: 345b35061209ce93f6c11f002b4f1b60a43d02eec1e9ab97b87837ff33aea9eb
+- evidence_id: S260-E-ROOT-ASSAY-COUNT
+  kind: record_content
+  reference: Retained independent source-read receipt
+  locator: Receipt scope, actual source inputs and explicitly recorded limits
+  accessed_at: '2026-10-22T01:16:11.391322Z'
+  support: context_only
+  summary: 'The current summary has 91 rows: 18 selected and 73 other rows/AIDs not
+    read; 48 exact-SID result rows were read. This does not claim review of all 91
+    assays.'
+  snapshot_sha256: a707e4854a6e8b55a190e1bb956114a78e9cc83b75bda0e0858b8fdc8181e37c
+- evidence_id: S260-E-ROOT-ASSAYS
+  kind: record_content
+  reference: Retained independent source-read receipt
+  locator: Receipt scope, actual source inputs and explicitly recorded limits
+  accessed_at: '2026-10-22T01:16:11.391322Z'
+  support: context_only
+  summary: The nine retained yeast-growth observations were separately source audited;
+    no duplicate assay finding is proposed. The original summary count is corrected
+    by the mandatory additive count receipt.
+  snapshot_sha256: 0541fa5a03b1467a5c94db8c1d762c9d19e40e276239c00ea6b7b2c4a8a2e0cd
+- evidence_id: S260-E-ROOT-IOD-SCOPE
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch026/root-iodinin-biosynthesis-read-001.json
+  locator: Receipt actual read scope and exact original inputs
+  accessed_at: '2026-10-22T01:16:11.391322Z'
+  support: context_only
+  summary: Independent reading of original SI physical pages 13/16 (Supplementary
+    Figures 3 and 6, panel c) and the 1988 Figure 3 confirms native loss/rescue and
+    purified chemistry. Two-replicate FPKM alone does not close transcript/product
+    correlation.
+  snapshot_sha256: 1c5e6af109d93c08b87bf35ed80a6b66a5a54dc148de553a5db6cf88d4a41a15
+- evidence_id: S260-E-ROOT-SAMPLE
+  kind: record_content
+  reference: Retained independent source-read receipt
+  locator: Receipt scope, actual source inputs and explicitly recorded limits
+  accessed_at: '2026-10-22T01:16:11.391322Z'
+  support: context_only
+  summary: Exact deposited iodinin sample JSON/SDF Standard/fixed-H identity is positive;
+    chemical identity and assay readout interpretation remain distinct.
+  snapshot_sha256: 4cb11ee93f238fa187e265253e7670718d70bb33182b5219dd3f08639b66d71b
+- evidence_id: S260-E-ROUTING
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch026/review-support/consumer-routing-notes.json
+  locator: indol1978_exact_exclusion, indol_existing_method_override, iodinin_method_scope
+    and unsupported_routes
+  accessed_at: '2026-10-22T01:16:11.391322Z'
+  support: context_only
+  summary: Existing consumed LOTUS exclusion is distinct from unsupported taxon/identity
+    migration. Native method override and positive iodinin experiments remain preserved.
+  snapshot_sha256: ee2de92481140b213c7d95c3c81b578fd55b986d5c95d1c407bc591d18b5bc0f
+- evidence_id: S260-E-SOURCE-PRECISION
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch026/review-support/source-precision-addendum-001.json
+  locator: changes[0:3] and pinned original-source/root/peer inputs
+  accessed_at: '2026-10-22T01:18:03.060209Z'
+  support: context_only
+  summary: C/D values 7/8 in the historical source note are current MIBiG compound
+    indices, not independently read original 2017 figure labels. Iodinin physical
+    pages 13 and 16 correspond to Supplementary Figures 3 and 6, panel c. These source-locator
+    clarifications change no biological endpoint.
+  snapshot_sha256: 460dd88bfccd968155df7473c71663f93ae821936ac9da221a2f7a6200dcfa1a
+- evidence_id: C260-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/iodinin.yaml
+  locator: Complete owner and all seven matching source-row sets; no referenced components
+  accessed_at: '2026-10-22T03:49:01.741566Z'
+  support: supports
+  summary: 'The complete owner denotes iodinin under naturalproductmech:mibig-97ae0794cf.
+    All source selectors, versions and complete row digests are retained in COMPARISON:
+    [{"row_sha256": "5cc4aa387a25fd30cf82618592a78497d6f8e2c147c0bc31f6c6fb8b4f187704",
+    "selector": "BGC0001868:1", "version": "4"}]. The official intake and prepared
+    owner bytes agree.'
+  snapshot_sha256: 883f3b3f30ad1e52c4852386e47611cdd1624bf2fcb81c41fefd4e7f5f596c7b
+- evidence_id: C260-GRAPH
+  kind: validation
+  reference: /private/tmp/npm-review-work/260/chemistry.json
+  locator: Fresh intake RDKit result and frozen Standard/fixed-H comparison
+  accessed_at: '2026-10-22T03:46:54.172332Z'
+  support: supports
+  summary: The stored SMILES recomputes to NBMOVCYIGUDQJE-UHFFFAOYSA-N, formula C12H8N2O4,
+    formal charge 0; stored InChI/key agree. These are representation checks, not
+    experimental identity proof.
+  snapshot_sha256: 2c8cbb122bc7419a998899b7be90253e3df1c695ac199d136398b047d56c39ae
+- evidence_id: C260-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch026/chemistry-prep/retained-graph-comparison.json
+  locator: Record 260; exact source rows and each graph comparison
+  accessed_at: '2026-10-22T00:49:03.130128Z'
+  support: supports
+  summary: Exact Standard, fixed-H, formula, charge and stereo comparisons of the
+    retained owner and complete raw rows; current authority responses and primary
+    proof are separate evidence.
+  snapshot_sha256: 7a667299fde0361789e4ae38c38fb7274e08d2c3ff62a49eecb353f1ac5beab2
+- evidence_id: C260-LOCAL-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/260/chemistry-search-receipt.json
+  locator: Exact full key, label, slug and source selector in raw/owner/curation trees
+  accessed_at: '2026-10-22T03:49:02.054808Z'
+  support: supports
+  summary: Ignored-inclusive bounded search preserves all matching paths; an absent
+    curation decision does not imply a missing scientific source.
+  snapshot_sha256: 306a04b35d12d3e2b9c2f0ce7aecfeffa1556c333b801e2ec9cf4a450f7b04a2
+  search_scope: rg --no-ignore --hidden; data/natural_products, data/raw and curation;
+    exact full key, current label, slug and BGC:compound_index. No claim beyond these
+    trees.
+- evidence_id: C260-AUTHORITY-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch026/chemistry-prep/authority-graph-comparison.json
+  locator: Complete literal Standard/fixed-H, formula, charge and stereo comparison;
+    exact source payload pins retained
+  accessed_at: '2026-10-22T00:52:11.308022Z'
+  support: supports
+  summary: Current authority graphs and source-specific serialization differences
+    are independently compared. Database agreement is not primary natural-hand proof.
+  snapshot_sha256: f3fa6b577e0d95189586bd8ca2f0a3159f534de5db65f5572f80172626c8caad
+- evidence_id: C260-AUTHORITY-DETAIL
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch026/chemistry-prep/source-plan-002.json
+  locator: Complete literal Standard/fixed-H, formula, charge and stereo comparison;
+    exact source payload pins retained
+  accessed_at: '2026-10-22T01:14:09.652261Z'
+  support: supports
+  summary: Current authority graphs and source-specific serialization differences
+    are independently compared. Database agreement is not primary natural-hand proof.
+  snapshot_sha256: 7b14ecea6969197352db81764ddc7893c4d25e74e306ee06003076a9678d8a55
+- evidence_id: C260-AUTH-1
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0001868.4/annotations.json
+  locator: Complete retained payload /private/tmp/npm-review-work/shared-next-batch026/chemistry-prep/phase001-public/BGC0001868.4.json
+  accessed_at: '2026-10-22T00:50:38.969016Z'
+  support: supports
+  summary: Exact source representation at its recorded access time; primary identity
+    and natural hand are assessed separately.
+  snapshot_sha256: d761b50a3957f569dcf6c89e5a3f15ffe4f72686f6850829548485197447dbbe
+- evidence_id: C260-AUTH-2
+  kind: authority
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/135441735/SDF
+  locator: Complete retained payload /private/tmp/npm-review-work/shared-next-batch026/chemistry-prep/phase001-public/pubchem-135441735.sdf
+  accessed_at: '2026-10-22T00:50:39.748649Z'
+  support: supports
+  summary: Exact source representation at its recorded access time; primary identity
+    and natural hand are assessed separately.
+  snapshot_sha256: ebcc09edeeaf783a229a0605780be5e33c7961dfaa16dd44ed2cd7a5f35ae9cc
+- evidence_id: C260-AUTH-3
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/192372/
+  locator: Complete retained payload /private/tmp/npm-review-work/shared-next-batch026/chemistry-prep/phase006-public/CHEBI192372.json
+  accessed_at: '2026-10-22T00:51:58.425343Z'
+  support: supports
+  summary: Exact source representation at its recorded access time; primary identity
+    and natural hand are assessed separately.
+  snapshot_sha256: 4b0bffb3425ed2b01739a0d4321f4976761e9e6c1396282544443be520ac044c
+- evidence_id: C260-AUTH-4
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/192372/
+  locator: Complete retained payload /private/tmp/npm-review-work/shared-next-batch026/chemistry-prep/phase006-public/CHEBI192372.mol
+  accessed_at: '2026-10-22T00:51:58.431512Z'
+  support: supports
+  summary: Exact source representation at its recorded access time; primary identity
+    and natural hand are assessed separately.
+  snapshot_sha256: 9f72599c5260f4991c147fb7c2411fe21933dc9c11ed46240f32b6e897a81e39
+- evidence_id: C260-CHEBI-SEARCH-1
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=NBMOVCYIGUDQJE-UHFFFAOYSA-N&size=100
+  locator: Complete bounded key/name response /private/tmp/npm-review-work/shared-next-batch026/chemistry-prep/phase002-public/chebi-key-260.json
+  accessed_at: '2026-10-22T00:50:59.082378Z'
+  support: supports
+  summary: HTTP404; exact source response and candidate eligibility preserved.
+  snapshot_sha256: 145e7a472134ae4c66aefe06b0455997e2b8f92a93409361504c4acd7808e75b
+  search_scope: Official ChEBI exact literal key/name request, size100; complete returned
+    payload. No global absence inference.
+- evidence_id: C260-CHEBI-SEARCH-2
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=iodinin&size=100
+  locator: Complete bounded key/name response /private/tmp/npm-review-work/shared-next-batch026/chemistry-prep/phase003-public/chebi-name-260.json
+  accessed_at: '2026-10-22T00:51:17.480525Z'
+  support: supports
+  summary: HTTP200; exact source response and candidate eligibility preserved.
+  snapshot_sha256: 2698466ade7feea77b57c0b3e1b41e39e9a607b1facd5ff5def469c6cb9c8077
+  search_scope: Official ChEBI exact literal key/name request, size100; complete returned
+    payload. No global absence inference.
+- evidence_id: C260-PRIMARY-1988
+  kind: primary_source
+  reference: https://www.jstage.jst.go.jp/article/bbb1961/52/2/52_2_301/_pdf
+  locator: Original printed page 305 / physical 5, Figure 3 final product I; retained
+    snapshot /private/tmp/npm-review-work/shared-next-batch026/review-support/public-003/iodinin1988-main.pdf
+  accessed_at: '2026-10-22T00:51:19.348767Z'
+  support: supports
+  summary: Neutral achiral 1,6-dihydroxyphenazine bis-N-oxide drawing; no suspicious
+    OCR mass digits or assay interpretation are copied.
+  snapshot_sha256: ebb9d3a0996204b04300c2dd465a5c4578cd865aa144db4253d4954a7cdd6b23
+- evidence_id: C260-SOURCE-LIMITS
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch026/chemistry-prep/source-notes.json
+  locator: 'Entry 260: observations, limitations, exact source rows and primary/authority
+    pins; retained snapshot /private/tmp/npm-review-work/shared-next-batch026/chemistry-prep/source-notes.json'
+  accessed_at: '2026-10-22T01:07:52.800562Z'
+  support: supports
+  summary: Source-specific identity precision and access limits; database agreement
+    does not establish natural hand.
+  snapshot_sha256: b0b98fb67ee5e734f33380efb9709e9fec86c6319059d220e788d10abf37b7c5
+- evidence_id: C260-PRIMARY-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch026/chemistry-prep/primary-mapping-002/iodinin1988-primary-comparison-001.json
+  locator: 'Exact target 260: atom/bond mapping, declared directions, source pins
+    and full graph comparison; retained snapshot /private/tmp/npm-review-work/shared-next-batch026/chemistry-prep/primary-mapping-002/iodinin1988-primary-comparison-001.json'
+  accessed_at: '2026-10-22T01:04:02.491143Z'
+  support: supports
+  summary: Literal source depiction reconstruction with explicit limits; no replacement
+    graph is selected.
+  snapshot_sha256: af6029efc98997f5a97a876948a00daf588420f6093aebc70726e02e0e042364
+- evidence_id: C260-ORIGINAL-SAMPLE
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch026/chemistry-prep/sample-identity-260.json
+  locator: SID473387 original type0 atom/bond/charge graph; SDF, current CID135441735
+    and owner comparisons; retained snapshot /private/tmp/npm-review-work/shared-next-batch026/chemistry-prep/sample-identity-260.json
+  accessed_at: '2026-10-22T00:52:46.006266Z'
+  support: supports
+  summary: Deposited neutral graph equality only; no purity, direct target or smooth-dose
+    inference.
+  snapshot_sha256: 93722d420ad8679a62969bc0394e7bdef2d6a8eca92d54d37ac2f57cbce946e6
+assessments:
+- assessment_id: R260-HISTORY
+  area: provenance
+  topic: Complete history and native status
+  outcome: supported
+  summary: 'Native status remains SEEDED and all 2 history actions retain their exact
+    order: [''SEEDED_FROM_SOURCES'', ''SEEDED_FROM_SOURCES'']. Prior curated/protein-reference
+    edits do not replace claim-level scientific assessment.'
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - R260-OWNER
+- assessment_id: R260-OPTIONAL
+  area: completeness
+  topic: Present optional assertions
+  outcome: supported
+  summary: Nine written yeast-screen observations and their CYTOTOXIC summary are
+    explicitly assessed below; no molecular-target field or causal graph is present.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - R260-OWNER
+  - R260-LOCAL
+  - R260-PUBCHEM-PREP
+- assessment_id: R260-FILING
+  area: representation
+  topic: Exact computed classification provenance
+  outcome: supported
+  summary: Exact-key NPClassifier version npclassifier.gnps2.org@2026-09-07 reproduces
+    filing, superclass/class and glycoside fields. Computed classification is not
+    independent natural-origin or mechanistic proof; any accepted identity correction
+    requires effective-key reclassification.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - R260-OWNER
+  - R260-LOCAL
+- assessment_id: R260-TAXON-SCOPE
+  area: provenance
+  topic: Taxonomic identifiers versus experimental stocks
+  outcome: supported
+  summary: NCBI1427518 names Xenorhabdus szentirmaii DSM 16338 as a strain. NCBI31943
+    retains Chromobacterium iodinum as historical naming for Brevibacterium iodinum,
+    and NCBI 2014 retains Nocardia dassonvillei under Nocardiopsis dassonvillei. These
+    routes support identifier context, not congener identity or native production
+    experiments.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - R260-OWNER
+  - R260-TAXON-CONTEXT
+  - R260-Q26269004
+  - R260-Q4962548
+- assessment_id: R260-ORGANISM-IDS
+  area: grounding
+  topic: Literal organism routing
+  outcome: supported
+  summary: The relevant literal P225/P685 routes match. The unchanged cohort contains
+    12 LOTUS rows across six organism entities; identifier correspondence does not
+    establish experimental stock or congener applicability.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - R260-OWNER
+  - R260-TAXON-CONTEXT
+  - R260-IDENTIFIER-COUNT
+  - R260-Q26269004
+  - R260-Q4962548
+- assessment_id: R260-IMODULON-SCOPE
+  area: completeness
+  topic: Native producer transcriptomic applicability
+  outcome: not_applicable
+  summary: No emitted native producer is an exact organism/stock match in the returned
+    20-organism/28-dataset catalogue. E. coli and S. albidoflavus are broader contexts,
+    not evidence for an unspecified recombinant platform strain, gene-module membership
+    or expression-linked chemistry. No transcriptomic production claim is added.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - R260-OWNER
+  - R260-IMODULON
+- assessment_id: R260-ASSAY-INVENTORY
+  area: scope
+  topic: Retained assay rows versus no-data sentinel
+  outcome: supported
+  summary: There are 9 exact-key retained rows, 9 written observations and 0 no-data
+    sentinel. A sentinel is not an assay; no retained raw-only overflow exists. Current-only
+    summary results remain separate.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - R260-OWNER
+  - R260-PUBCHEM-PREP
+- assessment_id: R260-ASSAY-00
+  area: scope
+  topic: bioactivities[0] AID167
+  outcome: supported
+  summary: The bub3 yeast strain is the experimental cellular context. The source
+    measures growth inhibition relative to vehicle controls and supplies a retained
+    Active result for SID473387/NSC402910. This is a phenotypic screen, not measured
+    human tumour efficacy, cell death, protein binding or enzyme inhibition. No quantitative
+    potency is written in the owner. The matching nonnumeric Inactive entry is preserved
+    in the source; the maintained extractor deliberately retains Active nonnumeric
+    observations.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - R260-OWNER
+  - R260-ASSAY-PLAN
+  - R260-ASSAY-SUMMARY
+  - R260-AID-167
+  - R260-RESULT-167
+  - R260-EXTRACTOR
+  - R260-SAMPLE-IDENTITY
+- assessment_id: R260-ASSAY-01
+  area: scope
+  topic: bioactivities[1] AID165
+  outcome: supported
+  summary: The cln2 rad14 yeast strain is the experimental cellular context. The source
+    measures growth inhibition relative to vehicle controls and supplies a retained
+    Active result for SID473387/NSC402910. This is a phenotypic screen, not measured
+    human tumour efficacy, cell death, protein binding or enzyme inhibition. No quantitative
+    potency is written in the owner. The matching nonnumeric Inactive entry is preserved
+    in the source; the maintained extractor deliberately retains Active nonnumeric
+    observations.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - R260-OWNER
+  - R260-ASSAY-PLAN
+  - R260-ASSAY-SUMMARY
+  - R260-AID-165
+  - R260-RESULT-165
+  - R260-EXTRACTOR
+  - R260-SAMPLE-IDENTITY
+- assessment_id: R260-ASSAY-02
+  area: scope
+  topic: bioactivities[2] AID157
+  outcome: supported
+  summary: The mec2-1 yeast strain is the experimental cellular context. The source
+    measures growth inhibition relative to vehicle controls and supplies a retained
+    Active result for SID473387/NSC402910. This is a phenotypic screen, not measured
+    human tumour efficacy, cell death, protein binding or enzyme inhibition. No quantitative
+    potency is written in the owner. The matching nonnumeric Inactive entry is preserved
+    in the source; the maintained extractor deliberately retains Active nonnumeric
+    observations.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - R260-OWNER
+  - R260-ASSAY-PLAN
+  - R260-ASSAY-SUMMARY
+  - R260-AID-157
+  - R260-RESULT-157
+  - R260-EXTRACTOR
+  - R260-SAMPLE-IDENTITY
+- assessment_id: R260-ASSAY-03
+  area: scope
+  topic: bioactivities[3] AID175
+  outcome: supported
+  summary: The mlh1 rad18 yeast strain is the experimental cellular context. The source
+    measures growth inhibition relative to vehicle controls and supplies a retained
+    Active result for SID473387/NSC402910. This is a phenotypic screen, not measured
+    human tumour efficacy, cell death, protein binding or enzyme inhibition. No quantitative
+    potency is written in the owner. The matching nonnumeric Inactive entry is preserved
+    in the source; the maintained extractor deliberately retains Active nonnumeric
+    observations.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - R260-OWNER
+  - R260-ASSAY-PLAN
+  - R260-ASSAY-SUMMARY
+  - R260-AID-175
+  - R260-RESULT-175
+  - R260-EXTRACTOR
+  - R260-SAMPLE-IDENTITY
+- assessment_id: R260-ASSAY-04
+  area: scope
+  topic: bioactivities[4] AID177
+  outcome: supported
+  summary: The rad18 yeast strain is the experimental cellular context. The source
+    measures growth inhibition relative to vehicle controls and supplies a retained
+    Active result for SID473387/NSC402910. This is a phenotypic screen, not measured
+    human tumour efficacy, cell death, protein binding or enzyme inhibition. No quantitative
+    potency is written in the owner. The matching nonnumeric Inactive entry is preserved
+    in the source; the maintained extractor deliberately retains Active nonnumeric
+    observations.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - R260-OWNER
+  - R260-ASSAY-PLAN
+  - R260-ASSAY-SUMMARY
+  - R260-AID-177
+  - R260-RESULT-177
+  - R260-EXTRACTOR
+  - R260-SAMPLE-IDENTITY
+- assessment_id: R260-ASSAY-05
+  area: scope
+  topic: bioactivities[5] AID155
+  outcome: supported
+  summary: The rad50 yeast strain is the experimental cellular context. The source
+    measures growth inhibition relative to vehicle controls and supplies a retained
+    Active result for SID473387/NSC402910. This is a phenotypic screen, not measured
+    human tumour efficacy, cell death, protein binding or enzyme inhibition. No quantitative
+    potency is written in the owner. The matching nonnumeric Inactive entry is preserved
+    in the source; the maintained extractor deliberately retains Active nonnumeric
+    observations.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - R260-OWNER
+  - R260-ASSAY-PLAN
+  - R260-ASSAY-SUMMARY
+  - R260-AID-155
+  - R260-RESULT-155
+  - R260-EXTRACTOR
+  - R260-SAMPLE-IDENTITY
+- assessment_id: R260-ASSAY-06
+  area: scope
+  topic: bioactivities[6] AID151
+  outcome: supported
+  summary: The rad50EPP+ yeast strain is the experimental cellular context. The source
+    measures growth inhibition relative to vehicle controls and supplies a retained
+    Active result for SID473387/NSC402910. This is a phenotypic screen, not measured
+    human tumour efficacy, cell death, protein binding or enzyme inhibition. No quantitative
+    potency is written in the owner. The matching nonnumeric Inactive entry is preserved
+    in the source; the maintained extractor deliberately retains Active nonnumeric
+    observations.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - R260-OWNER
+  - R260-ASSAY-PLAN
+  - R260-ASSAY-SUMMARY
+  - R260-AID-151
+  - R260-RESULT-151
+  - R260-EXTRACTOR
+  - R260-SAMPLE-IDENTITY
+- assessment_id: R260-ASSAY-07
+  area: scope
+  topic: bioactivities[7] AID147
+  outcome: supported
+  summary: The rad52 yeast strain is the experimental cellular context. The source
+    measures growth inhibition relative to vehicle controls and supplies a retained
+    Active result for SID473387/NSC402910. This is a phenotypic screen, not measured
+    human tumour efficacy, cell death, protein binding or enzyme inhibition. No quantitative
+    potency is written in the owner. The matching nonnumeric Inactive entry is preserved
+    in the source; the maintained extractor deliberately retains Active nonnumeric
+    observations.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - R260-OWNER
+  - R260-ASSAY-PLAN
+  - R260-ASSAY-SUMMARY
+  - R260-AID-147
+  - R260-RESULT-147
+  - R260-EXTRACTOR
+  - R260-SAMPLE-IDENTITY
+- assessment_id: R260-ASSAY-08
+  area: scope
+  topic: bioactivities[8] AID161
+  outcome: supported
+  summary: The sgs1 mgt1 yeast strain is the experimental cellular context. The source
+    measures growth inhibition relative to vehicle controls and supplies a retained
+    Active result for SID473387/NSC402910. This is a phenotypic screen, not measured
+    human tumour efficacy, cell death, protein binding or enzyme inhibition. No quantitative
+    potency is written in the owner. The matching nonnumeric Inactive entry is preserved
+    in the source; the maintained extractor deliberately retains Active nonnumeric
+    observations.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - R260-OWNER
+  - R260-ASSAY-PLAN
+  - R260-ASSAY-SUMMARY
+  - R260-AID-161
+  - R260-RESULT-161
+  - R260-EXTRACTOR
+  - R260-SAMPLE-IDENTITY
+- assessment_id: R260-ASSAY-CLASS
+  area: evidence
+  topic: bioactivity_summary and activity_class
+  outcome: supported
+  summary: CYTOTOXIC is consistent with the maintained broad growth-inhibition class
+    at this yeast-screen scope. It does not establish human anticancer efficacy, cell
+    death or a direct protein target. Protein cross-references describe assay context.
+    No classifier repair or new mechanism is selected.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - R260-OWNER
+  - R260-ASSAY-PLAN
+  - R260-SEEDER
+  - R260-BIOACTIVITY-SCHEMA
+  - R260-AID-167
+  - R260-AID-165
+  - R260-AID-157
+  - R260-AID-175
+  - R260-AID-177
+  - R260-AID-155
+  - R260-AID-151
+  - R260-AID-147
+  - R260-AID-161
+- assessment_id: S260-A-ORIGIN
+  area: scope
+  topic: biosynthesis_origin; occurrences[0]
+  outcome: supported
+  summary: Complete 1988 original source reports iodinin isolated from N. dassonvillei
+    OPC15 with authentic comparison. Proposed Figure 3 pathway arrows are not purified-enzyme
+    evidence. This independent origin supports the named natural product.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - S260-E-IOD88-MAIN
+  - S260-E-IOD-PRIMARY-PEER
+  - S260-E-LOCAL
+- assessment_id: S260-A-NATIVE-LOCUS
+  area: evidence
+  topic: producer_organisms[0]; biosynthetic_gene_clusters[0]
+  outcome: supported
+  summary: The exact submitted interval and source match DSM16338. Original 2019 SI
+    physical page 13 (Supplementary Figure 3) shows small WT iodinin 6, loss in ΔxpzGH
+    and introduced xpzGH rescue; this supports native producer and locus linkage without
+    treating every individual complementation as iodinin formation.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - S260-E-LOCAL
+  - S260-E-IOD-NATIVE-GB
+  - S260-E-IOD19-SI
+  - S260-E-IOD19-S13
+  - S260-E-ROOT-IOD-SCOPE
+  - S260-E-CURRENT-IOD
+  - S260-E-GRADE-MAP
+  - S260-E-SOURCE-PRECISION
+- assessment_id: S260-A-ENZYME-HOST
+  area: evidence
+  topic: biosynthetic_gene_clusters[0].locus_evidence_methods
+  outcome: supported
+  summary: Purified XpzH consumes intermediate 4 to 5/6 with controls in Supplementary
+    Figure 6, panel c (physical page 16). Fed E. coli XpzGH conversion is a separate
+    introduced enzyme-system experiment. These positive endpoints are distinct from
+    an entire native cluster conferring de novo product or a precursor being the final
+    natural product.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - S260-E-IOD19-SI
+  - S260-E-IOD19-S16
+  - S260-E-ROOT-IOD-SCOPE
+  - S260-E-SOURCE-PRECISION
+- assessment_id: S260-A-CORRELATION
+  area: evidence
+  topic: 'biosynthetic_gene_clusters[0].locus_evidence_methods: expression correlation'
+  outcome: unknown
+  summary: The imported Gene expression correlated with compound production label
+    remains unclosed at the inspected scope. Table S6 contains two-replicate expression
+    counts; those alone do not demonstrate paired transcript/product correlation,
+    and Supplementary Figure 7 (physical page 17) is a product time course. Full original
+    main remains unavailable, so the entire paper is not declared to lack the evidence.
+    Other positive methods still support the strong grades.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - S260-E-LOCAL
+  - S260-E-IOD19-SI
+  - S260-E-IOD19-PREVIEW
+  - S260-E-ROOT-IOD-SCOPE
+  - S260-E-GRADE-MAP
+  - S260-E-SOURCE-PRECISION
+- assessment_id: S260-A-OCC1
+  area: evidence
+  topic: occurrences[1]
+  outcome: unknown
+  summary: The exact 1979 reference metadata is retained but its primary Brevibacterium
+    iodinum body remains unavailable. The adjacent paper ending 2411 is distinct and
+    cannot replace this cited DOI. No unsupported occurrence exclusion is selected.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - S260-E-LOCAL
+  - S260-E-IOD79-METADATA
+  - S260-E-LIMITS
+- assessment_id: S260-A-ASSAYS
+  area: scope
+  topic: bioactivities[0:9]
+  outcome: supported
+  summary: Nine emitted yeast-growth observations retain their source-level calls
+    and limited CYTOTOXIC interpretation. The separate audit inspected the selected
+    protocols and 48 exact-SID result rows; current summary has 91 rows with 18 selected
+    and 73 other rows/AIDs not reviewed. Exact deposited sample identity is positive.
+    No enzyme target or human anticancer mechanism is inferred.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - S260-E-LOCAL
+  - S260-E-ROOT-ASSAYS
+  - S260-E-ROOT-ASSAY-COUNT
+  - S260-E-ROOT-SAMPLE
+- assessment_id: S260-A-ROUTING
+  area: evidence
+  topic: locus evidence qualification
+  outcome: unknown
+  summary: No confirmed method withdrawal follows solely from unavailable main-paper
+    correlation details. Any later source qualification must preserve independently
+    supported native loss/rescue and purified chemistry. The older unclosed occurrence
+    remains a source gap, not a proven wrong producer or reference.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - S260-E-ROUTING
+  - S260-E-IOD19-SI
+  - S260-E-ROOT-IOD-SCOPE
+  - S260-E-CONSUMERS
+  - S260-E-SOURCE-PRECISION
+- assessment_id: C260-A-IDENTITY
+  area: identity
+  topic: Stored representation and source-concept provenance
+  outcome: supported
+  summary: The complete source row BGC0001868:1 and source-concept hash reproduce
+    this stored representation; this does not establish that the upstream compound
+    label is correct. Formula, charge, Standard and fixed-H distinctions are independently
+    recorded. Primary support and any conflicting exact xref are assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - C260-OWNER
+  - C260-GRAPH
+  - C260-COMPARISON
+  dimensions:
+  - name: mibig_source_selector
+    value: BGC0001868:1
+    definition: Accession plus compound_index, distinct from the entry-level accession.
+    evidence_ids:
+    - C260-OWNER
+  - name: complete_raw_row_sha256
+    value: 5cc4aa387a25fd30cf82618592a78497d6f8e2c147c0bc31f6c6fb8b4f187704
+    definition: Sorted compact ASCII JSON of every parsed TSV field, including empty
+      values.
+    evidence_ids:
+    - C260-OWNER
+- assessment_id: C260-A-GROUNDING
+  area: provenance
+  topic: Exact authority eligibility and source representation
+  outcome: supported
+  summary: No exact eligible row exists in the committed ChEBI projection for this
+    owner. Current bounded name/key searches do not justify a different congener or
+    a two-star grounding.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - C260-OWNER
+  - C260-COMPARISON
+  - C260-AUTHORITY-COMPARISON
+  - C260-LOCAL-SEARCH
+  - C260-CHEBI-SEARCH-1
+  - C260-CHEBI-SEARCH-2
+- assessment_id: C260-A-XREF
+  area: representation
+  topic: Exact literal chemical identifier scope
+  outcome: supported
+  summary: 'Measured exact-literal comparisons: [{"comparison": {"same_charge": true,
+    "same_fixed_h": true, "same_formula": true, "same_full_standard_key": true, "same_standard_inchi":
+    true, "same_stereo_removed_standard": true}, "identifier": "pubchem:135441735",
+    "returned_identifier": null, "scope": "Exact retained authority response; default
+    strings, fixed-H and stereo precision remain separate"}]. Short NPAtlas literals
+    are preserved as asserted, separately from returned zero-padded identifiers. Standard
+    identity does not erase a fixed-H or explicit-stereo difference; no authority
+    graph is automatically adopted.'
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - C260-PRIMARY-1988
+  - C260-SOURCE-LIMITS
+  - C260-PRIMARY-COMPARISON
+  - C260-ORIGINAL-SAMPLE
+  - C260-OWNER
+  - C260-GRAPH
+  - C260-COMPARISON
+  - C260-AUTHORITY-COMPARISON
+  - C260-AUTHORITY-DETAIL
+  - C260-AUTH-1
+  - C260-AUTH-2
+  - C260-AUTH-3
+  - C260-AUTH-4
+- assessment_id: C260-A-ELIGIBILITY
+  area: grounding
+  topic: ChEBI full-key eligibility and literal serialization
+  outcome: supported
+  summary: '[{"eligible": false, "id": 192372, "literal_default_comparison": {"same_charge":
+    false, "same_fixed_h": false, "same_formula": false, "same_full_standard_key":
+    false, "same_standard_inchi": false, "same_stereo_removed_standard": false}, "literal_default_parse":
+    true, "mol_comparison": {"same_charge": false, "same_fixed_h": false, "same_formula":
+    false, "same_full_standard_key": false, "same_standard_inchi": false, "same_stereo_removed_standard":
+    false}, "name": "1,6-dihydroxyphenazine <em>N</em><small><sup>5</small></sup>,<em>N</em><small><sup>10</small></sup>-dioxide(2\u2212)",
+    "stars": 2}]. No exact eligible committed ChEBI projection exists for the owner.
+    Each returned candidate is compared independently as an official MOL, stated InChI
+    and literal default string; failed parsing is preserved without repair. Two-star
+    CHEBI192372 is a dianion, distinct from the neutral owner and deposited sample.'
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - C260-PRIMARY-1988
+  - C260-SOURCE-LIMITS
+  - C260-PRIMARY-COMPARISON
+  - C260-ORIGINAL-SAMPLE
+  - C260-OWNER
+  - C260-GRAPH
+  - C260-COMPARISON
+  - C260-AUTHORITY-COMPARISON
+  - C260-AUTHORITY-DETAIL
+  - C260-AUTH-1
+  - C260-AUTH-2
+  - C260-AUTH-3
+  - C260-AUTH-4
+  - C260-CHEBI-SEARCH-1
+  - C260-CHEBI-SEARCH-2
+- assessment_id: C260-A-SAMPLE
+  area: representation
+  topic: Original deposited neutral sample identity
+  outcome: supported
+  summary: SID473387 type0 atom/bond/charge decoding, original SDF, current CID135441735
+    and owner agree at full Standard/fixed-H scope. The original graph has two N+
+    and two oxide O− atoms, net zero, and no stereo declaration. This establishes
+    deposited representation only; the nine yeast-phenotype endpoints and concentration-specific,
+    nonmonotonic results are assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - C260-PRIMARY-1988
+  - C260-SOURCE-LIMITS
+  - C260-PRIMARY-COMPARISON
+  - C260-ORIGINAL-SAMPLE
+  - C260-OWNER
+  - C260-GRAPH
+  - C260-COMPARISON
+  - C260-AUTHORITY-COMPARISON
+  - C260-AUTHORITY-DETAIL
+  - C260-AUTH-1
+  - C260-AUTH-2
+  - C260-AUTH-3
+  - C260-AUTH-4
+- assessment_id: C260-A-PRIMARY-SCOPE
+  area: scope
+  topic: Primary identity and experimental precision
+  outcome: supported
+  summary: The original 1988 Figure3 final product I independently reconstructs neutral
+    achiral 1,6-dihydroxyphenazine bis-N-oxide and matches owner Standard/fixed-H
+    identity. Literal CID135441735, current MIBiG and original SID473387 atom/bond/charge
+    graph all match. Original deposited JSON contains no stereo declarations and has
+    net charge zero from two N+ and two oxide O− atoms. ChEBI192372 is instead a dianion
+    and is not an exact neutral-owner grounding.
+  target_ids:
+  - naturalproductmech:mibig-97ae0794cf
+  evidence_ids:
+  - C260-PRIMARY-1988
+  - C260-SOURCE-LIMITS
+  - C260-PRIMARY-COMPARISON
+  - C260-ORIGINAL-SAMPLE
+  - C260-OWNER
+  - C260-GRAPH
+  - C260-COMPARISON
+  - C260-AUTHORITY-COMPARISON
+  - C260-AUTHORITY-DETAIL
+  - C260-AUTH-1
+  - C260-AUTH-2
+  - C260-AUTH-3
+  - C260-AUTH-4
+findings: []
+actions: []
+limitations:
+- All nine retained Active calls are positively present alongside nine nonnumeric
+  Inactive summary entries. The maintained extractor’s selection is preserved.
+- Individual deposited result rows contain concentration, percent growth inhibition,
+  replicate count and range; non-monotonic responses do not justify a derived IC50,
+  affinity or new quantitative owner endpoint.
+- The full current summary contains91 rows. Only18 rows for the nine retained AIDs
+  were scientifically inspected;73 other rows remain outside this audit.
+- Source protein cross-references identify assay context and are not measured compound
+  targets. Sample graph equality is not purity or natural-origin evidence.
+- Context establishes exact owner/history/source inventory, literal identifier routing
+  and computed classification. Primary production, congener identity, stock applicability,
+  protein/graph and method claims retain their separate scientific scope. Imizoquin
+  context is high-level identity/provenance only.
+- The exact 1979 occurrence body and full 2019 main remain unavailable after bounded
+  routes; neither absence of biological evidence nor a false method is inferred from
+  access failure.
+- Two-replicate FPKM and a separate product time course do not independently establish
+  the imported expression/product correlation label. Positive native loss/rescue,
+  purified conversion and strong locus/producer grades remain preserved.
+- Current PubChem inventory totals are broader than the selected source audit. Uninspected
+  73 other summary rows/AIDs are inventory context only; no broad assay mechanism
+  or clinical inference follows.
+- Authority matches establish the representations actually returned at their retained
+  access times; they are not independent experimental structure or absolute-hand determinations.
+  Organism, locus, classification and history claims are assessed separately.
+- Deposited graph equality does not establish sample purity or a direct molecular
+  target. The nine yeast-phenotype endpoints and concentration-specific, nonmonotonic
+  results are assessed separately. No exact mass is copied from suspicious OCR digits.
+  No human anticancer or smooth-dose/IC50 inference is made.
+- The first fresh QC attempt failed during the public vendored-sync fetch after lint
+  passed. Only the separately recorded complete successful QC retry002 is used as
+  the baseline check; the actual failed001 receipt/log/capture/root observation remain
+  bound.
+- Reproduction retains42 withheld ambiguous producer claims,161 merged-taxon rewrites
+  and5 unresolved assay-organism targets.
+- 499non-blocking plausibility warnings and4750no-adapter skips remain.
+- Four skipped tests and two dependency warnings remain disclosed. Reproduction also
+  reports42 withheld ambiguous-producer claims,161 merged-taxon rewrites and5 unresolved
+  assay-organism rows. Gate success is configured consistency, not scientific validation
+  of every claim.
+- 'Clarification of root review-queue observation: actual session80402 terminal0 and
+  receipt/hash are confirmed. Combined initial log display was truncated; root read
+  its command/output header, displayed samples and final summary, then recovered all12
+  queue headers in a bounded projection. Root did not read all8928 per-record queue
+  descriptions. No gate outcome changes.'
+- Native baseline gates establish configured consistency, not independent biological
+  production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions
+  and no-adapter pairs; a successful command does not convert these into verified
+  scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command
+  execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population
+  was checked; external caches and generated bytecode are not asserted to be independently
+  byte-pinned.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+- Scientific conclusions integrate the chemical, biological and provenance assessments;
+  source access and unresolved scopes remain explicit.
+tags:
+- path-order-campaign
+- batch-026
