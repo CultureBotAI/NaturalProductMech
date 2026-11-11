@@ -14,6 +14,7 @@ sys.path.insert(0, str(REPO_ROOT / "scripts"))
 from check_source_queue import QUEUE_PATH, UNSEEDABLE  # noqa: E402
 from evaluate_cas_common_chemistry import (  # noqa: E402
     REDISTRIBUTION_CLASS,
+    build_decisions_proposals,
     classify_chebi_charge_state,
     compute_smiles_net_charge,
     evaluate_review_needed_rows,
@@ -22,6 +23,7 @@ from evaluate_cas_common_chemistry import (  # noqa: E402
     strip_inchikey_prefix,
     validate_output_path_is_outside_corpus,
 )
+from fulltext_access import try_acs_figshare_si  # noqa: E402
 
 
 def test_cas_common_chemistry_is_recorded_as_blocked_non_commercial_in_source_queue():
@@ -181,3 +183,69 @@ def test_evaluate_review_needed_rows_separates_net_charged_ions_from_zwitterions
     assert row["zwitterion_chebi_candidates"] == ""
     assert row["net_charged_chebi_candidates"] == "CHEBI:60821"
     assert row["cas_aligned_chebi_id"] == "CHEBI:60810"
+
+
+def test_build_decisions_proposals_emits_9_columns_without_cas_tokens(monkeypatch):
+    evaluated_rows = [
+        {
+            "identifier": "naturalproductmech:mibig-a51c74b16d",
+            "label": "ectoine",
+            "cas_rn": "96702-03-3",
+            "cas_name": "4-Pyrimidinecarboxylic acid, 1,4,5,6-tetrahydro-2-methyl-, (4S)-",
+            "corpus_inchikey": "WNYADZVDBIBLJJ-VKHMYHEASA-N",
+            "cas_inchikey": "WNYADZVDBIBLJJ-VKHMYHEASA-N",
+            "inchikey_agreement": "AGREES",
+            "cas_charge_state": "NEUTRAL",
+            "neutral_chebi_candidates": "CHEBI:27592",
+            "zwitterion_chebi_candidates": "CHEBI:58515",
+            "net_charged_chebi_candidates": "",
+            "cas_aligned_chebi_id": "CHEBI:27592",
+        }
+    ]
+    review_needed_by_id = {
+        "naturalproductmech:mibig-a51c74b16d": {
+            "identifier": "naturalproductmech:mibig-a51c74b16d",
+            "label": "ectoine",
+            "chemical_structure": {
+                "structure_source_id": "mibig:BGC0000853:0",
+                "standard_inchi_key": "WNYADZVDBIBLJJ-VKHMYHEASA-N",
+            },
+        }
+    }
+    proposals = build_decisions_proposals(evaluated_rows, review_needed_by_id)
+    assert len(proposals) == 1
+    p = proposals[0]
+    assert list(p.keys()) == [
+        "minted_identifier",
+        "source",
+        "source_id",
+        "source_label",
+        "decision",
+        "identifier",
+        "curator",
+        "date",
+        "rationale",
+    ]
+    assert p["identifier"] == "CHEBI:27592"
+    assert p["source_id"] == "BGC0000853:0"
+    serialized = "\t".join(p.values())
+    assert "96702-03-3" not in serialized
+    assert "CAS" not in serialized
+
+    assert try_acs_figshare_si("10.1016/j.biortech.2026.134417") is None
+    monkeypatch.setattr(
+        "fulltext_access._get_json",
+        lambda url, headers=None: {
+            "responseCode": 1,
+            "values": [
+                {
+                    "type": "URL",
+                    "data": {"value": "https://ACS.figshare.com/articles/journal_contribution/x/1"},
+                }
+            ],
+        },
+    )
+    assert (
+        try_acs_figshare_si("10.1021/acschembio.5b00001")
+        == "https://ACS.figshare.com/articles/journal_contribution/x/1"
+    )

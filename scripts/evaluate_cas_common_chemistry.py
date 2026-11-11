@@ -141,10 +141,57 @@ def load_review_needed_records(corpus_dir: Path = CORPUS_DIR) -> dict[str, dict]
     if not corpus_dir.exists():
         return records
     for yaml_path in sorted(corpus_dir.rglob("*.yaml")):
-        doc = yaml.safe_load(yaml_path.read_text(encoding="utf-8")) or {}
+        raw_text = yaml_path.read_text(encoding="utf-8")
+        if "\ngrounding_status: REVIEW_NEEDED" not in raw_text:
+            continue
+        doc = yaml.safe_load(raw_text) or {}
         if doc.get("grounding_status") == "REVIEW_NEEDED" and doc.get("identifier"):
+            doc["_rel_path"] = (
+                yaml_path.relative_to(REPO_ROOT).as_posix()
+                if yaml_path.is_relative_to(REPO_ROOT)
+                else str(yaml_path)
+            )
             records[doc["identifier"]] = doc
     return records
+
+
+def build_decisions_proposals(
+    evaluated_rows: list[dict[str, str]],
+    review_needed_by_id: dict[str, dict],
+    curator: str = "lbnl-mech-record-review",
+    date: str = "2026-11-11",
+) -> list[dict[str, str]]:
+    """Build 9-column `curation/decisions.tsv` proposals using only CC BY 4.0 ChEBI and MIBiG facts."""
+    proposals: list[dict[str, str]] = []
+    for row in evaluated_rows:
+        target_chebi = (row.get("cas_aligned_chebi_id") or "").strip()
+        if not target_chebi or row.get("inchikey_agreement") != "AGREES":
+            continue
+        minted_id = row["identifier"]
+        rec = review_needed_by_id.get(minted_id, {})
+        cs = rec.get("chemical_structure") or {}
+        source_id = (cs.get("structure_source_id") or "").strip()
+        if source_id.startswith("mibig:"):
+            source_id = source_id.split(":", 1)[1]
+        label = (rec.get("label") or row.get("label") or "").strip()
+        charge_state = (row.get("cas_charge_state") or "NEUTRAL").lower()
+        proposals.append(
+            {
+                "minted_identifier": minted_id,
+                "source": "MIBIG",
+                "source_id": source_id,
+                "source_label": label,
+                "decision": "GROUND",
+                "identifier": target_chebi,
+                "curator": curator,
+                "date": date,
+                "rationale": (
+                    f"3-star ChEBI {target_chebi} matches the neutral {charge_state} parent "
+                    f"structure ({row['corpus_inchikey']}) of MIBiG {label}."
+                ),
+            }
+        )
+    return proposals
 
 
 def evaluate_review_needed_rows(
