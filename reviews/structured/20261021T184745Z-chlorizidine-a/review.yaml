@@ -1,0 +1,1064 @@
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T184745Z-chlorizidine-a
+title: 'Chlorizidine A: exact identity and experimental-host attribution'
+started_at: '2026-10-21T18:41:42.062365Z'
+finished_at: '2026-10-21T18:47:45.058218Z'
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The complete owner and captured inventories reproduce the exact chlorizidine
+  A structure, including the native parent crystal-supported absolute configuration.
+  Native Streptomyces sp. CNH287 isolation is supported, but the imported native-producer
+  knockout method overstates experiments performed in heterologous S. coelicolor M512.
+  Purified Clz9 catalysis and heterologous genetic evidence support the cluster at
+  their documented experimental scope; one major finding proposes guarded source-level
+  correction without changing any scientific record.
+source:
+  git_revision: 1c2402097718c138b081e00943de8f04de0541cd
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/chlorizidine-a.yaml
+    sha256: cabd7d83d653e3d654b5d50295b23c241d0cd9a7fd27e8b9707794701961183d
+    role: target
+  - path: data/natural_products/alkaloids/chrysogine.yaml
+    sha256: ce45bc2502d8a7ee3fd67c527de804c159d93a5f7d484b90dfe4e4f185c197be
+    role: context
+  - path: data/natural_products/alkaloids/chuangxinmycin.yaml
+    sha256: 36c51885afcfddf9394c244f4b88b5687c1557d7b1a04087db41126006af496d
+    role: context
+  - path: data/natural_products/alkaloids/cichorine.yaml
+    sha256: 101e241cd5acb4d0c02a42db84cbaabbc03ab869d5b0c4d5fabea18af1d552a3
+    role: context
+  - path: data/natural_products/alkaloids/citridone-a.yaml
+    sha256: f910abc10d84b3c48dac02b1861d45c0065869314116902be46c8428e63d589a
+    role: context
+  - path: data/natural_products/alkaloids/citridone-b-2.yaml
+    sha256: fd5aa4ffd3ac824ecbc47379f9b1c8f7dbb49ed2968793d4acc090dd2a3e4695
+    role: context
+  - path: data/natural_products/alkaloids/citridone-b.yaml
+    sha256: 8b4377a61db1fb773fd214ff55e3c62ebce361387fe812fb3ab6e2889844a240
+    role: context
+  - path: data/natural_products/alkaloids/cj-15-696.yaml
+    sha256: fda593243686f09a350ff7e603bb4bfba5d678685dfde151ee2e0528dcddbbca
+    role: context
+  - path: data/natural_products/alkaloids/cj-16-173.yaml
+    sha256: 7200f279eec270a9fa7f8976a078b809cff2b3f6594d6b1b2c76f4e866e9d795
+    role: context
+  - path: data/natural_products/alkaloids/cladoniamide-a.yaml
+    sha256: cfc868919d5cc38ed1607726d5af2b7e49986e7703bb3cb8fe839f07f6d23971
+    role: context
+  - path: data/natural_products/alkaloids/cladoniamide-b.yaml
+    sha256: ebf1d143c88e640e485cad9d9e61dec31a196ddbd8be287ab0afc071ed04b36b
+    role: context
+  - path: data/natural_products/alkaloids/cladoniamide-c.yaml
+    sha256: eb4d74869ecd66c8ac1c3c09ab4e66ef3e1d2cf0207d53acb07733cf4898fc5f
+    role: context
+  - path: data/natural_products/alkaloids/cladoniamide-d.yaml
+    sha256: 8f0d5db52d4d3b0630cc37ffcd014e084565e71ceaf40b5059536e5bd5e7b644
+    role: context
+  - path: data/natural_products/alkaloids/cladoniamide-e.yaml
+    sha256: 1168e4142c33233dd96970d1eb3f96fd586744ff797966456ec105b2f66c7177
+    role: context
+  - path: data/natural_products/alkaloids/cladoniamide-f.yaml
+    sha256: 5c677ca21eaa238f47eb732e36352dc4a781d351e5e724e7f0723d5675d3dc58
+    role: context
+  - path: data/natural_products/alkaloids/cladoniamide-g.yaml
+    sha256: 6e4f7889efac34bc17f169d7c64850847595d2195d0bb9be94f463ac9bbaecd8
+    role: context
+  - path: data/natural_products/alkaloids/closoxazole-a.yaml
+    sha256: 1ffa0b3e5e9581d47032c4d771045adba5287fdc621288537464a2d7b93f4b5d
+    role: context
+  - path: data/natural_products/alkaloids/closoxazole-b.yaml
+    sha256: bc546837be7dc0d0c34602447f9de24ab507da8cc05ae2a900e7323a492c9f2e
+    role: context
+  - path: data/natural_products/alkaloids/closthioamide.yaml
+    sha256: 0a19c731af050a326b5cdb447ed85c90e5cfca98b9a41cc215d7ae31c8c7d388
+    role: context
+  - path: data/natural_products/alkaloids/coenzyme-f430.yaml
+    sha256: 8eed1aa5a67e40b5478c5edbd79a198c2684683b2cb19fe6302cbf7e7f85e92d
+    role: context
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/lotus_exclusions.py
+    sha256: 6352cac7c587eab5a56d907c523cc899d02d197009081624bf8649c675ee30f7
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+    role: context
+  - path: src/naturalproductmech/grading.py
+    sha256: ece54c4a2c0803f034ac59de51b1006cf79ea8d6b6256d75757d4adb88ea9630
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: tests/test_claim_references.py
+    sha256: 11b2fc60dbe32154df63fb2e8c784c7c8ba6585581c09bba2eebe2c5192d4c06
+    role: context
+  - path: tests/test_lotus_exclusions.py
+    sha256: 3e3aa443714202e1bc41f0fb236e6bf69caabd68a16af23b972323f5f846386c
+    role: context
+  - path: tests/test_mibig_locus_evidence_overrides.py
+    sha256: 9177b5bd24f6e47cc4743857179217d9e0d4add9560b2ce3faefaebe53ba09a0
+    role: context
+  - path: tests/test_producer_strains.py
+    sha256: 17002ef1640464777f1925d12d842ed83c9098aad6de724ae0ea236ecccc4ff3
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 131, batch 014, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated targets in earlier
+    batch commits (publication tracked separately). At selection, 184 of 3116 current
+    records had campaign coverage and 2932 remained. The population search included
+    ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-65382fd66e
+targets:
+- target_id: naturalproductmech:mibig-65382fd66e
+  path: data/natural_products/alkaloids/chlorizidine-a.yaml
+  label: chlorizidine A
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-65382fd66e
+  command: just validate-strict data/natural_products/alkaloids/chlorizidine-a.yaml
+    --out /private/tmp/npm-review-work/131/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T18:41:43.603083Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 current record files agree with PATHS.tsv and their pinned filing
+    pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055340+00:00;
+    finished 2026-10-21T09:55:22.727768+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-corpus.log. Reused
+    for batch014 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch014. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-65382fd66e
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 current records passed the documented byte-reproduction gate
+    against committed inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055361+00:00;
+    finished 2026-10-21T09:56:44.050706+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-reproduction.log.
+    Reused for batch014 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch014. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-65382fd66e
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The exhaustive review queue produced 8,928 diagnostic rows across 12 queues;
+    this deterministic output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just review-queue --tsv /private/tmp/npm-review-queue-batch-004.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.057401+00:00;
+    finished 2026-10-21T09:54:38.468783+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/review-queue.log. Reused
+    for batch014 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch014. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-65382fd66e
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'The configured identifier-label gate passed using the existing ontology
+    caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions,
+    499 warning-only mismatches and 4,744 pairs skipped because their prefixes have
+    no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.061733+00:00;
+    finished 2026-10-21T09:56:36.296159+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/validate-products.log. Reused
+    for batch014 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch014. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-65382fd66e
+- check_id: shared-qc
+  name: Full repository quality gate on the current main baseline
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed on the unchanged main baseline
+    during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+    All configured lint, governance, documentation, provenance, source-queue, schema,
+    rendering, reproduction, filing-integrity and reporting stages completed successfully.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:30.560925+00:00;
+    finished 2026-10-21T10:04:44.806799+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/qc.log. Reused for batch014
+    only after a fresh fetch/clean branch, equal commit/tree and two reads of all
+    9,182 tracked byte streams and modes (208,070,649 bytes), including a recheck
+    after the fresh authoritative catalogue. This gate was not rerun for batch014.
+    Original execution times, scope, warnings, exceptions and skips are retained.'
+  target_ids:
+  - naturalproductmech:mibig-65382fd66e
+- check_id: R131-FULL-OWNER
+  name: Complete owner and captured-source scope
+  status: passed
+  required: true
+  summary: Successful official intake and a fresh root full-owner/read receipt precede
+    this authoring. All six officially captured sets and the separate seventh PubChem
+    preparation match; the external component set is empty.
+  target_ids:
+  - naturalproductmech:mibig-65382fd66e
+  evidence_ids:
+  - R131-OWNER
+  - R131-LOCAL
+  - R131-PUBCHEM-PREP
+- check_id: S131-C-ORIGIN
+  name: Exact native origin and cited occurrence
+  status: passed
+  required: true
+  summary: Native CNH-287 isolation and source-resolved genus occurrence are directly
+    supported.
+  target_ids:
+  - naturalproductmech:mibig-65382fd66e
+  evidence_ids:
+  - S131-E-ISOLATION
+  - S131-E-ISOLATION-SI
+- check_id: S131-C-CONTEXT
+  name: Native versus heterologous genetic scope
+  status: failed
+  required: true
+  summary: The imported Knock-out studies label upgrades CNH-287 as though the disruption
+    occurred in that organism, but the actual mutants are heterologous M512 cosmid
+    derivatives.
+  target_ids:
+  - naturalproductmech:mibig-65382fd66e
+  evidence_ids:
+  - S131-E-RAW
+  - S131-E-GRADING
+  - S131-E-BIOSYNTHESIS
+  - S131-E-BIOSYNTHESIS-SI
+- check_id: C131-C-REPRESENTATION
+  name: Stored chemical representation and complete source row
+  status: passed
+  required: true
+  summary: Fresh intake derivation agrees with the stored graph; the source selector,
+    full row and prepared snapshot were independently rechecked.
+  target_ids:
+  - naturalproductmech:mibig-65382fd66e
+  evidence_ids:
+  - C131-OWNER
+  - C131-GRAPH
+  - C131-COMPARISON
+- check_id: C131-C-LITERAL-XREFS
+  name: Literal chemical identifiers and namespace resolution
+  status: passed
+  required: true
+  summary: Each present literal NPAtlas or PubChem cross-reference returned the exact
+    stored Standard and fixed-H graph. Legacy five-digit NPAtlas requests were queried
+    literally and their returned canonical identifiers retained. ChEBI and Wikidata
+    precision or tautomer differences are described separately.
+  target_ids:
+  - naturalproductmech:mibig-65382fd66e
+  evidence_ids:
+  - C131-COMPARISON
+  - C131-AUTH-1
+  - C131-AUTH-2
+  - C131-AUTH-3
+  - C131-AUTH-4
+  - C131-AUTH-5
+  - C131-AUTH-6
+- check_id: C131-C-PRIMARY
+  name: Original parent absolute structure
+  status: passed
+  required: true
+  summary: The native-parent CIF independently supports the stored S centre and exact
+    constitution.
+  target_ids:
+  - naturalproductmech:mibig-65382fd66e
+  evidence_ids:
+  - C131-PRIMARY-CIF
+  - C131-CIF-COMPARISON
+  - C131-GRAPH
+evidence:
+- evidence_id: R131-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/chlorizidine-a.yaml
+  locator: Complete post-intake owner, optional assertions and all history events
+  accessed_at: '2026-10-21T18:42:56.783639Z'
+  support: supports
+  summary: 'Root read the complete owner after successful official intake: 1 occurrence,
+    1 producer and 1 locus assertions. No referenced external component is present.
+    Optional fields: none.'
+  snapshot_sha256: cabd7d83d653e3d654b5d50295b23c241d0cd9a7fd27e8b9707794701961183d
+- evidence_id: R131-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/131/local-sources.json
+  locator: Complete resolved owner and all six officially captured raw row sets
+  accessed_at: '2026-10-21T18:42:56.783639Z'
+  support: context_only
+  summary: All six captured MIBiG, LOTUS, ChEBI structures/origins, CyanoMetDB and
+    NPClassifier sets match the frozen preparation, including empty sets. The separate
+    seventh PubChem inventory comparison is distinguished below. Source fidelity does
+    not itself establish experimental support.
+  snapshot_sha256: 7914b1ec134d92b309d5a6fca5006730cb137dbad688227ea7042798c8f214bc
+- evidence_id: R131-PUBCHEM-PREP
+  kind: record_content
+  reference: data/raw/pubchem_bioassay.tsv
+  locator: Exact-key rows compared with the separate provisional seventh source set
+  accessed_at: '2026-10-21T18:43:01.191269Z'
+  support: context_only
+  summary: The separate committed PubChem raw set contains 0 matching rows and reproduces
+    the frozen preparation. This is not part of the official six-set intake. Empty
+    or no-assay-data rows are not tested outcomes; no emitted assay assertion is inferred.
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: R131-Q1144013
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q1144013
+  locator: P225 and P685 in the retained complete multi-entity response
+  accessed_at: '2026-10-21T18:06:35.196286Z'
+  support: context_only
+  summary: Literal P225 scientific name and P685 taxon identifier agree with the matched
+    imported rows. Identifier routing does not establish the occurrence chemistry,
+    producing stock or source experiment.
+  snapshot_sha256: 46a203c3d6228bb916e07591ac48400411617fbad4db9591dedebace849b5355
+- evidence_id: R131-TAXON-CONTEXT
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&retmode=xml&id=1048205,1288082,145745,162425,1883,2039464,227321,229533,29852,378258,446321,50193,50206,5073,5076,5081,5128,73504
+  locator: Exact relevant TaxId, ScientificName, Rank, ParentTaxId and OtherNames
+    fields
+  accessed_at: '2026-10-21T18:06:35.286307Z'
+  support: context_only
+  summary: NCBI 1288082 is Streptomyces sp. CNH287 and explicitly includes the CNH-287
+    spelling. This is an isolate-level nomenclatural bridge, not identification as
+    another named species. The separate genus-level occurrence remains broader than
+    that producer.
+  snapshot_sha256: d9a4adfefcd1a126125ab99439e14c0972874451f3b99b65dc1f6073f3ef4ad9
+- evidence_id: R131-IMODULON
+  kind: database
+  reference: https://imodulondb.org/api/datasets
+  locator: Complete 20-organism, 28-dataset official catalogue
+  accessed_at: '2026-10-21T18:06:34.789679Z'
+  support: context_only
+  summary: The full retained catalogue establishes membership only. None of these
+    exact native producer labels occurs in it. Listed Streptomyces coelicolor or E.
+    coli datasets do not establish an introduced biosynthetic construct, recombinant
+    protein or native production.
+  snapshot_sha256: 155607e7023efdead5ebab3919279a0776d5665a7de9e28b67f02f8f521b0693
+- evidence_id: S131-E-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/chlorizidine-a.yaml
+  locator: Complete actual owner after official batch014 intake; exact resolved owner
+    and all six captured source sets reconciled with frozen preparation
+  accessed_at: '2026-10-21T18:42:56.783639Z'
+  support: supports
+  summary: The complete selected owner was read by root after successful official
+    intake. Its resolved contents and all six captured raw sets equal the frozen source
+    preparation. This adoption preserves original external retrieval times and does
+    not reclassify old literature preparation as newly retrieved evidence.
+  snapshot_sha256: cabd7d83d653e3d654b5d50295b23c241d0cd9a7fd27e8b9707794701961183d
+- evidence_id: S131-E-RAW
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: BGC0001172:1
+  accessed_at: '2026-10-21T18:28:52.308417Z'
+  support: supports
+  summary: Exact raw row BGC0001172:1 was compared with the tentative snapshot. Complete
+    parsed source-row SHA256 1a05b10bfc4fc4c58dc9f2ed6b2c9d3fce0b37cc7b505f54476a897d15189a17
+    includes all fields and empty values.
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: S131-E-GRADING
+  kind: record_content
+  reference: conf/producer_evidence.tsv
+  locator: Complete method vocabulary and inspected grading implementation
+  accessed_at: '2026-10-21T18:28:52.308417Z'
+  support: supports
+  summary: The configured Knock-out studies label assumes loss of production in the
+    native organism. Heterologous expression and Enzymatic assays support only the
+    locus. Empty methods faithfully yield SOURCE_ASSERTION / CLUSTER_UNSTATED.
+  snapshot_sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+- evidence_id: S131-E-ROUTES
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch014/curator-routing/routing-notes.json
+  locator: Complete static consumer feasibility notes, exact raw guards and flattened
+    implementation pins
+  accessed_at: '2026-10-21T18:28:52.308417Z'
+  support: supports
+  summary: Current consumers and static tests distinguish nonempty method REPLACE,
+    seven-field WITHDRAW, full-row-pinned citation/strain context, and exact-triple
+    occurrence exclusions. REPLACE expected_* fields alone are not enforced. No proposed
+    curation or test was executed.
+  snapshot_sha256: 26bf7b4ad7d6bbd8792ab2eb6bd1aa8e874c2cc11f7b5f510a9d7547ced8ca6d
+- evidence_id: S131-E-ISOLATION
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3887146,3357392,3702164&retmode=xml
+  locator: PMC3702164, complete main scientific text and captions
+  accessed_at: '2026-10-21T17:55:57.754554Z'
+  support: supports
+  summary: The complete original isolation main identifies exact chlorizidine A from
+    native CNH-287. Its single-centre X-ray assignment and native isolation are separate
+    from biological tests on the diacetate derivative. The genus-level LOTUS row is
+    compatible with that source resolution.
+  snapshot_sha256: 0c1cc8108a32305041a35a2827a2354a63813fdff1fe0a7b32fd174933d36ebe
+- evidence_id: S131-E-ISOLATION-SI
+  kind: primary_source
+  reference: https://ndownloader.figshare.com/files/4081447
+  locator: Experimental/isolation text through first 23,500 characters; selected S73–S76;
+    original S74/S76 pixels
+  accessed_at: '2026-10-21T18:04:17.520947Z'
+  support: supports
+  summary: Selected original isolation and X-ray sections support A; NCI-60 SI S76
+    concerns diacetate 2. The source discusses instability/conversion of A to B without
+    establishing that A itself is an isolation artifact.
+  snapshot_sha256: 91f598a817c8a08b431e728ba28de011dd1c8e01df1d446ea2614d341ee96bc9
+- evidence_id: S131-E-BIOSYNTHESIS
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3887146,3357392,3702164&retmode=xml
+  locator: PMC3887146, complete main scientific text and captions
+  accessed_at: '2026-10-21T17:55:57.754554Z'
+  support: supports
+  summary: The clz cosmid from CNH-287 produces exact A in S. coelicolor M512. The
+    deletion and complementation experiments alter this introduced cosmid in the heterologous
+    host, not the native CNH-287 chromosome.
+  snapshot_sha256: 0c1cc8108a32305041a35a2827a2354a63813fdff1fe0a7b32fd174933d36ebe
+- evidence_id: S131-E-BIOSYNTHESIS-SI
+  kind: primary_source
+  reference: https://ndownloader.figshare.com/files/3985921
+  locator: Complete SI text; original S5, S7, S9, S11 and S17 pixels
+  accessed_at: '2026-10-21T18:04:16.916724Z'
+  support: supports
+  summary: The complete SI confirms M512 cosmid genetics and purified MBP-Clz9 conversion
+    of prechlorizidine 10 to A, with product spectroscopy/rotation. The enzyme was
+    expressed in Rosetta (DE3). The printed S17 isolated-yield unit is inconsistent
+    with the small reaction and is not used quantitatively.
+  snapshot_sha256: 767554200ab60ec9f49781fa17960b64730553bb2654589afa87cfd698793a0e
+- evidence_id: S131-E-ADOPTION
+  kind: record_content
+  reference: /private/tmp/npm-review-work/131/local-sources.json
+  locator: Actual official local-sources snapshot and guarded adoption reconciliation
+  accessed_at: '2026-10-21T18:42:56.783639Z'
+  snapshot_sha256: 7914b1ec134d92b309d5a6fca5006730cb137dbad688227ea7042798c8f214bc
+  support: context_only
+  summary: Fresh selection, actual exit0 intake/strict receipts, root full-read receipt,
+    exact target identity, complete owner equality and six captured source-set equality
+    were required before adopting the prepared scientific scope. Other authority/root
+    assessments and overall completion remain separately adjudicated.
+- evidence_id: C131-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/chlorizidine-a.yaml
+  locator: Complete owner and all local-source rows; no referenced components
+  accessed_at: '2026-10-21T18:43:57.633721Z'
+  support: supports
+  summary: The complete owner denotes chlorizidine A under naturalproductmech:mibig-65382fd66e.
+    Its exact source selector is BGC0001172:1, version 5, with complete parsed raw-row
+    SHA256 1a05b10bfc4fc4c58dc9f2ed6b2c9d3fce0b37cc7b505f54476a897d15189a17. The official
+    intake and prepared owner bytes agree.
+  snapshot_sha256: cabd7d83d653e3d654b5d50295b23c241d0cd9a7fd27e8b9707794701961183d
+- evidence_id: C131-GRAPH
+  kind: validation
+  reference: /private/tmp/npm-review-work/131/chemistry.json
+  locator: Fresh intake RDKit result and frozen Standard/fixed-H comparison
+  accessed_at: '2026-10-21T18:41:42.684835Z'
+  support: supports
+  summary: The stored SMILES recomputes to PNWJMZXCEYWQFJ-JTQLQIEISA-N, formula C18H10Cl4N2O3,
+    formal charge 0; stored InChI/key agree. These are representation checks, not
+    experimental identity proof.
+  snapshot_sha256: 986ae74f3d8cca685cea95dab38c869a6d60cc3c651ac637fc6d34740c533b98
+- evidence_id: C131-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch014/chemistry-prep/chemical-comparison.json
+  locator: Record 131; exact source rows and each graph comparison
+  accessed_at: '2026-10-21T17:41:08.268885Z'
+  support: supports
+  summary: Exact Standard, fixed-H, formula, charge and stereo comparisons of the
+    retained owner, complete raw rows and current authority responses; primary experimental
+    proof is assessed separately.
+  snapshot_sha256: 35270d1dd852f3ca15712a2ecb46220b711b9df3c549d4b721a79ee0121f0987
+- evidence_id: C131-LOCAL-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/131/chemistry-search-receipt.json
+  locator: Exact full key, label, slug and source selector in raw/owner/curation trees
+  accessed_at: '2026-10-21T18:43:57.818584Z'
+  support: supports
+  summary: Ignored-inclusive bounded search preserves all matching paths; an absent
+    curation decision does not imply a missing scientific source.
+  snapshot_sha256: f85c1564b8303c25411f0187f8e653ecf7f4b0340f6b75c8970bc58f57ccffbb
+  search_scope: rg --no-ignore --hidden; data/natural_products, data/raw and curation;
+    exact full key, current label, slug and BGC:compound_index. No claim beyond these
+    trees.
+- evidence_id: C131-CHEBI-SEARCH-1
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=PNWJMZXCEYWQFJ-JTQLQIEISA-N&size=100
+  locator: Literal key search; chebi-key-chlorizidine-a.json
+  accessed_at: '2026-10-21T17:40:13.719885Z'
+  support: supports
+  summary: 1 returned name/key results; evaluate exact key and stars, not name similarity.
+  snapshot_sha256: 6b3a7ffbf47ca59a7b7430a928bd7954af60e89cdeb48169b73f9318c961df67
+  search_scope: Official ChEBI es_search bounded key request, size=100, exact URL
+    retained. This is not a universal absence claim.
+- evidence_id: C131-CHEBI-SEARCH-2
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=chlorizidine+A&size=100
+  locator: Literal name search; chebi-name-chlorizidine-a.json
+  accessed_at: '2026-10-21T17:40:13.661397Z'
+  support: supports
+  summary: 1 returned name/key results; evaluate exact key and stars, not name similarity.
+  snapshot_sha256: 36a1898e966fc67edff943ea28ebe94448015ce6b89c0243c745054723e2511f
+  search_scope: Official ChEBI es_search bounded name request, size=100, exact URL
+    retained. This is not a universal absence claim.
+- evidence_id: C131-AUTH-1
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0001172.5/annotations.json
+  locator: compounds[].structure; BGC0001172.5.json
+  accessed_at: '2026-10-21T17:40:14.285643Z'
+  support: supports
+  summary: 'current MIBiG BGC0001172:1: representation parses=True; parsed key PNWJMZXCEYWQFJ-JTQLQIEISA-N;
+    exact stored Standard key match=True, fixed-H match=True. This current database
+    representation is not independent primary experimental proof.'
+  snapshot_sha256: 87088ee6023fee49bece12d5e89999e62e3e41fe7ff3cf482191fce1b0304279
+- evidence_id: C131-AUTH-2
+  kind: authority
+  reference: https://www.npatlas.org/api/v1/compound/NPA08760
+  locator: smiles; NPA08760.json
+  accessed_at: '2026-10-21T17:40:13.263496Z'
+  support: supports
+  summary: 'NPAtlas literal NPA08760: representation parses=True; parsed key PNWJMZXCEYWQFJ-JTQLQIEISA-N;
+    exact stored Standard key match=True, fixed-H match=True. This current database
+    representation is not independent primary experimental proof.'
+  snapshot_sha256: efec5454448b24ddae301eb1a6f285467d6b871556a653b3d4f75560abd72690
+- evidence_id: C131-AUTH-3
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/156431/
+  locator: default_structure.smiles; CHEBI156431.json
+  accessed_at: '2026-10-21T17:40:41.940206Z'
+  support: supports
+  summary: 'ChEBI JSON 156431: representation parses=True; parsed key PNWJMZXCEYWQFJ-JTQLQIEISA-N;
+    exact stored Standard key match=True, fixed-H match=True. This current database
+    representation is not independent primary experimental proof.'
+  snapshot_sha256: 0fb4c89325d9c3ce5d0e1edaf76e50357f47001e6d29a84f183288db69444d51
+- evidence_id: C131-AUTH-4
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/156431/
+  locator: official molfile endpoint; CHEBI156431-official.mol
+  accessed_at: '2026-10-21T17:40:42.072193Z'
+  support: supports
+  summary: 'ChEBI MOL 156431: representation parses=True; parsed key PNWJMZXCEYWQFJ-JTQLQIEISA-N;
+    exact stored Standard key match=True, fixed-H match=True. This current database
+    representation is not independent primary experimental proof.'
+  snapshot_sha256: 0eabb0ce21e386e4f444c744ba38c523d43711010df237f1ac3f5c2f1278aa43
+- evidence_id: C131-AUTH-5
+  kind: authority
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q77424854.json
+  locator: P2017; Q77424854.json
+  accessed_at: '2026-10-21T17:40:13.277747Z'
+  support: supports
+  summary: 'Wikidata Q77424854: representation parses=True; parsed key PNWJMZXCEYWQFJ-JTQLQIEISA-N;
+    exact stored Standard key match=True, fixed-H match=True. This current database
+    representation is not independent primary experimental proof.'
+  snapshot_sha256: db47f7f9ddb2ea33f42e64cbc99d9e290dc60d0745e058cc5adfa504b750efa1
+- evidence_id: C131-AUTH-6
+  kind: authority
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q77424854.json
+  locator: P233; Q77424854.json
+  accessed_at: '2026-10-21T17:40:13.277747Z'
+  support: context_only
+  summary: 'Wikidata Q77424854: representation parses=True; parsed key PNWJMZXCEYWQFJ-UHFFFAOYSA-N;
+    exact stored Standard key match=False, fixed-H match=False. This current database
+    representation is not independent primary experimental proof. Canonical P233 is
+    not an isomeric stereo assertion; compare P2017 when present.'
+  snapshot_sha256: db47f7f9ddb2ea33f42e64cbc99d9e290dc60d0745e058cc5adfa504b750efa1
+- evidence_id: C131-PRIMARY-CIF
+  kind: primary_source
+  reference: DOI:10.1021/ol303374e
+  locator: Native parent CIF sio30; complete atom-site/bond mapping and absolute refinement
+  accessed_at: '2026-10-21T18:04:16.620767Z'
+  support: supports
+  summary: The native parent crystal includes half a benzene solvate. Its right-handed-coordinate
+    mapping gives source C12 = S, matching owner atom 17 and the exact full/fixed-H
+    graph. Native CIF Flack is -0.004(13); the paper-reported -0.02(2) is a separate
+    refinement value. The modified derivative CIF was not substituted for the parent.
+  snapshot_sha256: 6781e54cad8a0043a796d5ed518588e7b18cf6300993129227a7a3681d5fd49d
+- evidence_id: C131-CIF-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch014/chemistry-prep/primary-addendum-001/chlorizidine-cif-comparison.json
+  locator: Independent native 27-heavy-atom/31-edge mapping
+  accessed_at: '2026-10-21T18:10:03.337208Z'
+  support: supports
+  summary: Element-labelled topology, all parent edges and coordinate-derived centre
+    agree. Bond orders use the matched constitution; this is not a re-refinement of
+    diffraction intensities.
+  snapshot_sha256: 94ab2d236bfe5739af02cbadd12fb444a161b57b146826b115dbd392f39241e7
+assessments:
+- assessment_id: R131-HISTORY
+  area: provenance
+  topic: Native status and complete audit history
+  outcome: supported
+  summary: All 2 retained events are SEEDED_FROM_SOURCES. Native status remains SEEDED;
+    these are provenance events, not earlier structured-review passes, and no scientific
+    content or history is changed.
+  target_ids:
+  - naturalproductmech:mibig-65382fd66e
+  evidence_ids:
+  - R131-OWNER
+- assessment_id: R131-OPTIONAL
+  area: completeness
+  topic: Complete optional-assertion inventory
+  outcome: not_applicable
+  summary: No optional definition, pathway, causal graph, target, assay, application,
+    summary, cross-record relation, discussion or clinical-status assertion is present.
+    Optional enrichment is separate from checking the existing source claims.
+  target_ids:
+  - naturalproductmech:mibig-65382fd66e
+  evidence_ids:
+  - R131-OWNER
+  - R131-LOCAL
+- assessment_id: R131-FILING
+  area: representation
+  topic: Exact-key computed classification provenance
+  outcome: supported
+  summary: The exact-key NPClassifier projection and version npclassifier.gnps2.org@2026-09-07
+    reproduce the owner filing, superclass/class labels and glycoside value false.
+    Computed labels are not independent precursor, mechanism or natural-origin evidence.
+    Any accepted new identity requires reclassification for its effective key.
+  target_ids:
+  - naturalproductmech:mibig-65382fd66e
+  evidence_ids:
+  - R131-OWNER
+  - R131-LOCAL
+- assessment_id: R131-ORGANISM-IDS
+  area: grounding
+  topic: Literal organism identifier routing
+  outcome: supported
+  summary: Literal organism routing is supported at the stated database scope; each
+    occurrence and experimental stock requires separate source assessment.
+  target_ids:
+  - naturalproductmech:mibig-65382fd66e
+  evidence_ids:
+  - R131-Q1144013
+- assessment_id: R131-TAXON-SCOPE
+  area: provenance
+  topic: Taxonomic names versus experimental stocks
+  outcome: supported
+  summary: NCBI 1288082 is Streptomyces sp. CNH287 and explicitly includes the CNH-287
+    spelling. This is an isolate-level nomenclatural bridge, not identification as
+    another named species. The separate genus-level occurrence remains broader than
+    that producer.
+  target_ids:
+  - naturalproductmech:mibig-65382fd66e
+  evidence_ids:
+  - R131-TAXON-CONTEXT
+  - R131-OWNER
+- assessment_id: R131-IMODULON-SCOPE
+  area: completeness
+  topic: Producer transcriptomic applicability
+  outcome: not_applicable
+  summary: No exact native producer species/strain dataset is represented in the inspected
+    catalogue. Related species and possible experimental hosts do not establish a
+    construct/condition match; no gene/module or compound-production inference is
+    made.
+  target_ids:
+  - naturalproductmech:mibig-65382fd66e
+  evidence_ids:
+  - R131-OWNER
+  - R131-IMODULON
+- assessment_id: S131-A-PRODUCER
+  area: evidence
+  topic: Native producer and exact experimental hosts
+  outcome: concern
+  summary: CNH-287 is a supported natural producer. Its source-specific biosynthetic
+    characterization is overstated by native Knock-out grading; positive locus sufficiency
+    and final Clz9 chemistry remain applicable.
+  target_ids:
+  - naturalproductmech:mibig-65382fd66e
+  evidence_ids:
+  - S131-E-ISOLATION
+  - S131-E-BIOSYNTHESIS
+  - S131-E-BIOSYNTHESIS-SI
+  - S131-E-GRADING
+  dimensions:
+  - name: native_vs_engineered_context
+    value: Native CNH-287; heterologous M512 cosmid derivatives; Rosetta (DE3) MBP-Clz9
+    definition: These contexts address different biological claims.
+    evidence_ids:
+    - S131-E-ISOLATION
+    - S131-E-BIOSYNTHESIS-SI
+  - name: producer_locus_evidence_tiers
+    value: Current BGC_CHARACTERIZED / CLUSTER_DEMONSTRATED; supported correction
+      SOURCE_ASSERTION / CLUSTER_DEMONSTRATED
+    definition: Retain Enzymatic assays and Heterologous expression, remove the native
+      Knock-out interpretation.
+    evidence_ids:
+    - S131-E-RAW
+    - S131-E-GRADING
+    - S131-E-BIOSYNTHESIS-SI
+- assessment_id: S131-A-ACTIVITY
+  area: scope
+  topic: Activity and optional mechanism scope
+  outcome: supported
+  summary: The owner asserts no detailed assay endpoint or pathway. Native A HCT-116
+    results and derivative-2 NCI-60 results remain separate; their optional omission
+    is not a finding.
+  target_ids:
+  - naturalproductmech:mibig-65382fd66e
+  evidence_ids:
+  - S131-E-OWNER
+  - S131-E-ISOLATION
+  - S131-E-ISOLATION-SI
+- assessment_id: C131-A-IDENTITY
+  area: identity
+  topic: Stored representation and source-concept provenance
+  outcome: supported
+  summary: The complete source row BGC0001172:1 and source-concept hash reproduce
+    this stored representation; this does not establish that the upstream compound
+    label is correct. Formula, charge, Standard and fixed-H distinctions are independently
+    recorded. Primary support and any conflicting exact xref are assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-65382fd66e
+  evidence_ids:
+  - C131-OWNER
+  - C131-GRAPH
+  - C131-COMPARISON
+  dimensions:
+  - name: mibig_source_selector
+    value: BGC0001172:1
+    definition: Accession plus compound_index, distinct from the entry-level accession.
+    evidence_ids:
+    - C131-OWNER
+  - name: complete_raw_row_sha256
+    value: 1a05b10bfc4fc4c58dc9f2ed6b2c9d3fce0b37cc7b505f54476a897d15189a17
+    definition: Sorted compact ASCII JSON of every parsed TSV field, including empty
+      values.
+    evidence_ids:
+    - C131-OWNER
+- assessment_id: C131-A-GROUNDING
+  area: provenance
+  topic: Exact authority eligibility and source representation
+  outcome: supported
+  summary: No exact eligible row exists in the committed ChEBI projection for this
+    owner. Current bounded name/key searches do not justify a different congener or
+    a two-star grounding.
+  target_ids:
+  - naturalproductmech:mibig-65382fd66e
+  evidence_ids:
+  - C131-OWNER
+  - C131-COMPARISON
+  - C131-LOCAL-SEARCH
+  - C131-CHEBI-SEARCH-1
+  - C131-CHEBI-SEARCH-2
+- assessment_id: C131-A-AUTHORITY-REPRESENTATION
+  area: representation
+  topic: Official MOL, JSON SMILES and chemical Wikidata fields
+  outcome: supported
+  summary: The retained comparisons distinguish valid official MOL structures from
+    default JSON SMILES that fail parsing. Only exact eligible three-star rows can
+    ground this corpus. Canonical Wikidata P233, isomeric P2017 and declared InChI/key
+    fields are separate assertions; a matching Standard key does not guarantee fixed-H
+    identity. No invalid JSON SMILES is proposed for copying.
+  target_ids:
+  - naturalproductmech:mibig-65382fd66e
+  evidence_ids:
+  - C131-COMPARISON
+  - C131-AUTH-1
+  - C131-AUTH-2
+  - C131-AUTH-3
+  - C131-AUTH-4
+  - C131-AUTH-5
+  - C131-AUTH-6
+- assessment_id: C131-A-PRIMARY
+  area: identity
+  topic: Native-parent constitution and absolute hand
+  outcome: supported
+  summary: Primary parent crystal evidence supports the encoded S graph. Literal NPA08760
+    resolves to canonical NPA008760; current exact ChEBI156431 is two-star and does
+    not replace the minted identity.
+  target_ids:
+  - naturalproductmech:mibig-65382fd66e
+  evidence_ids:
+  - C131-PRIMARY-CIF
+  - C131-CIF-COMPARISON
+  - C131-COMPARISON
+findings:
+- finding_id: S131-F-METHOD
+  issue_key: mibig-bgc0001172-heterologous-knockout-scope
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Heterologous deletions are graded as native CNH-287 knockout evidence
+  description: All inspected clz loss/rescue experiments occur in introduced M512
+    constructs. The exact final-product enzymatic and heterologous results do not
+    justify upgrading the native CNH-287 producer via the native Knock-out rule.
+  target_ids:
+  - naturalproductmech:mibig-65382fd66e
+  field_paths:
+  - producer_organisms[0].evidence_basis
+  - producer_organisms[0].notes
+  - biosynthetic_gene_clusters[0].locus_evidence_methods
+  evidence_ids:
+  - S131-E-RAW
+  - S131-E-GRADING
+  - S131-E-BIOSYNTHESIS
+  - S131-E-BIOSYNTHESIS-SI
+  - S131-E-ROUTES
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Exact compound method replacement
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Consumed complete-row guard and native strain context
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Method application, grading and claim-context emission
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/producer_strains.py
+    role: Full raw-row pin and strain qualifier
+  - repository: CultureBotAI/NaturalProductMech
+    path: conf/producer_evidence.tsv
+    role: Native versus locus-only grading contract
+actions:
+- action_id: S131-ACT-METHOD
+  finding_ids:
+  - S131-F-METHOD
+  target_ids:
+  - naturalproductmech:mibig-65382fd66e
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Exact compound method replacement
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Consumed complete-row guard and native strain context
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Method application, grading and claim-context emission
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/producer_strains.py
+    role: Full raw-row pin and strain qualifier
+  - repository: CultureBotAI/NaturalProductMech
+    path: conf/producer_evidence.tsv
+    role: Native versus locus-only grading contract
+  generator: scripts/seed_from_sources.py
+  description: For naturalproductmech:mibig-65382fd66e / BGC0001172:1, REPLACE methods
+    with Enzymatic assays|Heterologous expression. Preserve the locus and PMID:24246014;
+    retain native production as SOURCE_ASSERTION and the locus as CLUSTER_DEMONSTRATED.
+    Consume a paired BGC0001172:1 strain row for CNH-287 with complete raw SHA256
+    1a05b10bfc4fc4c58dc9f2ed6b2c9d3fce0b37cc7b505f54476a897d15189a17 and an explicit
+    M512/Rosetta context rationale, or implement an equivalent enforced full-row method
+    guard. Current REPLACE expected_* columns alone are ignored. If the qualification
+    needs to appear on the BGC as well, add a tested exact-source method-context emitter
+    or a scientifically supported pinned claim-reference qualification; producer_strains.py
+    does not propagate BGC notes. Do not WITHDRAW all positive methods.
+  acceptance_checks:
+  - The exact full raw source row is guarded and preserved unchanged.
+  - Only the native Knock-out method interpretation is removed; exact A enzymatic
+    and heterologous evidence remains.
+  - Native CNH-287 is not replaced by M512 or the expression host; locus context explicitly
+    names those experimental hosts.
+  - Future authorized canary and reproduction confirm exact source targeting, unchanged
+    chemical/occurrence joins and distinct database versus curator evidence.
+limitations:
+- The root section inventories present claims and source routing; chemical identities,
+  source-specific experiments, definition claims and optional sibling/activity assertions
+  require their separately scoped scientific assessments.
+- Prepared scientific source scope was reconciled with the actual unchanged selected
+  owner after official intake. Baseline and current chemical-authority assertions
+  are supplied separately; expression-construct equivalence is not inferred from a
+  native accession.
+- Authority matches establish the representations actually returned at their retained
+  access times; they are not independent experimental structure or absolute-hand determinations.
+  Root and science sections separately assess organism, locus, classification and
+  history claims.
+- Current authority and literal identifier agreement is representation evidence. It
+  neither supplies a missing natural absolute-hand experiment nor proves a specific
+  producing stock.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35
+  explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently
+  verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+  Skipped tests are not counted as passing tests. Existing ontology caches were used;
+  no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do
+  not establish biological production, stereochemical specificity, evidence adequacy,
+  or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology
+  results. Reuse establishes unchanged repository inputs; it is not a new remote authority
+  query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all
+  tracked files are hashed. Generated Python bytecode and external tool caches are
+  not claimed to have been independently byte-pinned at the prior execution.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+tags:
+- path-order-campaign
+- batch-014
