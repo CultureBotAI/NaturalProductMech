@@ -1,0 +1,761 @@
+# Scientific review of Fuscachelin B
+
+- Review: 20261027T211334Z-fuscachelin-b
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-27T21:11:22.761906Z
+- Finished UTC: 2026-10-27T21:13:34.878621Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Fuscachelin B has internally consistent stored encodings and a distinct full key. The supplied own Crossref abstract supports fuscachelin-family isolation from Thermobifida fusca and termination-module biochemistry, while exact congener, YX-stock, locus and natural-structure mappings remain unresolved. The attempted PNAS primary access returned HTTP 403 and supplies no article evidence.
+
+## Scope And Provenance
+
+Review the exact retained owner and raw-source joins, saved local chemical consistency, and bounded own metadata support for this named congener.
+
+Selection: One exact record selected in canonical repository path order from the unreviewed population; this observation assesses only its declared partial scientific scope.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 14373517042b407747272446f79953ae86d51fa4.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-a658a4145b | data/natural_products/amino_acids_and_peptides/fuscachelin-b.yaml | generated | Fuscachelin B |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-a658a4145b | Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its pinned path. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-a658a4145b | Fresh canonical reproduction gate passed:all3116 records byte-identical to source seeding; source warnings remain retained. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-a658a4145b | Fresh deterministic review queue completed:8922 rows across12 queues. Queue output is not scientific-review coverage. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-a658a4145b | Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking mismatches and4898no-adapter skips remain explicit. |
+| Full repository quality gate on the fresh main baseline | passed | True | naturalproductmech:mibig-a658a4145b | Canonical just qc completed with actual terminal exit0:1024 tests passed,4 skipped,2 dependency warnings;3116 records passed closed schema validation, site freshness, byte reproduction and lockfile integrity.22 governed artifacts and15 raw inventories passed. Prior DNS failed001 remains preserved. |
+| Native strict target validation | passed | True | naturalproductmech:mibig-a658a4145b | The selected owner passed the documented strict validator. This establishes configured consistency only. |
+| Two retained chemical encodings | passed | True | naturalproductmech:mibig-a658a4145b | The saved SMILES and InChI computation agrees on RCJSTCNOAKCESX-XPGKHFPBSA-N, formula C42H61N15O17, one fragment and net formal charge zero, with identical standardized InChI. Both encodings specify 4 tetrahedral carbon centres and leave no tetrahedral carbon unspecified. This is internal representation agreement; it does not establish the natural configuration. |
+| Whole owner and exact retained-row joins | passed | True | naturalproductmech:mibig-a658a4145b | The whole saved owner and nine retained/supplemental arrays reproduce their pinned ordered row guards. Source rows and histories remain individually traceable. |
+| Own bibliographic identity and original access | passed | True | naturalproductmech:mibig-a658a4145b | The saved successful Crossref response owns DOI 10.1073/pnas.0805451105 and supplies the complete abstract. DOI case variants in the retained source rows refer to this same bibliographic identity. |
+| Exact natural congener and configuration | unavailable | True | naturalproductmech:mibig-a658a4145b | The owner labels Fuscachelin B and encodes 4 defined carbon centres, but the inspected abstract does not establish that exact congener-to-natural-structure mapping. No independent spectra, structure figures or natural-configuration assignment were inspected. |
+| Current chemical, taxonomic and sequence authorities | unavailable | True | naturalproductmech:mibig-a658a4145b | Current authority records and exact sequence-coordinate mappings were not inspected. Retained SOURCE_ASSERTION and CLUSTER_UNSTATED grades are preserved. |
+| Whole primary article applicability | unavailable | True | naturalproductmech:mibig-a658a4145b | The PNAS HTTP 403 response is not a scientific article. Exact A/B/C isolation details, stock provenance, structural figures and supplements remain unavailable. |
+
+## Scientific And Domain Assessments
+
+### Internal chemical consistency
+
+representation: supported. Targets: naturalproductmech:mibig-a658a4145b.
+
+The saved SMILES and InChI computation agrees on RCJSTCNOAKCESX-XPGKHFPBSA-N, formula C42H61N15O17, one fragment and net formal charge zero, with identical standardized InChI. Both encodings specify 4 tetrahedral carbon centres and leave no tetrahedral carbon unspecified. This is internal representation agreement; it does not establish the natural configuration.
+
+### Exact congener and natural stereochemistry
+
+identity: unknown. Targets: naturalproductmech:mibig-a658a4145b.
+
+The retained formula C42H61N15O17 and full key RCJSTCNOAKCESX-XPGKHFPBSA-N define this stored structure. The parsed InChI additionally records eight imidic C(-O)=N and two guanidino C(=N)(N)N unspecified double bonds. Their saved atom-neighbour classifications concern C=N normalization, not unassigned carbon centres or missing C=C geometries. Local atom-order descriptors are not independent natural stereochemical evidence. Neither the stored stereo_complete flag nor a family-level abstract verifies the exact natural configuration.
+
+### Fuscachelin family and species-level production
+
+evidence: supported. Targets: naturalproductmech:mibig-a658a4145b.
+
+The supplied abstract positively reports isolation and structure elucidation of fuscachelins produced by Thermobifida fusca. This supports the family and species context without assigning the named local A/B/C congener, YX stock or exact natural structure.
+
+### Separate A, B and C source identities
+
+identity: unknown. Targets: naturalproductmech:mibig-a658a4145b.
+
+MIBiG BGC0000359 version 5 retains fuscachelin B at compound index 2. The retained B encoding contains an open carboxylic-acid form and differs from A by H2O in its formula. That local formula relation does not prove natural hydrolysis, isolation history or biosynthetic conversion. No congener-specific activity or producer proof is transferred across these different full keys.
+
+### Producer stock versus species occurrence
+
+provenance: unknown. Targets: naturalproductmech:mibig-a658a4145b.
+
+The owner retains Thermobifida fusca YX (NCBITaxon:269800) as a MIBiG SOURCE_ASSERTION. LOTUS separately records occurrence in Thermobifida fusca (NCBITaxon:2021). Species-level production in the abstract is useful context, but does not by itself establish the YX stock or this exact congener. Occurrence and production are not interchangeable.
+
+### Exact accession interval and linkage grade
+
+provenance: unknown. Targets: naturalproductmech:mibig-a658a4145b.
+
+BGC0000359 version 5 retains CP000088.1 positions 2172724–2196882, a compound-level DOI citation, empty locus-method fields and CLUSTER_UNSTATED linkage. The raw entry has questionable quality and unknown completeness. Abstract-level adenylation specificity supports a cluster assignment in the study, but exact accession/coordinate matching and whole-locus demonstration were not inspected.
+
+### Measured module context and proposed pathway
+
+evidence: supported. Targets: naturalproductmech:mibig-a658a4145b.
+
+The supplied abstract explicitly reports purification and biochemical characterization of the NRPS termination module and adenylation-domain specificity. It presents the nonlinear assembly line and macrocyclizing thioesterase architecture as a proposed pathway. This bounded module context does not establish a completely reconstructed pathway or the exact structure of every local congener.
+
+### Exact compound activity and placeholder row
+
+quantity: unknown. Targets: naturalproductmech:mibig-a658a4145b.
+
+The retained PubChem row has a blank AID and says no assay data. It does not establish inactivity. The supplied abstract identifies a siderophore family but supplies no exact-congener quantitative binding or activity endpoint; family context is not a substitute for a material-specific assay.
+
+### Source classes, predictions and mechanistic coverage
+
+completeness: unknown. Targets: naturalproductmech:mibig-a658a4145b.
+
+NRPS is retained as a MIBiG source class. Oligopeptides is an NPClassifier model prediction, not a newly verified experimental class. No pathway, molecular target or causal graph is retained. The abstract offers bounded biosynthetic context, but omission of detailed graph content from this seeded owner is not by itself a confirmed corrective finding.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| SCI722-LOCAL | /private/tmp/npm-review-work/shared-next-batch073-tentative/tentative-owner-source-inventory-001.json; /entries/1/owner_document; /entries/1/rows; /entries/1/row_guards; /entries/1/supplemental_retained_rows | context_only | The whole pinned owner and seven retained source arrays contain 4 rows, including MIBiG, LOTUS and NPClassifier. Both supplemental arrays are empty. The separately defined six-array projection contains 3 rows. Source grades, histories and row identities are retained exactly. The PubChem row has a blank AID and explicitly reports no assay data; it is a placeholder rather than an experimental activity result. |
+| SCI722-CHEM | /private/tmp/npm-review-work/shared-next-batch073-tentative/source-science-preparation/root-tentative73-local-chemical-consistency-and-neighbors-001.json; /records/1/comparisons; /records/1/smiles; /records/1/inchi | supports | The saved SMILES and InChI computation agrees on RCJSTCNOAKCESX-XPGKHFPBSA-N, formula C42H61N15O17, one fragment and net formal charge zero, with identical standardized InChI. Both encodings specify 4 tetrahedral carbon centres and leave no tetrahedral carbon unspecified. This is internal representation agreement; it does not establish the natural configuration. The parsed InChI additionally records eight imidic C(-O)=N and two guanidino C(=N)(N)N unspecified double bonds. Their saved atom-neighbour classifications concern C=N normalization, not unassigned carbon centres or missing C=C geometries. Local atom-order descriptors are not independent natural stereochemical evidence. |
+| SCI722-METADATA | /private/tmp/npm-review-work/shared-next-batch073-tentative/literature-preparation/public-metadata-001/metadata-01.json; /message/DOI; /message/title; /message/abstract | supports | The supplied Crossref abstract reports fuscachelin isolation and structure elucidation from Thermobifida fusca, purification and biochemical characterization of the NRPS termination module, and adenylation-domain specificity supporting cluster assignment. Its nonlinear assembly line and macrocyclizing-thioesterase pathway are described as proposed. The abstract does not name A, B or C, the YX stock, exact formulas or locus coordinates. |
+| SCI722-ACCESS-LIMIT | /private/tmp/npm-review-work/shared-next-batch073-tentative/literature-preparation/root-tentative73-PNAS-failed-canary-observation-001.json; /original_access/http_status; /original_access/identity; /own_article_verified; /scope | context_only | The single PNAS primary request returned an HTTP 403 challenge body, with no verified article identity. The saved failure is an access limitation and remains held without retry; the challenge response supplies no scientific article evidence. It is not an official review-validation failure. |
+
+## Limits And Additional Notes
+
+- The supplied Crossref abstract is the scientific source text inspected here. The held PNAS HTTP 403 challenge body is not primary article evidence; full text, figures, spectra, supplements and cited papers remain unavailable.
+- Family-level fuscachelin isolation and module biochemistry do not establish each A/B/C identity, the YX stock, exact accession interval or an experimentally complete pathway.
+- The macrocyclization/nonlinear pathway is described as proposed in the abstract; its statement is not generalized into exact A/B/C conversion chemistry or congener potency.
+- Computed full-key/formula agreement and defined stored carbon centres do not establish the natural configuration or physiological microspecies. Parsed-InChI C=N observations retain their exact saved representation scope.
+- Current chemical, taxonomic and sequence authorities were not queried. Source assertions, source classes, model predictions and experimental support remain distinct.
+- Original machine-capture, ROOT owner reading, computation, HTTP capture and later metadata-reading clocks are retained separately.
+- Configured consistency only; independent scientific claim support and unrestricted remote authority refresh are not implied.
+- FailedQC001 is retained for an explicit separate network-enabled retry; no artifact will be overwritten.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint and before downstream tests. Its actual exit1/log/input capture/root observation remain pinned; the selected successful canonical QC attempt002 is separately timed. No individual-review validation failure or counter reset is claimed.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings; this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions and no-adapter pairs; a successful command does not convert these into verified scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population was checked; external caches and generated bytecode are not asserted to be independently byte-pinned.
+- The whole local owner and retained source rows were read. Full-owner scientific verification remains false; scientific_review denotes the bounded scientific interpretation in this report.
+- Original owner/source reading, two-encoding computation, neighbor inspection, HTTP retrieval and later metadata reading retain separate clocks. Official intake separately computed SMILES facts.
+- No scientific record, maintained input or native curation status was changed. Any findings and actions record ROOT-adopted proposed work; exact-source limitations and unavailable checks remain explicit.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261027T211334Z-fuscachelin-b
+title: Scientific review of Fuscachelin B
+started_at: '2026-10-27T21:11:22.761906Z'
+finished_at: '2026-10-27T21:13:34.878621Z'
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: Fuscachelin B has internally consistent stored encodings and a distinct full
+  key. The supplied own Crossref abstract supports fuscachelin-family isolation from
+  Thermobifida fusca and termination-module biochemistry, while exact congener, YX-stock,
+  locus and natural-structure mappings remain unresolved. The attempted PNAS primary
+  access returned HTTP 403 and supplies no article evidence.
+source:
+  git_revision: 14373517042b407747272446f79953ae86d51fa4
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/fuscachelin-b.yaml
+    sha256: 9ef70c128106c66a7c10dde6726530744286835b743615139a72c11755ceba29
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+targets:
+- target_id: naturalproductmech:mibig-a658a4145b
+  path: data/natural_products/amino_acids_and_peptides/fuscachelin-b.yaml
+  label: Fuscachelin B
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+scope:
+  description: Review the exact retained owner and raw-source joins, saved local chemical
+    consistency, and bounded own metadata support for this named congener.
+  selection: One exact record selected in canonical repository path order from the
+    unreviewed population; this observation assesses only its declared partial scientific
+    scope.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-a658a4145b
+  exclusions:
+  - target: Full primary article, figure or supplementary verification
+    reason: Not independently verified within the declared source-access and scientific
+      scope; the corresponding check or assessment remains unavailable or unknown.
+  - target: Current chemical/taxonomic/sequence authority verification
+    reason: Not independently verified within the declared source-access and scientific
+      scope; the corresponding check or assessment remains unavailable or unknown.
+  - target: Independent natural configuration or exact congener-to-paper structure
+      assignment
+    reason: Not independently verified within the declared source-access and scientific
+      scope; the corresponding check or assessment remains unavailable or unknown.
+  - target: Uninspected exact stock/locus mapping or quantitative compound activity
+    reason: Not independently verified within the declared source-access and scientific
+      scope; the corresponding check or assessment remains unavailable or unknown.
+checks:
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its
+    pinned path.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-corpus-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.783967Z;
+    finished 2026-10-25T22:37:16.453216Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.log.
+    Reused for batch073 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch073. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-a658a4145b
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: Fresh canonical reproduction gate passed:all3116 records byte-identical
+    to source seeding; source warnings remain retained.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-reproduction-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784055Z;
+    finished 2026-10-25T22:37:31.682209Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.log.
+    Reused for batch073 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch073. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-a658a4145b
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: Fresh deterministic review queue completed:8922 rows across12 queues. Queue
+    output is not scientific-review coverage.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-review-queue-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just review-queue --tsv /private/tmp/npm-review-queue-batch-036-fresh14373517-001.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.781802Z;
+    finished 2026-10-25T22:37:08.229737Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.log.
+    Reused for batch073 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch073. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-a658a4145b
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking
+    mismatches and4898no-adapter skips remain explicit.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-validate-products-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784040Z;
+    finished 2026-10-25T22:37:32.251879Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.log.
+    Reused for batch073 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch073. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-a658a4145b
+- check_id: shared-qc
+  name: Full repository quality gate on the fresh main baseline
+  status: passed
+  required: true
+  summary: Canonical just qc completed with actual terminal exit0:1024 tests passed,4
+    skipped,2 dependency warnings;3116 records passed closed schema validation, site
+    freshness, byte reproduction and lockfile integrity.22 governed artifacts and15
+    raw inventories passed. Prior DNS failed001 remains preserved.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-qc-attempt-002
+    PYTHONDONTWRITEBYTECODE=1 just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-002 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:40:55.179857Z;
+    finished 2026-10-25T22:46:28.974296Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.log.
+    Reused for batch073 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch073. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-a658a4145b
+- check_id: C-STRICT
+  name: Native strict target validation
+  status: passed
+  required: true
+  summary: The selected owner passed the documented strict validator. This establishes
+    configured consistency only.
+  command: just validate-strict data/natural_products/amino_acids_and_peptides/fuscachelin-b.yaml
+    --out /private/tmp/npm-review-work/722/strict.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Actual intake execution finished 2026-10-27T21:11:24.093709Z. Original
+    receipt: /private/tmp/npm-review-work/722/strict-receipt.json.'
+  target_ids:
+  - naturalproductmech:mibig-a658a4145b
+- check_id: SCI722-ENCODINGS
+  name: Two retained chemical encodings
+  status: passed
+  required: true
+  summary: The saved SMILES and InChI computation agrees on RCJSTCNOAKCESX-XPGKHFPBSA-N,
+    formula C42H61N15O17, one fragment and net formal charge zero, with identical
+    standardized InChI. Both encodings specify 4 tetrahedral carbon centres and leave
+    no tetrahedral carbon unspecified. This is internal representation agreement;
+    it does not establish the natural configuration.
+  evidence_ids:
+  - SCI722-CHEM
+  target_ids:
+  - naturalproductmech:mibig-a658a4145b
+- check_id: SCI722-LOCAL-JOINS
+  name: Whole owner and exact retained-row joins
+  status: passed
+  required: true
+  summary: The whole saved owner and nine retained/supplemental arrays reproduce their
+    pinned ordered row guards. Source rows and histories remain individually traceable.
+  evidence_ids:
+  - SCI722-LOCAL
+  target_ids:
+  - naturalproductmech:mibig-a658a4145b
+- check_id: SCI722-METADATA-OWN-ID
+  name: Own bibliographic identity and original access
+  status: passed
+  required: true
+  summary: The saved successful Crossref response owns DOI 10.1073/pnas.0805451105
+    and supplies the complete abstract. DOI case variants in the retained source rows
+    refer to this same bibliographic identity.
+  evidence_ids:
+  - SCI722-METADATA
+  target_ids:
+  - naturalproductmech:mibig-a658a4145b
+- check_id: SCI722-NATURAL-IDENTITY
+  name: Exact natural congener and configuration
+  status: unavailable
+  required: true
+  summary: The owner labels Fuscachelin B and encodes 4 defined carbon centres, but
+    the inspected abstract does not establish that exact congener-to-natural-structure
+    mapping. No independent spectra, structure figures or natural-configuration assignment
+    were inspected.
+  evidence_ids:
+  - SCI722-LOCAL
+  - SCI722-CHEM
+  - SCI722-METADATA
+  target_ids:
+  - naturalproductmech:mibig-a658a4145b
+- check_id: SCI722-CURRENT-AUTHORITIES
+  name: Current chemical, taxonomic and sequence authorities
+  status: unavailable
+  required: true
+  summary: Current authority records and exact sequence-coordinate mappings were not
+    inspected. Retained SOURCE_ASSERTION and CLUSTER_UNSTATED grades are preserved.
+  evidence_ids:
+  - SCI722-LOCAL
+  - SCI722-METADATA
+  target_ids:
+  - naturalproductmech:mibig-a658a4145b
+- check_id: SCI722-FULL-PRIMARY
+  name: Whole primary article applicability
+  status: unavailable
+  required: true
+  summary: The PNAS HTTP 403 response is not a scientific article. Exact A/B/C isolation
+    details, stock provenance, structural figures and supplements remain unavailable.
+  evidence_ids:
+  - SCI722-METADATA
+  - SCI722-ACCESS-LIMIT
+  target_ids:
+  - naturalproductmech:mibig-a658a4145b
+evidence:
+- evidence_id: SCI722-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch073-tentative/tentative-owner-source-inventory-001.json
+  accessed_at: '2026-10-27T19:51:34.418315Z'
+  locator: /entries/1/owner_document; /entries/1/rows; /entries/1/row_guards; /entries/1/supplemental_retained_rows
+  snapshot_sha256: 788b6fddd1f7231dabd600f954acab42ec52cf9ac6a034c85f1d617cc51fe940
+  support: context_only
+  summary: The whole pinned owner and seven retained source arrays contain 4 rows,
+    including MIBiG, LOTUS and NPClassifier. Both supplemental arrays are empty. The
+    separately defined six-array projection contains 3 rows. Source grades, histories
+    and row identities are retained exactly. The PubChem row has a blank AID and explicitly
+    reports no assay data; it is a placeholder rather than an experimental activity
+    result.
+- evidence_id: SCI722-CHEM
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch073-tentative/source-science-preparation/root-tentative73-local-chemical-consistency-and-neighbors-001.json
+  accessed_at: '2026-10-27T19:55:46.015537Z'
+  locator: /records/1/comparisons; /records/1/smiles; /records/1/inchi
+  snapshot_sha256: 91c60f950f4e278744c390c479817e556bff70212dc75cf099fc91a789112124
+  support: supports
+  summary: The saved SMILES and InChI computation agrees on RCJSTCNOAKCESX-XPGKHFPBSA-N,
+    formula C42H61N15O17, one fragment and net formal charge zero, with identical
+    standardized InChI. Both encodings specify 4 tetrahedral carbon centres and leave
+    no tetrahedral carbon unspecified. This is internal representation agreement;
+    it does not establish the natural configuration. The parsed InChI additionally
+    records eight imidic C(-O)=N and two guanidino C(=N)(N)N unspecified double bonds.
+    Their saved atom-neighbour classifications concern C=N normalization, not unassigned
+    carbon centres or missing C=C geometries. Local atom-order descriptors are not
+    independent natural stereochemical evidence.
+- evidence_id: SCI722-METADATA
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch073-tentative/literature-preparation/public-metadata-001/metadata-01.json
+  accessed_at: '2026-10-27T20:01:38.977135Z'
+  locator: /message/DOI; /message/title; /message/abstract
+  snapshot_sha256: f0bb8537368c556e09315e6b5e849923a3c97070b6fb1ae502e17a62f974dedf
+  support: supports
+  summary: The supplied Crossref abstract reports fuscachelin isolation and structure
+    elucidation from Thermobifida fusca, purification and biochemical characterization
+    of the NRPS termination module, and adenylation-domain specificity supporting
+    cluster assignment. Its nonlinear assembly line and macrocyclizing-thioesterase
+    pathway are described as proposed. The abstract does not name A, B or C, the YX
+    stock, exact formulas or locus coordinates.
+- evidence_id: SCI722-ACCESS-LIMIT
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch073-tentative/literature-preparation/root-tentative73-PNAS-failed-canary-observation-001.json
+  accessed_at: '2026-10-27T20:11:50.541575Z'
+  locator: /original_access/http_status; /original_access/identity; /own_article_verified;
+    /scope
+  snapshot_sha256: da1c468764d2195c06839695e13924c91714cd60bc6f8688aa3aa374bea1c063
+  support: context_only
+  summary: The single PNAS primary request returned an HTTP 403 challenge body, with
+    no verified article identity. The saved failure is an access limitation and remains
+    held without retry; the challenge response supplies no scientific article evidence.
+    It is not an official review-validation failure.
+assessments:
+- assessment_id: SCI722-ENCODING
+  area: representation
+  topic: Internal chemical consistency
+  outcome: supported
+  summary: The saved SMILES and InChI computation agrees on RCJSTCNOAKCESX-XPGKHFPBSA-N,
+    formula C42H61N15O17, one fragment and net formal charge zero, with identical
+    standardized InChI. Both encodings specify 4 tetrahedral carbon centres and leave
+    no tetrahedral carbon unspecified. This is internal representation agreement;
+    it does not establish the natural configuration.
+  evidence_ids:
+  - SCI722-CHEM
+  target_ids:
+  - naturalproductmech:mibig-a658a4145b
+- assessment_id: SCI722-NATURAL-STRUCTURE
+  area: identity
+  topic: Exact congener and natural stereochemistry
+  outcome: unknown
+  summary: The retained formula C42H61N15O17 and full key RCJSTCNOAKCESX-XPGKHFPBSA-N
+    define this stored structure. The parsed InChI additionally records eight imidic
+    C(-O)=N and two guanidino C(=N)(N)N unspecified double bonds. Their saved atom-neighbour
+    classifications concern C=N normalization, not unassigned carbon centres or missing
+    C=C geometries. Local atom-order descriptors are not independent natural stereochemical
+    evidence. Neither the stored stereo_complete flag nor a family-level abstract
+    verifies the exact natural configuration.
+  evidence_ids:
+  - SCI722-LOCAL
+  - SCI722-CHEM
+  - SCI722-METADATA
+  target_ids:
+  - naturalproductmech:mibig-a658a4145b
+- assessment_id: SCI722-FAMILY-ISOLATION
+  area: evidence
+  topic: Fuscachelin family and species-level production
+  outcome: supported
+  summary: The supplied abstract positively reports isolation and structure elucidation
+    of fuscachelins produced by Thermobifida fusca. This supports the family and species
+    context without assigning the named local A/B/C congener, YX stock or exact natural
+    structure.
+  evidence_ids:
+  - SCI722-METADATA
+  target_ids:
+  - naturalproductmech:mibig-a658a4145b
+- assessment_id: SCI722-CONGENER-PARTITION
+  area: identity
+  topic: Separate A, B and C source identities
+  outcome: unknown
+  summary: MIBiG BGC0000359 version 5 retains fuscachelin B at compound index 2. The
+    retained B encoding contains an open carboxylic-acid form and differs from A by
+    H2O in its formula. That local formula relation does not prove natural hydrolysis,
+    isolation history or biosynthetic conversion. No congener-specific activity or
+    producer proof is transferred across these different full keys.
+  evidence_ids:
+  - SCI722-LOCAL
+  - SCI722-CHEM
+  - SCI722-METADATA
+  target_ids:
+  - naturalproductmech:mibig-a658a4145b
+- assessment_id: SCI722-PRODUCER-OCCURRENCE
+  area: provenance
+  topic: Producer stock versus species occurrence
+  outcome: unknown
+  summary: The owner retains Thermobifida fusca YX (NCBITaxon:269800) as a MIBiG SOURCE_ASSERTION.
+    LOTUS separately records occurrence in Thermobifida fusca (NCBITaxon:2021). Species-level
+    production in the abstract is useful context, but does not by itself establish
+    the YX stock or this exact congener. Occurrence and production are not interchangeable.
+  evidence_ids:
+  - SCI722-LOCAL
+  - SCI722-METADATA
+  target_ids:
+  - naturalproductmech:mibig-a658a4145b
+- assessment_id: SCI722-LOCUS
+  area: provenance
+  topic: Exact accession interval and linkage grade
+  outcome: unknown
+  summary: BGC0000359 version 5 retains CP000088.1 positions 2172724–2196882, a compound-level
+    DOI citation, empty locus-method fields and CLUSTER_UNSTATED linkage. The raw
+    entry has questionable quality and unknown completeness. Abstract-level adenylation
+    specificity supports a cluster assignment in the study, but exact accession/coordinate
+    matching and whole-locus demonstration were not inspected.
+  evidence_ids:
+  - SCI722-LOCAL
+  - SCI722-METADATA
+  target_ids:
+  - naturalproductmech:mibig-a658a4145b
+- assessment_id: SCI722-TERMINATION-MODULE
+  area: evidence
+  topic: Measured module context and proposed pathway
+  outcome: supported
+  summary: The supplied abstract explicitly reports purification and biochemical characterization
+    of the NRPS termination module and adenylation-domain specificity. It presents
+    the nonlinear assembly line and macrocyclizing thioesterase architecture as a
+    proposed pathway. This bounded module context does not establish a completely
+    reconstructed pathway or the exact structure of every local congener.
+  evidence_ids:
+  - SCI722-METADATA
+  target_ids:
+  - naturalproductmech:mibig-a658a4145b
+- assessment_id: SCI722-ACTIVITY
+  area: quantity
+  topic: Exact compound activity and placeholder row
+  outcome: unknown
+  summary: The retained PubChem row has a blank AID and says no assay data. It does
+    not establish inactivity. The supplied abstract identifies a siderophore family
+    but supplies no exact-congener quantitative binding or activity endpoint; family
+    context is not a substitute for a material-specific assay.
+  evidence_ids:
+  - SCI722-LOCAL
+  - SCI722-METADATA
+  target_ids:
+  - naturalproductmech:mibig-a658a4145b
+- assessment_id: SCI722-CLASS-GRAPH-COVERAGE
+  area: completeness
+  topic: Source classes, predictions and mechanistic coverage
+  outcome: unknown
+  summary: NRPS is retained as a MIBiG source class. Oligopeptides is an NPClassifier
+    model prediction, not a newly verified experimental class. No pathway, molecular
+    target or causal graph is retained. The abstract offers bounded biosynthetic context,
+    but omission of detailed graph content from this seeded owner is not by itself
+    a confirmed corrective finding.
+  evidence_ids:
+  - SCI722-LOCAL
+  - SCI722-METADATA
+  target_ids:
+  - naturalproductmech:mibig-a658a4145b
+findings: []
+actions: []
+limitations:
+- The supplied Crossref abstract is the scientific source text inspected here. The
+  held PNAS HTTP 403 challenge body is not primary article evidence; full text, figures,
+  spectra, supplements and cited papers remain unavailable.
+- Family-level fuscachelin isolation and module biochemistry do not establish each
+  A/B/C identity, the YX stock, exact accession interval or an experimentally complete
+  pathway.
+- The macrocyclization/nonlinear pathway is described as proposed in the abstract;
+  its statement is not generalized into exact A/B/C conversion chemistry or congener
+  potency.
+- Computed full-key/formula agreement and defined stored carbon centres do not establish
+  the natural configuration or physiological microspecies. Parsed-InChI C=N observations
+  retain their exact saved representation scope.
+- Current chemical, taxonomic and sequence authorities were not queried. Source assertions,
+  source classes, model predictions and experimental support remain distinct.
+- Original machine-capture, ROOT owner reading, computation, HTTP capture and later
+  metadata-reading clocks are retained separately.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- FailedQC001 is retained for an explicit separate network-enabled retry; no artifact
+  will be overwritten.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint
+  and before downstream tests. Its actual exit1/log/input capture/root observation
+  remain pinned; the selected successful canonical QC attempt002 is separately timed.
+  No individual-review validation failure or counter reset is claimed.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter
+  skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings;
+  this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld
+  nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological
+  or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological
+  production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions
+  and no-adapter pairs; a successful command does not convert these into verified
+  scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command
+  execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population
+  was checked; external caches and generated bytecode are not asserted to be independently
+  byte-pinned.
+notes:
+- The whole local owner and retained source rows were read. Full-owner scientific
+  verification remains false; scientific_review denotes the bounded scientific interpretation
+  in this report.
+- Original owner/source reading, two-encoding computation, neighbor inspection, HTTP
+  retrieval and later metadata reading retain separate clocks. Official intake separately
+  computed SMILES facts.
+- No scientific record, maintained input or native curation status was changed. Any
+  findings and actions record ROOT-adopted proposed work; exact-source limitations
+  and unavailable checks remain explicit.
+```
