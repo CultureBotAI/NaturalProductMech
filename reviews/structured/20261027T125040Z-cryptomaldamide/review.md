@@ -1,0 +1,588 @@
+# Scientific review of cryptomaldamide
+
+- Review: 20261027T125040Z-cryptomaldamide
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-27T12:41:45.072341Z
+- Finished UTC: 2026-10-27T12:50:40.580337Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The own abstract distinguishes isolated cryptomaldamide from a putatively assigned biosynthetic cluster. Exact JHB material and retained stereochemistry need fuller source verification; no blank-AID sentinel is promoted to an activity result.
+
+## Scope And Provenance
+
+Whole retained owner and source rows, local chemical consistency, inspected own publication metadata and supplied abstracts; exact primary and current-authority verification is partial.
+
+Selection: One resolved record in canonical path order from the unreviewed corpus; current official intake reconciled to the earlier evidence snapshots.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 14373517042b407747272446f79953ae86d51fa4.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-624e16ed1d | data/natural_products/amino_acids_and_peptides/cryptomaldamide.yaml | generated | cryptomaldamide |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-624e16ed1d | Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its pinned path. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-624e16ed1d | Fresh canonical reproduction gate passed:all3116 records byte-identical to source seeding; source warnings remain retained. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-624e16ed1d | Fresh deterministic review queue completed:8922 rows across12 queues. Queue output is not scientific-review coverage. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-624e16ed1d | Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking mismatches and4898no-adapter skips remain explicit. |
+| Full repository quality gate on the fresh main baseline | passed | True | naturalproductmech:mibig-624e16ed1d | Canonical just qc completed with actual terminal exit0:1024 tests passed,4 skipped,2 dependency warnings;3116 records passed closed schema validation, site freshness, byte reproduction and lockfile integrity.22 governed artifacts and15 raw inventories passed. Prior DNS failed001 remains preserved. |
+| Native strict target validation | passed | True | naturalproductmech:mibig-624e16ed1d | The exact selected owner passed the documented strict validator; this is a configured consistency result. |
+| Retained owner and source-row integrity | passed | True | naturalproductmech:mibig-624e16ed1d | Whole owner bytes and all seven retained row-set digests match the original tentative inventory. The current official intake independently reproduces these source arrays; external identity verification remains unavailable. |
+| Exact compound material and claim-level primary verification | unavailable | True | naturalproductmech:mibig-624e16ed1d | No full primary body or SI was inspected. Exact congener/material, structural assignments and compound-specific strain/locus experiments remain unresolved at the available abstract or bibliographic tier. |
+| Current external structure, taxon and protein authority verification | unavailable | True | naturalproductmech:mibig-624e16ed1d | Current authority lookups were not performed. Stored identifiers, encodings and classifications are retained as source assertions; none is promoted to a current-authority or natural-stereochemistry verification. |
+| Saved local chemical encoding consistency | passed | True | naturalproductmech:mibig-624e16ed1d | Saved RDKit 2026.03.5 owner SMILES and Standard InChI both parse and reproduce full key FUCBQNSQRCPSGC-BOUYHWOHSA-N, formula C18H33N5O5, one fragment and formal charge 0. Each representation reports 0 unspecified tetrahedral centers. Original compute12:03:57.145763–57.718530 and separate neighbor inspection12:09:22.965141–23.505346 are retained. This saved two-encoding result predates the separately recorded official-intake SMILES computation. |
+
+## Scientific And Domain Assessments
+
+### Retained compound-specific claim boundaries
+
+provenance: supported. Targets: naturalproductmech:mibig-624e16ed1d.
+
+Cryptomaldamide owner plus seven arrays/four rows: BGC0001560 v4, M.producens JHB SOURCE_ASSERTION/CLUSTER_UNSTATED, species-level LOTUS occurrence and blank-AID PubChem sentinel. Stored stereo_complete=true does not independently verify its natural stereochemistry.
+
+### Own abstract applicability
+
+evidence: supported. Targets: naturalproductmech:mibig-624e16ed1d.
+
+Own PMID28448144/DOI10.1021/acs.jnatprod.7b00019 abstract reports isolated cryptomaldamide from M.producens and structure work, but calls the 28.7 kb cluster putative and its initiating reaction proposed. It does not specify JHB or validate the entire retained structure.
+
+### Exact natural material and stereochemical scope
+
+identity: unknown. Targets: naturalproductmech:mibig-624e16ed1d.
+
+The stored structure and stereo-completeness annotation identify the retained representation. The inspected metadata does not independently establish the full natural stereochemical identity or every compound-specific source claim.
+
+### Internal chemical encoding and stereochemical scope
+
+consistency: supported. Targets: naturalproductmech:mibig-624e16ed1d.
+
+Saved RDKit 2026.03.5 owner SMILES and Standard InChI both parse and reproduce full key FUCBQNSQRCPSGC-BOUYHWOHSA-N, formula C18H33N5O5, one fragment and formal charge 0. Each representation reports 0 unspecified tetrahedral centers. No tetrahedral unknown is reported and the saved C=C geometry remains specified. The InChI C=N flags are separate representation diagnostics. Across the complete saved cohort, the 132 unspecified double-bond observations are C=N motifs, not 132 extra missing C=C configurations. Standard InChI normalization and representation-local indices do not establish exact natural material or published atom numbering.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| E-LOCAL | /private/tmp/npm-review-work/shared-next-batch064-tentative/tentative-owner-source-inventory-001.json; /entries/4/owner_document; /entries/4/rows | context_only | Cryptomaldamide owner plus seven arrays/four rows: BGC0001560 v4, M.producens JHB SOURCE_ASSERTION/CLUSTER_UNSTATED, species-level LOTUS occurrence and blank-AID PubChem sentinel. Stored stereo_complete=true does not independently verify its natural stereochemistry. |
+| E-OWN-ABSTRACT | /private/tmp/npm-review-work/shared-next-batch064-tentative/literature-preparation/public-metadata-001/pmid-28448144.xml; ./PubmedArticle/MedlineCitation/PMID; ./PubmedArticle/MedlineCitation/Article/ArticleTitle; ./PubmedArticle/MedlineCitation/Article/Abstract/AbstractText; ./PubmedArticle/PubmedData/ArticleIdList/ArticleId | partial | Own PMID28448144/DOI10.1021/acs.jnatprod.7b00019 abstract reports isolated cryptomaldamide from M.producens and structure work, but calls the 28.7 kb cluster putative and its initiating reaction proposed. It does not specify JHB or validate the entire retained structure. |
+| E-LOCAL-CHEM | /private/tmp/npm-review-work/shared-next-batch064-tentative/source-science-preparation/tentative64-local-chemical-interpretation-addendum-001.json; /records/4; /original_computation_clock; /separate_neighbor_inspection_clock; saved computation /private/tmp/npm-review-work/shared-next-batch064-tentative/source-science-preparation/root-tentative64-local-chemical-consistency-001.json#/records/4; independent peer /private/tmp/npm-review-work/shared-next-batch064-tentative/source-science-preparation/native-tentative64-chemical-interpretation-independent-peer-001.json#/summary | supports | Saved RDKit 2026.03.5 owner SMILES and Standard InChI both parse and reproduce full key FUCBQNSQRCPSGC-BOUYHWOHSA-N, formula C18H33N5O5, one fragment and formal charge 0. Each representation reports 0 unspecified tetrahedral centers. No tetrahedral unknown is reported and the saved C=C geometry remains specified. The InChI C=N flags are separate representation diagnostics. This is saved local encoding evidence, not current-authority or exact natural-identity verification. |
+
+## Limits And Additional Notes
+
+- Original local and metadata read times remain separate from original HTTP access clocks. Full-owner scientific verification stays false.
+- No primary/SI or current-authority verification; no natural stereochemical completeness or absence-of-activity claim.
+- The abstract supports a named isolated material and a proposed biosynthetic connection, not exact strain, full stereochemistry, protein mapping or an assay value. CID132489951 blank AID stays a sentinel.
+- Configured consistency only; independent scientific claim support and unrestricted remote authority refresh are not implied.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint and before downstream tests. Its actual exit1/log/input capture/root observation remain pinned; the selected successful canonical QC attempt002 is separately timed. No individual-review validation failure or counter reset is claimed.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings; this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions and no-adapter pairs; a successful command does not convert these into verified scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population was checked; external caches and generated bytecode are not asserted to be independently byte-pinned.
+- The entire local owner and retained source rows were read. Full-owner scientific verification remains false; scientific_review denotes only the bounded scientific interpretation in evidence and assessments.
+- Original owner reading, HTTP retrieval, two-encoding computation and later official-intake SMILES computation have separate preserved clocks. The review start/finish bound official intake and final adjudication; earlier evidence is reused.
+- No scientific record, maintained source or native curation status was changed. Findings and actions describe proposed work; unavailable checks prevent completed status.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261027T125040Z-cryptomaldamide
+title: Scientific review of cryptomaldamide
+started_at: '2026-10-27T12:41:45.072341Z'
+finished_at: '2026-10-27T12:50:40.580337Z'
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: The own abstract distinguishes isolated cryptomaldamide from a putatively
+  assigned biosynthetic cluster. Exact JHB material and retained stereochemistry need
+  fuller source verification; no blank-AID sentinel is promoted to an activity result.
+source:
+  git_revision: 14373517042b407747272446f79953ae86d51fa4
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/cryptomaldamide.yaml
+    sha256: 01a828016cf6ecebb389e4f1149f277ebdc1ef0d1592835fc6bf7e58461221ec
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+targets:
+- target_id: naturalproductmech:mibig-624e16ed1d
+  path: data/natural_products/amino_acids_and_peptides/cryptomaldamide.yaml
+  label: cryptomaldamide
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+scope:
+  description: Whole retained owner and source rows, local chemical consistency, inspected
+    own publication metadata and supplied abstracts; exact primary and current-authority
+    verification is partial.
+  selection: One resolved record in canonical path order from the unreviewed corpus;
+    current official intake reconciled to the earlier evidence snapshots.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-624e16ed1d
+  exclusions:
+  - target: Full primary material and current external authorities
+    reason: No full article/SI or current authority refresh was inspected; unresolved
+      exact claims are explicit below.
+checks:
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its
+    pinned path.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-corpus-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.783967Z;
+    finished 2026-10-25T22:37:16.453216Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.log.
+    Reused for batch064 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch064. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-624e16ed1d
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: Fresh canonical reproduction gate passed:all3116 records byte-identical
+    to source seeding; source warnings remain retained.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-reproduction-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784055Z;
+    finished 2026-10-25T22:37:31.682209Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.log.
+    Reused for batch064 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch064. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-624e16ed1d
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: Fresh deterministic review queue completed:8922 rows across12 queues. Queue
+    output is not scientific-review coverage.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-review-queue-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just review-queue --tsv /private/tmp/npm-review-queue-batch-036-fresh14373517-001.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.781802Z;
+    finished 2026-10-25T22:37:08.229737Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.log.
+    Reused for batch064 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch064. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-624e16ed1d
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking
+    mismatches and4898no-adapter skips remain explicit.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-validate-products-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784040Z;
+    finished 2026-10-25T22:37:32.251879Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.log.
+    Reused for batch064 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch064. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-624e16ed1d
+- check_id: shared-qc
+  name: Full repository quality gate on the fresh main baseline
+  status: passed
+  required: true
+  summary: Canonical just qc completed with actual terminal exit0:1024 tests passed,4
+    skipped,2 dependency warnings;3116 records passed closed schema validation, site
+    freshness, byte reproduction and lockfile integrity.22 governed artifacts and15
+    raw inventories passed. Prior DNS failed001 remains preserved.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-qc-attempt-002
+    PYTHONDONTWRITEBYTECODE=1 just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-002 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:40:55.179857Z;
+    finished 2026-10-25T22:46:28.974296Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.log.
+    Reused for batch064 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch064. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-624e16ed1d
+- check_id: C-STRICT
+  name: Native strict target validation
+  status: passed
+  required: true
+  summary: The exact selected owner passed the documented strict validator; this is
+    a configured consistency result.
+  command: just validate-strict data/natural_products/amino_acids_and_peptides/cryptomaldamide.yaml
+    --out /private/tmp/npm-review-work/635/strict.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Actual target intake execution finished 2026-10-27T12:41:46.417905Z.
+    Original receipt: /private/tmp/npm-review-work/635/strict-receipt.json.'
+  target_ids:
+  - naturalproductmech:mibig-624e16ed1d
+- check_id: C-PINNED-LOCAL
+  name: Retained owner and source-row integrity
+  status: passed
+  required: true
+  summary: Whole owner bytes and all seven retained row-set digests match the original
+    tentative inventory. The current official intake independently reproduces these
+    source arrays; external identity verification remains unavailable.
+  target_ids:
+  - naturalproductmech:mibig-624e16ed1d
+  evidence_ids:
+  - E-LOCAL
+- check_id: C-EXACT-PRIMARY
+  name: Exact compound material and claim-level primary verification
+  status: unavailable
+  required: true
+  summary: No full primary body or SI was inspected. Exact congener/material, structural
+    assignments and compound-specific strain/locus experiments remain unresolved at
+    the available abstract or bibliographic tier.
+  target_ids:
+  - naturalproductmech:mibig-624e16ed1d
+  evidence_ids:
+  - E-LOCAL
+  - E-OWN-ABSTRACT
+- check_id: C-AUTHORITY
+  name: Current external structure, taxon and protein authority verification
+  status: unavailable
+  required: true
+  summary: Current authority lookups were not performed. Stored identifiers, encodings
+    and classifications are retained as source assertions; none is promoted to a current-authority
+    or natural-stereochemistry verification.
+  target_ids:
+  - naturalproductmech:mibig-624e16ed1d
+  evidence_ids:
+  - E-LOCAL
+- check_id: C-LOCAL-CHEM
+  name: Saved local chemical encoding consistency
+  status: passed
+  required: true
+  summary: Saved RDKit 2026.03.5 owner SMILES and Standard InChI both parse and reproduce
+    full key FUCBQNSQRCPSGC-BOUYHWOHSA-N, formula C18H33N5O5, one fragment and formal
+    charge 0. Each representation reports 0 unspecified tetrahedral centers. Original
+    compute12:03:57.145763–57.718530 and separate neighbor inspection12:09:22.965141–23.505346
+    are retained. This saved two-encoding result predates the separately recorded
+    official-intake SMILES computation.
+  target_ids:
+  - naturalproductmech:mibig-624e16ed1d
+  evidence_ids:
+  - E-LOCAL
+  - E-LOCAL-CHEM
+  scope_note: Passed only for the recorded local parse/full-key/formula consistency.
+    Neither natural stereochemistry nor an external identifier match is thereby verified.
+evidence:
+- evidence_id: E-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch064-tentative/tentative-owner-source-inventory-001.json
+  locator: /entries/4/owner_document; /entries/4/rows
+  accessed_at: '2026-10-27T11:58:01.184645Z'
+  snapshot_sha256: d326d9f06af4c4b90d76f1f911f6a473b4a68eb2c8d676cb09eaefcc78cdae83
+  support: context_only
+  summary: 'Cryptomaldamide owner plus seven arrays/four rows: BGC0001560 v4, M.producens
+    JHB SOURCE_ASSERTION/CLUSTER_UNSTATED, species-level LOTUS occurrence and blank-AID
+    PubChem sentinel. Stored stereo_complete=true does not independently verify its
+    natural stereochemistry.'
+- evidence_id: E-OWN-ABSTRACT
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch064-tentative/literature-preparation/public-metadata-001/pmid-28448144.xml
+  locator: ./PubmedArticle/MedlineCitation/PMID; ./PubmedArticle/MedlineCitation/Article/ArticleTitle;
+    ./PubmedArticle/MedlineCitation/Article/Abstract/AbstractText; ./PubmedArticle/PubmedData/ArticleIdList/ArticleId
+  accessed_at: '2026-10-27T12:26:57.311028Z'
+  snapshot_sha256: eea6995d83c18fa8215411a1a5d4f71013f78ec2689c403a99414ebe0cdff649
+  support: partial
+  summary: Own PMID28448144/DOI10.1021/acs.jnatprod.7b00019 abstract reports isolated
+    cryptomaldamide from M.producens and structure work, but calls the 28.7 kb cluster
+    putative and its initiating reaction proposed. It does not specify JHB or validate
+    the entire retained structure.
+- evidence_id: E-LOCAL-CHEM
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch064-tentative/source-science-preparation/tentative64-local-chemical-interpretation-addendum-001.json
+  locator: /records/4; /original_computation_clock; /separate_neighbor_inspection_clock;
+    saved computation /private/tmp/npm-review-work/shared-next-batch064-tentative/source-science-preparation/root-tentative64-local-chemical-consistency-001.json#/records/4;
+    independent peer /private/tmp/npm-review-work/shared-next-batch064-tentative/source-science-preparation/native-tentative64-chemical-interpretation-independent-peer-001.json#/summary
+  accessed_at: '2026-10-27T12:10:51.366371Z'
+  snapshot_sha256: d08b26c86cb477241550ca94f0f155a2d2c836125a57919f845ce5e9efd291fa
+  support: supports
+  summary: Saved RDKit 2026.03.5 owner SMILES and Standard InChI both parse and reproduce
+    full key FUCBQNSQRCPSGC-BOUYHWOHSA-N, formula C18H33N5O5, one fragment and formal
+    charge 0. Each representation reports 0 unspecified tetrahedral centers. No tetrahedral
+    unknown is reported and the saved C=C geometry remains specified. The InChI C=N
+    flags are separate representation diagnostics. This is saved local encoding evidence,
+    not current-authority or exact natural-identity verification.
+assessments:
+- assessment_id: A-LOCAL-SCOPE
+  area: provenance
+  topic: Retained compound-specific claim boundaries
+  outcome: supported
+  summary: 'Cryptomaldamide owner plus seven arrays/four rows: BGC0001560 v4, M.producens
+    JHB SOURCE_ASSERTION/CLUSTER_UNSTATED, species-level LOTUS occurrence and blank-AID
+    PubChem sentinel. Stored stereo_complete=true does not independently verify its
+    natural stereochemistry.'
+  target_ids:
+  - naturalproductmech:mibig-624e16ed1d
+  evidence_ids:
+  - E-LOCAL
+- assessment_id: A-OWN-SOURCE
+  area: evidence
+  topic: Own abstract applicability
+  outcome: supported
+  summary: Own PMID28448144/DOI10.1021/acs.jnatprod.7b00019 abstract reports isolated
+    cryptomaldamide from M.producens and structure work, but calls the 28.7 kb cluster
+    putative and its initiating reaction proposed. It does not specify JHB or validate
+    the entire retained structure.
+  target_ids:
+  - naturalproductmech:mibig-624e16ed1d
+  evidence_ids:
+  - E-OWN-ABSTRACT
+- assessment_id: A-EXACT-IDENTITY
+  area: identity
+  topic: Exact natural material and stereochemical scope
+  outcome: unknown
+  summary: The stored structure and stereo-completeness annotation identify the retained
+    representation. The inspected metadata does not independently establish the full
+    natural stereochemical identity or every compound-specific source claim.
+  target_ids:
+  - naturalproductmech:mibig-624e16ed1d
+  evidence_ids:
+  - E-LOCAL
+  - E-OWN-ABSTRACT
+- assessment_id: A-LOCAL-CHEM
+  area: consistency
+  topic: Internal chemical encoding and stereochemical scope
+  outcome: supported
+  summary: Saved RDKit 2026.03.5 owner SMILES and Standard InChI both parse and reproduce
+    full key FUCBQNSQRCPSGC-BOUYHWOHSA-N, formula C18H33N5O5, one fragment and formal
+    charge 0. Each representation reports 0 unspecified tetrahedral centers. No tetrahedral
+    unknown is reported and the saved C=C geometry remains specified. The InChI C=N
+    flags are separate representation diagnostics. Across the complete saved cohort,
+    the 132 unspecified double-bond observations are C=N motifs, not 132 extra missing
+    C=C configurations. Standard InChI normalization and representation-local indices
+    do not establish exact natural material or published atom numbering.
+  target_ids:
+  - naturalproductmech:mibig-624e16ed1d
+  evidence_ids:
+  - E-LOCAL
+  - E-LOCAL-CHEM
+findings: []
+actions: []
+limitations:
+- Original local and metadata read times remain separate from original HTTP access
+  clocks. Full-owner scientific verification stays false.
+- No primary/SI or current-authority verification; no natural stereochemical completeness
+  or absence-of-activity claim.
+- The abstract supports a named isolated material and a proposed biosynthetic connection,
+  not exact strain, full stereochemistry, protein mapping or an assay value. CID132489951
+  blank AID stays a sentinel.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint
+  and before downstream tests. Its actual exit1/log/input capture/root observation
+  remain pinned; the selected successful canonical QC attempt002 is separately timed.
+  No individual-review validation failure or counter reset is claimed.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter
+  skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings;
+  this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld
+  nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological
+  or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological
+  production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions
+  and no-adapter pairs; a successful command does not convert these into verified
+  scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command
+  execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population
+  was checked; external caches and generated bytecode are not asserted to be independently
+  byte-pinned.
+notes:
+- The entire local owner and retained source rows were read. Full-owner scientific
+  verification remains false; scientific_review denotes only the bounded scientific
+  interpretation in evidence and assessments.
+- Original owner reading, HTTP retrieval, two-encoding computation and later official-intake
+  SMILES computation have separate preserved clocks. The review start/finish bound
+  official intake and final adjudication; earlier evidence is reused.
+- No scientific record, maintained source or native curation status was changed. Findings
+  and actions describe proposed work; unavailable checks prevent completed status.
+```
