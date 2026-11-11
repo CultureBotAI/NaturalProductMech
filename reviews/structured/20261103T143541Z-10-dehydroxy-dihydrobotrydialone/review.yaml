@@ -1,0 +1,1156 @@
+schema_version: 1.0.0
+review_id: 20261103T143541Z-10-dehydroxy-dihydrobotrydialone
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'Local evidence review: 10-dehydroxy dihydrobotrydialone'
+started_at: '2026-11-03T14:04:12.424134Z'
+finished_at: '2026-11-03T14:35:41.753330Z'
+reviewer:
+  identity: Codex root with native_checks, bgc_science and review_support peer agents
+  kind: agent
+  independence: independent
+  independence_basis: This review team inspected existing owner and retained source
+    bytes without editing them; scientific fragments were cross-checked separately
+    from their author. Local validation is not treated as scientific proof.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: The exact retained structure and source provenance are locally consistent
+  for 10-dehydroxy dihydrobotrydialone. Both saved molecular forms preserve its lactone,
+  acetate and six specified tetrahedral centres. Producer-strain and occurrence-species
+  assertions remain separate; primary publications and full authority checks were
+  unavailable, so scientific completion is partial.
+source:
+  git_revision: ce6a5498df5be51116bd5e0c119023ee62bb5464
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: AGENTS.md
+    sha256: 69e4037f8dc97d4b00bb7bb83b41ceca025f6ef578d5c0bf8086f3400becde0b
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/terpenoids/1-epibotrydial.yaml
+    sha256: de27183b14aeebdaa766502e80b533dae2b4fea8cbb8a1a1c3d3623793f80775
+    role: context
+  - path: data/natural_products/terpenoids/10-dehydroxy-dihydrobotrydialone.yaml
+    sha256: 755ae0d04e75ed4fb5510c53f3ac3d011a77064305a8e5e22f5fb24a2b4fc2c6
+    role: target
+  - path: data/natural_products/terpenoids/10-epi-dihydrobotrydial.yaml
+    sha256: 5a35280153870595b8fa92396c1a4803d341f3618f91ff32c5c49fcab4044e48
+    role: context
+  - path: data/natural_products/terpenoids/10-oxo-dihydrobotrydial.yaml
+    sha256: 600744b216155b8a5c6e7e2cec0f0d47be3fb23ddf7d291b353035f0392b6bed
+    role: context
+  - path: data/natural_products/terpenoids/10-oxodehydrodihydrobotrydial.yaml
+    sha256: c3a205986d77c29236528a192299e9ce2f2d7011d6cb38300b7e07ec2865143f
+    role: context
+  - path: data/natural_products/terpenoids/10-oxodihydrobotry-1-9-4-5-diendial.yaml
+    sha256: 583c51cc539f04fc68e99a0fe5b1b86e7e2e0c76235227e5a19356847929bf0d
+    role: context
+  - path: data/natural_products/terpenoids/11-hydroxydehydrobotrydienol.yaml
+    sha256: c25e2696521c9381fbaebaf01deac68cdc70cab04a9b7ab03eda82c595b0a561
+    role: context
+  - path: data/natural_products/terpenoids/12-hydroxydehydrobotrydienol.yaml
+    sha256: d8a363fb5c558056a1c7ed69312e113e2310f8bfbbf787f8eb07a0030745ec54
+    role: context
+  - path: data/natural_products/terpenoids/4-acetoxytetrahydrobotryslactone.yaml
+    sha256: c4c9d1c900ad07aac687e0b9ec51c5ba589e9e065c4f0116446a248ba366112e
+    role: context
+  - path: data/natural_products/terpenoids/8-9-epibotrydial.yaml
+    sha256: 11f0440d7c378d961befc6e158afa3f9a839110ce672438ad032baa487a9cc33
+    role: context
+  - path: data/natural_products/terpenoids/botrydial.yaml
+    sha256: f12d22645ff34656cf446630d1b2c838db1ffa59c978182a42c5e10fcd5134cd
+    role: context
+  - path: data/natural_products/terpenoids/botrydienal.yaml
+    sha256: 7f18efdecb4f12ebcf7c8e9710f0cb70d630b33cad1ba3c79b2aa8f8db7af839
+    role: context
+  - path: data/natural_products/terpenoids/botryenalol.yaml
+    sha256: 473ebf066845fe74c1373996eceff8390a4e4ee3583cd69b3cf751683b936add
+    role: context
+  - path: data/natural_products/terpenoids/botryendial.yaml
+    sha256: 3c5281cc27c72cdcd4b4c0ff933483687532e1be9378618a7cf209a691a98761
+    role: context
+  - path: data/natural_products/terpenoids/dehydrobotrydienol.yaml
+    sha256: 8a56db9386bde355c12ccb9e3b6a333857a96ccbb7db253a52765213ec4538b5
+    role: context
+  - path: data/natural_products/terpenoids/dihydrobotrydial.yaml
+    sha256: aa738c13a340ea710c01fb6d36f9a794537660a87237bd1a576db8a9c2c9de9b
+    role: context
+  - path: data/natural_products/terpenoids/norbotrydialone-acetate.yaml
+    sha256: 347f7627931387555bad558583abf5d0edd65f74374c37f7e462a24684485e97
+    role: context
+  - path: data/natural_products/terpenoids/secobotrydiene-3-10-15-triol.yaml
+    sha256: 37a54d9f76ef5c6ff47b82d4852a012c27e62412d542e7e351cbf351bdbb6fc4
+    role: context
+  - path: data/natural_products/terpenoids/secobotrydiene-3-4-10-15-tetraol.yaml
+    sha256: a650f624eca66433eda385fe89540aa42d5e2116b8cdd6f5af761e77b90c9478
+    role: context
+  - path: data/natural_products/terpenoids/secobotrytriendiol.yaml
+    sha256: acd560fe75765a0826a9cdbebef3eee34e941dea669b57b331da785a71da0760
+    role: context
+  - path: data/natural_products/terpenoids/secobotrytriene-10-12-15-triol.yaml
+    sha256: 8ef90288327387e143f9995ee7eef0e33ce55a8c01d323b9aeb2f0f603b01f70
+    role: context
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete NaturalProductRecord, including all present scientific
+    claims, history and declared mechanisms; external verification remains unavailable.
+  selection: Campaign path order 2231; one of the next ten uncovered paths selected
+    from the 3116-record corpus. Membership uses the canonical validated catalogue
+    plus retained committed campaign bundles.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-1e06238f05
+targets:
+- target_id: naturalproductmech:mibig-1e06238f05
+  path: data/natural_products/terpenoids/10-dehydroxy-dihydrobotrydialone.yaml
+  label: 10-dehydroxy dihydrobotrydialone
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained harmonization generator; seeded fields are corrected through
+      maintained inputs and validated regeneration.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Retained MIBiG structure, producer and compound-specific locus assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/npclassifier.tsv
+    role: Pinned computed classification and filing assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Maintained extraction of MIBiG compound names, structures, stereochemistry
+      flags and source provenance.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Retained cited occurrence assertions, distinct from demonstrated production.
+  ownership_note: This review proposes no record edit. Source corrections belong in
+    maintained inventories, implemented curation tables, extractors or the seeder;
+    generated pages are not owners.
+checks:
+- check_id: root-native-strict_ten
+  name: strict_ten
+  status: passed
+  required: true
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  target_ids:
+  - naturalproductmech:mibig-1e06238f05
+  command: just validate-strict data/natural_products/terpenoids/10-dehydroxy-dihydrobotrydialone.yaml
+    data/natural_products/terpenoids/10-epi-dihydrobotrydial.yaml data/natural_products/terpenoids/10-oxo-dihydrobotrydial.yaml
+    data/natural_products/terpenoids/10-oxodehydrodihydrobotrydial.yaml data/natural_products/terpenoids/10-oxodepressin.yaml
+    data/natural_products/terpenoids/10-oxodihydrobotry-1-9-4-5-diendial.yaml data/natural_products/terpenoids/11-hydroxy-hordetriene.yaml
+    data/natural_products/terpenoids/11-hydroxydehydrobotrydienol.yaml data/natural_products/terpenoids/12-hydroxydehydrobotrydienol.yaml
+    data/natural_products/terpenoids/15-acetyldeoxynivalenol.yaml --workers 1 --out
+    /private/tmp/npm-native-checks/batch-224/validate-strict-selected10-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_ten
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-strict_full
+  name: strict_full
+  status: passed
+  required: true
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  target_ids:
+  - naturalproductmech:mibig-1e06238f05
+  command: just validate-all --workers 1 --out /private/tmp/npm-native-checks/batch-224/validate-all-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_full
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-lockfile
+  name: lockfile
+  status: passed
+  required: true
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  target_ids:
+  - naturalproductmech:mibig-1e06238f05
+  command: just verify-corpus --summary
+  exit_code: 0
+  evidence_ids:
+  - root-native-lockfile
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-reproduction
+  name: reproduction
+  status: passed
+  required: true
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  target_ids:
+  - naturalproductmech:mibig-1e06238f05
+  command: just verify-reproduction
+  exit_code: 0
+  evidence_ids:
+  - root-native-reproduction
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-queue
+  name: queue
+  status: passed
+  required: true
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  target_ids:
+  - naturalproductmech:mibig-1e06238f05
+  command: just review-queue --tsv /private/tmp/npm-native-checks/batch-224/review-queue-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-queue
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-full-qc
+  name: Full just qc
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-1e06238f05
+  summary: 'Not run under the external-request prohibition: the complete recipe includes
+    upstream vendored synchronization. The five executed local checks are recorded
+    separately.'
+- check_id: root-ontology-authorities
+  name: Complete OAK identifier/label authority check
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-1e06238f05
+  summary: Complete offline ontology authority coverage was not established for this
+    run; no ontology retrieval or remote resolution was attempted. Retained taxonomy
+    evidence has only its explicitly stated local scope.
+- check_id: root-primary-and-live-sources
+  name: Primary literature and current structured database/identifier verification
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-1e06238f05
+  summary: All external requests are prohibited by the user. Fresh database and identifier
+    verification and complete primary-literature coverage are unavailable. Any retained
+    original literature actually inspected is recorded separately with its historical
+    scope.
+evidence:
+- evidence_id: bgc-2231-owner
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/terpenoids/10-dehydroxy-dihydrobotrydialone.yaml
+  locator: Whole owner plaintext and complete curation_history
+  accessed_at: '2026-11-03T14:30:04.347462Z'
+  support: supports
+  summary: Complete owner and append-only history, personally read as exact retained
+    plaintext and rejoined to the current raw pin.
+  snapshot_sha256: 755ae0d04e75ed4fb5510c53f3ac3d011a77064305a8e5e22f5fb24a2b4fc2c6
+- evidence_id: bgc-2231-capture
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224/owner-capture-DATA-001.json
+  locator: /records/0/owner_pin; /records/0/owner_document
+  accessed_at: '2026-11-03T14:30:04.347462Z'
+  support: supports
+  summary: Complete captured owner and its exact source pin, including all written
+    fields and history.
+  snapshot_sha256: 1f609d8a7b403d773c69095a432eff10024020bf480f3b53ec8c8c6d75ae903a
+- evidence_id: bgc-2231-intake
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224/intakes/2231-inspect-001.json
+  locator: /source; /targets
+  accessed_at: '2026-11-03T14:30:04.347462Z'
+  support: supports
+  summary: Actual canonical intake source, complete input map and target/maintained-owner
+    scope.
+  snapshot_sha256: d338a93feb94387eb45b09d3a270c770155e08139ef7b631a18ecc7e09fdadea
+- evidence_id: bgc-2231-intake-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224/root-intake-ready-001.json
+  locator: /status; /intake_summary; /input_plan
+  accessed_at: '2026-11-03T14:30:04.347462Z'
+  support: supports
+  summary: ROOT acceptance of the original ten actual canonical intakes and their
+    admitted input plan.
+  snapshot_sha256: 1f72205492f09d0c086a807f917b4bcf17eaff42d69561dd277a1518be71c584
+- evidence_id: bgc-2231-grounding-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224/owner-capture-DATA-001.json
+  locator: /records/0/owner_document/chemical_structure; /records/0/owner_document/source_concepts;
+    /records/0/owner_document/grounding_status; /records/0/owner_document/xrefs
+  accessed_at: '2026-11-03T14:30:04.347462Z'
+  support: supports
+  summary: Written structure, source concepts, cross-references and grounding decision,
+    without fresh external resolution.
+  snapshot_sha256: 1f609d8a7b403d773c69095a432eff10024020bf480f3b53ec8c8c6d75ae903a
+- evidence_id: bgc-2231-origin-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224/owner-capture-DATA-001.json
+  locator: /records/0/owner_document/producer_organisms; /records/0/owner_document/biosynthetic_gene_clusters
+  accessed_at: '2026-11-03T14:30:04.347462Z'
+  support: supports
+  summary: Complete written producer and locus assertions, including evidence grades,
+    source versions, methods and references.
+  snapshot_sha256: 1f609d8a7b403d773c69095a432eff10024020bf480f3b53ec8c8c6d75ae903a
+- evidence_id: bgc-2231-occurrence-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224/owner-capture-DATA-001.json
+  locator: /records/0/owner_document/occurrences; /records/0/owner_document/occurrence_taxon_groups
+  accessed_at: '2026-11-03T14:30:04.347462Z'
+  support: supports
+  summary: Complete written occurrence assertions, organism labels and stored facets;
+    these are separate from the producer claims.
+  snapshot_sha256: 1f609d8a7b403d773c69095a432eff10024020bf480f3b53ec8c8c6d75ae903a
+- evidence_id: bgc-2231-assay-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224/owner-capture-DATA-001.json
+  locator: /records/0/owner_document
+  accessed_at: '2026-11-03T14:30:04.347462Z'
+  support: supports
+  summary: The complete captured owner has no bioactivities, bioactivity_summary,
+    molecular_targets, causal_graphs, causal_graph_refs or biosynthetic_pathway root.
+    This is a written-field account, not a claim about all external evidence.
+  snapshot_sha256: 1f609d8a7b403d773c69095a432eff10024020bf480f3b53ec8c8c6d75ae903a
+- evidence_id: bgc-2231-classification-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224/owner-capture-DATA-001.json
+  locator: /records/0/owner_document/np_pathway; /records/0/owner_document/np_classification;
+    /records/0/owner_document/bgc_class; /records/0/owner_document/biosynthesis_origin;
+    /records/0/owner_document/producer_taxon_groups; /records/0/owner_document/occurrence_taxon_groups
+  accessed_at: '2026-11-03T14:30:04.347462Z'
+  support: supports
+  summary: Named-model predictions, filing, source classes and written taxon facets
+    are retained as separate fields.
+  snapshot_sha256: 1f609d8a7b403d773c69095a432eff10024020bf480f3b53ec8c8c6d75ae903a
+- evidence_id: bgc-2231-source-plan
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224-tentative/bgc-prep/bgc-conditional224-target-input-plan-001.json
+  locator: /records/0
+  accessed_at: '2026-11-03T14:30:04.347462Z'
+  support: supports
+  summary: Complete admitted selected context, exact raw/history, direct companion
+    map and input paths.
+  snapshot_sha256: 7a543c946c947e661aca3902df11516ae7e744a40fa1823544de55df6cc468af
+- evidence_id: bgc-2231-plan-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224/root-input-plan-acceptance-001.json
+  locator: /status; /input_plan; /source_scope_notes; /inventory; /verification
+  accessed_at: '2026-11-03T14:30:04.347462Z'
+  support: supports
+  summary: ROOT accepts the actual input plan, its exact saved inventory projection
+    and the separately attributed source-reading notes.
+  snapshot_sha256: da3962b4fe12850e53d3e2136f3ed0a1c2cdf9587ae719376ead739521412e37
+- evidence_id: bgc-2231-source-notes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224-tentative/bgc-prep/bgc-conditional224-source-scope-notes-001.json
+  locator: /reading; /curation; /cautions; /taxonomy
+  accessed_at: '2026-11-03T14:30:04.347462Z'
+  support: supports
+  summary: 'Complete reading attribution and bounded whole-cohort curation scan: 75
+    distinct literal tokens, eight directly opened pinned tables, zero matching data
+    rows in that declared scope. No reserved decisions table was consumed.'
+  snapshot_sha256: f610c862e06775768572fe9cb7d4faf101df772f22e18f57a1823102e074e191
+- evidence_id: bgc-2231-chemistry
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/0/declared_structure; /records/0/smiles; /records/0/inchi; /records/0/comparisons;
+    /records/0/atom_correspondence
+  accessed_at: '2026-11-03T14:30:04.347462Z'
+  support: supports
+  summary: Both complete saved molecular forms, all ten true comparison flags and
+    the complete literal atom correspondence. The full_graph_identity_established
+    flag remains false.
+  snapshot_sha256: e66cde7421469a28a7c887b4274a58659b679977f1286ed3b429a5b17e59c15c
+- evidence_id: bgc-2231-topology
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/0/smiles/computed/atoms; /records/0/smiles/computed/bonds; /records/0/smiles/computed/rings;
+    /records/0/smiles/computed/motifs; /records/0/smiles/computed/potential_stereo;
+    /records/0/smiles/computed/stereo_counts; /records/0/inchi/computed/atoms; /records/0/inchi/computed/bonds;
+    /records/0/inchi/computed/rings; /records/0/inchi/computed/motifs; /records/0/inchi/computed/potential_stereo;
+    /records/0/inchi/computed/stereo_counts; /records/0/atom_correspondence; /records/0/declared_structure
+  accessed_at: '2026-11-03T14:30:04.347462Z'
+  support: supports
+  summary: Complete indexed atom, bond, ring, motif and stereochemical tables in both
+    saved forms. Motifs are bounded patterns, not sugar, natural-identity or experimental
+    assignments.
+  snapshot_sha256: e66cde7421469a28a7c887b4274a58659b679977f1286ed3b429a5b17e59c15c
+- evidence_id: bgc-2231-diagnostic-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224/root-local-diagnostics-acceptance-001.json
+  locator: /status; /chemistry_DATA; /chemistry_execution; /results; /unavailable
+  accessed_at: '2026-11-03T14:30:04.347462Z'
+  support: supports
+  summary: ROOT accepts the original twenty-form diagnostic with empty global stderr
+    and no denied events; scientific interpretation is separately attributed.
+  snapshot_sha256: 43ebbc292b0c41391fc12c29a12363d1a780ad3c4641e351d63b09654e4ef315
+- evidence_id: bgc-2231-native-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224/root-local-diagnostics-acceptance-001.json
+  locator: /status; /native_ledger; /results; /unavailable; /all_native_gates_passed
+  accessed_at: '2026-11-03T14:30:04.347462Z'
+  support: supports
+  summary: The five original local gates exited zero. Full QC and complete OAK remain
+    unavailable, so all_native_gates_passed is false and scientific coverage remains
+    partial.
+  snapshot_sha256: 43ebbc292b0c41391fc12c29a12363d1a780ad3c4641e351d63b09654e4ef315
+- evidence_id: bgc-2231-query-mibig_compounds
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224-tentative/bgc-prep/bgc-conditional224-target-input-plan-001.json
+  locator: /records/0/source_scope_inventory/joins/mibig_compounds
+  accessed_at: '2026-11-03T14:30:04.347462Z'
+  support: supports
+  summary: Complete saved query frame with 1 positive row placements. Saved exact
+    complete standard_inchi_key equality, query "MBHVNAKPTPFWNG-MYFMSEKESA-N", against
+    the exact pinned mibig_compounds table. No source-query replay or external lookup.
+  snapshot_sha256: 7a543c946c947e661aca3902df11516ae7e744a40fa1823544de55df6cc468af
+  search_scope: Saved exact complete standard_inchi_key equality, query "MBHVNAKPTPFWNG-MYFMSEKESA-N",
+    against the exact pinned mibig_compounds table. No source-query replay or external
+    lookup.
+- evidence_id: bgc-2231-source-mibig_compounds
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv
+  locator: Physical TSV lines 732
+  accessed_at: '2026-11-03T14:30:04.347462Z'
+  support: supports
+  summary: 'Complete retained fields, including blanks, and physical frame hashes:
+    [{"physical_line":732,"last_physical_line":732,"row_sha256":"7c6108e0e8f07570d47bd02613109c84be340aca417ee894a3fe91f54e4a4466","row":{"mibig_accession":"BGC0000631","entry_version":"5","entry_status":"active","entry_quality":"questionable","entry_completeness":"complete","compound_name":"10-dehydroxy
+    dihydrobotrydialone","compound_index":"6","smiles":"C[C@@H]1C[C@@H]([C@@H]2[C@@]3([C@H]1COC(=O)[C@]3(CC2(C)C)C)O)OC(=O)C","standard_inchi":"InChI=1S/C17H26O5/c1-9-6-12(22-10(2)18)13-15(3,4)8-16(5)14(19)21-7-11(9)17(13,16)20/h9,11-13,20H,6-8H2,1-5H3/t9-,11+,12+,13+,16-,17-/m1/s1","standard_inchi_key":"MBHVNAKPTPFWNG-MYFMSEKESA-N","stereo_complete":"true","compound_classes":"","database_ids":"npatlas:NPA004027","taxon_id":"NCBITaxon:332648","taxon_label":"Botrytis
+    cinerea B05.10","bgc_classes":"terpene","bgc_subclasses":"Sesquiterpene","genome_accession":"CP009816.1","locus_from":"2216500","locus_to":"2246000","locus_evidence_methods":"Knock-out
+    studies","producer_evidence_basis":"BGC_CHARACTERIZED","cluster_link_evidence_basis":"CLUSTER_DEMONSTRATED","primary_reference":"DOI:10.1016/0031-9422(95)00643-5","reference_basis":"COMPOUND_EVIDENCE"}}]'
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: bgc-2231-query-chebi_structures
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224-tentative/bgc-prep/bgc-conditional224-target-input-plan-001.json
+  locator: /records/0/source_scope_inventory/joins/chebi_structures
+  accessed_at: '2026-11-03T14:30:04.347462Z'
+  support: supports
+  summary: Complete saved query frame with 0 positive row placements. Saved exact
+    complete standard_inchi_key equality, query "MBHVNAKPTPFWNG-MYFMSEKESA-N", against
+    the exact pinned chebi_structures table. No source-query replay or external lookup.
+  snapshot_sha256: 7a543c946c947e661aca3902df11516ae7e744a40fa1823544de55df6cc468af
+  search_scope: Saved exact complete standard_inchi_key equality, query "MBHVNAKPTPFWNG-MYFMSEKESA-N",
+    against the exact pinned chebi_structures table. No source-query replay or external
+    lookup.
+- evidence_id: bgc-2231-query-lotus_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224-tentative/bgc-prep/bgc-conditional224-target-input-plan-001.json
+  locator: /records/0/source_scope_inventory/joins/lotus_occurrences
+  accessed_at: '2026-11-03T14:30:04.347462Z'
+  support: supports
+  summary: Complete saved query frame with 1 positive row placements. Saved exact
+    complete standard_inchi_key equality, query "MBHVNAKPTPFWNG-MYFMSEKESA-N", against
+    the exact pinned lotus_occurrences table. No source-query replay or external lookup.
+  snapshot_sha256: 7a543c946c947e661aca3902df11516ae7e744a40fa1823544de55df6cc468af
+  search_scope: Saved exact complete standard_inchi_key equality, query "MBHVNAKPTPFWNG-MYFMSEKESA-N",
+    against the exact pinned lotus_occurrences table. No source-query replay or external
+    lookup.
+- evidence_id: bgc-2231-source-lotus_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Physical TSV lines 4346
+  accessed_at: '2026-11-03T14:30:04.347462Z'
+  support: supports
+  summary: 'Complete retained fields, including blanks, and physical frame hashes:
+    [{"physical_line":4346,"last_physical_line":4346,"row_sha256":"e459298fbb8040f2ce5d3dd51858bd8ba36f0b843a8e1b9b8dac079562a4d970","row":{"standard_inchi_key":"MBHVNAKPTPFWNG-MYFMSEKESA-N","organism_name":"Botrytis
+    cinerea","taxon_id":"NCBITaxon:40559","organism_wikidata":"http://www.wikidata.org/entity/Q1135851","reference_doi":"10.1016/0031-9422(95)00643-5","structure_wikidata":"http://www.wikidata.org/entity/Q77280951"}}]'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: bgc-2231-query-cyanometdb_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224-tentative/bgc-prep/bgc-conditional224-target-input-plan-001.json
+  locator: /records/0/source_scope_inventory/joins/cyanometdb_occurrences
+  accessed_at: '2026-11-03T14:30:04.347462Z'
+  support: supports
+  summary: Complete saved query frame with 0 positive row placements. Saved exact
+    complete standard_inchi_key equality, query "MBHVNAKPTPFWNG-MYFMSEKESA-N", against
+    the exact pinned cyanometdb_occurrences table. No source-query replay or external
+    lookup.
+  snapshot_sha256: 7a543c946c947e661aca3902df11516ae7e744a40fa1823544de55df6cc468af
+  search_scope: Saved exact complete standard_inchi_key equality, query "MBHVNAKPTPFWNG-MYFMSEKESA-N",
+    against the exact pinned cyanometdb_occurrences table. No source-query replay
+    or external lookup.
+- evidence_id: bgc-2231-query-npclassifier
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224-tentative/bgc-prep/bgc-conditional224-target-input-plan-001.json
+  locator: /records/0/source_scope_inventory/joins/npclassifier
+  accessed_at: '2026-11-03T14:30:04.347462Z'
+  support: supports
+  summary: Complete saved query frame with 1 positive row placements. Saved exact
+    complete standard_inchi_key equality, query "MBHVNAKPTPFWNG-MYFMSEKESA-N", against
+    the exact pinned npclassifier table. No source-query replay or external lookup.
+  snapshot_sha256: 7a543c946c947e661aca3902df11516ae7e744a40fa1823544de55df6cc468af
+  search_scope: Saved exact complete standard_inchi_key equality, query "MBHVNAKPTPFWNG-MYFMSEKESA-N",
+    against the exact pinned npclassifier table. No source-query replay or external
+    lookup.
+- evidence_id: bgc-2231-source-npclassifier
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv
+  locator: Physical TSV lines 1447
+  accessed_at: '2026-11-03T14:30:04.347462Z'
+  support: supports
+  summary: 'Complete retained fields, including blanks, and physical frame hashes:
+    [{"physical_line":1447,"last_physical_line":1447,"row_sha256":"aedd0908b2e646d4d9168b7b48e24c25bf5560ce476ae58958d304b60b1e6f2a","row":{"standard_inchi_key":"MBHVNAKPTPFWNG-MYFMSEKESA-N","smiles":"C[C@@H]1C[C@@H]([C@@H]2[C@@]3([C@H]1COC(=O)[C@]3(CC2(C)C)C)O)OC(=O)C","pathway_results":"Terpenoids","superclass_results":"Sesquiterpenoids","class_results":"Presilphiperfolane
+    and Probotryane sesquiterpenoids","is_glycoside":"false","model_version":"npclassifier.gnps2.org@2026-09-07"}}]'
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: bgc-2231-query-pubchem_bioassay
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224-tentative/bgc-prep/bgc-conditional224-target-input-plan-001.json
+  locator: /records/0/source_scope_inventory/joins/pubchem_bioassay
+  accessed_at: '2026-11-03T14:30:04.347462Z'
+  support: supports
+  summary: Complete saved query frame with 0 positive row placements. Saved exact
+    complete standard_inchi_key equality, query "MBHVNAKPTPFWNG-MYFMSEKESA-N", against
+    the exact pinned pubchem_bioassay table. No source-query replay or external lookup.
+  snapshot_sha256: 7a543c946c947e661aca3902df11516ae7e744a40fa1823544de55df6cc468af
+  search_scope: Saved exact complete standard_inchi_key equality, query "MBHVNAKPTPFWNG-MYFMSEKESA-N",
+    against the exact pinned pubchem_bioassay table. No source-query replay or external
+    lookup.
+- evidence_id: bgc-2231-query-bindingdb_targets
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224-tentative/bgc-prep/bgc-conditional224-target-input-plan-001.json
+  locator: /records/0/source_scope_inventory/joins/bindingdb_targets
+  accessed_at: '2026-11-03T14:30:04.347462Z'
+  support: supports
+  summary: Complete saved query frame with 0 positive row placements. Saved exact
+    complete standard_inchi_key equality, query "MBHVNAKPTPFWNG-MYFMSEKESA-N", against
+    the exact pinned bindingdb_targets table. No source-query replay or external lookup.
+  snapshot_sha256: 7a543c946c947e661aca3902df11516ae7e744a40fa1823544de55df6cc468af
+  search_scope: Saved exact complete standard_inchi_key equality, query "MBHVNAKPTPFWNG-MYFMSEKESA-N",
+    against the exact pinned bindingdb_targets table. No source-query replay or external
+    lookup.
+- evidence_id: bgc-2231-query-antibioticmech_inchikeys
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224-tentative/bgc-prep/bgc-conditional224-target-input-plan-001.json
+  locator: /records/0/source_scope_inventory/joins/antibioticmech_inchikeys
+  accessed_at: '2026-11-03T14:30:04.347462Z'
+  support: supports
+  summary: Complete saved query frame with 0 positive row placements. Saved exact
+    complete standard_inchi_key equality, query "MBHVNAKPTPFWNG-MYFMSEKESA-N", against
+    the exact pinned antibioticmech_inchikeys table. No source-query replay or external
+    lookup.
+  snapshot_sha256: 7a543c946c947e661aca3902df11516ae7e744a40fa1823544de55df6cc468af
+  search_scope: Saved exact complete standard_inchi_key equality, query "MBHVNAKPTPFWNG-MYFMSEKESA-N",
+    against the exact pinned antibioticmech_inchikeys table. No source-query replay
+    or external lookup.
+- evidence_id: bgc-2231-query-chebi_origins
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224-tentative/bgc-prep/bgc-conditional224-target-input-plan-001.json
+  locator: /records/0/source_scope_inventory/joins/chebi_origins
+  accessed_at: '2026-11-03T14:30:04.347462Z'
+  support: supports
+  summary: Complete saved query frame with 0 positive row placements. Saved exact
+    chebi_id from exact full-key structure rows, query [], against the exact pinned
+    chebi_origins table. No source-query replay or external lookup.
+  snapshot_sha256: 7a543c946c947e661aca3902df11516ae7e744a40fa1823544de55df6cc468af
+  search_scope: Saved exact chebi_id from exact full-key structure rows, query [],
+    against the exact pinned chebi_origins table. No source-query replay or external
+    lookup.
+- evidence_id: bgc-2231-cached-taxonomy
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224-tentative/bgc-prep/bgc-conditional224-source-inventory-DATA-001.json
+  locator: /cached_taxonomy/whole_stanzas/4; /cached_taxonomy/whole_stanzas/9
+  accessed_at: '2026-11-03T14:30:04.347462Z'
+  support: supports
+  summary: 'Complete personally read retained name/synonym stanzas: [{"id":"NCBITaxon:40559","physical_line":18031,"complete_stanza":"[Term]\nid:
+    NCBITaxon:40559\nname: Botrytis cinerea\nsynonym: \"Botryotinia fuckeliana\" EXACT
+    []\nsynonym: \"Botrytis cinerea Pers., 1801\" EXACT []\nsynonym: \"Peziza fuckeliana\"
+    EXACT []\nsynonym: \"Sclerotinia fuckeliana\" EXACT []\n\n"},{"id":"NCBITaxon:332648","physical_line":83758,"complete_stanza":"[Term]\nid:
+    NCBITaxon:332648\nname: Botrytis cinerea B05.10\nsynonym: \"Botryotinia fuckeliana
+    B05.10\" EXACT []\n\n"}]. No current external taxonomy or hierarchy is inferred.'
+  snapshot_sha256: 4263cd849b1b4f33c98fdbf1eefcc5e2c819704ded99c260be4dd509a06cb0ec
+- evidence_id: bgc-2231-source-routes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224-tentative/bgc-prep/bgc-conditional224-target-input-plan-001.json
+  locator: /records/0/source_scope_inventory/source_taxa; /records/0/source_scope_inventory/forward_taxon_merge_matches;
+    /records/0/source_scope_inventory/nonorganism_matches
+  accessed_at: '2026-11-03T14:30:04.347462Z'
+  support: supports
+  summary: Exact selected source taxa and retained forward/nonorganism routes. Both
+    route match lists are empty.
+  snapshot_sha256: 7a543c946c947e661aca3902df11516ae7e744a40fa1823544de55df6cc468af
+- evidence_id: bgc-2231-direct-contexts
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224-tentative/bgc-prep/bgc-conditional224-source-inventory-DATA-001.json
+  locator: /contexts/0/complete_raw_text; /contexts/0/complete_raw_history; /contexts/0/source_scope_inventory;
+    /contexts/2/complete_raw_text; /contexts/2/complete_raw_history; /contexts/2/source_scope_inventory;
+    /contexts/3/complete_raw_text; /contexts/3/complete_raw_history; /contexts/3/source_scope_inventory;
+    /contexts/4/complete_raw_text; /contexts/4/complete_raw_history; /contexts/4/source_scope_inventory;
+    /contexts/6/complete_raw_text; /contexts/6/complete_raw_history; /contexts/6/source_scope_inventory;
+    /contexts/8/complete_raw_text; /contexts/8/complete_raw_history; /contexts/8/source_scope_inventory;
+    /contexts/9/complete_raw_text; /contexts/9/complete_raw_history; /contexts/9/source_scope_inventory;
+    /contexts/12/complete_raw_text; /contexts/12/complete_raw_history; /contexts/12/source_scope_inventory;
+    /contexts/13/complete_raw_text; /contexts/13/complete_raw_history; /contexts/13/source_scope_inventory;
+    /contexts/14/complete_raw_text; /contexts/14/complete_raw_history; /contexts/14/source_scope_inventory;
+    /contexts/15/complete_raw_text; /contexts/15/complete_raw_history; /contexts/15/source_scope_inventory;
+    /contexts/16/complete_raw_text; /contexts/16/complete_raw_history; /contexts/16/source_scope_inventory;
+    /contexts/17/complete_raw_text; /contexts/17/complete_raw_history; /contexts/17/source_scope_inventory;
+    /contexts/19/complete_raw_text; /contexts/19/complete_raw_history; /contexts/19/source_scope_inventory;
+    /contexts/20/complete_raw_text; /contexts/20/complete_raw_history; /contexts/20/source_scope_inventory;
+    /contexts/24/complete_raw_text; /contexts/24/complete_raw_history; /contexts/24/source_scope_inventory;
+    /contexts/25/complete_raw_text; /contexts/25/complete_raw_history; /contexts/25/source_scope_inventory;
+    /contexts/26/complete_raw_text; /contexts/26/complete_raw_history; /contexts/26/source_scope_inventory;
+    /contexts/27/complete_raw_text; /contexts/27/complete_raw_history; /contexts/27/source_scope_inventory;
+    /contexts/28/complete_raw_text; /contexts/28/complete_raw_history; /contexts/28/source_scope_inventory
+  accessed_at: '2026-11-03T14:30:04.347462Z'
+  support: supports
+  summary: 'The twenty direct companions have distinct complete keys, with complete
+    raw/history and retained source contexts. BGC and Support whole-reading attribution
+    is in the source notes; unselected Botrydial mechanism content is historical context
+    only. No compound-specific identity, activity or mechanism transfer. Exact membership:
+    [{"context_index":0,"path":"data/natural_products/terpenoids/1-epibotrydial.yaml","label":"1-epibotrydial","standard_inchi_key":"SJFIYVCSGNWVPJ-SDLFRHKASA-N","owned_bgc_ids":["BGC0000631"],"history_count":2},{"context_index":2,"path":"data/natural_products/terpenoids/10-epi-dihydrobotrydial.yaml","label":"10-epi-dihydrobotrydial","standard_inchi_key":"QUGYVDURDBEQRB-VZJVBFQISA-N","owned_bgc_ids":["BGC0000631"],"history_count":2},{"context_index":3,"path":"data/natural_products/terpenoids/10-oxo-dihydrobotrydial.yaml","label":"10-Oxo-dihydrobotrydial","standard_inchi_key":"MFOUCDNLAFNKML-SVLWDWOGSA-N","owned_bgc_ids":["BGC0000631"],"history_count":2},{"context_index":4,"path":"data/natural_products/terpenoids/10-oxodehydrodihydrobotrydial.yaml","label":"10-Oxodehydrodihydrobotrydial","standard_inchi_key":"CAMCSBCRRUTMEK-OAHLLOKOSA-N","owned_bgc_ids":["BGC0000631"],"history_count":2},{"context_index":6,"path":"data/natural_products/terpenoids/10-oxodihydrobotry-1-9-4-5-diendial.yaml","label":"10-Oxodihydrobotry-1(9),4(5)-diendial","standard_inchi_key":"PCEVLQFNPPWJEB-RFAUZJTJSA-N","owned_bgc_ids":["BGC0000631"],"history_count":2},{"context_index":8,"path":"data/natural_products/terpenoids/11-hydroxydehydrobotrydienol.yaml","label":"11-Hydroxydehydrobotrydienol","standard_inchi_key":"JUCMRFKOKIZVPS-OAHLLOKOSA-N","owned_bgc_ids":["BGC0000631"],"history_count":2},{"context_index":9,"path":"data/natural_products/terpenoids/12-hydroxydehydrobotrydienol.yaml","label":"12-hydroxydehydrobotrydienol","standard_inchi_key":"YPJRKTIWVUVMDI-LSDHHAIUSA-N","owned_bgc_ids":["BGC0000631"],"history_count":2},{"context_index":12,"path":"data/natural_products/terpenoids/4-acetoxytetrahydrobotryslactone.yaml","label":"4β-Acetoxytetrahydrobotryslactone","standard_inchi_key":"RVXLTRZIAMMATE-JMTSMVSISA-N","owned_bgc_ids":["BGC0000631"],"history_count":2},{"context_index":13,"path":"data/natural_products/terpenoids/8-9-epibotrydial.yaml","label":"8,9-epibotrydial","standard_inchi_key":"SJFIYVCSGNWVPJ-PQVRDHEWSA-N","owned_bgc_ids":["BGC0000631"],"history_count":2},{"context_index":14,"path":"data/natural_products/terpenoids/botrydial.yaml","label":"botrydial","standard_inchi_key":"SJFIYVCSGNWVPJ-GKKOWQTJSA-N","owned_bgc_ids":["BGC0000631"],"history_count":3},{"context_index":15,"path":"data/natural_products/terpenoids/botrydienal.yaml","label":"Botrydienal","standard_inchi_key":"CFAMAVBUWMXYLX-MEBBXXQBSA-N","owned_bgc_ids":["BGC0000631"],"history_count":2},{"context_index":16,"path":"data/natural_products/terpenoids/botryenalol.yaml","label":"Botryenalol","standard_inchi_key":"DSVSTMJOGQEZJX-BYLNDYCFSA-N","owned_bgc_ids":["BGC0000631"],"history_count":2},{"context_index":17,"path":"data/natural_products/terpenoids/botryendial.yaml","label":"Botryendial","standard_inchi_key":"QWZKEROSOALLJP-BYLNDYCFSA-N","owned_bgc_ids":["BGC0000631"],"history_count":2},{"context_index":19,"path":"data/natural_products/terpenoids/dehydrobotrydienol.yaml","label":"Dehydrobotrydienol","standard_inchi_key":"UQQKKLVKVVJDEX-OAHLLOKOSA-N","owned_bgc_ids":["BGC0000631"],"history_count":2},{"context_index":20,"path":"data/natural_products/terpenoids/dihydrobotrydial.yaml","label":"Dihydrobotrydial","standard_inchi_key":"QUGYVDURDBEQRB-CJNHKLDISA-N","owned_bgc_ids":["BGC0000631"],"history_count":2},{"context_index":24,"path":"data/natural_products/terpenoids/norbotrydialone-acetate.yaml","label":"Norbotrydialone
+    acetate","standard_inchi_key":"OMZUEHMZFLBHNI-PCKWUFTNSA-N","owned_bgc_ids":["BGC0000631"],"history_count":2},{"context_index":25,"path":"data/natural_products/terpenoids/secobotrydiene-3-10-15-triol.yaml","label":"Secobotrydiene-3,10,15-triol","standard_inchi_key":"GYABYKLKVQPSPD-NVWZYQMFSA-N","owned_bgc_ids":["BGC0000631"],"history_count":2},{"context_index":26,"path":"data/natural_products/terpenoids/secobotrydiene-3-4-10-15-tetraol.yaml","label":"Secobotrydiene-3,4,10,15-tetraol","standard_inchi_key":"GNMCOKDZWITFBO-MGNGBMTDSA-N","owned_bgc_ids":["BGC0000631"],"history_count":2},{"context_index":27,"path":"data/natural_products/terpenoids/secobotrytriendiol.yaml","label":"Secobotrytriendiol","standard_inchi_key":"BHNACKMCMDASDB-UJNBGNEJSA-N","owned_bgc_ids":["BGC0000631"],"history_count":2},{"context_index":28,"path":"data/natural_products/terpenoids/secobotrytriene-10-12-15-triol.yaml","label":"Secobotrytriene-10,12,15-triol","standard_inchi_key":"WLPOYIWCPMYYGM-KGRKPJGKSA-N","owned_bgc_ids":["BGC0000631"],"history_count":2}]'
+  snapshot_sha256: 4263cd849b1b4f33c98fdbf1eefcc5e2c819704ded99c260be4dd509a06cb0ec
+- evidence_id: bgc-2231-review-skill
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/.claude/skills/review-yaml-record/SKILL.md
+  locator: Evidence Rules; Workflow; Output
+  accessed_at: '2026-11-03T14:30:04.347462Z'
+  support: supports
+  summary: Claim-level review, immutable records and honest partial completion under
+    actual evidence-access limits.
+  snapshot_sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+- evidence_id: bgc-2231-review-profile
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/docs/record-review-profile.md
+  locator: Complete maintained review profile
+  accessed_at: '2026-11-03T14:30:04.347462Z'
+  support: supports
+  summary: Producer/occurrence distinctions, evidence grades, source ownership and
+    qualified computed classifications.
+  snapshot_sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+- evidence_id: bgc-2231-structure-schema
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: lines 376–432
+  accessed_at: '2026-11-03T14:30:04.347462Z'
+  support: supports
+  summary: Identifier and stereo limitations; NPClassifier fields are explicitly named,
+    versioned computations rather than source assertions.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: bgc-2231-stereo-method
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py
+  locator: lines 145–175
+  accessed_at: '2026-11-03T14:30:04.347462Z'
+  support: supports
+  summary: The maintained source stereo flag checks assigned tetrahedral centres.
+    It is not a general experimental proof of stereochemical completeness.
+  snapshot_sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+- evidence_id: bgc-2231-classification-seeder
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: lines 980–1030
+  accessed_at: '2026-11-03T14:30:04.347462Z'
+  support: supports
+  summary: The seeder copies retained structure/stereo and NPClassifier fields, including
+    the literal glycoside prediction; it does not upgrade them into experimentally
+    supported classification.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: root-native-strict_ten
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-224/validate-strict-selected10-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-224/native-current224-five-gates-execution-001.json
+  accessed_at: '2026-11-03T14:05:51.408108Z'
+  support: supports
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  snapshot_sha256: 4c521ff8b25581d377da2677868b5abbff239b6f953434011b31a59e15b77f73
+- evidence_id: root-native-strict_full
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-224/validate-all-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-224/native-current224-five-gates-execution-001.json
+  accessed_at: '2026-11-03T14:06:17.662354Z'
+  support: supports
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  snapshot_sha256: 5a7f2a7f4edba317004ec6539c96d2d9c81ea6b6b6cd544b1ee96df492591510
+- evidence_id: root-native-lockfile
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-224/verify-corpus-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-224/native-current224-five-gates-execution-001.json
+  accessed_at: '2026-11-03T14:06:37.889880Z'
+  support: supports
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  snapshot_sha256: 254f171c7dff0f1ecbee5f47f75d2b7046143ae7fc499d9a1c08263e1c5125d8
+- evidence_id: root-native-reproduction
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-224/verify-reproduction-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-224/native-current224-five-gates-execution-001.json
+  accessed_at: '2026-11-03T14:07:12.763448Z'
+  support: supports
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  snapshot_sha256: cfc38f4e3f434e7f3651975f2cb228e5cda848476b2c53d1636d8746b794237a
+- evidence_id: root-native-queue
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-224/review-queue-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-224/native-current224-five-gates-execution-001.json
+  accessed_at: '2026-11-03T14:07:24.696069Z'
+  support: supports
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  snapshot_sha256: 2a0ba11012203035d494b334e17527655e00af18303f045b8829a5e7808b65e9
+assessments:
+- assessment_id: bgc-2231-identity
+  area: identity
+  topic: Identity
+  outcome: supported
+  summary: The minted identifier and full key MBHVNAKPTPFWNG-MYFMSEKESA-N match the
+    exact MIBiG BGC0000631 version 5 compound row. The retained ChEBI query has no
+    exact-key match, supporting the local minted-grounding rationale within that inventory.
+    The twenty direct companions have distinct complete keys. In particular, the similarly
+    formulated 10-oxo-dihydrobotrydial has different connectivity and must not replace
+    this owner.
+  target_ids:
+  - naturalproductmech:mibig-1e06238f05
+  evidence_ids:
+  - bgc-2231-grounding-owner
+  - bgc-2231-source-plan
+  - bgc-2231-plan-acceptance
+  - bgc-2231-query-chebi_structures
+  - bgc-2231-source-mibig_compounds
+  - bgc-2231-chemistry
+  - bgc-2231-direct-contexts
+  dimensions:
+  - name: standard_inchi_key
+    value: Full key MBHVNAKPTPFWNG-MYFMSEKESA-N.
+    definition: Exact full key; no name, first-block or congener substitution.
+    evidence_ids:
+    - bgc-2231-grounding-owner
+    - bgc-2231-source-plan
+    - bgc-2231-plan-acceptance
+    - bgc-2231-query-chebi_structures
+    - bgc-2231-source-mibig_compounds
+    - bgc-2231-chemistry
+    - bgc-2231-direct-contexts
+  - name: grounding_scope
+    value: Minted identifier; exact retained ChEBI join is empty; twenty distinct-key
+      direct companions.
+    definition: Local grounding fidelity is distinct from fresh natural-identity verification.
+    evidence_ids:
+    - bgc-2231-grounding-owner
+    - bgc-2231-source-plan
+    - bgc-2231-plan-acceptance
+    - bgc-2231-query-chebi_structures
+    - bgc-2231-source-mibig_compounds
+    - bgc-2231-chemistry
+    - bgc-2231-direct-contexts
+- assessment_id: bgc-2231-representation
+  area: representation
+  topic: Representation
+  outcome: supported
+  summary: Both saved forms give neutral C17H26O5, 22 atoms and 24 bonds, with six
+    specified tetrahedral centres and no detected unspecified potential stereo. The
+    SMILES-indexed ring contains C9(=O10)–O8–C7, while the separate acetate is C19(=O20)–O18–C3;
+    O17 is hydroxyl. The full paired tables and chirality-aware correspondence agree.
+    A C5O ring motif here includes a lactone carbonyl and is not proof of a sugar.
+    Natural stereochemistry and full graph identity remain outside the diagnostic's
+    stated claim.
+  target_ids:
+  - naturalproductmech:mibig-1e06238f05
+  evidence_ids:
+  - bgc-2231-grounding-owner
+  - bgc-2231-chemistry
+  - bgc-2231-topology
+  - bgc-2231-diagnostic-acceptance
+  - bgc-2231-structure-schema
+  - bgc-2231-stereo-method
+  dimensions:
+  - name: stereochemistry_scope
+    value: Six specified tetrahedral centres in each saved form; no unspecified potential
+      stereo.
+    definition: Saved full stereo/atom/bond interpretation, not an experimental assignment
+      or new parse.
+    evidence_ids:
+    - bgc-2231-grounding-owner
+    - bgc-2231-chemistry
+    - bgc-2231-topology
+    - bgc-2231-diagnostic-acceptance
+    - bgc-2231-structure-schema
+    - bgc-2231-stereo-method
+  - name: representation_correspondence
+    value: Neutral C17H26O5; 22 atoms/24 bonds; all ten comparisons true and complete
+      saved correspondence.
+    definition: Normalized identifier agreement does not establish explicit full-graph
+      or natural-form identity.
+    evidence_ids:
+    - bgc-2231-grounding-owner
+    - bgc-2231-chemistry
+    - bgc-2231-topology
+    - bgc-2231-diagnostic-acceptance
+    - bgc-2231-structure-schema
+    - bgc-2231-stereo-method
+- assessment_id: bgc-2231-origin
+  area: provenance
+  topic: Origin
+  outcome: supported
+  summary: The owner faithfully retains Botrytis cinerea B05.10, taxon 332648, as
+    the MIBiG producer with BGC_CHARACTERIZED evidence, and active BGC0000631 version
+    5 with knockout-based CLUSTER_DEMONSTRATED linkage on CP009816.1:2216500–2246000.
+    Entry completeness is complete, while quality is questionable. The LOTUS occurrence
+    concerns species 40559, not a separate demonstration of production by the strain.
+    Shared-locus companions do not establish a complete pathway for this compound.
+  target_ids:
+  - naturalproductmech:mibig-1e06238f05
+  evidence_ids:
+  - bgc-2231-origin-owner
+  - bgc-2231-occurrence-owner
+  - bgc-2231-source-mibig_compounds
+  - bgc-2231-source-lotus_occurrences
+  - bgc-2231-cached-taxonomy
+  - bgc-2231-source-routes
+  - bgc-2231-review-profile
+  - bgc-2231-direct-contexts
+  dimensions:
+  - name: taxon_scope
+    value: Producer strain 332648 and occurrence species 40559 remain separate.
+    definition: Source taxa and cache labels preserve genus/species/strain scope;
+      no fresh ancestry or production inference.
+    evidence_ids:
+    - bgc-2231-origin-owner
+    - bgc-2231-occurrence-owner
+    - bgc-2231-source-mibig_compounds
+    - bgc-2231-source-lotus_occurrences
+    - bgc-2231-cached-taxonomy
+    - bgc-2231-source-routes
+    - bgc-2231-review-profile
+    - bgc-2231-direct-contexts
+  - name: producer_evidence
+    value: MIBiG version 5 BGC_CHARACTERIZED database assertion.
+    definition: Producer evidence is assessed separately from occurrence and locus
+      support.
+    evidence_ids:
+    - bgc-2231-origin-owner
+    - bgc-2231-occurrence-owner
+    - bgc-2231-source-mibig_compounds
+    - bgc-2231-source-lotus_occurrences
+    - bgc-2231-cached-taxonomy
+    - bgc-2231-source-routes
+    - bgc-2231-review-profile
+    - bgc-2231-direct-contexts
+  - name: locus_evidence
+    value: Active BGC0000631; knockout CLUSTER_DEMONSTRATED; questionable entry quality.
+    definition: Source version/status/method/grade does not establish a complete pathway
+      or fresh primary support.
+    evidence_ids:
+    - bgc-2231-origin-owner
+    - bgc-2231-occurrence-owner
+    - bgc-2231-source-mibig_compounds
+    - bgc-2231-source-lotus_occurrences
+    - bgc-2231-cached-taxonomy
+    - bgc-2231-source-routes
+    - bgc-2231-review-profile
+    - bgc-2231-direct-contexts
+- assessment_id: bgc-2231-citations
+  area: evidence
+  topic: Citations
+  outcome: unknown
+  summary: The producer and locus cite DOI:10.1016/0031-9422(95)00643-5 as a MIBiG
+    compound-level database assertion; the sole LOTUS occurrence uses that same DOI.
+    These placements do not demonstrate independent studies or that the paper itself
+    supplies every recorded knockout claim. The inherited NPAtlas cross-reference
+    is present in the retained MIBiG row, but its external structure was not resolved.
+    Citation roles and limitations are retained without promoting them to inspected
+    primary evidence.
+  target_ids:
+  - naturalproductmech:mibig-1e06238f05
+  evidence_ids:
+  - bgc-2231-grounding-owner
+  - bgc-2231-origin-owner
+  - bgc-2231-occurrence-owner
+  - bgc-2231-source-mibig_compounds
+  - bgc-2231-source-lotus_occurrences
+  - bgc-2231-source-notes
+  - bgc-2231-cached-taxonomy
+  - bgc-2231-direct-contexts
+  dimensions:
+  - name: citation_scope
+    value: Compound-evidence DOI is shared by producer/locus and the sole LOTUS occurrence;
+      primary support unrefreshed.
+    definition: Citation roles remain database assertions; no publication independence
+      or fresh source access is assumed.
+    evidence_ids:
+    - bgc-2231-grounding-owner
+    - bgc-2231-origin-owner
+    - bgc-2231-occurrence-owner
+    - bgc-2231-source-mibig_compounds
+    - bgc-2231-source-lotus_occurrences
+    - bgc-2231-source-notes
+    - bgc-2231-cached-taxonomy
+    - bgc-2231-direct-contexts
+- assessment_id: bgc-2231-bioactivity
+  area: evidence
+  topic: Bioactivity
+  outcome: supported
+  summary: The owner writes one cited Botrytis cinerea occurrence and no assay observations,
+    activity summary, molecular targets or mechanism roots. Its exact saved assay,
+    BindingDB and sibling-corpus joins are empty. These bounded negatives are not
+    evidence that the compound lacks activity. Neither the unselected Botrydial graph
+    nor activities of another congener transfer to this structure.
+  target_ids:
+  - naturalproductmech:mibig-1e06238f05
+  evidence_ids:
+  - bgc-2231-assay-owner
+  - bgc-2231-occurrence-owner
+  - bgc-2231-query-lotus_occurrences
+  - bgc-2231-source-lotus_occurrences
+  - bgc-2231-query-chebi_origins
+  - bgc-2231-query-cyanometdb_occurrences
+  - bgc-2231-query-pubchem_bioassay
+  - bgc-2231-query-bindingdb_targets
+  - bgc-2231-query-antibioticmech_inchikeys
+  - bgc-2231-source-plan
+  - bgc-2231-source-routes
+  - bgc-2231-cached-taxonomy
+  - bgc-2231-direct-contexts
+  dimensions:
+  - name: occurrence_scope
+    value: One written species-level occurrence, not an independent producer experiment.
+    definition: Occurrence assertions are not counts of independent experiments or
+      producers.
+    evidence_ids:
+    - bgc-2231-assay-owner
+    - bgc-2231-occurrence-owner
+    - bgc-2231-query-lotus_occurrences
+    - bgc-2231-source-lotus_occurrences
+    - bgc-2231-query-chebi_origins
+    - bgc-2231-query-cyanometdb_occurrences
+    - bgc-2231-query-pubchem_bioassay
+    - bgc-2231-query-bindingdb_targets
+    - bgc-2231-query-antibioticmech_inchikeys
+    - bgc-2231-source-plan
+    - bgc-2231-source-routes
+    - bgc-2231-cached-taxonomy
+    - bgc-2231-direct-contexts
+  - name: assay_target_scope
+    value: No written assays, targets or mechanisms; exact saved activity routes empty.
+    definition: Written claims and exact retained assay/target routes are bounded;
+      no global biological absence claim.
+    evidence_ids:
+    - bgc-2231-assay-owner
+    - bgc-2231-occurrence-owner
+    - bgc-2231-query-lotus_occurrences
+    - bgc-2231-source-lotus_occurrences
+    - bgc-2231-query-chebi_origins
+    - bgc-2231-query-cyanometdb_occurrences
+    - bgc-2231-query-pubchem_bioassay
+    - bgc-2231-query-bindingdb_targets
+    - bgc-2231-query-antibioticmech_inchikeys
+    - bgc-2231-source-plan
+    - bgc-2231-source-routes
+    - bgc-2231-cached-taxonomy
+    - bgc-2231-direct-contexts
+- assessment_id: bgc-2231-classification
+  area: consistency
+  topic: Classification
+  outcome: unknown
+  summary: TERPENOIDS filing and the NPClassifier versioned Sesquiterpenoids/Presilphiperfolane
+    and Probotryane prediction remain distinct from the MIBiG TERPENE locus class.
+    The oxygenated fused-ring scaffold, acetate and lactone are compatible with the
+    retained terpene context; the model's false glycoside flag is not used as an admission
+    or identity proof. The narrow C5O helper is explicitly insufficient to assign
+    a carbohydrate residue.
+  target_ids:
+  - naturalproductmech:mibig-1e06238f05
+  evidence_ids:
+  - bgc-2231-classification-owner
+  - bgc-2231-source-npclassifier
+  - bgc-2231-source-mibig_compounds
+  - bgc-2231-chemistry
+  - bgc-2231-topology
+  - bgc-2231-structure-schema
+  - bgc-2231-classification-seeder
+  - bgc-2231-review-profile
+  - bgc-2231-direct-contexts
+  dimensions:
+  - name: classification_applicability
+    value: Versioned model classification is preserved; lactone C5O motif is not a
+      sugar assignment.
+    definition: Model filing labels, observed topology and source BGC classes remain
+      distinct axes.
+    evidence_ids:
+    - bgc-2231-classification-owner
+    - bgc-2231-source-npclassifier
+    - bgc-2231-source-mibig_compounds
+    - bgc-2231-chemistry
+    - bgc-2231-topology
+    - bgc-2231-structure-schema
+    - bgc-2231-classification-seeder
+    - bgc-2231-review-profile
+    - bgc-2231-direct-contexts
+- assessment_id: bgc-2231-completion
+  area: completeness
+  topic: Completion
+  outcome: unknown
+  summary: The complete owner/history, admitted source context, actual intake and
+    all paired saved molecular tables were reviewed. No supported local curation defect
+    is established within this scope. Five local gates passed, while full QC, complete
+    OAK and external primary-source/taxonomy/accession verification were unavailable.
+    The review remains partial; no record, native curation status or history was changed.
+  target_ids:
+  - naturalproductmech:mibig-1e06238f05
+  evidence_ids:
+  - bgc-2231-owner
+  - bgc-2231-capture
+  - bgc-2231-intake
+  - bgc-2231-intake-acceptance
+  - bgc-2231-source-notes
+  - bgc-2231-native-acceptance
+  - bgc-2231-diagnostic-acceptance
+  - bgc-2231-source-plan
+  - bgc-2231-plan-acceptance
+  - bgc-2231-review-skill
+  - bgc-2231-review-profile
+  - bgc-2231-direct-contexts
+  dimensions:
+  - name: review_completion
+    value: Partial; qualified local result with external verification, full QC and
+      complete OAK unavailable.
+    definition: Completion reflects actual evidence access and check coverage; parsing
+      and gate success are not scientific proof.
+    evidence_ids:
+    - bgc-2231-owner
+    - bgc-2231-capture
+    - bgc-2231-intake
+    - bgc-2231-intake-acceptance
+    - bgc-2231-source-notes
+    - bgc-2231-native-acceptance
+    - bgc-2231-diagnostic-acceptance
+    - bgc-2231-source-plan
+    - bgc-2231-plan-acceptance
+    - bgc-2231-review-skill
+    - bgc-2231-review-profile
+    - bgc-2231-direct-contexts
+findings: []
+actions: []
+limitations:
+- External identifiers, taxonomy, accessions and primary publications were not refreshed
+  under the absolute no-request instruction; historical and database assertions remain
+  attributed.
+- Full QC and complete OAK authority coverage were unavailable. Local gates and parsing
+  establish their declared mechanical scope only.
+- Negative source joins apply only to the exact retained predicates and source snapshots.
+  Shared loci, citations and companion records do not transfer compound-specific claims.
+- No additional molecular or YAML parse occurred during fragment authoring. Source
+  records, raw snapshots, native curation status and histories were not edited.
+- The whole selected owner was read, but scientific completion is partial because
+  full QC, complete ontology authority coverage and external source verification were
+  unavailable. No native status or history was changed.
+- The branch uses cached base ce6a5498df5be51116bd5e0c119023ee62bb5464. Fresh origin/main
+  verification and publication are deferred because the user prohibits all external
+  requests.
+notes:
+- Complete source payloads and explicit direct-context whole-reading attribution are
+  preserved in the pinned source notes. All five selected owner histories, actual
+  intakes and ten paired molecular tables were personally read.
+- The accepted original diagnostic has empty stderr. Its passed comparison flags and
+  complete correspondence do not establish natural identity or override full_graph_identity_established:false.
+- Saved review coverage is distinct from the native SEEDED/REVIEWED curation state.
+  Proposed actions are not performed edits.
+tags:
+- offline
+- record-review
+- batch-224
