@@ -1,0 +1,1346 @@
+# 12-epi-hapalindole C isonitrile: identity, occurrence and strain-specific locus scope
+
+- Review: 20261021T070128Z-12-epi-hapalindole-c-isonitrile
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-21T06:52:51.930644Z
+- Finished UTC: 2026-10-21T07:01:28.766570Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The exact C structure, four stereocentres and minted grounding are supported. CyanoMetDB’s complete SMILES agrees despite its underassigned stored InChI. Exact C synthesis by WelU3 belongs to another strain and accession, so the recorded strong locus grade needs compound- and strain-specific adjudication. Three LOTUS taxon/reference combinations remain provisional concerns pending full-source access.
+
+## Scope And Provenance
+
+One complete generated owner and resolved mechanism; all field groups inspected, with partial access to the specified primary sources.
+
+Selection: Unreviewed path number 4 in deterministic path order from the initial validated review list: 91 bundles covered 54 of 3,116 corpus records and 3,062 remained. Coverage accounting includes ignored bundles. This bundle assesses only one target.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 10ed28fcdadb3d955c30732ff05b5d0e4adbee3b.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-4505b19edb | data/natural_products/alkaloids/12-epi-hapalindole-c-isonitrile.yaml | generated | 12-epi-hapalindole C isonitrile |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Closed-schema and component validation | passed | True | naturalproductmech:mibig-4505b19edb | One complete owner validated with zero ERROR rows. |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-4505b19edb | All 3,116 record files agree with 3,116 PATHS.tsv rows and their pinned filing pathways. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-4505b19edb | All 3,116 records are byte-identical to the seeder output from committed inventories and maintained curation inputs. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-4505b19edb | The documented exhaustive queue command produced 8,928 diagnostic rows in 12 queues; deterministic queue output does not establish scientific review. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-4505b19edb | Full configured gate passed using existing CHEBI and GO caches plus the committed taxonomy adapter: 13,434 canonical matches, 646 synonym matches, 35 documented exceptions, 499 warning-only mismatches and 4,722 pairs skipped because their prefixes have no adapter. |
+| Initial QC attempt before installing the pinned linter | failed | False | naturalproductmech:mibig-4505b19edb | The first full QC invocation stopped at lint because the isolated copied Python environment lacked Ruff. Exact uv.lock version Ruff 0.16.6 was subsequently installed and lint passed on later invocations. |
+| QC attempt without network access | failed | False | naturalproductmech:mibig-4505b19edb | After Ruff installation, QC passed lint and stopped at vendored-sync because sandbox DNS could not reach the pinned public CLAW governance source. Approved network access allowed the next invocation to verify all 22 governed artifacts. |
+| QC attempt before restoring the required provenance tag | failed | False | naturalproductmech:mibig-4505b19edb | QC passed lint, vendored sync, documentation, provenance and source queue, then stopped at tests: 998 passed, 1 failed, 4 skipped. The sole failure was the isolated clone lacking refs/tags/review-base/gentamicin-20261013; it was not a failed archive-content assertion. The tag was subsequently fetched from origin. |
+| Targeted verification after restoring the provenance tag | passed | False | naturalproductmech:mibig-4505b19edb | After restoring the required tag, the exact previously failed gentamicin archive test passed (1 passed). No repository content was edited for this remediation. |
+| Diagnosis of the suite skip conditions | passed | False | naturalproductmech:mibig-4505b19edb | The four observed skip cases were reproduced with pytest skip reasons enabled: the optional sibling AntibioticMech comparison has no sibling checkout in the isolated clone, and three command-frontmatter tests have empty parameter sets. This diagnostic invocation executed no passing tests; it reported four skips. |
+| Full repository quality gate after environment repair | passed | True | naturalproductmech:mibig-4505b19edb | The full documented just qc recipe passed after installing the pinned linter, allowing the read-only governance fetch, and restoring the required provenance tag. Tests: 999 passed, 4 skipped, 2 warnings. Closed-schema validation: 3,116 records and zero errors. Documentation, provenance, source queue, governed artifacts, generated pages, reproduction, filing integrity and corpus reporting all passed. |
+| Full source adjudication of the listed occurrence differences | unavailable | True | naturalproductmech:mibig-4505b19edb | Relevant primary abstracts and source metadata were inspected, but full passages needed to adjudicate the suspicious LOTUS taxon/reference combinations remain inaccessible. |
+| External genus-level Wikidata provenance identifiers | passed | True | naturalproductmech:mibig-4505b19edb | Official MediaWiki API resolved both genus provenance identifiers and matched the NCBI taxa after other public routes failed. |
+| Expression-module source applicability | not_applicable | False | naturalproductmech:mibig-4505b19edb | No expression-module or regulatory claim is used. Direct compound and biochemical sources were inspected; no source-coverage absence is inferred. |
+
+## Scientific And Domain Assessments
+
+### Tricyclic C isonitrile with consistent full stereochemical representation
+
+identity: supported. Targets: naturalproductmech:mibig-4505b19edb.
+
+The full owner structure agrees with NPAtlas and current ChEBI, while RDKit confirms internal SMILES/InChI/key consistency and four assigned centres. The record denotes the tricyclic C congener.
+
+### Both chemical xrefs resolve to the encoded complete structure
+
+identity: supported. Targets: naturalproductmech:mibig-4505b19edb.
+
+NPAtlas matches all stored representations. CyanoMetDB1547 matches through its fully stereospecified SMILES and systematic name; recomputing that SMILES recovers the exact owner key. Its inconsistent stored InChI/key is retained as a source limitation, rather than silently treated as a full-key match.
+
+### Underassigned stored source InChI conflicts with complete source SMILES
+
+representation: concern. Targets: naturalproductmech:mibig-4505b19edb.
+
+CyanoMetDB1547 omits one centre in its stored InChI/key despite specifying it in SMILES and IUPAC name. This limits key-only joins and explains why an exact-key occurrence extraction does not match this owner. It does not establish that the owner structure or chemical xref is wrong.
+
+### Minted identity follows the eligible ChEBI rule
+
+grounding: supported. Targets: naturalproductmech:mibig-4505b19edb.
+
+The pinned eligible inventory has no matching structure and directly inspected CHEBI:222284 has two stars. Retaining MINTED is consistent with the repository rule.
+
+### Exact-target four-centre configuration and atom mapping
+
+evidence: supported. Targets: naturalproductmech:mibig-4505b19edb.
+
+The primary2017 paper assigns the exact tricyclic C product the C10S/C11R/C12S/C15S pattern. Independent assignment on the stereo-stripped owner graph reproduces its full key. This checks agreement with the reported configuration without reinterpreting spectra.
+
+### Computed filing and seed history
+
+provenance: supported. Targets: naturalproductmech:mibig-4505b19edb.
+
+The complete source extraction matches the owner’s explicitly computed Alkaloids/Tryptophan alkaloids classification, Hapalindole alkaloids and Simple indole alkaloids classes, and pinned model version. Source BGC TERPENE/OTHER has a separate provenance. Both seed events retain SEEDED; neither claims scientific sign-off.
+
+### Complete mechanism and optional assertions
+
+scope: not_applicable. Targets: naturalproductmech:mibig-4505b19edb.
+
+No optional mechanism, activity, molecular target, clinical or related-record claim occurs in the complete owner or resolved view. Their absence alone is not a defect.
+
+### Claim-specific occurrence attribution
+
+evidence: concern. Targets: naturalproductmech:mibig-4505b19edb.
+
+Six occurrence triples have separate source scopes. The 2007 Fischerella occurrence and 1995 Hapalosiphon occurrence have direct primary-abstract support. The 2014 H. welwitschii occurrence has partial cited-source support and independent 2017 extract evidence. Three additional taxon/reference combinations require full-source verification; evidence for occurrence elsewhere cannot repair their individual attribution.
+
+### Occurrence organism provenance identifiers
+
+grounding: supported. Targets: naturalproductmech:mibig-4505b19edb.
+
+Both genus-level Wikidata identifiers resolve to the recorded NCBI taxa, and the species-level identifier was independently verified. These identifier correspondences do not establish the biological occurrence by themselves.
+
+### Exact source congener, source strain and deposited locus
+
+grounding: supported. Targets: naturalproductmech:mibig-4505b19edb.
+
+The versioned MIBiG source and local source row match the exact C structure. KF811479.1 and taxon 1433842 resolve to UTEX B1830. TERPENE / OTHER preserve source classification and numerical bounds are appropriately omitted.
+
+### H. welwitschii occurrence and the 2014 ChemBioChem citation
+
+evidence: supported. Targets: naturalproductmech:mibig-4505b19edb.
+
+The 2014 paper directly profiles xenic UTEX B1830, but its exact C chromatogram/structure assignment remains uninspected. Independent 2017 primary supplement data explicitly identify C isonitrile in that strain’s extract. Occurrence is supported overall; no adverse finding is warranted solely from limited access to the older figure. Preserve SOURCE_ASSERTION for native producer because these data do not establish axenic native biosynthesis.
+
+### Exact-congener formation and exact-strain applicability
+
+evidence: concern. Targets: naturalproductmech:mibig-4505b19edb.
+
+Exact C synthesis has been demonstrated by WelU3, but its accession belongs to IC-52-3 / KJ767017.1, not the source strain/locus. UTEX B1830 WelO5 consumes C. Together with precursor experiments, those observations support pathway association but do not supply the recorded exact-product formation demonstration. The sole 1987 compound citation is also misrouted. Grade adjudication must remain specific to this compound and locus.
+
+## Findings
+
+### R-LOTUS-SCOPE: Several LOTUS occurrence citations need exact organism and compound verification
+
+major / open / provisional; issue key: lotus-kgwatbykcmcflc-occurrence-reference-scope.
+
+The 1994 inspected abstract names H. welwitschii/Westiella, whereas this triple names Fischerella. The 2007 abstract directly reports Fischerella ATCC 43239, whereas this triple names H. welwitschii. The 1987 metadata names H. fontinalis and other compounds, whereas this triple names H. welwitschii and exact C. Full article passages may resolve these differences, so none is declared disproven from an abstract or title alone. Their source support was not established in this review. Exact-compound occurrence supported by other publications does not validate these separate provenance triples.
+
+### bgc-c-claim-scope: Exact C locus demonstration inherits unspecific methods and a compound reference
+
+major / open / confirmed; issue key: mibig-bgc0000668-compound1-link-evidence.
+
+The record assigns CLUSTER_DEMONSTRATED to exact 12-epi-hapalindole C from UTEX B1830 / KF811479.1 while citing only compound-level DOI:10.1021/jo00226a009. The retrieved exact C formation experiment uses WelU3 AIH14742.1 from a different strain and accession, IC-52-3 / KJ767017.1. The inspected UTEX experiments instead form precursors or convert C to its chlorinated derivative. Correct the reference routing and adjudicate the exact-strain applicability of the strong grade; substituting the 2017 cyclase citation alone would transfer evidence between strains. This does not deny native-culture occurrence, plausible pathway association, or the possibility of uninspected later exact-locus proof.
+
+## Recommended Actions And Acceptance Checks
+
+### R-ADJUDICATE-LOTUS
+
+Inspect full source passages for each listed triple, distinguishing new isolation, historical occurrence discussion and current taxonomy. If a triple is unsupported, withhold only its exact source row through the implemented pinned exclusion table. Retain supported observations; do not replace citations or taxa by inference.
+
+- For KGWATBYKCMCFLC-CGRMTHRGSA-N, document exact support or a full-row-pinned exclusion for NCBITaxon:1190 / literal DOI:10.1021/JA00101A015, NCBITaxon:162986 / literal DOI:10.1016/J.PHYTOCHEM.2007.06.024, NCBITaxon:162986 / literal DOI:10.1021/JO00226A009.
+- Inspect just seed-canary naturalproductmech:mibig-4505b19edb output, then documented seeding; run just validate-strict data/natural_products/alkaloids/12-epi-hapalindole-c-isonitrile.yaml, just verify-reproduction, just verify-corpus --summary and just qc.
+
+### reconcile-c-strain-specific-link
+
+Use source key BGC0000668:1 and exact source-row context pins in the implemented correction tables. Route producer and locus references separately. Before retaining CLUSTER_DEMONSTRATED, identify an experiment in which KF811479.1 or its encoded enzymes form this exact C structure or establish native locus necessity. Do not count IC-52-3 WelU3 formation or UTEX WelO5 consumption as that result. If no applicable demonstration is obtained, qualify or withdraw the inherited methods through curation/mibig_locus_evidence_overrides.tsv, retaining explicit source association and native SOURCE_ASSERTION. Preserve occurrence evidence; do not replace strain/accession solely to fit the retrieved experiment.
+
+- Every retained strong locus claim has an exact compound, strain, accession and experimental-product bridge; substrate turnover is distinguished from formation.
+- Producer SOURCE_ASSERTION remains distinct from locus grading; IC-52-3 results are not inherited by UTEX B1830.
+- A citation-only correction does not silently certify the grade. Preserve the original database citation context and explicitly document remaining source-access limitations.
+- Use just seed-canary naturalproductmech:mibig-4505b19edb, inspect output, then documented seeding and just validate-strict data/natural_products/alkaloids/12-epi-hapalindole-c-isonitrile.yaml, just verify-reproduction, just verify-corpus --summary and just qc.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| E-IDENTITY-LOCAL | data/natural_products/alkaloids/12-epi-hapalindole-c-isonitrile.yaml; Complete owner; chemical_structure, xrefs, grounding_notes and source_concepts | supports | The owner encodes the tricyclic C isonitrile with four assigned centres, rather than a tetracyclic hapalindole or fischerindole. It contains no definition or synonyms; these optional omissions alone are not findings. |
+| E-NPATLAS | https://www.npatlas.org/api/v1/compound/NPA016387?include=classifications; npaid, original_name, smiles, inchi, inchikey, mol_structures and reassignments; official compound page NPA016387 | supports | The named 12-epi-hapalindole C isonitrile entry exactly matches the owner SMILES, full InChI and key KGWATBYKCMCFLC-CGRMTHRGSA-N. Formula C21H24N2 agrees. This verifies structure equivalence; a separate occurrence or producer citation does not gain support from this match. |
+| E-CHEBI-IDENTITY | https://www.ebi.ac.uk/chebi/backend/api/public/compound/222284/; chebi_accession, name, stars, names and default_structure id3435560 | supports | CHEBI:222284 is named 12-epi-hapalindole C isonitrile and has the exact full InChI/key. It has two stars, so it does not qualify for the repository three-star grounding rule. Its systematic name is 3-[(1S,2R,3S,6S)-3-ethenyl-2-isocyano-3-methyl-6-prop-1-en-2-ylcyclohexyl]-1H-indole. |
+| E-CYANOMETDB-SOURCE | https://zenodo.org/records/13854577/files/CyanoMetDB_V03_2024.csv?download=1; Exact row CyanoMetDB_Identifier=CyanoMetDB_1547; CompoundName, NPAtlas_ID, SMILES_isomeric, InChI, InChlKey and IUPAC_name | context_only | The row identifies the named compound and NPA016387. Its stereospecified SMILES and IUPAC name have four assigned centres, but stored InChI has20? and the stored key is KGWATBYKCMCFLC-FBTBGZJPSA-N. These representations are internally inconsistent. The full source CSV checksum matches the committed manifest. |
+| E-CYANOMETDB-RECOMPUTE | /private/tmp/npm-review-work/004/cyanometdb-row.json; Official row copied with UTF-8 BOM-aware CSV parsing, then its SMILES_isomeric parsed by RDKit | supports | Recomputing CyanoMetDB1547 isomeric SMILES yields exactly KGWATBYKCMCFLC-CGRMTHRGSA-N and the owner InChI including C11 configuration. Thus the xref has a matching complete structure despite its underassigned stored InChI/key. This is not an experimental stereochemical determination. |
+| E-CHEMISTRY-IDENTITY | /private/tmp/npm-review-work/004/chemistry.json; RDKit2026.03.5 result generated2026-10-21T06:52:53.027824Z; inspected complete calculation | supports | The owner SMILES recomputes to the stored InChI/key with formulaC21H24N2, neutral charge and exact mass304.193948768. Zero-based atoms3,6,7,8 have configurationsS,S,R,S respectively. No unassigned stereocentres were reported. |
+| E-GROUNDING-SEARCH | data/raw/chebi_structures.tsv; Entire pinned eligible inventory; exact key prefix, exact compound label and slug search | supports | No matching connectivity key, exact label or slug was found in the pinned eligible inventory. The directly inspected current exact ChEBI entry remains two-star. |
+| E-GROUNDING-POLICY | docs/HARMONIZATION.md; Identity resolution: unambiguous three-star default-structure rule | supports | Only an unambiguous three-star default-structure match is eligible for automatic ChEBI grounding; a matching two-star entry does not require replacing the minted identifier. |
+| E-PRIMARY-STEREOCHEMISTRY | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&amp;id=5391265&amp;retmode=xml; Li etal, Decoding cyclase-dependent assembly of hapalindole and fischerindole alkaloids; DOI:10.1038/nchembio.2327; PMID:28288107; Results paragraphP7 and Figure3 caption | supports | The primary paper identifies NMR-characterized minor product7 as tricyclic 12-epi-hapalindole C and explicitly assigns the same C10S/C11R/C12S/C15S pattern as its co-product9. It distinguishes the two skeletons and reports that7 did not convert into9. This is an exact-target configuration assertion, not an inference from another reviewed record. |
+| E-STEREO-MAPPING | /private/tmp/npm-review-work/004/stereo-mapping.json; Primary natural-product positions mapped by attached functional groups; all owner stereo tags removed before assigning configurations | supports | C10(indole-bearing),C11(isonitrile-bearing),C12(quaternary methyl/vinyl-bearing),C15(isopropenyl-bearing) map to zero-based atoms8,7,6,3. Assigning S,R,S,S independently reproduces the complete owner InChI and key KGWATBYKCMCFLC-CGRMTHRGSA-N. |
+| R-LOCAL | data/natural_products/alkaloids/12-epi-hapalindole-c-isonitrile.yaml; Entire YAML, complete read_natural_product view and exact-key source rows | supports | The complete C owner was read, including all 6 occurrence objects, producer and locus claims, chemical xrefs, two seed events and SEEDED status. No biosynthetic pathway, molecular target, activity, clinical, related-record or causal-graph assertion is present. There are no declared component references. |
+| R-2007 | https://pubmed.ncbi.nlm.nih.gov/17686499/; Abstract and DOI metadata; DOI:10.1016/j.phytochem.2007.06.024; source inspection reconciled at recorded timestamp | supports | The primary abstract explicitly identifies 12-epi-hapalindole C isonitrile as isolated from Fischerella ATCC 43239, alongside other named hapalindoles, with mass-spectrometric and NMR structure analysis. This directly supports the Fischerella occurrence. The abstract does not establish a separate Hapalosiphon occurrence, and unavailable full text prevents adjudicating whether its historical discussion supports that additional triple. |
+| R-1995-ABSTRACT | DOI:10.1021/np50125a025; Primary article abstract reproduced on its ResearchGate publication page, https://www.researchgate.net/publication/231716831_New_Hapalindoles_from_the_Cyanophyte_Hapalosiphon_laingii , Abstract lines 36-38; exact title/authors/DOI independently checked with Crossref | supports | The inspected reproduced primary abstract names 12-epi-hapalindole C isonitrile among compounds isolated from cultured Hapalosiphon laingii. This supports the genus-level Hapalosiphon occurrence. Only the primary abstract was used; citing-paper excerpts on the same page were excluded. Full methods were not available, and the mirror date is not treated as the issue date. |
+| R-1995-METADATA | https://api.crossref.org/works/10.1021/np50125a025; Official DOI/title and publication-date fields | supports | The DOI resolves to Klein et al., New Hapalindoles from the Cyanophyte Hapalosiphon laingii, Journal of Natural Products 58(11):1781–1785, published in November 1995. This verifies the identity of the primary abstract; metadata alone does not establish the compound occurrence. |
+| R-1994 | https://pure.psu.edu/en/publications/welwitindolinones-unusual-alkaloids-from-the-blue-green-algae-hap/; Authors institutional abstract; DOI:10.1021/ja00101a015; source inspection reconciled at recorded timestamp | partial | The primary abstract reports minor hapalindoles from H. welwitschii UHIC-52-3 and discusses Westiella intricata. It does not identify Fischerella as the source of the exact C compound. The full article remains inaccessible, so a historical discussion or taxonomic explanation for the imported Fischerella triple was not ruled out. |
+| R-LOCAL-TAXA | data/raw/corpus_taxa.obo; Complete term stanzas for NCBITaxon:1190, NCBITaxon:162985 and NCBITaxon:162986; source inspection reconciled at recorded timestamp | supports | The pinned authority gives Fischerella, Hapalosiphon and Hapalosiphon welwitschii for the three occurrence taxa respectively. Genus-level occurrences are not assertions of production by every member. |
+| R-WIKIDATA-SPECIES | https://www.wikidata.org/wiki/Special:EntityData/Q67340456.json; entity Q67340456 revision 2543823250, label/en and claims P225/P685 | supports | Previously inspected Q67340456 is Hapalosiphon welwitschii, NCBI Taxonomy 162986. Applicability was checked against this owner’s species-level LOTUS provenance URI. The genus URIs were subsequently resolved through the official API; see R-WIKIDATA-GENERA. |
+| R-ACCESS | Public primary-source and provenance-URI access attempts; Exact article title/DOI searches; ACS article/abstract/PDF, Elsevier API, institutional repositories and direct Wikidata entity routes; source inspection reconciled at recorded timestamp | unknown | Full 1987, 1994, 1995 and 2007 primary texts were not obtained. Primary 2007 and 1995 abstracts and 1994 institutional abstract were directly inspected. Wikidata genus URIs Q27438671 and Q12745369 could not be read through page or JSON routes; no deletion or incorrect-identity inference follows from access failure. The official MediaWiki API subsequently resolved both genus URIs; see R-WIKIDATA-GENERA. |
+| R-WIKIDATA-GENERA | https://www.wikidata.org/w/api.php?action=wbgetentities&amp;ids=Q27438671%7CQ12745369&amp;props=labels%7Cclaims&amp;languages=en&amp;format=json; entities Q27438671 and Q12745369, English labels and P225/P685 claims | supports | The official MediaWiki API resolves Q27438671 to Fischerella with NCBI Taxonomy1190 and Q12745369 to Hapalosiphon with NCBI Taxonomy162985. This alternate public route resolves the earlier page/JSON access limitation and matches the occurrence provenance identifiers. |
+| bgc-v5-source | https://mibig.secondarymetabolites.org/repository/BGC0000668.5/annotations.json; compounds[0]; loci[0]; taxonomy; genes.annotations; legacy_references | supports | Direct version-5 JSON reinspection confirms exact compound index 1, 12-epi-hapalindole C isonitrile, matching stored stereochemical SMILES and C21H24N2. Its compound evidence is NMR with DOI:10.1021/jo00226a009. Entry is active, questionable quality, complete; source locus KF811479.1 and strain taxon 1433842 carry entry-wide Enzymatic assays / Heterologous expression without method references. WelU1 and WelU2 are listed in this locus; WelU3 is not among these annotated genes. This limited annotation list is not an exhaustive genome-wide absence search. Classes are terpene/Monoterpene and other, converted from Alkaloid; 0/0 bounds are unspecified. |
+| bgc-kf811479 | https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=KF811479.1&amp;db=nuccore&amp;report=genbank&amp;retmode=text; LOCUS, DEFINITION, VERSION, source feature and REFERENCE 1 | supports | Reused the already inspected accession source, applicable because the reviewed record lists KF811479.1 and taxon 1433842. The deposit is a 36,570 bp partial indolinone biosynthetic cluster from Hapalosiphon welwitschii UTEX B 1830, explicitly strain UTEX B 1830; its linked primary publication is PMID:24677572. |
+| bgc-taxon-1433842 | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?command=show&amp;id=1433842&amp;lvl=&amp;mode=node; Taxonomy ID, current/equivalent names, rank and lineage | supports | Reused direct NCBI taxonomy inspection: 1433842 is the strain-level Hapalosiphon welwitschii UTEX B 1830 taxon, with equivalent UTEX 1830 spelling. Applies directly to the producer and cluster organism identifiers in this record. |
+| bgc-cited-doi-metadata | https://api.crossref.org/works/10.1021/jo00226a009; title, published date, container-title, volume/issue/pages; independently matched indexed ACS publisher metadata | partial | Official DOI metadata identifies the cited publication as the 1987 Journal of Organic Chemistry paper Fontonamide and anhydrohapaloxindole A, two new alkaloids from the blue-green alga Hapalosiphon fontinalis, 52(17):3773-3777. This is not the modern exact C formation experiment or the 2014 KF811479.1 cluster paper. Full primary text was inaccessible; the title alone does not prove C absent from the article. |
+| bgc-primary24677572 | https://pmc.ncbi.nlm.nih.gov/articles/PMC4382313/; Figure 1 caption, strain/metabolite profiling paragraphs, Figures 3-5, Experimental Section; official XML https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&amp;id=4382313 | partial | Full main text re-read and official XML retrieved. The study analyzes xenic UTEX B1830 by HPLC, UV and HRMS and reports the previously described hapalindole/fischerindole diversity; Figure 1 caption attributes isolated compounds to H. welwitschii and UTEX B1830. It links the wel locus to KF811479.1. Experiments demonstrate common precursor formation and methylation of a different welwitindolinone; early stereodivergent core formation remained unresolved. Original Figure SI-1B and the exact C structure panel could not be inspected because supplement/image requests returned browser-check HTML or 404. The species-level occurrence citation is plausible and partly supported; no contradiction was found in this article. |
+| bgc-primary28225144 | https://pubs.rsc.org/en/content/articlehtml/2017/cc/c7cc00782e; Abstract; DOI:10.1039/c7cc00782e / PMID:28225144 | partial | Reused primary abstract explicitly reports exact 12-epi-hapalindole C formation by WelU3, while WelU1 makes 12-epi-fischerindole U. The abstract covers both UTEX B1830 and IC-52-3, so it cannot by itself assign both enzyme outcomes to the record’s strain. The supplement, direct accession record and follow-up primary paper resolve that distinction. |
+| bgc-welu3-supplement | https://www.rsc.org/suppdata/c7/cc/c7cc00782e/c7cc00782e1.pdf; PDF pages 2-4 Methods; page 11 Figure S6; page 12 Figure S7 | partial | Reused previously inspected primary supplement, now applied specifically to C. It identifies tested WelU3 as AIH14742, synthesized and expressed in E. coli; UTEX B1830-derived genes instead include WelU1 and WelU2. Figure S7 compares enzymatic C with naturally isolated IC-52-3 C by 1H NMR. Figure S6 separately identifies C isonitrile in UTEX B1830 HPLC at 2.6% relative abundance, and lists 11 mg isolated from IC-52-3. This supports native-culture occurrence and C formation by the tested WelU3, with strain applicability requiring the accession bridge. Repeat retrieval now returned 404; original inspection timestamp is retained. |
+| bgc-welu3-accession | https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=AIH14742.1&amp;db=protein&amp;report=genpept&amp;retmode=text; DEFINITION, DBSOURCE, source feature, gene and coded_by qualifiers | refutes | Direct GenPept text maps the experimentally tested AIH14742.1 to H. welwitschii UH IC-52-3, taxon 1524913, encoded by complement(KJ767017.1:9493..10179), with deposited gene name welU7. It is not the record’s UTEX B1830 / taxon 1433842 / KF811479.1 combination. The later WelU3 name is reconciled by the 2017 primary comparison, which explains renaming homologous tailoring genes. |
+| bgc-primary-bjoc2017 | https://www.beilstein-journals.org/bjoc/articles/13/115; Results and Discussion paragraphs associated with Figures 1-2; Experimental; DOI:10.3762/bjoc.13.115 | partial | Full primary text explicitly identifies WelU3 as unique to IC-52-3 in its comparison with UTEX B1830 and associates it with exact C formation. Figure 1 discusses the strain-specific metabolite and cluster differences. The experiments compare WelO5* from IC-52-3 and WelO5 from UTEX B1830 converting C to chlorinated E; they show C consumption, not its formation. The authors report re-validating UTEX B1830 metabolite profiles and cite the 2014 ChemBioChem study for those profiles. This supports occurrence and pathway association without transferring the IC-52-3 formation experiment to KF811479.1. |
+| bgc-local-routing | data/raw/mibig_compounds.tsv; scripts/extract_mibig.py; scripts/seed_from_sources.py; docs/HARMONIZATION.md; src/naturalproductmech/schema/naturalproductmech.yaml; mibig_compounds.tsv row 789 / BGC0000668:1; extractor primary_reference(); HARMONIZATION producer/locus distinction; ClusterLinkEvidenceEnum | supports | The exact raw row combines COMPOUND_EVIDENCE DOI:10.1021/jo00226a009 with inherited entry-wide methods and CLUSTER_DEMONSTRATED. Both generated claims repeat the compound citation. Repository rules define the locus claim as whether this locus makes the compound, with demonstration requiring experimental sufficiency or necessity. Substrate conversion and formation therefore need distinct interpretation. Implemented claim-reference and locus-evidence correction tables provide maintained remediation paths. |
+
+## Limits And Additional Notes
+
+- CyanoMetDB1547 contains a source-level conflict between complete SMILES/IUPAC stereochemistry and its underassigned stored InChI/key. Xref equivalence is supported specifically by the complete SMILES; no automatic correction of the frozen source or new occurrence claim is proposed here.
+- Primary configuration support comes from inspected full text and an explicit atom mapping. Spectra, optical rotations, crystallography and supplementary experimental datasets were not independently reinterpreted.
+- The current ChEBI check covers the exact candidateCHEBI:222284 plus the complete pinned eligible inventory, not an exhaustive search across every current ontology entity.
+- The target has no asserted synonym to audit. Omission of an optional short synonym alone is not a review finding.
+- The primary 1995 abstract was inspected on a publication-page mirror, with official DOI metadata confirming its identity. Full original methods were not inspected.
+- Full texts needed to adjudicate the listed LOTUS taxon/reference differences were not available through attempted free routes; findings remain provisional.
+- DOI:10.1021/jo00226a009 remains inspected at official metadata level; no whole-article absence claim is made from its title.
+- The 2014 ChemBioChem primary main text and official XML were inspected; its supplementary PDF and exact structure image remained unavailable through attempted free endpoints. Its exact chromatographic C assignment was not independently re-read.
+- The 2017 RSC main paper was inspected through its primary abstract; its full supplement had previously been inspected at the retained actual timestamp. Later supplement requests returned 404 and main PDF returned 403.
+- A bounded search for WelU1/WelU2/WelU3 and exact C biosynthesis found other-strain cyclases and related-congener results. This does not establish exhaustive absence of a later UTEX B1830 formation experiment.
+- The configured full identifier-label gate accepts 499 warning-level taxon-label mismatches, 35 explicit exceptions and 4,722 no-adapter pairs across the corpus; its exit 0 is not independent verification of every identifier or of this record's scientific claims.
+- The quality suite skips the optional sibling AntibioticMech checkout comparison because the isolated clone has no sibling checkout, and skips three command-frontmatter cases because their parameter sets are empty. Pinned-hash and network governance checks still ran.
+- Shared native gates assess deterministic corpus consistency and configured invariants. They do not establish biological production, stereochemical specificity, evidence adequacy or literature-level claim support.
+- No scientific owner, source inventory, component, curation status or seed history was edited. All corrective actions are proposed work only.
+- Native producer evidence remains distinct from occurrence and enzyme-locus evidence. A saved partial scientific review does not confer native REVIEWED status.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T070128Z-12-epi-hapalindole-c-isonitrile
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: '12-epi-hapalindole C isonitrile: identity, occurrence and strain-specific
+  locus scope'
+started_at: '2026-10-21T06:52:51.930644Z'
+finished_at: '2026-10-21T07:01:28.766570Z'
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This review team did not author or modify the selected scientific
+    owner or its maintained source inputs. Parallel source inspections were reconciled
+    into this one-target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The exact C structure, four stereocentres and minted grounding are supported.
+  CyanoMetDB’s complete SMILES agrees despite its underassigned stored InChI. Exact
+  C synthesis by WelU3 belongs to another strain and accession, so the recorded strong
+  locus grade needs compound- and strain-specific adjudication. Three LOTUS taxon/reference
+  combinations remain provisional concerns pending full-source access.
+source:
+  git_revision: 10ed28fcdadb3d955c30732ff05b5d0e4adbee3b
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/12-epi-hapalindole-c-isonitrile.yaml
+    sha256: fd2cd9b431565f95a3b7e32f30ec4559deed0e64af37a600c1a838cfa0e2f015
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete generated owner and resolved mechanism; all field groups
+    inspected, with partial access to the specified primary sources.
+  selection: 'Unreviewed path number 4 in deterministic path order from the initial
+    validated review list: 91 bundles covered 54 of 3,116 corpus records and 3,062
+    remained. Coverage accounting includes ignored bundles. This bundle assesses only
+    one target.'
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-4505b19edb
+targets:
+- target_id: naturalproductmech:mibig-4505b19edb
+  path: data/natural_products/alkaloids/12-epi-hapalindole-c-isonitrile.yaml
+  label: 12-epi-hapalindole C isonitrile
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema and component validation
+  status: passed
+  required: true
+  summary: One complete owner validated with zero ERROR rows.
+  command: just validate-strict data/natural_products/alkaloids/12-epi-hapalindole-c-isonitrile.yaml
+    --out /private/tmp/npm-review-work/004/strict.tsv
+  exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-4505b19edb
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 record files agree with 3,116 PATHS.tsv rows and their pinned
+    filing pathways.
+  target_ids:
+  - naturalproductmech:mibig-4505b19edb
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just verify-corpus
+    --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016808+00:00; finished 2026-10-21T06:37:52.997020+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/verify-corpus.log.'
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 records are byte-identical to the seeder output from committed
+    inventories and maintained curation inputs.
+  target_ids:
+  - naturalproductmech:mibig-4505b19edb
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just verify-reproduction
+    --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016703+00:00; finished 2026-10-21T06:38:35.570687+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/verify-reproduction.log.'
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The documented exhaustive queue command produced 8,928 diagnostic rows
+    in 12 queues; deterministic queue output does not establish scientific review.
+  target_ids:
+  - naturalproductmech:mibig-4505b19edb
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just review-queue
+    --tsv /private/tmp/npm-review-queue-initial.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016598+00:00; finished 2026-10-21T06:37:11.018366+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/review-queue.log.'
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'Full configured gate passed using existing CHEBI and GO caches plus the
+    committed taxonomy adapter: 13,434 canonical matches, 646 synonym matches, 35
+    documented exceptions, 499 warning-only mismatches and 4,722 pairs skipped because
+    their prefixes have no adapter.'
+  target_ids:
+  - naturalproductmech:mibig-4505b19edb
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:56.498212+00:00; finished 2026-10-21T06:38:54.776253+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/validate-products.log.'
+- check_id: qc-environment-attempt1
+  name: Initial QC attempt before installing the pinned linter
+  status: failed
+  required: false
+  summary: The first full QC invocation stopped at lint because the isolated copied
+    Python environment lacked Ruff. Exact uv.lock version Ruff 0.16.6 was subsequently
+    installed and lint passed on later invocations.
+  target_ids:
+  - naturalproductmech:mibig-4505b19edb
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just qc
+  exit_code: 1
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:56.497107+00:00; finished 2026-10-21T06:36:56.918133+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/qc.log.'
+- check_id: qc-network-attempt2
+  name: QC attempt without network access
+  status: failed
+  required: false
+  summary: After Ruff installation, QC passed lint and stopped at vendored-sync because
+    sandbox DNS could not reach the pinned public CLAW governance source. Approved
+    network access allowed the next invocation to verify all 22 governed artifacts.
+  target_ids:
+  - naturalproductmech:mibig-4505b19edb
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just qc
+  exit_code: 1
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:37:57.661447+00:00; finished 2026-10-21T06:37:59.874785+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/qc-attempt2.log.'
+- check_id: qc-tag-attempt3
+  name: QC attempt before restoring the required provenance tag
+  status: failed
+  required: false
+  summary: 'QC passed lint, vendored sync, documentation, provenance and source queue,
+    then stopped at tests: 998 passed, 1 failed, 4 skipped. The sole failure was the
+    isolated clone lacking refs/tags/review-base/gentamicin-20261013; it was not a
+    failed archive-content assertion. The tag was subsequently fetched from origin.'
+  target_ids:
+  - naturalproductmech:mibig-4505b19edb
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just qc
+  exit_code: 1
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:38:17.713062+00:00; finished 2026-10-21T06:45:43.079802+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/qc-attempt3.log.'
+- check_id: qc-tag-remediation
+  name: Targeted verification after restoring the provenance tag
+  status: passed
+  required: false
+  summary: After restoring the required tag, the exact previously failed gentamicin
+    archive test passed (1 passed). No repository content was edited for this remediation.
+  target_ids:
+  - naturalproductmech:mibig-4505b19edb
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just test -q
+    tests/test_gentamicin_review_archive.py::test_gentamicin_archive_and_scoped_dispositions
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:45:52.383490+00:00; finished 2026-10-21T06:45:54.030116+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/gentamicin-tag-check.log.'
+- check_id: qc-skip-diagnosis
+  name: Diagnosis of the suite skip conditions
+  status: passed
+  required: false
+  summary: 'The four observed skip cases were reproduced with pytest skip reasons
+    enabled: the optional sibling AntibioticMech comparison has no sibling checkout
+    in the isolated clone, and three command-frontmatter tests have empty parameter
+    sets. This diagnostic invocation executed no passing tests; it reported four skips.'
+  target_ids:
+  - naturalproductmech:mibig-4505b19edb
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just test -q
+    -rs tests/test_schema.py::test_shared_mech_modules_are_byte_identical_to_the_fleet
+    tests/test_skill_frontmatter.py::test_command_frontmatter_has_no_duplicate_keys
+    tests/test_skill_frontmatter.py::test_command_frontmatter_is_valid_yaml tests/test_skill_frontmatter.py::test_command_declares_a_usable_description
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:46:30.259937+00:00; finished 2026-10-21T06:46:31.251048+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/skipped-tests-diagnosis.log.'
+- check_id: shared-qc
+  name: Full repository quality gate after environment repair
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed after installing the pinned
+    linter, allowing the read-only governance fetch, and restoring the required provenance
+    tag. Tests: 999 passed, 4 skipped, 2 warnings. Closed-schema validation: 3,116
+    records and zero errors. Documentation, provenance, source queue, governed artifacts,
+    generated pages, reproduction, filing integrity and corpus reporting all passed.'
+  target_ids:
+  - naturalproductmech:mibig-4505b19edb
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:46:02.058886+00:00; finished 2026-10-21T06:54:53.950582+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/qc-attempt4.log.'
+- check_id: C-OCCURRENCE-SOURCE
+  name: Full source adjudication of the listed occurrence differences
+  status: unavailable
+  required: true
+  summary: Relevant primary abstracts and source metadata were inspected, but full
+    passages needed to adjudicate the suspicious LOTUS taxon/reference combinations
+    remain inaccessible.
+  target_ids:
+  - naturalproductmech:mibig-4505b19edb
+  evidence_ids:
+  - R-ACCESS
+- check_id: C-PROVENANCE-URI
+  name: External genus-level Wikidata provenance identifiers
+  status: passed
+  required: true
+  summary: Official MediaWiki API resolved both genus provenance identifiers and matched
+    the NCBI taxa after other public routes failed.
+  target_ids:
+  - naturalproductmech:mibig-4505b19edb
+  evidence_ids:
+  - R-LOCAL-TAXA
+  - R-WIKIDATA-GENERA
+- check_id: C-IMODULON
+  name: Expression-module source applicability
+  status: not_applicable
+  required: false
+  summary: No expression-module or regulatory claim is used. Direct compound and biochemical
+    sources were inspected; no source-coverage absence is inferred.
+  target_ids:
+  - naturalproductmech:mibig-4505b19edb
+evidence:
+- evidence_id: E-IDENTITY-LOCAL
+  kind: record_content
+  reference: data/natural_products/alkaloids/12-epi-hapalindole-c-isonitrile.yaml
+  locator: Complete owner; chemical_structure, xrefs, grounding_notes and source_concepts
+  accessed_at: '2026-10-21T06:54:24Z'
+  support: supports
+  summary: The owner encodes the tricyclic C isonitrile with four assigned centres,
+    rather than a tetracyclic hapalindole or fischerindole. It contains no definition
+    or synonyms; these optional omissions alone are not findings.
+  snapshot_sha256: fd2cd9b431565f95a3b7e32f30ec4559deed0e64af37a600c1a838cfa0e2f015
+- evidence_id: E-NPATLAS
+  kind: database
+  reference: https://www.npatlas.org/api/v1/compound/NPA016387?include=classifications
+  locator: npaid, original_name, smiles, inchi, inchikey, mol_structures and reassignments;
+    official compound page NPA016387
+  accessed_at: '2026-10-21T06:54:44Z'
+  support: supports
+  summary: The named 12-epi-hapalindole C isonitrile entry exactly matches the owner
+    SMILES, full InChI and key KGWATBYKCMCFLC-CGRMTHRGSA-N. Formula C21H24N2 agrees.
+    This verifies structure equivalence; a separate occurrence or producer citation
+    does not gain support from this match.
+  snapshot_sha256: d2af784b1682bb00ab0253de1340d8d155111a6639e14d7c0734001ec2795acd
+- evidence_id: E-CHEBI-IDENTITY
+  kind: database
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/222284/
+  locator: chebi_accession, name, stars, names and default_structure id3435560
+  accessed_at: '2026-10-21T06:55:05Z'
+  support: supports
+  summary: CHEBI:222284 is named 12-epi-hapalindole C isonitrile and has the exact
+    full InChI/key. It has two stars, so it does not qualify for the repository three-star
+    grounding rule. Its systematic name is 3-[(1S,2R,3S,6S)-3-ethenyl-2-isocyano-3-methyl-6-prop-1-en-2-ylcyclohexyl]-1H-indole.
+  snapshot_sha256: 2c663529b2f03e86242aa1fb7f546edc6de2c54fff7ea9c13d28500c66fc62ab
+- evidence_id: E-CYANOMETDB-SOURCE
+  kind: database
+  reference: https://zenodo.org/records/13854577/files/CyanoMetDB_V03_2024.csv?download=1
+  locator: Exact row CyanoMetDB_Identifier=CyanoMetDB_1547; CompoundName, NPAtlas_ID,
+    SMILES_isomeric, InChI, InChlKey and IUPAC_name
+  accessed_at: '2026-10-21T06:55:04.996616Z'
+  support: context_only
+  summary: The row identifies the named compound and NPA016387. Its stereospecified
+    SMILES and IUPAC name have four assigned centres, but stored InChI has20? and
+    the stored key is KGWATBYKCMCFLC-FBTBGZJPSA-N. These representations are internally
+    inconsistent. The full source CSV checksum matches the committed manifest.
+  snapshot_sha256: 91aa57146c9e803d5eeef656fc0e5cfc8f804531b1b83718757e96aa848a4121
+- evidence_id: E-CYANOMETDB-RECOMPUTE
+  kind: validation
+  reference: /private/tmp/npm-review-work/004/cyanometdb-row.json
+  locator: Official row copied with UTF-8 BOM-aware CSV parsing, then its SMILES_isomeric
+    parsed by RDKit
+  accessed_at: '2026-10-21T06:55:04.996616Z'
+  support: supports
+  summary: Recomputing CyanoMetDB1547 isomeric SMILES yields exactly KGWATBYKCMCFLC-CGRMTHRGSA-N
+    and the owner InChI including C11 configuration. Thus the xref has a matching
+    complete structure despite its underassigned stored InChI/key. This is not an
+    experimental stereochemical determination.
+  snapshot_sha256: 853c014309c2a9aaca282061a5120301991709881231fc68f72388e6b39fd1fc
+- evidence_id: E-CHEMISTRY-IDENTITY
+  kind: validation
+  reference: /private/tmp/npm-review-work/004/chemistry.json
+  locator: RDKit2026.03.5 result generated2026-10-21T06:52:53.027824Z; inspected complete
+    calculation
+  accessed_at: '2026-10-21T06:54:24Z'
+  support: supports
+  summary: The owner SMILES recomputes to the stored InChI/key with formulaC21H24N2,
+    neutral charge and exact mass304.193948768. Zero-based atoms3,6,7,8 have configurationsS,S,R,S
+    respectively. No unassigned stereocentres were reported.
+  snapshot_sha256: f014a6d6aedc75d34f2638107554f3ddfba04fd94c85a6395f557373090b96ae
+- evidence_id: E-GROUNDING-SEARCH
+  kind: search
+  reference: data/raw/chebi_structures.tsv
+  locator: Entire pinned eligible inventory; exact key prefix, exact compound label
+    and slug search
+  accessed_at: '2026-10-21T06:54:34Z'
+  support: supports
+  summary: No matching connectivity key, exact label or slug was found in the pinned
+    eligible inventory. The directly inspected current exact ChEBI entry remains two-star.
+  search_scope: rg --no-ignore --hidden -n -F -e KGWATBYKCMCFLC -e 12-epi-hapalindole
+    C -e 12-epi-hapalindole-c-isonitrile data/raw/chebi_structures.tsv; entire explicit
+    file searched with ignored-file exclusions disabled; exit1 no matches.
+  snapshot_sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+- evidence_id: E-GROUNDING-POLICY
+  kind: authority
+  reference: docs/HARMONIZATION.md
+  locator: 'Identity resolution: unambiguous three-star default-structure rule'
+  accessed_at: '2026-10-21T06:45:28Z'
+  support: supports
+  summary: Only an unambiguous three-star default-structure match is eligible for
+    automatic ChEBI grounding; a matching two-star entry does not require replacing
+    the minted identifier.
+  snapshot_sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+- evidence_id: E-PRIMARY-STEREOCHEMISTRY
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=5391265&retmode=xml
+  locator: Li etal, Decoding cyclase-dependent assembly of hapalindole and fischerindole
+    alkaloids; DOI:10.1038/nchembio.2327; PMID:28288107; Results paragraphP7 and Figure3
+    caption
+  accessed_at: '2026-10-21T06:55:05Z'
+  support: supports
+  summary: The primary paper identifies NMR-characterized minor product7 as tricyclic
+    12-epi-hapalindole C and explicitly assigns the same C10S/C11R/C12S/C15S pattern
+    as its co-product9. It distinguishes the two skeletons and reports that7 did not
+    convert into9. This is an exact-target configuration assertion, not an inference
+    from another reviewed record.
+  snapshot_sha256: 7768d09b6701c88fe7dddc2d2c9bd9822f51ef95db35dcd5f13a4fe67f651410
+- evidence_id: E-STEREO-MAPPING
+  kind: validation
+  reference: /private/tmp/npm-review-work/004/stereo-mapping.json
+  locator: Primary natural-product positions mapped by attached functional groups;
+    all owner stereo tags removed before assigning configurations
+  accessed_at: '2026-10-21T06:55:35.821734Z'
+  support: supports
+  summary: C10(indole-bearing),C11(isonitrile-bearing),C12(quaternary methyl/vinyl-bearing),C15(isopropenyl-bearing)
+    map to zero-based atoms8,7,6,3. Assigning S,R,S,S independently reproduces the
+    complete owner InChI and key KGWATBYKCMCFLC-CGRMTHRGSA-N.
+  snapshot_sha256: 659ed8471befc70420d7ca2e2422665812404a71be8380f2127a0950c847f23c
+- evidence_id: R-LOCAL
+  kind: record_content
+  reference: data/natural_products/alkaloids/12-epi-hapalindole-c-isonitrile.yaml
+  locator: Entire YAML, complete read_natural_product view and exact-key source rows
+  accessed_at: '2026-10-21T06:52:53.027824Z'
+  support: supports
+  summary: The complete C owner was read, including all 6 occurrence objects, producer
+    and locus claims, chemical xrefs, two seed events and SEEDED status. No biosynthetic
+    pathway, molecular target, activity, clinical, related-record or causal-graph
+    assertion is present. There are no declared component references.
+  snapshot_sha256: fd2cd9b431565f95a3b7e32f30ec4559deed0e64af37a600c1a838cfa0e2f015
+- evidence_id: R-2007
+  kind: primary_source
+  reference: https://pubmed.ncbi.nlm.nih.gov/17686499/
+  locator: Abstract and DOI metadata; DOI:10.1016/j.phytochem.2007.06.024; source
+    inspection reconciled at recorded timestamp
+  accessed_at: '2026-10-21T06:58:59.989041Z'
+  support: supports
+  summary: The primary abstract explicitly identifies 12-epi-hapalindole C isonitrile
+    as isolated from Fischerella ATCC 43239, alongside other named hapalindoles, with
+    mass-spectrometric and NMR structure analysis. This directly supports the Fischerella
+    occurrence. The abstract does not establish a separate Hapalosiphon occurrence,
+    and unavailable full text prevents adjudicating whether its historical discussion
+    supports that additional triple.
+- evidence_id: R-1995-ABSTRACT
+  kind: primary_source
+  reference: DOI:10.1021/np50125a025
+  locator: Primary article abstract reproduced on its ResearchGate publication page,
+    https://www.researchgate.net/publication/231716831_New_Hapalindoles_from_the_Cyanophyte_Hapalosiphon_laingii
+    , Abstract lines 36-38; exact title/authors/DOI independently checked with Crossref
+  accessed_at: '2026-10-21T06:57:14Z'
+  support: supports
+  summary: The inspected reproduced primary abstract names 12-epi-hapalindole C isonitrile
+    among compounds isolated from cultured Hapalosiphon laingii. This supports the
+    genus-level Hapalosiphon occurrence. Only the primary abstract was used; citing-paper
+    excerpts on the same page were excluded. Full methods were not available, and
+    the mirror date is not treated as the issue date.
+- evidence_id: R-1995-METADATA
+  kind: authority
+  reference: https://api.crossref.org/works/10.1021/np50125a025
+  locator: Official DOI/title and publication-date fields
+  accessed_at: '2026-10-21T06:56:03.360106Z'
+  support: supports
+  summary: The DOI resolves to Klein et al., New Hapalindoles from the Cyanophyte
+    Hapalosiphon laingii, Journal of Natural Products 58(11):1781–1785, published
+    in November 1995. This verifies the identity of the primary abstract; metadata
+    alone does not establish the compound occurrence.
+- evidence_id: R-1994
+  kind: primary_source
+  reference: https://pure.psu.edu/en/publications/welwitindolinones-unusual-alkaloids-from-the-blue-green-algae-hap/
+  locator: Authors institutional abstract; DOI:10.1021/ja00101a015; source inspection
+    reconciled at recorded timestamp
+  accessed_at: '2026-10-21T06:58:59.989041Z'
+  support: partial
+  summary: The primary abstract reports minor hapalindoles from H. welwitschii UHIC-52-3
+    and discusses Westiella intricata. It does not identify Fischerella as the source
+    of the exact C compound. The full article remains inaccessible, so a historical
+    discussion or taxonomic explanation for the imported Fischerella triple was not
+    ruled out.
+- evidence_id: R-LOCAL-TAXA
+  kind: authority
+  reference: data/raw/corpus_taxa.obo
+  locator: Complete term stanzas for NCBITaxon:1190, NCBITaxon:162985 and NCBITaxon:162986;
+    source inspection reconciled at recorded timestamp
+  accessed_at: '2026-10-21T06:58:59.989041Z'
+  support: supports
+  summary: The pinned authority gives Fischerella, Hapalosiphon and Hapalosiphon welwitschii
+    for the three occurrence taxa respectively. Genus-level occurrences are not assertions
+    of production by every member.
+  snapshot_sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+- evidence_id: R-WIKIDATA-SPECIES
+  kind: database
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q67340456.json
+  locator: entity Q67340456 revision 2543823250, label/en and claims P225/P685
+  accessed_at: '2026-10-21T06:44:23.635771Z'
+  support: supports
+  summary: Previously inspected Q67340456 is Hapalosiphon welwitschii, NCBI Taxonomy
+    162986. Applicability was checked against this owner’s species-level LOTUS provenance
+    URI. The genus URIs were subsequently resolved through the official API; see R-WIKIDATA-GENERA.
+  snapshot_sha256: 53fdaac9788b1ac4ea420b9173248f248da507f8d3a1ab73fa39607f8c6cd4fb
+- evidence_id: R-ACCESS
+  kind: search
+  reference: Public primary-source and provenance-URI access attempts
+  locator: Exact article title/DOI searches; ACS article/abstract/PDF, Elsevier API,
+    institutional repositories and direct Wikidata entity routes; source inspection
+    reconciled at recorded timestamp
+  accessed_at: '2026-10-21T06:58:59.989041Z'
+  support: unknown
+  summary: Full 1987, 1994, 1995 and 2007 primary texts were not obtained. Primary
+    2007 and 1995 abstracts and 1994 institutional abstract were directly inspected.
+    Wikidata genus URIs Q27438671 and Q12745369 could not be read through page or
+    JSON routes; no deletion or incorrect-identity inference follows from access failure.
+    The official MediaWiki API subsequently resolved both genus URIs; see R-WIKIDATA-GENERA.
+  search_scope: Exact DOI/title plus pdf searches and author-institution searches;
+    official ACS routes returned 403/inaccessible, Elsevier full-article endpoint
+    unavailable, institution results lacked the needed full paper. Direct Wikidata
+    pages and entity JSON returned 403/inaccessible. Ignored-file-independent local
+    lookup in corpus_taxa.obo verified current pinned labels. This is bounded access
+    scope, not exhaustive scientific or database absence.
+- evidence_id: R-WIKIDATA-GENERA
+  kind: database
+  reference: https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q27438671%7CQ12745369&props=labels%7Cclaims&languages=en&format=json
+  locator: entities Q27438671 and Q12745369, English labels and P225/P685 claims
+  accessed_at: '2026-10-21T07:00:58.318760Z'
+  support: supports
+  summary: The official MediaWiki API resolves Q27438671 to Fischerella with NCBI
+    Taxonomy1190 and Q12745369 to Hapalosiphon with NCBI Taxonomy162985. This alternate
+    public route resolves the earlier page/JSON access limitation and matches the
+    occurrence provenance identifiers.
+  snapshot_sha256: 52694c8b09872109767436718e91f70005b5a7903484f66c20850c6d3b225147
+- evidence_id: bgc-v5-source
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0000668.5/annotations.json
+  locator: compounds[0]; loci[0]; taxonomy; genes.annotations; legacy_references
+  accessed_at: '2026-10-21T06:55:12Z'
+  support: supports
+  summary: Direct version-5 JSON reinspection confirms exact compound index 1, 12-epi-hapalindole
+    C isonitrile, matching stored stereochemical SMILES and C21H24N2. Its compound
+    evidence is NMR with DOI:10.1021/jo00226a009. Entry is active, questionable quality,
+    complete; source locus KF811479.1 and strain taxon 1433842 carry entry-wide Enzymatic
+    assays / Heterologous expression without method references. WelU1 and WelU2 are
+    listed in this locus; WelU3 is not among these annotated genes. This limited annotation
+    list is not an exhaustive genome-wide absence search. Classes are terpene/Monoterpene
+    and other, converted from Alkaloid; 0/0 bounds are unspecified.
+- evidence_id: bgc-kf811479
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=KF811479.1&db=nuccore&report=genbank&retmode=text
+  locator: LOCUS, DEFINITION, VERSION, source feature and REFERENCE 1
+  accessed_at: '2026-10-21T06:43:48Z'
+  support: supports
+  summary: Reused the already inspected accession source, applicable because the reviewed
+    record lists KF811479.1 and taxon 1433842. The deposit is a 36,570 bp partial
+    indolinone biosynthetic cluster from Hapalosiphon welwitschii UTEX B 1830, explicitly
+    strain UTEX B 1830; its linked primary publication is PMID:24677572.
+- evidence_id: bgc-taxon-1433842
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?command=show&id=1433842&lvl=&mode=node
+  locator: Taxonomy ID, current/equivalent names, rank and lineage
+  accessed_at: '2026-10-21T06:45:11Z'
+  support: supports
+  summary: 'Reused direct NCBI taxonomy inspection: 1433842 is the strain-level Hapalosiphon
+    welwitschii UTEX B 1830 taxon, with equivalent UTEX 1830 spelling. Applies directly
+    to the producer and cluster organism identifiers in this record.'
+- evidence_id: bgc-cited-doi-metadata
+  kind: authority
+  reference: https://api.crossref.org/works/10.1021/jo00226a009
+  locator: title, published date, container-title, volume/issue/pages; independently
+    matched indexed ACS publisher metadata
+  accessed_at: '2026-10-21T06:50:50Z'
+  support: partial
+  summary: Official DOI metadata identifies the cited publication as the 1987 Journal
+    of Organic Chemistry paper Fontonamide and anhydrohapaloxindole A, two new alkaloids
+    from the blue-green alga Hapalosiphon fontinalis, 52(17):3773-3777. This is not
+    the modern exact C formation experiment or the 2014 KF811479.1 cluster paper.
+    Full primary text was inaccessible; the title alone does not prove C absent from
+    the article.
+- evidence_id: bgc-primary24677572
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC4382313/
+  locator: Figure 1 caption, strain/metabolite profiling paragraphs, Figures 3-5,
+    Experimental Section; official XML https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=4382313
+  accessed_at: '2026-10-21T06:53:50Z'
+  support: partial
+  summary: Full main text re-read and official XML retrieved. The study analyzes xenic
+    UTEX B1830 by HPLC, UV and HRMS and reports the previously described hapalindole/fischerindole
+    diversity; Figure 1 caption attributes isolated compounds to H. welwitschii and
+    UTEX B1830. It links the wel locus to KF811479.1. Experiments demonstrate common
+    precursor formation and methylation of a different welwitindolinone; early stereodivergent
+    core formation remained unresolved. Original Figure SI-1B and the exact C structure
+    panel could not be inspected because supplement/image requests returned browser-check
+    HTML or 404. The species-level occurrence citation is plausible and partly supported;
+    no contradiction was found in this article.
+- evidence_id: bgc-primary28225144
+  kind: primary_source
+  reference: https://pubs.rsc.org/en/content/articlehtml/2017/cc/c7cc00782e
+  locator: Abstract; DOI:10.1039/c7cc00782e / PMID:28225144
+  accessed_at: '2026-10-21T06:50:18Z'
+  support: partial
+  summary: Reused primary abstract explicitly reports exact 12-epi-hapalindole C formation
+    by WelU3, while WelU1 makes 12-epi-fischerindole U. The abstract covers both UTEX
+    B1830 and IC-52-3, so it cannot by itself assign both enzyme outcomes to the record’s
+    strain. The supplement, direct accession record and follow-up primary paper resolve
+    that distinction.
+- evidence_id: bgc-welu3-supplement
+  kind: primary_source
+  reference: https://www.rsc.org/suppdata/c7/cc/c7cc00782e/c7cc00782e1.pdf
+  locator: PDF pages 2-4 Methods; page 11 Figure S6; page 12 Figure S7
+  accessed_at: '2026-10-21T06:50:18Z'
+  support: partial
+  summary: Reused previously inspected primary supplement, now applied specifically
+    to C. It identifies tested WelU3 as AIH14742, synthesized and expressed in E.
+    coli; UTEX B1830-derived genes instead include WelU1 and WelU2. Figure S7 compares
+    enzymatic C with naturally isolated IC-52-3 C by 1H NMR. Figure S6 separately
+    identifies C isonitrile in UTEX B1830 HPLC at 2.6% relative abundance, and lists
+    11 mg isolated from IC-52-3. This supports native-culture occurrence and C formation
+    by the tested WelU3, with strain applicability requiring the accession bridge.
+    Repeat retrieval now returned 404; original inspection timestamp is retained.
+- evidence_id: bgc-welu3-accession
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=AIH14742.1&db=protein&report=genpept&retmode=text
+  locator: DEFINITION, DBSOURCE, source feature, gene and coded_by qualifiers
+  accessed_at: '2026-10-21T06:53:28Z'
+  support: refutes
+  summary: Direct GenPept text maps the experimentally tested AIH14742.1 to H. welwitschii
+    UH IC-52-3, taxon 1524913, encoded by complement(KJ767017.1:9493..10179), with
+    deposited gene name welU7. It is not the record’s UTEX B1830 / taxon 1433842 /
+    KF811479.1 combination. The later WelU3 name is reconciled by the 2017 primary
+    comparison, which explains renaming homologous tailoring genes.
+- evidence_id: bgc-primary-bjoc2017
+  kind: primary_source
+  reference: https://www.beilstein-journals.org/bjoc/articles/13/115
+  locator: Results and Discussion paragraphs associated with Figures 1-2; Experimental;
+    DOI:10.3762/bjoc.13.115
+  accessed_at: '2026-10-21T06:54:51Z'
+  support: partial
+  summary: Full primary text explicitly identifies WelU3 as unique to IC-52-3 in its
+    comparison with UTEX B1830 and associates it with exact C formation. Figure 1
+    discusses the strain-specific metabolite and cluster differences. The experiments
+    compare WelO5* from IC-52-3 and WelO5 from UTEX B1830 converting C to chlorinated
+    E; they show C consumption, not its formation. The authors report re-validating
+    UTEX B1830 metabolite profiles and cite the 2014 ChemBioChem study for those profiles.
+    This supports occurrence and pathway association without transferring the IC-52-3
+    formation experiment to KF811479.1.
+- evidence_id: bgc-local-routing
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv; scripts/extract_mibig.py; scripts/seed_from_sources.py;
+    docs/HARMONIZATION.md; src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: mibig_compounds.tsv row 789 / BGC0000668:1; extractor primary_reference();
+    HARMONIZATION producer/locus distinction; ClusterLinkEvidenceEnum
+  accessed_at: '2026-10-21T06:55:12Z'
+  support: supports
+  summary: The exact raw row combines COMPOUND_EVIDENCE DOI:10.1021/jo00226a009 with
+    inherited entry-wide methods and CLUSTER_DEMONSTRATED. Both generated claims repeat
+    the compound citation. Repository rules define the locus claim as whether this
+    locus makes the compound, with demonstration requiring experimental sufficiency
+    or necessity. Substrate conversion and formation therefore need distinct interpretation.
+    Implemented claim-reference and locus-evidence correction tables provide maintained
+    remediation paths.
+  search_scope: Read the full record and local inspection packet. rg --no-ignore --hidden
+    searched exact identifier, compound label and BGC0000668:1 in raw MIBiG and relevant
+    correction tables, including ignored files in these scoped paths.
+assessments:
+- assessment_id: A-IDENTITY-REPRESENTATION
+  area: identity
+  topic: Tricyclic C isonitrile with consistent full stereochemical representation
+  outcome: supported
+  summary: The full owner structure agrees with NPAtlas and current ChEBI, while RDKit
+    confirms internal SMILES/InChI/key consistency and four assigned centres. The
+    record denotes the tricyclic C congener.
+  target_ids:
+  - naturalproductmech:mibig-4505b19edb
+  evidence_ids:
+  - E-IDENTITY-LOCAL
+  - E-NPATLAS
+  - E-CHEBI-IDENTITY
+  - E-CHEMISTRY-IDENTITY
+- assessment_id: A-XREF-EQUIVALENCE
+  area: identity
+  topic: Both chemical xrefs resolve to the encoded complete structure
+  outcome: supported
+  summary: NPAtlas matches all stored representations. CyanoMetDB1547 matches through
+    its fully stereospecified SMILES and systematic name; recomputing that SMILES
+    recovers the exact owner key. Its inconsistent stored InChI/key is retained as
+    a source limitation, rather than silently treated as a full-key match.
+  target_ids:
+  - naturalproductmech:mibig-4505b19edb
+  evidence_ids:
+  - E-IDENTITY-LOCAL
+  - E-NPATLAS
+  - E-CYANOMETDB-SOURCE
+  - E-CYANOMETDB-RECOMPUTE
+- assessment_id: A-CYANOMETDB-REPRESENTATION
+  area: representation
+  topic: Underassigned stored source InChI conflicts with complete source SMILES
+  outcome: concern
+  summary: CyanoMetDB1547 omits one centre in its stored InChI/key despite specifying
+    it in SMILES and IUPAC name. This limits key-only joins and explains why an exact-key
+    occurrence extraction does not match this owner. It does not establish that the
+    owner structure or chemical xref is wrong.
+  target_ids:
+  - naturalproductmech:mibig-4505b19edb
+  evidence_ids:
+  - E-CYANOMETDB-SOURCE
+  - E-CYANOMETDB-RECOMPUTE
+- assessment_id: A-GROUNDING
+  area: grounding
+  topic: Minted identity follows the eligible ChEBI rule
+  outcome: supported
+  summary: The pinned eligible inventory has no matching structure and directly inspected
+    CHEBI:222284 has two stars. Retaining MINTED is consistent with the repository
+    rule.
+  target_ids:
+  - naturalproductmech:mibig-4505b19edb
+  evidence_ids:
+  - E-IDENTITY-LOCAL
+  - E-GROUNDING-SEARCH
+  - E-CHEBI-IDENTITY
+  - E-GROUNDING-POLICY
+- assessment_id: A-PRIMARY-STEREOCHEMISTRY
+  area: evidence
+  topic: Exact-target four-centre configuration and atom mapping
+  outcome: supported
+  summary: The primary2017 paper assigns the exact tricyclic C product the C10S/C11R/C12S/C15S
+    pattern. Independent assignment on the stereo-stripped owner graph reproduces
+    its full key. This checks agreement with the reported configuration without reinterpreting
+    spectra.
+  target_ids:
+  - naturalproductmech:mibig-4505b19edb
+  evidence_ids:
+  - E-PRIMARY-STEREOCHEMISTRY
+  - E-STEREO-MAPPING
+  - E-CHEMISTRY-IDENTITY
+  dimensions:
+  - name: primary_configuration_mapping
+    value: C10=atom8:S; C11=atom7:R; C12=atom6:S; C15=atom3:S
+    definition: Natural-product ring positions mapped to zero-based RDKit atom indices
+      by their functional-group attachments
+    evidence_ids:
+    - E-PRIMARY-STEREOCHEMISTRY
+    - E-STEREO-MAPPING
+- assessment_id: R-CLASSIFICATION
+  area: provenance
+  topic: Computed filing and seed history
+  outcome: supported
+  summary: The complete source extraction matches the owner’s explicitly computed
+    Alkaloids/Tryptophan alkaloids classification, Hapalindole alkaloids and Simple
+    indole alkaloids classes, and pinned model version. Source BGC TERPENE/OTHER has
+    a separate provenance. Both seed events retain SEEDED; neither claims scientific
+    sign-off.
+  target_ids:
+  - naturalproductmech:mibig-4505b19edb
+  evidence_ids:
+  - R-LOCAL
+  - bgc-v5-source
+- assessment_id: R-OPTIONAL
+  area: scope
+  topic: Complete mechanism and optional assertions
+  outcome: not_applicable
+  summary: No optional mechanism, activity, molecular target, clinical or related-record
+    claim occurs in the complete owner or resolved view. Their absence alone is not
+    a defect.
+  target_ids:
+  - naturalproductmech:mibig-4505b19edb
+  evidence_ids:
+  - R-LOCAL
+- assessment_id: R-OCCURRENCES
+  area: evidence
+  topic: Claim-specific occurrence attribution
+  outcome: concern
+  summary: Six occurrence triples have separate source scopes. The 2007 Fischerella
+    occurrence and 1995 Hapalosiphon occurrence have direct primary-abstract support.
+    The 2014 H. welwitschii occurrence has partial cited-source support and independent
+    2017 extract evidence. Three additional taxon/reference combinations require full-source
+    verification; evidence for occurrence elsewhere cannot repair their individual
+    attribution.
+  target_ids:
+  - naturalproductmech:mibig-4505b19edb
+  evidence_ids:
+  - R-LOCAL
+  - R-2007
+  - R-1995-ABSTRACT
+  - R-1995-METADATA
+  - R-1994
+  - bgc-primary24677572
+  - bgc-welu3-supplement
+  - R-LOCAL-TAXA
+  - bgc-cited-doi-metadata
+  - R-ACCESS
+  dimensions:
+  - name: occurrence_resolution
+    value: Genus-level Fischerella/Hapalosiphon and species-level H. welwitschii
+    definition: Occurrence observations retain source taxonomic scope independently
+      of strain-specific producer assertions
+    evidence_ids:
+    - R-LOCAL
+    - R-LOCAL-TAXA
+- assessment_id: R-PROVENANCE-URIS
+  area: grounding
+  topic: Occurrence organism provenance identifiers
+  outcome: supported
+  summary: Both genus-level Wikidata identifiers resolve to the recorded NCBI taxa,
+    and the species-level identifier was independently verified. These identifier
+    correspondences do not establish the biological occurrence by themselves.
+  target_ids:
+  - naturalproductmech:mibig-4505b19edb
+  evidence_ids:
+  - R-WIKIDATA-GENERA
+  - R-WIKIDATA-SPECIES
+  - R-LOCAL-TAXA
+- assessment_id: bgc-identifiers-supported
+  area: grounding
+  topic: Exact source congener, source strain and deposited locus
+  outcome: supported
+  summary: The versioned MIBiG source and local source row match the exact C structure.
+    KF811479.1 and taxon 1433842 resolve to UTEX B1830. TERPENE / OTHER preserve source
+    classification and numerical bounds are appropriately omitted.
+  target_ids:
+  - naturalproductmech:mibig-4505b19edb
+  evidence_ids:
+  - bgc-v5-source
+  - bgc-kf811479
+  - bgc-taxon-1433842
+- assessment_id: bgc-c-occurrence
+  area: evidence
+  topic: H. welwitschii occurrence and the 2014 ChemBioChem citation
+  outcome: supported
+  summary: The 2014 paper directly profiles xenic UTEX B1830, but its exact C chromatogram/structure
+    assignment remains uninspected. Independent 2017 primary supplement data explicitly
+    identify C isonitrile in that strain’s extract. Occurrence is supported overall;
+    no adverse finding is warranted solely from limited access to the older figure.
+    Preserve SOURCE_ASSERTION for native producer because these data do not establish
+    axenic native biosynthesis.
+  target_ids:
+  - naturalproductmech:mibig-4505b19edb
+  evidence_ids:
+  - bgc-primary24677572
+  - bgc-welu3-supplement
+  - bgc-primary-bjoc2017
+- assessment_id: bgc-c-link-scope
+  area: evidence
+  topic: Exact-congener formation and exact-strain applicability
+  outcome: concern
+  summary: Exact C synthesis has been demonstrated by WelU3, but its accession belongs
+    to IC-52-3 / KJ767017.1, not the source strain/locus. UTEX B1830 WelO5 consumes
+    C. Together with precursor experiments, those observations support pathway association
+    but do not supply the recorded exact-product formation demonstration. The sole
+    1987 compound citation is also misrouted. Grade adjudication must remain specific
+    to this compound and locus.
+  target_ids:
+  - naturalproductmech:mibig-4505b19edb
+  evidence_ids:
+  - bgc-primary28225144
+  - bgc-welu3-supplement
+  - bgc-welu3-accession
+  - bgc-primary-bjoc2017
+  - bgc-local-routing
+findings:
+- finding_id: R-LOTUS-SCOPE
+  issue_key: lotus-kgwatbykcmcflc-occurrence-reference-scope
+  category: evidence
+  severity: major
+  status: open
+  certainty: provisional
+  title: Several LOTUS occurrence citations need exact organism and compound verification
+  description: The 1994 inspected abstract names H. welwitschii/Westiella, whereas
+    this triple names Fischerella. The 2007 abstract directly reports Fischerella
+    ATCC 43239, whereas this triple names H. welwitschii. The 1987 metadata names
+    H. fontinalis and other compounds, whereas this triple names H. welwitschii and
+    exact C. Full article passages may resolve these differences, so none is declared
+    disproven from an abstract or title alone. Their source support was not established
+    in this review. Exact-compound occurrence supported by other publications does
+    not validate these separate provenance triples.
+  target_ids:
+  - naturalproductmech:mibig-4505b19edb
+  field_paths:
+  - occurrences[1].evidence[0].reference
+  - occurrences[4].evidence[0].reference
+  - occurrences[5].evidence[0].reference
+  evidence_ids:
+  - R-LOCAL
+  - R-2007
+  - R-1995-ABSTRACT
+  - R-1995-METADATA
+  - R-1994
+  - bgc-primary24677572
+  - bgc-welu3-supplement
+  - R-LOCAL-TAXA
+  - bgc-cited-doi-metadata
+  - R-ACCESS
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Exact imported structure-organism-reference triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/lotus_occurrence_exclusions.tsv
+    role: Implemented full-row-pinned exclusions
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated occurrence emission
+  rule_id: '.claude/skills/curate-yaml-record/references/review-checklist.md: Occurrences'
+  native_severity: 'major: potentially unsupported structure-organism-reference triples'
+  normalization_reason: Related occurrence source-scope concerns are grouped once;
+    each affected triple remains enumerated and provisional until full-text adjudication.
+- finding_id: bgc-c-claim-scope
+  issue_key: mibig-bgc0000668-compound1-link-evidence
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Exact C locus demonstration inherits unspecific methods and a compound reference
+  description: The record assigns CLUSTER_DEMONSTRATED to exact 12-epi-hapalindole
+    C from UTEX B1830 / KF811479.1 while citing only compound-level DOI:10.1021/jo00226a009.
+    The retrieved exact C formation experiment uses WelU3 AIH14742.1 from a different
+    strain and accession, IC-52-3 / KJ767017.1. The inspected UTEX experiments instead
+    form precursors or convert C to its chlorinated derivative. Correct the reference
+    routing and adjudicate the exact-strain applicability of the strong grade; substituting
+    the 2017 cyclase citation alone would transfer evidence between strains. This
+    does not deny native-culture occurrence, plausible pathway association, or the
+    possibility of uninspected later exact-locus proof.
+  target_ids:
+  - naturalproductmech:mibig-4505b19edb
+  field_paths:
+  - producer_organisms[0].evidence
+  - biosynthetic_gene_clusters[0].evidence
+  - biosynthetic_gene_clusters[0].locus_evidence_methods
+  - biosynthetic_gene_clusters[0].link_evidence_basis
+  evidence_ids:
+  - bgc-v5-source
+  - bgc-cited-doi-metadata
+  - bgc-primary24677572
+  - bgc-welu3-supplement
+  - bgc-welu3-accession
+  - bgc-primary-bjoc2017
+  - bgc-local-routing
+  rule_id: 'review-yaml-record Evidence Rules: claim-specific strain/congener scope;
+    docs/HARMONIZATION.md: locus makes compound; ClusterLinkEvidenceEnum'
+  native_severity: 'major: experimental claim scope and sole supporting reference
+    require correction'
+  normalization_reason: One combined evidence-routing and exact-strain applicability
+    finding. Citation misrouting and the distinct WelU3 locus are confirmed; lack
+    of UTEX exact-product proof is bounded to inspected sources.
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: source-pinned producer and locus citation correction
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: compound-specific locus-method applicability correction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: reference selection and entry-method propagation
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: source row BGC0000668:1
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: generated claims, references and grades
+actions:
+- action_id: R-ADJUDICATE-LOTUS
+  description: Inspect full source passages for each listed triple, distinguishing
+    new isolation, historical occurrence discussion and current taxonomy. If a triple
+    is unsupported, withhold only its exact source row through the implemented pinned
+    exclusion table. Retain supported observations; do not replace citations or taxa
+    by inference.
+  finding_ids:
+  - R-LOTUS-SCOPE
+  target_ids:
+  - naturalproductmech:mibig-4505b19edb
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Exact imported structure-organism-reference triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/lotus_occurrence_exclusions.tsv
+    role: Implemented full-row-pinned exclusions
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated occurrence emission
+  generator: scripts/seed_from_sources.py through source-pinned correction and guarded
+    regeneration
+  acceptance_checks:
+  - For KGWATBYKCMCFLC-CGRMTHRGSA-N, document exact support or a full-row-pinned exclusion
+    for NCBITaxon:1190 / literal DOI:10.1021/JA00101A015, NCBITaxon:162986 / literal
+    DOI:10.1016/J.PHYTOCHEM.2007.06.024, NCBITaxon:162986 / literal DOI:10.1021/JO00226A009.
+  - Inspect just seed-canary naturalproductmech:mibig-4505b19edb output, then documented
+    seeding; run just validate-strict data/natural_products/alkaloids/12-epi-hapalindole-c-isonitrile.yaml,
+    just verify-reproduction, just verify-corpus --summary and just qc.
+- action_id: reconcile-c-strain-specific-link
+  description: Use source key BGC0000668:1 and exact source-row context pins in the
+    implemented correction tables. Route producer and locus references separately.
+    Before retaining CLUSTER_DEMONSTRATED, identify an experiment in which KF811479.1
+    or its encoded enzymes form this exact C structure or establish native locus necessity.
+    Do not count IC-52-3 WelU3 formation or UTEX WelO5 consumption as that result.
+    If no applicable demonstration is obtained, qualify or withdraw the inherited
+    methods through curation/mibig_locus_evidence_overrides.tsv, retaining explicit
+    source association and native SOURCE_ASSERTION. Preserve occurrence evidence;
+    do not replace strain/accession solely to fit the retrieved experiment.
+  finding_ids:
+  - bgc-c-claim-scope
+  target_ids:
+  - naturalproductmech:mibig-4505b19edb
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: source-pinned producer and locus citation correction
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: compound-specific locus-method applicability correction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: reference selection and entry-method propagation
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: source row BGC0000668:1
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: generated claims, references and grades
+  generator: scripts/seed_from_sources.py through documented source-pinned corrections
+    and guarded regeneration
+  acceptance_checks:
+  - Every retained strong locus claim has an exact compound, strain, accession and
+    experimental-product bridge; substrate turnover is distinguished from formation.
+  - Producer SOURCE_ASSERTION remains distinct from locus grading; IC-52-3 results
+    are not inherited by UTEX B1830.
+  - A citation-only correction does not silently certify the grade. Preserve the original
+    database citation context and explicitly document remaining source-access limitations.
+  - Use just seed-canary naturalproductmech:mibig-4505b19edb, inspect output, then
+    documented seeding and just validate-strict data/natural_products/alkaloids/12-epi-hapalindole-c-isonitrile.yaml,
+    just verify-reproduction, just verify-corpus --summary and just qc.
+limitations:
+- CyanoMetDB1547 contains a source-level conflict between complete SMILES/IUPAC stereochemistry
+  and its underassigned stored InChI/key. Xref equivalence is supported specifically
+  by the complete SMILES; no automatic correction of the frozen source or new occurrence
+  claim is proposed here.
+- Primary configuration support comes from inspected full text and an explicit atom
+  mapping. Spectra, optical rotations, crystallography and supplementary experimental
+  datasets were not independently reinterpreted.
+- The current ChEBI check covers the exact candidateCHEBI:222284 plus the complete
+  pinned eligible inventory, not an exhaustive search across every current ontology
+  entity.
+- The target has no asserted synonym to audit. Omission of an optional short synonym
+  alone is not a review finding.
+- The primary 1995 abstract was inspected on a publication-page mirror, with official
+  DOI metadata confirming its identity. Full original methods were not inspected.
+- Full texts needed to adjudicate the listed LOTUS taxon/reference differences were
+  not available through attempted free routes; findings remain provisional.
+- DOI:10.1021/jo00226a009 remains inspected at official metadata level; no whole-article
+  absence claim is made from its title.
+- The 2014 ChemBioChem primary main text and official XML were inspected; its supplementary
+  PDF and exact structure image remained unavailable through attempted free endpoints.
+  Its exact chromatographic C assignment was not independently re-read.
+- The 2017 RSC main paper was inspected through its primary abstract; its full supplement
+  had previously been inspected at the retained actual timestamp. Later supplement
+  requests returned 404 and main PDF returned 403.
+- A bounded search for WelU1/WelU2/WelU3 and exact C biosynthesis found other-strain
+  cyclases and related-congener results. This does not establish exhaustive absence
+  of a later UTEX B1830 formation experiment.
+- The configured full identifier-label gate accepts 499 warning-level taxon-label
+  mismatches, 35 explicit exceptions and 4,722 no-adapter pairs across the corpus;
+  its exit 0 is not independent verification of every identifier or of this record's
+  scientific claims.
+- The quality suite skips the optional sibling AntibioticMech checkout comparison
+  because the isolated clone has no sibling checkout, and skips three command-frontmatter
+  cases because their parameter sets are empty. Pinned-hash and network governance
+  checks still ran.
+- Shared native gates assess deterministic corpus consistency and configured invariants.
+  They do not establish biological production, stereochemical specificity, evidence
+  adequacy or literature-level claim support.
+notes:
+- No scientific owner, source inventory, component, curation status or seed history
+  was edited. All corrective actions are proposed work only.
+- Native producer evidence remains distinct from occurrence and enzyme-locus evidence.
+  A saved partial scientific review does not confer native REVIEWED status.
+tags:
+- path-order-campaign
+- batch-001
+- hapalindole
+```
