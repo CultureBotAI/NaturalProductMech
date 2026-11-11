@@ -1,0 +1,2177 @@
+# Scientific review of iso-migrastatin
+
+- Review: 20261022T044054Z-iso-migrastatin
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-22T04:30:16.628149Z
+- Finished UTC: 2026-10-22T04:40:54.381908Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+Iso-migrastatin has positive native necessity and introduced-locus sufficiency, with qualified native-protein and MITE reaction-model evidence. Its retained graph leaves C11 unspecified although two literal identifiers specify R and a later published compound-specific assignment supplies 11R. The relative X-ray basis is a personal communication, so the experimental bridge is not independently reanalysed. Correct identifier and structure precision through tested consumers while preserving model limitations and deferring a replacement decision.
+
+## Scope And Provenance
+
+One complete generated owner and any referenced components, assessed claim by claim for exact identity, provenance, origin, producer and occurrence scope, biosynthesis, classification, optional content and audit history.
+
+Selection: Campaign record 261, batch 027, selected in path order from the fresh-main authoritative validated catalogue and the separately validated targets in earlier batch commits (publication tracked separately). At selection, 320 of 3116 current records had campaign coverage and 2796 remained. The population search included ignored files. Exactly one target is assessed here.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 71a28cf520dc96a7107b00d87703ba1e59acc02c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-e9562df516 | data/natural_products/alkaloids/iso-migrastatin.yaml | generated | iso-migrastatin |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Closed-schema target validation | passed | True | naturalproductmech:mibig-e9562df516 | The documented target strict validator completed; scientific support is assessed separately. |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-e9562df516 | All3116 corpus records are filed exactly where PATHS.tsv pins them. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-e9562df516 | All3116 records reproduce byte-for-byte from data/raw/. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-e9562df516 | The canonical review-queue command completed with actual exit0 on the fresh main base; exact output, warnings and skips remain in the pinned transcript. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-e9562df516 | Configured identifier-label gate passed with13449canonical matches,646synonym matches and35configured exceptions. |
+| Full repository quality gate on the fresh main baseline | passed | True | naturalproductmech:mibig-e9562df516 | Actual canonical just qc retry002 terminal0. All gates passed: lint;22 governed artifacts; documentation;15 inventory provenance;44 source queue entries;999 tests passed,4 skipped,2 dependency warnings;strict3116 zeroerrors;generated site;3116 byte-identical reproduction;PATHS integrity;corpus report. |
+| Complete owner and seven-set fidelity | passed | True | naturalproductmech:mibig-e9562df516 | All ten successful official intakes and post-intake root reads precede authoring. Every complete owner and seven-source-set join matches the prepared bytes. The six iso-migrastatin and five K-252a inline graphs plus other present fields are explicitly in scope; they are not validated merely by this inventory. |
+| local | passed | True | naturalproductmech:mibig-e9562df516 | The complete actual owner and all seven raw source sets match the frozen preparation and successful intake. This is source fidelity, not proof of every scientific assertion. |
+| native and introduced | passed | True | naturalproductmech:mibig-e9562df516 | Exact native necessity and introduced-locus sufficiency have independent primary support at the named product scope. |
+| graph boundaries | passed | True | naturalproductmech:mibig-e9562df516 | The six existing reference/model graphs retain native sequence, pathway-level experiment and database-model distinctions. |
+| Stored chemical representation and complete source row | passed | True | naturalproductmech:mibig-e9562df516 | Fresh intake derivation agrees with the stored graph; the source selector, full row and prepared snapshot were independently rechecked. |
+| Exact literal chemical authority scope | failed | True | naturalproductmech:mibig-e9562df516 | Every asserted literal is preserved and independently compared; conflicting precision and sample graphs are explicit. |
+| Exact named original structure support | failed | True | naturalproductmech:mibig-e9562df516 | The retained graph and literal NPA013569 leave C11 unspecified, whereas literal PubChem15940571 and ChEMBL1221912 specify C11R. Independent original 2006/2009 depiction mapping gives C8S/C9S/C10S/C11R/C14S and three E bonds. Original 2005 SI ja053118u explicitly supplies the later compound-specific 11R assignment using relative X-ray and an earlier absolute bridge; the relative crystal result is cited as personal communication. The six exact MITE substrate/product graphs were independently compared: none equals the retained whole graph, and no omitted alkene geometry is supplied from the owner. |
+| Original source stereochemical precision and assignment scope | unavailable | True | naturalproductmech:mibig-e9562df516 | The published later C11 assignment is positive, but original private crystal data and the cited absolute-bridge experiment were not independently reanalysed. No graph replacement is selected. The reused BGC0000177.5 bytes are pinned; the original successful HTTP receipt was not located in the ignored-inclusive scratch search. A new access instant is not invented. MITE model identity and missing geometry are separate from experimental enzyme specificity, preferred tailoring order and construct equivalence. |
+
+## Scientific And Domain Assessments
+
+### Complete history and native status
+
+provenance: supported. Targets: naturalproductmech:mibig-e9562df516.
+
+Native status remains SEEDED and all 3 history actions retain their exact order: ['SEEDED_FROM_SOURCES', 'SEEDED_FROM_SOURCES', 'RECORD_CURATED']. Prior curated/protein-reference edits do not replace claim-level scientific assessment.
+
+### Present optional assertions
+
+completeness: supported. Targets: naturalproductmech:mibig-e9562df516.
+
+Six inline graphs comprise three native protein reference graphs and three MITE reaction-model graphs. Their exact substrates, proteins, model qualifications and primary evidence remain in scope. Native reference sequence equality does not establish measured expression, assay constructs or purified enzyme activity. Context inventory equality is not scientific endorsement.
+
+### Exact computed classification provenance
+
+representation: supported. Targets: naturalproductmech:mibig-e9562df516.
+
+Exact-key NPClassifier version npclassifier.gnps2.org@2026-09-07 reproduces filing, superclass/class and glycoside fields. Computed classification is not independent natural-origin or mechanistic proof; any accepted identity correction requires effective-key reclassification.
+
+### Taxonomic identifiers versus experimental stocks
+
+provenance: supported. Targets: naturalproductmech:mibig-e9562df516.
+
+Literal current identifier context: 684832: Streptomyces platensis subsp. rosaceus (subspecies); 58346: Streptomyces platensis (species). Identifier agreement does not prove the cited experimental stock, exact congener, occurrence or production; primary source applicability is assessed separately.
+
+### Literal organism routing
+
+grounding: supported. Targets: naturalproductmech:mibig-e9562df516.
+
+The relevant literal P225/P685 routes match. Taxonomic spelling changes are preserved separately from experimental stock and exact congener applicability.
+
+### Native producer transcriptomic applicability
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-e9562df516.
+
+No exact named native producer stock is represented in the complete 20-organism/28-dataset catalogue. E. coli, Streptomyces coelicolor and S. albidoflavus entries are broader contexts; they do not establish exact introduced constructs, production-linked expression or module membership.
+
+### biosynthesis_origin; producer_organisms[0]
+
+scope: supported. Targets: naturalproductmech:mibig-e9562df516.
+
+Exact native iso-migrastatin isolation from NRRL18993 and native genetic necessity are supported. The imported 2009 citation reports iso-migrastatin loss after native mgsF/mgsH disruption and mgsH rescue; its separate no-resin panels track downstream products.
+
+### biosynthetic_gene_clusters[0].locus_evidence_methods
+
+evidence: supported. Targets: naturalproductmech:mibig-e9562df516.
+
+The native knockout and cluster sufficiency claims have distinct positive experiments. The 2008 primary directly identifies iso-migrastatin in five introduced Streptomyces hosts by orthogonal chemical comparisons. This supports Heterologous expression without transferring a native knockout into those hosts.
+
+### occurrences[0]
+
+evidence: supported. Targets: naturalproductmech:mibig-e9562df516.
+
+The exact 2005 species occurrence has native NRRL18993 iso-migrastatin 4 isolation support. Chemical shunt products and later changed compound numbering remain separate.
+
+### causal_graphs: three native reference graphs
+
+evidence: supported. Targets: naturalproductmech:mibig-e9562df516.
+
+All three native reference proteins are grounded by exact complete CDS-aware translation, deposited qualifiers, GenPept and current UniProt equality. MgsI/J/K are 338/281/403 amino acids, with MgsK GTG initiation interpreted as bacterial initiator Met. Unreviewed sequence annotation is not recombinant-construct, cofactor or enzyme-activity evidence.
+
+### causal_graphs: three MITE reaction-model graphs
+
+evidence: supported. Targets: naturalproductmech:mibig-e9562df516.
+
+The exact pinned MITE models cite native knockout evidence. The 2013 primary supports pathway-level MgsI/J/K roles, explicitly leaves ordering speculative and reports instability preventing in-vitro confirmation. Existing owner qualifications correctly prevent reading model substrates, incomplete stereochemistry or cofactor annotations as directly measured isolated-enzyme conversions. No transfer to BGC0000083 is made.
+
+### chemical_structure: primary-source assignment scope
+
+identity: supported. Targets: naturalproductmech:mibig-e9562df516.
+
+The early 2005 article leaves C11 unresolved, whereas the later 2005 supplement explicitly assigns iso-migrastatin 11R using prior absolute evidence and relative X-ray information. The relative X-ray is cited as personal communication. That published assignment is positive; this read is not independent diffraction refinement or a selected graph replacement.
+
+### Stored representation and source-concept provenance
+
+identity: supported. Targets: naturalproductmech:mibig-e9562df516.
+
+The complete source row BGC0000177:1 and source-concept hash reproduce this stored representation; this does not establish that the upstream compound label is correct. Formula, charge, Standard and fixed-H distinctions are independently recorded. Primary support and any conflicting exact xref are assessed separately.
+
+### Exact authority eligibility and source representation
+
+provenance: supported. Targets: naturalproductmech:mibig-e9562df516.
+
+No exact eligible row exists in the committed ChEBI projection for this owner. Current bounded name/key searches do not justify a different congener or a two-star grounding.
+
+### Exact literal chemical identifier scope
+
+representation: concern. Targets: naturalproductmech:mibig-e9562df516.
+
+Measured exact-literal comparisons: [{"comparison": {"same_charge": true, "same_fixed_h": true, "same_formula": true, "same_full_standard_key": true, "same_standard_inchi": true, "same_stereo_removed_standard": true}, "identifier": "npatlas:NPA013569", "returned_identifier": "NPA013569", "scope": "Exact retained authority response; default strings, fixed-H and stereo precision remain separate"}, {"comparison": {"same_charge": true, "same_fixed_h": false, "same_formula": true, "same_full_standard_key": false, "same_standard_inchi": false, "same_stereo_removed_standard": true}, "identifier": "pubchem:15940571", "returned_identifier": null, "scope": "Exact retained authority response; default strings, fixed-H and stereo precision remain separate"}, {"comparison": {"same_charge": true, "same_fixed_h": false, "same_formula": true, "same_full_standard_key": false, "same_standard_inchi": false, "same_stereo_removed_standard": true}, "identifier": "chembl:CHEMBL1221912", "returned_identifier": "CHEMBL1221912", "scope": "Exact retained authority response; default strings, fixed-H and stereo precision remain separate"}]. Standard identity does not erase fixed-H or stereo differences; no authority graph is automatically adopted.
+
+### ChEBI full-key eligibility and literal serialization
+
+grounding: supported. Targets: naturalproductmech:mibig-e9562df516.
+
+[{"eligible": false, "id": 207272, "literal_default_comparison": {"same_charge": true, "same_fixed_h": true, "same_formula": true, "same_full_standard_key": true, "same_standard_inchi": true, "same_stereo_removed_standard": true}, "literal_default_parse": true, "mol_comparison": {"same_charge": true, "same_fixed_h": true, "same_formula": true, "same_full_standard_key": true, "same_standard_inchi": true, "same_stereo_removed_standard": true}, "name": "Iso-migrastatin", "stars": 2}]. No exact eligible committed three-star join exists for this owner. Two-star candidates and different stereo keys are not adopted. Literal MOL/default SMILES and reconstruction from stated Standard InChI are separate: a generated tautomer is not a source default-form defect.
+
+### Literal reaction-model chemical scope
+
+scope: supported. Targets: naturalproductmech:mibig-e9562df516.
+
+The six exact MITE source strings and their computed keys agree with the retained graph notes. None is exact-equal to the owner, and products retain unspecified alkene constraints. Native genetics and sequence support do not establish purified individual-step substrate specificity.
+
+### Primary identity and experimental precision
+
+scope: concern. Targets: naturalproductmech:mibig-e9562df516.
+
+The retained graph and literal NPA013569 leave C11 unspecified, whereas literal PubChem15940571 and ChEMBL1221912 specify C11R. Independent original 2006/2009 depiction mapping gives C8S/C9S/C10S/C11R/C14S and three E bonds. Original 2005 SI ja053118u explicitly supplies the later compound-specific 11R assignment using relative X-ray and an earlier absolute bridge; the relative crystal result is cited as personal communication. The six exact MITE substrate/product graphs were independently compared: none equals the retained whole graph, and no omitted alkene geometry is supplied from the owner.
+
+## Findings
+
+### C261-F-XREF-PRECISION: Two literal identifiers assert a more specific C11 stereograph
+
+major / open / confirmed; issue key: mibig-isomigrastatin-literal-c11-precision.
+
+PubChem15940571 and ChEMBL1221912 specify C11R while this owner and NPA013569 leave that centre unspecified. Same formula and constitution do not establish exact structural equivalence.
+
+### C261-F-C11-PRECISION: The retained iso-migrastatin graph omits the later published C11 assignment
+
+major / open / confirmed; issue key: mibig-isomigrastatin-published-c11-precision.
+
+The owner leaves C11 unspecified despite the inspected later 2005 SI compound-specific 11R assignment and matching 2006/2009 depictions. The relative crystal result was cited as personal communication; no new absolute remeasurement is claimed.
+
+## Recommended Actions And Acceptance Checks
+
+### C261-ACTION-XREF-PRECISION
+
+Withhold or explicitly qualify only the two mismatching literal equivalences. The current strict loader can consume the PubChem decision but rejects ChEMBL: implement and test an exact ChEMBL exclusion/qualification contract before proposing that row. Preserve immutable raw assertions and NPA013569. Reconcile any later C11 structure correction explicitly, because the current seeder rejects stacked exclusions after structure correction. Preserve exact source/version/full-row guards [{"entry_version": "5", "expected_source_row_sha256": "e198faa11f192148450018cf70e3f015aecb25de85462763ea6c7509b278f424", "full_original_row": {"bgc_classes": "PKS", "bgc_subclasses": "Type I", "cluster_link_evidence_basis": "CLUSTER_DEMONSTRATED", "compound_classes": "", "compound_index": "1", "compound_name": "iso-migrastatin", "database_ids": "npatlas:NPA013569&#124;pubchem:15940571&#124;chembl:CHEMBL1221912", "entry_completeness": "complete", "entry_quality": "questionable", "entry_status": "active", "entry_version": "5", "genome_accession": "GQ274953.1", "locus_evidence_methods": "Knock-out studies&#124;Heterologous expression", "locus_from": "", "locus_to": "", "mibig_accession": "BGC0000177", "primary_reference": "PMID:19726666", "producer_evidence_basis": "BGC_CHARACTERIZED", "reference_basis": "ENTRY", "smiles": "CO[C@H]1\\C=C\\CC\\C=C\\C(=O)OC([C@@H](C)[C@@H]1O)C(\\C)=C\\[C@H](C)C(=O)CCCC1CC(=O)NC(=O)C1", "standard_inchi": "InChI=1S/C27H39NO7/c1-17(21(29)11-9-10-20-15-23(30)28-24(31)16-20)14-18(2)27-19(3)26(33)22(34-4)12-7-5-6-8-13-25(32)35-27/h7-8,12-14,17,19-20,22,26-27,33H,5-6,9-11,15-16H2,1-4H3,(H,28,30,31)/b12-7+,13-8+,18-14+/t17-,19-,22-,26-,27?/m0/s1", "standard_inchi_key": "TYTDEHCAAKKYOG-ZTTCWHDESA-N", "stereo_complete": "false", "taxon_id": "NCBITaxon:684832", "taxon_label": "Streptomyces platensis subsp. rosaceus"}, "source_id": "BGC0000177:1"}]. No action has been executed.
+
+- Exact selector/version and every field of the frozen source row are checked; stale or duplicate decisions fail closed.
+- No biological producer, occurrence, assay, protein construct or native status is silently transferred by name or chemical resemblance.
+- Existing correction/exclusion/biological overlays are tested together rather than presumed composable.
+- An authorized curator performs documented canary, reproduction and required native gates after an implemented decision.
+- ChEMBL handling is explicitly implemented and tested; unsupported literal syntax is not inserted into the current TSV.
+
+### C261-ACTION-C11-PRECISION
+
+Reconcile the published C11 assignment with the exact natural-product identity and retain the private-crystal/absolute-bridge limitations. If the complete graph is selected, implement a supported exact target/precision contract before changing identity; the measured fully specified authority is not an automatically eligible exact committed target. Re-audit all six curated Mgs graphs and their distinct MITE intermediate/product models, exact source-key joins and xrefs. Do not fill omitted model alkene geometry from the owner or transfer enzyme specificity from metadata. Preserve exact source/version/full-row guards [{"entry_version": "5", "expected_source_row_sha256": "e198faa11f192148450018cf70e3f015aecb25de85462763ea6c7509b278f424", "full_original_row": {"bgc_classes": "PKS", "bgc_subclasses": "Type I", "cluster_link_evidence_basis": "CLUSTER_DEMONSTRATED", "compound_classes": "", "compound_index": "1", "compound_name": "iso-migrastatin", "database_ids": "npatlas:NPA013569&#124;pubchem:15940571&#124;chembl:CHEMBL1221912", "entry_completeness": "complete", "entry_quality": "questionable", "entry_status": "active", "entry_version": "5", "genome_accession": "GQ274953.1", "locus_evidence_methods": "Knock-out studies&#124;Heterologous expression", "locus_from": "", "locus_to": "", "mibig_accession": "BGC0000177", "primary_reference": "PMID:19726666", "producer_evidence_basis": "BGC_CHARACTERIZED", "reference_basis": "ENTRY", "smiles": "CO[C@H]1\\C=C\\CC\\C=C\\C(=O)OC([C@@H](C)[C@@H]1O)C(\\C)=C\\[C@H](C)C(=O)CCCC1CC(=O)NC(=O)C1", "standard_inchi": "InChI=1S/C27H39NO7/c1-17(21(29)11-9-10-20-15-23(30)28-24(31)16-20)14-18(2)27-19(3)26(33)22(34-4)12-7-5-6-8-13-25(32)35-27/h7-8,12-14,17,19-20,22,26-27,33H,5-6,9-11,15-16H2,1-4H3,(H,28,30,31)/b12-7+,13-8+,18-14+/t17-,19-,22-,26-,27?/m0/s1", "standard_inchi_key": "TYTDEHCAAKKYOG-ZTTCWHDESA-N", "stereo_complete": "false", "taxon_id": "NCBITaxon:684832", "taxon_label": "Streptomyces platensis subsp. rosaceus"}, "source_id": "BGC0000177:1"}]. No action has been executed.
+
+- Exact selector/version and every field of the frozen source row are checked; stale or duplicate decisions fail closed.
+- No biological producer, occurrence, assay, protein construct or native status is silently transferred by name or chemical resemblance.
+- Existing correction/exclusion/biological overlays are tested together rather than presumed composable.
+- An authorized curator performs documented canary, reproduction and required native gates after an implemented decision.
+- Published assignment, underlying inaccessible crystal data and original absolute bridge are distinguished.
+- Six existing graph models remain distinct; absent E constraints are not invented.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| R261-OWNER | data/natural_products/alkaloids/iso-migrastatin.yaml; Complete actual owner, all optional fields and history events | supports | Root read the complete post-intake owner: 1 occurrence, 1 producer and 1 locus assertions. Present optional fields: causal_graphs. No external component is present. |
+| R261-LOCAL | /private/tmp/npm-review-work/261/local-sources.json; Complete resolved owner and all six captured source sets; seventh set independently compared | context_only | Exact captured rows and separately parsed PubChem rows match frozen preparation. Inventory equality does not establish experimental support. |
+| R261-PUBCHEM-PREP | data/raw/pubchem_bioassay.tsv; Complete exact-key retained rows and no-data sentinels | context_only | This owner has 0 retained rows and 0 written observations. Across the cohort there are 25 written observations, 90 retained omitted rows and two no-data sentinels. Current-only summary rows are separate. |
+| R261-Q26291839 | https://www.wikidata.org/wiki/Q26291839; Exact retained ten-entity response: English label and P225/P685 for this entity | context_only | Literal organism name/taxon routing agrees; this is not experimental occurrence, stock equivalence or production evidence. |
+| R261-TAXON-CONTEXT | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;retmode=xml&amp;id=1883,1956,1988,2013,28044,41900,58346,66424,66429,83682,285557,310350,341663,388913,568869,684832,1283841,1463851; Relevant TaxId/ScientificName/rank/parent and OtherNames in18-record response | context_only | Literal current identifier context: 684832: Streptomyces platensis subsp. rosaceus (subspecies); 58346: Streptomyces platensis (species). Identifier agreement does not prove the cited experimental stock, exact congener, occurrence or production; primary source applicability is assessed separately. |
+| R261-IDENTIFIER-READ | /private/tmp/npm-review-work/shared-next-batch027/root-identifier-context-read-001.json; counts and17 literal organism routes across10 Wikidata entities and18 taxa | context_only | Root read original identifier values and naming context. These are not experimental occurrence, production or stock-equivalence proofs. |
+| R261-IMODULON | https://imodulondb.org/api/datasets; Complete 20-organism/28-dataset official catalogue | context_only | No exact named native producer stock is represented in the complete 20-organism/28-dataset catalogue. E. coli, Streptomyces coelicolor and S. albidoflavus entries are broader contexts; they do not establish exact introduced constructs, production-linked expression or module membership. |
+| S261-E-LOCAL | /private/tmp/npm-review-work/261/local-sources.json; Complete resolved owner and captured rows; exact seven-set equality checked | context_only | Complete actual owner including any inline graph/pathway, six captured source sets and separately compared seventh PubChem set match the prepared complete reads. |
+| S261-E-CONSUMERS | /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py; LOTUS exclusion, producer/locus emission, method overrides and correction order | context_only | Static inspection covers exact LOTUS exclusions, source method grading and producer/reference qualification order. Exact consumers have their own evidence snapshots. |
+| S261-E-SCHEMA | /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml; ProducerEvidenceBasisEnum and ClusterLinkEvidenceEnum; conf/producer_evidence.tsv and grading.py also read and pinned | context_only | Producer tiers concern evidence in the named organism; cloned-locus experiments are a distinct cluster question. Empty methods and a source assertion do not independently assert native knockout or exact pure-enzyme proof. |
+| S261-E-SEARCH | /private/tmp/npm-review-work/261/science-search.json; Exact read scope | context_only | Exact current curated-decision search is retained. Its scope is the curation tree; it does not establish absence of experimental evidence or all possible consumers. |
+| S261-E-CURRENT-MGS | https://mibig.secondarymetabolites.org/repository/BGC0000177.5/; Exact versioned compound, taxonomy, locus methods/bounds and source reference fields | context_only | Current annotation agrees with the literal imported target context; database methods and labels remain distinct from primary host/compound evidence. The original remote access time for this reused payload was not located; its time here is explicit local reinspection only. |
+| S261-E-GRADE-MAP | /private/tmp/npm-record-reviews-20261021/conf/producer_evidence.tsv; Complete method mapping, especially native Knock-out studies versus cluster-only Heterologous expression | context_only | Native organism necessity is distinct from loss in an introduced host. Heterologous expression supports the cluster while retaining a source-assertion producer grade. |
+| S261-E-GUARDS | /private/tmp/npm-review-work/shared-next-batch027/bgc-science/source-row-guards.json; All ten complete owners and seven raw source sets, including full-row digests | context_only | Every proposed route is constrained by immutable source rows and exact owner bytes. No raw correction is executed by this helper. |
+| S261-E-LIMITS | /private/tmp/npm-review-work/shared-next-batch027/bgc-science/source-notes.json; All five source narratives and explicit source/read limitations | context_only | Positive exact endpoints, unresolved source gaps and chemical identity dependencies remain separate. Missing full-paper access does not establish universal absence of production. |
+| S261-E-MGS-GB | https://www.ncbi.nlm.nih.gov/nuccore/GQ274953.1; Header/source and complete MgsI/J/K CDS qualifiers; accession length 53336 | partial | Deposited native NRRL18993 references are matched to the exact three current UniProt and GenPept sequences. This does not prove tags, historical alleles, cofactors or experimental construct equivalence. |
+| S261-E-MGS-PROTEINS | https://www.ncbi.nlm.nih.gov/nuccore/GQ274953.1; entries for ACY01394.1/D0U2E7, ACY01395.1/D0U2E8, ACY01396.1/D0U2E9 | context_only | CDS-aware translation, deposited qualifiers, GenPept and current UniProt match exactly at 338/281/403 amino acids. MgsK uses a bacterial GTG initiation codon interpreted as Met. Current unreviewed UniProt entries remain sequence grounding, not independent activity evidence. |
+| S261-E-MGS05-LATER-SI | DOI:10.1021/ja053118u.s001; Printed S4–S5 Stereochemistry determination and printed S25 references 1–3; original S4/S5 pixels | partial | The later primary supplement explicitly completes iso-migrastatin 10 as 8S,9S,10S,11R,14S by combining prior chemical/absolute evidence with relative X-ray information. The relative X-ray reference 3 is explicitly a personal communication, not independently inspected diffraction data. Dorrigocin B3 is separately assigned 11R. |
+| S261-E-MGS05-META | https://api.figshare.com/v2/articles/3300907; Original article abstract and official SI metadata for ja043808i | partial | The early article explicitly leaves C11 of iso-migrastatin 4 and dorrigocin B3 unassigned. This historical limit is distinguished from the later compound-specific assignment. |
+| S261-E-MGS05-SI | https://api.figshare.com/v2/file/download/5138641; Original seven-page SI, S1–S4: native NRRL18993 isolation, iso-migrastatin 4 physicochemical identification and aqueous rearrangement | partial | The named native product 4 is isolated from NRRL18993 and characterized separately from dorrigocins. Its aqueous conversion is chemical and does not prove an enzyme catalyses the final rearrangement. |
+| S261-E-MGS08-MAIN | DOI:10.1016/j.bmc.2008.10.074; PMID:19010685; Complete scientific body/Methods and figure captions in PMC3075207 | partial | The native NRRL18993 locus produces exact iso-migrastatin in five introduced Streptomyces hosts, with retention/UV/co-injection/LC-MS and purified-product NMR support. It is direct heterologous iso-migrastatin evidence, not a native knockout in those hosts or a purified final-product enzyme assay. |
+| S261-E-MGS09-MAIN | DOI:10.1074/jbc.M109.046805; PMID:19726666; Methods, Table 1 and native gene-inactivation Results; Figure 3A iso-migrastatin endpoint versus Figure 3B dorrigocin/migrastatin endpoints | partial | Native mgsF and mgsH disruption loses iso-migrastatin, with mgsH rescue. The separate no-resin A/C/D and boundary-gene panels track downstream metabolites. MgsI/J/K functions in this 2009 paper remain proposed from sequence/pathway reasoning, rather than direct purified assays. |
+| S261-E-MGS13-MAIN | DOI:10.1021/ja4002635; PMID:23394593; PMC3582021 scientific Results/Discussion, native single/combinatorial mutants and explicit in-vitro/ordering limitations | partial | Native mutant profiles support MgsI enoyl reduction, MgsJ O-methylation and MgsK hydroxylation at pathway level. The paper explicitly describes proposed ordering as speculative and instability as preventing in-vitro confirmation. Existing qualified reference/model graphs must not become exact purified conversions, fixed pathway order or measured cofactors. |
+| S261-E-MGS13-SI | DOI:10.1021/ja4002635.s001; Printed S1 strain table; S3 FigureS1; S4 FigureS2; S5 FigureS3; S6–S8 compound 11 characterization | partial | The supplement supplies native NRRL18993 mutant identities and authentic-standard/MS comparison, separate from the model reactions in MITE. FigureS3 uses iso-migrastatin 1 and numbered intermediates 10–17; no purified MgsI/J/K conversion is demonstrated. |
+| S261-E-MITE-326 | https://raw.githubusercontent.com/mite-standard/mite_data/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000326.json; Version 1 exact enzyme/reaction/evidence fields at pinned commit | context_only | The curated MgsK model cites native knockout evidence from ja4002635. Literal reaction examples and cofactor annotations are database models and do not establish direct experimental substrate specificity or a whole native pathway order. |
+| S261-E-MITE-327 | https://raw.githubusercontent.com/mite-standard/mite_data/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000327.json; Version 1 exact enzyme/reaction/evidence fields at pinned commit | context_only | The curated MgsI model cites native knockout evidence from ja4002635. Literal reaction examples and cofactor annotations are database models and do not establish direct experimental substrate specificity or a whole native pathway order. |
+| S261-E-MITE-328 | https://raw.githubusercontent.com/mite-standard/mite_data/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000328.json; Version 1 exact enzyme/reaction/evidence fields at pinned commit | context_only | The curated MgsJ model cites native knockout evidence from ja4002635. Literal reaction examples and cofactor annotations are database models and do not establish direct experimental substrate specificity or a whole native pathway order. |
+| S261-E-OCC-LEDGER | /private/tmp/npm-review-work/shared-next-batch027/bgc-science/occurrence-ledger.json; All six written first-five occurrence rows, literal taxon/key/DOI and full-row hashes | context_only | Each occurrence is assessed at exact compound, citation and taxon scope; valid 2010 izumiphenazine C and native iso-migrastatin evidence are not discarded with another citation concern. |
+| S261-E-PROTEIN-PEER | /private/tmp/npm-review-work/shared-next-batch027/bgc-science/native-checks-three-protein-static-peer-001.json; Three native CDS/current-reference exact sequence comparison static peer | context_only | The independent peer checks actual CDS bounds, codon interpretation and immutable source contracts without rerunning the numerical translation or inferring experimental constructs. |
+| S261-E-UP-D0U2E7 | https://rest.uniprot.org/uniprotkb/D0U2E7.json; entryAudit, organism, sequence, EMBL cross-reference and evidence-bearing functional annotations | context_only | Current native reference sequence agrees with the deposited CDS; unreviewed similarity annotations are kept separate from primary native mutant evidence. |
+| S261-E-UP-D0U2E8 | https://rest.uniprot.org/uniprotkb/D0U2E8.json; entryAudit, organism, sequence, EMBL cross-reference and evidence-bearing functional annotations | context_only | Current native reference sequence agrees with the deposited CDS; unreviewed similarity annotations are kept separate from primary native mutant evidence. |
+| S261-E-UP-D0U2E9 | https://rest.uniprot.org/uniprotkb/D0U2E9.json; entryAudit, organism, sequence, EMBL cross-reference and evidence-bearing functional annotations | context_only | Current native reference sequence agrees with the deposited CDS; unreviewed similarity annotations are kept separate from primary native mutant evidence. |
+| C261-OWNER | data/natural_products/alkaloids/iso-migrastatin.yaml; Complete owner and all seven matching source-row sets; no referenced components | supports | The complete owner denotes iso-migrastatin under naturalproductmech:mibig-e9562df516. All source selectors, versions and complete row digests are retained in COMPARISON: [{"row_sha256": "e198faa11f192148450018cf70e3f015aecb25de85462763ea6c7509b278f424", "selector": "BGC0000177:1", "version": "5"}]. The official intake and prepared owner bytes agree. |
+| C261-GRAPH | /private/tmp/npm-review-work/261/chemistry.json; Fresh intake RDKit result and frozen Standard/fixed-H comparison | supports | The stored SMILES recomputes to TYTDEHCAAKKYOG-ZTTCWHDESA-N, formula C27H39NO7, formal charge 0; stored InChI/key agree. These are representation checks, not experimental identity proof. |
+| C261-COMPARISON | /private/tmp/npm-review-work/shared-next-batch027/chemistry-prep/retained-graph-comparison.json; Record 261; exact source rows and each graph comparison | supports | Exact Standard, fixed-H, formula, charge and stereo comparisons of the retained owner and complete raw rows; current authority responses and primary proof are separate evidence. |
+| C261-LOCAL-SEARCH | /private/tmp/npm-review-work/261/chemistry-search-receipt.json; Exact full key, label, slug and source selector in raw/owner/curation trees | supports | Ignored-inclusive bounded search preserves all matching paths; an absent curation decision does not imply a missing scientific source. |
+| C261-AUTHORITY-COMPARISON | /private/tmp/npm-review-work/shared-next-batch027/chemistry-prep/authority-graph-comparison.json; Complete literal Standard/fixed-H, formula, charge and stereo comparison; exact source payload pins retained | supports | Current authority graphs and source-specific serialization differences are independently compared. Database agreement is not primary natural-hand proof. |
+| C261-AUTHORITY-DETAIL | /private/tmp/npm-review-work/shared-next-batch027/chemistry-prep/source-plan-004.json; Complete literal Standard/fixed-H, formula, charge and stereo comparison; exact source payload pins retained | supports | Current authority graphs and source-specific serialization differences are independently compared. Database agreement is not primary natural-hand proof. |
+| C261-AUTH-1 | https://www.npatlas.org/api/v1/compound/NPA013569; Complete retained payload /private/tmp/npm-review-work/shared-next-batch027/chemistry-prep/authority-phase-001-public/NPA013569.json | supports | Exact source representation at its recorded access time; primary identity and natural hand are assessed separately. |
+| C261-AUTH-2 | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/15940571/SDF?record_type=2d; Complete retained payload /private/tmp/npm-review-work/shared-next-batch027/chemistry-prep/authority-phase-001-public/CID15940571.sdf | supports | Exact source representation at its recorded access time; primary identity and natural hand are assessed separately. |
+| C261-AUTH-3 | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/15940571,10199,136054934,101991492,101885533,3035817/property/IsomericSMILES,InChI,InChIKey,MolecularFormula/JSON; Complete retained payload /private/tmp/npm-review-work/shared-next-batch027/chemistry-prep/authority-phase-002-public/pubchem-six-literals.json | supports | Exact source representation at its recorded access time; primary identity and natural hand are assessed separately. |
+| C261-AUTH-4 | https://www.ebi.ac.uk/chembl/api/data/molecule/CHEMBL1221912.json; Complete retained payload /private/tmp/npm-review-work/shared-next-batch027/chemistry-prep/authority-phase-002-public/CHEMBL1221912.json | supports | Exact source representation at its recorded access time; primary identity and natural hand are assessed separately. |
+| C261-AUTH-5 | https://www.ebi.ac.uk/chebi/backend/api/public/compound/207272/; Complete retained payload /private/tmp/npm-review-work/shared-next-batch027/chemistry-prep/authority-phase-003-public/CHEBI207272.json | supports | Exact source representation at its recorded access time; primary identity and natural hand are assessed separately. |
+| C261-AUTH-6 | https://www.ebi.ac.uk/chebi/backend/api/public/molfile/207272/; Complete retained payload /private/tmp/npm-review-work/shared-next-batch027/chemistry-prep/authority-phase-003-public/CHEBI207272.mol | supports | Exact source representation at its recorded access time; primary identity and natural hand are assessed separately. |
+| C261-CHEBI-SEARCH-1 | https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=TYTDEHCAAKKYOG-ZTTCWHDESA-N&amp;size=100; Complete bounded key/name response /private/tmp/npm-review-work/shared-next-batch027/chemistry-prep/authority-phase-002-public/chebi-key-261.json | supports | HTTP200; exact source response and candidate eligibility preserved. |
+| C261-MGS05-LATER-SI | DOI:10.1021/ja053118u.s001; Printed S4–S5 stereochemistry determination; S25 references1–3; retained snapshot /private/tmp/npm-review-work/008/ja053118u_si_001.pdf | supports | Published compound-specific C11R assignment uses relative X-ray and a prior absolute bridge. Reference3 identifies the relative crystal result as personal communication; no raw crystal re-refinement is claimed. |
+| C261-MGS09-FIGURE | DOI:10.1074/jbc.M109.046805; Original Figure1 iso-migrastatin drawing; retained snapshot /private/tmp/npm-review-work/shared-next-batch020/bgc-science/public-005/dorrigocin2009-figure1.jpg | supports | Five source carbon directions and three E alkenes independently reconstructed; depiction and absolute experimental proof are distinct. |
+| C261-MITE-326 | https://raw.githubusercontent.com/mite-standard/mite_data/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000326.json; Version1 reactions substrate/product literal SMILES and isIntermediate metadata; retained snapshot /private/tmp/npm-review-work/shared-next-batch027/bgc-science/public-011/MITE0000326.json | supports | Exact model strings are compared independently; no SMARTS execution, missing-geometry completion, turnover or cofactor inference. |
+| C261-MITE-327 | https://raw.githubusercontent.com/mite-standard/mite_data/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000327.json; Version1 reactions substrate/product literal SMILES and isIntermediate metadata; retained snapshot /private/tmp/npm-review-work/shared-next-batch027/bgc-science/public-011/MITE0000327.json | supports | Exact model strings are compared independently; no SMARTS execution, missing-geometry completion, turnover or cofactor inference. |
+| C261-MITE-328 | https://raw.githubusercontent.com/mite-standard/mite_data/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000328.json; Version1 reactions substrate/product literal SMILES and isIntermediate metadata; retained snapshot /private/tmp/npm-review-work/shared-next-batch027/bgc-science/public-011/MITE0000328.json | supports | Exact model strings are compared independently; no SMARTS execution, missing-geometry completion, turnover or cofactor inference. |
+| C261-SOURCE-LIMITS | /private/tmp/npm-review-work/shared-next-batch027/chemistry-prep/source-notes.json; Entry261: observations, limitations and exact raw rows; retained snapshot /private/tmp/npm-review-work/shared-next-batch027/chemistry-prep/source-notes.json | supports | Source-specific identity precision and access limits. Database agreement is not independent natural hand. |
+| C261-PRIMARY-COMPARISON-1 | /private/tmp/npm-review-work/shared-next-batch027/chemistry-prep/primary-mapping-001/primary-261262264-comparison-001.json; Target261: exact source graph/atom mapping, result and stated scope; retained snapshot /private/tmp/npm-review-work/shared-next-batch027/chemistry-prep/primary-mapping-001/primary-261262264-comparison-001.json | supports | Diagnostic literal reconstruction or source-specific read addendum only; no selected replacement or new absolute experiment. |
+| C261-PRIMARY-COMPARISON-2 | /private/tmp/npm-review-work/shared-next-batch027/chemistry-prep/primary-mapping-001/isoMGS-later-assignment-read-addendum-001.json; Target261: exact source graph/atom mapping, result and stated scope; retained snapshot /private/tmp/npm-review-work/shared-next-batch027/chemistry-prep/primary-mapping-001/isoMGS-later-assignment-read-addendum-001.json | supports | Diagnostic literal reconstruction or source-specific read addendum only; no selected replacement or new absolute experiment. |
+| C261-MITE-COMPARISON | /private/tmp/npm-review-work/shared-next-batch027/chemistry-prep/mite-model-comparison-001.json; Six literal substrate/product graphs, exact owner-key comparisons and source pins; retained snapshot /private/tmp/npm-review-work/shared-next-batch027/chemistry-prep/mite-model-comparison-001.json | supports | Model comparison preserves absent alkene constraints and distinguishes intermediates from owner; no reaction execution. |
+| C261-MIBIG-RETAINED-LOCAL | https://mibig.secondarymetabolites.org/repository/BGC0000177.5/; Exact retained version5 compound1; local reinspection only; retained snapshot /private/tmp/npm-review-work/evidence/BGC0000177.5.txt | supports | Original successful HTTP receipt is unavailable in the bounded ignored-inclusive search. This local reinspection time is explicitly not a fresh remote access claim. |
+| C261-STRUCTURE-CONSUMER | src/naturalproductmech/curate/structure_corrections.py; apply_structure_corrections: exact source/target rows, three-star structured target, distinct-owner/collision guards; retained snapshot /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/curate/structure_corrections.py | supports | The existing contract cannot consume arbitrary primary graphs or merge an already owned target. No replacement is selected. |
+| C261-XREF-CONSUMER | src/naturalproductmech/curate/xref_exclusions.py; load_xref_exclusions literal regex and unique full-row source guard; retained snapshot /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/curate/xref_exclusions.py | supports | Only PubChem and six-digit NPAtlas exclusions are currently consumed. ChEMBL requires a reviewed implemented extension. |
+| C261-SEED-CONSUMER | scripts/seed_from_sources.py; build_records xref exclusion after structure correction; carry_curator_owned_fields; write_records migration guards; retained snapshot /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py | supports | Xref and identity decisions cannot be blindly stacked; changed-key biological joins and curator-owned graphs require explicit reviewed migration. |
+| C261-CURATION-CONTRACT | docs/CURATION.md; MIBiG structure/xref/claim-reference curation contracts and generated-record boundaries; retained snapshot /private/tmp/npm-record-reviews-20261021/docs/CURATION.md | supports | Future correction must use a maintained consumed contract, exact source guards and documented reproduction checks; no generated record is hand-edited. |
+
+## Limits And Additional Notes
+
+- Context establishes exact owner/history/source inventory, literal identifier routing and computed classification. Primary production, congener identity, stock applicability, protein/graph and method claims retain their separate scientific scope. Isoflavipucine and Stachybotrys context remains chemical identity/provenance and high-level evidence only.
+- Current natural-hand/identifier precision remains independently assessed by chemistry. A completed biology scope does not select a structure repair.
+- The source describes its relative X-ray basis as a personal communication. No independent diffraction data, recombinant construct equality or purified MgsI/J/K substrate-specific assay is claimed.
+- Authority matches establish the representations actually returned at their retained access times; they are not independent experimental structure or absolute-hand determinations. Organism, locus, classification and history claims are assessed separately.
+- The published later C11 assignment is positive, but original private crystal data and the cited absolute-bridge experiment were not independently reanalysed. No graph replacement is selected. The reused BGC0000177.5 bytes are pinned; the original successful HTTP receipt was not located in the ignored-inclusive scratch search. A new access instant is not invented. MITE model identity and missing geometry are separate from experimental enzyme specificity, preferred tailoring order and construct equivalence.
+- The first fresh QC attempt failed during the public vendored-sync fetch after lint passed. Only the separately recorded complete successful QC retry002 is used as the baseline check; the actual failed001 receipt/log/capture/root observation remain bound.
+- Reproduction retains42 withheld ambiguous producer claims,161 merged-taxon rewrites and5 unresolved assay-organism targets.
+- 499non-blocking plausibility warnings and4750no-adapter skips remain.
+- Four skipped tests and two dependency warnings remain disclosed. Reproduction also reports42 withheld ambiguous-producer claims,161 merged-taxon rewrites and5 unresolved assay-organism rows. Gate success is configured consistency, not scientific validation of every claim.
+- Clarification of root review-queue observation: actual session80402 terminal0 and receipt/hash are confirmed. Combined initial log display was truncated; root read its command/output header, displayed samples and final summary, then recovered all12 queue headers in a bounded projection. Root did not read all8928 per-record queue descriptions. No gate outcome changes.
+- Native baseline gates establish configured consistency, not independent biological production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions and no-adapter pairs; a successful command does not convert these into verified scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population was checked; external caches and generated bytecode are not asserted to be independently byte-pinned.
+- No scientific owner, inventory, curation table, native status or history was edited. Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification; target strict validation ran afresh. Scientific failed or unavailable checks are distinct from bundle validation.
+- Scientific conclusions integrate the chemical, biological and provenance assessments; source access and unresolved scopes remain explicit.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261022T044054Z-iso-migrastatin
+title: Scientific review of iso-migrastatin
+started_at: '2026-10-22T04:30:16.628149Z'
+finished_at: '2026-10-22T04:40:54.381908Z'
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: Iso-migrastatin has positive native necessity and introduced-locus sufficiency,
+  with qualified native-protein and MITE reaction-model evidence. Its retained graph
+  leaves C11 unspecified although two literal identifiers specify R and a later published
+  compound-specific assignment supplies 11R. The relative X-ray basis is a personal
+  communication, so the experimental bridge is not independently reanalysed. Correct
+  identifier and structure precision through tested consumers while preserving model
+  limitations and deferring a replacement decision.
+source:
+  git_revision: 71a28cf520dc96a7107b00d87703ba1e59acc02c
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/gladiofungin-b.yaml
+    sha256: 0537d2d991e3555bf5d80eb18d58d901225b65770e4685da1a5ab3aea9a3b931
+    role: context
+  - path: data/natural_products/alkaloids/glandicoline-a.yaml
+    sha256: 661c320e2d349c03e909e5b1b4a3cf9e01680d67f3a4e5890c5b3525ccdc9f19
+    role: context
+  - path: data/natural_products/alkaloids/glandicoline-b.yaml
+    sha256: a0dbffefcec24c9150cfb7a0c374d88f399b072e012edf8eb17e9682f940891a
+    role: context
+  - path: data/natural_products/alkaloids/gonyautoxin-2.yaml
+    sha256: b0c35c96128ccd3b1c00be59cb6fa9ac05aa890afa32696453fb966f7c3e98ba
+    role: context
+  - path: data/natural_products/alkaloids/griseoluteic-acid.yaml
+    sha256: 0dd4033f1be811a42299ab2ff59f7ef982c4ce7d568a58ef75ef13ead0977fd6
+    role: context
+  - path: data/natural_products/alkaloids/grixazone-a.yaml
+    sha256: 3afeef2427dbf63f2c1f33efb8d63262ba2a897f725ac54b4b225aa36e16e316
+    role: context
+  - path: data/natural_products/alkaloids/guanipiperazine-a.yaml
+    sha256: 234f3406f9e6faf5c4c38db04dc8ef91ac859e59538ed0c29879df5ae5ce633b
+    role: context
+  - path: data/natural_products/alkaloids/guanipiperazine-b.yaml
+    sha256: fbe1a98e00e730ecbae027c3eaaf9197e147fca076fe35d97615974defdefa1a
+    role: context
+  - path: data/natural_products/alkaloids/guanitoxin.yaml
+    sha256: 96b4c6ac0c2fc969ae4ac042d4365ea4d73c655a7a6c6f69f8ed4b15f3d47204
+    role: context
+  - path: data/natural_products/alkaloids/hancockiamide-b.yaml
+    sha256: 58b9d5b380eacc91cc1d3aab37d029a47c688385e40dc571ac81f02500765eb2
+    role: context
+  - path: data/natural_products/alkaloids/hancockiamide-c.yaml
+    sha256: f5455801d553581ab6b134955ecb527b48fcdc2aa4e10c86e498aee815ed3335
+    role: context
+  - path: data/natural_products/alkaloids/hancockiamide-d.yaml
+    sha256: 758bf46b4fe8f6572a482e563b64e2899f1d012dcd59d74cb761270fdc8e741f
+    role: context
+  - path: data/natural_products/alkaloids/hexadehydroastechrome.yaml
+    sha256: a065c38b64efa17029b83d2381f84e8973b2f450b3a1b37a194ad0f639c12497
+    role: context
+  - path: data/natural_products/alkaloids/holomycin.yaml
+    sha256: 125f0e310f19582f45f65b82dca90f687fd9463338de592bea14c720e432c3fa
+    role: context
+  - path: data/natural_products/alkaloids/homoanatoxin-a.yaml
+    sha256: 532435867b2dc7742709c97d2e7a857d707bfdce2218e799b7fba96c4f7cd952
+    role: context
+  - path: data/natural_products/alkaloids/huperzine-a.yaml
+    sha256: 5cd4ffb5e2c23fa2cc74b8982cab87d6dc4fe1aaaac89ca759d117fdb364a5a4
+    role: context
+  - path: data/natural_products/alkaloids/hydroxysporine.yaml
+    sha256: 82203ab475b10e5e75bc4742963c5d1eb7ea98aa28ac2ea2c8e961d0d98ac163
+    role: context
+  - path: data/natural_products/alkaloids/ilicicolin-h.yaml
+    sha256: a40244c649b727e078fae647300d2be11f9abd1616d865fe7c3d50e48be62bda
+    role: context
+  - path: data/natural_products/alkaloids/ilicicolin-j.yaml
+    sha256: 83af9c59c72e30686a5bce5d8d725afa9b1475d36aa7609c676fbd6f5d759057
+    role: context
+  - path: data/natural_products/alkaloids/iminimycin-a.yaml
+    sha256: c3d760bfba7f1a604735bf4d3a4ba4d04225870643d0e0dddc5edd172372ec00
+    role: context
+  - path: data/natural_products/alkaloids/iminimycin-b.yaml
+    sha256: 486bec3a8bb7fe97f77bce427b87ccb1d0e965338fabfde34cc8d0af8055e0bc
+    role: context
+  - path: data/natural_products/alkaloids/imizoquin-c.yaml
+    sha256: 67fc96ff1f98fa217c3533ee1c0ae689c339e8c5580d1a3ab580193c8edba624
+    role: context
+  - path: data/natural_products/alkaloids/imizoquin-d.yaml
+    sha256: d651476e0ef9ae0622f52517b8c89e098692146c1e7be603668a1ce25f0ebed6
+    role: context
+  - path: data/natural_products/alkaloids/indimicin-a.yaml
+    sha256: 4867b4ccd262132aab7d66c81d7a418c1f6f81bbfebcd7a8ba6e82fe0ba526df
+    role: context
+  - path: data/natural_products/alkaloids/indimicin-b.yaml
+    sha256: 8c02b3b43dc1a267c31cc4940d7d65383aa8dbd58bc74a61f9e1a7693b513d78
+    role: context
+  - path: data/natural_products/alkaloids/indimicin-c.yaml
+    sha256: 1f331e4e464f472c02a4417dd4fe03bd908003032b7b5b9199d25da68fa5ad2e
+    role: context
+  - path: data/natural_products/alkaloids/indimicin-d.yaml
+    sha256: f113324530458ad4f2d148f97b83e1972ed461158c6b0a762eaf9c358cc6b5ab
+    role: context
+  - path: data/natural_products/alkaloids/indimicin-e.yaml
+    sha256: d2aa92f1a00cd22dae3faa532ebb3ab4542427c329646b066fe8b62cecb56b18
+    role: context
+  - path: data/natural_products/alkaloids/indolmycin.yaml
+    sha256: 48aa7a59f48d7a586c2b1f67ed695a51aabb46641c5d953874745b9ab3257ac6
+    role: context
+  - path: data/natural_products/alkaloids/iodinin.yaml
+    sha256: 883f3b3f30ad1e52c4852386e47611cdd1624bf2fcb81c41fefd4e7f5f596c7b
+    role: context
+  - path: data/natural_products/alkaloids/iso-migrastatin.yaml
+    sha256: a15544ce2de7c5ae505156fdcb32c0464fb2243394f9eb3636d0a6f440d49db5
+    role: target
+  - path: data/natural_products/alkaloids/isoflavipucine.yaml
+    sha256: 043fc6e11d9b3f540abb0ad4f4618e6bf349974f754a5b8dab54d443e506d94c
+    role: context
+  - path: data/natural_products/alkaloids/isoindolin-1-one.yaml
+    sha256: 58d8bda964a940942564931c77eb85e958aae92ec4f1c08766ea61152c65055b
+    role: context
+  - path: data/natural_products/alkaloids/izumiphenazine-c.yaml
+    sha256: 0fff4636be4372fea28c3ec38dc3bbc2de8c2160ac1d3eb3196c2f76bb5e0b54
+    role: context
+  - path: data/natural_products/alkaloids/jawsamycin.yaml
+    sha256: 31487ceb51e33d085eecabeeba7f2b0728ec88e337bcd07551a39e29566db437
+    role: context
+  - path: data/natural_products/alkaloids/jbir-126.yaml
+    sha256: 741d70271ed93cbee622938ce6c000379dd47624b24fcffa26375f1994166dad
+    role: context
+  - path: data/natural_products/alkaloids/jomthonic-acid-a.yaml
+    sha256: 30c0ec98132cc040fb8ff0f2d0a75e1f80e4d0e35e30b9ade6ec4b8b48210e4c
+    role: context
+  - path: data/natural_products/alkaloids/jomthonic-acid-c.yaml
+    sha256: f6139ac0e8d7cb41e281e5640fc168fe7408c1e8a7c6fc51d31251cb5e7135d5
+    role: context
+  - path: data/natural_products/alkaloids/k-252a-2.yaml
+    sha256: dfa2372f86bb18635451b9a052a1f98df66442d8ad23ac42789010c31edee218
+    role: context
+  - path: data/natural_products/alkaloids/k-252a.yaml
+    sha256: 433eb784b7c133c380864f5b97239c466965c5a9b42c4a4ec70e042a83db49c9
+    role: context
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/extract_pubchem_bioassay.py
+    sha256: 24f9d794e7cf97c420351cb751f8767f7d81a5f22aed01669b2318d6755e7c00
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/lotus_exclusions.py
+    sha256: 6352cac7c587eab5a56d907c523cc899d02d197009081624bf8649c675ee30f7
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+    role: context
+  - path: src/naturalproductmech/curate/xref_exclusions.py
+    sha256: 17c3d9e7794bae596b22cf19a2dd5bc2169475d6fea81ea4e6f1781a53af9157
+    role: context
+  - path: src/naturalproductmech/grading.py
+    sha256: ece54c4a2c0803f034ac59de51b1006cf79ea8d6b6256d75757d4adb88ea9630
+    role: context
+  - path: src/naturalproductmech/graph_components.py
+    sha256: 10f08517869f482954fd583fd19d5750ef286a76297c231e6c9a5ba8dc023e17
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: tests/test_seed_skeleton.py
+    sha256: 72ec216fb0ed365b09f1cfb64fb06c701c50b5d7c2df409d8dbf613d302803bf
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 261, batch 027, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated targets in earlier
+    batch commits (publication tracked separately). At selection, 320 of 3116 current
+    records had campaign coverage and 2796 remained. The population search included
+    ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-e9562df516
+targets:
+- target_id: naturalproductmech:mibig-e9562df516
+  path: data/natural_products/alkaloids/iso-migrastatin.yaml
+  label: iso-migrastatin
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/alkaloids/iso-migrastatin.yaml
+    role: Curator-owned assertions, inline mechanisms, discussions and audit history
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-e9562df516
+  command: just validate-strict data/natural_products/alkaloids/iso-migrastatin.yaml
+    --out /private/tmp/npm-review-work/261/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-22T04:30:18.319488Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All3116 corpus records are filed exactly where PATHS.tsv pins them.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=71a28cf520dc96a7107b00d87703ba1e59acc02c
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-025-baseline-verify-corpus-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-025 execution on 71a28cf520dc96a7107b00d87703ba1e59acc02c
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-22T02:47:33.579477Z;
+    finished 2026-10-22T02:47:57.474870Z. Exact original receipt: /private/tmp/npm-native-checks/batch-025/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-025/verify-corpus.log. Reused
+    for batch027 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,190 tracked byte streams and modes (208,330,337 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch027. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-e9562df516
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All3116 records reproduce byte-for-byte from data/raw/.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=71a28cf520dc96a7107b00d87703ba1e59acc02c
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-025-baseline-verify-reproduction-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-025 execution on 71a28cf520dc96a7107b00d87703ba1e59acc02c
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-22T02:47:33.576606Z;
+    finished 2026-10-22T02:48:13.940243Z. Exact original receipt: /private/tmp/npm-native-checks/batch-025/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-025/verify-reproduction.log.
+    Reused for batch027 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,190 tracked byte streams and modes (208,330,337 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch027. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-e9562df516
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The canonical review-queue command completed with actual exit0 on the fresh
+    main base; exact output, warnings and skips remain in the pinned transcript.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=71a28cf520dc96a7107b00d87703ba1e59acc02c
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-025-baseline-review-queue-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just review-queue --tsv /private/tmp/npm-review-queue-batch-025.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-025 execution on 71a28cf520dc96a7107b00d87703ba1e59acc02c
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-22T02:47:33.576310Z;
+    finished 2026-10-22T02:47:48.002005Z. Exact original receipt: /private/tmp/npm-native-checks/batch-025/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-025/review-queue.log. Reused
+    for batch027 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,190 tracked byte streams and modes (208,330,337 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch027. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-e9562df516
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: Configured identifier-label gate passed with13449canonical matches,646synonym
+    matches and35configured exceptions.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=71a28cf520dc96a7107b00d87703ba1e59acc02c
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-025-baseline-validate-products-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-025 execution on 71a28cf520dc96a7107b00d87703ba1e59acc02c
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-22T02:47:33.580281Z;
+    finished 2026-10-22T02:48:13.699538Z. Exact original receipt: /private/tmp/npm-native-checks/batch-025/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-025/validate-products.log. Reused
+    for batch027 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,190 tracked byte streams and modes (208,330,337 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch027. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-e9562df516
+- check_id: shared-qc
+  name: Full repository quality gate on the fresh main baseline
+  status: passed
+  required: true
+  summary: 'Actual canonical just qc retry002 terminal0. All gates passed: lint;22
+    governed artifacts; documentation;15 inventory provenance;44 source queue entries;999
+    tests passed,4 skipped,2 dependency warnings;strict3116 zeroerrors;generated site;3116
+    byte-identical reproduction;PATHS integrity;corpus report.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=71a28cf520dc96a7107b00d87703ba1e59acc02c
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-025-baseline-qc-attempt-002
+    PYTHONDONTWRITEBYTECODE=1 just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-025 execution on 71a28cf520dc96a7107b00d87703ba1e59acc02c
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-22T02:52:11.932860Z;
+    finished 2026-10-22T02:57:35.691390Z. Exact original receipt: /private/tmp/npm-native-checks/batch-025/qc-attempt-002.json;
+    transcript: /private/tmp/npm-native-checks/batch-025/qc-attempt-002.log. Reused
+    for batch027 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,190 tracked byte streams and modes (208,330,337 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch027. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-e9562df516
+- check_id: R261-FULL-OWNER
+  name: Complete owner and seven-set fidelity
+  status: passed
+  required: true
+  summary: All ten successful official intakes and post-intake root reads precede
+    authoring. Every complete owner and seven-source-set join matches the prepared
+    bytes. The six iso-migrastatin and five K-252a inline graphs plus other present
+    fields are explicitly in scope; they are not validated merely by this inventory.
+  target_ids:
+  - naturalproductmech:mibig-e9562df516
+  evidence_ids:
+  - R261-OWNER
+  - R261-LOCAL
+  - R261-PUBCHEM-PREP
+- check_id: S261-C-LOCAL
+  name: local
+  status: passed
+  required: true
+  summary: The complete actual owner and all seven raw source sets match the frozen
+    preparation and successful intake. This is source fidelity, not proof of every
+    scientific assertion.
+  target_ids:
+  - naturalproductmech:mibig-e9562df516
+  evidence_ids:
+  - S261-E-LOCAL
+  - S261-E-GUARDS
+- check_id: S261-C-NATIVE-AND-INTRODUCED
+  name: native and introduced
+  status: passed
+  required: true
+  summary: Exact native necessity and introduced-locus sufficiency have independent
+    primary support at the named product scope.
+  target_ids:
+  - naturalproductmech:mibig-e9562df516
+  evidence_ids:
+  - S261-E-MGS05-SI
+  - S261-E-MGS08-MAIN
+  - S261-E-MGS09-MAIN
+- check_id: S261-C-GRAPH-BOUNDARIES
+  name: graph boundaries
+  status: passed
+  required: true
+  summary: The six existing reference/model graphs retain native sequence, pathway-level
+    experiment and database-model distinctions.
+  target_ids:
+  - naturalproductmech:mibig-e9562df516
+  evidence_ids:
+  - S261-E-LOCAL
+  - S261-E-MGS13-MAIN
+  - S261-E-MGS-PROTEINS
+  - S261-E-MITE-327
+  - S261-E-MITE-328
+  - S261-E-MITE-326
+- check_id: C261-C-REPRESENTATION
+  name: Stored chemical representation and complete source row
+  status: passed
+  required: true
+  summary: Fresh intake derivation agrees with the stored graph; the source selector,
+    full row and prepared snapshot were independently rechecked.
+  target_ids:
+  - naturalproductmech:mibig-e9562df516
+  evidence_ids:
+  - C261-OWNER
+  - C261-GRAPH
+  - C261-COMPARISON
+- check_id: C261-C-LITERAL-SCOPE
+  name: Exact literal chemical authority scope
+  status: failed
+  required: true
+  summary: Every asserted literal is preserved and independently compared; conflicting
+    precision and sample graphs are explicit.
+  target_ids:
+  - naturalproductmech:mibig-e9562df516
+  evidence_ids:
+  - C261-MGS05-LATER-SI
+  - C261-MGS09-FIGURE
+  - C261-MITE-326
+  - C261-MITE-327
+  - C261-MITE-328
+  - C261-SOURCE-LIMITS
+  - C261-PRIMARY-COMPARISON-1
+  - C261-PRIMARY-COMPARISON-2
+  - C261-MITE-COMPARISON
+  - C261-MIBIG-RETAINED-LOCAL
+  - C261-STRUCTURE-CONSUMER
+  - C261-XREF-CONSUMER
+  - C261-SEED-CONSUMER
+  - C261-CURATION-CONTRACT
+  - C261-OWNER
+  - C261-GRAPH
+  - C261-COMPARISON
+  - C261-AUTHORITY-COMPARISON
+  - C261-AUTHORITY-DETAIL
+  - C261-AUTH-1
+  - C261-AUTH-2
+  - C261-AUTH-3
+  - C261-AUTH-4
+  - C261-AUTH-5
+  - C261-AUTH-6
+- check_id: C261-C-PRIMARY-SCOPE
+  name: Exact named original structure support
+  status: failed
+  required: true
+  summary: 'The retained graph and literal NPA013569 leave C11 unspecified, whereas
+    literal PubChem15940571 and ChEMBL1221912 specify C11R. Independent original 2006/2009
+    depiction mapping gives C8S/C9S/C10S/C11R/C14S and three E bonds. Original 2005
+    SI ja053118u explicitly supplies the later compound-specific 11R assignment using
+    relative X-ray and an earlier absolute bridge; the relative crystal result is
+    cited as personal communication. The six exact MITE substrate/product graphs were
+    independently compared: none equals the retained whole graph, and no omitted alkene
+    geometry is supplied from the owner.'
+  target_ids:
+  - naturalproductmech:mibig-e9562df516
+  evidence_ids:
+  - C261-MGS05-LATER-SI
+  - C261-MGS09-FIGURE
+  - C261-MITE-326
+  - C261-MITE-327
+  - C261-MITE-328
+  - C261-SOURCE-LIMITS
+  - C261-PRIMARY-COMPARISON-1
+  - C261-PRIMARY-COMPARISON-2
+  - C261-MITE-COMPARISON
+  - C261-MIBIG-RETAINED-LOCAL
+  - C261-STRUCTURE-CONSUMER
+  - C261-XREF-CONSUMER
+  - C261-SEED-CONSUMER
+  - C261-CURATION-CONTRACT
+  - C261-OWNER
+  - C261-GRAPH
+  - C261-COMPARISON
+  - C261-AUTHORITY-COMPARISON
+  - C261-AUTHORITY-DETAIL
+  - C261-AUTH-1
+  - C261-AUTH-2
+  - C261-AUTH-3
+  - C261-AUTH-4
+  - C261-AUTH-5
+  - C261-AUTH-6
+- check_id: C261-C-EXPERIMENTAL-PRECISION
+  name: Original source stereochemical precision and assignment scope
+  status: unavailable
+  required: true
+  summary: The published later C11 assignment is positive, but original private crystal
+    data and the cited absolute-bridge experiment were not independently reanalysed.
+    No graph replacement is selected. The reused BGC0000177.5 bytes are pinned; the
+    original successful HTTP receipt was not located in the ignored-inclusive scratch
+    search. A new access instant is not invented. MITE model identity and missing
+    geometry are separate from experimental enzyme specificity, preferred tailoring
+    order and construct equivalence.
+  target_ids:
+  - naturalproductmech:mibig-e9562df516
+  evidence_ids:
+  - C261-MGS05-LATER-SI
+  - C261-MGS09-FIGURE
+  - C261-MITE-326
+  - C261-MITE-327
+  - C261-MITE-328
+  - C261-SOURCE-LIMITS
+  - C261-PRIMARY-COMPARISON-1
+  - C261-PRIMARY-COMPARISON-2
+  - C261-MITE-COMPARISON
+  - C261-MIBIG-RETAINED-LOCAL
+  - C261-STRUCTURE-CONSUMER
+  - C261-XREF-CONSUMER
+  - C261-SEED-CONSUMER
+  - C261-CURATION-CONTRACT
+  - C261-OWNER
+  - C261-GRAPH
+  - C261-COMPARISON
+  - C261-AUTHORITY-COMPARISON
+  - C261-AUTHORITY-DETAIL
+  - C261-AUTH-1
+  - C261-AUTH-2
+  - C261-AUTH-3
+  - C261-AUTH-4
+  - C261-AUTH-5
+  - C261-AUTH-6
+evidence:
+- evidence_id: R261-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/iso-migrastatin.yaml
+  locator: Complete actual owner, all optional fields and history events
+  accessed_at: '2026-10-22T04:30:56.950399Z'
+  support: supports
+  summary: 'Root read the complete post-intake owner: 1 occurrence, 1 producer and
+    1 locus assertions. Present optional fields: causal_graphs. No external component
+    is present.'
+  snapshot_sha256: a15544ce2de7c5ae505156fdcb32c0464fb2243394f9eb3636d0a6f440d49db5
+- evidence_id: R261-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/261/local-sources.json
+  locator: Complete resolved owner and all six captured source sets; seventh set independently
+    compared
+  accessed_at: '2026-10-22T04:30:56.950399Z'
+  support: context_only
+  summary: Exact captured rows and separately parsed PubChem rows match frozen preparation.
+    Inventory equality does not establish experimental support.
+  snapshot_sha256: 056587d99dc55811613ae5e193676862eccca1656ab7d44dd4d2c8de4dd5cdc4
+- evidence_id: R261-PUBCHEM-PREP
+  kind: record_content
+  reference: data/raw/pubchem_bioassay.tsv
+  locator: Complete exact-key retained rows and no-data sentinels
+  accessed_at: '2026-10-22T04:30:56.950399Z'
+  support: context_only
+  summary: This owner has 0 retained rows and 0 written observations. Across the cohort
+    there are 25 written observations, 90 retained omitted rows and two no-data sentinels.
+    Current-only summary rows are separate.
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: R261-Q26291839
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q26291839
+  locator: 'Exact retained ten-entity response: English label and P225/P685 for this
+    entity'
+  accessed_at: '2026-10-22T01:25:22.038537Z'
+  support: context_only
+  summary: Literal organism name/taxon routing agrees; this is not experimental occurrence,
+    stock equivalence or production evidence.
+  snapshot_sha256: 6e08a6af010dc491f17823c2720235e4d794a93547a73b131c018cb2d4a51ef6
+- evidence_id: R261-TAXON-CONTEXT
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&retmode=xml&id=1883,1956,1988,2013,28044,41900,58346,66424,66429,83682,285557,310350,341663,388913,568869,684832,1283841,1463851
+  locator: Relevant TaxId/ScientificName/rank/parent and OtherNames in18-record response
+  accessed_at: '2026-10-22T01:25:22.252916Z'
+  support: context_only
+  summary: 'Literal current identifier context: 684832: Streptomyces platensis subsp.
+    rosaceus (subspecies); 58346: Streptomyces platensis (species). Identifier agreement
+    does not prove the cited experimental stock, exact congener, occurrence or production;
+    primary source applicability is assessed separately.'
+  snapshot_sha256: d871eb8407c39b3327b0b94bdf1b5b2e08cbb9566d0e7b0fd63383826c466c66
+- evidence_id: R261-IDENTIFIER-READ
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch027/root-identifier-context-read-001.json
+  locator: counts and17 literal organism routes across10 Wikidata entities and18 taxa
+  accessed_at: '2026-10-22T01:26:21.247665Z'
+  support: context_only
+  summary: Root read original identifier values and naming context. These are not
+    experimental occurrence, production or stock-equivalence proofs.
+  snapshot_sha256: 48382260e92cd699836f83dc295480de7e50b725062d5e71c7881800ef5cd7e8
+- evidence_id: R261-IMODULON
+  kind: database
+  reference: https://imodulondb.org/api/datasets
+  locator: Complete 20-organism/28-dataset official catalogue
+  accessed_at: '2026-10-22T01:25:22.115340Z'
+  support: context_only
+  summary: No exact named native producer stock is represented in the complete 20-organism/28-dataset
+    catalogue. E. coli, Streptomyces coelicolor and S. albidoflavus entries are broader
+    contexts; they do not establish exact introduced constructs, production-linked
+    expression or module membership.
+  snapshot_sha256: 155607e7023efdead5ebab3919279a0776d5665a7de9e28b67f02f8f521b0693
+- evidence_id: S261-E-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/261/local-sources.json
+  locator: Complete resolved owner and captured rows; exact seven-set equality checked
+  accessed_at: '2026-10-22T04:31:34.472336Z'
+  support: context_only
+  summary: Complete actual owner including any inline graph/pathway, six captured
+    source sets and separately compared seventh PubChem set match the prepared complete
+    reads.
+  snapshot_sha256: 056587d99dc55811613ae5e193676862eccca1656ab7d44dd4d2c8de4dd5cdc4
+- evidence_id: S261-E-CONSUMERS
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: LOTUS exclusion, producer/locus emission, method overrides and correction
+    order
+  accessed_at: '2026-10-22T04:31:34.472336Z'
+  support: context_only
+  summary: Static inspection covers exact LOTUS exclusions, source method grading
+    and producer/reference qualification order. Exact consumers have their own evidence
+    snapshots.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: S261-E-SCHEMA
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: ProducerEvidenceBasisEnum and ClusterLinkEvidenceEnum; conf/producer_evidence.tsv
+    and grading.py also read and pinned
+  accessed_at: '2026-10-22T04:31:34.472336Z'
+  support: context_only
+  summary: Producer tiers concern evidence in the named organism; cloned-locus experiments
+    are a distinct cluster question. Empty methods and a source assertion do not independently
+    assert native knockout or exact pure-enzyme proof.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: S261-E-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/261/science-search.json
+  locator: Exact read scope
+  accessed_at: '2026-10-22T04:31:34.480051Z'
+  support: context_only
+  summary: Exact current curated-decision search is retained. Its scope is the curation
+    tree; it does not establish absence of experimental evidence or all possible consumers.
+  snapshot_sha256: 1a01faddfda70e8241179e97b5a0b92f851bcb88d2b27bc0b5525c600565a28a
+  search_scope: rg --no-ignore --hidden -n -F over curation using exact identifier,
+    label, full key and source accessions
+- evidence_id: S261-E-CURRENT-MGS
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0000177.5/
+  locator: Exact versioned compound, taxonomy, locus methods/bounds and source reference
+    fields
+  accessed_at: '2026-10-22T01:38:35.424313Z'
+  support: context_only
+  summary: Current annotation agrees with the literal imported target context; database
+    methods and labels remain distinct from primary host/compound evidence. The original
+    remote access time for this reused payload was not located; its time here is explicit
+    local reinspection only.
+  snapshot_sha256: 5f6580ff9b9d2a1012fadeab6ab86610c9dc75b3c52086f8fb0971d355c9242f
+- evidence_id: S261-E-GRADE-MAP
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/conf/producer_evidence.tsv
+  locator: Complete method mapping, especially native Knock-out studies versus cluster-only
+    Heterologous expression
+  accessed_at: '2026-10-22T01:40:36.927381Z'
+  support: context_only
+  summary: Native organism necessity is distinct from loss in an introduced host.
+    Heterologous expression supports the cluster while retaining a source-assertion
+    producer grade.
+  snapshot_sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+- evidence_id: S261-E-GUARDS
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch027/bgc-science/source-row-guards.json
+  locator: All ten complete owners and seven raw source sets, including full-row digests
+  accessed_at: '2026-10-22T01:40:36.927381Z'
+  support: context_only
+  summary: Every proposed route is constrained by immutable source rows and exact
+    owner bytes. No raw correction is executed by this helper.
+  snapshot_sha256: 27b9bd43eba36186a58102579c88d2ed547b4f6f0d897aef6df2ec7cb5b1057b
+- evidence_id: S261-E-LIMITS
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch027/bgc-science/source-notes.json
+  locator: All five source narratives and explicit source/read limitations
+  accessed_at: '2026-10-22T01:40:36.927381Z'
+  support: context_only
+  summary: Positive exact endpoints, unresolved source gaps and chemical identity
+    dependencies remain separate. Missing full-paper access does not establish universal
+    absence of production.
+  snapshot_sha256: b38a86f807c82c342743875cd273e0a5fb6bcd5490ac28f4cfc5f2a596a4ec22
+- evidence_id: S261-E-MGS-GB
+  kind: primary_source
+  reference: https://www.ncbi.nlm.nih.gov/nuccore/GQ274953.1
+  locator: Header/source and complete MgsI/J/K CDS qualifiers; accession length 53336
+  accessed_at: '2026-10-22T01:31:17.799316Z'
+  support: partial
+  summary: Deposited native NRRL18993 references are matched to the exact three current
+    UniProt and GenPept sequences. This does not prove tags, historical alleles, cofactors
+    or experimental construct equivalence.
+  snapshot_sha256: 8485759a9940a663454dddc8894857bc898ec33a2e6c43c3cc38cf48468451a1
+- evidence_id: S261-E-MGS-PROTEINS
+  kind: record_content
+  reference: https://www.ncbi.nlm.nih.gov/nuccore/GQ274953.1
+  locator: entries for ACY01394.1/D0U2E7, ACY01395.1/D0U2E8, ACY01396.1/D0U2E9
+  accessed_at: '2026-10-22T01:35:36.869517Z'
+  support: context_only
+  summary: CDS-aware translation, deposited qualifiers, GenPept and current UniProt
+    match exactly at 338/281/403 amino acids. MgsK uses a bacterial GTG initiation
+    codon interpreted as Met. Current unreviewed UniProt entries remain sequence grounding,
+    not independent activity evidence.
+  snapshot_sha256: d4a656df654eb6a40f3976b7aeb8c9cd32a1412990dd1ceae685a7feb30ef899
+- evidence_id: S261-E-MGS05-LATER-SI
+  kind: primary_source
+  reference: DOI:10.1021/ja053118u.s001
+  locator: Printed S4–S5 Stereochemistry determination and printed S25 references
+    1–3; original S4/S5 pixels
+  accessed_at: '2026-10-21T07:08:48.840392Z'
+  support: partial
+  summary: The later primary supplement explicitly completes iso-migrastatin 10 as
+    8S,9S,10S,11R,14S by combining prior chemical/absolute evidence with relative
+    X-ray information. The relative X-ray reference 3 is explicitly a personal communication,
+    not independently inspected diffraction data. Dorrigocin B3 is separately assigned
+    11R.
+  snapshot_sha256: 603ed1d6b03418ff4a1f4d01cd4fc96a6a846585f04ef756825dd9a553f804be
+- evidence_id: S261-E-MGS05-META
+  kind: primary_source
+  reference: https://api.figshare.com/v2/articles/3300907
+  locator: Original article abstract and official SI metadata for ja043808i
+  accessed_at: '2026-10-21T07:07:51Z'
+  support: partial
+  summary: The early article explicitly leaves C11 of iso-migrastatin 4 and dorrigocin
+    B3 unassigned. This historical limit is distinguished from the later compound-specific
+    assignment.
+  snapshot_sha256: 9c662349da5a15c6a68ca9039ec512e70de48709d9379abe93b4a9a2d88a16c6
+- evidence_id: S261-E-MGS05-SI
+  kind: primary_source
+  reference: https://api.figshare.com/v2/file/download/5138641
+  locator: 'Original seven-page SI, S1–S4: native NRRL18993 isolation, iso-migrastatin
+    4 physicochemical identification and aqueous rearrangement'
+  accessed_at: '2026-10-21T07:08:21Z'
+  support: partial
+  summary: The named native product 4 is isolated from NRRL18993 and characterized
+    separately from dorrigocins. Its aqueous conversion is chemical and does not prove
+    an enzyme catalyses the final rearrangement.
+  snapshot_sha256: e9ff9cd430082f6d88b68f6c30ad65b8ae1e008222b80a05d7298b5d2513c62e
+- evidence_id: S261-E-MGS08-MAIN
+  kind: primary_source
+  reference: DOI:10.1016/j.bmc.2008.10.074; PMID:19010685
+  locator: Complete scientific body/Methods and figure captions in PMC3075207
+  accessed_at: '2026-10-21T07:07:54Z'
+  support: partial
+  summary: The native NRRL18993 locus produces exact iso-migrastatin in five introduced
+    Streptomyces hosts, with retention/UV/co-injection/LC-MS and purified-product
+    NMR support. It is direct heterologous iso-migrastatin evidence, not a native
+    knockout in those hosts or a purified final-product enzyme assay.
+  snapshot_sha256: d43f875f9197deab3ed8de368858bd196acf42983db8bbf50601b06e95c044e5
+- evidence_id: S261-E-MGS09-MAIN
+  kind: primary_source
+  reference: DOI:10.1074/jbc.M109.046805; PMID:19726666
+  locator: Methods, Table 1 and native gene-inactivation Results; Figure 3A iso-migrastatin
+    endpoint versus Figure 3B dorrigocin/migrastatin endpoints
+  accessed_at: '2026-10-21T21:35:25.784652Z'
+  support: partial
+  summary: Native mgsF and mgsH disruption loses iso-migrastatin, with mgsH rescue.
+    The separate no-resin A/C/D and boundary-gene panels track downstream metabolites.
+    MgsI/J/K functions in this 2009 paper remain proposed from sequence/pathway reasoning,
+    rather than direct purified assays.
+  snapshot_sha256: 0288ced8a185c6fd20e167a96a7934a28962106fdd7a7eee3b1390c7f3fdc165
+- evidence_id: S261-E-MGS13-MAIN
+  kind: primary_source
+  reference: DOI:10.1021/ja4002635; PMID:23394593
+  locator: PMC3582021 scientific Results/Discussion, native single/combinatorial mutants
+    and explicit in-vitro/ordering limitations
+  accessed_at: '2026-10-21T07:07:14Z'
+  support: partial
+  summary: Native mutant profiles support MgsI enoyl reduction, MgsJ O-methylation
+    and MgsK hydroxylation at pathway level. The paper explicitly describes proposed
+    ordering as speculative and instability as preventing in-vitro confirmation. Existing
+    qualified reference/model graphs must not become exact purified conversions, fixed
+    pathway order or measured cofactors.
+  snapshot_sha256: e7c34d12579a740affc7e637b5d5341e4560720435dd52bbfb7ac4b1779537d0
+- evidence_id: S261-E-MGS13-SI
+  kind: primary_source
+  reference: DOI:10.1021/ja4002635.s001
+  locator: Printed S1 strain table; S3 FigureS1; S4 FigureS2; S5 FigureS3; S6–S8 compound
+    11 characterization
+  accessed_at: '2026-10-22T01:31:17.393478Z'
+  support: partial
+  summary: The supplement supplies native NRRL18993 mutant identities and authentic-standard/MS
+    comparison, separate from the model reactions in MITE. FigureS3 uses iso-migrastatin
+    1 and numbered intermediates 10–17; no purified MgsI/J/K conversion is demonstrated.
+  snapshot_sha256: 4e4b17d7c2b62656c3ce748be7ed11881501e44e07ae4c5dc21b870e781932c8
+- evidence_id: S261-E-MITE-326
+  kind: database
+  reference: https://raw.githubusercontent.com/mite-standard/mite_data/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000326.json
+  locator: Version 1 exact enzyme/reaction/evidence fields at pinned commit
+  accessed_at: '2026-10-22T01:31:18.307273Z'
+  support: context_only
+  summary: The curated MgsK model cites native knockout evidence from ja4002635. Literal
+    reaction examples and cofactor annotations are database models and do not establish
+    direct experimental substrate specificity or a whole native pathway order.
+  snapshot_sha256: c6fa427a41c899ce64bc9daac9db9cdca153288fbb7298575c3aa552efd07874
+- evidence_id: S261-E-MITE-327
+  kind: database
+  reference: https://raw.githubusercontent.com/mite-standard/mite_data/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000327.json
+  locator: Version 1 exact enzyme/reaction/evidence fields at pinned commit
+  accessed_at: '2026-10-22T01:31:17.973890Z'
+  support: context_only
+  summary: The curated MgsI model cites native knockout evidence from ja4002635. Literal
+    reaction examples and cofactor annotations are database models and do not establish
+    direct experimental substrate specificity or a whole native pathway order.
+  snapshot_sha256: 7a6bb5b072fe99f7c455dee47b9b1b6cb62571a00b613343da31483afdd87bff
+- evidence_id: S261-E-MITE-328
+  kind: database
+  reference: https://raw.githubusercontent.com/mite-standard/mite_data/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000328.json
+  locator: Version 1 exact enzyme/reaction/evidence fields at pinned commit
+  accessed_at: '2026-10-22T01:31:18.138108Z'
+  support: context_only
+  summary: The curated MgsJ model cites native knockout evidence from ja4002635. Literal
+    reaction examples and cofactor annotations are database models and do not establish
+    direct experimental substrate specificity or a whole native pathway order.
+  snapshot_sha256: 345bb20ee8adceae96287fc3de8009326887114331590d495b5c9c1a5d75ad97
+- evidence_id: S261-E-OCC-LEDGER
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch027/bgc-science/occurrence-ledger.json
+  locator: All six written first-five occurrence rows, literal taxon/key/DOI and full-row
+    hashes
+  accessed_at: '2026-10-22T01:40:36.927381Z'
+  support: context_only
+  summary: Each occurrence is assessed at exact compound, citation and taxon scope;
+    valid 2010 izumiphenazine C and native iso-migrastatin evidence are not discarded
+    with another citation concern.
+  snapshot_sha256: 5c35263a8533a8c4083f8bae7b70ea1d08942954f720e6293b0c2a0d21efd076
+- evidence_id: S261-E-PROTEIN-PEER
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch027/bgc-science/native-checks-three-protein-static-peer-001.json
+  locator: Three native CDS/current-reference exact sequence comparison static peer
+  accessed_at: '2026-10-22T01:40:36.927381Z'
+  support: context_only
+  summary: The independent peer checks actual CDS bounds, codon interpretation and
+    immutable source contracts without rerunning the numerical translation or inferring
+    experimental constructs.
+  snapshot_sha256: 3c154f9e8431ec286e958df32e81f0ca7b6fdb0068cc85c59a3fcab4ddf553e2
+- evidence_id: S261-E-UP-D0U2E7
+  kind: database
+  reference: https://rest.uniprot.org/uniprotkb/D0U2E7.json
+  locator: entryAudit, organism, sequence, EMBL cross-reference and evidence-bearing
+    functional annotations
+  accessed_at: '2026-10-22T01:30:19.696635Z'
+  support: context_only
+  summary: Current native reference sequence agrees with the deposited CDS; unreviewed
+    similarity annotations are kept separate from primary native mutant evidence.
+  snapshot_sha256: 8b93f83e50305b5fb37027068e0434f13e85df7d869d8e6a0d51890af2071023
+- evidence_id: S261-E-UP-D0U2E8
+  kind: database
+  reference: https://rest.uniprot.org/uniprotkb/D0U2E8.json
+  locator: entryAudit, organism, sequence, EMBL cross-reference and evidence-bearing
+    functional annotations
+  accessed_at: '2026-10-22T01:30:20.304195Z'
+  support: context_only
+  summary: Current native reference sequence agrees with the deposited CDS; unreviewed
+    similarity annotations are kept separate from primary native mutant evidence.
+  snapshot_sha256: 9548546fdc8a59fdccb1dcbc4f5aa1bd52d1d80bb0a2839643fffe90ab0dd7af
+- evidence_id: S261-E-UP-D0U2E9
+  kind: database
+  reference: https://rest.uniprot.org/uniprotkb/D0U2E9.json
+  locator: entryAudit, organism, sequence, EMBL cross-reference and evidence-bearing
+    functional annotations
+  accessed_at: '2026-10-22T01:30:20.908792Z'
+  support: context_only
+  summary: Current native reference sequence agrees with the deposited CDS; unreviewed
+    similarity annotations are kept separate from primary native mutant evidence.
+  snapshot_sha256: 65399769e7d46dd09c32fa253ea9a7519d84419ae765faade2277f06fbf3f676
+- evidence_id: C261-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/iso-migrastatin.yaml
+  locator: Complete owner and all seven matching source-row sets; no referenced components
+  accessed_at: '2026-10-22T04:32:00.732250Z'
+  support: supports
+  summary: 'The complete owner denotes iso-migrastatin under naturalproductmech:mibig-e9562df516.
+    All source selectors, versions and complete row digests are retained in COMPARISON:
+    [{"row_sha256": "e198faa11f192148450018cf70e3f015aecb25de85462763ea6c7509b278f424",
+    "selector": "BGC0000177:1", "version": "5"}]. The official intake and prepared
+    owner bytes agree.'
+  snapshot_sha256: a15544ce2de7c5ae505156fdcb32c0464fb2243394f9eb3636d0a6f440d49db5
+- evidence_id: C261-GRAPH
+  kind: validation
+  reference: /private/tmp/npm-review-work/261/chemistry.json
+  locator: Fresh intake RDKit result and frozen Standard/fixed-H comparison
+  accessed_at: '2026-10-22T04:30:17.310145Z'
+  support: supports
+  summary: The stored SMILES recomputes to TYTDEHCAAKKYOG-ZTTCWHDESA-N, formula C27H39NO7,
+    formal charge 0; stored InChI/key agree. These are representation checks, not
+    experimental identity proof.
+  snapshot_sha256: b500a41fe2fc12f0067e72f69a74e6028c35f900c6ddaeff2e0abab45b18b7ee
+- evidence_id: C261-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch027/chemistry-prep/retained-graph-comparison.json
+  locator: Record 261; exact source rows and each graph comparison
+  accessed_at: '2026-10-22T01:28:53.315763Z'
+  support: supports
+  summary: Exact Standard, fixed-H, formula, charge and stereo comparisons of the
+    retained owner and complete raw rows; current authority responses and primary
+    proof are separate evidence.
+  snapshot_sha256: 54265f12037ca6cb9786517f9ea61dbb698c57735da3cb682b25058127a35c71
+- evidence_id: C261-LOCAL-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/261/chemistry-search-receipt.json
+  locator: Exact full key, label, slug and source selector in raw/owner/curation trees
+  accessed_at: '2026-10-22T04:32:01.155779Z'
+  support: supports
+  summary: Ignored-inclusive bounded search preserves all matching paths; an absent
+    curation decision does not imply a missing scientific source.
+  snapshot_sha256: a756b05d0340f430e11790a8e57bf57d220433329237a2d2992679beb3e30c0e
+  search_scope: rg --no-ignore --hidden; data/natural_products, data/raw and curation;
+    exact full key, current label, slug and BGC:compound_index. No claim beyond these
+    trees.
+- evidence_id: C261-AUTHORITY-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch027/chemistry-prep/authority-graph-comparison.json
+  locator: Complete literal Standard/fixed-H, formula, charge and stereo comparison;
+    exact source payload pins retained
+  accessed_at: '2026-10-22T01:30:53.517866Z'
+  support: supports
+  summary: Current authority graphs and source-specific serialization differences
+    are independently compared. Database agreement is not primary natural-hand proof.
+  snapshot_sha256: 27809a5aa7cb734909d572182993d97b967ba02e07ea4c6b018c772408f42e93
+- evidence_id: C261-AUTHORITY-DETAIL
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch027/chemistry-prep/source-plan-004.json
+  locator: Complete literal Standard/fixed-H, formula, charge and stereo comparison;
+    exact source payload pins retained
+  accessed_at: '2026-10-22T02:02:11.627642Z'
+  support: supports
+  summary: Current authority graphs and source-specific serialization differences
+    are independently compared. Database agreement is not primary natural-hand proof.
+  snapshot_sha256: 5fe47bf90ba79d31896b7b6a37f5a44a8939c6ab1ae4725a9a123c7057547b18
+- evidence_id: C261-AUTH-1
+  kind: authority
+  reference: https://www.npatlas.org/api/v1/compound/NPA013569
+  locator: Complete retained payload /private/tmp/npm-review-work/shared-next-batch027/chemistry-prep/authority-phase-001-public/NPA013569.json
+  accessed_at: '2026-10-22T01:29:04.397064Z'
+  support: supports
+  summary: Exact source representation at its recorded access time; primary identity
+    and natural hand are assessed separately.
+  snapshot_sha256: 3f5a69ff084bfe3cee6ae0d31309b2bba53541fc59d8922325131853f09c8f3f
+- evidence_id: C261-AUTH-2
+  kind: authority
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/15940571/SDF?record_type=2d
+  locator: Complete retained payload /private/tmp/npm-review-work/shared-next-batch027/chemistry-prep/authority-phase-001-public/CID15940571.sdf
+  accessed_at: '2026-10-22T01:29:04.891739Z'
+  support: supports
+  summary: Exact source representation at its recorded access time; primary identity
+    and natural hand are assessed separately.
+  snapshot_sha256: 3e4556bb817c5b21e960fedf6c14cd70424a35f88292a9243dab2e947d0d0f19
+- evidence_id: C261-AUTH-3
+  kind: authority
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/15940571,10199,136054934,101991492,101885533,3035817/property/IsomericSMILES,InChI,InChIKey,MolecularFormula/JSON
+  locator: Complete retained payload /private/tmp/npm-review-work/shared-next-batch027/chemistry-prep/authority-phase-002-public/pubchem-six-literals.json
+  accessed_at: '2026-10-22T01:29:28.692225Z'
+  support: supports
+  summary: Exact source representation at its recorded access time; primary identity
+    and natural hand are assessed separately.
+  snapshot_sha256: 5c201abe984cae7b8656603711135b8ece14bb679f36334ad60f28523e7cb110
+- evidence_id: C261-AUTH-4
+  kind: authority
+  reference: https://www.ebi.ac.uk/chembl/api/data/molecule/CHEMBL1221912.json
+  locator: Complete retained payload /private/tmp/npm-review-work/shared-next-batch027/chemistry-prep/authority-phase-002-public/CHEMBL1221912.json
+  accessed_at: '2026-10-22T01:29:22.748657Z'
+  support: supports
+  summary: Exact source representation at its recorded access time; primary identity
+    and natural hand are assessed separately.
+  snapshot_sha256: ecff0e0872ceab848e58ee6e1b7b5d05cd6bab49f70265af6f9c64e8e7a66b58
+- evidence_id: C261-AUTH-5
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/207272/
+  locator: Complete retained payload /private/tmp/npm-review-work/shared-next-batch027/chemistry-prep/authority-phase-003-public/CHEBI207272.json
+  accessed_at: '2026-10-22T01:29:59.955169Z'
+  support: supports
+  summary: Exact source representation at its recorded access time; primary identity
+    and natural hand are assessed separately.
+  snapshot_sha256: 0e202fb86f3ac5128da60a67e3d8c9e4e269f3e78a62647c18002f4c6a803f28
+- evidence_id: C261-AUTH-6
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/207272/
+  locator: Complete retained payload /private/tmp/npm-review-work/shared-next-batch027/chemistry-prep/authority-phase-003-public/CHEBI207272.mol
+  accessed_at: '2026-10-22T01:30:01.359878Z'
+  support: supports
+  summary: Exact source representation at its recorded access time; primary identity
+    and natural hand are assessed separately.
+  snapshot_sha256: c65829782307b4d2171f296bde9bf32ee8db71687be7695606ced75a23c0d927
+- evidence_id: C261-CHEBI-SEARCH-1
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=TYTDEHCAAKKYOG-ZTTCWHDESA-N&size=100
+  locator: Complete bounded key/name response /private/tmp/npm-review-work/shared-next-batch027/chemistry-prep/authority-phase-002-public/chebi-key-261.json
+  accessed_at: '2026-10-22T01:29:24.014859Z'
+  support: supports
+  summary: HTTP200; exact source response and candidate eligibility preserved.
+  snapshot_sha256: 1e2844da34576f2586215c112f4b6bb7e57967b80820c8319854cb4744bc4666
+  search_scope: Official ChEBI exact literal key/name request, size100; complete returned
+    payload. No global absence inference.
+- evidence_id: C261-MGS05-LATER-SI
+  kind: primary_source
+  reference: DOI:10.1021/ja053118u.s001
+  locator: Printed S4–S5 stereochemistry determination; S25 references1–3; retained
+    snapshot /private/tmp/npm-review-work/008/ja053118u_si_001.pdf
+  accessed_at: '2026-10-21T07:08:48.840392Z'
+  support: supports
+  summary: Published compound-specific C11R assignment uses relative X-ray and a prior
+    absolute bridge. Reference3 identifies the relative crystal result as personal
+    communication; no raw crystal re-refinement is claimed.
+  snapshot_sha256: 603ed1d6b03418ff4a1f4d01cd4fc96a6a846585f04ef756825dd9a553f804be
+- evidence_id: C261-MGS09-FIGURE
+  kind: primary_source
+  reference: DOI:10.1074/jbc.M109.046805
+  locator: Original Figure1 iso-migrastatin drawing; retained snapshot /private/tmp/npm-review-work/shared-next-batch020/bgc-science/public-005/dorrigocin2009-figure1.jpg
+  accessed_at: '2026-10-21T21:38:39.625179Z'
+  support: supports
+  summary: Five source carbon directions and three E alkenes independently reconstructed;
+    depiction and absolute experimental proof are distinct.
+  snapshot_sha256: c3f5d38dbd613e18c706d645a41ac795cc904d96d7aa84fcfa59a4f0f5619b76
+- evidence_id: C261-MITE-326
+  kind: database
+  reference: https://raw.githubusercontent.com/mite-standard/mite_data/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000326.json
+  locator: Version1 reactions substrate/product literal SMILES and isIntermediate
+    metadata; retained snapshot /private/tmp/npm-review-work/shared-next-batch027/bgc-science/public-011/MITE0000326.json
+  accessed_at: '2026-10-22T01:31:18.307273Z'
+  support: supports
+  summary: Exact model strings are compared independently; no SMARTS execution, missing-geometry
+    completion, turnover or cofactor inference.
+  snapshot_sha256: c6fa427a41c899ce64bc9daac9db9cdca153288fbb7298575c3aa552efd07874
+- evidence_id: C261-MITE-327
+  kind: database
+  reference: https://raw.githubusercontent.com/mite-standard/mite_data/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000327.json
+  locator: Version1 reactions substrate/product literal SMILES and isIntermediate
+    metadata; retained snapshot /private/tmp/npm-review-work/shared-next-batch027/bgc-science/public-011/MITE0000327.json
+  accessed_at: '2026-10-22T01:31:17.973890Z'
+  support: supports
+  summary: Exact model strings are compared independently; no SMARTS execution, missing-geometry
+    completion, turnover or cofactor inference.
+  snapshot_sha256: 7a6bb5b072fe99f7c455dee47b9b1b6cb62571a00b613343da31483afdd87bff
+- evidence_id: C261-MITE-328
+  kind: database
+  reference: https://raw.githubusercontent.com/mite-standard/mite_data/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000328.json
+  locator: Version1 reactions substrate/product literal SMILES and isIntermediate
+    metadata; retained snapshot /private/tmp/npm-review-work/shared-next-batch027/bgc-science/public-011/MITE0000328.json
+  accessed_at: '2026-10-22T01:31:18.138108Z'
+  support: supports
+  summary: Exact model strings are compared independently; no SMARTS execution, missing-geometry
+    completion, turnover or cofactor inference.
+  snapshot_sha256: 345bb20ee8adceae96287fc3de8009326887114331590d495b5c9c1a5d75ad97
+- evidence_id: C261-SOURCE-LIMITS
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch027/chemistry-prep/source-notes.json
+  locator: 'Entry261: observations, limitations and exact raw rows; retained snapshot
+    /private/tmp/npm-review-work/shared-next-batch027/chemistry-prep/source-notes.json'
+  accessed_at: '2026-10-22T01:50:02.968133Z'
+  support: supports
+  summary: Source-specific identity precision and access limits. Database agreement
+    is not independent natural hand.
+  snapshot_sha256: 7f475ecac36babddd14d4a81be07bb6c07743f6d2aadf677d1021c3ea239a74e
+- evidence_id: C261-PRIMARY-COMPARISON-1
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch027/chemistry-prep/primary-mapping-001/primary-261262264-comparison-001.json
+  locator: 'Target261: exact source graph/atom mapping, result and stated scope; retained
+    snapshot /private/tmp/npm-review-work/shared-next-batch027/chemistry-prep/primary-mapping-001/primary-261262264-comparison-001.json'
+  accessed_at: '2026-10-22T01:33:22.845453Z'
+  support: supports
+  summary: Diagnostic literal reconstruction or source-specific read addendum only;
+    no selected replacement or new absolute experiment.
+  snapshot_sha256: 2a17e2e28d9a764ea29411f512834d199a89c4ed3e36e1cb4aceff008857f190
+- evidence_id: C261-PRIMARY-COMPARISON-2
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch027/chemistry-prep/primary-mapping-001/isoMGS-later-assignment-read-addendum-001.json
+  locator: 'Target261: exact source graph/atom mapping, result and stated scope; retained
+    snapshot /private/tmp/npm-review-work/shared-next-batch027/chemistry-prep/primary-mapping-001/isoMGS-later-assignment-read-addendum-001.json'
+  accessed_at: '2026-10-22T01:35:22.169789Z'
+  support: supports
+  summary: Diagnostic literal reconstruction or source-specific read addendum only;
+    no selected replacement or new absolute experiment.
+  snapshot_sha256: 1d6365c074a962812faeb54570a912169bfea1dae95c43b9c0cdbf1f36f6071d
+- evidence_id: C261-MITE-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch027/chemistry-prep/mite-model-comparison-001.json
+  locator: Six literal substrate/product graphs, exact owner-key comparisons and source
+    pins; retained snapshot /private/tmp/npm-review-work/shared-next-batch027/chemistry-prep/mite-model-comparison-001.json
+  accessed_at: '2026-10-22T01:45:50.974181Z'
+  support: supports
+  summary: Model comparison preserves absent alkene constraints and distinguishes
+    intermediates from owner; no reaction execution.
+  snapshot_sha256: ac1a6946ffff535d9efeb5cee344a067e54e17b15b16b5bb946c34f0f811b9be
+- evidence_id: C261-MIBIG-RETAINED-LOCAL
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0000177.5/
+  locator: Exact retained version5 compound1; local reinspection only; retained snapshot
+    /private/tmp/npm-review-work/evidence/BGC0000177.5.txt
+  accessed_at: '2026-10-22T01:50:02.968133Z'
+  support: supports
+  summary: Original successful HTTP receipt is unavailable in the bounded ignored-inclusive
+    search. This local reinspection time is explicitly not a fresh remote access claim.
+  snapshot_sha256: 5f6580ff9b9d2a1012fadeab6ab86610c9dc75b3c52086f8fb0971d355c9242f
+- evidence_id: C261-STRUCTURE-CONSUMER
+  kind: record_content
+  reference: src/naturalproductmech/curate/structure_corrections.py
+  locator: 'apply_structure_corrections: exact source/target rows, three-star structured
+    target, distinct-owner/collision guards; retained snapshot /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/curate/structure_corrections.py'
+  accessed_at: '2026-10-22T01:54:16.468950Z'
+  support: supports
+  summary: The existing contract cannot consume arbitrary primary graphs or merge
+    an already owned target. No replacement is selected.
+  snapshot_sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+- evidence_id: C261-XREF-CONSUMER
+  kind: record_content
+  reference: src/naturalproductmech/curate/xref_exclusions.py
+  locator: load_xref_exclusions literal regex and unique full-row source guard; retained
+    snapshot /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/curate/xref_exclusions.py
+  accessed_at: '2026-10-22T01:54:16.468950Z'
+  support: supports
+  summary: Only PubChem and six-digit NPAtlas exclusions are currently consumed. ChEMBL
+    requires a reviewed implemented extension.
+  snapshot_sha256: 17c3d9e7794bae596b22cf19a2dd5bc2169475d6fea81ea4e6f1781a53af9157
+- evidence_id: C261-SEED-CONSUMER
+  kind: record_content
+  reference: scripts/seed_from_sources.py
+  locator: build_records xref exclusion after structure correction; carry_curator_owned_fields;
+    write_records migration guards; retained snapshot /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  accessed_at: '2026-10-22T01:54:16.468950Z'
+  support: supports
+  summary: Xref and identity decisions cannot be blindly stacked; changed-key biological
+    joins and curator-owned graphs require explicit reviewed migration.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: C261-CURATION-CONTRACT
+  kind: record_content
+  reference: docs/CURATION.md
+  locator: MIBiG structure/xref/claim-reference curation contracts and generated-record
+    boundaries; retained snapshot /private/tmp/npm-record-reviews-20261021/docs/CURATION.md
+  accessed_at: '2026-10-22T01:54:16.468950Z'
+  support: supports
+  summary: Future correction must use a maintained consumed contract, exact source
+    guards and documented reproduction checks; no generated record is hand-edited.
+  snapshot_sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+assessments:
+- assessment_id: R261-HISTORY
+  area: provenance
+  topic: Complete history and native status
+  outcome: supported
+  summary: 'Native status remains SEEDED and all 3 history actions retain their exact
+    order: [''SEEDED_FROM_SOURCES'', ''SEEDED_FROM_SOURCES'', ''RECORD_CURATED''].
+    Prior curated/protein-reference edits do not replace claim-level scientific assessment.'
+  target_ids:
+  - naturalproductmech:mibig-e9562df516
+  evidence_ids:
+  - R261-OWNER
+- assessment_id: R261-OPTIONAL
+  area: completeness
+  topic: Present optional assertions
+  outcome: supported
+  summary: Six inline graphs comprise three native protein reference graphs and three
+    MITE reaction-model graphs. Their exact substrates, proteins, model qualifications
+    and primary evidence remain in scope. Native reference sequence equality does
+    not establish measured expression, assay constructs or purified enzyme activity.
+    Context inventory equality is not scientific endorsement.
+  target_ids:
+  - naturalproductmech:mibig-e9562df516
+  evidence_ids:
+  - R261-OWNER
+  - R261-LOCAL
+  - R261-PUBCHEM-PREP
+- assessment_id: R261-FILING
+  area: representation
+  topic: Exact computed classification provenance
+  outcome: supported
+  summary: Exact-key NPClassifier version npclassifier.gnps2.org@2026-09-07 reproduces
+    filing, superclass/class and glycoside fields. Computed classification is not
+    independent natural-origin or mechanistic proof; any accepted identity correction
+    requires effective-key reclassification.
+  target_ids:
+  - naturalproductmech:mibig-e9562df516
+  evidence_ids:
+  - R261-OWNER
+  - R261-LOCAL
+- assessment_id: R261-TAXON-SCOPE
+  area: provenance
+  topic: Taxonomic identifiers versus experimental stocks
+  outcome: supported
+  summary: 'Literal current identifier context: 684832: Streptomyces platensis subsp.
+    rosaceus (subspecies); 58346: Streptomyces platensis (species). Identifier agreement
+    does not prove the cited experimental stock, exact congener, occurrence or production;
+    primary source applicability is assessed separately.'
+  target_ids:
+  - naturalproductmech:mibig-e9562df516
+  evidence_ids:
+  - R261-OWNER
+  - R261-TAXON-CONTEXT
+  - R261-Q26291839
+- assessment_id: R261-ORGANISM-IDS
+  area: grounding
+  topic: Literal organism routing
+  outcome: supported
+  summary: The relevant literal P225/P685 routes match. Taxonomic spelling changes
+    are preserved separately from experimental stock and exact congener applicability.
+  target_ids:
+  - naturalproductmech:mibig-e9562df516
+  evidence_ids:
+  - R261-OWNER
+  - R261-TAXON-CONTEXT
+  - R261-IDENTIFIER-READ
+  - R261-Q26291839
+- assessment_id: R261-IMODULON-SCOPE
+  area: completeness
+  topic: Native producer transcriptomic applicability
+  outcome: not_applicable
+  summary: No exact named native producer stock is represented in the complete 20-organism/28-dataset
+    catalogue. E. coli, Streptomyces coelicolor and S. albidoflavus entries are broader
+    contexts; they do not establish exact introduced constructs, production-linked
+    expression or module membership.
+  target_ids:
+  - naturalproductmech:mibig-e9562df516
+  evidence_ids:
+  - R261-OWNER
+  - R261-IMODULON
+- assessment_id: S261-A-ORIGIN
+  area: scope
+  topic: biosynthesis_origin; producer_organisms[0]
+  outcome: supported
+  summary: Exact native iso-migrastatin isolation from NRRL18993 and native genetic
+    necessity are supported. The imported 2009 citation reports iso-migrastatin loss
+    after native mgsF/mgsH disruption and mgsH rescue; its separate no-resin panels
+    track downstream products.
+  target_ids:
+  - naturalproductmech:mibig-e9562df516
+  evidence_ids:
+  - S261-E-LOCAL
+  - S261-E-MGS05-SI
+  - S261-E-MGS09-MAIN
+- assessment_id: S261-A-METHODS
+  area: evidence
+  topic: biosynthetic_gene_clusters[0].locus_evidence_methods
+  outcome: supported
+  summary: The native knockout and cluster sufficiency claims have distinct positive
+    experiments. The 2008 primary directly identifies iso-migrastatin in five introduced
+    Streptomyces hosts by orthogonal chemical comparisons. This supports Heterologous
+    expression without transferring a native knockout into those hosts.
+  target_ids:
+  - naturalproductmech:mibig-e9562df516
+  evidence_ids:
+  - S261-E-LOCAL
+  - S261-E-CURRENT-MGS
+  - S261-E-MGS08-MAIN
+  - S261-E-MGS09-MAIN
+  - S261-E-GRADE-MAP
+- assessment_id: S261-A-OCC0
+  area: evidence
+  topic: occurrences[0]
+  outcome: supported
+  summary: The exact 2005 species occurrence has native NRRL18993 iso-migrastatin
+    4 isolation support. Chemical shunt products and later changed compound numbering
+    remain separate.
+  target_ids:
+  - naturalproductmech:mibig-e9562df516
+  evidence_ids:
+  - S261-E-LOCAL
+  - S261-E-OCC-LEDGER
+  - S261-E-MGS05-SI
+  - S261-E-MGS05-META
+- assessment_id: S261-A-THREE-PROTEINS
+  area: evidence
+  topic: 'causal_graphs: three native reference graphs'
+  outcome: supported
+  summary: All three native reference proteins are grounded by exact complete CDS-aware
+    translation, deposited qualifiers, GenPept and current UniProt equality. MgsI/J/K
+    are 338/281/403 amino acids, with MgsK GTG initiation interpreted as bacterial
+    initiator Met. Unreviewed sequence annotation is not recombinant-construct, cofactor
+    or enzyme-activity evidence.
+  target_ids:
+  - naturalproductmech:mibig-e9562df516
+  evidence_ids:
+  - S261-E-LOCAL
+  - S261-E-MGS-GB
+  - S261-E-MGS-PROTEINS
+  - S261-E-UP-D0U2E7
+  - S261-E-UP-D0U2E8
+  - S261-E-UP-D0U2E9
+  - S261-E-PROTEIN-PEER
+- assessment_id: S261-A-THREE-MODELS
+  area: evidence
+  topic: 'causal_graphs: three MITE reaction-model graphs'
+  outcome: supported
+  summary: The exact pinned MITE models cite native knockout evidence. The 2013 primary
+    supports pathway-level MgsI/J/K roles, explicitly leaves ordering speculative
+    and reports instability preventing in-vitro confirmation. Existing owner qualifications
+    correctly prevent reading model substrates, incomplete stereochemistry or cofactor
+    annotations as directly measured isolated-enzyme conversions. No transfer to BGC0000083
+    is made.
+  target_ids:
+  - naturalproductmech:mibig-e9562df516
+  evidence_ids:
+  - S261-E-LOCAL
+  - S261-E-MITE-327
+  - S261-E-MITE-328
+  - S261-E-MITE-326
+  - S261-E-MGS13-MAIN
+  - S261-E-MGS13-SI
+- assessment_id: S261-A-PUBLISHED-HAND
+  area: identity
+  topic: 'chemical_structure: primary-source assignment scope'
+  outcome: supported
+  summary: The early 2005 article leaves C11 unresolved, whereas the later 2005 supplement
+    explicitly assigns iso-migrastatin 11R using prior absolute evidence and relative
+    X-ray information. The relative X-ray is cited as personal communication. That
+    published assignment is positive; this read is not independent diffraction refinement
+    or a selected graph replacement.
+  target_ids:
+  - naturalproductmech:mibig-e9562df516
+  evidence_ids:
+  - S261-E-MGS05-META
+  - S261-E-MGS05-LATER-SI
+- assessment_id: C261-A-IDENTITY
+  area: identity
+  topic: Stored representation and source-concept provenance
+  outcome: supported
+  summary: The complete source row BGC0000177:1 and source-concept hash reproduce
+    this stored representation; this does not establish that the upstream compound
+    label is correct. Formula, charge, Standard and fixed-H distinctions are independently
+    recorded. Primary support and any conflicting exact xref are assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-e9562df516
+  evidence_ids:
+  - C261-OWNER
+  - C261-GRAPH
+  - C261-COMPARISON
+  dimensions:
+  - name: mibig_source_selector
+    value: BGC0000177:1
+    definition: Accession plus compound_index, distinct from the entry-level accession.
+    evidence_ids:
+    - C261-OWNER
+  - name: complete_raw_row_sha256
+    value: e198faa11f192148450018cf70e3f015aecb25de85462763ea6c7509b278f424
+    definition: Sorted compact ASCII JSON of every parsed TSV field, including empty
+      values.
+    evidence_ids:
+    - C261-OWNER
+- assessment_id: C261-A-GROUNDING
+  area: provenance
+  topic: Exact authority eligibility and source representation
+  outcome: supported
+  summary: No exact eligible row exists in the committed ChEBI projection for this
+    owner. Current bounded name/key searches do not justify a different congener or
+    a two-star grounding.
+  target_ids:
+  - naturalproductmech:mibig-e9562df516
+  evidence_ids:
+  - C261-OWNER
+  - C261-COMPARISON
+  - C261-AUTHORITY-COMPARISON
+  - C261-LOCAL-SEARCH
+  - C261-CHEBI-SEARCH-1
+- assessment_id: C261-A-XREF
+  area: representation
+  topic: Exact literal chemical identifier scope
+  outcome: concern
+  summary: 'Measured exact-literal comparisons: [{"comparison": {"same_charge": true,
+    "same_fixed_h": true, "same_formula": true, "same_full_standard_key": true, "same_standard_inchi":
+    true, "same_stereo_removed_standard": true}, "identifier": "npatlas:NPA013569",
+    "returned_identifier": "NPA013569", "scope": "Exact retained authority response;
+    default strings, fixed-H and stereo precision remain separate"}, {"comparison":
+    {"same_charge": true, "same_fixed_h": false, "same_formula": true, "same_full_standard_key":
+    false, "same_standard_inchi": false, "same_stereo_removed_standard": true}, "identifier":
+    "pubchem:15940571", "returned_identifier": null, "scope": "Exact retained authority
+    response; default strings, fixed-H and stereo precision remain separate"}, {"comparison":
+    {"same_charge": true, "same_fixed_h": false, "same_formula": true, "same_full_standard_key":
+    false, "same_standard_inchi": false, "same_stereo_removed_standard": true}, "identifier":
+    "chembl:CHEMBL1221912", "returned_identifier": "CHEMBL1221912", "scope": "Exact
+    retained authority response; default strings, fixed-H and stereo precision remain
+    separate"}]. Standard identity does not erase fixed-H or stereo differences; no
+    authority graph is automatically adopted.'
+  target_ids:
+  - naturalproductmech:mibig-e9562df516
+  evidence_ids:
+  - C261-MGS05-LATER-SI
+  - C261-MGS09-FIGURE
+  - C261-MITE-326
+  - C261-MITE-327
+  - C261-MITE-328
+  - C261-SOURCE-LIMITS
+  - C261-PRIMARY-COMPARISON-1
+  - C261-PRIMARY-COMPARISON-2
+  - C261-MITE-COMPARISON
+  - C261-MIBIG-RETAINED-LOCAL
+  - C261-STRUCTURE-CONSUMER
+  - C261-XREF-CONSUMER
+  - C261-SEED-CONSUMER
+  - C261-CURATION-CONTRACT
+  - C261-OWNER
+  - C261-GRAPH
+  - C261-COMPARISON
+  - C261-AUTHORITY-COMPARISON
+  - C261-AUTHORITY-DETAIL
+  - C261-AUTH-1
+  - C261-AUTH-2
+  - C261-AUTH-3
+  - C261-AUTH-4
+  - C261-AUTH-5
+  - C261-AUTH-6
+- assessment_id: C261-A-ELIGIBILITY
+  area: grounding
+  topic: ChEBI full-key eligibility and literal serialization
+  outcome: supported
+  summary: '[{"eligible": false, "id": 207272, "literal_default_comparison": {"same_charge":
+    true, "same_fixed_h": true, "same_formula": true, "same_full_standard_key": true,
+    "same_standard_inchi": true, "same_stereo_removed_standard": true}, "literal_default_parse":
+    true, "mol_comparison": {"same_charge": true, "same_fixed_h": true, "same_formula":
+    true, "same_full_standard_key": true, "same_standard_inchi": true, "same_stereo_removed_standard":
+    true}, "name": "Iso-migrastatin", "stars": 2}]. No exact eligible committed three-star
+    join exists for this owner. Two-star candidates and different stereo keys are
+    not adopted. Literal MOL/default SMILES and reconstruction from stated Standard
+    InChI are separate: a generated tautomer is not a source default-form defect.'
+  target_ids:
+  - naturalproductmech:mibig-e9562df516
+  evidence_ids:
+  - C261-MGS05-LATER-SI
+  - C261-MGS09-FIGURE
+  - C261-MITE-326
+  - C261-MITE-327
+  - C261-MITE-328
+  - C261-SOURCE-LIMITS
+  - C261-PRIMARY-COMPARISON-1
+  - C261-PRIMARY-COMPARISON-2
+  - C261-MITE-COMPARISON
+  - C261-MIBIG-RETAINED-LOCAL
+  - C261-STRUCTURE-CONSUMER
+  - C261-XREF-CONSUMER
+  - C261-SEED-CONSUMER
+  - C261-CURATION-CONTRACT
+  - C261-OWNER
+  - C261-GRAPH
+  - C261-COMPARISON
+  - C261-AUTHORITY-COMPARISON
+  - C261-AUTHORITY-DETAIL
+  - C261-AUTH-1
+  - C261-AUTH-2
+  - C261-AUTH-3
+  - C261-AUTH-4
+  - C261-AUTH-5
+  - C261-AUTH-6
+  - C261-CHEBI-SEARCH-1
+- assessment_id: C261-A-MITE
+  area: scope
+  topic: Literal reaction-model chemical scope
+  outcome: supported
+  summary: The six exact MITE source strings and their computed keys agree with the
+    retained graph notes. None is exact-equal to the owner, and products retain unspecified
+    alkene constraints. Native genetics and sequence support do not establish purified
+    individual-step substrate specificity.
+  target_ids:
+  - naturalproductmech:mibig-e9562df516
+  evidence_ids:
+  - C261-MGS05-LATER-SI
+  - C261-MGS09-FIGURE
+  - C261-MITE-326
+  - C261-MITE-327
+  - C261-MITE-328
+  - C261-SOURCE-LIMITS
+  - C261-PRIMARY-COMPARISON-1
+  - C261-PRIMARY-COMPARISON-2
+  - C261-MITE-COMPARISON
+  - C261-MIBIG-RETAINED-LOCAL
+  - C261-STRUCTURE-CONSUMER
+  - C261-XREF-CONSUMER
+  - C261-SEED-CONSUMER
+  - C261-CURATION-CONTRACT
+  - C261-OWNER
+  - C261-GRAPH
+  - C261-COMPARISON
+  - C261-AUTHORITY-COMPARISON
+  - C261-AUTHORITY-DETAIL
+  - C261-AUTH-1
+  - C261-AUTH-2
+  - C261-AUTH-3
+  - C261-AUTH-4
+  - C261-AUTH-5
+  - C261-AUTH-6
+- assessment_id: C261-A-PRIMARY-SCOPE
+  area: scope
+  topic: Primary identity and experimental precision
+  outcome: concern
+  summary: 'The retained graph and literal NPA013569 leave C11 unspecified, whereas
+    literal PubChem15940571 and ChEMBL1221912 specify C11R. Independent original 2006/2009
+    depiction mapping gives C8S/C9S/C10S/C11R/C14S and three E bonds. Original 2005
+    SI ja053118u explicitly supplies the later compound-specific 11R assignment using
+    relative X-ray and an earlier absolute bridge; the relative crystal result is
+    cited as personal communication. The six exact MITE substrate/product graphs were
+    independently compared: none equals the retained whole graph, and no omitted alkene
+    geometry is supplied from the owner.'
+  target_ids:
+  - naturalproductmech:mibig-e9562df516
+  evidence_ids:
+  - C261-MGS05-LATER-SI
+  - C261-MGS09-FIGURE
+  - C261-MITE-326
+  - C261-MITE-327
+  - C261-MITE-328
+  - C261-SOURCE-LIMITS
+  - C261-PRIMARY-COMPARISON-1
+  - C261-PRIMARY-COMPARISON-2
+  - C261-MITE-COMPARISON
+  - C261-MIBIG-RETAINED-LOCAL
+  - C261-STRUCTURE-CONSUMER
+  - C261-XREF-CONSUMER
+  - C261-SEED-CONSUMER
+  - C261-CURATION-CONTRACT
+  - C261-OWNER
+  - C261-GRAPH
+  - C261-COMPARISON
+  - C261-AUTHORITY-COMPARISON
+  - C261-AUTHORITY-DETAIL
+  - C261-AUTH-1
+  - C261-AUTH-2
+  - C261-AUTH-3
+  - C261-AUTH-4
+  - C261-AUTH-5
+  - C261-AUTH-6
+findings:
+- finding_id: C261-F-XREF-PRECISION
+  issue_key: mibig-isomigrastatin-literal-c11-precision
+  category: representation
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Two literal identifiers assert a more specific C11 stereograph
+  description: PubChem15940571 and ChEMBL1221912 specify C11R while this owner and
+    NPA013569 leave that centre unspecified. Same formula and constitution do not
+    establish exact structural equivalence.
+  target_ids:
+  - naturalproductmech:mibig-e9562df516
+  field_paths:
+  - xrefs[1]
+  - xrefs[2]
+  evidence_ids:
+  - C261-MGS05-LATER-SI
+  - C261-MGS09-FIGURE
+  - C261-MITE-326
+  - C261-MITE-327
+  - C261-MITE-328
+  - C261-SOURCE-LIMITS
+  - C261-PRIMARY-COMPARISON-1
+  - C261-PRIMARY-COMPARISON-2
+  - C261-MITE-COMPARISON
+  - C261-MIBIG-RETAINED-LOCAL
+  - C261-STRUCTURE-CONSUMER
+  - C261-XREF-CONSUMER
+  - C261-SEED-CONSUMER
+  - C261-CURATION-CONTRACT
+  - C261-OWNER
+  - C261-GRAPH
+  - C261-COMPARISON
+  - C261-AUTHORITY-COMPARISON
+  - C261-AUTHORITY-DETAIL
+  - C261-AUTH-1
+  - C261-AUTH-2
+  - C261-AUTH-3
+  - C261-AUTH-4
+  - C261-AUTH-5
+  - C261-AUTH-6
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_xref_exclusions.tsv
+    role: Exact literal-source decision with full-row guard
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/xref_exclusions.py
+    role: Consumed literal-identifier exclusion contract and any necessary extension
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Preserve raw assertions and reconcile regeneration/composition
+  rule_id: review-yaml-record:exact-chemical-identity-and-evidence
+  native_severity: major
+  normalization_reason: Confirmed exact-equivalence precision mismatch, independent
+    of whether a later full-graph correction is adopted.
+- finding_id: C261-F-C11-PRECISION
+  issue_key: mibig-isomigrastatin-published-c11-precision
+  category: representation
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The retained iso-migrastatin graph omits the later published C11 assignment
+  description: The owner leaves C11 unspecified despite the inspected later 2005 SI
+    compound-specific 11R assignment and matching 2006/2009 depictions. The relative
+    crystal result was cited as personal communication; no new absolute remeasurement
+    is claimed.
+  target_ids:
+  - naturalproductmech:mibig-e9562df516
+  field_paths:
+  - chemical_structure.smiles
+  - chemical_structure.standard_inchi
+  - chemical_structure.standard_inchi_key
+  - chemical_structure.stereo_complete
+  evidence_ids:
+  - C261-MGS05-LATER-SI
+  - C261-MGS09-FIGURE
+  - C261-MITE-326
+  - C261-MITE-327
+  - C261-MITE-328
+  - C261-SOURCE-LIMITS
+  - C261-PRIMARY-COMPARISON-1
+  - C261-PRIMARY-COMPARISON-2
+  - C261-MITE-COMPARISON
+  - C261-MIBIG-RETAINED-LOCAL
+  - C261-STRUCTURE-CONSUMER
+  - C261-XREF-CONSUMER
+  - C261-SEED-CONSUMER
+  - C261-CURATION-CONTRACT
+  - C261-OWNER
+  - C261-GRAPH
+  - C261-COMPARISON
+  - C261-AUTHORITY-COMPARISON
+  - C261-AUTHORITY-DETAIL
+  - C261-AUTH-1
+  - C261-AUTH-2
+  - C261-AUTH-3
+  - C261-AUTH-4
+  - C261-AUTH-5
+  - C261-AUTH-6
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: Strict source/target correction only after independent exact identity adjudication
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/structure_corrections.py
+    role: Implement supported qualification or migration when existing target-only
+      contract is insufficient
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/alkaloids/iso-migrastatin.yaml
+    role: Curator-owned fields and source-specific biological joins require explicit
+      preservation or migration
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Exact old/new-key ownership and overlay composition
+  - repository: CultureBotAI/NaturalProductMech
+    path: docs/CURATION.md
+    role: Document implemented correction or qualification semantics
+  rule_id: review-yaml-record:exact-chemical-identity-and-evidence
+  native_severity: major
+  normalization_reason: Missing supported source precision is major; it is not a claim
+    that the unspecified centre has a wrong hand.
+actions:
+- action_id: C261-ACTION-XREF-PRECISION
+  finding_ids:
+  - C261-F-XREF-PRECISION
+  target_ids:
+  - naturalproductmech:mibig-e9562df516
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_xref_exclusions.tsv
+    role: Exact literal-source decision with full-row guard
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/xref_exclusions.py
+    role: Consumed literal-identifier exclusion contract and any necessary extension
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Preserve raw assertions and reconcile regeneration/composition
+  description: 'Withhold or explicitly qualify only the two mismatching literal equivalences.
+    The current strict loader can consume the PubChem decision but rejects ChEMBL:
+    implement and test an exact ChEMBL exclusion/qualification contract before proposing
+    that row. Preserve immutable raw assertions and NPA013569. Reconcile any later
+    C11 structure correction explicitly, because the current seeder rejects stacked
+    exclusions after structure correction. Preserve exact source/version/full-row
+    guards [{"entry_version": "5", "expected_source_row_sha256": "e198faa11f192148450018cf70e3f015aecb25de85462763ea6c7509b278f424",
+    "full_original_row": {"bgc_classes": "PKS", "bgc_subclasses": "Type I", "cluster_link_evidence_basis":
+    "CLUSTER_DEMONSTRATED", "compound_classes": "", "compound_index": "1", "compound_name":
+    "iso-migrastatin", "database_ids": "npatlas:NPA013569|pubchem:15940571|chembl:CHEMBL1221912",
+    "entry_completeness": "complete", "entry_quality": "questionable", "entry_status":
+    "active", "entry_version": "5", "genome_accession": "GQ274953.1", "locus_evidence_methods":
+    "Knock-out studies|Heterologous expression", "locus_from": "", "locus_to": "",
+    "mibig_accession": "BGC0000177", "primary_reference": "PMID:19726666", "producer_evidence_basis":
+    "BGC_CHARACTERIZED", "reference_basis": "ENTRY", "smiles": "CO[C@H]1\\C=C\\CC\\C=C\\C(=O)OC([C@@H](C)[C@@H]1O)C(\\C)=C\\[C@H](C)C(=O)CCCC1CC(=O)NC(=O)C1",
+    "standard_inchi": "InChI=1S/C27H39NO7/c1-17(21(29)11-9-10-20-15-23(30)28-24(31)16-20)14-18(2)27-19(3)26(33)22(34-4)12-7-5-6-8-13-25(32)35-27/h7-8,12-14,17,19-20,22,26-27,33H,5-6,9-11,15-16H2,1-4H3,(H,28,30,31)/b12-7+,13-8+,18-14+/t17-,19-,22-,26-,27?/m0/s1",
+    "standard_inchi_key": "TYTDEHCAAKKYOG-ZTTCWHDESA-N", "stereo_complete": "false",
+    "taxon_id": "NCBITaxon:684832", "taxon_label": "Streptomyces platensis subsp.
+    rosaceus"}, "source_id": "BGC0000177:1"}]. No action has been executed.'
+  generator: Existing PubChem exclusion plus a reviewed implemented ChEMBL contract;
+    no direct YAML or raw-row edit
+  acceptance_checks:
+  - Exact selector/version and every field of the frozen source row are checked; stale
+    or duplicate decisions fail closed.
+  - No biological producer, occurrence, assay, protein construct or native status
+    is silently transferred by name or chemical resemblance.
+  - Existing correction/exclusion/biological overlays are tested together rather than
+    presumed composable.
+  - An authorized curator performs documented canary, reproduction and required native
+    gates after an implemented decision.
+  - ChEMBL handling is explicitly implemented and tested; unsupported literal syntax
+    is not inserted into the current TSV.
+- action_id: C261-ACTION-C11-PRECISION
+  finding_ids:
+  - C261-F-C11-PRECISION
+  target_ids:
+  - naturalproductmech:mibig-e9562df516
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: Strict source/target correction only after independent exact identity adjudication
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/structure_corrections.py
+    role: Implement supported qualification or migration when existing target-only
+      contract is insufficient
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/alkaloids/iso-migrastatin.yaml
+    role: Curator-owned fields and source-specific biological joins require explicit
+      preservation or migration
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Exact old/new-key ownership and overlay composition
+  - repository: CultureBotAI/NaturalProductMech
+    path: docs/CURATION.md
+    role: Document implemented correction or qualification semantics
+  description: 'Reconcile the published C11 assignment with the exact natural-product
+    identity and retain the private-crystal/absolute-bridge limitations. If the complete
+    graph is selected, implement a supported exact target/precision contract before
+    changing identity; the measured fully specified authority is not an automatically
+    eligible exact committed target. Re-audit all six curated Mgs graphs and their
+    distinct MITE intermediate/product models, exact source-key joins and xrefs. Do
+    not fill omitted model alkene geometry from the owner or transfer enzyme specificity
+    from metadata. Preserve exact source/version/full-row guards [{"entry_version":
+    "5", "expected_source_row_sha256": "e198faa11f192148450018cf70e3f015aecb25de85462763ea6c7509b278f424",
+    "full_original_row": {"bgc_classes": "PKS", "bgc_subclasses": "Type I", "cluster_link_evidence_basis":
+    "CLUSTER_DEMONSTRATED", "compound_classes": "", "compound_index": "1", "compound_name":
+    "iso-migrastatin", "database_ids": "npatlas:NPA013569|pubchem:15940571|chembl:CHEMBL1221912",
+    "entry_completeness": "complete", "entry_quality": "questionable", "entry_status":
+    "active", "entry_version": "5", "genome_accession": "GQ274953.1", "locus_evidence_methods":
+    "Knock-out studies|Heterologous expression", "locus_from": "", "locus_to": "",
+    "mibig_accession": "BGC0000177", "primary_reference": "PMID:19726666", "producer_evidence_basis":
+    "BGC_CHARACTERIZED", "reference_basis": "ENTRY", "smiles": "CO[C@H]1\\C=C\\CC\\C=C\\C(=O)OC([C@@H](C)[C@@H]1O)C(\\C)=C\\[C@H](C)C(=O)CCCC1CC(=O)NC(=O)C1",
+    "standard_inchi": "InChI=1S/C27H39NO7/c1-17(21(29)11-9-10-20-15-23(30)28-24(31)16-20)14-18(2)27-19(3)26(33)22(34-4)12-7-5-6-8-13-25(32)35-27/h7-8,12-14,17,19-20,22,26-27,33H,5-6,9-11,15-16H2,1-4H3,(H,28,30,31)/b12-7+,13-8+,18-14+/t17-,19-,22-,26-,27?/m0/s1",
+    "standard_inchi_key": "TYTDEHCAAKKYOG-ZTTCWHDESA-N", "stereo_complete": "false",
+    "taxon_id": "NCBITaxon:684832", "taxon_label": "Streptomyces platensis subsp.
+    rosaceus"}, "source_id": "BGC0000177:1"}]. No action has been executed.'
+  generator: Independent primary adjudication followed by a maintained consumed precision/identity
+    contract and explicit migration
+  acceptance_checks:
+  - Exact selector/version and every field of the frozen source row are checked; stale
+    or duplicate decisions fail closed.
+  - No biological producer, occurrence, assay, protein construct or native status
+    is silently transferred by name or chemical resemblance.
+  - Existing correction/exclusion/biological overlays are tested together rather than
+    presumed composable.
+  - An authorized curator performs documented canary, reproduction and required native
+    gates after an implemented decision.
+  - Published assignment, underlying inaccessible crystal data and original absolute
+    bridge are distinguished.
+  - Six existing graph models remain distinct; absent E constraints are not invented.
+limitations:
+- Context establishes exact owner/history/source inventory, literal identifier routing
+  and computed classification. Primary production, congener identity, stock applicability,
+  protein/graph and method claims retain their separate scientific scope. Isoflavipucine
+  and Stachybotrys context remains chemical identity/provenance and high-level evidence
+  only.
+- Current natural-hand/identifier precision remains independently assessed by chemistry.
+  A completed biology scope does not select a structure repair.
+- The source describes its relative X-ray basis as a personal communication. No independent
+  diffraction data, recombinant construct equality or purified MgsI/J/K substrate-specific
+  assay is claimed.
+- Authority matches establish the representations actually returned at their retained
+  access times; they are not independent experimental structure or absolute-hand determinations.
+  Organism, locus, classification and history claims are assessed separately.
+- The published later C11 assignment is positive, but original private crystal data
+  and the cited absolute-bridge experiment were not independently reanalysed. No graph
+  replacement is selected. The reused BGC0000177.5 bytes are pinned; the original
+  successful HTTP receipt was not located in the ignored-inclusive scratch search.
+  A new access instant is not invented. MITE model identity and missing geometry are
+  separate from experimental enzyme specificity, preferred tailoring order and construct
+  equivalence.
+- The first fresh QC attempt failed during the public vendored-sync fetch after lint
+  passed. Only the separately recorded complete successful QC retry002 is used as
+  the baseline check; the actual failed001 receipt/log/capture/root observation remain
+  bound.
+- Reproduction retains42 withheld ambiguous producer claims,161 merged-taxon rewrites
+  and5 unresolved assay-organism targets.
+- 499non-blocking plausibility warnings and4750no-adapter skips remain.
+- Four skipped tests and two dependency warnings remain disclosed. Reproduction also
+  reports42 withheld ambiguous-producer claims,161 merged-taxon rewrites and5 unresolved
+  assay-organism rows. Gate success is configured consistency, not scientific validation
+  of every claim.
+- 'Clarification of root review-queue observation: actual session80402 terminal0 and
+  receipt/hash are confirmed. Combined initial log display was truncated; root read
+  its command/output header, displayed samples and final summary, then recovered all12
+  queue headers in a bounded projection. Root did not read all8928 per-record queue
+  descriptions. No gate outcome changes.'
+- Native baseline gates establish configured consistency, not independent biological
+  production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions
+  and no-adapter pairs; a successful command does not convert these into verified
+  scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command
+  execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population
+  was checked; external caches and generated bytecode are not asserted to be independently
+  byte-pinned.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+- Scientific conclusions integrate the chemical, biological and provenance assessments;
+  source access and unresolved scopes remain explicit.
+tags:
+- path-order-campaign
+- batch-027
+```
