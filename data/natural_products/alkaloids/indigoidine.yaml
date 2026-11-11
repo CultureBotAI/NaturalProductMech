@@ -714,8 +714,15 @@ causal_graphs:
       evidence_type: DATABASE_ASSERTION
       notes: UniParc UPI0001895A6C (1283 aa) archives historical EMBL ACK77757.1 (Ala385
         version 1) and links inactive UniProtKB/TrEMBL B8Y4G4 (Kitasatospora aureofaciens,
-        taxon 1894, gene sa8), distinct from revised ACK77757.2 (Thr385, UPI0001DE5E11).
-      retrieved_on: '2026-10-30'
+        taxon 1894, gene sa8), distinct from revised ACK77757.2 (Thr385, UPI000444B524).
+      retrieved_on: '2026-11-09'
+    - reference: https://rest.uniprot.org/uniparc/UPI000444B524.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-11-09'
+      notes: UniParc UPI000444B524 (1283 aa, Thr385) links active EMBL ACK77757 sequence
+        version 2, EMBL ATZ29785 sequence version 1 and UniProtKB/TrEMBL A0A2K8PVS5.
+        The complete sequence matches A0A2K8PVS5. This is exact reference-sequence
+        correspondence, not proof of the experimental parental allele.
   - subject: bpsa_deletion
     predicate: abolishes reported blue-pigment production of
     object: indigoidine
@@ -990,4 +997,12 @@ curation_history:
     1283-aa Ala385 BpsA (NCBIProtein:ACK77757.1, inactive UniProtKB/TrEMBL B8Y4G4,
     distinct from revised Thr385 ACK77757.2 / UPI0001DE5E11) in indigoidine-ccm3239-bpsa-interventions
     (#1055).
+  llm_assisted: true
+- timestamp: '2026-11-09T07:06:10Z'
+  curator: codex
+  action: CORRECTED_UNIPARC_REFERENCE
+  changes: Corrected the revised ACK77757.2 BpsA archive identifier in the historical-reference
+    edge from unrelated 146-aa UPI0001DE5E11 to verified 1283-aa Thr385 UPI000444B524;
+    retained ACK77757.1/Ala385 and experimental-allele boundaries, added direct archive
+    evidence and preserved all prior history (#1244).
   llm_assisted: true
