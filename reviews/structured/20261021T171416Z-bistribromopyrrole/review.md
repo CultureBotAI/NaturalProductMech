@@ -1,0 +1,1093 @@
+# Bistribromopyrrole: exact graph and native MMB-1 source scope
+
+- Review: 20261021T171416Z-bistribromopyrrole
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-21T17:04:53.728786Z
+- Finished UTC: 2026-10-21T17:14:16.461171Z
+- Reviewer: Codex (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The exact hexabromobipyrrole structure agrees with the primary drawing and literal PubChem record. Native MMB-1 analytical detection supports the recorded source assertion; imported empty-method grading remains faithful. The source culture-condition discrepancy and unresolved donor attribution of an optional final-product enzyme assay are retained as limitations. No confirmed curation defect was found.
+
+## Scope And Provenance
+
+One complete generated owner and any referenced components, assessed claim by claim for exact identity, provenance, origin, producer and occurrence scope, biosynthesis, classification, optional content and audit history.
+
+Selection: Campaign record 111, batch 012, selected in path order from the fresh-main authoritative validated catalogue and the separately validated targets in earlier batch commits (publication tracked separately). At selection, 164 of 3116 current records had campaign coverage and 2952 remained. The population search included ignored files. Exactly one target is assessed here.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 1c2402097718c138b081e00943de8f04de0541cd.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-a9f74e9bb6 | data/natural_products/alkaloids/bistribromopyrrole.yaml | generated | bistribromopyrrole |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Closed-schema target validation | passed | True | naturalproductmech:mibig-a9f74e9bb6 | The documented target strict validator completed; scientific support is assessed separately. |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-a9f74e9bb6 | All 3,116 current record files agree with PATHS.tsv and their pinned filing pathways. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-a9f74e9bb6 | All 3,116 current records passed the documented byte-reproduction gate against committed inventories and maintained curation inputs. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-a9f74e9bb6 | The exhaustive review queue produced 8,928 diagnostic rows across 12 queues; this deterministic output does not establish scientific review. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-a9f74e9bb6 | The configured identifier-label gate passed using the existing ontology caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions, 499 warning-only mismatches and 4,744 pairs skipped because their prefixes have no adapter. |
+| Full repository quality gate on the current main baseline | passed | True | naturalproductmech:mibig-a9f74e9bb6 | The full documented just qc recipe passed on the unchanged main baseline during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). All configured lint, governance, documentation, provenance, source-queue, schema, rendering, reproduction, filing-integrity and reporting stages completed successfully. |
+| Complete owner and referenced-component scope | passed | True | naturalproductmech:mibig-a9f74e9bb6 | Complete owner and exact matching source rows were read after actual intake, and their bytes match this base. Referenced components are empty. Fresh strict target validation is retained separately. |
+| Exact natural compound and native MMB-1 culture applicability | passed | True | naturalproductmech:mibig-a9f74e9bb6 | The original native trace positively supports exact compound 2 in MMB-1. The independently characterized reference compound is from 2ta16; that distinction does not erase the MMB-1 analytical detection. |
+| Cited strain, interval and imported grade scope | passed | True | naturalproductmech:mibig-a9f74e9bb6 | The cited article and exact deposited interval match the MMB-1 source assertion. Empty imported methods are honestly CLUSTER_UNSTATED, and no native MMB-1 deletion or exact donor-resolved final-product assay is asserted by the owner. |
+| Optional MMB-1 attribution of the purified final-product catalyst | unavailable | False | naturalproductmech:mibig-a9f74e9bb6 | The read main and SI do not unambiguously bridge the assayed Bmp7/Bmp9/Bmp10 donor sequences to this MMB-1 locus. This limits a stronger future method annotation; no such protein or assay-equivalence claim is currently present. |
+| Stored chemical representation and complete source row | passed | True | naturalproductmech:mibig-a9f74e9bb6 | Fresh intake derivation agrees with the stored graph; the source selector, full row and prepared snapshot were independently rechecked. |
+| Exact primary chemical structure | passed | True | naturalproductmech:mibig-a9f74e9bb6 | The inspected original compound-2 drawing independently matches the exact neutral NH hexabromobipyrrole graph. |
+| Literal PubChem chemical identity | passed | True | naturalproductmech:mibig-a9f74e9bb6 | The literal CID23426790 response matches Standard key, fixed-H graph, formula and charge; it is distinct from experimental structure proof. |
+
+## Scientific And Domain Assessments
+
+### Native status and retained audit history
+
+provenance: supported. Targets: naturalproductmech:mibig-a9f74e9bb6.
+
+All retained history events record SEEDED_FROM_SOURCES provenance. The owner remains SEEDED. This review does not change its status, history or scientific content.
+
+### Present optional assertions and enrichment limits
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-a9f74e9bb6.
+
+No optional pathway, mechanism graph, molecular target, bioactivity, application, clinical status, cross-record relation or discussion is asserted. Optional enrichment is separate from correcting current claims.
+
+### Exact-key computed classification provenance
+
+representation: supported. Targets: naturalproductmech:mibig-a9f74e9bb6.
+
+The owner reproduces its exact-key NPClassifier result, including npclassifier.gnps2.org@2026-09-07, Alkaloids filing, superclass/class labels and the false glycoside prediction. Predictions do not independently prove precursor use, natural origin or stereochemistry. Identity correction requires reclassification against the corrected effective key.
+
+### Producer and experimental-host transcriptomic applicability
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-a9f74e9bb6.
+
+The exact native Marinomonas mediterranea MMB-1 producer is absent from the inspected catalogue. The primary whole-pathway heterologous experiment uses Pseudoalteromonas luteoviolacea 2ta16 genes in E. coli BL21(DE3); the catalogue E. coli datasets do not establish that host/construct or its introduced pathway modules.
+
+### Natural origin and producer versus occurrence scope
+
+evidence: supported. Targets: naturalproductmech:mibig-a9f74e9bb6.
+
+Natural origin and the MMB-1 source assertion have positive primary culture evidence. The cited study detects exact compound 2 in MMB-1, while its NMR reference isolation is from 2ta16. The record does not invent a separate LOTUS occurrence, a native knockout or a species-wide unqualified producer.
+
+### Locus and producer evidence tiers
+
+evidence: supported. Targets: naturalproductmech:mibig-a9f74e9bb6.
+
+Retain SOURCE_ASSERTION for MMB-1 and CLUSTER_UNSTATED for the imported empty-method locus. The 2ta16 construct experiments and exact in vitro product chemistry are real positive findings in the paper, but their experimental context is not an exact native MMB-1 perturbation. There is no confirmed grade correction from the inspected evidence.
+
+### Source-specific culture and assay limitations
+
+evidence: unknown. Targets: naturalproductmech:mibig-a9f74e9bb6.
+
+The main analytical-culture recipe and Figure S1 differ about added bromide. This is a bounded source inconsistency, not an existing owner condition error because no culture condition is emitted. Purified final-product chemistry is positive, but its exact MMB-1 enzyme-donor equivalence remains unverified.
+
+### Optional pathways, proteins and activity
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-a9f74e9bb6.
+
+No pathway, protein example, activity measurement or target is asserted in this owner. Missing optional additions alone are not findings. Bmp2 acts on tethered precursors, Bmp1 thioesterase was tested on a model substrate, and Bmp8 offloading was proposed; endocrine/toxicological discussion about other brominated phenols is not an exact bistribromopyrrole target claim.
+
+### Stored graph and source-concept identity
+
+identity: supported. Targets: naturalproductmech:mibig-a9f74e9bb6.
+
+The complete source row BGC0001465:2 and minted source concept reproduce this stored representation. Formula, charge, Standard and fixed-H distinctions are independently recorded. Primary support and any conflicting exact xref are assessed separately.
+
+### Exact authority eligibility and source representation
+
+provenance: supported. Targets: naturalproductmech:mibig-a9f74e9bb6.
+
+No exact eligible row exists in the committed ChEBI projection for this owner. Current bounded name/key searches do not justify a different congener or a two-star grounding.
+
+### Exact compound number, substituents and represented stereochemistry
+
+identity: supported. Targets: naturalproductmech:mibig-a9f74e9bb6.
+
+The label bistribromopyrrole maps to primary compound 2 and the current graph. No tetrahedral or double-bond stereochemical element is present in this representation; absence of such elements does not certify a rotational barrier or an unmeasured atropisomer.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| R111-OWNER | data/natural_products/alkaloids/bistribromopyrrole.yaml; Complete owner, every assertion, discussions and history | supports | Root read the entire bistribromopyrrole owner following official intake and rechecked it against the pinned preparation. It contains 0 occurrence, 1 producer and 1 cluster assertions. The referenced component set is empty. Present optional fields: none. |
+| R111-LOCAL | /private/tmp/npm-review-work/111/local-sources.json; Complete resolved owner and all exact matching intake source rows | context_only | Root read every matching captured MIBiG, LOTUS, ChEBI, CyanoMetDB and NPClassifier row, including empty inventories and the resolved owner. Source fidelity is separate from independent experimental support. |
+| R111-IMODULON | https://imodulondb.org/api/datasets; Complete official 20-organism/28-dataset catalogue | context_only | The entire catalogue was read at this actual retrieval. It establishes catalogue membership only; no chemical identity, production or arbitrary module assignment follows. |
+| S111-E-OWNER | data/natural_products/alkaloids/bistribromopyrrole.yaml; Complete owner and resolved component view | supports | One exact generated owner was read in full. Its source claims, methods, citations and discussion are assessed here; the empty component map and optional-slot inventory are direct observations, not a global absence claim. |
+| S111-E-RAW | data/raw/mibig_compounds.tsv; BGC0001465:2; complete parsed-row SHA256 0036c2dc4182b96b04f009cf022b1346f635cb150895eb8322b1818fbc75ef84 | supports | The official intake exactly matches the frozen complete raw row and its owner bytes. Entry-level primary citations are explicitly emitted as DATABASE_ASSERTION; no primary experiment is silently relabelled as an imported measurement. |
+| S111-E-GRADING | conf/producer_evidence.tsv; Complete evidence vocabulary; empty-method case and organism-versus-locus columns | supports | Empty methods give SOURCE_ASSERTION and CLUSTER_UNSTATED. Heterologous expression and Enzymatic assays establish a locus endpoint without proving the source taxon produces it. Native knockout or genuine native correlation requires its distinct experimental context. |
+| S111-E-MAIN | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&amp;id=4104138&amp;retmode=xml; DOI 10.1038/nchembio.1564; PMID 24974229; Results genetic basis and Bmp7 coupling; Online Methods sources, construct assembly, deletions, expression and enzyme assays | supports | The original main reports compounds 1–3 in marine native cultures, including M. mediterranea MMB-1 obtained as ATCC 700492. The bmp1–8 expression and plasmid deletion work uses P. luteoviolacea 2ta16 genes in E. coli BL21(DE3). Purified Bmp7 with Bmp9/Bmp10 and NADH forms exact compound 2 from tribromopyrrole 6, but the read methods do not unambiguously identify those assayed protein donor sequences as MMB-1. |
+| S111-E-SI-NATIVE | https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnchembio.1564/MediaObjects/41589_2014_BFnchembio1564_MOESM590_ESM.pdf; Supplementary Figure 1, physical page 12; compound 2 violet trace for MMB-1 | supports | Original pixels show compound 2 in the MMB-1 culture extract by LC-MS/MS. The caption specifically states marine broth without extra bromide, whereas the main analytical-culture Methods describe added KBr. Both descriptions are retained; neither is silently chosen as the condition for every experiment. |
+| S111-E-SI-PRODUCT | https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnchembio.1564/MediaObjects/41589_2014_BFnchembio1564_MOESM590_ESM.pdf; Supplementary Figures 13–14, physical pages 25–27; Table 1, page 50; Table 2, page 51 | supports | The exact Bmp7 product 2 matches the NMR-characterized 2ta16 isolate in retention time, bromine-isotope profile and MS/MS. The drawing and formula are C8H2Br6N2, not the dimethyl derivative or tetrabromopyrrole 7. Table 2 lists annotation homolog accessions, not experimentally established native enzyme identities. The reported symmetry/NMR was read without raw spectral reprocessing. |
+| S111-E-LOCUS | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&amp;id=NC_015276.1&amp;seq_start=4521275&amp;seq_stop=4533494&amp;rettype=gb&amp;retmode=text; NC_015276.1:4521275..4533494; source and all CDS feature annotations | supports | The exact 12,220-bp interval names M. mediterranea MMB-1, taxon 717774, and contains eleven annotated CDSs including the extra transporter. Its RefSeq record is tied to CP002583.1. The current feature bridge supports accession and strain scope; it does not establish sequence equality with a tagged experimental Bmp7 construct. |
+| C111-OWNER | data/natural_products/alkaloids/bistribromopyrrole.yaml; Complete owner and all local-source rows; no referenced components | supports | The complete owner denotes bistribromopyrrole under naturalproductmech:mibig-a9f74e9bb6. Its exact source selector is BGC0001465:2, version 5, with complete parsed raw-row SHA256 0036c2dc4182b96b04f009cf022b1346f635cb150895eb8322b1818fbc75ef84. The official intake and prepared owner bytes agree. |
+| C111-GRAPH | /private/tmp/npm-review-work/111/chemistry.json; Fresh intake RDKit result and frozen Standard/fixed-H comparison | supports | The stored SMILES recomputes to CKUAYXRLIBAUTH-UHFFFAOYSA-N, formula C8H2Br6N2, formal charge 0; stored InChI/key agree. These are representation checks, not experimental identity proof. |
+| C111-COMPARISON | /private/tmp/npm-review-work/shared-next-batch012/chemistry-prep/chemical-comparison.json; Record 111; exact source rows and each graph comparison | supports | Achiral C8H2Br6N2 with two carbon-linked tribromopyrroles. Current exact MIBiG and literal PubChem23426790 agree. Bounded exact/name ChEBI queries returned no result; this is not a global absence claim. |
+| C111-LOCAL-SEARCH | /private/tmp/npm-review-work/111/chemistry-search-receipt.json; Exact full key, label, slug and source selector in raw/owner/curation trees | supports | Ignored-inclusive bounded search preserves all matching paths; an absent curation decision does not imply a missing scientific source. |
+| C111-CHEBI-SEARCH-1 | https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=CKUAYXRLIBAUTH-UHFFFAOYSA-N&amp;size=100; Literal key search; chebi-key-bistribromopyrrole.json | supports | No compound matches the provided term: 'CKUAYXRLIBAUTH-UHFFFAOYSA-N' |
+| C111-CHEBI-SEARCH-2 | https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=bistribromopyrrole&amp;size=100; Literal name search; chebi-name-bistribromopyrrole.json | supports | No compound matches the provided term: 'bistribromopyrrole' |
+| C111-AUTH-1 | https://mibig.secondarymetabolites.org/repository/BGC0001465.5/annotations.json; compounds[].structure; BGC0001465.5.json | supports | current MIBiG BGC0001465:2: parsed key CKUAYXRLIBAUTH-UHFFFAOYSA-N; exact stored Standard key match=True, fixed-H match=True. This current database representation is not independent primary experimental proof. |
+| C111-AUTH-2 | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/CKUAYXRLIBAUTH-UHFFFAOYSA-N/property/InChIKey,InChI,IsomericSMILES,MolecularFormula,Charge/JSON; PropertyTable.Properties[].SMILES; pubchem-key-bistribromopyrrole.json | supports | PubChem 23426790: parsed key CKUAYXRLIBAUTH-UHFFFAOYSA-N; exact stored Standard key match=True, fixed-H match=True. This current database representation is not independent primary experimental proof. |
+| C111-AUTH-3 | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/23426790/property/InChIKey,InChI,IsomericSMILES,MolecularFormula,Charge/JSON; PropertyTable.Properties[].SMILES; pubchem-23426790.json | supports | PubChem 23426790: parsed key CKUAYXRLIBAUTH-UHFFFAOYSA-N; exact stored Standard key match=True, fixed-H match=True. This current database representation is not independent primary experimental proof. |
+| C111-PRIMARY | DOI:10.1038/nchembio.1564; Original Figure 1a, exact compound 2; retained independent planar transcription | supports | The original compound-2 drawing has two NH tribromopyrroles linked through carbon, six bromines and no N-methyl groups. Its independent transcription reproduces the full Standard and fixed-H graph, neutral C8H2Br6N2. The adjacent N,N-dimethyl derivative and tetrabromopyrrole 7 are distinct products. |
+| C111-PRIMARY-MAP | /private/tmp/npm-review-work/shared-next-batch012/chemistry-prep/primary-mapping/other-primary-transcriptions.json; bistribromopyrrole entry; original Figure 1a transcription | supports | The independently transcribed graph matches CKUAYXRLIBAUTH-UHFFFAOYSA-N and the retained fixed-H structure. No axial configuration or rotational stability is inferred from the planar structure. |
+
+## Limits And Additional Notes
+
+- This review evaluates present assertions and bounded evidence gaps; it does not claim exhaustive discovery of all later papers or require every optional mechanism for coverage.
+- The exact donor and native-sequence equivalence of assayed Bmp7/Bmp9/Bmp10 remain unresolved in the inspected main/SI. This is optional stronger-method context, not an unavailable asserted protein claim.
+- Figure S1 says no extra bromide; the main culture protocol adds KBr. The review preserves the discrepancy and does not silently assign one condition to all traces.
+- Deposited locus annotations were inspected without independent full CDS translation or laboratory-construct alignment. Spectra were read at the published assignment level, not reprocessed.
+- Authority matches establish the representations actually returned at their retained access times; they are not independent experimental structure or absolute-hand determinations. Root and science sections separately assess organism, locus, classification and history claims.
+- Primary evidence here is the exact original drawing and reported structure identity; no independent spectral reprocessing or atropisomer experiment was performed. Native MMB-1 detection and the distinct recombinant Bmp7 source scope are assessed in the science section.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35 explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). Skipped tests are not counted as passing tests. Existing ontology caches were used; no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do not establish biological production, stereochemical specificity, evidence adequacy, or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology results. Reuse establishes unchanged repository inputs; it is not a new remote authority query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all tracked files are hashed. Generated Python bytecode and external tool caches are not claimed to have been independently byte-pinned at the prior execution.
+- No scientific owner, inventory, curation table, native status or history was edited. Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification; target strict validation ran afresh. Scientific failed or unavailable checks are distinct from bundle validation.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T171416Z-bistribromopyrrole
+title: 'Bistribromopyrrole: exact graph and native MMB-1 source scope'
+started_at: '2026-10-21T17:04:53.728786Z'
+finished_at: '2026-10-21T17:14:16.461171Z'
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The exact hexabromobipyrrole structure agrees with the primary drawing and
+  literal PubChem record. Native MMB-1 analytical detection supports the recorded
+  source assertion; imported empty-method grading remains faithful. The source culture-condition
+  discrepancy and unresolved donor attribution of an optional final-product enzyme
+  assay are retained as limitations. No confirmed curation defect was found.
+source:
+  git_revision: 1c2402097718c138b081e00943de8f04de0541cd
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/bistribromopyrrole.yaml
+    sha256: 8b3c8887fe4dbe182936e0ee4f4883028e3f11a6dfbab7aff87a8e887ef95bdf
+    role: target
+  - path: data/natural_products/alkaloids/borregomycin-a.yaml
+    sha256: bf9b44c57f6734da0c084b3068d28487abe4f659fdd4bb37757e8c7deca38a2e
+    role: context
+  - path: data/natural_products/alkaloids/borregomycin-b.yaml
+    sha256: 9476819eb5f2becadcb7d7fe05a0f58916aaec5ee1929fbf8ba99cfcdf0d2019
+    role: context
+  - path: data/natural_products/alkaloids/borregomycin-c.yaml
+    sha256: 1cc427346e84cd3ab15ec365a1b200fb03b43d5885908526a104597f1c4dc98f
+    role: context
+  - path: data/natural_products/alkaloids/borregomycin-d.yaml
+    sha256: 5a7dd75966bd491be3786cbcfbe11de6e0e63a0d79608d6eb602400ebd0b6cba
+    role: context
+  - path: data/natural_products/alkaloids/brabantamide-a.yaml
+    sha256: 9a1854c1561046147ba4b00018e2a2ada613d14d9e64e95c464f1999b9fa4282
+    role: context
+  - path: data/natural_products/alkaloids/brasiliamide-i.yaml
+    sha256: 2418c0f1f2fb61688678c0bea4fe3db760a58a662f2ec183a264c1e89efce07c
+    role: context
+  - path: data/natural_products/alkaloids/butanochelin.yaml
+    sha256: 57fd74a20cc397c2fa2249a402b4dec338d7d1571130b7b598570cf80c29d10c
+    role: context
+  - path: data/natural_products/alkaloids/c-3-sulfonylated-derivative.yaml
+    sha256: e3097dca4a594b6449cf9a61e7f57adf94f465a588c5a08d7e721f430aaff7a6
+    role: context
+  - path: data/natural_products/alkaloids/caerulomycin-a.yaml
+    sha256: dcf2bfab966f404a040e81d1de50a51c4742695b8f2850b487c5f19a5b467d67
+    role: context
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: data/raw/taxon_merged.tsv
+    sha256: 97b3efa66d4fc1679ab65ae547e78b2f627f37bc8e45ae33f2719008fe3863bb
+    role: context
+  - path: data/raw/taxon_names.tsv
+    sha256: 9058b9a99260eb483ea21ce7cc9713fd336177031d883f0b5fb50325c7b2c371
+    role: context
+  - path: data/raw/taxon_non_organism.tsv
+    sha256: f2c1ee257bbbcb0854528196ab1f809d658c27f1c7b2036f7f71f088b52935bb
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+    role: context
+  - path: src/naturalproductmech/curate/xref_exclusions.py
+    sha256: 17c3d9e7794bae596b22cf19a2dd5bc2169475d6fea81ea4e6f1781a53af9157
+    role: context
+  - path: src/naturalproductmech/grading.py
+    sha256: ece54c4a2c0803f034ac59de51b1006cf79ea8d6b6256d75757d4adb88ea9630
+    role: context
+  - path: src/naturalproductmech/schema/mech_shared.yaml
+    sha256: c2e7054fd32635e380c698282bd886a9105861009b9f0474f02bb1b80865e895
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: tests/test_claim_references.py
+    sha256: 11b2fc60dbe32154df63fb2e8c784c7c8ba6585581c09bba2eebe2c5192d4c06
+    role: context
+  - path: tests/test_mibig_locus_evidence_overrides.py
+    sha256: 9177b5bd24f6e47cc4743857179217d9e0d4add9560b2ce3faefaebe53ba09a0
+    role: context
+  - path: tests/test_producer_strains.py
+    sha256: 17002ef1640464777f1925d12d842ed83c9098aad6de724ae0ea236ecccc4ff3
+    role: context
+  - path: tests/test_seed_skeleton.py
+    sha256: 72ec216fb0ed365b09f1cfb64fb06c701c50b5d7c2df409d8dbf613d302803bf
+    role: context
+  - path: tests/test_structure_corrections.py
+    sha256: f0b91c7ed2ffeddb844e6927e4891c1fa3cfd1d11eb70f1c3eda6bf80ae05303
+    role: context
+  - path: tests/test_xref_exclusions.py
+    sha256: 3f26bef1b535e782a8ef33b3133f7a9172b03cfb5188cddc3c8a2ff55899dc48
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 111, batch 012, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated targets in earlier
+    batch commits (publication tracked separately). At selection, 164 of 3116 current
+    records had campaign coverage and 2952 remained. The population search included
+    ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-a9f74e9bb6
+targets:
+- target_id: naturalproductmech:mibig-a9f74e9bb6
+  path: data/natural_products/alkaloids/bistribromopyrrole.yaml
+  label: bistribromopyrrole
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-a9f74e9bb6
+  command: just validate-strict data/natural_products/alkaloids/bistribromopyrrole.yaml
+    --out /private/tmp/npm-review-work/111/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T17:04:55.333899Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 current record files agree with PATHS.tsv and their pinned filing
+    pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055340+00:00;
+    finished 2026-10-21T09:55:22.727768+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-corpus.log. Reused
+    for batch012 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch012. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-a9f74e9bb6
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 current records passed the documented byte-reproduction gate
+    against committed inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055361+00:00;
+    finished 2026-10-21T09:56:44.050706+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-reproduction.log.
+    Reused for batch012 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch012. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-a9f74e9bb6
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The exhaustive review queue produced 8,928 diagnostic rows across 12 queues;
+    this deterministic output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just review-queue --tsv /private/tmp/npm-review-queue-batch-004.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.057401+00:00;
+    finished 2026-10-21T09:54:38.468783+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/review-queue.log. Reused
+    for batch012 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch012. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-a9f74e9bb6
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'The configured identifier-label gate passed using the existing ontology
+    caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions,
+    499 warning-only mismatches and 4,744 pairs skipped because their prefixes have
+    no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.061733+00:00;
+    finished 2026-10-21T09:56:36.296159+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/validate-products.log. Reused
+    for batch012 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch012. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-a9f74e9bb6
+- check_id: shared-qc
+  name: Full repository quality gate on the current main baseline
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed on the unchanged main baseline
+    during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+    All configured lint, governance, documentation, provenance, source-queue, schema,
+    rendering, reproduction, filing-integrity and reporting stages completed successfully.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:30.560925+00:00;
+    finished 2026-10-21T10:04:44.806799+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/qc.log. Reused for batch012
+    only after a fresh fetch/clean branch, equal commit/tree and two reads of all
+    9,182 tracked byte streams and modes (208,070,649 bytes), including a recheck
+    after the fresh authoritative catalogue. This gate was not rerun for batch012.
+    Original execution times, scope, warnings, exceptions and skips are retained.'
+  target_ids:
+  - naturalproductmech:mibig-a9f74e9bb6
+- check_id: R111-FULL-OWNER
+  name: Complete owner and referenced-component scope
+  status: passed
+  required: true
+  summary: Complete owner and exact matching source rows were read after actual intake,
+    and their bytes match this base. Referenced components are empty. Fresh strict
+    target validation is retained separately.
+  target_ids:
+  - naturalproductmech:mibig-a9f74e9bb6
+  evidence_ids:
+  - R111-OWNER
+  - R111-LOCAL
+- check_id: S111-C-NATIVE
+  name: Exact natural compound and native MMB-1 culture applicability
+  status: passed
+  required: true
+  summary: The original native trace positively supports exact compound 2 in MMB-1.
+    The independently characterized reference compound is from 2ta16; that distinction
+    does not erase the MMB-1 analytical detection.
+  target_ids:
+  - naturalproductmech:mibig-a9f74e9bb6
+  evidence_ids:
+  - S111-E-MAIN
+  - S111-E-SI-NATIVE
+  - S111-E-SI-PRODUCT
+- check_id: S111-C-LOCUS
+  name: Cited strain, interval and imported grade scope
+  status: passed
+  required: true
+  summary: The cited article and exact deposited interval match the MMB-1 source assertion.
+    Empty imported methods are honestly CLUSTER_UNSTATED, and no native MMB-1 deletion
+    or exact donor-resolved final-product assay is asserted by the owner.
+  target_ids:
+  - naturalproductmech:mibig-a9f74e9bb6
+  evidence_ids:
+  - S111-E-RAW
+  - S111-E-MAIN
+  - S111-E-LOCUS
+  - S111-E-GRADING
+- check_id: S111-C-ENZYME-DONOR
+  name: Optional MMB-1 attribution of the purified final-product catalyst
+  status: unavailable
+  required: false
+  summary: The read main and SI do not unambiguously bridge the assayed Bmp7/Bmp9/Bmp10
+    donor sequences to this MMB-1 locus. This limits a stronger future method annotation;
+    no such protein or assay-equivalence claim is currently present.
+  target_ids:
+  - naturalproductmech:mibig-a9f74e9bb6
+  evidence_ids:
+  - S111-E-MAIN
+  - S111-E-SI-PRODUCT
+  - S111-E-LOCUS
+- check_id: C111-C-REPRESENTATION
+  name: Stored chemical representation and complete source row
+  status: passed
+  required: true
+  summary: Fresh intake derivation agrees with the stored graph; the source selector,
+    full row and prepared snapshot were independently rechecked.
+  target_ids:
+  - naturalproductmech:mibig-a9f74e9bb6
+  evidence_ids:
+  - C111-OWNER
+  - C111-GRAPH
+  - C111-COMPARISON
+- check_id: C111-C-PRIMARY
+  name: Exact primary chemical structure
+  status: passed
+  required: true
+  summary: The inspected original compound-2 drawing independently matches the exact
+    neutral NH hexabromobipyrrole graph.
+  target_ids:
+  - naturalproductmech:mibig-a9f74e9bb6
+  evidence_ids:
+  - C111-PRIMARY
+  - C111-PRIMARY-MAP
+  - C111-GRAPH
+- check_id: C111-C-XREF
+  name: Literal PubChem chemical identity
+  status: passed
+  required: true
+  summary: The literal CID23426790 response matches Standard key, fixed-H graph, formula
+    and charge; it is distinct from experimental structure proof.
+  target_ids:
+  - naturalproductmech:mibig-a9f74e9bb6
+  evidence_ids:
+  - C111-COMPARISON
+  - C111-AUTH-1
+  - C111-AUTH-2
+  - C111-AUTH-3
+evidence:
+- evidence_id: R111-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/bistribromopyrrole.yaml
+  locator: Complete owner, every assertion, discussions and history
+  accessed_at: '2026-10-21T17:05:43.284284Z'
+  support: supports
+  summary: 'Root read the entire bistribromopyrrole owner following official intake
+    and rechecked it against the pinned preparation. It contains 0 occurrence, 1 producer
+    and 1 cluster assertions. The referenced component set is empty. Present optional
+    fields: none.'
+  snapshot_sha256: 8b3c8887fe4dbe182936e0ee4f4883028e3f11a6dfbab7aff87a8e887ef95bdf
+- evidence_id: R111-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/111/local-sources.json
+  locator: Complete resolved owner and all exact matching intake source rows
+  accessed_at: '2026-10-21T17:05:43.284284Z'
+  support: context_only
+  summary: Root read every matching captured MIBiG, LOTUS, ChEBI, CyanoMetDB and NPClassifier
+    row, including empty inventories and the resolved owner. Source fidelity is separate
+    from independent experimental support.
+  snapshot_sha256: 1faa71fccfa0f29fdecc399fdbe057c0158c1f85e22218b5a2c1659bf8eee10e
+- evidence_id: R111-IMODULON
+  kind: database
+  reference: https://imodulondb.org/api/datasets
+  locator: Complete official 20-organism/28-dataset catalogue
+  accessed_at: '2026-10-21T16:31:51.592928Z'
+  support: context_only
+  summary: The entire catalogue was read at this actual retrieval. It establishes
+    catalogue membership only; no chemical identity, production or arbitrary module
+    assignment follows.
+  snapshot_sha256: 155607e7023efdead5ebab3919279a0776d5665a7de9e28b67f02f8f521b0693
+- evidence_id: S111-E-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/bistribromopyrrole.yaml
+  locator: Complete owner and resolved component view
+  accessed_at: '2026-10-21T17:09:40.708650Z'
+  support: supports
+  summary: One exact generated owner was read in full. Its source claims, methods,
+    citations and discussion are assessed here; the empty component map and optional-slot
+    inventory are direct observations, not a global absence claim.
+  snapshot_sha256: 8b3c8887fe4dbe182936e0ee4f4883028e3f11a6dfbab7aff87a8e887ef95bdf
+- evidence_id: S111-E-RAW
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: BGC0001465:2; complete parsed-row SHA256 0036c2dc4182b96b04f009cf022b1346f635cb150895eb8322b1818fbc75ef84
+  accessed_at: '2026-10-21T17:09:40.708650Z'
+  support: supports
+  summary: The official intake exactly matches the frozen complete raw row and its
+    owner bytes. Entry-level primary citations are explicitly emitted as DATABASE_ASSERTION;
+    no primary experiment is silently relabelled as an imported measurement.
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: S111-E-GRADING
+  kind: record_content
+  reference: conf/producer_evidence.tsv
+  locator: Complete evidence vocabulary; empty-method case and organism-versus-locus
+    columns
+  accessed_at: '2026-10-21T17:09:40.708650Z'
+  support: supports
+  summary: Empty methods give SOURCE_ASSERTION and CLUSTER_UNSTATED. Heterologous
+    expression and Enzymatic assays establish a locus endpoint without proving the
+    source taxon produces it. Native knockout or genuine native correlation requires
+    its distinct experimental context.
+  snapshot_sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+- evidence_id: S111-E-MAIN
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=4104138&retmode=xml
+  locator: DOI 10.1038/nchembio.1564; PMID 24974229; Results genetic basis and Bmp7
+    coupling; Online Methods sources, construct assembly, deletions, expression and
+    enzyme assays
+  accessed_at: '2026-10-21T16:28:03.800212Z'
+  support: supports
+  summary: The original main reports compounds 1–3 in marine native cultures, including
+    M. mediterranea MMB-1 obtained as ATCC 700492. The bmp1–8 expression and plasmid
+    deletion work uses P. luteoviolacea 2ta16 genes in E. coli BL21(DE3). Purified
+    Bmp7 with Bmp9/Bmp10 and NADH forms exact compound 2 from tribromopyrrole 6, but
+    the read methods do not unambiguously identify those assayed protein donor sequences
+    as MMB-1.
+  snapshot_sha256: 5f98381d5c9bc3e1da14d54204b37a6ae484f80f66d8c6cede4efac7e8d1666e
+- evidence_id: S111-E-SI-NATIVE
+  kind: primary_source
+  reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnchembio.1564/MediaObjects/41589_2014_BFnchembio1564_MOESM590_ESM.pdf
+  locator: Supplementary Figure 1, physical page 12; compound 2 violet trace for MMB-1
+  accessed_at: '2026-10-21T16:29:15.084107Z'
+  support: supports
+  summary: Original pixels show compound 2 in the MMB-1 culture extract by LC-MS/MS.
+    The caption specifically states marine broth without extra bromide, whereas the
+    main analytical-culture Methods describe added KBr. Both descriptions are retained;
+    neither is silently chosen as the condition for every experiment.
+  snapshot_sha256: 5f72526301f3f98b4bd0cc4eee36ca3d07cb6e64e985d89f1073aff18ca30ca9
+- evidence_id: S111-E-SI-PRODUCT
+  kind: primary_source
+  reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnchembio.1564/MediaObjects/41589_2014_BFnchembio1564_MOESM590_ESM.pdf
+  locator: Supplementary Figures 13–14, physical pages 25–27; Table 1, page 50; Table
+    2, page 51
+  accessed_at: '2026-10-21T16:29:15.084107Z'
+  support: supports
+  summary: The exact Bmp7 product 2 matches the NMR-characterized 2ta16 isolate in
+    retention time, bromine-isotope profile and MS/MS. The drawing and formula are
+    C8H2Br6N2, not the dimethyl derivative or tetrabromopyrrole 7. Table 2 lists annotation
+    homolog accessions, not experimentally established native enzyme identities. The
+    reported symmetry/NMR was read without raw spectral reprocessing.
+  snapshot_sha256: 5f72526301f3f98b4bd0cc4eee36ca3d07cb6e64e985d89f1073aff18ca30ca9
+- evidence_id: S111-E-LOCUS
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NC_015276.1&seq_start=4521275&seq_stop=4533494&rettype=gb&retmode=text
+  locator: NC_015276.1:4521275..4533494; source and all CDS feature annotations
+  accessed_at: '2026-10-21T16:34:31.679703Z'
+  support: supports
+  summary: The exact 12,220-bp interval names M. mediterranea MMB-1, taxon 717774,
+    and contains eleven annotated CDSs including the extra transporter. Its RefSeq
+    record is tied to CP002583.1. The current feature bridge supports accession and
+    strain scope; it does not establish sequence equality with a tagged experimental
+    Bmp7 construct.
+  snapshot_sha256: 75dbf677e1f11f9503a73246d0773b024a3c76c1241793780df9512ddcc327b8
+- evidence_id: C111-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/bistribromopyrrole.yaml
+  locator: Complete owner and all local-source rows; no referenced components
+  accessed_at: '2026-10-21T17:08:16.561266Z'
+  support: supports
+  summary: The complete owner denotes bistribromopyrrole under naturalproductmech:mibig-a9f74e9bb6.
+    Its exact source selector is BGC0001465:2, version 5, with complete parsed raw-row
+    SHA256 0036c2dc4182b96b04f009cf022b1346f635cb150895eb8322b1818fbc75ef84. The official
+    intake and prepared owner bytes agree.
+  snapshot_sha256: 8b3c8887fe4dbe182936e0ee4f4883028e3f11a6dfbab7aff87a8e887ef95bdf
+- evidence_id: C111-GRAPH
+  kind: validation
+  reference: /private/tmp/npm-review-work/111/chemistry.json
+  locator: Fresh intake RDKit result and frozen Standard/fixed-H comparison
+  accessed_at: '2026-10-21T17:04:54.383766Z'
+  support: supports
+  summary: The stored SMILES recomputes to CKUAYXRLIBAUTH-UHFFFAOYSA-N, formula C8H2Br6N2,
+    formal charge 0; stored InChI/key agree. These are representation checks, not
+    experimental identity proof.
+  snapshot_sha256: 548a48b34ad830bae8b01d24f242bf42af2208176c102d916b7d789750de89e2
+- evidence_id: C111-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch012/chemistry-prep/chemical-comparison.json
+  locator: Record 111; exact source rows and each graph comparison
+  accessed_at: '2026-10-21T16:32:31.097625Z'
+  support: supports
+  summary: Achiral C8H2Br6N2 with two carbon-linked tribromopyrroles. Current exact
+    MIBiG and literal PubChem23426790 agree. Bounded exact/name ChEBI queries returned
+    no result; this is not a global absence claim.
+  snapshot_sha256: 397f3a45c4b7a8033fb9768b0e3d8fb61a93da833a0713ad97eb7e8f86136842
+- evidence_id: C111-LOCAL-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/111/chemistry-search-receipt.json
+  locator: Exact full key, label, slug and source selector in raw/owner/curation trees
+  accessed_at: '2026-10-21T17:08:16.772117Z'
+  support: supports
+  summary: Ignored-inclusive bounded search preserves all matching paths; an absent
+    curation decision does not imply a missing scientific source.
+  snapshot_sha256: 8fd56a6a8b97f076adc5e271b6e1bbc82c252eb76ab9e81e287b197102aa6278
+  search_scope: rg --no-ignore --hidden; data/natural_products, data/raw and curation;
+    exact full key, current label, slug and BGC:compound_index. No claim beyond these
+    trees.
+- evidence_id: C111-CHEBI-SEARCH-1
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=CKUAYXRLIBAUTH-UHFFFAOYSA-N&size=100
+  locator: Literal key search; chebi-key-bistribromopyrrole.json
+  accessed_at: '2026-10-21T16:30:17.081269Z'
+  support: supports
+  summary: 'No compound matches the provided term: ''CKUAYXRLIBAUTH-UHFFFAOYSA-N'''
+  snapshot_sha256: ae5c718e5442642951722464663425b7ee5a701e8d640c1543f3c9d248027073
+  search_scope: Official ChEBI es_search bounded key request, size=100, exact URL
+    retained. This is not a universal absence claim.
+- evidence_id: C111-CHEBI-SEARCH-2
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=bistribromopyrrole&size=100
+  locator: Literal name search; chebi-name-bistribromopyrrole.json
+  accessed_at: '2026-10-21T16:30:17.189931Z'
+  support: supports
+  summary: 'No compound matches the provided term: ''bistribromopyrrole'''
+  snapshot_sha256: 10900b4bf4083ff49271e6b760530e5f4b7599a55a7f770750e8239601b72a68
+  search_scope: Official ChEBI es_search bounded name request, size=100, exact URL
+    retained. This is not a universal absence claim.
+- evidence_id: C111-AUTH-1
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0001465.5/annotations.json
+  locator: compounds[].structure; BGC0001465.5.json
+  accessed_at: '2026-10-21T16:30:16.236291Z'
+  support: supports
+  summary: 'current MIBiG BGC0001465:2: parsed key CKUAYXRLIBAUTH-UHFFFAOYSA-N; exact
+    stored Standard key match=True, fixed-H match=True. This current database representation
+    is not independent primary experimental proof.'
+  snapshot_sha256: 097eeeb474536a44e58136514651058d5a70776a61a9b082fb76b269fa6ad87e
+- evidence_id: C111-AUTH-2
+  kind: authority
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/CKUAYXRLIBAUTH-UHFFFAOYSA-N/property/InChIKey,InChI,IsomericSMILES,MolecularFormula,Charge/JSON
+  locator: PropertyTable.Properties[].SMILES; pubchem-key-bistribromopyrrole.json
+  accessed_at: '2026-10-21T16:30:15.280852Z'
+  support: supports
+  summary: 'PubChem 23426790: parsed key CKUAYXRLIBAUTH-UHFFFAOYSA-N; exact stored
+    Standard key match=True, fixed-H match=True. This current database representation
+    is not independent primary experimental proof.'
+  snapshot_sha256: d9dbe3a4aa8b1d51dc075e3fa26d4c8147d530d478123bad6ea7757d2f77f503
+- evidence_id: C111-AUTH-3
+  kind: authority
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/23426790/property/InChIKey,InChI,IsomericSMILES,MolecularFormula,Charge/JSON
+  locator: PropertyTable.Properties[].SMILES; pubchem-23426790.json
+  accessed_at: '2026-10-21T16:30:15.256866Z'
+  support: supports
+  summary: 'PubChem 23426790: parsed key CKUAYXRLIBAUTH-UHFFFAOYSA-N; exact stored
+    Standard key match=True, fixed-H match=True. This current database representation
+    is not independent primary experimental proof.'
+  snapshot_sha256: d9dbe3a4aa8b1d51dc075e3fa26d4c8147d530d478123bad6ea7757d2f77f503
+- evidence_id: C111-PRIMARY
+  kind: primary_source
+  reference: DOI:10.1038/nchembio.1564
+  locator: Original Figure 1a, exact compound 2; retained independent planar transcription
+  accessed_at: '2026-10-21T16:29:15.569320Z'
+  support: supports
+  summary: The original compound-2 drawing has two NH tribromopyrroles linked through
+    carbon, six bromines and no N-methyl groups. Its independent transcription reproduces
+    the full Standard and fixed-H graph, neutral C8H2Br6N2. The adjacent N,N-dimethyl
+    derivative and tetrabromopyrrole 7 are distinct products.
+  snapshot_sha256: 60c783cc81cd901058e1c190450e9faa67dbf7685c6ffed0f1863c88cc1eac4d
+- evidence_id: C111-PRIMARY-MAP
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch012/chemistry-prep/primary-mapping/other-primary-transcriptions.json
+  locator: bistribromopyrrole entry; original Figure 1a transcription
+  accessed_at: '2026-10-21T16:46:11.114327Z'
+  support: supports
+  summary: The independently transcribed graph matches CKUAYXRLIBAUTH-UHFFFAOYSA-N
+    and the retained fixed-H structure. No axial configuration or rotational stability
+    is inferred from the planar structure.
+  snapshot_sha256: 66b6f6d8f26ce75c6a81c5e35f1c9766101cae9b5c8ea0d26dde6f97849ad023
+assessments:
+- assessment_id: R111-HISTORY
+  area: provenance
+  topic: Native status and retained audit history
+  outcome: supported
+  summary: All retained history events record SEEDED_FROM_SOURCES provenance. The
+    owner remains SEEDED. This review does not change its status, history or scientific
+    content.
+  target_ids:
+  - naturalproductmech:mibig-a9f74e9bb6
+  evidence_ids:
+  - R111-OWNER
+- assessment_id: R111-OPTIONAL
+  area: completeness
+  topic: Present optional assertions and enrichment limits
+  outcome: not_applicable
+  summary: No optional pathway, mechanism graph, molecular target, bioactivity, application,
+    clinical status, cross-record relation or discussion is asserted. Optional enrichment
+    is separate from correcting current claims.
+  target_ids:
+  - naturalproductmech:mibig-a9f74e9bb6
+  evidence_ids:
+  - R111-OWNER
+  - R111-LOCAL
+- assessment_id: R111-FILING
+  area: representation
+  topic: Exact-key computed classification provenance
+  outcome: supported
+  summary: The owner reproduces its exact-key NPClassifier result, including npclassifier.gnps2.org@2026-09-07,
+    Alkaloids filing, superclass/class labels and the false glycoside prediction.
+    Predictions do not independently prove precursor use, natural origin or stereochemistry.
+    Identity correction requires reclassification against the corrected effective
+    key.
+  target_ids:
+  - naturalproductmech:mibig-a9f74e9bb6
+  evidence_ids:
+  - R111-OWNER
+  - R111-LOCAL
+- assessment_id: R111-IMODULON-SCOPE
+  area: completeness
+  topic: Producer and experimental-host transcriptomic applicability
+  outcome: not_applicable
+  summary: The exact native Marinomonas mediterranea MMB-1 producer is absent from
+    the inspected catalogue. The primary whole-pathway heterologous experiment uses
+    Pseudoalteromonas luteoviolacea 2ta16 genes in E. coli BL21(DE3); the catalogue
+    E. coli datasets do not establish that host/construct or its introduced pathway
+    modules.
+  target_ids:
+  - naturalproductmech:mibig-a9f74e9bb6
+  evidence_ids:
+  - R111-OWNER
+  - R111-IMODULON
+- assessment_id: S111-A-ORIGIN
+  area: evidence
+  topic: Natural origin and producer versus occurrence scope
+  outcome: supported
+  summary: Natural origin and the MMB-1 source assertion have positive primary culture
+    evidence. The cited study detects exact compound 2 in MMB-1, while its NMR reference
+    isolation is from 2ta16. The record does not invent a separate LOTUS occurrence,
+    a native knockout or a species-wide unqualified producer.
+  target_ids:
+  - naturalproductmech:mibig-a9f74e9bb6
+  evidence_ids:
+  - S111-E-OWNER
+  - S111-E-MAIN
+  - S111-E-SI-NATIVE
+  - S111-E-SI-PRODUCT
+  dimensions:
+  - name: native_experimental_strain
+    value: Marinomonas mediterranea MMB-1; ATCC 700492
+    definition: The primary names the native culture stock. The owner taxon label
+      already states MMB-1; a missing separate optional strain slot is not treated
+      as a defect.
+    evidence_ids:
+    - S111-E-MAIN
+    - S111-E-LOCUS
+  - name: natural_product_reference
+    value: Compound 2, bistribromopyrrole
+    definition: MMB-1 analytical detection and the 2ta16 NMR reference are distinct
+      evidence scopes.
+    evidence_ids:
+    - S111-E-SI-NATIVE
+    - S111-E-SI-PRODUCT
+- assessment_id: S111-A-TIERS
+  area: evidence
+  topic: Locus and producer evidence tiers
+  outcome: supported
+  summary: Retain SOURCE_ASSERTION for MMB-1 and CLUSTER_UNSTATED for the imported
+    empty-method locus. The 2ta16 construct experiments and exact in vitro product
+    chemistry are real positive findings in the paper, but their experimental context
+    is not an exact native MMB-1 perturbation. There is no confirmed grade correction
+    from the inspected evidence.
+  target_ids:
+  - naturalproductmech:mibig-a9f74e9bb6
+  evidence_ids:
+  - S111-E-RAW
+  - S111-E-GRADING
+  - S111-E-MAIN
+  - S111-E-LOCUS
+  dimensions:
+  - name: producer_locus_evidence_tiers
+    value: SOURCE_ASSERTION / CLUSTER_UNSTATED
+    definition: These are source-method grades, not a claim that the publication contains
+      no experiments.
+    evidence_ids:
+    - S111-E-RAW
+    - S111-E-GRADING
+  - name: heterologous_context
+    value: P. luteoviolacea 2ta16 bmp1–8 constructs in E. coli BL21(DE3)
+    definition: The plasmid deletion results establish the engineered pathway endpoint
+      rather than a knockout in MMB-1.
+    evidence_ids:
+    - S111-E-MAIN
+  - name: source_version_and_coordinates
+    value: BGC0001465 version 5; NC_015276.1:4521275..4533494
+    definition: Exact row and deposited interval; sequence annotation does not substitute
+      for construct equivalence.
+    evidence_ids:
+    - S111-E-RAW
+    - S111-E-LOCUS
+- assessment_id: S111-A-CONDITIONS
+  area: evidence
+  topic: Source-specific culture and assay limitations
+  outcome: unknown
+  summary: The main analytical-culture recipe and Figure S1 differ about added bromide.
+    This is a bounded source inconsistency, not an existing owner condition error
+    because no culture condition is emitted. Purified final-product chemistry is positive,
+    but its exact MMB-1 enzyme-donor equivalence remains unverified.
+  target_ids:
+  - naturalproductmech:mibig-a9f74e9bb6
+  evidence_ids:
+  - S111-E-MAIN
+  - S111-E-SI-NATIVE
+  - S111-E-SI-PRODUCT
+- assessment_id: S111-A-OPTIONAL
+  area: completeness
+  topic: Optional pathways, proteins and activity
+  outcome: not_applicable
+  summary: No pathway, protein example, activity measurement or target is asserted
+    in this owner. Missing optional additions alone are not findings. Bmp2 acts on
+    tethered precursors, Bmp1 thioesterase was tested on a model substrate, and Bmp8
+    offloading was proposed; endocrine/toxicological discussion about other brominated
+    phenols is not an exact bistribromopyrrole target claim.
+  target_ids:
+  - naturalproductmech:mibig-a9f74e9bb6
+  evidence_ids:
+  - S111-E-OWNER
+  - S111-E-MAIN
+  - S111-E-SI-PRODUCT
+- assessment_id: C111-A-IDENTITY
+  area: identity
+  topic: Stored graph and source-concept identity
+  outcome: supported
+  summary: The complete source row BGC0001465:2 and minted source concept reproduce
+    this stored representation. Formula, charge, Standard and fixed-H distinctions
+    are independently recorded. Primary support and any conflicting exact xref are
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-a9f74e9bb6
+  evidence_ids:
+  - C111-OWNER
+  - C111-GRAPH
+  - C111-COMPARISON
+  dimensions:
+  - name: mibig_source_selector
+    value: BGC0001465:2
+    definition: Accession plus compound_index, distinct from the entry-level accession.
+    evidence_ids:
+    - C111-OWNER
+  - name: complete_raw_row_sha256
+    value: 0036c2dc4182b96b04f009cf022b1346f635cb150895eb8322b1818fbc75ef84
+    definition: Sorted compact ASCII JSON of every parsed TSV field, including empty
+      values.
+    evidence_ids:
+    - C111-OWNER
+- assessment_id: C111-A-GROUNDING
+  area: provenance
+  topic: Exact authority eligibility and source representation
+  outcome: supported
+  summary: No exact eligible row exists in the committed ChEBI projection for this
+    owner. Current bounded name/key searches do not justify a different congener or
+    a two-star grounding.
+  target_ids:
+  - naturalproductmech:mibig-a9f74e9bb6
+  evidence_ids:
+  - C111-OWNER
+  - C111-COMPARISON
+  - C111-LOCAL-SEARCH
+  - C111-CHEBI-SEARCH-1
+  - C111-CHEBI-SEARCH-2
+- assessment_id: C111-A-PRIMARY
+  area: identity
+  topic: Exact compound number, substituents and represented stereochemistry
+  outcome: supported
+  summary: The label bistribromopyrrole maps to primary compound 2 and the current
+    graph. No tetrahedral or double-bond stereochemical element is present in this
+    representation; absence of such elements does not certify a rotational barrier
+    or an unmeasured atropisomer.
+  target_ids:
+  - naturalproductmech:mibig-a9f74e9bb6
+  evidence_ids:
+  - C111-PRIMARY
+  - C111-PRIMARY-MAP
+  - C111-GRAPH
+findings: []
+actions: []
+limitations:
+- This review evaluates present assertions and bounded evidence gaps; it does not
+  claim exhaustive discovery of all later papers or require every optional mechanism
+  for coverage.
+- The exact donor and native-sequence equivalence of assayed Bmp7/Bmp9/Bmp10 remain
+  unresolved in the inspected main/SI. This is optional stronger-method context, not
+  an unavailable asserted protein claim.
+- Figure S1 says no extra bromide; the main culture protocol adds KBr. The review
+  preserves the discrepancy and does not silently assign one condition to all traces.
+- Deposited locus annotations were inspected without independent full CDS translation
+  or laboratory-construct alignment. Spectra were read at the published assignment
+  level, not reprocessed.
+- Authority matches establish the representations actually returned at their retained
+  access times; they are not independent experimental structure or absolute-hand determinations.
+  Root and science sections separately assess organism, locus, classification and
+  history claims.
+- Primary evidence here is the exact original drawing and reported structure identity;
+  no independent spectral reprocessing or atropisomer experiment was performed. Native
+  MMB-1 detection and the distinct recombinant Bmp7 source scope are assessed in the
+  science section.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35
+  explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently
+  verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+  Skipped tests are not counted as passing tests. Existing ontology caches were used;
+  no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do
+  not establish biological production, stereochemical specificity, evidence adequacy,
+  or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology
+  results. Reuse establishes unchanged repository inputs; it is not a new remote authority
+  query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all
+  tracked files are hashed. Generated Python bytecode and external tool caches are
+  not claimed to have been independently byte-pinned at the prior execution.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+tags:
+- path-order-campaign
+- batch-012
+```
