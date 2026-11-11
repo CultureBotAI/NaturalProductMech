@@ -1,0 +1,1367 @@
+# AK-toxin I: restore established stereochemistry and native expression evidence
+
+- Review: 20261021T113058Z-ak-toxin-i
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-21T11:13:05.530062Z
+- Finished UTC: 2026-10-21T11:30:58.894311Z
+- Reviewer: Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The original structure paper establishes four tetrahedral assignments omitted from the imported graph. The cited native 15A study also supports a conservative expression/product correlation and strain qualification, while its increased-production knockout does not fit the current necessity-based method. Original taxonomy supports the historical occurrence names without merging current taxon IDs. Two major findings require coordinated guarded source repairs.
+
+## Scope And Provenance
+
+One complete generated owner and any referenced components, assessed claim by claim for exact identity, provenance, origin, producer and occurrence scope, biosynthesis, classification, optional content and audit history.
+
+Selection: Campaign record 48, batch 005, selected in path order from the fresh-main authoritative validated catalogue and the separately validated pending-PR targets. At selection, 94 of 3116 current records had campaign coverage and 3022 remained. The population search included ignored files. Exactly one target is assessed here.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 1c2402097718c138b081e00943de8f04de0541cd.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-1a4db46ddd | data/natural_products/alkaloids/ak-toxin-i.yaml | generated | AK-toxin I |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Closed-schema target validation | passed | True | naturalproductmech:mibig-1a4db46ddd | The documented target strict validator completed; scientific support is assessed separately. |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-1a4db46ddd | All 3,116 current record files agree with PATHS.tsv and their pinned filing pathways. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-1a4db46ddd | All 3,116 current records passed the documented byte-reproduction gate against committed inventories and maintained curation inputs. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-1a4db46ddd | The exhaustive review queue produced 8,928 diagnostic rows across 12 queues; this deterministic output does not establish scientific review. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-1a4db46ddd | The configured identifier-label gate passed using the existing ontology caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions, 499 warning-only mismatches and 4,744 pairs skipped because their prefixes have no adapter. |
+| Full repository quality gate on the current main baseline | passed | True | naturalproductmech:mibig-1a4db46ddd | The full documented just qc recipe passed on the unchanged main baseline during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). All configured lint, governance, documentation, provenance, source-queue, schema, rendering, reproduction, filing-integrity and reporting stages completed successfully. |
+| Exact AK-I versus related-toxin experimental scope | passed | True | naturalproductmech:mibig-1a4db46ddd | The 1985 native isolate and stereochemical work explicitly concern AK-I; the 2014 original main text separately resolves AK-I in the wild type and engineered 15A strains. Related AF/ACT products and the uncertain AK-II stereochemical inference are not borrowed. |
+| Applicable native transcript/product evidence in the current grades | failed | True | naturalproductmech:mibig-1a4db46ddd | The source empty methods omit directly measured native gene-expression/product evidence. The existing correlation literal is justified; the current necessity-defined knockout literal is not. |
+| Original 2014 supporting gels, complete strain table and figure pixels | unavailable | False | naturalproductmech:mibig-1a4db46ddd | The full main text directly describes the strain, accession, exact product separation and experiments. Original supporting gels/tables and main figure pixels remain unread after bounded public access; no exact mutant allele, digital peak area or structural coordinate reconstruction is claimed. |
+| Exact parent stereochemistry against original primary assignment | failed | True | naturalproductmech:mibig-1a4db46ddd | The source graph leaves four experimentally assigned centres undefined. |
+| Applicable expression dataset | not_applicable | False | naturalproductmech:mibig-1a4db46ddd | No native organism/strain match in the complete retained catalogue. |
+
+## Scientific And Domain Assessments
+
+### Missing four established absolute configurations
+
+identity: concern. Targets: naturalproductmech:mibig-1a4db46ddd.
+
+The owner faithfully flags its incomplete source structure, but the original AK-I work establishes all four centres while confirming the current alkene geometries. Primary evidence supports completing the molecule; the related AK-II caveat does not justify leaving AK-I undefined. The separate identifier packet owns the actionable identity repair.
+
+### Exact native isolation and historical taxon wording
+
+evidence: supported. Targets: naturalproductmech:mibig-1a4db46ddd.
+
+The 1985 source isolates crystalline AK-I from AS-1223 native culture, supporting natural-product origin. It explicitly bridges the historical name A. kikuchiana to the A. alternata Japanese pear pathotype. AS-1223 is not equated with 15A, and the susceptible pear is an assay host rather than a producer.
+
+### Cited 2014 A. alternata occurrence
+
+evidence: supported. Targets: naturalproductmech:mibig-1a4db46ddd.
+
+The full cited study quantifies exact AK-I in native 15A culture and thus supports the broader species occurrence. This is not inferred from a shared toxin-family name or from the separate strawberry/tangerine overexpression experiments.
+
+### Historical A. gaisen / A. kikuchiana occurrence naming
+
+scope: supported. Targets: naturalproductmech:mibig-1a4db46ddd.
+
+The 1985 source explicitly connects its fungus to the historical A. kikuchiana name; the 2019 primary taxonomy explicitly treats that name as a later synonym of A. gaisen. This supports retaining the LOTUS A. gaisen occurrence as a taxonomically interpreted report of the same historical event, despite separate current NCBI IDs. It does not establish another isolation, identify AS-1223 with a modern reference stock, or justify changing the deposited 15A taxon.
+
+### Exact 15A native genetic and transcript/product scope
+
+evidence: concern. Targets: naturalproductmech:mibig-1a4db46ddd.
+
+The deposited fragment and cited main text establish the same native strain and exact toxin. Its measured expression/output relationship is omitted from the source-derived grades. The paper also reports a negative-regulator perturbation, but no production-stop necessity experiment or direct purified Akt7 reaction. The current correlation method gives a defensible scoped correction without overgrading.
+
+### Partial cosmid, duplicated genes and inferred enzyme chemistry
+
+scope: supported. Targets: naturalproductmech:mibig-1a4db46ddd.
+
+The original study explicitly identifies AB872924 as pcAKT-3, part of a complex duplicated AKT region. The accession is therefore applicable; absent owner bounds do not falsely assert a complete chromosome. AFT9h is a pseudogene, and Akt7-mediated diversion to an unknown shunt product is proposed. These facts do not warrant importing an AF/ACT enzyme mechanism or claiming that this fragment alone suffices to make AK-I.
+
+### Optional phytotoxicity content
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-1a4db46ddd.
+
+The owner asserts no quantitative activity. The 1985 purified-toxin leaf-necrosis endpoint and 2014 culture-filtrate/pathogenicity measurements need their own context if later added; they are not receptor binding, an IC50, or a pure-compound assay of every engineered culture. Their current omission is not a finding.
+
+### Source classifications and seeded history
+
+consistency: supported. Targets: naturalproductmech:mibig-1a4db46ddd.
+
+The imported amide-alkaloid classification is recognizable as an algorithmic result, and the polyketide-associated BGC label is compatible with the EDA-containing product family. No optional detailed pathway or graph is required. The generated SEEDED history is retained; this read-only review does not independently mark the scientific owner reviewed.
+
+### Four established but unencoded stereocentres
+
+identity: concern. Targets: naturalproductmech:mibig-1a4db46ddd.
+
+The imported false completeness flag is honest, but the exact named compound has recoverable primary stereochemistry. The maintained source transform needs an exact graph correction.
+
+### Current authority agreement and NPAtlas alias
+
+grounding: supported. Targets: naturalproductmech:mibig-1a4db46ddd.
+
+All current structures agree at their incomplete scope. Literal and canonical NPAtlas IDs resolve identically, so no broken-xref finding is added. Two-star ChEBI cannot supply the required corrected exact graph.
+
+### Historical names and current taxon nodes
+
+scope: supported. Targets: naturalproductmech:mibig-1a4db46ddd.
+
+The stored taxon IDs and Wikidata links resolve. Primary1985 bridges historical alternata/kikuchiana usage, and the2019 taxonomic account explicitly synonymizes kikuchiana with gaisen for this historical interpretation. These are two source labels for the same1985 report, not independent isolations or proof of identical AS-1223/15A stocks.
+
+### Source classification and native history
+
+provenance: supported. Targets: naturalproductmech:mibig-1a4db46ddd.
+
+All seed history remains intact. The current computational classification is versioned; eventual structure repair must explicitly address its old graph input and source-owned metadata without promoting review status.
+
+## Findings
+
+### S048-F-NATIVE-SCOPE: Retain the native 15A expression/product evidence and its direction
+
+major / open / confirmed; issue key: mibig-bgc0001262-compound1-native-expression-scope.
+
+The empty source method omits the cited study’s native 15A AKT7 transcript-versus-exact-AK-I relationship and its experimental strain context. The available correlation method is applicable. A stronger production-stop knockout grade would contradict the observed increased product after single-copy disruption. The correction should preserve that directional and multicopy scope rather than imply positive pathway necessity or direct enzyme chemistry.
+
+### R048-F-STEREO: Encode the four primary-established AK-toxin I stereocentres
+
+major / open / confirmed; issue key: ak-toxin-i-bgc0001262-four-established-stereocentres-missing.
+
+The owner and current MIBiG/NPAtlas/ChEBI graphs retain the correct constitution and alkene geometry but omit all four tetrahedral assignments explicitly established for AK-toxin I in the original1985 paper. stereo_complete=false describes the imported gap without resolving the exact named parent. Repair the consumed structure source and dependent identity joins using the primary-grounded graph.
+
+## Recommended Actions And Acceptance Checks
+
+### S048-A-NATIVE-SCOPE
+
+For original source BGC0001262:1, pin complete raw-row SHA256 ff49677ea27d3854eeba9848e1fb6066b4050227b24690ecca6d4217f1654150 and use the existing literal Gene expression correlated with compound production in the consumed method override, yielding BGC_CORRELATED/CLUSTER_CORRELATED. Add a source-pinned producer strain qualification 15A (ATCC90610), with Japanese pear pathotype in its rationale, retaining taxon 5599 and PMID:24611558 / DOI:10.1111/nph.12754. Preserve the additional native single-copy disruption and overexpression observations as qualified evidence: decreased or increased output does not establish toxin-pathway necessity. Coordinate this with the separately required primary-backed structural correction. REPLACE ignores expected_* fields, and the current claim-reference consumer rejects structure-corrected rows; therefore implement and test a compatible complete-original-row guard/composition route, rather than merely refreshing pins or relying on an unusable paired citation row. Do not use the reserved decisions.tsv.
+
+- Exactly one BGC0001262:1 original source row matches the pinned complete SHA; altering chemistry, strain, source citation, accession, bounds or source methods fails closed.
+- The generated producer is qualified as 15A (ATCC90610), Japanese pear pathotype, under species taxon 5599; AS-1223, NAF8 and SH20 are not silently equated with it.
+- Only the justified existing correlation method is added, with BGC_CORRELATED and CLUSTER_CORRELATED. No necessity-defined Knock-out studies, Enzymatic assays or Heterologous expression method is introduced from these experiments.
+- A combined canary applies the primary-backed structure correction, original-row guard, method and strain overlays and any required citation routing without a structure_correction_note rejection, stale-source bypass, lost qualification or duplicate evidence.
+- Raw old-key chemistry, LOTUS mappings and original source assertions remain auditable. Any transfer to a corrected structure is separately primary-backed, not an automatic exact-key join across stereochemical resolution.
+- The rationale records native negative regulation, multicopy/single-copy disruption and uncharacterized shunt product; the fragment is not represented as an independently sufficient whole pathway.
+- After implementation, strict validation, deterministic regeneration and required repository gates pass.
+
+### R048-ACTION-STEREO
+
+Extend the consumed structural decision model to accept a primary-cited literal exact graph when no eligible three-star ChEBI entry exists. For unique BGC0001262:1 version3, pin complete original raw-row SHA256 ff49677ea27d3854eeba9848e1fb6066b4050227b24690ecca6d4217f1654150 and old full key HGSOUJPIFSDBKJ-OUYMFVGOSA-N. Adopt the source-grounded SMILES CC(=O)N[C@@H](C(=O)O[C@H](/C=C/C=C\C=C\C(=O)O)[C@]1(C)CO1)[C@@H](C)c1ccccc1 yielding HGSOUJPIFSDBKJ-VJEMRUNWSA-N, neutral C23H27NO6, 8R9S2-primeS3-primeS and2E4Z6E. Store original and corrected identity, actual curator/date and1985 DOI attribution. The existing ChEBI-only consumer cannot implement this as-is. Explicitly compose the structure correction with separately supported strain/method/citation decisions; do not bypass their current structure-correction rejection by merely refreshing hashes.
+
+- Recompute the full standard and fixed-H identities from the literal graph, verify all four centres and all three double bonds against primary atom mapping, and fail on changed raw-row context or nonunique source selection.
+- Preserve the original raw graph, incomplete NPA/ChEBI source concepts and source-specific occurrence evidence; represent their relation to the corrected parent explicitly, rather than claiming those external entries already encode exact stereochemistry.
+- A combined test must apply the structure, 15A strain context, conservative expression-correlation method and claim-local citation together against one original full raw-row pin, while rejecting changed chemistry/taxon/accession/version/bounds/methods/xrefs/references or unsupported overlay combinations.
+- Retain the stable MIBiG source-concept-derived identifier while deterministically updating the exact structure key, owner filing and dependent joins. Migrate an identifier only if an explicitly reviewed grounding policy requires it. Leave no duplicate old/new owners, preserve occurrences/history, and do not treat a structure-key change as independent experimental occurrence proof. Recompute NPClassifier for the corrected graph with explicit provenance rather than relabelling the old prediction.
+- Do not promote to ChEBI80727, whose graph is incomplete and only two-star; do not assert a broken NPA xref because both literal/padded API routes resolve. Preserve the primary-backed historical A. gaisen/kikuchiana nomenclatural bridge without merging current identifiers or claiming independent isolations.
+- After later authorized implementation, inspect the exact generated diff and run strict schema, provenance, identity/corpus, seed reproduction and required gates.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| S048-OWNER | data/natural_products/alkaloids/ak-toxin-i.yaml; Complete owner and all resolved content; three occurrence claims, source producer/locus, chemical representation, classification and history | supports | The owner represents AK-toxin I connectivity and three defined alkene geometries but leaves all four tetrahedral centres undefined, accurately flagging stereo_complete=false. It has no mechanism, inline graph, protein example or activity measurement. The species-level MIBiG producer and AB872924.1 locus have empty methods and SOURCE_ASSERTION/CLUSTER_UNSTATED grades. |
+| S048-RAW | data/raw/mibig_compounds.tsv; Complete source BGC0001262:1 version 3; canonical full-row SHA256 ff49677ea27d3854eeba9848e1fb6066b4050227b24690ecca6d4217f1654150 | supports | The exact raw row reproduces the owner chemistry, species taxon 5599, accession AB872924.1, empty bounds/methods and entry-level citation PMID:24611558. Source metadata says questionable quality and unknown completeness. Those labels do not replace evaluation of the cited primary study. |
+| S048-LOCAL | /private/tmp/npm-review-work/048/local-sources.json; Complete exact-key source rows and empty referenced-component set | supports | LOTUS supplies A. kikuchiana and A. gaisen rows for the 1985 structure paper, plus A. alternata for the 2014 genetics paper. NPClassifier returns Alkaloids/Peptide alkaloids/Simple amide alkaloids and non-glycoside. There is no imported CyanoMetDB occurrence for this target. |
+| S048-1985 | https://www.jstage.jst.go.jp/article/bbb1961/49/3/49_3_807/_pdf; DOI:10.1271/bbb1961.49.807; complete original pages 807–815, all main experimental prose and tables; original Figures 3–5 pixels on pages 811–812 | supports | Native A. alternata Japanese pear pathotype AS-1223, isolated from a Nagano orchard in 1974, yielded separately purified AK-toxins I and II. The paper explicitly calls A. kikuchiana the former name for this pathotype. AK-I has C23H27NO6, 2E/4Z/6E, and C8R/C9S/C2′S/C3′S: hydrolysis established the amino-acid stereochemistry, and crystal-relative geometry tied the other centres to it. The paper explicitly qualifies AK-II absolute assignments as lacking definitive evidence; that uncertainty must not be transferred to AK-I. |
+| S048-1985-MAPPING | /private/tmp/npm-review-work/shared-next-batch005/root/ak1985-primary-structure.json; Primary structure transcription independently compared with the 1985 explicit descriptors and original Figures 3–5 | supports | The primary-backed transcription has full key HGSOUJPIFSDBKJ-VJEMRUNWSA-N, the same connectivity as the owner, and the four assigned centres 8R/9S/2′S/3′S. Its three alkenes agree with the owner. This verifies a missing-stereochemistry concern rather than treating the unspecified source graph as an alternate established natural stereoisomer. The separate identifier packet owns the maintained structure correction. |
+| S048-TAXONOMY | https://www.jstage.jst.go.jp/article/mycosci/60/1/60_MYC60001/_pdf; Nishikawa and Nakashima, Mycoscience 60 (2019) 1–9; DOI:10.1016/j.myc.2018.05.003; abstract, section 3.4 Taxonomy and adjoining results/discussion pages 4–7; original page 5 pixels | supports | This primary morphological/multigene study explicitly treats A. kikuchiana as a later synonym of A. gaisen and defines A. gaisen f. sp. pyri for the AK-toxin-producing Japanese pear pathotype. It supports a historical-name interpretation of the two 1985 LOTUS occurrence labels, not two independent isolations or a merge of current NCBI identifiers. Its newly examined isolates do not establish identity with AS-1223 or 15A. |
+| S048-2014 | https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.12754; DOI:10.1111/nph.12754; PMID:24611558; complete original scientific main text and captions, especially Fungal strains, Structure of pcAKT-3, native mutant/overexpression Results and Figures 6–8 captions; preserved web extraction, not downloaded PDF bytes | supports | The original study identifies 15A (ATCC90610), links pcAKT-3 to AB872924, and resolves AK-I separately by HPLC. Native single-copy AKT7 disruption increases AK-I; overexpression reduces it while transcript levels are measured. The proposed diversion of EDA or its precursor to an unknown shunt product remains mechanistic inference. Strawberry and tangerine experiments concern AF- and ACT-toxins, respectively. |
+| S048-LOCUS | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&amp;id=AB872924.1&amp;rettype=gb&amp;retmode=text; Deposited source feature, linked publication and complete feature annotations; original sequence not independently retranslated | supports | AB872924.1 is a 32,353-bp 15A genomic fragment with taxon 5599 and PMID24611558, directly bridging the current locus to the primary study. Its feature set includes the AKT cluster genes and a terminal P450 CDS BAO10618.1. The paper calls pcAKT-3 32,351 bp and uses AKT2-2 where the deposit labels AKT2-1; these annotation/count differences are preserved, not silently converted into exact mutant-allele claims. The owner supplies no locus bounds or protein example that conflicts with them. |
+| S048-GRADING | conf/producer_evidence.tsv; Entire evidence-method table and its native-versus-locus rationale; grading.py read in full | context_only | The current Knock-out studies rationale requires native removal with production stopping. AKT7 single-copy disruption instead increases AK-I and leaves other copies. The exact literal Gene expression correlated with compound production fits the reported transcript/output series and yields BGC_CORRELATED/CLUSTER_CORRELATED. It preserves the direction and scope of these experiments without claiming pathway necessity or sufficiency. |
+| S048-METHOD-EVALUATION | /private/tmp/npm-review-work/048/science-method-evaluation.json; Read-only evaluation of the maintained grading functions | supports | The proposed existing correlation method evaluates to BGC_CORRELATED for the native producer and CLUSTER_CORRELATED for the locus. No raw inventory or generated record was changed. The evaluation deliberately excludes the stronger knockout grade whose current rationale does not describe the observed phenotype. |
+| S048-LOADERS | scripts/seed_from_sources.py; Method overlay load/apply functions, raw-row claim-reference and producer-strain qualification order; related consumer modules read | context_only | The REPLACE method overlay does not enforce its expected_* context. A full-row guard is therefore required. Claim-reference application currently rejects structure_correction_note, so a paired citation guard alone will not compose with the required structural repair. Producer-strain qualifications validate original raw rows and preserve species taxon. The future guarded structural/claim implementation must test these overlays together. |
+| S048-ACCESS | /private/tmp/npm-review-work/048/science-access2014-network.json; Bounded official main/SI retrieval attempts and final instrumented web reread receipt | context_only | The complete original main scientific text was accessible through the web tool and is retained with locators. Direct publisher HTML/PDF/SI downloads returned 403 after initial sandbox DNS failures; the web SI link also failed. Original 2014 figure pixels and supplementary allele gels/tables were not inspected. No claim treats the error bodies as article or supplement files. |
+| S048-MAINTAINED-SEARCH | /private/tmp/npm-review-work/048/science-maintained-search.json; Ignored-inclusive maintained correction search | context_only | No target-specific correction was found in the searched maintained paths. This does not assert absence from external literature or from every repository file. |
+| R048-OWNER | data/natural_products/alkaloids/ak-toxin-i.yaml; Entire owner and original exact-key raw projection | supports | The neutral C23H27NO6 owner has four undefined tetrahedral centres and three specified alkene geometries; stereo_complete=false accurately reports that imported gap. One MIBiG producer/locus and three LOTUS occurrences are asserted, without optional mechanism or measured activity claims. |
+| R048-CHEM | /private/tmp/npm-review-work/048/identity/chemical-comparison.json; Six parsed graphs and explicit stereo-removal connectivity comparison | supports | Five current owner/source/authority graphs agree on the incomplete HGSOUJPIFSDBKJ-OUYMFVGOSA-N structure and fixed-H form. The primary-derived graph has the same constitution and 2E,4Z,6E geometry, but specifies all four centres and yields HGSOUJPIFSDBKJ-VJEMRUNWSA-N. The gap is lost stereochemical information, not a different elemental composition or salt. |
+| R048-PRIMARY | https://www.jstage.jst.go.jp/article/bbb1961/49/3/49_3_807/_pdf; Full 1985 article and original printed pp811–812, Figures3–5, hydrolysis and X-ray interpretation | supports | The original AK-toxin I analysis establishes 8R,9S,2-primeS,3-primeS and 2E,4Z,6E. Relative X-ray stereochemistry is anchored by hydrolysis to L-erythro-beta-methylphenylalanine. The inference for AK-toxin II is not transferred to I; the explicit I assignment is the relevant evidence. |
+| R048-TRANSCRIPTION | /private/tmp/npm-review-work/shared-next-batch005/root/ak1985-primary-structure.json; Atom-mapped primary transcription and descriptor-to-graph check | supports | The retained independently prepared transcription maps C8=R,C9=S,C2-prime=S,C3-prime=S and all three alkenes to an unambiguous SMILES/InChI/full-key candidate. It is a source-grounded transcription, not a new experimental structure determination. |
+| R048-MIBIG | https://mibig.secondarymetabolites.org/repository/BGC0001262.3/annotations.json; Complete relevant returned source, chemical identity and taxonomic fields | supports | Active BGC0001262 version3 reproduces the four-centre-unspecified graph, A. alternata5599 and AB872924.1, with empty methods/bounds. It selects PMID24611558 through entry-level legacy references. Quality questionable and completeness unknown are preserved source flags. The source NPAtlas literal lacks one zero but resolves through the live API. |
+| R048-NPA | https://www.npatlas.org/api/v1/compound/NPA08756; Complete relevant returned source, chemical identity and taxonomic fields | supports | The literal NPA08756 request succeeds and returns canonical NPA008756, original AK-toxin I with the same incomplete graph. Its origin is the 1982 DOI10.1016/s0040-4039(00)85630-0 and A. kikuchiana; this paper was not separately inspected here. A canonical identifier normalization may be useful, but this is not an unresolvable or wrong-compound xref. |
+| R048-NPA-ALIAS | https://www.npatlas.org/api/v1/compound/NPA008756; Complete relevant returned source, chemical identity and taxonomic fields | supports | The canonical padded request returns byte-identical content to NPA08756, directly confirming the accepted alias. |
+| R048-CHEBI | https://www.ebi.ac.uk/chebi/backend/api/public/compound/80727/; Complete relevant returned source, chemical identity and taxonomic fields | supports | Released CHEBI80727 is two-star and reproduces the same unspecified parent. It is not an eligible fully stereospecified replacement and has no origin claim to supply the missing primary assignment. |
+| R048-MOL | https://www.ebi.ac.uk/chebi/backend/api/public/molfile/80727/; Complete official MOL parsed independently | supports | The official MOL independently agrees with the incomplete source graph, including the three alkene geometries. |
+| R048-CHEBI-SEARCH | https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=HGSOUJPIFSDBKJ-VJEMRUNWSA-N&amp;size=100; Exact full corrected-key query; retained404response | context_only | No result was returned for the primary-derived full key in this exact live query. The complete pinned eligible three-star inventory likewise has no exact corrected-key row. This bounded result does not establish absence from every chemical database. |
+| R048-TAXON | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=5599,1232598,167740&amp;retmode=xml; All three top-level Taxon names/ranks/parent links and complete OtherNames | supports | NCBI5599 A. alternata,1232598 A. kikuchiana and167740 A. gaisen are separate current species nodes. Their returned aliases do not equate these three IDs. The primary1985 historical pathotype statement and independently inspected2019 taxonomic account provide the relevant nomenclatural bridge; no current ID merge or stock equivalence is inferred. |
+| R048-WIKI | https://www.wikidata.org/w/api.php?action=wbgetentities&amp;ids=Q10406882%7CQ10406901%7CQ2704244&amp;props=labels%7Cclaims&amp;languages=en&amp;format=json; Complete relevant returned source, chemical identity and taxonomic fields | supports | All three stored organism Wikidata entities map explicitly through P685 to the corresponding NCBI species ID. No chemical entity is supplied by these LOTUS triples. |
+| R048-CONSUMERS | src/naturalproductmech/curate/structure_corrections.py; Complete existing loader and application; coupled claim/strain/xref consumers already inspected | supports | The implemented structure correction requires an eligible three-star ChEBI target and cannot directly adopt this primary-only literal graph. Existing claim-reference and strain consumers reject structure-corrected rows. A new guarded graph representation and explicit tested overlay composition are necessary; editing the generated YAML or adding unconsumed columns would not reproduce the repair. |
+| R048-RAW | data/raw/mibig_compounds.tsv; Exact BGC0001262:1 full row and exact-key inventory projection | supports | The complete canonical raw-row SHA is ff49677ea27d3854eeba9848e1fb6066b4050227b24690ecca6d4217f1654150. All structure, source/version, taxon, accession, empty bounds/methods, reference basis and xrefs must remain covered by the eventual drift guard. Current NPClassifier is explicitly attributed to the old graph and must not silently become a result for the corrected graph. |
+| R048-IMODULON | https://imodulondb.org/; Complete retained28-dataset catalogue | context_only | No matching native fungal organism/strain dataset occurs in the complete retained catalogue. |
+
+## Limits And Additional Notes
+
+- The original 1985 full paper was read, with original structural figures independently inspected. Reported absolute assignments were checked against the prose and drawings; crystal coordinates and spectra were not independently reprocessed.
+- The 2014 original scientific main text and captions were read through the public web tool and preserved as an extraction. Direct local publisher downloads failed. Original main figure pixels and supplementary mutant gels/tables were not inspected; the exact main-text product, strain, accession and reported genetic result remain available.
+- Earlier 1999, 2000 and 2010 abstract-only preparations were contextual leads only. No stronger exact-congener assay, mutant allele or enzyme claim is inferred from those uninspected full papers.
+- The 2019 taxonomic account, adjoining results/discussion and page 5 pixels establish a nomenclatural bridge, not genomic equivalence of AS-1223, 15A or the newly examined isolates. The separately retrieved 2020 taxonomic XML was inspected only for bibliographic metadata and supplies no additional scientific conclusion. Current NCBI taxon IDs remain distinct.
+- This packet does not assemble, validate or save a review bundle and does not alter the corpus, raw inventories, curation tables, native status, campaign or Git state.
+- The 1985 source-derived graph is an explicit transcription and descriptor check, not a fresh crystallographic or spectral refinement.
+- Current sources perpetuate the same incomplete stereochemistry. The original1982 NPAtlas source was not separately inspected; the later full1985 elucidation supplies this correction.
+- The primary2019 nomenclatural bridge does not establish genetic or stock equivalence of AS-1223,15A or modern examined isolates.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35 explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). Skipped tests are not counted as passing tests. Existing ontology caches were used; no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do not establish biological production, stereochemical specificity, evidence adequacy, or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology results. Reuse establishes unchanged repository inputs; it is not a new remote authority query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all tracked files are hashed. Generated Python bytecode and external tool caches are not claimed to have been independently byte-pinned at the prior execution.
+- No scientific owner, inventory, curation table, native status or history was edited. Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification; target strict validation ran afresh. Scientific failed or unavailable checks are distinct from bundle validation.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T113058Z-ak-toxin-i
+title: 'AK-toxin I: restore established stereochemistry and native expression evidence'
+started_at: '2026-10-21T11:13:05.530062Z'
+finished_at: '2026-10-21T11:30:58.894311Z'
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The original structure paper establishes four tetrahedral assignments omitted
+  from the imported graph. The cited native 15A study also supports a conservative
+  expression/product correlation and strain qualification, while its increased-production
+  knockout does not fit the current necessity-based method. Original taxonomy supports
+  the historical occurrence names without merging current taxon IDs. Two major findings
+  require coordinated guarded source repairs.
+source:
+  git_revision: 1c2402097718c138b081e00943de8f04de0541cd
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/ak-toxin-i.yaml
+    sha256: 7e434c83e8acecea88eaadad565d1ab78db571e0e6e7c78b0a67dea7c08481aa
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/extract_npclassifier.py
+    sha256: 408b25dd9fe570c9a5eb8f4d5f660608d3eb4a9b3c588e9cda15c6ea504e3259
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+    role: context
+  - path: src/naturalproductmech/grading.py
+    sha256: ece54c4a2c0803f034ac59de51b1006cf79ea8d6b6256d75757d4adb88ea9630
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 48, batch 005, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated pending-PR targets.
+    At selection, 94 of 3116 current records had campaign coverage and 3022 remained.
+    The population search included ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-1a4db46ddd
+targets:
+- target_id: naturalproductmech:mibig-1a4db46ddd
+  path: data/natural_products/alkaloids/ak-toxin-i.yaml
+  label: AK-toxin I
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-1a4db46ddd
+  command: just validate-strict data/natural_products/alkaloids/ak-toxin-i.yaml --out
+    /private/tmp/npm-review-work/048/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T11:13:07.760622Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 current record files agree with PATHS.tsv and their pinned filing
+    pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055340+00:00;
+    finished 2026-10-21T09:55:22.727768+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-corpus.log. Reused
+    for batch005 only after fresh fetch/base/tree equality and all 9,182 tracked file
+    bytes and modes were verified against the original batch004 baseline (208,070,649
+    bytes). This gate was not rerun for batch005; original times, scope, warnings,
+    exceptions and skips are preserved.'
+  target_ids:
+  - naturalproductmech:mibig-1a4db46ddd
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 current records passed the documented byte-reproduction gate
+    against committed inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055361+00:00;
+    finished 2026-10-21T09:56:44.050706+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-reproduction.log.
+    Reused for batch005 only after fresh fetch/base/tree equality and all 9,182 tracked
+    file bytes and modes were verified against the original batch004 baseline (208,070,649
+    bytes). This gate was not rerun for batch005; original times, scope, warnings,
+    exceptions and skips are preserved.'
+  target_ids:
+  - naturalproductmech:mibig-1a4db46ddd
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The exhaustive review queue produced 8,928 diagnostic rows across 12 queues;
+    this deterministic output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just review-queue --tsv /private/tmp/npm-review-queue-batch-004.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.057401+00:00;
+    finished 2026-10-21T09:54:38.468783+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/review-queue.log. Reused
+    for batch005 only after fresh fetch/base/tree equality and all 9,182 tracked file
+    bytes and modes were verified against the original batch004 baseline (208,070,649
+    bytes). This gate was not rerun for batch005; original times, scope, warnings,
+    exceptions and skips are preserved.'
+  target_ids:
+  - naturalproductmech:mibig-1a4db46ddd
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'The configured identifier-label gate passed using the existing ontology
+    caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions,
+    499 warning-only mismatches and 4,744 pairs skipped because their prefixes have
+    no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.061733+00:00;
+    finished 2026-10-21T09:56:36.296159+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/validate-products.log. Reused
+    for batch005 only after fresh fetch/base/tree equality and all 9,182 tracked file
+    bytes and modes were verified against the original batch004 baseline (208,070,649
+    bytes). This gate was not rerun for batch005; original times, scope, warnings,
+    exceptions and skips are preserved.'
+  target_ids:
+  - naturalproductmech:mibig-1a4db46ddd
+- check_id: shared-qc
+  name: Full repository quality gate on the current main baseline
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed on the unchanged main baseline
+    during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+    All configured lint, governance, documentation, provenance, source-queue, schema,
+    rendering, reproduction, filing-integrity and reporting stages completed successfully.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:30.560925+00:00;
+    finished 2026-10-21T10:04:44.806799+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/qc.log. Reused for batch005
+    only after fresh fetch/base/tree equality and all 9,182 tracked file bytes and
+    modes were verified against the original batch004 baseline (208,070,649 bytes).
+    This gate was not rerun for batch005; original times, scope, warnings, exceptions
+    and skips are preserved.'
+  target_ids:
+  - naturalproductmech:mibig-1a4db46ddd
+- check_id: S048-C-EXACT-PRODUCT
+  name: Exact AK-I versus related-toxin experimental scope
+  status: passed
+  required: true
+  summary: The 1985 native isolate and stereochemical work explicitly concern AK-I;
+    the 2014 original main text separately resolves AK-I in the wild type and engineered
+    15A strains. Related AF/ACT products and the uncertain AK-II stereochemical inference
+    are not borrowed.
+  target_ids:
+  - naturalproductmech:mibig-1a4db46ddd
+  evidence_ids:
+  - S048-1985
+  - S048-1985-MAPPING
+  - S048-2014
+- check_id: S048-C-NATIVE-EVIDENCE
+  name: Applicable native transcript/product evidence in the current grades
+  status: failed
+  required: true
+  summary: The source empty methods omit directly measured native gene-expression/product
+    evidence. The existing correlation literal is justified; the current necessity-defined
+    knockout literal is not.
+  target_ids:
+  - naturalproductmech:mibig-1a4db46ddd
+  evidence_ids:
+  - S048-RAW
+  - S048-2014
+  - S048-LOCUS
+  - S048-GRADING
+  - S048-METHOD-EVALUATION
+- check_id: S048-C-SUPPLEMENT
+  name: Original 2014 supporting gels, complete strain table and figure pixels
+  status: unavailable
+  required: false
+  summary: The full main text directly describes the strain, accession, exact product
+    separation and experiments. Original supporting gels/tables and main figure pixels
+    remain unread after bounded public access; no exact mutant allele, digital peak
+    area or structural coordinate reconstruction is claimed.
+  target_ids:
+  - naturalproductmech:mibig-1a4db46ddd
+  evidence_ids:
+  - S048-2014
+  - S048-ACCESS
+- check_id: R048-C-STEREO
+  name: Exact parent stereochemistry against original primary assignment
+  status: failed
+  required: true
+  summary: The source graph leaves four experimentally assigned centres undefined.
+  target_ids:
+  - naturalproductmech:mibig-1a4db46ddd
+  evidence_ids:
+  - R048-CHEM
+  - R048-PRIMARY
+  - R048-TRANSCRIPTION
+- check_id: R048-C-IMODULON
+  name: Applicable expression dataset
+  status: not_applicable
+  required: false
+  summary: No native organism/strain match in the complete retained catalogue.
+  target_ids:
+  - naturalproductmech:mibig-1a4db46ddd
+  evidence_ids:
+  - R048-IMODULON
+evidence:
+- evidence_id: S048-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/ak-toxin-i.yaml
+  locator: Complete owner and all resolved content; three occurrence claims, source
+    producer/locus, chemical representation, classification and history
+  accessed_at: '2026-10-21T11:22:28.695407Z'
+  support: supports
+  summary: The owner represents AK-toxin I connectivity and three defined alkene geometries
+    but leaves all four tetrahedral centres undefined, accurately flagging stereo_complete=false.
+    It has no mechanism, inline graph, protein example or activity measurement. The
+    species-level MIBiG producer and AB872924.1 locus have empty methods and SOURCE_ASSERTION/CLUSTER_UNSTATED
+    grades.
+  snapshot_sha256: 7e434c83e8acecea88eaadad565d1ab78db571e0e6e7c78b0a67dea7c08481aa
+- evidence_id: S048-RAW
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: Complete source BGC0001262:1 version 3; canonical full-row SHA256 ff49677ea27d3854eeba9848e1fb6066b4050227b24690ecca6d4217f1654150
+  accessed_at: '2026-10-21T11:22:28.695407Z'
+  support: supports
+  summary: The exact raw row reproduces the owner chemistry, species taxon 5599, accession
+    AB872924.1, empty bounds/methods and entry-level citation PMID:24611558. Source
+    metadata says questionable quality and unknown completeness. Those labels do not
+    replace evaluation of the cited primary study.
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: S048-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/048/local-sources.json
+  locator: Complete exact-key source rows and empty referenced-component set
+  accessed_at: '2026-10-21T11:22:28.695407Z'
+  support: supports
+  summary: LOTUS supplies A. kikuchiana and A. gaisen rows for the 1985 structure
+    paper, plus A. alternata for the 2014 genetics paper. NPClassifier returns Alkaloids/Peptide
+    alkaloids/Simple amide alkaloids and non-glycoside. There is no imported CyanoMetDB
+    occurrence for this target.
+  snapshot_sha256: 2e23667f7f355cc07b035d18a9fbfc977f63b3c4e4bd1c842a36feb84cab1748
+- evidence_id: S048-1985
+  kind: primary_source
+  reference: https://www.jstage.jst.go.jp/article/bbb1961/49/3/49_3_807/_pdf
+  locator: DOI:10.1271/bbb1961.49.807; complete original pages 807–815, all main experimental
+    prose and tables; original Figures 3–5 pixels on pages 811–812
+  accessed_at: '2026-10-21T10:36:48.901750Z'
+  support: supports
+  summary: 'Native A. alternata Japanese pear pathotype AS-1223, isolated from a Nagano
+    orchard in 1974, yielded separately purified AK-toxins I and II. The paper explicitly
+    calls A. kikuchiana the former name for this pathotype. AK-I has C23H27NO6, 2E/4Z/6E,
+    and C8R/C9S/C2′S/C3′S: hydrolysis established the amino-acid stereochemistry,
+    and crystal-relative geometry tied the other centres to it. The paper explicitly
+    qualifies AK-II absolute assignments as lacking definitive evidence; that uncertainty
+    must not be transferred to AK-I.'
+  snapshot_sha256: eb6779348921d72f9300ef4323e5476aee96ca1b011d80a06dbb1c040d267a55
+- evidence_id: S048-1985-MAPPING
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch005/root/ak1985-primary-structure.json
+  locator: Primary structure transcription independently compared with the 1985 explicit
+    descriptors and original Figures 3–5
+  accessed_at: '2026-10-21T11:22:28.695407Z'
+  support: supports
+  summary: The primary-backed transcription has full key HGSOUJPIFSDBKJ-VJEMRUNWSA-N,
+    the same connectivity as the owner, and the four assigned centres 8R/9S/2′S/3′S.
+    Its three alkenes agree with the owner. This verifies a missing-stereochemistry
+    concern rather than treating the unspecified source graph as an alternate established
+    natural stereoisomer. The separate identifier packet owns the maintained structure
+    correction.
+  snapshot_sha256: 8d7c145598cca6b6eb4879e9e1e80e0e899e1d83d079e7ad6715c6c02c5ebd0e
+- evidence_id: S048-TAXONOMY
+  kind: primary_source
+  reference: https://www.jstage.jst.go.jp/article/mycosci/60/1/60_MYC60001/_pdf
+  locator: Nishikawa and Nakashima, Mycoscience 60 (2019) 1–9; DOI:10.1016/j.myc.2018.05.003;
+    abstract, section 3.4 Taxonomy and adjoining results/discussion pages 4–7; original
+    page 5 pixels
+  accessed_at: '2026-10-21T11:21:36.563389Z'
+  support: supports
+  summary: This primary morphological/multigene study explicitly treats A. kikuchiana
+    as a later synonym of A. gaisen and defines A. gaisen f. sp. pyri for the AK-toxin-producing
+    Japanese pear pathotype. It supports a historical-name interpretation of the two
+    1985 LOTUS occurrence labels, not two independent isolations or a merge of current
+    NCBI identifiers. Its newly examined isolates do not establish identity with AS-1223
+    or 15A.
+  snapshot_sha256: b071241372b813686c514c98aed6aa3e208816ccc24b52b2222ef3f040f0a008
+- evidence_id: S048-2014
+  kind: primary_source
+  reference: https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.12754
+  locator: DOI:10.1111/nph.12754; PMID:24611558; complete original scientific main
+    text and captions, especially Fungal strains, Structure of pcAKT-3, native mutant/overexpression
+    Results and Figures 6–8 captions; preserved web extraction, not downloaded PDF
+    bytes
+  accessed_at: '2026-10-21T11:17:36Z'
+  support: supports
+  summary: The original study identifies 15A (ATCC90610), links pcAKT-3 to AB872924,
+    and resolves AK-I separately by HPLC. Native single-copy AKT7 disruption increases
+    AK-I; overexpression reduces it while transcript levels are measured. The proposed
+    diversion of EDA or its precursor to an unknown shunt product remains mechanistic
+    inference. Strawberry and tangerine experiments concern AF- and ACT-toxins, respectively.
+  snapshot_sha256: e2cc55c2478a0521ecf67234779f1f908298f5b732cebcaacdd2bfc353ec3154
+- evidence_id: S048-LOCUS
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=AB872924.1&rettype=gb&retmode=text
+  locator: Deposited source feature, linked publication and complete feature annotations;
+    original sequence not independently retranslated
+  accessed_at: '2026-10-21T11:17:21.034118Z'
+  support: supports
+  summary: AB872924.1 is a 32,353-bp 15A genomic fragment with taxon 5599 and PMID24611558,
+    directly bridging the current locus to the primary study. Its feature set includes
+    the AKT cluster genes and a terminal P450 CDS BAO10618.1. The paper calls pcAKT-3
+    32,351 bp and uses AKT2-2 where the deposit labels AKT2-1; these annotation/count
+    differences are preserved, not silently converted into exact mutant-allele claims.
+    The owner supplies no locus bounds or protein example that conflicts with them.
+  snapshot_sha256: 0ce26b37e405e6c8740e7a8bd929958677978a70fdefc84eb0ef8ea0f51ad3e8
+- evidence_id: S048-GRADING
+  kind: record_content
+  reference: conf/producer_evidence.tsv
+  locator: Entire evidence-method table and its native-versus-locus rationale; grading.py
+    read in full
+  accessed_at: '2026-10-21T11:22:28.695407Z'
+  support: context_only
+  summary: The current Knock-out studies rationale requires native removal with production
+    stopping. AKT7 single-copy disruption instead increases AK-I and leaves other
+    copies. The exact literal Gene expression correlated with compound production
+    fits the reported transcript/output series and yields BGC_CORRELATED/CLUSTER_CORRELATED.
+    It preserves the direction and scope of these experiments without claiming pathway
+    necessity or sufficiency.
+  snapshot_sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+- evidence_id: S048-METHOD-EVALUATION
+  kind: validation
+  reference: /private/tmp/npm-review-work/048/science-method-evaluation.json
+  locator: Read-only evaluation of the maintained grading functions
+  accessed_at: '2026-10-21T11:19:14.252789Z'
+  support: supports
+  summary: The proposed existing correlation method evaluates to BGC_CORRELATED for
+    the native producer and CLUSTER_CORRELATED for the locus. No raw inventory or
+    generated record was changed. The evaluation deliberately excludes the stronger
+    knockout grade whose current rationale does not describe the observed phenotype.
+  snapshot_sha256: 3a95e3647718e139303f6af51ac3ad08d175cd0eef0c646ccea06f9a675c2c44
+- evidence_id: S048-LOADERS
+  kind: record_content
+  reference: scripts/seed_from_sources.py
+  locator: Method overlay load/apply functions, raw-row claim-reference and producer-strain
+    qualification order; related consumer modules read
+  accessed_at: '2026-10-21T11:22:28.695407Z'
+  support: context_only
+  summary: The REPLACE method overlay does not enforce its expected_* context. A full-row
+    guard is therefore required. Claim-reference application currently rejects structure_correction_note,
+    so a paired citation guard alone will not compose with the required structural
+    repair. Producer-strain qualifications validate original raw rows and preserve
+    species taxon. The future guarded structural/claim implementation must test these
+    overlays together.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: S048-ACCESS
+  kind: search
+  reference: /private/tmp/npm-review-work/048/science-access2014-network.json
+  locator: Bounded official main/SI retrieval attempts and final instrumented web
+    reread receipt
+  accessed_at: '2026-10-21T11:16:56.452261Z'
+  support: context_only
+  summary: The complete original main scientific text was accessible through the web
+    tool and is retained with locators. Direct publisher HTML/PDF/SI downloads returned
+    403 after initial sandbox DNS failures; the web SI link also failed. Original
+    2014 figure pixels and supplementary allele gels/tables were not inspected. No
+    claim treats the error bodies as article or supplement files.
+  snapshot_sha256: c5ccf16cccb625cd5382582afb47525e75227538b009c2688bfa4b0920885c14
+  search_scope: Exact cited DOI publisher HTML and pdfdirect, the linked supplement
+    and conventional official supplement URL, followed by two focused title/DOI repository
+    searches. The positive web main source was reread at 2026-10-21T11:17:36Z. No
+    exhaustive absence claim, paid access or repeated blocked-route loop. Initial
+    error-file paths were overwritten by later HTTP error bodies; original DNS receipt
+    hashes describe historical bytes, not current files.
+- evidence_id: S048-MAINTAINED-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/048/science-maintained-search.json
+  locator: Ignored-inclusive maintained correction search
+  accessed_at: '2026-10-21T11:22:28.726597Z'
+  support: context_only
+  summary: No target-specific correction was found in the searched maintained paths.
+    This does not assert absence from external literature or from every repository
+    file.
+  snapshot_sha256: 946c974ab294679707cfbaa4283d29da4eb8d67e2d224777b0a7112edc952a78
+  search_scope: Ignored-inclusive target-specific search of maintained curation/configuration/curation-consumer
+    files only.
+- evidence_id: R048-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/ak-toxin-i.yaml
+  locator: Entire owner and original exact-key raw projection
+  accessed_at: '2026-10-21T11:21:53.742870Z'
+  support: supports
+  summary: The neutral C23H27NO6 owner has four undefined tetrahedral centres and
+    three specified alkene geometries; stereo_complete=false accurately reports that
+    imported gap. One MIBiG producer/locus and three LOTUS occurrences are asserted,
+    without optional mechanism or measured activity claims.
+  snapshot_sha256: 7e434c83e8acecea88eaadad565d1ab78db571e0e6e7c78b0a67dea7c08481aa
+- evidence_id: R048-CHEM
+  kind: validation
+  reference: /private/tmp/npm-review-work/048/identity/chemical-comparison.json
+  locator: Six parsed graphs and explicit stereo-removal connectivity comparison
+  accessed_at: '2026-10-21T11:21:54.539632Z'
+  support: supports
+  summary: Five current owner/source/authority graphs agree on the incomplete HGSOUJPIFSDBKJ-OUYMFVGOSA-N
+    structure and fixed-H form. The primary-derived graph has the same constitution
+    and 2E,4Z,6E geometry, but specifies all four centres and yields HGSOUJPIFSDBKJ-VJEMRUNWSA-N.
+    The gap is lost stereochemical information, not a different elemental composition
+    or salt.
+  snapshot_sha256: 0907b7a28266bfed1acfbd3d6ac9258ec3c314154e71f3980a3b9eee5e957254
+- evidence_id: R048-PRIMARY
+  kind: primary_source
+  reference: https://www.jstage.jst.go.jp/article/bbb1961/49/3/49_3_807/_pdf
+  locator: Full 1985 article and original printed pp811–812, Figures3–5, hydrolysis
+    and X-ray interpretation
+  accessed_at: '2026-10-21T10:36:48.901750Z'
+  support: supports
+  summary: The original AK-toxin I analysis establishes 8R,9S,2-primeS,3-primeS and
+    2E,4Z,6E. Relative X-ray stereochemistry is anchored by hydrolysis to L-erythro-beta-methylphenylalanine.
+    The inference for AK-toxin II is not transferred to I; the explicit I assignment
+    is the relevant evidence.
+  snapshot_sha256: eb6779348921d72f9300ef4323e5476aee96ca1b011d80a06dbb1c040d267a55
+- evidence_id: R048-TRANSCRIPTION
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch005/root/ak1985-primary-structure.json
+  locator: Atom-mapped primary transcription and descriptor-to-graph check
+  accessed_at: '2026-10-21T10:40:49.421783Z'
+  support: supports
+  summary: The retained independently prepared transcription maps C8=R,C9=S,C2-prime=S,C3-prime=S
+    and all three alkenes to an unambiguous SMILES/InChI/full-key candidate. It is
+    a source-grounded transcription, not a new experimental structure determination.
+  snapshot_sha256: 8d7c145598cca6b6eb4879e9e1e80e0e899e1d83d079e7ad6715c6c02c5ebd0e
+- evidence_id: R048-MIBIG
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0001262.3/annotations.json
+  locator: Complete relevant returned source, chemical identity and taxonomic fields
+  accessed_at: '2026-10-21T11:17:21.504208Z'
+  support: supports
+  summary: Active BGC0001262 version3 reproduces the four-centre-unspecified graph,
+    A. alternata5599 and AB872924.1, with empty methods/bounds. It selects PMID24611558
+    through entry-level legacy references. Quality questionable and completeness unknown
+    are preserved source flags. The source NPAtlas literal lacks one zero but resolves
+    through the live API.
+  snapshot_sha256: a340eebcad8adf40b1b88fcb9c10f636e66b910a521323d9685184677ace8f53
+- evidence_id: R048-NPA
+  kind: database
+  reference: https://www.npatlas.org/api/v1/compound/NPA08756
+  locator: Complete relevant returned source, chemical identity and taxonomic fields
+  accessed_at: '2026-10-21T11:17:20.808351Z'
+  support: supports
+  summary: The literal NPA08756 request succeeds and returns canonical NPA008756,
+    original AK-toxin I with the same incomplete graph. Its origin is the 1982 DOI10.1016/s0040-4039(00)85630-0
+    and A. kikuchiana; this paper was not separately inspected here. A canonical identifier
+    normalization may be useful, but this is not an unresolvable or wrong-compound
+    xref.
+  snapshot_sha256: afa22d324d1f55e37f01afe35de57a258d5627ef4fcc718c1fc4093aeafb1e19
+- evidence_id: R048-NPA-ALIAS
+  kind: database
+  reference: https://www.npatlas.org/api/v1/compound/NPA008756
+  locator: Complete relevant returned source, chemical identity and taxonomic fields
+  accessed_at: '2026-10-21T11:17:20.814946Z'
+  support: supports
+  summary: The canonical padded request returns byte-identical content to NPA08756,
+    directly confirming the accepted alias.
+  snapshot_sha256: afa22d324d1f55e37f01afe35de57a258d5627ef4fcc718c1fc4093aeafb1e19
+- evidence_id: R048-CHEBI
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/80727/
+  locator: Complete relevant returned source, chemical identity and taxonomic fields
+  accessed_at: '2026-10-21T11:18:37.015858Z'
+  support: supports
+  summary: Released CHEBI80727 is two-star and reproduces the same unspecified parent.
+    It is not an eligible fully stereospecified replacement and has no origin claim
+    to supply the missing primary assignment.
+  snapshot_sha256: b4f654af5dc9a4db6bda193908ab086575504ef71bfe05d6541239397254b0c9
+- evidence_id: R048-MOL
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/80727/
+  locator: Complete official MOL parsed independently
+  accessed_at: '2026-10-21T11:18:36.980950Z'
+  support: supports
+  summary: The official MOL independently agrees with the incomplete source graph,
+    including the three alkene geometries.
+  snapshot_sha256: ed672aa22d3e304212937f8c72c288e4f28bf79273e46f721c55c232b6cade00
+- evidence_id: R048-CHEBI-SEARCH
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=HGSOUJPIFSDBKJ-VJEMRUNWSA-N&size=100
+  locator: Exact full corrected-key query; retained404response
+  accessed_at: '2026-10-21T11:17:25.834943Z'
+  support: context_only
+  summary: No result was returned for the primary-derived full key in this exact live
+    query. The complete pinned eligible three-star inventory likewise has no exact
+    corrected-key row. This bounded result does not establish absence from every chemical
+    database.
+  snapshot_sha256: 1c1d43c05adb1ec557071b392de044a98ae997d1094a60d12f5135e8c3402001
+  search_scope: Exact full-key live ChEBI query and complete parsed committed three-star
+    inventory, including all rows; no literature-absence assertion.
+- evidence_id: R048-TAXON
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=5599,1232598,167740&retmode=xml
+  locator: All three top-level Taxon names/ranks/parent links and complete OtherNames
+  accessed_at: '2026-10-21T11:17:21.034020Z'
+  support: supports
+  summary: NCBI5599 A. alternata,1232598 A. kikuchiana and167740 A. gaisen are separate
+    current species nodes. Their returned aliases do not equate these three IDs. The
+    primary1985 historical pathotype statement and independently inspected2019 taxonomic
+    account provide the relevant nomenclatural bridge; no current ID merge or stock
+    equivalence is inferred.
+  snapshot_sha256: 6c197436b207d71a7d794d14d133e99bfa9fb397046d56a93fdb848cc9fbe399
+- evidence_id: R048-WIKI
+  kind: database
+  reference: https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q10406882%7CQ10406901%7CQ2704244&props=labels%7Cclaims&languages=en&format=json
+  locator: Complete relevant returned source, chemical identity and taxonomic fields
+  accessed_at: '2026-10-21T11:17:21.498385Z'
+  support: supports
+  summary: All three stored organism Wikidata entities map explicitly through P685
+    to the corresponding NCBI species ID. No chemical entity is supplied by these
+    LOTUS triples.
+  snapshot_sha256: b98dc40a4be791aaa791ad833667e92aae0903e92d021fb1e8dbf39305632e54
+- evidence_id: R048-CONSUMERS
+  kind: record_content
+  reference: src/naturalproductmech/curate/structure_corrections.py
+  locator: Complete existing loader and application; coupled claim/strain/xref consumers
+    already inspected
+  accessed_at: '2026-10-21T11:21:53.742870Z'
+  support: supports
+  summary: The implemented structure correction requires an eligible three-star ChEBI
+    target and cannot directly adopt this primary-only literal graph. Existing claim-reference
+    and strain consumers reject structure-corrected rows. A new guarded graph representation
+    and explicit tested overlay composition are necessary; editing the generated YAML
+    or adding unconsumed columns would not reproduce the repair.
+  snapshot_sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+- evidence_id: R048-RAW
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: Exact BGC0001262:1 full row and exact-key inventory projection
+  accessed_at: '2026-10-21T11:21:53.742870Z'
+  support: supports
+  summary: The complete canonical raw-row SHA is ff49677ea27d3854eeba9848e1fb6066b4050227b24690ecca6d4217f1654150.
+    All structure, source/version, taxon, accession, empty bounds/methods, reference
+    basis and xrefs must remain covered by the eventual drift guard. Current NPClassifier
+    is explicitly attributed to the old graph and must not silently become a result
+    for the corrected graph.
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: R048-IMODULON
+  kind: database
+  reference: https://imodulondb.org/
+  locator: Complete retained28-dataset catalogue
+  accessed_at: '2026-10-21T07:21:15.957321Z'
+  support: context_only
+  summary: No matching native fungal organism/strain dataset occurs in the complete
+    retained catalogue.
+  snapshot_sha256: 1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549
+assessments:
+- assessment_id: S048-A-IDENTITY
+  area: identity
+  topic: Missing four established absolute configurations
+  outcome: concern
+  summary: The owner faithfully flags its incomplete source structure, but the original
+    AK-I work establishes all four centres while confirming the current alkene geometries.
+    Primary evidence supports completing the molecule; the related AK-II caveat does
+    not justify leaving AK-I undefined. The separate identifier packet owns the actionable
+    identity repair.
+  target_ids:
+  - naturalproductmech:mibig-1a4db46ddd
+  evidence_ids:
+  - S048-OWNER
+  - S048-1985
+  - S048-1985-MAPPING
+- assessment_id: S048-A-ORIGIN
+  area: evidence
+  topic: Exact native isolation and historical taxon wording
+  outcome: supported
+  summary: The 1985 source isolates crystalline AK-I from AS-1223 native culture,
+    supporting natural-product origin. It explicitly bridges the historical name A.
+    kikuchiana to the A. alternata Japanese pear pathotype. AS-1223 is not equated
+    with 15A, and the susceptible pear is an assay host rather than a producer.
+  target_ids:
+  - naturalproductmech:mibig-1a4db46ddd
+  evidence_ids:
+  - S048-1985
+  - S048-LOCAL
+- assessment_id: S048-A-OCCURRENCE-2014
+  area: evidence
+  topic: Cited 2014 A. alternata occurrence
+  outcome: supported
+  summary: The full cited study quantifies exact AK-I in native 15A culture and thus
+    supports the broader species occurrence. This is not inferred from a shared toxin-family
+    name or from the separate strawberry/tangerine overexpression experiments.
+  target_ids:
+  - naturalproductmech:mibig-1a4db46ddd
+  evidence_ids:
+  - S048-LOCAL
+  - S048-2014
+  - S048-LOCUS
+- assessment_id: S048-A-GAISEN
+  area: scope
+  topic: Historical A. gaisen / A. kikuchiana occurrence naming
+  outcome: supported
+  summary: The 1985 source explicitly connects its fungus to the historical A. kikuchiana
+    name; the 2019 primary taxonomy explicitly treats that name as a later synonym
+    of A. gaisen. This supports retaining the LOTUS A. gaisen occurrence as a taxonomically
+    interpreted report of the same historical event, despite separate current NCBI
+    IDs. It does not establish another isolation, identify AS-1223 with a modern reference
+    stock, or justify changing the deposited 15A taxon.
+  target_ids:
+  - naturalproductmech:mibig-1a4db46ddd
+  evidence_ids:
+  - S048-LOCAL
+  - S048-1985
+  - S048-TAXONOMY
+- assessment_id: S048-A-NATIVE-METHOD
+  area: evidence
+  topic: Exact 15A native genetic and transcript/product scope
+  outcome: concern
+  summary: The deposited fragment and cited main text establish the same native strain
+    and exact toxin. Its measured expression/output relationship is omitted from the
+    source-derived grades. The paper also reports a negative-regulator perturbation,
+    but no production-stop necessity experiment or direct purified Akt7 reaction.
+    The current correlation method gives a defensible scoped correction without overgrading.
+  target_ids:
+  - naturalproductmech:mibig-1a4db46ddd
+  evidence_ids:
+  - S048-RAW
+  - S048-2014
+  - S048-LOCUS
+  - S048-GRADING
+  - S048-METHOD-EVALUATION
+- assessment_id: S048-A-LOCUS
+  area: scope
+  topic: Partial cosmid, duplicated genes and inferred enzyme chemistry
+  outcome: supported
+  summary: The original study explicitly identifies AB872924 as pcAKT-3, part of a
+    complex duplicated AKT region. The accession is therefore applicable; absent owner
+    bounds do not falsely assert a complete chromosome. AFT9h is a pseudogene, and
+    Akt7-mediated diversion to an unknown shunt product is proposed. These facts do
+    not warrant importing an AF/ACT enzyme mechanism or claiming that this fragment
+    alone suffices to make AK-I.
+  target_ids:
+  - naturalproductmech:mibig-1a4db46ddd
+  evidence_ids:
+  - S048-OWNER
+  - S048-2014
+  - S048-LOCUS
+- assessment_id: S048-A-ACTIVITY
+  area: completeness
+  topic: Optional phytotoxicity content
+  outcome: not_applicable
+  summary: The owner asserts no quantitative activity. The 1985 purified-toxin leaf-necrosis
+    endpoint and 2014 culture-filtrate/pathogenicity measurements need their own context
+    if later added; they are not receptor binding, an IC50, or a pure-compound assay
+    of every engineered culture. Their current omission is not a finding.
+  target_ids:
+  - naturalproductmech:mibig-1a4db46ddd
+  evidence_ids:
+  - S048-OWNER
+  - S048-1985
+  - S048-2014
+- assessment_id: S048-A-CLASS-HISTORY
+  area: consistency
+  topic: Source classifications and seeded history
+  outcome: supported
+  summary: The imported amide-alkaloid classification is recognizable as an algorithmic
+    result, and the polyketide-associated BGC label is compatible with the EDA-containing
+    product family. No optional detailed pathway or graph is required. The generated
+    SEEDED history is retained; this read-only review does not independently mark
+    the scientific owner reviewed.
+  target_ids:
+  - naturalproductmech:mibig-1a4db46ddd
+  evidence_ids:
+  - S048-OWNER
+  - S048-LOCAL
+  - S048-1985
+  - S048-2014
+- assessment_id: R048-A-IDENTITY
+  area: identity
+  topic: Four established but unencoded stereocentres
+  outcome: concern
+  summary: The imported false completeness flag is honest, but the exact named compound
+    has recoverable primary stereochemistry. The maintained source transform needs
+    an exact graph correction.
+  target_ids:
+  - naturalproductmech:mibig-1a4db46ddd
+  evidence_ids:
+  - R048-OWNER
+  - R048-CHEM
+  - R048-PRIMARY
+  - R048-TRANSCRIPTION
+- assessment_id: R048-A-XREF
+  area: grounding
+  topic: Current authority agreement and NPAtlas alias
+  outcome: supported
+  summary: All current structures agree at their incomplete scope. Literal and canonical
+    NPAtlas IDs resolve identically, so no broken-xref finding is added. Two-star
+    ChEBI cannot supply the required corrected exact graph.
+  target_ids:
+  - naturalproductmech:mibig-1a4db46ddd
+  evidence_ids:
+  - R048-NPA
+  - R048-NPA-ALIAS
+  - R048-CHEBI
+  - R048-MOL
+  - R048-CHEM
+- assessment_id: R048-A-TAX
+  area: scope
+  topic: Historical names and current taxon nodes
+  outcome: supported
+  summary: The stored taxon IDs and Wikidata links resolve. Primary1985 bridges historical
+    alternata/kikuchiana usage, and the2019 taxonomic account explicitly synonymizes
+    kikuchiana with gaisen for this historical interpretation. These are two source
+    labels for the same1985 report, not independent isolations or proof of identical
+    AS-1223/15A stocks.
+  target_ids:
+  - naturalproductmech:mibig-1a4db46ddd
+  evidence_ids:
+  - R048-TAXON
+  - R048-WIKI
+  - R048-PRIMARY
+  - S048-TAXONOMY
+- assessment_id: R048-A-HISTORY
+  area: provenance
+  topic: Source classification and native history
+  outcome: supported
+  summary: All seed history remains intact. The current computational classification
+    is versioned; eventual structure repair must explicitly address its old graph
+    input and source-owned metadata without promoting review status.
+  target_ids:
+  - naturalproductmech:mibig-1a4db46ddd
+  evidence_ids:
+  - R048-OWNER
+  - R048-RAW
+findings:
+- finding_id: S048-F-NATIVE-SCOPE
+  issue_key: mibig-bgc0001262-compound1-native-expression-scope
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Retain the native 15A expression/product evidence and its direction
+  description: The empty source method omits the cited study’s native 15A AKT7 transcript-versus-exact-AK-I
+    relationship and its experimental strain context. The available correlation method
+    is applicable. A stronger production-stop knockout grade would contradict the
+    observed increased product after single-copy disruption. The correction should
+    preserve that directional and multicopy scope rather than imply positive pathway
+    necessity or direct enzyme chemistry.
+  target_ids:
+  - naturalproductmech:mibig-1a4db46ddd
+  field_paths:
+  - producer_organisms[0].strain
+  - producer_organisms[0].evidence_basis
+  - producer_organisms[0].notes
+  - biosynthetic_gene_clusters[0].locus_evidence_methods
+  - biosynthetic_gene_clusters[0].link_evidence_basis
+  evidence_ids:
+  - S048-RAW
+  - S048-2014
+  - S048-LOCUS
+  - S048-GRADING
+  - S048-METHOD-EVALUATION
+  - S048-LOADERS
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Exact-source native expression/product method
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Source-pinned 15A experimental context
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: Complete original-row guard where compatible
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Guarded overlay composition and generation
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Citation guard composition with structural correction
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/producer_strains.py
+    role: Original-row strain qualification
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/structure_corrections.py
+    role: Coordinated primary-backed structure correction extension
+  - repository: CultureBotAI/NaturalProductMech
+    path: conf/producer_evidence.tsv
+    role: Preserved exact method semantics
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/grading.py
+    role: Native-producer and locus grades
+- finding_id: R048-F-STEREO
+  issue_key: ak-toxin-i-bgc0001262-four-established-stereocentres-missing
+  category: identity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Encode the four primary-established AK-toxin I stereocentres
+  description: The owner and current MIBiG/NPAtlas/ChEBI graphs retain the correct
+    constitution and alkene geometry but omit all four tetrahedral assignments explicitly
+    established for AK-toxin I in the original1985 paper. stereo_complete=false describes
+    the imported gap without resolving the exact named parent. Repair the consumed
+    structure source and dependent identity joins using the primary-grounded graph.
+  target_ids:
+  - naturalproductmech:mibig-1a4db46ddd
+  field_paths:
+  - chemical_structure
+  - source_concepts
+  - np_classification
+  evidence_ids:
+  - R048-CHEM
+  - R048-PRIMARY
+  - R048-TRANSCRIPTION
+  - R048-RAW
+  - R048-CONSUMERS
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: Maintained consumed structural decision; requires supported literal-graph
+      extension
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/structure_corrections.py
+    role: Typed graph validation, full-row guards and overlay composition
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Stable source-concept identity, exact-structure joins and deterministic
+      regenerated provenance
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_npclassifier.py
+    role: Recompute only the corrected exact molecular graph
+actions:
+- action_id: S048-A-NATIVE-SCOPE
+  description: 'For original source BGC0001262:1, pin complete raw-row SHA256 ff49677ea27d3854eeba9848e1fb6066b4050227b24690ecca6d4217f1654150
+    and use the existing literal Gene expression correlated with compound production
+    in the consumed method override, yielding BGC_CORRELATED/CLUSTER_CORRELATED. Add
+    a source-pinned producer strain qualification 15A (ATCC90610), with Japanese pear
+    pathotype in its rationale, retaining taxon 5599 and PMID:24611558 / DOI:10.1111/nph.12754.
+    Preserve the additional native single-copy disruption and overexpression observations
+    as qualified evidence: decreased or increased output does not establish toxin-pathway
+    necessity. Coordinate this with the separately required primary-backed structural
+    correction. REPLACE ignores expected_* fields, and the current claim-reference
+    consumer rejects structure-corrected rows; therefore implement and test a compatible
+    complete-original-row guard/composition route, rather than merely refreshing pins
+    or relying on an unusable paired citation row. Do not use the reserved decisions.tsv.'
+  finding_ids:
+  - S048-F-NATIVE-SCOPE
+  target_ids:
+  - naturalproductmech:mibig-1a4db46ddd
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Exact-source native expression/product method
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Source-pinned 15A experimental context
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: Complete original-row guard where compatible
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Guarded overlay composition and generation
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Citation guard composition with structural correction
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/producer_strains.py
+    role: Original-row strain qualification
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/structure_corrections.py
+    role: Coordinated primary-backed structure correction extension
+  - repository: CultureBotAI/NaturalProductMech
+    path: conf/producer_evidence.tsv
+    role: Preserved exact method semantics
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/grading.py
+    role: Native-producer and locus grades
+  generator: scripts/seed_from_sources.py with the consumed method/strain overlays
+    and explicitly tested original-row guard composition
+  acceptance_checks:
+  - Exactly one BGC0001262:1 original source row matches the pinned complete SHA;
+    altering chemistry, strain, source citation, accession, bounds or source methods
+    fails closed.
+  - The generated producer is qualified as 15A (ATCC90610), Japanese pear pathotype,
+    under species taxon 5599; AS-1223, NAF8 and SH20 are not silently equated with
+    it.
+  - Only the justified existing correlation method is added, with BGC_CORRELATED and
+    CLUSTER_CORRELATED. No necessity-defined Knock-out studies, Enzymatic assays or
+    Heterologous expression method is introduced from these experiments.
+  - A combined canary applies the primary-backed structure correction, original-row
+    guard, method and strain overlays and any required citation routing without a
+    structure_correction_note rejection, stale-source bypass, lost qualification or
+    duplicate evidence.
+  - Raw old-key chemistry, LOTUS mappings and original source assertions remain auditable.
+    Any transfer to a corrected structure is separately primary-backed, not an automatic
+    exact-key join across stereochemical resolution.
+  - The rationale records native negative regulation, multicopy/single-copy disruption
+    and uncharacterized shunt product; the fragment is not represented as an independently
+    sufficient whole pathway.
+  - After implementation, strict validation, deterministic regeneration and required
+    repository gates pass.
+- action_id: R048-ACTION-STEREO
+  finding_ids:
+  - R048-F-STEREO
+  target_ids:
+  - naturalproductmech:mibig-1a4db46ddd
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: Maintained consumed structural decision; requires supported literal-graph
+      extension
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/structure_corrections.py
+    role: Typed graph validation, full-row guards and overlay composition
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Stable source-concept identity, exact-structure joins and deterministic
+      regenerated provenance
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_npclassifier.py
+    role: Recompute only the corrected exact molecular graph
+  description: Extend the consumed structural decision model to accept a primary-cited
+    literal exact graph when no eligible three-star ChEBI entry exists. For unique
+    BGC0001262:1 version3, pin complete original raw-row SHA256 ff49677ea27d3854eeba9848e1fb6066b4050227b24690ecca6d4217f1654150
+    and old full key HGSOUJPIFSDBKJ-OUYMFVGOSA-N. Adopt the source-grounded SMILES
+    CC(=O)N[C@@H](C(=O)O[C@H](/C=C/C=C\C=C\C(=O)O)[C@]1(C)CO1)[C@@H](C)c1ccccc1 yielding
+    HGSOUJPIFSDBKJ-VJEMRUNWSA-N, neutral C23H27NO6, 8R9S2-primeS3-primeS and2E4Z6E.
+    Store original and corrected identity, actual curator/date and1985 DOI attribution.
+    The existing ChEBI-only consumer cannot implement this as-is. Explicitly compose
+    the structure correction with separately supported strain/method/citation decisions;
+    do not bypass their current structure-correction rejection by merely refreshing
+    hashes.
+  generator: scripts/seed_from_sources.py and a tested extension of src/naturalproductmech/curate/structure_corrections.py
+  acceptance_checks:
+  - Recompute the full standard and fixed-H identities from the literal graph, verify
+    all four centres and all three double bonds against primary atom mapping, and
+    fail on changed raw-row context or nonunique source selection.
+  - Preserve the original raw graph, incomplete NPA/ChEBI source concepts and source-specific
+    occurrence evidence; represent their relation to the corrected parent explicitly,
+    rather than claiming those external entries already encode exact stereochemistry.
+  - A combined test must apply the structure, 15A strain context, conservative expression-correlation
+    method and claim-local citation together against one original full raw-row pin,
+    while rejecting changed chemistry/taxon/accession/version/bounds/methods/xrefs/references
+    or unsupported overlay combinations.
+  - Retain the stable MIBiG source-concept-derived identifier while deterministically
+    updating the exact structure key, owner filing and dependent joins. Migrate an
+    identifier only if an explicitly reviewed grounding policy requires it. Leave
+    no duplicate old/new owners, preserve occurrences/history, and do not treat a
+    structure-key change as independent experimental occurrence proof. Recompute NPClassifier
+    for the corrected graph with explicit provenance rather than relabelling the old
+    prediction.
+  - Do not promote to ChEBI80727, whose graph is incomplete and only two-star; do
+    not assert a broken NPA xref because both literal/padded API routes resolve. Preserve
+    the primary-backed historical A. gaisen/kikuchiana nomenclatural bridge without
+    merging current identifiers or claiming independent isolations.
+  - After later authorized implementation, inspect the exact generated diff and run
+    strict schema, provenance, identity/corpus, seed reproduction and required gates.
+limitations:
+- The original 1985 full paper was read, with original structural figures independently
+  inspected. Reported absolute assignments were checked against the prose and drawings;
+  crystal coordinates and spectra were not independently reprocessed.
+- The 2014 original scientific main text and captions were read through the public
+  web tool and preserved as an extraction. Direct local publisher downloads failed.
+  Original main figure pixels and supplementary mutant gels/tables were not inspected;
+  the exact main-text product, strain, accession and reported genetic result remain
+  available.
+- Earlier 1999, 2000 and 2010 abstract-only preparations were contextual leads only.
+  No stronger exact-congener assay, mutant allele or enzyme claim is inferred from
+  those uninspected full papers.
+- The 2019 taxonomic account, adjoining results/discussion and page 5 pixels establish
+  a nomenclatural bridge, not genomic equivalence of AS-1223, 15A or the newly examined
+  isolates. The separately retrieved 2020 taxonomic XML was inspected only for bibliographic
+  metadata and supplies no additional scientific conclusion. Current NCBI taxon IDs
+  remain distinct.
+- This packet does not assemble, validate or save a review bundle and does not alter
+  the corpus, raw inventories, curation tables, native status, campaign or Git state.
+- The 1985 source-derived graph is an explicit transcription and descriptor check,
+  not a fresh crystallographic or spectral refinement.
+- Current sources perpetuate the same incomplete stereochemistry. The original1982
+  NPAtlas source was not separately inspected; the later full1985 elucidation supplies
+  this correction.
+- The primary2019 nomenclatural bridge does not establish genetic or stock equivalence
+  of AS-1223,15A or modern examined isolates.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35
+  explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently
+  verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+  Skipped tests are not counted as passing tests. Existing ontology caches were used;
+  no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do
+  not establish biological production, stereochemical specificity, evidence adequacy,
+  or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology
+  results. Reuse establishes unchanged repository inputs; it is not a new remote authority
+  query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all
+  tracked files are hashed. Generated Python bytecode and external tool caches are
+  not claimed to have been independently byte-pinned at the prior execution.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+tags:
+- path-order-campaign
+- batch-005
+```
