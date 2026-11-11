@@ -1,0 +1,1004 @@
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T153913Z-azodyrecin-c
+title: 'azodyrecin C: supported structure and source-specific biosynthetic evidence'
+started_at: '2026-10-21T15:23:17.537863Z'
+finished_at: '2026-10-21T15:39:13.205402Z'
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The exact C structure, reported stereochemistry and native P8-A2 production
+  are supported. Preserve the current source-faithful heterologous locus evidence
+  and its lower-abundance MS identification limit. Add the published native early-stop
+  evidence and full strain qualifier through guarded curation. The reference-based
+  clone-boundary model does not justify changing the stored genomic interval.
+source:
+  git_revision: 1c2402097718c138b081e00943de8f04de0541cd
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/azodyrecin-c.yaml
+    sha256: d850ee902d7255009eff096f02d131ce535ad3b72a7f2de51dc2637e66719222
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/lotus_exclusions.py
+    sha256: 6352cac7c587eab5a56d907c523cc899d02d197009081624bf8649c675ee30f7
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+    role: context
+  - path: src/naturalproductmech/grading.py
+    sha256: ece54c4a2c0803f034ac59de51b1006cf79ea8d6b6256d75757d4adb88ea9630
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 100, batch 010, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated targets in earlier
+    batch commits (publication tracked separately). At selection, 144 of 3116 current
+    records had campaign coverage and 2972 remained. The population search included
+    ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-a94d32d8e6
+targets:
+- target_id: naturalproductmech:mibig-a94d32d8e6
+  path: data/natural_products/alkaloids/azodyrecin-c.yaml
+  label: Azodyrecin C
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-a94d32d8e6
+  command: just validate-strict data/natural_products/alkaloids/azodyrecin-c.yaml
+    --out /private/tmp/npm-review-work/100/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T15:23:19.061141Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 current record files agree with PATHS.tsv and their pinned filing
+    pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055340+00:00;
+    finished 2026-10-21T09:55:22.727768+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-corpus.log. Reused
+    for batch010 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch010. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-a94d32d8e6
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 current records passed the documented byte-reproduction gate
+    against committed inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055361+00:00;
+    finished 2026-10-21T09:56:44.050706+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-reproduction.log.
+    Reused for batch010 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch010. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-a94d32d8e6
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The exhaustive review queue produced 8,928 diagnostic rows across 12 queues;
+    this deterministic output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just review-queue --tsv /private/tmp/npm-review-queue-batch-004.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.057401+00:00;
+    finished 2026-10-21T09:54:38.468783+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/review-queue.log. Reused
+    for batch010 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch010. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-a94d32d8e6
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'The configured identifier-label gate passed using the existing ontology
+    caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions,
+    499 warning-only mismatches and 4,744 pairs skipped because their prefixes have
+    no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.061733+00:00;
+    finished 2026-10-21T09:56:36.296159+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/validate-products.log. Reused
+    for batch010 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch010. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-a94d32d8e6
+- check_id: shared-qc
+  name: Full repository quality gate on the current main baseline
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed on the unchanged main baseline
+    during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+    All configured lint, governance, documentation, provenance, source-queue, schema,
+    rendering, reproduction, filing-integrity and reporting stages completed successfully.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:30.560925+00:00;
+    finished 2026-10-21T10:04:44.806799+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/qc.log. Reused for batch010
+    only after a fresh fetch/clean branch, equal commit/tree and two reads of all
+    9,182 tracked byte streams and modes (208,070,649 bytes), including a recheck
+    after the fresh authoritative catalogue. This gate was not rerun for batch010.
+    Original execution times, scope, warnings, exceptions and skips are retained.'
+  target_ids:
+  - naturalproductmech:mibig-a94d32d8e6
+- check_id: R100-FULL-OWNER
+  name: Complete owner and referenced-component scope
+  status: passed
+  required: true
+  summary: The entire owner and all matching local source rows were read. The resolved
+    view confirms the empty component-reference set; all formal input hashes and fresh
+    intake/strict success receipts agree.
+  target_ids:
+  - naturalproductmech:mibig-a94d32d8e6
+  evidence_ids:
+  - R100-OWNER
+  - R100-LOCAL-SOURCES
+- check_id: S100-C-PRIMARY
+  name: Exact native product and positive locus linkage
+  status: passed
+  required: true
+  summary: Original isolation and published native/heterologous experiments support
+    exact C at their stated analytical resolution.
+  target_ids:
+  - naturalproductmech:mibig-a94d32d8e6
+  evidence_ids:
+  - S100-E-2020
+  - S100-E-2024
+  - S100-E-2024-SI
+- check_id: S100-C-CONTEXT
+  name: Source-faithful current method grades and additional experimental context
+  status: passed
+  required: true
+  summary: The current Heterologous expression method and SOURCE_ASSERTION/CLUSTER_DEMONSTRATED
+    grades faithfully represent the imported source and are positively supported.
+    Additional native early-stop evidence, published citation and P8-A2 context merit
+    the separately recorded minor enrichment.
+  target_ids:
+  - naturalproductmech:mibig-a94d32d8e6
+  evidence_ids:
+  - S100-E-LOCAL
+  - S100-E-2024
+  - S100-E-2024-SI
+  - S100-E-MIBIG
+  - S100-E-LOCUS
+- check_id: S100-C-CLONE
+  name: Independent actual clone-junction and coordinate-contract proof
+  status: unavailable
+  required: false
+  summary: The reference-based CATCH model and author plasmid checks are positive,
+    but actual plasmid raw-junction reconstruction and the MIBiG coordinate convention
+    were not independently verified; no coordinate correction is proposed.
+  target_ids:
+  - naturalproductmech:mibig-a94d32d8e6
+  evidence_ids:
+  - S100-E-CATCH
+  - S100-E-2024
+  - S100-E-2024-SI
+- check_id: S100-C-PREPRINT
+  name: Exact historical 2023 preprint body access
+  status: unavailable
+  required: false
+  summary: Bounded earlier preprint access failed. The fully inspected published 2024
+    successor supports the proposed citation update; no unseen preprint wording is
+    quoted or presumed identical.
+  target_ids:
+  - naturalproductmech:mibig-a94d32d8e6
+  evidence_ids:
+  - S100-E-MIBIG
+  - S100-E-2024
+- check_id: C100-C-IDENTITY
+  name: Exact primary-source chemical representation
+  status: passed
+  required: true
+  summary: C agrees at the original supported resolution; unresolved B remote hand
+    is preserved.
+  target_ids:
+  - naturalproductmech:mibig-a94d32d8e6
+  evidence_ids:
+  - C100-E-LOCAL
+  - C100-E-PRIMARY
+  - C100-E-SI
+  - C100-E-COMPARE
+- check_id: C100-C-AUTHORITY
+  name: Literal and candidate authority graph fidelity
+  status: passed
+  required: true
+  summary: Current authority payloads, MOLs and full/fixed-H graph differences were
+    checked; two-star entries are not promoted to eligible exact groundings.
+  target_ids:
+  - naturalproductmech:mibig-a94d32d8e6
+  evidence_ids:
+  - C100-E-AUTHORITY
+  - C100-E-COMPARE
+evidence:
+- evidence_id: R100-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/azodyrecin-c.yaml
+  locator: Complete owner, every assertion, inline graph, discussion and history event
+  accessed_at: '2026-10-21T15:24:59.730317Z'
+  support: supports
+  summary: 'Root read the complete Azodyrecin C owner after its individual intake.
+    It contains 0 occurrence, 1 producer and 1 cluster assertions. Referenced components
+    are empty. Present optional fields: none. This scope is based on complete parsed
+    contents, not a filtered search miss.'
+  snapshot_sha256: d850ee902d7255009eff096f02d131ce535ad3b72a7f2de51dc2637e66719222
+- evidence_id: R100-LOCAL-SOURCES
+  kind: record_content
+  reference: /private/tmp/npm-review-work/100/local-sources.json
+  locator: Every matching MIBiG, LOTUS, ChEBI, CyanoMetDB and NPClassifier row and
+    complete resolved owner
+  accessed_at: '2026-10-21T15:24:59.730317Z'
+  support: context_only
+  summary: Root read every matching source row. The native resolved owner equals the
+    complete parsed raw YAML. Imported assertions and deterministic joins remain distinct
+    from independently inspected primary experiments.
+  snapshot_sha256: 5b641e97697109aac2161c613256ef6847b653fb057fd2e8d2cea656c5131ec4
+- evidence_id: R100-IMODULON-DATASETS
+  kind: database
+  reference: /private/tmp/npm-review-work/010/imodulon-datasets.txt
+  locator: Complete 28-row dataset catalogue; original receipt 010/imodulon-context-receipts.json
+  accessed_at: '2026-10-21T07:21:15.957321Z'
+  support: context_only
+  summary: The catalogue was retrieved on 2026-10-21 at 07:21:15 UTC and is reused
+    with that original time. It includes P. aeruginosa precise364/precise411 and S.
+    albidoflavus/S. coelicolor datasets. It has no named Stigmatella, Rhodococcus,
+    Herpetosiphon or S. mirabilis dataset, and no identified NA04227 dataset. Species
+    or genus matching alone does not establish exact stock, gene, locus or metabolite
+    evidence.
+  snapshot_sha256: 1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549
+- evidence_id: S100-E-LOCAL
+  kind: record_content
+  reference: data/natural_products/alkaloids/azodyrecin-c.yaml
+  locator: Complete owner, individual inspection and all local source rows
+  accessed_at: '2026-10-21T15:32:26.141525Z'
+  support: supports
+  summary: BGC0002805:3, version 2, has raw-row SHA256 f611dc7070dc3fcbf9dd2a21c8313da6557629632a321c0cd516cafcb3015a29.
+    The current producer is SOURCE_ASSERTION, locus CLUSTER_DEMONSTRATED from Heterologous
+    expression, with the 2023 preprint as sole citation and source display name P8-A.
+    The exact current owner has no occurrence rows. No optional mechanism component
+    is asserted.
+  snapshot_sha256: d850ee902d7255009eff096f02d131ce535ad3b72a7f2de51dc2637e66719222
+- evidence_id: S100-E-2020
+  kind: primary_source
+  reference: https://backend.orbit.dtu.dk/ws/portalfiles/portal/255431771/Manuscript_azoxides_from_deer_park_Actinobacterium_12.10.2020.pdf
+  locator: Complete scientific text, isolation/cultivation, Table 1 and Figures 2–5;
+    exact congener numbering
+  accessed_at: '2026-10-21T14:48:10.648070Z'
+  support: supports
+  summary: Original compound 3 is azodyrecin C. A–C were isolated by EtOAc/silica/RP-HPLC
+    from Streptomyces sp. P8-A2 cultured on 5 L solid CM for seven days at 28 °C in
+    the dark. NMR/HRMS and compound-specific spectra establish the native extract
+    products. The 16S comparison to S. mirabilis 3662 is not identity of the strains.
+    Thirty-day CDCl3 storage produces side-chain trans isomers; that different condition
+    does not show that the initial cis products are artifacts.
+  snapshot_sha256: a783e428a7e1860e150235edaff2dc2fa61c18c44e5a6b3c283b6b342f786ed3
+- evidence_id: S100-E-2020-SI
+  kind: primary_source
+  reference: https://ndownloader.figshare.com/files/25550582
+  locator: Official complete text/captions/tables; original ECD S44/S45, cis/trans
+    S31–S33, NMR tables and compound crosswalk
+  accessed_at: '2026-10-21T14:48:39.684147Z'
+  support: supports
+  summary: Official spectra/tables preserve the exact C structural scope. A–C share
+    the reported C2 S assignment by ECD comparison; B remote C12-prime configuration
+    is explicitly unresolved. Separate side-chain alkene and azoxy geometry assignments
+    are retained. This packet does not reinterpret every raw spectral pixel or turn
+    family activity into a property of each congener.
+  snapshot_sha256: 6dc43266f07ebef8e9bbcf6ea604a056c83536ba078fa17f4a4f98ded14879df
+- evidence_id: S100-E-2024
+  kind: primary_source
+  reference: https://backend.orbit.dtu.dk/ws/portalfiles/portal/353616909/MELJU_maleckis-et-al-2024-biosynthesis-of-the-azoxy-compound-azodyrecin-from-streptomyces-mirabilis-p8-a2.pdf
+  locator: Complete main; Figure 3, Figures 4/5, native mutant Results, CATCH and
+    genotype verification Methods
+  accessed_at: '2026-10-21T14:47:51.983956Z'
+  support: supports
+  summary: The published successor identifies native S. mirabilis P8-A2 and the azd
+    locus. CATCH material from that donor produces A–C signals in J1074 and M1146
+    against pSETGUS controls. B is standard/MSMS-confirmed at stated confidence level
+    1; A/C are explicitly lower-abundance MS detections. Native early-stop base edits
+    in azdT, azdB and azdH abolish detected A–C; several other targets also eliminate
+    products, whereas R/S/U/N/W and the unnamed P450 have different outcomes. These
+    are not literal gene deletions and do not establish every detailed reaction.
+  snapshot_sha256: a45b377e4b79b0a9d54ac3ec66d817bf4584d8eda63fc2e7797dbb76f7f807dc
+- evidence_id: S100-E-2024-SI
+  kind: primary_source
+  reference: https://ndownloader.figshare.com/files/44498609
+  locator: Original S8, Table S5, S1/S2 and S6/S7; all retained text and targeted
+    original figures
+  accessed_at: '2026-10-21T14:48:39.398091Z'
+  support: supports
+  summary: Original Figure S8A supplies the three separate congener EICs in both heterologous
+    hosts; S8B supplies B standard/MSMS. Table S5 gives fourteen native genotypes,
+    including W67* in azdT, R72C/Q73* in azdB and Q166* in azdH. The paper reports
+    PCR/Sanger verification after plasmid curing; no rescue or independent whole-genome
+    off-target exclusion is asserted. pAzd and integrating pAzd-ΦC31 differ; the printed
+    total plasmid lengths are not insert lengths.
+  snapshot_sha256: 931128917fddc20d802ebbc6593da3398d91ffdb6134024fff718e883d7f5be8
+- evidence_id: S100-E-2022
+  kind: primary_source
+  reference: https://www.beilstein-journals.org/bjoc/content/pdf/1860-5397-18-102.pdf
+  locator: Complete scientific main; Figure 4 and Scheme 2; original SI assay context
+  accessed_at: '2026-10-21T14:47:50.629273Z'
+  support: supports
+  summary: The independent RM72 and A1C6 cultures and their loci are distinct from
+    P8-A2. The purified RM72 Ady1 experiment converts demethyl saturated azodyrecin
+    E to E; it is not an A/B/C final-product assay and not a purified P8-A2 AzdM assay.
+    Therefore no Enzymatic assays method is added for these exact products from that
+    experiment.
+  snapshot_sha256: ecf188a539cad65551f2b651bcd52a765e9e6567f9eed3cfa77d8d99a8f589c3
+- evidence_id: S100-E-MIBIG
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0002805.2/annotations.json
+  locator: Complete current annotation payload
+  accessed_at: '2026-10-21T14:47:51.078901Z'
+  support: supports
+  summary: Current version 2 remains active/questionable/complete, classes other,
+    the literal interval 1937858..1978761 on JARAKF010000001.1, only Heterologous
+    expression, and the 2023 preprint reference. Its taxonomy display truncates the
+    experimental strain to P8-A. The current database reproduces the old assertion
+    but does not include all native genetic evidence in the published successor.
+  snapshot_sha256: b5161c6c7a9c268918d387476a645202541e6e74792f9b5c9bb2678a4126cea0
+- evidence_id: S100-E-TAXON
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=68239&retmode=xml
+  locator: Exact TaxId, ScientificName, Rank and lineage
+  accessed_at: '2026-10-21T14:48:37.599315Z'
+  support: supports
+  summary: NCBI taxon 68239 is species-rank Streptomyces mirabilis, not a strain-level
+    identifier. Preserve this taxon while qualifying P8-A2; no unrelated type strain
+    or species-wide experiment is inferred.
+  snapshot_sha256: 3b5bb4e169027f1c5c433c507c1b916d5a961783dbb19916234944ada0416f5d
+- evidence_id: S100-E-LOCUS
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=JARAKF010000001.1&seq_start=1937858&seq_stop=1978761&rettype=gbwithparts&retmode=text
+  locator: Reference window header/source/CDS metadata and retained locus-metadata.json
+  accessed_at: '2026-10-21T14:48:39.067651Z'
+  support: supports
+  summary: The retained 40,904-bp 1-based-inclusive window has S. mirabilis source
+    metadata, original sequence id P8-A2_S9_1 and BioProject PRJNA935111/BioSample
+    SAMN33298052. This bridges the submitted locus to P8-A2. Edge CDSs are partial
+    and PGAP functional labels are computational. No full construct or nucleotide-to-protein
+    equivalence is claimed.
+  snapshot_sha256: 0a67797f4b992b47981c2bf4816642b05441a7854c7a1a05df4ee68ece23d0dc
+- evidence_id: S100-E-CATCH
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch010/azodyrecins/linkage-qa/catch-boundary-comparison.json
+  locator: Pinned reference-flank alignment of original 20-nt guides and 30-nt primer
+    arms; independent arithmetic QA
+  accessed_at: '2026-10-21T15:21:26.175244Z'
+  support: context_only
+  summary: Guide/PAM orientation and primer-arm matching support an idealized Cas9
+    insert model 1937858..1978760 (40,903 bp). This is not independent sequencing
+    of the actual plasmid junctions. The MIBiG coordinate convention is unadjudicated,
+    so the one-base difference from a literal GenBank request is not called a confirmed
+    locus error. Current coordinate fields should remain until a properly defined
+    interval contract is checked.
+  snapshot_sha256: 8da3a99d67b4dea6c7d7f6313cd2b336eef7ac16948b55273c50869f9b356efe
+- evidence_id: S100-E-CONSUMERS
+  kind: record_content
+  reference: scripts/seed_from_sources.py
+  locator: Method REPLACE loader/application; full source-pinned claim-reference and
+    strain contracts; grading map
+  accessed_at: '2026-10-21T15:32:26.141525Z'
+  support: supports
+  summary: A REPLACE method decision has no enforced expected_* guard by itself. Pair
+    it with a same-source complete-row-SHA claim-reference decision or implement equivalent
+    fail-closed REPLACE guards. Adding Knock-out studies maps to BGC_CHARACTERIZED
+    while retaining CLUSTER_DEMONSTRATED. producer_strains.py adds a strain and evidence
+    but does not rewrite taxon labels or locus labels. Citation and strain corrections
+    reject structure_correction_note, so combined chemistry repair requires an explicitly
+    tested contract extension. No applicable current correction was found in the retained
+    ignored-inclusive search scope.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: S100-E-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/100/source-overlay-search.json
+  locator: Actual ignored-inclusive maintained-input search
+  accessed_at: '2026-10-21T15:32:26.141525Z'
+  support: context_only
+  summary: No existing matching correction row was found in the searched maintained-input
+    scope; the receipt preserves the exact search, exit status and output.
+  snapshot_sha256: 3d17dfc9dec26c6cb63929287af984832b8caedf05f3e64c435b52dfc955b254
+  search_scope: rg --no-ignore --hidden across curation, scripts and src/naturalproductmech/curate
+    for the exact BGC, names and full-key prefixes.
+- evidence_id: C100-E-LOCAL
+  kind: record_content
+  reference: data/natural_products/alkaloids/azodyrecin-c.yaml
+  locator: Complete owner chemical block, exact source row and recomputation
+  accessed_at: '2026-10-21T15:32:26.196095Z'
+  support: supports
+  summary: Valid net-neutral C graph, formula C20H38N2O3, recomputes exact stored
+    Standard InChI and key VZVALLWLMRCPKH-CMUDWTDJSA-N. Fixed-H and assigned/unassigned
+    stereochemistry are separately recorded in the pinned comparison. Raw row SHA256
+    f611dc7070dc3fcbf9dd2a21c8313da6557629632a321c0cd516cafcb3015a29. The extractor
+    stereo_complete flag currently tests tetrahedral centres only, not all double-bond
+    geometry.
+  snapshot_sha256: d850ee902d7255009eff096f02d131ce535ad3b72a7f2de51dc2637e66719222
+- evidence_id: C100-E-PRIMARY
+  kind: primary_source
+  reference: https://backend.orbit.dtu.dk/ws/portalfiles/portal/255431771/Manuscript_azoxides_from_deer_park_Actinobacterium_12.10.2020.pdf
+  locator: Exact compound discussion, Table 1 and original Figures 2–4
+  accessed_at: '2026-10-21T14:48:10.648070Z'
+  support: supports
+  summary: Original A azoxy Z is supported by UV/NOESY interpretation, separately
+    from side-chain cis geometry (9 Hz coupling). C2 S is assigned by ECD comparison
+    to oxidized elaiomycin. B and C are exact chain congeners with C2 S by comparison
+    to A; B remote C12-prime stereochemistry is explicitly unresolved. The assignments
+    are not X-ray results.
+  snapshot_sha256: a783e428a7e1860e150235edaff2dc2fa61c18c44e5a6b3c283b6b342f786ed3
+- evidence_id: C100-E-SI
+  kind: primary_source
+  reference: https://ndownloader.figshare.com/files/25550582
+  locator: Official exact-congener NMR captions/tables and ECD S44/S45
+  accessed_at: '2026-10-21T14:48:39.684147Z'
+  support: supports
+  summary: Original SI supports the reported spectral comparisons and distinguishes
+    the initially isolated cis compounds from later stored trans mixtures. The source
+    is available; no independent exhaustive NMR/ECD reanalysis or hidden absolute
+    hand is claimed.
+  snapshot_sha256: 6dc43266f07ebef8e9bbcf6ea604a056c83536ba078fa17f4a4f98ded14879df
+- evidence_id: C100-E-AUTHORITY
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/225383/
+  locator: Complete ChEBI JSON and official MOL; separate Standard and Fixed-H comparisons
+  accessed_at: '2026-10-21T14:50:31.660786Z'
+  support: supports
+  summary: Current CHEBI:225383 is a two-star entry. Its C graph omits azoxy N=N geometry
+    and differs in both Standard key and Fixed-H from the owner, despite the same
+    stereo-erased connectivity. The retrieved PubChem authority-key record has the
+    same less-resolved geometry. They are comparison candidates, not present owner
+    xrefs or eligible exact 3-star replacements. All compared default SMILES here
+    parse; official MOL is separately checked.
+  snapshot_sha256: 83c02a398a2c286ce660c7b12b0d77727855a0956881ed6afb38d00a3163dc23
+- evidence_id: C100-E-COMPARE
+  kind: record_content
+  reference: /private/tmp/npm-review-work/100/chemical-authority-comparison.json
+  locator: Target-specific RDKit computation; original comparison and independent
+    source-graph QA
+  accessed_at: '2026-10-21T15:32:26.196095Z'
+  support: supports
+  summary: The direct comparison distinguishes stereochemical resolution from constitution,
+    protonation and tautomerism. Every graph is net neutral with an internal N+/O−
+    azoxy charge separation. Same stereo-erased connectivity is not exact full-graph
+    equivalence. The current owner retains reported azoxy Z and side-chain cis geometry;
+    no alternate absolute hand is selected.
+  snapshot_sha256: 18f9a8f720b9e7ab35d7e102992d186b55b5f91cfb068f9c04534f6597b16020
+- evidence_id: C100-E-CONSUMERS
+  kind: record_content
+  reference: src/naturalproductmech/curate/structure_corrections.py
+  locator: Complete structure-correction contract; seeder application and extract_mibig
+    stereo calculation
+  accessed_at: '2026-10-21T15:32:26.196095Z'
+  support: supports
+  summary: Current structure replacements require a unique structured three-star raw
+    ChEBI target and complete source/target row hashes. They do not accept an arbitrary
+    source-grounded local graph. Old xrefs are withheld and old-key other-source joins
+    are not transferred. Citation/strain consumers reject corrected structure rows.
+    The tetrahedral-only stereo_complete implementation cannot demonstrate full N=N
+    resolution.
+  snapshot_sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+assessments:
+- assessment_id: R100-HISTORY
+  area: provenance
+  topic: Native status and retained audit history
+  outcome: supported
+  summary: The dated seed events and retained SEEDED status document generated provenance.
+    This review adds no native curation event or status promotion.
+  target_ids:
+  - naturalproductmech:mibig-a94d32d8e6
+  evidence_ids:
+  - R100-OWNER
+- assessment_id: R100-OPTIONAL
+  area: completeness
+  topic: Present optional assertions and enrichment limits
+  outcome: not_applicable
+  summary: The complete owner contains no structured pathway, causal graph, molecular
+    target, bioactivity, clinical status, application, cross-corpus relationship or
+    discussion. Optional enrichment is separate from correcting present claims; compound
+    names and computed classes do not establish a mechanism or activity.
+  target_ids:
+  - naturalproductmech:mibig-a94d32d8e6
+  evidence_ids:
+  - R100-OWNER
+  - R100-LOCAL-SOURCES
+- assessment_id: R100-FILING
+  area: representation
+  topic: Computed filing and returned class scope
+  outcome: supported
+  summary: The owner reproduces its exact-key NPClassifier result, including model
+    version npclassifier.gnps2.org@2026-09-07, Alkaloids filing, every superclass/class
+    label (including the empty returned sets where applicable), and false glycoside
+    flag. These remain computed predictions, not experiments proving precursor use,
+    natural origin or stereochemistry. BGC classes retain their separate MIBiG source
+    and biological assessment.
+  target_ids:
+  - naturalproductmech:mibig-a94d32d8e6
+  evidence_ids:
+  - R100-OWNER
+  - R100-LOCAL-SOURCES
+- assessment_id: R100-IMODULON-SCOPE
+  area: completeness
+  topic: Native-producer transcriptomic coverage boundary
+  outcome: not_applicable
+  summary: No exact asserted native producer/experimental strain dataset is identified
+    in the complete inspected catalogue. Streptomyces genus overlap does not identify
+    NA04227 or P8-A2. S. albidoflavus, S. coelicolor and E. coli resources are not
+    substituted for native-producer expression context merely because these organisms
+    appear as heterologous hosts in a paper. Catalogue noncoverage is not negative
+    biological evidence.
+  target_ids:
+  - naturalproductmech:mibig-a94d32d8e6
+  evidence_ids:
+  - R100-OWNER
+  - R100-IMODULON-DATASETS
+- assessment_id: S100-A-ORIGIN
+  area: evidence
+  topic: Native origin and optional occurrence enrichment
+  outcome: supported
+  summary: Native P8-A2 isolation of exact C supports biological origin. The owner
+    has no occurrence row to refute. A separately supported 2020 native-isolation
+    occurrence could be added in curation, but its absence is not an error. Prolonged
+    storage isomerization is not a general native-origin withdrawal.
+  target_ids:
+  - naturalproductmech:mibig-a94d32d8e6
+  evidence_ids:
+  - S100-E-2020
+  - S100-E-2020-SI
+  - S100-E-2024
+- assessment_id: S100-A-METHOD
+  area: evidence
+  topic: Native genotype, source version and final-product evidence
+  outcome: concern
+  summary: Retain the demonstrated locus link and its actual heterologous scope. The
+    stored source-only native grade misses the independently inspected native early-stop
+    loss experiments and has a truncated strain context; route the interpreted claim
+    to the 2024 publication. The old preprint remains upstream provenance without
+    assuming its unseen body is identical.
+  target_ids:
+  - naturalproductmech:mibig-a94d32d8e6
+  evidence_ids:
+  - S100-E-LOCAL
+  - S100-E-2024
+  - S100-E-2024-SI
+  - S100-E-MIBIG
+  - S100-E-TAXON
+  dimensions:
+  - name: native_strain
+    value: Streptomyces mirabilis P8-A2; NCBITaxon:68239 is species rank
+    definition: Deposited donor and edited native cultures are distinct from J1074
+      and M1146 heterologous hosts.
+    evidence_ids:
+    - S100-E-2024
+    - S100-E-TAXON
+    - S100-E-LOCUS
+  - name: genetic_intervention
+    value: CRISPR-BEST early-stop genotypes, not marker-free deletions
+    definition: Table S5 substitutions and loss phenotypes support native necessity
+      without asserting rescue, absence of polarity/off-target effects or every enzyme
+      reaction.
+    evidence_ids:
+    - S100-E-2024
+    - S100-E-2024-SI
+  - name: heterologous_product_identification
+    value: 'C: lower-abundance MS/EIC detection in two hosts'
+    definition: The stronger B standard/MSMS evidence is not transferred to A or C.
+    evidence_ids:
+    - S100-E-2024
+    - S100-E-2024-SI
+  - name: source_version
+    value: BGC0002805 v2; cited 2023 preprint, inspected published 2024 successor
+    definition: Current database status is distinct from the date and scope of the
+      primary experiment.
+    evidence_ids:
+    - S100-E-MIBIG
+    - S100-E-2024
+- assessment_id: S100-A-LOCUS
+  area: grounding
+  topic: Deposited interval versus cloned locus
+  outcome: supported
+  summary: The reference metadata establishes the P8-A2 sequence bridge. The CATCH
+    boundary arithmetic is explicitly model-based and does not justify silently changing
+    one coordinate. Other and the underlying azoxy class are compatible with the source;
+    no complete pathway or exact protein assay is inferred from automated annotation.
+  target_ids:
+  - naturalproductmech:mibig-a94d32d8e6
+  evidence_ids:
+  - S100-E-MIBIG
+  - S100-E-LOCUS
+  - S100-E-CATCH
+  - S100-E-2024
+- assessment_id: S100-A-MECHANISM
+  area: completeness
+  topic: Optional biochemical expansion and intermediate certainty
+  outcome: supported
+  summary: The sparse owner need not carry every proposed reaction. Level-2 intermediate
+    assignments and mutant-derived AzdA/H/B/T proposals must remain qualified if later
+    added. RM72 Ady1 saturated-E chemistry cannot support an exact A/B/C enzymatic-method
+    upgrade.
+  target_ids:
+  - naturalproductmech:mibig-a94d32d8e6
+  evidence_ids:
+  - S100-E-2024
+  - S100-E-2024-SI
+  - S100-E-2022
+- assessment_id: C100-A-GRAPH
+  area: identity
+  topic: Exact connectivity, microstate and source stereochemistry
+  outcome: supported
+  summary: The owner C graph matches the original exact congener at the reported stereochemical
+    resolution. Its only tetrahedral centre is C2 S; terminal isopropyl is not an
+    additional stereocentre. Internal N+/O− is the azoxy representation, not an external
+    salt or a different tautomer.
+  target_ids:
+  - naturalproductmech:mibig-a94d32d8e6
+  evidence_ids:
+  - C100-E-LOCAL
+  - C100-E-PRIMARY
+  - C100-E-SI
+  - C100-E-COMPARE
+  dimensions:
+  - name: absolute_configuration
+    value: C2 S by source ECD comparison
+    definition: Published chiroptical comparison, not independent recalculation or
+      X-ray absolute determination.
+    evidence_ids:
+    - C100-E-PRIMARY
+    - C100-E-SI
+  - name: double_bond_resolution
+    value: side-chain cis and azoxy Z retained
+    definition: These are separate bonds; one assignment cannot stand in for the other.
+    evidence_ids:
+    - C100-E-PRIMARY
+    - C100-E-COMPARE
+  - name: remote_branch
+    value: No additional remote stereocentre
+    definition: No absolute hand is invented or transferred between chain congeners.
+    evidence_ids:
+    - C100-E-PRIMARY
+    - C100-E-COMPARE
+- assessment_id: C100-A-GROUND
+  area: grounding
+  topic: Authority match and minted identity eligibility
+  outcome: supported
+  summary: No inspected eligible exact three-star ChEBI replacement is established.
+    The inspected ChEBI/PubChem name-related graphs are less resolved than the present
+    source graph and are not automatically adopted. The current source-concept-derived
+    identifier therefore remains a valid source-grounding choice pending any explicit
+    migration.
+  target_ids:
+  - naturalproductmech:mibig-a94d32d8e6
+  evidence_ids:
+  - C100-E-AUTHORITY
+  - C100-E-COMPARE
+  - C100-E-CONSUMERS
+findings:
+- finding_id: S100-F-NATIVE
+  issue_key: mibig-bgc0002805-compound3-native-genetic-context
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Azodyrecin C can add native genetic evidence and the exact P8-A2 context
+  description: The current source-method import recognizes only heterologous expression
+    and keeps a SOURCE_ASSERTION producer. The published 2024 study independently
+    reports native P8-A2 early-stop loss of this product as well as heterologous detection.
+    Its evidence supports an additional native genetic method, while retaining the
+    congener-specific analytical limits. The imported P8-A display string is truncated;
+    preserve it as source provenance while making P8-A2 the interpreted experimental
+    strain. The imported method and derived grades are faithful and positively supported;
+    this is additional evidence and provenance qualification, not an unsupported or
+    inflated current experimental claim.
+  target_ids:
+  - naturalproductmech:mibig-a94d32d8e6
+  field_paths:
+  - producer_organisms[0].evidence_basis
+  - producer_organisms[0].strain
+  - producer_organisms[0].taxon_label
+  - producer_organisms[0].notes
+  - producer_organisms[0].evidence
+  - biosynthetic_gene_clusters[0].organism_label
+  - biosynthetic_gene_clusters[0].locus_evidence_methods
+  - biosynthetic_gene_clusters[0].evidence
+  evidence_ids:
+  - S100-E-LOCAL
+  - S100-E-2024
+  - S100-E-2024-SI
+  - S100-E-LOCUS
+  - S100-E-MIBIG
+  - S100-E-CONSUMERS
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Compound-specific retained-plus-native method decision
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: Full-row-pinned published claim citation
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Full-row-pinned P8-A2 context
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/producer_strains.py
+    role: Qualification and any explicit display-context contract
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Citation guard and chemistry-composition restriction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Consumed method application and claim emission
+actions:
+- action_id: S100-ACT-NATIVE
+  finding_ids:
+  - S100-F-NATIVE
+  target_ids:
+  - naturalproductmech:mibig-a94d32d8e6
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Compound-specific retained-plus-native method decision
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: Full-row-pinned published claim citation
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Full-row-pinned P8-A2 context
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/producer_strains.py
+    role: Qualification and any explicit display-context contract
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Citation guard and chemistry-composition restriction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Consumed method application and claim emission
+  generator: scripts/seed_from_sources.py
+  description: 'For BGC0002805:3, exact complete raw-row SHA256 f611dc7070dc3fcbf9dd2a21c8313da6557629632a321c0cd516cafcb3015a29,
+    apply REPLACE methods Heterologous expression|Knock-out studies, paired with a
+    claim-reference decision using that same complete-row SHA and DOI:10.1021/acschembio.3c00632
+    for both producer and locus. Current old context is {"taxon_id": "NCBITaxon:68239",
+    "taxon_label": "Streptomyces mirabilis strain P8-A", "genome_accession": "JARAKF010000001.1",
+    "locus_from": "1937858", "locus_to": "1978761", "locus_evidence_methods": "Heterologous
+    expression", "primary_reference": "DOI:10.1101/2023.10.13.562208", "reference_basis":
+    "ENTRY", "entry_version": "2", "standard_inchi_key": "VZVALLWLMRCPKH-CMUDWTDJSA-N"}.
+    Add a pinned producer strain P8-A2, preserving taxon 68239 and the source spelling
+    P8-A in provenance; explain the native early-stop, heterologous-host and exact-product
+    analytical scopes. Existing producer_strains.py adds context only: any correction
+    of the two display-label fields must first be implemented as an explicit full-row/old-label-guarded
+    consumer extension with tests, not an inert TSV field. Preserve the current interval
+    pending an adjudicated coordinate contract. Do not add Enzymatic assays from the
+    RM72 saturated-E assay.'
+  acceptance_checks:
+  - Enforce the exact complete original row SHA before REPLACE through the paired
+    consumed claim-reference guard, or add tested equivalent guard enforcement; missing/duplicate/drifted
+    rows fail closed.
+  - Retain Heterologous expression and add Knock-out studies; native producer becomes
+    BGC_CHARACTERIZED while locus stays CLUSTER_DEMONSTRATED. Describe actual stop
+    mutations, not literal deletions or unreported rescue.
+  - Published citation and P8-A2 experimental context are visible in both applicable
+    claim scopes, while original preprint and truncated upstream string remain provenance.
+    Never change the species taxon to a guessed strain identifier.
+  - B standard/MSMS support must not be transferred to A/C. Proposed intermediates
+    remain level 2 and no purified final A/B/C enzyme assay is invented.
+  - Preserve deposited coordinate values until the source convention and actual clone
+    are adjudicated; the 40,903-bp model alone is not an off-by-one fix.
+  - Exercise any required chemistry/method/citation/strain composition with drift
+    and cross-congener tests, then regenerate and run documented strict, reproduction,
+    corpus and QC gates in separately authorized curation.
+limitations:
+- The review assesses current assertions and concrete evidence gaps. It does not claim
+  exhaustive discovery of every later study or require every optional mechanism for
+  review coverage.
+- The historical preprint full body was not recovered; the positive published successor
+  is explicitly identified and does not retroactively certify the unseen version.
+- The actual plasmid junctions were not independently reconstructed from raw reads;
+  guide/arm alignment is a bounded reference-based model.
+- A and C heterologous evidence is lower-abundance MS detection, unlike B authentic
+  standard/MSMS confirmation.
+- Native loss experiments do not establish every protein reaction, exclude all indirect
+  effects or prove every proposed intermediate.
+- No optional full pathway or extra occurrence is required; original-source spectra
+  are not independently reassigned beyond the stated scope.
+- Published ECD comparison is retained at its stated strength; no independent ECD
+  calculation or exhaustive spectrum reassignment is claimed.
+- The primary B remote-chain configuration remains unknown and is not supplied by
+  a biosynthetic hypothesis.
+- Current name-related authority candidates can encode less-resolved geometry than
+  the primary; neither database majority nor a shared stereo-erased graph proves exact
+  identity.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35
+  explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently
+  verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+  Skipped tests are not counted as passing tests. Existing ontology caches were used;
+  no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do
+  not establish biological production, stereochemical specificity, evidence adequacy,
+  or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology
+  results. Reuse establishes unchanged repository inputs; it is not a new remote authority
+  query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all
+  tracked files are hashed. Generated Python bytecode and external tool caches are
+  not claimed to have been independently byte-pinned at the prior execution.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+tags:
+- path-order-campaign
+- batch-010
