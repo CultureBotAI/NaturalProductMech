@@ -1,0 +1,1849 @@
+# Local evidence review: cyclooctatin
+
+- Review: 20261103T222704Z-cyclooctatin
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-11-03T21:43:37.790790Z
+- Finished UTC: 2026-11-03T22:27:04.899342Z
+- Reviewer: Codex root with native_checks, bgc_science and review_support peer agents (independent)
+- Completion: partial
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Cyclooctatin preserves a partial-stereochemistry owner, its CotB pathway and two separately qualified engineered redox-support graphs. Exact reference proteins, engineered constructs and whole-cell results retain distinct evidential scopes. The accepted local reader proves complete-document preservation within its contract; scientific completion remains partial.
+
+## Scope And Provenance
+
+One complete NaturalProductRecord, including all present scientific claims, history and declared mechanisms; external verification remains unavailable.
+
+Selection: Campaign path order 2308; one of the next ten uncovered paths selected from the 3116-record corpus. Membership uses the canonical validated catalogue plus retained committed campaign bundles.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base ce6a5498df5be51116bd5e0c119023ee62bb5464.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-3835812e03 | data/natural_products/terpenoids/cyclooctatin.yaml | generated | cyclooctatin |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Complete offline maintained reader for cyclooctatin | passed | True | naturalproductmech:mibig-3835812e03 | The original offline maintained reader returned the complete expected owner for order 2308: 3 graphs, 17 nodes, 15 edges, 3 pathway entries and 6 history events. Complete owner equality and original terminal exit 0 are ROOT-accepted; no unexpected denial or error occurred. This check establishes local preservation, not independent biological or primary-source verification. |
+| strict_ten | passed | True | naturalproductmech:mibig-3835812e03 | Closed-schema validation of the ten selected owners and any referenced components reported zero errors. |
+| strict_full | passed | True | naturalproductmech:mibig-3835812e03 | Full closed-schema validation scanned all 3116 owners and reported zero errors. |
+| lockfile | passed | True | naturalproductmech:mibig-3835812e03 | PATHS.tsv and filesystem agree on all 3116 records and their pinned filing pathways. |
+| reproduction | passed | True | naturalproductmech:mibig-3835812e03 | All 3116 records reproduce byte-identically from the retained inventories and carried curator content. This does not independently validate curator science. |
+| queue | passed | True | naturalproductmech:mibig-3835812e03 | The full local queue contains 8922 diagnostic rows; selected-target entries were inspected. Queue diagnostics are leads, not scientific sign-off. |
+| Full just qc | unavailable | True | naturalproductmech:mibig-3835812e03 | Not run under the external-request prohibition: the complete recipe includes upstream vendored synchronization. The five executed local checks are recorded separately. |
+| Complete OAK identifier/label authority check | unavailable | True | naturalproductmech:mibig-3835812e03 | Complete offline ontology authority coverage was not established for this run; no ontology retrieval or remote resolution was attempted. Retained taxonomy evidence has only its explicitly stated local scope. |
+| Primary literature and current structured database/identifier verification | unavailable | True | naturalproductmech:mibig-3835812e03 | All external requests are prohibited by the user. Fresh database and identifier verification and complete primary-literature coverage are unavailable. Any retained original literature actually inspected is recorded separately with its historical scope. |
+
+## Scientific And Domain Assessments
+
+### Identity
+
+identity: supported. Targets: naturalproductmech:mibig-3835812e03.
+
+The minted owner naturalproductmech:mibig-3835812e03 preserves complete key MSKFOQCDNOFJAT-SOFYXZRVSA-N from BGC0000677 version 5 compound index 1. Its exact retained ChEBI structure join is empty; PubChem:5467942 is not freshly verified. The pathway product CHEBI:78370 has more fully specified stereochemistry and remains a qualified pathway grounding, not an authorization to replace this owner key or fill its undefined centres.
+
+### Representation
+
+representation: supported. Targets: naturalproductmech:mibig-3835812e03.
+
+Both saved forms are neutral C20H34O3 with 23 heavy atoms, 25 bonds, a 5/8/5 ring basis and three hydroxyls. Seven tetrahedral centres are unspecified and one alkene is specified. Both saved bond tables encode STEREOZ; index-relative Cis/Trans labels in potential-stereo descriptors differ with local ordering and do not demonstrate an isomer mismatch. All ten comparisons are true and the original correspondence is complete, while full_graph_identity_established remains false. The retained false centre-completeness flag is consistent with this partial-stereochemistry owner.
+
+### Origin
+
+provenance: supported. Targets: naturalproductmech:mibig-3835812e03.
+
+Streptomyces melanosporofaciens NCBITaxon:67327 is retained as BGC_CHARACTERIZED. BGC0000677 version 5 is active, questionable and marked complete at the source-entry level, with knockout, enzymatic-assay and heterologous-expression methods supporting CLUSTER_DEMONSTRATED. Entry completeness is not complete scientific review. The five S. albus occurrence rows and engineered E. coli expression hosts do not replace the source producer or demonstrate native redox partnerships.
+
+### Citations
+
+evidence: supported. Targets: naturalproductmech:mibig-3835812e03.
+
+ENTRY PMID:19635410 supplies MIBiG provenance, while the CotB and engineered AfR/Afx and PdR/Pdx graph edges retain their own primary-experiment and database citations. The notes distinguish evidence from the pathway paper, engineered whole-cell comparisons and accession/sequence databases. Repetition across edges and history does not create independent experiments; primary texts, constructs and database records were not freshly accessed.
+
+### Occurrence and activity
+
+evidence: supported. Targets: naturalproductmech:mibig-3835812e03.
+
+Five exact LOTUS rows record S. albus NCBITaxon:1888 occurrences with their literal references. They are occurrence assertions rather than five independent production experiments. The exact saved PubChem, BindingDB and AntibioticMech joins are empty, and there is no written molecular target or quantitative activity observation to promote. The engineered redox-support experiments concern biosynthetic production in their stated constructs and conditions, not compound pharmacology.
+
+### Classification
+
+consistency: supported. Targets: naturalproductmech:mibig-3835812e03.
+
+The retained NPClassifier prediction is Terpenoids / Diterpenoids / Fusicoccane diterpenoids with glycoside:false. The C20 5/8/5 tricyclic topology and three hydroxyls are compatible with broad diterpenoid filing and no saved sugar unit, while the named model class remains a versioned prediction. MIBiG TERPENE and compound Diterpene labels are separately retained. None supplies the seven missing tetrahedral assignments.
+
+### Mechanism
+
+graph: supported. Targets: naturalproductmech:mibig-3835812e03.
+
+The accepted maintained reader preserves three graphs with 17 nodes and 15 edges in total, three pathway entries and six history events, with no components or molecular targets. The CotB graph retains CotB2, CotB3 and CotB4 steps separately. The AfR/Afx and PdR/Pdx graphs retain paired whole-cell support under their engineered conditions; they do not prove native partner identity, individual sufficiency, a physical complex or purified electron transfer. The PdR/Pdx notes preserve qualitative minor product with the wild-type pair and increased CotB4-associated product with the tested W106E-labelled variant without an invented numeric superiority. A lack of detected CotB3-associated product in that condition is not universal inactivity. The CotB3/CotB4 caption inconsistency and duplicated D38E-labelled lanes remain unresolved; no new lane assignment or densitometry is asserted.
+
+### Proteins and constructs
+
+grounding: supported. Targets: naturalproductmech:mibig-3835812e03.
+
+CotB2 C9K1X5 / BAI44338.1, CotB3 C9K1X6 / BAI44339.1 and CotB4 C9K1X7 / BAI44340.1 retain reaction groundings RHEA:41628, RHEA:56820 and RHEA:56824. The engineered AfR S4M5B3 reference-versus-construct length/extra-Gly distinction and Afx S4MH50 110-versus-107-residue MTN-deletion distinction remain explicit. PdR P16640 reference 422 versus construct 423 residues plus Gly, and Pdx P00259 wild type versus paper W106E/canonical W107E are not conflated. The Pdx mature 2..107 scope and E/Q15 discrepancy remain qualified against the reference E. The 38-base primer/32-base match and terminal ATAATG sequence outside the inspected S20 scope do not prove complete vector junctions, processing or exact stock identity. These are retained historical sequence/construct notes, not fresh alignment or experimental verification.
+
+### Scientific completion
+
+completeness: unknown. Targets: naturalproductmech:mibig-3835812e03.
+
+The complete retained owner, actual canonical intake, saved source payloads/cache scope, both saved molecular forms and accepted maintained-reader result have been assessed within their local contracts. Full QC, complete OAK authority coverage, fresh primary-source/identifier verification and unresolved natural stereochemical or construct-specific claims remain unavailable. No source/native-status/history edit or new target execution is made; completion remains partial.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| support-2308-owner | /private/tmp/npm-record-reviews-20261021/data/natural_products/terpenoids/cyclooctatin.yaml; Whole current owner plaintext, including complete curation_history | supports | Complete current owner/history personally read with exact prior reading attribution; no YAML parse or native-status edit. The complete owner is preserved in the accepted capture and maintained result. |
+| support-2308-capture | /private/tmp/npm-review-work/shared-next-batch231/owner-capture-DATA-001.json; /records/7 | supports | Complete actual captured owner and component scope; this owner has no declared component routes. |
+| support-2308-intake | /private/tmp/npm-review-work/shared-next-batch231/intakes/2308-inspect-001.json; /status; /repository; /source; /targets | supports | Complete accepted canonical intake, including exact source ownership and maintained implementation dependencies. This is inspection scope, not a scientific verdict. |
+| support-2308-grounding-owner | /private/tmp/npm-review-work/shared-next-batch231/owner-capture-DATA-001.json; /records/7/owner_document | supports | Complete written field projection, with absent fields bounded by the complete captured owner: {"chemical_structure":{"smiles":"CC(C)C\\1CCC2(/C1=C\\CC(C3C(CC(C3C2)CO)O)(C)O)C","standard_inchi":"InChI=1S/C20H34O3/c1-12(2)14-5-7-19(3)10-15-13(11-21)9-17(22)18(15)20(4,23)8-6-16(14)19/h6,12-15,17-18,21-23H,5,7-11H2,1-4H3/b16-6-","standard_inchi_key":"MSKFOQCDNOFJAT-SOFYXZRVSA-N","stereo_complete":false,"structure_source":"MIBIG","structure_source_id":"mibig:BGC0000677"},"grounding_notes":"No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.","grounding_status":"MINTED","identifier":"naturalproductmech:mibig-3835812e03","label":"cyclooctatin","source_concepts":[{"minted_identifier":"naturalproductmech:mibig-3835812e03","source":"MIBIG","source_id":"BGC0000677","source_label":"cyclooctatin","source_version":"5"}],"xrefs":["pubchem:5467942"]} |
+| support-2308-origin-owner | /private/tmp/npm-review-work/shared-next-batch231/owner-capture-DATA-001.json; /records/7/owner_document | supports | Complete written field projection, with absent fields bounded by the complete captured owner: {"biosynthetic_gene_clusters":[{"accession":"mibig:BGC0000677","bgc_class":["TERPENE"],"entry_status":"active","entry_version":"5","evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"MIBiG BGC0000677 entry version 5; citation taken from the entry level","reference":"PMID:19635410"}],"genome_accession":"genbank:AB448947.1","link_evidence_basis":"CLUSTER_DEMONSTRATED","locus_evidence_methods":["Knock-out studies","Enzymatic assays","Heterologous expression"],"organism_label":"Streptomyces melanosporofaciens","organism_taxon_id":"NCBITaxon:67327"}],"producer_organisms":[{"biosynthetic_gene_cluster":"mibig:BGC0000677","evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"MIBiG BGC0000677 entry version 5; citation taken from the entry level","reference":"PMID:19635410"}],"evidence_basis":"BGC_CHARACTERIZED","notes":"Locus evidence: Knock-out studies&#124;Enzymatic assays&#124;Heterologous expression. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different question.","source":"MIBIG","source_version":"5","taxon_id":"NCBITaxon:67327","taxon_label":"Streptomyces melanosporofaciens"}],"producer_taxon_groups":["ACTINOBACTERIAL"]} |
+| support-2308-occurrence-owner | /private/tmp/npm-review-work/shared-next-batch231/owner-capture-DATA-001.json; /records/7/owner_document | supports | Complete written field projection, with absent fields bounded by the complete captured owner: {"occurrence_taxon_groups":["ACTINOBACTERIAL"],"occurrences":[{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS structure-organism-reference triple. LOTUS reports that the compound was found in the organism; it does not assert that the organism produces it.","reference":"DOI:10.1007/S00253-013-5440-6"}],"notes":"Wikidata organism http://www.wikidata.org/entity/Q7623378","source":"LOTUS","taxon_id":"NCBITaxon:1888","taxon_label":"Streptomyces albus","taxon_source":"NCBITaxon"},{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS structure-organism-reference triple. LOTUS reports that the compound was found in the organism; it does not assert that the organism produces it.","reference":"DOI:10.1016/S1875-5364(17)30018-3"}],"notes":"Wikidata organism http://www.wikidata.org/entity/Q7623378","source":"LOTUS","taxon_id":"NCBITaxon:1888","taxon_label":"Streptomyces albus","taxon_source":"NCBITaxon"},{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS structure-organism-reference triple. LOTUS reports that the compound was found in the organism; it does not assert that the organism produces it.","reference":"DOI:10.1021/ACS.JNATPROD.6B00676"}],"notes":"Wikidata organism http://www.wikidata.org/entity/Q7623378","source":"LOTUS","taxon_id":"NCBITaxon:1888","taxon_label":"Streptomyces albus","taxon_source":"NCBITaxon"},{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS structure-organism-reference triple. LOTUS reports that the compound was found in the organism; it does not assert that the organism produces it.","reference":"DOI:10.1186/1471-2164-15-97"}],"notes":"Wikidata organism http://www.wikidata.org/entity/Q7623378","source":"LOTUS","taxon_id":"NCBITaxon:1888","taxon_label":"Streptomyces albus","taxon_source":"NCBITaxon"},{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS structure-organism-reference triple. LOTUS reports that the compound was found in the organism; it does not assert that the organism produces it.","reference":"DOI:10.7164/ANTIBIOTICS.45.1587"}],"notes":"Wikidata organism http://www.wikidata.org/entity/Q7623378","source":"LOTUS","taxon_id":"NCBITaxon:1888","taxon_label":"Streptomyces albus","taxon_source":"NCBITaxon"}]} |
+| support-2308-assay-owner | /private/tmp/npm-review-work/shared-next-batch231/owner-capture-DATA-001.json; /records/7/owner_document | supports | Complete written field projection, with absent fields bounded by the complete captured owner: {} |
+| support-2308-classification-owner | /private/tmp/npm-review-work/shared-next-batch231/owner-capture-DATA-001.json; /records/7/owner_document | supports | Complete written field projection, with absent fields bounded by the complete captured owner: {"bgc_class":["TERPENE"],"biosynthesis_origin":"NATURAL_PRODUCT","np_classification":{"class_results":["Fusicoccane diterpenoids"],"is_glycoside":false,"pathway_results":["Terpenoids"],"superclass_results":["Diterpenoids"],"tool":"NPClassifier","tool_version":"npclassifier.gnps2.org@2026-09-07"},"np_pathway":"TERPENOIDS"} |
+| support-2308-chemistry | /private/tmp/npm-review-work/shared-next-batch231/chemistry-local/diagnostic-DATA-001.json; /records/7/declared_structure; /records/7/smiles/status; /records/7/inchi/status; /records/7/smiles/computed; /records/7/inchi/computed; /records/7/comparisons; /records/7/atom_correspondence | supports | Both stored forms parsed. Exact original comparison and correspondence values, preserved without a new parse: {"atom_correspondence":{"complete_atom_count_match":true,"full_graph_identity_established":false,"scope":"One chirality-aware substructure match; no independent full graph or natural identity claim.","smiles_to_inchi_atom_indices":[0,11,1,13,4,6,18,15,5,7,19,17,16,8,12,14,9,10,20,21,3,22,2]},"comparisons":{"atom_count_equal":true,"bond_count_equal":true,"both_keys_equal_declared":true,"canonical_isomeric_smiles_equal":true,"canonical_nonisomeric_smiles_equal":true,"formal_charge_equal":true,"formula_equal":true,"smiles_formula_equals_literal_InChI_main_layer":true,"standard_inchi_equal":true,"standard_inchi_key_equal":true},"inchi_stereo":{"Atom_Tetrahedral:Unspecified":7,"Bond_Double:Specified":1},"smiles_stereo":{"Atom_Tetrahedral:Unspecified":7,"Bond_Double:Specified":1}} |
+| support-2308-topology | /private/tmp/npm-review-work/shared-next-batch231/chemistry-local/diagnostic-DATA-001.json; /records/7/declared_structure; /records/7/smiles/status; /records/7/inchi/status; /records/7/smiles/computed; /records/7/inchi/computed; /records/7/comparisons; /records/7/atom_correspondence | supports | Both saved forms are neutral C20H34O3 with 23 heavy atoms, 25 bonds, a 5/8/5 ring basis and three hydroxyls. Seven tetrahedral centres are unspecified and one alkene is specified. Both saved bond tables encode STEREOZ; index-relative Cis/Trans labels in potential-stereo descriptors differ with local ordering and do not demonstrate an isomer mismatch. All ten comparisons are true and the original correspondence is complete, while full_graph_identity_established remains false. The retained false centre-completeness flag is consistent with this partial-stereochemistry owner. |
+| support-2308-diagnostic-execution | /private/tmp/npm-review-work/shared-next-batch231/chemistry-local/diagnostic-execution-001.json; Whole original execution receipt | supports | Native operated one original stored-form diagnostic, exit 0, with preserved stdout/stderr and closed environment. The inherited DATA observer literal is not the operator attribution. |
+| support-2308-diagnostic-acceptance | /private/tmp/npm-review-work/shared-next-batch231/root-chemistry-acceptance-001.json; Whole ROOT chemistry acceptance | supports | ROOT accepts the original 20 stored parses and retains 96 true/four false flags, two empty maps and four global unassigned warnings; it establishes no natural identity or fixed-graph equivalence. |
+| support-2308-native-acceptance | /private/tmp/npm-review-work/shared-next-batch231/root-native-gates-acceptance-001.json; Whole ROOT gate acceptance and selected queue rows | supports | Five original local gates passed; all_native_gates_passed is false because full QC and complete OAK remain unavailable. Selected queues are follow-up context, not automatic scientific findings. |
+| support-2308-intake-acceptance | /private/tmp/npm-review-work/shared-next-batch231/root-intake-acceptance-001.json; Whole ROOT intake acceptance | supports | ROOT accepts ten actual one-record intakes, 411 source placements / 68 paths and exact ownership; no scientific verdict follows from intake success. |
+| support-2308-inventory-acceptance | /private/tmp/npm-review-work/shared-next-batch231/root-source-inventory-acceptance-001.json; Whole ROOT source-inventory acceptance | supports | ROOT accepts the one original local inventory and its current input/capture/source joins; complete scientific reading is separately attributed in the notes. |
+| support-2308-plan-acceptance | /private/tmp/npm-review-work/shared-next-batch231/root-input-plan-acceptance-001.json; Whole ROOT input-plan acceptance | supports | ROOT accepts the exact current plan and preserved source contexts; no scientific verdict or future reader success is inferred. |
+| support-2308-source-notes | /private/tmp/npm-review-work/shared-next-batch231-tentative/bgc-prep/bgc-conditional231-source-scope-notes-001.json; /reading; /cautions; /scientific_limits | supports | Complete disjoint source/raw-history reading attribution and bounded compound-specific cautions; no pre-intake verdict was asserted. |
+| support-2308-curation-scope | /private/tmp/npm-review-work/shared-next-batch231-tentative/bgc-prep/bgc-conditional231-source-scope-notes-001.json; /curation | supports | Eight current pinned implemented curation tables were directly opened ignoring ignore rules; 101 exact case-sensitive cohort literals against 93 data rows yielded zero matches within that scope. Reserved decisions.tsv was not consumed. |
+| support-2308-structure-schema | /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml; Lines 368–430 | supports | ChemicalStructure preserves source representation and standardized-key limitations. stereo_complete describes undefined centres; ComputedClassification is a named/versioned prediction, never a source assertion or admission criterion. |
+| support-2308-stereo-method | /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py; Lines 142–173 | supports | Maintained stereo_complete derives from FindMolChiralCenters and the absence of question-mark centre tags; it is not a blanket all-bond-geometry proof. |
+| support-2308-classification-seeder | /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py; Lines 974–1065 | supports | Maintained seeding preserves the source structure and named/versioned classifier output while separately retaining BGC and source compound classes. |
+| support-2308-review-profile | /private/tmp/npm-record-reviews-20261021/docs/record-review-profile.md; Whole current profile | supports | One-record scientific review requires claim-level evidence and twelve dimensions with truthful partial-completion/unavailable-check limits. |
+| support-2308-review-skill | /private/tmp/npm-record-reviews-20261021/.claude/skills/review-yaml-record/SKILL.md; Whole current skill | supports | The review does not edit records; source access is bounded by the overriding no-request instruction. |
+| support-2308-plan | /private/tmp/npm-review-work/shared-next-batch231-tentative/bgc-prep/bgc-conditional231-target-input-plan-001.json; /records/7 | supports | Complete actual owner-specific input map and direct/additional roles. Historical planning language does not claim a reader result; actual reader evidence is linked separately. |
+| support-2308-query-mibig_compounds | /private/tmp/npm-review-work/shared-next-batch231-tentative/bgc-prep/bgc-conditional231-source-inventory-DATA-001.json; /contexts/19/source_scope_inventory/joins/mibig_compounds | supports | Complete retained query frame, including exact predicate, counts, every positive payload or no-match result: {"matches":[{"last_physical_line":815,"physical_line":815,"raw_tsv_record":"BGC0000677\t5\tactive\tquestionable\tcomplete\tcyclooctatin\t1\tCC(C)C\\1CCC2(/C1=C\\CC(C3C(CC(C3C2)CO)O)(C)O)C\tInChI=1S/C20H34O3/c1-12(2)14-5-7-19(3)10-15-13(11-21)9-17(22)18(15)20(4,23)8-6-16(14)19/h6,12-15,17-18,21-23H,5,7-11H2,1-4H3/b16-6-\tMSKFOQCDNOFJAT-SOFYXZRVSA-N\tfalse\t\tpubchem:5467942\tNCBITaxon:67327\tStreptomyces melanosporofaciens\tterpene\tDiterpene\tAB448947.1\t\t\tKnock-out studies&#124;Enzymatic assays&#124;Heterologous expression\tBGC_CHARACTERIZED\tCLUSTER_DEMONSTRATED\tPMID:19635410\tENTRY\n","row":{"bgc_classes":"terpene","bgc_subclasses":"Diterpene","cluster_link_evidence_basis":"CLUSTER_DEMONSTRATED","compound_classes":"","compound_index":"1","compound_name":"cyclooctatin","database_ids":"pubchem:5467942","entry_completeness":"complete","entry_quality":"questionable","entry_status":"active","entry_version":"5","genome_accession":"AB448947.1","locus_evidence_methods":"Knock-out studies&#124;Enzymatic assays&#124;Heterologous expression","locus_from":"","locus_to":"","mibig_accession":"BGC0000677","primary_reference":"PMID:19635410","producer_evidence_basis":"BGC_CHARACTERIZED","reference_basis":"ENTRY","smiles":"CC(C)C\\1CCC2(/C1=C\\CC(C3C(CC(C3C2)CO)O)(C)O)C","standard_inchi":"InChI=1S/C20H34O3/c1-12(2)14-5-7-19(3)10-15-13(11-21)9-17(22)18(15)20(4,23)8-6-16(14)19/h6,12-15,17-18,21-23H,5,7-11H2,1-4H3/b16-6-","standard_inchi_key":"MSKFOQCDNOFJAT-SOFYXZRVSA-N","stereo_complete":"false","taxon_id":"NCBITaxon:67327","taxon_label":"Streptomyces melanosporofaciens"},"row_sha256":"4e386b6cecd905bcf1890faf5956ba1aef6011f222ec8b171f99dba7c54dd7c2"}],"predicate":"exact complete standard_inchi_key equality","query":"MSKFOQCDNOFJAT-SOFYXZRVSA-N"} |
+| support-2308-source-mibig_compounds | /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv; Header line 1; physical lines 815–815, row_sha256 4e386b6cecd905bcf1890faf5956ba1aef6011f222ec8b171f99dba7c54dd7c2 | supports | Complete retained physical row payloads, every field: [{"bgc_classes":"terpene","bgc_subclasses":"Diterpene","cluster_link_evidence_basis":"CLUSTER_DEMONSTRATED","compound_classes":"","compound_index":"1","compound_name":"cyclooctatin","database_ids":"pubchem:5467942","entry_completeness":"complete","entry_quality":"questionable","entry_status":"active","entry_version":"5","genome_accession":"AB448947.1","locus_evidence_methods":"Knock-out studies&#124;Enzymatic assays&#124;Heterologous expression","locus_from":"","locus_to":"","mibig_accession":"BGC0000677","primary_reference":"PMID:19635410","producer_evidence_basis":"BGC_CHARACTERIZED","reference_basis":"ENTRY","smiles":"CC(C)C\\1CCC2(/C1=C\\CC(C3C(CC(C3C2)CO)O)(C)O)C","standard_inchi":"InChI=1S/C20H34O3/c1-12(2)14-5-7-19(3)10-15-13(11-21)9-17(22)18(15)20(4,23)8-6-16(14)19/h6,12-15,17-18,21-23H,5,7-11H2,1-4H3/b16-6-","standard_inchi_key":"MSKFOQCDNOFJAT-SOFYXZRVSA-N","stereo_complete":"false","taxon_id":"NCBITaxon:67327","taxon_label":"Streptomyces melanosporofaciens"}] |
+| support-2308-query-chebi_structures | /private/tmp/npm-review-work/shared-next-batch231-tentative/bgc-prep/bgc-conditional231-source-inventory-DATA-001.json; /contexts/19/source_scope_inventory/joins/chebi_structures | supports | Complete retained query frame, including exact predicate, counts, every positive payload or no-match result: {"matches":[],"predicate":"exact complete standard_inchi_key equality","query":"MSKFOQCDNOFJAT-SOFYXZRVSA-N"} |
+| support-2308-query-lotus_occurrences | /private/tmp/npm-review-work/shared-next-batch231-tentative/bgc-prep/bgc-conditional231-source-inventory-DATA-001.json; /contexts/19/source_scope_inventory/joins/lotus_occurrences | supports | Complete retained query frame, including exact predicate, counts, every positive payload or no-match result: {"matches":[{"last_physical_line":5751,"physical_line":5751,"raw_tsv_record":"MSKFOQCDNOFJAT-SOFYXZRVSA-N\tStreptomyces albus\tNCBITaxon:1888\thttp://www.wikidata.org/entity/Q7623378\t10.1007/S00253-013-5440-6\thttp://www.wikidata.org/entity/Q105171218\n","row":{"organism_name":"Streptomyces albus","organism_wikidata":"http://www.wikidata.org/entity/Q7623378","reference_doi":"10.1007/S00253-013-5440-6","standard_inchi_key":"MSKFOQCDNOFJAT-SOFYXZRVSA-N","structure_wikidata":"http://www.wikidata.org/entity/Q105171218","taxon_id":"NCBITaxon:1888"},"row_sha256":"8b6a01fceef6b5f103c3382bc0d79a5c58c836a348c2d614e77379f6ae030642"},{"last_physical_line":5752,"physical_line":5752,"raw_tsv_record":"MSKFOQCDNOFJAT-SOFYXZRVSA-N\tStreptomyces albus\tNCBITaxon:1888\thttp://www.wikidata.org/entity/Q7623378\t10.1016/S1875-5364(17)30018-3\thttp://www.wikidata.org/entity/Q105171218\n","row":{"organism_name":"Streptomyces albus","organism_wikidata":"http://www.wikidata.org/entity/Q7623378","reference_doi":"10.1016/S1875-5364(17)30018-3","standard_inchi_key":"MSKFOQCDNOFJAT-SOFYXZRVSA-N","structure_wikidata":"http://www.wikidata.org/entity/Q105171218","taxon_id":"NCBITaxon:1888"},"row_sha256":"1c5c17265052af30bf1d99b6c25f901d34127006694ff067e60a6995e4ef0903"},{"last_physical_line":5753,"physical_line":5753,"raw_tsv_record":"MSKFOQCDNOFJAT-SOFYXZRVSA-N\tStreptomyces albus\tNCBITaxon:1888\thttp://www.wikidata.org/entity/Q7623378\t10.1021/ACS.JNATPROD.6B00676\thttp://www.wikidata.org/entity/Q105171218\n","row":{"organism_name":"Streptomyces albus","organism_wikidata":"http://www.wikidata.org/entity/Q7623378","reference_doi":"10.1021/ACS.JNATPROD.6B00676","standard_inchi_key":"MSKFOQCDNOFJAT-SOFYXZRVSA-N","structure_wikidata":"http://www.wikidata.org/entity/Q105171218","taxon_id":"NCBITaxon:1888"},"row_sha256":"cf1ff7a5ac65bf23e825ebba28bcca8ae42d8804c8d78e8136f9cd7356ea95e3"},{"last_physical_line":5754,"physical_line":5754,"raw_tsv_record":"MSKFOQCDNOFJAT-SOFYXZRVSA-N\tStreptomyces albus\tNCBITaxon:1888\thttp://www.wikidata.org/entity/Q7623378\t10.1186/1471-2164-15-97\thttp://www.wikidata.org/entity/Q105171218\n","row":{"organism_name":"Streptomyces albus","organism_wikidata":"http://www.wikidata.org/entity/Q7623378","reference_doi":"10.1186/1471-2164-15-97","standard_inchi_key":"MSKFOQCDNOFJAT-SOFYXZRVSA-N","structure_wikidata":"http://www.wikidata.org/entity/Q105171218","taxon_id":"NCBITaxon:1888"},"row_sha256":"afc9cf86e79cb35eae955f5da5a4270261d5c9f1b5fd66859d89e6c8e8a26ebd"},{"last_physical_line":5755,"physical_line":5755,"raw_tsv_record":"MSKFOQCDNOFJAT-SOFYXZRVSA-N\tStreptomyces albus\tNCBITaxon:1888\thttp://www.wikidata.org/entity/Q7623378\t10.7164/ANTIBIOTICS.45.1587\thttp://www.wikidata.org/entity/Q105171218\n","row":{"organism_name":"Streptomyces albus","organism_wikidata":"http://www.wikidata.org/entity/Q7623378","reference_doi":"10.7164/ANTIBIOTICS.45.1587","standard_inchi_key":"MSKFOQCDNOFJAT-SOFYXZRVSA-N","structure_wikidata":"http://www.wikidata.org/entity/Q105171218","taxon_id":"NCBITaxon:1888"},"row_sha256":"df952837961d3b9c4952e5322e0a8a7670c24b1805b3f4ec1a7ef9f731f9f7a0"}],"predicate":"exact complete standard_inchi_key equality","query":"MSKFOQCDNOFJAT-SOFYXZRVSA-N"} |
+| support-2308-source-lotus_occurrences | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical lines 5751–5751, row_sha256 8b6a01fceef6b5f103c3382bc0d79a5c58c836a348c2d614e77379f6ae030642; physical lines 5752–5752, row_sha256 1c5c17265052af30bf1d99b6c25f901d34127006694ff067e60a6995e4ef0903; physical lines 5753–5753, row_sha256 cf1ff7a5ac65bf23e825ebba28bcca8ae42d8804c8d78e8136f9cd7356ea95e3; physical lines 5754–5754, row_sha256 afc9cf86e79cb35eae955f5da5a4270261d5c9f1b5fd66859d89e6c8e8a26ebd; physical lines 5755–5755, row_sha256 df952837961d3b9c4952e5322e0a8a7670c24b1805b3f4ec1a7ef9f731f9f7a0 | supports | Complete retained physical row payloads, every field: [{"organism_name":"Streptomyces albus","organism_wikidata":"http://www.wikidata.org/entity/Q7623378","reference_doi":"10.1007/S00253-013-5440-6","standard_inchi_key":"MSKFOQCDNOFJAT-SOFYXZRVSA-N","structure_wikidata":"http://www.wikidata.org/entity/Q105171218","taxon_id":"NCBITaxon:1888"},{"organism_name":"Streptomyces albus","organism_wikidata":"http://www.wikidata.org/entity/Q7623378","reference_doi":"10.1016/S1875-5364(17)30018-3","standard_inchi_key":"MSKFOQCDNOFJAT-SOFYXZRVSA-N","structure_wikidata":"http://www.wikidata.org/entity/Q105171218","taxon_id":"NCBITaxon:1888"},{"organism_name":"Streptomyces albus","organism_wikidata":"http://www.wikidata.org/entity/Q7623378","reference_doi":"10.1021/ACS.JNATPROD.6B00676","standard_inchi_key":"MSKFOQCDNOFJAT-SOFYXZRVSA-N","structure_wikidata":"http://www.wikidata.org/entity/Q105171218","taxon_id":"NCBITaxon:1888"},{"organism_name":"Streptomyces albus","organism_wikidata":"http://www.wikidata.org/entity/Q7623378","reference_doi":"10.1186/1471-2164-15-97","standard_inchi_key":"MSKFOQCDNOFJAT-SOFYXZRVSA-N","structure_wikidata":"http://www.wikidata.org/entity/Q105171218","taxon_id":"NCBITaxon:1888"},{"organism_name":"Streptomyces albus","organism_wikidata":"http://www.wikidata.org/entity/Q7623378","reference_doi":"10.7164/ANTIBIOTICS.45.1587","standard_inchi_key":"MSKFOQCDNOFJAT-SOFYXZRVSA-N","structure_wikidata":"http://www.wikidata.org/entity/Q105171218","taxon_id":"NCBITaxon:1888"}] |
+| support-2308-query-cyanometdb_occurrences | /private/tmp/npm-review-work/shared-next-batch231-tentative/bgc-prep/bgc-conditional231-source-inventory-DATA-001.json; /contexts/19/source_scope_inventory/joins/cyanometdb_occurrences | supports | Complete retained query frame, including exact predicate, counts, every positive payload or no-match result: {"matches":[],"predicate":"exact complete standard_inchi_key equality","query":"MSKFOQCDNOFJAT-SOFYXZRVSA-N"} |
+| support-2308-query-npclassifier | /private/tmp/npm-review-work/shared-next-batch231-tentative/bgc-prep/bgc-conditional231-source-inventory-DATA-001.json; /contexts/19/source_scope_inventory/joins/npclassifier | supports | Complete retained query frame, including exact predicate, counts, every positive payload or no-match result: {"matches":[{"last_physical_line":1528,"physical_line":1528,"raw_tsv_record":"MSKFOQCDNOFJAT-SOFYXZRVSA-N\tCC(C)C\\1CCC2(/C1=C\\CC(C3C(CC(C3C2)CO)O)(C)O)C\tTerpenoids\tDiterpenoids\tFusicoccane diterpenoids\tfalse\tnpclassifier.gnps2.org@2026-09-07\n","row":{"class_results":"Fusicoccane diterpenoids","is_glycoside":"false","model_version":"npclassifier.gnps2.org@2026-09-07","pathway_results":"Terpenoids","smiles":"CC(C)C\\1CCC2(/C1=C\\CC(C3C(CC(C3C2)CO)O)(C)O)C","standard_inchi_key":"MSKFOQCDNOFJAT-SOFYXZRVSA-N","superclass_results":"Diterpenoids"},"row_sha256":"41c1cd45a6f36774aa27dcc4a1c9b7366544b5612d9aeba80dfca106817a6076"}],"predicate":"exact complete standard_inchi_key equality","query":"MSKFOQCDNOFJAT-SOFYXZRVSA-N"} |
+| support-2308-source-npclassifier | /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv; Header line 1; physical lines 1528–1528, row_sha256 41c1cd45a6f36774aa27dcc4a1c9b7366544b5612d9aeba80dfca106817a6076 | supports | Complete retained physical row payloads, every field: [{"class_results":"Fusicoccane diterpenoids","is_glycoside":"false","model_version":"npclassifier.gnps2.org@2026-09-07","pathway_results":"Terpenoids","smiles":"CC(C)C\\1CCC2(/C1=C\\CC(C3C(CC(C3C2)CO)O)(C)O)C","standard_inchi_key":"MSKFOQCDNOFJAT-SOFYXZRVSA-N","superclass_results":"Diterpenoids"}] |
+| support-2308-query-pubchem_bioassay | /private/tmp/npm-review-work/shared-next-batch231-tentative/bgc-prep/bgc-conditional231-source-inventory-DATA-001.json; /contexts/19/source_scope_inventory/joins/pubchem_bioassay | supports | Complete retained query frame, including exact predicate, counts, every positive payload or no-match result: {"matches":[],"predicate":"exact complete standard_inchi_key equality","query":"MSKFOQCDNOFJAT-SOFYXZRVSA-N"} |
+| support-2308-query-bindingdb_targets | /private/tmp/npm-review-work/shared-next-batch231-tentative/bgc-prep/bgc-conditional231-source-inventory-DATA-001.json; /contexts/19/source_scope_inventory/joins/bindingdb_targets | supports | Complete retained query frame, including exact predicate, counts, every positive payload or no-match result: {"matches":[],"predicate":"exact complete standard_inchi_key equality","query":"MSKFOQCDNOFJAT-SOFYXZRVSA-N"} |
+| support-2308-query-antibioticmech_inchikeys | /private/tmp/npm-review-work/shared-next-batch231-tentative/bgc-prep/bgc-conditional231-source-inventory-DATA-001.json; /contexts/19/source_scope_inventory/joins/antibioticmech_inchikeys | supports | Complete retained query frame, including exact predicate, counts, every positive payload or no-match result: {"matches":[],"predicate":"exact complete standard_inchi_key equality","query":"MSKFOQCDNOFJAT-SOFYXZRVSA-N"} |
+| support-2308-query-chebi_origins | /private/tmp/npm-review-work/shared-next-batch231-tentative/bgc-prep/bgc-conditional231-source-inventory-DATA-001.json; /contexts/19/source_scope_inventory/joins/chebi_origins | supports | Complete retained query frame, including exact predicate, counts, every positive payload or no-match result: {"matches":[],"predicate":"exact chebi_id from exact full-key structure rows","query":[]} |
+| support-2308-source-routes | /private/tmp/npm-review-work/shared-next-batch231-tentative/bgc-prep/bgc-conditional231-source-inventory-DATA-001.json; /contexts/19/source_scope_inventory/source_taxa; /contexts/19/source_scope_inventory/forward_taxon_merge_matches; /contexts/19/source_scope_inventory/nonorganism_matches; /contexts/19/source_scope_inventory/actual_assay_rows; /contexts/19/source_scope_inventory/blank_AID_sentinels; /contexts/19/source_scope_inventory/related_corpus_rows | supports | Complete saved routing fields, without fresh taxonomy or source queries: {"actual_assay_rows":[],"blank_AID_sentinels":[],"forward_taxon_merge_matches":[],"nonorganism_matches":[],"related_corpus_rows":[],"source_taxa":["NCBITaxon:1888","NCBITaxon:67327"]} |
+| support-2308-cached-taxonomy | /private/tmp/npm-review-work/shared-next-batch231-tentative/bgc-prep/bgc-conditional231-source-inventory-DATA-001.json; /cached_taxonomy/input; /cached_taxonomy/whole_stanzas/1; /cached_taxonomy/whole_stanzas/14 | supports | Complete retained relevant stanzas; cached labels/synonyms are not fresh external authority: [{"complete_stanza":"[Term]\nid: NCBITaxon:1888\nname: Streptomyces albus\nsynonym: \"Actinomyces almquisti\" EXACT []\nsynonym: \"Actinomyces flocculus\" EXACT []\nsynonym: \"Actinomyces gibsoni\" EXACT []\nsynonym: \"Actinomyces gibsonii\" EXACT []\nsynonym: \"Actinomyces rangoon\" EXACT []\nsynonym: \"Nocardia gibsonii\" EXACT []\nsynonym: \"Nocardia rangoonensis\" EXACT []\nsynonym: \"Streptomyces almquistii\" EXACT []\nsynonym: \"Streptomyces flocculus\" EXACT []\nsynonym: \"Streptomyces gibsonii\" EXACT []\nsynonym: \"Streptomyces griseus subsp. solvifaciens\" EXACT []\nsynonym: \"Streptomyces rangoon\" EXACT []\nsynonym: \"Streptomyces rangoonensis\" EXACT []\nsynonym: \"Streptotrix alba\" EXACT []\n\n","id":"NCBITaxon:1888","physical_line":2836},{"complete_stanza":"[Term]\nid: NCBITaxon:67327\nname: Streptomyces melanosporofaciens\nsynonym: \"Streptomyces antimycoticus subsp. melanosporofaciens\" EXACT []\nsynonym: \"Streptomyces melanosporofaciens Arcamone et al. 1959 (Approved Lists 1980)\" EXACT []\n\n","id":"NCBITaxon:67327","physical_line":30091}] |
+| support-2308-direct-contexts | /private/tmp/npm-review-work/shared-next-batch231-tentative/bgc-prep/bgc-conditional231-source-inventory-DATA-001.json; /records/7/direct_companion_paths; /records/7/direct_companion_predicates | supports | Exact direct companion scope and predicates, not transferred compound-specific evidence: {"direct_companion_paths":[],"direct_companion_predicates":[]} |
+| support-2308-reader-DATA | /private/tmp/npm-review-work/shared-next-batch231/native-current231-cyclooctatin-maintained-reader-DATA-001.json; /order; /status; /counts; /raw_owner; /resolved_view; /expected_view; /returned_view_equals_expected_complete_owner; /reader_call_count; /denials; /unexpected_denials; /errors; /limitations | supports | Original accepted offline maintained reader. Complete owner equality and exact counts: {"component_graphs":0,"component_history_events":[],"component_refs":0,"curation_history":6,"edges":15,"graphs":3,"inline_graphs":3,"molecular_targets":0,"nodes":17,"pathway_steps":3}. The expected denied-before-action IPv6 capability probe is retained; it is not an outbound request. No unexpected denial or error. Preservation does not independently verify primary experiments or protein identity. |
+| support-2308-reader-execution | /private/tmp/npm-review-work/shared-next-batch231/native-current231-cyclooctatin-reader-execution-001.json; Whole original execution receipt | supports | Original single-reader execution, complete saved streams/tool-chain and terminal exit 0; no replay. The command, source/config hashes and process clocks bind the accepted result. |
+| support-2308-reader-acceptance | /private/tmp/npm-review-work/shared-next-batch231/root-2308-maintained-reader-acceptance-001.json; /status; /order; /DATA; /execution; /verification; /review_check_contract; /limits | supports | ROOT acceptance of this exact original complete-owner reader, with its precise check contract and bounded limits: {"command":"/private/tmp/npm-record-reviews-20261021/.venv/bin/python -I -B /private/tmp/npm-review-work/shared-next-batch231/read-selected-mechanism-guarded-001.py 2308 d10634138cd57834c49ec3f0c4070d8bebdd489f1f50f123ab08cc389d2e85a9 a6d8f3983abfda8b83d48c63a7bff473dd4d9ffe24a1f35bc449f5d33379b158 d65dead86417d910f5158628f12930c526dbc5b81750f9197093bfcb644349d8 d84d66f3894eb1e6982ca23b38ceb3de84e6f7ca4b5c805ae0f4271536420af7 007a2056fbbf41f2bf14358fd9b1d850fb78421cc9b32ffb70ae8bc158f858c9","exit_code":0,"exit_source":"original tool terminal and process receipt","name":"Complete offline maintained reader for cyclooctatin","required":true,"status":"passed","target_order":2308} |
+| support-2308-graph-0 | /private/tmp/npm-review-work/shared-next-batch231/native-current231-cyclooctatin-maintained-reader-DATA-001.json; /resolved_view/causal_graphs/0 | supports | Complete retained graph, every node, edge, evidence placement and qualified note: {"description":"Streptomyces melanosporofaciens cyclooctatin biosynthesis graph for CotB2 cyclization of geranylgeranyl diphosphate and CotB3/CotB4 P450 hydroxylations to cyclooctatin.","edges":[{"evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Kim et al. cloned the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin locus and assigned CotB2 to the GGDP to cyclooctat-9-en-7-ol cyclization in vitro.","reference":"DOI:10.1016/j.chembiol.2009.06.007","snippet":"Incubation of the recombinant CotB2 with GGDP resulted in the formation of cyclooctat-9-en-7-ol"},{"evidence_type":"DATABASE_ASSERTION","notes":"UniProtKB:C9K1X5 is the reviewed Streptomyces melanosporofaciens CotB2 entry, maps to EMBL AB448947 protein BAI44338.1, and annotates RHEA:41628.","reference":"https://www.uniprot.org/uniprotkb/C9K1X5","retrieved_on":"2026-09-27"},{"evidence_type":"DATABASE_ASSERTION","notes":"NCBI GenPept BAI44338.1 is the AB448947.1 geranylgeranyl diphosphate cyclase coding sequence from the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin locus.","reference":"https://www.ncbi.nlm.nih.gov/protein/BAI44338.1","retrieved_on":"2026-09-27"}],"object":"cotb2","predicate":"is cyclized by","subject":"ggdp"},{"evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Kim et al. cloned the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin locus and assigned CotB2 to the GGDP to cyclooctat-9-en-7-ol cyclization in vitro.","reference":"DOI:10.1016/j.chembiol.2009.06.007","snippet":"Incubation of the recombinant CotB2 with GGDP resulted in the formation of cyclooctat-9-en-7-ol"},{"evidence_type":"DATABASE_ASSERTION","notes":"UniProtKB:C9K1X5 is the reviewed Streptomyces melanosporofaciens CotB2 entry, maps to EMBL AB448947 protein BAI44338.1, and annotates RHEA:41628.","reference":"https://www.uniprot.org/uniprotkb/C9K1X5","retrieved_on":"2026-09-27"},{"evidence_type":"DATABASE_ASSERTION","notes":"NCBI GenPept BAI44338.1 is the AB448947.1 geranylgeranyl diphosphate cyclase coding sequence from the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin locus.","reference":"https://www.ncbi.nlm.nih.gov/protein/BAI44338.1","retrieved_on":"2026-09-27"}],"object":"cyclooctat_9_en_7_ol","predicate":"forms","subject":"cotb2"},{"evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Kim et al. cloned the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin locus, heterologously produced cyclooctatin in Streptomyces albus, and assigned the minimal cotB1-cotB4 cluster to GGDP synthesis, CotB2 cyclization, and two cytochrome P450 hydroxylations.","reference":"DOI:10.1016/j.chembiol.2009.06.007","snippet":"complete cyclooctatin biosynthetic gene cluster consists of four genes, cotB1 to cotB4"},{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Gorner et al. reconstituted CotB3 and CotB4 activity with heterologous redox partners in Escherichia coli and measured conversion of cyclooctat-9-en-7-ol by CotB3 and cyclooctat-9-en-5,7-diol by CotB4.","reference":"DOI:10.1186/s12934-016-0487-6","snippet":"100 μM of cyclooctat-9-en-7-ol (CotB3) or cyclooct-9-en-5,7-diol (CotB4)"},{"evidence_type":"DATABASE_ASSERTION","notes":"UniProtKB:C9K1X6 is the reviewed Streptomyces melanosporofaciens CotB3 entry, maps to EMBL AB448947 protein BAI44339.1, and annotates RHEA:56820 for cyclooctat-9-en-7-ol 5-monooxygenase activity.","reference":"https://www.uniprot.org/uniprotkb/C9K1X6","retrieved_on":"2026-09-28"},{"evidence_type":"DATABASE_ASSERTION","notes":"NCBI GenPept BAI44339.1 is the AB448947.1 CotB3 P450 coding sequence from the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin locus.","reference":"https://www.ncbi.nlm.nih.gov/protein/BAI44339.1","retrieved_on":"2026-09-28","snippet":"product=\"P450\""}],"object":"cotb3","predicate":"is hydroxylated by","subject":"cyclooctat_9_en_7_ol"},{"evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Kim et al. cloned the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin locus, heterologously produced cyclooctatin in Streptomyces albus, and assigned the minimal cotB1-cotB4 cluster to GGDP synthesis, CotB2 cyclization, and two cytochrome P450 hydroxylations.","reference":"DOI:10.1016/j.chembiol.2009.06.007","snippet":"complete cyclooctatin biosynthetic gene cluster consists of four genes, cotB1 to cotB4"},{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Gorner et al. reconstituted CotB3 and CotB4 activity with heterologous redox partners in Escherichia coli and measured conversion of cyclooctat-9-en-7-ol by CotB3 and cyclooctat-9-en-5,7-diol by CotB4.","reference":"DOI:10.1186/s12934-016-0487-6","snippet":"100 μM of cyclooctat-9-en-7-ol (CotB3) or cyclooct-9-en-5,7-diol (CotB4)"},{"evidence_type":"DATABASE_ASSERTION","notes":"UniProtKB:C9K1X6 is the reviewed Streptomyces melanosporofaciens CotB3 entry, maps to EMBL AB448947 protein BAI44339.1, and annotates RHEA:56820 for cyclooctat-9-en-7-ol 5-monooxygenase activity.","reference":"https://www.uniprot.org/uniprotkb/C9K1X6","retrieved_on":"2026-09-28"},{"evidence_type":"DATABASE_ASSERTION","notes":"NCBI GenPept BAI44339.1 is the AB448947.1 CotB3 P450 coding sequence from the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin locus.","reference":"https://www.ncbi.nlm.nih.gov/protein/BAI44339.1","retrieved_on":"2026-09-28","snippet":"product=\"P450\""}],"object":"cyclooctat_9_ene_5_7_diol","predicate":"forms","subject":"cotb3"},{"evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Kim et al. cloned the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin locus, heterologously produced cyclooctatin in Streptomyces albus, and assigned the minimal cotB1-cotB4 cluster to GGDP synthesis, CotB2 cyclization, and two cytochrome P450 hydroxylations.","reference":"DOI:10.1016/j.chembiol.2009.06.007","snippet":"complete cyclooctatin biosynthetic gene cluster consists of four genes, cotB1 to cotB4"},{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Gorner et al. reconstituted CotB3 and CotB4 activity with heterologous redox partners in Escherichia coli and measured conversion of cyclooctat-9-en-7-ol by CotB3 and cyclooctat-9-en-5,7-diol by CotB4.","reference":"DOI:10.1186/s12934-016-0487-6","snippet":"100 μM of cyclooctat-9-en-7-ol (CotB3) or cyclooct-9-en-5,7-diol (CotB4)"},{"evidence_type":"DATABASE_ASSERTION","notes":"UniProtKB:C9K1X7 is the reviewed Streptomyces melanosporofaciens CotB4 entry, maps to EMBL AB448947 protein BAI44340.1, and annotates RHEA:56824 for cyclooctatin synthase activity.","reference":"https://www.uniprot.org/uniprotkb/C9K1X7","retrieved_on":"2026-09-28"},{"evidence_type":"DATABASE_ASSERTION","notes":"NCBI GenPept BAI44340.1 is the AB448947.1 CotB4 P450 coding sequence from the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin locus.","reference":"https://www.ncbi.nlm.nih.gov/protein/BAI44340.1","retrieved_on":"2026-09-28","snippet":"product=\"P450\""}],"object":"cotb4","predicate":"is hydroxylated by","subject":"cyclooctat_9_ene_5_7_diol"},{"evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Kim et al. cloned the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin locus, heterologously produced cyclooctatin in Streptomyces albus, and assigned the minimal cotB1-cotB4 cluster to GGDP synthesis, CotB2 cyclization, and two cytochrome P450 hydroxylations.","reference":"DOI:10.1016/j.chembiol.2009.06.007","snippet":"complete cyclooctatin biosynthetic gene cluster consists of four genes, cotB1 to cotB4"},{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Gorner et al. reconstituted CotB3 and CotB4 activity with heterologous redox partners in Escherichia coli and measured conversion of cyclooctat-9-en-7-ol by CotB3 and cyclooctat-9-en-5,7-diol by CotB4.","reference":"DOI:10.1186/s12934-016-0487-6","snippet":"100 μM of cyclooctat-9-en-7-ol (CotB3) or cyclooct-9-en-5,7-diol (CotB4)"},{"evidence_type":"DATABASE_ASSERTION","notes":"UniProtKB:C9K1X7 is the reviewed Streptomyces melanosporofaciens CotB4 entry, maps to EMBL AB448947 protein BAI44340.1, and annotates RHEA:56824 for cyclooctatin synthase activity.","reference":"https://www.uniprot.org/uniprotkb/C9K1X7","retrieved_on":"2026-09-28"},{"evidence_type":"DATABASE_ASSERTION","notes":"NCBI GenPept BAI44340.1 is the AB448947.1 CotB4 P450 coding sequence from the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin locus.","reference":"https://www.ncbi.nlm.nih.gov/protein/BAI44340.1","retrieved_on":"2026-09-28","snippet":"product=\"P450\""}],"object":"cyclooctatin","predicate":"forms","subject":"cotb4"}],"graph_id":"cyclooctatin-cotb-biosynthesis","nodes":[{"grounding_status":"GROUNDED","identifier":"CHEBI:57533","label":"geranylgeranyl diphosphate(3-)","node_id":"ggdp","node_type":"PRECURSOR"},{"grounding_status":"GROUNDED","identifier":"UniProtKB:C9K1X5","label":"CotB2","node_id":"cotb2","node_type":"ENZYME"},{"grounding_status":"GROUNDED","identifier":"CHEBI:78352","label":"cyclooctat-9-en-7-ol","node_id":"cyclooctat_9_en_7_ol","node_type":"COMPOUND"},{"grounding_status":"GROUNDED","identifier":"UniProtKB:C9K1X6","label":"CotB3","node_id":"cotb3","node_type":"ENZYME"},{"grounding_status":"GROUNDED","identifier":"CHEBI:141020","label":"cyclooctat-9-en-5,7-diol","node_id":"cyclooctat_9_ene_5_7_diol","node_type":"COMPOUND"},{"grounding_status":"GROUNDED","identifier":"UniProtKB:C9K1X7","label":"CotB4","node_id":"cotb4","node_type":"ENZYME"},{"grounding_status":"GROUNDED","identifier":"CHEBI:78370","label":"cyclooctatin","node_id":"cyclooctatin","node_type":"COMPOUND"}],"scope":"BIOSYNTHESIS"} |
+| support-2308-graph-1 | /private/tmp/npm-review-work/shared-next-batch231/native-current231-cyclooctatin-maintained-reader-DATA-001.json; /resolved_view/causal_graphs/1 | supports | Complete retained graph, every node, edge, evidence placement and qualified note: {"description":"Non-native AfR/Afx redox-pair support of CotB3/CotB4 in engineered Escherichia coli BL21(DE3). UniProt nodes identify references for the qualified synthetic constructs. Whole-cell evidence does not establish purified electron transfer, a physical complex or native partners. No new native-producer claim or stereochemical assignment is made.","edges":[{"evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Results and Methods: the coexpressed redox pair supported CotB3/CotB4 in whole-cell assays.","reference":"DOI:10.1186/s12934-016-0487-6","retrieved_on":"2026-10-09","snippet":"whole cell catalysis experiments were carried out"},{"evidence_type":"DATABASE_ASSERTION","notes":"Unreviewed reference, entry version 40, sequence version 1; 416 aa, STAFG_8584, Streptomyces afghaniensis 772, taxon 1283301. Sequence equals GenPept EPJ34383.1 and the paper-cited RefSeq WP_020277402.1; the accession identifies the reference, not an identical synthetic construct.","reference":"https://www.uniprot.org/uniprotkb/S4M5B3","retrieved_on":"2026-10-09"},{"evidence_type":"DATABASE_ASSERTION","notes":"Paper-cited reference sequence matches EPJ34383.1 and its independently translated strain-772 genomic CDS.","reference":"https://www.ncbi.nlm.nih.gov/protein/WP_020277402.1","retrieved_on":"2026-10-09"},{"evidence_type":"CURATOR_INFERENCE","notes":"Literal Figure S19 ORF translation is 417 aa: Gly inserted after initiator Met relative to the 416-aa reference. This is a sequence comparison, not a claim that the assayed construct equals the canonical sequence.","reference":"https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs12934-016-0487-6/MediaObjects/12934_2016_487_MOESM1_ESM.pdf","retrieved_on":"2026-10-09"}],"notes":"Paired-system evidence; individual sufficiency is not established.","object":"hydroxylation","predicate":"with coexpressed Afx supports","subject":"afr"},{"evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Results and Methods: the coexpressed redox pair supported CotB3/CotB4 in whole-cell assays.","reference":"DOI:10.1186/s12934-016-0487-6","retrieved_on":"2026-10-09"},{"evidence_type":"DATABASE_ASSERTION","notes":"Unreviewed reference, entry version 42, sequence version 1; 110 aa, STAFG_8018, Streptomyces afghaniensis 772, taxon 1283301. Sequence equals GenPept EPJ34910.1 and the paper-cited RefSeq WP_020276845.1; the accession identifies the reference, not an identical synthetic construct.","reference":"https://www.uniprot.org/uniprotkb/S4MH50","retrieved_on":"2026-10-09"},{"evidence_type":"DATABASE_ASSERTION","notes":"Paper-cited reference sequence matches EPJ34910.1 and its independently translated strain-772 genomic CDS.","reference":"https://www.ncbi.nlm.nih.gov/protein/WP_020276845.1","retrieved_on":"2026-10-09"},{"evidence_type":"CURATOR_INFERENCE","notes":"Literal Figure S19 ORF translation is 107 aa: the reference N-terminal MTN is absent. This is a sequence comparison, not a claim that the assayed construct equals the 110-aa canonical sequence.","reference":"https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs12934-016-0487-6/MediaObjects/12934_2016_487_MOESM1_ESM.pdf","retrieved_on":"2026-10-09"}],"notes":"Paired-system evidence; individual sufficiency is not established.","object":"hydroxylation","predicate":"with coexpressed AfR supports","subject":"afx"},{"evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Results, Figure 1 and Additional file 1 report cyclooctatin formation and spectroscopic characterization in the engineered production system.","reference":"DOI:10.1186/s12934-016-0487-6","retrieved_on":"2026-10-09"},{"evidence_type":"CURATOR_INFERENCE","notes":"ChEBI cyclooctatin has InChIKey MSKFOQCDNOFJAT-VCRXIKTMSA-N. Its InChI matches the owner through the double-bond layer but additionally specifies tetrahedral stereochemistry. The owner remains MSKFOQCDNOFJAT-SOFYXZRVSA-N, stereo_complete false. Exact source-product stereochemical mapping is not adjudicated here; no chemistry or xref changes.","reference":"https://www.ebi.ac.uk/chebi/CHEBI:78370","retrieved_on":"2026-10-09"}],"notes":"The reported product is not asserted identical to the partial-stereo owner or assigned an exact stereochemical identifier in this graph.","object":"reported_cyclooctatin","predicate":"yields","subject":"hydroxylation"}],"graph_id":"cyclooctatin-engineered-afr-afx-support","nodes":[{"grounding_status":"GROUNDED","identifier":"UniProtKB:S4M5B3","label":"AfR (+Gly construct; reference accession)","node_id":"afr","node_type":"ENZYME"},{"grounding_status":"GROUNDED","identifier":"UniProtKB:S4MH50","label":"Afx (MTN-deleted construct; reference accession)","node_id":"afx","node_type":"PROTEIN"},{"grounding_status":"UNGROUNDED","label":"CotB3/CotB4 hydroxylation in engineered E. coli","node_id":"hydroxylation","node_type":"PROCESS"},{"grounding_status":"UNGROUNDED","label":"cyclooctatin (reported product)","node_id":"reported_cyclooctatin","node_type":"COMPOUND"}],"scope":"BIOSYNTHESIS"} |
+| support-2308-graph-2 | /private/tmp/npm-review-work/shared-next-batch231/native-current231-cyclooctatin-maintained-reader-DATA-001.json; /resolved_view/causal_graphs/2 | supports | Complete retained graph, every node, edge, evidence placement and qualified note: {"description":"Non-native PdR/Pdx paired support of CotB4 in engineered E. coli BL21(DE3). Wild-type Pdx and engineered paper W106E (full-length canonical W107E) are different constructs using the same reference accession, not two native proteins. PdR carries the S20 Gly insertion. Whole-cell product evidence does not establish individual sufficiency, purified electron transfer, a physical complex or native partners. Existing partial-stereo chemistry and native-producer claims are unchanged.","edges":[{"evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Whole-cell CotB4 comparison with coexpressed PdR and wild-type Pdx in engineered E. coli BL21(DE3), supplied cyclooctat-9-en-5,7-diol and a GC-MS product readout after 48 hours. The Methods describe five cultures and an empty-vector control. This establishes paired-system support, not individual sufficiency or purified electron transfer.","reference":"DOI:10.1186/s12934-016-0487-6","retrieved_on":"2026-10-09"},{"evidence_type":"DATABASE_ASSERTION","notes":"Reviewed Pseudomonas putida reference (taxon 303), camA, 422 aa; entry version 131, sequence version 1. Native camphor-system annotation is not evidence of native cyclooctatin production. This accession denotes the reference, not a separate mutant entry.","reference":"https://www.uniprot.org/uniprotkb/P16640","retrieved_on":"2026-10-09"},{"evidence_type":"DATABASE_ASSERTION","notes":"Deposited PdR CDS AAA25758.1; its annotated translation agrees with the selected UniProt reference. Deposit strain provenance does not establish the source strain of the synthetic 2016 construct.","reference":"https://www.ncbi.nlm.nih.gov/nuccore/J05406.1","retrieved_on":"2026-10-09"},{"evidence_type":"DATABASE_ASSERTION","notes":"Deposited PdR CDS BAA00413.1; its annotated translation agrees with the selected UniProt reference. Deposit strain provenance does not establish the source strain of the synthetic 2016 construct.","reference":"https://www.ncbi.nlm.nih.gov/nuccore/D00528.1","retrieved_on":"2026-10-09"},{"evidence_type":"CURATOR_INFERENCE","notes":"Figure S20 literal PdR ORF is 423 aa: Gly inserted after initiator Met relative to the 422-aa P16640 reference. Both native CDSs independently translate to the reference. The synthetic construct is not identical to P16640.","reference":"https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs12934-016-0487-6/MediaObjects/12934_2016_487_MOESM1_ESM.pdf","retrieved_on":"2026-10-09"}],"notes":"Paired-system evidence under the stated whole-cell conditions.","object":"cotb4_wt","predicate":"with coexpressed wild-type Pdx supports","subject":"pdr"},{"evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Whole-cell CotB4 comparison with coexpressed PdR and wild-type Pdx in engineered E. coli BL21(DE3), supplied cyclooctat-9-en-5,7-diol and a GC-MS product readout after 48 hours. The Methods describe five cultures and an empty-vector control. This establishes paired-system support, not individual sufficiency or purified electron transfer.","reference":"DOI:10.1186/s12934-016-0487-6","retrieved_on":"2026-10-09"},{"evidence_type":"DATABASE_ASSERTION","notes":"Reviewed Pseudomonas putida reference (taxon 303), camB, 107 aa; entry version 144, sequence version 3. Native camphor-system annotation is not evidence of native cyclooctatin production. UniProt annotates mature chain 2..107 and a historical E/Q conflict at canonical residue 15; the selected canonical sequence contains E. No assay-host initiator-Met processing is asserted. This accession denotes the reference, not a separate mutant entry.","reference":"https://www.uniprot.org/uniprotkb/P00259","retrieved_on":"2026-10-09"},{"evidence_type":"DATABASE_ASSERTION","notes":"Deposited Pdx CDS AAA25759.1; its annotated translation agrees with the selected UniProt reference. Deposit strain provenance does not establish the source strain of the synthetic 2016 construct.","reference":"https://www.ncbi.nlm.nih.gov/nuccore/J05406.1","retrieved_on":"2026-10-09"},{"evidence_type":"DATABASE_ASSERTION","notes":"Deposited Pdx CDS BAA00414.1; its annotated translation agrees with the selected UniProt reference. Deposit strain provenance does not establish the source strain of the synthetic 2016 construct.","reference":"https://www.ncbi.nlm.nih.gov/nuccore/D00528.1","retrieved_on":"2026-10-09"},{"evidence_type":"CURATOR_INFERENCE","notes":"Figure S20 literal wild-type Pdx ORF is 107 aa and equals P00259 and both independently translated native CDSs, including E at canonical position 15. This is sequence identity evidence, not native-partner evidence.","reference":"https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs12934-016-0487-6/MediaObjects/12934_2016_487_MOESM1_ESM.pdf","retrieved_on":"2026-10-09"}],"notes":"Paired-system evidence under the stated whole-cell conditions.","object":"cotb4_wt","predicate":"with coexpressed PdR supports","subject":"pdx_wt"},{"evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Results report only minor cyclooctatin formation with wild-type PdR/Pdx and CotB4 under the tested conditions. The separate CotB3 comparison had no detectable diol; no general inactivity claim is made.","reference":"DOI:10.1186/s12934-016-0487-6","retrieved_on":"2026-10-09","snippet":"only minor amounts of cyclooctatin"},{"evidence_type":"CURATOR_INFERENCE","notes":"Figure S1b shows the wild-type PdR/Pdx condition as a low-product comparator. This is a condition-specific whole-cell product readout, not purified turnover.","reference":"https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs12934-016-0487-6/MediaObjects/12934_2016_487_MOESM1_ESM.pdf","retrieved_on":"2026-10-09"}],"notes":"The reported product is not asserted stereochemically identical to the partial-stereo owner and is not assigned an exact chemical identifier in this graph.","object":"reported_cyclooctatin","predicate":"yields","subject":"cotb4_wt"},{"evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Whole-cell CotB4 comparison with coexpressed PdR and Pdx-W106E in engineered E. coli BL21(DE3), supplied cyclooctat-9-en-5,7-diol and a GC-MS product readout after 48 hours. The Methods describe five cultures and an empty-vector control. This establishes paired-system support, not individual sufficiency or purified electron transfer.","reference":"DOI:10.1186/s12934-016-0487-6","retrieved_on":"2026-10-09"},{"evidence_type":"DATABASE_ASSERTION","notes":"Reviewed Pseudomonas putida reference (taxon 303), camA, 422 aa; entry version 131, sequence version 1. Native camphor-system annotation is not evidence of native cyclooctatin production. This accession denotes the reference, not a separate mutant entry.","reference":"https://www.uniprot.org/uniprotkb/P16640","retrieved_on":"2026-10-09"},{"evidence_type":"DATABASE_ASSERTION","notes":"Deposited PdR CDS AAA25758.1; its annotated translation agrees with the selected UniProt reference. Deposit strain provenance does not establish the source strain of the synthetic 2016 construct.","reference":"https://www.ncbi.nlm.nih.gov/nuccore/J05406.1","retrieved_on":"2026-10-09"},{"evidence_type":"DATABASE_ASSERTION","notes":"Deposited PdR CDS BAA00413.1; its annotated translation agrees with the selected UniProt reference. Deposit strain provenance does not establish the source strain of the synthetic 2016 construct.","reference":"https://www.ncbi.nlm.nih.gov/nuccore/D00528.1","retrieved_on":"2026-10-09"},{"evidence_type":"CURATOR_INFERENCE","notes":"Figure S20 literal PdR ORF is 423 aa: Gly inserted after initiator Met relative to the 422-aa P16640 reference. Both native CDSs independently translate to the reference. The synthetic construct is not identical to P16640.","reference":"https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs12934-016-0487-6/MediaObjects/12934_2016_487_MOESM1_ESM.pdf","retrieved_on":"2026-10-09"}],"notes":"Paired-system evidence under the stated whole-cell conditions.","object":"cotb4_w106e","predicate":"with coexpressed Pdx-W106E supports","subject":"pdr"},{"evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Whole-cell CotB4 comparison with coexpressed PdR and Pdx-W106E in engineered E. coli BL21(DE3), supplied cyclooctat-9-en-5,7-diol and a GC-MS product readout after 48 hours. The Methods describe five cultures and an empty-vector control. This establishes paired-system support, not individual sufficiency or purified electron transfer.","reference":"DOI:10.1186/s12934-016-0487-6","retrieved_on":"2026-10-09"},{"evidence_type":"DATABASE_ASSERTION","notes":"Reviewed Pseudomonas putida reference (taxon 303), camB, 107 aa; entry version 144, sequence version 3. Native camphor-system annotation is not evidence of native cyclooctatin production. UniProt annotates mature chain 2..107 and a historical E/Q conflict at canonical residue 15; the selected canonical sequence contains E. No assay-host initiator-Met processing is asserted. This accession denotes the reference, not a separate mutant entry.","reference":"https://www.uniprot.org/uniprotkb/P00259","retrieved_on":"2026-10-09"},{"evidence_type":"DATABASE_ASSERTION","notes":"Deposited Pdx CDS AAA25759.1; its annotated translation agrees with the selected UniProt reference. Deposit strain provenance does not establish the source strain of the synthetic 2016 construct.","reference":"https://www.ncbi.nlm.nih.gov/nuccore/J05406.1","retrieved_on":"2026-10-09"},{"evidence_type":"DATABASE_ASSERTION","notes":"Deposited Pdx CDS BAA00414.1; its annotated translation agrees with the selected UniProt reference. Deposit strain provenance does not establish the source strain of the synthetic 2016 construct.","reference":"https://www.ncbi.nlm.nih.gov/nuccore/D00528.1","retrieved_on":"2026-10-09"},{"evidence_type":"CURATOR_INFERENCE","notes":"Figure S20 literal wild-type Pdx ORF is 107 aa and equals P00259 and both independently translated native CDSs, including E at canonical position 15. This is sequence identity evidence, not native-partner evidence.","reference":"https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs12934-016-0487-6/MediaObjects/12934_2016_487_MOESM1_ESM.pdf","retrieved_on":"2026-10-09"},{"evidence_type":"CURATOR_INFERENCE","notes":"The Methods W106E primer maps to W107E in the full-length S20/P00259 ORF; the reference mature-chain numbering omits initiator Met. The 38-base forward primer overlaps 32 printed S20 bases and changes only that translated residue. Its terminal ATAATG extends beyond S20 and is not verified here. The published reverse primer is its reverse complement. This is a primer/sequence comparison, not independent mutant resequencing or full-plasmid verification.","reference":"DOI:10.1186/s12934-016-0487-6","retrieved_on":"2026-10-09"}],"notes":"Paired-system evidence under the stated whole-cell conditions.","object":"cotb4_w106e","predicate":"with coexpressed PdR supports","subject":"pdx_w106e"},{"evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Results report more cyclooctatin with Pdx-W106E than with wild-type Pdx; this is not a claim of superiority to AfR/Afx or a numerical fold change.","reference":"DOI:10.1186/s12934-016-0487-6","retrieved_on":"2026-10-09","snippet":"also led to increased cyclooctatin formation"},{"evidence_type":"CURATOR_INFERENCE","notes":"Figure S1b qualitatively places Pdx-W106E above wild-type PdR/Pdx but below AfR/Afx for the CotB4 product. Its caption names a CotB3 control despite the CotB4 panel; no normalized ratio or significance test is adopted. Tables S1/S2 duplicate D38E labels for lanes 4/5, so no lane-specific mutant assignment, densitometry or physical-complex inference is adopted.","reference":"https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs12934-016-0487-6/MediaObjects/12934_2016_487_MOESM1_ESM.pdf","retrieved_on":"2026-10-09"}],"notes":"The reported product is not asserted stereochemically identical to the partial-stereo owner and is not assigned an exact chemical identifier in this graph.","object":"reported_cyclooctatin","predicate":"yields","subject":"cotb4_w106e"}],"graph_id":"cyclooctatin-engineered-pdr-pdx-cotb4","nodes":[{"grounding_status":"GROUNDED","identifier":"UniProtKB:P16640","label":"PdR (+Gly construct; reference accession)","node_id":"pdr","node_type":"ENZYME"},{"grounding_status":"GROUNDED","identifier":"UniProtKB:P00259","label":"Pdx (wild-type reference sequence)","node_id":"pdx_wt","node_type":"PROTEIN"},{"grounding_status":"GROUNDED","identifier":"UniProtKB:P00259","label":"Pdx-W106E (canonical W107E; reference accession)","node_id":"pdx_w106e","node_type":"PROTEIN"},{"grounding_status":"UNGROUNDED","label":"Whole-cell CotB4 with wild-type Pdx","node_id":"cotb4_wt","node_type":"PROCESS"},{"grounding_status":"UNGROUNDED","label":"Whole-cell CotB4 with Pdx-W106E","node_id":"cotb4_w106e","node_type":"PROCESS"},{"grounding_status":"UNGROUNDED","label":"cyclooctatin (reported product)","node_id":"reported_cyclooctatin","node_type":"COMPOUND"}],"scope":"BIOSYNTHESIS"} |
+| support-2308-pathway-0 | /private/tmp/npm-review-work/shared-next-batch231/native-current231-cyclooctatin-maintained-reader-DATA-001.json; /resolved_view/biosynthetic_pathway/0 | supports | Complete retained pathway entry, preserving optional fields and evidence: {"enzyme_id":"UniProtKB:C9K1X5","enzyme_label":"CotB2","evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Kim et al. cloned the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin locus and assigned CotB2 to the GGDP to cyclooctat-9-en-7-ol cyclization in vitro.","reference":"DOI:10.1016/j.chembiol.2009.06.007","snippet":"Incubation of the recombinant CotB2 with GGDP resulted in the formation of cyclooctat-9-en-7-ol"},{"evidence_type":"DATABASE_ASSERTION","notes":"UniProtKB:C9K1X5 is the reviewed Streptomyces melanosporofaciens CotB2 entry, maps to EMBL AB448947 protein BAI44338.1, and annotates RHEA:41628.","reference":"https://www.uniprot.org/uniprotkb/C9K1X5","retrieved_on":"2026-09-27"},{"evidence_type":"DATABASE_ASSERTION","notes":"NCBI GenPept BAI44338.1 is the AB448947.1 geranylgeranyl diphosphate cyclase coding sequence from the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin locus.","reference":"https://www.ncbi.nlm.nih.gov/protein/BAI44338.1","retrieved_on":"2026-09-27"}],"notes":"CotB2 cyclizes geranylgeranyl diphosphate to cyclooctat-9-en-7-ol, the first committed diterpene cyclization in cyclooctatin biosynthesis.","product":"CHEBI:78352","reaction_id":"RHEA:41628","step_number":1,"substrate":"CHEBI:57533"} |
+| support-2308-pathway-1 | /private/tmp/npm-review-work/shared-next-batch231/native-current231-cyclooctatin-maintained-reader-DATA-001.json; /resolved_view/biosynthetic_pathway/1 | supports | Complete retained pathway entry, preserving optional fields and evidence: {"enzyme_id":"UniProtKB:C9K1X6","enzyme_label":"CotB3 cyclooctat-9-en-7-ol 5-monooxygenase","evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Kim et al. cloned the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin locus, heterologously produced cyclooctatin in Streptomyces albus, and assigned the minimal cotB1-cotB4 cluster to GGDP synthesis, CotB2 cyclization, and two cytochrome P450 hydroxylations.","reference":"DOI:10.1016/j.chembiol.2009.06.007","snippet":"complete cyclooctatin biosynthetic gene cluster consists of four genes, cotB1 to cotB4"},{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Gorner et al. reconstituted CotB3 and CotB4 activity with heterologous redox partners in Escherichia coli and measured conversion of cyclooctat-9-en-7-ol by CotB3 and cyclooctat-9-en-5,7-diol by CotB4.","reference":"DOI:10.1186/s12934-016-0487-6","snippet":"100 μM of cyclooctat-9-en-7-ol (CotB3) or cyclooct-9-en-5,7-diol (CotB4)"},{"evidence_type":"DATABASE_ASSERTION","notes":"UniProtKB:C9K1X6 is the reviewed Streptomyces melanosporofaciens CotB3 entry, maps to EMBL AB448947 protein BAI44339.1, and annotates RHEA:56820 for cyclooctat-9-en-7-ol 5-monooxygenase activity.","reference":"https://www.uniprot.org/uniprotkb/C9K1X6","retrieved_on":"2026-09-28"},{"evidence_type":"DATABASE_ASSERTION","notes":"NCBI GenPept BAI44339.1 is the AB448947.1 CotB3 P450 coding sequence from the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin locus.","reference":"https://www.ncbi.nlm.nih.gov/protein/BAI44339.1","retrieved_on":"2026-09-28","snippet":"product=\"P450\""}],"notes":"CotB3 performs the first P450 hydroxylation downstream of CotB2, converting cyclooctat-9-en-7-ol to cyclooctat-9-en-5,7-diol.","product":"CHEBI:141020","reaction_id":"RHEA:56820","step_number":2,"substrate":"CHEBI:78352"} |
+| support-2308-pathway-2 | /private/tmp/npm-review-work/shared-next-batch231/native-current231-cyclooctatin-maintained-reader-DATA-001.json; /resolved_view/biosynthetic_pathway/2 | supports | Complete retained pathway entry, preserving optional fields and evidence: {"enzyme_id":"UniProtKB:C9K1X7","enzyme_label":"CotB4 cyclooctatin synthase","evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Kim et al. cloned the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin locus, heterologously produced cyclooctatin in Streptomyces albus, and assigned the minimal cotB1-cotB4 cluster to GGDP synthesis, CotB2 cyclization, and two cytochrome P450 hydroxylations.","reference":"DOI:10.1016/j.chembiol.2009.06.007","snippet":"complete cyclooctatin biosynthetic gene cluster consists of four genes, cotB1 to cotB4"},{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Gorner et al. reconstituted CotB3 and CotB4 activity with heterologous redox partners in Escherichia coli and measured conversion of cyclooctat-9-en-7-ol by CotB3 and cyclooctat-9-en-5,7-diol by CotB4.","reference":"DOI:10.1186/s12934-016-0487-6","snippet":"100 μM of cyclooctat-9-en-7-ol (CotB3) or cyclooct-9-en-5,7-diol (CotB4)"},{"evidence_type":"DATABASE_ASSERTION","notes":"UniProtKB:C9K1X7 is the reviewed Streptomyces melanosporofaciens CotB4 entry, maps to EMBL AB448947 protein BAI44340.1, and annotates RHEA:56824 for cyclooctatin synthase activity.","reference":"https://www.uniprot.org/uniprotkb/C9K1X7","retrieved_on":"2026-09-28"},{"evidence_type":"DATABASE_ASSERTION","notes":"NCBI GenPept BAI44340.1 is the AB448947.1 CotB4 P450 coding sequence from the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin locus.","reference":"https://www.ncbi.nlm.nih.gov/protein/BAI44340.1","retrieved_on":"2026-09-28","snippet":"product=\"P450\""}],"notes":"CotB4 performs the terminal C-18 P450 hydroxylation from cyclooctat-9-en-5,7-diol to cyclooctatin. CHEBI:78370 is the stereocomplete Rhea product; the NaturalProductRecord remains grounded to the partial-stereo MIBiG structure pending a record-level stereochemistry review.","product":"CHEBI:78370","reaction_id":"RHEA:56824","step_number":3,"substrate":"CHEBI:141020"} |
+| support-2308-history | /private/tmp/npm-review-work/shared-next-batch231/native-current231-cyclooctatin-maintained-reader-DATA-001.json; /resolved_view/curation_history | supports | Complete historical curation events; historical retrieval or sequence notes are not fresh verification: [{"action":"SEEDED_FROM_SOURCES","changes":"Seeded from the committed inventories in data/raw/.","curator":"seed_from_sources","timestamp":"2026-09-10T05:54:09Z"},{"action":"SEEDED_FROM_SOURCES","changes":"Seeded from the committed inventories in data/raw/.","curator":"seed_from_sources","timestamp":"2026-09-25T03:02:48Z"},{"action":"RECORD_CURATED","changes":"Added the Streptomyces melanosporofaciens CotB2 GGDP-to-cyclooctat-9-en-7-ol biosynthetic step and BIOSYNTHESIS causal graph grounded to UniProtKB:C9K1X5.","curator":"codex","llm_assisted":true,"timestamp":"2026-09-27T03:51:25Z"},{"action":"RECORD_CURATED","changes":"Expanded the Streptomyces melanosporofaciens cyclooctatin biosynthetic pathway and BIOSYNTHESIS causal graph with CotB3 and CotB4 P450 hydroxylation steps; grounded BAI44339.1 and BAI44340.1 to UniProtKB:C9K1X6 and UniProtKB:C9K1X7.","curator":"codex","llm_assisted":true,"timestamp":"2026-09-28T18:50:19Z"},{"action":"RECORD_CURATED","changes":"Add AfR and Afx reference-grounded engineered constructs in a separate three-edge BIOSYNTHESIS graph for paired whole-cell support of CotB3/CotB4. Record the AfR Gly insertion and Afx MTN deletion; do not assert native partners, individual sufficiency, purified electron transfer or a physical complex. Preserve all earlier claims, partial-stereo chemistry and SEEDED status.","curator":"codex","llm_assisted":true,"timestamp":"2026-10-09T05:38:22Z"},{"action":"RECORD_CURATED","changes":"Add PdR and wild-type/engineered Pdx reference-grounded constructs in a six-edge BIOSYNTHESIS graph for paired whole-cell CotB4 support. Distinguish wild-type minor product formation from paper W106E (canonical W107E), and retain the PdR Gly insertion, qualitative comparator and assay limitations. Preserve all prior claims, partial-stereo chemistry and SEEDED status; no native partners, individual sufficiency, purified electron transfer or complex assertion.","curator":"codex","llm_assisted":true,"timestamp":"2026-10-09T06:38:17Z"}] |
+| root-native-strict_ten | /private/tmp/npm-native-checks/batch-231/validate-strict-selected10-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-231/native-current231-five-gates-execution-001.json | supports | Closed-schema validation of the ten selected owners and any referenced components reported zero errors. |
+| root-native-strict_full | /private/tmp/npm-native-checks/batch-231/validate-all-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-231/native-current231-five-gates-execution-001.json | supports | Full closed-schema validation scanned all 3116 owners and reported zero errors. |
+| root-native-lockfile | /private/tmp/npm-native-checks/batch-231/verify-corpus-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-231/native-current231-five-gates-execution-001.json | supports | PATHS.tsv and filesystem agree on all 3116 records and their pinned filing pathways. |
+| root-native-reproduction | /private/tmp/npm-native-checks/batch-231/verify-reproduction-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-231/native-current231-five-gates-execution-001.json | supports | All 3116 records reproduce byte-identically from the retained inventories and carried curator content. This does not independently validate curator science. |
+| root-native-queue | /private/tmp/npm-native-checks/batch-231/review-queue-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-231/native-current231-five-gates-execution-001.json | supports | The full local queue contains 8922 diagnostic rows; selected-target entries were inspected. Queue diagnostics are leads, not scientific sign-off. |
+
+## Limits And Additional Notes
+
+- All evidence is retained locally. External identifiers, primary publications, taxonomy and natural stereochemical assignments were not refreshed under the absolute no-request instruction.
+- Full QC and complete OAK authority coverage remain unavailable. Original local gates and successful stored parses establish only their stated mechanical scope.
+- Empty joins concern only exact saved predicates and snapshots. Shared loci, taxa and citations do not transfer compound-specific production, activity, mechanism or independent-study status.
+- Four original undefined-stereo warnings remain global and unassigned to records. No additional molecular/YAML parse, source query or target invocation occurred during scientific authoring.
+- No source record, native curation status or history is edited. Any later correction belongs to the maintained owners listed in the accepted canonical intake.
+- Accepted maintained-reader equality establishes complete local owner preservation only. Protein-family/reaction grounding, historical construct notes and proposed steps retain their explicit evidence limits.
+- The whole selected owner was read, but scientific completion is partial because full QC, complete ontology authority coverage and external source verification were unavailable. No native status or history was changed.
+- The branch uses cached base ce6a5498df5be51116bd5e0c119023ee62bb5464. Fresh origin/main verification and publication are deferred because the user prohibits all external requests.
+- Complete owner/history and actual canonical intake were read; matching source payloads, full cached stanzas and companion attribution are retained in the pinned source notes.
+- Support personally read all six saved forms for these three owners: 154 atom rows and 166 bond rows plus every scalar, ring, stereo, motif and original mapping/comparison field. The Cyslabdan A manual witness is separate from the original failed map.
+- ROOT operated original activation/capture and independently accepted the maintained results; Support operated original canonical intakes; Native operated original gates, chemistry and all three maintained readers; BGC operated original collector/composer. No new target was invoked during these assessments.
+- Saved review coverage is distinct from the native SEEDED/REVIEWED curation state. Proposed actions are not performed edits.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261103T222704Z-cyclooctatin
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'Local evidence review: cyclooctatin'
+started_at: '2026-11-03T21:43:37.790790Z'
+finished_at: '2026-11-03T22:27:04.899342Z'
+reviewer:
+  identity: Codex root with native_checks, bgc_science and review_support peer agents
+  kind: agent
+  independence: independent
+  independence_basis: This review team inspected existing owner and retained source
+    bytes without editing them; scientific fragments were cross-checked separately
+    from their author. Local validation is not treated as scientific proof.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: Cyclooctatin preserves a partial-stereochemistry owner, its CotB pathway
+  and two separately qualified engineered redox-support graphs. Exact reference proteins,
+  engineered constructs and whole-cell results retain distinct evidential scopes.
+  The accepted local reader proves complete-document preservation within its contract;
+  scientific completion remains partial.
+source:
+  git_revision: ce6a5498df5be51116bd5e0c119023ee62bb5464
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: AGENTS.md
+    sha256: 69e4037f8dc97d4b00bb7bb83b41ceca025f6ef578d5c0bf8086f3400becde0b
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/terpenoids/cyclooctatin.yaml
+    sha256: 519e74276649b9cfd9c1236dcf47d527e18dec4241ab185abb4e56efe86b5e2d
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/graph_components.py
+    sha256: 10f08517869f482954fd583fd19d5750ef286a76297c231e6c9a5ba8dc023e17
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: src/naturalproductmech/validation/write_validated.py
+    sha256: 4b7648fc5d2e7a5d26ad8bb168dbcae609aaa2694434a8ed5cfcb33fb66ff80a
+    role: context
+scope:
+  description: One complete NaturalProductRecord, including all present scientific
+    claims, history and declared mechanisms; external verification remains unavailable.
+  selection: Campaign path order 2308; one of the next ten uncovered paths selected
+    from the 3116-record corpus. Membership uses the canonical validated catalogue
+    plus retained committed campaign bundles.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-3835812e03
+targets:
+- target_id: naturalproductmech:mibig-3835812e03
+  path: data/natural_products/terpenoids/cyclooctatin.yaml
+  label: cyclooctatin
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained harmonization generator; seeded fields are corrected through
+      maintained inputs and validated regeneration.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Retained MIBiG structure, producer and compound-specific locus assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/npclassifier.tsv
+    role: Pinned computed classification and filing assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Maintained extraction of MIBiG compound names, structures, stereochemistry
+      flags and source provenance.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Retained cited occurrence assertions, distinct from demonstrated production.
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/graph_components.py
+    role: Future maintained complete-owner reader implementation; not invoked in this
+      plan.
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/validation/write_validated.py
+    role: Future maintained complete-owner reader implementation; not invoked in this
+      plan.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/terpenoids/cyclooctatin.yaml
+    role: Curator-owned declared graphs, graph references, pathway steps and history;
+      imported molecular-target assertions and other seeded fields retain inventory
+      ownership. Curated graph/pathway changes require the validated writer and a
+      curation event.
+  ownership_note: This review proposes no record edit. Source corrections belong in
+    maintained inventories, implemented curation tables, extractors or the seeder;
+    generated pages are not owners. This mechanism-bearing owner requires separately
+    authorized complete maintained resolution before scientific assessment and draft
+    assembly. Raw owner capture is not a maintained resolved view.
+checks:
+- name: Complete offline maintained reader for cyclooctatin
+  status: passed
+  required: true
+  command: /private/tmp/npm-record-reviews-20261021/.venv/bin/python -I -B /private/tmp/npm-review-work/shared-next-batch231/read-selected-mechanism-guarded-001.py
+    2308 d10634138cd57834c49ec3f0c4070d8bebdd489f1f50f123ab08cc389d2e85a9 a6d8f3983abfda8b83d48c63a7bff473dd4d9ffe24a1f35bc449f5d33379b158
+    d65dead86417d910f5158628f12930c526dbc5b81750f9197093bfcb644349d8 d84d66f3894eb1e6982ca23b38ceb3de84e6f7ca4b5c805ae0f4271536420af7
+    007a2056fbbf41f2bf14358fd9b1d850fb78421cc9b32ffb70ae8bc158f858c9
+  exit_code: 0
+  check_id: maintained-mechanism-reader
+  summary: 'The original offline maintained reader returned the complete expected
+    owner for order 2308: 3 graphs, 17 nodes, 15 edges, 3 pathway entries and 6 history
+    events. Complete owner equality and original terminal exit 0 are ROOT-accepted;
+    no unexpected denial or error occurred. This check establishes local preservation,
+    not independent biological or primary-source verification.'
+  target_ids:
+  - naturalproductmech:mibig-3835812e03
+  evidence_ids:
+  - support-2308-reader-DATA
+  - support-2308-reader-execution
+  - support-2308-reader-acceptance
+- check_id: root-native-strict_ten
+  name: strict_ten
+  status: passed
+  required: true
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  target_ids:
+  - naturalproductmech:mibig-3835812e03
+  command: just validate-strict data/natural_products/terpenoids/compound-12.yaml
+    data/natural_products/terpenoids/compound-15.yaml data/natural_products/terpenoids/compound-7a.yaml
+    data/natural_products/terpenoids/conidiogenone.yaml data/natural_products/terpenoids/cucurbitacin-c.yaml
+    data/natural_products/terpenoids/culmorin.yaml data/natural_products/terpenoids/cyatha-3-12-diene.yaml
+    data/natural_products/terpenoids/cyclooctatin.yaml data/natural_products/terpenoids/cyslabdan-a.yaml
+    data/natural_products/terpenoids/cyslabdan-b.yaml --workers 1 --out /private/tmp/npm-native-checks/batch-231/validate-strict-selected10-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_ten
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-strict_full
+  name: strict_full
+  status: passed
+  required: true
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  target_ids:
+  - naturalproductmech:mibig-3835812e03
+  command: just validate-all --workers 1 --out /private/tmp/npm-native-checks/batch-231/validate-all-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_full
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-lockfile
+  name: lockfile
+  status: passed
+  required: true
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  target_ids:
+  - naturalproductmech:mibig-3835812e03
+  command: just verify-corpus --summary
+  exit_code: 0
+  evidence_ids:
+  - root-native-lockfile
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-reproduction
+  name: reproduction
+  status: passed
+  required: true
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  target_ids:
+  - naturalproductmech:mibig-3835812e03
+  command: just verify-reproduction
+  exit_code: 0
+  evidence_ids:
+  - root-native-reproduction
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-queue
+  name: queue
+  status: passed
+  required: true
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  target_ids:
+  - naturalproductmech:mibig-3835812e03
+  command: just review-queue --tsv /private/tmp/npm-native-checks/batch-231/review-queue-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-queue
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-full-qc
+  name: Full just qc
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-3835812e03
+  summary: 'Not run under the external-request prohibition: the complete recipe includes
+    upstream vendored synchronization. The five executed local checks are recorded
+    separately.'
+- check_id: root-ontology-authorities
+  name: Complete OAK identifier/label authority check
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-3835812e03
+  summary: Complete offline ontology authority coverage was not established for this
+    run; no ontology retrieval or remote resolution was attempted. Retained taxonomy
+    evidence has only its explicitly stated local scope.
+- check_id: root-primary-and-live-sources
+  name: Primary literature and current structured database/identifier verification
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-3835812e03
+  summary: All external requests are prohibited by the user. Fresh database and identifier
+    verification and complete primary-literature coverage are unavailable. Any retained
+    original literature actually inspected is recorded separately with its historical
+    scope.
+evidence:
+- evidence_id: support-2308-owner
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/terpenoids/cyclooctatin.yaml
+  locator: Whole current owner plaintext, including complete curation_history
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: Complete current owner/history personally read with exact prior reading
+    attribution; no YAML parse or native-status edit. The complete owner is preserved
+    in the accepted capture and maintained result.
+  snapshot_sha256: 519e74276649b9cfd9c1236dcf47d527e18dec4241ab185abb4e56efe86b5e2d
+- evidence_id: support-2308-capture
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231/owner-capture-DATA-001.json
+  locator: /records/7
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: Complete actual captured owner and component scope; this owner has no declared
+    component routes.
+  snapshot_sha256: d84d66f3894eb1e6982ca23b38ceb3de84e6f7ca4b5c805ae0f4271536420af7
+- evidence_id: support-2308-intake
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231/intakes/2308-inspect-001.json
+  locator: /status; /repository; /source; /targets
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: Complete accepted canonical intake, including exact source ownership and
+    maintained implementation dependencies. This is inspection scope, not a scientific
+    verdict.
+  snapshot_sha256: a6d8f3983abfda8b83d48c63a7bff473dd4d9ffe24a1f35bc449f5d33379b158
+- evidence_id: support-2308-grounding-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231/owner-capture-DATA-001.json
+  locator: /records/7/owner_document
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: 'Complete written field projection, with absent fields bounded by the complete
+    captured owner: {"chemical_structure":{"smiles":"CC(C)C\\1CCC2(/C1=C\\CC(C3C(CC(C3C2)CO)O)(C)O)C","standard_inchi":"InChI=1S/C20H34O3/c1-12(2)14-5-7-19(3)10-15-13(11-21)9-17(22)18(15)20(4,23)8-6-16(14)19/h6,12-15,17-18,21-23H,5,7-11H2,1-4H3/b16-6-","standard_inchi_key":"MSKFOQCDNOFJAT-SOFYXZRVSA-N","stereo_complete":false,"structure_source":"MIBIG","structure_source_id":"mibig:BGC0000677"},"grounding_notes":"No
+    3-star ChEBI entry shares this structure, so the record keeps a content-hashed
+    identifier.","grounding_status":"MINTED","identifier":"naturalproductmech:mibig-3835812e03","label":"cyclooctatin","source_concepts":[{"minted_identifier":"naturalproductmech:mibig-3835812e03","source":"MIBIG","source_id":"BGC0000677","source_label":"cyclooctatin","source_version":"5"}],"xrefs":["pubchem:5467942"]}'
+  snapshot_sha256: d84d66f3894eb1e6982ca23b38ceb3de84e6f7ca4b5c805ae0f4271536420af7
+- evidence_id: support-2308-origin-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231/owner-capture-DATA-001.json
+  locator: /records/7/owner_document
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: 'Complete written field projection, with absent fields bounded by the complete
+    captured owner: {"biosynthetic_gene_clusters":[{"accession":"mibig:BGC0000677","bgc_class":["TERPENE"],"entry_status":"active","entry_version":"5","evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"MIBiG
+    BGC0000677 entry version 5; citation taken from the entry level","reference":"PMID:19635410"}],"genome_accession":"genbank:AB448947.1","link_evidence_basis":"CLUSTER_DEMONSTRATED","locus_evidence_methods":["Knock-out
+    studies","Enzymatic assays","Heterologous expression"],"organism_label":"Streptomyces
+    melanosporofaciens","organism_taxon_id":"NCBITaxon:67327"}],"producer_organisms":[{"biosynthetic_gene_cluster":"mibig:BGC0000677","evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"MIBiG
+    BGC0000677 entry version 5; citation taken from the entry level","reference":"PMID:19635410"}],"evidence_basis":"BGC_CHARACTERIZED","notes":"Locus
+    evidence: Knock-out studies|Enzymatic assays|Heterologous expression. That evidence
+    grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which
+    is a different question.","source":"MIBIG","source_version":"5","taxon_id":"NCBITaxon:67327","taxon_label":"Streptomyces
+    melanosporofaciens"}],"producer_taxon_groups":["ACTINOBACTERIAL"]}'
+  snapshot_sha256: d84d66f3894eb1e6982ca23b38ceb3de84e6f7ca4b5c805ae0f4271536420af7
+- evidence_id: support-2308-occurrence-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231/owner-capture-DATA-001.json
+  locator: /records/7/owner_document
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: 'Complete written field projection, with absent fields bounded by the complete
+    captured owner: {"occurrence_taxon_groups":["ACTINOBACTERIAL"],"occurrences":[{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.","reference":"DOI:10.1007/S00253-013-5440-6"}],"notes":"Wikidata
+    organism http://www.wikidata.org/entity/Q7623378","source":"LOTUS","taxon_id":"NCBITaxon:1888","taxon_label":"Streptomyces
+    albus","taxon_source":"NCBITaxon"},{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.","reference":"DOI:10.1016/S1875-5364(17)30018-3"}],"notes":"Wikidata
+    organism http://www.wikidata.org/entity/Q7623378","source":"LOTUS","taxon_id":"NCBITaxon:1888","taxon_label":"Streptomyces
+    albus","taxon_source":"NCBITaxon"},{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.","reference":"DOI:10.1021/ACS.JNATPROD.6B00676"}],"notes":"Wikidata
+    organism http://www.wikidata.org/entity/Q7623378","source":"LOTUS","taxon_id":"NCBITaxon:1888","taxon_label":"Streptomyces
+    albus","taxon_source":"NCBITaxon"},{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.","reference":"DOI:10.1186/1471-2164-15-97"}],"notes":"Wikidata
+    organism http://www.wikidata.org/entity/Q7623378","source":"LOTUS","taxon_id":"NCBITaxon:1888","taxon_label":"Streptomyces
+    albus","taxon_source":"NCBITaxon"},{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.","reference":"DOI:10.7164/ANTIBIOTICS.45.1587"}],"notes":"Wikidata
+    organism http://www.wikidata.org/entity/Q7623378","source":"LOTUS","taxon_id":"NCBITaxon:1888","taxon_label":"Streptomyces
+    albus","taxon_source":"NCBITaxon"}]}'
+  snapshot_sha256: d84d66f3894eb1e6982ca23b38ceb3de84e6f7ca4b5c805ae0f4271536420af7
+- evidence_id: support-2308-assay-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231/owner-capture-DATA-001.json
+  locator: /records/7/owner_document
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: 'Complete written field projection, with absent fields bounded by the complete
+    captured owner: {}'
+  snapshot_sha256: d84d66f3894eb1e6982ca23b38ceb3de84e6f7ca4b5c805ae0f4271536420af7
+- evidence_id: support-2308-classification-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231/owner-capture-DATA-001.json
+  locator: /records/7/owner_document
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: 'Complete written field projection, with absent fields bounded by the complete
+    captured owner: {"bgc_class":["TERPENE"],"biosynthesis_origin":"NATURAL_PRODUCT","np_classification":{"class_results":["Fusicoccane
+    diterpenoids"],"is_glycoside":false,"pathway_results":["Terpenoids"],"superclass_results":["Diterpenoids"],"tool":"NPClassifier","tool_version":"npclassifier.gnps2.org@2026-09-07"},"np_pathway":"TERPENOIDS"}'
+  snapshot_sha256: d84d66f3894eb1e6982ca23b38ceb3de84e6f7ca4b5c805ae0f4271536420af7
+- evidence_id: support-2308-chemistry
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/7/declared_structure; /records/7/smiles/status; /records/7/inchi/status;
+    /records/7/smiles/computed; /records/7/inchi/computed; /records/7/comparisons;
+    /records/7/atom_correspondence
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: 'Both stored forms parsed. Exact original comparison and correspondence
+    values, preserved without a new parse: {"atom_correspondence":{"complete_atom_count_match":true,"full_graph_identity_established":false,"scope":"One
+    chirality-aware substructure match; no independent full graph or natural identity
+    claim.","smiles_to_inchi_atom_indices":[0,11,1,13,4,6,18,15,5,7,19,17,16,8,12,14,9,10,20,21,3,22,2]},"comparisons":{"atom_count_equal":true,"bond_count_equal":true,"both_keys_equal_declared":true,"canonical_isomeric_smiles_equal":true,"canonical_nonisomeric_smiles_equal":true,"formal_charge_equal":true,"formula_equal":true,"smiles_formula_equals_literal_InChI_main_layer":true,"standard_inchi_equal":true,"standard_inchi_key_equal":true},"inchi_stereo":{"Atom_Tetrahedral:Unspecified":7,"Bond_Double:Specified":1},"smiles_stereo":{"Atom_Tetrahedral:Unspecified":7,"Bond_Double:Specified":1}}'
+  snapshot_sha256: 5696325ae03369015ee813b99d1d51da767e934b2ac887dd9e29f2c27d0405bf
+- evidence_id: support-2308-topology
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/7/declared_structure; /records/7/smiles/status; /records/7/inchi/status;
+    /records/7/smiles/computed; /records/7/inchi/computed; /records/7/comparisons;
+    /records/7/atom_correspondence
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: Both saved forms are neutral C20H34O3 with 23 heavy atoms, 25 bonds, a
+    5/8/5 ring basis and three hydroxyls. Seven tetrahedral centres are unspecified
+    and one alkene is specified. Both saved bond tables encode STEREOZ; index-relative
+    Cis/Trans labels in potential-stereo descriptors differ with local ordering and
+    do not demonstrate an isomer mismatch. All ten comparisons are true and the original
+    correspondence is complete, while full_graph_identity_established remains false.
+    The retained false centre-completeness flag is consistent with this partial-stereochemistry
+    owner.
+  snapshot_sha256: 5696325ae03369015ee813b99d1d51da767e934b2ac887dd9e29f2c27d0405bf
+- evidence_id: support-2308-diagnostic-execution
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231/chemistry-local/diagnostic-execution-001.json
+  locator: Whole original execution receipt
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: Native operated one original stored-form diagnostic, exit 0, with preserved
+    stdout/stderr and closed environment. The inherited DATA observer literal is not
+    the operator attribution.
+  snapshot_sha256: 65040543ad69a2d54b0cf784884a78bf49a7bf1c68cdec31272f1ada872be8db
+- evidence_id: support-2308-diagnostic-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231/root-chemistry-acceptance-001.json
+  locator: Whole ROOT chemistry acceptance
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: ROOT accepts the original 20 stored parses and retains 96 true/four false
+    flags, two empty maps and four global unassigned warnings; it establishes no natural
+    identity or fixed-graph equivalence.
+  snapshot_sha256: 129083683fbfc7528e17bfe7fcd04e7ceb7e44708a11682d024e10f384d5c740
+- evidence_id: support-2308-native-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231/root-native-gates-acceptance-001.json
+  locator: Whole ROOT gate acceptance and selected queue rows
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: Five original local gates passed; all_native_gates_passed is false because
+    full QC and complete OAK remain unavailable. Selected queues are follow-up context,
+    not automatic scientific findings.
+  snapshot_sha256: b7921dc6afa5d8ce9587a5a097e427772c0b5b739481a22f8e61ce9bcb9e78cc
+- evidence_id: support-2308-intake-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231/root-intake-acceptance-001.json
+  locator: Whole ROOT intake acceptance
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: ROOT accepts ten actual one-record intakes, 411 source placements / 68
+    paths and exact ownership; no scientific verdict follows from intake success.
+  snapshot_sha256: af10db4855db731afb28ba6c9d972835e1c1689b3b6089b80d9ed7a76dd1118f
+- evidence_id: support-2308-inventory-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231/root-source-inventory-acceptance-001.json
+  locator: Whole ROOT source-inventory acceptance
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: ROOT accepts the one original local inventory and its current input/capture/source
+    joins; complete scientific reading is separately attributed in the notes.
+  snapshot_sha256: a50f4decab71502d06fc10d04836ee324c2b09c0fdf118ea5826e7e7c4640d03
+- evidence_id: support-2308-plan-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231/root-input-plan-acceptance-001.json
+  locator: Whole ROOT input-plan acceptance
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: ROOT accepts the exact current plan and preserved source contexts; no scientific
+    verdict or future reader success is inferred.
+  snapshot_sha256: 2f7c566f713e12b9b357d9e9c870cb6c05ee90ca30a53c0879a5e5d6a547fa6f
+- evidence_id: support-2308-source-notes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231-tentative/bgc-prep/bgc-conditional231-source-scope-notes-001.json
+  locator: /reading; /cautions; /scientific_limits
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: Complete disjoint source/raw-history reading attribution and bounded compound-specific
+    cautions; no pre-intake verdict was asserted.
+  snapshot_sha256: c178e2f5d22e7bf22457f90632cb8bd1b05ce4caf2a993684e4a357a81188afd
+- evidence_id: support-2308-curation-scope
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231-tentative/bgc-prep/bgc-conditional231-source-scope-notes-001.json
+  locator: /curation
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: Eight current pinned implemented curation tables were directly opened ignoring
+    ignore rules; 101 exact case-sensitive cohort literals against 93 data rows yielded
+    zero matches within that scope. Reserved decisions.tsv was not consumed.
+  snapshot_sha256: c178e2f5d22e7bf22457f90632cb8bd1b05ce4caf2a993684e4a357a81188afd
+- evidence_id: support-2308-structure-schema
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: Lines 368–430
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: ChemicalStructure preserves source representation and standardized-key
+    limitations. stereo_complete describes undefined centres; ComputedClassification
+    is a named/versioned prediction, never a source assertion or admission criterion.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: support-2308-stereo-method
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py
+  locator: Lines 142–173
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: Maintained stereo_complete derives from FindMolChiralCenters and the absence
+    of question-mark centre tags; it is not a blanket all-bond-geometry proof.
+  snapshot_sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+- evidence_id: support-2308-classification-seeder
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: Lines 974–1065
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: Maintained seeding preserves the source structure and named/versioned classifier
+    output while separately retaining BGC and source compound classes.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: support-2308-review-profile
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/docs/record-review-profile.md
+  locator: Whole current profile
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: One-record scientific review requires claim-level evidence and twelve dimensions
+    with truthful partial-completion/unavailable-check limits.
+  snapshot_sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+- evidence_id: support-2308-review-skill
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/.claude/skills/review-yaml-record/SKILL.md
+  locator: Whole current skill
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: The review does not edit records; source access is bounded by the overriding
+    no-request instruction.
+  snapshot_sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+- evidence_id: support-2308-plan
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231-tentative/bgc-prep/bgc-conditional231-target-input-plan-001.json
+  locator: /records/7
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: Complete actual owner-specific input map and direct/additional roles. Historical
+    planning language does not claim a reader result; actual reader evidence is linked
+    separately.
+  snapshot_sha256: 641feb36d59176354fbea2afb95ff2e5d7c1ea3253b71291ca442c15482dab14
+- evidence_id: support-2308-query-mibig_compounds
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231-tentative/bgc-prep/bgc-conditional231-source-inventory-DATA-001.json
+  locator: /contexts/19/source_scope_inventory/joins/mibig_compounds
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: 'Complete retained query frame, including exact predicate, counts, every
+    positive payload or no-match result: {"matches":[{"last_physical_line":815,"physical_line":815,"raw_tsv_record":"BGC0000677\t5\tactive\tquestionable\tcomplete\tcyclooctatin\t1\tCC(C)C\\1CCC2(/C1=C\\CC(C3C(CC(C3C2)CO)O)(C)O)C\tInChI=1S/C20H34O3/c1-12(2)14-5-7-19(3)10-15-13(11-21)9-17(22)18(15)20(4,23)8-6-16(14)19/h6,12-15,17-18,21-23H,5,7-11H2,1-4H3/b16-6-\tMSKFOQCDNOFJAT-SOFYXZRVSA-N\tfalse\t\tpubchem:5467942\tNCBITaxon:67327\tStreptomyces
+    melanosporofaciens\tterpene\tDiterpene\tAB448947.1\t\t\tKnock-out studies|Enzymatic
+    assays|Heterologous expression\tBGC_CHARACTERIZED\tCLUSTER_DEMONSTRATED\tPMID:19635410\tENTRY\n","row":{"bgc_classes":"terpene","bgc_subclasses":"Diterpene","cluster_link_evidence_basis":"CLUSTER_DEMONSTRATED","compound_classes":"","compound_index":"1","compound_name":"cyclooctatin","database_ids":"pubchem:5467942","entry_completeness":"complete","entry_quality":"questionable","entry_status":"active","entry_version":"5","genome_accession":"AB448947.1","locus_evidence_methods":"Knock-out
+    studies|Enzymatic assays|Heterologous expression","locus_from":"","locus_to":"","mibig_accession":"BGC0000677","primary_reference":"PMID:19635410","producer_evidence_basis":"BGC_CHARACTERIZED","reference_basis":"ENTRY","smiles":"CC(C)C\\1CCC2(/C1=C\\CC(C3C(CC(C3C2)CO)O)(C)O)C","standard_inchi":"InChI=1S/C20H34O3/c1-12(2)14-5-7-19(3)10-15-13(11-21)9-17(22)18(15)20(4,23)8-6-16(14)19/h6,12-15,17-18,21-23H,5,7-11H2,1-4H3/b16-6-","standard_inchi_key":"MSKFOQCDNOFJAT-SOFYXZRVSA-N","stereo_complete":"false","taxon_id":"NCBITaxon:67327","taxon_label":"Streptomyces
+    melanosporofaciens"},"row_sha256":"4e386b6cecd905bcf1890faf5956ba1aef6011f222ec8b171f99dba7c54dd7c2"}],"predicate":"exact
+    complete standard_inchi_key equality","query":"MSKFOQCDNOFJAT-SOFYXZRVSA-N"}'
+  snapshot_sha256: 2fa0122c6e1b529e09cd05458ff38c77edb0d075456144c528ebe0237078b3b6
+- evidence_id: support-2308-source-mibig_compounds
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv
+  locator: Header line 1; physical lines 815–815, row_sha256 4e386b6cecd905bcf1890faf5956ba1aef6011f222ec8b171f99dba7c54dd7c2
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: 'Complete retained physical row payloads, every field: [{"bgc_classes":"terpene","bgc_subclasses":"Diterpene","cluster_link_evidence_basis":"CLUSTER_DEMONSTRATED","compound_classes":"","compound_index":"1","compound_name":"cyclooctatin","database_ids":"pubchem:5467942","entry_completeness":"complete","entry_quality":"questionable","entry_status":"active","entry_version":"5","genome_accession":"AB448947.1","locus_evidence_methods":"Knock-out
+    studies|Enzymatic assays|Heterologous expression","locus_from":"","locus_to":"","mibig_accession":"BGC0000677","primary_reference":"PMID:19635410","producer_evidence_basis":"BGC_CHARACTERIZED","reference_basis":"ENTRY","smiles":"CC(C)C\\1CCC2(/C1=C\\CC(C3C(CC(C3C2)CO)O)(C)O)C","standard_inchi":"InChI=1S/C20H34O3/c1-12(2)14-5-7-19(3)10-15-13(11-21)9-17(22)18(15)20(4,23)8-6-16(14)19/h6,12-15,17-18,21-23H,5,7-11H2,1-4H3/b16-6-","standard_inchi_key":"MSKFOQCDNOFJAT-SOFYXZRVSA-N","stereo_complete":"false","taxon_id":"NCBITaxon:67327","taxon_label":"Streptomyces
+    melanosporofaciens"}]'
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: support-2308-query-chebi_structures
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231-tentative/bgc-prep/bgc-conditional231-source-inventory-DATA-001.json
+  locator: /contexts/19/source_scope_inventory/joins/chebi_structures
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: 'Complete retained query frame, including exact predicate, counts, every
+    positive payload or no-match result: {"matches":[],"predicate":"exact complete
+    standard_inchi_key equality","query":"MSKFOQCDNOFJAT-SOFYXZRVSA-N"}'
+  snapshot_sha256: 2fa0122c6e1b529e09cd05458ff38c77edb0d075456144c528ebe0237078b3b6
+- evidence_id: support-2308-query-lotus_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231-tentative/bgc-prep/bgc-conditional231-source-inventory-DATA-001.json
+  locator: /contexts/19/source_scope_inventory/joins/lotus_occurrences
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: 'Complete retained query frame, including exact predicate, counts, every
+    positive payload or no-match result: {"matches":[{"last_physical_line":5751,"physical_line":5751,"raw_tsv_record":"MSKFOQCDNOFJAT-SOFYXZRVSA-N\tStreptomyces
+    albus\tNCBITaxon:1888\thttp://www.wikidata.org/entity/Q7623378\t10.1007/S00253-013-5440-6\thttp://www.wikidata.org/entity/Q105171218\n","row":{"organism_name":"Streptomyces
+    albus","organism_wikidata":"http://www.wikidata.org/entity/Q7623378","reference_doi":"10.1007/S00253-013-5440-6","standard_inchi_key":"MSKFOQCDNOFJAT-SOFYXZRVSA-N","structure_wikidata":"http://www.wikidata.org/entity/Q105171218","taxon_id":"NCBITaxon:1888"},"row_sha256":"8b6a01fceef6b5f103c3382bc0d79a5c58c836a348c2d614e77379f6ae030642"},{"last_physical_line":5752,"physical_line":5752,"raw_tsv_record":"MSKFOQCDNOFJAT-SOFYXZRVSA-N\tStreptomyces
+    albus\tNCBITaxon:1888\thttp://www.wikidata.org/entity/Q7623378\t10.1016/S1875-5364(17)30018-3\thttp://www.wikidata.org/entity/Q105171218\n","row":{"organism_name":"Streptomyces
+    albus","organism_wikidata":"http://www.wikidata.org/entity/Q7623378","reference_doi":"10.1016/S1875-5364(17)30018-3","standard_inchi_key":"MSKFOQCDNOFJAT-SOFYXZRVSA-N","structure_wikidata":"http://www.wikidata.org/entity/Q105171218","taxon_id":"NCBITaxon:1888"},"row_sha256":"1c5c17265052af30bf1d99b6c25f901d34127006694ff067e60a6995e4ef0903"},{"last_physical_line":5753,"physical_line":5753,"raw_tsv_record":"MSKFOQCDNOFJAT-SOFYXZRVSA-N\tStreptomyces
+    albus\tNCBITaxon:1888\thttp://www.wikidata.org/entity/Q7623378\t10.1021/ACS.JNATPROD.6B00676\thttp://www.wikidata.org/entity/Q105171218\n","row":{"organism_name":"Streptomyces
+    albus","organism_wikidata":"http://www.wikidata.org/entity/Q7623378","reference_doi":"10.1021/ACS.JNATPROD.6B00676","standard_inchi_key":"MSKFOQCDNOFJAT-SOFYXZRVSA-N","structure_wikidata":"http://www.wikidata.org/entity/Q105171218","taxon_id":"NCBITaxon:1888"},"row_sha256":"cf1ff7a5ac65bf23e825ebba28bcca8ae42d8804c8d78e8136f9cd7356ea95e3"},{"last_physical_line":5754,"physical_line":5754,"raw_tsv_record":"MSKFOQCDNOFJAT-SOFYXZRVSA-N\tStreptomyces
+    albus\tNCBITaxon:1888\thttp://www.wikidata.org/entity/Q7623378\t10.1186/1471-2164-15-97\thttp://www.wikidata.org/entity/Q105171218\n","row":{"organism_name":"Streptomyces
+    albus","organism_wikidata":"http://www.wikidata.org/entity/Q7623378","reference_doi":"10.1186/1471-2164-15-97","standard_inchi_key":"MSKFOQCDNOFJAT-SOFYXZRVSA-N","structure_wikidata":"http://www.wikidata.org/entity/Q105171218","taxon_id":"NCBITaxon:1888"},"row_sha256":"afc9cf86e79cb35eae955f5da5a4270261d5c9f1b5fd66859d89e6c8e8a26ebd"},{"last_physical_line":5755,"physical_line":5755,"raw_tsv_record":"MSKFOQCDNOFJAT-SOFYXZRVSA-N\tStreptomyces
+    albus\tNCBITaxon:1888\thttp://www.wikidata.org/entity/Q7623378\t10.7164/ANTIBIOTICS.45.1587\thttp://www.wikidata.org/entity/Q105171218\n","row":{"organism_name":"Streptomyces
+    albus","organism_wikidata":"http://www.wikidata.org/entity/Q7623378","reference_doi":"10.7164/ANTIBIOTICS.45.1587","standard_inchi_key":"MSKFOQCDNOFJAT-SOFYXZRVSA-N","structure_wikidata":"http://www.wikidata.org/entity/Q105171218","taxon_id":"NCBITaxon:1888"},"row_sha256":"df952837961d3b9c4952e5322e0a8a7670c24b1805b3f4ec1a7ef9f731f9f7a0"}],"predicate":"exact
+    complete standard_inchi_key equality","query":"MSKFOQCDNOFJAT-SOFYXZRVSA-N"}'
+  snapshot_sha256: 2fa0122c6e1b529e09cd05458ff38c77edb0d075456144c528ebe0237078b3b6
+- evidence_id: support-2308-source-lotus_occurrences
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical lines 5751–5751, row_sha256 8b6a01fceef6b5f103c3382bc0d79a5c58c836a348c2d614e77379f6ae030642;
+    physical lines 5752–5752, row_sha256 1c5c17265052af30bf1d99b6c25f901d34127006694ff067e60a6995e4ef0903;
+    physical lines 5753–5753, row_sha256 cf1ff7a5ac65bf23e825ebba28bcca8ae42d8804c8d78e8136f9cd7356ea95e3;
+    physical lines 5754–5754, row_sha256 afc9cf86e79cb35eae955f5da5a4270261d5c9f1b5fd66859d89e6c8e8a26ebd;
+    physical lines 5755–5755, row_sha256 df952837961d3b9c4952e5322e0a8a7670c24b1805b3f4ec1a7ef9f731f9f7a0
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: 'Complete retained physical row payloads, every field: [{"organism_name":"Streptomyces
+    albus","organism_wikidata":"http://www.wikidata.org/entity/Q7623378","reference_doi":"10.1007/S00253-013-5440-6","standard_inchi_key":"MSKFOQCDNOFJAT-SOFYXZRVSA-N","structure_wikidata":"http://www.wikidata.org/entity/Q105171218","taxon_id":"NCBITaxon:1888"},{"organism_name":"Streptomyces
+    albus","organism_wikidata":"http://www.wikidata.org/entity/Q7623378","reference_doi":"10.1016/S1875-5364(17)30018-3","standard_inchi_key":"MSKFOQCDNOFJAT-SOFYXZRVSA-N","structure_wikidata":"http://www.wikidata.org/entity/Q105171218","taxon_id":"NCBITaxon:1888"},{"organism_name":"Streptomyces
+    albus","organism_wikidata":"http://www.wikidata.org/entity/Q7623378","reference_doi":"10.1021/ACS.JNATPROD.6B00676","standard_inchi_key":"MSKFOQCDNOFJAT-SOFYXZRVSA-N","structure_wikidata":"http://www.wikidata.org/entity/Q105171218","taxon_id":"NCBITaxon:1888"},{"organism_name":"Streptomyces
+    albus","organism_wikidata":"http://www.wikidata.org/entity/Q7623378","reference_doi":"10.1186/1471-2164-15-97","standard_inchi_key":"MSKFOQCDNOFJAT-SOFYXZRVSA-N","structure_wikidata":"http://www.wikidata.org/entity/Q105171218","taxon_id":"NCBITaxon:1888"},{"organism_name":"Streptomyces
+    albus","organism_wikidata":"http://www.wikidata.org/entity/Q7623378","reference_doi":"10.7164/ANTIBIOTICS.45.1587","standard_inchi_key":"MSKFOQCDNOFJAT-SOFYXZRVSA-N","structure_wikidata":"http://www.wikidata.org/entity/Q105171218","taxon_id":"NCBITaxon:1888"}]'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2308-query-cyanometdb_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231-tentative/bgc-prep/bgc-conditional231-source-inventory-DATA-001.json
+  locator: /contexts/19/source_scope_inventory/joins/cyanometdb_occurrences
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: 'Complete retained query frame, including exact predicate, counts, every
+    positive payload or no-match result: {"matches":[],"predicate":"exact complete
+    standard_inchi_key equality","query":"MSKFOQCDNOFJAT-SOFYXZRVSA-N"}'
+  snapshot_sha256: 2fa0122c6e1b529e09cd05458ff38c77edb0d075456144c528ebe0237078b3b6
+- evidence_id: support-2308-query-npclassifier
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231-tentative/bgc-prep/bgc-conditional231-source-inventory-DATA-001.json
+  locator: /contexts/19/source_scope_inventory/joins/npclassifier
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: 'Complete retained query frame, including exact predicate, counts, every
+    positive payload or no-match result: {"matches":[{"last_physical_line":1528,"physical_line":1528,"raw_tsv_record":"MSKFOQCDNOFJAT-SOFYXZRVSA-N\tCC(C)C\\1CCC2(/C1=C\\CC(C3C(CC(C3C2)CO)O)(C)O)C\tTerpenoids\tDiterpenoids\tFusicoccane
+    diterpenoids\tfalse\tnpclassifier.gnps2.org@2026-09-07\n","row":{"class_results":"Fusicoccane
+    diterpenoids","is_glycoside":"false","model_version":"npclassifier.gnps2.org@2026-09-07","pathway_results":"Terpenoids","smiles":"CC(C)C\\1CCC2(/C1=C\\CC(C3C(CC(C3C2)CO)O)(C)O)C","standard_inchi_key":"MSKFOQCDNOFJAT-SOFYXZRVSA-N","superclass_results":"Diterpenoids"},"row_sha256":"41c1cd45a6f36774aa27dcc4a1c9b7366544b5612d9aeba80dfca106817a6076"}],"predicate":"exact
+    complete standard_inchi_key equality","query":"MSKFOQCDNOFJAT-SOFYXZRVSA-N"}'
+  snapshot_sha256: 2fa0122c6e1b529e09cd05458ff38c77edb0d075456144c528ebe0237078b3b6
+- evidence_id: support-2308-source-npclassifier
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv
+  locator: Header line 1; physical lines 1528–1528, row_sha256 41c1cd45a6f36774aa27dcc4a1c9b7366544b5612d9aeba80dfca106817a6076
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: 'Complete retained physical row payloads, every field: [{"class_results":"Fusicoccane
+    diterpenoids","is_glycoside":"false","model_version":"npclassifier.gnps2.org@2026-09-07","pathway_results":"Terpenoids","smiles":"CC(C)C\\1CCC2(/C1=C\\CC(C3C(CC(C3C2)CO)O)(C)O)C","standard_inchi_key":"MSKFOQCDNOFJAT-SOFYXZRVSA-N","superclass_results":"Diterpenoids"}]'
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: support-2308-query-pubchem_bioassay
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231-tentative/bgc-prep/bgc-conditional231-source-inventory-DATA-001.json
+  locator: /contexts/19/source_scope_inventory/joins/pubchem_bioassay
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: 'Complete retained query frame, including exact predicate, counts, every
+    positive payload or no-match result: {"matches":[],"predicate":"exact complete
+    standard_inchi_key equality","query":"MSKFOQCDNOFJAT-SOFYXZRVSA-N"}'
+  snapshot_sha256: 2fa0122c6e1b529e09cd05458ff38c77edb0d075456144c528ebe0237078b3b6
+- evidence_id: support-2308-query-bindingdb_targets
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231-tentative/bgc-prep/bgc-conditional231-source-inventory-DATA-001.json
+  locator: /contexts/19/source_scope_inventory/joins/bindingdb_targets
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: 'Complete retained query frame, including exact predicate, counts, every
+    positive payload or no-match result: {"matches":[],"predicate":"exact complete
+    standard_inchi_key equality","query":"MSKFOQCDNOFJAT-SOFYXZRVSA-N"}'
+  snapshot_sha256: 2fa0122c6e1b529e09cd05458ff38c77edb0d075456144c528ebe0237078b3b6
+- evidence_id: support-2308-query-antibioticmech_inchikeys
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231-tentative/bgc-prep/bgc-conditional231-source-inventory-DATA-001.json
+  locator: /contexts/19/source_scope_inventory/joins/antibioticmech_inchikeys
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: 'Complete retained query frame, including exact predicate, counts, every
+    positive payload or no-match result: {"matches":[],"predicate":"exact complete
+    standard_inchi_key equality","query":"MSKFOQCDNOFJAT-SOFYXZRVSA-N"}'
+  snapshot_sha256: 2fa0122c6e1b529e09cd05458ff38c77edb0d075456144c528ebe0237078b3b6
+- evidence_id: support-2308-query-chebi_origins
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231-tentative/bgc-prep/bgc-conditional231-source-inventory-DATA-001.json
+  locator: /contexts/19/source_scope_inventory/joins/chebi_origins
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: 'Complete retained query frame, including exact predicate, counts, every
+    positive payload or no-match result: {"matches":[],"predicate":"exact chebi_id
+    from exact full-key structure rows","query":[]}'
+  snapshot_sha256: 2fa0122c6e1b529e09cd05458ff38c77edb0d075456144c528ebe0237078b3b6
+- evidence_id: support-2308-source-routes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231-tentative/bgc-prep/bgc-conditional231-source-inventory-DATA-001.json
+  locator: /contexts/19/source_scope_inventory/source_taxa; /contexts/19/source_scope_inventory/forward_taxon_merge_matches;
+    /contexts/19/source_scope_inventory/nonorganism_matches; /contexts/19/source_scope_inventory/actual_assay_rows;
+    /contexts/19/source_scope_inventory/blank_AID_sentinels; /contexts/19/source_scope_inventory/related_corpus_rows
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: 'Complete saved routing fields, without fresh taxonomy or source queries:
+    {"actual_assay_rows":[],"blank_AID_sentinels":[],"forward_taxon_merge_matches":[],"nonorganism_matches":[],"related_corpus_rows":[],"source_taxa":["NCBITaxon:1888","NCBITaxon:67327"]}'
+  snapshot_sha256: 2fa0122c6e1b529e09cd05458ff38c77edb0d075456144c528ebe0237078b3b6
+- evidence_id: support-2308-cached-taxonomy
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231-tentative/bgc-prep/bgc-conditional231-source-inventory-DATA-001.json
+  locator: /cached_taxonomy/input; /cached_taxonomy/whole_stanzas/1; /cached_taxonomy/whole_stanzas/14
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: 'Complete retained relevant stanzas; cached labels/synonyms are not fresh
+    external authority: [{"complete_stanza":"[Term]\nid: NCBITaxon:1888\nname: Streptomyces
+    albus\nsynonym: \"Actinomyces almquisti\" EXACT []\nsynonym: \"Actinomyces flocculus\"
+    EXACT []\nsynonym: \"Actinomyces gibsoni\" EXACT []\nsynonym: \"Actinomyces gibsonii\"
+    EXACT []\nsynonym: \"Actinomyces rangoon\" EXACT []\nsynonym: \"Nocardia gibsonii\"
+    EXACT []\nsynonym: \"Nocardia rangoonensis\" EXACT []\nsynonym: \"Streptomyces
+    almquistii\" EXACT []\nsynonym: \"Streptomyces flocculus\" EXACT []\nsynonym:
+    \"Streptomyces gibsonii\" EXACT []\nsynonym: \"Streptomyces griseus subsp. solvifaciens\"
+    EXACT []\nsynonym: \"Streptomyces rangoon\" EXACT []\nsynonym: \"Streptomyces
+    rangoonensis\" EXACT []\nsynonym: \"Streptotrix alba\" EXACT []\n\n","id":"NCBITaxon:1888","physical_line":2836},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:67327\nname: Streptomyces melanosporofaciens\nsynonym: \"Streptomyces
+    antimycoticus subsp. melanosporofaciens\" EXACT []\nsynonym: \"Streptomyces melanosporofaciens
+    Arcamone et al. 1959 (Approved Lists 1980)\" EXACT []\n\n","id":"NCBITaxon:67327","physical_line":30091}]'
+  snapshot_sha256: 2fa0122c6e1b529e09cd05458ff38c77edb0d075456144c528ebe0237078b3b6
+- evidence_id: support-2308-direct-contexts
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231-tentative/bgc-prep/bgc-conditional231-source-inventory-DATA-001.json
+  locator: /records/7/direct_companion_paths; /records/7/direct_companion_predicates
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: 'Exact direct companion scope and predicates, not transferred compound-specific
+    evidence: {"direct_companion_paths":[],"direct_companion_predicates":[]}'
+  snapshot_sha256: 2fa0122c6e1b529e09cd05458ff38c77edb0d075456144c528ebe0237078b3b6
+- evidence_id: support-2308-reader-DATA
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231/native-current231-cyclooctatin-maintained-reader-DATA-001.json
+  locator: /order; /status; /counts; /raw_owner; /resolved_view; /expected_view; /returned_view_equals_expected_complete_owner;
+    /reader_call_count; /denials; /unexpected_denials; /errors; /limitations
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: 'Original accepted offline maintained reader. Complete owner equality and
+    exact counts: {"component_graphs":0,"component_history_events":[],"component_refs":0,"curation_history":6,"edges":15,"graphs":3,"inline_graphs":3,"molecular_targets":0,"nodes":17,"pathway_steps":3}.
+    The expected denied-before-action IPv6 capability probe is retained; it is not
+    an outbound request. No unexpected denial or error. Preservation does not independently
+    verify primary experiments or protein identity.'
+  snapshot_sha256: c5a2e44892335c4855cd6d6b9d830fe7bcfe9ae71a804cabfcaa162f7018f225
+- evidence_id: support-2308-reader-execution
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231/native-current231-cyclooctatin-reader-execution-001.json
+  locator: Whole original execution receipt
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: Original single-reader execution, complete saved streams/tool-chain and
+    terminal exit 0; no replay. The command, source/config hashes and process clocks
+    bind the accepted result.
+  snapshot_sha256: 4f768c0a233225b9adbb75999f48c0df9ac5ce807ea7bb791ef2a9ab543f525d
+- evidence_id: support-2308-reader-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231/root-2308-maintained-reader-acceptance-001.json
+  locator: /status; /order; /DATA; /execution; /verification; /review_check_contract;
+    /limits
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: 'ROOT acceptance of this exact original complete-owner reader, with its
+    precise check contract and bounded limits: {"command":"/private/tmp/npm-record-reviews-20261021/.venv/bin/python
+    -I -B /private/tmp/npm-review-work/shared-next-batch231/read-selected-mechanism-guarded-001.py
+    2308 d10634138cd57834c49ec3f0c4070d8bebdd489f1f50f123ab08cc389d2e85a9 a6d8f3983abfda8b83d48c63a7bff473dd4d9ffe24a1f35bc449f5d33379b158
+    d65dead86417d910f5158628f12930c526dbc5b81750f9197093bfcb644349d8 d84d66f3894eb1e6982ca23b38ceb3de84e6f7ca4b5c805ae0f4271536420af7
+    007a2056fbbf41f2bf14358fd9b1d850fb78421cc9b32ffb70ae8bc158f858c9","exit_code":0,"exit_source":"original
+    tool terminal and process receipt","name":"Complete offline maintained reader
+    for cyclooctatin","required":true,"status":"passed","target_order":2308}'
+  snapshot_sha256: e53566e54b73cc1fb4d827d91002d7a27d12d5ff19ea12da61b3c630da62483e
+- evidence_id: support-2308-graph-0
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231/native-current231-cyclooctatin-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/0
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: 'Complete retained graph, every node, edge, evidence placement and qualified
+    note: {"description":"Streptomyces melanosporofaciens cyclooctatin biosynthesis
+    graph for CotB2 cyclization of geranylgeranyl diphosphate and CotB3/CotB4 P450
+    hydroxylations to cyclooctatin.","edges":[{"evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Kim
+    et al. cloned the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin locus
+    and assigned CotB2 to the GGDP to cyclooctat-9-en-7-ol cyclization in vitro.","reference":"DOI:10.1016/j.chembiol.2009.06.007","snippet":"Incubation
+    of the recombinant CotB2 with GGDP resulted in the formation of cyclooctat-9-en-7-ol"},{"evidence_type":"DATABASE_ASSERTION","notes":"UniProtKB:C9K1X5
+    is the reviewed Streptomyces melanosporofaciens CotB2 entry, maps to EMBL AB448947
+    protein BAI44338.1, and annotates RHEA:41628.","reference":"https://www.uniprot.org/uniprotkb/C9K1X5","retrieved_on":"2026-09-27"},{"evidence_type":"DATABASE_ASSERTION","notes":"NCBI
+    GenPept BAI44338.1 is the AB448947.1 geranylgeranyl diphosphate cyclase coding
+    sequence from the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin locus.","reference":"https://www.ncbi.nlm.nih.gov/protein/BAI44338.1","retrieved_on":"2026-09-27"}],"object":"cotb2","predicate":"is
+    cyclized by","subject":"ggdp"},{"evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Kim
+    et al. cloned the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin locus
+    and assigned CotB2 to the GGDP to cyclooctat-9-en-7-ol cyclization in vitro.","reference":"DOI:10.1016/j.chembiol.2009.06.007","snippet":"Incubation
+    of the recombinant CotB2 with GGDP resulted in the formation of cyclooctat-9-en-7-ol"},{"evidence_type":"DATABASE_ASSERTION","notes":"UniProtKB:C9K1X5
+    is the reviewed Streptomyces melanosporofaciens CotB2 entry, maps to EMBL AB448947
+    protein BAI44338.1, and annotates RHEA:41628.","reference":"https://www.uniprot.org/uniprotkb/C9K1X5","retrieved_on":"2026-09-27"},{"evidence_type":"DATABASE_ASSERTION","notes":"NCBI
+    GenPept BAI44338.1 is the AB448947.1 geranylgeranyl diphosphate cyclase coding
+    sequence from the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin locus.","reference":"https://www.ncbi.nlm.nih.gov/protein/BAI44338.1","retrieved_on":"2026-09-27"}],"object":"cyclooctat_9_en_7_ol","predicate":"forms","subject":"cotb2"},{"evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Kim
+    et al. cloned the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin locus,
+    heterologously produced cyclooctatin in Streptomyces albus, and assigned the minimal
+    cotB1-cotB4 cluster to GGDP synthesis, CotB2 cyclization, and two cytochrome P450
+    hydroxylations.","reference":"DOI:10.1016/j.chembiol.2009.06.007","snippet":"complete
+    cyclooctatin biosynthetic gene cluster consists of four genes, cotB1 to cotB4"},{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Gorner
+    et al. reconstituted CotB3 and CotB4 activity with heterologous redox partners
+    in Escherichia coli and measured conversion of cyclooctat-9-en-7-ol by CotB3 and
+    cyclooctat-9-en-5,7-diol by CotB4.","reference":"DOI:10.1186/s12934-016-0487-6","snippet":"100
+    μM of cyclooctat-9-en-7-ol (CotB3) or cyclooct-9-en-5,7-diol (CotB4)"},{"evidence_type":"DATABASE_ASSERTION","notes":"UniProtKB:C9K1X6
+    is the reviewed Streptomyces melanosporofaciens CotB3 entry, maps to EMBL AB448947
+    protein BAI44339.1, and annotates RHEA:56820 for cyclooctat-9-en-7-ol 5-monooxygenase
+    activity.","reference":"https://www.uniprot.org/uniprotkb/C9K1X6","retrieved_on":"2026-09-28"},{"evidence_type":"DATABASE_ASSERTION","notes":"NCBI
+    GenPept BAI44339.1 is the AB448947.1 CotB3 P450 coding sequence from the Streptomyces
+    melanosporofaciens MI614-43F2 cyclooctatin locus.","reference":"https://www.ncbi.nlm.nih.gov/protein/BAI44339.1","retrieved_on":"2026-09-28","snippet":"product=\"P450\""}],"object":"cotb3","predicate":"is
+    hydroxylated by","subject":"cyclooctat_9_en_7_ol"},{"evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Kim
+    et al. cloned the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin locus,
+    heterologously produced cyclooctatin in Streptomyces albus, and assigned the minimal
+    cotB1-cotB4 cluster to GGDP synthesis, CotB2 cyclization, and two cytochrome P450
+    hydroxylations.","reference":"DOI:10.1016/j.chembiol.2009.06.007","snippet":"complete
+    cyclooctatin biosynthetic gene cluster consists of four genes, cotB1 to cotB4"},{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Gorner
+    et al. reconstituted CotB3 and CotB4 activity with heterologous redox partners
+    in Escherichia coli and measured conversion of cyclooctat-9-en-7-ol by CotB3 and
+    cyclooctat-9-en-5,7-diol by CotB4.","reference":"DOI:10.1186/s12934-016-0487-6","snippet":"100
+    μM of cyclooctat-9-en-7-ol (CotB3) or cyclooct-9-en-5,7-diol (CotB4)"},{"evidence_type":"DATABASE_ASSERTION","notes":"UniProtKB:C9K1X6
+    is the reviewed Streptomyces melanosporofaciens CotB3 entry, maps to EMBL AB448947
+    protein BAI44339.1, and annotates RHEA:56820 for cyclooctat-9-en-7-ol 5-monooxygenase
+    activity.","reference":"https://www.uniprot.org/uniprotkb/C9K1X6","retrieved_on":"2026-09-28"},{"evidence_type":"DATABASE_ASSERTION","notes":"NCBI
+    GenPept BAI44339.1 is the AB448947.1 CotB3 P450 coding sequence from the Streptomyces
+    melanosporofaciens MI614-43F2 cyclooctatin locus.","reference":"https://www.ncbi.nlm.nih.gov/protein/BAI44339.1","retrieved_on":"2026-09-28","snippet":"product=\"P450\""}],"object":"cyclooctat_9_ene_5_7_diol","predicate":"forms","subject":"cotb3"},{"evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Kim
+    et al. cloned the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin locus,
+    heterologously produced cyclooctatin in Streptomyces albus, and assigned the minimal
+    cotB1-cotB4 cluster to GGDP synthesis, CotB2 cyclization, and two cytochrome P450
+    hydroxylations.","reference":"DOI:10.1016/j.chembiol.2009.06.007","snippet":"complete
+    cyclooctatin biosynthetic gene cluster consists of four genes, cotB1 to cotB4"},{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Gorner
+    et al. reconstituted CotB3 and CotB4 activity with heterologous redox partners
+    in Escherichia coli and measured conversion of cyclooctat-9-en-7-ol by CotB3 and
+    cyclooctat-9-en-5,7-diol by CotB4.","reference":"DOI:10.1186/s12934-016-0487-6","snippet":"100
+    μM of cyclooctat-9-en-7-ol (CotB3) or cyclooct-9-en-5,7-diol (CotB4)"},{"evidence_type":"DATABASE_ASSERTION","notes":"UniProtKB:C9K1X7
+    is the reviewed Streptomyces melanosporofaciens CotB4 entry, maps to EMBL AB448947
+    protein BAI44340.1, and annotates RHEA:56824 for cyclooctatin synthase activity.","reference":"https://www.uniprot.org/uniprotkb/C9K1X7","retrieved_on":"2026-09-28"},{"evidence_type":"DATABASE_ASSERTION","notes":"NCBI
+    GenPept BAI44340.1 is the AB448947.1 CotB4 P450 coding sequence from the Streptomyces
+    melanosporofaciens MI614-43F2 cyclooctatin locus.","reference":"https://www.ncbi.nlm.nih.gov/protein/BAI44340.1","retrieved_on":"2026-09-28","snippet":"product=\"P450\""}],"object":"cotb4","predicate":"is
+    hydroxylated by","subject":"cyclooctat_9_ene_5_7_diol"},{"evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Kim
+    et al. cloned the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin locus,
+    heterologously produced cyclooctatin in Streptomyces albus, and assigned the minimal
+    cotB1-cotB4 cluster to GGDP synthesis, CotB2 cyclization, and two cytochrome P450
+    hydroxylations.","reference":"DOI:10.1016/j.chembiol.2009.06.007","snippet":"complete
+    cyclooctatin biosynthetic gene cluster consists of four genes, cotB1 to cotB4"},{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Gorner
+    et al. reconstituted CotB3 and CotB4 activity with heterologous redox partners
+    in Escherichia coli and measured conversion of cyclooctat-9-en-7-ol by CotB3 and
+    cyclooctat-9-en-5,7-diol by CotB4.","reference":"DOI:10.1186/s12934-016-0487-6","snippet":"100
+    μM of cyclooctat-9-en-7-ol (CotB3) or cyclooct-9-en-5,7-diol (CotB4)"},{"evidence_type":"DATABASE_ASSERTION","notes":"UniProtKB:C9K1X7
+    is the reviewed Streptomyces melanosporofaciens CotB4 entry, maps to EMBL AB448947
+    protein BAI44340.1, and annotates RHEA:56824 for cyclooctatin synthase activity.","reference":"https://www.uniprot.org/uniprotkb/C9K1X7","retrieved_on":"2026-09-28"},{"evidence_type":"DATABASE_ASSERTION","notes":"NCBI
+    GenPept BAI44340.1 is the AB448947.1 CotB4 P450 coding sequence from the Streptomyces
+    melanosporofaciens MI614-43F2 cyclooctatin locus.","reference":"https://www.ncbi.nlm.nih.gov/protein/BAI44340.1","retrieved_on":"2026-09-28","snippet":"product=\"P450\""}],"object":"cyclooctatin","predicate":"forms","subject":"cotb4"}],"graph_id":"cyclooctatin-cotb-biosynthesis","nodes":[{"grounding_status":"GROUNDED","identifier":"CHEBI:57533","label":"geranylgeranyl
+    diphosphate(3-)","node_id":"ggdp","node_type":"PRECURSOR"},{"grounding_status":"GROUNDED","identifier":"UniProtKB:C9K1X5","label":"CotB2","node_id":"cotb2","node_type":"ENZYME"},{"grounding_status":"GROUNDED","identifier":"CHEBI:78352","label":"cyclooctat-9-en-7-ol","node_id":"cyclooctat_9_en_7_ol","node_type":"COMPOUND"},{"grounding_status":"GROUNDED","identifier":"UniProtKB:C9K1X6","label":"CotB3","node_id":"cotb3","node_type":"ENZYME"},{"grounding_status":"GROUNDED","identifier":"CHEBI:141020","label":"cyclooctat-9-en-5,7-diol","node_id":"cyclooctat_9_ene_5_7_diol","node_type":"COMPOUND"},{"grounding_status":"GROUNDED","identifier":"UniProtKB:C9K1X7","label":"CotB4","node_id":"cotb4","node_type":"ENZYME"},{"grounding_status":"GROUNDED","identifier":"CHEBI:78370","label":"cyclooctatin","node_id":"cyclooctatin","node_type":"COMPOUND"}],"scope":"BIOSYNTHESIS"}'
+  snapshot_sha256: c5a2e44892335c4855cd6d6b9d830fe7bcfe9ae71a804cabfcaa162f7018f225
+- evidence_id: support-2308-graph-1
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231/native-current231-cyclooctatin-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/1
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: 'Complete retained graph, every node, edge, evidence placement and qualified
+    note: {"description":"Non-native AfR/Afx redox-pair support of CotB3/CotB4 in
+    engineered Escherichia coli BL21(DE3). UniProt nodes identify references for the
+    qualified synthetic constructs. Whole-cell evidence does not establish purified
+    electron transfer, a physical complex or native partners. No new native-producer
+    claim or stereochemical assignment is made.","edges":[{"evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Results
+    and Methods: the coexpressed redox pair supported CotB3/CotB4 in whole-cell assays.","reference":"DOI:10.1186/s12934-016-0487-6","retrieved_on":"2026-10-09","snippet":"whole
+    cell catalysis experiments were carried out"},{"evidence_type":"DATABASE_ASSERTION","notes":"Unreviewed
+    reference, entry version 40, sequence version 1; 416 aa, STAFG_8584, Streptomyces
+    afghaniensis 772, taxon 1283301. Sequence equals GenPept EPJ34383.1 and the paper-cited
+    RefSeq WP_020277402.1; the accession identifies the reference, not an identical
+    synthetic construct.","reference":"https://www.uniprot.org/uniprotkb/S4M5B3","retrieved_on":"2026-10-09"},{"evidence_type":"DATABASE_ASSERTION","notes":"Paper-cited
+    reference sequence matches EPJ34383.1 and its independently translated strain-772
+    genomic CDS.","reference":"https://www.ncbi.nlm.nih.gov/protein/WP_020277402.1","retrieved_on":"2026-10-09"},{"evidence_type":"CURATOR_INFERENCE","notes":"Literal
+    Figure S19 ORF translation is 417 aa: Gly inserted after initiator Met relative
+    to the 416-aa reference. This is a sequence comparison, not a claim that the assayed
+    construct equals the canonical sequence.","reference":"https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs12934-016-0487-6/MediaObjects/12934_2016_487_MOESM1_ESM.pdf","retrieved_on":"2026-10-09"}],"notes":"Paired-system
+    evidence; individual sufficiency is not established.","object":"hydroxylation","predicate":"with
+    coexpressed Afx supports","subject":"afr"},{"evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Results
+    and Methods: the coexpressed redox pair supported CotB3/CotB4 in whole-cell assays.","reference":"DOI:10.1186/s12934-016-0487-6","retrieved_on":"2026-10-09"},{"evidence_type":"DATABASE_ASSERTION","notes":"Unreviewed
+    reference, entry version 42, sequence version 1; 110 aa, STAFG_8018, Streptomyces
+    afghaniensis 772, taxon 1283301. Sequence equals GenPept EPJ34910.1 and the paper-cited
+    RefSeq WP_020276845.1; the accession identifies the reference, not an identical
+    synthetic construct.","reference":"https://www.uniprot.org/uniprotkb/S4MH50","retrieved_on":"2026-10-09"},{"evidence_type":"DATABASE_ASSERTION","notes":"Paper-cited
+    reference sequence matches EPJ34910.1 and its independently translated strain-772
+    genomic CDS.","reference":"https://www.ncbi.nlm.nih.gov/protein/WP_020276845.1","retrieved_on":"2026-10-09"},{"evidence_type":"CURATOR_INFERENCE","notes":"Literal
+    Figure S19 ORF translation is 107 aa: the reference N-terminal MTN is absent.
+    This is a sequence comparison, not a claim that the assayed construct equals the
+    110-aa canonical sequence.","reference":"https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs12934-016-0487-6/MediaObjects/12934_2016_487_MOESM1_ESM.pdf","retrieved_on":"2026-10-09"}],"notes":"Paired-system
+    evidence; individual sufficiency is not established.","object":"hydroxylation","predicate":"with
+    coexpressed AfR supports","subject":"afx"},{"evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Results,
+    Figure 1 and Additional file 1 report cyclooctatin formation and spectroscopic
+    characterization in the engineered production system.","reference":"DOI:10.1186/s12934-016-0487-6","retrieved_on":"2026-10-09"},{"evidence_type":"CURATOR_INFERENCE","notes":"ChEBI
+    cyclooctatin has InChIKey MSKFOQCDNOFJAT-VCRXIKTMSA-N. Its InChI matches the owner
+    through the double-bond layer but additionally specifies tetrahedral stereochemistry.
+    The owner remains MSKFOQCDNOFJAT-SOFYXZRVSA-N, stereo_complete false. Exact source-product
+    stereochemical mapping is not adjudicated here; no chemistry or xref changes.","reference":"https://www.ebi.ac.uk/chebi/CHEBI:78370","retrieved_on":"2026-10-09"}],"notes":"The
+    reported product is not asserted identical to the partial-stereo owner or assigned
+    an exact stereochemical identifier in this graph.","object":"reported_cyclooctatin","predicate":"yields","subject":"hydroxylation"}],"graph_id":"cyclooctatin-engineered-afr-afx-support","nodes":[{"grounding_status":"GROUNDED","identifier":"UniProtKB:S4M5B3","label":"AfR
+    (+Gly construct; reference accession)","node_id":"afr","node_type":"ENZYME"},{"grounding_status":"GROUNDED","identifier":"UniProtKB:S4MH50","label":"Afx
+    (MTN-deleted construct; reference accession)","node_id":"afx","node_type":"PROTEIN"},{"grounding_status":"UNGROUNDED","label":"CotB3/CotB4
+    hydroxylation in engineered E. coli","node_id":"hydroxylation","node_type":"PROCESS"},{"grounding_status":"UNGROUNDED","label":"cyclooctatin
+    (reported product)","node_id":"reported_cyclooctatin","node_type":"COMPOUND"}],"scope":"BIOSYNTHESIS"}'
+  snapshot_sha256: c5a2e44892335c4855cd6d6b9d830fe7bcfe9ae71a804cabfcaa162f7018f225
+- evidence_id: support-2308-graph-2
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231/native-current231-cyclooctatin-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/2
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: 'Complete retained graph, every node, edge, evidence placement and qualified
+    note: {"description":"Non-native PdR/Pdx paired support of CotB4 in engineered
+    E. coli BL21(DE3). Wild-type Pdx and engineered paper W106E (full-length canonical
+    W107E) are different constructs using the same reference accession, not two native
+    proteins. PdR carries the S20 Gly insertion. Whole-cell product evidence does
+    not establish individual sufficiency, purified electron transfer, a physical complex
+    or native partners. Existing partial-stereo chemistry and native-producer claims
+    are unchanged.","edges":[{"evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Whole-cell
+    CotB4 comparison with coexpressed PdR and wild-type Pdx in engineered E. coli
+    BL21(DE3), supplied cyclooctat-9-en-5,7-diol and a GC-MS product readout after
+    48 hours. The Methods describe five cultures and an empty-vector control. This
+    establishes paired-system support, not individual sufficiency or purified electron
+    transfer.","reference":"DOI:10.1186/s12934-016-0487-6","retrieved_on":"2026-10-09"},{"evidence_type":"DATABASE_ASSERTION","notes":"Reviewed
+    Pseudomonas putida reference (taxon 303), camA, 422 aa; entry version 131, sequence
+    version 1. Native camphor-system annotation is not evidence of native cyclooctatin
+    production. This accession denotes the reference, not a separate mutant entry.","reference":"https://www.uniprot.org/uniprotkb/P16640","retrieved_on":"2026-10-09"},{"evidence_type":"DATABASE_ASSERTION","notes":"Deposited
+    PdR CDS AAA25758.1; its annotated translation agrees with the selected UniProt
+    reference. Deposit strain provenance does not establish the source strain of the
+    synthetic 2016 construct.","reference":"https://www.ncbi.nlm.nih.gov/nuccore/J05406.1","retrieved_on":"2026-10-09"},{"evidence_type":"DATABASE_ASSERTION","notes":"Deposited
+    PdR CDS BAA00413.1; its annotated translation agrees with the selected UniProt
+    reference. Deposit strain provenance does not establish the source strain of the
+    synthetic 2016 construct.","reference":"https://www.ncbi.nlm.nih.gov/nuccore/D00528.1","retrieved_on":"2026-10-09"},{"evidence_type":"CURATOR_INFERENCE","notes":"Figure
+    S20 literal PdR ORF is 423 aa: Gly inserted after initiator Met relative to the
+    422-aa P16640 reference. Both native CDSs independently translate to the reference.
+    The synthetic construct is not identical to P16640.","reference":"https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs12934-016-0487-6/MediaObjects/12934_2016_487_MOESM1_ESM.pdf","retrieved_on":"2026-10-09"}],"notes":"Paired-system
+    evidence under the stated whole-cell conditions.","object":"cotb4_wt","predicate":"with
+    coexpressed wild-type Pdx supports","subject":"pdr"},{"evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Whole-cell
+    CotB4 comparison with coexpressed PdR and wild-type Pdx in engineered E. coli
+    BL21(DE3), supplied cyclooctat-9-en-5,7-diol and a GC-MS product readout after
+    48 hours. The Methods describe five cultures and an empty-vector control. This
+    establishes paired-system support, not individual sufficiency or purified electron
+    transfer.","reference":"DOI:10.1186/s12934-016-0487-6","retrieved_on":"2026-10-09"},{"evidence_type":"DATABASE_ASSERTION","notes":"Reviewed
+    Pseudomonas putida reference (taxon 303), camB, 107 aa; entry version 144, sequence
+    version 3. Native camphor-system annotation is not evidence of native cyclooctatin
+    production. UniProt annotates mature chain 2..107 and a historical E/Q conflict
+    at canonical residue 15; the selected canonical sequence contains E. No assay-host
+    initiator-Met processing is asserted. This accession denotes the reference, not
+    a separate mutant entry.","reference":"https://www.uniprot.org/uniprotkb/P00259","retrieved_on":"2026-10-09"},{"evidence_type":"DATABASE_ASSERTION","notes":"Deposited
+    Pdx CDS AAA25759.1; its annotated translation agrees with the selected UniProt
+    reference. Deposit strain provenance does not establish the source strain of the
+    synthetic 2016 construct.","reference":"https://www.ncbi.nlm.nih.gov/nuccore/J05406.1","retrieved_on":"2026-10-09"},{"evidence_type":"DATABASE_ASSERTION","notes":"Deposited
+    Pdx CDS BAA00414.1; its annotated translation agrees with the selected UniProt
+    reference. Deposit strain provenance does not establish the source strain of the
+    synthetic 2016 construct.","reference":"https://www.ncbi.nlm.nih.gov/nuccore/D00528.1","retrieved_on":"2026-10-09"},{"evidence_type":"CURATOR_INFERENCE","notes":"Figure
+    S20 literal wild-type Pdx ORF is 107 aa and equals P00259 and both independently
+    translated native CDSs, including E at canonical position 15. This is sequence
+    identity evidence, not native-partner evidence.","reference":"https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs12934-016-0487-6/MediaObjects/12934_2016_487_MOESM1_ESM.pdf","retrieved_on":"2026-10-09"}],"notes":"Paired-system
+    evidence under the stated whole-cell conditions.","object":"cotb4_wt","predicate":"with
+    coexpressed PdR supports","subject":"pdx_wt"},{"evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Results
+    report only minor cyclooctatin formation with wild-type PdR/Pdx and CotB4 under
+    the tested conditions. The separate CotB3 comparison had no detectable diol; no
+    general inactivity claim is made.","reference":"DOI:10.1186/s12934-016-0487-6","retrieved_on":"2026-10-09","snippet":"only
+    minor amounts of cyclooctatin"},{"evidence_type":"CURATOR_INFERENCE","notes":"Figure
+    S1b shows the wild-type PdR/Pdx condition as a low-product comparator. This is
+    a condition-specific whole-cell product readout, not purified turnover.","reference":"https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs12934-016-0487-6/MediaObjects/12934_2016_487_MOESM1_ESM.pdf","retrieved_on":"2026-10-09"}],"notes":"The
+    reported product is not asserted stereochemically identical to the partial-stereo
+    owner and is not assigned an exact chemical identifier in this graph.","object":"reported_cyclooctatin","predicate":"yields","subject":"cotb4_wt"},{"evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Whole-cell
+    CotB4 comparison with coexpressed PdR and Pdx-W106E in engineered E. coli BL21(DE3),
+    supplied cyclooctat-9-en-5,7-diol and a GC-MS product readout after 48 hours.
+    The Methods describe five cultures and an empty-vector control. This establishes
+    paired-system support, not individual sufficiency or purified electron transfer.","reference":"DOI:10.1186/s12934-016-0487-6","retrieved_on":"2026-10-09"},{"evidence_type":"DATABASE_ASSERTION","notes":"Reviewed
+    Pseudomonas putida reference (taxon 303), camA, 422 aa; entry version 131, sequence
+    version 1. Native camphor-system annotation is not evidence of native cyclooctatin
+    production. This accession denotes the reference, not a separate mutant entry.","reference":"https://www.uniprot.org/uniprotkb/P16640","retrieved_on":"2026-10-09"},{"evidence_type":"DATABASE_ASSERTION","notes":"Deposited
+    PdR CDS AAA25758.1; its annotated translation agrees with the selected UniProt
+    reference. Deposit strain provenance does not establish the source strain of the
+    synthetic 2016 construct.","reference":"https://www.ncbi.nlm.nih.gov/nuccore/J05406.1","retrieved_on":"2026-10-09"},{"evidence_type":"DATABASE_ASSERTION","notes":"Deposited
+    PdR CDS BAA00413.1; its annotated translation agrees with the selected UniProt
+    reference. Deposit strain provenance does not establish the source strain of the
+    synthetic 2016 construct.","reference":"https://www.ncbi.nlm.nih.gov/nuccore/D00528.1","retrieved_on":"2026-10-09"},{"evidence_type":"CURATOR_INFERENCE","notes":"Figure
+    S20 literal PdR ORF is 423 aa: Gly inserted after initiator Met relative to the
+    422-aa P16640 reference. Both native CDSs independently translate to the reference.
+    The synthetic construct is not identical to P16640.","reference":"https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs12934-016-0487-6/MediaObjects/12934_2016_487_MOESM1_ESM.pdf","retrieved_on":"2026-10-09"}],"notes":"Paired-system
+    evidence under the stated whole-cell conditions.","object":"cotb4_w106e","predicate":"with
+    coexpressed Pdx-W106E supports","subject":"pdr"},{"evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Whole-cell
+    CotB4 comparison with coexpressed PdR and Pdx-W106E in engineered E. coli BL21(DE3),
+    supplied cyclooctat-9-en-5,7-diol and a GC-MS product readout after 48 hours.
+    The Methods describe five cultures and an empty-vector control. This establishes
+    paired-system support, not individual sufficiency or purified electron transfer.","reference":"DOI:10.1186/s12934-016-0487-6","retrieved_on":"2026-10-09"},{"evidence_type":"DATABASE_ASSERTION","notes":"Reviewed
+    Pseudomonas putida reference (taxon 303), camB, 107 aa; entry version 144, sequence
+    version 3. Native camphor-system annotation is not evidence of native cyclooctatin
+    production. UniProt annotates mature chain 2..107 and a historical E/Q conflict
+    at canonical residue 15; the selected canonical sequence contains E. No assay-host
+    initiator-Met processing is asserted. This accession denotes the reference, not
+    a separate mutant entry.","reference":"https://www.uniprot.org/uniprotkb/P00259","retrieved_on":"2026-10-09"},{"evidence_type":"DATABASE_ASSERTION","notes":"Deposited
+    Pdx CDS AAA25759.1; its annotated translation agrees with the selected UniProt
+    reference. Deposit strain provenance does not establish the source strain of the
+    synthetic 2016 construct.","reference":"https://www.ncbi.nlm.nih.gov/nuccore/J05406.1","retrieved_on":"2026-10-09"},{"evidence_type":"DATABASE_ASSERTION","notes":"Deposited
+    Pdx CDS BAA00414.1; its annotated translation agrees with the selected UniProt
+    reference. Deposit strain provenance does not establish the source strain of the
+    synthetic 2016 construct.","reference":"https://www.ncbi.nlm.nih.gov/nuccore/D00528.1","retrieved_on":"2026-10-09"},{"evidence_type":"CURATOR_INFERENCE","notes":"Figure
+    S20 literal wild-type Pdx ORF is 107 aa and equals P00259 and both independently
+    translated native CDSs, including E at canonical position 15. This is sequence
+    identity evidence, not native-partner evidence.","reference":"https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs12934-016-0487-6/MediaObjects/12934_2016_487_MOESM1_ESM.pdf","retrieved_on":"2026-10-09"},{"evidence_type":"CURATOR_INFERENCE","notes":"The
+    Methods W106E primer maps to W107E in the full-length S20/P00259 ORF; the reference
+    mature-chain numbering omits initiator Met. The 38-base forward primer overlaps
+    32 printed S20 bases and changes only that translated residue. Its terminal ATAATG
+    extends beyond S20 and is not verified here. The published reverse primer is its
+    reverse complement. This is a primer/sequence comparison, not independent mutant
+    resequencing or full-plasmid verification.","reference":"DOI:10.1186/s12934-016-0487-6","retrieved_on":"2026-10-09"}],"notes":"Paired-system
+    evidence under the stated whole-cell conditions.","object":"cotb4_w106e","predicate":"with
+    coexpressed PdR supports","subject":"pdx_w106e"},{"evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Results
+    report more cyclooctatin with Pdx-W106E than with wild-type Pdx; this is not a
+    claim of superiority to AfR/Afx or a numerical fold change.","reference":"DOI:10.1186/s12934-016-0487-6","retrieved_on":"2026-10-09","snippet":"also
+    led to increased cyclooctatin formation"},{"evidence_type":"CURATOR_INFERENCE","notes":"Figure
+    S1b qualitatively places Pdx-W106E above wild-type PdR/Pdx but below AfR/Afx for
+    the CotB4 product. Its caption names a CotB3 control despite the CotB4 panel;
+    no normalized ratio or significance test is adopted. Tables S1/S2 duplicate D38E
+    labels for lanes 4/5, so no lane-specific mutant assignment, densitometry or physical-complex
+    inference is adopted.","reference":"https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs12934-016-0487-6/MediaObjects/12934_2016_487_MOESM1_ESM.pdf","retrieved_on":"2026-10-09"}],"notes":"The
+    reported product is not asserted stereochemically identical to the partial-stereo
+    owner and is not assigned an exact chemical identifier in this graph.","object":"reported_cyclooctatin","predicate":"yields","subject":"cotb4_w106e"}],"graph_id":"cyclooctatin-engineered-pdr-pdx-cotb4","nodes":[{"grounding_status":"GROUNDED","identifier":"UniProtKB:P16640","label":"PdR
+    (+Gly construct; reference accession)","node_id":"pdr","node_type":"ENZYME"},{"grounding_status":"GROUNDED","identifier":"UniProtKB:P00259","label":"Pdx
+    (wild-type reference sequence)","node_id":"pdx_wt","node_type":"PROTEIN"},{"grounding_status":"GROUNDED","identifier":"UniProtKB:P00259","label":"Pdx-W106E
+    (canonical W107E; reference accession)","node_id":"pdx_w106e","node_type":"PROTEIN"},{"grounding_status":"UNGROUNDED","label":"Whole-cell
+    CotB4 with wild-type Pdx","node_id":"cotb4_wt","node_type":"PROCESS"},{"grounding_status":"UNGROUNDED","label":"Whole-cell
+    CotB4 with Pdx-W106E","node_id":"cotb4_w106e","node_type":"PROCESS"},{"grounding_status":"UNGROUNDED","label":"cyclooctatin
+    (reported product)","node_id":"reported_cyclooctatin","node_type":"COMPOUND"}],"scope":"BIOSYNTHESIS"}'
+  snapshot_sha256: c5a2e44892335c4855cd6d6b9d830fe7bcfe9ae71a804cabfcaa162f7018f225
+- evidence_id: support-2308-pathway-0
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231/native-current231-cyclooctatin-maintained-reader-DATA-001.json
+  locator: /resolved_view/biosynthetic_pathway/0
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: 'Complete retained pathway entry, preserving optional fields and evidence:
+    {"enzyme_id":"UniProtKB:C9K1X5","enzyme_label":"CotB2","evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Kim
+    et al. cloned the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin locus
+    and assigned CotB2 to the GGDP to cyclooctat-9-en-7-ol cyclization in vitro.","reference":"DOI:10.1016/j.chembiol.2009.06.007","snippet":"Incubation
+    of the recombinant CotB2 with GGDP resulted in the formation of cyclooctat-9-en-7-ol"},{"evidence_type":"DATABASE_ASSERTION","notes":"UniProtKB:C9K1X5
+    is the reviewed Streptomyces melanosporofaciens CotB2 entry, maps to EMBL AB448947
+    protein BAI44338.1, and annotates RHEA:41628.","reference":"https://www.uniprot.org/uniprotkb/C9K1X5","retrieved_on":"2026-09-27"},{"evidence_type":"DATABASE_ASSERTION","notes":"NCBI
+    GenPept BAI44338.1 is the AB448947.1 geranylgeranyl diphosphate cyclase coding
+    sequence from the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin locus.","reference":"https://www.ncbi.nlm.nih.gov/protein/BAI44338.1","retrieved_on":"2026-09-27"}],"notes":"CotB2
+    cyclizes geranylgeranyl diphosphate to cyclooctat-9-en-7-ol, the first committed
+    diterpene cyclization in cyclooctatin biosynthesis.","product":"CHEBI:78352","reaction_id":"RHEA:41628","step_number":1,"substrate":"CHEBI:57533"}'
+  snapshot_sha256: c5a2e44892335c4855cd6d6b9d830fe7bcfe9ae71a804cabfcaa162f7018f225
+- evidence_id: support-2308-pathway-1
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231/native-current231-cyclooctatin-maintained-reader-DATA-001.json
+  locator: /resolved_view/biosynthetic_pathway/1
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: 'Complete retained pathway entry, preserving optional fields and evidence:
+    {"enzyme_id":"UniProtKB:C9K1X6","enzyme_label":"CotB3 cyclooctat-9-en-7-ol 5-monooxygenase","evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Kim
+    et al. cloned the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin locus,
+    heterologously produced cyclooctatin in Streptomyces albus, and assigned the minimal
+    cotB1-cotB4 cluster to GGDP synthesis, CotB2 cyclization, and two cytochrome P450
+    hydroxylations.","reference":"DOI:10.1016/j.chembiol.2009.06.007","snippet":"complete
+    cyclooctatin biosynthetic gene cluster consists of four genes, cotB1 to cotB4"},{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Gorner
+    et al. reconstituted CotB3 and CotB4 activity with heterologous redox partners
+    in Escherichia coli and measured conversion of cyclooctat-9-en-7-ol by CotB3 and
+    cyclooctat-9-en-5,7-diol by CotB4.","reference":"DOI:10.1186/s12934-016-0487-6","snippet":"100
+    μM of cyclooctat-9-en-7-ol (CotB3) or cyclooct-9-en-5,7-diol (CotB4)"},{"evidence_type":"DATABASE_ASSERTION","notes":"UniProtKB:C9K1X6
+    is the reviewed Streptomyces melanosporofaciens CotB3 entry, maps to EMBL AB448947
+    protein BAI44339.1, and annotates RHEA:56820 for cyclooctat-9-en-7-ol 5-monooxygenase
+    activity.","reference":"https://www.uniprot.org/uniprotkb/C9K1X6","retrieved_on":"2026-09-28"},{"evidence_type":"DATABASE_ASSERTION","notes":"NCBI
+    GenPept BAI44339.1 is the AB448947.1 CotB3 P450 coding sequence from the Streptomyces
+    melanosporofaciens MI614-43F2 cyclooctatin locus.","reference":"https://www.ncbi.nlm.nih.gov/protein/BAI44339.1","retrieved_on":"2026-09-28","snippet":"product=\"P450\""}],"notes":"CotB3
+    performs the first P450 hydroxylation downstream of CotB2, converting cyclooctat-9-en-7-ol
+    to cyclooctat-9-en-5,7-diol.","product":"CHEBI:141020","reaction_id":"RHEA:56820","step_number":2,"substrate":"CHEBI:78352"}'
+  snapshot_sha256: c5a2e44892335c4855cd6d6b9d830fe7bcfe9ae71a804cabfcaa162f7018f225
+- evidence_id: support-2308-pathway-2
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231/native-current231-cyclooctatin-maintained-reader-DATA-001.json
+  locator: /resolved_view/biosynthetic_pathway/2
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: 'Complete retained pathway entry, preserving optional fields and evidence:
+    {"enzyme_id":"UniProtKB:C9K1X7","enzyme_label":"CotB4 cyclooctatin synthase","evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Kim
+    et al. cloned the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin locus,
+    heterologously produced cyclooctatin in Streptomyces albus, and assigned the minimal
+    cotB1-cotB4 cluster to GGDP synthesis, CotB2 cyclization, and two cytochrome P450
+    hydroxylations.","reference":"DOI:10.1016/j.chembiol.2009.06.007","snippet":"complete
+    cyclooctatin biosynthetic gene cluster consists of four genes, cotB1 to cotB4"},{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Gorner
+    et al. reconstituted CotB3 and CotB4 activity with heterologous redox partners
+    in Escherichia coli and measured conversion of cyclooctat-9-en-7-ol by CotB3 and
+    cyclooctat-9-en-5,7-diol by CotB4.","reference":"DOI:10.1186/s12934-016-0487-6","snippet":"100
+    μM of cyclooctat-9-en-7-ol (CotB3) or cyclooct-9-en-5,7-diol (CotB4)"},{"evidence_type":"DATABASE_ASSERTION","notes":"UniProtKB:C9K1X7
+    is the reviewed Streptomyces melanosporofaciens CotB4 entry, maps to EMBL AB448947
+    protein BAI44340.1, and annotates RHEA:56824 for cyclooctatin synthase activity.","reference":"https://www.uniprot.org/uniprotkb/C9K1X7","retrieved_on":"2026-09-28"},{"evidence_type":"DATABASE_ASSERTION","notes":"NCBI
+    GenPept BAI44340.1 is the AB448947.1 CotB4 P450 coding sequence from the Streptomyces
+    melanosporofaciens MI614-43F2 cyclooctatin locus.","reference":"https://www.ncbi.nlm.nih.gov/protein/BAI44340.1","retrieved_on":"2026-09-28","snippet":"product=\"P450\""}],"notes":"CotB4
+    performs the terminal C-18 P450 hydroxylation from cyclooctat-9-en-5,7-diol to
+    cyclooctatin. CHEBI:78370 is the stereocomplete Rhea product; the NaturalProductRecord
+    remains grounded to the partial-stereo MIBiG structure pending a record-level
+    stereochemistry review.","product":"CHEBI:78370","reaction_id":"RHEA:56824","step_number":3,"substrate":"CHEBI:141020"}'
+  snapshot_sha256: c5a2e44892335c4855cd6d6b9d830fe7bcfe9ae71a804cabfcaa162f7018f225
+- evidence_id: support-2308-history
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch231/native-current231-cyclooctatin-maintained-reader-DATA-001.json
+  locator: /resolved_view/curation_history
+  accessed_at: '2026-11-03T22:23:00.023197Z'
+  support: supports
+  summary: 'Complete historical curation events; historical retrieval or sequence
+    notes are not fresh verification: [{"action":"SEEDED_FROM_SOURCES","changes":"Seeded
+    from the committed inventories in data/raw/.","curator":"seed_from_sources","timestamp":"2026-09-10T05:54:09Z"},{"action":"SEEDED_FROM_SOURCES","changes":"Seeded
+    from the committed inventories in data/raw/.","curator":"seed_from_sources","timestamp":"2026-09-25T03:02:48Z"},{"action":"RECORD_CURATED","changes":"Added
+    the Streptomyces melanosporofaciens CotB2 GGDP-to-cyclooctat-9-en-7-ol biosynthetic
+    step and BIOSYNTHESIS causal graph grounded to UniProtKB:C9K1X5.","curator":"codex","llm_assisted":true,"timestamp":"2026-09-27T03:51:25Z"},{"action":"RECORD_CURATED","changes":"Expanded
+    the Streptomyces melanosporofaciens cyclooctatin biosynthetic pathway and BIOSYNTHESIS
+    causal graph with CotB3 and CotB4 P450 hydroxylation steps; grounded BAI44339.1
+    and BAI44340.1 to UniProtKB:C9K1X6 and UniProtKB:C9K1X7.","curator":"codex","llm_assisted":true,"timestamp":"2026-09-28T18:50:19Z"},{"action":"RECORD_CURATED","changes":"Add
+    AfR and Afx reference-grounded engineered constructs in a separate three-edge
+    BIOSYNTHESIS graph for paired whole-cell support of CotB3/CotB4. Record the AfR
+    Gly insertion and Afx MTN deletion; do not assert native partners, individual
+    sufficiency, purified electron transfer or a physical complex. Preserve all earlier
+    claims, partial-stereo chemistry and SEEDED status.","curator":"codex","llm_assisted":true,"timestamp":"2026-10-09T05:38:22Z"},{"action":"RECORD_CURATED","changes":"Add
+    PdR and wild-type/engineered Pdx reference-grounded constructs in a six-edge BIOSYNTHESIS
+    graph for paired whole-cell CotB4 support. Distinguish wild-type minor product
+    formation from paper W106E (canonical W107E), and retain the PdR Gly insertion,
+    qualitative comparator and assay limitations. Preserve all prior claims, partial-stereo
+    chemistry and SEEDED status; no native partners, individual sufficiency, purified
+    electron transfer or complex assertion.","curator":"codex","llm_assisted":true,"timestamp":"2026-10-09T06:38:17Z"}]'
+  snapshot_sha256: c5a2e44892335c4855cd6d6b9d830fe7bcfe9ae71a804cabfcaa162f7018f225
+- evidence_id: root-native-strict_ten
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-231/validate-strict-selected10-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-231/native-current231-five-gates-execution-001.json
+  accessed_at: '2026-11-03T21:45:24.517787Z'
+  support: supports
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  snapshot_sha256: b9cbdcc780498767fa6886409792cfedcdf872922813124081aff76c166efaab
+- evidence_id: root-native-strict_full
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-231/validate-all-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-231/native-current231-five-gates-execution-001.json
+  accessed_at: '2026-11-03T21:45:49.043451Z'
+  support: supports
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  snapshot_sha256: 0fd8658ae562b1dfcb46dc521794fb6cd3f0991f7fb047b756120acde0412b7a
+- evidence_id: root-native-lockfile
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-231/verify-corpus-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-231/native-current231-five-gates-execution-001.json
+  accessed_at: '2026-11-03T21:46:08.738233Z'
+  support: supports
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  snapshot_sha256: 254f171c7dff0f1ecbee5f47f75d2b7046143ae7fc499d9a1c08263e1c5125d8
+- evidence_id: root-native-reproduction
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-231/verify-reproduction-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-231/native-current231-five-gates-execution-001.json
+  accessed_at: '2026-11-03T21:46:42.527754Z'
+  support: supports
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  snapshot_sha256: cfc38f4e3f434e7f3651975f2cb228e5cda848476b2c53d1636d8746b794237a
+- evidence_id: root-native-queue
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-231/review-queue-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-231/native-current231-five-gates-execution-001.json
+  accessed_at: '2026-11-03T21:46:54.303959Z'
+  support: supports
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  snapshot_sha256: e760c01e6aac640808752417dde3e98f774512d6edde19a22ad69372e87adaeb
+assessments:
+- assessment_id: support-2308-identity
+  area: identity
+  topic: Identity
+  outcome: supported
+  summary: The minted owner naturalproductmech:mibig-3835812e03 preserves complete
+    key MSKFOQCDNOFJAT-SOFYXZRVSA-N from BGC0000677 version 5 compound index 1. Its
+    exact retained ChEBI structure join is empty; PubChem:5467942 is not freshly verified.
+    The pathway product CHEBI:78370 has more fully specified stereochemistry and remains
+    a qualified pathway grounding, not an authorization to replace this owner key
+    or fill its undefined centres.
+  target_ids:
+  - naturalproductmech:mibig-3835812e03
+  evidence_ids:
+  - support-2308-grounding-owner
+  - support-2308-source-mibig_compounds
+  - support-2308-query-chebi_structures
+  - support-2308-chemistry
+  - support-2308-direct-contexts
+  dimensions:
+  - name: standard_inchi_key
+    value: MSKFOQCDNOFJAT-SOFYXZRVSA-N; exact partial-stereochemistry owner key.
+    definition: Exact full key; no name, first-block or congener substitution.
+    evidence_ids:
+    - support-2308-grounding-owner
+    - support-2308-source-mibig_compounds
+    - support-2308-query-chebi_structures
+    - support-2308-chemistry
+    - support-2308-direct-contexts
+  - name: grounding_scope
+    value: Minted exact MIBiG key; empty exact ChEBI structure join; more specific
+      pathway CHEBI:78370 does not replace the owner.
+    definition: Local grounding fidelity is distinct from fresh natural-identity verification.
+    evidence_ids:
+    - support-2308-grounding-owner
+    - support-2308-source-mibig_compounds
+    - support-2308-query-chebi_structures
+    - support-2308-chemistry
+    - support-2308-direct-contexts
+- assessment_id: support-2308-representation
+  area: representation
+  topic: Representation
+  outcome: supported
+  summary: Both saved forms are neutral C20H34O3 with 23 heavy atoms, 25 bonds, a
+    5/8/5 ring basis and three hydroxyls. Seven tetrahedral centres are unspecified
+    and one alkene is specified. Both saved bond tables encode STEREOZ; index-relative
+    Cis/Trans labels in potential-stereo descriptors differ with local ordering and
+    do not demonstrate an isomer mismatch. All ten comparisons are true and the original
+    correspondence is complete, while full_graph_identity_established remains false.
+    The retained false centre-completeness flag is consistent with this partial-stereochemistry
+    owner.
+  target_ids:
+  - naturalproductmech:mibig-3835812e03
+  evidence_ids:
+  - support-2308-grounding-owner
+  - support-2308-chemistry
+  - support-2308-topology
+  - support-2308-diagnostic-acceptance
+  - support-2308-structure-schema
+  - support-2308-stereo-method
+  dimensions:
+  - name: stereochemistry_scope
+    value: Seven unspecified tetrahedral centres and one specified Z alkene; local
+      Cis/Trans descriptor ordering is not an isomer conflict.
+    definition: Saved complete stereo/atom/bond interpretation, not an experimental
+      assignment or a new parse.
+    evidence_ids:
+    - support-2308-grounding-owner
+    - support-2308-chemistry
+    - support-2308-topology
+    - support-2308-diagnostic-acceptance
+    - support-2308-structure-schema
+    - support-2308-stereo-method
+  - name: representation_correspondence
+    value: All ten comparisons true and complete original correspondence; full_graph_identity_established
+      remains false.
+    definition: Normalized identifier agreement does not establish explicit full-graph
+      or natural-form identity.
+    evidence_ids:
+    - support-2308-grounding-owner
+    - support-2308-chemistry
+    - support-2308-topology
+    - support-2308-diagnostic-acceptance
+    - support-2308-structure-schema
+    - support-2308-stereo-method
+- assessment_id: support-2308-origin
+  area: provenance
+  topic: Origin
+  outcome: supported
+  summary: Streptomyces melanosporofaciens NCBITaxon:67327 is retained as BGC_CHARACTERIZED.
+    BGC0000677 version 5 is active, questionable and marked complete at the source-entry
+    level, with knockout, enzymatic-assay and heterologous-expression methods supporting
+    CLUSTER_DEMONSTRATED. Entry completeness is not complete scientific review. The
+    five S. albus occurrence rows and engineered E. coli expression hosts do not replace
+    the source producer or demonstrate native redox partnerships.
+  target_ids:
+  - naturalproductmech:mibig-3835812e03
+  evidence_ids:
+  - support-2308-origin-owner
+  - support-2308-source-mibig_compounds
+  - support-2308-cached-taxonomy
+  - support-2308-source-routes
+  - support-2308-direct-contexts
+  dimensions:
+  - name: taxon_scope
+    value: S. melanosporofaciens producer, S. albus occurrences and engineered E.
+      coli hosts have separate roles.
+    definition: Source taxa and cached labels preserve genus/species/strain scope;
+      no fresh ancestry or production inference.
+    evidence_ids:
+    - support-2308-origin-owner
+    - support-2308-source-mibig_compounds
+    - support-2308-cached-taxonomy
+    - support-2308-source-routes
+    - support-2308-direct-contexts
+  - name: producer_evidence
+    value: BGC_CHARACTERIZED for Streptomyces melanosporofaciens NCBITaxon:67327;
+      engineered hosts remain separate.
+    definition: Producer evidence is assessed separately from occurrence and locus
+      support.
+    evidence_ids:
+    - support-2308-origin-owner
+    - support-2308-source-mibig_compounds
+    - support-2308-cached-taxonomy
+    - support-2308-source-routes
+    - support-2308-direct-contexts
+  - name: locus_evidence
+    value: BGC0000677 version 5, active/questionable/complete entry; knockout/enzymatic/heterologous
+      methods; CLUSTER_DEMONSTRATED.
+    definition: Source version/status/method/grade does not establish a complete pathway
+      or fresh primary support.
+    evidence_ids:
+    - support-2308-origin-owner
+    - support-2308-source-mibig_compounds
+    - support-2308-cached-taxonomy
+    - support-2308-source-routes
+    - support-2308-direct-contexts
+- assessment_id: support-2308-citations
+  area: evidence
+  topic: Citations
+  outcome: supported
+  summary: ENTRY PMID:19635410 supplies MIBiG provenance, while the CotB and engineered
+    AfR/Afx and PdR/Pdx graph edges retain their own primary-experiment and database
+    citations. The notes distinguish evidence from the pathway paper, engineered whole-cell
+    comparisons and accession/sequence databases. Repetition across edges and history
+    does not create independent experiments; primary texts, constructs and database
+    records were not freshly accessed.
+  target_ids:
+  - naturalproductmech:mibig-3835812e03
+  evidence_ids:
+  - support-2308-origin-owner
+  - support-2308-occurrence-owner
+  - support-2308-source-mibig_compounds
+  - support-2308-source-lotus_occurrences
+  - support-2308-source-notes
+  - support-2308-graph-0
+  - support-2308-graph-1
+  - support-2308-graph-2
+  - support-2308-pathway-0
+  - support-2308-pathway-1
+  - support-2308-pathway-2
+  - support-2308-history
+  dimensions:
+  - name: citation_scope
+    value: ENTRY PMID:19635410 and separate CotB/engineered-redox primary and database
+      evidence; unresolved figure/construct details retained.
+    definition: Database provenance, historical primary-experiment support and occurrence
+      citations retain distinct roles; no publication independence or fresh source
+      access is assumed.
+    evidence_ids:
+    - support-2308-origin-owner
+    - support-2308-occurrence-owner
+    - support-2308-source-mibig_compounds
+    - support-2308-source-lotus_occurrences
+    - support-2308-source-notes
+    - support-2308-graph-0
+    - support-2308-graph-1
+    - support-2308-graph-2
+    - support-2308-pathway-0
+    - support-2308-pathway-1
+    - support-2308-pathway-2
+    - support-2308-history
+- assessment_id: support-2308-bioactivity
+  area: evidence
+  topic: Occurrence and activity
+  outcome: supported
+  summary: Five exact LOTUS rows record S. albus NCBITaxon:1888 occurrences with their
+    literal references. They are occurrence assertions rather than five independent
+    production experiments. The exact saved PubChem, BindingDB and AntibioticMech
+    joins are empty, and there is no written molecular target or quantitative activity
+    observation to promote. The engineered redox-support experiments concern biosynthetic
+    production in their stated constructs and conditions, not compound pharmacology.
+  target_ids:
+  - naturalproductmech:mibig-3835812e03
+  evidence_ids:
+  - support-2308-grounding-owner
+  - support-2308-occurrence-owner
+  - support-2308-assay-owner
+  - support-2308-source-routes
+  - support-2308-cached-taxonomy
+  - support-2308-query-lotus_occurrences
+  - support-2308-source-lotus_occurrences
+  - support-2308-query-chebi_origins
+  - support-2308-query-cyanometdb_occurrences
+  - support-2308-query-pubchem_bioassay
+  - support-2308-query-bindingdb_targets
+  - support-2308-query-antibioticmech_inchikeys
+  - support-2308-direct-contexts
+  dimensions:
+  - name: occurrence_scope
+    value: Five retained S. albus LOTUS placements with literal references, not five
+      independent production demonstrations.
+    definition: Occurrence assertions are not counts of independent experiments or
+      producers.
+    evidence_ids:
+    - support-2308-grounding-owner
+    - support-2308-occurrence-owner
+    - support-2308-assay-owner
+    - support-2308-source-routes
+    - support-2308-cached-taxonomy
+    - support-2308-query-lotus_occurrences
+    - support-2308-source-lotus_occurrences
+    - support-2308-query-chebi_origins
+    - support-2308-query-cyanometdb_occurrences
+    - support-2308-query-pubchem_bioassay
+    - support-2308-query-bindingdb_targets
+    - support-2308-query-antibioticmech_inchikeys
+    - support-2308-direct-contexts
+  - name: assay_target_scope
+    value: No written compound activity/target and bounded empty exact joins; whole-cell
+      biosynthesis is not pharmacology.
+    definition: Written claims and exact retained assay/target routes are bounded;
+      no global biological absence claim.
+    evidence_ids:
+    - support-2308-grounding-owner
+    - support-2308-occurrence-owner
+    - support-2308-assay-owner
+    - support-2308-source-routes
+    - support-2308-cached-taxonomy
+    - support-2308-query-lotus_occurrences
+    - support-2308-source-lotus_occurrences
+    - support-2308-query-chebi_origins
+    - support-2308-query-cyanometdb_occurrences
+    - support-2308-query-pubchem_bioassay
+    - support-2308-query-bindingdb_targets
+    - support-2308-query-antibioticmech_inchikeys
+    - support-2308-direct-contexts
+- assessment_id: support-2308-classification
+  area: consistency
+  topic: Classification
+  outcome: supported
+  summary: The retained NPClassifier prediction is Terpenoids / Diterpenoids / Fusicoccane
+    diterpenoids with glycoside:false. The C20 5/8/5 tricyclic topology and three
+    hydroxyls are compatible with broad diterpenoid filing and no saved sugar unit,
+    while the named model class remains a versioned prediction. MIBiG TERPENE and
+    compound Diterpene labels are separately retained. None supplies the seven missing
+    tetrahedral assignments.
+  target_ids:
+  - naturalproductmech:mibig-3835812e03
+  evidence_ids:
+  - support-2308-classification-owner
+  - support-2308-source-npclassifier
+  - support-2308-query-npclassifier
+  - support-2308-source-mibig_compounds
+  - support-2308-grounding-owner
+  - support-2308-topology
+  - support-2308-classification-seeder
+  dimensions:
+  - name: classification_applicability
+    value: Fusicoccane diterpenoids and glycoside:false remain versioned predictions;
+      no inferred missing stereochemistry.
+    definition: Model filing labels, observed topology and source BGC classes remain
+      distinct axes.
+    evidence_ids:
+    - support-2308-classification-owner
+    - support-2308-source-npclassifier
+    - support-2308-query-npclassifier
+    - support-2308-source-mibig_compounds
+    - support-2308-grounding-owner
+    - support-2308-topology
+    - support-2308-classification-seeder
+- assessment_id: support-2308-mechanism
+  area: graph
+  topic: Mechanism
+  outcome: supported
+  summary: The accepted maintained reader preserves three graphs with 17 nodes and
+    15 edges in total, three pathway entries and six history events, with no components
+    or molecular targets. The CotB graph retains CotB2, CotB3 and CotB4 steps separately.
+    The AfR/Afx and PdR/Pdx graphs retain paired whole-cell support under their engineered
+    conditions; they do not prove native partner identity, individual sufficiency,
+    a physical complex or purified electron transfer. The PdR/Pdx notes preserve qualitative
+    minor product with the wild-type pair and increased CotB4-associated product with
+    the tested W106E-labelled variant without an invented numeric superiority. A lack
+    of detected CotB3-associated product in that condition is not universal inactivity.
+    The CotB3/CotB4 caption inconsistency and duplicated D38E-labelled lanes remain
+    unresolved; no new lane assignment or densitometry is asserted.
+  target_ids:
+  - naturalproductmech:mibig-3835812e03
+  evidence_ids:
+  - support-2308-reader-DATA
+  - support-2308-reader-execution
+  - support-2308-reader-acceptance
+  - support-2308-graph-0
+  - support-2308-graph-1
+  - support-2308-graph-2
+  - support-2308-pathway-0
+  - support-2308-pathway-1
+  - support-2308-pathway-2
+  - support-2308-history
+  - support-2308-grounding-owner
+  dimensions: []
+- assessment_id: support-2308-proteins
+  area: grounding
+  topic: Proteins and constructs
+  outcome: supported
+  summary: CotB2 C9K1X5 / BAI44338.1, CotB3 C9K1X6 / BAI44339.1 and CotB4 C9K1X7 /
+    BAI44340.1 retain reaction groundings RHEA:41628, RHEA:56820 and RHEA:56824. The
+    engineered AfR S4M5B3 reference-versus-construct length/extra-Gly distinction
+    and Afx S4MH50 110-versus-107-residue MTN-deletion distinction remain explicit.
+    PdR P16640 reference 422 versus construct 423 residues plus Gly, and Pdx P00259
+    wild type versus paper W106E/canonical W107E are not conflated. The Pdx mature
+    2..107 scope and E/Q15 discrepancy remain qualified against the reference E. The
+    38-base primer/32-base match and terminal ATAATG sequence outside the inspected
+    S20 scope do not prove complete vector junctions, processing or exact stock identity.
+    These are retained historical sequence/construct notes, not fresh alignment or
+    experimental verification.
+  target_ids:
+  - naturalproductmech:mibig-3835812e03
+  evidence_ids:
+  - support-2308-reader-DATA
+  - support-2308-reader-execution
+  - support-2308-reader-acceptance
+  - support-2308-graph-0
+  - support-2308-graph-1
+  - support-2308-graph-2
+  - support-2308-pathway-0
+  - support-2308-pathway-1
+  - support-2308-pathway-2
+  - support-2308-history
+  - support-2308-grounding-owner
+  dimensions: []
+- assessment_id: support-2308-completion
+  area: completeness
+  topic: Scientific completion
+  outcome: unknown
+  summary: The complete retained owner, actual canonical intake, saved source payloads/cache
+    scope, both saved molecular forms and accepted maintained-reader result have been
+    assessed within their local contracts. Full QC, complete OAK authority coverage,
+    fresh primary-source/identifier verification and unresolved natural stereochemical
+    or construct-specific claims remain unavailable. No source/native-status/history
+    edit or new target execution is made; completion remains partial.
+  target_ids:
+  - naturalproductmech:mibig-3835812e03
+  evidence_ids:
+  - support-2308-owner
+  - support-2308-capture
+  - support-2308-intake
+  - support-2308-plan
+  - support-2308-intake-acceptance
+  - support-2308-inventory-acceptance
+  - support-2308-plan-acceptance
+  - support-2308-source-notes
+  - support-2308-curation-scope
+  - support-2308-diagnostic-execution
+  - support-2308-diagnostic-acceptance
+  - support-2308-native-acceptance
+  - support-2308-review-profile
+  - support-2308-review-skill
+  - support-2308-reader-DATA
+  - support-2308-reader-execution
+  - support-2308-reader-acceptance
+  - support-2308-graph-0
+  - support-2308-graph-1
+  - support-2308-graph-2
+  - support-2308-pathway-0
+  - support-2308-pathway-1
+  - support-2308-pathway-2
+  - support-2308-history
+  - support-2308-grounding-owner
+  dimensions:
+  - name: review_completion
+    value: 'Partial scientific completion: local evidence and accepted reader preservation
+      assessed; Full QC/OAK/live primary/identity verification unavailable.'
+    definition: Completion reflects actual evidence access and check coverage; parsing
+      and gate success are not scientific proof.
+    evidence_ids:
+    - support-2308-owner
+    - support-2308-capture
+    - support-2308-intake
+    - support-2308-plan
+    - support-2308-intake-acceptance
+    - support-2308-inventory-acceptance
+    - support-2308-plan-acceptance
+    - support-2308-source-notes
+    - support-2308-curation-scope
+    - support-2308-diagnostic-execution
+    - support-2308-diagnostic-acceptance
+    - support-2308-native-acceptance
+    - support-2308-review-profile
+    - support-2308-review-skill
+    - support-2308-reader-DATA
+    - support-2308-reader-execution
+    - support-2308-reader-acceptance
+    - support-2308-graph-0
+    - support-2308-graph-1
+    - support-2308-graph-2
+    - support-2308-pathway-0
+    - support-2308-pathway-1
+    - support-2308-pathway-2
+    - support-2308-history
+    - support-2308-grounding-owner
+findings: []
+actions: []
+limitations:
+- All evidence is retained locally. External identifiers, primary publications, taxonomy
+  and natural stereochemical assignments were not refreshed under the absolute no-request
+  instruction.
+- Full QC and complete OAK authority coverage remain unavailable. Original local gates
+  and successful stored parses establish only their stated mechanical scope.
+- Empty joins concern only exact saved predicates and snapshots. Shared loci, taxa
+  and citations do not transfer compound-specific production, activity, mechanism
+  or independent-study status.
+- Four original undefined-stereo warnings remain global and unassigned to records.
+  No additional molecular/YAML parse, source query or target invocation occurred during
+  scientific authoring.
+- No source record, native curation status or history is edited. Any later correction
+  belongs to the maintained owners listed in the accepted canonical intake.
+- Accepted maintained-reader equality establishes complete local owner preservation
+  only. Protein-family/reaction grounding, historical construct notes and proposed
+  steps retain their explicit evidence limits.
+- The whole selected owner was read, but scientific completion is partial because
+  full QC, complete ontology authority coverage and external source verification were
+  unavailable. No native status or history was changed.
+- The branch uses cached base ce6a5498df5be51116bd5e0c119023ee62bb5464. Fresh origin/main
+  verification and publication are deferred because the user prohibits all external
+  requests.
+notes:
+- Complete owner/history and actual canonical intake were read; matching source payloads,
+  full cached stanzas and companion attribution are retained in the pinned source
+  notes.
+- 'Support personally read all six saved forms for these three owners: 154 atom rows
+  and 166 bond rows plus every scalar, ring, stereo, motif and original mapping/comparison
+  field. The Cyslabdan A manual witness is separate from the original failed map.'
+- ROOT operated original activation/capture and independently accepted the maintained
+  results; Support operated original canonical intakes; Native operated original gates,
+  chemistry and all three maintained readers; BGC operated original collector/composer.
+  No new target was invoked during these assessments.
+- Saved review coverage is distinct from the native SEEDED/REVIEWED curation state.
+  Proposed actions are not performed edits.
+tags:
+- offline
+- record-review
+- batch-231
+```
