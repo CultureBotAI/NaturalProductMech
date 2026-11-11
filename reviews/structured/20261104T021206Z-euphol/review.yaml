@@ -1,0 +1,1490 @@
+schema_version: 1.0.0
+review_id: 20261104T021206Z-euphol
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'Local evidence review: euphol'
+started_at: '2026-11-04T01:29:01.326578Z'
+finished_at: '2026-11-04T02:12:06.159638Z'
+reviewer:
+  identity: Codex root with native_checks, bgc_science and review_support peer agents
+  kind: agent
+  independence: independent
+  independence_basis: This review team inspected existing owner and retained source
+    bytes without editing them; scientific fragments were cross-checked separately
+    from their author. Local validation is not treated as scientific proof.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: Euphol preserves a specified C30 tetracyclic representation, source-characterized
+  Arabidopsis locus and all retained occurrence scope. The 53 raw occurrence rows
+  exceed the written 25-row boundary without implying independent production studies;
+  review remains partial.
+source:
+  git_revision: ce6a5498df5be51116bd5e0c119023ee62bb5464
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: AGENTS.md
+    sha256: 69e4037f8dc97d4b00bb7bb83b41ceca025f6ef578d5c0bf8086f3400becde0b
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/terpenoids/euphol.yaml
+    sha256: 6e8fe49a87ecfa07aea10e9bcad1d3540127582214a646a3f5cf88bb45888f72
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete NaturalProductRecord, including all present scientific
+    claims, history and declared mechanisms; external verification remains unavailable.
+  selection: Campaign path order 2324; one of the next ten uncovered paths selected
+    from the 3116-record corpus. Membership uses the canonical validated catalogue
+    plus retained committed campaign bundles.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-21e4f2495f
+targets:
+- target_id: naturalproductmech:mibig-21e4f2495f
+  path: data/natural_products/terpenoids/euphol.yaml
+  label: euphol
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained harmonization generator; seeded fields are corrected through
+      maintained inputs and validated regeneration.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Retained MIBiG structure, producer and compound-specific locus assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/npclassifier.tsv
+    role: Pinned computed classification and filing assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Maintained extraction of MIBiG compound names, structures, stereochemistry
+      flags and source provenance.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Retained cited occurrence assertions, distinct from demonstrated production.
+  ownership_note: This review proposes no record edit. Source corrections belong in
+    maintained inventories, implemented curation tables, extractors or the seeder;
+    generated pages are not owners.
+checks:
+- check_id: root-native-strict_ten
+  name: strict_ten
+  status: passed
+  required: true
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  target_ids:
+  - naturalproductmech:mibig-21e4f2495f
+  command: just validate-strict data/natural_products/terpenoids/ent-quiannulatene.yaml
+    data/natural_products/terpenoids/enterocin.yaml data/natural_products/terpenoids/eremophilene.yaml
+    data/natural_products/terpenoids/euphol.yaml data/natural_products/terpenoids/eutypinic-acid.yaml
+    data/natural_products/terpenoids/fumihopaside-a.yaml data/natural_products/terpenoids/fusarochromanone.yaml
+    data/natural_products/terpenoids/geosmin.yaml data/natural_products/terpenoids/gibberellin.yaml
+    data/natural_products/terpenoids/helvolic-acid.yaml --workers 1 --out /private/tmp/npm-native-checks/batch-233/validate-strict-selected10-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_ten
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-strict_full
+  name: strict_full
+  status: passed
+  required: true
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  target_ids:
+  - naturalproductmech:mibig-21e4f2495f
+  command: just validate-all --workers 1 --out /private/tmp/npm-native-checks/batch-233/validate-all-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_full
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-lockfile
+  name: lockfile
+  status: passed
+  required: true
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  target_ids:
+  - naturalproductmech:mibig-21e4f2495f
+  command: just verify-corpus --summary
+  exit_code: 0
+  evidence_ids:
+  - root-native-lockfile
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-reproduction
+  name: reproduction
+  status: passed
+  required: true
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  target_ids:
+  - naturalproductmech:mibig-21e4f2495f
+  command: just verify-reproduction
+  exit_code: 0
+  evidence_ids:
+  - root-native-reproduction
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-queue
+  name: queue
+  status: passed
+  required: true
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  target_ids:
+  - naturalproductmech:mibig-21e4f2495f
+  command: just review-queue --tsv /private/tmp/npm-native-checks/batch-233/review-queue-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-queue
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-full-qc
+  name: Full just qc
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-21e4f2495f
+  summary: 'Not run under the external-request prohibition: the complete recipe includes
+    upstream vendored synchronization. The five executed local checks are recorded
+    separately.'
+- check_id: root-ontology-authorities
+  name: Complete OAK identifier/label authority check
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-21e4f2495f
+  summary: Complete offline ontology authority coverage was not established for this
+    run; no ontology retrieval or remote resolution was attempted. Retained taxonomy
+    evidence has only its explicitly stated local scope.
+- check_id: root-primary-and-live-sources
+  name: Primary literature and current structured database/identifier verification
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-21e4f2495f
+  summary: All external requests are prohibited by the user. Fresh database and identifier
+    verification and complete primary-literature coverage are unavailable. Any retained
+    original literature actually inspected is recorded separately with its historical
+    scope.
+evidence:
+- evidence_id: bgc-2324-owner
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/terpenoids/euphol.yaml
+  locator: Whole current owner plaintext and complete curation_history
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: Complete current owner and all 2 history entries; native curation_status
+    remains SEEDED.
+  snapshot_sha256: 6e8fe49a87ecfa07aea10e9bcad1d3540127582214a646a3f5cf88bb45888f72
+- evidence_id: bgc-2324-capture
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch233/owner-capture-DATA-001.json
+  locator: /records/3
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: Complete captured owner preserves every written field/history; selected
+    maintained-reader applicability is false and no component reference is declared.
+  snapshot_sha256: 172447fb6267d84895ab4baa33cb1fba300712693dce13182a44712ad73b6927
+- evidence_id: bgc-2324-intake
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch233/intakes/2324-inspect-001.json
+  locator: /status; /repository; /source; /targets
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: Actual canonical intake for naturalproductmech:mibig-21e4f2495f; 37 pinned
+    input placements and explicit maintained source/curator ownership.
+  snapshot_sha256: 3c9c934fa146b5830774a105e85d97afdf9bf7bf3374d5790e2ef8ae1dac46ac
+- evidence_id: bgc-2324-grounding-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch233/owner-capture-DATA-001.json
+  locator: /records/3/owner_document
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: 'Complete written field projection; absence is bounded by the complete
+    captured owner: {"chemical_structure":{"smiles":"C[C@H](CCC=C(C)C)[C@@H]1CC[C@]2([C@]1(CCC3=C2CC[C@@H]4[C@@]3(CC[C@@H](C4(C)C)O)C)C)C","standard_inchi":"InChI=1S/C30H50O/c1-20(2)10-9-11-21(3)22-14-18-30(8)24-12-13-25-27(4,5)26(31)16-17-28(25,6)23(24)15-19-29(22,30)7/h10,21-22,25-26,31H,9,11-19H2,1-8H3/t21-,22+,25+,26+,28-,29+,30-/m1/s1","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","stereo_complete":true,"structure_source":"MIBIG","structure_source_id":"mibig:BGC0002401"},"grounding_notes":"No
+    3-star ChEBI entry shares this structure, so the record keeps a content-hashed
+    identifier.","grounding_status":"MINTED","identifier":"naturalproductmech:mibig-21e4f2495f","label":"euphol","source_concepts":[{"minted_identifier":"naturalproductmech:mibig-21e4f2495f","source":"MIBIG","source_id":"BGC0002401","source_label":"euphol","source_version":"2"}],"xrefs":["pubchem:441678","CHEBI:4940"]}'
+  snapshot_sha256: 172447fb6267d84895ab4baa33cb1fba300712693dce13182a44712ad73b6927
+- evidence_id: bgc-2324-origin-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch233/owner-capture-DATA-001.json
+  locator: /records/3/owner_document
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: 'Complete written field projection; absence is bounded by the complete
+    captured owner: {"biosynthetic_gene_clusters":[{"accession":"mibig:BGC0002401","bgc_class":["TERPENE"],"entry_status":"active","entry_version":"2","evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"MIBiG
+    BGC0002401 entry version 2; citation taken from the compound evidence level","reference":"DOI:10.1111/nph.16338"}],"genome_accession":"genbank:CP002686.1","link_evidence_basis":"CLUSTER_DEMONSTRATED","locus_evidence_methods":["Knock-out
+    studies","Heterologous expression"],"locus_from":19428888,"locus_to":19461706,"organism_label":"Arabidopsis
+    thaliana","organism_taxon_id":"NCBITaxon:3702"}],"producer_organisms":[{"biosynthetic_gene_cluster":"mibig:BGC0002401","evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"MIBiG
+    BGC0002401 entry version 2; citation taken from the compound evidence level","reference":"DOI:10.1111/nph.16338"}],"evidence_basis":"BGC_CHARACTERIZED","notes":"Locus
+    evidence: Knock-out studies|Heterologous expression. That evidence grades the
+    LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.","source":"MIBIG","source_version":"2","taxon_id":"NCBITaxon:3702","taxon_label":"Arabidopsis
+    thaliana"}],"producer_taxon_groups":["LAND_PLANT"],"source_concepts":[{"minted_identifier":"naturalproductmech:mibig-21e4f2495f","source":"MIBIG","source_id":"BGC0002401","source_label":"euphol","source_version":"2"}]}'
+  snapshot_sha256: 172447fb6267d84895ab4baa33cb1fba300712693dce13182a44712ad73b6927
+- evidence_id: bgc-2324-occurrence-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch233/owner-capture-DATA-001.json
+  locator: /records/3/owner_document
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: 'Complete written field projection; absence is bounded by the complete
+    captured owner: {"grounding_notes":"No 3-star ChEBI entry shares this structure,
+    so the record keeps a content-hashed identifier.","occurrence_taxon_groups":["LAND_PLANT"],"occurrences":[{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.","reference":"DOI:10.1055/S-2006-959736"}],"notes":"Wikidata
+    organism http://www.wikidata.org/entity/Q1994224","source":"LOTUS","taxon_id":"NCBITaxon:1087772","taxon_label":"Euphorbia
+    nicaeensis","taxon_source":"NCBITaxon"},{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.","reference":"DOI:10.1021/NP50116A020"}],"notes":"Wikidata
+    organism http://www.wikidata.org/entity/Q5851404","source":"LOTUS","taxon_id":"NCBITaxon:1091613","taxon_label":"Euphorbia
+    boetica","taxon_source":"NCBITaxon"},{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.","reference":"DOI:10.1016/S0031-9422(00)82286-4"}],"notes":"Wikidata
+    organism http://www.wikidata.org/entity/Q5851817","source":"LOTUS","taxon_id":"NCBITaxon:1091639","taxon_label":"Euphorbia
+    oxyphylla","taxon_source":"NCBITaxon"},{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.","reference":"DOI:10.1016/0031-9422(73)80529-1"}],"notes":"Wikidata
+    organism http://www.wikidata.org/entity/Q15388877","source":"LOTUS","taxon_id":"NCBITaxon:1091645","taxon_label":"Euphorbia
+    retusa","taxon_source":"NCBITaxon"},{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.","reference":"DOI:10.1016/0031-9422(73)80529-1"}],"notes":"Wikidata
+    organism http://www.wikidata.org/entity/Q5851932","source":"LOTUS","taxon_id":"NCBITaxon:1091647","taxon_label":"Euphorbia
+    sulcata","taxon_source":"NCBITaxon"},{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.","reference":"DOI:10.1016/S0031-9422(00)97902-0"}],"notes":"Wikidata
+    organism http://www.wikidata.org/entity/Q5851474","source":"LOTUS","taxon_id":"NCBITaxon:1129975","taxon_label":"Euphorbia
+    caducifolia","taxon_source":"NCBITaxon"},{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.","reference":"DOI:10.1016/0031-9422(95)00752-0"}],"notes":"Wikidata
+    organism http://www.wikidata.org/entity/Q15389869","source":"LOTUS","taxon_id":"NCBITaxon:1138358","taxon_label":"Euphorbia
+    portulacoides","taxon_source":"NCBITaxon"},{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.","reference":"DOI:10.1016/J.PHYTOL.2011.04.001"}],"notes":"Wikidata
+    organism http://www.wikidata.org/entity/Q15391190","source":"LOTUS","taxon_id":"NCBITaxon:1281384","taxon_label":"Euphorbia
+    sapinii","taxon_source":"NCBITaxon"},{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.","reference":"DOI:10.1016/0031-9422(95)00361-A"}],"notes":"Wikidata
+    organism http://www.wikidata.org/entity/Q12230481","source":"LOTUS","taxon_id":"NCBITaxon:1333886","taxon_label":"Euphorbia
+    aleppica","taxon_source":"NCBITaxon"},{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.","reference":"DOI:10.1021/NP50006A011"}],"notes":"Wikidata
+    organism http://www.wikidata.org/entity/Q883685","source":"LOTUS","taxon_id":"NCBITaxon:142860","taxon_label":"Euphorbia
+    tirucalli","taxon_source":"NCBITaxon"},{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.","reference":"DOI:10.1515/ZNC-1985-9-1008"}],"notes":"Wikidata
+    organism http://www.wikidata.org/entity/Q883685","source":"LOTUS","taxon_id":"NCBITaxon:142860","taxon_label":"Euphorbia
+    tirucalli","taxon_source":"NCBITaxon"},{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.","reference":"DOI:10.1016/0031-9422(88)83136-4"}],"notes":"Wikidata
+    organism http://www.wikidata.org/entity/Q1257890","source":"LOTUS","taxon_id":"NCBITaxon:1492770","taxon_label":"Euphorbia
+    trigona","taxon_source":"NCBITaxon"},{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.","reference":"DOI:10.1016/0031-9422(94)00642-7"}],"notes":"Wikidata
+    organism http://www.wikidata.org/entity/Q5775225","source":"LOTUS","taxon_id":"NCBITaxon:156472","taxon_label":"Clusia
+    multiflora","taxon_source":"NCBITaxon"},{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.","reference":"DOI:10.1590/S0103-50532004000300008"}],"notes":"Wikidata
+    organism http://www.wikidata.org/entity/Q18078662","source":"LOTUS","taxon_id":"NCBITaxon:1591303","taxon_label":"Dacryodes
+    hopkinsii","taxon_source":"NCBITaxon"},{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.","reference":"DOI:10.1021/NP970490H"}],"notes":"Wikidata
+    organism http://www.wikidata.org/entity/Q2590046","source":"LOTUS","taxon_id":"NCBITaxon:182300","taxon_label":"Camellia
+    sasanqua","taxon_source":"NCBITaxon"},{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.","reference":"DOI:10.1248/CPB.45.2016"}],"notes":"Wikidata
+    organism http://www.wikidata.org/entity/Q2590046","source":"LOTUS","taxon_id":"NCBITaxon:182300","taxon_label":"Camellia
+    sasanqua","taxon_source":"NCBITaxon"},{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.","reference":"DOI:10.1016/S0031-9422(98)00565-2"}],"notes":"Wikidata
+    organism http://www.wikidata.org/entity/Q15390872","source":"LOTUS","taxon_id":"NCBITaxon:198793","taxon_label":"Garcinia
+    cymosa","taxon_source":"NCBITaxon"},{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.","reference":"DOI:10.1080/14786419.2012.725399"}],"notes":"Wikidata
+    organism http://www.wikidata.org/entity/Q15390872","source":"LOTUS","taxon_id":"NCBITaxon:198793","taxon_label":"Garcinia
+    cymosa","taxon_source":"NCBITaxon"},{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.","reference":"DOI:10.1590/S0102-695X2008000100003"}],"notes":"Wikidata
+    organism http://www.wikidata.org/entity/Q15388761","source":"LOTUS","taxon_id":"NCBITaxon:211701","taxon_label":"Clusia
+    columnaris","taxon_source":"NCBITaxon"},{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.","reference":"DOI:10.1016/J.FITOTE.2007.02.002"}],"notes":"Wikidata
+    organism http://www.wikidata.org/entity/Q5851561","source":"LOTUS","taxon_id":"NCBITaxon:212879","taxon_label":"Euphorbia
+    drupifera","taxon_source":"NCBITaxon"},{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.","reference":"DOI:10.1104/PP.89.2.681"}],"notes":"Wikidata
+    organism http://www.wikidata.org/entity/Q164223","source":"LOTUS","taxon_id":"NCBITaxon:212925","taxon_label":"Euphorbia
+    lathyris","taxon_source":"NCBITaxon"},{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.","reference":"DOI:10.3390/MOLECULES24234322"}],"notes":"Wikidata
+    organism http://www.wikidata.org/entity/Q164223","source":"LOTUS","taxon_id":"NCBITaxon:212925","taxon_label":"Euphorbia
+    lathyris","taxon_source":"NCBITaxon"},{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.","reference":"DOI:10.1021/NP0205396"}],"notes":"Wikidata
+    organism http://www.wikidata.org/entity/Q15232469","source":"LOTUS","taxon_id":"NCBITaxon:239687","taxon_label":"Euphorbia
+    kansui","taxon_source":"NCBITaxon"},{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.","reference":"DOI:10.1055/S-2006-957574"}],"notes":"Wikidata
+    organism http://www.wikidata.org/entity/Q15232469","source":"LOTUS","taxon_id":"NCBITaxon:239687","taxon_label":"Euphorbia
+    kansui","taxon_source":"NCBITaxon"},{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.","reference":"DOI:10.1211/0022357001773607"}],"notes":"Wikidata
+    organism http://www.wikidata.org/entity/Q15232469 28 further cited occurrences
+    are recorded in data/raw/lotus_occurrences.tsv and data/raw/chebi_origins.tsv
+    but not written here: a record carrying hundreds of them cannot be reviewed. The
+    inventories are the complete record.","source":"LOTUS","taxon_id":"NCBITaxon:239687","taxon_label":"Euphorbia
+    kansui","taxon_source":"NCBITaxon"}]}'
+  snapshot_sha256: 172447fb6267d84895ab4baa33cb1fba300712693dce13182a44712ad73b6927
+- evidence_id: bgc-2324-assay-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch233/owner-capture-DATA-001.json
+  locator: /records/3/owner_document
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: 'Complete written field projection; absence is bounded by the complete
+    captured owner: {}'
+  snapshot_sha256: 172447fb6267d84895ab4baa33cb1fba300712693dce13182a44712ad73b6927
+- evidence_id: bgc-2324-classification-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch233/owner-capture-DATA-001.json
+  locator: /records/3/owner_document
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: 'Complete written field projection; absence is bounded by the complete
+    captured owner: {"bgc_class":["TERPENE"],"biosynthesis_origin":"NATURAL_PRODUCT","np_classification":{"class_results":["Lanostane,
+    Tirucallane and Euphane triterpenoids"],"is_glycoside":false,"pathway_results":["Terpenoids"],"superclass_results":["Triterpenoids"],"tool":"NPClassifier","tool_version":"npclassifier.gnps2.org@2026-09-07"},"np_pathway":"TERPENOIDS"}'
+  snapshot_sha256: 172447fb6267d84895ab4baa33cb1fba300712693dce13182a44712ad73b6927
+- evidence_id: bgc-2324-chemistry
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch233/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/3/declared_structure; /records/3/smiles/status; /records/3/inchi/status;
+    /records/3/smiles/computed; /records/3/inchi/computed; /records/3/comparisons;
+    /records/3/atom_correspondence
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: 'Both stored forms parsed. Exact original comparison/correspondence and
+    stereo values: {"atom_correspondence":{"complete_atom_count_match":true,"full_graph_identity_established":false,"scope":"One
+    chirality-aware substructure match; no independent full graph or natural identity
+    claim.","smiles_to_inchi_atom_indices":[2,20,10,8,9,19,0,1,21,13,17,29,28,18,14,22,23,11,12,24,27,16,15,25,26,3,4,30,5,6,7]},"comparisons":{"atom_count_equal":true,"bond_count_equal":true,"both_keys_equal_declared":true,"canonical_isomeric_smiles_equal":true,"canonical_nonisomeric_smiles_equal":true,"formal_charge_equal":true,"formula_equal":true,"smiles_formula_equals_literal_InChI_main_layer":true,"standard_inchi_equal":true,"standard_inchi_key_equal":true},"declared_structure":{"smiles":"C[C@H](CCC=C(C)C)[C@@H]1CC[C@]2([C@]1(CCC3=C2CC[C@@H]4[C@@]3(CC[C@@H](C4(C)C)O)C)C)C","standard_inchi":"InChI=1S/C30H50O/c1-20(2)10-9-11-21(3)22-14-18-30(8)24-12-13-25-27(4,5)26(31)16-17-28(25,6)23(24)15-19-29(22,30)7/h10,21-22,25-26,31H,9,11-19H2,1-8H3/t21-,22+,25+,26+,28-,29+,30-/m1/s1","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","stereo_complete":true,"structure_source":"MIBIG","structure_source_id":"mibig:BGC0002401"},"saved_stereo":{"inchi":{"Atom_Tetrahedral:Specified":7},"smiles":{"Atom_Tetrahedral:Specified":7}}}'
+  snapshot_sha256: 98d9bae4e307da83403d9b3e783897999469aca3e863fd37b097f1688bf1d4ee
+- evidence_id: bgc-2324-topology
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch233/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/3/smiles/computed; /records/3/inchi/computed; /records/3/declared_structure;
+    /records/3/literal_InChI_layers; /records/3/comparisons; /records/3/atom_correspondence
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: 'Complete saved topology interpretation: Both saved forms are neutral C30H50O
+    with 31 atoms, 34 bonds and a tetracyclic carbocyclic framework with saved basis
+    sizes 5,6,6,6. The single hydroxyl is SMILES 23–27, corresponding to InChI 25–30.
+    The side-chain alkene 4=5 has two methyl neighbours at atom 5, so that end does
+    not define an E/Z pair; the other alkene is 15=16. No potential double-bond stereo
+    slot is reported. Seven tetrahedral centres are specified and all ten comparisons
+    are true with complete atom-count correspondence; full_graph_identity_established
+    remains false. These saved forms do not establish natural purity or provide an
+    independent absolute-configuration measurement.'
+  snapshot_sha256: 98d9bae4e307da83403d9b3e783897999469aca3e863fd37b097f1688bf1d4ee
+- evidence_id: bgc-2324-diagnostic-execution
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch233/chemistry-local/diagnostic-execution-001.json
+  locator: Whole current diagnostic-execution
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: ROOT operated one original stored-form diagnostic, exit 0, one attempt,
+    preserved original streams and closed environment. This execution receipt is not
+    independent scientific verification.
+  snapshot_sha256: 589a14084b2981120032bfc10e40bb0105f2afda5e7300a7d5b296e1388951c4
+- evidence_id: bgc-2324-diagnostic-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch233/root-diagnostic-acceptance-001.json
+  locator: Whole current diagnostic-acceptance
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: ROOT accepts the original 20 stored parses and exact original comparisons/key/capture
+    joins. Two original undefined-stereo warnings remain global and unassigned. Acceptance
+    establishes local execution integrity, not natural identity or full graph proof.
+  snapshot_sha256: aa8d2b7772b4907ebb043566a7016cd09fa16acee7cd80d449a7292b9f787125
+- evidence_id: bgc-2324-native-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch233/root-native-gates-acceptance-001.json
+  locator: Whole current native-acceptance
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: Five original local gates passed; all_native_gates_passed is false because
+    full QC and complete OAK coverage are unavailable. Mechanical success is not a
+    scientific verdict.
+  snapshot_sha256: 7a2daeeecc690ede6862e80925055bb819c81ad72c293b2ab5f980a47ce0aa42
+- evidence_id: bgc-2324-intake-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch233/root-intake-acceptance-001.json
+  locator: Whole current intake-acceptance
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: ROOT accepts ten actual canonical intakes and exact current source ownership/input
+    plans; scientific assessment is separate.
+  snapshot_sha256: 3124e401a141d5fee52e3838ae8258cf2fc2b9c791050dfa2b6afd6ad1b308dd
+- evidence_id: bgc-2324-inventory-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch233/root-source-inventory-acceptance-001.json
+  locator: Whole current inventory-acceptance
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: ROOT accepts the original saved inventory and current input/raw/query/row
+    joins. Complete meaning reading is separately attributed in source notes.
+  snapshot_sha256: 8e3a8821fa52e78220f01f692579f368a6adb58d85d3624d16eeb7fa4c86b5e1
+- evidence_id: bgc-2324-plan-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch233/root-input-plan-acceptance-001.json
+  locator: Whole current plan-acceptance
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: ROOT accepts the actual input plan and preserved source contexts, without
+    a scientific verdict.
+  snapshot_sha256: 4d76cf85f5594ce1d2b1990f9a8a3a1abbb6d2da1c9bc45456497364a4602999
+- evidence_id: bgc-2324-plan
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch233-tentative/bgc-prep/bgc-conditional233-target-input-plan-001.json
+  locator: /records/3
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: Current one-record input plan with exact direct companions, predicates
+    and input roles.
+  snapshot_sha256: bc361ca0270b857063f610d29fdc2c498e2ccf208d5f8ae3c0033c044923fe27
+- evidence_id: bgc-2324-source-notes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch233-tentative/bgc-prep/bgc-conditional233-source-scope-notes-001.json
+  locator: /reading; /cautions; /scientific_limits
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: Complete disjoint source/raw-history reading and exact carries, with compound-specific
+    cautions; source planning did not adjudicate pre-intake science.
+  snapshot_sha256: 98c23811517a583723d42fb365b4549d207753a27bd0e0c6654e836596cfad99
+- evidence_id: bgc-2324-curation-scope
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch233-tentative/bgc-prep/bgc-conditional233-source-scope-notes-001.json
+  locator: /curation
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: Eight explicitly opened implemented curation tables, including ignored
+    files, were scanned over 169 distinct exact literals with zero textual hits in
+    this bounded scope. Reserved decisions.tsv was not consumed.
+  snapshot_sha256: 98c23811517a583723d42fb365b4549d207753a27bd0e0c6654e836596cfad99
+- evidence_id: bgc-2324-query-mibig_compounds
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch233-tentative/bgc-prep/bgc-conditional233-source-inventory-DATA-001.json
+  locator: /contexts/20/source_scope_inventory/joins/mibig_compounds
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: 'Complete retained query frame, exact predicate and all matches/no-match
+    fields: {"matches":[{"last_physical_line":2950,"physical_line":2950,"raw_tsv_record":"BGC0002401\t2\tactive\tquestionable\tunknown\teuphol\t1\tC[C@H](CCC=C(C)C)[C@@H]1CC[C@]2([C@]1(CCC3=C2CC[C@@H]4[C@@]3(CC[C@@H](C4(C)C)O)C)C)C\tInChI=1S/C30H50O/c1-20(2)10-9-11-21(3)22-14-18-30(8)24-12-13-25-27(4,5)26(31)16-17-28(25,6)23(24)15-19-29(22,30)7/h10,21-22,25-26,31H,9,11-19H2,1-8H3/t21-,22+,25+,26+,28-,29+,30-/m1/s1\tCAHGCLMLTWQZNJ-WZLOIPHISA-N\ttrue\t\tpubchem:441678|chebi:4940\tNCBITaxon:3702\tArabidopsis
+    thaliana\tterpene\tUnknown\tCP002686.1\t19428888\t19461706\tKnock-out studies|Heterologous
+    expression\tBGC_CHARACTERIZED\tCLUSTER_DEMONSTRATED\tDOI:10.1111/nph.16338\tCOMPOUND_EVIDENCE\n","row":{"bgc_classes":"terpene","bgc_subclasses":"Unknown","cluster_link_evidence_basis":"CLUSTER_DEMONSTRATED","compound_classes":"","compound_index":"1","compound_name":"euphol","database_ids":"pubchem:441678|chebi:4940","entry_completeness":"unknown","entry_quality":"questionable","entry_status":"active","entry_version":"2","genome_accession":"CP002686.1","locus_evidence_methods":"Knock-out
+    studies|Heterologous expression","locus_from":"19428888","locus_to":"19461706","mibig_accession":"BGC0002401","primary_reference":"DOI:10.1111/nph.16338","producer_evidence_basis":"BGC_CHARACTERIZED","reference_basis":"COMPOUND_EVIDENCE","smiles":"C[C@H](CCC=C(C)C)[C@@H]1CC[C@]2([C@]1(CCC3=C2CC[C@@H]4[C@@]3(CC[C@@H](C4(C)C)O)C)C)C","standard_inchi":"InChI=1S/C30H50O/c1-20(2)10-9-11-21(3)22-14-18-30(8)24-12-13-25-27(4,5)26(31)16-17-28(25,6)23(24)15-19-29(22,30)7/h10,21-22,25-26,31H,9,11-19H2,1-8H3/t21-,22+,25+,26+,28-,29+,30-/m1/s1","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","stereo_complete":"true","taxon_id":"NCBITaxon:3702","taxon_label":"Arabidopsis
+    thaliana"},"row_sha256":"a969183621687e8b1f40cf9c7b4431645c6b30552d50665c2127f140700c92dd"}],"predicate":"exact
+    complete standard_inchi_key equality","query":"CAHGCLMLTWQZNJ-WZLOIPHISA-N"}'
+  snapshot_sha256: 4b0d3e3da384d400278579bca7fdc555ccf50e16fc29eaed319dba5fdfd8873e
+- evidence_id: bgc-2324-source-mibig_compounds
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv
+  locator: Header line 1; physical lines 2950–2950, row_sha256 a969183621687e8b1f40cf9c7b4431645c6b30552d50665c2127f140700c92dd
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: 'Complete retained physical row payloads, every field: [{"bgc_classes":"terpene","bgc_subclasses":"Unknown","cluster_link_evidence_basis":"CLUSTER_DEMONSTRATED","compound_classes":"","compound_index":"1","compound_name":"euphol","database_ids":"pubchem:441678|chebi:4940","entry_completeness":"unknown","entry_quality":"questionable","entry_status":"active","entry_version":"2","genome_accession":"CP002686.1","locus_evidence_methods":"Knock-out
+    studies|Heterologous expression","locus_from":"19428888","locus_to":"19461706","mibig_accession":"BGC0002401","primary_reference":"DOI:10.1111/nph.16338","producer_evidence_basis":"BGC_CHARACTERIZED","reference_basis":"COMPOUND_EVIDENCE","smiles":"C[C@H](CCC=C(C)C)[C@@H]1CC[C@]2([C@]1(CCC3=C2CC[C@@H]4[C@@]3(CC[C@@H](C4(C)C)O)C)C)C","standard_inchi":"InChI=1S/C30H50O/c1-20(2)10-9-11-21(3)22-14-18-30(8)24-12-13-25-27(4,5)26(31)16-17-28(25,6)23(24)15-19-29(22,30)7/h10,21-22,25-26,31H,9,11-19H2,1-8H3/t21-,22+,25+,26+,28-,29+,30-/m1/s1","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","stereo_complete":"true","taxon_id":"NCBITaxon:3702","taxon_label":"Arabidopsis
+    thaliana"}]'
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: bgc-2324-query-chebi_structures
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch233-tentative/bgc-prep/bgc-conditional233-source-inventory-DATA-001.json
+  locator: /contexts/20/source_scope_inventory/joins/chebi_structures
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: 'Complete retained query frame, exact predicate and all matches/no-match
+    fields: {"matches":[],"predicate":"exact complete standard_inchi_key equality","query":"CAHGCLMLTWQZNJ-WZLOIPHISA-N"}'
+  snapshot_sha256: 4b0d3e3da384d400278579bca7fdc555ccf50e16fc29eaed319dba5fdfd8873e
+- evidence_id: bgc-2324-query-lotus_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch233-tentative/bgc-prep/bgc-conditional233-source-inventory-DATA-001.json
+  locator: /contexts/20/source_scope_inventory/joins/lotus_occurrences
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: 'Complete retained query frame, exact predicate and all matches/no-match
+    fields: {"matches":[{"last_physical_line":656,"physical_line":656,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tEuphorbia
+    nicaeensis\tNCBITaxon:1087772\thttp://www.wikidata.org/entity/Q1994224\t10.1055/S-2006-959736\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Euphorbia
+    nicaeensis","organism_wikidata":"http://www.wikidata.org/entity/Q1994224","reference_doi":"10.1055/S-2006-959736","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:1087772"},"row_sha256":"435ac77fb4b1e2d1bad48f340399d5013f47419ee145cbc8eca7dd8fa60ca559"},{"last_physical_line":657,"physical_line":657,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tEuphorbia
+    boetica\tNCBITaxon:1091613\thttp://www.wikidata.org/entity/Q5851404\t10.1021/NP50116A020\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Euphorbia
+    boetica","organism_wikidata":"http://www.wikidata.org/entity/Q5851404","reference_doi":"10.1021/NP50116A020","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:1091613"},"row_sha256":"af7b5cc6cad1cfe09991b5bd4979402dd5c2cc45be97bf9d2cd0e090912b5219"},{"last_physical_line":658,"physical_line":658,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tEuphorbia
+    oxyphylla\tNCBITaxon:1091639\thttp://www.wikidata.org/entity/Q5851817\t10.1016/S0031-9422(00)82286-4\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Euphorbia
+    oxyphylla","organism_wikidata":"http://www.wikidata.org/entity/Q5851817","reference_doi":"10.1016/S0031-9422(00)82286-4","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:1091639"},"row_sha256":"7121c2343ce264dae03774714d118fe97a955734da1809386e063875e01974f0"},{"last_physical_line":659,"physical_line":659,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tEuphorbia
+    retusa\tNCBITaxon:1091645\thttp://www.wikidata.org/entity/Q15388877\t10.1016/0031-9422(73)80529-1\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Euphorbia
+    retusa","organism_wikidata":"http://www.wikidata.org/entity/Q15388877","reference_doi":"10.1016/0031-9422(73)80529-1","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:1091645"},"row_sha256":"281330a08f4afb22397e75c5648d01efa8aec77b82d1eb5c8e0a10f05ce8154f"},{"last_physical_line":660,"physical_line":660,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tEuphorbia
+    sulcata\tNCBITaxon:1091647\thttp://www.wikidata.org/entity/Q5851932\t10.1016/0031-9422(73)80529-1\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Euphorbia
+    sulcata","organism_wikidata":"http://www.wikidata.org/entity/Q5851932","reference_doi":"10.1016/0031-9422(73)80529-1","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:1091647"},"row_sha256":"31a8b1d777d10297aeeaf0a94518adae703b1f1b3d2875bcc977ea88e9031681"},{"last_physical_line":661,"physical_line":661,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tEuphorbia
+    caducifolia\tNCBITaxon:1129975\thttp://www.wikidata.org/entity/Q5851474\t10.1016/S0031-9422(00)97902-0\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Euphorbia
+    caducifolia","organism_wikidata":"http://www.wikidata.org/entity/Q5851474","reference_doi":"10.1016/S0031-9422(00)97902-0","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:1129975"},"row_sha256":"99df16d2bdc7332c135f72e6100e2dd8dfe808e6036eefc362a950a86da2c623"},{"last_physical_line":662,"physical_line":662,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tEuphorbia
+    portulacoides\tNCBITaxon:1138358\thttp://www.wikidata.org/entity/Q15389869\t10.1016/0031-9422(95)00752-0\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Euphorbia
+    portulacoides","organism_wikidata":"http://www.wikidata.org/entity/Q15389869","reference_doi":"10.1016/0031-9422(95)00752-0","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:1138358"},"row_sha256":"6adb154b099c768fc0c02acbc6c9c908ad8da2ebad6013f5d86db955dcff8975"},{"last_physical_line":663,"physical_line":663,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tEuphorbia
+    sapinii\tNCBITaxon:1281384\thttp://www.wikidata.org/entity/Q15391190\t10.1016/J.PHYTOL.2011.04.001\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Euphorbia
+    sapinii","organism_wikidata":"http://www.wikidata.org/entity/Q15391190","reference_doi":"10.1016/J.PHYTOL.2011.04.001","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:1281384"},"row_sha256":"227fa20a54af83d780ff5962e56603ded88b7d23f5afa76305fe89ed77541b02"},{"last_physical_line":664,"physical_line":664,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tEuphorbia
+    aleppica\tNCBITaxon:1333886\thttp://www.wikidata.org/entity/Q12230481\t10.1016/0031-9422(95)00361-A\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Euphorbia
+    aleppica","organism_wikidata":"http://www.wikidata.org/entity/Q12230481","reference_doi":"10.1016/0031-9422(95)00361-A","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:1333886"},"row_sha256":"8b3d6105b52d39b6062f9484f2fb82e8e83150457f17405cc9558bd31318e01e"},{"last_physical_line":665,"physical_line":665,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tEuphorbia
+    tirucalli\tNCBITaxon:142860\thttp://www.wikidata.org/entity/Q883685\t10.1021/NP50006A011\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Euphorbia
+    tirucalli","organism_wikidata":"http://www.wikidata.org/entity/Q883685","reference_doi":"10.1021/NP50006A011","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:142860"},"row_sha256":"2e65509a9d9ce845f6fd921547221afcd0f21e36b94de4f44fe879270d91bf9a"},{"last_physical_line":666,"physical_line":666,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tEuphorbia
+    tirucalli\tNCBITaxon:142860\thttp://www.wikidata.org/entity/Q883685\t10.1515/ZNC-1985-9-1008\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Euphorbia
+    tirucalli","organism_wikidata":"http://www.wikidata.org/entity/Q883685","reference_doi":"10.1515/ZNC-1985-9-1008","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:142860"},"row_sha256":"8d97172a725321686116466a66d0bd44b167c4235492901ba693eff79be03d9d"},{"last_physical_line":667,"physical_line":667,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tEuphorbia
+    trigona\tNCBITaxon:1492770\thttp://www.wikidata.org/entity/Q1257890\t10.1016/0031-9422(88)83136-4\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Euphorbia
+    trigona","organism_wikidata":"http://www.wikidata.org/entity/Q1257890","reference_doi":"10.1016/0031-9422(88)83136-4","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:1492770"},"row_sha256":"a8a621307e63d7b2e5a8ffe0f696edafd52b35561b8aa6a9b40009738d62ea12"},{"last_physical_line":668,"physical_line":668,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tClusia
+    multiflora\tNCBITaxon:156472\thttp://www.wikidata.org/entity/Q5775225\t10.1016/0031-9422(94)00642-7\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Clusia
+    multiflora","organism_wikidata":"http://www.wikidata.org/entity/Q5775225","reference_doi":"10.1016/0031-9422(94)00642-7","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:156472"},"row_sha256":"4cbbaaf47ea6c456b7a6368e6f7e01d5ffbf2d0305dd1c1e4cc1fdd43ccda84d"},{"last_physical_line":669,"physical_line":669,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tDacryodes
+    hopkinsii\tNCBITaxon:1591303\thttp://www.wikidata.org/entity/Q18078662\t10.1590/S0103-50532004000300008\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Dacryodes
+    hopkinsii","organism_wikidata":"http://www.wikidata.org/entity/Q18078662","reference_doi":"10.1590/S0103-50532004000300008","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:1591303"},"row_sha256":"8323f1d5e42159801c9391db7405b1d6453151a11106cd3a7d4263147c405631"},{"last_physical_line":670,"physical_line":670,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tCamellia
+    sasanqua\tNCBITaxon:182300\thttp://www.wikidata.org/entity/Q2590046\t10.1021/NP970490H\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Camellia
+    sasanqua","organism_wikidata":"http://www.wikidata.org/entity/Q2590046","reference_doi":"10.1021/NP970490H","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:182300"},"row_sha256":"fb29d892a87a42da10a6674a675a83708c29144ffc453e455dbe2118dc16f516"},{"last_physical_line":671,"physical_line":671,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tCamellia
+    sasanqua\tNCBITaxon:182300\thttp://www.wikidata.org/entity/Q2590046\t10.1248/CPB.45.2016\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Camellia
+    sasanqua","organism_wikidata":"http://www.wikidata.org/entity/Q2590046","reference_doi":"10.1248/CPB.45.2016","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:182300"},"row_sha256":"c9c144a13c0ae693e563ace04e5e26b9e680003c27c3acf7b78eb590c5d1f3be"},{"last_physical_line":672,"physical_line":672,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tGarcinia
+    cymosa\tNCBITaxon:198793\thttp://www.wikidata.org/entity/Q15390872\t10.1016/S0031-9422(98)00565-2\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Garcinia
+    cymosa","organism_wikidata":"http://www.wikidata.org/entity/Q15390872","reference_doi":"10.1016/S0031-9422(98)00565-2","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:198793"},"row_sha256":"3ef8d33895142c77f74a93a1d168ab51468c475813bff83901b7b8642190bad6"},{"last_physical_line":673,"physical_line":673,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tGarcinia
+    cymosa\tNCBITaxon:198793\thttp://www.wikidata.org/entity/Q15390872\t10.1080/14786419.2012.725399\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Garcinia
+    cymosa","organism_wikidata":"http://www.wikidata.org/entity/Q15390872","reference_doi":"10.1080/14786419.2012.725399","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:198793"},"row_sha256":"10f09b44f710404b5578aeaaf619d4bf5c1d86a21fa2c7d34e37a550b56fe50d"},{"last_physical_line":674,"physical_line":674,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tClusia
+    columnaris\tNCBITaxon:211701\thttp://www.wikidata.org/entity/Q15388761\t10.1590/S0102-695X2008000100003\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Clusia
+    columnaris","organism_wikidata":"http://www.wikidata.org/entity/Q15388761","reference_doi":"10.1590/S0102-695X2008000100003","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:211701"},"row_sha256":"011b61a832469db2f224dca108613f6306948c01fb270890a66c33ec1e960542"},{"last_physical_line":675,"physical_line":675,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tEuphorbia
+    drupifera\tNCBITaxon:212879\thttp://www.wikidata.org/entity/Q5851561\t10.1016/J.FITOTE.2007.02.002\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Euphorbia
+    drupifera","organism_wikidata":"http://www.wikidata.org/entity/Q5851561","reference_doi":"10.1016/J.FITOTE.2007.02.002","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:212879"},"row_sha256":"2dfef813aaeaa6ac08ee7b37bc1aa3d0c66de5ce0f5fe1c84434c89516912096"},{"last_physical_line":676,"physical_line":676,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tEuphorbia
+    lathyris\tNCBITaxon:212925\thttp://www.wikidata.org/entity/Q164223\t10.1104/PP.89.2.681\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Euphorbia
+    lathyris","organism_wikidata":"http://www.wikidata.org/entity/Q164223","reference_doi":"10.1104/PP.89.2.681","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:212925"},"row_sha256":"1bc59f38d0b9da8430172d884480078dd5a757a9943a5e5ce99cb5ef680bd677"},{"last_physical_line":677,"physical_line":677,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tEuphorbia
+    lathyris\tNCBITaxon:212925\thttp://www.wikidata.org/entity/Q164223\t10.3390/MOLECULES24234322\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Euphorbia
+    lathyris","organism_wikidata":"http://www.wikidata.org/entity/Q164223","reference_doi":"10.3390/MOLECULES24234322","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:212925"},"row_sha256":"9e1919c5579e985adc7fcb1769807c5ab8f72edb5258fcaea5f26d2b6cd344d9"},{"last_physical_line":678,"physical_line":678,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tEuphorbia
+    kansui\tNCBITaxon:239687\thttp://www.wikidata.org/entity/Q15232469\t10.1021/NP0205396\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Euphorbia
+    kansui","organism_wikidata":"http://www.wikidata.org/entity/Q15232469","reference_doi":"10.1021/NP0205396","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:239687"},"row_sha256":"3c01f277001c22923150716b3b7a6fc8bbdb78c843ca340832b73abca99f2d38"},{"last_physical_line":679,"physical_line":679,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tEuphorbia
+    kansui\tNCBITaxon:239687\thttp://www.wikidata.org/entity/Q15232469\t10.1055/S-2006-957574\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Euphorbia
+    kansui","organism_wikidata":"http://www.wikidata.org/entity/Q15232469","reference_doi":"10.1055/S-2006-957574","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:239687"},"row_sha256":"5479109e23dff37d5d1ee73cb31a05271bbab5f87f0c12846ca29f0a1b377640"},{"last_physical_line":680,"physical_line":680,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tEuphorbia
+    kansui\tNCBITaxon:239687\thttp://www.wikidata.org/entity/Q15232469\t10.1211/0022357001773607\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Euphorbia
+    kansui","organism_wikidata":"http://www.wikidata.org/entity/Q15232469","reference_doi":"10.1211/0022357001773607","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:239687"},"row_sha256":"7085c56dc6a6964e1186ea36acacaa8432233d70d0bc6605975bb09064ca21b8"},{"last_physical_line":681,"physical_line":681,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tEuphorbia
+    kansui\tNCBITaxon:239687\thttp://www.wikidata.org/entity/Q15232469\t10.38212/2224-6614.2818\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Euphorbia
+    kansui","organism_wikidata":"http://www.wikidata.org/entity/Q15232469","reference_doi":"10.38212/2224-6614.2818","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:239687"},"row_sha256":"d5c82dc8c3dc93825b3cd97ae319d1f6787dc04b981a7ed1d5c44296bb942ac1"},{"last_physical_line":682,"physical_line":682,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tVitellaria
+    paradoxa\tNCBITaxon:292385\thttp://www.wikidata.org/entity/Q1348567\t10.1007/BF02534064\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Vitellaria
+    paradoxa","organism_wikidata":"http://www.wikidata.org/entity/Q1348567","reference_doi":"10.1007/BF02534064","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:292385"},"row_sha256":"ffdac8fba7d68db4bde967f0d82537daed29be4905ebf3582ec6277ec17cf1c6"},{"last_physical_line":683,"physical_line":683,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tVigna
+    cylindrica\tNCBITaxon:3091605\thttp://www.wikidata.org/entity/Q15527788\t10.1016/S0031-9422(00)94844-1\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Vigna
+    cylindrica","organism_wikidata":"http://www.wikidata.org/entity/Q15527788","reference_doi":"10.1016/S0031-9422(00)94844-1","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:3091605"},"row_sha256":"6c3d2421fbf62683158afc30762a3139a97d0514d0f43ec44878c92e37dbbb34"},{"last_physical_line":684,"physical_line":684,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tEuphorbia
+    abyssinica\tNCBITaxon:316813\thttp://www.wikidata.org/entity/Q3734564\t10.1016/S0031-9422(97)01065-0\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Euphorbia
+    abyssinica","organism_wikidata":"http://www.wikidata.org/entity/Q3734564","reference_doi":"10.1016/S0031-9422(97)01065-0","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:316813"},"row_sha256":"009fa079d23f1238e708e3cecd06372cb82e5cc4d288e683b2e5bab364a5627e"},{"last_physical_line":685,"physical_line":685,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tEuphorbia
+    antiquorum\tNCBITaxon:334664\thttp://www.wikidata.org/entity/Q419654\t10.1016/0031-9422(90)80134-3\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Euphorbia
+    antiquorum","organism_wikidata":"http://www.wikidata.org/entity/Q419654","reference_doi":"10.1016/0031-9422(90)80134-3","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:334664"},"row_sha256":"73c630d1c46491f859cbff04e09d6c460fedf6471fdeba30f1a5038731a35684"},{"last_physical_line":686,"physical_line":686,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tEuphorbia
+    antiquorum\tNCBITaxon:334664\thttp://www.wikidata.org/entity/Q419654\t10.1021/NP010377Y\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Euphorbia
+    antiquorum","organism_wikidata":"http://www.wikidata.org/entity/Q419654","reference_doi":"10.1021/NP010377Y","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:334664"},"row_sha256":"fcbb5bcbb3e77dab5be1c8cdd80be008e7471b54699290e735ccf58a10f64498"},{"last_physical_line":687,"physical_line":687,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tEuphorbia
+    neriifolia\tNCBITaxon:334689\thttp://www.wikidata.org/entity/Q9256163\t10.1080/1057563031000122068\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Euphorbia
+    neriifolia","organism_wikidata":"http://www.wikidata.org/entity/Q9256163","reference_doi":"10.1080/1057563031000122068","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:334689"},"row_sha256":"c0d05347a89de19d1bbaa5da0bd6e7f5c9615fc3741add80a97013d6c74f84d4"},{"last_physical_line":688,"physical_line":688,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tPhytolacca
+    americana\tNCBITaxon:3527\thttp://www.wikidata.org/entity/Q157853\t10.1007/BF02534064\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Phytolacca
+    americana","organism_wikidata":"http://www.wikidata.org/entity/Q157853","reference_doi":"10.1007/BF02534064","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:3527"},"row_sha256":"ecc2b0689de20ee2d84fbf6a8e6fd74d32a1c50069a50540ac4ee92cf21fd7bf"},{"last_physical_line":689,"physical_line":689,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tCucumis
+    melo\tNCBITaxon:3656\thttp://www.wikidata.org/entity/Q81602\t10.1016/0031-9422(82)85222-9\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Cucumis
+    melo","organism_wikidata":"http://www.wikidata.org/entity/Q81602","reference_doi":"10.1016/0031-9422(82)85222-9","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:3656"},"row_sha256":"39a9948ea5ae68735ecf0581b5e50361394386703aecca19bf053cf73c33456d"},{"last_physical_line":690,"physical_line":690,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tCucumis
+    sativus\tNCBITaxon:3659\thttp://www.wikidata.org/entity/Q23425\t10.1016/0031-9422(82)85222-9\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Cucumis
+    sativus","organism_wikidata":"http://www.wikidata.org/entity/Q23425","reference_doi":"10.1016/0031-9422(82)85222-9","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:3659"},"row_sha256":"4c9dc3e54ffee3ee9f5adc8f7712596a785a3e0b6045de148ac2d4fe7413ee84"},{"last_physical_line":691,"physical_line":691,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tGarcinia
+    myrtifolia\tNCBITaxon:3737643\thttp://www.wikidata.org/entity/Q15391231\t10.1016/0031-9422(94)00589-L\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Garcinia
+    myrtifolia","organism_wikidata":"http://www.wikidata.org/entity/Q15391231","reference_doi":"10.1016/0031-9422(94)00589-L","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:3737643"},"row_sha256":"df253d11d4ff017364bfadf76cca368be17bba4e07633b9ea0c72f26be7e5548"},{"last_physical_line":692,"physical_line":692,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tGarcinia
+    pseudoguttifera\tNCBITaxon:3737681\thttp://www.wikidata.org/entity/Q15391557\t10.1016/S0031-9422(99)00511-7\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Garcinia
+    pseudoguttifera","organism_wikidata":"http://www.wikidata.org/entity/Q15391557","reference_doi":"10.1016/S0031-9422(99)00511-7","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:3737681"},"row_sha256":"4273d357c490f41fcebfe4881036cee1f3210e66e5eb7b2816704de307edb72b"},{"last_physical_line":693,"physical_line":693,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tCajanus
+    cajan\tNCBITaxon:3821\thttp://www.wikidata.org/entity/Q632559\t10.1016/S0031-9422(00)94844-1\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Cajanus
+    cajan","organism_wikidata":"http://www.wikidata.org/entity/Q632559","reference_doi":"10.1016/S0031-9422(00)94844-1","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:3821"},"row_sha256":"9ab13503eed1cead444e92179ce5e4631fcb825a51617e930ceb3af9d82a0701"},{"last_physical_line":694,"physical_line":694,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tCicer
+    arietinum\tNCBITaxon:3827\thttp://www.wikidata.org/entity/Q81375\t10.1016/S0031-9422(00)94844-1\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Cicer
+    arietinum","organism_wikidata":"http://www.wikidata.org/entity/Q81375","reference_doi":"10.1016/S0031-9422(00)94844-1","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:3827"},"row_sha256":"6b6e6da618ad7bd378998a70cbc321fd8e736627ce61e6a33ba8fd7e234e67db"},{"last_physical_line":695,"physical_line":695,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tGlycine
+    max\tNCBITaxon:3847\thttp://www.wikidata.org/entity/Q11006\t10.1016/S0031-9422(00)94844-1\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Glycine
+    max","organism_wikidata":"http://www.wikidata.org/entity/Q11006","reference_doi":"10.1016/S0031-9422(00)94844-1","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:3847"},"row_sha256":"7bb7879ae58ac577ddadb807c2282dbfc6c880fd6e016c6efe3053a796161748"},{"last_physical_line":696,"physical_line":696,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tCamellia
+    oleifera\tNCBITaxon:385388\thttp://www.wikidata.org/entity/Q2498293\t10.1021/NP970490H\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Camellia
+    oleifera","organism_wikidata":"http://www.wikidata.org/entity/Q2498293","reference_doi":"10.1021/NP970490H","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:385388"},"row_sha256":"e53dd666f2a243381d1f103ffe3027b303e3fcfcd5f724be99686f7e293264f7"},{"last_physical_line":697,"physical_line":697,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tCamellia
+    oleifera\tNCBITaxon:385388\thttp://www.wikidata.org/entity/Q2498293\t10.1248/CPB.45.2016\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Camellia
+    oleifera","organism_wikidata":"http://www.wikidata.org/entity/Q2498293","reference_doi":"10.1248/CPB.45.2016","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:385388"},"row_sha256":"5ae5d59698603c5640ad9b3934549c6a51a9eb63ee06bf4eea25103d4d92d07f"},{"last_physical_line":698,"physical_line":698,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tLathyrus
+    sativus\tNCBITaxon:3860\thttp://www.wikidata.org/entity/Q162093\t10.1016/S0031-9422(00)94844-1\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Lathyrus
+    sativus","organism_wikidata":"http://www.wikidata.org/entity/Q162093","reference_doi":"10.1016/S0031-9422(00)94844-1","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:3860"},"row_sha256":"2bdd407f9ed4e79cb21893b7faf5afb522d85a471d82cd2e4edcf3038e680a37"},{"last_physical_line":699,"physical_line":699,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tLens
+    culinaris\tNCBITaxon:3864\thttp://www.wikidata.org/entity/Q131226\t10.1016/S0031-9422(00)94844-1\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Lens
+    culinaris","organism_wikidata":"http://www.wikidata.org/entity/Q131226","reference_doi":"10.1016/S0031-9422(00)94844-1","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:3864"},"row_sha256":"ca6b290081eb4098321ddefc0303a6a5643a560089409a90c19c4724f03600b0"},{"last_physical_line":700,"physical_line":700,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tPisum
+    sativum\tNCBITaxon:3888\thttp://www.wikidata.org/entity/Q25237\t10.1016/S0031-9422(00)94844-1\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Pisum
+    sativum","organism_wikidata":"http://www.wikidata.org/entity/Q25237","reference_doi":"10.1016/S0031-9422(00)94844-1","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:3888"},"row_sha256":"cd750ff46fab9229908f100a20aa2b4d8846d117f8ba528a331d7e900a280b6c"},{"last_physical_line":701,"physical_line":701,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tCamellia
+    sinensis\tNCBITaxon:4442\thttp://www.wikidata.org/entity/Q101815\t10.1007/BF02534064\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Camellia
+    sinensis","organism_wikidata":"http://www.wikidata.org/entity/Q101815","reference_doi":"10.1007/BF02534064","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:4442"},"row_sha256":"2e7bb36ad5b7517faad468e851c3280f1c17ea4c6039f642a55a57aa3166bfbc"},{"last_physical_line":702,"physical_line":702,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tCamellia
+    japonica\tNCBITaxon:4443\thttp://www.wikidata.org/entity/Q160121\t10.1007/BF02534064\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Camellia
+    japonica","organism_wikidata":"http://www.wikidata.org/entity/Q160121","reference_doi":"10.1007/BF02534064","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:4443"},"row_sha256":"05ac081bef2452fc346a6f23161dc67b8f7877d7f8f6c44d586cfae1ec5fa087"},{"last_physical_line":703,"physical_line":703,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tCamellia
+    japonica\tNCBITaxon:4443\thttp://www.wikidata.org/entity/Q160121\t10.1248/CPB.45.2016\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Camellia
+    japonica","organism_wikidata":"http://www.wikidata.org/entity/Q160121","reference_doi":"10.1248/CPB.45.2016","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:4443"},"row_sha256":"49016b395957f462d8e7005d6aa5a6659c4f7824f4b134a403454f669f5bdd0e"},{"last_physical_line":704,"physical_line":704,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tEuphorbia
+    jolkinii\tNCBITaxon:457253\thttp://www.wikidata.org/entity/Q10936724\t10.1002/HLCA.200890230\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Euphorbia
+    jolkinii","organism_wikidata":"http://www.wikidata.org/entity/Q10936724","reference_doi":"10.1002/HLCA.200890230","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:457253"},"row_sha256":"5c78b1d33bb351f16a0ee4703436be3377fd87ddb772f3d87231268509d265b8"},{"last_physical_line":705,"physical_line":705,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tEuphorbia
+    resinifera\tNCBITaxon:457265\thttp://www.wikidata.org/entity/Q2658650\t10.1016/J.PHYTOCHEM.2008.01.004\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Euphorbia
+    resinifera","organism_wikidata":"http://www.wikidata.org/entity/Q2658650","reference_doi":"10.1016/J.PHYTOCHEM.2008.01.004","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:457265"},"row_sha256":"64071e512123537425f5a71be60aa255356b6a34c298c7cbbef3bef8a3d490e0"},{"last_physical_line":706,"physical_line":706,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tGarcinia
+    livingstonei\tNCBITaxon:469932\thttp://www.wikidata.org/entity/Q1255770\t10.1016/J.JEP.2013.07.023\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Garcinia
+    livingstonei","organism_wikidata":"http://www.wikidata.org/entity/Q1255770","reference_doi":"10.1016/J.JEP.2013.07.023","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:469932"},"row_sha256":"3dd8e243b45c2ce5f3b9d8287e6bdb106636c58d4cabfd5d69887ecd76e55479"},{"last_physical_line":707,"physical_line":707,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tMonocyclanthus
+    vignei\tNCBITaxon:489341\thttp://www.wikidata.org/entity/Q5473929\t10.1016/0031-9422(92)80456-O\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Monocyclanthus
+    vignei","organism_wikidata":"http://www.wikidata.org/entity/Q5473929","reference_doi":"10.1016/0031-9422(92)80456-O","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:489341"},"row_sha256":"e397924788fe2a7f7ea43176cdfe8f745b0eb20e0f94620955b8127191c3e5b9"},{"last_physical_line":708,"physical_line":708,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tEuphorbia
+    condylocarpa\tNCBITaxon:758543\thttp://www.wikidata.org/entity/Q5410404\t10.1007/BF00564277\thttp://www.wikidata.org/entity/Q27106574\n","row":{"organism_name":"Euphorbia
+    condylocarpa","organism_wikidata":"http://www.wikidata.org/entity/Q5410404","reference_doi":"10.1007/BF00564277","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:758543"},"row_sha256":"596f3b21241eb88f26afc79b932f887c45b7415ef5649d00c7130e62039fd991"}],"predicate":"exact
+    complete standard_inchi_key equality","query":"CAHGCLMLTWQZNJ-WZLOIPHISA-N"}'
+  snapshot_sha256: 4b0d3e3da384d400278579bca7fdc555ccf50e16fc29eaed319dba5fdfd8873e
+- evidence_id: bgc-2324-source-lotus_occurrences
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical lines 656–656, row_sha256 435ac77fb4b1e2d1bad48f340399d5013f47419ee145cbc8eca7dd8fa60ca559;
+    physical lines 657–657, row_sha256 af7b5cc6cad1cfe09991b5bd4979402dd5c2cc45be97bf9d2cd0e090912b5219;
+    physical lines 658–658, row_sha256 7121c2343ce264dae03774714d118fe97a955734da1809386e063875e01974f0;
+    physical lines 659–659, row_sha256 281330a08f4afb22397e75c5648d01efa8aec77b82d1eb5c8e0a10f05ce8154f;
+    physical lines 660–660, row_sha256 31a8b1d777d10297aeeaf0a94518adae703b1f1b3d2875bcc977ea88e9031681;
+    physical lines 661–661, row_sha256 99df16d2bdc7332c135f72e6100e2dd8dfe808e6036eefc362a950a86da2c623;
+    physical lines 662–662, row_sha256 6adb154b099c768fc0c02acbc6c9c908ad8da2ebad6013f5d86db955dcff8975;
+    physical lines 663–663, row_sha256 227fa20a54af83d780ff5962e56603ded88b7d23f5afa76305fe89ed77541b02;
+    physical lines 664–664, row_sha256 8b3d6105b52d39b6062f9484f2fb82e8e83150457f17405cc9558bd31318e01e;
+    physical lines 665–665, row_sha256 2e65509a9d9ce845f6fd921547221afcd0f21e36b94de4f44fe879270d91bf9a;
+    physical lines 666–666, row_sha256 8d97172a725321686116466a66d0bd44b167c4235492901ba693eff79be03d9d;
+    physical lines 667–667, row_sha256 a8a621307e63d7b2e5a8ffe0f696edafd52b35561b8aa6a9b40009738d62ea12;
+    physical lines 668–668, row_sha256 4cbbaaf47ea6c456b7a6368e6f7e01d5ffbf2d0305dd1c1e4cc1fdd43ccda84d;
+    physical lines 669–669, row_sha256 8323f1d5e42159801c9391db7405b1d6453151a11106cd3a7d4263147c405631;
+    physical lines 670–670, row_sha256 fb29d892a87a42da10a6674a675a83708c29144ffc453e455dbe2118dc16f516;
+    physical lines 671–671, row_sha256 c9c144a13c0ae693e563ace04e5e26b9e680003c27c3acf7b78eb590c5d1f3be;
+    physical lines 672–672, row_sha256 3ef8d33895142c77f74a93a1d168ab51468c475813bff83901b7b8642190bad6;
+    physical lines 673–673, row_sha256 10f09b44f710404b5578aeaaf619d4bf5c1d86a21fa2c7d34e37a550b56fe50d;
+    physical lines 674–674, row_sha256 011b61a832469db2f224dca108613f6306948c01fb270890a66c33ec1e960542;
+    physical lines 675–675, row_sha256 2dfef813aaeaa6ac08ee7b37bc1aa3d0c66de5ce0f5fe1c84434c89516912096;
+    physical lines 676–676, row_sha256 1bc59f38d0b9da8430172d884480078dd5a757a9943a5e5ce99cb5ef680bd677;
+    physical lines 677–677, row_sha256 9e1919c5579e985adc7fcb1769807c5ab8f72edb5258fcaea5f26d2b6cd344d9;
+    physical lines 678–678, row_sha256 3c01f277001c22923150716b3b7a6fc8bbdb78c843ca340832b73abca99f2d38;
+    physical lines 679–679, row_sha256 5479109e23dff37d5d1ee73cb31a05271bbab5f87f0c12846ca29f0a1b377640;
+    physical lines 680–680, row_sha256 7085c56dc6a6964e1186ea36acacaa8432233d70d0bc6605975bb09064ca21b8;
+    physical lines 681–681, row_sha256 d5c82dc8c3dc93825b3cd97ae319d1f6787dc04b981a7ed1d5c44296bb942ac1;
+    physical lines 682–682, row_sha256 ffdac8fba7d68db4bde967f0d82537daed29be4905ebf3582ec6277ec17cf1c6;
+    physical lines 683–683, row_sha256 6c3d2421fbf62683158afc30762a3139a97d0514d0f43ec44878c92e37dbbb34;
+    physical lines 684–684, row_sha256 009fa079d23f1238e708e3cecd06372cb82e5cc4d288e683b2e5bab364a5627e;
+    physical lines 685–685, row_sha256 73c630d1c46491f859cbff04e09d6c460fedf6471fdeba30f1a5038731a35684;
+    physical lines 686–686, row_sha256 fcbb5bcbb3e77dab5be1c8cdd80be008e7471b54699290e735ccf58a10f64498;
+    physical lines 687–687, row_sha256 c0d05347a89de19d1bbaa5da0bd6e7f5c9615fc3741add80a97013d6c74f84d4;
+    physical lines 688–688, row_sha256 ecc2b0689de20ee2d84fbf6a8e6fd74d32a1c50069a50540ac4ee92cf21fd7bf;
+    physical lines 689–689, row_sha256 39a9948ea5ae68735ecf0581b5e50361394386703aecca19bf053cf73c33456d;
+    physical lines 690–690, row_sha256 4c9dc3e54ffee3ee9f5adc8f7712596a785a3e0b6045de148ac2d4fe7413ee84;
+    physical lines 691–691, row_sha256 df253d11d4ff017364bfadf76cca368be17bba4e07633b9ea0c72f26be7e5548;
+    physical lines 692–692, row_sha256 4273d357c490f41fcebfe4881036cee1f3210e66e5eb7b2816704de307edb72b;
+    physical lines 693–693, row_sha256 9ab13503eed1cead444e92179ce5e4631fcb825a51617e930ceb3af9d82a0701;
+    physical lines 694–694, row_sha256 6b6e6da618ad7bd378998a70cbc321fd8e736627ce61e6a33ba8fd7e234e67db;
+    physical lines 695–695, row_sha256 7bb7879ae58ac577ddadb807c2282dbfc6c880fd6e016c6efe3053a796161748;
+    physical lines 696–696, row_sha256 e53dd666f2a243381d1f103ffe3027b303e3fcfcd5f724be99686f7e293264f7;
+    physical lines 697–697, row_sha256 5ae5d59698603c5640ad9b3934549c6a51a9eb63ee06bf4eea25103d4d92d07f;
+    physical lines 698–698, row_sha256 2bdd407f9ed4e79cb21893b7faf5afb522d85a471d82cd2e4edcf3038e680a37;
+    physical lines 699–699, row_sha256 ca6b290081eb4098321ddefc0303a6a5643a560089409a90c19c4724f03600b0;
+    physical lines 700–700, row_sha256 cd750ff46fab9229908f100a20aa2b4d8846d117f8ba528a331d7e900a280b6c;
+    physical lines 701–701, row_sha256 2e7bb36ad5b7517faad468e851c3280f1c17ea4c6039f642a55a57aa3166bfbc;
+    physical lines 702–702, row_sha256 05ac081bef2452fc346a6f23161dc67b8f7877d7f8f6c44d586cfae1ec5fa087;
+    physical lines 703–703, row_sha256 49016b395957f462d8e7005d6aa5a6659c4f7824f4b134a403454f669f5bdd0e;
+    physical lines 704–704, row_sha256 5c78b1d33bb351f16a0ee4703436be3377fd87ddb772f3d87231268509d265b8;
+    physical lines 705–705, row_sha256 64071e512123537425f5a71be60aa255356b6a34c298c7cbbef3bef8a3d490e0;
+    physical lines 706–706, row_sha256 3dd8e243b45c2ce5f3b9d8287e6bdb106636c58d4cabfd5d69887ecd76e55479;
+    physical lines 707–707, row_sha256 e397924788fe2a7f7ea43176cdfe8f745b0eb20e0f94620955b8127191c3e5b9;
+    physical lines 708–708, row_sha256 596f3b21241eb88f26afc79b932f887c45b7415ef5649d00c7130e62039fd991
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: 'Complete retained physical row payloads, every field: [{"organism_name":"Euphorbia
+    nicaeensis","organism_wikidata":"http://www.wikidata.org/entity/Q1994224","reference_doi":"10.1055/S-2006-959736","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:1087772"},{"organism_name":"Euphorbia
+    boetica","organism_wikidata":"http://www.wikidata.org/entity/Q5851404","reference_doi":"10.1021/NP50116A020","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:1091613"},{"organism_name":"Euphorbia
+    oxyphylla","organism_wikidata":"http://www.wikidata.org/entity/Q5851817","reference_doi":"10.1016/S0031-9422(00)82286-4","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:1091639"},{"organism_name":"Euphorbia
+    retusa","organism_wikidata":"http://www.wikidata.org/entity/Q15388877","reference_doi":"10.1016/0031-9422(73)80529-1","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:1091645"},{"organism_name":"Euphorbia
+    sulcata","organism_wikidata":"http://www.wikidata.org/entity/Q5851932","reference_doi":"10.1016/0031-9422(73)80529-1","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:1091647"},{"organism_name":"Euphorbia
+    caducifolia","organism_wikidata":"http://www.wikidata.org/entity/Q5851474","reference_doi":"10.1016/S0031-9422(00)97902-0","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:1129975"},{"organism_name":"Euphorbia
+    portulacoides","organism_wikidata":"http://www.wikidata.org/entity/Q15389869","reference_doi":"10.1016/0031-9422(95)00752-0","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:1138358"},{"organism_name":"Euphorbia
+    sapinii","organism_wikidata":"http://www.wikidata.org/entity/Q15391190","reference_doi":"10.1016/J.PHYTOL.2011.04.001","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:1281384"},{"organism_name":"Euphorbia
+    aleppica","organism_wikidata":"http://www.wikidata.org/entity/Q12230481","reference_doi":"10.1016/0031-9422(95)00361-A","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:1333886"},{"organism_name":"Euphorbia
+    tirucalli","organism_wikidata":"http://www.wikidata.org/entity/Q883685","reference_doi":"10.1021/NP50006A011","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:142860"},{"organism_name":"Euphorbia
+    tirucalli","organism_wikidata":"http://www.wikidata.org/entity/Q883685","reference_doi":"10.1515/ZNC-1985-9-1008","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:142860"},{"organism_name":"Euphorbia
+    trigona","organism_wikidata":"http://www.wikidata.org/entity/Q1257890","reference_doi":"10.1016/0031-9422(88)83136-4","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:1492770"},{"organism_name":"Clusia
+    multiflora","organism_wikidata":"http://www.wikidata.org/entity/Q5775225","reference_doi":"10.1016/0031-9422(94)00642-7","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:156472"},{"organism_name":"Dacryodes
+    hopkinsii","organism_wikidata":"http://www.wikidata.org/entity/Q18078662","reference_doi":"10.1590/S0103-50532004000300008","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:1591303"},{"organism_name":"Camellia
+    sasanqua","organism_wikidata":"http://www.wikidata.org/entity/Q2590046","reference_doi":"10.1021/NP970490H","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:182300"},{"organism_name":"Camellia
+    sasanqua","organism_wikidata":"http://www.wikidata.org/entity/Q2590046","reference_doi":"10.1248/CPB.45.2016","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:182300"},{"organism_name":"Garcinia
+    cymosa","organism_wikidata":"http://www.wikidata.org/entity/Q15390872","reference_doi":"10.1016/S0031-9422(98)00565-2","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:198793"},{"organism_name":"Garcinia
+    cymosa","organism_wikidata":"http://www.wikidata.org/entity/Q15390872","reference_doi":"10.1080/14786419.2012.725399","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:198793"},{"organism_name":"Clusia
+    columnaris","organism_wikidata":"http://www.wikidata.org/entity/Q15388761","reference_doi":"10.1590/S0102-695X2008000100003","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:211701"},{"organism_name":"Euphorbia
+    drupifera","organism_wikidata":"http://www.wikidata.org/entity/Q5851561","reference_doi":"10.1016/J.FITOTE.2007.02.002","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:212879"},{"organism_name":"Euphorbia
+    lathyris","organism_wikidata":"http://www.wikidata.org/entity/Q164223","reference_doi":"10.1104/PP.89.2.681","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:212925"},{"organism_name":"Euphorbia
+    lathyris","organism_wikidata":"http://www.wikidata.org/entity/Q164223","reference_doi":"10.3390/MOLECULES24234322","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:212925"},{"organism_name":"Euphorbia
+    kansui","organism_wikidata":"http://www.wikidata.org/entity/Q15232469","reference_doi":"10.1021/NP0205396","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:239687"},{"organism_name":"Euphorbia
+    kansui","organism_wikidata":"http://www.wikidata.org/entity/Q15232469","reference_doi":"10.1055/S-2006-957574","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:239687"},{"organism_name":"Euphorbia
+    kansui","organism_wikidata":"http://www.wikidata.org/entity/Q15232469","reference_doi":"10.1211/0022357001773607","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:239687"},{"organism_name":"Euphorbia
+    kansui","organism_wikidata":"http://www.wikidata.org/entity/Q15232469","reference_doi":"10.38212/2224-6614.2818","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:239687"},{"organism_name":"Vitellaria
+    paradoxa","organism_wikidata":"http://www.wikidata.org/entity/Q1348567","reference_doi":"10.1007/BF02534064","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:292385"},{"organism_name":"Vigna
+    cylindrica","organism_wikidata":"http://www.wikidata.org/entity/Q15527788","reference_doi":"10.1016/S0031-9422(00)94844-1","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:3091605"},{"organism_name":"Euphorbia
+    abyssinica","organism_wikidata":"http://www.wikidata.org/entity/Q3734564","reference_doi":"10.1016/S0031-9422(97)01065-0","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:316813"},{"organism_name":"Euphorbia
+    antiquorum","organism_wikidata":"http://www.wikidata.org/entity/Q419654","reference_doi":"10.1016/0031-9422(90)80134-3","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:334664"},{"organism_name":"Euphorbia
+    antiquorum","organism_wikidata":"http://www.wikidata.org/entity/Q419654","reference_doi":"10.1021/NP010377Y","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:334664"},{"organism_name":"Euphorbia
+    neriifolia","organism_wikidata":"http://www.wikidata.org/entity/Q9256163","reference_doi":"10.1080/1057563031000122068","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:334689"},{"organism_name":"Phytolacca
+    americana","organism_wikidata":"http://www.wikidata.org/entity/Q157853","reference_doi":"10.1007/BF02534064","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:3527"},{"organism_name":"Cucumis
+    melo","organism_wikidata":"http://www.wikidata.org/entity/Q81602","reference_doi":"10.1016/0031-9422(82)85222-9","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:3656"},{"organism_name":"Cucumis
+    sativus","organism_wikidata":"http://www.wikidata.org/entity/Q23425","reference_doi":"10.1016/0031-9422(82)85222-9","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:3659"},{"organism_name":"Garcinia
+    myrtifolia","organism_wikidata":"http://www.wikidata.org/entity/Q15391231","reference_doi":"10.1016/0031-9422(94)00589-L","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:3737643"},{"organism_name":"Garcinia
+    pseudoguttifera","organism_wikidata":"http://www.wikidata.org/entity/Q15391557","reference_doi":"10.1016/S0031-9422(99)00511-7","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:3737681"},{"organism_name":"Cajanus
+    cajan","organism_wikidata":"http://www.wikidata.org/entity/Q632559","reference_doi":"10.1016/S0031-9422(00)94844-1","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:3821"},{"organism_name":"Cicer
+    arietinum","organism_wikidata":"http://www.wikidata.org/entity/Q81375","reference_doi":"10.1016/S0031-9422(00)94844-1","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:3827"},{"organism_name":"Glycine
+    max","organism_wikidata":"http://www.wikidata.org/entity/Q11006","reference_doi":"10.1016/S0031-9422(00)94844-1","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:3847"},{"organism_name":"Camellia
+    oleifera","organism_wikidata":"http://www.wikidata.org/entity/Q2498293","reference_doi":"10.1021/NP970490H","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:385388"},{"organism_name":"Camellia
+    oleifera","organism_wikidata":"http://www.wikidata.org/entity/Q2498293","reference_doi":"10.1248/CPB.45.2016","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:385388"},{"organism_name":"Lathyrus
+    sativus","organism_wikidata":"http://www.wikidata.org/entity/Q162093","reference_doi":"10.1016/S0031-9422(00)94844-1","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:3860"},{"organism_name":"Lens
+    culinaris","organism_wikidata":"http://www.wikidata.org/entity/Q131226","reference_doi":"10.1016/S0031-9422(00)94844-1","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:3864"},{"organism_name":"Pisum
+    sativum","organism_wikidata":"http://www.wikidata.org/entity/Q25237","reference_doi":"10.1016/S0031-9422(00)94844-1","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:3888"},{"organism_name":"Camellia
+    sinensis","organism_wikidata":"http://www.wikidata.org/entity/Q101815","reference_doi":"10.1007/BF02534064","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:4442"},{"organism_name":"Camellia
+    japonica","organism_wikidata":"http://www.wikidata.org/entity/Q160121","reference_doi":"10.1007/BF02534064","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:4443"},{"organism_name":"Camellia
+    japonica","organism_wikidata":"http://www.wikidata.org/entity/Q160121","reference_doi":"10.1248/CPB.45.2016","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:4443"},{"organism_name":"Euphorbia
+    jolkinii","organism_wikidata":"http://www.wikidata.org/entity/Q10936724","reference_doi":"10.1002/HLCA.200890230","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:457253"},{"organism_name":"Euphorbia
+    resinifera","organism_wikidata":"http://www.wikidata.org/entity/Q2658650","reference_doi":"10.1016/J.PHYTOCHEM.2008.01.004","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:457265"},{"organism_name":"Garcinia
+    livingstonei","organism_wikidata":"http://www.wikidata.org/entity/Q1255770","reference_doi":"10.1016/J.JEP.2013.07.023","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:469932"},{"organism_name":"Monocyclanthus
+    vignei","organism_wikidata":"http://www.wikidata.org/entity/Q5473929","reference_doi":"10.1016/0031-9422(92)80456-O","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:489341"},{"organism_name":"Euphorbia
+    condylocarpa","organism_wikidata":"http://www.wikidata.org/entity/Q5410404","reference_doi":"10.1007/BF00564277","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27106574","taxon_id":"NCBITaxon:758543"}]'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: bgc-2324-query-cyanometdb_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch233-tentative/bgc-prep/bgc-conditional233-source-inventory-DATA-001.json
+  locator: /contexts/20/source_scope_inventory/joins/cyanometdb_occurrences
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: 'Complete retained query frame, exact predicate and all matches/no-match
+    fields: {"matches":[],"predicate":"exact complete standard_inchi_key equality","query":"CAHGCLMLTWQZNJ-WZLOIPHISA-N"}'
+  snapshot_sha256: 4b0d3e3da384d400278579bca7fdc555ccf50e16fc29eaed319dba5fdfd8873e
+- evidence_id: bgc-2324-query-npclassifier
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch233-tentative/bgc-prep/bgc-conditional233-source-inventory-DATA-001.json
+  locator: /contexts/20/source_scope_inventory/joins/npclassifier
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: 'Complete retained query frame, exact predicate and all matches/no-match
+    fields: {"matches":[{"last_physical_line":254,"physical_line":254,"raw_tsv_record":"CAHGCLMLTWQZNJ-WZLOIPHISA-N\tC[C@H](CCC=C(C)C)[C@@H]1CC[C@]2([C@]1(CCC3=C2CC[C@@H]4[C@@]3(CC[C@@H](C4(C)C)O)C)C)C\tTerpenoids\tTriterpenoids\tLanostane,
+    Tirucallane and Euphane triterpenoids\tfalse\tnpclassifier.gnps2.org@2026-09-07\n","row":{"class_results":"Lanostane,
+    Tirucallane and Euphane triterpenoids","is_glycoside":"false","model_version":"npclassifier.gnps2.org@2026-09-07","pathway_results":"Terpenoids","smiles":"C[C@H](CCC=C(C)C)[C@@H]1CC[C@]2([C@]1(CCC3=C2CC[C@@H]4[C@@]3(CC[C@@H](C4(C)C)O)C)C)C","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","superclass_results":"Triterpenoids"},"row_sha256":"0325ddc3e197ddb1be32ae5ca84746bb0288a101cc78beba51b209478ccbbd83"}],"predicate":"exact
+    complete standard_inchi_key equality","query":"CAHGCLMLTWQZNJ-WZLOIPHISA-N"}'
+  snapshot_sha256: 4b0d3e3da384d400278579bca7fdc555ccf50e16fc29eaed319dba5fdfd8873e
+- evidence_id: bgc-2324-source-npclassifier
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv
+  locator: Header line 1; physical lines 254–254, row_sha256 0325ddc3e197ddb1be32ae5ca84746bb0288a101cc78beba51b209478ccbbd83
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: 'Complete retained physical row payloads, every field: [{"class_results":"Lanostane,
+    Tirucallane and Euphane triterpenoids","is_glycoside":"false","model_version":"npclassifier.gnps2.org@2026-09-07","pathway_results":"Terpenoids","smiles":"C[C@H](CCC=C(C)C)[C@@H]1CC[C@]2([C@]1(CCC3=C2CC[C@@H]4[C@@]3(CC[C@@H](C4(C)C)O)C)C)C","standard_inchi_key":"CAHGCLMLTWQZNJ-WZLOIPHISA-N","superclass_results":"Triterpenoids"}]'
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: bgc-2324-query-pubchem_bioassay
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch233-tentative/bgc-prep/bgc-conditional233-source-inventory-DATA-001.json
+  locator: /contexts/20/source_scope_inventory/joins/pubchem_bioassay
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: 'Complete retained query frame, exact predicate and all matches/no-match
+    fields: {"matches":[],"predicate":"exact complete standard_inchi_key equality","query":"CAHGCLMLTWQZNJ-WZLOIPHISA-N"}'
+  snapshot_sha256: 4b0d3e3da384d400278579bca7fdc555ccf50e16fc29eaed319dba5fdfd8873e
+- evidence_id: bgc-2324-query-bindingdb_targets
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch233-tentative/bgc-prep/bgc-conditional233-source-inventory-DATA-001.json
+  locator: /contexts/20/source_scope_inventory/joins/bindingdb_targets
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: 'Complete retained query frame, exact predicate and all matches/no-match
+    fields: {"matches":[],"predicate":"exact complete standard_inchi_key equality","query":"CAHGCLMLTWQZNJ-WZLOIPHISA-N"}'
+  snapshot_sha256: 4b0d3e3da384d400278579bca7fdc555ccf50e16fc29eaed319dba5fdfd8873e
+- evidence_id: bgc-2324-query-antibioticmech_inchikeys
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch233-tentative/bgc-prep/bgc-conditional233-source-inventory-DATA-001.json
+  locator: /contexts/20/source_scope_inventory/joins/antibioticmech_inchikeys
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: 'Complete retained query frame, exact predicate and all matches/no-match
+    fields: {"matches":[],"predicate":"exact complete standard_inchi_key equality","query":"CAHGCLMLTWQZNJ-WZLOIPHISA-N"}'
+  snapshot_sha256: 4b0d3e3da384d400278579bca7fdc555ccf50e16fc29eaed319dba5fdfd8873e
+- evidence_id: bgc-2324-query-chebi_origins
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch233-tentative/bgc-prep/bgc-conditional233-source-inventory-DATA-001.json
+  locator: /contexts/20/source_scope_inventory/joins/chebi_origins
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: 'Complete retained query frame, exact predicate and all matches/no-match
+    fields: {"matches":[],"predicate":"exact chebi_id from exact full-key structure
+    rows","query":[]}'
+  snapshot_sha256: 4b0d3e3da384d400278579bca7fdc555ccf50e16fc29eaed319dba5fdfd8873e
+- evidence_id: bgc-2324-source-routes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch233-tentative/bgc-prep/bgc-conditional233-source-inventory-DATA-001.json
+  locator: /contexts/20/source_scope_inventory/source_taxa; /contexts/20/source_scope_inventory/forward_taxon_merge_matches;
+    /contexts/20/source_scope_inventory/nonorganism_matches; /contexts/20/source_scope_inventory/actual_assay_rows;
+    /contexts/20/source_scope_inventory/blank_AID_sentinels; /contexts/20/source_scope_inventory/related_corpus_rows
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: 'Exact source taxa and route lists; source_taxa is distinct from the empty
+    forward/nonorganism and assay/related routes: {"actual_assay_rows":[],"blank_AID_sentinels":[],"forward_taxon_merge_matches":[],"nonorganism_matches":[],"related_corpus_rows":[],"source_taxa":["NCBITaxon:1087772","NCBITaxon:1091613","NCBITaxon:1091639","NCBITaxon:1091645","NCBITaxon:1091647","NCBITaxon:1129975","NCBITaxon:1138358","NCBITaxon:1281384","NCBITaxon:1333886","NCBITaxon:142860","NCBITaxon:1492770","NCBITaxon:156472","NCBITaxon:1591303","NCBITaxon:182300","NCBITaxon:198793","NCBITaxon:211701","NCBITaxon:212879","NCBITaxon:212925","NCBITaxon:239687","NCBITaxon:292385","NCBITaxon:3091605","NCBITaxon:316813","NCBITaxon:334664","NCBITaxon:334689","NCBITaxon:3527","NCBITaxon:3656","NCBITaxon:3659","NCBITaxon:3702","NCBITaxon:3737643","NCBITaxon:3737681","NCBITaxon:3821","NCBITaxon:3827","NCBITaxon:3847","NCBITaxon:385388","NCBITaxon:3860","NCBITaxon:3864","NCBITaxon:3888","NCBITaxon:4442","NCBITaxon:4443","NCBITaxon:457253","NCBITaxon:457265","NCBITaxon:469932","NCBITaxon:489341","NCBITaxon:758543"]}'
+  snapshot_sha256: 4b0d3e3da384d400278579bca7fdc555ccf50e16fc29eaed319dba5fdfd8873e
+- evidence_id: bgc-2324-cached-taxonomy
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch233-tentative/bgc-prep/bgc-conditional233-source-inventory-DATA-001.json
+  locator: /cached_taxonomy/input; /cached_taxonomy/whole_stanzas/8; /cached_taxonomy/whole_stanzas/10;
+    /cached_taxonomy/whole_stanzas/11; /cached_taxonomy/whole_stanzas/12; /cached_taxonomy/whole_stanzas/14;
+    /cached_taxonomy/whole_stanzas/15; /cached_taxonomy/whole_stanzas/16; /cached_taxonomy/whole_stanzas/17;
+    /cached_taxonomy/whole_stanzas/18; /cached_taxonomy/whole_stanzas/20; /cached_taxonomy/whole_stanzas/21;
+    /cached_taxonomy/whole_stanzas/22; /cached_taxonomy/whole_stanzas/48; /cached_taxonomy/whole_stanzas/49;
+    /cached_taxonomy/whole_stanzas/54; /cached_taxonomy/whole_stanzas/55; /cached_taxonomy/whole_stanzas/56;
+    /cached_taxonomy/whole_stanzas/57; /cached_taxonomy/whole_stanzas/58; /cached_taxonomy/whole_stanzas/60;
+    /cached_taxonomy/whole_stanzas/61; /cached_taxonomy/whole_stanzas/62; /cached_taxonomy/whole_stanzas/64;
+    /cached_taxonomy/whole_stanzas/65; /cached_taxonomy/whole_stanzas/66; /cached_taxonomy/whole_stanzas/70;
+    /cached_taxonomy/whole_stanzas/71; /cached_taxonomy/whole_stanzas/72; /cached_taxonomy/whole_stanzas/73;
+    /cached_taxonomy/whole_stanzas/78; /cached_taxonomy/whole_stanzas/80; /cached_taxonomy/whole_stanzas/81;
+    /cached_taxonomy/whole_stanzas/82; /cached_taxonomy/whole_stanzas/83; /cached_taxonomy/whole_stanzas/84;
+    /cached_taxonomy/whole_stanzas/85; /cached_taxonomy/whole_stanzas/86; /cached_taxonomy/whole_stanzas/87;
+    /cached_taxonomy/whole_stanzas/89; /cached_taxonomy/whole_stanzas/90; /cached_taxonomy/whole_stanzas/92;
+    /cached_taxonomy/whole_stanzas/95; /cached_taxonomy/whole_stanzas/96; /cached_taxonomy/whole_stanzas/97
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: 'Complete relevant cached stanzas, with no fresh taxonomy verification:
+    [{"complete_stanza":"[Term]\nid: NCBITaxon:3527\nname: Phytolacca americana\nsynonym:
+    \"Phytolacca decandra\" EXACT []\n\n","id":"NCBITaxon:3527","physical_line":4829},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:3656\nname: Cucumis melo\n\n","id":"NCBITaxon:3656","physical_line":5101},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:3659\nname: Cucumis sativus\n\n","id":"NCBITaxon:3659","physical_line":5125},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:3702\nname: Arabidopsis thaliana\nsynonym: \"Arabis thaliana\" EXACT
+    []\n\n","id":"NCBITaxon:3702","physical_line":5233},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:3821\nname: Cajanus cajan\nsynonym: \"Cajanus flavus\" EXACT []\n\n","id":"NCBITaxon:3821","physical_line":5566},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:3827\nname: Cicer arietinum\n\n","id":"NCBITaxon:3827","physical_line":5586},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:3847\nname: Glycine max\nsynonym: \"Phaseolus max\" EXACT []\n\n","id":"NCBITaxon:3847","physical_line":5650},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:3860\nname: Lathyrus sativus\n\n","id":"NCBITaxon:3860","physical_line":5700},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:3864\nname: Lens culinaris\nsynonym: \"Lens esculenta\" EXACT []\n\n","id":"NCBITaxon:3864","physical_line":5712},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:3888\nname: Lathyrus oleraceus\nsynonym: \"Pisum sativum\" EXACT []\nsynonym:
+    \"Pisum sativum var. ponderosum\" EXACT []\n\n","id":"NCBITaxon:3888","physical_line":5809},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:4442\nname: Camellia sinensis\nsynonym: \"Thea sinensis\" EXACT []\n\n","id":"NCBITaxon:4442","physical_line":6985},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:4443\nname: Camellia japonica\n\n","id":"NCBITaxon:4443","physical_line":6990},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:142860\nname: Euphorbia tirucalli\n\n","id":"NCBITaxon:142860","physical_line":51152},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:156472\nname: Clusia multiflora\n\n","id":"NCBITaxon:156472","physical_line":54055},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:182300\nname: Camellia sasanqua\n\n","id":"NCBITaxon:182300","physical_line":60320},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:198793\nname: Garcinia cymosa\nsynonym: \"Tripetalum cymosum\" EXACT
+    []\n\n","id":"NCBITaxon:198793","physical_line":63825},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:211701\nname: Clusia columnaris\n\n","id":"NCBITaxon:211701","physical_line":66639},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:212879\nname: Euphorbia drupifera\nsynonym: \"Elaeophorbia drupifera\"
+    EXACT []\n\n","id":"NCBITaxon:212879","physical_line":66909},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:212925\nname: Euphorbia lathyris\n\n","id":"NCBITaxon:212925","physical_line":66923},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:239687\nname: Euphorbia kansui\n\n","id":"NCBITaxon:239687","physical_line":71275},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:292385\nname: Vitellaria paradoxa\nsynonym: \"Butyrospermum paradoxum\"
+    EXACT []\nsynonym: \"Butyrospermum paradoxum subsp. parkii\" EXACT []\nsynonym:
+    \"Butyrospermum parkii\" EXACT []\n\n","id":"NCBITaxon:292385","physical_line":79025},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:316813\nname: Euphorbia abyssinica\n\n","id":"NCBITaxon:316813","physical_line":81785},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:334664\nname: Euphorbia antiquorum\n\n","id":"NCBITaxon:334664","physical_line":83913},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:334689\nname: Euphorbia neriifolia\n\n","id":"NCBITaxon:334689","physical_line":83927},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:385388\nname: Camellia oleifera\n\n","id":"NCBITaxon:385388","physical_line":89386},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:457253\nname: Euphorbia jolkinii\nsynonym: \"Euphorbia jolkini\" EXACT
+    []\n\n","id":"NCBITaxon:457253","physical_line":95358},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:457265\nname: Euphorbia resinifera\n\n","id":"NCBITaxon:457265","physical_line":95363},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:469932\nname: Garcinia livingstonei\n\n","id":"NCBITaxon:469932","physical_line":96933},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:489341\nname: Monocyclanthus vignei\n\n","id":"NCBITaxon:489341","physical_line":98468},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:758543\nname: Euphorbia condylocarpa\nsynonym: \"Euphorbia cardiophylla\"
+    EXACT []\n\n","id":"NCBITaxon:758543","physical_line":109996},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:1087772\nname: Euphorbia nicaeensis\n\n","id":"NCBITaxon:1087772","physical_line":118039},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:1091613\nname: Euphorbia boetica\nsynonym: \"Euphorbia baetica\" EXACT
+    []\n\n","id":"NCBITaxon:1091613","physical_line":118233},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:1091639\nname: Euphorbia oxyphylla\n\n","id":"NCBITaxon:1091639","physical_line":118254},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:1091645\nname: Euphorbia retusa\n\n","id":"NCBITaxon:1091645","physical_line":118258},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:1091647\nname: Euphorbia sulcata\n\n","id":"NCBITaxon:1091647","physical_line":118262},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:1129975\nname: Euphorbia caducifolia\n\n","id":"NCBITaxon:1129975","physical_line":119549},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:1138358\nname: Euphorbia portulacoides\n\n","id":"NCBITaxon:1138358","physical_line":120165},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:1281384\nname: Euphorbia sapinii\nsynonym: \"Euphorbia sapini\" EXACT
+    []\n\n","id":"NCBITaxon:1281384","physical_line":125161},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:1333886\nname: Euphorbia aleppica\n\n","id":"NCBITaxon:1333886","physical_line":126584},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:1492770\nname: Euphorbia trigona\n\n","id":"NCBITaxon:1492770","physical_line":130882},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:1591303\nname: Dacryodes hopkinsii\n\n","id":"NCBITaxon:1591303","physical_line":134061},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:3091605\nname: Vigna unguiculata subsp. cylindrica\nsynonym: \"Dolichos
+    biflorus\" EXACT []\nsynonym: \"Phaseolus cylindricus\" EXACT []\nsynonym: \"Vigna
+    cylindrica\" EXACT []\nsynonym: \"Vigna unguiculata Biflora Group\" EXACT []\n\n","id":"NCBITaxon:3091605","physical_line":156732},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:3737643\nname: Garcinia myrtifolia\n\n","id":"NCBITaxon:3737643","physical_line":160015},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:3737681\nname: Garcinia pseudoguttifera\n\n","id":"NCBITaxon:3737681","physical_line":160027}]'
+  snapshot_sha256: 4b0d3e3da384d400278579bca7fdc555ccf50e16fc29eaed319dba5fdfd8873e
+- evidence_id: bgc-2324-direct-contexts
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch233-tentative/bgc-prep/bgc-conditional233-source-inventory-DATA-001.json
+  locator: /records/3/direct_companion_paths; /records/3/direct_companion_predicates
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: 'Exact one-hop scope, with no claim transfer: {"direct_companion_paths":[],"direct_companion_predicates":[]}'
+  snapshot_sha256: 4b0d3e3da384d400278579bca7fdc555ccf50e16fc29eaed319dba5fdfd8873e
+- evidence_id: bgc-2324-structure-schema
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: Lines 392–433
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: The structure flag describes undefined stereocentres. ComputedClassification
+    is explicitly a named/versioned prediction from structure, never a source assertion
+    or an admission criterion.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: bgc-2324-stereo-method
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py
+  locator: Lines 142–173
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: Maintained stereo_complete derives from FindMolChiralCenters and absence
+    of question-mark centre tags. It is not blanket all-bond-geometry or natural-identity
+    proof.
+  snapshot_sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+- evidence_id: bgc-2324-classification-seeder
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: Lines 972–1020
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: Maintained seeding preserves lead source structures and named/versioned
+    computed predictions separately; the computed pathway can control filing without
+    becoming a source assertion.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: bgc-2324-review-profile
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/docs/record-review-profile.md
+  locator: Whole current profile
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: One-record claim-level scientific review requires twelve dimensions and
+    truthful partial completion/unavailable-check limits.
+  snapshot_sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+- evidence_id: bgc-2324-review-skill
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/.claude/skills/review-yaml-record/SKILL.md
+  locator: Whole current skill
+  accessed_at: '2026-11-04T02:01:55.695350Z'
+  support: supports
+  summary: The review does not edit source records; the overriding absolute no-request
+    instruction limits evidence access to retained local files.
+  snapshot_sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+- evidence_id: root-native-strict_ten
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-233/validate-strict-selected10-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-233/native-current233-five-gates-execution-001.json
+  accessed_at: '2026-11-04T01:34:00.342391Z'
+  support: supports
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  snapshot_sha256: 2444131c9bbd175968f9d611c32bf3bbd12568e48a7b35408345deb11a289d74
+- evidence_id: root-native-strict_full
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-233/validate-all-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-233/native-current233-five-gates-execution-001.json
+  accessed_at: '2026-11-04T01:34:25.871048Z'
+  support: supports
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  snapshot_sha256: 000c1c2d07219c9458f40443fecb23b8632036e95ae07b270a4f42ac7e26b30c
+- evidence_id: root-native-lockfile
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-233/verify-corpus-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-233/native-current233-five-gates-execution-001.json
+  accessed_at: '2026-11-04T01:34:46.118004Z'
+  support: supports
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  snapshot_sha256: 254f171c7dff0f1ecbee5f47f75d2b7046143ae7fc499d9a1c08263e1c5125d8
+- evidence_id: root-native-reproduction
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-233/verify-reproduction-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-233/native-current233-five-gates-execution-001.json
+  accessed_at: '2026-11-04T01:35:21.245243Z'
+  support: supports
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  snapshot_sha256: cfc38f4e3f434e7f3651975f2cb228e5cda848476b2c53d1636d8746b794237a
+- evidence_id: root-native-queue
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-233/review-queue-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-233/native-current233-five-gates-execution-001.json
+  accessed_at: '2026-11-04T01:35:33.368121Z'
+  support: supports
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  snapshot_sha256: 23b82eee0ac99b361f8412dff6d8442ab42a37fb7d5a6453c6c277042174a02c
+assessments:
+- assessment_id: bgc-2324-identity
+  area: identity
+  topic: Identity
+  outcome: supported
+  summary: The MINTED owner retains complete key CAHGCLMLTWQZNJ-WZLOIPHISA-N. The
+    CHEBI:4940 and PubChem cross-references are retained identifiers, while the exact
+    current ChEBI structure join is empty. Neither a recognizable name nor the cross-references
+    replace full-key source/representation checks. Stored agreement does not freshly
+    establish natural stereoisomer identity or validate every external cross-reference.
+  target_ids:
+  - naturalproductmech:mibig-21e4f2495f
+  evidence_ids:
+  - bgc-2324-grounding-owner
+  - bgc-2324-source-mibig_compounds
+  - bgc-2324-query-chebi_structures
+  - bgc-2324-chemistry
+  - bgc-2324-direct-contexts
+  dimensions:
+  - name: standard_inchi_key
+    value: CAHGCLMLTWQZNJ-WZLOIPHISA-N; exact full retained key, not a name or connectivity-block
+      substitute.
+    definition: Exact full key; no name, first-block or congener substitution.
+    evidence_ids:
+    - bgc-2324-grounding-owner
+    - bgc-2324-source-mibig_compounds
+    - bgc-2324-query-chebi_structures
+    - bgc-2324-chemistry
+    - bgc-2324-direct-contexts
+  - name: grounding_scope
+    value: The MINTED owner retains complete key CAHGCLMLTWQZNJ-WZLOIPHISA-N. The
+      CHEBI:4940 and PubChem cross-references are retained identifiers, while the
+      exact current ChEBI structure join is empty. Neither a recognizable name nor
+      the cross-references replace full-key source/representation checks. Stored agreement
+      does not freshly establish natural stereoisomer identity or validate every external
+      cross-reference.
+    definition: Local grounding fidelity is distinct from fresh natural-identity verification.
+    evidence_ids:
+    - bgc-2324-grounding-owner
+    - bgc-2324-source-mibig_compounds
+    - bgc-2324-query-chebi_structures
+    - bgc-2324-chemistry
+    - bgc-2324-direct-contexts
+- assessment_id: bgc-2324-representation
+  area: representation
+  topic: Stored molecular representation
+  outcome: supported
+  summary: Both saved forms are neutral C30H50O with 31 atoms, 34 bonds and a tetracyclic
+    carbocyclic framework with saved basis sizes 5,6,6,6. The single hydroxyl is SMILES
+    23–27, corresponding to InChI 25–30. The side-chain alkene 4=5 has two methyl
+    neighbours at atom 5, so that end does not define an E/Z pair; the other alkene
+    is 15=16. No potential double-bond stereo slot is reported. Seven tetrahedral
+    centres are specified and all ten comparisons are true with complete atom-count
+    correspondence; full_graph_identity_established remains false. The retained tetrahedral
+    completeness flag does not establish natural purity or independent absolute-configuration
+    measurement.
+  target_ids:
+  - naturalproductmech:mibig-21e4f2495f
+  evidence_ids:
+  - bgc-2324-chemistry
+  - bgc-2324-topology
+  - bgc-2324-grounding-owner
+  - bgc-2324-stereo-method
+  - bgc-2324-structure-schema
+  dimensions:
+  - name: stereochemistry_scope
+    value: Both saved forms are neutral C30H50O with 31 atoms, 34 bonds and a tetracyclic
+      carbocyclic framework with saved basis sizes 5,6,6,6. The single hydroxyl is
+      SMILES 23–27, corresponding to InChI 25–30. The side-chain alkene 4=5 has two
+      methyl neighbours at atom 5, so that end does not define an E/Z pair; the other
+      alkene is 15=16. No potential double-bond stereo slot is reported. Seven tetrahedral
+      centres are specified and all ten comparisons are true with complete atom-count
+      correspondence; full_graph_identity_established remains false. The retained
+      tetrahedral completeness flag does not establish natural purity or independent
+      absolute-configuration measurement.
+    definition: Saved complete stereo/atom/bond interpretation, not an experimental
+      assignment or a new parse.
+    evidence_ids:
+    - bgc-2324-chemistry
+    - bgc-2324-topology
+    - bgc-2324-grounding-owner
+    - bgc-2324-stereo-method
+    - bgc-2324-structure-schema
+  - name: representation_correspondence
+    value: All ten saved comparisons and complete atom-count correspondence are true;
+      original full_graph_identity_established remains false. Stored normalization
+      is not independent exact natural-graph identity.
+    definition: Normalized identifier agreement does not establish explicit full-graph
+      or natural-form identity.
+    evidence_ids:
+    - bgc-2324-chemistry
+    - bgc-2324-topology
+    - bgc-2324-grounding-owner
+    - bgc-2324-stereo-method
+    - bgc-2324-structure-schema
+- assessment_id: bgc-2324-provenance
+  area: provenance
+  topic: Producer and locus evidence
+  outcome: supported
+  summary: BGC0002401 version 2 retains Arabidopsis thaliana 3702 as BGC_CHARACTERIZED
+    and knockout/heterologous-expression methods as CLUSTER_DEMONSTRATED. CP002686.1
+    and the retained locus interval, active status, questionable quality and unknown
+    completeness are preserved. These source grades are stronger than an unqualified
+    occurrence claim but remain bounded to the documented source evidence; they do
+    not independently certify every natural occurrence or exact stereochemical identity.
+  target_ids:
+  - naturalproductmech:mibig-21e4f2495f
+  evidence_ids:
+  - bgc-2324-origin-owner
+  - bgc-2324-source-mibig_compounds
+  - bgc-2324-cached-taxonomy
+  - bgc-2324-source-routes
+  dimensions:
+  - name: taxon_scope
+    value: BGC0002401 version 2 retains Arabidopsis thaliana 3702 as BGC_CHARACTERIZED
+      and knockout/heterologous-expression methods as CLUSTER_DEMONSTRATED. CP002686.1
+      and the retained locus interval, active status, questionable quality and unknown
+      completeness are preserved. These source grades are stronger than an unqualified
+      occurrence claim but remain bounded to the documented source evidence; they
+      do not independently certify every natural occurrence or exact stereochemical
+      identity.
+    definition: Source taxa and cached labels preserve genus/species/strain scope;
+      no fresh ancestry or production inference.
+    evidence_ids:
+    - bgc-2324-origin-owner
+    - bgc-2324-source-mibig_compounds
+    - bgc-2324-cached-taxonomy
+    - bgc-2324-source-routes
+  - name: producer_evidence
+    value: BGC0002401 version 2 retains Arabidopsis thaliana 3702 as BGC_CHARACTERIZED
+      and knockout/heterologous-expression methods as CLUSTER_DEMONSTRATED. CP002686.1
+      and the retained locus interval, active status, questionable quality and unknown
+      completeness are preserved. These source grades are stronger than an unqualified
+      occurrence claim but remain bounded to the documented source evidence; they
+      do not independently certify every natural occurrence or exact stereochemical
+      identity.
+    definition: Producer evidence is assessed separately from occurrence and locus
+      support.
+    evidence_ids:
+    - bgc-2324-origin-owner
+    - bgc-2324-source-mibig_compounds
+    - bgc-2324-cached-taxonomy
+    - bgc-2324-source-routes
+  - name: locus_evidence
+    value: BGC0002401 version 2 retains Arabidopsis thaliana 3702 as BGC_CHARACTERIZED
+      and knockout/heterologous-expression methods as CLUSTER_DEMONSTRATED. CP002686.1
+      and the retained locus interval, active status, questionable quality and unknown
+      completeness are preserved. These source grades are stronger than an unqualified
+      occurrence claim but remain bounded to the documented source evidence; they
+      do not independently certify every natural occurrence or exact stereochemical
+      identity.
+    definition: Source version/status/method/grade does not establish a complete pathway
+      or fresh primary support.
+    evidence_ids:
+    - bgc-2324-origin-owner
+    - bgc-2324-source-mibig_compounds
+    - bgc-2324-cached-taxonomy
+    - bgc-2324-source-routes
+- assessment_id: bgc-2324-citations
+  area: evidence
+  topic: Citation scope
+  outcome: supported
+  summary: DOI 10.1111/nph.16338 is retained as compound evidence for the MIBiG claim.
+    LOTUS contributes its own literal citation placements, including repeated taxon/reference
+    pairs and alternate names. Those rows are not independent experiments simply because
+    they occupy separate physical records. Current saved payloads and cache stanzas
+    were read; primary papers, organism authorities and experimental methods were
+    not freshly verified.
+  target_ids:
+  - naturalproductmech:mibig-21e4f2495f
+  evidence_ids:
+  - bgc-2324-grounding-owner
+  - bgc-2324-origin-owner
+  - bgc-2324-source-mibig_compounds
+  - bgc-2324-source-lotus_occurrences
+  - bgc-2324-source-notes
+  - bgc-2324-direct-contexts
+  dimensions:
+  - name: citation_scope
+    value: DOI 10.1111/nph.16338 is retained as compound evidence for the MIBiG claim.
+      LOTUS contributes its own literal citation placements, including repeated taxon/reference
+      pairs and alternate names. Those rows are not independent experiments simply
+      because they occupy separate physical records. Current saved payloads and cache
+      stanzas were read; primary papers, organism authorities and experimental methods
+      were not freshly verified.
+    definition: Citation roles remain database assertions; no publication independence
+      or fresh source access is assumed.
+    evidence_ids:
+    - bgc-2324-grounding-owner
+    - bgc-2324-origin-owner
+    - bgc-2324-source-mibig_compounds
+    - bgc-2324-source-lotus_occurrences
+    - bgc-2324-source-notes
+    - bgc-2324-direct-contexts
+- assessment_id: bgc-2324-occurrence
+  area: evidence
+  topic: Occurrence and assay scope
+  outcome: supported
+  summary: All 53 retained LOTUS payloads are included in the saved source scope.
+    The owner writes 25 occurrences and explicitly notes 28 further rows; this presentation
+    boundary does not justify silently dropping retained evidence or interpreting
+    53 rows as 53 studies. Occurrence taxa include broad and historically named contexts
+    distinct from the Arabidopsis producer. Cached Lathyrus oleraceus/Pisum sativum
+    and Vitellaria/Butyrospermum synonym evidence is local only. No actual saved assay
+    match or written bioactivity is present; absence is bounded to these snapshots
+    and predicates.
+  target_ids:
+  - naturalproductmech:mibig-21e4f2495f
+  evidence_ids:
+  - bgc-2324-occurrence-owner
+  - bgc-2324-assay-owner
+  - bgc-2324-source-lotus_occurrences
+  - bgc-2324-query-lotus_occurrences
+  - bgc-2324-query-chebi_origins
+  - bgc-2324-query-cyanometdb_occurrences
+  - bgc-2324-query-pubchem_bioassay
+  - bgc-2324-query-bindingdb_targets
+  - bgc-2324-query-antibioticmech_inchikeys
+  - bgc-2324-source-routes
+  - bgc-2324-cached-taxonomy
+  - bgc-2324-source-notes
+  dimensions:
+  - name: occurrence_scope
+    value: All 53 retained LOTUS payloads are included in the saved source scope.
+      The owner writes 25 occurrences and explicitly notes 28 further rows; this presentation
+      boundary does not justify silently dropping retained evidence or interpreting
+      53 rows as 53 studies. Occurrence taxa include broad and historically named
+      contexts distinct from the Arabidopsis producer. Cached Lathyrus oleraceus/Pisum
+      sativum and Vitellaria/Butyrospermum synonym evidence is local only. No actual
+      saved assay match or written bioactivity is present; absence is bounded to these
+      snapshots and predicates.
+    definition: Occurrence assertions are not counts of independent experiments or
+      producers.
+    evidence_ids:
+    - bgc-2324-occurrence-owner
+    - bgc-2324-assay-owner
+    - bgc-2324-source-lotus_occurrences
+    - bgc-2324-query-lotus_occurrences
+    - bgc-2324-query-chebi_origins
+    - bgc-2324-query-cyanometdb_occurrences
+    - bgc-2324-query-pubchem_bioassay
+    - bgc-2324-query-bindingdb_targets
+    - bgc-2324-query-antibioticmech_inchikeys
+    - bgc-2324-source-routes
+    - bgc-2324-cached-taxonomy
+    - bgc-2324-source-notes
+  - name: assay_target_scope
+    value: No written bioactivity and no actual match in the exact retained PubChem/BindingDB/AntibioticMech
+      joins; a bounded source result, not global inactivity or absence.
+    definition: Written claims and exact retained assay/target routes are bounded;
+      no global biological absence claim.
+    evidence_ids:
+    - bgc-2324-occurrence-owner
+    - bgc-2324-assay-owner
+    - bgc-2324-source-lotus_occurrences
+    - bgc-2324-query-lotus_occurrences
+    - bgc-2324-query-chebi_origins
+    - bgc-2324-query-cyanometdb_occurrences
+    - bgc-2324-query-pubchem_bioassay
+    - bgc-2324-query-bindingdb_targets
+    - bgc-2324-query-antibioticmech_inchikeys
+    - bgc-2324-source-routes
+    - bgc-2324-cached-taxonomy
+    - bgc-2324-source-notes
+- assessment_id: bgc-2324-classification
+  area: consistency
+  topic: Computed classification applicability
+  outcome: supported
+  summary: NPClassifier npclassifier.gnps2.org@2026-09-07 retains Terpenoids / Triterpenoids
+    / Lanostane, Tirucallane and Euphane triterpenoids with is_glycoside false. The
+    C30 carbocyclic monoalcohol topology is compatible with that broad structural
+    scope. It does not itself establish an experimentally demonstrated family assignment
+    or resolve natural identity; model, source classes and producer evidence remain
+    separate.
+  target_ids:
+  - naturalproductmech:mibig-21e4f2495f
+  evidence_ids:
+  - bgc-2324-classification-owner
+  - bgc-2324-source-npclassifier
+  - bgc-2324-source-mibig_compounds
+  - bgc-2324-chemistry
+  - bgc-2324-topology
+  - bgc-2324-structure-schema
+  - bgc-2324-classification-seeder
+  dimensions:
+  - name: classification_applicability
+    value: NPClassifier npclassifier.gnps2.org@2026-09-07 retains Terpenoids / Triterpenoids
+      / Lanostane, Tirucallane and Euphane triterpenoids with is_glycoside false.
+      The C30 carbocyclic monoalcohol topology is compatible with that broad structural
+      scope. It does not itself establish an experimentally demonstrated family assignment
+      or resolve natural identity; model, source classes and producer evidence remain
+      separate.
+    definition: Model filing labels, observed topology and source BGC classes remain
+      distinct axes.
+    evidence_ids:
+    - bgc-2324-classification-owner
+    - bgc-2324-source-npclassifier
+    - bgc-2324-source-mibig_compounds
+    - bgc-2324-chemistry
+    - bgc-2324-topology
+    - bgc-2324-structure-schema
+    - bgc-2324-classification-seeder
+- assessment_id: bgc-2324-completion
+  area: completeness
+  topic: Scientific completion
+  outcome: unknown
+  summary: Complete owner/history, actual intake, all 53 retained occurrence payloads,
+    exact source/cache scope and both molecular tables have been reviewed. No mechanism
+    root or selected reader applies. Full QC, complete OAK authority coverage and
+    fresh primary/identity verification remain unavailable; completion is partial
+    and no source/native-status/history edit is made.
+  target_ids:
+  - naturalproductmech:mibig-21e4f2495f
+  evidence_ids:
+  - bgc-2324-owner
+  - bgc-2324-capture
+  - bgc-2324-intake
+  - bgc-2324-plan
+  - bgc-2324-intake-acceptance
+  - bgc-2324-inventory-acceptance
+  - bgc-2324-plan-acceptance
+  - bgc-2324-source-notes
+  - bgc-2324-curation-scope
+  - bgc-2324-diagnostic-execution
+  - bgc-2324-diagnostic-acceptance
+  - bgc-2324-native-acceptance
+  - bgc-2324-review-profile
+  - bgc-2324-review-skill
+  dimensions:
+  - name: review_completion
+    value: 'Partial: actual retained evidence and required local reader preservation
+      assessed where applicable; full QC/OAK and fresh primary/identity authority
+      unavailable.'
+    definition: Completion reflects actual evidence access and check coverage; parsing
+      and gate success are not scientific proof.
+    evidence_ids:
+    - bgc-2324-owner
+    - bgc-2324-capture
+    - bgc-2324-intake
+    - bgc-2324-plan
+    - bgc-2324-intake-acceptance
+    - bgc-2324-inventory-acceptance
+    - bgc-2324-plan-acceptance
+    - bgc-2324-source-notes
+    - bgc-2324-curation-scope
+    - bgc-2324-diagnostic-execution
+    - bgc-2324-diagnostic-acceptance
+    - bgc-2324-native-acceptance
+    - bgc-2324-review-profile
+    - bgc-2324-review-skill
+findings: []
+actions: []
+limitations:
+- All evidence is retained locally. No external identifier, taxonomy, primary publication,
+  protein sequence or natural stereochemical assignment was refreshed under the absolute
+  no-request instruction.
+- Full QC and complete OAK authority coverage remain unavailable. Local gate, parse
+  and maintained-reader success establish only their explicit mechanical scope.
+- Exact no-match joins are bounded by saved predicates/snapshots. Shared names, loci,
+  taxa, citations or companions do not transfer compound-specific production, activity,
+  mechanism or independent-study status.
+- Two original undefined-stereo warnings are global and unassigned. No additional
+  molecular/YAML parse, source query or target invocation occurred during this scientific
+  authoring.
+- No source record, native status or history is edited. Any supported future correction
+  belongs to the maintained source/curator owners listed in the actual canonical intake.
+- The whole selected owner was read, but scientific completion is partial because
+  full QC, complete ontology authority coverage and external source verification were
+  unavailable. No native status or history was changed.
+- The branch uses cached base ce6a5498df5be51116bd5e0c119023ee62bb5464. Fresh origin/main
+  verification and publication are deferred because the user prohibits all external
+  requests.
+notes:
+- Complete owner/history and actual intake were read. Full source payload meanings
+  and direct-companion/raw-history carries remain explicitly attributed in pinned
+  source notes.
+- 'BGC personally read all ten first-five molecular forms: 236 atom rows / 260 bond
+  rows plus complete scalars, ring/stereo/motif tables and original comparisons/maps.
+  Diagnostic indices are zero-based, not biochemical locants.'
+- ROOT operated original activation/capture, collector/composer, canonical intakes
+  and chemistry; Native operated original gates and maintained readers. BGC authored
+  source planning and these scientific assessments without invoking any target during
+  scientific authoring.
+- Saved review coverage is distinct from the native SEEDED/REVIEWED curation state.
+  Proposed actions are not performed edits.
+tags:
+- offline
+- record-review
+- batch-233
