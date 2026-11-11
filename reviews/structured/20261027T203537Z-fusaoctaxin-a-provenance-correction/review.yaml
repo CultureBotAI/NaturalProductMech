@@ -1,0 +1,916 @@
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: self_review
+  independence_basis: This is an additive self-correction of this team's earlier saved
+    review. The team did not author or modify the scientific owner or its maintained
+    source inputs. Scientific interpretations and original source-access clocks are
+    retained; independent peer review is documented separately.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261027T203537Z-fusaoctaxin-a-provenance-correction
+title: Fusaoctaxin A scientific review with corrected local-input provenance
+started_at: '2026-10-27T20:34:38.753749Z'
+finished_at: '2026-10-27T20:35:37.312086Z'
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: 'This linked observation corrects a missing declared local input in the earlier
+  review: the cited structure_corrections.py module is now included in a fresh official
+  inspection, together with the immutable predecessor. The original review remains
+  unchanged and retains its historical provenance omission. The retained fusaoctaxin
+  A encodings agree internally but conflict constitutionally with the cited primary
+  octapeptide: an Ala–Ile amide nitrogen is replaced by carbon. This review adopts
+  a blocker-severity identity finding with provisional certainty. The primary supports
+  PH-1-derived engineered production and contextual biosynthesis, while exact locus
+  mapping, a verified replacement structure and condition-independent virulence remain
+  unresolved.'
+source:
+  git_revision: 14373517042b407747272446f79953ae86d51fa4
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/fusaoctaxin-a.yaml
+    sha256: 25bf686c5cf54f019ae9d48787fa258fdae3206fe699364921b52f5d2846f6a3
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: reviews/structured/20261027T200327Z-fusaoctaxin-a/review.yaml
+    sha256: f29b32cf7e6e709ecf5d757f33896a40f76ac7650bccfd1b826e929c0857cd90
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: 11808e60990b3520dbe8f9c50f6574f54cd32165185577a699f988c77f3d27ec
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+targets:
+- target_id: naturalproductmech:mibig-350f9389f0
+  path: data/natural_products/amino_acids_and_peptides/fusaoctaxin-a.yaml
+  label: fusaoctaxin A
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+scope:
+  description: Review the retained fusaoctaxin A constitutional identity against the
+    cited primary octapeptide and exact local graph, together with bounded production,
+    biosynthetic and assay evidence. Assess the observed C-for-N backbone discrepancy
+    separately from natural stereochemistry, replacement identity and condition-dependent
+    phenotypes.
+  selection: One owner selected in canonical unreviewed path order as campaign review720;
+    whole owner and all retained source rows read, with primary main-text and caption
+    evidence and a distinct own-abstract comparison. This successor addresses provenance
+    for the same campaign target720; it is not an eleventh distinct record or additional
+    coverage.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-350f9389f0
+  exclusions:
+  - target: Verified replacement identity and natural stereochemistry
+    reason: Supplementary spectra, chromatograms and current chemical authorities
+      were not inspected; no corrected structure or compatible ChEBI target was established.
+  - target: Complete locus mapping and universal biological activity
+    reason: Exact accession-coordinate equivalence and condition-independent virulence
+      are unresolved; engineered isolation and distinct assays retain their experimental
+      scope.
+  - target: Whole-owner scientific verification
+    reason: The complete local owner and retained rows were read, but full-owner scientific
+      verification remains false. This report assesses the explicitly bounded evidence;
+      configured validation does not establish all natural-product claims.
+checks:
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its
+    pinned path.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-corpus-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.783967Z;
+    finished 2026-10-25T22:37:16.453216Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.log.
+    Reused for batch072 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch072. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-350f9389f0
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: Fresh canonical reproduction gate passed:all3116 records byte-identical
+    to source seeding; source warnings remain retained.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-reproduction-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784055Z;
+    finished 2026-10-25T22:37:31.682209Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.log.
+    Reused for batch072 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch072. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-350f9389f0
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: Fresh deterministic review queue completed:8922 rows across12 queues. Queue
+    output is not scientific-review coverage.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-review-queue-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just review-queue --tsv /private/tmp/npm-review-queue-batch-036-fresh14373517-001.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.781802Z;
+    finished 2026-10-25T22:37:08.229737Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.log.
+    Reused for batch072 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch072. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-350f9389f0
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking
+    mismatches and4898no-adapter skips remain explicit.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-validate-products-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784040Z;
+    finished 2026-10-25T22:37:32.251879Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.log.
+    Reused for batch072 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch072. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-350f9389f0
+- check_id: shared-qc
+  name: Full repository quality gate on the fresh main baseline
+  status: passed
+  required: true
+  summary: Canonical just qc completed with actual terminal exit0:1024 tests passed,4
+    skipped,2 dependency warnings;3116 records passed closed schema validation, site
+    freshness, byte reproduction and lockfile integrity.22 governed artifacts and15
+    raw inventories passed. Prior DNS failed001 remains preserved.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-qc-attempt-002
+    PYTHONDONTWRITEBYTECODE=1 just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-002 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:40:55.179857Z;
+    finished 2026-10-25T22:46:28.974296Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.log.
+    Reused for batch072 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch072. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-350f9389f0
+- check_id: C-STRICT
+  name: Native strict target validation
+  status: passed
+  required: true
+  summary: The selected owner passed the documented strict validator. This establishes
+    configured consistency only.
+  command: just validate-strict data/natural_products/amino_acids_and_peptides/fusaoctaxin-a.yaml
+    --out /private/tmp/npm-review-work/720/strict.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Actual intake execution finished 2026-10-27T19:59:13.678466Z. Original
+    receipt: /private/tmp/npm-review-work/720/strict-receipt.json.'
+  target_ids:
+  - naturalproductmech:mibig-350f9389f0
+- check_id: SCI720-LOCAL-JOINS
+  name: Exact retained owner and source arrays
+  status: passed
+  required: true
+  summary: The whole owner and all seven retained plus two supplemental array guards
+    match their frozen source pins. This is local source fidelity; official intake
+    remains separate.
+  evidence_ids:
+  - SCI720-LOCAL
+  target_ids:
+  - naturalproductmech:mibig-350f9389f0
+- check_id: SCI720-ENCODING
+  name: Saved two-encoding internal consistency
+  status: passed
+  required: true
+  summary: Saved RDKit 2026.03.5 diagnostics regenerate IYNDWBXTRNUZEP-SZODUKSCSA-N
+    and C37H69N7O10 from both retained encodings, with one fragment, net formal charge
+    zero and identical standardized InChI. Eight tetrahedral observations are specified.
+    Six extra parsed-InChI C(-O)=N flags are imidic representations, not missing C=C
+    geometry. These results support internal encoding consistency only and do not
+    resolve the constitutional conflict with the named primary product.
+  evidence_ids:
+  - SCI720-CHEM
+  target_ids:
+  - naturalproductmech:mibig-350f9389f0
+- check_id: SCI720-OWN-IDENTITY
+  name: Own primary and distinct metadata identities
+  status: passed
+  required: true
+  summary: The complete saved primary owns PMID31100892/PMC6563249/DOI10.3390/toxins11050277.
+    The separate Crossref response owns DOI10.1038/s41467-019-08726-9. They are distinct
+    studies, and their original access objects are preserved.
+  evidence_ids:
+  - SCI720-PRIMARY-IDENTITY
+  - SCI720-NATURE-ABSTRACT
+  target_ids:
+  - naturalproductmech:mibig-350f9389f0
+- check_id: SCI720-NAMED-STRUCTURE
+  name: Retained structure matches the named primary compound
+  status: failed
+  required: true
+  summary: The retained structure has C37H69N7O10 and an Ala–CO–CH2–Ile connection,
+    while the cited primary reports the C36H68N8O10 octapeptide requiring Ala–CO–NH–Ile.
+    Agreement between the two retained encodings does not remove this constitutional
+    conflict.
+  evidence_ids:
+  - SCI720-PRIMARY-IDENTITY
+  - SCI720-CONNECTIVITY
+  - SCI720-CHEM
+  target_ids:
+  - naturalproductmech:mibig-350f9389f0
+- check_id: SCI720-EXACT-LOCUS
+  name: Exact current accession and locus mapping
+  status: unavailable
+  required: true
+  summary: No verified coordinate mapping from article chromosome HG970334.1 to retained
+    CM000576.1:6023471–6078385/BGC0002172 was performed. Experimental pathway context
+    is preserved without a blanket grade change.
+  evidence_ids:
+  - SCI720-LOCAL
+  - SCI720-PRIMARY-BIOSYNTHESIS
+  target_ids:
+  - naturalproductmech:mibig-350f9389f0
+- check_id: SCI720-REPLACEMENT
+  name: Verified replacement structure and natural configuration
+  status: unavailable
+  required: true
+  summary: No replacement encoding/key has been established, and supplementary NMR/Marfey
+    data, figure images and current chemical authorities remain uninspected. A proposed
+    C-for-N repair is not issued as a verified natural structure.
+  evidence_ids:
+  - SCI720-PRIMARY-IDENTITY
+  - SCI720-CONNECTIVITY
+  - SCI720-OWNERSHIP
+  target_ids:
+  - naturalproductmech:mibig-350f9389f0
+- check_id: SCI720-ACTIVITY-SCOPE
+  name: Separate study and endpoint applicability
+  status: passed
+  required: true
+  summary: Wheat-head and coleoptile studies, engineered strains and native parent
+    context, named product and current encoding, and fungal growth versus host invasion
+    endpoints remain distinct.
+  evidence_ids:
+  - SCI720-PRIMARY-BIOSYNTHESIS
+  - SCI720-PRIMARY-ACTIVITY
+  - SCI720-NATURE-ABSTRACT
+  target_ids:
+  - naturalproductmech:mibig-350f9389f0
+- check_id: provenance-correction-inspect
+  name: Fresh official input inspection for linked correction
+  status: passed
+  required: true
+  summary: Captured37 exact working-tree inputs at the same base;35 original hashes
+    unchanged.
+  command: /private/tmp/npm-record-reviews-20261021/.venv/bin/python -B scripts/record_review.py
+    inspect --targets /private/tmp/npm-review-work/shared-next-batch072/provenance-correction-001/targets.yaml
+    --input .claude/skills/curate-yaml-record/references/review-checklist.md --input
+    .claude/skills/review-yaml-record/SKILL.md --input CLAUDE.md --input conf/id_label_targets.yaml
+    --input conf/producer_evidence.tsv --input conf/record_review.yaml --input curation/lotus_occurrence_exclusions.tsv
+    --input curation/mibig_claim_references.tsv --input curation/mibig_locus_evidence_overrides.tsv
+    --input curation/mibig_producer_isolates.tsv --input curation/mibig_producer_strains.tsv
+    --input curation/mibig_structure_corrections.tsv --input curation/mibig_xref_exclusions.tsv
+    --input data/natural_products/PATHS.tsv --input data/natural_products/amino_acids_and_peptides/fusaoctaxin-a.yaml
+    --input data/raw/MANIFEST.yaml --input data/raw/chebi_origins.tsv --input data/raw/chebi_structures.tsv
+    --input data/raw/corpus_taxa.obo --input data/raw/cyanometdb_occurrences.tsv --input
+    data/raw/lotus_occurrences.tsv --input data/raw/mibig_compounds.tsv --input data/raw/npclassifier.tsv
+    --input data/raw/pubchem_bioassay.tsv --input docs/CURATION.md --input docs/HARMONIZATION.md
+    --input docs/record-review-profile.md --input docs/record-reviews.md --input justfile
+    --input schema/record_review.yaml --input scripts/extract_chebi.py --input scripts/extract_mibig.py
+    --input scripts/seed_from_sources.py --input src/naturalproductmech/curate/claim_references.py
+    --input src/naturalproductmech/schema/naturalproductmech.yaml --input src/naturalproductmech/curate/structure_corrections.py
+    --input reviews/structured/20261027T200327Z-fusaoctaxin-a/review.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: Actual execution 2026-10-27T20:33:35.596119Z to 2026-10-27T20:33:36.209039Z.
+    /private/tmp/npm-review-work/shared-next-batch072/provenance-correction-001/inspection-receipt.json.
+    This is source inspection, not a new full scientific review or repeated baseline
+    gate.
+  target_ids:
+  - naturalproductmech:mibig-350f9389f0
+evidence:
+- evidence_id: SCI720-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch072-tentative/tentative-owner-source-inventory-001.json
+  accessed_at: '2026-10-27T19:07:17.051351Z'
+  locator: /entries/9/owner_document; /entries/9/rows; /entries/9/row_guards; /entries/9/supplemental_retained_rows
+  snapshot_sha256: 6cf717ce6358015457417ed0b75ea60d9f1856386950bdbd4e4031ae93d14c5e
+  support: context_only
+  summary: The complete retained owner and seven source arrays contain one MIBiG compound
+    row BGC0002172:3, one LOTUS occurrence and one NPClassifier row; both supplemental
+    arrays are empty. MIBiG and NPClassifier retain the same structure key and SMILES.
+    The LOTUS occurrence is F. graminearum at species level, distinct from the MIBiG
+    PH-1 producer claim. Original source tiers and histories are retained.
+- evidence_id: SCI720-CHEM
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch072-tentative/source-science-preparation/root-tentative72-local-chemical-consistency-and-neighbors-001.json
+  accessed_at: '2026-10-27T19:09:01.174780Z'
+  locator: /records/9/comparisons; /records/9/smiles/computed; /records/9/inchi/computed;
+    /records/9/inchi/unspecified_neighbors
+  snapshot_sha256: c090e31b2d91378398e66010f1f6b709b8aceef3594eba2cbc7404fefa496a88
+  support: supports
+  summary: Saved RDKit 2026.03.5 diagnostics regenerate IYNDWBXTRNUZEP-SZODUKSCSA-N
+    and C37H69N7O10 from both retained encodings, with one fragment, net formal charge
+    zero and identical standardized InChI. Eight tetrahedral observations are specified.
+    Six extra parsed-InChI C(-O)=N flags are imidic representations, not missing C=C
+    geometry. These results support internal encoding consistency only and do not
+    resolve the constitutional conflict with the named primary product.
+- evidence_id: SCI720-PRIMARY-IDENTITY
+  kind: primary_source
+  reference: /private/tmp/npm-review-work/shared-next-batch072-tentative/literature-preparation/public-primary-fusaoctaxin-001/pmc-6563249.xml
+  accessed_at: '2026-10-27T19:26:11.882745Z'
+  locator: .//sec[@id="sec2dot1-toxins-11-00277"]; .//sec[@id="sec4dot5-toxins-11-00277"];
+    .//sec[@id="sec4dot11-toxins-11-00277"]; .//sec[@id="sec4dot12-toxins-11-00277"]
+  snapshot_sha256: 7b1ce6b1dadc9d7cfe22a193909b1366e9f3a749873d0d06b441fc2b58de5aa4
+  support: refutes
+  summary: The own PMID31100892/PMC6563249 article reports isolated fusaoctaxin A
+    as C36H68N8O10, [M+H]+773.5131, with the complete sequence GABA–L-Ala–D-allo-Ile–D-Ser–D-Val–D-Ser–D-Leu–L-leucinol.
+    The text reports NMR and Marfey confirmation. This eight-nitrogen peptide assignment
+    conflicts with the retained seven-nitrogen graph; supplementary spectra and figure
+    images were not inspected.
+- evidence_id: SCI720-CONNECTIVITY
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch072-tentative/source-science-preparation/native-tentative72-720-primary-identity-and-scientific-matrix-001.json
+  accessed_at: '2026-10-27T19:32:11.426595Z'
+  locator: /static_connectivity_and_formula_analysis; /scientific_matrix/0; /candidate_finding
+  snapshot_sha256: 58a9f0941a48875d400d2f38f543c550af4dc1a9d0c2194165b532cec3c9f3b8
+  support: refutes
+  summary: A bounded literal parse of the retained acyclic SMILES identifies 54 atoms
+    and 53 edges. Carbon atom5 (zero-based SMILES text order) lies between the Ala
+    carbonyl and Ile-like alpha carbon where the reported peptide requires an amide
+    nitrogen. Independently, the retained InChI connects carbon16, assigned H2, between
+    carbonyl30 and alpha carbon26. The eight reported free-residue formulas minus
+    seven waters give C36H68N8O10; retained minus reported is +C,+H,−N. No chemical
+    toolkit recomputation or corrected structure was generated.
+- evidence_id: SCI720-PRIMARY-BIOSYNTHESIS
+  kind: primary_source
+  reference: /private/tmp/npm-review-work/shared-next-batch072-tentative/literature-preparation/public-primary-fusaoctaxin-001/pmc-6563249.xml
+  accessed_at: '2026-10-27T19:26:11.882745Z'
+  locator: .//sec[@id="sec2dot1-toxins-11-00277"]; .//sec[@id="sec2dot3-toxins-11-00277"];
+    .//sec[@id="sec2dot4-toxins-11-00277"]; .//sec[@id="sec2dot6-toxins-11-00277"];
+    .//sec[@id="sec4dot1-toxins-11-00277"]; .//sec[@id="sec4dot2-toxins-11-00277"];
+    .//sec[@id="sec4dot4-toxins-11-00277"]; .//sec[@id="sec4dot9-toxins-11-00277"]
+  snapshot_sha256: 7b1ce6b1dadc9d7cfe22a193909b1366e9f3a749873d0d06b441fc2b58de5aa4
+  support: supports
+  summary: Methods identifies PH-1 (NRRL31084) as the parent fungal strain. The named
+    peptide was isolated from engineered OE::NRPS5::NRPS9 cultures. Overexpression,
+    kmt6 deletion and fgm5 deletion with metabolite analysis support contextual assembly,
+    regulation and transporter-dependent cleavage. The chromosome accession used for
+    cluster prediction is HG970334.1; the local CM000576.1 interval is not mapped
+    by this reading.
+- evidence_id: SCI720-PRIMARY-ACTIVITY
+  kind: primary_source
+  reference: /private/tmp/npm-review-work/shared-next-batch072-tentative/literature-preparation/public-primary-fusaoctaxin-001/pmc-6563249.xml
+  accessed_at: '2026-10-27T19:26:11.882745Z'
+  locator: .//sec[@id="sec2dot5-toxins-11-00277"]; .//sec[@id="sec4dot7-toxins-11-00277"];
+    .//sec[@id="sec4dot13-toxins-11-00277"]; .//fig[@id="toxins-11-00277-f003"]/caption
+  snapshot_sha256: 7b1ce6b1dadc9d7cfe22a193909b1366e9f3a749873d0d06b441fc2b58de5aa4
+  support: partial
+  summary: In the Toxins wheat-head experiments, ΔNRPS9 was most virulent and double
+    overexpression less virulent than wild type. Methods specifies USU-Apogee wheat,
+    two inoculated spikelets per ear, five ears per strain and ten-day scoring. Synthetic
+    fusaoctaxin A and cleavage products showed no detected growth toxicity against
+    F. graminearum/F. solani under the stated 12.5–100µM YPG assay at25°C with ethanol
+    control. These results are endpoint- and condition-specific.
+- evidence_id: SCI720-NATURE-ABSTRACT
+  kind: primary_source
+  reference: /private/tmp/npm-review-work/shared-next-batch072-tentative/literature-preparation/public-metadata-crossref-001/crossref-03.json
+  accessed_at: '2026-10-27T19:23:08.137859Z'
+  locator: /message/DOI; /message/title; /message/abstract
+  snapshot_sha256: 994c6b450423b7caed6f55c56535183d2d1f5adae4d849212b237b6ecf6c29bc
+  support: partial
+  summary: The distinct DOI10.1038/s41467-019-08726-9 own abstract reports fg3_54
+    deletion impairing wheat cell-to-cell invasion, regulatory activation, a reduced
+    linear octapeptide, chemical rescue and coleoptile colonization. Its full text
+    was not read. These abstract-level results must remain distinct from the Toxins
+    wheat-head experiments and cannot validate the current discrepant molecular graph.
+- evidence_id: SCI720-ROOT-PRIMARY-READ
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch072-tentative/literature-preparation/root-tentative72-fusaoctaxin-main-article-reading-001.json
+  accessed_at: '2026-10-27T19:29:33.751980Z'
+  locator: /scope; /interpretation; /original_access; /formal_scientific_adjudication
+  snapshot_sha256: 94b3d470f4e3220011964add79332a4418f14bb96fe549c614e8704cb8e20c77
+  support: context_only
+  summary: ROOT separately read the same saved main text and three captions and identified
+    the formula/sequence discrepancy and assay-scope limits. Its reading clock is
+    distinct from original HTTP access; formal adjudication remains null.
+- evidence_id: SCI720-OWNERSHIP
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/curate/structure_corrections.py
+  accessed_at: '2026-10-27T19:35:01.776896Z'
+  locator: apply_structure_corrections; ALLOWED_ACTIONS; required pins; target ownership
+    and migration guards
+  snapshot_sha256: 11808e60990b3520dbe8f9c50f6574f54cd32165185577a699f988c77f3d27ec
+  support: context_only
+  summary: The maintained correction mechanism preserves raw inventories, pins the
+    complete original MIBiG row and a verified three-star ChEBI target, withholds
+    old cross-references and joins other inventories only on their own exact corrected
+    keys. No suitable replacement target or encoding has been established here. A
+    later curator must use a compatible reviewed mechanism rather than rewriting source
+    evidence or transferring old-key annotations automatically.
+- evidence_id: SCI720-RUBRIC
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/docs/record-reviews.md
+  accessed_at: '2026-10-27T19:35:01.776896Z'
+  locator: Verdict And Severity
+  snapshot_sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+  support: context_only
+  summary: The local rubric assigns blocker to wrong identity or a defect that makes
+    a record denote the wrong thing, and major to materially unsupported claims or
+    source/generator errors. Blocker severity concerns impact; this review adopts
+    the finding with provisional certainty.
+- evidence_id: SCI720-PROVENANCE-PREDECESSOR
+  kind: prior_review
+  reference: reviews/structured/20261027T200327Z-fusaoctaxin-a/review.yaml
+  accessed_at: '2026-10-27T20:34:38.753749Z'
+  locator: source.inputs and evidence[SCI720-OWNERSHIP]
+  snapshot_sha256: f29b32cf7e6e709ecf5d757f33896a40f76ac7650bccfd1b826e929c0857cd90
+  support: context_only
+  summary: The earlier immutable review contains35 declared local inputs; the correction
+    module cited by SCI720-OWNERSHIP is omitted. Its scientific blocker remains open
+    and provisional.
+- evidence_id: SCI720-PROVENANCE-INSPECTION
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch072/provenance-correction-001/inspection.json
+  accessed_at: '2026-10-27T20:33:36.209039Z'
+  locator: source.inputs;37 exact current input hashes
+  snapshot_sha256: 29997c4415c23710c6e6a28b39c5aab2b00e6bc17cba894815412b32e94ca76b
+  support: supports
+  summary: Fresh official inspect captures all35 original inputs unchanged, structure_corrections.py
+    and the exact predecessor review. No source or corpus bytes changed.
+assessments:
+- assessment_id: SCI720-ENCODING
+  area: representation
+  topic: Internal encoding consistency
+  outcome: supported
+  summary: Saved RDKit 2026.03.5 diagnostics regenerate IYNDWBXTRNUZEP-SZODUKSCSA-N
+    and C37H69N7O10 from both retained encodings, with one fragment, net formal charge
+    zero and identical standardized InChI. Eight tetrahedral observations are specified.
+    Six extra parsed-InChI C(-O)=N flags are imidic representations, not missing C=C
+    geometry. These results support internal encoding consistency only and do not
+    resolve the constitutional conflict with the named primary product.
+  evidence_ids:
+  - SCI720-CHEM
+  target_ids:
+  - naturalproductmech:mibig-350f9389f0
+- assessment_id: SCI720-IDENTITY
+  area: identity
+  topic: Exact named structure
+  outcome: concern
+  summary: The retained structure has C37H69N7O10 and an Ala–CO–CH2–Ile connection,
+    while the cited primary reports the C36H68N8O10 octapeptide requiring Ala–CO–NH–Ile.
+    Agreement between the two retained encodings does not remove this constitutional
+    conflict.
+  evidence_ids:
+  - SCI720-PRIMARY-IDENTITY
+  - SCI720-CONNECTIVITY
+  - SCI720-LOCAL
+  target_ids:
+  - naturalproductmech:mibig-350f9389f0
+- assessment_id: SCI720-PRODUCER
+  area: provenance
+  topic: PH-1 experimental lineage
+  outcome: supported
+  summary: The primary explicitly identifies PH-1 NRRL31084 as parent and isolates
+    the named peptide from engineered double-overexpression cultures. This supports
+    the experimental lineage, not unqualified basal production under all conditions
+    or the identity of the retained discrepant graph.
+  evidence_ids:
+  - SCI720-PRIMARY-BIOSYNTHESIS
+  target_ids:
+  - naturalproductmech:mibig-350f9389f0
+- assessment_id: SCI720-LOCUS
+  area: provenance
+  topic: Locus and evidence grade
+  outcome: unknown
+  summary: No verified coordinate mapping from article chromosome HG970334.1 to retained
+    CM000576.1:6023471–6078385/BGC0002172 was performed. Experimental pathway context
+    is preserved without a blanket grade change.
+  evidence_ids:
+  - SCI720-LOCAL
+  - SCI720-PRIMARY-BIOSYNTHESIS
+  target_ids:
+  - naturalproductmech:mibig-350f9389f0
+- assessment_id: SCI720-MATURATION
+  area: evidence
+  topic: Assembly and transporter-dependent cleavage
+  outcome: supported
+  summary: Genetic perturbations and metabolite profiles support NRPS5/9 involvement,
+    kmt6-related regulation and fgm5-dependent maturation of the named product. The
+    read main text does not present purified Fgm5 cleavage reconstitution; proposed
+    protection or virulence roles are not promoted to established universal mechanisms.
+  evidence_ids:
+  - SCI720-PRIMARY-BIOSYNTHESIS
+  target_ids:
+  - naturalproductmech:mibig-350f9389f0
+- assessment_id: SCI720-OCCURRENCE
+  area: provenance
+  topic: Species occurrence and exact structure linkage
+  outcome: concern
+  summary: The LOTUS occurrence cites the Nature study at F. graminearum species level.
+    Its abstract supports a named fusaoctaxin A product in that species, but does
+    not validate the local incorrect key or automatically transfer this occurrence
+    to a future replacement encoding.
+  evidence_ids:
+  - SCI720-LOCAL
+  - SCI720-NATURE-ABSTRACT
+  - SCI720-CONNECTIVITY
+  target_ids:
+  - naturalproductmech:mibig-350f9389f0
+- assessment_id: SCI720-VIRULENCE
+  area: evidence
+  topic: Wheat-head versus coleoptile findings
+  outcome: unknown
+  summary: The two studies give different virulence results in different assay contexts.
+    Toxins reports the strongest wheat-head disease for ΔNRPS9 and reduced disease
+    for double overexpression; the distinct Nature abstract reports cell-to-cell invasion
+    rescue and coleoptile colonization. Neither universal virulence nor universal
+    inactivity is concluded.
+  evidence_ids:
+  - SCI720-PRIMARY-ACTIVITY
+  - SCI720-NATURE-ABSTRACT
+  target_ids:
+  - naturalproductmech:mibig-350f9389f0
+- assessment_id: SCI720-GROWTH
+  area: evidence
+  topic: Bounded fungal growth assay
+  outcome: supported
+  summary: The Toxins study reports no detected growth toxicity of its synthesized
+    named peptide and cleavage products against the tested Fusarium strains at12.5–100µM
+    under its stated assay conditions. This is bounded negative evidence, not a general
+    absence of activity or an assigned MIC.
+  evidence_ids:
+  - SCI720-PRIMARY-ACTIVITY
+  target_ids:
+  - naturalproductmech:mibig-350f9389f0
+- assessment_id: SCI720-STEREOCHEMISTRY
+  area: identity
+  topic: Natural configuration and replacement
+  outcome: unknown
+  summary: The paper reports residue stereochemistry using NMR and Marfey analysis,
+    and the current encoding has specified tetrahedra. The current constitutional
+    defect prevents treating that internal stereochemical completeness as correct
+    natural identity. Supporting spectra/images and a verified replacement remain
+    unavailable in this scope.
+  evidence_ids:
+  - SCI720-CHEM
+  - SCI720-PRIMARY-IDENTITY
+  - SCI720-CONNECTIVITY
+  target_ids:
+  - naturalproductmech:mibig-350f9389f0
+- assessment_id: SCI720-OWNERSHIP
+  area: ownership
+  topic: Source preservation and correction route
+  outcome: supported
+  summary: BGC0002172:3 is the exact retained source row. The existing correction
+    pathway preserves raw source inventories and requires pinned target ownership.
+    Current wrong-key LOTUS, NPClassifier and NPA032876 associations must not be silently
+    carried to a proposed replacement. No current mutation or unsupported ChEBI target
+    is proposed.
+  evidence_ids:
+  - SCI720-LOCAL
+  - SCI720-OWNERSHIP
+  target_ids:
+  - naturalproductmech:mibig-350f9389f0
+- area: provenance
+  topic: Additive correction of local-input declaration
+  outcome: supported
+  target_ids:
+  - naturalproductmech:mibig-350f9389f0
+  evidence_ids:
+  - SCI720-PROVENANCE-PREDECESSOR
+  - SCI720-PROVENANCE-INSPECTION
+  - SCI720-OWNERSHIP
+  summary: The current successor explicitly captures the local correction mechanism
+    and predecessor. The earlier manifest omission remains a disclosed historical
+    limitation; the same scientific finding continues through exact predecessor linkage.
+  assessment_id: AS720-PROVENANCE-CORRECTION
+findings:
+- finding_id: F720-FUSAOCTAXIN-CONSTITUTIONAL-IDENTITY
+  issue_key: fusaoctaxin-a-constitutional-identity-ala-ile-amide-link
+  category: identity
+  severity: blocker
+  status: open
+  certainty: provisional
+  title: Fusaoctaxin A encoding replaces a peptide nitrogen with carbon
+  description: The retained MIBiG-derived fusaoctaxin A graph is C37H69N7O10, while
+    the cited primary reports C36H68N8O10 and the full eight-residue sequence. Literal
+    SMILES connectivity and the independent InChI layer both show Ala–CO–CH2–Ile where
+    the reported octapeptide requires Ala–CO–NH–Ile. The constitutional difference
+    is +C,+H,−N and persists across both internally matching encodings. The candidate
+    concerns named-compound identity, not just formula wording, stereochemistry or
+    assay disagreement. No corrected structure has been generated.
+  target_ids:
+  - naturalproductmech:mibig-350f9389f0
+  field_paths:
+  - chemical_structure.smiles
+  - chemical_structure.standard_inchi
+  - chemical_structure.standard_inchi_key
+  - chemical_structure.structure_source_id
+  evidence_ids:
+  - SCI720-LOCAL
+  - SCI720-CHEM
+  - SCI720-PRIMARY-IDENTITY
+  - SCI720-CONNECTIVITY
+  - SCI720-RUBRIC
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: maintained correction decisions; usable only with a verified compatible
+      target
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/structure_corrections.py
+    role: maintained pinned correction and identity-migration guards
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: maintained generator consuming corrected source copies
+  - repository: CultureBotAI/NaturalProductMech
+    path: tests/test_structure_corrections.py
+    role: maintained correction regression tests
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: retained source evidence; preserve original row
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/amino_acids_and_peptides/fusaoctaxin-a.yaml
+    role: generated owner; do not hand-edit as sole remediation
+  rule_id: named-compound-identity-must-match-supported-constitutional-structure
+  native_severity: blocker for wrong molecular identity
+  normalization_reason: 'The local rubric assigns blocker to wrong identity or a record
+    denoting the wrong thing. The observed C-for-N backbone substitution changes molecular
+    identity, so this review adopts blocker severity rather than major unsupported-provenance
+    severity. Certainty remains provisional: unread supporting spectra limit replacement
+    verification, not the observed source/graph discrepancy.'
+  previous_occurrences:
+  - repository: CultureBotAI/NaturalProductMech
+    review_id: 20261027T200327Z-fusaoctaxin-a
+    finding_id: F720-FUSAOCTAXIN-CONSTITUTIONAL-IDENTITY
+actions:
+- action_id: A720-VERIFY-AND-CORRECT-FUSAOCTAXIN-IDENTITY
+  finding_ids:
+  - F720-FUSAOCTAXIN-CONSTITUTIONAL-IDENTITY
+  target_ids:
+  - naturalproductmech:mibig-350f9389f0
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: maintained correction decisions; usable only with a verified compatible
+      target
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/structure_corrections.py
+    role: maintained pinned correction and identity-migration guards
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: maintained generator consuming corrected source copies
+  - repository: CultureBotAI/NaturalProductMech
+    path: tests/test_structure_corrections.py
+    role: maintained correction regression tests
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: retained source evidence; preserve original row
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/amino_acids_and_peptides/fusaoctaxin-a.yaml
+    role: generated owner; do not hand-edit as sole remediation
+  description: In later curation, independently establish the reported octapeptide
+    structure and stereochemical assignment from primary and supporting evidence,
+    then record a reviewed replacement through a compatible pinned source-correction
+    and identity-migration mechanism. Preserve the original MIBiG row and its source
+    attribution. The current correction module requires a verified three-star ChEBI
+    target; no such target has been established here, so do not force an invented
+    target or unsupported action. If an extension is necessary, implement a narrowly
+    guarded, reviewed route before regeneration. Reconcile exact-key occurrence/classifier/cross-reference
+    ownership and retained history; do not transfer LOTUS, NPClassifier or NPA032876
+    associations merely because the label is unchanged.
+  acceptance_checks:
+  - Verify the constitutional sequence, formula and supporting stereochemical assignment;
+    supply reviewed replacement SMILES/InChI/key only after that evidence is checked.
+  - Pin the complete original BGC0002172:3 row and any verified target/source evidence;
+    preserve raw inventory bytes and provenance rather than rewriting the historical
+    source row.
+  - Test source-drift rejection, identity collision/split rules, old-key cross-reference
+    withholding and exact-key joins under the selected correction mechanism. Do not
+    assume the current ChEBI-only interface accepts an unverified replacement.
+  - Regenerate through the maintained source pipeline, preserve prior curation/history
+    appropriately and check any changed identity ownership, LOTUS occurrence, NPClassifier
+    result, NPA cross-reference and locus/producer links separately.
+  - Run the applicable correction regression tests, strict record checks and documented
+    reproduction gate after authorized curation. These are future acceptance checks,
+    not actions performed in this preparation.
+  generator: scripts/seed_from_sources.py::build_records via naturalproductmech.curate.structure_corrections.apply_structure_corrections,
+    subject to a verified compatible target
+limitations:
+- Primary scope comprises the complete saved Toxins main text and three figure captions;
+  supplementary spectra, Marfey chromatograms, images, cited papers and current authority
+  records were not inspected.
+- The distinct Nature source was read only through its own supplied Crossref abstract.
+  Its coleoptile invasion result and the Toxins wheat-head experiments remain separate;
+  no universal virulence or inactivity conclusion is made.
+- No replacement structure, corrected key, ChEBI target, current database mapping
+  or verified coordinate equivalence was generated. Internal two-encoding agreement
+  does not remove the named-identity conflict.
+- Blocker severity addresses impact under the local rubric. This review adopts the
+  finding and its conditional curation action with provisional certainty; it does
+  not establish a verified replacement structure or perform a correction.
+- Original inventory, ROOT reading, chemical computation, HTTP access and later scientific
+  interpretation clocks are preserved separately. Full-owner scientific verification
+  remains false.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- FailedQC001 is retained for an explicit separate network-enabled retry; no artifact
+  will be overwritten.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint
+  and before downstream tests. Its actual exit1/log/input capture/root observation
+  remain pinned; the selected successful canonical QC attempt002 is separately timed.
+  No individual-review validation failure or counter reset is claimed.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter
+  skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings;
+  this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld
+  nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological
+  or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological
+  production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions
+  and no-adapter pairs; a successful command does not convert these into verified
+  scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command
+  execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population
+  was checked; external caches and generated bytecode are not asserted to be independently
+  byte-pinned.
+notes:
+- The whole local owner and retained source rows were read. Full-owner scientific
+  verification remains false; scientific_review denotes the bounded scientific interpretation
+  in this report.
+- Original owner/source reading, two-encoding computation, neighbor inspection, HTTP
+  retrieval and later metadata reading retain separate clocks. Official intake separately
+  computed SMILES facts.
+- No scientific record, maintained input or native curation status was changed. Any
+  findings and actions record ROOT-adopted proposed work; exact-source limitations
+  and unavailable checks remain explicit.
+- The earlier saved review cites SCI720-OWNERSHIP without listing structure_corrections.py
+  in source.inputs. Its snapshot hash and retained source bytes were already recorded,
+  but that does not retroactively repair its declared input manifest. This successor
+  includes the exact module through a fresh official inspection and retains the earlier
+  report as a separately hashed working-tree context input.
+- All preexisting scientific evidence, assessments, actions, limitations and gate
+  execution clocks are retained verbatim. This observation does not claim a new literature
+  retrieval, repeated native gate, new chemical calculation or resolved scientific
+  finding.
+- The predecessor context review is an uncommitted working-tree input at the stated
+  Git base and will accompany this successor in the same commit. It is not claimed
+  to have existed as a blob in the base commit.
+related_reviews:
+- repository: CultureBotAI/NaturalProductMech
+  review_id: 20261027T200327Z-fusaoctaxin-a
+  relationship: Additive provenance correction and scientific finding continuation;
+    preserves the earlier immutable report and its disclosed missing source input.
