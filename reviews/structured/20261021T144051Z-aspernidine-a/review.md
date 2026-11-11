@@ -1,0 +1,1339 @@
+# Aspernidine A: activated native locus and host-occurrence attribution
+
+- Review: 20261021T144051Z-aspernidine-a
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-21T14:24:40.032394Z
+- Finished UTC: 2026-10-21T14:40:51.893207Z
+- Reviewer: Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The exact aspernidine A structure and fungal isolation are supported. The locus citation and method must distinguish the activated FGSC1404 experiment from the A4 reference genome, and the plant occurrence conflates a fungal host with chemical source. A minor imported organism-name typo also needs a reproducible source correction.
+
+## Scope And Provenance
+
+One complete generated owner and any referenced components, assessed claim by claim for exact identity, provenance, origin, producer and occurrence scope, biosynthesis, classification, optional content and audit history.
+
+Selection: Campaign record 82, batch 009, selected in path order from the fresh-main authoritative validated catalogue and the separately validated targets in earlier batch commits (publication tracked separately). At selection, 134 of 3116 current records had campaign coverage and 2982 remained. The population search included ignored files. Exactly one target is assessed here.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 1c2402097718c138b081e00943de8f04de0541cd.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CHEBI:74221 | data/natural_products/alkaloids/aspernidine-a.yaml | generated | aspernidine A |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Closed-schema target validation | passed | True | CHEBI:74221 | The documented target strict validator completed; scientific support is assessed separately. |
+| Corpus path and filing integrity | passed | True | CHEBI:74221 | All 3,116 current record files agree with PATHS.tsv and their pinned filing pathways. |
+| Corpus reproduction | passed | True | CHEBI:74221 | All 3,116 current records passed the documented byte-reproduction gate against committed inventories and maintained curation inputs. |
+| Native deterministic review queue | passed | True | CHEBI:74221 | The exhaustive review queue produced 8,928 diagnostic rows across 12 queues; this deterministic output does not establish scientific review. |
+| Configured ontology identifier-label correspondence | passed | True | CHEBI:74221 | The configured identifier-label gate passed using the existing ontology caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions, 499 warning-only mismatches and 4,744 pairs skipped because their prefixes have no adapter. |
+| Full repository quality gate on the current main baseline | passed | True | CHEBI:74221 | The full documented just qc recipe passed on the unchanged main baseline during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). All configured lint, governance, documentation, provenance, source-queue, schema, rendering, reproduction, filing-integrity and reporting stages completed successfully. |
+| Complete owner and component scope | passed | True | CHEBI:74221 | Complete owner and all matching local source rows read. The native resolved view confirms the empty component-reference set; all formal input hashes agree. |
+| Locus citation and genotype-specific experiments are represented | failed | True | CHEBI:74221 | The owner cites an isolation source as locus evidence and omits the later exact genetic experiments and their activation background. A blanket native knockout upgrade would wrongly merge reference stock and experimental strain. |
+| Plant occurrence has direct source support | failed | True | CHEBI:74221 | The cited primary identifies the fungus HK-ZJ as the chemical source and Aegiceras as its host. |
+| Exact parent graph and primary structure comparison | passed | True | CHEBI:74221 | Exact graph, stereochemical resolution and original A characterization are checked; no primary chemical-identity access gap remains. Biological citation scope is assessed separately. |
+
+## Scientific And Domain Assessments
+
+### Native status and retained history
+
+provenance: supported. Targets: CHEBI:74221.
+
+The dated SEEDED_FROM_SOURCES entries and retained SEEDED status describe generated provenance. The review does not promote native status or add a curation event.
+
+### Optional mechanism, activity and application scope
+
+completeness: not_applicable. Targets: CHEBI:74221.
+
+The complete owner has no structured pathway, causal graph, molecular target, activity, clinical status, application, cross-corpus link or discussion claim. Optional enrichment is separate from correcting present assertions; no mechanism or activity is inferred from the compound name or computed class.
+
+### Computed filing and source-asserted classes
+
+representation: supported. Targets: CHEBI:74221.
+
+The owner reproduces its exact-key NPClassifier row, including model version npclassifier.gnps2.org@2026-09-07, Alkaloids filing, every returned superclass/class label and false glycoside flag. These are explicitly computed predictions, not experimental proof of precursor use, ring taxonomy, natural origin or exact stereochemical identity. BGC class claims retain their separate MIBiG provenance and biological assessment.
+
+### Structured transcriptomic context
+
+completeness: not_applicable. Targets: CHEBI:74221.
+
+The asserted native producer and exact biosynthetic locus lack a matching dataset in the inspected catalogue. No coexpression/module-membership claim is present in this owner. Recombinant E. coli, yeast or A. oryzae work is not substituted for native-producer transcriptomic evidence. Database noncoverage is not negative biological evidence; paper-specific expression experiments are assessed separately.
+
+### Literal LOTUS organism-identifier routing
+
+provenance: supported. Targets: CHEBI:74221.
+
+Every literal organism entity in the matching LOTUS rows resolves to its retained species and NCBI taxon identifier. Compound occurrence, experimental host versus substrate and strain-level taxonomy require the separate primary-source assessment.
+
+### Exact native isolation and the definition
+
+evidence: supported. Targets: CHEBI:74221.
+
+A. nidulans AXB4A2 isolation supports natural origin, the emitted species occurrence and the definition’s fungal-source statement. The source specifies A1 versus B2. Moderate antiproliferative observations and later antiviral screening do not require inventing an optional molecular-target mechanism in this sparse owner.
+
+### Reference locus and activated native genetic experiment
+
+evidence: concern. Targets: CHEBI:74221.
+
+The deposited A4 interval exactly carries the six annotated primary loci. The complete 2013 study demonstrates their necessity for A8 in mpkAΔ FGSC1404, a homologous native mutant experiment. It does not show that unmodified A4 produces A under those conditions. Retain reference-genome attribution separately from the experimental stock and do not mechanically apply the two-claim knockout mapping.
+
+### Host versus compound occurrence
+
+evidence: concern. Targets: CHEBI:74221.
+
+The plant triple is not an independent plant detection. It conflates the host from which the fungus was collected with the organism whose extract yielded aspernidine A. Withhold that exact triple while preserving its source provenance; do not invent a more specific fungal taxon from the genus-level HK-ZJ name.
+
+### Experimentally supported broad class versus proposed individual steps
+
+representation: supported. Targets: CHEBI:74221.
+
+The native pkfA deletion supports a polyketide contribution. Intermediates and gene annotations inform a proposed farnesylated isoindolinone pathway; they do not independently prove each enzyme arrow. The present definition is structurally consistent and the optional pathway is not mandatory.
+
+### Exact A constitution, geometry, grounding and literal PubChem
+
+identity: supported. Targets: CHEBI:74221.
+
+The owner denotes neutral C24H33NO4, with two E alkenes and no tetrahedral stereocentres. Current MIBiG, eligible three-star ChEBI 74221 and literal PubChem 45359507 agree at full identity and fixed-H representation. Primary A/B distinction and chemical characterization support exact A.
+
+### Imported genus spelling
+
+nomenclature: concern. Targets: CHEBI:74221.
+
+The chemical definition fits the structure but spells Aspergillus as Aspegillus. This bounded imported typo does not change identity.
+
+## Findings
+
+### S082-F-LOCUS: Separate the A4 reference locus from the activated native pkf experiment
+
+major / open / confirmed; issue key: mibig-bgc0001722-compound1-pkf-experimental-context.
+
+The record routes the 2010 AXB4A2 isolation citation to an A4 reference locus and gives no method. Complete 2013 main/SI demonstrate exact A8 loss after six native pkf deletions in mpkAΔ FGSC1404. Both the missing locus citation/method and the strain distinction must be repaired together; unmodified A4 production is not established by this experiment.
+
+### S082-F-PLANT: The plant occurrence cites isolation from an endophytic fungus
+
+major / open / confirmed; issue key: lotus-aspernidine-a-aegiceras-host-scope.
+
+The exact primary abstract names aspernidine A among the Emericella HK-ZJ metabolites. Aegiceras corniculatum is its host, so this citation does not support the emitted plant occurrence.
+
+### C082-F-DEFINITION-SPELLING: Imported definition misspells Aspergillus
+
+minor / open / confirmed; issue key: chebi-74221-definition-aspegillus-typo.
+
+The definition literally says Aspegillus nidulans, whereas the cited original paper and existing organism labels identify Aspergillus nidulans. Only the imported genus spelling requires correction.
+
+## Recommended Actions And Acceptance Checks
+
+### S082-ACT-LOCUS
+
+Use source_id=BGC0001722:1 and full original-row expected_source_row_sha256=a8ad4216fe72bb37b3218f8efb2a393f61614edf9234e67ebc767f707e1b3b6c. Existing citation routing can retain producer_reference=DOI:10.1038/ja.2010.46, select locus_reference=PMID:23706169 and source_reference=PMID:23706169, with a dated rationale explicitly saying the original producer citation describes AXB4A2 and the later experiment uses mpkAΔ FGSC1404. This is citation scope, not new proof of A4 production. Before adding a locus demonstration, implement a typed, consumed claim-specific experimental-context extension in the maintained citation/method/seeder contracts that retains taxon 227321 as the reference-genome assertion, preserves SOURCE_ASSERTION for that producer, and permits the demonstrated homologous pkf locus only with the stated mutant background and feature bridge. Do not use plain Knock-out REPLACE, which currently upgrades both claims, or write FGSC1404 into the strain field under an unchanged A4-specific taxon. Do not change the global method semantics to solve this single case. The extension must bind the original whole row, both primary sources and the accession interval, emit CURATOR_INFERENCE for the contextual adjudication, preserve imported facts, and fail if the required paired context is removed. A separately admitted experimental producer requires independently grounded identity rather than a name-only stock substitution. No reserved decisions.tsv route is proposed.
+
+- Reject drift in any source field, duplicate decisions, mismatched locus interval or a method correction lacking its required context guard.
+- Producer remains the qualified source assertion for the A4 reference taxon; no evidence claims the unmodified reference stock underwent the reported deletions or produced A under the tested conditions.
+- Locus notes retain exact FGSC1404 mpkAΔ background, AN3225–AN3230 necessity, native rather than heterologous context and the2013 citation. Any locus-grade upgrade is conditional on the implemented typed context contract.
+- The2010 AXB4A2 occurrence and original citation provenance remain visible, without being presented as a2013 locus experiment.
+- Test citation/context/method composition and the independent plant exclusion together. Chemistry is unchanged; any future structure correction must address the current explicit consumer incompatibility.
+- Run exact-target seed and documented strict/reproduction/corpus/QC gates after implementation; none were run here.
+
+### S082-ACT-PLANT
+
+Add the consumed LOTUS exclusion {"expected_source_row_sha256": "bd4991563a13a78808be63d47113ff43782a9394f48260056f17a7cc8cf222a9", "reference_doi": "10.1016/J.PHYTOCHEM.2011.04.014", "standard_inchi_key": "PHOZASLNSDMYGR-VZRGJMDUSA-N", "taxon_id": "NCBITaxon:59970"}, reference=PMID:21601895 and dated curator rationale distinguishing HK-ZJ fungal material from the host plant. Preserve raw inventory and the excluded-triple discussion. Do not automatically add an Emericella occurrence or map HK-ZJ to A. nidulans; that requires separate grounded admission.
+
+- Match exactly one original whole row and fail on any drift or duplicate.
+- Withhold only the plant triple; preserve the supported2010 A. nidulans occurrence and chemical identity.
+- Retain the source and precise host-versus-fungus reason in the generated exclusion discussion.
+- Exercise combined exclusion and locus-context changes, then run documented native checks after implementation.
+
+### C082-A-DEFINITION
+
+Implement a typed, consumed definition text correction in the ChEBI extraction/seeding path keyed to CHEBI:74221, exact key PHOZASLNSDMYGR-VZRGJMDUSA-N, full current parsed raw-row SHA256 e05162fd8a7e7c13dff70a24004ca2922154d5dfad96114f51de364774789c14, and expected literal definition 'A member of the class of isoindoles that is isoindolin-1-one which is substituted at positions 4, 5 and 6 by hydroxy, triprenyloxy and methoxy groups, respectively. The alkaloid was isolated from the model fungus Aspegillus nidulans.'. Correct only Aspegillus to Aspergillus, retain source attribution and unchanged chemical identity. The current consumer has no such correction hook; implement and test it before use. Preserve the upstream snapshot, regenerate the inventory/provenance and owner through documented commands; do not use the reserved decisions table or edit generated YAML.
+
+- Changed definition or row hash fails closed; unrelated ChEBI entries are unaffected.
+- Only the genus spelling changes; full structure, identity, source attribution and biological claims remain intact.
+- Reproduction and provenance checks pass after maintained regeneration.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| R082-OWNER | data/natural_products/alkaloids/aspernidine-a.yaml; Complete owner, all scientific claims, inline graphs and history entries | supports | Root read the complete aspernidine A owner following its individual intake. It has 2 occurrences, 1 producer and 1 cluster assertions. Referenced components are empty. Present optional fields: none. These observations use complete parsed content, not a filtered search miss. |
+| R082-LOCAL-SOURCES | /private/tmp/npm-review-work/082/local-sources.json; Every matching MIBiG, LOTUS, ChEBI, CyanoMetDB and NPClassifier row plus resolved owner | context_only | Root read all matching source rows. The resolved owner equals the complete parsed raw YAML. Retained source assertions and deterministic joins are distinguished from the exact primary experiments reviewed separately. |
+| R082-IMODULON-DATASETS | /private/tmp/npm-review-work/010/imodulon-datasets.txt; Full 28-row dataset catalogue; original retrieval in 010/imodulon-context-receipts.json | context_only | The complete same-session catalogue retrieved at 07:21:15 UTC has no Aspergillus, Mariannaea, Actinomadura or Stigmatella dataset. The catalogue is reused with its original timestamp; no fresh retrieval is claimed. Species matching alone would not establish an exact strain, gene, locus or product experiment. |
+| R082-Q4320452 | https://www.wikidata.org/wiki/Special:EntityData/Q4320452.json; Exact organism entity, scientific name and P685 NCBI Taxonomy identifier | context_only | Literal organism entity Q4320452 resolves as Aegiceras corniculatum, with P685 59970, matching the local LOTUS row. This verifies identifier routing only; it does not support compound occurrence, assign experimental strain or settle historical taxonomic revisions. |
+| R082-Q683881 | https://www.wikidata.org/wiki/Special:EntityData/Q683881.json; Exact organism entity, scientific name and P685 NCBI Taxonomy identifier | context_only | Literal organism entity Q683881 resolves as Aspergillus nidulans, with P685 162425, matching the local LOTUS row. This verifies identifier routing only; it does not support compound occurrence, assign experimental strain or settle historical taxonomic revisions. |
+| S082-E-LOCAL | data/natural_products/alkaloids/aspernidine-a.yaml; Complete actual owner, resolved local rows, definition and BGC0001722:1 | supports | The owner names strain-specific taxon 227321 FGSC A4 as a SOURCE_ASSERTION producer and gives no method for BN001306.1:1341776..1360358. Both claims cite the 2010 isolation DOI from a compound-bioactivity reference. LOTUS supplies species A. nidulans and plant Aegiceras occurrences. There is no optional pathway or activity assertion. |
+| S082-E-ISOLATION2010 | https://www.nature.com/articles/ja201046; All accessible original scientific narrative and original Figure 1; page includes a login boundary, so no unseen PDF is claimed | supports | The original source isolates aspernidine A1 and B2 from A. nidulans AXB4A2 after culture-condition screening. It supports the species occurrence and the fungal-origin part of the definition. It proposes a pathway but does not perform pkf locus deletions. AXB4A2 is not interchangeable with the named reference stock FGSC A4. |
+| S082-E-MAIN2013 | https://pmc.ncbi.nlm.nih.gov/articles/PMC3713076/; Complete scientific main narrative, Table 1 and Figures 1/2 original pixels; DOI10.1021/ol401187b | supports | The authors had not detected aspernidine A in FGSC A4 or earlier A4-background mutants. Screening 98 kinase mutants identifies mpkA deletion, yielding A8. Deleting each AN3225–AN3230 gene in that activated background eliminates A; flanking AN3224/AN3231 deletions retain it. The experiments demonstrate native-locus necessity in a specified mutant background, not production by unmodified A4 or heterologous sufficiency. |
+| S082-E-SI2013 | https://ndownloader.figshare.com/files/4048030; Complete official S1–S17 text; original S8 strain table viewed; S2–S5 methods/identity and S9 product panel | supports | The recipient is mpkAΔ FGSC1404. The control and replacement genotypes are explicit, and AXB4A2 appears as a separate row. Native targeted replacements use A. fumigatus pyroA solely as a marker. The mpkAΔ culture yields 14.8 mg A8, identified by proton/carbon data and DEPT/HMQC/HMBC; C9/D10/E11 are separate compounds. |
+| S082-E-FIG2013 | https://pmc.ncbi.nlm.nih.gov/articles/PMC3713076/; Original Figure 2A/B; exact six-gene locus and genotype-resolved product traces | supports | The six-gene panel identifies pkfB–F/A with AN3225–AN3230 and shows loss of peak 8 for every internal deletion in the mpkAΔ background. Flanking deletions retain peak 8. This is positive exact-product genetic evidence; accumulation of intermediates is not a purified-enzyme assay for every proposed arrow. |
+| S082-E-LOCUS | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&amp;id=BN001306.1&amp;rettype=gb&amp;retmode=text&amp;seq_start=1341776&amp;seq_stop=1360358; Exact bounded 18583 bp interval, accession/version, source feature and all six CDS locus tags; no independent sequence-equivalence claim | supports | BN001306.1 is the FGSC A4 chromosome VI reference, taxon 227321. The exact owner interval contains ANIA_03230 through ANIA_03225, corresponding to all six primary pkf loci. This establishes reference-locus placement; it does not establish identical genotype or production state of FGSC1404 and unmodified A4. |
+| S082-E-ENDOPHYTE2011 | https://pubmed.ncbi.nlm.nih.gov/21601895/; Complete original primary abstract and exact DOI in NCBI XML,10.1016/j.phytochem.2011.04.014 | supports | The primary abstract explicitly reports aspernidine A/B isolated in the chemical investigation of endophytic Emericella sp. HK-ZJ, which was collected from Aegiceras corniculatum. The plant is the fungal host, not the demonstrated chemical sample. This positive source distinction supports withholding the plant occurrence without pretending the full 2011 body was obtained. |
+| S082-E-CLAIM-CONSUMER | src/naturalproductmech/curate/claim_references.py; Complete loader/emitter | supports | The implemented claim-reference table requires a unique source_id and full original-row digest. It can route separate producer/locus references and preserve the old source citation in the rationale, but it explicitly changes neither taxon nor grades and rejects structure-corrected rows. |
+| S082-E-METHOD-CONSUMER | scripts/seed_from_sources.py; Exact method loader/application, producer and BGC emission, strain/reference/exclusion calls | supports | Current REPLACE recognizes Knock-out studies and automatically recomputes both organism and locus grades. It does not enforce expected_* fields or permit a context-specific locus-only grade. Existing strain qualification would merely attach a name under the unchanged taxon; it cannot establish FGSC1404 equals A4. A reviewed claim-specific context/admission extension is required before upgrading this reference-locus claim safely. |
+| S082-E-LOTUS-CONSUMER | src/naturalproductmech/curate/lotus_exclusions.py; Complete exact-triple loader/emitter | supports | A unique original key/taxon/DOI triple and full parsed-row SHA are consumed before withholding one occurrence, while raw data and the reason are retained. It does not automatically create the replacement fungal occurrence. |
+| C082-LOCAL | /private/tmp/npm-record-reviews-20261021/data/natural_products/alkaloids/aspernidine-a.yaml; Complete owner, exact structure, literal xrefs, source concepts and full history; local source rows and current intake chemistry | supports | Full owner read. Parsed structure gives PHOZASLNSDMYGR-VZRGJMDUSA-N, C24H33NO4, formal charge 0; native intake InChI and key match. 0 referenced components. |
+| C082-COMPARE | /private/tmp/npm-review-work/shared-next-batch009/chemistry-prep/chemical-comparison.json; aspernidine A exact complete graph comparison | supports | The inspected source graph matches the owner key and raw MIBiG row. Current original authority graphs were parsed separately, retaining fixed-H/tautomer distinctions, invalid default representations, and assigned versus undefined centres. Detailed exact comparisons are retained in the selected row. |
+| C082-MIBIG | https://mibig.secondarymetabolites.org/repository/BGC0001722.3/annotations.json; {'mibig_accession': 'BGC0001722', 'compound_index': '1', 'entry_version': '3'} complete exact compound row | supports | Current source names aspernidine A; its graph and fixed-H identity match the raw owner=True. This is source agreement, not independent experimental proof. |
+| C082-AUTH0 | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/PHOZASLNSDMYGR-VZRGJMDUSA-N/property/InChIKey,InChI,IsomericSMILES,MolecularFormula,Charge/JSON; Exact requested/returned namespace and complete source record; original MOL/SDF where retained | supports | pubchem.compound 45359507; returned name aspernidine A; declared key PHOZASLNSDMYGR-VZRGJMDUSA-N; parsed original graph key PHOZASLNSDMYGR-VZRGJMDUSA-N; formula C24H33NO4; charge 0; stars not applicable. Comparison {'comparable': True, 'standard_inchi_key': True, 'fixed_h_inchi': True, 'formula': True, 'formal_charge': True, 'stereo_erased_canonical_smiles': True}. |
+| C082-AUTH1 | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/45359507/property/InChIKey,InChI,IsomericSMILES,MolecularFormula,Charge/JSON; Exact requested/returned namespace and complete source record; original MOL/SDF where retained | supports | pubchem.compound 45359507; returned name aspernidine A; declared key PHOZASLNSDMYGR-VZRGJMDUSA-N; parsed original graph key PHOZASLNSDMYGR-VZRGJMDUSA-N; formula C24H33NO4; charge 0; stars not applicable. Comparison {'comparable': True, 'standard_inchi_key': True, 'fixed_h_inchi': True, 'formula': True, 'formal_charge': True, 'stereo_erased_canonical_smiles': True}. |
+| C082-AUTH2 | https://www.ebi.ac.uk/chebi/backend/api/public/compound/74221/; Exact requested/returned namespace and complete source record; original MOL/SDF where retained | supports | chebi CHEBI:74221; returned name aspernidine A; declared key PHOZASLNSDMYGR-VZRGJMDUSA-N; parsed original graph key PHOZASLNSDMYGR-VZRGJMDUSA-N; formula C24H33NO4; charge 0; stars 3. Comparison {'comparable': True, 'standard_inchi_key': True, 'fixed_h_inchi': True, 'formula': True, 'formal_charge': True, 'stereo_erased_canonical_smiles': True}. |
+| C082-PRIMARY2010 | https://www.nature.com/articles/ja201046; Accessible original scientific narrative and original Figure 1A/B, exact A compound 1 | supports | The primary identifies the farnesyloxy isoindolinone constitution, including A methoxy versus B hydroxy substitution, by NMR and MS. Figure 1 depicts the two stereogenic farnesyl alkenes consistently with the owner; no tetrahedral absolute configuration is involved. |
+| C082-FIGURE | https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fja.2010.46/MediaObjects/41429_2010_Article_BFja201046_Fig1_HTML.jpg; Original Figure 1A/B, independently re-viewed | supports | A is compound 1 with O-methyl substitution; the terminal isopropylidene double bond has equivalent methyl substituents and no independent E/Z stereochemistry. The two internal farnesyl alkenes are depicted E. |
+| C082-SI2013 | https://ndownloader.figshare.com/files/4048030; Original Supporting Information S5, exact compound 8 characterization | supports | The recovered official SI corroborates exact aspernidine A (8) with proton/carbon NMR, DEPT, HMQC, HMBC and high-resolution MS. The older failed SI routes no longer represent this required access state. |
+| C082-CONSUMER | /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py; Definition assignment lines 1003–1005; extractor strip_markup and extract_compounds separately read | supports | The seeder directly copies the unique exact ChEBI definition. The extractor strips markup but does not repair the misspelled genus. |
+| C082-SEARCH | /private/tmp/npm-review-work/082/chemistry-absence-search.json; Ignored-inclusive maintained correction search | context_only | No matching implemented definition-specific correction was found in the bounded searched paths. Current direct definition emission is separately inspected. |
+
+## Limits And Additional Notes
+
+- This review assesses current assertions and concrete source questions. It does not claim exhaustive discovery of subsequent studies or require every optional mechanism as a condition of review coverage.
+- The 2011 occurrence source is verified at affirmative primary-abstract level; its detailed main remains unavailable after the bounded publisher attempt. No compound-specific antiviral potency is imported from that abstract.
+- The reference locus is matched by accession, interval and six exact annotation identifiers, not by independent whole-sequence equality with FGSC1404. The main explicitly distinguishes the activation background; no unmodified A4 production or universal negative claim is inferred.
+- No exhaustive NMR reassignment, individual enzyme reconstitution or automatic admission of the HK-ZJ fungus was performed.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35 explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). Skipped tests are not counted as passing tests. Existing ontology caches were used; no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do not establish biological production, stereochemical specificity, evidence adequacy, or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology results. Reuse establishes unchanged repository inputs; it is not a new remote authority query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all tracked files are hashed. Generated Python bytecode and external tool caches are not claimed to have been independently byte-pinned at the prior execution.
+- No scientific owner, inventory, curation table, native status or history was edited. Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification; target strict validation ran afresh. Scientific failed or unavailable checks are distinct from bundle validation.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T144051Z-aspernidine-a
+title: 'Aspernidine A: activated native locus and host-occurrence attribution'
+started_at: '2026-10-21T14:24:40.032394Z'
+finished_at: '2026-10-21T14:40:51.893207Z'
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The exact aspernidine A structure and fungal isolation are supported. The
+  locus citation and method must distinguish the activated FGSC1404 experiment from
+  the A4 reference genome, and the plant occurrence conflates a fungal host with chemical
+  source. A minor imported organism-name typo also needs a reproducible source correction.
+source:
+  git_revision: 1c2402097718c138b081e00943de8f04de0541cd
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/aspernidine-a.yaml
+    sha256: 1a22dc9b4271e8fb5f6f8340695b42f3e93e9530adebf564923a911fa616b8d2
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/lotus_exclusions.py
+    sha256: 6352cac7c587eab5a56d907c523cc899d02d197009081624bf8649c675ee30f7
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 82, batch 009, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated targets in earlier
+    batch commits (publication tracked separately). At selection, 134 of 3116 current
+    records had campaign coverage and 2982 remained. The population search included
+    ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CHEBI:74221
+targets:
+- target_id: CHEBI:74221
+  path: data/natural_products/alkaloids/aspernidine-a.yaml
+  label: aspernidine A
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - CHEBI:74221
+  command: just validate-strict data/natural_products/alkaloids/aspernidine-a.yaml
+    --out /private/tmp/npm-review-work/082/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T14:24:42.302643Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 current record files agree with PATHS.tsv and their pinned filing
+    pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055340+00:00;
+    finished 2026-10-21T09:55:22.727768+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-corpus.log. Reused
+    for batch009 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch009. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - CHEBI:74221
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 current records passed the documented byte-reproduction gate
+    against committed inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055361+00:00;
+    finished 2026-10-21T09:56:44.050706+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-reproduction.log.
+    Reused for batch009 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch009. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - CHEBI:74221
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The exhaustive review queue produced 8,928 diagnostic rows across 12 queues;
+    this deterministic output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just review-queue --tsv /private/tmp/npm-review-queue-batch-004.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.057401+00:00;
+    finished 2026-10-21T09:54:38.468783+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/review-queue.log. Reused
+    for batch009 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch009. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - CHEBI:74221
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'The configured identifier-label gate passed using the existing ontology
+    caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions,
+    499 warning-only mismatches and 4,744 pairs skipped because their prefixes have
+    no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.061733+00:00;
+    finished 2026-10-21T09:56:36.296159+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/validate-products.log. Reused
+    for batch009 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch009. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - CHEBI:74221
+- check_id: shared-qc
+  name: Full repository quality gate on the current main baseline
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed on the unchanged main baseline
+    during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+    All configured lint, governance, documentation, provenance, source-queue, schema,
+    rendering, reproduction, filing-integrity and reporting stages completed successfully.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:30.560925+00:00;
+    finished 2026-10-21T10:04:44.806799+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/qc.log. Reused for batch009
+    only after a fresh fetch/clean branch, equal commit/tree and two reads of all
+    9,182 tracked byte streams and modes (208,070,649 bytes), including a recheck
+    after the fresh authoritative catalogue. This gate was not rerun for batch009.
+    Original execution times, scope, warnings, exceptions and skips are retained.'
+  target_ids:
+  - CHEBI:74221
+- check_id: R082-FULL-OWNER
+  name: Complete owner and component scope
+  status: passed
+  required: true
+  summary: Complete owner and all matching local source rows read. The native resolved
+    view confirms the empty component-reference set; all formal input hashes agree.
+  target_ids:
+  - CHEBI:74221
+  evidence_ids:
+  - R082-OWNER
+  - R082-LOCAL-SOURCES
+- check_id: S082-C-CONTEXT
+  name: Locus citation and genotype-specific experiments are represented
+  status: failed
+  required: true
+  summary: The owner cites an isolation source as locus evidence and omits the later
+    exact genetic experiments and their activation background. A blanket native knockout
+    upgrade would wrongly merge reference stock and experimental strain.
+  target_ids:
+  - CHEBI:74221
+  evidence_ids:
+  - S082-E-LOCAL
+  - S082-E-ISOLATION2010
+  - S082-E-MAIN2013
+  - S082-E-SI2013
+  - S082-E-FIG2013
+  - S082-E-LOCUS
+  - S082-E-METHOD-CONSUMER
+- check_id: S082-C-PLANT
+  name: Plant occurrence has direct source support
+  status: failed
+  required: true
+  summary: The cited primary identifies the fungus HK-ZJ as the chemical source and
+    Aegiceras as its host.
+  target_ids:
+  - CHEBI:74221
+  evidence_ids:
+  - S082-E-LOCAL
+  - S082-E-ENDOPHYTE2011
+- check_id: C082-STRUCTURE
+  name: Exact parent graph and primary structure comparison
+  status: passed
+  required: true
+  summary: Exact graph, stereochemical resolution and original A characterization
+    are checked; no primary chemical-identity access gap remains. Biological citation
+    scope is assessed separately.
+  target_ids:
+  - CHEBI:74221
+  evidence_ids:
+  - C082-LOCAL
+  - C082-COMPARE
+  - C082-MIBIG
+  - C082-PRIMARY2010
+  - C082-FIGURE
+  - C082-SI2013
+  - C082-AUTH0
+  - C082-AUTH1
+  - C082-AUTH2
+evidence:
+- evidence_id: R082-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/aspernidine-a.yaml
+  locator: Complete owner, all scientific claims, inline graphs and history entries
+  accessed_at: '2026-10-21T14:28:41.613530Z'
+  support: supports
+  summary: 'Root read the complete aspernidine A owner following its individual intake.
+    It has 2 occurrences, 1 producer and 1 cluster assertions. Referenced components
+    are empty. Present optional fields: none. These observations use complete parsed
+    content, not a filtered search miss.'
+  snapshot_sha256: 1a22dc9b4271e8fb5f6f8340695b42f3e93e9530adebf564923a911fa616b8d2
+- evidence_id: R082-LOCAL-SOURCES
+  kind: record_content
+  reference: /private/tmp/npm-review-work/082/local-sources.json
+  locator: Every matching MIBiG, LOTUS, ChEBI, CyanoMetDB and NPClassifier row plus
+    resolved owner
+  accessed_at: '2026-10-21T14:28:41.613530Z'
+  support: context_only
+  summary: Root read all matching source rows. The resolved owner equals the complete
+    parsed raw YAML. Retained source assertions and deterministic joins are distinguished
+    from the exact primary experiments reviewed separately.
+  snapshot_sha256: b13278ad2809e9e054821833207ec9b7cfc034d3d624820221f00b06eb9492b4
+- evidence_id: R082-IMODULON-DATASETS
+  kind: database
+  reference: /private/tmp/npm-review-work/010/imodulon-datasets.txt
+  locator: Full 28-row dataset catalogue; original retrieval in 010/imodulon-context-receipts.json
+  accessed_at: '2026-10-21T07:21:15.957321Z'
+  support: context_only
+  summary: The complete same-session catalogue retrieved at 07:21:15 UTC has no Aspergillus,
+    Mariannaea, Actinomadura or Stigmatella dataset. The catalogue is reused with
+    its original timestamp; no fresh retrieval is claimed. Species matching alone
+    would not establish an exact strain, gene, locus or product experiment.
+  snapshot_sha256: 1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549
+- evidence_id: R082-Q4320452
+  kind: database
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q4320452.json
+  locator: Exact organism entity, scientific name and P685 NCBI Taxonomy identifier
+  accessed_at: '2026-10-21T14:29:21.479897Z'
+  support: context_only
+  summary: Literal organism entity Q4320452 resolves as Aegiceras corniculatum, with
+    P685 59970, matching the local LOTUS row. This verifies identifier routing only;
+    it does not support compound occurrence, assign experimental strain or settle
+    historical taxonomic revisions.
+  snapshot_sha256: 2f4c06940200de52b12346e2c2a73453f42e41e20ac16a1b3f5f632145d1b8e2
+- evidence_id: R082-Q683881
+  kind: database
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q683881.json
+  locator: Exact organism entity, scientific name and P685 NCBI Taxonomy identifier
+  accessed_at: '2026-10-21T14:29:21.806728Z'
+  support: context_only
+  summary: Literal organism entity Q683881 resolves as Aspergillus nidulans, with
+    P685 162425, matching the local LOTUS row. This verifies identifier routing only;
+    it does not support compound occurrence, assign experimental strain or settle
+    historical taxonomic revisions.
+  snapshot_sha256: 5caccd1cf52cadb24fff9e659dca928af82dd3f7002e63555777e91bb60cfbfa
+- evidence_id: S082-E-LOCAL
+  kind: record_content
+  reference: data/natural_products/alkaloids/aspernidine-a.yaml
+  locator: Complete actual owner, resolved local rows, definition and BGC0001722:1
+  accessed_at: '2026-10-21T14:39:49.450903Z'
+  support: supports
+  summary: The owner names strain-specific taxon 227321 FGSC A4 as a SOURCE_ASSERTION
+    producer and gives no method for BN001306.1:1341776..1360358. Both claims cite
+    the 2010 isolation DOI from a compound-bioactivity reference. LOTUS supplies species
+    A. nidulans and plant Aegiceras occurrences. There is no optional pathway or activity
+    assertion.
+  snapshot_sha256: 1a22dc9b4271e8fb5f6f8340695b42f3e93e9530adebf564923a911fa616b8d2
+- evidence_id: S082-E-ISOLATION2010
+  kind: primary_source
+  reference: https://www.nature.com/articles/ja201046
+  locator: All accessible original scientific narrative and original Figure 1; page
+    includes a login boundary, so no unseen PDF is claimed
+  accessed_at: '2026-10-21T13:21:38.144533Z'
+  support: supports
+  summary: The original source isolates aspernidine A1 and B2 from A. nidulans AXB4A2
+    after culture-condition screening. It supports the species occurrence and the
+    fungal-origin part of the definition. It proposes a pathway but does not perform
+    pkf locus deletions. AXB4A2 is not interchangeable with the named reference stock
+    FGSC A4.
+  snapshot_sha256: f15129a72ee58add648aecab9ec1319b130b86bca21af312e6cbcbac2af8c7f0
+- evidence_id: S082-E-MAIN2013
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC3713076/
+  locator: Complete scientific main narrative, Table 1 and Figures 1/2 original pixels;
+    DOI10.1021/ol401187b
+  accessed_at: '2026-10-21T13:22:05.350157Z'
+  support: supports
+  summary: The authors had not detected aspernidine A in FGSC A4 or earlier A4-background
+    mutants. Screening 98 kinase mutants identifies mpkA deletion, yielding A8. Deleting
+    each AN3225–AN3230 gene in that activated background eliminates A; flanking AN3224/AN3231
+    deletions retain it. The experiments demonstrate native-locus necessity in a specified
+    mutant background, not production by unmodified A4 or heterologous sufficiency.
+  snapshot_sha256: cdb88b9319f7539d49bed033304f4bf02579c18874807a4c2034251535d7636c
+- evidence_id: S082-E-SI2013
+  kind: primary_source
+  reference: https://ndownloader.figshare.com/files/4048030
+  locator: Complete official S1–S17 text; original S8 strain table viewed; S2–S5 methods/identity
+    and S9 product panel
+  accessed_at: '2026-10-21T13:34:55.872015Z'
+  support: supports
+  summary: The recipient is mpkAΔ FGSC1404. The control and replacement genotypes
+    are explicit, and AXB4A2 appears as a separate row. Native targeted replacements
+    use A. fumigatus pyroA solely as a marker. The mpkAΔ culture yields 14.8 mg A8,
+    identified by proton/carbon data and DEPT/HMQC/HMBC; C9/D10/E11 are separate compounds.
+  snapshot_sha256: e2bfefa34d598a25903ca1a3e8709223bf6f836b04df4e009beec5d660dcc18a
+- evidence_id: S082-E-FIG2013
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC3713076/
+  locator: Original Figure 2A/B; exact six-gene locus and genotype-resolved product
+    traces
+  accessed_at: '2026-10-21T13:27:52.599730Z'
+  support: supports
+  summary: The six-gene panel identifies pkfB–F/A with AN3225–AN3230 and shows loss
+    of peak 8 for every internal deletion in the mpkAΔ background. Flanking deletions
+    retain peak 8. This is positive exact-product genetic evidence; accumulation of
+    intermediates is not a purified-enzyme assay for every proposed arrow.
+  snapshot_sha256: 34f5ff10aa2ef18b12d8d4c52258c8ff5a9690deb394efa9c0921c137b16b133
+- evidence_id: S082-E-LOCUS
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=BN001306.1&rettype=gb&retmode=text&seq_start=1341776&seq_stop=1360358
+  locator: Exact bounded 18583 bp interval, accession/version, source feature and
+    all six CDS locus tags; no independent sequence-equivalence claim
+  accessed_at: '2026-10-21T14:36:01.418745Z'
+  support: supports
+  summary: BN001306.1 is the FGSC A4 chromosome VI reference, taxon 227321. The exact
+    owner interval contains ANIA_03230 through ANIA_03225, corresponding to all six
+    primary pkf loci. This establishes reference-locus placement; it does not establish
+    identical genotype or production state of FGSC1404 and unmodified A4.
+  snapshot_sha256: 7f49b7f567d3fcfb73077e96cb4683699bb67a4f41f14e02b85ba5516533d39d
+- evidence_id: S082-E-ENDOPHYTE2011
+  kind: primary_source
+  reference: https://pubmed.ncbi.nlm.nih.gov/21601895/
+  locator: Complete original primary abstract and exact DOI in NCBI XML,10.1016/j.phytochem.2011.04.014
+  accessed_at: '2026-10-21T14:31:22.891190Z'
+  support: supports
+  summary: The primary abstract explicitly reports aspernidine A/B isolated in the
+    chemical investigation of endophytic Emericella sp. HK-ZJ, which was collected
+    from Aegiceras corniculatum. The plant is the fungal host, not the demonstrated
+    chemical sample. This positive source distinction supports withholding the plant
+    occurrence without pretending the full 2011 body was obtained.
+  snapshot_sha256: 0a48034607c82cab8dce0f8da0feb09101b4bd08b2fa85a08dbb34260be8e683
+- evidence_id: S082-E-CLAIM-CONSUMER
+  kind: record_content
+  reference: src/naturalproductmech/curate/claim_references.py
+  locator: Complete loader/emitter
+  accessed_at: '2026-10-21T14:39:49.450903Z'
+  support: supports
+  summary: The implemented claim-reference table requires a unique source_id and full
+    original-row digest. It can route separate producer/locus references and preserve
+    the old source citation in the rationale, but it explicitly changes neither taxon
+    nor grades and rejects structure-corrected rows.
+  snapshot_sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+- evidence_id: S082-E-METHOD-CONSUMER
+  kind: record_content
+  reference: scripts/seed_from_sources.py
+  locator: Exact method loader/application, producer and BGC emission, strain/reference/exclusion
+    calls
+  accessed_at: '2026-10-21T14:39:49.450903Z'
+  support: supports
+  summary: Current REPLACE recognizes Knock-out studies and automatically recomputes
+    both organism and locus grades. It does not enforce expected_* fields or permit
+    a context-specific locus-only grade. Existing strain qualification would merely
+    attach a name under the unchanged taxon; it cannot establish FGSC1404 equals A4.
+    A reviewed claim-specific context/admission extension is required before upgrading
+    this reference-locus claim safely.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: S082-E-LOTUS-CONSUMER
+  kind: record_content
+  reference: src/naturalproductmech/curate/lotus_exclusions.py
+  locator: Complete exact-triple loader/emitter
+  accessed_at: '2026-10-21T14:39:49.450903Z'
+  support: supports
+  summary: A unique original key/taxon/DOI triple and full parsed-row SHA are consumed
+    before withholding one occurrence, while raw data and the reason are retained.
+    It does not automatically create the replacement fungal occurrence.
+  snapshot_sha256: 6352cac7c587eab5a56d907c523cc899d02d197009081624bf8649c675ee30f7
+- evidence_id: C082-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/alkaloids/aspernidine-a.yaml
+  locator: Complete owner, exact structure, literal xrefs, source concepts and full
+    history; local source rows and current intake chemistry
+  accessed_at: '2026-10-21T14:31:24.211625Z'
+  support: supports
+  summary: Full owner read. Parsed structure gives PHOZASLNSDMYGR-VZRGJMDUSA-N, C24H33NO4,
+    formal charge 0; native intake InChI and key match. 0 referenced components.
+  snapshot_sha256: 1a22dc9b4271e8fb5f6f8340695b42f3e93e9530adebf564923a911fa616b8d2
+- evidence_id: C082-COMPARE
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch009/chemistry-prep/chemical-comparison.json
+  locator: aspernidine A exact complete graph comparison
+  accessed_at: '2026-10-21T13:30:02.585471Z'
+  support: supports
+  summary: The inspected source graph matches the owner key and raw MIBiG row. Current
+    original authority graphs were parsed separately, retaining fixed-H/tautomer distinctions,
+    invalid default representations, and assigned versus undefined centres. Detailed
+    exact comparisons are retained in the selected row.
+  snapshot_sha256: b3f3b3c9ff9602a489cae8f945ec6ab8ce183df7f2402a84e5a3ef34f5993652
+- evidence_id: C082-MIBIG
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0001722.3/annotations.json
+  locator: '{''mibig_accession'': ''BGC0001722'', ''compound_index'': ''1'', ''entry_version'':
+    ''3''} complete exact compound row'
+  accessed_at: '2026-10-21T13:21:51.588829Z'
+  support: supports
+  summary: Current source names aspernidine A; its graph and fixed-H identity match
+    the raw owner=True. This is source agreement, not independent experimental proof.
+  snapshot_sha256: 00ed475286cd5abc3ee107ae8906c4d36fe5487210c64cb21c2e23e943bc7301
+- evidence_id: C082-AUTH0
+  kind: authority
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/PHOZASLNSDMYGR-VZRGJMDUSA-N/property/InChIKey,InChI,IsomericSMILES,MolecularFormula,Charge/JSON
+  locator: Exact requested/returned namespace and complete source record; original
+    MOL/SDF where retained
+  accessed_at: '2026-10-21T13:21:52.015366Z'
+  support: supports
+  summary: 'pubchem.compound 45359507; returned name aspernidine A; declared key PHOZASLNSDMYGR-VZRGJMDUSA-N;
+    parsed original graph key PHOZASLNSDMYGR-VZRGJMDUSA-N; formula C24H33NO4; charge
+    0; stars not applicable. Comparison {''comparable'': True, ''standard_inchi_key'':
+    True, ''fixed_h_inchi'': True, ''formula'': True, ''formal_charge'': True, ''stereo_erased_canonical_smiles'':
+    True}.'
+  snapshot_sha256: 55e32cc3dd75a8e202cdc7fc5c9e8f99586d767325112e68e2960150b68ffae4
+- evidence_id: C082-AUTH1
+  kind: authority
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/45359507/property/InChIKey,InChI,IsomericSMILES,MolecularFormula,Charge/JSON
+  locator: Exact requested/returned namespace and complete source record; original
+    MOL/SDF where retained
+  accessed_at: '2026-10-21T13:21:52.208152Z'
+  support: supports
+  summary: 'pubchem.compound 45359507; returned name aspernidine A; declared key PHOZASLNSDMYGR-VZRGJMDUSA-N;
+    parsed original graph key PHOZASLNSDMYGR-VZRGJMDUSA-N; formula C24H33NO4; charge
+    0; stars not applicable. Comparison {''comparable'': True, ''standard_inchi_key'':
+    True, ''fixed_h_inchi'': True, ''formula'': True, ''formal_charge'': True, ''stereo_erased_canonical_smiles'':
+    True}.'
+  snapshot_sha256: 55e32cc3dd75a8e202cdc7fc5c9e8f99586d767325112e68e2960150b68ffae4
+- evidence_id: C082-AUTH2
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/74221/
+  locator: Exact requested/returned namespace and complete source record; original
+    MOL/SDF where retained
+  accessed_at: '2026-10-21T13:22:57.441276Z'
+  support: supports
+  summary: 'chebi CHEBI:74221; returned name aspernidine A; declared key PHOZASLNSDMYGR-VZRGJMDUSA-N;
+    parsed original graph key PHOZASLNSDMYGR-VZRGJMDUSA-N; formula C24H33NO4; charge
+    0; stars 3. Comparison {''comparable'': True, ''standard_inchi_key'': True, ''fixed_h_inchi'':
+    True, ''formula'': True, ''formal_charge'': True, ''stereo_erased_canonical_smiles'':
+    True}.'
+  snapshot_sha256: abbe6fbb8129bbaceb44edcb114ed1246995d873ed53a77553d38f83c87fa658
+- evidence_id: C082-PRIMARY2010
+  kind: primary_source
+  reference: https://www.nature.com/articles/ja201046
+  locator: Accessible original scientific narrative and original Figure 1A/B, exact
+    A compound 1
+  accessed_at: '2026-10-21T13:21:38.144533Z'
+  support: supports
+  summary: The primary identifies the farnesyloxy isoindolinone constitution, including
+    A methoxy versus B hydroxy substitution, by NMR and MS. Figure 1 depicts the two
+    stereogenic farnesyl alkenes consistently with the owner; no tetrahedral absolute
+    configuration is involved.
+  snapshot_sha256: f15129a72ee58add648aecab9ec1319b130b86bca21af312e6cbcbac2af8c7f0
+- evidence_id: C082-FIGURE
+  kind: primary_source
+  reference: https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fja.2010.46/MediaObjects/41429_2010_Article_BFja201046_Fig1_HTML.jpg
+  locator: Original Figure 1A/B, independently re-viewed
+  accessed_at: '2026-10-21T13:23:29.770777Z'
+  support: supports
+  summary: A is compound 1 with O-methyl substitution; the terminal isopropylidene
+    double bond has equivalent methyl substituents and no independent E/Z stereochemistry.
+    The two internal farnesyl alkenes are depicted E.
+  snapshot_sha256: 013d069a53e8824ae12ba4c72f84c551c87e2d475b885b5b9a26fe2e45b096da
+- evidence_id: C082-SI2013
+  kind: primary_source
+  reference: https://ndownloader.figshare.com/files/4048030
+  locator: Original Supporting Information S5, exact compound 8 characterization
+  accessed_at: '2026-10-21T13:34:55.872015Z'
+  support: supports
+  summary: The recovered official SI corroborates exact aspernidine A (8) with proton/carbon
+    NMR, DEPT, HMQC, HMBC and high-resolution MS. The older failed SI routes no longer
+    represent this required access state.
+  snapshot_sha256: e2bfefa34d598a25903ca1a3e8709223bf6f836b04df4e009beec5d660dcc18a
+- evidence_id: C082-CONSUMER
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: Definition assignment lines 1003–1005; extractor strip_markup and extract_compounds
+    separately read
+  accessed_at: '2026-10-21T14:31:24.211625Z'
+  support: supports
+  summary: The seeder directly copies the unique exact ChEBI definition. The extractor
+    strips markup but does not repair the misspelled genus.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: C082-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/082/chemistry-absence-search.json
+  locator: Ignored-inclusive maintained correction search
+  accessed_at: '2026-10-21T14:31:24.256169Z'
+  support: context_only
+  summary: No matching implemented definition-specific correction was found in the
+    bounded searched paths. Current direct definition emission is separately inspected.
+  snapshot_sha256: 8b46ee943c6db49b4da5bdc190df6fd89c25b2fbbc76be542b9ef05e9fc6a6cc
+  search_scope: Ignored-inclusive search of maintained curation, implementation and
+    exact seeder/extractor files; not a claim about external source corrections. Exact
+    command is retained in the receipt.
+assessments:
+- assessment_id: R082-HISTORY
+  area: provenance
+  topic: Native status and retained history
+  outcome: supported
+  summary: The dated SEEDED_FROM_SOURCES entries and retained SEEDED status describe
+    generated provenance. The review does not promote native status or add a curation
+    event.
+  target_ids:
+  - CHEBI:74221
+  evidence_ids:
+  - R082-OWNER
+- assessment_id: R082-OPTIONAL
+  area: completeness
+  topic: Optional mechanism, activity and application scope
+  outcome: not_applicable
+  summary: The complete owner has no structured pathway, causal graph, molecular target,
+    activity, clinical status, application, cross-corpus link or discussion claim.
+    Optional enrichment is separate from correcting present assertions; no mechanism
+    or activity is inferred from the compound name or computed class.
+  target_ids:
+  - CHEBI:74221
+  evidence_ids:
+  - R082-OWNER
+  - R082-LOCAL-SOURCES
+- assessment_id: R082-FILING
+  area: representation
+  topic: Computed filing and source-asserted classes
+  outcome: supported
+  summary: The owner reproduces its exact-key NPClassifier row, including model version
+    npclassifier.gnps2.org@2026-09-07, Alkaloids filing, every returned superclass/class
+    label and false glycoside flag. These are explicitly computed predictions, not
+    experimental proof of precursor use, ring taxonomy, natural origin or exact stereochemical
+    identity. BGC class claims retain their separate MIBiG provenance and biological
+    assessment.
+  target_ids:
+  - CHEBI:74221
+  evidence_ids:
+  - R082-OWNER
+  - R082-LOCAL-SOURCES
+- assessment_id: R082-IMODULON
+  area: completeness
+  topic: Structured transcriptomic context
+  outcome: not_applicable
+  summary: The asserted native producer and exact biosynthetic locus lack a matching
+    dataset in the inspected catalogue. No coexpression/module-membership claim is
+    present in this owner. Recombinant E. coli, yeast or A. oryzae work is not substituted
+    for native-producer transcriptomic evidence. Database noncoverage is not negative
+    biological evidence; paper-specific expression experiments are assessed separately.
+  target_ids:
+  - CHEBI:74221
+  evidence_ids:
+  - R082-OWNER
+  - R082-IMODULON-DATASETS
+- assessment_id: R082-ORGANISM-IDS
+  area: provenance
+  topic: Literal LOTUS organism-identifier routing
+  outcome: supported
+  summary: Every literal organism entity in the matching LOTUS rows resolves to its
+    retained species and NCBI taxon identifier. Compound occurrence, experimental
+    host versus substrate and strain-level taxonomy require the separate primary-source
+    assessment.
+  target_ids:
+  - CHEBI:74221
+  evidence_ids:
+  - R082-LOCAL-SOURCES
+  - R082-Q4320452
+  - R082-Q683881
+- assessment_id: S082-A-ORIGIN
+  area: evidence
+  topic: Exact native isolation and the definition
+  outcome: supported
+  summary: A. nidulans AXB4A2 isolation supports natural origin, the emitted species
+    occurrence and the definition’s fungal-source statement. The source specifies
+    A1 versus B2. Moderate antiproliferative observations and later antiviral screening
+    do not require inventing an optional molecular-target mechanism in this sparse
+    owner.
+  target_ids:
+  - CHEBI:74221
+  evidence_ids:
+  - S082-E-ISOLATION2010
+  - S082-E-LOCAL
+  - S082-E-ENDOPHYTE2011
+- assessment_id: S082-A-LOCUS
+  area: evidence
+  topic: Reference locus and activated native genetic experiment
+  outcome: concern
+  summary: The deposited A4 interval exactly carries the six annotated primary loci.
+    The complete 2013 study demonstrates their necessity for A8 in mpkAΔ FGSC1404,
+    a homologous native mutant experiment. It does not show that unmodified A4 produces
+    A under those conditions. Retain reference-genome attribution separately from
+    the experimental stock and do not mechanically apply the two-claim knockout mapping.
+  target_ids:
+  - CHEBI:74221
+  evidence_ids:
+  - S082-E-LOCAL
+  - S082-E-MAIN2013
+  - S082-E-SI2013
+  - S082-E-FIG2013
+  - S082-E-LOCUS
+  - S082-E-METHOD-CONSUMER
+  dimensions:
+  - name: native_experimental_strain
+    value: A. nidulans mpkAΔ FGSC1404 and its six targeted pkf replacements; original
+      isolation AXB4A2
+    definition: These are specified native fungal backgrounds, distinct from unmodified
+      FGSC A4 and from the A. fumigatus marker donor.
+    evidence_ids:
+    - S082-E-ISOLATION2010
+    - S082-E-SI2013
+  - name: reference_locus_context
+    value: BN001306.1:1341776..1360358; FGSC A4, ANIA_03230–ANIA_03225
+    definition: Feature correspondence establishes genomic locus placement, not full
+      experimental-stock or allele equality.
+    evidence_ids:
+    - S082-E-LOCUS
+    - S082-E-MAIN2013
+  - name: producer_locus_evidence_tiers
+    value: Reference taxon remains SOURCE_ASSERTION; source-qualified homologous pkf
+      necessity supports a locus demonstration only with explicit experimental-background
+      attribution
+    definition: Current generic Knock-out studies upgrades both grades. A typed claim-specific
+      extension must prevent unsupported upgrade of the unmodified A4 producer.
+    evidence_ids:
+    - S082-E-MAIN2013
+    - S082-E-SI2013
+    - S082-E-METHOD-CONSUMER
+- assessment_id: S082-A-PLANT
+  area: evidence
+  topic: Host versus compound occurrence
+  outcome: concern
+  summary: The plant triple is not an independent plant detection. It conflates the
+    host from which the fungus was collected with the organism whose extract yielded
+    aspernidine A. Withhold that exact triple while preserving its source provenance;
+    do not invent a more specific fungal taxon from the genus-level HK-ZJ name.
+  target_ids:
+  - CHEBI:74221
+  evidence_ids:
+  - S082-E-LOCAL
+  - S082-E-ENDOPHYTE2011
+  - S082-E-LOTUS-CONSUMER
+- assessment_id: S082-A-CLASS
+  area: representation
+  topic: Experimentally supported broad class versus proposed individual steps
+  outcome: supported
+  summary: The native pkfA deletion supports a polyketide contribution. Intermediates
+    and gene annotations inform a proposed farnesylated isoindolinone pathway; they
+    do not independently prove each enzyme arrow. The present definition is structurally
+    consistent and the optional pathway is not mandatory.
+  target_ids:
+  - CHEBI:74221
+  evidence_ids:
+  - S082-E-LOCAL
+  - S082-E-ISOLATION2010
+  - S082-E-MAIN2013
+  - S082-E-SI2013
+- assessment_id: C082-IDENTITY
+  area: identity
+  topic: Exact A constitution, geometry, grounding and literal PubChem
+  outcome: supported
+  summary: The owner denotes neutral C24H33NO4, with two E alkenes and no tetrahedral
+    stereocentres. Current MIBiG, eligible three-star ChEBI 74221 and literal PubChem
+    45359507 agree at full identity and fixed-H representation. Primary A/B distinction
+    and chemical characterization support exact A.
+  target_ids:
+  - CHEBI:74221
+  evidence_ids:
+  - C082-LOCAL
+  - C082-COMPARE
+  - C082-MIBIG
+  - C082-PRIMARY2010
+  - C082-FIGURE
+  - C082-SI2013
+  - C082-AUTH0
+  - C082-AUTH1
+  - C082-AUTH2
+  dimensions:
+  - name: stereochemical_resolution
+    value: Two E alkenes; no tetrahedral centres
+    definition: This structure has alkene stereochemistry but no unresolved absolute
+      hand.
+    evidence_ids:
+    - C082-LOCAL
+    - C082-FIGURE
+- assessment_id: C082-DEFINITION
+  area: nomenclature
+  topic: Imported genus spelling
+  outcome: concern
+  summary: The chemical definition fits the structure but spells Aspergillus as Aspegillus.
+    This bounded imported typo does not change identity.
+  target_ids:
+  - CHEBI:74221
+  evidence_ids:
+  - C082-LOCAL
+  - C082-PRIMARY2010
+  - C082-CONSUMER
+findings:
+- finding_id: S082-F-LOCUS
+  issue_key: mibig-bgc0001722-compound1-pkf-experimental-context
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Separate the A4 reference locus from the activated native pkf experiment
+  description: The record routes the 2010 AXB4A2 isolation citation to an A4 reference
+    locus and gives no method. Complete 2013 main/SI demonstrate exact A8 loss after
+    six native pkf deletions in mpkAΔ FGSC1404. Both the missing locus citation/method
+    and the strain distinction must be repaired together; unmodified A4 production
+    is not established by this experiment.
+  target_ids:
+  - CHEBI:74221
+  field_paths:
+  - producer_organisms[0]
+  - biosynthetic_gene_clusters[0].evidence
+  - biosynthetic_gene_clusters[0].locus_evidence_methods
+  - biosynthetic_gene_clusters[0].link_evidence_basis
+  - biosynthetic_gene_clusters[0].notes
+  evidence_ids:
+  - S082-E-LOCAL
+  - S082-E-ISOLATION2010
+  - S082-E-MAIN2013
+  - S082-E-SI2013
+  - S082-E-FIG2013
+  - S082-E-LOCUS
+  - S082-E-CLAIM-CONSUMER
+  - S082-E-METHOD-CONSUMER
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: Existing exact-row-pinned citation routing; extend only with explicit tested
+      context contract
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Current citation-only consumer and proposed typed context scope
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Method correction only after claim-specific context support
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Claim-specific admission/grade and provenance implementation
+  - repository: CultureBotAI/NaturalProductMech
+    path: conf/producer_evidence.tsv
+    role: Global method mapping must remain unchanged
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Preserve original A4 reference assertion
+- finding_id: S082-F-PLANT
+  issue_key: lotus-aspernidine-a-aegiceras-host-scope
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The plant occurrence cites isolation from an endophytic fungus
+  description: The exact primary abstract names aspernidine A among the Emericella
+    HK-ZJ metabolites. Aegiceras corniculatum is its host, so this citation does not
+    support the emitted plant occurrence.
+  target_ids:
+  - CHEBI:74221
+  field_paths:
+  - occurrences
+  evidence_ids:
+  - S082-E-LOCAL
+  - S082-E-ENDOPHYTE2011
+  - S082-E-LOTUS-CONSUMER
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/lotus_occurrence_exclusions.tsv
+    role: Consumed plant-host triple exclusion
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/lotus_exclusions.py
+    role: Exact source guard and retained discussion
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Occurrence join/emission
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Preserve upstream assertion
+- finding_id: C082-F-DEFINITION-SPELLING
+  issue_key: chebi-74221-definition-aspegillus-typo
+  category: nomenclature
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Imported definition misspells Aspergillus
+  description: The definition literally says Aspegillus nidulans, whereas the cited
+    original paper and existing organism labels identify Aspergillus nidulans. Only
+    the imported genus spelling requires correction.
+  target_ids:
+  - CHEBI:74221
+  field_paths:
+  - definition
+  evidence_ids:
+  - C082-LOCAL
+  - C082-PRIMARY2010
+  - C082-CONSUMER
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_chebi.py
+    role: Implement a narrowly keyed and guarded imported-definition text correction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Consume corrected definition while preserving exact chemistry and source
+      attribution
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: Generated inventory output of the maintained extraction route; do not hand-edit
+actions:
+- action_id: S082-ACT-LOCUS
+  description: Use source_id=BGC0001722:1 and full original-row expected_source_row_sha256=a8ad4216fe72bb37b3218f8efb2a393f61614edf9234e67ebc767f707e1b3b6c.
+    Existing citation routing can retain producer_reference=DOI:10.1038/ja.2010.46,
+    select locus_reference=PMID:23706169 and source_reference=PMID:23706169, with
+    a dated rationale explicitly saying the original producer citation describes AXB4A2
+    and the later experiment uses mpkAΔ FGSC1404. This is citation scope, not new
+    proof of A4 production. Before adding a locus demonstration, implement a typed,
+    consumed claim-specific experimental-context extension in the maintained citation/method/seeder
+    contracts that retains taxon 227321 as the reference-genome assertion, preserves
+    SOURCE_ASSERTION for that producer, and permits the demonstrated homologous pkf
+    locus only with the stated mutant background and feature bridge. Do not use plain
+    Knock-out REPLACE, which currently upgrades both claims, or write FGSC1404 into
+    the strain field under an unchanged A4-specific taxon. Do not change the global
+    method semantics to solve this single case. The extension must bind the original
+    whole row, both primary sources and the accession interval, emit CURATOR_INFERENCE
+    for the contextual adjudication, preserve imported facts, and fail if the required
+    paired context is removed. A separately admitted experimental producer requires
+    independently grounded identity rather than a name-only stock substitution. No
+    reserved decisions.tsv route is proposed.
+  finding_ids:
+  - S082-F-LOCUS
+  target_ids:
+  - CHEBI:74221
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: Existing exact-row-pinned citation routing; extend only with explicit tested
+      context contract
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Current citation-only consumer and proposed typed context scope
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Method correction only after claim-specific context support
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Claim-specific admission/grade and provenance implementation
+  - repository: CultureBotAI/NaturalProductMech
+    path: conf/producer_evidence.tsv
+    role: Global method mapping must remain unchanged
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Preserve original A4 reference assertion
+  generator: scripts/seed_from_sources.py with explicitly implemented claim-specific
+    experimental-context contract
+  acceptance_checks:
+  - Reject drift in any source field, duplicate decisions, mismatched locus interval
+    or a method correction lacking its required context guard.
+  - Producer remains the qualified source assertion for the A4 reference taxon; no
+    evidence claims the unmodified reference stock underwent the reported deletions
+    or produced A under the tested conditions.
+  - Locus notes retain exact FGSC1404 mpkAΔ background, AN3225–AN3230 necessity, native
+    rather than heterologous context and the2013 citation. Any locus-grade upgrade
+    is conditional on the implemented typed context contract.
+  - The2010 AXB4A2 occurrence and original citation provenance remain visible, without
+    being presented as a2013 locus experiment.
+  - Test citation/context/method composition and the independent plant exclusion together.
+    Chemistry is unchanged; any future structure correction must address the current
+    explicit consumer incompatibility.
+  - Run exact-target seed and documented strict/reproduction/corpus/QC gates after
+    implementation; none were run here.
+- action_id: S082-ACT-PLANT
+  description: 'Add the consumed LOTUS exclusion {"expected_source_row_sha256": "bd4991563a13a78808be63d47113ff43782a9394f48260056f17a7cc8cf222a9",
+    "reference_doi": "10.1016/J.PHYTOCHEM.2011.04.014", "standard_inchi_key": "PHOZASLNSDMYGR-VZRGJMDUSA-N",
+    "taxon_id": "NCBITaxon:59970"}, reference=PMID:21601895 and dated curator rationale
+    distinguishing HK-ZJ fungal material from the host plant. Preserve raw inventory
+    and the excluded-triple discussion. Do not automatically add an Emericella occurrence
+    or map HK-ZJ to A. nidulans; that requires separate grounded admission.'
+  finding_ids:
+  - S082-F-PLANT
+  target_ids:
+  - CHEBI:74221
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/lotus_occurrence_exclusions.tsv
+    role: Consumed plant-host triple exclusion
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/lotus_exclusions.py
+    role: Exact source guard and retained discussion
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Occurrence join/emission
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Preserve upstream assertion
+  generator: scripts/seed_from_sources.py with lotus_occurrence_exclusions.tsv
+  acceptance_checks:
+  - Match exactly one original whole row and fail on any drift or duplicate.
+  - Withhold only the plant triple; preserve the supported2010 A. nidulans occurrence
+    and chemical identity.
+  - Retain the source and precise host-versus-fungus reason in the generated exclusion
+    discussion.
+  - Exercise combined exclusion and locus-context changes, then run documented native
+    checks after implementation.
+- action_id: C082-A-DEFINITION
+  finding_ids:
+  - C082-F-DEFINITION-SPELLING
+  target_ids:
+  - CHEBI:74221
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_chebi.py
+    role: Implement a narrowly keyed and guarded imported-definition text correction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Consume corrected definition while preserving exact chemistry and source
+      attribution
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: Generated inventory output of the maintained extraction route; do not hand-edit
+  description: Implement a typed, consumed definition text correction in the ChEBI
+    extraction/seeding path keyed to CHEBI:74221, exact key PHOZASLNSDMYGR-VZRGJMDUSA-N,
+    full current parsed raw-row SHA256 e05162fd8a7e7c13dff70a24004ca2922154d5dfad96114f51de364774789c14,
+    and expected literal definition 'A member of the class of isoindoles that is isoindolin-1-one
+    which is substituted at positions 4, 5 and 6 by hydroxy, triprenyloxy and methoxy
+    groups, respectively. The alkaloid was isolated from the model fungus Aspegillus
+    nidulans.'. Correct only Aspegillus to Aspergillus, retain source attribution
+    and unchanged chemical identity. The current consumer has no such correction hook;
+    implement and test it before use. Preserve the upstream snapshot, regenerate the
+    inventory/provenance and owner through documented commands; do not use the reserved
+    decisions table or edit generated YAML.
+  generator: Guarded maintained extractor/consumer implementation followed by ordinary
+    provenance and seeding workflow.
+  acceptance_checks:
+  - Changed definition or row hash fails closed; unrelated ChEBI entries are unaffected.
+  - Only the genus spelling changes; full structure, identity, source attribution
+    and biological claims remain intact.
+  - Reproduction and provenance checks pass after maintained regeneration.
+limitations:
+- This review assesses current assertions and concrete source questions. It does not
+  claim exhaustive discovery of subsequent studies or require every optional mechanism
+  as a condition of review coverage.
+- The 2011 occurrence source is verified at affirmative primary-abstract level; its
+  detailed main remains unavailable after the bounded publisher attempt. No compound-specific
+  antiviral potency is imported from that abstract.
+- The reference locus is matched by accession, interval and six exact annotation identifiers,
+  not by independent whole-sequence equality with FGSC1404. The main explicitly distinguishes
+  the activation background; no unmodified A4 production or universal negative claim
+  is inferred.
+- No exhaustive NMR reassignment, individual enzyme reconstitution or automatic admission
+  of the HK-ZJ fungus was performed.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35
+  explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently
+  verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+  Skipped tests are not counted as passing tests. Existing ontology caches were used;
+  no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do
+  not establish biological production, stereochemical specificity, evidence adequacy,
+  or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology
+  results. Reuse establishes unchanged repository inputs; it is not a new remote authority
+  query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all
+  tracked files are hashed. Generated Python bytecode and external tool caches are
+  not claimed to have been independently byte-pinned at the prior execution.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+tags:
+- path-order-campaign
+- batch-009
+```
