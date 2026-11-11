@@ -1,0 +1,1058 @@
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T125658Z-anatoxin-a
+title: 'Anatoxin-a: exact identity, wrong producer and locus citation'
+started_at: '2026-10-21T12:40:30.910975Z'
+finished_at: '2026-10-21T12:56:58.239823Z'
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The stored stereochemical graph and both external identifiers resolve to
+  exact anatoxin-a. The producer and locus cite a study of chemically distinct anatoxin-a(s).
+  Route those claims to the correct PCC6506 study while preserving the limits of precursor
+  assays and combined-toxin endpoints. Several original occurrence papers and the
+  complete correct locus paper remain unavailable, so this review is partial and the
+  1995 genus concern remains unresolved.
+source:
+  git_revision: 1c2402097718c138b081e00943de8f04de0541cd
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: conf/sources.yaml
+    sha256: d5e8ab63eeebb376589a0c9bf6f7eb92f45913b84243de20d820442ec88d5a98
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/anatoxin-a.yaml
+    sha256: 3f9724bb85f35ba1aafa3beeaa1cff4e88e6c313e3dea2b5fa2a554dd51b04d7
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_cyanometdb.py
+    sha256: cccfc32d65a5df99c768bf5055f7ea56ac9678b7029b9dd23483295603ec365e
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 67, batch 007, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated pending-PR targets.
+    At selection, 114 of 3116 current records had campaign coverage and 3002 remained.
+    The population search included ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-a20d67b08f
+targets:
+- target_id: naturalproductmech:mibig-a20d67b08f
+  path: data/natural_products/alkaloids/anatoxin-a.yaml
+  label: anatoxin-a
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-a20d67b08f
+  command: just validate-strict data/natural_products/alkaloids/anatoxin-a.yaml --out
+    /private/tmp/npm-review-work/067/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T12:40:33.754883Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 current record files agree with PATHS.tsv and their pinned filing
+    pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055340+00:00;
+    finished 2026-10-21T09:55:22.727768+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-corpus.log. Reused
+    for batch007 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch007. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-a20d67b08f
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 current records passed the documented byte-reproduction gate
+    against committed inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055361+00:00;
+    finished 2026-10-21T09:56:44.050706+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-reproduction.log.
+    Reused for batch007 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch007. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-a20d67b08f
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The exhaustive review queue produced 8,928 diagnostic rows across 12 queues;
+    this deterministic output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just review-queue --tsv /private/tmp/npm-review-queue-batch-004.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.057401+00:00;
+    finished 2026-10-21T09:54:38.468783+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/review-queue.log. Reused
+    for batch007 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch007. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-a20d67b08f
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'The configured identifier-label gate passed using the existing ontology
+    caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions,
+    499 warning-only mismatches and 4,744 pairs skipped because their prefixes have
+    no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.061733+00:00;
+    finished 2026-10-21T09:56:36.296159+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/validate-products.log. Reused
+    for batch007 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch007. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-a20d67b08f
+- check_id: shared-qc
+  name: Full repository quality gate on the current main baseline
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed on the unchanged main baseline
+    during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+    All configured lint, governance, documentation, provenance, source-queue, schema,
+    rendering, reproduction, filing-integrity and reporting stages completed successfully.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:30.560925+00:00;
+    finished 2026-10-21T10:04:44.806799+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/qc.log. Reused for batch007
+    only after a fresh fetch/clean branch, equal commit/tree and two reads of all
+    9,182 tracked byte streams and modes (208,070,649 bytes), including a recheck
+    after the fresh authoritative catalogue. This gate was not rerun for batch007.
+    Original execution times, scope, warnings, exceptions and skips are retained.'
+  target_ids:
+  - naturalproductmech:mibig-a20d67b08f
+- check_id: R067-FULL-OWNER
+  name: Complete owner and component scope
+  status: passed
+  required: true
+  summary: The complete owner and all present fields were read. The parsed component-reference
+    set is empty, so no referenced component was omitted. All existing inspection
+    input hashes still match.
+  target_ids:
+  - naturalproductmech:mibig-a20d67b08f
+  evidence_ids:
+  - R067-OWNER
+  - R067-LOCAL-SOURCES
+- check_id: S067-C-CITATION
+  name: Producer/locus citation applicability
+  status: failed
+  required: true
+  summary: The imported supporting DOI is positively about anatoxin-a(s), a different
+    chemical and culture.
+  target_ids:
+  - naturalproductmech:mibig-a20d67b08f
+  evidence_ids:
+  - S067-E-LOCAL
+  - S067-E-WRONG
+  - S067-E-JACS
+- check_id: S067-C-PRIMARY
+  name: Required original occurrence and locus source scope
+  status: unavailable
+  required: true
+  summary: The 1993 organism panel and complete 1977, 1995 and 2009 JACS main text
+    were not obtained. The retained primary abstract/SI evidence is bounded and does
+    not complete those checks.
+  target_ids:
+  - naturalproductmech:mibig-a20d67b08f
+  evidence_ids:
+  - S067-E-GAPS
+  - S067-E-1995
+  - S067-E-SI
+- check_id: C067-CHEM-CHECK
+  name: Exact identity, stereochemistry and two asserted external identifiers
+  status: passed
+  required: true
+  summary: Independent complete graph reconstruction and original CyanoMetDB ID search
+    verify both xrefs; the source-version and taxon-alias boundaries remain explicit.
+  target_ids:
+  - naturalproductmech:mibig-a20d67b08f
+  evidence_ids:
+  - C067-CALC
+  - C067-PUBCHEM-SDF
+  - C067-CYANO
+  - C067-CHEBI-SEARCH
+evidence:
+- evidence_id: R067-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/anatoxin-a.yaml
+  locator: Complete owner YAML, including every history entry, source claim and discussion
+  accessed_at: '2026-10-21T12:44:40.153684Z'
+  support: supports
+  summary: Root read the complete anatoxin-a owner after its individual intake. It
+    has 1 MIBiG source concepts, 7 occurrence entries, 1 producers and 1 loci. There
+    are no inline or referenced mechanism graphs, pathway steps, molecular targets,
+    bioactivity rows or synthetic-biology applications in this owner. The complete
+    parsed owner was inspected; ignored-file filters were not used to infer field
+    absence.
+  snapshot_sha256: 3f9724bb85f35ba1aafa3beeaa1cff4e88e6c313e3dea2b5fa2a554dd51b04d7
+- evidence_id: R067-LOCAL-SOURCES
+  kind: record_content
+  reference: /private/tmp/npm-review-work/067/local-sources.json
+  locator: Complete target-specific MIBiG, LOTUS, CyanoMetDB, ChEBI and NPClassifier
+    slices
+  accessed_at: '2026-10-21T12:44:40.153684Z'
+  support: context_only
+  summary: Root read every matching local source row and compared it with the complete
+    emitted owner. The separate scientific and identifier assessments decide claim
+    support; deterministic reproduction does not establish primary evidence.
+  snapshot_sha256: b3f3e330d7459fa9788d25b28301deddbbb1a6b1cb8238f0831a2f88135a78c9
+- evidence_id: R067-IMODULON-DATASETS
+  kind: database
+  reference: /private/tmp/npm-review-work/010/imodulon-datasets.txt
+  locator: Complete 28-row dataset catalogue; actual command receipt in 010/imodulon-context-receipts.json
+  accessed_at: '2026-10-21T07:21:15.957321Z'
+  support: context_only
+  summary: The successful structured-adapter catalogue retrieved at 07:21:15 UTC was
+    fully re-read. Its 28 datasets contain no Fischerella, Azotobacter, Kamptonema/Oscillatoria,
+    Vibrio anguillarum or V. campbellii, Streptomyces uncialis, S. hygrospinosus or
+    S. venezuelae dataset. The Streptomyces entries are S. albidoflavus and S. coelicolor;
+    the Vibrio entries are V. natriegens. A genus-level occurrence does not justify
+    substituting a different species. This same-session catalogue retains its original
+    retrieval time; a fresh request is not claimed.
+  snapshot_sha256: 1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549
+- evidence_id: S067-E-LOCAL
+  kind: record_content
+  reference: data/natural_products/alkaloids/anatoxin-a.yaml
+  locator: Whole owner, complete resolved view and all eight raw LOTUS rows
+  accessed_at: '2026-10-21T12:49:17.119337Z'
+  support: supports
+  summary: The owner asserts anatoxin-a, key SGNXVBOIDPPRJJ-PSASIEDQSA-N, BGC0000017:1
+    version 5, PCC 6506 taxon 272129, FJ477836.1 and Enzymatic assays, yielding SOURCE_ASSERTION/CLUSTER_DEMONSTRATED.
+    Both claims cite DOI10.1016/j.toxicon.2009.07.017. All seven emitted occurrences
+    and eight raw rows were read; canonical full MIBiG row SHA256 23d97a45a831dc26de0c0bd1de5574bacdcfe0d9def27b89ae115238703d25b9.
+  snapshot_sha256: 3f9724bb85f35ba1aafa3beeaa1cff4e88e6c313e3dea2b5fa2a554dd51b04d7
+- evidence_id: S067-E-WRONG
+  kind: primary_source
+  reference: https://pubmed.ncbi.nlm.nih.gov/19632258/
+  locator: PMID19632258 original title and abstract; DOI10.1016/j.toxicon.2009.07.017
+  accessed_at: '2026-10-21T12:09:55.955339Z'
+  support: refutes
+  summary: This paper identifies anatoxin-a(s), an N-hydroxyguanidine methylphosphate
+    acetylcholinesterase inhibitor, using Anabaena lemmermani PH-160 B and Anabaena
+    oumiana ITEP-025/026. Its compound, culture and LC-MS/MS method are distinct from
+    the bicyclic anatoxin-a/PCC 6506 ana locus. This is a positive chemical and experimental
+    mismatch established by the primary abstract, not a claim that the complete article
+    was read.
+  snapshot_sha256: 594b02d5dc391d4bb20f6318b31f0c46f8740e0f275b246f0cacc80d7ea5f8b9
+- evidence_id: S067-E-JACS
+  kind: primary_source
+  reference: https://pubmed.ncbi.nlm.nih.gov/19489636/
+  locator: Correct 2009 JACS title, abstract and identifier mapping
+  accessed_at: '2026-10-21T12:13:41.558707Z'
+  support: supports
+  summary: The primary report DOI10.1021/ja9024353 links anatoxin-a/homoanatoxin-a
+    biosynthesis with the PCC 6506 modular polyketide synthase and L-proline initiation.
+    It supplies the relevant publication identity; complete main text remains inaccessible.
+  snapshot_sha256: 6df60b1c23b1f2f95e2674bf3505fbbba08bb35f25de6ed70067e7a231ba5ac6
+- evidence_id: S067-E-SI
+  kind: primary_source
+  reference: https://ndownloader.figshare.com/files/4548718
+  locator: S1-S6 methods; Tables S1-S5; Figures S1 and S12-S13; all figure captions
+  accessed_at: '2026-10-21T12:14:26.413597Z'
+  support: partial
+  summary: Axenic PCC 6506 is cultured in BG11. Native DNA supplies anaC/anaD cloned
+    into tagged pET28 constructs expressed in E. coli BL21-CodonPlus(DE3) RIPL. AnaC
+    activation and AnaD prolyl loading establish early precursor chemistry; they do
+    not reconstitute final anatoxin-a. Table S2 correlates a combined anatoxin-a/homoanatoxin-a
+    GC/MS endpoint with ana PCR, without resolving each toxin in that table. The detailed
+    isotope/NMR endpoint and Figure S1 are homoanatoxin-a, not exact anatoxin-a. FJ477836
+    is explicitly the putative cluster.
+  snapshot_sha256: 3c9ae6afd1278abcd1d8477d57a68ccacb6a0602fe1fb6ca00b1dfd3c457be79
+- evidence_id: S067-E-PIXELS
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch007/later-four/support-pixel-qa/source-only-notes.json
+  locator: Original SI pixels S1-S5/S10/S13/S14/S27; PDFKit versus Poppler Symbol-font
+    rendering
+  accessed_at: '2026-10-21T12:35:18.578083Z'
+  support: supports
+  summary: 'Independent original-pixel checks resolved corrupted micro symbols: the
+    assay is 100 microlitres with 1 micromolar AnaC; Figure S13 reports nanomoles
+    ATP over minutes, not kcat. Table S5 supports prolyl loading of the recombinant
+    AnaD. No global m-to-micro substitution or spectral reintegration was performed.'
+  snapshot_sha256: d25c1e9b05f71cace550c3d2cdf0925623cc1dce11ba04eb0e4dda26cff5fa20
+- evidence_id: S067-E-LOCUS
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/nuccore/FJ477836.1
+  locator: Exact version header, source feature and reference block
+  accessed_at: '2026-10-21T12:30:51.754275Z'
+  support: supports
+  summary: The 28,910-bp FJ477836.1 deposition names PCC 6506 and cites the correct
+    PMID19489636. Its historical record reports replacement by FJ477836.2 in 2016;
+    this review does not equate their sequences or silently change the accession.
+    Current taxonomy and identifier disposition are covered separately.
+  snapshot_sha256: bcce68ab0fb281833ddfa52e982705f8ffd61009819d3c67e971c173b4c11eca
+- evidence_id: S067-E-2003
+  kind: primary_source
+  reference: https://pubmed.ncbi.nlm.nih.gov/14529735/
+  locator: Original abstract and exact DOI10.1016/S0041-0101(03)00233-2
+  accessed_at: '2026-10-21T12:47:27.605924Z'
+  support: supports
+  summary: The original abstract directly reports Raphidiopsis mediterranea LBRI 48
+    from Lake Biwa producing anatoxin-a as a minor component at 0.04% dry cell weight,
+    alongside homoanatoxin-a and 4-hydroxyhomoanatoxin-a. Improved extraction and
+    purification are described. This supports the stored species occurrence at abstract
+    scope; it does not supply an independently inspected absolute-configuration experiment.
+  snapshot_sha256: d3102e80987a54d751172503597803d591891fa306402e589b5f88b63b92e713
+- evidence_id: S067-E-1995
+  kind: primary_source
+  reference: https://pubs.rsc.org/en/content/articlelanding/1995/c3/c39950001361
+  locator: Original publisher title, abstract and DOI; lines 38-75
+  accessed_at: '2026-10-21T12:44:37Z'
+  support: partial
+  summary: The actual title identifies anatoxin-a in Anabaena flos-aquae and homoanatoxin-a
+    in Oscillatoria formosa. The stored LOTUS triple instead names Aphanizomenon flos-aquae.
+    The accessible abstract does not bridge those genera; full PDF returned 403. This
+    is an unresolved citation-specific taxon concern, not proof that the inaccessible
+    body cannot mention Aphanizomenon.
+  snapshot_sha256: dc241298518a32f34174955e10273eaa2f2cdfe8f26d2e6efe605726f5f5aa65
+- evidence_id: S067-E-GAPS
+  kind: search
+  reference: https://doi.org/10.1016/0040-4020(93)80011-H
+  locator: Bounded exact-DOI primary access and institutional-lead receipts
+  accessed_at: '2026-10-21T12:47:28.983002Z'
+  support: partial
+  summary: Crossref confirms the 1993 liquid chromatography/mass spectrometric detection
+    paper but supplies no abstract; its body was unavailable. The 1977 official body
+    returned 403; indexed Crossref-derived abstract names isolation from Anabaena
+    flos-aquae NRC-44h, but a directly inspected original full text was not obtained.
+    A downloaded NRC lead was checked and proved to be a different 2023 article, not
+    the 1977 paper. The 1993 organism panel and full 1977/1995 primary identity details
+    remain required gaps.
+  snapshot_sha256: 758c03e52a928501352538cf5113b630e2e4b14f91912e09f1df2ed3d512e789
+  search_scope: Exact DOI searches, official publisher pages, Crossref metadata and
+    one NRC institutional lead; retained web snapshots 001-004. No paid access or
+    claim of global public-copy absence.
+- evidence_id: S067-E-CONSUMERS
+  kind: record_content
+  reference: src/naturalproductmech/curate/claim_references.py
+  locator: Complete loader and correction emitter; paired method consumer and grading
+    table
+  accessed_at: '2026-10-21T12:49:17.119337Z'
+  support: supports
+  summary: Claim-reference corrections pin the complete original raw row and can route
+    producer/locus citations separately without changing grades. WITHDRAW explicitly
+    checks seven original fields and empty bounds; REPLACE does not itself enforce
+    those expected fields. Citation corrections reject structure_correction_note,
+    so any independently required identity correction must be composition-tested and
+    supported by an explicit consumer extension. An ignored-inclusive curation/conf
+    search for the target ID, full key, BGC and 1995 DOI found no existing target
+    correction.
+  snapshot_sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+- evidence_id: C067-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/anatoxin-a.yaml
+  locator: Complete owner and resolved source projection
+  accessed_at: '2026-10-21T12:54:53.978733Z'
+  support: supports
+  summary: The owner identifies anatoxin-a with full key SGNXVBOIDPPRJJ-PSASIEDQSA-N;
+    exact source rows, xrefs, source concepts and classification were read.
+  snapshot_sha256: 3f9724bb85f35ba1aafa3beeaa1cff4e88e6c313e3dea2b5fa2a554dd51b04d7
+- evidence_id: C067-RAW
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: Complete relevant raw rows and local exact-key inventories
+  accessed_at: '2026-10-21T12:54:53.978733Z'
+  support: supports
+  summary: 'Exact source row SHA-256 values: BGC0000017:1 = 23d97a45a831dc26de0c0bd1de5574bacdcfe0d9def27b89ae115238703d25b9.
+    Digests cover every column using canonical sorted JSON. Complete exact-key eligible
+    ChEBI projection has 0 row(s).'
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: C067-CLASS
+  kind: record_content
+  reference: data/raw/npclassifier.tsv
+  locator: Exact-key classification row and owner attribution
+  accessed_at: '2026-10-21T12:54:53.978733Z'
+  support: context_only
+  summary: The filing and NPClassifier superclass/class outputs are attributed to
+    the pinned model version. MIBiG biosynthetic classes remain a separate source
+    axis; current authority ontology relations are not silently promoted into asserted
+    corpus classes.
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: C067-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/067/chemistry-local-search.txt
+  locator: Complete matching path list
+  accessed_at: '2026-10-21T12:54:54.056273Z'
+  support: supports
+  summary: Ignored-inclusive search checks the exact full key, current slug and target
+    ID across current owners, curation, configuration and source code. Exact raw inventory
+    rows were separately parsed. This bounded search does not claim universal absence.
+  snapshot_sha256: 2ac3409a26976b5d314e262405505f8ee0ab1c30d00d6e0958dae746affb03d1
+  search_scope: rg --no-ignore --hidden -l -F -e SGNXVBOIDPPRJJ-PSASIEDQSA-N -e anatoxin-a
+    -e naturalproductmech:mibig-a20d67b08f data/natural_products curation conf src
+    scripts
+- evidence_id: C067-WD-Q4750549
+  kind: database
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q4750549.json
+  locator: Complete exact identity, identifier, provenance and relevant source fields
+  accessed_at: '2026-10-21T12:44:56.328338Z'
+  support: supports
+  summary: 'Current LOTUS-linked Wikidata entity: {"qid": "Q4750549", "label": "Anabaena
+    circinalis", "P235": [], "P234": [], "P2017": [], "P685": [], "P225": ["Anabaena
+    circinalis"]}. Chemical and organism namespaces are kept distinct; this resolution
+    is not primary occurrence evidence.'
+  snapshot_sha256: 262d1de6d3cb32d111550ea266a1326f34d745fbf618bb51c775402f49adf6fe
+- evidence_id: C067-WD-Q104246548
+  kind: database
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q104246548.json
+  locator: Complete exact identity, identifier, provenance and relevant source fields
+  accessed_at: '2026-10-21T12:44:55.704662Z'
+  support: supports
+  summary: 'Current LOTUS-linked Wikidata entity: {"qid": "Q104246548", "label": "1-[(1r,6r)-9-Azabicyclo[4.2.1]non-2-En-2-Yl]ethanone",
+    "P235": ["SGNXVBOIDPPRJJ-PSASIEDQSA-N"], "P234": ["InChI=1S/C10H15NO/c1-7(12)9-4-2-3-8-5-6-10(9)11-8/h4,8,10-11H,2-3,5-6H2,1H3/t8-,10-/m1/s1"],
+    "P2017": ["CC(=O)C1=CCC[C@@H]2CC[C@H]1N2"], "P685": [], "P225": []}. Chemical
+    and organism namespaces are kept distinct; this resolution is not primary occurrence
+    evidence.'
+  snapshot_sha256: fd59a13e4ff16b5fa24f9f71c48e14633077032c3d1a5a5da5714b940c7c9bbe
+- evidence_id: C067-WD-Q67336988
+  kind: database
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q67336988.json
+  locator: Complete exact identity, identifier, provenance and relevant source fields
+  accessed_at: '2026-10-21T12:44:56.437094Z'
+  support: supports
+  summary: 'Current LOTUS-linked Wikidata entity: {"qid": "Q67336988", "label": "Dolichospermum
+    circinale", "P235": [], "P234": [], "P2017": [], "P685": ["109265"], "P225": ["Dolichospermum
+    circinale"]}. Chemical and organism namespaces are kept distinct; this resolution
+    is not primary occurrence evidence.'
+  snapshot_sha256: 146e93801d31d282528f8188d94ee3a568393c97aa69cca63a8450138d35284f
+- evidence_id: C067-WD-Q3555762
+  kind: database
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q3555762.json
+  locator: Complete exact identity, identifier, provenance and relevant source fields
+  accessed_at: '2026-10-21T12:44:56.298876Z'
+  support: supports
+  summary: 'Current LOTUS-linked Wikidata entity: {"qid": "Q3555762", "label": "Microcystis
+    aeruginosa", "P235": [], "P234": [], "P2017": [], "P685": ["1126"], "P225": ["Microcystis
+    aeruginosa"]}. Chemical and organism namespaces are kept distinct; this resolution
+    is not primary occurrence evidence.'
+  snapshot_sha256: 3e25aca59e1696c755f351efbfa8efc1c9ca434c993960ec8f062c65534757c7
+- evidence_id: C067-WD-Q141259
+  kind: database
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q141259.json
+  locator: Complete exact identity, identifier, provenance and relevant source fields
+  accessed_at: '2026-10-21T12:44:56.120389Z'
+  support: supports
+  summary: 'Current LOTUS-linked Wikidata entity: {"qid": "Q141259", "label": "Oscillatoria",
+    "P235": [], "P234": [], "P2017": [], "P685": ["1158"], "P225": ["Oscillatoria"]}.
+    Chemical and organism namespaces are kept distinct; this resolution is not primary
+    occurrence evidence.'
+  snapshot_sha256: 52a0681d306cba65066fd86d94be6d59d69401ac27bc365563459eccc892b9ff
+- evidence_id: C067-WD-Q133353
+  kind: database
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q133353.json
+  locator: Complete exact identity, identifier, provenance and relevant source fields
+  accessed_at: '2026-10-21T12:44:56.120284Z'
+  support: supports
+  summary: 'Current LOTUS-linked Wikidata entity: {"qid": "Q133353", "label": "Anabaena",
+    "P235": [], "P234": [], "P2017": [], "P685": ["1163"], "P225": ["Anabaena"]}.
+    Chemical and organism namespaces are kept distinct; this resolution is not primary
+    occurrence evidence.'
+  snapshot_sha256: 97093f232e17935a2fa48ed1e854d0fa2997f589da1ba665f25c701da2b70dab
+- evidence_id: C067-WD-Q675502
+  kind: database
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q675502.json
+  locator: Complete exact identity, identifier, provenance and relevant source fields
+  accessed_at: '2026-10-21T12:44:56.463098Z'
+  support: supports
+  summary: 'Current LOTUS-linked Wikidata entity: {"qid": "Q675502", "label": "Aphanizomenon
+    flos-aquae", "P235": [], "P234": [], "P2017": [], "P685": ["1176"], "P225": ["Aphanizomenon
+    flos-aquae", "Aphanizomenon flosaquae"]}. Chemical and organism namespaces are
+    kept distinct; this resolution is not primary occurrence evidence.'
+  snapshot_sha256: 374cbaf4c735b417129678dc930980f5e636f010021250ead12930038245d7df
+- evidence_id: C067-WD-Q67338097
+  kind: database
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q67338097.json
+  locator: Complete exact identity, identifier, provenance and relevant source fields
+  accessed_at: '2026-10-21T12:44:56.443809Z'
+  support: supports
+  summary: 'Current LOTUS-linked Wikidata entity: {"qid": "Q67338097", "label": "Raphidiopsis
+    mediterranea", "P235": [], "P234": [], "P2017": [], "P685": ["312885"], "P225":
+    ["Raphidiopsis mediterranea"]}. Chemical and organism namespaces are kept distinct;
+    this resolution is not primary occurrence evidence.'
+  snapshot_sha256: d11e22c9a2202523c3f4b4ecc00a5892d188428bc4763044fc425702af33365e
+- evidence_id: C067-MIBIG
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0000017.5/annotations.json
+  locator: Complete relevant source identity, structure, references and namespace
+    fields
+  accessed_at: '2026-10-21T12:27:33.279333Z'
+  support: supports
+  summary: Current BGC0000017 version5 is active, quality questionable, completeness
+    complete. The exact compound, source taxon and versioned locus metadata were inspected.
+    Source quality is metadata, not experimental proof.
+  snapshot_sha256: 342bc009fd9e0cdef71b389b97c03d56640abe800bdefffa1adb5ae95f04c4f1
+- evidence_id: C067-TAX
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=272129,882102,516360,54571&retmode=xml
+  locator: Complete relevant Taxon name, rank, aliases, parent and lineage
+  accessed_at: '2026-10-21T12:30:24.201644Z'
+  support: supports
+  summary: NCBI272129 is now Kamptonema sp. PCC6506, with retained historical Oscillatoria
+    aliases; the culture identity must not be changed merely from nomenclature.
+  snapshot_sha256: b1671a47db75e7debf89937a9762372ab28502f82c30a2457baa5c59e6ed7ed3
+- evidence_id: C067-GENBANK
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=FJ477836.1&rettype=gbwithparts&retmode=text
+  locator: All header/reference text and complete source feature; no CDS translation/function
+    comparison
+  accessed_at: '2026-10-21T12:30:51.387972Z'
+  support: supports
+  summary: FJ477836.1 resolves as the historical 28,910 bp PCC6506 deposited locus
+    and explicitly cites PMID19489636. It was replaced by .2; version .1 remains the
+    asserted source and no unexamined .2 equivalence is claimed. Empty source interval
+    is not filled from total length.
+  snapshot_sha256: bcce68ab0fb281833ddfa52e982705f8ffd61009819d3c67e971c173b4c11eca
+- evidence_id: C067-OCC-TAX
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=109265,1126,1158,1163,1176,312885,1883,2719566,55601,662&retmode=xml
+  locator: Complete relevant Taxon records in the retained multi-ID response
+  accessed_at: '2026-10-21T12:44:56.707243Z'
+  support: supports
+  summary: All relevant occurrence taxon IDs were read with current names, ranks and
+    aliases. Genus, species, subspecies and deposited-strain IDs are kept distinct;
+    current resolution is not primary occurrence evidence.
+  snapshot_sha256: 329169c04063c5d656512e9e7846883ccbf335e1c5026edd3764aeaee99410cf
+- evidence_id: C067-CALC
+  kind: validation
+  reference: /private/tmp/npm-review-work/067/chemistry-authority-comparison.json
+  locator: Fresh owner and official molecular representation calculations
+  accessed_at: '2026-10-21T12:54:54.062603Z'
+  support: supports
+  summary: All raw outcomes, including any parse failure, are retained. Full Standard
+    and fixed-H keys, formula, charge and assigned/undefined centres are compared
+    without silently modifying submitted representations.
+  snapshot_sha256: d5b429a765733856759d4c7a35801d52bd9cc0a5691eaf1f5c344041e76dc047
+- evidence_id: C067-PUBCHEM
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/3034748/property/InChI,InChIKey,IsomericSMILES,MolecularFormula/JSON
+  locator: Complete relevant source identity, structure, references and namespace
+    fields
+  accessed_at: '2026-10-21T12:27:35.731736Z'
+  support: supports
+  summary: CID3034748 identifies exact neutral anatoxin-a, C10H15NO, with full key
+    SGNXVBOIDPPRJJ-PSASIEDQSA-N and both assigned R centres. It is a compound identifier,
+    not a substance or anatoxin-a(s).
+  snapshot_sha256: 8f7ea5d506911318495f063dbb173e61074b3762ee040d1d8cd1d39e6447ec1d
+- evidence_id: C067-PUBCHEM-SDF
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/3034748/SDF?record_type=2d
+  locator: Complete SDF graph
+  accessed_at: '2026-10-21T12:29:23.800620Z'
+  support: supports
+  summary: Official CID3034748 SDF independently matches the full owner graph and
+    fixed-H form.
+  snapshot_sha256: 3fd80d2df5cb0017f2a9199cf745ee711d185112facdf545bc9fc41a4511c17e
+- evidence_id: C067-CHEBI-SEARCH
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=SGNXVBOIDPPRJJ-PSASIEDQSA-N&size=100
+  locator: Complete exact-query response body
+  accessed_at: '2026-10-21T12:27:33.280897Z'
+  support: supports
+  summary: The exact full-key query returns HTTP404 with explicit no-compound-match
+    JSON. The committed exact-key eligible ChEBI inventory is also empty. This bounded
+    result does not establish universal ChEBI absence.
+  snapshot_sha256: fc5b160cc6d27c2a59f7d8dbcad8f1066d409fb66b6f1060d27b582f8ee8db8f
+- evidence_id: C067-CYANO
+  kind: database
+  reference: https://zenodo.org/records/13854577/files/CyanoMetDB_V03_2024.csv?download=1
+  locator: Complete CSV ID/key search and entire matched1772 row; no unrelated row
+    scientific review
+  accessed_at: '2026-10-21T12:53:00.494248Z'
+  support: supports
+  summary: The original public 2024 CSV was parsed in full (3,084 rows). Exactly one
+    CyanoMetDB_1772 row identifies Anatoxin-a, C10H15NO, NPA020384, CID3034748 and
+    the owner full key. Its complete isomeric SMILES and InChI reconstruct to the
+    same R/R graph. This verifies the explicit xref; the source occurrence names Anabaena
+    flos aquae NRC-44h1 and DOI10.1139/v77-189, without creating an unreviewed occurrence
+    in the owner.
+  snapshot_sha256: 91aa57146c9e803d5eeef656fc0e5cfc8f804531b1b83718757e96aa848a4121
+assessments:
+- assessment_id: R067-HISTORY
+  area: provenance
+  topic: Native status and retained seed history
+  outcome: supported
+  summary: The 2 dated seed events and SEEDED status describe generated provenance.
+    This review does not relabel the owner REVIEWED or treat seed history as scientific
+    approval. Both retained events are source seeding events.
+  target_ids:
+  - naturalproductmech:mibig-a20d67b08f
+  evidence_ids:
+  - R067-OWNER
+- assessment_id: R067-OPTIONAL
+  area: completeness
+  topic: Optional mechanism and application content
+  outcome: not_applicable
+  summary: The owner has no structured pathway steps, causal edges, organism-specific
+    proteins, molecular-target items, bioactivity rows or synthetic-biology applications.
+    Their absence alone is not a defect in this source-generated record. No enzyme,
+    target, activity or engineering claim is inferred from the name or chemical class.
+  target_ids:
+  - naturalproductmech:mibig-a20d67b08f
+  evidence_ids:
+  - R067-OWNER
+  - R067-LOCAL-SOURCES
+- assessment_id: R067-IMODULON
+  area: completeness
+  topic: Structured transcriptomic context
+  outcome: not_applicable
+  summary: No exact named native producer and strain is covered by the inspected iModulonDB
+    dataset catalogue. E. coli used as a recombinant expression host in source experiments
+    does not supply native-producer expression context; genus-only occurrences cannot
+    identify a covered species or strain. No applicable module query follows from
+    these records. This bounded coverage limit is not negative evidence about production
+    or function.
+  target_ids:
+  - naturalproductmech:mibig-a20d67b08f
+  evidence_ids:
+  - R067-OWNER
+  - R067-IMODULON-DATASETS
+- assessment_id: S067-A-LOCUS
+  area: evidence
+  topic: Native PCC 6506 versus early recombinant enzyme support
+  outcome: concern
+  summary: The stored citation cannot support this producer/locus. The correct source
+    establishes native culture and a plausible ana locus with early recombinant assays,
+    but the inspected SI does not demonstrate enzymatic formation of exact anatoxin-a.
+    The combined-toxin correlation panel must not be silently made target-specific.
+    Resolving the final locus grade requires claim-specific source qualification rather
+    than inheriting an entry-wide assay label.
+  target_ids:
+  - naturalproductmech:mibig-a20d67b08f
+  evidence_ids:
+  - S067-E-LOCAL
+  - S067-E-WRONG
+  - S067-E-JACS
+  - S067-E-SI
+  - S067-E-LOCUS
+  dimensions:
+  - name: experimental_native_strain
+    value: Axenic Oscillatoria PCC 6506; historical FJ477836.1; no native knockout
+      in inspected SI
+    definition: Primary culture and deposited taxon scope; not species-wide production
+      proof
+    evidence_ids:
+    - S067-E-SI
+    - S067-E-LOCUS
+  - name: experimental_construct_context
+    value: Tagged AnaC/AnaD expressed in E. coli; proline activation/loading, not
+      final toxin formation
+    definition: Distinguishes native observation from recombinant precursor assays
+    evidence_ids:
+    - S067-E-SI
+    - S067-E-LOCUS
+  - name: producer_locus_evidence_tiers
+    value: Stored SOURCE_ASSERTION / CLUSTER_DEMONSTRATED; wrong citation confirmed,
+      exact final-product assay applicability remains unresolved
+    definition: Separate producer and exact-product locus grades under the maintained
+      method rubric
+    evidence_ids:
+    - S067-E-SI
+    - S067-E-LOCUS
+- assessment_id: S067-A-OCCURRENCE
+  area: evidence
+  topic: Every stored occurrence and chemical boundary
+  outcome: unknown
+  summary: The 2003 Raphidiopsis mediterranea occurrence is directly supported by
+    the original abstract. The 1977 Anabaena genus row is consistent with an indexed
+    original isolation abstract but its complete source remains unavailable. The four
+    emitted 1993 taxon associations, represented by five raw rows including the collapsed
+    Dolichospermum/Anabaena pair, remain unverified against that paper. The 1995 Aphanizomenon
+    row conflicts with the accessible title's Anabaena context and needs the actual
+    body or a documented taxonomic bridge before a correction is selected. No occurrence
+    is upgraded to a characterized native producer.
+  target_ids:
+  - naturalproductmech:mibig-a20d67b08f
+  evidence_ids:
+  - S067-E-LOCAL
+  - S067-E-2003
+  - S067-E-1995
+  - S067-E-GAPS
+- assessment_id: S067-A-ORIGIN
+  area: evidence
+  topic: Biological origin and congener-specific analytical endpoints
+  outcome: supported
+  summary: Natural anatoxin-a origin is supported at primary abstract scope, including
+    isolated Raphidiopsis product. Anatoxin-a(s), homoanatoxin-a and 4-hydroxyhomoanatoxin-a
+    remain distinct. The SI homoanatoxin isotope/NMR results and recombinant precursor
+    reactions are not assigned to the exact anatoxin-a endpoint.
+  target_ids:
+  - naturalproductmech:mibig-a20d67b08f
+  evidence_ids:
+  - S067-E-2003
+  - S067-E-SI
+  - S067-E-WRONG
+- assessment_id: C067-CLASSIFICATION
+  area: provenance
+  topic: Predicted filing and asserted source classes
+  outcome: supported
+  summary: The exact-key NPClassifier output and model version support the alkaloid
+    filing as a prediction. MIBiG biosynthetic classes and any eligible source classes
+    remain separately attributed; no prediction is promoted into an experimental biosynthetic
+    claim.
+  target_ids:
+  - naturalproductmech:mibig-a20d67b08f
+  evidence_ids:
+  - C067-CLASS
+  - C067-RAW
+  - C067-OWNER
+  - C067-MIBIG
+- assessment_id: C067-IDENTITY
+  area: identity
+  topic: Complete stereochemistry and both asserted xref namespaces
+  outcome: supported
+  summary: The stored graph is neutral anatoxin-a with two assigned R centres, complete
+    at its asserted stereochemical resolution. PubChem3034748 and original CyanoMetDB_1772
+    resolve to that exact Standard and fixed-H graph. Neither identifier refers to
+    the chemically distinct anatoxin-a(s).
+  target_ids:
+  - naturalproductmech:mibig-a20d67b08f
+  evidence_ids:
+  - C067-OWNER
+  - C067-CALC
+  - C067-PUBCHEM
+  - C067-PUBCHEM-SDF
+  - C067-CYANO
+  - C067-WD-Q104246548
+- assessment_id: C067-GROUNDING
+  area: grounding
+  topic: Minted source identity and bounded eligibility search
+  outcome: supported
+  summary: Source-concept BGC0000017:1 reproducibly mints the stored source ID. No
+    exact-key row is present in the complete pinned eligible ChEBI inventory, and
+    the current bounded exact-key search returns explicit no match. Both asserted
+    external xrefs are independently resolved.
+  target_ids:
+  - naturalproductmech:mibig-a20d67b08f
+  evidence_ids:
+  - C067-RAW
+  - C067-MIBIG
+  - C067-CHEBI-SEARCH
+  - C067-CYANO
+  - C067-PUBCHEM
+  - C067-SEARCH
+- assessment_id: C067-TAXON
+  area: scope
+  topic: Current source names, historical aliases and occurrence granularity
+  outcome: supported
+  summary: 'NCBI272129 preserves the PCC6506 culture under current Kamptonema nomenclature.
+    The LOTUS occurrence IDs independently resolve: 109265 Dolichospermum circinale
+    with Anabaena circinalis as synonym;1126 Microcystis aeruginosa;1158 Oscillatoria
+    genus;1163 Anabaena genus;1176 Aphanizomenon flos-aquae;312885 Raphidiopsis mediterranea.
+    Two historical names sharing109265 are one taxon, not duplicate species. These
+    namespace checks do not validate every historical isolation claim.'
+  target_ids:
+  - naturalproductmech:mibig-a20d67b08f
+  evidence_ids:
+  - C067-TAX
+  - C067-OCC-TAX
+  - C067-GENBANK
+  - C067-OWNER
+findings:
+- finding_id: S067-F-CITATION
+  issue_key: mibig-bgc0000017-anatoxin-as-citation-scope
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Anatoxin-a producer and locus cite the chemically distinct anatoxin-a(s)
+    study
+  description: Both claims inherit DOI10.1016/j.toxicon.2009.07.017, whose original
+    abstract explicitly describes the guanidine methylphosphate toxin and different
+    Anabaena cultures. The deposited ana accession instead cites PMID19489636. Correct
+    citation routing must preserve the limited early-enzyme and combined-toxin evidence;
+    citation repair alone does not establish an exact final-product assay.
+  target_ids:
+  - naturalproductmech:mibig-a20d67b08f
+  field_paths:
+  - producer_organisms[0].evidence
+  - biosynthetic_gene_clusters[0].evidence
+  - biosynthetic_gene_clusters[0].locus_evidence_methods
+  evidence_ids:
+  - S067-E-LOCAL
+  - S067-E-WRONG
+  - S067-E-JACS
+  - S067-E-SI
+  - S067-E-LOCUS
+  - S067-E-CONSUMERS
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: full-row-pinned producer/locus citation routing
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: consumed citation and composition contract
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: conditional exact-product method qualification
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: reproduction and method guard
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: preserved original raw-row provenance
+  rule_id: 'review-yaml-record: exact chemical, producer and locus citation applicability'
+  native_severity: 'major: chemically wrong primary citation'
+  normalization_reason: One underlying citation-routing defect; unresolved assay applicability
+    is retained as a qualification rather than a duplicate confirmed absence finding.
+actions:
+- action_id: S067-ACT-CITATION
+  description: Add a consumed claim-reference row for source_id=BGC0000017:1 with
+    expected_source_row_sha256=23d97a45a831dc26de0c0bd1de5574bacdcfe0d9def27b89ae115238703d25b9,
+    producer_reference=PMID:19489636, locus_reference=PMID:19489636, source_reference=DOI:10.1021/ja9024353
+    and dated curator/rationale fields. Retain the original erroneous DOI in raw provenance
+    and expose the chemical mismatch in the curator explanation. Do not upgrade producer
+    SOURCE_ASSERTION. Reassess the exact-product method against the complete correct
+    paper; if only the inspected precursor assays and combined-toxin panel are available,
+    use a guarded WITHDRAW with replacement methods empty, source=MIBIG, source_id=BGC0000017,
+    expected_entry_version=5, expected_taxon_id=NCBITaxon:272129, expected_genome_accession=FJ477836.1,
+    explicitly empty expected bounds, expected_standard_inchi_key=SGNXVBOIDPPRJJ-PSASIEDQSA-N
+    and expected_locus_evidence_methods=Enzymatic assays, yielding CLUSTER_UNSTATED
+    with a specific scope note. The paired citation row enforces the full original-row
+    digest. A target-specific correlation or stronger method requires its own positive
+    evidence; do not infer it solely from the combined panel. Coordinate with any
+    independently required identity correction because the current citation emitter
+    rejects structure_correction_note.
+  finding_ids:
+  - S067-F-CITATION
+  target_ids:
+  - naturalproductmech:mibig-a20d67b08f
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: full-row-pinned producer/locus citation routing
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: consumed citation and composition contract
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: conditional exact-product method qualification
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: reproduction and method guard
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: preserved original raw-row provenance
+  generator: scripts/seed_from_sources.py with consumed claim-reference and, if warranted,
+    method corrections
+  acceptance_checks:
+  - Drift of any complete BGC0000017:1 source-row field must fail the SHA guard; duplicate
+    source or correction rows must fail.
+  - Regenerated producer/locus citations must resolve to the correct anatoxin-a study
+    and retain the historical erroneous citation only as explicitly qualified provenance.
+  - Test citation and any method/identity correction together; never bypass structure-correction
+    rejection or silently transfer old-key occurrences/classification.
+  - Keep native PCC 6506, recombinant AnaC/AnaD and final-toxin scopes explicit; no
+    assay or genetic grade may arise solely from a congener or combined endpoint.
+  - Run exact-target seed canary, strict target validation, verify-reproduction, verify-corpus
+    and QC after the proposed maintained change; none was executed by this packet
+    author.
+limitations:
+- This review audits the present assertions and the concrete source questions they
+  raise; it does not claim exhaustive discovery of every later activity or biosynthetic
+  study. Optional enrichment remains distinct from correcting an unsupported current
+  assertion.
+- Complete 1993, 1977, 1995 and correct 2009 main papers remain unavailable through
+  the bounded recorded routes. Access limitations are not evidence that a claimed
+  organism or experiment is absent.
+- The 1995 genus mismatch remains a bounded concern pending its complete primary context;
+  no automatic LOTUS exclusion is proposed from title-only evidence.
+- Original SI spectral data were inspected for experimental scope and units, not comprehensively
+  reintegrated; absolute chemical identity and current authority checks are assigned
+  separately.
+- Current taxon names and versioned accession metadata do not establish source-citation
+  support, native product formation or complete biosynthetic mechanism. Those scientific
+  questions are assessed separately.
+- The old FJ477836.1 version was inspected as asserted. Replacement .2 was not fetched
+  and its sequence equivalence is not assumed.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35
+  explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently
+  verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+  Skipped tests are not counted as passing tests. Existing ontology caches were used;
+  no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do
+  not establish biological production, stereochemical specificity, evidence adequacy,
+  or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology
+  results. Reuse establishes unchanged repository inputs; it is not a new remote authority
+  query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all
+  tracked files are hashed. Generated Python bytecode and external tool caches are
+  not claimed to have been independently byte-pinned at the prior execution.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+tags:
+- path-order-campaign
+- batch-007
