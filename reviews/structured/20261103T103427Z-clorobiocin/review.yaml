@@ -1,0 +1,1918 @@
+schema_version: 1.0.0
+review_id: 20261103T103427Z-clorobiocin
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'Local evidence review: clorobiocin'
+started_at: '2026-11-03T09:59:30.056451Z'
+finished_at: '2026-11-03T10:34:27.838981Z'
+reviewer:
+  identity: Codex root with native_checks, bgc_science and review_support peer agents
+  kind: agent
+  independence: independent
+  independence_basis: This review team inspected existing owner and retained source
+    bytes without editing them; scientific fragments were cross-checked separately
+    from their author. Local validation is not treated as scientific proof.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: Needs curation for a bounded retained-source activity-class overstatement;
+  identity/source/chemistry and historical mechanism scope remain qualified.
+source:
+  git_revision: ce6a5498df5be51116bd5e0c119023ee62bb5464
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: AGENTS.md
+    sha256: 69e4037f8dc97d4b00bb7bb83b41ceca025f6ef578d5c0bf8086f3400becde0b
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: curation/pubchem_bioassay_exclusions.tsv
+    sha256: 76f9cbb17e62a270afed637b5058a553cfe85c754c6c9ec406635f12dae572fa
+    role: context
+  - path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-cloh-cloy-association-and-l383m-limits.yaml
+    sha256: 40b15e5da75b1ad19d9c9614a2d0cc80267cd2b55170434d5b28c2961beac586
+    role: context
+  - path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-cloh-mbth-cross-activation-and-partner-boundaries.yaml
+    sha256: 485d2863824a00bfac5bb9f8b020fbae62f0374b4b34209141fc5e880722b23a
+    role: context
+  - path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-cloh-native-preparations-and-adenylation.yaml
+    sha256: 974cb88159f4aa48ce096b766f41b51d715e4f514d64f59575ac64374b0461f8
+    role: context
+  - path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-clon-heterologous-genetics-products-and-partial-rescue.yaml
+    sha256: 52f1c8b4f9c1e248bedb4937dcc1a4cf304764638903c43f17ebd0fbe0145076
+    role: context
+  - path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-clon-native-clon2-genetics-and-bounded-feeding-evidence.yaml
+    sha256: 5768c17f7a255c3bf21db5aa6e9e3e727600f85d09715bc6c742fe0eee6aa156
+    role: context
+  - path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-clon-native-identities-and-deletion-constructs.yaml
+    sha256: 55518932b7e0e1d9c13a89ee0cee60db92bd0cdd91c250ff528cffa1e7764dfb
+    role: context
+  - path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-clon-recombinant-constructs-and-expression-limits.yaml
+    sha256: 301c0a4af3293522eb91d2fca213e6d8b5de6ddc88dfeea344fdb5d46ce7d8b7
+    role: context
+  - path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-clon3456-bounded-pyrrole-precursor-reactions.yaml
+    sha256: 33b5ae2ac3797b3536833f50b5813d7a56bf5500d1f24edc702c62a4ada364dd
+    role: context
+  - path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-clon3456-constructs-and-literal-primer-conflicts.yaml
+    sha256: 5175612473977cad47ca3e96b41a5f582aafd9475574101f8dd38a86fcb41a94
+    role: context
+  - path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-clon3456-expression-attempts-and-host-limits.yaml
+    sha256: 4a15f0127ac094c8a0b4139104a38852af4774eb58ce19bbb2a0461075f737d9
+    role: context
+  - path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-clon3456-genetics-titers-and-cassette-limits.yaml
+    sha256: 03803caf1c6997e5a3d42321b512e7b6903ec7b3e9928cb4ad146e2ed265218e
+    role: context
+  - path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-clon3456-native-identities-and-motif-limits.yaml
+    sha256: f8367133c3baf769a8bf8b83154ca867873ef021c0a6942b7e512a267fd9d18f
+    role: context
+  - path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-clon3456-peptide-identification-and-purification-limits.yaml
+    sha256: af91f18f973c2bf3d7266a0b5d7c666b29a6938b67e61a1f157b96785a3e436d
+    role: context
+  - path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-clop-native-identity-and-bounded-deletion-evidence.yaml
+    sha256: 121fecb196ae8eefb4b42261b45ba38ddc69f67966f924ba22f5281995be374a
+    role: context
+  - path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-clop-natural-producer-observations-and-unproven-order.yaml
+    sha256: 1fa91e6c0802403aaea41ed16e6acabd8f92ab1ae94c25cb77d345fd3ea07e84
+    role: context
+  - path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-cloq-mutant-activities-and-substrate-kinetics.yaml
+    sha256: f07301787fa7a4ce90befb2773e866d2a20f178473a8778a7590c50615f27424
+    role: context
+  - path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-cloq-structures-and-mechanistic-limits.yaml
+    sha256: 9b6328de4a0e9452953beb81bd146b041e12d64cb3d20e9b9e9e6957e471565e
+    role: context
+  - path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-cloq-variant-constructs-and-preparations.yaml
+    sha256: aff3abe35767b6a08f1100c8cea68406e77df5b8319bced3b88c7a88469eb91c
+    role: context
+  - path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-clou-heterologous-production-and-rescue-limits.yaml
+    sha256: 9e356a48f1985d5c754ca0e8f90ae28d2a9bb13e7ae444c4efd2e8a52d9ba207
+    role: context
+  - path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-clou-native-identities-and-literal-construct-boundaries.yaml
+    sha256: b1bd9871494f858e7a60d5845ef3bd32243d1ac0b15693c2c0ff16b5451a2f3d
+    role: context
+  - path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-clou-product-structures-and-inferred-enzyme-roles.yaml
+    sha256: 3b9997013cc43cc4b3eef4fc29c74e784afb52497a6d0d785bef08d9cf3e2028
+    role: context
+  - path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-cloy-mbth-congener-feeding-and-mechanism-limits.yaml
+    sha256: 3a7d83ee10aa30e25768494d7e8904068014f90a03fa220534fd4ebc11a1e2de
+    role: context
+  - path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-cloy-mbth-native-references-and-genetic-compensation.yaml
+    sha256: d5fb436c95fbce2462e562e2ee350a662e920f8e65bbb9e2588e123ff1ccc879
+    role: context
+  - path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-sugar-elmgt-reporter-and-sugar-supply-limits.yaml
+    sha256: d029c8001ba1ff3fb40550a34d2c36562abd89feb2a7ede37f7536ab7decd3c8
+    role: context
+  - path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-sugar-native-references-and-construct-boundaries.yaml
+    sha256: abe47cec0971337fd506b26e04e46df8d239a01540d94ffe94b6f6abaca71abd
+    role: context
+  - path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-sugar-prham-pmpu-production-and-inferred-roles.yaml
+    sha256: 72322b1f63fbf53d8a7c3bbfc2b0f462c3d9d3a0d29acbf714a0bee142d0333c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/shikimates_and_phenylpropanoids/clorobiocin.yaml
+    sha256: 1acd4b973c6714778321074c83a593f4a9c794f0cd6b87ba54feff070219931c
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/bioassay_exclusions.py
+    sha256: 4a4176e072ac9759aa8a9e88300d7e2de5aaf4ebf30b5c42fcf4c9c0b6cebbb4
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/graph_components.py
+    sha256: 10f08517869f482954fd583fd19d5750ef286a76297c231e6c9a5ba8dc023e17
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: src/naturalproductmech/validation/write_validated.py
+    sha256: 4b7648fc5d2e7a5d26ad8bb168dbcae609aaa2694434a8ed5cfcb33fb66ff80a
+    role: context
+scope:
+  description: One complete NaturalProductRecord, including all present scientific
+    claims, history and declared mechanisms; external verification remains unavailable.
+  selection: Campaign path order 2193; one of the next ten uncovered paths selected
+    from the 3116-record corpus. Membership uses the canonical validated catalogue
+    plus retained committed campaign bundles.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-619480541f
+targets:
+- target_id: naturalproductmech:mibig-619480541f
+  path: data/natural_products/shikimates_and_phenylpropanoids/clorobiocin.yaml
+  label: clorobiocin
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained harmonization generator; seeded fields are corrected through
+      maintained inputs and validated regeneration.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Retained MIBiG structure, producer and compound-specific locus assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/npclassifier.tsv
+    role: Pinned computed classification and filing assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Maintained extraction of MIBiG compound names, structures, stereochemistry
+      flags and source provenance.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Retained cited occurrence assertions, distinct from demonstrated production.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/pubchem_bioassay.tsv
+    role: Retained assay rows or empty-assay sentinels; source outcome and title alone
+      do not establish mechanism.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/antibioticmech_inchikeys.tsv
+    role: Pinned full-key AntibioticMech structure links and coarse activity summaries;
+      no transfer of mechanism.
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/pubchem_bioassay_exclusions.tsv
+    role: Exact assay identity exclusion decisions for selected/direct source context.
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/bioassay_exclusions.py
+    role: Maintained source-row identity/digest guard; text-only dependency.
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/graph_components.py
+    role: Future maintained complete-owner reader implementation; not invoked in this
+      plan.
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/validation/write_validated.py
+    role: Future maintained complete-owner reader implementation; not invoked in this
+      plan.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/shikimates_and_phenylpropanoids/clorobiocin.yaml
+    role: Curator-owned declared graphs, graph references, pathway steps and history;
+      imported molecular-target assertions and other seeded fields retain inventory
+      ownership. Curated graph/pathway changes require the validated writer and a
+      curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-cloq-variant-constructs-and-preparations.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-cloq-mutant-activities-and-substrate-kinetics.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-cloq-structures-and-mechanistic-limits.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-clou-native-identities-and-literal-construct-boundaries.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-clou-heterologous-production-and-rescue-limits.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-clou-product-structures-and-inferred-enzyme-roles.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-sugar-native-references-and-construct-boundaries.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-sugar-prham-pmpu-production-and-inferred-roles.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-sugar-elmgt-reporter-and-sugar-supply-limits.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-clop-native-identity-and-bounded-deletion-evidence.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-clop-natural-producer-observations-and-unproven-order.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-clon-native-identities-and-deletion-constructs.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-clon-heterologous-genetics-products-and-partial-rescue.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-clon-recombinant-constructs-and-expression-limits.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-clon-native-clon2-genetics-and-bounded-feeding-evidence.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-clon3456-native-identities-and-motif-limits.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-clon3456-bounded-pyrrole-precursor-reactions.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-clon3456-constructs-and-literal-primer-conflicts.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-clon3456-expression-attempts-and-host-limits.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-clon3456-peptide-identification-and-purification-limits.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-clon3456-genetics-titers-and-cassette-limits.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-cloy-mbth-native-references-and-genetic-compensation.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-cloy-mbth-congener-feeding-and-mechanism-limits.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-cloh-native-preparations-and-adenylation.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-cloh-cloy-association-and-l383m-limits.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/FJAQNRBDVKIIKK-LFLQOBSNSA-N/clorobiocin-cloh-mbth-cross-activation-and-partner-boundaries.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  ownership_note: This review proposes no record edit. Source corrections belong in
+    maintained inventories, implemented curation tables, extractors or the seeder;
+    generated pages are not owners. This mechanism-bearing owner requires separately
+    authorized complete maintained resolution before scientific assessment and draft
+    assembly. Raw owner capture is not a maintained resolved view.
+checks:
+- check_id: maintained-mechanism-reader
+  name: Complete offline maintained reader for clorobiocin
+  status: passed
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-619480541f
+  command: /private/tmp/npm-record-reviews-20261021/.venv/bin/python -I -B /private/tmp/npm-review-work/shared-next-batch220/read-selected-mechanism-guarded-001.py
+    2193 69d08ec74c6977d72d2a3e3d009b85f55694f702ede69996831b3fb69d5d9a8c 4bfe0beef23e93dc76f04b16806c3a8a18f888731200d5cc5aeeb242d7fd5292
+    4cb727bc012b60f38c4c7ab4e836df44ab3e6de564f5a3f049b5f4b909a92c86 90236bcdb9064859a691606fd163f92576040ab44a954a6323cc0b39871e571d
+    12ce40bf4d89ad17c0e207a877f813db30acdf3ccb71a015cc99e907d1a5a9d5
+  exit_code: 0
+  evidence_ids:
+  - bgc-2193-reader-DATA
+  - bgc-2193-reader-execution
+  - bgc-2193-reader-acceptance
+  summary: 'Complete original offline maintained view accepted: 30 graphs, 439 nodes
+    and 525 edges; no fresh scientific verification.'
+  scope_note: Exact selected owner only; known denied capability probe was not a network
+    request.
+- check_id: root-native-strict_ten
+  name: strict_ten
+  status: passed
+  required: true
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  target_ids:
+  - naturalproductmech:mibig-619480541f
+  command: just validate-strict data/natural_products/shikimates_and_phenylpropanoids/chartreusin.yaml
+    data/natural_products/shikimates_and_phenylpropanoids/chlorflavonin.yaml data/natural_products/shikimates_and_phenylpropanoids/clorobiocin.yaml
+    data/natural_products/shikimates_and_phenylpropanoids/colletorin-d-acid.yaml data/natural_products/shikimates_and_phenylpropanoids/collinomycin.yaml
+    data/natural_products/shikimates_and_phenylpropanoids/compound-7.yaml data/natural_products/shikimates_and_phenylpropanoids/coumermycin-a1.yaml
+    data/natural_products/shikimates_and_phenylpropanoids/dichlorodiaporthin.yaml
+    data/natural_products/shikimates_and_phenylpropanoids/e-n-2-hydroxy-5-oxocyclopent-1-en-1-yl-5-o-tolyl-pent-4-enamide.yaml
+    data/natural_products/shikimates_and_phenylpropanoids/echoside-a.yaml --workers
+    1 --out /private/tmp/npm-native-checks/batch-220/validate-strict-selected10-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_ten
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-strict_full
+  name: strict_full
+  status: passed
+  required: true
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  target_ids:
+  - naturalproductmech:mibig-619480541f
+  command: just validate-all --workers 1 --out /private/tmp/npm-native-checks/batch-220/validate-all-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_full
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-lockfile
+  name: lockfile
+  status: passed
+  required: true
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  target_ids:
+  - naturalproductmech:mibig-619480541f
+  command: just verify-corpus --summary
+  exit_code: 0
+  evidence_ids:
+  - root-native-lockfile
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-reproduction
+  name: reproduction
+  status: passed
+  required: true
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  target_ids:
+  - naturalproductmech:mibig-619480541f
+  command: just verify-reproduction
+  exit_code: 0
+  evidence_ids:
+  - root-native-reproduction
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-queue
+  name: queue
+  status: passed
+  required: true
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  target_ids:
+  - naturalproductmech:mibig-619480541f
+  command: just review-queue --tsv /private/tmp/npm-native-checks/batch-220/review-queue-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-queue
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-full-qc
+  name: Full just qc
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-619480541f
+  summary: 'Not run under the external-request prohibition: the complete recipe includes
+    upstream vendored synchronization. The five executed local checks are recorded
+    separately.'
+- check_id: root-ontology-authorities
+  name: Complete OAK identifier/label authority check
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-619480541f
+  summary: Complete offline ontology authority coverage was not established for this
+    run; no ontology retrieval or remote resolution was attempted. Retained taxonomy
+    evidence has only its explicitly stated local scope.
+- check_id: root-primary-and-live-sources
+  name: Primary literature and current structured database/identifier verification
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-619480541f
+  summary: All external requests are prohibited by the user. Fresh database and identifier
+    verification and complete primary-literature coverage are unavailable. Any retained
+    original literature actually inspected is recorded separately with its historical
+    scope.
+evidence:
+- evidence_id: bgc-2193-owner
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/shikimates_and_phenylpropanoids/clorobiocin.yaml
+  locator: Whole owner plaintext and complete curation_history
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: Native complete Clorobiocin owner read (974164/6eb422/3b942c), carried
+    by exact current bytes; no new YAML parse or record edit.
+  snapshot_sha256: 1acd4b973c6714778321074c83a593f4a9c794f0cd6b87ba54feff070219931c
+- evidence_id: bgc-2193-capture
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220/owner-capture-DATA-001.json
+  locator: /records/2/owner_document
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: Complete actual captured owner, including source-owned fields and full
+    history.
+  snapshot_sha256: 90236bcdb9064859a691606fd163f92576040ab44a954a6323cc0b39871e571d
+- evidence_id: bgc-2193-intake
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch220/intakes/2193-inspect-001.json
+  locator: /source; /targets
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: Original canonical inspect captures exact target and 67 source inputs;
+    inspection alone does not certify scientific accuracy.
+  snapshot_sha256: 4bfe0beef23e93dc76f04b16806c3a8a18f888731200d5cc5aeeb242d7fd5292
+- evidence_id: bgc-2193-source-plan
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220-tentative/bgc-prep/bgc-conditional220-target-input-plan-001.json
+  locator: /records/2
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: Exact owner/direct/additional input map and complete retained owner/source
+    context for this record; future runtime slots in the plan remain historical nulls.
+  snapshot_sha256: 0205469165fcaae0dc2f1de2912fcdc95d75319f33f0fd474495dd54d45b3e92
+- evidence_id: bgc-2193-source-notes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220-tentative/bgc-prep/bgc-conditional220-source-scope-notes-001.json
+  locator: /observer; /recorded_at; /status; /inventory; /inventory_ROOT_acceptance;
+    /inventory_ROOT_acceptance_inventory_key; /original_inventory; /original_collector_execution;
+    /inventory_metadata_correction; /prior_final_acceptance; /accepted_prior_remaining;
+    /frozen_remaining; /collector_source; /totals; /per_order_counts; /reading; /cautions;
+    /curation; /future_result_authorities; /scientific_verdicts; /external_requests;
+    /outbound_active_queued_scheduled_child
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: Local source-reading attribution is supplied by the complete notes artifact;
+    individual claims below cite their exact owner/source evidence.
+  snapshot_sha256: aabfc3a0d18af5bd7d41acb95f1f89848cfbd06a962b174ef64b76218295ec7d
+- evidence_id: bgc-2193-plan-acceptance
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch220/root-source-plan-acceptance-001.json
+  locator: /status; /plan; /inventory; /source_notes; /actual_intake_ready; /verified
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: ROOT acceptance of current saved plan and exact actual intake maps.
+  snapshot_sha256: 8a51c9303cf8dd7483b2fc282491f294f43ae3adc3a419819b31fe9531b98f6b
+- evidence_id: bgc-2193-grounding-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220/owner-capture-DATA-001.json
+  locator: /records/2/owner_document/identifier; /records/2/owner_document/chemical_structure;
+    /records/2/owner_document/grounding_status; /records/2/owner_document/source_concepts;
+    /records/2/owner_document/grounding_notes; /records/2/owner_document/xrefs
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: Written identity, full structure, source concepts and grounding scope;
+    xrefs are retained when present.
+  snapshot_sha256: 90236bcdb9064859a691606fd163f92576040ab44a954a6323cc0b39871e571d
+- evidence_id: bgc-2193-origin-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220/owner-capture-DATA-001.json
+  locator: /records/2/owner_document/producer_organisms; /records/2/owner_document/biosynthetic_gene_clusters
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: Written producer/locus claims retain grades, source versions, method categories
+    and exact citations.
+  snapshot_sha256: 90236bcdb9064859a691606fd163f92576040ab44a954a6323cc0b39871e571d
+- evidence_id: bgc-2193-occurrence-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220/owner-capture-DATA-001.json
+  locator: /records/2/owner_document/occurrences; /records/2/owner_document/occurrence_taxon_groups
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: Written occurrence assertions, source labels, references and group labels;
+    no fresh taxon verification.
+  snapshot_sha256: 90236bcdb9064859a691606fd163f92576040ab44a954a6323cc0b39871e571d
+- evidence_id: bgc-2193-classification-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220/owner-capture-DATA-001.json
+  locator: /records/2/owner_document/np_classification; /records/2/owner_document/np_pathway;
+    /records/2/owner_document/bgc_class
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: Written model classifications/filing path and separate source BGC classes.
+  snapshot_sha256: 90236bcdb9064859a691606fd163f92576040ab44a954a6323cc0b39871e571d
+- evidence_id: bgc-2193-assay-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220/owner-capture-DATA-001.json
+  locator: /records/2/owner_document/bioactivities; /records/2/owner_document/bioactivity_summary;
+    /records/2/owner_document/related_records
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: Written activity/target/related-record fields only; their presence or absence
+    is bounded to the complete captured owner.
+  snapshot_sha256: 90236bcdb9064859a691606fd163f92576040ab44a954a6323cc0b39871e571d
+- evidence_id: bgc-2193-query-mibig_compounds
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220-tentative/bgc-prep/bgc-conditional220-target-input-plan-001.json
+  locator: /records/2/source_scope_inventory/joins/mibig_compounds
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete query frame: Exact saved predicate exact complete standard_inchi_key
+    equality with query "FJAQNRBDVKIIKK-LFLQOBSNSA-N" over the pinned mibig_compounds
+    table; no new query or external lookup.; 1 matched rows.'
+  snapshot_sha256: 0205469165fcaae0dc2f1de2912fcdc95d75319f33f0fd474495dd54d45b3e92
+  search_scope: Exact saved predicate exact complete standard_inchi_key equality with
+    query "FJAQNRBDVKIIKK-LFLQOBSNSA-N" over the pinned mibig_compounds table; no
+    new query or external lookup.
+- evidence_id: bgc-2193-source-mibig_compounds
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv
+  locator: Physical TSV lines 905
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Complete retained row fields, including blanks, with physical-frame hashes:
+    [{"physical_line":905,"row_sha256":"ef6ce6dd99d77817d496fd16693b375b221fe229b8618442ee7819388955f7e6","row":{"mibig_accession":"BGC0000832","entry_version":"4","entry_status":"active","entry_quality":"questionable","entry_completeness":"complete","compound_name":"clorobiocin","compound_index":"1","smiles":"CC1=CC=C(N1)C(=O)O[C@H]2[C@H]([C@@H](OC([C@@H]2OC)(C)C)OC3=C(C4=C(C=C3)C(=C(C(=O)O4)NC(=O)C5=CC(=C(C=C5)O)CC=C(C)C)O)Cl)O","standard_inchi":"InChI=1S/C35H37ClN2O11/c1-16(2)7-9-18-15-19(10-13-22(18)39)31(42)38-25-26(40)20-11-14-23(24(36)28(20)47-33(25)44)46-34-27(41)29(30(45-6)35(4,5)49-34)48-32(43)21-12-8-17(3)37-21/h7-8,10-15,27,29-30,34,37,39-41H,9H2,1-6H3,(H,38,42)/t27-,29+,30-,34-/m1/s1","standard_inchi_key":"FJAQNRBDVKIIKK-LFLQOBSNSA-N","stereo_complete":"true","compound_classes":"","database_ids":"pubchem:54706138","taxon_id":"NCBITaxon:1352936","taxon_label":"Streptomyces
+    roseochromogenus subsp. oscitans DS 12.976","bgc_classes":"saccharide|other","bgc_subclasses":"hybrid/tailoring|aminocoumarin","genome_accession":"AF329398.1","locus_from":"9348","locus_to":"42291","locus_evidence_methods":"Knock-out
+    studies|Enzymatic assays|Heterologous expression","producer_evidence_basis":"BGC_CHARACTERIZED","cluster_link_evidence_basis":"CLUSTER_DEMONSTRATED","primary_reference":"PMID:12480894","reference_basis":"ENTRY"}}]'
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: bgc-2193-query-chebi_structures
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220-tentative/bgc-prep/bgc-conditional220-target-input-plan-001.json
+  locator: /records/2/source_scope_inventory/joins/chebi_structures
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete query frame: Exact saved predicate exact complete standard_inchi_key
+    equality with query "FJAQNRBDVKIIKK-LFLQOBSNSA-N" over the pinned chebi_structures
+    table; no new query or external lookup.; 0 matched rows.'
+  snapshot_sha256: 0205469165fcaae0dc2f1de2912fcdc95d75319f33f0fd474495dd54d45b3e92
+  search_scope: Exact saved predicate exact complete standard_inchi_key equality with
+    query "FJAQNRBDVKIIKK-LFLQOBSNSA-N" over the pinned chebi_structures table; no
+    new query or external lookup.
+- evidence_id: bgc-2193-query-lotus_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220-tentative/bgc-prep/bgc-conditional220-target-input-plan-001.json
+  locator: /records/2/source_scope_inventory/joins/lotus_occurrences
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete query frame: Exact saved predicate exact complete standard_inchi_key
+    equality with query "FJAQNRBDVKIIKK-LFLQOBSNSA-N" over the pinned lotus_occurrences
+    table; no new query or external lookup.; 1 matched rows.'
+  snapshot_sha256: 0205469165fcaae0dc2f1de2912fcdc95d75319f33f0fd474495dd54d45b3e92
+  search_scope: Exact saved predicate exact complete standard_inchi_key equality with
+    query "FJAQNRBDVKIIKK-LFLQOBSNSA-N" over the pinned lotus_occurrences table; no
+    new query or external lookup.
+- evidence_id: bgc-2193-source-lotus_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Physical TSV lines 1416
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Complete retained row fields, including blanks, with physical-frame hashes:
+    [{"physical_line":1416,"row_sha256":"203e8bfad2c1c4f73e495d9c983bf8a8a2c18820d3c6a5d5a36aa1b447761c9d","row":{"standard_inchi_key":"FJAQNRBDVKIIKK-LFLQOBSNSA-N","organism_name":"Streptomyces","taxon_id":"NCBITaxon:1883","organism_wikidata":"http://www.wikidata.org/entity/Q1144013","reference_doi":"10.1002/CHIN.197249433","structure_wikidata":"http://www.wikidata.org/entity/Q104995959"}}]'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: bgc-2193-query-cyanometdb_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220-tentative/bgc-prep/bgc-conditional220-target-input-plan-001.json
+  locator: /records/2/source_scope_inventory/joins/cyanometdb_occurrences
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete query frame: Exact saved predicate exact complete standard_inchi_key
+    equality with query "FJAQNRBDVKIIKK-LFLQOBSNSA-N" over the pinned cyanometdb_occurrences
+    table; no new query or external lookup.; 0 matched rows.'
+  snapshot_sha256: 0205469165fcaae0dc2f1de2912fcdc95d75319f33f0fd474495dd54d45b3e92
+  search_scope: Exact saved predicate exact complete standard_inchi_key equality with
+    query "FJAQNRBDVKIIKK-LFLQOBSNSA-N" over the pinned cyanometdb_occurrences table;
+    no new query or external lookup.
+- evidence_id: bgc-2193-query-npclassifier
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220-tentative/bgc-prep/bgc-conditional220-target-input-plan-001.json
+  locator: /records/2/source_scope_inventory/joins/npclassifier
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete query frame: Exact saved predicate exact complete standard_inchi_key
+    equality with query "FJAQNRBDVKIIKK-LFLQOBSNSA-N" over the pinned npclassifier
+    table; no new query or external lookup.; 1 matched rows.'
+  snapshot_sha256: 0205469165fcaae0dc2f1de2912fcdc95d75319f33f0fd474495dd54d45b3e92
+  search_scope: Exact saved predicate exact complete standard_inchi_key equality with
+    query "FJAQNRBDVKIIKK-LFLQOBSNSA-N" over the pinned npclassifier table; no new
+    query or external lookup.
+- evidence_id: bgc-2193-source-npclassifier
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv
+  locator: Physical TSV lines 550
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Complete retained row fields, including blanks, with physical-frame hashes:
+    [{"physical_line":550,"row_sha256":"9f9fe57b7568b834fa0a775cd0985314447c928280e6064290dbe90703981e21","row":{"standard_inchi_key":"FJAQNRBDVKIIKK-LFLQOBSNSA-N","smiles":"CC1=CC=C(N1)C(=O)O[C@H]2[C@H]([C@@H](OC([C@@H]2OC)(C)C)OC3=C(C4=C(C=C3)C(=C(C(=O)O4)NC(=O)C5=CC(=C(C=C5)O)CC=C(C)C)O)Cl)O","pathway_results":"Shikimates
+    and Phenylpropanoids","superclass_results":"Coumarins","class_results":"Simple
+    coumarins","is_glycoside":"true","model_version":"npclassifier.gnps2.org@2026-09-07"}}]'
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: bgc-2193-query-pubchem_bioassay
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220-tentative/bgc-prep/bgc-conditional220-target-input-plan-001.json
+  locator: /records/2/source_scope_inventory/joins/pubchem_bioassay
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete query frame: Exact saved predicate exact complete standard_inchi_key
+    equality with query "FJAQNRBDVKIIKK-LFLQOBSNSA-N" over the pinned pubchem_bioassay
+    table; no new query or external lookup.; 2 matched rows.'
+  snapshot_sha256: 0205469165fcaae0dc2f1de2912fcdc95d75319f33f0fd474495dd54d45b3e92
+  search_scope: Exact saved predicate exact complete standard_inchi_key equality with
+    query "FJAQNRBDVKIIKK-LFLQOBSNSA-N" over the pinned pubchem_bioassay table; no
+    new query or external lookup.
+- evidence_id: bgc-2193-source-pubchem_bioassay
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: Physical TSV lines 1515, 1516
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Complete retained row fields, including blanks, with physical-frame hashes:
+    [{"physical_line":1515,"row_sha256":"f863594884dff25dd45764212e96961abbc338303641ff924445d843aee83b5a","row":{"standard_inchi_key":"FJAQNRBDVKIIKK-LFLQOBSNSA-N","cid":"54706138","aid":"1811","assay_name":"Experimentally
+    measured binding affinity data derived from PDB","assay_type":"Other","depositor":"Shanghai
+    Institute of Organic Chemistry","activity_outcome":"Active","activity_name":"","activity_value_um":"","target_accession":"1KZN_A","reference":"PMID:12044152"}},{"physical_line":1516,"row_sha256":"edc47dbdefab5cf12eefc04de8e533ae385fb374a07cde5a827b6845c8df5506","row":{"standard_inchi_key":"FJAQNRBDVKIIKK-LFLQOBSNSA-N","cid":"54706138","aid":"977611","assay_name":"Experimentally
+    measured binding affinity data (Kd) for protein-ligand complexes derived from
+    PDB","assay_type":"Other","depositor":"Shanghai Institute of Organic Chemistry","activity_outcome":"Active","activity_name":"Kd","activity_value_um":"0.0012","target_accession":"1KZN_A","reference":"PMID:12044152"}}]'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: bgc-2193-query-bindingdb_targets
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220-tentative/bgc-prep/bgc-conditional220-target-input-plan-001.json
+  locator: /records/2/source_scope_inventory/joins/bindingdb_targets
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete query frame: Exact saved predicate exact complete standard_inchi_key
+    equality with query "FJAQNRBDVKIIKK-LFLQOBSNSA-N" over the pinned bindingdb_targets
+    table; no new query or external lookup.; 0 matched rows.'
+  snapshot_sha256: 0205469165fcaae0dc2f1de2912fcdc95d75319f33f0fd474495dd54d45b3e92
+  search_scope: Exact saved predicate exact complete standard_inchi_key equality with
+    query "FJAQNRBDVKIIKK-LFLQOBSNSA-N" over the pinned bindingdb_targets table; no
+    new query or external lookup.
+- evidence_id: bgc-2193-query-antibioticmech_inchikeys
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220-tentative/bgc-prep/bgc-conditional220-target-input-plan-001.json
+  locator: /records/2/source_scope_inventory/joins/antibioticmech_inchikeys
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete query frame: Exact saved predicate exact complete standard_inchi_key
+    equality with query "FJAQNRBDVKIIKK-LFLQOBSNSA-N" over the pinned antibioticmech_inchikeys
+    table; no new query or external lookup.; 1 matched rows.'
+  snapshot_sha256: 0205469165fcaae0dc2f1de2912fcdc95d75319f33f0fd474495dd54d45b3e92
+  search_scope: Exact saved predicate exact complete standard_inchi_key equality with
+    query "FJAQNRBDVKIIKK-LFLQOBSNSA-N" over the pinned antibioticmech_inchikeys table;
+    no new query or external lookup.
+- evidence_id: bgc-2193-source-antibioticmech_inchikeys
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/antibioticmech_inchikeys.tsv
+  locator: Physical TSV lines 515
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Complete retained row fields, including blanks, with physical-frame hashes:
+    [{"physical_line":515,"row_sha256":"6863df956fff605011dd8dfcb9de7cd4ef67213c687db474befa140ed0267f62","row":{"standard_inchi_key":"FJAQNRBDVKIIKK-LFLQOBSNSA-N","identifier":"antibioticmech:aro-e44e701df2","label":"clorobiocin","antimicrobial_class":"ANTIBACTERIAL","slug":"clorobiocin","corpus_commit":"74f6cc8362498900f2fe2c13d0b6fdb66dd30976"}}]'
+  snapshot_sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+- evidence_id: bgc-2193-query-chebi_origins
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220-tentative/bgc-prep/bgc-conditional220-target-input-plan-001.json
+  locator: /records/2/source_scope_inventory/joins/chebi_origins
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete query frame: Exact saved predicate exact chebi_id from
+    exact full-key structure rows with query [] over the pinned chebi_origins table;
+    no new query or external lookup.; 0 matched rows.'
+  snapshot_sha256: 0205469165fcaae0dc2f1de2912fcdc95d75319f33f0fd474495dd54d45b3e92
+  search_scope: Exact saved predicate exact chebi_id from exact full-key structure
+    rows with query [] over the pinned chebi_origins table; no new query or external
+    lookup.
+- evidence_id: bgc-2193-cached-taxonomy
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220-tentative/bgc-prep/bgc-conditional220-source-inventory-DATA-002.json
+  locator: /cached_taxonomy/whole_stanzas/1; /cached_taxonomy/whole_stanzas/51
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Complete saved requested taxon stanzas, locally current and personally
+    read, retain labels/synonyms only: [{"id":"NCBITaxon:1883","physical_line":2798,"complete_stanza":"[Term]\nid:
+    NCBITaxon:1883\nname: Streptomyces\nsynonym: \"\\\"Microstreptospora\\\" Yan et
+    al.\" EXACT []\nsynonym: \"Actinopycnidium Krasil''nikov 1962\" EXACT []\nsynonym:
+    \"Actinosporangium Krasil''nikov and Yuan 1961\" EXACT []\nsynonym: \"Chainia\"
+    EXACT []\nsynonym: \"Elytrosporangium Falcao de Morais et al. 1966\" EXACT []\nsynonym:
+    \"Kitasatoa Matsumae and Hata 1968 (Approved Lists 1980)\" EXACT []\nsynonym:
+    \"Microellobosporia\" EXACT []\nsynonym: \"Streptoverticillium Baldacci 1958\"
+    EXACT []\n\n"},{"id":"NCBITaxon:1352936","physical_line":127282,"complete_stanza":"[Term]\nid:
+    NCBITaxon:1352936\nname: Streptomyces roseochromogenus subsp. oscitans DS 12.976\nsynonym:
+    \"Streptomyces roseochromogenes (sic) subsp. oscitans DS 12.976\" EXACT []\nsynonym:
+    \"Streptomyces roseochromogenes (sic) var. oscitans DS 12.976\" EXACT []\n\n"}]'
+  snapshot_sha256: d42de14f96cf9d3b71c6aceb591f64629fba0ffde36721db7d37af2a8b594658
+- evidence_id: bgc-2193-source-routes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220-tentative/bgc-prep/bgc-conditional220-target-input-plan-001.json
+  locator: /records/2/source_scope_inventory/source_taxa; /records/2/source_scope_inventory/forward_taxon_merge_matches;
+    /records/2/source_scope_inventory/nonorganism_matches
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: Exact selected-source taxon and route frames; companion routes remain separate
+    within their own direct context.
+  snapshot_sha256: 0205469165fcaae0dc2f1de2912fcdc95d75319f33f0fd474495dd54d45b3e92
+- evidence_id: bgc-2193-chemistry
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch220/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/2/declared_structure; /records/2/smiles; /records/2/inchi; /records/2/comparisons;
+    /records/2/atom_correspondence
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Original saved paired profiles and full tables: {"comparisons":{"formula_equal":true,"formal_charge_equal":true,"standard_inchi_equal":true,"standard_inchi_key_equal":true,"canonical_isomeric_smiles_equal":true,"canonical_nonisomeric_smiles_equal":true,"atom_count_equal":true,"bond_count_equal":true,"both_keys_equal_declared":true,"smiles_formula_equals_literal_InChI_main_layer":true},"smiles_stereo":{"Atom_Tetrahedral:Specified":4},"inchi_stereo":{"Atom_Tetrahedral:Specified":4}}'
+  snapshot_sha256: 7bfd670e8944734f1da87a78ecd6d4cee7c6a8dd8bbb225b260809c176bb3de7
+- evidence_id: bgc-2193-topology
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch220/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/2/smiles/computed/atoms; /records/2/smiles/computed/bonds; /records/2/smiles/computed/rings;
+    /records/2/smiles/computed/motifs; /records/2/smiles/computed/potential_stereo;
+    /records/2/inchi/computed/atoms; /records/2/inchi/computed/bonds; /records/2/inchi/computed/rings;
+    /records/2/inchi/computed/motifs; /records/2/inchi/computed/potential_stereo;
+    /records/2/atom_correspondence; /records/2/declared_structure
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: Both complete atom/bond/ring/motif/stereo tables personally read. Diagnostic
+    motif matches are graph candidates with bounded applicability, and explicit full-graph
+    identity remains unestablished.
+  snapshot_sha256: 7bfd670e8944734f1da87a78ecd6d4cee7c6a8dd8bbb225b260809c176bb3de7
+- evidence_id: bgc-2193-diagnostic-acceptance
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch220/root-chemistry-acceptance-001.json
+  locator: /status; /data; /execution; /original_terminal; /scope
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: ROOT acceptance of the original offline computation, preserved inputs and
+    scope; no scientific verdict.
+  snapshot_sha256: c7b9547299a849c14093f64f88df2ec128f3806a864554cb39d89a2236dae984
+- evidence_id: bgc-2193-native-acceptance
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch220/root-native-gates-acceptance-001.json
+  locator: /status; /ledger; /outcomes
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: Accepted five original native checks, with full QC/OAK unavailable; these
+    do not certify scientific accuracy.
+  snapshot_sha256: 8ec4e48edaf25db9df0c202f6b8595e07cc7118c8fd24193c839e9c875f2c5c7
+- evidence_id: bgc-2193-review-skill
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/.claude/skills/review-yaml-record/SKILL.md
+  locator: Evidence Rules; Workflow; Output
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: Claim-level evidence, scope preservation, major unsupported-claim severity
+    and immutable partial review requirements.
+  snapshot_sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+- evidence_id: bgc-2193-review-profile
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/docs/record-review-profile.md
+  locator: Native questions and ownership; Native checks and queue
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: Producer/occurrence/locus/model distinctions, maintained fix ownership
+    and limitations of native gates; reserved decisions.tsv is not an implemented
+    correction route.
+  snapshot_sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+- evidence_id: bgc-2193-stereo-extraction
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py
+  locator: lines 144–173
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: The retained stereo_complete flag is derived from FindMolChiralCenters
+    on the source SMILES; it does not independently verify natural stereochemistry
+    or every double-bond geometry.
+  snapshot_sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+- evidence_id: bgc-2193-structure-schema
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: lines 376–402
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: Standard InChIKey limits and source stereochemistry requirements; matching
+    keys do not prove all explicit graph or natural-form identity.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: bgc-2193-activity-classifier
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: lines 128-178; lines 1310-1381
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: Maintained classifier promises an unambiguous assay-name class, uses a
+    generic inhibition/binding fallback, adds classes only to ACTIVE observations
+    and derives the activity summary from classified written observations.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: bgc-2193-activity-schema
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: lines 631-664; lines 920-949
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: activity_class is optional; the enum describes backed coarse buckets and
+    has no dedicated ENZYME_INHIBITOR definition. Claim support must still follow
+    the retained observation.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: bgc-2193-reader-DATA
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch220/native-current220-clorobiocin-maintained-reader-DATA-001.json
+  locator: /status; /counts; /raw_owner; /component_captures; /resolved_view; /expected_view;
+    /returned_view_equals_expected_complete_owner; /view_mismatches; /review_check_metadata
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: Original maintained view preserves the complete owner and appends exactly
+    its declared component graphs. Content equality does not independently verify
+    experiments, sequences, natural identity or protein function.
+  snapshot_sha256: 4776a6095b0d7872f5937d75ad09b09b11bb539a898de270c0c1902552b67cf7
+- evidence_id: bgc-2193-reader-execution
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch220/native-current220-clorobiocin-reader-execution-001.json
+  locator: /command; /exit_code; /original_tool; /stdout; /stderr; /external_requests
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: Original single guarded reader execution and terminal receipt; the known
+    capability probe was denied before action and made no request.
+  snapshot_sha256: bc34ba3ffbbc03d2c645be9b9785ed74d4d21d3456073bfd865b884b03ec98fc
+- evidence_id: bgc-2193-reader-acceptance
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch220/root-current220-clorobiocin-reader-acceptance-001.json
+  locator: /status; /DATA; /execution; /verification; /review_check_contract
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: ROOT acceptance of complete-owner equality and exact positive content with
+    the original successful terminal. Historical evidence limits remain separate.
+  snapshot_sha256: eb91527f3f26f0b024c4a74cb28948412d1c86e05bd8fab7c0bdf857accf9270
+- evidence_id: bgc-2193-graph-0
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220/native-current220-clorobiocin-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/0
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete graph clorobiocin-cloq-prenylation: Partial Streptomyces
+    roseochromogenus clorobiocin biosynthesis graph for CloQ-catalyzed prenylation
+    of the ring A precursor. Historical source claims are not freshly verified by
+    this review.'
+  snapshot_sha256: 4776a6095b0d7872f5937d75ad09b09b11bb539a898de270c0c1902552b67cf7
+- evidence_id: bgc-2193-graph-1
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220/native-current220-clorobiocin-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/1
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete graph clorobiocin-clol-recombinant-ligation: Native
+    CloL identity and recombinant ligation experiments from Galm 2003 (review #548).
+    The assayed C-terminal His6 preparation is distinct from native Q8GHC3; literal
+    primers predict a substitution and conflict with a printed coordinate and construct-map
+    stop label. Experiments use novobiocin ring B, not the chlorinated clorobiocin
+    acceptor. Formation of novobiocic acid and selected analogues is not synthesis
+    of mature clorobiocin. Existing CloQ evidence is unchanged. Galm PDF page numbers
+    exceed printed pages by four; Schmutz PDF numbers exceed them by ten. Historical
+    source claims are not freshly verified by this review.'
+  snapshot_sha256: 4776a6095b0d7872f5937d75ad09b09b11bb539a898de270c0c1902552b67cf7
+- evidence_id: bgc-2193-graph-2
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220/native-current220-clorobiocin-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/2
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete graph clorobiocin-clohal-cloz-native-genetics-and-evidence-limits:
+    Native CloHal and CloZ references, cassette-mutant observations and separate CloHal
+    rescue in DS12.976. Genetic evidence is kept distinct from inferred enzyme mechanism;
+    source length disagreements remain explicit. No exact substrate/order or physical
+    assembly is asserted. Source-intake review #667; prior mechanisms and SEEDED status
+    unchanged. Historical source claims are not freshly verified by this review.'
+  snapshot_sha256: 4776a6095b0d7872f5937d75ad09b09b11bb539a898de270c0c1902552b67cf7
+- evidence_id: bgc-2193-graph-3
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220/native-current220-clorobiocin-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/3
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete graph clorobiocin-clohal-culture-observations-and-inference-limits:
+    Culture-level halide observations remain separate from native genetic evidence
+    and inferred CloHal properties. No purified-enzyme kinetics, exact reaction, congener
+    identity or congener antimicrobial activity is adopted. Review #667. Historical
+    source claims are not freshly verified by this review.'
+  snapshot_sha256: 4776a6095b0d7872f5937d75ad09b09b11bb539a898de270c0c1902552b67cf7
+- evidence_id: bgc-2193-graph-4
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220/native-current220-clorobiocin-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/4
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete graph clorobiocin-cloq-variant-constructs-and-preparations:
+    Eleven CloQ engineered proteins from Metzger 2010, with native identity, literal-primer
+    reconstructions, preparation measurements and limited folding controls (review
+    #553). The native reaction is already curated and is not duplicated. Q8GHB2 denotes
+    the native 324-aa protein, not a mutant, tag-bearing precursor or GSH-scar preparation.
+    The thesis reports sequencing, but complete experimental plasmids were not independently
+    obtained. All thesis page locators are PDF pages, twelve above printed pages.
+    Historical source claims are not freshly verified by this review.'
+  snapshot_sha256: 4776a6095b0d7872f5937d75ad09b09b11bb539a898de270c0c1902552b67cf7
+- evidence_id: bgc-2193-graph-5
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220/native-current220-clorobiocin-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/5
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete graph clorobiocin-cloq-mutant-activities-and-substrate-kinetics:
+    CloQ WT and eleven mutant activity comparisons, with separate WT substrate-conditioned
+    kinetic fits and endpoint product checks from Metzger 2010 (review #553). All
+    measurements concern recombinant enzyme assays, not native clorobiocin production
+    or each mutant binding a donor in a crystal. WT/variant preparations remain distinct
+    from native Q8GHB2. PDF pages are twelve above printed pages. Historical source
+    claims are not freshly verified by this review.'
+  snapshot_sha256: 4776a6095b0d7872f5937d75ad09b09b11bb539a898de270c0c1902552b67cf7
+- evidence_id: bgc-2193-graph-6
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220/native-current220-clorobiocin-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/6
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete graph clorobiocin-cloq-structures-and-mechanistic-limits:
+    Four deposited CloQ structural states, exact scar/native sequence mappings, the
+    Cys215 thiohemiketal and bounded mechanistic hypotheses (review #553). Direct
+    coordinate observations, source interpretations and proposed donor contacts are
+    separate. Detailed methods are from the inspected Metzger thesis; only the journal
+    abstract was obtained. PDF pages are twelve above printed pages. Historical source
+    claims are not freshly verified by this review.'
+  snapshot_sha256: 4776a6095b0d7872f5937d75ad09b09b11bb539a898de270c0c1902552b67cf7
+- evidence_id: bgc-2193-graph-7
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220/native-current220-clorobiocin-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/7
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete graph clorobiocin-clou-native-identities-and-literal-construct-boundaries:
+    Native CloU/CloW references, heterologous DNA constructs and reconstructed junction/restriction
+    limits; no purified CloU or CloW assay. Review #565. Host-conditioned genetic
+    and source-assigned product evidence does not change the owner identity, source
+    fields, previous graphs or SEEDED status. Historical source claims are not freshly
+    verified by this review.'
+  snapshot_sha256: 4776a6095b0d7872f5937d75ad09b09b11bb539a898de270c0c1902552b67cf7
+- evidence_id: bgc-2193-graph-8
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220/native-current220-clorobiocin-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/8
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete graph clorobiocin-clou-heterologous-production-and-rescue-limits:
+    Eight reported titers and bounded nondetection under a shared culture/HPLC protocol;
+    deletion, intact-cluster and complemented hosts remain separate. Review #565.
+    Host-conditioned genetic and source-assigned product evidence does not change
+    the owner identity, source fields, previous graphs or SEEDED status. Historical
+    source claims are not freshly verified by this review.'
+  snapshot_sha256: 4776a6095b0d7872f5937d75ad09b09b11bb539a898de270c0c1902552b67cf7
+- evidence_id: bgc-2193-graph-9
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220/native-current220-clorobiocin-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/9
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete graph clorobiocin-clou-product-structures-and-inferred-enzyme-roles:
+    Primary product structures, nominal ions, solvent conflicts and explicitly inferred
+    CloU/CloW roles; no transfer of congener antibacterial assays. Review #565. Host-conditioned
+    genetic and source-assigned product evidence does not change the owner identity,
+    source fields, previous graphs or SEEDED status. Historical source claims are
+    not freshly verified by this review.'
+  snapshot_sha256: 4776a6095b0d7872f5937d75ad09b09b11bb539a898de270c0c1902552b67cf7
+- evidence_id: bgc-2193-graph-10
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220/native-current220-clorobiocin-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/10
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete graph clorobiocin-sugar-native-references-and-construct-boundaries:
+    Seven source-matched native references, qualified database roles, separate transformation
+    branches and historical sequence limits. Review #566. Constructs, source-assigned
+    congeners and inferred roles do not change the exact owner identity or SEEDED
+    status. Historical source claims are not freshly verified by this review.'
+  snapshot_sha256: 4776a6095b0d7872f5937d75ad09b09b11bb539a898de270c0c1902552b67cf7
+- evidence_id: bgc-2193-graph-11
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220/native-current220-clorobiocin-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/11
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete graph clorobiocin-sugar-prham-pmpu-production-and-inferred-roles:
+    A distinct three-host engineering comparison; all twelve titers retain their experimental
+    context. Review #566. Constructs, source-assigned congeners and inferred roles
+    do not change the exact owner identity or SEEDED status. Historical source claims
+    are not freshly verified by this review.'
+  snapshot_sha256: 4776a6095b0d7872f5937d75ad09b09b11bb539a898de270c0c1902552b67cf7
+- evidence_id: bgc-2193-graph-12
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220/native-current220-clorobiocin-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/12
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete graph clorobiocin-sugar-elmgt-reporter-and-sugar-supply-limits:
+    Elloramycin serves as a heterologous pathway reporter, not as the clorobiocin
+    owner identity. Review #566. Constructs, source-assigned congeners and inferred
+    roles do not change the exact owner identity or SEEDED status. Historical source
+    claims are not freshly verified by this review.'
+  snapshot_sha256: 4776a6095b0d7872f5937d75ad09b09b11bb539a898de270c0c1902552b67cf7
+- evidence_id: bgc-2193-graph-13
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220/native-current220-clorobiocin-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/13
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete graph clorobiocin-clop-native-identity-and-bounded-deletion-evidence:
+    Native identity, heterologous genetics and three published congener yields. Review
+    #567. Exact owner identity and SEEDED status are unchanged. Historical source
+    claims are not freshly verified by this review.'
+  snapshot_sha256: 4776a6095b0d7872f5937d75ad09b09b11bb539a898de270c0c1902552b67cf7
+- evidence_id: bgc-2193-graph-14
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220/native-current220-clorobiocin-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/14
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete graph clorobiocin-clop-natural-producer-observations-and-unproven-order:
+    Natural-producer product observations are distinct from CloP substrate hypotheses.
+    Review #567. Exact owner identity and SEEDED status are unchanged. Historical
+    source claims are not freshly verified by this review.'
+  snapshot_sha256: 4776a6095b0d7872f5937d75ad09b09b11bb539a898de270c0c1902552b67cf7
+- evidence_id: bgc-2193-graph-15
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220/native-current220-clorobiocin-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/15
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete graph clorobiocin-clon-native-identities-and-deletion-constructs:
+    Exact native references and bounded deletion construction. Review #568. Native
+    references, constructs and source-assigned products remain distinct; owner identity
+    and SEEDED status are unchanged. Historical source claims are not freshly verified
+    by this review.'
+  snapshot_sha256: 4776a6095b0d7872f5937d75ad09b09b11bb539a898de270c0c1902552b67cf7
+- evidence_id: bgc-2193-graph-16
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220/native-current220-clorobiocin-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/16
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete graph clorobiocin-clon-heterologous-genetics-products-and-partial-rescue:
+    Separate mutant genotypes, product readouts and partial rescue. Review #568. Native
+    references, constructs and source-assigned products remain distinct; owner identity
+    and SEEDED status are unchanged. Historical source claims are not freshly verified
+    by this review.'
+  snapshot_sha256: 4776a6095b0d7872f5937d75ad09b09b11bb539a898de270c0c1902552b67cf7
+- evidence_id: bgc-2193-graph-17
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220/native-current220-clorobiocin-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/17
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete graph clorobiocin-clon-recombinant-constructs-and-expression-limits:
+    Four recombinant constructs and unsuccessful soluble-enzyme preparation. Review
+    #568. Native references, constructs and source-assigned products remain distinct;
+    owner identity and SEEDED status are unchanged. Historical source claims are not
+    freshly verified by this review.'
+  snapshot_sha256: 4776a6095b0d7872f5937d75ad09b09b11bb539a898de270c0c1902552b67cf7
+- evidence_id: bgc-2193-graph-18
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220/native-current220-clorobiocin-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/18
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete graph clorobiocin-clon-native-clon2-genetics-and-bounded-feeding-evidence:
+    Native-producer genetics and later feeding challenge a historical pathway-order
+    proposal. Review #568. Native references, constructs and source-assigned products
+    remain distinct; owner identity and SEEDED status are unchanged. Historical source
+    claims are not freshly verified by this review.'
+  snapshot_sha256: 4776a6095b0d7872f5937d75ad09b09b11bb539a898de270c0c1902552b67cf7
+- evidence_id: bgc-2193-graph-19
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220/native-current220-clorobiocin-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/19
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete graph clorobiocin-clon3456-native-identities-and-motif-limits:
+    Four exact native references and bounded motif/database interpretation. Review
+    #569. Native identity, experimental preparations, observations and inferred mechanisms
+    remain distinct. This partial curation does not change compound identity, source-owned
+    fields, earlier graphs or SEEDED status. Historical source claims are not freshly
+    verified by this review.'
+  snapshot_sha256: 4776a6095b0d7872f5937d75ad09b09b11bb539a898de270c0c1902552b67cf7
+- evidence_id: bgc-2193-graph-20
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220/native-current220-clorobiocin-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/20
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete graph clorobiocin-clon3456-bounded-pyrrole-precursor-reactions:
+    Primary-abstract evidence for activation, carrier loading and staged oxidation.
+    Review #569. Native identity, experimental preparations, observations and inferred
+    mechanisms remain distinct. This partial curation does not change compound identity,
+    source-owned fields, earlier graphs or SEEDED status. Historical source claims
+    are not freshly verified by this review.'
+  snapshot_sha256: 4776a6095b0d7872f5937d75ad09b09b11bb539a898de270c0c1902552b67cf7
+- evidence_id: bgc-2193-graph-21
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220/native-current220-clorobiocin-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/21
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete graph clorobiocin-clon3456-constructs-and-literal-primer-conflicts:
+    Eight expression constructs, their intermediates and bounded literal-primer models.
+    Review #569. Native identity, experimental preparations, observations and inferred
+    mechanisms remain distinct. This partial curation does not change compound identity,
+    source-owned fields, earlier graphs or SEEDED status. Historical source claims
+    are not freshly verified by this review.'
+  snapshot_sha256: 4776a6095b0d7872f5937d75ad09b09b11bb539a898de270c0c1902552b67cf7
+- evidence_id: bgc-2193-graph-22
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220/native-current220-clorobiocin-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/22
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete graph clorobiocin-clon3456-expression-attempts-and-host-limits:
+    Host- and construct-specific expression outcomes, without invented purified catalysis.
+    Review #569. Native identity, experimental preparations, observations and inferred
+    mechanisms remain distinct. This partial curation does not change compound identity,
+    source-owned fields, earlier graphs or SEEDED status. Historical source claims
+    are not freshly verified by this review.'
+  snapshot_sha256: 4776a6095b0d7872f5937d75ad09b09b11bb539a898de270c0c1902552b67cf7
+- evidence_id: bgc-2193-graph-23
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220/native-current220-clorobiocin-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/23
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete graph clorobiocin-clon3456-peptide-identification-and-purification-limits:
+    Ten sequence-verified peptides, helper expression and a separate unconfirmed purification
+    band. Review #569. Native identity, experimental preparations, observations and
+    inferred mechanisms remain distinct. This partial curation does not change compound
+    identity, source-owned fields, earlier graphs or SEEDED status. Historical source
+    claims are not freshly verified by this review.'
+  snapshot_sha256: 4776a6095b0d7872f5937d75ad09b09b11bb539a898de270c0c1902552b67cf7
+- evidence_id: bgc-2193-graph-24
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220/native-current220-clorobiocin-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/24
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete graph clorobiocin-clon3456-genetics-titers-and-cassette-limits:
+    Native deletion and cassette-retaining tag insertion, with six host-specific titers.
+    Review #569. Native identity, experimental preparations, observations and inferred
+    mechanisms remain distinct. This partial curation does not change compound identity,
+    source-owned fields, earlier graphs or SEEDED status. Historical source claims
+    are not freshly verified by this review.'
+  snapshot_sha256: 4776a6095b0d7872f5937d75ad09b09b11bb539a898de270c0c1902552b67cf7
+- evidence_id: bgc-2193-graph-25
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220/native-current220-clorobiocin-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/25
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete graph clorobiocin-cloy-mbth-native-references-and-genetic-compensation:
+    CloY deletion and host/heterologous MbtH-like rescue in S.coelicolor, with exact
+    native references separated from experimental constructs. Partial phenotypes and
+    source disagreements are retained. Evidence review #670; SEEDED status unchanged.
+    Historical source claims are not freshly verified by this review.'
+  snapshot_sha256: 4776a6095b0d7872f5937d75ad09b09b11bb539a898de270c0c1902552b67cf7
+- evidence_id: bgc-2193-graph-26
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220/native-current220-clorobiocin-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/26
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete graph clorobiocin-cloy-mbth-congener-feeding-and-mechanism-limits:
+    Congener feeding localizes a genetic defect without identifying a CloY catalytic
+    reaction or restoring native clorobiocin. Novclobiocin102 remains distinct. Review
+    #670. Historical source claims are not freshly verified by this review.'
+  snapshot_sha256: 4776a6095b0d7872f5937d75ad09b09b11bb539a898de270c0c1902552b67cf7
+- evidence_id: bgc-2193-graph-27
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220/native-current220-clorobiocin-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/27
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete graph clorobiocin-cloh-native-preparations-and-adenylation:
+    Native CloH grounding and host-conditioned CloH/CloY adenylation evidence, with
+    literal initiation recoding, controls and a bounded kinetic fit. Review #672.
+    Historical source claims are not freshly verified by this review.'
+  snapshot_sha256: 4776a6095b0d7872f5937d75ad09b09b11bb539a898de270c0c1902552b67cf7
+- evidence_id: bgc-2193-graph-28
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220/native-current220-clorobiocin-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/28
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete graph clorobiocin-cloh-cloy-association-and-l383m-limits:
+    CloH/CloY association and proposed stoichiometry, distinct coexpression and L383M
+    activity tradeoffs, and computational limits. Review #672. Historical source claims
+    are not freshly verified by this review.'
+  snapshot_sha256: 4776a6095b0d7872f5937d75ad09b09b11bb539a898de270c0c1902552b67cf7
+- evidence_id: bgc-2193-graph-29
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220/native-current220-clorobiocin-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/29
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: 'Retained complete graph clorobiocin-cloh-mbth-cross-activation-and-partner-boundaries:
+    Cognate and noncognate MbtH activation of CloH in vitro, with native references
+    separated from processed/synthetic partners and per-panel normalization. Review
+    #672. Historical source claims are not freshly verified by this review.'
+  snapshot_sha256: 4776a6095b0d7872f5937d75ad09b09b11bb539a898de270c0c1902552b67cf7
+- evidence_id: bgc-2193-pathway
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch220/native-current220-clorobiocin-maintained-reader-DATA-001.json
+  locator: /resolved_view/biosynthetic_pathway
+  accessed_at: '2026-11-03T10:23:23.978779Z'
+  support: supports
+  summary: Retained step10 CloQ/Q8GHB2 RHEA37055 ring-A precursor prenylation, with
+    its single historical PRIMARY_EXPERIMENT citation; no full-pathway coverage inferred.
+  snapshot_sha256: 4776a6095b0d7872f5937d75ad09b09b11bb539a898de270c0c1902552b67cf7
+- evidence_id: root-native-strict_ten
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-220/validate-strict-selected10-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-220/native-current220-five-gates-execution-001.json
+  accessed_at: '2026-11-03T10:05:35.934949Z'
+  support: supports
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  snapshot_sha256: 3eb7a41f227bc3766da4ddb5affcab339127e3eec377a38a928d989861e7bca3
+- evidence_id: root-native-strict_full
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-220/validate-all-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-220/native-current220-five-gates-execution-001.json
+  accessed_at: '2026-11-03T10:06:00.493115Z'
+  support: supports
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  snapshot_sha256: b0fee61c050e78f367a4ad7e88aa28c2e04159e5fc41cb9fdd8c3cc0c524bbf8
+- evidence_id: root-native-lockfile
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-220/verify-corpus-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-220/native-current220-five-gates-execution-001.json
+  accessed_at: '2026-11-03T10:06:19.575968Z'
+  support: supports
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  snapshot_sha256: 254f171c7dff0f1ecbee5f47f75d2b7046143ae7fc499d9a1c08263e1c5125d8
+- evidence_id: root-native-reproduction
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-220/verify-reproduction-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-220/native-current220-five-gates-execution-001.json
+  accessed_at: '2026-11-03T10:06:54.142706Z'
+  support: supports
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  snapshot_sha256: cfc38f4e3f434e7f3651975f2cb228e5cda848476b2c53d1636d8746b794237a
+- evidence_id: root-native-queue
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-220/review-queue-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-220/native-current220-five-gates-execution-001.json
+  accessed_at: '2026-11-03T10:07:06.355777Z'
+  support: supports
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  snapshot_sha256: 6b8a6b8cb74ddc70b591fb67b612031f05b241b0a0c649cdb0317a6bdeabfb46
+assessments:
+- assessment_id: bgc-2193-identity
+  area: identity
+  topic: Identity
+  outcome: supported
+  summary: The full key FJAQNRBDVKIIKK-LFLQOBSNSA-N joins the BGC0000832 compound,
+    preserving the MINTED content-hashed owner. No three-star ChEBI match appears
+    in the exact retained join. The same-key AntibioticMech link and PubChem:54706138
+    remain retained relationships, not independent natural-identity verification.
+    Fed analogues, novobiocin substrates and engineered products in the graphs do
+    not replace this owner.
+  target_ids:
+  - naturalproductmech:mibig-619480541f
+  evidence_ids:
+  - bgc-2193-owner
+  - bgc-2193-capture
+  - bgc-2193-intake
+  - bgc-2193-grounding-owner
+  - bgc-2193-source-plan
+  - bgc-2193-query-chebi_structures
+  - bgc-2193-source-mibig_compounds
+  - bgc-2193-chemistry
+  dimensions:
+  - name: standard_inchi_key
+    value: FJAQNRBDVKIIKK-LFLQOBSNSA-N
+    definition: Exact full key; no name, first-block or congener substitution.
+    evidence_ids:
+    - bgc-2193-owner
+    - bgc-2193-capture
+    - bgc-2193-intake
+    - bgc-2193-grounding-owner
+    - bgc-2193-source-plan
+    - bgc-2193-query-chebi_structures
+    - bgc-2193-source-mibig_compounds
+    - bgc-2193-chemistry
+  - name: grounding_scope
+    value: MINTED BGC0000832 v4; same-key sibling link and PubChem54706138 are retained
+      references.
+    definition: Local grounding fidelity is distinct from fresh natural-identity verification.
+    evidence_ids:
+    - bgc-2193-owner
+    - bgc-2193-capture
+    - bgc-2193-intake
+    - bgc-2193-grounding-owner
+    - bgc-2193-source-plan
+    - bgc-2193-query-chebi_structures
+    - bgc-2193-source-mibig_compounds
+    - bgc-2193-chemistry
+- assessment_id: bgc-2193-representation
+  area: representation
+  topic: Representation
+  outcome: supported
+  summary: Both stored forms parse as neutral C35H37ClN2O11 with 49 atoms and 53 bonds;
+    all ten comparisons are true and four tetrahedral centres are specified in each.
+    The saved topology retains a C5O cycle, a pyrrole carboxylate ester, an amide,
+    a chlorinated coumarin region and a prenyl substituent. The complete atom/bond
+    tables support those local motifs, while the match and normalized key do not prove
+    natural absolute stereochemistry or experimental construct identity.
+  target_ids:
+  - naturalproductmech:mibig-619480541f
+  evidence_ids:
+  - bgc-2193-chemistry
+  - bgc-2193-topology
+  - bgc-2193-diagnostic-acceptance
+  - bgc-2193-stereo-extraction
+  - bgc-2193-structure-schema
+  dimensions:
+  - name: stereochemistry_scope
+    value: Four specified tetrahedral centres per form; no experimental natural/construct
+      identity proof.
+    definition: Saved full stereo/atom/bond interpretation, not an experimental assignment
+      or new parse.
+    evidence_ids:
+    - bgc-2193-chemistry
+    - bgc-2193-topology
+    - bgc-2193-diagnostic-acceptance
+    - bgc-2193-stereo-extraction
+    - bgc-2193-structure-schema
+  - name: representation_correspondence
+    value: 10/10 comparisons true;49 atoms/53 bonds; no independent full-graph proof.
+    definition: Normalized identifier agreement does not establish explicit full-graph
+      or natural-form identity.
+    evidence_ids:
+    - bgc-2193-chemistry
+    - bgc-2193-topology
+    - bgc-2193-diagnostic-acceptance
+    - bgc-2193-stereo-extraction
+    - bgc-2193-structure-schema
+- assessment_id: bgc-2193-origin
+  area: provenance
+  topic: Origin
+  outcome: supported
+  summary: MIBiG BGC0000832 v4 grades the DS12.976 strain (1352936) BGC_CHARACTERIZED
+    and its locus CLUSTER_DEMONSTRATED from knockout, enzymatic and heterologous-expression
+    categories. Those are retained database grades with entry-level PMID:12480894;
+    the individual experiments were not freshly verified. The single genus-level Streptomyces
+    LOTUS occurrence (1883) is separate. Detailed native/engineered mechanism claims
+    retain their own local evidence scope.
+  target_ids:
+  - naturalproductmech:mibig-619480541f
+  evidence_ids:
+  - bgc-2193-origin-owner
+  - bgc-2193-occurrence-owner
+  - bgc-2193-source-mibig_compounds
+  - bgc-2193-source-lotus_occurrences
+  - bgc-2193-cached-taxonomy
+  - bgc-2193-source-routes
+  - bgc-2193-review-profile
+  dimensions:
+  - name: taxon_scope
+    value: Producer strain1352936 separate from genus1883 occurrence.
+    definition: Source taxa and cache labels preserve genus/species/strain scope;
+      no fresh ancestry or production inference.
+    evidence_ids:
+    - bgc-2193-origin-owner
+    - bgc-2193-occurrence-owner
+    - bgc-2193-source-mibig_compounds
+    - bgc-2193-source-lotus_occurrences
+    - bgc-2193-cached-taxonomy
+    - bgc-2193-source-routes
+    - bgc-2193-review-profile
+  - name: producer_evidence
+    value: BGC_CHARACTERIZED for DS12.976, retained database grade.
+    definition: Producer evidence is assessed separately from occurrence and locus
+      support.
+    evidence_ids:
+    - bgc-2193-origin-owner
+    - bgc-2193-occurrence-owner
+    - bgc-2193-source-mibig_compounds
+    - bgc-2193-source-lotus_occurrences
+    - bgc-2193-cached-taxonomy
+    - bgc-2193-source-routes
+    - bgc-2193-review-profile
+  - name: locus_evidence
+    value: BGC0000832 v4 CLUSTER_DEMONSTRATED; knockout/enzymatic/heterologous; AF329398.1:9348..42291.
+    definition: Source version/status/method/grade does not establish a complete pathway
+      or fresh primary support.
+    evidence_ids:
+    - bgc-2193-origin-owner
+    - bgc-2193-occurrence-owner
+    - bgc-2193-source-mibig_compounds
+    - bgc-2193-source-lotus_occurrences
+    - bgc-2193-cached-taxonomy
+    - bgc-2193-source-routes
+    - bgc-2193-review-profile
+- assessment_id: bgc-2193-citations
+  area: evidence
+  topic: Citations
+  outcome: unknown
+  summary: The MIBiG entry PMID:12480894, genus-level LOTUS DOI:10.1002/CHIN.197249433,
+    two PDB-derived binding rows citing PMID:12044152 and curated mechanism references
+    play different roles. The two binding rows share target1KZN_A and the same PMID,
+    so they are not assumed independent experiments. PRIMARY_EXPERIMENT labels, historical
+    retrieval dates, thesis/page locators and sequence comparisons in the graph remain
+    attributed historical assertions; no cited original was newly accessed.
+  target_ids:
+  - naturalproductmech:mibig-619480541f
+  evidence_ids:
+  - bgc-2193-origin-owner
+  - bgc-2193-occurrence-owner
+  - bgc-2193-source-mibig_compounds
+  - bgc-2193-source-lotus_occurrences
+  - bgc-2193-assay-owner
+  - bgc-2193-source-pubchem_bioassay
+  - bgc-2193-source-antibioticmech_inchikeys
+  - bgc-2193-reader-DATA
+  dimensions:
+  - name: citation_scope
+    value: ENTRY PMID12480894; one genus LOTUS DOI; shared binding PMID12044152; graph
+      historical sources separate.
+    definition: Citation roles remain database assertions; no publication independence
+      or fresh source access is assumed.
+    evidence_ids:
+    - bgc-2193-origin-owner
+    - bgc-2193-occurrence-owner
+    - bgc-2193-source-mibig_compounds
+    - bgc-2193-source-lotus_occurrences
+    - bgc-2193-assay-owner
+    - bgc-2193-source-pubchem_bioassay
+    - bgc-2193-source-antibioticmech_inchikeys
+    - bgc-2193-reader-DATA
+- assessment_id: bgc-2193-bioactivity
+  area: evidence
+  topic: Bioactivity
+  outcome: concern
+  summary: 'The two written ACTIVE observations are PDB-derived binding data: AID977611
+    retains KD0.0012 uM and AID1811 has no endpoint/value. Neither retained row measures
+    catalytic inhibition, yet both receive ENZYME_INHIBITOR from the generic binding
+    fallback; this is a major unsupported observation-level classification and is
+    the only written basis for that summary class. The separate same-key AntibioticMech
+    ANTIBACTERIAL assertion remains backed. No molecular_targets root is present.
+    Biosynthetic enzyme graphs cannot supply therapeutic inhibition evidence for these
+    binding observations.'
+  target_ids:
+  - naturalproductmech:mibig-619480541f
+  evidence_ids:
+  - bgc-2193-assay-owner
+  - bgc-2193-occurrence-owner
+  - bgc-2193-query-pubchem_bioassay
+  - bgc-2193-query-bindingdb_targets
+  - bgc-2193-query-antibioticmech_inchikeys
+  - bgc-2193-source-plan
+  - bgc-2193-source-pubchem_bioassay
+  - bgc-2193-source-antibioticmech_inchikeys
+  - bgc-2193-activity-classifier
+  - bgc-2193-activity-schema
+  dimensions:
+  - name: occurrence_scope
+    value: One genus-level LOTUS occurrence, not strain production evidence.
+    definition: Occurrence assertions are not counts of independent experiments or
+      producers.
+    evidence_ids:
+    - bgc-2193-assay-owner
+    - bgc-2193-occurrence-owner
+    - bgc-2193-query-pubchem_bioassay
+    - bgc-2193-query-bindingdb_targets
+    - bgc-2193-query-antibioticmech_inchikeys
+    - bgc-2193-source-plan
+    - bgc-2193-source-pubchem_bioassay
+    - bgc-2193-source-antibioticmech_inchikeys
+    - bgc-2193-activity-classifier
+    - bgc-2193-activity-schema
+  - name: assay_target_scope
+    value: Two ACTIVE binding rows, one KD0.0012uM, unsupported ENZYME_INHIBITOR typing/summary;
+      ANTIBACTERIAL sibling remains.
+    definition: Written claims and exact retained assay/target routes are bounded;
+      no global biological absence claim.
+    evidence_ids:
+    - bgc-2193-assay-owner
+    - bgc-2193-occurrence-owner
+    - bgc-2193-query-pubchem_bioassay
+    - bgc-2193-query-bindingdb_targets
+    - bgc-2193-query-antibioticmech_inchikeys
+    - bgc-2193-source-plan
+    - bgc-2193-source-pubchem_bioassay
+    - bgc-2193-source-antibioticmech_inchikeys
+    - bgc-2193-activity-classifier
+    - bgc-2193-activity-schema
+- assessment_id: bgc-2193-classification
+  area: consistency
+  topic: Classification
+  outcome: unknown
+  summary: The model Simple coumarins/Coumarins and glycoside=true capture limited
+    scaffold features, separate from MIBiG SACCHARIDE/OTHER classes. The SMILES table
+    has pyrrole-C6(=O7)–O8–C9 ester and C32(=O33)–N31 amide; the aromaticized C28(=O29)–O30
+    coumarin unit is omitted by the generic ester motif. The sugar-like C5O ring connects
+    through O19, with an O15 methyl ether. These graph facts do not by themselves
+    name the natural sugar or establish tailoring order.
+  target_ids:
+  - naturalproductmech:mibig-619480541f
+  evidence_ids:
+  - bgc-2193-classification-owner
+  - bgc-2193-source-npclassifier
+  - bgc-2193-source-mibig_compounds
+  - bgc-2193-chemistry
+  - bgc-2193-topology
+  - bgc-2193-review-profile
+  dimensions:
+  - name: classification_applicability
+    value: Model coumarin/glycoside features; C5O cycle, pyrrole ester and amide;
+      source SACCHARIDE/OTHER separate.
+    definition: Model filing labels, observed topology and source BGC classes remain
+      distinct axes.
+    evidence_ids:
+    - bgc-2193-classification-owner
+    - bgc-2193-source-npclassifier
+    - bgc-2193-source-mibig_compounds
+    - bgc-2193-chemistry
+    - bgc-2193-topology
+    - bgc-2193-review-profile
+- assessment_id: bgc-2193-completion
+  area: completeness
+  topic: Completion
+  outcome: unknown
+  summary: All retained owner/source evidence, ten-form cohort chemistry within the
+    assigned five owners, and accepted complete maintained views were considered with
+    explicit component-reading attribution. One binding-to-inhibition support gap
+    requires maintained-source curation; historical biosynthesis claims are not treated
+    as fresh verification. Native gates and the reader passed, but external/full QC/OAK
+    remain unavailable. Review completion is partial and source records/status remain
+    unchanged.
+  target_ids:
+  - naturalproductmech:mibig-619480541f
+  evidence_ids:
+  - bgc-2193-owner
+  - bgc-2193-intake
+  - bgc-2193-source-notes
+  - bgc-2193-native-acceptance
+  - bgc-2193-diagnostic-acceptance
+  - bgc-2193-review-skill
+  - bgc-2193-review-profile
+  - bgc-2193-source-plan
+  - bgc-2193-reader-acceptance
+  dimensions:
+  - name: review_completion
+    value: Partial; one major binding-class finding; maintained reader passed, external/full
+      QC/OAK unavailable.
+    definition: Completion reflects actual evidence access and check coverage; parsing
+      and gate success are not scientific proof.
+    evidence_ids:
+    - bgc-2193-owner
+    - bgc-2193-intake
+    - bgc-2193-source-notes
+    - bgc-2193-native-acceptance
+    - bgc-2193-diagnostic-acceptance
+    - bgc-2193-review-skill
+    - bgc-2193-review-profile
+    - bgc-2193-source-plan
+    - bgc-2193-reader-acceptance
+- assessment_id: bgc-2193-mechanism
+  area: graph
+  topic: Complete declared mechanisms and evidence boundaries
+  outcome: supported
+  summary: The accepted complete Clorobiocin view has four inline graphs plus26 ordered
+    components,30 graphs/439 nodes/525 edges/776 graph references, one pathway step/reference
+    and all21 owner/35 component histories. Native personally read all owner/component
+    prose with exact-line repetition factoring and byte reconstruction; this author
+    read all30 graph descriptions, the pathway and the pertinent accepted view. CloQ
+    native prenylation, variant preparations/kinetics/structures, CloL novobiocin-ring-B
+    ligation, CloHal/CloZ genetics/culture observations, CloU/CloW and sugar-host
+    experiments, CloP/CloN deletions/feedings, pyrrole-precursor CloN3456 steps and
+    CloH/CloY interactions retain separate evidence scopes. They do not establish
+    one complete native pathway, universal reaction order or mature-product activity.
+  target_ids:
+  - naturalproductmech:mibig-619480541f
+  evidence_ids:
+  - bgc-2193-owner
+  - bgc-2193-capture
+  - bgc-2193-intake
+  - bgc-2193-source-plan
+  - bgc-2193-source-notes
+  - bgc-2193-reader-DATA
+  - bgc-2193-reader-execution
+  - bgc-2193-reader-acceptance
+  - bgc-2193-graph-0
+  - bgc-2193-graph-1
+  - bgc-2193-graph-2
+  - bgc-2193-graph-3
+  - bgc-2193-graph-4
+  - bgc-2193-graph-5
+  - bgc-2193-graph-6
+  - bgc-2193-graph-7
+  - bgc-2193-graph-8
+  - bgc-2193-graph-9
+  - bgc-2193-graph-10
+  - bgc-2193-graph-11
+  - bgc-2193-graph-12
+  - bgc-2193-graph-13
+  - bgc-2193-graph-14
+  - bgc-2193-graph-15
+  - bgc-2193-graph-16
+  - bgc-2193-graph-17
+  - bgc-2193-graph-18
+  - bgc-2193-graph-19
+  - bgc-2193-graph-20
+  - bgc-2193-graph-21
+  - bgc-2193-graph-22
+  - bgc-2193-graph-23
+  - bgc-2193-graph-24
+  - bgc-2193-graph-25
+  - bgc-2193-graph-26
+  - bgc-2193-graph-27
+  - bgc-2193-graph-28
+  - bgc-2193-graph-29
+  - bgc-2193-pathway
+  dimensions: []
+- assessment_id: bgc-2193-protein-scope
+  area: grounding
+  topic: Native identity, experimental preparations and historical source limits
+  outcome: supported
+  summary: Native protein references remain distinct from His-tag/scar, primer-derived,
+    mutant, heterologous and fed-congener contexts. CloL experiments on methylated
+    novobiocin ring B do not prove mature Clorobiocin turnover. CloHal/CloZ length
+    conflicts, CloN6 sequence/length limits and CloY tag-stage discrepancies remain
+    unresolved historical source conflicts. ATP–PPi exchange supports the CloH/CloY
+    adenylation half-reaction rather than full carrier loading or pathway flux; copurification/equimolar
+    activity do not prove a unique complex stoichiometry. Culture titers and partial
+    rescue are not purified kinetics or universal essentiality. PRIMARY_EXPERIMENT/database/curator-inference
+    labels and prior retrieval claims are preserved without newly inspecting papers,
+    sequences or structures.
+  target_ids:
+  - naturalproductmech:mibig-619480541f
+  evidence_ids:
+  - bgc-2193-owner
+  - bgc-2193-capture
+  - bgc-2193-intake
+  - bgc-2193-source-plan
+  - bgc-2193-source-notes
+  - bgc-2193-reader-DATA
+  - bgc-2193-reader-execution
+  - bgc-2193-reader-acceptance
+  - bgc-2193-graph-0
+  - bgc-2193-graph-1
+  - bgc-2193-graph-2
+  - bgc-2193-graph-3
+  - bgc-2193-graph-4
+  - bgc-2193-graph-5
+  - bgc-2193-graph-6
+  - bgc-2193-graph-7
+  - bgc-2193-graph-8
+  - bgc-2193-graph-9
+  - bgc-2193-graph-10
+  - bgc-2193-graph-11
+  - bgc-2193-graph-12
+  - bgc-2193-graph-13
+  - bgc-2193-graph-14
+  - bgc-2193-graph-15
+  - bgc-2193-graph-16
+  - bgc-2193-graph-17
+  - bgc-2193-graph-18
+  - bgc-2193-graph-19
+  - bgc-2193-graph-20
+  - bgc-2193-graph-21
+  - bgc-2193-graph-22
+  - bgc-2193-graph-23
+  - bgc-2193-graph-24
+  - bgc-2193-graph-25
+  - bgc-2193-graph-26
+  - bgc-2193-graph-27
+  - bgc-2193-graph-28
+  - bgc-2193-graph-29
+  - bgc-2193-pathway
+  dimensions: []
+findings:
+- finding_id: bgc-2193-binding-class-scope
+  issue_key: clorobiocin-pdb-binding-observations-enzyme-class-overstatement
+  category: scope
+  severity: major
+  status: open
+  certainty: confirmed
+  title: PDB binding observations do not establish enzyme-inhibition typing
+  description: Written bioactivities[0–1], AIDs977611/1811, are the retained PDB-derived
+    binding rows1516/1515 with shared PMID12044152 and ungrounded target1KZN_A. The
+    first measures KD0.0012uM; the other has no endpoint/value. The generic binding
+    regex adds ENZYME_INHIBITOR to both, although affinity/binding alone does not
+    establish catalytic inhibition. Those two classes solely feed the written ENZYME_INHIBITOR
+    summary. The same-key sibling ANTIBACTERIAL assertion remains separately backed,
+    and biosynthetic graphs provide no therapeutic inhibition measurement. This is
+    a support-scope defect, not a denial of known or possible inhibitory pharmacology.
+  target_ids:
+  - naturalproductmech:mibig-619480541f
+  field_paths:
+  - bioactivities[0].activity_class
+  - bioactivities[1].activity_class
+  - bioactivity_summary
+  evidence_ids:
+  - bgc-2193-assay-owner
+  - bgc-2193-source-pubchem_bioassay
+  - bgc-2193-query-pubchem_bioassay
+  - bgc-2193-activity-classifier
+  - bgc-2193-activity-schema
+  - bgc-2193-review-skill
+  - bgc-2193-review-profile
+  - bgc-2193-source-antibioticmech_inchikeys
+  - bgc-2193-reader-DATA
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained classify_activity, ACTIVE observation typing and summary derivation
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/shikimates_and_phenylpropanoids/clorobiocin.yaml
+    role: Generated affected claims; regenerate after maintained correction
+  ownership_note: Correct the maintained classifier support scope, not generated YAML
+    or source assay values; reserved/nonconsumed decisions.tsv is not a correction
+    route.
+  normalization_reason: Major scientific claim-scope overstatement despite native
+    reproduction passing. The enum is coarse and has no dedicated ENZYME_INHIBITOR
+    definition; retained evidence and the classifier unambiguity contract establish
+    this finding.
+  disposition_reason: Confirmed local source-to-generated support gap, rather than
+    an unsupported inference from unavailable external verification.
+actions:
+- action_id: bgc-2193-repair-activity-classification
+  description: 'Narrow maintained classification of the exact PDB-derived binding
+    titles/AIDs977611 and1811 so binding alone does not produce ENZYME_INHIBITOR.
+    Omit those optional classes unless suitable inspected catalytic-inhibition evidence
+    is deliberately added. Preserve both ACTIVE calls, KD0.0012uM versus the second
+    blank endpoint/value, PMID12044152, title/AIDs and ungrounded1KZN_A. Recompute
+    the summary from supported written evidence and the sibling route: ANTIBACTERIAL
+    remains, while ENZYME_INHIBITOR needs separate adequate backing. Preserve all
+    curated biosynthetic graphs, histories and component records.'
+  finding_ids:
+  - bgc-2193-binding-class-scope
+  target_ids:
+  - naturalproductmech:mibig-619480541f
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained classify_activity, ACTIVE observation typing and summary derivation
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/shikimates_and_phenylpropanoids/clorobiocin.yaml
+    role: Generated affected claims; regenerate after maintained correction
+  ownership_note: Proposed future maintained-source correction only; no record edits
+    or source retrieval occurred.
+  acceptance_checks:
+  - Exact affected AIDs retain their calls, endpoint spelling/values/units, citations
+    and target-accession scope without unsupported class assignments.
+  - Regression coverage distinguishes transcription/binding observations from separately
+    supported enzyme-activity observations and preserves counterscreen context.
+  - Recomputed summaries use only adequately backed written observations and explicit
+    sibling routes; no congener or biosynthetic-mechanism activity transfer.
+  - After authorized implementation, regenerate through the maintained seeder and
+    pass required strict/reproduction/corpus/review gates.
+  generator: scripts/seed_from_sources.py
+limitations:
+- No outbound request was made. Primary papers, DOI/PMID services, database accessions,
+  sequences and external xrefs were not freshly resolved; their factual claims remain
+  attributed to retained local sources.
+- Full QC and OAK ontology consistency were unavailable. Accepted native checks, stored-form
+  chemistry and maintained-reader success do not establish scientific accuracy or
+  complete source verification.
+- The molecular evidence is the original saved computation on the two stored forms.
+  Normalized identifiers, motif candidates and one substructure correspondence do
+  not independently establish full-graph identity, natural absolute stereochemistry,
+  named sugar residues or biochemical pathway order.
+- Cached taxon names and bounded retained source joins do not establish organism identity,
+  publication independence, strain-wide production or global absence. No source record,
+  classification, graph, history or native curation status was edited in this review.
+- The whole selected owner was read, but scientific completion is partial because
+  full QC, complete ontology authority coverage and external source verification were
+  unavailable. No native status or history was changed.
+- The branch uses cached base ce6a5498df5be51116bd5e0c119023ee62bb5464. Fresh origin/main
+  verification and publication are deferred because the user prohibits all external
+  requests.
+notes:
+- Source inventory/composer and first-five scientific authorship overlap is disclosed;
+  independent scientific peer is separate.
+- All current scientific judgments use exact accepted local evidence after canonical
+  inspect. No record/native-status mutation or fresh external verification occurred.
+- Saved review coverage is distinct from the native SEEDED/REVIEWED curation state.
+  Proposed actions are not performed edits.
+tags:
+- offline
+- record-review
+- batch-220
