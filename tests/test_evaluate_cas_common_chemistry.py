@@ -39,6 +39,9 @@ def test_cas_common_chemistry_is_recorded_as_blocked_non_commercial_in_source_qu
 def test_is_zwitterionic_smiles_distinguishes_neutral_and_zwitterion():
     assert is_zwitterionic_smiles("CC1=NCC(C(=O)O)N1") is False
     assert is_zwitterionic_smiles("CC1=NC[C@H](C(=O)[O-])[NH2+]1") is True
+    assert is_zwitterionic_smiles("C[N@+](C)(C)CC(=O)[O-]") is True
+    assert is_zwitterionic_smiles("[Ca+2].[O-]C(=O)CC(=O)[O-]") is True
+    assert is_zwitterionic_smiles("NCCCC([NH3+])CC(=O)N[NH3+]") is False
     assert compute_smiles_net_charge("CC1=NC[C@H](C(=O)[O-])[NH2+]1") == 0
     assert compute_smiles_net_charge("NCCCC([NH3+])CC(=O)N[NH3+]") == 2
     assert compute_smiles_net_charge("O=C([O-])CC([O-])C(=O)[O-]") == -3
