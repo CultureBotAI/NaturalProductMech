@@ -1,0 +1,703 @@
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261028T021408Z-iturin
+title: Scientific review of iturin
+started_at: '2026-10-28T01:58:08.269633Z'
+finished_at: '2026-10-28T02:14:08.188782Z'
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: The generic iturin owner has internally matching encodings with eight unspecified
+  carbon configurations. The operon abstract supports iturin A production and a causal
+  locus result in B. subtilis RB14, whereas the separate occurrence title names iturin
+  D and E. Exact congener, lipid homologue and complete natural configuration remain
+  unresolved; frontmatter-only PMC capture supplies no full-body credit.
+source:
+  git_revision: 14373517042b407747272446f79953ae86d51fa4
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/iturin.yaml
+    sha256: 9f674c6e2eedff01643a9006b801c0b6fe8f0894e7610794e84b6a5b1fe8e3c5
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+targets:
+- target_id: naturalproductmech:mibig-7db420f4a3
+  path: data/natural_products/amino_acids_and_peptides/iturin.yaml
+  label: iturin
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+scope:
+  description: Bounded whole-owner and exact source-row assessment with saved two-encoding
+    results and own metadata/abstract evidence, preserving all publisher failures
+    and compound-specific applicability limits.
+  selection: One exact record selected in canonical repository path order from the
+    unreviewed population; this report assesses only its declared partial scientific
+    scope.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-7db420f4a3
+  exclusions:
+  - target: Full-owner scientific verification
+    reason: Not independently established within this report; the corresponding scientific
+      checks, assessments and source-access limitations retain their stated boundaries.
+  - target: Identity claim applicability
+    reason: Not independently established within this report; the corresponding scientific
+      checks, assessments and source-access limitations retain their stated boundaries.
+  - target: Producer claim applicability
+    reason: Not independently established within this report; the corresponding scientific
+      checks, assessments and source-access limitations retain their stated boundaries.
+  - target: Occurrence claim applicability
+    reason: Not independently established within this report; the corresponding scientific
+      checks, assessments and source-access limitations retain their stated boundaries.
+  - target: Locus claim applicability
+    reason: Not independently established within this report; the corresponding scientific
+      checks, assessments and source-access limitations retain their stated boundaries.
+  - target: Activity claim applicability
+    reason: Not independently established within this report; the corresponding scientific
+      checks, assessments and source-access limitations retain their stated boundaries.
+  - target: Complete natural atom/configuration verification
+    reason: Not independently established within this report; the corresponding scientific
+      checks, assessments and source-access limitations retain their stated boundaries.
+  - target: Uninspected main-text, figure and supplement evidence
+    reason: Not independently established within this report; the corresponding scientific
+      checks, assessments and source-access limitations retain their stated boundaries.
+  - target: Current stock/taxonomy or accession-sequence verification
+    reason: Not independently established within this report; the corresponding scientific
+      checks, assessments and source-access limitations retain their stated boundaries.
+  - target: Unreported potency, direct target or complete grounded mechanism
+    reason: Not independently established within this report; the corresponding scientific
+      checks, assessments and source-access limitations retain their stated boundaries.
+  - target: Operational production, engineering or assay instructions
+    reason: Not independently established within this report; the corresponding scientific
+      checks, assessments and source-access limitations retain their stated boundaries.
+checks:
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its
+    pinned path.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-corpus-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.783967Z;
+    finished 2026-10-25T22:37:16.453216Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.log.
+    Reused for batch078 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch078. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-7db420f4a3
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: Fresh canonical reproduction gate passed:all3116 records byte-identical
+    to source seeding; source warnings remain retained.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-reproduction-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784055Z;
+    finished 2026-10-25T22:37:31.682209Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.log.
+    Reused for batch078 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch078. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-7db420f4a3
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: Fresh deterministic review queue completed:8922 rows across12 queues. Queue
+    output is not scientific-review coverage.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-review-queue-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just review-queue --tsv /private/tmp/npm-review-queue-batch-036-fresh14373517-001.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.781802Z;
+    finished 2026-10-25T22:37:08.229737Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.log.
+    Reused for batch078 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch078. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-7db420f4a3
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking
+    mismatches and4898no-adapter skips remain explicit.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-validate-products-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784040Z;
+    finished 2026-10-25T22:37:32.251879Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.log.
+    Reused for batch078 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch078. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-7db420f4a3
+- check_id: shared-qc
+  name: Full repository quality gate on the fresh main baseline
+  status: passed
+  required: true
+  summary: Canonical just qc completed with actual terminal exit0:1024 tests passed,4
+    skipped,2 dependency warnings;3116 records passed closed schema validation, site
+    freshness, byte reproduction and lockfile integrity.22 governed artifacts and15
+    raw inventories passed. Prior DNS failed001 remains preserved.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-qc-attempt-002
+    PYTHONDONTWRITEBYTECODE=1 just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-002 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:40:55.179857Z;
+    finished 2026-10-25T22:46:28.974296Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.log.
+    Reused for batch078 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch078. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-7db420f4a3
+- check_id: C-STRICT
+  name: Native strict target validation
+  status: passed
+  required: true
+  summary: The selected owner passed the documented strict validator. This establishes
+    configured consistency only.
+  command: just validate-strict data/natural_products/amino_acids_and_peptides/iturin.yaml
+    --out /private/tmp/npm-review-work/778/strict.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Actual intake execution finished 2026-10-28T01:58:09.603911Z. Original
+    receipt: /private/tmp/npm-review-work/778/strict-receipt.json.'
+  target_ids:
+  - naturalproductmech:mibig-7db420f4a3
+- check_id: SCI778-LOCAL-JOINS
+  name: Whole original owner and exact source arrays
+  status: passed
+  required: true
+  summary: 'The complete original owner and all seven retained plus two supplemental
+    arrays are preserved: 3 retained and 0 supplemental rows, with 3 rows in the prospective
+    six-array predicate. The owner has no inline or referenced graph; all 3 history
+    entries remain unchanged.'
+  evidence_ids:
+  - SCI778-LOCAL
+  target_ids:
+  - naturalproductmech:mibig-7db420f4a3
+- check_id: SCI778-ENCODINGS
+  name: Saved internal encoding consistency
+  status: passed
+  required: true
+  summary: Saved SMILES and Standard InChI agree internally on full key HNAPWDKFUSLFFE-UHFFFAOYSA-N,
+    formula C48H74N12O14, fragment count 1 and formal charge 0. The saved SMILES FindPotentialStereo
+    result has 0 specified and 8 unspecified tetrahedral carbon sites. This diagnostic
+    is distinct from a list containing only assigned chiral centres. Representation-specific
+    InChI C(-O)=N flags are diagnostics, not evidence of a missing natural alkene
+    configuration. Encoding agreement does not establish complete natural identity.
+  evidence_ids:
+  - SCI778-CHEM
+  target_ids:
+  - naturalproductmech:mibig-7db420f4a3
+- check_id: SCI778-OWN-SOURCES
+  name: Own publication identity and availability scope
+  status: passed
+  required: true
+  summary: Each scientific citation is tied to its own metadata fields, original response
+    and access clock. Bibliography references and failed publisher challenge bodies
+    do not supply own article or full-primary credit.
+  evidence_ids:
+  - SCI778-PM11591669
+  - SCI778-PMC100110
+  - SCI778-DOI08
+  target_ids:
+  - naturalproductmech:mibig-7db420f4a3
+- check_id: SCI778-IDENTITY-SCOPE
+  name: Identity claim applicability
+  status: unavailable
+  required: true
+  summary: The source explicitly concerns iturin A and distinguishes its residue order
+    from mycosubtilin. The generic owner label is iturin; both encodings agree on
+    C48H74N12O14 and the full unconfigured key, with eight unassigned tetrahedral
+    carbons. The title/abstract does not establish the exact lipid homologue and all
+    configurations represented by this owner. Do not identify the entire iturin family
+    or mycosubtilin with this single structure. The newly read own occurrence title
+    explicitly names iturin D and E, which cannot be silently substituted for the
+    iturin A operon scope.
+  evidence_ids:
+  - SCI778-LOCAL
+  - SCI778-PM11591669
+  - SCI778-PMC100110
+  - SCI778-CHEM
+  - SCI778-DOI08
+  target_ids:
+  - naturalproductmech:mibig-7db420f4a3
+- check_id: SCI778-PRODUCER-SCOPE
+  name: Producer claim applicability
+  status: unavailable
+  required: true
+  summary: The own abstract explicitly states B. subtilis RB14 produces iturin A.
+    The owner’s species-level MIBiG assertion is compatible in scope but does not
+    independently specify RB14, prove all B. subtilis strains produce it, or resolve
+    the owner’s exact congener.
+  evidence_ids:
+  - SCI778-LOCAL
+  - SCI778-PM11591669
+  - SCI778-PMC100110
+  target_ids:
+  - naturalproductmech:mibig-7db420f4a3
+- check_id: SCI778-OCCURRENCE-SCOPE
+  name: Occurrence claim applicability
+  status: unavailable
+  required: true
+  summary: The owner retains a separate LOTUS B. subtilis occurrence linked to DOI10.7164/antibiotics.40.437.
+    That distinct DOI is now inspected as own title metadata, not full article text.
+    The RB14 producer abstract is not a substitute for the distinct occurrence citation.
+    The newly read own occurrence title explicitly names iturin D and E, which cannot
+    be silently substituted for the iturin A operon scope.
+  evidence_ids:
+  - SCI778-LOCAL
+  - SCI778-PM11591669
+  - SCI778-DOI08
+  target_ids:
+  - naturalproductmech:mibig-7db420f4a3
+- check_id: SCI778-LOCUS-SCOPE
+  name: Locus claim applicability
+  status: unavailable
+  required: true
+  summary: The abstract identifies the RB14 iturin A operon, four named ORFs and a
+    gene-disruption production-deficiency result. This is causal locus evidence within
+    the article’s iturin A scope. Do not promote the exact owner’s BGC0001098 link
+    before resolving its congener/encoding and accession correspondence. Functional
+    homology annotations remain distinct from the reported disruption result; no experimental
+    instructions are supplied.
+  evidence_ids:
+  - SCI778-LOCAL
+  - SCI778-PM11591669
+  - SCI778-PMC100110
+  target_ids:
+  - naturalproductmech:mibig-7db420f4a3
+- check_id: SCI778-CLASSIFICATION-SCOPE
+  name: Classification claim applicability
+  status: passed
+  required: true
+  summary: The source calls iturin A an antifungal lipopeptide. NRPS/PKS classes are
+    retained MIBiG assertions and cyclic-peptide class is a model prediction. Source
+    support applies to the named iturin A context and does not verify every family
+    member or all encoded stereochemistry.
+  evidence_ids:
+  - SCI778-LOCAL
+  - SCI778-PM11591669
+  target_ids:
+  - naturalproductmech:mibig-7db420f4a3
+- check_id: SCI778-ACTIVITY-SCOPE
+  name: Activity claim applicability
+  status: unavailable
+  required: true
+  summary: The abstract describes iturin A as antifungal, while the owner has no explicit
+    measured bioactivity or molecular-target array. No compound-specific MIC or direct
+    target is inferred. The supplied abstract and bodyless PMC response cannot establish
+    a quantitative assay for the exact owner.
+  evidence_ids:
+  - SCI778-LOCAL
+  - SCI778-PM11591669
+  - SCI778-PMC100110
+  target_ids:
+  - naturalproductmech:mibig-7db420f4a3
+evidence:
+- evidence_id: SCI778-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch078-tentative/tentative-owner-source-inventory-001.json
+  accessed_at: '2026-10-28T01:06:16.413142Z'
+  locator: /entries/7/owner_document; /entries/7/rows; /entries/7/supplemental_retained_rows;
+    /entries/7/expected_official_intake_rows
+  snapshot_sha256: 6e7c1275120177e359bfc0f18d576ac2c47a4b2c7f86b5316c76c23a48805005
+  support: context_only
+  summary: 'The complete original owner and all seven retained plus two supplemental
+    arrays are preserved: 3 retained and 0 supplemental rows, with 3 rows in the prospective
+    six-array predicate. The owner has no inline or referenced graph; all 3 history
+    entries remain unchanged.'
+- evidence_id: SCI778-CHEM
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch078-tentative/source-science-preparation/root-tentative78-local-chemical-consistency-and-neighbors-001.json
+  accessed_at: '2026-10-28T01:12:04.991872Z'
+  locator: /records/7/smiles; /records/7/inchi; /records/7/comparisons; /records/7/chebi_alternatives
+  snapshot_sha256: 6a561d4c073dd142c1a75ad210503570b162fc8a6ff0994c3ee847503f67e37d
+  support: supports
+  summary: Saved SMILES and Standard InChI agree internally on full key HNAPWDKFUSLFFE-UHFFFAOYSA-N,
+    formula C48H74N12O14, fragment count 1 and formal charge 0. The saved SMILES FindPotentialStereo
+    result has 0 specified and 8 unspecified tetrahedral carbon sites. This diagnostic
+    is distinct from a list containing only assigned chiral centres. Representation-specific
+    InChI C(-O)=N flags are diagnostics, not evidence of a missing natural alkene
+    configuration. Encoding agreement does not establish complete natural identity.
+- evidence_id: SCI778-PM11591669
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-metadata-pubmed-001/pmid-11591669.xml
+  accessed_at: '2026-10-28T01:23:53.519825Z'
+  locator: ./PubmedArticle/MedlineCitation/Article/ArticleTitle; ./PubmedArticle/MedlineCitation/Article/Abstract;
+    ./PubmedArticle/PubmedData/ArticleIdList
+  snapshot_sha256: c6b8162cf21b847d538c5cadae55f32149ddb6a3f62441616f8646114163050c
+  support: partial
+  summary: The own abstract states that B. subtilis RB14 produces iturin A and reports
+    operon identification and a disruption result causing specific iturin A deficiency.
+    It distinguishes the iturin A residue order from mycosubtilin. It does not resolve
+    the exact congener or all configurations denoted by the generic owner label.
+- evidence_id: SCI778-PMC100110
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-primary-independent-001/pmc-100110/pmc-100110.xml
+  accessed_at: '2026-10-28T01:48:47.849018Z'
+  locator: ./article/front/article-meta/article-id; ./article/front/article-meta/title-group/article-title;
+    ./article/front/article-meta/abstract; no article/body; publisher restriction
+    comment
+  snapshot_sha256: f56f6e625c27e38688d07c63c305509027920b4acb0c8cd896455fc28555dde2
+  support: partial
+  summary: The own PMC response matches the iturin A operon paper but contains frontmatter
+    and abstract only, with an explicit publisher full-XML restriction. The original
+    HTTP200 source failure is retained. This adds no main-text, figure or independent-publication
+    credit beyond PMID11591669.
+- evidence_id: SCI778-DOI08
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-metadata-held-crossref-001/doi-08.json
+  accessed_at: '2026-10-28T01:56:35.282666Z'
+  locator: /message/DOI; /message/title; /message/abstract if present; /message/resource/primary/URL
+  snapshot_sha256: 03e37ae26da656d8ac304ffeeafe086e55dc11e9dc0a222b3854091216727161
+  support: partial
+  summary: The own title names isolation and characterization of iturin D and iturin
+    E. No abstract is deposited. This occurrence citation is not interchangeable with
+    the separate iturin A/RB14 operon article or a complete identity assignment for
+    generic iturin.
+assessments:
+- assessment_id: SCI778-ENCODING
+  area: representation
+  topic: Internal encodings versus natural identity
+  outcome: supported
+  summary: Saved SMILES and Standard InChI agree internally on full key HNAPWDKFUSLFFE-UHFFFAOYSA-N,
+    formula C48H74N12O14, fragment count 1 and formal charge 0. The saved SMILES FindPotentialStereo
+    result has 0 specified and 8 unspecified tetrahedral carbon sites. This diagnostic
+    is distinct from a list containing only assigned chiral centres. Representation-specific
+    InChI C(-O)=N flags are diagnostics, not evidence of a missing natural alkene
+    configuration. Encoding agreement does not establish complete natural identity.
+  evidence_ids:
+  - SCI778-CHEM
+  target_ids:
+  - naturalproductmech:mibig-7db420f4a3
+- assessment_id: SCI778-IDENTITY
+  area: identity
+  topic: Identity applicability
+  outcome: unknown
+  summary: The source explicitly concerns iturin A and distinguishes its residue order
+    from mycosubtilin. The generic owner label is iturin; both encodings agree on
+    C48H74N12O14 and the full unconfigured key, with eight unassigned tetrahedral
+    carbons. The title/abstract does not establish the exact lipid homologue and all
+    configurations represented by this owner. Do not identify the entire iturin family
+    or mycosubtilin with this single structure. The newly read own occurrence title
+    explicitly names iturin D and E, which cannot be silently substituted for the
+    iturin A operon scope.
+  evidence_ids:
+  - SCI778-LOCAL
+  - SCI778-PM11591669
+  - SCI778-PMC100110
+  - SCI778-CHEM
+  - SCI778-DOI08
+  target_ids:
+  - naturalproductmech:mibig-7db420f4a3
+- assessment_id: SCI778-PRODUCER
+  area: provenance
+  topic: Producer applicability
+  outcome: unknown
+  summary: The own abstract explicitly states B. subtilis RB14 produces iturin A.
+    The owner’s species-level MIBiG assertion is compatible in scope but does not
+    independently specify RB14, prove all B. subtilis strains produce it, or resolve
+    the owner’s exact congener.
+  evidence_ids:
+  - SCI778-LOCAL
+  - SCI778-PM11591669
+  - SCI778-PMC100110
+  target_ids:
+  - naturalproductmech:mibig-7db420f4a3
+- assessment_id: SCI778-OCCURRENCE
+  area: provenance
+  topic: Occurrence applicability
+  outcome: unknown
+  summary: The owner retains a separate LOTUS B. subtilis occurrence linked to DOI10.7164/antibiotics.40.437.
+    That distinct DOI is now inspected as own title metadata, not full article text.
+    The RB14 producer abstract is not a substitute for the distinct occurrence citation.
+    The newly read own occurrence title explicitly names iturin D and E, which cannot
+    be silently substituted for the iturin A operon scope.
+  evidence_ids:
+  - SCI778-LOCAL
+  - SCI778-PM11591669
+  - SCI778-DOI08
+  target_ids:
+  - naturalproductmech:mibig-7db420f4a3
+- assessment_id: SCI778-LOCUS
+  area: provenance
+  topic: Locus applicability
+  outcome: unknown
+  summary: The abstract identifies the RB14 iturin A operon, four named ORFs and a
+    gene-disruption production-deficiency result. This is causal locus evidence within
+    the article’s iturin A scope. Do not promote the exact owner’s BGC0001098 link
+    before resolving its congener/encoding and accession correspondence. Functional
+    homology annotations remain distinct from the reported disruption result; no experimental
+    instructions are supplied.
+  evidence_ids:
+  - SCI778-LOCAL
+  - SCI778-PM11591669
+  - SCI778-PMC100110
+  target_ids:
+  - naturalproductmech:mibig-7db420f4a3
+- assessment_id: SCI778-CLASSIFICATION
+  area: completeness
+  topic: Classification applicability
+  outcome: supported
+  summary: The source calls iturin A an antifungal lipopeptide. NRPS/PKS classes are
+    retained MIBiG assertions and cyclic-peptide class is a model prediction. Source
+    support applies to the named iturin A context and does not verify every family
+    member or all encoded stereochemistry.
+  evidence_ids:
+  - SCI778-LOCAL
+  - SCI778-PM11591669
+  target_ids:
+  - naturalproductmech:mibig-7db420f4a3
+- assessment_id: SCI778-ACTIVITY
+  area: quantity
+  topic: Activity applicability
+  outcome: unknown
+  summary: The abstract describes iturin A as antifungal, while the owner has no explicit
+    measured bioactivity or molecular-target array. No compound-specific MIC or direct
+    target is inferred. The supplied abstract and bodyless PMC response cannot establish
+    a quantitative assay for the exact owner.
+  evidence_ids:
+  - SCI778-LOCAL
+  - SCI778-PM11591669
+  - SCI778-PMC100110
+  target_ids:
+  - naturalproductmech:mibig-7db420f4a3
+- assessment_id: SCI778-GRAPH
+  area: graph
+  topic: Mechanism and grounded target scope
+  outcome: unknown
+  summary: The whole owner has no inline or referenced causal graph. Source-supported
+    cluster statements, proposed enzyme functions and compound activity are not equivalent
+    to a fully grounded mechanism or direct target assignment.
+  evidence_ids:
+  - SCI778-LOCAL
+  - SCI778-PM11591669
+  - SCI778-PMC100110
+  - SCI778-DOI08
+  target_ids:
+  - naturalproductmech:mibig-7db420f4a3
+findings: []
+actions: []
+limitations:
+- Exact retained source grades, history, whole rows and original source clocks are
+  preserved. Metadata is not promoted to full article-body, structural figure or supplement
+  credit.
+- No current taxonomy, physical stock, accession sequence or complete natural configuration
+  is independently verified by this proposal.
+- No quantitative activity or target is transferred across congeners, axial isomers,
+  assay types or source organisms. No operational production or assay instructions
+  are supplied.
+- Unresolved required evidence checks remain explicit. A missing source is not treated
+  as positive or negative experimental evidence.
+- The title/abstract does not establish the exact lipid homologue and all configurations
+  represented by this owner. Do not identify the entire iturin family or mycosubtilin
+  with this single structure.
+- The owner’s species-level MIBiG assertion is compatible in scope but does not independently
+  specify RB14, prove all B. subtilis strains produce it, or resolve the owner’s exact
+  congener.
+- Do not promote the exact owner’s BGC0001098 link before resolving its congener/encoding
+  and accession correspondence. Functional homology annotations remain distinct from
+  the reported disruption result; no experimental instructions are supplied.
+- No compound-specific MIC or direct target is inferred. The supplied abstract and
+  bodyless PMC response cannot establish a quantitative assay for the exact owner.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- FailedQC001 is retained for an explicit separate network-enabled retry; no artifact
+  will be overwritten.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint
+  and before downstream tests. Its actual exit1/log/input capture/root observation
+  remain pinned; the selected successful canonical QC attempt002 is separately timed.
+  No individual-review validation failure or counter reset is claimed.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter
+  skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings;
+  this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld
+  nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological
+  or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological
+  production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions
+  and no-adapter pairs; a successful command does not convert these into verified
+  scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command
+  execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population
+  was checked; external caches and generated bytecode are not asserted to be independently
+  byte-pinned.
+notes:
+- The whole local owner and retained source rows were read. Full-owner scientific
+  verification remains false; scientific_review denotes the bounded scientific interpretation
+  in this report.
+- Original owner/source reading, two-encoding computation, neighbor inspection, HTTP
+  retrieval and later metadata reading retain separate clocks. Official intake separately
+  computed SMILES facts.
+- No scientific record, maintained input or native curation status was changed. Any
+  findings and actions record ROOT-adopted proposed work; exact-source limitations
+  and unavailable checks remain explicit.
