@@ -63,9 +63,9 @@ def strip_inchikey_prefix(value: str) -> str:
     return INCHIKEY_PREFIX_RE.sub("", (value or "").strip())
 
 
-def compute_smiles_net_charge(smiles: str) -> int:
-    """Compute the net formal charge across all bracketed atoms in a SMILES string."""
-    total = 0
+def _smiles_charge_tokens(smiles: str) -> list[int]:
+    """Return all formal integer charges on bracketed atoms in a SMILES string."""
+    charges: list[int] = []
     for atom_body in BRACKET_ATOM_RE.findall(smiles or ""):
         match = ATOM_CHARGE_TOKEN_RE.search(atom_body)
         if not match:
@@ -73,13 +73,19 @@ def compute_smiles_net_charge(smiles: str) -> int:
         token = match.group(1)
         sign = 1 if token[0] == "+" else -1
         magnitude = int(token[1:]) if len(token) > 1 and token[1:].isdigit() else len(token)
-        total += sign * magnitude
-    return total
+        charges.append(sign * magnitude)
+    return charges
+
+
+def compute_smiles_net_charge(smiles: str) -> int:
+    """Compute the net formal charge across all bracketed atoms in a SMILES string."""
+    return sum(_smiles_charge_tokens(smiles))
 
 
 def is_zwitterionic_smiles(smiles: str) -> bool:
-    """Return True if a SMILES carries both formal positive and negative charges with net charge 0."""
-    return bool(ZWITTERION_SIGNAL_RE.search(smiles or "")) and compute_smiles_net_charge(smiles) == 0
+    """Return True if a SMILES carries both positive and negative formal charges with net charge 0."""
+    charges = _smiles_charge_tokens(smiles)
+    return any(c > 0 for c in charges) and any(c < 0 for c in charges) and sum(charges) == 0
 
 
 def has_formal_charge_smiles(smiles: str) -> bool:
