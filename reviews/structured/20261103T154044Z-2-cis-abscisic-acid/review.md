@@ -1,0 +1,1421 @@
+# Local evidence review: 2-cis-abscisic acid
+
+- Review: 20261103T154044Z-2-cis-abscisic-acid
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-11-03T15:06:55.207618Z
+- Finished UTC: 2026-11-03T15:40:44.968513Z
+- Reviewer: Codex root with native_checks, bgc_science and review_support peer agents (independent)
+- Completion: partial
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The exact CHEBI:22152 join preserves 2-cis-abscisic acid with a specified 2Z,4E side chain and one unspecified tetrahedral centre. Fifteen written assay observations retain their distinct outcomes and endpoint values without an unsupported activity class. Producer-strain, occurrence and source-classification scopes remain separate; external verification is unavailable.
+
+## Scope And Provenance
+
+One complete NaturalProductRecord, including all present scientific claims, history and declared mechanisms; external verification remains unavailable.
+
+Selection: Campaign path order 2242; one of the next ten uncovered paths selected from the 3116-record corpus. Membership uses the canonical validated catalogue plus retained committed campaign bundles.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base ce6a5498df5be51116bd5e0c119023ee62bb5464.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CHEBI:22152 | data/natural_products/terpenoids/2-cis-abscisic-acid.yaml | generated | 2-cis-abscisic acid |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| strict_ten | passed | True | CHEBI:22152 | Closed-schema validation of the ten selected owners and any referenced components reported zero errors. |
+| strict_full | passed | True | CHEBI:22152 | Full closed-schema validation scanned all 3116 owners and reported zero errors. |
+| lockfile | passed | True | CHEBI:22152 | PATHS.tsv and filesystem agree on all 3116 records and their pinned filing pathways. |
+| reproduction | passed | True | CHEBI:22152 | All 3116 records reproduce byte-identically from the retained inventories and carried curator content. This does not independently validate curator science. |
+| queue | passed | True | CHEBI:22152 | The full local queue contains 8922 diagnostic rows; selected-target entries were inspected. Queue diagnostics are leads, not scientific sign-off. |
+| Full just qc | unavailable | True | CHEBI:22152 | Not run under the external-request prohibition: the complete recipe includes upstream vendored synchronization. The five executed local checks are recorded separately. |
+| Complete OAK identifier/label authority check | unavailable | True | CHEBI:22152 | Complete offline ontology authority coverage was not established for this run; no ontology retrieval or remote resolution was attempted. Retained taxonomy evidence has only its explicitly stated local scope. |
+| Primary literature and current structured database/identifier verification | unavailable | True | CHEBI:22152 | All external requests are prohibited by the user. Fresh database and identifier verification and complete primary-literature coverage are unavailable. Any retained original literature actually inspected is recorded separately with its historical scope. |
+
+## Scientific And Domain Assessments
+
+### Identity
+
+identity: supported. Targets: CHEBI:22152.
+
+CHEBI:22152 is the single exact full-key match JLIDBLDQVAYHNE-LXGGSRJLSA-N. The retained ChEBI definition specifies cis geometry between positions 2 and 3; the saved bond tables support that 2Z side chain. The OPEN name-disagreement discussion distinguishes the more specific ChEBI name from MIBiG's abscisic acid label. It is preserved as source-name context, not treated as proof of a wrong molecule or as a resolved enantiomer assignment.
+
+### Representation
+
+representation: supported. Targets: CHEBI:22152.
+
+Both forms give neutral C15H20O4, 19 atoms and 19 bonds, with all ten comparisons true and a complete stored map. Starting from carboxyl carbon C12 in the SMILES table, C11=C10 is the 2Z bond and C9=C8 is the 4E bond. The hydroxyl-bearing ring carbon C7 remains an unspecified tetrahedral centre, matching stereo_complete:false. The InChI atom ordering changes a potential-stereo Cis/Trans descriptor, but its mapped bond stereo remains Z/E. No absolute configuration is invented.
+
+### Origin
+
+provenance: supported. Targets: CHEBI:22152.
+
+Active MIBiG BGC0001899 version 3 is questionable with unknown completeness. Leptosphaeria maculans JN3, taxon 985895, remains a SOURCE_ASSERTION producer with CLUSTER_UNSTATED linkage on FP929136.1:752399–807208. The cache names that same identifier Plenodomus lingam JN3; the species-level occurrence taxon 5022 is separately cached as Plenodomus lingam with Leptosphaeria maculans as an exact synonym. Sponge 12959, Botrytis 40559 and species 5022 are occurrence claims, not proof that the named producer strain made the compound in each source.
+
+### Citations
+
+evidence: unknown. Targets: CHEBI:22152.
+
+The producer/locus ENTRY citation PMID:31034868 remains separate from three LOTUS occurrence DOIs and fifteen PubChem assay records. The Leptosphaeria occurrence DOI and entry PMID may describe related work, but publication independence was not established locally. Recorded target accessions stay explicitly ungrounded; their current identities and the primary protocols were not retrieved. Repeated AIDs with different target-field availability are retained source placements, not independently counted experiments.
+
+### Bioactivity
+
+evidence: supported. Targets: CHEBI:22152.
+
+All fifteen retained PubChem rows are represented as written observations: one ACTIVE ARE-signaling screen, AID651741 with OTHER/Potency 37.578 µM; one INACTIVE AID938 with OTHER/Potency 0.0316 µM; and thirteen NOT_DETERMINED observations retaining Inconclusive source calls. Their distinct values and target/blank-target variants remain intact. No optional activity class or summary is asserted, so the ARE response is not relabeled as enzyme inhibition or therapeutic efficacy. Three written occurrences remain separate from these assays.
+
+### Classification
+
+consistency: unknown. Targets: CHEBI:22152.
+
+The owner faithfully retains the versioned Terpenoids/Apocarotenoids/Apocarotenoids(ε-) prediction and is_glycoside:false. Its MIBiG PKS label describes the source locus and is not interchangeable with the compound classifier. The saved topology contains an oxygenated cyclohexenone and a conjugated carboxylic-acid side chain, with no glycosidic linkage. The model/source classification contrast alone does not establish a curation defect or a biosynthetic pathway.
+
+### Completion
+
+completeness: unknown. Targets: CHEBI:22152.
+
+The complete owner/history, accepted source context, actual intake and both full saved molecular tables were reviewed. No supported local curation defect is established in this bounded scope. Five local gates passed; full QC, complete OAK and fresh external primary-source/taxonomy/accession verification were unavailable. The record remains scientifically partial, and its native curation status/history were not changed.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| bgc-2242-owner | /private/tmp/npm-record-reviews-20261021/data/natural_products/terpenoids/2-cis-abscisic-acid.yaml; Whole owner plaintext and complete curation_history | supports | Complete 2-cis-abscisic acid owner with 4 written history events, current full key JLIDBLDQVAYHNE-LXGGSRJLSA-N and native status SEEDED. |
+| bgc-2242-capture | /private/tmp/npm-review-work/shared-next-batch225/owner-capture-DATA-001.json; /records/1/owner_pin; /records/1/owner_document | supports | Complete saved owner and exact raw pin for order 2242. |
+| bgc-2242-intake | /private/tmp/npm-review-work/shared-next-batch225/intakes/2242-inspect-001.json; /source; /targets | supports | Actual inspection-only intake retains one target CHEBI:22152 and 39 source input placements with owner paths and ownership notes. |
+| bgc-2242-intake-acceptance | /private/tmp/npm-review-work/shared-next-batch225/root-intake-ready-001.json; /status; /intake_summary; /input_plan | supports | ROOT accepts the original ten canonical intakes and their current exact source maps; this is intake authority, not a scientific verdict. |
+| bgc-2242-grounding-owner | /private/tmp/npm-review-work/shared-next-batch225/owner-capture-DATA-001.json; /records/1/owner_document/identifier; /records/1/owner_document/label; /records/1/owner_document/chemical_structure; /records/1/owner_document/definition; /records/1/owner_document/definition_source; /records/1/owner_document/source_concepts; /records/1/owner_document/grounding_status; /records/1/owner_document/xrefs; /records/1/owner_document/discussions | supports | Written identity, structure, grounding and any definition, cross-reference or source discussion are retained exactly. {"identifier":"CHEBI:22152","grounding_status":"EXACT","definition":"A member of the class of abscisic acids in which the double bond betweeen positions 2 and 3 has cis- (natural) geometry.","definition_source":"CHEBI:22152","discussions":[{"discussion_id":"name-disagreement","kind":"CONTROVERSY","status":"OPEN","prompt":"ChEBI calls this structure '2-cis-abscisic acid' and MIBiG calls it 'abscisic acid'. They share a Standard InChIKey, so if the names denote different compounds then one upstream record has the wrong structure. Check which."}]} |
+| bgc-2242-origin-owner | /private/tmp/npm-review-work/shared-next-batch225/owner-capture-DATA-001.json; /records/1/owner_document/producer_organisms; /records/1/owner_document/biosynthetic_gene_clusters | supports | Written producer and locus assertions, grades, methods, references and any curator attribution: {"producer_organisms":[{"taxon_id":"NCBITaxon:985895","taxon_label":"Leptosphaeria maculans JN3","evidence_basis":"SOURCE_ASSERTION","biosynthetic_gene_cluster":"mibig:BGC0001899","source":"MIBIG","source_version":"3","notes":"Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED; this field grades the taxon claim, which is a different question.","evidence":[{"reference":"PMID:31034868","evidence_type":"DATABASE_ASSERTION","notes":"MIBiG BGC0001899 entry version 3; citation taken from the entry level"}]}],"biosynthetic_gene_clusters":[{"accession":"mibig:BGC0001899","entry_version":"3","entry_status":"active","organism_taxon_id":"NCBITaxon:985895","organism_label":"Leptosphaeria maculans JN3","evidence":[{"reference":"PMID:31034868","evidence_type":"DATABASE_ASSERTION","notes":"MIBiG BGC0001899 entry version 3; citation taken from the entry level"}],"genome_accession":"genbank:FP929136.1","locus_from":752399,"locus_to":807208,"bgc_class":["PKS"],"link_evidence_basis":"CLUSTER_UNSTATED"}]} |
+| bgc-2242-occurrence-owner | /private/tmp/npm-review-work/shared-next-batch225/owner-capture-DATA-001.json; /records/1/owner_document/occurrences; /records/1/owner_document/occurrence_taxon_groups | supports | Written occurrence scope: {"occurrences":[{"taxon_id":"NCBITaxon:12959","taxon_label":"Axinella polypoides","taxon_source":"NCBITaxon","source":"LOTUS","evidence":[{"reference":"DOI:10.1016/J.BCP.2011.06.042","evidence_type":"DATABASE_ASSERTION","notes":"LOTUS structure-organism-reference triple. LOTUS reports that the compound was found in the organism; it does not assert that the organism produces it."}],"notes":"Wikidata organism http://www.wikidata.org/entity/Q1931381"},{"taxon_id":"NCBITaxon:40559","taxon_label":"Botrytis cinerea","taxon_source":"NCBITaxon","source":"LOTUS","evidence":[{"reference":"DOI:10.1111/1462-2920.14258","evidence_type":"DATABASE_ASSERTION","notes":"LOTUS structure-organism-reference triple. LOTUS reports that the compound was found in the organism; it does not assert that the organism produces it."}],"notes":"Wikidata organism http://www.wikidata.org/entity/Q1135851"},{"taxon_id":"NCBITaxon:5022","taxon_label":"Leptosphaeria maculans","taxon_source":"NCBITaxon","source":"LOTUS","evidence":[{"reference":"DOI:10.1016/J.FGB.2019.04.015","evidence_type":"DATABASE_ASSERTION","notes":"LOTUS structure-organism-reference triple. LOTUS reports that the compound was found in the organism; it does not assert that the organism produces it."}],"notes":"Wikidata organism http://www.wikidata.org/entity/Q6528396"}],"occurrence_taxon_groups":["FUNGAL","SPONGE"]}. No occurrence fields are inferred when absent. |
+| bgc-2242-assay-owner | /private/tmp/npm-review-work/shared-next-batch225/owner-capture-DATA-001.json; /records/1/owner_document | supports | Written activity and mechanism fields: {"bioactivities":[{"assay":"Adrenergic beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay","evidence":[{"reference":"pubchem.aid:1963593","evidence_type":"DATABASE_ASSERTION","notes":"PubChem BioAssay AID 1963593, deposited by 824; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency."}],"call":"NOT_DETERMINED","measurement_type":"OTHER","value":6.7823,"units":"uM"},{"assay":"Adrenergic beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay","evidence":[{"reference":"pubchem.aid:1963593","evidence_type":"DATABASE_ASSERTION","notes":"PubChem BioAssay AID 1963593, deposited by 824; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_000015 was left ungrounded because PubChem did not provide a UniProtKB accession."}],"call":"NOT_DETERMINED","measurement_type":"OTHER","value":6.7823,"units":"uM"},{"assay":"Adrenergic beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay: Summary","evidence":[{"reference":"pubchem.aid:2061107","evidence_type":"DATABASE_ASSERTION","notes":"PubChem BioAssay AID 2061107, deposited by 824; assay type Summary. Source outcome: Inconclusive. Source endpoint: Potency."}],"call":"NOT_DETERMINED","measurement_type":"OTHER","value":0.302955,"units":"uM"},{"assay":"Adrenergic beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay: Summary","evidence":[{"reference":"pubchem.aid:2061107","evidence_type":"DATABASE_ASSERTION","notes":"PubChem BioAssay AID 2061107, deposited by 824; assay type Summary. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_000015 was left ungrounded because PubChem did not provide a UniProtKB accession."}],"call":"NOT_DETERMINED","measurement_type":"OTHER","value":0.302955,"units":"uM"},{"assay":"Cytochrome P450 Family 1 Subfamily A Member 2 (CYP1A2) small molecule antagonists: luciferase reporter qHTS assay","evidence":[{"reference":"pubchem.aid:1671199","evidence_type":"DATABASE_ASSERTION","notes":"PubChem BioAssay AID 1671199, deposited by 824; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency."}],"call":"NOT_DETERMINED","measurement_type":"OTHER","value":62.5906,"units":"uM"},{"assay":"Cytochrome P450 Family 1 Subfamily A Member 2 (CYP1A2) small molecule antagonists: luciferase reporter qHTS assay","evidence":[{"reference":"pubchem.aid:1671199","evidence_type":"DATABASE_ASSERTION","notes":"PubChem BioAssay AID 1671199, deposited by 824; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession EAW99313 was left ungrounded because PubChem did not provide a UniProtKB accession."}],"call":"NOT_DETERMINED","measurement_type":"OTHER","value":62.5906,"units":"uM"},{"assay":"cAMP Responsive Elements (CRE) small molecule antagonists, cell-based qHTS assay","evidence":[{"reference":"pubchem.aid:1963591","evidence_type":"DATABASE_ASSERTION","notes":"PubChem BioAssay AID 1963591, deposited by 824; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency."}],"call":"NOT_DETERMINED","measurement_type":"OTHER","value":0.0017,"units":"uM"},{"assay":"cAMP Responsive Elements (CRE) small molecule antagonists, cell-based qHTS assay","evidence":[{"reference":"pubchem.aid:1963591","evidence_type":"DATABASE_ASSERTION","notes":"PubChem BioAssay AID 1963591, deposited by 824; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession AAV38316 was left ungrounded because PubChem did not provide a UniProtKB accession."}],"call":"NOT_DETERMINED","measurement_type":"OTHER","value":0.0017,"units":"uM"},{"assay":"qHTS Assay for Agonists of the Thyroid Stimulating Hormone Receptor","evidence":[{"reference":"pubchem.aid:926","evidence_type":"DATABASE_ASSERTION","notes":"PubChem BioAssay AID 926, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession AAR07906 was left ungrounded because PubChem did not provide a UniProtKB accession."}],"call":"NOT_DETERMINED","measurement_type":"OTHER","value":0.0316,"units":"uM"},{"assay":"qHTS Assay for Agonists of the Thyroid Stimulating Hormone Receptor: Activators of Intracellular cAMP Concentrations in Parental HEK 293","evidence":[{"reference":"pubchem.aid:938","evidence_type":"DATABASE_ASSERTION","notes":"PubChem BioAssay AID 938, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession AAR07906 was left ungrounded because PubChem did not provide a UniProtKB accession."}],"call":"INACTIVE","measurement_type":"OTHER","value":0.0316,"units":"uM"},{"assay":"qHTS assay for small molecule agonists of estrogen receptor alpha signaling","evidence":[{"reference":"pubchem.aid:588514","evidence_type":"DATABASE_ASSERTION","notes":"PubChem BioAssay AID 588514, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession AEP43755 was left ungrounded because PubChem did not provide a UniProtKB accession."}],"call":"NOT_DETERMINED","measurement_type":"OTHER","value":39.8107,"units":"uM"},{"assay":"qHTS assay for small molecule agonists of the antioxidant response element (ARE) signaling pathway","evidence":[{"reference":"pubchem.aid:651741","evidence_type":"DATABASE_ASSERTION","notes":"PubChem BioAssay AID 651741, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession NP_006155 was left ungrounded because PubChem did not provide a UniProtKB accession."}],"call":"ACTIVE","measurement_type":"OTHER","value":37.578,"units":"uM"},{"assay":"qHTS assay for small molecule antagonists of androgen receptor signaling","evidence":[{"reference":"pubchem.aid:588516","evidence_type":"DATABASE_ASSERTION","notes":"PubChem BioAssay AID 588516, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession AAI32976 was left ungrounded because PubChem did not provide a UniProtKB accession."}],"call":"NOT_DETERMINED","measurement_type":"OTHER","value":0.631,"units":"uM"},{"assay":"qHTS assay to identify small molecule agonists of the endoplasmic reticulum stress response signaling pathway - cell viability counter screen","evidence":[{"reference":"pubchem.aid:1159517","evidence_type":"DATABASE_ASSERTION","notes":"PubChem BioAssay AID 1159517, deposited by 824; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency."}],"call":"NOT_DETERMINED","measurement_type":"OTHER","value":17.187,"units":"uM"},{"assay":"qHTS assay to identify small molecules that stimulate interleukin-8 (IL-8) secretion","evidence":[{"reference":"pubchem.aid:651758","evidence_type":"DATABASE_ASSERTION","notes":"PubChem BioAssay AID 651758, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession AAA59158 was left ungrounded because PubChem did not provide a UniProtKB accession."}],"call":"NOT_DETERMINED","measurement_type":"OTHER","value":74.978,"units":"uM"}]}. Mechanism roots present: []. |
+| bgc-2242-classification-owner | /private/tmp/npm-review-work/shared-next-batch225/owner-capture-DATA-001.json; /records/1/owner_document/np_pathway; /records/1/owner_document/np_classification; /records/1/owner_document/bgc_class; /records/1/owner_document/biosynthesis_origin; /records/1/owner_document/producer_taxon_groups; /records/1/owner_document/occurrence_taxon_groups | supports | Retained owner classifications and taxon-group labels: {"np_pathway":"TERPENOIDS","np_classification":{"tool":"NPClassifier","tool_version":"npclassifier.gnps2.org@2026-09-07","pathway_results":["Terpenoids"],"superclass_results":["Apocarotenoids"],"class_results":["Apocarotenoids(ε-)"],"is_glycoside":false},"bgc_class":["PKS"],"biosynthesis_origin":"NATURAL_PRODUCT","producer_taxon_groups":["FUNGAL"],"occurrence_taxon_groups":["FUNGAL","SPONGE"]} |
+| bgc-2242-source-plan | /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json; /records/1 | supports | Accepted selected-record source projection, complete raw history, exact joins and proposed input map; the actual intake is separately cited. |
+| bgc-2242-plan-acceptance | /private/tmp/npm-review-work/shared-next-batch225/root-input-plan-acceptance-001.json; /status; /plan; /inventory; /source_notes; /source_placements; /unique_source_paths; /per_order_counts | supports | ROOT accepts actual plan 412 placements/77 paths and the complete selected/direct projections, with future maintained-reader results separate. |
+| bgc-2242-source-notes | /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-source-scope-notes-001.json; /reading; /curation; /cautions | supports | Complete BGC/Support whole-source reading attribution, bounded curation scan and source qualifications. The sole applicable token hit is the Pristinol locus override; reserved decisions.tsv was not consumed. |
+| bgc-2242-chemistry | /private/tmp/npm-review-work/shared-next-batch225/chemistry-local/diagnostic-DATA-001.json; /records/1/declared_structure; /records/1/smiles; /records/1/inchi; /records/1/comparisons; /records/1/atom_correspondence | supports | Saved original paired forms and all computed fields: {"order":2242,"declared":{"smiles":"CC1=CC(=O)CC(C1(/C=C/C(=C\\C(=O)O)/C)O)(C)C","standard_inchi":"InChI=1S/C15H20O4/c1-10(7-13(17)18)5-6-15(19)11(2)8-12(16)9-14(15,3)4/h5-8,19H,9H2,1-4H3,(H,17,18)/b6-5+,10-7-","standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","stereo_complete":false,"structure_source":"MIBIG","structure_source_id":"mibig:BGC0001899"},"smiles_status":"parsed","inchi_status":"parsed","comparisons":{"formula_equal":true,"formal_charge_equal":true,"standard_inchi_equal":true,"standard_inchi_key_equal":true,"canonical_isomeric_smiles_equal":true,"canonical_nonisomeric_smiles_equal":true,"atom_count_equal":true,"bond_count_equal":true,"both_keys_equal_declared":true,"smiles_formula_equals_literal_InChI_main_layer":true},"map":{"smiles_to_inchi_atom_indices":[1,10,7,11,15,8,13,14,5,4,9,6,12,16,17,0,18,2,3],"complete_atom_count_match":true,"full_graph_identity_established":false,"scope":"One chirality-aware substructure match; no independent full graph or natural identity claim."}}. |
+| bgc-2242-topology | /private/tmp/npm-review-work/shared-next-batch225/chemistry-local/diagnostic-DATA-001.json; /records/1/smiles/computed/atoms; /records/1/smiles/computed/bonds; /records/1/smiles/computed/rings; /records/1/smiles/computed/motifs; /records/1/smiles/computed/potential_stereo; /records/1/smiles/computed/stereo_counts; /records/1/inchi/computed/atoms; /records/1/inchi/computed/bonds; /records/1/inchi/computed/rings; /records/1/inchi/computed/motifs; /records/1/inchi/computed/potential_stereo; /records/1/inchi/computed/stereo_counts; /records/1/atom_correspondence; /records/1/declared_structure | supports | SMILES C12(=O13)–O14 is the carboxylic acid; C11=C10 is STEREOZ and C9=C8 is STEREOE. Ring C3=O4 is a ketone and C7–O16 is an alcohol at the unspecified tetrahedral site. The corresponding InChI bonds and complete stored atom map preserve these relationships. |
+| bgc-2242-diagnostic-execution | /private/tmp/npm-review-work/shared-next-batch225/chemistry-local/diagnostic-execution-001.json; /exit_code; /DATA; /stdout; /stderr; /external_requests; /retries | supports | ROOT's original diagnostic execution exited zero, retains exact DATA and original stream pins, reports no external request and zero retries. |
+| bgc-2242-diagnostic-stderr | /private/tmp/npm-review-work/shared-next-batch225/chemistry-local/diagnostic-001.stderr; Complete original stderr (both warnings) | supports | Two original 'Omitted undefined stereo' warnings occur in the batch-level stream; neither is assigned to an owner or representation. |
+| bgc-2242-diagnostic-acceptance | /private/tmp/npm-review-work/shared-next-batch225/root-local-diagnostics-acceptance-001.json; /status; /DATA; /execution; /limits | supports | ROOT accepts the original saved chemistry in its stated mechanical scope; source/natural identity and scientific completion remain separate. |
+| bgc-2242-native-acceptance | /private/tmp/npm-review-work/shared-next-batch225/root-native-five-gates-acceptance-001.json; /status; /ledger; /results; /full_QC_available; /complete_OAK_authority_available; /all_native_gates_passed | supports | Five local commands passed; full QC and complete OAK authority were unavailable, so all_native_gates_passed remains false. |
+| bgc-2242-query-mibig_compounds | /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json; /records/1/source_scope_inventory/joins/mibig_compounds | supports | Exact retained query frame: {"predicate":"exact complete standard_inchi_key equality","query":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","matches":[{"physical_line":2218,"last_physical_line":2218,"row":{"mibig_accession":"BGC0001899","entry_version":"3","entry_status":"active","entry_quality":"questionable","entry_completeness":"unknown","compound_name":"abscisic acid","compound_index":"1","smiles":"CC1=CC(=O)CC(C1(/C=C/C(=C\\C(=O)O)/C)O)(C)C","standard_inchi":"InChI=1S/C15H20O4/c1-10(7-13(17)18)5-6-15(19)11(2)8-12(16)9-14(15,3)4/h5-8,19H,9H2,1-4H3,(H,17,18)/b6-5+,10-7-","standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","stereo_complete":"false","compound_classes":"","database_ids":"pubchem:5375199","taxon_id":"NCBITaxon:985895","taxon_label":"Leptosphaeria maculans JN3","bgc_classes":"PKS","bgc_subclasses":"Unknown","genome_accession":"FP929136.1","locus_from":"752399","locus_to":"807208","locus_evidence_methods":"","producer_evidence_basis":"SOURCE_ASSERTION","cluster_link_evidence_basis":"CLUSTER_UNSTATED","primary_reference":"PMID:31034868","reference_basis":"ENTRY"},"raw_tsv_record":"BGC0001899\t3\tactive\tquestionable\tunknown\tabscisic acid\t1\tCC1=CC(=O)CC(C1(/C=C/C(=C\\C(=O)O)/C)O)(C)C\tInChI=1S/C15H20O4/c1-10(7-13(17)18)5-6-15(19)11(2)8-12(16)9-14(15,3)4/h5-8,19H,9H2,1-4H3,(H,17,18)/b6-5+,10-7-\tJLIDBLDQVAYHNE-LXGGSRJLSA-N\tfalse\t\tpubchem:5375199\tNCBITaxon:985895\tLeptosphaeria maculans JN3\tPKS\tUnknown\tFP929136.1\t752399\t807208\t\tSOURCE_ASSERTION\tCLUSTER_UNSTATED\tPMID:31034868\tENTRY\n","row_sha256":"2f10f0dc660956eee1a8b399134bc7664f2745860d1e22feb7edf9c4342bd29b"}]} |
+| bgc-2242-source-mibig_compounds | /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv; Physical TSV lines 2218 | supports | Complete retained physical source payloads, with each original line and full CSV fields: [{"physical_line":2218,"last_physical_line":2218,"row":{"mibig_accession":"BGC0001899","entry_version":"3","entry_status":"active","entry_quality":"questionable","entry_completeness":"unknown","compound_name":"abscisic acid","compound_index":"1","smiles":"CC1=CC(=O)CC(C1(/C=C/C(=C\\C(=O)O)/C)O)(C)C","standard_inchi":"InChI=1S/C15H20O4/c1-10(7-13(17)18)5-6-15(19)11(2)8-12(16)9-14(15,3)4/h5-8,19H,9H2,1-4H3,(H,17,18)/b6-5+,10-7-","standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","stereo_complete":"false","compound_classes":"","database_ids":"pubchem:5375199","taxon_id":"NCBITaxon:985895","taxon_label":"Leptosphaeria maculans JN3","bgc_classes":"PKS","bgc_subclasses":"Unknown","genome_accession":"FP929136.1","locus_from":"752399","locus_to":"807208","locus_evidence_methods":"","producer_evidence_basis":"SOURCE_ASSERTION","cluster_link_evidence_basis":"CLUSTER_UNSTATED","primary_reference":"PMID:31034868","reference_basis":"ENTRY"},"row_sha256":"2f10f0dc660956eee1a8b399134bc7664f2745860d1e22feb7edf9c4342bd29b"}] |
+| bgc-2242-query-chebi_structures | /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json; /records/1/source_scope_inventory/joins/chebi_structures | supports | Exact retained query frame: {"predicate":"exact complete standard_inchi_key equality","query":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","matches":[{"physical_line":5026,"last_physical_line":5026,"row":{"chebi_id":"CHEBI:22152","name":"2-cis-abscisic acid","definition":"A member of the class of abscisic acids in which the double bond betweeen positions 2 and 3 has cis- (natural) geometry.","stars":"3","standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","smiles":"CC1=CC(=O)CC(C)(C)C1(O)/C=C/C(C)=C\\C(=O)O"},"raw_tsv_record":"CHEBI:22152\t2-cis-abscisic acid\tA member of the class of abscisic acids in which the double bond betweeen positions 2 and 3 has cis- (natural) geometry.\t3\tJLIDBLDQVAYHNE-LXGGSRJLSA-N\tCC1=CC(=O)CC(C)(C)C1(O)/C=C/C(C)=C\\C(=O)O\n","row_sha256":"1231b37b15530279f95a2fe76a2679f8c207148d5071353a63b4440fb4d364a3"}]} |
+| bgc-2242-source-chebi_structures | /private/tmp/npm-record-reviews-20261021/data/raw/chebi_structures.tsv; Physical TSV lines 5026 | supports | Complete retained physical source payloads, with each original line and full CSV fields: [{"physical_line":5026,"last_physical_line":5026,"row":{"chebi_id":"CHEBI:22152","name":"2-cis-abscisic acid","definition":"A member of the class of abscisic acids in which the double bond betweeen positions 2 and 3 has cis- (natural) geometry.","stars":"3","standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","smiles":"CC1=CC(=O)CC(C)(C)C1(O)/C=C/C(C)=C\\C(=O)O"},"row_sha256":"1231b37b15530279f95a2fe76a2679f8c207148d5071353a63b4440fb4d364a3"}] |
+| bgc-2242-query-lotus_occurrences | /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json; /records/1/source_scope_inventory/joins/lotus_occurrences | supports | Exact retained query frame: {"predicate":"exact complete standard_inchi_key equality","query":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","matches":[{"physical_line":3397,"last_physical_line":3397,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","organism_name":"Axinella polypoides","taxon_id":"NCBITaxon:12959","organism_wikidata":"http://www.wikidata.org/entity/Q1931381","reference_doi":"10.1016/J.BCP.2011.06.042","structure_wikidata":"http://www.wikidata.org/entity/Q27109429"},"raw_tsv_record":"JLIDBLDQVAYHNE-LXGGSRJLSA-N\tAxinella polypoides\tNCBITaxon:12959\thttp://www.wikidata.org/entity/Q1931381\t10.1016/J.BCP.2011.06.042\thttp://www.wikidata.org/entity/Q27109429\n","row_sha256":"119dd5f3ac5caa65a102250c191ac23564f412423671f564a32deb093f9ac044"},{"physical_line":3398,"last_physical_line":3398,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","organism_name":"Botrytis cinerea","taxon_id":"NCBITaxon:40559","organism_wikidata":"http://www.wikidata.org/entity/Q1135851","reference_doi":"10.1111/1462-2920.14258","structure_wikidata":"http://www.wikidata.org/entity/Q27109429"},"raw_tsv_record":"JLIDBLDQVAYHNE-LXGGSRJLSA-N\tBotrytis cinerea\tNCBITaxon:40559\thttp://www.wikidata.org/entity/Q1135851\t10.1111/1462-2920.14258\thttp://www.wikidata.org/entity/Q27109429\n","row_sha256":"122e523076a257efd993eaa1b02e66dfbcff8cd6819a4a634c7ccd59f2655aee"},{"physical_line":3399,"last_physical_line":3399,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","organism_name":"Leptosphaeria maculans","taxon_id":"NCBITaxon:5022","organism_wikidata":"http://www.wikidata.org/entity/Q6528396","reference_doi":"10.1016/J.FGB.2019.04.015","structure_wikidata":"http://www.wikidata.org/entity/Q27109429"},"raw_tsv_record":"JLIDBLDQVAYHNE-LXGGSRJLSA-N\tLeptosphaeria maculans\tNCBITaxon:5022\thttp://www.wikidata.org/entity/Q6528396\t10.1016/J.FGB.2019.04.015\thttp://www.wikidata.org/entity/Q27109429\n","row_sha256":"10d0a0dce87cdfa7c3e8d6bf0d23f9e0f70977a1d39efc2d5eb4e2145cb9db9b"}]} |
+| bgc-2242-source-lotus_occurrences | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Physical TSV lines 3397, 3398, 3399 | supports | Complete retained physical source payloads, with each original line and full CSV fields: [{"physical_line":3397,"last_physical_line":3397,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","organism_name":"Axinella polypoides","taxon_id":"NCBITaxon:12959","organism_wikidata":"http://www.wikidata.org/entity/Q1931381","reference_doi":"10.1016/J.BCP.2011.06.042","structure_wikidata":"http://www.wikidata.org/entity/Q27109429"},"row_sha256":"119dd5f3ac5caa65a102250c191ac23564f412423671f564a32deb093f9ac044"},{"physical_line":3398,"last_physical_line":3398,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","organism_name":"Botrytis cinerea","taxon_id":"NCBITaxon:40559","organism_wikidata":"http://www.wikidata.org/entity/Q1135851","reference_doi":"10.1111/1462-2920.14258","structure_wikidata":"http://www.wikidata.org/entity/Q27109429"},"row_sha256":"122e523076a257efd993eaa1b02e66dfbcff8cd6819a4a634c7ccd59f2655aee"},{"physical_line":3399,"last_physical_line":3399,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","organism_name":"Leptosphaeria maculans","taxon_id":"NCBITaxon:5022","organism_wikidata":"http://www.wikidata.org/entity/Q6528396","reference_doi":"10.1016/J.FGB.2019.04.015","structure_wikidata":"http://www.wikidata.org/entity/Q27109429"},"row_sha256":"10d0a0dce87cdfa7c3e8d6bf0d23f9e0f70977a1d39efc2d5eb4e2145cb9db9b"}] |
+| bgc-2242-query-cyanometdb_occurrences | /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json; /records/1/source_scope_inventory/joins/cyanometdb_occurrences | supports | Exact retained query frame: {"predicate":"exact complete standard_inchi_key equality","query":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","matches":[]} |
+| bgc-2242-query-npclassifier | /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json; /records/1/source_scope_inventory/joins/npclassifier | supports | Exact retained query frame: {"predicate":"exact complete standard_inchi_key equality","query":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","matches":[{"physical_line":1127,"last_physical_line":1127,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","smiles":"CC1=CC(=O)CC(C1(/C=C/C(=C\\C(=O)O)/C)O)(C)C","pathway_results":"Terpenoids","superclass_results":"Apocarotenoids","class_results":"Apocarotenoids(ε-)","is_glycoside":"false","model_version":"npclassifier.gnps2.org@2026-09-07"},"raw_tsv_record":"JLIDBLDQVAYHNE-LXGGSRJLSA-N\tCC1=CC(=O)CC(C1(/C=C/C(=C\\C(=O)O)/C)O)(C)C\tTerpenoids\tApocarotenoids\tApocarotenoids(ε-)\tfalse\tnpclassifier.gnps2.org@2026-09-07\n","row_sha256":"a58638a31843131bc5b58bd933f5e292421763a7baa0bee84632d8cf8778e7ed"}]} |
+| bgc-2242-source-npclassifier | /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv; Physical TSV lines 1127 | supports | Complete retained physical source payloads, with each original line and full CSV fields: [{"physical_line":1127,"last_physical_line":1127,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","smiles":"CC1=CC(=O)CC(C1(/C=C/C(=C\\C(=O)O)/C)O)(C)C","pathway_results":"Terpenoids","superclass_results":"Apocarotenoids","class_results":"Apocarotenoids(ε-)","is_glycoside":"false","model_version":"npclassifier.gnps2.org@2026-09-07"},"row_sha256":"a58638a31843131bc5b58bd933f5e292421763a7baa0bee84632d8cf8778e7ed"}] |
+| bgc-2242-query-pubchem_bioassay | /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json; /records/1/source_scope_inventory/joins/pubchem_bioassay | supports | Exact retained query frame: {"predicate":"exact complete standard_inchi_key equality","query":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","matches":[{"physical_line":3342,"last_physical_line":3342,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"1159517","assay_name":"qHTS assay to identify small molecule agonists of the endoplasmic reticulum stress response signaling pathway - cell viability counter screen","assay_type":"Confirmatory","depositor":"824","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"17.187","target_accession":"","reference":""},"raw_tsv_record":"JLIDBLDQVAYHNE-LXGGSRJLSA-N\t5375199\t1159517\tqHTS assay to identify small molecule agonists of the endoplasmic reticulum stress response signaling pathway - cell viability counter screen\tConfirmatory\t824\tInconclusive\tPotency\t17.187\t\t\n","row_sha256":"e88d10e253a55a76361f687fafeb76728ee12f58ad320aec8c89f9409dc41b5e"},{"physical_line":3343,"last_physical_line":3343,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"1671199","assay_name":"Cytochrome P450 Family 1 Subfamily A Member 2 (CYP1A2) small molecule antagonists: luciferase reporter qHTS assay","assay_type":"Confirmatory","depositor":"824","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"62.5906","target_accession":"","reference":""},"raw_tsv_record":"JLIDBLDQVAYHNE-LXGGSRJLSA-N\t5375199\t1671199\tCytochrome P450 Family 1 Subfamily A Member 2 (CYP1A2) small molecule antagonists: luciferase reporter qHTS assay\tConfirmatory\t824\tInconclusive\tPotency\t62.5906\t\t\n","row_sha256":"573742e1803b9ef537dcf7f020243ae4733312e8c17f7c64ef3fdbdd32cd5fd9"},{"physical_line":3344,"last_physical_line":3344,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"1671199","assay_name":"Cytochrome P450 Family 1 Subfamily A Member 2 (CYP1A2) small molecule antagonists: luciferase reporter qHTS assay","assay_type":"Confirmatory","depositor":"824","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"62.5906","target_accession":"EAW99313","reference":""},"raw_tsv_record":"JLIDBLDQVAYHNE-LXGGSRJLSA-N\t5375199\t1671199\tCytochrome P450 Family 1 Subfamily A Member 2 (CYP1A2) small molecule antagonists: luciferase reporter qHTS assay\tConfirmatory\t824\tInconclusive\tPotency\t62.5906\tEAW99313\t\n","row_sha256":"4848f10bd81e15fe4407270a4388463e586fb7a37f518b74af94e7a61fccf46e"},{"physical_line":3345,"last_physical_line":3345,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"1963591","assay_name":"cAMP Responsive Elements (CRE) small molecule antagonists, cell-based qHTS assay","assay_type":"Confirmatory","depositor":"824","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"0.0017","target_accession":"","reference":""},"raw_tsv_record":"JLIDBLDQVAYHNE-LXGGSRJLSA-N\t5375199\t1963591\tcAMP Responsive Elements (CRE) small molecule antagonists, cell-based qHTS assay\tConfirmatory\t824\tInconclusive\tPotency\t0.0017\t\t\n","row_sha256":"0e8ec488c7eac0552dffc2d638099cb577f9cca3b19894b9e7dc87db2883edec"},{"physical_line":3346,"last_physical_line":3346,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"1963591","assay_name":"cAMP Responsive Elements (CRE) small molecule antagonists, cell-based qHTS assay","assay_type":"Confirmatory","depositor":"824","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"0.0017","target_accession":"AAV38316","reference":""},"raw_tsv_record":"JLIDBLDQVAYHNE-LXGGSRJLSA-N\t5375199\t1963591\tcAMP Responsive Elements (CRE) small molecule antagonists, cell-based qHTS assay\tConfirmatory\t824\tInconclusive\tPotency\t0.0017\tAAV38316\t\n","row_sha256":"12756bd3006ca77ffaa06db0427fbe4fd1959a77867f4f7e8aeeb5bbcee26d61"},{"physical_line":3347,"last_physical_line":3347,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"1963593","assay_name":"Adrenergic beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay","assay_type":"Confirmatory","depositor":"824","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"6.7823","target_accession":"","reference":""},"raw_tsv_record":"JLIDBLDQVAYHNE-LXGGSRJLSA-N\t5375199\t1963593\tAdrenergic beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay\tConfirmatory\t824\tInconclusive\tPotency\t6.7823\t\t\n","row_sha256":"f885e0798d0541b586a2050026c84a5d41999edf1699ac928386291d309e56f5"},{"physical_line":3348,"last_physical_line":3348,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"1963593","assay_name":"Adrenergic beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay","assay_type":"Confirmatory","depositor":"824","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"6.7823","target_accession":"NP_000015","reference":""},"raw_tsv_record":"JLIDBLDQVAYHNE-LXGGSRJLSA-N\t5375199\t1963593\tAdrenergic beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay\tConfirmatory\t824\tInconclusive\tPotency\t6.7823\tNP_000015\t\n","row_sha256":"2df0ff2a1a38ba37f557cd8c2dcb34c7f4f71a8c99962c3f9738d744f2c7a5a4"},{"physical_line":3349,"last_physical_line":3349,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"2061107","assay_name":"Adrenergic beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay: Summary","assay_type":"Summary","depositor":"824","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"0.302955","target_accession":"","reference":""},"raw_tsv_record":"JLIDBLDQVAYHNE-LXGGSRJLSA-N\t5375199\t2061107\tAdrenergic beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay: Summary\tSummary\t824\tInconclusive\tPotency\t0.302955\t\t\n","row_sha256":"1222c73c397c46e57f039adf59fae0cf42d61a9bc6b60f6b08cf41536095cbe7"},{"physical_line":3350,"last_physical_line":3350,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"2061107","assay_name":"Adrenergic beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay: Summary","assay_type":"Summary","depositor":"824","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"0.302955","target_accession":"NP_000015","reference":""},"raw_tsv_record":"JLIDBLDQVAYHNE-LXGGSRJLSA-N\t5375199\t2061107\tAdrenergic beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay: Summary\tSummary\t824\tInconclusive\tPotency\t0.302955\tNP_000015\t\n","row_sha256":"c887476600adf09517ffe270e1cb08a0a6bb33e26c4d74a93d58b66991692767"},{"physical_line":3351,"last_physical_line":3351,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"588514","assay_name":"qHTS assay for small molecule agonists of estrogen receptor alpha signaling","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"39.8107","target_accession":"AEP43755","reference":""},"raw_tsv_record":"JLIDBLDQVAYHNE-LXGGSRJLSA-N\t5375199\t588514\tqHTS assay for small molecule agonists of estrogen receptor alpha signaling\tConfirmatory\tNCGC\tInconclusive\tPotency\t39.8107\tAEP43755\t\n","row_sha256":"709fc591da5f10dd4bb7b2bbf3df713e32b4fdd920a2e653d55e561dfca8d20c"},{"physical_line":3352,"last_physical_line":3352,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"588516","assay_name":"qHTS assay for small molecule antagonists of androgen receptor signaling","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"0.631","target_accession":"AAI32976","reference":""},"raw_tsv_record":"JLIDBLDQVAYHNE-LXGGSRJLSA-N\t5375199\t588516\tqHTS assay for small molecule antagonists of androgen receptor signaling\tConfirmatory\tNCGC\tInconclusive\tPotency\t0.631\tAAI32976\t\n","row_sha256":"bc38a79d62c40d1690257c57e74447e8d17b3a3c57b25939c6a330b610eba0a1"},{"physical_line":3353,"last_physical_line":3353,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"651741","assay_name":"qHTS assay for small molecule agonists of the antioxidant response element (ARE) signaling pathway","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Active","activity_name":"Potency","activity_value_um":"37.578","target_accession":"NP_006155","reference":""},"raw_tsv_record":"JLIDBLDQVAYHNE-LXGGSRJLSA-N\t5375199\t651741\tqHTS assay for small molecule agonists of the antioxidant response element (ARE) signaling pathway\tConfirmatory\tNCGC\tActive\tPotency\t37.578\tNP_006155\t\n","row_sha256":"92e7fbab0ce29ca8d75359e519f2025e8130a29ff879e271f5a96387c3eaa553"},{"physical_line":3354,"last_physical_line":3354,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"651758","assay_name":"qHTS assay to identify small molecules that stimulate interleukin-8 (IL-8) secretion","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"74.978","target_accession":"AAA59158","reference":""},"raw_tsv_record":"JLIDBLDQVAYHNE-LXGGSRJLSA-N\t5375199\t651758\tqHTS assay to identify small molecules that stimulate interleukin-8 (IL-8) secretion\tConfirmatory\tNCGC\tInconclusive\tPotency\t74.978\tAAA59158\t\n","row_sha256":"7381e6a7c53012eac3189355a746c55f306f91d9a330b7fdba1507e89a862934"},{"physical_line":3355,"last_physical_line":3355,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"926","assay_name":"qHTS Assay for Agonists of the Thyroid Stimulating Hormone Receptor","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"0.0316","target_accession":"AAR07906","reference":""},"raw_tsv_record":"JLIDBLDQVAYHNE-LXGGSRJLSA-N\t5375199\t926\tqHTS Assay for Agonists of the Thyroid Stimulating Hormone Receptor\tConfirmatory\tNCGC\tInconclusive\tPotency\t0.0316\tAAR07906\t\n","row_sha256":"fb764d47e3a21083fe7e524a403c2e38d2bafb9c5a9f68cc75362b69cf3b25c7"},{"physical_line":3356,"last_physical_line":3356,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"938","assay_name":"qHTS Assay for Agonists of the Thyroid Stimulating Hormone Receptor: Activators of Intracellular cAMP Concentrations in Parental HEK 293","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inactive","activity_name":"Potency","activity_value_um":"0.0316","target_accession":"AAR07906","reference":""},"raw_tsv_record":"JLIDBLDQVAYHNE-LXGGSRJLSA-N\t5375199\t938\tqHTS Assay for Agonists of the Thyroid Stimulating Hormone Receptor: Activators of Intracellular cAMP Concentrations in Parental HEK 293\tConfirmatory\tNCGC\tInactive\tPotency\t0.0316\tAAR07906\t\n","row_sha256":"1812af7477f5fe4cfc1da3ed39cfe4a9f370b56c1c9e19a2bda28c6c8ee0a577"}]} |
+| bgc-2242-source-pubchem_bioassay | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; Physical TSV lines 3342, 3343, 3344, 3345, 3346, 3347, 3348, 3349, 3350, 3351, 3352, 3353, 3354, 3355, 3356 | supports | Complete retained physical source payloads, with each original line and full CSV fields: [{"physical_line":3342,"last_physical_line":3342,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"1159517","assay_name":"qHTS assay to identify small molecule agonists of the endoplasmic reticulum stress response signaling pathway - cell viability counter screen","assay_type":"Confirmatory","depositor":"824","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"17.187","target_accession":"","reference":""},"row_sha256":"e88d10e253a55a76361f687fafeb76728ee12f58ad320aec8c89f9409dc41b5e"},{"physical_line":3343,"last_physical_line":3343,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"1671199","assay_name":"Cytochrome P450 Family 1 Subfamily A Member 2 (CYP1A2) small molecule antagonists: luciferase reporter qHTS assay","assay_type":"Confirmatory","depositor":"824","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"62.5906","target_accession":"","reference":""},"row_sha256":"573742e1803b9ef537dcf7f020243ae4733312e8c17f7c64ef3fdbdd32cd5fd9"},{"physical_line":3344,"last_physical_line":3344,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"1671199","assay_name":"Cytochrome P450 Family 1 Subfamily A Member 2 (CYP1A2) small molecule antagonists: luciferase reporter qHTS assay","assay_type":"Confirmatory","depositor":"824","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"62.5906","target_accession":"EAW99313","reference":""},"row_sha256":"4848f10bd81e15fe4407270a4388463e586fb7a37f518b74af94e7a61fccf46e"},{"physical_line":3345,"last_physical_line":3345,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"1963591","assay_name":"cAMP Responsive Elements (CRE) small molecule antagonists, cell-based qHTS assay","assay_type":"Confirmatory","depositor":"824","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"0.0017","target_accession":"","reference":""},"row_sha256":"0e8ec488c7eac0552dffc2d638099cb577f9cca3b19894b9e7dc87db2883edec"},{"physical_line":3346,"last_physical_line":3346,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"1963591","assay_name":"cAMP Responsive Elements (CRE) small molecule antagonists, cell-based qHTS assay","assay_type":"Confirmatory","depositor":"824","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"0.0017","target_accession":"AAV38316","reference":""},"row_sha256":"12756bd3006ca77ffaa06db0427fbe4fd1959a77867f4f7e8aeeb5bbcee26d61"},{"physical_line":3347,"last_physical_line":3347,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"1963593","assay_name":"Adrenergic beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay","assay_type":"Confirmatory","depositor":"824","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"6.7823","target_accession":"","reference":""},"row_sha256":"f885e0798d0541b586a2050026c84a5d41999edf1699ac928386291d309e56f5"},{"physical_line":3348,"last_physical_line":3348,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"1963593","assay_name":"Adrenergic beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay","assay_type":"Confirmatory","depositor":"824","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"6.7823","target_accession":"NP_000015","reference":""},"row_sha256":"2df0ff2a1a38ba37f557cd8c2dcb34c7f4f71a8c99962c3f9738d744f2c7a5a4"},{"physical_line":3349,"last_physical_line":3349,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"2061107","assay_name":"Adrenergic beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay: Summary","assay_type":"Summary","depositor":"824","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"0.302955","target_accession":"","reference":""},"row_sha256":"1222c73c397c46e57f039adf59fae0cf42d61a9bc6b60f6b08cf41536095cbe7"},{"physical_line":3350,"last_physical_line":3350,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"2061107","assay_name":"Adrenergic beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay: Summary","assay_type":"Summary","depositor":"824","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"0.302955","target_accession":"NP_000015","reference":""},"row_sha256":"c887476600adf09517ffe270e1cb08a0a6bb33e26c4d74a93d58b66991692767"},{"physical_line":3351,"last_physical_line":3351,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"588514","assay_name":"qHTS assay for small molecule agonists of estrogen receptor alpha signaling","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"39.8107","target_accession":"AEP43755","reference":""},"row_sha256":"709fc591da5f10dd4bb7b2bbf3df713e32b4fdd920a2e653d55e561dfca8d20c"},{"physical_line":3352,"last_physical_line":3352,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"588516","assay_name":"qHTS assay for small molecule antagonists of androgen receptor signaling","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"0.631","target_accession":"AAI32976","reference":""},"row_sha256":"bc38a79d62c40d1690257c57e74447e8d17b3a3c57b25939c6a330b610eba0a1"},{"physical_line":3353,"last_physical_line":3353,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"651741","assay_name":"qHTS assay for small molecule agonists of the antioxidant response element (ARE) signaling pathway","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Active","activity_name":"Potency","activity_value_um":"37.578","target_accession":"NP_006155","reference":""},"row_sha256":"92e7fbab0ce29ca8d75359e519f2025e8130a29ff879e271f5a96387c3eaa553"},{"physical_line":3354,"last_physical_line":3354,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"651758","assay_name":"qHTS assay to identify small molecules that stimulate interleukin-8 (IL-8) secretion","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"74.978","target_accession":"AAA59158","reference":""},"row_sha256":"7381e6a7c53012eac3189355a746c55f306f91d9a330b7fdba1507e89a862934"},{"physical_line":3355,"last_physical_line":3355,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"926","assay_name":"qHTS Assay for Agonists of the Thyroid Stimulating Hormone Receptor","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"0.0316","target_accession":"AAR07906","reference":""},"row_sha256":"fb764d47e3a21083fe7e524a403c2e38d2bafb9c5a9f68cc75362b69cf3b25c7"},{"physical_line":3356,"last_physical_line":3356,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"938","assay_name":"qHTS Assay for Agonists of the Thyroid Stimulating Hormone Receptor: Activators of Intracellular cAMP Concentrations in Parental HEK 293","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inactive","activity_name":"Potency","activity_value_um":"0.0316","target_accession":"AAR07906","reference":""},"row_sha256":"1812af7477f5fe4cfc1da3ed39cfe4a9f370b56c1c9e19a2bda28c6c8ee0a577"}] |
+| bgc-2242-query-bindingdb_targets | /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json; /records/1/source_scope_inventory/joins/bindingdb_targets | supports | Exact retained query frame: {"predicate":"exact complete standard_inchi_key equality","query":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","matches":[]} |
+| bgc-2242-query-antibioticmech_inchikeys | /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json; /records/1/source_scope_inventory/joins/antibioticmech_inchikeys | supports | Exact retained query frame: {"predicate":"exact complete standard_inchi_key equality","query":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","matches":[]} |
+| bgc-2242-query-chebi_origins | /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json; /records/1/source_scope_inventory/joins/chebi_origins | supports | Exact retained query frame: {"predicate":"exact chebi_id from exact full-key structure rows","query":["CHEBI:22152"],"matches":[]} |
+| bgc-2242-cached-taxonomy | /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-source-inventory-DATA-001.json; /cached_taxonomy/whole_stanzas/0; /cached_taxonomy/whole_stanzas/4; /cached_taxonomy/whole_stanzas/7; /cached_taxonomy/whole_stanzas/21 | supports | Complete retained cached stanza scope: [{"id":"NCBITaxon:5022","physical_line":7766,"complete_stanza":"[Term]\nid: NCBITaxon:5022\nname: Plenodomus lingam\nsynonym: \"Leptosphaeria maculans\" EXACT []\nsynonym: \"Phoma lingam\" EXACT []\nsynonym: \"Plenodomus rabenhorstii\" EXACT []\nsynonym: \"Sphaeria lingam\" EXACT []\n\n"},{"id":"NCBITaxon:12959","physical_line":10570,"complete_stanza":"[Term]\nid: NCBITaxon:12959\nname: Axinella polypoides\n\n"},{"id":"NCBITaxon:40559","physical_line":18031,"complete_stanza":"[Term]\nid: NCBITaxon:40559\nname: Botrytis cinerea\nsynonym: \"Botryotinia fuckeliana\" EXACT []\nsynonym: \"Botrytis cinerea Pers., 1801\" EXACT []\nsynonym: \"Peziza fuckeliana\" EXACT []\nsynonym: \"Sclerotinia fuckeliana\" EXACT []\n\n"},{"id":"NCBITaxon:985895","physical_line":114258,"complete_stanza":"[Term]\nid: NCBITaxon:985895\nname: Plenodomus lingam JN3\nsynonym: \"Leptosphaeria maculans v23.1.3\" EXACT []\n\n"}]. Cached names/synonyms do not constitute a fresh taxonomy request. |
+| bgc-2242-source-routes | /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json; /records/1/source_scope_inventory/source_taxa; /records/1/source_scope_inventory/forward_taxon_merge_matches; /records/1/source_scope_inventory/nonorganism_matches | supports | Exact selected-record source taxa and retained forward/nonorganism route sets: {"source_taxa":["NCBITaxon:12959","NCBITaxon:40559","NCBITaxon:5022","NCBITaxon:985895"],"forward_taxon_merge_matches":[],"nonorganism_matches":[]} |
+| bgc-2242-review-skill | /private/tmp/npm-record-reviews-20261021/.claude/skills/review-yaml-record/SKILL.md; Evidence Rules; Workflow; Output | supports | Maintained local review recipe requires claim-specific source support and qualified completion; external retrieval is overridden by the absolute no-request instruction. |
+| bgc-2242-review-profile | /private/tmp/npm-record-reviews-20261021/docs/record-review-profile.md; Complete maintained review profile | supports | Maintained dimensions, producer/occurrence and source-versus-computed scope, one-record review and partial completion requirements. |
+| bgc-2242-structure-schema | /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml; lines 376–432 | supports | ChemicalStructure stereo flag description and ComputedClassification named/versioned output semantics; is_glycoside is a computed boolean, not a source assertion. |
+| bgc-2242-stereo-method | /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py; lines 145–175 | supports | Maintained MIBiG extractor derives standardized identifiers and the stereo_complete flag from FindMolChiralCenters including unassigned centres; no experiment or complete geometric-stereo authentication is performed by this method. |
+| bgc-2242-classification-seeder | /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py; lines 980–1030 | supports | Seeder preserves the selected structure, exact ChEBI definition and named/versioned classifier results, including the literal glycoside prediction. |
+| bgc-2242-activity-seeder | /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py; lines 1309–1382 | supports | Maintained writer preserves Active/Inactive/other outcome distinctions, OTHER endpoint names, literal values/units and accession limitations; only explicitly active classified written observations can back a summary. |
+| root-native-strict_ten | /private/tmp/npm-native-checks/batch-225/validate-strict-selected10-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-225/native-current225-five-gates-execution-001.json | supports | Closed-schema validation of the ten selected owners and any referenced components reported zero errors. |
+| root-native-strict_full | /private/tmp/npm-native-checks/batch-225/validate-all-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-225/native-current225-five-gates-execution-001.json | supports | Full closed-schema validation scanned all 3116 owners and reported zero errors. |
+| root-native-lockfile | /private/tmp/npm-native-checks/batch-225/verify-corpus-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-225/native-current225-five-gates-execution-001.json | supports | PATHS.tsv and filesystem agree on all 3116 records and their pinned filing pathways. |
+| root-native-reproduction | /private/tmp/npm-native-checks/batch-225/verify-reproduction-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-225/native-current225-five-gates-execution-001.json | supports | All 3116 records reproduce byte-identically from the retained inventories and carried curator content. This does not independently validate curator science. |
+| root-native-queue | /private/tmp/npm-native-checks/batch-225/review-queue-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-225/native-current225-five-gates-execution-001.json | supports | The full local queue contains 8922 diagnostic rows; selected-target entries were inspected. Queue diagnostics are leads, not scientific sign-off. |
+
+## Limits And Additional Notes
+
+- External identifiers, taxonomy, accessions and primary publications were not refreshed under the absolute no-request instruction; historical and database assertions remain attributed.
+- Full QC and complete OAK authority coverage were unavailable. Local gates and parsing establish their declared mechanical scope only.
+- Negative source joins apply only to exact retained predicates and snapshots. Shared loci, citations and companions do not transfer compound-specific claims.
+- No additional molecular or YAML parse occurred during fragment authoring. Source records, raw snapshots, native curation status and histories were not edited.
+- The whole selected owner was read, but scientific completion is partial because full QC, complete ontology authority coverage and external source verification were unavailable. No native status or history was changed.
+- The branch uses cached base ce6a5498df5be51116bd5e0c119023ee62bb5464. Fresh origin/main verification and publication are deferred because the user prohibits all external requests.
+- Complete source payloads and personal/delegated direct-context whole-reading attribution are retained in the pinned source notes. Assigned actual intakes, complete selected owners/history and every paired saved molecular table were personally read.
+- Two original batch-level undefined-stereo warnings remain globally unassigned. True comparison flags and a complete correspondence do not override full_graph_identity_established:false.
+- Saved review coverage is distinct from the native SEEDED/REVIEWED curation state. Proposed actions are not performed edits.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261103T154044Z-2-cis-abscisic-acid
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'Local evidence review: 2-cis-abscisic acid'
+started_at: '2026-11-03T15:06:55.207618Z'
+finished_at: '2026-11-03T15:40:44.968513Z'
+reviewer:
+  identity: Codex root with native_checks, bgc_science and review_support peer agents
+  kind: agent
+  independence: independent
+  independence_basis: This review team inspected existing owner and retained source
+    bytes without editing them; scientific fragments were cross-checked separately
+    from their author. Local validation is not treated as scientific proof.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: The exact CHEBI:22152 join preserves 2-cis-abscisic acid with a specified
+  2Z,4E side chain and one unspecified tetrahedral centre. Fifteen written assay observations
+  retain their distinct outcomes and endpoint values without an unsupported activity
+  class. Producer-strain, occurrence and source-classification scopes remain separate;
+  external verification is unavailable.
+source:
+  git_revision: ce6a5498df5be51116bd5e0c119023ee62bb5464
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: AGENTS.md
+    sha256: 69e4037f8dc97d4b00bb7bb83b41ceca025f6ef578d5c0bf8086f3400becde0b
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: curation/pubchem_bioassay_exclusions.tsv
+    sha256: 76f9cbb17e62a270afed637b5058a553cfe85c754c6c9ec406635f12dae572fa
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/terpenoids/2-cis-abscisic-acid.yaml
+    sha256: 161e554325fa15905f71ad257a1ea6ba1d4a8e7760ea8377852c258679a70bc7
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/bioassay_exclusions.py
+    sha256: 4a4176e072ac9759aa8a9e88300d7e2de5aaf4ebf30b5c42fcf4c9c0b6cebbb4
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete NaturalProductRecord, including all present scientific
+    claims, history and declared mechanisms; external verification remains unavailable.
+  selection: Campaign path order 2242; one of the next ten uncovered paths selected
+    from the 3116-record corpus. Membership uses the canonical validated catalogue
+    plus retained committed campaign bundles.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CHEBI:22152
+targets:
+- target_id: CHEBI:22152
+  path: data/natural_products/terpenoids/2-cis-abscisic-acid.yaml
+  label: 2-cis-abscisic acid
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained harmonization generator; seeded fields are corrected through
+      maintained inputs and validated regeneration.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Retained MIBiG structure, producer and compound-specific locus assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/npclassifier.tsv
+    role: Pinned computed classification and filing assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Maintained extraction of MIBiG compound names, structures, stereochemistry
+      flags and source provenance.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: Retained ChEBI identifiers, definitions and exact chemical forms.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Retained cited occurrence assertions, distinct from demonstrated production.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/pubchem_bioassay.tsv
+    role: Retained assay rows or empty-assay sentinels; source outcome and title alone
+      do not establish mechanism.
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/pubchem_bioassay_exclusions.tsv
+    role: Exact assay identity exclusion decisions for selected/direct source context.
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/bioassay_exclusions.py
+    role: Maintained source-row identity/digest guard; text-only dependency.
+  ownership_note: This review proposes no record edit. Source corrections belong in
+    maintained inventories, implemented curation tables, extractors or the seeder;
+    generated pages are not owners.
+checks:
+- check_id: root-native-strict_ten
+  name: strict_ten
+  status: passed
+  required: true
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  target_ids:
+  - CHEBI:22152
+  command: just validate-strict data/natural_products/terpenoids/17-deoxyaphidicolin.yaml
+    data/natural_products/terpenoids/2-cis-abscisic-acid.yaml data/natural_products/terpenoids/2-hydroxysorangiadenosine.yaml
+    data/natural_products/terpenoids/21-h-hopane-3beta-22-diol.yaml data/natural_products/terpenoids/2s-3r-9r-pristinol.yaml
+    data/natural_products/terpenoids/3-decalonectrin.yaml data/natural_products/terpenoids/3-deoxyaphidicolin.yaml
+    data/natural_products/terpenoids/4-acetoxytetrahydrobotryslactone.yaml data/natural_products/terpenoids/4-acetylnivalenol.yaml
+    data/natural_products/terpenoids/5-9-10-labda-8-20-13-dien-15-yl-diphosphate.yaml
+    --workers 1 --out /private/tmp/npm-native-checks/batch-225/validate-strict-selected10-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_ten
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-strict_full
+  name: strict_full
+  status: passed
+  required: true
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  target_ids:
+  - CHEBI:22152
+  command: just validate-all --workers 1 --out /private/tmp/npm-native-checks/batch-225/validate-all-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_full
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-lockfile
+  name: lockfile
+  status: passed
+  required: true
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  target_ids:
+  - CHEBI:22152
+  command: just verify-corpus --summary
+  exit_code: 0
+  evidence_ids:
+  - root-native-lockfile
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-reproduction
+  name: reproduction
+  status: passed
+  required: true
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  target_ids:
+  - CHEBI:22152
+  command: just verify-reproduction
+  exit_code: 0
+  evidence_ids:
+  - root-native-reproduction
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-queue
+  name: queue
+  status: passed
+  required: true
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  target_ids:
+  - CHEBI:22152
+  command: just review-queue --tsv /private/tmp/npm-native-checks/batch-225/review-queue-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-queue
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-full-qc
+  name: Full just qc
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:22152
+  summary: 'Not run under the external-request prohibition: the complete recipe includes
+    upstream vendored synchronization. The five executed local checks are recorded
+    separately.'
+- check_id: root-ontology-authorities
+  name: Complete OAK identifier/label authority check
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:22152
+  summary: Complete offline ontology authority coverage was not established for this
+    run; no ontology retrieval or remote resolution was attempted. Retained taxonomy
+    evidence has only its explicitly stated local scope.
+- check_id: root-primary-and-live-sources
+  name: Primary literature and current structured database/identifier verification
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:22152
+  summary: All external requests are prohibited by the user. Fresh database and identifier
+    verification and complete primary-literature coverage are unavailable. Any retained
+    original literature actually inspected is recorded separately with its historical
+    scope.
+evidence:
+- evidence_id: bgc-2242-owner
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/terpenoids/2-cis-abscisic-acid.yaml
+  locator: Whole owner plaintext and complete curation_history
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: Complete 2-cis-abscisic acid owner with 4 written history events, current
+    full key JLIDBLDQVAYHNE-LXGGSRJLSA-N and native status SEEDED.
+  snapshot_sha256: 161e554325fa15905f71ad257a1ea6ba1d4a8e7760ea8377852c258679a70bc7
+- evidence_id: bgc-2242-capture
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225/owner-capture-DATA-001.json
+  locator: /records/1/owner_pin; /records/1/owner_document
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: Complete saved owner and exact raw pin for order 2242.
+  snapshot_sha256: 0e9d3e869f9ce737ea339dd4952cbb014b2b826c4f2822ee7db6b4f5a1a28533
+- evidence_id: bgc-2242-intake
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225/intakes/2242-inspect-001.json
+  locator: /source; /targets
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: Actual inspection-only intake retains one target CHEBI:22152 and 39 source
+    input placements with owner paths and ownership notes.
+  snapshot_sha256: 594a356806dbe85047bce210abc586370de701d612f0f0bc795047c8628d894a
+- evidence_id: bgc-2242-intake-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225/root-intake-ready-001.json
+  locator: /status; /intake_summary; /input_plan
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: ROOT accepts the original ten canonical intakes and their current exact
+    source maps; this is intake authority, not a scientific verdict.
+  snapshot_sha256: 6f3cca33d9d1304a058b16e62e10dd34951397c511d1e28efd688778eb0a591f
+- evidence_id: bgc-2242-grounding-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225/owner-capture-DATA-001.json
+  locator: /records/1/owner_document/identifier; /records/1/owner_document/label;
+    /records/1/owner_document/chemical_structure; /records/1/owner_document/definition;
+    /records/1/owner_document/definition_source; /records/1/owner_document/source_concepts;
+    /records/1/owner_document/grounding_status; /records/1/owner_document/xrefs; /records/1/owner_document/discussions
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: Written identity, structure, grounding and any definition, cross-reference
+    or source discussion are retained exactly. {"identifier":"CHEBI:22152","grounding_status":"EXACT","definition":"A
+    member of the class of abscisic acids in which the double bond betweeen positions
+    2 and 3 has cis- (natural) geometry.","definition_source":"CHEBI:22152","discussions":[{"discussion_id":"name-disagreement","kind":"CONTROVERSY","status":"OPEN","prompt":"ChEBI
+    calls this structure '2-cis-abscisic acid' and MIBiG calls it 'abscisic acid'.
+    They share a Standard InChIKey, so if the names denote different compounds then
+    one upstream record has the wrong structure. Check which."}]}
+  snapshot_sha256: 0e9d3e869f9ce737ea339dd4952cbb014b2b826c4f2822ee7db6b4f5a1a28533
+- evidence_id: bgc-2242-origin-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225/owner-capture-DATA-001.json
+  locator: /records/1/owner_document/producer_organisms; /records/1/owner_document/biosynthetic_gene_clusters
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: 'Written producer and locus assertions, grades, methods, references and
+    any curator attribution: {"producer_organisms":[{"taxon_id":"NCBITaxon:985895","taxon_label":"Leptosphaeria
+    maculans JN3","evidence_basis":"SOURCE_ASSERTION","biosynthetic_gene_cluster":"mibig:BGC0001899","source":"MIBIG","source_version":"3","notes":"Locus
+    evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED; this
+    field grades the taxon claim, which is a different question.","evidence":[{"reference":"PMID:31034868","evidence_type":"DATABASE_ASSERTION","notes":"MIBiG
+    BGC0001899 entry version 3; citation taken from the entry level"}]}],"biosynthetic_gene_clusters":[{"accession":"mibig:BGC0001899","entry_version":"3","entry_status":"active","organism_taxon_id":"NCBITaxon:985895","organism_label":"Leptosphaeria
+    maculans JN3","evidence":[{"reference":"PMID:31034868","evidence_type":"DATABASE_ASSERTION","notes":"MIBiG
+    BGC0001899 entry version 3; citation taken from the entry level"}],"genome_accession":"genbank:FP929136.1","locus_from":752399,"locus_to":807208,"bgc_class":["PKS"],"link_evidence_basis":"CLUSTER_UNSTATED"}]}'
+  snapshot_sha256: 0e9d3e869f9ce737ea339dd4952cbb014b2b826c4f2822ee7db6b4f5a1a28533
+- evidence_id: bgc-2242-occurrence-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225/owner-capture-DATA-001.json
+  locator: /records/1/owner_document/occurrences; /records/1/owner_document/occurrence_taxon_groups
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: 'Written occurrence scope: {"occurrences":[{"taxon_id":"NCBITaxon:12959","taxon_label":"Axinella
+    polypoides","taxon_source":"NCBITaxon","source":"LOTUS","evidence":[{"reference":"DOI:10.1016/J.BCP.2011.06.042","evidence_type":"DATABASE_ASSERTION","notes":"LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it."}],"notes":"Wikidata
+    organism http://www.wikidata.org/entity/Q1931381"},{"taxon_id":"NCBITaxon:40559","taxon_label":"Botrytis
+    cinerea","taxon_source":"NCBITaxon","source":"LOTUS","evidence":[{"reference":"DOI:10.1111/1462-2920.14258","evidence_type":"DATABASE_ASSERTION","notes":"LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it."}],"notes":"Wikidata
+    organism http://www.wikidata.org/entity/Q1135851"},{"taxon_id":"NCBITaxon:5022","taxon_label":"Leptosphaeria
+    maculans","taxon_source":"NCBITaxon","source":"LOTUS","evidence":[{"reference":"DOI:10.1016/J.FGB.2019.04.015","evidence_type":"DATABASE_ASSERTION","notes":"LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it."}],"notes":"Wikidata
+    organism http://www.wikidata.org/entity/Q6528396"}],"occurrence_taxon_groups":["FUNGAL","SPONGE"]}.
+    No occurrence fields are inferred when absent.'
+  snapshot_sha256: 0e9d3e869f9ce737ea339dd4952cbb014b2b826c4f2822ee7db6b4f5a1a28533
+- evidence_id: bgc-2242-assay-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225/owner-capture-DATA-001.json
+  locator: /records/1/owner_document
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: 'Written activity and mechanism fields: {"bioactivities":[{"assay":"Adrenergic
+    beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay","evidence":[{"reference":"pubchem.aid:1963593","evidence_type":"DATABASE_ASSERTION","notes":"PubChem
+    BioAssay AID 1963593, deposited by 824; assay type Confirmatory. Source outcome:
+    Inconclusive. Source endpoint: Potency."}],"call":"NOT_DETERMINED","measurement_type":"OTHER","value":6.7823,"units":"uM"},{"assay":"Adrenergic
+    beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay","evidence":[{"reference":"pubchem.aid:1963593","evidence_type":"DATABASE_ASSERTION","notes":"PubChem
+    BioAssay AID 1963593, deposited by 824; assay type Confirmatory. Source outcome:
+    Inconclusive. Source endpoint: Potency. Target accession NP_000015 was left ungrounded
+    because PubChem did not provide a UniProtKB accession."}],"call":"NOT_DETERMINED","measurement_type":"OTHER","value":6.7823,"units":"uM"},{"assay":"Adrenergic
+    beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay: Summary","evidence":[{"reference":"pubchem.aid:2061107","evidence_type":"DATABASE_ASSERTION","notes":"PubChem
+    BioAssay AID 2061107, deposited by 824; assay type Summary. Source outcome: Inconclusive.
+    Source endpoint: Potency."}],"call":"NOT_DETERMINED","measurement_type":"OTHER","value":0.302955,"units":"uM"},{"assay":"Adrenergic
+    beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay: Summary","evidence":[{"reference":"pubchem.aid:2061107","evidence_type":"DATABASE_ASSERTION","notes":"PubChem
+    BioAssay AID 2061107, deposited by 824; assay type Summary. Source outcome: Inconclusive.
+    Source endpoint: Potency. Target accession NP_000015 was left ungrounded because
+    PubChem did not provide a UniProtKB accession."}],"call":"NOT_DETERMINED","measurement_type":"OTHER","value":0.302955,"units":"uM"},{"assay":"Cytochrome
+    P450 Family 1 Subfamily A Member 2 (CYP1A2) small molecule antagonists: luciferase
+    reporter qHTS assay","evidence":[{"reference":"pubchem.aid:1671199","evidence_type":"DATABASE_ASSERTION","notes":"PubChem
+    BioAssay AID 1671199, deposited by 824; assay type Confirmatory. Source outcome:
+    Inconclusive. Source endpoint: Potency."}],"call":"NOT_DETERMINED","measurement_type":"OTHER","value":62.5906,"units":"uM"},{"assay":"Cytochrome
+    P450 Family 1 Subfamily A Member 2 (CYP1A2) small molecule antagonists: luciferase
+    reporter qHTS assay","evidence":[{"reference":"pubchem.aid:1671199","evidence_type":"DATABASE_ASSERTION","notes":"PubChem
+    BioAssay AID 1671199, deposited by 824; assay type Confirmatory. Source outcome:
+    Inconclusive. Source endpoint: Potency. Target accession EAW99313 was left ungrounded
+    because PubChem did not provide a UniProtKB accession."}],"call":"NOT_DETERMINED","measurement_type":"OTHER","value":62.5906,"units":"uM"},{"assay":"cAMP
+    Responsive Elements (CRE) small molecule antagonists, cell-based qHTS assay","evidence":[{"reference":"pubchem.aid:1963591","evidence_type":"DATABASE_ASSERTION","notes":"PubChem
+    BioAssay AID 1963591, deposited by 824; assay type Confirmatory. Source outcome:
+    Inconclusive. Source endpoint: Potency."}],"call":"NOT_DETERMINED","measurement_type":"OTHER","value":0.0017,"units":"uM"},{"assay":"cAMP
+    Responsive Elements (CRE) small molecule antagonists, cell-based qHTS assay","evidence":[{"reference":"pubchem.aid:1963591","evidence_type":"DATABASE_ASSERTION","notes":"PubChem
+    BioAssay AID 1963591, deposited by 824; assay type Confirmatory. Source outcome:
+    Inconclusive. Source endpoint: Potency. Target accession AAV38316 was left ungrounded
+    because PubChem did not provide a UniProtKB accession."}],"call":"NOT_DETERMINED","measurement_type":"OTHER","value":0.0017,"units":"uM"},{"assay":"qHTS
+    Assay for Agonists of the Thyroid Stimulating Hormone Receptor","evidence":[{"reference":"pubchem.aid:926","evidence_type":"DATABASE_ASSERTION","notes":"PubChem
+    BioAssay AID 926, deposited by NCGC; assay type Confirmatory. Source outcome:
+    Inconclusive. Source endpoint: Potency. Target accession AAR07906 was left ungrounded
+    because PubChem did not provide a UniProtKB accession."}],"call":"NOT_DETERMINED","measurement_type":"OTHER","value":0.0316,"units":"uM"},{"assay":"qHTS
+    Assay for Agonists of the Thyroid Stimulating Hormone Receptor: Activators of
+    Intracellular cAMP Concentrations in Parental HEK 293","evidence":[{"reference":"pubchem.aid:938","evidence_type":"DATABASE_ASSERTION","notes":"PubChem
+    BioAssay AID 938, deposited by NCGC; assay type Confirmatory. Source endpoint:
+    Potency. Target accession AAR07906 was left ungrounded because PubChem did not
+    provide a UniProtKB accession."}],"call":"INACTIVE","measurement_type":"OTHER","value":0.0316,"units":"uM"},{"assay":"qHTS
+    assay for small molecule agonists of estrogen receptor alpha signaling","evidence":[{"reference":"pubchem.aid:588514","evidence_type":"DATABASE_ASSERTION","notes":"PubChem
+    BioAssay AID 588514, deposited by NCGC; assay type Confirmatory. Source outcome:
+    Inconclusive. Source endpoint: Potency. Target accession AEP43755 was left ungrounded
+    because PubChem did not provide a UniProtKB accession."}],"call":"NOT_DETERMINED","measurement_type":"OTHER","value":39.8107,"units":"uM"},{"assay":"qHTS
+    assay for small molecule agonists of the antioxidant response element (ARE) signaling
+    pathway","evidence":[{"reference":"pubchem.aid:651741","evidence_type":"DATABASE_ASSERTION","notes":"PubChem
+    BioAssay AID 651741, deposited by NCGC; assay type Confirmatory. Source endpoint:
+    Potency. Target accession NP_006155 was left ungrounded because PubChem did not
+    provide a UniProtKB accession."}],"call":"ACTIVE","measurement_type":"OTHER","value":37.578,"units":"uM"},{"assay":"qHTS
+    assay for small molecule antagonists of androgen receptor signaling","evidence":[{"reference":"pubchem.aid:588516","evidence_type":"DATABASE_ASSERTION","notes":"PubChem
+    BioAssay AID 588516, deposited by NCGC; assay type Confirmatory. Source outcome:
+    Inconclusive. Source endpoint: Potency. Target accession AAI32976 was left ungrounded
+    because PubChem did not provide a UniProtKB accession."}],"call":"NOT_DETERMINED","measurement_type":"OTHER","value":0.631,"units":"uM"},{"assay":"qHTS
+    assay to identify small molecule agonists of the endoplasmic reticulum stress
+    response signaling pathway - cell viability counter screen","evidence":[{"reference":"pubchem.aid:1159517","evidence_type":"DATABASE_ASSERTION","notes":"PubChem
+    BioAssay AID 1159517, deposited by 824; assay type Confirmatory. Source outcome:
+    Inconclusive. Source endpoint: Potency."}],"call":"NOT_DETERMINED","measurement_type":"OTHER","value":17.187,"units":"uM"},{"assay":"qHTS
+    assay to identify small molecules that stimulate interleukin-8 (IL-8) secretion","evidence":[{"reference":"pubchem.aid:651758","evidence_type":"DATABASE_ASSERTION","notes":"PubChem
+    BioAssay AID 651758, deposited by NCGC; assay type Confirmatory. Source outcome:
+    Inconclusive. Source endpoint: Potency. Target accession AAA59158 was left ungrounded
+    because PubChem did not provide a UniProtKB accession."}],"call":"NOT_DETERMINED","measurement_type":"OTHER","value":74.978,"units":"uM"}]}.
+    Mechanism roots present: [].'
+  snapshot_sha256: 0e9d3e869f9ce737ea339dd4952cbb014b2b826c4f2822ee7db6b4f5a1a28533
+- evidence_id: bgc-2242-classification-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225/owner-capture-DATA-001.json
+  locator: /records/1/owner_document/np_pathway; /records/1/owner_document/np_classification;
+    /records/1/owner_document/bgc_class; /records/1/owner_document/biosynthesis_origin;
+    /records/1/owner_document/producer_taxon_groups; /records/1/owner_document/occurrence_taxon_groups
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: 'Retained owner classifications and taxon-group labels: {"np_pathway":"TERPENOIDS","np_classification":{"tool":"NPClassifier","tool_version":"npclassifier.gnps2.org@2026-09-07","pathway_results":["Terpenoids"],"superclass_results":["Apocarotenoids"],"class_results":["Apocarotenoids(ε-)"],"is_glycoside":false},"bgc_class":["PKS"],"biosynthesis_origin":"NATURAL_PRODUCT","producer_taxon_groups":["FUNGAL"],"occurrence_taxon_groups":["FUNGAL","SPONGE"]}'
+  snapshot_sha256: 0e9d3e869f9ce737ea339dd4952cbb014b2b826c4f2822ee7db6b4f5a1a28533
+- evidence_id: bgc-2242-source-plan
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json
+  locator: /records/1
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: Accepted selected-record source projection, complete raw history, exact
+    joins and proposed input map; the actual intake is separately cited.
+  snapshot_sha256: ea79b0d33c11111a64d6c66fb00ee86bd6a5db54bc5c2277f8e767926e012e9f
+- evidence_id: bgc-2242-plan-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225/root-input-plan-acceptance-001.json
+  locator: /status; /plan; /inventory; /source_notes; /source_placements; /unique_source_paths;
+    /per_order_counts
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: ROOT accepts actual plan 412 placements/77 paths and the complete selected/direct
+    projections, with future maintained-reader results separate.
+  snapshot_sha256: 8b553f64807b674d1731148a3995b48ceca2b42aa4cd763c5f306ef84992a96d
+- evidence_id: bgc-2242-source-notes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-source-scope-notes-001.json
+  locator: /reading; /curation; /cautions
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: Complete BGC/Support whole-source reading attribution, bounded curation
+    scan and source qualifications. The sole applicable token hit is the Pristinol
+    locus override; reserved decisions.tsv was not consumed.
+  snapshot_sha256: 08f2dd0c94feafa1b7201db4b7fff3d4218aade05b41a8b71c566de4f60ed0ed
+- evidence_id: bgc-2242-chemistry
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/1/declared_structure; /records/1/smiles; /records/1/inchi; /records/1/comparisons;
+    /records/1/atom_correspondence
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: 'Saved original paired forms and all computed fields: {"order":2242,"declared":{"smiles":"CC1=CC(=O)CC(C1(/C=C/C(=C\\C(=O)O)/C)O)(C)C","standard_inchi":"InChI=1S/C15H20O4/c1-10(7-13(17)18)5-6-15(19)11(2)8-12(16)9-14(15,3)4/h5-8,19H,9H2,1-4H3,(H,17,18)/b6-5+,10-7-","standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","stereo_complete":false,"structure_source":"MIBIG","structure_source_id":"mibig:BGC0001899"},"smiles_status":"parsed","inchi_status":"parsed","comparisons":{"formula_equal":true,"formal_charge_equal":true,"standard_inchi_equal":true,"standard_inchi_key_equal":true,"canonical_isomeric_smiles_equal":true,"canonical_nonisomeric_smiles_equal":true,"atom_count_equal":true,"bond_count_equal":true,"both_keys_equal_declared":true,"smiles_formula_equals_literal_InChI_main_layer":true},"map":{"smiles_to_inchi_atom_indices":[1,10,7,11,15,8,13,14,5,4,9,6,12,16,17,0,18,2,3],"complete_atom_count_match":true,"full_graph_identity_established":false,"scope":"One
+    chirality-aware substructure match; no independent full graph or natural identity
+    claim."}}.'
+  snapshot_sha256: 2c67ccbf2df2c8fee5fd0761d179566903ed7db15c60650d2cff295cbac068a7
+- evidence_id: bgc-2242-topology
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/1/smiles/computed/atoms; /records/1/smiles/computed/bonds; /records/1/smiles/computed/rings;
+    /records/1/smiles/computed/motifs; /records/1/smiles/computed/potential_stereo;
+    /records/1/smiles/computed/stereo_counts; /records/1/inchi/computed/atoms; /records/1/inchi/computed/bonds;
+    /records/1/inchi/computed/rings; /records/1/inchi/computed/motifs; /records/1/inchi/computed/potential_stereo;
+    /records/1/inchi/computed/stereo_counts; /records/1/atom_correspondence; /records/1/declared_structure
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: SMILES C12(=O13)–O14 is the carboxylic acid; C11=C10 is STEREOZ and C9=C8
+    is STEREOE. Ring C3=O4 is a ketone and C7–O16 is an alcohol at the unspecified
+    tetrahedral site. The corresponding InChI bonds and complete stored atom map preserve
+    these relationships.
+  snapshot_sha256: 2c67ccbf2df2c8fee5fd0761d179566903ed7db15c60650d2cff295cbac068a7
+- evidence_id: bgc-2242-diagnostic-execution
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225/chemistry-local/diagnostic-execution-001.json
+  locator: /exit_code; /DATA; /stdout; /stderr; /external_requests; /retries
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: ROOT's original diagnostic execution exited zero, retains exact DATA and
+    original stream pins, reports no external request and zero retries.
+  snapshot_sha256: 78ad622a43d40672797351398f42ca4e4d960b9d268915937dd62a54571c00fa
+- evidence_id: bgc-2242-diagnostic-stderr
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225/chemistry-local/diagnostic-001.stderr
+  locator: Complete original stderr (both warnings)
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: Two original 'Omitted undefined stereo' warnings occur in the batch-level
+    stream; neither is assigned to an owner or representation.
+  snapshot_sha256: 7447721aa4c9980e1edf852cb15b182da2b510529ddd5ecabec31c40b6ecf085
+- evidence_id: bgc-2242-diagnostic-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225/root-local-diagnostics-acceptance-001.json
+  locator: /status; /DATA; /execution; /limits
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: ROOT accepts the original saved chemistry in its stated mechanical scope;
+    source/natural identity and scientific completion remain separate.
+  snapshot_sha256: 9bc1a44f264ea5a8261064ea20b2d3ced43e1608a6bebdeb0b235c4476564e9f
+- evidence_id: bgc-2242-native-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225/root-native-five-gates-acceptance-001.json
+  locator: /status; /ledger; /results; /full_QC_available; /complete_OAK_authority_available;
+    /all_native_gates_passed
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: Five local commands passed; full QC and complete OAK authority were unavailable,
+    so all_native_gates_passed remains false.
+  snapshot_sha256: e5b971aac7d6c7f0502248a9f3b9a6554500b2b131c408cdca84f95fd4229b0f
+- evidence_id: bgc-2242-query-mibig_compounds
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json
+  locator: /records/1/source_scope_inventory/joins/mibig_compounds
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: 'Exact retained query frame: {"predicate":"exact complete standard_inchi_key
+    equality","query":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","matches":[{"physical_line":2218,"last_physical_line":2218,"row":{"mibig_accession":"BGC0001899","entry_version":"3","entry_status":"active","entry_quality":"questionable","entry_completeness":"unknown","compound_name":"abscisic
+    acid","compound_index":"1","smiles":"CC1=CC(=O)CC(C1(/C=C/C(=C\\C(=O)O)/C)O)(C)C","standard_inchi":"InChI=1S/C15H20O4/c1-10(7-13(17)18)5-6-15(19)11(2)8-12(16)9-14(15,3)4/h5-8,19H,9H2,1-4H3,(H,17,18)/b6-5+,10-7-","standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","stereo_complete":"false","compound_classes":"","database_ids":"pubchem:5375199","taxon_id":"NCBITaxon:985895","taxon_label":"Leptosphaeria
+    maculans JN3","bgc_classes":"PKS","bgc_subclasses":"Unknown","genome_accession":"FP929136.1","locus_from":"752399","locus_to":"807208","locus_evidence_methods":"","producer_evidence_basis":"SOURCE_ASSERTION","cluster_link_evidence_basis":"CLUSTER_UNSTATED","primary_reference":"PMID:31034868","reference_basis":"ENTRY"},"raw_tsv_record":"BGC0001899\t3\tactive\tquestionable\tunknown\tabscisic
+    acid\t1\tCC1=CC(=O)CC(C1(/C=C/C(=C\\C(=O)O)/C)O)(C)C\tInChI=1S/C15H20O4/c1-10(7-13(17)18)5-6-15(19)11(2)8-12(16)9-14(15,3)4/h5-8,19H,9H2,1-4H3,(H,17,18)/b6-5+,10-7-\tJLIDBLDQVAYHNE-LXGGSRJLSA-N\tfalse\t\tpubchem:5375199\tNCBITaxon:985895\tLeptosphaeria
+    maculans JN3\tPKS\tUnknown\tFP929136.1\t752399\t807208\t\tSOURCE_ASSERTION\tCLUSTER_UNSTATED\tPMID:31034868\tENTRY\n","row_sha256":"2f10f0dc660956eee1a8b399134bc7664f2745860d1e22feb7edf9c4342bd29b"}]}'
+  snapshot_sha256: ea79b0d33c11111a64d6c66fb00ee86bd6a5db54bc5c2277f8e767926e012e9f
+- evidence_id: bgc-2242-source-mibig_compounds
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv
+  locator: Physical TSV lines 2218
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: 'Complete retained physical source payloads, with each original line and
+    full CSV fields: [{"physical_line":2218,"last_physical_line":2218,"row":{"mibig_accession":"BGC0001899","entry_version":"3","entry_status":"active","entry_quality":"questionable","entry_completeness":"unknown","compound_name":"abscisic
+    acid","compound_index":"1","smiles":"CC1=CC(=O)CC(C1(/C=C/C(=C\\C(=O)O)/C)O)(C)C","standard_inchi":"InChI=1S/C15H20O4/c1-10(7-13(17)18)5-6-15(19)11(2)8-12(16)9-14(15,3)4/h5-8,19H,9H2,1-4H3,(H,17,18)/b6-5+,10-7-","standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","stereo_complete":"false","compound_classes":"","database_ids":"pubchem:5375199","taxon_id":"NCBITaxon:985895","taxon_label":"Leptosphaeria
+    maculans JN3","bgc_classes":"PKS","bgc_subclasses":"Unknown","genome_accession":"FP929136.1","locus_from":"752399","locus_to":"807208","locus_evidence_methods":"","producer_evidence_basis":"SOURCE_ASSERTION","cluster_link_evidence_basis":"CLUSTER_UNSTATED","primary_reference":"PMID:31034868","reference_basis":"ENTRY"},"row_sha256":"2f10f0dc660956eee1a8b399134bc7664f2745860d1e22feb7edf9c4342bd29b"}]'
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: bgc-2242-query-chebi_structures
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json
+  locator: /records/1/source_scope_inventory/joins/chebi_structures
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: 'Exact retained query frame: {"predicate":"exact complete standard_inchi_key
+    equality","query":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","matches":[{"physical_line":5026,"last_physical_line":5026,"row":{"chebi_id":"CHEBI:22152","name":"2-cis-abscisic
+    acid","definition":"A member of the class of abscisic acids in which the double
+    bond betweeen positions 2 and 3 has cis- (natural) geometry.","stars":"3","standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","smiles":"CC1=CC(=O)CC(C)(C)C1(O)/C=C/C(C)=C\\C(=O)O"},"raw_tsv_record":"CHEBI:22152\t2-cis-abscisic
+    acid\tA member of the class of abscisic acids in which the double bond betweeen
+    positions 2 and 3 has cis- (natural) geometry.\t3\tJLIDBLDQVAYHNE-LXGGSRJLSA-N\tCC1=CC(=O)CC(C)(C)C1(O)/C=C/C(C)=C\\C(=O)O\n","row_sha256":"1231b37b15530279f95a2fe76a2679f8c207148d5071353a63b4440fb4d364a3"}]}'
+  snapshot_sha256: ea79b0d33c11111a64d6c66fb00ee86bd6a5db54bc5c2277f8e767926e012e9f
+- evidence_id: bgc-2242-source-chebi_structures
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/chebi_structures.tsv
+  locator: Physical TSV lines 5026
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: 'Complete retained physical source payloads, with each original line and
+    full CSV fields: [{"physical_line":5026,"last_physical_line":5026,"row":{"chebi_id":"CHEBI:22152","name":"2-cis-abscisic
+    acid","definition":"A member of the class of abscisic acids in which the double
+    bond betweeen positions 2 and 3 has cis- (natural) geometry.","stars":"3","standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","smiles":"CC1=CC(=O)CC(C)(C)C1(O)/C=C/C(C)=C\\C(=O)O"},"row_sha256":"1231b37b15530279f95a2fe76a2679f8c207148d5071353a63b4440fb4d364a3"}]'
+  snapshot_sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+- evidence_id: bgc-2242-query-lotus_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json
+  locator: /records/1/source_scope_inventory/joins/lotus_occurrences
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: 'Exact retained query frame: {"predicate":"exact complete standard_inchi_key
+    equality","query":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","matches":[{"physical_line":3397,"last_physical_line":3397,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","organism_name":"Axinella
+    polypoides","taxon_id":"NCBITaxon:12959","organism_wikidata":"http://www.wikidata.org/entity/Q1931381","reference_doi":"10.1016/J.BCP.2011.06.042","structure_wikidata":"http://www.wikidata.org/entity/Q27109429"},"raw_tsv_record":"JLIDBLDQVAYHNE-LXGGSRJLSA-N\tAxinella
+    polypoides\tNCBITaxon:12959\thttp://www.wikidata.org/entity/Q1931381\t10.1016/J.BCP.2011.06.042\thttp://www.wikidata.org/entity/Q27109429\n","row_sha256":"119dd5f3ac5caa65a102250c191ac23564f412423671f564a32deb093f9ac044"},{"physical_line":3398,"last_physical_line":3398,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","organism_name":"Botrytis
+    cinerea","taxon_id":"NCBITaxon:40559","organism_wikidata":"http://www.wikidata.org/entity/Q1135851","reference_doi":"10.1111/1462-2920.14258","structure_wikidata":"http://www.wikidata.org/entity/Q27109429"},"raw_tsv_record":"JLIDBLDQVAYHNE-LXGGSRJLSA-N\tBotrytis
+    cinerea\tNCBITaxon:40559\thttp://www.wikidata.org/entity/Q1135851\t10.1111/1462-2920.14258\thttp://www.wikidata.org/entity/Q27109429\n","row_sha256":"122e523076a257efd993eaa1b02e66dfbcff8cd6819a4a634c7ccd59f2655aee"},{"physical_line":3399,"last_physical_line":3399,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","organism_name":"Leptosphaeria
+    maculans","taxon_id":"NCBITaxon:5022","organism_wikidata":"http://www.wikidata.org/entity/Q6528396","reference_doi":"10.1016/J.FGB.2019.04.015","structure_wikidata":"http://www.wikidata.org/entity/Q27109429"},"raw_tsv_record":"JLIDBLDQVAYHNE-LXGGSRJLSA-N\tLeptosphaeria
+    maculans\tNCBITaxon:5022\thttp://www.wikidata.org/entity/Q6528396\t10.1016/J.FGB.2019.04.015\thttp://www.wikidata.org/entity/Q27109429\n","row_sha256":"10d0a0dce87cdfa7c3e8d6bf0d23f9e0f70977a1d39efc2d5eb4e2145cb9db9b"}]}'
+  snapshot_sha256: ea79b0d33c11111a64d6c66fb00ee86bd6a5db54bc5c2277f8e767926e012e9f
+- evidence_id: bgc-2242-source-lotus_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Physical TSV lines 3397, 3398, 3399
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: 'Complete retained physical source payloads, with each original line and
+    full CSV fields: [{"physical_line":3397,"last_physical_line":3397,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","organism_name":"Axinella
+    polypoides","taxon_id":"NCBITaxon:12959","organism_wikidata":"http://www.wikidata.org/entity/Q1931381","reference_doi":"10.1016/J.BCP.2011.06.042","structure_wikidata":"http://www.wikidata.org/entity/Q27109429"},"row_sha256":"119dd5f3ac5caa65a102250c191ac23564f412423671f564a32deb093f9ac044"},{"physical_line":3398,"last_physical_line":3398,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","organism_name":"Botrytis
+    cinerea","taxon_id":"NCBITaxon:40559","organism_wikidata":"http://www.wikidata.org/entity/Q1135851","reference_doi":"10.1111/1462-2920.14258","structure_wikidata":"http://www.wikidata.org/entity/Q27109429"},"row_sha256":"122e523076a257efd993eaa1b02e66dfbcff8cd6819a4a634c7ccd59f2655aee"},{"physical_line":3399,"last_physical_line":3399,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","organism_name":"Leptosphaeria
+    maculans","taxon_id":"NCBITaxon:5022","organism_wikidata":"http://www.wikidata.org/entity/Q6528396","reference_doi":"10.1016/J.FGB.2019.04.015","structure_wikidata":"http://www.wikidata.org/entity/Q27109429"},"row_sha256":"10d0a0dce87cdfa7c3e8d6bf0d23f9e0f70977a1d39efc2d5eb4e2145cb9db9b"}]'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: bgc-2242-query-cyanometdb_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json
+  locator: /records/1/source_scope_inventory/joins/cyanometdb_occurrences
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: 'Exact retained query frame: {"predicate":"exact complete standard_inchi_key
+    equality","query":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","matches":[]}'
+  snapshot_sha256: ea79b0d33c11111a64d6c66fb00ee86bd6a5db54bc5c2277f8e767926e012e9f
+- evidence_id: bgc-2242-query-npclassifier
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json
+  locator: /records/1/source_scope_inventory/joins/npclassifier
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: 'Exact retained query frame: {"predicate":"exact complete standard_inchi_key
+    equality","query":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","matches":[{"physical_line":1127,"last_physical_line":1127,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","smiles":"CC1=CC(=O)CC(C1(/C=C/C(=C\\C(=O)O)/C)O)(C)C","pathway_results":"Terpenoids","superclass_results":"Apocarotenoids","class_results":"Apocarotenoids(ε-)","is_glycoside":"false","model_version":"npclassifier.gnps2.org@2026-09-07"},"raw_tsv_record":"JLIDBLDQVAYHNE-LXGGSRJLSA-N\tCC1=CC(=O)CC(C1(/C=C/C(=C\\C(=O)O)/C)O)(C)C\tTerpenoids\tApocarotenoids\tApocarotenoids(ε-)\tfalse\tnpclassifier.gnps2.org@2026-09-07\n","row_sha256":"a58638a31843131bc5b58bd933f5e292421763a7baa0bee84632d8cf8778e7ed"}]}'
+  snapshot_sha256: ea79b0d33c11111a64d6c66fb00ee86bd6a5db54bc5c2277f8e767926e012e9f
+- evidence_id: bgc-2242-source-npclassifier
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv
+  locator: Physical TSV lines 1127
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: 'Complete retained physical source payloads, with each original line and
+    full CSV fields: [{"physical_line":1127,"last_physical_line":1127,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","smiles":"CC1=CC(=O)CC(C1(/C=C/C(=C\\C(=O)O)/C)O)(C)C","pathway_results":"Terpenoids","superclass_results":"Apocarotenoids","class_results":"Apocarotenoids(ε-)","is_glycoside":"false","model_version":"npclassifier.gnps2.org@2026-09-07"},"row_sha256":"a58638a31843131bc5b58bd933f5e292421763a7baa0bee84632d8cf8778e7ed"}]'
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: bgc-2242-query-pubchem_bioassay
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json
+  locator: /records/1/source_scope_inventory/joins/pubchem_bioassay
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: 'Exact retained query frame: {"predicate":"exact complete standard_inchi_key
+    equality","query":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","matches":[{"physical_line":3342,"last_physical_line":3342,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"1159517","assay_name":"qHTS
+    assay to identify small molecule agonists of the endoplasmic reticulum stress
+    response signaling pathway - cell viability counter screen","assay_type":"Confirmatory","depositor":"824","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"17.187","target_accession":"","reference":""},"raw_tsv_record":"JLIDBLDQVAYHNE-LXGGSRJLSA-N\t5375199\t1159517\tqHTS
+    assay to identify small molecule agonists of the endoplasmic reticulum stress
+    response signaling pathway - cell viability counter screen\tConfirmatory\t824\tInconclusive\tPotency\t17.187\t\t\n","row_sha256":"e88d10e253a55a76361f687fafeb76728ee12f58ad320aec8c89f9409dc41b5e"},{"physical_line":3343,"last_physical_line":3343,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"1671199","assay_name":"Cytochrome
+    P450 Family 1 Subfamily A Member 2 (CYP1A2) small molecule antagonists: luciferase
+    reporter qHTS assay","assay_type":"Confirmatory","depositor":"824","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"62.5906","target_accession":"","reference":""},"raw_tsv_record":"JLIDBLDQVAYHNE-LXGGSRJLSA-N\t5375199\t1671199\tCytochrome
+    P450 Family 1 Subfamily A Member 2 (CYP1A2) small molecule antagonists: luciferase
+    reporter qHTS assay\tConfirmatory\t824\tInconclusive\tPotency\t62.5906\t\t\n","row_sha256":"573742e1803b9ef537dcf7f020243ae4733312e8c17f7c64ef3fdbdd32cd5fd9"},{"physical_line":3344,"last_physical_line":3344,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"1671199","assay_name":"Cytochrome
+    P450 Family 1 Subfamily A Member 2 (CYP1A2) small molecule antagonists: luciferase
+    reporter qHTS assay","assay_type":"Confirmatory","depositor":"824","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"62.5906","target_accession":"EAW99313","reference":""},"raw_tsv_record":"JLIDBLDQVAYHNE-LXGGSRJLSA-N\t5375199\t1671199\tCytochrome
+    P450 Family 1 Subfamily A Member 2 (CYP1A2) small molecule antagonists: luciferase
+    reporter qHTS assay\tConfirmatory\t824\tInconclusive\tPotency\t62.5906\tEAW99313\t\n","row_sha256":"4848f10bd81e15fe4407270a4388463e586fb7a37f518b74af94e7a61fccf46e"},{"physical_line":3345,"last_physical_line":3345,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"1963591","assay_name":"cAMP
+    Responsive Elements (CRE) small molecule antagonists, cell-based qHTS assay","assay_type":"Confirmatory","depositor":"824","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"0.0017","target_accession":"","reference":""},"raw_tsv_record":"JLIDBLDQVAYHNE-LXGGSRJLSA-N\t5375199\t1963591\tcAMP
+    Responsive Elements (CRE) small molecule antagonists, cell-based qHTS assay\tConfirmatory\t824\tInconclusive\tPotency\t0.0017\t\t\n","row_sha256":"0e8ec488c7eac0552dffc2d638099cb577f9cca3b19894b9e7dc87db2883edec"},{"physical_line":3346,"last_physical_line":3346,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"1963591","assay_name":"cAMP
+    Responsive Elements (CRE) small molecule antagonists, cell-based qHTS assay","assay_type":"Confirmatory","depositor":"824","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"0.0017","target_accession":"AAV38316","reference":""},"raw_tsv_record":"JLIDBLDQVAYHNE-LXGGSRJLSA-N\t5375199\t1963591\tcAMP
+    Responsive Elements (CRE) small molecule antagonists, cell-based qHTS assay\tConfirmatory\t824\tInconclusive\tPotency\t0.0017\tAAV38316\t\n","row_sha256":"12756bd3006ca77ffaa06db0427fbe4fd1959a77867f4f7e8aeeb5bbcee26d61"},{"physical_line":3347,"last_physical_line":3347,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"1963593","assay_name":"Adrenergic
+    beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay","assay_type":"Confirmatory","depositor":"824","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"6.7823","target_accession":"","reference":""},"raw_tsv_record":"JLIDBLDQVAYHNE-LXGGSRJLSA-N\t5375199\t1963593\tAdrenergic
+    beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay\tConfirmatory\t824\tInconclusive\tPotency\t6.7823\t\t\n","row_sha256":"f885e0798d0541b586a2050026c84a5d41999edf1699ac928386291d309e56f5"},{"physical_line":3348,"last_physical_line":3348,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"1963593","assay_name":"Adrenergic
+    beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay","assay_type":"Confirmatory","depositor":"824","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"6.7823","target_accession":"NP_000015","reference":""},"raw_tsv_record":"JLIDBLDQVAYHNE-LXGGSRJLSA-N\t5375199\t1963593\tAdrenergic
+    beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay\tConfirmatory\t824\tInconclusive\tPotency\t6.7823\tNP_000015\t\n","row_sha256":"2df0ff2a1a38ba37f557cd8c2dcb34c7f4f71a8c99962c3f9738d744f2c7a5a4"},{"physical_line":3349,"last_physical_line":3349,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"2061107","assay_name":"Adrenergic
+    beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay: Summary","assay_type":"Summary","depositor":"824","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"0.302955","target_accession":"","reference":""},"raw_tsv_record":"JLIDBLDQVAYHNE-LXGGSRJLSA-N\t5375199\t2061107\tAdrenergic
+    beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay: Summary\tSummary\t824\tInconclusive\tPotency\t0.302955\t\t\n","row_sha256":"1222c73c397c46e57f039adf59fae0cf42d61a9bc6b60f6b08cf41536095cbe7"},{"physical_line":3350,"last_physical_line":3350,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"2061107","assay_name":"Adrenergic
+    beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay: Summary","assay_type":"Summary","depositor":"824","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"0.302955","target_accession":"NP_000015","reference":""},"raw_tsv_record":"JLIDBLDQVAYHNE-LXGGSRJLSA-N\t5375199\t2061107\tAdrenergic
+    beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay: Summary\tSummary\t824\tInconclusive\tPotency\t0.302955\tNP_000015\t\n","row_sha256":"c887476600adf09517ffe270e1cb08a0a6bb33e26c4d74a93d58b66991692767"},{"physical_line":3351,"last_physical_line":3351,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"588514","assay_name":"qHTS
+    assay for small molecule agonists of estrogen receptor alpha signaling","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"39.8107","target_accession":"AEP43755","reference":""},"raw_tsv_record":"JLIDBLDQVAYHNE-LXGGSRJLSA-N\t5375199\t588514\tqHTS
+    assay for small molecule agonists of estrogen receptor alpha signaling\tConfirmatory\tNCGC\tInconclusive\tPotency\t39.8107\tAEP43755\t\n","row_sha256":"709fc591da5f10dd4bb7b2bbf3df713e32b4fdd920a2e653d55e561dfca8d20c"},{"physical_line":3352,"last_physical_line":3352,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"588516","assay_name":"qHTS
+    assay for small molecule antagonists of androgen receptor signaling","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"0.631","target_accession":"AAI32976","reference":""},"raw_tsv_record":"JLIDBLDQVAYHNE-LXGGSRJLSA-N\t5375199\t588516\tqHTS
+    assay for small molecule antagonists of androgen receptor signaling\tConfirmatory\tNCGC\tInconclusive\tPotency\t0.631\tAAI32976\t\n","row_sha256":"bc38a79d62c40d1690257c57e74447e8d17b3a3c57b25939c6a330b610eba0a1"},{"physical_line":3353,"last_physical_line":3353,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"651741","assay_name":"qHTS
+    assay for small molecule agonists of the antioxidant response element (ARE) signaling
+    pathway","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Active","activity_name":"Potency","activity_value_um":"37.578","target_accession":"NP_006155","reference":""},"raw_tsv_record":"JLIDBLDQVAYHNE-LXGGSRJLSA-N\t5375199\t651741\tqHTS
+    assay for small molecule agonists of the antioxidant response element (ARE) signaling
+    pathway\tConfirmatory\tNCGC\tActive\tPotency\t37.578\tNP_006155\t\n","row_sha256":"92e7fbab0ce29ca8d75359e519f2025e8130a29ff879e271f5a96387c3eaa553"},{"physical_line":3354,"last_physical_line":3354,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"651758","assay_name":"qHTS
+    assay to identify small molecules that stimulate interleukin-8 (IL-8) secretion","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"74.978","target_accession":"AAA59158","reference":""},"raw_tsv_record":"JLIDBLDQVAYHNE-LXGGSRJLSA-N\t5375199\t651758\tqHTS
+    assay to identify small molecules that stimulate interleukin-8 (IL-8) secretion\tConfirmatory\tNCGC\tInconclusive\tPotency\t74.978\tAAA59158\t\n","row_sha256":"7381e6a7c53012eac3189355a746c55f306f91d9a330b7fdba1507e89a862934"},{"physical_line":3355,"last_physical_line":3355,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"926","assay_name":"qHTS
+    Assay for Agonists of the Thyroid Stimulating Hormone Receptor","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"0.0316","target_accession":"AAR07906","reference":""},"raw_tsv_record":"JLIDBLDQVAYHNE-LXGGSRJLSA-N\t5375199\t926\tqHTS
+    Assay for Agonists of the Thyroid Stimulating Hormone Receptor\tConfirmatory\tNCGC\tInconclusive\tPotency\t0.0316\tAAR07906\t\n","row_sha256":"fb764d47e3a21083fe7e524a403c2e38d2bafb9c5a9f68cc75362b69cf3b25c7"},{"physical_line":3356,"last_physical_line":3356,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"938","assay_name":"qHTS
+    Assay for Agonists of the Thyroid Stimulating Hormone Receptor: Activators of
+    Intracellular cAMP Concentrations in Parental HEK 293","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inactive","activity_name":"Potency","activity_value_um":"0.0316","target_accession":"AAR07906","reference":""},"raw_tsv_record":"JLIDBLDQVAYHNE-LXGGSRJLSA-N\t5375199\t938\tqHTS
+    Assay for Agonists of the Thyroid Stimulating Hormone Receptor: Activators of
+    Intracellular cAMP Concentrations in Parental HEK 293\tConfirmatory\tNCGC\tInactive\tPotency\t0.0316\tAAR07906\t\n","row_sha256":"1812af7477f5fe4cfc1da3ed39cfe4a9f370b56c1c9e19a2bda28c6c8ee0a577"}]}'
+  snapshot_sha256: ea79b0d33c11111a64d6c66fb00ee86bd6a5db54bc5c2277f8e767926e012e9f
+- evidence_id: bgc-2242-source-pubchem_bioassay
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: Physical TSV lines 3342, 3343, 3344, 3345, 3346, 3347, 3348, 3349, 3350,
+    3351, 3352, 3353, 3354, 3355, 3356
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: 'Complete retained physical source payloads, with each original line and
+    full CSV fields: [{"physical_line":3342,"last_physical_line":3342,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"1159517","assay_name":"qHTS
+    assay to identify small molecule agonists of the endoplasmic reticulum stress
+    response signaling pathway - cell viability counter screen","assay_type":"Confirmatory","depositor":"824","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"17.187","target_accession":"","reference":""},"row_sha256":"e88d10e253a55a76361f687fafeb76728ee12f58ad320aec8c89f9409dc41b5e"},{"physical_line":3343,"last_physical_line":3343,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"1671199","assay_name":"Cytochrome
+    P450 Family 1 Subfamily A Member 2 (CYP1A2) small molecule antagonists: luciferase
+    reporter qHTS assay","assay_type":"Confirmatory","depositor":"824","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"62.5906","target_accession":"","reference":""},"row_sha256":"573742e1803b9ef537dcf7f020243ae4733312e8c17f7c64ef3fdbdd32cd5fd9"},{"physical_line":3344,"last_physical_line":3344,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"1671199","assay_name":"Cytochrome
+    P450 Family 1 Subfamily A Member 2 (CYP1A2) small molecule antagonists: luciferase
+    reporter qHTS assay","assay_type":"Confirmatory","depositor":"824","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"62.5906","target_accession":"EAW99313","reference":""},"row_sha256":"4848f10bd81e15fe4407270a4388463e586fb7a37f518b74af94e7a61fccf46e"},{"physical_line":3345,"last_physical_line":3345,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"1963591","assay_name":"cAMP
+    Responsive Elements (CRE) small molecule antagonists, cell-based qHTS assay","assay_type":"Confirmatory","depositor":"824","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"0.0017","target_accession":"","reference":""},"row_sha256":"0e8ec488c7eac0552dffc2d638099cb577f9cca3b19894b9e7dc87db2883edec"},{"physical_line":3346,"last_physical_line":3346,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"1963591","assay_name":"cAMP
+    Responsive Elements (CRE) small molecule antagonists, cell-based qHTS assay","assay_type":"Confirmatory","depositor":"824","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"0.0017","target_accession":"AAV38316","reference":""},"row_sha256":"12756bd3006ca77ffaa06db0427fbe4fd1959a77867f4f7e8aeeb5bbcee26d61"},{"physical_line":3347,"last_physical_line":3347,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"1963593","assay_name":"Adrenergic
+    beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay","assay_type":"Confirmatory","depositor":"824","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"6.7823","target_accession":"","reference":""},"row_sha256":"f885e0798d0541b586a2050026c84a5d41999edf1699ac928386291d309e56f5"},{"physical_line":3348,"last_physical_line":3348,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"1963593","assay_name":"Adrenergic
+    beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay","assay_type":"Confirmatory","depositor":"824","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"6.7823","target_accession":"NP_000015","reference":""},"row_sha256":"2df0ff2a1a38ba37f557cd8c2dcb34c7f4f71a8c99962c3f9738d744f2c7a5a4"},{"physical_line":3349,"last_physical_line":3349,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"2061107","assay_name":"Adrenergic
+    beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay: Summary","assay_type":"Summary","depositor":"824","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"0.302955","target_accession":"","reference":""},"row_sha256":"1222c73c397c46e57f039adf59fae0cf42d61a9bc6b60f6b08cf41536095cbe7"},{"physical_line":3350,"last_physical_line":3350,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"2061107","assay_name":"Adrenergic
+    beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS assay: Summary","assay_type":"Summary","depositor":"824","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"0.302955","target_accession":"NP_000015","reference":""},"row_sha256":"c887476600adf09517ffe270e1cb08a0a6bb33e26c4d74a93d58b66991692767"},{"physical_line":3351,"last_physical_line":3351,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"588514","assay_name":"qHTS
+    assay for small molecule agonists of estrogen receptor alpha signaling","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"39.8107","target_accession":"AEP43755","reference":""},"row_sha256":"709fc591da5f10dd4bb7b2bbf3df713e32b4fdd920a2e653d55e561dfca8d20c"},{"physical_line":3352,"last_physical_line":3352,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"588516","assay_name":"qHTS
+    assay for small molecule antagonists of androgen receptor signaling","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"0.631","target_accession":"AAI32976","reference":""},"row_sha256":"bc38a79d62c40d1690257c57e74447e8d17b3a3c57b25939c6a330b610eba0a1"},{"physical_line":3353,"last_physical_line":3353,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"651741","assay_name":"qHTS
+    assay for small molecule agonists of the antioxidant response element (ARE) signaling
+    pathway","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Active","activity_name":"Potency","activity_value_um":"37.578","target_accession":"NP_006155","reference":""},"row_sha256":"92e7fbab0ce29ca8d75359e519f2025e8130a29ff879e271f5a96387c3eaa553"},{"physical_line":3354,"last_physical_line":3354,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"651758","assay_name":"qHTS
+    assay to identify small molecules that stimulate interleukin-8 (IL-8) secretion","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"74.978","target_accession":"AAA59158","reference":""},"row_sha256":"7381e6a7c53012eac3189355a746c55f306f91d9a330b7fdba1507e89a862934"},{"physical_line":3355,"last_physical_line":3355,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"926","assay_name":"qHTS
+    Assay for Agonists of the Thyroid Stimulating Hormone Receptor","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"0.0316","target_accession":"AAR07906","reference":""},"row_sha256":"fb764d47e3a21083fe7e524a403c2e38d2bafb9c5a9f68cc75362b69cf3b25c7"},{"physical_line":3356,"last_physical_line":3356,"row":{"standard_inchi_key":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","cid":"5375199","aid":"938","assay_name":"qHTS
+    Assay for Agonists of the Thyroid Stimulating Hormone Receptor: Activators of
+    Intracellular cAMP Concentrations in Parental HEK 293","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inactive","activity_name":"Potency","activity_value_um":"0.0316","target_accession":"AAR07906","reference":""},"row_sha256":"1812af7477f5fe4cfc1da3ed39cfe4a9f370b56c1c9e19a2bda28c6c8ee0a577"}]'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: bgc-2242-query-bindingdb_targets
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json
+  locator: /records/1/source_scope_inventory/joins/bindingdb_targets
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: 'Exact retained query frame: {"predicate":"exact complete standard_inchi_key
+    equality","query":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","matches":[]}'
+  snapshot_sha256: ea79b0d33c11111a64d6c66fb00ee86bd6a5db54bc5c2277f8e767926e012e9f
+- evidence_id: bgc-2242-query-antibioticmech_inchikeys
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json
+  locator: /records/1/source_scope_inventory/joins/antibioticmech_inchikeys
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: 'Exact retained query frame: {"predicate":"exact complete standard_inchi_key
+    equality","query":"JLIDBLDQVAYHNE-LXGGSRJLSA-N","matches":[]}'
+  snapshot_sha256: ea79b0d33c11111a64d6c66fb00ee86bd6a5db54bc5c2277f8e767926e012e9f
+- evidence_id: bgc-2242-query-chebi_origins
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json
+  locator: /records/1/source_scope_inventory/joins/chebi_origins
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: 'Exact retained query frame: {"predicate":"exact chebi_id from exact full-key
+    structure rows","query":["CHEBI:22152"],"matches":[]}'
+  snapshot_sha256: ea79b0d33c11111a64d6c66fb00ee86bd6a5db54bc5c2277f8e767926e012e9f
+- evidence_id: bgc-2242-cached-taxonomy
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-source-inventory-DATA-001.json
+  locator: /cached_taxonomy/whole_stanzas/0; /cached_taxonomy/whole_stanzas/4; /cached_taxonomy/whole_stanzas/7;
+    /cached_taxonomy/whole_stanzas/21
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: 'Complete retained cached stanza scope: [{"id":"NCBITaxon:5022","physical_line":7766,"complete_stanza":"[Term]\nid:
+    NCBITaxon:5022\nname: Plenodomus lingam\nsynonym: \"Leptosphaeria maculans\" EXACT
+    []\nsynonym: \"Phoma lingam\" EXACT []\nsynonym: \"Plenodomus rabenhorstii\" EXACT
+    []\nsynonym: \"Sphaeria lingam\" EXACT []\n\n"},{"id":"NCBITaxon:12959","physical_line":10570,"complete_stanza":"[Term]\nid:
+    NCBITaxon:12959\nname: Axinella polypoides\n\n"},{"id":"NCBITaxon:40559","physical_line":18031,"complete_stanza":"[Term]\nid:
+    NCBITaxon:40559\nname: Botrytis cinerea\nsynonym: \"Botryotinia fuckeliana\" EXACT
+    []\nsynonym: \"Botrytis cinerea Pers., 1801\" EXACT []\nsynonym: \"Peziza fuckeliana\"
+    EXACT []\nsynonym: \"Sclerotinia fuckeliana\" EXACT []\n\n"},{"id":"NCBITaxon:985895","physical_line":114258,"complete_stanza":"[Term]\nid:
+    NCBITaxon:985895\nname: Plenodomus lingam JN3\nsynonym: \"Leptosphaeria maculans
+    v23.1.3\" EXACT []\n\n"}]. Cached names/synonyms do not constitute a fresh taxonomy
+    request.'
+  snapshot_sha256: b814a5b49ac654cfd225277d7051ab2f340aeb58b4813f4d490ee23cb81ba5d7
+- evidence_id: bgc-2242-source-routes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json
+  locator: /records/1/source_scope_inventory/source_taxa; /records/1/source_scope_inventory/forward_taxon_merge_matches;
+    /records/1/source_scope_inventory/nonorganism_matches
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: 'Exact selected-record source taxa and retained forward/nonorganism route
+    sets: {"source_taxa":["NCBITaxon:12959","NCBITaxon:40559","NCBITaxon:5022","NCBITaxon:985895"],"forward_taxon_merge_matches":[],"nonorganism_matches":[]}'
+  snapshot_sha256: ea79b0d33c11111a64d6c66fb00ee86bd6a5db54bc5c2277f8e767926e012e9f
+- evidence_id: bgc-2242-review-skill
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/.claude/skills/review-yaml-record/SKILL.md
+  locator: Evidence Rules; Workflow; Output
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: Maintained local review recipe requires claim-specific source support and
+    qualified completion; external retrieval is overridden by the absolute no-request
+    instruction.
+  snapshot_sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+- evidence_id: bgc-2242-review-profile
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/docs/record-review-profile.md
+  locator: Complete maintained review profile
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: Maintained dimensions, producer/occurrence and source-versus-computed scope,
+    one-record review and partial completion requirements.
+  snapshot_sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+- evidence_id: bgc-2242-structure-schema
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: lines 376–432
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: ChemicalStructure stereo flag description and ComputedClassification named/versioned
+    output semantics; is_glycoside is a computed boolean, not a source assertion.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: bgc-2242-stereo-method
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py
+  locator: lines 145–175
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: Maintained MIBiG extractor derives standardized identifiers and the stereo_complete
+    flag from FindMolChiralCenters including unassigned centres; no experiment or
+    complete geometric-stereo authentication is performed by this method.
+  snapshot_sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+- evidence_id: bgc-2242-classification-seeder
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: lines 980–1030
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: Seeder preserves the selected structure, exact ChEBI definition and named/versioned
+    classifier results, including the literal glycoside prediction.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: bgc-2242-activity-seeder
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: lines 1309–1382
+  accessed_at: '2026-11-03T15:28:51.475150Z'
+  support: supports
+  summary: Maintained writer preserves Active/Inactive/other outcome distinctions,
+    OTHER endpoint names, literal values/units and accession limitations; only explicitly
+    active classified written observations can back a summary.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: root-native-strict_ten
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-225/validate-strict-selected10-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-225/native-current225-five-gates-execution-001.json
+  accessed_at: '2026-11-03T15:08:40.038173Z'
+  support: supports
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  snapshot_sha256: b1de93f00ae41f97306f80a1bc1ad1e662083a600933708905899bcf66fab1b9
+- evidence_id: root-native-strict_full
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-225/validate-all-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-225/native-current225-five-gates-execution-001.json
+  accessed_at: '2026-11-03T15:09:06.064639Z'
+  support: supports
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  snapshot_sha256: c73c0e1fb5f397d9d622cc2237a0d705daa1732bee63b4df6b1b16ea59e9970d
+- evidence_id: root-native-lockfile
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-225/verify-corpus-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-225/native-current225-five-gates-execution-001.json
+  accessed_at: '2026-11-03T15:09:26.342067Z'
+  support: supports
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  snapshot_sha256: 254f171c7dff0f1ecbee5f47f75d2b7046143ae7fc499d9a1c08263e1c5125d8
+- evidence_id: root-native-reproduction
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-225/verify-reproduction-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-225/native-current225-five-gates-execution-001.json
+  accessed_at: '2026-11-03T15:10:01.232424Z'
+  support: supports
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  snapshot_sha256: cfc38f4e3f434e7f3651975f2cb228e5cda848476b2c53d1636d8746b794237a
+- evidence_id: root-native-queue
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-225/review-queue-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-225/native-current225-five-gates-execution-001.json
+  accessed_at: '2026-11-03T15:10:12.957939Z'
+  support: supports
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  snapshot_sha256: 77d40d08e42713a235950bd02ad7525c549543775e160f34f23626b8ef01a308
+assessments:
+- assessment_id: bgc-2242-identity
+  area: identity
+  topic: Identity
+  outcome: supported
+  summary: CHEBI:22152 is the single exact full-key match JLIDBLDQVAYHNE-LXGGSRJLSA-N.
+    The retained ChEBI definition specifies cis geometry between positions 2 and 3;
+    the saved bond tables support that 2Z side chain. The OPEN name-disagreement discussion
+    distinguishes the more specific ChEBI name from MIBiG's abscisic acid label. It
+    is preserved as source-name context, not treated as proof of a wrong molecule
+    or as a resolved enantiomer assignment.
+  target_ids:
+  - CHEBI:22152
+  evidence_ids:
+  - bgc-2242-grounding-owner
+  - bgc-2242-chemistry
+  - bgc-2242-query-chebi_structures
+  - bgc-2242-source-chebi_structures
+  - bgc-2242-source-mibig_compounds
+  dimensions:
+  - name: standard_inchi_key
+    value: JLIDBLDQVAYHNE-LXGGSRJLSA-N; exact CHEBI:22152 retained join.
+    definition: Exact full key; no name, first-block or congener substitution.
+    evidence_ids:
+    - bgc-2242-grounding-owner
+    - bgc-2242-chemistry
+    - bgc-2242-query-chebi_structures
+    - bgc-2242-source-chebi_structures
+    - bgc-2242-source-mibig_compounds
+  - name: grounding_scope
+    value: OPEN source-name difference retained; full-key join does not choose the
+      unspecified enantiomer.
+    definition: Local grounding fidelity is distinct from fresh natural-identity verification.
+    evidence_ids:
+    - bgc-2242-grounding-owner
+    - bgc-2242-chemistry
+    - bgc-2242-query-chebi_structures
+    - bgc-2242-source-chebi_structures
+    - bgc-2242-source-mibig_compounds
+- assessment_id: bgc-2242-representation
+  area: representation
+  topic: Representation
+  outcome: supported
+  summary: Both forms give neutral C15H20O4, 19 atoms and 19 bonds, with all ten comparisons
+    true and a complete stored map. Starting from carboxyl carbon C12 in the SMILES
+    table, C11=C10 is the 2Z bond and C9=C8 is the 4E bond. The hydroxyl-bearing ring
+    carbon C7 remains an unspecified tetrahedral centre, matching stereo_complete:false.
+    The InChI atom ordering changes a potential-stereo Cis/Trans descriptor, but its
+    mapped bond stereo remains Z/E. No absolute configuration is invented.
+  target_ids:
+  - CHEBI:22152
+  evidence_ids:
+  - bgc-2242-grounding-owner
+  - bgc-2242-chemistry
+  - bgc-2242-topology
+  - bgc-2242-diagnostic-acceptance
+  - bgc-2242-structure-schema
+  - bgc-2242-stereo-method
+  dimensions:
+  - name: stereochemistry_scope
+    value: Two specified side-chain double bonds, 2Z/4E; one unspecified tetrahedral
+      centre; false source flag retained.
+    definition: Saved full stereo/atom/bond interpretation, not an experimental assignment
+      or new parse.
+    evidence_ids:
+    - bgc-2242-grounding-owner
+    - bgc-2242-chemistry
+    - bgc-2242-topology
+    - bgc-2242-diagnostic-acceptance
+    - bgc-2242-structure-schema
+    - bgc-2242-stereo-method
+  - name: representation_correspondence
+    value: All ten flags true and complete stored correspondence; descriptor ordering
+      is not a geometry conflict.
+    definition: Normalized identifier agreement does not establish explicit full-graph
+      or natural-form identity.
+    evidence_ids:
+    - bgc-2242-grounding-owner
+    - bgc-2242-chemistry
+    - bgc-2242-topology
+    - bgc-2242-diagnostic-acceptance
+    - bgc-2242-structure-schema
+    - bgc-2242-stereo-method
+- assessment_id: bgc-2242-origin
+  area: provenance
+  topic: Origin
+  outcome: supported
+  summary: Active MIBiG BGC0001899 version 3 is questionable with unknown completeness.
+    Leptosphaeria maculans JN3, taxon 985895, remains a SOURCE_ASSERTION producer
+    with CLUSTER_UNSTATED linkage on FP929136.1:752399–807208. The cache names that
+    same identifier Plenodomus lingam JN3; the species-level occurrence taxon 5022
+    is separately cached as Plenodomus lingam with Leptosphaeria maculans as an exact
+    synonym. Sponge 12959, Botrytis 40559 and species 5022 are occurrence claims,
+    not proof that the named producer strain made the compound in each source.
+  target_ids:
+  - CHEBI:22152
+  evidence_ids:
+  - bgc-2242-origin-owner
+  - bgc-2242-occurrence-owner
+  - bgc-2242-source-mibig_compounds
+  - bgc-2242-source-lotus_occurrences
+  - bgc-2242-cached-taxonomy
+  - bgc-2242-source-routes
+  - bgc-2242-review-profile
+  dimensions:
+  - name: taxon_scope
+    value: Producer strain 985895 is separate from occurrence taxa 12959, 40559 and
+      5022; cached names remain bounded.
+    definition: Source taxa and cache labels preserve genus/species/strain scope;
+      no fresh ancestry or production inference.
+    evidence_ids:
+    - bgc-2242-origin-owner
+    - bgc-2242-occurrence-owner
+    - bgc-2242-source-mibig_compounds
+    - bgc-2242-source-lotus_occurrences
+    - bgc-2242-cached-taxonomy
+    - bgc-2242-source-routes
+    - bgc-2242-review-profile
+  - name: producer_evidence
+    value: MIBiG SOURCE_ASSERTION, with no new demonstration inferred.
+    definition: Producer evidence is assessed separately from occurrence and locus
+      support.
+    evidence_ids:
+    - bgc-2242-origin-owner
+    - bgc-2242-occurrence-owner
+    - bgc-2242-source-mibig_compounds
+    - bgc-2242-source-lotus_occurrences
+    - bgc-2242-cached-taxonomy
+    - bgc-2242-source-routes
+    - bgc-2242-review-profile
+  - name: locus_evidence
+    value: BGC0001899 version 3, CLUSTER_UNSTATED; unknown completeness and questionable
+      quality.
+    definition: Source version/status/method/grade does not establish a complete pathway
+      or fresh primary support.
+    evidence_ids:
+    - bgc-2242-origin-owner
+    - bgc-2242-occurrence-owner
+    - bgc-2242-source-mibig_compounds
+    - bgc-2242-source-lotus_occurrences
+    - bgc-2242-cached-taxonomy
+    - bgc-2242-source-routes
+    - bgc-2242-review-profile
+- assessment_id: bgc-2242-citations
+  area: evidence
+  topic: Citations
+  outcome: unknown
+  summary: The producer/locus ENTRY citation PMID:31034868 remains separate from three
+    LOTUS occurrence DOIs and fifteen PubChem assay records. The Leptosphaeria occurrence
+    DOI and entry PMID may describe related work, but publication independence was
+    not established locally. Recorded target accessions stay explicitly ungrounded;
+    their current identities and the primary protocols were not retrieved. Repeated
+    AIDs with different target-field availability are retained source placements,
+    not independently counted experiments.
+  target_ids:
+  - CHEBI:22152
+  evidence_ids:
+  - bgc-2242-grounding-owner
+  - bgc-2242-origin-owner
+  - bgc-2242-occurrence-owner
+  - bgc-2242-assay-owner
+  - bgc-2242-source-mibig_compounds
+  - bgc-2242-source-lotus_occurrences
+  - bgc-2242-source-pubchem_bioassay
+  - bgc-2242-source-notes
+  dimensions:
+  - name: citation_scope
+    value: ENTRY PMID, occurrence DOIs and assay records retain separate roles; ungrounded
+      accessions remain unresolved.
+    definition: Citation roles remain database assertions; no publication independence
+      or fresh source access is assumed.
+    evidence_ids:
+    - bgc-2242-grounding-owner
+    - bgc-2242-origin-owner
+    - bgc-2242-occurrence-owner
+    - bgc-2242-assay-owner
+    - bgc-2242-source-mibig_compounds
+    - bgc-2242-source-lotus_occurrences
+    - bgc-2242-source-pubchem_bioassay
+    - bgc-2242-source-notes
+- assessment_id: bgc-2242-bioactivity
+  area: evidence
+  topic: Bioactivity
+  outcome: supported
+  summary: 'All fifteen retained PubChem rows are represented as written observations:
+    one ACTIVE ARE-signaling screen, AID651741 with OTHER/Potency 37.578 µM; one INACTIVE
+    AID938 with OTHER/Potency 0.0316 µM; and thirteen NOT_DETERMINED observations
+    retaining Inconclusive source calls. Their distinct values and target/blank-target
+    variants remain intact. No optional activity class or summary is asserted, so
+    the ARE response is not relabeled as enzyme inhibition or therapeutic efficacy.
+    Three written occurrences remain separate from these assays.'
+  target_ids:
+  - CHEBI:22152
+  evidence_ids:
+  - bgc-2242-assay-owner
+  - bgc-2242-occurrence-owner
+  - bgc-2242-query-lotus_occurrences
+  - bgc-2242-source-lotus_occurrences
+  - bgc-2242-query-chebi_origins
+  - bgc-2242-query-cyanometdb_occurrences
+  - bgc-2242-query-pubchem_bioassay
+  - bgc-2242-source-pubchem_bioassay
+  - bgc-2242-query-bindingdb_targets
+  - bgc-2242-query-antibioticmech_inchikeys
+  - bgc-2242-source-plan
+  - bgc-2242-source-routes
+  - bgc-2242-cached-taxonomy
+  - bgc-2242-activity-seeder
+  dimensions:
+  - name: occurrence_scope
+    value: Three written occurrence assertions across sponge and fungal taxa; no independent-study
+      count inferred.
+    definition: Occurrence assertions are not counts of independent experiments or
+      producers.
+    evidence_ids:
+    - bgc-2242-assay-owner
+    - bgc-2242-occurrence-owner
+    - bgc-2242-query-lotus_occurrences
+    - bgc-2242-source-lotus_occurrences
+    - bgc-2242-query-chebi_origins
+    - bgc-2242-query-cyanometdb_occurrences
+    - bgc-2242-query-pubchem_bioassay
+    - bgc-2242-source-pubchem_bioassay
+    - bgc-2242-query-bindingdb_targets
+    - bgc-2242-query-antibioticmech_inchikeys
+    - bgc-2242-source-plan
+    - bgc-2242-source-routes
+    - bgc-2242-cached-taxonomy
+    - bgc-2242-activity-seeder
+  - name: assay_target_scope
+    value: 'Fifteen observations: one ACTIVE, one INACTIVE, thirteen NOT_DETERMINED;
+      no activity-class or summary inference.'
+    definition: Written claims and exact retained assay/target routes are bounded;
+      no global biological absence claim.
+    evidence_ids:
+    - bgc-2242-assay-owner
+    - bgc-2242-occurrence-owner
+    - bgc-2242-query-lotus_occurrences
+    - bgc-2242-source-lotus_occurrences
+    - bgc-2242-query-chebi_origins
+    - bgc-2242-query-cyanometdb_occurrences
+    - bgc-2242-query-pubchem_bioassay
+    - bgc-2242-source-pubchem_bioassay
+    - bgc-2242-query-bindingdb_targets
+    - bgc-2242-query-antibioticmech_inchikeys
+    - bgc-2242-source-plan
+    - bgc-2242-source-routes
+    - bgc-2242-cached-taxonomy
+    - bgc-2242-activity-seeder
+- assessment_id: bgc-2242-classification
+  area: consistency
+  topic: Classification
+  outcome: unknown
+  summary: The owner faithfully retains the versioned Terpenoids/Apocarotenoids/Apocarotenoids(ε-)
+    prediction and is_glycoside:false. Its MIBiG PKS label describes the source locus
+    and is not interchangeable with the compound classifier. The saved topology contains
+    an oxygenated cyclohexenone and a conjugated carboxylic-acid side chain, with
+    no glycosidic linkage. The model/source classification contrast alone does not
+    establish a curation defect or a biosynthetic pathway.
+  target_ids:
+  - CHEBI:22152
+  evidence_ids:
+  - bgc-2242-classification-owner
+  - bgc-2242-source-npclassifier
+  - bgc-2242-source-mibig_compounds
+  - bgc-2242-chemistry
+  - bgc-2242-topology
+  - bgc-2242-structure-schema
+  - bgc-2242-classification-seeder
+  - bgc-2242-review-profile
+  dimensions:
+  - name: classification_applicability
+    value: Computed apocarotenoid filing and source PKS locus class are separate axes;
+      no sugar linkage in the saved topology.
+    definition: Model filing labels, observed topology and source BGC classes remain
+      distinct axes.
+    evidence_ids:
+    - bgc-2242-classification-owner
+    - bgc-2242-source-npclassifier
+    - bgc-2242-source-mibig_compounds
+    - bgc-2242-chemistry
+    - bgc-2242-topology
+    - bgc-2242-structure-schema
+    - bgc-2242-classification-seeder
+    - bgc-2242-review-profile
+- assessment_id: bgc-2242-completion
+  area: completeness
+  topic: Completion
+  outcome: unknown
+  summary: The complete owner/history, accepted source context, actual intake and
+    both full saved molecular tables were reviewed. No supported local curation defect
+    is established in this bounded scope. Five local gates passed; full QC, complete
+    OAK and fresh external primary-source/taxonomy/accession verification were unavailable.
+    The record remains scientifically partial, and its native curation status/history
+    were not changed.
+  target_ids:
+  - CHEBI:22152
+  evidence_ids:
+  - bgc-2242-owner
+  - bgc-2242-capture
+  - bgc-2242-intake
+  - bgc-2242-intake-acceptance
+  - bgc-2242-source-notes
+  - bgc-2242-native-acceptance
+  - bgc-2242-diagnostic-execution
+  - bgc-2242-diagnostic-stderr
+  - bgc-2242-diagnostic-acceptance
+  - bgc-2242-source-plan
+  - bgc-2242-plan-acceptance
+  - bgc-2242-review-skill
+  - bgc-2242-review-profile
+  dimensions:
+  - name: review_completion
+    value: Partial; qualified local result with external verification, full QC and
+      complete OAK unavailable.
+    definition: Completion reflects actual evidence access and check coverage; parsing
+      and gate success are not scientific proof.
+    evidence_ids:
+    - bgc-2242-owner
+    - bgc-2242-capture
+    - bgc-2242-intake
+    - bgc-2242-intake-acceptance
+    - bgc-2242-source-notes
+    - bgc-2242-native-acceptance
+    - bgc-2242-diagnostic-execution
+    - bgc-2242-diagnostic-stderr
+    - bgc-2242-diagnostic-acceptance
+    - bgc-2242-source-plan
+    - bgc-2242-plan-acceptance
+    - bgc-2242-review-skill
+    - bgc-2242-review-profile
+findings: []
+actions: []
+limitations:
+- External identifiers, taxonomy, accessions and primary publications were not refreshed
+  under the absolute no-request instruction; historical and database assertions remain
+  attributed.
+- Full QC and complete OAK authority coverage were unavailable. Local gates and parsing
+  establish their declared mechanical scope only.
+- Negative source joins apply only to exact retained predicates and snapshots. Shared
+  loci, citations and companions do not transfer compound-specific claims.
+- No additional molecular or YAML parse occurred during fragment authoring. Source
+  records, raw snapshots, native curation status and histories were not edited.
+- The whole selected owner was read, but scientific completion is partial because
+  full QC, complete ontology authority coverage and external source verification were
+  unavailable. No native status or history was changed.
+- The branch uses cached base ce6a5498df5be51116bd5e0c119023ee62bb5464. Fresh origin/main
+  verification and publication are deferred because the user prohibits all external
+  requests.
+notes:
+- Complete source payloads and personal/delegated direct-context whole-reading attribution
+  are retained in the pinned source notes. Assigned actual intakes, complete selected
+  owners/history and every paired saved molecular table were personally read.
+- Two original batch-level undefined-stereo warnings remain globally unassigned. True
+  comparison flags and a complete correspondence do not override full_graph_identity_established:false.
+- Saved review coverage is distinct from the native SEEDED/REVIEWED curation state.
+  Proposed actions are not performed edits.
+tags:
+- offline
+- record-review
+- batch-225
+```
