@@ -1,0 +1,741 @@
+# Scientific review of glidobactin C
+
+- Review: 20261027T220425Z-glidobactin-c
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-27T22:01:09.653308Z
+- Finished UTC: 2026-10-27T22:04:25.609183Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Glidobactin C retains a distinct C29H48N4O6 encoding with three specified double bonds and no unspecified carbon stereocentres in the saved local calculation. Its lipid-chain unsaturation differs from B. Family biosynthesis evidence does not independently establish the exact C structure, macrocycle geometry, occurrence citations or activity.
+
+## Scope And Provenance
+
+Bounded assessment of the original glidobactin C owner and exact retained source rows, saved chemical encoding consistency, own PubMed title/abstract/identifiers and the precise source-access limits.
+
+Selection: One exact record selected in canonical repository path order from the unreviewed population; this observation assesses only its declared partial scientific scope.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 14373517042b407747272446f79953ae86d51fa4.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-35224555cf | data/natural_products/amino_acids_and_peptides/glidobactin-c.yaml | generated | glidobactin C |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-35224555cf | Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its pinned path. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-35224555cf | Fresh canonical reproduction gate passed:all3116 records byte-identical to source seeding; source warnings remain retained. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-35224555cf | Fresh deterministic review queue completed:8922 rows across12 queues. Queue output is not scientific-review coverage. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-35224555cf | Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking mismatches and4898no-adapter skips remain explicit. |
+| Full repository quality gate on the fresh main baseline | passed | True | naturalproductmech:mibig-35224555cf | Canonical just qc completed with actual terminal exit0:1024 tests passed,4 skipped,2 dependency warnings;3116 records passed closed schema validation, site freshness, byte reproduction and lockfile integrity.22 governed artifacts and15 raw inventories passed. Prior DNS failed001 remains preserved. |
+| Native strict target validation | passed | True | naturalproductmech:mibig-35224555cf | The selected owner passed the documented strict validator. This establishes configured consistency only. |
+| Saved two-encoding consistency | passed | True | naturalproductmech:mibig-35224555cf | The saved SMILES and Standard InChI produce declared full key UHXDSKADPILIPT-OHIHYABUSA-N, formula C29H48N4O6, one fragment, net charge zero and the same normalized Standard InChI. Each representation has 5 specified and 0 unspecified tetrahedral carbon centres, with 3 specified double bonds. The 4 additional unspecified double-bond flags in the parsed InChI are C(-O)=N forms, not missing C=C assignments. This establishes internal encoding consistency only. |
+| Whole original owner and exact retained source joins | passed | True | naturalproductmech:mibig-35224555cf | The whole original glidobactin C owner, seven retained arrays containing 6 rows, and two empty supplemental arrays were read. Exact producer, locus and occurrence assertions, structure literals and curation history are retained. No bioactivity annotation, molecular target, pathway or causal graph occurs in this saved owner. |
+| Own PubMed identity and supplied abstract | passed | True | naturalproductmech:mibig-35224555cf | The matched article owns PMID 17564599; its own ArticleIdList identifies 10.1111/j.1462-2920.2007.01278.x. The complete supplied abstract was read. Reference-list identifiers and family names are not used as exact congener aliases. |
+| Exact natural structure and stereochemistry | unavailable | True | naturalproductmech:mibig-35224555cf | The saved encodings are internally consistent, but no exact-congener primary structure figures, spectra, supplements or current chemical authority were inspected. Explicit local geometry is not a natural configuration verification. |
+| Exact stock, locus, occurrence and assay applicability | unavailable | True | naturalproductmech:mibig-35224555cf | The family abstract reports a strain and a cloned cluster, but exact stored congener-to-locus experiments, present taxonomy, separate occurrence references and individual assay parameters remain unverified. |
+
+## Scientific And Domain Assessments
+
+### Internal chemical consistency
+
+representation: supported. Targets: naturalproductmech:mibig-35224555cf.
+
+The saved SMILES and Standard InChI produce declared full key UHXDSKADPILIPT-OHIHYABUSA-N, formula C29H48N4O6, one fragment, net charge zero and the same normalized Standard InChI. Each representation has 5 specified and 0 unspecified tetrahedral carbon centres, with 3 specified double bonds. The 4 additional unspecified double-bond flags in the parsed InChI are C(-O)=N forms, not missing C=C assignments. This establishes internal encoding consistency only.
+
+### Distinct stored congeners and name scope
+
+identity: unknown. Targets: naturalproductmech:mibig-35224555cf.
+
+glidobactin C is retained as BGC0000997 version 4 compound 3. B and C have distinct full keys and formulas C29H46N4O6 and C29H48N4O6; their stored lipid-chain unsaturation differs. The unlettered C27H44N4O6 record remains a separate exact local structure and is not renamed glidobactin A by this assessment.
+
+### Stored macrocycle geometry versus family description
+
+identity: unknown. Targets: naturalproductmech:mibig-35224555cf.
+
+B/C store the macrocycle fragment NC(=O)/C=C\[C@@H] and the InChI term 17-16-, whereas the unlettered structure stores NC(=O)/C=C/[C@@H] and 15-14+. The abstract describes a family 4(S)-amino-2(E)-pentenoic-acid building block. These are precise local/source observations, but the abstract alone does not establish exact B/C applicability or justify selecting/replacing natural geometry.
+
+### Strain and glb-cluster context
+
+evidence: supported. Targets: naturalproductmech:mibig-35224555cf.
+
+The own abstract explicitly reports K481-B101 (ATCC 53080; DSM 7029) and cloning/functional analysis of glbA-glbH, with a mixed NRPS/PKS pathway model. This is bounded family biosynthesis context; no exact B/C assignment or experiment type is inferred beyond the supplied text.
+
+### Historical organism label and locus evidence grade
+
+provenance: unknown. Targets: naturalproductmech:mibig-35224555cf.
+
+The owner retains [Polyangium] brachysporum (NCBITaxon:413882) as SOURCE_ASSERTION and AM412319.1/BGC0000997 as CLUSTER_UNSTATED. The raw entry is questionable/unknown quality-completeness with blank locus coordinates/methods. The abstract says K481-B101 was originally assigned to Polyangium and places it in Burkholderiales from 16S evidence. This preserves the historical-label context without asserting a current taxonomic correction, exact sequence mapping or congener-specific locus proof.
+
+### Occurrence evidence distinct from producer and homology
+
+provenance: unknown. Targets: naturalproductmech:mibig-35224555cf.
+
+The four LOTUS Polyangium genus occurrences cite distinct DOIs ending 41.1331, 41.1338, 41.1358 and 41.1906. Those source bodies were not requested after the separate Crossref canary failed. The MYXOBACTERIAL occurrence group and OTHER_BACTERIAL producer group refer to separate retained assertions and are not treated as an automatically contradictory current-taxonomy claim.
+
+### MIBiG classes and computed classification
+
+representation: supported. Targets: naturalproductmech:mibig-35224555cf.
+
+NRPS/PKS are retained MIBiG source classes; Cyclic peptides and Lipopeptides are NPClassifier predictions. The abstract supplies a broad mixed NRPS/PKS architecture and biosynthetic-model context, without converting computed classes into independent experimental congener assignments.
+
+### Assay and target applicability
+
+quantity: unknown. Targets: naturalproductmech:mibig-35224555cf.
+
+The original glidobactin C owner and retained arrays supply no individual assay annotation or direct molecular target. The abstract describes family cytotoxicity and biosynthesis; no B/C-specific quantitative potency or mechanism is transferred from that description.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| SCI737-LOCAL | /private/tmp/npm-review-work/shared-next-batch074-tentative/tentative-owner-source-inventory-001.json; /entries/6/owner_document; /entries/6/rows; /entries/6/row_guards; /entries/6/supplemental_retained_rows; sibling owner_document/chemical_structure entries 5,6,7 | context_only | The whole original glidobactin C owner, seven retained arrays containing 6 rows, and two empty supplemental arrays were read. Exact producer, locus and occurrence assertions, structure literals and curation history are retained. No bioactivity annotation, molecular target, pathway or causal graph occurs in this saved owner. |
+| SCI737-CHEM | /private/tmp/npm-review-work/shared-next-batch074-tentative/source-science-preparation/root-tentative74-local-chemical-consistency-and-neighbors-001.json; /records/6/comparisons; /records/6/smiles/computed; /records/6/inchi/computed; /records/6/inchi/unspecified_neighbors; original record clock 2026-10-27T20:34:06.999770Z to 2026-10-27T20:34:07.000752Z | supports | The saved SMILES and Standard InChI produce declared full key UHXDSKADPILIPT-OHIHYABUSA-N, formula C29H48N4O6, one fragment, net charge zero and the same normalized Standard InChI. Each representation has 5 specified and 0 unspecified tetrahedral carbon centres, with 3 specified double bonds. The 4 additional unspecified double-bond flags in the parsed InChI are C(-O)=N forms, not missing C=C assignments. This establishes internal encoding consistency only. |
+| SCI737-ABSTRACT | /private/tmp/npm-review-work/shared-next-batch074-tentative/literature-preparation/public-metadata-pubmed-001/pmid-17564599.xml; ./PubmedArticle/MedlineCitation/PMID; ./PubmedArticle/MedlineCitation/Article/ArticleTitle; ./PubmedArticle/MedlineCitation/Article/Abstract; ./PubmedArticle/PubmedData/ArticleIdList (own article only) | partial | The own PMID 17564599 abstract reports glidobactin-family isolation from K481-B101 (ATCC 53080; DSM 7029), originally assigned to Polyangium brachysporum, and cloning/functional analysis of glbA-glbH. Its 16S interpretation places that strain in Burkholderiales. The NRPS/PKS architecture supports a pathway model; homologous clusters in Photorhabdus luminescens and Burkholderia pseudomallei suggest similar compounds. This is not exact B/C congener, natural-geometry, quantitative-activity or Photorhabdus product-isolation proof. |
+| SCI737-ACCESS | /private/tmp/npm-review-work/shared-next-batch074-tentative/literature-preparation/root-tentative74-crossref-canary-failure-observation-001.json; /remaining_unattempted; /actual_error; /actual_outbound_at; /actual_finished_at; /index | context_only | The Crossref canary for a different DOI failed at DNS resolution before an HTTP response. The relevant occurrence DOI routes 10.7164/antibiotics.41.1331, 10.7164/antibiotics.41.1338, 10.7164/antibiotics.41.1358, 10.7164/antibiotics.41.1906 remain unattempted. Their article content is unavailable in this inspected evidence set; no failure is assigned to those unrequested routes and no citation error is inferred. |
+
+## Limits And Additional Notes
+
+- The complete original owner and retained source rows were read literally; full-owner scientific verification and current taxonomy, sequence or chemical authority verification were not performed.
+- Internal full-key and formula agreement, five specified tetrahedral carbon centres and explicit double-bond flags do not prove the natural configuration of this exact congener. InChI C(-O)=N flags are not additional missing alkene configurations.
+- Only the complete supplied PubMed abstract and own bibliographic identifiers were inspected for the biosynthesis paper; exact-congener primary figures, structural spectra, supplements and detailed experimental methods remain unverified.
+- The stored B/C versus unlettered macrocycle geometry difference and the family abstract 2(E) descriptor require exact source applicability before a natural-structure correction could be asserted.
+- The separate occurrence DOI routes remain unattempted after a different Crossref canary failed before HTTP. Their unavailable content is an evidence limitation, not proof of miscitation or absence of production.
+- The K481-B101 family evidence does not independently establish exact B/C natural geometry, congener-specific locus experiment or quantitative bioactivity.
+- Configured consistency only; independent scientific claim support and unrestricted remote authority refresh are not implied.
+- FailedQC001 is retained for an explicit separate network-enabled retry; no artifact will be overwritten.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint and before downstream tests. Its actual exit1/log/input capture/root observation remain pinned; the selected successful canonical QC attempt002 is separately timed. No individual-review validation failure or counter reset is claimed.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings; this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions and no-adapter pairs; a successful command does not convert these into verified scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population was checked; external caches and generated bytecode are not asserted to be independently byte-pinned.
+- The whole local owner and retained source rows were read. Full-owner scientific verification remains false; scientific_review denotes the bounded scientific interpretation in this report.
+- Original owner/source reading, two-encoding computation, neighbor inspection, HTTP retrieval and later metadata reading retain separate clocks. Official intake separately computed SMILES facts.
+- No scientific record, maintained input or native curation status was changed. Any findings and actions record ROOT-adopted proposed work; exact-source limitations and unavailable checks remain explicit.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261027T220425Z-glidobactin-c
+title: Scientific review of glidobactin C
+started_at: '2026-10-27T22:01:09.653308Z'
+finished_at: '2026-10-27T22:04:25.609183Z'
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: Glidobactin C retains a distinct C29H48N4O6 encoding with three specified
+  double bonds and no unspecified carbon stereocentres in the saved local calculation.
+  Its lipid-chain unsaturation differs from B. Family biosynthesis evidence does not
+  independently establish the exact C structure, macrocycle geometry, occurrence citations
+  or activity.
+source:
+  git_revision: 14373517042b407747272446f79953ae86d51fa4
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/glidobactin-c.yaml
+    sha256: 5dea18c072d1764fd599cc0e91e09d911bf67fc1f243afdb1a20f0eea40ed6b9
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+targets:
+- target_id: naturalproductmech:mibig-35224555cf
+  path: data/natural_products/amino_acids_and_peptides/glidobactin-c.yaml
+  label: glidobactin C
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+scope:
+  description: Bounded assessment of the original glidobactin C owner and exact retained
+    source rows, saved chemical encoding consistency, own PubMed title/abstract/identifiers
+    and the precise source-access limits.
+  selection: One exact record selected in canonical repository path order from the
+    unreviewed population; this observation assesses only its declared partial scientific
+    scope.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-35224555cf
+  exclusions:
+  - target: Full-owner scientific verification
+    reason: Not independently verified within the stated source access and scientific
+      scope; corresponding checks or assessments remain unavailable or unknown.
+  - target: Complete primary methods, figures, spectra and supplements
+    reason: Not independently verified within the stated source access and scientific
+      scope; corresponding checks or assessments remain unavailable or unknown.
+  - target: Current chemical, taxonomic, sequence and cross-reference authority verification
+    reason: Not independently verified within the stated source access and scientific
+      scope; corresponding checks or assessments remain unavailable or unknown.
+  - target: Uninspected exact-congener natural configuration, stock/locus experiment
+      and quantitative assay transfer
+    reason: Not independently verified within the stated source access and scientific
+      scope; corresponding checks or assessments remain unavailable or unknown.
+checks:
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its
+    pinned path.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-corpus-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.783967Z;
+    finished 2026-10-25T22:37:16.453216Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.log.
+    Reused for batch074 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch074. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-35224555cf
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: Fresh canonical reproduction gate passed:all3116 records byte-identical
+    to source seeding; source warnings remain retained.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-reproduction-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784055Z;
+    finished 2026-10-25T22:37:31.682209Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.log.
+    Reused for batch074 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch074. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-35224555cf
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: Fresh deterministic review queue completed:8922 rows across12 queues. Queue
+    output is not scientific-review coverage.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-review-queue-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just review-queue --tsv /private/tmp/npm-review-queue-batch-036-fresh14373517-001.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.781802Z;
+    finished 2026-10-25T22:37:08.229737Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.log.
+    Reused for batch074 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch074. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-35224555cf
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking
+    mismatches and4898no-adapter skips remain explicit.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-validate-products-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784040Z;
+    finished 2026-10-25T22:37:32.251879Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.log.
+    Reused for batch074 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch074. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-35224555cf
+- check_id: shared-qc
+  name: Full repository quality gate on the fresh main baseline
+  status: passed
+  required: true
+  summary: Canonical just qc completed with actual terminal exit0:1024 tests passed,4
+    skipped,2 dependency warnings;3116 records passed closed schema validation, site
+    freshness, byte reproduction and lockfile integrity.22 governed artifacts and15
+    raw inventories passed. Prior DNS failed001 remains preserved.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-qc-attempt-002
+    PYTHONDONTWRITEBYTECODE=1 just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-002 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:40:55.179857Z;
+    finished 2026-10-25T22:46:28.974296Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.log.
+    Reused for batch074 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch074. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-35224555cf
+- check_id: C-STRICT
+  name: Native strict target validation
+  status: passed
+  required: true
+  summary: The selected owner passed the documented strict validator. This establishes
+    configured consistency only.
+  command: just validate-strict data/natural_products/amino_acids_and_peptides/glidobactin-c.yaml
+    --out /private/tmp/npm-review-work/737/strict.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Actual intake execution finished 2026-10-27T22:01:11.031678Z. Original
+    receipt: /private/tmp/npm-review-work/737/strict-receipt.json.'
+  target_ids:
+  - naturalproductmech:mibig-35224555cf
+- check_id: SCI737-ENCODINGS
+  name: Saved two-encoding consistency
+  status: passed
+  required: true
+  summary: The saved SMILES and Standard InChI produce declared full key UHXDSKADPILIPT-OHIHYABUSA-N,
+    formula C29H48N4O6, one fragment, net charge zero and the same normalized Standard
+    InChI. Each representation has 5 specified and 0 unspecified tetrahedral carbon
+    centres, with 3 specified double bonds. The 4 additional unspecified double-bond
+    flags in the parsed InChI are C(-O)=N forms, not missing C=C assignments. This
+    establishes internal encoding consistency only.
+  evidence_ids:
+  - SCI737-CHEM
+  target_ids:
+  - naturalproductmech:mibig-35224555cf
+- check_id: SCI737-LOCAL-JOINS
+  name: Whole original owner and exact retained source joins
+  status: passed
+  required: true
+  summary: The whole original glidobactin C owner, seven retained arrays containing
+    6 rows, and two empty supplemental arrays were read. Exact producer, locus and
+    occurrence assertions, structure literals and curation history are retained. No
+    bioactivity annotation, molecular target, pathway or causal graph occurs in this
+    saved owner.
+  evidence_ids:
+  - SCI737-LOCAL
+  target_ids:
+  - naturalproductmech:mibig-35224555cf
+- check_id: SCI737-OWN-ARTICLE
+  name: Own PubMed identity and supplied abstract
+  status: passed
+  required: true
+  summary: The matched article owns PMID 17564599; its own ArticleIdList identifies
+    10.1111/j.1462-2920.2007.01278.x. The complete supplied abstract was read. Reference-list
+    identifiers and family names are not used as exact congener aliases.
+  evidence_ids:
+  - SCI737-ABSTRACT
+  target_ids:
+  - naturalproductmech:mibig-35224555cf
+- check_id: SCI737-NATURAL-IDENTITY
+  name: Exact natural structure and stereochemistry
+  status: unavailable
+  required: true
+  summary: The saved encodings are internally consistent, but no exact-congener primary
+    structure figures, spectra, supplements or current chemical authority were inspected.
+    Explicit local geometry is not a natural configuration verification.
+  evidence_ids:
+  - SCI737-LOCAL
+  - SCI737-CHEM
+  - SCI737-ABSTRACT
+  target_ids:
+  - naturalproductmech:mibig-35224555cf
+- check_id: SCI737-EXPERIMENT-APPLICABILITY
+  name: Exact stock, locus, occurrence and assay applicability
+  status: unavailable
+  required: true
+  summary: The family abstract reports a strain and a cloned cluster, but exact stored
+    congener-to-locus experiments, present taxonomy, separate occurrence references
+    and individual assay parameters remain unverified.
+  evidence_ids:
+  - SCI737-LOCAL
+  - SCI737-ABSTRACT
+  - SCI737-ACCESS
+  target_ids:
+  - naturalproductmech:mibig-35224555cf
+evidence:
+- evidence_id: SCI737-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch074-tentative/tentative-owner-source-inventory-001.json
+  accessed_at: '2026-10-27T20:32:40.640683Z'
+  locator: /entries/6/owner_document; /entries/6/rows; /entries/6/row_guards; /entries/6/supplemental_retained_rows;
+    sibling owner_document/chemical_structure entries 5,6,7
+  snapshot_sha256: f16d8ad06743d4ce16187336c67cc9b27c42bc26b8d83a75d8205b92ee407e7e
+  support: context_only
+  summary: The whole original glidobactin C owner, seven retained arrays containing
+    6 rows, and two empty supplemental arrays were read. Exact producer, locus and
+    occurrence assertions, structure literals and curation history are retained. No
+    bioactivity annotation, molecular target, pathway or causal graph occurs in this
+    saved owner.
+- evidence_id: SCI737-CHEM
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch074-tentative/source-science-preparation/root-tentative74-local-chemical-consistency-and-neighbors-001.json
+  accessed_at: '2026-10-27T20:36:45.687735Z'
+  locator: /records/6/comparisons; /records/6/smiles/computed; /records/6/inchi/computed;
+    /records/6/inchi/unspecified_neighbors; original record clock 2026-10-27T20:34:06.999770Z
+    to 2026-10-27T20:34:07.000752Z
+  snapshot_sha256: 9673400e8e1da030ce3d2e5d2fd24d4f4d3c344fd6b572ffdb06ca50a4515c78
+  support: supports
+  summary: The saved SMILES and Standard InChI produce declared full key UHXDSKADPILIPT-OHIHYABUSA-N,
+    formula C29H48N4O6, one fragment, net charge zero and the same normalized Standard
+    InChI. Each representation has 5 specified and 0 unspecified tetrahedral carbon
+    centres, with 3 specified double bonds. The 4 additional unspecified double-bond
+    flags in the parsed InChI are C(-O)=N forms, not missing C=C assignments. This
+    establishes internal encoding consistency only.
+- evidence_id: SCI737-ABSTRACT
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch074-tentative/literature-preparation/public-metadata-pubmed-001/pmid-17564599.xml
+  accessed_at: '2026-10-27T20:43:19.797243Z'
+  locator: ./PubmedArticle/MedlineCitation/PMID; ./PubmedArticle/MedlineCitation/Article/ArticleTitle;
+    ./PubmedArticle/MedlineCitation/Article/Abstract; ./PubmedArticle/PubmedData/ArticleIdList
+    (own article only)
+  snapshot_sha256: 788cae7136fa635d98ac28e43eb64fb5aeebf796d626c2194d103cde1bd3ff20
+  support: partial
+  summary: The own PMID 17564599 abstract reports glidobactin-family isolation from
+    K481-B101 (ATCC 53080; DSM 7029), originally assigned to Polyangium brachysporum,
+    and cloning/functional analysis of glbA-glbH. Its 16S interpretation places that
+    strain in Burkholderiales. The NRPS/PKS architecture supports a pathway model;
+    homologous clusters in Photorhabdus luminescens and Burkholderia pseudomallei
+    suggest similar compounds. This is not exact B/C congener, natural-geometry, quantitative-activity
+    or Photorhabdus product-isolation proof.
+- evidence_id: SCI737-ACCESS
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch074-tentative/literature-preparation/root-tentative74-crossref-canary-failure-observation-001.json
+  accessed_at: '2026-10-27T20:52:29.116177Z'
+  locator: /remaining_unattempted; /actual_error; /actual_outbound_at; /actual_finished_at;
+    /index
+  snapshot_sha256: fe89dbc7b4d0312aede9f76fc567be77fa33459e9faeacf971429fd02c1e6857
+  support: context_only
+  summary: The Crossref canary for a different DOI failed at DNS resolution before
+    an HTTP response. The relevant occurrence DOI routes 10.7164/antibiotics.41.1331,
+    10.7164/antibiotics.41.1338, 10.7164/antibiotics.41.1358, 10.7164/antibiotics.41.1906
+    remain unattempted. Their article content is unavailable in this inspected evidence
+    set; no failure is assigned to those unrequested routes and no citation error
+    is inferred.
+assessments:
+- assessment_id: SCI737-ENCODING
+  area: representation
+  topic: Internal chemical consistency
+  outcome: supported
+  summary: The saved SMILES and Standard InChI produce declared full key UHXDSKADPILIPT-OHIHYABUSA-N,
+    formula C29H48N4O6, one fragment, net charge zero and the same normalized Standard
+    InChI. Each representation has 5 specified and 0 unspecified tetrahedral carbon
+    centres, with 3 specified double bonds. The 4 additional unspecified double-bond
+    flags in the parsed InChI are C(-O)=N forms, not missing C=C assignments. This
+    establishes internal encoding consistency only.
+  evidence_ids:
+  - SCI737-CHEM
+  target_ids:
+  - naturalproductmech:mibig-35224555cf
+- assessment_id: SCI737-CONGENER
+  area: identity
+  topic: Distinct stored congeners and name scope
+  outcome: unknown
+  summary: glidobactin C is retained as BGC0000997 version 4 compound 3. B and C have
+    distinct full keys and formulas C29H46N4O6 and C29H48N4O6; their stored lipid-chain
+    unsaturation differs. The unlettered C27H44N4O6 record remains a separate exact
+    local structure and is not renamed glidobactin A by this assessment.
+  evidence_ids:
+  - SCI737-LOCAL
+  - SCI737-CHEM
+  - SCI737-ABSTRACT
+  target_ids:
+  - naturalproductmech:mibig-35224555cf
+- assessment_id: SCI737-GEOMETRY
+  area: identity
+  topic: Stored macrocycle geometry versus family description
+  outcome: unknown
+  summary: B/C store the macrocycle fragment NC(=O)/C=C\[C@@H] and the InChI term
+    17-16-, whereas the unlettered structure stores NC(=O)/C=C/[C@@H] and 15-14+.
+    The abstract describes a family 4(S)-amino-2(E)-pentenoic-acid building block.
+    These are precise local/source observations, but the abstract alone does not establish
+    exact B/C applicability or justify selecting/replacing natural geometry.
+  evidence_ids:
+  - SCI737-LOCAL
+  - SCI737-CHEM
+  - SCI737-ABSTRACT
+  target_ids:
+  - naturalproductmech:mibig-35224555cf
+- assessment_id: SCI737-FAMILY-BIOSYNTHESIS
+  area: evidence
+  topic: Strain and glb-cluster context
+  outcome: supported
+  summary: The own abstract explicitly reports K481-B101 (ATCC 53080; DSM 7029) and
+    cloning/functional analysis of glbA-glbH, with a mixed NRPS/PKS pathway model.
+    This is bounded family biosynthesis context; no exact B/C assignment or experiment
+    type is inferred beyond the supplied text.
+  evidence_ids:
+  - SCI737-ABSTRACT
+  target_ids:
+  - naturalproductmech:mibig-35224555cf
+- assessment_id: SCI737-PRODUCER-LOCUS
+  area: provenance
+  topic: Historical organism label and locus evidence grade
+  outcome: unknown
+  summary: The owner retains [Polyangium] brachysporum (NCBITaxon:413882) as SOURCE_ASSERTION
+    and AM412319.1/BGC0000997 as CLUSTER_UNSTATED. The raw entry is questionable/unknown
+    quality-completeness with blank locus coordinates/methods. The abstract says K481-B101
+    was originally assigned to Polyangium and places it in Burkholderiales from 16S
+    evidence. This preserves the historical-label context without asserting a current
+    taxonomic correction, exact sequence mapping or congener-specific locus proof.
+  evidence_ids:
+  - SCI737-LOCAL
+  - SCI737-ABSTRACT
+  target_ids:
+  - naturalproductmech:mibig-35224555cf
+- assessment_id: SCI737-OCCURRENCE
+  area: provenance
+  topic: Occurrence evidence distinct from producer and homology
+  outcome: unknown
+  summary: The four LOTUS Polyangium genus occurrences cite distinct DOIs ending 41.1331,
+    41.1338, 41.1358 and 41.1906. Those source bodies were not requested after the
+    separate Crossref canary failed. The MYXOBACTERIAL occurrence group and OTHER_BACTERIAL
+    producer group refer to separate retained assertions and are not treated as an
+    automatically contradictory current-taxonomy claim.
+  evidence_ids:
+  - SCI737-LOCAL
+  - SCI737-ABSTRACT
+  - SCI737-ACCESS
+  target_ids:
+  - naturalproductmech:mibig-35224555cf
+- assessment_id: SCI737-CLASSIFICATION
+  area: representation
+  topic: MIBiG classes and computed classification
+  outcome: supported
+  summary: NRPS/PKS are retained MIBiG source classes; Cyclic peptides and Lipopeptides
+    are NPClassifier predictions. The abstract supplies a broad mixed NRPS/PKS architecture
+    and biosynthetic-model context, without converting computed classes into independent
+    experimental congener assignments.
+  evidence_ids:
+  - SCI737-LOCAL
+  - SCI737-ABSTRACT
+  target_ids:
+  - naturalproductmech:mibig-35224555cf
+- assessment_id: SCI737-ACTIVITY
+  area: quantity
+  topic: Assay and target applicability
+  outcome: unknown
+  summary: The original glidobactin C owner and retained arrays supply no individual
+    assay annotation or direct molecular target. The abstract describes family cytotoxicity
+    and biosynthesis; no B/C-specific quantitative potency or mechanism is transferred
+    from that description.
+  evidence_ids:
+  - SCI737-LOCAL
+  - SCI737-ABSTRACT
+  target_ids:
+  - naturalproductmech:mibig-35224555cf
+findings: []
+actions: []
+limitations:
+- The complete original owner and retained source rows were read literally; full-owner
+  scientific verification and current taxonomy, sequence or chemical authority verification
+  were not performed.
+- Internal full-key and formula agreement, five specified tetrahedral carbon centres
+  and explicit double-bond flags do not prove the natural configuration of this exact
+  congener. InChI C(-O)=N flags are not additional missing alkene configurations.
+- Only the complete supplied PubMed abstract and own bibliographic identifiers were
+  inspected for the biosynthesis paper; exact-congener primary figures, structural
+  spectra, supplements and detailed experimental methods remain unverified.
+- The stored B/C versus unlettered macrocycle geometry difference and the family abstract
+  2(E) descriptor require exact source applicability before a natural-structure correction
+  could be asserted.
+- The separate occurrence DOI routes remain unattempted after a different Crossref
+  canary failed before HTTP. Their unavailable content is an evidence limitation,
+  not proof of miscitation or absence of production.
+- The K481-B101 family evidence does not independently establish exact B/C natural
+  geometry, congener-specific locus experiment or quantitative bioactivity.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- FailedQC001 is retained for an explicit separate network-enabled retry; no artifact
+  will be overwritten.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint
+  and before downstream tests. Its actual exit1/log/input capture/root observation
+  remain pinned; the selected successful canonical QC attempt002 is separately timed.
+  No individual-review validation failure or counter reset is claimed.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter
+  skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings;
+  this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld
+  nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological
+  or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological
+  production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions
+  and no-adapter pairs; a successful command does not convert these into verified
+  scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command
+  execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population
+  was checked; external caches and generated bytecode are not asserted to be independently
+  byte-pinned.
+notes:
+- The whole local owner and retained source rows were read. Full-owner scientific
+  verification remains false; scientific_review denotes the bounded scientific interpretation
+  in this report.
+- Original owner/source reading, two-encoding computation, neighbor inspection, HTTP
+  retrieval and later metadata reading retain separate clocks. Official intake separately
+  computed SMILES facts.
+- No scientific record, maintained input or native curation status was changed. Any
+  findings and actions record ROOT-adopted proposed work; exact-source limitations
+  and unavailable checks remain explicit.
+```
