@@ -1,0 +1,1056 @@
+# Butanochelin: source-faithful putative locus with unavailable original chemistry
+
+- Review: 20261021T171755Z-butanochelin
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-21T17:05:14.243062Z
+- Finished UTC: 2026-10-21T17:17:55.698713Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The exact named butanochelin source assertion and strain identifiers are supported by the primary abstract and deposited sequence. Current chemical authorities agree with the stored achiral graph, and the empty-method grades remain conservative. Original chemical identification, congener-specific culture and feeding details remain unavailable; no confirmed curation defect is established.
+
+## Scope And Provenance
+
+One complete generated owner and any referenced components, assessed claim by claim for exact identity, provenance, origin, producer and occurrence scope, biosynthesis, classification, optional content and audit history.
+
+Selection: Campaign record 118, batch 012, selected in path order from the fresh-main authoritative validated catalogue and the separately validated targets in earlier batch commits (publication tracked separately). At selection, 164 of 3116 current records had campaign coverage and 2952 remained. The population search included ignored files. Exactly one target is assessed here.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 1c2402097718c138b081e00943de8f04de0541cd.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-f5ac1858de | data/natural_products/alkaloids/butanochelin.yaml | generated | butanochelin |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Closed-schema target validation | passed | True | naturalproductmech:mibig-f5ac1858de | The documented target strict validator completed; scientific support is assessed separately. |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-f5ac1858de | All 3,116 current record files agree with PATHS.tsv and their pinned filing pathways. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-f5ac1858de | All 3,116 current records passed the documented byte-reproduction gate against committed inventories and maintained curation inputs. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-f5ac1858de | The exhaustive review queue produced 8,928 diagnostic rows across 12 queues; this deterministic output does not establish scientific review. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-f5ac1858de | The configured identifier-label gate passed using the existing ontology caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions, 499 warning-only mismatches and 4,744 pairs skipped because their prefixes have no adapter. |
+| Full repository quality gate on the current main baseline | passed | True | naturalproductmech:mibig-f5ac1858de | The full documented just qc recipe passed on the unchanged main baseline during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). All configured lint, governance, documentation, provenance, source-queue, schema, rendering, reproduction, filing-integrity and reporting stages completed successfully. |
+| Complete owner and referenced-component scope | passed | True | naturalproductmech:mibig-f5ac1858de | Complete owner and exact matching source rows were read after actual intake, and their bytes match this base. Referenced components are empty. Fresh strict target validation is retained separately. |
+| Named product and strain source assertion | passed | True | naturalproductmech:mibig-f5ac1858de | The original abstract and genomic source metadata support the bounded named-product/source assertion without a method upgrade. |
+| Exact primary chemical and experimental scope | unavailable | True | naturalproductmech:mibig-f5ac1858de | Required original main/SI and structure drawing remain unavailable; culture-to-congener and final-product experimental details cannot be certified. |
+| Stored chemical representation and complete source row | passed | True | naturalproductmech:mibig-f5ac1858de | Fresh intake derivation agrees with the stored graph; the source selector, full row and prepared snapshot were independently rechecked. |
+| Current literal NPAtlas structure resolution | unavailable | False | naturalproductmech:mibig-f5ac1858de | Literal current NPAtlas response was unavailable after bounded requests; retained source xref is not removed or certified from name matching. |
+| Exact original butanochelin structure identification | unavailable | True | naturalproductmech:mibig-f5ac1858de | The abstract identifies named compound2 but not its complete structure. Available current graphs agree on achiral putrescine bis(2,3-dihydroxybenzamide), C18H20N2O6; this cannot substitute for the unavailable original structure evidence. |
+
+## Scientific And Domain Assessments
+
+### Native status and retained audit history
+
+provenance: supported. Targets: naturalproductmech:mibig-f5ac1858de.
+
+All retained history events record SEEDED_FROM_SOURCES provenance. The owner remains SEEDED. This review does not change its status, history or scientific content.
+
+### Present optional assertions and enrichment limits
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-f5ac1858de.
+
+No optional pathway, mechanism graph, molecular target, bioactivity, application, clinical status, cross-record relation or discussion is asserted. Optional enrichment is separate from correcting current claims.
+
+### Exact-key computed classification provenance
+
+representation: supported. Targets: naturalproductmech:mibig-f5ac1858de.
+
+The owner reproduces its exact-key NPClassifier result, including npclassifier.gnps2.org@2026-09-07, Alkaloids filing, superclass/class labels and the false glycoside prediction. Predictions do not independently prove precursor use, natural origin or stereochemistry. Identity correction requires reclassification against the corrected effective key.
+
+### Literal organism-identifier routing
+
+provenance: supported. Targets: naturalproductmech:mibig-f5ac1858de.
+
+Inspected literal names and identifiers match source rows. Primary occurrences and exact experimental stock identities are assessed independently; source synonyms are preserved.
+
+### Producer and experimental-host transcriptomic applicability
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-f5ac1858de.
+
+Acinetobacter bouvetii DSM14964 is absent. The A. baumannii catalogue dataset does not establish species or stock equivalence, production or pathway membership.
+
+### producer_organisms[0] and biosynthetic_gene_clusters[0]
+
+evidence: supported. Targets: naturalproductmech:mibig-f5ac1858de.
+
+The named strain/product abstract and current source/accession agree. Empty imported methods correctly yield SOURCE_ASSERTION and CLUSTER_UNSTATED: the putative locus is not being represented as experimental demonstration. Do not promote the link from a VibH homolog, class-level siderophore chemistry or precursor feeding without the full exact-product experiment.
+
+### occurrences[0] and biosynthesis_origin
+
+evidence: supported. Targets: naturalproductmech:mibig-f5ac1858de.
+
+The sole LOTUS DOI and producer PMID identify the same primary study and exact named butanochelin (2), not independent replicated observations. Its abstract positively supports a biological source in A. bouvetii. The full culture/feeding conditions remain unavailable, so no assertion is made that the target was necessarily isolated from an unamended culture or synthesized only after feeding.
+
+### Stored graph and source-concept identity
+
+identity: supported. Targets: naturalproductmech:mibig-f5ac1858de.
+
+The complete source row BGC0002473:2 and minted source concept reproduce this stored representation. Formula, charge, Standard and fixed-H distinctions are independently recorded. Primary support and any conflicting exact xref are assessed separately.
+
+### Exact authority eligibility and source representation
+
+provenance: supported. Targets: naturalproductmech:mibig-f5ac1858de.
+
+No exact eligible row exists in the committed ChEBI projection for this owner. Current bounded name/key searches do not justify a different congener or a two-star grounding.
+
+### Original chemical identification of butanochelin2
+
+evidence: unknown. Targets: naturalproductmech:mibig-f5ac1858de.
+
+The original name and congener number are positive. Exact primary constitution, detailed identification and workup cannot be assessed from the unavailable main/SI; no graph correction is justified by that gap.
+
+### Achiral current molecular representation
+
+representation: supported. Targets: naturalproductmech:mibig-f5ac1858de.
+
+The represented putrescine-linked bisamide has no tetrahedral stereocentre requiring an assigned hand. The current graph and formula are internally consistent; this does not independently verify its original isolation structure.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| R118-OWNER | data/natural_products/alkaloids/butanochelin.yaml; Complete owner, every assertion, discussions and history | supports | Root read the entire butanochelin owner following official intake and rechecked it against the pinned preparation. It contains 1 occurrence, 1 producer and 1 cluster assertions. The referenced component set is empty. Present optional fields: none. |
+| R118-LOCAL | /private/tmp/npm-review-work/118/local-sources.json; Complete resolved owner and all exact matching intake source rows | context_only | Root read every matching captured MIBiG, LOTUS, ChEBI, CyanoMetDB and NPClassifier row, including empty inventories and the resolved owner. Source fidelity is separate from independent experimental support. |
+| R118-Q16824973 | https://www.wikidata.org/wiki/Q16824973; Literal P225/P685 values in complete multi-entity response | context_only | Literal Q16824973 has matching source scientific names in P225 and source NCBI identifiers in P685. This verifies identifier routing, not occurrence, production or stock identity. |
+| R118-IMODULON | https://imodulondb.org/api/datasets; Complete official 20-organism/28-dataset catalogue | context_only | The entire catalogue was read at this actual retrieval. It establishes catalogue membership only; no chemical identity, production or arbitrary module assignment follows. |
+| S118-E-LOCAL | data/natural_products/alkaloids/butanochelin.yaml; Complete owner, resolved content, all matching local source rows, empty referenced-component mapping | supports | Exact butanochelin source selector BGC0002473:2, version 3; full parsed source row SHA256 6f8ce4127481b9979d77c1bb12a627cb69abe69c02a4829842ee30b048e482f0. Current method string is '', yielding SOURCE_ASSERTION and CLUSTER_UNSTATED. The complete present producer, locus, occurrence and origin claims were read; no mechanism graph or protein claim is present. |
+| S118-E-MIBIG | https://mibig.secondarymetabolites.org/repository/BGC0002473.3/annotations.json; Exact version, selected compound, taxonomy, locus and legacy references | supports | Current versioned MIBiG is active, quality questionable, completeness unknown. Its selected compound and source methods/accession reproduce the imported row. Database agreement is provenance, not independent strain-specific final-product evidence. |
+| S118-E-PRIMARY | PMID:32926028; Exact original PMID32926028 abstract and publication metadata; not the experimental main body | supports | The original PMID32926028 abstract explicitly identifies A. bouvetii DSM14964 as the source of propanochelin (1), butanochelin (2) and pentanochelin (3). Genome mining with a VibH homolog identifies a putative locus; precursor feeding with different amines generates additional analogues. The abstract does not resolve each congener’s fed versus unamended culture context or establish exact final-product knockout/enzymology. |
+| S118-E-ACCESSION | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&amp;id=NZ_KB892261.1&amp;rettype=gbwithparts&amp;retmode=text&amp;seq_start=30960&amp;seq_stop=41799; Header/source and relevant features in the exact targeted window | supports | The targeted NZ_KB892261.1:30960..41799 window identifies DSM14964, culture collection CIP107468, taxon 1120925 and BioSample SAMN02441705. These source identifiers bridge the named strain, not an independently demonstrated final-product pathway. PGAP feature annotations do not replace chemical or genetic experiments. |
+| S118-E-GAP | /private/tmp/npm-review-work/shared-next-batch012/bgc-science/source-notes.json; Original bounded retrieval receipts and retained read scopes | unknown | The original main and SI were not obtained after bounded RSC article/PDF/author-version, official supplement and actual eScholarship repository leads. The RSC supplement body is HTML 404; repository item 2959g5wx and its PDF returned 403. Detailed exact-congener culture, feeding, chemical identification and locus experiments remain uninspected. |
+| C118-OWNER | data/natural_products/alkaloids/butanochelin.yaml; Complete owner and all local-source rows; no referenced components | supports | The complete owner denotes butanochelin under naturalproductmech:mibig-f5ac1858de. Its exact source selector is BGC0002473:2, version 3, with complete parsed raw-row SHA256 6f8ce4127481b9979d77c1bb12a627cb69abe69c02a4829842ee30b048e482f0. The official intake and prepared owner bytes agree. |
+| C118-GRAPH | /private/tmp/npm-review-work/118/chemistry.json; Fresh intake RDKit result and frozen Standard/fixed-H comparison | supports | The stored SMILES recomputes to FBRVRHJYPWFVCL-UHFFFAOYSA-N, formula C18H20N2O6, formal charge 0; stored InChI/key agree. These are representation checks, not experimental identity proof. |
+| C118-COMPARISON | /private/tmp/npm-review-work/shared-next-batch012/chemistry-prep/chemical-comparison.json; Record 118; exact source rows and each graph comparison | supports | Butanochelin is achiral C18H20N2O6, the putrescine bis(2,3-dihydroxybenzamide) graph. Current MIBiG, PubChem exact-key response, CHEBI221303 two-star JSON/MOL and Q27462403 chemical representation agree. Literal NPA033093 remains unavailable after two bounded read timeouts. |
+| C118-LOCAL-SEARCH | /private/tmp/npm-review-work/118/chemistry-search-receipt.json; Exact full key, label, slug and source selector in raw/owner/curation trees | supports | Ignored-inclusive bounded search preserves all matching paths; an absent curation decision does not imply a missing scientific source. |
+| C118-CHEBI-SEARCH-1 | https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=FBRVRHJYPWFVCL-UHFFFAOYSA-N&amp;size=100; Literal key search; chebi-key-butanochelin.json | supports | 1 returned name/key results; evaluate exact key and stars, not name similarity. |
+| C118-CHEBI-SEARCH-2 | https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=butanochelin&amp;size=100; Literal name search; chebi-name-butanochelin.json | supports | 1 returned name/key results; evaluate exact key and stars, not name similarity. |
+| C118-AUTH-1 | https://mibig.secondarymetabolites.org/repository/BGC0002473.3/annotations.json; compounds[].structure; BGC0002473.3.json | supports | current MIBiG BGC0002473:2: parsed key FBRVRHJYPWFVCL-UHFFFAOYSA-N; exact stored Standard key match=True, fixed-H match=True. This current database representation is not independent primary experimental proof. |
+| C118-AUTH-2 | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/FBRVRHJYPWFVCL-UHFFFAOYSA-N/property/InChIKey,InChI,IsomericSMILES,MolecularFormula,Charge/JSON; PropertyTable.Properties[].SMILES; pubchem-key-butanochelin.json | supports | PubChem 10338559: parsed key FBRVRHJYPWFVCL-UHFFFAOYSA-N; exact stored Standard key match=True, fixed-H match=True. This current database representation is not independent primary experimental proof. |
+| C118-AUTH-3 | https://www.ebi.ac.uk/chebi/backend/api/public/compound/221303/; default_structure.smiles; CHEBI221303.json | supports | ChEBI JSON 221303: parsed key FBRVRHJYPWFVCL-UHFFFAOYSA-N; exact stored Standard key match=True, fixed-H match=True. This current database representation is not independent primary experimental proof. |
+| C118-AUTH-4 | https://www.ebi.ac.uk/chebi/backend/api/public/molfile/221303/; official MOL; CHEBI221303.mol | supports | ChEBI MOL 221303: parsed key FBRVRHJYPWFVCL-UHFFFAOYSA-N; exact stored Standard key match=True, fixed-H match=True. This current database representation is not independent primary experimental proof. |
+| C118-AUTH-5 | https://www.wikidata.org/wiki/Special:EntityData/Q27462403.json; P233; Q27462403.json | supports | Wikidata Q27462403: parsed key FBRVRHJYPWFVCL-UHFFFAOYSA-N; exact stored Standard key match=True, fixed-H match=True. This current database representation is not independent primary experimental proof. Canonical P233 is not an isomeric stereo assertion; compare P2017 when present. |
+| C118-ABSTRACT | PMID:32926028; Original publication abstract and exact metadata DOI10.1039/d0cc04171h | supports | The original abstract names butanochelin as compound2 alongside propanochelin1 and pentanochelin3. It does not supply the full chemical drawing or detailed structural-assignment data. The named-product bridge does not independently prove the complete authority graph. |
+| C118-PRIMARY-ACCESS | /private/tmp/npm-review-work/shared-next-batch012/bgc-science/source-notes.json; Exact 2020 butanochelin main/SI bounded access disposition | unknown | Original main and SI were not recovered through the retained RSC article/PDF/author-version, official supplement and actual eScholarship repository lead. HTML404 or403 bodies are not scientific PDFs; the original drawing and detailed chemical identification remain uninspected. |
+| C118-NPA-ACCESS | https://www.npatlas.org/api/v1/compound/NPA033093; Literal NPAtlas identifier; two retained bounded requests | unknown | The literal API requests timed out. The identifier was neither silently padded nor substituted. Other exact authority graphs do not prove what this inaccessible literal NPAtlas record currently contains; no exclusion follows from access failure. |
+
+## Limits And Additional Notes
+
+- This review evaluates present assertions and bounded evidence gaps; it does not claim exhaustive discovery of all later papers or require every optional mechanism for coverage.
+- Original abstract is not represented as a full-paper read. No final-product knockout, purified-enzyme or heterologous demonstration is inferred from genome mining.
+- The original butanochelin drawing and detailed identification remain unavailable; current authority agreement is assessed independently and does not close that primary gap.
+- No unsupported source deletion, optional mechanism addition or redundant strain correction is proposed; the current source taxon already names both culture collection designations.
+- Authority matches establish the representations actually returned at their retained access times; they are not independent experimental structure or absolute-hand determinations. Root and science sections separately assess organism, locus, classification and history claims.
+- No original butanochelin drawing or complete structural-assignment body/SI was available. Current authority agreement and the two-star CHEBI:221303 hit are not experimental proof or eligible three-star grounding.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35 explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). Skipped tests are not counted as passing tests. Existing ontology caches were used; no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do not establish biological production, stereochemical specificity, evidence adequacy, or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology results. Reuse establishes unchanged repository inputs; it is not a new remote authority query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all tracked files are hashed. Generated Python bytecode and external tool caches are not claimed to have been independently byte-pinned at the prior execution.
+- No scientific owner, inventory, curation table, native status or history was edited. Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification; target strict validation ran afresh. Scientific failed or unavailable checks are distinct from bundle validation.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T171755Z-butanochelin
+title: 'Butanochelin: source-faithful putative locus with unavailable original chemistry'
+started_at: '2026-10-21T17:05:14.243062Z'
+finished_at: '2026-10-21T17:17:55.698713Z'
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: The exact named butanochelin source assertion and strain identifiers are
+  supported by the primary abstract and deposited sequence. Current chemical authorities
+  agree with the stored achiral graph, and the empty-method grades remain conservative.
+  Original chemical identification, congener-specific culture and feeding details
+  remain unavailable; no confirmed curation defect is established.
+source:
+  git_revision: 1c2402097718c138b081e00943de8f04de0541cd
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/bistribromopyrrole.yaml
+    sha256: 8b3c8887fe4dbe182936e0ee4f4883028e3f11a6dfbab7aff87a8e887ef95bdf
+    role: context
+  - path: data/natural_products/alkaloids/borregomycin-a.yaml
+    sha256: bf9b44c57f6734da0c084b3068d28487abe4f659fdd4bb37757e8c7deca38a2e
+    role: context
+  - path: data/natural_products/alkaloids/borregomycin-b.yaml
+    sha256: 9476819eb5f2becadcb7d7fe05a0f58916aaec5ee1929fbf8ba99cfcdf0d2019
+    role: context
+  - path: data/natural_products/alkaloids/borregomycin-c.yaml
+    sha256: 1cc427346e84cd3ab15ec365a1b200fb03b43d5885908526a104597f1c4dc98f
+    role: context
+  - path: data/natural_products/alkaloids/borregomycin-d.yaml
+    sha256: 5a7dd75966bd491be3786cbcfbe11de6e0e63a0d79608d6eb602400ebd0b6cba
+    role: context
+  - path: data/natural_products/alkaloids/brabantamide-a.yaml
+    sha256: 9a1854c1561046147ba4b00018e2a2ada613d14d9e64e95c464f1999b9fa4282
+    role: context
+  - path: data/natural_products/alkaloids/brasiliamide-i.yaml
+    sha256: 2418c0f1f2fb61688678c0bea4fe3db760a58a662f2ec183a264c1e89efce07c
+    role: context
+  - path: data/natural_products/alkaloids/butanochelin.yaml
+    sha256: 57fd74a20cc397c2fa2249a402b4dec338d7d1571130b7b598570cf80c29d10c
+    role: target
+  - path: data/natural_products/alkaloids/c-3-sulfonylated-derivative.yaml
+    sha256: e3097dca4a594b6449cf9a61e7f57adf94f465a588c5a08d7e721f430aaff7a6
+    role: context
+  - path: data/natural_products/alkaloids/caerulomycin-a.yaml
+    sha256: dcf2bfab966f404a040e81d1de50a51c4742695b8f2850b487c5f19a5b467d67
+    role: context
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: data/raw/taxon_merged.tsv
+    sha256: 97b3efa66d4fc1679ab65ae547e78b2f627f37bc8e45ae33f2719008fe3863bb
+    role: context
+  - path: data/raw/taxon_names.tsv
+    sha256: 9058b9a99260eb483ea21ce7cc9713fd336177031d883f0b5fb50325c7b2c371
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/lotus_exclusions.py
+    sha256: 6352cac7c587eab5a56d907c523cc899d02d197009081624bf8649c675ee30f7
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+    role: context
+  - path: src/naturalproductmech/grading.py
+    sha256: ece54c4a2c0803f034ac59de51b1006cf79ea8d6b6256d75757d4adb88ea9630
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: tests/test_claim_references.py
+    sha256: 11b2fc60dbe32154df63fb2e8c784c7c8ba6585581c09bba2eebe2c5192d4c06
+    role: context
+  - path: tests/test_mibig_locus_evidence_overrides.py
+    sha256: 9177b5bd24f6e47cc4743857179217d9e0d4add9560b2ce3faefaebe53ba09a0
+    role: context
+  - path: tests/test_producer_strains.py
+    sha256: 17002ef1640464777f1925d12d842ed83c9098aad6de724ae0ea236ecccc4ff3
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 118, batch 012, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated targets in earlier
+    batch commits (publication tracked separately). At selection, 164 of 3116 current
+    records had campaign coverage and 2952 remained. The population search included
+    ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-f5ac1858de
+targets:
+- target_id: naturalproductmech:mibig-f5ac1858de
+  path: data/natural_products/alkaloids/butanochelin.yaml
+  label: butanochelin
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-f5ac1858de
+  command: just validate-strict data/natural_products/alkaloids/butanochelin.yaml
+    --out /private/tmp/npm-review-work/118/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T17:05:15.837661Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 current record files agree with PATHS.tsv and their pinned filing
+    pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055340+00:00;
+    finished 2026-10-21T09:55:22.727768+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-corpus.log. Reused
+    for batch012 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch012. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-f5ac1858de
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 current records passed the documented byte-reproduction gate
+    against committed inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055361+00:00;
+    finished 2026-10-21T09:56:44.050706+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-reproduction.log.
+    Reused for batch012 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch012. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-f5ac1858de
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The exhaustive review queue produced 8,928 diagnostic rows across 12 queues;
+    this deterministic output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just review-queue --tsv /private/tmp/npm-review-queue-batch-004.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.057401+00:00;
+    finished 2026-10-21T09:54:38.468783+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/review-queue.log. Reused
+    for batch012 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch012. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-f5ac1858de
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'The configured identifier-label gate passed using the existing ontology
+    caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions,
+    499 warning-only mismatches and 4,744 pairs skipped because their prefixes have
+    no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.061733+00:00;
+    finished 2026-10-21T09:56:36.296159+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/validate-products.log. Reused
+    for batch012 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch012. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-f5ac1858de
+- check_id: shared-qc
+  name: Full repository quality gate on the current main baseline
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed on the unchanged main baseline
+    during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+    All configured lint, governance, documentation, provenance, source-queue, schema,
+    rendering, reproduction, filing-integrity and reporting stages completed successfully.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:30.560925+00:00;
+    finished 2026-10-21T10:04:44.806799+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/qc.log. Reused for batch012
+    only after a fresh fetch/clean branch, equal commit/tree and two reads of all
+    9,182 tracked byte streams and modes (208,070,649 bytes), including a recheck
+    after the fresh authoritative catalogue. This gate was not rerun for batch012.
+    Original execution times, scope, warnings, exceptions and skips are retained.'
+  target_ids:
+  - naturalproductmech:mibig-f5ac1858de
+- check_id: R118-FULL-OWNER
+  name: Complete owner and referenced-component scope
+  status: passed
+  required: true
+  summary: Complete owner and exact matching source rows were read after actual intake,
+    and their bytes match this base. Referenced components are empty. Fresh strict
+    target validation is retained separately.
+  target_ids:
+  - naturalproductmech:mibig-f5ac1858de
+  evidence_ids:
+  - R118-OWNER
+  - R118-LOCAL
+- check_id: S118-C-SOURCE
+  name: Named product and strain source assertion
+  status: passed
+  required: true
+  summary: The original abstract and genomic source metadata support the bounded named-product/source
+    assertion without a method upgrade.
+  target_ids:
+  - naturalproductmech:mibig-f5ac1858de
+  evidence_ids:
+  - S118-E-PRIMARY
+  - S118-E-ACCESSION
+  - S118-E-LOCAL
+- check_id: S118-C-DETAIL
+  name: Exact primary chemical and experimental scope
+  status: unavailable
+  required: true
+  summary: Required original main/SI and structure drawing remain unavailable; culture-to-congener
+    and final-product experimental details cannot be certified.
+  target_ids:
+  - naturalproductmech:mibig-f5ac1858de
+  evidence_ids:
+  - S118-E-GAP
+  - S118-E-PRIMARY
+- check_id: C118-C-REPRESENTATION
+  name: Stored chemical representation and complete source row
+  status: passed
+  required: true
+  summary: Fresh intake derivation agrees with the stored graph; the source selector,
+    full row and prepared snapshot were independently rechecked.
+  target_ids:
+  - naturalproductmech:mibig-f5ac1858de
+  evidence_ids:
+  - C118-OWNER
+  - C118-GRAPH
+  - C118-COMPARISON
+- check_id: C118-C-NPA
+  name: Current literal NPAtlas structure resolution
+  status: unavailable
+  required: false
+  summary: Literal current NPAtlas response was unavailable after bounded requests;
+    retained source xref is not removed or certified from name matching.
+  target_ids:
+  - naturalproductmech:mibig-f5ac1858de
+  evidence_ids:
+  - C118-NPA-ACCESS
+- check_id: C118-C-PRIMARY-IDENTITY
+  name: Exact original butanochelin structure identification
+  status: unavailable
+  required: true
+  summary: The abstract identifies named compound2 but not its complete structure.
+    Available current graphs agree on achiral putrescine bis(2,3-dihydroxybenzamide),
+    C18H20N2O6; this cannot substitute for the unavailable original structure evidence.
+  target_ids:
+  - naturalproductmech:mibig-f5ac1858de
+  evidence_ids:
+  - C118-ABSTRACT
+  - C118-PRIMARY-ACCESS
+  - C118-COMPARISON
+evidence:
+- evidence_id: R118-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/butanochelin.yaml
+  locator: Complete owner, every assertion, discussions and history
+  accessed_at: '2026-10-21T17:05:43.284284Z'
+  support: supports
+  summary: 'Root read the entire butanochelin owner following official intake and
+    rechecked it against the pinned preparation. It contains 1 occurrence, 1 producer
+    and 1 cluster assertions. The referenced component set is empty. Present optional
+    fields: none.'
+  snapshot_sha256: 57fd74a20cc397c2fa2249a402b4dec338d7d1571130b7b598570cf80c29d10c
+- evidence_id: R118-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/118/local-sources.json
+  locator: Complete resolved owner and all exact matching intake source rows
+  accessed_at: '2026-10-21T17:05:43.284284Z'
+  support: context_only
+  summary: Root read every matching captured MIBiG, LOTUS, ChEBI, CyanoMetDB and NPClassifier
+    row, including empty inventories and the resolved owner. Source fidelity is separate
+    from independent experimental support.
+  snapshot_sha256: 01f381ba37d700e94d3e4047ccad290ebd739e29f7dd14f40d287f9776fd82ff
+- evidence_id: R118-Q16824973
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q16824973
+  locator: Literal P225/P685 values in complete multi-entity response
+  accessed_at: '2026-10-21T16:31:51.882063Z'
+  support: context_only
+  summary: Literal Q16824973 has matching source scientific names in P225 and source
+    NCBI identifiers in P685. This verifies identifier routing, not occurrence, production
+    or stock identity.
+  snapshot_sha256: c16267eaab9db4e998ad5b9df73ccae3b134b7f56bdcc3cf7bf55103d7521553
+- evidence_id: R118-IMODULON
+  kind: database
+  reference: https://imodulondb.org/api/datasets
+  locator: Complete official 20-organism/28-dataset catalogue
+  accessed_at: '2026-10-21T16:31:51.592928Z'
+  support: context_only
+  summary: The entire catalogue was read at this actual retrieval. It establishes
+    catalogue membership only; no chemical identity, production or arbitrary module
+    assignment follows.
+  snapshot_sha256: 155607e7023efdead5ebab3919279a0776d5665a7de9e28b67f02f8f521b0693
+- evidence_id: S118-E-LOCAL
+  kind: record_content
+  reference: data/natural_products/alkaloids/butanochelin.yaml
+  locator: Complete owner, resolved content, all matching local source rows, empty
+    referenced-component mapping
+  accessed_at: '2026-10-21T17:12:22.143310Z'
+  support: supports
+  summary: Exact butanochelin source selector BGC0002473:2, version 3; full parsed
+    source row SHA256 6f8ce4127481b9979d77c1bb12a627cb69abe69c02a4829842ee30b048e482f0.
+    Current method string is '', yielding SOURCE_ASSERTION and CLUSTER_UNSTATED. The
+    complete present producer, locus, occurrence and origin claims were read; no mechanism
+    graph or protein claim is present.
+  snapshot_sha256: 57fd74a20cc397c2fa2249a402b4dec338d7d1571130b7b598570cf80c29d10c
+- evidence_id: S118-E-MIBIG
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0002473.3/annotations.json
+  locator: Exact version, selected compound, taxonomy, locus and legacy references
+  accessed_at: '2026-10-21T16:30:23.118104Z'
+  support: supports
+  summary: Current versioned MIBiG is active, quality questionable, completeness unknown.
+    Its selected compound and source methods/accession reproduce the imported row.
+    Database agreement is provenance, not independent strain-specific final-product
+    evidence.
+  snapshot_sha256: 6f2e997fb54624ef891881b3a6f532ec0fca6b9fa9829b1337861986a9132ec4
+- evidence_id: S118-E-PRIMARY
+  kind: primary_source
+  reference: PMID:32926028
+  locator: Exact original PMID32926028 abstract and publication metadata; not the
+    experimental main body
+  accessed_at: '2026-10-21T16:33:14.407694Z'
+  support: supports
+  summary: The original PMID32926028 abstract explicitly identifies A. bouvetii DSM14964
+    as the source of propanochelin (1), butanochelin (2) and pentanochelin (3). Genome
+    mining with a VibH homolog identifies a putative locus; precursor feeding with
+    different amines generates additional analogues. The abstract does not resolve
+    each congener’s fed versus unamended culture context or establish exact final-product
+    knockout/enzymology.
+  snapshot_sha256: a260a0ab98e8471df13f866bf316c770d5a0088c480212c1ecd43145b03782c6
+- evidence_id: S118-E-ACCESSION
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NZ_KB892261.1&rettype=gbwithparts&retmode=text&seq_start=30960&seq_stop=41799
+  locator: Header/source and relevant features in the exact targeted window
+  accessed_at: '2026-10-21T16:39:49.100803Z'
+  support: supports
+  summary: The targeted NZ_KB892261.1:30960..41799 window identifies DSM14964, culture
+    collection CIP107468, taxon 1120925 and BioSample SAMN02441705. These source identifiers
+    bridge the named strain, not an independently demonstrated final-product pathway.
+    PGAP feature annotations do not replace chemical or genetic experiments.
+  snapshot_sha256: d8c98fcc8815481c742f27ed4bd4c8f2b93f8377e41bc761a7118fb61582c0f9
+- evidence_id: S118-E-GAP
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next-batch012/bgc-science/source-notes.json
+  locator: Original bounded retrieval receipts and retained read scopes
+  accessed_at: '2026-10-21T16:46:49.870076Z'
+  support: unknown
+  summary: The original main and SI were not obtained after bounded RSC article/PDF/author-version,
+    official supplement and actual eScholarship repository leads. The RSC supplement
+    body is HTML 404; repository item 2959g5wx and its PDF returned 403. Detailed
+    exact-congener culture, feeding, chemical identification and locus experiments
+    remain uninspected.
+  snapshot_sha256: 2b109f43c5103d04d474db2a2037af91d33df9655d80c45befa91f50b202cb9e
+  search_scope: Retained exact RSC and eScholarship URLs/statuses in access-01 through
+    access-08 and source notes. An ignored-inclusive preparation inventory prevented
+    duplicate downloads. No whole-study absence claim or inferred knockout result.
+- evidence_id: C118-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/butanochelin.yaml
+  locator: Complete owner and all local-source rows; no referenced components
+  accessed_at: '2026-10-21T17:15:14.058960Z'
+  support: supports
+  summary: The complete owner denotes butanochelin under naturalproductmech:mibig-f5ac1858de.
+    Its exact source selector is BGC0002473:2, version 3, with complete parsed raw-row
+    SHA256 6f8ce4127481b9979d77c1bb12a627cb69abe69c02a4829842ee30b048e482f0. The official
+    intake and prepared owner bytes agree.
+  snapshot_sha256: 57fd74a20cc397c2fa2249a402b4dec338d7d1571130b7b598570cf80c29d10c
+- evidence_id: C118-GRAPH
+  kind: validation
+  reference: /private/tmp/npm-review-work/118/chemistry.json
+  locator: Fresh intake RDKit result and frozen Standard/fixed-H comparison
+  accessed_at: '2026-10-21T17:05:14.862879Z'
+  support: supports
+  summary: The stored SMILES recomputes to FBRVRHJYPWFVCL-UHFFFAOYSA-N, formula C18H20N2O6,
+    formal charge 0; stored InChI/key agree. These are representation checks, not
+    experimental identity proof.
+  snapshot_sha256: d89d02ab22073afe94c387b0de4b25ae36d962e5ca1cbb0aeff209b4b2604fa2
+- evidence_id: C118-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch012/chemistry-prep/chemical-comparison.json
+  locator: Record 118; exact source rows and each graph comparison
+  accessed_at: '2026-10-21T16:32:31.097625Z'
+  support: supports
+  summary: Butanochelin is achiral C18H20N2O6, the putrescine bis(2,3-dihydroxybenzamide)
+    graph. Current MIBiG, PubChem exact-key response, CHEBI221303 two-star JSON/MOL
+    and Q27462403 chemical representation agree. Literal NPA033093 remains unavailable
+    after two bounded read timeouts.
+  snapshot_sha256: 397f3a45c4b7a8033fb9768b0e3d8fb61a93da833a0713ad97eb7e8f86136842
+- evidence_id: C118-LOCAL-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/118/chemistry-search-receipt.json
+  locator: Exact full key, label, slug and source selector in raw/owner/curation trees
+  accessed_at: '2026-10-21T17:15:14.099754Z'
+  support: supports
+  summary: Ignored-inclusive bounded search preserves all matching paths; an absent
+    curation decision does not imply a missing scientific source.
+  snapshot_sha256: dc64988b15ca2f10e193cacf8c093a894e5bbbe698da7f2a4cc6ec8517765f06
+  search_scope: rg --no-ignore --hidden; data/natural_products, data/raw and curation;
+    exact full key, current label, slug and BGC:compound_index. No claim beyond these
+    trees.
+- evidence_id: C118-CHEBI-SEARCH-1
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=FBRVRHJYPWFVCL-UHFFFAOYSA-N&size=100
+  locator: Literal key search; chebi-key-butanochelin.json
+  accessed_at: '2026-10-21T16:30:21.734640Z'
+  support: supports
+  summary: 1 returned name/key results; evaluate exact key and stars, not name similarity.
+  snapshot_sha256: db5499f2c03b6665c768cfd78124dcf18a03dad14a1a0042ca854ec2c738ab4e
+  search_scope: Official ChEBI es_search bounded key request, size=100, exact URL
+    retained. This is not a universal absence claim.
+- evidence_id: C118-CHEBI-SEARCH-2
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=butanochelin&size=100
+  locator: Literal name search; chebi-name-butanochelin.json
+  accessed_at: '2026-10-21T16:30:21.861945Z'
+  support: supports
+  summary: 1 returned name/key results; evaluate exact key and stars, not name similarity.
+  snapshot_sha256: a9ef452ed3fc25e34a9c8499fda2fabf0d25dae5e0f2c258bdd2daf24dacf526
+  search_scope: Official ChEBI es_search bounded name request, size=100, exact URL
+    retained. This is not a universal absence claim.
+- evidence_id: C118-AUTH-1
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0002473.3/annotations.json
+  locator: compounds[].structure; BGC0002473.3.json
+  accessed_at: '2026-10-21T16:30:23.118104Z'
+  support: supports
+  summary: 'current MIBiG BGC0002473:2: parsed key FBRVRHJYPWFVCL-UHFFFAOYSA-N; exact
+    stored Standard key match=True, fixed-H match=True. This current database representation
+    is not independent primary experimental proof.'
+  snapshot_sha256: 6f2e997fb54624ef891881b3a6f532ec0fca6b9fa9829b1337861986a9132ec4
+- evidence_id: C118-AUTH-2
+  kind: authority
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/FBRVRHJYPWFVCL-UHFFFAOYSA-N/property/InChIKey,InChI,IsomericSMILES,MolecularFormula,Charge/JSON
+  locator: PropertyTable.Properties[].SMILES; pubchem-key-butanochelin.json
+  accessed_at: '2026-10-21T16:30:22.196073Z'
+  support: supports
+  summary: 'PubChem 10338559: parsed key FBRVRHJYPWFVCL-UHFFFAOYSA-N; exact stored
+    Standard key match=True, fixed-H match=True. This current database representation
+    is not independent primary experimental proof.'
+  snapshot_sha256: 7403eb5e596de13830b2703066b704ef10f122aeab1fedacdaec2a2c85f5ba38
+- evidence_id: C118-AUTH-3
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/221303/
+  locator: default_structure.smiles; CHEBI221303.json
+  accessed_at: '2026-10-21T16:31:04.670753Z'
+  support: supports
+  summary: 'ChEBI JSON 221303: parsed key FBRVRHJYPWFVCL-UHFFFAOYSA-N; exact stored
+    Standard key match=True, fixed-H match=True. This current database representation
+    is not independent primary experimental proof.'
+  snapshot_sha256: 2b419c6b5b54fa0ead116bf057d6d09ca3f297809594eb3b68b9b95982080046
+- evidence_id: C118-AUTH-4
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/221303/
+  locator: official MOL; CHEBI221303.mol
+  accessed_at: '2026-10-21T16:31:04.604730Z'
+  support: supports
+  summary: 'ChEBI MOL 221303: parsed key FBRVRHJYPWFVCL-UHFFFAOYSA-N; exact stored
+    Standard key match=True, fixed-H match=True. This current database representation
+    is not independent primary experimental proof.'
+  snapshot_sha256: fcd0a3ae2b886f36ac2640a4d36c3800d366c330dae6a325da52c6a7137f299a
+- evidence_id: C118-AUTH-5
+  kind: authority
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q27462403.json
+  locator: P233; Q27462403.json
+  accessed_at: '2026-10-21T16:30:22.686171Z'
+  support: supports
+  summary: 'Wikidata Q27462403: parsed key FBRVRHJYPWFVCL-UHFFFAOYSA-N; exact stored
+    Standard key match=True, fixed-H match=True. This current database representation
+    is not independent primary experimental proof. Canonical P233 is not an isomeric
+    stereo assertion; compare P2017 when present.'
+  snapshot_sha256: 1188835e571b0c39f7a18f5a84d0e97eeb812249e7a25b1de1135f18b978f1eb
+- evidence_id: C118-ABSTRACT
+  kind: primary_source
+  reference: PMID:32926028
+  locator: Original publication abstract and exact metadata DOI10.1039/d0cc04171h
+  accessed_at: '2026-10-21T16:33:14.407694Z'
+  support: supports
+  summary: The original abstract names butanochelin as compound2 alongside propanochelin1
+    and pentanochelin3. It does not supply the full chemical drawing or detailed structural-assignment
+    data. The named-product bridge does not independently prove the complete authority
+    graph.
+  snapshot_sha256: a260a0ab98e8471df13f866bf316c770d5a0088c480212c1ecd43145b03782c6
+- evidence_id: C118-PRIMARY-ACCESS
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next-batch012/bgc-science/source-notes.json
+  locator: Exact 2020 butanochelin main/SI bounded access disposition
+  accessed_at: '2026-10-21T16:46:49.856610Z'
+  support: unknown
+  summary: Original main and SI were not recovered through the retained RSC article/PDF/author-version,
+    official supplement and actual eScholarship repository lead. HTML404 or403 bodies
+    are not scientific PDFs; the original drawing and detailed chemical identification
+    remain uninspected.
+  snapshot_sha256: 2b109f43c5103d04d474db2a2037af91d33df9655d80c45befa91f50b202cb9e
+  search_scope: DOI10.1039/d0cc04171h; literal RSC routes, official supplement and
+    eScholarship item2959g5wx/PDF, with all attempts retained. No assertion that the
+    sources do not exist.
+- evidence_id: C118-NPA-ACCESS
+  kind: search
+  reference: https://www.npatlas.org/api/v1/compound/NPA033093
+  locator: Literal NPAtlas identifier; two retained bounded requests
+  accessed_at: '2026-10-21T16:32:24.292001Z'
+  support: unknown
+  summary: The literal API requests timed out. The identifier was neither silently
+    padded nor substituted. Other exact authority graphs do not prove what this inaccessible
+    literal NPAtlas record currently contains; no exclusion follows from access failure.
+  snapshot_sha256: dbdf261cbe5bacf69ceb4f5017add0e33d69edd2f81ec73091c9d91f6cac27cc
+  search_scope: Literal official compound API NPA033093; original request and one
+    bounded retry in access-02 and access-04-npa-retry. No global absence assertion.
+assessments:
+- assessment_id: R118-HISTORY
+  area: provenance
+  topic: Native status and retained audit history
+  outcome: supported
+  summary: All retained history events record SEEDED_FROM_SOURCES provenance. The
+    owner remains SEEDED. This review does not change its status, history or scientific
+    content.
+  target_ids:
+  - naturalproductmech:mibig-f5ac1858de
+  evidence_ids:
+  - R118-OWNER
+- assessment_id: R118-OPTIONAL
+  area: completeness
+  topic: Present optional assertions and enrichment limits
+  outcome: not_applicable
+  summary: No optional pathway, mechanism graph, molecular target, bioactivity, application,
+    clinical status, cross-record relation or discussion is asserted. Optional enrichment
+    is separate from correcting current claims.
+  target_ids:
+  - naturalproductmech:mibig-f5ac1858de
+  evidence_ids:
+  - R118-OWNER
+  - R118-LOCAL
+- assessment_id: R118-FILING
+  area: representation
+  topic: Exact-key computed classification provenance
+  outcome: supported
+  summary: The owner reproduces its exact-key NPClassifier result, including npclassifier.gnps2.org@2026-09-07,
+    Alkaloids filing, superclass/class labels and the false glycoside prediction.
+    Predictions do not independently prove precursor use, natural origin or stereochemistry.
+    Identity correction requires reclassification against the corrected effective
+    key.
+  target_ids:
+  - naturalproductmech:mibig-f5ac1858de
+  evidence_ids:
+  - R118-OWNER
+  - R118-LOCAL
+- assessment_id: R118-ORGANISM-IDS
+  area: provenance
+  topic: Literal organism-identifier routing
+  outcome: supported
+  summary: Inspected literal names and identifiers match source rows. Primary occurrences
+    and exact experimental stock identities are assessed independently; source synonyms
+    are preserved.
+  target_ids:
+  - naturalproductmech:mibig-f5ac1858de
+  evidence_ids:
+  - R118-Q16824973
+- assessment_id: R118-IMODULON-SCOPE
+  area: completeness
+  topic: Producer and experimental-host transcriptomic applicability
+  outcome: not_applicable
+  summary: Acinetobacter bouvetii DSM14964 is absent. The A. baumannii catalogue dataset
+    does not establish species or stock equivalence, production or pathway membership.
+  target_ids:
+  - naturalproductmech:mibig-f5ac1858de
+  evidence_ids:
+  - R118-OWNER
+  - R118-IMODULON
+- assessment_id: S118-A-BIOLOGY
+  area: evidence
+  topic: producer_organisms[0] and biosynthetic_gene_clusters[0]
+  outcome: supported
+  summary: 'The named strain/product abstract and current source/accession agree.
+    Empty imported methods correctly yield SOURCE_ASSERTION and CLUSTER_UNSTATED:
+    the putative locus is not being represented as experimental demonstration. Do
+    not promote the link from a VibH homolog, class-level siderophore chemistry or
+    precursor feeding without the full exact-product experiment.'
+  target_ids:
+  - naturalproductmech:mibig-f5ac1858de
+  evidence_ids:
+  - S118-E-LOCAL
+  - S118-E-MIBIG
+  - S118-E-PRIMARY
+  - S118-E-ACCESSION
+  dimensions:
+  - name: source_strain
+    value: A. bouvetii DSM14964 = CIP107468 / taxon1120925
+    definition: Named source strain corroborated by primary abstract and exact sequence
+      source metadata.
+    evidence_ids:
+    - S118-E-PRIMARY
+    - S118-E-ACCESSION
+  - name: evidence_tier
+    value: Source assertion and putative genomic association
+    definition: Current weak grades are source-faithful; exact final-product experimental
+      methods remain unresolved.
+    evidence_ids:
+    - S118-E-LOCAL
+    - S118-E-PRIMARY
+    - S118-E-MIBIG
+- assessment_id: S118-A-OCCURRENCE
+  area: evidence
+  topic: occurrences[0] and biosynthesis_origin
+  outcome: supported
+  summary: The sole LOTUS DOI and producer PMID identify the same primary study and
+    exact named butanochelin (2), not independent replicated observations. Its abstract
+    positively supports a biological source in A. bouvetii. The full culture/feeding
+    conditions remain unavailable, so no assertion is made that the target was necessarily
+    isolated from an unamended culture or synthesized only after feeding.
+  target_ids:
+  - naturalproductmech:mibig-f5ac1858de
+  evidence_ids:
+  - S118-E-LOCAL
+  - S118-E-PRIMARY
+  - S118-E-GAP
+- assessment_id: C118-A-IDENTITY
+  area: identity
+  topic: Stored graph and source-concept identity
+  outcome: supported
+  summary: The complete source row BGC0002473:2 and minted source concept reproduce
+    this stored representation. Formula, charge, Standard and fixed-H distinctions
+    are independently recorded. Primary support and any conflicting exact xref are
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-f5ac1858de
+  evidence_ids:
+  - C118-OWNER
+  - C118-GRAPH
+  - C118-COMPARISON
+  dimensions:
+  - name: mibig_source_selector
+    value: BGC0002473:2
+    definition: Accession plus compound_index, distinct from the entry-level accession.
+    evidence_ids:
+    - C118-OWNER
+  - name: complete_raw_row_sha256
+    value: 6f8ce4127481b9979d77c1bb12a627cb69abe69c02a4829842ee30b048e482f0
+    definition: Sorted compact ASCII JSON of every parsed TSV field, including empty
+      values.
+    evidence_ids:
+    - C118-OWNER
+- assessment_id: C118-A-GROUNDING
+  area: provenance
+  topic: Exact authority eligibility and source representation
+  outcome: supported
+  summary: No exact eligible row exists in the committed ChEBI projection for this
+    owner. Current bounded name/key searches do not justify a different congener or
+    a two-star grounding.
+  target_ids:
+  - naturalproductmech:mibig-f5ac1858de
+  evidence_ids:
+  - C118-OWNER
+  - C118-COMPARISON
+  - C118-LOCAL-SEARCH
+  - C118-CHEBI-SEARCH-1
+  - C118-CHEBI-SEARCH-2
+- assessment_id: C118-A-PRIMARY
+  area: evidence
+  topic: Original chemical identification of butanochelin2
+  outcome: unknown
+  summary: The original name and congener number are positive. Exact primary constitution,
+    detailed identification and workup cannot be assessed from the unavailable main/SI;
+    no graph correction is justified by that gap.
+  target_ids:
+  - naturalproductmech:mibig-f5ac1858de
+  evidence_ids:
+  - C118-ABSTRACT
+  - C118-PRIMARY-ACCESS
+- assessment_id: C118-A-STEREO
+  area: representation
+  topic: Achiral current molecular representation
+  outcome: supported
+  summary: The represented putrescine-linked bisamide has no tetrahedral stereocentre
+    requiring an assigned hand. The current graph and formula are internally consistent;
+    this does not independently verify its original isolation structure.
+  target_ids:
+  - naturalproductmech:mibig-f5ac1858de
+  evidence_ids:
+  - C118-GRAPH
+  - C118-COMPARISON
+findings: []
+actions: []
+limitations:
+- This review evaluates present assertions and bounded evidence gaps; it does not
+  claim exhaustive discovery of all later papers or require every optional mechanism
+  for coverage.
+- Original abstract is not represented as a full-paper read. No final-product knockout,
+  purified-enzyme or heterologous demonstration is inferred from genome mining.
+- The original butanochelin drawing and detailed identification remain unavailable;
+  current authority agreement is assessed independently and does not close that primary
+  gap.
+- No unsupported source deletion, optional mechanism addition or redundant strain
+  correction is proposed; the current source taxon already names both culture collection
+  designations.
+- Authority matches establish the representations actually returned at their retained
+  access times; they are not independent experimental structure or absolute-hand determinations.
+  Root and science sections separately assess organism, locus, classification and
+  history claims.
+- No original butanochelin drawing or complete structural-assignment body/SI was available.
+  Current authority agreement and the two-star CHEBI:221303 hit are not experimental
+  proof or eligible three-star grounding.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35
+  explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently
+  verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+  Skipped tests are not counted as passing tests. Existing ontology caches were used;
+  no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do
+  not establish biological production, stereochemical specificity, evidence adequacy,
+  or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology
+  results. Reuse establishes unchanged repository inputs; it is not a new remote authority
+  query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all
+  tracked files are hashed. Generated Python bytecode and external tool caches are
+  not claimed to have been independently byte-pinned at the prior execution.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+tags:
+- path-order-campaign
+- batch-012
+```
