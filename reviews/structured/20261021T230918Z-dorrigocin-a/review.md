@@ -1,0 +1,1874 @@
+# Scientific review of dorrigocin A
+
+- Review: 20261021T230918Z-dorrigocin-a
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-21T23:04:05.993362Z
+- Finished UTC: 2026-10-21T23:09:18.311540Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+Native dorrigocin A loss is directly supported. The heterologous experiment instead identifies iso-migrastatin, with separate aqueous conversion to dorrigocins, so its scope needs qualification. The retained graph omits five published carbon configurations and differs in precision from its literal PubChem identifier; original absolute-hand protocols remain incomplete.
+
+## Scope And Provenance
+
+One complete generated owner and any referenced components, assessed claim by claim for exact identity, provenance, origin, producer and occurrence scope, biosynthesis, classification, optional content and audit history.
+
+Selection: Campaign record 195, batch 020, selected in path order from the fresh-main authoritative validated catalogue and the separately validated targets in earlier batch commits (publication tracked separately). At selection, 244 of 3116 current records had campaign coverage and 2872 remained. The population search included ignored files. Exactly one target is assessed here.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-1e62088a6a | data/natural_products/alkaloids/dorrigocin-a.yaml | generated | dorrigocin A |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Closed-schema target validation | passed | True | naturalproductmech:mibig-1e62088a6a | The documented target strict validator completed; scientific support is assessed separately. |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-1e62088a6a | All 3116 corpus records are filed exactly where PATHS.tsv pins them. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-1e62088a6a | All 3116 records reproduce byte-for-byte from data/raw/. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-1e62088a6a | The canonical review-queue command completed with actual exit0 on the fresh main base; exact output, warnings and skips remain in the pinned transcript. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-1e62088a6a | Configured identifier-label validation exited zero: 13449 canonical matches, 646 synonym matches and 35 configured exceptions; 499 non-blocking warnings and 4750 no-adapter skips remain. |
+| Full repository quality gate on the fresh main baseline | passed | True | naturalproductmech:mibig-1e62088a6a | Full fresh-base quality command completed successfully:999 tests passed,4 skipped,2 warnings;3116 records passed closed schema validation and corpus reproduction, and generated pages were current. |
+| Complete owner and captured-source scope | passed | True | naturalproductmech:mibig-1e62088a6a | Successful official intake and a fresh root full-owner/read receipt precede this authoring. All six officially captured sets and the separately mechanically parsed seventh PubChem set match. The seven raw sets were read by root at the declared scope. Target193 has seven emitted assays; their scientific interpretation and sole AID504832 classifier finding belong to the separate science section. Target192 has one no-assay sentinel and emits no assay. Inline graphs/pathways occur only at194 and199; no external graph component or molecular-target assertion is present. |
+| Exact native compound necessity and positive occurrence | passed | True | naturalproductmech:mibig-1e62088a6a | The complete original isolation and 2009 main/pixels supply named A and its native loss endpoint. The method limitation concerns heterologous endpoint wording, not the strong native result. |
+| Independent inspection of the original 2009 SI | unavailable | False | naturalproductmech:mibig-1e62088a6a | Challenge HTML and the official archive not-open-access response remain visible. This optional detail check does not prevent assessment of the complete main qualitative genotype/endpoint account and original Figure 3B; no independent PCR-band or trace-area remeasurement is claimed. |
+| Stored chemical representation and complete source row | passed | True | naturalproductmech:mibig-1e62088a6a | Fresh intake derivation agrees with the stored graph; the source selector, full row and prepared snapshot were independently rechecked. |
+| Published carbon constraints and literal identifier | failed | True | naturalproductmech:mibig-1e62088a6a | The retained graph omits five carbon configurations depicted in original2006/2009 sources; literal PubChem44543743 supplies those five and therefore does not identify this exact underspecified stereograph. NPAtlas and two-star ChEBI match the retained less-specific form. Published hand and unresolved original protocols remain distinct. |
+| Exact complete original absolute-hand protocol | unavailable | True | naturalproductmech:mibig-1e62088a6a | Later published stereographs and positive assignment assertions are retained, but the complete original derivation, especially B C11, is not independently inspected. This does not invalidate the verified representation/xref difference. |
+
+## Scientific And Domain Assessments
+
+### Native status and complete audit history
+
+provenance: supported. Targets: naturalproductmech:mibig-1e62088a6a.
+
+All 2 retained events were read, with exact action sequence ['SEEDED_FROM_SOURCES', 'SEEDED_FROM_SOURCES']. Targets194/199 retain explicit mechanism-curation history alongside seeding; native status remains SEEDED. History records are not scientific-review passes or proof of the mechanism assertions.
+
+### Complete optional-assertion inventory
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-1e62088a6a.
+
+Present optional fields: none. Target191 definition/discussion, target193 seven assays/summary, and targets194/199 inline pathways/graphs are explicitly present and receive separate scientific assessment. No optional absence is a scientific defect by itself. This root inventory does not duplicate the193 classifier finding or certify the mechanism claims.
+
+### Exact-key computed classification provenance
+
+representation: supported. Targets: naturalproductmech:mibig-1e62088a6a.
+
+The exact-key NPClassifier projection and version npclassifier.gnps2.org@2026-09-07 reproduce the owner filing, superclass/class labels and glycoside value false. Computed labels are not independent precursor, mechanism or natural-origin evidence. Any accepted new identity requires reclassification for its effective key.
+
+### Literal organism identifier routing
+
+grounding: supported. Targets: naturalproductmech:mibig-1e62088a6a.
+
+All literal P225 names match; available P685 values match the raw source IDs. Q913896 explicitly lacks P685, so its NCBI synonym bridge is assessed independently. Current synonym routing does not establish chemical occurrence or experimental-unit support.
+
+### Taxonomic names versus experimental stocks
+
+provenance: supported. Targets: naturalproductmech:mibig-1e62088a6a.
+
+NCBI 684832 S. platensis subsp. rosaceus is subspecies rank beneath S. platensis 58346. Compatible species/subspecies associations do not equate NRRL18993, another stock or a historical experimental preparation.
+
+### Producer transcriptomic applicability
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-1e62088a6a.
+
+No exact native producer is represented in the full catalogue. Related organisms and experimental hosts do not establish the required construct/condition match. No gene/module inference or compound-production absence is asserted.
+
+### producer_organisms[0], biosynthesis_origin and exact native necessity
+
+evidence: supported. Targets: naturalproductmech:mibig-1e62088a6a.
+
+Original native S. platensis subsp. rosaceus AB1981F-75/NRRL 18993 isolation supports named dorrigocin A. Complete 2009 Figure 3B no-resin experiments show loss of labelled A/B after native ΔmgsA, ΔmgsC or ΔmgsD, while boundary deletions retain them. This supports the native BGC_CHARACTERIZED and CLUSTER_DEMONSTRATED tiers. A conditional downstream chemical rearrangement does not erase culture occurrence or native pathway necessity. The 2005 original abstract calls iso-migrastatin the directly biosynthesized product and A/B shunts. Here the natural-product origin is retained at the culture-associated product scope, not interpreted as proof of a dedicated final enzymatic step.
+
+### biosynthetic_gene_clusters[0].locus_evidence_methods
+
+evidence: concern. Targets: naturalproductmech:mibig-1e62088a6a.
+
+Knock-out studies is directly supported for A. The independently read heterologous study identifies iso-migrastatin in resin-containing engineered cultures; a separate experiment converts purified iso-migrastatin to A/B in water. These related positive results need explicit endpoint qualification when attached to the final dorrigocin method list. This is an evidence-specific narrowing question, not an assertion that no source could report heterologous A or a reason to downgrade positive native necessity.
+
+### biosynthetic_gene_clusters[0] accession, source class and cited experiment
+
+provenance: supported. Targets: naturalproductmech:mibig-1e62088a6a.
+
+GQ274953.1 is the source sequence for the mgs PKS cluster studied in the 2009 native-genetics paper; empty imported bounds are not a coordinate assertion. Figure 3A mgsH rescue and mgsF/mgsH losses concern iso-migrastatin with resin, not direct A rescue. MgsI/J/K proposals and later intermediate mutants are not final-A/B purified enzyme assays.
+
+### occurrences[0] Streptomyces platensis
+
+scope: supported. Targets: naturalproductmech:mibig-1e62088a6a.
+
+The exact original 1994 Part II source isolates and characterizes named A from the culture source described in Part I. The generic species-level LOTUS occurrence is compatible with that positive subspecies/strain isolation and is not independently promoted to an additional gene experiment.
+
+### Primary drawing and absolute-protocol boundary
+
+representation: supported. Targets: naturalproductmech:mibig-1e62088a6a.
+
+The 1994 work establishes connectivity and three trans alkenes. Later 2006/2009 depictions carry positive hand assertions; A is explicitly labelled 13R versus epi-A 13S. For B the earlier 2005 C11 exception and later positive depiction/claim remain distinct from an independently inspected exact later C11 protocol. Chemistry review owns the measured graph precision and any repair; neither authority consensus nor A-to-B transfer supplies missing experimental details.
+
+### Absent unasserted pathway/protein/activity content
+
+evidence: not_applicable. Targets: naturalproductmech:mibig-1e62088a6a.
+
+No optional pathway or protein expansion is required. Unasserted activity or mechanistic details are not imported from congener, mixture or upstream-intermediate studies merely to fill empty fields.
+
+### Stored representation and source-concept provenance
+
+identity: supported. Targets: naturalproductmech:mibig-1e62088a6a.
+
+The complete source row BGC0000177:3 and source-concept hash reproduce this stored representation; this does not establish that the upstream compound label is correct. Formula, charge, Standard and fixed-H distinctions are independently recorded. Primary support and any conflicting exact xref are assessed separately.
+
+### Exact authority eligibility and source representation
+
+provenance: supported. Targets: naturalproductmech:mibig-1e62088a6a.
+
+No exact eligible row exists in the committed ChEBI projection for this owner. Current bounded name/key searches do not justify a different congener or a two-star grounding.
+
+### Exact literal chemical identifiers
+
+representation: concern. Targets: naturalproductmech:mibig-1e62088a6a.
+
+Literal source identifiers were compared exactly: [{"fixed_h_equal": false, "literal": "pubchem:44543743", "standard_equal": false}, {"fixed_h_equal": true, "literal": "npatlas:NPA01445", "returned_identifier": "NPA001445", "standard_equal": true}]. Standard/fixed-H details are representation-level observations, not independent experimental assignments.
+
+### Exact eligible ChEBI policy and serialization
+
+grounding: supported. Targets: naturalproductmech:mibig-1e62088a6a.
+
+Current exact candidates: [{"default_smiles_valid": true, "id": 198798, "mol_vs_retained": {"fixed_h_equal": true, "standard_equal": true}, "name": "Dorrigocin A", "stars": 2}]. Only191 has a matching three-star entity. Named two-star alternatives are ineligible under the current projection; adjacent three-star chanoclavine is not elymoclavine. For197 the literal default JSON SMILES is invalid while MOL/InChI match; for200 default JSON SMILES, stated InChI and official MOL all preserve the same E constraint. Never copy an invalid or less-specific default string merely because another format agrees.
+
+### Primary identity and chemical precision
+
+scope: unknown. Targets: naturalproductmech:mibig-1e62088a6a.
+
+The retained graph omits five carbon configurations depicted in original2006/2009 sources; literal PubChem44543743 supplies those five and therefore does not identify this exact underspecified stereograph. NPAtlas and two-star ChEBI match the retained less-specific form. Published hand and unresolved original protocols remain distinct.
+
+## Findings
+
+### S195-F-METHOD-SCOPE: Qualify the heterologous endpoint separately from native dorrigocin loss
+
+minor / open / provisional; issue key: mibig-bgc0000177-dorrigocin-a-heterologous-endpoint-scope.
+
+The available heterologous experiment directly identifies iso-migrastatin; separate aqueous conversion yields dorrigocin A. The current bare method list does not expose that distinction. Native final-A necessity remains directly supported.
+
+### C195-F-STEREO-XREF: Five depicted carbon constraints are omitted and the literal PubChem identifies the specified form
+
+major / open / confirmed; issue key: mibig-bgc0000177-dorrigocin-a-primary-stereo-and-literal-pubchem.
+
+The retained graph omits five carbon configurations depicted in original2006/2009 sources; literal PubChem44543743 supplies those five and therefore does not identify this exact underspecified stereograph. NPAtlas and two-star ChEBI match the retained less-specific form. Published hand and unresolved original protocols remain distinct. This is a graph/identifier precision conflict, not proof that an uninspected experimental protocol selected a replacement or that the current false completeness flag was computed incorrectly.
+
+## Recommended Actions And Acceptance Checks
+
+### S195-ACT-METHOD-SCOPE
+
+First document the exact inspected endpoint distinction for BGC0000177:3, guarded by complete parsed row {"bgc_classes": "PKS", "bgc_subclasses": "Type I", "cluster_link_evidence_basis": "CLUSTER_DEMONSTRATED", "compound_classes": "", "compound_index": "3", "compound_name": "dorrigocin A", "database_ids": "npatlas:NPA01445&#124;pubchem:44543743", "entry_completeness": "complete", "entry_quality": "questionable", "entry_status": "active", "entry_version": "5", "genome_accession": "GQ274953.1", "locus_evidence_methods": "Knock-out studies&#124;Heterologous expression", "locus_from": "", "locus_to": "", "mibig_accession": "BGC0000177", "primary_reference": "PMID:19726666", "producer_evidence_basis": "BGC_CHARACTERIZED", "reference_basis": "ENTRY", "smiles": "COC(\\C=C\\CC\\C=C\\C(O)=O)C(O)C(C)\\C=C(/C)C(O)C(C)C(=O)CCCC1CC(=O)NC(=O)C1", "standard_inchi": "InChI=1S/C27H41NO8/c1-17(14-18(2)27(35)22(36-4)12-7-5-6-8-13-25(32)33)26(34)19(3)21(29)11-9-10-20-15-23(30)28-24(31)16-20/h7-8,12-14,18-20,22,26-27,34-35H,5-6,9-11,15-16H2,1-4H3,(H,32,33)(H,28,30,31)/b12-7+,13-8+,17-14+", "standard_inchi_key": "HJCZOTBHYAPUHT-XHOLQODBSA-N", "stereo_complete": "false", "taxon_id": "NCBITaxon:684832", "taxon_label": "Streptomyces platensis subsp. rosaceus"}; expected_source_row_sha256=9af1f55fa9355161195055d00469d16ed4a6cacbdf1446844093bc3cc1a32fa6. The existing claim-reference table can retain producer_reference=PMID:19726666 and locus_reference=PMID:19726666, with source_reference=DOI:10.1016/j.bmc.2008.10.074 and nonempty curator, ISO date and rationale fields; the attributed rationale must describe direct native dorrigocin loss, heterologous iso-migrastatin and separate aqueous conversion (DOI:10.1021/ja043808i). This qualifies evidence without downgrading either tier. If exact final-product method adjudication warrants narrowing, use REPLACE with only Knock-out studies; do not use WITHDRAW or erase all methods. REPLACE currently lacks the WITHDRAW seven-field drift checks, so pair it with the full-row claim-reference guard and a focused verified composition test, or implement an equivalent explicit full-row REPLACE guard. Current citation/strain consumers reject structure_correction_note: any chemistry repair must first establish tested ordered composition and adjudicate every old-key claim, rather than silently applying this action after identity changes.
+
+- Retain native A production, native Knock-out studies, both strong tiers, source taxon and positive LOTUS occurrence.
+- Exact accession:index and complete raw-row SHA reject every drift/duplicate; if narrowing, only Heterologous expression is removed and no grade reduction occurs.
+- The emitted rationale explicitly separates engineered iso-migrastatin from buffer-generated A; it makes no all-source absence claim.
+- Any simultaneous structure correction is independently resolved with tested old-key association/consumer composition before applying this biological qualification.
+
+### C195-ACTION-STEREO-XREF
+
+Exact current guards: [{"expected_source_row_sha256": "9af1f55fa9355161195055d00469d16ed4a6cacbdf1446844093bc3cc1a32fa6", "full_original_row": {"bgc_classes": "PKS", "bgc_subclasses": "Type I", "cluster_link_evidence_basis": "CLUSTER_DEMONSTRATED", "compound_classes": "", "compound_index": "3", "compound_name": "dorrigocin A", "database_ids": "npatlas:NPA01445&#124;pubchem:44543743", "entry_completeness": "complete", "entry_quality": "questionable", "entry_status": "active", "entry_version": "5", "genome_accession": "GQ274953.1", "locus_evidence_methods": "Knock-out studies&#124;Heterologous expression", "locus_from": "", "locus_to": "", "mibig_accession": "BGC0000177", "primary_reference": "PMID:19726666", "producer_evidence_basis": "BGC_CHARACTERIZED", "reference_basis": "ENTRY", "smiles": "COC(\\C=C\\CC\\C=C\\C(O)=O)C(O)C(C)\\C=C(/C)C(O)C(C)C(=O)CCCC1CC(=O)NC(=O)C1", "standard_inchi": "InChI=1S/C27H41NO8/c1-17(14-18(2)27(35)22(36-4)12-7-5-6-8-13-25(32)33)26(34)19(3)21(29)11-9-10-20-15-23(30)28-24(31)16-20/h7-8,12-14,18-20,22,26-27,34-35H,5-6,9-11,15-16H2,1-4H3,(H,32,33)(H,28,30,31)/b12-7+,13-8+,17-14+", "standard_inchi_key": "HJCZOTBHYAPUHT-XHOLQODBSA-N", "stereo_complete": "false", "taxon_id": "NCBITaxon:684832", "taxon_label": "Streptomyces platensis subsp. rosaceus"}, "source_id": "BGC0000177:3", "version": "5"}]. First adjudicate the primary-defined product and remaining original hand evidence; do not silently select the diagnostic graph. If the current unspecified graph remains, withhold only pubchem:44543743 through the existing exact-source/full-row-pinned xref-exclusion table and retain the correct literal NPAtlas assertion. No positive replacement xref is implemented by that route. A structure upgrade requires a verified unique committed eligible three-star target with valid copied SMILES/full target-row pin, or an explicitly implemented and tested reviewed primary-source graph route; current inspected name/key candidates do not supply an eligible replacement. Rebuild exact-key joins and reassess every old-key occurrence, assay, classification and biological association. Preserve the original source mint and positive native evidence at its supported resolution. Scientific citation/method/strain actions require explicit tested composition because existing consumers reject structure_correction_note; no automatic old-key transfer or overlay stacking.
+
+- Stale full-row digest, wrong BGC compound selector, missing or duplicate source fails closed.
+- A retained-graph solution excludes only the exact asserted PubChem literal and preserves valid NPAtlas, raw assertion and reviewed explanation.
+- Any candidate full graph independently reproduces every atom, charge, five carbon constraints, three E bonds, Standard/fixed-H and original source context; a diagnostic model alone does not establish natural hand.
+- Current eligible target and valid default copied SMILES are verified, or the new consumed primary-source route and its explicit candidate/full-row guards are tested.
+- All old-key joins and source-qualified biological overlays are individually reviewed; incompatible composition fails closed; native gates and reproduction are run by the authorized curator.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| R195-OWNER | data/natural_products/alkaloids/dorrigocin-a.yaml; Complete post-intake owner, optional assertions and all history events | supports | Root read the complete owner after successful official intake: 1 occurrence, 1 producer and 1 locus assertions. No referenced external component is present. Optional fields: none. |
+| R195-LOCAL | /private/tmp/npm-review-work/195/local-sources.json; Complete resolved owner and all six officially captured raw row sets | context_only | All six captured MIBiG, LOTUS, ChEBI structures/origins, CyanoMetDB and NPClassifier sets match the frozen preparation, including empty sets. The separate seventh PubChem inventory comparison is distinguished below. Source fidelity does not itself establish experimental support. |
+| R195-PUBCHEM-PREP | data/raw/pubchem_bioassay.tsv; Exact-key rows compared with the separate provisional seventh source set | context_only | The separate committed PubChem raw set contains 0 matching rows and reproduces the frozen preparation. The exact set is empty for eight targets, contains one no-assay sentinel for192, and contains seven observations for193 (six AIDs, including two distinct-SID504749 observations). This is not part of the official six-set intake and does not establish absence of bioactivity from the literature. |
+| R195-Q26291839 | https://www.wikidata.org/wiki/Q26291839; Exact retained25-entity projection: labels and complete P225/P685/P31 claim objects only; unrelated upstream claims not retained | context_only | Literal source P225/P685 values agree with the retained projection. Synonym routing is separate from experimental occurrence, chemical identity and stock applicability. |
+| R195-TAXON-CONTEXT | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;retmode=xml&amp;id=294,1883,1892,1900,1961,2063,4121,4577,5110,5111,5113,5599,40602,43178,45231,51584,55404,58346,89647,89650,89664,112277,139766,231710,380021,398502,684832,690845,995841,1038928,1485014,2490667,2607118; Exact relevant TaxId, ScientificName, Rank, ParentTaxId and OtherNames fields | context_only | NCBI 684832 S. platensis subsp. rosaceus is subspecies rank beneath S. platensis 58346. Compatible species/subspecies associations do not equate NRRL18993, another stock or a historical experimental preparation. |
+| R195-IMODULON | https://imodulondb.org/api/datasets; Complete 20-organism, 28-dataset official catalogue | context_only | The complete retained20-organism28-dataset catalogue establishes membership only. None of the exact imported native producers in these ten targets is represented. S.coelicolor and E.coli experimental hosts do not establish introduced-cluster or native-stock module applicability. The structured command was unavailable in the bounded inspected environment; the retained official API is the fallback. |
+| S195-E-LOCAL | /private/tmp/npm-review-work/195/local-sources.json; Complete resolved owner and captured rows; exact seven-set equality checked | context_only | Complete actual owner including any inline graph/pathway, six captured source sets and separately compared seventh PubChem set match the prepared complete reads. |
+| S195-E-CONSUMERS | /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py; classify_activity; load/apply_mibig_locus_evidence_overrides; producer/locus emission and correction order | context_only | Static inspection covers exact AID/title classification, producer/locus method grading, method overrides and reference/strain qualification order. The full-row claim-reference table and structure-correction rejection are separate from REPLACE, which does not itself enforce seven old-context fields. |
+| S195-E-SCHEMA | /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml; ProducerEvidenceBasisEnum and ClusterLinkEvidenceEnum; conf/producer_evidence.tsv and grading.py also read and pinned | context_only | Producer tiers concern evidence in the named organism; cloned-locus experiments are a distinct cluster question. Empty methods and a source assertion do not independently assert native knockout or exact pure-enzyme proof. |
+| S195-E-SEARCH | /private/tmp/npm-review-work/195/science-search.json; Exact read scope | context_only | Exact current curated-decision search is retained. Its scope is the curation tree; it does not establish absence of experimental evidence or all possible consumers. |
+| S195-E-LIMITS | /private/tmp/npm-review-work/shared-next-batch020/bgc-science/source-notes.json; Exact source-read scopes, retained failures and target-specific remaining questions; timestamp denotes current local snapshot verification after creation; original upstream access times remain in the retained receipts | context_only | Frozen source-only notes distinguish fully read scientific bodies, actual original pixels, abstracts and unavailable original bodies. Original HTTP times are retained separately from later local persistence; no failed HTML response is treated as a PDF. |
+| S195-E-P195196-1994-I | DOI:10.7164/antibiotics.47.862; Complete scientific text, taxonomy, fermentation and biological-activity tables read. Rendered pages 1/7 are retained but not claimed independently viewed in this packet. | partial | The producing isolate AB1981F-75 is NRRL 18993. Comparison with the S. platensis type stocks ATCC 13865/NRRL 2364 does not equate the stocks. The study reports culture-associated dorrigocins and a 15-L production fermentation in a 22-L vessel at 28 °C, with XAD-16 present in the medium; reported bioassay activity is not a per-congener chemical titer measurement. Limits: No new absolute assignment is inferred from the taxonomy, activity or culture work. |
+| S195-E-P195196-1994-II | DOI:10.7164/antibiotics.47.870; Complete scientific text/NMR tables read and original pages 1, 3 and 4 viewed. | partial | Separate A and B isolates (8 mg and 6 mg) are obtained from the reported 30-L workup. Both have C27H41NO8; A has the C11=C12/C13-OH arrangement, B C12=C13/C11-OH. Couplings and NOE establish three trans chain alkenes. The paper reports rotations A +91° and B +16° under specified methanol conditions; these measurements alone do not assign all tetrahedral hands. Limits: Original 1994 drawings do not independently establish the later fully assigned absolute graphs. The positive culture occurrence is preserved despite later evidence of conditional chemical formation from iso-migrastatin. |
+| S195-E-P195196-2005-META | https://api.figshare.com/v2/articles/3300907; Official original article abstract and file metadata | supports | The original abstract explicitly describes iso-migrastatin as the directly biosynthesized product and A/B/epi-A/migrastatin as aqueous shunts; it expressly excludes C11 of compounds 3 (B) and 4 (iso-migrastatin) from its stereochemical determination. |
+| S195-E-P195196-2005-SI | https://api.figshare.com/v2/file/download/5138641; Complete seven-page official SI text read; source-specific compound numbering, culture and buffer conversion re-read. Prior review sections are reused only as actual original-access provenance, not as scientific verdicts. Correct successful retained PDF: si-api-download.pdf; the similarly named empty failed-route PDF is explicitly superseded by 2005-si-binding-correction-001.json. | partial | The complete official seven-page SI supplies the original compound numbering (A2, B3, iso-MGS4, epi-A5), native fermentation/isolation and purified iso-MGS aqueous conversion at 37 °C for 2 h. It supports a conditional chemical last-step route. The separately bound original article abstract supplies the explicit C11 assignment exception; no later B C11 protocol is claimed from this SI. |
+| S195-E-P195196-2006 | DOI:10.1021/ol062470p; Selected original introduction and Figure 1 inspected; no claim of a new complete read of this main by this packet author. The independent chemistry agent read the full main. | partial | The introduction positively asserts that relative and absolute stereochemistry of all metabolites had been established, citing ja043808i and ja053118u. Figure 1 depicts B C11 and labels A/epi-A at C13. Limits: The specific later original B C11 protocol remains uninspected. This positive later assertion is retained alongside the earlier exception; neither is silently discarded. |
+| S195-E-P195196-2006-FIG1 | DOI:10.1021/ol062470p; Original Figure 1; source-specific compound numbering | supports | The original figure depicts A 2a as 13R, epi-A 2c as 13S and B 2b with explicit C11 OH wedge. This positive depiction is retained without claiming independent inspection of the exact later B C11 assignment protocol. |
+| S195-E-P195196-2008 | DOI:10.1016/j.bmc.2008.10.074; PMID:19010685; Complete retained scientific body and Methods read, including the final Methods segment during this preparation. | partial | The NRRL 18993 mgs cluster on pBS11001 was expressed in five Streptomyces hosts, including J1074, K4-114, M512 and SUKA4/5. Resin-containing B2/R2YE experiments identified iso-migrastatin by retention, UV, co-injection, LC-MS and NMR. Limits: This is direct heterologous iso-migrastatin evidence, not an inspected direct final dorrigocin A/B production result. |
+| S195-E-P195196-2009 | DOI:10.1074/jbc.M109.046805; PMID:19726666; Complete scientific main, Methods, Table 1, all main captions and references read; original Figures 1 and 3 viewed. SI routes returned challenge HTML or a not-open-access XML error, not supplemental data. | partial | Figure 3B directly tracks labelled dorrigocins A/B in no-resin native cultures: ΔmgsA SB11008, ΔmgsC SB11010 and ΔmgsD SB11011 lose those peaks; Δorf(-1) SB11007 and Δorf1 SB11014 retain them. Figure 3A is the resin/iso-migrastatin endpoint: ΔmgsF SB11012 and ΔmgsH SB11013 lose iso-migrastatin, ΔmgsB SB11009 is reduced, and mgsH complementation SB11015 partially restores iso-migrastatin. The complementation endpoint is not silently transferred to dorrigocins. Figure 1 draws A with a wavy C13 bond but explicitly states A 13R versus 13-epi-A 13S; B has an explicit C11 OH wedge. The ketoreductase stereochemical discussion is predictive/correlative, not a new direct C11 hand experiment on isolated B. MgsI/J/K functions in this paper are proposed from sequence/PKS logic. Native pathway necessity can remain meaningful for culture-associated products whose last formation step is chemical. Limits: The original SI was not recovered. Exact trace areas/PCR bands were not independently re-quantified. No direct heterologous final-A/B endpoint is established by the separate 2008 iso-migrastatin study. |
+| S195-E-P195196-2009-FIG1 | DOI:10.1074/jbc.M109.046805; Original main figure pixels viewed | supports | Original Figure 1 depicts the distinct A/B allylic arrangements, three E chains and stereobonds. A C13 is wavy but expressly labelled 13R, versus 13-epi 13S; B C11 OH is solid. This is depicted configuration, not a new absolute experiment. |
+| S195-E-P195196-2009-FIG3 | DOI:10.1074/jbc.M109.046805; Original main figure pixels viewed | supports | Original Figure 3 separates panel B no-resin labelled A/B loss after native mgsA/C/D deletions from panel A resin/iso-MGS loss and mgsH complementation. No independent trace-area quantitation is claimed. |
+| S195-E-P195196-2013 | DOI:10.1021/ja4002635; PMID:23394593; Complete retained scientific body read; no complete independent reassignment of all spectra. | partial | Numbering here is iso-migrastatin 1, migrastatin 2, dorrigocin A 3, epi-A 4 and B 5. MgsI/J/K deletion work resolves iso-migrastatin-pathway intermediates 10–17; it is not direct enzymatic A/B final formation. Water-driven downstream rearrangement remains a separate mechanism. Limits: Do not treat changed numbering or early-intermediate assays as final A/B purified-enzyme evidence. |
+| C195-OWNER | data/natural_products/alkaloids/dorrigocin-a.yaml; Complete owner and all seven matching source-row sets; no referenced components | supports | The complete owner denotes dorrigocin A under naturalproductmech:mibig-1e62088a6a. All source selectors, versions and complete row digests are retained in COMPARISON: [{"row_sha256": "9af1f55fa9355161195055d00469d16ed4a6cacbdf1446844093bc3cc1a32fa6", "selector": "BGC0000177:3", "version": "5"}]. The official intake and prepared owner bytes agree. |
+| C195-GRAPH | /private/tmp/npm-review-work/195/chemistry.json; Fresh intake RDKit result and frozen Standard/fixed-H comparison | supports | The stored SMILES recomputes to HJCZOTBHYAPUHT-XHOLQODBSA-N, formula C27H41NO8, formal charge 0; stored InChI/key agree. These are representation checks, not experimental identity proof. |
+| C195-COMPARISON | /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/retained-graph-comparison.json; Record 195; exact source rows and each graph comparison | supports | Exact Standard, fixed-H, formula, charge and stereo comparisons of the retained owner and complete raw rows; current authority responses and primary proof are separate evidence. |
+| C195-LOCAL-SEARCH | /private/tmp/npm-review-work/195/chemistry-search-receipt.json; Exact full key, label, slug and source selector in raw/owner/curation trees | supports | Ignored-inclusive bounded search preserves all matching paths; an absent curation decision does not imply a missing scientific source. |
+| C195-AUTHORITY-COMPARISON | /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/authority-phase-001-comparison.json; Complete literal Standard/fixed-H, formula, charge and stereo comparison; exact source payload pins retained | supports | Current authority graphs and source-specific serialization differences are independently compared. Database agreement is not primary natural-hand proof. |
+| C195-AUTHORITY-DETAIL | /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/authority-phases002-004-comparison.json; Complete literal Standard/fixed-H, formula, charge and stereo comparison; exact source payload pins retained | supports | Current authority graphs and source-specific serialization differences are independently compared. Database agreement is not primary natural-hand proof. |
+| C195-AUTH-1 | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/44543743/SDF?record_type=2d; Complete retained response /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/public-reads/pubchem-44543743.sdf | supports | Exact returned namespace/version and representation; scientific constraints remain in separate primary evidence. |
+| C195-AUTH-2 | https://www.npatlas.org/api/v1/compound/NPA01445; Complete retained response /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/phase002-public/NPA01445.json | supports | Exact returned namespace/version and representation; scientific constraints remain in separate primary evidence. |
+| C195-AUTH-3 | https://www.ebi.ac.uk/chebi/backend/api/public/compound/198798/; Complete retained response /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/phase003-public/CHEBI198798.json | supports | Exact returned namespace/version and representation; scientific constraints remain in separate primary evidence. |
+| C195-AUTH-4 | https://www.ebi.ac.uk/chebi/backend/api/public/molfile/198798/; Complete retained response /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/phase003-public/CHEBI198798.mol | supports | Exact returned namespace/version and representation; scientific constraints remain in separate primary evidence. |
+| C195-AUTH-5 | https://www.wikidata.org/wiki/Special:EntityData/Q75063173.json; Complete retained response /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/phase004-public/Q75063173.json | supports | Exact returned namespace/version and representation; scientific constraints remain in separate primary evidence. |
+| C195-CHEBI-SEARCH-1 | https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=HJCZOTBHYAPUHT-XHOLQODBSA-N&amp;size=100; Complete bounded exact key/name response; /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/phase002-public/chebi-key-195.json | supports | HTTP200; original response retained. Exact candidate star/graph eligibility is assessed separately; no universal absence inference. |
+| C195-CHEBI-SEARCH-2 | https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=dorrigocin%20A&amp;size=100; Complete bounded exact key/name response; /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/phase004-public/chebi-name-195.json | supports | HTTP200; original response retained. Exact candidate star/graph eligibility is assessed separately; no universal absence inference. |
+| C195-CONSUMERS | src/naturalproductmech/curate/structure_corrections.py; Complete structure correction consumer | supports | Existing replacement/split needs one exact source selector/full row and a unique eligible committed three-star target/full row. It copies target SMILES and withholds old xrefs; arbitrary primary SMILES/label overrides are not implemented. |
+| C195-XREF-CONSUMER | src/naturalproductmech/curate/xref_exclusions.py; Complete current consumed route; actual code snapshot | supports | Exact PubChem/NPAtlas literal exclusion requires an asserted source xref, unique exact compound selector and complete original-row digest. It is not a positive-xref admission or graph replacement route. |
+| C195-CLAIM-CONSUMER | src/naturalproductmech/curate/claim_references.py; Complete current consumed route; actual code snapshot | supports | Claim-reference routing enforces the complete original-row digest and rejects structure_correction_note; joint identity repair needs reviewed tested composition. |
+| C195-STRAIN-CONSUMER | src/naturalproductmech/curate/producer_strains.py; Complete current consumed route; actual code snapshot | supports | Producer qualifiers enforce the complete original-row digest and supply source-specific producer context; they do not themselves rewrite the BGC claim. |
+| C195-SEED-CONSUMER | scripts/seed_from_sources.py; Complete current consumed route; actual code snapshot | supports | Source normalization and exact-key joins apply the maintained correction consumers; producer qualification after structure correction is rejected and requires a reviewed composition change rather than silent stacking. |
+| C195-PRIMARY-2009-FIGURE | DOI:10.1074/jbc.M109.046805; Original Figure1 exact A13R versus13-epi-A13S labels and explicit B C11-OH wedge; retained snapshot /private/tmp/npm-review-work/shared-next-batch020/bgc-science/public-005/dorrigocin2009-figure1.jpg | supports | Both compounds carry five explicit carbon constraints and three E chain bonds. Compound identity and numbering are source-specific; this is depiction-level proof, not a newly inspected absolute-hand experimental protocol. |
+| C195-PRIMARY-2006-FIGURE | DOI:10.1021/ol062470p; Original Figure1; preserved morning access time; retained snapshot /private/tmp/npm-review-work/007/thermolysis-figure1.jpg | supports | The A13R/epi-A13S labels and depicted B hand agree with the 2009 drawing. This evidence binds the depicted structures; the separate main-text assertion is separately cited. |
+| C195-PRIMARY-2005-SI | DOI:10.1021/ja043808i; Complete seven-page SI text; exact A2/B3/epiA5 and water conversion; retained snapshot /private/tmp/npm-review-work/007/si-api-download.pdf | supports | Native cultures and purified iso-migrastatin water conversion are separate positive contexts. The complete seven-page SI identifies A2, B3, iso-migrastatin4 and epi-A5, with NMR, mass and optical-rotation comparisons; it does not independently supply the specific later B C11 absolute-assignment protocol. |
+| C195-PRIMARY-MAP | /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/dorrigocin-primary-comparison.json; Complete independent diagnostic comparison and numbered source model; retained snapshot /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/dorrigocin-primary-comparison.json | supports | Independent complete numbered constitution and original wedges/descriptors yield A8S9S10R13R14S and B8S9S10R11R14S with three E bonds. Both source MOL roundtrips reproduce literal specified PubChem; retained graphs omit all five carbon constraints. No replacement is selected. |
+| C195-PRIMARY-2005-METADATA | https://api.figshare.com/v2/articles/3300907; Official DOI-bound original abstract and file metadata; DOI 10.1021/ja043808i.s001, file5138641; retained snapshot /private/tmp/npm-review-work/007/figshare-si-metadata.json | supports | The original publisher abstract explicitly excludes C11 of compounds3 (B) and4 (iso-migrastatin) from its stereochemical establishment. It binds the 117415-byte original SI file and its exact MD5. This is positive original metadata, distinct from the SI experimental body. |
+| C195-PRIMARY-2006-MAIN | DOI:10.1021/ol062470p; Original introduction paragraph asserting prior relative/absolute assignments; references ja043808i and ja053118u; retained snapshot /private/tmp/npm-review-work/007/thermolysis-2006.html | supports | The original main positively asserts prior relative and absolute assignment of all these metabolites, citing its earlier studies. Preserve this positive statement alongside the earlier B C11 exception. The specific later original B C11 protocol has not been independently inspected; neither source is replaced by authority consensus. |
+| C195-TARGET-SEARCH | /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/diagnostic-target-local-search.json; Exact full diagnostic keys in committed eligible ChEBI and ignored-inclusive curation | supports | No match in the bounded local tables/curation tree. No global authority absence or unverified positive replacement is inferred. |
+
+## Limits And Additional Notes
+
+- The root section inventories present claims and source routing; chemical identities, source-specific experiments, definition claims and optional-content assertions require their separately scoped scientific assessments.
+- Original source access times and exact retained snapshots are preserved; later authoring or persistence is not a new source retrieval.
+- Chemical authority/graph precision and general taxonomy, history and computed classifications are assessed separately. Any simultaneous identity repair must explicitly adjudicate biological old-key joins and maintained consumer composition.
+- Authority matches establish the representations actually returned at their retained access times; they are not independent experimental structure or absolute-hand determinations. Root and science sections separately assess organism, locus, classification and history claims.
+- Authority equality is not independent experimental proof. No full natural absolute-hand protocol is asserted.
+- The reproduction report retains 42 withheld ambiguous producer claims, 161 merged-taxon rewrites and five unresolved assay-organism targets.
+- 499 identifier-label plausibility warnings are non-blocking; 4750 pairs have no configured adapter and were skipped.
+- Four tests were skipped and two dependency deprecation warnings remain. Passing configured QC is not independent scientific verification.
+- Native baseline gates establish configured consistency, not independent biological production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions and no-adapter pairs; a successful command does not convert these into verified scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population was checked; external caches and generated bytecode are not asserted to be independently byte-pinned.
+- No scientific owner, inventory, curation table, native status or history was edited. Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification; target strict validation ran afresh. Scientific failed or unavailable checks are distinct from bundle validation.
+- Scientific conclusions integrate the chemical, biological and provenance assessments; source access and unresolved scopes remain explicit.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T230918Z-dorrigocin-a
+title: Scientific review of dorrigocin A
+started_at: '2026-10-21T23:04:05.993362Z'
+finished_at: '2026-10-21T23:09:18.311540Z'
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: Native dorrigocin A loss is directly supported. The heterologous experiment
+  instead identifies iso-migrastatin, with separate aqueous conversion to dorrigocins,
+  so its scope needs qualification. The retained graph omits five published carbon
+  configurations and differs in precision from its literal PubChem identifier; original
+  absolute-hand protocols remain incomplete.
+source:
+  git_revision: f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/dimboa.yaml
+    sha256: 36b9de8038c33f5f5c751b86bffa0d1e46b03e53af2fa3ed4bddfbab090cdaf8
+    role: context
+  - path: data/natural_products/alkaloids/dimethylcoprogen.yaml
+    sha256: 4dd0081fe3c3b7aef1ccdbf275cf53f659c4b932fac4bf97d7172cbcdb68ad67
+    role: context
+  - path: data/natural_products/alkaloids/distamycin.yaml
+    sha256: 0d53884114eaab8098d1dc2357a59cd3e45764d350878fd71eee02f966fa0fd5
+    role: context
+  - path: data/natural_products/alkaloids/dixiamycin-a.yaml
+    sha256: b359c9408a4bbb8dae9c9ab4516de48d6c2aaa00ce361c38aaa59e199b8edb3e
+    role: context
+  - path: data/natural_products/alkaloids/dorrigocin-a.yaml
+    sha256: e45b9ecc4a2ed27218fcfbb80cab1057622fc2ae0542954542f5eeba8a7b54d0
+    role: target
+  - path: data/natural_products/alkaloids/dorrigocin-b.yaml
+    sha256: d4b5272ae2cce093e2b091c9105fdcf5bccd685b48d111429164bd38e001556d
+    role: context
+  - path: data/natural_products/alkaloids/elymoclavine.yaml
+    sha256: e2011f8a88a29742375412dc54734a888790746f262ef04006fec7a6a343e31c
+    role: context
+  - path: data/natural_products/alkaloids/enantio-pyochelin.yaml
+    sha256: 7f71f0312b2f0d8b6072e978f1d7c22dd87897bc0482ebdce69ffa12b023887c
+    role: context
+  - path: data/natural_products/alkaloids/endophenazine-a.yaml
+    sha256: 18820266792db2e14e4c1e435fae5aedfa593ff68db0c45a0adc9589be1c9261
+    role: context
+  - path: data/natural_products/alkaloids/endophenazine-a1.yaml
+    sha256: 8a9071a488b2a072dd188c239a94e225288c1ba0a7457c54cef61358381df977
+    role: context
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/extract_pubchem_bioassay.py
+    sha256: 24f9d794e7cf97c420351cb751f8767f7d81a5f22aed01669b2318d6755e7c00
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/bioassay_exclusions.py
+    sha256: 4a4176e072ac9759aa8a9e88300d7e2de5aaf4ebf30b5c42fcf4c9c0b6cebbb4
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/lotus_exclusions.py
+    sha256: 6352cac7c587eab5a56d907c523cc899d02d197009081624bf8649c675ee30f7
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+    role: context
+  - path: src/naturalproductmech/curate/xref_exclusions.py
+    sha256: 17c3d9e7794bae596b22cf19a2dd5bc2169475d6fea81ea4e6f1781a53af9157
+    role: context
+  - path: src/naturalproductmech/grading.py
+    sha256: ece54c4a2c0803f034ac59de51b1006cf79ea8d6b6256d75757d4adb88ea9630
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: tests/test_claim_references.py
+    sha256: 11b2fc60dbe32154df63fb2e8c784c7c8ba6585581c09bba2eebe2c5192d4c06
+    role: context
+  - path: tests/test_lotus_exclusions.py
+    sha256: 3e3aa443714202e1bc41f0fb236e6bf69caabd68a16af23b972323f5f846386c
+    role: context
+  - path: tests/test_mibig_locus_evidence_overrides.py
+    sha256: 9177b5bd24f6e47cc4743857179217d9e0d4add9560b2ce3faefaebe53ba09a0
+    role: context
+  - path: tests/test_producer_strains.py
+    sha256: 17002ef1640464777f1925d12d842ed83c9098aad6de724ae0ea236ecccc4ff3
+    role: context
+  - path: tests/test_seed_skeleton.py
+    sha256: 72ec216fb0ed365b09f1cfb64fb06c701c50b5d7c2df409d8dbf613d302803bf
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 195, batch 020, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated targets in earlier
+    batch commits (publication tracked separately). At selection, 244 of 3116 current
+    records had campaign coverage and 2872 remained. The population search included
+    ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-1e62088a6a
+targets:
+- target_id: naturalproductmech:mibig-1e62088a6a
+  path: data/natural_products/alkaloids/dorrigocin-a.yaml
+  label: dorrigocin A
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-1e62088a6a
+  command: just validate-strict data/natural_products/alkaloids/dorrigocin-a.yaml
+    --out /private/tmp/npm-review-work/195/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T23:04:07.548380Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3116 corpus records are filed exactly where PATHS.tsv pins them.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-018-baseline-verify-corpus-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-018 execution on f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T21:43:11.095314Z;
+    finished 2026-10-21T21:43:43.016017Z. Exact original receipt: /private/tmp/npm-native-checks/batch-018/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-018/verify-corpus.log. Reused
+    for batch020 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,105,749 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch020. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-1e62088a6a
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3116 records reproduce byte-for-byte from data/raw/.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-018-baseline-verify-reproduction-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-018 execution on f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T21:43:11.049802Z;
+    finished 2026-10-21T21:44:10.266611Z. Exact original receipt: /private/tmp/npm-native-checks/batch-018/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-018/verify-reproduction.log.
+    Reused for batch020 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,182 tracked byte streams and modes (208,105,749 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch020. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-1e62088a6a
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The canonical review-queue command completed with actual exit0 on the fresh
+    main base; exact output, warnings and skips remain in the pinned transcript.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-018-baseline-review-queue-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just review-queue --tsv /private/tmp/npm-review-queue-batch-018.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-018 execution on f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T21:43:11.094986Z;
+    finished 2026-10-21T21:43:27.046585Z. Exact original receipt: /private/tmp/npm-native-checks/batch-018/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-018/review-queue.log. Reused
+    for batch020 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,105,749 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch020. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-1e62088a6a
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'Configured identifier-label validation exited zero: 13449 canonical matches,
+    646 synonym matches and 35 configured exceptions; 499 non-blocking warnings and
+    4750 no-adapter skips remain.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-018-baseline-validate-products-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-018 execution on f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T21:43:11.095805Z;
+    finished 2026-10-21T21:44:09.649497Z. Exact original receipt: /private/tmp/npm-native-checks/batch-018/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-018/validate-products.log. Reused
+    for batch020 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,105,749 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch020. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-1e62088a6a
+- check_id: shared-qc
+  name: Full repository quality gate on the fresh main baseline
+  status: passed
+  required: true
+  summary: Full fresh-base quality command completed successfully:999 tests passed,4
+    skipped,2 warnings;3116 records passed closed schema validation and corpus reproduction,
+    and generated pages were current.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-018-baseline-qc-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-018 execution on f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T21:43:11.050051Z;
+    finished 2026-10-21T21:48:43.599885Z. Exact original receipt: /private/tmp/npm-native-checks/batch-018/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-018/qc.log. Reused for batch020
+    only after a fresh fetch/clean branch, equal commit/tree and two reads of all
+    9,182 tracked byte streams and modes (208,105,749 bytes), including a recheck
+    after the fresh authoritative catalogue. This gate was not rerun for batch020.
+    Original execution times, scope, warnings, exceptions and skips are retained.'
+  target_ids:
+  - naturalproductmech:mibig-1e62088a6a
+- check_id: R195-FULL-OWNER
+  name: Complete owner and captured-source scope
+  status: passed
+  required: true
+  summary: Successful official intake and a fresh root full-owner/read receipt precede
+    this authoring. All six officially captured sets and the separately mechanically
+    parsed seventh PubChem set match. The seven raw sets were read by root at the
+    declared scope. Target193 has seven emitted assays; their scientific interpretation
+    and sole AID504832 classifier finding belong to the separate science section.
+    Target192 has one no-assay sentinel and emits no assay. Inline graphs/pathways
+    occur only at194 and199; no external graph component or molecular-target assertion
+    is present.
+  target_ids:
+  - naturalproductmech:mibig-1e62088a6a
+  evidence_ids:
+  - R195-OWNER
+  - R195-LOCAL
+  - R195-PUBCHEM-PREP
+- check_id: S195-C-NATIVE
+  name: Exact native compound necessity and positive occurrence
+  status: passed
+  required: true
+  summary: The complete original isolation and 2009 main/pixels supply named A and
+    its native loss endpoint. The method limitation concerns heterologous endpoint
+    wording, not the strong native result.
+  target_ids:
+  - naturalproductmech:mibig-1e62088a6a
+  evidence_ids:
+  - S195-E-LOCAL
+  - S195-E-P195196-1994-I
+  - S195-E-P195196-1994-II
+  - S195-E-P195196-2009
+  - S195-E-P195196-2009-FIG1
+  - S195-E-P195196-2009-FIG3
+  - S195-E-P195196-2005-META
+  - S195-E-P195196-2006-FIG1
+- check_id: S195-C-OPTIONAL-SI
+  name: Independent inspection of the original 2009 SI
+  status: unavailable
+  required: false
+  summary: Challenge HTML and the official archive not-open-access response remain
+    visible. This optional detail check does not prevent assessment of the complete
+    main qualitative genotype/endpoint account and original Figure 3B; no independent
+    PCR-band or trace-area remeasurement is claimed.
+  target_ids:
+  - naturalproductmech:mibig-1e62088a6a
+  evidence_ids:
+  - S195-E-P195196-2009
+  - S195-E-LIMITS
+  - S195-E-P195196-2009-FIG1
+  - S195-E-P195196-2009-FIG3
+- check_id: C195-C-REPRESENTATION
+  name: Stored chemical representation and complete source row
+  status: passed
+  required: true
+  summary: Fresh intake derivation agrees with the stored graph; the source selector,
+    full row and prepared snapshot were independently rechecked.
+  target_ids:
+  - naturalproductmech:mibig-1e62088a6a
+  evidence_ids:
+  - C195-OWNER
+  - C195-GRAPH
+  - C195-COMPARISON
+- check_id: C195-C-PRIMARY-PRECISION
+  name: Published carbon constraints and literal identifier
+  status: failed
+  required: true
+  summary: The retained graph omits five carbon configurations depicted in original2006/2009
+    sources; literal PubChem44543743 supplies those five and therefore does not identify
+    this exact underspecified stereograph. NPAtlas and two-star ChEBI match the retained
+    less-specific form. Published hand and unresolved original protocols remain distinct.
+  target_ids:
+  - naturalproductmech:mibig-1e62088a6a
+  evidence_ids:
+  - C195-PRIMARY-2009-FIGURE
+  - C195-PRIMARY-2006-FIGURE
+  - C195-PRIMARY-2005-SI
+  - C195-PRIMARY-MAP
+  - C195-PRIMARY-2005-METADATA
+  - C195-PRIMARY-2006-MAIN
+  - C195-OWNER
+  - C195-COMPARISON
+  - C195-AUTHORITY-COMPARISON
+  - C195-AUTHORITY-DETAIL
+- check_id: C195-C-ORIGINAL-HAND
+  name: Exact complete original absolute-hand protocol
+  status: unavailable
+  required: true
+  summary: Later published stereographs and positive assignment assertions are retained,
+    but the complete original derivation, especially B C11, is not independently inspected.
+    This does not invalidate the verified representation/xref difference.
+  target_ids:
+  - naturalproductmech:mibig-1e62088a6a
+  evidence_ids:
+  - C195-PRIMARY-2009-FIGURE
+  - C195-PRIMARY-2006-FIGURE
+  - C195-PRIMARY-2005-SI
+  - C195-PRIMARY-MAP
+  - C195-PRIMARY-2005-METADATA
+  - C195-PRIMARY-2006-MAIN
+  - C195-OWNER
+  - C195-COMPARISON
+  - C195-AUTHORITY-COMPARISON
+  - C195-AUTHORITY-DETAIL
+evidence:
+- evidence_id: R195-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/dorrigocin-a.yaml
+  locator: Complete post-intake owner, optional assertions and all history events
+  accessed_at: '2026-10-21T23:05:00.360018Z'
+  support: supports
+  summary: 'Root read the complete owner after successful official intake: 1 occurrence,
+    1 producer and 1 locus assertions. No referenced external component is present.
+    Optional fields: none.'
+  snapshot_sha256: e45b9ecc4a2ed27218fcfbb80cab1057622fc2ae0542954542f5eeba8a7b54d0
+- evidence_id: R195-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/195/local-sources.json
+  locator: Complete resolved owner and all six officially captured raw row sets
+  accessed_at: '2026-10-21T23:05:00.360018Z'
+  support: context_only
+  summary: All six captured MIBiG, LOTUS, ChEBI structures/origins, CyanoMetDB and
+    NPClassifier sets match the frozen preparation, including empty sets. The separate
+    seventh PubChem inventory comparison is distinguished below. Source fidelity does
+    not itself establish experimental support.
+  snapshot_sha256: c4231303ae2b8734754739952a5ddddb3b454e4ca1dc4b2bcf97d3d917d3f4f1
+- evidence_id: R195-PUBCHEM-PREP
+  kind: record_content
+  reference: data/raw/pubchem_bioassay.tsv
+  locator: Exact-key rows compared with the separate provisional seventh source set
+  accessed_at: '2026-10-21T23:08:44.349440Z'
+  support: context_only
+  summary: The separate committed PubChem raw set contains 0 matching rows and reproduces
+    the frozen preparation. The exact set is empty for eight targets, contains one
+    no-assay sentinel for192, and contains seven observations for193 (six AIDs, including
+    two distinct-SID504749 observations). This is not part of the official six-set
+    intake and does not establish absence of bioactivity from the literature.
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: R195-Q26291839
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q26291839
+  locator: 'Exact retained25-entity projection: labels and complete P225/P685/P31
+    claim objects only; unrelated upstream claims not retained'
+  accessed_at: '2026-10-21T21:26:17.013486Z'
+  support: context_only
+  summary: Literal source P225/P685 values agree with the retained projection. Synonym
+    routing is separate from experimental occurrence, chemical identity and stock
+    applicability.
+  snapshot_sha256: bc9eace3192cec1ad7e5d2c57e7e33425245fa056fd9caf88baab4a06c8626ba
+- evidence_id: R195-TAXON-CONTEXT
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&retmode=xml&id=294,1883,1892,1900,1961,2063,4121,4577,5110,5111,5113,5599,40602,43178,45231,51584,55404,58346,89647,89650,89664,112277,139766,231710,380021,398502,684832,690845,995841,1038928,1485014,2490667,2607118
+  locator: Exact relevant TaxId, ScientificName, Rank, ParentTaxId and OtherNames
+    fields
+  accessed_at: '2026-10-21T21:25:46.355451Z'
+  support: context_only
+  summary: NCBI 684832 S. platensis subsp. rosaceus is subspecies rank beneath S.
+    platensis 58346. Compatible species/subspecies associations do not equate NRRL18993,
+    another stock or a historical experimental preparation.
+  snapshot_sha256: 75216bcb5c7ca10eb6272b73d1d46518c027637079aae921d695047a0594ada3
+- evidence_id: R195-IMODULON
+  kind: database
+  reference: https://imodulondb.org/api/datasets
+  locator: Complete 20-organism, 28-dataset official catalogue
+  accessed_at: '2026-10-21T20:59:34.301902Z'
+  support: context_only
+  summary: The complete retained20-organism28-dataset catalogue establishes membership
+    only. None of the exact imported native producers in these ten targets is represented.
+    S.coelicolor and E.coli experimental hosts do not establish introduced-cluster
+    or native-stock module applicability. The structured command was unavailable in
+    the bounded inspected environment; the retained official API is the fallback.
+  snapshot_sha256: 155607e7023efdead5ebab3919279a0776d5665a7de9e28b67f02f8f521b0693
+- evidence_id: S195-E-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/195/local-sources.json
+  locator: Complete resolved owner and captured rows; exact seven-set equality checked
+  accessed_at: '2026-10-21T23:05:44.716723Z'
+  support: context_only
+  summary: Complete actual owner including any inline graph/pathway, six captured
+    source sets and separately compared seventh PubChem set match the prepared complete
+    reads.
+  snapshot_sha256: c4231303ae2b8734754739952a5ddddb3b454e4ca1dc4b2bcf97d3d917d3f4f1
+- evidence_id: S195-E-CONSUMERS
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: classify_activity; load/apply_mibig_locus_evidence_overrides; producer/locus
+    emission and correction order
+  accessed_at: '2026-10-21T23:05:44.716723Z'
+  support: context_only
+  summary: Static inspection covers exact AID/title classification, producer/locus
+    method grading, method overrides and reference/strain qualification order. The
+    full-row claim-reference table and structure-correction rejection are separate
+    from REPLACE, which does not itself enforce seven old-context fields.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: S195-E-SCHEMA
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: ProducerEvidenceBasisEnum and ClusterLinkEvidenceEnum; conf/producer_evidence.tsv
+    and grading.py also read and pinned
+  accessed_at: '2026-10-21T23:05:44.716723Z'
+  support: context_only
+  summary: Producer tiers concern evidence in the named organism; cloned-locus experiments
+    are a distinct cluster question. Empty methods and a source assertion do not independently
+    assert native knockout or exact pure-enzyme proof.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: S195-E-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/195/science-search.json
+  locator: Exact read scope
+  accessed_at: '2026-10-21T23:05:44.724131Z'
+  support: context_only
+  summary: Exact current curated-decision search is retained. Its scope is the curation
+    tree; it does not establish absence of experimental evidence or all possible consumers.
+  snapshot_sha256: eca6ee6d4fc8f2b86e048c2be32cfead50136481ea61194eedc2b52b9cca4702
+  search_scope: rg --no-ignore --hidden -n -F over curation using exact identifier,
+    label, full key and source accessions
+- evidence_id: S195-E-LIMITS
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch020/bgc-science/source-notes.json
+  locator: Exact source-read scopes, retained failures and target-specific remaining
+    questions; timestamp denotes current local snapshot verification after creation;
+    original upstream access times remain in the retained receipts
+  accessed_at: '2026-10-21T22:01:12.244948Z'
+  support: context_only
+  summary: Frozen source-only notes distinguish fully read scientific bodies, actual
+    original pixels, abstracts and unavailable original bodies. Original HTTP times
+    are retained separately from later local persistence; no failed HTML response
+    is treated as a PDF.
+  snapshot_sha256: ced3031e5998e0133a0dd57bf3a0441795accd3b9119cb2b3b1753b5165b87f6
+- evidence_id: S195-E-P195196-1994-I
+  kind: primary_source
+  reference: DOI:10.7164/antibiotics.47.862
+  locator: Complete scientific text, taxonomy, fermentation and biological-activity
+    tables read. Rendered pages 1/7 are retained but not claimed independently viewed
+    in this packet.
+  accessed_at: '2026-10-21T21:28:05.775977Z'
+  support: partial
+  summary: 'The producing isolate AB1981F-75 is NRRL 18993. Comparison with the S.
+    platensis type stocks ATCC 13865/NRRL 2364 does not equate the stocks. The study
+    reports culture-associated dorrigocins and a 15-L production fermentation in a
+    22-L vessel at 28 °C, with XAD-16 present in the medium; reported bioassay activity
+    is not a per-congener chemical titer measurement. Limits: No new absolute assignment
+    is inferred from the taxonomy, activity or culture work.'
+  snapshot_sha256: 88add60ac614cdfbe1a2ae02ef5ef7a91549b062d051d819b7b693128a6daae7
+- evidence_id: S195-E-P195196-1994-II
+  kind: primary_source
+  reference: DOI:10.7164/antibiotics.47.870
+  locator: Complete scientific text/NMR tables read and original pages 1, 3 and 4
+    viewed.
+  accessed_at: '2026-10-21T21:28:11.047792Z'
+  support: partial
+  summary: 'Separate A and B isolates (8 mg and 6 mg) are obtained from the reported
+    30-L workup. Both have C27H41NO8; A has the C11=C12/C13-OH arrangement, B C12=C13/C11-OH.
+    Couplings and NOE establish three trans chain alkenes. The paper reports rotations
+    A +91° and B +16° under specified methanol conditions; these measurements alone
+    do not assign all tetrahedral hands. Limits: Original 1994 drawings do not independently
+    establish the later fully assigned absolute graphs. The positive culture occurrence
+    is preserved despite later evidence of conditional chemical formation from iso-migrastatin.'
+  snapshot_sha256: 8065ba91c7a16e172dedc4b8818776fbe772d11f216053b1fbf79377d4d188cd
+- evidence_id: S195-E-P195196-2005-META
+  kind: database
+  reference: https://api.figshare.com/v2/articles/3300907
+  locator: Official original article abstract and file metadata
+  accessed_at: '2026-10-21T07:07:51Z'
+  support: supports
+  summary: The original abstract explicitly describes iso-migrastatin as the directly
+    biosynthesized product and A/B/epi-A/migrastatin as aqueous shunts; it expressly
+    excludes C11 of compounds 3 (B) and 4 (iso-migrastatin) from its stereochemical
+    determination.
+  snapshot_sha256: 9c662349da5a15c6a68ca9039ec512e70de48709d9379abe93b4a9a2d88a16c6
+- evidence_id: S195-E-P195196-2005-SI
+  kind: primary_source
+  reference: https://api.figshare.com/v2/file/download/5138641
+  locator: 'Complete seven-page official SI text read; source-specific compound numbering,
+    culture and buffer conversion re-read. Prior review sections are reused only as
+    actual original-access provenance, not as scientific verdicts. Correct successful
+    retained PDF: si-api-download.pdf; the similarly named empty failed-route PDF
+    is explicitly superseded by 2005-si-binding-correction-001.json.'
+  accessed_at: '2026-10-21T07:08:21Z'
+  support: partial
+  summary: The complete official seven-page SI supplies the original compound numbering
+    (A2, B3, iso-MGS4, epi-A5), native fermentation/isolation and purified iso-MGS
+    aqueous conversion at 37 °C for 2 h. It supports a conditional chemical last-step
+    route. The separately bound original article abstract supplies the explicit C11
+    assignment exception; no later B C11 protocol is claimed from this SI.
+  snapshot_sha256: e9ff9cd430082f6d88b68f6c30ad65b8ae1e008222b80a05d7298b5d2513c62e
+- evidence_id: S195-E-P195196-2006
+  kind: primary_source
+  reference: DOI:10.1021/ol062470p
+  locator: Selected original introduction and Figure 1 inspected; no claim of a new
+    complete read of this main by this packet author. The independent chemistry agent
+    read the full main.
+  accessed_at: '2026-10-21T07:08:21Z'
+  support: partial
+  summary: 'The introduction positively asserts that relative and absolute stereochemistry
+    of all metabolites had been established, citing ja043808i and ja053118u. Figure
+    1 depicts B C11 and labels A/epi-A at C13. Limits: The specific later original
+    B C11 protocol remains uninspected. This positive later assertion is retained
+    alongside the earlier exception; neither is silently discarded.'
+  snapshot_sha256: 94328b87c0c7e084ccdc7ee765d1e2e5bf9f03110fc62147fbfdce872294800f
+- evidence_id: S195-E-P195196-2006-FIG1
+  kind: primary_source
+  reference: DOI:10.1021/ol062470p
+  locator: Original Figure 1; source-specific compound numbering
+  accessed_at: '2026-10-21T07:08:41Z'
+  support: supports
+  summary: The original figure depicts A 2a as 13R, epi-A 2c as 13S and B 2b with
+    explicit C11 OH wedge. This positive depiction is retained without claiming independent
+    inspection of the exact later B C11 assignment protocol.
+  snapshot_sha256: bfc9b22bd25064baeae6d3f0f5b9211e3ba6ac13d3fa471d9acc83cc7d791d5c
+- evidence_id: S195-E-P195196-2008
+  kind: primary_source
+  reference: DOI:10.1016/j.bmc.2008.10.074; PMID:19010685
+  locator: Complete retained scientific body and Methods read, including the final
+    Methods segment during this preparation.
+  accessed_at: '2026-10-21T07:07:54Z'
+  support: partial
+  summary: 'The NRRL 18993 mgs cluster on pBS11001 was expressed in five Streptomyces
+    hosts, including J1074, K4-114, M512 and SUKA4/5. Resin-containing B2/R2YE experiments
+    identified iso-migrastatin by retention, UV, co-injection, LC-MS and NMR. Limits:
+    This is direct heterologous iso-migrastatin evidence, not an inspected direct
+    final dorrigocin A/B production result.'
+  snapshot_sha256: d43f875f9197deab3ed8de368858bd196acf42983db8bbf50601b06e95c044e5
+- evidence_id: S195-E-P195196-2009
+  kind: primary_source
+  reference: DOI:10.1074/jbc.M109.046805; PMID:19726666
+  locator: Complete scientific main, Methods, Table 1, all main captions and references
+    read; original Figures 1 and 3 viewed. SI routes returned challenge HTML or a
+    not-open-access XML error, not supplemental data.
+  accessed_at: '2026-10-21T21:35:25.784652Z'
+  support: partial
+  summary: 'Figure 3B directly tracks labelled dorrigocins A/B in no-resin native
+    cultures: ΔmgsA SB11008, ΔmgsC SB11010 and ΔmgsD SB11011 lose those peaks; Δorf(-1)
+    SB11007 and Δorf1 SB11014 retain them. Figure 3A is the resin/iso-migrastatin
+    endpoint: ΔmgsF SB11012 and ΔmgsH SB11013 lose iso-migrastatin, ΔmgsB SB11009
+    is reduced, and mgsH complementation SB11015 partially restores iso-migrastatin.
+    The complementation endpoint is not silently transferred to dorrigocins. Figure
+    1 draws A with a wavy C13 bond but explicitly states A 13R versus 13-epi-A 13S;
+    B has an explicit C11 OH wedge. The ketoreductase stereochemical discussion is
+    predictive/correlative, not a new direct C11 hand experiment on isolated B. MgsI/J/K
+    functions in this paper are proposed from sequence/PKS logic. Native pathway necessity
+    can remain meaningful for culture-associated products whose last formation step
+    is chemical. Limits: The original SI was not recovered. Exact trace areas/PCR
+    bands were not independently re-quantified. No direct heterologous final-A/B endpoint
+    is established by the separate 2008 iso-migrastatin study.'
+  snapshot_sha256: 0288ced8a185c6fd20e167a96a7934a28962106fdd7a7eee3b1390c7f3fdc165
+- evidence_id: S195-E-P195196-2009-FIG1
+  kind: primary_source
+  reference: DOI:10.1074/jbc.M109.046805
+  locator: Original main figure pixels viewed
+  accessed_at: '2026-10-21T21:38:39.625179Z'
+  support: supports
+  summary: Original Figure 1 depicts the distinct A/B allylic arrangements, three
+    E chains and stereobonds. A C13 is wavy but expressly labelled 13R, versus 13-epi
+    13S; B C11 OH is solid. This is depicted configuration, not a new absolute experiment.
+  snapshot_sha256: c3f5d38dbd613e18c706d645a41ac795cc904d96d7aa84fcfa59a4f0f5619b76
+- evidence_id: S195-E-P195196-2009-FIG3
+  kind: primary_source
+  reference: DOI:10.1074/jbc.M109.046805
+  locator: Original main figure pixels viewed
+  accessed_at: '2026-10-21T21:38:39.644027Z'
+  support: supports
+  summary: Original Figure 3 separates panel B no-resin labelled A/B loss after native
+    mgsA/C/D deletions from panel A resin/iso-MGS loss and mgsH complementation. No
+    independent trace-area quantitation is claimed.
+  snapshot_sha256: b20a2ed127c66e0161e0187c7353fccf2b47b2e8c15df926ae8faedb7c4b6cc0
+- evidence_id: S195-E-P195196-2013
+  kind: primary_source
+  reference: DOI:10.1021/ja4002635; PMID:23394593
+  locator: Complete retained scientific body read; no complete independent reassignment
+    of all spectra.
+  accessed_at: '2026-10-21T07:07:14Z'
+  support: partial
+  summary: 'Numbering here is iso-migrastatin 1, migrastatin 2, dorrigocin A 3, epi-A
+    4 and B 5. MgsI/J/K deletion work resolves iso-migrastatin-pathway intermediates
+    10–17; it is not direct enzymatic A/B final formation. Water-driven downstream
+    rearrangement remains a separate mechanism. Limits: Do not treat changed numbering
+    or early-intermediate assays as final A/B purified-enzyme evidence.'
+  snapshot_sha256: e7c34d12579a740affc7e637b5d5341e4560720435dd52bbfb7ac4b1779537d0
+- evidence_id: C195-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/dorrigocin-a.yaml
+  locator: Complete owner and all seven matching source-row sets; no referenced components
+  accessed_at: '2026-10-21T23:05:55.256663Z'
+  support: supports
+  summary: 'The complete owner denotes dorrigocin A under naturalproductmech:mibig-1e62088a6a.
+    All source selectors, versions and complete row digests are retained in COMPARISON:
+    [{"row_sha256": "9af1f55fa9355161195055d00469d16ed4a6cacbdf1446844093bc3cc1a32fa6",
+    "selector": "BGC0000177:3", "version": "5"}]. The official intake and prepared
+    owner bytes agree.'
+  snapshot_sha256: e45b9ecc4a2ed27218fcfbb80cab1057622fc2ae0542954542f5eeba8a7b54d0
+- evidence_id: C195-GRAPH
+  kind: validation
+  reference: /private/tmp/npm-review-work/195/chemistry.json
+  locator: Fresh intake RDKit result and frozen Standard/fixed-H comparison
+  accessed_at: '2026-10-21T23:04:06.608361Z'
+  support: supports
+  summary: The stored SMILES recomputes to HJCZOTBHYAPUHT-XHOLQODBSA-N, formula C27H41NO8,
+    formal charge 0; stored InChI/key agree. These are representation checks, not
+    experimental identity proof.
+  snapshot_sha256: bd1934ba504f6bdd02779a0d26cd3266f7c5533daacfca2fc962c9307f65ea6f
+- evidence_id: C195-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/retained-graph-comparison.json
+  locator: Record 195; exact source rows and each graph comparison
+  accessed_at: '2026-10-21T21:32:34.340857Z'
+  support: supports
+  summary: Exact Standard, fixed-H, formula, charge and stereo comparisons of the
+    retained owner and complete raw rows; current authority responses and primary
+    proof are separate evidence.
+  snapshot_sha256: aebefd479b082320c3625c63bef6273c010a858957b4802a319fec6a9996f402
+- evidence_id: C195-LOCAL-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/195/chemistry-search-receipt.json
+  locator: Exact full key, label, slug and source selector in raw/owner/curation trees
+  accessed_at: '2026-10-21T23:05:55.432766Z'
+  support: supports
+  summary: Ignored-inclusive bounded search preserves all matching paths; an absent
+    curation decision does not imply a missing scientific source.
+  snapshot_sha256: 890f5c0fa23ff87213f92958484c6cac0b2d823dafbc453112fd0f3601350175
+  search_scope: rg --no-ignore --hidden; data/natural_products, data/raw and curation;
+    exact full key, current label, slug and BGC:compound_index. No claim beyond these
+    trees.
+- evidence_id: C195-AUTHORITY-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/authority-phase-001-comparison.json
+  locator: Complete literal Standard/fixed-H, formula, charge and stereo comparison;
+    exact source payload pins retained
+  accessed_at: '2026-10-21T21:34:40.540097Z'
+  support: supports
+  summary: Current authority graphs and source-specific serialization differences
+    are independently compared. Database agreement is not primary natural-hand proof.
+  snapshot_sha256: 4005c45d667d4eabb4ad8fc7220de1e86023285837df968a50f767fd563b89f0
+- evidence_id: C195-AUTHORITY-DETAIL
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/authority-phases002-004-comparison.json
+  locator: Complete literal Standard/fixed-H, formula, charge and stereo comparison;
+    exact source payload pins retained
+  accessed_at: '2026-10-21T21:46:08.569298Z'
+  support: supports
+  summary: Current authority graphs and source-specific serialization differences
+    are independently compared. Database agreement is not primary natural-hand proof.
+  snapshot_sha256: 53f2ee01083c325737e4d2bbb174245bb7a064c3adbd29200ba867349e94e402
+- evidence_id: C195-AUTH-1
+  kind: authority
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/44543743/SDF?record_type=2d
+  locator: Complete retained response /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/public-reads/pubchem-44543743.sdf
+  accessed_at: '2026-10-21T21:33:33.122186Z'
+  support: supports
+  summary: Exact returned namespace/version and representation; scientific constraints
+    remain in separate primary evidence.
+  snapshot_sha256: 8288b8a814078f3bff54eca60ea3423731db23d81c65ab39a20e98718e3af806
+- evidence_id: C195-AUTH-2
+  kind: authority
+  reference: https://www.npatlas.org/api/v1/compound/NPA01445
+  locator: Complete retained response /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/phase002-public/NPA01445.json
+  accessed_at: '2026-10-21T21:35:24.059645Z'
+  support: supports
+  summary: Exact returned namespace/version and representation; scientific constraints
+    remain in separate primary evidence.
+  snapshot_sha256: c3889b0565ade3036fdbfb32493fc9099cbf655318e3f1df84ca4e62f379fc11
+- evidence_id: C195-AUTH-3
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/198798/
+  locator: Complete retained response /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/phase003-public/CHEBI198798.json
+  accessed_at: '2026-10-21T21:38:27.608733Z'
+  support: supports
+  summary: Exact returned namespace/version and representation; scientific constraints
+    remain in separate primary evidence.
+  snapshot_sha256: 515162736acf0ac23e90c10d53bc9336d3f4f1ebda7bf1ff3d9854760b37bd1f
+- evidence_id: C195-AUTH-4
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/198798/
+  locator: Complete retained response /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/phase003-public/CHEBI198798.mol
+  accessed_at: '2026-10-21T21:38:27.622425Z'
+  support: supports
+  summary: Exact returned namespace/version and representation; scientific constraints
+    remain in separate primary evidence.
+  snapshot_sha256: c72766c399318f980386b2b4bd17a96106aee38982a76388a6b368073a115e11
+- evidence_id: C195-AUTH-5
+  kind: authority
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q75063173.json
+  locator: Complete retained response /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/phase004-public/Q75063173.json
+  accessed_at: '2026-10-21T21:39:09.844997Z'
+  support: supports
+  summary: Exact returned namespace/version and representation; scientific constraints
+    remain in separate primary evidence.
+  snapshot_sha256: ad9445269956d833eaffac13ab3af869c5b0b8d074dab595e52ffc151477f16b
+- evidence_id: C195-CHEBI-SEARCH-1
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=HJCZOTBHYAPUHT-XHOLQODBSA-N&size=100
+  locator: Complete bounded exact key/name response; /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/phase002-public/chebi-key-195.json
+  accessed_at: '2026-10-21T21:35:22.347762Z'
+  support: supports
+  summary: HTTP200; original response retained. Exact candidate star/graph eligibility
+    is assessed separately; no universal absence inference.
+  snapshot_sha256: 703ad4b4aacc8bd658c5aed33bd9898f8e5b8f1b94846d7908a616d08c2b780a
+  search_scope: Official ChEBI exact literal key/name request, size100; complete returned
+    payload and actual status. No global no-hit claim.
+- evidence_id: C195-CHEBI-SEARCH-2
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=dorrigocin%20A&size=100
+  locator: Complete bounded exact key/name response; /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/phase004-public/chebi-name-195.json
+  accessed_at: '2026-10-21T21:39:07.504953Z'
+  support: supports
+  summary: HTTP200; original response retained. Exact candidate star/graph eligibility
+    is assessed separately; no universal absence inference.
+  snapshot_sha256: 794d1af7e28d81d8d35c457724998e6b17210960beb752176be5edee8e76c472
+  search_scope: Official ChEBI exact literal key/name request, size100; complete returned
+    payload and actual status. No global no-hit claim.
+- evidence_id: C195-CONSUMERS
+  kind: record_content
+  reference: src/naturalproductmech/curate/structure_corrections.py
+  locator: Complete structure correction consumer
+  accessed_at: '2026-10-21T23:05:55.256663Z'
+  support: supports
+  summary: Existing replacement/split needs one exact source selector/full row and
+    a unique eligible committed three-star target/full row. It copies target SMILES
+    and withholds old xrefs; arbitrary primary SMILES/label overrides are not implemented.
+  snapshot_sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+- evidence_id: C195-XREF-CONSUMER
+  kind: record_content
+  reference: src/naturalproductmech/curate/xref_exclusions.py
+  locator: Complete current consumed route; actual code snapshot
+  accessed_at: '2026-10-21T23:05:55.256663Z'
+  support: supports
+  summary: Exact PubChem/NPAtlas literal exclusion requires an asserted source xref,
+    unique exact compound selector and complete original-row digest. It is not a positive-xref
+    admission or graph replacement route.
+  snapshot_sha256: 17c3d9e7794bae596b22cf19a2dd5bc2169475d6fea81ea4e6f1781a53af9157
+- evidence_id: C195-CLAIM-CONSUMER
+  kind: record_content
+  reference: src/naturalproductmech/curate/claim_references.py
+  locator: Complete current consumed route; actual code snapshot
+  accessed_at: '2026-10-21T23:05:55.256663Z'
+  support: supports
+  summary: Claim-reference routing enforces the complete original-row digest and rejects
+    structure_correction_note; joint identity repair needs reviewed tested composition.
+  snapshot_sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+- evidence_id: C195-STRAIN-CONSUMER
+  kind: record_content
+  reference: src/naturalproductmech/curate/producer_strains.py
+  locator: Complete current consumed route; actual code snapshot
+  accessed_at: '2026-10-21T23:05:55.256663Z'
+  support: supports
+  summary: Producer qualifiers enforce the complete original-row digest and supply
+    source-specific producer context; they do not themselves rewrite the BGC claim.
+  snapshot_sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+- evidence_id: C195-SEED-CONSUMER
+  kind: record_content
+  reference: scripts/seed_from_sources.py
+  locator: Complete current consumed route; actual code snapshot
+  accessed_at: '2026-10-21T23:05:55.256663Z'
+  support: supports
+  summary: Source normalization and exact-key joins apply the maintained correction
+    consumers; producer qualification after structure correction is rejected and requires
+    a reviewed composition change rather than silent stacking.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: C195-PRIMARY-2009-FIGURE
+  kind: primary_source
+  reference: DOI:10.1074/jbc.M109.046805
+  locator: Original Figure1 exact A13R versus13-epi-A13S labels and explicit B C11-OH
+    wedge; retained snapshot /private/tmp/npm-review-work/shared-next-batch020/bgc-science/public-005/dorrigocin2009-figure1.jpg
+  accessed_at: '2026-10-21T21:38:39.625179Z'
+  support: supports
+  summary: Both compounds carry five explicit carbon constraints and three E chain
+    bonds. Compound identity and numbering are source-specific; this is depiction-level
+    proof, not a newly inspected absolute-hand experimental protocol.
+  snapshot_sha256: c3f5d38dbd613e18c706d645a41ac795cc904d96d7aa84fcfa59a4f0f5619b76
+- evidence_id: C195-PRIMARY-2006-FIGURE
+  kind: primary_source
+  reference: DOI:10.1021/ol062470p
+  locator: Original Figure1; preserved morning access time; retained snapshot /private/tmp/npm-review-work/007/thermolysis-figure1.jpg
+  accessed_at: '2026-10-21T07:08:41Z'
+  support: supports
+  summary: The A13R/epi-A13S labels and depicted B hand agree with the 2009 drawing.
+    This evidence binds the depicted structures; the separate main-text assertion
+    is separately cited.
+  snapshot_sha256: bfc9b22bd25064baeae6d3f0f5b9211e3ba6ac13d3fa471d9acc83cc7d791d5c
+- evidence_id: C195-PRIMARY-2005-SI
+  kind: primary_source
+  reference: DOI:10.1021/ja043808i
+  locator: Complete seven-page SI text; exact A2/B3/epiA5 and water conversion; retained
+    snapshot /private/tmp/npm-review-work/007/si-api-download.pdf
+  accessed_at: '2026-10-21T07:08:21Z'
+  support: supports
+  summary: Native cultures and purified iso-migrastatin water conversion are separate
+    positive contexts. The complete seven-page SI identifies A2, B3, iso-migrastatin4
+    and epi-A5, with NMR, mass and optical-rotation comparisons; it does not independently
+    supply the specific later B C11 absolute-assignment protocol.
+  snapshot_sha256: e9ff9cd430082f6d88b68f6c30ad65b8ae1e008222b80a05d7298b5d2513c62e
+- evidence_id: C195-PRIMARY-MAP
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/dorrigocin-primary-comparison.json
+  locator: Complete independent diagnostic comparison and numbered source model; retained
+    snapshot /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/dorrigocin-primary-comparison.json
+  accessed_at: '2026-10-21T21:40:59.895483Z'
+  support: supports
+  summary: Independent complete numbered constitution and original wedges/descriptors
+    yield A8S9S10R13R14S and B8S9S10R11R14S with three E bonds. Both source MOL roundtrips
+    reproduce literal specified PubChem; retained graphs omit all five carbon constraints.
+    No replacement is selected.
+  snapshot_sha256: ee0f7848fd078cae80e847226eedac270006ed87775584460f2c05306fcb943f
+- evidence_id: C195-PRIMARY-2005-METADATA
+  kind: primary_source
+  reference: https://api.figshare.com/v2/articles/3300907
+  locator: Official DOI-bound original abstract and file metadata; DOI 10.1021/ja043808i.s001,
+    file5138641; retained snapshot /private/tmp/npm-review-work/007/figshare-si-metadata.json
+  accessed_at: '2026-10-21T07:07:51Z'
+  support: supports
+  summary: The original publisher abstract explicitly excludes C11 of compounds3 (B)
+    and4 (iso-migrastatin) from its stereochemical establishment. It binds the 117415-byte
+    original SI file and its exact MD5. This is positive original metadata, distinct
+    from the SI experimental body.
+  snapshot_sha256: 9c662349da5a15c6a68ca9039ec512e70de48709d9379abe93b4a9a2d88a16c6
+- evidence_id: C195-PRIMARY-2006-MAIN
+  kind: primary_source
+  reference: DOI:10.1021/ol062470p
+  locator: Original introduction paragraph asserting prior relative/absolute assignments;
+    references ja043808i and ja053118u; retained snapshot /private/tmp/npm-review-work/007/thermolysis-2006.html
+  accessed_at: '2026-10-21T07:08:21Z'
+  support: supports
+  summary: The original main positively asserts prior relative and absolute assignment
+    of all these metabolites, citing its earlier studies. Preserve this positive statement
+    alongside the earlier B C11 exception. The specific later original B C11 protocol
+    has not been independently inspected; neither source is replaced by authority
+    consensus.
+  snapshot_sha256: 94328b87c0c7e084ccdc7ee765d1e2e5bf9f03110fc62147fbfdce872294800f
+- evidence_id: C195-TARGET-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/diagnostic-target-local-search.json
+  locator: Exact full diagnostic keys in committed eligible ChEBI and ignored-inclusive
+    curation
+  accessed_at: '2026-10-21T21:54:28.205714Z'
+  support: supports
+  summary: No match in the bounded local tables/curation tree. No global authority
+    absence or unverified positive replacement is inferred.
+  snapshot_sha256: 90d202a55b1b951299b4a979ad96e5fe646c0cc5511cb11803ed30c0df33bc1b
+  search_scope: rg --no-ignore --hidden exact HJCZOTBHYAPUHT-LPYGBFRZSA-N and YQDJUXPUIRGKNV-NRWIMSPQSA-N
+    in data/raw/chebi_structures.tsv and curation only.
+assessments:
+- assessment_id: R195-HISTORY
+  area: provenance
+  topic: Native status and complete audit history
+  outcome: supported
+  summary: All 2 retained events were read, with exact action sequence ['SEEDED_FROM_SOURCES',
+    'SEEDED_FROM_SOURCES']. Targets194/199 retain explicit mechanism-curation history
+    alongside seeding; native status remains SEEDED. History records are not scientific-review
+    passes or proof of the mechanism assertions.
+  target_ids:
+  - naturalproductmech:mibig-1e62088a6a
+  evidence_ids:
+  - R195-OWNER
+- assessment_id: R195-OPTIONAL
+  area: completeness
+  topic: Complete optional-assertion inventory
+  outcome: not_applicable
+  summary: 'Present optional fields: none. Target191 definition/discussion, target193
+    seven assays/summary, and targets194/199 inline pathways/graphs are explicitly
+    present and receive separate scientific assessment. No optional absence is a scientific
+    defect by itself. This root inventory does not duplicate the193 classifier finding
+    or certify the mechanism claims.'
+  target_ids:
+  - naturalproductmech:mibig-1e62088a6a
+  evidence_ids:
+  - R195-OWNER
+  - R195-LOCAL
+  - R195-PUBCHEM-PREP
+- assessment_id: R195-FILING
+  area: representation
+  topic: Exact-key computed classification provenance
+  outcome: supported
+  summary: The exact-key NPClassifier projection and version npclassifier.gnps2.org@2026-09-07
+    reproduce the owner filing, superclass/class labels and glycoside value false.
+    Computed labels are not independent precursor, mechanism or natural-origin evidence.
+    Any accepted new identity requires reclassification for its effective key.
+  target_ids:
+  - naturalproductmech:mibig-1e62088a6a
+  evidence_ids:
+  - R195-OWNER
+  - R195-LOCAL
+- assessment_id: R195-ORGANISM-IDS
+  area: grounding
+  topic: Literal organism identifier routing
+  outcome: supported
+  summary: All literal P225 names match; available P685 values match the raw source
+    IDs. Q913896 explicitly lacks P685, so its NCBI synonym bridge is assessed independently.
+    Current synonym routing does not establish chemical occurrence or experimental-unit
+    support.
+  target_ids:
+  - naturalproductmech:mibig-1e62088a6a
+  evidence_ids:
+  - R195-Q26291839
+  - R195-OWNER
+- assessment_id: R195-TAXON-SCOPE
+  area: provenance
+  topic: Taxonomic names versus experimental stocks
+  outcome: supported
+  summary: NCBI 684832 S. platensis subsp. rosaceus is subspecies rank beneath S.
+    platensis 58346. Compatible species/subspecies associations do not equate NRRL18993,
+    another stock or a historical experimental preparation.
+  target_ids:
+  - naturalproductmech:mibig-1e62088a6a
+  evidence_ids:
+  - R195-TAXON-CONTEXT
+  - R195-OWNER
+- assessment_id: R195-IMODULON-SCOPE
+  area: completeness
+  topic: Producer transcriptomic applicability
+  outcome: not_applicable
+  summary: No exact native producer is represented in the full catalogue. Related
+    organisms and experimental hosts do not establish the required construct/condition
+    match. No gene/module inference or compound-production absence is asserted.
+  target_ids:
+  - naturalproductmech:mibig-1e62088a6a
+  evidence_ids:
+  - R195-OWNER
+  - R195-IMODULON
+- assessment_id: S195-A-NATIVE
+  area: evidence
+  topic: producer_organisms[0], biosynthesis_origin and exact native necessity
+  outcome: supported
+  summary: Original native S. platensis subsp. rosaceus AB1981F-75/NRRL 18993 isolation
+    supports named dorrigocin A. Complete 2009 Figure 3B no-resin experiments show
+    loss of labelled A/B after native ΔmgsA, ΔmgsC or ΔmgsD, while boundary deletions
+    retain them. This supports the native BGC_CHARACTERIZED and CLUSTER_DEMONSTRATED
+    tiers. A conditional downstream chemical rearrangement does not erase culture
+    occurrence or native pathway necessity. The 2005 original abstract calls iso-migrastatin
+    the directly biosynthesized product and A/B shunts. Here the natural-product origin
+    is retained at the culture-associated product scope, not interpreted as proof
+    of a dedicated final enzymatic step.
+  target_ids:
+  - naturalproductmech:mibig-1e62088a6a
+  evidence_ids:
+  - S195-E-LOCAL
+  - S195-E-P195196-1994-I
+  - S195-E-P195196-1994-II
+  - S195-E-P195196-2009
+  - S195-E-P195196-2009-FIG1
+  - S195-E-P195196-2009-FIG3
+  - S195-E-P195196-2005-META
+  - S195-E-P195196-2006-FIG1
+  dimensions:
+  - name: native_stock
+    value: AB1981F-75 / NRRL 18993
+    definition: Exact original producer, distinct from comparison type strains.
+    evidence_ids:
+    - S195-E-P195196-1994-I
+    - S195-E-P195196-2009
+  - name: native_endpoint
+    value: No-resin labelled dorrigocin A loss
+    definition: Figure 3B is distinct from resin/iso-migrastatin panels.
+    evidence_ids:
+    - S195-E-P195196-2009
+  - name: imported_tiers
+    value: BGC_CHARACTERIZED / CLUSTER_DEMONSTRATED
+    definition: Positive native regional/pathway necessity supports both tiers.
+    evidence_ids:
+    - S195-E-LOCAL
+    - S195-E-P195196-2009
+    - S195-E-SCHEMA
+- assessment_id: S195-A-METHODS
+  area: evidence
+  topic: biosynthetic_gene_clusters[0].locus_evidence_methods
+  outcome: concern
+  summary: Knock-out studies is directly supported for A. The independently read heterologous
+    study identifies iso-migrastatin in resin-containing engineered cultures; a separate
+    experiment converts purified iso-migrastatin to A/B in water. These related positive
+    results need explicit endpoint qualification when attached to the final dorrigocin
+    method list. This is an evidence-specific narrowing question, not an assertion
+    that no source could report heterologous A or a reason to downgrade positive native
+    necessity.
+  target_ids:
+  - naturalproductmech:mibig-1e62088a6a
+  evidence_ids:
+  - S195-E-LOCAL
+  - S195-E-P195196-2008
+  - S195-E-P195196-2005-SI
+  - S195-E-P195196-2009
+  - S195-E-P195196-2009-FIG1
+  - S195-E-P195196-2009-FIG3
+- assessment_id: S195-A-LOCUS
+  area: provenance
+  topic: biosynthetic_gene_clusters[0] accession, source class and cited experiment
+  outcome: supported
+  summary: GQ274953.1 is the source sequence for the mgs PKS cluster studied in the
+    2009 native-genetics paper; empty imported bounds are not a coordinate assertion.
+    Figure 3A mgsH rescue and mgsF/mgsH losses concern iso-migrastatin with resin,
+    not direct A rescue. MgsI/J/K proposals and later intermediate mutants are not
+    final-A/B purified enzyme assays.
+  target_ids:
+  - naturalproductmech:mibig-1e62088a6a
+  evidence_ids:
+  - S195-E-LOCAL
+  - S195-E-P195196-2009
+  - S195-E-P195196-2013
+  - S195-E-P195196-2009-FIG1
+  - S195-E-P195196-2009-FIG3
+- assessment_id: S195-A-OCC
+  area: scope
+  topic: occurrences[0] Streptomyces platensis
+  outcome: supported
+  summary: The exact original 1994 Part II source isolates and characterizes named
+    A from the culture source described in Part I. The generic species-level LOTUS
+    occurrence is compatible with that positive subspecies/strain isolation and is
+    not independently promoted to an additional gene experiment.
+  target_ids:
+  - naturalproductmech:mibig-1e62088a6a
+  evidence_ids:
+  - S195-E-LOCAL
+  - S195-E-P195196-1994-I
+  - S195-E-P195196-1994-II
+- assessment_id: S195-A-STEREO-SCOPE
+  area: representation
+  topic: Primary drawing and absolute-protocol boundary
+  outcome: supported
+  summary: The 1994 work establishes connectivity and three trans alkenes. Later 2006/2009
+    depictions carry positive hand assertions; A is explicitly labelled 13R versus
+    epi-A 13S. For B the earlier 2005 C11 exception and later positive depiction/claim
+    remain distinct from an independently inspected exact later C11 protocol. Chemistry
+    review owns the measured graph precision and any repair; neither authority consensus
+    nor A-to-B transfer supplies missing experimental details.
+  target_ids:
+  - naturalproductmech:mibig-1e62088a6a
+  evidence_ids:
+  - S195-E-LOCAL
+  - S195-E-P195196-1994-II
+  - S195-E-P195196-2005-SI
+  - S195-E-P195196-2006
+  - S195-E-P195196-2009
+  - S195-E-P195196-2009-FIG1
+  - S195-E-P195196-2009-FIG3
+  - S195-E-P195196-2005-META
+  - S195-E-P195196-2006-FIG1
+- assessment_id: S195-A-OPTIONAL
+  area: evidence
+  topic: Absent unasserted pathway/protein/activity content
+  outcome: not_applicable
+  summary: No optional pathway or protein expansion is required. Unasserted activity
+    or mechanistic details are not imported from congener, mixture or upstream-intermediate
+    studies merely to fill empty fields.
+  target_ids:
+  - naturalproductmech:mibig-1e62088a6a
+  evidence_ids:
+  - S195-E-LOCAL
+  - S195-E-LIMITS
+- assessment_id: C195-A-IDENTITY
+  area: identity
+  topic: Stored representation and source-concept provenance
+  outcome: supported
+  summary: The complete source row BGC0000177:3 and source-concept hash reproduce
+    this stored representation; this does not establish that the upstream compound
+    label is correct. Formula, charge, Standard and fixed-H distinctions are independently
+    recorded. Primary support and any conflicting exact xref are assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-1e62088a6a
+  evidence_ids:
+  - C195-OWNER
+  - C195-GRAPH
+  - C195-COMPARISON
+  dimensions:
+  - name: mibig_source_selector
+    value: BGC0000177:3
+    definition: Accession plus compound_index, distinct from the entry-level accession.
+    evidence_ids:
+    - C195-OWNER
+  - name: complete_raw_row_sha256
+    value: 9af1f55fa9355161195055d00469d16ed4a6cacbdf1446844093bc3cc1a32fa6
+    definition: Sorted compact ASCII JSON of every parsed TSV field, including empty
+      values.
+    evidence_ids:
+    - C195-OWNER
+- assessment_id: C195-A-GROUNDING
+  area: provenance
+  topic: Exact authority eligibility and source representation
+  outcome: supported
+  summary: No exact eligible row exists in the committed ChEBI projection for this
+    owner. Current bounded name/key searches do not justify a different congener or
+    a two-star grounding.
+  target_ids:
+  - naturalproductmech:mibig-1e62088a6a
+  evidence_ids:
+  - C195-OWNER
+  - C195-COMPARISON
+  - C195-AUTHORITY-COMPARISON
+  - C195-LOCAL-SEARCH
+  - C195-CHEBI-SEARCH-1
+  - C195-CHEBI-SEARCH-2
+- assessment_id: C195-A-XREF
+  area: representation
+  topic: Exact literal chemical identifiers
+  outcome: concern
+  summary: 'Literal source identifiers were compared exactly: [{"fixed_h_equal": false,
+    "literal": "pubchem:44543743", "standard_equal": false}, {"fixed_h_equal": true,
+    "literal": "npatlas:NPA01445", "returned_identifier": "NPA001445", "standard_equal":
+    true}]. Standard/fixed-H details are representation-level observations, not independent
+    experimental assignments.'
+  target_ids:
+  - naturalproductmech:mibig-1e62088a6a
+  evidence_ids:
+  - C195-PRIMARY-2009-FIGURE
+  - C195-PRIMARY-2006-FIGURE
+  - C195-PRIMARY-2005-SI
+  - C195-PRIMARY-MAP
+  - C195-PRIMARY-2005-METADATA
+  - C195-PRIMARY-2006-MAIN
+  - C195-OWNER
+  - C195-COMPARISON
+  - C195-AUTHORITY-COMPARISON
+  - C195-AUTHORITY-DETAIL
+  - C195-AUTH-1
+  - C195-AUTH-2
+  - C195-AUTH-3
+  - C195-AUTH-4
+  - C195-AUTH-5
+- assessment_id: C195-A-ELIGIBILITY
+  area: grounding
+  topic: Exact eligible ChEBI policy and serialization
+  outcome: supported
+  summary: 'Current exact candidates: [{"default_smiles_valid": true, "id": 198798,
+    "mol_vs_retained": {"fixed_h_equal": true, "standard_equal": true}, "name": "Dorrigocin
+    A", "stars": 2}]. Only191 has a matching three-star entity. Named two-star alternatives
+    are ineligible under the current projection; adjacent three-star chanoclavine
+    is not elymoclavine. For197 the literal default JSON SMILES is invalid while MOL/InChI
+    match; for200 default JSON SMILES, stated InChI and official MOL all preserve
+    the same E constraint. Never copy an invalid or less-specific default string merely
+    because another format agrees.'
+  target_ids:
+  - naturalproductmech:mibig-1e62088a6a
+  evidence_ids:
+  - C195-PRIMARY-2009-FIGURE
+  - C195-PRIMARY-2006-FIGURE
+  - C195-PRIMARY-2005-SI
+  - C195-PRIMARY-MAP
+  - C195-PRIMARY-2005-METADATA
+  - C195-PRIMARY-2006-MAIN
+  - C195-OWNER
+  - C195-COMPARISON
+  - C195-AUTHORITY-COMPARISON
+  - C195-AUTHORITY-DETAIL
+  - C195-AUTH-1
+  - C195-AUTH-2
+  - C195-AUTH-3
+  - C195-AUTH-4
+  - C195-AUTH-5
+  - C195-CHEBI-SEARCH-1
+  - C195-CHEBI-SEARCH-2
+- assessment_id: C195-A-PRIMARY-SCOPE
+  area: scope
+  topic: Primary identity and chemical precision
+  outcome: unknown
+  summary: The retained graph omits five carbon configurations depicted in original2006/2009
+    sources; literal PubChem44543743 supplies those five and therefore does not identify
+    this exact underspecified stereograph. NPAtlas and two-star ChEBI match the retained
+    less-specific form. Published hand and unresolved original protocols remain distinct.
+  target_ids:
+  - naturalproductmech:mibig-1e62088a6a
+  evidence_ids:
+  - C195-PRIMARY-2009-FIGURE
+  - C195-PRIMARY-2006-FIGURE
+  - C195-PRIMARY-2005-SI
+  - C195-PRIMARY-MAP
+  - C195-PRIMARY-2005-METADATA
+  - C195-PRIMARY-2006-MAIN
+  - C195-OWNER
+  - C195-COMPARISON
+  - C195-AUTHORITY-COMPARISON
+  - C195-AUTHORITY-DETAIL
+findings:
+- finding_id: S195-F-METHOD-SCOPE
+  issue_key: mibig-bgc0000177-dorrigocin-a-heterologous-endpoint-scope
+  category: scope
+  severity: minor
+  status: open
+  certainty: provisional
+  title: Qualify the heterologous endpoint separately from native dorrigocin loss
+  description: The available heterologous experiment directly identifies iso-migrastatin;
+    separate aqueous conversion yields dorrigocin A. The current bare method list
+    does not expose that distinction. Native final-A necessity remains directly supported.
+  target_ids:
+  - naturalproductmech:mibig-1e62088a6a
+  field_paths:
+  - producer_organisms[0].notes
+  - producer_organisms[0].evidence
+  - biosynthetic_gene_clusters[0].locus_evidence_methods
+  - biosynthetic_gene_clusters[0].evidence
+  evidence_ids:
+  - S195-E-LOCAL
+  - S195-E-P195196-2008
+  - S195-E-P195196-2005-SI
+  - S195-E-P195196-2009
+  - S195-E-CONSUMERS
+  - S195-E-P195196-2009-FIG1
+  - S195-E-P195196-2009-FIG3
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Exact original compound row and imported methods
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: Full-row guarded same-citation rationale/qualification route
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Citation evidence provenance and composition rejection
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Conditional nonempty REPLACE method narrowing
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Method grading and claim-reference application order
+  - repository: CultureBotAI/NaturalProductMech
+    path: tests/test_claim_references.py
+    role: Full-row drift, duplicate and identity-composition coverage
+  - repository: CultureBotAI/NaturalProductMech
+    path: tests/test_mibig_locus_evidence_overrides.py
+    role: Existing method-source guards; additional REPLACE coverage may be needed
+- finding_id: C195-F-STEREO-XREF
+  issue_key: mibig-bgc0000177-dorrigocin-a-primary-stereo-and-literal-pubchem
+  category: representation
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Five depicted carbon constraints are omitted and the literal PubChem identifies
+    the specified form
+  description: The retained graph omits five carbon configurations depicted in original2006/2009
+    sources; literal PubChem44543743 supplies those five and therefore does not identify
+    this exact underspecified stereograph. NPAtlas and two-star ChEBI match the retained
+    less-specific form. Published hand and unresolved original protocols remain distinct.
+    This is a graph/identifier precision conflict, not proof that an uninspected experimental
+    protocol selected a replacement or that the current false completeness flag was
+    computed incorrectly.
+  target_ids:
+  - naturalproductmech:mibig-1e62088a6a
+  field_paths:
+  - chemical_structure.smiles
+  - chemical_structure.standard_inchi
+  - chemical_structure.standard_inchi_key
+  - xrefs[1]
+  evidence_ids:
+  - C195-PRIMARY-2009-FIGURE
+  - C195-PRIMARY-2006-FIGURE
+  - C195-PRIMARY-2005-SI
+  - C195-PRIMARY-MAP
+  - C195-PRIMARY-2005-METADATA
+  - C195-PRIMARY-2006-MAIN
+  - C195-OWNER
+  - C195-COMPARISON
+  - C195-AUTHORITY-COMPARISON
+  - C195-AUTHORITY-DETAIL
+  - C195-CONSUMERS
+  - C195-XREF-CONSUMER
+  - C195-CLAIM-CONSUMER
+  - C195-STRAIN-CONSUMER
+  - C195-SEED-CONSUMER
+  - C195-TARGET-SEARCH
+  - C195-AUTH-1
+  - C195-AUTH-2
+  - C195-AUTH-3
+  - C195-AUTH-4
+  - C195-AUTH-5
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: Exact source selector and full original/target row pins
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/structure_corrections.py
+    role: Existing eligible target contract or explicitly implemented reviewed primary-graph
+      qualification route
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_xref_exclusions.tsv
+    role: Exact literal PubChem exclusion if the current graph is retained
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/xref_exclusions.py
+    role: Consumed full-row guarded exclusion
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Exact-key regeneration, source concepts and old-key joins
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Reviewed scientific citation overlay composition
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/producer_strains.py
+    role: Reviewed producer qualification composition
+  rule_id: review-yaml-record:exact-identity-and-representation
+  native_severity: major
+  normalization_reason: The original depiction versus retained stereograph and literal
+    identifier mismatch are independently verified. Remaining absolute-protocol limits
+    stay explicit.
+actions:
+- action_id: S195-ACT-METHOD-SCOPE
+  finding_ids:
+  - S195-F-METHOD-SCOPE
+  target_ids:
+  - naturalproductmech:mibig-1e62088a6a
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Exact original compound row and imported methods
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: Full-row guarded same-citation rationale/qualification route
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Citation evidence provenance and composition rejection
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Conditional nonempty REPLACE method narrowing
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Method grading and claim-reference application order
+  - repository: CultureBotAI/NaturalProductMech
+    path: tests/test_claim_references.py
+    role: Full-row drift, duplicate and identity-composition coverage
+  - repository: CultureBotAI/NaturalProductMech
+    path: tests/test_mibig_locus_evidence_overrides.py
+    role: Existing method-source guards; additional REPLACE coverage may be needed
+  description: 'First document the exact inspected endpoint distinction for BGC0000177:3,
+    guarded by complete parsed row {"bgc_classes": "PKS", "bgc_subclasses": "Type
+    I", "cluster_link_evidence_basis": "CLUSTER_DEMONSTRATED", "compound_classes":
+    "", "compound_index": "3", "compound_name": "dorrigocin A", "database_ids": "npatlas:NPA01445|pubchem:44543743",
+    "entry_completeness": "complete", "entry_quality": "questionable", "entry_status":
+    "active", "entry_version": "5", "genome_accession": "GQ274953.1", "locus_evidence_methods":
+    "Knock-out studies|Heterologous expression", "locus_from": "", "locus_to": "",
+    "mibig_accession": "BGC0000177", "primary_reference": "PMID:19726666", "producer_evidence_basis":
+    "BGC_CHARACTERIZED", "reference_basis": "ENTRY", "smiles": "COC(\\C=C\\CC\\C=C\\C(O)=O)C(O)C(C)\\C=C(/C)C(O)C(C)C(=O)CCCC1CC(=O)NC(=O)C1",
+    "standard_inchi": "InChI=1S/C27H41NO8/c1-17(14-18(2)27(35)22(36-4)12-7-5-6-8-13-25(32)33)26(34)19(3)21(29)11-9-10-20-15-23(30)28-24(31)16-20/h7-8,12-14,18-20,22,26-27,34-35H,5-6,9-11,15-16H2,1-4H3,(H,32,33)(H,28,30,31)/b12-7+,13-8+,17-14+",
+    "standard_inchi_key": "HJCZOTBHYAPUHT-XHOLQODBSA-N", "stereo_complete": "false",
+    "taxon_id": "NCBITaxon:684832", "taxon_label": "Streptomyces platensis subsp.
+    rosaceus"}; expected_source_row_sha256=9af1f55fa9355161195055d00469d16ed4a6cacbdf1446844093bc3cc1a32fa6.
+    The existing claim-reference table can retain producer_reference=PMID:19726666
+    and locus_reference=PMID:19726666, with source_reference=DOI:10.1016/j.bmc.2008.10.074
+    and nonempty curator, ISO date and rationale fields; the attributed rationale
+    must describe direct native dorrigocin loss, heterologous iso-migrastatin and
+    separate aqueous conversion (DOI:10.1021/ja043808i). This qualifies evidence without
+    downgrading either tier. If exact final-product method adjudication warrants narrowing,
+    use REPLACE with only Knock-out studies; do not use WITHDRAW or erase all methods.
+    REPLACE currently lacks the WITHDRAW seven-field drift checks, so pair it with
+    the full-row claim-reference guard and a focused verified composition test, or
+    implement an equivalent explicit full-row REPLACE guard. Current citation/strain
+    consumers reject structure_correction_note: any chemistry repair must first establish
+    tested ordered composition and adjudicate every old-key claim, rather than silently
+    applying this action after identity changes.'
+  acceptance_checks:
+  - Retain native A production, native Knock-out studies, both strong tiers, source
+    taxon and positive LOTUS occurrence.
+  - Exact accession:index and complete raw-row SHA reject every drift/duplicate; if
+    narrowing, only Heterologous expression is removed and no grade reduction occurs.
+  - The emitted rationale explicitly separates engineered iso-migrastatin from buffer-generated
+    A; it makes no all-source absence claim.
+  - Any simultaneous structure correction is independently resolved with tested old-key
+    association/consumer composition before applying this biological qualification.
+- action_id: C195-ACTION-STEREO-XREF
+  finding_ids:
+  - C195-F-STEREO-XREF
+  target_ids:
+  - naturalproductmech:mibig-1e62088a6a
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: Exact source selector and full original/target row pins
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/structure_corrections.py
+    role: Existing eligible target contract or explicitly implemented reviewed primary-graph
+      qualification route
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_xref_exclusions.tsv
+    role: Exact literal PubChem exclusion if the current graph is retained
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/xref_exclusions.py
+    role: Consumed full-row guarded exclusion
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Exact-key regeneration, source concepts and old-key joins
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Reviewed scientific citation overlay composition
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/producer_strains.py
+    role: Reviewed producer qualification composition
+  description: 'Exact current guards: [{"expected_source_row_sha256": "9af1f55fa9355161195055d00469d16ed4a6cacbdf1446844093bc3cc1a32fa6",
+    "full_original_row": {"bgc_classes": "PKS", "bgc_subclasses": "Type I", "cluster_link_evidence_basis":
+    "CLUSTER_DEMONSTRATED", "compound_classes": "", "compound_index": "3", "compound_name":
+    "dorrigocin A", "database_ids": "npatlas:NPA01445|pubchem:44543743", "entry_completeness":
+    "complete", "entry_quality": "questionable", "entry_status": "active", "entry_version":
+    "5", "genome_accession": "GQ274953.1", "locus_evidence_methods": "Knock-out studies|Heterologous
+    expression", "locus_from": "", "locus_to": "", "mibig_accession": "BGC0000177",
+    "primary_reference": "PMID:19726666", "producer_evidence_basis": "BGC_CHARACTERIZED",
+    "reference_basis": "ENTRY", "smiles": "COC(\\C=C\\CC\\C=C\\C(O)=O)C(O)C(C)\\C=C(/C)C(O)C(C)C(=O)CCCC1CC(=O)NC(=O)C1",
+    "standard_inchi": "InChI=1S/C27H41NO8/c1-17(14-18(2)27(35)22(36-4)12-7-5-6-8-13-25(32)33)26(34)19(3)21(29)11-9-10-20-15-23(30)28-24(31)16-20/h7-8,12-14,18-20,22,26-27,34-35H,5-6,9-11,15-16H2,1-4H3,(H,32,33)(H,28,30,31)/b12-7+,13-8+,17-14+",
+    "standard_inchi_key": "HJCZOTBHYAPUHT-XHOLQODBSA-N", "stereo_complete": "false",
+    "taxon_id": "NCBITaxon:684832", "taxon_label": "Streptomyces platensis subsp.
+    rosaceus"}, "source_id": "BGC0000177:3", "version": "5"}]. First adjudicate the
+    primary-defined product and remaining original hand evidence; do not silently
+    select the diagnostic graph. If the current unspecified graph remains, withhold
+    only pubchem:44543743 through the existing exact-source/full-row-pinned xref-exclusion
+    table and retain the correct literal NPAtlas assertion. No positive replacement
+    xref is implemented by that route. A structure upgrade requires a verified unique
+    committed eligible three-star target with valid copied SMILES/full target-row
+    pin, or an explicitly implemented and tested reviewed primary-source graph route;
+    current inspected name/key candidates do not supply an eligible replacement. Rebuild
+    exact-key joins and reassess every old-key occurrence, assay, classification and
+    biological association. Preserve the original source mint and positive native
+    evidence at its supported resolution. Scientific citation/method/strain actions
+    require explicit tested composition because existing consumers reject structure_correction_note;
+    no automatic old-key transfer or overlay stacking.'
+  generator: Maintained correction input/consumer and documented regeneration, never
+    direct owner/raw editing.
+  acceptance_checks:
+  - Stale full-row digest, wrong BGC compound selector, missing or duplicate source
+    fails closed.
+  - A retained-graph solution excludes only the exact asserted PubChem literal and
+    preserves valid NPAtlas, raw assertion and reviewed explanation.
+  - Any candidate full graph independently reproduces every atom, charge, five carbon
+    constraints, three E bonds, Standard/fixed-H and original source context; a diagnostic
+    model alone does not establish natural hand.
+  - Current eligible target and valid default copied SMILES are verified, or the new
+    consumed primary-source route and its explicit candidate/full-row guards are tested.
+  - All old-key joins and source-qualified biological overlays are individually reviewed;
+    incompatible composition fails closed; native gates and reproduction are run by
+    the authorized curator.
+limitations:
+- The root section inventories present claims and source routing; chemical identities,
+  source-specific experiments, definition claims and optional-content assertions require
+  their separately scoped scientific assessments.
+- Original source access times and exact retained snapshots are preserved; later authoring
+  or persistence is not a new source retrieval.
+- Chemical authority/graph precision and general taxonomy, history and computed classifications
+  are assessed separately. Any simultaneous identity repair must explicitly adjudicate
+  biological old-key joins and maintained consumer composition.
+- Authority matches establish the representations actually returned at their retained
+  access times; they are not independent experimental structure or absolute-hand determinations.
+  Root and science sections separately assess organism, locus, classification and
+  history claims.
+- Authority equality is not independent experimental proof. No full natural absolute-hand
+  protocol is asserted.
+- The reproduction report retains 42 withheld ambiguous producer claims, 161 merged-taxon
+  rewrites and five unresolved assay-organism targets.
+- 499 identifier-label plausibility warnings are non-blocking; 4750 pairs have no
+  configured adapter and were skipped.
+- Four tests were skipped and two dependency deprecation warnings remain. Passing
+  configured QC is not independent scientific verification.
+- Native baseline gates establish configured consistency, not independent biological
+  production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions
+  and no-adapter pairs; a successful command does not convert these into verified
+  scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command
+  execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population
+  was checked; external caches and generated bytecode are not asserted to be independently
+  byte-pinned.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+- Scientific conclusions integrate the chemical, biological and provenance assessments;
+  source access and unresolved scopes remain explicit.
+tags:
+- path-order-campaign
+- batch-020
+```
