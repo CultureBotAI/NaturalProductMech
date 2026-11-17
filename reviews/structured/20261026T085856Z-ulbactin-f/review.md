@@ -1,0 +1,1585 @@
+# Scientific review of ulbactin F
+
+- Review: 20261026T085856Z-ulbactin-f
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-26T08:47:45.998917Z
+- Finished UTC: 2026-10-26T08:58:56.482048Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Ulbactin F remains the exact retained BGC0002472 compound 1, distinct from G. The TP-B0800 genome source supplies bibliography and generic ulbactin context; its HTTP 200 coredata response contains no original article, exact F endpoint or figure. The separate F/G identity-paper route returned a challenge. Native F provenance, species-versus-genus occurrence, individual locus applicability and stereochemical assignment remain unresolved. Imported grades remain unchanged, and held current authorities keep the review partial.
+
+## Scope And Provenance
+
+One complete generated owner and any referenced components, assessed claim by claim for exact identity, provenance, origin, producer and occurrence scope, biosynthesis, classification, optional content and audit history.
+
+Selection: Campaign record 484, batch 049, selected in path order from the fresh-main authoritative validated catalogue and the separately validated targets in earlier batch commits (publication tracked separately). At selection, 548 of 3116 current records had campaign coverage and 2568 remained. The population search included ignored files. Exactly one target is assessed here.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 14373517042b407747272446f79953ae86d51fa4.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-919833c265 | data/natural_products/alkaloids/ulbactin-f.yaml | generated | ulbactin F |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Closed-schema target validation | passed | True | naturalproductmech:mibig-919833c265 | The documented target strict validator completed; scientific support is assessed separately. |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-919833c265 | Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its pinned path. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-919833c265 | Fresh canonical reproduction gate passed:all3116 records byte-identical to source seeding; source warnings remain retained. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-919833c265 | Fresh deterministic review queue completed:8922 rows across12 queues. Queue output is not scientific-review coverage. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-919833c265 | Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking mismatches and4898no-adapter skips remain explicit. |
+| Full repository quality gate on the fresh main baseline | passed | True | naturalproductmech:mibig-919833c265 | Canonical just qc completed with actual terminal exit0:1024 tests passed,4 skipped,2 dependency warnings;3116 records passed closed schema validation, site freshness, byte reproduction and lockfile integrity.22 governed artifacts and15 raw inventories passed. Prior DNS failed001 remains preserved. |
+| Complete owner and seven-set fidelity | passed | True | naturalproductmech:mibig-919833c265 | Actual selection, ten successful intakes and chronological root binding must precede authoring. Ten raw owners, 23 ordered history events and 70 joins must match. ROOT owner scientific reads are true for 481 and 483–488; raw-source scientific reads are true for 481 and 483–489. Both masks are false for restricted 482/490, and owner scope is false for 489. The single 489 inline graph is mechanically compared only; no referenced components or emitted activities occur. Records 482/486/488/490 each retain one no-data sentinel, not evidence of inactivity. |
+| actual all-ten intake and current content checks | passed | True | naturalproductmech:mibig-919833c265 | All ten official intakes and subsequent root equality receipts passed before this section was authored; exact raw owners, resolved views and all seven source sets were checked. |
+| source grade reproduction | passed | True | naturalproductmech:mibig-919833c265 | Producer and locus grades reproduce imported method vocabulary. Reproduction is distinct from experimental applicability. |
+| bounded positive named-product source support | unavailable | True | naturalproductmech:mibig-919833c265 | Exact original product/provenance support remains unavailable within the declared bibliography-only or failed-access scope. Named titles do not establish complete production or citation applicability. |
+| source applicability for current claims | unavailable | True | naturalproductmech:mibig-919833c265 | No full original F/G identity or native-stock evidence recovered; exact F congener and occurrence-source applicability remain partial. Generic ulbactin genome metadata does not independently establish a specific F terminal locus endpoint or chemical hand. Current literal chemical authorities remain held under a separate pending approval. Source-access gaps do not establish absence or a wrong owner. |
+| Stored chemical representation and complete source row | passed | True | naturalproductmech:mibig-919833c265 | Fresh intake derivation agrees with the stored graph; the source selector, full row and prepared snapshot were independently rechecked. |
+| Required current literal chemical authorities | unavailable | True | naturalproductmech:mibig-919833c265 | Required current literal roles npatlas:NPA001813 remain unavailable pending explicit approval. No retained current response, match, mismatch or returned identifier is fabricated. Exact request spelling remains distinct from any future normalization. |
+| Exact original chemical depiction in the declared scope | unavailable | True | naturalproductmech:mibig-919833c265 | Required current literal authority responses are unavailable. Exact original chemical depiction and its assignment limits have not been independently assessed in this retained-only packet. |
+| Original source geometry and stereochemical assignment limits | unavailable | True | naturalproductmech:mibig-919833c265 | Retained serialization was compared, but the original depiction and its assignment scope have not been independently assessed in this chemical packet. Stored precision is not experimental natural-hand proof. |
+
+## Scientific And Domain Assessments
+
+### Complete history and native status
+
+provenance: supported. Targets: naturalproductmech:mibig-919833c265.
+
+Native status remains SEEDED and all 3 history actions retain their exact order: ['SEEDED_FROM_SOURCES', 'SEEDED_FROM_SOURCES', 'SEEDED_FROM_SOURCES']. Source-seeding history does not replace claim-level scientific assessment.
+
+### Present optional assertions
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-919833c265.
+
+No nonempty assertion occurs in these optional fields. Empty categories do not by themselves establish a scientific omission.
+
+### Exact computed classification provenance
+
+representation: supported. Targets: naturalproductmech:mibig-919833c265.
+
+Exact-key NPClassifier version npclassifier.gnps2.org@2026-09-07 reproduces filing, superclass/class and glycoside fields. Computed classification is not independent natural-origin or mechanistic proof; any accepted identity correction requires effective-key reclassification.
+
+### Taxonomic identifiers versus experimental stocks
+
+provenance: supported. Targets: naturalproductmech:mibig-919833c265.
+
+Retained naming context: 1393: Brevibacillus brevis (species); 55080: Brevibacillus (genus). Genus Brevibacillus 55080 and species Brevibacillus brevis 1393 remain distinct. Naming does not transfer F and G congener evidence or establish a stock. Names alone do not prove occurrence, production or physical stock identity.
+
+### Literal organism routing
+
+grounding: supported. Targets: naturalproductmech:mibig-919833c265.
+
+All 2 literal LOTUS routes match both P225 and P685. Naming validity does not establish publication or stock applicability.
+
+### Native producer transcriptomic applicability
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-919833c265.
+
+The retained catalogue contains 20 organisms and 28 datasets at its original access time. No exact native-producer stock, gene/module or compound association is established. This is bounded catalogue context, not an exhaustive current search.
+
+### current owner/history and source sets
+
+provenance: supported. Targets: naturalproductmech:mibig-919833c265.
+
+Actual owner/history and all seven source sets match the frozen inventory. Scientific judgments retain the declared original-source, congener and stock limits.
+
+### named-product and original source context
+
+provenance: supported. Targets: naturalproductmech:mibig-919833c265.
+
+Ulbactin F is the exact retained BGC0002472:1/version 2 entity KDVBIWXQJGCQHY-NFUOLKQTSA-N, distinct from G. The row has SOURCE_ASSERTION/CLUSTER_UNSTATED and empty method vocabulary.
+
+### native, introduced, congener and source boundaries
+
+evidence: supported. Targets: naturalproductmech:mibig-919833c265.
+
+The GenRep 2016 title and actual publisher coredata name sponge-derived Brevibacillus sp. TP-B0800 and ulbactins generically. The 1,880-byte HTTP 200 response has no abstract, full article, exact F endpoint or figure. It is metadata, not recovered full text. The separate Organic Letters 2016 title names ulbactins F and G, but its original request returned an HTML challenge. Exact native F provenance, species-versus-genus LOTUS applicability, individual locus association and stereochemical assignment remain unresolved. No G endpoint is transferred to F.
+
+### bounded primary source limitations
+
+completeness: unknown. Targets: naturalproductmech:mibig-919833c265.
+
+No full original F/G identity or native-stock evidence recovered; exact F congener and occurrence-source applicability remain partial. Generic ulbactin genome metadata does not independently establish a specific F terminal locus endpoint or chemical hand. Current literal chemical authorities remain held under a separate pending approval. Source-access gaps do not establish absence or a wrong owner.
+
+### Stored representation and source-concept provenance
+
+identity: supported. Targets: naturalproductmech:mibig-919833c265.
+
+The complete source row BGC0002472:1 and source-concept hash reproduce this stored representation; this does not establish that the upstream compound label is correct. Formula, charge, Standard and fixed-H distinctions are independently recorded. Primary support and any conflicting exact xref are assessed separately.
+
+### Exact authority eligibility and source representation
+
+provenance: supported. Targets: naturalproductmech:mibig-919833c265.
+
+No exact eligible row exists in the committed ChEBI projection for this owner. Candidate discovery was not performed; no negative remote search, alternative grounding or approval is inferred.
+
+### Exact literal chemical identifier scope
+
+representation: unknown. Targets: naturalproductmech:mibig-919833c265.
+
+Required current literal availability: [{"absence_inferred": false, "identifier": "npatlas:NPA001813", "owner_role": "xref", "status": "fresh_authority_unavailable_pending_user_approval"}]. Exact request spelling is preserved; no unavailable response, normalized returned identifier or numerical comparison is invented. No authority graph is adopted.
+
+### Existing ChEBI role and unavailable current validation
+
+grounding: unknown. Targets: naturalproductmech:mibig-919833c265.
+
+[]. No ChEBI row belongs to this exact key in the committed local projection. This is a bounded local source fact, not a negative remote search or global absence. Candidate discovery was not performed; no replacement or promotion is selected.
+
+### Current literal-authority availability
+
+scope: unknown. Targets: naturalproductmech:mibig-919833c265.
+
+Required current literal roles npatlas:NPA001813 remain unavailable pending explicit approval. No retained current response, match, mismatch or returned identifier is fabricated. Exact request spelling remains distinct from any future normalization. All 24 requests are unattempted. The prior batch 46 rejection is preserved as historical context; this batch has no new rejection or retry. No alternative route or elapsed-time approval is inferred.
+
+### Existing local roles and unperformed discovery
+
+grounding: unknown. Targets: naturalproductmech:mibig-919833c265.
+
+Candidate discovery was not performed. Existing committed ChEBI rows retain their exact local key and stars; they are source roles, not new remote candidates or current-response validation. No absence, replacement or promotion is inferred.
+
+### Primary identity and experimental precision
+
+scope: unknown. Targets: naturalproductmech:mibig-919833c265.
+
+The stored ulbactin F graph and selected BGC0002472:1 raw structure agree in Standard and fixed-H encodings, retaining five assigned R centres in diagnostic atom ordering and formula C17H19N3O2S3. Literal npatlas:NPA001813 remains unavailable. The retained F structure stays separate from G at record 485; neither a natural-hand assignment nor congener replacement is established.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| R484-OWNER | data/natural_products/alkaloids/ulbactin-f.yaml; Prior bounded root owner read, mechanically verified unchanged against actual post-intake content | supports | Actual post-intake equality preserves 2 occurrence, 1 producer and 1 locus assertions, optional fields and history. The resolved view contains 0 exactly pinned external component(s). The prior complete owner read retains the separate scientific gaps and claim-level source limits. |
+| R484-LOCAL | /private/tmp/npm-review-work/484/local-sources.json; Complete resolved owner and all six captured source sets; seventh set independently compared | context_only | Exact captured rows and separately parsed PubChem rows match frozen preparation. Inventory equality does not establish experimental support. |
+| R484-PUBCHEM-PREP | data/raw/pubchem_bioassay.tsv; Complete exact-key retained assay-row inventory | context_only | This owner has 0 retained rows and 0 written observations. Across the cohort, records 482, 486, 488 and 490 each retain one no-data sentinel, with no emitted activity. These are not experiments or evidence of inactivity. The single 489 inline graph remains scientifically unreviewed. Raw-only inventory does not establish an omission error or an experimental result. |
+| R484-Q25840575 | https://www.wikidata.org/wiki/Q25840575; Literal retained entity P225/P685 with original source-specific access time | context_only | All 2 literal LOTUS routes match both P225 and P685. Naming validity does not establish publication or stock applicability. |
+| R484-Q4962546 | https://www.wikidata.org/wiki/Q4962546; Literal retained entity P225/P685 with original source-specific access time | context_only | All 2 literal LOTUS routes match both P225 and P685. Naming validity does not establish publication or stock applicability. |
+| R484-TAXON-1393 | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=536%2C562%2C672%2C1393%2C1883%2C1886%2C1902%2C1931%2C1948%2C5043%2C36650%2C36651%2C55080%2C66424%2C68213%2C77133%2C78579%2C100226%2C111805%2C159075%2C216895%2C314281%2C445969&amp;retmode=xml; Exact TaxId/ScientificName/rank/parent and OtherNames within retained response | context_only | Retained naming context: 1393: Brevibacillus brevis (species); 55080: Brevibacillus (genus). Genus Brevibacillus 55080 and species Brevibacillus brevis 1393 remain distinct. Naming does not transfer F and G congener evidence or establish a stock. Names alone do not prove occurrence, production or physical stock identity. |
+| R484-TAXON-55080 | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=536%2C562%2C672%2C1393%2C1883%2C1886%2C1902%2C1931%2C1948%2C5043%2C36650%2C36651%2C55080%2C66424%2C68213%2C77133%2C78579%2C100226%2C111805%2C159075%2C216895%2C314281%2C445969&amp;retmode=xml; Exact TaxId/ScientificName/rank/parent and OtherNames within retained response | context_only | Retained naming context: 1393: Brevibacillus brevis (species); 55080: Brevibacillus (genus). Genus Brevibacillus 55080 and species Brevibacillus brevis 1393 remain distinct. Naming does not transfer F and G congener evidence or establish a stock. Names alone do not prove occurrence, production or physical stock identity. |
+| R484-IDENTIFIER-READ | /private/tmp/npm-review-work/shared-next-batch049/root-context/root-metadata-projection-and-independent-peer-read-001.json; Thirty-five exact literal P225/P685 routes across fifteen entities and twenty-three requested taxon IDs, resolving to twenty-two distinct current NCBI IDs; 5043 redirects explicitly to 159075 | context_only | Root read original identifier values and naming context. These do not prove experimental occurrence, production or stock equivalence. |
+| R484-IMODULON | https://imodulondb.org/api/datasets; Complete retained 20-organism/28-dataset catalogue | context_only | The retained catalogue contains 20 organisms and 28 datasets at its original access time. No exact native-producer stock, gene/module or compound association is established. This is bounded catalogue context, not an exhaustive current search. |
+| S484-E-ACTUAL-LOCAL | /private/tmp/npm-review-work/484/local-sources.json; Complete resolved owner and captured rows; exact seven-set equality checked | context_only | Complete actual raw owner/history, exact component expansion and all seven source sets match mechanically. Bounded scientific source claims and remaining graph limitations are recorded in the target plan; no complete graph validation is implied. |
+| S484-E-CONSUMERS | /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py; Current 14373517 locus override473–571, producer/cluster1089–1153, consolidated discussion1497–1518 and shared-structure/unnamed-producer prompts1563–1595 | context_only | Static inspection covers exact source method grading, producer/reference qualification and consumed correction ordering. Current shared-structure replacement and consolidated discussions are separate capabilities; they do not select identity changes or broaden source endpoints. |
+| S484-E-GENERIC-SCHEMA | /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml; ProducerEvidenceBasisEnum and ClusterLinkEvidenceEnum; conf/producer_evidence.tsv and grading.py also read and pinned | context_only | Producer tiers concern evidence in the named organism; cloned-locus experiments are a distinct cluster question. Empty methods and a source assertion do not independently assert native knockout or exact pure-enzyme proof. |
+| S484-E-SEARCH | /private/tmp/npm-review-work/484/science-search.json; Exact read scope | context_only | Exact current curated-decision search is retained. Its scope is the curation tree; it does not establish absence of experimental evidence or all possible consumers. |
+| S484-E-CURATION | local:CURATION; Claim-level source support and read-only review boundaries | context_only | No record mutation, inferred corrective consumer or unsupported grade change. |
+| S484-E-FOLLOWUP-READ | local:FOLLOWUP-READ; Five actual response signatures, clocks and exact coredata fields | context_only | No original main/SI or pixels recovered, despite one HTTP 200 response. |
+| S484-E-FORMAL-BINDING | local:FORMAL-BINDING; Current raw owner/history, exact component expansion and seven source sets | context_only | Preparation equality is established; actual selection, all-ten successful intakes and subsequent root checks must pass before authoring. |
+| S484-E-GRADING | local:GRADING; Current producer/locus grade functions | context_only | Mechanical grade reproduction does not independently establish native or introduced experimental endpoints. |
+| S484-E-GUARDS | local:GUARDS; All ten paths, owner pins and complete source rows/digests | context_only | Exact all-ten seven-source-set guards preserve complete rows, empty sets and original methods. |
+| S484-E-INTAKE-VIEW | local:INTAKE-VIEW; All ten exact raw/expanded digests, zero components and one 489 inline graph | context_only | Exact raw and expanded views preserve all ten owners with no components and one 489 inline graph. Mechanical equality does not establish scientific graph, pathway, assay or restricted source validation. |
+| S484-E-LOCAL | local:LOCAL; Complete declared local scope and exact source-set hashes | context_only | Owners/history/raw sources manually read for 481 and 483–485. Record 482 has only restricted identity/bibliography review; its whole-owner/raw scientific flags are false. |
+| S484-E-METADATA-READ | local:METADATA-READ; Nine exact own-field channels and five bounded judgments | context_only | The original 481 abstract and the other title/summary channels are explicitly distinguished. |
+| S484-E-METHOD-MAP | local:METHOD-MAP; Current method-to-grade map | context_only | Producer and locus grades answer different questions; imported methods require exact source applicability. |
+| S484-E-ROOT-SOURCE | local:ROOT-SOURCE; Root direct original-source read and five individually scoped conclusions | partial | Root bounded source adjudication accepts the declared biological scope; independent full source peer is separately bound. |
+| S484-E-SOURCE-PEER | local:SOURCE-PEER; Complete peer conclusions, original-source pins and conservative required-gap dispositions | partial | Independent full bounded source peer is clear within explicit direct and reused original scopes. |
+| S484-E-SOURCE-READ | local:SOURCE-READ; Complete first-five source 001 narratives, zero findings and explicit required source gaps | partial | Frozen source judgments distinguish exact native congeners, introduced material, locus applicability and remaining gaps. |
+| S484-E-ULB-FG-BIBLIOGRAPHY | https://api.crossref.org/works/10.1021%2FACS.ORGLETT.6B00531; Crossref message own DOI/title/author/published/link/URL only. | partial | Bibliographic identity and supplied original routes only; embedded abstracts and references were not read. |
+| S484-E-ULB-FG-GAP | https://pubs.acs.org/doi/pdf/10.1021/acs.orglett.6b00531; Complete response signature and exact adjacent access receipt; coredata own fields only where present | partial | HTTP 403 HTML challenge with title Just a moment..., not an original article or PDF. No scientific content or identity pixels are claimed. |
+| S484-E-ULB-GENREP-BIBLIOGRAPHY | https://api.crossref.org/works/10.1016%2Fj.genrep.2016.10.006; Crossref message own DOI/title/author/published/link/URL only. | partial | Bibliographic identity and supplied original routes only; embedded abstracts and references were not read. |
+| S484-E-ULB-GENREP-CORE | https://api.elsevier.com/content/article/PII:S245201441630084X?httpAccept=text/xml; Complete response signature and exact adjacent access receipt; coredata own fields only where present | partial | Complete 1,880-byte coredata XML read: exact DOI, title, publication/date and availability fields only. The title names sponge-derived Brevibacillus sp. TP-B0800 and ulbactins generically. No abstract, article body, individual F/G endpoint, figure, experimental source or locus evidence is present. HTTP 200 is not full-text access. |
+| C484-OWNER | data/natural_products/alkaloids/ulbactin-f.yaml; Complete owner bytes and seven matching source-row sets mechanically checked; manual chemical identity scope only | supports | The chemical identity fields denote ulbactin F under naturalproductmech:mibig-919833c265. All source selectors, versions and complete row digests are retained in COMPARISON: [{"row_sha256": "55af3773146f0a78042314a920819fc4e65fbe96a9d9deb4a82dc27cdd64c0b9", "selector": "BGC0002472:1", "version": "2"}]. The official intake and prepared owner bytes agree. |
+| C484-GRAPH | /private/tmp/npm-review-work/484/chemistry.json; Fresh intake RDKit result and frozen Standard/fixed-H comparison | supports | The stored SMILES recomputes to KDVBIWXQJGCQHY-NFUOLKQTSA-N, formula C17H19N3O2S3, formal charge 0; stored InChI/key agree. These are representation checks, not experimental identity proof. |
+| C484-COMPARISON | /private/tmp/npm-review-work/shared-next-batch049/chemistry-prep/retained-graph-comparison.json; Record 484; exact source rows and each graph comparison | supports | Exact Standard, fixed-H, formula, charge and stereo comparisons of the retained owner and complete raw rows; current authority responses and primary proof are separate evidence. |
+| C484-LOCAL-SEARCH | /private/tmp/npm-review-work/484/chemistry-search-receipt.json; Exact full key, label, slug and source selector in raw/owner/curation trees | supports | Ignored-inclusive bounded search preserves all matching paths; an absent curation decision does not imply a missing scientific source. |
+| C484-AUTHORITY-AVAILABILITY | /private/tmp/npm-review-work/shared-next-batch049/chemistry-prep/authority-limited-source-projection-001.json; Retained raw/versioned channels and explicitly unavailable current literal roles | partial | This is an availability and retained-source projection, not a fresh current-authority numerical comparison. Required held roles are not asserted absent, matching or mismatching. |
+| C484-AUTHORITY-DETAIL | /private/tmp/npm-review-work/shared-next-batch049/chemistry-prep/source-plan-001.json; Retained raw/versioned channels and explicitly unavailable current literal roles | partial | This is an availability and retained-source projection, not a fresh current-authority numerical comparison. Required held roles are not asserted absent, matching or mismatching. |
+| C484-RETAINED | local:batch049-retained; Ten stored graphs and ten exact selected raw structure comparisons.; retained snapshot /private/tmp/npm-review-work/shared-next-batch049/chemistry-prep/retained-graph-comparison.json | partial | ROOT-executed stored/raw Standard and fixed-H agreement does not validate unavailable current authorities or independently assign natural stereochemistry. |
+| C484-AUTH-LIMIT | local:batch049-auth-limit; Ten raw/versioned channels, seventeen unavailable literal roles and one existing local ChEBI role.; retained snapshot /private/tmp/npm-review-work/shared-next-batch049/chemistry-prep/authority-limited-source-projection-001.json | partial | One previously captured versioned structure matches its exact selected raw string. Current literal response graphs and identifier normalizations remain unavailable. |
+| C484-OWNER-READ | local:batch049-owner-read; Ten exact mechanical owner/history/source joins; record 489 has one scientifically unread inline graph and there are no referenced components.; retained snapshot /private/tmp/npm-review-work/shared-next-batch049/chemistry-prep/owner-seven-set-source-freeze-read-001.json | partial | Mechanical equality is true; all whole-owner/raw scientific manual flags and graph-science scope are false. |
+| C484-AUTH-HOLD | local:batch049-auth-hold; Exact pending twenty-four-request scope and zero current-batch attempts.; retained snapshot /private/tmp/npm-review-work/shared-next-batch049/chemistry-prep/literal-authority-explicit-approval-pending-001.json | context_only | ROOT applied the prior project-derived identifier-disclosure boundary prospectively. No batch 49 request or automatic-review rejection occurred; unanswered approval does not authorize execution. |
+| C484-AUTH-PLAN | local:batch049-auth-plan; Exact literal identifiers, spelling and source attribution for twenty-four planned requests.; retained snapshot /private/tmp/npm-review-work/shared-next-batch049/chemistry-prep/literal-authority-request-preparation-001.json | context_only | The frozen plans contain no candidate discovery, padding substitution or alternate authority route. Planning is not execution. |
+| C484-REUSE | local:batch049-reuse; Exact selected versioned body and original receipt selector for record 486.; retained snapshot /private/tmp/npm-review-work/shared-next-batch049/chemistry-prep/authority-reuse-001.json | partial | The original October 22 acquisition clock and complete response receipt are retained; no current-response claim is inferred. |
+| C484-CURATION | local:docs/CURATION.md; Exact-key role, source-attribution and candidate/replacement boundaries.; retained snapshot /private/tmp/npm-record-reviews-20261021/docs/CURATION.md | context_only | Existing committed source roles remain distinct from new remote candidates or structure replacements; no unavailable lookup is treated as a negative search. |
+| C484-SOURCE-LIMITS | /private/tmp/npm-review-work/shared-next-batch049/chemistry-prep/source-notes.json; Entry 484: retained identity observations, unavailable literal roles and exact scope limits; retained snapshot /private/tmp/npm-review-work/shared-next-batch049/chemistry-prep/source-notes.json | partial | All ten chemical scopes remain partial. The exact 24 current requests await explicit approval; no batch 49 request or rejection occurred. One historical versioned structure string remains separate from current authorities and unassessed original depiction scope. |
+
+## Limits And Additional Notes
+
+- Context establishes mechanical owner/history/source equality, literal identifier routing and computed classification. Primary production, exact stock and congener claims retain their source-specific gaps. ROOT owner and raw scientific masks remain independently bounded by the prior local-content receipt. The single 489 inline graph remains scientifically unreviewed; there are no referenced components or emitted activities. Records 482/490 retain strict chemical/bibliographic identity and naming scope, with no operational interpretation. Records 482/486/488/490 each have one no-data sentinel. Literal names do not resolve stock, congener, clinical or citation applicability.
+- No full original F/G identity or native-stock evidence recovered; exact F congener and occurrence-source applicability remain partial.
+- Generic ulbactin genome metadata does not independently establish a specific F terminal locus endpoint or chemical hand.
+- Current literal chemical authorities remain held under a separate pending approval. Source-access gaps do not establish absence or a wrong owner.
+- Stored/raw and reused-versioned evidence retain their original scopes and clocks. Current literal authorities remain unavailable under the approval hold. A positive original depiction does not establish an independent natural absolute-hand experiment; organism, locus, classification and history claims are separately scoped.
+- All 17 current literal-authority roles are unavailable pending explicit approval of the exact 24 planned requests. No current batch 49 request or rejection occurred, and elapsed time supplies no approval. Candidate discovery was not performed. Existing committed ChEBI roles are not newly discovered or promoted candidates; unavailable responses support no absence or mismatch claim. ROOT alone executed the retained molecular comparison. This source compiler performs no molecular calculation, remote request, generated author, intake, save, gate or lifecycle action. All chemistry full-owner and raw-row scientific manual flags remain false. Exact bytes, source joins and histories are mechanical proof only; the one record 489 inline graph is scientifically unread and no referenced components occur. No exact original depiction or experimental absolute-assignment claim is established by this retained-only chemical packet. Original literature may be reviewed separately and bound additively. Literal identifier spelling, any future returned normalization, Standard identity, fixed-H identity, represented stereo precision and natural assignment remain separate.
+- Configured consistency only; independent scientific claim support and unrestricted remote authority refresh are not implied.
+- FailedQC001 is retained for an explicit separate network-enabled retry; no artifact will be overwritten.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint and before downstream tests. Its actual exit1/log/input capture/root observation remain pinned; the selected successful canonical QC attempt002 is separately timed. No individual-review validation failure or counter reset is claimed.
+- Configured consistency only; independent scientific claim support and unrestricted remote authority refresh are not implied.
+- Configured consistency only; independent scientific claim support and unrestricted remote authority refresh are not implied.
+- Configured consistency only; independent scientific claim support and unrestricted remote authority refresh are not implied.
+- Configured consistency only; independent scientific claim support and unrestricted remote authority refresh are not implied.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings; this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions and no-adapter pairs; a successful command does not convert these into verified scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population was checked; external caches and generated bytecode are not asserted to be independently byte-pinned.
+- No scientific owner, inventory, curation table, native status or history was edited. Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification; target strict validation ran afresh. Scientific failed or unavailable checks are distinct from bundle validation.
+- Scientific conclusions integrate the chemical, biological and provenance assessments; source access and unresolved scopes remain explicit.
+- Recovery disclosure: committed coverage for batches1–47 is bound to the independently checked current-time immutable proof, and batch48 to its exact recovery checkpoint and twenty committed files. The batch49 ledger retains 167 unavailable historical temporary inputs; their expected hashes are disclosed and never counted as currently verified bytes. All current batch49 source snapshots and active controls are required present and exact. Original scientific decisions and access/gate clocks remain unchanged. Recovery contract SHA256 b0848abbb42d662196a368ac62341048be913d98bc66b46dedd8862742abdfb8. Publication remains awaiting explicit approval.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261026T085856Z-ulbactin-f
+title: Scientific review of ulbactin F
+started_at: '2026-10-26T08:47:45.998917Z'
+finished_at: '2026-10-26T08:58:56.482048Z'
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: Ulbactin F remains the exact retained BGC0002472 compound 1, distinct from
+  G. The TP-B0800 genome source supplies bibliography and generic ulbactin context;
+  its HTTP 200 coredata response contains no original article, exact F endpoint or
+  figure. The separate F/G identity-paper route returned a challenge. Native F provenance,
+  species-versus-genus occurrence, individual locus applicability and stereochemical
+  assignment remain unresolved. Imported grades remain unchanged, and held current
+  authorities keep the review partial.
+source:
+  git_revision: 14373517042b407747272446f79953ae86d51fa4
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/trichostatin-rk.yaml
+    sha256: d3391a2c86a6427a0d0bf2d063a820b642edaa4d50a2b41b64a85a76d67e1e86
+    role: context
+  - path: data/natural_products/alkaloids/tryptoquialanine.yaml
+    sha256: 3e82bdba1c609e23b173e6ff8aadbb78c806f793f3ba1443637af00e24039851
+    role: context
+  - path: data/natural_products/alkaloids/ucs1025a.yaml
+    sha256: e1c537e930a67a1780acdece49a5f7043d96afd3060f44f5f507a65367d2678b
+    role: context
+  - path: data/natural_products/alkaloids/ulbactin-f.yaml
+    sha256: f0680c23fc3084b941550865386e8ea2414327b5cc1011b768e7c3b5b92a42df
+    role: target
+  - path: data/natural_products/alkaloids/ulbactin-g.yaml
+    sha256: b0f6d8d633374d32681fae0fb53a0b4c4fd27ec8d50f85192e8a35043f574960
+    role: context
+  - path: data/natural_products/alkaloids/undecylprodigiosin-2.yaml
+    sha256: c7bf9042aea0cdcbbb0562d091e62ffbea5a3a405d80a40340ac23906e5e622d
+    role: context
+  - path: data/natural_products/alkaloids/undecylprodigiosin.yaml
+    sha256: f82b09ece2cc6be31c601395a745673f4754eb1621a6cdf412e16eca6150a4da
+    role: context
+  - path: data/natural_products/alkaloids/violacein-2.yaml
+    sha256: 1042c2242e0d2fc7c7dcab09799b94ead519c5bbe9f8eda20f2fe0cc3cd115dd
+    role: context
+  - path: data/natural_products/alkaloids/violacein.yaml
+    sha256: 5276bf6b2d8a95d0087e40a54144036ad151d20abf0076c75ca0c1a6e554224f
+    role: context
+  - path: data/natural_products/alkaloids/vulnibactin.yaml
+    sha256: c665a596123bf5403e173ec32717455376f044263864f103b93e72caad318c87
+    role: context
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/grading.py
+    sha256: ece54c4a2c0803f034ac59de51b1006cf79ea8d6b6256d75757d4adb88ea9630
+    role: context
+  - path: src/naturalproductmech/graph_components.py
+    sha256: 10f08517869f482954fd583fd19d5750ef286a76297c231e6c9a5ba8dc023e17
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 484, batch 049, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated targets in earlier
+    batch commits (publication tracked separately). At selection, 548 of 3116 current
+    records had campaign coverage and 2568 remained. The population search included
+    ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-919833c265
+targets:
+- target_id: naturalproductmech:mibig-919833c265
+  path: data/natural_products/alkaloids/ulbactin-f.yaml
+  label: ulbactin F
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-919833c265
+  command: just validate-strict data/natural_products/alkaloids/ulbactin-f.yaml --out
+    /private/tmp/npm-review-work/484/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-26T08:47:48.948412Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its
+    pinned path.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-corpus-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.783967Z;
+    finished 2026-10-25T22:37:16.453216Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.log.
+    Reused for batch049 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch049. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-919833c265
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: Fresh canonical reproduction gate passed:all3116 records byte-identical
+    to source seeding; source warnings remain retained.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-reproduction-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784055Z;
+    finished 2026-10-25T22:37:31.682209Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.log.
+    Reused for batch049 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch049. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-919833c265
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: Fresh deterministic review queue completed:8922 rows across12 queues. Queue
+    output is not scientific-review coverage.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-review-queue-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just review-queue --tsv /private/tmp/npm-review-queue-batch-036-fresh14373517-001.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.781802Z;
+    finished 2026-10-25T22:37:08.229737Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.log.
+    Reused for batch049 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch049. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-919833c265
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking
+    mismatches and4898no-adapter skips remain explicit.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-validate-products-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784040Z;
+    finished 2026-10-25T22:37:32.251879Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.log.
+    Reused for batch049 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch049. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-919833c265
+- check_id: shared-qc
+  name: Full repository quality gate on the fresh main baseline
+  status: passed
+  required: true
+  summary: Canonical just qc completed with actual terminal exit0:1024 tests passed,4
+    skipped,2 dependency warnings;3116 records passed closed schema validation, site
+    freshness, byte reproduction and lockfile integrity.22 governed artifacts and15
+    raw inventories passed. Prior DNS failed001 remains preserved.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-qc-attempt-002
+    PYTHONDONTWRITEBYTECODE=1 just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-002 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:40:55.179857Z;
+    finished 2026-10-25T22:46:28.974296Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.log.
+    Reused for batch049 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch049. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-919833c265
+- check_id: R484-FULL-OWNER
+  name: Complete owner and seven-set fidelity
+  status: passed
+  required: true
+  summary: Actual selection, ten successful intakes and chronological root binding
+    must precede authoring. Ten raw owners, 23 ordered history events and 70 joins
+    must match. ROOT owner scientific reads are true for 481 and 483–488; raw-source
+    scientific reads are true for 481 and 483–489. Both masks are false for restricted
+    482/490, and owner scope is false for 489. The single 489 inline graph is mechanically
+    compared only; no referenced components or emitted activities occur. Records 482/486/488/490
+    each retain one no-data sentinel, not evidence of inactivity.
+  target_ids:
+  - naturalproductmech:mibig-919833c265
+  evidence_ids:
+  - R484-OWNER
+  - R484-LOCAL
+  - R484-PUBCHEM-PREP
+- check_id: S484-C-LOCAL
+  name: actual all-ten intake and current content checks
+  status: passed
+  required: true
+  summary: All ten official intakes and subsequent root equality receipts passed before
+    this section was authored; exact raw owners, resolved views and all seven source
+    sets were checked.
+  target_ids:
+  - naturalproductmech:mibig-919833c265
+  evidence_ids:
+  - S484-E-ACTUAL-LOCAL
+  - S484-E-GUARDS
+  - S484-E-INTAKE-VIEW
+  - S484-E-FORMAL-BINDING
+- check_id: S484-C-GRADING
+  name: source grade reproduction
+  status: passed
+  required: true
+  summary: Producer and locus grades reproduce imported method vocabulary. Reproduction
+    is distinct from experimental applicability.
+  target_ids:
+  - naturalproductmech:mibig-919833c265
+  evidence_ids:
+  - S484-E-GUARDS
+  - S484-E-METHOD-MAP
+  - S484-E-GRADING
+- check_id: S484-C-POSITIVE-SOURCE
+  name: bounded positive named-product source support
+  status: unavailable
+  required: true
+  summary: Exact original product/provenance support remains unavailable within the
+    declared bibliography-only or failed-access scope. Named titles do not establish
+    complete production or citation applicability.
+  target_ids:
+  - naturalproductmech:mibig-919833c265
+  evidence_ids:
+  - S484-E-ULB-GENREP-BIBLIOGRAPHY
+  - S484-E-ULB-GENREP-CORE
+  - S484-E-ULB-FG-BIBLIOGRAPHY
+  - S484-E-ULB-FG-GAP
+  - S484-E-LOCAL
+  - S484-E-METADATA-READ
+  - S484-E-FOLLOWUP-READ
+  - S484-E-CURATION
+- check_id: S484-C-REQUIRED-SOURCE
+  name: source applicability for current claims
+  status: unavailable
+  required: true
+  summary: No full original F/G identity or native-stock evidence recovered; exact
+    F congener and occurrence-source applicability remain partial. Generic ulbactin
+    genome metadata does not independently establish a specific F terminal locus endpoint
+    or chemical hand. Current literal chemical authorities remain held under a separate
+    pending approval. Source-access gaps do not establish absence or a wrong owner.
+  target_ids:
+  - naturalproductmech:mibig-919833c265
+  evidence_ids:
+  - S484-E-ULB-GENREP-BIBLIOGRAPHY
+  - S484-E-ULB-GENREP-CORE
+  - S484-E-ULB-FG-BIBLIOGRAPHY
+  - S484-E-ULB-FG-GAP
+  - S484-E-LOCAL
+  - S484-E-METADATA-READ
+  - S484-E-FOLLOWUP-READ
+  - S484-E-CURATION
+  - S484-E-SOURCE-READ
+  - S484-E-SOURCE-PEER
+- check_id: C484-C-REPRESENTATION
+  name: Stored chemical representation and complete source row
+  status: passed
+  required: true
+  summary: Fresh intake derivation agrees with the stored graph; the source selector,
+    full row and prepared snapshot were independently rechecked.
+  target_ids:
+  - naturalproductmech:mibig-919833c265
+  evidence_ids:
+  - C484-OWNER
+  - C484-GRAPH
+  - C484-COMPARISON
+- check_id: C484-C-LITERAL-SCOPE
+  name: Required current literal chemical authorities
+  status: unavailable
+  required: true
+  summary: Required current literal roles npatlas:NPA001813 remain unavailable pending
+    explicit approval. No retained current response, match, mismatch or returned identifier
+    is fabricated. Exact request spelling remains distinct from any future normalization.
+  target_ids:
+  - naturalproductmech:mibig-919833c265
+  evidence_ids:
+  - C484-RETAINED
+  - C484-AUTH-LIMIT
+  - C484-OWNER-READ
+  - C484-AUTH-HOLD
+  - C484-AUTH-PLAN
+  - C484-REUSE
+  - C484-CURATION
+  - C484-SOURCE-LIMITS
+  - C484-OWNER
+  - C484-GRAPH
+  - C484-COMPARISON
+  - C484-AUTHORITY-AVAILABILITY
+  - C484-AUTHORITY-DETAIL
+- check_id: C484-C-PRIMARY-SCOPE
+  name: Exact original chemical depiction in the declared scope
+  status: unavailable
+  required: true
+  summary: Required current literal authority responses are unavailable. Exact original
+    chemical depiction and its assignment limits have not been independently assessed
+    in this retained-only packet.
+  target_ids:
+  - naturalproductmech:mibig-919833c265
+  evidence_ids:
+  - C484-RETAINED
+  - C484-AUTH-LIMIT
+  - C484-OWNER-READ
+  - C484-AUTH-HOLD
+  - C484-AUTH-PLAN
+  - C484-REUSE
+  - C484-CURATION
+  - C484-SOURCE-LIMITS
+  - C484-OWNER
+  - C484-GRAPH
+  - C484-COMPARISON
+  - C484-AUTHORITY-AVAILABILITY
+  - C484-AUTHORITY-DETAIL
+- check_id: C484-C-SOURCE-PRECISION
+  name: Original source geometry and stereochemical assignment limits
+  status: unavailable
+  required: true
+  summary: Retained serialization was compared, but the original depiction and its
+    assignment scope have not been independently assessed in this chemical packet.
+    Stored precision is not experimental natural-hand proof.
+  target_ids:
+  - naturalproductmech:mibig-919833c265
+  evidence_ids:
+  - C484-RETAINED
+  - C484-AUTH-LIMIT
+  - C484-OWNER-READ
+  - C484-AUTH-HOLD
+  - C484-AUTH-PLAN
+  - C484-REUSE
+  - C484-CURATION
+  - C484-SOURCE-LIMITS
+  - C484-OWNER
+  - C484-GRAPH
+  - C484-COMPARISON
+  - C484-AUTHORITY-AVAILABILITY
+  - C484-AUTHORITY-DETAIL
+evidence:
+- evidence_id: R484-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/ulbactin-f.yaml
+  locator: Prior bounded root owner read, mechanically verified unchanged against
+    actual post-intake content
+  accessed_at: '2026-10-26T08:50:41.840251Z'
+  support: supports
+  summary: Actual post-intake equality preserves 2 occurrence, 1 producer and 1 locus
+    assertions, optional fields and history. The resolved view contains 0 exactly
+    pinned external component(s). The prior complete owner read retains the separate
+    scientific gaps and claim-level source limits.
+  snapshot_sha256: f0680c23fc3084b941550865386e8ea2414327b5cc1011b768e7c3b5b92a42df
+- evidence_id: R484-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/484/local-sources.json
+  locator: Complete resolved owner and all six captured source sets; seventh set independently
+    compared
+  accessed_at: '2026-10-26T08:50:41.840251Z'
+  support: context_only
+  summary: Exact captured rows and separately parsed PubChem rows match frozen preparation.
+    Inventory equality does not establish experimental support.
+  snapshot_sha256: d04e72ae9a2af333776f508c341f02093021b6cd8264fbfbf527b84e4df08cd5
+- evidence_id: R484-PUBCHEM-PREP
+  kind: record_content
+  reference: data/raw/pubchem_bioassay.tsv
+  locator: Complete exact-key retained assay-row inventory
+  accessed_at: '2026-10-26T08:50:41.840251Z'
+  support: context_only
+  summary: This owner has 0 retained rows and 0 written observations. Across the cohort,
+    records 482, 486, 488 and 490 each retain one no-data sentinel, with no emitted
+    activity. These are not experiments or evidence of inactivity. The single 489
+    inline graph remains scientifically unreviewed. Raw-only inventory does not establish
+    an omission error or an experimental result.
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: R484-Q25840575
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q25840575
+  locator: Literal retained entity P225/P685 with original source-specific access
+    time
+  accessed_at: '2026-10-26T04:59:22.002108Z'
+  support: context_only
+  summary: All 2 literal LOTUS routes match both P225 and P685. Naming validity does
+    not establish publication or stock applicability.
+  snapshot_sha256: 6149abbfddcce7f1911b314d0bf5877f30b64b299a97fe18896a046b995cb02b
+- evidence_id: R484-Q4962546
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q4962546
+  locator: Literal retained entity P225/P685 with original source-specific access
+    time
+  accessed_at: '2026-10-26T04:59:22.002108Z'
+  support: context_only
+  summary: All 2 literal LOTUS routes match both P225 and P685. Naming validity does
+    not establish publication or stock applicability.
+  snapshot_sha256: 6149abbfddcce7f1911b314d0bf5877f30b64b299a97fe18896a046b995cb02b
+- evidence_id: R484-TAXON-1393
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=536%2C562%2C672%2C1393%2C1883%2C1886%2C1902%2C1931%2C1948%2C5043%2C36650%2C36651%2C55080%2C66424%2C68213%2C77133%2C78579%2C100226%2C111805%2C159075%2C216895%2C314281%2C445969&retmode=xml
+  locator: Exact TaxId/ScientificName/rank/parent and OtherNames within retained response
+  accessed_at: '2026-10-26T04:59:22.214831Z'
+  support: context_only
+  summary: 'Retained naming context: 1393: Brevibacillus brevis (species); 55080:
+    Brevibacillus (genus). Genus Brevibacillus 55080 and species Brevibacillus brevis
+    1393 remain distinct. Naming does not transfer F and G congener evidence or establish
+    a stock. Names alone do not prove occurrence, production or physical stock identity.'
+  snapshot_sha256: 1d63876a284d2466a9d6936593db713942ba987be209487d9974ba9560e8128d
+- evidence_id: R484-TAXON-55080
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=536%2C562%2C672%2C1393%2C1883%2C1886%2C1902%2C1931%2C1948%2C5043%2C36650%2C36651%2C55080%2C66424%2C68213%2C77133%2C78579%2C100226%2C111805%2C159075%2C216895%2C314281%2C445969&retmode=xml
+  locator: Exact TaxId/ScientificName/rank/parent and OtherNames within retained response
+  accessed_at: '2026-10-26T04:59:22.214831Z'
+  support: context_only
+  summary: 'Retained naming context: 1393: Brevibacillus brevis (species); 55080:
+    Brevibacillus (genus). Genus Brevibacillus 55080 and species Brevibacillus brevis
+    1393 remain distinct. Naming does not transfer F and G congener evidence or establish
+    a stock. Names alone do not prove occurrence, production or physical stock identity.'
+  snapshot_sha256: 1d63876a284d2466a9d6936593db713942ba987be209487d9974ba9560e8128d
+- evidence_id: R484-IDENTIFIER-READ
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch049/root-context/root-metadata-projection-and-independent-peer-read-001.json
+  locator: Thirty-five exact literal P225/P685 routes across fifteen entities and
+    twenty-three requested taxon IDs, resolving to twenty-two distinct current NCBI
+    IDs; 5043 redirects explicitly to 159075
+  accessed_at: '2026-10-26T05:08:04.149848Z'
+  support: context_only
+  summary: Root read original identifier values and naming context. These do not prove
+    experimental occurrence, production or stock equivalence.
+  snapshot_sha256: 403e356f4cd019abe5afc7ff1a2a1fbf64848d649418713384aa40c76babf24f
+- evidence_id: R484-IMODULON
+  kind: database
+  reference: https://imodulondb.org/api/datasets
+  locator: Complete retained 20-organism/28-dataset catalogue
+  accessed_at: '2026-10-22T04:52:27.596517Z'
+  support: context_only
+  summary: The retained catalogue contains 20 organisms and 28 datasets at its original
+    access time. No exact native-producer stock, gene/module or compound association
+    is established. This is bounded catalogue context, not an exhaustive current search.
+  snapshot_sha256: 155607e7023efdead5ebab3919279a0776d5665a7de9e28b67f02f8f521b0693
+- evidence_id: S484-E-ACTUAL-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/484/local-sources.json
+  locator: Complete resolved owner and captured rows; exact seven-set equality checked
+  accessed_at: '2026-10-26T08:57:15.931530Z'
+  support: context_only
+  summary: Complete actual raw owner/history, exact component expansion and all seven
+    source sets match mechanically. Bounded scientific source claims and remaining
+    graph limitations are recorded in the target plan; no complete graph validation
+    is implied.
+  snapshot_sha256: d04e72ae9a2af333776f508c341f02093021b6cd8264fbfbf527b84e4df08cd5
+- evidence_id: S484-E-CONSUMERS
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: Current 14373517 locus override473–571, producer/cluster1089–1153, consolidated
+    discussion1497–1518 and shared-structure/unnamed-producer prompts1563–1595
+  accessed_at: '2026-10-26T08:57:15.931530Z'
+  support: context_only
+  summary: Static inspection covers exact source method grading, producer/reference
+    qualification and consumed correction ordering. Current shared-structure replacement
+    and consolidated discussions are separate capabilities; they do not select identity
+    changes or broaden source endpoints.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: S484-E-GENERIC-SCHEMA
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: ProducerEvidenceBasisEnum and ClusterLinkEvidenceEnum; conf/producer_evidence.tsv
+    and grading.py also read and pinned
+  accessed_at: '2026-10-26T08:57:15.931530Z'
+  support: context_only
+  summary: Producer tiers concern evidence in the named organism; cloned-locus experiments
+    are a distinct cluster question. Empty methods and a source assertion do not independently
+    assert native knockout or exact pure-enzyme proof.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: S484-E-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/484/science-search.json
+  locator: Exact read scope
+  accessed_at: '2026-10-26T08:57:15.952981Z'
+  support: context_only
+  summary: Exact current curated-decision search is retained. Its scope is the curation
+    tree; it does not establish absence of experimental evidence or all possible consumers.
+  snapshot_sha256: 4d88024fdb5706d9371fb8461cc9987b33f47642ce467589ce7306ba2bd19612
+  search_scope: rg --no-ignore --hidden -n -F over curation using exact identifier,
+    label, full key and source accessions
+- evidence_id: S484-E-CURATION
+  kind: record_content
+  reference: local:CURATION
+  locator: Claim-level source support and read-only review boundaries
+  accessed_at: '2026-10-26T05:13:08.860990Z'
+  support: context_only
+  summary: No record mutation, inferred corrective consumer or unsupported grade change.
+  snapshot_sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+- evidence_id: S484-E-FOLLOWUP-READ
+  kind: prior_review
+  reference: local:FOLLOWUP-READ
+  locator: Five actual response signatures, clocks and exact coredata fields
+  accessed_at: '2026-10-26T05:13:08.860990Z'
+  support: context_only
+  summary: No original main/SI or pixels recovered, despite one HTTP 200 response.
+  snapshot_sha256: ddbb687fe2e369d68d64d8b4168552a5f7d82150d462dbc959a594fc04774d88
+- evidence_id: S484-E-FORMAL-BINDING
+  kind: prior_review
+  reference: local:FORMAL-BINDING
+  locator: Current raw owner/history, exact component expansion and seven source sets
+  accessed_at: '2026-10-26T05:22:11.504840Z'
+  support: context_only
+  summary: Preparation equality is established; actual selection, all-ten successful
+    intakes and subsequent root checks must pass before authoring.
+  snapshot_sha256: c42d44398ad059681c39a9561ee5191ccb7fbfc2059b4fdfb72b1677037c14a0
+- evidence_id: S484-E-GRADING
+  kind: record_content
+  reference: local:GRADING
+  locator: Current producer/locus grade functions
+  accessed_at: '2026-10-26T05:22:11.504840Z'
+  support: context_only
+  summary: Mechanical grade reproduction does not independently establish native or
+    introduced experimental endpoints.
+  snapshot_sha256: ece54c4a2c0803f034ac59de51b1006cf79ea8d6b6256d75757d4adb88ea9630
+- evidence_id: S484-E-GUARDS
+  kind: record_content
+  reference: local:GUARDS
+  locator: All ten paths, owner pins and complete source rows/digests
+  accessed_at: '2026-10-26T05:22:11.504840Z'
+  support: context_only
+  summary: Exact all-ten seven-source-set guards preserve complete rows, empty sets
+    and original methods.
+  snapshot_sha256: c5f3c646054fb7ecf3e80f2ebf38f91ff93d3a4fe5cc18821eccd0c1e97d2c41
+- evidence_id: S484-E-INTAKE-VIEW
+  kind: prior_review
+  reference: local:INTAKE-VIEW
+  locator: All ten exact raw/expanded digests, zero components and one 489 inline
+    graph
+  accessed_at: '2026-10-26T05:22:11.504840Z'
+  support: context_only
+  summary: Exact raw and expanded views preserve all ten owners with no components
+    and one 489 inline graph. Mechanical equality does not establish scientific graph,
+    pathway, assay or restricted source validation.
+  snapshot_sha256: b2e59bcb47cc501aa932db825ab785904e8c3f9e7c9f9b3194e3350d368a24d9
+- evidence_id: S484-E-LOCAL
+  kind: prior_review
+  reference: local:LOCAL
+  locator: Complete declared local scope and exact source-set hashes
+  accessed_at: '2026-10-26T05:13:08.860990Z'
+  support: context_only
+  summary: Owners/history/raw sources manually read for 481 and 483–485. Record 482
+    has only restricted identity/bibliography review; its whole-owner/raw scientific
+    flags are false.
+  snapshot_sha256: 78507ebe933542f4038c11de69700285a7b92fb17c593690967c5a95b952cbe0
+- evidence_id: S484-E-METADATA-READ
+  kind: prior_review
+  reference: local:METADATA-READ
+  locator: Nine exact own-field channels and five bounded judgments
+  accessed_at: '2026-10-26T05:13:08.860990Z'
+  support: context_only
+  summary: The original 481 abstract and the other title/summary channels are explicitly
+    distinguished.
+  snapshot_sha256: a9322ccc742e0132f010485326ac071dd49c08aeb4aebc901debb3ddc9f6f8cc
+- evidence_id: S484-E-METHOD-MAP
+  kind: record_content
+  reference: local:METHOD-MAP
+  locator: Current method-to-grade map
+  accessed_at: '2026-10-26T05:22:11.504840Z'
+  support: context_only
+  summary: Producer and locus grades answer different questions; imported methods
+    require exact source applicability.
+  snapshot_sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+- evidence_id: S484-E-ROOT-SOURCE
+  kind: prior_review
+  reference: local:ROOT-SOURCE
+  locator: Root direct original-source read and five individually scoped conclusions
+  accessed_at: '2026-10-26T05:17:52.017939Z'
+  support: partial
+  summary: Root bounded source adjudication accepts the declared biological scope;
+    independent full source peer is separately bound.
+  snapshot_sha256: 21c6ff6558c3df3f674a7872721aefcac3a8a79d5980d409dfe760827015377e
+- evidence_id: S484-E-SOURCE-PEER
+  kind: prior_review
+  reference: local:SOURCE-PEER
+  locator: Complete peer conclusions, original-source pins and conservative required-gap
+    dispositions
+  accessed_at: '2026-10-26T05:17:32.199975Z'
+  support: partial
+  summary: Independent full bounded source peer is clear within explicit direct and
+    reused original scopes.
+  snapshot_sha256: bdc2b938cdf8eafb8a0e3a903a4bcc9ef70aad3827cb73ca4c730c306248522f
+- evidence_id: S484-E-SOURCE-READ
+  kind: prior_review
+  reference: local:SOURCE-READ
+  locator: Complete first-five source 001 narratives, zero findings and explicit required
+    source gaps
+  accessed_at: '2026-10-26T05:13:08.860990Z'
+  support: partial
+  summary: Frozen source judgments distinguish exact native congeners, introduced
+    material, locus applicability and remaining gaps.
+  snapshot_sha256: 875b3ffc42f943edc8e134c0babbcd3d784bbb41c778f359a026c26768dffe13
+- evidence_id: S484-E-ULB-FG-BIBLIOGRAPHY
+  kind: database
+  reference: https://api.crossref.org/works/10.1021%2FACS.ORGLETT.6B00531
+  locator: Crossref message own DOI/title/author/published/link/URL only.
+  accessed_at: '2026-10-26T04:57:21.916079Z'
+  support: partial
+  summary: Bibliographic identity and supplied original routes only; embedded abstracts
+    and references were not read.
+  snapshot_sha256: 2a24706b5699aa6ec8c7be1157438f2a484ea2be1bfd7dd582f0c08e8ce61998
+- evidence_id: S484-E-ULB-FG-GAP
+  kind: primary_source
+  reference: https://pubs.acs.org/doi/pdf/10.1021/acs.orglett.6b00531
+  locator: Complete response signature and exact adjacent access receipt; coredata
+    own fields only where present
+  accessed_at: '2026-10-26T05:07:32.686920Z'
+  support: partial
+  summary: HTTP 403 HTML challenge with title Just a moment..., not an original article
+    or PDF. No scientific content or identity pixels are claimed.
+  snapshot_sha256: c3d6102982877f3945eda7499c8ed7a5bfce0910474ff604f0404f5a8a8e487d
+- evidence_id: S484-E-ULB-GENREP-BIBLIOGRAPHY
+  kind: database
+  reference: https://api.crossref.org/works/10.1016%2Fj.genrep.2016.10.006
+  locator: Crossref message own DOI/title/author/published/link/URL only.
+  accessed_at: '2026-10-26T04:57:21.651646Z'
+  support: partial
+  summary: Bibliographic identity and supplied original routes only; embedded abstracts
+    and references were not read.
+  snapshot_sha256: db0d4dd6759f0a120e4b9d112851530fe2f7e4ac71644c2c33a3041f2b90e052
+- evidence_id: S484-E-ULB-GENREP-CORE
+  kind: database
+  reference: https://api.elsevier.com/content/article/PII:S245201441630084X?httpAccept=text/xml
+  locator: Complete response signature and exact adjacent access receipt; coredata
+    own fields only where present
+  accessed_at: '2026-10-26T05:07:32.633573Z'
+  support: partial
+  summary: 'Complete 1,880-byte coredata XML read: exact DOI, title, publication/date
+    and availability fields only. The title names sponge-derived Brevibacillus sp.
+    TP-B0800 and ulbactins generically. No abstract, article body, individual F/G
+    endpoint, figure, experimental source or locus evidence is present. HTTP 200 is
+    not full-text access.'
+  snapshot_sha256: fe3f1bd52cf368a9a977c2435750296fbbbf334316f727a292cb4820fda2f678
+- evidence_id: C484-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/ulbactin-f.yaml
+  locator: Complete owner bytes and seven matching source-row sets mechanically checked;
+    manual chemical identity scope only
+  accessed_at: '2026-10-26T08:57:26.379778Z'
+  support: supports
+  summary: 'The chemical identity fields denote ulbactin F under naturalproductmech:mibig-919833c265.
+    All source selectors, versions and complete row digests are retained in COMPARISON:
+    [{"row_sha256": "55af3773146f0a78042314a920819fc4e65fbe96a9d9deb4a82dc27cdd64c0b9",
+    "selector": "BGC0002472:1", "version": "2"}]. The official intake and prepared
+    owner bytes agree.'
+  snapshot_sha256: f0680c23fc3084b941550865386e8ea2414327b5cc1011b768e7c3b5b92a42df
+- evidence_id: C484-GRAPH
+  kind: validation
+  reference: /private/tmp/npm-review-work/484/chemistry.json
+  locator: Fresh intake RDKit result and frozen Standard/fixed-H comparison
+  accessed_at: '2026-10-26T08:47:47.098614Z'
+  support: supports
+  summary: The stored SMILES recomputes to KDVBIWXQJGCQHY-NFUOLKQTSA-N, formula C17H19N3O2S3,
+    formal charge 0; stored InChI/key agree. These are representation checks, not
+    experimental identity proof.
+  snapshot_sha256: e5bc059aea733980e67d91227abe1d142fa3876747682a6cdb05afd298730870
+- evidence_id: C484-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch049/chemistry-prep/retained-graph-comparison.json
+  locator: Record 484; exact source rows and each graph comparison
+  accessed_at: '2026-10-26T04:52:34.687206Z'
+  support: supports
+  summary: Exact Standard, fixed-H, formula, charge and stereo comparisons of the
+    retained owner and complete raw rows; current authority responses and primary
+    proof are separate evidence.
+  snapshot_sha256: 1b4d569bb9b297bdedce0c3e0ab9eeb867447e146bcb05745fc0115de45af4a4
+- evidence_id: C484-LOCAL-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/484/chemistry-search-receipt.json
+  locator: Exact full key, label, slug and source selector in raw/owner/curation trees
+  accessed_at: '2026-10-26T08:57:26.617266Z'
+  support: supports
+  summary: Ignored-inclusive bounded search preserves all matching paths; an absent
+    curation decision does not imply a missing scientific source.
+  snapshot_sha256: 308f7030cfa68f9ba7cc23d34e8c0f919c09ac98b008dc2b200a75692e663573
+  search_scope: rg --no-ignore --hidden; data/natural_products, data/raw and curation;
+    exact full key, current label, slug and BGC:compound_index. No claim beyond these
+    trees.
+- evidence_id: C484-AUTHORITY-AVAILABILITY
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch049/chemistry-prep/authority-limited-source-projection-001.json
+  locator: Retained raw/versioned channels and explicitly unavailable current literal
+    roles
+  accessed_at: '2026-10-26T04:55:26.669956Z'
+  support: partial
+  summary: This is an availability and retained-source projection, not a fresh current-authority
+    numerical comparison. Required held roles are not asserted absent, matching or
+    mismatching.
+  snapshot_sha256: bff8cfcc7de97263f47a192bdf20d44c6d4090617843038184f0d73ab7b6c1ef
+- evidence_id: C484-AUTHORITY-DETAIL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch049/chemistry-prep/source-plan-001.json
+  locator: Retained raw/versioned channels and explicitly unavailable current literal
+    roles
+  accessed_at: '2026-10-26T05:06:26.794158Z'
+  support: partial
+  summary: This is an availability and retained-source projection, not a fresh current-authority
+    numerical comparison. Required held roles are not asserted absent, matching or
+    mismatching.
+  snapshot_sha256: dd3c425d283555c7c25bb40b1d75d5c83022802ff22326f4c7212882091b20db
+- evidence_id: C484-RETAINED
+  kind: database
+  reference: local:batch049-retained
+  locator: Ten stored graphs and ten exact selected raw structure comparisons.; retained
+    snapshot /private/tmp/npm-review-work/shared-next-batch049/chemistry-prep/retained-graph-comparison.json
+  accessed_at: '2026-10-26T04:52:34.687206Z'
+  support: partial
+  summary: ROOT-executed stored/raw Standard and fixed-H agreement does not validate
+    unavailable current authorities or independently assign natural stereochemistry.
+  snapshot_sha256: 1b4d569bb9b297bdedce0c3e0ab9eeb867447e146bcb05745fc0115de45af4a4
+- evidence_id: C484-AUTH-LIMIT
+  kind: database
+  reference: local:batch049-auth-limit
+  locator: Ten raw/versioned channels, seventeen unavailable literal roles and one
+    existing local ChEBI role.; retained snapshot /private/tmp/npm-review-work/shared-next-batch049/chemistry-prep/authority-limited-source-projection-001.json
+  accessed_at: '2026-10-26T04:55:26.669956Z'
+  support: partial
+  summary: One previously captured versioned structure matches its exact selected
+    raw string. Current literal response graphs and identifier normalizations remain
+    unavailable.
+  snapshot_sha256: bff8cfcc7de97263f47a192bdf20d44c6d4090617843038184f0d73ab7b6c1ef
+- evidence_id: C484-OWNER-READ
+  kind: record_content
+  reference: local:batch049-owner-read
+  locator: Ten exact mechanical owner/history/source joins; record 489 has one scientifically
+    unread inline graph and there are no referenced components.; retained snapshot
+    /private/tmp/npm-review-work/shared-next-batch049/chemistry-prep/owner-seven-set-source-freeze-read-001.json
+  accessed_at: '2026-10-26T04:57:49.782561Z'
+  support: partial
+  summary: Mechanical equality is true; all whole-owner/raw scientific manual flags
+    and graph-science scope are false.
+  snapshot_sha256: 2617039988d1d5673e8e7560e4241c1524be5df1ce55bf4b031def2a23c98ae1
+- evidence_id: C484-AUTH-HOLD
+  kind: record_content
+  reference: local:batch049-auth-hold
+  locator: Exact pending twenty-four-request scope and zero current-batch attempts.;
+    retained snapshot /private/tmp/npm-review-work/shared-next-batch049/chemistry-prep/literal-authority-explicit-approval-pending-001.json
+  accessed_at: '2026-10-26T04:55:26.669150Z'
+  support: context_only
+  summary: ROOT applied the prior project-derived identifier-disclosure boundary prospectively.
+    No batch 49 request or automatic-review rejection occurred; unanswered approval
+    does not authorize execution.
+  snapshot_sha256: 3fa775d0cf66cff5b4a5b4f16cb5f9dfe056ed872d83b5f0cf0c08cc9ba31019
+- evidence_id: C484-AUTH-PLAN
+  kind: record_content
+  reference: local:batch049-auth-plan
+  locator: Exact literal identifiers, spelling and source attribution for twenty-four
+    planned requests.; retained snapshot /private/tmp/npm-review-work/shared-next-batch049/chemistry-prep/literal-authority-request-preparation-001.json
+  accessed_at: '2026-10-26T04:50:41.978084Z'
+  support: context_only
+  summary: The frozen plans contain no candidate discovery, padding substitution or
+    alternate authority route. Planning is not execution.
+  snapshot_sha256: fb2646099cc92d07ac4df11627e9f1e4dc613249b1b9af58f39b3e991e4ad9d5
+- evidence_id: C484-REUSE
+  kind: database
+  reference: local:batch049-reuse
+  locator: Exact selected versioned body and original receipt selector for record
+    486.; retained snapshot /private/tmp/npm-review-work/shared-next-batch049/chemistry-prep/authority-reuse-001.json
+  accessed_at: '2026-10-26T04:50:41.976377Z'
+  support: partial
+  summary: The original October 22 acquisition clock and complete response receipt
+    are retained; no current-response claim is inferred.
+  snapshot_sha256: 198cef9e6870653f5e634ea49e856c94e42d66e28d5fb66b085ab43d3020b8e8
+- evidence_id: C484-CURATION
+  kind: record_content
+  reference: local:docs/CURATION.md
+  locator: Exact-key role, source-attribution and candidate/replacement boundaries.;
+    retained snapshot /private/tmp/npm-record-reviews-20261021/docs/CURATION.md
+  accessed_at: '2026-10-26T04:57:49.530353Z'
+  support: context_only
+  summary: Existing committed source roles remain distinct from new remote candidates
+    or structure replacements; no unavailable lookup is treated as a negative search.
+  snapshot_sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+- evidence_id: C484-SOURCE-LIMITS
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch049/chemistry-prep/source-notes.json
+  locator: 'Entry 484: retained identity observations, unavailable literal roles and
+    exact scope limits; retained snapshot /private/tmp/npm-review-work/shared-next-batch049/chemistry-prep/source-notes.json'
+  accessed_at: '2026-10-26T04:57:49.821191Z'
+  support: partial
+  summary: All ten chemical scopes remain partial. The exact 24 current requests await
+    explicit approval; no batch 49 request or rejection occurred. One historical versioned
+    structure string remains separate from current authorities and unassessed original
+    depiction scope.
+  snapshot_sha256: 059295afb2bf15163fa68aeeb2c59ffbfb7eb5552b84ac8cf72802365487f6c4
+assessments:
+- assessment_id: R484-HISTORY
+  area: provenance
+  topic: Complete history and native status
+  outcome: supported
+  summary: 'Native status remains SEEDED and all 3 history actions retain their exact
+    order: [''SEEDED_FROM_SOURCES'', ''SEEDED_FROM_SOURCES'', ''SEEDED_FROM_SOURCES''].
+    Source-seeding history does not replace claim-level scientific assessment.'
+  target_ids:
+  - naturalproductmech:mibig-919833c265
+  evidence_ids:
+  - R484-OWNER
+- assessment_id: R484-OPTIONAL
+  area: completeness
+  topic: Present optional assertions
+  outcome: not_applicable
+  summary: No nonempty assertion occurs in these optional fields. Empty categories
+    do not by themselves establish a scientific omission.
+  target_ids:
+  - naturalproductmech:mibig-919833c265
+  evidence_ids:
+  - R484-OWNER
+  - R484-LOCAL
+  - R484-PUBCHEM-PREP
+- assessment_id: R484-FILING
+  area: representation
+  topic: Exact computed classification provenance
+  outcome: supported
+  summary: Exact-key NPClassifier version npclassifier.gnps2.org@2026-09-07 reproduces
+    filing, superclass/class and glycoside fields. Computed classification is not
+    independent natural-origin or mechanistic proof; any accepted identity correction
+    requires effective-key reclassification.
+  target_ids:
+  - naturalproductmech:mibig-919833c265
+  evidence_ids:
+  - R484-OWNER
+  - R484-LOCAL
+- assessment_id: R484-TAXON-SCOPE
+  area: provenance
+  topic: Taxonomic identifiers versus experimental stocks
+  outcome: supported
+  summary: 'Retained naming context: 1393: Brevibacillus brevis (species); 55080:
+    Brevibacillus (genus). Genus Brevibacillus 55080 and species Brevibacillus brevis
+    1393 remain distinct. Naming does not transfer F and G congener evidence or establish
+    a stock. Names alone do not prove occurrence, production or physical stock identity.'
+  target_ids:
+  - naturalproductmech:mibig-919833c265
+  evidence_ids:
+  - R484-OWNER
+  - R484-TAXON-1393
+  - R484-TAXON-55080
+  - R484-Q25840575
+  - R484-Q4962546
+- assessment_id: R484-ORGANISM-IDS
+  area: grounding
+  topic: Literal organism routing
+  outcome: supported
+  summary: All 2 literal LOTUS routes match both P225 and P685. Naming validity does
+    not establish publication or stock applicability.
+  target_ids:
+  - naturalproductmech:mibig-919833c265
+  evidence_ids:
+  - R484-OWNER
+  - R484-IDENTIFIER-READ
+  - R484-TAXON-1393
+  - R484-TAXON-55080
+  - R484-Q25840575
+  - R484-Q4962546
+- assessment_id: R484-IMODULON-SCOPE
+  area: completeness
+  topic: Native producer transcriptomic applicability
+  outcome: not_applicable
+  summary: The retained catalogue contains 20 organisms and 28 datasets at its original
+    access time. No exact native-producer stock, gene/module or compound association
+    is established. This is bounded catalogue context, not an exhaustive current search.
+  target_ids:
+  - naturalproductmech:mibig-919833c265
+  evidence_ids:
+  - R484-OWNER
+  - R484-IMODULON
+- assessment_id: S484-A-LOCAL
+  area: provenance
+  topic: current owner/history and source sets
+  outcome: supported
+  summary: Actual owner/history and all seven source sets match the frozen inventory.
+    Scientific judgments retain the declared original-source, congener and stock limits.
+  target_ids:
+  - naturalproductmech:mibig-919833c265
+  evidence_ids:
+  - S484-E-ACTUAL-LOCAL
+  - S484-E-LOCAL
+  - S484-E-GUARDS
+  - S484-E-INTAKE-VIEW
+- assessment_id: S484-A-SOURCE
+  area: provenance
+  topic: named-product and original source context
+  outcome: supported
+  summary: Ulbactin F is the exact retained BGC0002472:1/version 2 entity KDVBIWXQJGCQHY-NFUOLKQTSA-N,
+    distinct from G. The row has SOURCE_ASSERTION/CLUSTER_UNSTATED and empty method
+    vocabulary.
+  target_ids:
+  - naturalproductmech:mibig-919833c265
+  evidence_ids:
+  - S484-E-ULB-GENREP-BIBLIOGRAPHY
+  - S484-E-ULB-GENREP-CORE
+  - S484-E-ULB-FG-BIBLIOGRAPHY
+  - S484-E-ULB-FG-GAP
+  - S484-E-LOCAL
+  - S484-E-METADATA-READ
+  - S484-E-FOLLOWUP-READ
+  - S484-E-CURATION
+- assessment_id: S484-A-BOUNDARIES
+  area: evidence
+  topic: native, introduced, congener and source boundaries
+  outcome: supported
+  summary: The GenRep 2016 title and actual publisher coredata name sponge-derived
+    Brevibacillus sp. TP-B0800 and ulbactins generically. The 1,880-byte HTTP 200
+    response has no abstract, full article, exact F endpoint or figure. It is metadata,
+    not recovered full text. The separate Organic Letters 2016 title names ulbactins
+    F and G, but its original request returned an HTML challenge. Exact native F provenance,
+    species-versus-genus LOTUS applicability, individual locus association and stereochemical
+    assignment remain unresolved. No G endpoint is transferred to F.
+  target_ids:
+  - naturalproductmech:mibig-919833c265
+  evidence_ids:
+  - S484-E-ULB-GENREP-BIBLIOGRAPHY
+  - S484-E-ULB-GENREP-CORE
+  - S484-E-ULB-FG-BIBLIOGRAPHY
+  - S484-E-ULB-FG-GAP
+  - S484-E-LOCAL
+  - S484-E-METADATA-READ
+  - S484-E-FOLLOWUP-READ
+  - S484-E-CURATION
+  - S484-E-SOURCE-READ
+- assessment_id: S484-A-SOURCE-LIMIT
+  area: completeness
+  topic: bounded primary source limitations
+  outcome: unknown
+  summary: No full original F/G identity or native-stock evidence recovered; exact
+    F congener and occurrence-source applicability remain partial. Generic ulbactin
+    genome metadata does not independently establish a specific F terminal locus endpoint
+    or chemical hand. Current literal chemical authorities remain held under a separate
+    pending approval. Source-access gaps do not establish absence or a wrong owner.
+  target_ids:
+  - naturalproductmech:mibig-919833c265
+  evidence_ids:
+  - S484-E-ULB-GENREP-BIBLIOGRAPHY
+  - S484-E-ULB-GENREP-CORE
+  - S484-E-ULB-FG-BIBLIOGRAPHY
+  - S484-E-ULB-FG-GAP
+  - S484-E-LOCAL
+  - S484-E-METADATA-READ
+  - S484-E-FOLLOWUP-READ
+  - S484-E-CURATION
+  - S484-E-SOURCE-READ
+  - S484-E-SOURCE-PEER
+  - S484-E-ROOT-SOURCE
+- assessment_id: C484-A-IDENTITY
+  area: identity
+  topic: Stored representation and source-concept provenance
+  outcome: supported
+  summary: The complete source row BGC0002472:1 and source-concept hash reproduce
+    this stored representation; this does not establish that the upstream compound
+    label is correct. Formula, charge, Standard and fixed-H distinctions are independently
+    recorded. Primary support and any conflicting exact xref are assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-919833c265
+  evidence_ids:
+  - C484-OWNER
+  - C484-GRAPH
+  - C484-COMPARISON
+  dimensions:
+  - name: mibig_source_selector
+    value: BGC0002472:1
+    definition: Accession plus compound_index, distinct from the entry-level accession.
+    evidence_ids:
+    - C484-OWNER
+  - name: complete_raw_row_sha256
+    value: 55af3773146f0a78042314a920819fc4e65fbe96a9d9deb4a82dc27cdd64c0b9
+    definition: Sorted compact ASCII JSON of every parsed TSV field, including empty
+      values.
+    evidence_ids:
+    - C484-OWNER
+- assessment_id: C484-A-GROUNDING
+  area: provenance
+  topic: Exact authority eligibility and source representation
+  outcome: supported
+  summary: No exact eligible row exists in the committed ChEBI projection for this
+    owner. Candidate discovery was not performed; no negative remote search, alternative
+    grounding or approval is inferred.
+  target_ids:
+  - naturalproductmech:mibig-919833c265
+  evidence_ids:
+  - C484-OWNER
+  - C484-COMPARISON
+  - C484-AUTHORITY-AVAILABILITY
+  - C484-LOCAL-SEARCH
+- assessment_id: C484-A-XREF
+  area: representation
+  topic: Exact literal chemical identifier scope
+  outcome: unknown
+  summary: 'Required current literal availability: [{"absence_inferred": false, "identifier":
+    "npatlas:NPA001813", "owner_role": "xref", "status": "fresh_authority_unavailable_pending_user_approval"}].
+    Exact request spelling is preserved; no unavailable response, normalized returned
+    identifier or numerical comparison is invented. No authority graph is adopted.'
+  target_ids:
+  - naturalproductmech:mibig-919833c265
+  evidence_ids:
+  - C484-RETAINED
+  - C484-AUTH-LIMIT
+  - C484-OWNER-READ
+  - C484-AUTH-HOLD
+  - C484-AUTH-PLAN
+  - C484-REUSE
+  - C484-CURATION
+  - C484-SOURCE-LIMITS
+  - C484-OWNER
+  - C484-GRAPH
+  - C484-COMPARISON
+  - C484-AUTHORITY-AVAILABILITY
+  - C484-AUTHORITY-DETAIL
+- assessment_id: C484-A-ELIGIBILITY
+  area: grounding
+  topic: Existing ChEBI role and unavailable current validation
+  outcome: unknown
+  summary: '[]. No ChEBI row belongs to this exact key in the committed local projection.
+    This is a bounded local source fact, not a negative remote search or global absence.
+    Candidate discovery was not performed; no replacement or promotion is selected.'
+  target_ids:
+  - naturalproductmech:mibig-919833c265
+  evidence_ids:
+  - C484-RETAINED
+  - C484-AUTH-LIMIT
+  - C484-OWNER-READ
+  - C484-AUTH-HOLD
+  - C484-AUTH-PLAN
+  - C484-REUSE
+  - C484-CURATION
+  - C484-SOURCE-LIMITS
+  - C484-OWNER
+  - C484-GRAPH
+  - C484-COMPARISON
+  - C484-AUTHORITY-AVAILABILITY
+  - C484-AUTHORITY-DETAIL
+- assessment_id: C484-A-HELD-AUTHORITY
+  area: scope
+  topic: Current literal-authority availability
+  outcome: unknown
+  summary: Required current literal roles npatlas:NPA001813 remain unavailable pending
+    explicit approval. No retained current response, match, mismatch or returned identifier
+    is fabricated. Exact request spelling remains distinct from any future normalization.
+    All 24 requests are unattempted. The prior batch 46 rejection is preserved as
+    historical context; this batch has no new rejection or retry. No alternative route
+    or elapsed-time approval is inferred.
+  target_ids:
+  - naturalproductmech:mibig-919833c265
+  evidence_ids:
+  - C484-RETAINED
+  - C484-AUTH-LIMIT
+  - C484-OWNER-READ
+  - C484-AUTH-HOLD
+  - C484-AUTH-PLAN
+  - C484-REUSE
+  - C484-CURATION
+  - C484-SOURCE-LIMITS
+  - C484-OWNER
+  - C484-GRAPH
+  - C484-COMPARISON
+  - C484-AUTHORITY-AVAILABILITY
+  - C484-AUTHORITY-DETAIL
+- assessment_id: C484-A-CANDIDATE-AVAILABILITY
+  area: grounding
+  topic: Existing local roles and unperformed discovery
+  outcome: unknown
+  summary: Candidate discovery was not performed. Existing committed ChEBI rows retain
+    their exact local key and stars; they are source roles, not new remote candidates
+    or current-response validation. No absence, replacement or promotion is inferred.
+  target_ids:
+  - naturalproductmech:mibig-919833c265
+  evidence_ids:
+  - C484-RETAINED
+  - C484-AUTH-LIMIT
+  - C484-OWNER-READ
+  - C484-AUTH-HOLD
+  - C484-AUTH-PLAN
+  - C484-REUSE
+  - C484-CURATION
+  - C484-SOURCE-LIMITS
+  - C484-OWNER
+  - C484-GRAPH
+  - C484-COMPARISON
+  - C484-AUTHORITY-AVAILABILITY
+  - C484-AUTHORITY-DETAIL
+- assessment_id: C484-A-PRIMARY-SCOPE
+  area: scope
+  topic: Primary identity and experimental precision
+  outcome: unknown
+  summary: The stored ulbactin F graph and selected BGC0002472:1 raw structure agree
+    in Standard and fixed-H encodings, retaining five assigned R centres in diagnostic
+    atom ordering and formula C17H19N3O2S3. Literal npatlas:NPA001813 remains unavailable.
+    The retained F structure stays separate from G at record 485; neither a natural-hand
+    assignment nor congener replacement is established.
+  target_ids:
+  - naturalproductmech:mibig-919833c265
+  evidence_ids:
+  - C484-RETAINED
+  - C484-AUTH-LIMIT
+  - C484-OWNER-READ
+  - C484-AUTH-HOLD
+  - C484-AUTH-PLAN
+  - C484-REUSE
+  - C484-CURATION
+  - C484-SOURCE-LIMITS
+  - C484-OWNER
+  - C484-GRAPH
+  - C484-COMPARISON
+  - C484-AUTHORITY-AVAILABILITY
+  - C484-AUTHORITY-DETAIL
+findings: []
+actions: []
+limitations:
+- Context establishes mechanical owner/history/source equality, literal identifier
+  routing and computed classification. Primary production, exact stock and congener
+  claims retain their source-specific gaps. ROOT owner and raw scientific masks remain
+  independently bounded by the prior local-content receipt. The single 489 inline
+  graph remains scientifically unreviewed; there are no referenced components or emitted
+  activities. Records 482/490 retain strict chemical/bibliographic identity and naming
+  scope, with no operational interpretation. Records 482/486/488/490 each have one
+  no-data sentinel. Literal names do not resolve stock, congener, clinical or citation
+  applicability.
+- No full original F/G identity or native-stock evidence recovered; exact F congener
+  and occurrence-source applicability remain partial.
+- Generic ulbactin genome metadata does not independently establish a specific F terminal
+  locus endpoint or chemical hand.
+- Current literal chemical authorities remain held under a separate pending approval.
+  Source-access gaps do not establish absence or a wrong owner.
+- Stored/raw and reused-versioned evidence retain their original scopes and clocks.
+  Current literal authorities remain unavailable under the approval hold. A positive
+  original depiction does not establish an independent natural absolute-hand experiment;
+  organism, locus, classification and history claims are separately scoped.
+- All 17 current literal-authority roles are unavailable pending explicit approval
+  of the exact 24 planned requests. No current batch 49 request or rejection occurred,
+  and elapsed time supplies no approval. Candidate discovery was not performed. Existing
+  committed ChEBI roles are not newly discovered or promoted candidates; unavailable
+  responses support no absence or mismatch claim. ROOT alone executed the retained
+  molecular comparison. This source compiler performs no molecular calculation, remote
+  request, generated author, intake, save, gate or lifecycle action. All chemistry
+  full-owner and raw-row scientific manual flags remain false. Exact bytes, source
+  joins and histories are mechanical proof only; the one record 489 inline graph is
+  scientifically unread and no referenced components occur. No exact original depiction
+  or experimental absolute-assignment claim is established by this retained-only chemical
+  packet. Original literature may be reviewed separately and bound additively. Literal
+  identifier spelling, any future returned normalization, Standard identity, fixed-H
+  identity, represented stereo precision and natural assignment remain separate.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- FailedQC001 is retained for an explicit separate network-enabled retry; no artifact
+  will be overwritten.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint
+  and before downstream tests. Its actual exit1/log/input capture/root observation
+  remain pinned; the selected successful canonical QC attempt002 is separately timed.
+  No individual-review validation failure or counter reset is claimed.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter
+  skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings;
+  this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld
+  nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological
+  or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological
+  production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions
+  and no-adapter pairs; a successful command does not convert these into verified
+  scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command
+  execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population
+  was checked; external caches and generated bytecode are not asserted to be independently
+  byte-pinned.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+- Scientific conclusions integrate the chemical, biological and provenance assessments;
+  source access and unresolved scopes remain explicit.
+- 'Recovery disclosure: committed coverage for batches1–47 is bound to the independently
+  checked current-time immutable proof, and batch48 to its exact recovery checkpoint
+  and twenty committed files. The batch49 ledger retains 167 unavailable historical
+  temporary inputs; their expected hashes are disclosed and never counted as currently
+  verified bytes. All current batch49 source snapshots and active controls are required
+  present and exact. Original scientific decisions and access/gate clocks remain unchanged.
+  Recovery contract SHA256 b0848abbb42d662196a368ac62341048be913d98bc66b46dedd8862742abdfb8.
+  Publication remains awaiting explicit approval.'
+tags:
+- path-order-campaign
+- batch-049
+```
