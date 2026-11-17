@@ -1,0 +1,1617 @@
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261022T010539Z-fusarin-c
+title: Scientific review of fusarin C
+started_at: '2026-10-22T00:53:14.025326Z'
+finished_at: '2026-10-22T01:05:39.322054Z'
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The retained fusarin C graph contains an epoxide but differs from the methyl-ester-bearing
+  C23H29NO7 structure of the inspected original named product. Both source selectors
+  and all associations attached to the old structure key require adjudication. The
+  separate F. fujikuroi locus also needs stock-specific citation repair; unresolved
+  original stereochemical evidence precludes an automatic replacement.
+source:
+  git_revision: f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/dimboa.yaml
+    sha256: 36b9de8038c33f5f5c751b86bffa0d1e46b03e53af2fa3ed4bddfbab090cdaf8
+    role: context
+  - path: data/natural_products/alkaloids/dimethylcoprogen.yaml
+    sha256: 4dd0081fe3c3b7aef1ccdbf275cf53f659c4b932fac4bf97d7172cbcdb68ad67
+    role: context
+  - path: data/natural_products/alkaloids/distamycin.yaml
+    sha256: 0d53884114eaab8098d1dc2357a59cd3e45764d350878fd71eee02f966fa0fd5
+    role: context
+  - path: data/natural_products/alkaloids/dixiamycin-a.yaml
+    sha256: b359c9408a4bbb8dae9c9ab4516de48d6c2aaa00ce361c38aaa59e199b8edb3e
+    role: context
+  - path: data/natural_products/alkaloids/dorrigocin-a.yaml
+    sha256: e45b9ecc4a2ed27218fcfbb80cab1057622fc2ae0542954542f5eeba8a7b54d0
+    role: context
+  - path: data/natural_products/alkaloids/dorrigocin-b.yaml
+    sha256: d4b5272ae2cce093e2b091c9105fdcf5bccd685b48d111429164bd38e001556d
+    role: context
+  - path: data/natural_products/alkaloids/elymoclavine.yaml
+    sha256: e2011f8a88a29742375412dc54734a888790746f262ef04006fec7a6a343e31c
+    role: context
+  - path: data/natural_products/alkaloids/enantio-pyochelin.yaml
+    sha256: 7f71f0312b2f0d8b6072e978f1d7c22dd87897bc0482ebdce69ffa12b023887c
+    role: context
+  - path: data/natural_products/alkaloids/endophenazine-a.yaml
+    sha256: 18820266792db2e14e4c1e435fae5aedfa593ff68db0c45a0adc9589be1c9261
+    role: context
+  - path: data/natural_products/alkaloids/endophenazine-a1.yaml
+    sha256: 8a9071a488b2a072dd188c239a94e225288c1ba0a7457c54cef61358381df977
+    role: context
+  - path: data/natural_products/alkaloids/endophenazine-b.yaml
+    sha256: f953a2c1fcc56fca068e7108bed8cc382bef87e031ab219fd024ee74c00e43bd
+    role: context
+  - path: data/natural_products/alkaloids/endophenazine-f.yaml
+    sha256: 6a3c579b9de564a88683e3306aa1e2a293166ceea68111cc21340ef0dff43dd4
+    role: context
+  - path: data/natural_products/alkaloids/endophenazine-g.yaml
+    sha256: 40d4061134daf9c3d1313a69483f89748597c8931edff04f4d9dec864973667b
+    role: context
+  - path: data/natural_products/alkaloids/epi-fusarin-c.yaml
+    sha256: a157205a2b8c3cd3140cfa47affe1a655af77f8b9cc55794c91ea0f3a1f83b40
+    role: context
+  - path: data/natural_products/alkaloids/erdasporine-a.yaml
+    sha256: 0bf29a3ed698f4e7c0be1319082b44ea88f77c24cf8f5f13efe6ddca5179c701
+    role: context
+  - path: data/natural_products/alkaloids/erdasporine-b.yaml
+    sha256: fe813fcd6e59c1f82ca05aa4c78ea127338c50ee0c58098cc42c2927ebdc7c83
+    role: context
+  - path: data/natural_products/alkaloids/erdasporine-c.yaml
+    sha256: d5aab9d363d05f31d16979a55e964b281862f41b458ffbf9a1b3607d1297d0b1
+    role: context
+  - path: data/natural_products/alkaloids/ergocryptine.yaml
+    sha256: 8601e71e79b6e828f1054fba4ff6c10f1c30be90d84b0e971c55cc76c8524581
+    role: context
+  - path: data/natural_products/alkaloids/ergotamine.yaml
+    sha256: 37f51b2563890f2fab444845802cc77aa63d8df50d71f34299b214d345c0ecbe
+    role: context
+  - path: data/natural_products/alkaloids/ergovaline.yaml
+    sha256: a4afc86724b55f2bfc023b8c75b476b404ddee71e54f1f1ef62ddb42f8cea88b
+    role: context
+  - path: data/natural_products/alkaloids/esmeraldin.yaml
+    sha256: 27e283c4f4c21ba1311b8a6608f1a0a5f8d2f11e40d34f8b15637cc772e84e57
+    role: context
+  - path: data/natural_products/alkaloids/fervenulin.yaml
+    sha256: 5ceec0624f718e3e54cc1699847c92e4314f3c947a78625f250311e53f221213
+    role: context
+  - path: data/natural_products/alkaloids/fischerindole-l.yaml
+    sha256: e1e93f639462795e7f2a50f891e4df0d4039611c82a8b539780d9233ec11d752
+    role: context
+  - path: data/natural_products/alkaloids/flavichalasine-f.yaml
+    sha256: 1ccb330fc29638e721072013846038e3a30e7cef38ed380ea6d2631e5fb6f809
+    role: context
+  - path: data/natural_products/alkaloids/flavichalasine-g.yaml
+    sha256: 9837002422853afb552453b02064bbd27a0746ea1f009bc05253db3669a47bce
+    role: context
+  - path: data/natural_products/alkaloids/formycin-a.yaml
+    sha256: c2910b97207eb4ede16883ea8f16ac519e58e51695472e7bac39b93b4ee00b3c
+    role: context
+  - path: data/natural_products/alkaloids/fumigaclavine-c.yaml
+    sha256: 4fbf243118c5b8fb38bb25a88a702d97f9186c83f8df3853cecc944bd78b7da7
+    role: context
+  - path: data/natural_products/alkaloids/fumiquinazoline-a.yaml
+    sha256: d9892bd99ed9a42be2520cf0d493c8a6df69f525db36c6f6366246d505ddfca6
+    role: context
+  - path: data/natural_products/alkaloids/fumiquinazoline-c.yaml
+    sha256: b38d36d11366b39eba10c1019640f0e9fb9ccfd31a7dd2852441257885fa5ae3
+    role: context
+  - path: data/natural_products/alkaloids/fumiquinazoline-d.yaml
+    sha256: 9056d4978a54375286e1ac8f0c17d316cc1f35ee7276a36ca8ec583bb4f3d3ef
+    role: context
+  - path: data/natural_products/alkaloids/fusaric-acid.yaml
+    sha256: 08df80fe6e2184db09fadf22414f961ec3ed4c183a6bfba817a2899e13d203da
+    role: context
+  - path: data/natural_products/alkaloids/fusaridione-a.yaml
+    sha256: c9739e915f6e22d331a6d25810a333f368adbd56aae03ee698e8fb3db175f690
+    role: context
+  - path: data/natural_products/alkaloids/fusarin-c.yaml
+    sha256: b7393c2db3de8240089e532e542efe58aa43d1c84619df000e4e970c26bdf519
+    role: target
+  - path: data/natural_products/alkaloids/fusarin-d.yaml
+    sha256: 7f5666f829a54a26078dc85792153ad656cc2aef0f6f8db48793fdcb629da106
+    role: context
+  - path: data/natural_products/alkaloids/fusarochromene.yaml
+    sha256: f653a81c04f30502862e365013fef6947eb101c9b2d3594bf2ac1db978709812
+    role: context
+  - path: data/natural_products/alkaloids/fusatin.yaml
+    sha256: cf9c1426d58fa207b0a81ff4af6a4afdaad5b1d68f9cc3d8756e3d790e3e1fa1
+    role: context
+  - path: data/natural_products/alkaloids/fusatinic-acid.yaml
+    sha256: bc1df041b6b93fa1263f79739c48a3c9eb64ad797d01aec1834f5c0e0e22e73d
+    role: context
+  - path: data/natural_products/alkaloids/gaburedin-d.yaml
+    sha256: a1ea0516f1e6c3a2e49ac68af1394148092a2c5327862d0253a3fbebc00ae2ef
+    role: context
+  - path: data/natural_products/alkaloids/gilvusmycin.yaml
+    sha256: 5d76f1088d6338e31c76eaf665034151c33124dc90669c1f8c2c057efa3b8610
+    role: context
+  - path: data/natural_products/alkaloids/gladiofungin-a.yaml
+    sha256: d5f92e508d0fd0febe6312c11c77b32d9fab8a8d15ff9752010bf67eda70e8d7
+    role: context
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/lotus_exclusions.py
+    sha256: 6352cac7c587eab5a56d907c523cc899d02d197009081624bf8649c675ee30f7
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+    role: context
+  - path: src/naturalproductmech/curate/xref_exclusions.py
+    sha256: 17c3d9e7794bae596b22cf19a2dd5bc2169475d6fea81ea4e6f1781a53af9157
+    role: context
+  - path: src/naturalproductmech/grading.py
+    sha256: ece54c4a2c0803f034ac59de51b1006cf79ea8d6b6256d75757d4adb88ea9630
+    role: context
+  - path: src/naturalproductmech/graph_components.py
+    sha256: 10f08517869f482954fd583fd19d5750ef286a76297c231e6c9a5ba8dc023e17
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: tests/test_claim_references.py
+    sha256: 11b2fc60dbe32154df63fb2e8c784c7c8ba6585581c09bba2eebe2c5192d4c06
+    role: context
+  - path: tests/test_mibig_locus_evidence_overrides.py
+    sha256: 9177b5bd24f6e47cc4743857179217d9e0d4add9560b2ce3faefaebe53ba09a0
+    role: context
+  - path: tests/test_producer_strains.py
+    sha256: 17002ef1640464777f1925d12d842ed83c9098aad6de724ae0ea236ecccc4ff3
+    role: context
+  - path: tests/test_seed_skeleton.py
+    sha256: 72ec216fb0ed365b09f1cfb64fb06c701c50b5d7c2df409d8dbf613d302803bf
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 223, batch 023, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated targets in earlier
+    batch commits (publication tracked separately). At selection, 274 of 3116 current
+    records had campaign coverage and 2842 remained. The population search included
+    ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-e9eefc994f
+targets:
+- target_id: naturalproductmech:mibig-e9eefc994f
+  path: data/natural_products/alkaloids/fusarin-c.yaml
+  label: fusarin C
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/alkaloids/fusarin-c.yaml
+    role: Curator-owned assertions, inline mechanisms, discussions and audit history
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-e9eefc994f
+  command: just validate-strict data/natural_products/alkaloids/fusarin-c.yaml --out
+    /private/tmp/npm-review-work/223/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-22T00:53:15.531658Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3116 corpus records are filed exactly where PATHS.tsv pins them.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-018-baseline-verify-corpus-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-018 execution on f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T21:43:11.095314Z;
+    finished 2026-10-21T21:43:43.016017Z. Exact original receipt: /private/tmp/npm-native-checks/batch-018/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-018/verify-corpus.log. Reused
+    for batch023 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,105,749 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch023. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-e9eefc994f
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3116 records reproduce byte-for-byte from data/raw/.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-018-baseline-verify-reproduction-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-018 execution on f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T21:43:11.049802Z;
+    finished 2026-10-21T21:44:10.266611Z. Exact original receipt: /private/tmp/npm-native-checks/batch-018/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-018/verify-reproduction.log.
+    Reused for batch023 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,182 tracked byte streams and modes (208,105,749 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch023. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-e9eefc994f
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The canonical review-queue command completed with actual exit0 on the fresh
+    main base; exact output, warnings and skips remain in the pinned transcript.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-018-baseline-review-queue-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just review-queue --tsv /private/tmp/npm-review-queue-batch-018.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-018 execution on f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T21:43:11.094986Z;
+    finished 2026-10-21T21:43:27.046585Z. Exact original receipt: /private/tmp/npm-native-checks/batch-018/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-018/review-queue.log. Reused
+    for batch023 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,105,749 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch023. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-e9eefc994f
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'Configured identifier-label validation exited zero: 13449 canonical matches,
+    646 synonym matches and 35 configured exceptions; 499 non-blocking warnings and
+    4750 no-adapter skips remain.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-018-baseline-validate-products-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-018 execution on f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T21:43:11.095805Z;
+    finished 2026-10-21T21:44:09.649497Z. Exact original receipt: /private/tmp/npm-native-checks/batch-018/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-018/validate-products.log. Reused
+    for batch023 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,105,749 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch023. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-e9eefc994f
+- check_id: shared-qc
+  name: Full repository quality gate on the fresh main baseline
+  status: passed
+  required: true
+  summary: Full fresh-base quality command completed successfully:999 tests passed,4
+    skipped,2 warnings;3116 records passed closed schema validation and corpus reproduction,
+    and generated pages were current.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-018-baseline-qc-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-018 execution on f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T21:43:11.050051Z;
+    finished 2026-10-21T21:48:43.599885Z. Exact original receipt: /private/tmp/npm-native-checks/batch-018/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-018/qc.log. Reused for batch023
+    only after a fresh fetch/clean branch, equal commit/tree and two reads of all
+    9,182 tracked byte streams and modes (208,105,749 bytes), including a recheck
+    after the fresh authoritative catalogue. This gate was not rerun for batch023.
+    Original execution times, scope, warnings, exceptions and skips are retained.'
+  target_ids:
+  - naturalproductmech:mibig-e9eefc994f
+- check_id: R223-FULL-OWNER
+  name: Complete owner and captured-source scope
+  status: passed
+  required: true
+  summary: Official successful intake and root full read precede authoring. Exact
+    seven sets reconcile, including two 222 no-assay sentinels, one 223 sentinel and
+    221 overflow. Only 230 has an inline graph (three nodes/two edges) and one proposed
+    biosynthetic pathway step. No molecular_targets or external components are emitted.
+  target_ids:
+  - naturalproductmech:mibig-e9eefc994f
+  evidence_ids:
+  - R223-OWNER
+  - R223-LOCAL
+  - R223-PUBCHEM-PREP
+- check_id: S223-C-LOCAL
+  name: local
+  status: passed
+  required: true
+  summary: Actual complete owner and all seven retained source sets must match the
+    later official intake; this is source fidelity, not proof of every imported assertion.
+  target_ids:
+  - naturalproductmech:mibig-e9eefc994f
+  evidence_ids:
+  - S223-E-LOCAL
+  - S223-E-GUARDS
+- check_id: S223-C-SOURCE-CITATION
+  name: source citation
+  status: failed
+  required: true
+  summary: F. fujikuroi locus assertion currently routes the 2011 activity-level citation;
+    the inspected 2012 biosynthetic source and stock/endpoint scope need explicit
+    claim-specific routing, conditional on chemistry.
+  target_ids:
+  - naturalproductmech:mibig-e9eefc994f
+  evidence_ids:
+  - S223-E-LOCAL
+  - S223-E-OCCURRENCE-ABSTRACTS
+  - S223-E-P2232012
+  - S223-E-ACC-JX308619.1
+- check_id: S223-C-NATIVE-2004
+  name: native 2004
+  status: unavailable
+  required: true
+  summary: Required exact 2004 native knockout/product/stock applicability remains
+    unavailable; current annotation and original abstract are not full experimental
+    inspection.
+  target_ids:
+  - naturalproductmech:mibig-e9eefc994f
+  evidence_ids:
+  - S223-E-P2232004-ABSTRACT
+  - S223-E-AY604568
+  - S223-E-LIMITS
+- check_id: C223-C-REPRESENTATION
+  name: Stored chemical representation and complete source row
+  status: passed
+  required: true
+  summary: Fresh intake derivation agrees with the stored graph; the source selector,
+    full row and prepared snapshot were independently rechecked.
+  target_ids:
+  - naturalproductmech:mibig-e9eefc994f
+  evidence_ids:
+  - C223-OWNER
+  - C223-GRAPH
+  - C223-COMPARISON
+- check_id: C223-C-CONSTITUTION
+  name: Exact named fusarin-C constitution
+  status: failed
+  required: true
+  summary: The retained C22H29NO5 representation lacks the original named C3 methyl-ester/epoxide
+    C23H29NO7 constitution.
+  target_ids:
+  - naturalproductmech:mibig-e9eefc994f
+  evidence_ids:
+  - C223-PRIMARY-FIGURE1
+  - C223-PRIMARY-SI
+  - C223-DRAWING-COMPARISON
+  - C223-CHEBI-NAME-CANDIDATE
+  - C223-OWNER
+  - C223-GRAPH
+  - C223-COMPARISON
+  - C223-AUTHORITY-COMPARISON
+  - C223-AUTHORITY-DETAIL
+  - C223-AUTH-1
+  - C223-AUTH-2
+  - C223-AUTH-3
+  - C223-AUTH-4
+  - C223-AUTH-5
+  - C223-AUTH-6
+- check_id: C223-C-ABSOLUTE
+  name: Original experimental natural absolute assignment
+  status: unavailable
+  required: true
+  summary: The explicit2013 drawing is independently mapped, but no new complete original
+    absolute-hand protocol is established by that depiction or the current name candidate.
+  target_ids:
+  - naturalproductmech:mibig-e9eefc994f
+  evidence_ids:
+  - C223-PRIMARY-FIGURE1
+  - C223-PRIMARY-SI
+  - C223-DRAWING-COMPARISON
+  - C223-CHEBI-NAME-CANDIDATE
+  - C223-OWNER
+  - C223-GRAPH
+  - C223-COMPARISON
+  - C223-AUTHORITY-COMPARISON
+  - C223-AUTHORITY-DETAIL
+  - C223-AUTH-1
+  - C223-AUTH-2
+  - C223-AUTH-3
+  - C223-AUTH-4
+  - C223-AUTH-5
+  - C223-AUTH-6
+evidence:
+- evidence_id: R223-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/fusarin-c.yaml
+  locator: Complete actual owner, optional assertions and all history events
+  accessed_at: '2026-10-22T00:53:51.033650Z'
+  support: supports
+  summary: 'Root read the complete post-intake owner: 3 occurrence, 2 producer and
+    2 locus assertions. Optional fields: discussions. No external component is present.'
+  snapshot_sha256: b7393c2db3de8240089e532e542efe58aa43d1c84619df000e4e970c26bdf519
+- evidence_id: R223-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/223/local-sources.json
+  locator: Complete resolved owner and all six officially captured row sets
+  accessed_at: '2026-10-22T00:53:51.033650Z'
+  support: context_only
+  summary: All six captured sets and the separately compared seventh PubChem set match
+    exact frozen preparation. Source fidelity does not establish experimental support.
+  snapshot_sha256: 55e80f6d8dbcff12661facea75bdd60bf5ccfd3c48d6b88c85f2d3831733f1ea
+- evidence_id: R223-PUBCHEM-PREP
+  kind: record_content
+  reference: data/raw/pubchem_bioassay.tsv
+  locator: All exact-key raw rows, separate from official six-set intake
+  accessed_at: '2026-10-22T00:53:51.033650Z'
+  support: context_only
+  summary: This target has 1 raw rows and 0 emitted observations. Target 221 has 98
+    raw assay rows, 25 written observations and 73 raw-only overflow rows. Targets
+    222/223 have two/one no-assay sentinels respectively; other targets have no matching
+    rows. This is inventory scope; protocol interpretation is separately assessed,
+    and empty inventory is not literature absence.
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: R223-Q10500328
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q10500328
+  locator: Retained 11-entity response; relevant English labels/P225/P685 read, not
+    an audit of unrelated claims
+  accessed_at: '2026-10-21T22:45:12.721428Z'
+  support: context_only
+  summary: The literal P225/P685 values match the raw organism source. This identifier
+    routing is not experimental occurrence evidence.
+  snapshot_sha256: c6d8ee12cb0bc233a8a71b02624f20e054cad93269afd4291eaa1ac422eeabe4
+- evidence_id: R223-Q26828071
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q26828071
+  locator: Retained 11-entity response; relevant English labels/P225/P685 read, not
+    an audit of unrelated claims
+  accessed_at: '2026-10-21T22:45:12.721428Z'
+  support: context_only
+  summary: The literal P225/P685 values match the raw organism source. This identifier
+    routing is not experimental occurrence evidence.
+  snapshot_sha256: c6d8ee12cb0bc233a8a71b02624f20e054cad93269afd4291eaa1ac422eeabe4
+- evidence_id: R223-TAXON-CONTEXT
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&retmode=xml&id=1883,1931,5127,5507,28095,42673,42676,42747,54571,61235,101028,117187,169388,334819,953739,1028729,1476877
+  locator: Relevant TaxId, ScientificName, rank, parent and complete OtherNames fields
+  accessed_at: '2026-10-21T22:45:12.580364Z'
+  support: context_only
+  summary: NCBI 117187 F. verticillioides and 5127 F. fujikuroi are distinct species.
+    F. moniliforme and Gibberella fujikuroi are respective name synonyms, not a bridge
+    equating all stocks, accessions or chemical endpoints.
+  snapshot_sha256: e20b87a2aed4e563b520acf7c2d5bc8865127bacbc12e3fa5b4c6bfd631d7189
+- evidence_id: R223-IMODULON
+  kind: database
+  reference: https://imodulondb.org/api/datasets
+  locator: Complete 20-organism/28-dataset official catalogue
+  accessed_at: '2026-10-21T22:45:12.656239Z'
+  support: context_only
+  summary: No exact imported native producer is represented. Related Streptomyces/E.
+    coli experimental hosts do not establish native-stock or introduced-construct
+    module applicability. This is catalogue membership, not gene/module analysis.
+  snapshot_sha256: 155607e7023efdead5ebab3919279a0776d5665a7de9e28b67f02f8f521b0693
+- evidence_id: S223-E-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/223/local-sources.json
+  locator: Complete resolved owner and captured rows; exact seven-set equality checked
+  accessed_at: '2026-10-22T00:55:39.091229Z'
+  support: context_only
+  summary: Complete actual owner including any inline graph/pathway, six captured
+    source sets and separately compared seventh PubChem set match the prepared complete
+    reads.
+  snapshot_sha256: 55e80f6d8dbcff12661facea75bdd60bf5ccfd3c48d6b88c85f2d3831733f1ea
+- evidence_id: S223-E-CONSUMERS
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: LOTUS exclusion, producer/locus emission, method overrides and correction
+    order
+  accessed_at: '2026-10-22T00:55:39.091229Z'
+  support: context_only
+  summary: Static inspection covers exact LOTUS exclusions, source method grading
+    and producer/reference qualification order. Exact consumers have their own evidence
+    snapshots.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: S223-E-SCHEMA
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: ProducerEvidenceBasisEnum and ClusterLinkEvidenceEnum; conf/producer_evidence.tsv
+    and grading.py also read and pinned
+  accessed_at: '2026-10-22T00:55:39.091229Z'
+  support: context_only
+  summary: Producer tiers concern evidence in the named organism; cloned-locus experiments
+    are a distinct cluster question. Empty methods and a source assertion do not independently
+    assert native knockout or exact pure-enzyme proof.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: S223-E-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/223/science-search.json
+  locator: Exact read scope
+  accessed_at: '2026-10-22T00:55:39.098560Z'
+  support: context_only
+  summary: Exact current curated-decision search is retained. Its scope is the curation
+    tree; it does not establish absence of experimental evidence or all possible consumers.
+  snapshot_sha256: 3de15aabfe0d8d39a0120090d4bb3bdb31a4e287091d57798aae821e44b6a729
+  search_scope: rg --no-ignore --hidden -n -F over curation using exact identifier,
+    label, full key and source accessions
+- evidence_id: S223-E-ACC-JX308619.1
+  kind: database
+  reference: genbank:JX308619.1
+  locator: Exact inspected primary scope
+  accessed_at: '2026-10-21T22:50:13.964531Z'
+  support: supports
+  summary: IMI58289 source/fusA 12891 bp, CDS join and AFP73394.1; sequence stock
+    differs from 2012 FKMC1995 targeted mutants.
+  snapshot_sha256: 96b70635cb2107b595502db80d12c4313163a4da18a2169c670b42d760076e88
+- evidence_id: S223-E-AY604568
+  kind: database
+  reference: genbank:AY604568.1
+  locator: Exact inspected primary scope
+  accessed_at: '2026-10-21T21:07:53.042735Z'
+  support: supports
+  summary: 'Current retained source/header/features read: 11857 bp F. verticillioides
+    taxon 117187, FUSS/fusA AAT28740.1, cites 2004 paper; no strain qualifier. Header
+    historical Gibberella naming is preserved. Not a complete experimental construct
+    equivalence.'
+  snapshot_sha256: e955f6bc49c3fb343b663a1e1c7529357ab16e33c00fcc49c768311bfe39405b
+- evidence_id: S223-E-BGC-0064
+  kind: database
+  reference: mibig:BGC0000064.4
+  locator: Exact inspected primary scope
+  accessed_at: '2026-10-21T21:00:32.454070Z'
+  support: context_only
+  summary: Current retained version 4 payload has separate named compounds/source
+    citations; no exact species-method or graph identity inference from shared entry.
+  snapshot_sha256: 02f80f3dffb28713b9e0bac7cd25082a531e63d612aa00557677feeb337e5cb8
+- evidence_id: S223-E-BGC-223
+  kind: database
+  reference: mibig:BGC0001268.4
+  locator: Exact current versioned compound/locus fields
+  accessed_at: '2026-10-21T22:55:06.678259Z'
+  support: context_only
+  summary: Current exact versioned MIBiG payload preserves source annotation; current
+    database agreement is not an independent experiment.
+  snapshot_sha256: d27ab36207950faa81e5c866c955603fbbfd6006fc7f583f525c4238aac66541
+- evidence_id: S223-E-FUS-FIG1
+  kind: primary_source
+  reference: DOI:10.1016/j.chembiol.2013.07.004
+  locator: fusarin2013-fig1.jpg
+  accessed_at: '2026-10-21T23:08:07.498228Z'
+  support: supports
+  summary: Original main Figure 1 depicts C3 methyl-ester/epoxide and D4 partial stereochemistry.
+    Numbered product labels are distinct from whole graph adjudication.
+  snapshot_sha256: 1143078dc9b67588b7b0854a3e416e9a7135a808330ced6dd6768db2fca66871
+- evidence_id: S223-E-GRADE-MAP
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/conf/producer_evidence.tsv
+  locator: Exact retained read scope
+  accessed_at: '2026-10-21T23:08:07.498228Z'
+  support: context_only
+  summary: Knock-out studies grades organism+cluster; empty methods keep SOURCE_ASSERTION/CLUSTER_UNSTATED.
+    Heterologous and pure-enzyme work concern cluster only.
+  snapshot_sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+- evidence_id: S223-E-GUARDS
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch023/provisional-science-221-225/source-row-guards.json
+  locator: Exact retained read scope
+  accessed_at: '2026-10-21T23:08:07.498228Z'
+  support: context_only
+  summary: Complete literal seven-source row guards for all ten future targets; scientific
+    coverage in this helper is 221–225 only.
+  snapshot_sha256: 4364fc99fbc33a8cd67ad394fc4b94a022f19259231511c5ca9845615ae0a298
+- evidence_id: S223-E-LIMITS
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch023/bgc-science/source-notes.json
+  locator: Exact retained read scope
+  accessed_at: '2026-10-21T23:08:07.498228Z'
+  support: context_only
+  summary: Frozen source notes distinguish complete main/SI, bounded author transcription,
+    abstract-only evidence and unresolved exact stock/identity applicability. Access
+    failure is not biological absence.
+  snapshot_sha256: 6d9878026c48dad043fd2fd0fd32210d5f52b19dba0b98aae10167248c671cb6
+- evidence_id: S223-E-OCCURRENCE-ABSTRACTS
+  kind: primary_source
+  reference: PubMed batch
+  locator: Exact inspected primary scope
+  accessed_at: '2026-10-21T22:59:39.394910Z'
+  support: supports
+  summary: 'All four original abstract records read: 8507101,29237292,30204001,21683775.
+    1993 cytotoxicity and 2018/2020 bioactivity sources are not treated as full native-locus
+    experiments.'
+  snapshot_sha256: e8fe3ba3feb1b954ee9e03157e941157a11e6e2680fdeeac2ff917a42c06b2c2
+- evidence_id: S223-E-OCCURRENCES
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch023/bgc-science/occurrence-ledger.json
+  locator: Exact retained read scope
+  accessed_at: '2026-10-21T23:08:07.498228Z'
+  support: context_only
+  summary: All 13 present occurrence claims in 221–225 have source-specific positive
+    or access-limited scopes; no blanket deletion.
+  snapshot_sha256: c09d5385024070eec3c2f56ea43294088f49c7e2274707b2da591a80c4e4217f
+- evidence_id: S223-E-P2232004-ABSTRACT
+  kind: primary_source
+  reference: DOI:10.1002/cbic.200400138
+  locator: Exact inspected primary scope
+  accessed_at: '2026-10-21T21:06:41.796259Z'
+  support: partial
+  summary: Original PubMed abstract/metadata retained; original full 2004 main and
+    detailed stock/construct/product analysis unavailable.
+  snapshot_sha256: 48e428b2081fdf84ad78c6138ab35aa5f53420f24b0ee85d3e1195f8c289f5c9
+- evidence_id: S223-E-P2232012
+  kind: primary_source
+  reference: DOI:10.1128/AEM.01552-12
+  locator: Exact inspected primary scope
+  accessed_at: '2026-10-21T22:54:57.903537Z'
+  support: supports
+  summary: Complete institutional full-text derivative 1294 lines read, including
+    Methods, Results, Discussion, table, captions and references. No claim that original
+    figure pixels were independently viewed.
+  snapshot_sha256: c94891deb41e438175ebb54ee764b9e4c512f8d02bdfa78715dfee77c5bfc6ac
+- evidence_id: S223-E-P2232242013-SI
+  kind: primary_source
+  reference: DOI:10.1016/j.chembiol.2013.07.004
+  locator: Exact inspected primary scope
+  accessed_at: '2026-10-21T21:07:02.096340Z'
+  support: supports
+  summary: Reused original 54-page SI; targeted present read of S1–S5, Table S2 p40,
+    Methods pp44–49 and exact C3/D4 captions. Original pixels physical pages 2, 3,
+    5 and 40 viewed. No transfer of an epi-fusarin verdict and no full new all-spectrum
+    reassignment.
+  snapshot_sha256: 17b06e2adaa7e58de25cafcf3903d6e396ec03539e110c2102e1814a50775ae4
+- evidence_id: S223-E-REFERENCE-LOADER
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/curate/claim_references.py
+  locator: Exact retained read scope
+  accessed_at: '2026-10-21T23:08:07.498228Z'
+  support: context_only
+  summary: Exact accession:index and complete-row SHA route independent citations;
+    rejects structure_correction_note and leaves taxon/grades unchanged.
+  snapshot_sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+- evidence_id: S223-E-ROUTING
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch023/bgc-science/consumer-routing.json
+  locator: Exact retained read scope
+  accessed_at: '2026-10-21T23:08:07.498228Z'
+  support: context_only
+  summary: Static current citation/strain/method/occurrence consumer limits and full-row
+    composition requirements; no curator decision or executable replacement.
+  snapshot_sha256: ee80a6eb464387adb9b88d7a38edf1e7f1958a256250e310357e72c0c09dc7b3
+- evidence_id: C223-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/fusarin-c.yaml
+  locator: Complete owner and all seven matching source-row sets; no referenced components
+  accessed_at: '2026-10-22T00:54:26.834200Z'
+  support: supports
+  summary: 'The complete owner denotes fusarin C under naturalproductmech:mibig-e9eefc994f.
+    All source selectors, versions and complete row digests are retained in COMPARISON:
+    [{"row_sha256": "65dbf1163a1b3114b0cfc1f559de1061b51f729771a424a59da98ae4708aaadb",
+    "selector": "BGC0000064:1", "version": "4"}, {"row_sha256": "47b110b6311d3623db7c8a1c4a04d945099fb958cf534bb38a13dabedd9bf49c",
+    "selector": "BGC0001268:1", "version": "4"}]. The official intake and prepared
+    owner bytes agree.'
+  snapshot_sha256: b7393c2db3de8240089e532e542efe58aa43d1c84619df000e4e970c26bdf519
+- evidence_id: C223-GRAPH
+  kind: validation
+  reference: /private/tmp/npm-review-work/223/chemistry.json
+  locator: Fresh intake RDKit result and frozen Standard/fixed-H comparison
+  accessed_at: '2026-10-22T00:53:14.635988Z'
+  support: supports
+  summary: The stored SMILES recomputes to RCJADKVBRBVIEX-YAMKEULKSA-N, formula C22H29NO5,
+    formal charge 0; stored InChI/key agree. These are representation checks, not
+    experimental identity proof.
+  snapshot_sha256: 3c3b8a5773cc36d400a6cff0285a9d931ad9579eb0b1e676835c3156dfc34d0c
+- evidence_id: C223-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch023/chemistry-prep/retained-graph-comparison.json
+  locator: Record 223; exact source rows and each graph comparison
+  accessed_at: '2026-10-21T22:54:54.500756Z'
+  support: supports
+  summary: Exact Standard, fixed-H, formula, charge and stereo comparisons of the
+    retained owner and complete raw rows; current authority responses and primary
+    proof are separate evidence.
+  snapshot_sha256: 4cdf4da1f33d6585d6b71b3f59acab3491869c051e35654d6faaf225e229c7b3
+- evidence_id: C223-LOCAL-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/223/chemistry-search-receipt.json
+  locator: Exact full key, label, slug and source selector in raw/owner/curation trees
+  accessed_at: '2026-10-22T00:54:27.166972Z'
+  support: supports
+  summary: Ignored-inclusive bounded search preserves all matching paths; an absent
+    curation decision does not imply a missing scientific source.
+  snapshot_sha256: 89c913606b486bf88475d2ca17ad67eb8dbefa3c807186dfa7aba9502d90e668
+  search_scope: rg --no-ignore --hidden; data/natural_products, data/raw and curation;
+    exact full key, current label, slug and BGC:compound_index. No claim beyond these
+    trees.
+- evidence_id: C223-AUTHORITY-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch023/chemistry-prep/authority-comparison-001.json
+  locator: Complete literal Standard/fixed-H, formula, charge and stereo comparison;
+    exact source payload pins retained
+  accessed_at: '2026-10-21T22:57:08.079201Z'
+  support: supports
+  summary: Current authority graphs and source-specific serialization differences
+    are independently compared. Database agreement is not primary natural-hand proof.
+  snapshot_sha256: e5d1c4f28c8c3b7f8258ccd21e366868e397fbfcc3cc447c679eba137f0220d9
+- evidence_id: C223-AUTHORITY-DETAIL
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch023/chemistry-prep/source-plan-002.json
+  locator: Complete literal Standard/fixed-H, formula, charge and stereo comparison;
+    exact source payload pins retained
+  accessed_at: '2026-10-21T23:18:54.290453Z'
+  support: supports
+  summary: Current authority graphs and source-specific serialization differences
+    are independently compared. Database agreement is not primary natural-hand proof.
+  snapshot_sha256: 4e0956c2ed5f1d0e84315c8dc0bd14ed338e514efa25be5ab29667111449187b
+- evidence_id: C223-AUTH-1
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0001268.4/annotations.json
+  locator: Complete retained response /private/tmp/npm-review-work/shared-next-batch023/chemistry-prep/public-reads/BGC0001268.4.json
+  accessed_at: '2026-10-21T22:55:06.678259Z'
+  support: supports
+  summary: Exact returned namespace/version and representation; scientific constraints
+    remain in separate primary evidence.
+  snapshot_sha256: d27ab36207950faa81e5c866c955603fbbfd6006fc7f583f525c4238aac66541
+- evidence_id: C223-AUTH-2
+  kind: authority
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/15942871/SDF
+  locator: Complete retained response /private/tmp/npm-review-work/shared-next-batch023/chemistry-prep/public-reads/pubchem-15942871.sdf
+  accessed_at: '2026-10-21T22:55:09.306617Z'
+  support: supports
+  summary: Exact returned namespace/version and representation; scientific constraints
+    remain in separate primary evidence.
+  snapshot_sha256: a61a4773c8ba83f99465c78ae3b9d68ab07832cc9f31263a07af812f5ff60ef2
+- evidence_id: C223-AUTH-3
+  kind: authority
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q105233704.json
+  locator: Complete retained response /private/tmp/npm-review-work/shared-next-batch023/chemistry-prep/phase005-public-reads/Q105233704.json
+  accessed_at: '2026-10-21T22:56:57.072971Z'
+  support: supports
+  summary: Exact returned namespace/version and representation; scientific constraints
+    remain in separate primary evidence.
+  snapshot_sha256: 915a11de36560d9369ebf23b2d0d094b1319b0b5fd16a843ea44d7c4d2755c25
+- evidence_id: C223-AUTH-4
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/82329/
+  locator: Complete retained response /private/tmp/npm-review-work/shared-next-batch023/chemistry-prep/phase006-public-reads/CHEBI82329.json
+  accessed_at: '2026-10-21T22:59:59.430987Z'
+  support: supports
+  summary: Exact returned namespace/version and representation; scientific constraints
+    remain in separate primary evidence.
+  snapshot_sha256: 5b689fb92cf5089ab39635afb3dd4ed8c957fee14bb3390cb841170343c16074
+- evidence_id: C223-AUTH-5
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/82329/
+  locator: Complete retained response /private/tmp/npm-review-work/shared-next-batch023/chemistry-prep/phase006-public-reads/CHEBI82329.mol
+  accessed_at: '2026-10-21T22:59:59.400679Z'
+  support: supports
+  summary: Exact returned namespace/version and representation; scientific constraints
+    remain in separate primary evidence.
+  snapshot_sha256: 7d107ede45deb5f4b9f268d0f26c32f5ca06eb570e41aef084a8372409bf0270
+- evidence_id: C223-AUTH-6
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0000064.4/annotations.json
+  locator: Complete retained response /private/tmp/npm-review-work/shared-next-batch019/chemistry-prep/authority-bounded-phase-002/public-retry/BGC0000064.4.json
+  accessed_at: '2026-10-21T21:00:32.454070Z'
+  support: supports
+  summary: Exact returned namespace/version and representation; scientific constraints
+    remain in separate primary evidence.
+  snapshot_sha256: 02f80f3dffb28713b9e0bac7cd25082a531e63d612aa00557677feeb337e5cb8
+- evidence_id: C223-CHEBI-SEARCH-1
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=RCJADKVBRBVIEX-YAMKEULKSA-N&size=100
+  locator: Complete bounded exact key/name response; /private/tmp/npm-review-work/shared-next-batch023/chemistry-prep/phase002-public-reads/chebi-key-223.json
+  accessed_at: '2026-10-21T22:55:51.384558Z'
+  support: supports
+  summary: HTTP404; original response retained. Exact candidate star/graph eligibility
+    is assessed separately; no universal absence inference.
+  snapshot_sha256: 7d367b8ee4e07aeeeffd84d04a660d1db44715f09999c78a6b9a4656eb649105
+  search_scope: Official ChEBI exact literal key/name request, size100; complete returned
+    payload and actual status. No global no-hit claim.
+- evidence_id: C223-CHEBI-SEARCH-2
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=fusarin%20C&size=100
+  locator: Complete bounded exact key/name response; /private/tmp/npm-review-work/shared-next-batch023/chemistry-prep/phase004-public-reads/chebi-name-223.json
+  accessed_at: '2026-10-21T22:56:36.819870Z'
+  support: supports
+  summary: HTTP200; original response retained. Exact candidate star/graph eligibility
+    is assessed separately; no universal absence inference.
+  snapshot_sha256: dd719f62593c155c051e4633e1ec8f5142ca8bfffc45be5cb64c29f7c6a411d7
+  search_scope: Official ChEBI exact literal key/name request, size100; complete returned
+    payload and actual status. No global no-hit claim.
+- evidence_id: C223-CONSUMERS
+  kind: record_content
+  reference: src/naturalproductmech/curate/structure_corrections.py
+  locator: Current maintained consumer; exact code snapshot
+  accessed_at: '2026-10-22T00:54:26.834200Z'
+  support: supports
+  summary: Existing REPLACE/SPLIT accepts one unique committed three-star target with
+    exact complete source/target row pins. It accepts neither arbitrary primary SMILES
+    nor a label override; it withholds old xrefs and never transfers other old-key
+    joins.
+  snapshot_sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+- evidence_id: C223-XREF-CONSUMER
+  kind: record_content
+  reference: src/naturalproductmech/curate/xref_exclusions.py
+  locator: Current maintained consumer; exact code snapshot
+  accessed_at: '2026-10-22T00:54:26.834200Z'
+  support: supports
+  summary: Exact asserted PubChem/NPAtlas literals require a unique BGC compound selector
+    and complete original-row digest. This consumer withholds equivalence only; it
+    cannot adopt a positive identifier or repair an owner graph.
+  snapshot_sha256: 17c3d9e7794bae596b22cf19a2dd5bc2169475d6fea81ea4e6f1781a53af9157
+- evidence_id: C223-CLAIM-CONSUMER
+  kind: record_content
+  reference: src/naturalproductmech/curate/claim_references.py
+  locator: Current maintained consumer; exact code snapshot
+  accessed_at: '2026-10-22T00:54:26.834200Z'
+  support: supports
+  summary: Claim-local reference overlays require complete raw guards and reject structure-corrected
+    rows. Combined chemistry and biology corrections need explicit tested composition.
+  snapshot_sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+- evidence_id: C223-SEED-CONSUMER
+  kind: record_content
+  reference: scripts/seed_from_sources.py
+  locator: Current maintained consumer; exact code snapshot
+  accessed_at: '2026-10-22T00:54:26.834200Z'
+  support: supports
+  summary: Identity/source concepts, xrefs, exact-key secondary joins and explicit
+    migration are consumed here. Existing xref/strain/isolate/reference overlays cannot
+    silently stack with structure correction.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: C223-ROUTING
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch023/chemistry-prep/curator-routing-001.json
+  locator: Current full raw key ownership, ignored-inclusive source/curation search
+    and exact consumer limits
+  accessed_at: '2026-10-21T23:17:17.913046Z'
+  support: supports
+  summary: Two fusarin-C rows share the old key; proposed primary C and gaburedin-acid
+    keys have no current raw MIBiG owner in this bounded inventory. No generic primary-graph
+    or multi-source merge route is implemented by the current narrow consumer.
+  snapshot_sha256: 28b19937b206367314f7fa46eace43eb8c6a3699dfa518c93efd9800c32845e9
+- evidence_id: C223-PRIMARY-FIGURE1
+  kind: primary_source
+  reference: DOI:10.1016/j.chembiol.2013.07.004
+  locator: Original main Figure 1 compound 3; exact C/D panel, independently numbered
+    whole graph; retained snapshot /private/tmp/npm-review-work/shared-next-batch019/review-support/primary-recovery-007/fusarin2013-fig1.jpg
+  accessed_at: '2026-10-21T21:07:51.643376Z'
+  support: supports
+  summary: C3 has methyl ester/epoxide C23H29NO7 and explicit C13R/C14R/C15S. D4 keeps
+    the C23 constitution, depicts C13R, leaves C14 plain and C15OH wavy, and draws
+    five E bonds. This is literal depiction precision, not a new natural absolute-hand
+    experiment.
+  snapshot_sha256: 1143078dc9b67588b7b0854a3e416e9a7135a808330ced6dd6768db2fca66871
+- evidence_id: C223-PRIMARY-SI
+  kind: primary_source
+  reference: DOI:10.1016/j.chembiol.2013.07.004
+  locator: Original SI Figure S3 physical 5 exact C3/D4 chromatographic labels; this
+    panel is not the structural drawing; retained snapshot /private/tmp/npm-review-work/shared-next-batch019/review-support/primary-recovery-007/fusarin2013-si.pdf
+  accessed_at: '2026-10-21T21:07:02.096340Z'
+  support: supports
+  summary: The SI separately identifies the named C3/D4 products. The D/Z-isomer bar
+    in S1 must not be treated as pure-D quantitation. Biology independently retains
+    tested-stock scope.
+  snapshot_sha256: 17b06e2adaa7e58de25cafcf3903d6e396ec03539e110c2102e1814a50775ae4
+- evidence_id: C223-DRAWING-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch023/chemistry-prep/primary-mapping-001/literal-primary-comparison-001.json
+  locator: Entry223; complete numbered source graph and retained atom correspondence;
+    retained snapshot /private/tmp/npm-review-work/shared-next-batch023/chemistry-prep/primary-mapping-001/literal-primary-comparison-001.json
+  accessed_at: '2026-10-21T23:04:26.244875Z'
+  support: supports
+  summary: The original whole model and saved MOL are independently recomputed. Literal
+    differences are not authority votes or automatic correction graphs.
+  snapshot_sha256: 4ffc9dbf785a3d2095c3c25f924beb850a10b3a478c244053a16fa6d81c7a178
+- evidence_id: C223-CHEBI-NAME-CANDIDATE
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch023/chemistry-prep/authority-followup-002.json
+  locator: CHEBI:82329 official default and MOL, compared with owner and primary C3
+    model; retained snapshot /private/tmp/npm-review-work/shared-next-batch023/chemistry-prep/authority-followup-002.json
+  accessed_at: '2026-10-21T23:15:34.025456Z'
+  support: supports
+  summary: The current two-star C23 name candidate matches the literal primary C3
+    model, not the retained C22 graph. It is not an eligible committed three-star
+    correction target.
+  snapshot_sha256: 3511658b16631b5279ef831b4623c636da63b249f34e50d063d0d69cbbab2921
+assessments:
+- assessment_id: R223-HISTORY
+  area: provenance
+  topic: Native status and complete audit history
+  outcome: supported
+  summary: All 3 events are retained with exact sequence ['SEEDED_FROM_SOURCES', 'SEEDED_FROM_SOURCES',
+    'SEEDED_FROM_SOURCES']. Native status remains SEEDED; mechanism events and seeding
+    history are not scientific review passes.
+  target_ids:
+  - naturalproductmech:mibig-e9eefc994f
+  evidence_ids:
+  - R223-OWNER
+- assessment_id: R223-OPTIONAL
+  area: completeness
+  topic: Present optional claims
+  outcome: supported
+  summary: 'Present optional fields: discussions. Source-specific science/chemistry
+    sections assess definitions, sibling links, source experiments and the 230 graph/pathway;
+    the 221 original assay protocols are assessed below in this section. Optional
+    absence alone does not create a defect.'
+  target_ids:
+  - naturalproductmech:mibig-e9eefc994f
+  evidence_ids:
+  - R223-OWNER
+  - R223-LOCAL
+  - R223-PUBCHEM-PREP
+- assessment_id: R223-FILING
+  area: representation
+  topic: Exact-key computed classification provenance
+  outcome: supported
+  summary: The exact-key NPClassifier projection/version npclassifier.gnps2.org@2026-09-07
+    reproduces filing, superclass/class and glycoside value false. These computed
+    labels are not independent natural-origin or mechanism evidence. Any accepted
+    new identity requires effective-key reclassification.
+  target_ids:
+  - naturalproductmech:mibig-e9eefc994f
+  evidence_ids:
+  - R223-OWNER
+  - R223-LOCAL
+- assessment_id: R223-TAXON-SCOPE
+  area: provenance
+  topic: Taxonomic names versus experimental stocks
+  outcome: supported
+  summary: NCBI 117187 F. verticillioides and 5127 F. fujikuroi are distinct species.
+    F. moniliforme and Gibberella fujikuroi are respective name synonyms, not a bridge
+    equating all stocks, accessions or chemical endpoints.
+  target_ids:
+  - naturalproductmech:mibig-e9eefc994f
+  evidence_ids:
+  - R223-TAXON-CONTEXT
+  - R223-OWNER
+- assessment_id: R223-ORGANISM-IDS
+  area: grounding
+  topic: Literal organism identifier routing
+  outcome: supported
+  summary: All 18 literal LOTUS routes through 11 organism entities match P225 and
+    P685. Q428585 uses a disease-like English label but the exact species properties
+    agree. No taxonomic match establishes chemical occurrence, stock equivalence or
+    a source-method endpoint.
+  target_ids:
+  - naturalproductmech:mibig-e9eefc994f
+  evidence_ids:
+  - R223-Q10500328
+  - R223-Q26828071
+  - R223-TAXON-CONTEXT
+  - R223-OWNER
+- assessment_id: R223-IMODULON-SCOPE
+  area: completeness
+  topic: Native producer transcriptomic applicability
+  outcome: not_applicable
+  summary: The retained complete catalogue has no exact native producer. No compound-production
+    absence or gene/module inference follows.
+  target_ids:
+  - naturalproductmech:mibig-e9eefc994f
+  evidence_ids:
+  - R223-OWNER
+  - R223-IMODULON
+- assessment_id: R223-ASSAY-INVENTORY
+  area: scope
+  topic: Exact raw and written assay inventory
+  outcome: supported
+  summary: This record has 1 raw rows and 0 emitted observations. Target 222 has two
+    no-assay sentinels (two literal CIDs),223 has one, and 221 has 25 written of 98
+    raw observations with 73 overflow. Sentinel and overflow presence does not certify
+    or erase any assay result. This inventory equality alone does not certify endpoint
+    interpretation or sample identity. The 221 endpoint assessments below bind the
+    original protocols; chemical sample identity is independently assessed.
+  target_ids:
+  - naturalproductmech:mibig-e9eefc994f
+  evidence_ids:
+  - R223-OWNER
+  - R223-PUBCHEM-PREP
+  - R223-LOCAL
+- assessment_id: S223-A-ORIGIN
+  area: scope
+  topic: biosynthesis_origin and discussions[0]
+  outcome: concern
+  summary: 'Named fusarin C has positive biological evidence, but the existing two-source
+    shared-structure question remains open: identical imported keys do not establish
+    that the encoded C22 graph represents the primary named C methyl-ester/epoxide.
+    Chemistry adjudication governs any replacement or old-key evidence transfer.'
+  target_ids:
+  - naturalproductmech:mibig-e9eefc994f
+  evidence_ids:
+  - S223-E-LOCAL
+  - S223-E-P2232004-ABSTRACT
+  - S223-E-P2232012
+  - S223-E-FUS-FIG1
+- assessment_id: S223-A-BGC0
+  area: evidence
+  topic: producer_organisms[0]; biosynthetic_gene_clusters[0]
+  outcome: unknown
+  summary: 0064v4 faithfully imports native Knock-out studies and strong grades for
+    F. verticillioides/AY604568 citing 2004. Original abstract/source annotation is
+    positive, but full exact stock/mutant/product evidence remains unavailable. Later
+    IMI58289 studies do not independently close that claim. No false-producer conclusion
+    follows from inaccessible main.
+  target_ids:
+  - naturalproductmech:mibig-e9eefc994f
+  evidence_ids:
+  - S223-E-LOCAL
+  - S223-E-BGC-0064
+  - S223-E-P2232004-ABSTRACT
+  - S223-E-AY604568
+  - S223-E-P2232242013-SI
+  - S223-E-GRADE-MAP
+- assessment_id: S223-A-BGC1
+  area: evidence
+  topic: producer_organisms[1]; biosynthetic_gene_clusters[1]
+  outcome: concern
+  summary: '1268v4 retains activity-level 2011 mycoestrogen citation and conservative
+    empty methods. Full 2012 study provides native fusarin production/expression:
+    JX308619 from IMI58289, targeted T3/T4/T6 ΔfusA in FKMC1995, aggregate chloroform-extract
+    A350 endpoint. Citation correction must preserve these stock/chemical-resolution
+    boundaries.'
+  target_ids:
+  - naturalproductmech:mibig-e9eefc994f
+  evidence_ids:
+  - S223-E-LOCAL
+  - S223-E-BGC-223
+  - S223-E-OCCURRENCE-ABSTRACTS
+  - S223-E-P2232012
+  - S223-E-ACC-JX308619.1
+  - S223-E-GRADE-MAP
+- assessment_id: S223-A-OCC0
+  area: evidence
+  topic: occurrences[0]
+  outcome: unknown
+  summary: 2004 exact native source/product detailed main unavailable; original abstract/source
+    sequence positive at stated limits.
+  target_ids:
+  - naturalproductmech:mibig-e9eefc994f
+  evidence_ids:
+  - S223-E-LOCAL
+  - S223-E-OCCURRENCES
+  - S223-E-P2232004-ABSTRACT
+  - S223-E-AY604568
+- assessment_id: S223-A-OCC1
+  area: evidence
+  topic: occurrences[1]
+  outcome: unknown
+  summary: 2004 historical nomenclature and exact F. fujikuroi applicability remain
+    unresolved without original full source; no automatic reassignment from title.
+  target_ids:
+  - naturalproductmech:mibig-e9eefc994f
+  evidence_ids:
+  - S223-E-LOCAL
+  - S223-E-OCCURRENCES
+  - S223-E-P2232004-ABSTRACT
+- assessment_id: S223-A-OCC2
+  area: evidence
+  topic: occurrences[2]
+  outcome: unknown
+  summary: 2012 native FKMC1995/IMI58289 bulk fusarin output positive; exact encoded-C
+    graph support requires chemistry adjudication and is not supplied by A350 alone.
+  target_ids:
+  - naturalproductmech:mibig-e9eefc994f
+  evidence_ids:
+  - S223-E-LOCAL
+  - S223-E-OCCURRENCES
+  - S223-E-P2232012
+- assessment_id: C223-A-IDENTITY
+  area: identity
+  topic: Stored representation and source-concept provenance
+  outcome: supported
+  summary: The complete source row BGC0000064:1 and source-concept hash reproduce
+    this stored representation; this does not establish that the upstream compound
+    label is correct. Formula, charge, Standard and fixed-H distinctions are independently
+    recorded. Primary support and any conflicting exact xref are assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-e9eefc994f
+  evidence_ids:
+  - C223-OWNER
+  - C223-GRAPH
+  - C223-COMPARISON
+  dimensions:
+  - name: mibig_source_selector
+    value: BGC0000064:1
+    definition: Accession plus compound_index, distinct from the entry-level accession.
+    evidence_ids:
+    - C223-OWNER
+  - name: complete_raw_row_sha256
+    value: 65dbf1163a1b3114b0cfc1f559de1061b51f729771a424a59da98ae4708aaadb
+    definition: Sorted compact ASCII JSON of every parsed TSV field, including empty
+      values.
+    evidence_ids:
+    - C223-OWNER
+- assessment_id: C223-A-GROUNDING
+  area: provenance
+  topic: Exact authority eligibility and source representation
+  outcome: supported
+  summary: No exact eligible row exists in the committed ChEBI projection for this
+    owner. Current bounded name/key searches do not justify a different congener or
+    a two-star grounding.
+  target_ids:
+  - naturalproductmech:mibig-e9eefc994f
+  evidence_ids:
+  - C223-OWNER
+  - C223-COMPARISON
+  - C223-AUTHORITY-COMPARISON
+  - C223-LOCAL-SEARCH
+  - C223-CHEBI-SEARCH-1
+  - C223-CHEBI-SEARCH-2
+- assessment_id: C223-A-XREF
+  area: representation
+  topic: Exact literal chemical identifier scope
+  outcome: supported
+  summary: 'Measured literal comparisons: [{"fixed_h_equal": true, "literal": "pubchem:15942871",
+    "standard_equal": true}]. Standard and fixed-H are distinct. For222 only PubChem5458342
+    is nonexact. For228 the NPAtlas acid agrees with the primary and exposes the owner
+    gem-diol problem; a stand-alone xref exclusion would not repair that identity.
+    For223 literal PubChem agreement merely reproduces the same wrong named constitution.'
+  target_ids:
+  - naturalproductmech:mibig-e9eefc994f
+  evidence_ids:
+  - C223-PRIMARY-FIGURE1
+  - C223-PRIMARY-SI
+  - C223-DRAWING-COMPARISON
+  - C223-CHEBI-NAME-CANDIDATE
+  - C223-OWNER
+  - C223-GRAPH
+  - C223-COMPARISON
+  - C223-AUTHORITY-COMPARISON
+  - C223-AUTHORITY-DETAIL
+  - C223-AUTH-1
+  - C223-AUTH-2
+  - C223-AUTH-3
+  - C223-AUTH-4
+  - C223-AUTH-5
+  - C223-AUTH-6
+- assessment_id: C223-A-ELIGIBILITY
+  area: grounding
+  topic: ChEBI exact eligibility and serialization
+  outcome: supported
+  summary: 'Current measurements: [{"default_smiles_valid": true, "id": 82329, "mol_fixed_h_equal":
+    false, "mol_standard_equal": false, "name": "Fusarin C", "stars": 2}]. Only229
+    has an exact eligible three-star current candidate. Its official MOL and stated
+    InChI agree, while its default JSON SMILES is invalid. The other returned candidates
+    are two-star, including223 CHEBI82329 matching the primary rather than the owner
+    and228 CHEBI220430 reproducing the owner gem-diol. For226/227 default JSON strings
+    are also invalid; no default string is copied on authority alone. No bounded missing
+    candidate establishes global absence.'
+  target_ids:
+  - naturalproductmech:mibig-e9eefc994f
+  evidence_ids:
+  - C223-PRIMARY-FIGURE1
+  - C223-PRIMARY-SI
+  - C223-DRAWING-COMPARISON
+  - C223-CHEBI-NAME-CANDIDATE
+  - C223-OWNER
+  - C223-GRAPH
+  - C223-COMPARISON
+  - C223-AUTHORITY-COMPARISON
+  - C223-AUTHORITY-DETAIL
+  - C223-AUTH-1
+  - C223-AUTH-2
+  - C223-AUTH-3
+  - C223-AUTH-4
+  - C223-AUTH-5
+  - C223-AUTH-6
+  - C223-CHEBI-SEARCH-1
+  - C223-CHEBI-SEARCH-2
+- assessment_id: C223-A-PRIMARY-SCOPE
+  area: scope
+  topic: Primary identity and experimental precision
+  outcome: concern
+  summary: Two independent MIBiG source rows and PubChem CID 15942871 reproduce the
+    stored C22H29NO5 graph, but original 2013 Figure 1 exact fusarin C3 is the methyl-ester/epoxide
+    C23H29NO7 constitution. The primary model is FZFYFSUIOSWLHW-UNZVFGKVSA-N; current
+    two-star CHEBI:82329 matches that model but cannot authorize a replacement. Both
+    source selectors and every old-key association require adjudication. The original
+    natural absolute protocol and detailed2004 source remain uninspected.
+  target_ids:
+  - naturalproductmech:mibig-e9eefc994f
+  evidence_ids:
+  - C223-PRIMARY-FIGURE1
+  - C223-PRIMARY-SI
+  - C223-DRAWING-COMPARISON
+  - C223-CHEBI-NAME-CANDIDATE
+  - C223-OWNER
+  - C223-GRAPH
+  - C223-COMPARISON
+  - C223-AUTHORITY-COMPARISON
+  - C223-AUTHORITY-DETAIL
+  - C223-AUTH-1
+  - C223-AUTH-2
+  - C223-AUTH-3
+  - C223-AUTH-4
+  - C223-AUTH-5
+  - C223-AUTH-6
+findings:
+- finding_id: S223-F-CITATION
+  issue_key: fusarin-c-1268-activity-citation
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Bind the F. fujikuroi locus claim to its stock-specific biosynthetic evidence
+  description: The 2011 citation is an activity-level source, while the inspected
+    2012 native biosynthetic study separates IMI58289 sequence from FKMC1995 mutants
+    and measures aggregate fusarins. Current weak grades are not inflated. This citation
+    issue does not resolve the independently identified chemical-name question.
+  target_ids:
+  - naturalproductmech:mibig-e9eefc994f
+  field_paths:
+  - producer_organisms[1].evidence
+  - biosynthetic_gene_clusters[1].evidence
+  evidence_ids:
+  - S223-E-LOCAL
+  - S223-E-OCCURRENCE-ABSTRACTS
+  - S223-E-P2232012
+  - S223-E-ACC-JX308619.1
+  - S223-E-GUARDS
+  - S223-E-REFERENCE-LOADER
+  - S223-E-ROUTING
+  - S223-E-FUS-FIG1
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: maintained claim-specific citation decisions
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: consumer and guarded composition
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: full-row citation selector and corrected-structure rejection
+- finding_id: C223-F-PRIMARY-IDENTITY
+  issue_key: mibig-fusarin-c-primary-constitution
+  category: identity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: The stored fusarin-C constitution conflicts with the original named product
+  description: Two independent MIBiG source rows and PubChem CID 15942871 reproduce
+    the stored C22H29NO5 graph, but original 2013 Figure 1 exact fusarin C3 is the
+    methyl-ester/epoxide C23H29NO7 constitution. The primary model is FZFYFSUIOSWLHW-UNZVFGKVSA-N;
+    current two-star CHEBI:82329 matches that model but cannot authorize a replacement.
+    Both source selectors and every old-key association require adjudication. The
+    original natural absolute protocol and detailed2004 source remain uninspected.
+  target_ids:
+  - naturalproductmech:mibig-e9eefc994f
+  field_paths:
+  - chemical_structure.smiles
+  - chemical_structure.standard_inchi
+  - chemical_structure.standard_inchi_key
+  evidence_ids:
+  - C223-PRIMARY-FIGURE1
+  - C223-PRIMARY-SI
+  - C223-DRAWING-COMPARISON
+  - C223-CHEBI-NAME-CANDIDATE
+  - C223-OWNER
+  - C223-GRAPH
+  - C223-COMPARISON
+  - C223-AUTHORITY-COMPARISON
+  - C223-AUTHORITY-DETAIL
+  - C223-AUTH-1
+  - C223-AUTH-2
+  - C223-AUTH-3
+  - C223-AUTH-4
+  - C223-AUTH-5
+  - C223-AUTH-6
+  - C223-CONSUMERS
+  - C223-CLAIM-CONSUMER
+  - C223-SEED-CONSUMER
+  - C223-ROUTING
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: Current target-only decision contract; new primary-derived route needs explicit
+      implementation
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/structure_corrections.py
+    role: Full-row guards, target eligibility, unique ownership and explicit multi-source
+      behavior
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Audited identity migration, source concepts and exact-key secondary joins
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Tested chemistry/biology evidence composition
+  - repository: CultureBotAI/NaturalProductMech
+    path: docs/CURATION.md
+    role: Document the implemented repair contract and migration limits
+  rule_id: review-yaml-record:primary-structure-support
+  native_severity: blocker
+  normalization_reason: 'Confirmed wrong named constitution means the record denotes
+    the wrong chemical thing: blocker under review-yaml-record severity guidance.
+    Unresolved replacement stereochemistry and consumer implementation remain independent
+    closure requirements; no diagnostic whole graph is automatically adopted.'
+actions:
+- action_id: S223-ACT-CITATION
+  finding_ids:
+  - S223-F-CITATION
+  target_ids:
+  - naturalproductmech:mibig-e9eefc994f
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: maintained claim-specific citation decisions
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: consumer and guarded composition
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: full-row citation selector and corrected-structure rejection
+  description: 'After exact C identity adjudication, route this source concept to
+    claim-appropriate primary evidence with literal guard {"complete_raw_row": {"bgc_classes":
+    "NRPS|PKS", "bgc_subclasses": "Type I|Unknown", "cluster_link_evidence_basis":
+    "CLUSTER_UNSTATED", "compound_classes": "", "compound_index": "1", "compound_name":
+    "fusarin C", "database_ids": "pubchem:15942871", "entry_completeness": "unknown",
+    "entry_quality": "questionable", "entry_status": "active", "entry_version": "4",
+    "genome_accession": "JX308619.1", "locus_evidence_methods": "", "locus_from":
+    "", "locus_to": "", "mibig_accession": "BGC0001268", "primary_reference": "DOI:10.1016/j.toxlet.2011.05.1029",
+    "producer_evidence_basis": "SOURCE_ASSERTION", "reference_basis": "COMPOUND_BIOACTIVITY",
+    "smiles": "C/C=C(/C)\\C=C(/C)\\C=C(/C)\\C=C\\C=C(/C)\\C(=O)[C@@]12[C@@H](O1)[C@](NC2=O)(CCO)O",
+    "standard_inchi": "InChI=1S/C22H29NO5/c1-6-14(2)12-16(4)13-15(3)8-7-9-17(5)18(25)22-19(28-22)21(27,10-11-24)23-20(22)26/h6-9,12-13,19,24,27H,10-11H2,1-5H3,(H,23,26)/b8-7+,14-6-,15-13+,16-12+,17-9+/t19-,21-,22-/m0/s1",
+    "standard_inchi_key": "RCJADKVBRBVIEX-YAMKEULKSA-N", "stereo_complete": "true",
+    "taxon_id": "NCBITaxon:5127", "taxon_label": "Fusarium fujikuroi"}, "expected_source_row_sha256":
+    "47b110b6311d3623db7c8a1c4a04d945099fb958cf534bb38a13dabedd9bf49c", "source_id":
+    "BGC0001268:1"}. Preserve 2011 as an activity source, the exact IMI58289 sequence
+    and FKMC1995 mutant distinction, and aggregate A350 endpoint. Do not upgrade all
+    current grades solely by changing the reference. Existing claim_reference consumer
+    rejects structure_correction_note, so a tested guarded composition contract is
+    required if the chemical correction is accepted; both 0064/1268 source concepts
+    and old-key occurrences must be considered without automatic migration.'
+  acceptance_checks:
+  - Reject complete-row drift/ambiguous source concept.
+  - Retain independent 0064/2004 unresolved claim and its original citation; no blanket
+    locus withdrawal.
+  - Show source-specific IMI58289 versus FKMC1995 qualification and aggregate endpoint
+    explicitly.
+  - Test structure/citation/occurrence composition and old-key handling before regeneration;
+    exact named product support must remain attached to the adjudicated graph.
+- action_id: C223-ACTION-PRIMARY-IDENTITY
+  finding_ids:
+  - C223-F-PRIMARY-IDENTITY
+  target_ids:
+  - naturalproductmech:mibig-e9eefc994f
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: Current target-only decision contract; new primary-derived route needs explicit
+      implementation
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/structure_corrections.py
+    role: Full-row guards, target eligibility, unique ownership and explicit multi-source
+      behavior
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Audited identity migration, source concepts and exact-key secondary joins
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Tested chemistry/biology evidence composition
+  - repository: CultureBotAI/NaturalProductMech
+    path: docs/CURATION.md
+    role: Document the implemented repair contract and migration limits
+  description: 'Resolve both BGC0000064:1 and BGC0001268:1 together. Original C3 is
+    C23H29NO7, but detailed original absolute-hand/source applicability still needs
+    adjudication. CHEBI82329 is two-star. Existing single-row REPLACE cannot handle
+    this shared old key; SPLIT requires a remaining old-key owner and also prohibits
+    duplicate target adoption. A coordinated multi-source migration to a reviewed
+    whole graph therefore requires a new tested consumer, not two unsupported REPLACE/SPLIT
+    rows. Complete untouched source guards: [{"entry_version": "4", "expected_source_row_sha256":
+    "65dbf1163a1b3114b0cfc1f559de1061b51f729771a424a59da98ae4708aaadb", "full_original_row":
+    {"bgc_classes": "NRPS|PKS", "bgc_subclasses": "Type I|Type I", "cluster_link_evidence_basis":
+    "CLUSTER_DEMONSTRATED", "compound_classes": "Tetramate alkaloid|Linear polyketide",
+    "compound_index": "1", "compound_name": "fusarin C", "database_ids": "pubchem:15942871",
+    "entry_completeness": "unknown", "entry_quality": "questionable", "entry_status":
+    "active", "entry_version": "4", "genome_accession": "AY604568.1", "locus_evidence_methods":
+    "Knock-out studies", "locus_from": "", "locus_to": "", "mibig_accession": "BGC0000064",
+    "primary_reference": "DOI:10.1002/cbic.200400138", "producer_evidence_basis":
+    "BGC_CHARACTERIZED", "reference_basis": "COMPOUND_EVIDENCE", "smiles": "C/C=C(/C)\\C=C(/C)\\C=C(/C)\\C=C\\C=C(/C)\\C(=O)[C@@]12[C@@H](O1)[C@](NC2=O)(CCO)O",
+    "standard_inchi": "InChI=1S/C22H29NO5/c1-6-14(2)12-16(4)13-15(3)8-7-9-17(5)18(25)22-19(28-22)21(27,10-11-24)23-20(22)26/h6-9,12-13,19,24,27H,10-11H2,1-5H3,(H,23,26)/b8-7+,14-6-,15-13+,16-12+,17-9+/t19-,21-,22-/m0/s1",
+    "standard_inchi_key": "RCJADKVBRBVIEX-YAMKEULKSA-N", "stereo_complete": "true",
+    "taxon_id": "NCBITaxon:117187", "taxon_label": "Fusarium verticillioides"}, "source_id":
+    "BGC0000064:1"}, {"entry_version": "4", "expected_source_row_sha256": "47b110b6311d3623db7c8a1c4a04d945099fb958cf534bb38a13dabedd9bf49c",
+    "full_original_row": {"bgc_classes": "NRPS|PKS", "bgc_subclasses": "Type I|Unknown",
+    "cluster_link_evidence_basis": "CLUSTER_UNSTATED", "compound_classes": "", "compound_index":
+    "1", "compound_name": "fusarin C", "database_ids": "pubchem:15942871", "entry_completeness":
+    "unknown", "entry_quality": "questionable", "entry_status": "active", "entry_version":
+    "4", "genome_accession": "JX308619.1", "locus_evidence_methods": "", "locus_from":
+    "", "locus_to": "", "mibig_accession": "BGC0001268", "primary_reference": "DOI:10.1016/j.toxlet.2011.05.1029",
+    "producer_evidence_basis": "SOURCE_ASSERTION", "reference_basis": "COMPOUND_BIOACTIVITY",
+    "smiles": "C/C=C(/C)\\C=C(/C)\\C=C(/C)\\C=C\\C=C(/C)\\C(=O)[C@@]12[C@@H](O1)[C@](NC2=O)(CCO)O",
+    "standard_inchi": "InChI=1S/C22H29NO5/c1-6-14(2)12-16(4)13-15(3)8-7-9-17(5)18(25)22-19(28-22)21(27,10-11-24)23-20(22)26/h6-9,12-13,19,24,27H,10-11H2,1-5H3,(H,23,26)/b8-7+,14-6-,15-13+,16-12+,17-9+/t19-,21-,22-/m0/s1",
+    "standard_inchi_key": "RCJADKVBRBVIEX-YAMKEULKSA-N", "stereo_complete": "true",
+    "taxon_id": "NCBITaxon:5127", "taxon_label": "Fusarium fujikuroi"}, "source_id":
+    "BGC0001268:1"}]. Preserve raw inventories and all original pixels/calculations.
+    Current structure corrections require a unique committed three-star default target
+    with exact target-row digest and valid graph; they accept neither arbitrary source
+    SMILES nor compound-label override. Implement and test any necessary consumer
+    extension before recording a decision. Individually re-audit old-key occurrences,
+    assays, classifier data, sibling links, source concepts, biological evidence and
+    history before migration; do not carry them by label or old key. Existing xref/strain/isolate/reference
+    overlays reject structure-corrected rows and need explicit tested composition.
+    Preserve independent positive source biology while withholding unsupported transfer.'
+  generator: Primary adjudication followed by an explicitly implemented maintained
+    consumer and audited identity migration; no raw/generated-owner hand edit.
+  acceptance_checks:
+  - Exact compound selectors, versions and complete raw rows are pinned; stale, missing,
+    duplicate and occupied-target decisions fail closed.
+  - All primary constitution/relative/absolute constraints and unresolved positions
+    are recorded; no database vote, diagnostic flip or A-only protocol selects natural
+    hand.
+  - The implemented consumer supports the actual single/multiple source-row case and
+    target eligibility; no unsupported source-SMILES or label column is assumed.
+  - Old-key data and independently proposed biology repairs are individually adjudicated,
+    preserved where applicable and tested jointly; no silent transfer or loss.
+  - Authorized curator uses the documented migration writer/history/PATHS procedure
+    and runs canary/reproduction plus all required native gates after implementation.
+limitations:
+- Context covers complete actual owner/raw inventory, literal organism routing, native
+  history and computed classification. For 221, the 25 written assay observations
+  are separately interpreted against 18 original protocols in this section; raw overflow
+  is not thereby scientifically audited. Source-specific biology, graphs and chemical
+  identity retain their separate evidence scope; inventory equality is not experimental
+  verification.
+- Original 2004 full body/native knockout applicability remains required unavailable.
+- Exact primary C identity and occurrence migration cannot be decided from database
+  agreement; identity adjudication must precede any old-key transfer.
+- Original 2013 full main is not independently read here; complete SI is used only
+  for its explicit methods/products.
+- Authority matches establish the representations actually returned at their retained
+  access times; they are not independent experimental structure or absolute-hand determinations.
+  Root and science sections separately assess organism, locus, classification and
+  history claims.
+- A primary drawing, source-proposed stereochemistry and measured natural absolute
+  configuration are distinguished. Literal authority agreement is not independent
+  experimental proof. Biology, stocks, locus methods, assays, classification and history
+  remain separately scoped; no old-key claim is transferred by name.
+- The reproduction report retains 42 withheld ambiguous producer claims, 161 merged-taxon
+  rewrites and five unresolved assay-organism targets.
+- 499 identifier-label plausibility warnings are non-blocking; 4750 pairs have no
+  configured adapter and were skipped.
+- Four tests were skipped and two dependency deprecation warnings remain. Passing
+  configured QC is not independent scientific verification.
+- Native baseline gates establish configured consistency, not independent biological
+  production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions
+  and no-adapter pairs; a successful command does not convert these into verified
+  scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command
+  execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population
+  was checked; external caches and generated bytecode are not asserted to be independently
+  byte-pinned.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+- Scientific conclusions integrate the chemical, biological and provenance assessments;
+  source access and unresolved scopes remain explicit.
+tags:
+- path-order-campaign
+- batch-023
