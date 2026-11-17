@@ -1,0 +1,731 @@
+# Scientific review of Ficellomycin
+
+- Review: 20261027T191017Z-ficellomycin
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-27T19:09:40.639919Z
+- Finished UTC: 2026-10-27T19:10:17.552150Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Ficellomycin has internally consistent retained encodings, one unspecified tetrahedral carbon and a separate unspecified neutral bridge nitrogen. Its own cluster-paper metadata names Streptomyces ficellus but supplies no abstract. Natural configuration, experimental locus details and the separate LOTUS occurrence evidence remain unresolved.
+
+## Scope And Provenance
+
+Review ficellomycin identity, charged/neutral features and unresolved stereochemistry in the two local encodings, exact producer/locus and occurrence assertions, and the separation of source classification from molecular topology. Limit current own-DOI support to inspected title-only bibliographic metadata.
+
+Selection: One owner selected in canonical unreviewed path order as campaign review 709; whole retained owner, referenced components and local source rows read, with bounded scientific interpretation.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 14373517042b407747272446f79953ae86d51fa4.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-3beee0c1ff | data/natural_products/amino_acids_and_peptides/ficellomycin.yaml | generated | Ficellomycin |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-3beee0c1ff | Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its pinned path. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-3beee0c1ff | Fresh canonical reproduction gate passed:all3116 records byte-identical to source seeding; source warnings remain retained. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-3beee0c1ff | Fresh deterministic review queue completed:8922 rows across12 queues. Queue output is not scientific-review coverage. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-3beee0c1ff | Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking mismatches and4898no-adapter skips remain explicit. |
+| Full repository quality gate on the fresh main baseline | passed | True | naturalproductmech:mibig-3beee0c1ff | Canonical just qc completed with actual terminal exit0:1024 tests passed,4 skipped,2 dependency warnings;3116 records passed closed schema validation, site freshness, byte reproduction and lockfile integrity.22 governed artifacts and15 raw inventories passed. Prior DNS failed001 remains preserved. |
+| Native strict target validation | passed | True | naturalproductmech:mibig-3beee0c1ff | The selected owner passed the documented strict validator. This establishes configured consistency only. |
+| Saved two-encoding internal consistency | passed | True | naturalproductmech:mibig-3beee0c1ff | Saved RDKit 2026.03.5 results regenerate DGIHWRUPUISVIZ-WGNILSTHSA-N from both owner encodings, with formula C13H24N6O3, one fragment and formal charge +0. Standard InChI agrees between encodings. This supports internal encoding consistency only, not experimental natural identity. |
+| Exact retained owner and source-array joins | passed | True | naturalproductmech:mibig-3beee0c1ff | All seven retained and two supplemental arrays reproduce their exact ordered row guards and source table indices. This checks the original frozen local sources; current official intake was reconciled separately. |
+| Own metadata identity and access | passed | True | naturalproductmech:mibig-3beee0c1ff | The complete HTTP 200 Crossref response owns DOI 10.1007/s00253-017-8465-4 at /message/DOI and supplies the inspected title. No abstract is present. Original HTTP and later ROOT reading clocks remain separate. |
+| Exact natural identity and configuration | unavailable | True | naturalproductmech:mibig-3beee0c1ff | Both encodings retain one unspecified tetrahedral carbon and one distinct unspecified neutral SP3 nitrogen at the bridged-ring site. The nitrogen flag is not a second carbon configuration gap and does not by itself establish configurational stability or rapid inversion. The InChI also has one imidic C(-O)=N and one guanidino C(=N)(N)N flag; these are not unspecified C=C configurations. Title-only bibliography does not resolve exact experimental structure. |
+| Primary experiment and material verification | unavailable | True | naturalproductmech:mibig-3beee0c1ff | Full primary text, supplementary information, figures, spectra and experimental methods were not inspected. The absence of an abstract is an evidence limit, not proof of an erroneous citation. |
+| Current chemical, taxon and sequence authorities | unavailable | True | naturalproductmech:mibig-3beee0c1ff | Retained accessions and source labels have not been checked against current external authorities. Local encoding agreement does not verify the natural material, stock or locus provenance. |
+
+## Scientific And Domain Assessments
+
+### Internal chemical encoding
+
+representation: supported. Targets: naturalproductmech:mibig-3beee0c1ff.
+
+Saved RDKit 2026.03.5 results regenerate DGIHWRUPUISVIZ-WGNILSTHSA-N from both owner encodings, with formula C13H24N6O3, one fragment and formal charge +0. Standard InChI agrees between encodings. This supports internal encoding consistency only, not experimental natural identity.
+
+### Own article identity and bibliographic scope
+
+evidence: supported. Targets: naturalproductmech:mibig-3beee0c1ff.
+
+The own Crossref title identifies characterization of the ficellomycin biosynthesis gene cluster from Streptomyces ficellus. No abstract is supplied. The title does not identify an exact strain, accession interval, experiment or natural configuration, and it is not evidence for specific gene functions or potency.
+
+### Exact congener and natural configuration
+
+identity: unknown. Targets: naturalproductmech:mibig-3beee0c1ff.
+
+The stored full key is DGIHWRUPUISVIZ-WGNILSTHSA-N; the saved two-encoding calculation agrees with it. Both encodings retain one unspecified tetrahedral carbon and one distinct unspecified neutral SP3 nitrogen at the bridged-ring site. The nitrogen flag is not a second carbon configuration gap and does not by itself establish configurational stability or rapid inversion. The InChI also has one imidic C(-O)=N and one guanidino C(=N)(N)N flag; these are not unspecified C=C configurations. Existing stereo_complete=false remains appropriate as a local incompleteness declaration; neither the title nor this computation establishes the natural configuration.
+
+### Producer and exact stock
+
+provenance: unknown. Targets: naturalproductmech:mibig-3beee0c1ff.
+
+MIBiG BGC0001593 version 5 assigns Streptomyces ficellus, NCBITaxon:1977088, as producer with SOURCE_ASSERTION evidence. The own title names that species in the cluster context but supplies no strain or production experiment. It does not justify upgrading the source grade.
+
+### Biosynthetic locus and evidence grade
+
+provenance: unknown. Targets: naturalproductmech:mibig-3beee0c1ff.
+
+The retained NRPS locus is KY454693.1:11780-41364, with CLUSTER_UNSTATED evidence and a COMPOUND_EVIDENCE citation. The raw locus-method field is empty. A title describing cluster characterization does not establish which experimental methods support the interval or warrant changing the retained grade.
+
+### Occurrence and production citation scopes
+
+provenance: unknown. Targets: naturalproductmech:mibig-3beee0c1ff.
+
+The LOTUS occurrence uses DOI 10.7164/ANTIBIOTICS.42.357 for Streptomyces ficellus, whereas the MIBiG producer and locus use DOI 10.1007/s00253-017-8465-4. These are distinct literal citations with distinct claim roles. The occurrence article has not been read in this scope, and publication independence or corroboration is not inferred from the shared species.
+
+### Exact experimental activity
+
+evidence: unknown. Targets: naturalproductmech:mibig-3beee0c1ff.
+
+No bioactivity annotation or local assay row is retained for this owner. The available title supplies no potency, target or method. Activity and detailed enzyme-function claims remain unverified.
+
+### Class labels and causal coverage
+
+completeness: unknown. Targets: naturalproductmech:mibig-3beee0c1ff.
+
+The MIBiG Linear label and model-derived NPClassifier Dipeptides label are retained. The encoding also contains a bridged ring, but those source class labels have not been assigned a sufficiently precise structural scope here to prove a conflict. No causal graph is retained, and title-only metadata does not justify constructing one.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| SCI709-LOCAL | /private/tmp/npm-review-work/shared-next-batch071-tentative/tentative-owner-source-inventory-001.json; /entries/8/owner_document; /entries/8/rows; /entries/8/row_guards; /entries/8/supplemental_retained_rows | context_only | The whole ficellomycin owner and seven retained source arrays contain one MIBiG compound row, one LOTUS occurrence row and one NPClassifier row. Both supplemental arrays are empty. The exact source grades and separate occurrence citation are preserved. |
+| SCI709-CHEM | /private/tmp/npm-review-work/shared-next-batch071-tentative/source-science-preparation/root-tentative71-local-chemical-consistency-and-neighbors-001.json; /records/8/comparisons; /records/8/smiles/computed; /records/8/inchi/computed; /records/8/smiles/unspecified_neighbors; /records/8/inchi/unspecified_neighbors | supports | Saved RDKit 2026.03.5 results regenerate DGIHWRUPUISVIZ-WGNILSTHSA-N from both owner encodings, with formula C13H24N6O3, one fragment and formal charge +0. Standard InChI agrees between encodings. This supports internal encoding consistency only, not experimental natural identity. Both encodings retain one unspecified tetrahedral carbon and one distinct unspecified neutral SP3 nitrogen at the bridged-ring site. The nitrogen flag is not a second carbon configuration gap and does not by itself establish configurational stability or rapid inversion. The InChI also has one imidic C(-O)=N and one guanidino C(=N)(N)N flag; these are not unspecified C=C configurations. |
+| SCI709-OWN-BIBLIOGRAPHY | /private/tmp/npm-review-work/shared-next-batch071-tentative/literature-preparation/public-metadata-crossref-001/doi-10.1007-s00253-017-8465-4.json; /message/DOI; /message/title; /message/container-title; /message/published; /message/abstract (absent) | context_only | The own Crossref title identifies characterization of the ficellomycin biosynthesis gene cluster from Streptomyces ficellus. No abstract is supplied. The title does not identify an exact strain, accession interval, experiment or natural configuration, and it is not evidence for specific gene functions or potency. |
+| SCI709-ROOT-CHEM-READ | /private/tmp/npm-review-work/shared-next-batch071-tentative/source-science-preparation/root-tentative71-local-chemical-reading-001.json; /records/8; /interpretation; /scope | context_only | ROOT read the saved chemical representation results and their bounded interpretation. The original computation interval is retained separately. This reading does not establish natural identity or a new calculation. |
+
+## Limits And Additional Notes
+
+- The available article evidence is own Crossref bibliography and title only. No abstract, full primary body, supplementary information, spectra or experimental methods were inspected; reference-list entries are excluded from claim and alias evidence.
+- Exact natural configuration, experimental material and source-specific assay or locus details remain unresolved. Title agreement provides context without upgrading retained source grades.
+- The separate LOTUS occurrence citation is unread in this scope. The saved nitrogen flag does not establish an inversion barrier, stable nitrogen configuration or a wrong-structure finding.
+- Current chemical, taxon and sequence authorities remain unverified. Internal encoding consistency does not establish natural identity.
+- Original inventory capture, ROOT local reading, chemical computation, HTTP access and later interpretation clocks remain distinct. Full-owner scientific verification remains false.
+- These evidence and stereochemical limits do not by themselves establish a corrective finding.
+- Configured consistency only; independent scientific claim support and unrestricted remote authority refresh are not implied.
+- FailedQC001 is retained for an explicit separate network-enabled retry; no artifact will be overwritten.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint and before downstream tests. Its actual exit1/log/input capture/root observation remain pinned; the selected successful canonical QC attempt002 is separately timed. No individual-review validation failure or counter reset is claimed.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings; this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions and no-adapter pairs; a successful command does not convert these into verified scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population was checked; external caches and generated bytecode are not asserted to be independently byte-pinned.
+- The whole local owner and retained source rows were read. Full-owner scientific verification remains false; scientific_review denotes the bounded scientific interpretation in this report.
+- Original owner/source reading, two-encoding computation, neighbor inspection, HTTP retrieval and later metadata reading retain separate clocks. Official intake separately computed SMILES facts.
+- No scientific record, maintained input or native curation status was changed. Any findings and actions record ROOT-adopted proposed work; exact-source limitations and unavailable checks remain explicit.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261027T191017Z-ficellomycin
+title: Scientific review of Ficellomycin
+started_at: '2026-10-27T19:09:40.639919Z'
+finished_at: '2026-10-27T19:10:17.552150Z'
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: Ficellomycin has internally consistent retained encodings, one unspecified
+  tetrahedral carbon and a separate unspecified neutral bridge nitrogen. Its own cluster-paper
+  metadata names Streptomyces ficellus but supplies no abstract. Natural configuration,
+  experimental locus details and the separate LOTUS occurrence evidence remain unresolved.
+source:
+  git_revision: 14373517042b407747272446f79953ae86d51fa4
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/ficellomycin.yaml
+    sha256: 9f4ffea4851edc00d0d9ebf589e01d5784c8e1ef385fead383e05164c9aa636c
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+targets:
+- target_id: naturalproductmech:mibig-3beee0c1ff
+  path: data/natural_products/amino_acids_and_peptides/ficellomycin.yaml
+  label: Ficellomycin
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+scope:
+  description: Review ficellomycin identity, charged/neutral features and unresolved
+    stereochemistry in the two local encodings, exact producer/locus and occurrence
+    assertions, and the separation of source classification from molecular topology.
+    Limit current own-DOI support to inspected title-only bibliographic metadata.
+  selection: One owner selected in canonical unreviewed path order as campaign review
+    709; whole retained owner, referenced components and local source rows read, with
+    bounded scientific interpretation.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-3beee0c1ff
+  exclusions:
+  - target: Uninspected experiments and external authority claims
+    reason: No abstract was present in the inspected current DOI metadata. Exact natural
+      structural assignment, producing stock/locus experiments and the separately
+      cited LOTUS occurrence study remain unverified; an unassigned bridge nitrogen
+      is not independently established inversion behavior.
+  - target: Whole-owner scientific verification
+    reason: The complete local owner and retained rows were read, but full-owner scientific
+      verification remains false. This report assesses the explicitly bounded evidence;
+      configured validation does not establish all natural-product claims.
+checks:
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its
+    pinned path.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-corpus-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.783967Z;
+    finished 2026-10-25T22:37:16.453216Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.log.
+    Reused for batch071 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch071. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-3beee0c1ff
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: Fresh canonical reproduction gate passed:all3116 records byte-identical
+    to source seeding; source warnings remain retained.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-reproduction-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784055Z;
+    finished 2026-10-25T22:37:31.682209Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.log.
+    Reused for batch071 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch071. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-3beee0c1ff
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: Fresh deterministic review queue completed:8922 rows across12 queues. Queue
+    output is not scientific-review coverage.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-review-queue-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just review-queue --tsv /private/tmp/npm-review-queue-batch-036-fresh14373517-001.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.781802Z;
+    finished 2026-10-25T22:37:08.229737Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.log.
+    Reused for batch071 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch071. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-3beee0c1ff
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking
+    mismatches and4898no-adapter skips remain explicit.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-validate-products-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784040Z;
+    finished 2026-10-25T22:37:32.251879Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.log.
+    Reused for batch071 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch071. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-3beee0c1ff
+- check_id: shared-qc
+  name: Full repository quality gate on the fresh main baseline
+  status: passed
+  required: true
+  summary: Canonical just qc completed with actual terminal exit0:1024 tests passed,4
+    skipped,2 dependency warnings;3116 records passed closed schema validation, site
+    freshness, byte reproduction and lockfile integrity.22 governed artifacts and15
+    raw inventories passed. Prior DNS failed001 remains preserved.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-qc-attempt-002
+    PYTHONDONTWRITEBYTECODE=1 just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-002 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:40:55.179857Z;
+    finished 2026-10-25T22:46:28.974296Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.log.
+    Reused for batch071 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch071. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-3beee0c1ff
+- check_id: C-STRICT
+  name: Native strict target validation
+  status: passed
+  required: true
+  summary: The selected owner passed the documented strict validator. This establishes
+    configured consistency only.
+  command: just validate-strict data/natural_products/amino_acids_and_peptides/ficellomycin.yaml
+    --out /private/tmp/npm-review-work/709/strict.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Actual intake execution finished 2026-10-27T19:09:42.095156Z. Original
+    receipt: /private/tmp/npm-review-work/709/strict-receipt.json.'
+  target_ids:
+  - naturalproductmech:mibig-3beee0c1ff
+- check_id: SCI709-ENCODING
+  name: Saved two-encoding internal consistency
+  status: passed
+  required: true
+  summary: Saved RDKit 2026.03.5 results regenerate DGIHWRUPUISVIZ-WGNILSTHSA-N from
+    both owner encodings, with formula C13H24N6O3, one fragment and formal charge
+    +0. Standard InChI agrees between encodings. This supports internal encoding consistency
+    only, not experimental natural identity.
+  evidence_ids:
+  - SCI709-CHEM
+  target_ids:
+  - naturalproductmech:mibig-3beee0c1ff
+- check_id: SCI709-LOCAL-JOINS
+  name: Exact retained owner and source-array joins
+  status: passed
+  required: true
+  summary: All seven retained and two supplemental arrays reproduce their exact ordered
+    row guards and source table indices. This checks the original frozen local sources;
+    current official intake was reconciled separately.
+  evidence_ids:
+  - SCI709-LOCAL
+  target_ids:
+  - naturalproductmech:mibig-3beee0c1ff
+- check_id: SCI709-OWN-ID
+  name: Own metadata identity and access
+  status: passed
+  required: true
+  summary: The complete HTTP 200 Crossref response owns DOI 10.1007/s00253-017-8465-4
+    at /message/DOI and supplies the inspected title. No abstract is present. Original
+    HTTP and later ROOT reading clocks remain separate.
+  evidence_ids:
+  - SCI709-OWN-BIBLIOGRAPHY
+  target_ids:
+  - naturalproductmech:mibig-3beee0c1ff
+- check_id: SCI709-NATURAL-IDENTITY
+  name: Exact natural identity and configuration
+  status: unavailable
+  required: true
+  summary: Both encodings retain one unspecified tetrahedral carbon and one distinct
+    unspecified neutral SP3 nitrogen at the bridged-ring site. The nitrogen flag is
+    not a second carbon configuration gap and does not by itself establish configurational
+    stability or rapid inversion. The InChI also has one imidic C(-O)=N and one guanidino
+    C(=N)(N)N flag; these are not unspecified C=C configurations. Title-only bibliography
+    does not resolve exact experimental structure.
+  evidence_ids:
+  - SCI709-CHEM
+  - SCI709-OWN-BIBLIOGRAPHY
+  target_ids:
+  - naturalproductmech:mibig-3beee0c1ff
+- check_id: SCI709-PRIMARY-METHODS
+  name: Primary experiment and material verification
+  status: unavailable
+  required: true
+  summary: Full primary text, supplementary information, figures, spectra and experimental
+    methods were not inspected. The absence of an abstract is an evidence limit, not
+    proof of an erroneous citation.
+  evidence_ids:
+  - SCI709-OWN-BIBLIOGRAPHY
+  target_ids:
+  - naturalproductmech:mibig-3beee0c1ff
+- check_id: SCI709-AUTHORITIES
+  name: Current chemical, taxon and sequence authorities
+  status: unavailable
+  required: true
+  summary: Retained accessions and source labels have not been checked against current
+    external authorities. Local encoding agreement does not verify the natural material,
+    stock or locus provenance.
+  evidence_ids:
+  - SCI709-LOCAL
+  - SCI709-CHEM
+  target_ids:
+  - naturalproductmech:mibig-3beee0c1ff
+evidence:
+- evidence_id: SCI709-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch071-tentative/tentative-owner-source-inventory-001.json
+  accessed_at: '2026-10-27T18:13:33.034829Z'
+  locator: /entries/8/owner_document; /entries/8/rows; /entries/8/row_guards; /entries/8/supplemental_retained_rows
+  snapshot_sha256: 53f900bba3e6dfe54d07ff9a08cd5fb64593163e809ecbeaa6748b322a48f883
+  support: context_only
+  summary: The whole ficellomycin owner and seven retained source arrays contain one
+    MIBiG compound row, one LOTUS occurrence row and one NPClassifier row. Both supplemental
+    arrays are empty. The exact source grades and separate occurrence citation are
+    preserved.
+- evidence_id: SCI709-CHEM
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch071-tentative/source-science-preparation/root-tentative71-local-chemical-consistency-and-neighbors-001.json
+  accessed_at: '2026-10-27T18:15:48.609294Z'
+  locator: /records/8/comparisons; /records/8/smiles/computed; /records/8/inchi/computed;
+    /records/8/smiles/unspecified_neighbors; /records/8/inchi/unspecified_neighbors
+  snapshot_sha256: 3c7b05f7372948747c603d7b006b1e20dfb7e1e51dde5710676c02b15320ca4a
+  support: supports
+  summary: Saved RDKit 2026.03.5 results regenerate DGIHWRUPUISVIZ-WGNILSTHSA-N from
+    both owner encodings, with formula C13H24N6O3, one fragment and formal charge
+    +0. Standard InChI agrees between encodings. This supports internal encoding consistency
+    only, not experimental natural identity. Both encodings retain one unspecified
+    tetrahedral carbon and one distinct unspecified neutral SP3 nitrogen at the bridged-ring
+    site. The nitrogen flag is not a second carbon configuration gap and does not
+    by itself establish configurational stability or rapid inversion. The InChI also
+    has one imidic C(-O)=N and one guanidino C(=N)(N)N flag; these are not unspecified
+    C=C configurations.
+- evidence_id: SCI709-OWN-BIBLIOGRAPHY
+  kind: primary_source
+  reference: /private/tmp/npm-review-work/shared-next-batch071-tentative/literature-preparation/public-metadata-crossref-001/doi-10.1007-s00253-017-8465-4.json
+  accessed_at: '2026-10-27T18:28:56.282692Z'
+  locator: /message/DOI; /message/title; /message/container-title; /message/published;
+    /message/abstract (absent)
+  snapshot_sha256: 93b1358294b8852a08b7ab313291ea0bdac580623d85c3d0af674556cf8c1cd9
+  support: context_only
+  summary: The own Crossref title identifies characterization of the ficellomycin
+    biosynthesis gene cluster from Streptomyces ficellus. No abstract is supplied.
+    The title does not identify an exact strain, accession interval, experiment or
+    natural configuration, and it is not evidence for specific gene functions or potency.
+- evidence_id: SCI709-ROOT-CHEM-READ
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch071-tentative/source-science-preparation/root-tentative71-local-chemical-reading-001.json
+  accessed_at: '2026-10-27T18:16:57.571265Z'
+  locator: /records/8; /interpretation; /scope
+  snapshot_sha256: 20cbb5354832895441e3a6f8dc8fd0aa56c639782c708dd620345bd55ae363fb
+  support: context_only
+  summary: ROOT read the saved chemical representation results and their bounded interpretation.
+    The original computation interval is retained separately. This reading does not
+    establish natural identity or a new calculation.
+assessments:
+- assessment_id: SCI709-ENCODING
+  area: representation
+  topic: Internal chemical encoding
+  outcome: supported
+  summary: Saved RDKit 2026.03.5 results regenerate DGIHWRUPUISVIZ-WGNILSTHSA-N from
+    both owner encodings, with formula C13H24N6O3, one fragment and formal charge
+    +0. Standard InChI agrees between encodings. This supports internal encoding consistency
+    only, not experimental natural identity.
+  evidence_ids:
+  - SCI709-CHEM
+  - SCI709-ROOT-CHEM-READ
+  target_ids:
+  - naturalproductmech:mibig-3beee0c1ff
+- assessment_id: SCI709-BIBLIOGRAPHY
+  area: evidence
+  topic: Own article identity and bibliographic scope
+  outcome: supported
+  summary: The own Crossref title identifies characterization of the ficellomycin
+    biosynthesis gene cluster from Streptomyces ficellus. No abstract is supplied.
+    The title does not identify an exact strain, accession interval, experiment or
+    natural configuration, and it is not evidence for specific gene functions or potency.
+  evidence_ids:
+  - SCI709-OWN-BIBLIOGRAPHY
+  target_ids:
+  - naturalproductmech:mibig-3beee0c1ff
+- assessment_id: SCI709-IDENTITY
+  area: identity
+  topic: Exact congener and natural configuration
+  outcome: unknown
+  summary: The stored full key is DGIHWRUPUISVIZ-WGNILSTHSA-N; the saved two-encoding
+    calculation agrees with it. Both encodings retain one unspecified tetrahedral
+    carbon and one distinct unspecified neutral SP3 nitrogen at the bridged-ring site.
+    The nitrogen flag is not a second carbon configuration gap and does not by itself
+    establish configurational stability or rapid inversion. The InChI also has one
+    imidic C(-O)=N and one guanidino C(=N)(N)N flag; these are not unspecified C=C
+    configurations. Existing stereo_complete=false remains appropriate as a local
+    incompleteness declaration; neither the title nor this computation establishes
+    the natural configuration.
+  evidence_ids:
+  - SCI709-LOCAL
+  - SCI709-CHEM
+  - SCI709-OWN-BIBLIOGRAPHY
+  target_ids:
+  - naturalproductmech:mibig-3beee0c1ff
+- assessment_id: SCI709-PRODUCER
+  area: provenance
+  topic: Producer and exact stock
+  outcome: unknown
+  summary: MIBiG BGC0001593 version 5 assigns Streptomyces ficellus, NCBITaxon:1977088,
+    as producer with SOURCE_ASSERTION evidence. The own title names that species in
+    the cluster context but supplies no strain or production experiment. It does not
+    justify upgrading the source grade.
+  evidence_ids:
+  - SCI709-LOCAL
+  - SCI709-OWN-BIBLIOGRAPHY
+  target_ids:
+  - naturalproductmech:mibig-3beee0c1ff
+- assessment_id: SCI709-LOCUS
+  area: provenance
+  topic: Biosynthetic locus and evidence grade
+  outcome: unknown
+  summary: The retained NRPS locus is KY454693.1:11780-41364, with CLUSTER_UNSTATED
+    evidence and a COMPOUND_EVIDENCE citation. The raw locus-method field is empty.
+    A title describing cluster characterization does not establish which experimental
+    methods support the interval or warrant changing the retained grade.
+  evidence_ids:
+  - SCI709-LOCAL
+  - SCI709-OWN-BIBLIOGRAPHY
+  target_ids:
+  - naturalproductmech:mibig-3beee0c1ff
+- assessment_id: SCI709-OCCURRENCE
+  area: provenance
+  topic: Occurrence and production citation scopes
+  outcome: unknown
+  summary: The LOTUS occurrence uses DOI 10.7164/ANTIBIOTICS.42.357 for Streptomyces
+    ficellus, whereas the MIBiG producer and locus use DOI 10.1007/s00253-017-8465-4.
+    These are distinct literal citations with distinct claim roles. The occurrence
+    article has not been read in this scope, and publication independence or corroboration
+    is not inferred from the shared species.
+  evidence_ids:
+  - SCI709-LOCAL
+  - SCI709-OWN-BIBLIOGRAPHY
+  target_ids:
+  - naturalproductmech:mibig-3beee0c1ff
+- assessment_id: SCI709-ACTIVITY
+  area: evidence
+  topic: Exact experimental activity
+  outcome: unknown
+  summary: No bioactivity annotation or local assay row is retained for this owner.
+    The available title supplies no potency, target or method. Activity and detailed
+    enzyme-function claims remain unverified.
+  evidence_ids:
+  - SCI709-LOCAL
+  - SCI709-OWN-BIBLIOGRAPHY
+  target_ids:
+  - naturalproductmech:mibig-3beee0c1ff
+- assessment_id: SCI709-CLASS-COVERAGE
+  area: completeness
+  topic: Class labels and causal coverage
+  outcome: unknown
+  summary: The MIBiG Linear label and model-derived NPClassifier Dipeptides label
+    are retained. The encoding also contains a bridged ring, but those source class
+    labels have not been assigned a sufficiently precise structural scope here to
+    prove a conflict. No causal graph is retained, and title-only metadata does not
+    justify constructing one.
+  evidence_ids:
+  - SCI709-LOCAL
+  - SCI709-CHEM
+  - SCI709-OWN-BIBLIOGRAPHY
+  target_ids:
+  - naturalproductmech:mibig-3beee0c1ff
+findings: []
+actions: []
+limitations:
+- The available article evidence is own Crossref bibliography and title only. No abstract,
+  full primary body, supplementary information, spectra or experimental methods were
+  inspected; reference-list entries are excluded from claim and alias evidence.
+- Exact natural configuration, experimental material and source-specific assay or
+  locus details remain unresolved. Title agreement provides context without upgrading
+  retained source grades.
+- The separate LOTUS occurrence citation is unread in this scope. The saved nitrogen
+  flag does not establish an inversion barrier, stable nitrogen configuration or a
+  wrong-structure finding.
+- Current chemical, taxon and sequence authorities remain unverified. Internal encoding
+  consistency does not establish natural identity.
+- Original inventory capture, ROOT local reading, chemical computation, HTTP access
+  and later interpretation clocks remain distinct. Full-owner scientific verification
+  remains false.
+- These evidence and stereochemical limits do not by themselves establish a corrective
+  finding.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- FailedQC001 is retained for an explicit separate network-enabled retry; no artifact
+  will be overwritten.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint
+  and before downstream tests. Its actual exit1/log/input capture/root observation
+  remain pinned; the selected successful canonical QC attempt002 is separately timed.
+  No individual-review validation failure or counter reset is claimed.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter
+  skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings;
+  this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld
+  nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological
+  or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological
+  production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions
+  and no-adapter pairs; a successful command does not convert these into verified
+  scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command
+  execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population
+  was checked; external caches and generated bytecode are not asserted to be independently
+  byte-pinned.
+notes:
+- The whole local owner and retained source rows were read. Full-owner scientific
+  verification remains false; scientific_review denotes the bounded scientific interpretation
+  in this report.
+- Original owner/source reading, two-encoding computation, neighbor inspection, HTTP
+  retrieval and later metadata reading retain separate clocks. Official intake separately
+  computed SMILES facts.
+- No scientific record, maintained input or native curation status was changed. Any
+  findings and actions record ROOT-adopted proposed work; exact-source limitations
+  and unavailable checks remain explicit.
+```

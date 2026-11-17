@@ -1,0 +1,941 @@
+# Scientific review of fellutamide B
+
+- Review: 20261027T191017Z-fellutamide-b
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-27T19:09:37.788403Z
+- Finished UTC: 2026-10-27T19:10:17.502609Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Fellutamide B has internally consistent, fully specified free-compound encodings. Newly inspected abstracts support qualified mycobacterial and human proteasome inhibition, induced Aspergillus nidulans production and conditional inpE resistance. Five local graphs retain distinct species, reference and adduct scopes; exact natural material, donor/construct identity and full primary methods remain unresolved.
+
+## Scope And Provenance
+
+Review fellutamide B identity and all three inline and two referenced graphs, with exact retained source rows, local chemical encodings, inspected 2010/2016 abstracts, 2008 title-only bibliography and selected cached PRE2 reference fields. Distinguish free compound from proteasome adducts, reference sequences from experimental donors, and conditional fungal self-resistance from direct target inhibition.
+
+Selection: One owner selected in canonical unreviewed path order as campaign review 708; whole retained owner, referenced components and local source rows read, with bounded scientific interpretation.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 14373517042b407747272446f79953ae86d51fa4.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-a7c02b2a6d | data/natural_products/amino_acids_and_peptides/fellutamide-b.yaml | generated | fellutamide B |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-a7c02b2a6d | Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its pinned path. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-a7c02b2a6d | Fresh canonical reproduction gate passed:all3116 records byte-identical to source seeding; source warnings remain retained. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-a7c02b2a6d | Fresh deterministic review queue completed:8922 rows across12 queues. Queue output is not scientific-review coverage. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-a7c02b2a6d | Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking mismatches and4898no-adapter skips remain explicit. |
+| Full repository quality gate on the fresh main baseline | passed | True | naturalproductmech:mibig-a7c02b2a6d | Canonical just qc completed with actual terminal exit0:1024 tests passed,4 skipped,2 dependency warnings;3116 records passed closed schema validation, site freshness, byte reproduction and lockfile integrity.22 governed artifacts and15 raw inventories passed. Prior DNS failed001 remains preserved. |
+| Native strict target validation | passed | True | naturalproductmech:mibig-a7c02b2a6d | The selected owner passed the documented strict validator. This establishes configured consistency only. |
+| Saved two-encoding consistency | passed | True | naturalproductmech:mibig-a7c02b2a6d | Both retained encodings reproduce the declared full key, formula, fragment count and charge. Four specified tetrahedral sites and five InChI imidic flags remain distinct from experimental natural-identity proof. |
+| Whole local owner and retained source joins | passed | True | naturalproductmech:mibig-a7c02b2a6d | The whole owner and all seven retained plus two supplemental arrays match the original frozen inventory and exact source rows. Current official intake was reconciled separately. |
+| Exact-owner component content and graph scope | passed | True | naturalproductmech:mibig-a7c02b2a6d | Both complete components retain the same owner identifier and full key, with exact nodes, edges, histories and evidence text. The five resolved graphs preserve their separate species, reference and conditional scopes. |
+| Three current own article identities and original accesses | passed | True | naturalproductmech:mibig-a7c02b2a6d | The two PubMed ArticleIdList objects establish their own 2010 and 2016 DOI identities. The 2008 Crossref DOI remains a separate title-only source. All three complete HTTP 200 bodies/access receipts and ROOT reading times are retained separately; references are not own aliases. |
+| Selected saved PRE2 reference fields | passed | True | naturalproductmech:mibig-a7c02b2a6d | The reused own P30656 identifier, organism, chain/active-site features and 3D29 cross-reference match the original saved response. No new request or full-coordinate/sequence audit occurred. |
+| Full primary experimental evidence | unavailable | True | naturalproductmech:mibig-a7c02b2a6d | The original owner-recorded 2016 full-text-unobtained, 2010 browser-challenge and 2008 HTTP 500 primary holds remain. Current metadata retrieval does not clear those holds or establish Methods, figures, spectra, experimental material or construct details. |
+| Experimental donor and construct identity | unavailable | True | naturalproductmech:mibig-a7c02b2a6d | H37Rv/H37Ra metadata conflict, yeast preparation versus S288c reference, human donor/isoforms and deposited polymer versus complete assay construct remain unresolved. The abstract and selected reference fields do not close these gaps. |
+| Natural chemical identity and complete authority verification | unavailable | True | naturalproductmech:mibig-a7c02b2a6d | The free owner is internally consistent but exact natural stereochemistry and preparation have not been independently established. Apart from the bounded reused PRE2 fields, historical PDB/UniProt/sequence statements have not been renewed as current authority verification. |
+
+## Scientific And Domain Assessments
+
+### Free-compound encoding
+
+representation: supported. Targets: naturalproductmech:mibig-a7c02b2a6d.
+
+The declared fully specified free-aldehyde structure is reproduced by both saved encodings: C27H49N5O7, neutral, one fragment and four specified tetrahedral sites. The additional five InChI imidic flags do not contradict stereo_complete=true. This is an internal representation result.
+
+### Natural material and bound-adduct distinction
+
+identity: unknown. Targets: naturalproductmech:mibig-a7c02b2a6d.
+
+A free aldehyde and its protein-bound hemiacetal are chemically different states. The abstract reports R versus S at the newly formed bound center in mycobacterial versus yeast complexes; this does not assign another center to the free owner. Historical graph claims about adduct reversal, four retained centers and incomplete distal lipid density are not newly reproduced coordinate analyses or natural-isomer verification.
+
+### Species-level induced production
+
+provenance: supported. Targets: naturalproductmech:mibig-a7c02b2a6d.
+
+At abstract scope, activated expression of the Aspergillus nidulans inp cluster produced fellutamide B. This supports induced species-level production under the stated promoter-replacement context. It does not independently identify the retained FGSC A4 experimental strain or establish constitutive production under unrelated conditions. The LOTUS occurrence and MIBiG producer remain distinct source claims.
+
+### Exact source locus and citation placement
+
+provenance: unknown. Targets: naturalproductmech:mibig-a7c02b2a6d.
+
+The retained source places BGC0001399 version 4 at BN001302.1:3924000-3948000, with NRPS class, producer SOURCE_ASSERTION and locus CLUSTER_UNSTATED. Its 2008 citation is taken from COMPOUND_BIOACTIVITY. The current 2016 abstract supports a broad inp-cluster product link, but does not verify that exact stock, accession, interval, version or experimental allele; the 2008 title is not production evidence.
+
+### Conditional inpE producer resistance
+
+evidence: supported. Targets: naturalproductmech:mibig-a7c02b2a6d.
+
+The newly inspected abstract supports the retained conditional result: inpE deletion together with activation of inp-cluster expression demonstrated that inpE is required for resistance to internally produced fellutamide B. This is not a purified binding assay, a claim that InpE is inhibited, general drug susceptibility, or proof of an assembled resistant proteasome with exact native reference alleles.
+
+### Proposed biosynthesis and auxiliary roles
+
+evidence: unknown. Targets: naturalproductmech:mibig-a7c02b2a6d.
+
+The local InpC/InpB/InpA sequence remains an annotation-derived proposed assembly, with InpF transfer unresolved. ScpR transcriptional control does not alone establish productive activation, and InpD remains a possible resistance contributor without demonstrated export cargo. The abstract calls its pathway proposed; individual catalytic domains, substrate specificity, reductive release mechanism and native-reference allele equivalence are unverified.
+
+### Mycobacterial proteasome inhibition
+
+evidence: supported. Targets: naturalproductmech:mibig-a7c02b2a6d.
+
+PMID 20558127 supports abstract-level time-dependent inhibition of the M. tuberculosis proteasome by fellutamide B and reports a one-step binding mechanism. The target is the complex, not isolated precursor PrcB or the alpha subunit. Reported nanomolar values are preserved in the abstract as source reports, without a new measurement or condition-complete potency record; exact donor, kinetic construct, growth inhibition and bacterial killing are not established.
+
+### Human beta5 activity
+
+evidence: supported. Targets: naturalproductmech:mibig-a7c02b2a6d.
+
+The same abstract separately reports time-dependent human proteasome beta5 inhibition and a two-step mechanism. This supports the qualified complex-associated activity claim, not all proteasome sites, isolated PSMB5 precursor inhibition, canonical isoform identity, immunoproteasome beta5i, donor/tissue, or transfer of yeast covalent geometry. No quantitative value is adopted as a newly verified measurement.
+
+### Yeast structural association and donor scope
+
+evidence: unknown. Targets: naturalproductmech:mibig-a7c02b2a6d.
+
+The complete component retains six modeled covalent contacts across beta1/PRE3, beta2/PUP1 and beta5/PRE2, with the other eleven subunit types as members only. Those deposited-model claims were historically curated and are not newly verified from coordinates. S288c reference accessions do not establish the baker's-yeast donor. Shorter deposited PUP1 span, PRE4 initiation uncertainty and previously inactive deposit accessions remain unresolved; no irreversible-binding or all-subunit-binding claim is inferred.
+
+### Selected PRE2 reference context
+
+identity: supported. Targets: naturalproductmech:mibig-a7c02b2a6d.
+
+The cached own P30656 fields identify reviewed S288c PRE2/beta5 with mature chain 76-287 and active-site Thr76; the own cross-reference lists 3D29 chains K/Y over that span. This is a bounded reference-annotation match. It does not verify an experimental donor, complete construct, sequence alignment, coordinate contacts or another subunit by analogy.
+
+### 2008 nerve-growth-factor title
+
+evidence: unknown. Targets: naturalproductmech:mibig-a7c02b2a6d.
+
+The own 2008 title names proteasome inhibition and nerve growth factor synthesis, but no abstract is supplied. It cannot establish the cell type, causal mechanism, downstream phenotype, quantitative response or any producer claim. The historical failed primary route remains held, and the title is not transferred into the species-specific target graphs.
+
+### Qualified local causal coverage
+
+completeness: unknown. Targets: naturalproductmech:mibig-a7c02b2a6d.
+
+All three inline graphs and two referenced graphs are included in this reading, preserving source tiers and reference-versus-experiment distinctions. MIBiG NRPS is a source class; NPClassifier lipopeptide is a model prediction. Existing scope discussions remain material limitations rather than new defects. The available sources do not establish a new corrective finding or justify completing the omitted causal links.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| SCI708-LOCAL | /private/tmp/npm-review-work/shared-next-batch071-tentative/tentative-owner-source-inventory-001.json; /entries/7/owner_document; /entries/7/rows; /entries/7/supplemental_retained_rows; /entries/7/component_documents | context_only | The full fellutamide B owner retains three rows: one MIBiG compound, one LOTUS occurrence and one NPClassifier prediction. The six-array official source projection contains the same three rows; the PubChem array and two supplemental arrays are empty. Three inline graphs and two exact-owner graph components retain qualified producer, mycobacterial, yeast and human contexts. These are current local statements, including historical curation assertions, not renewed verification of every cited source. |
+| SCI708-CHEM | /private/tmp/npm-review-work/shared-next-batch071-tentative/source-science-preparation/root-tentative71-local-chemical-consistency-and-neighbors-001.json; /records/7/comparisons; /records/7/smiles; /records/7/inchi | supports | Saved RDKit 2026.03.5 results regenerate MFXAGCQVWGPEJH-LRSLUSHPSA-N from both retained encodings with formula C27H49N5O7, one fragment and zero formal charge. Both have four specified tetrahedral sites and no unspecified tetrahedral carbon. Five parsed-InChI C(-O)=N flags are imidic representations, not missing C=C configurations. This checks encoding consistency, not experimental natural identity or bound-adduct stereochemistry. |
+| SCI708-YEAST-COMPONENT | /private/tmp/npm-record-reviews-20261021/data/causal_graphs/MFXAGCQVWGPEJH-LRSLUSHPSA-N/fellutamide-b-yeast-proteasome-reference-assembly.yaml; /record_id; /standard_inchi_key; /graph; /curation_history | context_only | The complete exact-owner component fellutamide-b-yeast-proteasome-reference-assembly is retained with 19 nodes and 21 edges. Its 2026-10-12 curation assertions and source limits are read as historical record content. No deposited coordinates, native-reference sequences, experimental donor, complete construct or binding geometry have been reverified in this pass. |
+| SCI708-HUMAN-COMPONENT | /private/tmp/npm-record-reviews-20261021/data/causal_graphs/MFXAGCQVWGPEJH-LRSLUSHPSA-N/fellutamide-b-human-proteasome-beta5.yaml; /record_id; /standard_inchi_key; /graph; /curation_history | context_only | The complete exact-owner component fellutamide-b-human-proteasome-beta5 is retained with 4 nodes and 4 edges. Its 2026-10-12 curation assertions and source limits are read as historical record content. No deposited coordinates, native-reference sequences, experimental donor, complete construct or binding geometry have been reverified in this pass. |
+| SCI708-PM2010 | /private/tmp/npm-review-work/shared-next-batch071-tentative/literature-preparation/public-metadata-708-001/pmid-20558127.xml; ./PubmedArticle/MedlineCitation/PMID; ./PubmedArticle/MedlineCitation/Article/ArticleTitle; ./PubmedArticle/MedlineCitation/Article/Abstract; ./PubmedArticle/PubmedData/ArticleIdList | supports | The complete supplied abstract of PMID 20558127 explicitly names fellutamide B and reports time-dependent inhibition of M. tuberculosis proteasome and human proteasome beta5 activity. It distinguishes one-step and two-step kinetic mechanisms, reports Ki values, and describes different bound-hemiacetal configurations in mycobacterial and yeast structures. These are abstract-level reported results; assay conditions, donor strains, constructs, coordinate quality and free natural stereochemistry were not inspected or independently measured. |
+| SCI708-PM2016 | /private/tmp/npm-review-work/shared-next-batch071-tentative/literature-preparation/public-metadata-708-001/pmid-27294372.xml; ./PubmedArticle/MedlineCitation/PMID; ./PubmedArticle/MedlineCitation/Article/ArticleTitle; ./PubmedArticle/MedlineCitation/Article/Abstract; ./PubmedArticle/PubmedData/ArticleIdList | supports | The supplied abstract of PMID 27294372 reports that sequential promoter replacement enabled inp-cluster expression in Aspergillus nidulans, producing fellutamide B. Combining inpE deletion with activated cluster expression demonstrated a requirement for resistance to internally produced fellutamide B. The pathway remains proposed in this abstract; exact strain, alleles, individual enzyme mechanisms, experimental chemical configuration and quantitative phenotype remain unverified. |
+| SCI708-CR2008 | /private/tmp/npm-review-work/shared-next-batch071-tentative/literature-preparation/public-metadata-708-crossref-001/doi-chembiol-2008-03-020.json; /message/DOI; /message/title; /message/abstract (absent) | context_only | Own Crossref DOI 10.1016/j.chembiol.2008.03.020 has the title Proteasome Inhibition by Fellutamide B Induces Nerve Growth Factor Synthesis, but supplies no abstract. The title alone does not establish a cell type, causal chain, dose, NGF mechanism, yeast donor or experimental material. It is separate from the own 2010 and 2016 DOI identities. |
+| SCI708-PRE2 | /private/tmp/npm-review-work/shared-next-batch070-tentative/literature-preparation/public-assay-structure-001/P30656.json; /primaryAccession; /entryAudit; /proteinDescription; /genes; /organism; /features; /uniProtKBCrossReferences | supports | The selected fields of the previously captured P30656 response identify reviewed PRE2/beta5, a Saccharomyces cerevisiae S288c reference, with propeptide 1-75, mature chain 76-287, nucleophile Thr76 and a 3D29 K/Y=76-287 cross-reference. This reuses the original HTTP body and clock. It supports reference annotation only, not independent 3D29 coordinate evidence, an experimentally verified S288c donor, a full sequence alignment or a fellutamide binding assay; other response fields were not newly interpreted. |
+| SCI708-ROOT-CHEM-READ | /private/tmp/npm-review-work/shared-next-batch071-tentative/source-science-preparation/root-tentative71-local-chemical-reading-001.json; /records/7; /interpretation; /scope | context_only | ROOT read the saved chemical results and their bounded interpretation. This reading is distinct from the original computation interval and does not add a natural-identity or new-calculation claim. |
+
+## Limits And Additional Notes
+
+- The current primary-paper evidence is limited to two supplied abstracts and one title-only Crossref record. Full text, Methods, figures, spectra and experimental material were not inspected; the three historical primary holds remain.
+- All graph components were read as local curation content. Historical PDB/UniProt/sequence verification claims are not renewed, except for explicitly selected fields of the reused P30656 body. No coordinates or complete reference sequences were reanalysed.
+- Reference strain and mature-chain annotations do not establish experimental donor, allele, kinetic construct, isoform or physiological initiation. Species-level inhibition and producer-resistance contexts remain separate.
+- Original owner capture, ROOT reading, chemical computation, HTTP access and later interpretation clocks are retained separately. Full-owner scientific verification remains false. Official selection and intake were reconciled separately; this report records ROOT’s bounded scientific adjudication.
+- Configured consistency only; independent scientific claim support and unrestricted remote authority refresh are not implied.
+- FailedQC001 is retained for an explicit separate network-enabled retry; no artifact will be overwritten.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint and before downstream tests. Its actual exit1/log/input capture/root observation remain pinned; the selected successful canonical QC attempt002 is separately timed. No individual-review validation failure or counter reset is claimed.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings; this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions and no-adapter pairs; a successful command does not convert these into verified scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population was checked; external caches and generated bytecode are not asserted to be independently byte-pinned.
+- The whole local owner and retained source rows were read. Full-owner scientific verification remains false; scientific_review denotes the bounded scientific interpretation in this report.
+- Original owner/source reading, two-encoding computation, neighbor inspection, HTTP retrieval and later metadata reading retain separate clocks. Official intake separately computed SMILES facts.
+- No scientific record, maintained input or native curation status was changed. Any findings and actions record ROOT-adopted proposed work; exact-source limitations and unavailable checks remain explicit.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261027T191017Z-fellutamide-b
+title: Scientific review of fellutamide B
+started_at: '2026-10-27T19:09:37.788403Z'
+finished_at: '2026-10-27T19:10:17.502609Z'
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: Fellutamide B has internally consistent, fully specified free-compound encodings.
+  Newly inspected abstracts support qualified mycobacterial and human proteasome inhibition,
+  induced Aspergillus nidulans production and conditional inpE resistance. Five local
+  graphs retain distinct species, reference and adduct scopes; exact natural material,
+  donor/construct identity and full primary methods remain unresolved.
+source:
+  git_revision: 14373517042b407747272446f79953ae86d51fa4
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/causal_graphs/MFXAGCQVWGPEJH-LRSLUSHPSA-N/fellutamide-b-human-proteasome-beta5.yaml
+    sha256: 40d86c407f4b096c2bb420ba990514e75b75b53d1b037050bd1bab65ef1a27d5
+    role: context
+  - path: data/causal_graphs/MFXAGCQVWGPEJH-LRSLUSHPSA-N/fellutamide-b-yeast-proteasome-reference-assembly.yaml
+    sha256: 2335c5239de518e0176ff7e9517e0aec081a13b3ced06bb61c9b78b68b2f26e5
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/fellutamide-b.yaml
+    sha256: 2bb25c438fbbad19875d18f96215635ef07eba4bdcc368a4b6a2fdfa383fef8f
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+targets:
+- target_id: naturalproductmech:mibig-a7c02b2a6d
+  path: data/natural_products/amino_acids_and_peptides/fellutamide-b.yaml
+  label: fellutamide B
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/amino_acids_and_peptides/fellutamide-b.yaml
+    role: Curator-owned assertions, inline mechanisms, discussions and audit history
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/MFXAGCQVWGPEJH-LRSLUSHPSA-N/fellutamide-b-yeast-proteasome-reference-assembly.yaml
+    role: Curator-owned external causal-graph component and audit history
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/MFXAGCQVWGPEJH-LRSLUSHPSA-N/fellutamide-b-human-proteasome-beta5.yaml
+    role: Curator-owned external causal-graph component and audit history
+scope:
+  description: Review fellutamide B identity and all three inline and two referenced
+    graphs, with exact retained source rows, local chemical encodings, inspected 2010/2016
+    abstracts, 2008 title-only bibliography and selected cached PRE2 reference fields.
+    Distinguish free compound from proteasome adducts, reference sequences from experimental
+    donors, and conditional fungal self-resistance from direct target inhibition.
+  selection: One owner selected in canonical unreviewed path order as campaign review
+    708; whole retained owner, referenced components and local source rows read, with
+    bounded scientific interpretation.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-a7c02b2a6d
+  exclusions:
+  - target: Uninspected experiments and external authority claims
+    reason: The three recorded historical primary-access limitations remain unresolved.
+      Current metadata and reference annotations do not establish full experimental
+      donor/construct sequences, coordinate contacts, complete pathway operation,
+      condition-complete inhibition measurements or the 2008 mechanism details. Reference-complex
+      membership is not compound binding at every subunit.
+  - target: Whole-owner scientific verification
+    reason: The complete local owner and retained rows were read, but full-owner scientific
+      verification remains false. This report assesses the explicitly bounded evidence;
+      configured validation does not establish all natural-product claims.
+checks:
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its
+    pinned path.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-corpus-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.783967Z;
+    finished 2026-10-25T22:37:16.453216Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.log.
+    Reused for batch071 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch071. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-a7c02b2a6d
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: Fresh canonical reproduction gate passed:all3116 records byte-identical
+    to source seeding; source warnings remain retained.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-reproduction-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784055Z;
+    finished 2026-10-25T22:37:31.682209Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.log.
+    Reused for batch071 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch071. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-a7c02b2a6d
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: Fresh deterministic review queue completed:8922 rows across12 queues. Queue
+    output is not scientific-review coverage.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-review-queue-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just review-queue --tsv /private/tmp/npm-review-queue-batch-036-fresh14373517-001.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.781802Z;
+    finished 2026-10-25T22:37:08.229737Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.log.
+    Reused for batch071 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch071. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-a7c02b2a6d
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking
+    mismatches and4898no-adapter skips remain explicit.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-validate-products-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784040Z;
+    finished 2026-10-25T22:37:32.251879Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.log.
+    Reused for batch071 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch071. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-a7c02b2a6d
+- check_id: shared-qc
+  name: Full repository quality gate on the fresh main baseline
+  status: passed
+  required: true
+  summary: Canonical just qc completed with actual terminal exit0:1024 tests passed,4
+    skipped,2 dependency warnings;3116 records passed closed schema validation, site
+    freshness, byte reproduction and lockfile integrity.22 governed artifacts and15
+    raw inventories passed. Prior DNS failed001 remains preserved.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-qc-attempt-002
+    PYTHONDONTWRITEBYTECODE=1 just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-002 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:40:55.179857Z;
+    finished 2026-10-25T22:46:28.974296Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.log.
+    Reused for batch071 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch071. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-a7c02b2a6d
+- check_id: C-STRICT
+  name: Native strict target validation
+  status: passed
+  required: true
+  summary: The selected owner passed the documented strict validator. This establishes
+    configured consistency only.
+  command: just validate-strict data/natural_products/amino_acids_and_peptides/fellutamide-b.yaml
+    --out /private/tmp/npm-review-work/708/strict.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Actual intake execution finished 2026-10-27T19:09:39.506668Z. Original
+    receipt: /private/tmp/npm-review-work/708/strict-receipt.json.'
+  target_ids:
+  - naturalproductmech:mibig-a7c02b2a6d
+- check_id: SCI708-ENCODING
+  name: Saved two-encoding consistency
+  status: passed
+  required: true
+  summary: Both retained encodings reproduce the declared full key, formula, fragment
+    count and charge. Four specified tetrahedral sites and five InChI imidic flags
+    remain distinct from experimental natural-identity proof.
+  evidence_ids:
+  - SCI708-CHEM
+  target_ids:
+  - naturalproductmech:mibig-a7c02b2a6d
+- check_id: SCI708-SOURCE-JOINS
+  name: Whole local owner and retained source joins
+  status: passed
+  required: true
+  summary: The whole owner and all seven retained plus two supplemental arrays match
+    the original frozen inventory and exact source rows. Current official intake was
+    reconciled separately.
+  evidence_ids:
+  - SCI708-LOCAL
+  target_ids:
+  - naturalproductmech:mibig-a7c02b2a6d
+- check_id: SCI708-COMPONENTS
+  name: Exact-owner component content and graph scope
+  status: passed
+  required: true
+  summary: Both complete components retain the same owner identifier and full key,
+    with exact nodes, edges, histories and evidence text. The five resolved graphs
+    preserve their separate species, reference and conditional scopes.
+  evidence_ids:
+  - SCI708-LOCAL
+  - SCI708-YEAST-COMPONENT
+  - SCI708-HUMAN-COMPONENT
+  target_ids:
+  - naturalproductmech:mibig-a7c02b2a6d
+- check_id: SCI708-OWN-IDS
+  name: Three current own article identities and original accesses
+  status: passed
+  required: true
+  summary: The two PubMed ArticleIdList objects establish their own 2010 and 2016
+    DOI identities. The 2008 Crossref DOI remains a separate title-only source. All
+    three complete HTTP 200 bodies/access receipts and ROOT reading times are retained
+    separately; references are not own aliases.
+  evidence_ids:
+  - SCI708-PM2010
+  - SCI708-PM2016
+  - SCI708-CR2008
+  target_ids:
+  - naturalproductmech:mibig-a7c02b2a6d
+- check_id: SCI708-REFERENCE
+  name: Selected saved PRE2 reference fields
+  status: passed
+  required: true
+  summary: The reused own P30656 identifier, organism, chain/active-site features
+    and 3D29 cross-reference match the original saved response. No new request or
+    full-coordinate/sequence audit occurred.
+  evidence_ids:
+  - SCI708-PRE2
+  target_ids:
+  - naturalproductmech:mibig-a7c02b2a6d
+- check_id: SCI708-PRIMARY
+  name: Full primary experimental evidence
+  status: unavailable
+  required: true
+  summary: The original owner-recorded 2016 full-text-unobtained, 2010 browser-challenge
+    and 2008 HTTP 500 primary holds remain. Current metadata retrieval does not clear
+    those holds or establish Methods, figures, spectra, experimental material or construct
+    details.
+  evidence_ids:
+  - SCI708-PM2010
+  - SCI708-PM2016
+  - SCI708-CR2008
+  - SCI708-LOCAL
+  target_ids:
+  - naturalproductmech:mibig-a7c02b2a6d
+- check_id: SCI708-DONOR
+  name: Experimental donor and construct identity
+  status: unavailable
+  required: true
+  summary: H37Rv/H37Ra metadata conflict, yeast preparation versus S288c reference,
+    human donor/isoforms and deposited polymer versus complete assay construct remain
+    unresolved. The abstract and selected reference fields do not close these gaps.
+  evidence_ids:
+  - SCI708-LOCAL
+  - SCI708-YEAST-COMPONENT
+  - SCI708-HUMAN-COMPONENT
+  - SCI708-PM2010
+  target_ids:
+  - naturalproductmech:mibig-a7c02b2a6d
+- check_id: SCI708-NATURAL
+  name: Natural chemical identity and complete authority verification
+  status: unavailable
+  required: true
+  summary: The free owner is internally consistent but exact natural stereochemistry
+    and preparation have not been independently established. Apart from the bounded
+    reused PRE2 fields, historical PDB/UniProt/sequence statements have not been renewed
+    as current authority verification.
+  evidence_ids:
+  - SCI708-CHEM
+  - SCI708-PRE2
+  - SCI708-LOCAL
+  target_ids:
+  - naturalproductmech:mibig-a7c02b2a6d
+evidence:
+- evidence_id: SCI708-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch071-tentative/tentative-owner-source-inventory-001.json
+  accessed_at: '2026-10-27T18:13:33.034829Z'
+  locator: /entries/7/owner_document; /entries/7/rows; /entries/7/supplemental_retained_rows;
+    /entries/7/component_documents
+  snapshot_sha256: 53f900bba3e6dfe54d07ff9a08cd5fb64593163e809ecbeaa6748b322a48f883
+  support: context_only
+  summary: 'The full fellutamide B owner retains three rows: one MIBiG compound, one
+    LOTUS occurrence and one NPClassifier prediction. The six-array official source
+    projection contains the same three rows; the PubChem array and two supplemental
+    arrays are empty. Three inline graphs and two exact-owner graph components retain
+    qualified producer, mycobacterial, yeast and human contexts. These are current
+    local statements, including historical curation assertions, not renewed verification
+    of every cited source.'
+- evidence_id: SCI708-CHEM
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch071-tentative/source-science-preparation/root-tentative71-local-chemical-consistency-and-neighbors-001.json
+  accessed_at: '2026-10-27T18:15:48.609294Z'
+  locator: /records/7/comparisons; /records/7/smiles; /records/7/inchi
+  snapshot_sha256: 3c7b05f7372948747c603d7b006b1e20dfb7e1e51dde5710676c02b15320ca4a
+  support: supports
+  summary: Saved RDKit 2026.03.5 results regenerate MFXAGCQVWGPEJH-LRSLUSHPSA-N from
+    both retained encodings with formula C27H49N5O7, one fragment and zero formal
+    charge. Both have four specified tetrahedral sites and no unspecified tetrahedral
+    carbon. Five parsed-InChI C(-O)=N flags are imidic representations, not missing
+    C=C configurations. This checks encoding consistency, not experimental natural
+    identity or bound-adduct stereochemistry.
+- evidence_id: SCI708-YEAST-COMPONENT
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/causal_graphs/MFXAGCQVWGPEJH-LRSLUSHPSA-N/fellutamide-b-yeast-proteasome-reference-assembly.yaml
+  accessed_at: '2026-10-27T18:13:33.034829Z'
+  locator: /record_id; /standard_inchi_key; /graph; /curation_history
+  snapshot_sha256: 2335c5239de518e0176ff7e9517e0aec081a13b3ced06bb61c9b78b68b2f26e5
+  support: context_only
+  summary: The complete exact-owner component fellutamide-b-yeast-proteasome-reference-assembly
+    is retained with 19 nodes and 21 edges. Its 2026-10-12 curation assertions and
+    source limits are read as historical record content. No deposited coordinates,
+    native-reference sequences, experimental donor, complete construct or binding
+    geometry have been reverified in this pass.
+- evidence_id: SCI708-HUMAN-COMPONENT
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/causal_graphs/MFXAGCQVWGPEJH-LRSLUSHPSA-N/fellutamide-b-human-proteasome-beta5.yaml
+  accessed_at: '2026-10-27T18:13:33.034829Z'
+  locator: /record_id; /standard_inchi_key; /graph; /curation_history
+  snapshot_sha256: 40d86c407f4b096c2bb420ba990514e75b75b53d1b037050bd1bab65ef1a27d5
+  support: context_only
+  summary: The complete exact-owner component fellutamide-b-human-proteasome-beta5
+    is retained with 4 nodes and 4 edges. Its 2026-10-12 curation assertions and source
+    limits are read as historical record content. No deposited coordinates, native-reference
+    sequences, experimental donor, complete construct or binding geometry have been
+    reverified in this pass.
+- evidence_id: SCI708-PM2010
+  kind: primary_source
+  reference: /private/tmp/npm-review-work/shared-next-batch071-tentative/literature-preparation/public-metadata-708-001/pmid-20558127.xml
+  accessed_at: '2026-10-27T18:37:31.727295Z'
+  locator: ./PubmedArticle/MedlineCitation/PMID; ./PubmedArticle/MedlineCitation/Article/ArticleTitle;
+    ./PubmedArticle/MedlineCitation/Article/Abstract; ./PubmedArticle/PubmedData/ArticleIdList
+  snapshot_sha256: 7eff6d585bd718093433a006c884b2d5dc341ce452dcae98d840e3cc30a37852
+  support: supports
+  summary: The complete supplied abstract of PMID 20558127 explicitly names fellutamide
+    B and reports time-dependent inhibition of M. tuberculosis proteasome and human
+    proteasome beta5 activity. It distinguishes one-step and two-step kinetic mechanisms,
+    reports Ki values, and describes different bound-hemiacetal configurations in
+    mycobacterial and yeast structures. These are abstract-level reported results;
+    assay conditions, donor strains, constructs, coordinate quality and free natural
+    stereochemistry were not inspected or independently measured.
+- evidence_id: SCI708-PM2016
+  kind: primary_source
+  reference: /private/tmp/npm-review-work/shared-next-batch071-tentative/literature-preparation/public-metadata-708-001/pmid-27294372.xml
+  accessed_at: '2026-10-27T18:38:10.196904Z'
+  locator: ./PubmedArticle/MedlineCitation/PMID; ./PubmedArticle/MedlineCitation/Article/ArticleTitle;
+    ./PubmedArticle/MedlineCitation/Article/Abstract; ./PubmedArticle/PubmedData/ArticleIdList
+  snapshot_sha256: eb1152c8b9ab1accf44e20ca377fa97bb38f041443ea5103b973877351656d40
+  support: supports
+  summary: The supplied abstract of PMID 27294372 reports that sequential promoter
+    replacement enabled inp-cluster expression in Aspergillus nidulans, producing
+    fellutamide B. Combining inpE deletion with activated cluster expression demonstrated
+    a requirement for resistance to internally produced fellutamide B. The pathway
+    remains proposed in this abstract; exact strain, alleles, individual enzyme mechanisms,
+    experimental chemical configuration and quantitative phenotype remain unverified.
+- evidence_id: SCI708-CR2008
+  kind: primary_source
+  reference: /private/tmp/npm-review-work/shared-next-batch071-tentative/literature-preparation/public-metadata-708-crossref-001/doi-chembiol-2008-03-020.json
+  accessed_at: '2026-10-27T18:39:10.600412Z'
+  locator: /message/DOI; /message/title; /message/abstract (absent)
+  snapshot_sha256: 472cefd564061ffed29950bb8c334474c0d840823f45179305e666ba5f01652a
+  support: context_only
+  summary: Own Crossref DOI 10.1016/j.chembiol.2008.03.020 has the title Proteasome
+    Inhibition by Fellutamide B Induces Nerve Growth Factor Synthesis, but supplies
+    no abstract. The title alone does not establish a cell type, causal chain, dose,
+    NGF mechanism, yeast donor or experimental material. It is separate from the own
+    2010 and 2016 DOI identities.
+- evidence_id: SCI708-PRE2
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch070-tentative/literature-preparation/public-assay-structure-001/P30656.json
+  accessed_at: '2026-10-27T17:45:39.424194Z'
+  locator: /primaryAccession; /entryAudit; /proteinDescription; /genes; /organism;
+    /features; /uniProtKBCrossReferences
+  snapshot_sha256: 96ebfae67dfa532e7d9da2c1c3555d0ee2b904aa3de5ac8c2662f218324a4e61
+  support: supports
+  summary: The selected fields of the previously captured P30656 response identify
+    reviewed PRE2/beta5, a Saccharomyces cerevisiae S288c reference, with propeptide
+    1-75, mature chain 76-287, nucleophile Thr76 and a 3D29 K/Y=76-287 cross-reference.
+    This reuses the original HTTP body and clock. It supports reference annotation
+    only, not independent 3D29 coordinate evidence, an experimentally verified S288c
+    donor, a full sequence alignment or a fellutamide binding assay; other response
+    fields were not newly interpreted.
+- evidence_id: SCI708-ROOT-CHEM-READ
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch071-tentative/source-science-preparation/root-tentative71-local-chemical-reading-001.json
+  accessed_at: '2026-10-27T18:16:57.571265Z'
+  locator: /records/7; /interpretation; /scope
+  snapshot_sha256: 20cbb5354832895441e3a6f8dc8fd0aa56c639782c708dd620345bd55ae363fb
+  support: context_only
+  summary: ROOT read the saved chemical results and their bounded interpretation.
+    This reading is distinct from the original computation interval and does not add
+    a natural-identity or new-calculation claim.
+assessments:
+- assessment_id: SCI708-ENCODING
+  area: representation
+  topic: Free-compound encoding
+  outcome: supported
+  summary: 'The declared fully specified free-aldehyde structure is reproduced by
+    both saved encodings: C27H49N5O7, neutral, one fragment and four specified tetrahedral
+    sites. The additional five InChI imidic flags do not contradict stereo_complete=true.
+    This is an internal representation result.'
+  evidence_ids:
+  - SCI708-CHEM
+  - SCI708-ROOT-CHEM-READ
+  target_ids:
+  - naturalproductmech:mibig-a7c02b2a6d
+- assessment_id: SCI708-NATURAL
+  area: identity
+  topic: Natural material and bound-adduct distinction
+  outcome: unknown
+  summary: A free aldehyde and its protein-bound hemiacetal are chemically different
+    states. The abstract reports R versus S at the newly formed bound center in mycobacterial
+    versus yeast complexes; this does not assign another center to the free owner.
+    Historical graph claims about adduct reversal, four retained centers and incomplete
+    distal lipid density are not newly reproduced coordinate analyses or natural-isomer
+    verification.
+  evidence_ids:
+  - SCI708-CHEM
+  - SCI708-PM2010
+  - SCI708-LOCAL
+  target_ids:
+  - naturalproductmech:mibig-a7c02b2a6d
+- assessment_id: SCI708-PRODUCTION
+  area: provenance
+  topic: Species-level induced production
+  outcome: supported
+  summary: At abstract scope, activated expression of the Aspergillus nidulans inp
+    cluster produced fellutamide B. This supports induced species-level production
+    under the stated promoter-replacement context. It does not independently identify
+    the retained FGSC A4 experimental strain or establish constitutive production
+    under unrelated conditions. The LOTUS occurrence and MIBiG producer remain distinct
+    source claims.
+  evidence_ids:
+  - SCI708-PM2016
+  - SCI708-LOCAL
+  target_ids:
+  - naturalproductmech:mibig-a7c02b2a6d
+- assessment_id: SCI708-LOCUS
+  area: provenance
+  topic: Exact source locus and citation placement
+  outcome: unknown
+  summary: The retained source places BGC0001399 version 4 at BN001302.1:3924000-3948000,
+    with NRPS class, producer SOURCE_ASSERTION and locus CLUSTER_UNSTATED. Its 2008
+    citation is taken from COMPOUND_BIOACTIVITY. The current 2016 abstract supports
+    a broad inp-cluster product link, but does not verify that exact stock, accession,
+    interval, version or experimental allele; the 2008 title is not production evidence.
+  evidence_ids:
+  - SCI708-LOCAL
+  - SCI708-PM2016
+  - SCI708-CR2008
+  target_ids:
+  - naturalproductmech:mibig-a7c02b2a6d
+- assessment_id: SCI708-RESISTANCE
+  area: evidence
+  topic: Conditional inpE producer resistance
+  outcome: supported
+  summary: 'The newly inspected abstract supports the retained conditional result:
+    inpE deletion together with activation of inp-cluster expression demonstrated
+    that inpE is required for resistance to internally produced fellutamide B. This
+    is not a purified binding assay, a claim that InpE is inhibited, general drug
+    susceptibility, or proof of an assembled resistant proteasome with exact native
+    reference alleles.'
+  evidence_ids:
+  - SCI708-PM2016
+  - SCI708-LOCAL
+  target_ids:
+  - naturalproductmech:mibig-a7c02b2a6d
+- assessment_id: SCI708-ASSEMBLY
+  area: evidence
+  topic: Proposed biosynthesis and auxiliary roles
+  outcome: unknown
+  summary: The local InpC/InpB/InpA sequence remains an annotation-derived proposed
+    assembly, with InpF transfer unresolved. ScpR transcriptional control does not
+    alone establish productive activation, and InpD remains a possible resistance
+    contributor without demonstrated export cargo. The abstract calls its pathway
+    proposed; individual catalytic domains, substrate specificity, reductive release
+    mechanism and native-reference allele equivalence are unverified.
+  evidence_ids:
+  - SCI708-LOCAL
+  - SCI708-PM2016
+  target_ids:
+  - naturalproductmech:mibig-a7c02b2a6d
+- assessment_id: SCI708-MTB
+  area: evidence
+  topic: Mycobacterial proteasome inhibition
+  outcome: supported
+  summary: PMID 20558127 supports abstract-level time-dependent inhibition of the
+    M. tuberculosis proteasome by fellutamide B and reports a one-step binding mechanism.
+    The target is the complex, not isolated precursor PrcB or the alpha subunit. Reported
+    nanomolar values are preserved in the abstract as source reports, without a new
+    measurement or condition-complete potency record; exact donor, kinetic construct,
+    growth inhibition and bacterial killing are not established.
+  evidence_ids:
+  - SCI708-PM2010
+  - SCI708-LOCAL
+  target_ids:
+  - naturalproductmech:mibig-a7c02b2a6d
+- assessment_id: SCI708-HUMAN
+  area: evidence
+  topic: Human beta5 activity
+  outcome: supported
+  summary: The same abstract separately reports time-dependent human proteasome beta5
+    inhibition and a two-step mechanism. This supports the qualified complex-associated
+    activity claim, not all proteasome sites, isolated PSMB5 precursor inhibition,
+    canonical isoform identity, immunoproteasome beta5i, donor/tissue, or transfer
+    of yeast covalent geometry. No quantitative value is adopted as a newly verified
+    measurement.
+  evidence_ids:
+  - SCI708-PM2010
+  - SCI708-HUMAN-COMPONENT
+  target_ids:
+  - naturalproductmech:mibig-a7c02b2a6d
+- assessment_id: SCI708-YEAST
+  area: evidence
+  topic: Yeast structural association and donor scope
+  outcome: unknown
+  summary: The complete component retains six modeled covalent contacts across beta1/PRE3,
+    beta2/PUP1 and beta5/PRE2, with the other eleven subunit types as members only.
+    Those deposited-model claims were historically curated and are not newly verified
+    from coordinates. S288c reference accessions do not establish the baker's-yeast
+    donor. Shorter deposited PUP1 span, PRE4 initiation uncertainty and previously
+    inactive deposit accessions remain unresolved; no irreversible-binding or all-subunit-binding
+    claim is inferred.
+  evidence_ids:
+  - SCI708-YEAST-COMPONENT
+  - SCI708-PM2010
+  - SCI708-PRE2
+  target_ids:
+  - naturalproductmech:mibig-a7c02b2a6d
+- assessment_id: SCI708-PRE2
+  area: identity
+  topic: Selected PRE2 reference context
+  outcome: supported
+  summary: The cached own P30656 fields identify reviewed S288c PRE2/beta5 with mature
+    chain 76-287 and active-site Thr76; the own cross-reference lists 3D29 chains
+    K/Y over that span. This is a bounded reference-annotation match. It does not
+    verify an experimental donor, complete construct, sequence alignment, coordinate
+    contacts or another subunit by analogy.
+  evidence_ids:
+  - SCI708-PRE2
+  target_ids:
+  - naturalproductmech:mibig-a7c02b2a6d
+- assessment_id: SCI708-NGF
+  area: evidence
+  topic: 2008 nerve-growth-factor title
+  outcome: unknown
+  summary: The own 2008 title names proteasome inhibition and nerve growth factor
+    synthesis, but no abstract is supplied. It cannot establish the cell type, causal
+    mechanism, downstream phenotype, quantitative response or any producer claim.
+    The historical failed primary route remains held, and the title is not transferred
+    into the species-specific target graphs.
+  evidence_ids:
+  - SCI708-CR2008
+  target_ids:
+  - naturalproductmech:mibig-a7c02b2a6d
+- assessment_id: SCI708-COVERAGE
+  area: completeness
+  topic: Qualified local causal coverage
+  outcome: unknown
+  summary: All three inline graphs and two referenced graphs are included in this
+    reading, preserving source tiers and reference-versus-experiment distinctions.
+    MIBiG NRPS is a source class; NPClassifier lipopeptide is a model prediction.
+    Existing scope discussions remain material limitations rather than new defects.
+    The available sources do not establish a new corrective finding or justify completing
+    the omitted causal links.
+  evidence_ids:
+  - SCI708-LOCAL
+  - SCI708-YEAST-COMPONENT
+  - SCI708-HUMAN-COMPONENT
+  target_ids:
+  - naturalproductmech:mibig-a7c02b2a6d
+findings: []
+actions: []
+limitations:
+- The current primary-paper evidence is limited to two supplied abstracts and one
+  title-only Crossref record. Full text, Methods, figures, spectra and experimental
+  material were not inspected; the three historical primary holds remain.
+- All graph components were read as local curation content. Historical PDB/UniProt/sequence
+  verification claims are not renewed, except for explicitly selected fields of the
+  reused P30656 body. No coordinates or complete reference sequences were reanalysed.
+- Reference strain and mature-chain annotations do not establish experimental donor,
+  allele, kinetic construct, isoform or physiological initiation. Species-level inhibition
+  and producer-resistance contexts remain separate.
+- Original owner capture, ROOT reading, chemical computation, HTTP access and later
+  interpretation clocks are retained separately. Full-owner scientific verification
+  remains false. Official selection and intake were reconciled separately; this report
+  records ROOT’s bounded scientific adjudication.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- FailedQC001 is retained for an explicit separate network-enabled retry; no artifact
+  will be overwritten.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint
+  and before downstream tests. Its actual exit1/log/input capture/root observation
+  remain pinned; the selected successful canonical QC attempt002 is separately timed.
+  No individual-review validation failure or counter reset is claimed.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter
+  skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings;
+  this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld
+  nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological
+  or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological
+  production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions
+  and no-adapter pairs; a successful command does not convert these into verified
+  scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command
+  execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population
+  was checked; external caches and generated bytecode are not asserted to be independently
+  byte-pinned.
+notes:
+- The whole local owner and retained source rows were read. Full-owner scientific
+  verification remains false; scientific_review denotes the bounded scientific interpretation
+  in this report.
+- Original owner/source reading, two-encoding computation, neighbor inspection, HTTP
+  retrieval and later metadata reading retain separate clocks. Official intake separately
+  computed SMILES facts.
+- No scientific record, maintained input or native curation status was changed. Any
+  findings and actions record ROOT-adopted proposed work; exact-source limitations
+  and unavailable checks remain explicit.
+```
