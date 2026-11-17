@@ -1,0 +1,675 @@
+# Scientific review of cystomanamide B
+
+- Review: 20261027T144011Z-cystomanamide-b
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-27T14:38:47.340621Z
+- Finished UTC: 2026-10-27T14:40:11.930598Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The complete own PMID 24735013 abstract explicitly includes cystomanamide B within the isolated cystomanamides A–D from Cystobacter fuscus MCy9118. It reports spectroscopic structure elucidation, but the exact retained full key and absolute configuration are not recoverable from this abstract alone. N-glycosylation support is restricted to C/D. Retained encoding consistency is supported; full natural identity and current authority scopes remain open.
+
+## Scope And Provenance
+
+Complete retained owner and source-row reading, local encoding checks, and bounded scientific interpretation of inspected publication metadata and supplied abstracts.
+
+Selection: One resolved record in canonical path order from the unreviewed corpus; actual official intake reconciled to retained evidence.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 14373517042b407747272446f79953ae86d51fa4.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-3a7c795f88 | data/natural_products/amino_acids_and_peptides/cystomanamide-b.yaml | generated | cystomanamide B |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-3a7c795f88 | Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its pinned path. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-3a7c795f88 | Fresh canonical reproduction gate passed:all3116 records byte-identical to source seeding; source warnings remain retained. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-3a7c795f88 | Fresh deterministic review queue completed:8922 rows across12 queues. Queue output is not scientific-review coverage. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-3a7c795f88 | Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking mismatches and4898no-adapter skips remain explicit. |
+| Full repository quality gate on the fresh main baseline | passed | True | naturalproductmech:mibig-3a7c795f88 | Canonical just qc completed with actual terminal exit0:1024 tests passed,4 skipped,2 dependency warnings;3116 records passed closed schema validation, site freshness, byte reproduction and lockfile integrity.22 governed artifacts and15 raw inventories passed. Prior DNS failed001 remains preserved. |
+| Native strict target validation | passed | True | naturalproductmech:mibig-3a7c795f88 | The selected owner passed the documented strict validator. This establishes configured consistency only. |
+| Saved local two-encoding consistency | passed | True | naturalproductmech:mibig-3a7c795f88 | Saved RDKit 2026.03.5 results regenerate XVVKSDYJVOKNQB-YUSBRPJASA-N from both retained encodings, with formula C40H57N7O14, one fragment and formal charge zero. Both representations assign all 8 detected tetrahedral sites. This supports internal encoding consistency; it does not verify the isolated natural stereoisomer. The 6 extra unspecified double-bond observations occur only after InChI parsing; the saved local neighbor objects identify C(-O)=N environments. They do not establish missing natural C=C geometry or missing tetrahedral assignments. No configuration is filled from this diagnostic. |
+| Own PMID/DOI and complete returned abstract | passed | True | naturalproductmech:mibig-3a7c795f88 | The exact cached successful response has own PMID 24735013 and DOI10.1021/ol500779s. Original HTTP and later ROOT reading clocks remain separately retained. |
+| Exact natural material and current authority verification | unavailable | True | naturalproductmech:mibig-3a7c795f88 | The full primary/SI, current authority records and exact locus/structure assignments have not been verified. Local consistency and abstract support do not close those scopes. |
+
+## Scientific And Domain Assessments
+
+### Named congener and isolation source at abstract tier
+
+evidence: supported. Targets: naturalproductmech:mibig-3a7c795f88.
+
+The complete own PMID 24735013 abstract explicitly includes cystomanamide B within the isolated cystomanamides A–D from Cystobacter fuscus MCy9118. It reports spectroscopic structure elucidation, but the exact retained full key and absolute configuration are not recoverable from this abstract alone.
+
+### Retained full-key, formula and stereochemical representation
+
+representation: supported. Targets: naturalproductmech:mibig-3a7c795f88.
+
+Saved RDKit 2026.03.5 results regenerate XVVKSDYJVOKNQB-YUSBRPJASA-N from both retained encodings, with formula C40H57N7O14, one fragment and formal charge zero. Both representations assign all 8 detected tetrahedral sites. This supports internal encoding consistency; it does not verify the isolated natural stereoisomer. The 6 extra unspecified double-bond observations occur only after InChI parsing; the saved local neighbor objects identify C(-O)=N environments. They do not establish missing natural C=C geometry or missing tetrahedral assignments. No configuration is filled from this diagnostic.
+
+### Congener-specific glycosylation scope
+
+evidence: supported. Targets: naturalproductmech:mibig-3a7c795f88.
+
+The abstract states N-glycosylation of the 3-amino-9-methyldecanoic-acid unit specifically in C and D. B retains is_glycoside=false and no sugar ring in its deposited encoding; the family title must not transfer the C/D glycosylation statement to B. Full congener-resolved structure verification remains unavailable.
+
+### Producer versus occurrence and shared publication
+
+provenance: supported. Targets: naturalproductmech:mibig-3a7c795f88.
+
+The owner keeps MIBiG SOURCE_ASSERTION production separate from the LOTUS occurrence assertion. The abstract supplies direct isolation support for C. fuscus MCy9118. The same own article backs both citation placements, so they are not independent publications; the retained species-level taxonomy has not been freshly verified.
+
+### Abstract gene-disruption and hybrid-cluster support
+
+evidence: supported. Targets: naturalproductmech:mibig-3a7c795f88.
+
+The own abstract reports identification of a cystomanamide biosynthetic gene cluster by gene disruption, with a hybrid PKS/NRPS system, an iso-fatty-acid starter and reductive amination at the module interface. This supports the family-level biosynthetic context without silently upgrading retained CLUSTER_UNSTATED or SOURCE_ASSERTION fields.
+
+### Exact locus and experimental mapping
+
+provenance: unknown. Targets: naturalproductmech:mibig-3a7c795f88.
+
+The retained MIBiG row is entry-quality questionable, completeness unknown, with blank locus coordinates/method fields and an entry-level PMID. Abstract gene-disruption support does not by itself verify KJ710244.1/BGC0000335, specific genes/proteins or a separate disruption assay for this congener. No causal graph, pathway-step or sequence assertion is invented.
+
+### Computed classification and retained source concepts
+
+representation: supported. Targets: naturalproductmech:mibig-3a7c795f88.
+
+The owner and retained NPClassifier row agree on amino-acid/peptide, oligopeptide and linear-peptide filing. These computational labels are compatible with the article’s lipopeptide family description; they do not independently verify every encoded bond or current NPAtlas/ChEBI identity.
+
+### Activity, target and graph coverage within the retained record
+
+completeness: unknown. Targets: naturalproductmech:mibig-3a7c795f88.
+
+The complete owner contains no bioactivity annotations, molecular targets, pathway steps or inline/referenced graphs; exact-key PubChem and both supplemental row arrays are empty. These local absences establish no biological inactivity or global absence of published target/pathway evidence.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| SCI651-LOCAL | /private/tmp/npm-review-work/shared-next-batch066-tentative/tentative-owner-source-inventory-001.json; /entries/0/owner_document; /entries/0/rows; /entries/0/supplemental_retained_rows | context_only | Complete retained cystomanamide B owner and all seven source arrays: one MIBiG compound, one LOTUS occurrence and one NPClassifier row; four arrays and both supplemental arrays are empty. These are local source assertions, not independent confirmation. |
+| SCI651-CHEM | /private/tmp/npm-review-work/shared-next-batch066-tentative/source-science-preparation/root-tentative66-local-chemical-consistency-001.json; /records/0 | supports | Saved RDKit 2026.03.5 results regenerate XVVKSDYJVOKNQB-YUSBRPJASA-N from both retained encodings, with formula C40H57N7O14, one fragment and formal charge zero. Both representations assign all 8 detected tetrahedral sites. This supports internal encoding consistency; it does not verify the isolated natural stereoisomer. |
+| SCI651-NEIGHBORS | /private/tmp/npm-review-work/shared-next-batch066-tentative/source-science-preparation/root-tentative66-saved-stereo-neighbor-inspection-001.json; /records/0 | supports | The 6 extra unspecified double-bond observations occur only after InChI parsing; the saved local neighbor objects identify C(-O)=N environments. They do not establish missing natural C=C geometry or missing tetrahedral assignments. No configuration is filled from this diagnostic. |
+| SCI651-ABSTRACT | PMID:24735013; ./PubmedArticle/MedlineCitation/Article/ArticleTitle; ./PubmedArticle/MedlineCitation/Article/Abstract/AbstractText; ./PubmedArticle/PubmedData/ArticleIdList; cached body /private/tmp/npm-review-work/shared-next-batch065-tentative/literature-preparation/public-metadata-001/pmid-24735013.xml | supports | The complete own PMID 24735013 abstract explicitly includes cystomanamide B within the isolated cystomanamides A–D from Cystobacter fuscus MCy9118. It reports spectroscopic structure elucidation, but the exact retained full key and absolute configuration are not recoverable from this abstract alone. Own DOI10.1021/ol500779s confirms the retained uppercase LOTUS DOI and PMID are the same article. This is metadata/abstract evidence only. |
+
+## Limits And Additional Notes
+
+- Full primary text, structure figures, NMR assignments and supporting information were not read; exact natural structure and stereochemistry remain unverified.
+- Current MIBiG, NPAtlas, ChEBI, NCBI taxonomy and sequence authorities were not queried. Retained identifiers and seeded grounding notes are not current authority confirmations.
+- The abstract reports family-level gene disruption and a hybrid PKS/NRPS pathway, but does not independently resolve BGC0000335, KJ710244.1, exact locus coordinates or a congener-specific experimental assignment.
+- The current official intake reproduces the retained owner and six official source arrays. Additional PubChem and supplemental arrays retain their original local-reading scope. Baseline and ROOT decisions are bound separately; saved two-encoding computation and official intake SMILES computation remain distinct.
+- Configured consistency only; independent scientific claim support and unrestricted remote authority refresh are not implied.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint and before downstream tests. Its actual exit1/log/input capture/root observation remain pinned; the selected successful canonical QC attempt002 is separately timed. No individual-review validation failure or counter reset is claimed.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings; this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions and no-adapter pairs; a successful command does not convert these into verified scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population was checked; external caches and generated bytecode are not asserted to be independently byte-pinned.
+- The whole local owner and retained source rows were read. Full-owner scientific verification remains false; scientific_review denotes the bounded scientific interpretation in this report.
+- Original owner/source reading, two-encoding computation, neighbor inspection, HTTP retrieval and later metadata reading retain separate clocks. Official intake separately computed SMILES facts.
+- No scientific record, maintained input or native curation status was changed. No corrective finding was established within the inspected evidence; exact-source limitations remain explicit.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261027T144011Z-cystomanamide-b
+title: Scientific review of cystomanamide B
+started_at: '2026-10-27T14:38:47.340621Z'
+finished_at: '2026-10-27T14:40:11.930598Z'
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: The complete own PMID 24735013 abstract explicitly includes cystomanamide
+  B within the isolated cystomanamides A–D from Cystobacter fuscus MCy9118. It reports
+  spectroscopic structure elucidation, but the exact retained full key and absolute
+  configuration are not recoverable from this abstract alone. N-glycosylation support
+  is restricted to C/D. Retained encoding consistency is supported; full natural identity
+  and current authority scopes remain open.
+source:
+  git_revision: 14373517042b407747272446f79953ae86d51fa4
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/cystomanamide-b.yaml
+    sha256: 8cd0688b1e899a58f27de044f4b196f8e9a01d8e94a3dc1de9f5d558ed3fb565
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+targets:
+- target_id: naturalproductmech:mibig-3a7c795f88
+  path: data/natural_products/amino_acids_and_peptides/cystomanamide-b.yaml
+  label: cystomanamide B
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+scope:
+  description: Complete retained owner and source-row reading, local encoding checks,
+    and bounded scientific interpretation of inspected publication metadata and supplied
+    abstracts.
+  selection: One resolved record in canonical path order from the unreviewed corpus;
+    actual official intake reconciled to retained evidence.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-3a7c795f88
+  exclusions:
+  - target: Full primary material and current external authorities
+    reason: Exact claims requiring full article/SI, current taxonomy, chemical or
+      sequence authorities remain unverified.
+checks:
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its
+    pinned path.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-corpus-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.783967Z;
+    finished 2026-10-25T22:37:16.453216Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.log.
+    Reused for batch066 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch066. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-3a7c795f88
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: Fresh canonical reproduction gate passed:all3116 records byte-identical
+    to source seeding; source warnings remain retained.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-reproduction-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784055Z;
+    finished 2026-10-25T22:37:31.682209Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.log.
+    Reused for batch066 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch066. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-3a7c795f88
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: Fresh deterministic review queue completed:8922 rows across12 queues. Queue
+    output is not scientific-review coverage.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-review-queue-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just review-queue --tsv /private/tmp/npm-review-queue-batch-036-fresh14373517-001.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.781802Z;
+    finished 2026-10-25T22:37:08.229737Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.log.
+    Reused for batch066 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch066. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-3a7c795f88
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking
+    mismatches and4898no-adapter skips remain explicit.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-validate-products-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784040Z;
+    finished 2026-10-25T22:37:32.251879Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.log.
+    Reused for batch066 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch066. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-3a7c795f88
+- check_id: shared-qc
+  name: Full repository quality gate on the fresh main baseline
+  status: passed
+  required: true
+  summary: Canonical just qc completed with actual terminal exit0:1024 tests passed,4
+    skipped,2 dependency warnings;3116 records passed closed schema validation, site
+    freshness, byte reproduction and lockfile integrity.22 governed artifacts and15
+    raw inventories passed. Prior DNS failed001 remains preserved.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-qc-attempt-002
+    PYTHONDONTWRITEBYTECODE=1 just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-002 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:40:55.179857Z;
+    finished 2026-10-25T22:46:28.974296Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.log.
+    Reused for batch066 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch066. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-3a7c795f88
+- check_id: C-STRICT
+  name: Native strict target validation
+  status: passed
+  required: true
+  summary: The selected owner passed the documented strict validator. This establishes
+    configured consistency only.
+  command: just validate-strict data/natural_products/amino_acids_and_peptides/cystomanamide-b.yaml
+    --out /private/tmp/npm-review-work/651/strict.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Actual intake execution finished 2026-10-27T14:38:48.706663Z. Original
+    receipt: /private/tmp/npm-review-work/651/strict-receipt.json.'
+  target_ids:
+  - naturalproductmech:mibig-3a7c795f88
+- check_id: SCI651-LOCAL-ENCODING
+  name: Saved local two-encoding consistency
+  status: passed
+  required: true
+  summary: Saved RDKit 2026.03.5 results regenerate XVVKSDYJVOKNQB-YUSBRPJASA-N from
+    both retained encodings, with formula C40H57N7O14, one fragment and formal charge
+    zero. Both representations assign all 8 detected tetrahedral sites. This supports
+    internal encoding consistency; it does not verify the isolated natural stereoisomer.
+    The 6 extra unspecified double-bond observations occur only after InChI parsing;
+    the saved local neighbor objects identify C(-O)=N environments. They do not establish
+    missing natural C=C geometry or missing tetrahedral assignments. No configuration
+    is filled from this diagnostic.
+  target_ids:
+  - naturalproductmech:mibig-3a7c795f88
+  evidence_ids:
+  - SCI651-LOCAL
+  - SCI651-CHEM
+  - SCI651-NEIGHBORS
+- check_id: SCI651-OWN-METADATA
+  name: Own PMID/DOI and complete returned abstract
+  status: passed
+  required: true
+  summary: The exact cached successful response has own PMID 24735013 and DOI10.1021/ol500779s.
+    Original HTTP and later ROOT reading clocks remain separately retained.
+  target_ids:
+  - naturalproductmech:mibig-3a7c795f88
+  evidence_ids:
+  - SCI651-ABSTRACT
+- check_id: SCI651-EXACT-NATURAL-AUTHORITY
+  name: Exact natural material and current authority verification
+  status: unavailable
+  required: true
+  summary: The full primary/SI, current authority records and exact locus/structure
+    assignments have not been verified. Local consistency and abstract support do
+    not close those scopes.
+  target_ids:
+  - naturalproductmech:mibig-3a7c795f88
+  evidence_ids:
+  - SCI651-LOCAL
+  - SCI651-ABSTRACT
+evidence:
+- evidence_id: SCI651-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch066-tentative/tentative-owner-source-inventory-001.json
+  locator: /entries/0/owner_document; /entries/0/rows; /entries/0/supplemental_retained_rows
+  accessed_at: '2026-10-27T13:34:04.199112Z'
+  snapshot_sha256: efcd8406650fc62eb769ecc575be2ac134e643c8b39c3a750558229786855677
+  support: context_only
+  summary: 'Complete retained cystomanamide B owner and all seven source arrays: one
+    MIBiG compound, one LOTUS occurrence and one NPClassifier row; four arrays and
+    both supplemental arrays are empty. These are local source assertions, not independent
+    confirmation.'
+- evidence_id: SCI651-CHEM
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch066-tentative/source-science-preparation/root-tentative66-local-chemical-consistency-001.json
+  locator: /records/0
+  accessed_at: '2026-10-27T13:34:17.199424Z'
+  snapshot_sha256: 827c0d7bb3ba949b11e8d7cf986fc122b208a34ab2f3e4ba0ff5bbc008a12c6c
+  support: supports
+  summary: Saved RDKit 2026.03.5 results regenerate XVVKSDYJVOKNQB-YUSBRPJASA-N from
+    both retained encodings, with formula C40H57N7O14, one fragment and formal charge
+    zero. Both representations assign all 8 detected tetrahedral sites. This supports
+    internal encoding consistency; it does not verify the isolated natural stereoisomer.
+- evidence_id: SCI651-NEIGHBORS
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch066-tentative/source-science-preparation/root-tentative66-saved-stereo-neighbor-inspection-001.json
+  locator: /records/0
+  accessed_at: '2026-10-27T13:36:21.405954Z'
+  snapshot_sha256: 5de0e2f1788d42f2e02a0b435258acb8805b646d63c184037c0b702f3cf871c6
+  support: supports
+  summary: The 6 extra unspecified double-bond observations occur only after InChI
+    parsing; the saved local neighbor objects identify C(-O)=N environments. They
+    do not establish missing natural C=C geometry or missing tetrahedral assignments.
+    No configuration is filled from this diagnostic.
+- evidence_id: SCI651-ABSTRACT
+  kind: primary_source
+  reference: PMID:24735013
+  locator: ./PubmedArticle/MedlineCitation/Article/ArticleTitle; ./PubmedArticle/MedlineCitation/Article/Abstract/AbstractText;
+    ./PubmedArticle/PubmedData/ArticleIdList; cached body /private/tmp/npm-review-work/shared-next-batch065-tentative/literature-preparation/public-metadata-001/pmid-24735013.xml
+  accessed_at: '2026-10-27T13:22:12.146987Z'
+  snapshot_sha256: 0a5955853667a86fb8cf6da5b77d950a5bd57cc190fb9f6729f9e58c5b1ce518
+  support: supports
+  summary: The complete own PMID 24735013 abstract explicitly includes cystomanamide
+    B within the isolated cystomanamides A–D from Cystobacter fuscus MCy9118. It reports
+    spectroscopic structure elucidation, but the exact retained full key and absolute
+    configuration are not recoverable from this abstract alone. Own DOI10.1021/ol500779s
+    confirms the retained uppercase LOTUS DOI and PMID are the same article. This
+    is metadata/abstract evidence only.
+assessments:
+- assessment_id: SCI651-MATERIAL
+  area: evidence
+  topic: Named congener and isolation source at abstract tier
+  outcome: supported
+  summary: The complete own PMID 24735013 abstract explicitly includes cystomanamide
+    B within the isolated cystomanamides A–D from Cystobacter fuscus MCy9118. It reports
+    spectroscopic structure elucidation, but the exact retained full key and absolute
+    configuration are not recoverable from this abstract alone.
+  target_ids:
+  - naturalproductmech:mibig-3a7c795f88
+  evidence_ids:
+  - SCI651-ABSTRACT
+- assessment_id: SCI651-ENCODING
+  area: representation
+  topic: Retained full-key, formula and stereochemical representation
+  outcome: supported
+  summary: Saved RDKit 2026.03.5 results regenerate XVVKSDYJVOKNQB-YUSBRPJASA-N from
+    both retained encodings, with formula C40H57N7O14, one fragment and formal charge
+    zero. Both representations assign all 8 detected tetrahedral sites. This supports
+    internal encoding consistency; it does not verify the isolated natural stereoisomer.
+    The 6 extra unspecified double-bond observations occur only after InChI parsing;
+    the saved local neighbor objects identify C(-O)=N environments. They do not establish
+    missing natural C=C geometry or missing tetrahedral assignments. No configuration
+    is filled from this diagnostic.
+  target_ids:
+  - naturalproductmech:mibig-3a7c795f88
+  evidence_ids:
+  - SCI651-CHEM
+  - SCI651-NEIGHBORS
+- assessment_id: SCI651-GLYCOSYLATION
+  area: evidence
+  topic: Congener-specific glycosylation scope
+  outcome: supported
+  summary: The abstract states N-glycosylation of the 3-amino-9-methyldecanoic-acid
+    unit specifically in C and D. B retains is_glycoside=false and no sugar ring in
+    its deposited encoding; the family title must not transfer the C/D glycosylation
+    statement to B. Full congener-resolved structure verification remains unavailable.
+  target_ids:
+  - naturalproductmech:mibig-3a7c795f88
+  evidence_ids:
+  - SCI651-LOCAL
+  - SCI651-ABSTRACT
+- assessment_id: SCI651-PRODUCER-OCCURRENCE
+  area: provenance
+  topic: Producer versus occurrence and shared publication
+  outcome: supported
+  summary: The owner keeps MIBiG SOURCE_ASSERTION production separate from the LOTUS
+    occurrence assertion. The abstract supplies direct isolation support for C. fuscus
+    MCy9118. The same own article backs both citation placements, so they are not
+    independent publications; the retained species-level taxonomy has not been freshly
+    verified.
+  target_ids:
+  - naturalproductmech:mibig-3a7c795f88
+  evidence_ids:
+  - SCI651-LOCAL
+  - SCI651-ABSTRACT
+- assessment_id: SCI651-CLUSTER
+  area: evidence
+  topic: Abstract gene-disruption and hybrid-cluster support
+  outcome: supported
+  summary: The own abstract reports identification of a cystomanamide biosynthetic
+    gene cluster by gene disruption, with a hybrid PKS/NRPS system, an iso-fatty-acid
+    starter and reductive amination at the module interface. This supports the family-level
+    biosynthetic context without silently upgrading retained CLUSTER_UNSTATED or SOURCE_ASSERTION
+    fields.
+  target_ids:
+  - naturalproductmech:mibig-3a7c795f88
+  evidence_ids:
+  - SCI651-LOCAL
+  - SCI651-ABSTRACT
+- assessment_id: SCI651-LOCUS-LIMIT
+  area: provenance
+  topic: Exact locus and experimental mapping
+  outcome: unknown
+  summary: The retained MIBiG row is entry-quality questionable, completeness unknown,
+    with blank locus coordinates/method fields and an entry-level PMID. Abstract gene-disruption
+    support does not by itself verify KJ710244.1/BGC0000335, specific genes/proteins
+    or a separate disruption assay for this congener. No causal graph, pathway-step
+    or sequence assertion is invented.
+  target_ids:
+  - naturalproductmech:mibig-3a7c795f88
+  evidence_ids:
+  - SCI651-LOCAL
+  - SCI651-ABSTRACT
+- assessment_id: SCI651-CLASSIFICATION
+  area: representation
+  topic: Computed classification and retained source concepts
+  outcome: supported
+  summary: The owner and retained NPClassifier row agree on amino-acid/peptide, oligopeptide
+    and linear-peptide filing. These computational labels are compatible with the
+    article’s lipopeptide family description; they do not independently verify every
+    encoded bond or current NPAtlas/ChEBI identity.
+  target_ids:
+  - naturalproductmech:mibig-3a7c795f88
+  evidence_ids:
+  - SCI651-LOCAL
+  - SCI651-ABSTRACT
+- assessment_id: SCI651-ABSENT-SCOPE
+  area: completeness
+  topic: Activity, target and graph coverage within the retained record
+  outcome: unknown
+  summary: The complete owner contains no bioactivity annotations, molecular targets,
+    pathway steps or inline/referenced graphs; exact-key PubChem and both supplemental
+    row arrays are empty. These local absences establish no biological inactivity
+    or global absence of published target/pathway evidence.
+  target_ids:
+  - naturalproductmech:mibig-3a7c795f88
+  evidence_ids:
+  - SCI651-LOCAL
+findings: []
+actions: []
+limitations:
+- Full primary text, structure figures, NMR assignments and supporting information
+  were not read; exact natural structure and stereochemistry remain unverified.
+- Current MIBiG, NPAtlas, ChEBI, NCBI taxonomy and sequence authorities were not queried.
+  Retained identifiers and seeded grounding notes are not current authority confirmations.
+- The abstract reports family-level gene disruption and a hybrid PKS/NRPS pathway,
+  but does not independently resolve BGC0000335, KJ710244.1, exact locus coordinates
+  or a congener-specific experimental assignment.
+- The current official intake reproduces the retained owner and six official source
+  arrays. Additional PubChem and supplemental arrays retain their original local-reading
+  scope. Baseline and ROOT decisions are bound separately; saved two-encoding computation
+  and official intake SMILES computation remain distinct.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint
+  and before downstream tests. Its actual exit1/log/input capture/root observation
+  remain pinned; the selected successful canonical QC attempt002 is separately timed.
+  No individual-review validation failure or counter reset is claimed.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter
+  skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings;
+  this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld
+  nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological
+  or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological
+  production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions
+  and no-adapter pairs; a successful command does not convert these into verified
+  scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command
+  execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population
+  was checked; external caches and generated bytecode are not asserted to be independently
+  byte-pinned.
+notes:
+- The whole local owner and retained source rows were read. Full-owner scientific
+  verification remains false; scientific_review denotes the bounded scientific interpretation
+  in this report.
+- Original owner/source reading, two-encoding computation, neighbor inspection, HTTP
+  retrieval and later metadata reading retain separate clocks. Official intake separately
+  computed SMILES facts.
+- No scientific record, maintained input or native curation status was changed. No
+  corrective finding was established within the inspected evidence; exact-source limitations
+  remain explicit.
+```
