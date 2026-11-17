@@ -1,0 +1,1822 @@
+# Local evidence review: neocarzinostatin chromophore
+
+- Review: 20261107T033806Z-neocarzinostatin-chromophore
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-11-07T02:55:59.699888Z
+- Finished UTC: 2026-11-07T03:38:06.868695Z
+- Reviewer: Codex root with native_checks, bgc_science and review_support peer agents (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The chromophore's saved molecular forms and complete binding-graph owner are internally preserved, but imported binding-affinity observations are overclassified as enzyme inhibition by a generic seeder rule. A major confirmed local classification finding remains open; correction belongs in the maintained seeder while retaining the valid observations, Kd, graph and history. Review completion is partial.
+
+## Scope And Provenance
+
+One complete NaturalProductRecord, including all present scientific claims, history and declared mechanisms; external verification remains unavailable.
+
+Selection: Campaign path order 2818; one of the next ten uncovered paths selected from the 3116-record corpus. Membership uses the canonical validated catalogue plus retained committed campaign bundles.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base ce6a5498df5be51116bd5e0c119023ee62bb5464.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CHEBI:29655 | data/natural_products/unclassified/neocarzinostatin-chromophore.yaml | generated | neocarzinostatin chromophore |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Original local two-form molecular diagnostic | passed | True | CHEBI:29655 | Both stored forms parsed and retain declared normalized keys; Both canonical SMILES comparisons agree and the limited 48-atom map is complete, while full_graph_identity_established remains false. |
+| Complete offline maintained reader for neocarzinostatin-chromophore | passed | True | CHEBI:29655 | One original maintained reader preserved the whole chromophore owner, one two-node/one-edge BIOACTIVITY graph, two assays and six histories; zero pathways/components. |
+| strict_ten | passed | True | CHEBI:29655 | Closed-schema validation of the ten selected owners and any referenced components reported zero errors. |
+| strict_full | passed | True | CHEBI:29655 | Full closed-schema validation scanned all 3116 owners and reported zero errors. |
+| lockfile | passed | True | CHEBI:29655 | PATHS.tsv and filesystem agree on all 3116 records and their pinned filing pathways. |
+| reproduction | passed | True | CHEBI:29655 | All 3116 records reproduce byte-identically from the retained inventories and carried curator content. This does not independently validate curator science. |
+| queue | passed | True | CHEBI:29655 | The full local queue contains 8922 diagnostic rows; selected-target entries were inspected. Queue diagnostics are leads, not scientific sign-off. |
+| Full just qc | unavailable | True | CHEBI:29655 | Not run under the external-request prohibition: the complete recipe includes upstream vendored synchronization. The five executed local checks are recorded separately. |
+| Complete OAK identifier/label authority check | unavailable | True | CHEBI:29655 | Complete offline ontology authority coverage was not established for this run; no ontology retrieval or remote resolution was attempted. Retained taxonomy evidence has only its explicitly stated local scope. |
+| Primary literature and current structured database/identifier verification | unavailable | True | CHEBI:29655 | All external requests are prohibited by the user. Fresh database and identifier verification and complete primary-literature coverage are unavailable. Any retained original literature actually inspected is recorded separately with its historical scope. |
+
+## Scientific And Domain Assessments
+
+### Exact retained compound grounding
+
+identity: supported. Targets: CHEBI:29655.
+
+CHEBI:29655 and full key QZGIWPZCWHMVQL-UIYAJPBUSA-N identify the chromophore, distinct from its apoprotein UniProtKB:P0A3R9. MIBiG BGC0000112:1 uses the broader name neocarzinostatin, retained as a RELATED_SYNONYM; the exact-key 3-star ChEBI row supplies the chromophore label and definition. These source concepts are preserved without merging the protein and small molecule or reparsing the alternate ChEBI SMILES.
+
+### Saved molecular forms and stereochemical scope
+
+representation: supported. Targets: CHEBI:29655.
+
+Both stored forms parse as a single neutral C35H33NO12 fragment with 48 atoms and 54 bonds. Formula, charge, normalized InChI/key and both canonical SMILES comparisons agree, and the saved chirality-aware map covers 48 atoms. full_graph_identity_established remains false; no natural-sample identity, protein binding, DNA mechanism or enzyme inhibition is proven by these molecular checks. The complete saved tables retain seven ring rows: a saturated C5O ring, a five-membered carbocycle, a nine-membered enediyne-containing cycle, an epoxide, a five-membered cyclic carbonate and two fused aromatic six-rings. The two triple bonds are SMILES bonds 14 and 19. Carbonyls occur at SMILES carbons 24 and 28; the motif lists three ester-like C(=O)-O-C links because the cyclic carbonate contributes two links at one carbonyl, not three distinct carbonyls. Glycosidic oxygen 7 links C5O-ring carbon 5 to scaffold carbon 8; the ring carries an N-methylamino substituent. These local motifs do not independently assign a sugar residue name or biological function. Both canonical SMILES comparisons agree and the limited 48-atom map is complete, while full_graph_identity_established remains false. Normalized key/formula agreement and a successful local process do not establish independent full graph identity, natural-sample identity, experimental absolute stereochemistry, primary mechanism validation or a native status promotion.
+
+### Compound-specific producer, locus and taxon
+
+provenance: supported. Targets: CHEBI:29655.
+
+BGC0000112 version 5, compound index 1, attributes Streptomyces carzinostaticus subsp. neocarzinostaticus (NCBITaxon:167636) with BGC_CHARACTERIZED producer grade. Active status, questionable quality and complete entry status are retained literally; these grades do not establish the imported enzyme-inhibitor class. AY117439.1:10097–72712 is CLUSTER_DEMONSTRATED with Knock-out studies, Enzymatic assays and gene-expression correlation. The PKS/Iterative type I classification and entry-level PMID:15797213 remain source assertions. Biosynthetic locus enzymatic-assay evidence does not by itself show that the compound inhibits an enzyme.
+
+### Citation grain and retained history
+
+evidence: supported. Targets: CHEBI:29655.
+
+MIBiG PMID:15797213 is entry-grain, LOTUS DOI:10.1021/JA00191A028 is occurrence-grain, and both imported assays share PMID:15640161. The graph retains DOI:10.1074/jbc.M411579200 as historical PRIMARY_EXPERIMENT and DOI:10.2210/pdb1o5p/pdb as DATABASE_ASSERTION. Its PDB 1O5P/CHR/SIFTS P0A3R9 residues 35–147 and 0.1 nM statements remain historical evidence, not new primary or sequence validation. All six history events, including the deliberate BIOACTIVITY graph curation, are preserved.
+
+### Occurrence and assay limits
+
+evidence: concern. Targets: CHEBI:29655.
+
+LOTUS physical line 7602 records Streptomyces carzinostaticus at NCBITaxon:167636, DOI:10.1021/JA00191A028 and structure Q26847067. The shorter occurrence label does not erase the producer's subspecies qualifier or make occurrence and production independent confirmations. The historical ChEBI definition about apoprotein protection and release to DNA remains attributed, not newly verified. Physical PubChem lines 6016 and 6017 contain exact-key/CID 447545 AIDs 1811 and 977611. Both are Active/type Other binding-affinity records from the same depositor, target 1O5P_A and PMID:15640161; only AID 977611 reports Kd 0.0001 uM. AID 1811 has no numeric endpoint/value. Generic binding-title classification supplies ENZYME_INHIBITOR to both observations and the derived summary without an enzyme-inhibition endpoint. Preserve the observations and source notes; the shared context is not two demonstrated independent catalytic-inhibition experiments. The exclusion row sharing AID 977611 has a different exact chemical identity and does not apply here.
+
+### Source classes, model labels and filing
+
+consistency: concern. Targets: CHEBI:29655.
+
+NPClassifier retains Carbohydrates&#124;Polyketides, Macrolides&#124;Aminosugars and aminoglycosides, Aminosugars&#124;Enediynes and is_glycoside true at the retained 2026-09-07 model version. Multiple predicted pathways retain UNCLASSIFIED filing. The observed C5O-linked enediyne topology is separate from model and biological activity assertions; the enzyme-inhibitor class requires the bounded maintained correction described in the finding.
+
+### Earned work and unavailable authority
+
+completeness: concern. Targets: CHEBI:29655.
+
+Complete assigned raw/source/intake and both saved molecular forms were read. The single accepted maintained call preserves the complete chromophore owner, one BIOACTIVITY graph with two distinct compound/protein nodes, one binds edge with two references, both imported assays and all six histories. No pathway, molecular-target or component root is present. Historical PDB/CHR/SIFTS/apoprotein claims remain attributed; preservation does not validate those claims, enzyme inhibition or the chemical identity of a natural sample. The single known socket-construction capability probe was denied before action; no request occurred. The major confirmed local activity-classification finding remains open. Five local native commands pass; full QC, complete OAK and fresh primary verification remain unavailable. Completion is partial, native SEEDED status unchanged.
+
+### Chromophore/apoprotein binding context and owner preservation
+
+graph: supported. Targets: CHEBI:29655.
+
+The single accepted maintained call preserves the complete chromophore owner, one BIOACTIVITY graph with two distinct compound/protein nodes, one binds edge with two references, both imported assays and all six histories. No pathway, molecular-target or component root is present. Historical PDB/CHR/SIFTS/apoprotein claims remain attributed; preservation does not validate those claims, enzyme inhibition or the chemical identity of a natural sample. The single known socket-construction capability probe was denied before action; no request occurred. MIBiG PMID:15797213 is entry-grain, LOTUS DOI:10.1021/JA00191A028 is occurrence-grain, and both imported assays share PMID:15640161. The graph retains DOI:10.1074/jbc.M411579200 as historical PRIMARY_EXPERIMENT and DOI:10.2210/pdb1o5p/pdb as DATABASE_ASSERTION. Its PDB 1O5P/CHR/SIFTS P0A3R9 residues 35–147 and 0.1 nM statements remain historical evidence, not new primary or sequence validation. All six history events, including the deliberate BIOACTIVITY graph curation, are preserved.
+
+## Findings
+
+### finding-2818-binding-classification: Binding-affinity observations are overclassified as enzyme inhibition
+
+major / open / confirmed; issue key: neocarzinostatin-chromophore-binding-classified-as-enzyme-inhibition.
+
+The two retained PubChem observations for CHEBI:29655 describe binding affinity, yet both /bioactivities activity_class values and /bioactivity_summary assert ENZYME_INHIBITOR. Physical rows 6016 and 6017 are type Other and Active for target 1O5P_A. Only AID 977611 reports Kd 0.0001 uM; AID 1811 has no numeric endpoint/value. The maintained seeder maps the literal word binding to ENZYME_INHIBITOR and then derives the summary from the assigned classes. Neither these row fields nor the retained apoprotein-binding graph establishes enzyme inhibition. This is a confirmed local classification overstatement and a maintained inference-rule defect, not a claim that either binding observation is invalid or that the compound can never inhibit an enzyme. The graph, source identifiers, endpoint distinctions and historical evidence remain valuable and must be preserved.
+
+## Recommended Actions And Acceptance Checks
+
+### action-2818-correct-binding-classification
+
+Correct the maintained seeder so generic binding-affinity wording alone does not assign ENZYME_INHIBITOR. Preserve both exact-key binding observations, the AID 977611 Kd value and AID 1811 missing numeric endpoint, their source provenance and ungrounded accession note, and the separate apoprotein-binding graph and histories. Use the schema-supported optional class semantics, or an existing explicitly justified class under curator policy, and derive the summary from appropriately supported observations. Do not invent a BINDING enum or exclude the assay rows to remove the incorrect class.
+
+- A focused maintained regression covers both exact retained binding-affinity titles and confirms that generic binding alone does not emit ENZYME_INHIBITOR.
+- The regression retains both ACTIVE database-asserted observations, PMID:15640161 and AIDs 1811/977611, target-accession provenance, KD 0.0001 uM only for AID 977611, and absence of a numeric endpoint/value for AID 1811.
+- Activity classes are omitted where unsupported, or use an existing explicitly justified enum value under documented curator policy. No nonexistent BINDING value is introduced.
+- The derived summary no longer presents ENZYME_INHIBITOR merely because the same generic classifier assigned it to the underlying observations; any retained positive class has independent adequate support.
+- Cases with actual supported enzyme-inhibition evidence remain covered separately; the change does not make a blanket assertion about every binding assay or every biological effect of this compound.
+- Any later authorized regeneration preserves the chromophore/apoprotein distinction, BIOACTIVITY binds graph, cited historical evidence and all six histories, using the maintained history/validation workflow without blanket assay exclusions or hand editing generated records.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| support-2818-owner | /private/tmp/npm-record-reviews-20261021/data/natural_products/unclassified/neocarzinostatin-chromophore.yaml; complete file: identifier, label, chemical_structure, source_concepts, producer_organisms, biosynthetic_gene_clusters, classification, curation_history and present mechanism/activity roots | supports | Complete current owner retained; generated source facts and curator-owned annotations remain distinct. |
+| support-2818-capture | /private/tmp/npm-review-work/shared-next-batch282/owner-capture-DATA-001.json; /records/7/owner_document; /records/7/component_captures | supports | Whole accepted owner capture; no protein, companion or component identity transfer. |
+| support-2818-source | /private/tmp/npm-review-work/shared-next-batch282-tentative/support-prep/support-current282-assigned-source-reading-001.json; /contexts/8; /selected_counts; /counts; /global_cautions | supports | Complete assigned saved source context. Own selected credit is 20 rows/235 fields/45 frames/28 negatives; six Argimycin companion contexts are separate. ROOT reread two assay rows with zero additional primary credit. |
+| support-2818-plan | /private/tmp/npm-review-work/shared-next-batch282-tentative/bgc-prep/bgc-conditional282-target-input-plan-001.json; /records/7; /source_placement_count; /unique_source_path_count | supports | Actual 460-placement/65-path plan; this owner has 46 captured inputs. |
+| support-2818-planaccept | /private/tmp/npm-review-work/shared-next-batch282/root-current282-input-plan-acceptance-001.json; /status; /accepted; /input_plan | supports | ROOT accepted the original current source plan. |
+| support-2818-notes | /private/tmp/npm-review-work/shared-next-batch282-tentative/bgc-prep/bgc-conditional282-source-scope-notes-001.json; /reading; /reading_reconciliation; /cautions; /curation | supports | Current notes retain BGC 26 plus Support 37 positive placements; Native and overlapping ROOT readings add zero primary rows. Attribution and exact source grain are preserved. |
+| support-2818-intake | /private/tmp/npm-review-work/shared-next-batch282/intakes-001/2818-inspect-001.json; /status; /source; /targets | supports | Actual intake fixes generated target, maintained owners and current relative input hashes. |
+| support-2818-intakeaccept | /private/tmp/npm-review-work/shared-next-batch282/root-current282-intake-acceptance-001.json; /status; /accepted; /intake_summary | supports | ROOT accepted all ten original intakes, all exit zero with empty stderr. |
+| support-2818-data | /private/tmp/npm-review-work/shared-next-batch282/chemistry-local/diagnostic-DATA-001.json; /records/7/smiles; /records/7/inchi; /records/7/comparisons; /records/7/atom_correspondence; /records/7/literal_InChI_layers; /records/7/formula_comparison_scope | supports | Both stored forms parse as a single neutral C35H33NO12 fragment with 48 atoms and 54 bonds. Formula, charge, normalized InChI/key and both canonical SMILES comparisons agree, and the saved chirality-aware map covers 48 atoms. full_graph_identity_established remains false; no natural-sample identity, protein binding, DNA mechanism or enzyme inhibition is proven by these molecular checks. Both canonical SMILES comparisons agree and the limited 48-atom map is complete, while full_graph_identity_established remains false. |
+| support-2818-stereo | /private/tmp/npm-review-work/shared-next-batch282/chemistry-local/diagnostic-DATA-001.json; /records/7/smiles/computed/atoms; /records/7/smiles/computed/potential_stereo; /records/7/smiles/computed/bonds; /records/7/inchi/computed/atoms; /records/7/inchi/computed/potential_stereo; /records/7/inchi/computed/bonds | supports | Ten tetrahedral centres and one double bond are specified in both forms. The explicit bond enum is STEREOE at SMILES bond 12 and InChI-derived bond 6; potential-stereo Bond_Cis is a relative descriptor and is not a contrary E/Z assignment. The other small-ring double bond is not an additional unspecified ordinary E/Z candidate in the saved potential-stereo table. The source atom-centre true flag and full declared key remain bounded to the stored representation. |
+| support-2818-motifs | /private/tmp/npm-review-work/shared-next-batch282/chemistry-local/diagnostic-DATA-001.json; /records/7/smiles/computed/motifs; /records/7/smiles/computed/rings; /records/7/smiles/computed/bonds; /records/7/smiles/computed/atoms; /records/7/inchi/computed/motifs; /records/7/inchi/computed/rings; /records/7/inchi/computed/bonds; /records/7/inchi/computed/atoms | supports | The complete saved tables retain seven ring rows: a saturated C5O ring, a five-membered carbocycle, a nine-membered enediyne-containing cycle, an epoxide, a five-membered cyclic carbonate and two fused aromatic six-rings. The two triple bonds are SMILES bonds 14 and 19. Carbonyls occur at SMILES carbons 24 and 28; the motif lists three ester-like C(=O)-O-C links because the cyclic carbonate contributes two links at one carbonyl, not three distinct carbonyls. Glycosidic oxygen 7 links C5O-ring carbon 5 to scaffold carbon 8; the ring carries an N-methylamino substituent. These local motifs do not independently assign a sugar residue name or biological function. |
+| support-2818-molecularreading | /private/tmp/npm-review-work/shared-next-batch282-tentative/support-prep/support-current282-last-five-molecular-intake-reading-001.json; /records/2; /counts; /warnings | supports | Complete ten saved forms personally read, 492 atoms/510 bonds/28 ring rows/120 potential-stereo rows; no molecular replay. Six original undefined-stereo warning lines remain globally unassigned; none is assigned to an individual owner. |
+| support-2818-execution | /private/tmp/npm-review-work/shared-next-batch282/chemistry-local/diagnostic-execution-001.json; /command; /exit_code; /stdout; /stderr; /retries | supports | Single original diagnostic command and retained streams; no replay. |
+| support-2818-diagaccept | /private/tmp/npm-review-work/shared-next-batch282/chemistry-local/root-current282-diagnostic-acceptance-001.json; /status; /accepted; /diagnostic; /execution | supports | ROOT accepted the original stored-form diagnostic. |
+| support-2818-stderr | /private/tmp/npm-review-work/shared-next-batch282/chemistry-local/diagnostic-original-001.stderr; complete six original warning lines | supports | Six original undefined-stereo warning lines remain globally unassigned; none is assigned to an individual owner. |
+| support-2818-taxonomy | /private/tmp/npm-review-work/shared-next-batch282-tentative/native-prep/native-current282-cached-taxonomy-reading-001.json; /context_interpretations/17; /physical_negative_query_scopes/17; /whole_stanzas | supports | Preserve the full source producer qualifier Streptomyces carzinostaticus subsp. neocarzinostaticus (167636), BGC0000112 and AY117439.1:10097–72712. LOTUS uses the shorter source label Streptomyces carzinostaticus at the same ID; its occurrence and producer assertions/citations remain distinct. The cache retains the var. neocarzinostaticus synonym without requiring a label or rank repair. Assays 1811 and 977611 belong to the retained chromophore full key/CID 447545, not to an apoprotein or another structure sharing an assay ID. All saved source taxon IDs have complete cache stanzas; no forward merge or nonorganism match is retained for this context. Cached labels and synonyms do not establish current remote taxonomy, lineage, production or strain identity. |
+| support-2818-curation | /private/tmp/npm-review-work/shared-next-batch282-tentative/native-prep/native-current282-implemented-curation-scan-001.json; /counts; /exact_predicates; /exact_applicability_resolution; /applied_rows; /interpretation | supports | No exact applicable maintained correction; lexical names, related BGC rows and an assay exclusion for another complete chemical identity do not transfer decisions. |
+| support-2818-producerpolicy | /private/tmp/npm-record-reviews-20261021/conf/producer_evidence.tsv; complete method grading table | supports | Producer evidence and locus methods answer different questions; missing methods retain their stated grade. |
+| support-2818-stereopolicy | /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py; lines 142-173, complete structure_fields; specifically lines 167-168 FindMolChiralCenters and unassigned atom-centre predicate | supports | Source stereo_complete covers atom centres, not E/Z completeness or natural identity. |
+| support-2818-filingpolicy | /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py; lines 295-306, choose_pathway | supports | One supported normalized pathway selects filing; multiple, none or unsupported values retain UNCLASSIFIED. |
+| support-2818-gates | /private/tmp/npm-review-work/shared-next-batch282/root-current282-five-gates-acceptance-001.json; /records; /all_native_gates_passed; /selected_queue_rows; /unavailable_required_gates | supports | Five local gates pass, with required QC/OAK unavailable. Queue entries remain diagnostic leads, not scientific findings. |
+| support-2818-history | /private/tmp/npm-review-work/shared-next-batch282/owner-capture-DATA-001.json; /records/7/owner_document/curation_history; /records/7/owner_document/source_concepts | supports | MIBiG PMID:15797213 is entry-grain, LOTUS DOI:10.1021/JA00191A028 is occurrence-grain, and both imported assays share PMID:15640161. The graph retains DOI:10.1074/jbc.M411579200 as historical PRIMARY_EXPERIMENT and DOI:10.2210/pdb1o5p/pdb as DATABASE_ASSERTION. Its PDB 1O5P/CHR/SIFTS P0A3R9 residues 35–147 and 0.1 nM statements remain historical evidence, not new primary or sequence validation. All six history events, including the deliberate BIOACTIVITY graph curation, are preserved. |
+| support-2818-scope | /private/tmp/npm-review-work/shared-next-batch282-tentative/bgc-prep/bgc-conditional282-target-input-plan-001.json; /records/7/complete_root_keys; /records/7/declared_mechanism_roots_literal; /records/7/component_paths; /records/7/complete_raw_mechanism_sections | supports | The single accepted maintained call preserves the complete chromophore owner, one BIOACTIVITY graph with two distinct compound/protein nodes, one binds edge with two references, both imported assays and all six histories. No pathway, molecular-target or component root is present. Historical PDB/CHR/SIFTS/apoprotein claims remain attributed; preservation does not validate those claims, enzyme inhibition or the chemical identity of a natural sample. The single known socket-construction capability probe was denied before action; no request occurred. |
+| support-2818-query-mibig_compounds | /private/tmp/npm-review-work/shared-next-batch282-tentative/bgc-prep/bgc-conditional282-source-inventory-DATA-001.json; /contexts/17/source_scope_inventory/joins/mibig_compounds | supports | Complete saved mibig_compounds frame with 1 positive placements read. |
+| support-2818-table-mibig_compounds | /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv; physical line 149, raw UTF-8 row SHA-256 380fac07b6fd5cd9de0e1b2b1fe72a27b878caea7c71f48dbfc7b96f697a3a17 | supports | CHEBI:29655 and full key QZGIWPZCWHMVQL-UIYAJPBUSA-N identify the chromophore, distinct from its apoprotein UniProtKB:P0A3R9. MIBiG BGC0000112:1 uses the broader name neocarzinostatin, retained as a RELATED_SYNONYM; the exact-key 3-star ChEBI row supplies the chromophore label and definition. These source concepts are preserved without merging the protein and small molecule or reparsing the alternate ChEBI SMILES. BGC0000112 version 5, compound index 1, attributes Streptomyces carzinostaticus subsp. neocarzinostaticus (NCBITaxon:167636) with BGC_CHARACTERIZED producer grade. Active status, questionable quality and complete entry status are retained literally; these grades do not establish the imported enzyme-inhibitor class. AY117439.1:10097–72712 is CLUSTER_DEMONSTRATED with Knock-out studies, Enzymatic assays and gene-expression correlation. The PKS/Iterative type I classification and entry-level PMID:15797213 remain source assertions. Biosynthetic locus enzymatic-assay evidence does not by itself show that the compound inhibits an enzyme. |
+| support-2818-query-chebi_structures | /private/tmp/npm-review-work/shared-next-batch282-tentative/bgc-prep/bgc-conditional282-source-inventory-DATA-001.json; /contexts/17/source_scope_inventory/joins/chebi_structures | supports | Complete saved chebi_structures frame with 1 positive placements read. |
+| support-2818-table-chebi_structures | /private/tmp/npm-record-reviews-20261021/data/raw/chebi_structures.tsv; physical line 6920, raw UTF-8 row SHA-256 bc2004fe054474c5bbb0db3ba9a671e26b09e6408c3e697d82fc3483f71dbe3a | supports | Exact retained complete-key source row; source grain and claim scope remain bounded. |
+| support-2818-query-lotus_occurrences | /private/tmp/npm-review-work/shared-next-batch282-tentative/bgc-prep/bgc-conditional282-source-inventory-DATA-001.json; /contexts/17/source_scope_inventory/joins/lotus_occurrences | supports | Complete saved lotus_occurrences frame with 1 positive placements read. |
+| support-2818-table-lotus_occurrences | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical line 7602, raw UTF-8 row SHA-256 3753933b5f15295de9fb9adf3e4f192cf557a1c97bc86f81f8a30ab87b50599d | supports | LOTUS physical line 7602 records Streptomyces carzinostaticus at NCBITaxon:167636, DOI:10.1021/JA00191A028 and structure Q26847067. The shorter occurrence label does not erase the producer's subspecies qualifier or make occurrence and production independent confirmations. The historical ChEBI definition about apoprotein protection and release to DNA remains attributed, not newly verified. |
+| support-2818-query-cyanometdb_occurrences | /private/tmp/npm-review-work/shared-next-batch282-tentative/bgc-prep/bgc-conditional282-source-inventory-DATA-001.json; /contexts/17/source_scope_inventory/joins/cyanometdb_occurrences | supports | Complete saved cyanometdb_occurrences frame with 0 positive placements read. |
+| support-2818-query-npclassifier | /private/tmp/npm-review-work/shared-next-batch282-tentative/bgc-prep/bgc-conditional282-source-inventory-DATA-001.json; /contexts/17/source_scope_inventory/joins/npclassifier | supports | Complete saved npclassifier frame with 1 positive placements read. |
+| support-2818-table-npclassifier | /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv; physical line 2067, raw UTF-8 row SHA-256 6934a07b471532f44137254e3a1be3d73df3738a9fd7e9eb002ea2e6b3d2a1fb | supports | NPClassifier retains Carbohydrates&#124;Polyketides, Macrolides&#124;Aminosugars and aminoglycosides, Aminosugars&#124;Enediynes and is_glycoside true at the retained 2026-09-07 model version. Multiple predicted pathways retain UNCLASSIFIED filing. The observed C5O-linked enediyne topology is separate from model and biological activity assertions; the enzyme-inhibitor class requires the bounded maintained correction described in the finding. |
+| support-2818-query-pubchem_bioassay | /private/tmp/npm-review-work/shared-next-batch282-tentative/bgc-prep/bgc-conditional282-source-inventory-DATA-001.json; /contexts/17/source_scope_inventory/joins/pubchem_bioassay | supports | Complete saved pubchem_bioassay frame with 2 positive placements read. |
+| support-2818-table-pubchem_bioassay | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; physical line 6016, raw UTF-8 row SHA-256 23552092ddd6f3d519b396acfbbae383357d3e257e1a0446b4f00d304a70314b; physical line 6017, raw UTF-8 row SHA-256 6af7fb3c282ca31bcfb418ed1a566cff829eae5edc4d95e95c4d948ed79eae14 | supports | Physical PubChem lines 6016 and 6017 contain exact-key/CID 447545 AIDs 1811 and 977611. Both are Active/type Other binding-affinity records from the same depositor, target 1O5P_A and PMID:15640161; only AID 977611 reports Kd 0.0001 uM. AID 1811 has no numeric endpoint/value. Generic binding-title classification supplies ENZYME_INHIBITOR to both observations and the derived summary without an enzyme-inhibition endpoint. Preserve the observations and source notes; the shared context is not two demonstrated independent catalytic-inhibition experiments. The exclusion row sharing AID 977611 has a different exact chemical identity and does not apply here. |
+| support-2818-query-bindingdb_targets | /private/tmp/npm-review-work/shared-next-batch282-tentative/bgc-prep/bgc-conditional282-source-inventory-DATA-001.json; /contexts/17/source_scope_inventory/joins/bindingdb_targets | supports | Complete saved bindingdb_targets frame with 0 positive placements read. |
+| support-2818-query-antibioticmech_inchikeys | /private/tmp/npm-review-work/shared-next-batch282-tentative/bgc-prep/bgc-conditional282-source-inventory-DATA-001.json; /contexts/17/source_scope_inventory/joins/antibioticmech_inchikeys | supports | Complete saved antibioticmech_inchikeys frame with 0 positive placements read. |
+| support-2818-query-chebi_origins | /private/tmp/npm-review-work/shared-next-batch282-tentative/bgc-prep/bgc-conditional282-source-inventory-DATA-001.json; /contexts/17/source_scope_inventory/joins/chebi_origins | supports | Complete saved chebi_origins frame with 0 positive placements read. |
+| support-2818-reader-DATA | /private/tmp/npm-review-work/shared-next-batch282/native-current282-neocarzinostatin-chromophore-maintained-reader-DATA-001.json; /resolved_view; /raw_owner; /expected_view; /counts; /reader_call_count; /denials; /unexpected_denials; /external_requests | supports | The single accepted maintained call preserves the complete chromophore owner, one BIOACTIVITY graph with two distinct compound/protein nodes, one binds edge with two references, both imported assays and all six histories. No pathway, molecular-target or component root is present. Historical PDB/CHR/SIFTS/apoprotein claims remain attributed; preservation does not validate those claims, enzyme inhibition or the chemical identity of a natural sample. The single known socket-construction capability probe was denied before action; no request occurred. |
+| support-2818-reader-execution | /private/tmp/npm-review-work/shared-next-batch282/native-current282-neocarzinostatin-chromophore-reader-execution-001.json; /command; /exit_code | supports | Original sole maintained-reader execution, with zero exit and no replay. |
+| support-2818-reader-acceptance | /private/tmp/npm-review-work/shared-next-batch282/root-current282-neocarzinostatin-chromophore-reader-acceptance-001.json; /accepted; /review_check_contract; /verification; /limits | supports | ROOT accepted the original complete owner-preserving reader; this does not validate enzyme inhibition or historical primary assertions. |
+| support-2818-reader-reading | /private/tmp/npm-review-work/shared-next-batch282-tentative/support-prep/support-current282-2818-whole-maintained-reader-reading-001.json; /whole_returned_view; /interpretation; /counts; /review_check_contract | supports | The single accepted maintained call preserves the complete chromophore owner, one BIOACTIVITY graph with two distinct compound/protein nodes, one binds edge with two references, both imported assays and all six histories. No pathway, molecular-target or component root is present. Historical PDB/CHR/SIFTS/apoprotein claims remain attributed; preservation does not validate those claims, enzyme inhibition or the chemical identity of a natural sample. The single known socket-construction capability probe was denied before action; no request occurred. |
+| support-2818-graph | /private/tmp/npm-review-work/shared-next-batch282/native-current282-neocarzinostatin-chromophore-maintained-reader-DATA-001.json; /resolved_view/causal_graphs/0; /resolved_view/bioactivities; /resolved_view/bioactivity_summary; /resolved_view/curation_history | supports | MIBiG PMID:15797213 is entry-grain, LOTUS DOI:10.1021/JA00191A028 is occurrence-grain, and both imported assays share PMID:15640161. The graph retains DOI:10.1074/jbc.M411579200 as historical PRIMARY_EXPERIMENT and DOI:10.2210/pdb1o5p/pdb as DATABASE_ASSERTION. Its PDB 1O5P/CHR/SIFTS P0A3R9 residues 35–147 and 0.1 nM statements remain historical evidence, not new primary or sequence validation. All six history events, including the deliberate BIOACTIVITY graph curation, are preserved. Physical PubChem lines 6016 and 6017 contain exact-key/CID 447545 AIDs 1811 and 977611. Both are Active/type Other binding-affinity records from the same depositor, target 1O5P_A and PMID:15640161; only AID 977611 reports Kd 0.0001 uM. AID 1811 has no numeric endpoint/value. Generic binding-title classification supplies ENZYME_INHIBITOR to both observations and the derived summary without an enzyme-inhibition endpoint. Preserve the observations and source notes; the shared context is not two demonstrated independent catalytic-inhibition experiments. The exclusion row sharing AID 977611 has a different exact chemical identity and does not apply here. |
+| support-2818-classifier | /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py; ACTIVITY_CLASS_PATTERNS lines 128-142; classify_activity lines 160-178; complete assay emission lines 1310-1381 | supports | The maintained title classifier maps generic binding to ENZYME_INHIBITOR; ACTIVE observations receive that class and the summary is derived from the classified observations. Exact static code/stored-output correspondence, no rerun. |
+| support-2818-schema | /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml; bioactivity_summary lines 273-279; BioactivityObservation lines 631-664; complete BioactivityClassEnum lines 920-949 | supports | Summary must be supported by observations. activity_class is optional; OTHER and UNKNOWN exist, but BINDING does not. Schema validity does not provide biological support for a positive class. |
+| support-2818-finding-preparation | /private/tmp/npm-review-work/shared-next-batch282-tentative/support-prep/support-current282-2818-binding-classification-preparation-001.json; /proposed_finding; /proposed_action; /severity_rationale; /exact_retained_evidence; /limits | supports | Earlier independently read direct source/schema/classifier evidence supports the narrow local classification finding. Its author-time future authority slots remain historical; current intake, diagnostic and reader are linked separately here. |
+| root-native-strict_ten | /private/tmp/npm-native-checks/batch-282/validate-strict-selected10-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-282/native-current282-five-gates-execution-001.json | supports | Closed-schema validation of the ten selected owners and any referenced components reported zero errors. |
+| root-native-strict_full | /private/tmp/npm-native-checks/batch-282/validate-all-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-282/native-current282-five-gates-execution-001.json | supports | Full closed-schema validation scanned all 3116 owners and reported zero errors. |
+| root-native-lockfile | /private/tmp/npm-native-checks/batch-282/verify-corpus-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-282/native-current282-five-gates-execution-001.json | supports | PATHS.tsv and filesystem agree on all 3116 records and their pinned filing pathways. |
+| root-native-reproduction | /private/tmp/npm-native-checks/batch-282/verify-reproduction-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-282/native-current282-five-gates-execution-001.json | supports | All 3116 records reproduce byte-identically from the retained inventories and carried curator content. This does not independently validate curator science. |
+| root-native-queue | /private/tmp/npm-native-checks/batch-282/review-queue-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-282/native-current282-five-gates-execution-001.json | supports | The full local queue contains 8922 diagnostic rows; selected-target entries were inspected. Queue diagnostics are leads, not scientific sign-off. |
+
+## Limits And Additional Notes
+
+- Normalized key/formula agreement and a successful local process do not establish independent full graph identity, natural-sample identity, experimental absolute stereochemistry, primary mechanism validation or a native status promotion.
+- Both canonical SMILES comparisons agree and the limited 48-atom map is complete, while full_graph_identity_established remains false. Ten tetrahedral centres and one double bond are specified in both forms. The explicit bond enum is STEREOE at SMILES bond 12 and InChI-derived bond 6; potential-stereo Bond_Cis is a relative descriptor and is not a contrary E/Z assignment. The other small-ring double bond is not an additional unspecified ordinary E/Z candidate in the saved potential-stereo table. The source atom-centre true flag and full declared key remain bounded to the stored representation.
+- Six original undefined-stereo warning lines remain globally unassigned; none is assigned to an individual owner.
+- Primary publications, spectra, sequences, live taxonomy, full QC and complete OAK remain unavailable; source/database claims retain their exact authority.
+- The whole selected owner was read, but scientific completion is partial because full QC, complete ontology authority coverage and external source verification were unavailable. No native status or history was changed.
+- The branch uses cached base ce6a5498df5be51116bd5e0c119023ee62bb5464. Fresh origin/main verification and publication are deferred because the user prohibits all external requests.
+- Fresh current 282 evidence and judgments; prior batches provide interface logic only.
+- No source row, record, campaign or native status was changed; no query, molecular parse, target invocation or outbound request occurred in this lane.
+- ROOT appends five actual native checks and three required unavailable checks. Only selected order 2818 requires a maintained-reader check; unselected companions remain context only.
+- Saved review coverage is distinct from the native SEEDED/REVIEWED curation state. Proposed actions are not performed edits.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261107T033806Z-neocarzinostatin-chromophore
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'Local evidence review: neocarzinostatin chromophore'
+started_at: '2026-11-07T02:55:59.699888Z'
+finished_at: '2026-11-07T03:38:06.868695Z'
+reviewer:
+  identity: Codex root with native_checks, bgc_science and review_support peer agents
+  kind: agent
+  independence: independent
+  independence_basis: This review team inspected existing owner and retained source
+    bytes without editing them; scientific fragments were cross-checked separately
+    from their author. Local validation is not treated as scientific proof.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The chromophore's saved molecular forms and complete binding-graph owner
+  are internally preserved, but imported binding-affinity observations are overclassified
+  as enzyme inhibition by a generic seeder rule. A major confirmed local classification
+  finding remains open; correction belongs in the maintained seeder while retaining
+  the valid observations, Kd, graph and history. Review completion is partial.
+source:
+  git_revision: ce6a5498df5be51116bd5e0c119023ee62bb5464
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: AGENTS.md
+    sha256: 69e4037f8dc97d4b00bb7bb83b41ceca025f6ef578d5c0bf8086f3400becde0b
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: curation/pubchem_bioassay_exclusions.tsv
+    sha256: 76f9cbb17e62a270afed637b5058a553cfe85c754c6c9ec406635f12dae572fa
+    role: context
+  - path: curation/unresolved_taxa.tsv
+    sha256: 86efbda9c09388723a4f24da35e18404032f1549a9088192fbd2020cb846fa43
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/unclassified/neocarzinostatin-chromophore.yaml
+    sha256: 95fbbbb8892b74f993330dc388f57c67c3ac8b9bfd330616dad4dfbdf2ef6f22
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: data/raw/taxon_merged.tsv
+    sha256: 97b3efa66d4fc1679ab65ae547e78b2f627f37bc8e45ae33f2719008fe3863bb
+    role: context
+  - path: data/raw/taxon_non_organism.tsv
+    sha256: f2c1ee257bbbcb0854528196ab1f809d658c27f1c7b2036f7f71f088b52935bb
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/bioassay_exclusions.py
+    sha256: 4a4176e072ac9759aa8a9e88300d7e2de5aaf4ebf30b5c42fcf4c9c0b6cebbb4
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: 11808e60990b3520dbe8f9c50f6574f54cd32165185577a699f988c77f3d27ec
+    role: context
+  - path: src/naturalproductmech/graph_components.py
+    sha256: 10f08517869f482954fd583fd19d5750ef286a76297c231e6c9a5ba8dc023e17
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: src/naturalproductmech/validation/write_validated.py
+    sha256: 4b7648fc5d2e7a5d26ad8bb168dbcae609aaa2694434a8ed5cfcb33fb66ff80a
+    role: context
+scope:
+  description: One complete NaturalProductRecord, including all present scientific
+    claims, history and declared mechanisms; external verification remains unavailable.
+  selection: Campaign path order 2818; one of the next ten uncovered paths selected
+    from the 3116-record corpus. Membership uses the canonical validated catalogue
+    plus retained committed campaign bundles.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CHEBI:29655
+targets:
+- target_id: CHEBI:29655
+  path: data/natural_products/unclassified/neocarzinostatin-chromophore.yaml
+  label: neocarzinostatin chromophore
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained harmonization generator; seeded fields are corrected through
+      maintained inputs and validated regeneration.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Retained MIBiG structure, producer and compound-specific locus assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/npclassifier.tsv
+    role: Pinned computed classification and filing assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Maintained extraction of MIBiG compound names, structures, stereochemistry
+      flags and source provenance.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: Retained ChEBI identifiers, definitions and exact chemical forms.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Retained cited occurrence assertions, distinct from demonstrated production.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/pubchem_bioassay.tsv
+    role: Retained assay rows or empty-assay sentinels; source outcome and title alone
+      do not establish mechanism.
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/pubchem_bioassay_exclusions.tsv
+    role: Exact assay identity exclusion decisions for selected/direct/comparison
+      source context.
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/unresolved_taxa.tsv
+    role: Retained unresolved-taxon diagnostic context used by the bounded curation
+      scan; no fresh taxonomy, forward-merge decision or producer confirmation.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/taxon_merged.tsv
+    role: Retained explicit forward-merge table used by positive and negative taxon
+      queries for each owner; historical route evidence only, no fresh taxonomy.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/taxon_non_organism.tsv
+    role: Retained non-organism table used by positive and negative taxon queries
+      for each owner; diagnostic scope only, not a taxon verdict from file presence.
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/bioassay_exclusions.py
+    role: Maintained source-row identity/digest guard; text-only dependency.
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/producer_strains.py
+    role: 'Maintained producer-strain qualification implementation: source-row and
+      digest predicate, strain-only CURATOR_INFERENCE scope; plaintext dependency,
+      no execution or grade/taxon upgrade.'
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/structure_corrections.py
+    role: 'Maintained row_digest implementation used by qualification guards: sorted
+      ensure_ascii JSON digest only; input presence does not claim an audit or application
+      of other structure-correction behavior.'
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/graph_components.py
+    role: Future maintained complete-owner reader implementation; not invoked in this
+      plan.
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/validation/write_validated.py
+    role: Future maintained complete-owner reader implementation; not invoked in this
+      plan.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/unclassified/neocarzinostatin-chromophore.yaml
+    role: Curator-owned declared graphs, graph references, pathway steps and history;
+      imported molecular-target assertions and other seeded fields retain inventory
+      ownership. Curated graph/pathway changes require the validated writer and a
+      curation event.
+  ownership_note: This review proposes no record edit. Source corrections belong in
+    maintained inventories, implemented curation tables, extractors or the seeder;
+    generated pages are not owners. This mechanism-bearing owner requires separately
+    authorized complete maintained resolution before scientific assessment and draft
+    assembly. Raw owner capture is not a maintained resolved view.
+checks:
+- check_id: local-molecular-diagnostic
+  name: Original local two-form molecular diagnostic
+  command: /private/tmp/npm-record-reviews-20261021/.venv/bin/python -I -S -B /private/tmp/npm-review-work/shared-next-batch282/chemistry-local/diagnose282-001.py
+    ddb26c5b49b323471e1246a18352bf9cf19325f959be014bba541e3c5a780d10 2a94e2ad0338b4b959ef7a27e176ebdb67a903ecd83f041068dac2a3e1f8cd35
+    9f93ed9b2ebbecda2375829542ce823524b14b89071b27fd29f512838c8c18fb
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Both stored forms parsed and retain declared normalized keys; Both canonical
+    SMILES comparisons agree and the limited 48-atom map is complete, while full_graph_identity_established
+    remains false.
+  scope_note: Both stored forms parse as a single neutral C35H33NO12 fragment with
+    48 atoms and 54 bonds. Formula, charge, normalized InChI/key and both canonical
+    SMILES comparisons agree, and the saved chirality-aware map covers 48 atoms. full_graph_identity_established
+    remains false; no natural-sample identity, protein binding, DNA mechanism or enzyme
+    inhibition is proven by these molecular checks. Ten tetrahedral centres and one
+    double bond are specified in both forms. The explicit bond enum is STEREOE at
+    SMILES bond 12 and InChI-derived bond 6; potential-stereo Bond_Cis is a relative
+    descriptor and is not a contrary E/Z assignment. The other small-ring double bond
+    is not an additional unspecified ordinary E/Z candidate in the saved potential-stereo
+    table. The source atom-centre true flag and full declared key remain bounded to
+    the stored representation. Six original undefined-stereo warning lines remain
+    globally unassigned; none is assigned to an individual owner.
+  target_ids:
+  - CHEBI:29655
+  evidence_ids:
+  - support-2818-data
+  - support-2818-execution
+  - support-2818-diagaccept
+  - support-2818-stderr
+- check_id: maintained-mechanism-reader
+  name: Complete offline maintained reader for neocarzinostatin-chromophore
+  command: /private/tmp/npm-record-reviews-20261021/.venv/bin/python -I -B /private/tmp/npm-review-work/shared-next-batch282/read-selected-mechanism-guarded-001.py
+    2818 9f93ed9b2ebbecda2375829542ce823524b14b89071b27fd29f512838c8c18fb 47a64cc85ed023b5acbb1daf5a5b777acc22d4ec7eef6866234f29d916a031ca
+    dd784b70c0144642e6d157b66bc16cdee5be3479b8d73d8f4a893c2b0a138c74 2a94e2ad0338b4b959ef7a27e176ebdb67a903ecd83f041068dac2a3e1f8cd35
+    ddb26c5b49b323471e1246a18352bf9cf19325f959be014bba541e3c5a780d10
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: One original maintained reader preserved the whole chromophore owner, one
+    two-node/one-edge BIOACTIVITY graph, two assays and six histories; zero pathways/components.
+  scope_note: The single accepted maintained call preserves the complete chromophore
+    owner, one BIOACTIVITY graph with two distinct compound/protein nodes, one binds
+    edge with two references, both imported assays and all six histories. No pathway,
+    molecular-target or component root is present. Historical PDB/CHR/SIFTS/apoprotein
+    claims remain attributed; preservation does not validate those claims, enzyme
+    inhibition or the chemical identity of a natural sample. The single known socket-construction
+    capability probe was denied before action; no request occurred.
+  target_ids:
+  - CHEBI:29655
+  evidence_ids:
+  - support-2818-reader-DATA
+  - support-2818-reader-execution
+  - support-2818-reader-acceptance
+  - support-2818-graph
+- check_id: root-native-strict_ten
+  name: strict_ten
+  status: passed
+  required: true
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  target_ids:
+  - CHEBI:29655
+  command: just validate-strict data/natural_products/unclassified/nannocystin-a.yaml
+    data/natural_products/unclassified/napyradiomycin-2.yaml data/natural_products/unclassified/napyradiomycin-3.yaml
+    data/natural_products/unclassified/napyradiomycin-4.yaml data/natural_products/unclassified/necroxime-b.yaml
+    data/natural_products/unclassified/neoantimycin-2.yaml data/natural_products/unclassified/neoantimycin.yaml
+    data/natural_products/unclassified/neocarzinostatin-chromophore.yaml data/natural_products/unclassified/neomediomycin-b.yaml
+    data/natural_products/unclassified/nigrifactin.yaml --workers 1 --out /private/tmp/npm-native-checks/batch-282/validate-strict-selected10-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_ten
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-strict_full
+  name: strict_full
+  status: passed
+  required: true
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  target_ids:
+  - CHEBI:29655
+  command: just validate-all --workers 1 --out /private/tmp/npm-native-checks/batch-282/validate-all-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_full
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-lockfile
+  name: lockfile
+  status: passed
+  required: true
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  target_ids:
+  - CHEBI:29655
+  command: just verify-corpus --summary
+  exit_code: 0
+  evidence_ids:
+  - root-native-lockfile
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-reproduction
+  name: reproduction
+  status: passed
+  required: true
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  target_ids:
+  - CHEBI:29655
+  command: just verify-reproduction
+  exit_code: 0
+  evidence_ids:
+  - root-native-reproduction
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-queue
+  name: queue
+  status: passed
+  required: true
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  target_ids:
+  - CHEBI:29655
+  command: just review-queue --tsv /private/tmp/npm-native-checks/batch-282/review-queue-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-queue
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-full-qc
+  name: Full just qc
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:29655
+  summary: 'Not run under the external-request prohibition: the complete recipe includes
+    upstream vendored synchronization. The five executed local checks are recorded
+    separately.'
+- check_id: root-ontology-authorities
+  name: Complete OAK identifier/label authority check
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:29655
+  summary: Complete offline ontology authority coverage was not established for this
+    run; no ontology retrieval or remote resolution was attempted. Retained taxonomy
+    evidence has only its explicitly stated local scope.
+- check_id: root-primary-and-live-sources
+  name: Primary literature and current structured database/identifier verification
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:29655
+  summary: All external requests are prohibited by the user. Fresh database and identifier
+    verification and complete primary-literature coverage are unavailable. Any retained
+    original literature actually inspected is recorded separately with its historical
+    scope.
+evidence:
+- evidence_id: support-2818-owner
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/unclassified/neocarzinostatin-chromophore.yaml
+  locator: 'complete file: identifier, label, chemical_structure, source_concepts,
+    producer_organisms, biosynthetic_gene_clusters, classification, curation_history
+    and present mechanism/activity roots'
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: Complete current owner retained; generated source facts and curator-owned
+    annotations remain distinct.
+  snapshot_sha256: 95fbbbb8892b74f993330dc388f57c67c3ac8b9bfd330616dad4dfbdf2ef6f22
+- evidence_id: support-2818-capture
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch282/owner-capture-DATA-001.json
+  locator: /records/7/owner_document; /records/7/component_captures
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: Whole accepted owner capture; no protein, companion or component identity
+    transfer.
+  snapshot_sha256: 2a94e2ad0338b4b959ef7a27e176ebdb67a903ecd83f041068dac2a3e1f8cd35
+- evidence_id: support-2818-source
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch282-tentative/support-prep/support-current282-assigned-source-reading-001.json
+  locator: /contexts/8; /selected_counts; /counts; /global_cautions
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: Complete assigned saved source context. Own selected credit is 20 rows/235
+    fields/45 frames/28 negatives; six Argimycin companion contexts are separate.
+    ROOT reread two assay rows with zero additional primary credit.
+  snapshot_sha256: 804fbc005d55b5ba152421dbd9b555a8711279b69eb88b069bcbd7465d482c85
+- evidence_id: support-2818-plan
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch282-tentative/bgc-prep/bgc-conditional282-target-input-plan-001.json
+  locator: /records/7; /source_placement_count; /unique_source_path_count
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: Actual 460-placement/65-path plan; this owner has 46 captured inputs.
+  snapshot_sha256: 92b2c735b1716c07a2fea1c7c34caf4ad63fa45e2b2be7236ccf7ad97beaa06b
+- evidence_id: support-2818-planaccept
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch282/root-current282-input-plan-acceptance-001.json
+  locator: /status; /accepted; /input_plan
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: ROOT accepted the original current source plan.
+  snapshot_sha256: 8b8a6476268a7af1cc5b9cae8af2eb5909613b261055a9801dad3be298d4a294
+- evidence_id: support-2818-notes
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch282-tentative/bgc-prep/bgc-conditional282-source-scope-notes-001.json
+  locator: /reading; /reading_reconciliation; /cautions; /curation
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: Current notes retain BGC 26 plus Support 37 positive placements; Native
+    and overlapping ROOT readings add zero primary rows. Attribution and exact source
+    grain are preserved.
+  snapshot_sha256: 6a37d82b406b849e574c64989542ecd594b7ba449e5b64126cc88856c975164d
+- evidence_id: support-2818-intake
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch282/intakes-001/2818-inspect-001.json
+  locator: /status; /source; /targets
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: Actual intake fixes generated target, maintained owners and current relative
+    input hashes.
+  snapshot_sha256: 47a64cc85ed023b5acbb1daf5a5b777acc22d4ec7eef6866234f29d916a031ca
+- evidence_id: support-2818-intakeaccept
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch282/root-current282-intake-acceptance-001.json
+  locator: /status; /accepted; /intake_summary
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: ROOT accepted all ten original intakes, all exit zero with empty stderr.
+  snapshot_sha256: bcc44a28603093d5698cc3314edd9fcd4d00da9d335f3d01c0fd69bb09375907
+- evidence_id: support-2818-data
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch282/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/7/smiles; /records/7/inchi; /records/7/comparisons; /records/7/atom_correspondence;
+    /records/7/literal_InChI_layers; /records/7/formula_comparison_scope
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: Both stored forms parse as a single neutral C35H33NO12 fragment with 48
+    atoms and 54 bonds. Formula, charge, normalized InChI/key and both canonical SMILES
+    comparisons agree, and the saved chirality-aware map covers 48 atoms. full_graph_identity_established
+    remains false; no natural-sample identity, protein binding, DNA mechanism or enzyme
+    inhibition is proven by these molecular checks. Both canonical SMILES comparisons
+    agree and the limited 48-atom map is complete, while full_graph_identity_established
+    remains false.
+  snapshot_sha256: b8723a2c2f820f7bded66a674a1aa9228bf11d19c25f92fb816090125edecfc9
+- evidence_id: support-2818-stereo
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch282/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/7/smiles/computed/atoms; /records/7/smiles/computed/potential_stereo;
+    /records/7/smiles/computed/bonds; /records/7/inchi/computed/atoms; /records/7/inchi/computed/potential_stereo;
+    /records/7/inchi/computed/bonds
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: Ten tetrahedral centres and one double bond are specified in both forms.
+    The explicit bond enum is STEREOE at SMILES bond 12 and InChI-derived bond 6;
+    potential-stereo Bond_Cis is a relative descriptor and is not a contrary E/Z assignment.
+    The other small-ring double bond is not an additional unspecified ordinary E/Z
+    candidate in the saved potential-stereo table. The source atom-centre true flag
+    and full declared key remain bounded to the stored representation.
+  snapshot_sha256: b8723a2c2f820f7bded66a674a1aa9228bf11d19c25f92fb816090125edecfc9
+- evidence_id: support-2818-motifs
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch282/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/7/smiles/computed/motifs; /records/7/smiles/computed/rings; /records/7/smiles/computed/bonds;
+    /records/7/smiles/computed/atoms; /records/7/inchi/computed/motifs; /records/7/inchi/computed/rings;
+    /records/7/inchi/computed/bonds; /records/7/inchi/computed/atoms
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: 'The complete saved tables retain seven ring rows: a saturated C5O ring,
+    a five-membered carbocycle, a nine-membered enediyne-containing cycle, an epoxide,
+    a five-membered cyclic carbonate and two fused aromatic six-rings. The two triple
+    bonds are SMILES bonds 14 and 19. Carbonyls occur at SMILES carbons 24 and 28;
+    the motif lists three ester-like C(=O)-O-C links because the cyclic carbonate
+    contributes two links at one carbonyl, not three distinct carbonyls. Glycosidic
+    oxygen 7 links C5O-ring carbon 5 to scaffold carbon 8; the ring carries an N-methylamino
+    substituent. These local motifs do not independently assign a sugar residue name
+    or biological function.'
+  snapshot_sha256: b8723a2c2f820f7bded66a674a1aa9228bf11d19c25f92fb816090125edecfc9
+- evidence_id: support-2818-molecularreading
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch282-tentative/support-prep/support-current282-last-five-molecular-intake-reading-001.json
+  locator: /records/2; /counts; /warnings
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: Complete ten saved forms personally read, 492 atoms/510 bonds/28 ring rows/120
+    potential-stereo rows; no molecular replay. Six original undefined-stereo warning
+    lines remain globally unassigned; none is assigned to an individual owner.
+  snapshot_sha256: e4ad9a6b3627859a47aaf7335070c481f37fc27f761531c369b0431e70053d7d
+- evidence_id: support-2818-execution
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch282/chemistry-local/diagnostic-execution-001.json
+  locator: /command; /exit_code; /stdout; /stderr; /retries
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: Single original diagnostic command and retained streams; no replay.
+  snapshot_sha256: edbe8e835223207019e1654a83719f8f5a4356c9c4ce4bf65b3416defeeced22
+- evidence_id: support-2818-diagaccept
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch282/chemistry-local/root-current282-diagnostic-acceptance-001.json
+  locator: /status; /accepted; /diagnostic; /execution
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: ROOT accepted the original stored-form diagnostic.
+  snapshot_sha256: aa0cfe84870e49a819a87cbbc8094e2522a8e8b0143bd6bb21bcb29d1211679b
+- evidence_id: support-2818-stderr
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch282/chemistry-local/diagnostic-original-001.stderr
+  locator: complete six original warning lines
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: Six original undefined-stereo warning lines remain globally unassigned;
+    none is assigned to an individual owner.
+  snapshot_sha256: da9c0e81ec69521d5ee373f4100f63c8d2d23091a4f6562a0e39bfafc12e03f6
+- evidence_id: support-2818-taxonomy
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch282-tentative/native-prep/native-current282-cached-taxonomy-reading-001.json
+  locator: /context_interpretations/17; /physical_negative_query_scopes/17; /whole_stanzas
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: Preserve the full source producer qualifier Streptomyces carzinostaticus
+    subsp. neocarzinostaticus (167636), BGC0000112 and AY117439.1:10097–72712. LOTUS
+    uses the shorter source label Streptomyces carzinostaticus at the same ID; its
+    occurrence and producer assertions/citations remain distinct. The cache retains
+    the var. neocarzinostaticus synonym without requiring a label or rank repair.
+    Assays 1811 and 977611 belong to the retained chromophore full key/CID 447545,
+    not to an apoprotein or another structure sharing an assay ID. All saved source
+    taxon IDs have complete cache stanzas; no forward merge or nonorganism match is
+    retained for this context. Cached labels and synonyms do not establish current
+    remote taxonomy, lineage, production or strain identity.
+  snapshot_sha256: 1af1cb0b6cd2ad65ea34a03d0f9c8a746e250c6b9e51cd28c7bc15238b82c98a
+- evidence_id: support-2818-curation
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next-batch282-tentative/native-prep/native-current282-implemented-curation-scan-001.json
+  locator: /counts; /exact_predicates; /exact_applicability_resolution; /applied_rows;
+    /interpretation
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: No exact applicable maintained correction; lexical names, related BGC rows
+    and an assay exclusion for another complete chemical identity do not transfer
+    decisions.
+  snapshot_sha256: f6c068d113e15f780e75e277a2f18431aca40b12e9343964db87f8043c2c7fd5
+  search_scope: Native complete nine-table/3422-row scan, exact owner/full-key/BGC/occurrence/assay
+    predicates; no new query or universal absence.
+- evidence_id: support-2818-producerpolicy
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/conf/producer_evidence.tsv
+  locator: complete method grading table
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: Producer evidence and locus methods answer different questions; missing
+    methods retain their stated grade.
+  snapshot_sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+- evidence_id: support-2818-stereopolicy
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py
+  locator: lines 142-173, complete structure_fields; specifically lines 167-168 FindMolChiralCenters
+    and unassigned atom-centre predicate
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: Source stereo_complete covers atom centres, not E/Z completeness or natural
+    identity.
+  snapshot_sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+- evidence_id: support-2818-filingpolicy
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: lines 295-306, choose_pathway
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: One supported normalized pathway selects filing; multiple, none or unsupported
+    values retain UNCLASSIFIED.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: support-2818-gates
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch282/root-current282-five-gates-acceptance-001.json
+  locator: /records; /all_native_gates_passed; /selected_queue_rows; /unavailable_required_gates
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: Five local gates pass, with required QC/OAK unavailable. Queue entries
+    remain diagnostic leads, not scientific findings.
+  snapshot_sha256: c371d0597706c9c881bd2f515a1314108d3eaa162d3ff8d18acd48b74db9239e
+- evidence_id: support-2818-history
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch282/owner-capture-DATA-001.json
+  locator: /records/7/owner_document/curation_history; /records/7/owner_document/source_concepts
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: MIBiG PMID:15797213 is entry-grain, LOTUS DOI:10.1021/JA00191A028 is occurrence-grain,
+    and both imported assays share PMID:15640161. The graph retains DOI:10.1074/jbc.M411579200
+    as historical PRIMARY_EXPERIMENT and DOI:10.2210/pdb1o5p/pdb as DATABASE_ASSERTION.
+    Its PDB 1O5P/CHR/SIFTS P0A3R9 residues 35–147 and 0.1 nM statements remain historical
+    evidence, not new primary or sequence validation. All six history events, including
+    the deliberate BIOACTIVITY graph curation, are preserved.
+  snapshot_sha256: 2a94e2ad0338b4b959ef7a27e176ebdb67a903ecd83f041068dac2a3e1f8cd35
+- evidence_id: support-2818-scope
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch282-tentative/bgc-prep/bgc-conditional282-target-input-plan-001.json
+  locator: /records/7/complete_root_keys; /records/7/declared_mechanism_roots_literal;
+    /records/7/component_paths; /records/7/complete_raw_mechanism_sections
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: The single accepted maintained call preserves the complete chromophore
+    owner, one BIOACTIVITY graph with two distinct compound/protein nodes, one binds
+    edge with two references, both imported assays and all six histories. No pathway,
+    molecular-target or component root is present. Historical PDB/CHR/SIFTS/apoprotein
+    claims remain attributed; preservation does not validate those claims, enzyme
+    inhibition or the chemical identity of a natural sample. The single known socket-construction
+    capability probe was denied before action; no request occurred.
+  snapshot_sha256: 92b2c735b1716c07a2fea1c7c34caf4ad63fa45e2b2be7236ccf7ad97beaa06b
+- evidence_id: support-2818-query-mibig_compounds
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next-batch282-tentative/bgc-prep/bgc-conditional282-source-inventory-DATA-001.json
+  locator: /contexts/17/source_scope_inventory/joins/mibig_compounds
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: Complete saved mibig_compounds frame with 1 positive placements read.
+  snapshot_sha256: cab9ddfed1920f3e3be3dbc29c5ec8cfb2b2e9ed4bbdecd7af1472a805f26387
+  search_scope: Retained uncapped predicate exact complete standard_inchi_key equality
+    and query "QZGIWPZCWHMVQL-UIYAJPBUSA-N" only; no source replay or universal absence.
+- evidence_id: support-2818-table-mibig_compounds
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv
+  locator: physical line 149, raw UTF-8 row SHA-256 380fac07b6fd5cd9de0e1b2b1fe72a27b878caea7c71f48dbfc7b96f697a3a17
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: CHEBI:29655 and full key QZGIWPZCWHMVQL-UIYAJPBUSA-N identify the chromophore,
+    distinct from its apoprotein UniProtKB:P0A3R9. MIBiG BGC0000112:1 uses the broader
+    name neocarzinostatin, retained as a RELATED_SYNONYM; the exact-key 3-star ChEBI
+    row supplies the chromophore label and definition. These source concepts are preserved
+    without merging the protein and small molecule or reparsing the alternate ChEBI
+    SMILES. BGC0000112 version 5, compound index 1, attributes Streptomyces carzinostaticus
+    subsp. neocarzinostaticus (NCBITaxon:167636) with BGC_CHARACTERIZED producer grade.
+    Active status, questionable quality and complete entry status are retained literally;
+    these grades do not establish the imported enzyme-inhibitor class. AY117439.1:10097–72712
+    is CLUSTER_DEMONSTRATED with Knock-out studies, Enzymatic assays and gene-expression
+    correlation. The PKS/Iterative type I classification and entry-level PMID:15797213
+    remain source assertions. Biosynthetic locus enzymatic-assay evidence does not
+    by itself show that the compound inhibits an enzyme.
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: support-2818-query-chebi_structures
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next-batch282-tentative/bgc-prep/bgc-conditional282-source-inventory-DATA-001.json
+  locator: /contexts/17/source_scope_inventory/joins/chebi_structures
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: Complete saved chebi_structures frame with 1 positive placements read.
+  snapshot_sha256: cab9ddfed1920f3e3be3dbc29c5ec8cfb2b2e9ed4bbdecd7af1472a805f26387
+  search_scope: Retained uncapped predicate exact complete standard_inchi_key equality
+    and query "QZGIWPZCWHMVQL-UIYAJPBUSA-N" only; no source replay or universal absence.
+- evidence_id: support-2818-table-chebi_structures
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/chebi_structures.tsv
+  locator: physical line 6920, raw UTF-8 row SHA-256 bc2004fe054474c5bbb0db3ba9a671e26b09e6408c3e697d82fc3483f71dbe3a
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: Exact retained complete-key source row; source grain and claim scope remain
+    bounded.
+  snapshot_sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+- evidence_id: support-2818-query-lotus_occurrences
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next-batch282-tentative/bgc-prep/bgc-conditional282-source-inventory-DATA-001.json
+  locator: /contexts/17/source_scope_inventory/joins/lotus_occurrences
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: Complete saved lotus_occurrences frame with 1 positive placements read.
+  snapshot_sha256: cab9ddfed1920f3e3be3dbc29c5ec8cfb2b2e9ed4bbdecd7af1472a805f26387
+  search_scope: Retained uncapped predicate exact complete standard_inchi_key equality
+    and query "QZGIWPZCWHMVQL-UIYAJPBUSA-N" only; no source replay or universal absence.
+- evidence_id: support-2818-table-lotus_occurrences
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical line 7602, raw UTF-8 row SHA-256 3753933b5f15295de9fb9adf3e4f192cf557a1c97bc86f81f8a30ab87b50599d
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: LOTUS physical line 7602 records Streptomyces carzinostaticus at NCBITaxon:167636,
+    DOI:10.1021/JA00191A028 and structure Q26847067. The shorter occurrence label
+    does not erase the producer's subspecies qualifier or make occurrence and production
+    independent confirmations. The historical ChEBI definition about apoprotein protection
+    and release to DNA remains attributed, not newly verified.
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2818-query-cyanometdb_occurrences
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next-batch282-tentative/bgc-prep/bgc-conditional282-source-inventory-DATA-001.json
+  locator: /contexts/17/source_scope_inventory/joins/cyanometdb_occurrences
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: Complete saved cyanometdb_occurrences frame with 0 positive placements
+    read.
+  snapshot_sha256: cab9ddfed1920f3e3be3dbc29c5ec8cfb2b2e9ed4bbdecd7af1472a805f26387
+  search_scope: Retained uncapped predicate exact complete standard_inchi_key equality
+    and query "QZGIWPZCWHMVQL-UIYAJPBUSA-N" only; no source replay or universal absence.
+- evidence_id: support-2818-query-npclassifier
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next-batch282-tentative/bgc-prep/bgc-conditional282-source-inventory-DATA-001.json
+  locator: /contexts/17/source_scope_inventory/joins/npclassifier
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: Complete saved npclassifier frame with 1 positive placements read.
+  snapshot_sha256: cab9ddfed1920f3e3be3dbc29c5ec8cfb2b2e9ed4bbdecd7af1472a805f26387
+  search_scope: Retained uncapped predicate exact complete standard_inchi_key equality
+    and query "QZGIWPZCWHMVQL-UIYAJPBUSA-N" only; no source replay or universal absence.
+- evidence_id: support-2818-table-npclassifier
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv
+  locator: physical line 2067, raw UTF-8 row SHA-256 6934a07b471532f44137254e3a1be3d73df3738a9fd7e9eb002ea2e6b3d2a1fb
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: NPClassifier retains Carbohydrates|Polyketides, Macrolides|Aminosugars
+    and aminoglycosides, Aminosugars|Enediynes and is_glycoside true at the retained
+    2026-09-07 model version. Multiple predicted pathways retain UNCLASSIFIED filing.
+    The observed C5O-linked enediyne topology is separate from model and biological
+    activity assertions; the enzyme-inhibitor class requires the bounded maintained
+    correction described in the finding.
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: support-2818-query-pubchem_bioassay
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next-batch282-tentative/bgc-prep/bgc-conditional282-source-inventory-DATA-001.json
+  locator: /contexts/17/source_scope_inventory/joins/pubchem_bioassay
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: Complete saved pubchem_bioassay frame with 2 positive placements read.
+  snapshot_sha256: cab9ddfed1920f3e3be3dbc29c5ec8cfb2b2e9ed4bbdecd7af1472a805f26387
+  search_scope: Retained uncapped predicate exact complete standard_inchi_key equality
+    and query "QZGIWPZCWHMVQL-UIYAJPBUSA-N" only; no source replay or universal absence.
+- evidence_id: support-2818-table-pubchem_bioassay
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: physical line 6016, raw UTF-8 row SHA-256 23552092ddd6f3d519b396acfbbae383357d3e257e1a0446b4f00d304a70314b;
+    physical line 6017, raw UTF-8 row SHA-256 6af7fb3c282ca31bcfb418ed1a566cff829eae5edc4d95e95c4d948ed79eae14
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: Physical PubChem lines 6016 and 6017 contain exact-key/CID 447545 AIDs
+    1811 and 977611. Both are Active/type Other binding-affinity records from the
+    same depositor, target 1O5P_A and PMID:15640161; only AID 977611 reports Kd 0.0001
+    uM. AID 1811 has no numeric endpoint/value. Generic binding-title classification
+    supplies ENZYME_INHIBITOR to both observations and the derived summary without
+    an enzyme-inhibition endpoint. Preserve the observations and source notes; the
+    shared context is not two demonstrated independent catalytic-inhibition experiments.
+    The exclusion row sharing AID 977611 has a different exact chemical identity and
+    does not apply here.
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2818-query-bindingdb_targets
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next-batch282-tentative/bgc-prep/bgc-conditional282-source-inventory-DATA-001.json
+  locator: /contexts/17/source_scope_inventory/joins/bindingdb_targets
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: Complete saved bindingdb_targets frame with 0 positive placements read.
+  snapshot_sha256: cab9ddfed1920f3e3be3dbc29c5ec8cfb2b2e9ed4bbdecd7af1472a805f26387
+  search_scope: Retained uncapped predicate exact complete standard_inchi_key equality
+    and query "QZGIWPZCWHMVQL-UIYAJPBUSA-N" only; no source replay or universal absence.
+- evidence_id: support-2818-query-antibioticmech_inchikeys
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next-batch282-tentative/bgc-prep/bgc-conditional282-source-inventory-DATA-001.json
+  locator: /contexts/17/source_scope_inventory/joins/antibioticmech_inchikeys
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: Complete saved antibioticmech_inchikeys frame with 0 positive placements
+    read.
+  snapshot_sha256: cab9ddfed1920f3e3be3dbc29c5ec8cfb2b2e9ed4bbdecd7af1472a805f26387
+  search_scope: Retained uncapped predicate exact complete standard_inchi_key equality
+    and query "QZGIWPZCWHMVQL-UIYAJPBUSA-N" only; no source replay or universal absence.
+- evidence_id: support-2818-query-chebi_origins
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next-batch282-tentative/bgc-prep/bgc-conditional282-source-inventory-DATA-001.json
+  locator: /contexts/17/source_scope_inventory/joins/chebi_origins
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: Complete saved chebi_origins frame with 0 positive placements read.
+  snapshot_sha256: cab9ddfed1920f3e3be3dbc29c5ec8cfb2b2e9ed4bbdecd7af1472a805f26387
+  search_scope: Retained uncapped predicate exact chebi_id from exact full-key structure
+    rows and query ["CHEBI:29655"] only; no source replay or universal absence.
+- evidence_id: support-2818-reader-DATA
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch282/native-current282-neocarzinostatin-chromophore-maintained-reader-DATA-001.json
+  locator: /resolved_view; /raw_owner; /expected_view; /counts; /reader_call_count;
+    /denials; /unexpected_denials; /external_requests
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: The single accepted maintained call preserves the complete chromophore
+    owner, one BIOACTIVITY graph with two distinct compound/protein nodes, one binds
+    edge with two references, both imported assays and all six histories. No pathway,
+    molecular-target or component root is present. Historical PDB/CHR/SIFTS/apoprotein
+    claims remain attributed; preservation does not validate those claims, enzyme
+    inhibition or the chemical identity of a natural sample. The single known socket-construction
+    capability probe was denied before action; no request occurred.
+  snapshot_sha256: 27864ec8eb8b3439dc5a2595068851c29c98f6a1bc86a9826efd4b938b08a058
+- evidence_id: support-2818-reader-execution
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch282/native-current282-neocarzinostatin-chromophore-reader-execution-001.json
+  locator: /command; /exit_code
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: Original sole maintained-reader execution, with zero exit and no replay.
+  snapshot_sha256: db884623ab00d3e53c6ff5c5eabf98a76550480624d94f3c310b971285001e6c
+- evidence_id: support-2818-reader-acceptance
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch282/root-current282-neocarzinostatin-chromophore-reader-acceptance-001.json
+  locator: /accepted; /review_check_contract; /verification; /limits
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: ROOT accepted the original complete owner-preserving reader; this does
+    not validate enzyme inhibition or historical primary assertions.
+  snapshot_sha256: ab0b922994c0b1ea5771e751caa2d122baa72435e980f28a6e44bca60139fee5
+- evidence_id: support-2818-reader-reading
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch282-tentative/support-prep/support-current282-2818-whole-maintained-reader-reading-001.json
+  locator: /whole_returned_view; /interpretation; /counts; /review_check_contract
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: The single accepted maintained call preserves the complete chromophore
+    owner, one BIOACTIVITY graph with two distinct compound/protein nodes, one binds
+    edge with two references, both imported assays and all six histories. No pathway,
+    molecular-target or component root is present. Historical PDB/CHR/SIFTS/apoprotein
+    claims remain attributed; preservation does not validate those claims, enzyme
+    inhibition or the chemical identity of a natural sample. The single known socket-construction
+    capability probe was denied before action; no request occurred.
+  snapshot_sha256: 906523b8da6e9541fcccb075b7013eca922c2fadc0d8bc8f186150d7f00f221a
+- evidence_id: support-2818-graph
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch282/native-current282-neocarzinostatin-chromophore-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/0; /resolved_view/bioactivities; /resolved_view/bioactivity_summary;
+    /resolved_view/curation_history
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: MIBiG PMID:15797213 is entry-grain, LOTUS DOI:10.1021/JA00191A028 is occurrence-grain,
+    and both imported assays share PMID:15640161. The graph retains DOI:10.1074/jbc.M411579200
+    as historical PRIMARY_EXPERIMENT and DOI:10.2210/pdb1o5p/pdb as DATABASE_ASSERTION.
+    Its PDB 1O5P/CHR/SIFTS P0A3R9 residues 35–147 and 0.1 nM statements remain historical
+    evidence, not new primary or sequence validation. All six history events, including
+    the deliberate BIOACTIVITY graph curation, are preserved. Physical PubChem lines
+    6016 and 6017 contain exact-key/CID 447545 AIDs 1811 and 977611. Both are Active/type
+    Other binding-affinity records from the same depositor, target 1O5P_A and PMID:15640161;
+    only AID 977611 reports Kd 0.0001 uM. AID 1811 has no numeric endpoint/value.
+    Generic binding-title classification supplies ENZYME_INHIBITOR to both observations
+    and the derived summary without an enzyme-inhibition endpoint. Preserve the observations
+    and source notes; the shared context is not two demonstrated independent catalytic-inhibition
+    experiments. The exclusion row sharing AID 977611 has a different exact chemical
+    identity and does not apply here.
+  snapshot_sha256: 27864ec8eb8b3439dc5a2595068851c29c98f6a1bc86a9826efd4b938b08a058
+- evidence_id: support-2818-classifier
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: ACTIVITY_CLASS_PATTERNS lines 128-142; classify_activity lines 160-178;
+    complete assay emission lines 1310-1381
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: The maintained title classifier maps generic binding to ENZYME_INHIBITOR;
+    ACTIVE observations receive that class and the summary is derived from the classified
+    observations. Exact static code/stored-output correspondence, no rerun.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: support-2818-schema
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: bioactivity_summary lines 273-279; BioactivityObservation lines 631-664;
+    complete BioactivityClassEnum lines 920-949
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: Summary must be supported by observations. activity_class is optional;
+    OTHER and UNKNOWN exist, but BINDING does not. Schema validity does not provide
+    biological support for a positive class.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: support-2818-finding-preparation
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch282-tentative/support-prep/support-current282-2818-binding-classification-preparation-001.json
+  locator: /proposed_finding; /proposed_action; /severity_rationale; /exact_retained_evidence;
+    /limits
+  accessed_at: '2026-11-07T03:34:22.869459Z'
+  support: supports
+  summary: Earlier independently read direct source/schema/classifier evidence supports
+    the narrow local classification finding. Its author-time future authority slots
+    remain historical; current intake, diagnostic and reader are linked separately
+    here.
+  snapshot_sha256: 03c8c381661146323cfc988beb52d9370caa1feb578c14f3feee2ada51e2fe87
+- evidence_id: root-native-strict_ten
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-282/validate-strict-selected10-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-282/native-current282-five-gates-execution-001.json
+  accessed_at: '2026-11-07T02:57:33.203784Z'
+  support: supports
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  snapshot_sha256: 64d3574e79778146d92ca263450b21c2b1069ed2e3c619de74334e87646ea9bb
+- evidence_id: root-native-strict_full
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-282/validate-all-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-282/native-current282-five-gates-execution-001.json
+  accessed_at: '2026-11-07T02:57:58.096578Z'
+  support: supports
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  snapshot_sha256: fe9b4651b4ba89812db89378bcc5bd759f45f66d8d27a8bae471ff3e72ef0180
+- evidence_id: root-native-lockfile
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-282/verify-corpus-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-282/native-current282-five-gates-execution-001.json
+  accessed_at: '2026-11-07T02:58:17.725128Z'
+  support: supports
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  snapshot_sha256: 254f171c7dff0f1ecbee5f47f75d2b7046143ae7fc499d9a1c08263e1c5125d8
+- evidence_id: root-native-reproduction
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-282/verify-reproduction-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-282/native-current282-five-gates-execution-001.json
+  accessed_at: '2026-11-07T02:58:51.640951Z'
+  support: supports
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  snapshot_sha256: cfc38f4e3f434e7f3651975f2cb228e5cda848476b2c53d1636d8746b794237a
+- evidence_id: root-native-queue
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-282/review-queue-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-282/native-current282-five-gates-execution-001.json
+  accessed_at: '2026-11-07T02:59:03.312006Z'
+  support: supports
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  snapshot_sha256: 242feea98ad824bbb95284fc6ee693a3464fd1917a299d276b43d18e23f24d2a
+assessments:
+- assessment_id: support-2818-identity-assessment
+  area: identity
+  topic: Exact retained compound grounding
+  summary: CHEBI:29655 and full key QZGIWPZCWHMVQL-UIYAJPBUSA-N identify the chromophore,
+    distinct from its apoprotein UniProtKB:P0A3R9. MIBiG BGC0000112:1 uses the broader
+    name neocarzinostatin, retained as a RELATED_SYNONYM; the exact-key 3-star ChEBI
+    row supplies the chromophore label and definition. These source concepts are preserved
+    without merging the protein and small molecule or reparsing the alternate ChEBI
+    SMILES.
+  outcome: supported
+  target_ids:
+  - CHEBI:29655
+  evidence_ids:
+  - support-2818-owner
+  - support-2818-capture
+  - support-2818-source
+  - support-2818-intake
+  - support-2818-curation
+  - support-2818-plan
+  - support-2818-table-mibig_compounds
+  - support-2818-table-chebi_structures
+  - support-2818-table-lotus_occurrences
+  - support-2818-table-npclassifier
+  - support-2818-table-pubchem_bioassay
+  dimensions:
+  - name: standard_inchi_key
+    definition: Full key rather than label matching.
+    value: QZGIWPZCWHMVQL-UIYAJPBUSA-N
+    evidence_ids:
+    - support-2818-owner
+    - support-2818-capture
+    - support-2818-source
+    - support-2818-intake
+    - support-2818-curation
+    - support-2818-plan
+    - support-2818-table-mibig_compounds
+    - support-2818-table-chebi_structures
+    - support-2818-table-lotus_occurrences
+    - support-2818-table-npclassifier
+    - support-2818-table-pubchem_bioassay
+  - name: grounding_scope
+    definition: Retained source identity is distinct from natural identity.
+    value: CHEBI:29655 and full key QZGIWPZCWHMVQL-UIYAJPBUSA-N identify the chromophore,
+      distinct from its apoprotein UniProtKB:P0A3R9. MIBiG BGC0000112:1 uses the broader
+      name neocarzinostatin, retained as a RELATED_SYNONYM; the exact-key 3-star ChEBI
+      row supplies the chromophore label and definition. These source concepts are
+      preserved without merging the protein and small molecule or reparsing the alternate
+      ChEBI SMILES.
+    evidence_ids:
+    - support-2818-owner
+    - support-2818-capture
+    - support-2818-source
+    - support-2818-intake
+    - support-2818-curation
+    - support-2818-plan
+    - support-2818-table-mibig_compounds
+    - support-2818-table-chebi_structures
+    - support-2818-table-lotus_occurrences
+    - support-2818-table-npclassifier
+    - support-2818-table-pubchem_bioassay
+- assessment_id: support-2818-representation-assessment
+  area: representation
+  topic: Saved molecular forms and stereochemical scope
+  summary: 'Both stored forms parse as a single neutral C35H33NO12 fragment with 48
+    atoms and 54 bonds. Formula, charge, normalized InChI/key and both canonical SMILES
+    comparisons agree, and the saved chirality-aware map covers 48 atoms. full_graph_identity_established
+    remains false; no natural-sample identity, protein binding, DNA mechanism or enzyme
+    inhibition is proven by these molecular checks. The complete saved tables retain
+    seven ring rows: a saturated C5O ring, a five-membered carbocycle, a nine-membered
+    enediyne-containing cycle, an epoxide, a five-membered cyclic carbonate and two
+    fused aromatic six-rings. The two triple bonds are SMILES bonds 14 and 19. Carbonyls
+    occur at SMILES carbons 24 and 28; the motif lists three ester-like C(=O)-O-C
+    links because the cyclic carbonate contributes two links at one carbonyl, not
+    three distinct carbonyls. Glycosidic oxygen 7 links C5O-ring carbon 5 to scaffold
+    carbon 8; the ring carries an N-methylamino substituent. These local motifs do
+    not independently assign a sugar residue name or biological function. Both canonical
+    SMILES comparisons agree and the limited 48-atom map is complete, while full_graph_identity_established
+    remains false. Normalized key/formula agreement and a successful local process
+    do not establish independent full graph identity, natural-sample identity, experimental
+    absolute stereochemistry, primary mechanism validation or a native status promotion.'
+  outcome: supported
+  target_ids:
+  - CHEBI:29655
+  evidence_ids:
+  - support-2818-data
+  - support-2818-stereo
+  - support-2818-motifs
+  - support-2818-molecularreading
+  - support-2818-execution
+  - support-2818-diagaccept
+  - support-2818-stereopolicy
+  - support-2818-plan
+  dimensions:
+  - name: stereochemistry_scope
+    definition: Specified atom centres and representation-dependent candidates remain
+      distinct.
+    value: Ten tetrahedral centres and one double bond are specified in both forms.
+      The explicit bond enum is STEREOE at SMILES bond 12 and InChI-derived bond 6;
+      potential-stereo Bond_Cis is a relative descriptor and is not a contrary E/Z
+      assignment. The other small-ring double bond is not an additional unspecified
+      ordinary E/Z candidate in the saved potential-stereo table. The source atom-centre
+      true flag and full declared key remain bounded to the stored representation.
+    evidence_ids:
+    - support-2818-data
+    - support-2818-stereo
+    - support-2818-motifs
+    - support-2818-molecularreading
+    - support-2818-execution
+    - support-2818-diagaccept
+    - support-2818-stereopolicy
+    - support-2818-plan
+  - name: representation_correspondence
+    definition: Saved limited comparison, not full identity.
+    value: Both canonical SMILES comparisons agree and the limited 48-atom map is
+      complete, while full_graph_identity_established remains false. Normalized key/formula
+      agreement and a successful local process do not establish independent full graph
+      identity, natural-sample identity, experimental absolute stereochemistry, primary
+      mechanism validation or a native status promotion.
+    evidence_ids:
+    - support-2818-data
+    - support-2818-stereo
+    - support-2818-motifs
+    - support-2818-molecularreading
+    - support-2818-execution
+    - support-2818-diagaccept
+    - support-2818-stereopolicy
+    - support-2818-plan
+- assessment_id: support-2818-provenance-assessment
+  area: provenance
+  topic: Compound-specific producer, locus and taxon
+  summary: BGC0000112 version 5, compound index 1, attributes Streptomyces carzinostaticus
+    subsp. neocarzinostaticus (NCBITaxon:167636) with BGC_CHARACTERIZED producer grade.
+    Active status, questionable quality and complete entry status are retained literally;
+    these grades do not establish the imported enzyme-inhibitor class. AY117439.1:10097–72712
+    is CLUSTER_DEMONSTRATED with Knock-out studies, Enzymatic assays and gene-expression
+    correlation. The PKS/Iterative type I classification and entry-level PMID:15797213
+    remain source assertions. Biosynthetic locus enzymatic-assay evidence does not
+    by itself show that the compound inhibits an enzyme.
+  outcome: supported
+  target_ids:
+  - CHEBI:29655
+  evidence_ids:
+  - support-2818-source
+  - support-2818-capture
+  - support-2818-taxonomy
+  - support-2818-curation
+  - support-2818-producerpolicy
+  - support-2818-table-mibig_compounds
+  - support-2818-table-chebi_structures
+  - support-2818-table-lotus_occurrences
+  - support-2818-table-npclassifier
+  - support-2818-table-pubchem_bioassay
+  dimensions:
+  - name: taxon_scope
+    definition: Cached names do not establish current lineage or strain equivalence.
+    value: Preserve the full source producer qualifier Streptomyces carzinostaticus
+      subsp. neocarzinostaticus (167636), BGC0000112 and AY117439.1:10097–72712. LOTUS
+      uses the shorter source label Streptomyces carzinostaticus at the same ID; its
+      occurrence and producer assertions/citations remain distinct. The cache retains
+      the var. neocarzinostaticus synonym without requiring a label or rank repair.
+      Assays 1811 and 977611 belong to the retained chromophore full key/CID 447545,
+      not to an apoprotein or another structure sharing an assay ID. All saved source
+      taxon IDs have complete cache stanzas; no forward merge or nonorganism match
+      is retained for this context. Cached labels and synonyms do not establish current
+      remote taxonomy, lineage, production or strain identity.
+    evidence_ids:
+    - support-2818-source
+    - support-2818-capture
+    - support-2818-taxonomy
+    - support-2818-curation
+    - support-2818-producerpolicy
+    - support-2818-table-mibig_compounds
+    - support-2818-table-chebi_structures
+    - support-2818-table-lotus_occurrences
+    - support-2818-table-npclassifier
+    - support-2818-table-pubchem_bioassay
+  - name: producer_evidence
+    definition: Producer and locus evidence remain separate.
+    value: BGC0000112 version 5, compound index 1, attributes Streptomyces carzinostaticus
+      subsp. neocarzinostaticus (NCBITaxon:167636) with BGC_CHARACTERIZED producer
+      grade. Active status, questionable quality and complete entry status are retained
+      literally; these grades do not establish the imported enzyme-inhibitor class.
+    evidence_ids:
+    - support-2818-source
+    - support-2818-capture
+    - support-2818-taxonomy
+    - support-2818-curation
+    - support-2818-producerpolicy
+    - support-2818-table-mibig_compounds
+    - support-2818-table-chebi_structures
+    - support-2818-table-lotus_occurrences
+    - support-2818-table-npclassifier
+    - support-2818-table-pubchem_bioassay
+  - name: locus_evidence
+    definition: Exact source version, endpoints and methods delimit the claim.
+    value: AY117439.1:10097–72712 is CLUSTER_DEMONSTRATED with Knock-out studies,
+      Enzymatic assays and gene-expression correlation. The PKS/Iterative type I classification
+      and entry-level PMID:15797213 remain source assertions. Biosynthetic locus enzymatic-assay
+      evidence does not by itself show that the compound inhibits an enzyme.
+    evidence_ids:
+    - support-2818-source
+    - support-2818-capture
+    - support-2818-taxonomy
+    - support-2818-curation
+    - support-2818-producerpolicy
+    - support-2818-table-mibig_compounds
+    - support-2818-table-chebi_structures
+    - support-2818-table-lotus_occurrences
+    - support-2818-table-npclassifier
+    - support-2818-table-pubchem_bioassay
+- assessment_id: support-2818-citations-assessment
+  area: evidence
+  topic: Citation grain and retained history
+  summary: MIBiG PMID:15797213 is entry-grain, LOTUS DOI:10.1021/JA00191A028 is occurrence-grain,
+    and both imported assays share PMID:15640161. The graph retains DOI:10.1074/jbc.M411579200
+    as historical PRIMARY_EXPERIMENT and DOI:10.2210/pdb1o5p/pdb as DATABASE_ASSERTION.
+    Its PDB 1O5P/CHR/SIFTS P0A3R9 residues 35–147 and 0.1 nM statements remain historical
+    evidence, not new primary or sequence validation. All six history events, including
+    the deliberate BIOACTIVITY graph curation, are preserved.
+  outcome: supported
+  target_ids:
+  - CHEBI:29655
+  evidence_ids:
+  - support-2818-owner
+  - support-2818-source
+  - support-2818-capture
+  - support-2818-history
+  - support-2818-reader-DATA
+  - support-2818-reader-execution
+  - support-2818-reader-acceptance
+  - support-2818-reader-reading
+  - support-2818-graph
+  - support-2818-table-mibig_compounds
+  - support-2818-table-chebi_structures
+  - support-2818-table-lotus_occurrences
+  - support-2818-table-npclassifier
+  - support-2818-table-pubchem_bioassay
+  dimensions:
+  - name: citation_scope
+    definition: Repeated annotations are not independent primary proof.
+    value: MIBiG PMID:15797213 is entry-grain, LOTUS DOI:10.1021/JA00191A028 is occurrence-grain,
+      and both imported assays share PMID:15640161. The graph retains DOI:10.1074/jbc.M411579200
+      as historical PRIMARY_EXPERIMENT and DOI:10.2210/pdb1o5p/pdb as DATABASE_ASSERTION.
+      Its PDB 1O5P/CHR/SIFTS P0A3R9 residues 35–147 and 0.1 nM statements remain historical
+      evidence, not new primary or sequence validation. All six history events, including
+      the deliberate BIOACTIVITY graph curation, are preserved.
+    evidence_ids:
+    - support-2818-owner
+    - support-2818-source
+    - support-2818-capture
+    - support-2818-history
+    - support-2818-reader-DATA
+    - support-2818-reader-execution
+    - support-2818-reader-acceptance
+    - support-2818-reader-reading
+    - support-2818-graph
+    - support-2818-table-mibig_compounds
+    - support-2818-table-chebi_structures
+    - support-2818-table-lotus_occurrences
+    - support-2818-table-npclassifier
+    - support-2818-table-pubchem_bioassay
+- assessment_id: support-2818-occurrence-assay-assessment
+  area: evidence
+  topic: Occurrence and assay limits
+  summary: LOTUS physical line 7602 records Streptomyces carzinostaticus at NCBITaxon:167636,
+    DOI:10.1021/JA00191A028 and structure Q26847067. The shorter occurrence label
+    does not erase the producer's subspecies qualifier or make occurrence and production
+    independent confirmations. The historical ChEBI definition about apoprotein protection
+    and release to DNA remains attributed, not newly verified. Physical PubChem lines
+    6016 and 6017 contain exact-key/CID 447545 AIDs 1811 and 977611. Both are Active/type
+    Other binding-affinity records from the same depositor, target 1O5P_A and PMID:15640161;
+    only AID 977611 reports Kd 0.0001 uM. AID 1811 has no numeric endpoint/value.
+    Generic binding-title classification supplies ENZYME_INHIBITOR to both observations
+    and the derived summary without an enzyme-inhibition endpoint. Preserve the observations
+    and source notes; the shared context is not two demonstrated independent catalytic-inhibition
+    experiments. The exclusion row sharing AID 977611 has a different exact chemical
+    identity and does not apply here.
+  outcome: concern
+  target_ids:
+  - CHEBI:29655
+  evidence_ids:
+  - support-2818-source
+  - support-2818-taxonomy
+  - support-2818-curation
+  - support-2818-plan
+  - support-2818-classifier
+  - support-2818-schema
+  - support-2818-finding-preparation
+  - support-2818-graph
+  - support-2818-reader-DATA
+  - support-2818-reader-execution
+  - support-2818-reader-acceptance
+  - support-2818-reader-reading
+  - support-2818-query-mibig_compounds
+  - support-2818-query-chebi_structures
+  - support-2818-query-lotus_occurrences
+  - support-2818-query-cyanometdb_occurrences
+  - support-2818-query-npclassifier
+  - support-2818-query-pubchem_bioassay
+  - support-2818-query-bindingdb_targets
+  - support-2818-query-antibioticmech_inchikeys
+  - support-2818-query-chebi_origins
+  - support-2818-table-mibig_compounds
+  - support-2818-table-chebi_structures
+  - support-2818-table-lotus_occurrences
+  - support-2818-table-npclassifier
+  - support-2818-table-pubchem_bioassay
+  dimensions:
+  - name: occurrence_scope
+    definition: Occurrence does not establish production.
+    value: LOTUS physical line 7602 records Streptomyces carzinostaticus at NCBITaxon:167636,
+      DOI:10.1021/JA00191A028 and structure Q26847067. The shorter occurrence label
+      does not erase the producer's subspecies qualifier or make occurrence and production
+      independent confirmations. The historical ChEBI definition about apoprotein
+      protection and release to DNA remains attributed, not newly verified.
+    evidence_ids:
+    - support-2818-source
+    - support-2818-taxonomy
+    - support-2818-curation
+    - support-2818-plan
+    - support-2818-classifier
+    - support-2818-schema
+    - support-2818-finding-preparation
+    - support-2818-graph
+    - support-2818-reader-DATA
+    - support-2818-reader-execution
+    - support-2818-reader-acceptance
+    - support-2818-reader-reading
+    - support-2818-query-mibig_compounds
+    - support-2818-query-chebi_structures
+    - support-2818-query-lotus_occurrences
+    - support-2818-query-cyanometdb_occurrences
+    - support-2818-query-npclassifier
+    - support-2818-query-pubchem_bioassay
+    - support-2818-query-bindingdb_targets
+    - support-2818-query-antibioticmech_inchikeys
+    - support-2818-query-chebi_origins
+    - support-2818-table-mibig_compounds
+    - support-2818-table-chebi_structures
+    - support-2818-table-lotus_occurrences
+    - support-2818-table-npclassifier
+    - support-2818-table-pubchem_bioassay
+  - name: assay_target_scope
+    definition: Binding observations and classification are distinct; negative frames
+      are not inactivity.
+    value: Physical PubChem lines 6016 and 6017 contain exact-key/CID 447545 AIDs
+      1811 and 977611. Both are Active/type Other binding-affinity records from the
+      same depositor, target 1O5P_A and PMID:15640161; only AID 977611 reports Kd
+      0.0001 uM. AID 1811 has no numeric endpoint/value. Generic binding-title classification
+      supplies ENZYME_INHIBITOR to both observations and the derived summary without
+      an enzyme-inhibition endpoint. Preserve the observations and source notes; the
+      shared context is not two demonstrated independent catalytic-inhibition experiments.
+      The exclusion row sharing AID 977611 has a different exact chemical identity
+      and does not apply here.
+    evidence_ids:
+    - support-2818-source
+    - support-2818-taxonomy
+    - support-2818-curation
+    - support-2818-plan
+    - support-2818-classifier
+    - support-2818-schema
+    - support-2818-finding-preparation
+    - support-2818-graph
+    - support-2818-reader-DATA
+    - support-2818-reader-execution
+    - support-2818-reader-acceptance
+    - support-2818-reader-reading
+    - support-2818-query-mibig_compounds
+    - support-2818-query-chebi_structures
+    - support-2818-query-lotus_occurrences
+    - support-2818-query-cyanometdb_occurrences
+    - support-2818-query-npclassifier
+    - support-2818-query-pubchem_bioassay
+    - support-2818-query-bindingdb_targets
+    - support-2818-query-antibioticmech_inchikeys
+    - support-2818-query-chebi_origins
+    - support-2818-table-mibig_compounds
+    - support-2818-table-chebi_structures
+    - support-2818-table-lotus_occurrences
+    - support-2818-table-npclassifier
+    - support-2818-table-pubchem_bioassay
+- assessment_id: support-2818-classification-assessment
+  area: consistency
+  topic: Source classes, model labels and filing
+  summary: NPClassifier retains Carbohydrates|Polyketides, Macrolides|Aminosugars
+    and aminoglycosides, Aminosugars|Enediynes and is_glycoside true at the retained
+    2026-09-07 model version. Multiple predicted pathways retain UNCLASSIFIED filing.
+    The observed C5O-linked enediyne topology is separate from model and biological
+    activity assertions; the enzyme-inhibitor class requires the bounded maintained
+    correction described in the finding.
+  outcome: concern
+  target_ids:
+  - CHEBI:29655
+  evidence_ids:
+  - support-2818-source
+  - support-2818-owner
+  - support-2818-motifs
+  - support-2818-filingpolicy
+  - support-2818-gates
+  - support-2818-classifier
+  - support-2818-schema
+  - support-2818-finding-preparation
+  - support-2818-graph
+  - support-2818-table-mibig_compounds
+  - support-2818-table-chebi_structures
+  - support-2818-table-lotus_occurrences
+  - support-2818-table-npclassifier
+  - support-2818-table-pubchem_bioassay
+  dimensions:
+  - name: classification_applicability
+    definition: Model, source, saved topology and biological class are separate evidence.
+    value: NPClassifier retains Carbohydrates|Polyketides, Macrolides|Aminosugars
+      and aminoglycosides, Aminosugars|Enediynes and is_glycoside true at the retained
+      2026-09-07 model version. Multiple predicted pathways retain UNCLASSIFIED filing.
+      The observed C5O-linked enediyne topology is separate from model and biological
+      activity assertions; the enzyme-inhibitor class requires the bounded maintained
+      correction described in the finding.
+    evidence_ids:
+    - support-2818-source
+    - support-2818-owner
+    - support-2818-motifs
+    - support-2818-filingpolicy
+    - support-2818-gates
+    - support-2818-classifier
+    - support-2818-schema
+    - support-2818-finding-preparation
+    - support-2818-graph
+    - support-2818-table-mibig_compounds
+    - support-2818-table-chebi_structures
+    - support-2818-table-lotus_occurrences
+    - support-2818-table-npclassifier
+    - support-2818-table-pubchem_bioassay
+- assessment_id: support-2818-completion-assessment
+  area: completeness
+  topic: Earned work and unavailable authority
+  summary: Complete assigned raw/source/intake and both saved molecular forms were
+    read. The single accepted maintained call preserves the complete chromophore owner,
+    one BIOACTIVITY graph with two distinct compound/protein nodes, one binds edge
+    with two references, both imported assays and all six histories. No pathway, molecular-target
+    or component root is present. Historical PDB/CHR/SIFTS/apoprotein claims remain
+    attributed; preservation does not validate those claims, enzyme inhibition or
+    the chemical identity of a natural sample. The single known socket-construction
+    capability probe was denied before action; no request occurred. The major confirmed
+    local activity-classification finding remains open. Five local native commands
+    pass; full QC, complete OAK and fresh primary verification remain unavailable.
+    Completion is partial, native SEEDED status unchanged.
+  outcome: concern
+  target_ids:
+  - CHEBI:29655
+  evidence_ids:
+  - support-2818-intake
+  - support-2818-intakeaccept
+  - support-2818-plan
+  - support-2818-planaccept
+  - support-2818-notes
+  - support-2818-gates
+  - support-2818-data
+  - support-2818-diagaccept
+  - support-2818-scope
+  - support-2818-reader-DATA
+  - support-2818-reader-execution
+  - support-2818-reader-acceptance
+  - support-2818-reader-reading
+  - support-2818-graph
+  dimensions:
+  - name: review_completion
+    definition: Local review does not promote native status or substitute for unavailable
+      checks.
+    value: Complete assigned raw/source/intake and both saved molecular forms were
+      read. The single accepted maintained call preserves the complete chromophore
+      owner, one BIOACTIVITY graph with two distinct compound/protein nodes, one binds
+      edge with two references, both imported assays and all six histories. No pathway,
+      molecular-target or component root is present. Historical PDB/CHR/SIFTS/apoprotein
+      claims remain attributed; preservation does not validate those claims, enzyme
+      inhibition or the chemical identity of a natural sample. The single known socket-construction
+      capability probe was denied before action; no request occurred. The major confirmed
+      local activity-classification finding remains open. Five local native commands
+      pass; full QC, complete OAK and fresh primary verification remain unavailable.
+      Completion is partial, native SEEDED status unchanged.
+    evidence_ids:
+    - support-2818-intake
+    - support-2818-intakeaccept
+    - support-2818-plan
+    - support-2818-planaccept
+    - support-2818-notes
+    - support-2818-gates
+    - support-2818-data
+    - support-2818-diagaccept
+    - support-2818-scope
+    - support-2818-reader-DATA
+    - support-2818-reader-execution
+    - support-2818-reader-acceptance
+    - support-2818-reader-reading
+    - support-2818-graph
+- assessment_id: support-2818-binding-graph-assessment
+  area: graph
+  topic: Chromophore/apoprotein binding context and owner preservation
+  summary: The single accepted maintained call preserves the complete chromophore
+    owner, one BIOACTIVITY graph with two distinct compound/protein nodes, one binds
+    edge with two references, both imported assays and all six histories. No pathway,
+    molecular-target or component root is present. Historical PDB/CHR/SIFTS/apoprotein
+    claims remain attributed; preservation does not validate those claims, enzyme
+    inhibition or the chemical identity of a natural sample. The single known socket-construction
+    capability probe was denied before action; no request occurred. MIBiG PMID:15797213
+    is entry-grain, LOTUS DOI:10.1021/JA00191A028 is occurrence-grain, and both imported
+    assays share PMID:15640161. The graph retains DOI:10.1074/jbc.M411579200 as historical
+    PRIMARY_EXPERIMENT and DOI:10.2210/pdb1o5p/pdb as DATABASE_ASSERTION. Its PDB
+    1O5P/CHR/SIFTS P0A3R9 residues 35–147 and 0.1 nM statements remain historical
+    evidence, not new primary or sequence validation. All six history events, including
+    the deliberate BIOACTIVITY graph curation, are preserved.
+  outcome: supported
+  target_ids:
+  - CHEBI:29655
+  evidence_ids:
+  - support-2818-capture
+  - support-2818-scope
+  - support-2818-source
+  - support-2818-plan
+  - support-2818-reader-DATA
+  - support-2818-reader-execution
+  - support-2818-reader-acceptance
+  - support-2818-reader-reading
+  - support-2818-graph
+  - support-2818-table-mibig_compounds
+  - support-2818-table-chebi_structures
+  - support-2818-table-lotus_occurrences
+  - support-2818-table-npclassifier
+  - support-2818-table-pubchem_bioassay
+  dimensions: []
+findings:
+- finding_id: finding-2818-binding-classification
+  issue_key: neocarzinostatin-chromophore-binding-classified-as-enzyme-inhibition
+  category: consistency
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Binding-affinity observations are overclassified as enzyme inhibition
+  description: The two retained PubChem observations for CHEBI:29655 describe binding
+    affinity, yet both /bioactivities activity_class values and /bioactivity_summary
+    assert ENZYME_INHIBITOR. Physical rows 6016 and 6017 are type Other and Active
+    for target 1O5P_A. Only AID 977611 reports Kd 0.0001 uM; AID 1811 has no numeric
+    endpoint/value. The maintained seeder maps the literal word binding to ENZYME_INHIBITOR
+    and then derives the summary from the assigned classes. Neither these row fields
+    nor the retained apoprotein-binding graph establishes enzyme inhibition. This
+    is a confirmed local classification overstatement and a maintained inference-rule
+    defect, not a claim that either binding observation is invalid or that the compound
+    can never inhibit an enzyme. The graph, source identifiers, endpoint distinctions
+    and historical evidence remain valuable and must be preserved.
+  target_ids:
+  - CHEBI:29655
+  field_paths:
+  - /bioactivities/0/activity_class
+  - /bioactivities/1/activity_class
+  - /bioactivity_summary
+  evidence_ids:
+  - support-2818-owner
+  - support-2818-capture
+  - support-2818-table-pubchem_bioassay
+  - support-2818-source
+  - support-2818-classifier
+  - support-2818-schema
+  - support-2818-graph
+  - support-2818-reader-DATA
+  - support-2818-reader-execution
+  - support-2818-reader-acceptance
+  - support-2818-intake
+  - support-2818-curation
+  - support-2818-finding-preparation
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained harmonization generator; seeded fields are corrected through
+      maintained inputs and validated regeneration.
+  ownership_note: The maintained seeder owns the generic inference rule; the generated
+    chromophore record is its affected output. This scientific review proposes a bounded
+    correction and makes no source, generated-record or native-status edit.
+actions:
+- action_id: action-2818-correct-binding-classification
+  description: Correct the maintained seeder so generic binding-affinity wording alone
+    does not assign ENZYME_INHIBITOR. Preserve both exact-key binding observations,
+    the AID 977611 Kd value and AID 1811 missing numeric endpoint, their source provenance
+    and ungrounded accession note, and the separate apoprotein-binding graph and histories.
+    Use the schema-supported optional class semantics, or an existing explicitly justified
+    class under curator policy, and derive the summary from appropriately supported
+    observations. Do not invent a BINDING enum or exclude the assay rows to remove
+    the incorrect class.
+  finding_ids:
+  - finding-2818-binding-classification
+  target_ids:
+  - CHEBI:29655
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained harmonization generator; seeded fields are corrected through
+      maintained inputs and validated regeneration.
+  ownership_note: Implementation and any regeneration require a separate authorized
+    maintained change. No source data, schema, generated record or history is changed,
+    and no outbound work is started or authorized by this action.
+  acceptance_checks:
+  - A focused maintained regression covers both exact retained binding-affinity titles
+    and confirms that generic binding alone does not emit ENZYME_INHIBITOR.
+  - The regression retains both ACTIVE database-asserted observations, PMID:15640161
+    and AIDs 1811/977611, target-accession provenance, KD 0.0001 uM only for AID 977611,
+    and absence of a numeric endpoint/value for AID 1811.
+  - Activity classes are omitted where unsupported, or use an existing explicitly
+    justified enum value under documented curator policy. No nonexistent BINDING value
+    is introduced.
+  - The derived summary no longer presents ENZYME_INHIBITOR merely because the same
+    generic classifier assigned it to the underlying observations; any retained positive
+    class has independent adequate support.
+  - Cases with actual supported enzyme-inhibition evidence remain covered separately;
+    the change does not make a blanket assertion about every binding assay or every
+    biological effect of this compound.
+  - Any later authorized regeneration preserves the chromophore/apoprotein distinction,
+    BIOACTIVITY binds graph, cited historical evidence and all six histories, using
+    the maintained history/validation workflow without blanket assay exclusions or
+    hand editing generated records.
+limitations:
+- Normalized key/formula agreement and a successful local process do not establish
+  independent full graph identity, natural-sample identity, experimental absolute
+  stereochemistry, primary mechanism validation or a native status promotion.
+- Both canonical SMILES comparisons agree and the limited 48-atom map is complete,
+  while full_graph_identity_established remains false. Ten tetrahedral centres and
+  one double bond are specified in both forms. The explicit bond enum is STEREOE at
+  SMILES bond 12 and InChI-derived bond 6; potential-stereo Bond_Cis is a relative
+  descriptor and is not a contrary E/Z assignment. The other small-ring double bond
+  is not an additional unspecified ordinary E/Z candidate in the saved potential-stereo
+  table. The source atom-centre true flag and full declared key remain bounded to
+  the stored representation.
+- Six original undefined-stereo warning lines remain globally unassigned; none is
+  assigned to an individual owner.
+- Primary publications, spectra, sequences, live taxonomy, full QC and complete OAK
+  remain unavailable; source/database claims retain their exact authority.
+- The whole selected owner was read, but scientific completion is partial because
+  full QC, complete ontology authority coverage and external source verification were
+  unavailable. No native status or history was changed.
+- The branch uses cached base ce6a5498df5be51116bd5e0c119023ee62bb5464. Fresh origin/main
+  verification and publication are deferred because the user prohibits all external
+  requests.
+notes:
+- Fresh current 282 evidence and judgments; prior batches provide interface logic
+  only.
+- No source row, record, campaign or native status was changed; no query, molecular
+  parse, target invocation or outbound request occurred in this lane.
+- ROOT appends five actual native checks and three required unavailable checks. Only
+  selected order 2818 requires a maintained-reader check; unselected companions remain
+  context only.
+- Saved review coverage is distinct from the native SEEDED/REVIEWED curation state.
+  Proposed actions are not performed edits.
+tags:
+- offline
+- record-review
+- batch-282
+```
