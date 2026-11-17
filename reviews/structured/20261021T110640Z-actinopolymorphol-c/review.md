@@ -1,0 +1,1167 @@
+# Actinopolymorphol C: supported exact identity with unresolved mutant provenance
+
+- Review: 20261021T110640Z-actinopolymorphol-c
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-21T10:56:30.194035Z
+- Finished UTC: 2026-10-21T11:06:40.999528Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Both primary studies and current authorities support the exact achiral compound3 and its bacterial/fungal occurrences. The reviewed 1042-residue LnaA sequence resolves the stored locus bridge, but original2013 experimental-parent provenance remains unavailable; a paired native evidence-grade upgrade is conditional.
+
+## Scope And Provenance
+
+One complete generated owner and any referenced components, assessed claim by claim for exact identity, provenance, origin, producer and occurrence scope, biosynthesis, classification, optional content and audit history.
+
+Selection: Campaign record 42, batch 005, selected in path order from the fresh-main authoritative validated catalogue and the separately validated pending-PR targets. At selection, 94 of 3116 current records had campaign coverage and 3022 remained. The population search included ignored files. Exactly one target is assessed here.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 1c2402097718c138b081e00943de8f04de0541cd.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-d82147801b | data/natural_products/alkaloids/actinopolymorphol-c.yaml | generated | actinopolymorphol C |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Closed-schema target validation | passed | True | naturalproductmech:mibig-d82147801b | The documented target strict validator completed; scientific support is assessed separately. |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-d82147801b | All 3,116 current record files agree with PATHS.tsv and their pinned filing pathways. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-d82147801b | All 3,116 current records passed the documented byte-reproduction gate against committed inventories and maintained curation inputs. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-d82147801b | The exhaustive review queue produced 8,928 diagnostic rows across 12 queues; this deterministic output does not establish scientific review. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-d82147801b | The configured identifier-label gate passed using the existing ontology caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions, 499 warning-only mismatches and 4,744 pairs skipped because their prefixes have no adapter. |
+| Full repository quality gate on the current main baseline | passed | True | naturalproductmech:mibig-d82147801b | The full documented just qc recipe passed on the unchanged main baseline during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). All configured lint, governance, documentation, provenance, source-queue, schema, rendering, reproduction, filing-integrity and reporting stages completed successfully. |
+| Exact primary structure and stereochemical resolution | passed | True | naturalproductmech:mibig-d82147801b | Both original studies identify compound 3 and the inspected original drawings agree with the achiral symmetric owner graph. The 2010 official SI supplies the exact formula and NMR table. No chemical identity defect is confirmed. |
+| Individual primary support for both LOTUS citations | passed | True | naturalproductmech:mibig-d82147801b | The 2010 native isolation supports the Actinopolymorpha species occurrence. The 2013 purified compound and occasional wild-type detection support A. flavus. The references are not interchangeable and neither species-level statement asserts every strain is productive. |
+| Reviewed LnaA identity and full deposited sequence bridge | passed | True | naturalproductmech:mibig-d82147801b | B8NTZ9/AFLA_101700, explicitly linked to the 2013 functional study, matches QMW33900.1 over all 1042 residues. This establishes the stored interval as the lna-associated locus beyond a symbol or homology inference; it does not establish the original mutant background. |
+| Original experimental parent and mutant genotype | unavailable | True | naturalproductmech:mibig-d82147801b | The main paper demonstrates exact compound 3 dependence on lnaA in its A. flavus study background. Original strain/genotype Table S3 remains unavailable, and the reviewed functional reference has no strain comment. The exact current NRRL3357 protein identity is supported separately, while experimental-parent provenance remains unresolved before an automatic paired native-producer/locus grade replacement. |
+| Exact chemical authority comparison | passed | True | naturalproductmech:mibig-d82147801b | All six reconstructed graphs agree on full identity and fixed-H form; NPA004279 resolves exactly. |
+| Applicable native expression dataset | not_applicable | False | naturalproductmech:mibig-d82147801b | No matching organism dataset appears in the complete retained catalogue and no exact C regulatory-expression claim is present. |
+
+## Scientific And Domain Assessments
+
+### Primary exact graph and complete stereo flag
+
+identity: supported. Targets: naturalproductmech:mibig-d82147801b.
+
+The neutral C18H16N2O2 owner is exact compound 3, with two para-hydroxybenzyl groups at pyrazine positions 2 and 5. There is no hidden tetrahedral stereochemistry. A or B stereochemical assignments, piperazines 1/2 and oxidized/sulfonated derivatives are distinct. Current authority eligibility and xrefs are assessed separately by the coordinator.
+
+### Source-specific native occurrence and natural origin
+
+evidence: supported. Targets: naturalproductmech:mibig-d82147801b.
+
+The 2010 isolation and 2013 exact compound identification with occasional wild-type A. flavus detection support both stored occurrence citations and natural-product origin. The 2010 body/abstract YIM number transposition is documented, not resolved by silently inventing a second strain. The broader species occurrence is source-faithful; optional strain detail in an occurrence is not itself a defect. Proposed nonenzymatic oxidation in the 2013 biosynthetic model is not a demonstrated workup-artifact claim.
+
+### Native genetic evidence versus exact deposited locus applicability
+
+evidence: unknown. Targets: naturalproductmech:mibig-d82147801b.
+
+The source snapshot has empty methods, faithfully yielding SOURCE_ASSERTION/CLUSTER_UNSTATED. The complete primary body supplies an exact compound 3 knockout result, and the reviewed full-sequence bridge now identifies the deposited interval as lna. The original experimental parent and mutant genotype remain unresolved. Because the maintained Knock-out studies replacement changes both native-producer and locus grades, that paired upgrade remains conditional; a reviewed native protein record alone does not prove the experimental stock.
+
+### LnaA versus homologous LnbA and current deposited interval
+
+identity: supported. Targets: naturalproductmech:mibig-d82147801b.
+
+The exact 1042-residue match and reviewed functional reference support the B8NTZ9/AFLA_101700 to QMW33900.1/G4B84_009366 bridge. B8NWW5 is distinguished by its recommended LnbA name, original ORF, length and nonmatching sequence despite an ambiguous geneName. This resolves locus identity without transferring LnbA experiments, all neighboring functions or unknown mutant provenance.
+
+### Congener, pathway and experiment boundaries
+
+scope: supported. Targets: naturalproductmech:mibig-d82147801b.
+
+The lna-associated compound 3 evidence is distinct from lnb redundancy for piperazines 1/2. Amino-acid adenylation does not demonstrate complete 3 formation; final oxidation and its enzyme assignment are proposed. NRPS is a source class for the NRPS-like A-PCP-R architecture, not a claim that the final pyrazine contains a peptide bond. No heterologous or purified final-product assay should be added from this study.
+
+### Pure compound C activity versus other compounds and pathway phenotypes
+
+scope: supported. Targets: naturalproductmech:mibig-d82147801b.
+
+The positive 2010 ER heterodimerization belongs to A, while C lacked induction in that assay. The 2013 signaling experiments use piperazines 1/2 and the sclerotial result is a genetic-pathway phenotype. The owner makes no activity assertion requiring correction or expansion.
+
+### Explicitly computed classification and source NRPS class
+
+consistency: supported. Targets: naturalproductmech:mibig-d82147801b.
+
+The computational hierarchy and version faithfully reproduce the exact-key source result; the odd Tetramate superclass remains an attributed classifier output rather than experimentally proven chemistry. The primary structure independently supports the pyrazine class. No manual change to generated classifier output is justified by conflating those meanings.
+
+### Sparse optional mechanism, protein and assay slots
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-d82147801b.
+
+No inline or referenced graph, protein example, molecular target, quantitative activity or enzyme step is asserted. Omission of these optional fields is not a finding, and no protein-catalogue expansion is required. SEEDED history records generation, not prior scientific review.
+
+### Current exact form and resolving NPAtlas/Wikidata xrefs
+
+identity: supported. Targets: naturalproductmech:mibig-d82147801b.
+
+The six retained representations agree on complete standardized identity and fixed-H form. The achiral pyrazine graph is distinct from congeners and piperazine signaling molecules.
+
+### Minted identity and active MIBiG concept
+
+provenance: supported. Targets: naturalproductmech:mibig-d82147801b.
+
+Current exact ChEBI201245 is two-star, with no eligible exact row in the complete committed three-star inventory. Retaining the minted identity is supported under the inspected policy inputs. Active MIBiG version2 and exact locus interval resolve.
+
+### Native strain versus both occurrence species
+
+scope: supported. Targets: naturalproductmech:mibig-d82147801b.
+
+NRRL3357 is a strain-ranked fungal node; the broader fungal occurrence uses species5059. Actinopolymorpha rutila is the accepted NCBI label for446787 and rutilus a listed misspelling. These authority mappings do not resolve the original2013 mutant-parent provenance or manufacture a new bacterial strain from the abstract typo.
+
+### Attribution and audit trail
+
+provenance: supported. Targets: naturalproductmech:mibig-d82147801b.
+
+Computational classification and native generation history remain attributed and unchanged by this external review.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+### S042-ACTION-RESOLVE-BRIDGE
+
+Resolve the original lnaA experimental parent and mutant genotype from the 2013 primary Table S3 or equally explicit primary provenance. The exact reviewed B8NTZ9 to QMW33900.1 sequence/reference bridge already supports current locus identity, and main Table 1 row 3 supports exact-product loss. Do not equate the current native protein organism with an independently verified experimental parent. If the original study background confirms native applicability to the stored producer, apply only Knock-out studies through a REPLACE for naturalproductmech:mibig-d82147801b, paired with a complete-row-SHA claim-reference row for BGC0002167:1 retaining PMID:23281040, or implement a tested equivalent guard. This is an unresolved evidence action, not a confirmed method defect or an instruction to upgrade now.
+
+- Document the original experimental parent and ΔlnaA genotype separately from OE::lnaA and RNAi knockdown derivatives. Retain the established B8NTZ9/AFLA_101700 to QMW33900.1 full-sequence bridge, and do not substitute the homologous LnbA B8NWW5 or treat its ambiguous geneName as an equivalence.
+- Reject stale, missing or duplicate source matches against full canonical raw-row SHA256 a7bb5785414796c1285400ddcefdc483a6909a4b72112a1ac3123939d9150284 for BGC0002167:1. The row covers version 2, exact owner structure, taxon 332952, CP059871.1:1196775..1211873, empty methods and original PMID23281040. expected_* fields alone do not guard REPLACE.
+- Only after the native bridge is demonstrated, the maintained Knock-out studies mapping should produce BGC_CHARACTERIZED/CLUSTER_DEMONSTRATED. Do not add Heterologous expression or Enzymatic assays from native overexpression or Tyr activation assays.
+- Preserve the exact compound 3 graph, both individually supported occurrence references, original source provenance and correct primary citation. Do not transfer lnb-specific redundancy for compounds 1/2 or an unresolved final oxidase to compound 3.
+- Run the paired-guard composition checks and inspect a target canary diff, then required strict/seed/native QC. Until the bridge is resolved, retain method applicability unknown and review completion partial; do not edit the generated owner, raw inventory or reserved decisions.tsv.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| S042-OWNER | data/natural_products/alkaloids/actinopolymorphol-c.yaml; Complete generated owner; exact identity, both occurrences, one producer/locus and audit history | supports | The owner contains one neutral achiral C18H16N2O2 graph, two species-level LOTUS occurrences, and one MIBiG NRRL3357 producer/locus with SOURCE_ASSERTION/CLUSTER_UNSTATED and no methods. There are no inline graphs, protein examples, molecular targets, activities or referenced components. |
+| S042-RAW | data/raw/mibig_compounds.tsv; Exact complete source row BGC0002167:1, plus resolved /042/local-sources.json | supports | The committed row supplies actinopolymorphol C, the owner full key, Aspergillus flavus NRRL3357 taxon 332952, CP059871.1:1196775..1211873, version 2 and PMID23281040 at entry level; method fields are empty. Its canonical complete-row digest is a7bb5785414796c1285400ddcefdc483a6909a4b72112a1ac3123939d9150284. Empty methods and the resulting grades are faithful to this source snapshot. |
+| S042-LOTUS | data/raw/lotus_occurrences.tsv; Both exact-key rows for ZTMRSAAMNPFCIE-UHFFFAOYSA-N | supports | The rows associate the exact structure with Actinopolymorpha rutila via DOI10.1021/OL1013526 and Aspergillus flavus via DOI10.1002/ANIE.201207456. Both citations were audited individually against original primary material. Species-level occurrence does not assert that every strain produces the compound. |
+| S042-CHEMISTRY | /private/tmp/npm-review-work/042/chemistry.json; RDKit exact graph, formula, charge and stereo computation | supports | The owner SMILES reproduces the stored full key ZTMRSAAMNPFCIE-UHFFFAOYSA-N and Standard InChI, neutral C18H16N2O2, with no tetrahedral stereocentres. The primary compound 3 drawing is a symmetric 2,5-disubstituted pyrazine bearing two para-hydroxybenzyl substituents; the complete-stereo flag does not omit a stereocentre. |
+| S042-2010 | https://pmc.ncbi.nlm.nih.gov/articles/PMC2913291/; DOI10.1021/ol1013526; full main body, native fermentation/isolation and ER BRET result | supports | The original study identifies actinopolymorphol C as compound 3 isolated from native Actinopolymorpha rutilus YIM45725 soil culture. The body repeatedly uses YIM45725, whereas the manuscript abstract transposes it to YIM45752. The exact C isolate supports the broader stored species occurrence; it does not establish a bacterial C-specific locus. Pure C was tested in the ER dimerization BRET assay and lacked induction; the positive A activity and its stereochemistry/synthesis must not transfer to C. |
+| S042-2010-SI | https://ndownloader.figshare.com/files/4424074; Official ol1013526_si_001.pdf S1-S5; Table S1 S5; Figures S6/S7 S11-S12 | supports | Fermentation/isolation gives purified C (3), 0.7 mg from the 5 L culture. C is C18H16N2O2, with reported HR-ESIMS [M+Na]+ 315.11250 (calculated 315.11039). Original compound 3 drawings and the symmetric NMR table agree with the owner connectivity; benzylic proton 3.96 ppm and pyrazine proton 8.44 ppm are reported. No independent reinterpretation of raw spectra or transfer of compound 1 synthetic/chiral experiments is claimed. |
+| S042-2013 | https://pmc.ncbi.nlm.nih.gov/articles/PMC3758896/; DOI10.1002/anie.201207456; full main body paragraphs 1-11, especially 3-8; complete Table 1 row 3 and footnotes | supports | Exact actinopolymorphol C is compound 3. Purified OE::lnaA fractions were characterized by NMR/HRMS. Table 1 records 3 in OE::lnaA, occasionally in wild type by MS, and absent in ΔlnaA and ΔlnaA/KD::lnbA. This supports an A. flavus occurrence and exact-product lnaA genetic dependence in the study background. The full main does not state the strain number or original accession-to-current-locus bridge; those are referred to supplementary Tables S1/S3. The lnb redundancy experiment specifically establishes compounds 1 and 2, not independent formation of exact 3 by lnb. |
+| S042-2013-FIG1 | https://cdn.ncbi.nlm.nih.gov/pmc/blobs/033e/3758896/4652c224dbfd/nihms497658f1.jpg; Original Figure 1a/b; inspected original pixels | supports | Figure 1b compound 3 is the owner pyrazine graph, distinct from piperazines 1/2, sulfate 4, N,N-dioxide 5, sulfonated 6, morpholine 7 and monomer 8. Figure 1a distinguishes lna and lnb; the figure does not supply old genomic accession IDs. |
+| S042-2013-MECHANISM | https://cdn.ncbi.nlm.nih.gov/pmc/blobs/033e/3758896/0939b5a8611a/nihms497658f2.jpg; Original Figure 2 and main paragraphs 7-8; original pixels and complete caption inspected | supports | Purified LnaA/LnbA experiments measure amino-acid adenylation by ATP-pyrophosphate exchange, not complete formation of compound 3. Tyr-aldehyde/dimer intermediates and final oxidation to 3 are a biosynthetic model. The authors explicitly allow nonenzymatic oxidation or candidate LnaC/LnaD/LnbC action; no particular oxidase is established for exact 3. Native overexpression is not heterologous production. |
+| S042-2013-ACTIVITY | https://cdn.ncbi.nlm.nih.gov/pmc/blobs/033e/3758896/494cb16e3141/nihms497658f3.jpg; Original Figure 3 and main paragraphs 3,9-11; original pixels and complete caption inspected | supports | Supplementation/Northern experiments concern synthetic piperazines 1 and 2: compound 1 increases lnaB expression, and compound 2 does not. The double-pathway perturbation sclerotial phenotype is not a pure compound 3 target or bioactivity assay. The owner contains no such transferred claims. |
+| S042-ACCESS | /private/tmp/npm-review-work/042/science-read-scope.json; Bounded official SI access; science-access-2.json and science-access-3.json | context_only | The 2013 main and all three main figures were obtained, but the exact Wiley SI link returned HTTP403; the PMC instance link returned an 1817-byte HTML download challenge; Europe PMC supplementaryFiles returned a 296-byte not-open-access XML error. The author publication-page route failed TLS hostname verification. No SI, original gene table or strain table was inspected. These failures do not establish that the source lacks the details. |
+| S042-METHOD-CONSUMER | scripts/seed_from_sources.py; load/apply_mibig_locus_evidence_overrides; complete grading.py, conf/producer_evidence.tsv and claim_references.py | supports | A verified native exact-product Knock-out studies method maps to BGC_CHARACTERIZED/CLUSTER_DEMONSTRATED. REPLACE does not enforce its expected_* context fields; those guards apply to WITHDRAW. Any conditional replacement therefore requires a paired full-raw-row-SHA curation/mibig_claim_references.tsv row or a tested equivalent guard. The read-only conditional grading evaluation did not apply an override or prove strain/locus applicability. |
+| S042-UNIPROT-BRIDGE | https://www.uniprot.org/uniprotkb/B8NTZ9/entry; Current official search JSON: B8NTZ9 recommended name, AFLA_101700, organism, full sequence and reference 3 PMID23281040 | supports | Reviewed B8NTZ9 recommends lnaA, identifies original ORF AFLA_101700 and NRRL3357 taxon 332952, and explicitly attributes identification/function/disruption to PMID23281040. Its full 1042-residue sequence equals deposited QMW33900.1 G4B84_009366. Reviewed B8NWW5 recommends lnbA, has ORF AFLA_121520 and 1030 residues, and matches none of the six interval CDS translations despite its confusing lnaA geneName. Names alone were not used. Strain comments occur on genome references, not on the 2013 functional reference, so this is a locus/protein identity bridge rather than proof of the experimental mutant parent. |
+| S042-GENBANK-BRIDGE | https://www.ncbi.nlm.nih.gov/nuccore/CP059871.1?from=1196775&amp;to=1211873; Bounded original GenBank interval; G4B84_009366 /protein_id QMW33900.1 and /translation | supports | The deposited NRRL3357 interval contains six CDSs. The full QMW33900.1 translation at relative complement(2498..5626) exactly equals the reviewed LnaA B8NTZ9 sequence. The record labels it hypothetical protein, so the functional name comes from the separately inspected reviewed authority and primary citation. This does not establish mutant genotypes or all neighboring enzyme functions. |
+| S042-BRIDGE-COMPARISON | /private/tmp/npm-review-work/042/science-bridge-comparison.json; Independent comparison of both full UniProt sequences against all six deposited CDS translations | supports | B8NTZ9 has exactly one full-length match, QMW33900.1, 1042 residues, sequence SHA256 cb816cf60a4490897dfdbe7e43e20b214c6a987bc926fe480202bbaebee27497. B8NWW5 has no match. The comparison used deposited translation strings and inspected the exact functional-reference fields; it did not retranslate genomic DNA or infer experimental construct equivalence. |
+| S042-CLASSIFIER | data/raw/npclassifier.tsv; Exact owner-key computational annotation and version | supports | The owner reproduces the committed NPClassifier Alkaloids pathway, Tetramate alkaloids/Peptide alkaloids superclasses and Pyrazine and Piperazine alkaloids class, explicitly labeled by tool and version. These are computed classifications; they do not establish an experimentally observed tetramate or peptide skeleton. The primary structures independently support the pyrazine chemical identity. |
+| R042-CHEM | /private/tmp/npm-review-work/042/identity/chemical-comparison.json; Owner, current MIBiG, NPAtlas, ChEBI JSON/MOL and Wikidata graph reconstruction | supports | All six representations reproduce full key ZTMRSAAMNPFCIE-UHFFFAOYSA-N and identical fixed-H InChI, neutral C18H16N2O2 and no tetrahedral stereocentre or stereogenic alkene. Current authority agreement independently supports the primary compound3 identity. |
+| R042-NPA | https://www.npatlas.org/api/v1/compound/NPA004279; Retained complete response; exact relevant authority fields | supports | NPA004279 resolves to actinopolymorphol C and the exact neutral achiral owner graph. Its original DOI10.1021/ol1013526 and Actinopolymorpha origin identify the same isolated compound; authority origin metadata is separate from the independently read original paper. |
+| R042-MIBIG | https://mibig.secondarymetabolites.org/repository/BGC0002167.2/annotations.json; Retained complete response; exact relevant authority fields | supports | Active BGC0002167 version2 retains the owner graph, NPA004279, Aspergillus flavus NRRL3357 taxon332952, CP059871.1:1196775..1211873 and PMID23281040. Methods are empty, quality questionable and completeness unknown. This current source concept resolves, while scientific applicability of a future native method upgrade is adjudicated separately. |
+| R042-CHEBI | https://www.ebi.ac.uk/chebi/backend/api/public/compound/201245/; Retained complete response; exact relevant authority fields | supports | CHEBI:201245 is the exact compound with matching formula/full key and two-star status. It does not qualify as a three-star grounding replacement under the current maintained policy. |
+| R042-CHEBI-MOL | https://www.ebi.ac.uk/chebi/backend/api/public/molfile/201245/; Complete parsed MOL graph | supports | The complete MOL graph independently matches the owner full key, neutral formula and fixed-H form. |
+| R042-TAXON | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=332952,446787,5059&amp;retmode=xml; All three top-level Taxon entries, names, ranks, parent links and relevant type material | supports | NCBI332952 is the strain-ranked A. flavus NRRL3357 node under species5059. NCBI446787 is species Actinopolymorpha rutila; rutilus appears as a misspelling, and type-material YIM45725 is listed. The 2010 paper body uses that strain designation while its abstract transposes the digits. The stored species-level bacterial and fungal occurrences are not two claims for every strain. |
+| R042-WIKI | https://www.wikidata.org/w/api.php?action=wbgetentities&amp;ids=Q25834622%7CQ137096%7CQ77309998&amp;props=labels%7Cclaims&amp;languages=en&amp;format=json; Three returned entities; labels and exact taxon/chemical identity claims | supports | Organism Q25834622 maps to Actinopolymorpha rutila/NCBI446787; Q137096 maps to A. flavus/NCBI5059. Chemical Q77309998 has matching P233 graph, P234 Standard InChI and P235 full key. These are the exact LOTUS source organisms and chemical concept, with species/strain scope preserved. |
+| R042-RAW | data/raw/mibig_compounds.tsv; Complete exact BGC0002167:1 row and parsed complete exact-key eligible-source projections | supports | The owner reproduces the pinned exact identity, source version, locus coordinates and empty method list. No exact-key eligible three-star ChEBI structure occurs in the complete pinned inventory. The current exact two-star hit supports retaining the minted identifier rather than asserting universal ChEBI absence. |
+| R042-HISTORY | data/natural_products/alkaloids/actinopolymorphol-c.yaml; Complete owner and all native history entries | supports | The owner retains its SEEDED status and generation history. Its explicit NPClassifier version2026-09-07 attributes Alkaloids, Tetramate/Peptide superclasses and Pyrazine/Piperazine class to a computational tool; these labels do not supply a primary mechanistic experiment. |
+| R042-IMODULON | https://imodulondb.org/; Previously retained complete 28-dataset catalogue | context_only | No A. flavus or Actinopolymorpha dataset occurs in the catalogue. The source signaling experiments on piperazines1/2 are separate from an exact C regulatory claim; none is asserted in the owner. |
+
+## Limits And Additional Notes
+
+- The 2013 original main body, complete Table 1 and all three main figures were read; its supplement was not obtained. Reviewed full-sequence/reference comparison resolves current locus identity, but original experimental-parent and mutant-genotype provenance remains unresolved, so the maintained paired native-producer/locus method upgrade is conditional.
+- The 2010 main and the stated official SI pages were inspected. Raw NMR was not independently reprocessed and synthetic/chiral data for actinopolymorphol A were not transferred to C.
+- The 2010 manuscript abstract/body contain a YIM45752 versus YIM45725 transposition. The repeated body identifier is recorded as source context without changing the broader species occurrence.
+- Current chemical, taxonomic and MIBiG authority checks are supplied separately by the coordinator. This addendum independently compared both complete reviewed LnaA/LnbA sequences against all six GenBank CDS translations and inspected functional reference attribution. It did not retranslate genomic DNA or establish original mutant-parent provenance from present annotation.
+- No repository, scientific source, campaign or saved bundle was changed. The only computations beyond supplied intake were read-only raw-row digest, conditional maintained-method evaluation and deposited full-protein sequence comparison; no override, bundle validation or native gate was executed.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35 explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). Skipped tests are not counted as passing tests. Existing ontology caches were used; no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do not establish biological production, stereochemical specificity, evidence adequacy, or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology results. Reuse establishes unchanged repository inputs; it is not a new remote authority query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all tracked files are hashed. Generated Python bytecode and external tool caches are not claimed to have been independently byte-pinned at the prior execution.
+- No scientific owner, inventory, curation table, native status or history was edited. Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification; target strict validation ran afresh. Scientific failed or unavailable checks are distinct from bundle validation.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T110640Z-actinopolymorphol-c
+title: 'Actinopolymorphol C: supported exact identity with unresolved mutant provenance'
+started_at: '2026-10-21T10:56:30.194035Z'
+finished_at: '2026-10-21T11:06:40.999528Z'
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: Both primary studies and current authorities support the exact achiral compound3
+  and its bacterial/fungal occurrences. The reviewed 1042-residue LnaA sequence resolves
+  the stored locus bridge, but original2013 experimental-parent provenance remains
+  unavailable; a paired native evidence-grade upgrade is conditional.
+source:
+  git_revision: 1c2402097718c138b081e00943de8f04de0541cd
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/actinopolymorphol-c.yaml
+    sha256: 97d1d44734fe91419d03ffe89d733ca801fbcd58919b07511a25d3f148a85496
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+    role: context
+  - path: src/naturalproductmech/grading.py
+    sha256: ece54c4a2c0803f034ac59de51b1006cf79ea8d6b6256d75757d4adb88ea9630
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 42, batch 005, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated pending-PR targets.
+    At selection, 94 of 3116 current records had campaign coverage and 3022 remained.
+    The population search included ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-d82147801b
+targets:
+- target_id: naturalproductmech:mibig-d82147801b
+  path: data/natural_products/alkaloids/actinopolymorphol-c.yaml
+  label: actinopolymorphol C
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-d82147801b
+  command: just validate-strict data/natural_products/alkaloids/actinopolymorphol-c.yaml
+    --out /private/tmp/npm-review-work/042/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T10:56:31.896556Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 current record files agree with PATHS.tsv and their pinned filing
+    pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055340+00:00;
+    finished 2026-10-21T09:55:22.727768+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-corpus.log. Reused
+    for batch005 only after fresh fetch/base/tree equality and all 9,182 tracked file
+    bytes and modes were verified against the original batch004 baseline (208,070,649
+    bytes). This gate was not rerun for batch005; original times, scope, warnings,
+    exceptions and skips are preserved.'
+  target_ids:
+  - naturalproductmech:mibig-d82147801b
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 current records passed the documented byte-reproduction gate
+    against committed inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055361+00:00;
+    finished 2026-10-21T09:56:44.050706+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-reproduction.log.
+    Reused for batch005 only after fresh fetch/base/tree equality and all 9,182 tracked
+    file bytes and modes were verified against the original batch004 baseline (208,070,649
+    bytes). This gate was not rerun for batch005; original times, scope, warnings,
+    exceptions and skips are preserved.'
+  target_ids:
+  - naturalproductmech:mibig-d82147801b
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The exhaustive review queue produced 8,928 diagnostic rows across 12 queues;
+    this deterministic output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just review-queue --tsv /private/tmp/npm-review-queue-batch-004.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.057401+00:00;
+    finished 2026-10-21T09:54:38.468783+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/review-queue.log. Reused
+    for batch005 only after fresh fetch/base/tree equality and all 9,182 tracked file
+    bytes and modes were verified against the original batch004 baseline (208,070,649
+    bytes). This gate was not rerun for batch005; original times, scope, warnings,
+    exceptions and skips are preserved.'
+  target_ids:
+  - naturalproductmech:mibig-d82147801b
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'The configured identifier-label gate passed using the existing ontology
+    caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions,
+    499 warning-only mismatches and 4,744 pairs skipped because their prefixes have
+    no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.061733+00:00;
+    finished 2026-10-21T09:56:36.296159+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/validate-products.log. Reused
+    for batch005 only after fresh fetch/base/tree equality and all 9,182 tracked file
+    bytes and modes were verified against the original batch004 baseline (208,070,649
+    bytes). This gate was not rerun for batch005; original times, scope, warnings,
+    exceptions and skips are preserved.'
+  target_ids:
+  - naturalproductmech:mibig-d82147801b
+- check_id: shared-qc
+  name: Full repository quality gate on the current main baseline
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed on the unchanged main baseline
+    during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+    All configured lint, governance, documentation, provenance, source-queue, schema,
+    rendering, reproduction, filing-integrity and reporting stages completed successfully.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:30.560925+00:00;
+    finished 2026-10-21T10:04:44.806799+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/qc.log. Reused for batch005
+    only after fresh fetch/base/tree equality and all 9,182 tracked file bytes and
+    modes were verified against the original batch004 baseline (208,070,649 bytes).
+    This gate was not rerun for batch005; original times, scope, warnings, exceptions
+    and skips are preserved.'
+  target_ids:
+  - naturalproductmech:mibig-d82147801b
+- check_id: S042-C-IDENTITY
+  name: Exact primary structure and stereochemical resolution
+  status: passed
+  required: true
+  summary: Both original studies identify compound 3 and the inspected original drawings
+    agree with the achiral symmetric owner graph. The 2010 official SI supplies the
+    exact formula and NMR table. No chemical identity defect is confirmed.
+  target_ids:
+  - naturalproductmech:mibig-d82147801b
+  evidence_ids:
+  - S042-CHEMISTRY
+  - S042-2010
+  - S042-2010-SI
+  - S042-2013-FIG1
+- check_id: S042-C-OCCURRENCES
+  name: Individual primary support for both LOTUS citations
+  status: passed
+  required: true
+  summary: The 2010 native isolation supports the Actinopolymorpha species occurrence.
+    The 2013 purified compound and occasional wild-type detection support A. flavus.
+    The references are not interchangeable and neither species-level statement asserts
+    every strain is productive.
+  target_ids:
+  - naturalproductmech:mibig-d82147801b
+  evidence_ids:
+  - S042-LOTUS
+  - S042-2010
+  - S042-2010-SI
+  - S042-2013
+- check_id: S042-C-LOCUS-BRIDGE
+  name: Reviewed LnaA identity and full deposited sequence bridge
+  status: passed
+  required: true
+  summary: B8NTZ9/AFLA_101700, explicitly linked to the 2013 functional study, matches
+    QMW33900.1 over all 1042 residues. This establishes the stored interval as the
+    lna-associated locus beyond a symbol or homology inference; it does not establish
+    the original mutant background.
+  target_ids:
+  - naturalproductmech:mibig-d82147801b
+  evidence_ids:
+  - S042-UNIPROT-BRIDGE
+  - S042-GENBANK-BRIDGE
+  - S042-BRIDGE-COMPARISON
+  - S042-2013
+- check_id: S042-C-NATIVE-BRIDGE
+  name: Original experimental parent and mutant genotype
+  status: unavailable
+  required: true
+  summary: The main paper demonstrates exact compound 3 dependence on lnaA in its
+    A. flavus study background. Original strain/genotype Table S3 remains unavailable,
+    and the reviewed functional reference has no strain comment. The exact current
+    NRRL3357 protein identity is supported separately, while experimental-parent provenance
+    remains unresolved before an automatic paired native-producer/locus grade replacement.
+  target_ids:
+  - naturalproductmech:mibig-d82147801b
+  evidence_ids:
+  - S042-RAW
+  - S042-2013
+  - S042-UNIPROT-BRIDGE
+  - S042-ACCESS
+- check_id: R042-C-CHEM
+  name: Exact chemical authority comparison
+  status: passed
+  required: true
+  summary: All six reconstructed graphs agree on full identity and fixed-H form; NPA004279
+    resolves exactly.
+  target_ids:
+  - naturalproductmech:mibig-d82147801b
+  evidence_ids:
+  - R042-CHEM
+  - R042-NPA
+  - R042-CHEBI
+  - R042-WIKI
+- check_id: R042-C-IMODULON
+  name: Applicable native expression dataset
+  status: not_applicable
+  required: false
+  summary: No matching organism dataset appears in the complete retained catalogue
+    and no exact C regulatory-expression claim is present.
+  target_ids:
+  - naturalproductmech:mibig-d82147801b
+  evidence_ids:
+  - R042-IMODULON
+evidence:
+- evidence_id: S042-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/actinopolymorphol-c.yaml
+  locator: Complete generated owner; exact identity, both occurrences, one producer/locus
+    and audit history
+  accessed_at: '2026-10-21T11:05:14.676757Z'
+  support: supports
+  summary: The owner contains one neutral achiral C18H16N2O2 graph, two species-level
+    LOTUS occurrences, and one MIBiG NRRL3357 producer/locus with SOURCE_ASSERTION/CLUSTER_UNSTATED
+    and no methods. There are no inline graphs, protein examples, molecular targets,
+    activities or referenced components.
+  snapshot_sha256: 97d1d44734fe91419d03ffe89d733ca801fbcd58919b07511a25d3f148a85496
+- evidence_id: S042-RAW
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: Exact complete source row BGC0002167:1, plus resolved /042/local-sources.json
+  accessed_at: '2026-10-21T11:05:14.676757Z'
+  support: supports
+  summary: The committed row supplies actinopolymorphol C, the owner full key, Aspergillus
+    flavus NRRL3357 taxon 332952, CP059871.1:1196775..1211873, version 2 and PMID23281040
+    at entry level; method fields are empty. Its canonical complete-row digest is
+    a7bb5785414796c1285400ddcefdc483a6909a4b72112a1ac3123939d9150284. Empty methods
+    and the resulting grades are faithful to this source snapshot.
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: S042-LOTUS
+  kind: record_content
+  reference: data/raw/lotus_occurrences.tsv
+  locator: Both exact-key rows for ZTMRSAAMNPFCIE-UHFFFAOYSA-N
+  accessed_at: '2026-10-21T11:05:14.676757Z'
+  support: supports
+  summary: The rows associate the exact structure with Actinopolymorpha rutila via
+    DOI10.1021/OL1013526 and Aspergillus flavus via DOI10.1002/ANIE.201207456. Both
+    citations were audited individually against original primary material. Species-level
+    occurrence does not assert that every strain produces the compound.
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: S042-CHEMISTRY
+  kind: validation
+  reference: /private/tmp/npm-review-work/042/chemistry.json
+  locator: RDKit exact graph, formula, charge and stereo computation
+  accessed_at: '2026-10-21T10:56:30.896095Z'
+  support: supports
+  summary: The owner SMILES reproduces the stored full key ZTMRSAAMNPFCIE-UHFFFAOYSA-N
+    and Standard InChI, neutral C18H16N2O2, with no tetrahedral stereocentres. The
+    primary compound 3 drawing is a symmetric 2,5-disubstituted pyrazine bearing two
+    para-hydroxybenzyl substituents; the complete-stereo flag does not omit a stereocentre.
+  snapshot_sha256: f680156d5d1f063a30395e64edeff354f238b7359d45375355b951a6567b988f
+- evidence_id: S042-2010
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC2913291/
+  locator: DOI10.1021/ol1013526; full main body, native fermentation/isolation and
+    ER BRET result
+  accessed_at: '2026-10-21T10:37:19.507802Z'
+  support: supports
+  summary: The original study identifies actinopolymorphol C as compound 3 isolated
+    from native Actinopolymorpha rutilus YIM45725 soil culture. The body repeatedly
+    uses YIM45725, whereas the manuscript abstract transposes it to YIM45752. The
+    exact C isolate supports the broader stored species occurrence; it does not establish
+    a bacterial C-specific locus. Pure C was tested in the ER dimerization BRET assay
+    and lacked induction; the positive A activity and its stereochemistry/synthesis
+    must not transfer to C.
+  snapshot_sha256: d5d8dfbf31ea8de13ea09877b0c02cbca5fee27a73c1acb8ad0ac9c36f22a92e
+- evidence_id: S042-2010-SI
+  kind: primary_source
+  reference: https://ndownloader.figshare.com/files/4424074
+  locator: Official ol1013526_si_001.pdf S1-S5; Table S1 S5; Figures S6/S7 S11-S12
+  accessed_at: '2026-10-21T10:38:50.483029Z'
+  support: supports
+  summary: Fermentation/isolation gives purified C (3), 0.7 mg from the 5 L culture.
+    C is C18H16N2O2, with reported HR-ESIMS [M+Na]+ 315.11250 (calculated 315.11039).
+    Original compound 3 drawings and the symmetric NMR table agree with the owner
+    connectivity; benzylic proton 3.96 ppm and pyrazine proton 8.44 ppm are reported.
+    No independent reinterpretation of raw spectra or transfer of compound 1 synthetic/chiral
+    experiments is claimed.
+  snapshot_sha256: bb477f9d9f992b46f3ae3b59470f686d719b6cf556185e257d311b0e65c2634c
+- evidence_id: S042-2013
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC3758896/
+  locator: DOI10.1002/anie.201207456; full main body paragraphs 1-11, especially 3-8;
+    complete Table 1 row 3 and footnotes
+  accessed_at: '2026-10-21T10:57:32.570489Z'
+  support: supports
+  summary: Exact actinopolymorphol C is compound 3. Purified OE::lnaA fractions were
+    characterized by NMR/HRMS. Table 1 records 3 in OE::lnaA, occasionally in wild
+    type by MS, and absent in ΔlnaA and ΔlnaA/KD::lnbA. This supports an A. flavus
+    occurrence and exact-product lnaA genetic dependence in the study background.
+    The full main does not state the strain number or original accession-to-current-locus
+    bridge; those are referred to supplementary Tables S1/S3. The lnb redundancy experiment
+    specifically establishes compounds 1 and 2, not independent formation of exact
+    3 by lnb.
+  snapshot_sha256: 7426c8424304c757e1a58adc7eb6f3a1bffd301b6742f953400d790e8f79e3e3
+- evidence_id: S042-2013-FIG1
+  kind: primary_source
+  reference: https://cdn.ncbi.nlm.nih.gov/pmc/blobs/033e/3758896/4652c224dbfd/nihms497658f1.jpg
+  locator: Original Figure 1a/b; inspected original pixels
+  accessed_at: '2026-10-21T10:57:56.897456Z'
+  support: supports
+  summary: Figure 1b compound 3 is the owner pyrazine graph, distinct from piperazines
+    1/2, sulfate 4, N,N-dioxide 5, sulfonated 6, morpholine 7 and monomer 8. Figure
+    1a distinguishes lna and lnb; the figure does not supply old genomic accession
+    IDs.
+  snapshot_sha256: 6976c6c8b45a82c65c5d5691774ab8a09f8fabf89504a05834bb6311fc9cd569
+- evidence_id: S042-2013-MECHANISM
+  kind: primary_source
+  reference: https://cdn.ncbi.nlm.nih.gov/pmc/blobs/033e/3758896/0939b5a8611a/nihms497658f2.jpg
+  locator: Original Figure 2 and main paragraphs 7-8; original pixels and complete
+    caption inspected
+  accessed_at: '2026-10-21T10:57:56.942154Z'
+  support: supports
+  summary: Purified LnaA/LnbA experiments measure amino-acid adenylation by ATP-pyrophosphate
+    exchange, not complete formation of compound 3. Tyr-aldehyde/dimer intermediates
+    and final oxidation to 3 are a biosynthetic model. The authors explicitly allow
+    nonenzymatic oxidation or candidate LnaC/LnaD/LnbC action; no particular oxidase
+    is established for exact 3. Native overexpression is not heterologous production.
+  snapshot_sha256: 7d20a58bab7849ac5dc6888818de0ddaaf141b4cf43e19cda017e7abc5c50967
+- evidence_id: S042-2013-ACTIVITY
+  kind: primary_source
+  reference: https://cdn.ncbi.nlm.nih.gov/pmc/blobs/033e/3758896/494cb16e3141/nihms497658f3.jpg
+  locator: Original Figure 3 and main paragraphs 3,9-11; original pixels and complete
+    caption inspected
+  accessed_at: '2026-10-21T10:57:57.594238Z'
+  support: supports
+  summary: 'Supplementation/Northern experiments concern synthetic piperazines 1 and
+    2: compound 1 increases lnaB expression, and compound 2 does not. The double-pathway
+    perturbation sclerotial phenotype is not a pure compound 3 target or bioactivity
+    assay. The owner contains no such transferred claims.'
+  snapshot_sha256: 218a8c74417e7d3329603b88230cf359ce701aeb130fdfe2bd69043415dff41b
+- evidence_id: S042-ACCESS
+  kind: search
+  reference: /private/tmp/npm-review-work/042/science-read-scope.json
+  locator: Bounded official SI access; science-access-2.json and science-access-3.json
+  accessed_at: '2026-10-21T11:05:14.705145Z'
+  support: context_only
+  summary: The 2013 main and all three main figures were obtained, but the exact Wiley
+    SI link returned HTTP403; the PMC instance link returned an 1817-byte HTML download
+    challenge; Europe PMC supplementaryFiles returned a 296-byte not-open-access XML
+    error. The author publication-page route failed TLS hostname verification. No
+    SI, original gene table or strain table was inspected. These failures do not establish
+    that the source lacks the details.
+  snapshot_sha256: 8bc0b8f20659a2660b7aa9aa81b03828b3da8c7ab4410bb4498536a6e734e8d5
+  search_scope: Official DOI10.1002/anie.201207456 supplement anie_201207456_sm_miscellaneous_information.pdf;
+    PMC3758896 instance-path NIHMS497658-supplement-Supporting_Information.pdf; Europe
+    PMC PMC3758896/supplementaryFiles; author bti.cornell.edu/schroeder/Publications.html.
+    Actual attempts 2026-10-21T10:57:56.648328Z through 10:58:29.771843Z. Exact URLs,
+    HTTP/media types and hashes retained in science-access-2.json and science-access-3.json.
+    No failed route was repeatedly retried.
+- evidence_id: S042-METHOD-CONSUMER
+  kind: record_content
+  reference: scripts/seed_from_sources.py
+  locator: load/apply_mibig_locus_evidence_overrides; complete grading.py, conf/producer_evidence.tsv
+    and claim_references.py
+  accessed_at: '2026-10-21T11:05:14.676757Z'
+  support: supports
+  summary: A verified native exact-product Knock-out studies method maps to BGC_CHARACTERIZED/CLUSTER_DEMONSTRATED.
+    REPLACE does not enforce its expected_* context fields; those guards apply to
+    WITHDRAW. Any conditional replacement therefore requires a paired full-raw-row-SHA
+    curation/mibig_claim_references.tsv row or a tested equivalent guard. The read-only
+    conditional grading evaluation did not apply an override or prove strain/locus
+    applicability.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: S042-UNIPROT-BRIDGE
+  kind: database
+  reference: https://www.uniprot.org/uniprotkb/B8NTZ9/entry
+  locator: 'Current official search JSON: B8NTZ9 recommended name, AFLA_101700, organism,
+    full sequence and reference 3 PMID23281040'
+  accessed_at: '2026-10-21T11:00:33.302359Z'
+  support: supports
+  summary: Reviewed B8NTZ9 recommends lnaA, identifies original ORF AFLA_101700 and
+    NRRL3357 taxon 332952, and explicitly attributes identification/function/disruption
+    to PMID23281040. Its full 1042-residue sequence equals deposited QMW33900.1 G4B84_009366.
+    Reviewed B8NWW5 recommends lnbA, has ORF AFLA_121520 and 1030 residues, and matches
+    none of the six interval CDS translations despite its confusing lnaA geneName.
+    Names alone were not used. Strain comments occur on genome references, not on
+    the 2013 functional reference, so this is a locus/protein identity bridge rather
+    than proof of the experimental mutant parent.
+  snapshot_sha256: 1bbd243f1f6f928862abbc3577b8f97d92b34d48edf2dc98d53bb82827a89d7b
+- evidence_id: S042-GENBANK-BRIDGE
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/nuccore/CP059871.1?from=1196775&to=1211873
+  locator: Bounded original GenBank interval; G4B84_009366 /protein_id QMW33900.1
+    and /translation
+  accessed_at: '2026-10-21T10:58:24.623347Z'
+  support: supports
+  summary: The deposited NRRL3357 interval contains six CDSs. The full QMW33900.1
+    translation at relative complement(2498..5626) exactly equals the reviewed LnaA
+    B8NTZ9 sequence. The record labels it hypothetical protein, so the functional
+    name comes from the separately inspected reviewed authority and primary citation.
+    This does not establish mutant genotypes or all neighboring enzyme functions.
+  snapshot_sha256: 00fecc539b8081dc379715ad04dea5df1ca4d673098b7f3cdbb0e5490a675e19
+- evidence_id: S042-BRIDGE-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/042/science-bridge-comparison.json
+  locator: Independent comparison of both full UniProt sequences against all six deposited
+    CDS translations
+  accessed_at: '2026-10-21T11:04:29.140908Z'
+  support: supports
+  summary: B8NTZ9 has exactly one full-length match, QMW33900.1, 1042 residues, sequence
+    SHA256 cb816cf60a4490897dfdbe7e43e20b214c6a987bc926fe480202bbaebee27497. B8NWW5
+    has no match. The comparison used deposited translation strings and inspected
+    the exact functional-reference fields; it did not retranslate genomic DNA or infer
+    experimental construct equivalence.
+  snapshot_sha256: ac265ff88d0640715fce2f5b816da1c5d6e95cdc601283a9d3425d62cf93bdd1
+- evidence_id: S042-CLASSIFIER
+  kind: record_content
+  reference: data/raw/npclassifier.tsv
+  locator: Exact owner-key computational annotation and version
+  accessed_at: '2026-10-21T11:05:14.676757Z'
+  support: supports
+  summary: The owner reproduces the committed NPClassifier Alkaloids pathway, Tetramate
+    alkaloids/Peptide alkaloids superclasses and Pyrazine and Piperazine alkaloids
+    class, explicitly labeled by tool and version. These are computed classifications;
+    they do not establish an experimentally observed tetramate or peptide skeleton.
+    The primary structures independently support the pyrazine chemical identity.
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: R042-CHEM
+  kind: validation
+  reference: /private/tmp/npm-review-work/042/identity/chemical-comparison.json
+  locator: Owner, current MIBiG, NPAtlas, ChEBI JSON/MOL and Wikidata graph reconstruction
+  accessed_at: '2026-10-21T11:01:18.399359Z'
+  support: supports
+  summary: All six representations reproduce full key ZTMRSAAMNPFCIE-UHFFFAOYSA-N
+    and identical fixed-H InChI, neutral C18H16N2O2 and no tetrahedral stereocentre
+    or stereogenic alkene. Current authority agreement independently supports the
+    primary compound3 identity.
+  snapshot_sha256: d9846f66c87299ff698d764536da69a2f09c9dc0ae26cfe8504758da6897718e
+- evidence_id: R042-NPA
+  kind: database
+  reference: https://www.npatlas.org/api/v1/compound/NPA004279
+  locator: Retained complete response; exact relevant authority fields
+  accessed_at: '2026-10-21T10:58:24.535188Z'
+  support: supports
+  summary: NPA004279 resolves to actinopolymorphol C and the exact neutral achiral
+    owner graph. Its original DOI10.1021/ol1013526 and Actinopolymorpha origin identify
+    the same isolated compound; authority origin metadata is separate from the independently
+    read original paper.
+  snapshot_sha256: d6611e754489f035c9a01c7f12b20433176611ff3aba09ececae23a211d8e5d2
+- evidence_id: R042-MIBIG
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0002167.2/annotations.json
+  locator: Retained complete response; exact relevant authority fields
+  accessed_at: '2026-10-21T10:58:24.623253Z'
+  support: supports
+  summary: Active BGC0002167 version2 retains the owner graph, NPA004279, Aspergillus
+    flavus NRRL3357 taxon332952, CP059871.1:1196775..1211873 and PMID23281040. Methods
+    are empty, quality questionable and completeness unknown. This current source
+    concept resolves, while scientific applicability of a future native method upgrade
+    is adjudicated separately.
+  snapshot_sha256: 30d45ebc579c8be1d046bc663da535135d27142a7ca3db8ba9517ac1b5145ad5
+- evidence_id: R042-CHEBI
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/201245/
+  locator: Retained complete response; exact relevant authority fields
+  accessed_at: '2026-10-21T10:59:18.158018Z'
+  support: supports
+  summary: CHEBI:201245 is the exact compound with matching formula/full key and two-star
+    status. It does not qualify as a three-star grounding replacement under the current
+    maintained policy.
+  snapshot_sha256: d27ae96f1cc605f9b827b80e61d03df516c6680ee01edb6fcbf08fc8cf84d74d
+- evidence_id: R042-CHEBI-MOL
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/201245/
+  locator: Complete parsed MOL graph
+  accessed_at: '2026-10-21T10:59:18.767011Z'
+  support: supports
+  summary: The complete MOL graph independently matches the owner full key, neutral
+    formula and fixed-H form.
+  snapshot_sha256: 77d01538faac775d5754b382a337d412b04ea128aacedc7830cf3c415cb2c368
+- evidence_id: R042-TAXON
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=332952,446787,5059&retmode=xml
+  locator: All three top-level Taxon entries, names, ranks, parent links and relevant
+    type material
+  accessed_at: '2026-10-21T10:58:24.780125Z'
+  support: supports
+  summary: NCBI332952 is the strain-ranked A. flavus NRRL3357 node under species5059.
+    NCBI446787 is species Actinopolymorpha rutila; rutilus appears as a misspelling,
+    and type-material YIM45725 is listed. The 2010 paper body uses that strain designation
+    while its abstract transposes the digits. The stored species-level bacterial and
+    fungal occurrences are not two claims for every strain.
+  snapshot_sha256: a04804c6340167939abafe145c40c022343d9d9fb5f940fa099c0659e5afbea1
+- evidence_id: R042-WIKI
+  kind: database
+  reference: https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q25834622%7CQ137096%7CQ77309998&props=labels%7Cclaims&languages=en&format=json
+  locator: Three returned entities; labels and exact taxon/chemical identity claims
+  accessed_at: '2026-10-21T10:58:24.829580Z'
+  support: supports
+  summary: Organism Q25834622 maps to Actinopolymorpha rutila/NCBI446787; Q137096
+    maps to A. flavus/NCBI5059. Chemical Q77309998 has matching P233 graph, P234 Standard
+    InChI and P235 full key. These are the exact LOTUS source organisms and chemical
+    concept, with species/strain scope preserved.
+  snapshot_sha256: 9695e4b6e8e18605ecee3ae5326752b33d29d42ccbdb026f25ae945bddb03bcb
+- evidence_id: R042-RAW
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: Complete exact BGC0002167:1 row and parsed complete exact-key eligible-source
+    projections
+  accessed_at: '2026-10-21T11:06:28.703985Z'
+  support: supports
+  summary: The owner reproduces the pinned exact identity, source version, locus coordinates
+    and empty method list. No exact-key eligible three-star ChEBI structure occurs
+    in the complete pinned inventory. The current exact two-star hit supports retaining
+    the minted identifier rather than asserting universal ChEBI absence.
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: R042-HISTORY
+  kind: record_content
+  reference: data/natural_products/alkaloids/actinopolymorphol-c.yaml
+  locator: Complete owner and all native history entries
+  accessed_at: '2026-10-21T11:06:28.703985Z'
+  support: supports
+  summary: The owner retains its SEEDED status and generation history. Its explicit
+    NPClassifier version2026-09-07 attributes Alkaloids, Tetramate/Peptide superclasses
+    and Pyrazine/Piperazine class to a computational tool; these labels do not supply
+    a primary mechanistic experiment.
+  snapshot_sha256: 97d1d44734fe91419d03ffe89d733ca801fbcd58919b07511a25d3f148a85496
+- evidence_id: R042-IMODULON
+  kind: database
+  reference: https://imodulondb.org/
+  locator: Previously retained complete 28-dataset catalogue
+  accessed_at: '2026-10-21T07:21:15.957321Z'
+  support: context_only
+  summary: No A. flavus or Actinopolymorpha dataset occurs in the catalogue. The source
+    signaling experiments on piperazines1/2 are separate from an exact C regulatory
+    claim; none is asserted in the owner.
+  snapshot_sha256: 1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549
+assessments:
+- assessment_id: S042-A-IDENTITY
+  area: identity
+  topic: Primary exact graph and complete stereo flag
+  outcome: supported
+  summary: The neutral C18H16N2O2 owner is exact compound 3, with two para-hydroxybenzyl
+    groups at pyrazine positions 2 and 5. There is no hidden tetrahedral stereochemistry.
+    A or B stereochemical assignments, piperazines 1/2 and oxidized/sulfonated derivatives
+    are distinct. Current authority eligibility and xrefs are assessed separately
+    by the coordinator.
+  target_ids:
+  - naturalproductmech:mibig-d82147801b
+  evidence_ids:
+  - S042-OWNER
+  - S042-CHEMISTRY
+  - S042-2010-SI
+  - S042-2013-FIG1
+- assessment_id: S042-A-OCCURRENCES
+  area: evidence
+  topic: Source-specific native occurrence and natural origin
+  outcome: supported
+  summary: The 2010 isolation and 2013 exact compound identification with occasional
+    wild-type A. flavus detection support both stored occurrence citations and natural-product
+    origin. The 2010 body/abstract YIM number transposition is documented, not resolved
+    by silently inventing a second strain. The broader species occurrence is source-faithful;
+    optional strain detail in an occurrence is not itself a defect. Proposed nonenzymatic
+    oxidation in the 2013 biosynthetic model is not a demonstrated workup-artifact
+    claim.
+  target_ids:
+  - naturalproductmech:mibig-d82147801b
+  evidence_ids:
+  - S042-LOTUS
+  - S042-2010
+  - S042-2010-SI
+  - S042-2013
+  - S042-2013-MECHANISM
+- assessment_id: S042-A-METHODS
+  area: evidence
+  topic: Native genetic evidence versus exact deposited locus applicability
+  outcome: unknown
+  summary: The source snapshot has empty methods, faithfully yielding SOURCE_ASSERTION/CLUSTER_UNSTATED.
+    The complete primary body supplies an exact compound 3 knockout result, and the
+    reviewed full-sequence bridge now identifies the deposited interval as lna. The
+    original experimental parent and mutant genotype remain unresolved. Because the
+    maintained Knock-out studies replacement changes both native-producer and locus
+    grades, that paired upgrade remains conditional; a reviewed native protein record
+    alone does not prove the experimental stock.
+  target_ids:
+  - naturalproductmech:mibig-d82147801b
+  evidence_ids:
+  - S042-RAW
+  - S042-2013
+  - S042-UNIPROT-BRIDGE
+  - S042-GENBANK-BRIDGE
+  - S042-BRIDGE-COMPARISON
+  - S042-ACCESS
+  - S042-METHOD-CONSUMER
+- assessment_id: S042-A-LOCUS-IDENTITY
+  area: identity
+  topic: LnaA versus homologous LnbA and current deposited interval
+  outcome: supported
+  summary: The exact 1042-residue match and reviewed functional reference support
+    the B8NTZ9/AFLA_101700 to QMW33900.1/G4B84_009366 bridge. B8NWW5 is distinguished
+    by its recommended LnbA name, original ORF, length and nonmatching sequence despite
+    an ambiguous geneName. This resolves locus identity without transferring LnbA
+    experiments, all neighboring functions or unknown mutant provenance.
+  target_ids:
+  - naturalproductmech:mibig-d82147801b
+  evidence_ids:
+  - S042-UNIPROT-BRIDGE
+  - S042-GENBANK-BRIDGE
+  - S042-BRIDGE-COMPARISON
+- assessment_id: S042-A-MECHANISM
+  area: scope
+  topic: Congener, pathway and experiment boundaries
+  outcome: supported
+  summary: The lna-associated compound 3 evidence is distinct from lnb redundancy
+    for piperazines 1/2. Amino-acid adenylation does not demonstrate complete 3 formation;
+    final oxidation and its enzyme assignment are proposed. NRPS is a source class
+    for the NRPS-like A-PCP-R architecture, not a claim that the final pyrazine contains
+    a peptide bond. No heterologous or purified final-product assay should be added
+    from this study.
+  target_ids:
+  - naturalproductmech:mibig-d82147801b
+  evidence_ids:
+  - S042-2013
+  - S042-2013-MECHANISM
+  - S042-2013-FIG1
+- assessment_id: S042-A-ACTIVITY
+  area: scope
+  topic: Pure compound C activity versus other compounds and pathway phenotypes
+  outcome: supported
+  summary: The positive 2010 ER heterodimerization belongs to A, while C lacked induction
+    in that assay. The 2013 signaling experiments use piperazines 1/2 and the sclerotial
+    result is a genetic-pathway phenotype. The owner makes no activity assertion requiring
+    correction or expansion.
+  target_ids:
+  - naturalproductmech:mibig-d82147801b
+  evidence_ids:
+  - S042-OWNER
+  - S042-2010
+  - S042-2013-ACTIVITY
+- assessment_id: S042-A-CLASSIFICATION
+  area: consistency
+  topic: Explicitly computed classification and source NRPS class
+  outcome: supported
+  summary: The computational hierarchy and version faithfully reproduce the exact-key
+    source result; the odd Tetramate superclass remains an attributed classifier output
+    rather than experimentally proven chemistry. The primary structure independently
+    supports the pyrazine class. No manual change to generated classifier output is
+    justified by conflating those meanings.
+  target_ids:
+  - naturalproductmech:mibig-d82147801b
+  evidence_ids:
+  - S042-OWNER
+  - S042-CLASSIFIER
+  - S042-2013-FIG1
+  - S042-2013-MECHANISM
+- assessment_id: S042-A-OPTIONAL
+  area: completeness
+  topic: Sparse optional mechanism, protein and assay slots
+  outcome: not_applicable
+  summary: No inline or referenced graph, protein example, molecular target, quantitative
+    activity or enzyme step is asserted. Omission of these optional fields is not
+    a finding, and no protein-catalogue expansion is required. SEEDED history records
+    generation, not prior scientific review.
+  target_ids:
+  - naturalproductmech:mibig-d82147801b
+  evidence_ids:
+  - S042-OWNER
+- assessment_id: R042-IDENTITY
+  area: identity
+  topic: Current exact form and resolving NPAtlas/Wikidata xrefs
+  outcome: supported
+  summary: The six retained representations agree on complete standardized identity
+    and fixed-H form. The achiral pyrazine graph is distinct from congeners and piperazine
+    signaling molecules.
+  target_ids:
+  - naturalproductmech:mibig-d82147801b
+  evidence_ids:
+  - R042-CHEM
+  - R042-NPA
+  - R042-CHEBI
+  - R042-CHEBI-MOL
+  - R042-WIKI
+- assessment_id: R042-GROUNDING
+  area: provenance
+  topic: Minted identity and active MIBiG concept
+  outcome: supported
+  summary: Current exact ChEBI201245 is two-star, with no eligible exact row in the
+    complete committed three-star inventory. Retaining the minted identity is supported
+    under the inspected policy inputs. Active MIBiG version2 and exact locus interval
+    resolve.
+  target_ids:
+  - naturalproductmech:mibig-d82147801b
+  evidence_ids:
+  - R042-RAW
+  - R042-CHEBI
+  - R042-MIBIG
+- assessment_id: R042-TAXON
+  area: scope
+  topic: Native strain versus both occurrence species
+  outcome: supported
+  summary: NRRL3357 is a strain-ranked fungal node; the broader fungal occurrence
+    uses species5059. Actinopolymorpha rutila is the accepted NCBI label for446787
+    and rutilus a listed misspelling. These authority mappings do not resolve the
+    original2013 mutant-parent provenance or manufacture a new bacterial strain from
+    the abstract typo.
+  target_ids:
+  - naturalproductmech:mibig-d82147801b
+  evidence_ids:
+  - R042-TAXON
+  - R042-WIKI
+  - R042-MIBIG
+- assessment_id: R042-HISTORY
+  area: provenance
+  topic: Attribution and audit trail
+  outcome: supported
+  summary: Computational classification and native generation history remain attributed
+    and unchanged by this external review.
+  target_ids:
+  - naturalproductmech:mibig-d82147801b
+  evidence_ids:
+  - R042-HISTORY
+findings: []
+actions:
+- action_id: S042-ACTION-RESOLVE-BRIDGE
+  description: Resolve the original lnaA experimental parent and mutant genotype from
+    the 2013 primary Table S3 or equally explicit primary provenance. The exact reviewed
+    B8NTZ9 to QMW33900.1 sequence/reference bridge already supports current locus
+    identity, and main Table 1 row 3 supports exact-product loss. Do not equate the
+    current native protein organism with an independently verified experimental parent.
+    If the original study background confirms native applicability to the stored producer,
+    apply only Knock-out studies through a REPLACE for naturalproductmech:mibig-d82147801b,
+    paired with a complete-row-SHA claim-reference row for BGC0002167:1 retaining
+    PMID:23281040, or implement a tested equivalent guard. This is an unresolved evidence
+    action, not a confirmed method defect or an instruction to upgrade now.
+  finding_ids: []
+  target_ids:
+  - naturalproductmech:mibig-d82147801b
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Conditional exact-method replacement after primary strain/locus resolution
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: Paired complete-source-row SHA guard and exact primary claim citation
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Consumed row drift guard
+  - repository: CultureBotAI/NaturalProductMech
+    path: conf/producer_evidence.tsv
+    role: Separate native producer and locus grade mappings
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Consumed method application and deterministic regeneration
+  generator: scripts/seed_from_sources.py after exact experimental applicability and
+    paired guards are established
+  acceptance_checks:
+  - Document the original experimental parent and ΔlnaA genotype separately from OE::lnaA
+    and RNAi knockdown derivatives. Retain the established B8NTZ9/AFLA_101700 to QMW33900.1
+    full-sequence bridge, and do not substitute the homologous LnbA B8NWW5 or treat
+    its ambiguous geneName as an equivalence.
+  - Reject stale, missing or duplicate source matches against full canonical raw-row
+    SHA256 a7bb5785414796c1285400ddcefdc483a6909a4b72112a1ac3123939d9150284 for BGC0002167:1.
+    The row covers version 2, exact owner structure, taxon 332952, CP059871.1:1196775..1211873,
+    empty methods and original PMID23281040. expected_* fields alone do not guard
+    REPLACE.
+  - Only after the native bridge is demonstrated, the maintained Knock-out studies
+    mapping should produce BGC_CHARACTERIZED/CLUSTER_DEMONSTRATED. Do not add Heterologous
+    expression or Enzymatic assays from native overexpression or Tyr activation assays.
+  - Preserve the exact compound 3 graph, both individually supported occurrence references,
+    original source provenance and correct primary citation. Do not transfer lnb-specific
+    redundancy for compounds 1/2 or an unresolved final oxidase to compound 3.
+  - Run the paired-guard composition checks and inspect a target canary diff, then
+    required strict/seed/native QC. Until the bridge is resolved, retain method applicability
+    unknown and review completion partial; do not edit the generated owner, raw inventory
+    or reserved decisions.tsv.
+limitations:
+- The 2013 original main body, complete Table 1 and all three main figures were read;
+  its supplement was not obtained. Reviewed full-sequence/reference comparison resolves
+  current locus identity, but original experimental-parent and mutant-genotype provenance
+  remains unresolved, so the maintained paired native-producer/locus method upgrade
+  is conditional.
+- The 2010 main and the stated official SI pages were inspected. Raw NMR was not independently
+  reprocessed and synthetic/chiral data for actinopolymorphol A were not transferred
+  to C.
+- The 2010 manuscript abstract/body contain a YIM45752 versus YIM45725 transposition.
+  The repeated body identifier is recorded as source context without changing the
+  broader species occurrence.
+- Current chemical, taxonomic and MIBiG authority checks are supplied separately by
+  the coordinator. This addendum independently compared both complete reviewed LnaA/LnbA
+  sequences against all six GenBank CDS translations and inspected functional reference
+  attribution. It did not retranslate genomic DNA or establish original mutant-parent
+  provenance from present annotation.
+- No repository, scientific source, campaign or saved bundle was changed. The only
+  computations beyond supplied intake were read-only raw-row digest, conditional maintained-method
+  evaluation and deposited full-protein sequence comparison; no override, bundle validation
+  or native gate was executed.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35
+  explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently
+  verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+  Skipped tests are not counted as passing tests. Existing ontology caches were used;
+  no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do
+  not establish biological production, stereochemical specificity, evidence adequacy,
+  or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology
+  results. Reuse establishes unchanged repository inputs; it is not a new remote authority
+  query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all
+  tracked files are hashed. Generated Python bytecode and external tool caches are
+  not claimed to have been independently byte-pinned at the prior execution.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+tags:
+- path-order-campaign
+- batch-005
+- primary-strain-unresolved
+- exact-protein-bridge
+```

@@ -1,0 +1,1108 @@
+# Acinetoferrin: exact authority identity and bounded native-strain evidence
+
+- Review: 20261021T110535Z-acinetoferrin
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-21T10:56:17.185335Z
+- Finished UTC: 2026-10-21T11:05:35.963792Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The stereo-resolved neutral graph and current authority xrefs agree. Both original abstracts support occurrence in A. haemolyticus ATCC17906, which is omitted from the producer qualifier. Exact original structure details and native acbA phenotype selectivity remain unavailable, so a method upgrade is conditional.
+
+## Scope And Provenance
+
+One complete generated owner and any referenced components, assessed claim by claim for exact identity, provenance, origin, producer and occurrence scope, biosynthesis, classification, optional content and audit history.
+
+Selection: Campaign record 41, batch 005, selected in path order from the fresh-main authoritative validated catalogue and the separately validated pending-PR targets. At selection, 94 of 3116 current records had campaign coverage and 3022 remained. The population search included ignored files. Exactly one target is assessed here.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 1c2402097718c138b081e00943de8f04de0541cd.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-f9b470e34a | data/natural_products/alkaloids/acinetoferrin.yaml | generated | acinetoferrin |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Closed-schema target validation | passed | True | naturalproductmech:mibig-f9b470e34a | The documented target strict validator completed; scientific support is assessed separately. |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-f9b470e34a | All 3,116 current record files agree with PATHS.tsv and their pinned filing pathways. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-f9b470e34a | All 3,116 current records passed the documented byte-reproduction gate against committed inventories and maintained curation inputs. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-f9b470e34a | The exhaustive review queue produced 8,928 diagnostic rows across 12 queues; this deterministic output does not establish scientific review. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-f9b470e34a | The configured identifier-label gate passed using the existing ontology caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions, 499 warning-only mismatches and 4,744 pairs skipped because their prefixes have no adapter. |
+| Full repository quality gate on the current main baseline | passed | True | naturalproductmech:mibig-f9b470e34a | The full documented just qc recipe passed on the unchanged main baseline during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). All configured lint, governance, documentation, provenance, source-queue, schema, rendering, reproduction, filing-integrity and reporting stages completed successfully. |
+| Original detailed structure and occurrence evidence | unavailable | True | naturalproductmech:mibig-f9b470e34a | Both original abstracts positively name acinetoferrin and ATCC 17906, but the 1994 full structure drawing, spectra and experimental text are unavailable. Current database/graph agreement is assessed separately by the coordinator. |
+| Exact native acbA loss/rescue experimental readout | unavailable | True | naturalproductmech:mibig-f9b470e34a | The 2013 abstract reports native biosynthetic loss and rescue, but product selectivity, mutant construction and complete controls require the unread body/figures. A method upgrade remains conditional. |
+| Literal experimental strain provenance | passed | True | naturalproductmech:mibig-f9b470e34a | ATCC 17906 appears in both original primary abstracts and ATCC 17906T in the 2013 title/abstract. The strain qualifier is a supported bounded addition independent of the unresolved detailed method review. |
+| Exact structure and authority resolution | passed | True | naturalproductmech:mibig-f9b470e34a | All stereo-resolved stored graphs agree; the Standard-InChI-only Wikidata reconstruction is explicitly qualified for its different fixed-H tautomer. |
+| Applicable native expression dataset | not_applicable | False | naturalproductmech:mibig-f9b470e34a | No matching A. haemolyticus dataset occurs in the complete retained catalogue; the owner has no expression-regulation assertion. |
+
+## Scientific And Domain Assessments
+
+### Exact chemical identity and primary resolution
+
+identity: unknown. Targets: naturalproductmech:mibig-f9b470e34a.
+
+The internal neutral graph is consistent and the 1994 abstract describes its symmetric citrate/dihydroxamate E-unsaturated chemistry. No confirmed structural defect is identified. Exact original drawing and spectral verification remains incomplete; current authority identity does not remove this primary-source limit.
+
+### Both LOTUS occurrence references and natural origin
+
+evidence: supported. Targets: naturalproductmech:mibig-f9b470e34a.
+
+Both references are relevant primary reports naming acinetoferrin in A. haemolyticus ATCC 17906. The 1994 report describes isolation; the 2013 report describes native production and genetic interventions in the same named strain. The occurrence citations are supported at inspected abstract scope, not as independently audited original chromatograms/spectra. No withdrawal or duplicate-removal action is justified.
+
+### Producer/locus grades and exact genetic endpoint
+
+evidence: unknown. Targets: naturalproductmech:mibig-f9b470e34a.
+
+The empty imported method fields are source-faithful, but the cited abstract supplies a specific acbA native loss/rescue lead. Detailed exact-product readout is needed before applying Knock-out studies. Retain the current grades until that audit; do not transfer receptor or export results, individual homology assignments, or claim an inspected enzymatic assay. The source NRPS Type I class remains unverified against the unavailable mechanistic body, with no confirmed replacement asserted.
+
+### Native strain context
+
+scope: concern. Targets: naturalproductmech:mibig-f9b470e34a.
+
+The species-level producer omits ATCC 17906, explicitly named in both primary reports. Preserve that qualifier without substituting an engineered mutant, expanding to every strain of the species, or changing the native evidence grade.
+
+### Unasserted detailed mechanism, protein and activity content
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-f9b470e34a.
+
+There are no graph, protein-example, individual enzyme, activity or molecular-target claims requiring expansion. Their absence is not a defect. Any later annotation must keep biosynthesis, ferric receptor function and secretion separate and distinguish homology from experiments.
+
+### Exact chemical form and resolving authority xrefs
+
+identity: supported. Targets: naturalproductmech:mibig-f9b470e34a.
+
+The stereo-resolved owner and current NPAtlas/MIBiG/ChEBI graphs agree, including fixed-H form. Wikidata supports standardized identity with an explicit tautomer/SMILES qualification. This database comparison is separate from the unresolved original detailed structure evidence.
+
+### Minted identifier and active source concept
+
+provenance: supported. Targets: naturalproductmech:mibig-f9b470e34a.
+
+The current exact ChEBI match is two-star and absent from the complete eligible pinned three-star inventory. Retaining the minted identifier is justified within the inspected seed inputs and authority status. MIBiG version5 and its exact source concept resolve.
+
+### Species, named strain and deposited locus
+
+scope: supported. Targets: naturalproductmech:mibig-f9b470e34a.
+
+The NCBI species and Wikidata organism agree; GenBank independently names ATCC17906 and the cited study. This supports the strain qualifier proposed in the scientific section, without treating taxonomy or deposited gene names as independent knockout-assay evidence. Missing MIBiG interval bounds remain missing.
+
+### Classification attribution and native audit history
+
+provenance: supported. Targets: naturalproductmech:mibig-f9b470e34a.
+
+All three native seed events and SEEDED status remain intact. The classifier version is explicit; external review neither changes that history nor promotes computational labels to experimental mechanism.
+
+## Findings
+
+### S041-F-STRAIN: Preserve the named ATCC 17906 producer strain
+
+minor / open / confirmed; issue key: mibig-bgc0000295-compound1-strain-context.
+
+Both original primary abstracts identify ATCC 17906, with the 2013 report marking it as a type strain. The generated producer retains only the species label and lacks that bounded experimental qualifier. Adding the literal strain does not settle exact assay selectivity or justify an evidence-grade upgrade.
+
+## Recommended Actions And Acceptance Checks
+
+### S041-ACTION-STRAIN
+
+Add exactly one consumed curation/mibig_producer_strains.tsv row: source_id=BGC0000295:1, expected_source_row_sha256=5bffe4badf3e0890db3519691c7300db8a74ac4786a5441e600f66ba62c7a441, strain=ATCC 17906, reference=PMID:23378574, curator, ISO date and rationale citing the 2013 original title/abstract and corroborating 1994 ATCC 17906 report. Retain the type-strain designation as context rather than inventing a different strain identifier. Regenerate through the existing loader; do not edit generated YAML or the raw inventory.
+
+- The exact complete BGC0000295:1 raw row must match SHA256 5bffe4badf3e0890db3519691c7300db8a74ac4786a5441e600f66ba62c7a441; expected version 5, taxon 29430, AB661448.1, blank bounds and methods, full key ZYPXWYPUWAXTQR-JOBJLJCHSA-N and original PMID 23378574 are covered by that digest. Reject drift, duplicate or missing matches.
+- Only the producer strain and separately attributed CURATOR_INFERENCE provenance change. Preserve species taxon, exact chemistry, both occurrence citations, source concept, accession and existing evidence grades.
+- Do not name acbA, actA or actD mutant derivatives as the wild-type producer. Do not turn the qualifier into a species-wide experiment or an axenic-culture assertion.
+- Inspect a target canary diff and run the maintained qualifier checks, strict validation, exact seed reproduction and required repository QC before accepting the correction.
+
+### S041-ACTION-RESOLVE-METHODS
+
+Retrieve and inspect the original 2013 exact acbA phenotype assay, mutant background and complementation controls when an authorized free body is available. Distinguish exact acinetoferrin detection from general siderophore/iron-limited-growth readouts and from actA receptor or actD export endpoints. If this confirms exact-product native genetic linkage, REPLACE with only Knock-out studies for naturalproductmech:mibig-f9b470e34a, paired with a curation/mibig_claim_references.tsv row retaining PMID:23378574 and complete source-row SHA256 5bffe4badf3e0890db3519691c7300db8a74ac4786a5441e600f66ba62c7a441, or implement an equivalent tested REPLACE guard. expected_* fields alone do not guard REPLACE. This is an unresolved evidence action, not a confirmed method defect or permission to upgrade from the abstract.
+
+- Retain the actual original readout, controls and native strain context. If detection is nonspecific, determine which narrower claim is supported; do not automatically label a general siderophore phenotype as exact acinetoferrin loss.
+- A verified native acbA knockout supports the maintained BGC_CHARACTERIZED/CLUSTER_DEMONSTRATED mapping; receptor absence, secretion reduction and protein homology alone do not. No purified-enzyme method is added without applicable experiments.
+- Pair any future REPLACE with the complete untouched raw-row SHA guard, preserving original citation and exact structure. Confirm composition with the strain qualification in an isolated canary.
+- Until required main-body evidence is read, retain method applicability as unknown and review completion partial; no temporary-file or raw-inventory edit substitutes for a consumed decision.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| S041-OWNER | data/natural_products/alkaloids/acinetoferrin.yaml; Entire YAML and full resolved owner, including both occurrences and source history | supports | The owner is the neutral, symmetric acinetoferrin structure ZYPXWYPUWAXTQR-JOBJLJCHSA-N, with two LOTUS A. haemolyticus occurrences. Its sole MIBiG producer/locus cite PMID:23378574 and use SOURCE_ASSERTION/CLUSTER_UNSTATED, no imported method and NRPS. The producer lacks a strain qualifier. No pathway, graph, protein example, molecular target or activity is asserted. |
+| S041-RAW | data/raw/mibig_compounds.tsv; Complete BGC0000295:1 version 5 row | supports | The row faithfully yields the current chemistry, species 29430, AB661448.1, empty bounds/methods and entry-level PMID:23378574. It is active with questionable quality/unknown completeness. Complete canonical raw-row SHA256 5bffe4badf3e0890db3519691c7300db8a74ac4786a5441e600f66ba62c7a441; these database quality flags are not independent scientific verdicts. |
+| S041-LOTUS | data/raw/lotus_occurrences.tsv; Two exact full-key rows, DOI10.1007/BF00140488 and DOI10.1099/MIC.0.065177-0 | supports | Both source rows associate the same full chemical key with A. haemolyticus taxon 29430/Q16824990. Their citations correspond to distinct 1994 isolation and 2013 genetic papers, not two DOI spellings of one article. The repeated organism is not an erroneous duplicate; neither row independently encodes the strain. |
+| S041-1994 | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;id=8148619&amp;retmode=xml; PMID8148619 / DOI10.1007/BF00140488; original primary abstract and metadata only | supports | The authors report purification of acinetoferrin from low-iron cultures of A. haemolyticus ATCC 17906 using XAD-7 and preparative TLC. Degradation, NMR and FAB-MS support a symmetric citrate dihydroxamate with 1,3-diaminopropane and E-2-octenoic-acid-derived substituents. This directly reports biological isolation and species/strain occurrence, but the original drawing, spectra and detailed conditions were not inspected. |
+| S041-2013-GENETICS | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;id=23378574&amp;retmode=xml; PMID 23378574 / DOI10.1099/mic.0.065177-0; title and complete original primary abstract only | supports | The paper names native A. haemolyticus ATCC 17906T and the consecutive acbABCD/actBCAD operon. It explicitly reports acbA-mutant inability to produce acinetoferrin under iron limitation and rescue by native-gene complementation. This is a specific positive native-genetic report. The unavailable body leaves the exact mutant construction, product-detection selectivity, comparator and full controls unverified; the abstract does not establish whether the readout was exact-product chromatography or a broader siderophore assay. |
+| S041-2013-TRANSPORT | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;id=23378574&amp;retmode=xml; Same complete primary abstract; actA, actC, actD and actB clauses | supports | actA loss concerns ferric-acinetoferrin receptor expression and is rescued by actA. actD loss reduces secretion by about 35%, restored by actD complementation. actC function is proposed from similarity to a rhizobactin importer; actB remains unresolved. These endpoints must not be substituted for acbA biosynthetic loss or treated as purified-enzyme synthesis. Biosynthetic protein assignments are partly homology-based, and no exact NRPS Type I mechanism is demonstrated by this abstract. |
+| S041-CHEMISTRY | /private/tmp/npm-review-work/041/chemistry.json; Retained owner SMILES/InChI/key, charge and tetrahedral-centre computation | supports | The calculation reproduces neutral C28H48N4O9 and the owner full key, with no tetrahedral chiral centres. The two explicit E alkene configurations are compatible with the 1994 abstract chemical description; symmetry explains why the central citrate carbon is not a stereocentre. This check does not replace the missing original structure drawing and spectra. |
+| S041-ACCESS | /private/tmp/npm-review-work/shared-next-batch005/bgc/acinetoferrin-source-notes.json; Original prepared-source receipts access-104001.json and access-104029.json; exact failed official main-body routes | context_only | The 1994 Springer PDF request returned a subscription/cookie HTML page, not a PDF. The 2013 Microbiology Society article and exact docserver PDF requests returned 403. Only original PubMed abstracts were obtained and read. No repeated network request was made during 041; full main texts, figures and supplements remain unavailable. |
+| S041-STRAIN-CONSUMER | src/naturalproductmech/curate/producer_strains.py; Complete loader and qualifier, plus bounded seeder application sites | supports | The consumed strain table requires BGC accession:compound index, full unchanged source-row SHA256, strain, stable reference, curator/date/rationale. It rejects stale/duplicate/missing source rows and adds strain plus separately attributed CURATOR_INFERENCE evidence without changing taxonomy or evidence grades. This existing route can preserve ATCC 17906 independently of the unresolved method grade. |
+| S041-METHOD-CONSUMER | scripts/seed_from_sources.py; load/apply_mibig_locus_evidence_overrides lines 473–570; full grading.py and claim_references.py inspected | supports | REPLACE accepts recognized methods but its expected_* context is not enforced; the strict context guard belongs to WITHDRAW. A future native-knockout REPLACE therefore needs a paired complete-row-SHA claim-reference row or a tested equivalent guard. The maintained Knock-out studies mapping would yield BGC_CHARACTERIZED/CLUSTER_DEMONSTRATED, conditional on an exact-product native experiment. It must not be inferred from actA/actD transport endpoints. |
+| S041-QUALIFICATION-SEARCH | curation/; Ignored-inclusive bounded search of curation/, conf/ and src/naturalproductmech/curate/ for BGC0000295, minted ID and acinetoferrin | context_only | No target-specific maintained qualification matched in the searched directories, including ignored and hidden files. The entire owner also lacks a strain field. This is a bounded absence conclusion about the effective correction inputs, not a claim of no biological literature. |
+| R041-OWNER | data/natural_products/alkaloids/acinetoferrin.yaml; Complete owner, resolved source projection and all three native history entries | supports | The owner is neutral C28H48N4O9 with two explicit E alkenes and no tetrahedral stereocentre. It contains two separately cited A. haemolyticus occurrences, one producer/locus pair, NPAtlas xref and three seed events. No pathway, causal graph, protein, target, activity or clinical assertion is present. |
+| R041-CHEM | /private/tmp/npm-review-work/041/identity/chemical-comparison.json; Six independently reconstructed retained database representations | supports | Owner, current MIBiG, NPAtlas and both ChEBI JSON/MOL graphs agree on full Standard InChIKey ZYPXWYPUWAXTQR-JOBJLJCHSA-N, fixed-H InChI, neutral formula, zero tetrahedral centres and two E alkenes. Wikidata Standard InChI also reproduces that full standard key, but converting that normalized identifier back to a graph selects a different amide/imidic-acid fixed-H tautomer. Thus all_full_keys_match is true and all_fixed_H_match is false. This normalization effect is not evidence of a stored xref defect or of a separately isolated compound. |
+| R041-NPA | https://www.npatlas.org/api/v1/compound/NPA010195; Retained complete response; exact relevant identity fields | supports | NPA010195 resolves to acinetoferrin and the exact neutral owner graph. Its 1994 isolation reference and A. haemolyticus origin corroborate the intended database concept without replacing the original experimental audit. |
+| R041-MIBIG | https://mibig.secondarymetabolites.org/repository/BGC0000295.5/annotations.json; Retained complete response; exact relevant identity fields | supports | Active BGC0000295 version5 retains the exact acinetoferrin graph, NPA010195, A. haemolyticus taxon29430, AB661448.1 and PMID23378574. Quality is questionable, completeness unknown, methods empty and source interval0/0. No genomic interval is inferred from those placeholders or from the full accession length. NRPS Type I is retained source classification, not independently demonstrated mechanism. |
+| R041-CHEBI | https://www.ebi.ac.uk/chebi/backend/api/public/compound/212669/; Retained complete response; exact relevant identity fields | supports | CHEBI:212669 resolves to exact acinetoferrin with matching formula and full key but has two-star status. Its species29430/PMID8148619 origin supports the concept. It is not an eligible three-star replacement for the minted identifier under the current seed policy. |
+| R041-CHEBI-MOL | https://www.ebi.ac.uk/chebi/backend/api/public/molfile/212669/; Complete parsed MOL graph | supports | The actual ChEBI MOL graph independently retains the two E double bonds and matches the owner full key and fixed-H form. |
+| R041-TAXON | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=29430&amp;retmode=xml; Complete top-level Taxon identity, rank, names, type material and lineage | supports | NCBITaxon:29430 resolves to Acinetobacter haemolyticus at species rank, parent Acinetobacter469. Type-material aliases include ATCC17906. The OTHER_BACTERIAL group is compatible. A species node does not itself qualify every strain as the experimentally studied producer. |
+| R041-WIKI | https://www.wikidata.org/w/api.php?action=wbgetentities&amp;ids=Q16824990%7CQ76422124&amp;props=labels%7Cclaims&amp;languages=en&amp;format=json; Both returned entities; labels and exact taxon/chemical identity claims | supports | LOTUS organism Q16824990 resolves to A. haemolyticus with P685=29430. Chemical Q76422124 has matching P234 Standard InChI and P235 full key. Its P233 SMILES omits the alkene geometry and is not a substitute for the stereo-resolved owner; Standard InChI agreement does not pin a fixed-H tautomer. |
+| R041-GENBANK | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&amp;id=AB661448.1&amp;rettype=gb&amp;retmode=text; Header, source feature and all non-translation feature qualifiers; nucleotide/protein translations not independently audited | supports | AB661448.1 is a 13141bp deposited A. haemolyticus ATCC17906 type-strain sequence with taxon29430 and PMID23378574. Annotated acbA570..2354 encodes BAM09326.1; acbB2347..3828, acbC3825..5642 and acbD5670..6308 occur alongside actB/C/A/D. This deposited strain/accession bridge corroborates the original abstract. Gene labels and deposited annotations do not prove the exact phenotype readout or justify using the whole accession as the locus interval. |
+| R041-RAW | data/raw/mibig_compounds.tsv; Complete exact BGC0000295:1 row and complete parsed exact-key source projections | supports | The generated identity, version, accession, empty methods and selected citation reproduce the pinned row. Complete committed eligible ChEBI structures/origins contain no exact-key eligible entry. Both LOTUS rows map to the same exact chemical key and distinct publications. The authority two-star match does not contradict the bounded grounding note. |
+| R041-CLASS | data/raw/npclassifier.tsv; Complete exact-key classifier row | context_only | Alkaloids, empty superclass/class lists and non-glycoside are attributed to NPClassifier version2026-09-07. This computed classification is separate from MIBiG NRPS/Type I and is not an experimentally established synthesis route. |
+| R041-IMODULON | https://imodulondb.org/; Previously retained complete 28-dataset catalogue | context_only | The catalogue contains A. baumannii139, but no A. haemolyticus dataset. The former is a different species and cannot establish an acinetoferrin regulator in ATCC17906. The owner makes no regulatory-expression claim. |
+
+## Limits And Additional Notes
+
+- Only the complete original 1994 and 2013 primary abstracts and metadata were inspected. Original main bodies, figures, detailed protocols and supplements remain unavailable; no claim of complete experimental review is made.
+- The primary abstract reports acbA loss/rescue, but the exact chemical selectivity of the phenotype assay remains unverified. actA receptor and actD secretion results are distinct.
+- Current taxonomy, NPAtlas, ChEBI, MIBiG and GenBank authority checks are supplied separately by the coordinator; this packet does not claim a new accession or full-protein translation audit.
+- No new network calls, native validators, bundle assembly/save, repository edit or campaign mutation occurred during this scientific section preparation. The inspected local classifier is computational annotation, not an experimental biosynthetic-class proof.
+- Current database agreement cannot substitute for unavailable original structure spectra and exact genetic assay details.
+- The neutral stored parent and computed fixed-H representations do not measure experimental solution protonation or tautomer populations.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35 explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). Skipped tests are not counted as passing tests. Existing ontology caches were used; no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do not establish biological production, stereochemical specificity, evidence adequacy, or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology results. Reuse establishes unchanged repository inputs; it is not a new remote authority query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all tracked files are hashed. Generated Python bytecode and external tool caches are not claimed to have been independently byte-pinned at the prior execution.
+- No scientific owner, inventory, curation table, native status or history was edited. Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification; target strict validation ran afresh. Scientific failed or unavailable checks are distinct from bundle validation.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T110535Z-acinetoferrin
+title: 'Acinetoferrin: exact authority identity and bounded native-strain evidence'
+started_at: '2026-10-21T10:56:17.185335Z'
+finished_at: '2026-10-21T11:05:35.963792Z'
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: The stereo-resolved neutral graph and current authority xrefs agree. Both
+  original abstracts support occurrence in A. haemolyticus ATCC17906, which is omitted
+  from the producer qualifier. Exact original structure details and native acbA phenotype
+  selectivity remain unavailable, so a method upgrade is conditional.
+source:
+  git_revision: 1c2402097718c138b081e00943de8f04de0541cd
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/acinetoferrin.yaml
+    sha256: 309083fe41717f57c6197568a64cc4e20130d3b4f4431362932b71f1dac36f9b
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/grading.py
+    sha256: ece54c4a2c0803f034ac59de51b1006cf79ea8d6b6256d75757d4adb88ea9630
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 41, batch 005, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated pending-PR targets.
+    At selection, 94 of 3116 current records had campaign coverage and 3022 remained.
+    The population search included ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-f9b470e34a
+targets:
+- target_id: naturalproductmech:mibig-f9b470e34a
+  path: data/natural_products/alkaloids/acinetoferrin.yaml
+  label: acinetoferrin
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-f9b470e34a
+  command: just validate-strict data/natural_products/alkaloids/acinetoferrin.yaml
+    --out /private/tmp/npm-review-work/041/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T10:56:19.365664Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 current record files agree with PATHS.tsv and their pinned filing
+    pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055340+00:00;
+    finished 2026-10-21T09:55:22.727768+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-corpus.log. Reused
+    for batch005 only after fresh fetch/base/tree equality and all 9,182 tracked file
+    bytes and modes were verified against the original batch004 baseline (208,070,649
+    bytes). This gate was not rerun for batch005; original times, scope, warnings,
+    exceptions and skips are preserved.'
+  target_ids:
+  - naturalproductmech:mibig-f9b470e34a
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 current records passed the documented byte-reproduction gate
+    against committed inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055361+00:00;
+    finished 2026-10-21T09:56:44.050706+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-reproduction.log.
+    Reused for batch005 only after fresh fetch/base/tree equality and all 9,182 tracked
+    file bytes and modes were verified against the original batch004 baseline (208,070,649
+    bytes). This gate was not rerun for batch005; original times, scope, warnings,
+    exceptions and skips are preserved.'
+  target_ids:
+  - naturalproductmech:mibig-f9b470e34a
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The exhaustive review queue produced 8,928 diagnostic rows across 12 queues;
+    this deterministic output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just review-queue --tsv /private/tmp/npm-review-queue-batch-004.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.057401+00:00;
+    finished 2026-10-21T09:54:38.468783+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/review-queue.log. Reused
+    for batch005 only after fresh fetch/base/tree equality and all 9,182 tracked file
+    bytes and modes were verified against the original batch004 baseline (208,070,649
+    bytes). This gate was not rerun for batch005; original times, scope, warnings,
+    exceptions and skips are preserved.'
+  target_ids:
+  - naturalproductmech:mibig-f9b470e34a
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'The configured identifier-label gate passed using the existing ontology
+    caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions,
+    499 warning-only mismatches and 4,744 pairs skipped because their prefixes have
+    no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.061733+00:00;
+    finished 2026-10-21T09:56:36.296159+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/validate-products.log. Reused
+    for batch005 only after fresh fetch/base/tree equality and all 9,182 tracked file
+    bytes and modes were verified against the original batch004 baseline (208,070,649
+    bytes). This gate was not rerun for batch005; original times, scope, warnings,
+    exceptions and skips are preserved.'
+  target_ids:
+  - naturalproductmech:mibig-f9b470e34a
+- check_id: shared-qc
+  name: Full repository quality gate on the current main baseline
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed on the unchanged main baseline
+    during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+    All configured lint, governance, documentation, provenance, source-queue, schema,
+    rendering, reproduction, filing-integrity and reporting stages completed successfully.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:30.560925+00:00;
+    finished 2026-10-21T10:04:44.806799+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/qc.log. Reused for batch005
+    only after fresh fetch/base/tree equality and all 9,182 tracked file bytes and
+    modes were verified against the original batch004 baseline (208,070,649 bytes).
+    This gate was not rerun for batch005; original times, scope, warnings, exceptions
+    and skips are preserved.'
+  target_ids:
+  - naturalproductmech:mibig-f9b470e34a
+- check_id: S041-C-PRIMARY-IDENTITY
+  name: Original detailed structure and occurrence evidence
+  status: unavailable
+  required: true
+  summary: Both original abstracts positively name acinetoferrin and ATCC 17906, but
+    the 1994 full structure drawing, spectra and experimental text are unavailable.
+    Current database/graph agreement is assessed separately by the coordinator.
+  target_ids:
+  - naturalproductmech:mibig-f9b470e34a
+  evidence_ids:
+  - S041-1994
+  - S041-CHEMISTRY
+  - S041-ACCESS
+- check_id: S041-C-PRIMARY-METHODS
+  name: Exact native acbA loss/rescue experimental readout
+  status: unavailable
+  required: true
+  summary: The 2013 abstract reports native biosynthetic loss and rescue, but product
+    selectivity, mutant construction and complete controls require the unread body/figures.
+    A method upgrade remains conditional.
+  target_ids:
+  - naturalproductmech:mibig-f9b470e34a
+  evidence_ids:
+  - S041-2013-GENETICS
+  - S041-2013-TRANSPORT
+  - S041-ACCESS
+- check_id: S041-C-STRAIN
+  name: Literal experimental strain provenance
+  status: passed
+  required: true
+  summary: ATCC 17906 appears in both original primary abstracts and ATCC 17906T in
+    the 2013 title/abstract. The strain qualifier is a supported bounded addition
+    independent of the unresolved detailed method review.
+  target_ids:
+  - naturalproductmech:mibig-f9b470e34a
+  evidence_ids:
+  - S041-1994
+  - S041-2013-GENETICS
+  - S041-STRAIN-CONSUMER
+- check_id: R041-C-CHEM
+  name: Exact structure and authority resolution
+  status: passed
+  required: true
+  summary: All stereo-resolved stored graphs agree; the Standard-InChI-only Wikidata
+    reconstruction is explicitly qualified for its different fixed-H tautomer.
+  target_ids:
+  - naturalproductmech:mibig-f9b470e34a
+  evidence_ids:
+  - R041-CHEM
+  - R041-NPA
+  - R041-CHEBI
+  - R041-WIKI
+- check_id: R041-C-IMODULON
+  name: Applicable native expression dataset
+  status: not_applicable
+  required: false
+  summary: No matching A. haemolyticus dataset occurs in the complete retained catalogue;
+    the owner has no expression-regulation assertion.
+  target_ids:
+  - naturalproductmech:mibig-f9b470e34a
+  evidence_ids:
+  - R041-IMODULON
+evidence:
+- evidence_id: S041-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/acinetoferrin.yaml
+  locator: Entire YAML and full resolved owner, including both occurrences and source
+    history
+  accessed_at: '2026-10-21T10:59:09.874490Z'
+  support: supports
+  summary: The owner is the neutral, symmetric acinetoferrin structure ZYPXWYPUWAXTQR-JOBJLJCHSA-N,
+    with two LOTUS A. haemolyticus occurrences. Its sole MIBiG producer/locus cite
+    PMID:23378574 and use SOURCE_ASSERTION/CLUSTER_UNSTATED, no imported method and
+    NRPS. The producer lacks a strain qualifier. No pathway, graph, protein example,
+    molecular target or activity is asserted.
+  snapshot_sha256: 309083fe41717f57c6197568a64cc4e20130d3b4f4431362932b71f1dac36f9b
+- evidence_id: S041-RAW
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: Complete BGC0000295:1 version 5 row
+  accessed_at: '2026-10-21T10:59:09.874490Z'
+  support: supports
+  summary: The row faithfully yields the current chemistry, species 29430, AB661448.1,
+    empty bounds/methods and entry-level PMID:23378574. It is active with questionable
+    quality/unknown completeness. Complete canonical raw-row SHA256 5bffe4badf3e0890db3519691c7300db8a74ac4786a5441e600f66ba62c7a441;
+    these database quality flags are not independent scientific verdicts.
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: S041-LOTUS
+  kind: record_content
+  reference: data/raw/lotus_occurrences.tsv
+  locator: Two exact full-key rows, DOI10.1007/BF00140488 and DOI10.1099/MIC.0.065177-0
+  accessed_at: '2026-10-21T10:59:09.874490Z'
+  support: supports
+  summary: Both source rows associate the same full chemical key with A. haemolyticus
+    taxon 29430/Q16824990. Their citations correspond to distinct 1994 isolation and
+    2013 genetic papers, not two DOI spellings of one article. The repeated organism
+    is not an erroneous duplicate; neither row independently encodes the strain.
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: S041-1994
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=8148619&retmode=xml
+  locator: PMID8148619 / DOI10.1007/BF00140488; original primary abstract and metadata
+    only
+  accessed_at: '2026-10-21T10:39:36.106159Z'
+  support: supports
+  summary: The authors report purification of acinetoferrin from low-iron cultures
+    of A. haemolyticus ATCC 17906 using XAD-7 and preparative TLC. Degradation, NMR
+    and FAB-MS support a symmetric citrate dihydroxamate with 1,3-diaminopropane and
+    E-2-octenoic-acid-derived substituents. This directly reports biological isolation
+    and species/strain occurrence, but the original drawing, spectra and detailed
+    conditions were not inspected.
+  snapshot_sha256: cad842d14231cc6cfbcafe1181931c041ab7851706ff07b1de774de5da83fef7
+- evidence_id: S041-2013-GENETICS
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=23378574&retmode=xml
+  locator: PMID 23378574 / DOI10.1099/mic.0.065177-0; title and complete original
+    primary abstract only
+  accessed_at: '2026-10-21T10:40:28.931625Z'
+  support: supports
+  summary: The paper names native A. haemolyticus ATCC 17906T and the consecutive
+    acbABCD/actBCAD operon. It explicitly reports acbA-mutant inability to produce
+    acinetoferrin under iron limitation and rescue by native-gene complementation.
+    This is a specific positive native-genetic report. The unavailable body leaves
+    the exact mutant construction, product-detection selectivity, comparator and full
+    controls unverified; the abstract does not establish whether the readout was exact-product
+    chromatography or a broader siderophore assay.
+  snapshot_sha256: ef66e2343117409910498bde2139e4f627b473faff1bb728c2f0d8e79318626c
+- evidence_id: S041-2013-TRANSPORT
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=23378574&retmode=xml
+  locator: Same complete primary abstract; actA, actC, actD and actB clauses
+  accessed_at: '2026-10-21T10:40:28.931625Z'
+  support: supports
+  summary: actA loss concerns ferric-acinetoferrin receptor expression and is rescued
+    by actA. actD loss reduces secretion by about 35%, restored by actD complementation.
+    actC function is proposed from similarity to a rhizobactin importer; actB remains
+    unresolved. These endpoints must not be substituted for acbA biosynthetic loss
+    or treated as purified-enzyme synthesis. Biosynthetic protein assignments are
+    partly homology-based, and no exact NRPS Type I mechanism is demonstrated by this
+    abstract.
+  snapshot_sha256: ef66e2343117409910498bde2139e4f627b473faff1bb728c2f0d8e79318626c
+- evidence_id: S041-CHEMISTRY
+  kind: validation
+  reference: /private/tmp/npm-review-work/041/chemistry.json
+  locator: Retained owner SMILES/InChI/key, charge and tetrahedral-centre computation
+  accessed_at: '2026-10-21T10:56:18.054125Z'
+  support: supports
+  summary: The calculation reproduces neutral C28H48N4O9 and the owner full key, with
+    no tetrahedral chiral centres. The two explicit E alkene configurations are compatible
+    with the 1994 abstract chemical description; symmetry explains why the central
+    citrate carbon is not a stereocentre. This check does not replace the missing
+    original structure drawing and spectra.
+  snapshot_sha256: 060784ec8d05ca1e6891b2b92efe0c39e9e9006e167d7c43f453705da6a24e10
+- evidence_id: S041-ACCESS
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next-batch005/bgc/acinetoferrin-source-notes.json
+  locator: Original prepared-source receipts access-104001.json and access-104029.json;
+    exact failed official main-body routes
+  accessed_at: '2026-10-21T10:59:09.874490Z'
+  support: context_only
+  summary: The 1994 Springer PDF request returned a subscription/cookie HTML page,
+    not a PDF. The 2013 Microbiology Society article and exact docserver PDF requests
+    returned 403. Only original PubMed abstracts were obtained and read. No repeated
+    network request was made during 041; full main texts, figures and supplements
+    remain unavailable.
+  snapshot_sha256: c3623cd7458d320be201e7fc378f085de779b35713c7a653d9c3cf295d6793c1
+  search_scope: 'Bounded prior public access: https://link.springer.com/content/pdf/10.1007/BF00140488.pdf;
+    https://www.microbiologyresearch.org/content/journal/micro/10.1099/mic.0.065177-0;
+    https://www.microbiologyresearch.org/docserver/fulltext/micro/159/4/678_mic065177.pdf.
+    Retained actual failures occurred 10:39:58–10:40:29Z on 2026-10-21. This is an
+    access limitation, not proof of missing source content.'
+- evidence_id: S041-STRAIN-CONSUMER
+  kind: record_content
+  reference: src/naturalproductmech/curate/producer_strains.py
+  locator: Complete loader and qualifier, plus bounded seeder application sites
+  accessed_at: '2026-10-21T10:59:09.874490Z'
+  support: supports
+  summary: The consumed strain table requires BGC accession:compound index, full unchanged
+    source-row SHA256, strain, stable reference, curator/date/rationale. It rejects
+    stale/duplicate/missing source rows and adds strain plus separately attributed
+    CURATOR_INFERENCE evidence without changing taxonomy or evidence grades. This
+    existing route can preserve ATCC 17906 independently of the unresolved method
+    grade.
+  snapshot_sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+- evidence_id: S041-METHOD-CONSUMER
+  kind: record_content
+  reference: scripts/seed_from_sources.py
+  locator: load/apply_mibig_locus_evidence_overrides lines 473–570; full grading.py
+    and claim_references.py inspected
+  accessed_at: '2026-10-21T10:59:09.874490Z'
+  support: supports
+  summary: REPLACE accepts recognized methods but its expected_* context is not enforced;
+    the strict context guard belongs to WITHDRAW. A future native-knockout REPLACE
+    therefore needs a paired complete-row-SHA claim-reference row or a tested equivalent
+    guard. The maintained Knock-out studies mapping would yield BGC_CHARACTERIZED/CLUSTER_DEMONSTRATED,
+    conditional on an exact-product native experiment. It must not be inferred from
+    actA/actD transport endpoints.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: S041-QUALIFICATION-SEARCH
+  kind: search
+  reference: curation/
+  locator: Ignored-inclusive bounded search of curation/, conf/ and src/naturalproductmech/curate/
+    for BGC0000295, minted ID and acinetoferrin
+  accessed_at: '2026-10-21T10:59:09.874490Z'
+  support: context_only
+  summary: No target-specific maintained qualification matched in the searched directories,
+    including ignored and hidden files. The entire owner also lacks a strain field.
+    This is a bounded absence conclusion about the effective correction inputs, not
+    a claim of no biological literature.
+  search_scope: rg --no-ignore --hidden -n 'BGC0000295|mibig-f9b470e34a|acinetoferrin'
+    curation conf src/naturalproductmech/curate; exit1, no matches. Full curation/mibig_producer_strains.tsv
+    read.
+- evidence_id: R041-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/acinetoferrin.yaml
+  locator: Complete owner, resolved source projection and all three native history
+    entries
+  accessed_at: '2026-10-21T11:05:21.162882Z'
+  support: supports
+  summary: The owner is neutral C28H48N4O9 with two explicit E alkenes and no tetrahedral
+    stereocentre. It contains two separately cited A. haemolyticus occurrences, one
+    producer/locus pair, NPAtlas xref and three seed events. No pathway, causal graph,
+    protein, target, activity or clinical assertion is present.
+  snapshot_sha256: 309083fe41717f57c6197568a64cc4e20130d3b4f4431362932b71f1dac36f9b
+- evidence_id: R041-CHEM
+  kind: validation
+  reference: /private/tmp/npm-review-work/041/identity/chemical-comparison.json
+  locator: Six independently reconstructed retained database representations
+  accessed_at: '2026-10-21T11:01:18.392202Z'
+  support: supports
+  summary: Owner, current MIBiG, NPAtlas and both ChEBI JSON/MOL graphs agree on full
+    Standard InChIKey ZYPXWYPUWAXTQR-JOBJLJCHSA-N, fixed-H InChI, neutral formula,
+    zero tetrahedral centres and two E alkenes. Wikidata Standard InChI also reproduces
+    that full standard key, but converting that normalized identifier back to a graph
+    selects a different amide/imidic-acid fixed-H tautomer. Thus all_full_keys_match
+    is true and all_fixed_H_match is false. This normalization effect is not evidence
+    of a stored xref defect or of a separately isolated compound.
+  snapshot_sha256: 7bc47224e81ba25455c926922481596715e828a5d6261237e81e6cda63b0a730
+- evidence_id: R041-NPA
+  kind: database
+  reference: https://www.npatlas.org/api/v1/compound/NPA010195
+  locator: Retained complete response; exact relevant identity fields
+  accessed_at: '2026-10-21T10:58:23.367261Z'
+  support: supports
+  summary: NPA010195 resolves to acinetoferrin and the exact neutral owner graph.
+    Its 1994 isolation reference and A. haemolyticus origin corroborate the intended
+    database concept without replacing the original experimental audit.
+  snapshot_sha256: d04823ef443e5960971882ffc84ce34d2e1151db833d7d692aee020b3511a239
+- evidence_id: R041-MIBIG
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0000295.5/annotations.json
+  locator: Retained complete response; exact relevant identity fields
+  accessed_at: '2026-10-21T10:58:24.358696Z'
+  support: supports
+  summary: Active BGC0000295 version5 retains the exact acinetoferrin graph, NPA010195,
+    A. haemolyticus taxon29430, AB661448.1 and PMID23378574. Quality is questionable,
+    completeness unknown, methods empty and source interval0/0. No genomic interval
+    is inferred from those placeholders or from the full accession length. NRPS Type
+    I is retained source classification, not independently demonstrated mechanism.
+  snapshot_sha256: 4fb69c65ab892be6dad7f6ec1442cd78a8aed0b55f4fb124c995adfb5734e221
+- evidence_id: R041-CHEBI
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/212669/
+  locator: Retained complete response; exact relevant identity fields
+  accessed_at: '2026-10-21T10:59:16.893310Z'
+  support: supports
+  summary: CHEBI:212669 resolves to exact acinetoferrin with matching formula and
+    full key but has two-star status. Its species29430/PMID8148619 origin supports
+    the concept. It is not an eligible three-star replacement for the minted identifier
+    under the current seed policy.
+  snapshot_sha256: 5839863e1f596b4379c529d2f9178eb081088da62549d94c5f63a568ec7b1b77
+- evidence_id: R041-CHEBI-MOL
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/212669/
+  locator: Complete parsed MOL graph
+  accessed_at: '2026-10-21T10:59:17.510793Z'
+  support: supports
+  summary: The actual ChEBI MOL graph independently retains the two E double bonds
+    and matches the owner full key and fixed-H form.
+  snapshot_sha256: 0f75f004a84305d51525c73f1c087c3185aad05b117d619c7a2b8bda64d64658
+- evidence_id: R041-TAXON
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=29430&retmode=xml
+  locator: Complete top-level Taxon identity, rank, names, type material and lineage
+  accessed_at: '2026-10-21T10:58:23.529624Z'
+  support: supports
+  summary: NCBITaxon:29430 resolves to Acinetobacter haemolyticus at species rank,
+    parent Acinetobacter469. Type-material aliases include ATCC17906. The OTHER_BACTERIAL
+    group is compatible. A species node does not itself qualify every strain as the
+    experimentally studied producer.
+  snapshot_sha256: 06cbbcece80155c49b6bc5faaff0d6af06fc1ef13345e76304329f3e99459b03
+- evidence_id: R041-WIKI
+  kind: database
+  reference: https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q16824990%7CQ76422124&props=labels%7Cclaims&languages=en&format=json
+  locator: Both returned entities; labels and exact taxon/chemical identity claims
+  accessed_at: '2026-10-21T10:58:24.330083Z'
+  support: supports
+  summary: LOTUS organism Q16824990 resolves to A. haemolyticus with P685=29430. Chemical
+    Q76422124 has matching P234 Standard InChI and P235 full key. Its P233 SMILES
+    omits the alkene geometry and is not a substitute for the stereo-resolved owner;
+    Standard InChI agreement does not pin a fixed-H tautomer.
+  snapshot_sha256: d19d88f41d5fd2b86f688df3b6a21d42aa7be9ad1e923a59a0e403d36f384ddb
+- evidence_id: R041-GENBANK
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=AB661448.1&rettype=gb&retmode=text
+  locator: Header, source feature and all non-translation feature qualifiers; nucleotide/protein
+    translations not independently audited
+  accessed_at: '2026-10-21T10:58:24.521598Z'
+  support: supports
+  summary: AB661448.1 is a 13141bp deposited A. haemolyticus ATCC17906 type-strain
+    sequence with taxon29430 and PMID23378574. Annotated acbA570..2354 encodes BAM09326.1;
+    acbB2347..3828, acbC3825..5642 and acbD5670..6308 occur alongside actB/C/A/D.
+    This deposited strain/accession bridge corroborates the original abstract. Gene
+    labels and deposited annotations do not prove the exact phenotype readout or justify
+    using the whole accession as the locus interval.
+  snapshot_sha256: b4b69cb7cd99313392f1031f478a33109008507edd1ea9d37be68a702852545a
+- evidence_id: R041-RAW
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: Complete exact BGC0000295:1 row and complete parsed exact-key source projections
+  accessed_at: '2026-10-21T11:05:21.162882Z'
+  support: supports
+  summary: The generated identity, version, accession, empty methods and selected
+    citation reproduce the pinned row. Complete committed eligible ChEBI structures/origins
+    contain no exact-key eligible entry. Both LOTUS rows map to the same exact chemical
+    key and distinct publications. The authority two-star match does not contradict
+    the bounded grounding note.
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: R041-CLASS
+  kind: record_content
+  reference: data/raw/npclassifier.tsv
+  locator: Complete exact-key classifier row
+  accessed_at: '2026-10-21T11:05:21.162882Z'
+  support: context_only
+  summary: Alkaloids, empty superclass/class lists and non-glycoside are attributed
+    to NPClassifier version2026-09-07. This computed classification is separate from
+    MIBiG NRPS/Type I and is not an experimentally established synthesis route.
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: R041-IMODULON
+  kind: database
+  reference: https://imodulondb.org/
+  locator: Previously retained complete 28-dataset catalogue
+  accessed_at: '2026-10-21T07:21:15.957321Z'
+  support: context_only
+  summary: The catalogue contains A. baumannii139, but no A. haemolyticus dataset.
+    The former is a different species and cannot establish an acinetoferrin regulator
+    in ATCC17906. The owner makes no regulatory-expression claim.
+  snapshot_sha256: 1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549
+assessments:
+- assessment_id: S041-A-IDENTITY
+  area: identity
+  topic: Exact chemical identity and primary resolution
+  outcome: unknown
+  summary: The internal neutral graph is consistent and the 1994 abstract describes
+    its symmetric citrate/dihydroxamate E-unsaturated chemistry. No confirmed structural
+    defect is identified. Exact original drawing and spectral verification remains
+    incomplete; current authority identity does not remove this primary-source limit.
+  target_ids:
+  - naturalproductmech:mibig-f9b470e34a
+  evidence_ids:
+  - S041-OWNER
+  - S041-1994
+  - S041-CHEMISTRY
+  - S041-ACCESS
+- assessment_id: S041-A-OCCURRENCES
+  area: evidence
+  topic: Both LOTUS occurrence references and natural origin
+  outcome: supported
+  summary: Both references are relevant primary reports naming acinetoferrin in A.
+    haemolyticus ATCC 17906. The 1994 report describes isolation; the 2013 report
+    describes native production and genetic interventions in the same named strain.
+    The occurrence citations are supported at inspected abstract scope, not as independently
+    audited original chromatograms/spectra. No withdrawal or duplicate-removal action
+    is justified.
+  target_ids:
+  - naturalproductmech:mibig-f9b470e34a
+  evidence_ids:
+  - S041-LOTUS
+  - S041-1994
+  - S041-2013-GENETICS
+- assessment_id: S041-A-METHODS
+  area: evidence
+  topic: Producer/locus grades and exact genetic endpoint
+  outcome: unknown
+  summary: The empty imported method fields are source-faithful, but the cited abstract
+    supplies a specific acbA native loss/rescue lead. Detailed exact-product readout
+    is needed before applying Knock-out studies. Retain the current grades until that
+    audit; do not transfer receptor or export results, individual homology assignments,
+    or claim an inspected enzymatic assay. The source NRPS Type I class remains unverified
+    against the unavailable mechanistic body, with no confirmed replacement asserted.
+  target_ids:
+  - naturalproductmech:mibig-f9b470e34a
+  evidence_ids:
+  - S041-RAW
+  - S041-2013-GENETICS
+  - S041-2013-TRANSPORT
+  - S041-METHOD-CONSUMER
+  - S041-ACCESS
+- assessment_id: S041-A-STRAIN
+  area: scope
+  topic: Native strain context
+  outcome: concern
+  summary: The species-level producer omits ATCC 17906, explicitly named in both primary
+    reports. Preserve that qualifier without substituting an engineered mutant, expanding
+    to every strain of the species, or changing the native evidence grade.
+  target_ids:
+  - naturalproductmech:mibig-f9b470e34a
+  evidence_ids:
+  - S041-OWNER
+  - S041-1994
+  - S041-2013-GENETICS
+  - S041-STRAIN-CONSUMER
+- assessment_id: S041-A-OPTIONAL
+  area: completeness
+  topic: Unasserted detailed mechanism, protein and activity content
+  outcome: not_applicable
+  summary: There are no graph, protein-example, individual enzyme, activity or molecular-target
+    claims requiring expansion. Their absence is not a defect. Any later annotation
+    must keep biosynthesis, ferric receptor function and secretion separate and distinguish
+    homology from experiments.
+  target_ids:
+  - naturalproductmech:mibig-f9b470e34a
+  evidence_ids:
+  - S041-OWNER
+  - S041-2013-TRANSPORT
+- assessment_id: R041-IDENTITY
+  area: identity
+  topic: Exact chemical form and resolving authority xrefs
+  outcome: supported
+  summary: The stereo-resolved owner and current NPAtlas/MIBiG/ChEBI graphs agree,
+    including fixed-H form. Wikidata supports standardized identity with an explicit
+    tautomer/SMILES qualification. This database comparison is separate from the unresolved
+    original detailed structure evidence.
+  target_ids:
+  - naturalproductmech:mibig-f9b470e34a
+  evidence_ids:
+  - R041-CHEM
+  - R041-NPA
+  - R041-CHEBI
+  - R041-CHEBI-MOL
+  - R041-WIKI
+  - R041-OWNER
+- assessment_id: R041-GROUNDING
+  area: provenance
+  topic: Minted identifier and active source concept
+  outcome: supported
+  summary: The current exact ChEBI match is two-star and absent from the complete
+    eligible pinned three-star inventory. Retaining the minted identifier is justified
+    within the inspected seed inputs and authority status. MIBiG version5 and its
+    exact source concept resolve.
+  target_ids:
+  - naturalproductmech:mibig-f9b470e34a
+  evidence_ids:
+  - R041-CHEBI
+  - R041-RAW
+  - R041-MIBIG
+- assessment_id: R041-TAXON
+  area: scope
+  topic: Species, named strain and deposited locus
+  outcome: supported
+  summary: The NCBI species and Wikidata organism agree; GenBank independently names
+    ATCC17906 and the cited study. This supports the strain qualifier proposed in
+    the scientific section, without treating taxonomy or deposited gene names as independent
+    knockout-assay evidence. Missing MIBiG interval bounds remain missing.
+  target_ids:
+  - naturalproductmech:mibig-f9b470e34a
+  evidence_ids:
+  - R041-TAXON
+  - R041-WIKI
+  - R041-GENBANK
+  - R041-MIBIG
+- assessment_id: R041-HISTORY
+  area: provenance
+  topic: Classification attribution and native audit history
+  outcome: supported
+  summary: All three native seed events and SEEDED status remain intact. The classifier
+    version is explicit; external review neither changes that history nor promotes
+    computational labels to experimental mechanism.
+  target_ids:
+  - naturalproductmech:mibig-f9b470e34a
+  evidence_ids:
+  - R041-CLASS
+  - R041-OWNER
+findings:
+- finding_id: S041-F-STRAIN
+  issue_key: mibig-bgc0000295-compound1-strain-context
+  category: scope
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Preserve the named ATCC 17906 producer strain
+  description: Both original primary abstracts identify ATCC 17906, with the 2013
+    report marking it as a type strain. The generated producer retains only the species
+    label and lacks that bounded experimental qualifier. Adding the literal strain
+    does not settle exact assay selectivity or justify an evidence-grade upgrade.
+  target_ids:
+  - naturalproductmech:mibig-f9b470e34a
+  field_paths:
+  - producer_organisms[0].strain
+  - producer_organisms[0].evidence
+  evidence_ids:
+  - S041-OWNER
+  - S041-1994
+  - S041-2013-GENETICS
+  - S041-STRAIN-CONSUMER
+  - S041-QUALIFICATION-SEARCH
+  rule_id: 'review-checklist: producer strain and experimentally supported scope'
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Guarded native producer strain qualifier
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/producer_strains.py
+    role: Consumed full-row drift guard and qualified evidence
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Deterministic regeneration
+actions:
+- action_id: S041-ACTION-STRAIN
+  description: 'Add exactly one consumed curation/mibig_producer_strains.tsv row:
+    source_id=BGC0000295:1, expected_source_row_sha256=5bffe4badf3e0890db3519691c7300db8a74ac4786a5441e600f66ba62c7a441,
+    strain=ATCC 17906, reference=PMID:23378574, curator, ISO date and rationale citing
+    the 2013 original title/abstract and corroborating 1994 ATCC 17906 report. Retain
+    the type-strain designation as context rather than inventing a different strain
+    identifier. Regenerate through the existing loader; do not edit generated YAML
+    or the raw inventory.'
+  finding_ids:
+  - S041-F-STRAIN
+  target_ids:
+  - naturalproductmech:mibig-f9b470e34a
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Guarded native producer strain qualifier
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/producer_strains.py
+    role: Consumed full-row drift guard and qualified evidence
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Deterministic regeneration
+  generator: scripts/seed_from_sources.py
+  acceptance_checks:
+  - The exact complete BGC0000295:1 raw row must match SHA256 5bffe4badf3e0890db3519691c7300db8a74ac4786a5441e600f66ba62c7a441;
+    expected version 5, taxon 29430, AB661448.1, blank bounds and methods, full key
+    ZYPXWYPUWAXTQR-JOBJLJCHSA-N and original PMID 23378574 are covered by that digest.
+    Reject drift, duplicate or missing matches.
+  - Only the producer strain and separately attributed CURATOR_INFERENCE provenance
+    change. Preserve species taxon, exact chemistry, both occurrence citations, source
+    concept, accession and existing evidence grades.
+  - Do not name acbA, actA or actD mutant derivatives as the wild-type producer. Do
+    not turn the qualifier into a species-wide experiment or an axenic-culture assertion.
+  - Inspect a target canary diff and run the maintained qualifier checks, strict validation,
+    exact seed reproduction and required repository QC before accepting the correction.
+- action_id: S041-ACTION-RESOLVE-METHODS
+  description: Retrieve and inspect the original 2013 exact acbA phenotype assay,
+    mutant background and complementation controls when an authorized free body is
+    available. Distinguish exact acinetoferrin detection from general siderophore/iron-limited-growth
+    readouts and from actA receptor or actD export endpoints. If this confirms exact-product
+    native genetic linkage, REPLACE with only Knock-out studies for naturalproductmech:mibig-f9b470e34a,
+    paired with a curation/mibig_claim_references.tsv row retaining PMID:23378574
+    and complete source-row SHA256 5bffe4badf3e0890db3519691c7300db8a74ac4786a5441e600f66ba62c7a441,
+    or implement an equivalent tested REPLACE guard. expected_* fields alone do not
+    guard REPLACE. This is an unresolved evidence action, not a confirmed method defect
+    or permission to upgrade from the abstract.
+  finding_ids: []
+  target_ids:
+  - naturalproductmech:mibig-f9b470e34a
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Conditional method override after original phenotype verification
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: Paired complete raw-row SHA guard retaining the correct primary citation
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Implemented source drift guard
+  - repository: CultureBotAI/NaturalProductMech
+    path: conf/producer_evidence.tsv
+    role: Separate native producer and locus method grades
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Consumed override and regeneration
+  generator: scripts/seed_from_sources.py only after exact experimental applicability
+    and paired guards are established
+  acceptance_checks:
+  - Retain the actual original readout, controls and native strain context. If detection
+    is nonspecific, determine which narrower claim is supported; do not automatically
+    label a general siderophore phenotype as exact acinetoferrin loss.
+  - A verified native acbA knockout supports the maintained BGC_CHARACTERIZED/CLUSTER_DEMONSTRATED
+    mapping; receptor absence, secretion reduction and protein homology alone do not.
+    No purified-enzyme method is added without applicable experiments.
+  - Pair any future REPLACE with the complete untouched raw-row SHA guard, preserving
+    original citation and exact structure. Confirm composition with the strain qualification
+    in an isolated canary.
+  - Until required main-body evidence is read, retain method applicability as unknown
+    and review completion partial; no temporary-file or raw-inventory edit substitutes
+    for a consumed decision.
+limitations:
+- Only the complete original 1994 and 2013 primary abstracts and metadata were inspected.
+  Original main bodies, figures, detailed protocols and supplements remain unavailable;
+  no claim of complete experimental review is made.
+- The primary abstract reports acbA loss/rescue, but the exact chemical selectivity
+  of the phenotype assay remains unverified. actA receptor and actD secretion results
+  are distinct.
+- Current taxonomy, NPAtlas, ChEBI, MIBiG and GenBank authority checks are supplied
+  separately by the coordinator; this packet does not claim a new accession or full-protein
+  translation audit.
+- No new network calls, native validators, bundle assembly/save, repository edit or
+  campaign mutation occurred during this scientific section preparation. The inspected
+  local classifier is computational annotation, not an experimental biosynthetic-class
+  proof.
+- Current database agreement cannot substitute for unavailable original structure
+  spectra and exact genetic assay details.
+- The neutral stored parent and computed fixed-H representations do not measure experimental
+  solution protonation or tautomer populations.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35
+  explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently
+  verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+  Skipped tests are not counted as passing tests. Existing ontology caches were used;
+  no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do
+  not establish biological production, stereochemical specificity, evidence adequacy,
+  or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology
+  results. Reuse establishes unchanged repository inputs; it is not a new remote authority
+  query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all
+  tracked files are hashed. Generated Python bytecode and external tool caches are
+  not claimed to have been independently byte-pinned at the prior execution.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+tags:
+- path-order-campaign
+- batch-005
+- strain-context
+- primary-body-unavailable
+```
