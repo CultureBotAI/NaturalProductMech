@@ -1,0 +1,2200 @@
+# Scientific review of (−)-noscapine
+
+- Review: 20261025T220405Z-noscapine
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-25T22:01:25.049104Z
+- Finished UTC: 2026-10-25T22:04:05.291786Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The existing PsSDR1 graph retains its introduced-yeast setting, with native accession equality distinct from recombinant construct identity. Twenty-five deposited-sample assay observations retain their functional or cellular scope. Original occurrence and complete assignment gaps remain; neither matching authority graphs nor sample drawings establish physical-lot equivalence or direct binding.
+
+## Scope And Provenance
+
+One complete generated owner and any referenced components, assessed claim by claim for exact identity, provenance, origin, producer and occurrence scope, biosynthesis, classification, optional content and audit history.
+
+Selection: Campaign record 346, batch 035, selected in path order from the fresh-main authoritative validated catalogue and the separately validated targets in earlier batch commits (publication tracked separately). At selection, 403 of 3116 current records had campaign coverage and 2713 remained. The population search included ignored files. Exactly one target is assessed here.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base d14547bc76e0582aca15eeb073e203d28ea7548e.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CHEBI:73237 | data/natural_products/alkaloids/noscapine.yaml | generated | (−)-noscapine |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Closed-schema target validation | passed | True | CHEBI:73237 | The documented target strict validator completed; scientific support is assessed separately. |
+| Corpus path and filing integrity | passed | True | CHEBI:73237 | Fresh canonical corpus verification exited0; exact summary retained in pinned log. |
+| Corpus reproduction | passed | True | CHEBI:73237 | Fresh canonical reproduction verification exited0; exact result retained in pinned log. |
+| Native deterministic review queue | passed | True | CHEBI:73237 | Fresh canonical review queue generation exited0; deterministic priority diagnostics and output TSV remain separate from structured-review coverage. |
+| Configured ontology identifier-label correspondence | passed | True | CHEBI:73237 | Fresh canonical identifier-label correspondence gate exited0 within configured adapter coverage and exceptions; log retains the precise unresolved/no-adapter scope. |
+| Full repository quality gate on the fresh main baseline | passed | True | CHEBI:73237 | Fresh canonical QC attempt002 exited0:1024 tests passed,4 skipped,2 warnings; all3116 closed-schema validations passed; site/reproduction/PATHS/provenance and other configured checks passed. Failed001 DNS attempt remains separate. |
+| Complete owner and seven-set fidelity | passed | True | CHEBI:73237 | All ten successful actual intakes and chronological post-intake root reads must precede authoring. Complete owner/history and seventy raw joins must match. Noscapine alone has one three-node/two-edge graph and one pathway step;346/347 have25/6 written activities, with144/6 raw rows.342/350 each have one no-data sentinel. No external components or molecular_targets sections occur. |
+| local | passed | True | CHEBI:73237 | Complete actual owner and all seven source sets agree with the independently inspected inventory and complete-row guards. Official intake and the subsequent root read passed for every selected record before this science subsection was authored. |
+| method reproduction | passed | True | CHEBI:73237 | Empty imported methods and source-assertion/unstated grades are faithfully retained; a later experiment does not silently alter the original source assertion. |
+| yeast claim | passed | True | CHEBI:73237 | The maintained graph already labels the introduced yeast context; native sequence grounding and separate purified-enzyme scopes remain explicit. |
+| activities | passed | True | CHEBI:73237 | Root exact emitted-row/sample/protocol audit supports the current25 activity claims within functional and cellular limits. |
+| original occurrence scope | unavailable | True | CHEBI:73237 | Complete2012 and older exact occurrence applicability remain required gaps. |
+| direct rhea | unavailable | True | CHEBI:73237 | Direct Rhea57404 body returned403; reviewed UniProt reaction and crosslinks are positive, without claiming a fresh independent Rhea read. |
+| Stored chemical representation and complete source row | passed | True | CHEBI:73237 | Fresh intake derivation agrees with the stored graph; the source selector, full row and prepared snapshot were independently rechecked. |
+| Exact literal chemical authority scope | passed | True | CHEBI:73237 | All exact asserted literal identifiers retain their source spellings and full returned graph comparisons. Additional unasserted candidates and invalid default strings are separately attributed; no exact-equivalence defect is selected. |
+| Exact named primary chemical structure | passed | True | CHEBI:73237 | Exact current BGC0001325:1 version3, literal CID275196 and owner identifier CHEBI73237 reproduce the retained C22H23NO7 (minus)-noscapine R/S graph. CHEBI73237 is three-star and supports the exact MOL/full-key join. All five actually deposited SIDs855860,49645498,90341457,144203964 and170465539 independently decode from their atom/bond and directed2D stereo annotations to that same Standard/fixed-H graph. Original2016 Figure1 exact noscapine1 instead explicitly hashes only the tetrahydroisoquinoline-junction H and leaves the phthalide centre plain. Its bounded drawing model is T1R/L3? and equals the owner after only the phthalide tag is removed. |
+| Source chemical assignment and represented precision | unavailable | True | CHEBI:73237 | The original2016 final1 drawing specifies T1R but not the phthalide centre. Full original relative/absolute support for both retained assignments remains unclosed; five deposited SID graph matches do not certify physical sample handedness or purity. |
+
+## Scientific And Domain Assessments
+
+### Complete history and native status
+
+provenance: supported. Targets: CHEBI:73237.
+
+Native status remains SEEDED and all 6 history actions retain their exact order: ['SEEDED_FROM_SOURCES', 'SEEDED_FROM_SOURCES', 'SEEDED_FROM_SOURCES', 'RECORD_CURATED', 'SEEDED_FROM_SOURCES', 'SEEDED_FROM_SOURCES']. Source-seeding history does not replace claim-level scientific assessment.
+
+### Present optional assertions
+
+completeness: supported. Targets: CHEBI:73237.
+
+One step and a three-node/two-edge inline PsSDR1 graph describe the terminal noscapine conversion, with the primary evidence explicitly contextualized in introduced yeast. Twenty-five written PubChem observations preserve phenotypic/reporter/functional endpoints and inconclusive calls. Database reaction/protein annotations and assay target metadata do not establish direct binding or physical-sample stereochemistry.
+
+### Exact computed classification provenance
+
+representation: supported. Targets: CHEBI:73237.
+
+Exact-key NPClassifier version npclassifier.gnps2.org@2026-09-07 reproduces filing, superclass/class and glycoside fields. Computed classification is not independent natural-origin or mechanistic proof; any accepted identity correction requires effective-key reclassification.
+
+### Taxonomic identifiers versus experimental stocks
+
+provenance: supported. Targets: CHEBI:73237.
+
+Literal retained identifier context: 3469: Papaver somniferum (species); 22694: Papaver orientale (species); 33128: Papaver rhoeas (species); 38907: Corydalis ochotensis (species); 38914: Corydalis solida (species); 38929: Corydalis ophiocarpa (species); 215228: Papaver pseudo-orientale (species); 215229: Papaver somniferum subsp. setigerum (subspecies); 1030657: Corydalis heterocarpa var. japonica (varietas); 3117443: Papaver fugax (species); 3736021: Papaver oreophilum (species); 3736784: Roemeria carica (species). Papaver and Corydalis species/varietal identifiers retain their exact rank. P. setigerum is an explicit synonym under P. somniferum subsp. setigerum; Corydalis bulbosa is a synonym under C. solida. Other absent-P685 routes use exact retained names only. Identifier agreement does not independently establish occurrence, production or stock equivalence.
+
+### Literal organism routing
+
+grounding: supported. Targets: CHEBI:73237.
+
+29 exact raw LOTUS routes: 24 literal P685 matches and 5 explicitly qualified P225/current-name or NCBI synonym routes without P685. Identifier correspondence does not validate the cited exact-congener occurrence or experimental stock.
+
+### Native producer transcriptomic applicability
+
+completeness: not_applicable. Targets: CHEBI:73237.
+
+The retained complete catalogue contains 20 organisms and 28 datasets. No exact emitted native producer or named-stock match is established. No matrix, gene membership, compound or module association was inspected.
+
+### Functional or phenotypic activity and deposited sample applicability
+
+scope: supported. Targets: CHEBI:73237.
+
+Twenty-five written observations across nineteen AIDs retain functional CYP activity, PXR reporter and phenotype/viability endpoints, explicit inconclusive calls and source Potency values. Five deposited sample IDs are represented; paired blank/protein metadata and the two DNA-content samples remain distinct. The prior root audit inspected the selected deposited endpoints and protocol meanings; it is not a complete audit of all144 raw rows or an inference of direct binding, selectivity or physical-lot stereochemistry.
+
+### Retained assay rows versus no-data sentinel
+
+scope: supported. Targets: CHEBI:73237.
+
+There are 144 exact-key retained rows, 25 written observations and 0 no-data sentinel. A no-data sentinel is not an assay or evidence of biological inactivity.
+
+### owner/history and seven raw source sets
+
+provenance: supported. Targets: CHEBI:73237.
+
+Complete current owner/history and all seven exact raw joins match the preserved source inventory. Source reproduction and experimental applicability are assessed separately.
+
+### biosynthetic_pathway; causal_graphs; PsSDR1 evidence
+
+evidence: supported. Targets: CHEBI:73237.
+
+The existing pathway and graph explicitly qualify the late PsSDR1 conversion in engineered yeast. Original2016 evidence supports that setting. Purified PsMT2/PsMT3 experiments and the separate2014 NOS/native-silencing results are not transferred to an exact2012 SDR1 construct or universal native reaction order.
+
+### native I3PLR3 / JQ659007.1 / AFB74619.1
+
+grounding: supported. Targets: CHEBI:73237.
+
+The independently checked native joined-CDS, GenPept and reviewed UniProt sequences agree at348 residues. Native accession equality does not prove recombinant tag, construct or sample equivalence. Reviewed function/crosslinks remain positive despite the separately retained Rhea access limit.
+
+### biosynthetic_gene_clusters[0]; producer_organisms
+
+provenance: supported. Targets: CHEBI:73237.
+
+The2011 imported citation is explicitly disclosed as COMPOUND_BIOACTIVITY. It accompanies conservative empty-method grades and is not an asserted biosynthetic intervention. Plant producer and other occurrence statements retain their own source scopes.
+
+### bioassays and target annotations
+
+evidence: supported. Targets: CHEBI:73237.
+
+The independent root audit traced all25 emitted activity rows, deposited sample identities and protocol contexts. Functional/cellular activity supports only the stated assay interpretation, not direct binding or selectivity. This plan reuses that exact bounded audit.
+
+### original2012 source and older occurrence citations
+
+completeness: unknown. Targets: CHEBI:73237.
+
+The complete2012 original and exact applicability of the29 raw LOTUS citations remain incompletely inspected. Inventory or abstract agreement does not close those required source checks.
+
+### Stored representation and source-concept provenance
+
+identity: supported. Targets: CHEBI:73237.
+
+The complete source row BGC0001325:1 and source-concept hash reproduce this stored representation; this does not establish that the upstream compound label is correct. Formula, charge, Standard and fixed-H distinctions are independently recorded. Primary support and any conflicting exact xref are assessed separately.
+
+### Exact authority eligibility and source representation
+
+provenance: supported. Targets: CHEBI:73237.
+
+Exactly one committed three-star default ChEBI row matches; its current graph is checked separately.
+
+### Exact literal chemical identifier scope
+
+representation: supported. Targets: CHEBI:73237.
+
+Measured exact-literal comparisons: [{"comparison": {"same_charge": true, "same_fixed_h": true, "same_formula": true, "same_full_standard_key": true, "same_standard_inchi": true, "same_stereo_removed_standard": true}, "identifier": "pubchem:275196", "returned_identifier": "pubchem:275196", "scope": "Exact retained authority response; default strings, fixed-H and stereo precision remain separate"}, {"comparison": {"same_charge": true, "same_fixed_h": true, "same_formula": true, "same_full_standard_key": true, "same_standard_inchi": true, "same_stereo_removed_standard": true}, "identifier": "CHEBI:73237", "returned_identifier": "CHEBI:73237", "scope": "Exact retained authority response; default strings, fixed-H and stereo precision remain separate"}]. Literal source identifiers retain their exact spelling. Standard identity does not erase fixed-H or stereo differences; no authority graph is automatically adopted.
+
+### ChEBI full-key eligibility and literal serialization
+
+grounding: supported. Targets: CHEBI:73237.
+
+[{"eligible": true, "id": 73237, "literal_default_comparison": {"same_charge": true, "same_fixed_h": true, "same_formula": true, "same_full_standard_key": true, "same_standard_inchi": true, "same_stereo_removed_standard": true}, "literal_default_parse": true, "mol_comparison": {"same_charge": true, "same_fixed_h": true, "same_formula": true, "same_full_standard_key": true, "same_standard_inchi": true, "same_stereo_removed_standard": true}, "name": "(\u2212)-noscapine", "stars": 3}]. Current supplied three-star MOL/full-key eligibility is positive for CHEBI:73237. The committed projection has exact ChEBI row(s); current payloads are independently compared. Eligibility is not primary experimental identity proof. Supplied MOL, literal default SMILES and tool reconstruction from stated Standard InChI are separate channels; malformed literal defaults remain unrepaired.
+
+### Primary identity and experimental precision
+
+scope: unknown. Targets: CHEBI:73237.
+
+Exact current BGC0001325:1 version3, literal CID275196 and owner identifier CHEBI73237 reproduce the retained C22H23NO7 (minus)-noscapine R/S graph. CHEBI73237 is three-star and supports the exact MOL/full-key join. All five actually deposited SIDs855860,49645498,90341457,144203964 and170465539 independently decode from their atom/bond and directed2D stereo annotations to that same Standard/fixed-H graph. Original2016 Figure1 exact noscapine1 instead explicitly hashes only the tetrahydroisoquinoline-junction H and leaves the phthalide centre plain. Its bounded drawing model is T1R/L3? and equals the owner after only the phthalide tag is removed.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| R346-OWNER | data/natural_products/alkaloids/noscapine.yaml; Prior complete root owner read, verified unchanged against actual post-intake owner, optional fields and history | supports | The prior complete root owner read was verified unchanged against actual post-intake content: 25 occurrence, 1 producer and 1 locus assertions. Present optional fields: definition, biosynthetic_pathway, causal_graphs, bioactivities. No external component is present. |
+| R346-LOCAL | /private/tmp/npm-review-work/346/local-sources.json; Complete resolved owner and all six captured source sets; seventh set independently compared | context_only | Exact captured rows and separately parsed PubChem rows match frozen preparation. Inventory equality does not establish experimental support. |
+| R346-PUBCHEM-PREP | data/raw/pubchem_bioassay.tsv; Complete exact-key retained rows and no-data sentinels | context_only | This owner has 144 retained rows and 25 written observations. Across the cohort there are 31 written observations, 119 additional raw-only rows and two no-data sentinels; no fresh or complete compound-assay protocol catalogue is claimed. |
+| R346-Q1074622 | https://www.wikidata.org/wiki/Q1074622; Literal retained entity P225/P685 with original source-specific access time | context_only | 29 exact raw LOTUS routes: 24 literal P685 matches and 5 explicitly qualified P225/current-name or NCBI synonym routes without P685. Identifier correspondence does not validate the cited exact-congener occurrence or experimental stock. |
+| R346-Q11067910 | https://www.wikidata.org/wiki/Q11067910; Literal retained entity P225/P685 with original source-specific access time | context_only | 29 exact raw LOTUS routes: 24 literal P685 matches and 5 explicitly qualified P225/current-name or NCBI synonym routes without P685. Identifier correspondence does not validate the cited exact-congener occurrence or experimental stock. |
+| R346-Q11178148 | https://www.wikidata.org/wiki/Q11178148; Literal retained entity P225/P685 with original source-specific access time | context_only | 29 exact raw LOTUS routes: 24 literal P685 matches and 5 explicitly qualified P225/current-name or NCBI synonym routes without P685. Identifier correspondence does not validate the cited exact-congener occurrence or experimental stock. |
+| R346-Q11296633 | https://www.wikidata.org/wiki/Q11296633; Literal retained entity P225/P685 with original source-specific access time | context_only | 29 exact raw LOTUS routes: 24 literal P685 matches and 5 explicitly qualified P225/current-name or NCBI synonym routes without P685. Identifier correspondence does not validate the cited exact-congener occurrence or experimental stock. |
+| R346-Q130201 | https://www.wikidata.org/wiki/Q130201; Literal retained entity P225/P685 with original source-specific access time | context_only | 29 exact raw LOTUS routes: 24 literal P685 matches and 5 explicitly qualified P225/current-name or NCBI synonym routes without P685. Identifier correspondence does not validate the cited exact-congener occurrence or experimental stock. |
+| R346-Q131584 | https://www.wikidata.org/wiki/Q131584; Literal retained entity P225/P685 with original source-specific access time | context_only | 29 exact raw LOTUS routes: 24 literal P685 matches and 5 explicitly qualified P225/current-name or NCBI synonym routes without P685. Identifier correspondence does not validate the cited exact-congener occurrence or experimental stock. |
+| R346-Q149279 | https://www.wikidata.org/wiki/Q149279; Literal retained entity P225/P685 with original source-specific access time | context_only | 29 exact raw LOTUS routes: 24 literal P685 matches and 5 explicitly qualified P225/current-name or NCBI synonym routes without P685. Identifier correspondence does not validate the cited exact-congener occurrence or experimental stock. |
+| R346-Q15352457 | https://www.wikidata.org/wiki/Q15352457; Literal retained entity P225/P685 with original source-specific access time | context_only | 29 exact raw LOTUS routes: 24 literal P685 matches and 5 explicitly qualified P225/current-name or NCBI synonym routes without P685. Identifier correspondence does not validate the cited exact-congener occurrence or experimental stock. |
+| R346-Q17813440 | https://www.wikidata.org/wiki/Q17813440; Literal retained entity P225/P685 with original source-specific access time | context_only | 29 exact raw LOTUS routes: 24 literal P685 matches and 5 explicitly qualified P225/current-name or NCBI synonym routes without P685. Identifier correspondence does not validate the cited exact-congener occurrence or experimental stock. |
+| R346-Q17814053 | https://www.wikidata.org/wiki/Q17814053; Literal retained entity P225/P685 with original source-specific access time | context_only | 29 exact raw LOTUS routes: 24 literal P685 matches and 5 explicitly qualified P225/current-name or NCBI synonym routes without P685. Identifier correspondence does not validate the cited exact-congener occurrence or experimental stock. |
+| R346-Q4275211 | https://www.wikidata.org/wiki/Q4275211; Literal retained entity P225/P685 with original source-specific access time | context_only | 29 exact raw LOTUS routes: 24 literal P685 matches and 5 explicitly qualified P225/current-name or NCBI synonym routes without P685. Identifier correspondence does not validate the cited exact-congener occurrence or experimental stock. |
+| R346-Q7132528 | https://www.wikidata.org/wiki/Q7132528; Literal retained entity P225/P685 with original source-specific access time | context_only | 29 exact raw LOTUS routes: 24 literal P685 matches and 5 explicitly qualified P225/current-name or NCBI synonym routes without P685. Identifier correspondence does not validate the cited exact-congener occurrence or experimental stock. |
+| R346-Q87600253 | https://www.wikidata.org/wiki/Q87600253; Literal retained entity P225/P685 with original source-specific access time | context_only | 29 exact raw LOTUS routes: 24 literal P685 matches and 5 explicitly qualified P225/current-name or NCBI synonym routes without P685. Identifier correspondence does not validate the cited exact-congener occurrence or experimental stock. |
+| R346-TAXON-3469 | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=1030657,115647,1177,1392250,1437823,1570104,190592,1930,1932,1966654,215228,215229,22694,306088,3117443,33128,337066,3469,3736021,3736784,38907,38914,38929,40380,439476,5530,6848,903796&amp;retmode=xml; Exact TaxId/ScientificName/rank/parent and OtherNames within retained response | context_only | Literal retained identifier context: 3469: Papaver somniferum (species); 22694: Papaver orientale (species); 33128: Papaver rhoeas (species); 38907: Corydalis ochotensis (species); 38914: Corydalis solida (species); 38929: Corydalis ophiocarpa (species); 215228: Papaver pseudo-orientale (species); 215229: Papaver somniferum subsp. setigerum (subspecies); 1030657: Corydalis heterocarpa var. japonica (varietas); 3117443: Papaver fugax (species); 3736021: Papaver oreophilum (species); 3736784: Roemeria carica (species). Papaver and Corydalis species/varietal identifiers retain their exact rank. P. setigerum is an explicit synonym under P. somniferum subsp. setigerum; Corydalis bulbosa is a synonym under C. solida. Other absent-P685 routes use exact retained names only. Identifier agreement does not independently establish occurrence, production or stock equivalence. |
+| R346-TAXON-22694 | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=1030657,115647,1177,1392250,1437823,1570104,190592,1930,1932,1966654,215228,215229,22694,306088,3117443,33128,337066,3469,3736021,3736784,38907,38914,38929,40380,439476,5530,6848,903796&amp;retmode=xml; Exact TaxId/ScientificName/rank/parent and OtherNames within retained response | context_only | Literal retained identifier context: 3469: Papaver somniferum (species); 22694: Papaver orientale (species); 33128: Papaver rhoeas (species); 38907: Corydalis ochotensis (species); 38914: Corydalis solida (species); 38929: Corydalis ophiocarpa (species); 215228: Papaver pseudo-orientale (species); 215229: Papaver somniferum subsp. setigerum (subspecies); 1030657: Corydalis heterocarpa var. japonica (varietas); 3117443: Papaver fugax (species); 3736021: Papaver oreophilum (species); 3736784: Roemeria carica (species). Papaver and Corydalis species/varietal identifiers retain their exact rank. P. setigerum is an explicit synonym under P. somniferum subsp. setigerum; Corydalis bulbosa is a synonym under C. solida. Other absent-P685 routes use exact retained names only. Identifier agreement does not independently establish occurrence, production or stock equivalence. |
+| R346-TAXON-33128 | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=1030657,115647,1177,1392250,1437823,1570104,190592,1930,1932,1966654,215228,215229,22694,306088,3117443,33128,337066,3469,3736021,3736784,38907,38914,38929,40380,439476,5530,6848,903796&amp;retmode=xml; Exact TaxId/ScientificName/rank/parent and OtherNames within retained response | context_only | Literal retained identifier context: 3469: Papaver somniferum (species); 22694: Papaver orientale (species); 33128: Papaver rhoeas (species); 38907: Corydalis ochotensis (species); 38914: Corydalis solida (species); 38929: Corydalis ophiocarpa (species); 215228: Papaver pseudo-orientale (species); 215229: Papaver somniferum subsp. setigerum (subspecies); 1030657: Corydalis heterocarpa var. japonica (varietas); 3117443: Papaver fugax (species); 3736021: Papaver oreophilum (species); 3736784: Roemeria carica (species). Papaver and Corydalis species/varietal identifiers retain their exact rank. P. setigerum is an explicit synonym under P. somniferum subsp. setigerum; Corydalis bulbosa is a synonym under C. solida. Other absent-P685 routes use exact retained names only. Identifier agreement does not independently establish occurrence, production or stock equivalence. |
+| R346-TAXON-38907 | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=1030657,115647,1177,1392250,1437823,1570104,190592,1930,1932,1966654,215228,215229,22694,306088,3117443,33128,337066,3469,3736021,3736784,38907,38914,38929,40380,439476,5530,6848,903796&amp;retmode=xml; Exact TaxId/ScientificName/rank/parent and OtherNames within retained response | context_only | Literal retained identifier context: 3469: Papaver somniferum (species); 22694: Papaver orientale (species); 33128: Papaver rhoeas (species); 38907: Corydalis ochotensis (species); 38914: Corydalis solida (species); 38929: Corydalis ophiocarpa (species); 215228: Papaver pseudo-orientale (species); 215229: Papaver somniferum subsp. setigerum (subspecies); 1030657: Corydalis heterocarpa var. japonica (varietas); 3117443: Papaver fugax (species); 3736021: Papaver oreophilum (species); 3736784: Roemeria carica (species). Papaver and Corydalis species/varietal identifiers retain their exact rank. P. setigerum is an explicit synonym under P. somniferum subsp. setigerum; Corydalis bulbosa is a synonym under C. solida. Other absent-P685 routes use exact retained names only. Identifier agreement does not independently establish occurrence, production or stock equivalence. |
+| R346-TAXON-38914 | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=1030657,115647,1177,1392250,1437823,1570104,190592,1930,1932,1966654,215228,215229,22694,306088,3117443,33128,337066,3469,3736021,3736784,38907,38914,38929,40380,439476,5530,6848,903796&amp;retmode=xml; Exact TaxId/ScientificName/rank/parent and OtherNames within retained response | context_only | Literal retained identifier context: 3469: Papaver somniferum (species); 22694: Papaver orientale (species); 33128: Papaver rhoeas (species); 38907: Corydalis ochotensis (species); 38914: Corydalis solida (species); 38929: Corydalis ophiocarpa (species); 215228: Papaver pseudo-orientale (species); 215229: Papaver somniferum subsp. setigerum (subspecies); 1030657: Corydalis heterocarpa var. japonica (varietas); 3117443: Papaver fugax (species); 3736021: Papaver oreophilum (species); 3736784: Roemeria carica (species). Papaver and Corydalis species/varietal identifiers retain their exact rank. P. setigerum is an explicit synonym under P. somniferum subsp. setigerum; Corydalis bulbosa is a synonym under C. solida. Other absent-P685 routes use exact retained names only. Identifier agreement does not independently establish occurrence, production or stock equivalence. |
+| R346-TAXON-38929 | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=1030657,115647,1177,1392250,1437823,1570104,190592,1930,1932,1966654,215228,215229,22694,306088,3117443,33128,337066,3469,3736021,3736784,38907,38914,38929,40380,439476,5530,6848,903796&amp;retmode=xml; Exact TaxId/ScientificName/rank/parent and OtherNames within retained response | context_only | Literal retained identifier context: 3469: Papaver somniferum (species); 22694: Papaver orientale (species); 33128: Papaver rhoeas (species); 38907: Corydalis ochotensis (species); 38914: Corydalis solida (species); 38929: Corydalis ophiocarpa (species); 215228: Papaver pseudo-orientale (species); 215229: Papaver somniferum subsp. setigerum (subspecies); 1030657: Corydalis heterocarpa var. japonica (varietas); 3117443: Papaver fugax (species); 3736021: Papaver oreophilum (species); 3736784: Roemeria carica (species). Papaver and Corydalis species/varietal identifiers retain their exact rank. P. setigerum is an explicit synonym under P. somniferum subsp. setigerum; Corydalis bulbosa is a synonym under C. solida. Other absent-P685 routes use exact retained names only. Identifier agreement does not independently establish occurrence, production or stock equivalence. |
+| R346-TAXON-215228 | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=1030657,115647,1177,1392250,1437823,1570104,190592,1930,1932,1966654,215228,215229,22694,306088,3117443,33128,337066,3469,3736021,3736784,38907,38914,38929,40380,439476,5530,6848,903796&amp;retmode=xml; Exact TaxId/ScientificName/rank/parent and OtherNames within retained response | context_only | Literal retained identifier context: 3469: Papaver somniferum (species); 22694: Papaver orientale (species); 33128: Papaver rhoeas (species); 38907: Corydalis ochotensis (species); 38914: Corydalis solida (species); 38929: Corydalis ophiocarpa (species); 215228: Papaver pseudo-orientale (species); 215229: Papaver somniferum subsp. setigerum (subspecies); 1030657: Corydalis heterocarpa var. japonica (varietas); 3117443: Papaver fugax (species); 3736021: Papaver oreophilum (species); 3736784: Roemeria carica (species). Papaver and Corydalis species/varietal identifiers retain their exact rank. P. setigerum is an explicit synonym under P. somniferum subsp. setigerum; Corydalis bulbosa is a synonym under C. solida. Other absent-P685 routes use exact retained names only. Identifier agreement does not independently establish occurrence, production or stock equivalence. |
+| R346-TAXON-215229 | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=1030657,115647,1177,1392250,1437823,1570104,190592,1930,1932,1966654,215228,215229,22694,306088,3117443,33128,337066,3469,3736021,3736784,38907,38914,38929,40380,439476,5530,6848,903796&amp;retmode=xml; Exact TaxId/ScientificName/rank/parent and OtherNames within retained response | context_only | Literal retained identifier context: 3469: Papaver somniferum (species); 22694: Papaver orientale (species); 33128: Papaver rhoeas (species); 38907: Corydalis ochotensis (species); 38914: Corydalis solida (species); 38929: Corydalis ophiocarpa (species); 215228: Papaver pseudo-orientale (species); 215229: Papaver somniferum subsp. setigerum (subspecies); 1030657: Corydalis heterocarpa var. japonica (varietas); 3117443: Papaver fugax (species); 3736021: Papaver oreophilum (species); 3736784: Roemeria carica (species). Papaver and Corydalis species/varietal identifiers retain their exact rank. P. setigerum is an explicit synonym under P. somniferum subsp. setigerum; Corydalis bulbosa is a synonym under C. solida. Other absent-P685 routes use exact retained names only. Identifier agreement does not independently establish occurrence, production or stock equivalence. |
+| R346-TAXON-1030657 | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=1030657,115647,1177,1392250,1437823,1570104,190592,1930,1932,1966654,215228,215229,22694,306088,3117443,33128,337066,3469,3736021,3736784,38907,38914,38929,40380,439476,5530,6848,903796&amp;retmode=xml; Exact TaxId/ScientificName/rank/parent and OtherNames within retained response | context_only | Literal retained identifier context: 3469: Papaver somniferum (species); 22694: Papaver orientale (species); 33128: Papaver rhoeas (species); 38907: Corydalis ochotensis (species); 38914: Corydalis solida (species); 38929: Corydalis ophiocarpa (species); 215228: Papaver pseudo-orientale (species); 215229: Papaver somniferum subsp. setigerum (subspecies); 1030657: Corydalis heterocarpa var. japonica (varietas); 3117443: Papaver fugax (species); 3736021: Papaver oreophilum (species); 3736784: Roemeria carica (species). Papaver and Corydalis species/varietal identifiers retain their exact rank. P. setigerum is an explicit synonym under P. somniferum subsp. setigerum; Corydalis bulbosa is a synonym under C. solida. Other absent-P685 routes use exact retained names only. Identifier agreement does not independently establish occurrence, production or stock equivalence. |
+| R346-TAXON-3117443 | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=1030657,115647,1177,1392250,1437823,1570104,190592,1930,1932,1966654,215228,215229,22694,306088,3117443,33128,337066,3469,3736021,3736784,38907,38914,38929,40380,439476,5530,6848,903796&amp;retmode=xml; Exact TaxId/ScientificName/rank/parent and OtherNames within retained response | context_only | Literal retained identifier context: 3469: Papaver somniferum (species); 22694: Papaver orientale (species); 33128: Papaver rhoeas (species); 38907: Corydalis ochotensis (species); 38914: Corydalis solida (species); 38929: Corydalis ophiocarpa (species); 215228: Papaver pseudo-orientale (species); 215229: Papaver somniferum subsp. setigerum (subspecies); 1030657: Corydalis heterocarpa var. japonica (varietas); 3117443: Papaver fugax (species); 3736021: Papaver oreophilum (species); 3736784: Roemeria carica (species). Papaver and Corydalis species/varietal identifiers retain their exact rank. P. setigerum is an explicit synonym under P. somniferum subsp. setigerum; Corydalis bulbosa is a synonym under C. solida. Other absent-P685 routes use exact retained names only. Identifier agreement does not independently establish occurrence, production or stock equivalence. |
+| R346-TAXON-3736021 | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=1030657,115647,1177,1392250,1437823,1570104,190592,1930,1932,1966654,215228,215229,22694,306088,3117443,33128,337066,3469,3736021,3736784,38907,38914,38929,40380,439476,5530,6848,903796&amp;retmode=xml; Exact TaxId/ScientificName/rank/parent and OtherNames within retained response | context_only | Literal retained identifier context: 3469: Papaver somniferum (species); 22694: Papaver orientale (species); 33128: Papaver rhoeas (species); 38907: Corydalis ochotensis (species); 38914: Corydalis solida (species); 38929: Corydalis ophiocarpa (species); 215228: Papaver pseudo-orientale (species); 215229: Papaver somniferum subsp. setigerum (subspecies); 1030657: Corydalis heterocarpa var. japonica (varietas); 3117443: Papaver fugax (species); 3736021: Papaver oreophilum (species); 3736784: Roemeria carica (species). Papaver and Corydalis species/varietal identifiers retain their exact rank. P. setigerum is an explicit synonym under P. somniferum subsp. setigerum; Corydalis bulbosa is a synonym under C. solida. Other absent-P685 routes use exact retained names only. Identifier agreement does not independently establish occurrence, production or stock equivalence. |
+| R346-TAXON-3736784 | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=1030657,115647,1177,1392250,1437823,1570104,190592,1930,1932,1966654,215228,215229,22694,306088,3117443,33128,337066,3469,3736021,3736784,38907,38914,38929,40380,439476,5530,6848,903796&amp;retmode=xml; Exact TaxId/ScientificName/rank/parent and OtherNames within retained response | context_only | Literal retained identifier context: 3469: Papaver somniferum (species); 22694: Papaver orientale (species); 33128: Papaver rhoeas (species); 38907: Corydalis ochotensis (species); 38914: Corydalis solida (species); 38929: Corydalis ophiocarpa (species); 215228: Papaver pseudo-orientale (species); 215229: Papaver somniferum subsp. setigerum (subspecies); 1030657: Corydalis heterocarpa var. japonica (varietas); 3117443: Papaver fugax (species); 3736021: Papaver oreophilum (species); 3736784: Roemeria carica (species). Papaver and Corydalis species/varietal identifiers retain their exact rank. P. setigerum is an explicit synonym under P. somniferum subsp. setigerum; Corydalis bulbosa is a synonym under C. solida. Other absent-P685 routes use exact retained names only. Identifier agreement does not independently establish occurrence, production or stock equivalence. |
+| R346-IDENTIFIER-READ | /private/tmp/npm-review-work/shared-next-batch035/root-context-source-read-001.json; Eighty-four literal organism routes across 31 Wikidata entities and 41 taxa; seven qualified routes lack P685 | context_only | Root read original identifier values and naming context. These do not prove experimental occurrence, production or stock equivalence. |
+| R346-IMODULON | https://imodulondb.org/api/datasets; Complete retained 20-organism/28-dataset catalogue | context_only | The retained complete catalogue contains 20 organisms and 28 datasets. No exact emitted native producer or named-stock match is established. No matrix, gene membership, compound or module association was inspected. |
+| R346-ASSAY-ROOT-READ | /private/tmp/npm-review-work/shared-next-batch035/root-assay-sample-results-read-001.json; Prior root read of31 emitted activities, selected deposited endpoints and six samples; exact reading limits retained | context_only | Twenty-five written observations across nineteen AIDs retain functional CYP activity, PXR reporter and phenotype/viability endpoints, explicit inconclusive calls and source Potency values. Five deposited sample IDs are represented; paired blank/protein metadata and the two DNA-content samples remain distinct. The prior root audit inspected the selected deposited endpoints and protocol meanings; it is not a complete audit of all144 raw rows or an inference of direct binding, selectivity or physical-lot stereochemistry. |
+| R346-ASSAY-PROTOCOL-READ | /private/tmp/npm-review-work/shared-next-batch035/root-noscapine-protocol-summary-read-001.json; Prior root protocol interpretation; later exact result receipt independently bound | context_only | Twenty-five written observations across nineteen AIDs retain functional CYP activity, PXR reporter and phenotype/viability endpoints, explicit inconclusive calls and source Potency values. Five deposited sample IDs are represented; paired blank/protein metadata and the two DNA-content samples remain distinct. The prior root audit inspected the selected deposited endpoints and protocol meanings; it is not a complete audit of all144 raw rows or an inference of direct binding, selectivity or physical-lot stereochemistry. |
+| S346-E-LOCAL | /private/tmp/npm-review-work/346/local-sources.json; Complete resolved owner and captured rows; exact seven-set equality checked | context_only | Complete actual owner including any inline graph/pathway, six captured source sets and separately compared seventh PubChem set match the prepared complete reads. |
+| S346-E-CONSUMERS | /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py; Current d14547bc locus override473–571, producer/cluster1089–1153, consolidated discussion1497–1518 and shared-structure/unnamed-producer prompts1563–1595 | context_only | Static inspection covers exact source method grading, producer/reference qualification and consumed correction ordering. Current shared-structure replacement and consolidated discussions are separate capabilities; they do not select identity changes or broaden source endpoints. |
+| S346-E-SCHEMA | /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml; ProducerEvidenceBasisEnum and ClusterLinkEvidenceEnum; conf/producer_evidence.tsv and grading.py also read and pinned | context_only | Producer tiers concern evidence in the named organism; cloned-locus experiments are a distinct cluster question. Empty methods and a source assertion do not independently assert native knockout or exact pure-enzyme proof. |
+| S346-E-SEARCH | /private/tmp/npm-review-work/346/science-search.json; Exact read scope | context_only | Exact current curated-decision search is retained. Its scope is the curation tree; it does not establish absence of experimental evidence or all possible consumers. |
+| S346-E-ASSAY-ROOT | local:root-assay-read; Root complete31written activity joins,26exact sample pairs and19noscapine protocols plus six nybomycin outcomes; exact scope and208inputs retained. | context_only | All selected emitted calls/values match current source results. Functional and cellular endpoints do not establish direct binding/selectivity; nybomycin &gt;40/&gt;50 bounds are source-only because its owner has no quantitative claim. |
+| S346-E-BGC-PEER | local:bgc346347-source-peer; Bounded independent original346/347 text/caption read; no fresh SI/pixel or2014 sequence-equality claim. | context_only | Yeast versus purified evidence, donor versus introduced host and proposed enzyme scopes are preserved. |
+| S346-E-CONTEXT | local:batch035-context; Complete41taxa,31QID and84literalLOTUS route projection plus20organism/28dataset catalogue. | context_only | Taxon synonyms and qualified routes are source-specific. No exact native producer dataset or compound/locus expression evidence is inferred from a species-level catalogue match. |
+| S346-E-CURRENT-BINDING | local:current-binding; Current d145 owners/70 joins and two exact historical/current consumer bridges. | context_only | Historical source timestamps are preserved independently from this local current-input audit. |
+| S346-E-GUARDS | local:guards; Ten exact owner snapshots and70 sets of complete parsed rows and SHA256 digests. | context_only | Current independent joins match; future official intake/root reads remain separate prerequisites. |
+| S346-E-INVENTORY | local:batch035-inventory; Ten complete owner/history snapshots and all70 raw source joins. | context_only | All current owners and source rows match the prepared inventory; no source edit has occurred. |
+| S346-E-METHODS | local:conf/producer_evidence.tsv; Current mapping of source method assertions to producer/locus evidence grades. | context_only | Empty imported methods remain SOURCE_ASSERTION/CLUSTER_UNSTATED; positive later experiments do not require silent upgrades. |
+| S346-E-NOS-GB | GenBank:JQ659007.1; Complete retained header/source/CDS qualifiers and joined native coding segments; exact diagnostic002. | partial | Native deposited locus/translation provenance supports SDR1 identity; no exact recombinant tag/codon-optimization equivalence is asserted. |
+| S346-E-NOS-GP | GenPept:AFB74619.1; Complete protein header/features and native348aa sequence; coded_by JQ659007.1 and2012 Winzer citation. | partial | The deposited2012 protein is the sequence matched to reviewed I3PLR3. It is not independently identified as the separate2014 NOS construct. |
+| S346-E-NOS-SEQ | local:PsSDR1-native-comparison002; Actual002 native joined-CDS/GenPept/UniProt348aa equality, with original failed001 retained. | context_only | Native literal sequence equality is positive; no recombinant construct or biological endpoint equivalence follows. |
+| S346-E-NOS-SEQ-PEER | local:PsSDR1-static-peer; Independent complete diagnostic source/report/pin review; no rerun. | context_only | Peer confirms coordinate/initiation/translation handling and native sequence bindings within the stated static scope. |
+| S346-E-NOS-UP | UniProtKB:I3PLR3; Complete reviewed identity/function/reaction crosslinks and native348aa sequence; JQ659007/AFB74619.1,2012 sequence versus2016/2018 functional references. | supports | Reviewed Papaver somniferum SDR1 crosslinks the exact reaction and2012 deposited sequence. Current source annotation is distinct from experimental construct equality. |
+| S346-E-NOS11 | DOI:10.1371/journal.pone.0017733; Original title/abstract and source citation-level context only; no exhaustive therapeutic evidence review. | partial | The imported citation is disclosed as COMPOUND_BIOACTIVITY. A bioactivity reference accompanying conservative DATABASE_ASSERTION/CLUSTER_UNSTATED does not automatically claim a biosynthetic intervention. |
+| S346-E-NOS14-ABSTRACT | PMID:24708518; Complete original PubMed abstract for Chen2014, DOI10.1111/tpj.12379. | partial | Supports reported final dehydrogenation, substrate specificity and native silencing-associated reduced noscapine/increased hemiacetal. Matching function alone does not identify the exact2014 construct as the2012 SDR1 accession. |
+| S346-E-NOS16 | DOI:10.1038/ncomms12137; Original scientific Results paragraphs0–34 and selected Methods35–42,44–62; Figure1 caption; full Methods43/SI not claimed. | partial | Positive engineered-yeast PsSDR1 late conversion is distinct from purified PsMT2/PsMT3 work and from unproven universal native ordering. The existing owner explicitly describes engineered yeast. Hemiacetal identification is MS/MS-based rather than an independently isolated NMR assignment. |
+| S346-E-NOS16-FIG1 | DOI:10.1038/ncomms12137; Original Figure1 complete panel; exact final noscapine1 and late8-prime→1 edge. | partial | Original final-product depiction and late SDR1 context are available. Independent chemical precision review remains separate; no upstream congener geometry or physical sample purity is transferred. |
+| S346-E-OCCURRENCES | local:occurrences; Complete later-five literal occurrence projection and source-specific unresolved citations. | context_only | Inventoried references are not equivalent to inspected original support; noscapine older occurrence applicability remains required incomplete. |
+| S346-E-PRIMARY-ROOT | local:root-primary346347; Independent full347 scientific body and bounded346 original text/Figure1/read scopes. | context_only | Supports exact introduced product and yeast-qualified enzyme evidence while preserving native ordering, sample and construct limits. |
+| S346-E-SELECTED-ROOT | local:root-selected-primary; Exact3462014abstract/AFBheader, six sample diagnostics and349 bounded candidate/provenance paragraphs. | context_only | 2012 versus2014 protein identity is not inferred from function;349 stock and exact intervention bridge remain unclosed. |
+| S346-E-SOURCE-READ | local:source-read; Complete frozen source read scopes and preserved unsuccessful or limited routes. | context_only | Original reading limits are retained; this preparation does not claim a new full primary reread. |
+| C346-OWNER | data/natural_products/alkaloids/noscapine.yaml; Complete owner and all seven matching source-row sets; no referenced components | supports | The complete owner denotes (−)-noscapine under CHEBI:73237. All source selectors, versions and complete row digests are retained in COMPARISON: [{"row_sha256": "70857fb8305d39fbeb492a340a1dd74eb4294d87c46c6736389ae59593357930", "selector": "BGC0001325:1", "version": "3"}]. The official intake and prepared owner bytes agree. |
+| C346-GRAPH | /private/tmp/npm-review-work/346/chemistry.json; Fresh intake RDKit result and frozen Standard/fixed-H comparison | supports | The stored SMILES recomputes to AKNNEGZIBPJZJG-MSOLQXFVSA-N, formula C22H23NO7, formal charge 0; stored InChI/key agree. These are representation checks, not experimental identity proof. |
+| C346-COMPARISON | /private/tmp/npm-review-work/shared-next-batch035/chemistry-prep/retained-graph-comparison.json; Record 346; exact source rows and each graph comparison | supports | Exact Standard, fixed-H, formula, charge and stereo comparisons of the retained owner and complete raw rows; current authority responses and primary proof are separate evidence. |
+| C346-LOCAL-SEARCH | /private/tmp/npm-review-work/346/chemistry-search-receipt.json; Exact full key, label, slug and source selector in raw/owner/curation trees | supports | Ignored-inclusive bounded search preserves all matching paths; an absent curation decision does not imply a missing scientific source. |
+| C346-AUTHORITY-COMPARISON | /private/tmp/npm-review-work/shared-next-batch035/chemistry-prep/authority-graph-comparison.json; Complete literal Standard/fixed-H, formula, charge and stereo comparison; exact source payload pins retained | supports | Current authority graphs and source-specific serialization differences are independently compared. Database agreement is not primary natural-hand proof. |
+| C346-AUTHORITY-DETAIL | /private/tmp/npm-review-work/shared-next-batch035/chemistry-prep/source-plan-001.json; Complete literal Standard/fixed-H, formula, charge and stereo comparison; exact source payload pins retained | supports | Current authority graphs and source-specific serialization differences are independently compared. Database agreement is not primary natural-hand proof. |
+| C346-AUTH-1 | https://mibig.secondarymetabolites.org/repository/BGC0001325.3/annotations.json; Complete retained payload /private/tmp/npm-review-work/shared-next-batch035/chemistry-prep/authority-phase-001-public/BGC0001325.3.json | supports | Exact source representation at its recorded access time; primary identity and natural hand are assessed separately. |
+| C346-AUTH-2 | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/275196/property/SMILES,InChI,InChIKey,MolecularFormula,IUPACName/JSON; Complete retained payload /private/tmp/npm-review-work/shared-next-batch035/chemistry-prep/authority-phase-002-public/cid275196-identity.json | supports | Exact source representation at its recorded access time; primary identity and natural hand are assessed separately. |
+| C346-AUTH-3 | https://www.ebi.ac.uk/chebi/backend/api/public/compound/73237/; Complete retained payload /private/tmp/npm-review-work/shared-next-batch035/chemistry-prep/authority-phase-003-public/CHEBI73237.json | supports | Exact source representation at its recorded access time; primary identity and natural hand are assessed separately. |
+| C346-AUTH-4 | https://www.ebi.ac.uk/chebi/backend/api/public/molfile/73237/; Complete retained payload /private/tmp/npm-review-work/shared-next-batch035/chemistry-prep/authority-phase-003-public/CHEBI73237.mol | supports | Exact source representation at its recorded access time; primary identity and natural hand are assessed separately. |
+| C346-CHEBI-SEARCH-1 | https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=AKNNEGZIBPJZJG-MSOLQXFVSA-N&amp;size=100; Complete bounded key/name response /private/tmp/npm-review-work/shared-next-batch035/chemistry-prep/authority-phase-002-public/chebi-key-346.json | supports | HTTP200; exact source response and candidate eligibility preserved. |
+| C346-NOS16-FIG1 | DOI:10.1038/ncomms12137; Original Figure1 final noscapine1 only: hashed junction H and plain phthalide centre; neighboring precursor wedges excluded; retained snapshot /private/tmp/npm-review-work/shared-next-batch035/review-support/public-004/noscapine2016-figure1.jpg | supports | The source depicts T1R/L3? and matches the owner after only the phthalide tag is removed. Deposited assay graph equality is separately checked; physical sample or natural-hand equivalence is not inferred. |
+| C346-SOURCE-LIMITS | /private/tmp/npm-review-work/shared-next-batch035/chemistry-prep/source-notes.json; Entry346: complete frozen chemical observations, literal authority fields, full rows and limitations; retained snapshot /private/tmp/npm-review-work/shared-next-batch035/chemistry-prep/source-notes.json | supports | Frozen source-only observations are retained unchanged. Original source/model times remain distinct from later formal preparation; no chemical replacement, merge or natural-hand selection is proposed. |
+| C346-PRIMARY-COMPARISON-1 | /private/tmp/npm-review-work/shared-next-batch035/chemistry-prep/primary-mapping-001/346-noscapine2016-original-001.json; Entry346: complete bounded original-depiction comparison or explicitly identified image/atom-map derivation; retained snapshot /private/tmp/npm-review-work/shared-next-batch035/chemistry-prep/primary-mapping-001/346-noscapine2016-original-001.json | supports | Actual original-model calculation, later static review and persistence scopes remain as recorded in this diagnostic. No new numerical rerun or experimental absolute-hand determination is implied. |
+| C346-SAMPLE-COMPARISON-1 | /private/tmp/npm-review-work/shared-next-batch035/chemistry-prep/sample346347-identity-001.json; Entry346: deposited SID855860,49645498,90341457,144203964,170465539 atom/bond and explicit source stereochemical annotation comparison; retained snapshot /private/tmp/npm-review-work/shared-next-batch035/chemistry-prep/sample346347-identity-001.json | supports | Deposited representation equality is positive at the recorded calculation scope. It does not establish physical sample purity, source lot, stereoisomer composition, target binding or clinical effect. |
+| C346-IDENTITY-CONSUMER | scripts/seed_from_sources.py; Current d145 build_records783; exclusions813-820/1053-1065; exact-key ChEBI indexes880-897 and source concepts1155-1163; retained snapshot /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py | supports | Exact source assertions, literal-xref filtering and current ChEBI full-key joins remain distinct from primary identity proof. Current shared-group structure correction does not select a replacement here; no curation action is proposed. |
+
+## Limits And Additional Notes
+
+- Context establishes exact owner/history/source inventory, literal identifier routing and computed classification. Primary production, congener identity, stock applicability, protein/graph and method claims retain their separate scientific scope. Molecular-target measurements remain distinct from PubChem bioactivity rows.
+- Biological/source applicability is separate from chemical identity, tautomer and absolute-hand adjudication. Overall review completion also depends on independently reviewed chemical and context evidence.
+- The separate2014 NOS result is not accession or construct equality solely from matching function.
+- Original2016 selected Results/Methods and captions were read within the frozen scope; full Methods43/SI and new physical-sample or natural-hand proof are not claimed.
+- Authority matches establish the representations actually returned at their retained access times; they are not independent experimental structure or absolute-hand determinations. Organism, locus, classification and history claims are assessed separately.
+- The one-centre source drawing is not an independent absolute-hand protocol for both centres and does not prove the additional owner assignment wrong. Neighboring precursor wedges are not transferred. Deposited SID representation equality does not establish physical assay sample purity, stereoisomer composition, source batch or target binding. Root protocol/result and biological endpoint reviews remain separate. No change to exact assay ownership is selected solely from the difference between a less specified paper drawing and a more specified deposited graph.
+- This is a baseline network failure, not a completed individual-review validation attempt; campaign failure streak remains unchanged.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint and before downstream tests. Its actual exit1/log/input capture/root observation remain pinned; the selected successful canonical QC attempt002 is separately timed. No individual-review validation failure or counter reset is claimed.
+- Successful configured adapter checks do not certify unadapted identifiers or refresh every cached authority.
+- The four test skips and two deprecation warnings remain in the exact pinned QC log.
+- Reproduction retains5 unresolved target assay organisms,42 withheld producer claims and161 taxon ID rewrites; these are not newly verified scientific assertions.
+- Native baseline gates establish configured consistency, not independent biological production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions and no-adapter pairs; a successful command does not convert these into verified scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population was checked; external caches and generated bytecode are not asserted to be independently byte-pinned.
+- No scientific owner, inventory, curation table, native status or history was edited. Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification; target strict validation ran afresh. Scientific failed or unavailable checks are distinct from bundle validation.
+- Scientific conclusions integrate the chemical, biological and provenance assessments; source access and unresolved scopes remain explicit.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261025T220405Z-noscapine
+title: Scientific review of (−)-noscapine
+started_at: '2026-10-25T22:01:25.049104Z'
+finished_at: '2026-10-25T22:04:05.291786Z'
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: The existing PsSDR1 graph retains its introduced-yeast setting, with native
+  accession equality distinct from recombinant construct identity. Twenty-five deposited-sample
+  assay observations retain their functional or cellular scope. Original occurrence
+  and complete assignment gaps remain; neither matching authority graphs nor sample
+  drawings establish physical-lot equivalence or direct binding.
+source:
+  git_revision: d14547bc76e0582aca15eeb073e203d28ea7548e
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/malbrancheamide-a.yaml
+    sha256: 0d5c8ddc06440af552d89eae5e8bbc6670f3d0959f745fc4217db38b5d06a10b
+    role: context
+  - path: data/natural_products/alkaloids/malleobactin-b.yaml
+    sha256: c70f7acbf9ac8d7e3c26ef85b472667a66268c62198234916be55392083658d1
+    role: context
+  - path: data/natural_products/alkaloids/malleobactin-d.yaml
+    sha256: fec2eae53dbd191295af0b21bb111f38527bc3db9a48d72b6912cc3d28ebcb3d
+    role: context
+  - path: data/natural_products/alkaloids/marinacarboline-a.yaml
+    sha256: cdc0cd05ad71216f40a006152069ee7dd74709a4e3501afc1a9d4fe28ff7f6c1
+    role: context
+  - path: data/natural_products/alkaloids/marinacarboline-b.yaml
+    sha256: 098f156df437ca474344fa88687b3cd51e63f230553ae2249da694e3f2a5948a
+    role: context
+  - path: data/natural_products/alkaloids/marinacarboline-c.yaml
+    sha256: a7c582cc8281b9b0a81792b3a68f0d7d35396307ec1e6da9c9e1d852c83e71dc
+    role: context
+  - path: data/natural_products/alkaloids/marinacarboline-d.yaml
+    sha256: 497e7db52ec61bd0e4e1b31b56e4fcc1fb9bbf32d75ec7cb6e209653aac90680
+    role: context
+  - path: data/natural_products/alkaloids/marineosin-a.yaml
+    sha256: a410ab4381c37c5bf1ec606386b0d9d7294a56e59d5c6e9acda1c7e5899970ba
+    role: context
+  - path: data/natural_products/alkaloids/marineosin-b.yaml
+    sha256: 3816dc69d467101429fbc1d6366851d65d8caab4410b7b1edba97c6f62980326
+    role: context
+  - path: data/natural_products/alkaloids/marinophenazine-a.yaml
+    sha256: 6d96a6b56c4e201dbece52a4897442337d4487fd1e83bca952edd761f7ac20b0
+    role: context
+  - path: data/natural_products/alkaloids/marinopyrrole-a.yaml
+    sha256: dcb61573eced11ed01f1d5ff71829046f192dbb23cedb6518b16967283deb81c
+    role: context
+  - path: data/natural_products/alkaloids/marinopyrrole-b.yaml
+    sha256: 357c50a35d5e0f3a8fcc230a978eb6c0e09197448e047c914cde58f0009e53bf
+    role: context
+  - path: data/natural_products/alkaloids/marinopyrrole-c.yaml
+    sha256: e4cfcfb306feee302651e09a945a2c6b12e3919557dfe271a5c136d4cea8f0b5
+    role: context
+  - path: data/natural_products/alkaloids/marinopyrrole-d.yaml
+    sha256: 5bf20a408a8d38780c11c1e50dc0c12eabe63f4fe3e3fb61db7a917b08633d7a
+    role: context
+  - path: data/natural_products/alkaloids/marinopyrrole-e.yaml
+    sha256: abcbaf5f1935f8f955ea26ffbefee8e537914bcc5fff349a7a40ac55691a05ec
+    role: context
+  - path: data/natural_products/alkaloids/melanin.yaml
+    sha256: 56b568b00596b272bc27907520dafcffe8145f3119b0ea8fd4ba869e9a00b498
+    role: context
+  - path: data/natural_products/alkaloids/meleagrine.yaml
+    sha256: 1b00a87404a9dcdc1353fc84b465fcd49401f0a75ecabf1032d0692ab0beb765
+    role: context
+  - path: data/natural_products/alkaloids/metacycloprodigiosin.yaml
+    sha256: 6c050712c67da3414341854dd286167e10266ef60d5f251af728ab632ae13019
+    role: context
+  - path: data/natural_products/alkaloids/methylarcyriarubin.yaml
+    sha256: 15d5f412072336b825474230401844e5f7503d1be460c16c3ac530c61125e5ad
+    role: context
+  - path: data/natural_products/alkaloids/methylpendolmycin.yaml
+    sha256: 0edcbea57bbe52620de8952cfe9bf73bfa8f1cec803026d11ae0da5038ff98bb
+    role: context
+  - path: data/natural_products/alkaloids/microansamycin-i.yaml
+    sha256: 2e29826a0be2421992edc189a02ffe18d70350e9cae84e44601d56f1c85ce144
+    role: context
+  - path: data/natural_products/alkaloids/migrastatin.yaml
+    sha256: ac689bc0ba74ddc794e8eba25e7b368ad1ced4fc9da68c4e7510de0b31d34f2d
+    role: context
+  - path: data/natural_products/alkaloids/molybdenum-cofactor.yaml
+    sha256: 13342ab28394a7a941b20ab3a5f33c76928b3153d2279eb53345da3d4662d619
+    role: context
+  - path: data/natural_products/alkaloids/myxochelin-a.yaml
+    sha256: 2c8cb40be089df46a6d614d794a72de9c1ed60e4b00c0d739374af7914f4be84
+    role: context
+  - path: data/natural_products/alkaloids/myxochelin-b-2.yaml
+    sha256: 411480d13437b1d4df8709b19ce98871a9d34f59d0f6d26c3b0c4ee403151539
+    role: context
+  - path: data/natural_products/alkaloids/myxochelin-b.yaml
+    sha256: ea3043709a28498e3ea4ac7794103168db21d2c7b3345b3766f89fbe0993918d
+    role: context
+  - path: data/natural_products/alkaloids/myxochelin-n.yaml
+    sha256: 8e19b4c971d6dcec9c8b894635cc02dad599dbab58815bcdb5d6dcc746e48ecb
+    role: context
+  - path: data/natural_products/alkaloids/myxochelin-o.yaml
+    sha256: 5247635c23d524ef7ff2844be6f7f6adb69ecbb9552e31e18632178077d7e1eb
+    role: context
+  - path: data/natural_products/alkaloids/myxofacycline-e.yaml
+    sha256: 217af40d7f6cdd5fce6c715f301ea53722f984d736a3d07aab4fb03e3b6ad965
+    role: context
+  - path: data/natural_products/alkaloids/myxofacycline-f.yaml
+    sha256: b883a268156852475a3290c9e411c02ea61f0b350edf5dfb703b82caa28fb689
+    role: context
+  - path: data/natural_products/alkaloids/myxofacycline-g.yaml
+    sha256: 97805dfcd098cd821ed1a5ef68861472311ebcebc8967e60f1482c4dd6b9ee9a
+    role: context
+  - path: data/natural_products/alkaloids/n-acetylnorloline.yaml
+    sha256: cc969071f667e5660ee15c4f020514eaa94bb186247f7c28b7b458b83cabfc39
+    role: context
+  - path: data/natural_products/alkaloids/n-formylloline.yaml
+    sha256: 84b04a5f0dbc8388888e4779cfc6d156f8dae59ed5d19526e032202fa2ee2b90
+    role: context
+  - path: data/natural_products/alkaloids/n-n-dioxide-containing-derivate.yaml
+    sha256: 143122644bfd7ebced215e7fbb9019b419049fe9ca1e7058c6418edd4f4b5d3b
+    role: context
+  - path: data/natural_products/alkaloids/nanangelenin-b.yaml
+    sha256: de1037953b59cb475f30aef57aa03efbcd81e6cc0f3c13d5cd9e44edab3aa176
+    role: context
+  - path: data/natural_products/alkaloids/naphthyridinomycin.yaml
+    sha256: 0bf08a52a175371b33cc47927db5ad5fe0e068ea5d8bed86138b9393f01387ab
+    role: context
+  - path: data/natural_products/alkaloids/nematophin.yaml
+    sha256: e448b2f44c27ce1c6c859c283279b6d8580715cb2212de042d50f9aabab6f099
+    role: context
+  - path: data/natural_products/alkaloids/neocarazostatin-a.yaml
+    sha256: 91df47070c186084e036a65b339542b0437041310fccbdd7c1b98f2c55ad0d72
+    role: context
+  - path: data/natural_products/alkaloids/neolymphostin-b-2.yaml
+    sha256: f24278430db0ffe01c239b5789ae6d4e3a78b4906fad5e4a81c584cf8658f972
+    role: context
+  - path: data/natural_products/alkaloids/neolymphostin-b.yaml
+    sha256: 61d36e3ff38724c900b991e2cea235ab15719608acb5e71f4c506a7f23eb5f27
+    role: context
+  - path: data/natural_products/alkaloids/neolymphostinol-b.yaml
+    sha256: 96edb4263f62fa6b0cc7fc6bbbe6a66af694456b1426597e3cd0080754a1ac87
+    role: context
+  - path: data/natural_products/alkaloids/neosaxitoxin.yaml
+    sha256: cb6d213a492204f0fd99c7a1c8bd38a38c9d9f8878d36ee8abe89ad7c7df6ec5
+    role: context
+  - path: data/natural_products/alkaloids/ng-391.yaml
+    sha256: 421ce4b31298ea62aac2358855a4217c6d7b45a5406bb7f552f8106ac9c2a7b9
+    role: context
+  - path: data/natural_products/alkaloids/nikkomycin-z.yaml
+    sha256: 7cdb9d91d3aa6ac55f90d9258d1c27dc28983732fec603648d8e2c92c3a4f410
+    role: context
+  - path: data/natural_products/alkaloids/nocuolin-a.yaml
+    sha256: b3d2a4491ac0f79cd8fc7c3afa1fd785289c253c4fdfa706c5387aaef5713399
+    role: context
+  - path: data/natural_products/alkaloids/noscapine.yaml
+    sha256: b4c58642aeccf64e3e81de15903b4603b5d5b47bc028c46cec4b38b742a33aaf
+    role: target
+  - path: data/natural_products/alkaloids/nybomycin.yaml
+    sha256: dd76998269dcd72ecab9752dbcfbc2f1b3eac7d5d7da008adb5fe7ca902d709b
+    role: context
+  - path: data/natural_products/alkaloids/o-sulfonated-actinopolymorphol-c.yaml
+    sha256: 8e27dd8d9459027af2591319d7cc7263372ba31f5954059bf6b2ebf4aab6828a
+    role: context
+  - path: data/natural_products/alkaloids/ochrindole-a.yaml
+    sha256: a1cbaab1bc59e04937e0f1df25d5bfef3ff159a3be36b0a13b2ab8b61471dfdc
+    role: context
+  - path: data/natural_products/alkaloids/odilorhabdin-noso-95a.yaml
+    sha256: d15b2ba9e9f04d7117d8aeaed2fbdbcd192ae0400e982ac1704c0535b805f8de
+    role: context
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: 11808e60990b3520dbe8f9c50f6574f54cd32165185577a699f988c77f3d27ec
+    role: context
+  - path: src/naturalproductmech/curate/xref_exclusions.py
+    sha256: 17c3d9e7794bae596b22cf19a2dd5bc2169475d6fea81ea4e6f1781a53af9157
+    role: context
+  - path: src/naturalproductmech/graph_components.py
+    sha256: 10f08517869f482954fd583fd19d5750ef286a76297c231e6c9a5ba8dc023e17
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: tests/test_seed_skeleton.py
+    sha256: 560cd80e53eda2bb0021c41f2b4571d583c02bdcfaa8506fccb337ee5065aec5
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 346, batch 035, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated targets in earlier
+    batch commits (publication tracked separately). At selection, 403 of 3116 current
+    records had campaign coverage and 2713 remained. The population search included
+    ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CHEBI:73237
+targets:
+- target_id: CHEBI:73237
+  path: data/natural_products/alkaloids/noscapine.yaml
+  label: (−)-noscapine
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/alkaloids/noscapine.yaml
+    role: Curator-owned assertions, inline mechanisms, discussions and audit history
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - CHEBI:73237
+  command: just validate-strict data/natural_products/alkaloids/noscapine.yaml --out
+    /private/tmp/npm-review-work/346/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-25T22:01:28.241197Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: Fresh canonical corpus verification exited0; exact summary retained in
+    pinned log.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=d14547bc76e0582aca15eeb073e203d28ea7548e
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-032-resume20261025-baseline-verify-corpus-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on d14547bc76e0582aca15eeb073e203d28ea7548e
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T19:57:07.100447Z;
+    finished 2026-10-25T19:57:49.777107Z. Exact original receipt: /private/tmp/npm-native-checks/batch-032/fresh-20261025-001/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-032/fresh-20261025-001/verify-corpus.log.
+    Reused for batch035 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,225 tracked byte streams and modes (209,800,480 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch035. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - CHEBI:73237
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: Fresh canonical reproduction verification exited0; exact result retained
+    in pinned log.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=d14547bc76e0582aca15eeb073e203d28ea7548e
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-032-resume20261025-baseline-verify-reproduction-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on d14547bc76e0582aca15eeb073e203d28ea7548e
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T19:57:57.572153Z;
+    finished 2026-10-25T19:58:57.426582Z. Exact original receipt: /private/tmp/npm-native-checks/batch-032/fresh-20261025-001/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-032/fresh-20261025-001/verify-reproduction.log.
+    Reused for batch035 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,225 tracked byte streams and modes (209,800,480 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch035. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - CHEBI:73237
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: Fresh canonical review queue generation exited0; deterministic priority
+    diagnostics and output TSV remain separate from structured-review coverage.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=d14547bc76e0582aca15eeb073e203d28ea7548e
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-032-resume20261025-baseline-review-queue-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just review-queue --tsv /private/tmp/npm-review-queue-batch-032-resume20261025-001.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on d14547bc76e0582aca15eeb073e203d28ea7548e
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T19:59:14.725020Z;
+    finished 2026-10-25T19:59:32.289420Z. Exact original receipt: /private/tmp/npm-native-checks/batch-032/fresh-20261025-001/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-032/fresh-20261025-001/review-queue.log.
+    Reused for batch035 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,225 tracked byte streams and modes (209,800,480 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch035. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - CHEBI:73237
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: Fresh canonical identifier-label correspondence gate exited0 within configured
+    adapter coverage and exceptions; log retains the precise unresolved/no-adapter
+    scope.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=d14547bc76e0582aca15eeb073e203d28ea7548e
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-032-resume20261025-baseline-validate-products-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on d14547bc76e0582aca15eeb073e203d28ea7548e
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T19:59:41.941450Z;
+    finished 2026-10-25T20:00:29.928289Z. Exact original receipt: /private/tmp/npm-native-checks/batch-032/fresh-20261025-001/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-032/fresh-20261025-001/validate-products.log.
+    Reused for batch035 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,225 tracked byte streams and modes (209,800,480 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch035. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - CHEBI:73237
+- check_id: shared-qc
+  name: Full repository quality gate on the fresh main baseline
+  status: passed
+  required: true
+  summary: Fresh canonical QC attempt002 exited0:1024 tests passed,4 skipped,2 warnings;
+    all3116 closed-schema validations passed; site/reproduction/PATHS/provenance and
+    other configured checks passed. Failed001 DNS attempt remains separate.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=d14547bc76e0582aca15eeb073e203d28ea7548e
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-032-resume20261025-baseline-qc-attempt-002
+    PYTHONDONTWRITEBYTECODE=1 just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-002 execution on d14547bc76e0582aca15eeb073e203d28ea7548e
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T20:03:03.887363Z;
+    finished 2026-10-25T20:10:08.512464Z. Exact original receipt: /private/tmp/npm-native-checks/batch-032/fresh-20261025-002/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-032/fresh-20261025-002/qc.log.
+    Reused for batch035 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,225 tracked byte streams and modes (209,800,480 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch035. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - CHEBI:73237
+- check_id: R346-FULL-OWNER
+  name: Complete owner and seven-set fidelity
+  status: passed
+  required: true
+  summary: All ten successful actual intakes and chronological post-intake root reads
+    must precede authoring. Complete owner/history and seventy raw joins must match.
+    Noscapine alone has one three-node/two-edge graph and one pathway step;346/347
+    have25/6 written activities, with144/6 raw rows.342/350 each have one no-data
+    sentinel. No external components or molecular_targets sections occur.
+  target_ids:
+  - CHEBI:73237
+  evidence_ids:
+  - R346-OWNER
+  - R346-LOCAL
+  - R346-PUBCHEM-PREP
+- check_id: S346-C-LOCAL
+  name: local
+  status: passed
+  required: true
+  summary: Complete actual owner and all seven source sets agree with the independently
+    inspected inventory and complete-row guards. Official intake and the subsequent
+    root read passed for every selected record before this science subsection was
+    authored.
+  target_ids:
+  - CHEBI:73237
+  evidence_ids:
+  - S346-E-LOCAL
+  - S346-E-INVENTORY
+  - S346-E-GUARDS
+  - S346-E-CURRENT-BINDING
+- check_id: S346-C-METHOD-REPRODUCTION
+  name: method reproduction
+  status: passed
+  required: true
+  summary: Empty imported methods and source-assertion/unstated grades are faithfully
+    retained; a later experiment does not silently alter the original source assertion.
+  target_ids:
+  - CHEBI:73237
+  evidence_ids:
+  - S346-E-GUARDS
+  - S346-E-METHODS
+- check_id: S346-C-YEAST-CLAIM
+  name: yeast claim
+  status: passed
+  required: true
+  summary: The maintained graph already labels the introduced yeast context; native
+    sequence grounding and separate purified-enzyme scopes remain explicit.
+  target_ids:
+  - CHEBI:73237
+  evidence_ids:
+  - S346-E-NOS16
+  - S346-E-NOS-SEQ-PEER
+  - S346-E-PRIMARY-ROOT
+- check_id: S346-C-ACTIVITIES
+  name: activities
+  status: passed
+  required: true
+  summary: Root exact emitted-row/sample/protocol audit supports the current25 activity
+    claims within functional and cellular limits.
+  target_ids:
+  - CHEBI:73237
+  evidence_ids:
+  - S346-E-ASSAY-ROOT
+- check_id: S346-C-ORIGINAL-OCCURRENCE-SCOPE
+  name: original occurrence scope
+  status: unavailable
+  required: true
+  summary: Complete2012 and older exact occurrence applicability remain required gaps.
+  target_ids:
+  - CHEBI:73237
+  evidence_ids:
+  - S346-E-OCCURRENCES
+  - S346-E-SOURCE-READ
+- check_id: S346-C-DIRECT-RHEA
+  name: direct rhea
+  status: unavailable
+  required: true
+  summary: Direct Rhea57404 body returned403; reviewed UniProt reaction and crosslinks
+    are positive, without claiming a fresh independent Rhea read.
+  target_ids:
+  - CHEBI:73237
+  evidence_ids:
+  - S346-E-NOS-UP
+  - S346-E-SOURCE-READ
+- check_id: C346-C-REPRESENTATION
+  name: Stored chemical representation and complete source row
+  status: passed
+  required: true
+  summary: Fresh intake derivation agrees with the stored graph; the source selector,
+    full row and prepared snapshot were independently rechecked.
+  target_ids:
+  - CHEBI:73237
+  evidence_ids:
+  - C346-OWNER
+  - C346-GRAPH
+  - C346-COMPARISON
+- check_id: C346-C-LITERAL-SCOPE
+  name: Exact literal chemical authority scope
+  status: passed
+  required: true
+  summary: All exact asserted literal identifiers retain their source spellings and
+    full returned graph comparisons. Additional unasserted candidates and invalid
+    default strings are separately attributed; no exact-equivalence defect is selected.
+  target_ids:
+  - CHEBI:73237
+  evidence_ids:
+  - C346-NOS16-FIG1
+  - C346-SOURCE-LIMITS
+  - C346-PRIMARY-COMPARISON-1
+  - C346-SAMPLE-COMPARISON-1
+  - C346-IDENTITY-CONSUMER
+  - C346-OWNER
+  - C346-GRAPH
+  - C346-COMPARISON
+  - C346-AUTHORITY-COMPARISON
+  - C346-AUTHORITY-DETAIL
+  - C346-AUTH-1
+  - C346-AUTH-2
+  - C346-AUTH-3
+  - C346-AUTH-4
+- check_id: C346-C-PRIMARY-SCOPE
+  name: Exact named primary chemical structure
+  status: passed
+  required: true
+  summary: Exact current BGC0001325:1 version3, literal CID275196 and owner identifier
+    CHEBI73237 reproduce the retained C22H23NO7 (minus)-noscapine R/S graph. CHEBI73237
+    is three-star and supports the exact MOL/full-key join. All five actually deposited
+    SIDs855860,49645498,90341457,144203964 and170465539 independently decode from
+    their atom/bond and directed2D stereo annotations to that same Standard/fixed-H
+    graph. Original2016 Figure1 exact noscapine1 instead explicitly hashes only the
+    tetrahydroisoquinoline-junction H and leaves the phthalide centre plain. Its bounded
+    drawing model is T1R/L3? and equals the owner after only the phthalide tag is
+    removed.
+  target_ids:
+  - CHEBI:73237
+  evidence_ids:
+  - C346-NOS16-FIG1
+  - C346-SOURCE-LIMITS
+  - C346-PRIMARY-COMPARISON-1
+  - C346-SAMPLE-COMPARISON-1
+  - C346-IDENTITY-CONSUMER
+  - C346-OWNER
+  - C346-GRAPH
+  - C346-COMPARISON
+  - C346-AUTHORITY-COMPARISON
+  - C346-AUTHORITY-DETAIL
+  - C346-AUTH-1
+  - C346-AUTH-2
+  - C346-AUTH-3
+  - C346-AUTH-4
+- check_id: C346-C-EXPERIMENTAL-PRECISION
+  name: Source chemical assignment and represented precision
+  status: unavailable
+  required: true
+  summary: The original2016 final1 drawing specifies T1R but not the phthalide centre.
+    Full original relative/absolute support for both retained assignments remains
+    unclosed; five deposited SID graph matches do not certify physical sample handedness
+    or purity.
+  target_ids:
+  - CHEBI:73237
+  evidence_ids:
+  - C346-NOS16-FIG1
+  - C346-SOURCE-LIMITS
+  - C346-PRIMARY-COMPARISON-1
+  - C346-SAMPLE-COMPARISON-1
+  - C346-IDENTITY-CONSUMER
+  - C346-OWNER
+  - C346-GRAPH
+  - C346-COMPARISON
+  - C346-AUTHORITY-COMPARISON
+  - C346-AUTHORITY-DETAIL
+  - C346-AUTH-1
+  - C346-AUTH-2
+  - C346-AUTH-3
+  - C346-AUTH-4
+evidence:
+- evidence_id: R346-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/noscapine.yaml
+  locator: Prior complete root owner read, verified unchanged against actual post-intake
+    owner, optional fields and history
+  accessed_at: '2026-10-25T22:03:19.136275Z'
+  support: supports
+  summary: 'The prior complete root owner read was verified unchanged against actual
+    post-intake content: 25 occurrence, 1 producer and 1 locus assertions. Present
+    optional fields: definition, biosynthetic_pathway, causal_graphs, bioactivities.
+    No external component is present.'
+  snapshot_sha256: b4c58642aeccf64e3e81de15903b4603b5d5b47bc028c46cec4b38b742a33aaf
+- evidence_id: R346-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/346/local-sources.json
+  locator: Complete resolved owner and all six captured source sets; seventh set independently
+    compared
+  accessed_at: '2026-10-25T22:03:19.136275Z'
+  support: context_only
+  summary: Exact captured rows and separately parsed PubChem rows match frozen preparation.
+    Inventory equality does not establish experimental support.
+  snapshot_sha256: 956d0250c7e215904e9de94f72155ed5a3984fb3d80947ce68c913e4a491b06c
+- evidence_id: R346-PUBCHEM-PREP
+  kind: record_content
+  reference: data/raw/pubchem_bioassay.tsv
+  locator: Complete exact-key retained rows and no-data sentinels
+  accessed_at: '2026-10-25T22:03:19.136275Z'
+  support: context_only
+  summary: This owner has 144 retained rows and 25 written observations. Across the
+    cohort there are 31 written observations, 119 additional raw-only rows and two
+    no-data sentinels; no fresh or complete compound-assay protocol catalogue is claimed.
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: R346-Q1074622
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q1074622
+  locator: Literal retained entity P225/P685 with original source-specific access
+    time
+  accessed_at: '2026-10-22T08:11:00.189896Z'
+  support: context_only
+  summary: '29 exact raw LOTUS routes: 24 literal P685 matches and 5 explicitly qualified
+    P225/current-name or NCBI synonym routes without P685. Identifier correspondence
+    does not validate the cited exact-congener occurrence or experimental stock.'
+  snapshot_sha256: 0cc395b3326a2734b515c0fd2fcd61b618a3486a163d29d0b9c0859455ac4d55
+- evidence_id: R346-Q11067910
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q11067910
+  locator: Literal retained entity P225/P685 with original source-specific access
+    time
+  accessed_at: '2026-10-22T08:11:00.189896Z'
+  support: context_only
+  summary: '29 exact raw LOTUS routes: 24 literal P685 matches and 5 explicitly qualified
+    P225/current-name or NCBI synonym routes without P685. Identifier correspondence
+    does not validate the cited exact-congener occurrence or experimental stock.'
+  snapshot_sha256: 0cc395b3326a2734b515c0fd2fcd61b618a3486a163d29d0b9c0859455ac4d55
+- evidence_id: R346-Q11178148
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q11178148
+  locator: Literal retained entity P225/P685 with original source-specific access
+    time
+  accessed_at: '2026-10-22T08:11:00.189896Z'
+  support: context_only
+  summary: '29 exact raw LOTUS routes: 24 literal P685 matches and 5 explicitly qualified
+    P225/current-name or NCBI synonym routes without P685. Identifier correspondence
+    does not validate the cited exact-congener occurrence or experimental stock.'
+  snapshot_sha256: 0cc395b3326a2734b515c0fd2fcd61b618a3486a163d29d0b9c0859455ac4d55
+- evidence_id: R346-Q11296633
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q11296633
+  locator: Literal retained entity P225/P685 with original source-specific access
+    time
+  accessed_at: '2026-10-22T08:11:00.189896Z'
+  support: context_only
+  summary: '29 exact raw LOTUS routes: 24 literal P685 matches and 5 explicitly qualified
+    P225/current-name or NCBI synonym routes without P685. Identifier correspondence
+    does not validate the cited exact-congener occurrence or experimental stock.'
+  snapshot_sha256: 0cc395b3326a2734b515c0fd2fcd61b618a3486a163d29d0b9c0859455ac4d55
+- evidence_id: R346-Q130201
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q130201
+  locator: Literal retained entity P225/P685 with original source-specific access
+    time
+  accessed_at: '2026-10-22T08:11:00.189896Z'
+  support: context_only
+  summary: '29 exact raw LOTUS routes: 24 literal P685 matches and 5 explicitly qualified
+    P225/current-name or NCBI synonym routes without P685. Identifier correspondence
+    does not validate the cited exact-congener occurrence or experimental stock.'
+  snapshot_sha256: 0cc395b3326a2734b515c0fd2fcd61b618a3486a163d29d0b9c0859455ac4d55
+- evidence_id: R346-Q131584
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q131584
+  locator: Literal retained entity P225/P685 with original source-specific access
+    time
+  accessed_at: '2026-10-22T08:11:00.189896Z'
+  support: context_only
+  summary: '29 exact raw LOTUS routes: 24 literal P685 matches and 5 explicitly qualified
+    P225/current-name or NCBI synonym routes without P685. Identifier correspondence
+    does not validate the cited exact-congener occurrence or experimental stock.'
+  snapshot_sha256: 0cc395b3326a2734b515c0fd2fcd61b618a3486a163d29d0b9c0859455ac4d55
+- evidence_id: R346-Q149279
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q149279
+  locator: Literal retained entity P225/P685 with original source-specific access
+    time
+  accessed_at: '2026-10-22T08:11:00.189896Z'
+  support: context_only
+  summary: '29 exact raw LOTUS routes: 24 literal P685 matches and 5 explicitly qualified
+    P225/current-name or NCBI synonym routes without P685. Identifier correspondence
+    does not validate the cited exact-congener occurrence or experimental stock.'
+  snapshot_sha256: 0cc395b3326a2734b515c0fd2fcd61b618a3486a163d29d0b9c0859455ac4d55
+- evidence_id: R346-Q15352457
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q15352457
+  locator: Literal retained entity P225/P685 with original source-specific access
+    time
+  accessed_at: '2026-10-22T08:11:00.189896Z'
+  support: context_only
+  summary: '29 exact raw LOTUS routes: 24 literal P685 matches and 5 explicitly qualified
+    P225/current-name or NCBI synonym routes without P685. Identifier correspondence
+    does not validate the cited exact-congener occurrence or experimental stock.'
+  snapshot_sha256: 0cc395b3326a2734b515c0fd2fcd61b618a3486a163d29d0b9c0859455ac4d55
+- evidence_id: R346-Q17813440
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q17813440
+  locator: Literal retained entity P225/P685 with original source-specific access
+    time
+  accessed_at: '2026-10-22T08:11:00.189896Z'
+  support: context_only
+  summary: '29 exact raw LOTUS routes: 24 literal P685 matches and 5 explicitly qualified
+    P225/current-name or NCBI synonym routes without P685. Identifier correspondence
+    does not validate the cited exact-congener occurrence or experimental stock.'
+  snapshot_sha256: 0cc395b3326a2734b515c0fd2fcd61b618a3486a163d29d0b9c0859455ac4d55
+- evidence_id: R346-Q17814053
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q17814053
+  locator: Literal retained entity P225/P685 with original source-specific access
+    time
+  accessed_at: '2026-10-22T08:11:00.647456Z'
+  support: context_only
+  summary: '29 exact raw LOTUS routes: 24 literal P685 matches and 5 explicitly qualified
+    P225/current-name or NCBI synonym routes without P685. Identifier correspondence
+    does not validate the cited exact-congener occurrence or experimental stock.'
+  snapshot_sha256: a7160602627e0e6dd227feec455ee25dc9068465383b1d69e2fb37f4620de2bc
+- evidence_id: R346-Q4275211
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q4275211
+  locator: Literal retained entity P225/P685 with original source-specific access
+    time
+  accessed_at: '2026-10-22T08:11:00.647456Z'
+  support: context_only
+  summary: '29 exact raw LOTUS routes: 24 literal P685 matches and 5 explicitly qualified
+    P225/current-name or NCBI synonym routes without P685. Identifier correspondence
+    does not validate the cited exact-congener occurrence or experimental stock.'
+  snapshot_sha256: a7160602627e0e6dd227feec455ee25dc9068465383b1d69e2fb37f4620de2bc
+- evidence_id: R346-Q7132528
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q7132528
+  locator: Literal retained entity P225/P685 with original source-specific access
+    time
+  accessed_at: '2026-10-22T08:11:00.647456Z'
+  support: context_only
+  summary: '29 exact raw LOTUS routes: 24 literal P685 matches and 5 explicitly qualified
+    P225/current-name or NCBI synonym routes without P685. Identifier correspondence
+    does not validate the cited exact-congener occurrence or experimental stock.'
+  snapshot_sha256: a7160602627e0e6dd227feec455ee25dc9068465383b1d69e2fb37f4620de2bc
+- evidence_id: R346-Q87600253
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q87600253
+  locator: Literal retained entity P225/P685 with original source-specific access
+    time
+  accessed_at: '2026-10-22T08:11:00.647456Z'
+  support: context_only
+  summary: '29 exact raw LOTUS routes: 24 literal P685 matches and 5 explicitly qualified
+    P225/current-name or NCBI synonym routes without P685. Identifier correspondence
+    does not validate the cited exact-congener occurrence or experimental stock.'
+  snapshot_sha256: a7160602627e0e6dd227feec455ee25dc9068465383b1d69e2fb37f4620de2bc
+- evidence_id: R346-TAXON-3469
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1030657,115647,1177,1392250,1437823,1570104,190592,1930,1932,1966654,215228,215229,22694,306088,3117443,33128,337066,3469,3736021,3736784,38907,38914,38929,40380,439476,5530,6848,903796&retmode=xml
+  locator: Exact TaxId/ScientificName/rank/parent and OtherNames within retained response
+  accessed_at: '2026-10-22T08:10:59.656635Z'
+  support: context_only
+  summary: 'Literal retained identifier context: 3469: Papaver somniferum (species);
+    22694: Papaver orientale (species); 33128: Papaver rhoeas (species); 38907: Corydalis
+    ochotensis (species); 38914: Corydalis solida (species); 38929: Corydalis ophiocarpa
+    (species); 215228: Papaver pseudo-orientale (species); 215229: Papaver somniferum
+    subsp. setigerum (subspecies); 1030657: Corydalis heterocarpa var. japonica (varietas);
+    3117443: Papaver fugax (species); 3736021: Papaver oreophilum (species); 3736784:
+    Roemeria carica (species). Papaver and Corydalis species/varietal identifiers
+    retain their exact rank. P. setigerum is an explicit synonym under P. somniferum
+    subsp. setigerum; Corydalis bulbosa is a synonym under C. solida. Other absent-P685
+    routes use exact retained names only. Identifier agreement does not independently
+    establish occurrence, production or stock equivalence.'
+  snapshot_sha256: 0c8682b30911bfa583854e726324ed02e6440293edb5f973f2e5c9368640565d
+- evidence_id: R346-TAXON-22694
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1030657,115647,1177,1392250,1437823,1570104,190592,1930,1932,1966654,215228,215229,22694,306088,3117443,33128,337066,3469,3736021,3736784,38907,38914,38929,40380,439476,5530,6848,903796&retmode=xml
+  locator: Exact TaxId/ScientificName/rank/parent and OtherNames within retained response
+  accessed_at: '2026-10-22T08:10:59.656635Z'
+  support: context_only
+  summary: 'Literal retained identifier context: 3469: Papaver somniferum (species);
+    22694: Papaver orientale (species); 33128: Papaver rhoeas (species); 38907: Corydalis
+    ochotensis (species); 38914: Corydalis solida (species); 38929: Corydalis ophiocarpa
+    (species); 215228: Papaver pseudo-orientale (species); 215229: Papaver somniferum
+    subsp. setigerum (subspecies); 1030657: Corydalis heterocarpa var. japonica (varietas);
+    3117443: Papaver fugax (species); 3736021: Papaver oreophilum (species); 3736784:
+    Roemeria carica (species). Papaver and Corydalis species/varietal identifiers
+    retain their exact rank. P. setigerum is an explicit synonym under P. somniferum
+    subsp. setigerum; Corydalis bulbosa is a synonym under C. solida. Other absent-P685
+    routes use exact retained names only. Identifier agreement does not independently
+    establish occurrence, production or stock equivalence.'
+  snapshot_sha256: 0c8682b30911bfa583854e726324ed02e6440293edb5f973f2e5c9368640565d
+- evidence_id: R346-TAXON-33128
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1030657,115647,1177,1392250,1437823,1570104,190592,1930,1932,1966654,215228,215229,22694,306088,3117443,33128,337066,3469,3736021,3736784,38907,38914,38929,40380,439476,5530,6848,903796&retmode=xml
+  locator: Exact TaxId/ScientificName/rank/parent and OtherNames within retained response
+  accessed_at: '2026-10-22T08:10:59.656635Z'
+  support: context_only
+  summary: 'Literal retained identifier context: 3469: Papaver somniferum (species);
+    22694: Papaver orientale (species); 33128: Papaver rhoeas (species); 38907: Corydalis
+    ochotensis (species); 38914: Corydalis solida (species); 38929: Corydalis ophiocarpa
+    (species); 215228: Papaver pseudo-orientale (species); 215229: Papaver somniferum
+    subsp. setigerum (subspecies); 1030657: Corydalis heterocarpa var. japonica (varietas);
+    3117443: Papaver fugax (species); 3736021: Papaver oreophilum (species); 3736784:
+    Roemeria carica (species). Papaver and Corydalis species/varietal identifiers
+    retain their exact rank. P. setigerum is an explicit synonym under P. somniferum
+    subsp. setigerum; Corydalis bulbosa is a synonym under C. solida. Other absent-P685
+    routes use exact retained names only. Identifier agreement does not independently
+    establish occurrence, production or stock equivalence.'
+  snapshot_sha256: 0c8682b30911bfa583854e726324ed02e6440293edb5f973f2e5c9368640565d
+- evidence_id: R346-TAXON-38907
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1030657,115647,1177,1392250,1437823,1570104,190592,1930,1932,1966654,215228,215229,22694,306088,3117443,33128,337066,3469,3736021,3736784,38907,38914,38929,40380,439476,5530,6848,903796&retmode=xml
+  locator: Exact TaxId/ScientificName/rank/parent and OtherNames within retained response
+  accessed_at: '2026-10-22T08:10:59.656635Z'
+  support: context_only
+  summary: 'Literal retained identifier context: 3469: Papaver somniferum (species);
+    22694: Papaver orientale (species); 33128: Papaver rhoeas (species); 38907: Corydalis
+    ochotensis (species); 38914: Corydalis solida (species); 38929: Corydalis ophiocarpa
+    (species); 215228: Papaver pseudo-orientale (species); 215229: Papaver somniferum
+    subsp. setigerum (subspecies); 1030657: Corydalis heterocarpa var. japonica (varietas);
+    3117443: Papaver fugax (species); 3736021: Papaver oreophilum (species); 3736784:
+    Roemeria carica (species). Papaver and Corydalis species/varietal identifiers
+    retain their exact rank. P. setigerum is an explicit synonym under P. somniferum
+    subsp. setigerum; Corydalis bulbosa is a synonym under C. solida. Other absent-P685
+    routes use exact retained names only. Identifier agreement does not independently
+    establish occurrence, production or stock equivalence.'
+  snapshot_sha256: 0c8682b30911bfa583854e726324ed02e6440293edb5f973f2e5c9368640565d
+- evidence_id: R346-TAXON-38914
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1030657,115647,1177,1392250,1437823,1570104,190592,1930,1932,1966654,215228,215229,22694,306088,3117443,33128,337066,3469,3736021,3736784,38907,38914,38929,40380,439476,5530,6848,903796&retmode=xml
+  locator: Exact TaxId/ScientificName/rank/parent and OtherNames within retained response
+  accessed_at: '2026-10-22T08:10:59.656635Z'
+  support: context_only
+  summary: 'Literal retained identifier context: 3469: Papaver somniferum (species);
+    22694: Papaver orientale (species); 33128: Papaver rhoeas (species); 38907: Corydalis
+    ochotensis (species); 38914: Corydalis solida (species); 38929: Corydalis ophiocarpa
+    (species); 215228: Papaver pseudo-orientale (species); 215229: Papaver somniferum
+    subsp. setigerum (subspecies); 1030657: Corydalis heterocarpa var. japonica (varietas);
+    3117443: Papaver fugax (species); 3736021: Papaver oreophilum (species); 3736784:
+    Roemeria carica (species). Papaver and Corydalis species/varietal identifiers
+    retain their exact rank. P. setigerum is an explicit synonym under P. somniferum
+    subsp. setigerum; Corydalis bulbosa is a synonym under C. solida. Other absent-P685
+    routes use exact retained names only. Identifier agreement does not independently
+    establish occurrence, production or stock equivalence.'
+  snapshot_sha256: 0c8682b30911bfa583854e726324ed02e6440293edb5f973f2e5c9368640565d
+- evidence_id: R346-TAXON-38929
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1030657,115647,1177,1392250,1437823,1570104,190592,1930,1932,1966654,215228,215229,22694,306088,3117443,33128,337066,3469,3736021,3736784,38907,38914,38929,40380,439476,5530,6848,903796&retmode=xml
+  locator: Exact TaxId/ScientificName/rank/parent and OtherNames within retained response
+  accessed_at: '2026-10-22T08:10:59.656635Z'
+  support: context_only
+  summary: 'Literal retained identifier context: 3469: Papaver somniferum (species);
+    22694: Papaver orientale (species); 33128: Papaver rhoeas (species); 38907: Corydalis
+    ochotensis (species); 38914: Corydalis solida (species); 38929: Corydalis ophiocarpa
+    (species); 215228: Papaver pseudo-orientale (species); 215229: Papaver somniferum
+    subsp. setigerum (subspecies); 1030657: Corydalis heterocarpa var. japonica (varietas);
+    3117443: Papaver fugax (species); 3736021: Papaver oreophilum (species); 3736784:
+    Roemeria carica (species). Papaver and Corydalis species/varietal identifiers
+    retain their exact rank. P. setigerum is an explicit synonym under P. somniferum
+    subsp. setigerum; Corydalis bulbosa is a synonym under C. solida. Other absent-P685
+    routes use exact retained names only. Identifier agreement does not independently
+    establish occurrence, production or stock equivalence.'
+  snapshot_sha256: 0c8682b30911bfa583854e726324ed02e6440293edb5f973f2e5c9368640565d
+- evidence_id: R346-TAXON-215228
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1030657,115647,1177,1392250,1437823,1570104,190592,1930,1932,1966654,215228,215229,22694,306088,3117443,33128,337066,3469,3736021,3736784,38907,38914,38929,40380,439476,5530,6848,903796&retmode=xml
+  locator: Exact TaxId/ScientificName/rank/parent and OtherNames within retained response
+  accessed_at: '2026-10-22T08:10:59.656635Z'
+  support: context_only
+  summary: 'Literal retained identifier context: 3469: Papaver somniferum (species);
+    22694: Papaver orientale (species); 33128: Papaver rhoeas (species); 38907: Corydalis
+    ochotensis (species); 38914: Corydalis solida (species); 38929: Corydalis ophiocarpa
+    (species); 215228: Papaver pseudo-orientale (species); 215229: Papaver somniferum
+    subsp. setigerum (subspecies); 1030657: Corydalis heterocarpa var. japonica (varietas);
+    3117443: Papaver fugax (species); 3736021: Papaver oreophilum (species); 3736784:
+    Roemeria carica (species). Papaver and Corydalis species/varietal identifiers
+    retain their exact rank. P. setigerum is an explicit synonym under P. somniferum
+    subsp. setigerum; Corydalis bulbosa is a synonym under C. solida. Other absent-P685
+    routes use exact retained names only. Identifier agreement does not independently
+    establish occurrence, production or stock equivalence.'
+  snapshot_sha256: 0c8682b30911bfa583854e726324ed02e6440293edb5f973f2e5c9368640565d
+- evidence_id: R346-TAXON-215229
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1030657,115647,1177,1392250,1437823,1570104,190592,1930,1932,1966654,215228,215229,22694,306088,3117443,33128,337066,3469,3736021,3736784,38907,38914,38929,40380,439476,5530,6848,903796&retmode=xml
+  locator: Exact TaxId/ScientificName/rank/parent and OtherNames within retained response
+  accessed_at: '2026-10-22T08:10:59.656635Z'
+  support: context_only
+  summary: 'Literal retained identifier context: 3469: Papaver somniferum (species);
+    22694: Papaver orientale (species); 33128: Papaver rhoeas (species); 38907: Corydalis
+    ochotensis (species); 38914: Corydalis solida (species); 38929: Corydalis ophiocarpa
+    (species); 215228: Papaver pseudo-orientale (species); 215229: Papaver somniferum
+    subsp. setigerum (subspecies); 1030657: Corydalis heterocarpa var. japonica (varietas);
+    3117443: Papaver fugax (species); 3736021: Papaver oreophilum (species); 3736784:
+    Roemeria carica (species). Papaver and Corydalis species/varietal identifiers
+    retain their exact rank. P. setigerum is an explicit synonym under P. somniferum
+    subsp. setigerum; Corydalis bulbosa is a synonym under C. solida. Other absent-P685
+    routes use exact retained names only. Identifier agreement does not independently
+    establish occurrence, production or stock equivalence.'
+  snapshot_sha256: 0c8682b30911bfa583854e726324ed02e6440293edb5f973f2e5c9368640565d
+- evidence_id: R346-TAXON-1030657
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1030657,115647,1177,1392250,1437823,1570104,190592,1930,1932,1966654,215228,215229,22694,306088,3117443,33128,337066,3469,3736021,3736784,38907,38914,38929,40380,439476,5530,6848,903796&retmode=xml
+  locator: Exact TaxId/ScientificName/rank/parent and OtherNames within retained response
+  accessed_at: '2026-10-22T08:10:59.656635Z'
+  support: context_only
+  summary: 'Literal retained identifier context: 3469: Papaver somniferum (species);
+    22694: Papaver orientale (species); 33128: Papaver rhoeas (species); 38907: Corydalis
+    ochotensis (species); 38914: Corydalis solida (species); 38929: Corydalis ophiocarpa
+    (species); 215228: Papaver pseudo-orientale (species); 215229: Papaver somniferum
+    subsp. setigerum (subspecies); 1030657: Corydalis heterocarpa var. japonica (varietas);
+    3117443: Papaver fugax (species); 3736021: Papaver oreophilum (species); 3736784:
+    Roemeria carica (species). Papaver and Corydalis species/varietal identifiers
+    retain their exact rank. P. setigerum is an explicit synonym under P. somniferum
+    subsp. setigerum; Corydalis bulbosa is a synonym under C. solida. Other absent-P685
+    routes use exact retained names only. Identifier agreement does not independently
+    establish occurrence, production or stock equivalence.'
+  snapshot_sha256: 0c8682b30911bfa583854e726324ed02e6440293edb5f973f2e5c9368640565d
+- evidence_id: R346-TAXON-3117443
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1030657,115647,1177,1392250,1437823,1570104,190592,1930,1932,1966654,215228,215229,22694,306088,3117443,33128,337066,3469,3736021,3736784,38907,38914,38929,40380,439476,5530,6848,903796&retmode=xml
+  locator: Exact TaxId/ScientificName/rank/parent and OtherNames within retained response
+  accessed_at: '2026-10-22T08:10:59.656635Z'
+  support: context_only
+  summary: 'Literal retained identifier context: 3469: Papaver somniferum (species);
+    22694: Papaver orientale (species); 33128: Papaver rhoeas (species); 38907: Corydalis
+    ochotensis (species); 38914: Corydalis solida (species); 38929: Corydalis ophiocarpa
+    (species); 215228: Papaver pseudo-orientale (species); 215229: Papaver somniferum
+    subsp. setigerum (subspecies); 1030657: Corydalis heterocarpa var. japonica (varietas);
+    3117443: Papaver fugax (species); 3736021: Papaver oreophilum (species); 3736784:
+    Roemeria carica (species). Papaver and Corydalis species/varietal identifiers
+    retain their exact rank. P. setigerum is an explicit synonym under P. somniferum
+    subsp. setigerum; Corydalis bulbosa is a synonym under C. solida. Other absent-P685
+    routes use exact retained names only. Identifier agreement does not independently
+    establish occurrence, production or stock equivalence.'
+  snapshot_sha256: 0c8682b30911bfa583854e726324ed02e6440293edb5f973f2e5c9368640565d
+- evidence_id: R346-TAXON-3736021
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1030657,115647,1177,1392250,1437823,1570104,190592,1930,1932,1966654,215228,215229,22694,306088,3117443,33128,337066,3469,3736021,3736784,38907,38914,38929,40380,439476,5530,6848,903796&retmode=xml
+  locator: Exact TaxId/ScientificName/rank/parent and OtherNames within retained response
+  accessed_at: '2026-10-22T08:10:59.656635Z'
+  support: context_only
+  summary: 'Literal retained identifier context: 3469: Papaver somniferum (species);
+    22694: Papaver orientale (species); 33128: Papaver rhoeas (species); 38907: Corydalis
+    ochotensis (species); 38914: Corydalis solida (species); 38929: Corydalis ophiocarpa
+    (species); 215228: Papaver pseudo-orientale (species); 215229: Papaver somniferum
+    subsp. setigerum (subspecies); 1030657: Corydalis heterocarpa var. japonica (varietas);
+    3117443: Papaver fugax (species); 3736021: Papaver oreophilum (species); 3736784:
+    Roemeria carica (species). Papaver and Corydalis species/varietal identifiers
+    retain their exact rank. P. setigerum is an explicit synonym under P. somniferum
+    subsp. setigerum; Corydalis bulbosa is a synonym under C. solida. Other absent-P685
+    routes use exact retained names only. Identifier agreement does not independently
+    establish occurrence, production or stock equivalence.'
+  snapshot_sha256: 0c8682b30911bfa583854e726324ed02e6440293edb5f973f2e5c9368640565d
+- evidence_id: R346-TAXON-3736784
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1030657,115647,1177,1392250,1437823,1570104,190592,1930,1932,1966654,215228,215229,22694,306088,3117443,33128,337066,3469,3736021,3736784,38907,38914,38929,40380,439476,5530,6848,903796&retmode=xml
+  locator: Exact TaxId/ScientificName/rank/parent and OtherNames within retained response
+  accessed_at: '2026-10-22T08:10:59.656635Z'
+  support: context_only
+  summary: 'Literal retained identifier context: 3469: Papaver somniferum (species);
+    22694: Papaver orientale (species); 33128: Papaver rhoeas (species); 38907: Corydalis
+    ochotensis (species); 38914: Corydalis solida (species); 38929: Corydalis ophiocarpa
+    (species); 215228: Papaver pseudo-orientale (species); 215229: Papaver somniferum
+    subsp. setigerum (subspecies); 1030657: Corydalis heterocarpa var. japonica (varietas);
+    3117443: Papaver fugax (species); 3736021: Papaver oreophilum (species); 3736784:
+    Roemeria carica (species). Papaver and Corydalis species/varietal identifiers
+    retain their exact rank. P. setigerum is an explicit synonym under P. somniferum
+    subsp. setigerum; Corydalis bulbosa is a synonym under C. solida. Other absent-P685
+    routes use exact retained names only. Identifier agreement does not independently
+    establish occurrence, production or stock equivalence.'
+  snapshot_sha256: 0c8682b30911bfa583854e726324ed02e6440293edb5f973f2e5c9368640565d
+- evidence_id: R346-IDENTIFIER-READ
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch035/root-context-source-read-001.json
+  locator: Eighty-four literal organism routes across 31 Wikidata entities and 41
+    taxa; seven qualified routes lack P685
+  accessed_at: '2026-10-22T08:24:07.973537Z'
+  support: context_only
+  summary: Root read original identifier values and naming context. These do not prove
+    experimental occurrence, production or stock equivalence.
+  snapshot_sha256: 6c538b9446417e63b661d4db763bb8073bebfce24a5b354a1771d0f7ca3e6993
+- evidence_id: R346-IMODULON
+  kind: database
+  reference: https://imodulondb.org/api/datasets
+  locator: Complete retained 20-organism/28-dataset catalogue
+  accessed_at: '2026-10-22T04:52:27.596517Z'
+  support: context_only
+  summary: The retained complete catalogue contains 20 organisms and 28 datasets.
+    No exact emitted native producer or named-stock match is established. No matrix,
+    gene membership, compound or module association was inspected.
+  snapshot_sha256: 155607e7023efdead5ebab3919279a0776d5665a7de9e28b67f02f8f521b0693
+- evidence_id: R346-ASSAY-ROOT-READ
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch035/root-assay-sample-results-read-001.json
+  locator: Prior root read of31 emitted activities, selected deposited endpoints and
+    six samples; exact reading limits retained
+  accessed_at: '2026-10-22T08:16:11.469819Z'
+  support: context_only
+  summary: Twenty-five written observations across nineteen AIDs retain functional
+    CYP activity, PXR reporter and phenotype/viability endpoints, explicit inconclusive
+    calls and source Potency values. Five deposited sample IDs are represented; paired
+    blank/protein metadata and the two DNA-content samples remain distinct. The prior
+    root audit inspected the selected deposited endpoints and protocol meanings; it
+    is not a complete audit of all144 raw rows or an inference of direct binding,
+    selectivity or physical-lot stereochemistry.
+  snapshot_sha256: dce4b8febe5b8c71cc0157778dcf17c75f55382c2166f7be8b9caae88b135d61
+- evidence_id: R346-ASSAY-PROTOCOL-READ
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch035/root-noscapine-protocol-summary-read-001.json
+  locator: Prior root protocol interpretation; later exact result receipt independently
+    bound
+  accessed_at: '2026-10-22T08:11:17.326396Z'
+  support: context_only
+  summary: Twenty-five written observations across nineteen AIDs retain functional
+    CYP activity, PXR reporter and phenotype/viability endpoints, explicit inconclusive
+    calls and source Potency values. Five deposited sample IDs are represented; paired
+    blank/protein metadata and the two DNA-content samples remain distinct. The prior
+    root audit inspected the selected deposited endpoints and protocol meanings; it
+    is not a complete audit of all144 raw rows or an inference of direct binding,
+    selectivity or physical-lot stereochemistry.
+  snapshot_sha256: 38fd6695e51b10d538c2ed007274527ce27a031a21bf86ee458ff686de43a27d
+- evidence_id: S346-E-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/346/local-sources.json
+  locator: Complete resolved owner and captured rows; exact seven-set equality checked
+  accessed_at: '2026-10-25T22:03:32.222521Z'
+  support: context_only
+  summary: Complete actual owner including any inline graph/pathway, six captured
+    source sets and separately compared seventh PubChem set match the prepared complete
+    reads.
+  snapshot_sha256: 956d0250c7e215904e9de94f72155ed5a3984fb3d80947ce68c913e4a491b06c
+- evidence_id: S346-E-CONSUMERS
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: Current d14547bc locus override473–571, producer/cluster1089–1153, consolidated
+    discussion1497–1518 and shared-structure/unnamed-producer prompts1563–1595
+  accessed_at: '2026-10-25T22:03:32.222521Z'
+  support: context_only
+  summary: Static inspection covers exact source method grading, producer/reference
+    qualification and consumed correction ordering. Current shared-structure replacement
+    and consolidated discussions are separate capabilities; they do not select identity
+    changes or broaden source endpoints.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: S346-E-SCHEMA
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: ProducerEvidenceBasisEnum and ClusterLinkEvidenceEnum; conf/producer_evidence.tsv
+    and grading.py also read and pinned
+  accessed_at: '2026-10-25T22:03:32.222521Z'
+  support: context_only
+  summary: Producer tiers concern evidence in the named organism; cloned-locus experiments
+    are a distinct cluster question. Empty methods and a source assertion do not independently
+    assert native knockout or exact pure-enzyme proof.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: S346-E-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/346/science-search.json
+  locator: Exact read scope
+  accessed_at: '2026-10-25T22:03:32.229913Z'
+  support: context_only
+  summary: Exact current curated-decision search is retained. Its scope is the curation
+    tree; it does not establish absence of experimental evidence or all possible consumers.
+  snapshot_sha256: 1c01dd79cdd28edc9f762db8993fc3dd8839a4995b6fbd1bf58fb1f2c8757520
+  search_scope: rg --no-ignore --hidden -n -F over curation using exact identifier,
+    label, full key and source accessions
+- evidence_id: S346-E-ASSAY-ROOT
+  kind: prior_review
+  reference: local:root-assay-read
+  locator: Root complete31written activity joins,26exact sample pairs and19noscapine
+    protocols plus six nybomycin outcomes; exact scope and208inputs retained.
+  accessed_at: '2026-10-22T09:28:46.120919Z'
+  support: context_only
+  summary: All selected emitted calls/values match current source results. Functional
+    and cellular endpoints do not establish direct binding/selectivity; nybomycin
+    >40/>50 bounds are source-only because its owner has no quantitative claim.
+  snapshot_sha256: dce4b8febe5b8c71cc0157778dcf17c75f55382c2166f7be8b9caae88b135d61
+- evidence_id: S346-E-BGC-PEER
+  kind: prior_review
+  reference: local:bgc346347-source-peer
+  locator: Bounded independent original346/347 text/caption read; no fresh SI/pixel
+    or2014 sequence-equality claim.
+  accessed_at: '2026-10-22T09:28:46.120919Z'
+  support: context_only
+  summary: Yeast versus purified evidence, donor versus introduced host and proposed
+    enzyme scopes are preserved.
+  snapshot_sha256: 6c99796f24f8a61ce1156f5cb5346d83fd6d67242f05d5288e6c7313cf6b13ab
+- evidence_id: S346-E-CONTEXT
+  kind: prior_review
+  reference: local:batch035-context
+  locator: Complete41taxa,31QID and84literalLOTUS route projection plus20organism/28dataset
+    catalogue.
+  accessed_at: '2026-10-22T09:28:46.120919Z'
+  support: context_only
+  summary: Taxon synonyms and qualified routes are source-specific. No exact native
+    producer dataset or compound/locus expression evidence is inferred from a species-level
+    catalogue match.
+  snapshot_sha256: 9c0243fabe005db07989e0c41a81e09355811552addf19f2d3297c12adfc1482
+- evidence_id: S346-E-CURRENT-BINDING
+  kind: prior_review
+  reference: local:current-binding
+  locator: Current d145 owners/70 joins and two exact historical/current consumer
+    bridges.
+  accessed_at: '2026-10-25T20:14:03.027756Z'
+  support: context_only
+  summary: Historical source timestamps are preserved independently from this local
+    current-input audit.
+  snapshot_sha256: e60a63c46dcfb589274deb578d8cfe641c16c201d35ee3f75e9e305fbadfc0ec
+- evidence_id: S346-E-GUARDS
+  kind: record_content
+  reference: local:guards
+  locator: Ten exact owner snapshots and70 sets of complete parsed rows and SHA256
+    digests.
+  accessed_at: '2026-10-25T20:14:03.027756Z'
+  support: context_only
+  summary: Current independent joins match; future official intake/root reads remain
+    separate prerequisites.
+  snapshot_sha256: 3badeeaa1635f081f36d97e6a3bbac2b3e6a721852b9a1fd9f09cb972afd789a
+- evidence_id: S346-E-INVENTORY
+  kind: record_content
+  reference: local:batch035-inventory
+  locator: Ten complete owner/history snapshots and all70 raw source joins.
+  accessed_at: '2026-10-22T09:28:46.120919Z'
+  support: context_only
+  summary: All current owners and source rows match the prepared inventory; no source
+    edit has occurred.
+  snapshot_sha256: e911efe68a4b80551ff5c89dc4cacf8c6f0b98826ec21690eb98a1d2940dbf44
+- evidence_id: S346-E-METHODS
+  kind: record_content
+  reference: local:conf/producer_evidence.tsv
+  locator: Current mapping of source method assertions to producer/locus evidence
+    grades.
+  accessed_at: '2026-10-22T09:28:46.120919Z'
+  support: context_only
+  summary: Empty imported methods remain SOURCE_ASSERTION/CLUSTER_UNSTATED; positive
+    later experiments do not require silent upgrades.
+  snapshot_sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+- evidence_id: S346-E-NOS-GB
+  kind: primary_source
+  reference: GenBank:JQ659007.1
+  locator: Complete retained header/source/CDS qualifiers and joined native coding
+    segments; exact diagnostic002.
+  accessed_at: '2026-10-22T08:07:22.246494Z'
+  support: partial
+  summary: Native deposited locus/translation provenance supports SDR1 identity; no
+    exact recombinant tag/codon-optimization equivalence is asserted.
+  snapshot_sha256: fb04e263c66ea8a5887a557fc13ebbaa51d0fcce978d8bcac6dd77608cd88fe1
+- evidence_id: S346-E-NOS-GP
+  kind: primary_source
+  reference: GenPept:AFB74619.1
+  locator: Complete protein header/features and native348aa sequence; coded_by JQ659007.1
+    and2012 Winzer citation.
+  accessed_at: '2026-10-22T08:07:22.022932Z'
+  support: partial
+  summary: The deposited2012 protein is the sequence matched to reviewed I3PLR3. It
+    is not independently identified as the separate2014 NOS construct.
+  snapshot_sha256: 9125d29e940215c706364cf8bb875f24ad20cf1ace30757ab68253d5203588c1
+- evidence_id: S346-E-NOS-SEQ
+  kind: validation
+  reference: local:PsSDR1-native-comparison002
+  locator: Actual002 native joined-CDS/GenPept/UniProt348aa equality, with original
+    failed001 retained.
+  accessed_at: '2026-10-22T09:28:46.120919Z'
+  support: context_only
+  summary: Native literal sequence equality is positive; no recombinant construct
+    or biological endpoint equivalence follows.
+  snapshot_sha256: 9b01678658eff46027c78f9a1d1bffe5f30f857362b86c94ece8cbb69d5eaf07
+- evidence_id: S346-E-NOS-SEQ-PEER
+  kind: prior_review
+  reference: local:PsSDR1-static-peer
+  locator: Independent complete diagnostic source/report/pin review; no rerun.
+  accessed_at: '2026-10-22T09:28:46.120919Z'
+  support: context_only
+  summary: Peer confirms coordinate/initiation/translation handling and native sequence
+    bindings within the stated static scope.
+  snapshot_sha256: b82af1a26717135268cdbaf962e62379b52dc31a429f9b66cfe87847ba7040b9
+- evidence_id: S346-E-NOS-UP
+  kind: database
+  reference: UniProtKB:I3PLR3
+  locator: Complete reviewed identity/function/reaction crosslinks and native348aa
+    sequence; JQ659007/AFB74619.1,2012 sequence versus2016/2018 functional references.
+  accessed_at: '2026-10-22T08:01:15.723182Z'
+  support: supports
+  summary: Reviewed Papaver somniferum SDR1 crosslinks the exact reaction and2012
+    deposited sequence. Current source annotation is distinct from experimental construct
+    equality.
+  snapshot_sha256: 83b7bc2395a3425553796ed454f4d04ddf3d65c5493d8ee579d244d2ed90a9ae
+- evidence_id: S346-E-NOS11
+  kind: primary_source
+  reference: DOI:10.1371/journal.pone.0017733
+  locator: Original title/abstract and source citation-level context only; no exhaustive
+    therapeutic evidence review.
+  accessed_at: '2026-10-22T08:01:12.925194Z'
+  support: partial
+  summary: The imported citation is disclosed as COMPOUND_BIOACTIVITY. A bioactivity
+    reference accompanying conservative DATABASE_ASSERTION/CLUSTER_UNSTATED does not
+    automatically claim a biosynthetic intervention.
+  snapshot_sha256: a3fdcd40123a254f5248a900a0984194def7e2698bb46b511a7cce19b20cb04d
+- evidence_id: S346-E-NOS14-ABSTRACT
+  kind: primary_source
+  reference: PMID:24708518
+  locator: Complete original PubMed abstract for Chen2014, DOI10.1111/tpj.12379.
+  accessed_at: '2026-10-22T08:07:21.788568Z'
+  support: partial
+  summary: Supports reported final dehydrogenation, substrate specificity and native
+    silencing-associated reduced noscapine/increased hemiacetal. Matching function
+    alone does not identify the exact2014 construct as the2012 SDR1 accession.
+  snapshot_sha256: a02af03914cd1e6ed337edce27cf10cf1b67172192f0658cf4d1f5f011461bd8
+- evidence_id: S346-E-NOS16
+  kind: primary_source
+  reference: DOI:10.1038/ncomms12137
+  locator: Original scientific Results paragraphs0–34 and selected Methods35–42,44–62;
+    Figure1 caption; full Methods43/SI not claimed.
+  accessed_at: '2026-10-22T08:01:11.770035Z'
+  support: partial
+  summary: Positive engineered-yeast PsSDR1 late conversion is distinct from purified
+    PsMT2/PsMT3 work and from unproven universal native ordering. The existing owner
+    explicitly describes engineered yeast. Hemiacetal identification is MS/MS-based
+    rather than an independently isolated NMR assignment.
+  snapshot_sha256: 9d0d9ac6c4ff1c9d09d4e6b9b41e7f00ccce3000aae1603201ccfd96f87446d3
+- evidence_id: S346-E-NOS16-FIG1
+  kind: primary_source
+  reference: DOI:10.1038/ncomms12137
+  locator: Original Figure1 complete panel; exact final noscapine1 and late8-prime→1
+    edge.
+  accessed_at: '2026-10-22T08:09:40.138222Z'
+  support: partial
+  summary: Original final-product depiction and late SDR1 context are available. Independent
+    chemical precision review remains separate; no upstream congener geometry or physical
+    sample purity is transferred.
+  snapshot_sha256: 170c502dcaca3b37d28953c1c5cc88cadb739a8fdbcdf29fd7bdba846ae6d466
+- evidence_id: S346-E-OCCURRENCES
+  kind: record_content
+  reference: local:occurrences
+  locator: Complete later-five literal occurrence projection and source-specific unresolved
+    citations.
+  accessed_at: '2026-10-25T20:14:03.027756Z'
+  support: context_only
+  summary: Inventoried references are not equivalent to inspected original support;
+    noscapine older occurrence applicability remains required incomplete.
+  snapshot_sha256: 10feb35bc0991310e412d2d9b3354928acbc3fb1272b470e888a9fecc2bc6b7a
+- evidence_id: S346-E-PRIMARY-ROOT
+  kind: prior_review
+  reference: local:root-primary346347
+  locator: Independent full347 scientific body and bounded346 original text/Figure1/read
+    scopes.
+  accessed_at: '2026-10-22T09:28:46.120919Z'
+  support: context_only
+  summary: Supports exact introduced product and yeast-qualified enzyme evidence while
+    preserving native ordering, sample and construct limits.
+  snapshot_sha256: 00b2dddb8a4f10dada76bb0f54ce2fc2339bcf09928ae02dbda4975bbe562206
+- evidence_id: S346-E-SELECTED-ROOT
+  kind: prior_review
+  reference: local:root-selected-primary
+  locator: Exact3462014abstract/AFBheader, six sample diagnostics and349 bounded candidate/provenance
+    paragraphs.
+  accessed_at: '2026-10-22T09:28:46.120919Z'
+  support: context_only
+  summary: 2012 versus2014 protein identity is not inferred from function;349 stock
+    and exact intervention bridge remain unclosed.
+  snapshot_sha256: 9709acb43a8be8360b06a6459bac88761e3ae62411de3504c65e018047bb1782
+- evidence_id: S346-E-SOURCE-READ
+  kind: prior_review
+  reference: local:source-read
+  locator: Complete frozen source read scopes and preserved unsuccessful or limited
+    routes.
+  accessed_at: '2026-10-25T20:14:03.027756Z'
+  support: context_only
+  summary: Original reading limits are retained; this preparation does not claim a
+    new full primary reread.
+  snapshot_sha256: 7ebdff5d706a9d775a0960778d764732541669da2b560ba139b9174333995487
+- evidence_id: C346-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/noscapine.yaml
+  locator: Complete owner and all seven matching source-row sets; no referenced components
+  accessed_at: '2026-10-25T22:03:39.736023Z'
+  support: supports
+  summary: 'The complete owner denotes (−)-noscapine under CHEBI:73237. All source
+    selectors, versions and complete row digests are retained in COMPARISON: [{"row_sha256":
+    "70857fb8305d39fbeb492a340a1dd74eb4294d87c46c6736389ae59593357930", "selector":
+    "BGC0001325:1", "version": "3"}]. The official intake and prepared owner bytes
+    agree.'
+  snapshot_sha256: b4c58642aeccf64e3e81de15903b4603b5d5b47bc028c46cec4b38b742a33aaf
+- evidence_id: C346-GRAPH
+  kind: validation
+  reference: /private/tmp/npm-review-work/346/chemistry.json
+  locator: Fresh intake RDKit result and frozen Standard/fixed-H comparison
+  accessed_at: '2026-10-25T22:01:26.256521Z'
+  support: supports
+  summary: The stored SMILES recomputes to AKNNEGZIBPJZJG-MSOLQXFVSA-N, formula C22H23NO7,
+    formal charge 0; stored InChI/key agree. These are representation checks, not
+    experimental identity proof.
+  snapshot_sha256: 1e5beff2659cb7e8473f7bf397c20937415d98ac1ac0bcc4dc22d87fc338f8eb
+- evidence_id: C346-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch035/chemistry-prep/retained-graph-comparison.json
+  locator: Record 346; exact source rows and each graph comparison
+  accessed_at: '2026-10-22T08:12:52.524919Z'
+  support: supports
+  summary: Exact Standard, fixed-H, formula, charge and stereo comparisons of the
+    retained owner and complete raw rows; current authority responses and primary
+    proof are separate evidence.
+  snapshot_sha256: 149b3ea29f181cfc75dcd00cefdf2770878ab5f1b1ee740c88d95c47262e0dae
+- evidence_id: C346-LOCAL-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/346/chemistry-search-receipt.json
+  locator: Exact full key, label, slug and source selector in raw/owner/curation trees
+  accessed_at: '2026-10-25T22:03:40.092874Z'
+  support: supports
+  summary: Ignored-inclusive bounded search preserves all matching paths; an absent
+    curation decision does not imply a missing scientific source.
+  snapshot_sha256: ccaf079f9ef2b80e2f2db8604a2626a7c4d3aaf03484f656b6d7f8d25050ddf2
+  search_scope: rg --no-ignore --hidden; data/natural_products, data/raw and curation;
+    exact full key, current label, slug and BGC:compound_index. No claim beyond these
+    trees.
+- evidence_id: C346-AUTHORITY-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch035/chemistry-prep/authority-graph-comparison.json
+  locator: Complete literal Standard/fixed-H, formula, charge and stereo comparison;
+    exact source payload pins retained
+  accessed_at: '2026-10-22T08:13:37.508731Z'
+  support: supports
+  summary: Current authority graphs and source-specific serialization differences
+    are independently compared. Database agreement is not primary natural-hand proof.
+  snapshot_sha256: 8083660794416455c11d65ee3071361c81fc4eb8d762b27a1c3b6cc03a7afb1b
+- evidence_id: C346-AUTHORITY-DETAIL
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch035/chemistry-prep/source-plan-001.json
+  locator: Complete literal Standard/fixed-H, formula, charge and stereo comparison;
+    exact source payload pins retained
+  accessed_at: '2026-10-25T20:35:53.102910Z'
+  support: supports
+  summary: Current authority graphs and source-specific serialization differences
+    are independently compared. Database agreement is not primary natural-hand proof.
+  snapshot_sha256: 0d5286e2bebcc57cab624920805a7d8b40accd7bda88bd1b817b9868b7754e1e
+- evidence_id: C346-AUTH-1
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0001325.3/annotations.json
+  locator: Complete retained payload /private/tmp/npm-review-work/shared-next-batch035/chemistry-prep/authority-phase-001-public/BGC0001325.3.json
+  accessed_at: '2026-10-22T08:08:33.868557Z'
+  support: supports
+  summary: Exact source representation at its recorded access time; primary identity
+    and natural hand are assessed separately.
+  snapshot_sha256: 7c63ae72e348333df6cf741daae9cfd03d8c46a4e752c5f0b7f646f3be74d4a6
+- evidence_id: C346-AUTH-2
+  kind: authority
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/275196/property/SMILES,InChI,InChIKey,MolecularFormula,IUPACName/JSON
+  locator: Complete retained payload /private/tmp/npm-review-work/shared-next-batch035/chemistry-prep/authority-phase-002-public/cid275196-identity.json
+  accessed_at: '2026-10-22T08:08:48.798848Z'
+  support: supports
+  summary: Exact source representation at its recorded access time; primary identity
+    and natural hand are assessed separately.
+  snapshot_sha256: 022f62e66fc1dbf722da75567964a99e2628832a8674328308cdb1a2d3376561
+- evidence_id: C346-AUTH-3
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/73237/
+  locator: Complete retained payload /private/tmp/npm-review-work/shared-next-batch035/chemistry-prep/authority-phase-003-public/CHEBI73237.json
+  accessed_at: '2026-10-22T08:09:55.831984Z'
+  support: supports
+  summary: Exact source representation at its recorded access time; primary identity
+    and natural hand are assessed separately.
+  snapshot_sha256: 71cec6efeba6b4dceb6eadbacd7c48e4a8c372106935eb56b23cfc62b99dfac6
+- evidence_id: C346-AUTH-4
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/73237/
+  locator: Complete retained payload /private/tmp/npm-review-work/shared-next-batch035/chemistry-prep/authority-phase-003-public/CHEBI73237.mol
+  accessed_at: '2026-10-22T08:09:55.771237Z'
+  support: supports
+  summary: Exact source representation at its recorded access time; primary identity
+    and natural hand are assessed separately.
+  snapshot_sha256: aa4ef241c52d240960b081b456c622003b4f3d896503587ba8e1d3f70ddf8942
+- evidence_id: C346-CHEBI-SEARCH-1
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=AKNNEGZIBPJZJG-MSOLQXFVSA-N&size=100
+  locator: Complete bounded key/name response /private/tmp/npm-review-work/shared-next-batch035/chemistry-prep/authority-phase-002-public/chebi-key-346.json
+  accessed_at: '2026-10-22T08:08:46.137789Z'
+  support: supports
+  summary: HTTP200; exact source response and candidate eligibility preserved.
+  snapshot_sha256: ceeabc82b61a00fde81b221ab51dd6c2d6ba8a5621e0787f2f13023828fe1485
+  search_scope: Official ChEBI exact literal key/name request, size100; complete returned
+    payload. No global absence inference.
+- evidence_id: C346-NOS16-FIG1
+  kind: primary_source
+  reference: DOI:10.1038/ncomms12137
+  locator: 'Original Figure1 final noscapine1 only: hashed junction H and plain phthalide
+    centre; neighboring precursor wedges excluded; retained snapshot /private/tmp/npm-review-work/shared-next-batch035/review-support/public-004/noscapine2016-figure1.jpg'
+  accessed_at: '2026-10-22T08:09:40.138222Z'
+  support: supports
+  summary: The source depicts T1R/L3? and matches the owner after only the phthalide
+    tag is removed. Deposited assay graph equality is separately checked; physical
+    sample or natural-hand equivalence is not inferred.
+  snapshot_sha256: 170c502dcaca3b37d28953c1c5cc88cadb739a8fdbcdf29fd7bdba846ae6d466
+- evidence_id: C346-SOURCE-LIMITS
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch035/chemistry-prep/source-notes.json
+  locator: 'Entry346: complete frozen chemical observations, literal authority fields,
+    full rows and limitations; retained snapshot /private/tmp/npm-review-work/shared-next-batch035/chemistry-prep/source-notes.json'
+  accessed_at: '2026-10-22T09:30:32.649892Z'
+  support: supports
+  summary: Frozen source-only observations are retained unchanged. Original source/model
+    times remain distinct from later formal preparation; no chemical replacement,
+    merge or natural-hand selection is proposed.
+  snapshot_sha256: 7ca7c28cdaf54d90714d9791e07a3092cef6fc9c67bd6e848ee90b03cd6aadec
+- evidence_id: C346-PRIMARY-COMPARISON-1
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch035/chemistry-prep/primary-mapping-001/346-noscapine2016-original-001.json
+  locator: 'Entry346: complete bounded original-depiction comparison or explicitly
+    identified image/atom-map derivation; retained snapshot /private/tmp/npm-review-work/shared-next-batch035/chemistry-prep/primary-mapping-001/346-noscapine2016-original-001.json'
+  accessed_at: '2026-10-22T09:19:04.942167Z'
+  support: supports
+  summary: Actual original-model calculation, later static review and persistence
+    scopes remain as recorded in this diagnostic. No new numerical rerun or experimental
+    absolute-hand determination is implied.
+  snapshot_sha256: c344c4ec8cb0322bc16464eeb7a54fee187ed8e20655a3ee6c154c34153f4984
+- evidence_id: C346-SAMPLE-COMPARISON-1
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch035/chemistry-prep/sample346347-identity-001.json
+  locator: 'Entry346: deposited SID855860,49645498,90341457,144203964,170465539 atom/bond
+    and explicit source stereochemical annotation comparison; retained snapshot /private/tmp/npm-review-work/shared-next-batch035/chemistry-prep/sample346347-identity-001.json'
+  accessed_at: '2026-10-22T08:24:47.368421Z'
+  support: supports
+  summary: Deposited representation equality is positive at the recorded calculation
+    scope. It does not establish physical sample purity, source lot, stereoisomer
+    composition, target binding or clinical effect.
+  snapshot_sha256: 99bbf8c33abdda4a82c75c6e5da5b357415f3504337d3d11df9c16f6a5c48579
+- evidence_id: C346-IDENTITY-CONSUMER
+  kind: record_content
+  reference: scripts/seed_from_sources.py
+  locator: Current d145 build_records783; exclusions813-820/1053-1065; exact-key ChEBI
+    indexes880-897 and source concepts1155-1163; retained snapshot /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  accessed_at: '2026-10-25T20:35:51.560404Z'
+  support: supports
+  summary: Exact source assertions, literal-xref filtering and current ChEBI full-key
+    joins remain distinct from primary identity proof. Current shared-group structure
+    correction does not select a replacement here; no curation action is proposed.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+assessments:
+- assessment_id: R346-HISTORY
+  area: provenance
+  topic: Complete history and native status
+  outcome: supported
+  summary: 'Native status remains SEEDED and all 6 history actions retain their exact
+    order: [''SEEDED_FROM_SOURCES'', ''SEEDED_FROM_SOURCES'', ''SEEDED_FROM_SOURCES'',
+    ''RECORD_CURATED'', ''SEEDED_FROM_SOURCES'', ''SEEDED_FROM_SOURCES'']. Source-seeding
+    history does not replace claim-level scientific assessment.'
+  target_ids:
+  - CHEBI:73237
+  evidence_ids:
+  - R346-OWNER
+- assessment_id: R346-OPTIONAL
+  area: completeness
+  topic: Present optional assertions
+  outcome: supported
+  summary: One step and a three-node/two-edge inline PsSDR1 graph describe the terminal
+    noscapine conversion, with the primary evidence explicitly contextualized in introduced
+    yeast. Twenty-five written PubChem observations preserve phenotypic/reporter/functional
+    endpoints and inconclusive calls. Database reaction/protein annotations and assay
+    target metadata do not establish direct binding or physical-sample stereochemistry.
+  target_ids:
+  - CHEBI:73237
+  evidence_ids:
+  - R346-OWNER
+  - R346-LOCAL
+  - R346-PUBCHEM-PREP
+- assessment_id: R346-FILING
+  area: representation
+  topic: Exact computed classification provenance
+  outcome: supported
+  summary: Exact-key NPClassifier version npclassifier.gnps2.org@2026-09-07 reproduces
+    filing, superclass/class and glycoside fields. Computed classification is not
+    independent natural-origin or mechanistic proof; any accepted identity correction
+    requires effective-key reclassification.
+  target_ids:
+  - CHEBI:73237
+  evidence_ids:
+  - R346-OWNER
+  - R346-LOCAL
+- assessment_id: R346-TAXON-SCOPE
+  area: provenance
+  topic: Taxonomic identifiers versus experimental stocks
+  outcome: supported
+  summary: 'Literal retained identifier context: 3469: Papaver somniferum (species);
+    22694: Papaver orientale (species); 33128: Papaver rhoeas (species); 38907: Corydalis
+    ochotensis (species); 38914: Corydalis solida (species); 38929: Corydalis ophiocarpa
+    (species); 215228: Papaver pseudo-orientale (species); 215229: Papaver somniferum
+    subsp. setigerum (subspecies); 1030657: Corydalis heterocarpa var. japonica (varietas);
+    3117443: Papaver fugax (species); 3736021: Papaver oreophilum (species); 3736784:
+    Roemeria carica (species). Papaver and Corydalis species/varietal identifiers
+    retain their exact rank. P. setigerum is an explicit synonym under P. somniferum
+    subsp. setigerum; Corydalis bulbosa is a synonym under C. solida. Other absent-P685
+    routes use exact retained names only. Identifier agreement does not independently
+    establish occurrence, production or stock equivalence.'
+  target_ids:
+  - CHEBI:73237
+  evidence_ids:
+  - R346-OWNER
+  - R346-TAXON-3469
+  - R346-TAXON-22694
+  - R346-TAXON-33128
+  - R346-TAXON-38907
+  - R346-TAXON-38914
+  - R346-TAXON-38929
+  - R346-TAXON-215228
+  - R346-TAXON-215229
+  - R346-TAXON-1030657
+  - R346-TAXON-3117443
+  - R346-TAXON-3736021
+  - R346-TAXON-3736784
+  - R346-Q1074622
+  - R346-Q11067910
+  - R346-Q11178148
+  - R346-Q11296633
+  - R346-Q130201
+  - R346-Q131584
+  - R346-Q149279
+  - R346-Q15352457
+  - R346-Q17813440
+  - R346-Q17814053
+  - R346-Q4275211
+  - R346-Q7132528
+  - R346-Q87600253
+- assessment_id: R346-ORGANISM-IDS
+  area: grounding
+  topic: Literal organism routing
+  outcome: supported
+  summary: '29 exact raw LOTUS routes: 24 literal P685 matches and 5 explicitly qualified
+    P225/current-name or NCBI synonym routes without P685. Identifier correspondence
+    does not validate the cited exact-congener occurrence or experimental stock.'
+  target_ids:
+  - CHEBI:73237
+  evidence_ids:
+  - R346-OWNER
+  - R346-IDENTIFIER-READ
+  - R346-TAXON-3469
+  - R346-TAXON-22694
+  - R346-TAXON-33128
+  - R346-TAXON-38907
+  - R346-TAXON-38914
+  - R346-TAXON-38929
+  - R346-TAXON-215228
+  - R346-TAXON-215229
+  - R346-TAXON-1030657
+  - R346-TAXON-3117443
+  - R346-TAXON-3736021
+  - R346-TAXON-3736784
+  - R346-Q1074622
+  - R346-Q11067910
+  - R346-Q11178148
+  - R346-Q11296633
+  - R346-Q130201
+  - R346-Q131584
+  - R346-Q149279
+  - R346-Q15352457
+  - R346-Q17813440
+  - R346-Q17814053
+  - R346-Q4275211
+  - R346-Q7132528
+  - R346-Q87600253
+- assessment_id: R346-IMODULON-SCOPE
+  area: completeness
+  topic: Native producer transcriptomic applicability
+  outcome: not_applicable
+  summary: The retained complete catalogue contains 20 organisms and 28 datasets.
+    No exact emitted native producer or named-stock match is established. No matrix,
+    gene membership, compound or module association was inspected.
+  target_ids:
+  - CHEBI:73237
+  evidence_ids:
+  - R346-OWNER
+  - R346-IMODULON
+- assessment_id: R346-ASSAY-SCOPE
+  area: scope
+  topic: Functional or phenotypic activity and deposited sample applicability
+  outcome: supported
+  summary: Twenty-five written observations across nineteen AIDs retain functional
+    CYP activity, PXR reporter and phenotype/viability endpoints, explicit inconclusive
+    calls and source Potency values. Five deposited sample IDs are represented; paired
+    blank/protein metadata and the two DNA-content samples remain distinct. The prior
+    root audit inspected the selected deposited endpoints and protocol meanings; it
+    is not a complete audit of all144 raw rows or an inference of direct binding,
+    selectivity or physical-lot stereochemistry.
+  target_ids:
+  - CHEBI:73237
+  evidence_ids:
+  - R346-OWNER
+  - R346-PUBCHEM-PREP
+  - R346-ASSAY-ROOT-READ
+  - R346-ASSAY-PROTOCOL-READ
+- assessment_id: R346-ASSAY-INVENTORY
+  area: scope
+  topic: Retained assay rows versus no-data sentinel
+  outcome: supported
+  summary: There are 144 exact-key retained rows, 25 written observations and 0 no-data
+    sentinel. A no-data sentinel is not an assay or evidence of biological inactivity.
+  target_ids:
+  - CHEBI:73237
+  evidence_ids:
+  - R346-OWNER
+  - R346-PUBCHEM-PREP
+- assessment_id: S346-A-LOCAL
+  area: provenance
+  topic: owner/history and seven raw source sets
+  outcome: supported
+  summary: Complete current owner/history and all seven exact raw joins match the
+    preserved source inventory. Source reproduction and experimental applicability
+    are assessed separately.
+  target_ids:
+  - CHEBI:73237
+  evidence_ids:
+  - S346-E-INVENTORY
+  - S346-E-GUARDS
+  - S346-E-CURRENT-BINDING
+- assessment_id: S346-A-YEAST-SDR1
+  area: evidence
+  topic: biosynthetic_pathway; causal_graphs; PsSDR1 evidence
+  outcome: supported
+  summary: The existing pathway and graph explicitly qualify the late PsSDR1 conversion
+    in engineered yeast. Original2016 evidence supports that setting. Purified PsMT2/PsMT3
+    experiments and the separate2014 NOS/native-silencing results are not transferred
+    to an exact2012 SDR1 construct or universal native reaction order.
+  target_ids:
+  - CHEBI:73237
+  evidence_ids:
+  - S346-E-NOS16
+  - S346-E-NOS16-FIG1
+  - S346-E-NOS14-ABSTRACT
+  - S346-E-BGC-PEER
+  - S346-E-PRIMARY-ROOT
+- assessment_id: S346-A-NATIVE-PROTEIN
+  area: grounding
+  topic: native I3PLR3 / JQ659007.1 / AFB74619.1
+  outcome: supported
+  summary: The independently checked native joined-CDS, GenPept and reviewed UniProt
+    sequences agree at348 residues. Native accession equality does not prove recombinant
+    tag, construct or sample equivalence. Reviewed function/crosslinks remain positive
+    despite the separately retained Rhea access limit.
+  target_ids:
+  - CHEBI:73237
+  evidence_ids:
+  - S346-E-NOS-UP
+  - S346-E-NOS-GB
+  - S346-E-NOS-GP
+  - S346-E-NOS-SEQ
+  - S346-E-NOS-SEQ-PEER
+- assessment_id: S346-A-SOURCE-CITATION
+  area: provenance
+  topic: biosynthetic_gene_clusters[0]; producer_organisms
+  outcome: supported
+  summary: The2011 imported citation is explicitly disclosed as COMPOUND_BIOACTIVITY.
+    It accompanies conservative empty-method grades and is not an asserted biosynthetic
+    intervention. Plant producer and other occurrence statements retain their own
+    source scopes.
+  target_ids:
+  - CHEBI:73237
+  evidence_ids:
+  - S346-E-NOS11
+  - S346-E-METHODS
+  - S346-E-GUARDS
+- assessment_id: S346-A-ACTIVITIES
+  area: evidence
+  topic: bioassays and target annotations
+  outcome: supported
+  summary: The independent root audit traced all25 emitted activity rows, deposited
+    sample identities and protocol contexts. Functional/cellular activity supports
+    only the stated assay interpretation, not direct binding or selectivity. This
+    plan reuses that exact bounded audit.
+  target_ids:
+  - CHEBI:73237
+  evidence_ids:
+  - S346-E-ASSAY-ROOT
+  - S346-E-SELECTED-ROOT
+- assessment_id: S346-A-REMAINING-SOURCES
+  area: completeness
+  topic: original2012 source and older occurrence citations
+  outcome: unknown
+  summary: The complete2012 original and exact applicability of the29 raw LOTUS citations
+    remain incompletely inspected. Inventory or abstract agreement does not close
+    those required source checks.
+  target_ids:
+  - CHEBI:73237
+  evidence_ids:
+  - S346-E-OCCURRENCES
+  - S346-E-SOURCE-READ
+  - S346-E-CONTEXT
+- assessment_id: C346-A-IDENTITY
+  area: identity
+  topic: Stored representation and source-concept provenance
+  outcome: supported
+  summary: The complete source row BGC0001325:1 and source-concept hash reproduce
+    this stored representation; this does not establish that the upstream compound
+    label is correct. Formula, charge, Standard and fixed-H distinctions are independently
+    recorded. Primary support and any conflicting exact xref are assessed separately.
+  target_ids:
+  - CHEBI:73237
+  evidence_ids:
+  - C346-OWNER
+  - C346-GRAPH
+  - C346-COMPARISON
+  dimensions:
+  - name: mibig_source_selector
+    value: BGC0001325:1
+    definition: Accession plus compound_index, distinct from the entry-level accession.
+    evidence_ids:
+    - C346-OWNER
+  - name: complete_raw_row_sha256
+    value: 70857fb8305d39fbeb492a340a1dd74eb4294d87c46c6736389ae59593357930
+    definition: Sorted compact ASCII JSON of every parsed TSV field, including empty
+      values.
+    evidence_ids:
+    - C346-OWNER
+- assessment_id: C346-A-GROUNDING
+  area: provenance
+  topic: Exact authority eligibility and source representation
+  outcome: supported
+  summary: Exactly one committed three-star default ChEBI row matches; its current
+    graph is checked separately.
+  target_ids:
+  - CHEBI:73237
+  evidence_ids:
+  - C346-OWNER
+  - C346-COMPARISON
+  - C346-AUTHORITY-COMPARISON
+  - C346-LOCAL-SEARCH
+  - C346-CHEBI-SEARCH-1
+- assessment_id: C346-A-XREF
+  area: representation
+  topic: Exact literal chemical identifier scope
+  outcome: supported
+  summary: 'Measured exact-literal comparisons: [{"comparison": {"same_charge": true,
+    "same_fixed_h": true, "same_formula": true, "same_full_standard_key": true, "same_standard_inchi":
+    true, "same_stereo_removed_standard": true}, "identifier": "pubchem:275196", "returned_identifier":
+    "pubchem:275196", "scope": "Exact retained authority response; default strings,
+    fixed-H and stereo precision remain separate"}, {"comparison": {"same_charge":
+    true, "same_fixed_h": true, "same_formula": true, "same_full_standard_key": true,
+    "same_standard_inchi": true, "same_stereo_removed_standard": true}, "identifier":
+    "CHEBI:73237", "returned_identifier": "CHEBI:73237", "scope": "Exact retained
+    authority response; default strings, fixed-H and stereo precision remain separate"}].
+    Literal source identifiers retain their exact spelling. Standard identity does
+    not erase fixed-H or stereo differences; no authority graph is automatically adopted.'
+  target_ids:
+  - CHEBI:73237
+  evidence_ids:
+  - C346-NOS16-FIG1
+  - C346-SOURCE-LIMITS
+  - C346-PRIMARY-COMPARISON-1
+  - C346-SAMPLE-COMPARISON-1
+  - C346-IDENTITY-CONSUMER
+  - C346-OWNER
+  - C346-GRAPH
+  - C346-COMPARISON
+  - C346-AUTHORITY-COMPARISON
+  - C346-AUTHORITY-DETAIL
+  - C346-AUTH-1
+  - C346-AUTH-2
+  - C346-AUTH-3
+  - C346-AUTH-4
+- assessment_id: C346-A-ELIGIBILITY
+  area: grounding
+  topic: ChEBI full-key eligibility and literal serialization
+  outcome: supported
+  summary: '[{"eligible": true, "id": 73237, "literal_default_comparison": {"same_charge":
+    true, "same_fixed_h": true, "same_formula": true, "same_full_standard_key": true,
+    "same_standard_inchi": true, "same_stereo_removed_standard": true}, "literal_default_parse":
+    true, "mol_comparison": {"same_charge": true, "same_fixed_h": true, "same_formula":
+    true, "same_full_standard_key": true, "same_standard_inchi": true, "same_stereo_removed_standard":
+    true}, "name": "(\u2212)-noscapine", "stars": 3}]. Current supplied three-star
+    MOL/full-key eligibility is positive for CHEBI:73237. The committed projection
+    has exact ChEBI row(s); current payloads are independently compared. Eligibility
+    is not primary experimental identity proof. Supplied MOL, literal default SMILES
+    and tool reconstruction from stated Standard InChI are separate channels; malformed
+    literal defaults remain unrepaired.'
+  target_ids:
+  - CHEBI:73237
+  evidence_ids:
+  - C346-NOS16-FIG1
+  - C346-SOURCE-LIMITS
+  - C346-PRIMARY-COMPARISON-1
+  - C346-SAMPLE-COMPARISON-1
+  - C346-IDENTITY-CONSUMER
+  - C346-OWNER
+  - C346-GRAPH
+  - C346-COMPARISON
+  - C346-AUTHORITY-COMPARISON
+  - C346-AUTHORITY-DETAIL
+  - C346-AUTH-1
+  - C346-AUTH-2
+  - C346-AUTH-3
+  - C346-AUTH-4
+  - C346-CHEBI-SEARCH-1
+- assessment_id: C346-A-PRIMARY-SCOPE
+  area: scope
+  topic: Primary identity and experimental precision
+  outcome: unknown
+  summary: Exact current BGC0001325:1 version3, literal CID275196 and owner identifier
+    CHEBI73237 reproduce the retained C22H23NO7 (minus)-noscapine R/S graph. CHEBI73237
+    is three-star and supports the exact MOL/full-key join. All five actually deposited
+    SIDs855860,49645498,90341457,144203964 and170465539 independently decode from
+    their atom/bond and directed2D stereo annotations to that same Standard/fixed-H
+    graph. Original2016 Figure1 exact noscapine1 instead explicitly hashes only the
+    tetrahydroisoquinoline-junction H and leaves the phthalide centre plain. Its bounded
+    drawing model is T1R/L3? and equals the owner after only the phthalide tag is
+    removed.
+  target_ids:
+  - CHEBI:73237
+  evidence_ids:
+  - C346-NOS16-FIG1
+  - C346-SOURCE-LIMITS
+  - C346-PRIMARY-COMPARISON-1
+  - C346-SAMPLE-COMPARISON-1
+  - C346-IDENTITY-CONSUMER
+  - C346-OWNER
+  - C346-GRAPH
+  - C346-COMPARISON
+  - C346-AUTHORITY-COMPARISON
+  - C346-AUTHORITY-DETAIL
+  - C346-AUTH-1
+  - C346-AUTH-2
+  - C346-AUTH-3
+  - C346-AUTH-4
+findings: []
+actions: []
+limitations:
+- Context establishes exact owner/history/source inventory, literal identifier routing
+  and computed classification. Primary production, congener identity, stock applicability,
+  protein/graph and method claims retain their separate scientific scope. Molecular-target
+  measurements remain distinct from PubChem bioactivity rows.
+- Biological/source applicability is separate from chemical identity, tautomer and
+  absolute-hand adjudication. Overall review completion also depends on independently
+  reviewed chemical and context evidence.
+- The separate2014 NOS result is not accession or construct equality solely from matching
+  function.
+- Original2016 selected Results/Methods and captions were read within the frozen scope;
+  full Methods43/SI and new physical-sample or natural-hand proof are not claimed.
+- Authority matches establish the representations actually returned at their retained
+  access times; they are not independent experimental structure or absolute-hand determinations.
+  Organism, locus, classification and history claims are assessed separately.
+- The one-centre source drawing is not an independent absolute-hand protocol for both
+  centres and does not prove the additional owner assignment wrong. Neighboring precursor
+  wedges are not transferred. Deposited SID representation equality does not establish
+  physical assay sample purity, stereoisomer composition, source batch or target binding.
+  Root protocol/result and biological endpoint reviews remain separate. No change
+  to exact assay ownership is selected solely from the difference between a less specified
+  paper drawing and a more specified deposited graph.
+- This is a baseline network failure, not a completed individual-review validation
+  attempt; campaign failure streak remains unchanged.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint
+  and before downstream tests. Its actual exit1/log/input capture/root observation
+  remain pinned; the selected successful canonical QC attempt002 is separately timed.
+  No individual-review validation failure or counter reset is claimed.
+- Successful configured adapter checks do not certify unadapted identifiers or refresh
+  every cached authority.
+- The four test skips and two deprecation warnings remain in the exact pinned QC log.
+- Reproduction retains5 unresolved target assay organisms,42 withheld producer claims
+  and161 taxon ID rewrites; these are not newly verified scientific assertions.
+- Native baseline gates establish configured consistency, not independent biological
+  production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions
+  and no-adapter pairs; a successful command does not convert these into verified
+  scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command
+  execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population
+  was checked; external caches and generated bytecode are not asserted to be independently
+  byte-pinned.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+- Scientific conclusions integrate the chemical, biological and provenance assessments;
+  source access and unresolved scopes remain explicit.
+tags:
+- path-order-campaign
+- batch-035
+```
