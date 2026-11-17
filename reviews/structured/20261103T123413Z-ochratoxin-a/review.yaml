@@ -1,0 +1,1299 @@
+schema_version: 1.0.0
+review_id: 20261103T123413Z-ochratoxin-a
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'Local evidence review: ochratoxin A'
+started_at: '2026-11-03T12:06:20.552412Z'
+finished_at: '2026-11-03T12:34:13.263734Z'
+reviewer:
+  identity: Codex root with native_checks, bgc_science and review_support peer agents
+  kind: agent
+  independence: independent
+  independence_basis: This review team inspected existing owner and retained source
+    bytes without editing them; scientific fragments were cross-checked separately
+    from their author. Local validation is not treated as scientific proof.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: Ochratoxin A retains matching standardized identifiers with an explicit amide/imidic-acid
+  representation difference. A VP16 transcription counterscreen is overtyped as an
+  enzyme inhibitor; the narrow correction preserves all measured fields and other
+  supported source claims. The review remains partial.
+source:
+  git_revision: ce6a5498df5be51116bd5e0c119023ee62bb5464
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: AGENTS.md
+    sha256: 69e4037f8dc97d4b00bb7bb83b41ceca025f6ef578d5c0bf8086f3400becde0b
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: curation/pubchem_bioassay_exclusions.tsv
+    sha256: 76f9cbb17e62a270afed637b5058a553cfe85c754c6c9ec406635f12dae572fa
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/shikimates_and_phenylpropanoids/ochratoxin-a.yaml
+    sha256: 64fd088b875e692c1f77888fe0d0bff413ec9357f8f2f57df19e379db31276f7
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/bioassay_exclusions.py
+    sha256: 4a4176e072ac9759aa8a9e88300d7e2de5aaf4ebf30b5c42fcf4c9c0b6cebbb4
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete NaturalProductRecord, including all present scientific
+    claims, history and declared mechanisms; external verification remains unavailable.
+  selection: Campaign path order 2215; one of the next ten uncovered paths selected
+    from the 3116-record corpus. Membership uses the canonical validated catalogue
+    plus retained committed campaign bundles.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CHEBI:7719
+targets:
+- target_id: CHEBI:7719
+  path: data/natural_products/shikimates_and_phenylpropanoids/ochratoxin-a.yaml
+  label: ochratoxin A
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained harmonization generator; seeded fields are corrected through
+      maintained inputs and validated regeneration.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Retained MIBiG structure, producer and compound-specific locus assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/npclassifier.tsv
+    role: Pinned computed classification and filing assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Maintained extraction of MIBiG compound names, structures, stereochemistry
+      flags and source provenance.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: Retained ChEBI identifiers, definitions and exact chemical forms.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Retained cited occurrence assertions, distinct from demonstrated production.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/pubchem_bioassay.tsv
+    role: Retained assay rows or empty-assay sentinels; source outcome and title alone
+      do not establish mechanism.
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/pubchem_bioassay_exclusions.tsv
+    role: Exact assay identity exclusion decisions for selected/direct source context.
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/bioassay_exclusions.py
+    role: Maintained source-row identity/digest guard; text-only dependency.
+  ownership_note: This review proposes no record edit. Source corrections belong in
+    maintained inventories, implemented curation tables, extractors or the seeder;
+    generated pages are not owners.
+checks:
+- check_id: root-native-strict_ten
+  name: strict_ten
+  status: passed
+  required: true
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  target_ids:
+  - CHEBI:7719
+  command: just validate-strict data/natural_products/shikimates_and_phenylpropanoids/naringenin.yaml
+    data/natural_products/shikimates_and_phenylpropanoids/neoenterocin-a.yaml data/natural_products/shikimates_and_phenylpropanoids/neoenterocin-b.yaml
+    data/natural_products/shikimates_and_phenylpropanoids/o-orsellinic-acid.yaml data/natural_products/shikimates_and_phenylpropanoids/ochratoxin-a.yaml
+    data/natural_products/shikimates_and_phenylpropanoids/paerucumarin.yaml data/natural_products/shikimates_and_phenylpropanoids/pentabromopseudilin.yaml
+    data/natural_products/shikimates_and_phenylpropanoids/phenguignardic-acid.yaml
+    data/natural_products/shikimates_and_phenylpropanoids/prenylhydroquinone.yaml
+    data/natural_products/shikimates_and_phenylpropanoids/s2502.yaml --workers 1 --out
+    /private/tmp/npm-native-checks/batch-222/validate-strict-selected10-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_ten
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-strict_full
+  name: strict_full
+  status: passed
+  required: true
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  target_ids:
+  - CHEBI:7719
+  command: just validate-all --workers 1 --out /private/tmp/npm-native-checks/batch-222/validate-all-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_full
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-lockfile
+  name: lockfile
+  status: passed
+  required: true
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  target_ids:
+  - CHEBI:7719
+  command: just verify-corpus --summary
+  exit_code: 0
+  evidence_ids:
+  - root-native-lockfile
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-reproduction
+  name: reproduction
+  status: passed
+  required: true
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  target_ids:
+  - CHEBI:7719
+  command: just verify-reproduction
+  exit_code: 0
+  evidence_ids:
+  - root-native-reproduction
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-queue
+  name: queue
+  status: passed
+  required: true
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  target_ids:
+  - CHEBI:7719
+  command: just review-queue --tsv /private/tmp/npm-native-checks/batch-222/review-queue-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-queue
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-full-qc
+  name: Full just qc
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:7719
+  summary: 'Not run under the external-request prohibition: the complete recipe includes
+    upstream vendored synchronization. The five executed local checks are recorded
+    separately.'
+- check_id: root-ontology-authorities
+  name: Complete OAK identifier/label authority check
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:7719
+  summary: Complete offline ontology authority coverage was not established for this
+    run; no ontology retrieval or remote resolution was attempted. Retained taxonomy
+    evidence has only its explicitly stated local scope.
+- check_id: root-primary-and-live-sources
+  name: Primary literature and current structured database/identifier verification
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:7719
+  summary: All external requests are prohibited by the user. Fresh database and identifier
+    verification and complete primary-literature coverage are unavailable. Any retained
+    original literature actually inspected is recorded separately with its historical
+    scope.
+evidence:
+- evidence_id: bgc-2215-owner
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/shikimates_and_phenylpropanoids/ochratoxin-a.yaml
+  locator: Whole owner plaintext and complete curation_history
+  accessed_at: '2026-11-03T12:24:37.669560Z'
+  support: supports
+  summary: Complete owner plaintext and its full append-only curation history, read
+    from this exact saved raw file.
+  snapshot_sha256: 64fd088b875e692c1f77888fe0d0bff413ec9357f8f2f57df19e379db31276f7
+- evidence_id: bgc-2215-capture
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch222/owner-capture-DATA-001.json
+  locator: /records/4/owner_pin; /records/4/owner_document
+  accessed_at: '2026-11-03T12:24:37.669560Z'
+  support: supports
+  summary: Complete captured owner for order 2215, with all native source fields,
+    mechanism roots and history preserved.
+  snapshot_sha256: 8f3c7faa3c074d96294074f49d3ea758f9a532414e66fe32d6ef2af428173134
+- evidence_id: bgc-2215-intake
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch222/intakes/2215-inspect-001.json
+  locator: /source; /targets
+  accessed_at: '2026-11-03T12:24:37.669560Z'
+  support: supports
+  summary: Actual canonical intake source identity and complete ordered input/target
+    scope.
+  snapshot_sha256: 52e66d7a0f4bb6f19fdba57ae0ab9cdbf874c532498fd6fee10b83c23a7f1732
+- evidence_id: bgc-2215-intake-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch222/root-intake-ready-001.json
+  locator: /status
+  accessed_at: '2026-11-03T12:24:37.669560Z'
+  support: supports
+  summary: ROOT acceptance of the original ten canonical intakes; no replay.
+  snapshot_sha256: ffb4558e78e080f45baf4ccb369e72778c7e34de1c5b2fea82d2433818ea225a
+- evidence_id: bgc-2215-grounding-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch222/owner-capture-DATA-001.json
+  locator: /records/4/owner_document/chemical_structure; /records/4/owner_document/source_concepts;
+    /records/4/owner_document/grounding_status; /records/4/owner_document/definition;
+    /records/4/owner_document/definition_source
+  accessed_at: '2026-11-03T12:24:37.669560Z'
+  support: supports
+  summary: Written structure, source concepts and grounding status; no external identity
+    refresh.
+  snapshot_sha256: 8f3c7faa3c074d96294074f49d3ea758f9a532414e66fe32d6ef2af428173134
+- evidence_id: bgc-2215-origin-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch222/owner-capture-DATA-001.json
+  locator: /records/4/owner_document/producer_organisms; /records/4/owner_document/biosynthetic_gene_clusters
+  accessed_at: '2026-11-03T12:24:37.669560Z'
+  support: supports
+  summary: Complete written producer and locus claims, including versions, evidence
+    methods, grades and citation roles.
+  snapshot_sha256: 8f3c7faa3c074d96294074f49d3ea758f9a532414e66fe32d6ef2af428173134
+- evidence_id: bgc-2215-occurrence-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch222/owner-capture-DATA-001.json
+  locator: /records/4/owner_document/occurrences
+  accessed_at: '2026-11-03T12:24:37.669560Z'
+  support: supports
+  summary: Complete written occurrences and their source labels, citations and scope
+    notes.
+  snapshot_sha256: 8f3c7faa3c074d96294074f49d3ea758f9a532414e66fe32d6ef2af428173134
+- evidence_id: bgc-2215-assay-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch222/owner-capture-DATA-001.json
+  locator: /records/4/owner_document
+  accessed_at: '2026-11-03T12:24:37.669560Z'
+  support: supports
+  summary: Complete captured owner supports its written assay, target, summary and
+    mechanism fields or their absence; this evidence does not assert omitted source-query
+    content.
+  snapshot_sha256: 8f3c7faa3c074d96294074f49d3ea758f9a532414e66fe32d6ef2af428173134
+- evidence_id: bgc-2215-classification-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch222/owner-capture-DATA-001.json
+  locator: /records/4/owner_document/np_classification; /records/4/owner_document/bgc_class
+  accessed_at: '2026-11-03T12:24:37.669560Z'
+  support: supports
+  summary: Written named-model prediction and source BGC classes, retained as separate
+    axes.
+  snapshot_sha256: 8f3c7faa3c074d96294074f49d3ea758f9a532414e66fe32d6ef2af428173134
+- evidence_id: bgc-2215-source-plan
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch222-tentative/bgc-prep/bgc-conditional222-target-input-plan-001.json
+  locator: /records/4
+  accessed_at: '2026-11-03T12:24:37.669560Z'
+  support: supports
+  summary: Complete selected source context, direct companion paths and exact proposed
+    map, later joined to actual intake.
+  snapshot_sha256: 9bb9f8fa7c09f7684412974e84449711c4ea7bb3180d6243703e8dc935f89d9a
+- evidence_id: bgc-2215-source-notes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch222-tentative/bgc-prep/bgc-conditional222-source-scope-notes-001.json
+  locator: /reading; /cautions; /curation
+  accessed_at: '2026-11-03T12:24:37.669560Z'
+  support: supports
+  summary: Whole source-reading attribution, precise direct-context limits and bounded
+    eight-table curation scan; complementary reading is explicitly attributed.
+  snapshot_sha256: 462e1f8450cc46b50f7e764c6be3a6fec2300b65d200898c74a5e562934ad86e
+- evidence_id: bgc-2215-plan-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch222/root-target-input-plan-acceptance-001.json
+  locator: /status; /plan; /inventory; /source_notes; /per_order
+  accessed_at: '2026-11-03T12:24:37.669560Z'
+  support: supports
+  summary: ROOT accepted original input plan and retained inventory/notes provenance
+    with exact per-order counts.
+  snapshot_sha256: 87cb8226f49b19e0cf589a83c45de342083de01cee4ee071fdbbf31209fdc719
+- evidence_id: bgc-2215-chemistry
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch222/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/4/declared_structure; /records/4/comparisons; /records/4/smiles;
+    /records/4/inchi; /records/4/atom_correspondence
+  accessed_at: '2026-11-03T12:24:37.669560Z'
+  support: supports
+  summary: Both complete saved molecular profiles, all atom/bond/stereo/motif fields
+    and literal comparison/mapping results; no new molecular parse.
+  snapshot_sha256: d6777b269b79f346e064435d16f6783b96b6dc0d84d181802a8be587185ebc61
+- evidence_id: bgc-2215-topology
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch222/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/4/smiles/computed/atoms; /records/4/smiles/computed/bonds; /records/4/smiles/computed/rings;
+    /records/4/smiles/computed/motifs; /records/4/smiles/computed/potential_stereo;
+    /records/4/smiles/computed/stereo_counts; /records/4/inchi/computed/atoms; /records/4/inchi/computed/bonds;
+    /records/4/inchi/computed/rings; /records/4/inchi/computed/motifs; /records/4/inchi/computed/potential_stereo;
+    /records/4/inchi/computed/stereo_counts; /records/4/atom_correspondence; /records/4/declared_structure
+  accessed_at: '2026-11-03T12:24:37.669560Z'
+  support: supports
+  summary: Complete indexed local topology and stereochemistry in both saved forms.
+    Motifs are bounded structural patterns, not residue, natural-identity or experimental
+    assignments.
+  snapshot_sha256: d6777b269b79f346e064435d16f6783b96b6dc0d84d181802a8be587185ebc61
+- evidence_id: bgc-2215-diagnostic-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch222/root-chemistry-acceptance-001.json
+  locator: /status; /DATA; /execution; /false_comparisons; /warning_scope
+  accessed_at: '2026-11-03T12:24:37.669560Z'
+  support: supports
+  summary: ROOT accepted the original twenty-form diagnostic; four global warnings
+    are unassigned and no scientific identity verdict is implied.
+  snapshot_sha256: ed41c7b477fc10da9308cd55cfe70fe0b682312dec7fc5d153d824d02ad41ad8
+- evidence_id: bgc-2215-native-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch222/root-native-gates-acceptance-001.json
+  locator: /status; /local_commands_passed; /selected_queue_rows; /unavailable_required_gates
+  accessed_at: '2026-11-03T12:24:37.669560Z'
+  support: supports
+  summary: Five original local gates passed. Selected queue flags retain their literal
+    scope; full QC and OAK remain unavailable.
+  snapshot_sha256: c2001fae878fca8947ab9a9a883c8f4c8bb09101fd0bed77c7e7c90c4d87f9a7
+- evidence_id: bgc-2215-query-mibig_compounds
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch222-tentative/bgc-prep/bgc-conditional222-target-input-plan-001.json
+  locator: /records/4/source_scope_inventory/joins/mibig_compounds
+  accessed_at: '2026-11-03T12:24:37.669560Z'
+  support: supports
+  summary: Complete saved query frame with 7 positive placements. Exact saved predicate
+    exact complete standard_inchi_key equality with query "RWQKHEORZBHNRI-BMIGLBTASA-N"
+    against the pinned mibig_compounds table; no query replay or external lookup.
+  snapshot_sha256: 9bb9f8fa7c09f7684412974e84449711c4ea7bb3180d6243703e8dc935f89d9a
+  search_scope: Exact saved predicate exact complete standard_inchi_key equality with
+    query "RWQKHEORZBHNRI-BMIGLBTASA-N" against the pinned mibig_compounds table;
+    no query replay or external lookup.
+- evidence_id: bgc-2215-source-mibig_compounds
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv
+  locator: Physical TSV lines 1171, 3308, 3312, 3313, 3314, 3315, 3316
+  accessed_at: '2026-11-03T12:24:37.669560Z'
+  support: supports
+  summary: 'Complete retained fields, including blanks, and exact physical-frame hashes:
+    [{"physical_line":1171,"row_sha256":"2f1515710d047687e9fa324c750ad8fc07e3e997ec4721c741a76c367dc72af0","row":{"mibig_accession":"BGC0001030","entry_version":"3","entry_status":"active","entry_quality":"questionable","entry_completeness":"unknown","compound_name":"ochratoxin
+    A","compound_index":"1","smiles":"[H][C@@](CC1=CC=CC=C1)(NC(=O)C1=C(O)C2=C(C[C@@]([H])(C)OC2=O)C(Cl)=C1)C(O)=O","standard_inchi":"InChI=1S/C20H18ClNO6/c1-10-7-12-14(21)9-13(17(23)16(12)20(27)28-10)18(24)22-15(19(25)26)8-11-5-3-2-4-6-11/h2-6,9-10,15,23H,7-8H2,1H3,(H,22,24)(H,25,26)/t10-,15+/m1/s1","standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","stereo_complete":"true","compound_classes":"","database_ids":"pubchem:442530|npatlas:NPA016066","taxon_id":"NCBITaxon:229535","taxon_label":"Penicillium
+    nordicum","bgc_classes":"NRPS|PKS","bgc_subclasses":"Type I|Unknown","genome_accession":"MG701895.1","locus_from":"","locus_to":"","locus_evidence_methods":"","producer_evidence_basis":"SOURCE_ASSERTION","cluster_link_evidence_basis":"CLUSTER_UNSTATED","primary_reference":"DOI:10.1016/j.fct.2015.11.018","reference_basis":"COMPOUND_BIOACTIVITY"}},{"physical_line":3308,"row_sha256":"ca636e447130d0c1a9689ab24bb0866f248e9dbd25a7a6931f33819e4b16bb36","row":{"mibig_accession":"BGC0002598","entry_version":"2","entry_status":"active","entry_quality":"questionable","entry_completeness":"unknown","compound_name":"ochratoxin
+    A","compound_index":"1","smiles":"C[C@@H]1CC2=C(C=C(C(=C2C(=O)O1)O)C(=O)N[C@@H](CC3=CC=CC=C3)C(=O)O)Cl","standard_inchi":"InChI=1S/C20H18ClNO6/c1-10-7-12-14(21)9-13(17(23)16(12)20(27)28-10)18(24)22-15(19(25)26)8-11-5-3-2-4-6-11/h2-6,9-10,15,23H,7-8H2,1H3,(H,22,24)(H,25,26)/t10-,15+/m1/s1","standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","stereo_complete":"true","compound_classes":"","database_ids":"npatlas:NPA016066","taxon_id":"NCBITaxon:357447","taxon_label":"Aspergillus
+    westerdijkiae","bgc_classes":"PKS","bgc_subclasses":"Unknown","genome_accession":"MW526246.1","locus_from":"1","locus_to":"27735","locus_evidence_methods":"","producer_evidence_basis":"SOURCE_ASSERTION","cluster_link_evidence_basis":"CLUSTER_UNSTATED","primary_reference":"PMID:33652337","reference_basis":"ENTRY"}},{"physical_line":3312,"row_sha256":"9ea053e8afb47636c965b0b47ac5676e79751fd403aff35f764bb7699d1d167e","row":{"mibig_accession":"BGC0002605","entry_version":"2","entry_status":"active","entry_quality":"questionable","entry_completeness":"unknown","compound_name":"ochratoxin
+    A","compound_index":"1","smiles":"C[C@@H]1CC2=C(C=C(C(=C2C(=O)O1)O)C(=O)N[C@@H](CC3=CC=CC=C3)C(=O)O)Cl","standard_inchi":"InChI=1S/C20H18ClNO6/c1-10-7-12-14(21)9-13(17(23)16(12)20(27)28-10)18(24)22-15(19(25)26)8-11-5-3-2-4-6-11/h2-6,9-10,15,23H,7-8H2,1H3,(H,22,24)(H,25,26)/t10-,15+/m1/s1","standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","stereo_complete":"true","compound_classes":"","database_ids":"npatlas:NPA016066","taxon_id":"NCBITaxon:40993","taxon_label":"Aspergillus
+    carbonarius","bgc_classes":"NRPS|PKS","bgc_subclasses":"Type I|Unknown","genome_accession":"MG701890.1","locus_from":"1","locus_to":"21508","locus_evidence_methods":"","producer_evidence_basis":"SOURCE_ASSERTION","cluster_link_evidence_basis":"CLUSTER_UNSTATED","primary_reference":"PMID:29324288","reference_basis":"ENTRY"}},{"physical_line":3313,"row_sha256":"c84d5a88355d570c5566220266b6c6707fceb22ceff6797f874fc13eee7c59a0","row":{"mibig_accession":"BGC0002606","entry_version":"2","entry_status":"active","entry_quality":"questionable","entry_completeness":"unknown","compound_name":"ochratoxin
+    A","compound_index":"1","smiles":"C[C@@H]1CC2=C(C=C(C(=C2C(=O)O1)O)C(=O)N[C@@H](CC3=CC=CC=C3)C(=O)O)Cl","standard_inchi":"InChI=1S/C20H18ClNO6/c1-10-7-12-14(21)9-13(17(23)16(12)20(27)28-10)18(24)22-15(19(25)26)8-11-5-3-2-4-6-11/h2-6,9-10,15,23H,7-8H2,1H3,(H,22,24)(H,25,26)/t10-,15+/m1/s1","standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","stereo_complete":"true","compound_classes":"","database_ids":"npatlas:NPA016066","taxon_id":"NCBITaxon:5061","taxon_label":"Aspergillus
+    niger","bgc_classes":"NRPS|PKS","bgc_subclasses":"Type I|Unknown","genome_accession":"MG701892.1","locus_from":"1","locus_to":"21662","locus_evidence_methods":"","producer_evidence_basis":"SOURCE_ASSERTION","cluster_link_evidence_basis":"CLUSTER_UNSTATED","primary_reference":"PMID:29324288","reference_basis":"ENTRY"}},{"physical_line":3314,"row_sha256":"1d859ef7e898a5292d7f0b786968cd9513988bccdccdfce03494e22e050820ea","row":{"mibig_accession":"BGC0002607","entry_version":"2","entry_status":"active","entry_quality":"questionable","entry_completeness":"unknown","compound_name":"ochratoxin
+    A","compound_index":"1","smiles":"C[C@@H]1CC2=C(C=C(C(=C2C(=O)O1)O)C(=O)N[C@@H](CC3=CC=CC=C3)C(=O)O)Cl","standard_inchi":"InChI=1S/C20H18ClNO6/c1-10-7-12-14(21)9-13(17(23)16(12)20(27)28-10)18(24)22-15(19(25)26)8-11-5-3-2-4-6-11/h2-6,9-10,15,23H,7-8H2,1H3,(H,22,24)(H,25,26)/t10-,15+/m1/s1","standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","stereo_complete":"true","compound_classes":"","database_ids":"npatlas:NPA016066","taxon_id":"NCBITaxon:357447","taxon_label":"Aspergillus
+    westerdijkiae","bgc_classes":"NRPS|PKS","bgc_subclasses":"Type I|Unknown","genome_accession":"MG701896.1","locus_from":"1","locus_to":"24204","locus_evidence_methods":"","producer_evidence_basis":"SOURCE_ASSERTION","cluster_link_evidence_basis":"CLUSTER_UNSTATED","primary_reference":"PMID:29324288","reference_basis":"ENTRY"}},{"physical_line":3315,"row_sha256":"66a52bb0788d45bacfa66b8df31589a15bf83956ed02912b2974b4a93409ca57","row":{"mibig_accession":"BGC0002608","entry_version":"2","entry_status":"active","entry_quality":"questionable","entry_completeness":"unknown","compound_name":"ochratoxin
+    A","compound_index":"1","smiles":"C[C@@H]1CC2=C(C=C(C(=C2C(=O)O1)O)C(=O)N[C@@H](CC3=CC=CC=C3)C(=O)O)Cl","standard_inchi":"InChI=1S/C20H18ClNO6/c1-10-7-12-14(21)9-13(17(23)16(12)20(27)28-10)18(24)22-15(19(25)26)8-11-5-3-2-4-6-11/h2-6,9-10,15,23H,7-8H2,1H3,(H,22,24)(H,25,26)/t10-,15+/m1/s1","standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","stereo_complete":"true","compound_classes":"","database_ids":"npatlas:NPA016066","taxon_id":"NCBITaxon:306088","taxon_label":"Aspergillus
+    steynii","bgc_classes":"NRPS|PKS","bgc_subclasses":"Type I|Unknown","genome_accession":"MG701897.1","locus_from":"1","locus_to":"23671","locus_evidence_methods":"","producer_evidence_basis":"SOURCE_ASSERTION","cluster_link_evidence_basis":"CLUSTER_UNSTATED","primary_reference":"PMID:29324288","reference_basis":"ENTRY"}},{"physical_line":3316,"row_sha256":"a8312bce44d35e898c662566d8ea19afb3fcc91bd80e43c901df0b456f9e4608","row":{"mibig_accession":"BGC0002609","entry_version":"2","entry_status":"active","entry_quality":"questionable","entry_completeness":"unknown","compound_name":"ochratoxin
+    A","compound_index":"1","smiles":"C[C@@H]1CC2=C(C=C(C(=C2C(=O)O1)O)C(=O)N[C@@H](CC3=CC=CC=C3)C(=O)O)Cl","standard_inchi":"InChI=1S/C20H18ClNO6/c1-10-7-12-14(21)9-13(17(23)16(12)20(27)28-10)18(24)22-15(19(25)26)8-11-5-3-2-4-6-11/h2-6,9-10,15,23H,7-8H2,1H3,(H,22,24)(H,25,26)/t10-,15+/m1/s1","standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","stereo_complete":"true","compound_classes":"","database_ids":"npatlas:NPA016066","taxon_id":"NCBITaxon:1341132","taxon_label":"Aspergillus
+    welwitschiae","bgc_classes":"NRPS|PKS","bgc_subclasses":"Type I|Unknown","genome_accession":"KX267735.1","locus_from":"1","locus_to":"18619","locus_evidence_methods":"","producer_evidence_basis":"SOURCE_ASSERTION","cluster_link_evidence_basis":"CLUSTER_UNSTATED","primary_reference":"PMID:27667988","reference_basis":"ENTRY"}}]'
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: bgc-2215-query-chebi_structures
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch222-tentative/bgc-prep/bgc-conditional222-target-input-plan-001.json
+  locator: /records/4/source_scope_inventory/joins/chebi_structures
+  accessed_at: '2026-11-03T12:24:37.669560Z'
+  support: supports
+  summary: Complete saved query frame with 1 positive placements. Exact saved predicate
+    exact complete standard_inchi_key equality with query "RWQKHEORZBHNRI-BMIGLBTASA-N"
+    against the pinned chebi_structures table; no query replay or external lookup.
+  snapshot_sha256: 9bb9f8fa7c09f7684412974e84449711c4ea7bb3180d6243703e8dc935f89d9a
+  search_scope: Exact saved predicate exact complete standard_inchi_key equality with
+    query "RWQKHEORZBHNRI-BMIGLBTASA-N" against the pinned chebi_structures table;
+    no query replay or external lookup.
+- evidence_id: bgc-2215-source-chebi_structures
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/chebi_structures.tsv
+  locator: Physical TSV lines 1528
+  accessed_at: '2026-11-03T12:24:37.669560Z'
+  support: supports
+  summary: 'Complete retained fields, including blanks, and exact physical-frame hashes:
+    [{"physical_line":1528,"row_sha256":"7c58f587cebd5889cbc5034b71035b9937b3dd68a5a2246a78032653866180cf","row":{"chebi_id":"CHEBI:7719","name":"ochratoxin
+    A","definition":"A phenylalanine derivative resulting from the formal condensation
+    of the amino group of L-phenylalanine with the carboxy group of (3R)-5-chloro-8-hydroxy-3-methyl-1-oxo-3,4-dihydro-1H-2-benzopyran-7-carboxylic
+    acid (ochratoxin α). It is among the most widely occurring food-contaminating
+    mycotoxins, produced by Aspergillus ochraceus, Aspergillus carbonarius and Penicillium
+    verrucosum.","stars":"3","standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","smiles":"C[C@@H]1Cc2c(Cl)cc(C(=O)N[C@@H](Cc3ccccc3)C(=O)O)c(O)c2C(=O)O1"}}]'
+  snapshot_sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+- evidence_id: bgc-2215-query-lotus_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch222-tentative/bgc-prep/bgc-conditional222-target-input-plan-001.json
+  locator: /records/4/source_scope_inventory/joins/lotus_occurrences
+  accessed_at: '2026-11-03T12:24:37.669560Z'
+  support: supports
+  summary: Complete saved query frame with 11 positive placements. Exact saved predicate
+    exact complete standard_inchi_key equality with query "RWQKHEORZBHNRI-BMIGLBTASA-N"
+    against the pinned lotus_occurrences table; no query replay or external lookup.
+  snapshot_sha256: 9bb9f8fa7c09f7684412974e84449711c4ea7bb3180d6243703e8dc935f89d9a
+  search_scope: Exact saved predicate exact complete standard_inchi_key equality with
+    query "RWQKHEORZBHNRI-BMIGLBTASA-N" against the pinned lotus_occurrences table;
+    no query replay or external lookup.
+- evidence_id: bgc-2215-source-lotus_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Physical TSV lines 8256, 8257, 8258, 8259, 8260, 8261, 8262, 8263, 8264,
+    8265, 8266
+  accessed_at: '2026-11-03T12:24:37.669560Z'
+  support: supports
+  summary: 'Complete retained fields, including blanks, and exact physical-frame hashes:
+    [{"physical_line":8256,"row_sha256":"af328ea8e597b999ea43c6cffb070f2d8021836504af560631eb3d258265b5d3","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","organism_name":"Aspergillus
+    melleus","taxon_id":"NCBITaxon:138277","organism_wikidata":"http://www.wikidata.org/entity/Q6709715","reference_doi":"10.1007/S10295-003-0048-Y","structure_wikidata":"http://www.wikidata.org/entity/Q1885038"}},{"physical_line":8257,"row_sha256":"50839242b4a9975651b77cb801753c5a18697a041f455f1b1c62a8eac4755586","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","organism_name":"Penicillium
+    nordicum","taxon_id":"NCBITaxon:229535","organism_wikidata":"http://www.wikidata.org/entity/Q20721618","reference_doi":"10.1016/J.SYAPM.2005.03.008","structure_wikidata":"http://www.wikidata.org/entity/Q1885038"}},{"physical_line":8258,"row_sha256":"9ff9ff253267f707bfb3e384f2c63cb2ba23bde09530c7d67faaaa0ceca96378","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","organism_name":"Aspergillus
+    westerdijkiae","taxon_id":"NCBITaxon:357447","organism_wikidata":"http://www.wikidata.org/entity/Q60520505","reference_doi":"10.1016/J.IJFOODMICRO.2021.109113","structure_wikidata":"http://www.wikidata.org/entity/Q1885038"}},{"physical_line":8259,"row_sha256":"fb300ff9e4ee63448d874a3618cbbe2d24fab3bb5dad045753a1678d54486dd0","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","organism_name":"Aspergillus
+    ochraceus","taxon_id":"NCBITaxon:40380","organism_wikidata":"http://www.wikidata.org/entity/Q4807897","reference_doi":"10.1016/S0031-9422(01)00316-8","structure_wikidata":"http://www.wikidata.org/entity/Q1885038"}},{"physical_line":8260,"row_sha256":"7b11d88b1f9139b800f9f6bb1a0382357e0b3419d6a1d635915df594f5f6f10e","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","organism_name":"Aspergillus
+    ochraceus","taxon_id":"NCBITaxon:40380","organism_wikidata":"http://www.wikidata.org/entity/Q4807897","reference_doi":"10.1038/171524B0","structure_wikidata":"http://www.wikidata.org/entity/Q1885038"}},{"physical_line":8261,"row_sha256":"bafd405a03dda1c50a93148bdbfbd2d37303707fc0de8d1d576a3bfa93af9341","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","organism_name":"Aspergillus
+    ochraceus","taxon_id":"NCBITaxon:40380","organism_wikidata":"http://www.wikidata.org/entity/Q4807897","reference_doi":"10.1039/J39700000278","structure_wikidata":"http://www.wikidata.org/entity/Q1885038"}},{"physical_line":8262,"row_sha256":"99a009f4df25674a0dcbb7f161bc691af2744a9f254b22365906c372f79a3077","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","organism_name":"Aspergillus
+    ochraceus","taxon_id":"NCBITaxon:40380","organism_wikidata":"http://www.wikidata.org/entity/Q4807897","reference_doi":"10.1039/JR9650007083","structure_wikidata":"http://www.wikidata.org/entity/Q1885038"}},{"physical_line":8263,"row_sha256":"255da23c24e233ca42bfc9cfbe4a2256bb0159935bf92ccc4d76260ecf74a8f1","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","organism_name":"Aspergillus
+    niger","taxon_id":"NCBITaxon:5061","organism_wikidata":"http://www.wikidata.org/entity/Q132014","reference_doi":"10.1128/AEM.60.7.2650-2652.1994","structure_wikidata":"http://www.wikidata.org/entity/Q1885038"}},{"physical_line":8264,"row_sha256":"31fc009bec017a07fa473c4164d825b0276418ab69b38ac266f18a4a3ce8bcbd","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","organism_name":"Aspergillus
+    niger","taxon_id":"NCBITaxon:5061","organism_wikidata":"http://www.wikidata.org/entity/Q132014","reference_doi":"10.3389/FMICB.2016.01412","structure_wikidata":"http://www.wikidata.org/entity/Q1885038"}},{"physical_line":8265,"row_sha256":"a9d8df30f22c98c9f4c7e56d28eb7b12932e8aa5f3a2a75da3461e4b8b0f6dfd","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","organism_name":"Penicillium
+    verrucosum","taxon_id":"NCBITaxon:60171","organism_wikidata":"http://www.wikidata.org/entity/Q15020933","reference_doi":"10.1016/S0953-7562(10)80017-6","structure_wikidata":"http://www.wikidata.org/entity/Q1885038"}},{"physical_line":8266,"row_sha256":"0ebaf4fd063a3484ce33c3aeaf71c4cd3f8c897fecdbab400691af5085f53ced","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","organism_name":"Glycyrrhiza
+    uralensis","taxon_id":"NCBITaxon:74613","organism_wikidata":"http://www.wikidata.org/entity/Q1196166","reference_doi":"10.1016/J.FOODCONT.2012.11.028","structure_wikidata":"http://www.wikidata.org/entity/Q1885038"}}]'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: bgc-2215-query-cyanometdb_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch222-tentative/bgc-prep/bgc-conditional222-target-input-plan-001.json
+  locator: /records/4/source_scope_inventory/joins/cyanometdb_occurrences
+  accessed_at: '2026-11-03T12:24:37.669560Z'
+  support: supports
+  summary: Complete saved query frame with 0 positive placements. Exact saved predicate
+    exact complete standard_inchi_key equality with query "RWQKHEORZBHNRI-BMIGLBTASA-N"
+    against the pinned cyanometdb_occurrences table; no query replay or external lookup.
+  snapshot_sha256: 9bb9f8fa7c09f7684412974e84449711c4ea7bb3180d6243703e8dc935f89d9a
+  search_scope: Exact saved predicate exact complete standard_inchi_key equality with
+    query "RWQKHEORZBHNRI-BMIGLBTASA-N" against the pinned cyanometdb_occurrences
+    table; no query replay or external lookup.
+- evidence_id: bgc-2215-query-npclassifier
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch222-tentative/bgc-prep/bgc-conditional222-target-input-plan-001.json
+  locator: /records/4/source_scope_inventory/joins/npclassifier
+  accessed_at: '2026-11-03T12:24:37.669560Z'
+  support: supports
+  summary: Complete saved query frame with 1 positive placements. Exact saved predicate
+    exact complete standard_inchi_key equality with query "RWQKHEORZBHNRI-BMIGLBTASA-N"
+    against the pinned npclassifier table; no query replay or external lookup.
+  snapshot_sha256: 9bb9f8fa7c09f7684412974e84449711c4ea7bb3180d6243703e8dc935f89d9a
+  search_scope: Exact saved predicate exact complete standard_inchi_key equality with
+    query "RWQKHEORZBHNRI-BMIGLBTASA-N" against the pinned npclassifier table; no
+    query replay or external lookup.
+- evidence_id: bgc-2215-source-npclassifier
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv
+  locator: Physical TSV lines 2188
+  accessed_at: '2026-11-03T12:24:37.669560Z'
+  support: supports
+  summary: 'Complete retained fields, including blanks, and exact physical-frame hashes:
+    [{"physical_line":2188,"row_sha256":"c1db0d9745d9abadacb887e3481cfa655f0fd18904072575dde2d4e4169e1d05","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","smiles":"[H][C@@](CC1=CC=CC=C1)(NC(=O)C1=C(O)C2=C(C[C@@]([H])(C)OC2=O)C(Cl)=C1)C(O)=O","pathway_results":"Shikimates
+    and Phenylpropanoids","superclass_results":"Coumarins","class_results":"Isocoumarins","is_glycoside":"false","model_version":"npclassifier.gnps2.org@2026-09-07"}}]'
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: bgc-2215-query-pubchem_bioassay
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch222-tentative/bgc-prep/bgc-conditional222-target-input-plan-001.json
+  locator: /records/4/source_scope_inventory/joins/pubchem_bioassay
+  accessed_at: '2026-11-03T12:24:37.669560Z'
+  support: supports
+  summary: Complete saved query frame with 56 positive placements. Exact saved predicate
+    exact complete standard_inchi_key equality with query "RWQKHEORZBHNRI-BMIGLBTASA-N"
+    against the pinned pubchem_bioassay table; no query replay or external lookup.
+  snapshot_sha256: 9bb9f8fa7c09f7684412974e84449711c4ea7bb3180d6243703e8dc935f89d9a
+  search_scope: Exact saved predicate exact complete standard_inchi_key equality with
+    query "RWQKHEORZBHNRI-BMIGLBTASA-N" against the pinned pubchem_bioassay table;
+    no query replay or external lookup.
+- evidence_id: bgc-2215-source-pubchem_bioassay
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: Physical TSV lines 6775, 6776, 6777, 6778, 6779, 6780, 6781, 6782, 6783,
+    6784, 6785, 6786, 6787, 6788, 6789, 6790, 6791, 6792, 6793, 6794, 6795, 6796,
+    6797, 6798, 6799, 6800, 6801, 6802, 6803, 6804, 6805, 6806, 6807, 6808, 6809,
+    6810, 6811, 6812, 6813, 6814, 6815, 6816, 6817, 6818, 6819, 6820, 6821, 6822,
+    6823, 6824, 6825, 6826, 6827, 6828, 6829, 6830
+  accessed_at: '2026-11-03T12:24:37.669560Z'
+  support: supports
+  summary: 'Complete retained fields, including blanks, and exact physical-frame hashes:
+    [{"physical_line":6775,"row_sha256":"72b5128761dfc6a24a1a71c3c9548343a38dff18c8459996d5c71c198ec9edfd","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"1030","assay_name":"qHTS
+    Assay for Inhibitors of Aldehyde Dehydrogenase 1 (ALDH1A1)","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"31.6228","target_accession":"AAP35567","reference":""}},{"physical_line":6776,"row_sha256":"b167adbd444961f7156f33406eb884a1c84552865a5d3cacfaed38cf88b9d66d","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"1189","assay_name":"DSSTox
+    (CPDBAS) Carcinogenic Potency Database Summary SingleCellCall Results","assay_type":"Other","depositor":"EPA
+    DSSTox","activity_outcome":"Active","activity_name":"","activity_value_um":"","target_accession":"","reference":""}},{"physical_line":6777,"row_sha256":"86eb3c7bfe7b2835b6b7a658c2739c7e0bcb5361391b40a7df6e25a9be145f96","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"1199","assay_name":"DSSTox
+    (CPDBAS) Carcinogenic Potency Database Summary Mouse Bioassay Results","assay_type":"Other","depositor":"EPA
+    DSSTox","activity_outcome":"Active","activity_name":"","activity_value_um":"","target_accession":"","reference":""}},{"physical_line":6778,"row_sha256":"c9fe2e984ff1c8fec294c6471a8cb6910c18d779a4f06aaf013ad443d77f4820","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"1205","assay_name":"DSSTox
+    (CPDBAS) Carcinogenic Potency Database Summary MultiCellCall Results","assay_type":"Other","depositor":"EPA
+    DSSTox","activity_outcome":"Active","activity_name":"","activity_value_um":"","target_accession":"","reference":""}},{"physical_line":6779,"row_sha256":"0628c63ce13fbe156d3310b16a03f8cede2bd7c0f1abc353912a0db78327a081","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"1208","assay_name":"DSSTox
+    (CPDBAS) Carcinogenic Potency Database Summary Rat Bioassay Results","assay_type":"Other","depositor":"EPA
+    DSSTox","activity_outcome":"Active","activity_name":"","activity_value_um":"","target_accession":"","reference":""}},{"physical_line":6780,"row_sha256":"dd413ecf2f25603a31528da3eb0cff5b3049e6f6266b481c4b3d9ca9073c79a2","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"1346987","assay_name":"P-glycoprotein
+    substrates identified in KB-8-5-11 adenocarcinoma cell line, qHTS therapeutic
+    library screen","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"11.3762","target_accession":"","reference":"PMID:31515284"}},{"physical_line":6781,"row_sha256":"9567117893674fd65d48951c0ab6f1bced12624d20faa37a84904ece6e92fe1c","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"1457","assay_name":"qHTS
+    Assay for Identifying the Cell-Membrane Permeable IMPase Inhibitors: Potentiation
+    with Lithium","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"17.7828","target_accession":"P97697","reference":""}},{"physical_line":6782,"row_sha256":"99d09d5a57687cf6caa06db9a06321468fce7c6d852aefbabbc82d9b2b0c946f","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"1467","assay_name":"qHTS
+    Assay for Inhibitors of Human alpha-Galactosidase at pH 4.5.","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"19.9526","target_accession":"CAA29232","reference":""}},{"physical_line":6783,"row_sha256":"a00c35a103fd3524018785b1d5c7377bb4566c3adc6f2da83331565b965f663b","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"1645876","assay_name":"Primary
+    qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in
+    an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Active","activity_name":"Potency","activity_value_um":"8.9817","target_accession":"","reference":""}},{"physical_line":6784,"row_sha256":"c8546be508f526c88a0d5ff5b87922ee79dab4eafa4ada47dfa0c29ad9ebd3c0","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"1645876","assay_name":"Primary
+    qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in
+    an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Active","activity_name":"Potency","activity_value_um":"8.9817","target_accession":"O96028","reference":""}},{"physical_line":6785,"row_sha256":"8f800d8a2a65a6c315fb4e23cc25738ddf3cd85a28e6b8cd62f4dc79e995e7b9","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"1645877","assay_name":"Primary
+    qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in
+    an RCH-ACV wild type WT cells (2C)","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Active","activity_name":"Potency","activity_value_um":"6.3586","target_accession":"","reference":""}},{"physical_line":6786,"row_sha256":"b04d4b8c385ebaf0cf8f14a3066072e0d0313203dc634066513b34de2594f0ed","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"1645877","assay_name":"Primary
+    qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in
+    an RCH-ACV wild type WT cells (2C)","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Active","activity_name":"Potency","activity_value_um":"6.3586","target_accession":"O96028","reference":""}},{"physical_line":6787,"row_sha256":"a7dcfaf59d0ecd09eb6590e0cfef4fa893625d1458bf17a546e66bb479ed87ea","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"1845191","assay_name":"Primary
+    qHTS Assay for Inhibitors of Recombinant Selenoprotein Glutathione Peroxidase
+    1 (GPX1)","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"22.2073","target_accession":"","reference":""}},{"physical_line":6788,"row_sha256":"c71bbdf5873b982778b51c4f0174ff14b19dfd5e3a7980e8a1a99b3ca71bf253","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"1845191","assay_name":"Primary
+    qHTS Assay for Inhibitors of Recombinant Selenoprotein Glutathione Peroxidase
+    1 (GPX1)","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"22.2073","target_accession":"P07203","reference":""}},{"physical_line":6789,"row_sha256":"5c1f562a8d486240daf82a03bdd33623f94ff4ebed49f66e4670a1bf83fe0330","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"1845192","assay_name":"Primary
+    qHTS Assay for Inhibitors of Recombinant Selenoprotein Glutathione Peroxidase
+    4 (GPX4)","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"12.4881","target_accession":"","reference":""}},{"physical_line":6790,"row_sha256":"b01ecf6799a4b4e6967b81628a71418d82796469c44002e486a0dbe813010a5f","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"1845192","assay_name":"Primary
+    qHTS Assay for Inhibitors of Recombinant Selenoprotein Glutathione Peroxidase
+    4 (GPX4)","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"12.4881","target_accession":"P36969","reference":""}},{"physical_line":6791,"row_sha256":"3a3fa2318efc432e51ce62cddb89d61e92a36b5de8ab4f591acbc766183dd274","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"1963823","assay_name":"Viability
+    qHTS for spleen associated tyrosine kinase inhibitor (SYKi) naive MV4-11 cells","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Active","activity_name":"Potency","activity_value_um":"0.7178","target_accession":"","reference":""}},{"physical_line":6792,"row_sha256":"454920d115ec068ab602e228f0bd4d4ca32c7de8eaf15137126c3de11a1ff4c3","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"1963823","assay_name":"Viability
+    qHTS for spleen associated tyrosine kinase inhibitor (SYKi) naive MV4-11 cells","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Active","activity_name":"Potency","activity_value_um":"0.7178","target_accession":"P43405","reference":""}},{"physical_line":6793,"row_sha256":"5a032c261447d84c75579acae2d62fa7c5fd77dea5da285f22e50fae84646960","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"1963824","assay_name":"Viability
+    qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug resistant MV4-11
+    cells","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Active","activity_name":"Potency","activity_value_um":"0.2858","target_accession":"","reference":""}},{"physical_line":6794,"row_sha256":"87f990cdcecd7a2bcb2ed4d79751065eb50cd872b52dee6033bf1847ac89aa0f","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"1963824","assay_name":"Viability
+    qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug resistant MV4-11
+    cells","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Active","activity_name":"Potency","activity_value_um":"0.2858","target_accession":"P43405","reference":""}},{"physical_line":6795,"row_sha256":"91ef42e89410bdda04c477d50b5b0a12a34cca5ac38d0b9233879103a8d634c0","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"2060322","assay_name":"Primary
+    qHTS for small molecule compounds that upregulate eGFP-tagged delta133p53alpha
+    (in N-terminal) cells.","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"26.2496","target_accession":"","reference":""}},{"physical_line":6796,"row_sha256":"510b298e24a8683ecce4696a8e29c620540142b5b3eff9be004226a453b8ec33","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"2060322","assay_name":"Primary
+    qHTS for small molecule compounds that upregulate eGFP-tagged delta133p53alpha
+    (in N-terminal) cells.","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"26.2496","target_accession":"NP_001119587","reference":""}},{"physical_line":6797,"row_sha256":"2b6ee8960e4bf251ab2fa1aa8df1f0973eec77fefaac35b54ed0fef2ca2a9730","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"2101","assay_name":"qHTS
+    Assay for Inhibitors and Activators of N370S glucocerebrosidase as a Potential
+    Chaperone Treatment of Gaucher Disease","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"31.6228","target_accession":"BAA02545","reference":""}},{"physical_line":6798,"row_sha256":"797bf24074dde2bd351a9ba541a70f60578430327770ba7ab04ba0d1db97cfcb","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"2107","assay_name":"qHTS
+    Assay for Inhibitors and Activators of Human alpha-Galactosidase From Spleen Homogenate","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"35.4813","target_accession":"CAA29232","reference":""}},{"physical_line":6799,"row_sha256":"ba24e15bc68145dcd7d65c39dc8e24653a6be283bcd9a0c0911dd5f20fbee57e","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"2112","assay_name":"qHTS
+    Assay for Inhibitors and Activators of Human alpha-Glucosidase From Spleen Homogenate","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"35.4813","target_accession":"NP_000143","reference":""}},{"physical_line":6800,"row_sha256":"c6f827eba572876a5c75dc726db8a7c6b674b5b3cab292f41de111356d63435f","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"2202548","assay_name":"Primary
+    qHTS to identify anti-liver cancer compounds using libraries of approved drugs
+    and bioactive compounds","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"3.5481","target_accession":"","reference":""}},{"physical_line":6801,"row_sha256":"30344a1af0c32ee7fd23461d703d0ef7103bd875d3b5a02a20e5f63f33bd1edf","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"2202555","assay_name":"Consolidated
+    carcinogenicity assay summary data","assay_type":"Other","depositor":"30443","activity_outcome":"Active","activity_name":"","activity_value_um":"","target_accession":"","reference":""}},{"physical_line":6802,"row_sha256":"6536f9c6709503d11ea673d8e6f15a4dcbdcbe21304a36f2bb025844b215b2cd","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"2313","assay_name":"Luminescence
+    Cell-Based Primary HTS to Identify Inhibitors of the Sonic Hedgehog Signaling
+    Pathway","assay_type":"Screening","depositor":"Broad Institute","activity_outcome":"Active","activity_name":"","activity_value_um":"","target_accession":"","reference":""}},{"physical_line":6803,"row_sha256":"ecb2d14fafce891d430f7d24e6ee2e3b0de4c52a7e8393d9c6c995f1c71a60fc","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"2546","assay_name":"VP16
+    counterscreen qHTS for inhibitors of ROR gamma transcriptional activity","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Active","activity_name":"Potency","activity_value_um":"22.3872","target_accession":"NP_035411","reference":""}},{"physical_line":6804,"row_sha256":"ae745689c305a5f999a03d9b1b98fb69938d970fb5b992a2d401f00bb1dd857c","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"2551","assay_name":"qHTS
+    for inhibitors of ROR gamma transcriptional activity","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"15.8489","target_accession":"NP_035411","reference":""}},{"physical_line":6805,"row_sha256":"69410eeabaf3ac7751ced55239e03b26ea9424772537ae40bad2e3069605cef0","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"485281","assay_name":"qHTS
+    Assay for Identification of Novel General Anesthetics","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inactive","activity_name":"Potency","activity_value_um":"25.1189","target_accession":"3F32_A","reference":""}},{"physical_line":6806,"row_sha256":"eabdf25385ab870a6ad24f4fb0d53ba0f6c39de6351ae53f10a205908ec7fa15","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"588513","assay_name":"qHTS
+    assay for small molecule antagonists of estrogen receptor alpha signaling","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"31.6228","target_accession":"AEP43755","reference":""}},{"physical_line":6807,"row_sha256":"11f05581bb4b286874b3c40ec6ff1658e4a862a26201406e25bce832c43197f6","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"588514","assay_name":"qHTS
+    assay for small molecule agonists of estrogen receptor alpha signaling","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Active","activity_name":"Potency","activity_value_um":"44.6684","target_accession":"AEP43755","reference":""}},{"physical_line":6808,"row_sha256":"2cc48acd837526aa97bbe8d206c4243acb905946de98c620267ecda55b9fac62","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"588515","assay_name":"qHTS
+    assay for small molecule agonists of androgen receptor signaling","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"50.1187","target_accession":"AAI32976","reference":""}},{"physical_line":6809,"row_sha256":"fc568c7dbae017c2dea874c3efaee1069e88ada18776d0ba148fd397bcdef569","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"588516","assay_name":"qHTS
+    assay for small molecule antagonists of androgen receptor signaling","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"12.5893","target_accession":"AAI32976","reference":""}},{"physical_line":6810,"row_sha256":"c672174ebdbf400c3e5df099c0c3892628d4be32440e08cce8a3f075b3d0b94e","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"588526","assay_name":"qHTS
+    assay for small molecule antagonists of farnesoid X receptor signaling","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"1.4125","target_accession":"ADZ17382","reference":""}},{"physical_line":6811,"row_sha256":"7a36d50e434e48d5eec995af1efc5a9f59916d7a518895c9817ce1ec9c0085de","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"588527","assay_name":"qHTS
+    assay for small molecule agonists of farnesoid X receptor signaling","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Active","activity_name":"Potency","activity_value_um":"44.6684","target_accession":"ADZ17382","reference":""}},{"physical_line":6812,"row_sha256":"0b1b6c8893dd673ab5c90ff8dfa81055df7ebf27d0a73876eed0c8aa635c099c","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"588532","assay_name":"qHTS
+    assay for small molecule agonists of glucocorticoid receptor signaling","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"3.1623","target_accession":"ADP91253","reference":""}},{"physical_line":6813,"row_sha256":"4947755df327bd0caeb09768a155fc10701fc571e9e66231e058287fd2930f8d","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"588533","assay_name":"qHTS
+    assay for small molecule antagonists of glucocorticoid receptor signaling","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Active","activity_name":"Potency","activity_value_um":"0.8913","target_accession":"ADP91253","reference":""}},{"physical_line":6814,"row_sha256":"867fb5c733dc95d94f5efff71312c19aaefd51b7bdfc92f619b119d6d74c2790","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"588534","assay_name":"qHTS
+    assay for small molecule agonists of peroxisome proliferator-activated receptor
+    delta signaling","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Active","activity_name":"Potency","activity_value_um":"39.8107","target_accession":"BAH02282","reference":""}},{"physical_line":6815,"row_sha256":"72a1fa27eed0df945cb4706ecfa82322dc820c1df6b0af40eb0311db227d176c","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"588535","assay_name":"qHTS
+    assay for small molecule antagonists of peroxisome proliferator-activated receptor
+    delta signaling","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"44.6684","target_accession":"BAH02282","reference":""}},{"physical_line":6816,"row_sha256":"a85a4784e69e034d38c6989c9b2f7dd31f2b738ea425fcbc4f6e6a7f34282718","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"588536","assay_name":"qHTS
+    assay for small molecule agonists of peroxisome proliferator-activated receptor
+    gamma signaling","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"0.5623","target_accession":"BAH02283","reference":""}},{"physical_line":6817,"row_sha256":"ce45b14424c9bf40d8c43e1b960380056cf5b440bfbd3b4c9fdefa4cbe635f6b","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"588537","assay_name":"qHTS
+    assay for small molecule antagonists of peroxisome proliferator-activated receptor
+    gamma signaling","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Active","activity_name":"Potency","activity_value_um":"1.9953","target_accession":"BAH02283","reference":""}},{"physical_line":6818,"row_sha256":"a875504012d9ac5d7c4dfe2256eb17c600fe26c58d09d5440f4a1ce392b11954","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"588541","assay_name":"qHTS
+    assay for small molecule antagonists of vitamin D receptor signaling","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"12.5893","target_accession":"BAH02291","reference":""}},{"physical_line":6819,"row_sha256":"c435291f7105f2b7099447a9574c72485a62707ecdb7a1af06704725a506f00a","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"588543","assay_name":"qHTS
+    assay for small molecule agonists of vitamin D receptor signaling","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Active","activity_name":"Potency","activity_value_um":"44.6684","target_accession":"BAH02291","reference":""}},{"physical_line":6820,"row_sha256":"df6991dc5cd554854ace3c4d7bd9de2d91c6d7cda301e8bb62328ed71b9fcb93","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"588545","assay_name":"qHTS
+    assay for small molecule agonists of thyroid hormone receptor beta signaling","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Active","activity_name":"Potency","activity_value_um":"44.6684","target_accession":"NP_001121649","reference":""}},{"physical_line":6821,"row_sha256":"1bbd5a58e610cd06e94fae81f02c06e7e255b7cbe977e91efa9bc7622c9bf89e","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"588547","assay_name":"qHTS
+    assay for small molecule antagonists of thyroid hormone receptor beta signaling","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"4.4668","target_accession":"NP_001121649","reference":""}},{"physical_line":6822,"row_sha256":"959ecbe96b988a0dcfbeb9babf3dbf5bef3fd641def10d34bf60f526f60d2334","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"651741","assay_name":"qHTS
+    assay for small molecule agonists of the antioxidant response element (ARE) signaling
+    pathway","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"68.5896","target_accession":"NP_006155","reference":""}},{"physical_line":6823,"row_sha256":"b7285e8df3064adc7de11a03b93f319db40325a5ff66561a4e03aa9c6c022f94","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"651743","assay_name":"qHTS
+    assay for small molecule activators of the p53 signaling pathway","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Active","activity_name":"Potency","activity_value_um":"0.8913","target_accession":"P04637","reference":""}},{"physical_line":6824,"row_sha256":"c1ac719b48473a8969d38179d6bf2d7628f45cdf2909978ac54e5fdd6a6a07a1","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"651749","assay_name":"qHTS
+    assay for small molecule activators of the nuclear factor-kappa B (NF-kB) signaling
+    pathway","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Active","activity_name":"Potency","activity_value_um":"44.6684","target_accession":"NP_003989","reference":""}},{"physical_line":6825,"row_sha256":"c0ca3e2bef7ae3cdb65990fc65eb5837f450f7cf78ad91aed9c24ba76326cd45","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"651838","assay_name":"qHTS
+    assay for identifying genotoxic compounds that show differential cytotoxicity
+    against a panel of isogenic chicken DT40 cell lines with known DNA damage response
+    pathways","assay_type":"Other","depositor":"NCGC","activity_outcome":"Active","activity_name":"","activity_value_um":"","target_accession":"","reference":""}},{"physical_line":6826,"row_sha256":"11fd0f9925f2c54c4785444ce2b8fbb35d19bde76abfbdc6d50f22c0ad4db2a8","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"720532","assay_name":"qHTS
+    for Inhibitors of binding or entry into cells for Marburg Virus","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"19.9526","target_accession":"B45705","reference":""}},{"physical_line":6827,"row_sha256":"002fe789fa012607b084385ebc92afe45cad4a4d8e4097d6839ddb6228446b27","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"720533","assay_name":"qHTS
+    for Inhibitors of binding or entry into cells for Lassa Virus","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"6.3096","target_accession":"","reference":""}},{"physical_line":6828,"row_sha256":"b572f4887181f6ef6351259b8e3daeb43020387f39b7e74ad30fe533b41bd479","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"720636","assay_name":"qHTS
+    assay for small molecule agonists of the antioxidant response element (ARE) signaling
+    pathway measured by Nrf2-dependant transcriptional activity","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"3.4376","target_accession":"NP_006155","reference":""}},{"physical_line":6829,"row_sha256":"cfa23d40ab3db69b3225fc6d9ff63ae7ed636747ac6e2249703b01fde0404620","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"743288","assay_name":"qHTS
+    assay for cell viability of HEK293 cells","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"22.3872","target_accession":"","reference":""}},{"physical_line":6830,"row_sha256":"517a58a8e2215454a04b8bdcbaf9035e4cc6fd3ee2f2989d07d5a2c6c8edd5cb","row":{"standard_inchi_key":"RWQKHEORZBHNRI-BMIGLBTASA-N","cid":"442530","aid":"894","assay_name":"qHTS
+    Assay for Inhibitors of HPGD (15-Hydroxyprostaglandin Dehydrogenase)","assay_type":"Confirmatory","depositor":"NCGC","activity_outcome":"Inconclusive","activity_name":"Potency","activity_value_um":"28.1838","target_accession":"NP_000851","reference":""}}]'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: bgc-2215-query-bindingdb_targets
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch222-tentative/bgc-prep/bgc-conditional222-target-input-plan-001.json
+  locator: /records/4/source_scope_inventory/joins/bindingdb_targets
+  accessed_at: '2026-11-03T12:24:37.669560Z'
+  support: supports
+  summary: Complete saved query frame with 0 positive placements. Exact saved predicate
+    exact complete standard_inchi_key equality with query "RWQKHEORZBHNRI-BMIGLBTASA-N"
+    against the pinned bindingdb_targets table; no query replay or external lookup.
+  snapshot_sha256: 9bb9f8fa7c09f7684412974e84449711c4ea7bb3180d6243703e8dc935f89d9a
+  search_scope: Exact saved predicate exact complete standard_inchi_key equality with
+    query "RWQKHEORZBHNRI-BMIGLBTASA-N" against the pinned bindingdb_targets table;
+    no query replay or external lookup.
+- evidence_id: bgc-2215-query-antibioticmech_inchikeys
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch222-tentative/bgc-prep/bgc-conditional222-target-input-plan-001.json
+  locator: /records/4/source_scope_inventory/joins/antibioticmech_inchikeys
+  accessed_at: '2026-11-03T12:24:37.669560Z'
+  support: supports
+  summary: Complete saved query frame with 0 positive placements. Exact saved predicate
+    exact complete standard_inchi_key equality with query "RWQKHEORZBHNRI-BMIGLBTASA-N"
+    against the pinned antibioticmech_inchikeys table; no query replay or external
+    lookup.
+  snapshot_sha256: 9bb9f8fa7c09f7684412974e84449711c4ea7bb3180d6243703e8dc935f89d9a
+  search_scope: Exact saved predicate exact complete standard_inchi_key equality with
+    query "RWQKHEORZBHNRI-BMIGLBTASA-N" against the pinned antibioticmech_inchikeys
+    table; no query replay or external lookup.
+- evidence_id: bgc-2215-query-chebi_origins
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch222-tentative/bgc-prep/bgc-conditional222-target-input-plan-001.json
+  locator: /records/4/source_scope_inventory/joins/chebi_origins
+  accessed_at: '2026-11-03T12:24:37.669560Z'
+  support: supports
+  summary: Complete saved query frame with 0 positive placements. Exact saved predicate
+    exact chebi_id from exact full-key structure rows with query ["CHEBI:7719"] against
+    the pinned chebi_origins table; no query replay or external lookup.
+  snapshot_sha256: 9bb9f8fa7c09f7684412974e84449711c4ea7bb3180d6243703e8dc935f89d9a
+  search_scope: Exact saved predicate exact chebi_id from exact full-key structure
+    rows with query ["CHEBI:7719"] against the pinned chebi_origins table; no query
+    replay or external lookup.
+- evidence_id: bgc-2215-cached-taxonomy
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch222-tentative/bgc-prep/bgc-conditional222-source-inventory-DATA-001.json
+  locator: /cached_taxonomy/whole_stanzas/10; /cached_taxonomy/whole_stanzas/27; /cached_taxonomy/whole_stanzas/28;
+    /cached_taxonomy/whole_stanzas/40; /cached_taxonomy/whole_stanzas/45; /cached_taxonomy/whole_stanzas/82;
+    /cached_taxonomy/whole_stanzas/106; /cached_taxonomy/whole_stanzas/121; /cached_taxonomy/whole_stanzas/127;
+    /cached_taxonomy/whole_stanzas/159
+  accessed_at: '2026-11-03T12:24:37.669560Z'
+  support: supports
+  summary: 'Complete personally read cached name/synonym stanzas for selected source
+    taxa: [{"id":"NCBITaxon:5061","physical_line":7877,"complete_stanza":"[Term]\nid:
+    NCBITaxon:5061\nname: Aspergillus niger\nsynonym: \"Aspergillus lacticoffeatus\"
+    EXACT []\nsynonym: \"Aspergillus lacticoffeatus Frisvad & Samson, 2004\" EXACT
+    []\n\n"},{"id":"NCBITaxon:40380","physical_line":17814,"complete_stanza":"[Term]\nid:
+    NCBITaxon:40380\nname: Aspergillus ochraceus\n\n"},{"id":"NCBITaxon:40993","physical_line":18356,"complete_stanza":"[Term]\nid:
+    NCBITaxon:40993\nname: Aspergillus carbonarius\nsynonym: \"Rhopalocystis carbonaria\"
+    EXACT []\nsynonym: \"Sterigmatocystis carbonaria\" EXACT []\n\n"},{"id":"NCBITaxon:60171","physical_line":27619,"complete_stanza":"[Term]\nid:
+    NCBITaxon:60171\nname: Penicillium verrucosum\n\n"},{"id":"NCBITaxon:74613","physical_line":33600,"complete_stanza":"[Term]\nid:
+    NCBITaxon:74613\nname: Glycyrrhiza uralensis\n\n"},{"id":"NCBITaxon:138277","physical_line":50062,"complete_stanza":"[Term]\nid:
+    NCBITaxon:138277\nname: Aspergillus melleus\n\n"},{"id":"NCBITaxon:229535","physical_line":69593,"complete_stanza":"[Term]\nid:
+    NCBITaxon:229535\nname: Penicillium nordicum\n\n"},{"id":"NCBITaxon:306088","physical_line":80349,"complete_stanza":"[Term]\nid:
+    NCBITaxon:306088\nname: Aspergillus steynii\n\n"},{"id":"NCBITaxon:357447","physical_line":85919,"complete_stanza":"[Term]\nid:
+    NCBITaxon:357447\nname: Aspergillus westerdijkiae\n\n"},{"id":"NCBITaxon:1341132","physical_line":126924,"complete_stanza":"[Term]\nid:
+    NCBITaxon:1341132\nname: Aspergillus welwitschiae\nsynonym: \"Aspergillus welwitschiae
+    (Bres.) Henn.\" EXACT []\nsynonym: \"Ustilago welwitschiae\" EXACT []\n\n"}].
+    No hierarchy or fresh taxonomy verification is inferred.'
+  snapshot_sha256: 050759ee81e134a5c80d93845e5d3c7f8a92e971733d27fe90f7a095107e1554
+- evidence_id: bgc-2215-source-routes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch222-tentative/bgc-prep/bgc-conditional222-target-input-plan-001.json
+  locator: /records/4/source_scope_inventory/source_taxa; /records/4/source_scope_inventory/forward_taxon_merge_matches;
+    /records/4/source_scope_inventory/nonorganism_matches
+  accessed_at: '2026-11-03T12:24:37.669560Z'
+  support: supports
+  summary: Exact saved source-taxon and forward-merge/nonorganism route lists. No
+    selected forward-merge or nonorganism match is retained.
+  snapshot_sha256: 9bb9f8fa7c09f7684412974e84449711c4ea7bb3180d6243703e8dc935f89d9a
+- evidence_id: bgc-2215-review-skill
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/.claude/skills/review-yaml-record/SKILL.md
+  locator: Evidence Rules; Workflow; Output
+  accessed_at: '2026-11-03T12:24:37.669560Z'
+  support: supports
+  summary: Immutable claim-level review, local evidence scope, honest partial completion
+    and actionable ownership.
+  snapshot_sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+- evidence_id: bgc-2215-review-profile
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/docs/record-review-profile.md
+  locator: Complete maintained review profile
+  accessed_at: '2026-11-03T12:24:37.669560Z'
+  support: supports
+  summary: Source qualification, producer/occurrence distinctions, computed-classification
+    limits and evidence-backed issue normalization.
+  snapshot_sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+- evidence_id: bgc-2215-structure-schema
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: lines 376–432
+  accessed_at: '2026-11-03T12:24:37.669560Z'
+  support: supports
+  summary: Structure and stereo encoding plus explicitly computed NPClassifier fields;
+    model outputs are not source assertions.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: bgc-2215-activity-schema
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: lines 632–665; lines 920–947
+  accessed_at: '2026-11-03T12:24:37.669560Z'
+  support: supports
+  summary: Optional observation activity_class and coarse activity buckets require
+    backing; no dedicated cytotoxic or enzyme-inhibitor definition is supplied.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: bgc-2215-activity-classifier
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: lines 127–179; lines 1310–1382
+  accessed_at: '2026-11-03T12:24:37.669560Z'
+  support: supports
+  summary: Maintained classifier unambiguity intent, generic title patterns, ACTIVE-only
+    class assignment and written-observation summary derivation.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: bgc-2215-definition-owner
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: lines 985–1005
+  accessed_at: '2026-11-03T12:24:37.669560Z'
+  support: supports
+  summary: Maintained seeder copies a unique retained ChEBI definition and its source
+    identifier; a correction must preserve honest provenance.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: root-native-strict_ten
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-222/validate-strict-selected10-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-222/native-current222-five-gates-execution-001.json
+  accessed_at: '2026-11-03T12:07:39.701654Z'
+  support: supports
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  snapshot_sha256: 4f6c07dfc2254087e012d48e7a6d242e51e6b195e095bdc2467229664d4c931c
+- evidence_id: root-native-strict_full
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-222/validate-all-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-222/native-current222-five-gates-execution-001.json
+  accessed_at: '2026-11-03T12:08:04.813276Z'
+  support: supports
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  snapshot_sha256: 818559c0ff31aaea2f5d6a6a1740192ce9592adb54e148b1ebc667bd3eb7ff12
+- evidence_id: root-native-lockfile
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-222/verify-corpus-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-222/native-current222-five-gates-execution-001.json
+  accessed_at: '2026-11-03T12:08:24.829512Z'
+  support: supports
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  snapshot_sha256: 254f171c7dff0f1ecbee5f47f75d2b7046143ae7fc499d9a1c08263e1c5125d8
+- evidence_id: root-native-reproduction
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-222/verify-reproduction-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-222/native-current222-five-gates-execution-001.json
+  accessed_at: '2026-11-03T12:09:00.348743Z'
+  support: supports
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  snapshot_sha256: cfc38f4e3f434e7f3651975f2cb228e5cda848476b2c53d1636d8746b794237a
+- evidence_id: root-native-queue
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-222/review-queue-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-222/native-current222-five-gates-execution-001.json
+  accessed_at: '2026-11-03T12:09:12.342177Z'
+  support: supports
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  snapshot_sha256: b39c06db8b8558cb63af7a2e2c475e60a3655c7289406305ecad80ab597ae7a4
+assessments:
+- assessment_id: bgc-2215-identity
+  area: identity
+  topic: Identity
+  outcome: supported
+  summary: CHEBI:7719 and seven retained MIBiG concepts share full key RWQKHEORZBHNRI-BMIGLBTASA-N.
+    The stored phenylalanine-linked chlorinated dihydroisocoumarin representation
+    is consistent with the structural part of the retained definition. Its broad food-contamination
+    and producer statements remain attributed database prose, not newly verified facts.
+    The existing shared-structure discussion is preserved, and normalized key agreement
+    does not prove every explicit tautomer graph or natural sample identity.
+  target_ids:
+  - CHEBI:7719
+  evidence_ids:
+  - bgc-2215-owner
+  - bgc-2215-capture
+  - bgc-2215-intake
+  - bgc-2215-grounding-owner
+  - bgc-2215-source-plan
+  - bgc-2215-plan-acceptance
+  - bgc-2215-query-chebi_structures
+  - bgc-2215-source-chebi_structures
+  - bgc-2215-source-mibig_compounds
+  - bgc-2215-chemistry
+  dimensions:
+  - name: standard_inchi_key
+    value: RWQKHEORZBHNRI-BMIGLBTASA-N
+    definition: Exact full key; no name, first-block or congener substitution.
+    evidence_ids:
+    - bgc-2215-owner
+    - bgc-2215-capture
+    - bgc-2215-intake
+    - bgc-2215-grounding-owner
+    - bgc-2215-source-plan
+    - bgc-2215-plan-acceptance
+    - bgc-2215-query-chebi_structures
+    - bgc-2215-source-chebi_structures
+    - bgc-2215-source-mibig_compounds
+    - bgc-2215-chemistry
+  - name: grounding_scope
+    value: Existing shared-structure discussion remains open; database definition
+      roles are explicit.
+    definition: Local grounding fidelity is distinct from fresh natural-identity verification.
+    evidence_ids:
+    - bgc-2215-owner
+    - bgc-2215-capture
+    - bgc-2215-intake
+    - bgc-2215-grounding-owner
+    - bgc-2215-source-plan
+    - bgc-2215-plan-acceptance
+    - bgc-2215-query-chebi_structures
+    - bgc-2215-source-chebi_structures
+    - bgc-2215-source-mibig_compounds
+    - bgc-2215-chemistry
+- assessment_id: bgc-2215-representation
+  area: representation
+  topic: Representation
+  outcome: supported
+  summary: Both forms give neutral C20H18ClNO6 with 28 atoms,30 bonds and R/S tetrahedral
+    centres. Canonical isomeric and nonisomeric SMILES comparisons are false and the
+    saved atom correspondence is empty. SMILES has C9(=O10)–N8; the InChI-derived
+    form has C17(O23)=N21, adding an unspecified C=N stereoelement. Standard InChI,
+    full key and formula remain equal through mobile-H normalization. This is a bounded
+    representation result, not proof of wrong identity or a natural tautomer assignment.
+  target_ids:
+  - CHEBI:7719
+  evidence_ids:
+  - bgc-2215-chemistry
+  - bgc-2215-topology
+  - bgc-2215-diagnostic-acceptance
+  - bgc-2215-structure-schema
+  dimensions:
+  - name: stereochemistry_scope
+    value: Two encoded R/S centres; extra unspecified C=N belongs to the InChI-derived
+      representation.
+    definition: Saved full stereo/atom/bond interpretation, not an experimental assignment
+      or new parse.
+    evidence_ids:
+    - bgc-2215-chemistry
+    - bgc-2215-topology
+    - bgc-2215-diagnostic-acceptance
+    - bgc-2215-structure-schema
+  - name: representation_correspondence
+    value: Two canonical comparisons false and empty correspondence preserved; normalized
+      identifiers still agree.
+    definition: Normalized identifier agreement does not establish explicit full-graph
+      or natural-form identity.
+    evidence_ids:
+    - bgc-2215-chemistry
+    - bgc-2215-topology
+    - bgc-2215-diagnostic-acceptance
+    - bgc-2215-structure-schema
+- assessment_id: bgc-2215-origin
+  area: provenance
+  topic: Origin
+  outcome: supported
+  summary: 'All seven imported producer claims are SOURCE_ASSERTION with CLUSTER_UNSTATED:
+    BGC0001030 v3 and BGC0002598/2605/2606/2607/2608/2609 v2. Their questionable/unknown
+    source quality/completeness is not upgraded. Penicillium nordicum and the respective
+    Aspergillus taxa retain individual locus/genome scopes. LOTUS fungal and Glycyrrhiza
+    uralensis occurrences are not equivalent producer evidence; repeated taxa/citations
+    do not establish independent experiments.'
+  target_ids:
+  - CHEBI:7719
+  evidence_ids:
+  - bgc-2215-origin-owner
+  - bgc-2215-occurrence-owner
+  - bgc-2215-source-mibig_compounds
+  - bgc-2215-source-lotus_occurrences
+  - bgc-2215-cached-taxonomy
+  - bgc-2215-source-routes
+  - bgc-2215-review-profile
+  dimensions:
+  - name: taxon_scope
+    value: Seven source-assertion producer entries remain distinct from fungal and
+      plant occurrences.
+    definition: Source taxa and cache labels preserve genus/species/strain scope;
+      no fresh ancestry or production inference.
+    evidence_ids:
+    - bgc-2215-origin-owner
+    - bgc-2215-occurrence-owner
+    - bgc-2215-source-mibig_compounds
+    - bgc-2215-source-lotus_occurrences
+    - bgc-2215-cached-taxonomy
+    - bgc-2215-source-routes
+    - bgc-2215-review-profile
+  - name: producer_evidence
+    value: SOURCE_ASSERTION throughout; no fresh causal producer study inspected.
+    definition: Producer evidence is assessed separately from occurrence and locus
+      support.
+    evidence_ids:
+    - bgc-2215-origin-owner
+    - bgc-2215-occurrence-owner
+    - bgc-2215-source-mibig_compounds
+    - bgc-2215-source-lotus_occurrences
+    - bgc-2215-cached-taxonomy
+    - bgc-2215-source-routes
+    - bgc-2215-review-profile
+  - name: locus_evidence
+    value: Seven CLUSTER_UNSTATED entries with retained versions and locus/genome
+      coordinates.
+    definition: Source version/status/method/grade does not establish a complete pathway
+      or fresh primary support.
+    evidence_ids:
+    - bgc-2215-origin-owner
+    - bgc-2215-occurrence-owner
+    - bgc-2215-source-mibig_compounds
+    - bgc-2215-source-lotus_occurrences
+    - bgc-2215-cached-taxonomy
+    - bgc-2215-source-routes
+    - bgc-2215-review-profile
+- assessment_id: bgc-2215-citations
+  area: evidence
+  topic: Citations
+  outcome: unknown
+  summary: BGC0001030's DOI:10.1016/j.fct.2015.11.018 is explicitly compound-bioactivity-level
+    evidence and does not become a producer experiment. Other loci carry entry PMIDs
+    33652337,29324288 and 27667988. LOTUS occurrence references and PubChem assay
+    references remain separate claim roles; their independence is not established.
+    No paper, external compound entry or sequence was refreshed under the local-only
+    restriction.
+  target_ids:
+  - CHEBI:7719
+  evidence_ids:
+  - bgc-2215-origin-owner
+  - bgc-2215-occurrence-owner
+  - bgc-2215-assay-owner
+  - bgc-2215-source-mibig_compounds
+  - bgc-2215-source-lotus_occurrences
+  - bgc-2215-source-pubchem_bioassay
+  dimensions:
+  - name: citation_scope
+    value: Compound-bioactivity citation versus entry-level and occurrence/assay roles
+      explicitly retained.
+    definition: Citation roles remain database assertions; no publication independence
+      or fresh source access is assumed.
+    evidence_ids:
+    - bgc-2215-origin-owner
+    - bgc-2215-occurrence-owner
+    - bgc-2215-assay-owner
+    - bgc-2215-source-mibig_compounds
+    - bgc-2215-source-lotus_occurrences
+    - bgc-2215-source-pubchem_bioassay
+- assessment_id: bgc-2215-bioactivity
+  area: evidence
+  topic: Bioactivity
+  outcome: concern
+  summary: The owner writes 25 of 56 retained assay placements, with 31 omissions
+    disclosed. Written[12], AID2546, is an ACTIVE VP16 counterscreen of RORγ transcription
+    with OTHER/Potency 22.3872 µM and ungrounded NP_035411; ENZYME_INHIBITOR is unsupported
+    by that retained endpoint. Preserve it as a counterscreen response. The four SYK
+    viability rows correctly have no activity_class, so no class defect is asserted
+    there. Four NSD2-labelled ACTIVE rows remain separate coarse summary backing;
+    they are cell-based observations, not proof of isolated catalytic inhibition.
+    Other source rows span carcinogenicity, signaling and cell assays without transfer
+    between endpoints.
+  target_ids:
+  - CHEBI:7719
+  evidence_ids:
+  - bgc-2215-assay-owner
+  - bgc-2215-occurrence-owner
+  - bgc-2215-query-lotus_occurrences
+  - bgc-2215-source-lotus_occurrences
+  - bgc-2215-query-chebi_origins
+  - bgc-2215-query-pubchem_bioassay
+  - bgc-2215-source-pubchem_bioassay
+  - bgc-2215-query-bindingdb_targets
+  - bgc-2215-query-antibioticmech_inchikeys
+  - bgc-2215-source-plan
+  - bgc-2215-source-routes
+  - bgc-2215-cached-taxonomy
+  - bgc-2215-activity-classifier
+  - bgc-2215-activity-schema
+  dimensions:
+  - name: occurrence_scope
+    value: Eleven LOTUS placements retain organism/citation context, including plant
+      occurrence without producer inference.
+    definition: Occurrence assertions are not counts of independent experiments or
+      producers.
+    evidence_ids:
+    - bgc-2215-assay-owner
+    - bgc-2215-occurrence-owner
+    - bgc-2215-query-lotus_occurrences
+    - bgc-2215-source-lotus_occurrences
+    - bgc-2215-query-chebi_origins
+    - bgc-2215-query-pubchem_bioassay
+    - bgc-2215-source-pubchem_bioassay
+    - bgc-2215-query-bindingdb_targets
+    - bgc-2215-query-antibioticmech_inchikeys
+    - bgc-2215-source-plan
+    - bgc-2215-source-routes
+    - bgc-2215-cached-taxonomy
+    - bgc-2215-activity-classifier
+    - bgc-2215-activity-schema
+  - name: assay_target_scope
+    value: One unsupported VP16 counterscreen class; preserve 25/31 cap, all quantities/calls
+      and separate summary support.
+    definition: Written claims and exact retained assay/target routes are bounded;
+      no global biological absence claim.
+    evidence_ids:
+    - bgc-2215-assay-owner
+    - bgc-2215-occurrence-owner
+    - bgc-2215-query-lotus_occurrences
+    - bgc-2215-source-lotus_occurrences
+    - bgc-2215-query-chebi_origins
+    - bgc-2215-query-pubchem_bioassay
+    - bgc-2215-source-pubchem_bioassay
+    - bgc-2215-query-bindingdb_targets
+    - bgc-2215-query-antibioticmech_inchikeys
+    - bgc-2215-source-plan
+    - bgc-2215-source-routes
+    - bgc-2215-cached-taxonomy
+    - bgc-2215-activity-classifier
+    - bgc-2215-activity-schema
+- assessment_id: bgc-2215-classification
+  area: consistency
+  topic: Classification
+  outcome: supported
+  summary: The SMILES table has a cyclic ester C20(=O21)–O19–C17, chlorinated phenolic
+    aromatic ring and phenylalanine-like amide/acid substituent with no candidate
+    sugar cycle. In the InChI form the lactone and acid persist while the amide becomes
+    the imidic motif. NPClassifier Isocoumarins/non-glycoside is computed and broadly
+    consistent with these features; NRPS and PKS are independent source locus classifications,
+    not a completed biosynthetic mechanism.
+  target_ids:
+  - CHEBI:7719
+  evidence_ids:
+  - bgc-2215-classification-owner
+  - bgc-2215-source-npclassifier
+  - bgc-2215-source-mibig_compounds
+  - bgc-2215-chemistry
+  - bgc-2215-topology
+  - bgc-2215-review-profile
+  dimensions:
+  - name: classification_applicability
+    value: Dihydroisocoumarin/lactone plus amino-acid-derived substituent; tautomer-dependent
+      amide motif retained.
+    definition: Model filing labels, observed topology and source BGC classes remain
+      distinct axes.
+    evidence_ids:
+    - bgc-2215-classification-owner
+    - bgc-2215-source-npclassifier
+    - bgc-2215-source-mibig_compounds
+    - bgc-2215-chemistry
+    - bgc-2215-topology
+    - bgc-2215-review-profile
+- assessment_id: bgc-2215-completion
+  area: completeness
+  topic: Completion
+  outcome: concern
+  summary: Supported local curation findings remain open; the scientific verdict is
+    needs_curation. Complete owner/history, selected/direct source context, actual
+    intake and all paired saved molecular tables were reviewed. Five local gates passed,
+    while full QC, OAK and external primary-source/taxonomy/sequence verification
+    remain unavailable. This review is partial; no source record or native curation
+    status was changed.
+  target_ids:
+  - CHEBI:7719
+  evidence_ids:
+  - bgc-2215-owner
+  - bgc-2215-intake
+  - bgc-2215-intake-acceptance
+  - bgc-2215-source-notes
+  - bgc-2215-native-acceptance
+  - bgc-2215-diagnostic-acceptance
+  - bgc-2215-source-plan
+  - bgc-2215-plan-acceptance
+  - bgc-2215-review-skill
+  - bgc-2215-review-profile
+  dimensions:
+  - name: review_completion
+    value: Partial; open supported curation findings; external verification, full
+      QC and OAK unavailable.
+    definition: Completion reflects actual evidence access and check coverage; parsing
+      and gate success are not scientific proof.
+    evidence_ids:
+    - bgc-2215-owner
+    - bgc-2215-intake
+    - bgc-2215-intake-acceptance
+    - bgc-2215-source-notes
+    - bgc-2215-native-acceptance
+    - bgc-2215-diagnostic-acceptance
+    - bgc-2215-source-plan
+    - bgc-2215-plan-acceptance
+    - bgc-2215-review-skill
+    - bgc-2215-review-profile
+findings:
+- finding_id: bgc-2215-vp16-enzyme-class
+  issue_key: ochratoxin-a-vp16-transcription-counterscreen-enzyme-class-overstatement
+  category: scope
+  severity: major
+  status: open
+  certainty: confirmed
+  title: VP16 transcription counterscreen lacks enzyme-inhibition support
+  description: 'Written bioactivities[12], AID2546, joins retained PubChem row6803:
+    ACTIVE VP16 counterscreen of RORγ transcription, generic Potency22.3872µM and
+    ungrounded NP_035411. The generic inhibitors-of regex assigns ENZYME_INHIBITOR
+    without a catalytic-inhibition endpoint. This finding concerns that optional class
+    alone. The SYK viability observations are already unclassified; four separately
+    written NSD2-labelled active observations retain coarse summary backing without
+    proving isolated enzyme kinetics. No claim of absent inhibitory pharmacology is
+    made.'
+  target_ids:
+  - CHEBI:7719
+  field_paths:
+  - bioactivities[12].activity_class
+  evidence_ids:
+  - bgc-2215-assay-owner
+  - bgc-2215-source-pubchem_bioassay
+  - bgc-2215-query-pubchem_bioassay
+  - bgc-2215-activity-classifier
+  - bgc-2215-activity-schema
+  - bgc-2215-review-profile
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained generated-claim classification and summary derivation
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/shikimates_and_phenylpropanoids/ochratoxin-a.yaml
+    role: Affected generated owner; regenerate after maintained correction
+  ownership_note: Future maintained-source correction only; generated YAML and retained
+    raw source snapshots remain unchanged. Reserved/nonconsumed decisions.tsv is not
+    a correction route.
+  normalization_reason: Major scientific claim inconsistency or support-scope overstatement
+    established by exact local evidence; passing mechanical checks do not resolve
+    it.
+  disposition_reason: Confirmed local evidence conflict, not an inference from unavailable
+    external verification. Native found no same-owner prior issue_key in the declared
+    ignored-inclusive saved-review scopes.
+actions:
+- action_id: bgc-2215-repair-vp16-enzyme-class
+  description: Narrow the maintained exact AID2546/title classification so a VP16
+    transcription counterscreen is not automatically typed ENZYME_INHIBITOR. Preserve
+    ACTIVE, OTHER/Potency22.3872µM, the AID/title and ungrounded accession. Keep the
+    four SYK viability observations unclassified and do not remove the entire enzyme
+    summary solely because this row is corrected; rederive it from separately supported
+    written observations. Preserve the25-written/31-omitted scope, all source quantities
+    and the original amide/imidic representation distinction.
+  finding_ids:
+  - bgc-2215-vp16-enzyme-class
+  target_ids:
+  - CHEBI:7719
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained generated-claim classification and summary derivation
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/shikimates_and_phenylpropanoids/ochratoxin-a.yaml
+    role: Affected generated owner; regenerate after maintained correction
+  ownership_note: Proposed follow-up only; no implementation, source edits or external
+    lookup occurred.
+  acceptance_checks:
+  - Preserve exact structure, source identifiers, raw source provenance and unaffected
+    claims.
+  - Regression coverage reproduces the precise evidence boundary and retains original
+    calls, endpoint spelling, values, units, targets and references.
+  - After authorized implementation, regenerate through maintained code and pass the
+    required validation, reproduction and review gates.
+  generator: scripts/seed_from_sources.py
+limitations:
+- External compound/taxon/protein/accession and primary-paper verification was unavailable
+  under the absolute local-only restriction; retained historical claims are attributed,
+  not refreshed.
+- Full QC and OAK were unavailable. Successful local gates, parsing and maintained-reader
+  checks establish their declared mechanical scope only.
+- Source-query results are bounded by exact full-key/direct-owned-BGC/source-taxon
+  predicates and the saved cohort; negative joins are not global absence claims.
+- No additional molecular or YAML parse was performed during fragment authoring. Source
+  records, raw snapshots, native curation status and histories were not edited.
+- The whole selected owner was read, but scientific completion is partial because
+  full QC, complete ontology authority coverage and external source verification were
+  unavailable. No native status or history was changed.
+- The branch uses cached base ce6a5498df5be51116bd5e0c119023ee62bb5464. Fresh origin/main
+  verification and publication are deferred because the user prohibits all external
+  requests.
+notes:
+- Source reading uses the complete selected payloads and explicit complementary/direct-context
+  attribution in pinned notes. All first-five paired molecular tables and selected
+  owner histories were personally read.
+- Four diagnostic warnings remain global and unassigned; no per-record warning inference.
+- Saved review coverage is distinct from the native SEEDED/REVIEWED curation state.
+  Proposed actions are not performed edits.
+tags:
+- offline
+- record-review
+- batch-222
