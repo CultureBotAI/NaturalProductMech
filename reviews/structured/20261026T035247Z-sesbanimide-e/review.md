@@ -1,0 +1,1762 @@
+# Scientific review of sesbanimide E
+
+- Review: 20261026T035247Z-sesbanimide-e
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-26T03:50:34.829762Z
+- Finished UTC: 2026-10-26T03:52:47.370720Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+Sesbanimide E is exact E4 in the 2020 preprint body and panel from native PHM037; the caption D4 typo is explicitly distinguished. The three-unset-centre preprint graph matches current retained identity, but final 2021 main/SI precision remains unavailable. The imported 1998 A/C paper does not support this later E producer/locus assertion, supporting the shared minor exact-row citation-only correction. Grades, raw source and occurrences remain unchanged; the review is partial.
+
+## Scope And Provenance
+
+One complete generated owner and any referenced components, assessed claim by claim for exact identity, provenance, origin, producer and occurrence scope, biosynthesis, classification, optional content and audit history.
+
+Selection: Campaign record 437, batch 044, selected in path order from the fresh-main authoritative validated catalogue and the separately validated targets in earlier batch commits (publication tracked separately). At selection, 498 of 3116 current records had campaign coverage and 2618 remained. The population search included ignored files. Exactly one target is assessed here.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 14373517042b407747272446f79953ae86d51fa4.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-157d5d867d | data/natural_products/alkaloids/sesbanimide-e.yaml | generated | sesbanimide E |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Closed-schema target validation | passed | True | naturalproductmech:mibig-157d5d867d | The documented target strict validator completed; scientific support is assessed separately. |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-157d5d867d | Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its pinned path. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-157d5d867d | Fresh canonical reproduction gate passed:all3116 records byte-identical to source seeding; source warnings remain retained. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-157d5d867d | Fresh deterministic review queue completed:8922 rows across12 queues. Queue output is not scientific-review coverage. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-157d5d867d | Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking mismatches and4898no-adapter skips remain explicit. |
+| Full repository quality gate on the fresh main baseline | passed | True | naturalproductmech:mibig-157d5d867d | Canonical just qc completed with actual terminal exit0:1024 tests passed,4 skipped,2 dependency warnings;3116 records passed closed schema validation, site freshness, byte reproduction and lockfile integrity.22 governed artifacts and15 raw inventories passed. Prior DNS failed001 remains preserved. |
+| Complete owner and seven-set fidelity | passed | True | naturalproductmech:mibig-157d5d867d | All ten successful actual intakes and chronological post-intake root bindings must precede authoring. Complete raw owners, 25 ordered history events and 70 source joins must match. No referenced components, emitted bioactivities, raw assay rows or no-data sentinels occur. Root full scientific owner reading remains false for 431 and 432 and true for the local assertions of 433–440; all raw source sets were read. Complete graph equality is mechanical and does not validate its scientific claims. |
+| actual all-ten intake and source equality | passed | True | naturalproductmech:mibig-157d5d867d | All ten official intakes and subsequent root equality receipts passed before this section was authored; complete raw owners, resolved views and all seven source sets were checked mechanically. |
+| source-grade reproduction | passed | True | naturalproductmech:mibig-157d5d867d | Producer and locus grades reproduce imported vocabulary; this is separate from experimental applicability within the declared source scope. |
+| bounded positive source support | passed | True | naturalproductmech:mibig-157d5d867d | Exact named-product provenance is positively supported within the declared original-source versions and limits. |
+| required original-source applicability | unavailable | True | naturalproductmech:mibig-157d5d867d | The final 2021 main/SI and exact locus experimental validation remain required gaps. No independent complete chemical assignment or spectral validation is claimed. |
+| exact imported producer and locus citation applicability | failed | True | naturalproductmech:mibig-157d5d867d | The imported 1998 A/C reference does not support the later Stappia PHM037 producer and CP046908 locus assertion. The directly inspected 2020 author preprint supplies bounded citation support; the final 2021 main remains unavailable. |
+| Stored chemical representation and complete source row | passed | True | naturalproductmech:mibig-157d5d867d | Fresh intake derivation agrees with the stored graph; the source selector, full row and prepared snapshot were independently rechecked. |
+| Exact literal chemical authority scope | passed | True | naturalproductmech:mibig-157d5d867d | Selected current literal authority representations match the retained graph within their measured channels. Supplied MOL/default strings and reconstructed stated Standard InChI retain separately measured fixed-H results; no fixed-H agreement is inferred where the actual report differs. |
+| Exact named primary chemical structure | unavailable | True | naturalproductmech:mibig-157d5d867d | Exact BGC0002082:3/version 3, literal NPA033220 and two-star CHEBI:221824 supplied MOL/default agree with retained sesbanimide E. The exact 2020 preprint Figure 1 graph labelled E4 and supported by the body is independently transcribed with three unset centres and fully matches Standard/fixed-H identity. The caption mistakenly says D4; the graph/body crosswalk is explicit. Final 2021 primary-source precision remains required, so this chemical scope stays partial despite the positive preprint graph match. |
+| Source chemical assignment and represented precision | unavailable | True | naturalproductmech:mibig-157d5d867d | Required final 2021 main/SI chemical precision remains uninspected despite exact preprint E4 graph agreement. |
+
+## Scientific And Domain Assessments
+
+### Complete history and native status
+
+provenance: supported. Targets: naturalproductmech:mibig-157d5d867d.
+
+Native status remains SEEDED and all 3 history actions retain their exact order: ['SEEDED_FROM_SOURCES', 'SEEDED_FROM_SOURCES', 'SEEDED_FROM_SOURCES']. Source-seeding history does not replace claim-level scientific assessment.
+
+### Present optional assertions
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-157d5d867d.
+
+No nonempty assertion occurs in the listed optional owner fields. Empty categories do not establish a scientific omission; original identity, native or introduced provenance and exact-congener scope are assessed separately.
+
+### Exact computed classification provenance
+
+representation: supported. Targets: naturalproductmech:mibig-157d5d867d.
+
+Exact-key NPClassifier version npclassifier.gnps2.org@2026-09-07 reproduces filing, superclass/class and glycoside fields. Computed classification is not independent natural-origin or mechanistic proof; any accepted identity correction requires effective-key reclassification.
+
+### Taxonomic identifiers versus experimental stocks
+
+provenance: supported. Targets: naturalproductmech:mibig-157d5d867d.
+
+Retained naming context: 538381: Stappia indica (species). Stappia indica naming does not replace exact PHM037 congener evidence or close the final 2021 main-source gap. Names alone do not prove compound occurrence, native production or physical stock equivalence.
+
+### Literal organism routing
+
+grounding: supported. Targets: naturalproductmech:mibig-157d5d867d.
+
+One literal raw LOTUS route matches both P225 and P685. Identifier validity is separate from publication applicability and stock identity.
+
+### Native producer transcriptomic applicability
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-157d5d867d.
+
+The retained catalogue contains 20 organisms and 28 datasets at its original access time. No exact native-producer stock or gene/module/compound association is established. This is bounded catalogue context, not an exhaustive current availability search.
+
+### actual owner and source-set equality
+
+provenance: supported. Targets: naturalproductmech:mibig-157d5d867d.
+
+Complete actual owner/history and all seven source sets match the prepared objects mechanically. Complete local reading is separate from the bounded original-source conclusions.
+
+### exact named-product and source context
+
+provenance: supported. Targets: naturalproductmech:mibig-157d5d867d.
+
+The 2020 Results and Figure 1 panel map sesbanimide E4 to native S. indica PHM037. E is the newly described acyclic analogue, distinct from A/D of PHM038. The caption calls compound 4 D, while the body and panel agree E.
+
+### native, introduced, congener and citation applicability
+
+evidence: concern. Targets: naturalproductmech:mibig-157d5d867d.
+
+The 1998 paper studies A/C and predates isolation of PHM037; it does not support exact E or the sequenced locus. Current BGC compound 3 inherited that citation. The 2021 LOTUS reference is corroborated by the published abstract and the separately labeled author preprint with per-stock evidence. The final 2021 main/SI remains unavailable; no introduced-host or genetic-necessity claim is inferred.
+
+### bounded primary and source-access limits
+
+completeness: unknown. Targets: naturalproductmech:mibig-157d5d867d.
+
+The final 2021 main/SI and exact locus experimental validation remain required gaps. No independent complete chemical assignment or spectral validation is claimed.
+
+### Stored representation and source-concept provenance
+
+identity: supported. Targets: naturalproductmech:mibig-157d5d867d.
+
+The complete source row BGC0002082:3 and source-concept hash reproduce this stored representation; this does not establish that the upstream compound label is correct. Formula, charge, Standard and fixed-H distinctions are independently recorded. Primary support and any conflicting exact xref are assessed separately.
+
+### Exact authority eligibility and source representation
+
+provenance: supported. Targets: naturalproductmech:mibig-157d5d867d.
+
+No exact eligible row exists in the committed ChEBI projection for this owner. Current bounded name/key searches do not justify a different congener or a two-star grounding.
+
+### Exact literal chemical identifier scope
+
+representation: supported. Targets: naturalproductmech:mibig-157d5d867d.
+
+Measured exact-literal comparisons: [{"comparison": {"same_charge": true, "same_fixed_h": true, "same_formula": true, "same_full_standard_key": true, "same_standard_inchi": true, "same_stereo_removed_standard": true}, "identifier": "npatlas:NPA033220", "returned_identifier": "NPA033220", "scope": "Exact retained authority response; default strings, fixed-H and stereo precision remain separate"}]. Literal source identifiers retain their exact spelling. Standard identity does not erase fixed-H or stereo differences; no authority graph is automatically adopted.
+
+### ChEBI full-key eligibility and literal serialization
+
+grounding: supported. Targets: naturalproductmech:mibig-157d5d867d.
+
+[{"eligible": false, "id": 221824, "literal_default_comparison": {"same_charge": true, "same_fixed_h": true, "same_formula": true, "same_full_standard_key": true, "same_standard_inchi": true, "same_stereo_removed_standard": true}, "literal_default_parse": true, "mol_comparison": {"same_charge": true, "same_fixed_h": true, "same_formula": true, "same_full_standard_key": true, "same_standard_inchi": true, "same_stereo_removed_standard": true}, "name": "Sesbanimide E", "stars": 2}]. Candidate CHEBI:221824 has 2 stars and matches the retained owner at full Standard key. It is not an eligible three-star full-key replacement. No grounding or source migration is selected.
+
+### Standard identity versus fixed-H channels
+
+representation: supported. Targets: naturalproductmech:mibig-157d5d867d.
+
+The supplied ChEBI MOL and literal default graph match the retained measured graph. Reconstructing the stated Standard InChI preserves the same Standard identity but a distinct measured fixed-H serialization. These are separate channels; no preferred tautomer, natural-hand conclusion or owner defect is selected.
+
+### Positive preprint graph and required final-source scope
+
+representation: unknown. Targets: naturalproductmech:mibig-157d5d867d.
+
+The exact 2020 preprint E4 graph and body match the retained graph with three unset centres; the caption D4 label is explicitly distinguished. Required final 2021 main/SI precision remains uninspected; no final-publication or sibling-hand conclusion follows.
+
+### Primary identity and experimental precision
+
+scope: unknown. Targets: naturalproductmech:mibig-157d5d867d.
+
+Exact BGC0002082:3/version 3, literal NPA033220 and two-star CHEBI:221824 supplied MOL/default agree with retained sesbanimide E. The exact 2020 preprint Figure 1 graph labelled E4 and supported by the body is independently transcribed with three unset centres and fully matches Standard/fixed-H identity. The caption mistakenly says D4; the graph/body crosswalk is explicit. Final 2021 primary-source precision remains required, so this chemical scope stays partial despite the positive preprint graph match.
+
+## Findings
+
+### S437-F-CITATION: Route the Stappia sesbanimide producer and locus citation to the directly supported study
+
+minor / open / confirmed; issue key: mibig-bgc0002082-sesbanimides-citation-scope.
+
+One shared upstream citation-role cause covers the exact C/E/F rows. Independent positive producer/locus provenance remains; only the imported 1998 reference is inapplicable to these retained later claims. The imported 1998 paper concerns marine Agrobacterium PH-103/PH-A034C and A/C, not Stappia PHM037, CP046908 or new E/F. The directly inspected author preprint identifies C3/E4/F5 in PHM037 and explicitly maps CP046908 and BGC0002082. Use this version-qualified primary reference. The published 2021 abstract corroborates named products and strains, but the final main/SI is uninspected. Preserve the raw citation, taxon, chemistry, locus coordinates, SOURCE_ASSERTION and CLUSTER_UNSTATED; no experimental grade upgrade.
+
+## Recommended Actions And Acceptance Checks
+
+### S437-ACT-CITATION
+
+Propose only an exact eight-column maintained citation-routing decision: {"curator": "codex", "date": "2026-10-26", "expected_source_row_sha256": "3ce249b8aae1f99eddbcdfd22841ffa3d3bfb24c9ad95e49afdd453ddc76d76e", "locus_reference": "DOI:10.1101/2020.09.18.303172", "producer_reference": "DOI:10.1101/2020.09.18.303172", "rationale": "The imported 1998 paper concerns marine Agrobacterium PH-103/PH-A034C and A/C, not Stappia PHM037, CP046908 or new E/F. The directly inspected author preprint identifies C3/E4/F5 in PHM037 and explicitly maps CP046908 and BGC0002082. Use this version-qualified primary reference. The published 2021 abstract corroborates named products and strains, but the final main/SI is uninspected. Preserve the raw citation, taxon, chemistry, locus coordinates, SOURCE_ASSERTION and CLUSTER_UNSTATED; no experimental grade upgrade.", "source_id": "BGC0002082:3", "source_reference": "DOI:10.1101/2020.09.18.303172"}. Preserve every raw field, occurrence, chemical representation, producer, locus coordinate and evidence grade. This is proposed curation, not an executed correction.
+
+- Require exactly one current BGC0002082:3 row matching complete SHA256 3ce249b8aae1f99eddbcdfd22841ffa3d3bfb24c9ad95e49afdd453ddc76d76e; fail closed on missing, duplicate or changed input.
+- Use the inspected preprint DOI with its explicit 2020 version scope. Retain the final 2021 main/SI gap; do not claim a final journal full-text read.
+- The existing consumer must receive only its exact eight required table columns; supporting row data and this plan metadata are not additional decision columns.
+- Preserve SOURCE_ASSERTION, CLUSTER_UNSTATED, empty methods, raw 1998 citation, all occurrences and all other owners. No grade promotion, historical taxon replacement or structure change.
+- Any later authorized curation must pass exact-owner reproduction and required native checks; no such execution is performed by this author.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| R437-OWNER | data/natural_products/alkaloids/sesbanimide-e.yaml; Prior bounded root owner read, mechanically verified unchanged against actual post-intake content | supports | Actual post-intake equality preserves 1 occurrence, 1 producer and 1 locus assertions, optional fields and history. The resolved view contains 0 exactly pinned external component(s). The prior complete owner read retains the separate scientific gaps and claim-level source limits. |
+| R437-LOCAL | /private/tmp/npm-review-work/437/local-sources.json; Complete resolved owner and all six captured source sets; seventh set independently compared | context_only | Exact captured rows and separately parsed PubChem rows match frozen preparation. Inventory equality does not establish experimental support. |
+| R437-PUBCHEM-PREP | data/raw/pubchem_bioassay.tsv; Complete exact-key retained assay-row inventory | context_only | This owner has 0 retained rows and 0 written observations. Across the cohort there are no written observations, raw assay rows or no-data sentinels. Raw-only inventory does not establish an omission error or an experimental result. |
+| R437-Q61954856 | https://www.wikidata.org/wiki/Q61954856; Literal retained entity P225/P685 with original source-specific access time | context_only | One literal raw LOTUS route matches both P225 and P685. Identifier validity is separate from publication applicability and stock identity. |
+| R437-TAXON-538381 | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=64%2C305%2C317%2C357%2C379%2C613%2C615%2C1163%2C1167%2C1404%2C47251%2C66431%2C82996%2C103690%2C111781%2C205918%2C538381%2C2002978&amp;retmode=xml; Exact TaxId/ScientificName/rank/parent and OtherNames within retained response | context_only | Retained naming context: 538381: Stappia indica (species). Stappia indica naming does not replace exact PHM037 congener evidence or close the final 2021 main-source gap. Names alone do not prove compound occurrence, native production or physical stock equivalence. |
+| R437-IDENTIFIER-READ | /private/tmp/npm-review-work/shared-next-batch044/root-context/root-identifier-context-read-001.json; Fifteen literal P225/P685 routes across 11 entities and 18 taxa; all exact identifier routes match | context_only | Root read original identifier values and naming context. These do not prove experimental occurrence, production or stock equivalence. |
+| R437-IMODULON | https://imodulondb.org/api/datasets; Complete retained 20-organism/28-dataset catalogue | context_only | The retained catalogue contains 20 organisms and 28 datasets at its original access time. No exact native-producer stock or gene/module/compound association is established. This is bounded catalogue context, not an exhaustive current availability search. |
+| S437-E-ACTUAL-LOCAL | /private/tmp/npm-review-work/437/local-sources.json; Complete resolved owner and captured rows; exact seven-set equality checked | context_only | Complete actual owner/history, resolved view and all seven source sets match the prepared objects mechanically. Complete local owner and raw-row reading is distinct from bounded primary-source applicability and the explicit required source gaps. |
+| S437-E-CONSUMERS | /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py; Current 14373517 locus override473–571, producer/cluster1089–1153, consolidated discussion1497–1518 and shared-structure/unnamed-producer prompts1563–1595 | context_only | Static inspection covers exact source method grading, producer/reference qualification and consumed correction ordering. Current shared-structure replacement and consolidated discussions are separate capabilities; they do not select identity changes or broaden source endpoints. |
+| S437-E-GENERIC-SCHEMA | /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml; ProducerEvidenceBasisEnum and ClusterLinkEvidenceEnum; conf/producer_evidence.tsv and grading.py also read and pinned | context_only | Producer tiers concern evidence in the named organism; cloned-locus experiments are a distinct cluster question. Empty methods and a source assertion do not independently assert native knockout or exact pure-enzyme proof. |
+| S437-E-SEARCH | /private/tmp/npm-review-work/437/science-search.json; Exact read scope | context_only | Exact current curated-decision search is retained. Its scope is the curation tree; it does not establish absence of experimental evidence or all possible consumers. |
+| S437-E-BGC0002082.3 | https://mibig.secondarymetabolites.org/repository/BGC0002082.3/annotations.json; Exact version selected compound/producer/locus/legacy reference roles | partial | Current original database body used for source-role comparison; no automatic primary experimental grade. |
+| S437-E-CLAIM-REF | local:CLAIM-REF; load_claim_references and correct_claim_reference complete functions | context_only | Existing exact selector/full-row guarded citation-only consumer. Producer, locus, chemistry and grades remain unchanged. |
+| S437-E-FORMAL-BINDING | local:FORMAL-BINDING; Current complete owner/history, resolved view and raw-source binding | context_only | Preparation equality is established. Actual official selection, all-ten successful intakes and subsequent root checks must pass before authoring. |
+| S437-E-GRADING | local:GRADING; Current producer and locus grade functions | context_only | Mechanical grade reproduction is distinct from establishing a named native or introduced experimental endpoint. |
+| S437-E-GUARDS | local:GUARDS; All ten owners and seven source sets with complete-row digests | context_only | Complete all-ten owner and seven-source-set guards retain each row, empty set and original field mechanically; they do not broaden any scientific reading scope. |
+| S437-E-INTAKE-VIEW | local:INTAKE-VIEW; All ten raw/expanded digests and empty component sets | context_only | All ten raw and expanded views coincide because no referenced components exist. Complete graph capture does not establish scientific validation. |
+| S437-E-LOCAL | local:LOCAL; 436–440 complete owner/history/seven source sets | context_only | Full local five owner and raw-row reading; all ten mechanical equality across 70 joins separately proven. |
+| S437-E-METHOD-MAP | local:METHOD-MAP; Current method-to-grade mapping | context_only | Imported producer and locus grades address different questions; neither replaces exact-source applicability. |
+| S437-E-PRIMARY-META | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;id=9580130,33734547,29131568,27667141,16671154&amp;retmode=xml; PMIDs 9580130,33734547,29131568,27667141,16671154 titles/abstracts | partial | All five exact records read; 2006 has no abstract. Publication abstract is not full body or exact per-stock congener evidence. |
+| S437-E-ROOT-SOURCE | local:ROOT-SOURCE; Complete bounded source packet and independent peer read | partial | Root read the complete source packet and independent peer within their stated scientific scope. |
+| S437-E-SES-PIXELS | local:SES-PIXELS; four faithful source-page renders | context_only | Direct visual read of 1998 physical page 1/3 and 2020 physical page 3/14; chemistry hand/whole-graph validation delegated. |
+| S437-E-SES20 | DOI:10.1101/2020.09.18.303172; Version 2020-09-26 physical page 3 Results,4 source interpretation,6 congener boundary,7 opening stock provenance,9 accession statement,14 Figure 1 | partial | Author preprint: C3/E4/F5 from native S. indica PHM037; A1/D2 from L. aggregata PHM038. Locus assignment is proposed from bioinformatic/comparative evidence, with an exact CP046908/BGC0002082 statement. The final 2021 main/SI is not obtained. Figure 1 caption mistypes D4 while panel/body agree E4. |
+| S437-E-SES20-TEXT | DOI:10.1101/2020.09.18.303172; selected identity/native-congener/provenance and locus scope paragraphs | partial | Full text retained but manual source reading is bounded, not full methods/spectral/source-graph adjudication. |
+| S437-E-SES98 | DOI:10.7164/antibiotics.51.64; Full four-page extracted body; physical page 1 and 3 original pixels | partial | A from PH-103 and C from PH-A034C. The original taxonomy identifies both as marine Agrobacterium, with a closest fatty-acid comparator rather than exact species identity. It does not study E/F or the PHM037 genome/locus. No operational recipe is compiled. |
+| S437-E-SOURCE-PEER | local:SOURCE-PEER; Complete bounded peer judgments and pin/row checks | partial | Independent source peer is clear within its explicit direct and reused primary read scopes. |
+| S437-E-SOURCE-READ | local:SOURCE-READ; Complete bounded source judgments and declared limits | partial | Frozen five-record source judgments preserve positive native or introduced provenance, three citation-only findings and required access/stock limits. |
+| C437-OWNER | data/natural_products/alkaloids/sesbanimide-e.yaml; Complete owner bytes and seven matching source-row sets mechanically checked; manual chemical identity scope only | supports | The chemical identity fields denote sesbanimide E under naturalproductmech:mibig-157d5d867d. All source selectors, versions and complete row digests are retained in COMPARISON: [{"row_sha256": "3ce249b8aae1f99eddbcdfd22841ffa3d3bfb24c9ad95e49afdd453ddc76d76e", "selector": "BGC0002082:3", "version": "3"}]. The official intake and prepared owner bytes agree. |
+| C437-GRAPH | /private/tmp/npm-review-work/437/chemistry.json; Fresh intake RDKit result and frozen Standard/fixed-H comparison | supports | The stored SMILES recomputes to XFXBXIMGDFFREF-UHFFFAOYSA-N, formula C15H23NO6, formal charge 0; stored InChI/key agree. These are representation checks, not experimental identity proof. |
+| C437-COMPARISON | /private/tmp/npm-review-work/shared-next-batch044/chemistry-prep/retained-graph-comparison.json; Record 437; exact source rows and each graph comparison | supports | Exact Standard, fixed-H, formula, charge and stereo comparisons of the retained owner and complete raw rows; current authority responses and primary proof are separate evidence. |
+| C437-LOCAL-SEARCH | /private/tmp/npm-review-work/437/chemistry-search-receipt.json; Exact full key, label, slug and source selector in raw/owner/curation trees | supports | Ignored-inclusive bounded search preserves all matching paths; an absent curation decision does not imply a missing scientific source. |
+| C437-AUTHORITY-COMPARISON | /private/tmp/npm-review-work/shared-next-batch044/chemistry-prep/authority-graph-comparison.json; Complete literal Standard/fixed-H, formula, charge and stereo comparison; exact source payload pins retained | supports | Current authority graphs and source-specific serialization differences are independently compared. Database agreement is not primary natural-hand proof. |
+| C437-AUTHORITY-DETAIL | /private/tmp/npm-review-work/shared-next-batch044/chemistry-prep/source-plan-002.json; Complete literal Standard/fixed-H, formula, charge and stereo comparison; exact source payload pins retained | supports | Current authority graphs and source-specific serialization differences are independently compared. Database agreement is not primary natural-hand proof. |
+| C437-AUTH-1 | https://mibig.secondarymetabolites.org/repository/BGC0002082.3/annotations.json; Complete retained payload /private/tmp/npm-review-work/shared-next-batch044/chemistry-prep/public-001-retry/BGC0002082.3.json | supports | Exact source representation at its recorded access time; primary identity and natural hand are assessed separately. |
+| C437-AUTH-2 | https://www.npatlas.org/api/v1/compound/NPA033220; Complete retained payload /private/tmp/npm-review-work/shared-next-batch044/chemistry-prep/public-001-retry/NPA033220.json | supports | Exact source representation at its recorded access time; primary identity and natural hand are assessed separately. |
+| C437-AUTH-3 | https://www.ebi.ac.uk/chebi/backend/api/public/compound/221824/; Complete retained payload /private/tmp/npm-review-work/shared-next-batch044/chemistry-prep/public-003/CHEBI221824.json | supports | Exact source representation at its recorded access time; primary identity and natural hand are assessed separately. |
+| C437-AUTH-4 | https://www.ebi.ac.uk/chebi/backend/api/public/molfile/221824/; Complete retained payload /private/tmp/npm-review-work/shared-next-batch044/chemistry-prep/public-003/CHEBI221824.mol | supports | Exact source representation at its recorded access time; primary identity and natural hand are assessed separately. |
+| C437-CHEBI-SEARCH-1 | https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=XFXBXIMGDFFREF-UHFFFAOYSA-N&amp;size=100; Complete bounded key/name response /private/tmp/npm-review-work/shared-next-batch044/chemistry-prep/public-002-retry/chebi-key-437.json | supports | HTTP200; exact source response and candidate eligibility preserved. |
+| C437-SESPREPRINT | DOI:10.1101/2020.09.18.303172; Physical page 14 Figure 1 C3/E4/F5 molecular panels only; source version explicitly preprint.; retained snapshot /private/tmp/npm-review-work/shared-next-batch044/review-support/public-005/sesbanimide2020-preprint.pdf | partial | C3 adds one local hemiketal OH hash relative to 1998; E4/F5 remain plain with F two E relations. Caption D4 conflicts with in-panel/body E4. Final 2021 main/SI are required gaps. |
+| C437-PLAIN-MODELS | local:batch044-plain-models; Reviewed ROOT-executed 431/436–438 exact source depictions.; retained snapshot /private/tmp/npm-review-work/shared-next-batch044/chemistry-prep/primary-mapping-001/primary431436438-plain-comparison-001.json | partial | All four full Standard/fixed-H graphs match with original unspecified centres and F geometry preserved; preprint/final-source limits remain. |
+| C437-LATER-READ | local:prior-bounded-identity-reader; Attributed exact identity/provenance source leads and access/precision limits only; biological applicability judgments remain in the separate science packet.; retained snapshot /private/tmp/npm-review-work/shared-next-batch044/review-support/source-notes-436440-001.json | context_only | Prior reader scope is reused explicitly, without a new full-paper or operational read. |
+| C437-AUTHORITY | local:batch044-authority; Eleven selected MIBiG rows, thirteen literal roles and ten exact-key ChEBI candidate channels.; retained snapshot /private/tmp/npm-review-work/shared-next-batch044/chemistry-prep/authority-graph-comparison.json | partial | All supplied MOL/default channels match retained identity; stated Standard-InChI reconstruction has separate fixed-H forms. Only current literal NPA028494 differs in exact stereo precision. |
+| C437-RETAINED | local:batch044-retained; Ten retained SMILES/InChI/key and selected raw-source graph comparisons.; retained snapshot /private/tmp/npm-review-work/shared-next-batch044/chemistry-prep/retained-graph-comparison.json | partial | ROOT actual diagnostic is reused with no native molecular rerun. |
+| C437-OWNER-READ | local:batch044-owner-read; Ten owners/history/base bytes and seventy source-set mechanical comparisons.; retained snapshot /private/tmp/npm-review-work/shared-next-batch044/chemistry-prep/owner-seven-set-source-freeze-read-001.json | partial | All full-owner/raw manual flags false, mechanical equality true; inline biological graph science excluded. |
+| C437-FIELD-AUDIT | local:batch044-field-audit; Independent complete authority projections and initial primary results read.; retained snapshot /private/tmp/npm-review-work/shared-next-batch044/chemistry-prep/native-authority-and-primary-results-read-001.json | partial | Current 439 exact-xref mismatch is separate from 434 unresolved source discrepancy and all candidate/normalization limits. |
+| C437-CURATION | local:current-guarded-curation-contract; Lines 23–65 and 170–191.; retained snapshot /private/tmp/npm-record-reviews-20261021/docs/CURATION.md | context_only | Candidate three-star/full-key eligibility and historical-versus-current exact-xref semantics are independent contracts. |
+| C437-SOURCE-LIMITS | /private/tmp/npm-review-work/shared-next-batch044/chemistry-prep/source-notes.json; Entry 437: chemical observations, exact authority roles, full raw rows and limitations; retained snapshot /private/tmp/npm-review-work/shared-next-batch044/chemistry-prep/source-notes.json | supports | Frozen source observations, original remote access and local numerical/inspection clocks remain distinct. Only 431, 433 and 435 have completed bounded chemical identity scopes; seven other scopes remain partial. Only 439 has a confirmed current literal-xref stereochemical precision finding; no replacement or new natural-hand conclusion is selected. |
+
+## Limits And Additional Notes
+
+- Context establishes mechanical owner/history/source equality, literal identifier routing and computed classification. Primary production, exact stock and congener claims retain their source-specific gaps. Full graph scientific verification for 431 and operational source science for 432 remain unreviewed. There are no retained assay rows or no-data sentinels; absence of such rows does not establish inactivity. Valid literal routes do not resolve the separate stock, congener or citation applicability boundaries.
+- The final 2021 main/SI and exact locus experimental validation remain required gaps. No independent complete chemical assignment or spectral validation is claimed.
+- Authority matches establish the representations actually returned at their retained access times; they are not independent experimental structure or absolute-hand determinations. Organism, locus, classification and history claims are assessed separately.
+- All manual full-owner/raw scientific flags remain false; complete owner/raw/component equality is mechanical. Current authority identity is not physical-sample purity, producer/assay applicability or natural absolute hand. No candidate or molecular replacement is selected. Original remote access clocks, failed attempts and reused-source metadata limits are preserved. Only the specifically declared chemical scope may be completed; whole-record and biology status remain independent. All ten ChEBI supplied MOL/default channels match retained identity, while reconstruction of stated Standard InChI selects different fixed-H forms; this channel distinction is not an automatic defect. Existing three-star CHEBI:84582 is an owner role; the other nine two-star full-key candidates remain ineligible for promotion. Inline biological graph and pathway science are outside this chemical packet. 2020 preprint and final 2021 publication are distinct source versions; failed final-source access is not evidence of absent assignment or production.
+- Configured consistency only; independent scientific claim support and unrestricted remote authority refresh are not implied.
+- FailedQC001 is retained for an explicit separate network-enabled retry; no artifact will be overwritten.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint and before downstream tests. Its actual exit1/log/input capture/root observation remain pinned; the selected successful canonical QC attempt002 is separately timed. No individual-review validation failure or counter reset is claimed.
+- Configured consistency only; independent scientific claim support and unrestricted remote authority refresh are not implied.
+- Configured consistency only; independent scientific claim support and unrestricted remote authority refresh are not implied.
+- Configured consistency only; independent scientific claim support and unrestricted remote authority refresh are not implied.
+- Configured consistency only; independent scientific claim support and unrestricted remote authority refresh are not implied.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings; this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions and no-adapter pairs; a successful command does not convert these into verified scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population was checked; external caches and generated bytecode are not asserted to be independently byte-pinned.
+- No scientific owner, inventory, curation table, native status or history was edited. Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification; target strict validation ran afresh. Scientific failed or unavailable checks are distinct from bundle validation.
+- Scientific conclusions integrate the chemical, biological and provenance assessments; source access and unresolved scopes remain explicit.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261026T035247Z-sesbanimide-e
+title: Scientific review of sesbanimide E
+started_at: '2026-10-26T03:50:34.829762Z'
+finished_at: '2026-10-26T03:52:47.370720Z'
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: Sesbanimide E is exact E4 in the 2020 preprint body and panel from native
+  PHM037; the caption D4 typo is explicitly distinguished. The three-unset-centre
+  preprint graph matches current retained identity, but final 2021 main/SI precision
+  remains unavailable. The imported 1998 A/C paper does not support this later E producer/locus
+  assertion, supporting the shared minor exact-row citation-only correction. Grades,
+  raw source and occurrences remain unchanged; the review is partial.
+source:
+  git_revision: 14373517042b407747272446f79953ae86d51fa4
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/schizokinen.yaml
+    sha256: b23e6d827ebcb5c40c26ef1c7be553a40f66f1462897ce3aaa5eb2ecb4115992
+    role: context
+  - path: data/natural_products/alkaloids/secimide.yaml
+    sha256: 870d26c0ffbbd8d8937fe802c59af2eb520d20539de4bb89cbac5c7feb764696
+    role: context
+  - path: data/natural_products/alkaloids/serratiochelin-a.yaml
+    sha256: 4a22e00343f800cc88e32a7381e371c731682615e217d55db6a3ff9f39bc0e3b
+    role: context
+  - path: data/natural_products/alkaloids/serratiochelin-b.yaml
+    sha256: 4cb6d7ecea0df6464139853f6f28d5158109f56900c3a55ac85136508ca97859
+    role: context
+  - path: data/natural_products/alkaloids/serratiochelin-c.yaml
+    sha256: 2c854b895f431d74dda91d1c7a985c23aa25dfcac24496ba90f3f484b938402d
+    role: context
+  - path: data/natural_products/alkaloids/sesbanimide-c.yaml
+    sha256: 3825e2102ccbc9f2c9c684ba5c1a01f8a6f96fd8d5e30c014583fb9a8f0e284c
+    role: context
+  - path: data/natural_products/alkaloids/sesbanimide-e.yaml
+    sha256: afed9936257750616dc7bbd1dde2efa5048c65cb1d7fff1dcc41b227799098ec
+    role: target
+  - path: data/natural_products/alkaloids/sesbanimide-f.yaml
+    sha256: 981e7c65e2fe5fb61275727b6d39630186c71a600795e848401f156f3c102434
+    role: context
+  - path: data/natural_products/alkaloids/sf2768.yaml
+    sha256: b4e7ef33b371769068e414fb4d9216031c473675ab5019c19d24b329f2be5435
+    role: context
+  - path: data/natural_products/alkaloids/siphonazole.yaml
+    sha256: 42f862b878d35cd6022b79655d365471e1f34f0dc9b53d8fc41b5d044cac75b0
+    role: context
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/lotus_exclusions.py
+    sha256: 6352cac7c587eab5a56d907c523cc899d02d197009081624bf8649c675ee30f7
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: 11808e60990b3520dbe8f9c50f6574f54cd32165185577a699f988c77f3d27ec
+    role: context
+  - path: src/naturalproductmech/curate/xref_exclusions.py
+    sha256: 17c3d9e7794bae596b22cf19a2dd5bc2169475d6fea81ea4e6f1781a53af9157
+    role: context
+  - path: src/naturalproductmech/grading.py
+    sha256: ece54c4a2c0803f034ac59de51b1006cf79ea8d6b6256d75757d4adb88ea9630
+    role: context
+  - path: src/naturalproductmech/graph_components.py
+    sha256: 10f08517869f482954fd583fd19d5750ef286a76297c231e6c9a5ba8dc023e17
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: tests/test_xref_exclusions.py
+    sha256: 3f26bef1b535e782a8ef33b3133f7a9172b03cfb5188cddc3c8a2ff55899dc48
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 437, batch 044, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated targets in earlier
+    batch commits (publication tracked separately). At selection, 498 of 3116 current
+    records had campaign coverage and 2618 remained. The population search included
+    ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-157d5d867d
+targets:
+- target_id: naturalproductmech:mibig-157d5d867d
+  path: data/natural_products/alkaloids/sesbanimide-e.yaml
+  label: sesbanimide E
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-157d5d867d
+  command: just validate-strict data/natural_products/alkaloids/sesbanimide-e.yaml
+    --out /private/tmp/npm-review-work/437/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-26T03:50:37.905754Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its
+    pinned path.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-corpus-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.783967Z;
+    finished 2026-10-25T22:37:16.453216Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.log.
+    Reused for batch044 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch044. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-157d5d867d
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: Fresh canonical reproduction gate passed:all3116 records byte-identical
+    to source seeding; source warnings remain retained.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-reproduction-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784055Z;
+    finished 2026-10-25T22:37:31.682209Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.log.
+    Reused for batch044 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch044. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-157d5d867d
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: Fresh deterministic review queue completed:8922 rows across12 queues. Queue
+    output is not scientific-review coverage.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-review-queue-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just review-queue --tsv /private/tmp/npm-review-queue-batch-036-fresh14373517-001.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.781802Z;
+    finished 2026-10-25T22:37:08.229737Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.log.
+    Reused for batch044 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch044. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-157d5d867d
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking
+    mismatches and4898no-adapter skips remain explicit.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-validate-products-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784040Z;
+    finished 2026-10-25T22:37:32.251879Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.log.
+    Reused for batch044 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch044. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-157d5d867d
+- check_id: shared-qc
+  name: Full repository quality gate on the fresh main baseline
+  status: passed
+  required: true
+  summary: Canonical just qc completed with actual terminal exit0:1024 tests passed,4
+    skipped,2 dependency warnings;3116 records passed closed schema validation, site
+    freshness, byte reproduction and lockfile integrity.22 governed artifacts and15
+    raw inventories passed. Prior DNS failed001 remains preserved.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-qc-attempt-002
+    PYTHONDONTWRITEBYTECODE=1 just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-002 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:40:55.179857Z;
+    finished 2026-10-25T22:46:28.974296Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.log.
+    Reused for batch044 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch044. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-157d5d867d
+- check_id: R437-FULL-OWNER
+  name: Complete owner and seven-set fidelity
+  status: passed
+  required: true
+  summary: All ten successful actual intakes and chronological post-intake root bindings
+    must precede authoring. Complete raw owners, 25 ordered history events and 70
+    source joins must match. No referenced components, emitted bioactivities, raw
+    assay rows or no-data sentinels occur. Root full scientific owner reading remains
+    false for 431 and 432 and true for the local assertions of 433–440; all raw source
+    sets were read. Complete graph equality is mechanical and does not validate its
+    scientific claims.
+  target_ids:
+  - naturalproductmech:mibig-157d5d867d
+  evidence_ids:
+  - R437-OWNER
+  - R437-LOCAL
+  - R437-PUBCHEM-PREP
+- check_id: S437-C-LOCAL
+  name: actual all-ten intake and source equality
+  status: passed
+  required: true
+  summary: All ten official intakes and subsequent root equality receipts passed before
+    this section was authored; complete raw owners, resolved views and all seven source
+    sets were checked mechanically.
+  target_ids:
+  - naturalproductmech:mibig-157d5d867d
+  evidence_ids:
+  - S437-E-ACTUAL-LOCAL
+  - S437-E-GUARDS
+  - S437-E-INTAKE-VIEW
+  - S437-E-FORMAL-BINDING
+- check_id: S437-C-GRADING
+  name: source-grade reproduction
+  status: passed
+  required: true
+  summary: Producer and locus grades reproduce imported vocabulary; this is separate
+    from experimental applicability within the declared source scope.
+  target_ids:
+  - naturalproductmech:mibig-157d5d867d
+  evidence_ids:
+  - S437-E-GUARDS
+  - S437-E-METHOD-MAP
+  - S437-E-GRADING
+- check_id: S437-C-POSITIVE-SOURCE
+  name: bounded positive source support
+  status: passed
+  required: true
+  summary: Exact named-product provenance is positively supported within the declared
+    original-source versions and limits.
+  target_ids:
+  - naturalproductmech:mibig-157d5d867d
+  evidence_ids:
+  - S437-E-SES98
+  - S437-E-SES20
+  - S437-E-SES20-TEXT
+  - S437-E-SES-PIXELS
+  - S437-E-PRIMARY-META
+  - S437-E-BGC0002082.3
+  - S437-E-CLAIM-REF
+- check_id: S437-C-REQUIRED-SOURCE
+  name: required original-source applicability
+  status: unavailable
+  required: true
+  summary: The final 2021 main/SI and exact locus experimental validation remain required
+    gaps. No independent complete chemical assignment or spectral validation is claimed.
+  target_ids:
+  - naturalproductmech:mibig-157d5d867d
+  evidence_ids:
+  - S437-E-SES98
+  - S437-E-SES20
+  - S437-E-SES20-TEXT
+  - S437-E-SES-PIXELS
+  - S437-E-PRIMARY-META
+  - S437-E-BGC0002082.3
+  - S437-E-CLAIM-REF
+  - S437-E-SOURCE-READ
+  - S437-E-SOURCE-PEER
+- check_id: S437-C-CITATION
+  name: exact imported producer and locus citation applicability
+  status: failed
+  required: true
+  summary: The imported 1998 A/C reference does not support the later Stappia PHM037
+    producer and CP046908 locus assertion. The directly inspected 2020 author preprint
+    supplies bounded citation support; the final 2021 main remains unavailable.
+  target_ids:
+  - naturalproductmech:mibig-157d5d867d
+  evidence_ids:
+  - S437-E-SES98
+  - S437-E-SES20
+  - S437-E-SES20-TEXT
+  - S437-E-BGC0002082.3
+  - S437-E-CLAIM-REF
+  - S437-E-GUARDS
+- check_id: C437-C-REPRESENTATION
+  name: Stored chemical representation and complete source row
+  status: passed
+  required: true
+  summary: Fresh intake derivation agrees with the stored graph; the source selector,
+    full row and prepared snapshot were independently rechecked.
+  target_ids:
+  - naturalproductmech:mibig-157d5d867d
+  evidence_ids:
+  - C437-OWNER
+  - C437-GRAPH
+  - C437-COMPARISON
+- check_id: C437-C-LITERAL-SCOPE
+  name: Exact literal chemical authority scope
+  status: passed
+  required: true
+  summary: Selected current literal authority representations match the retained graph
+    within their measured channels. Supplied MOL/default strings and reconstructed
+    stated Standard InChI retain separately measured fixed-H results; no fixed-H agreement
+    is inferred where the actual report differs.
+  target_ids:
+  - naturalproductmech:mibig-157d5d867d
+  evidence_ids:
+  - C437-SESPREPRINT
+  - C437-PLAIN-MODELS
+  - C437-LATER-READ
+  - C437-AUTHORITY
+  - C437-RETAINED
+  - C437-OWNER-READ
+  - C437-FIELD-AUDIT
+  - C437-CURATION
+  - C437-SOURCE-LIMITS
+  - C437-OWNER
+  - C437-GRAPH
+  - C437-COMPARISON
+  - C437-AUTHORITY-COMPARISON
+  - C437-AUTHORITY-DETAIL
+  - C437-AUTH-1
+  - C437-AUTH-2
+  - C437-AUTH-3
+  - C437-AUTH-4
+- check_id: C437-C-PRIMARY-SCOPE
+  name: Exact named primary chemical structure
+  status: unavailable
+  required: true
+  summary: Exact BGC0002082:3/version 3, literal NPA033220 and two-star CHEBI:221824
+    supplied MOL/default agree with retained sesbanimide E. The exact 2020 preprint
+    Figure 1 graph labelled E4 and supported by the body is independently transcribed
+    with three unset centres and fully matches Standard/fixed-H identity. The caption
+    mistakenly says D4; the graph/body crosswalk is explicit. Final 2021 primary-source
+    precision remains required, so this chemical scope stays partial despite the positive
+    preprint graph match.
+  target_ids:
+  - naturalproductmech:mibig-157d5d867d
+  evidence_ids:
+  - C437-SESPREPRINT
+  - C437-PLAIN-MODELS
+  - C437-LATER-READ
+  - C437-AUTHORITY
+  - C437-RETAINED
+  - C437-OWNER-READ
+  - C437-FIELD-AUDIT
+  - C437-CURATION
+  - C437-SOURCE-LIMITS
+  - C437-OWNER
+  - C437-GRAPH
+  - C437-COMPARISON
+  - C437-AUTHORITY-COMPARISON
+  - C437-AUTHORITY-DETAIL
+  - C437-AUTH-1
+  - C437-AUTH-2
+  - C437-AUTH-3
+  - C437-AUTH-4
+- check_id: C437-C-EXPERIMENTAL-PRECISION
+  name: Source chemical assignment and represented precision
+  status: unavailable
+  required: true
+  summary: Required final 2021 main/SI chemical precision remains uninspected despite
+    exact preprint E4 graph agreement.
+  target_ids:
+  - naturalproductmech:mibig-157d5d867d
+  evidence_ids:
+  - C437-SESPREPRINT
+  - C437-PLAIN-MODELS
+  - C437-LATER-READ
+  - C437-AUTHORITY
+  - C437-RETAINED
+  - C437-OWNER-READ
+  - C437-FIELD-AUDIT
+  - C437-CURATION
+  - C437-SOURCE-LIMITS
+  - C437-OWNER
+  - C437-GRAPH
+  - C437-COMPARISON
+  - C437-AUTHORITY-COMPARISON
+  - C437-AUTHORITY-DETAIL
+  - C437-AUTH-1
+  - C437-AUTH-2
+  - C437-AUTH-3
+  - C437-AUTH-4
+evidence:
+- evidence_id: R437-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/sesbanimide-e.yaml
+  locator: Prior bounded root owner read, mechanically verified unchanged against
+    actual post-intake content
+  accessed_at: '2026-10-26T03:51:08.701595Z'
+  support: supports
+  summary: Actual post-intake equality preserves 1 occurrence, 1 producer and 1 locus
+    assertions, optional fields and history. The resolved view contains 0 exactly
+    pinned external component(s). The prior complete owner read retains the separate
+    scientific gaps and claim-level source limits.
+  snapshot_sha256: afed9936257750616dc7bbd1dde2efa5048c65cb1d7fff1dcc41b227799098ec
+- evidence_id: R437-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/437/local-sources.json
+  locator: Complete resolved owner and all six captured source sets; seventh set independently
+    compared
+  accessed_at: '2026-10-26T03:51:08.701595Z'
+  support: context_only
+  summary: Exact captured rows and separately parsed PubChem rows match frozen preparation.
+    Inventory equality does not establish experimental support.
+  snapshot_sha256: 821d2145798b09cf127ff91484202ee28e58890d23d1a042047bfe8e3f7ae48d
+- evidence_id: R437-PUBCHEM-PREP
+  kind: record_content
+  reference: data/raw/pubchem_bioassay.tsv
+  locator: Complete exact-key retained assay-row inventory
+  accessed_at: '2026-10-26T03:51:08.701595Z'
+  support: context_only
+  summary: This owner has 0 retained rows and 0 written observations. Across the cohort
+    there are no written observations, raw assay rows or no-data sentinels. Raw-only
+    inventory does not establish an omission error or an experimental result.
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: R437-Q61954856
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q61954856
+  locator: Literal retained entity P225/P685 with original source-specific access
+    time
+  accessed_at: '2026-10-26T01:26:56.558126Z'
+  support: context_only
+  summary: One literal raw LOTUS route matches both P225 and P685. Identifier validity
+    is separate from publication applicability and stock identity.
+  snapshot_sha256: 3c6adef847b2148a69a037b45b673e294fa8dc718d7f883142ffebd6e653222d
+- evidence_id: R437-TAXON-538381
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=64%2C305%2C317%2C357%2C379%2C613%2C615%2C1163%2C1167%2C1404%2C47251%2C66431%2C82996%2C103690%2C111781%2C205918%2C538381%2C2002978&retmode=xml
+  locator: Exact TaxId/ScientificName/rank/parent and OtherNames within retained response
+  accessed_at: '2026-10-26T01:26:56.519876Z'
+  support: context_only
+  summary: 'Retained naming context: 538381: Stappia indica (species). Stappia indica
+    naming does not replace exact PHM037 congener evidence or close the final 2021
+    main-source gap. Names alone do not prove compound occurrence, native production
+    or physical stock equivalence.'
+  snapshot_sha256: 1239085718bd19bbd5ce0f793586a37a62eca36f9dd20c49c7bad8b1b07baf1a
+- evidence_id: R437-IDENTIFIER-READ
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch044/root-context/root-identifier-context-read-001.json
+  locator: Fifteen literal P225/P685 routes across 11 entities and 18 taxa; all exact
+    identifier routes match
+  accessed_at: '2026-10-26T01:27:55.607454Z'
+  support: context_only
+  summary: Root read original identifier values and naming context. These do not prove
+    experimental occurrence, production or stock equivalence.
+  snapshot_sha256: 0215d12732d6d00ae406433d38cb1019698eaa82aa8085d1623ef6c5ba32a7a0
+- evidence_id: R437-IMODULON
+  kind: database
+  reference: https://imodulondb.org/api/datasets
+  locator: Complete retained 20-organism/28-dataset catalogue
+  accessed_at: '2026-10-22T04:52:27.596517Z'
+  support: context_only
+  summary: The retained catalogue contains 20 organisms and 28 datasets at its original
+    access time. No exact native-producer stock or gene/module/compound association
+    is established. This is bounded catalogue context, not an exhaustive current availability
+    search.
+  snapshot_sha256: 155607e7023efdead5ebab3919279a0776d5665a7de9e28b67f02f8f521b0693
+- evidence_id: S437-E-ACTUAL-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/437/local-sources.json
+  locator: Complete resolved owner and captured rows; exact seven-set equality checked
+  accessed_at: '2026-10-26T03:51:56.511703Z'
+  support: context_only
+  summary: Complete actual owner/history, resolved view and all seven source sets
+    match the prepared objects mechanically. Complete local owner and raw-row reading
+    is distinct from bounded primary-source applicability and the explicit required
+    source gaps.
+  snapshot_sha256: 821d2145798b09cf127ff91484202ee28e58890d23d1a042047bfe8e3f7ae48d
+- evidence_id: S437-E-CONSUMERS
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: Current 14373517 locus override473–571, producer/cluster1089–1153, consolidated
+    discussion1497–1518 and shared-structure/unnamed-producer prompts1563–1595
+  accessed_at: '2026-10-26T03:51:56.511703Z'
+  support: context_only
+  summary: Static inspection covers exact source method grading, producer/reference
+    qualification and consumed correction ordering. Current shared-structure replacement
+    and consolidated discussions are separate capabilities; they do not select identity
+    changes or broaden source endpoints.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: S437-E-GENERIC-SCHEMA
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: ProducerEvidenceBasisEnum and ClusterLinkEvidenceEnum; conf/producer_evidence.tsv
+    and grading.py also read and pinned
+  accessed_at: '2026-10-26T03:51:56.511703Z'
+  support: context_only
+  summary: Producer tiers concern evidence in the named organism; cloned-locus experiments
+    are a distinct cluster question. Empty methods and a source assertion do not independently
+    assert native knockout or exact pure-enzyme proof.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: S437-E-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/437/science-search.json
+  locator: Exact read scope
+  accessed_at: '2026-10-26T03:51:56.519073Z'
+  support: context_only
+  summary: Exact current curated-decision search is retained. Its scope is the curation
+    tree; it does not establish absence of experimental evidence or all possible consumers.
+  snapshot_sha256: 50b873af2df6e0208967335bae6d450a4d7f9cbb21f65474d3045466b22e7c7f
+  search_scope: rg --no-ignore --hidden -n -F over curation using exact identifier,
+    label, full key and source accessions
+- evidence_id: S437-E-BGC0002082.3
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0002082.3/annotations.json
+  locator: Exact version selected compound/producer/locus/legacy reference roles
+  accessed_at: '2026-10-26T01:25:28.324037Z'
+  support: partial
+  summary: Current original database body used for source-role comparison; no automatic
+    primary experimental grade.
+  snapshot_sha256: a32f1b0701e1465ba1ea96a96c9a26a12409e8778a1b208f592714c2762bb14b
+- evidence_id: S437-E-CLAIM-REF
+  kind: record_content
+  reference: local:CLAIM-REF
+  locator: load_claim_references and correct_claim_reference complete functions
+  accessed_at: '2026-10-26T01:32:27.125040Z'
+  support: context_only
+  summary: Existing exact selector/full-row guarded citation-only consumer. Producer,
+    locus, chemistry and grades remain unchanged.
+  snapshot_sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+- evidence_id: S437-E-FORMAL-BINDING
+  kind: prior_review
+  reference: local:FORMAL-BINDING
+  locator: Current complete owner/history, resolved view and raw-source binding
+  accessed_at: '2026-10-26T01:39:29.562822Z'
+  support: context_only
+  summary: Preparation equality is established. Actual official selection, all-ten
+    successful intakes and subsequent root checks must pass before authoring.
+  snapshot_sha256: 01d67113fcf72036bdd40caa92020f4902d6eb243c53285bb104e483331355d2
+- evidence_id: S437-E-GRADING
+  kind: record_content
+  reference: local:GRADING
+  locator: Current producer and locus grade functions
+  accessed_at: '2026-10-26T01:39:29.562822Z'
+  support: context_only
+  summary: Mechanical grade reproduction is distinct from establishing a named native
+    or introduced experimental endpoint.
+  snapshot_sha256: ece54c4a2c0803f034ac59de51b1006cf79ea8d6b6256d75757d4adb88ea9630
+- evidence_id: S437-E-GUARDS
+  kind: record_content
+  reference: local:GUARDS
+  locator: All ten owners and seven source sets with complete-row digests
+  accessed_at: '2026-10-26T01:39:29.562822Z'
+  support: context_only
+  summary: Complete all-ten owner and seven-source-set guards retain each row, empty
+    set and original field mechanically; they do not broaden any scientific reading
+    scope.
+  snapshot_sha256: ab31462304c43c1282e68461a05e6ebb472e92e25bb0e551d3135cb2da139060
+- evidence_id: S437-E-INTAKE-VIEW
+  kind: prior_review
+  reference: local:INTAKE-VIEW
+  locator: All ten raw/expanded digests and empty component sets
+  accessed_at: '2026-10-26T01:38:31.505935Z'
+  support: context_only
+  summary: All ten raw and expanded views coincide because no referenced components
+    exist. Complete graph capture does not establish scientific validation.
+  snapshot_sha256: 5a484e4868bd7ea8ff65482a24152382c9093e91edfb0bc92abe2deb71de83d3
+- evidence_id: S437-E-LOCAL
+  kind: record_content
+  reference: local:LOCAL
+  locator: 436–440 complete owner/history/seven source sets
+  accessed_at: '2026-10-26T01:32:27.125040Z'
+  support: context_only
+  summary: Full local five owner and raw-row reading; all ten mechanical equality
+    across 70 joins separately proven.
+  snapshot_sha256: 0adc828c63513b3ef353e95520b31cf91590666083818de14d8a5dafca9ae0e9
+- evidence_id: S437-E-METHOD-MAP
+  kind: record_content
+  reference: local:METHOD-MAP
+  locator: Current method-to-grade mapping
+  accessed_at: '2026-10-26T01:39:29.562822Z'
+  support: context_only
+  summary: Imported producer and locus grades address different questions; neither
+    replaces exact-source applicability.
+  snapshot_sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+- evidence_id: S437-E-PRIMARY-META
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=9580130,33734547,29131568,27667141,16671154&retmode=xml
+  locator: PMIDs 9580130,33734547,29131568,27667141,16671154 titles/abstracts
+  accessed_at: '2026-10-26T01:26:14.576846Z'
+  support: partial
+  summary: All five exact records read; 2006 has no abstract. Publication abstract
+    is not full body or exact per-stock congener evidence.
+  snapshot_sha256: 54db2d33909f19064eb75b236b33e3e91683a50b9873038881bd9c355f597810
+- evidence_id: S437-E-ROOT-SOURCE
+  kind: prior_review
+  reference: local:ROOT-SOURCE
+  locator: Complete bounded source packet and independent peer read
+  accessed_at: '2026-10-26T01:37:24.031574Z'
+  support: partial
+  summary: Root read the complete source packet and independent peer within their
+    stated scientific scope.
+  snapshot_sha256: 488432b9eaeeec94f421d5a163a6daa2dfe84356100de332cd2dec1ef395fcb8
+- evidence_id: S437-E-SES-PIXELS
+  kind: record_content
+  reference: local:SES-PIXELS
+  locator: four faithful source-page renders
+  accessed_at: '2026-10-26T01:32:27.125040Z'
+  support: context_only
+  summary: Direct visual read of 1998 physical page 1/3 and 2020 physical page 3/14;
+    chemistry hand/whole-graph validation delegated.
+  snapshot_sha256: 3201bd9cff35b5ec7b5f6dd8b1ff695add1dbee61bbd60b244e1c8729be39cbd
+- evidence_id: S437-E-SES20
+  kind: primary_source
+  reference: DOI:10.1101/2020.09.18.303172
+  locator: Version 2020-09-26 physical page 3 Results,4 source interpretation,6 congener
+    boundary,7 opening stock provenance,9 accession statement,14 Figure 1
+  accessed_at: '2026-10-26T01:27:26.639547Z'
+  support: partial
+  summary: 'Author preprint: C3/E4/F5 from native S. indica PHM037; A1/D2 from L.
+    aggregata PHM038. Locus assignment is proposed from bioinformatic/comparative
+    evidence, with an exact CP046908/BGC0002082 statement. The final 2021 main/SI
+    is not obtained. Figure 1 caption mistypes D4 while panel/body agree E4.'
+  snapshot_sha256: 92ec33fb82b786e6adb213a9acbf6ce9e2e7b8bc677b88f1485ab14088f9a99b
+- evidence_id: S437-E-SES20-TEXT
+  kind: primary_source
+  reference: DOI:10.1101/2020.09.18.303172
+  locator: selected identity/native-congener/provenance and locus scope paragraphs
+  accessed_at: '2026-10-26T01:32:27.125040Z'
+  support: partial
+  summary: Full text retained but manual source reading is bounded, not full methods/spectral/source-graph
+    adjudication.
+  snapshot_sha256: a21c2655a82a9070aa3a4cb389ca1db409b9e118d1f44f6cf88f51f4d68e9a4d
+- evidence_id: S437-E-SES98
+  kind: primary_source
+  reference: DOI:10.7164/antibiotics.51.64
+  locator: Full four-page extracted body; physical page 1 and 3 original pixels
+  accessed_at: '2026-10-26T01:26:30.404741Z'
+  support: partial
+  summary: A from PH-103 and C from PH-A034C. The original taxonomy identifies both
+    as marine Agrobacterium, with a closest fatty-acid comparator rather than exact
+    species identity. It does not study E/F or the PHM037 genome/locus. No operational
+    recipe is compiled.
+  snapshot_sha256: c1f7d91c1acacf024e25167f95acaecaa3a8aabf524f086f7087513704229174
+- evidence_id: S437-E-SOURCE-PEER
+  kind: prior_review
+  reference: local:SOURCE-PEER
+  locator: Complete bounded peer judgments and pin/row checks
+  accessed_at: '2026-10-26T01:36:33.026006Z'
+  support: partial
+  summary: Independent source peer is clear within its explicit direct and reused
+    primary read scopes.
+  snapshot_sha256: db39c3cf49aa62edd653645df9a85488df7cff05d967251b24fae00fcbb79122
+- evidence_id: S437-E-SOURCE-READ
+  kind: prior_review
+  reference: local:SOURCE-READ
+  locator: Complete bounded source judgments and declared limits
+  accessed_at: '2026-10-26T01:32:27.125040Z'
+  support: partial
+  summary: Frozen five-record source judgments preserve positive native or introduced
+    provenance, three citation-only findings and required access/stock limits.
+  snapshot_sha256: b27981d669e60c242105f99caba26c6a1fee143e9f31076d8aae3204248e7789
+- evidence_id: C437-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/sesbanimide-e.yaml
+  locator: Complete owner bytes and seven matching source-row sets mechanically checked;
+    manual chemical identity scope only
+  accessed_at: '2026-10-26T03:52:11.264473Z'
+  support: supports
+  summary: 'The chemical identity fields denote sesbanimide E under naturalproductmech:mibig-157d5d867d.
+    All source selectors, versions and complete row digests are retained in COMPARISON:
+    [{"row_sha256": "3ce249b8aae1f99eddbcdfd22841ffa3d3bfb24c9ad95e49afdd453ddc76d76e",
+    "selector": "BGC0002082:3", "version": "3"}]. The official intake and prepared
+    owner bytes agree.'
+  snapshot_sha256: afed9936257750616dc7bbd1dde2efa5048c65cb1d7fff1dcc41b227799098ec
+- evidence_id: C437-GRAPH
+  kind: validation
+  reference: /private/tmp/npm-review-work/437/chemistry.json
+  locator: Fresh intake RDKit result and frozen Standard/fixed-H comparison
+  accessed_at: '2026-10-26T03:50:35.983773Z'
+  support: supports
+  summary: The stored SMILES recomputes to XFXBXIMGDFFREF-UHFFFAOYSA-N, formula C15H23NO6,
+    formal charge 0; stored InChI/key agree. These are representation checks, not
+    experimental identity proof.
+  snapshot_sha256: 855f19c07b30af0f5677e6b9a5a16b7ad704b4d4345234166447e6c239bf6816
+- evidence_id: C437-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch044/chemistry-prep/retained-graph-comparison.json
+  locator: Record 437; exact source rows and each graph comparison
+  accessed_at: '2026-10-26T01:25:11.338712Z'
+  support: supports
+  summary: Exact Standard, fixed-H, formula, charge and stereo comparisons of the
+    retained owner and complete raw rows; current authority responses and primary
+    proof are separate evidence.
+  snapshot_sha256: 7f1cb8fcdc50877b401bb6a60cbd1118deb9faad18392c3d4d4eba6613cedddf
+- evidence_id: C437-LOCAL-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/437/chemistry-search-receipt.json
+  locator: Exact full key, label, slug and source selector in raw/owner/curation trees
+  accessed_at: '2026-10-26T03:52:11.517650Z'
+  support: supports
+  summary: Ignored-inclusive bounded search preserves all matching paths; an absent
+    curation decision does not imply a missing scientific source.
+  snapshot_sha256: 09b3fbc5284462319f7c628824652c73b91ec5d44c479e9bb4abdc9fe0664267
+  search_scope: rg --no-ignore --hidden; data/natural_products, data/raw and curation;
+    exact full key, current label, slug and BGC:compound_index. No claim beyond these
+    trees.
+- evidence_id: C437-AUTHORITY-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch044/chemistry-prep/authority-graph-comparison.json
+  locator: Complete literal Standard/fixed-H, formula, charge and stereo comparison;
+    exact source payload pins retained
+  accessed_at: '2026-10-26T01:30:00.533491Z'
+  support: supports
+  summary: Current authority graphs and source-specific serialization differences
+    are independently compared. Database agreement is not primary natural-hand proof.
+  snapshot_sha256: 439f5f07f747821382bcad0603a8567fcb12b70b48ff8421cc7c3e0965cfb1f7
+- evidence_id: C437-AUTHORITY-DETAIL
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch044/chemistry-prep/source-plan-002.json
+  locator: Complete literal Standard/fixed-H, formula, charge and stereo comparison;
+    exact source payload pins retained
+  accessed_at: '2026-10-26T01:47:31.469595Z'
+  support: supports
+  summary: Current authority graphs and source-specific serialization differences
+    are independently compared. Database agreement is not primary natural-hand proof.
+  snapshot_sha256: c31288e1f648f0f12f9d27d8a9b673a1e6ef673d65c0e064ec76fea7b485a594
+- evidence_id: C437-AUTH-1
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0002082.3/annotations.json
+  locator: Complete retained payload /private/tmp/npm-review-work/shared-next-batch044/chemistry-prep/public-001-retry/BGC0002082.3.json
+  accessed_at: '2026-10-26T01:25:28.324037Z'
+  support: supports
+  summary: Exact source representation at its recorded access time; primary identity
+    and natural hand are assessed separately.
+  snapshot_sha256: a32f1b0701e1465ba1ea96a96c9a26a12409e8778a1b208f592714c2762bb14b
+- evidence_id: C437-AUTH-2
+  kind: authority
+  reference: https://www.npatlas.org/api/v1/compound/NPA033220
+  locator: Complete retained payload /private/tmp/npm-review-work/shared-next-batch044/chemistry-prep/public-001-retry/NPA033220.json
+  accessed_at: '2026-10-26T01:25:28.218194Z'
+  support: supports
+  summary: Exact source representation at its recorded access time; primary identity
+    and natural hand are assessed separately.
+  snapshot_sha256: 10852637854c5a597c730a3b542c96335c4615807a8b81527bc1e31ed8345c92
+- evidence_id: C437-AUTH-3
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/221824/
+  locator: Complete retained payload /private/tmp/npm-review-work/shared-next-batch044/chemistry-prep/public-003/CHEBI221824.json
+  accessed_at: '2026-10-26T01:26:23.546112Z'
+  support: supports
+  summary: Exact source representation at its recorded access time; primary identity
+    and natural hand are assessed separately.
+  snapshot_sha256: e8a32d07e2a64b23b37f8c32e662d2701ae8a89684afa226c91f5addd0c99b7f
+- evidence_id: C437-AUTH-4
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/221824/
+  locator: Complete retained payload /private/tmp/npm-review-work/shared-next-batch044/chemistry-prep/public-003/CHEBI221824.mol
+  accessed_at: '2026-10-26T01:26:23.771907Z'
+  support: supports
+  summary: Exact source representation at its recorded access time; primary identity
+    and natural hand are assessed separately.
+  snapshot_sha256: e8c8512abc6c52951632f619dff5a07bd81c48b99fa487afc9952e0daa07db55
+- evidence_id: C437-CHEBI-SEARCH-1
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=XFXBXIMGDFFREF-UHFFFAOYSA-N&size=100
+  locator: Complete bounded key/name response /private/tmp/npm-review-work/shared-next-batch044/chemistry-prep/public-002-retry/chebi-key-437.json
+  accessed_at: '2026-10-26T01:25:35.185046Z'
+  support: supports
+  summary: HTTP200; exact source response and candidate eligibility preserved.
+  snapshot_sha256: 2a831aa9799b85ebf95f7f4d8ae8f72a7d78ba1663d5ee30b62b858b438b01e7
+  search_scope: Official ChEBI exact literal key/name request, size100; complete returned
+    payload. No global absence inference.
+- evidence_id: C437-SESPREPRINT
+  kind: primary_source
+  reference: DOI:10.1101/2020.09.18.303172
+  locator: Physical page 14 Figure 1 C3/E4/F5 molecular panels only; source version
+    explicitly preprint.; retained snapshot /private/tmp/npm-review-work/shared-next-batch044/review-support/public-005/sesbanimide2020-preprint.pdf
+  accessed_at: '2026-10-26T01:27:26.639547Z'
+  support: partial
+  summary: C3 adds one local hemiketal OH hash relative to 1998; E4/F5 remain plain
+    with F two E relations. Caption D4 conflicts with in-panel/body E4. Final 2021
+    main/SI are required gaps.
+  snapshot_sha256: 92ec33fb82b786e6adb213a9acbf6ce9e2e7b8bc677b88f1485ab14088f9a99b
+- evidence_id: C437-PLAIN-MODELS
+  kind: validation
+  reference: local:batch044-plain-models
+  locator: Reviewed ROOT-executed 431/436–438 exact source depictions.; retained snapshot
+    /private/tmp/npm-review-work/shared-next-batch044/chemistry-prep/primary-mapping-001/primary431436438-plain-comparison-001.json
+  accessed_at: '2026-10-26T01:35:52.472922Z'
+  support: partial
+  summary: All four full Standard/fixed-H graphs match with original unspecified centres
+    and F geometry preserved; preprint/final-source limits remain.
+  snapshot_sha256: b8ccd03e76fe2efd9502fe82fc8617dc5909eea2aee6e64e1ed80e7aef436f48
+- evidence_id: C437-LATER-READ
+  kind: prior_review
+  reference: local:prior-bounded-identity-reader
+  locator: Attributed exact identity/provenance source leads and access/precision
+    limits only; biological applicability judgments remain in the separate science
+    packet.; retained snapshot /private/tmp/npm-review-work/shared-next-batch044/review-support/source-notes-436440-001.json
+  accessed_at: '2026-10-26T01:32:27.125040Z'
+  support: context_only
+  summary: Prior reader scope is reused explicitly, without a new full-paper or operational
+    read.
+  snapshot_sha256: b27981d669e60c242105f99caba26c6a1fee143e9f31076d8aae3204248e7789
+- evidence_id: C437-AUTHORITY
+  kind: database
+  reference: local:batch044-authority
+  locator: Eleven selected MIBiG rows, thirteen literal roles and ten exact-key ChEBI
+    candidate channels.; retained snapshot /private/tmp/npm-review-work/shared-next-batch044/chemistry-prep/authority-graph-comparison.json
+  accessed_at: '2026-10-26T01:30:00.533491Z'
+  support: partial
+  summary: All supplied MOL/default channels match retained identity; stated Standard-InChI
+    reconstruction has separate fixed-H forms. Only current literal NPA028494 differs
+    in exact stereo precision.
+  snapshot_sha256: 439f5f07f747821382bcad0603a8567fcb12b70b48ff8421cc7c3e0965cfb1f7
+- evidence_id: C437-RETAINED
+  kind: database
+  reference: local:batch044-retained
+  locator: Ten retained SMILES/InChI/key and selected raw-source graph comparisons.;
+    retained snapshot /private/tmp/npm-review-work/shared-next-batch044/chemistry-prep/retained-graph-comparison.json
+  accessed_at: '2026-10-26T01:25:11.338712Z'
+  support: partial
+  summary: ROOT actual diagnostic is reused with no native molecular rerun.
+  snapshot_sha256: 7f1cb8fcdc50877b401bb6a60cbd1118deb9faad18392c3d4d4eba6613cedddf
+- evidence_id: C437-OWNER-READ
+  kind: validation
+  reference: local:batch044-owner-read
+  locator: Ten owners/history/base bytes and seventy source-set mechanical comparisons.;
+    retained snapshot /private/tmp/npm-review-work/shared-next-batch044/chemistry-prep/owner-seven-set-source-freeze-read-001.json
+  accessed_at: '2026-10-26T01:39:42.359062Z'
+  support: partial
+  summary: All full-owner/raw manual flags false, mechanical equality true; inline
+    biological graph science excluded.
+  snapshot_sha256: ee2a791cb6f6ec50f5a53d286b3289164791ba98057ce0e2a325583c3117bf25
+- evidence_id: C437-FIELD-AUDIT
+  kind: validation
+  reference: local:batch044-field-audit
+  locator: Independent complete authority projections and initial primary results
+    read.; retained snapshot /private/tmp/npm-review-work/shared-next-batch044/chemistry-prep/native-authority-and-primary-results-read-001.json
+  accessed_at: '2026-10-26T01:37:43.653424Z'
+  support: partial
+  summary: Current 439 exact-xref mismatch is separate from 434 unresolved source
+    discrepancy and all candidate/normalization limits.
+  snapshot_sha256: c3d4b836b63e2cd1953193111309a025a0c7b5d28a9dc714f7e8bc53361fc50e
+- evidence_id: C437-CURATION
+  kind: validation
+  reference: local:current-guarded-curation-contract
+  locator: Lines 23–65 and 170–191.; retained snapshot /private/tmp/npm-record-reviews-20261021/docs/CURATION.md
+  accessed_at: '2026-10-26T01:37:43.653424Z'
+  support: context_only
+  summary: Candidate three-star/full-key eligibility and historical-versus-current
+    exact-xref semantics are independent contracts.
+  snapshot_sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+- evidence_id: C437-SOURCE-LIMITS
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch044/chemistry-prep/source-notes.json
+  locator: 'Entry 437: chemical observations, exact authority roles, full raw rows
+    and limitations; retained snapshot /private/tmp/npm-review-work/shared-next-batch044/chemistry-prep/source-notes.json'
+  accessed_at: '2026-10-26T01:39:42.428805Z'
+  support: supports
+  summary: Frozen source observations, original remote access and local numerical/inspection
+    clocks remain distinct. Only 431, 433 and 435 have completed bounded chemical
+    identity scopes; seven other scopes remain partial. Only 439 has a confirmed current
+    literal-xref stereochemical precision finding; no replacement or new natural-hand
+    conclusion is selected.
+  snapshot_sha256: ef3feec2b95e944cefff2f95ab6c85c32de9d2f88a6d1aae76503aad84ee925d
+assessments:
+- assessment_id: R437-HISTORY
+  area: provenance
+  topic: Complete history and native status
+  outcome: supported
+  summary: 'Native status remains SEEDED and all 3 history actions retain their exact
+    order: [''SEEDED_FROM_SOURCES'', ''SEEDED_FROM_SOURCES'', ''SEEDED_FROM_SOURCES''].
+    Source-seeding history does not replace claim-level scientific assessment.'
+  target_ids:
+  - naturalproductmech:mibig-157d5d867d
+  evidence_ids:
+  - R437-OWNER
+- assessment_id: R437-OPTIONAL
+  area: completeness
+  topic: Present optional assertions
+  outcome: not_applicable
+  summary: No nonempty assertion occurs in the listed optional owner fields. Empty
+    categories do not establish a scientific omission; original identity, native or
+    introduced provenance and exact-congener scope are assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-157d5d867d
+  evidence_ids:
+  - R437-OWNER
+  - R437-LOCAL
+  - R437-PUBCHEM-PREP
+- assessment_id: R437-FILING
+  area: representation
+  topic: Exact computed classification provenance
+  outcome: supported
+  summary: Exact-key NPClassifier version npclassifier.gnps2.org@2026-09-07 reproduces
+    filing, superclass/class and glycoside fields. Computed classification is not
+    independent natural-origin or mechanistic proof; any accepted identity correction
+    requires effective-key reclassification.
+  target_ids:
+  - naturalproductmech:mibig-157d5d867d
+  evidence_ids:
+  - R437-OWNER
+  - R437-LOCAL
+- assessment_id: R437-TAXON-SCOPE
+  area: provenance
+  topic: Taxonomic identifiers versus experimental stocks
+  outcome: supported
+  summary: 'Retained naming context: 538381: Stappia indica (species). Stappia indica
+    naming does not replace exact PHM037 congener evidence or close the final 2021
+    main-source gap. Names alone do not prove compound occurrence, native production
+    or physical stock equivalence.'
+  target_ids:
+  - naturalproductmech:mibig-157d5d867d
+  evidence_ids:
+  - R437-OWNER
+  - R437-TAXON-538381
+  - R437-Q61954856
+- assessment_id: R437-ORGANISM-IDS
+  area: grounding
+  topic: Literal organism routing
+  outcome: supported
+  summary: One literal raw LOTUS route matches both P225 and P685. Identifier validity
+    is separate from publication applicability and stock identity.
+  target_ids:
+  - naturalproductmech:mibig-157d5d867d
+  evidence_ids:
+  - R437-OWNER
+  - R437-IDENTIFIER-READ
+  - R437-TAXON-538381
+  - R437-Q61954856
+- assessment_id: R437-IMODULON-SCOPE
+  area: completeness
+  topic: Native producer transcriptomic applicability
+  outcome: not_applicable
+  summary: The retained catalogue contains 20 organisms and 28 datasets at its original
+    access time. No exact native-producer stock or gene/module/compound association
+    is established. This is bounded catalogue context, not an exhaustive current availability
+    search.
+  target_ids:
+  - naturalproductmech:mibig-157d5d867d
+  evidence_ids:
+  - R437-OWNER
+  - R437-IMODULON
+- assessment_id: S437-A-LOCAL
+  area: provenance
+  topic: actual owner and source-set equality
+  outcome: supported
+  summary: Complete actual owner/history and all seven source sets match the prepared
+    objects mechanically. Complete local reading is separate from the bounded original-source
+    conclusions.
+  target_ids:
+  - naturalproductmech:mibig-157d5d867d
+  evidence_ids:
+  - S437-E-ACTUAL-LOCAL
+  - S437-E-LOCAL
+  - S437-E-GUARDS
+  - S437-E-INTAKE-VIEW
+- assessment_id: S437-A-SOURCE
+  area: provenance
+  topic: exact named-product and source context
+  outcome: supported
+  summary: The 2020 Results and Figure 1 panel map sesbanimide E4 to native S. indica
+    PHM037. E is the newly described acyclic analogue, distinct from A/D of PHM038.
+    The caption calls compound 4 D, while the body and panel agree E.
+  target_ids:
+  - naturalproductmech:mibig-157d5d867d
+  evidence_ids:
+  - S437-E-SES98
+  - S437-E-SES20
+  - S437-E-SES20-TEXT
+  - S437-E-SES-PIXELS
+  - S437-E-PRIMARY-META
+  - S437-E-BGC0002082.3
+  - S437-E-CLAIM-REF
+- assessment_id: S437-A-BOUNDARIES
+  area: evidence
+  topic: native, introduced, congener and citation applicability
+  outcome: concern
+  summary: The 1998 paper studies A/C and predates isolation of PHM037; it does not
+    support exact E or the sequenced locus. Current BGC compound 3 inherited that
+    citation. The 2021 LOTUS reference is corroborated by the published abstract and
+    the separately labeled author preprint with per-stock evidence. The final 2021
+    main/SI remains unavailable; no introduced-host or genetic-necessity claim is
+    inferred.
+  target_ids:
+  - naturalproductmech:mibig-157d5d867d
+  evidence_ids:
+  - S437-E-SES98
+  - S437-E-SES20
+  - S437-E-SES20-TEXT
+  - S437-E-SES-PIXELS
+  - S437-E-PRIMARY-META
+  - S437-E-BGC0002082.3
+  - S437-E-CLAIM-REF
+  - S437-E-SOURCE-READ
+- assessment_id: S437-A-SOURCE-LIMIT
+  area: completeness
+  topic: bounded primary and source-access limits
+  outcome: unknown
+  summary: The final 2021 main/SI and exact locus experimental validation remain required
+    gaps. No independent complete chemical assignment or spectral validation is claimed.
+  target_ids:
+  - naturalproductmech:mibig-157d5d867d
+  evidence_ids:
+  - S437-E-SES98
+  - S437-E-SES20
+  - S437-E-SES20-TEXT
+  - S437-E-SES-PIXELS
+  - S437-E-PRIMARY-META
+  - S437-E-BGC0002082.3
+  - S437-E-CLAIM-REF
+  - S437-E-SOURCE-READ
+  - S437-E-SOURCE-PEER
+  - S437-E-ROOT-SOURCE
+- assessment_id: C437-A-IDENTITY
+  area: identity
+  topic: Stored representation and source-concept provenance
+  outcome: supported
+  summary: The complete source row BGC0002082:3 and source-concept hash reproduce
+    this stored representation; this does not establish that the upstream compound
+    label is correct. Formula, charge, Standard and fixed-H distinctions are independently
+    recorded. Primary support and any conflicting exact xref are assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-157d5d867d
+  evidence_ids:
+  - C437-OWNER
+  - C437-GRAPH
+  - C437-COMPARISON
+  dimensions:
+  - name: mibig_source_selector
+    value: BGC0002082:3
+    definition: Accession plus compound_index, distinct from the entry-level accession.
+    evidence_ids:
+    - C437-OWNER
+  - name: complete_raw_row_sha256
+    value: 3ce249b8aae1f99eddbcdfd22841ffa3d3bfb24c9ad95e49afdd453ddc76d76e
+    definition: Sorted compact ASCII JSON of every parsed TSV field, including empty
+      values.
+    evidence_ids:
+    - C437-OWNER
+- assessment_id: C437-A-GROUNDING
+  area: provenance
+  topic: Exact authority eligibility and source representation
+  outcome: supported
+  summary: No exact eligible row exists in the committed ChEBI projection for this
+    owner. Current bounded name/key searches do not justify a different congener or
+    a two-star grounding.
+  target_ids:
+  - naturalproductmech:mibig-157d5d867d
+  evidence_ids:
+  - C437-OWNER
+  - C437-COMPARISON
+  - C437-AUTHORITY-COMPARISON
+  - C437-LOCAL-SEARCH
+  - C437-CHEBI-SEARCH-1
+- assessment_id: C437-A-XREF
+  area: representation
+  topic: Exact literal chemical identifier scope
+  outcome: supported
+  summary: 'Measured exact-literal comparisons: [{"comparison": {"same_charge": true,
+    "same_fixed_h": true, "same_formula": true, "same_full_standard_key": true, "same_standard_inchi":
+    true, "same_stereo_removed_standard": true}, "identifier": "npatlas:NPA033220",
+    "returned_identifier": "NPA033220", "scope": "Exact retained authority response;
+    default strings, fixed-H and stereo precision remain separate"}]. Literal source
+    identifiers retain their exact spelling. Standard identity does not erase fixed-H
+    or stereo differences; no authority graph is automatically adopted.'
+  target_ids:
+  - naturalproductmech:mibig-157d5d867d
+  evidence_ids:
+  - C437-SESPREPRINT
+  - C437-PLAIN-MODELS
+  - C437-LATER-READ
+  - C437-AUTHORITY
+  - C437-RETAINED
+  - C437-OWNER-READ
+  - C437-FIELD-AUDIT
+  - C437-CURATION
+  - C437-SOURCE-LIMITS
+  - C437-OWNER
+  - C437-GRAPH
+  - C437-COMPARISON
+  - C437-AUTHORITY-COMPARISON
+  - C437-AUTHORITY-DETAIL
+  - C437-AUTH-1
+  - C437-AUTH-2
+  - C437-AUTH-3
+  - C437-AUTH-4
+- assessment_id: C437-A-ELIGIBILITY
+  area: grounding
+  topic: ChEBI full-key eligibility and literal serialization
+  outcome: supported
+  summary: '[{"eligible": false, "id": 221824, "literal_default_comparison": {"same_charge":
+    true, "same_fixed_h": true, "same_formula": true, "same_full_standard_key": true,
+    "same_standard_inchi": true, "same_stereo_removed_standard": true}, "literal_default_parse":
+    true, "mol_comparison": {"same_charge": true, "same_fixed_h": true, "same_formula":
+    true, "same_full_standard_key": true, "same_standard_inchi": true, "same_stereo_removed_standard":
+    true}, "name": "Sesbanimide E", "stars": 2}]. Candidate CHEBI:221824 has 2 stars
+    and matches the retained owner at full Standard key. It is not an eligible three-star
+    full-key replacement. No grounding or source migration is selected.'
+  target_ids:
+  - naturalproductmech:mibig-157d5d867d
+  evidence_ids:
+  - C437-SESPREPRINT
+  - C437-PLAIN-MODELS
+  - C437-LATER-READ
+  - C437-AUTHORITY
+  - C437-RETAINED
+  - C437-OWNER-READ
+  - C437-FIELD-AUDIT
+  - C437-CURATION
+  - C437-SOURCE-LIMITS
+  - C437-OWNER
+  - C437-GRAPH
+  - C437-COMPARISON
+  - C437-AUTHORITY-COMPARISON
+  - C437-AUTHORITY-DETAIL
+  - C437-AUTH-1
+  - C437-AUTH-2
+  - C437-AUTH-3
+  - C437-AUTH-4
+  - C437-CHEBI-SEARCH-1
+- assessment_id: C437-A-AUTHORITY-CHANNEL-PRECISION
+  area: representation
+  topic: Standard identity versus fixed-H channels
+  outcome: supported
+  summary: The supplied ChEBI MOL and literal default graph match the retained measured
+    graph. Reconstructing the stated Standard InChI preserves the same Standard identity
+    but a distinct measured fixed-H serialization. These are separate channels; no
+    preferred tautomer, natural-hand conclusion or owner defect is selected.
+  target_ids:
+  - naturalproductmech:mibig-157d5d867d
+  evidence_ids:
+  - C437-SESPREPRINT
+  - C437-PLAIN-MODELS
+  - C437-LATER-READ
+  - C437-AUTHORITY
+  - C437-RETAINED
+  - C437-OWNER-READ
+  - C437-FIELD-AUDIT
+  - C437-CURATION
+  - C437-SOURCE-LIMITS
+  - C437-OWNER
+  - C437-GRAPH
+  - C437-COMPARISON
+  - C437-AUTHORITY-COMPARISON
+  - C437-AUTHORITY-DETAIL
+  - C437-AUTH-1
+  - C437-AUTH-2
+  - C437-AUTH-3
+  - C437-AUTH-4
+- assessment_id: C437-A-PREPRINT-SCOPE
+  area: representation
+  topic: Positive preprint graph and required final-source scope
+  outcome: unknown
+  summary: The exact 2020 preprint E4 graph and body match the retained graph with
+    three unset centres; the caption D4 label is explicitly distinguished. Required
+    final 2021 main/SI precision remains uninspected; no final-publication or sibling-hand
+    conclusion follows.
+  target_ids:
+  - naturalproductmech:mibig-157d5d867d
+  evidence_ids:
+  - C437-SESPREPRINT
+  - C437-PLAIN-MODELS
+  - C437-LATER-READ
+  - C437-AUTHORITY
+  - C437-RETAINED
+  - C437-OWNER-READ
+  - C437-FIELD-AUDIT
+  - C437-CURATION
+  - C437-SOURCE-LIMITS
+  - C437-OWNER
+  - C437-GRAPH
+  - C437-COMPARISON
+  - C437-AUTHORITY-COMPARISON
+  - C437-AUTHORITY-DETAIL
+  - C437-AUTH-1
+  - C437-AUTH-2
+  - C437-AUTH-3
+  - C437-AUTH-4
+- assessment_id: C437-A-PRIMARY-SCOPE
+  area: scope
+  topic: Primary identity and experimental precision
+  outcome: unknown
+  summary: Exact BGC0002082:3/version 3, literal NPA033220 and two-star CHEBI:221824
+    supplied MOL/default agree with retained sesbanimide E. The exact 2020 preprint
+    Figure 1 graph labelled E4 and supported by the body is independently transcribed
+    with three unset centres and fully matches Standard/fixed-H identity. The caption
+    mistakenly says D4; the graph/body crosswalk is explicit. Final 2021 primary-source
+    precision remains required, so this chemical scope stays partial despite the positive
+    preprint graph match.
+  target_ids:
+  - naturalproductmech:mibig-157d5d867d
+  evidence_ids:
+  - C437-SESPREPRINT
+  - C437-PLAIN-MODELS
+  - C437-LATER-READ
+  - C437-AUTHORITY
+  - C437-RETAINED
+  - C437-OWNER-READ
+  - C437-FIELD-AUDIT
+  - C437-CURATION
+  - C437-SOURCE-LIMITS
+  - C437-OWNER
+  - C437-GRAPH
+  - C437-COMPARISON
+  - C437-AUTHORITY-COMPARISON
+  - C437-AUTHORITY-DETAIL
+  - C437-AUTH-1
+  - C437-AUTH-2
+  - C437-AUTH-3
+  - C437-AUTH-4
+findings:
+- finding_id: S437-F-CITATION
+  issue_key: mibig-bgc0002082-sesbanimides-citation-scope
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Route the Stappia sesbanimide producer and locus citation to the directly
+    supported study
+  description: One shared upstream citation-role cause covers the exact C/E/F rows.
+    Independent positive producer/locus provenance remains; only the imported 1998
+    reference is inapplicable to these retained later claims. The imported 1998 paper
+    concerns marine Agrobacterium PH-103/PH-A034C and A/C, not Stappia PHM037, CP046908
+    or new E/F. The directly inspected author preprint identifies C3/E4/F5 in PHM037
+    and explicitly maps CP046908 and BGC0002082. Use this version-qualified primary
+    reference. The published 2021 abstract corroborates named products and strains,
+    but the final main/SI is uninspected. Preserve the raw citation, taxon, chemistry,
+    locus coordinates, SOURCE_ASSERTION and CLUSTER_UNSTATED; no experimental grade
+    upgrade.
+  target_ids:
+  - naturalproductmech:mibig-157d5d867d
+  field_paths:
+  - producer_organisms[0].evidence
+  - biosynthetic_gene_clusters[0].evidence
+  evidence_ids:
+  - S437-E-SES98
+  - S437-E-SES20
+  - S437-E-SES20-TEXT
+  - S437-E-BGC0002082.3
+  - S437-E-CLAIM-REF
+  - S437-E-GUARDS
+  - S437-E-SOURCE-PEER
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: maintained citation-routing decision
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: existing guarded citation-only consumer
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: producer and locus emission
+actions:
+- action_id: S437-ACT-CITATION
+  finding_ids:
+  - S437-F-CITATION
+  target_ids:
+  - naturalproductmech:mibig-157d5d867d
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: maintained citation-routing decision
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: existing guarded citation-only consumer
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: producer and locus emission
+  description: 'Propose only an exact eight-column maintained citation-routing decision:
+    {"curator": "codex", "date": "2026-10-26", "expected_source_row_sha256": "3ce249b8aae1f99eddbcdfd22841ffa3d3bfb24c9ad95e49afdd453ddc76d76e",
+    "locus_reference": "DOI:10.1101/2020.09.18.303172", "producer_reference": "DOI:10.1101/2020.09.18.303172",
+    "rationale": "The imported 1998 paper concerns marine Agrobacterium PH-103/PH-A034C
+    and A/C, not Stappia PHM037, CP046908 or new E/F. The directly inspected author
+    preprint identifies C3/E4/F5 in PHM037 and explicitly maps CP046908 and BGC0002082.
+    Use this version-qualified primary reference. The published 2021 abstract corroborates
+    named products and strains, but the final main/SI is uninspected. Preserve the
+    raw citation, taxon, chemistry, locus coordinates, SOURCE_ASSERTION and CLUSTER_UNSTATED;
+    no experimental grade upgrade.", "source_id": "BGC0002082:3", "source_reference":
+    "DOI:10.1101/2020.09.18.303172"}. Preserve every raw field, occurrence, chemical
+    representation, producer, locus coordinate and evidence grade. This is proposed
+    curation, not an executed correction.'
+  acceptance_checks:
+  - Require exactly one current BGC0002082:3 row matching complete SHA256 3ce249b8aae1f99eddbcdfd22841ffa3d3bfb24c9ad95e49afdd453ddc76d76e;
+    fail closed on missing, duplicate or changed input.
+  - Use the inspected preprint DOI with its explicit 2020 version scope. Retain the
+    final 2021 main/SI gap; do not claim a final journal full-text read.
+  - The existing consumer must receive only its exact eight required table columns;
+    supporting row data and this plan metadata are not additional decision columns.
+  - Preserve SOURCE_ASSERTION, CLUSTER_UNSTATED, empty methods, raw 1998 citation,
+    all occurrences and all other owners. No grade promotion, historical taxon replacement
+    or structure change.
+  - Any later authorized curation must pass exact-owner reproduction and required
+    native checks; no such execution is performed by this author.
+limitations:
+- Context establishes mechanical owner/history/source equality, literal identifier
+  routing and computed classification. Primary production, exact stock and congener
+  claims retain their source-specific gaps. Full graph scientific verification for
+  431 and operational source science for 432 remain unreviewed. There are no retained
+  assay rows or no-data sentinels; absence of such rows does not establish inactivity.
+  Valid literal routes do not resolve the separate stock, congener or citation applicability
+  boundaries.
+- The final 2021 main/SI and exact locus experimental validation remain required gaps.
+  No independent complete chemical assignment or spectral validation is claimed.
+- Authority matches establish the representations actually returned at their retained
+  access times; they are not independent experimental structure or absolute-hand determinations.
+  Organism, locus, classification and history claims are assessed separately.
+- All manual full-owner/raw scientific flags remain false; complete owner/raw/component
+  equality is mechanical. Current authority identity is not physical-sample purity,
+  producer/assay applicability or natural absolute hand. No candidate or molecular
+  replacement is selected. Original remote access clocks, failed attempts and reused-source
+  metadata limits are preserved. Only the specifically declared chemical scope may
+  be completed; whole-record and biology status remain independent. All ten ChEBI
+  supplied MOL/default channels match retained identity, while reconstruction of stated
+  Standard InChI selects different fixed-H forms; this channel distinction is not
+  an automatic defect. Existing three-star CHEBI:84582 is an owner role; the other
+  nine two-star full-key candidates remain ineligible for promotion. Inline biological
+  graph and pathway science are outside this chemical packet. 2020 preprint and final
+  2021 publication are distinct source versions; failed final-source access is not
+  evidence of absent assignment or production.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- FailedQC001 is retained for an explicit separate network-enabled retry; no artifact
+  will be overwritten.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint
+  and before downstream tests. Its actual exit1/log/input capture/root observation
+  remain pinned; the selected successful canonical QC attempt002 is separately timed.
+  No individual-review validation failure or counter reset is claimed.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter
+  skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings;
+  this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld
+  nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological
+  or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological
+  production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions
+  and no-adapter pairs; a successful command does not convert these into verified
+  scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command
+  execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population
+  was checked; external caches and generated bytecode are not asserted to be independently
+  byte-pinned.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+- Scientific conclusions integrate the chemical, biological and provenance assessments;
+  source access and unresolved scopes remain explicit.
+tags:
+- path-order-campaign
+- batch-044
+```
