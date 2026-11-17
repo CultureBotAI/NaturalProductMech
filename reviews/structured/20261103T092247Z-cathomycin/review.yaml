@@ -1,0 +1,2303 @@
+schema_version: 1.0.0
+review_id: 20261103T092247Z-cathomycin
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'Local evidence review: cathomycin'
+started_at: '2026-11-03T08:49:42.194236Z'
+finished_at: '2026-11-03T09:22:47.735039Z'
+reviewer:
+  identity: Codex root with native_checks, bgc_science and review_support peer agents
+  kind: agent
+  independence: independent
+  independence_basis: This review team inspected existing owner and retained source
+    bytes without editing them; scientific fragments were cross-checked separately
+    from their author. Local validation is not treated as scientific proof.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: 'cathomycin: qualified partial review retaining source evidence grades, exact
+  representation boundaries and complete historical mechanism/protein scope.'
+source:
+  git_revision: ce6a5498df5be51116bd5e0c119023ee62bb5464
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: AGENTS.md
+    sha256: 69e4037f8dc97d4b00bb7bb83b41ceca025f6ef578d5c0bf8086f3400becde0b
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-nove-binding-limits-and-basal-transcription.yaml
+    sha256: caf7992ff4bd80316364406055e2842f0768c3d596b803aed5bb593860ffb6fa
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-nove-heterologous-deletion-and-regulator-rescue.yaml
+    sha256: 382569a1342a5eae42954c736cc6a1ec2d60f991f24f1b0fd8479e9ae0b0116f
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-nove-native-cassette-phenotype.yaml
+    sha256: 5bb3953daa1177d84fb5c78e4732ebc0d0f8d94fe6cb8f1abdf708d532e7d084
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-nove-novg-transcriptional-cascade-bounds.yaml
+    sha256: 1412b16027f62f0ec293ed9c14f922a7fbcdfe54b6dfc1c3623a08ecc8a2083a
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novg-heterologous-deletion-and-rescue.yaml
+    sha256: 15ba247ac403d1519a73314e9f049c2e2b7a814358c14e51fdc8376cd50d1a2d
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novg-preparation-and-fragment-binding.yaml
+    sha256: db95da1a6edbd03e7ab53c7b5a304d4e0aeaaa6146dfda042fb4e04a410ff9b1
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novhi-2011-novh-construct-and-host-preparations.yaml
+    sha256: 151eedac40498301cab5854846bc35d5a67ff909ae2779aaeaa7a6198962bcd1
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novhi-mbth-partner-identities-and-cross-activation.yaml
+    sha256: 21b704ec33e96d26341fb6f1f939aaf0ccb12e455496fd64ae488dfe70a0e27f
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novhi-native-identities-and-early-precursor-reactions.yaml
+    sha256: 080bb4c91ee428ac7e3034175c73de3d4e2500e80c9e5e1180196c7dd7878fc8
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novhi-novh-kinetics-and-model-limits.yaml
+    sha256: b4235f2d8dbc2ec9f5d089c7c4b3d351a96ec4faf7894364d1bc25943c15619e
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novjk-database-mutants-and-residue-evidence-limits.yaml
+    sha256: 9e3122dc03716bff3b86f84212ff035a315f44f0786bfaa522960af667850fe6
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novjk-individual-constructs-and-primer-conflicts.yaml
+    sha256: 9e8a1773d482c796b2c77c6727f1930e11229cc2a3f5125aeea70a972cca1702
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novjk-native-identities-and-tethered-precursor-oxidation.yaml
+    sha256: 8d510c43ed79300ca631e8d86ece1037d314dd77a1e5025dc1fa2bc2789fae48
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novjk-reported-assembly-and-sec-interpretation-limits.yaml
+    sha256: 456a6b3c0ecaa143d25a7282f55061363ea3b4d64aa593e0e671df3e4882ea87
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novl-coul-chimera-constructs-and-preparations.yaml
+    sha256: eec0fc5fcd730598943e9a5a1324badcdc85eb383d6f1c00066887bac28c2a22
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novl-coul-chimera-substrate-panel-and-limits.yaml
+    sha256: 36e54104187f34e6756d15facacacaf522b82b43085df998c20401c38dca51a8
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novm-native-identity-and-precursor-glycosylation.yaml
+    sha256: 84e3f667a9acfbc41cb81b3becd8ced9d6d66aa26eed7834acbfff56f3410acd
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novm-redox-reagents-and-early-methylation-tests.yaml
+    sha256: 51799e8102fb702cbf6fbf4055fc24b1e784e9106f9eeb41e7e3c3357bc4b8be
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novm-staged-tailoring-and-product-mass-conflict.yaml
+    sha256: 415eb291c42a84beda2e423168719484a36ce30f13083c312a04ce681860f5c2
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novm-substrate-scope-and-tandem-assay-boundaries.yaml
+    sha256: 57c3304d9558743761ed6d11cd7c0d1aa297a9e95955211d54833393209b5cca
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novn-9s2t-structure-and-partial-metal-limits.yaml
+    sha256: c640f0b03a193cda50e3bf77f928659acea31b37d5a296179e8eaed363393096
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novn-analogue-products-and-substrate-conditioned-kinetics.yaml
+    sha256: a4591dcbbab371b7cee49cf16afafdf140783ee2126369ecdb3e6bf665c30718
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novn-assembly-disagreement-and-unsolved-crystal-forms.yaml
+    sha256: e4949f007115b1dcbbe7c8f7743fe3506b09dfd32aa6ce30f2e661c1d2760c8e
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novn-carbamoylation-cofactors-and-kinetic-limits.yaml
+    sha256: 2f0e0cd42ff6fdef35b977371ef5a438cead0986af936a76d74aa2fdf657c563
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novn-heterologous-production-and-cloning-conflict.yaml
+    sha256: 4c6b266d5826820476c272f82afdc15201406167bb0536d3597da4a517b48591
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novn-native-identity-and-his6-preparation.yaml
+    sha256: e5a42fb316a94436b6369849d47701b41489cc932d2f2ed9c441fa24459c1cc6
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novo-mutant-endpoints-and-loading-conflict.yaml
+    sha256: 50116fdca18238a788bcb99ffabd494555d723e136464279608a3ce3fa4177b6
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novo-native-identity-and-engineered-preparations.yaml
+    sha256: 9260e12cb69a0b3b59abe10676ebcaa9b5dc6837bf614ba03fb5a6c29a2384ec
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novo-ph-isotope-assays-and-kinetic-conflicts.yaml
+    sha256: a6a177cf63af9ce880184150f13c90f936cb5f778c8886235bd906c44894f614
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novo-sah-structure-and-mechanistic-model-limits.yaml
+    sha256: a3ecb3a099d29d03a9eb12dc90c502b4c90564f25e1fa4739ee458c03dd2487f
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novp-assembly-evidence-and-solution-size-disagreement.yaml
+    sha256: e08b4d17262116618c8e41d9b17dfea224f37e6435009b5f185061874b6a4779
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novp-docking-and-untested-mechanistic-proposals.yaml
+    sha256: 19e05fcf30a6052894cf1f48396d11e7a5a411bf4927bd076c5de3d07b4d9a86
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novp-native-identity-and-tagged-preparation.yaml
+    sha256: 01e86442bbdb5af07368ef5c1752daa8dff6c0f480b1f0ed8ff7b4f0c67479eb
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novp-sah-structure-contacts-and-residue-label-conflict.yaml
+    sha256: eee1b78d354a8abfd03c67d1058ad617172de06946504414b9b843c7415aebf1
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novq-e281-variants-and-surrogate-assay-limits.yaml
+    sha256: 1774a3c991b1ae948774ee3be5f7fba37f4b8b9cf4de8d4c3ce58dc125196007
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novq-fusion-expression-and-processing-limits.yaml
+    sha256: ffcabdb8339a1f6816774168762b8811e3e734537e4c466ebad45bce0c72ee1a
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novq-native-identity-and-precursor-evidence.yaml
+    sha256: 2791bb69f5b4b38d1010ad963532c36257b858da3283c39f5604a3be96bdde46
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novwus-joint-reactions-and-product-annotation-conflict.yaml
+    sha256: 53059b9b9abbe5a3491b88e1e525fda101a0c1c9a897ecd03424d5006e6586aa
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novwus-native-identities-and-sequence-boundaries.yaml
+    sha256: f93a556353386b8eb9310a16d32895685ac432938654c96856b4a328875acce0
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novwus-novw-preparation-support-proteins-and-functional-revision.yaml
+    sha256: e796e41eacea08945b3682c84ae6f87f28e8f98c2d4eaba38f946354f6f0db8e
+    role: context
+  - path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novwus-novw-structure-assembly-and-missing-atom-limits.yaml
+    sha256: a8ef5831d71776ef5a7ef2c07d67d2ed124c3a623e83deec2ce4d5f53f298732
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/shikimates_and_phenylpropanoids/cathomycin.yaml
+    sha256: 09fca6928f6fbedba31a15825c36eea36968905aaef2f5c3b9b90de178af02f4
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/graph_components.py
+    sha256: 10f08517869f482954fd583fd19d5750ef286a76297c231e6c9a5ba8dc023e17
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: src/naturalproductmech/validation/write_validated.py
+    sha256: 4b7648fc5d2e7a5d26ad8bb168dbcae609aaa2694434a8ed5cfcb33fb66ff80a
+    role: context
+scope:
+  description: One complete NaturalProductRecord, including all present scientific
+    claims, history and declared mechanisms; external verification remains unavailable.
+  selection: Campaign path order 2190; one of the next ten uncovered paths selected
+    from the 3116-record corpus. Membership uses the canonical validated catalogue
+    plus retained committed campaign bundles.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-d4379ab45b
+targets:
+- target_id: naturalproductmech:mibig-d4379ab45b
+  path: data/natural_products/shikimates_and_phenylpropanoids/cathomycin.yaml
+  label: cathomycin
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained harmonization generator; seeded fields are corrected through
+      maintained inputs and validated regeneration.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Retained MIBiG structure, producer and compound-specific locus assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/npclassifier.tsv
+    role: Pinned computed classification and filing assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Maintained extraction of MIBiG compound names, structures, stereochemistry
+      flags and source provenance.
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/graph_components.py
+    role: Future maintained complete-owner reader implementation; not invoked in this
+      plan.
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/validation/write_validated.py
+    role: Future maintained complete-owner reader implementation; not invoked in this
+      plan.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/shikimates_and_phenylpropanoids/cathomycin.yaml
+    role: Curator-owned declared graphs, graph references, pathway steps and history;
+      imported molecular-target assertions and other seeded fields retain inventory
+      ownership. Curated graph/pathway changes require the validated writer and a
+      curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novl-coul-chimera-constructs-and-preparations.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novl-coul-chimera-substrate-panel-and-limits.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novq-native-identity-and-precursor-evidence.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novq-fusion-expression-and-processing-limits.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novq-e281-variants-and-surrogate-assay-limits.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novo-native-identity-and-engineered-preparations.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novo-mutant-endpoints-and-loading-conflict.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novo-sah-structure-and-mechanistic-model-limits.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novo-ph-isotope-assays-and-kinetic-conflicts.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novp-native-identity-and-tagged-preparation.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novp-assembly-evidence-and-solution-size-disagreement.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novp-sah-structure-contacts-and-residue-label-conflict.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novp-docking-and-untested-mechanistic-proposals.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novn-native-identity-and-his6-preparation.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novn-carbamoylation-cofactors-and-kinetic-limits.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novn-analogue-products-and-substrate-conditioned-kinetics.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novn-heterologous-production-and-cloning-conflict.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novn-assembly-disagreement-and-unsolved-crystal-forms.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novn-9s2t-structure-and-partial-metal-limits.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novhi-native-identities-and-early-precursor-reactions.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novhi-2011-novh-construct-and-host-preparations.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novhi-novh-kinetics-and-model-limits.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novhi-mbth-partner-identities-and-cross-activation.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novjk-native-identities-and-tethered-precursor-oxidation.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novjk-individual-constructs-and-primer-conflicts.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novjk-reported-assembly-and-sec-interpretation-limits.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novjk-database-mutants-and-residue-evidence-limits.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novm-native-identity-and-precursor-glycosylation.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novm-substrate-scope-and-tandem-assay-boundaries.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novm-redox-reagents-and-early-methylation-tests.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novm-staged-tailoring-and-product-mass-conflict.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novwus-native-identities-and-sequence-boundaries.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novwus-joint-reactions-and-product-annotation-conflict.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novwus-novw-preparation-support-proteins-and-functional-revision.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novwus-novw-structure-assembly-and-missing-atom-limits.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-nove-native-cassette-phenotype.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novg-heterologous-deletion-and-rescue.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-novg-preparation-and-fragment-binding.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-nove-heterologous-deletion-and-regulator-rescue.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-nove-binding-limits-and-basal-transcription.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/YJQPYGGHQPGBLI-HHJGLNSVSA-N/cathomycin-nove-novg-transcriptional-cascade-bounds.yaml
+    role: Exact-owner curated graph component and its history; component changes require
+      write_validated_graph_bundle and an artifact-specific curation event.
+  ownership_note: This review proposes no record edit. Source corrections belong in
+    maintained inventories, implemented curation tables, extractors or the seeder;
+    generated pages are not owners. This mechanism-bearing owner requires separately
+    authorized complete maintained resolution before scientific assessment and draft
+    assembly. Raw owner capture is not a maintained resolved view.
+checks:
+- check_id: maintained-mechanism-reader
+  name: Complete offline maintained reader for Cathomycin
+  status: passed
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-d4379ab45b
+  command: /private/tmp/npm-record-reviews-20261021/.venv/bin/python -I -B /private/tmp/npm-review-work/shared-next-batch219/read-selected-mechanism-guarded-001.py
+    2190 43672d016f9c3eb68e98648c7507650a245b74f13658d25b913e1e53de30c501 f9aa974316091f5f99785b12d7c05290e7d54ebdd7b682b7b4710a47664f8516
+    7d4d0c3fddefb2462611229868f7ca48f042c887182d5e044cfedb4668c38df2 e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+    5539b8be9bf09398396f7e071a4b21c85c4f469d07ae8707174f6c84419ebec4
+  exit_code: 0
+  evidence_ids:
+  - support-2190-reader-DATA
+  - support-2190-reader-execution
+  - support-2190-reader-acceptance
+  summary: Original guarded maintained reader resolved all 43 graphs/638 nodes/706
+    edges/1025 reference placements with complete owner equality and41 component appends;
+    no requests or scientific identity proof.
+  scope_note: Sole selected2190; original runtime only. Historical experiment/protein
+    assertions are not freshly verified by reader success.
+- check_id: root-native-strict_ten
+  name: strict_ten
+  status: passed
+  required: true
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  target_ids:
+  - naturalproductmech:mibig-d4379ab45b
+  command: just validate-strict data/natural_products/shikimates_and_phenylpropanoids/aspulvinone-h.yaml
+    data/natural_products/shikimates_and_phenylpropanoids/atromentin.yaml data/natural_products/shikimates_and_phenylpropanoids/bactobolin.yaml
+    data/natural_products/shikimates_and_phenylpropanoids/bagremycin-a.yaml data/natural_products/shikimates_and_phenylpropanoids/bagremycin-b.yaml
+    data/natural_products/shikimates_and_phenylpropanoids/basiliskamide-a.yaml data/natural_products/shikimates_and_phenylpropanoids/bromophene.yaml
+    data/natural_products/shikimates_and_phenylpropanoids/butyrolactone-i.yaml data/natural_products/shikimates_and_phenylpropanoids/cacibiocin-b.yaml
+    data/natural_products/shikimates_and_phenylpropanoids/cathomycin.yaml --workers
+    1 --out /private/tmp/npm-native-checks/batch-219/validate-strict-selected10-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_ten
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-strict_full
+  name: strict_full
+  status: passed
+  required: true
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  target_ids:
+  - naturalproductmech:mibig-d4379ab45b
+  command: just validate-all --workers 1 --out /private/tmp/npm-native-checks/batch-219/validate-all-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_full
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-lockfile
+  name: lockfile
+  status: passed
+  required: true
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  target_ids:
+  - naturalproductmech:mibig-d4379ab45b
+  command: just verify-corpus --summary
+  exit_code: 0
+  evidence_ids:
+  - root-native-lockfile
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-reproduction
+  name: reproduction
+  status: passed
+  required: true
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  target_ids:
+  - naturalproductmech:mibig-d4379ab45b
+  command: just verify-reproduction
+  exit_code: 0
+  evidence_ids:
+  - root-native-reproduction
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-queue
+  name: queue
+  status: passed
+  required: true
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  target_ids:
+  - naturalproductmech:mibig-d4379ab45b
+  command: just review-queue --tsv /private/tmp/npm-native-checks/batch-219/review-queue-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-queue
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-full-qc
+  name: Full just qc
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-d4379ab45b
+  summary: 'Not run under the external-request prohibition: the complete recipe includes
+    upstream vendored synchronization. The five executed local checks are recorded
+    separately.'
+- check_id: root-ontology-authorities
+  name: Complete OAK identifier/label authority check
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-d4379ab45b
+  summary: Complete offline ontology authority coverage was not established for this
+    run; no ontology retrieval or remote resolution was attempted. Retained taxonomy
+    evidence has only its explicitly stated local scope.
+- check_id: root-primary-and-live-sources
+  name: Primary literature and current structured database/identifier verification
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-d4379ab45b
+  summary: All external requests are prohibited by the user. Fresh database and identifier
+    verification and complete primary-literature coverage are unavailable. Any retained
+    original literature actually inspected is recorded separately with its historical
+    scope.
+evidence:
+- evidence_id: support-2190-owner
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/shikimates_and_phenylpropanoids/cathomycin.yaml
+  locator: Complete raw owner, lines 1-832.
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Whole selected owner and 15 history events personally read; current exact
+    bytes match retained inventory and capture.
+  snapshot_sha256: 09fca6928f6fbedba31a15825c36eea36968905aaef2f5c3b9b90de178af02f4
+- evidence_id: support-2190-capture
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/owner_document; /records/9/owner_pin; /records/9/read_started_at;
+    /records/9/read_finished_at
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Complete actual captured owner and original access clocks; component resolution
+    is assessed separately where applicable.
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-intake
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch219/intakes/2190-inspect-001.json
+  locator: /status; /source; /targets/0
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Original inspection-only intake with 80 current inputs and explicit maintained
+    ownership.
+  snapshot_sha256: f9aa974316091f5f99785b12d7c05290e7d54ebdd7b682b7b4710a47664f8516
+- evidence_id: support-2190-source-plan
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-target-input-plan-001.json
+  locator: /records/9; /source_placement_count; /unique_source_path_count
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Exact current selected raw/history/source frames and input map equal the
+    retained inventory and actual intake; cohort 422 placements/94 paths.
+  snapshot_sha256: e916ee57bc5ec554e1146cde7cd06bd547c949795e818e70aa9b763769bbab5e
+- evidence_id: support-2190-plan-acceptance
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch219/root-target-input-plan-acceptance-001.json
+  locator: /status; /plan; /notes; /actual_intake_acceptance; /source_placements;
+    /unique_source_paths
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: ROOT accepts exact saved source-plan and intake equality; this is not a
+    scientific verdict.
+  snapshot_sha256: 696f459a9a2d88da915d93d977343d7304f9448f71cd29ac63d0f26fd57d261a
+- evidence_id: support-2190-history
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/10/complete_raw_history; /contexts/10/history_count
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: All 15 owner history events preserved; historical verification annotations
+    are not new verification.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2190-direct-contexts
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-target-input-plan-001.json
+  locator: /records/9/proposed_companion_paths; /records/9/direct_companion_predicates;
+    /records/9/declared_mechanism_roots_literal; /records/9/component_paths
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 0 admitted direct companions; selected mechanism applicability and component
+    paths retained without transitive expansion.
+  snapshot_sha256: e916ee57bc5ec554e1146cde7cd06bd547c949795e818e70aa9b763769bbab5e
+- evidence_id: support-2190-source-notes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-scope-notes-001.json
+  locator: /reading/review_support; /reading/bgc_science; /reading/components; /cautions;
+    /curation
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Whole source-reading attribution and bounded 65-token/eight-table zero-hit
+    curation scan. The11 complementary cache stanzas are my reading; shared 341663/41900
+    stanzas are BGC reading. No new external or corpus-wide absence assertion.
+  snapshot_sha256: 58207f6cd3ec20557a15cee20a157352a42c86c9b884ed61e2af20e298c36eb8
+- evidence_id: support-2190-query-mibig_compounds
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/10/source_scope_inventory/joins/mibig_compounds
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "YJQPYGGHQPGBLI-HHJGLNSVSA-N";
+    1 retained rows. Empty results have only this exact pinned scope.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2190-row-mibig_compounds-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv
+  locator: Physical TSV lines 907-907; exact retained row /contexts/10/source_scope_inventory/joins/mibig_compounds/matches/0
+    in /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json;
+    raw row SHA256 e676f0199faba3abffc8eda8cce88a75c4c76c67ff97cee97419e28b0f40b009.
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Retained row fields (structure strings remain in the exact cited row):
+    {"mibig_accession":"BGC0000834","entry_version":"5","entry_status":"active","entry_quality":"questionable","entry_completeness":"complete","compound_name":"cathomycin","compound_index":"1","standard_inchi_key":"YJQPYGGHQPGBLI-HHJGLNSVSA-N","stereo_complete":"false","compound_classes":"","database_ids":"npatlas:NPA017352","taxon_id":"NCBITaxon:193462","taxon_label":"Streptomyces
+    niveus","bgc_classes":"saccharide|other","bgc_subclasses":"hybrid/tailoring|aminocoumarin","genome_accession":"AF170880.4","locus_from":"4859","locus_to":"28076","locus_evidence_methods":"Knock-out
+    studies|Enzymatic assays|Heterologous expression","producer_evidence_basis":"BGC_CHARACTERIZED","cluster_link_evidence_basis":"CLUSTER_DEMONSTRATED","primary_reference":"PMID:10770754","reference_basis":"ENTRY"}'
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: support-2190-query-chebi_structures
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/10/source_scope_inventory/joins/chebi_structures
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "YJQPYGGHQPGBLI-HHJGLNSVSA-N";
+    0 retained rows. Empty results have only this exact pinned scope.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2190-query-lotus_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/10/source_scope_inventory/joins/lotus_occurrences
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "YJQPYGGHQPGBLI-HHJGLNSVSA-N";
+    0 retained rows. Empty results have only this exact pinned scope.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2190-query-cyanometdb_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/10/source_scope_inventory/joins/cyanometdb_occurrences
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "YJQPYGGHQPGBLI-HHJGLNSVSA-N";
+    0 retained rows. Empty results have only this exact pinned scope.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2190-query-npclassifier
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/10/source_scope_inventory/joins/npclassifier
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "YJQPYGGHQPGBLI-HHJGLNSVSA-N";
+    1 retained rows. Empty results have only this exact pinned scope.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2190-row-npclassifier-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv
+  locator: Physical TSV lines 2930-2930; exact retained row /contexts/10/source_scope_inventory/joins/npclassifier/matches/0
+    in /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json;
+    raw row SHA256 3843c5fa95d51e2baad07718ba14cb204d1040ccb507de687e697e1ed942d91b.
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Retained row fields (structure strings remain in the exact cited row):
+    {"standard_inchi_key":"YJQPYGGHQPGBLI-HHJGLNSVSA-N","pathway_results":"Shikimates
+    and Phenylpropanoids","superclass_results":"Coumarins","class_results":"Simple
+    coumarins","is_glycoside":"true","model_version":"npclassifier.gnps2.org@2026-09-07"}'
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: support-2190-query-pubchem_bioassay
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/10/source_scope_inventory/joins/pubchem_bioassay
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "YJQPYGGHQPGBLI-HHJGLNSVSA-N";
+    0 retained rows. Empty results have only this exact pinned scope.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2190-query-bindingdb_targets
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/10/source_scope_inventory/joins/bindingdb_targets
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "YJQPYGGHQPGBLI-HHJGLNSVSA-N";
+    0 retained rows. Empty results have only this exact pinned scope.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2190-query-antibioticmech_inchikeys
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/10/source_scope_inventory/joins/antibioticmech_inchikeys
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "YJQPYGGHQPGBLI-HHJGLNSVSA-N";
+    0 retained rows. Empty results have only this exact pinned scope.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2190-query-chebi_origins
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/10/source_scope_inventory/joins/chebi_origins
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Saved predicate exact chebi_id from exact full-key structure rows; query
+    []; 0 retained rows. Empty results have only this exact pinned scope.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2190-taxon-routes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /contexts/10/source_scope_inventory/source_taxa; /contexts/10/source_scope_inventory/forward_taxon_merge_matches;
+    /contexts/10/source_scope_inventory/nonorganism_matches; /cached_taxonomy/unmatched_ids
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Exact selected taxon routes: no forward-merge/nonorganism matches and
+    no unmatched cached IDs. This is cached routing, not live taxonomy or proof of
+    production.'
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2190-taxon-193462
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219-tentative/bgc-prep/bgc-conditional219-source-inventory-DATA-001.json
+  locator: /cached_taxonomy/whole_stanzas/15
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Complete cached stanza NCBITaxon:193462, physical corpus_taxa.obo lines
+    62841-62846. Whole stanza personally read. Cached labels/synonyms retain taxonomic
+    scope, not experimentally established producer identity.
+  snapshot_sha256: 98c6f456b593a33826ade882fe92e436ac71759ffc086279544719fe56da2c1d
+- evidence_id: support-2190-chemistry
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch219/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/9/declared_structure; /records/9/smiles; /records/9/inchi; /records/9/comparisons;
+    /records/9/atom_correspondence
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Both stored forms parsed as neutral C31H36N2O11, 44 atoms and 47 bonds.
+    Standard InChI, full key, formula, charge and counts agree, but canonical isomeric/nonisomeric
+    SMILES comparisons are false and the chirality-aware atom map is empty. The saved
+    SMILES O-carbamoyl site is C3–O4–C5(=O7)–N6H2; the InChI-derived form is C24–O42–C29(–O38H)=N31H,
+    with extra unspecified C=N bond43. This bounded carbamate/imidic-acid representation
+    difference is not a wrong-molecule conclusion or proof of full tautomer equivalence.
+    Both forms retain three specified tetrahedral centers (SMILES2R,3S,8R) and one
+    unspecified sugar center (SMILES10, InChI28), consistent with literal stereo_complete:false.
+    The saved full_graph_identity_established flag remains false.
+  snapshot_sha256: 4c9a084d7b80a7634173a635f8576b06db26a025f5c996902bbe36ab20e22187
+- evidence_id: support-2190-stereo
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch219/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/9/declared_structure; /records/9/smiles/computed/potential_stereo;
+    /records/9/smiles/computed/stereo_counts; /records/9/inchi/computed/potential_stereo;
+    /records/9/inchi/computed/stereo_counts; /records/9/smiles/computed/atoms; /records/9/smiles/computed/bonds;
+    /records/9/inchi/computed/atoms; /records/9/inchi/computed/bonds
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Three specified tetrahedral centers plus one unspecified sugar center in
+    both forms; extra unspecified C=N only in InChI form; literal stereo_complete:false.
+  snapshot_sha256: 4c9a084d7b80a7634173a635f8576b06db26a025f5c996902bbe36ab20e22187
+- evidence_id: support-2190-topology
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch219/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/9/smiles/computed; /records/9/inchi/computed
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Saved SMILES: saturated C5O ring [2,3,8,10,40O,41], external O11 bridge
+    C10–O11–C12, internal ring O40, methoxy O1, O-carbamoyl C5, amide C20(=O21)–N19,
+    aromatic coumarin C34=O35/O36; sugar center10 unspecified.'
+  snapshot_sha256: 4c9a084d7b80a7634173a635f8576b06db26a025f5c996902bbe36ab20e22187
+- evidence_id: support-2190-stereo-method
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py
+  locator: Lines 165-172.
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: The maintained stereo_complete derivation asks FindMolChiralCenters for
+    unassigned atom centers; it is not a universal geometric/axial/natural-stereo
+    assertion.
+  snapshot_sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+- evidence_id: support-2190-diagnostic-execution
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch219/chemistry-local/diagnostic-execution-001.json
+  locator: Complete original JSON execution receipt.
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Original single diagnostic execution receipt and its saved stdout/stderr;
+    no repeat computation.
+  snapshot_sha256: 65a232c4f9e76cdcba0d36f2b2afdeb2b1ff6bd3948423186dc66d8a8d83c329
+- evidence_id: support-2190-diagnostic-acceptance
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch219/chemistry-local/root-diagnostic-acceptance-001.json
+  locator: /status; /DATA; /execution; /original_terminal; /false_comparisons; /stderr_bytes;
+    /limitations
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: ROOT accepts the original 20-form local computation, with empty stderr
+    and explicit canonical/identity limitations.
+  snapshot_sha256: 9d86c46cc594b27eb7d8af2b459a505806fab0fe879924bcb82d8915ea91c6c0
+- evidence_id: support-2190-intake-acceptance
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch219/root-intake-ready-001.json
+  locator: /status; /intake_summary; /source_placements; /unique_source_paths; /per_order_counts;
+    /mechanism_owner_orders
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: ROOT accepts ten original intakes and exact 422/94 source map; no scientific
+    verdict.
+  snapshot_sha256: b55a9ac100bcb962b17d4ea2de485fca21016491c09d0c2c0fdf309c4cf0e5f4
+- evidence_id: support-2190-native-acceptance
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch219/root-native-checks-acceptance-001.json
+  locator: /status; /ledger; /local_checks_passed; /queue_rows; /selected_queue_rows;
+    /unavailable
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Five original local gates passed; queue 8922 total/13 selected rows. Full
+    QC and OAK unavailable; local gate success is not scientific sign-off.
+  snapshot_sha256: 1970e7734ae524688ab1064cfba1f840b5619df82803cd1a59297ba45438a4ef
+- evidence_id: support-2190-source-ownership
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/intakes/2190-inspect-001.json
+  locator: /targets/0/owner_paths; /targets/0/ownership_note
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Generated inventory/seeder fields and, where present, curator-owned mechanism
+    components retain distinct maintained owners. No source record or native status/history
+    was edited.
+  snapshot_sha256: f9aa974316091f5f99785b12d7c05290e7d54ebdd7b682b7b4710a47664f8516
+- evidence_id: support-2190-inline-0
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/owner_document/causal_graphs/0
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Deposited NovL identity and bounded novobiocic-acid precursor ligation
+    (review #550). The MIBiG BGC0000834 cathomycin owner has one unspecified sugar
+    stereocentre: its InChI /t23-,25+,26-,29? differs from the fully specified novobiocin
+    CID 54675769 /t23-,25+,26-,29-. Their exact InChIKeys differ. Unglycosylated precursor
+    assays neither resolve this centre nor establish synthesis of mature cathomycin/novobiocin.
+    Q9L9F6 denotes the deposited native sequence, not a tagged preparation or a retrospectively
+    identified historical sample. Galm 2003 direct experiments are distinct from the
+    abstract-only 2000 paper. Galm PDF pages exceed printed pages by four; Metzger
+    2010 PDF pages by twelve. This evidence is the retained owner assertion, not freshly
+    inspected original source material.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-inline-1
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/owner_document/causal_graphs/1
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Metzger 2010 NovL preparations, precursor activity and unsuccessful structure
+    determination (review #550). Native Q9L9F6 is a sequence reference, not the identity
+    of the His8 fusion, thrombin-cleaved scar protein, SeMet derivative or chemically
+    methylated sample. Specific activities refer to methylated-ring-B precursor assays,
+    not mature product synthesis. A diffraction dataset without solved phases does
+    not establish residue contacts or biological oligomer stoichiometry. All page
+    numbers below are PDF pages, twelve higher than printed pages. The later NovL/CouL
+    chimera study is a separate lead. This evidence is the retained owner assertion,
+    not freshly inspected original source material.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-0
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/0/component_document; /records/9/component_captures/0/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-novl-coul-chimera-constructs-and-preparations:
+    20 nodes/28 edges and 3 complete history events. Ten engineered NovL/CouL amide-synthetase
+    chimeras from Metzger 2010 (review #551), associated with the NovL precursor mechanism
+    of the cathomycin/BGC0000834 owner. These are experimental fusion proteins, not
+    ten native UniProt entries or ten natural-product structures. Parent sequence
+    references, schematic swaps, literal-primer models and actual assayed preparations
+    are distinct. The thesis reports sequence verification, but complete experimental
+    plasmids were not independently obtained. Figure 3.27 CouL does not exactly match
+    any of AF235050.1-.4. All page locators below are PDF pages, twelve above printed
+    pages. Whole plaintext reading: Native indices0–19, attributed. References/snippets
+    remain historical retained assertions, not newly verified papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-1
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/1/component_document; /records/9/component_captures/1/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-novl-coul-chimera-substrate-panel-and-limits:
+    25 nodes/24 edges and 3 complete history events. Metzger 2010 Figure 3.31 endpoint
+    assays of ten NovL/CouL chimeras and two parental comparators (review #551). Each
+    protein has its own reported six-column activity vector, retaining substrate,
+    product, loading, normalization and censoring. Comparisons support bounded regional
+    contributions to precursor-ligation activity, not exact substrate-contact residues,
+    catalytic efficiencies or mature antibiotic synthesis. The cathomycin owner has
+    an unspecified sugar stereocentre; unglycosylated assays do not resolve it or
+    justify an exact-structure merge. Construct identity is qualified in the separate
+    chimera preparation graph. PDF locators are printed pages +12. Whole plaintext
+    reading: Native indices0–19, attributed. References/snippets remain historical
+    retained assertions, not newly verified papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-2
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/2/component_document; /records/9/component_captures/2/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-novq-native-identity-and-precursor-evidence:
+    13 nodes/12 edges and 1 complete history events. NovQ native sequence, source-taxonomy
+    conflict and bounded Ozaki 2009 precursor evidence (review #554). The BGC0000834
+    owner is not merged with fully specified novobiocin. The deposited NCIMB 9219
+    sequence is grounded; the strain-16259 source and recombinant sample retain identity
+    uncertainty. Only the primary abstract was obtained for biochemical claims. Whole
+    plaintext reading: Native indices0–19, attributed. References/snippets remain
+    historical retained assertions, not newly verified papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-3
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/3/component_document; /records/9/component_captures/3/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-novq-fusion-expression-and-processing-limits:
+    15 nodes/18 edges and 2 complete history events. NovQ fusion/preparation evidence
+    from Ni 2019 (review #554), associated with the deposited NovQ precursor mechanism
+    rather than new native proteins. The primary abstract, public figure previews
+    and two supplementary gels were inspected; subscription main methods were not
+    obtained. No complete construct, native strain or catalytic identity is inferred
+    from soluble expression, SDS-PAGE or TEV processing. Whole plaintext reading:
+    Native indices0–19, attributed. References/snippets remain historical retained
+    assertions, not newly verified papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-4
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/4/component_document; /records/9/component_captures/4/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-novq-e281-variants-and-surrogate-assay-limits:
+    28 nodes/37 edges and 1 complete history events. Nine NovQ E281 variants and bounded
+    menadione-hydroquinol assays from Ni 2020 (review #554), linked to the NovQ precursor
+    mechanism as engineered substrate-scope evidence. The full public ten-page supplement
+    was inspected; main-article and correction access was limited to abstracts/metadata.
+    Native sequence references, literal-primer models, actual preparations, docking
+    and engineered-host product measurements are distinct. No native-product identity
+    or full experimental sequence is inferred. Whole plaintext reading: Native indices0–19,
+    attributed. References/snippets remain historical retained assertions, not newly
+    verified papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-5
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/5/component_document; /records/9/component_captures/5/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-novo-native-identity-and-engineered-preparations:
+    18 nodes/18 edges and 1 complete history events. NovO native sequence, historical
+    taxonomy, abstract-limited 2005 precursor chemistry and separate Sadler 2017 preparations.
+    Native Q9L9F3 is a deposited sequence reference, not an engineered assay protein.
+    Review #555. PDF locators refer to the 60-page accepted manuscript/SI, not final
+    journal pagination; SI printed pages are seven lower. The cathomycin owner retains
+    its unspecified sugar stereocentre. Whole plaintext reading: Native indices0–19,
+    attributed. References/snippets remain historical retained assertions, not newly
+    verified papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-6
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/6/component_document; /records/9/component_captures/6/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-novo-mutant-endpoints-and-loading-conflict:
+    22 nodes/33 edges and 2 complete history events. Eleven NovO engineered variants
+    in the Sadler 2017 24-hour benzamide-surrogate assay, with WT and no-MT controls.
+    Lysate, double-mutant identity, censored values, loading conflict and preparative
+    recovery remain explicit. Review #555. PDF locators refer to the 60-page accepted
+    manuscript/SI, not final journal pagination; SI printed pages are seven lower.
+    The cathomycin owner retains its unspecified sugar stereocentre. Whole plaintext
+    reading: Native indices0–19, attributed. References/snippets remain historical
+    retained assertions, not newly verified papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-7
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/7/component_document; /records/9/component_captures/7/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-novo-sah-structure-and-mechanistic-model-limits:
+    11 nodes/10 edges and 1 complete history events. Observed NovO-SAH structure and
+    deposited homodimer are kept distinct from coumarin/SAM docking, substrate-entry
+    and catalytic hypotheses in Sadler 2017. Review #555. PDF locators refer to the
+    60-page accepted manuscript/SI, not final journal pagination; SI printed pages
+    are seven lower. The cathomycin owner retains its unspecified sugar stereocentre.
+    Whole plaintext reading: Native indices0–19, attributed. References/snippets remain
+    historical retained assertions, not newly verified papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-8
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/8/component_document; /records/9/component_captures/8/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-novo-ph-isotope-assays-and-kinetic-conflicts:
+    13 nodes/14 edges and 2 complete history events. Two additional NovO lysine variants,
+    the WT comparator and auxiliary SalL in Sadler 2017 pH, substrate-analogue and
+    coupled isotope experiments. Reported measurements remain separate from uncertain
+    scale, substrate-axis identity and mechanistic inference. Review #555. PDF locators
+    refer to the 60-page accepted manuscript/SI, not final journal pagination; SI
+    printed pages are seven lower. The cathomycin owner retains its unspecified sugar
+    stereocentre. Whole plaintext reading: Native indices0–19, attributed. References/snippets
+    remain historical retained assertions, not newly verified papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-9
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/9/component_document; /records/9/component_captures/9/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-novp-native-identity-and-tagged-preparation:
+    14 nodes/14 edges and 1 complete history events. Native NovP identity, recombinant
+    preparation and explicitly database-annotated precursor methylation. Native sequence,
+    DNA construct and tagged protein remain distinct. Review #558. The 2010 page locators
+    refer to the 30-page author manuscript, not journal pagination. The cathomycin
+    owner retains its unspecified sugar stereocentre; no exact merge with fully specified
+    novobiocin or new mature-product synthesis claim is made. Whole plaintext reading:
+    Native indices0–19, attributed. References/snippets remain historical retained
+    assertions, not newly verified papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-10
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/10/component_document; /records/9/component_captures/10/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-novp-assembly-evidence-and-solution-size-disagreement:
+    8 nodes/9 edges and 2 complete history events. Separate author/PISA dimer, dimer-like
+    2010 SEC and monomer-like 2007 DLS evidence. None uniquely establishes native-cell
+    stoichiometry. Review #558. The 2010 page locators refer to the 30-page author
+    manuscript, not journal pagination. The cathomycin owner retains its unspecified
+    sugar stereocentre; no exact merge with fully specified novobiocin or new mature-product
+    synthesis claim is made. Whole plaintext reading: Native indices0–19, attributed.
+    References/snippets remain historical retained assertions, not newly verified
+    papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-11
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/11/component_document; /records/9/component_captures/11/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-novp-sah-structure-contacts-and-residue-label-conflict:
+    11 nodes/10 edges and 2 complete history events. Observed SAH contacts and structural
+    limits, with independent coordinate checks kept separate from the printed Asp128
+    label and from functional inference. Review #558. The 2010 page locators refer
+    to the 30-page author manuscript, not journal pagination. The cathomycin owner
+    retains its unspecified sugar stereocentre; no exact merge with fully specified
+    novobiocin or new mature-product synthesis claim is made. Whole plaintext reading:
+    Native indices0–19, attributed. References/snippets remain historical retained
+    assertions, not newly verified papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-12
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/12/component_document; /records/9/component_captures/12/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-novp-docking-and-untested-mechanistic-proposals:
+    18 nodes/17 edges and 1 complete history events. NovP substrate docking and structural
+    hypotheses are explicitly computational, not observed catalytic complexes, engineered-mutant
+    results or protein interactions. Review #558. The 2010 page locators refer to
+    the 30-page author manuscript, not journal pagination. The cathomycin owner retains
+    its unspecified sugar stereocentre; no exact merge with fully specified novobiocin
+    or new mature-product synthesis claim is made. Whole plaintext reading: Native
+    indices0–19, attributed. References/snippets remain historical retained assertions,
+    not newly verified papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-13
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/13/component_document; /records/9/component_captures/13/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-novn-native-identity-and-his6-preparation: 11
+    nodes/11 edges and 1 complete history events. NovN deposited sequence versions,
+    literal primers and the Xu His6 preparation. Review #560. Xu locators are PDF
+    pages, nineteen higher than printed main-text pages. The owner retains its unspecified
+    sugar stereocentre and SEEDED status; source-assigned novobiocin is not an exact
+    structure-key merge with cathomycin. Native reference, engineered protein and
+    DNA construct are separate entities. Whole plaintext reading: Native indices0–19,
+    attributed. References/snippets remain historical retained assertions, not newly
+    verified papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-14
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/14/component_document; /records/9/component_captures/14/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-novn-carbamoylation-cofactors-and-kinetic-limits:
+    16 nodes/16 edges and 2 complete history events. Xu purified NovN carbamoylation,
+    conditional kinetics and bounded negative tests. Review #560. Xu locators are
+    PDF pages, nineteen higher than printed main-text pages. The owner retains its
+    unspecified sugar stereocentre and SEEDED status; source-assigned novobiocin is
+    not an exact structure-key merge with cathomycin. Native reference, engineered
+    protein and DNA construct are separate entities. Whole plaintext reading: Native
+    indices0–19, attributed. References/snippets remain historical retained assertions,
+    not newly verified papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-15
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/15/component_document; /records/9/component_captures/15/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-novn-analogue-products-and-substrate-conditioned-kinetics:
+    17 nodes/18 edges and 2 complete history events. Five source-assigned NovN analogue
+    products and two separate analogue kinetic fits. Review #560. Xu locators are
+    PDF pages, nineteen higher than printed main-text pages. The owner retains its
+    unspecified sugar stereocentre and SEEDED status; source-assigned novobiocin is
+    not an exact structure-key merge with cathomycin. Native reference, engineered
+    protein and DNA construct are separate entities. Whole plaintext reading: Native
+    indices0–19, attributed. References/snippets remain historical retained assertions,
+    not newly verified papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-16
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/16/component_document; /records/9/component_captures/16/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-novn-heterologous-production-and-cloning-conflict:
+    12 nodes/12 edges and 2 complete history events. pXHN construct evidence and source-assigned
+    heterologous coumermycin analogue production. Review #560. Xu locators are PDF
+    pages, nineteen higher than printed main-text pages. The owner retains its unspecified
+    sugar stereocentre and SEEDED status; source-assigned novobiocin is not an exact
+    structure-key merge with cathomycin. Native reference, engineered protein and
+    DNA construct are separate entities. Whole plaintext reading: Native indices0–19,
+    attributed. References/snippets remain historical retained assertions, not newly
+    verified papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-17
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/17/component_document; /records/9/component_captures/17/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-novn-assembly-disagreement-and-unsolved-crystal-forms:
+    11 nodes/11 edges and 1 complete history events. Distinct NovN preparation sizes
+    and the explicitly unsolved 2008 crystal forms. Review #560. Xu locators are PDF
+    pages, nineteen higher than printed main-text pages. The owner retains its unspecified
+    sugar stereocentre and SEEDED status; source-assigned novobiocin is not an exact
+    structure-key merge with cathomycin. Native reference, engineered protein and
+    DNA construct are separate entities. Whole plaintext reading: Native indices0–19,
+    attributed. References/snippets remain historical retained assertions, not newly
+    verified papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-18
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/18/component_document; /records/9/component_captures/18/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-novn-9s2t-structure-and-partial-metal-limits:
+    11 nodes/10 edges and 1 complete history events. The 2025 NovN deposit, engineered
+    sequence, coordinate coverage and bounded local geometry. Review #560. Xu locators
+    are PDF pages, nineteen higher than printed main-text pages. The owner retains
+    its unspecified sugar stereocentre and SEEDED status; source-assigned novobiocin
+    is not an exact structure-key merge with cathomycin. Native reference, engineered
+    protein and DNA construct are separate entities. Whole plaintext reading: Native
+    indices0–19, attributed. References/snippets remain historical retained assertions,
+    not newly verified papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-19
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/19/component_document; /records/9/component_captures/19/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-novhi-native-identities-and-early-precursor-reactions:
+    19 nodes/22 edges and 1 complete history events. NovH/NovI deposited identities
+    and bounded 2001 activation, loading and hydroxylation evidence. Review #561.
+    The cathomycin/BGC0000834 owner retains its unspecified sugar stereocentre and
+    SEEDED status; these precursor assays do not establish an exact-structure merge
+    with fully specified novobiocin. Boll page locators are PDF pages, five above
+    printed pages. Native references, DNA constructs and engineered preparations are
+    distinct. Whole plaintext reading: Native indices0–19, attributed. References/snippets
+    remain historical retained assertions, not newly verified papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-20
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/20/component_document; /records/9/component_captures/20/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-novhi-2011-novh-construct-and-host-preparations:
+    13 nodes/14 edges and 1 complete history events. NovH sequence-version limits,
+    literal primers and the two 2011 host-conditioned preparations. Review #561. The
+    cathomycin/BGC0000834 owner retains its unspecified sugar stereocentre and SEEDED
+    status; these precursor assays do not establish an exact-structure merge with
+    fully specified novobiocin. Boll page locators are PDF pages, five above printed
+    pages. Native references, DNA constructs and engineered preparations are distinct.
+    Whole plaintext reading: Support indices20–40, personal. References/snippets remain
+    historical retained assertions, not newly verified papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-21
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/21/component_document; /records/9/component_captures/21/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-novhi-novh-kinetics-and-model-limits: 14 nodes/15
+    edges and 2 complete history events. Three preparation-conditioned NovH kinetic
+    fits, inferred YbdZ carryover and bounded homology models. Review #561. The cathomycin/BGC0000834
+    owner retains its unspecified sugar stereocentre and SEEDED status; these precursor
+    assays do not establish an exact-structure merge with fully specified novobiocin.
+    Boll page locators are PDF pages, five above printed pages. Native references,
+    DNA constructs and engineered preparations are distinct. Whole plaintext reading:
+    Support indices20–40, personal. References/snippets remain historical retained
+    assertions, not newly verified papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-22
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/22/component_document; /records/9/component_captures/22/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-novhi-mbth-partner-identities-and-cross-activation:
+    17 nodes/20 edges and 2 complete history events. Four heterologous MbtH partners,
+    exact native reference boundaries and complete NovH cross-activation scope. Review
+    #561. The cathomycin/BGC0000834 owner retains its unspecified sugar stereocentre
+    and SEEDED status; these precursor assays do not establish an exact-structure
+    merge with fully specified novobiocin. Boll page locators are PDF pages, five
+    above printed pages. Native references, DNA constructs and engineered preparations
+    are distinct. Whole plaintext reading: Support indices20–40, personal. References/snippets
+    remain historical retained assertions, not newly verified papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-23
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/23/component_document; /records/9/component_captures/23/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-novjk-native-identities-and-tethered-precursor-oxidation:
+    18 nodes/19 edges and 1 complete history events. Exact native NovJ/NovK identities
+    and bounded primary evidence for tethered precursor oxidation. Review #562. The
+    cathomycin/BGC0000834 owner retains its unspecified sugar stereocentre and SEEDED
+    status. Precursor and recombinant protein evidence does not resolve that stereocentre
+    or establish an exact-key merge with fully specified novobiocin. Main-paper evidence
+    is abstract-only; the official four-page supplement and native deposits were inspected
+    directly. Whole plaintext reading: Support indices20–40, personal. References/snippets
+    remain historical retained assertions, not newly verified papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-24
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/24/component_document; /records/9/component_captures/24/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-novjk-individual-constructs-and-primer-conflicts:
+    15 nodes/20 edges and 1 complete history events. Four reported individual NovJ/NovK
+    constructs, intended tagged products and bounded primer/solubility evidence. Review
+    #562. The cathomycin/BGC0000834 owner retains its unspecified sugar stereocentre
+    and SEEDED status. Precursor and recombinant protein evidence does not resolve
+    that stereocentre or establish an exact-key merge with fully specified novobiocin.
+    Main-paper evidence is abstract-only; the official four-page supplement and native
+    deposits were inspected directly. Whole plaintext reading: Support indices20–40,
+    personal. References/snippets remain historical retained assertions, not newly
+    verified papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-25
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/25/component_document; /records/9/component_captures/25/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-novjk-reported-assembly-and-sec-interpretation-limits:
+    9 nodes/10 edges and 2 complete history events. Source-reported J2K2 assembly
+    and three directly inspected concentration-labeled SEC traces. Review #562. The
+    cathomycin/BGC0000834 owner retains its unspecified sugar stereocentre and SEEDED
+    status. Precursor and recombinant protein evidence does not resolve that stereocentre
+    or establish an exact-key merge with fully specified novobiocin. Main-paper evidence
+    is abstract-only; the official four-page supplement and native deposits were inspected
+    directly. Whole plaintext reading: Support indices20–40, personal. References/snippets
+    remain historical retained assertions, not newly verified papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-26
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/26/component_document; /records/9/component_captures/26/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-novjk-database-mutants-and-residue-evidence-limits:
+    10 nodes/10 edges and 1 complete history events. Three database-described engineered
+    NovJ variants and subunit/residue annotations, explicitly not primary-panel reanalysis.
+    Review #562. The cathomycin/BGC0000834 owner retains its unspecified sugar stereocentre
+    and SEEDED status. Precursor and recombinant protein evidence does not resolve
+    that stereocentre or establish an exact-key merge with fully specified novobiocin.
+    Main-paper evidence is abstract-only; the official four-page supplement and native
+    deposits were inspected directly. Whole plaintext reading: Support indices20–40,
+    personal. References/snippets remain historical retained assertions, not newly
+    verified papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-27
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/27/component_document; /records/9/component_captures/27/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-novm-native-identity-and-precursor-glycosylation:
+    12 nodes/12 edges and 1 complete history events. Native NovM identity, a distinct
+    His8 preparation and bounded primary glycosylation evidence. Review #563. The
+    BGC0000834 cathomycin owner retains its unspecified sugar stereocentre and SEEDED
+    status. These precursor and recombinant assays do not resolve that stereocentre
+    or justify an exact-key merge with fully specified novobiocin. Whole plaintext
+    reading: Support indices20–40, personal. References/snippets remain historical
+    retained assertions, not newly verified papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-28
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/28/component_document; /records/9/component_captures/28/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-novm-substrate-scope-and-tandem-assay-boundaries:
+    18 nodes/20 edges and 3 complete history events. Separate NovM donor/acceptor
+    evidence and abstract-level tandem incubations, without physical-complex claims.
+    Review #563. The BGC0000834 cathomycin owner retains its unspecified sugar stereocentre
+    and SEEDED status. These precursor and recombinant assays do not resolve that
+    stereocentre or justify an exact-key merge with fully specified novobiocin. Whole
+    plaintext reading: Support indices20–40, personal. References/snippets remain
+    historical retained assertions, not newly verified papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-29
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/29/component_document; /records/9/component_captures/29/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-novm-redox-reagents-and-early-methylation-tests:
+    25 nodes/30 edges and 3 complete history events. New commercial redox-support
+    proteins and directly inspected early-stage NovO/CouO tests. The supplement does
+    not establish complete sequences/tags for its recombinant preparations. Review
+    #563. The BGC0000834 cathomycin owner retains its unspecified sugar stereocentre
+    and SEEDED status. These precursor and recombinant assays do not resolve that
+    stereocentre or justify an exact-key merge with fully specified novobiocin. Whole
+    plaintext reading: Support indices20–40, personal. References/snippets remain
+    historical retained assertions, not newly verified papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-30
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/30/component_document; /records/9/component_captures/30/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-novm-staged-tailoring-and-product-mass-conflict:
+    18 nodes/20 edges and 2 complete history events. Direct 2005 supplement evidence
+    for staged NovM/NovP/NovN assays around NovO, with unresolved product mass and
+    sequence boundaries. Review #563. The BGC0000834 cathomycin owner retains its
+    unspecified sugar stereocentre and SEEDED status. These precursor and recombinant
+    assays do not resolve that stereocentre or justify an exact-key merge with fully
+    specified novobiocin. Whole plaintext reading: Support indices20–40, personal.
+    References/snippets remain historical retained assertions, not newly verified
+    papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-31
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/31/component_document; /records/9/component_captures/31/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-novwus-native-identities-and-sequence-boundaries:
+    9 nodes/11 edges and 1 complete history events. Three grounded native references
+    and a separate historical NovU sequence; no retrospectively identified assay fusion.
+    Review #564. The BGC0000834 owner retains its unspecified sugar stereocentre and
+    SEEDED status; precursor evidence does not resolve that centre or justify an exact-key
+    novobiocin merge. Whole plaintext reading: Support indices20–40, personal. References/snippets
+    remain historical retained assertions, not newly verified papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-32
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/32/component_document; /records/9/component_captures/32/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-novwus-joint-reactions-and-product-annotation-conflict:
+    18 nodes/21 edges and 3 complete history events. Primary abstract-level NovW/NovU/NovS
+    reactions, with unresolved product nomenclature and pathway order. Review #564.
+    The BGC0000834 owner retains its unspecified sugar stereocentre and SEEDED status;
+    precursor evidence does not resolve that centre or justify an exact-key novobiocin
+    merge. Whole plaintext reading: Support indices20–40, personal. References/snippets
+    remain historical retained assertions, not newly verified papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-33
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/33/component_document; /records/9/component_captures/33/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-novwus-novw-preparation-support-proteins-and-functional-revision:
+    20 nodes/22 edges and 1 complete history events. New support proteins, source-reported
+    kinetics and solvent-exchange evidence with explicit primary-text and database
+    limits. Review #564. The BGC0000834 owner retains its unspecified sugar stereocentre
+    and SEEDED status; precursor evidence does not resolve that centre or justify
+    an exact-key novobiocin merge. Whole plaintext reading: Support indices20–40,
+    personal. References/snippets remain historical retained assertions, not newly
+    verified papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-34
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/34/component_document; /records/9/component_captures/34/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-novwus-novw-structure-assembly-and-missing-atom-limits:
+    13 nodes/16 edges and 1 complete history events. Scar-bearing 2C0Z identity, coordinate
+    and assembly evidence, plus separately scoped preliminary solution-size evidence.
+    Review #564. The BGC0000834 owner retains its unspecified sugar stereocentre and
+    SEEDED status; precursor evidence does not resolve that centre or justify an exact-key
+    novobiocin merge. Whole plaintext reading: Support indices20–40, personal. References/snippets
+    remain historical retained assertions, not newly verified papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-35
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/35/component_document; /records/9/component_captures/35/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-nove-native-cassette-phenotype: 9 nodes/9 edges
+    and 1 complete history events. Native novE cassette genetics, residual product
+    and unresolved polarity/rescue limits. Partial biosynthesis curation (review #589),
+    not full-record sign-off. The cathomycin owner retains its unspecified sugar stereocentre;
+    source-assigned novobiocin products remain ungrounded, not exact-key merged with
+    CID 54675769. Native deposited sequences do not retrospectively identify every
+    historical strain stock, complete preparation or engineered allele. Whole plaintext
+    reading: Support indices20–40, personal. References/snippets remain historical
+    retained assertions, not newly verified papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-36
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/36/component_document; /records/9/component_captures/36/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-novg-heterologous-deletion-and-rescue: 9 nodes/11
+    edges and 1 complete history events. Heterologous NovG genetics with source-specific
+    residual production and partial rescue. Partial biosynthesis curation (review
+    #589), not full-record sign-off. The cathomycin owner retains its unspecified
+    sugar stereocentre; source-assigned novobiocin products remain ungrounded, not
+    exact-key merged with CID 54675769. Native deposited sequences do not retrospectively
+    identify every historical strain stock, complete preparation or engineered allele.
+    Whole plaintext reading: Support indices20–40, personal. References/snippets remain
+    historical retained assertions, not newly verified papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-37
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/37/component_document; /records/9/component_captures/37/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-novg-preparation-and-fragment-binding: 11 nodes/11
+    edges and 1 complete history events. Purified NovG fragment-binding evidence,
+    separated from genetic regulation and motif prediction. Partial biosynthesis curation
+    (review #589), not full-record sign-off. The cathomycin owner retains its unspecified
+    sugar stereocentre; source-assigned novobiocin products remain ungrounded, not
+    exact-key merged with CID 54675769. Native deposited sequences do not retrospectively
+    identify every historical strain stock, complete preparation or engineered allele.
+    Whole plaintext reading: Support indices20–40, personal. References/snippets remain
+    historical retained assertions, not newly verified papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-38
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/38/component_document; /records/9/component_captures/38/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-nove-heterologous-deletion-and-regulator-rescue:
+    12 nodes/16 edges and 1 complete history events. Later heterologous NovE deletion,
+    overexpression and reciprocal regulatory-gene rescue, with source-specific titers
+    and partial-complementation limits. Partial biosynthesis curation (review #589),
+    not full-record sign-off. The cathomycin owner retains its unspecified sugar stereocentre;
+    source-assigned novobiocin products remain ungrounded, not exact-key merged with
+    CID 54675769. Native deposited sequences do not retrospectively identify every
+    historical strain stock, complete preparation or engineered allele. Whole plaintext
+    reading: Support indices20–40, personal. References/snippets remain historical
+    retained assertions, not newly verified papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-39
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/39/component_document; /records/9/component_captures/39/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-nove-binding-limits-and-basal-transcription:
+    12 nodes/12 edges and 1 complete history events. Condition-specific negative NovE
+    EMSAs and detectable reciprocal regulator transcripts. No direct NovE-DNA event
+    or NovE-NovG physical complex is asserted. Partial biosynthesis curation (review
+    #589), not full-record sign-off. The cathomycin owner retains its unspecified
+    sugar stereocentre; source-assigned novobiocin products remain ungrounded, not
+    exact-key merged with CID 54675769. Native deposited sequences do not retrospectively
+    identify every historical strain stock, complete preparation or engineered allele.
+    Whole plaintext reading: Support indices20–40, personal. References/snippets remain
+    historical retained assertions, not newly verified papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-component-40
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch219/owner-capture-DATA-001.json
+  locator: /records/9/component_captures/40/component_document; /records/9/component_captures/40/component_pin
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: 'Complete graph cathomycin-nove-novg-transcriptional-cascade-bounds: 8
+    nodes/8 edges and 2 complete history events. Later qPCR evidence supports a quantitative,
+    condition-specific regulatory model, not a demonstrated direct NovE-NovG interaction.
+    Partial biosynthesis curation (review #589), not full-record sign-off. The cathomycin
+    owner retains its unspecified sugar stereocentre; source-assigned novobiocin products
+    remain ungrounded, not exact-key merged with CID 54675769. Native deposited sequences
+    do not retrospectively identify every historical strain stock, complete preparation
+    or engineered allele. Whole plaintext reading: Support indices20–40, personal.
+    References/snippets remain historical retained assertions, not newly verified
+    papers/APIs/sequences.'
+  snapshot_sha256: e871b113838998b9a0a0e5826413b641567cf80f250dccfc9747e3bd082d6845
+- evidence_id: support-2190-reader-DATA
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch219/native-current219-cathomycin-maintained-reader-DATA-001.json
+  locator: /status; /order; /counts; /raw_owner; /component_captures; /expected_view;
+    /resolved_view; /returned_view_equals_expected_complete_owner; /errors; /view_mismatches;
+    /review_check_metadata
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Original maintained reader returned the complete owner with the 41 declared
+    components appended exactly once; all non-graph fields and raw owner facts are
+    preserved. Resolution is not independent experimental validation.
+  snapshot_sha256: 98fa07bcb01422f3a5c4db73688c15e4ca9485ae27cbc5d6c1a5ce3d33bdcdd6
+- evidence_id: support-2190-reader-execution
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch219/native-current219-cathomycin-reader-execution-001.json
+  locator: /command; /source; /exit_code; /original_tool; /stdout; /stderr; /external_requests
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: Original single reader command/process and terminal receipt; no replay
+    or extra molecular parse.
+  snapshot_sha256: 50e0a58f61a12f0b0e7f31565bfe5641c3074b4f88976a7df2366154359c5c6e
+- evidence_id: support-2190-reader-acceptance
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch219/root-current219-cathomycin-reader-acceptance-001.json
+  locator: /status; /order; /DATA; /execution; /verification; /review_check_contract
+  accessed_at: '2026-11-03T09:08:16.729606Z'
+  support: supports
+  summary: ROOT acceptance of complete-owner equality, exact positive content and
+    original successful local terminal; scientific and historical evidence limits
+    remain separate.
+  snapshot_sha256: aae2dbc6df531049097f5608670c4670b630e6c4c0deb4d8b5c9198ec889944d
+- evidence_id: root-native-strict_ten
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-219/validate-strict-selected10-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-219/native-current219-five-gates-execution-001.json
+  accessed_at: '2026-11-03T08:54:55.683305Z'
+  support: supports
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  snapshot_sha256: 4924b09f392ce3a7de40076e78b039af61006aab5babfc7336809c1d1a7066df
+- evidence_id: root-native-strict_full
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-219/validate-all-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-219/native-current219-five-gates-execution-001.json
+  accessed_at: '2026-11-03T08:55:22.353823Z'
+  support: supports
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  snapshot_sha256: 95bff207615fa197d63e6a572adfc1000494959736ef2bbf81763964ad50960a
+- evidence_id: root-native-lockfile
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-219/verify-corpus-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-219/native-current219-five-gates-execution-001.json
+  accessed_at: '2026-11-03T08:55:44.349599Z'
+  support: supports
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  snapshot_sha256: 254f171c7dff0f1ecbee5f47f75d2b7046143ae7fc499d9a1c08263e1c5125d8
+- evidence_id: root-native-reproduction
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-219/verify-reproduction-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-219/native-current219-five-gates-execution-001.json
+  accessed_at: '2026-11-03T08:56:21.949336Z'
+  support: supports
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  snapshot_sha256: cfc38f4e3f434e7f3651975f2cb228e5cda848476b2c53d1636d8746b794237a
+- evidence_id: root-native-queue
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-219/review-queue-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-219/native-current219-five-gates-execution-001.json
+  accessed_at: '2026-11-03T08:56:34.961048Z'
+  support: supports
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  snapshot_sha256: 42dcce392aeabee4644ffdf1db140ee988d03426e6bedea09bdba7dfc54b24c9
+assessments:
+- assessment_id: support-2190-A1
+  area: identity
+  topic: Exact structure concept and grounding scope
+  outcome: supported
+  summary: Cathomycin retains the exact MIBiG-derived full key YJQPYGGHQPGBLI-HHJGLNSVSA-N
+    and neutral C31H36N2O11. The MINTED concept has no retained exact-key ChEBI hit
+    and is named by active BGC0000834 version 5, compound index 1. The owner explicitly
+    preserves an unspecified sugar stereocenter (/t23-,25+,26-,29?) and distinguishes
+    it from fully specified novobiocin in its historical graph notes. Precursor ligation,
+    glycosylation or tailoring assays do not resolve that center or establish exact
+    mature-product identity. The source xref and historical database comparisons remain
+    attributed, not freshly resolved.
+  target_ids:
+  - naturalproductmech:mibig-d4379ab45b
+  evidence_ids:
+  - support-2190-owner
+  - support-2190-capture
+  - support-2190-intake
+  - support-2190-source-plan
+  - support-2190-plan-acceptance
+  - support-2190-direct-contexts
+  - support-2190-query-chebi_structures
+  - support-2190-row-mibig_compounds-0
+  dimensions:
+  - name: standard_inchi_key
+    value: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+    definition: Exact inspected scope; retained source assertions, saved computation
+      and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2190-owner
+    - support-2190-capture
+    - support-2190-intake
+    - support-2190-source-plan
+    - support-2190-plan-acceptance
+    - support-2190-direct-contexts
+    - support-2190-query-chebi_structures
+    - support-2190-row-mibig_compounds-0
+  - name: grounding_scope
+    value: MINTED; no retained exact-key ChEBI hit; no fresh xref resolution
+    definition: Exact inspected scope; retained source assertions, saved computation
+      and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2190-owner
+    - support-2190-capture
+    - support-2190-intake
+    - support-2190-source-plan
+    - support-2190-plan-acceptance
+    - support-2190-direct-contexts
+    - support-2190-query-chebi_structures
+    - support-2190-row-mibig_compounds-0
+- assessment_id: support-2190-A2
+  area: representation
+  topic: Paired molecular representations and stereochemical limits
+  outcome: supported
+  summary: Both stored forms parsed as neutral C31H36N2O11, 44 atoms and 47 bonds.
+    Standard InChI, full key, formula, charge and counts agree, but canonical isomeric/nonisomeric
+    SMILES comparisons are false and the chirality-aware atom map is empty. The saved
+    SMILES O-carbamoyl site is C3–O4–C5(=O7)–N6H2; the InChI-derived form is C24–O42–C29(–O38H)=N31H,
+    with extra unspecified C=N bond43. This bounded carbamate/imidic-acid representation
+    difference is not a wrong-molecule conclusion or proof of full tautomer equivalence.
+    Both forms retain three specified tetrahedral centers (SMILES2R,3S,8R) and one
+    unspecified sugar center (SMILES10, InChI28), consistent with literal stereo_complete:false.
+    Original diagnostic stderr is empty; full_graph_identity_established remains false.
+  target_ids:
+  - naturalproductmech:mibig-d4379ab45b
+  evidence_ids:
+  - support-2190-owner
+  - support-2190-capture
+  - support-2190-intake
+  - support-2190-source-plan
+  - support-2190-plan-acceptance
+  - support-2190-chemistry
+  - support-2190-stereo
+  - support-2190-stereo-method
+  - support-2190-diagnostic-execution
+  - support-2190-diagnostic-acceptance
+  dimensions:
+  - name: stereochemical_resolution
+    value: Three specified tetrahedral centers plus one unspecified sugar center in
+      both forms; extra unspecified C=N only in InChI form; literal stereo_complete:false.
+    definition: Exact inspected scope; retained source assertions, saved computation
+      and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2190-owner
+    - support-2190-capture
+    - support-2190-intake
+    - support-2190-source-plan
+    - support-2190-plan-acceptance
+    - support-2190-chemistry
+    - support-2190-stereo
+    - support-2190-stereo-method
+    - support-2190-diagnostic-execution
+    - support-2190-diagnostic-acceptance
+  - name: representation_correspondence
+    value: Canonical isomeric/nonisomeric false; empty atom map; normalized identifiers
+      agree; full_graph_identity_established:false.
+    definition: Exact inspected scope; retained source assertions, saved computation
+      and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2190-owner
+    - support-2190-capture
+    - support-2190-intake
+    - support-2190-source-plan
+    - support-2190-plan-acceptance
+    - support-2190-chemistry
+    - support-2190-stereo
+    - support-2190-stereo-method
+    - support-2190-diagnostic-execution
+    - support-2190-diagnostic-acceptance
+- assessment_id: support-2190-A3
+  area: provenance
+  topic: Producer, occurrence and locus evidence grades
+  outcome: supported
+  summary: The retained MIBiG producer is Streptomyces niveus, NCBITaxon:193462, graded
+    BGC_CHARACTERIZED; BGC0000834 is CLUSTER_DEMONSTRATED with knockout, enzymatic
+    and heterologous-expression methods. AF170880.4 coordinates4859–28076 are source
+    locus provenance. No selected LOTUS occurrence is present. Cached historical species
+    synonyms do not collapse the distinct NCIMB9219 and NCIMB11891 strain attributions
+    discussed in the curator-owned graphs, nor identify every historical recombinant
+    sample.
+  target_ids:
+  - naturalproductmech:mibig-d4379ab45b
+  evidence_ids:
+  - support-2190-owner
+  - support-2190-capture
+  - support-2190-intake
+  - support-2190-source-plan
+  - support-2190-plan-acceptance
+  - support-2190-row-mibig_compounds-0
+  - support-2190-taxon-routes
+  - support-2190-taxon-193462
+  dimensions:
+  - name: taxon_and_strain_scope
+    value: NCBITaxon:193462; cached/source scope only
+    definition: Exact inspected scope; retained source assertions, saved computation
+      and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2190-owner
+    - support-2190-capture
+    - support-2190-intake
+    - support-2190-source-plan
+    - support-2190-plan-acceptance
+    - support-2190-row-mibig_compounds-0
+    - support-2190-taxon-routes
+    - support-2190-taxon-193462
+  - name: producer_evidence_tier
+    value: BGC_CHARACTERIZED; species193462 with graph-specific strain/construct limits
+    definition: Exact inspected scope; retained source assertions, saved computation
+      and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2190-owner
+    - support-2190-capture
+    - support-2190-intake
+    - support-2190-source-plan
+    - support-2190-plan-acceptance
+    - support-2190-row-mibig_compounds-0
+    - support-2190-taxon-routes
+    - support-2190-taxon-193462
+  - name: locus_evidence_tier
+    value: CLUSTER_DEMONSTRATED; knockout, enzymatic assays and heterologous expression
+    definition: Exact inspected scope; retained source assertions, saved computation
+      and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2190-owner
+    - support-2190-capture
+    - support-2190-intake
+    - support-2190-source-plan
+    - support-2190-plan-acceptance
+    - support-2190-row-mibig_compounds-0
+    - support-2190-taxon-routes
+    - support-2190-taxon-193462
+- assessment_id: support-2190-A4
+  area: evidence
+  topic: Citation placement and historical verification scope
+  outcome: supported
+  summary: PMID:10770754 is the retained MIBiG ENTRY citation. The two inline graphs
+    and 41 components add granular historical PRIMARY_EXPERIMENT, DATABASE_ASSERTION
+    and CURATOR_INFERENCE placements, including source excerpts, page offsets, corrected
+    strain claims, assay conditions and explicit access limitations. Those are preserved
+    curator assertions; no original article/API response, protein sequence or coordinate
+    file was freshly inspected here. Citation multiplicity and the 1025 graph reference
+    placements are not 1025 independent experiments.
+  target_ids:
+  - naturalproductmech:mibig-d4379ab45b
+  evidence_ids:
+  - support-2190-owner
+  - support-2190-capture
+  - support-2190-intake
+  - support-2190-source-plan
+  - support-2190-plan-acceptance
+  - support-2190-history
+  - support-2190-source-notes
+  - support-2190-row-mibig_compounds-0
+  - support-2190-inline-0
+  - support-2190-inline-1
+  - support-2190-component-0
+  - support-2190-component-1
+  - support-2190-component-2
+  - support-2190-component-3
+  - support-2190-component-4
+  - support-2190-component-5
+  - support-2190-component-6
+  - support-2190-component-7
+  - support-2190-component-8
+  - support-2190-component-9
+  - support-2190-component-10
+  - support-2190-component-11
+  - support-2190-component-12
+  - support-2190-component-13
+  - support-2190-component-14
+  - support-2190-component-15
+  - support-2190-component-16
+  - support-2190-component-17
+  - support-2190-component-18
+  - support-2190-component-19
+  - support-2190-component-20
+  - support-2190-component-21
+  - support-2190-component-22
+  - support-2190-component-23
+  - support-2190-component-24
+  - support-2190-component-25
+  - support-2190-component-26
+  - support-2190-component-27
+  - support-2190-component-28
+  - support-2190-component-29
+  - support-2190-component-30
+  - support-2190-component-31
+  - support-2190-component-32
+  - support-2190-component-33
+  - support-2190-component-34
+  - support-2190-component-35
+  - support-2190-component-36
+  - support-2190-component-37
+  - support-2190-component-38
+  - support-2190-component-39
+  - support-2190-component-40
+  - support-2190-reader-DATA
+  - support-2190-reader-execution
+  - support-2190-reader-acceptance
+  dimensions:
+  - name: citation_scope
+    value: ENTRY PMID:10770754 plus historical graph-specific sources; no fresh primary/API/sequence
+      verification
+    definition: Exact inspected scope; retained source assertions, saved computation
+      and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2190-owner
+    - support-2190-capture
+    - support-2190-intake
+    - support-2190-source-plan
+    - support-2190-plan-acceptance
+    - support-2190-history
+    - support-2190-source-notes
+    - support-2190-row-mibig_compounds-0
+    - support-2190-inline-0
+    - support-2190-inline-1
+    - support-2190-component-0
+    - support-2190-component-1
+    - support-2190-component-2
+    - support-2190-component-3
+    - support-2190-component-4
+    - support-2190-component-5
+    - support-2190-component-6
+    - support-2190-component-7
+    - support-2190-component-8
+    - support-2190-component-9
+    - support-2190-component-10
+    - support-2190-component-11
+    - support-2190-component-12
+    - support-2190-component-13
+    - support-2190-component-14
+    - support-2190-component-15
+    - support-2190-component-16
+    - support-2190-component-17
+    - support-2190-component-18
+    - support-2190-component-19
+    - support-2190-component-20
+    - support-2190-component-21
+    - support-2190-component-22
+    - support-2190-component-23
+    - support-2190-component-24
+    - support-2190-component-25
+    - support-2190-component-26
+    - support-2190-component-27
+    - support-2190-component-28
+    - support-2190-component-29
+    - support-2190-component-30
+    - support-2190-component-31
+    - support-2190-component-32
+    - support-2190-component-33
+    - support-2190-component-34
+    - support-2190-component-35
+    - support-2190-component-36
+    - support-2190-component-37
+    - support-2190-component-38
+    - support-2190-component-39
+    - support-2190-component-40
+    - support-2190-reader-DATA
+    - support-2190-reader-execution
+    - support-2190-reader-acceptance
+- assessment_id: support-2190-A5
+  area: scope
+  topic: Occurrence, assay and companion boundaries
+  outcome: supported
+  summary: No selected LOTUS, ChEBI-origin, CyanometDB, PubChem, BindingDB or AntibioticMech
+    rows support an added occurrence or activity observation. The owner has no bioactivities,
+    bioactivity_summary or molecular_targets; its graph assays concern specific biosynthetic
+    precursors, enzyme preparations, mutants or regulatory contexts. They must not
+    be recast as mature Cathomycin clinical activity, a natural-product target claim,
+    or an exact stereochemical identity result. Empty retained source frames do not
+    establish inactivity.
+  target_ids:
+  - naturalproductmech:mibig-d4379ab45b
+  evidence_ids:
+  - support-2190-owner
+  - support-2190-capture
+  - support-2190-intake
+  - support-2190-source-plan
+  - support-2190-plan-acceptance
+  - support-2190-query-lotus_occurrences
+  - support-2190-query-cyanometdb_occurrences
+  - support-2190-query-pubchem_bioassay
+  - support-2190-query-bindingdb_targets
+  - support-2190-query-antibioticmech_inchikeys
+  - support-2190-query-chebi_origins
+  dimensions:
+  - name: occurrence_scope
+    value: No selected retained occurrence rows; producer and historical strain/preparation
+      claims remain distinct
+    definition: Exact inspected scope; retained source assertions, saved computation
+      and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2190-owner
+    - support-2190-capture
+    - support-2190-intake
+    - support-2190-source-plan
+    - support-2190-plan-acceptance
+    - support-2190-query-lotus_occurrences
+    - support-2190-query-cyanometdb_occurrences
+    - support-2190-query-pubchem_bioassay
+    - support-2190-query-bindingdb_targets
+    - support-2190-query-antibioticmech_inchikeys
+    - support-2190-query-chebi_origins
+  - name: assay_scope
+    value: No selected activity/target rows; graph precursor/preparation endpoints
+      are not mature-product activity claims
+    definition: Exact inspected scope; retained source assertions, saved computation
+      and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2190-owner
+    - support-2190-capture
+    - support-2190-intake
+    - support-2190-source-plan
+    - support-2190-plan-acceptance
+    - support-2190-query-lotus_occurrences
+    - support-2190-query-cyanometdb_occurrences
+    - support-2190-query-pubchem_bioassay
+    - support-2190-query-bindingdb_targets
+    - support-2190-query-antibioticmech_inchikeys
+    - support-2190-query-chebi_origins
+- assessment_id: support-2190-A6
+  area: other
+  topic: Computed classification and full-table topology limits
+  outcome: supported
+  summary: NPClassifier reports Coumarins / Simple coumarins, is_glycoside=true. Saved
+    SMILES tables show one saturated C5O ring [2,3,8,10,40O,41] and an external O11
+    bridge from sugar C10 to aromatic C12, supporting a bounded O-linked glycosyl
+    motif. O40 is the internal ring oxygen, not a second glycosidic bridge; the C10
+    anomeric/sugar center remains unspecified. The structure also has methoxy O1,
+    O-carbamoyl C5, amide C20(=O21)–N19 and aromaticized coumarin carbonyl C34=O35/ring
+    O36. The generic SINGLE-bond ester scan does not report this aromaticized coumarin
+    ring; its carbamate ester-like match remains distinct. MIBiG SACCHARIDE/OTHER
+    classes remain separate source assertions.
+  target_ids:
+  - naturalproductmech:mibig-d4379ab45b
+  evidence_ids:
+  - support-2190-owner
+  - support-2190-capture
+  - support-2190-intake
+  - support-2190-source-plan
+  - support-2190-plan-acceptance
+  - support-2190-topology
+  - support-2190-chemistry
+  - support-2190-row-npclassifier-0
+  - support-2190-row-mibig_compounds-0
+  dimensions:
+  - name: computed_classification
+    value: Shikimates and Phenylpropanoids / Coumarins / Simple coumarins; glycoside=true;
+      npclassifier.gnps2.org@2026-09-07
+    definition: Exact inspected scope; retained source assertions, saved computation
+      and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2190-owner
+    - support-2190-capture
+    - support-2190-intake
+    - support-2190-source-plan
+    - support-2190-plan-acceptance
+    - support-2190-topology
+    - support-2190-chemistry
+    - support-2190-row-npclassifier-0
+    - support-2190-row-mibig_compounds-0
+- assessment_id: support-2190-A7
+  area: completeness
+  topic: Partial scientific completion and maintained ownership
+  outcome: supported
+  summary: All seven core areas and twelve dimensions were assessed against actual
+    intake, whole raw/history, retained source rows/cache and both complete saved
+    chemical forms. Five local gates passed; full QC/OAK and external verification
+    remain unavailable. The sole maintained-reader check passed with complete owner/components
+    preserved; two additional mechanism/protein assessments retain historical source
+    limitations. The inspected source assertions and bounded local structure facts
+    provide positive support; no concrete source-record contradiction requiring a
+    curation finding was established. Native SEEDED status/history and all corpus/source
+    bytes remain unchanged.
+  target_ids:
+  - naturalproductmech:mibig-d4379ab45b
+  evidence_ids:
+  - support-2190-owner
+  - support-2190-capture
+  - support-2190-intake
+  - support-2190-source-plan
+  - support-2190-plan-acceptance
+  - support-2190-history
+  - support-2190-source-notes
+  - support-2190-direct-contexts
+  - support-2190-intake-acceptance
+  - support-2190-native-acceptance
+  - support-2190-diagnostic-acceptance
+  - support-2190-source-ownership
+  - support-2190-reader-acceptance
+  dimensions:
+  - name: review_completion
+    value: partial; full QC/OAK/external verification unavailable; no native status/history
+      or source edits
+    definition: Exact inspected scope; retained source assertions, saved computation
+      and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2190-owner
+    - support-2190-capture
+    - support-2190-intake
+    - support-2190-source-plan
+    - support-2190-plan-acceptance
+    - support-2190-history
+    - support-2190-source-notes
+    - support-2190-direct-contexts
+    - support-2190-intake-acceptance
+    - support-2190-native-acceptance
+    - support-2190-diagnostic-acceptance
+    - support-2190-source-ownership
+    - support-2190-reader-acceptance
+- assessment_id: support-2190-A8
+  area: graph
+  topic: Complete declared mechanisms and causal/evidence boundaries
+  outcome: supported
+  summary: The complete maintained view contains the two inline graphs plus 41 exact
+    owner/key-bound components, totaling 43 graphs,638 nodes,706 edges and 1025 reference
+    placements; all 15 owner and 64 component histories are retained. No biosynthetic_pathway
+    or molecular_targets root is present. Inline NovL precursor ligation and recombinant/crystal
+    claims remain distinct from mature-product identity. Components distinguish NovL/CouL
+    chimeras, NovQ surrogate/fusion/E281 experiments, NovO loading/pH/isotope and
+    kinetic conflicts, NovP assembly/residue-label/docking limits, NovN carbamoylation/product/metal/assembly/cloning
+    conflicts, NovHI/NovJK tethered-precursor and partner/preparation evidence, NovM
+    staged tailoring/redox/negative tests, NovWUS product/sequence/structural conflicts,
+    and NovE/NovG regulatory deletion/rescue/binding/transcription contexts. Source-reported
+    endpoints, proposed mechanisms, coordinate contacts, incomplete rescue and bounded
+    non-detection retain their own scope; they are not interchangeable evidence of
+    native mature Cathomycin synthesis. Graph-local edge references and explicit conflicts
+    were preserved, not resolved by the reader.
+  target_ids:
+  - naturalproductmech:mibig-d4379ab45b
+  evidence_ids:
+  - support-2190-owner
+  - support-2190-capture
+  - support-2190-intake
+  - support-2190-source-plan
+  - support-2190-plan-acceptance
+  - support-2190-inline-0
+  - support-2190-inline-1
+  - support-2190-source-notes
+  - support-2190-component-0
+  - support-2190-component-1
+  - support-2190-component-2
+  - support-2190-component-3
+  - support-2190-component-4
+  - support-2190-component-5
+  - support-2190-component-6
+  - support-2190-component-7
+  - support-2190-component-8
+  - support-2190-component-9
+  - support-2190-component-10
+  - support-2190-component-11
+  - support-2190-component-12
+  - support-2190-component-13
+  - support-2190-component-14
+  - support-2190-component-15
+  - support-2190-component-16
+  - support-2190-component-17
+  - support-2190-component-18
+  - support-2190-component-19
+  - support-2190-component-20
+  - support-2190-component-21
+  - support-2190-component-22
+  - support-2190-component-23
+  - support-2190-component-24
+  - support-2190-component-25
+  - support-2190-component-26
+  - support-2190-component-27
+  - support-2190-component-28
+  - support-2190-component-29
+  - support-2190-component-30
+  - support-2190-component-31
+  - support-2190-component-32
+  - support-2190-component-33
+  - support-2190-component-34
+  - support-2190-component-35
+  - support-2190-component-36
+  - support-2190-component-37
+  - support-2190-component-38
+  - support-2190-component-39
+  - support-2190-component-40
+  - support-2190-reader-DATA
+  - support-2190-reader-execution
+  - support-2190-reader-acceptance
+  dimensions: []
+- assessment_id: support-2190-A9
+  area: grounding
+  topic: Native proteins, engineered preparations and historical source limits
+  outcome: supported
+  summary: Grounded native sequence references are kept separate from tagged, cleaved-scar,
+    SeMet, methylated, mutant/chimeric and heterologous preparations. The historical
+    NovL 527-aa/Q9L9F6 comparison is a retained curator assertion; NCIMB9219 and11891
+    are not collapsed as strain synonyms. Methylated-ring-B NovL assays are not silently
+    assigned the unmethylated RHEA36699 reaction, and the 14.5/13.0/8.4 specific-activity
+    values are not a controlled tag-effect comparison or kcat. An unsolved 2.6-A NovL
+    diffraction dataset is not a solved structure/contact/oligomer result. Component-specific
+    primer, loading, residue, sequence, metal, assembly and product conflicts remain
+    explicit; host MbtH carryover, docking and pathway-order models are not upgraded
+    to direct observations. Native regulator partial rescue and basal transcript limits
+    do not prove equal titres or absolute zero. No article/API response, protein sequence
+    or coordinate file was newly inspected, and none of these precursor/protein data
+    resolve the owner’s unspecified sugar center.
+  target_ids:
+  - naturalproductmech:mibig-d4379ab45b
+  evidence_ids:
+  - support-2190-owner
+  - support-2190-capture
+  - support-2190-intake
+  - support-2190-source-plan
+  - support-2190-plan-acceptance
+  - support-2190-inline-0
+  - support-2190-inline-1
+  - support-2190-source-notes
+  - support-2190-component-0
+  - support-2190-component-1
+  - support-2190-component-2
+  - support-2190-component-3
+  - support-2190-component-4
+  - support-2190-component-5
+  - support-2190-component-6
+  - support-2190-component-7
+  - support-2190-component-8
+  - support-2190-component-9
+  - support-2190-component-10
+  - support-2190-component-11
+  - support-2190-component-12
+  - support-2190-component-13
+  - support-2190-component-14
+  - support-2190-component-15
+  - support-2190-component-16
+  - support-2190-component-17
+  - support-2190-component-18
+  - support-2190-component-19
+  - support-2190-component-20
+  - support-2190-component-21
+  - support-2190-component-22
+  - support-2190-component-23
+  - support-2190-component-24
+  - support-2190-component-25
+  - support-2190-component-26
+  - support-2190-component-27
+  - support-2190-component-28
+  - support-2190-component-29
+  - support-2190-component-30
+  - support-2190-component-31
+  - support-2190-component-32
+  - support-2190-component-33
+  - support-2190-component-34
+  - support-2190-component-35
+  - support-2190-component-36
+  - support-2190-component-37
+  - support-2190-component-38
+  - support-2190-component-39
+  - support-2190-component-40
+  - support-2190-reader-DATA
+  - support-2190-reader-execution
+  - support-2190-reader-acceptance
+  dimensions: []
+findings: []
+actions: []
+limitations:
+- No external requests or fresh primary-literature/API/ontology/taxonomy/accession
+  verification. Source xrefs and historical citations remain assertions at their stated
+  resolution.
+- The unresolved sugar center, false canonical comparisons and empty atom map remain
+  explicit; precursor and engineered-enzyme results do not resolve exact mature Cathomycin
+  identity.
+- Full QC and complete OAK authority coverage were unavailable. Local validation and
+  reproduction do not prove biological claims or justify native status promotion.
+- No source record, generated owner, component or curation history was edited in this
+  review.
+- The whole selected owner was read, but scientific completion is partial because
+  full QC, complete ontology authority coverage and external source verification were
+  unavailable. No native status or history was changed.
+- The branch uses cached base ce6a5498df5be51116bd5e0c119023ee62bb5464. Fresh origin/main
+  verification and publication are deferred because the user prohibits all external
+  requests.
+notes:
+- Personal whole reading covers the selected owner/history, admitted direct companions,
+  assigned full source payloads and both saved molecular tables; cache/components
+  carry explicitly identified team attribution.
+- Author previously prepared controller/diagnostic/assembler sources; scientific interpretation
+  is not an independent source-mechanics peer. Independent scientific peer remains
+  separate.
+- Original stderr is empty; no global warning has been assigned to this owner.
+- Saved review coverage is distinct from the native SEEDED/REVIEWED curation state.
+  Proposed actions are not performed edits.
+tags:
+- offline
+- record-review
+- batch-219
