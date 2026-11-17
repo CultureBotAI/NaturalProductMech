@@ -1,0 +1,1597 @@
+# Local evidence review: casbene
+
+- Review: 20261103T210813Z-casbene
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-11-03T20:21:12.263031Z
+- Finished UTC: 2026-11-03T21:08:13.253381Z
+- Reviewer: Codex root with native_checks, bgc_science and review_support peer agents (independent)
+- Completion: partial
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Casbene retains coherent local source claims and an accepted partial Ricinus cyclisation mechanism. Its two unspecified tetrahedral centres and the distinction between Ricinus protein evidence and the Jatropha locus remain explicit. Scientific completion is partial.
+
+## Scope And Provenance
+
+One complete NaturalProductRecord, including all present scientific claims, history and declared mechanisms; external verification remains unavailable.
+
+Selection: Campaign path order 2295; one of the next ten uncovered paths selected from the 3116-record corpus. Membership uses the canonical validated catalogue plus retained committed campaign bundles.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base ce6a5498df5be51116bd5e0c119023ee62bb5464.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CHEBI:17695 | data/natural_products/terpenoids/casbene.yaml | generated | casbene |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Complete offline maintained reader for casbene | passed | True | CHEBI:17695 | One original offline maintained call preserved the complete owner and ordered component/history content. Mechanical success does not establish fresh primary, sequence, construct or natural-identity verification. |
+| strict_ten | passed | True | CHEBI:17695 | Closed-schema validation of the ten selected owners and any referenced components reported zero errors. |
+| strict_full | passed | True | CHEBI:17695 | Full closed-schema validation scanned all 3116 owners and reported zero errors. |
+| lockfile | passed | True | CHEBI:17695 | PATHS.tsv and filesystem agree on all 3116 records and their pinned filing pathways. |
+| reproduction | passed | True | CHEBI:17695 | All 3116 records reproduce byte-identically from the retained inventories and carried curator content. This does not independently validate curator science. |
+| queue | passed | True | CHEBI:17695 | The full local queue contains 8922 diagnostic rows; selected-target entries were inspected. Queue diagnostics are leads, not scientific sign-off. |
+| Full just qc | unavailable | True | CHEBI:17695 | Not run under the external-request prohibition: the complete recipe includes upstream vendored synchronization. The five executed local checks are recorded separately. |
+| Complete OAK identifier/label authority check | unavailable | True | CHEBI:17695 | Complete offline ontology authority coverage was not established for this run; no ontology retrieval or remote resolution was attempted. Retained taxonomy evidence has only its explicitly stated local scope. |
+| Primary literature and current structured database/identifier verification | unavailable | True | CHEBI:17695 | All external requests are prohibited by the user. Fresh database and identifier verification and complete primary-literature coverage are unavailable. Any retained original literature actually inspected is recorded separately with its historical scope. |
+
+## Scientific And Domain Assessments
+
+### Identity
+
+identity: supported. Targets: CHEBI:17695.
+
+CHEBI:17695 and MIBiG BGC0002723 version 2 share the complete key ZJMVJDFTNPZVMB-QOCMWZQCSA-N and C20H32. The ChEBI bicyclo[12.1.0]pentadecatriene description is consistent with the stored carbon framework. Same standardized identifiers do not establish the natural relative or absolute configurations that are absent from the source forms.
+
+### Representation
+
+representation: supported. Targets: CHEBI:17695.
+
+Both saved forms are neutral C20H32 with 20 atoms, 21 bonds and one connected component. The framework has a 14-carbon ring sharing an edge with a cyclopropane and three saved E alkenes. Two tetrahedral centres remain unspecified in both forms, consistent with stereo_complete:false. Local Bond_Cis descriptors are neighbour-order dependent and do not contradict the saved E labels. All ten comparison flags and the stored chirality-aware correspondence agree, while full_graph_identity_established remains false. No natural stereoisomer or assay-product purity is inferred.
+
+### Origin
+
+provenance: supported. Targets: CHEBI:17695.
+
+BGC0002723 version 2 is active, questionable quality and unknown completeness. Jatropha curcas (180498) remains SOURCE_ASSERTION producer; Heterologous expression separately grades GPS_020388126.1:7857–18675 CLUSTER_DEMONSTRATED. The historical pathway uses Ricinus communis casbene synthase and explicitly does not equate it with the Jatropha locus's NP_001292945.1/XP_012066853.1 proteins. The two Ricinus occurrence citations do not upgrade the Jatropha claim or supply an exact enzyme-to-locus assignment.
+
+### Citations
+
+evidence: supported. Targets: CHEBI:17695.
+
+DOI:10.1105/tpc.114.129668 is retained at COMPOUND_EVIDENCE level for the Jatropha source. The Ricinus pathway separately retains DOI:10.1006/abbi.1996.0559, DOI:10.1073/pnas.91.18.8497 and historical UniProt/Rhea assertions. The four pathway references repeat on each edge; that repetition is not independent validation. LOTUS and the exact sibling ANTIFUNGAL row have separate scopes, without fresh publication or accession verification.
+
+### Occurrence and activity
+
+evidence: supported. Targets: CHEBI:17695.
+
+Two LOTUS rows name Ricinus communis (3988), with DOI:10.1016/0003-9861(85)90171-7 and DOI:10.1104/PP.81.2.335. They are occurrence citations, not two established independent production experiments. The exact AntibioticMech full-key row supports the retained ANTIFUNGAL summary only at sibling-database classification scope. The PubChem blank-AID '(no assay data)' sentinel is not inactivity; no quantitative bioactivity objects or molecular targets are written. Empty retained target/other-occurrence joins remain bounded.
+
+### Classification
+
+consistency: supported. Targets: CHEBI:17695.
+
+TERPENE and the source Diterpenoid label are distinct from NPClassifier npclassifier.gnps2.org@2026-09-07, which reports Terpenoids / Diterpenoids / Casbane diterpenoids with is_glycoside:false. The C20 bicyclic hydrocarbon topology is compatible at scaffold scope and has no carbohydrate residue. Neither the model nor the historical mechanism resolves the unspecified stereocentres or proves complete native biosynthesis.
+
+### Mechanism
+
+graph: supported. Targets: CHEBI:17695.
+
+The accepted reader preserves one BIOSYNTHESIS graph, three nodes, two directed edges and one pathway step. The graph represents geranylgeranyl diphosphate cyclisation by Ricinus casbene synthase and formation of casbene. The step retains RHEA:14901, CHEBI:58756 → CHEBI:17695 and diphosphate CHEBI:33019 among the products. Four complete evidence items are repeated on both edges. Historical recombinant-enzyme and cDNA annotations support the retained partial reaction narrative; no fresh physiological pathway, native-production or natural-product stereochemical proof is added.
+
+### Proteins and constructs
+
+grounding: supported. Targets: CHEBI:17695.
+
+UniProtKB:P59287 is retained as the 601-aa Ricinus communis chloroplastic casbene-synthase reference, with historical L32134 and EQ973781/EEF48743.1 cross-references. The primary annotation describes E. coli expression and kinetic/product analysis; a matching length or accession cross-reference is not a newly verified complete assay construct, mature chain or historical stock. Jatropha locus proteins remain separate. No new sequence comparison, accession resolution or primary experiment was performed.
+
+### Completion
+
+completeness: unknown. Targets: CHEBI:17695.
+
+All twelve scientific dimensions were assessed against complete current owner/history, actual canonical intake, retained source payloads and the attributed complete saved molecular tables. The five original local commands passed, while full QC, complete OAK authority coverage and fresh external verification remain unavailable. The original required maintained reader passed with complete owner and component preservation; this mechanical result does not supply fresh mechanism, sequence or primary-source verification. The completed eight-table curation scan found no matching exact cohort token within its declared ignore-independent scope. No supported new source correction is established; existing open questions and scientific limitations remain, completion is partial and native curation status is unchanged.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| bgc-2295-owner | /private/tmp/npm-record-reviews-20261021/data/natural_products/terpenoids/casbene.yaml; Whole owner plaintext and complete curation_history | supports | Complete current owner with all 3 history entries. Whole reading and exact prior carries are explicitly attributed; native curation_status remains SEEDED. |
+| bgc-2295-capture | /private/tmp/npm-review-work/shared-next-batch230/owner-capture-DATA-001.json; /records/4/owner_pin; /records/4/owner_document | supports | Complete captured owner retains all written fields and history. |
+| bgc-2295-intake | /private/tmp/npm-review-work/shared-next-batch230/intakes/2295-inspect-001.json; /source; /targets | supports | Actual one-record canonical intake for CHEBI:17695; 39 pinned input placements and explicit maintained ownership. |
+| bgc-2295-grounding-owner | /private/tmp/npm-review-work/shared-next-batch230/owner-capture-DATA-001.json; /records/4/owner_document | supports | Complete written field projection, with absence bounded by the complete captured owner: {"chemical_structure":{"smiles":"C/C/1=C\\CC/C(=C/C2C(C2(C)C)CC/C(=C/CC1)/C)/C","standard_inchi":"InChI=1S/C20H32/c1-15-8-6-10-16(2)12-13-18-19(20(18,4)5)14-17(3)11-7-9-15/h9-10,14,18-19H,6-8,11-13H2,1-5H3/b15-9+,16-10+,17-14+","standard_inchi_key":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N","stereo_complete":false,"structure_source":"MIBIG","structure_source_id":"mibig:BGC0002723"},"definition":"A diterpene comprising bicyclo[12.1.0]pentadeca-2,6,10-triene having three methyl substituents located at the 3-, 7- and 11-positions as well as gem-dimethyl groups at the 15-position.","definition_source":"CHEBI:17695","grounding_status":"EXACT","identifier":"CHEBI:17695","label":"casbene","source_concepts":[{"minted_identifier":"naturalproductmech:mibig-8655e7d854","source":"MIBIG","source_id":"BGC0002723","source_label":"casbene","source_version":"2"},{"minted_identifier":"naturalproductmech:chebi-bee4e2f26b","source":"CHEBI","source_id":"CHEBI:17695","source_label":"casbene","source_version":"3-star"}],"xrefs":["pubchem:5280437"]} |
+| bgc-2295-origin-owner | /private/tmp/npm-review-work/shared-next-batch230/owner-capture-DATA-001.json; /records/4/owner_document | supports | Complete written field projection, with absence bounded by the complete captured owner: {"biosynthetic_gene_clusters":[{"accession":"mibig:BGC0002723","bgc_class":["TERPENE"],"entry_status":"active","entry_version":"2","evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"MIBiG BGC0002723 entry version 2; citation taken from the compound evidence level","reference":"DOI:10.1105/tpc.114.129668"}],"genome_accession":"genbank:GPS_020388126.1","link_evidence_basis":"CLUSTER_DEMONSTRATED","locus_evidence_methods":["Heterologous expression"],"locus_from":7857,"locus_to":18675,"organism_label":"Jatropha curcas","organism_taxon_id":"NCBITaxon:180498"}],"producer_organisms":[{"biosynthetic_gene_cluster":"mibig:BGC0002723","evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"MIBiG BGC0002723 entry version 2; citation taken from the compound evidence level","reference":"DOI:10.1105/tpc.114.129668"}],"evidence_basis":"SOURCE_ASSERTION","notes":"Locus evidence: Heterologous expression. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different question.","source":"MIBIG","source_version":"2","taxon_id":"NCBITaxon:180498","taxon_label":"Jatropha curcas"}],"producer_taxon_groups":["LAND_PLANT"]} |
+| bgc-2295-occurrence-owner | /private/tmp/npm-review-work/shared-next-batch230/owner-capture-DATA-001.json; /records/4/owner_document | supports | Complete written field projection, with absence bounded by the complete captured owner: {"occurrence_taxon_groups":["LAND_PLANT"],"occurrences":[{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS structure-organism-reference triple. LOTUS reports that the compound was found in the organism; it does not assert that the organism produces it.","reference":"DOI:10.1016/0003-9861(85)90171-7"}],"notes":"Wikidata organism http://www.wikidata.org/entity/Q155867","source":"LOTUS","taxon_id":"NCBITaxon:3988","taxon_label":"Ricinus communis","taxon_source":"NCBITaxon"},{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS structure-organism-reference triple. LOTUS reports that the compound was found in the organism; it does not assert that the organism produces it.","reference":"DOI:10.1104/PP.81.2.335"}],"notes":"Wikidata organism http://www.wikidata.org/entity/Q155867","source":"LOTUS","taxon_id":"NCBITaxon:3988","taxon_label":"Ricinus communis","taxon_source":"NCBITaxon"}]} |
+| bgc-2295-assay-owner | /private/tmp/npm-review-work/shared-next-batch230/owner-capture-DATA-001.json; /records/4/owner_document | supports | Complete written field projection, with absence bounded by the complete captured owner: {"bioactivity_summary":["ANTIFUNGAL"]} |
+| bgc-2295-classification-owner | /private/tmp/npm-review-work/shared-next-batch230/owner-capture-DATA-001.json; /records/4/owner_document | supports | Complete written field projection, with absence bounded by the complete captured owner: {"bgc_class":["TERPENE"],"biosynthesis_origin":"NATURAL_PRODUCT","compound_classes":["Diterpenoid"],"np_classification":{"class_results":["Casbane diterpenoids"],"is_glycoside":false,"pathway_results":["Terpenoids"],"superclass_results":["Diterpenoids"],"tool":"NPClassifier","tool_version":"npclassifier.gnps2.org@2026-09-07"},"np_pathway":"TERPENOIDS"} |
+| bgc-2295-chemistry | /private/tmp/npm-review-work/shared-next-batch230/chemistry-local/diagnostic-DATA-001.json; /records/4/declared_structure; /records/4/smiles/status; /records/4/inchi/status; /records/4/smiles/computed; /records/4/inchi/computed; /records/4/comparisons; /records/4/atom_correspondence | supports | Both stored forms parsed. Exact original comparison and correspondence values are retained: {"atom_correspondence":{"complete_atom_count_match":true,"full_graph_identity_established":false,"scope":"One chirality-aware substructure match; no independent full graph or natural identity claim.","smiles_to_inchi_atom_indices":[0,14,8,6,10,16,13,18,17,19,3,4,12,11,15,9,5,7,1,2]},"comparisons":{"atom_count_equal":true,"bond_count_equal":true,"both_keys_equal_declared":true,"canonical_isomeric_smiles_equal":true,"canonical_nonisomeric_smiles_equal":true,"formal_charge_equal":true,"formula_equal":true,"smiles_formula_equals_literal_InChI_main_layer":true,"standard_inchi_equal":true,"standard_inchi_key_equal":true}} Complete saved atom/bond/ring/stereo/motif dictionaries are selected. |
+| bgc-2295-topology | /private/tmp/npm-review-work/shared-next-batch230/chemistry-local/diagnostic-DATA-001.json; /records/4/smiles/computed; /records/4/inchi/computed | supports | {"inchi_formula":"C20H32","inchi_rings":[[5,9,15,11,12,17,18,13,16,10,6,8,14,7],[19,17,18]],"inchi_stereo":{"Atom_Tetrahedral:Unspecified":2,"Bond_Double:Specified":3},"scope":"The selected complete saved computed objects include all atom/bond/motif fields; no new parse or identity inference.","smiles_formula":"C20H32","smiles_rings":[[1,17,16,15,14,13,12,8,7,6,5,4,3,2],[9,8,7]],"smiles_stereo":{"Atom_Tetrahedral:Unspecified":2,"Bond_Double:Specified":3}} |
+| bgc-2295-diagnostic-reading | /private/tmp/npm-review-work/shared-next-batch230/bgc-current230-combined-diagnostic-reading-001.json; /whole_reading; /per_owner_interpretation; /limitations | supports | BGC first-five and Support last-five complete saved-table interpretations are separately attributed, with original false comparisons, global warnings and natural-identity limits preserved. |
+| bgc-2295-diagnostic-execution | /private/tmp/npm-review-work/shared-next-batch230/chemistry-local/diagnostic-execution-001.json; /observer; /command; /cwd; /started_at; /finished_at; /exit_code; /source; /source_admission; /environment_manifest; /actual_environment; /stdout; /stderr; /external_requests | supports | Original execution receipt retains the command, clocks, exit 0 and exact stdout/stderr pins; no new diagnostic execution is claimed. |
+| bgc-2295-diagnostic-acceptance | /private/tmp/npm-review-work/shared-next-batch230/root-chemistry-acceptance-001.json; /observer; /recorded_at; /status; /accepted; /DATA; /execution; /original_tools; /capture; /intake_summary; /molecular_parse_attempts; /false_comparisons; /original_stderr; /ROOT_reading; /scientific_reading; /limits; /external_requests; /molecular_replays | supports | ROOT accepts the original twenty stored-form parses and saved integrity. Two false canonical flags for each Cheju owner and the global unassigned stderr warnings remain explicit. |
+| bgc-2295-native-acceptance | /private/tmp/npm-review-work/shared-next-batch230/root-native-gates-acceptance-001.json; /observer; /recorded_at; /status; /accepted; /execution; /original_tools; /native_readback; /checks; /unavailable_required_gates; /five_local_commands_passed; /all_native_gates_passed; /ROOT_reading; /external_requests; /gate_replays; /scientific_verdicts | supports | ROOT accepts five original local commands. all_native_gates_passed remains false; full QC and OAK are unavailable, and command success does not certify scientific identity. |
+| bgc-2295-intake-acceptance | /private/tmp/npm-review-work/shared-next-batch230/root-intake-acceptance-001.json; /observer; /recorded_at; /status; /accepted; /intake_summary; /controller_execution; /original_tools; /source_admission; /input_plan; /selection; /capture; /counts; /per_owner; /ROOT_reading; /external_requests; /canonical_target_replays | supports | ROOT accepts the original ten canonical intakes and their exact current input/owner maps. |
+| bgc-2295-inventory-acceptance | /private/tmp/npm-review-work/shared-next-batch230-tentative/root-source-inventory-acceptance-001.json; /observer; /recorded_at; /status; /accepted; /inventory; /execution; /original_tools; /source_admission; /capture_acceptance; /totals; /per_order_input_counts; /ROOT_reading; /scientific_reading; /scope; /external_requests; /source_query_replays; /YAML_or_molecular_parses | supports | ROOT accepts the original saved source inventory and current input pins; semantic reading is separately attributed. |
+| bgc-2295-plan-acceptance | /private/tmp/npm-review-work/shared-next-batch230-tentative/root-input-plan-acceptance-001.json; /observer; /recorded_at; /accepted; /status; /input_plan; /derivation; /execution; /original_tools; /source_admission; /inventory; /source_notes; /counts; /reader_orders; /ROOT_reading; /scientific_verdicts; /external_requests | supports | ROOT accepts the actual target-input plan; this selected owner has mechanism roots and its separately accepted original reader is required. |
+| bgc-2295-plan | /private/tmp/npm-review-work/shared-next-batch230-tentative/bgc-prep/bgc-conditional230-target-input-plan-001.json; /records/4 | supports | Accepted owner-specific source projection, exact direct contexts and input ownership, including required mechanism/component reader dependencies. |
+| bgc-2295-source-notes | /private/tmp/npm-review-work/shared-next-batch230-tentative/bgc-prep/bgc-conditional230-source-scope-notes-001.json; /reading; /cautions; /scientific_limits | supports | Complete disjoint source-payload/cache reading, whole raw/history carries and mechanism-context boundaries are attributed; no source query was replayed during authoring. |
+| bgc-2295-curation-scope | /private/tmp/npm-review-work/shared-next-batch230-tentative/bgc-prep/bgc-conditional230-source-scope-notes-001.json; /curation | supports | The completed case-sensitive literal scan tested 416 exact cohort tokens against eight directly opened implemented curation tables, including ignored files and headers, and found zero matches in that bounded scope. Reserved decisions.tsv was not consumed. |
+| bgc-2295-query-mibig_compounds | /private/tmp/npm-review-work/shared-next-batch230-tentative/bgc-prep/bgc-conditional230-source-inventory-DATA-001.json; /contexts/11/source_scope_inventory/joins/mibig_compounds | supports | Complete retained query frame with literal predicates and all matched fields, including no-match results: {"matches":[{"last_physical_line":3392,"physical_line":3392,"raw_tsv_record":"BGC0002723\t2\tactive\tquestionable\tunknown\tcasbene\t1\tC/C/1=C\\CC/C(=C/C2C(C2(C)C)CC/C(=C/CC1)/C)/C\tInChI=1S/C20H32/c1-15-8-6-10-16(2)12-13-18-19(20(18,4)5)14-17(3)11-7-9-15/h9-10,14,18-19H,6-8,11-13H2,1-5H3/b15-9+,16-10+,17-14+\tZJMVJDFTNPZVMB-QOCMWZQCSA-N\tfalse\tDiterpenoid\tpubchem:5280437\tNCBITaxon:180498\tJatropha curcas\tterpene\tUnknown\tGPS_020388126.1\t7857\t18675\tHeterologous expression\tSOURCE_ASSERTION\tCLUSTER_DEMONSTRATED\tDOI:10.1105/tpc.114.129668\tCOMPOUND_EVIDENCE\n","row":{"bgc_classes":"terpene","bgc_subclasses":"Unknown","cluster_link_evidence_basis":"CLUSTER_DEMONSTRATED","compound_classes":"Diterpenoid","compound_index":"1","compound_name":"casbene","database_ids":"pubchem:5280437","entry_completeness":"unknown","entry_quality":"questionable","entry_status":"active","entry_version":"2","genome_accession":"GPS_020388126.1","locus_evidence_methods":"Heterologous expression","locus_from":"7857","locus_to":"18675","mibig_accession":"BGC0002723","primary_reference":"DOI:10.1105/tpc.114.129668","producer_evidence_basis":"SOURCE_ASSERTION","reference_basis":"COMPOUND_EVIDENCE","smiles":"C/C/1=C\\CC/C(=C/C2C(C2(C)C)CC/C(=C/CC1)/C)/C","standard_inchi":"InChI=1S/C20H32/c1-15-8-6-10-16(2)12-13-18-19(20(18,4)5)14-17(3)11-7-9-15/h9-10,14,18-19H,6-8,11-13H2,1-5H3/b15-9+,16-10+,17-14+","standard_inchi_key":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N","stereo_complete":"false","taxon_id":"NCBITaxon:180498","taxon_label":"Jatropha curcas"},"row_sha256":"54fb22919fb336e1e3c92ccfc76b6b24238f9bd40d91cb63d7587a57a5a2c169"}],"predicate":"exact complete standard_inchi_key equality","query":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N"} |
+| bgc-2295-source-mibig_compounds | /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv; Header line 1; physical lines 3392–3392; row_sha256 54fb22919fb336e1e3c92ccfc76b6b24238f9bd40d91cb63d7587a57a5a2c169 | supports | Complete retained physical payloads, every field: [{"bgc_classes":"terpene","bgc_subclasses":"Unknown","cluster_link_evidence_basis":"CLUSTER_DEMONSTRATED","compound_classes":"Diterpenoid","compound_index":"1","compound_name":"casbene","database_ids":"pubchem:5280437","entry_completeness":"unknown","entry_quality":"questionable","entry_status":"active","entry_version":"2","genome_accession":"GPS_020388126.1","locus_evidence_methods":"Heterologous expression","locus_from":"7857","locus_to":"18675","mibig_accession":"BGC0002723","primary_reference":"DOI:10.1105/tpc.114.129668","producer_evidence_basis":"SOURCE_ASSERTION","reference_basis":"COMPOUND_EVIDENCE","smiles":"C/C/1=C\\CC/C(=C/C2C(C2(C)C)CC/C(=C/CC1)/C)/C","standard_inchi":"InChI=1S/C20H32/c1-15-8-6-10-16(2)12-13-18-19(20(18,4)5)14-17(3)11-7-9-15/h9-10,14,18-19H,6-8,11-13H2,1-5H3/b15-9+,16-10+,17-14+","standard_inchi_key":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N","stereo_complete":"false","taxon_id":"NCBITaxon:180498","taxon_label":"Jatropha curcas"}] |
+| bgc-2295-query-chebi_structures | /private/tmp/npm-review-work/shared-next-batch230-tentative/bgc-prep/bgc-conditional230-source-inventory-DATA-001.json; /contexts/11/source_scope_inventory/joins/chebi_structures | supports | Complete retained query frame with literal predicates and all matched fields, including no-match results: {"matches":[{"last_physical_line":4096,"physical_line":4096,"raw_tsv_record":"CHEBI:17695\tcasbene\tA diterpene comprising bicyclo[12.1.0]pentadeca-2,6,10-triene having three methyl substituents located at the 3-, 7- and 11-positions as well as gem-dimethyl groups at the 15-position.\t3\tZJMVJDFTNPZVMB-QOCMWZQCSA-N\tC/C1=C\\CC/C(C)=C/C2C(CC/C(C)=C/CC1)C2(C)C\n","row":{"chebi_id":"CHEBI:17695","definition":"A diterpene comprising bicyclo[12.1.0]pentadeca-2,6,10-triene having three methyl substituents located at the 3-, 7- and 11-positions as well as gem-dimethyl groups at the 15-position.","name":"casbene","smiles":"C/C1=C\\CC/C(C)=C/C2C(CC/C(C)=C/CC1)C2(C)C","standard_inchi_key":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N","stars":"3"},"row_sha256":"98919bf23517e4b1feab0bc0fd7ff976288d6cdb8a18e0e87f6fb6d47a0cc06b"}],"predicate":"exact complete standard_inchi_key equality","query":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N"} |
+| bgc-2295-source-chebi_structures | /private/tmp/npm-record-reviews-20261021/data/raw/chebi_structures.tsv; Header line 1; physical lines 4096–4096; row_sha256 98919bf23517e4b1feab0bc0fd7ff976288d6cdb8a18e0e87f6fb6d47a0cc06b | supports | Complete retained physical payloads, every field: [{"chebi_id":"CHEBI:17695","definition":"A diterpene comprising bicyclo[12.1.0]pentadeca-2,6,10-triene having three methyl substituents located at the 3-, 7- and 11-positions as well as gem-dimethyl groups at the 15-position.","name":"casbene","smiles":"C/C1=C\\CC/C(C)=C/C2C(CC/C(C)=C/CC1)C2(C)C","standard_inchi_key":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N","stars":"3"}] |
+| bgc-2295-query-lotus_occurrences | /private/tmp/npm-review-work/shared-next-batch230-tentative/bgc-prep/bgc-conditional230-source-inventory-DATA-001.json; /contexts/11/source_scope_inventory/joins/lotus_occurrences | supports | Complete retained query frame with literal predicates and all matched fields, including no-match results: {"matches":[{"last_physical_line":10021,"physical_line":10021,"raw_tsv_record":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N\tRicinus communis\tNCBITaxon:3988\thttp://www.wikidata.org/entity/Q155867\t10.1016/0003-9861(85)90171-7\thttp://www.wikidata.org/entity/Q27102539\n","row":{"organism_name":"Ricinus communis","organism_wikidata":"http://www.wikidata.org/entity/Q155867","reference_doi":"10.1016/0003-9861(85)90171-7","standard_inchi_key":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27102539","taxon_id":"NCBITaxon:3988"},"row_sha256":"f05a5fb5cffda19361a1a7befb965b4acd6eb962e690b309e8e807fcd238b30e"},{"last_physical_line":10022,"physical_line":10022,"raw_tsv_record":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N\tRicinus communis\tNCBITaxon:3988\thttp://www.wikidata.org/entity/Q155867\t10.1104/PP.81.2.335\thttp://www.wikidata.org/entity/Q27102539\n","row":{"organism_name":"Ricinus communis","organism_wikidata":"http://www.wikidata.org/entity/Q155867","reference_doi":"10.1104/PP.81.2.335","standard_inchi_key":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27102539","taxon_id":"NCBITaxon:3988"},"row_sha256":"420062f1ac6ae3a665e136772a8f3c3145bea11c168c2a74e12b58a24e39c67d"}],"predicate":"exact complete standard_inchi_key equality","query":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N"} |
+| bgc-2295-source-lotus_occurrences | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical lines 10021–10021; row_sha256 f05a5fb5cffda19361a1a7befb965b4acd6eb962e690b309e8e807fcd238b30e; physical lines 10022–10022; row_sha256 420062f1ac6ae3a665e136772a8f3c3145bea11c168c2a74e12b58a24e39c67d | supports | Complete retained physical payloads, every field: [{"organism_name":"Ricinus communis","organism_wikidata":"http://www.wikidata.org/entity/Q155867","reference_doi":"10.1016/0003-9861(85)90171-7","standard_inchi_key":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27102539","taxon_id":"NCBITaxon:3988"},{"organism_name":"Ricinus communis","organism_wikidata":"http://www.wikidata.org/entity/Q155867","reference_doi":"10.1104/PP.81.2.335","standard_inchi_key":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27102539","taxon_id":"NCBITaxon:3988"}] |
+| bgc-2295-query-cyanometdb_occurrences | /private/tmp/npm-review-work/shared-next-batch230-tentative/bgc-prep/bgc-conditional230-source-inventory-DATA-001.json; /contexts/11/source_scope_inventory/joins/cyanometdb_occurrences | supports | Complete retained query frame with literal predicates and all matched fields, including no-match results: {"matches":[],"predicate":"exact complete standard_inchi_key equality","query":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N"} |
+| bgc-2295-query-npclassifier | /private/tmp/npm-review-work/shared-next-batch230-tentative/bgc-prep/bgc-conditional230-source-inventory-DATA-001.json; /contexts/11/source_scope_inventory/joins/npclassifier | supports | Complete retained query frame with literal predicates and all matched fields, including no-match results: {"matches":[{"last_physical_line":3035,"physical_line":3035,"raw_tsv_record":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N\tC/C/1=C\\CC/C(=C/C2C(C2(C)C)CC/C(=C/CC1)/C)/C\tTerpenoids\tDiterpenoids\tCasbane diterpenoids\tfalse\tnpclassifier.gnps2.org@2026-09-07\n","row":{"class_results":"Casbane diterpenoids","is_glycoside":"false","model_version":"npclassifier.gnps2.org@2026-09-07","pathway_results":"Terpenoids","smiles":"C/C/1=C\\CC/C(=C/C2C(C2(C)C)CC/C(=C/CC1)/C)/C","standard_inchi_key":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N","superclass_results":"Diterpenoids"},"row_sha256":"5a0234c5e68e003504cb81a7b9ef8e2a34a77a54288f862272798758655bbb6c"}],"predicate":"exact complete standard_inchi_key equality","query":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N"} |
+| bgc-2295-source-npclassifier | /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv; Header line 1; physical lines 3035–3035; row_sha256 5a0234c5e68e003504cb81a7b9ef8e2a34a77a54288f862272798758655bbb6c | supports | Complete retained physical payloads, every field: [{"class_results":"Casbane diterpenoids","is_glycoside":"false","model_version":"npclassifier.gnps2.org@2026-09-07","pathway_results":"Terpenoids","smiles":"C/C/1=C\\CC/C(=C/C2C(C2(C)C)CC/C(=C/CC1)/C)/C","standard_inchi_key":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N","superclass_results":"Diterpenoids"}] |
+| bgc-2295-query-pubchem_bioassay | /private/tmp/npm-review-work/shared-next-batch230-tentative/bgc-prep/bgc-conditional230-source-inventory-DATA-001.json; /contexts/11/source_scope_inventory/joins/pubchem_bioassay | supports | Complete retained query frame with literal predicates and all matched fields, including no-match results: {"matches":[{"last_physical_line":11317,"physical_line":11317,"raw_tsv_record":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N\t5280437\t\t(no assay data)\t\t\t\t\t\t\t\n","row":{"activity_name":"","activity_outcome":"","activity_value_um":"","aid":"","assay_name":"(no assay data)","assay_type":"","cid":"5280437","depositor":"","reference":"","standard_inchi_key":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N","target_accession":""},"row_sha256":"b6ee1ca36aab8fb91d9c197b8defcaf504cc237a832ef7b9e7b7ffde3ecafbaf"}],"predicate":"exact complete standard_inchi_key equality","query":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N"} |
+| bgc-2295-source-pubchem_bioassay | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; Header line 1; physical lines 11317–11317; row_sha256 b6ee1ca36aab8fb91d9c197b8defcaf504cc237a832ef7b9e7b7ffde3ecafbaf | supports | Complete retained physical payloads, every field: [{"activity_name":"","activity_outcome":"","activity_value_um":"","aid":"","assay_name":"(no assay data)","assay_type":"","cid":"5280437","depositor":"","reference":"","standard_inchi_key":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N","target_accession":""}] |
+| bgc-2295-query-bindingdb_targets | /private/tmp/npm-review-work/shared-next-batch230-tentative/bgc-prep/bgc-conditional230-source-inventory-DATA-001.json; /contexts/11/source_scope_inventory/joins/bindingdb_targets | supports | Complete retained query frame with literal predicates and all matched fields, including no-match results: {"matches":[],"predicate":"exact complete standard_inchi_key equality","query":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N"} |
+| bgc-2295-query-antibioticmech_inchikeys | /private/tmp/npm-review-work/shared-next-batch230-tentative/bgc-prep/bgc-conditional230-source-inventory-DATA-001.json; /contexts/11/source_scope_inventory/joins/antibioticmech_inchikeys | supports | Complete retained query frame with literal predicates and all matched fields, including no-match results: {"matches":[{"last_physical_line":2840,"physical_line":2840,"raw_tsv_record":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N\tCHEBI:17695\tcasbene\tANTIFUNGAL\tcasbene\t74f6cc8362498900f2fe2c13d0b6fdb66dd30976\n","row":{"antimicrobial_class":"ANTIFUNGAL","corpus_commit":"74f6cc8362498900f2fe2c13d0b6fdb66dd30976","identifier":"CHEBI:17695","label":"casbene","slug":"casbene","standard_inchi_key":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N"},"row_sha256":"39657d54941a1989b5fb723ac96c51da4608554dc4d84f6bfb9d7342f8380727"}],"predicate":"exact complete standard_inchi_key equality","query":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N"} |
+| bgc-2295-source-antibioticmech_inchikeys | /private/tmp/npm-record-reviews-20261021/data/raw/antibioticmech_inchikeys.tsv; Header line 1; physical lines 2840–2840; row_sha256 39657d54941a1989b5fb723ac96c51da4608554dc4d84f6bfb9d7342f8380727 | supports | Complete retained physical payloads, every field: [{"antimicrobial_class":"ANTIFUNGAL","corpus_commit":"74f6cc8362498900f2fe2c13d0b6fdb66dd30976","identifier":"CHEBI:17695","label":"casbene","slug":"casbene","standard_inchi_key":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N"}] |
+| bgc-2295-query-chebi_origins | /private/tmp/npm-review-work/shared-next-batch230-tentative/bgc-prep/bgc-conditional230-source-inventory-DATA-001.json; /contexts/11/source_scope_inventory/joins/chebi_origins | supports | Complete retained query frame with literal predicates and all matched fields, including no-match results: {"matches":[],"predicate":"exact chebi_id from exact full-key structure rows","query":["CHEBI:17695"]} |
+| bgc-2295-source-routes | /private/tmp/npm-review-work/shared-next-batch230-tentative/bgc-prep/bgc-conditional230-source-inventory-DATA-001.json; /contexts/11/source_scope_inventory/source_taxa; /contexts/11/source_scope_inventory/forward_taxon_merge_matches; /contexts/11/source_scope_inventory/nonorganism_matches; /contexts/11/source_scope_inventory/actual_assay_rows; /contexts/11/source_scope_inventory/blank_AID_sentinels; /contexts/11/source_scope_inventory/related_corpus_rows | supports | Exact source taxa and route lists; only the forward-merge/nonorganism/assay lists are asserted empty where shown: {"actual_assay_rows":[],"blank_AID_sentinels":[{"last_physical_line":11317,"physical_line":11317,"raw_tsv_record":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N\t5280437\t\t(no assay data)\t\t\t\t\t\t\t\n","row":{"activity_name":"","activity_outcome":"","activity_value_um":"","aid":"","assay_name":"(no assay data)","assay_type":"","cid":"5280437","depositor":"","reference":"","standard_inchi_key":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N","target_accession":""},"row_sha256":"b6ee1ca36aab8fb91d9c197b8defcaf504cc237a832ef7b9e7b7ffde3ecafbaf"}],"forward_taxon_merge_matches":[],"nonorganism_matches":[],"related_corpus_rows":[{"last_physical_line":2840,"physical_line":2840,"raw_tsv_record":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N\tCHEBI:17695\tcasbene\tANTIFUNGAL\tcasbene\t74f6cc8362498900f2fe2c13d0b6fdb66dd30976\n","row":{"antimicrobial_class":"ANTIFUNGAL","corpus_commit":"74f6cc8362498900f2fe2c13d0b6fdb66dd30976","identifier":"CHEBI:17695","label":"casbene","slug":"casbene","standard_inchi_key":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N"},"row_sha256":"39657d54941a1989b5fb723ac96c51da4608554dc4d84f6bfb9d7342f8380727"}],"source_taxa":["NCBITaxon:180498","NCBITaxon:3988"]} |
+| bgc-2295-cached-taxonomy | /private/tmp/npm-review-work/shared-next-batch230-tentative/bgc-prep/bgc-conditional230-source-inventory-DATA-001.json; /cached_taxonomy/input; /cached_taxonomy/unmatched_ids; /cached_taxonomy/whole_stanzas/56; /cached_taxonomy/whole_stanzas/264 | supports | Complete retained source-taxon stanzas; local cache labels and synonyms are not fresh authority: [{"complete_stanza":"[Term]\nid: NCBITaxon:3988\nname: Ricinus communis\nsynonym: \"Ricinus sanguineus\" EXACT []\n\n","id":"NCBITaxon:3988","physical_line":6041},{"complete_stanza":"[Term]\nid: NCBITaxon:180498\nname: Jatropha curcas\n\n","id":"NCBITaxon:180498","physical_line":59784}] |
+| bgc-2295-direct-contexts | /private/tmp/npm-review-work/shared-next-batch230-tentative/bgc-prep/bgc-conditional230-source-inventory-DATA-001.json; /records/4/direct_companion_paths; /records/4/direct_companion_predicates | supports | Exact one-hop contexts/predicates, without transitive identity or claim transfer: {"direct_companion_paths":[],"direct_companion_predicates":[]} |
+| bgc-2295-structure-schema | /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml; Lines 368–430 | supports | ChemicalStructure preserves source representation and explicitly limits standardized identity and undefined centres. ComputedClassification is a named/versioned prediction, never a source assertion or admission criterion. |
+| bgc-2295-stereo-method | /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py; Lines 142–173 | supports | Maintained extraction derives stereo_complete from FindMolChiralCenters(includeUnassigned=True,useLegacyImplementation=False) and absence of question-mark centre tags; it is not an all-bond-geometry proof. |
+| bgc-2295-classification-seeder | /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py; Lines 974–1065 | supports | Maintained seeding preserves the source structure and complete named/versioned prediction including is_glycoside, while keeping source BGC classes separately. |
+| bgc-2295-review-profile | /private/tmp/npm-record-reviews-20261021/docs/record-review-profile.md; Whole profile | supports | One-record review requires claim-level evidence and all dimensions, with truthful unavailable-check and partial-completion limits. |
+| bgc-2295-review-skill | /private/tmp/npm-record-reviews-20261021/.claude/skills/review-yaml-record/SKILL.md; Whole skill | supports | The review procedure does not edit records, and source access must remain honestly bounded by the overriding no-request instruction. |
+| bgc-2295-reader-DATA | /private/tmp/npm-review-work/shared-next-batch230/native-current230-casbene-maintained-reader-DATA-001.json; /raw_owner; /component_captures; /resolved_view; /expected_view; /returned_view_equals_expected_complete_owner; /view_mismatches; /counts; /reader_call_count; /denials; /unexpected_denials; /errors; /molecular_parses; /retries; /external_requests; /limitations | supports | One original maintained call preserves the complete current owner and ordered components; only resolved causal_graphs expands component references. Counts and scope: {"component_graphs":0,"component_history_events":[],"component_refs":0,"curation_history":3,"edges":2,"graphs":1,"inline_graphs":1,"molecular_targets":0,"nodes":3,"pathway_steps":1} One known import-time IPv6 socket-construction capability probe was blocked before action, with no unexpected denial, request, molecular parse or retry. This is mechanical preservation, not fresh science. |
+| bgc-2295-reader-execution | /private/tmp/npm-review-work/shared-next-batch230/native-current230-casbene-reader-execution-001.json; /command; /started_at; /finished_at; /exit_code; /stdout; /stderr; /DATA; /external_requests; /retries; /original_tool | supports | Original execution exited 0 with empty stderr and exact DATA/stdout pins; no repeat, retry or external request. |
+| bgc-2295-reader-acceptance | /private/tmp/npm-review-work/shared-next-batch230/root-2295-maintained-reader-acceptance-001.json; /observer; /recorded_at; /status; /order; /DATA; /execution; /source_adoption; /original_tools; /verification; /review_check_contract; /ROOT_reading; /limits; /new_target_invocations; /external_requests | supports | ROOT accepts the exact original reader DATA/execution triple and complete current owner/component preservation. The exact review-check contract is retained; scientific and sequence limitations remain. |
+| bgc-2295-mechanism-owner | /private/tmp/npm-review-work/shared-next-batch230/owner-capture-DATA-001.json; /records/4/owner_document | supports | Complete raw owner preserves declared graph/reference/pathway root presence, all historical annotations and existing OPEN discussions; no raw root is inferred from the expanded view. |
+| bgc-2295-graph-0 | /private/tmp/npm-review-work/shared-next-batch230/native-current230-casbene-maintained-reader-DATA-001.json; /resolved_view/causal_graphs/0 | supports | Complete retained graph, including every node, edge, evidence item and applicability note; annotations remain historical source claims: {"description":"Partial Ricinus communis casbene biosynthesis graph for casbene-synthase-catalyzed geranylgeranyl-diphosphate cyclization.","edges":[{"evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Hill et al. expressed Ricinus communis casbene synthase in E. coli and characterized the recombinant enzyme by kinetic and product analysis.","reference":"DOI:10.1006/abbi.1996.0559","snippet":"Casbene synthase catalyzes the cyclization of geranylgeranyl diphosphate (2) to casbene (1)"},{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Mau and West cloned the Ricinus communis casbene synthase cDNA as GenBank L32134, and its open reading frame encodes the same 601 aa length as reviewed UniProtKB:P59287.","reference":"DOI:10.1073/pnas.91.18.8497","snippet":"A near-full-length casbene synthase cDNA clone, pCS7, was isolated"},{"evidence_type":"DATABASE_ASSERTION","notes":"Reviewed UniProtKB:P59287 is the 601 aa Ricinus communis chloroplastic casbene synthase, cross-references the L32134 mRNA and the EQ973781 genomic protein EEF48743.1, and annotates RHEA:14901.","reference":"https://www.uniprot.org/uniprotkb/P59287","retrieved_on":"2026-09-30","snippet":"Catalyzes the cyclization of geranylgeranyl diphosphate to casbene"},{"evidence_type":"DATABASE_ASSERTION","notes":"The Rhea Swiss-Prot mapping links RHEA:14901 to UniProtKB:P59287.","reference":"https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv","retrieved_on":"2026-09-30"}],"notes":"Ricinus casbene synthase cyclizes geranylgeranyl diphosphate in the committed casbene-forming terpene synthase reaction.","object":"casbene_synthase","predicate":"is cyclized by","subject":"geranylgeranyl_diphosphate"},{"evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Hill et al. expressed Ricinus communis casbene synthase in E. coli and characterized the recombinant enzyme by kinetic and product analysis.","reference":"DOI:10.1006/abbi.1996.0559","snippet":"Casbene synthase catalyzes the cyclization of geranylgeranyl diphosphate (2) to casbene (1)"},{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Mau and West cloned the Ricinus communis casbene synthase cDNA as GenBank L32134, and its open reading frame encodes the same 601 aa length as reviewed UniProtKB:P59287.","reference":"DOI:10.1073/pnas.91.18.8497","snippet":"A near-full-length casbene synthase cDNA clone, pCS7, was isolated"},{"evidence_type":"DATABASE_ASSERTION","notes":"Reviewed UniProtKB:P59287 is the 601 aa Ricinus communis chloroplastic casbene synthase, cross-references the L32134 mRNA and the EQ973781 genomic protein EEF48743.1, and annotates RHEA:14901.","reference":"https://www.uniprot.org/uniprotkb/P59287","retrieved_on":"2026-09-30","snippet":"Catalyzes the cyclization of geranylgeranyl diphosphate to casbene"},{"evidence_type":"DATABASE_ASSERTION","notes":"The Rhea Swiss-Prot mapping links RHEA:14901 to UniProtKB:P59287.","reference":"https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv","retrieved_on":"2026-09-30"}],"notes":"The Ricinus casbene synthase reaction forms the diterpene hydrocarbon casbene and diphosphate from geranylgeranyl diphosphate.","object":"casbene","predicate":"forms","subject":"casbene_synthase"}],"graph_id":"casbene-ricinus-casbene-synthase-cyclization","nodes":[{"grounding_status":"GROUNDED","identifier":"CHEBI:58756","label":"(2E,6E,10E)-geranylgeranyl diphosphate","node_id":"geranylgeranyl_diphosphate","node_type":"PRECURSOR"},{"grounding_status":"GROUNDED","identifier":"UniProtKB:P59287","label":"Ricinus communis casbene synthase","node_id":"casbene_synthase","node_type":"ENZYME"},{"grounding_status":"GROUNDED","identifier":"CHEBI:17695","label":"casbene","node_id":"casbene","node_type":"COMPOUND"}],"scope":"BIOSYNTHESIS"} |
+| bgc-2295-pathway-0 | /private/tmp/npm-review-work/shared-next-batch230/native-current230-casbene-maintained-reader-DATA-001.json; /raw_owner/biosynthetic_pathway/0 | supports | Complete retained pathway item. Absent step_number is preserved, not renumbered: {"enzyme_id":"UniProtKB:P59287","enzyme_label":"Ricinus communis casbene synthase","evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Hill et al. expressed Ricinus communis casbene synthase in E. coli and characterized the recombinant enzyme by kinetic and product analysis.","reference":"DOI:10.1006/abbi.1996.0559","snippet":"Casbene synthase catalyzes the cyclization of geranylgeranyl diphosphate (2) to casbene (1)"},{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Mau and West cloned the Ricinus communis casbene synthase cDNA as GenBank L32134, and its open reading frame encodes the same 601 aa length as reviewed UniProtKB:P59287.","reference":"DOI:10.1073/pnas.91.18.8497","snippet":"A near-full-length casbene synthase cDNA clone, pCS7, was isolated"},{"evidence_type":"DATABASE_ASSERTION","notes":"Reviewed UniProtKB:P59287 is the 601 aa Ricinus communis chloroplastic casbene synthase, cross-references the L32134 mRNA and the EQ973781 genomic protein EEF48743.1, and annotates RHEA:14901.","reference":"https://www.uniprot.org/uniprotkb/P59287","retrieved_on":"2026-09-30","snippet":"Catalyzes the cyclization of geranylgeranyl diphosphate to casbene"},{"evidence_type":"DATABASE_ASSERTION","notes":"The Rhea Swiss-Prot mapping links RHEA:14901 to UniProtKB:P59287.","reference":"https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv","retrieved_on":"2026-09-30"}],"notes":"Ricinus communis casbene synthase cyclizes (2E,6E,10E)-geranylgeranyl diphosphate to casbene. The seeded BGC0002723 locus is from Jatropha curcas and carries NP_001292945.1 and XP_012066853.1, so it is not used here as exact UniProtKB:P59287 locus evidence.","product":"CHEBI:17695","products":["CHEBI:17695","CHEBI:33019"],"reaction_id":"RHEA:14901","step_number":1,"substrate":"CHEBI:58756"} |
+| root-native-strict_ten | /private/tmp/npm-native-checks/batch-230/validate-strict-selected10-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-230/native-current230-five-gates-execution-001.json | supports | Closed-schema validation of the ten selected owners and any referenced components reported zero errors. |
+| root-native-strict_full | /private/tmp/npm-native-checks/batch-230/validate-all-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-230/native-current230-five-gates-execution-001.json | supports | Full closed-schema validation scanned all 3116 owners and reported zero errors. |
+| root-native-lockfile | /private/tmp/npm-native-checks/batch-230/verify-corpus-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-230/native-current230-five-gates-execution-001.json | supports | PATHS.tsv and filesystem agree on all 3116 records and their pinned filing pathways. |
+| root-native-reproduction | /private/tmp/npm-native-checks/batch-230/verify-reproduction-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-230/native-current230-five-gates-execution-001.json | supports | All 3116 records reproduce byte-identically from the retained inventories and carried curator content. This does not independently validate curator science. |
+| root-native-queue | /private/tmp/npm-native-checks/batch-230/review-queue-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-230/native-current230-five-gates-execution-001.json | supports | The full local queue contains 8922 diagnostic rows; selected-target entries were inspected. Queue diagnostics are leads, not scientific sign-off. |
+
+## Limits And Additional Notes
+
+- All evidence is retained locally; external identifiers, primary publications, taxonomy, accessions and natural stereochemical assignments were not refreshed under the absolute no-request instruction.
+- Full QC and complete OAK authority coverage remain unavailable. Original local gates and parsed representations establish only their stated mechanical scope.
+- Empty joins concern only the exact saved predicates and snapshots. Shared loci, taxa and citations do not transfer compound-specific activity, production, mechanism or independent-study status.
+- The two original undefined-stereo warnings remain global and unassigned. No additional molecular/YAML parse, source query or target invocation occurred during this scientific authoring.
+- The review proposes no source-record, native-status or history edit; any later correction belongs to the exact maintained owners listed in the accepted intake.
+- The whole selected owner was read, but scientific completion is partial because full QC, complete ontology authority coverage and external source verification were unavailable. No native status or history was changed.
+- The branch uses cached base ce6a5498df5be51116bd5e0c119023ee62bb5464. Fresh origin/main verification and publication are deferred because the user prohibits all external requests.
+- Complete owner/history and actual intake have been read; whole-source and exact companion carries are attributed in the pinned notes.
+- BGC personally interpreted all first-five molecular tables; Support personally interpreted Cattleyene and the later-five tables. Raw mechanism/component readings are carried by exact accepted complete-owner equality with their original team attribution.
+- ROOT owns the original collector, composer, capture, canonical intakes, chemistry and the recorded reader execution receipts; Native authored the guarded reader and ran the five local gates. No target was invoked during scientific authoring.
+- Saved review coverage is distinct from the native SEEDED/REVIEWED curation state. Proposed actions are not performed edits.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261103T210813Z-casbene
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'Local evidence review: casbene'
+started_at: '2026-11-03T20:21:12.263031Z'
+finished_at: '2026-11-03T21:08:13.253381Z'
+reviewer:
+  identity: Codex root with native_checks, bgc_science and review_support peer agents
+  kind: agent
+  independence: independent
+  independence_basis: This review team inspected existing owner and retained source
+    bytes without editing them; scientific fragments were cross-checked separately
+    from their author. Local validation is not treated as scientific proof.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: Casbene retains coherent local source claims and an accepted partial Ricinus
+  cyclisation mechanism. Its two unspecified tetrahedral centres and the distinction
+  between Ricinus protein evidence and the Jatropha locus remain explicit. Scientific
+  completion is partial.
+source:
+  git_revision: ce6a5498df5be51116bd5e0c119023ee62bb5464
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: AGENTS.md
+    sha256: 69e4037f8dc97d4b00bb7bb83b41ceca025f6ef578d5c0bf8086f3400becde0b
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/terpenoids/casbene.yaml
+    sha256: 3a13edab5b51dbcb99c39237804f81f3cb72f9132b5724d8499b0d858ed58621
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/graph_components.py
+    sha256: 10f08517869f482954fd583fd19d5750ef286a76297c231e6c9a5ba8dc023e17
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: src/naturalproductmech/validation/write_validated.py
+    sha256: 4b7648fc5d2e7a5d26ad8bb168dbcae609aaa2694434a8ed5cfcb33fb66ff80a
+    role: context
+scope:
+  description: One complete NaturalProductRecord, including all present scientific
+    claims, history and declared mechanisms; external verification remains unavailable.
+  selection: Campaign path order 2295; one of the next ten uncovered paths selected
+    from the 3116-record corpus. Membership uses the canonical validated catalogue
+    plus retained committed campaign bundles.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CHEBI:17695
+targets:
+- target_id: CHEBI:17695
+  path: data/natural_products/terpenoids/casbene.yaml
+  label: casbene
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained harmonization generator; seeded fields are corrected through
+      maintained inputs and validated regeneration.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Retained MIBiG structure, producer and compound-specific locus assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/npclassifier.tsv
+    role: Pinned computed classification and filing assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Maintained extraction of MIBiG compound names, structures, stereochemistry
+      flags and source provenance.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: Retained ChEBI identifiers, definitions and exact chemical forms.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Retained cited occurrence assertions, distinct from demonstrated production.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/pubchem_bioassay.tsv
+    role: Retained assay rows or empty-assay sentinels; source outcome and title alone
+      do not establish mechanism.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/antibioticmech_inchikeys.tsv
+    role: Pinned full-key AntibioticMech structure links and coarse activity summaries;
+      no transfer of mechanism.
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/graph_components.py
+    role: Future maintained complete-owner reader implementation; not invoked in this
+      plan.
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/validation/write_validated.py
+    role: Future maintained complete-owner reader implementation; not invoked in this
+      plan.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/terpenoids/casbene.yaml
+    role: Curator-owned declared graphs, graph references, pathway steps and history;
+      imported molecular-target assertions and other seeded fields retain inventory
+      ownership. Curated graph/pathway changes require the validated writer and a
+      curation event.
+  ownership_note: This review proposes no record edit. Source corrections belong in
+    maintained inventories, implemented curation tables, extractors or the seeder;
+    generated pages are not owners. This mechanism-bearing owner requires separately
+    authorized complete maintained resolution before scientific assessment and draft
+    assembly. Raw owner capture is not a maintained resolved view.
+checks:
+- check_id: maintained-mechanism-reader
+  name: Complete offline maintained reader for casbene
+  command: /private/tmp/npm-record-reviews-20261021/.venv/bin/python -I -B /private/tmp/npm-review-work/shared-next-batch230/read-selected-mechanism-guarded-001.py
+    2295 589afcb4f595418cea6802851623471284290e84accf39cee82ebcd823be4cc5 bf57fed730ad54c83c2fe9af418b74b8de65f64322ac351e7391d36aea431447
+    5766789c241207c1126eb42d9c762a8ba13b16ced36cf87bbb5e3ad561e37c6a 7b80365e39c220cc3416538128a85259a945fa33377cbd799850dbe626a62b1c
+    4ce8acd7b001168ce49d32b9b89a7c2628fff5c2e199b38edb62dff2ab441866
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CHEBI:17695
+  evidence_ids:
+  - bgc-2295-reader-DATA
+  - bgc-2295-reader-execution
+  - bgc-2295-reader-acceptance
+  summary: One original offline maintained call preserved the complete owner and ordered
+    component/history content. Mechanical success does not establish fresh primary,
+    sequence, construct or natural-identity verification.
+- check_id: root-native-strict_ten
+  name: strict_ten
+  status: passed
+  required: true
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  target_ids:
+  - CHEBI:17695
+  command: just validate-strict data/natural_products/terpenoids/calidoustene-b.yaml
+    data/natural_products/terpenoids/calidoustene-c.yaml data/natural_products/terpenoids/capsidiol.yaml
+    data/natural_products/terpenoids/carotene.yaml data/natural_products/terpenoids/casbene.yaml
+    data/natural_products/terpenoids/cattleyene.yaml data/natural_products/terpenoids/chejuenolide-a.yaml
+    data/natural_products/terpenoids/chejuenolide-b.yaml data/natural_products/terpenoids/clavaric-acid.yaml
+    data/natural_products/terpenoids/compound-11.yaml --workers 1 --out /private/tmp/npm-native-checks/batch-230/validate-strict-selected10-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_ten
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-strict_full
+  name: strict_full
+  status: passed
+  required: true
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  target_ids:
+  - CHEBI:17695
+  command: just validate-all --workers 1 --out /private/tmp/npm-native-checks/batch-230/validate-all-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_full
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-lockfile
+  name: lockfile
+  status: passed
+  required: true
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  target_ids:
+  - CHEBI:17695
+  command: just verify-corpus --summary
+  exit_code: 0
+  evidence_ids:
+  - root-native-lockfile
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-reproduction
+  name: reproduction
+  status: passed
+  required: true
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  target_ids:
+  - CHEBI:17695
+  command: just verify-reproduction
+  exit_code: 0
+  evidence_ids:
+  - root-native-reproduction
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-queue
+  name: queue
+  status: passed
+  required: true
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  target_ids:
+  - CHEBI:17695
+  command: just review-queue --tsv /private/tmp/npm-native-checks/batch-230/review-queue-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-queue
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-full-qc
+  name: Full just qc
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:17695
+  summary: 'Not run under the external-request prohibition: the complete recipe includes
+    upstream vendored synchronization. The five executed local checks are recorded
+    separately.'
+- check_id: root-ontology-authorities
+  name: Complete OAK identifier/label authority check
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:17695
+  summary: Complete offline ontology authority coverage was not established for this
+    run; no ontology retrieval or remote resolution was attempted. Retained taxonomy
+    evidence has only its explicitly stated local scope.
+- check_id: root-primary-and-live-sources
+  name: Primary literature and current structured database/identifier verification
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:17695
+  summary: All external requests are prohibited by the user. Fresh database and identifier
+    verification and complete primary-literature coverage are unavailable. Any retained
+    original literature actually inspected is recorded separately with its historical
+    scope.
+evidence:
+- evidence_id: bgc-2295-owner
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/terpenoids/casbene.yaml
+  locator: Whole owner plaintext and complete curation_history
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: Complete current owner with all 3 history entries. Whole reading and exact
+    prior carries are explicitly attributed; native curation_status remains SEEDED.
+  snapshot_sha256: 3a13edab5b51dbcb99c39237804f81f3cb72f9132b5724d8499b0d858ed58621
+- evidence_id: bgc-2295-capture
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch230/owner-capture-DATA-001.json
+  locator: /records/4/owner_pin; /records/4/owner_document
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: Complete captured owner retains all written fields and history.
+  snapshot_sha256: 7b80365e39c220cc3416538128a85259a945fa33377cbd799850dbe626a62b1c
+- evidence_id: bgc-2295-intake
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch230/intakes/2295-inspect-001.json
+  locator: /source; /targets
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: Actual one-record canonical intake for CHEBI:17695; 39 pinned input placements
+    and explicit maintained ownership.
+  snapshot_sha256: bf57fed730ad54c83c2fe9af418b74b8de65f64322ac351e7391d36aea431447
+- evidence_id: bgc-2295-grounding-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch230/owner-capture-DATA-001.json
+  locator: /records/4/owner_document
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: 'Complete written field projection, with absence bounded by the complete
+    captured owner: {"chemical_structure":{"smiles":"C/C/1=C\\CC/C(=C/C2C(C2(C)C)CC/C(=C/CC1)/C)/C","standard_inchi":"InChI=1S/C20H32/c1-15-8-6-10-16(2)12-13-18-19(20(18,4)5)14-17(3)11-7-9-15/h9-10,14,18-19H,6-8,11-13H2,1-5H3/b15-9+,16-10+,17-14+","standard_inchi_key":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N","stereo_complete":false,"structure_source":"MIBIG","structure_source_id":"mibig:BGC0002723"},"definition":"A
+    diterpene comprising bicyclo[12.1.0]pentadeca-2,6,10-triene having three methyl
+    substituents located at the 3-, 7- and 11-positions as well as gem-dimethyl groups
+    at the 15-position.","definition_source":"CHEBI:17695","grounding_status":"EXACT","identifier":"CHEBI:17695","label":"casbene","source_concepts":[{"minted_identifier":"naturalproductmech:mibig-8655e7d854","source":"MIBIG","source_id":"BGC0002723","source_label":"casbene","source_version":"2"},{"minted_identifier":"naturalproductmech:chebi-bee4e2f26b","source":"CHEBI","source_id":"CHEBI:17695","source_label":"casbene","source_version":"3-star"}],"xrefs":["pubchem:5280437"]}'
+  snapshot_sha256: 7b80365e39c220cc3416538128a85259a945fa33377cbd799850dbe626a62b1c
+- evidence_id: bgc-2295-origin-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch230/owner-capture-DATA-001.json
+  locator: /records/4/owner_document
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: 'Complete written field projection, with absence bounded by the complete
+    captured owner: {"biosynthetic_gene_clusters":[{"accession":"mibig:BGC0002723","bgc_class":["TERPENE"],"entry_status":"active","entry_version":"2","evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"MIBiG
+    BGC0002723 entry version 2; citation taken from the compound evidence level","reference":"DOI:10.1105/tpc.114.129668"}],"genome_accession":"genbank:GPS_020388126.1","link_evidence_basis":"CLUSTER_DEMONSTRATED","locus_evidence_methods":["Heterologous
+    expression"],"locus_from":7857,"locus_to":18675,"organism_label":"Jatropha curcas","organism_taxon_id":"NCBITaxon:180498"}],"producer_organisms":[{"biosynthetic_gene_cluster":"mibig:BGC0002723","evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"MIBiG
+    BGC0002723 entry version 2; citation taken from the compound evidence level","reference":"DOI:10.1105/tpc.114.129668"}],"evidence_basis":"SOURCE_ASSERTION","notes":"Locus
+    evidence: Heterologous expression. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.","source":"MIBIG","source_version":"2","taxon_id":"NCBITaxon:180498","taxon_label":"Jatropha
+    curcas"}],"producer_taxon_groups":["LAND_PLANT"]}'
+  snapshot_sha256: 7b80365e39c220cc3416538128a85259a945fa33377cbd799850dbe626a62b1c
+- evidence_id: bgc-2295-occurrence-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch230/owner-capture-DATA-001.json
+  locator: /records/4/owner_document
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: 'Complete written field projection, with absence bounded by the complete
+    captured owner: {"occurrence_taxon_groups":["LAND_PLANT"],"occurrences":[{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.","reference":"DOI:10.1016/0003-9861(85)90171-7"}],"notes":"Wikidata
+    organism http://www.wikidata.org/entity/Q155867","source":"LOTUS","taxon_id":"NCBITaxon:3988","taxon_label":"Ricinus
+    communis","taxon_source":"NCBITaxon"},{"evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.","reference":"DOI:10.1104/PP.81.2.335"}],"notes":"Wikidata
+    organism http://www.wikidata.org/entity/Q155867","source":"LOTUS","taxon_id":"NCBITaxon:3988","taxon_label":"Ricinus
+    communis","taxon_source":"NCBITaxon"}]}'
+  snapshot_sha256: 7b80365e39c220cc3416538128a85259a945fa33377cbd799850dbe626a62b1c
+- evidence_id: bgc-2295-assay-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch230/owner-capture-DATA-001.json
+  locator: /records/4/owner_document
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: 'Complete written field projection, with absence bounded by the complete
+    captured owner: {"bioactivity_summary":["ANTIFUNGAL"]}'
+  snapshot_sha256: 7b80365e39c220cc3416538128a85259a945fa33377cbd799850dbe626a62b1c
+- evidence_id: bgc-2295-classification-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch230/owner-capture-DATA-001.json
+  locator: /records/4/owner_document
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: 'Complete written field projection, with absence bounded by the complete
+    captured owner: {"bgc_class":["TERPENE"],"biosynthesis_origin":"NATURAL_PRODUCT","compound_classes":["Diterpenoid"],"np_classification":{"class_results":["Casbane
+    diterpenoids"],"is_glycoside":false,"pathway_results":["Terpenoids"],"superclass_results":["Diterpenoids"],"tool":"NPClassifier","tool_version":"npclassifier.gnps2.org@2026-09-07"},"np_pathway":"TERPENOIDS"}'
+  snapshot_sha256: 7b80365e39c220cc3416538128a85259a945fa33377cbd799850dbe626a62b1c
+- evidence_id: bgc-2295-chemistry
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch230/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/4/declared_structure; /records/4/smiles/status; /records/4/inchi/status;
+    /records/4/smiles/computed; /records/4/inchi/computed; /records/4/comparisons;
+    /records/4/atom_correspondence
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: 'Both stored forms parsed. Exact original comparison and correspondence
+    values are retained: {"atom_correspondence":{"complete_atom_count_match":true,"full_graph_identity_established":false,"scope":"One
+    chirality-aware substructure match; no independent full graph or natural identity
+    claim.","smiles_to_inchi_atom_indices":[0,14,8,6,10,16,13,18,17,19,3,4,12,11,15,9,5,7,1,2]},"comparisons":{"atom_count_equal":true,"bond_count_equal":true,"both_keys_equal_declared":true,"canonical_isomeric_smiles_equal":true,"canonical_nonisomeric_smiles_equal":true,"formal_charge_equal":true,"formula_equal":true,"smiles_formula_equals_literal_InChI_main_layer":true,"standard_inchi_equal":true,"standard_inchi_key_equal":true}}
+    Complete saved atom/bond/ring/stereo/motif dictionaries are selected.'
+  snapshot_sha256: 96dda81188846db96a060530063819053908a4cfca966a26b040e1263f1c0d1f
+- evidence_id: bgc-2295-topology
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch230/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/4/smiles/computed; /records/4/inchi/computed
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: '{"inchi_formula":"C20H32","inchi_rings":[[5,9,15,11,12,17,18,13,16,10,6,8,14,7],[19,17,18]],"inchi_stereo":{"Atom_Tetrahedral:Unspecified":2,"Bond_Double:Specified":3},"scope":"The
+    selected complete saved computed objects include all atom/bond/motif fields; no
+    new parse or identity inference.","smiles_formula":"C20H32","smiles_rings":[[1,17,16,15,14,13,12,8,7,6,5,4,3,2],[9,8,7]],"smiles_stereo":{"Atom_Tetrahedral:Unspecified":2,"Bond_Double:Specified":3}}'
+  snapshot_sha256: 96dda81188846db96a060530063819053908a4cfca966a26b040e1263f1c0d1f
+- evidence_id: bgc-2295-diagnostic-reading
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch230/bgc-current230-combined-diagnostic-reading-001.json
+  locator: /whole_reading; /per_owner_interpretation; /limitations
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: BGC first-five and Support last-five complete saved-table interpretations
+    are separately attributed, with original false comparisons, global warnings and
+    natural-identity limits preserved.
+  snapshot_sha256: a9f1e3364c2e966017b34e7002684a7fbf573e7f800176f47c5999b678f10d20
+- evidence_id: bgc-2295-diagnostic-execution
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch230/chemistry-local/diagnostic-execution-001.json
+  locator: /observer; /command; /cwd; /started_at; /finished_at; /exit_code; /source;
+    /source_admission; /environment_manifest; /actual_environment; /stdout; /stderr;
+    /external_requests
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: Original execution receipt retains the command, clocks, exit 0 and exact
+    stdout/stderr pins; no new diagnostic execution is claimed.
+  snapshot_sha256: 837af035d4d527f6fb7c9142080b7b05e02020e2e12a94966de93a00e7307284
+- evidence_id: bgc-2295-diagnostic-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch230/root-chemistry-acceptance-001.json
+  locator: /observer; /recorded_at; /status; /accepted; /DATA; /execution; /original_tools;
+    /capture; /intake_summary; /molecular_parse_attempts; /false_comparisons; /original_stderr;
+    /ROOT_reading; /scientific_reading; /limits; /external_requests; /molecular_replays
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: ROOT accepts the original twenty stored-form parses and saved integrity.
+    Two false canonical flags for each Cheju owner and the global unassigned stderr
+    warnings remain explicit.
+  snapshot_sha256: 3bdca09956eda07943344859a3fbe8c3080f91b20f921966cdfce552f165f492
+- evidence_id: bgc-2295-native-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch230/root-native-gates-acceptance-001.json
+  locator: /observer; /recorded_at; /status; /accepted; /execution; /original_tools;
+    /native_readback; /checks; /unavailable_required_gates; /five_local_commands_passed;
+    /all_native_gates_passed; /ROOT_reading; /external_requests; /gate_replays; /scientific_verdicts
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: ROOT accepts five original local commands. all_native_gates_passed remains
+    false; full QC and OAK are unavailable, and command success does not certify scientific
+    identity.
+  snapshot_sha256: d9c9c2383b0c2fbc8d9909fbd8d69cd87fc27bfa531084c338091403dc7d733f
+- evidence_id: bgc-2295-intake-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch230/root-intake-acceptance-001.json
+  locator: /observer; /recorded_at; /status; /accepted; /intake_summary; /controller_execution;
+    /original_tools; /source_admission; /input_plan; /selection; /capture; /counts;
+    /per_owner; /ROOT_reading; /external_requests; /canonical_target_replays
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: ROOT accepts the original ten canonical intakes and their exact current
+    input/owner maps.
+  snapshot_sha256: 42ccf246dce2085c37c35b04737a6546e030ca92afd2bedff69b89a0b172296c
+- evidence_id: bgc-2295-inventory-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch230-tentative/root-source-inventory-acceptance-001.json
+  locator: /observer; /recorded_at; /status; /accepted; /inventory; /execution; /original_tools;
+    /source_admission; /capture_acceptance; /totals; /per_order_input_counts; /ROOT_reading;
+    /scientific_reading; /scope; /external_requests; /source_query_replays; /YAML_or_molecular_parses
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: ROOT accepts the original saved source inventory and current input pins;
+    semantic reading is separately attributed.
+  snapshot_sha256: 463d30a2886bffa6358db246613d007802e8a07225cb82419011c6ae9735ef52
+- evidence_id: bgc-2295-plan-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch230-tentative/root-input-plan-acceptance-001.json
+  locator: /observer; /recorded_at; /accepted; /status; /input_plan; /derivation;
+    /execution; /original_tools; /source_admission; /inventory; /source_notes; /counts;
+    /reader_orders; /ROOT_reading; /scientific_verdicts; /external_requests
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: ROOT accepts the actual target-input plan; this selected owner has mechanism
+    roots and its separately accepted original reader is required.
+  snapshot_sha256: 780cacb47734317cde06ab5584737902b10372dfb2267283c255219b4280e415
+- evidence_id: bgc-2295-plan
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch230-tentative/bgc-prep/bgc-conditional230-target-input-plan-001.json
+  locator: /records/4
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: Accepted owner-specific source projection, exact direct contexts and input
+    ownership, including required mechanism/component reader dependencies.
+  snapshot_sha256: 8c93a5bac649164b594d490b9a38136e954a2cc79f8336a847094e70f96c652b
+- evidence_id: bgc-2295-source-notes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch230-tentative/bgc-prep/bgc-conditional230-source-scope-notes-001.json
+  locator: /reading; /cautions; /scientific_limits
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: Complete disjoint source-payload/cache reading, whole raw/history carries
+    and mechanism-context boundaries are attributed; no source query was replayed
+    during authoring.
+  snapshot_sha256: 035d677fd8738eb6df5cc3629e225c624de49bdb8f9779573bd67f9c73c6cdcd
+- evidence_id: bgc-2295-curation-scope
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch230-tentative/bgc-prep/bgc-conditional230-source-scope-notes-001.json
+  locator: /curation
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: The completed case-sensitive literal scan tested 416 exact cohort tokens
+    against eight directly opened implemented curation tables, including ignored files
+    and headers, and found zero matches in that bounded scope. Reserved decisions.tsv
+    was not consumed.
+  snapshot_sha256: 035d677fd8738eb6df5cc3629e225c624de49bdb8f9779573bd67f9c73c6cdcd
+- evidence_id: bgc-2295-query-mibig_compounds
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch230-tentative/bgc-prep/bgc-conditional230-source-inventory-DATA-001.json
+  locator: /contexts/11/source_scope_inventory/joins/mibig_compounds
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: 'Complete retained query frame with literal predicates and all matched
+    fields, including no-match results: {"matches":[{"last_physical_line":3392,"physical_line":3392,"raw_tsv_record":"BGC0002723\t2\tactive\tquestionable\tunknown\tcasbene\t1\tC/C/1=C\\CC/C(=C/C2C(C2(C)C)CC/C(=C/CC1)/C)/C\tInChI=1S/C20H32/c1-15-8-6-10-16(2)12-13-18-19(20(18,4)5)14-17(3)11-7-9-15/h9-10,14,18-19H,6-8,11-13H2,1-5H3/b15-9+,16-10+,17-14+\tZJMVJDFTNPZVMB-QOCMWZQCSA-N\tfalse\tDiterpenoid\tpubchem:5280437\tNCBITaxon:180498\tJatropha
+    curcas\tterpene\tUnknown\tGPS_020388126.1\t7857\t18675\tHeterologous expression\tSOURCE_ASSERTION\tCLUSTER_DEMONSTRATED\tDOI:10.1105/tpc.114.129668\tCOMPOUND_EVIDENCE\n","row":{"bgc_classes":"terpene","bgc_subclasses":"Unknown","cluster_link_evidence_basis":"CLUSTER_DEMONSTRATED","compound_classes":"Diterpenoid","compound_index":"1","compound_name":"casbene","database_ids":"pubchem:5280437","entry_completeness":"unknown","entry_quality":"questionable","entry_status":"active","entry_version":"2","genome_accession":"GPS_020388126.1","locus_evidence_methods":"Heterologous
+    expression","locus_from":"7857","locus_to":"18675","mibig_accession":"BGC0002723","primary_reference":"DOI:10.1105/tpc.114.129668","producer_evidence_basis":"SOURCE_ASSERTION","reference_basis":"COMPOUND_EVIDENCE","smiles":"C/C/1=C\\CC/C(=C/C2C(C2(C)C)CC/C(=C/CC1)/C)/C","standard_inchi":"InChI=1S/C20H32/c1-15-8-6-10-16(2)12-13-18-19(20(18,4)5)14-17(3)11-7-9-15/h9-10,14,18-19H,6-8,11-13H2,1-5H3/b15-9+,16-10+,17-14+","standard_inchi_key":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N","stereo_complete":"false","taxon_id":"NCBITaxon:180498","taxon_label":"Jatropha
+    curcas"},"row_sha256":"54fb22919fb336e1e3c92ccfc76b6b24238f9bd40d91cb63d7587a57a5a2c169"}],"predicate":"exact
+    complete standard_inchi_key equality","query":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N"}'
+  snapshot_sha256: 4153fd4a2fff93d8644d4e4d63c614d55c5ef092d02809d2b96d25cf896fdcd7
+- evidence_id: bgc-2295-source-mibig_compounds
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv
+  locator: Header line 1; physical lines 3392–3392; row_sha256 54fb22919fb336e1e3c92ccfc76b6b24238f9bd40d91cb63d7587a57a5a2c169
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: 'Complete retained physical payloads, every field: [{"bgc_classes":"terpene","bgc_subclasses":"Unknown","cluster_link_evidence_basis":"CLUSTER_DEMONSTRATED","compound_classes":"Diterpenoid","compound_index":"1","compound_name":"casbene","database_ids":"pubchem:5280437","entry_completeness":"unknown","entry_quality":"questionable","entry_status":"active","entry_version":"2","genome_accession":"GPS_020388126.1","locus_evidence_methods":"Heterologous
+    expression","locus_from":"7857","locus_to":"18675","mibig_accession":"BGC0002723","primary_reference":"DOI:10.1105/tpc.114.129668","producer_evidence_basis":"SOURCE_ASSERTION","reference_basis":"COMPOUND_EVIDENCE","smiles":"C/C/1=C\\CC/C(=C/C2C(C2(C)C)CC/C(=C/CC1)/C)/C","standard_inchi":"InChI=1S/C20H32/c1-15-8-6-10-16(2)12-13-18-19(20(18,4)5)14-17(3)11-7-9-15/h9-10,14,18-19H,6-8,11-13H2,1-5H3/b15-9+,16-10+,17-14+","standard_inchi_key":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N","stereo_complete":"false","taxon_id":"NCBITaxon:180498","taxon_label":"Jatropha
+    curcas"}]'
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: bgc-2295-query-chebi_structures
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch230-tentative/bgc-prep/bgc-conditional230-source-inventory-DATA-001.json
+  locator: /contexts/11/source_scope_inventory/joins/chebi_structures
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: 'Complete retained query frame with literal predicates and all matched
+    fields, including no-match results: {"matches":[{"last_physical_line":4096,"physical_line":4096,"raw_tsv_record":"CHEBI:17695\tcasbene\tA
+    diterpene comprising bicyclo[12.1.0]pentadeca-2,6,10-triene having three methyl
+    substituents located at the 3-, 7- and 11-positions as well as gem-dimethyl groups
+    at the 15-position.\t3\tZJMVJDFTNPZVMB-QOCMWZQCSA-N\tC/C1=C\\CC/C(C)=C/C2C(CC/C(C)=C/CC1)C2(C)C\n","row":{"chebi_id":"CHEBI:17695","definition":"A
+    diterpene comprising bicyclo[12.1.0]pentadeca-2,6,10-triene having three methyl
+    substituents located at the 3-, 7- and 11-positions as well as gem-dimethyl groups
+    at the 15-position.","name":"casbene","smiles":"C/C1=C\\CC/C(C)=C/C2C(CC/C(C)=C/CC1)C2(C)C","standard_inchi_key":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N","stars":"3"},"row_sha256":"98919bf23517e4b1feab0bc0fd7ff976288d6cdb8a18e0e87f6fb6d47a0cc06b"}],"predicate":"exact
+    complete standard_inchi_key equality","query":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N"}'
+  snapshot_sha256: 4153fd4a2fff93d8644d4e4d63c614d55c5ef092d02809d2b96d25cf896fdcd7
+- evidence_id: bgc-2295-source-chebi_structures
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/chebi_structures.tsv
+  locator: Header line 1; physical lines 4096–4096; row_sha256 98919bf23517e4b1feab0bc0fd7ff976288d6cdb8a18e0e87f6fb6d47a0cc06b
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: 'Complete retained physical payloads, every field: [{"chebi_id":"CHEBI:17695","definition":"A
+    diterpene comprising bicyclo[12.1.0]pentadeca-2,6,10-triene having three methyl
+    substituents located at the 3-, 7- and 11-positions as well as gem-dimethyl groups
+    at the 15-position.","name":"casbene","smiles":"C/C1=C\\CC/C(C)=C/C2C(CC/C(C)=C/CC1)C2(C)C","standard_inchi_key":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N","stars":"3"}]'
+  snapshot_sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+- evidence_id: bgc-2295-query-lotus_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch230-tentative/bgc-prep/bgc-conditional230-source-inventory-DATA-001.json
+  locator: /contexts/11/source_scope_inventory/joins/lotus_occurrences
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: 'Complete retained query frame with literal predicates and all matched
+    fields, including no-match results: {"matches":[{"last_physical_line":10021,"physical_line":10021,"raw_tsv_record":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N\tRicinus
+    communis\tNCBITaxon:3988\thttp://www.wikidata.org/entity/Q155867\t10.1016/0003-9861(85)90171-7\thttp://www.wikidata.org/entity/Q27102539\n","row":{"organism_name":"Ricinus
+    communis","organism_wikidata":"http://www.wikidata.org/entity/Q155867","reference_doi":"10.1016/0003-9861(85)90171-7","standard_inchi_key":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27102539","taxon_id":"NCBITaxon:3988"},"row_sha256":"f05a5fb5cffda19361a1a7befb965b4acd6eb962e690b309e8e807fcd238b30e"},{"last_physical_line":10022,"physical_line":10022,"raw_tsv_record":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N\tRicinus
+    communis\tNCBITaxon:3988\thttp://www.wikidata.org/entity/Q155867\t10.1104/PP.81.2.335\thttp://www.wikidata.org/entity/Q27102539\n","row":{"organism_name":"Ricinus
+    communis","organism_wikidata":"http://www.wikidata.org/entity/Q155867","reference_doi":"10.1104/PP.81.2.335","standard_inchi_key":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27102539","taxon_id":"NCBITaxon:3988"},"row_sha256":"420062f1ac6ae3a665e136772a8f3c3145bea11c168c2a74e12b58a24e39c67d"}],"predicate":"exact
+    complete standard_inchi_key equality","query":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N"}'
+  snapshot_sha256: 4153fd4a2fff93d8644d4e4d63c614d55c5ef092d02809d2b96d25cf896fdcd7
+- evidence_id: bgc-2295-source-lotus_occurrences
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical lines 10021–10021; row_sha256 f05a5fb5cffda19361a1a7befb965b4acd6eb962e690b309e8e807fcd238b30e;
+    physical lines 10022–10022; row_sha256 420062f1ac6ae3a665e136772a8f3c3145bea11c168c2a74e12b58a24e39c67d
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: 'Complete retained physical payloads, every field: [{"organism_name":"Ricinus
+    communis","organism_wikidata":"http://www.wikidata.org/entity/Q155867","reference_doi":"10.1016/0003-9861(85)90171-7","standard_inchi_key":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27102539","taxon_id":"NCBITaxon:3988"},{"organism_name":"Ricinus
+    communis","organism_wikidata":"http://www.wikidata.org/entity/Q155867","reference_doi":"10.1104/PP.81.2.335","standard_inchi_key":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N","structure_wikidata":"http://www.wikidata.org/entity/Q27102539","taxon_id":"NCBITaxon:3988"}]'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: bgc-2295-query-cyanometdb_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch230-tentative/bgc-prep/bgc-conditional230-source-inventory-DATA-001.json
+  locator: /contexts/11/source_scope_inventory/joins/cyanometdb_occurrences
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: 'Complete retained query frame with literal predicates and all matched
+    fields, including no-match results: {"matches":[],"predicate":"exact complete
+    standard_inchi_key equality","query":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N"}'
+  snapshot_sha256: 4153fd4a2fff93d8644d4e4d63c614d55c5ef092d02809d2b96d25cf896fdcd7
+- evidence_id: bgc-2295-query-npclassifier
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch230-tentative/bgc-prep/bgc-conditional230-source-inventory-DATA-001.json
+  locator: /contexts/11/source_scope_inventory/joins/npclassifier
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: 'Complete retained query frame with literal predicates and all matched
+    fields, including no-match results: {"matches":[{"last_physical_line":3035,"physical_line":3035,"raw_tsv_record":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N\tC/C/1=C\\CC/C(=C/C2C(C2(C)C)CC/C(=C/CC1)/C)/C\tTerpenoids\tDiterpenoids\tCasbane
+    diterpenoids\tfalse\tnpclassifier.gnps2.org@2026-09-07\n","row":{"class_results":"Casbane
+    diterpenoids","is_glycoside":"false","model_version":"npclassifier.gnps2.org@2026-09-07","pathway_results":"Terpenoids","smiles":"C/C/1=C\\CC/C(=C/C2C(C2(C)C)CC/C(=C/CC1)/C)/C","standard_inchi_key":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N","superclass_results":"Diterpenoids"},"row_sha256":"5a0234c5e68e003504cb81a7b9ef8e2a34a77a54288f862272798758655bbb6c"}],"predicate":"exact
+    complete standard_inchi_key equality","query":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N"}'
+  snapshot_sha256: 4153fd4a2fff93d8644d4e4d63c614d55c5ef092d02809d2b96d25cf896fdcd7
+- evidence_id: bgc-2295-source-npclassifier
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv
+  locator: Header line 1; physical lines 3035–3035; row_sha256 5a0234c5e68e003504cb81a7b9ef8e2a34a77a54288f862272798758655bbb6c
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: 'Complete retained physical payloads, every field: [{"class_results":"Casbane
+    diterpenoids","is_glycoside":"false","model_version":"npclassifier.gnps2.org@2026-09-07","pathway_results":"Terpenoids","smiles":"C/C/1=C\\CC/C(=C/C2C(C2(C)C)CC/C(=C/CC1)/C)/C","standard_inchi_key":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N","superclass_results":"Diterpenoids"}]'
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: bgc-2295-query-pubchem_bioassay
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch230-tentative/bgc-prep/bgc-conditional230-source-inventory-DATA-001.json
+  locator: /contexts/11/source_scope_inventory/joins/pubchem_bioassay
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: 'Complete retained query frame with literal predicates and all matched
+    fields, including no-match results: {"matches":[{"last_physical_line":11317,"physical_line":11317,"raw_tsv_record":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N\t5280437\t\t(no
+    assay data)\t\t\t\t\t\t\t\n","row":{"activity_name":"","activity_outcome":"","activity_value_um":"","aid":"","assay_name":"(no
+    assay data)","assay_type":"","cid":"5280437","depositor":"","reference":"","standard_inchi_key":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N","target_accession":""},"row_sha256":"b6ee1ca36aab8fb91d9c197b8defcaf504cc237a832ef7b9e7b7ffde3ecafbaf"}],"predicate":"exact
+    complete standard_inchi_key equality","query":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N"}'
+  snapshot_sha256: 4153fd4a2fff93d8644d4e4d63c614d55c5ef092d02809d2b96d25cf896fdcd7
+- evidence_id: bgc-2295-source-pubchem_bioassay
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: Header line 1; physical lines 11317–11317; row_sha256 b6ee1ca36aab8fb91d9c197b8defcaf504cc237a832ef7b9e7b7ffde3ecafbaf
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: 'Complete retained physical payloads, every field: [{"activity_name":"","activity_outcome":"","activity_value_um":"","aid":"","assay_name":"(no
+    assay data)","assay_type":"","cid":"5280437","depositor":"","reference":"","standard_inchi_key":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N","target_accession":""}]'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: bgc-2295-query-bindingdb_targets
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch230-tentative/bgc-prep/bgc-conditional230-source-inventory-DATA-001.json
+  locator: /contexts/11/source_scope_inventory/joins/bindingdb_targets
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: 'Complete retained query frame with literal predicates and all matched
+    fields, including no-match results: {"matches":[],"predicate":"exact complete
+    standard_inchi_key equality","query":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N"}'
+  snapshot_sha256: 4153fd4a2fff93d8644d4e4d63c614d55c5ef092d02809d2b96d25cf896fdcd7
+- evidence_id: bgc-2295-query-antibioticmech_inchikeys
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch230-tentative/bgc-prep/bgc-conditional230-source-inventory-DATA-001.json
+  locator: /contexts/11/source_scope_inventory/joins/antibioticmech_inchikeys
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: 'Complete retained query frame with literal predicates and all matched
+    fields, including no-match results: {"matches":[{"last_physical_line":2840,"physical_line":2840,"raw_tsv_record":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N\tCHEBI:17695\tcasbene\tANTIFUNGAL\tcasbene\t74f6cc8362498900f2fe2c13d0b6fdb66dd30976\n","row":{"antimicrobial_class":"ANTIFUNGAL","corpus_commit":"74f6cc8362498900f2fe2c13d0b6fdb66dd30976","identifier":"CHEBI:17695","label":"casbene","slug":"casbene","standard_inchi_key":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N"},"row_sha256":"39657d54941a1989b5fb723ac96c51da4608554dc4d84f6bfb9d7342f8380727"}],"predicate":"exact
+    complete standard_inchi_key equality","query":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N"}'
+  snapshot_sha256: 4153fd4a2fff93d8644d4e4d63c614d55c5ef092d02809d2b96d25cf896fdcd7
+- evidence_id: bgc-2295-source-antibioticmech_inchikeys
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/antibioticmech_inchikeys.tsv
+  locator: Header line 1; physical lines 2840–2840; row_sha256 39657d54941a1989b5fb723ac96c51da4608554dc4d84f6bfb9d7342f8380727
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: 'Complete retained physical payloads, every field: [{"antimicrobial_class":"ANTIFUNGAL","corpus_commit":"74f6cc8362498900f2fe2c13d0b6fdb66dd30976","identifier":"CHEBI:17695","label":"casbene","slug":"casbene","standard_inchi_key":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N"}]'
+  snapshot_sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+- evidence_id: bgc-2295-query-chebi_origins
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch230-tentative/bgc-prep/bgc-conditional230-source-inventory-DATA-001.json
+  locator: /contexts/11/source_scope_inventory/joins/chebi_origins
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: 'Complete retained query frame with literal predicates and all matched
+    fields, including no-match results: {"matches":[],"predicate":"exact chebi_id
+    from exact full-key structure rows","query":["CHEBI:17695"]}'
+  snapshot_sha256: 4153fd4a2fff93d8644d4e4d63c614d55c5ef092d02809d2b96d25cf896fdcd7
+- evidence_id: bgc-2295-source-routes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch230-tentative/bgc-prep/bgc-conditional230-source-inventory-DATA-001.json
+  locator: /contexts/11/source_scope_inventory/source_taxa; /contexts/11/source_scope_inventory/forward_taxon_merge_matches;
+    /contexts/11/source_scope_inventory/nonorganism_matches; /contexts/11/source_scope_inventory/actual_assay_rows;
+    /contexts/11/source_scope_inventory/blank_AID_sentinels; /contexts/11/source_scope_inventory/related_corpus_rows
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: 'Exact source taxa and route lists; only the forward-merge/nonorganism/assay
+    lists are asserted empty where shown: {"actual_assay_rows":[],"blank_AID_sentinels":[{"last_physical_line":11317,"physical_line":11317,"raw_tsv_record":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N\t5280437\t\t(no
+    assay data)\t\t\t\t\t\t\t\n","row":{"activity_name":"","activity_outcome":"","activity_value_um":"","aid":"","assay_name":"(no
+    assay data)","assay_type":"","cid":"5280437","depositor":"","reference":"","standard_inchi_key":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N","target_accession":""},"row_sha256":"b6ee1ca36aab8fb91d9c197b8defcaf504cc237a832ef7b9e7b7ffde3ecafbaf"}],"forward_taxon_merge_matches":[],"nonorganism_matches":[],"related_corpus_rows":[{"last_physical_line":2840,"physical_line":2840,"raw_tsv_record":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N\tCHEBI:17695\tcasbene\tANTIFUNGAL\tcasbene\t74f6cc8362498900f2fe2c13d0b6fdb66dd30976\n","row":{"antimicrobial_class":"ANTIFUNGAL","corpus_commit":"74f6cc8362498900f2fe2c13d0b6fdb66dd30976","identifier":"CHEBI:17695","label":"casbene","slug":"casbene","standard_inchi_key":"ZJMVJDFTNPZVMB-QOCMWZQCSA-N"},"row_sha256":"39657d54941a1989b5fb723ac96c51da4608554dc4d84f6bfb9d7342f8380727"}],"source_taxa":["NCBITaxon:180498","NCBITaxon:3988"]}'
+  snapshot_sha256: 4153fd4a2fff93d8644d4e4d63c614d55c5ef092d02809d2b96d25cf896fdcd7
+- evidence_id: bgc-2295-cached-taxonomy
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch230-tentative/bgc-prep/bgc-conditional230-source-inventory-DATA-001.json
+  locator: /cached_taxonomy/input; /cached_taxonomy/unmatched_ids; /cached_taxonomy/whole_stanzas/56;
+    /cached_taxonomy/whole_stanzas/264
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: 'Complete retained source-taxon stanzas; local cache labels and synonyms
+    are not fresh authority: [{"complete_stanza":"[Term]\nid: NCBITaxon:3988\nname:
+    Ricinus communis\nsynonym: \"Ricinus sanguineus\" EXACT []\n\n","id":"NCBITaxon:3988","physical_line":6041},{"complete_stanza":"[Term]\nid:
+    NCBITaxon:180498\nname: Jatropha curcas\n\n","id":"NCBITaxon:180498","physical_line":59784}]'
+  snapshot_sha256: 4153fd4a2fff93d8644d4e4d63c614d55c5ef092d02809d2b96d25cf896fdcd7
+- evidence_id: bgc-2295-direct-contexts
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch230-tentative/bgc-prep/bgc-conditional230-source-inventory-DATA-001.json
+  locator: /records/4/direct_companion_paths; /records/4/direct_companion_predicates
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: 'Exact one-hop contexts/predicates, without transitive identity or claim
+    transfer: {"direct_companion_paths":[],"direct_companion_predicates":[]}'
+  snapshot_sha256: 4153fd4a2fff93d8644d4e4d63c614d55c5ef092d02809d2b96d25cf896fdcd7
+- evidence_id: bgc-2295-structure-schema
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: Lines 368–430
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: ChemicalStructure preserves source representation and explicitly limits
+    standardized identity and undefined centres. ComputedClassification is a named/versioned
+    prediction, never a source assertion or admission criterion.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: bgc-2295-stereo-method
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py
+  locator: Lines 142–173
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: Maintained extraction derives stereo_complete from FindMolChiralCenters(includeUnassigned=True,useLegacyImplementation=False)
+    and absence of question-mark centre tags; it is not an all-bond-geometry proof.
+  snapshot_sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+- evidence_id: bgc-2295-classification-seeder
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: Lines 974–1065
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: Maintained seeding preserves the source structure and complete named/versioned
+    prediction including is_glycoside, while keeping source BGC classes separately.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: bgc-2295-review-profile
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/docs/record-review-profile.md
+  locator: Whole profile
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: One-record review requires claim-level evidence and all dimensions, with
+    truthful unavailable-check and partial-completion limits.
+  snapshot_sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+- evidence_id: bgc-2295-review-skill
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/.claude/skills/review-yaml-record/SKILL.md
+  locator: Whole skill
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: The review procedure does not edit records, and source access must remain
+    honestly bounded by the overriding no-request instruction.
+  snapshot_sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+- evidence_id: bgc-2295-reader-DATA
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch230/native-current230-casbene-maintained-reader-DATA-001.json
+  locator: /raw_owner; /component_captures; /resolved_view; /expected_view; /returned_view_equals_expected_complete_owner;
+    /view_mismatches; /counts; /reader_call_count; /denials; /unexpected_denials;
+    /errors; /molecular_parses; /retries; /external_requests; /limitations
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: 'One original maintained call preserves the complete current owner and
+    ordered components; only resolved causal_graphs expands component references.
+    Counts and scope: {"component_graphs":0,"component_history_events":[],"component_refs":0,"curation_history":3,"edges":2,"graphs":1,"inline_graphs":1,"molecular_targets":0,"nodes":3,"pathway_steps":1}
+    One known import-time IPv6 socket-construction capability probe was blocked before
+    action, with no unexpected denial, request, molecular parse or retry. This is
+    mechanical preservation, not fresh science.'
+  snapshot_sha256: d5c7996cbae7810518fe0c702856e3fe043fc46db4168db25a79bfb00991ff55
+- evidence_id: bgc-2295-reader-execution
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch230/native-current230-casbene-reader-execution-001.json
+  locator: /command; /started_at; /finished_at; /exit_code; /stdout; /stderr; /DATA;
+    /external_requests; /retries; /original_tool
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: Original execution exited 0 with empty stderr and exact DATA/stdout pins;
+    no repeat, retry or external request.
+  snapshot_sha256: 2dd4b86f3d013c14556e0a9f9c65043c9e8a15f58863b7a20a23fd0e7db7390a
+- evidence_id: bgc-2295-reader-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch230/root-2295-maintained-reader-acceptance-001.json
+  locator: /observer; /recorded_at; /status; /order; /DATA; /execution; /source_adoption;
+    /original_tools; /verification; /review_check_contract; /ROOT_reading; /limits;
+    /new_target_invocations; /external_requests
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: ROOT accepts the exact original reader DATA/execution triple and complete
+    current owner/component preservation. The exact review-check contract is retained;
+    scientific and sequence limitations remain.
+  snapshot_sha256: 43c62650e61498f53ec2d28f3ceb63cbc706cc4318912cc5c26ff9e8cfedd8ff
+- evidence_id: bgc-2295-mechanism-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch230/owner-capture-DATA-001.json
+  locator: /records/4/owner_document
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: Complete raw owner preserves declared graph/reference/pathway root presence,
+    all historical annotations and existing OPEN discussions; no raw root is inferred
+    from the expanded view.
+  snapshot_sha256: 7b80365e39c220cc3416538128a85259a945fa33377cbd799850dbe626a62b1c
+- evidence_id: bgc-2295-graph-0
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch230/native-current230-casbene-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/0
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: 'Complete retained graph, including every node, edge, evidence item and
+    applicability note; annotations remain historical source claims: {"description":"Partial
+    Ricinus communis casbene biosynthesis graph for casbene-synthase-catalyzed geranylgeranyl-diphosphate
+    cyclization.","edges":[{"evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Hill
+    et al. expressed Ricinus communis casbene synthase in E. coli and characterized
+    the recombinant enzyme by kinetic and product analysis.","reference":"DOI:10.1006/abbi.1996.0559","snippet":"Casbene
+    synthase catalyzes the cyclization of geranylgeranyl diphosphate (2) to casbene
+    (1)"},{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Mau and West cloned the Ricinus
+    communis casbene synthase cDNA as GenBank L32134, and its open reading frame encodes
+    the same 601 aa length as reviewed UniProtKB:P59287.","reference":"DOI:10.1073/pnas.91.18.8497","snippet":"A
+    near-full-length casbene synthase cDNA clone, pCS7, was isolated"},{"evidence_type":"DATABASE_ASSERTION","notes":"Reviewed
+    UniProtKB:P59287 is the 601 aa Ricinus communis chloroplastic casbene synthase,
+    cross-references the L32134 mRNA and the EQ973781 genomic protein EEF48743.1,
+    and annotates RHEA:14901.","reference":"https://www.uniprot.org/uniprotkb/P59287","retrieved_on":"2026-09-30","snippet":"Catalyzes
+    the cyclization of geranylgeranyl diphosphate to casbene"},{"evidence_type":"DATABASE_ASSERTION","notes":"The
+    Rhea Swiss-Prot mapping links RHEA:14901 to UniProtKB:P59287.","reference":"https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv","retrieved_on":"2026-09-30"}],"notes":"Ricinus
+    casbene synthase cyclizes geranylgeranyl diphosphate in the committed casbene-forming
+    terpene synthase reaction.","object":"casbene_synthase","predicate":"is cyclized
+    by","subject":"geranylgeranyl_diphosphate"},{"evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Hill
+    et al. expressed Ricinus communis casbene synthase in E. coli and characterized
+    the recombinant enzyme by kinetic and product analysis.","reference":"DOI:10.1006/abbi.1996.0559","snippet":"Casbene
+    synthase catalyzes the cyclization of geranylgeranyl diphosphate (2) to casbene
+    (1)"},{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Mau and West cloned the Ricinus
+    communis casbene synthase cDNA as GenBank L32134, and its open reading frame encodes
+    the same 601 aa length as reviewed UniProtKB:P59287.","reference":"DOI:10.1073/pnas.91.18.8497","snippet":"A
+    near-full-length casbene synthase cDNA clone, pCS7, was isolated"},{"evidence_type":"DATABASE_ASSERTION","notes":"Reviewed
+    UniProtKB:P59287 is the 601 aa Ricinus communis chloroplastic casbene synthase,
+    cross-references the L32134 mRNA and the EQ973781 genomic protein EEF48743.1,
+    and annotates RHEA:14901.","reference":"https://www.uniprot.org/uniprotkb/P59287","retrieved_on":"2026-09-30","snippet":"Catalyzes
+    the cyclization of geranylgeranyl diphosphate to casbene"},{"evidence_type":"DATABASE_ASSERTION","notes":"The
+    Rhea Swiss-Prot mapping links RHEA:14901 to UniProtKB:P59287.","reference":"https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv","retrieved_on":"2026-09-30"}],"notes":"The
+    Ricinus casbene synthase reaction forms the diterpene hydrocarbon casbene and
+    diphosphate from geranylgeranyl diphosphate.","object":"casbene","predicate":"forms","subject":"casbene_synthase"}],"graph_id":"casbene-ricinus-casbene-synthase-cyclization","nodes":[{"grounding_status":"GROUNDED","identifier":"CHEBI:58756","label":"(2E,6E,10E)-geranylgeranyl
+    diphosphate","node_id":"geranylgeranyl_diphosphate","node_type":"PRECURSOR"},{"grounding_status":"GROUNDED","identifier":"UniProtKB:P59287","label":"Ricinus
+    communis casbene synthase","node_id":"casbene_synthase","node_type":"ENZYME"},{"grounding_status":"GROUNDED","identifier":"CHEBI:17695","label":"casbene","node_id":"casbene","node_type":"COMPOUND"}],"scope":"BIOSYNTHESIS"}'
+  snapshot_sha256: d5c7996cbae7810518fe0c702856e3fe043fc46db4168db25a79bfb00991ff55
+- evidence_id: bgc-2295-pathway-0
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch230/native-current230-casbene-maintained-reader-DATA-001.json
+  locator: /raw_owner/biosynthetic_pathway/0
+  accessed_at: '2026-11-03T21:04:33.105960Z'
+  support: supports
+  summary: 'Complete retained pathway item. Absent step_number is preserved, not renumbered:
+    {"enzyme_id":"UniProtKB:P59287","enzyme_label":"Ricinus communis casbene synthase","evidence":[{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Hill
+    et al. expressed Ricinus communis casbene synthase in E. coli and characterized
+    the recombinant enzyme by kinetic and product analysis.","reference":"DOI:10.1006/abbi.1996.0559","snippet":"Casbene
+    synthase catalyzes the cyclization of geranylgeranyl diphosphate (2) to casbene
+    (1)"},{"evidence_type":"PRIMARY_EXPERIMENT","notes":"Mau and West cloned the Ricinus
+    communis casbene synthase cDNA as GenBank L32134, and its open reading frame encodes
+    the same 601 aa length as reviewed UniProtKB:P59287.","reference":"DOI:10.1073/pnas.91.18.8497","snippet":"A
+    near-full-length casbene synthase cDNA clone, pCS7, was isolated"},{"evidence_type":"DATABASE_ASSERTION","notes":"Reviewed
+    UniProtKB:P59287 is the 601 aa Ricinus communis chloroplastic casbene synthase,
+    cross-references the L32134 mRNA and the EQ973781 genomic protein EEF48743.1,
+    and annotates RHEA:14901.","reference":"https://www.uniprot.org/uniprotkb/P59287","retrieved_on":"2026-09-30","snippet":"Catalyzes
+    the cyclization of geranylgeranyl diphosphate to casbene"},{"evidence_type":"DATABASE_ASSERTION","notes":"The
+    Rhea Swiss-Prot mapping links RHEA:14901 to UniProtKB:P59287.","reference":"https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv","retrieved_on":"2026-09-30"}],"notes":"Ricinus
+    communis casbene synthase cyclizes (2E,6E,10E)-geranylgeranyl diphosphate to casbene.
+    The seeded BGC0002723 locus is from Jatropha curcas and carries NP_001292945.1
+    and XP_012066853.1, so it is not used here as exact UniProtKB:P59287 locus evidence.","product":"CHEBI:17695","products":["CHEBI:17695","CHEBI:33019"],"reaction_id":"RHEA:14901","step_number":1,"substrate":"CHEBI:58756"}'
+  snapshot_sha256: d5c7996cbae7810518fe0c702856e3fe043fc46db4168db25a79bfb00991ff55
+- evidence_id: root-native-strict_ten
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-230/validate-strict-selected10-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-230/native-current230-five-gates-execution-001.json
+  accessed_at: '2026-11-03T20:29:38.741215Z'
+  support: supports
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  snapshot_sha256: a3875b4c9e9c43c34d0c1f5e6ddd8ac7a8e1a6cc41fcc2ea3bc454b6d67b9bb2
+- evidence_id: root-native-strict_full
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-230/validate-all-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-230/native-current230-five-gates-execution-001.json
+  accessed_at: '2026-11-03T20:30:02.867772Z'
+  support: supports
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  snapshot_sha256: 6bbb392ff804dc1f5a1158ba06efb5bde54fb2b99ee2b5a2838b751f37839f1c
+- evidence_id: root-native-lockfile
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-230/verify-corpus-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-230/native-current230-five-gates-execution-001.json
+  accessed_at: '2026-11-03T20:30:21.827483Z'
+  support: supports
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  snapshot_sha256: 254f171c7dff0f1ecbee5f47f75d2b7046143ae7fc499d9a1c08263e1c5125d8
+- evidence_id: root-native-reproduction
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-230/verify-reproduction-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-230/native-current230-five-gates-execution-001.json
+  accessed_at: '2026-11-03T20:30:55.073745Z'
+  support: supports
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  snapshot_sha256: cfc38f4e3f434e7f3651975f2cb228e5cda848476b2c53d1636d8746b794237a
+- evidence_id: root-native-queue
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-230/review-queue-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-230/native-current230-five-gates-execution-001.json
+  accessed_at: '2026-11-03T20:31:06.584669Z'
+  support: supports
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  snapshot_sha256: e50a33f59037ecc6b16b3fbc2ccf44aced4fc709d2531e0cf1a41416a1108496
+assessments:
+- assessment_id: bgc-2295-identity
+  area: identity
+  topic: Identity
+  outcome: supported
+  summary: CHEBI:17695 and MIBiG BGC0002723 version 2 share the complete key ZJMVJDFTNPZVMB-QOCMWZQCSA-N
+    and C20H32. The ChEBI bicyclo[12.1.0]pentadecatriene description is consistent
+    with the stored carbon framework. Same standardized identifiers do not establish
+    the natural relative or absolute configurations that are absent from the source
+    forms.
+  target_ids:
+  - CHEBI:17695
+  evidence_ids:
+  - bgc-2295-grounding-owner
+  - bgc-2295-source-mibig_compounds
+  - bgc-2295-query-chebi_structures
+  - bgc-2295-chemistry
+  - bgc-2295-direct-contexts
+  - bgc-2295-source-chebi_structures
+  dimensions:
+  - name: standard_inchi_key
+    value: ZJMVJDFTNPZVMB-QOCMWZQCSA-N; exact complete retained MIBiG key.
+    definition: Exact full key; no name, first-block or congener substitution.
+    evidence_ids:
+    - bgc-2295-grounding-owner
+    - bgc-2295-source-mibig_compounds
+    - bgc-2295-query-chebi_structures
+    - bgc-2295-chemistry
+    - bgc-2295-direct-contexts
+    - bgc-2295-source-chebi_structures
+  - name: grounding_scope
+    value: EXACT retained ChEBI/MIBiG key correspondence with two unresolved stereocentres.
+    definition: Local grounding fidelity is distinct from fresh natural-identity verification.
+    evidence_ids:
+    - bgc-2295-grounding-owner
+    - bgc-2295-source-mibig_compounds
+    - bgc-2295-query-chebi_structures
+    - bgc-2295-chemistry
+    - bgc-2295-direct-contexts
+    - bgc-2295-source-chebi_structures
+- assessment_id: bgc-2295-representation
+  area: representation
+  topic: Representation
+  outcome: supported
+  summary: Both saved forms are neutral C20H32 with 20 atoms, 21 bonds and one connected
+    component. The framework has a 14-carbon ring sharing an edge with a cyclopropane
+    and three saved E alkenes. Two tetrahedral centres remain unspecified in both
+    forms, consistent with stereo_complete:false. Local Bond_Cis descriptors are neighbour-order
+    dependent and do not contradict the saved E labels. All ten comparison flags and
+    the stored chirality-aware correspondence agree, while full_graph_identity_established
+    remains false. No natural stereoisomer or assay-product purity is inferred.
+  target_ids:
+  - CHEBI:17695
+  evidence_ids:
+  - bgc-2295-grounding-owner
+  - bgc-2295-chemistry
+  - bgc-2295-topology
+  - bgc-2295-diagnostic-reading
+  - bgc-2295-diagnostic-acceptance
+  - bgc-2295-structure-schema
+  - bgc-2295-stereo-method
+  dimensions:
+  - name: stereochemistry_scope
+    value: Two unspecified tetrahedral centres and three E alkenes; source false flag
+      is preserved without assigning natural configuration.
+    definition: Saved full stereo/atom/bond interpretation, not an experimental assignment
+      or new parse.
+    evidence_ids:
+    - bgc-2295-grounding-owner
+    - bgc-2295-chemistry
+    - bgc-2295-topology
+    - bgc-2295-diagnostic-reading
+    - bgc-2295-diagnostic-acceptance
+    - bgc-2295-structure-schema
+    - bgc-2295-stereo-method
+  - name: representation_correspondence
+    value: Ten true comparisons and complete stored correspondence; full_graph_identity_established
+      remains false.
+    definition: Normalized identifier agreement does not establish explicit full-graph
+      or natural-form identity.
+    evidence_ids:
+    - bgc-2295-grounding-owner
+    - bgc-2295-chemistry
+    - bgc-2295-topology
+    - bgc-2295-diagnostic-reading
+    - bgc-2295-diagnostic-acceptance
+    - bgc-2295-structure-schema
+    - bgc-2295-stereo-method
+- assessment_id: bgc-2295-origin
+  area: provenance
+  topic: Origin
+  outcome: supported
+  summary: BGC0002723 version 2 is active, questionable quality and unknown completeness.
+    Jatropha curcas (180498) remains SOURCE_ASSERTION producer; Heterologous expression
+    separately grades GPS_020388126.1:7857–18675 CLUSTER_DEMONSTRATED. The historical
+    pathway uses Ricinus communis casbene synthase and explicitly does not equate
+    it with the Jatropha locus's NP_001292945.1/XP_012066853.1 proteins. The two Ricinus
+    occurrence citations do not upgrade the Jatropha claim or supply an exact enzyme-to-locus
+    assignment.
+  target_ids:
+  - CHEBI:17695
+  evidence_ids:
+  - bgc-2295-origin-owner
+  - bgc-2295-source-mibig_compounds
+  - bgc-2295-cached-taxonomy
+  - bgc-2295-source-routes
+  - bgc-2295-direct-contexts
+  - bgc-2295-reader-DATA
+  - bgc-2295-reader-execution
+  - bgc-2295-reader-acceptance
+  - bgc-2295-mechanism-owner
+  - bgc-2295-graph-0
+  - bgc-2295-pathway-0
+  dimensions:
+  - name: taxon_scope
+    value: Jatropha curcas producer assertion is distinct from Ricinus communis occurrences
+      and enzyme-reference scope.
+    definition: Source taxa and cache labels preserve genus/species/strain scope;
+      no fresh ancestry or production inference.
+    evidence_ids:
+    - bgc-2295-origin-owner
+    - bgc-2295-source-mibig_compounds
+    - bgc-2295-cached-taxonomy
+    - bgc-2295-source-routes
+    - bgc-2295-direct-contexts
+    - bgc-2295-reader-DATA
+    - bgc-2295-reader-execution
+    - bgc-2295-reader-acceptance
+    - bgc-2295-mechanism-owner
+    - bgc-2295-graph-0
+    - bgc-2295-pathway-0
+  - name: producer_evidence
+    value: SOURCE_ASSERTION, MIBiG v2; occurrence and enzyme annotations do not upgrade
+      this grade.
+    definition: Producer evidence is assessed separately from occurrence and locus
+      support.
+    evidence_ids:
+    - bgc-2295-origin-owner
+    - bgc-2295-source-mibig_compounds
+    - bgc-2295-cached-taxonomy
+    - bgc-2295-source-routes
+    - bgc-2295-direct-contexts
+    - bgc-2295-reader-DATA
+    - bgc-2295-reader-execution
+    - bgc-2295-reader-acceptance
+    - bgc-2295-mechanism-owner
+    - bgc-2295-graph-0
+    - bgc-2295-pathway-0
+  - name: locus_evidence
+    value: BGC0002723 v2 active/questionable/unknown; Heterologous expression, CLUSTER_DEMONSTRATED,
+      without exact P59287 assignment.
+    definition: Source version/status/method/grade does not establish a complete pathway
+      or fresh primary support.
+    evidence_ids:
+    - bgc-2295-origin-owner
+    - bgc-2295-source-mibig_compounds
+    - bgc-2295-cached-taxonomy
+    - bgc-2295-source-routes
+    - bgc-2295-direct-contexts
+    - bgc-2295-reader-DATA
+    - bgc-2295-reader-execution
+    - bgc-2295-reader-acceptance
+    - bgc-2295-mechanism-owner
+    - bgc-2295-graph-0
+    - bgc-2295-pathway-0
+- assessment_id: bgc-2295-citations
+  area: evidence
+  topic: Citations
+  outcome: supported
+  summary: DOI:10.1105/tpc.114.129668 is retained at COMPOUND_EVIDENCE level for the
+    Jatropha source. The Ricinus pathway separately retains DOI:10.1006/abbi.1996.0559,
+    DOI:10.1073/pnas.91.18.8497 and historical UniProt/Rhea assertions. The four pathway
+    references repeat on each edge; that repetition is not independent validation.
+    LOTUS and the exact sibling ANTIFUNGAL row have separate scopes, without fresh
+    publication or accession verification.
+  target_ids:
+  - CHEBI:17695
+  evidence_ids:
+  - bgc-2295-origin-owner
+  - bgc-2295-occurrence-owner
+  - bgc-2295-source-mibig_compounds
+  - bgc-2295-source-lotus_occurrences
+  - bgc-2295-source-notes
+  - bgc-2295-direct-contexts
+  - bgc-2295-reader-DATA
+  - bgc-2295-reader-execution
+  - bgc-2295-reader-acceptance
+  - bgc-2295-mechanism-owner
+  - bgc-2295-graph-0
+  - bgc-2295-pathway-0
+  dimensions:
+  - name: citation_scope
+    value: Compound-level source DOI, separate historical Ricinus references and occurrence/sibling
+      evidence; no independence inference.
+    definition: Citation roles remain database assertions; no publication independence
+      or fresh source access is assumed.
+    evidence_ids:
+    - bgc-2295-origin-owner
+    - bgc-2295-occurrence-owner
+    - bgc-2295-source-mibig_compounds
+    - bgc-2295-source-lotus_occurrences
+    - bgc-2295-source-notes
+    - bgc-2295-direct-contexts
+    - bgc-2295-reader-DATA
+    - bgc-2295-reader-execution
+    - bgc-2295-reader-acceptance
+    - bgc-2295-mechanism-owner
+    - bgc-2295-graph-0
+    - bgc-2295-pathway-0
+- assessment_id: bgc-2295-bioactivity
+  area: evidence
+  topic: Occurrence and activity
+  outcome: supported
+  summary: Two LOTUS rows name Ricinus communis (3988), with DOI:10.1016/0003-9861(85)90171-7
+    and DOI:10.1104/PP.81.2.335. They are occurrence citations, not two established
+    independent production experiments. The exact AntibioticMech full-key row supports
+    the retained ANTIFUNGAL summary only at sibling-database classification scope.
+    The PubChem blank-AID '(no assay data)' sentinel is not inactivity; no quantitative
+    bioactivity objects or molecular targets are written. Empty retained target/other-occurrence
+    joins remain bounded.
+  target_ids:
+  - CHEBI:17695
+  evidence_ids:
+  - bgc-2295-occurrence-owner
+  - bgc-2295-assay-owner
+  - bgc-2295-source-routes
+  - bgc-2295-cached-taxonomy
+  - bgc-2295-query-lotus_occurrences
+  - bgc-2295-query-chebi_origins
+  - bgc-2295-query-cyanometdb_occurrences
+  - bgc-2295-query-pubchem_bioassay
+  - bgc-2295-query-bindingdb_targets
+  - bgc-2295-query-antibioticmech_inchikeys
+  - bgc-2295-direct-contexts
+  - bgc-2295-source-antibioticmech_inchikeys
+  - bgc-2295-source-pubchem_bioassay
+  dimensions:
+  - name: occurrence_scope
+    value: Two Ricinus occurrence citations, not two established producer experiments.
+    definition: Occurrence assertions are not counts of independent experiments or
+      producers.
+    evidence_ids:
+    - bgc-2295-occurrence-owner
+    - bgc-2295-assay-owner
+    - bgc-2295-source-routes
+    - bgc-2295-cached-taxonomy
+    - bgc-2295-query-lotus_occurrences
+    - bgc-2295-query-chebi_origins
+    - bgc-2295-query-cyanometdb_occurrences
+    - bgc-2295-query-pubchem_bioassay
+    - bgc-2295-query-bindingdb_targets
+    - bgc-2295-query-antibioticmech_inchikeys
+    - bgc-2295-direct-contexts
+    - bgc-2295-source-antibioticmech_inchikeys
+    - bgc-2295-source-pubchem_bioassay
+  - name: assay_target_scope
+    value: Sibling ANTIFUNGAL label only; blank-AID sentinel and no written quantitative
+      assay or target.
+    definition: Written claims and exact retained assay/target routes are bounded;
+      no global biological absence claim.
+    evidence_ids:
+    - bgc-2295-occurrence-owner
+    - bgc-2295-assay-owner
+    - bgc-2295-source-routes
+    - bgc-2295-cached-taxonomy
+    - bgc-2295-query-lotus_occurrences
+    - bgc-2295-query-chebi_origins
+    - bgc-2295-query-cyanometdb_occurrences
+    - bgc-2295-query-pubchem_bioassay
+    - bgc-2295-query-bindingdb_targets
+    - bgc-2295-query-antibioticmech_inchikeys
+    - bgc-2295-direct-contexts
+    - bgc-2295-source-antibioticmech_inchikeys
+    - bgc-2295-source-pubchem_bioassay
+- assessment_id: bgc-2295-classification
+  area: consistency
+  topic: Classification
+  outcome: supported
+  summary: TERPENE and the source Diterpenoid label are distinct from NPClassifier
+    npclassifier.gnps2.org@2026-09-07, which reports Terpenoids / Diterpenoids / Casbane
+    diterpenoids with is_glycoside:false. The C20 bicyclic hydrocarbon topology is
+    compatible at scaffold scope and has no carbohydrate residue. Neither the model
+    nor the historical mechanism resolves the unspecified stereocentres or proves
+    complete native biosynthesis.
+  target_ids:
+  - CHEBI:17695
+  evidence_ids:
+  - bgc-2295-classification-owner
+  - bgc-2295-source-mibig_compounds
+  - bgc-2295-source-npclassifier
+  - bgc-2295-chemistry
+  - bgc-2295-topology
+  - bgc-2295-diagnostic-reading
+  - bgc-2295-structure-schema
+  - bgc-2295-classification-seeder
+  dimensions:
+  - name: classification_applicability
+    value: Source TERPENE/Diterpenoid and versioned Casbane prediction are compatible
+      at scaffold scope, without stereo or pathway completion.
+    definition: Model filing labels, observed topology and source BGC classes remain
+      distinct axes.
+    evidence_ids:
+    - bgc-2295-classification-owner
+    - bgc-2295-source-mibig_compounds
+    - bgc-2295-source-npclassifier
+    - bgc-2295-chemistry
+    - bgc-2295-topology
+    - bgc-2295-diagnostic-reading
+    - bgc-2295-structure-schema
+    - bgc-2295-classification-seeder
+- assessment_id: bgc-2295-mechanism
+  area: graph
+  topic: Mechanism
+  outcome: supported
+  summary: The accepted reader preserves one BIOSYNTHESIS graph, three nodes, two
+    directed edges and one pathway step. The graph represents geranylgeranyl diphosphate
+    cyclisation by Ricinus casbene synthase and formation of casbene. The step retains
+    RHEA:14901, CHEBI:58756 → CHEBI:17695 and diphosphate CHEBI:33019 among the products.
+    Four complete evidence items are repeated on both edges. Historical recombinant-enzyme
+    and cDNA annotations support the retained partial reaction narrative; no fresh
+    physiological pathway, native-production or natural-product stereochemical proof
+    is added.
+  target_ids:
+  - CHEBI:17695
+  evidence_ids:
+  - bgc-2295-reader-DATA
+  - bgc-2295-reader-execution
+  - bgc-2295-reader-acceptance
+  - bgc-2295-mechanism-owner
+  - bgc-2295-graph-0
+  - bgc-2295-pathway-0
+  - bgc-2295-origin-owner
+  - bgc-2295-source-mibig_compounds
+  - bgc-2295-source-notes
+  - bgc-2295-diagnostic-reading
+  dimensions: []
+- assessment_id: bgc-2295-proteins
+  area: grounding
+  topic: Proteins and constructs
+  outcome: supported
+  summary: UniProtKB:P59287 is retained as the 601-aa Ricinus communis chloroplastic
+    casbene-synthase reference, with historical L32134 and EQ973781/EEF48743.1 cross-references.
+    The primary annotation describes E. coli expression and kinetic/product analysis;
+    a matching length or accession cross-reference is not a newly verified complete
+    assay construct, mature chain or historical stock. Jatropha locus proteins remain
+    separate. No new sequence comparison, accession resolution or primary experiment
+    was performed.
+  target_ids:
+  - CHEBI:17695
+  evidence_ids:
+  - bgc-2295-reader-DATA
+  - bgc-2295-reader-execution
+  - bgc-2295-reader-acceptance
+  - bgc-2295-mechanism-owner
+  - bgc-2295-graph-0
+  - bgc-2295-pathway-0
+  - bgc-2295-origin-owner
+  - bgc-2295-source-mibig_compounds
+  - bgc-2295-source-notes
+  dimensions: []
+- assessment_id: bgc-2295-completion
+  area: completeness
+  topic: Completion
+  outcome: unknown
+  summary: All twelve scientific dimensions were assessed against complete current
+    owner/history, actual canonical intake, retained source payloads and the attributed
+    complete saved molecular tables. The five original local commands passed, while
+    full QC, complete OAK authority coverage and fresh external verification remain
+    unavailable. The original required maintained reader passed with complete owner
+    and component preservation; this mechanical result does not supply fresh mechanism,
+    sequence or primary-source verification. The completed eight-table curation scan
+    found no matching exact cohort token within its declared ignore-independent scope.
+    No supported new source correction is established; existing open questions and
+    scientific limitations remain, completion is partial and native curation status
+    is unchanged.
+  target_ids:
+  - CHEBI:17695
+  evidence_ids:
+  - bgc-2295-owner
+  - bgc-2295-intake
+  - bgc-2295-intake-acceptance
+  - bgc-2295-inventory-acceptance
+  - bgc-2295-plan
+  - bgc-2295-plan-acceptance
+  - bgc-2295-source-notes
+  - bgc-2295-curation-scope
+  - bgc-2295-diagnostic-execution
+  - bgc-2295-diagnostic-acceptance
+  - bgc-2295-native-acceptance
+  - bgc-2295-review-profile
+  - bgc-2295-review-skill
+  - bgc-2295-reader-DATA
+  - bgc-2295-reader-execution
+  - bgc-2295-reader-acceptance
+  - bgc-2295-mechanism-owner
+  dimensions:
+  - name: review_completion
+    value: Partial scientific review; retained source fidelity and saved representations
+      assessed, with natural identity/primary verification and full QC/OAK unresolved.
+      No record edit or curation-status promotion.
+    definition: Completion reflects actual evidence access and check coverage; parsing
+      and gate success are not scientific proof.
+    evidence_ids:
+    - bgc-2295-owner
+    - bgc-2295-intake
+    - bgc-2295-intake-acceptance
+    - bgc-2295-inventory-acceptance
+    - bgc-2295-plan
+    - bgc-2295-plan-acceptance
+    - bgc-2295-source-notes
+    - bgc-2295-curation-scope
+    - bgc-2295-diagnostic-execution
+    - bgc-2295-diagnostic-acceptance
+    - bgc-2295-native-acceptance
+    - bgc-2295-review-profile
+    - bgc-2295-review-skill
+    - bgc-2295-reader-DATA
+    - bgc-2295-reader-execution
+    - bgc-2295-reader-acceptance
+    - bgc-2295-mechanism-owner
+findings: []
+actions: []
+limitations:
+- All evidence is retained locally; external identifiers, primary publications, taxonomy,
+  accessions and natural stereochemical assignments were not refreshed under the absolute
+  no-request instruction.
+- Full QC and complete OAK authority coverage remain unavailable. Original local gates
+  and parsed representations establish only their stated mechanical scope.
+- Empty joins concern only the exact saved predicates and snapshots. Shared loci,
+  taxa and citations do not transfer compound-specific activity, production, mechanism
+  or independent-study status.
+- The two original undefined-stereo warnings remain global and unassigned. No additional
+  molecular/YAML parse, source query or target invocation occurred during this scientific
+  authoring.
+- The review proposes no source-record, native-status or history edit; any later correction
+  belongs to the exact maintained owners listed in the accepted intake.
+- The whole selected owner was read, but scientific completion is partial because
+  full QC, complete ontology authority coverage and external source verification were
+  unavailable. No native status or history was changed.
+- The branch uses cached base ce6a5498df5be51116bd5e0c119023ee62bb5464. Fresh origin/main
+  verification and publication are deferred because the user prohibits all external
+  requests.
+notes:
+- Complete owner/history and actual intake have been read; whole-source and exact
+  companion carries are attributed in the pinned notes.
+- BGC personally interpreted all first-five molecular tables; Support personally interpreted
+  Cattleyene and the later-five tables. Raw mechanism/component readings are carried
+  by exact accepted complete-owner equality with their original team attribution.
+- ROOT owns the original collector, composer, capture, canonical intakes, chemistry
+  and the recorded reader execution receipts; Native authored the guarded reader and
+  ran the five local gates. No target was invoked during scientific authoring.
+- Saved review coverage is distinct from the native SEEDED/REVIEWED curation state.
+  Proposed actions are not performed edits.
+tags:
+- offline
+- record-review
+- batch-230
+```
