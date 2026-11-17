@@ -1,0 +1,1090 @@
+# Scientific review of nocathioamide A
+
+- Review: 20261029T044925Z-nocathioamide-a
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-29T04:10:58.474273Z
+- Finished UTC: 2026-10-29T04:49:25.962023Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+Nocathioamide A is locally consistent at an incomplete stereochemical resolution. Its producer, locus and LOTUS occurrence cite the same genome announcement, whose complete own text supplies genome context but no nocathioamide A evidence. The compound-specific citation relevance gap requires curation; it does not establish absence of the compound from the organism or a replacement structure.
+
+## Scope And Provenance
+
+Partial exact-owner/source-row and own saved-publication scientific review.
+
+Selection: One current unreviewed record selected in canonical path order; official batch91 selection and intake exactly reconcile the frozen owner and source evidence.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base ce6a5498df5be51116bd5e0c119023ee62bb5464.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-62a15176ec | data/natural_products/amino_acids_and_peptides/nocathioamide-a.yaml | generated | nocathioamide A |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-62a15176ec | Fresh corpus gate passed:3116 PATHS.tsv rows and3116 files, each at its pinned path. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-62a15176ec | Fresh reproduction gate passed:all3116 records are byte-identical to seeding from maintained inputs. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-62a15176ec | Fresh deterministic review queue produced8922 rows across12 queues; this is not scientific review coverage. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-62a15176ec | Fresh configured identifier-label gate passed:13472 canonical,657 synonym and35 exception matches;499 nonblocking mismatches and4898 no-adapter skips remain explicit. |
+| Full repository quality gate on the fresh main baseline | passed | True | naturalproductmech:mibig-62a15176ec | Fresh full quality gate passed:1024 tests passed,4 skipped,2 dependency warnings;3116 closed-schema records have zero errors; site freshness, reproduction and lockfile checks passed, alongside22 governed artifacts and15 raw inventories. |
+| Native strict target validation | passed | True | naturalproductmech:mibig-62a15176ec | The selected owner passed the documented strict validator. This establishes configured consistency only. |
+| Saved dual-encoding consistency | passed | True | naturalproductmech:mibig-62a15176ec | The two saved RDKit 2026.03.5 parses give C54H74N16O15S4 and full key CODBWSAIQSAFCS-MYZGCEDNSA-N with paired Standard InChI agreement. Both canonical SMILES equality flags are false and exact atom correspondence is empty. The original strings, component counts, stereo arrays and parse clocks remain intact; no natural-identity or whole-graph-isomorphism conclusion follows. |
+| Exact compound and molecular-form correspondence | unavailable | True | naturalproductmech:mibig-62a15176ec | The exact CODBWSAIQSAFCS-MYZGCEDNSA-N owner and retained MIBiG/LOTUS rows join consistently. The full genome announcement does not identify nocathioamide A or map this complete structure to the organism. The NPAtlas xref remains an unverified authority claim. |
+| Stereochemical and representation resolution | unavailable | True | naturalproductmech:mibig-62a15176ec | Saved SMILES leaves ten potential tetrahedral centres unspecified, consistent with stereo_complete=false. Both stored encodings generate the declared full key and Standard InChI, but the canonical strings differ and exact atom correspondence is empty. These facts do not resolve the natural stereoisomer. |
+| Producer and strain-specific support | unavailable | True | naturalproductmech:mibig-62a15176ec | The paper identifies Nocardia terpenica IFM0706 and its synonymous strain designations. It does not establish nocathioamide A production. The retained SOURCE_ASSERTION is not experimental characterization, and the citation is genome context rather than compound-specific support. |
+| Exact locus and evidence grade | unavailable | True | naturalproductmech:mibig-62a15176ec | BGC0002120 version3 is active in the retained source and asserts JABMCZ010000005.1:100790–118707 with CLUSTER_UNSTATED. The paper deposits genome project JABMCZ000000000 but does not supply that exact interval-to-nocathioamide A link. No wrong accession or absent cluster is inferred. |
+| Occurrence versus production and publication independence | unavailable | True | naturalproductmech:mibig-62a15176ec | The exact LOTUS triple CODBWSAIQSAFCS-MYZGCEDNSA-N / NCBITaxon:455432 / 10.1128/MRA.00689-20 routes a compound-occurrence assertion to the same genome announcement as PMID32816977. Its own text does not report nocathioamide occurrence. Withholding or correcting this citation would not prove universal absence from Nocardia terpenica. |
+| Computed filing and asserted classes | passed | True | naturalproductmech:mibig-62a15176ec | nocathioamide A is filed as AMINO_ACIDS_AND_PEPTIDES. NPClassifier npclassifier.gnps2.org@2026-09-07 reports pathways ['Amino acids and Peptides'], superclasses ['Oligopeptides'], classes ['Cyclic peptides', 'RiPPs-Amatoxins and Phallotoxins', 'RiPPs-Lanthipeptides'] and is_glycoside=false; these reproduce the retained row. MIBiG BGC classes ['RIBOSOMAL'] are separate source assertions, not a curator-defined chemical identity. |
+| Pure-compound activity and optional mechanism scope | unavailable | True | naturalproductmech:mibig-62a15176ec | The own article discusses nocavionin and genome context, not nocathioamide A bioactivity. No assay, target, pathway or graph is asserted in this owner; a related peptide or species-level property is not transferred. |
+| Source-specific citation applicability | failed | True | naturalproductmech:mibig-62a15176ec | Complete own PMC7441235 front/body/back text contains no nocathioamide mention and discusses nocavionin instead. The verified PMID/DOI are two identifiers for one paper. This is a confirmed source-specific relevance gap at the cited compound occurrence and producer/locus placements, not a global literature absence or proof that the retained biological assertions are false. |
+| Source versions history and ownership | passed | True | naturalproductmech:mibig-62a15176ec | MIBiG BGC0002120:1 version3, active, quality=questionable, completeness=complete, reference_basis=ENTRY; NPClassifier npclassifier.gnps2.org@2026-09-07; 3 original history entries remain unchanged. All nine source arrays and exact row guards were checked. Retrieval, saved computation, original local reads and later scientific reading retain separate clocks. |
+
+## Scientific And Domain Assessments
+
+### Saved dual-encoding consistency
+
+consistency: supported. Targets: naturalproductmech:mibig-62a15176ec.
+
+The two saved RDKit 2026.03.5 parses give C54H74N16O15S4 and full key CODBWSAIQSAFCS-MYZGCEDNSA-N with paired Standard InChI agreement. Both canonical SMILES equality flags are false and exact atom correspondence is empty. The original strings, component counts, stereo arrays and parse clocks remain intact; no natural-identity or whole-graph-isomorphism conclusion follows.
+
+### Exact compound and molecular-form correspondence
+
+identity: unknown. Targets: naturalproductmech:mibig-62a15176ec.
+
+The exact CODBWSAIQSAFCS-MYZGCEDNSA-N owner and retained MIBiG/LOTUS rows join consistently. The full genome announcement does not identify nocathioamide A or map this complete structure to the organism. The NPAtlas xref remains an unverified authority claim.
+
+### Stereochemical and representation resolution
+
+identity: unknown. Targets: naturalproductmech:mibig-62a15176ec.
+
+Saved SMILES leaves ten potential tetrahedral centres unspecified, consistent with stereo_complete=false. Both stored encodings generate the declared full key and Standard InChI, but the canonical strings differ and exact atom correspondence is empty. These facts do not resolve the natural stereoisomer.
+
+### Producer and strain-specific support
+
+evidence: unknown. Targets: naturalproductmech:mibig-62a15176ec.
+
+The paper identifies Nocardia terpenica IFM0706 and its synonymous strain designations. It does not establish nocathioamide A production. The retained SOURCE_ASSERTION is not experimental characterization, and the citation is genome context rather than compound-specific support.
+
+### Exact locus and evidence grade
+
+evidence: unknown. Targets: naturalproductmech:mibig-62a15176ec.
+
+BGC0002120 version3 is active in the retained source and asserts JABMCZ010000005.1:100790–118707 with CLUSTER_UNSTATED. The paper deposits genome project JABMCZ000000000 but does not supply that exact interval-to-nocathioamide A link. No wrong accession or absent cluster is inferred.
+
+### Occurrence versus production and publication independence
+
+evidence: unknown. Targets: naturalproductmech:mibig-62a15176ec.
+
+The exact LOTUS triple CODBWSAIQSAFCS-MYZGCEDNSA-N / NCBITaxon:455432 / 10.1128/MRA.00689-20 routes a compound-occurrence assertion to the same genome announcement as PMID32816977. Its own text does not report nocathioamide occurrence. Withholding or correcting this citation would not prove universal absence from Nocardia terpenica.
+
+### Computed filing and asserted classes
+
+consistency: supported. Targets: naturalproductmech:mibig-62a15176ec.
+
+nocathioamide A is filed as AMINO_ACIDS_AND_PEPTIDES. NPClassifier npclassifier.gnps2.org@2026-09-07 reports pathways ['Amino acids and Peptides'], superclasses ['Oligopeptides'], classes ['Cyclic peptides', 'RiPPs-Amatoxins and Phallotoxins', 'RiPPs-Lanthipeptides'] and is_glycoside=false; these reproduce the retained row. MIBiG BGC classes ['RIBOSOMAL'] are separate source assertions, not a curator-defined chemical identity.
+
+### Pure-compound activity and optional mechanism scope
+
+evidence: unknown. Targets: naturalproductmech:mibig-62a15176ec.
+
+The own article discusses nocavionin and genome context, not nocathioamide A bioactivity. No assay, target, pathway or graph is asserted in this owner; a related peptide or species-level property is not transferred.
+
+### Source-specific citation applicability
+
+evidence: concern. Targets: naturalproductmech:mibig-62a15176ec.
+
+Complete own PMC7441235 front/body/back text contains no nocathioamide mention and discusses nocavionin instead. The verified PMID/DOI are two identifiers for one paper. This is a confirmed source-specific relevance gap at the cited compound occurrence and producer/locus placements, not a global literature absence or proof that the retained biological assertions are false.
+
+### Source versions history and ownership
+
+provenance: supported. Targets: naturalproductmech:mibig-62a15176ec.
+
+MIBiG BGC0002120:1 version3, active, quality=questionable, completeness=complete, reference_basis=ENTRY; NPClassifier npclassifier.gnps2.org@2026-09-07; 3 original history entries remain unchanged. All nine source arrays and exact row guards were checked. Retrieval, saved computation, original local reads and later scientific reading retain separate clocks.
+
+## Findings
+
+### F907-CITATION-RELEVANCE: Genome announcement does not support the compound-specific citation placements
+
+major / open / confirmed; issue key: nocathioamide-a-genome-announcement-citation-scope.
+
+Complete own PMC7441235 front/body/back text contains no nocathioamide mention and discusses nocavionin instead. The verified PMID/DOI are two identifiers for one paper. This is a confirmed source-specific relevance gap at the cited compound occurrence and producer/locus placements, not a global literature absence or proof that the retained biological assertions are false. The precise affected claims are the exact LOTUS occurrence triple and the MIBiG producer/locus citation routing. Conservative source grades do not make this paper compound-specific evidence. The finding does not assert a false organism, absent compound, incorrect structure or replacement citation.
+
+## Recommended Actions And Acceptance Checks
+
+### A907-RECONCILE-CITATION-SCOPE
+
+Reconcile BGC0002120:1 claim citation routing and the exact LOTUS triple through maintained corrections. A replacement reference requires inspected compound-specific evidence; without one, document the source limitation and consider the exact unsupported LOTUS triple for guarded exclusion. Preserve chemistry, source grades and genome context. Record the exact genome-context-only limitation in curator-owned discussion. Do not alter generated owner facts directly or invent an inspected replacement.
+
+- Preserve the exact complete BGC0002120:1 row digest and LOTUS key CODBWSAIQSAFCS-MYZGCEDNSA-N / NCBITaxon:455432 / literal DOI10.1128/MRA.00689-20 row digest, original source versions and retrieval clocks.
+- Use curation/mibig_claim_references.tsv only if an inspected stable reference supports the selected producer/locus claim. Independently adjudicate the exact LOTUS triple for curation/lotus_occurrence_exclusions.tsv; withholding this triple is not global absence.
+- For a later authorized maintained-input correction, perform documented canary seeding, just validate-strict data/natural_products/amino_acids_and_peptides/nocathioamide-a.yaml, just verify-reproduction, just verify-corpus --summary and full QC. Preserve raw inventories, chemistry and evidence grades unless separately reviewed; no commands are run by this proposal.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| SCI907-LOCAL | /private/tmp/npm-record-reviews-20261021/data/natural_products/amino_acids_and_peptides/nocathioamide-a.yaml; whole owner; chemical_structure; producer_organisms; biosynthetic_gene_clusters; occurrences; np_classification; curation_history | context_only | The nocathioamide A owner retains CODBWSAIQSAFCS-MYZGCEDNSA-N, NATURAL_PRODUCT, MINTED and SEEDED. Its producer is Nocardia terpenica IFM 0706 (NCBITaxon:455432) at SOURCE_ASSERTION, separate from locus mibig:BGC0002120 version3 at CLUSTER_UNSTATED. It retains 1 occurrence objects and 3 history entries. No native status or claim is changed. |
+| SCI907-ROWS | /private/tmp/npm-review-work/shared-next-batch091-tentative/native-tentative91-owner-source-reconnaissance-DATA-001.json; /records/6/retained_rows; /records/6/supplemental_rows; /records/6/row_guards | supports | All nine exact-key retained/supplemental arrays are joined. Seven retained arrays contain 3 rows; both supplemental arrays are empty. MIBiG BGC0002120 compound_index1 version3 is active, quality=questionable, completeness=complete, and reference_basis=ENTRY. These are source descriptors, not independent biological proof. |
+| SCI907-ENCODINGS | /private/tmp/npm-review-work/shared-next-batch091-tentative/source-science-preparation/bgc-tentative91-ten-owner-dual-encoding-results-001.json; /records/6/smiles; /records/6/inchi; /records/6/comparisons; /records/6/stereo_counts; /records/6/atom_correspondence | supports | The two saved RDKit 2026.03.5 parses give C54H74N16O15S4 and full key CODBWSAIQSAFCS-MYZGCEDNSA-N with paired Standard InChI agreement. Both canonical SMILES equality flags are false and exact atom correspondence is empty. The original strings, component counts, stereo arrays and parse clocks remain intact; no natural-identity or whole-graph-isomorphism conclusion follows. |
+| SCI907-PMID | /private/tmp/npm-review-work/shared-next-batch091-tentative/literature-preparation/public-metadata-seven-PubMed-001/pmid-32816977.xml; ./PubmedArticle/MedlineCitation/PMID; ./PubmedArticle/MedlineCitation/Article/ArticleTitle; ./PubmedArticle/MedlineCitation/Article/Abstract; ./PubmedArticle/PubmedData/ArticleIdList | context_only | Own PMID:32816977 title/abstract and own ArticleIdList were read. The paper identifies Nocardia terpenica IFM0706. It does not establish nocathioamide A production. The retained SOURCE_ASSERTION is not experimental characterization, and the citation is genome context rather than compound-specific support. Foreign bibliography identifiers remain references to other works. |
+| SCI907-PMC | /private/tmp/npm-review-work/shared-next-batch091-tentative/literature-preparation/public-primary-five-own-PMC-001/pmc7441235.xml; ./article/front/article-meta; ./article/body; ./article/back | context_only | The saved response contains complete own article text. Complete own PMC7441235 front/body/back text contains no nocathioamide mention and discusses nocavionin instead. The verified PMID/DOI are two identifiers for one paper. This is a confirmed source-specific relevance gap at the cited compound occurrence and producer/locus placements, not a global literature absence or proof that the retained biological assertions are false. |
+| SCI907-PMC-ACCESS | /private/tmp/npm-review-work/shared-next-batch091-tentative/literature-preparation/public-primary-five-own-PMC-001/pmc7441235.xml.access.json; /http_status; /identity; /success; /body; /started_at; /finished_at | supports | Original HTTP200 response: own frontmatter matched, article_body_present=true, success=true. Availability is separate from scientific evidence and later reading. |
+| SCI907-STEREO-METHOD | /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py; _chemistry; FindMolChiralCenters(includeUnassigned=True,useLegacyImplementation=False); stereo_complete | supports | The maintained extractor derives stereo_complete from unassigned tetrahedral centres. The flag does not attest to complete double-bond geometry, tautomer identity or experimentally established natural stereochemistry. |
+| SCI907-PROFILE | /private/tmp/npm-record-reviews-20261021/docs/record-review-profile.md; Native questions and ownership; REVIEWED prerequisites; four native dimensions | supports | Exact structure/origin, producer versus occurrence, active source version and evidence tier are distinct review dimensions. Partial source review does not promote native REVIEWED or a stronger biosynthetic grade. |
+| SCI907-CURATION | /private/tmp/npm-record-reviews-20261021/docs/CURATION.md; MIBiG claim-specific reference corrections; LOTUS occurrence exclusions; maintained input ownership | supports | Seeded citation corrections belong to exact maintained compound-row or occurrence-triple tables with source-row guards. Replacement references need inspected support. Curator-owned discussion may record unresolved evidence; regeneration, strict validation, reproduction and corpus checks follow a later authorized change. |
+
+## Limits And Additional Notes
+
+- Partial scientific coverage of the exact owner, all retained and supplemental source arrays and the named saved publications; full-owner scientific completeness remains unverified.
+- Original evidence timestamps preserve local byte reading, HTTP retrieval or saved parse clocks. Later scientific reading is recorded separately; a failed source-access route is not a canonical validation failure.
+- Current accepted source history has22 closed events,128 event leaves and137 held leaves; the six contextual PMC100110 leaves remain separate. No held route is retried and unavailable body content is not treated as a scientific negative result.
+- External chemical/protein/taxonomy identifiers and accession versions are retained assertions except where an exact inspected own-source anchor is stated. No graph, assay, protein example or natural stereostructure is inferred from family membership.
+- Reconcile BGC0002120:1 claim citation routing and the exact LOTUS triple through maintained corrections. A replacement reference requires inspected compound-specific evidence; without one, document the source limitation and consider the exact unsupported LOTUS triple for guarded exclusion. Preserve chemistry, source grades and genome context.
+- Only the saved own article text was read; linked figures, spectra, supplementary files and foreign cited publications were not independently inspected.
+- Source seeding retains five unresolved assay-organism targets (one distinct Human label),42 withheld nonspecific producer claims and161 merged-taxonomy rewrites.
+- Queue diagnostics rank deterministic curation questions and do not prove literature support or review completion.
+- 499 configured nonblocking mismatches remain warnings;4898 pairs lacked an adapter.35 exception and657 synonym matches retain their configured scope; no fresh ontology authority retrieval is asserted.
+- Four tests were skipped; two dependency deprecations concern LinkML dataclass and Pandas copy-on-write behavior. Source seeding warnings and configured gate boundaries are retained in the full log.
+- Native baseline gates establish configured consistency, not independent biological production, exact stereochemistry or primary-source adequacy.
+- Configured ontology caches and scientific/test skips retain their original scope; a new command execution is not a fresh retrieval of every authority.
+- All tracked link objects are hashed as link-target bytes without dereferencing; canonical record source intake remains regular-file-only and uses the separately reviewed AGENTS.md context projection.
+- The whole local owner and retained source rows were read. Full-owner scientific verification remains false; scientific_review denotes the bounded scientific interpretation in this report.
+- Original owner/source reading, two-encoding computation, primary-text reading, HTTP retrieval and later metadata reading retain separate clocks. Official intake separately computed SMILES facts.
+- No scientific record, maintained input or native curation status was changed. Any findings and actions record ROOT-adopted proposed work; exact-source limitations and unavailable checks remain explicit.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261029T044925Z-nocathioamide-a
+title: Scientific review of nocathioamide A
+started_at: '2026-10-29T04:10:58.474273Z'
+finished_at: '2026-10-29T04:49:25.962023Z'
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: Nocathioamide A is locally consistent at an incomplete stereochemical resolution.
+  Its producer, locus and LOTUS occurrence cite the same genome announcement, whose
+  complete own text supplies genome context but no nocathioamide A evidence. The compound-specific
+  citation relevance gap requires curation; it does not establish absence of the compound
+  from the organism or a replacement structure.
+source:
+  git_revision: ce6a5498df5be51116bd5e0c119023ee62bb5464
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: AGENTS.md
+    sha256: 69e4037f8dc97d4b00bb7bb83b41ceca025f6ef578d5c0bf8086f3400becde0b
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/nocathioamide-a.yaml
+    sha256: f717b6368c11497ea9bcbc8a5b1a47988fd8413043f218c009e1d5de2165b5d6
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+targets:
+- target_id: naturalproductmech:mibig-62a15176ec
+  path: data/natural_products/amino_acids_and_peptides/nocathioamide-a.yaml
+  label: nocathioamide A
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+scope:
+  description: Partial exact-owner/source-row and own saved-publication scientific
+    review.
+  selection: One current unreviewed record selected in canonical path order; official
+    batch91 selection and intake exactly reconcile the frozen owner and source evidence.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-62a15176ec
+  exclusions:
+  - target: complete natural stereostructure verification
+    reason: This claim is outside the inspected source scope; the record-specific
+      evidence and limitations state what remains unresolved.
+  - target: unread own publications and supplements
+    reason: This claim is outside the inspected source scope; the record-specific
+      evidence and limitations state what remains unresolved.
+  - target: unverified external identifier mappings
+    reason: This claim is outside the inspected source scope; the record-specific
+      evidence and limitations state what remains unresolved.
+checks:
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: Fresh corpus gate passed:3116 PATHS.tsv rows and3116 files, each at its
+    pinned path.
+  command: env -u PYTEST_ADDOPTS UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache
+    RECORD_REVIEW_BASE=ce6a5498df5be51116bd5e0c119023ee62bb5464 PYTHONDONTWRITEBYTECODE=1
+    just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: Fresh batch087 command on ce6a5498df5be51116bd5e0c119023ee62bb5464 in
+    /private/tmp/npm-record-reviews-20261021. Started 2026-10-28T21:33:09.338684Z;
+    finished 2026-10-28T21:33:29.829334Z; ROOT observed at 2026-10-28T21:38:57.679080Z.
+    Original receipt /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/verify-corpus.json;
+    transcript /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/verify-corpus.log.
+    PYTEST_ADDOPTS was explicitly unset. Full tracked byte/mode capture and recheck
+    occurred separately after these gates; no pre-gate capture is inferred. Warnings,
+    configured exceptions and skips remain in the original transcript.
+  target_ids:
+  - naturalproductmech:mibig-62a15176ec
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: Fresh reproduction gate passed:all3116 records are byte-identical to seeding
+    from maintained inputs.
+  command: env -u PYTEST_ADDOPTS UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache
+    RECORD_REVIEW_BASE=ce6a5498df5be51116bd5e0c119023ee62bb5464 PYTHONDONTWRITEBYTECODE=1
+    just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: Fresh batch087 command on ce6a5498df5be51116bd5e0c119023ee62bb5464 in
+    /private/tmp/npm-record-reviews-20261021. Started 2026-10-28T21:33:09.338638Z;
+    finished 2026-10-28T21:33:44.898261Z; ROOT observed at 2026-10-28T21:38:57.679080Z.
+    Original receipt /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/verify-reproduction.json;
+    transcript /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/verify-reproduction.log.
+    PYTEST_ADDOPTS was explicitly unset. Full tracked byte/mode capture and recheck
+    occurred separately after these gates; no pre-gate capture is inferred. Warnings,
+    configured exceptions and skips remain in the original transcript.
+  target_ids:
+  - naturalproductmech:mibig-62a15176ec
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: Fresh deterministic review queue produced8922 rows across12 queues; this
+    is not scientific review coverage.
+  command: env -u PYTEST_ADDOPTS UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache
+    RECORD_REVIEW_BASE=ce6a5498df5be51116bd5e0c119023ee62bb5464 PYTHONDONTWRITEBYTECODE=1
+    just review-queue --tsv /private/tmp/npm-review-queue-batch-087-freshce6a5498-001.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: Fresh batch087 command on ce6a5498df5be51116bd5e0c119023ee62bb5464 in
+    /private/tmp/npm-record-reviews-20261021. Started 2026-10-28T21:33:09.340163Z;
+    finished 2026-10-28T21:33:21.471992Z; ROOT observed at 2026-10-28T21:38:57.679080Z.
+    Original receipt /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/review-queue.json;
+    transcript /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/review-queue.log.
+    PYTEST_ADDOPTS was explicitly unset. Full tracked byte/mode capture and recheck
+    occurred separately after these gates; no pre-gate capture is inferred. Warnings,
+    configured exceptions and skips remain in the original transcript.
+  target_ids:
+  - naturalproductmech:mibig-62a15176ec
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: Fresh configured identifier-label gate passed:13472 canonical,657 synonym
+    and35 exception matches;499 nonblocking mismatches and4898 no-adapter skips remain
+    explicit.
+  command: env -u PYTEST_ADDOPTS UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache
+    RECORD_REVIEW_BASE=ce6a5498df5be51116bd5e0c119023ee62bb5464 PYTHONDONTWRITEBYTECODE=1
+    just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: Fresh batch087 command on ce6a5498df5be51116bd5e0c119023ee62bb5464 in
+    /private/tmp/npm-record-reviews-20261021. Started 2026-10-28T21:33:09.340947Z;
+    finished 2026-10-28T21:33:45.063118Z; ROOT observed at 2026-10-28T21:38:57.679080Z.
+    Original receipt /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/validate-products.json;
+    transcript /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/validate-products.log.
+    PYTEST_ADDOPTS was explicitly unset. Full tracked byte/mode capture and recheck
+    occurred separately after these gates; no pre-gate capture is inferred. Warnings,
+    configured exceptions and skips remain in the original transcript.
+  target_ids:
+  - naturalproductmech:mibig-62a15176ec
+- check_id: shared-qc
+  name: Full repository quality gate on the fresh main baseline
+  status: passed
+  required: true
+  summary: Fresh full quality gate passed:1024 tests passed,4 skipped,2 dependency
+    warnings;3116 closed-schema records have zero errors; site freshness, reproduction
+    and lockfile checks passed, alongside22 governed artifacts and15 raw inventories.
+  command: env -u PYTEST_ADDOPTS UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache
+    RECORD_REVIEW_BASE=ce6a5498df5be51116bd5e0c119023ee62bb5464 PYTHONDONTWRITEBYTECODE=1
+    just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: Fresh batch087 command on ce6a5498df5be51116bd5e0c119023ee62bb5464 in
+    /private/tmp/npm-record-reviews-20261021. Started 2026-10-28T21:33:14.328372Z;
+    finished 2026-10-28T21:38:03.336464Z; ROOT observed at 2026-10-28T21:38:57.679080Z.
+    Original receipt /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/qc.json;
+    transcript /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/qc.log.
+    PYTEST_ADDOPTS was explicitly unset. Full tracked byte/mode capture and recheck
+    occurred separately after these gates; no pre-gate capture is inferred. Warnings,
+    configured exceptions and skips remain in the original transcript.
+  target_ids:
+  - naturalproductmech:mibig-62a15176ec
+- check_id: C-STRICT
+  name: Native strict target validation
+  status: passed
+  required: true
+  summary: The selected owner passed the documented strict validator. This establishes
+    configured consistency only.
+  command: just validate-strict data/natural_products/amino_acids_and_peptides/nocathioamide-a.yaml
+    --out /private/tmp/npm-review-work/907/strict.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Actual intake execution finished 2026-10-29T04:10:59.816894Z. Original
+    receipt: /private/tmp/npm-review-work/907/strict-receipt.json.'
+  target_ids:
+  - naturalproductmech:mibig-62a15176ec
+- check_id: SCI907-ENCODINGS
+  name: Saved dual-encoding consistency
+  status: passed
+  required: true
+  summary: The two saved RDKit 2026.03.5 parses give C54H74N16O15S4 and full key CODBWSAIQSAFCS-MYZGCEDNSA-N
+    with paired Standard InChI agreement. Both canonical SMILES equality flags are
+    false and exact atom correspondence is empty. The original strings, component
+    counts, stereo arrays and parse clocks remain intact; no natural-identity or whole-graph-isomorphism
+    conclusion follows.
+  target_ids:
+  - naturalproductmech:mibig-62a15176ec
+  evidence_ids:
+  - SCI907-LOCAL
+  - SCI907-ENCODINGS
+  scope_note: Assessment of the named saved evidence and exact current owner; no new
+    chemical computation or canonical command.
+- check_id: SCI907-IDENTITY
+  name: Exact compound and molecular-form correspondence
+  status: unavailable
+  required: true
+  summary: The exact CODBWSAIQSAFCS-MYZGCEDNSA-N owner and retained MIBiG/LOTUS rows
+    join consistently. The full genome announcement does not identify nocathioamide
+    A or map this complete structure to the organism. The NPAtlas xref remains an
+    unverified authority claim.
+  target_ids:
+  - naturalproductmech:mibig-62a15176ec
+  evidence_ids:
+  - SCI907-LOCAL
+  - SCI907-ROWS
+  - SCI907-ENCODINGS
+  - SCI907-PMID
+  - SCI907-PMC
+  scope_note: Assessment of the named saved evidence and exact current owner; no new
+    chemical computation or canonical command.
+- check_id: SCI907-STEREO
+  name: Stereochemical and representation resolution
+  status: unavailable
+  required: true
+  summary: Saved SMILES leaves ten potential tetrahedral centres unspecified, consistent
+    with stereo_complete=false. Both stored encodings generate the declared full key
+    and Standard InChI, but the canonical strings differ and exact atom correspondence
+    is empty. These facts do not resolve the natural stereoisomer.
+  target_ids:
+  - naturalproductmech:mibig-62a15176ec
+  evidence_ids:
+  - SCI907-LOCAL
+  - SCI907-ENCODINGS
+  - SCI907-STEREO-METHOD
+  scope_note: Assessment of the named saved evidence and exact current owner; no new
+    chemical computation or canonical command.
+- check_id: SCI907-PRODUCER
+  name: Producer and strain-specific support
+  status: unavailable
+  required: true
+  summary: The paper identifies Nocardia terpenica IFM0706 and its synonymous strain
+    designations. It does not establish nocathioamide A production. The retained SOURCE_ASSERTION
+    is not experimental characterization, and the citation is genome context rather
+    than compound-specific support.
+  target_ids:
+  - naturalproductmech:mibig-62a15176ec
+  evidence_ids:
+  - SCI907-LOCAL
+  - SCI907-ROWS
+  - SCI907-PMID
+  - SCI907-PMC
+  scope_note: Assessment of the named saved evidence and exact current owner; no new
+    chemical computation or canonical command.
+- check_id: SCI907-LOCUS
+  name: Exact locus and evidence grade
+  status: unavailable
+  required: true
+  summary: BGC0002120 version3 is active in the retained source and asserts JABMCZ010000005.1:100790–118707
+    with CLUSTER_UNSTATED. The paper deposits genome project JABMCZ000000000 but does
+    not supply that exact interval-to-nocathioamide A link. No wrong accession or
+    absent cluster is inferred.
+  target_ids:
+  - naturalproductmech:mibig-62a15176ec
+  evidence_ids:
+  - SCI907-LOCAL
+  - SCI907-ROWS
+  - SCI907-PMID
+  - SCI907-PMC
+  scope_note: Assessment of the named saved evidence and exact current owner; no new
+    chemical computation or canonical command.
+- check_id: SCI907-OCCURRENCE
+  name: Occurrence versus production and publication independence
+  status: unavailable
+  required: true
+  summary: The exact LOTUS triple CODBWSAIQSAFCS-MYZGCEDNSA-N / NCBITaxon:455432 /
+    10.1128/MRA.00689-20 routes a compound-occurrence assertion to the same genome
+    announcement as PMID32816977. Its own text does not report nocathioamide occurrence.
+    Withholding or correcting this citation would not prove universal absence from
+    Nocardia terpenica.
+  target_ids:
+  - naturalproductmech:mibig-62a15176ec
+  evidence_ids:
+  - SCI907-LOCAL
+  - SCI907-ROWS
+  - SCI907-PMID
+  - SCI907-PMC
+  scope_note: Assessment of the named saved evidence and exact current owner; no new
+    chemical computation or canonical command.
+- check_id: SCI907-FILING
+  name: Computed filing and asserted classes
+  status: passed
+  required: true
+  summary: nocathioamide A is filed as AMINO_ACIDS_AND_PEPTIDES. NPClassifier npclassifier.gnps2.org@2026-09-07
+    reports pathways ['Amino acids and Peptides'], superclasses ['Oligopeptides'],
+    classes ['Cyclic peptides', 'RiPPs-Amatoxins and Phallotoxins', 'RiPPs-Lanthipeptides']
+    and is_glycoside=false; these reproduce the retained row. MIBiG BGC classes ['RIBOSOMAL']
+    are separate source assertions, not a curator-defined chemical identity.
+  target_ids:
+  - naturalproductmech:mibig-62a15176ec
+  evidence_ids:
+  - SCI907-LOCAL
+  - SCI907-ROWS
+  scope_note: Assessment of the named saved evidence and exact current owner; no new
+    chemical computation or canonical command.
+- check_id: SCI907-ACTIVITY
+  name: Pure-compound activity and optional mechanism scope
+  status: unavailable
+  required: true
+  summary: The own article discusses nocavionin and genome context, not nocathioamide
+    A bioactivity. No assay, target, pathway or graph is asserted in this owner; a
+    related peptide or species-level property is not transferred.
+  target_ids:
+  - naturalproductmech:mibig-62a15176ec
+  evidence_ids:
+  - SCI907-LOCAL
+  - SCI907-ROWS
+  - SCI907-PMID
+  - SCI907-PMC
+  scope_note: Assessment of the named saved evidence and exact current owner; no new
+    chemical computation or canonical command.
+- check_id: SCI907-REFERENCE
+  name: Source-specific citation applicability
+  status: failed
+  required: true
+  summary: Complete own PMC7441235 front/body/back text contains no nocathioamide
+    mention and discusses nocavionin instead. The verified PMID/DOI are two identifiers
+    for one paper. This is a confirmed source-specific relevance gap at the cited
+    compound occurrence and producer/locus placements, not a global literature absence
+    or proof that the retained biological assertions are false.
+  target_ids:
+  - naturalproductmech:mibig-62a15176ec
+  evidence_ids:
+  - SCI907-LOCAL
+  - SCI907-ROWS
+  - SCI907-PMID
+  - SCI907-PMC
+  - SCI907-PMC-ACCESS
+  scope_note: Assessment of the named saved evidence and exact current owner; no new
+    chemical computation or canonical command.
+- check_id: SCI907-PROVENANCE
+  name: Source versions history and ownership
+  status: passed
+  required: true
+  summary: MIBiG BGC0002120:1 version3, active, quality=questionable, completeness=complete,
+    reference_basis=ENTRY; NPClassifier npclassifier.gnps2.org@2026-09-07; 3 original
+    history entries remain unchanged. All nine source arrays and exact row guards
+    were checked. Retrieval, saved computation, original local reads and later scientific
+    reading retain separate clocks.
+  target_ids:
+  - naturalproductmech:mibig-62a15176ec
+  evidence_ids:
+  - SCI907-LOCAL
+  - SCI907-ROWS
+  - SCI907-PROFILE
+  scope_note: Assessment of the named saved evidence and exact current owner; no new
+    chemical computation or canonical command.
+evidence:
+- evidence_id: SCI907-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/amino_acids_and_peptides/nocathioamide-a.yaml
+  locator: whole owner; chemical_structure; producer_organisms; biosynthetic_gene_clusters;
+    occurrences; np_classification; curation_history
+  accessed_at: '2026-10-29T03:02:56.705795Z'
+  snapshot_sha256: f717b6368c11497ea9bcbc8a5b1a47988fd8413043f218c009e1d5de2165b5d6
+  support: context_only
+  summary: The nocathioamide A owner retains CODBWSAIQSAFCS-MYZGCEDNSA-N, NATURAL_PRODUCT,
+    MINTED and SEEDED. Its producer is Nocardia terpenica IFM 0706 (NCBITaxon:455432)
+    at SOURCE_ASSERTION, separate from locus mibig:BGC0002120 version3 at CLUSTER_UNSTATED.
+    It retains 1 occurrence objects and 3 history entries. No native status or claim
+    is changed.
+- evidence_id: SCI907-ROWS
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch091-tentative/native-tentative91-owner-source-reconnaissance-DATA-001.json
+  locator: /records/6/retained_rows; /records/6/supplemental_rows; /records/6/row_guards
+  accessed_at: '2026-10-29T03:02:56.705795Z'
+  snapshot_sha256: 2dc812dee4f29dd8df8f3dd541f725314e9c32b779ac4257210490aac1b0f044
+  support: supports
+  summary: All nine exact-key retained/supplemental arrays are joined. Seven retained
+    arrays contain 3 rows; both supplemental arrays are empty. MIBiG BGC0002120 compound_index1
+    version3 is active, quality=questionable, completeness=complete, and reference_basis=ENTRY.
+    These are source descriptors, not independent biological proof.
+- evidence_id: SCI907-ENCODINGS
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch091-tentative/source-science-preparation/bgc-tentative91-ten-owner-dual-encoding-results-001.json
+  locator: /records/6/smiles; /records/6/inchi; /records/6/comparisons; /records/6/stereo_counts;
+    /records/6/atom_correspondence
+  accessed_at: '2026-10-29T03:12:01.165707Z'
+  snapshot_sha256: f79c9a2782c67d0fdb25cbf52a77831408cf0c87df45a20ed9c672f30d97cf17
+  support: supports
+  summary: The two saved RDKit 2026.03.5 parses give C54H74N16O15S4 and full key CODBWSAIQSAFCS-MYZGCEDNSA-N
+    with paired Standard InChI agreement. Both canonical SMILES equality flags are
+    false and exact atom correspondence is empty. The original strings, component
+    counts, stereo arrays and parse clocks remain intact; no natural-identity or whole-graph-isomorphism
+    conclusion follows.
+- evidence_id: SCI907-PMID
+  kind: primary_source
+  reference: /private/tmp/npm-review-work/shared-next-batch091-tentative/literature-preparation/public-metadata-seven-PubMed-001/pmid-32816977.xml
+  locator: ./PubmedArticle/MedlineCitation/PMID; ./PubmedArticle/MedlineCitation/Article/ArticleTitle;
+    ./PubmedArticle/MedlineCitation/Article/Abstract; ./PubmedArticle/PubmedData/ArticleIdList
+  accessed_at: '2026-10-29T03:41:26.993756Z'
+  snapshot_sha256: 92f5532bf83171291561b945d0cfac2a89b68fdf52736ab6e7dcb10ef0fc5cc2
+  support: context_only
+  summary: Own PMID:32816977 title/abstract and own ArticleIdList were read. The paper
+    identifies Nocardia terpenica IFM0706. It does not establish nocathioamide A production.
+    The retained SOURCE_ASSERTION is not experimental characterization, and the citation
+    is genome context rather than compound-specific support. Foreign bibliography
+    identifiers remain references to other works.
+- evidence_id: SCI907-PMC
+  kind: primary_source
+  reference: /private/tmp/npm-review-work/shared-next-batch091-tentative/literature-preparation/public-primary-five-own-PMC-001/pmc7441235.xml
+  locator: ./article/front/article-meta; ./article/body; ./article/back
+  accessed_at: '2026-10-29T04:04:03.154562Z'
+  snapshot_sha256: b16121087c84b353bc01692733ac07c2508a8d6ac7f69ae451e99ab2b1c9ea88
+  support: context_only
+  summary: The saved response contains complete own article text. Complete own PMC7441235
+    front/body/back text contains no nocathioamide mention and discusses nocavionin
+    instead. The verified PMID/DOI are two identifiers for one paper. This is a confirmed
+    source-specific relevance gap at the cited compound occurrence and producer/locus
+    placements, not a global literature absence or proof that the retained biological
+    assertions are false.
+- evidence_id: SCI907-PMC-ACCESS
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next-batch091-tentative/literature-preparation/public-primary-five-own-PMC-001/pmc7441235.xml.access.json
+  locator: /http_status; /identity; /success; /body; /started_at; /finished_at
+  accessed_at: '2026-10-29T04:04:03.154562Z'
+  snapshot_sha256: b45c4ec009af239d32bac131c92a2cf172980dc7be32f4ba6cefc78cf8daee31
+  support: supports
+  summary: 'Original HTTP200 response: own frontmatter matched, article_body_present=true,
+    success=true. Availability is separate from scientific evidence and later reading.'
+  search_scope: One original initial request to https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=7441235&retmode=xml
+    from 2026-10-29T04:04:02.745127Z to 2026-10-29T04:04:03.154562Z, with its exact
+    saved 37296-byte XML and access receipt. This is a single-route availability observation,
+    not a global literature search; no retry, alternate route or later-reading clock
+    is represented.
+- evidence_id: SCI907-STEREO-METHOD
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py
+  locator: _chemistry; FindMolChiralCenters(includeUnassigned=True,useLegacyImplementation=False);
+    stereo_complete
+  accessed_at: '2026-10-29T04:31:39.177646Z'
+  snapshot_sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+  support: supports
+  summary: The maintained extractor derives stereo_complete from unassigned tetrahedral
+    centres. The flag does not attest to complete double-bond geometry, tautomer identity
+    or experimentally established natural stereochemistry.
+- evidence_id: SCI907-PROFILE
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/docs/record-review-profile.md
+  locator: Native questions and ownership; REVIEWED prerequisites; four native dimensions
+  accessed_at: '2026-10-29T04:31:39.177646Z'
+  snapshot_sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+  support: supports
+  summary: Exact structure/origin, producer versus occurrence, active source version
+    and evidence tier are distinct review dimensions. Partial source review does not
+    promote native REVIEWED or a stronger biosynthetic grade.
+- evidence_id: SCI907-CURATION
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/docs/CURATION.md
+  locator: MIBiG claim-specific reference corrections; LOTUS occurrence exclusions;
+    maintained input ownership
+  accessed_at: '2026-10-29T04:31:39.177646Z'
+  snapshot_sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+  support: supports
+  summary: Seeded citation corrections belong to exact maintained compound-row or
+    occurrence-triple tables with source-row guards. Replacement references need inspected
+    support. Curator-owned discussion may record unresolved evidence; regeneration,
+    strict validation, reproduction and corpus checks follow a later authorized change.
+assessments:
+- assessment_id: SCI907-ENCODINGS
+  area: consistency
+  topic: Saved dual-encoding consistency
+  outcome: supported
+  summary: The two saved RDKit 2026.03.5 parses give C54H74N16O15S4 and full key CODBWSAIQSAFCS-MYZGCEDNSA-N
+    with paired Standard InChI agreement. Both canonical SMILES equality flags are
+    false and exact atom correspondence is empty. The original strings, component
+    counts, stereo arrays and parse clocks remain intact; no natural-identity or whole-graph-isomorphism
+    conclusion follows.
+  target_ids:
+  - naturalproductmech:mibig-62a15176ec
+  evidence_ids:
+  - SCI907-LOCAL
+  - SCI907-ENCODINGS
+- assessment_id: SCI907-IDENTITY
+  area: identity
+  topic: Exact compound and molecular-form correspondence
+  outcome: unknown
+  summary: The exact CODBWSAIQSAFCS-MYZGCEDNSA-N owner and retained MIBiG/LOTUS rows
+    join consistently. The full genome announcement does not identify nocathioamide
+    A or map this complete structure to the organism. The NPAtlas xref remains an
+    unverified authority claim.
+  target_ids:
+  - naturalproductmech:mibig-62a15176ec
+  evidence_ids:
+  - SCI907-LOCAL
+  - SCI907-ROWS
+  - SCI907-ENCODINGS
+  - SCI907-PMID
+  - SCI907-PMC
+- assessment_id: SCI907-STEREO
+  area: identity
+  topic: Stereochemical and representation resolution
+  outcome: unknown
+  summary: Saved SMILES leaves ten potential tetrahedral centres unspecified, consistent
+    with stereo_complete=false. Both stored encodings generate the declared full key
+    and Standard InChI, but the canonical strings differ and exact atom correspondence
+    is empty. These facts do not resolve the natural stereoisomer.
+  target_ids:
+  - naturalproductmech:mibig-62a15176ec
+  evidence_ids:
+  - SCI907-LOCAL
+  - SCI907-ENCODINGS
+  - SCI907-STEREO-METHOD
+  dimensions:
+  - name: stereochemical_resolution
+    value: 'nocathioamide A full key CODBWSAIQSAFCS-MYZGCEDNSA-N; stereo_complete=false;
+      saved SMILES stereo {"potential_by_type": {"Atom_Tetrahedral": 13}, "potential_total":
+      13, "specification_counts": {"Specified": 3, "Unspecified": 10}, "unspecified_total":
+      10}; components=1'
+    definition: Literal saved tetrahedral/double/component resolution; independent
+      natural assignment remains separate.
+    evidence_ids:
+    - SCI907-LOCAL
+    - SCI907-ENCODINGS
+    - SCI907-STEREO-METHOD
+- assessment_id: SCI907-PRODUCER
+  area: evidence
+  topic: Producer and strain-specific support
+  outcome: unknown
+  summary: The paper identifies Nocardia terpenica IFM0706 and its synonymous strain
+    designations. It does not establish nocathioamide A production. The retained SOURCE_ASSERTION
+    is not experimental characterization, and the citation is genome context rather
+    than compound-specific support.
+  target_ids:
+  - naturalproductmech:mibig-62a15176ec
+  evidence_ids:
+  - SCI907-LOCAL
+  - SCI907-ROWS
+  - SCI907-PMID
+  - SCI907-PMC
+  dimensions:
+  - name: taxon_strain
+    value: 'Nocardia terpenica IFM 0706 / NCBITaxon:455432; separate occurrences:
+      Nocardia terpenica / NCBITaxon:455432'
+    definition: Retained strain-bearing producer and occurrence taxa are distinct;
+      taxonomic identifiers are not newly authority-resolved.
+    evidence_ids:
+    - SCI907-LOCAL
+    - SCI907-ROWS
+    - SCI907-PMID
+    - SCI907-PMC
+- assessment_id: SCI907-LOCUS
+  area: evidence
+  topic: Exact locus and evidence grade
+  outcome: unknown
+  summary: BGC0002120 version3 is active in the retained source and asserts JABMCZ010000005.1:100790–118707
+    with CLUSTER_UNSTATED. The paper deposits genome project JABMCZ000000000 but does
+    not supply that exact interval-to-nocathioamide A link. No wrong accession or
+    absent cluster is inferred.
+  target_ids:
+  - naturalproductmech:mibig-62a15176ec
+  evidence_ids:
+  - SCI907-LOCAL
+  - SCI907-ROWS
+  - SCI907-PMID
+  - SCI907-PMC
+  dimensions:
+  - name: evidence_tier
+    value: producer SOURCE_ASSERTION; locus CLUSTER_UNSTATED; MIBiG reference PMID:32816977
+      (ENTRY); available source scope full own article
+    definition: Database assertion, source experiment, locus association and exact
+      natural structure are separate evidentiary questions.
+    evidence_ids:
+    - SCI907-LOCAL
+    - SCI907-ROWS
+    - SCI907-PMID
+    - SCI907-PMC
+- assessment_id: SCI907-OCCURRENCE
+  area: evidence
+  topic: Occurrence versus production and publication independence
+  outcome: unknown
+  summary: The exact LOTUS triple CODBWSAIQSAFCS-MYZGCEDNSA-N / NCBITaxon:455432 /
+    10.1128/MRA.00689-20 routes a compound-occurrence assertion to the same genome
+    announcement as PMID32816977. Its own text does not report nocathioamide occurrence.
+    Withholding or correcting this citation would not prove universal absence from
+    Nocardia terpenica.
+  target_ids:
+  - naturalproductmech:mibig-62a15176ec
+  evidence_ids:
+  - SCI907-LOCAL
+  - SCI907-ROWS
+  - SCI907-PMID
+  - SCI907-PMC
+- assessment_id: SCI907-FILING
+  area: consistency
+  topic: Computed filing and asserted classes
+  outcome: supported
+  summary: nocathioamide A is filed as AMINO_ACIDS_AND_PEPTIDES. NPClassifier npclassifier.gnps2.org@2026-09-07
+    reports pathways ['Amino acids and Peptides'], superclasses ['Oligopeptides'],
+    classes ['Cyclic peptides', 'RiPPs-Amatoxins and Phallotoxins', 'RiPPs-Lanthipeptides']
+    and is_glycoside=false; these reproduce the retained row. MIBiG BGC classes ['RIBOSOMAL']
+    are separate source assertions, not a curator-defined chemical identity.
+  target_ids:
+  - naturalproductmech:mibig-62a15176ec
+  evidence_ids:
+  - SCI907-LOCAL
+  - SCI907-ROWS
+- assessment_id: SCI907-ACTIVITY
+  area: evidence
+  topic: Pure-compound activity and optional mechanism scope
+  outcome: unknown
+  summary: The own article discusses nocavionin and genome context, not nocathioamide
+    A bioactivity. No assay, target, pathway or graph is asserted in this owner; a
+    related peptide or species-level property is not transferred.
+  target_ids:
+  - naturalproductmech:mibig-62a15176ec
+  evidence_ids:
+  - SCI907-LOCAL
+  - SCI907-ROWS
+  - SCI907-PMID
+  - SCI907-PMC
+- assessment_id: SCI907-REFERENCE
+  area: evidence
+  topic: Source-specific citation applicability
+  outcome: concern
+  summary: Complete own PMC7441235 front/body/back text contains no nocathioamide
+    mention and discusses nocavionin instead. The verified PMID/DOI are two identifiers
+    for one paper. This is a confirmed source-specific relevance gap at the cited
+    compound occurrence and producer/locus placements, not a global literature absence
+    or proof that the retained biological assertions are false.
+  target_ids:
+  - naturalproductmech:mibig-62a15176ec
+  evidence_ids:
+  - SCI907-LOCAL
+  - SCI907-ROWS
+  - SCI907-PMID
+  - SCI907-PMC
+  - SCI907-PMC-ACCESS
+- assessment_id: SCI907-PROVENANCE
+  area: provenance
+  topic: Source versions history and ownership
+  outcome: supported
+  summary: MIBiG BGC0002120:1 version3, active, quality=questionable, completeness=complete,
+    reference_basis=ENTRY; NPClassifier npclassifier.gnps2.org@2026-09-07; 3 original
+    history entries remain unchanged. All nine source arrays and exact row guards
+    were checked. Retrieval, saved computation, original local reads and later scientific
+    reading retain separate clocks.
+  target_ids:
+  - naturalproductmech:mibig-62a15176ec
+  evidence_ids:
+  - SCI907-LOCAL
+  - SCI907-ROWS
+  - SCI907-PROFILE
+  dimensions:
+  - name: source_version
+    value: MIBiG BGC0002120:1 version3, active, quality=questionable, completeness=complete,
+      reference_basis=ENTRY; NPClassifier npclassifier.gnps2.org@2026-09-07; 3 original
+      history entries remain unchanged. All nine source arrays and exact row guards
+      were checked. Retrieval, saved computation, original local reads and later scientific
+      reading retain separate clocks.
+    definition: Source release/entry metadata and historical provenance, not experimental
+      confidence.
+    evidence_ids:
+    - SCI907-LOCAL
+    - SCI907-ROWS
+    - SCI907-PROFILE
+findings:
+- finding_id: F907-CITATION-RELEVANCE
+  issue_key: nocathioamide-a-genome-announcement-citation-scope
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Genome announcement does not support the compound-specific citation placements
+  description: Complete own PMC7441235 front/body/back text contains no nocathioamide
+    mention and discusses nocavionin instead. The verified PMID/DOI are two identifiers
+    for one paper. This is a confirmed source-specific relevance gap at the cited
+    compound occurrence and producer/locus placements, not a global literature absence
+    or proof that the retained biological assertions are false. The precise affected
+    claims are the exact LOTUS occurrence triple and the MIBiG producer/locus citation
+    routing. Conservative source grades do not make this paper compound-specific evidence.
+    The finding does not assert a false organism, absent compound, incorrect structure
+    or replacement citation.
+  target_ids:
+  - naturalproductmech:mibig-62a15176ec
+  field_paths:
+  - producer_organisms[0].evidence[0]
+  - biosynthetic_gene_clusters[0].evidence[0]
+  - occurrences[0].evidence[0]
+  evidence_ids:
+  - SCI907-LOCAL
+  - SCI907-ROWS
+  - SCI907-PMID
+  - SCI907-PMC
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/amino_acids_and_peptides/nocathioamide-a.yaml
+    role: curator-owned discussion and generated owner affected by maintained correction
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: exact BGC0002120:1 producer/locus citation routing, conditional on inspected
+      replacement
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/lotus_occurrence_exclusions.tsv
+    role: exact unsupported key/taxon/DOI triple adjudication
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: guarded reproducible derivation
+  - repository: CultureBotAI/NaturalProductMech
+    path: docs/CURATION.md
+    role: maintained-input ownership and row-digest rules
+  - repository: CultureBotAI/NaturalProductMech
+    path: justfile
+    role: strict/reproduction/corpus validation
+  ownership_note: Proposed follow-up only; issue_key is a descriptive key, not an
+    existing issue identifier. No record or external application is changed.
+actions:
+- action_id: A907-RECONCILE-CITATION-SCOPE
+  description: Reconcile BGC0002120:1 claim citation routing and the exact LOTUS triple
+    through maintained corrections. A replacement reference requires inspected compound-specific
+    evidence; without one, document the source limitation and consider the exact unsupported
+    LOTUS triple for guarded exclusion. Preserve chemistry, source grades and genome
+    context. Record the exact genome-context-only limitation in curator-owned discussion.
+    Do not alter generated owner facts directly or invent an inspected replacement.
+  finding_ids:
+  - F907-CITATION-RELEVANCE
+  target_ids:
+  - naturalproductmech:mibig-62a15176ec
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/amino_acids_and_peptides/nocathioamide-a.yaml
+    role: curator-owned discussion and generated owner affected by maintained correction
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: exact BGC0002120:1 producer/locus citation routing, conditional on inspected
+      replacement
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/lotus_occurrence_exclusions.tsv
+    role: exact unsupported key/taxon/DOI triple adjudication
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: guarded reproducible derivation
+  - repository: CultureBotAI/NaturalProductMech
+    path: docs/CURATION.md
+    role: maintained-input ownership and row-digest rules
+  - repository: CultureBotAI/NaturalProductMech
+    path: justfile
+    role: strict/reproduction/corpus validation
+  acceptance_checks:
+  - Preserve the exact complete BGC0002120:1 row digest and LOTUS key CODBWSAIQSAFCS-MYZGCEDNSA-N
+    / NCBITaxon:455432 / literal DOI10.1128/MRA.00689-20 row digest, original source
+    versions and retrieval clocks.
+  - Use curation/mibig_claim_references.tsv only if an inspected stable reference
+    supports the selected producer/locus claim. Independently adjudicate the exact
+    LOTUS triple for curation/lotus_occurrence_exclusions.tsv; withholding this triple
+    is not global absence.
+  - For a later authorized maintained-input correction, perform documented canary
+    seeding, just validate-strict data/natural_products/amino_acids_and_peptides/nocathioamide-a.yaml,
+    just verify-reproduction, just verify-corpus --summary and full QC. Preserve raw
+    inventories, chemistry and evidence grades unless separately reviewed; no commands
+    are run by this proposal.
+limitations:
+- Partial scientific coverage of the exact owner, all retained and supplemental source
+  arrays and the named saved publications; full-owner scientific completeness remains
+  unverified.
+- Original evidence timestamps preserve local byte reading, HTTP retrieval or saved
+  parse clocks. Later scientific reading is recorded separately; a failed source-access
+  route is not a canonical validation failure.
+- Current accepted source history has22 closed events,128 event leaves and137 held
+  leaves; the six contextual PMC100110 leaves remain separate. No held route is retried
+  and unavailable body content is not treated as a scientific negative result.
+- External chemical/protein/taxonomy identifiers and accession versions are retained
+  assertions except where an exact inspected own-source anchor is stated. No graph,
+  assay, protein example or natural stereostructure is inferred from family membership.
+- Reconcile BGC0002120:1 claim citation routing and the exact LOTUS triple through
+  maintained corrections. A replacement reference requires inspected compound-specific
+  evidence; without one, document the source limitation and consider the exact unsupported
+  LOTUS triple for guarded exclusion. Preserve chemistry, source grades and genome
+  context.
+- Only the saved own article text was read; linked figures, spectra, supplementary
+  files and foreign cited publications were not independently inspected.
+- Source seeding retains five unresolved assay-organism targets (one distinct Human
+  label),42 withheld nonspecific producer claims and161 merged-taxonomy rewrites.
+- Queue diagnostics rank deterministic curation questions and do not prove literature
+  support or review completion.
+- 499 configured nonblocking mismatches remain warnings;4898 pairs lacked an adapter.35
+  exception and657 synonym matches retain their configured scope; no fresh ontology
+  authority retrieval is asserted.
+- Four tests were skipped; two dependency deprecations concern LinkML dataclass and
+  Pandas copy-on-write behavior. Source seeding warnings and configured gate boundaries
+  are retained in the full log.
+- Native baseline gates establish configured consistency, not independent biological
+  production, exact stereochemistry or primary-source adequacy.
+- Configured ontology caches and scientific/test skips retain their original scope;
+  a new command execution is not a fresh retrieval of every authority.
+- All tracked link objects are hashed as link-target bytes without dereferencing;
+  canonical record source intake remains regular-file-only and uses the separately
+  reviewed AGENTS.md context projection.
+notes:
+- The whole local owner and retained source rows were read. Full-owner scientific
+  verification remains false; scientific_review denotes the bounded scientific interpretation
+  in this report.
+- Original owner/source reading, two-encoding computation, primary-text reading, HTTP
+  retrieval and later metadata reading retain separate clocks. Official intake separately
+  computed SMILES facts.
+- No scientific record, maintained input or native curation status was changed. Any
+  findings and actions record ROOT-adopted proposed work; exact-source limitations
+  and unavailable checks remain explicit.
+```
