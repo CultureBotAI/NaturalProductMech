@@ -1,0 +1,1204 @@
+# Scientific review of isocomplestatin
+
+- Review: 20261028T021408Z-isocomplestatin
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-28T01:57:58.761617Z
+- Finished UTC: 2026-10-28T02:14:08.005238Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The isocomplestatin owner joins source concepts for two literature-distinguished axial isomers and asserts SAME_STRUCTURE links to both isocomplestatin and chloropeptin II/complestatin. Matching local encodings do not resolve that axis. Compound-specific producer, locus, occurrence and assay claims therefore need separation. The exact-structure assertions conflict with the named isomer distinction; no replacement whole structure or key is inferred.
+
+## Scope And Provenance
+
+Bounded whole-owner and exact source-row assessment with saved two-encoding results and own metadata/abstract evidence, preserving all publisher failures and compound-specific applicability limits.
+
+Selection: One exact record selected in canonical repository path order from the unreviewed population; this report assesses only its declared partial scientific scope.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 14373517042b407747272446f79953ae86d51fa4.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-08763e9bdc | data/natural_products/amino_acids_and_peptides/isocomplestatin.yaml | generated | isocomplestatin |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-08763e9bdc | Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its pinned path. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-08763e9bdc | Fresh canonical reproduction gate passed:all3116 records byte-identical to source seeding; source warnings remain retained. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-08763e9bdc | Fresh deterministic review queue completed:8922 rows across12 queues. Queue output is not scientific-review coverage. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-08763e9bdc | Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking mismatches and4898no-adapter skips remain explicit. |
+| Full repository quality gate on the fresh main baseline | passed | True | naturalproductmech:mibig-08763e9bdc | Canonical just qc completed with actual terminal exit0:1024 tests passed,4 skipped,2 dependency warnings;3116 records passed closed schema validation, site freshness, byte reproduction and lockfile integrity.22 governed artifacts and15 raw inventories passed. Prior DNS failed001 remains preserved. |
+| Native strict target validation | passed | True | naturalproductmech:mibig-08763e9bdc | The selected owner passed the documented strict validator. This establishes configured consistency only. |
+| Whole original owner and exact source arrays | passed | True | naturalproductmech:mibig-08763e9bdc | The complete original owner and all seven retained plus two supplemental arrays are preserved: 15 retained and 2 supplemental rows, with 13 rows in the prospective six-array predicate. The owner has no inline or referenced graph; all 3 history entries remain unchanged. The retained ChEBI-origin join contains two rows, whereas the prospective owner-identifier predicate selects none; neither projection is silently substituted for the other. |
+| Saved internal encoding consistency | passed | True | naturalproductmech:mibig-08763e9bdc | Saved SMILES and Standard InChI agree internally on full key JJGZGELTZPACID-OTLJHNKQSA-N, formula C61H45Cl6N7O15, fragment count 1 and formal charge 0. The saved SMILES FindPotentialStereo result has 6 specified and 0 unspecified tetrahedral carbon sites. This diagnostic is distinct from a list containing only assigned chiral centres. Representation-specific InChI C(-O)=N flags are diagnostics, not evidence of a missing natural alkene configuration. Encoding agreement does not establish complete natural identity. Both alternative ChEBI SMILES failed the saved parser and retain null computed comparisons. These failures neither prove equivalence nor resolve the literature-defined axial distinction. |
+| Own publication identity and availability scope | passed | True | naturalproductmech:mibig-08763e9bdc | Each scientific citation is tied to its own metadata fields, original response and access clock. Bibliography references and failed publisher challenge bodies do not supply own article or full-primary credit. |
+| Identity claim applicability | failed | True | naturalproductmech:mibig-08763e9bdc | PM11473415 identifies isocomplestatin as an axial-chiral isomer of complestatin. PM9066767 identifies chloropeptin II as complestatin. The owner combines CHEBI:65619 chloropeptin II and CHEBI:66093 isocomplestatin under one key and has SAME_STRUCTURE links to both. The named natural products are distinguished by the inspected abstracts. The retained key and six specified carbon centers do not decide the atropisomer. Both alternative ChEBI SMILES failed the saved parser; those failures do not establish equivalence or non-equivalence. Exact axial representation and maintained join resolution require further adjudication, without a guessed replacement key. |
+| Producer claim applicability | unavailable | True | naturalproductmech:mibig-08763e9bdc | The cluster article explicitly attributes complestatin to S. lavendulae; the chloropeptin article attributes chloropeptins to Streptomyces sp. WK-3419. PM11473415 identifies isocomplestatin from a microbial-extract screen. These statements do not by themselves establish that the exact isocomplestatin atropisomer is produced by the owner’s S. lavendulae source. WK-3419 must not be transferred from chloropeptin II or equated to a generic Streptomyces stock. The new complestatin abstract distinguishes S. chartreusis AN1542 as source from heterologous S. lividans TK24; it does not validate the isocomplestatin/S. lavendulae occurrence. Other title-only complestatin/chloropeptin and CYPome citations do not close the exact-isomer gap. |
+| Occurrence claim applicability | unavailable | True | naturalproductmech:mibig-08763e9bdc | The two ChEBI occurrence rows cite different compound-specific publications. Nine LOTUS rows and their original positions remain literal occurrence assertions. Shared-key joining does not make the distinct isomer citations interchangeable. Other retained DOI occurrence claims have bounded title/abstract checks but still lack exact-isomer verification; no broad biological absence is inferred. The new complestatin abstract distinguishes S. chartreusis AN1542 as source from heterologous S. lividans TK24; it does not validate the isocomplestatin/S. lavendulae occurrence. Other title-only complestatin/chloropeptin and CYPome citations do not close the exact-isomer gap. |
+| Locus claim applicability | unavailable | True | naturalproductmech:mibig-08763e9bdc | The inspected abstract reports cloning and sequencing the complestatin cluster and biochemical support for one precursor-related aminotransferase. It describes the oxidative coupling functions as proposed. This does not establish an isocomplestatin-specific output from BGC0000326/AF386507.1 or experimentally demonstrate every oxidase. The PMC capture contains no article body, and no current accession sequence was read. The new complestatin abstract distinguishes S. chartreusis AN1542 as source from heterologous S. lividans TK24; it does not validate the isocomplestatin/S. lavendulae occurrence. Other title-only complestatin/chloropeptin and CYPome citations do not close the exact-isomer gap. |
+| Classification claim applicability | passed | True | naturalproductmech:mibig-08763e9bdc | The sources describe a cyclic peptide/alpha-ketoacyl hexapeptide context; NPClassifier vancomycin/teicoplanin filing remains computed. The owner’s generic grounding example about zwitterions does not resolve the expressly documented axial-isomer distinction. |
+| Activity claim applicability | unavailable | True | naturalproductmech:mibig-08763e9bdc | PM11473415 directly reports isocomplestatin-specific HIV-1 integrase and cellular replication endpoints. PM9066767 reports gp120-CD4 and cellular endpoints for chloropeptins I and II. Assay endpoints, compounds and units must remain separate; no molecular-target entry is added. The ANTIVIRAL summary and both AntibioticMech SAME_INCHIKEY rows are retained source joins, not proof that their isomers or assay mechanisms are identical. The named isocomplestatin endpoints are reported; their applicability to the combined exact-structure owner remains unresolved until its isomer identity is separated. |
+
+## Scientific And Domain Assessments
+
+### Internal encodings versus natural identity
+
+representation: supported. Targets: naturalproductmech:mibig-08763e9bdc.
+
+Saved SMILES and Standard InChI agree internally on full key JJGZGELTZPACID-OTLJHNKQSA-N, formula C61H45Cl6N7O15, fragment count 1 and formal charge 0. The saved SMILES FindPotentialStereo result has 6 specified and 0 unspecified tetrahedral carbon sites. This diagnostic is distinct from a list containing only assigned chiral centres. Representation-specific InChI C(-O)=N flags are diagnostics, not evidence of a missing natural alkene configuration. Encoding agreement does not establish complete natural identity. Both alternative ChEBI SMILES failed the saved parser and retain null computed comparisons. These failures neither prove equivalence nor resolve the literature-defined axial distinction.
+
+### Identity applicability
+
+identity: concern. Targets: naturalproductmech:mibig-08763e9bdc.
+
+PM11473415 identifies isocomplestatin as an axial-chiral isomer of complestatin. PM9066767 identifies chloropeptin II as complestatin. The owner combines CHEBI:65619 chloropeptin II and CHEBI:66093 isocomplestatin under one key and has SAME_STRUCTURE links to both. The named natural products are distinguished by the inspected abstracts. The retained key and six specified carbon centers do not decide the atropisomer. Both alternative ChEBI SMILES failed the saved parser; those failures do not establish equivalence or non-equivalence. Exact axial representation and maintained join resolution require further adjudication, without a guessed replacement key.
+
+### Producer applicability
+
+provenance: unknown. Targets: naturalproductmech:mibig-08763e9bdc.
+
+The cluster article explicitly attributes complestatin to S. lavendulae; the chloropeptin article attributes chloropeptins to Streptomyces sp. WK-3419. PM11473415 identifies isocomplestatin from a microbial-extract screen. These statements do not by themselves establish that the exact isocomplestatin atropisomer is produced by the owner’s S. lavendulae source. WK-3419 must not be transferred from chloropeptin II or equated to a generic Streptomyces stock. The new complestatin abstract distinguishes S. chartreusis AN1542 as source from heterologous S. lividans TK24; it does not validate the isocomplestatin/S. lavendulae occurrence. Other title-only complestatin/chloropeptin and CYPome citations do not close the exact-isomer gap.
+
+### Occurrence applicability
+
+provenance: unknown. Targets: naturalproductmech:mibig-08763e9bdc.
+
+The two ChEBI occurrence rows cite different compound-specific publications. Nine LOTUS rows and their original positions remain literal occurrence assertions. Shared-key joining does not make the distinct isomer citations interchangeable. Other retained DOI occurrence claims have bounded title/abstract checks but still lack exact-isomer verification; no broad biological absence is inferred. The new complestatin abstract distinguishes S. chartreusis AN1542 as source from heterologous S. lividans TK24; it does not validate the isocomplestatin/S. lavendulae occurrence. Other title-only complestatin/chloropeptin and CYPome citations do not close the exact-isomer gap.
+
+### Locus applicability
+
+provenance: unknown. Targets: naturalproductmech:mibig-08763e9bdc.
+
+The inspected abstract reports cloning and sequencing the complestatin cluster and biochemical support for one precursor-related aminotransferase. It describes the oxidative coupling functions as proposed. This does not establish an isocomplestatin-specific output from BGC0000326/AF386507.1 or experimentally demonstrate every oxidase. The PMC capture contains no article body, and no current accession sequence was read. The new complestatin abstract distinguishes S. chartreusis AN1542 as source from heterologous S. lividans TK24; it does not validate the isocomplestatin/S. lavendulae occurrence. Other title-only complestatin/chloropeptin and CYPome citations do not close the exact-isomer gap.
+
+### Classification applicability
+
+completeness: supported. Targets: naturalproductmech:mibig-08763e9bdc.
+
+The sources describe a cyclic peptide/alpha-ketoacyl hexapeptide context; NPClassifier vancomycin/teicoplanin filing remains computed. The owner’s generic grounding example about zwitterions does not resolve the expressly documented axial-isomer distinction.
+
+### Activity applicability
+
+quantity: unknown. Targets: naturalproductmech:mibig-08763e9bdc.
+
+PM11473415 directly reports isocomplestatin-specific HIV-1 integrase and cellular replication endpoints. PM9066767 reports gp120-CD4 and cellular endpoints for chloropeptins I and II. Assay endpoints, compounds and units must remain separate; no molecular-target entry is added. The ANTIVIRAL summary and both AntibioticMech SAME_INCHIKEY rows are retained source joins, not proof that their isomers or assay mechanisms are identical. The named isocomplestatin endpoints are reported; their applicability to the combined exact-structure owner remains unresolved until its isomer identity is separated.
+
+### Mechanism and grounded target scope
+
+graph: unknown. Targets: naturalproductmech:mibig-08763e9bdc.
+
+The whole owner has no inline or referenced causal graph. Source-supported cluster statements, proposed enzyme functions and compound activity are not equivalent to a fully grounded mechanism or direct target assignment.
+
+## Findings
+
+### F774-AXIAL-ISOMER-IDENTITY-JOIN: Distinct axial isomers are joined as the same structure
+
+blocker / open / confirmed; issue key: isocomplestatin-complestatin-axial-isomer-same-structure-collapse.
+
+The owner resolves CHEBI:66093 isocomplestatin and CHEBI:65619 chloropeptin II into one record and asserts SAME_STRUCTURE links to both. Own PMID11473415 explicitly distinguishes isocomplestatin as an axial-chiral isomer of complestatin; own PMID9066767 identifies chloropeptin II as complestatin. Both exact-structure links therefore cannot simultaneously identify one natural structure. The six encoded carbon centres and matching Standard InChIKey do not resolve the axis. The generic grounding note acknowledges ambiguity but does not remove the contradictory exact-structure links. No assertion is made about which atropisomer the retained graph denotes, and no replacement full key is inferred.
+
+## Recommended Actions And Acceptance Checks
+
+### A774-DISAMBIGUATE-AXIAL-ISOMER-JOINS
+
+In later curation, independently establish the source-specific structures and axial identities, then review a maintained disambiguation and migration that preserves distinct isomer concepts and removes unsupported exact-structure joins. Reassess producer, locus, occurrence and activity claims against their named compound. Preserve the raw evidence; do not choose an arbitrary same-key concept, invent a full replacement key or edit only the generated owner.
+
+- Preserve the original full MIBiG, ChEBI structure/origin and AntibioticMech rows and exact own-publication isomer statements.
+- Verify the full supported structures and axial distinction independently; determine what the chosen representation can and cannot encode.
+- Review an explicit maintained resolution rule when one Standard InChIKey cannot distinguish the relevant axial identities; no such implemented fix is claimed here.
+- Ensure an exact-structure link does not connect the two distinct axial isomers, and assign each retained occurrence, producer, locus and assay only where its own source supports the named product.
+- Capture any implementation module before relying on its behavior; after authorized curation, run the applicable validation, reproducibility and history-preserving migration checks.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| SCI774-LOCAL | /private/tmp/npm-review-work/shared-next-batch078-tentative/tentative-owner-source-inventory-001.json; /entries/3/owner_document; /entries/3/rows; /entries/3/supplemental_retained_rows; /entries/3/expected_official_intake_rows | context_only | The complete original owner and all seven retained plus two supplemental arrays are preserved: 15 retained and 2 supplemental rows, with 13 rows in the prospective six-array predicate. The owner has no inline or referenced graph; all 3 history entries remain unchanged. The retained ChEBI-origin join contains two rows, whereas the prospective owner-identifier predicate selects none; neither projection is silently substituted for the other. |
+| SCI774-CHEM | /private/tmp/npm-review-work/shared-next-batch078-tentative/source-science-preparation/root-tentative78-local-chemical-consistency-and-neighbors-001.json; /records/3/smiles; /records/3/inchi; /records/3/comparisons; /records/3/chebi_alternatives | supports | Saved SMILES and Standard InChI agree internally on full key JJGZGELTZPACID-OTLJHNKQSA-N, formula C61H45Cl6N7O15, fragment count 1 and formal charge 0. The saved SMILES FindPotentialStereo result has 6 specified and 0 unspecified tetrahedral carbon sites. This diagnostic is distinct from a list containing only assigned chiral centres. Representation-specific InChI C(-O)=N flags are diagnostics, not evidence of a missing natural alkene configuration. Encoding agreement does not establish complete natural identity. Both alternative ChEBI SMILES failed the saved parser and retain null computed comparisons. These failures neither prove equivalence nor resolve the literature-defined axial distinction. |
+| SCI774-PM11473415 | /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-metadata-pubmed-001/pmid-11473415.xml; ./PubmedArticle/MedlineCitation/Article/ArticleTitle; ./PubmedArticle/MedlineCitation/Article/Abstract; ./PubmedArticle/PubmedData/ArticleIdList | partial | The complete own abstract identifies isocomplestatin as an axial-chiral isomer of complestatin and reports isocomplestatin-specific integrase and cellular replication endpoints. It does not equate isocomplestatin with complestatin or identify a replacement full structure key. |
+| SCI774-PM9066767 | /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-metadata-pubmed-001/pmid-9066767.xml; ./PubmedArticle/MedlineCitation/Article/ArticleTitle; ./PubmedArticle/MedlineCitation/Article/Abstract; ./PubmedArticle/PubmedData/ArticleIdList | partial | The complete own abstract identifies chloropeptin II as complestatin and attributes chloropeptins I and II to Streptomyces sp. WK-3419. Their binding and cellular endpoints remain compound-specific; these statements are not transferred to isocomplestatin. |
+| SCI774-PM11447274 | /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-metadata-pubmed-001/pmid-11447274.xml; ./PubmedArticle/MedlineCitation/Article/ArticleTitle; ./PubmedArticle/MedlineCitation/Article/Abstract; ./PubmedArticle/PubmedData/ArticleIdList | partial | The own abstract attributes complestatin to S. lavendulae and describes the cloned and sequenced cluster. A precursor-related aminotransferase was biochemically supported, whereas the oxidative coupling functions were proposed. This is not an isocomplestatin-specific locus demonstration. |
+| SCI774-PMC37473 | /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-primary-001/pmc-37473.xml; ./article/front/article-meta/article-id; ./article/front/article-meta/title-group/article-title; ./article/front/article-meta/abstract; no article/body; publisher restriction comment | partial | The saved own PMC response matches the complestatin cluster publication but supplies frontmatter and abstract only. It explicitly states that the publisher does not allow full XML download. HTTP200 and the failed full-body guard are preserved; this is the same publication as PMID11447274, not independent experimental support. |
+| SCI774-ACS-NP000632Z-CHALLENGE | /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-primary-independent-001/acs-np000632z/acs-np000632z-primary.html; whole saved HTML title and client-challenge response; associated original access receipt | context_only | The exact ACS np000632z request returned a complete HTTP403 client challenge. It contains no own article identity or scientific evidence; the request DOI does not authenticate the response. The original failed access is preserved without retry or alternate. |
+| SCI774-DOI02 | /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-metadata-held-crossref-001/doi-02.json; /message/DOI; /message/title; /message/abstract if present; /message/resource/primary/URL | partial | The own title names a complestatin cluster from S. chartreusis AN1542. The supplied abstract reports complestatin production in a heterologous S. lividans TK24 host and engineered analogues. The natural source, heterologous host and derivatives are distinct; this does not verify an isocomplestatin occurrence in S. lavendulae. |
+| SCI774-DOI03 | /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-metadata-held-crossref-001/doi-03.json; /message/DOI; /message/title; /message/abstract if present; /message/resource/primary/URL | partial | The own title concerns cytochrome P450 complements of S. avermitilis and S. coelicolor A3(2), with no deposited abstract. It does not itself substantiate the retained S. lavendulae/isocomplestatin occurrence. A title mismatch in scope is not proof that the complete article lacks every relevant discussion. |
+| SCI774-DOI04 | /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-metadata-held-crossref-001/doi-04.json; /message/DOI; /message/title; /message/abstract if present; /message/resource/primary/URL | partial | The own title concerns the structure of complestatin and complement-related inhibition. With no deposited abstract or inspected main text, it does not resolve the distinct isocomplestatin axis, full owner structure or exact activity. |
+| SCI774-DOI05 | /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-metadata-held-crossref-001/doi-05.json; /message/DOI; /message/title; /message/abstract if present; /message/resource/primary/URL | partial | The own title concerns complestatin and chloropeptin I from two streptomycete strains. No abstract is deposited. It does not identify those stocks or establish isocomplestatin production. |
+| SCI774-DOI09 | /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-metadata-held-crossref-001/doi-09.json; /message/DOI; /message/title; /message/abstract if present; /message/resource/primary/URL | partial | The own title literally spells the product "Complestain" and names S. lavendulae in an anti-complement isolation study. The deposited spelling is preserved. No abstract is supplied, and this title does not establish the distinct isocomplestatin atropisomer. |
+| SCI774-DOI10 | /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-metadata-held-crossref-001/doi-10.json; /message/DOI; /message/title; /message/abstract if present; /message/resource/primary/URL | partial | The own title names chloropeptins I and II and gp120-CD4 binding. No abstract is deposited. Compound, target and source scope cannot be transferred to isocomplestatin on the shared key alone. |
+| SCI774-DOI11 | /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-metadata-held-crossref-001/doi-11.json; /message/DOI; /message/title; /message/abstract if present; /message/resource/primary/URL | partial | The own title names structure elucidation of chloropeptin I. No abstract is deposited. It supplies no atom-level structural verification of isocomplestatin or chloropeptin II. |
+| SCI774-IDENTITY-CONTRACT | /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml; NaturalProduct.related_records; NaturalProduct.source_concepts; ChemicalStructure identity description | supports | SAME_STRUCTURE denotes the same structure in another corpus. Source concepts preserve upstream resolution provenance; a shared Standard InChIKey does not establish equivalence of literature-distinguished axial isomers. |
+| SCI774-RUBRIC | /private/tmp/npm-record-reviews-20261021/docs/record-reviews.md; Verdict And Severity | context_only | The rubric treats wrong identity as blocker and materially unsupported claims as major. This proposal concerns a confirmed exact-identity join conflict; ROOT determines the formal severity and outcome. |
+
+## Limits And Additional Notes
+
+- Exact retained source grades, history, whole rows and original source clocks are preserved. Metadata is not promoted to full article-body, structural figure or supplement credit.
+- No current taxonomy, physical stock, accession sequence or complete natural configuration is independently verified by this proposal.
+- No quantitative activity or target is transferred across congeners, axial isomers, assay types or source organisms. No operational production or assay instructions are supplied.
+- Unresolved required evidence checks remain explicit. A missing source is not treated as positive or negative experimental evidence.
+- The named natural products are distinguished by the inspected abstracts. The retained key and six specified carbon centers do not decide the atropisomer. Both alternative ChEBI SMILES failed the saved parser; those failures do not establish equivalence or non-equivalence. Exact axial representation and maintained join resolution require further adjudication, without a guessed replacement key.
+- These statements do not by themselves establish that the exact isocomplestatin atropisomer is produced by the owner’s S. lavendulae source. WK-3419 must not be transferred from chloropeptin II or equated to a generic Streptomyces stock.
+- This does not establish an isocomplestatin-specific output from BGC0000326/AF386507.1 or experimentally demonstrate every oxidase. The PMC capture contains no article body, and no current accession sequence was read.
+- Assay endpoints, compounds and units must remain separate; no molecular-target entry is added. The ANTIVIRAL summary and both AntibioticMech SAME_INCHIKEY rows are retained source joins, not proof that their isomers or assay mechanisms are identical.
+- Configured consistency only; independent scientific claim support and unrestricted remote authority refresh are not implied.
+- FailedQC001 is retained for an explicit separate network-enabled retry; no artifact will be overwritten.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint and before downstream tests. Its actual exit1/log/input capture/root observation remain pinned; the selected successful canonical QC attempt002 is separately timed. No individual-review validation failure or counter reset is claimed.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings; this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions and no-adapter pairs; a successful command does not convert these into verified scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population was checked; external caches and generated bytecode are not asserted to be independently byte-pinned.
+- The whole local owner and retained source rows were read. Full-owner scientific verification remains false; scientific_review denotes the bounded scientific interpretation in this report.
+- Original owner/source reading, two-encoding computation, neighbor inspection, HTTP retrieval and later metadata reading retain separate clocks. Official intake separately computed SMILES facts.
+- No scientific record, maintained input or native curation status was changed. Any findings and actions record ROOT-adopted proposed work; exact-source limitations and unavailable checks remain explicit.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261028T021408Z-isocomplestatin
+title: Scientific review of isocomplestatin
+started_at: '2026-10-28T01:57:58.761617Z'
+finished_at: '2026-10-28T02:14:08.005238Z'
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The isocomplestatin owner joins source concepts for two literature-distinguished
+  axial isomers and asserts SAME_STRUCTURE links to both isocomplestatin and chloropeptin
+  II/complestatin. Matching local encodings do not resolve that axis. Compound-specific
+  producer, locus, occurrence and assay claims therefore need separation. The exact-structure
+  assertions conflict with the named isomer distinction; no replacement whole structure
+  or key is inferred.
+source:
+  git_revision: 14373517042b407747272446f79953ae86d51fa4
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/isocomplestatin.yaml
+    sha256: db3e5d82beedcb959565ebd1477053c73a7f8b1739212a9efc82a3575c8156c4
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+targets:
+- target_id: naturalproductmech:mibig-08763e9bdc
+  path: data/natural_products/amino_acids_and_peptides/isocomplestatin.yaml
+  label: isocomplestatin
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+scope:
+  description: Bounded whole-owner and exact source-row assessment with saved two-encoding
+    results and own metadata/abstract evidence, preserving all publisher failures
+    and compound-specific applicability limits.
+  selection: One exact record selected in canonical repository path order from the
+    unreviewed population; this report assesses only its declared partial scientific
+    scope.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-08763e9bdc
+  exclusions:
+  - target: Full-owner scientific verification
+    reason: Not independently established within this report; the corresponding scientific
+      checks, assessments and source-access limitations retain their stated boundaries.
+  - target: Producer claim applicability
+    reason: Not independently established within this report; the corresponding scientific
+      checks, assessments and source-access limitations retain their stated boundaries.
+  - target: Occurrence claim applicability
+    reason: Not independently established within this report; the corresponding scientific
+      checks, assessments and source-access limitations retain their stated boundaries.
+  - target: Locus claim applicability
+    reason: Not independently established within this report; the corresponding scientific
+      checks, assessments and source-access limitations retain their stated boundaries.
+  - target: Activity claim applicability
+    reason: Not independently established within this report; the corresponding scientific
+      checks, assessments and source-access limitations retain their stated boundaries.
+  - target: Complete natural atom/configuration verification
+    reason: Not independently established within this report; the corresponding scientific
+      checks, assessments and source-access limitations retain their stated boundaries.
+  - target: Uninspected main-text, figure and supplement evidence
+    reason: Not independently established within this report; the corresponding scientific
+      checks, assessments and source-access limitations retain their stated boundaries.
+  - target: Current stock/taxonomy or accession-sequence verification
+    reason: Not independently established within this report; the corresponding scientific
+      checks, assessments and source-access limitations retain their stated boundaries.
+  - target: Unreported potency, direct target or complete grounded mechanism
+    reason: Not independently established within this report; the corresponding scientific
+      checks, assessments and source-access limitations retain their stated boundaries.
+  - target: Operational production, engineering or assay instructions
+    reason: Not independently established within this report; the corresponding scientific
+      checks, assessments and source-access limitations retain their stated boundaries.
+checks:
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its
+    pinned path.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-corpus-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.783967Z;
+    finished 2026-10-25T22:37:16.453216Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.log.
+    Reused for batch078 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch078. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-08763e9bdc
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: Fresh canonical reproduction gate passed:all3116 records byte-identical
+    to source seeding; source warnings remain retained.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-reproduction-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784055Z;
+    finished 2026-10-25T22:37:31.682209Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.log.
+    Reused for batch078 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch078. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-08763e9bdc
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: Fresh deterministic review queue completed:8922 rows across12 queues. Queue
+    output is not scientific-review coverage.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-review-queue-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just review-queue --tsv /private/tmp/npm-review-queue-batch-036-fresh14373517-001.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.781802Z;
+    finished 2026-10-25T22:37:08.229737Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.log.
+    Reused for batch078 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch078. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-08763e9bdc
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking
+    mismatches and4898no-adapter skips remain explicit.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-validate-products-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784040Z;
+    finished 2026-10-25T22:37:32.251879Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.log.
+    Reused for batch078 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch078. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-08763e9bdc
+- check_id: shared-qc
+  name: Full repository quality gate on the fresh main baseline
+  status: passed
+  required: true
+  summary: Canonical just qc completed with actual terminal exit0:1024 tests passed,4
+    skipped,2 dependency warnings;3116 records passed closed schema validation, site
+    freshness, byte reproduction and lockfile integrity.22 governed artifacts and15
+    raw inventories passed. Prior DNS failed001 remains preserved.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-qc-attempt-002
+    PYTHONDONTWRITEBYTECODE=1 just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-002 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:40:55.179857Z;
+    finished 2026-10-25T22:46:28.974296Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.log.
+    Reused for batch078 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch078. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-08763e9bdc
+- check_id: C-STRICT
+  name: Native strict target validation
+  status: passed
+  required: true
+  summary: The selected owner passed the documented strict validator. This establishes
+    configured consistency only.
+  command: just validate-strict data/natural_products/amino_acids_and_peptides/isocomplestatin.yaml
+    --out /private/tmp/npm-review-work/774/strict.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Actual intake execution finished 2026-10-28T01:58:00.118790Z. Original
+    receipt: /private/tmp/npm-review-work/774/strict-receipt.json.'
+  target_ids:
+  - naturalproductmech:mibig-08763e9bdc
+- check_id: SCI774-LOCAL-JOINS
+  name: Whole original owner and exact source arrays
+  status: passed
+  required: true
+  summary: 'The complete original owner and all seven retained plus two supplemental
+    arrays are preserved: 15 retained and 2 supplemental rows, with 13 rows in the
+    prospective six-array predicate. The owner has no inline or referenced graph;
+    all 3 history entries remain unchanged. The retained ChEBI-origin join contains
+    two rows, whereas the prospective owner-identifier predicate selects none; neither
+    projection is silently substituted for the other.'
+  evidence_ids:
+  - SCI774-LOCAL
+  target_ids:
+  - naturalproductmech:mibig-08763e9bdc
+- check_id: SCI774-ENCODINGS
+  name: Saved internal encoding consistency
+  status: passed
+  required: true
+  summary: Saved SMILES and Standard InChI agree internally on full key JJGZGELTZPACID-OTLJHNKQSA-N,
+    formula C61H45Cl6N7O15, fragment count 1 and formal charge 0. The saved SMILES
+    FindPotentialStereo result has 6 specified and 0 unspecified tetrahedral carbon
+    sites. This diagnostic is distinct from a list containing only assigned chiral
+    centres. Representation-specific InChI C(-O)=N flags are diagnostics, not evidence
+    of a missing natural alkene configuration. Encoding agreement does not establish
+    complete natural identity. Both alternative ChEBI SMILES failed the saved parser
+    and retain null computed comparisons. These failures neither prove equivalence
+    nor resolve the literature-defined axial distinction.
+  evidence_ids:
+  - SCI774-CHEM
+  target_ids:
+  - naturalproductmech:mibig-08763e9bdc
+- check_id: SCI774-OWN-SOURCES
+  name: Own publication identity and availability scope
+  status: passed
+  required: true
+  summary: Each scientific citation is tied to its own metadata fields, original response
+    and access clock. Bibliography references and failed publisher challenge bodies
+    do not supply own article or full-primary credit.
+  evidence_ids:
+  - SCI774-PM11473415
+  - SCI774-PM9066767
+  - SCI774-PM11447274
+  - SCI774-PMC37473
+  - SCI774-ACS-NP000632Z-CHALLENGE
+  - SCI774-DOI02
+  - SCI774-DOI03
+  - SCI774-DOI04
+  - SCI774-DOI05
+  - SCI774-DOI09
+  - SCI774-DOI10
+  - SCI774-DOI11
+  target_ids:
+  - naturalproductmech:mibig-08763e9bdc
+- check_id: SCI774-IDENTITY-SCOPE
+  name: Identity claim applicability
+  status: failed
+  required: true
+  summary: PM11473415 identifies isocomplestatin as an axial-chiral isomer of complestatin.
+    PM9066767 identifies chloropeptin II as complestatin. The owner combines CHEBI:65619
+    chloropeptin II and CHEBI:66093 isocomplestatin under one key and has SAME_STRUCTURE
+    links to both. The named natural products are distinguished by the inspected abstracts.
+    The retained key and six specified carbon centers do not decide the atropisomer.
+    Both alternative ChEBI SMILES failed the saved parser; those failures do not establish
+    equivalence or non-equivalence. Exact axial representation and maintained join
+    resolution require further adjudication, without a guessed replacement key.
+  evidence_ids:
+  - SCI774-LOCAL
+  - SCI774-PM11473415
+  - SCI774-PM9066767
+  - SCI774-CHEM
+  target_ids:
+  - naturalproductmech:mibig-08763e9bdc
+- check_id: SCI774-PRODUCER-SCOPE
+  name: Producer claim applicability
+  status: unavailable
+  required: true
+  summary: The cluster article explicitly attributes complestatin to S. lavendulae;
+    the chloropeptin article attributes chloropeptins to Streptomyces sp. WK-3419.
+    PM11473415 identifies isocomplestatin from a microbial-extract screen. These statements
+    do not by themselves establish that the exact isocomplestatin atropisomer is produced
+    by the owner’s S. lavendulae source. WK-3419 must not be transferred from chloropeptin
+    II or equated to a generic Streptomyces stock. The new complestatin abstract distinguishes
+    S. chartreusis AN1542 as source from heterologous S. lividans TK24; it does not
+    validate the isocomplestatin/S. lavendulae occurrence. Other title-only complestatin/chloropeptin
+    and CYPome citations do not close the exact-isomer gap.
+  evidence_ids:
+  - SCI774-LOCAL
+  - SCI774-PM11447274
+  - SCI774-PMC37473
+  - SCI774-PM9066767
+  - SCI774-PM11473415
+  - SCI774-DOI02
+  - SCI774-DOI03
+  - SCI774-DOI04
+  - SCI774-DOI05
+  - SCI774-DOI09
+  - SCI774-DOI10
+  - SCI774-DOI11
+  target_ids:
+  - naturalproductmech:mibig-08763e9bdc
+- check_id: SCI774-OCCURRENCE-SCOPE
+  name: Occurrence claim applicability
+  status: unavailable
+  required: true
+  summary: The two ChEBI occurrence rows cite different compound-specific publications.
+    Nine LOTUS rows and their original positions remain literal occurrence assertions.
+    Shared-key joining does not make the distinct isomer citations interchangeable.
+    Other retained DOI occurrence claims have bounded title/abstract checks but still
+    lack exact-isomer verification; no broad biological absence is inferred. The new
+    complestatin abstract distinguishes S. chartreusis AN1542 as source from heterologous
+    S. lividans TK24; it does not validate the isocomplestatin/S. lavendulae occurrence.
+    Other title-only complestatin/chloropeptin and CYPome citations do not close the
+    exact-isomer gap.
+  evidence_ids:
+  - SCI774-LOCAL
+  - SCI774-PM11473415
+  - SCI774-PM9066767
+  - SCI774-DOI02
+  - SCI774-DOI03
+  - SCI774-DOI04
+  - SCI774-DOI05
+  - SCI774-DOI09
+  - SCI774-DOI10
+  - SCI774-DOI11
+  target_ids:
+  - naturalproductmech:mibig-08763e9bdc
+- check_id: SCI774-LOCUS-SCOPE
+  name: Locus claim applicability
+  status: unavailable
+  required: true
+  summary: The inspected abstract reports cloning and sequencing the complestatin
+    cluster and biochemical support for one precursor-related aminotransferase. It
+    describes the oxidative coupling functions as proposed. This does not establish
+    an isocomplestatin-specific output from BGC0000326/AF386507.1 or experimentally
+    demonstrate every oxidase. The PMC capture contains no article body, and no current
+    accession sequence was read. The new complestatin abstract distinguishes S. chartreusis
+    AN1542 as source from heterologous S. lividans TK24; it does not validate the
+    isocomplestatin/S. lavendulae occurrence. Other title-only complestatin/chloropeptin
+    and CYPome citations do not close the exact-isomer gap.
+  evidence_ids:
+  - SCI774-LOCAL
+  - SCI774-PM11447274
+  - SCI774-PMC37473
+  - SCI774-DOI02
+  - SCI774-DOI03
+  - SCI774-DOI04
+  - SCI774-DOI05
+  - SCI774-DOI09
+  - SCI774-DOI10
+  - SCI774-DOI11
+  target_ids:
+  - naturalproductmech:mibig-08763e9bdc
+- check_id: SCI774-CLASSIFICATION-SCOPE
+  name: Classification claim applicability
+  status: passed
+  required: true
+  summary: The sources describe a cyclic peptide/alpha-ketoacyl hexapeptide context;
+    NPClassifier vancomycin/teicoplanin filing remains computed. The owner’s generic
+    grounding example about zwitterions does not resolve the expressly documented
+    axial-isomer distinction.
+  evidence_ids:
+  - SCI774-LOCAL
+  - SCI774-PM11447274
+  - SCI774-PM11473415
+  target_ids:
+  - naturalproductmech:mibig-08763e9bdc
+- check_id: SCI774-ACTIVITY-SCOPE
+  name: Activity claim applicability
+  status: unavailable
+  required: true
+  summary: PM11473415 directly reports isocomplestatin-specific HIV-1 integrase and
+    cellular replication endpoints. PM9066767 reports gp120-CD4 and cellular endpoints
+    for chloropeptins I and II. Assay endpoints, compounds and units must remain separate;
+    no molecular-target entry is added. The ANTIVIRAL summary and both AntibioticMech
+    SAME_INCHIKEY rows are retained source joins, not proof that their isomers or
+    assay mechanisms are identical. The named isocomplestatin endpoints are reported;
+    their applicability to the combined exact-structure owner remains unresolved until
+    its isomer identity is separated.
+  evidence_ids:
+  - SCI774-LOCAL
+  - SCI774-PM11473415
+  - SCI774-PM9066767
+  target_ids:
+  - naturalproductmech:mibig-08763e9bdc
+evidence:
+- evidence_id: SCI774-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch078-tentative/tentative-owner-source-inventory-001.json
+  accessed_at: '2026-10-28T01:06:16.343182Z'
+  locator: /entries/3/owner_document; /entries/3/rows; /entries/3/supplemental_retained_rows;
+    /entries/3/expected_official_intake_rows
+  snapshot_sha256: 6e7c1275120177e359bfc0f18d576ac2c47a4b2c7f86b5316c76c23a48805005
+  support: context_only
+  summary: 'The complete original owner and all seven retained plus two supplemental
+    arrays are preserved: 15 retained and 2 supplemental rows, with 13 rows in the
+    prospective six-array predicate. The owner has no inline or referenced graph;
+    all 3 history entries remain unchanged. The retained ChEBI-origin join contains
+    two rows, whereas the prospective owner-identifier predicate selects none; neither
+    projection is silently substituted for the other.'
+- evidence_id: SCI774-CHEM
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch078-tentative/source-science-preparation/root-tentative78-local-chemical-consistency-and-neighbors-001.json
+  accessed_at: '2026-10-28T01:12:04.986882Z'
+  locator: /records/3/smiles; /records/3/inchi; /records/3/comparisons; /records/3/chebi_alternatives
+  snapshot_sha256: 6a561d4c073dd142c1a75ad210503570b162fc8a6ff0994c3ee847503f67e37d
+  support: supports
+  summary: Saved SMILES and Standard InChI agree internally on full key JJGZGELTZPACID-OTLJHNKQSA-N,
+    formula C61H45Cl6N7O15, fragment count 1 and formal charge 0. The saved SMILES
+    FindPotentialStereo result has 6 specified and 0 unspecified tetrahedral carbon
+    sites. This diagnostic is distinct from a list containing only assigned chiral
+    centres. Representation-specific InChI C(-O)=N flags are diagnostics, not evidence
+    of a missing natural alkene configuration. Encoding agreement does not establish
+    complete natural identity. Both alternative ChEBI SMILES failed the saved parser
+    and retain null computed comparisons. These failures neither prove equivalence
+    nor resolve the literature-defined axial distinction.
+- evidence_id: SCI774-PM11473415
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-metadata-pubmed-001/pmid-11473415.xml
+  accessed_at: '2026-10-28T01:23:50.471124Z'
+  locator: ./PubmedArticle/MedlineCitation/Article/ArticleTitle; ./PubmedArticle/MedlineCitation/Article/Abstract;
+    ./PubmedArticle/PubmedData/ArticleIdList
+  snapshot_sha256: 7451eff5a70659ff2c7e51d0daa51862e47590bb5bae06ea863fccfc74c88a0b
+  support: partial
+  summary: The complete own abstract identifies isocomplestatin as an axial-chiral
+    isomer of complestatin and reports isocomplestatin-specific integrase and cellular
+    replication endpoints. It does not equate isocomplestatin with complestatin or
+    identify a replacement full structure key.
+- evidence_id: SCI774-PM9066767
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-metadata-pubmed-001/pmid-9066767.xml
+  accessed_at: '2026-10-28T01:23:51.480061Z'
+  locator: ./PubmedArticle/MedlineCitation/Article/ArticleTitle; ./PubmedArticle/MedlineCitation/Article/Abstract;
+    ./PubmedArticle/PubmedData/ArticleIdList
+  snapshot_sha256: 9d90a5882af656074e0a6472b2515cc09c18e62288a561486acdf0ea8fdcd1c5
+  support: partial
+  summary: The complete own abstract identifies chloropeptin II as complestatin and
+    attributes chloropeptins I and II to Streptomyces sp. WK-3419. Their binding and
+    cellular endpoints remain compound-specific; these statements are not transferred
+    to isocomplestatin.
+- evidence_id: SCI774-PM11447274
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-metadata-pubmed-001/pmid-11447274.xml
+  accessed_at: '2026-10-28T01:23:52.446050Z'
+  locator: ./PubmedArticle/MedlineCitation/Article/ArticleTitle; ./PubmedArticle/MedlineCitation/Article/Abstract;
+    ./PubmedArticle/PubmedData/ArticleIdList
+  snapshot_sha256: 5736da761b37c8de5ee6ab144ad85918cbc0b360b7be9b6db0a54a1cae828205
+  support: partial
+  summary: The own abstract attributes complestatin to S. lavendulae and describes
+    the cloned and sequenced cluster. A precursor-related aminotransferase was biochemically
+    supported, whereas the oxidative coupling functions were proposed. This is not
+    an isocomplestatin-specific locus demonstration.
+- evidence_id: SCI774-PMC37473
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-primary-001/pmc-37473.xml
+  accessed_at: '2026-10-28T01:40:58.459508Z'
+  locator: ./article/front/article-meta/article-id; ./article/front/article-meta/title-group/article-title;
+    ./article/front/article-meta/abstract; no article/body; publisher restriction
+    comment
+  snapshot_sha256: 322bb483814b13c5e61765356eeabe0e461ca75e5bdc0465319b80a270c398a0
+  support: partial
+  summary: The saved own PMC response matches the complestatin cluster publication
+    but supplies frontmatter and abstract only. It explicitly states that the publisher
+    does not allow full XML download. HTTP200 and the failed full-body guard are preserved;
+    this is the same publication as PMID11447274, not independent experimental support.
+- evidence_id: SCI774-ACS-NP000632Z-CHALLENGE
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-primary-independent-001/acs-np000632z/acs-np000632z-primary.html
+  accessed_at: '2026-10-28T01:52:08.893911Z'
+  locator: whole saved HTML title and client-challenge response; associated original
+    access receipt
+  snapshot_sha256: 83daf054cfd8a552a8e324b8eb1fe0229e42254f56e53788510b4263d9454b35
+  support: context_only
+  summary: The exact ACS np000632z request returned a complete HTTP403 client challenge.
+    It contains no own article identity or scientific evidence; the request DOI does
+    not authenticate the response. The original failed access is preserved without
+    retry or alternate.
+- evidence_id: SCI774-DOI02
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-metadata-held-crossref-001/doi-02.json
+  accessed_at: '2026-10-28T01:56:29.233187Z'
+  locator: /message/DOI; /message/title; /message/abstract if present; /message/resource/primary/URL
+  snapshot_sha256: 45b333eade27246bc3623543ba3bd72fea17ebf4195f090b83a58e1b037964c4
+  support: partial
+  summary: The own title names a complestatin cluster from S. chartreusis AN1542.
+    The supplied abstract reports complestatin production in a heterologous S. lividans
+    TK24 host and engineered analogues. The natural source, heterologous host and
+    derivatives are distinct; this does not verify an isocomplestatin occurrence in
+    S. lavendulae.
+- evidence_id: SCI774-DOI03
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-metadata-held-crossref-001/doi-03.json
+  accessed_at: '2026-10-28T01:56:30.296810Z'
+  locator: /message/DOI; /message/title; /message/abstract if present; /message/resource/primary/URL
+  snapshot_sha256: 3ac74c28d1e94efc11a709438ce9a4f1a9b50456b69364e32e332884fb9d8df4
+  support: partial
+  summary: The own title concerns cytochrome P450 complements of S. avermitilis and
+    S. coelicolor A3(2), with no deposited abstract. It does not itself substantiate
+    the retained S. lavendulae/isocomplestatin occurrence. A title mismatch in scope
+    is not proof that the complete article lacks every relevant discussion.
+- evidence_id: SCI774-DOI04
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-metadata-held-crossref-001/doi-04.json
+  accessed_at: '2026-10-28T01:56:31.251312Z'
+  locator: /message/DOI; /message/title; /message/abstract if present; /message/resource/primary/URL
+  snapshot_sha256: 415c254ca739b0e5db495912b96ef7e06a6c684ffe5452bd213d4a4914120636
+  support: partial
+  summary: The own title concerns the structure of complestatin and complement-related
+    inhibition. With no deposited abstract or inspected main text, it does not resolve
+    the distinct isocomplestatin axis, full owner structure or exact activity.
+- evidence_id: SCI774-DOI05
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-metadata-held-crossref-001/doi-05.json
+  accessed_at: '2026-10-28T01:56:32.267830Z'
+  locator: /message/DOI; /message/title; /message/abstract if present; /message/resource/primary/URL
+  snapshot_sha256: c76f9ec62d91ad68c77337e4eb3dbbb0112effc451943514f035a0cd9c14e791
+  support: partial
+  summary: The own title concerns complestatin and chloropeptin I from two streptomycete
+    strains. No abstract is deposited. It does not identify those stocks or establish
+    isocomplestatin production.
+- evidence_id: SCI774-DOI09
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-metadata-held-crossref-001/doi-09.json
+  accessed_at: '2026-10-28T01:56:36.289731Z'
+  locator: /message/DOI; /message/title; /message/abstract if present; /message/resource/primary/URL
+  snapshot_sha256: 35c7abd32324c1652bcd8e8be258c1f7f5b0a830102bb62964ff0d3dcac41b8f
+  support: partial
+  summary: The own title literally spells the product "Complestain" and names S. lavendulae
+    in an anti-complement isolation study. The deposited spelling is preserved. No
+    abstract is supplied, and this title does not establish the distinct isocomplestatin
+    atropisomer.
+- evidence_id: SCI774-DOI10
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-metadata-held-crossref-001/doi-10.json
+  accessed_at: '2026-10-28T01:56:37.297695Z'
+  locator: /message/DOI; /message/title; /message/abstract if present; /message/resource/primary/URL
+  snapshot_sha256: f45408c9aff173b7ce3b36fe420ec3f578f32250a673c836143a6f27296b52c8
+  support: partial
+  summary: The own title names chloropeptins I and II and gp120-CD4 binding. No abstract
+    is deposited. Compound, target and source scope cannot be transferred to isocomplestatin
+    on the shared key alone.
+- evidence_id: SCI774-DOI11
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch078-tentative/literature-preparation/public-metadata-held-crossref-001/doi-11.json
+  accessed_at: '2026-10-28T01:56:38.321187Z'
+  locator: /message/DOI; /message/title; /message/abstract if present; /message/resource/primary/URL
+  snapshot_sha256: 333c96a9ecf18fa3c7e3daa9773c6a6466f9e275c8725f860212a5292251fef2
+  support: partial
+  summary: The own title names structure elucidation of chloropeptin I. No abstract
+    is deposited. It supplies no atom-level structural verification of isocomplestatin
+    or chloropeptin II.
+- evidence_id: SCI774-IDENTITY-CONTRACT
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  accessed_at: '2026-10-28T02:02:06.831636Z'
+  locator: NaturalProduct.related_records; NaturalProduct.source_concepts; ChemicalStructure
+    identity description
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+  support: supports
+  summary: SAME_STRUCTURE denotes the same structure in another corpus. Source concepts
+    preserve upstream resolution provenance; a shared Standard InChIKey does not establish
+    equivalence of literature-distinguished axial isomers.
+- evidence_id: SCI774-RUBRIC
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/docs/record-reviews.md
+  accessed_at: '2026-10-28T02:02:06.831636Z'
+  locator: Verdict And Severity
+  snapshot_sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+  support: context_only
+  summary: The rubric treats wrong identity as blocker and materially unsupported
+    claims as major. This proposal concerns a confirmed exact-identity join conflict;
+    ROOT determines the formal severity and outcome.
+assessments:
+- assessment_id: SCI774-ENCODING
+  area: representation
+  topic: Internal encodings versus natural identity
+  outcome: supported
+  summary: Saved SMILES and Standard InChI agree internally on full key JJGZGELTZPACID-OTLJHNKQSA-N,
+    formula C61H45Cl6N7O15, fragment count 1 and formal charge 0. The saved SMILES
+    FindPotentialStereo result has 6 specified and 0 unspecified tetrahedral carbon
+    sites. This diagnostic is distinct from a list containing only assigned chiral
+    centres. Representation-specific InChI C(-O)=N flags are diagnostics, not evidence
+    of a missing natural alkene configuration. Encoding agreement does not establish
+    complete natural identity. Both alternative ChEBI SMILES failed the saved parser
+    and retain null computed comparisons. These failures neither prove equivalence
+    nor resolve the literature-defined axial distinction.
+  evidence_ids:
+  - SCI774-CHEM
+  target_ids:
+  - naturalproductmech:mibig-08763e9bdc
+- assessment_id: SCI774-IDENTITY
+  area: identity
+  topic: Identity applicability
+  outcome: concern
+  summary: PM11473415 identifies isocomplestatin as an axial-chiral isomer of complestatin.
+    PM9066767 identifies chloropeptin II as complestatin. The owner combines CHEBI:65619
+    chloropeptin II and CHEBI:66093 isocomplestatin under one key and has SAME_STRUCTURE
+    links to both. The named natural products are distinguished by the inspected abstracts.
+    The retained key and six specified carbon centers do not decide the atropisomer.
+    Both alternative ChEBI SMILES failed the saved parser; those failures do not establish
+    equivalence or non-equivalence. Exact axial representation and maintained join
+    resolution require further adjudication, without a guessed replacement key.
+  evidence_ids:
+  - SCI774-LOCAL
+  - SCI774-PM11473415
+  - SCI774-PM9066767
+  - SCI774-CHEM
+  target_ids:
+  - naturalproductmech:mibig-08763e9bdc
+- assessment_id: SCI774-PRODUCER
+  area: provenance
+  topic: Producer applicability
+  outcome: unknown
+  summary: The cluster article explicitly attributes complestatin to S. lavendulae;
+    the chloropeptin article attributes chloropeptins to Streptomyces sp. WK-3419.
+    PM11473415 identifies isocomplestatin from a microbial-extract screen. These statements
+    do not by themselves establish that the exact isocomplestatin atropisomer is produced
+    by the owner’s S. lavendulae source. WK-3419 must not be transferred from chloropeptin
+    II or equated to a generic Streptomyces stock. The new complestatin abstract distinguishes
+    S. chartreusis AN1542 as source from heterologous S. lividans TK24; it does not
+    validate the isocomplestatin/S. lavendulae occurrence. Other title-only complestatin/chloropeptin
+    and CYPome citations do not close the exact-isomer gap.
+  evidence_ids:
+  - SCI774-LOCAL
+  - SCI774-PM11447274
+  - SCI774-PMC37473
+  - SCI774-PM9066767
+  - SCI774-PM11473415
+  - SCI774-DOI02
+  - SCI774-DOI03
+  - SCI774-DOI04
+  - SCI774-DOI05
+  - SCI774-DOI09
+  - SCI774-DOI10
+  - SCI774-DOI11
+  target_ids:
+  - naturalproductmech:mibig-08763e9bdc
+- assessment_id: SCI774-OCCURRENCE
+  area: provenance
+  topic: Occurrence applicability
+  outcome: unknown
+  summary: The two ChEBI occurrence rows cite different compound-specific publications.
+    Nine LOTUS rows and their original positions remain literal occurrence assertions.
+    Shared-key joining does not make the distinct isomer citations interchangeable.
+    Other retained DOI occurrence claims have bounded title/abstract checks but still
+    lack exact-isomer verification; no broad biological absence is inferred. The new
+    complestatin abstract distinguishes S. chartreusis AN1542 as source from heterologous
+    S. lividans TK24; it does not validate the isocomplestatin/S. lavendulae occurrence.
+    Other title-only complestatin/chloropeptin and CYPome citations do not close the
+    exact-isomer gap.
+  evidence_ids:
+  - SCI774-LOCAL
+  - SCI774-PM11473415
+  - SCI774-PM9066767
+  - SCI774-DOI02
+  - SCI774-DOI03
+  - SCI774-DOI04
+  - SCI774-DOI05
+  - SCI774-DOI09
+  - SCI774-DOI10
+  - SCI774-DOI11
+  target_ids:
+  - naturalproductmech:mibig-08763e9bdc
+- assessment_id: SCI774-LOCUS
+  area: provenance
+  topic: Locus applicability
+  outcome: unknown
+  summary: The inspected abstract reports cloning and sequencing the complestatin
+    cluster and biochemical support for one precursor-related aminotransferase. It
+    describes the oxidative coupling functions as proposed. This does not establish
+    an isocomplestatin-specific output from BGC0000326/AF386507.1 or experimentally
+    demonstrate every oxidase. The PMC capture contains no article body, and no current
+    accession sequence was read. The new complestatin abstract distinguishes S. chartreusis
+    AN1542 as source from heterologous S. lividans TK24; it does not validate the
+    isocomplestatin/S. lavendulae occurrence. Other title-only complestatin/chloropeptin
+    and CYPome citations do not close the exact-isomer gap.
+  evidence_ids:
+  - SCI774-LOCAL
+  - SCI774-PM11447274
+  - SCI774-PMC37473
+  - SCI774-DOI02
+  - SCI774-DOI03
+  - SCI774-DOI04
+  - SCI774-DOI05
+  - SCI774-DOI09
+  - SCI774-DOI10
+  - SCI774-DOI11
+  target_ids:
+  - naturalproductmech:mibig-08763e9bdc
+- assessment_id: SCI774-CLASSIFICATION
+  area: completeness
+  topic: Classification applicability
+  outcome: supported
+  summary: The sources describe a cyclic peptide/alpha-ketoacyl hexapeptide context;
+    NPClassifier vancomycin/teicoplanin filing remains computed. The owner’s generic
+    grounding example about zwitterions does not resolve the expressly documented
+    axial-isomer distinction.
+  evidence_ids:
+  - SCI774-LOCAL
+  - SCI774-PM11447274
+  - SCI774-PM11473415
+  target_ids:
+  - naturalproductmech:mibig-08763e9bdc
+- assessment_id: SCI774-ACTIVITY
+  area: quantity
+  topic: Activity applicability
+  outcome: unknown
+  summary: PM11473415 directly reports isocomplestatin-specific HIV-1 integrase and
+    cellular replication endpoints. PM9066767 reports gp120-CD4 and cellular endpoints
+    for chloropeptins I and II. Assay endpoints, compounds and units must remain separate;
+    no molecular-target entry is added. The ANTIVIRAL summary and both AntibioticMech
+    SAME_INCHIKEY rows are retained source joins, not proof that their isomers or
+    assay mechanisms are identical. The named isocomplestatin endpoints are reported;
+    their applicability to the combined exact-structure owner remains unresolved until
+    its isomer identity is separated.
+  evidence_ids:
+  - SCI774-LOCAL
+  - SCI774-PM11473415
+  - SCI774-PM9066767
+  target_ids:
+  - naturalproductmech:mibig-08763e9bdc
+- assessment_id: SCI774-GRAPH
+  area: graph
+  topic: Mechanism and grounded target scope
+  outcome: unknown
+  summary: The whole owner has no inline or referenced causal graph. Source-supported
+    cluster statements, proposed enzyme functions and compound activity are not equivalent
+    to a fully grounded mechanism or direct target assignment.
+  evidence_ids:
+  - SCI774-LOCAL
+  - SCI774-PM11473415
+  - SCI774-PM9066767
+  - SCI774-PM11447274
+  - SCI774-PMC37473
+  - SCI774-ACS-NP000632Z-CHALLENGE
+  - SCI774-DOI02
+  - SCI774-DOI03
+  - SCI774-DOI04
+  - SCI774-DOI05
+  - SCI774-DOI09
+  - SCI774-DOI10
+  - SCI774-DOI11
+  target_ids:
+  - naturalproductmech:mibig-08763e9bdc
+findings:
+- finding_id: F774-AXIAL-ISOMER-IDENTITY-JOIN
+  issue_key: isocomplestatin-complestatin-axial-isomer-same-structure-collapse
+  category: identity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Distinct axial isomers are joined as the same structure
+  description: The owner resolves CHEBI:66093 isocomplestatin and CHEBI:65619 chloropeptin
+    II into one record and asserts SAME_STRUCTURE links to both. Own PMID11473415
+    explicitly distinguishes isocomplestatin as an axial-chiral isomer of complestatin;
+    own PMID9066767 identifies chloropeptin II as complestatin. Both exact-structure
+    links therefore cannot simultaneously identify one natural structure. The six
+    encoded carbon centres and matching Standard InChIKey do not resolve the axis.
+    The generic grounding note acknowledges ambiguity but does not remove the contradictory
+    exact-structure links. No assertion is made about which atropisomer the retained
+    graph denotes, and no replacement full key is inferred.
+  target_ids:
+  - naturalproductmech:mibig-08763e9bdc
+  field_paths:
+  - source_concepts[1]
+  - source_concepts[2]
+  - related_records[0]
+  - related_records[1]
+  - grounding_notes
+  evidence_ids:
+  - SCI774-LOCAL
+  - SCI774-CHEM
+  - SCI774-PM11473415
+  - SCI774-PM9066767
+  - SCI774-IDENTITY-CONTRACT
+  - SCI774-RUBRIC
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: maintained source resolution and regeneration owner
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: original source concepts and exact chemical-key evidence to preserve
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_origins.tsv
+    role: compound-specific origins to preserve and reassess
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/antibioticmech_inchikeys.tsv
+    role: original cross-corpus join evidence to preserve
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/amino_acids_and_peptides/isocomplestatin.yaml
+    role: generated owner requiring reviewed disambiguation and migration
+  rule_id: distinct-natural-stereoisomers-must-not-be-asserted-as-one-exact-structure
+  native_severity: blocker for contradictory exact-structure links to distinct axial
+    isomers
+  normalization_reason: The record simultaneously asserts exact-structure identity
+    to isocomplestatin and chloropeptin II/complestatin, which the own literature
+    distinguishes as axial isomers. The confirmed defect concerns those exact-identity
+    joins. The retained graph's axial assignment and any complete replacement structure
+    or key remain unresolved.
+actions:
+- action_id: A774-DISAMBIGUATE-AXIAL-ISOMER-JOINS
+  finding_ids:
+  - F774-AXIAL-ISOMER-IDENTITY-JOIN
+  target_ids:
+  - naturalproductmech:mibig-08763e9bdc
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: maintained source resolution and regeneration owner
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: original source concepts and exact chemical-key evidence to preserve
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_origins.tsv
+    role: compound-specific origins to preserve and reassess
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/antibioticmech_inchikeys.tsv
+    role: original cross-corpus join evidence to preserve
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/amino_acids_and_peptides/isocomplestatin.yaml
+    role: generated owner requiring reviewed disambiguation and migration
+  description: In later curation, independently establish the source-specific structures
+    and axial identities, then review a maintained disambiguation and migration that
+    preserves distinct isomer concepts and removes unsupported exact-structure joins.
+    Reassess producer, locus, occurrence and activity claims against their named compound.
+    Preserve the raw evidence; do not choose an arbitrary same-key concept, invent
+    a full replacement key or edit only the generated owner.
+  acceptance_checks:
+  - Preserve the original full MIBiG, ChEBI structure/origin and AntibioticMech rows
+    and exact own-publication isomer statements.
+  - Verify the full supported structures and axial distinction independently; determine
+    what the chosen representation can and cannot encode.
+  - Review an explicit maintained resolution rule when one Standard InChIKey cannot
+    distinguish the relevant axial identities; no such implemented fix is claimed
+    here.
+  - Ensure an exact-structure link does not connect the two distinct axial isomers,
+    and assign each retained occurrence, producer, locus and assay only where its
+    own source supports the named product.
+  - Capture any implementation module before relying on its behavior; after authorized
+    curation, run the applicable validation, reproducibility and history-preserving
+    migration checks.
+  generator: Reviewed maintained source resolution and regeneration; exact implementation
+    remains to be chosen.
+limitations:
+- Exact retained source grades, history, whole rows and original source clocks are
+  preserved. Metadata is not promoted to full article-body, structural figure or supplement
+  credit.
+- No current taxonomy, physical stock, accession sequence or complete natural configuration
+  is independently verified by this proposal.
+- No quantitative activity or target is transferred across congeners, axial isomers,
+  assay types or source organisms. No operational production or assay instructions
+  are supplied.
+- Unresolved required evidence checks remain explicit. A missing source is not treated
+  as positive or negative experimental evidence.
+- The named natural products are distinguished by the inspected abstracts. The retained
+  key and six specified carbon centers do not decide the atropisomer. Both alternative
+  ChEBI SMILES failed the saved parser; those failures do not establish equivalence
+  or non-equivalence. Exact axial representation and maintained join resolution require
+  further adjudication, without a guessed replacement key.
+- These statements do not by themselves establish that the exact isocomplestatin atropisomer
+  is produced by the owner’s S. lavendulae source. WK-3419 must not be transferred
+  from chloropeptin II or equated to a generic Streptomyces stock.
+- This does not establish an isocomplestatin-specific output from BGC0000326/AF386507.1
+  or experimentally demonstrate every oxidase. The PMC capture contains no article
+  body, and no current accession sequence was read.
+- Assay endpoints, compounds and units must remain separate; no molecular-target entry
+  is added. The ANTIVIRAL summary and both AntibioticMech SAME_INCHIKEY rows are retained
+  source joins, not proof that their isomers or assay mechanisms are identical.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- FailedQC001 is retained for an explicit separate network-enabled retry; no artifact
+  will be overwritten.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint
+  and before downstream tests. Its actual exit1/log/input capture/root observation
+  remain pinned; the selected successful canonical QC attempt002 is separately timed.
+  No individual-review validation failure or counter reset is claimed.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter
+  skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings;
+  this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld
+  nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological
+  or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological
+  production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions
+  and no-adapter pairs; a successful command does not convert these into verified
+  scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command
+  execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population
+  was checked; external caches and generated bytecode are not asserted to be independently
+  byte-pinned.
+notes:
+- The whole local owner and retained source rows were read. Full-owner scientific
+  verification remains false; scientific_review denotes the bounded scientific interpretation
+  in this report.
+- Original owner/source reading, two-encoding computation, neighbor inspection, HTTP
+  retrieval and later metadata reading retain separate clocks. Official intake separately
+  computed SMILES facts.
+- No scientific record, maintained input or native curation status was changed. Any
+  findings and actions record ROOT-adopted proposed work; exact-source limitations
+  and unavailable checks remain explicit.
+```
