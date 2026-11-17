@@ -1,0 +1,1307 @@
+# AT2433-A1: supported parent identity and bounded enzyme graphs
+
+- Review: 20261021T144356Z-at2433-a1
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-21T14:25:01.246972Z
+- Finished UTC: 2026-10-21T14:43:56.989849Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Original structure and native isolation support the exact A1 parent and both occurrence citations. The three inline graphs accurately distinguish FAD binding, partial sugar-precursor assays and AtmS13 structure from whole-product biosynthesis. Native culture identifiers should be retained. The unavailable 2006 full study and synthetic AtmS14 sequence keep the review partial.
+
+## Scope And Provenance
+
+One complete generated owner and any referenced components, assessed claim by claim for exact identity, provenance, origin, producer and occurrence scope, biosynthesis, classification, optional content and audit history.
+
+Selection: Campaign record 89, batch 009, selected in path order from the fresh-main authoritative validated catalogue and the separately validated targets in earlier batch commits (publication tracked separately). At selection, 134 of 3116 current records had campaign coverage and 2982 remained. The population search included ignored files. Exactly one target is assessed here.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 1c2402097718c138b081e00943de8f04de0541cd.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-6c1bd93a9d | data/natural_products/alkaloids/at2433-a1.yaml | generated | AT2433-A1 |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Closed-schema target validation | passed | True | naturalproductmech:mibig-6c1bd93a9d | The documented target strict validator completed; scientific support is assessed separately. |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-6c1bd93a9d | All 3,116 current record files agree with PATHS.tsv and their pinned filing pathways. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-6c1bd93a9d | All 3,116 current records passed the documented byte-reproduction gate against committed inventories and maintained curation inputs. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-6c1bd93a9d | The exhaustive review queue produced 8,928 diagnostic rows across 12 queues; this deterministic output does not establish scientific review. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-6c1bd93a9d | The configured identifier-label gate passed using the existing ontology caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions, 499 warning-only mismatches and 4,744 pairs skipped because their prefixes have no adapter. |
+| Full repository quality gate on the current main baseline | passed | True | naturalproductmech:mibig-6c1bd93a9d | The full documented just qc recipe passed on the unchanged main baseline during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). All configured lint, governance, documentation, provenance, source-queue, schema, rendering, reproduction, filing-integrity and reporting stages completed successfully. |
+| Complete owner and component scope | passed | True | naturalproductmech:mibig-6c1bd93a9d | Complete owner and all matching local source rows read. The native resolved view confirms the empty component-reference set; all formal input hashes agree. |
+| Inline protein graph assertions and exact canonical parents | passed | True | naturalproductmech:mibig-6c1bd93a9d | Every inline edge and condition was checked against the cited experiment or current exact identifier/sequence. No graph promotes structural/cofactor/precursor evidence to finished-product biosynthesis. |
+| Exact synthetic AtmS14 construct sequence | unavailable | True | naturalproductmech:mibig-6c1bd93a9d | The owner explicitly discloses this gap. The main identifies the synthetic parent/construct and the native canonical parent is verified; the unavailable SI prevents an independent exact construct-sequence comparison. |
+| Both native occurrence citations and culture deposit bridge | passed | True | naturalproductmech:mibig-6c1bd93a9d | The 1989 SCC 1655 = ATCC 39691 statement and the 2015 exact compound-6 isolation support both species-level occurrences; original chemical work is separately retained. |
+| Required entry-level biosynthetic citation full-body review | unavailable | True | naturalproductmech:mibig-6c1bd93a9d | The full 2006 primary and SI could not be inspected. No unsupported-claim finding or automatic method upgrade is inferred from this access gap. |
+| Optional current-study supplemental spectra access | unavailable | False | naturalproductmech:mibig-6c1bd93a9d | The linked response is not a readable PDF. Main-body native isolation and the independent original structure paper are available. |
+| Exact parent chemistry, original congener distinction and authority audit | passed | True | naturalproductmech:mibig-6c1bd93a9d | Original structure paper and critical Figure 1/Figure 3/p1788 pixels were inspected; no exact-parent identity or xref defect is established. |
+
+## Scientific And Domain Assessments
+
+### Native status and retained history
+
+provenance: supported. Targets: naturalproductmech:mibig-6c1bd93a9d.
+
+The six history entries include three explicit October 3 RECORD_CURATED events adding and refining partial protein/precursor graphs, plus three seed events. Their authors, timestamps and llm_assisted flags are retained, and SEEDED status is deliberate. Historical claims that sources or sequences were checked are audit context; the current graph review independently assesses the scientific assertions.
+
+### Optional mechanism, activity and application scope
+
+completeness: supported. Targets: naturalproductmech:mibig-6c1bd93a9d.
+
+The owner contains three inline BIOSYNTHESIS graphs, assessed separately against their primary papers, constructs and identifiers. It has no complete pathway, compound molecular target, bioactivity summary, clinical status, application or cross-corpus link. Partial cofactor, precursor and crystal evidence is not assumed to establish final-product synthesis.
+
+### Computed filing and source-asserted classes
+
+representation: supported. Targets: naturalproductmech:mibig-6c1bd93a9d.
+
+The owner reproduces its exact-key NPClassifier row, including model version npclassifier.gnps2.org@2026-09-07, Alkaloids filing, every returned superclass/class label and true glycoside flag. These are explicitly computed predictions, not experimental proof of precursor use, ring taxonomy, natural origin or exact stereochemical identity. BGC class claims retain their separate MIBiG provenance and biological assessment.
+
+### Structured transcriptomic context
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-6c1bd93a9d.
+
+The asserted native producer and exact biosynthetic locus lack a matching dataset in the inspected catalogue. No coexpression/module-membership claim is present in this owner. Recombinant E. coli, yeast or A. oryzae work is not substituted for native-producer transcriptomic evidence. Database noncoverage is not negative biological evidence; paper-specific expression experiments are assessed separately.
+
+### Literal LOTUS organism-identifier routing
+
+provenance: supported. Targets: naturalproductmech:mibig-6c1bd93a9d.
+
+Every literal organism entity in the matching LOTUS rows resolves to its retained species and NCBI taxon identifier. Compound occurrence, experimental host versus substrate and strain-level taxonomy require the separate primary-source assessment.
+
+### AtmC FAD binding graph
+
+graph: supported. Targets: naturalproductmech:mibig-6c1bd93a9d.
+
+The graph asserts measured cofactor binding with assay context. The paper and SI support its value, uncertainty, experiment count and construct handling. RebC/StaC chemistry is not transferred to AtmC, and the graph makes no finished AT2433-A1 turnover claim.
+
+### AtmS8/AtmS9/AtmS14 sequential assay graph
+
+graph: supported. Targets: naturalproductmech:mibig-6c1bd93a9d.
+
+The graph preserves direct substrate/product observations for the first two assays, condition-dependent AtmS9 product scope, and AtmS14 degradation without asserting the unisolated intermediate or complete donor. Native parent identifiers agree with the exact locus. Synthetic-construct sequence verification remains explicitly unresolved.
+
+### AtmS13 structural assembly and PLP adduct
+
+graph: supported. Targets: naturalproductmech:mibig-6c1bd93a9d.
+
+The protein node denotes the exact canonical parent of the SeMet cleaved construct; the dimer node remains distinct. Both edges are supported at the crystal/structural level. Q0H2X1 Lys187, label190 after SNA, and alternate PLP occupancy match the deposit. Neither substrate stereochemistry nor aminotransferase turnover follows from this evidence.
+
+### Native origin and experimental stock
+
+evidence: supported. Targets: naturalproductmech:mibig-6c1bd93a9d.
+
+Both primary native isolations identify the same deposited producer lineage by explicit stock identifiers. A1 is individually isolated rather than inferred from congener production. Preserve SCC 1655 / ATCC 39691 as culture context.
+
+### Conservative cluster strength and the unresolved entry citation
+
+evidence: unknown. Targets: naturalproductmech:mibig-6c1bd93a9d.
+
+The current absence of locus methods avoids an unsupported full-product grade. The detailed partial graphs do not establish complete AT2433-A1 reconstitution or native final-product loss. The inaccessible 2006 body prevents a complete independent audit of the entry-level cluster evidence; this is a required limitation, not a refutation.
+
+### Exact A1 disaccharide, chlorine and stereochemical assignment
+
+identity: supported. Targets: naturalproductmech:mibig-6c1bd93a9d.
+
+Neutral C34H35ClN4O9 has eight assigned sugar centres, the indolocarbazole imide N-methyl, one chlorine and aminopentose N-methyl. The original numbered A1 drawing/chemical degradation and reported CD support this congener and hand. Current MIBiG, literal NPAtlas NPA011993, exact PubChem 128141 and official ChEBI 222273 MOL agree at full Standard and fixed-H identity. ChEBI remains two-star, supporting retained minting; its invalid default SMILES is not silently repaired.
+
+## Findings
+
+### S089-F-STRAIN: The directly documented producer culture is omitted
+
+minor / open / confirmed; issue key: mibig-bgc0000809-atcc39691-culture-context-omitted.
+
+The species-level producer omits SCC 1655 / ATCC 39691, explicitly bridged in the original isolation paper and used in the 2015 exact A1 reisolation. Add that bounded native culture context without turning source assertion into a species-wide or native-genetic demonstration.
+
+## Recommended Actions And Acceptance Checks
+
+### S089-ACT-STRAIN
+
+Add the existing consumed producer-strain decision source_id=BGC0000809:1, expected_source_row_sha256=c7f668f648e6597d1d80605eb4feef28bdca5ba689e9dfeb3337c51c3a078b68, strain=ATCC 39691 (SCC 1655), reference=DOI:10.7164/antibiotics.42.1547, with curator/date and rationale also citing DOI:10.1021/acs.jnatprod.5b00429. Preserve taxon 360723, DQ297453.1, v3, explicit unknown bounds, SOURCE_ASSERTION and CLUSTER_UNSTATED. The native culture bridge does not resolve the inaccessible 2006 construct/stock details or prove whole-product biosynthesis from the partial inline graphs. Do not add locus methods on that basis. The strain consumer rejects a simultaneous structure correction; if one is separately authorized, require reviewed and tested exact-source composition.
+
+- Require the exact unique raw row and complete SHA, stable primary reference and attribution; changed rows and duplicate decisions fail.
+- Emit native ATCC 39691 (SCC 1655) with primary provenance while retaining the source assertion and ungraded locus.
+- Do not infer recombinant construct sequence equality, missing source coordinates or a complete-product assay.
+- After separately authorized curation, run strict, reproduction, corpus and QC gates.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| R089-OWNER | data/natural_products/alkaloids/at2433-a1.yaml; Complete owner, all scientific claims, inline graphs and history entries | supports | Root read the complete AT2433-A1 owner following its individual intake. It has 2 occurrences, 1 producer and 1 cluster assertions. Referenced components are empty. Present optional fields: causal_graphs. These observations use complete parsed content, not a filtered search miss. |
+| R089-LOCAL-SOURCES | /private/tmp/npm-review-work/089/local-sources.json; Every matching MIBiG, LOTUS, ChEBI, CyanoMetDB and NPClassifier row plus resolved owner | context_only | Root read all matching source rows. The resolved owner equals the complete parsed raw YAML. Retained source assertions and deterministic joins are distinguished from the exact primary experiments reviewed separately. |
+| R089-IMODULON-DATASETS | /private/tmp/npm-review-work/010/imodulon-datasets.txt; Full 28-row dataset catalogue; original retrieval in 010/imodulon-context-receipts.json | context_only | The complete same-session catalogue retrieved at 07:21:15 UTC has no Aspergillus, Mariannaea, Actinomadura or Stigmatella dataset. The catalogue is reused with its original timestamp; no fresh retrieval is claimed. Species matching alone would not establish an exact strain, gene, locus or product experiment. |
+| R089-Q103810935 | https://www.wikidata.org/wiki/Special:EntityData/Q103810935.json; Exact organism entity, scientific name and P685 NCBI Taxonomy identifier | context_only | Literal organism entity Q103810935 resolves as Actinomadura melliaura, with P685 360723, matching the local LOTUS row. This verifies identifier routing only; it does not support compound occurrence, assign experimental strain or settle historical taxonomic revisions. |
+| R089-G-ATMC | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&amp;id=3437190&amp;retmode=xml; Results, Table 2 and Experimental Procedures; full retrieved main text, with ITC methods re-read after initial output truncation | supports | AtmC co-purifies with FAD. The five ITC measurements give Kd 73 +/- 28 nM; no SD/SEM interpretation is specified. Rosetta 2(DE3)pLysS expression, nickel purification, 2 M KBr/2 M urea deflavination and stated gel-filtration/ITC buffer support the owner notes. Activity and crystal experiments on RebC/StaC variants are not AtmC turnover evidence. |
+| R089-G-ATMC-SI | https://ars.els-cdn.com/content/image/1-s2.0-S1074552112001809-mmc1.pdf; Original physical pages 2-5 and 19-20: full AtmC alignment, Figure S2D and caption, cloning procedure; alignment and ITC original pixels viewed | supports | Figure S2D is the AtmC ITC trace at 25 C. Its 534-residue alignment exactly matches the current native protein. AtmC genomic PCR into pET28a and primer sequences are explicit. The forward primer begins at the coding start and reverse target is downstream of the native stop in DQ297453.1. Tag and canonical protein remain distinct. |
+| R089-G-SUGAR | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&amp;id=4598305&amp;retmode=xml; Complete main body, Figures 1-3 and every in-vitro experimental subsection | supports | AtmS8 oxidation and subsequent AtmS9 decarboxylation use the stated enzyme concentrations, NMR/HPLC/HRMS and omission controls. AtmS8 reaches about 97% at 16 h; AtmS9 is quantitative over 15 h. Adding AtmS14 yields degradation products 6 and TDP, not an isolated 5-T intermediate or finished donor. Longer, warmer AtmS9 incubation gives reduced xylose nucleotide; the owner preserves that qualification. Main text explicitly identifies the synthetic AtmS14 construct. |
+| R089-G-STRUCTURE | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&amp;id=4570032&amp;retmode=xml; Complete main body, Table 1, Figure 2 and cloning/crystallography/cofactor sections | supports | The 1.50-A SeMet 4ZWV construct comes from pMCSG68 in BL21(DE3)-Gold; TEV cleavage leaves SNA. It has a dimer and Lys187-PLP internal aldimines with two half-occupancy orientations. The distinct 3.00-A pET28a 4XAU construct has a retained His tag. Native substrate turnover is not established by these crystal or docking observations. |
+| R089-G-STRUCTURE-FIG | https://cdn.ncbi.nlm.nih.gov/pmc/blobs/e649/4570032/b29404b8d63c/nihms699679f2.jpg; Original Figure 2 image viewed with caption and deposited coordinates | supports | The published panel depicts the two-subunit 4ZWV assembly and alternative cofactor poses. Deposited residue identities, numbering and occupancies were checked directly, rather than inferred from small image labels. |
+| R089-G-GENBANK | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&amp;id=DQ297453.1&amp;rettype=gbwithparts&amp;retmode=text; Source feature, five exact CDS features, genomic sequence and translated products | supports | The accession identifies A. melliaura SCC 1655, taxon360723. Independent table11 CDS translation, including initiator convention and reverse-strand AtmS14, exactly matches all five stated UniProt canonical sequences. Native locus identity is separate from the experimental affinity-tag constructs. |
+| R089-G-Q0H2X3 | https://rest.uniprot.org/uniprotkb/Q0H2X3.json; Literal accession, complete canonical sequence, taxon, gene, sequence version and GenBank/PDB cross-references | supports | Q0H2X3: 534 residues, gene atC, taxon360723, sequence version1; exact ABC02791.1 CDS translation. The current entry is unreviewed, and its predicted function is not substituted for the primary assay. |
+| R089-G-Q0H2W3 | https://rest.uniprot.org/uniprotkb/Q0H2W3.json; Literal accession, complete canonical sequence, taxon, gene, sequence version and GenBank/PDB cross-references | supports | Q0H2W3: 450 residues, gene atS8, taxon360723, sequence version1; exact ABC02801.1 CDS translation. The current entry is unreviewed, and its predicted function is not substituted for the primary assay. |
+| R089-G-Q0H2W2 | https://rest.uniprot.org/uniprotkb/Q0H2W2.json; Literal accession, complete canonical sequence, taxon, gene, sequence version and GenBank/PDB cross-references | supports | Q0H2W2: 329 residues, gene atS9, taxon360723, sequence version1; exact ABC02802.1 CDS translation. The current entry is unreviewed, and its predicted function is not substituted for the primary assay. |
+| R089-G-Q0H2W5 | https://rest.uniprot.org/uniprotkb/Q0H2W5.json; Literal accession, complete canonical sequence, taxon, gene, sequence version and GenBank/PDB cross-references | supports | Q0H2W5: 483 residues, gene atS14, taxon360723, sequence version1; exact ABC02799.1 CDS translation. The current entry is unreviewed, and its predicted function is not substituted for the primary assay. |
+| R089-G-Q0H2X1 | https://rest.uniprot.org/uniprotkb/Q0H2X1.json; Literal accession, complete canonical sequence, taxon, gene, sequence version and GenBank/PDB cross-references | supports | Q0H2X1: 369 residues, gene atS13, taxon360723, sequence version1; exact ABC02793.1 CDS translation. The current entry is unreviewed, and its predicted function is not substituted for the primary assay. |
+| R089-G-4ZWV | https://files.rcsb.org/download/4ZWV.cif; Full entity canonical sequence, assembly metadata, atom-site residue/alternate/occupancy fields | supports | 4ZWV contains the complete 369-residue Q0H2X1 parent after prefix SNA; canonical construct length 372. 4ZWV chains A/B encode LLP at label190/auth187, alternate A/B occupancy0.50. This residue statement applies to 4ZWV, not 4XAU. |
+| R089-G-4XAU | https://files.rcsb.org/download/4XAU.cif; Full entity canonical sequence, assembly metadata, atom-site residue/alternate/occupancy fields | supports | 4XAU contains the complete 369-residue Q0H2X1 parent after prefix MGSSHHHHHHSSGLVPRGSH; canonical construct length 389. 4ZWV chains A/B encode LLP at label190/auth187, alternate A/B occupancy0.50. This residue statement applies to 4ZWV, not 4XAU. |
+| R089-G-SIFTS | https://www.ebi.ac.uk/pdbe/api/mappings/uniprot/4zwv; Complete native parent mapping for both chains | supports | Both 4ZWV chains map native Q0H2X1 residues1-369 at identity1.0, after the three-residue SNA prefix. This confirms the canonical-parent interpretation of the graph node. |
+| R089-G-ASSEMBLY | https://data.rcsb.org/rest/v1/core/assembly/4ZWV/1; Assembly1 author/software annotation and polymer entity count | supports | Assembly1 is a two-subunit author/PISA-assigned homodimer. That is structural assignment, not an in-vivo complex-formation assay. |
+| R089-G-MAPPING | /private/tmp/npm-review-work/089/graph-evidence/protein-mapping-check.json; Independent Biopython CDS/sequence and original mmCIF comparison | supports | All five exact native translations match; AtmC published alignment and primer mapping agree. Both AtmS13 constructs, SIFTS and 4ZWV LLP numbering/occupancies agree. A temporary expectation that accidentally counted the native initial methionine as tag was corrected before this successful comparison; original script and correction receipt are preserved. |
+| R089-G-SI-ACCESS | /private/tmp/npm-review-work/089/graph-evidence/access-003.json; NCBI original supplement link and bounded public publisher/archive follow-ups, with access-004.json | context_only | The NCBI supplement URL returned an HTML browser challenge, the constructed Wiley supplement route returned403, and Europe PMC identified the article as outside its open-access supplementary archive. The synthetic AtmS14 sequence could not be checked. No supplementary sequence absence is inferred. |
+| S089-E-LOCAL | data/natural_products/alkaloids/at2433-a1.yaml; Complete owner, all source rows and empty component list | supports | The exact BGC0000809:1 v3 row has no locus methods, SOURCE_ASSERTION and CLUSTER_UNSTATED, taxon 360723, accession DQ297453.1 and explicit empty source bounds. Its complete row SHA256 is c7f668f648e6597d1d80605eb4feef28bdca5ba689e9dfeb3337c51c3a078b68. Two LOTUS citations concern native occurrence. The three inline graphs explicitly concern partial enzyme/structural evidence; their detailed audit is supplied separately. |
+| S089-E-1989 | https://doi.org/10.7164/antibiotics.42.1547; Original complete primary read retained; current reinspection of taxonomy, culture deposit, fermentation and exact A1 isolation | supports | A. melliaura SCC 1655 was isolated from Bristol Cove soil and explicitly deposited as ATCC 39691 (page 1549). A1, A2, B1 and B2 were separated from cultured broth; A1 is the exact target, not an undifferentiated indolocarbazole mixture. This is native production, not heterologous expression. The primary also reports antibacterial and mouse P388 activity, without establishing a molecular target. |
+| S089-E-1989-STRUCTURE | https://doi.org/10.7164/antibiotics.42.1784; Original six-page structure study and retained original pages 2, 4 and 5 | supports | The separately published structure study distinguishes A1 from A2/B1/B2, identifies the linked modified sugars and reports stereochemical chemical/CD work. It is direct structure evidence for the isolated material; the independent chemistry section assesses the complete graph and exact hand. No gene-level functional result follows from this paper. |
+| S089-E-2015 | https://doi.org/10.1021/acs.jnatprod.5b00429; Complete scientific main through all Experimental sections; exact compound 6, Tables 2–3 and extraction | supports | Native ATCC 39691 cultivated in 8 L A-medium yielded AT2433-A1 (6), 1.75 g, alongside individually resolved congeners. The main identifies compound 6 by known spectral comparison and refers to target Figure S81/Table S2. It directly confirms the second LOTUS occurrence. Bioactivity assays are organism/cell viability phenotypes; the paper explicitly leaves the AT2433 mechanism incompletely understood. |
+| S089-E-2006-ACCESS | https://doi.org/10.1016/j.chembiol.2006.05.009; Preserved publisher, Cell, ScienceDirect and Elsevier API attempts; actual metadata-only response distinguished from full text | context_only | The exact PMID 16873021/2006 entry citation is identified, but full body and SI remain unavailable through the bounded retained routes. The 200 response from Elsevier is metadata only; FULL returned 401. The abstract describes cluster characterization and glycosyltransferase-related work, but it is insufficient to certify every native stock, construct, final-product endpoint or locus-method upgrade. |
+| S089-E-2015-SI-ACCESS | https://pmc.ncbi.nlm.nih.gov/articles/instance/4515175/bin/NIHMS708061-supplement-supplemental_material.pdf; Actual linked PMC supplement response, 1817 bytes | context_only | The linked supplement request returned HTTP 200 but a small HTML challenge rather than a PDF. No target supplemental NMR panel was claimed as inspected in this access. The accessible main and original 1989 structure source independently support the native occurrence. |
+| S089-E-STRAIN-CONSUMER | src/naturalproductmech/curate/producer_strains.py; Complete loader and emission; seeder structure-composition rejection | supports | The consumed strain decision validates one complete raw selector and SHA, stable reference and dated rationale. It adds strain context without changing taxon identity or evidence grades. It is not a mechanism for claiming that every historical or recombinant stock is sequence-identical. |
+| C089-LOCAL | /private/tmp/npm-record-reviews-20261021/data/natural_products/alkaloids/at2433-a1.yaml; Complete owner, exact structure, literal xrefs, source concepts and full history; local source rows and current intake chemistry | supports | Full owner read. Parsed structure gives CGQSZYLXZOKJEJ-VYCQBBBDSA-N, C34H35ClN4O9, formal charge 0; native intake InChI and key match. 0 referenced components. |
+| C089-COMPARE | /private/tmp/npm-review-work/shared-next-batch009/chemistry-prep/chemical-comparison.json; AT2433-A1 exact complete graph comparison | supports | The inspected source graph matches the owner key and raw MIBiG row. Current original authority graphs were parsed separately, retaining fixed-H/tautomer distinctions, invalid default representations, and assigned versus undefined centres. Detailed exact comparisons are retained in the selected row. |
+| C089-MIBIG | https://mibig.secondarymetabolites.org/repository/BGC0000809.3/annotations.json; {'mibig_accession': 'BGC0000809', 'compound_index': '1', 'entry_version': '3'} complete exact compound row | supports | Current source names AT2433-A1; its graph and fixed-H identity match the raw owner=True. This is source agreement, not independent experimental proof. |
+| C089-AUTH0 | https://www.npatlas.org/api/v1/compound/NPA011993; Exact requested/returned namespace and complete source record; original MOL/SDF where retained | supports | npatlas NPA011993; returned name NPA011993; declared key CGQSZYLXZOKJEJ-VYCQBBBDSA-N; parsed original graph key CGQSZYLXZOKJEJ-VYCQBBBDSA-N; formula C34H35ClN4O9; charge 0; stars not applicable. Comparison {'comparable': True, 'standard_inchi_key': True, 'fixed_h_inchi': True, 'formula': True, 'formal_charge': True, 'stereo_erased_canonical_smiles': True}. |
+| C089-AUTH1 | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/CGQSZYLXZOKJEJ-VYCQBBBDSA-N/property/InChIKey,InChI,IsomericSMILES,MolecularFormula,Charge/JSON; Exact requested/returned namespace and complete source record; original MOL/SDF where retained | supports | pubchem.compound 128141; returned name AT2433-A1; declared key CGQSZYLXZOKJEJ-VYCQBBBDSA-N; parsed original graph key CGQSZYLXZOKJEJ-VYCQBBBDSA-N; formula C34H35ClN4O9; charge 0; stars not applicable. Comparison {'comparable': True, 'standard_inchi_key': True, 'fixed_h_inchi': True, 'formula': True, 'formal_charge': True, 'stereo_erased_canonical_smiles': True}. |
+| C089-AUTH2 | https://www.ebi.ac.uk/chebi/backend/api/public/compound/222273/; Exact requested/returned namespace and complete source record; original MOL/SDF where retained | supports | chebi CHEBI:222273; returned name AT2433-A1; declared key CGQSZYLXZOKJEJ-VYCQBBBDSA-N; parsed original graph key CGQSZYLXZOKJEJ-VYCQBBBDSA-N; formula C34H35ClN4O9; charge 0; stars 2. Comparison {'comparable': True, 'standard_inchi_key': True, 'fixed_h_inchi': True, 'formula': True, 'formal_charge': True, 'stereo_erased_canonical_smiles': True}. Default SMILES is invalid under the inspected parser; the separate official MOL is used without silently repairing that SMILES. |
+| C089-PRIMARY1989 | https://www.jstage.jst.go.jp/article/antibiotics1968/42/12/42_12_1784/_pdf; Complete original pp 1784–1789; Figure 1 A1 (2), Figure 3 derivative 6/CD, p1788 absolute argument | supports | Exact A1 is the chlorinated, aminopentose N-methyl congener (2), distinct from A2/B1/B2. NMR/degradation localize the N-glycosidic attachment and the second sugar at glucose O6. Couplings establish beta-gluco and alpha-threo relative configurations; the bromobenzoate derivative CD and comparison to rebeccamycin explicitly support the reported absolute structures. This is affirmative primary absolute evidence, not a choice by database consensus. |
+| C089-ISOLATION1989 | https://www.jstage.jst.go.jp/article/antibiotics1968/42/11/42_11_1547/_pdf; Original isolation/compound distinction, separate companion article | supports | The named A1 isolated from the native culture is chemically distinct from the three closely related congeners. Isolation and structure papers are linked companion studies rather than independent repetitions of every structural experiment. |
+
+## Limits And Additional Notes
+
+- This review assesses current assertions and concrete source questions. It does not claim exhaustive discovery of subsequent studies or require every optional mechanism as a condition of review coverage.
+- AtmS14 synthetic-gene sequence remains unverified because the exact supporting PDF was not accessible through the bounded public routes. The review preserves the owner disclosure and does not equate the canonical native parent with a verified complete synthetic construct.
+- The required 2006 full primary/SI remains inaccessible; the review is partial even though both occurrence citations and original exact-product isolation are positively supported.
+- The 2015 supplemental file response is HTML, not a read PDF. No new supplemental NMR or final-product biosynthetic experiment is inferred.
+- Detailed causal-graph protein, reaction and construct scope is assessed by the separate root packet; this science packet does not substitute genus or cluster association for a demonstrated full pathway.
+- The authors’ CD/chemical-correlation assignment is assessed as reported; no new CD calculation, derivatization, or independent reconstruction of all original spectra was performed. Protein/reaction graph construct checks and the unavailable 2006 main are separate assigned checks, not silently marked passed here.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35 explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). Skipped tests are not counted as passing tests. Existing ontology caches were used; no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do not establish biological production, stereochemical specificity, evidence adequacy, or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology results. Reuse establishes unchanged repository inputs; it is not a new remote authority query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all tracked files are hashed. Generated Python bytecode and external tool caches are not claimed to have been independently byte-pinned at the prior execution.
+- No scientific owner, inventory, curation table, native status or history was edited. Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification; target strict validation ran afresh. Scientific failed or unavailable checks are distinct from bundle validation.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T144356Z-at2433-a1
+title: 'AT2433-A1: supported parent identity and bounded enzyme graphs'
+started_at: '2026-10-21T14:25:01.246972Z'
+finished_at: '2026-10-21T14:43:56.989849Z'
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: Original structure and native isolation support the exact A1 parent and both
+  occurrence citations. The three inline graphs accurately distinguish FAD binding,
+  partial sugar-precursor assays and AtmS13 structure from whole-product biosynthesis.
+  Native culture identifiers should be retained. The unavailable 2006 full study and
+  synthetic AtmS14 sequence keep the review partial.
+source:
+  git_revision: 1c2402097718c138b081e00943de8f04de0541cd
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/at2433-a1.yaml
+    sha256: ceb9b27efe078932bceda2264ee9543d81fddcb31b6553ad5402827bc1638d12
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 89, batch 009, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated targets in earlier
+    batch commits (publication tracked separately). At selection, 134 of 3116 current
+    records had campaign coverage and 2982 remained. The population search included
+    ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-6c1bd93a9d
+targets:
+- target_id: naturalproductmech:mibig-6c1bd93a9d
+  path: data/natural_products/alkaloids/at2433-a1.yaml
+  label: AT2433-A1
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/alkaloids/at2433-a1.yaml
+    role: Curator-owned assertions, inline mechanisms, discussions and audit history
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-6c1bd93a9d
+  command: just validate-strict data/natural_products/alkaloids/at2433-a1.yaml --out
+    /private/tmp/npm-review-work/089/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T14:25:02.858690Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 current record files agree with PATHS.tsv and their pinned filing
+    pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055340+00:00;
+    finished 2026-10-21T09:55:22.727768+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-corpus.log. Reused
+    for batch009 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch009. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-6c1bd93a9d
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 current records passed the documented byte-reproduction gate
+    against committed inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055361+00:00;
+    finished 2026-10-21T09:56:44.050706+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-reproduction.log.
+    Reused for batch009 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch009. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-6c1bd93a9d
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The exhaustive review queue produced 8,928 diagnostic rows across 12 queues;
+    this deterministic output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just review-queue --tsv /private/tmp/npm-review-queue-batch-004.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.057401+00:00;
+    finished 2026-10-21T09:54:38.468783+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/review-queue.log. Reused
+    for batch009 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch009. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-6c1bd93a9d
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'The configured identifier-label gate passed using the existing ontology
+    caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions,
+    499 warning-only mismatches and 4,744 pairs skipped because their prefixes have
+    no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.061733+00:00;
+    finished 2026-10-21T09:56:36.296159+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/validate-products.log. Reused
+    for batch009 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch009. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-6c1bd93a9d
+- check_id: shared-qc
+  name: Full repository quality gate on the current main baseline
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed on the unchanged main baseline
+    during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+    All configured lint, governance, documentation, provenance, source-queue, schema,
+    rendering, reproduction, filing-integrity and reporting stages completed successfully.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:30.560925+00:00;
+    finished 2026-10-21T10:04:44.806799+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/qc.log. Reused for batch009
+    only after a fresh fetch/clean branch, equal commit/tree and two reads of all
+    9,182 tracked byte streams and modes (208,070,649 bytes), including a recheck
+    after the fresh authoritative catalogue. This gate was not rerun for batch009.
+    Original execution times, scope, warnings, exceptions and skips are retained.'
+  target_ids:
+  - naturalproductmech:mibig-6c1bd93a9d
+- check_id: R089-FULL-OWNER
+  name: Complete owner and component scope
+  status: passed
+  required: true
+  summary: Complete owner and all matching local source rows read. The native resolved
+    view confirms the empty component-reference set; all formal input hashes agree.
+  target_ids:
+  - naturalproductmech:mibig-6c1bd93a9d
+  evidence_ids:
+  - R089-OWNER
+  - R089-LOCAL-SOURCES
+- check_id: R089-G-CLAIMS
+  name: Inline protein graph assertions and exact canonical parents
+  status: passed
+  required: true
+  summary: Every inline edge and condition was checked against the cited experiment
+    or current exact identifier/sequence. No graph promotes structural/cofactor/precursor
+    evidence to finished-product biosynthesis.
+  target_ids:
+  - naturalproductmech:mibig-6c1bd93a9d
+  evidence_ids:
+  - R089-G-ATMC
+  - R089-G-ATMC-SI
+  - R089-G-SUGAR
+  - R089-G-STRUCTURE
+  - R089-G-GENBANK
+  - R089-G-MAPPING
+- check_id: R089-G-SYNTHETIC-SEQUENCE
+  name: Exact synthetic AtmS14 construct sequence
+  status: unavailable
+  required: true
+  summary: The owner explicitly discloses this gap. The main identifies the synthetic
+    parent/construct and the native canonical parent is verified; the unavailable
+    SI prevents an independent exact construct-sequence comparison.
+  target_ids:
+  - naturalproductmech:mibig-6c1bd93a9d
+  evidence_ids:
+  - R089-G-SUGAR
+  - R089-G-SI-ACCESS
+  - R089-G-Q0H2W5
+  - R089-G-MAPPING
+- check_id: S089-C-ORIGIN
+  name: Both native occurrence citations and culture deposit bridge
+  status: passed
+  required: true
+  summary: The 1989 SCC 1655 = ATCC 39691 statement and the 2015 exact compound-6
+    isolation support both species-level occurrences; original chemical work is separately
+    retained.
+  target_ids:
+  - naturalproductmech:mibig-6c1bd93a9d
+  evidence_ids:
+  - S089-E-1989
+  - S089-E-1989-STRUCTURE
+  - S089-E-2015
+- check_id: S089-C-2006
+  name: Required entry-level biosynthetic citation full-body review
+  status: unavailable
+  required: true
+  summary: The full 2006 primary and SI could not be inspected. No unsupported-claim
+    finding or automatic method upgrade is inferred from this access gap.
+  target_ids:
+  - naturalproductmech:mibig-6c1bd93a9d
+  evidence_ids:
+  - S089-E-2006-ACCESS
+- check_id: S089-C-2015-SI
+  name: Optional current-study supplemental spectra access
+  status: unavailable
+  required: false
+  summary: The linked response is not a readable PDF. Main-body native isolation and
+    the independent original structure paper are available.
+  target_ids:
+  - naturalproductmech:mibig-6c1bd93a9d
+  evidence_ids:
+  - S089-E-2015-SI-ACCESS
+- check_id: C089-IDENTITY
+  name: Exact parent chemistry, original congener distinction and authority audit
+  status: passed
+  required: true
+  summary: Original structure paper and critical Figure 1/Figure 3/p1788 pixels were
+    inspected; no exact-parent identity or xref defect is established.
+  target_ids:
+  - naturalproductmech:mibig-6c1bd93a9d
+  evidence_ids:
+  - C089-LOCAL
+  - C089-COMPARE
+  - C089-MIBIG
+  - C089-PRIMARY1989
+  - C089-ISOLATION1989
+  - C089-AUTH0
+  - C089-AUTH1
+  - C089-AUTH2
+evidence:
+- evidence_id: R089-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/at2433-a1.yaml
+  locator: Complete owner, all scientific claims, inline graphs and history entries
+  accessed_at: '2026-10-21T14:28:41.613530Z'
+  support: supports
+  summary: 'Root read the complete AT2433-A1 owner following its individual intake.
+    It has 2 occurrences, 1 producer and 1 cluster assertions. Referenced components
+    are empty. Present optional fields: causal_graphs. These observations use complete
+    parsed content, not a filtered search miss.'
+  snapshot_sha256: ceb9b27efe078932bceda2264ee9543d81fddcb31b6553ad5402827bc1638d12
+- evidence_id: R089-LOCAL-SOURCES
+  kind: record_content
+  reference: /private/tmp/npm-review-work/089/local-sources.json
+  locator: Every matching MIBiG, LOTUS, ChEBI, CyanoMetDB and NPClassifier row plus
+    resolved owner
+  accessed_at: '2026-10-21T14:28:41.613530Z'
+  support: context_only
+  summary: Root read all matching source rows. The resolved owner equals the complete
+    parsed raw YAML. Retained source assertions and deterministic joins are distinguished
+    from the exact primary experiments reviewed separately.
+  snapshot_sha256: 90c4ac3d66e157e7dba143f24e89437edfb10f07afb8b850d5d0018794d2807f
+- evidence_id: R089-IMODULON-DATASETS
+  kind: database
+  reference: /private/tmp/npm-review-work/010/imodulon-datasets.txt
+  locator: Full 28-row dataset catalogue; original retrieval in 010/imodulon-context-receipts.json
+  accessed_at: '2026-10-21T07:21:15.957321Z'
+  support: context_only
+  summary: The complete same-session catalogue retrieved at 07:21:15 UTC has no Aspergillus,
+    Mariannaea, Actinomadura or Stigmatella dataset. The catalogue is reused with
+    its original timestamp; no fresh retrieval is claimed. Species matching alone
+    would not establish an exact strain, gene, locus or product experiment.
+  snapshot_sha256: 1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549
+- evidence_id: R089-Q103810935
+  kind: database
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q103810935.json
+  locator: Exact organism entity, scientific name and P685 NCBI Taxonomy identifier
+  accessed_at: '2026-10-21T14:29:21.324541Z'
+  support: context_only
+  summary: Literal organism entity Q103810935 resolves as Actinomadura melliaura,
+    with P685 360723, matching the local LOTUS row. This verifies identifier routing
+    only; it does not support compound occurrence, assign experimental strain or settle
+    historical taxonomic revisions.
+  snapshot_sha256: 31f4cf9f79d394941d0d4f48f206dc05019443b2263ddfcd837a84f82457fbd0
+- evidence_id: R089-G-ATMC
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3437190&retmode=xml
+  locator: Results, Table 2 and Experimental Procedures; full retrieved main text,
+    with ITC methods re-read after initial output truncation
+  accessed_at: '2026-10-21T14:30:34.025911Z'
+  support: supports
+  summary: AtmC co-purifies with FAD. The five ITC measurements give Kd 73 +/- 28
+    nM; no SD/SEM interpretation is specified. Rosetta 2(DE3)pLysS expression, nickel
+    purification, 2 M KBr/2 M urea deflavination and stated gel-filtration/ITC buffer
+    support the owner notes. Activity and crystal experiments on RebC/StaC variants
+    are not AtmC turnover evidence.
+  snapshot_sha256: 3acaa3eacbe908779c5d8d01dc2c12753bee8b317f48d459d8802e1b5cdfaf58
+- evidence_id: R089-G-ATMC-SI
+  kind: primary_source
+  reference: https://ars.els-cdn.com/content/image/1-s2.0-S1074552112001809-mmc1.pdf
+  locator: 'Original physical pages 2-5 and 19-20: full AtmC alignment, Figure S2D
+    and caption, cloning procedure; alignment and ITC original pixels viewed'
+  accessed_at: '2026-10-21T14:29:45.961406Z'
+  support: supports
+  summary: Figure S2D is the AtmC ITC trace at 25 C. Its 534-residue alignment exactly
+    matches the current native protein. AtmC genomic PCR into pET28a and primer sequences
+    are explicit. The forward primer begins at the coding start and reverse target
+    is downstream of the native stop in DQ297453.1. Tag and canonical protein remain
+    distinct.
+  snapshot_sha256: 6e512edfc2e33e79e588df7583d02e817eca4f90c74b620f1e3e320722dc7ca1
+- evidence_id: R089-G-SUGAR
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=4598305&retmode=xml
+  locator: Complete main body, Figures 1-3 and every in-vitro experimental subsection
+  accessed_at: '2026-10-21T14:30:34.095364Z'
+  support: supports
+  summary: AtmS8 oxidation and subsequent AtmS9 decarboxylation use the stated enzyme
+    concentrations, NMR/HPLC/HRMS and omission controls. AtmS8 reaches about 97% at
+    16 h; AtmS9 is quantitative over 15 h. Adding AtmS14 yields degradation products
+    6 and TDP, not an isolated 5-T intermediate or finished donor. Longer, warmer
+    AtmS9 incubation gives reduced xylose nucleotide; the owner preserves that qualification.
+    Main text explicitly identifies the synthetic AtmS14 construct.
+  snapshot_sha256: 0d4adcb337ed62972d939866769abed9de2f5dd7241395466e00b001575f835d
+- evidence_id: R089-G-STRUCTURE
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=4570032&retmode=xml
+  locator: Complete main body, Table 1, Figure 2 and cloning/crystallography/cofactor
+    sections
+  accessed_at: '2026-10-21T14:30:34.229883Z'
+  support: supports
+  summary: The 1.50-A SeMet 4ZWV construct comes from pMCSG68 in BL21(DE3)-Gold; TEV
+    cleavage leaves SNA. It has a dimer and Lys187-PLP internal aldimines with two
+    half-occupancy orientations. The distinct 3.00-A pET28a 4XAU construct has a retained
+    His tag. Native substrate turnover is not established by these crystal or docking
+    observations.
+  snapshot_sha256: 09b74382cf4b1f051338d025e156a0e54c04029aa7a1972f15cb5b5e2739d439
+- evidence_id: R089-G-STRUCTURE-FIG
+  kind: primary_source
+  reference: https://cdn.ncbi.nlm.nih.gov/pmc/blobs/e649/4570032/b29404b8d63c/nihms699679f2.jpg
+  locator: Original Figure 2 image viewed with caption and deposited coordinates
+  accessed_at: '2026-10-21T14:32:59.979858Z'
+  support: supports
+  summary: The published panel depicts the two-subunit 4ZWV assembly and alternative
+    cofactor poses. Deposited residue identities, numbering and occupancies were checked
+    directly, rather than inferred from small image labels.
+  snapshot_sha256: 45b86acf50062495feb48290005f0a25a1eb9212ebc71fa870278747c5c753b3
+- evidence_id: R089-G-GENBANK
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=DQ297453.1&rettype=gbwithparts&retmode=text
+  locator: Source feature, five exact CDS features, genomic sequence and translated
+    products
+  accessed_at: '2026-10-21T14:29:44.404967Z'
+  support: supports
+  summary: The accession identifies A. melliaura SCC 1655, taxon360723. Independent
+    table11 CDS translation, including initiator convention and reverse-strand AtmS14,
+    exactly matches all five stated UniProt canonical sequences. Native locus identity
+    is separate from the experimental affinity-tag constructs.
+  snapshot_sha256: 4db5811601c45838dcfa32cccf3389396b197ea8b615128d41ca784972869600
+- evidence_id: R089-G-Q0H2X3
+  kind: database
+  reference: https://rest.uniprot.org/uniprotkb/Q0H2X3.json
+  locator: Literal accession, complete canonical sequence, taxon, gene, sequence version
+    and GenBank/PDB cross-references
+  accessed_at: '2026-10-21T14:29:43.586603Z'
+  support: supports
+  summary: 'Q0H2X3: 534 residues, gene atC, taxon360723, sequence version1; exact
+    ABC02791.1 CDS translation. The current entry is unreviewed, and its predicted
+    function is not substituted for the primary assay.'
+  snapshot_sha256: 2ed329e053e6a78e5d2fd57ec6bf88e37d022681f2c27de44f07db36964a09fc
+- evidence_id: R089-G-Q0H2W3
+  kind: database
+  reference: https://rest.uniprot.org/uniprotkb/Q0H2W3.json
+  locator: Literal accession, complete canonical sequence, taxon, gene, sequence version
+    and GenBank/PDB cross-references
+  accessed_at: '2026-10-21T14:29:43.565359Z'
+  support: supports
+  summary: 'Q0H2W3: 450 residues, gene atS8, taxon360723, sequence version1; exact
+    ABC02801.1 CDS translation. The current entry is unreviewed, and its predicted
+    function is not substituted for the primary assay.'
+  snapshot_sha256: 6416950c5897f424cf85455da17ef3d34f30131cb42bf12d0d3faf5a2dd24eaa
+- evidence_id: R089-G-Q0H2W2
+  kind: database
+  reference: https://rest.uniprot.org/uniprotkb/Q0H2W2.json
+  locator: Literal accession, complete canonical sequence, taxon, gene, sequence version
+    and GenBank/PDB cross-references
+  accessed_at: '2026-10-21T14:29:44.006382Z'
+  support: supports
+  summary: 'Q0H2W2: 329 residues, gene atS9, taxon360723, sequence version1; exact
+    ABC02802.1 CDS translation. The current entry is unreviewed, and its predicted
+    function is not substituted for the primary assay.'
+  snapshot_sha256: 8d6b5546aad578bf555df54112c0ac77a616961ff09b9c98b3fd1d684e40c19d
+- evidence_id: R089-G-Q0H2W5
+  kind: database
+  reference: https://rest.uniprot.org/uniprotkb/Q0H2W5.json
+  locator: Literal accession, complete canonical sequence, taxon, gene, sequence version
+    and GenBank/PDB cross-references
+  accessed_at: '2026-10-21T14:29:44.168207Z'
+  support: supports
+  summary: 'Q0H2W5: 483 residues, gene atS14, taxon360723, sequence version1; exact
+    ABC02799.1 CDS translation. The current entry is unreviewed, and its predicted
+    function is not substituted for the primary assay.'
+  snapshot_sha256: 1605590e374d2f8eba6700ced5364a72d95e2fd813a7fcba32d73f342a003ab2
+- evidence_id: R089-G-Q0H2X1
+  kind: database
+  reference: https://rest.uniprot.org/uniprotkb/Q0H2X1.json
+  locator: Literal accession, complete canonical sequence, taxon, gene, sequence version
+    and GenBank/PDB cross-references
+  accessed_at: '2026-10-21T14:29:44.357462Z'
+  support: supports
+  summary: 'Q0H2X1: 369 residues, gene atS13, taxon360723, sequence version1; exact
+    ABC02793.1 CDS translation. The current entry is unreviewed, and its predicted
+    function is not substituted for the primary assay.'
+  snapshot_sha256: c273462ba300d1742f733af7bd820aeb02deb0a135442a9ba3427bc1c2ee681b
+- evidence_id: R089-G-4ZWV
+  kind: database
+  reference: https://files.rcsb.org/download/4ZWV.cif
+  locator: Full entity canonical sequence, assembly metadata, atom-site residue/alternate/occupancy
+    fields
+  accessed_at: '2026-10-21T14:29:44.571917Z'
+  support: supports
+  summary: 4ZWV contains the complete 369-residue Q0H2X1 parent after prefix SNA;
+    canonical construct length 372. 4ZWV chains A/B encode LLP at label190/auth187,
+    alternate A/B occupancy0.50. This residue statement applies to 4ZWV, not 4XAU.
+  snapshot_sha256: cd6abcaaa1ceea4d60b1e665e9575a28d0ec06e95e76cea63b4977e357d0c99a
+- evidence_id: R089-G-4XAU
+  kind: database
+  reference: https://files.rcsb.org/download/4XAU.cif
+  locator: Full entity canonical sequence, assembly metadata, atom-site residue/alternate/occupancy
+    fields
+  accessed_at: '2026-10-21T14:29:44.642675Z'
+  support: supports
+  summary: 4XAU contains the complete 369-residue Q0H2X1 parent after prefix MGSSHHHHHHSSGLVPRGSH;
+    canonical construct length 389. 4ZWV chains A/B encode LLP at label190/auth187,
+    alternate A/B occupancy0.50. This residue statement applies to 4ZWV, not 4XAU.
+  snapshot_sha256: 63a1926bd2413793b2e36de0ee01e21fc7e7f95c0c07ef89ed35e6ef2ca7ce7f
+- evidence_id: R089-G-SIFTS
+  kind: database
+  reference: https://www.ebi.ac.uk/pdbe/api/mappings/uniprot/4zwv
+  locator: Complete native parent mapping for both chains
+  accessed_at: '2026-10-21T14:29:45.218309Z'
+  support: supports
+  summary: Both 4ZWV chains map native Q0H2X1 residues1-369 at identity1.0, after
+    the three-residue SNA prefix. This confirms the canonical-parent interpretation
+    of the graph node.
+  snapshot_sha256: e5713652c40d77422aad534956eca716b6fabd3e6c856a2956a4319c168b7d6d
+- evidence_id: R089-G-ASSEMBLY
+  kind: database
+  reference: https://data.rcsb.org/rest/v1/core/assembly/4ZWV/1
+  locator: Assembly1 author/software annotation and polymer entity count
+  accessed_at: '2026-10-21T14:29:44.474013Z'
+  support: supports
+  summary: Assembly1 is a two-subunit author/PISA-assigned homodimer. That is structural
+    assignment, not an in-vivo complex-formation assay.
+  snapshot_sha256: f18755de6316843b6e147e5ff2961ed0490ba8a1a60164bf61be44392bc7fc1f
+- evidence_id: R089-G-MAPPING
+  kind: validation
+  reference: /private/tmp/npm-review-work/089/graph-evidence/protein-mapping-check.json
+  locator: Independent Biopython CDS/sequence and original mmCIF comparison
+  accessed_at: '2026-10-21T14:32:41.973617Z'
+  support: supports
+  summary: All five exact native translations match; AtmC published alignment and
+    primer mapping agree. Both AtmS13 constructs, SIFTS and 4ZWV LLP numbering/occupancies
+    agree. A temporary expectation that accidentally counted the native initial methionine
+    as tag was corrected before this successful comparison; original script and correction
+    receipt are preserved.
+  snapshot_sha256: 11ebc7cddf4c980641f36f1a24f0a9339107684897f52de8bd0f22f2382fcef0
+- evidence_id: R089-G-SI-ACCESS
+  kind: search
+  reference: /private/tmp/npm-review-work/089/graph-evidence/access-003.json
+  locator: NCBI original supplement link and bounded public publisher/archive follow-ups,
+    with access-004.json
+  accessed_at: '2026-10-21T14:35:03.693697Z'
+  support: context_only
+  summary: The NCBI supplement URL returned an HTML browser challenge, the constructed
+    Wiley supplement route returned403, and Europe PMC identified the article as outside
+    its open-access supplementary archive. The synthetic AtmS14 sequence could not
+    be checked. No supplementary sequence absence is inferred.
+  snapshot_sha256: 869c3ebfd422b03924bce2d7a420a045aef5125a266cadeb72fc395c8fea3613
+  search_scope: Exact original NIHMS supplement link plus one DOI-derived Wiley route,
+    NCBI OA endpoints and Europe PMC supplementaryFiles endpoint; these are bounded
+    public routes. Successful HTTP alone was not treated as PDF retrieval.
+- evidence_id: S089-E-LOCAL
+  kind: record_content
+  reference: data/natural_products/alkaloids/at2433-a1.yaml
+  locator: Complete owner, all source rows and empty component list
+  accessed_at: '2026-10-21T14:37:35.831741Z'
+  support: supports
+  summary: The exact BGC0000809:1 v3 row has no locus methods, SOURCE_ASSERTION and
+    CLUSTER_UNSTATED, taxon 360723, accession DQ297453.1 and explicit empty source
+    bounds. Its complete row SHA256 is c7f668f648e6597d1d80605eb4feef28bdca5ba689e9dfeb3337c51c3a078b68.
+    Two LOTUS citations concern native occurrence. The three inline graphs explicitly
+    concern partial enzyme/structural evidence; their detailed audit is supplied separately.
+  snapshot_sha256: ceb9b27efe078932bceda2264ee9543d81fddcb31b6553ad5402827bc1638d12
+- evidence_id: S089-E-1989
+  kind: primary_source
+  reference: https://doi.org/10.7164/antibiotics.42.1547
+  locator: Original complete primary read retained; current reinspection of taxonomy,
+    culture deposit, fermentation and exact A1 isolation
+  accessed_at: '2026-10-21T13:33:44.172419Z'
+  support: supports
+  summary: A. melliaura SCC 1655 was isolated from Bristol Cove soil and explicitly
+    deposited as ATCC 39691 (page 1549). A1, A2, B1 and B2 were separated from cultured
+    broth; A1 is the exact target, not an undifferentiated indolocarbazole mixture.
+    This is native production, not heterologous expression. The primary also reports
+    antibacterial and mouse P388 activity, without establishing a molecular target.
+  snapshot_sha256: 0d10627bf6f0a41b5d02a1256f8956be934690e45f5893fa86dd09c70b567855
+- evidence_id: S089-E-1989-STRUCTURE
+  kind: primary_source
+  reference: https://doi.org/10.7164/antibiotics.42.1784
+  locator: Original six-page structure study and retained original pages 2, 4 and
+    5
+  accessed_at: '2026-10-21T13:34:06.903592Z'
+  support: supports
+  summary: The separately published structure study distinguishes A1 from A2/B1/B2,
+    identifies the linked modified sugars and reports stereochemical chemical/CD work.
+    It is direct structure evidence for the isolated material; the independent chemistry
+    section assesses the complete graph and exact hand. No gene-level functional result
+    follows from this paper.
+  snapshot_sha256: 1870a35c26bec64b7df3de60cebce037ea7e1fac23d722479a11f79f0a18f0da
+- evidence_id: S089-E-2015
+  kind: primary_source
+  reference: https://doi.org/10.1021/acs.jnatprod.5b00429
+  locator: Complete scientific main through all Experimental sections; exact compound
+    6, Tables 2–3 and extraction
+  accessed_at: '2026-10-21T14:34:14.950444Z'
+  support: supports
+  summary: Native ATCC 39691 cultivated in 8 L A-medium yielded AT2433-A1 (6), 1.75
+    g, alongside individually resolved congeners. The main identifies compound 6 by
+    known spectral comparison and refers to target Figure S81/Table S2. It directly
+    confirms the second LOTUS occurrence. Bioactivity assays are organism/cell viability
+    phenotypes; the paper explicitly leaves the AT2433 mechanism incompletely understood.
+  snapshot_sha256: c439ea403ed1483f38cd30aa1b3a09930d7849d6a65bc424b6c5068037b8fc5b
+- evidence_id: S089-E-2006-ACCESS
+  kind: search
+  reference: https://doi.org/10.1016/j.chembiol.2006.05.009
+  locator: Preserved publisher, Cell, ScienceDirect and Elsevier API attempts; actual
+    metadata-only response distinguished from full text
+  accessed_at: '2026-10-21T13:35:57.590844Z'
+  support: context_only
+  summary: The exact PMID 16873021/2006 entry citation is identified, but full body
+    and SI remain unavailable through the bounded retained routes. The 200 response
+    from Elsevier is metadata only; FULL returned 401. The abstract describes cluster
+    characterization and glycosyltransferase-related work, but it is insufficient
+    to certify every native stock, construct, final-product endpoint or locus-method
+    upgrade.
+  snapshot_sha256: 7bec808bb5c0578099d42c832809aa970b56790656ee9f008513ca5205ba600e
+  search_scope: Only the listed publisher/API/author routes for the exact 2006 DOI;
+    no assertion that the study lacks a result merely because it was inaccessible.
+- evidence_id: S089-E-2015-SI-ACCESS
+  kind: search
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/instance/4515175/bin/NIHMS708061-supplement-supplemental_material.pdf
+  locator: Actual linked PMC supplement response, 1817 bytes
+  accessed_at: '2026-10-21T14:36:19.881842Z'
+  support: context_only
+  summary: The linked supplement request returned HTTP 200 but a small HTML challenge
+    rather than a PDF. No target supplemental NMR panel was claimed as inspected in
+    this access. The accessible main and original 1989 structure source independently
+    support the native occurrence.
+  snapshot_sha256: 9675ca5e74af3908fed867e700308eef409d0750f9ae4ec48999bd8d87660af7
+  search_scope: One actual linked PMC supplement route; no repeated challenge requests
+    or claim of global unavailability.
+- evidence_id: S089-E-STRAIN-CONSUMER
+  kind: record_content
+  reference: src/naturalproductmech/curate/producer_strains.py
+  locator: Complete loader and emission; seeder structure-composition rejection
+  accessed_at: '2026-10-21T14:37:35.831741Z'
+  support: supports
+  summary: The consumed strain decision validates one complete raw selector and SHA,
+    stable reference and dated rationale. It adds strain context without changing
+    taxon identity or evidence grades. It is not a mechanism for claiming that every
+    historical or recombinant stock is sequence-identical.
+  snapshot_sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+- evidence_id: C089-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/alkaloids/at2433-a1.yaml
+  locator: Complete owner, exact structure, literal xrefs, source concepts and full
+    history; local source rows and current intake chemistry
+  accessed_at: '2026-10-21T14:39:14.417604Z'
+  support: supports
+  summary: Full owner read. Parsed structure gives CGQSZYLXZOKJEJ-VYCQBBBDSA-N, C34H35ClN4O9,
+    formal charge 0; native intake InChI and key match. 0 referenced components.
+  snapshot_sha256: ceb9b27efe078932bceda2264ee9543d81fddcb31b6553ad5402827bc1638d12
+- evidence_id: C089-COMPARE
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch009/chemistry-prep/chemical-comparison.json
+  locator: AT2433-A1 exact complete graph comparison
+  accessed_at: '2026-10-21T13:30:02.585471Z'
+  support: supports
+  summary: The inspected source graph matches the owner key and raw MIBiG row. Current
+    original authority graphs were parsed separately, retaining fixed-H/tautomer distinctions,
+    invalid default representations, and assigned versus undefined centres. Detailed
+    exact comparisons are retained in the selected row.
+  snapshot_sha256: b3f3b3c9ff9602a489cae8f945ec6ab8ce183df7f2402a84e5a3ef34f5993652
+- evidence_id: C089-MIBIG
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0000809.3/annotations.json
+  locator: '{''mibig_accession'': ''BGC0000809'', ''compound_index'': ''1'', ''entry_version'':
+    ''3''} complete exact compound row'
+  accessed_at: '2026-10-21T13:21:48.313236Z'
+  support: supports
+  summary: Current source names AT2433-A1; its graph and fixed-H identity match the
+    raw owner=True. This is source agreement, not independent experimental proof.
+  snapshot_sha256: 3388a946e7890374988465a4abdc29171793bfc50b6fd2f940abfc50baef4acf
+- evidence_id: C089-AUTH0
+  kind: authority
+  reference: https://www.npatlas.org/api/v1/compound/NPA011993
+  locator: Exact requested/returned namespace and complete source record; original
+    MOL/SDF where retained
+  accessed_at: '2026-10-21T13:21:48.638223Z'
+  support: supports
+  summary: 'npatlas NPA011993; returned name NPA011993; declared key CGQSZYLXZOKJEJ-VYCQBBBDSA-N;
+    parsed original graph key CGQSZYLXZOKJEJ-VYCQBBBDSA-N; formula C34H35ClN4O9; charge
+    0; stars not applicable. Comparison {''comparable'': True, ''standard_inchi_key'':
+    True, ''fixed_h_inchi'': True, ''formula'': True, ''formal_charge'': True, ''stereo_erased_canonical_smiles'':
+    True}.'
+  snapshot_sha256: 7e480535e0b79f8f29778e9c967c7c773302104f9505202e58f4e6f97c5dea21
+- evidence_id: C089-AUTH1
+  kind: authority
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/CGQSZYLXZOKJEJ-VYCQBBBDSA-N/property/InChIKey,InChI,IsomericSMILES,MolecularFormula,Charge/JSON
+  locator: Exact requested/returned namespace and complete source record; original
+    MOL/SDF where retained
+  accessed_at: '2026-10-21T13:21:48.697030Z'
+  support: supports
+  summary: 'pubchem.compound 128141; returned name AT2433-A1; declared key CGQSZYLXZOKJEJ-VYCQBBBDSA-N;
+    parsed original graph key CGQSZYLXZOKJEJ-VYCQBBBDSA-N; formula C34H35ClN4O9; charge
+    0; stars not applicable. Comparison {''comparable'': True, ''standard_inchi_key'':
+    True, ''fixed_h_inchi'': True, ''formula'': True, ''formal_charge'': True, ''stereo_erased_canonical_smiles'':
+    True}.'
+  snapshot_sha256: fc0ca3c4d55fabac6d3afc1fdad27db6881249fab0b5b933daff468bbc74f34e
+- evidence_id: C089-AUTH2
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/222273/
+  locator: Exact requested/returned namespace and complete source record; original
+    MOL/SDF where retained
+  accessed_at: '2026-10-21T13:22:55.394119Z'
+  support: supports
+  summary: 'chebi CHEBI:222273; returned name AT2433-A1; declared key CGQSZYLXZOKJEJ-VYCQBBBDSA-N;
+    parsed original graph key CGQSZYLXZOKJEJ-VYCQBBBDSA-N; formula C34H35ClN4O9; charge
+    0; stars 2. Comparison {''comparable'': True, ''standard_inchi_key'': True, ''fixed_h_inchi'':
+    True, ''formula'': True, ''formal_charge'': True, ''stereo_erased_canonical_smiles'':
+    True}. Default SMILES is invalid under the inspected parser; the separate official
+    MOL is used without silently repairing that SMILES.'
+  snapshot_sha256: dbd7fec15b372cd91349cf4359801060194feed39032384a5c0cbadf65a687f8
+- evidence_id: C089-PRIMARY1989
+  kind: primary_source
+  reference: https://www.jstage.jst.go.jp/article/antibiotics1968/42/12/42_12_1784/_pdf
+  locator: Complete original pp 1784–1789; Figure 1 A1 (2), Figure 3 derivative 6/CD,
+    p1788 absolute argument
+  accessed_at: '2026-10-21T13:34:06.903592Z'
+  support: supports
+  summary: Exact A1 is the chlorinated, aminopentose N-methyl congener (2), distinct
+    from A2/B1/B2. NMR/degradation localize the N-glycosidic attachment and the second
+    sugar at glucose O6. Couplings establish beta-gluco and alpha-threo relative configurations;
+    the bromobenzoate derivative CD and comparison to rebeccamycin explicitly support
+    the reported absolute structures. This is affirmative primary absolute evidence,
+    not a choice by database consensus.
+  snapshot_sha256: 1870a35c26bec64b7df3de60cebce037ea7e1fac23d722479a11f79f0a18f0da
+- evidence_id: C089-ISOLATION1989
+  kind: primary_source
+  reference: https://www.jstage.jst.go.jp/article/antibiotics1968/42/11/42_11_1547/_pdf
+  locator: Original isolation/compound distinction, separate companion article
+  accessed_at: '2026-10-21T13:33:44.172419Z'
+  support: supports
+  summary: The named A1 isolated from the native culture is chemically distinct from
+    the three closely related congeners. Isolation and structure papers are linked
+    companion studies rather than independent repetitions of every structural experiment.
+  snapshot_sha256: 0d10627bf6f0a41b5d02a1256f8956be934690e45f5893fa86dd09c70b567855
+assessments:
+- assessment_id: R089-HISTORY
+  area: provenance
+  topic: Native status and retained history
+  outcome: supported
+  summary: The six history entries include three explicit October 3 RECORD_CURATED
+    events adding and refining partial protein/precursor graphs, plus three seed events.
+    Their authors, timestamps and llm_assisted flags are retained, and SEEDED status
+    is deliberate. Historical claims that sources or sequences were checked are audit
+    context; the current graph review independently assesses the scientific assertions.
+  target_ids:
+  - naturalproductmech:mibig-6c1bd93a9d
+  evidence_ids:
+  - R089-OWNER
+- assessment_id: R089-OPTIONAL
+  area: completeness
+  topic: Optional mechanism, activity and application scope
+  outcome: supported
+  summary: The owner contains three inline BIOSYNTHESIS graphs, assessed separately
+    against their primary papers, constructs and identifiers. It has no complete pathway,
+    compound molecular target, bioactivity summary, clinical status, application or
+    cross-corpus link. Partial cofactor, precursor and crystal evidence is not assumed
+    to establish final-product synthesis.
+  target_ids:
+  - naturalproductmech:mibig-6c1bd93a9d
+  evidence_ids:
+  - R089-OWNER
+  - R089-LOCAL-SOURCES
+- assessment_id: R089-FILING
+  area: representation
+  topic: Computed filing and source-asserted classes
+  outcome: supported
+  summary: The owner reproduces its exact-key NPClassifier row, including model version
+    npclassifier.gnps2.org@2026-09-07, Alkaloids filing, every returned superclass/class
+    label and true glycoside flag. These are explicitly computed predictions, not
+    experimental proof of precursor use, ring taxonomy, natural origin or exact stereochemical
+    identity. BGC class claims retain their separate MIBiG provenance and biological
+    assessment.
+  target_ids:
+  - naturalproductmech:mibig-6c1bd93a9d
+  evidence_ids:
+  - R089-OWNER
+  - R089-LOCAL-SOURCES
+- assessment_id: R089-IMODULON
+  area: completeness
+  topic: Structured transcriptomic context
+  outcome: not_applicable
+  summary: The asserted native producer and exact biosynthetic locus lack a matching
+    dataset in the inspected catalogue. No coexpression/module-membership claim is
+    present in this owner. Recombinant E. coli, yeast or A. oryzae work is not substituted
+    for native-producer transcriptomic evidence. Database noncoverage is not negative
+    biological evidence; paper-specific expression experiments are assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-6c1bd93a9d
+  evidence_ids:
+  - R089-OWNER
+  - R089-IMODULON-DATASETS
+- assessment_id: R089-ORGANISM-IDS
+  area: provenance
+  topic: Literal LOTUS organism-identifier routing
+  outcome: supported
+  summary: Every literal organism entity in the matching LOTUS rows resolves to its
+    retained species and NCBI taxon identifier. Compound occurrence, experimental
+    host versus substrate and strain-level taxonomy require the separate primary-source
+    assessment.
+  target_ids:
+  - naturalproductmech:mibig-6c1bd93a9d
+  evidence_ids:
+  - R089-LOCAL-SOURCES
+  - R089-Q103810935
+- assessment_id: R089-G-COFACTOR
+  area: graph
+  topic: AtmC FAD binding graph
+  outcome: supported
+  summary: The graph asserts measured cofactor binding with assay context. The paper
+    and SI support its value, uncertainty, experiment count and construct handling.
+    RebC/StaC chemistry is not transferred to AtmC, and the graph makes no finished
+    AT2433-A1 turnover claim.
+  target_ids:
+  - naturalproductmech:mibig-6c1bd93a9d
+  evidence_ids:
+  - R089-G-ATMC
+  - R089-G-ATMC-SI
+  - R089-G-Q0H2X3
+  - R089-G-MAPPING
+- assessment_id: R089-G-PRECURSORS
+  area: graph
+  topic: AtmS8/AtmS9/AtmS14 sequential assay graph
+  outcome: supported
+  summary: The graph preserves direct substrate/product observations for the first
+    two assays, condition-dependent AtmS9 product scope, and AtmS14 degradation without
+    asserting the unisolated intermediate or complete donor. Native parent identifiers
+    agree with the exact locus. Synthetic-construct sequence verification remains
+    explicitly unresolved.
+  target_ids:
+  - naturalproductmech:mibig-6c1bd93a9d
+  evidence_ids:
+  - R089-G-SUGAR
+  - R089-G-GENBANK
+  - R089-G-Q0H2W3
+  - R089-G-Q0H2W2
+  - R089-G-Q0H2W5
+  - R089-G-MAPPING
+  - R089-G-SI-ACCESS
+- assessment_id: R089-G-CRYSTAL
+  area: graph
+  topic: AtmS13 structural assembly and PLP adduct
+  outcome: supported
+  summary: The protein node denotes the exact canonical parent of the SeMet cleaved
+    construct; the dimer node remains distinct. Both edges are supported at the crystal/structural
+    level. Q0H2X1 Lys187, label190 after SNA, and alternate PLP occupancy match the
+    deposit. Neither substrate stereochemistry nor aminotransferase turnover follows
+    from this evidence.
+  target_ids:
+  - naturalproductmech:mibig-6c1bd93a9d
+  evidence_ids:
+  - R089-G-STRUCTURE
+  - R089-G-STRUCTURE-FIG
+  - R089-G-Q0H2X1
+  - R089-G-4ZWV
+  - R089-G-4XAU
+  - R089-G-SIFTS
+  - R089-G-ASSEMBLY
+  - R089-G-MAPPING
+- assessment_id: S089-A-ORIGIN
+  area: evidence
+  topic: Native origin and experimental stock
+  outcome: supported
+  summary: Both primary native isolations identify the same deposited producer lineage
+    by explicit stock identifiers. A1 is individually isolated rather than inferred
+    from congener production. Preserve SCC 1655 / ATCC 39691 as culture context.
+  target_ids:
+  - naturalproductmech:mibig-6c1bd93a9d
+  evidence_ids:
+  - S089-E-1989
+  - S089-E-2015
+- assessment_id: S089-A-LOCUS
+  area: evidence
+  topic: Conservative cluster strength and the unresolved entry citation
+  outcome: unknown
+  summary: The current absence of locus methods avoids an unsupported full-product
+    grade. The detailed partial graphs do not establish complete AT2433-A1 reconstitution
+    or native final-product loss. The inaccessible 2006 body prevents a complete independent
+    audit of the entry-level cluster evidence; this is a required limitation, not
+    a refutation.
+  target_ids:
+  - naturalproductmech:mibig-6c1bd93a9d
+  evidence_ids:
+  - S089-E-LOCAL
+  - S089-E-2006-ACCESS
+- assessment_id: C089-IDENTITY
+  area: identity
+  topic: Exact A1 disaccharide, chlorine and stereochemical assignment
+  outcome: supported
+  summary: Neutral C34H35ClN4O9 has eight assigned sugar centres, the indolocarbazole
+    imide N-methyl, one chlorine and aminopentose N-methyl. The original numbered
+    A1 drawing/chemical degradation and reported CD support this congener and hand.
+    Current MIBiG, literal NPAtlas NPA011993, exact PubChem 128141 and official ChEBI
+    222273 MOL agree at full Standard and fixed-H identity. ChEBI remains two-star,
+    supporting retained minting; its invalid default SMILES is not silently repaired.
+  target_ids:
+  - naturalproductmech:mibig-6c1bd93a9d
+  evidence_ids:
+  - C089-LOCAL
+  - C089-COMPARE
+  - C089-MIBIG
+  - C089-PRIMARY1989
+  - C089-ISOLATION1989
+  - C089-AUTH0
+  - C089-AUTH1
+  - C089-AUTH2
+  dimensions:
+  - name: stereochemical_resolution
+    value: Eight assigned sugar centres with explicit primary relative and absolute
+      argument
+    definition: Reported derivative exciton/CD evidence and rebeccamycin comparison
+      are distinguished from full independent spectral re-elucidation.
+    evidence_ids:
+    - C089-LOCAL
+    - C089-PRIMARY1989
+findings:
+- finding_id: S089-F-STRAIN
+  issue_key: mibig-bgc0000809-atcc39691-culture-context-omitted
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: The directly documented producer culture is omitted
+  description: The species-level producer omits SCC 1655 / ATCC 39691, explicitly
+    bridged in the original isolation paper and used in the 2015 exact A1 reisolation.
+    Add that bounded native culture context without turning source assertion into
+    a species-wide or native-genetic demonstration.
+  target_ids:
+  - naturalproductmech:mibig-6c1bd93a9d
+  field_paths:
+  - producer_organisms[0].strain
+  - producer_organisms[0].notes
+  evidence_ids:
+  - S089-E-LOCAL
+  - S089-E-1989
+  - S089-E-2015
+  - S089-E-STRAIN-CONSUMER
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Exact raw-row-pinned culture qualification
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/producer_strains.py
+    role: Consumed strain guard
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Producer emission and structure-composition guard
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Untouched upstream source row
+actions:
+- action_id: S089-ACT-STRAIN
+  description: Add the existing consumed producer-strain decision source_id=BGC0000809:1,
+    expected_source_row_sha256=c7f668f648e6597d1d80605eb4feef28bdca5ba689e9dfeb3337c51c3a078b68,
+    strain=ATCC 39691 (SCC 1655), reference=DOI:10.7164/antibiotics.42.1547, with
+    curator/date and rationale also citing DOI:10.1021/acs.jnatprod.5b00429. Preserve
+    taxon 360723, DQ297453.1, v3, explicit unknown bounds, SOURCE_ASSERTION and CLUSTER_UNSTATED.
+    The native culture bridge does not resolve the inaccessible 2006 construct/stock
+    details or prove whole-product biosynthesis from the partial inline graphs. Do
+    not add locus methods on that basis. The strain consumer rejects a simultaneous
+    structure correction; if one is separately authorized, require reviewed and tested
+    exact-source composition.
+  finding_ids:
+  - S089-F-STRAIN
+  target_ids:
+  - naturalproductmech:mibig-6c1bd93a9d
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Exact raw-row-pinned culture qualification
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/producer_strains.py
+    role: Consumed strain guard
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Producer emission and structure-composition guard
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Untouched upstream source row
+  generator: scripts/seed_from_sources.py consuming curation/mibig_producer_strains.tsv
+  acceptance_checks:
+  - Require the exact unique raw row and complete SHA, stable primary reference and
+    attribution; changed rows and duplicate decisions fail.
+  - Emit native ATCC 39691 (SCC 1655) with primary provenance while retaining the
+    source assertion and ungraded locus.
+  - Do not infer recombinant construct sequence equality, missing source coordinates
+    or a complete-product assay.
+  - After separately authorized curation, run strict, reproduction, corpus and QC
+    gates.
+limitations:
+- This review assesses current assertions and concrete source questions. It does not
+  claim exhaustive discovery of subsequent studies or require every optional mechanism
+  as a condition of review coverage.
+- AtmS14 synthetic-gene sequence remains unverified because the exact supporting PDF
+  was not accessible through the bounded public routes. The review preserves the owner
+  disclosure and does not equate the canonical native parent with a verified complete
+  synthetic construct.
+- The required 2006 full primary/SI remains inaccessible; the review is partial even
+  though both occurrence citations and original exact-product isolation are positively
+  supported.
+- The 2015 supplemental file response is HTML, not a read PDF. No new supplemental
+  NMR or final-product biosynthetic experiment is inferred.
+- Detailed causal-graph protein, reaction and construct scope is assessed by the separate
+  root packet; this science packet does not substitute genus or cluster association
+  for a demonstrated full pathway.
+- The authors’ CD/chemical-correlation assignment is assessed as reported; no new
+  CD calculation, derivatization, or independent reconstruction of all original spectra
+  was performed. Protein/reaction graph construct checks and the unavailable 2006
+  main are separate assigned checks, not silently marked passed here.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35
+  explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently
+  verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+  Skipped tests are not counted as passing tests. Existing ontology caches were used;
+  no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do
+  not establish biological production, stereochemical specificity, evidence adequacy,
+  or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology
+  results. Reuse establishes unchanged repository inputs; it is not a new remote authority
+  query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all
+  tracked files are hashed. Generated Python bytecode and external tool caches are
+  not claimed to have been independently byte-pinned at the prior execution.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+tags:
+- path-order-campaign
+- batch-009
+```
