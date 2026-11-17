@@ -1,0 +1,1510 @@
+# Scientific review of dihydrofusarin C
+
+- Review: 20261021T222918Z-dihydrofusarin-c
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-21T22:26:58.563951Z
+- Finished UTC: 2026-10-21T22:29:18.949575Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The original dihydrofusarin C drawing depicts C13S while the retained graph encodes C13R; the other two centres, five chain alkene constraints and constitution agree. Native IMI58289 product and deletion observations are positive, but applicability to the imported F. verticillioides locus remains unresolved. Preserve both that distinction and the incomplete original absolute-hand evidence when adjudicating the confirmed depiction discrepancy.
+
+## Scope And Provenance
+
+One complete generated owner and any referenced components, assessed claim by claim for exact identity, provenance, origin, producer and occurrence scope, biosynthesis, classification, optional content and audit history.
+
+Selection: Campaign record 186, batch 019, selected in path order from the fresh-main authoritative validated catalogue and the separately validated targets in earlier batch commits (publication tracked separately). At selection, 234 of 3116 current records had campaign coverage and 2882 remained. The population search included ignored files. Exactly one target is assessed here.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-1cda183e48 | data/natural_products/alkaloids/dihydrofusarin-c.yaml | generated | dihydrofusarin C |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Closed-schema target validation | passed | True | naturalproductmech:mibig-1cda183e48 | The documented target strict validator completed; scientific support is assessed separately. |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-1cda183e48 | All 3116 corpus records are filed exactly where PATHS.tsv pins them. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-1cda183e48 | All 3116 records reproduce byte-for-byte from data/raw/. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-1cda183e48 | The canonical review-queue command completed with actual exit0 on the fresh main base; exact output, warnings and skips remain in the pinned transcript. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-1cda183e48 | Configured identifier-label validation exited zero: 13449 canonical matches, 646 synonym matches and 35 configured exceptions; 499 non-blocking warnings and 4750 no-adapter skips remain. |
+| Full repository quality gate on the fresh main baseline | passed | True | naturalproductmech:mibig-1cda183e48 | Full fresh-base quality command completed successfully:999 tests passed,4 skipped,2 warnings;3116 records passed closed schema validation and corpus reproduction, and generated pages were current. |
+| Complete owner and captured-source scope | passed | True | naturalproductmech:mibig-1cda183e48 | Successful official intake and a fresh root full-owner/read receipt precede this authoring. All six officially captured sets and the separately mechanically parsed seventh PubChem set match. All seven exact-key sets were read by root; each PubChem set is empty and no assay is emitted. No BindingDB or graph assertion is present. The external component set is empty. |
+| Direct original named native-culture support | passed | True | naturalproductmech:mibig-1cda183e48 | Complete original SI Methods and named traces support native IMI58289 culture production. This passed check is bounded to the named primary product and stock; retained graph and species/locus applicability remain separate required checks. |
+| Exact retained product, producer and locus experimental bridge | unavailable | True | naturalproductmech:mibig-1cda183e48 | The required F. verticillioides/AY604568.1 stock and exact dihydro-product genetic bridge remains unresolved. The original complete 2013 and 2004 main bodies remain unavailable; the 2013 SI and Figure1 are now positively inspected. No absent-source check is treated as a failed biological experiment. |
+| Stored chemical representation and complete source row | passed | True | naturalproductmech:mibig-1cda183e48 | Fresh intake derivation agrees with the stored graph; the source selector, full row and prepared snapshot were independently rechecked. |
+| Exact literal identifier resolution | not_applicable | True | naturalproductmech:mibig-1cda183e48 | Present literal PubChem and NPAtlas structures were independently parsed; no unsupported positive replacement identifier is introduced. |
+| Exact parent depiction versus retained C13 | failed | True | naturalproductmech:mibig-1cda183e48 | The primary depiction and uniquely mapped retained graph disagree at C13. A different intermediate cannot resolve this parent-specific conflict. |
+| Complete exact-parent natural absolute-hand experiment | unavailable | True | naturalproductmech:mibig-1cda183e48 | Full2013 main body and a complete exact-parent absolute-hand protocol remain uninspected. The verified drawing-level conflict does not independently select the natural hand. |
+
+## Scientific And Domain Assessments
+
+### Native status and complete audit history
+
+provenance: supported. Targets: naturalproductmech:mibig-1cda183e48.
+
+All 2 retained events are SEEDED_FROM_SOURCES. Native status remains SEEDED; provenance events are not structured-review passes.
+
+### Complete optional-assertion inventory
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-1cda183e48.
+
+No optional definition, pathway, graph, target, assay, application, summary, relation, discussion or clinical-status assertion is present. Optional enrichment is separate from checking existing source claims.
+
+### Exact-key computed classification provenance
+
+representation: supported. Targets: naturalproductmech:mibig-1cda183e48.
+
+The exact-key NPClassifier projection and version npclassifier.gnps2.org@2026-09-07 reproduce the owner filing, superclass/class labels and glycoside value false. Computed labels are not independent precursor, mechanism or natural-origin evidence. Any accepted new identity requires reclassification for its effective key.
+
+### Taxonomic names versus experimental stocks
+
+provenance: supported. Targets: naturalproductmech:mibig-1cda183e48.
+
+NCBI 117187 Fusarium verticillioides includes F. moniliforme as a synonym. Membership in the F. fujikuroi species complex does not make distinct named species or experimental stocks interchangeable.
+
+### Producer transcriptomic applicability
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-1cda183e48.
+
+No exact imported native producer is represented in the inspected catalogue. The positive S. albidoflavus dataset membership does not supply the unresolved F001 bridge. Related species, experimental hosts and assay targets do not establish a construct/condition match; no gene/module or compound-production inference is made.
+
+### Named native congener at the actually tested stock
+
+evidence: supported. Targets: naturalproductmech:mibig-1cda183e48.
+
+The original Figure 1 names compound 1 as dihydrofusarin C. The full SI identifies F. fujikuroi IMI58289 as parent of all knockouts and positively detects the named congener in native culture. Figure S3 retains its peak in delta fus3/4/5/6/7; Table S2 reports no fusarins for delta fus1. This establishes named natural-culture and pathway dependence at that stock, subject to separate exact-graph adjudication; it does not prove the imported F. verticillioides stock is the same experiment.
+
+### Exact imported knockout applicability and accession context
+
+scope: unknown. Targets: naturalproductmech:mibig-1cda183e48.
+
+The imported Knock-out studies method yields BGC_CHARACTERIZED and CLUSTER_DEMONSTRATED. The recovered SI now resolves the actual 2013 native host and congener traces. AY604568.1 instead records current F. verticillioides, historical Gibberella fujikuroi, and PMID15368570, without a strain qualifier. The 2004 abstract reports F. moniliforme/F. venenatum fusarin genetics but not the exact dihydro endpoint. That positive deposited reference bridge is insufficient to equate these experiments or transfer the IMI58289 result to the retained locus. Source NRPS/PKS and tetramate/linear-polyketide classes do not supply the missing bridge.
+
+### Culture evidence versus distinct intermediates and unasserted assays
+
+scope: supported. Targets: naturalproductmech:mibig-1cda183e48.
+
+The SI culture-filtrate HPLC-UV/DAD and FTMS context supports the named dihydrofusarin observation. Fusarin instability remains relevant, but is not a reason to withdraw positive culture evidence. Figure S19B is decarboxy-dihydrofusarin C, a distinct compound; its spectra do not prove this target. Table S2 overexpression/coculture/rescue endpoints are other prefusarin intermediates, not an exact dihydro rescue or purified terminal reaction. Parent fusarin mutagenicity is not imported as target activity.
+
+### Guarded follow-up without a guessed correction
+
+ownership: not_applicable. Targets: naturalproductmech:mibig-1cda183e48.
+
+Preserve source_id=BGC0000064:2, expected_source_row_sha256=a4670926bd7de0167f45ff15195388e1051380335dd78ca067053d7347c1c581 and all original source fields. First resolve the exact species/locus/congener bridge and independent chemistry disagreement. A genuinely corrected citation can use the existing full-row claim-reference consumer; a legitimate strain row can disclose the tested stock but cannot establish species equivalence. If a method is demonstrably inapplicable, use the actual method contract with all old-field guards plus an enforced complete-row guard. Species reassignment or selective association suppression needs a new tested typed consumer. No route is selected merely because the full primary is unavailable, and no unqualified identity migration follows from the recovered diagram.
+
+### Stored representation and source-concept provenance
+
+identity: supported. Targets: naturalproductmech:mibig-1cda183e48.
+
+The complete source row BGC0000064:2 and source-concept hash reproduce this stored representation; this does not establish that the upstream compound label is correct. Formula, charge, Standard and fixed-H distinctions are independently recorded. Primary support and any conflicting exact xref are assessed separately.
+
+### Exact authority eligibility and source representation
+
+provenance: supported. Targets: naturalproductmech:mibig-1cda183e48.
+
+No exact eligible row exists in the committed ChEBI projection for this owner. Current bounded name/key searches do not justify a different congener or a two-star grounding.
+
+### Literal identifier and exact microstate comparison
+
+representation: supported. Targets: naturalproductmech:mibig-1cda183e48.
+
+All emitted literals resolve to their actual namespaces and agree in Standard and fixed-H representation: []. Current metadata does not establish original experimental hand.
+
+### Current ChEBI eligibility
+
+grounding: supported. Targets: naturalproductmech:mibig-1cda183e48.
+
+No exact row occurs in the committed eligible projection. Eight bounded current exact/name hits across this cohort are two-star; targets186/188 return explicit404 for the literal full-key and name queries. This is bounded search scope, not global absence. Invalid default SMILES and valid official MOLs remain distinct.
+
+### Primary chemical support and retained precision
+
+scope: unknown. Targets: naturalproductmech:mibig-1cda183e48.
+
+The exact original2013 parent depiction and retained graph differ at C13 only. The exact original parent drawing conflicts at C13 with the retained graph; full main/absolute-hand protocol remains uninspected. The diagnostic graph is not an approved replacement, and no current eligible corrected target is established.
+
+## Findings
+
+### C186-F-C13-DEPICTION: The retained C13 configuration disagrees with the original parent drawing
+
+major / open / confirmed; issue key: mibig-bgc0000064-compound2-c13-primary-depiction.
+
+The original2013 Figure1 exact compound1 depicts C13S; the current stored MIBiG-derived graph encodes C13R. Other two depicted centres, all five chain alkene constraints and constitution agree. This is a confirmed depiction discrepancy, not proof that a diagnostic C13 flip is the fully verified natural product.
+
+## Recommended Actions And Acceptance Checks
+
+### C186-ACTION-C13-DEPICTION
+
+Exact complete original guards: [{"entry_version": "4", "expected_source_row_sha256": "a4670926bd7de0167f45ff15195388e1051380335dd78ca067053d7347c1c581", "full_original_row": {"bgc_classes": "NRPS&#124;PKS", "bgc_subclasses": "Type I&#124;Type I", "cluster_link_evidence_basis": "CLUSTER_DEMONSTRATED", "compound_classes": "Tetramate alkaloid&#124;Linear polyketide", "compound_index": "2", "compound_name": "dihydrofusarin C", "database_ids": "", "entry_completeness": "unknown", "entry_quality": "questionable", "entry_status": "active", "entry_version": "4", "genome_accession": "AY604568.1", "locus_evidence_methods": "Knock-out studies", "locus_from": "", "locus_to": "", "mibig_accession": "BGC0000064", "primary_reference": "DOI:10.1016/j.chembiol.2013.07.004", "producer_evidence_basis": "BGC_CHARACTERIZED", "reference_basis": "COMPOUND_EVIDENCE", "smiles": "COC(=O)/C(=C/C)/C=C(\\C)/C=C(\\C)/C=C/C=C(\\C)/C(=O)[C@H]1[C@@H](O)[C@@](O)(CCO)NC1=O", "standard_inchi": "InChI=1S/C23H31NO7/c1-6-17(22(29)31-5)13-15(3)12-14(2)8-7-9-16(4)19(26)18-20(27)23(30,10-11-25)24-21(18)28/h6-9,12-13,18,20,25,27,30H,10-11H2,1-5H3,(H,24,28)/b8-7+,14-12+,15-13+,16-9+,17-6+/t18-,20+,23-/m0/s1", "standard_inchi_key": "QGVFETJQEKVSJA-SCHXNIKUSA-N", "stereo_complete": "true", "taxon_id": "NCBITaxon:117187", "taxon_label": "Fusarium verticillioides"}, "source_id": "BGC0000064:2"}]. Resolve the parent-specific C13 assignment against complete primary characterization before adopting any replacement or explicit qualification. Preserve the positive exact-product biology at its source-supported stock and chemical resolution. The diagnostic alternate key has no exact match in the bounded committed eligible projection/curation search; a current corrected eligible target is not verified. First adjudicate the exact primary product and any remaining hand evidence. Adopt only a verified unique three-star target through the existing full-row/target-row-pinned contract, or implement and test a reviewed primary-graph/qualification consumer; arbitrary SMILES and label overrides are not currently supported. Preserve the original source mint and reassess every old-key occurrence, assay, xref, classification and biological association. Existing claim-reference/strain consumers reject structure_correction_note, so joint composition must be explicit and tested. No source biological claim is silently migrated by name.
+
+- Changed, duplicate or missing original selectors and stale complete-row hashes fail closed.
+- Complete candidate constitution, charge, all centres/alkenes, Standard and fixed-H forms are independently checked at the cited primary resolution; no automatic diagnostic flip is adopted.
+- A verified target has a valid copied default SMILES and eligible three-star row, or the new primary-source route has explicit complete candidate/source hashes and consumed-route tests.
+- Old-key joins and positive biological evidence are individually adjudicated; incompatible overlays fail closed until their composition is tested.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| R186-OWNER | data/natural_products/alkaloids/dihydrofusarin-c.yaml; Complete post-intake owner, optional assertions and all history events | supports | Root read the complete owner after successful official intake: 0 occurrence, 1 producer and 1 locus assertions. No referenced external component is present. Optional fields: none. |
+| R186-LOCAL | /private/tmp/npm-review-work/186/local-sources.json; Complete resolved owner and all six officially captured raw row sets | context_only | All six captured MIBiG, LOTUS, ChEBI structures/origins, CyanoMetDB and NPClassifier sets match the frozen preparation, including empty sets. The separate seventh PubChem inventory comparison is distinguished below. Source fidelity does not itself establish experimental support. |
+| R186-PUBCHEM-PREP | data/raw/pubchem_bioassay.tsv; Exact-key rows compared with the separate provisional seventh source set | context_only | The separate committed PubChem raw set contains 0 matching rows and reproduces the frozen preparation. All ten exact-key sets are genuinely empty, not no-assay-data sentinel observations. This is not part of the official six-set intake and does not establish absence of bioactivity from the literature. |
+| R186-TAXON-CONTEXT | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;retmode=xml&amp;id=117187,1510026,1873,1873482,1883,1886,2201999,33178,341663,37463,457406,571,83212; Exact relevant TaxId, ScientificName, Rank, ParentTaxId and OtherNames fields | context_only | NCBI 117187 Fusarium verticillioides includes F. moniliforme as a synonym. Membership in the F. fujikuroi species complex does not make distinct named species or experimental stocks interchangeable. |
+| R186-IMODULON | https://imodulondb.org/api/datasets; Complete 20-organism, 28-dataset official catalogue | context_only | The full retained catalogue establishes membership only. S. albidoflavus has a listed dataset, but that does not establish applicability to F001 or validate the separate albidoflavus occurrence. None of the exact imported native producer labels is listed. E. coli experimental hosts and M. tuberculosis assay targets are distinct from native producer regulation. |
+| S186-E-LOCAL | /private/tmp/npm-review-work/186/local-sources.json; Full resolved owner, every present claim and all seven matching raw sets | context_only | Complete actual owner and six captured source sets match the prepared inventory; the seventh PubChem set is independently reconciled against the entire raw TSV. |
+| S186-E-RAW | data/raw/mibig_compounds.tsv; {"bgc_classes": "NRPS&#124;PKS", "bgc_subclasses": "Type I&#124;Type I", "cluster_link_evidence_basis": "CLUSTER_DEMONSTRATED", "compound_classes": "Tetramate alkaloid&#124;Linear polyketide", "compound_index": "2", "compound_name": "dihydrofusarin C", "database_ids": "", "entry_completeness": "unknown", "entry_quality": "questionable", "entry_status": "active", "entry_version": "4", "genome_accession": "AY604568.1", "locus_evidence_methods": "Knock-out studies", "locus_from": "", "locus_to": "", "mibig_accession": "BGC0000064", "primary_reference": "DOI:10.1016/j.chembiol.2013.07.004", "producer_evidence_basis": "BGC_CHARACTERIZED", "reference_basis": "COMPOUND_EVIDENCE", "smiles": "COC(=O)/C(=C/C)/C=C(\\C)/C=C(\\C)/C=C/C=C(\\C)/C(=O)[C@H]1[C@@H](O)[C@@](O)(CCO)NC1=O", "standard_inchi": "InChI=1S/C23H31NO7/c1-6-17(22(29)31-5)13-15(3)12-14(2)8-7-9-16(4)19(26)18-20(27)23(30,10-11-25)24-21(18)28/h6-9,12-13,18,20,25,27,30H,10-11H2,1-5H3,(H,24,28)/b8-7+,14-12+,15-13+,16-9+,17-6+/t18-,20+,23-/m0/s1", "standard_inchi_key": "QGVFETJQEKVSJA-SCHXNIKUSA-N", "stereo_complete": "true", "taxon_id": "NCBITaxon:117187", "taxon_label": "Fusarium verticillioides"} | context_only | Immutable exact source selector source_id=BGC0000064:2, expected_source_row_sha256=a4670926bd7de0167f45ff15195388e1051380335dd78ca067053d7347c1c581. |
+| S186-E-SOURCE-SCOPE | /private/tmp/npm-review-work/shared-next-batch019/review-support/source-notes.json; Five compound scopes and complete actual source access receipts | context_only | Frozen primary read scopes and unresolved retrieval needs. Capacity-deferred requests were not sent and are not evidence of scientific absence. |
+| S186-E-ACCESS | /private/tmp/npm-review-work/shared-next-batch019/review-support/input-manifest.json; Flattened source evidence and original per-response timestamps | context_only | Flat immutable source pins, including successful content, abstract-only captures, unsuccessful public routes and capacity stops. Formal authoring does not extend the primary read scope. |
+| S186-E-CONSUMERS | scripts/seed_from_sources.py; Method loader; untouched source_row; producer/locus emission; guarded overlay composition | context_only | Method REPLACE has no independent full-row SHA guard; WITHDRAW checks its seven literal expected fields but retains source-tier associations. Citation and producer-strain overlays have full-row guards and reject structure-corrected rows in the current composition. |
+| S186-E-CLAIM-ROUTE | src/naturalproductmech/curate/claim_references.py; Complete load_claim_references and correct_claim_reference contracts | context_only | The existing exact-row citation consumer changes the two claim-local references with curator attribution while retaining database assertion type, source taxon and evidence grades. |
+| S186-E-STRAIN-ROUTE | src/naturalproductmech/curate/producer_strains.py; Complete strain/isolate qualification implementation | context_only | A legitimate strain qualification pins the entire original MIBiG row and adds producer-only context. It cannot reassign a taxon, change a locus grade or itself qualify BGC notes. |
+| S186-E-GRADING | conf/producer_evidence.tsv; Complete two-claim evidence vocabulary | context_only | Native necessity and native expression correlation grade the organism and locus; heterologous expression grades the cloned locus only. Empty source methods mean SOURCE_ASSERTION and CLUSTER_UNSTATED. |
+| S186-E-FUS13-ABSTRACT | PMID:23932525; Exact PubmedArticle for DOI 10.1016/j.chembiol.2013.07.004; retained /private/tmp/npm-review-work/shared-next-batch019/review-support/attempt-002/pubmed.xml | partial | The original abstract describes the F. fujikuroi fusarin biosynthetic study; exact F. verticillioides/AY604568.1 and congener-specific applicability remain unresolved. Read scope: Complete original abstract and metadata only; no full body or original figure pixels. |
+| S186-E-FUS13-EXCERPTS | DOI:10.1016/j.chembiol.2013.07.004; Indexed original publisher Introduction, Figure 1 caption, biosynthesis/significance and experimental/accession excerpts; retained /private/tmp/npm-review-work/shared-next-batch019/review-support/discovery-web-004.json | partial | The original indexed Figure 1 caption names dihydrofusarin C. Other inspected excerpts describe family genetics and chemical instability, without closing exact product/strain/accession applicability. Read scope: Bounded original publisher excerpts retained in the web response; not a contiguous full-body read, complete spectrum, or independently read figure drawing. |
+| S186-E-FUS13-SI | DOI:10.1016/j.chembiol.2013.07.004; Official 54-page supplement; Figure S1 p2, S2 pp3–4, S3 p5, Table S2 p40, Methods p44 onward; retained /private/tmp/npm-review-work/shared-next-batch019/review-support/primary-recovery-007/fusarin2013-si.pdf | supports | Native F. fujikuroi IMI58289 is parent of all knockouts. Named dihydrofusarin C is detected in culture and retained in delta fus3/4/5/6/7; Table S2 reports no fusarins for delta fus1. Intermediate rescue/overexpression results are not exact dihydro rescue. Read scope: All 1957 extracted lines read; original physical pages 2,3,5,27,40,44 viewed. No comprehensive spectral reassignment or independent natural absolute-hand proof. |
+| S186-E-FUS13-FIG1 | DOI:10.1016/j.chembiol.2013.07.004; Original main Figure 1, exact named compound 1 and adjacent numbered scaffold; retained /private/tmp/npm-review-work/shared-next-batch019/review-support/primary-recovery-007/fusarin2013-fig1.jpg | supports | Original drawing positively names dihydrofusarin C as compound 1. Literal depicted stereochemistry requires independent comparison to the retained graph; this biology packet does not select a replacement or transfer old-key evidence. Read scope: Complete original image viewed. This is a source depiction, not a new absolute-hand determination; complete main remains unavailable. |
+| S186-E-FUSS04-ABSTRACT | PMID:15368570; DOI:10.1002/cbic.200400138; Complete original PubMed abstract and publication metadata; retained /private/tmp/npm-review-work/shared-next-batch019/review-support/primary-recovery-007/fuss2004-pubmed.xml | supports | Original abstract describes F. venenatum cDNA disruption and F. moniliforme genomic cloning/disruption giving fusarin-deficient mutants. It does not explicitly resolve the exact dihydro endpoint or experimental stock. Read scope: Abstract and metadata only; the new official pdfdirect route returned403, not a recovered full body. |
+| S186-E-AY604568 | GenBank:AY604568.1; Versioned deposited record: header, source, references and all feature qualifiers; retained /private/tmp/npm-review-work/shared-next-batch019/review-support/primary-recovery-007/AY604568.1.gb | supports | Current deposited source is F. verticillioides taxon117187 with historical Gibberella fujikuroi definition, fusA/FUSS protein AAT28740.1 and PMID15368570 reference. No strain qualifier is present. This species/reference bridge does not establish the 2013 IMI58289 experimental identity. Read scope: All header and feature qualifiers read. Translation was displayed but not aligned or independently translated; no complete DNA identity audit. Deposited translation contains X. |
+| S186-E-RECOVERY | /private/tmp/npm-review-work/shared-next-batch019/review-support/primary-recovery-007/source-notes.json; Complete additive read scopes, actual access receipts and explicit remaining limits | context_only | Additive recovered original sources supersede only the earlier SI/image read limitations stated here; original failure receipts and source retrieval times remain preserved. |
+| C186-OWNER | data/natural_products/alkaloids/dihydrofusarin-c.yaml; Complete owner and all seven matching source-row sets; no referenced components | supports | The complete owner denotes dihydrofusarin C under naturalproductmech:mibig-1cda183e48. All source selectors, versions and complete row digests are retained in COMPARISON: [{"row_sha256": "a4670926bd7de0167f45ff15195388e1051380335dd78ca067053d7347c1c581", "selector": "BGC0000064:2", "version": "4"}]. The official intake and prepared owner bytes agree. |
+| C186-GRAPH | /private/tmp/npm-review-work/186/chemistry.json; Fresh intake RDKit result and frozen Standard/fixed-H comparison | supports | The stored SMILES recomputes to QGVFETJQEKVSJA-SCHXNIKUSA-N, formula C23H31NO7, formal charge 0; stored InChI/key agree. These are representation checks, not experimental identity proof. |
+| C186-COMPARISON | /private/tmp/npm-review-work/shared-next-batch019/chemistry-prep/retained-graph-comparison.json; Record 186; exact source rows and each graph comparison | supports | Exact Standard, fixed-H, formula, charge and stereo comparisons of the retained owner and complete raw rows; current authority responses and primary proof are separate evidence. |
+| C186-LOCAL-SEARCH | /private/tmp/npm-review-work/186/chemistry-search-receipt.json; Exact full key, label, slug and source selector in raw/owner/curation trees | supports | Ignored-inclusive bounded search preserves all matching paths; an absent curation decision does not imply a missing scientific source. |
+| C186-AUTHORITY-COMPARISON | /private/tmp/npm-review-work/shared-next-batch019/chemistry-prep/authority-bounded-phase-002/authority-comparison.json; Exact current response and independently parsed literal structure per target | supports | Complete current-response Standard/fixed-H, formula, charge and stereo comparisons. Seven default ChEBI strings fail parsing despite exact official MOLs; all eight returned ChEBI hits are two-star. No authority vote establishes primary hand. |
+| C186-CHEBI-SEARCH-1 | https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=QGVFETJQEKVSJA-SCHXNIKUSA-N&amp;size=100; Literal key query; complete chebi-key-186.json | supports | {"detail": "No compound matches the provided term: 'QGVFETJQEKVSJA-SCHXNIKUSA-N'"} |
+| C186-CHEBI-SEARCH-2 | https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=dihydrofusarin+C&amp;size=100; Literal name query; complete chebi-name-186.json | supports | {"detail": "No compound matches the provided term: 'dihydrofusarin C'"} |
+| C186-AUTH-1 | https://mibig.secondarymetabolites.org/repository/BGC0000064.4/annotations.json; Complete retained response /private/tmp/npm-review-work/shared-next-batch019/chemistry-prep/authority-bounded-phase-002/public-retry/BGC0000064.4.json | supports | Exact namespace/version and structure details are in AUTHORITY-COMPARISON. This snapshot binds the actual returned record, not independent experimental proof. |
+| C186-CONSUMERS | src/naturalproductmech/curate/structure_corrections.py; Complete maintained structure consumer; separately pinned claim-reference/strain/xref consumers | supports | The implemented replacement/splitting route requires an exact source selector, complete original and target row hashes, a unique committed eligible three-star target and collision checks. It copies the target SMILES text, so an invalid default JSON string cannot be rescued merely by a valid MOL. It clears old xrefs/rebuilds exact-key joins. Arbitrary primary SMILES or label replacement is not supported. Existing reference/strain/xref consumers reject structure_correction_note; composition cannot be assumed. |
+| C186-PRIMARY-FIGURE | DOI:10.1016/j.chembiol.2013.07.004; Original main Figure1 exact compound1, dihydrofusarin C; adjacent numbered scaffold supports position labels; exact retained snapshot /private/tmp/npm-review-work/shared-next-batch019/review-support/primary-recovery-007/fusarin2013-fig1.jpg | supports | The exact parent drawing uses solid C13-to-C12, dashed C14-OH and solid C15-OH. The independent whole-graph transcription gives C13S/C14R/C15S and five E alkenes; this is published depiction, not a new absolute-hand experiment. |
+| C186-PRIMARY-SI | DOI:10.1016/j.chembiol.2013.07.004; Selected SI compound-label/structure passages and exact-parent versus S19B context; no complete54page chemistry-read claim; exact retained snapshot /private/tmp/npm-review-work/shared-next-batch019/review-support/primary-recovery-007/fusarin2013-si.pdf | supports | The retained54pageSI distinguishes named parent1 from the different decarboxy-dihydro intermediate illustrated in S19B. Intermediate hydrogen-exchange remarks are not automatically parent epimerization evidence. Exact F.verticillioides versus tested F.fujikuroi stock applicability is separately assessed by science. |
+| C186-PRIMARY-MAP | /private/tmp/npm-review-work/shared-next-batch019/chemistry-prep/primary-recovery-mapping-003/primary-comparison.json; Independent source-local graph comparison; original inputs and boundaries retained | supports | Original Figure1 parent model and retained graph have identical constitution, C14R/C15S and five E alkenes; C13 alone differs, depictedS versus retainedR. The diagnostic full keyIOAWLMGGSA differs from retainedSCHXNIKUSA; no replacement is adopted. |
+| C186-TARGET-SEARCH | /private/tmp/npm-review-work/shared-next-batch019/chemistry-prep/primary-recovery-mapping-003/diagnostic-target-local-search.json; Exact diagnostic keys in complete committed ChEBI projection and ignored-inclusive curation tree | supports | No match within the explicitly searched current local inputs. Current officialAPI web opens were inaccessible; that is not an authority absence result. No eligible replacement is presently established. |
+
+## Limits And Additional Notes
+
+- The root section inventories present claims and source routing; chemical identities, source-specific experiments, definition claims and optional-content assertions require their separately scoped scientific assessments.
+- The original complete 2013 main and 2004 full FUSS body remain unavailable. Positive IMI58289 dihydrofusarin culture/SI evidence does not independently establish the retained F. verticillioides/AY604568.1 exact product/stock bridge.
+- The recovered original drawing is not an independent natural absolute-hand experiment; any primary-to-retained stereochemical disagreement is adjudicated by chemistry before old-key claims can migrate.
+- No full native sequence-equivalence audit, exact dihydrofusarin rescue, purified terminal enzyme or decarboxy-dihydrofusarin spectral transfer is claimed.
+- Original access times and immutable source snapshots are preserved; formal authoring is not a new retrieval or an expanded primary read.
+- Optional missing pathways, proteins and bioactivities are not defects by themselves. All seven matching sets are reconciled; these five candidates have no emitted PubChem assay observations in the frozen source context.
+- Independent chemistry owns exact representation/authority findings. Any simultaneous identity and biological correction must adjudicate original-key associations and tested consumer composition.
+- No scientific record, raw source inventory, campaign or repository state is changed by these proposed actions.
+- Authority matches establish the representations actually returned at their retained access times; they are not independent experimental structure or absolute-hand determinations. Root and science sections separately assess organism, locus, classification and history claims.
+- The exact original parent drawing conflicts at C13 with the retained graph; full main/absolute-hand protocol remains uninspected. The diagnostic graph is not an approved replacement, and no current eligible corrected target is established.
+- The reproduction report retains 42 withheld ambiguous producer claims, 161 merged-taxon rewrites and five unresolved assay-organism targets.
+- 499 identifier-label plausibility warnings are non-blocking; 4750 pairs have no configured adapter and were skipped.
+- Four tests were skipped and two dependency deprecation warnings remain. Passing configured QC is not independent scientific verification.
+- Native baseline gates establish configured consistency, not independent biological production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions and no-adapter pairs; a successful command does not convert these into verified scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population was checked; external caches and generated bytecode are not asserted to be independently byte-pinned.
+- No scientific owner, inventory, curation table, native status or history was edited. Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification; target strict validation ran afresh. Scientific failed or unavailable checks are distinct from bundle validation.
+- Scientific conclusions integrate the root, chemical and biological source assessments; original access times and unresolved scopes remain explicit.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T222918Z-dihydrofusarin-c
+title: Scientific review of dihydrofusarin C
+started_at: '2026-10-21T22:26:58.563951Z'
+finished_at: '2026-10-21T22:29:18.949575Z'
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The original dihydrofusarin C drawing depicts C13S while the retained graph
+  encodes C13R; the other two centres, five chain alkene constraints and constitution
+  agree. Native IMI58289 product and deletion observations are positive, but applicability
+  to the imported F. verticillioides locus remains unresolved. Preserve both that
+  distinction and the incomplete original absolute-hand evidence when adjudicating
+  the confirmed depiction discrepancy.
+source:
+  git_revision: f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: conf/sources.yaml
+    sha256: d5e8ab63eeebb376589a0c9bf6f7eb92f45913b84243de20d820442ec88d5a98
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/corynecin-i.yaml
+    sha256: 8b0e43ea8176515bd2e1f32dfcda87679d2e9f393c8d3157ac15b1f78ee2790e
+    role: context
+  - path: data/natural_products/alkaloids/corynecin-ii.yaml
+    sha256: 696891796983b89339b1351a3ece9d6e981711d08b4847f616d3b0164e01ec33
+    role: context
+  - path: data/natural_products/alkaloids/corynecin-iii.yaml
+    sha256: c568e60c813844ba388f746b919ac4162a909fcce12319479b171f66178cc916
+    role: context
+  - path: data/natural_products/alkaloids/curvupallide-b.yaml
+    sha256: dc77aa4eef642e239c87cc2ced5a74398a2a56888f4dd52bda76521229090ede
+    role: context
+  - path: data/natural_products/alkaloids/cyanogramide-b.yaml
+    sha256: acf3e39dc3ed22fafdd77bddbc2c4d2dd57ae591320770125d46e67d86a7ddb6
+    role: context
+  - path: data/natural_products/alkaloids/cyanogramide-c.yaml
+    sha256: 72deb1052d2a642fdf71459df0bb37b2f12bbe26e250c001d2e98425f37206c9
+    role: context
+  - path: data/natural_products/alkaloids/cyanogramide-d.yaml
+    sha256: c4ada6f82041cf3e6da603e5eb7dbb492225dfb03b54fd94675696f8d6562412
+    role: context
+  - path: data/natural_products/alkaloids/cyclizidine.yaml
+    sha256: c9ad901e356b649656d80273f5023d99e09814070c4c0ba6af0f5c344c5fc47e
+    role: context
+  - path: data/natural_products/alkaloids/cycloheximide.yaml
+    sha256: 498c3bf5d30dbce668da74fbcfe1e135cd206b376b0184423c8cda8503d1fc02
+    role: context
+  - path: data/natural_products/alkaloids/cytochalasin-e.yaml
+    sha256: 7f2ed6695ec0830554aeac9545f6b5d0f5b7951d8c855fc45c25f65a193b2c14
+    role: context
+  - path: data/natural_products/alkaloids/cytochalasin-k.yaml
+    sha256: 5215ed06eb842344613ad7d7ca93ce83da3169506610abc5b87ed1a533e8840d
+    role: context
+  - path: data/natural_products/alkaloids/cytoglobosin-x.yaml
+    sha256: bab71c2aff04171fbd153a3088980b77ddfad1c87dfd438bb5b304105ed203b4
+    role: context
+  - path: data/natural_products/alkaloids/decarbamoylsaxitoxin.yaml
+    sha256: d9b4ca68866bf479dab3a048ea216f85c309c957742cbd8a213cb6f2d5965ba0
+    role: context
+  - path: data/natural_products/alkaloids/dehydro-tilivalline.yaml
+    sha256: ba126a1e86577027443bab9c9c2a320de3584855d052e49476e56c3c55b70652
+    role: context
+  - path: data/natural_products/alkaloids/dehydrohistidyltryptophanyldiketopiperazine.yaml
+    sha256: 2c289074bbcca634022e442b51bd80bf9aff59948d35d1f37fd051a3aca3a37a
+    role: context
+  - path: data/natural_products/alkaloids/demethoxygriseoluteic-acid.yaml
+    sha256: 4eb28c9719232dfe0d91a29df6b842af19c108422ad766336ac8a88326763081
+    role: context
+  - path: data/natural_products/alkaloids/desmethylbassianin.yaml
+    sha256: 8c4fedf5f7829666b122fb1e0177da850d578cad7265d9cf00867008c48d9bb5
+    role: context
+  - path: data/natural_products/alkaloids/diastaphenazine.yaml
+    sha256: e80c885728a4aabc6e6e1aa417cf7afa7b2ddf792334728610afc27efe9a69f8
+    role: context
+  - path: data/natural_products/alkaloids/diazaquinomycin-a.yaml
+    sha256: 64b4c698e7a31939bb5e12f97220bfba746475487a6ae89ec03963bbf0568261
+    role: context
+  - path: data/natural_products/alkaloids/diazaquinomycin-e.yaml
+    sha256: 3438673a011d56c1e6b842b82f90e5d9642d0afd1a0169d385812f22251082a6
+    role: context
+  - path: data/natural_products/alkaloids/diazaquinomycin-f.yaml
+    sha256: 065ca3f16d67ec284190a62236dbf4052b57157fbe79ee65a090489757a97228
+    role: context
+  - path: data/natural_products/alkaloids/diazaquinomycin-g.yaml
+    sha256: 3575d5eb399f0009327f3c96f416f7a2a5809be12b784b54f94f2d65d0251084
+    role: context
+  - path: data/natural_products/alkaloids/diazaquinomycin-h.yaml
+    sha256: 8adee71a331e514539f1bca5f1b38099221a3aa6f6929ba572ea7f46627bdbcf
+    role: context
+  - path: data/natural_products/alkaloids/diazaquinomycin-j.yaml
+    sha256: 0192ed833a7e44a33d23f2f830d2f3dd5652b92d1fd3ebe2396cd863d581115a
+    role: context
+  - path: data/natural_products/alkaloids/diazepinomicin.yaml
+    sha256: aadeab6f080e544a15c83eae74cd944c1c04f60a37f3e1b7d5e6959a2d8be860
+    role: context
+  - path: data/natural_products/alkaloids/dihydrofusarin-c.yaml
+    sha256: 1d1776eb77749bc09e960d95d62e3f516d205d76cf8b12d6946f43434c6ccda9
+    role: target
+  - path: data/natural_products/alkaloids/dihydroisoflavipucine.yaml
+    sha256: 8070691c8f4e43213050f36c6b0817201c15ba28b24c64a97c51c8f7856d5d54
+    role: context
+  - path: data/natural_products/alkaloids/dihydrolysergic-acid.yaml
+    sha256: 9dd199a43685071a2065db121834e4e77ec6c581ffb118ad19946e5d591e06a9
+    role: context
+  - path: data/natural_products/alkaloids/dihydroxy-dehydro-tilivalline.yaml
+    sha256: a959fe9c108667b99536903f823c9e5d1e1fdf47216c50d4347507d967074fe9
+    role: context
+  - path: data/natural_products/alkaloids/dihydroxy-tilivalline.yaml
+    sha256: f8c52dfd8fca2a20e79b160e5c7fd26267cec81d4d59966c849e1758dd2628b9
+    role: context
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/lotus_exclusions.py
+    sha256: 6352cac7c587eab5a56d907c523cc899d02d197009081624bf8649c675ee30f7
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+    role: context
+  - path: src/naturalproductmech/curate/xref_exclusions.py
+    sha256: 17c3d9e7794bae596b22cf19a2dd5bc2169475d6fea81ea4e6f1781a53af9157
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: tests/test_claim_references.py
+    sha256: 11b2fc60dbe32154df63fb2e8c784c7c8ba6585581c09bba2eebe2c5192d4c06
+    role: context
+  - path: tests/test_mibig_locus_evidence_overrides.py
+    sha256: 9177b5bd24f6e47cc4743857179217d9e0d4add9560b2ce3faefaebe53ba09a0
+    role: context
+  - path: tests/test_producer_strains.py
+    sha256: 17002ef1640464777f1925d12d842ed83c9098aad6de724ae0ea236ecccc4ff3
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 186, batch 019, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated targets in earlier
+    batch commits (publication tracked separately). At selection, 234 of 3116 current
+    records had campaign coverage and 2882 remained. The population search included
+    ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-1cda183e48
+targets:
+- target_id: naturalproductmech:mibig-1cda183e48
+  path: data/natural_products/alkaloids/dihydrofusarin-c.yaml
+  label: dihydrofusarin C
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-1cda183e48
+  command: just validate-strict data/natural_products/alkaloids/dihydrofusarin-c.yaml
+    --out /private/tmp/npm-review-work/186/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T22:26:59.990968Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3116 corpus records are filed exactly where PATHS.tsv pins them.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-018-baseline-verify-corpus-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-018 execution on f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T21:43:11.095314Z;
+    finished 2026-10-21T21:43:43.016017Z. Exact original receipt: /private/tmp/npm-native-checks/batch-018/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-018/verify-corpus.log. Reused
+    for batch019 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,105,749 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch019. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-1cda183e48
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3116 records reproduce byte-for-byte from data/raw/.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-018-baseline-verify-reproduction-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-018 execution on f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T21:43:11.049802Z;
+    finished 2026-10-21T21:44:10.266611Z. Exact original receipt: /private/tmp/npm-native-checks/batch-018/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-018/verify-reproduction.log.
+    Reused for batch019 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,182 tracked byte streams and modes (208,105,749 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch019. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-1cda183e48
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The canonical review-queue command completed with actual exit0 on the fresh
+    main base; exact output, warnings and skips remain in the pinned transcript.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-018-baseline-review-queue-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just review-queue --tsv /private/tmp/npm-review-queue-batch-018.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-018 execution on f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T21:43:11.094986Z;
+    finished 2026-10-21T21:43:27.046585Z. Exact original receipt: /private/tmp/npm-native-checks/batch-018/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-018/review-queue.log. Reused
+    for batch019 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,105,749 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch019. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-1cda183e48
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'Configured identifier-label validation exited zero: 13449 canonical matches,
+    646 synonym matches and 35 configured exceptions; 499 non-blocking warnings and
+    4750 no-adapter skips remain.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-018-baseline-validate-products-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-018 execution on f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T21:43:11.095805Z;
+    finished 2026-10-21T21:44:09.649497Z. Exact original receipt: /private/tmp/npm-native-checks/batch-018/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-018/validate-products.log. Reused
+    for batch019 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,105,749 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch019. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-1cda183e48
+- check_id: shared-qc
+  name: Full repository quality gate on the fresh main baseline
+  status: passed
+  required: true
+  summary: Full fresh-base quality command completed successfully:999 tests passed,4
+    skipped,2 warnings;3116 records passed closed schema validation and corpus reproduction,
+    and generated pages were current.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-018-baseline-qc-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-018 execution on f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T21:43:11.050051Z;
+    finished 2026-10-21T21:48:43.599885Z. Exact original receipt: /private/tmp/npm-native-checks/batch-018/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-018/qc.log. Reused for batch019
+    only after a fresh fetch/clean branch, equal commit/tree and two reads of all
+    9,182 tracked byte streams and modes (208,105,749 bytes), including a recheck
+    after the fresh authoritative catalogue. This gate was not rerun for batch019.
+    Original execution times, scope, warnings, exceptions and skips are retained.'
+  target_ids:
+  - naturalproductmech:mibig-1cda183e48
+- check_id: R186-FULL-OWNER
+  name: Complete owner and captured-source scope
+  status: passed
+  required: true
+  summary: Successful official intake and a fresh root full-owner/read receipt precede
+    this authoring. All six officially captured sets and the separately mechanically
+    parsed seventh PubChem set match. All seven exact-key sets were read by root;
+    each PubChem set is empty and no assay is emitted. No BindingDB or graph assertion
+    is present. The external component set is empty.
+  target_ids:
+  - naturalproductmech:mibig-1cda183e48
+  evidence_ids:
+  - R186-OWNER
+  - R186-LOCAL
+  - R186-PUBCHEM-PREP
+- check_id: S186-C-NAMED-ORIGIN
+  name: Direct original named native-culture support
+  status: passed
+  required: true
+  summary: Complete original SI Methods and named traces support native IMI58289 culture
+    production. This passed check is bounded to the named primary product and stock;
+    retained graph and species/locus applicability remain separate required checks.
+  target_ids:
+  - naturalproductmech:mibig-1cda183e48
+  evidence_ids:
+  - S186-E-FUS13-SI
+  - S186-E-FUS13-FIG1
+- check_id: S186-C-PRIMARY-APPLICABILITY
+  name: Exact retained product, producer and locus experimental bridge
+  status: unavailable
+  required: true
+  summary: The required F. verticillioides/AY604568.1 stock and exact dihydro-product
+    genetic bridge remains unresolved. The original complete 2013 and 2004 main bodies
+    remain unavailable; the 2013 SI and Figure1 are now positively inspected. No absent-source
+    check is treated as a failed biological experiment.
+  target_ids:
+  - naturalproductmech:mibig-1cda183e48
+  evidence_ids:
+  - S186-E-FUS13-SI
+  - S186-E-FUS13-FIG1
+  - S186-E-FUSS04-ABSTRACT
+  - S186-E-AY604568
+  - S186-E-RECOVERY
+- check_id: C186-C-REPRESENTATION
+  name: Stored chemical representation and complete source row
+  status: passed
+  required: true
+  summary: Fresh intake derivation agrees with the stored graph; the source selector,
+    full row and prepared snapshot were independently rechecked.
+  target_ids:
+  - naturalproductmech:mibig-1cda183e48
+  evidence_ids:
+  - C186-OWNER
+  - C186-GRAPH
+  - C186-COMPARISON
+- check_id: C186-C-XREF
+  name: Exact literal identifier resolution
+  status: not_applicable
+  required: true
+  summary: Present literal PubChem and NPAtlas structures were independently parsed;
+    no unsupported positive replacement identifier is introduced.
+  target_ids:
+  - naturalproductmech:mibig-1cda183e48
+  evidence_ids:
+  - C186-OWNER
+  - C186-AUTHORITY-COMPARISON
+  - C186-AUTH-1
+- check_id: C186-C-PRIMARY-DEPICTION
+  name: Exact parent depiction versus retained C13
+  status: failed
+  required: true
+  summary: The primary depiction and uniquely mapped retained graph disagree at C13.
+    A different intermediate cannot resolve this parent-specific conflict.
+  target_ids:
+  - naturalproductmech:mibig-1cda183e48
+  evidence_ids:
+  - C186-PRIMARY-FIGURE
+  - C186-PRIMARY-SI
+  - C186-PRIMARY-MAP
+  - C186-COMPARISON
+- check_id: C186-C-ABSOLUTE-PROTOCOL
+  name: Complete exact-parent natural absolute-hand experiment
+  status: unavailable
+  required: true
+  summary: Full2013 main body and a complete exact-parent absolute-hand protocol remain
+    uninspected. The verified drawing-level conflict does not independently select
+    the natural hand.
+  target_ids:
+  - naturalproductmech:mibig-1cda183e48
+  evidence_ids:
+  - C186-PRIMARY-FIGURE
+  - C186-PRIMARY-SI
+  - C186-PRIMARY-MAP
+evidence:
+- evidence_id: R186-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/dihydrofusarin-c.yaml
+  locator: Complete post-intake owner, optional assertions and all history events
+  accessed_at: '2026-10-21T22:27:38.874412Z'
+  support: supports
+  summary: 'Root read the complete owner after successful official intake: 0 occurrence,
+    1 producer and 1 locus assertions. No referenced external component is present.
+    Optional fields: none.'
+  snapshot_sha256: 1d1776eb77749bc09e960d95d62e3f516d205d76cf8b12d6946f43434c6ccda9
+- evidence_id: R186-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/186/local-sources.json
+  locator: Complete resolved owner and all six officially captured raw row sets
+  accessed_at: '2026-10-21T22:27:38.874412Z'
+  support: context_only
+  summary: All six captured MIBiG, LOTUS, ChEBI structures/origins, CyanoMetDB and
+    NPClassifier sets match the frozen preparation, including empty sets. The separate
+    seventh PubChem inventory comparison is distinguished below. Source fidelity does
+    not itself establish experimental support.
+  snapshot_sha256: 1777128a9dd493ad06d84245d09abb99e67afaae3f92a0ec1dbe903b430b9a09
+- evidence_id: R186-PUBCHEM-PREP
+  kind: record_content
+  reference: data/raw/pubchem_bioassay.tsv
+  locator: Exact-key rows compared with the separate provisional seventh source set
+  accessed_at: '2026-10-21T22:27:43.671981Z'
+  support: context_only
+  summary: The separate committed PubChem raw set contains 0 matching rows and reproduces
+    the frozen preparation. All ten exact-key sets are genuinely empty, not no-assay-data
+    sentinel observations. This is not part of the official six-set intake and does
+    not establish absence of bioactivity from the literature.
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: R186-TAXON-CONTEXT
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&retmode=xml&id=117187,1510026,1873,1873482,1883,1886,2201999,33178,341663,37463,457406,571,83212
+  locator: Exact relevant TaxId, ScientificName, Rank, ParentTaxId and OtherNames
+    fields
+  accessed_at: '2026-10-21T20:59:34.762475Z'
+  support: context_only
+  summary: NCBI 117187 Fusarium verticillioides includes F. moniliforme as a synonym.
+    Membership in the F. fujikuroi species complex does not make distinct named species
+    or experimental stocks interchangeable.
+  snapshot_sha256: 24951f0c3345553a57992d162e857de7d93c11c3723b6b05156bd833857b0785
+- evidence_id: R186-IMODULON
+  kind: database
+  reference: https://imodulondb.org/api/datasets
+  locator: Complete 20-organism, 28-dataset official catalogue
+  accessed_at: '2026-10-21T20:59:34.301902Z'
+  support: context_only
+  summary: The full retained catalogue establishes membership only. S. albidoflavus
+    has a listed dataset, but that does not establish applicability to F001 or validate
+    the separate albidoflavus occurrence. None of the exact imported native producer
+    labels is listed. E. coli experimental hosts and M. tuberculosis assay targets
+    are distinct from native producer regulation.
+  snapshot_sha256: 155607e7023efdead5ebab3919279a0776d5665a7de9e28b67f02f8f521b0693
+- evidence_id: S186-E-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/186/local-sources.json
+  locator: Full resolved owner, every present claim and all seven matching raw sets
+  accessed_at: '2026-10-21T22:27:38.874412Z'
+  support: context_only
+  summary: Complete actual owner and six captured source sets match the prepared inventory;
+    the seventh PubChem set is independently reconciled against the entire raw TSV.
+  snapshot_sha256: 1777128a9dd493ad06d84245d09abb99e67afaae3f92a0ec1dbe903b430b9a09
+- evidence_id: S186-E-RAW
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: '{"bgc_classes": "NRPS|PKS", "bgc_subclasses": "Type I|Type I", "cluster_link_evidence_basis":
+    "CLUSTER_DEMONSTRATED", "compound_classes": "Tetramate alkaloid|Linear polyketide",
+    "compound_index": "2", "compound_name": "dihydrofusarin C", "database_ids": "",
+    "entry_completeness": "unknown", "entry_quality": "questionable", "entry_status":
+    "active", "entry_version": "4", "genome_accession": "AY604568.1", "locus_evidence_methods":
+    "Knock-out studies", "locus_from": "", "locus_to": "", "mibig_accession": "BGC0000064",
+    "primary_reference": "DOI:10.1016/j.chembiol.2013.07.004", "producer_evidence_basis":
+    "BGC_CHARACTERIZED", "reference_basis": "COMPOUND_EVIDENCE", "smiles": "COC(=O)/C(=C/C)/C=C(\\C)/C=C(\\C)/C=C/C=C(\\C)/C(=O)[C@H]1[C@@H](O)[C@@](O)(CCO)NC1=O",
+    "standard_inchi": "InChI=1S/C23H31NO7/c1-6-17(22(29)31-5)13-15(3)12-14(2)8-7-9-16(4)19(26)18-20(27)23(30,10-11-25)24-21(18)28/h6-9,12-13,18,20,25,27,30H,10-11H2,1-5H3,(H,24,28)/b8-7+,14-12+,15-13+,16-9+,17-6+/t18-,20+,23-/m0/s1",
+    "standard_inchi_key": "QGVFETJQEKVSJA-SCHXNIKUSA-N", "stereo_complete": "true",
+    "taxon_id": "NCBITaxon:117187", "taxon_label": "Fusarium verticillioides"}'
+  accessed_at: '2026-10-21T22:27:38.874412Z'
+  support: context_only
+  summary: Immutable exact source selector source_id=BGC0000064:2, expected_source_row_sha256=a4670926bd7de0167f45ff15195388e1051380335dd78ca067053d7347c1c581.
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: S186-E-SOURCE-SCOPE
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch019/review-support/source-notes.json
+  locator: Five compound scopes and complete actual source access receipts
+  accessed_at: '2026-10-21T20:47:21.563554Z'
+  support: context_only
+  summary: Frozen primary read scopes and unresolved retrieval needs. Capacity-deferred
+    requests were not sent and are not evidence of scientific absence.
+  snapshot_sha256: 6025de554c9c82f6e1fae8ae716d619c1cff3cc4f36108fefb5872b34e13fbfa
+- evidence_id: S186-E-ACCESS
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch019/review-support/input-manifest.json
+  locator: Flattened source evidence and original per-response timestamps
+  accessed_at: '2026-10-21T20:48:12.100669Z'
+  support: context_only
+  summary: Flat immutable source pins, including successful content, abstract-only
+    captures, unsuccessful public routes and capacity stops. Formal authoring does
+    not extend the primary read scope.
+  snapshot_sha256: 238d814db791f0d459142fc51833bcfc81d1539437c77c58e661fe2df24e18fb
+- evidence_id: S186-E-CONSUMERS
+  kind: record_content
+  reference: scripts/seed_from_sources.py
+  locator: Method loader; untouched source_row; producer/locus emission; guarded overlay
+    composition
+  accessed_at: '2026-10-21T22:27:38.874412Z'
+  support: context_only
+  summary: Method REPLACE has no independent full-row SHA guard; WITHDRAW checks its
+    seven literal expected fields but retains source-tier associations. Citation and
+    producer-strain overlays have full-row guards and reject structure-corrected rows
+    in the current composition.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: S186-E-CLAIM-ROUTE
+  kind: record_content
+  reference: src/naturalproductmech/curate/claim_references.py
+  locator: Complete load_claim_references and correct_claim_reference contracts
+  accessed_at: '2026-10-21T22:27:38.874412Z'
+  support: context_only
+  summary: The existing exact-row citation consumer changes the two claim-local references
+    with curator attribution while retaining database assertion type, source taxon
+    and evidence grades.
+  snapshot_sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+- evidence_id: S186-E-STRAIN-ROUTE
+  kind: record_content
+  reference: src/naturalproductmech/curate/producer_strains.py
+  locator: Complete strain/isolate qualification implementation
+  accessed_at: '2026-10-21T22:27:38.874412Z'
+  support: context_only
+  summary: A legitimate strain qualification pins the entire original MIBiG row and
+    adds producer-only context. It cannot reassign a taxon, change a locus grade or
+    itself qualify BGC notes.
+  snapshot_sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+- evidence_id: S186-E-GRADING
+  kind: record_content
+  reference: conf/producer_evidence.tsv
+  locator: Complete two-claim evidence vocabulary
+  accessed_at: '2026-10-21T22:27:38.874412Z'
+  support: context_only
+  summary: Native necessity and native expression correlation grade the organism and
+    locus; heterologous expression grades the cloned locus only. Empty source methods
+    mean SOURCE_ASSERTION and CLUSTER_UNSTATED.
+  snapshot_sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+- evidence_id: S186-E-FUS13-ABSTRACT
+  kind: primary_source
+  reference: PMID:23932525
+  locator: Exact PubmedArticle for DOI 10.1016/j.chembiol.2013.07.004; retained /private/tmp/npm-review-work/shared-next-batch019/review-support/attempt-002/pubmed.xml
+  accessed_at: '2026-10-21T20:40:10.815752Z'
+  support: partial
+  summary: 'The original abstract describes the F. fujikuroi fusarin biosynthetic
+    study; exact F. verticillioides/AY604568.1 and congener-specific applicability
+    remain unresolved. Read scope: Complete original abstract and metadata only; no
+    full body or original figure pixels.'
+  snapshot_sha256: 23bf3b93057ae5085342667f302203353146dff49f2a96d7c7d67c02cf6a03ab
+- evidence_id: S186-E-FUS13-EXCERPTS
+  kind: primary_source
+  reference: DOI:10.1016/j.chembiol.2013.07.004
+  locator: Indexed original publisher Introduction, Figure 1 caption, biosynthesis/significance
+    and experimental/accession excerpts; retained /private/tmp/npm-review-work/shared-next-batch019/review-support/discovery-web-004.json
+  accessed_at: '2026-10-21T20:42:47Z'
+  support: partial
+  summary: 'The original indexed Figure 1 caption names dihydrofusarin C. Other inspected
+    excerpts describe family genetics and chemical instability, without closing exact
+    product/strain/accession applicability. Read scope: Bounded original publisher
+    excerpts retained in the web response; not a contiguous full-body read, complete
+    spectrum, or independently read figure drawing.'
+  snapshot_sha256: 62455c18a6cee7991deaa31527ed6f50be4877c67068046d4df45cd13304d8e2
+- evidence_id: S186-E-FUS13-SI
+  kind: primary_source
+  reference: DOI:10.1016/j.chembiol.2013.07.004
+  locator: Official 54-page supplement; Figure S1 p2, S2 pp3–4, S3 p5, Table S2 p40,
+    Methods p44 onward; retained /private/tmp/npm-review-work/shared-next-batch019/review-support/primary-recovery-007/fusarin2013-si.pdf
+  accessed_at: '2026-10-21T21:07:02.096340Z'
+  support: supports
+  summary: 'Native F. fujikuroi IMI58289 is parent of all knockouts. Named dihydrofusarin
+    C is detected in culture and retained in delta fus3/4/5/6/7; Table S2 reports
+    no fusarins for delta fus1. Intermediate rescue/overexpression results are not
+    exact dihydro rescue. Read scope: All 1957 extracted lines read; original physical
+    pages 2,3,5,27,40,44 viewed. No comprehensive spectral reassignment or independent
+    natural absolute-hand proof.'
+  snapshot_sha256: 17b06e2adaa7e58de25cafcf3903d6e396ec03539e110c2102e1814a50775ae4
+- evidence_id: S186-E-FUS13-FIG1
+  kind: primary_source
+  reference: DOI:10.1016/j.chembiol.2013.07.004
+  locator: Original main Figure 1, exact named compound 1 and adjacent numbered scaffold;
+    retained /private/tmp/npm-review-work/shared-next-batch019/review-support/primary-recovery-007/fusarin2013-fig1.jpg
+  accessed_at: '2026-10-21T21:07:51.643376Z'
+  support: supports
+  summary: 'Original drawing positively names dihydrofusarin C as compound 1. Literal
+    depicted stereochemistry requires independent comparison to the retained graph;
+    this biology packet does not select a replacement or transfer old-key evidence.
+    Read scope: Complete original image viewed. This is a source depiction, not a
+    new absolute-hand determination; complete main remains unavailable.'
+  snapshot_sha256: 1143078dc9b67588b7b0854a3e416e9a7135a808330ced6dd6768db2fca66871
+- evidence_id: S186-E-FUSS04-ABSTRACT
+  kind: primary_source
+  reference: PMID:15368570; DOI:10.1002/cbic.200400138
+  locator: Complete original PubMed abstract and publication metadata; retained /private/tmp/npm-review-work/shared-next-batch019/review-support/primary-recovery-007/fuss2004-pubmed.xml
+  accessed_at: '2026-10-21T21:06:41.796259Z'
+  support: supports
+  summary: 'Original abstract describes F. venenatum cDNA disruption and F. moniliforme
+    genomic cloning/disruption giving fusarin-deficient mutants. It does not explicitly
+    resolve the exact dihydro endpoint or experimental stock. Read scope: Abstract
+    and metadata only; the new official pdfdirect route returned403, not a recovered
+    full body.'
+  snapshot_sha256: 48e428b2081fdf84ad78c6138ab35aa5f53420f24b0ee85d3e1195f8c289f5c9
+- evidence_id: S186-E-AY604568
+  kind: database
+  reference: GenBank:AY604568.1
+  locator: 'Versioned deposited record: header, source, references and all feature
+    qualifiers; retained /private/tmp/npm-review-work/shared-next-batch019/review-support/primary-recovery-007/AY604568.1.gb'
+  accessed_at: '2026-10-21T21:07:53.042735Z'
+  support: supports
+  summary: 'Current deposited source is F. verticillioides taxon117187 with historical
+    Gibberella fujikuroi definition, fusA/FUSS protein AAT28740.1 and PMID15368570
+    reference. No strain qualifier is present. This species/reference bridge does
+    not establish the 2013 IMI58289 experimental identity. Read scope: All header
+    and feature qualifiers read. Translation was displayed but not aligned or independently
+    translated; no complete DNA identity audit. Deposited translation contains X.'
+  snapshot_sha256: e955f6bc49c3fb343b663a1e1c7529357ab16e33c00fcc49c768311bfe39405b
+- evidence_id: S186-E-RECOVERY
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch019/review-support/primary-recovery-007/source-notes.json
+  locator: Complete additive read scopes, actual access receipts and explicit remaining
+    limits
+  accessed_at: '2026-10-21T21:19:52.656291Z'
+  support: context_only
+  summary: Additive recovered original sources supersede only the earlier SI/image
+    read limitations stated here; original failure receipts and source retrieval times
+    remain preserved.
+  snapshot_sha256: 04ca78da0d7948ad41422e937c14aad085d1d8d1dcb819926b5e8ce2c80ce78a
+- evidence_id: C186-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/dihydrofusarin-c.yaml
+  locator: Complete owner and all seven matching source-row sets; no referenced components
+  accessed_at: '2026-10-21T22:28:02.146528Z'
+  support: supports
+  summary: 'The complete owner denotes dihydrofusarin C under naturalproductmech:mibig-1cda183e48.
+    All source selectors, versions and complete row digests are retained in COMPARISON:
+    [{"row_sha256": "a4670926bd7de0167f45ff15195388e1051380335dd78ca067053d7347c1c581",
+    "selector": "BGC0000064:2", "version": "4"}]. The official intake and prepared
+    owner bytes agree.'
+  snapshot_sha256: 1d1776eb77749bc09e960d95d62e3f516d205d76cf8b12d6946f43434c6ccda9
+- evidence_id: C186-GRAPH
+  kind: validation
+  reference: /private/tmp/npm-review-work/186/chemistry.json
+  locator: Fresh intake RDKit result and frozen Standard/fixed-H comparison
+  accessed_at: '2026-10-21T22:26:59.150609Z'
+  support: supports
+  summary: The stored SMILES recomputes to QGVFETJQEKVSJA-SCHXNIKUSA-N, formula C23H31NO7,
+    formal charge 0; stored InChI/key agree. These are representation checks, not
+    experimental identity proof.
+  snapshot_sha256: 6fc26fc593e925a3f7817c2ffbcd891d78ce9532ec187fa57e2b3349edbe8e8a
+- evidence_id: C186-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch019/chemistry-prep/retained-graph-comparison.json
+  locator: Record 186; exact source rows and each graph comparison
+  accessed_at: '2026-10-21T20:47:09.040465Z'
+  support: supports
+  summary: Exact Standard, fixed-H, formula, charge and stereo comparisons of the
+    retained owner and complete raw rows; current authority responses and primary
+    proof are separate evidence.
+  snapshot_sha256: 482b2e9abaec1a27adf9162a0da6bcaa8c18dfde4008349502fc36cf80ad4aac
+- evidence_id: C186-LOCAL-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/186/chemistry-search-receipt.json
+  locator: Exact full key, label, slug and source selector in raw/owner/curation trees
+  accessed_at: '2026-10-21T22:28:02.377974Z'
+  support: supports
+  summary: Ignored-inclusive bounded search preserves all matching paths; an absent
+    curation decision does not imply a missing scientific source.
+  snapshot_sha256: 27f43681f45d32a55b7e5a410a665a92ca3516516b46903eb6612eb669bd8477
+  search_scope: rg --no-ignore --hidden; data/natural_products, data/raw and curation;
+    exact full key, current label, slug and BGC:compound_index. No claim beyond these
+    trees.
+- evidence_id: C186-AUTHORITY-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch019/chemistry-prep/authority-bounded-phase-002/authority-comparison.json
+  locator: Exact current response and independently parsed literal structure per target
+  accessed_at: '2026-10-21T21:01:48.435625Z'
+  support: supports
+  summary: Complete current-response Standard/fixed-H, formula, charge and stereo
+    comparisons. Seven default ChEBI strings fail parsing despite exact official MOLs;
+    all eight returned ChEBI hits are two-star. No authority vote establishes primary
+    hand.
+  snapshot_sha256: a486d3228efe103265b8af671b517f445b602e0083163315aa46a662cb3ef7aa
+- evidence_id: C186-CHEBI-SEARCH-1
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=QGVFETJQEKVSJA-SCHXNIKUSA-N&size=100
+  locator: Literal key query; complete chebi-key-186.json
+  accessed_at: '2026-10-21T21:00:34.090501Z'
+  support: supports
+  summary: '{"detail": "No compound matches the provided term: ''QGVFETJQEKVSJA-SCHXNIKUSA-N''"}'
+  snapshot_sha256: fdb3fcde12ddc0d21e9cfb54e3a586d7821ea956b1ebe1caea1176e8124e990d
+  search_scope: Official ChEBI es_search, bounded literal key query and size100; exact
+    URL and complete response retained. No universal absence claim.
+- evidence_id: C186-CHEBI-SEARCH-2
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=dihydrofusarin+C&size=100
+  locator: Literal name query; complete chebi-name-186.json
+  accessed_at: '2026-10-21T21:00:33.066074Z'
+  support: supports
+  summary: '{"detail": "No compound matches the provided term: ''dihydrofusarin C''"}'
+  snapshot_sha256: 454b211bef53c67e044888f3c32abba6a6477a6e09527b902854dd36f35a8b9b
+  search_scope: Official ChEBI es_search, bounded literal name query and size100;
+    exact URL and complete response retained. No universal absence claim.
+- evidence_id: C186-AUTH-1
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0000064.4/annotations.json
+  locator: Complete retained response /private/tmp/npm-review-work/shared-next-batch019/chemistry-prep/authority-bounded-phase-002/public-retry/BGC0000064.4.json
+  accessed_at: '2026-10-21T21:00:32.454070Z'
+  support: supports
+  summary: Exact namespace/version and structure details are in AUTHORITY-COMPARISON.
+    This snapshot binds the actual returned record, not independent experimental proof.
+  snapshot_sha256: 02f80f3dffb28713b9e0bac7cd25082a531e63d612aa00557677feeb337e5cb8
+- evidence_id: C186-CONSUMERS
+  kind: record_content
+  reference: src/naturalproductmech/curate/structure_corrections.py
+  locator: Complete maintained structure consumer; separately pinned claim-reference/strain/xref
+    consumers
+  accessed_at: '2026-10-21T22:28:02.146528Z'
+  support: supports
+  summary: The implemented replacement/splitting route requires an exact source selector,
+    complete original and target row hashes, a unique committed eligible three-star
+    target and collision checks. It copies the target SMILES text, so an invalid default
+    JSON string cannot be rescued merely by a valid MOL. It clears old xrefs/rebuilds
+    exact-key joins. Arbitrary primary SMILES or label replacement is not supported.
+    Existing reference/strain/xref consumers reject structure_correction_note; composition
+    cannot be assumed.
+  snapshot_sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+- evidence_id: C186-PRIMARY-FIGURE
+  kind: primary_source
+  reference: DOI:10.1016/j.chembiol.2013.07.004
+  locator: Original main Figure1 exact compound1, dihydrofusarin C; adjacent numbered
+    scaffold supports position labels; exact retained snapshot /private/tmp/npm-review-work/shared-next-batch019/review-support/primary-recovery-007/fusarin2013-fig1.jpg
+  accessed_at: '2026-10-21T21:07:51.643376Z'
+  support: supports
+  summary: The exact parent drawing uses solid C13-to-C12, dashed C14-OH and solid
+    C15-OH. The independent whole-graph transcription gives C13S/C14R/C15S and five
+    E alkenes; this is published depiction, not a new absolute-hand experiment.
+  snapshot_sha256: 1143078dc9b67588b7b0854a3e416e9a7135a808330ced6dd6768db2fca66871
+- evidence_id: C186-PRIMARY-SI
+  kind: primary_source
+  reference: DOI:10.1016/j.chembiol.2013.07.004
+  locator: Selected SI compound-label/structure passages and exact-parent versus S19B
+    context; no complete54page chemistry-read claim; exact retained snapshot /private/tmp/npm-review-work/shared-next-batch019/review-support/primary-recovery-007/fusarin2013-si.pdf
+  accessed_at: '2026-10-21T21:07:02.096340Z'
+  support: supports
+  summary: The retained54pageSI distinguishes named parent1 from the different decarboxy-dihydro
+    intermediate illustrated in S19B. Intermediate hydrogen-exchange remarks are not
+    automatically parent epimerization evidence. Exact F.verticillioides versus tested
+    F.fujikuroi stock applicability is separately assessed by science.
+  snapshot_sha256: 17b06e2adaa7e58de25cafcf3903d6e396ec03539e110c2102e1814a50775ae4
+- evidence_id: C186-PRIMARY-MAP
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch019/chemistry-prep/primary-recovery-mapping-003/primary-comparison.json
+  locator: Independent source-local graph comparison; original inputs and boundaries
+    retained
+  accessed_at: '2026-10-21T21:11:08.788688Z'
+  support: supports
+  summary: Original Figure1 parent model and retained graph have identical constitution,
+    C14R/C15S and five E alkenes; C13 alone differs, depictedS versus retainedR. The
+    diagnostic full keyIOAWLMGGSA differs from retainedSCHXNIKUSA; no replacement
+    is adopted.
+  snapshot_sha256: 432db48f98e9d96f730b55a02f399fc6e37661bf385fb25a791ace068933db93
+- evidence_id: C186-TARGET-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next-batch019/chemistry-prep/primary-recovery-mapping-003/diagnostic-target-local-search.json
+  locator: Exact diagnostic keys in complete committed ChEBI projection and ignored-inclusive
+    curation tree
+  accessed_at: '2026-10-21T21:29:34.199040Z'
+  support: supports
+  summary: No match within the explicitly searched current local inputs. Current officialAPI
+    web opens were inaccessible; that is not an authority absence result. No eligible
+    replacement is presently established.
+  snapshot_sha256: 99faff347e6798007decff36edaf56d62818e7e542dddf31bbef2f7fb1d05394
+  search_scope: Exact QGVFETJQEKVSJA-IOAWLMGGSA-N and ORBSYPFBZQJNJE-MPKXVKKWSA-N
+    with rg --no-ignore --hidden in data/raw/chebi_structures.tsv and curation only.
+assessments:
+- assessment_id: R186-HISTORY
+  area: provenance
+  topic: Native status and complete audit history
+  outcome: supported
+  summary: All 2 retained events are SEEDED_FROM_SOURCES. Native status remains SEEDED;
+    provenance events are not structured-review passes.
+  target_ids:
+  - naturalproductmech:mibig-1cda183e48
+  evidence_ids:
+  - R186-OWNER
+- assessment_id: R186-OPTIONAL
+  area: completeness
+  topic: Complete optional-assertion inventory
+  outcome: not_applicable
+  summary: No optional definition, pathway, graph, target, assay, application, summary,
+    relation, discussion or clinical-status assertion is present. Optional enrichment
+    is separate from checking existing source claims.
+  target_ids:
+  - naturalproductmech:mibig-1cda183e48
+  evidence_ids:
+  - R186-OWNER
+  - R186-LOCAL
+  - R186-PUBCHEM-PREP
+- assessment_id: R186-FILING
+  area: representation
+  topic: Exact-key computed classification provenance
+  outcome: supported
+  summary: The exact-key NPClassifier projection and version npclassifier.gnps2.org@2026-09-07
+    reproduce the owner filing, superclass/class labels and glycoside value false.
+    Computed labels are not independent precursor, mechanism or natural-origin evidence.
+    Any accepted new identity requires reclassification for its effective key.
+  target_ids:
+  - naturalproductmech:mibig-1cda183e48
+  evidence_ids:
+  - R186-OWNER
+  - R186-LOCAL
+- assessment_id: R186-TAXON-SCOPE
+  area: provenance
+  topic: Taxonomic names versus experimental stocks
+  outcome: supported
+  summary: NCBI 117187 Fusarium verticillioides includes F. moniliforme as a synonym.
+    Membership in the F. fujikuroi species complex does not make distinct named species
+    or experimental stocks interchangeable.
+  target_ids:
+  - naturalproductmech:mibig-1cda183e48
+  evidence_ids:
+  - R186-TAXON-CONTEXT
+  - R186-OWNER
+- assessment_id: R186-IMODULON-SCOPE
+  area: completeness
+  topic: Producer transcriptomic applicability
+  outcome: not_applicable
+  summary: No exact imported native producer is represented in the inspected catalogue.
+    The positive S. albidoflavus dataset membership does not supply the unresolved
+    F001 bridge. Related species, experimental hosts and assay targets do not establish
+    a construct/condition match; no gene/module or compound-production inference is
+    made.
+  target_ids:
+  - naturalproductmech:mibig-1cda183e48
+  evidence_ids:
+  - R186-OWNER
+  - R186-IMODULON
+- assessment_id: S186-A-ORIGIN
+  area: evidence
+  topic: Named native congener at the actually tested stock
+  outcome: supported
+  summary: The original Figure 1 names compound 1 as dihydrofusarin C. The full SI
+    identifies F. fujikuroi IMI58289 as parent of all knockouts and positively detects
+    the named congener in native culture. Figure S3 retains its peak in delta fus3/4/5/6/7;
+    Table S2 reports no fusarins for delta fus1. This establishes named natural-culture
+    and pathway dependence at that stock, subject to separate exact-graph adjudication;
+    it does not prove the imported F. verticillioides stock is the same experiment.
+  target_ids:
+  - naturalproductmech:mibig-1cda183e48
+  evidence_ids:
+  - S186-E-LOCAL
+  - S186-E-FUS13-SI
+  - S186-E-FUS13-FIG1
+  dimensions:
+  - name: imported_producer
+    value: Fusarium verticillioides / AY604568.1
+    definition: Exact retained source assertion, not independently equated to the
+      2013 experimental stock.
+    evidence_ids:
+    - S186-E-LOCAL
+    - S186-E-RAW
+    - S186-E-AY604568
+  - name: experimental_native_parent
+    value: Fusarium fujikuroi IMI58289
+    definition: Explicit SI Methods parent of all native knockouts.
+    evidence_ids:
+    - S186-E-FUS13-SI
+  - name: exact_named_congener_endpoint
+    value: Named culture peak and source depiction
+    definition: Original Figure1 compound1 and FigureS3 peak1; no independent absolute-hand
+      proof or selected graph repair.
+    evidence_ids:
+    - S186-E-FUS13-SI
+    - S186-E-FUS13-FIG1
+- assessment_id: S186-A-LOCUS
+  area: scope
+  topic: Exact imported knockout applicability and accession context
+  outcome: unknown
+  summary: The imported Knock-out studies method yields BGC_CHARACTERIZED and CLUSTER_DEMONSTRATED.
+    The recovered SI now resolves the actual 2013 native host and congener traces.
+    AY604568.1 instead records current F. verticillioides, historical Gibberella fujikuroi,
+    and PMID15368570, without a strain qualifier. The 2004 abstract reports F. moniliforme/F.
+    venenatum fusarin genetics but not the exact dihydro endpoint. That positive deposited
+    reference bridge is insufficient to equate these experiments or transfer the IMI58289
+    result to the retained locus. Source NRPS/PKS and tetramate/linear-polyketide
+    classes do not supply the missing bridge.
+  target_ids:
+  - naturalproductmech:mibig-1cda183e48
+  evidence_ids:
+  - S186-E-LOCAL
+  - S186-E-RAW
+  - S186-E-FUS13-SI
+  - S186-E-FUSS04-ABSTRACT
+  - S186-E-AY604568
+  - S186-E-GRADING
+- assessment_id: S186-A-WORKUP
+  area: scope
+  topic: Culture evidence versus distinct intermediates and unasserted assays
+  outcome: supported
+  summary: The SI culture-filtrate HPLC-UV/DAD and FTMS context supports the named
+    dihydrofusarin observation. Fusarin instability remains relevant, but is not a
+    reason to withdraw positive culture evidence. Figure S19B is decarboxy-dihydrofusarin
+    C, a distinct compound; its spectra do not prove this target. Table S2 overexpression/coculture/rescue
+    endpoints are other prefusarin intermediates, not an exact dihydro rescue or purified
+    terminal reaction. Parent fusarin mutagenicity is not imported as target activity.
+  target_ids:
+  - naturalproductmech:mibig-1cda183e48
+  evidence_ids:
+  - S186-E-FUS13-SI
+  - S186-E-FUS13-EXCERPTS
+  - S186-E-LOCAL
+- assessment_id: S186-A-CONDITIONAL-ROUTE
+  area: ownership
+  topic: Guarded follow-up without a guessed correction
+  outcome: not_applicable
+  summary: Preserve source_id=BGC0000064:2, expected_source_row_sha256=a4670926bd7de0167f45ff15195388e1051380335dd78ca067053d7347c1c581
+    and all original source fields. First resolve the exact species/locus/congener
+    bridge and independent chemistry disagreement. A genuinely corrected citation
+    can use the existing full-row claim-reference consumer; a legitimate strain row
+    can disclose the tested stock but cannot establish species equivalence. If a method
+    is demonstrably inapplicable, use the actual method contract with all old-field
+    guards plus an enforced complete-row guard. Species reassignment or selective
+    association suppression needs a new tested typed consumer. No route is selected
+    merely because the full primary is unavailable, and no unqualified identity migration
+    follows from the recovered diagram.
+  target_ids:
+  - naturalproductmech:mibig-1cda183e48
+  evidence_ids:
+  - S186-E-RAW
+  - S186-E-FUS13-SI
+  - S186-E-FUS13-FIG1
+  - S186-E-FUSS04-ABSTRACT
+  - S186-E-AY604568
+  - S186-E-CONSUMERS
+  - S186-E-CLAIM-ROUTE
+  - S186-E-STRAIN-ROUTE
+- assessment_id: C186-A-IDENTITY
+  area: identity
+  topic: Stored representation and source-concept provenance
+  outcome: supported
+  summary: The complete source row BGC0000064:2 and source-concept hash reproduce
+    this stored representation; this does not establish that the upstream compound
+    label is correct. Formula, charge, Standard and fixed-H distinctions are independently
+    recorded. Primary support and any conflicting exact xref are assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-1cda183e48
+  evidence_ids:
+  - C186-OWNER
+  - C186-GRAPH
+  - C186-COMPARISON
+  dimensions:
+  - name: mibig_source_selector
+    value: BGC0000064:2
+    definition: Accession plus compound_index, distinct from the entry-level accession.
+    evidence_ids:
+    - C186-OWNER
+  - name: complete_raw_row_sha256
+    value: a4670926bd7de0167f45ff15195388e1051380335dd78ca067053d7347c1c581
+    definition: Sorted compact ASCII JSON of every parsed TSV field, including empty
+      values.
+    evidence_ids:
+    - C186-OWNER
+- assessment_id: C186-A-GROUNDING
+  area: provenance
+  topic: Exact authority eligibility and source representation
+  outcome: supported
+  summary: No exact eligible row exists in the committed ChEBI projection for this
+    owner. Current bounded name/key searches do not justify a different congener or
+    a two-star grounding.
+  target_ids:
+  - naturalproductmech:mibig-1cda183e48
+  evidence_ids:
+  - C186-OWNER
+  - C186-COMPARISON
+  - C186-AUTHORITY-COMPARISON
+  - C186-LOCAL-SEARCH
+  - C186-CHEBI-SEARCH-1
+  - C186-CHEBI-SEARCH-2
+- assessment_id: C186-A-XREF
+  area: representation
+  topic: Literal identifier and exact microstate comparison
+  outcome: supported
+  summary: 'All emitted literals resolve to their actual namespaces and agree in Standard
+    and fixed-H representation: []. Current metadata does not establish original experimental
+    hand.'
+  target_ids:
+  - naturalproductmech:mibig-1cda183e48
+  evidence_ids:
+  - C186-OWNER
+  - C186-AUTHORITY-COMPARISON
+  - C186-AUTH-1
+- assessment_id: C186-A-ELIGIBILITY
+  area: grounding
+  topic: Current ChEBI eligibility
+  outcome: supported
+  summary: No exact row occurs in the committed eligible projection. Eight bounded
+    current exact/name hits across this cohort are two-star; targets186/188 return
+    explicit404 for the literal full-key and name queries. This is bounded search
+    scope, not global absence. Invalid default SMILES and valid official MOLs remain
+    distinct.
+  target_ids:
+  - naturalproductmech:mibig-1cda183e48
+  evidence_ids:
+  - C186-OWNER
+  - C186-AUTHORITY-COMPARISON
+  - C186-CHEBI-SEARCH-1
+  - C186-CHEBI-SEARCH-2
+  - C186-AUTH-1
+- assessment_id: C186-A-PRIMARY-SCOPE
+  area: scope
+  topic: Primary chemical support and retained precision
+  outcome: unknown
+  summary: The exact original2013 parent depiction and retained graph differ at C13
+    only. The exact original parent drawing conflicts at C13 with the retained graph;
+    full main/absolute-hand protocol remains uninspected. The diagnostic graph is
+    not an approved replacement, and no current eligible corrected target is established.
+  target_ids:
+  - naturalproductmech:mibig-1cda183e48
+  evidence_ids:
+  - C186-PRIMARY-FIGURE
+  - C186-PRIMARY-SI
+  - C186-PRIMARY-MAP
+  - C186-OWNER
+  - C186-COMPARISON
+  - C186-AUTHORITY-COMPARISON
+findings:
+- finding_id: C186-F-C13-DEPICTION
+  issue_key: mibig-bgc0000064-compound2-c13-primary-depiction
+  category: representation
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The retained C13 configuration disagrees with the original parent drawing
+  description: The original2013 Figure1 exact compound1 depicts C13S; the current
+    stored MIBiG-derived graph encodes C13R. Other two depicted centres, all five
+    chain alkene constraints and constitution agree. This is a confirmed depiction
+    discrepancy, not proof that a diagnostic C13 flip is the fully verified natural
+    product.
+  target_ids:
+  - naturalproductmech:mibig-1cda183e48
+  field_paths:
+  - chemical_structure.smiles
+  - chemical_structure.standard_inchi
+  - chemical_structure.standard_inchi_key
+  evidence_ids:
+  - C186-OWNER
+  - C186-GRAPH
+  - C186-COMPARISON
+  - C186-CONSUMERS
+  - C186-TARGET-SEARCH
+  - C186-PRIMARY-FIGURE
+  - C186-PRIMARY-SI
+  - C186-PRIMARY-MAP
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: Exact original source selector and reviewed identity/precision decision
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/structure_corrections.py
+    role: Eligible three-star contract or explicitly implemented missing primary-graph
+      route
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Regenerate exact-key joins and source-qualified claims
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Test compatible citation-overlay composition
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/producer_strains.py
+    role: Test compatible strain-overlay composition
+  rule_id: review-yaml-record:exact-identity-and-representation
+  native_severity: major
+  normalization_reason: The difference from the original published depiction is verified
+    at graph resolution. This does not claim a newly established natural absolute
+    hand or select a replacement.
+actions:
+- action_id: C186-ACTION-C13-DEPICTION
+  finding_ids:
+  - C186-F-C13-DEPICTION
+  target_ids:
+  - naturalproductmech:mibig-1cda183e48
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: Exact original source selector and reviewed identity/precision decision
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/structure_corrections.py
+    role: Eligible three-star contract or explicitly implemented missing primary-graph
+      route
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Regenerate exact-key joins and source-qualified claims
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Test compatible citation-overlay composition
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/producer_strains.py
+    role: Test compatible strain-overlay composition
+  description: 'Exact complete original guards: [{"entry_version": "4", "expected_source_row_sha256":
+    "a4670926bd7de0167f45ff15195388e1051380335dd78ca067053d7347c1c581", "full_original_row":
+    {"bgc_classes": "NRPS|PKS", "bgc_subclasses": "Type I|Type I", "cluster_link_evidence_basis":
+    "CLUSTER_DEMONSTRATED", "compound_classes": "Tetramate alkaloid|Linear polyketide",
+    "compound_index": "2", "compound_name": "dihydrofusarin C", "database_ids": "",
+    "entry_completeness": "unknown", "entry_quality": "questionable", "entry_status":
+    "active", "entry_version": "4", "genome_accession": "AY604568.1", "locus_evidence_methods":
+    "Knock-out studies", "locus_from": "", "locus_to": "", "mibig_accession": "BGC0000064",
+    "primary_reference": "DOI:10.1016/j.chembiol.2013.07.004", "producer_evidence_basis":
+    "BGC_CHARACTERIZED", "reference_basis": "COMPOUND_EVIDENCE", "smiles": "COC(=O)/C(=C/C)/C=C(\\C)/C=C(\\C)/C=C/C=C(\\C)/C(=O)[C@H]1[C@@H](O)[C@@](O)(CCO)NC1=O",
+    "standard_inchi": "InChI=1S/C23H31NO7/c1-6-17(22(29)31-5)13-15(3)12-14(2)8-7-9-16(4)19(26)18-20(27)23(30,10-11-25)24-21(18)28/h6-9,12-13,18,20,25,27,30H,10-11H2,1-5H3,(H,24,28)/b8-7+,14-12+,15-13+,16-9+,17-6+/t18-,20+,23-/m0/s1",
+    "standard_inchi_key": "QGVFETJQEKVSJA-SCHXNIKUSA-N", "stereo_complete": "true",
+    "taxon_id": "NCBITaxon:117187", "taxon_label": "Fusarium verticillioides"}, "source_id":
+    "BGC0000064:2"}]. Resolve the parent-specific C13 assignment against complete
+    primary characterization before adopting any replacement or explicit qualification.
+    Preserve the positive exact-product biology at its source-supported stock and
+    chemical resolution. The diagnostic alternate key has no exact match in the bounded
+    committed eligible projection/curation search; a current corrected eligible target
+    is not verified. First adjudicate the exact primary product and any remaining
+    hand evidence. Adopt only a verified unique three-star target through the existing
+    full-row/target-row-pinned contract, or implement and test a reviewed primary-graph/qualification
+    consumer; arbitrary SMILES and label overrides are not currently supported. Preserve
+    the original source mint and reassess every old-key occurrence, assay, xref, classification
+    and biological association. Existing claim-reference/strain consumers reject structure_correction_note,
+    so joint composition must be explicit and tested. No source biological claim is
+    silently migrated by name.'
+  generator: Maintained decision/consumer work and documented regeneration; no direct
+    owner/raw edit.
+  acceptance_checks:
+  - Changed, duplicate or missing original selectors and stale complete-row hashes
+    fail closed.
+  - Complete candidate constitution, charge, all centres/alkenes, Standard and fixed-H
+    forms are independently checked at the cited primary resolution; no automatic
+    diagnostic flip is adopted.
+  - A verified target has a valid copied default SMILES and eligible three-star row,
+    or the new primary-source route has explicit complete candidate/source hashes
+    and consumed-route tests.
+  - Old-key joins and positive biological evidence are individually adjudicated; incompatible
+    overlays fail closed until their composition is tested.
+limitations:
+- The root section inventories present claims and source routing; chemical identities,
+  source-specific experiments, definition claims and optional-content assertions require
+  their separately scoped scientific assessments.
+- The original complete 2013 main and 2004 full FUSS body remain unavailable. Positive
+  IMI58289 dihydrofusarin culture/SI evidence does not independently establish the
+  retained F. verticillioides/AY604568.1 exact product/stock bridge.
+- The recovered original drawing is not an independent natural absolute-hand experiment;
+  any primary-to-retained stereochemical disagreement is adjudicated by chemistry
+  before old-key claims can migrate.
+- No full native sequence-equivalence audit, exact dihydrofusarin rescue, purified
+  terminal enzyme or decarboxy-dihydrofusarin spectral transfer is claimed.
+- Original access times and immutable source snapshots are preserved; formal authoring
+  is not a new retrieval or an expanded primary read.
+- Optional missing pathways, proteins and bioactivities are not defects by themselves.
+  All seven matching sets are reconciled; these five candidates have no emitted PubChem
+  assay observations in the frozen source context.
+- Independent chemistry owns exact representation/authority findings. Any simultaneous
+  identity and biological correction must adjudicate original-key associations and
+  tested consumer composition.
+- No scientific record, raw source inventory, campaign or repository state is changed
+  by these proposed actions.
+- Authority matches establish the representations actually returned at their retained
+  access times; they are not independent experimental structure or absolute-hand determinations.
+  Root and science sections separately assess organism, locus, classification and
+  history claims.
+- The exact original parent drawing conflicts at C13 with the retained graph; full
+  main/absolute-hand protocol remains uninspected. The diagnostic graph is not an
+  approved replacement, and no current eligible corrected target is established.
+- The reproduction report retains 42 withheld ambiguous producer claims, 161 merged-taxon
+  rewrites and five unresolved assay-organism targets.
+- 499 identifier-label plausibility warnings are non-blocking; 4750 pairs have no
+  configured adapter and were skipped.
+- Four tests were skipped and two dependency deprecation warnings remain. Passing
+  configured QC is not independent scientific verification.
+- Native baseline gates establish configured consistency, not independent biological
+  production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions
+  and no-adapter pairs; a successful command does not convert these into verified
+  scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command
+  execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population
+  was checked; external caches and generated bytecode are not asserted to be independently
+  byte-pinned.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+- Scientific conclusions integrate the root, chemical and biological source assessments;
+  original access times and unresolved scopes remain explicit.
+tags:
+- path-order-campaign
+- batch-019
+```

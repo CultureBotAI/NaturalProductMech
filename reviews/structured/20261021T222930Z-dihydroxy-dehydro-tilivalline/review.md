@@ -1,0 +1,1511 @@
+# Scientific review of dihydroxy-dehydro tilivalline
+
+- Review: 20261021T222930Z-dihydroxy-dehydro-tilivalline
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-21T22:27:06.150110Z
+- Finished UTC: 2026-10-21T22:29:30.551633Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+Native DL20 feature 5 supports the hydroxylated and dehydrogenated tilivalline derivative at HRMS/MS resolution, with hydroxyl and double-bond positions unresolved. The imported Klebsiella method claim relies on parent-tilivalline experiments and requires product-specific adjudication, provisionally pending the unread 2014 supplement. No exact alternative structure or native incapacity is inferred.
+
+## Scope And Provenance
+
+One complete generated owner and any referenced components, assessed claim by claim for exact identity, provenance, origin, producer and occurrence scope, biosynthesis, classification, optional content and audit history.
+
+Selection: Campaign record 189, batch 019, selected in path order from the fresh-main authoritative validated catalogue and the separately validated targets in earlier batch commits (publication tracked separately). At selection, 234 of 3116 current records had campaign coverage and 2882 remained. The population search included ignored files. Exactly one target is assessed here.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-661b53729c | data/natural_products/alkaloids/dihydroxy-dehydro-tilivalline.yaml | generated | dihydroxy-dehydro tilivalline |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Closed-schema target validation | passed | True | naturalproductmech:mibig-661b53729c | The documented target strict validator completed; scientific support is assessed separately. |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-661b53729c | All 3116 corpus records are filed exactly where PATHS.tsv pins them. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-661b53729c | All 3116 records reproduce byte-for-byte from data/raw/. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-661b53729c | The canonical review-queue command completed with actual exit0 on the fresh main base; exact output, warnings and skips remain in the pinned transcript. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-661b53729c | Configured identifier-label validation exited zero: 13449 canonical matches, 646 synonym matches and 35 configured exceptions; 499 non-blocking warnings and 4750 no-adapter skips remain. |
+| Full repository quality gate on the fresh main baseline | passed | True | naturalproductmech:mibig-661b53729c | Full fresh-base quality command completed successfully:999 tests passed,4 skipped,2 warnings;3116 records passed closed schema validation and corpus reproduction, and generated pages were current. |
+| Complete owner and captured-source scope | passed | True | naturalproductmech:mibig-661b53729c | Successful official intake and a fresh root full-owner/read receipt precede this authoring. All six officially captured sets and the separately mechanically parsed seventh PubChem set match. All seven exact-key sets were read by root; each PubChem set is empty and no assay is emitted. No BindingDB or graph assertion is present. The external component set is empty. |
+| Exact derivative applicability of the imported correlation method | failed | True | naturalproductmech:mibig-661b53729c | The inspected supporting genetic endpoints are parent-specific. Exact derivative correlation is not established in the available original content; the unresolved SI check is retained and precedes the final correction decision. |
+| Complete original product-specific and identity applicability | unavailable | True | naturalproductmech:mibig-661b53729c | The 2014 SI remains unread after retained unsuccessful routes. The 2018 source also expressly leaves structural positions unresolved. Neither missing SI nor a native MS feature permits a complete exact-graph, host or gene-method transfer. |
+| Stored chemical representation and complete source row | passed | True | naturalproductmech:mibig-661b53729c | Fresh intake derivation agrees with the stored graph; the source selector, full row and prepared snapshot were independently rechecked. |
+| Exact literal identifier resolution | not_applicable | True | naturalproductmech:mibig-661b53729c | Present literal PubChem and NPAtlas structures were independently parsed; no unsupported positive replacement identifier is introduced. |
+| Exact derivative positions and hand | unavailable | True | naturalproductmech:mibig-661b53729c | Positive derivative identity is supported at lower structural resolution. Neither an independently localized second hydroxyl nor derivative-specific absolute hand was recovered;189 additionally lacks a localized C-ring double bond. This uncertainty does not prove a selected alternative graph. |
+
+## Scientific And Domain Assessments
+
+### Native status and complete audit history
+
+provenance: supported. Targets: naturalproductmech:mibig-661b53729c.
+
+All 2 retained events are SEEDED_FROM_SOURCES. Native status remains SEEDED; provenance events are not structured-review passes.
+
+### Complete optional-assertion inventory
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-661b53729c.
+
+No optional definition, pathway, graph, target, assay, application, summary, relation, discussion or clinical-status assertion is present. Optional enrichment is separate from checking existing source claims.
+
+### Exact-key computed classification provenance
+
+representation: supported. Targets: naturalproductmech:mibig-661b53729c.
+
+The exact-key NPClassifier projection and version npclassifier.gnps2.org@2026-09-07 reproduce the owner filing, superclass/class labels and glycoside value false. Computed labels are not independent precursor, mechanism or natural-origin evidence. Any accepted new identity requires reclassification for its effective key.
+
+### Literal organism identifier routing
+
+grounding: supported. Targets: naturalproductmech:mibig-661b53729c.
+
+All literal organism-QID routes agree at the inspected P225/P685 scope. Occurrence and experimental-unit support remain separate.
+
+### Taxonomic names versus experimental stocks
+
+provenance: supported. Targets: naturalproductmech:mibig-661b53729c.
+
+NCBI 571 Klebsiella oxytoca and 1873482 Xenorhabdus eapokensis are distinct species. The latter explicitly includes Xenorhabdus sp. DL20 and strain DL20 type material. The label crosswalk does not transfer parent-compound genetics, exact hydroxyl/double-bond positions or experimental hosts.
+
+### Producer transcriptomic applicability
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-661b53729c.
+
+No exact imported native producer is represented in the inspected catalogue. The positive S. albidoflavus dataset membership does not supply the unresolved F001 bridge. Related species, experimental hosts and assay targets do not establish a construct/condition match; no gene/module or compound-production inference is made.
+
+### Native DL20 feature and exact occurrence resolution
+
+evidence: supported. Targets: naturalproductmech:mibig-661b53729c.
+
+The original 2018 study detects native X. eapokensis DL20 crude-extract feature 5 by accurate mass and fragmentation. This is positive named natural-feature evidence, distinct from a fully purified and stereochemically assigned compound. The second hydroxyl position and the proline-ring double-bond position remains explicitly unresolved. The LOTUS species-level citation reflects this source association, subject to independent chemical-resolution adjudication.
+
+### Parent-tilivalline correlation versus exact derivative
+
+evidence: concern. Targets: naturalproductmech:mibig-661b53729c.
+
+The complete 2014 main studies mono-hydroxyl parent tilivalline from K. oxytoca AHC-6, with native nps perturbation and complementation. Those positive endpoints do not establish this hydroxylated derivative as the measured expression-correlated product in the inspected main. The original SI remains unread, so a study-wide negative statement or irreversible association removal is not justified.
+
+### X. indica heterologous product set and optional assays
+
+scope: supported. Targets: naturalproductmech:mibig-661b53729c.
+
+The introduced X. indica DSM 17382 xtvAB system in E. coli DH10B entD::mtaA/pHW10 yields the explicitly enumerated products 1, 2, 6–10 and 12–14, not native features 3 or 5. Parent 1 alone is quantified against a standard; the native derivative traces use a 100-fold plotting multiplier. Parent tilivalline cell/colitis effects are not pure-compound or molecular-target assays for feature 5.
+
+### HG425356 and NRPS context
+
+provenance: supported. Targets: naturalproductmech:mibig-661b53729c.
+
+The 2014 main identifies HG425356 as AHC-6 genomic context for the parent NRPS pathway. Empty imported bounds are preserved. This source metadata does not bridge the exact derivative to that locus or equate the Klebsiella sequence with the separate Xenorhabdus genes.
+
+### Stored representation and source-concept provenance
+
+identity: supported. Targets: naturalproductmech:mibig-661b53729c.
+
+The complete source row BGC0000446:5 and source-concept hash reproduce this stored representation; this does not establish that the upstream compound label is correct. Formula, charge, Standard and fixed-H distinctions are independently recorded. Primary support and any conflicting exact xref are assessed separately.
+
+### Exact authority eligibility and source representation
+
+provenance: supported. Targets: naturalproductmech:mibig-661b53729c.
+
+No exact eligible row exists in the committed ChEBI projection for this owner. Current bounded name/key searches do not justify a different congener or a two-star grounding.
+
+### Literal identifier and exact microstate comparison
+
+representation: supported. Targets: naturalproductmech:mibig-661b53729c.
+
+All emitted literals resolve to their actual namespaces and agree in Standard and fixed-H representation: []. Current metadata does not establish original experimental hand.
+
+### Current ChEBI eligibility
+
+grounding: supported. Targets: naturalproductmech:mibig-661b53729c.
+
+No exact row occurs in the committed eligible projection. Eight bounded current exact/name hits across this cohort are two-star; targets186/188 return explicit404 for the literal full-key and name queries. This is bounded search scope, not global absence. Invalid default SMILES and valid official MOLs remain distinct.
+
+### Chemical Wikidata properties at their stated precision
+
+representation: supported. Targets: naturalproductmech:mibig-661b53729c.
+
+{"accessed_at": "2026-10-21T21:00:37.147980Z", "lastrevid": 2158218174, "modified": "2024-05-18T17:10:40Z", "qid": "Q105261559", "scope": "P233 non-isomeric SMILES is independently diagnosed; its omitted tetrahedral/alkene information is not equated to the specific P2017 property.", "specific_structure": "P2017 matches retained Standard and fixed-H. P233 omits the relevant stereo; 187 P233 additionally uses a lactim form.", "standard_inchi_and_full_key_properties_match": true}
+
+### Feature-level evidence versus precise retained graph
+
+representation: unknown. Targets: naturalproductmech:mibig-661b53729c.
+
+Retain the positive named feature and preserve the source ambiguity. A future precision/identity change requires complete original-row guards and explicit reassessment of old-key occurrences, xrefs and biological claims. No eligible3-star correction target or executable arbitrary-primary-SMILES route is established, and existing overlay composition cannot be assumed.
+
+### Primary chemical support and retained precision
+
+scope: unknown. Targets: naturalproductmech:mibig-661b53729c.
+
+The complete raw graph maps to hydroxyls at source C7/C9, C11S/C11aS, and C2=C3 in the PBD C-ring. Reused BGC0000446 version5 encodes the same exact graph. Original2018 feature5 supports an additional A-ring hydroxyl and C-ring desaturation by accurate mass/MS2. It explicitly leaves the second OH position unresolved (C7 or C8 suggested), and the double-bond position unresolved. Figure2C has an ambiguous R2 attachment and plain core bonds. The retained exact positional/stereo graph is not fully established by this source; no alternative positional isomer or globally achiral replacement is selected.
+
+## Findings
+
+### S189-F-METHOD: The imported derivative method relies on parent-tilivalline evidence
+
+major / open / provisional; issue key: mibig-bgc0000446-compound5-parent-method-transfer.
+
+The complete inspected main tests parent tilivalline; the later hydroxylated native feature comes from DL20 and has unresolved structural precision. This material exact-product applicability concern is provisional because the 2014 SI remains unread. It is not evidence of Klebsiella incapacity or proof that no relevant derivative observation exists elsewhere.
+
+## Recommended Actions And Acceptance Checks
+
+### S189-ACT-METHOD
+
+First inspect the required original SI and adjudicate exact feature 5 applicability. If no applicable exact correlation is established, existing WITHDRAW can clear the method for minted_identifier=naturalproductmech:mibig-661b53729c, source=MIBIG, accession-only source_id=BGC0000446, replacement methods empty, with all seven literal old context fields {"entry_version": "5", "genome_accession": "HG425356.1", "locus_evidence_methods": "Gene expression correlated with compound production", "locus_from": "", "locus_to": "", "standard_inchi_key": "SUWJFXOVRICCHZ-WMZOPIPTSA-N", "taxon_id": "NCBITaxon:571"} and source_id=BGC0000446:5, expected_source_row_sha256=bfdb9c188b2428a40dfbac3e9b41408de1a5a4e77e93ecd375d129813d8cd41f. WITHDRAW does not currently enforce this complete-row digest: implement and test that guard, or share an actually active compatible original-row guard from the independently required identity/association decision. Do not invent a citation overlay solely to claim full-row protection. WITHDRAW retains a weaker source association; qualify it honestly as unresolved, and use a newly tested typed association contract if final source adjudication requires suppression or reassignment. Existing citation/strain overlays cannot change producer or occurrence taxa. Preserve the positive native DL20 named feature at its actual analytical resolution and coordinate any chemistry correction without automatically moving all old-key claims.
+
+- The missing original SI is adjudicated before selecting a final method repair; new applicable exact evidence changes the decision explicitly.
+- All seven old context fields and an actually enforced complete-row SHA guard reject stale or ambiguous source decisions.
+- A method downgrade is not represented as removing or proving the residual source association; any necessary qualification/suppression has a tested consumed contract.
+- The DL20 natural feature remains visible at its unresolved structural resolution; no E. coli endpoint, parent assay, exact regioisomer or absolute hand is transferred without evidence.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| R189-OWNER | data/natural_products/alkaloids/dihydroxy-dehydro-tilivalline.yaml; Complete post-intake owner, optional assertions and all history events | supports | Root read the complete owner after successful official intake: 1 occurrence, 1 producer and 1 locus assertions. No referenced external component is present. Optional fields: none. |
+| R189-LOCAL | /private/tmp/npm-review-work/189/local-sources.json; Complete resolved owner and all six officially captured raw row sets | context_only | All six captured MIBiG, LOTUS, ChEBI structures/origins, CyanoMetDB and NPClassifier sets match the frozen preparation, including empty sets. The separate seventh PubChem inventory comparison is distinguished below. Source fidelity does not itself establish experimental support. |
+| R189-PUBCHEM-PREP | data/raw/pubchem_bioassay.tsv; Exact-key rows compared with the separate provisional seventh source set | context_only | The separate committed PubChem raw set contains 0 matching rows and reproduces the frozen preparation. All ten exact-key sets are genuinely empty, not no-assay-data sentinel observations. This is not part of the official six-set intake and does not establish absence of bioactivity from the literature. |
+| R189-Q48966842 | https://www.wikidata.org/wiki/Q48966842; P225 and P685 in the retained complete six-entity response | context_only | Literal scientific name and NCBI taxon identifier agree with the matched source rows. Identifier routing does not establish occurrence chemistry, producing stock or experiment. |
+| R189-TAXON-CONTEXT | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;retmode=xml&amp;id=117187,1510026,1873,1873482,1883,1886,2201999,33178,341663,37463,457406,571,83212; Exact relevant TaxId, ScientificName, Rank, ParentTaxId and OtherNames fields | context_only | NCBI 571 Klebsiella oxytoca and 1873482 Xenorhabdus eapokensis are distinct species. The latter explicitly includes Xenorhabdus sp. DL20 and strain DL20 type material. The label crosswalk does not transfer parent-compound genetics, exact hydroxyl/double-bond positions or experimental hosts. |
+| R189-IMODULON | https://imodulondb.org/api/datasets; Complete 20-organism, 28-dataset official catalogue | context_only | The full retained catalogue establishes membership only. S. albidoflavus has a listed dataset, but that does not establish applicability to F001 or validate the separate albidoflavus occurrence. None of the exact imported native producer labels is listed. E. coli experimental hosts and M. tuberculosis assay targets are distinct from native producer regulation. |
+| S189-E-LOCAL | /private/tmp/npm-review-work/189/local-sources.json; Full resolved owner, every present claim and all seven matching raw sets | context_only | Complete actual owner and six captured source sets match the prepared inventory; the seventh PubChem set is independently reconciled against the entire raw TSV. |
+| S189-E-RAW | data/raw/mibig_compounds.tsv; {"bgc_classes": "NRPS", "bgc_subclasses": "Type I", "cluster_link_evidence_basis": "CLUSTER_CORRELATED", "compound_classes": "", "compound_index": "5", "compound_name": "dihydroxy-dehydro tilivalline", "database_ids": "", "entry_completeness": "complete", "entry_quality": "questionable", "entry_status": "active", "entry_version": "5", "genome_accession": "HG425356.1", "locus_evidence_methods": "Gene expression correlated with compound production", "locus_from": "", "locus_to": "", "mibig_accession": "BGC0000446", "primary_reference": "PMID:25157164", "producer_evidence_basis": "BGC_CORRELATED", "reference_basis": "ENTRY", "smiles": "O=C1C2=C(C(O)=CC(O)=C2)N[C@@H](C3=CNC4=C3C=CC=C4)[C@@]5([H])N1C=CC5", "standard_inchi": "InChI=1S/C20H17N3O3/c24-11-8-13-19(17(25)9-11)22-18(16-6-3-7-23(16)20(13)26)14-10-21-15-5-2-1-4-12(14)15/h1-5,7-10,16,18,21-22,24-25H,6H2/t16-,18-/m0/s1", "standard_inchi_key": "SUWJFXOVRICCHZ-WMZOPIPTSA-N", "stereo_complete": "true", "taxon_id": "NCBITaxon:571", "taxon_label": "Klebsiella oxytoca"} | context_only | Immutable exact source selector source_id=BGC0000446:5, expected_source_row_sha256=bfdb9c188b2428a40dfbac3e9b41408de1a5a4e77e93ecd375d129813d8cd41f. |
+| S189-E-SOURCE-SCOPE | /private/tmp/npm-review-work/shared-next-batch019/review-support/source-notes.json; Five compound scopes and complete actual source access receipts | context_only | Frozen primary read scopes and unresolved retrieval needs. Capacity-deferred requests were not sent and are not evidence of scientific absence. |
+| S189-E-ACCESS | /private/tmp/npm-review-work/shared-next-batch019/review-support/input-manifest.json; Flattened source evidence and original per-response timestamps | context_only | Flat immutable source pins, including successful content, abstract-only captures, unsuccessful public routes and capacity stops. Formal authoring does not extend the primary read scope. |
+| S189-E-CONSUMERS | scripts/seed_from_sources.py; Method loader; untouched source_row; producer/locus emission; guarded overlay composition | context_only | Method REPLACE has no independent full-row SHA guard; WITHDRAW checks its seven literal expected fields but retains source-tier associations. Citation and producer-strain overlays have full-row guards and reject structure-corrected rows in the current composition. |
+| S189-E-CLAIM-ROUTE | src/naturalproductmech/curate/claim_references.py; Complete load_claim_references and correct_claim_reference contracts | context_only | The existing exact-row citation consumer changes the two claim-local references with curator attribution while retaining database assertion type, source taxon and evidence grades. |
+| S189-E-STRAIN-ROUTE | src/naturalproductmech/curate/producer_strains.py; Complete strain/isolate qualification implementation | context_only | A legitimate strain qualification pins the entire original MIBiG row and adds producer-only context. It cannot reassign a taxon, change a locus grade or itself qualify BGC notes. |
+| S189-E-GRADING | conf/producer_evidence.tsv; Complete two-claim evidence vocabulary | context_only | Native necessity and native expression correlation grade the organism and locus; heterologous expression grades the cloned locus only. Empty source methods mean SOURCE_ASSERTION and CLUSTER_UNSTATED. |
+| S189-E-TV14 | PMID:25157164; Complete main, native genetic/complementation Methods and all captions; original parent-tilivalline study; retained /private/tmp/npm-review-work/shared-next-batch018/bgc-science/attempt-003/tilivalline2014-pmc.html | supports | K. oxytoca AHC-6/HG425356 supports parent tilivalline genetics and parent cell/colitis endpoints. Those inspected main endpoints do not establish exact hydroxylated derivatives 3 or 5; original SI remains unread. Read scope: Complete retained main scientific text and captions; no recovered 2014 SI or compound-specific SI absence claim. |
+| S189-E-TV18 | DOI:10.1371/journal.pone.0194297; Exact PMC5875774 article within multi-article XML; complete main, Methods and captions; retained /private/tmp/npm-review-work/shared-next-batch018/bgc-science/attempt-003/saxitoxin2008-2010-xeno2018.xml | supports | Native DL20 crude-extract features 3 and 5 are positive accurate-mass/fragmentation assignments with unresolved second hydroxyl position; 5 also has unresolved unsaturation. The X. indica engineered E. coli product list excludes these two features. Read scope: Complete original scientific body and captions, independently reread in the retained derivative. Pure-compound identity and absolute hand of features 3/5 are not established by this read. |
+| S189-E-TV18-FIG2 | DOI:10.1371/journal.pone.0194297; Original Figure 2, native extract traces and proposed derivative structures/positions; retained /private/tmp/npm-review-work/shared-next-batch018/bgc-science/attempt-004/dehydro2018-fig2.png | supports | Original pixels distinguish native DL20 features 3/5 from heterologous products; ambiguous positional annotation and plain core bonds do not establish the exact retained regiographs or absolute hand. Read scope: Original complete Figure 2 pixels viewed; bounded numbering peer also retained. No spectral reassignment or new absolute-hand experiment. |
+| C189-OWNER | data/natural_products/alkaloids/dihydroxy-dehydro-tilivalline.yaml; Complete owner and all seven matching source-row sets; no referenced components | supports | The complete owner denotes dihydroxy-dehydro tilivalline under naturalproductmech:mibig-661b53729c. All source selectors, versions and complete row digests are retained in COMPARISON: [{"row_sha256": "bfdb9c188b2428a40dfbac3e9b41408de1a5a4e77e93ecd375d129813d8cd41f", "selector": "BGC0000446:5", "version": "5"}]. The official intake and prepared owner bytes agree. |
+| C189-GRAPH | /private/tmp/npm-review-work/189/chemistry.json; Fresh intake RDKit result and frozen Standard/fixed-H comparison | supports | The stored SMILES recomputes to SUWJFXOVRICCHZ-WMZOPIPTSA-N, formula C20H17N3O3, formal charge 0; stored InChI/key agree. These are representation checks, not experimental identity proof. |
+| C189-COMPARISON | /private/tmp/npm-review-work/shared-next-batch019/chemistry-prep/retained-graph-comparison.json; Record 189; exact source rows and each graph comparison | supports | Exact Standard, fixed-H, formula, charge and stereo comparisons of the retained owner and complete raw rows; current authority responses and primary proof are separate evidence. |
+| C189-LOCAL-SEARCH | /private/tmp/npm-review-work/189/chemistry-search-receipt.json; Exact full key, label, slug and source selector in raw/owner/curation trees | supports | Ignored-inclusive bounded search preserves all matching paths; an absent curation decision does not imply a missing scientific source. |
+| C189-AUTHORITY-COMPARISON | /private/tmp/npm-review-work/shared-next-batch019/chemistry-prep/authority-bounded-phase-002/authority-comparison.json; Exact current response and independently parsed literal structure per target | supports | Complete current-response Standard/fixed-H, formula, charge and stereo comparisons. Seven default ChEBI strings fail parsing despite exact official MOLs; all eight returned ChEBI hits are two-star. No authority vote establishes primary hand. |
+| C189-CHEBI-SEARCH-1 | https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=SUWJFXOVRICCHZ-WMZOPIPTSA-N&amp;size=100; Literal key query; complete chebi-key-189.json | supports | {"number_pages": 1, "results": [{"_id": "220001", "_index": "chebi-prod-compounds-21102026", "_score": 11.740778, "_source": {"ascii_name": "Dihydroxy-dehydro tilivalline", "charge": 0, "chebi_accession": "CHEBI:220001", "default_structure": 3426445, "formula": "C20H17N3O3", "inchi": "InChI=1S/C20H17N3O3/c24-11-8-13-19(17(25)9-11)22-18(16-6-3-7-23(16)20(13)26)14-10-21-15-5-2-1-4-12(14)15/h1-5,7-10,16,18,21-22,24-25H,6H2/t16-,18-/m0/s1", "inchikey": "SUWJFXOVRICCHZ-WMZOPIPTSA-N", "mass": 347.374, "monoisotopicmass": 347.12699, "name": "Dihydroxy-dehydro tilivalline", "smiles": "O=C1c2cc(O)cc(O)c2N[C@@H](c2cnc3ccccc23)[C@@H]2CC=CN12", "stars": 2, "structures": [3426445]}, "_type": "_doc"}], "total": 1} |
+| C189-CHEBI-SEARCH-2 | https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=dihydroxy-dehydro+tilivalline&amp;size=100; Literal name query; complete chebi-name-189.json | supports | {"number_pages": 1, "results": [{"_id": "220001", "_index": "chebi-prod-compounds-21102026", "_score": 59.219444, "_source": {"ascii_name": "Dihydroxy-dehydro tilivalline", "charge": 0, "chebi_accession": "CHEBI:220001", "default_structure": 3426445, "formula": "C20H17N3O3", "inchi": "InChI=1S/C20H17N3O3/c24-11-8-13-19(17(25)9-11)22-18(16-6-3-7-23(16)20(13)26)14-10-21-15-5-2-1-4-12(14)15/h1-5,7-10,16,18,21-22,24-25H,6H2/t16-,18-/m0/s1", "inchikey": "SUWJFXOVRICCHZ-WMZOPIPTSA-N", "mass": 347.374, "monoisotopicmass": 347.12699, "name": "Dihydroxy-dehydro tilivalline", "smiles": "O=C1c2cc(O)cc(O)c2N[C@@H](c2cnc3ccccc23)[C@@H]2CC=CN12", "stars": 2, "structures": [3426445]}, "_type": "_doc"}], "total": 1} |
+| C189-AUTH-1 | https://www.ebi.ac.uk/chebi/backend/api/public/compound/220001/; Complete retained response /private/tmp/npm-review-work/shared-next-batch019/chemistry-prep/authority-bounded-phase-002/positive-hit-followup/CHEBI220001.json | supports | Exact namespace/version and structure details are in AUTHORITY-COMPARISON. This snapshot binds the actual returned record, not independent experimental proof. |
+| C189-AUTH-2 | https://www.ebi.ac.uk/chebi/backend/api/public/molfile/220001/; Complete retained response /private/tmp/npm-review-work/shared-next-batch019/chemistry-prep/authority-bounded-phase-002/positive-hit-followup/CHEBI220001.mol | supports | Exact namespace/version and structure details are in AUTHORITY-COMPARISON. This snapshot binds the actual returned record, not independent experimental proof. |
+| C189-AUTH-3 | https://www.wikidata.org/wiki/Special:EntityData/Q105261559.json; Complete retained response /private/tmp/npm-review-work/shared-next-batch019/chemistry-prep/authority-bounded-phase-002/public-retry/Q105261559.json | supports | Exact namespace/version and structure details are in AUTHORITY-COMPARISON. This snapshot binds the actual returned record, not independent experimental proof. |
+| C189-CONSUMERS | src/naturalproductmech/curate/structure_corrections.py; Complete maintained structure consumer; separately pinned claim-reference/strain/xref consumers | supports | The implemented replacement/splitting route requires an exact source selector, complete original and target row hashes, a unique committed eligible three-star target and collision checks. It copies the target SMILES text, so an invalid default JSON string cannot be rescued merely by a valid MOL. It clears old xrefs/rebuilds exact-key joins. Arbitrary primary SMILES or label replacement is not supported. Existing reference/strain/xref consumers reject structure_correction_note; composition cannot be assumed. |
+| C189-PRIMARY-MAIN | DOI:10.1371/journal.pone.0194297; PMC5875774 original Results/Methods, exact feature5, not the other articles in this XML; exact retained snapshot /private/tmp/npm-review-work/shared-next-batch018/bgc-science/attempt-003/saxitoxin2008-2010-xeno2018.xml | supports | The exact derivative is a positive native DL20 feature. Accurate mass/MS2 supports additional hydroxylation; the second A-ring OH position remains unresolved, with7/8 proposed. For dehydro feature5 the C-ring double-bond position also remains unresolved. No absolute-hand determination is supplied for these exact features. |
+| C189-PRIMARY-FIGURE | DOI:10.1371/journal.pone.0194297; Original Figure2C exact feature5, ambiguous R2 linkage and plain core bonds; exact retained snapshot /private/tmp/npm-review-work/shared-next-batch018/bgc-science/attempt-004/dehydro2018-fig2.png | supports | The schematic leaves the second hydroxyl attachment ambiguous across7/8 and uses plain core bonds. A drawn dehydro bond in the schematic is not a localization experiment. Parent tilivalline hand or precursor enzymes do not automatically establish derivative absolute hand. |
+| C189-PRIMARY-PRECISION | /private/tmp/npm-review-work/shared-next-batch019/chemistry-prep/retained-primary-constraints-comparison.json; Independent source-local graph comparison; original inputs and boundaries retained | supports | Numbered retained-graph mapping assigns OH to C7/C9 and centres C11S/C11aS;189 additionally encodes C2=C3. These positions/hand are more specific than the original feature assignment. Independent bounded pixel/numbering QA agrees; no replacement isomer or complete primary stereograph is selected. |
+
+## Limits And Additional Notes
+
+- The root section inventories present claims and source routing; chemical identities, source-specific experiments, definition claims and optional-content assertions require their separately scoped scientific assessments.
+- Original 2014 SI remains an unresolved exact-content boundary; existing failed routes are preserved, not retried.
+- Any additional primary assignment resolving the second hydroxyl position and C-ring unsaturation and exact stereochemistry must be obtained before treating the retained drawn graph as experimentally established by the 2018 source.
+- Original access times and immutable source snapshots are preserved; formal authoring is not a new retrieval or an expanded primary read.
+- Optional missing pathways, proteins and bioactivities are not defects by themselves. All seven matching sets are reconciled; these five candidates have no emitted PubChem assay observations in the frozen source context.
+- Independent chemistry owns exact representation/authority findings. Any simultaneous identity and biological correction must adjudicate original-key associations and tested consumer composition.
+- No scientific record, raw source inventory, campaign or repository state is changed by these proposed actions.
+- Authority matches establish the representations actually returned at their retained access times; they are not independent experimental structure or absolute-hand determinations. Root and science sections separately assess organism, locus, classification and history claims.
+- Original2018 feature5 supports an additional A-ring hydroxyl and C-ring desaturation by accurate mass/MS2. It explicitly leaves the second OH position unresolved (C7 or C8 suggested), and the double-bond position unresolved. Figure2C has an ambiguous R2 attachment and plain core bonds. The retained exact positional/stereo graph is not fully established by this source; no alternative positional isomer or globally achiral replacement is selected.
+- The reproduction report retains 42 withheld ambiguous producer claims, 161 merged-taxon rewrites and five unresolved assay-organism targets.
+- 499 identifier-label plausibility warnings are non-blocking; 4750 pairs have no configured adapter and were skipped.
+- Four tests were skipped and two dependency deprecation warnings remain. Passing configured QC is not independent scientific verification.
+- Native baseline gates establish configured consistency, not independent biological production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions and no-adapter pairs; a successful command does not convert these into verified scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population was checked; external caches and generated bytecode are not asserted to be independently byte-pinned.
+- No scientific owner, inventory, curation table, native status or history was edited. Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification; target strict validation ran afresh. Scientific failed or unavailable checks are distinct from bundle validation.
+- Scientific conclusions integrate the root, chemical and biological source assessments; original access times and unresolved scopes remain explicit.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T222930Z-dihydroxy-dehydro-tilivalline
+title: Scientific review of dihydroxy-dehydro tilivalline
+started_at: '2026-10-21T22:27:06.150110Z'
+finished_at: '2026-10-21T22:29:30.551633Z'
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: Native DL20 feature 5 supports the hydroxylated and dehydrogenated tilivalline
+  derivative at HRMS/MS resolution, with hydroxyl and double-bond positions unresolved.
+  The imported Klebsiella method claim relies on parent-tilivalline experiments and
+  requires product-specific adjudication, provisionally pending the unread 2014 supplement.
+  No exact alternative structure or native incapacity is inferred.
+source:
+  git_revision: f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: conf/sources.yaml
+    sha256: d5e8ab63eeebb376589a0c9bf6f7eb92f45913b84243de20d820442ec88d5a98
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/corynecin-i.yaml
+    sha256: 8b0e43ea8176515bd2e1f32dfcda87679d2e9f393c8d3157ac15b1f78ee2790e
+    role: context
+  - path: data/natural_products/alkaloids/corynecin-ii.yaml
+    sha256: 696891796983b89339b1351a3ece9d6e981711d08b4847f616d3b0164e01ec33
+    role: context
+  - path: data/natural_products/alkaloids/corynecin-iii.yaml
+    sha256: c568e60c813844ba388f746b919ac4162a909fcce12319479b171f66178cc916
+    role: context
+  - path: data/natural_products/alkaloids/curvupallide-b.yaml
+    sha256: dc77aa4eef642e239c87cc2ced5a74398a2a56888f4dd52bda76521229090ede
+    role: context
+  - path: data/natural_products/alkaloids/cyanogramide-b.yaml
+    sha256: acf3e39dc3ed22fafdd77bddbc2c4d2dd57ae591320770125d46e67d86a7ddb6
+    role: context
+  - path: data/natural_products/alkaloids/cyanogramide-c.yaml
+    sha256: 72deb1052d2a642fdf71459df0bb37b2f12bbe26e250c001d2e98425f37206c9
+    role: context
+  - path: data/natural_products/alkaloids/cyanogramide-d.yaml
+    sha256: c4ada6f82041cf3e6da603e5eb7dbb492225dfb03b54fd94675696f8d6562412
+    role: context
+  - path: data/natural_products/alkaloids/cyclizidine.yaml
+    sha256: c9ad901e356b649656d80273f5023d99e09814070c4c0ba6af0f5c344c5fc47e
+    role: context
+  - path: data/natural_products/alkaloids/cycloheximide.yaml
+    sha256: 498c3bf5d30dbce668da74fbcfe1e135cd206b376b0184423c8cda8503d1fc02
+    role: context
+  - path: data/natural_products/alkaloids/cytochalasin-e.yaml
+    sha256: 7f2ed6695ec0830554aeac9545f6b5d0f5b7951d8c855fc45c25f65a193b2c14
+    role: context
+  - path: data/natural_products/alkaloids/cytochalasin-k.yaml
+    sha256: 5215ed06eb842344613ad7d7ca93ce83da3169506610abc5b87ed1a533e8840d
+    role: context
+  - path: data/natural_products/alkaloids/cytoglobosin-x.yaml
+    sha256: bab71c2aff04171fbd153a3088980b77ddfad1c87dfd438bb5b304105ed203b4
+    role: context
+  - path: data/natural_products/alkaloids/decarbamoylsaxitoxin.yaml
+    sha256: d9b4ca68866bf479dab3a048ea216f85c309c957742cbd8a213cb6f2d5965ba0
+    role: context
+  - path: data/natural_products/alkaloids/dehydro-tilivalline.yaml
+    sha256: ba126a1e86577027443bab9c9c2a320de3584855d052e49476e56c3c55b70652
+    role: context
+  - path: data/natural_products/alkaloids/dehydrohistidyltryptophanyldiketopiperazine.yaml
+    sha256: 2c289074bbcca634022e442b51bd80bf9aff59948d35d1f37fd051a3aca3a37a
+    role: context
+  - path: data/natural_products/alkaloids/demethoxygriseoluteic-acid.yaml
+    sha256: 4eb28c9719232dfe0d91a29df6b842af19c108422ad766336ac8a88326763081
+    role: context
+  - path: data/natural_products/alkaloids/desmethylbassianin.yaml
+    sha256: 8c4fedf5f7829666b122fb1e0177da850d578cad7265d9cf00867008c48d9bb5
+    role: context
+  - path: data/natural_products/alkaloids/diastaphenazine.yaml
+    sha256: e80c885728a4aabc6e6e1aa417cf7afa7b2ddf792334728610afc27efe9a69f8
+    role: context
+  - path: data/natural_products/alkaloids/diazaquinomycin-a.yaml
+    sha256: 64b4c698e7a31939bb5e12f97220bfba746475487a6ae89ec03963bbf0568261
+    role: context
+  - path: data/natural_products/alkaloids/diazaquinomycin-e.yaml
+    sha256: 3438673a011d56c1e6b842b82f90e5d9642d0afd1a0169d385812f22251082a6
+    role: context
+  - path: data/natural_products/alkaloids/diazaquinomycin-f.yaml
+    sha256: 065ca3f16d67ec284190a62236dbf4052b57157fbe79ee65a090489757a97228
+    role: context
+  - path: data/natural_products/alkaloids/diazaquinomycin-g.yaml
+    sha256: 3575d5eb399f0009327f3c96f416f7a2a5809be12b784b54f94f2d65d0251084
+    role: context
+  - path: data/natural_products/alkaloids/diazaquinomycin-h.yaml
+    sha256: 8adee71a331e514539f1bca5f1b38099221a3aa6f6929ba572ea7f46627bdbcf
+    role: context
+  - path: data/natural_products/alkaloids/diazaquinomycin-j.yaml
+    sha256: 0192ed833a7e44a33d23f2f830d2f3dd5652b92d1fd3ebe2396cd863d581115a
+    role: context
+  - path: data/natural_products/alkaloids/diazepinomicin.yaml
+    sha256: aadeab6f080e544a15c83eae74cd944c1c04f60a37f3e1b7d5e6959a2d8be860
+    role: context
+  - path: data/natural_products/alkaloids/dihydrofusarin-c.yaml
+    sha256: 1d1776eb77749bc09e960d95d62e3f516d205d76cf8b12d6946f43434c6ccda9
+    role: context
+  - path: data/natural_products/alkaloids/dihydroisoflavipucine.yaml
+    sha256: 8070691c8f4e43213050f36c6b0817201c15ba28b24c64a97c51c8f7856d5d54
+    role: context
+  - path: data/natural_products/alkaloids/dihydrolysergic-acid.yaml
+    sha256: 9dd199a43685071a2065db121834e4e77ec6c581ffb118ad19946e5d591e06a9
+    role: context
+  - path: data/natural_products/alkaloids/dihydroxy-dehydro-tilivalline.yaml
+    sha256: a959fe9c108667b99536903f823c9e5d1e1fdf47216c50d4347507d967074fe9
+    role: target
+  - path: data/natural_products/alkaloids/dihydroxy-tilivalline.yaml
+    sha256: f8c52dfd8fca2a20e79b160e5c7fd26267cec81d4d59966c849e1758dd2628b9
+    role: context
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/lotus_exclusions.py
+    sha256: 6352cac7c587eab5a56d907c523cc899d02d197009081624bf8649c675ee30f7
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+    role: context
+  - path: src/naturalproductmech/curate/xref_exclusions.py
+    sha256: 17c3d9e7794bae596b22cf19a2dd5bc2169475d6fea81ea4e6f1781a53af9157
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: tests/test_claim_references.py
+    sha256: 11b2fc60dbe32154df63fb2e8c784c7c8ba6585581c09bba2eebe2c5192d4c06
+    role: context
+  - path: tests/test_mibig_locus_evidence_overrides.py
+    sha256: 9177b5bd24f6e47cc4743857179217d9e0d4add9560b2ce3faefaebe53ba09a0
+    role: context
+  - path: tests/test_producer_strains.py
+    sha256: 17002ef1640464777f1925d12d842ed83c9098aad6de724ae0ea236ecccc4ff3
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 189, batch 019, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated targets in earlier
+    batch commits (publication tracked separately). At selection, 234 of 3116 current
+    records had campaign coverage and 2882 remained. The population search included
+    ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-661b53729c
+targets:
+- target_id: naturalproductmech:mibig-661b53729c
+  path: data/natural_products/alkaloids/dihydroxy-dehydro-tilivalline.yaml
+  label: dihydroxy-dehydro tilivalline
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-661b53729c
+  command: just validate-strict data/natural_products/alkaloids/dihydroxy-dehydro-tilivalline.yaml
+    --out /private/tmp/npm-review-work/189/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T22:27:07.639897Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3116 corpus records are filed exactly where PATHS.tsv pins them.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-018-baseline-verify-corpus-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-018 execution on f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T21:43:11.095314Z;
+    finished 2026-10-21T21:43:43.016017Z. Exact original receipt: /private/tmp/npm-native-checks/batch-018/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-018/verify-corpus.log. Reused
+    for batch019 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,105,749 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch019. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-661b53729c
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3116 records reproduce byte-for-byte from data/raw/.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-018-baseline-verify-reproduction-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-018 execution on f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T21:43:11.049802Z;
+    finished 2026-10-21T21:44:10.266611Z. Exact original receipt: /private/tmp/npm-native-checks/batch-018/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-018/verify-reproduction.log.
+    Reused for batch019 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,182 tracked byte streams and modes (208,105,749 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch019. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-661b53729c
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The canonical review-queue command completed with actual exit0 on the fresh
+    main base; exact output, warnings and skips remain in the pinned transcript.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-018-baseline-review-queue-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just review-queue --tsv /private/tmp/npm-review-queue-batch-018.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-018 execution on f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T21:43:11.094986Z;
+    finished 2026-10-21T21:43:27.046585Z. Exact original receipt: /private/tmp/npm-native-checks/batch-018/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-018/review-queue.log. Reused
+    for batch019 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,105,749 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch019. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-661b53729c
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'Configured identifier-label validation exited zero: 13449 canonical matches,
+    646 synonym matches and 35 configured exceptions; 499 non-blocking warnings and
+    4750 no-adapter skips remain.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-018-baseline-validate-products-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-018 execution on f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T21:43:11.095805Z;
+    finished 2026-10-21T21:44:09.649497Z. Exact original receipt: /private/tmp/npm-native-checks/batch-018/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-018/validate-products.log. Reused
+    for batch019 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,105,749 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch019. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-661b53729c
+- check_id: shared-qc
+  name: Full repository quality gate on the fresh main baseline
+  status: passed
+  required: true
+  summary: Full fresh-base quality command completed successfully:999 tests passed,4
+    skipped,2 warnings;3116 records passed closed schema validation and corpus reproduction,
+    and generated pages were current.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-018-baseline-qc-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-018 execution on f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T21:43:11.050051Z;
+    finished 2026-10-21T21:48:43.599885Z. Exact original receipt: /private/tmp/npm-native-checks/batch-018/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-018/qc.log. Reused for batch019
+    only after a fresh fetch/clean branch, equal commit/tree and two reads of all
+    9,182 tracked byte streams and modes (208,105,749 bytes), including a recheck
+    after the fresh authoritative catalogue. This gate was not rerun for batch019.
+    Original execution times, scope, warnings, exceptions and skips are retained.'
+  target_ids:
+  - naturalproductmech:mibig-661b53729c
+- check_id: R189-FULL-OWNER
+  name: Complete owner and captured-source scope
+  status: passed
+  required: true
+  summary: Successful official intake and a fresh root full-owner/read receipt precede
+    this authoring. All six officially captured sets and the separately mechanically
+    parsed seventh PubChem set match. All seven exact-key sets were read by root;
+    each PubChem set is empty and no assay is emitted. No BindingDB or graph assertion
+    is present. The external component set is empty.
+  target_ids:
+  - naturalproductmech:mibig-661b53729c
+  evidence_ids:
+  - R189-OWNER
+  - R189-LOCAL
+  - R189-PUBCHEM-PREP
+- check_id: S189-C-EXACT-METHOD
+  name: Exact derivative applicability of the imported correlation method
+  status: failed
+  required: true
+  summary: The inspected supporting genetic endpoints are parent-specific. Exact derivative
+    correlation is not established in the available original content; the unresolved
+    SI check is retained and precedes the final correction decision.
+  target_ids:
+  - naturalproductmech:mibig-661b53729c
+  evidence_ids:
+  - S189-E-LOCAL
+  - S189-E-TV14
+  - S189-E-TV18
+  - S189-E-ACCESS
+- check_id: S189-C-REQUIRED-DETAILS
+  name: Complete original product-specific and identity applicability
+  status: unavailable
+  required: true
+  summary: The 2014 SI remains unread after retained unsuccessful routes. The 2018
+    source also expressly leaves structural positions unresolved. Neither missing
+    SI nor a native MS feature permits a complete exact-graph, host or gene-method
+    transfer.
+  target_ids:
+  - naturalproductmech:mibig-661b53729c
+  evidence_ids:
+  - S189-E-TV14
+  - S189-E-TV18
+  - S189-E-TV18-FIG2
+  - S189-E-ACCESS
+- check_id: C189-C-REPRESENTATION
+  name: Stored chemical representation and complete source row
+  status: passed
+  required: true
+  summary: Fresh intake derivation agrees with the stored graph; the source selector,
+    full row and prepared snapshot were independently rechecked.
+  target_ids:
+  - naturalproductmech:mibig-661b53729c
+  evidence_ids:
+  - C189-OWNER
+  - C189-GRAPH
+  - C189-COMPARISON
+- check_id: C189-C-XREF
+  name: Exact literal identifier resolution
+  status: not_applicable
+  required: true
+  summary: Present literal PubChem and NPAtlas structures were independently parsed;
+    no unsupported positive replacement identifier is introduced.
+  target_ids:
+  - naturalproductmech:mibig-661b53729c
+  evidence_ids:
+  - C189-OWNER
+  - C189-AUTHORITY-COMPARISON
+  - C189-AUTH-1
+  - C189-AUTH-2
+  - C189-AUTH-3
+- check_id: C189-C-EXACT-PRIMARY-RESOLUTION
+  name: Exact derivative positions and hand
+  status: unavailable
+  required: true
+  summary: Positive derivative identity is supported at lower structural resolution.
+    Neither an independently localized second hydroxyl nor derivative-specific absolute
+    hand was recovered;189 additionally lacks a localized C-ring double bond. This
+    uncertainty does not prove a selected alternative graph.
+  target_ids:
+  - naturalproductmech:mibig-661b53729c
+  evidence_ids:
+  - C189-PRIMARY-MAIN
+  - C189-PRIMARY-FIGURE
+  - C189-PRIMARY-PRECISION
+  - C189-COMPARISON
+  - C189-AUTHORITY-COMPARISON
+evidence:
+- evidence_id: R189-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/dihydroxy-dehydro-tilivalline.yaml
+  locator: Complete post-intake owner, optional assertions and all history events
+  accessed_at: '2026-10-21T22:27:38.874412Z'
+  support: supports
+  summary: 'Root read the complete owner after successful official intake: 1 occurrence,
+    1 producer and 1 locus assertions. No referenced external component is present.
+    Optional fields: none.'
+  snapshot_sha256: a959fe9c108667b99536903f823c9e5d1e1fdf47216c50d4347507d967074fe9
+- evidence_id: R189-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/189/local-sources.json
+  locator: Complete resolved owner and all six officially captured raw row sets
+  accessed_at: '2026-10-21T22:27:38.874412Z'
+  support: context_only
+  summary: All six captured MIBiG, LOTUS, ChEBI structures/origins, CyanoMetDB and
+    NPClassifier sets match the frozen preparation, including empty sets. The separate
+    seventh PubChem inventory comparison is distinguished below. Source fidelity does
+    not itself establish experimental support.
+  snapshot_sha256: ad2347f71d791ceb52f5a8c26594c18f535bb4aeb12601563d8dab4a2ec61034
+- evidence_id: R189-PUBCHEM-PREP
+  kind: record_content
+  reference: data/raw/pubchem_bioassay.tsv
+  locator: Exact-key rows compared with the separate provisional seventh source set
+  accessed_at: '2026-10-21T22:27:43.718887Z'
+  support: context_only
+  summary: The separate committed PubChem raw set contains 0 matching rows and reproduces
+    the frozen preparation. All ten exact-key sets are genuinely empty, not no-assay-data
+    sentinel observations. This is not part of the official six-set intake and does
+    not establish absence of bioactivity from the literature.
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: R189-Q48966842
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q48966842
+  locator: P225 and P685 in the retained complete six-entity response
+  accessed_at: '2026-10-21T20:59:34.577988Z'
+  support: context_only
+  summary: Literal scientific name and NCBI taxon identifier agree with the matched
+    source rows. Identifier routing does not establish occurrence chemistry, producing
+    stock or experiment.
+  snapshot_sha256: fef57e4d7c35eca62b34e5aaa247d1446527165187c2aa996d9d6e6e4f87be2b
+- evidence_id: R189-TAXON-CONTEXT
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&retmode=xml&id=117187,1510026,1873,1873482,1883,1886,2201999,33178,341663,37463,457406,571,83212
+  locator: Exact relevant TaxId, ScientificName, Rank, ParentTaxId and OtherNames
+    fields
+  accessed_at: '2026-10-21T20:59:34.762475Z'
+  support: context_only
+  summary: NCBI 571 Klebsiella oxytoca and 1873482 Xenorhabdus eapokensis are distinct
+    species. The latter explicitly includes Xenorhabdus sp. DL20 and strain DL20 type
+    material. The label crosswalk does not transfer parent-compound genetics, exact
+    hydroxyl/double-bond positions or experimental hosts.
+  snapshot_sha256: 24951f0c3345553a57992d162e857de7d93c11c3723b6b05156bd833857b0785
+- evidence_id: R189-IMODULON
+  kind: database
+  reference: https://imodulondb.org/api/datasets
+  locator: Complete 20-organism, 28-dataset official catalogue
+  accessed_at: '2026-10-21T20:59:34.301902Z'
+  support: context_only
+  summary: The full retained catalogue establishes membership only. S. albidoflavus
+    has a listed dataset, but that does not establish applicability to F001 or validate
+    the separate albidoflavus occurrence. None of the exact imported native producer
+    labels is listed. E. coli experimental hosts and M. tuberculosis assay targets
+    are distinct from native producer regulation.
+  snapshot_sha256: 155607e7023efdead5ebab3919279a0776d5665a7de9e28b67f02f8f521b0693
+- evidence_id: S189-E-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/189/local-sources.json
+  locator: Full resolved owner, every present claim and all seven matching raw sets
+  accessed_at: '2026-10-21T22:27:38.874412Z'
+  support: context_only
+  summary: Complete actual owner and six captured source sets match the prepared inventory;
+    the seventh PubChem set is independently reconciled against the entire raw TSV.
+  snapshot_sha256: ad2347f71d791ceb52f5a8c26594c18f535bb4aeb12601563d8dab4a2ec61034
+- evidence_id: S189-E-RAW
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: '{"bgc_classes": "NRPS", "bgc_subclasses": "Type I", "cluster_link_evidence_basis":
+    "CLUSTER_CORRELATED", "compound_classes": "", "compound_index": "5", "compound_name":
+    "dihydroxy-dehydro tilivalline", "database_ids": "", "entry_completeness": "complete",
+    "entry_quality": "questionable", "entry_status": "active", "entry_version": "5",
+    "genome_accession": "HG425356.1", "locus_evidence_methods": "Gene expression correlated
+    with compound production", "locus_from": "", "locus_to": "", "mibig_accession":
+    "BGC0000446", "primary_reference": "PMID:25157164", "producer_evidence_basis":
+    "BGC_CORRELATED", "reference_basis": "ENTRY", "smiles": "O=C1C2=C(C(O)=CC(O)=C2)N[C@@H](C3=CNC4=C3C=CC=C4)[C@@]5([H])N1C=CC5",
+    "standard_inchi": "InChI=1S/C20H17N3O3/c24-11-8-13-19(17(25)9-11)22-18(16-6-3-7-23(16)20(13)26)14-10-21-15-5-2-1-4-12(14)15/h1-5,7-10,16,18,21-22,24-25H,6H2/t16-,18-/m0/s1",
+    "standard_inchi_key": "SUWJFXOVRICCHZ-WMZOPIPTSA-N", "stereo_complete": "true",
+    "taxon_id": "NCBITaxon:571", "taxon_label": "Klebsiella oxytoca"}'
+  accessed_at: '2026-10-21T22:27:38.874412Z'
+  support: context_only
+  summary: Immutable exact source selector source_id=BGC0000446:5, expected_source_row_sha256=bfdb9c188b2428a40dfbac3e9b41408de1a5a4e77e93ecd375d129813d8cd41f.
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: S189-E-SOURCE-SCOPE
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch019/review-support/source-notes.json
+  locator: Five compound scopes and complete actual source access receipts
+  accessed_at: '2026-10-21T20:47:21.563554Z'
+  support: context_only
+  summary: Frozen primary read scopes and unresolved retrieval needs. Capacity-deferred
+    requests were not sent and are not evidence of scientific absence.
+  snapshot_sha256: 6025de554c9c82f6e1fae8ae716d619c1cff3cc4f36108fefb5872b34e13fbfa
+- evidence_id: S189-E-ACCESS
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch019/review-support/input-manifest.json
+  locator: Flattened source evidence and original per-response timestamps
+  accessed_at: '2026-10-21T20:48:12.100669Z'
+  support: context_only
+  summary: Flat immutable source pins, including successful content, abstract-only
+    captures, unsuccessful public routes and capacity stops. Formal authoring does
+    not extend the primary read scope.
+  snapshot_sha256: 238d814db791f0d459142fc51833bcfc81d1539437c77c58e661fe2df24e18fb
+- evidence_id: S189-E-CONSUMERS
+  kind: record_content
+  reference: scripts/seed_from_sources.py
+  locator: Method loader; untouched source_row; producer/locus emission; guarded overlay
+    composition
+  accessed_at: '2026-10-21T22:27:38.874412Z'
+  support: context_only
+  summary: Method REPLACE has no independent full-row SHA guard; WITHDRAW checks its
+    seven literal expected fields but retains source-tier associations. Citation and
+    producer-strain overlays have full-row guards and reject structure-corrected rows
+    in the current composition.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: S189-E-CLAIM-ROUTE
+  kind: record_content
+  reference: src/naturalproductmech/curate/claim_references.py
+  locator: Complete load_claim_references and correct_claim_reference contracts
+  accessed_at: '2026-10-21T22:27:38.874412Z'
+  support: context_only
+  summary: The existing exact-row citation consumer changes the two claim-local references
+    with curator attribution while retaining database assertion type, source taxon
+    and evidence grades.
+  snapshot_sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+- evidence_id: S189-E-STRAIN-ROUTE
+  kind: record_content
+  reference: src/naturalproductmech/curate/producer_strains.py
+  locator: Complete strain/isolate qualification implementation
+  accessed_at: '2026-10-21T22:27:38.874412Z'
+  support: context_only
+  summary: A legitimate strain qualification pins the entire original MIBiG row and
+    adds producer-only context. It cannot reassign a taxon, change a locus grade or
+    itself qualify BGC notes.
+  snapshot_sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+- evidence_id: S189-E-GRADING
+  kind: record_content
+  reference: conf/producer_evidence.tsv
+  locator: Complete two-claim evidence vocabulary
+  accessed_at: '2026-10-21T22:27:38.874412Z'
+  support: context_only
+  summary: Native necessity and native expression correlation grade the organism and
+    locus; heterologous expression grades the cloned locus only. Empty source methods
+    mean SOURCE_ASSERTION and CLUSTER_UNSTATED.
+  snapshot_sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+- evidence_id: S189-E-TV14
+  kind: primary_source
+  reference: PMID:25157164
+  locator: Complete main, native genetic/complementation Methods and all captions;
+    original parent-tilivalline study; retained /private/tmp/npm-review-work/shared-next-batch018/bgc-science/attempt-003/tilivalline2014-pmc.html
+  accessed_at: '2026-10-21T20:05:51.660203Z'
+  support: supports
+  summary: 'K. oxytoca AHC-6/HG425356 supports parent tilivalline genetics and parent
+    cell/colitis endpoints. Those inspected main endpoints do not establish exact
+    hydroxylated derivatives 3 or 5; original SI remains unread. Read scope: Complete
+    retained main scientific text and captions; no recovered 2014 SI or compound-specific
+    SI absence claim.'
+  snapshot_sha256: 5aaec74552850fd02e4ebf79f2d2ae6b9bc14538a984be8bf5409f736a0d1986
+- evidence_id: S189-E-TV18
+  kind: primary_source
+  reference: DOI:10.1371/journal.pone.0194297
+  locator: Exact PMC5875774 article within multi-article XML; complete main, Methods
+    and captions; retained /private/tmp/npm-review-work/shared-next-batch018/bgc-science/attempt-003/saxitoxin2008-2010-xeno2018.xml
+  accessed_at: '2026-10-21T20:05:51.734272Z'
+  support: supports
+  summary: 'Native DL20 crude-extract features 3 and 5 are positive accurate-mass/fragmentation
+    assignments with unresolved second hydroxyl position; 5 also has unresolved unsaturation.
+    The X. indica engineered E. coli product list excludes these two features. Read
+    scope: Complete original scientific body and captions, independently reread in
+    the retained derivative. Pure-compound identity and absolute hand of features
+    3/5 are not established by this read.'
+  snapshot_sha256: 64a55ae436b09113aac0b0e7895a37fb9c7ebbf0fecf2099e89e0f66a4ad1af0
+- evidence_id: S189-E-TV18-FIG2
+  kind: primary_source
+  reference: DOI:10.1371/journal.pone.0194297
+  locator: Original Figure 2, native extract traces and proposed derivative structures/positions;
+    retained /private/tmp/npm-review-work/shared-next-batch018/bgc-science/attempt-004/dehydro2018-fig2.png
+  accessed_at: '2026-10-21T20:10:14.297735Z'
+  support: supports
+  summary: 'Original pixels distinguish native DL20 features 3/5 from heterologous
+    products; ambiguous positional annotation and plain core bonds do not establish
+    the exact retained regiographs or absolute hand. Read scope: Original complete
+    Figure 2 pixels viewed; bounded numbering peer also retained. No spectral reassignment
+    or new absolute-hand experiment.'
+  snapshot_sha256: 708fa87854db99f292036002f3bb767dd3c9772798d57ff8e4d41b442ad2e295
+- evidence_id: C189-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/dihydroxy-dehydro-tilivalline.yaml
+  locator: Complete owner and all seven matching source-row sets; no referenced components
+  accessed_at: '2026-10-21T22:28:04.317117Z'
+  support: supports
+  summary: 'The complete owner denotes dihydroxy-dehydro tilivalline under naturalproductmech:mibig-661b53729c.
+    All source selectors, versions and complete row digests are retained in COMPARISON:
+    [{"row_sha256": "bfdb9c188b2428a40dfbac3e9b41408de1a5a4e77e93ecd375d129813d8cd41f",
+    "selector": "BGC0000446:5", "version": "5"}]. The official intake and prepared
+    owner bytes agree.'
+  snapshot_sha256: a959fe9c108667b99536903f823c9e5d1e1fdf47216c50d4347507d967074fe9
+- evidence_id: C189-GRAPH
+  kind: validation
+  reference: /private/tmp/npm-review-work/189/chemistry.json
+  locator: Fresh intake RDKit result and frozen Standard/fixed-H comparison
+  accessed_at: '2026-10-21T22:27:06.764194Z'
+  support: supports
+  summary: The stored SMILES recomputes to SUWJFXOVRICCHZ-WMZOPIPTSA-N, formula C20H17N3O3,
+    formal charge 0; stored InChI/key agree. These are representation checks, not
+    experimental identity proof.
+  snapshot_sha256: f9d0042d34bba5a1d46bcaedf8208bb4f1d20aa3acf935d89a4a11e4ee5dcacd
+- evidence_id: C189-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch019/chemistry-prep/retained-graph-comparison.json
+  locator: Record 189; exact source rows and each graph comparison
+  accessed_at: '2026-10-21T20:47:09.040465Z'
+  support: supports
+  summary: Exact Standard, fixed-H, formula, charge and stereo comparisons of the
+    retained owner and complete raw rows; current authority responses and primary
+    proof are separate evidence.
+  snapshot_sha256: 482b2e9abaec1a27adf9162a0da6bcaa8c18dfde4008349502fc36cf80ad4aac
+- evidence_id: C189-LOCAL-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/189/chemistry-search-receipt.json
+  locator: Exact full key, label, slug and source selector in raw/owner/curation trees
+  accessed_at: '2026-10-21T22:28:04.546103Z'
+  support: supports
+  summary: Ignored-inclusive bounded search preserves all matching paths; an absent
+    curation decision does not imply a missing scientific source.
+  snapshot_sha256: ba4da87fd5a55a0a9f3b343075ad0d29e37e1eb65f5c41833e0110674003edef
+  search_scope: rg --no-ignore --hidden; data/natural_products, data/raw and curation;
+    exact full key, current label, slug and BGC:compound_index. No claim beyond these
+    trees.
+- evidence_id: C189-AUTHORITY-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch019/chemistry-prep/authority-bounded-phase-002/authority-comparison.json
+  locator: Exact current response and independently parsed literal structure per target
+  accessed_at: '2026-10-21T21:01:48.435625Z'
+  support: supports
+  summary: Complete current-response Standard/fixed-H, formula, charge and stereo
+    comparisons. Seven default ChEBI strings fail parsing despite exact official MOLs;
+    all eight returned ChEBI hits are two-star. No authority vote establishes primary
+    hand.
+  snapshot_sha256: a486d3228efe103265b8af671b517f445b602e0083163315aa46a662cb3ef7aa
+- evidence_id: C189-CHEBI-SEARCH-1
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=SUWJFXOVRICCHZ-WMZOPIPTSA-N&size=100
+  locator: Literal key query; complete chebi-key-189.json
+  accessed_at: '2026-10-21T21:00:36.555595Z'
+  support: supports
+  summary: '{"number_pages": 1, "results": [{"_id": "220001", "_index": "chebi-prod-compounds-21102026",
+    "_score": 11.740778, "_source": {"ascii_name": "Dihydroxy-dehydro tilivalline",
+    "charge": 0, "chebi_accession": "CHEBI:220001", "default_structure": 3426445,
+    "formula": "C20H17N3O3", "inchi": "InChI=1S/C20H17N3O3/c24-11-8-13-19(17(25)9-11)22-18(16-6-3-7-23(16)20(13)26)14-10-21-15-5-2-1-4-12(14)15/h1-5,7-10,16,18,21-22,24-25H,6H2/t16-,18-/m0/s1",
+    "inchikey": "SUWJFXOVRICCHZ-WMZOPIPTSA-N", "mass": 347.374, "monoisotopicmass":
+    347.12699, "name": "Dihydroxy-dehydro tilivalline", "smiles": "O=C1c2cc(O)cc(O)c2N[C@@H](c2cnc3ccccc23)[C@@H]2CC=CN12",
+    "stars": 2, "structures": [3426445]}, "_type": "_doc"}], "total": 1}'
+  snapshot_sha256: 9b2107d0026666f71da5bc53ca96260f3a0bde82d2ec3e479428b7f7470aae28
+  search_scope: Official ChEBI es_search, bounded literal key query and size100; exact
+    URL and complete response retained. No universal absence claim.
+- evidence_id: C189-CHEBI-SEARCH-2
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=dihydroxy-dehydro+tilivalline&size=100
+  locator: Literal name query; complete chebi-name-189.json
+  accessed_at: '2026-10-21T21:00:37.214006Z'
+  support: supports
+  summary: '{"number_pages": 1, "results": [{"_id": "220001", "_index": "chebi-prod-compounds-21102026",
+    "_score": 59.219444, "_source": {"ascii_name": "Dihydroxy-dehydro tilivalline",
+    "charge": 0, "chebi_accession": "CHEBI:220001", "default_structure": 3426445,
+    "formula": "C20H17N3O3", "inchi": "InChI=1S/C20H17N3O3/c24-11-8-13-19(17(25)9-11)22-18(16-6-3-7-23(16)20(13)26)14-10-21-15-5-2-1-4-12(14)15/h1-5,7-10,16,18,21-22,24-25H,6H2/t16-,18-/m0/s1",
+    "inchikey": "SUWJFXOVRICCHZ-WMZOPIPTSA-N", "mass": 347.374, "monoisotopicmass":
+    347.12699, "name": "Dihydroxy-dehydro tilivalline", "smiles": "O=C1c2cc(O)cc(O)c2N[C@@H](c2cnc3ccccc23)[C@@H]2CC=CN12",
+    "stars": 2, "structures": [3426445]}, "_type": "_doc"}], "total": 1}'
+  snapshot_sha256: de5051f46bf656310af01e536487170408c812ae6feb891e3785d4e1112df889
+  search_scope: Official ChEBI es_search, bounded literal name query and size100;
+    exact URL and complete response retained. No universal absence claim.
+- evidence_id: C189-AUTH-1
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/220001/
+  locator: Complete retained response /private/tmp/npm-review-work/shared-next-batch019/chemistry-prep/authority-bounded-phase-002/positive-hit-followup/CHEBI220001.json
+  accessed_at: '2026-10-21T21:01:13.440663Z'
+  support: supports
+  summary: Exact namespace/version and structure details are in AUTHORITY-COMPARISON.
+    This snapshot binds the actual returned record, not independent experimental proof.
+  snapshot_sha256: 733aacd0dfc1d3d302091d91aa9553eaa4a4ad510d79a9b6b7b53e58363dc0b7
+- evidence_id: C189-AUTH-2
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/220001/
+  locator: Complete retained response /private/tmp/npm-review-work/shared-next-batch019/chemistry-prep/authority-bounded-phase-002/positive-hit-followup/CHEBI220001.mol
+  accessed_at: '2026-10-21T21:01:13.430273Z'
+  support: supports
+  summary: Exact namespace/version and structure details are in AUTHORITY-COMPARISON.
+    This snapshot binds the actual returned record, not independent experimental proof.
+  snapshot_sha256: b63f92a82d0ba660aae87c4dc76515fea2edabca824379ce58e83375c6d8939d
+- evidence_id: C189-AUTH-3
+  kind: authority
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q105261559.json
+  locator: Complete retained response /private/tmp/npm-review-work/shared-next-batch019/chemistry-prep/authority-bounded-phase-002/public-retry/Q105261559.json
+  accessed_at: '2026-10-21T21:00:37.147980Z'
+  support: supports
+  summary: Exact namespace/version and structure details are in AUTHORITY-COMPARISON.
+    This snapshot binds the actual returned record, not independent experimental proof.
+  snapshot_sha256: ce8ebc138c5437d439f1c1f8d4b50ba510ac55c2630fadea7c1020259aa2951b
+- evidence_id: C189-CONSUMERS
+  kind: record_content
+  reference: src/naturalproductmech/curate/structure_corrections.py
+  locator: Complete maintained structure consumer; separately pinned claim-reference/strain/xref
+    consumers
+  accessed_at: '2026-10-21T22:28:04.317117Z'
+  support: supports
+  summary: The implemented replacement/splitting route requires an exact source selector,
+    complete original and target row hashes, a unique committed eligible three-star
+    target and collision checks. It copies the target SMILES text, so an invalid default
+    JSON string cannot be rescued merely by a valid MOL. It clears old xrefs/rebuilds
+    exact-key joins. Arbitrary primary SMILES or label replacement is not supported.
+    Existing reference/strain/xref consumers reject structure_correction_note; composition
+    cannot be assumed.
+  snapshot_sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+- evidence_id: C189-PRIMARY-MAIN
+  kind: primary_source
+  reference: DOI:10.1371/journal.pone.0194297
+  locator: PMC5875774 original Results/Methods, exact feature5, not the other articles
+    in this XML; exact retained snapshot /private/tmp/npm-review-work/shared-next-batch018/bgc-science/attempt-003/saxitoxin2008-2010-xeno2018.xml
+  accessed_at: '2026-10-21T20:05:51.734272Z'
+  support: supports
+  summary: The exact derivative is a positive native DL20 feature. Accurate mass/MS2
+    supports additional hydroxylation; the second A-ring OH position remains unresolved,
+    with7/8 proposed. For dehydro feature5 the C-ring double-bond position also remains
+    unresolved. No absolute-hand determination is supplied for these exact features.
+  snapshot_sha256: 64a55ae436b09113aac0b0e7895a37fb9c7ebbf0fecf2099e89e0f66a4ad1af0
+- evidence_id: C189-PRIMARY-FIGURE
+  kind: primary_source
+  reference: DOI:10.1371/journal.pone.0194297
+  locator: Original Figure2C exact feature5, ambiguous R2 linkage and plain core bonds;
+    exact retained snapshot /private/tmp/npm-review-work/shared-next-batch018/bgc-science/attempt-004/dehydro2018-fig2.png
+  accessed_at: '2026-10-21T20:10:14.297735Z'
+  support: supports
+  summary: The schematic leaves the second hydroxyl attachment ambiguous across7/8
+    and uses plain core bonds. A drawn dehydro bond in the schematic is not a localization
+    experiment. Parent tilivalline hand or precursor enzymes do not automatically
+    establish derivative absolute hand.
+  snapshot_sha256: 708fa87854db99f292036002f3bb767dd3c9772798d57ff8e4d41b442ad2e295
+- evidence_id: C189-PRIMARY-PRECISION
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch019/chemistry-prep/retained-primary-constraints-comparison.json
+  locator: Independent source-local graph comparison; original inputs and boundaries
+    retained
+  accessed_at: '2026-10-21T20:50:51.126344Z'
+  support: supports
+  summary: Numbered retained-graph mapping assigns OH to C7/C9 and centres C11S/C11aS;189
+    additionally encodes C2=C3. These positions/hand are more specific than the original
+    feature assignment. Independent bounded pixel/numbering QA agrees; no replacement
+    isomer or complete primary stereograph is selected.
+  snapshot_sha256: 1491960ff52a001a225be09897766e0ba0a56e1b96efb8292d3dcab091b59f89
+assessments:
+- assessment_id: R189-HISTORY
+  area: provenance
+  topic: Native status and complete audit history
+  outcome: supported
+  summary: All 2 retained events are SEEDED_FROM_SOURCES. Native status remains SEEDED;
+    provenance events are not structured-review passes.
+  target_ids:
+  - naturalproductmech:mibig-661b53729c
+  evidence_ids:
+  - R189-OWNER
+- assessment_id: R189-OPTIONAL
+  area: completeness
+  topic: Complete optional-assertion inventory
+  outcome: not_applicable
+  summary: No optional definition, pathway, graph, target, assay, application, summary,
+    relation, discussion or clinical-status assertion is present. Optional enrichment
+    is separate from checking existing source claims.
+  target_ids:
+  - naturalproductmech:mibig-661b53729c
+  evidence_ids:
+  - R189-OWNER
+  - R189-LOCAL
+  - R189-PUBCHEM-PREP
+- assessment_id: R189-FILING
+  area: representation
+  topic: Exact-key computed classification provenance
+  outcome: supported
+  summary: The exact-key NPClassifier projection and version npclassifier.gnps2.org@2026-09-07
+    reproduce the owner filing, superclass/class labels and glycoside value false.
+    Computed labels are not independent precursor, mechanism or natural-origin evidence.
+    Any accepted new identity requires reclassification for its effective key.
+  target_ids:
+  - naturalproductmech:mibig-661b53729c
+  evidence_ids:
+  - R189-OWNER
+  - R189-LOCAL
+- assessment_id: R189-ORGANISM-IDS
+  area: grounding
+  topic: Literal organism identifier routing
+  outcome: supported
+  summary: All literal organism-QID routes agree at the inspected P225/P685 scope.
+    Occurrence and experimental-unit support remain separate.
+  target_ids:
+  - naturalproductmech:mibig-661b53729c
+  evidence_ids:
+  - R189-Q48966842
+- assessment_id: R189-TAXON-SCOPE
+  area: provenance
+  topic: Taxonomic names versus experimental stocks
+  outcome: supported
+  summary: NCBI 571 Klebsiella oxytoca and 1873482 Xenorhabdus eapokensis are distinct
+    species. The latter explicitly includes Xenorhabdus sp. DL20 and strain DL20 type
+    material. The label crosswalk does not transfer parent-compound genetics, exact
+    hydroxyl/double-bond positions or experimental hosts.
+  target_ids:
+  - naturalproductmech:mibig-661b53729c
+  evidence_ids:
+  - R189-TAXON-CONTEXT
+  - R189-OWNER
+- assessment_id: R189-IMODULON-SCOPE
+  area: completeness
+  topic: Producer transcriptomic applicability
+  outcome: not_applicable
+  summary: No exact imported native producer is represented in the inspected catalogue.
+    The positive S. albidoflavus dataset membership does not supply the unresolved
+    F001 bridge. Related species, experimental hosts and assay targets do not establish
+    a construct/condition match; no gene/module or compound-production inference is
+    made.
+  target_ids:
+  - naturalproductmech:mibig-661b53729c
+  evidence_ids:
+  - R189-OWNER
+  - R189-IMODULON
+- assessment_id: S189-A-ORIGIN-OCC
+  area: evidence
+  topic: Native DL20 feature and exact occurrence resolution
+  outcome: supported
+  summary: The original 2018 study detects native X. eapokensis DL20 crude-extract
+    feature 5 by accurate mass and fragmentation. This is positive named natural-feature
+    evidence, distinct from a fully purified and stereochemically assigned compound.
+    The second hydroxyl position and the proline-ring double-bond position remains
+    explicitly unresolved. The LOTUS species-level citation reflects this source association,
+    subject to independent chemical-resolution adjudication.
+  target_ids:
+  - naturalproductmech:mibig-661b53729c
+  evidence_ids:
+  - S189-E-LOCAL
+  - S189-E-TV18
+  - S189-E-TV18-FIG2
+  dimensions:
+  - name: native_feature_source
+    value: Xenorhabdus eapokensis DL20
+    definition: Native culture extract feature 5, not an engineered E. coli endpoint.
+    evidence_ids:
+    - S189-E-TV18
+    - S189-E-TV18-FIG2
+  - name: analytical_resolution
+    value: Accurate mass and fragmentation
+    definition: Second hydroxyl position and the proline-ring double-bond position
+      and absolute hand are not independently established.
+    evidence_ids:
+    - S189-E-TV18
+    - S189-E-TV18-FIG2
+  - name: imported_producer_locus
+    value: Klebsiella oxytoca / HG425356.1
+    definition: Separate parent-tilivalline source association, not automatically
+      the native DL20 feature locus.
+    evidence_ids:
+    - S189-E-LOCAL
+    - S189-E-TV14
+- assessment_id: S189-A-METHOD
+  area: evidence
+  topic: Parent-tilivalline correlation versus exact derivative
+  outcome: concern
+  summary: The complete 2014 main studies mono-hydroxyl parent tilivalline from K.
+    oxytoca AHC-6, with native nps perturbation and complementation. Those positive
+    endpoints do not establish this hydroxylated derivative as the measured expression-correlated
+    product in the inspected main. The original SI remains unread, so a study-wide
+    negative statement or irreversible association removal is not justified.
+  target_ids:
+  - naturalproductmech:mibig-661b53729c
+  evidence_ids:
+  - S189-E-LOCAL
+  - S189-E-TV14
+  - S189-E-TV18
+  - S189-E-GRADING
+  - S189-E-ACCESS
+- assessment_id: S189-A-HOSTS
+  area: scope
+  topic: X. indica heterologous product set and optional assays
+  outcome: supported
+  summary: The introduced X. indica DSM 17382 xtvAB system in E. coli DH10B entD::mtaA/pHW10
+    yields the explicitly enumerated products 1, 2, 6–10 and 12–14, not native features
+    3 or 5. Parent 1 alone is quantified against a standard; the native derivative
+    traces use a 100-fold plotting multiplier. Parent tilivalline cell/colitis effects
+    are not pure-compound or molecular-target assays for feature 5.
+  target_ids:
+  - naturalproductmech:mibig-661b53729c
+  evidence_ids:
+  - S189-E-TV18
+  - S189-E-TV18-FIG2
+  - S189-E-TV14
+- assessment_id: S189-A-LOCUS
+  area: provenance
+  topic: HG425356 and NRPS context
+  outcome: supported
+  summary: The 2014 main identifies HG425356 as AHC-6 genomic context for the parent
+    NRPS pathway. Empty imported bounds are preserved. This source metadata does not
+    bridge the exact derivative to that locus or equate the Klebsiella sequence with
+    the separate Xenorhabdus genes.
+  target_ids:
+  - naturalproductmech:mibig-661b53729c
+  evidence_ids:
+  - S189-E-LOCAL
+  - S189-E-TV14
+  - S189-E-TV18
+- assessment_id: C189-A-IDENTITY
+  area: identity
+  topic: Stored representation and source-concept provenance
+  outcome: supported
+  summary: The complete source row BGC0000446:5 and source-concept hash reproduce
+    this stored representation; this does not establish that the upstream compound
+    label is correct. Formula, charge, Standard and fixed-H distinctions are independently
+    recorded. Primary support and any conflicting exact xref are assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-661b53729c
+  evidence_ids:
+  - C189-OWNER
+  - C189-GRAPH
+  - C189-COMPARISON
+  dimensions:
+  - name: mibig_source_selector
+    value: BGC0000446:5
+    definition: Accession plus compound_index, distinct from the entry-level accession.
+    evidence_ids:
+    - C189-OWNER
+  - name: complete_raw_row_sha256
+    value: bfdb9c188b2428a40dfbac3e9b41408de1a5a4e77e93ecd375d129813d8cd41f
+    definition: Sorted compact ASCII JSON of every parsed TSV field, including empty
+      values.
+    evidence_ids:
+    - C189-OWNER
+- assessment_id: C189-A-GROUNDING
+  area: provenance
+  topic: Exact authority eligibility and source representation
+  outcome: supported
+  summary: No exact eligible row exists in the committed ChEBI projection for this
+    owner. Current bounded name/key searches do not justify a different congener or
+    a two-star grounding.
+  target_ids:
+  - naturalproductmech:mibig-661b53729c
+  evidence_ids:
+  - C189-OWNER
+  - C189-COMPARISON
+  - C189-AUTHORITY-COMPARISON
+  - C189-LOCAL-SEARCH
+  - C189-CHEBI-SEARCH-1
+  - C189-CHEBI-SEARCH-2
+- assessment_id: C189-A-XREF
+  area: representation
+  topic: Literal identifier and exact microstate comparison
+  outcome: supported
+  summary: 'All emitted literals resolve to their actual namespaces and agree in Standard
+    and fixed-H representation: []. Current metadata does not establish original experimental
+    hand.'
+  target_ids:
+  - naturalproductmech:mibig-661b53729c
+  evidence_ids:
+  - C189-OWNER
+  - C189-AUTHORITY-COMPARISON
+  - C189-AUTH-1
+  - C189-AUTH-2
+  - C189-AUTH-3
+- assessment_id: C189-A-ELIGIBILITY
+  area: grounding
+  topic: Current ChEBI eligibility
+  outcome: supported
+  summary: No exact row occurs in the committed eligible projection. Eight bounded
+    current exact/name hits across this cohort are two-star; targets186/188 return
+    explicit404 for the literal full-key and name queries. This is bounded search
+    scope, not global absence. Invalid default SMILES and valid official MOLs remain
+    distinct.
+  target_ids:
+  - naturalproductmech:mibig-661b53729c
+  evidence_ids:
+  - C189-OWNER
+  - C189-AUTHORITY-COMPARISON
+  - C189-CHEBI-SEARCH-1
+  - C189-CHEBI-SEARCH-2
+  - C189-AUTH-1
+  - C189-AUTH-2
+  - C189-AUTH-3
+- assessment_id: C189-A-WIKIDATA-PRECISION
+  area: representation
+  topic: Chemical Wikidata properties at their stated precision
+  outcome: supported
+  summary: '{"accessed_at": "2026-10-21T21:00:37.147980Z", "lastrevid": 2158218174,
+    "modified": "2024-05-18T17:10:40Z", "qid": "Q105261559", "scope": "P233 non-isomeric
+    SMILES is independently diagnosed; its omitted tetrahedral/alkene information
+    is not equated to the specific P2017 property.", "specific_structure": "P2017
+    matches retained Standard and fixed-H. P233 omits the relevant stereo; 187 P233
+    additionally uses a lactim form.", "standard_inchi_and_full_key_properties_match":
+    true}'
+  target_ids:
+  - naturalproductmech:mibig-661b53729c
+  evidence_ids:
+  - C189-AUTHORITY-COMPARISON
+  - C189-AUTH-1
+  - C189-AUTH-2
+  - C189-AUTH-3
+- assessment_id: C189-A-POSITION-HAND
+  area: representation
+  topic: Feature-level evidence versus precise retained graph
+  outcome: unknown
+  summary: Retain the positive named feature and preserve the source ambiguity. A
+    future precision/identity change requires complete original-row guards and explicit
+    reassessment of old-key occurrences, xrefs and biological claims. No eligible3-star
+    correction target or executable arbitrary-primary-SMILES route is established,
+    and existing overlay composition cannot be assumed.
+  target_ids:
+  - naturalproductmech:mibig-661b53729c
+  evidence_ids:
+  - C189-PRIMARY-MAIN
+  - C189-PRIMARY-FIGURE
+  - C189-PRIMARY-PRECISION
+  - C189-OWNER
+  - C189-CONSUMERS
+- assessment_id: C189-A-PRIMARY-SCOPE
+  area: scope
+  topic: Primary chemical support and retained precision
+  outcome: unknown
+  summary: The complete raw graph maps to hydroxyls at source C7/C9, C11S/C11aS, and
+    C2=C3 in the PBD C-ring. Reused BGC0000446 version5 encodes the same exact graph.
+    Original2018 feature5 supports an additional A-ring hydroxyl and C-ring desaturation
+    by accurate mass/MS2. It explicitly leaves the second OH position unresolved (C7
+    or C8 suggested), and the double-bond position unresolved. Figure2C has an ambiguous
+    R2 attachment and plain core bonds. The retained exact positional/stereo graph
+    is not fully established by this source; no alternative positional isomer or globally
+    achiral replacement is selected.
+  target_ids:
+  - naturalproductmech:mibig-661b53729c
+  evidence_ids:
+  - C189-PRIMARY-MAIN
+  - C189-PRIMARY-FIGURE
+  - C189-PRIMARY-PRECISION
+  - C189-OWNER
+  - C189-COMPARISON
+  - C189-AUTHORITY-COMPARISON
+findings:
+- finding_id: S189-F-METHOD
+  issue_key: mibig-bgc0000446-compound5-parent-method-transfer
+  category: evidence
+  severity: major
+  status: open
+  certainty: provisional
+  title: The imported derivative method relies on parent-tilivalline evidence
+  description: The complete inspected main tests parent tilivalline; the later hydroxylated
+    native feature comes from DL20 and has unresolved structural precision. This material
+    exact-product applicability concern is provisional because the 2014 SI remains
+    unread. It is not evidence of Klebsiella incapacity or proof that no relevant
+    derivative observation exists elsewhere.
+  target_ids:
+  - naturalproductmech:mibig-661b53729c
+  field_paths:
+  - producer_organisms[0].evidence_basis
+  - producer_organisms[0].evidence
+  - biosynthetic_gene_clusters[0].locus_evidence_methods
+  - biosynthetic_gene_clusters[0].link_evidence_basis
+  - biosynthetic_gene_clusters[0].evidence
+  evidence_ids:
+  - S189-E-RAW
+  - S189-E-TV14
+  - S189-E-TV18
+  - S189-E-TV18-FIG2
+  - S189-E-ACCESS
+  - S189-E-CONSUMERS
+  - S189-E-GRADING
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Immutable exact derivative source row
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Conditional existing method WITHDRAW
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Actual method guards, residual association and new qualifier composition
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Citation-only route cannot reassign producer or prove an exact endpoint
+actions:
+- action_id: S189-ACT-METHOD
+  finding_ids:
+  - S189-F-METHOD
+  target_ids:
+  - naturalproductmech:mibig-661b53729c
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Immutable exact derivative source row
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Conditional existing method WITHDRAW
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Actual method guards, residual association and new qualifier composition
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Citation-only route cannot reassign producer or prove an exact endpoint
+  description: 'First inspect the required original SI and adjudicate exact feature
+    5 applicability. If no applicable exact correlation is established, existing WITHDRAW
+    can clear the method for minted_identifier=naturalproductmech:mibig-661b53729c,
+    source=MIBIG, accession-only source_id=BGC0000446, replacement methods empty,
+    with all seven literal old context fields {"entry_version": "5", "genome_accession":
+    "HG425356.1", "locus_evidence_methods": "Gene expression correlated with compound
+    production", "locus_from": "", "locus_to": "", "standard_inchi_key": "SUWJFXOVRICCHZ-WMZOPIPTSA-N",
+    "taxon_id": "NCBITaxon:571"} and source_id=BGC0000446:5, expected_source_row_sha256=bfdb9c188b2428a40dfbac3e9b41408de1a5a4e77e93ecd375d129813d8cd41f.
+    WITHDRAW does not currently enforce this complete-row digest: implement and test
+    that guard, or share an actually active compatible original-row guard from the
+    independently required identity/association decision. Do not invent a citation
+    overlay solely to claim full-row protection. WITHDRAW retains a weaker source
+    association; qualify it honestly as unresolved, and use a newly tested typed association
+    contract if final source adjudication requires suppression or reassignment. Existing
+    citation/strain overlays cannot change producer or occurrence taxa. Preserve the
+    positive native DL20 named feature at its actual analytical resolution and coordinate
+    any chemistry correction without automatically moving all old-key claims.'
+  acceptance_checks:
+  - The missing original SI is adjudicated before selecting a final method repair;
+    new applicable exact evidence changes the decision explicitly.
+  - All seven old context fields and an actually enforced complete-row SHA guard reject
+    stale or ambiguous source decisions.
+  - A method downgrade is not represented as removing or proving the residual source
+    association; any necessary qualification/suppression has a tested consumed contract.
+  - The DL20 natural feature remains visible at its unresolved structural resolution;
+    no E. coli endpoint, parent assay, exact regioisomer or absolute hand is transferred
+    without evidence.
+limitations:
+- The root section inventories present claims and source routing; chemical identities,
+  source-specific experiments, definition claims and optional-content assertions require
+  their separately scoped scientific assessments.
+- Original 2014 SI remains an unresolved exact-content boundary; existing failed routes
+  are preserved, not retried.
+- Any additional primary assignment resolving the second hydroxyl position and C-ring
+  unsaturation and exact stereochemistry must be obtained before treating the retained
+  drawn graph as experimentally established by the 2018 source.
+- Original access times and immutable source snapshots are preserved; formal authoring
+  is not a new retrieval or an expanded primary read.
+- Optional missing pathways, proteins and bioactivities are not defects by themselves.
+  All seven matching sets are reconciled; these five candidates have no emitted PubChem
+  assay observations in the frozen source context.
+- Independent chemistry owns exact representation/authority findings. Any simultaneous
+  identity and biological correction must adjudicate original-key associations and
+  tested consumer composition.
+- No scientific record, raw source inventory, campaign or repository state is changed
+  by these proposed actions.
+- Authority matches establish the representations actually returned at their retained
+  access times; they are not independent experimental structure or absolute-hand determinations.
+  Root and science sections separately assess organism, locus, classification and
+  history claims.
+- Original2018 feature5 supports an additional A-ring hydroxyl and C-ring desaturation
+  by accurate mass/MS2. It explicitly leaves the second OH position unresolved (C7
+  or C8 suggested), and the double-bond position unresolved. Figure2C has an ambiguous
+  R2 attachment and plain core bonds. The retained exact positional/stereo graph is
+  not fully established by this source; no alternative positional isomer or globally
+  achiral replacement is selected.
+- The reproduction report retains 42 withheld ambiguous producer claims, 161 merged-taxon
+  rewrites and five unresolved assay-organism targets.
+- 499 identifier-label plausibility warnings are non-blocking; 4750 pairs have no
+  configured adapter and were skipped.
+- Four tests were skipped and two dependency deprecation warnings remain. Passing
+  configured QC is not independent scientific verification.
+- Native baseline gates establish configured consistency, not independent biological
+  production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions
+  and no-adapter pairs; a successful command does not convert these into verified
+  scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command
+  execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population
+  was checked; external caches and generated bytecode are not asserted to be independently
+  byte-pinned.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+- Scientific conclusions integrate the root, chemical and biological source assessments;
+  original access times and unresolved scopes remain explicit.
+tags:
+- path-order-campaign
+- batch-019
+```
